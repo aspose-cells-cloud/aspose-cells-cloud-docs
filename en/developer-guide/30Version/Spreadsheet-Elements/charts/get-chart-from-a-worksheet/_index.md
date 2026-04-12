@@ -16,16 +16,16 @@ This REST API retrieves chart information.
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type    | Location | Description |
-|----------------|---------|----------|-------------|
-| name           | string  | path     | Name of the Excel file. |
+| Parameter Name | Type    | Location | Description                                 |
+| -------------- | ------- | -------- | ------------------------------------------- |
+| name           | string  | path     | Name of the Excel file.                     |
 | sheetName      | string  | path     | Name of the worksheet containing the chart. |
-| chartNumber    | integer | path     | Zero‑based index of the chart to retrieve. |
-| format         | string  | query    | Desired export format (e.g., png, jpeg). |
-| folder         | string  | query    | Folder path where the document is stored. |
-| storageName    | string  | query    | Name of the storage service. |
+| chartNumber    | integer | path     | Zero‑based index of the chart to retrieve.  |
+| format         | string  | query    | Desired export format (e.g., png, jpeg).    |
+| folder         | string  | query    | Folder path where the document is stored.   |
+| storageName    | string  | query    | Name of the storage service.                |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

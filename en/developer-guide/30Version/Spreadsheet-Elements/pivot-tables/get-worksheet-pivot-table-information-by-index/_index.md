@@ -1,48 +1,32 @@
----  
-title: "Get a Pivot Table in an Excel Worksheet"  
-second_title: "Document"  
-linktitle: Get  
-type: docs  
-url: /pivot-tables/get/  
-aliases: [/get-worksheet-pivot-table-information-by-index/]  
-keywords: "Aspose.Cells, pivot table, Excel, REST API, get worksheet pivot table"  
-description: "Retrieve a pivot table from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request syntax, required parameters, authentication guidance, response schema, error handling, and SDK code samples for multiple languages."  
-weight: 10  
----  
+---
+title: "Get a Pivot Table in an Excel Worksheet"
+second_title: "Document"
+linktitle: Get
+type: docs
+url: /pivot-tables/get/
+aliases: [/get-worksheet-pivot-table-information-by-index/]
+keywords: "Aspose.Cells, pivot table, Excel, REST API, get worksheet pivot table"
+description: "Retrieve a pivot table from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request syntax, required parameters, authentication guidance, response schema, error handling, and SDK code samples for multiple languages."
+weight: 10
+---
 
 This REST API retrieves worksheet **pivot table** information by its index.
 
-## REST API  
+## REST API
 
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivottableIndex}
 ```
 
-### Request parameters  
+### Request parameters
 
-| Parameter Name      | Type    | Location | Description                                                          |
-|---------------------|---------|----------|----------------------------------------------------------------------|
-| **name**            | string  | path     | The name of the Excel file.                                          |
-| **sheetName**       | string  | path     | The name of the worksheet that contains the pivot table.            |
-| **pivottableIndex** | integer | path     | Zero-based index of the pivot table in the worksheet.               |
-| **folder**          | string  | query    | The folder where the document is stored.                             |
-| **storageName**     | string  | query    | The name of the Aspose Cloud storage.                                |
-
-**Prerequisites**  
-- An active Aspose Cloud account.  
-- The workbook must be uploaded to Aspose Cloud Storage (or be accessible in the specified `folder`).  
-- A valid JWT access token is required for every request.
-
-**Authentication**  
-To obtain a JWT token, call the OAuth 2.0 token endpoint with your client ID and client secret. The response contains an `access_token` that you include in the `Authorization` header as `Bearer <access_token>`. Example:
-
-```bash
-curl -X POST "https://api.aspose.cloud/connect/token" \
-     -H "Content-Type: application/x-www-form-urlencoded" \
-     -d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
-```
-
-Use the returned token in the request shown below.
+| Parameter Name      | Type    | Location | Description                                              |
+| ------------------- | ------- | -------- | -------------------------------------------------------- |
+| **name**            | string  | path     | The name of the Excel file.                              |
+| **sheetName**       | string  | path     | The name of the worksheet that contains the pivot table. |
+| **pivottableIndex** | integer | path     | Zero-based index of the pivot table in the worksheet.    |
+| **folder**          | string  | query    | The folder where the document is stored.                 |
+| **storageName**     | string  | query    | The name of the Aspose Cloud storage.                    |
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL.
 
@@ -80,9 +64,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
             "FilterType": "string",
             "MultipleFilters": {
               "MatchBlank": true,
-              "MultipleFilterList": [
-                {}
-              ]
+              "MultipleFilterList": [{}]
             },
             "ColorFilter": {
               "FilterByFillColor": "string",
@@ -185,19 +167,20 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 
 {{< /tabs >}}
 
-**Error handling**  
-The API follows standard HTTP status codes. Typical responses include:  
+### **Error handling**
 
-| Status Code | Meaning                              | Example JSON (error)                              |
-|-------------|--------------------------------------|---------------------------------------------------|
-| 200         | Success – the pivot table is returned| —                                                 |
-| 401         | Unauthorized – invalid or missing token | `{"code":401,"message":"Invalid access token."}` |
+The API follows standard HTTP status codes. Typical responses include:
+
+| Status Code | Meaning                                                          | Example JSON (error)                              |
+| ----------- | ---------------------------------------------------------------- | ------------------------------------------------- |
+| 200         | Success – the pivot table is returned                            | —                                                 |
+| 401         | Unauthorized – invalid or missing token                          | `{"code":401,"message":"Invalid access token."}`  |
 | 404         | Not found – file, worksheet, or pivot‑table index does not exist | `{"code":404,"message":"Pivot table not found."}` |
-| 500         | Server error – unexpected condition   | `{"code":500,"message":"Internal server error."}` |
+| 500         | Server error – unexpected condition                              | `{"code":500,"message":"Internal server error."}` |
 
 Review the status code and error message to troubleshoot issues.
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

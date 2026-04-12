@@ -16,18 +16,19 @@ This REST API updates chart properties.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                 |
-|----------------|--------|----------------------------|---------------------------------------------|
-| name           | string | path                       | The name of the Excel file.                 |
-| sheetName      | string | path                       | The name of the worksheet containing the chart. |
-| chartIndex     | integer| path                       | Zero-based index of the chart to be updated. |
-| chart          | object | body                       | JSON object that defines the chart properties to be modified. |
-| folder         | string | query                      | The folder in storage where the file is located. |
-| storageName    | string | query                      | The name of the storage service.            |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                   |
+| -------------- | ------- | -------------------------- | ------------------------------------------------------------- |
+| name           | string  | path                       | The name of the Excel file.                                   |
+| sheetName      | string  | path                       | The name of the worksheet containing the chart.               |
+| chartIndex     | integer | path                       | Zero-based index of the chart to be updated.                  |
+| chart          | object  | body                       | JSON object that defines the chart properties to be modified. |
+| folder         | string  | query                      | The folder in storage where the file is located.              |
+| storageName    | string  | query                      | The name of the storage service.                              |
 
 ### Request Body Schema
+
 The **`chart`** object contains the properties you can modify. Below is a representative JSON example that includes several commonly used fields:
 
 ```json
@@ -94,12 +95,12 @@ The API returns a JSON object indicating the operation result. A successful upda
 
 Possible error responses include:
 
-| HTTP Status | Description                              |
-|-------------|------------------------------------------|
-| 400         | Bad Request – invalid parameters or body |
-| 401         | Unauthorized – missing or invalid token  |
+| HTTP Status | Description                                     |
+| ----------- | ----------------------------------------------- |
+| 400         | Bad Request – invalid parameters or body        |
+| 401         | Unauthorized – missing or invalid token         |
 | 404         | Not Found – file, worksheet, or chart not found |
-| 500         | Internal Server Error                    |
+| 500         | Internal Server Error                           |
 
 ## Cloud SDK Family
 

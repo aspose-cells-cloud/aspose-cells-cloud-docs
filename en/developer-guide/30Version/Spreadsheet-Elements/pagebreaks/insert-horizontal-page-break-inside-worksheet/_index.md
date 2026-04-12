@@ -18,19 +18,19 @@ This REST API inserts a horizontal page break.
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type    | Location | Description |
-|----------------|---------|----------|-------------|
-| name           | string  | path     | Name of the Excel file. |
-| sheetName      | string  | path     | Name of the worksheet where the break will be added. |
+| Parameter Name | Type    | Location | Description                                                           |
+| -------------- | ------- | -------- | --------------------------------------------------------------------- |
+| name           | string  | path     | Name of the Excel file.                                               |
+| sheetName      | string  | path     | Name of the worksheet where the break will be added.                  |
 | cellname       | string  | query    | Cell reference (e.g., **A1**) that marks the start of the page break. |
-| row            | integer | query    | Zero‑based row index for the page break. |
-| column         | integer | query    | Zero‑based column index for the page break. |
-| startColumn    | integer | query    | Starting column of a range when inserting a break. |
-| endColumn      | integer | query    | Ending column of a range when inserting a break. |
-| folder         | string  | query    | Folder path containing the Excel file. |
-| storageName    | string  | query    | Name of the Aspose Cloud storage. |
+| row            | integer | query    | Zero‑based row index for the page break.                              |
+| column         | integer | query    | Zero‑based column index for the page break.                           |
+| startColumn    | integer | query    | Starting column of a range when inserting a break.                    |
+| endColumn      | integer | query    | Ending column of a range when inserting a break.                      |
+| folder         | string  | query    | Folder path containing the Excel file.                                |
+| storageName    | string  | query    | Name of the Aspose Cloud storage.                                     |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/PutHorizontalPageBreak) defines a publicly accessible interface that lets you perform REST interactions directly from a web browser.
 

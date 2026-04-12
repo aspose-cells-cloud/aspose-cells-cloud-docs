@@ -12,46 +12,25 @@ weight: 100
 
 Perform bulk text replacement across remote Excel files stored in the cloud. Find and update specific text strings efficiently using Aspose.Cells Find & Replace API for cloud spreadsheets.
 
-## Replace Content in Remote Spreadsheet API
+## **Replace Content in Remote Spreadsheet API**
 
-### API Endpoint
-
-The API requires OAuth 2.0 authentication. Include an `Authorization: Bearer <access_token>` header obtained from the Aspose Cloud authentication service.
+### **Web API**
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/replace/content
 ```
 
-#### Sample Request & Response  
-
-**cURL example**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/replace/content?searchText=OldValue&replaceText=NewValue" \
-     -H "Authorization: Bearer {access_token}" \
-     -H "Accept: application/json"
-```
-
-**Successful JSON response**
-
-```json
-{
-  "Code": 200,
-  "Status": "OK"
-}
-```
-
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| **name** | String | Path | The name of the workbook file stored in cloud storage to be modified (e.g., `"report.xlsx"`). |
-| **searchText** | String | Query | The string to locate within the entire workbook. The search is case‑sensitive and applies to all worksheets unless constrained by other parameters. |
-| **replaceText** | String | Query | The string that will replace every occurrence of `searchText`. |
-| **folder** | String | Query | The cloud storage folder path that contains the source workbook (e.g., `"/documents/quarterly/"`). |
-| **storageName** | String | Query | *(Optional)* The name of a custom cloud storage (e.g., `"MyS3Bucket"`). If omitted, the default storage configured for the account is used. |
-| **region** | String | Query | *(Optional)* Locale identifier that may affect character encoding and language‑specific search behavior (e.g., `"en-US"`). |
-| **password** | String | Query | *(Optional)* Password to open a protected workbook. |
+| Parameter Name  | Type   | Location | Description                                                                                                                                         |
+| --------------- | ------ | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**        | String | Path     | The name of the workbook file stored in cloud storage to be modified (e.g., `"report.xlsx"`).                                                       |
+| **searchText**  | String | Query    | The string to locate within the entire workbook. The search is case‑sensitive and applies to all worksheets unless constrained by other parameters. |
+| **replaceText** | String | Query    | The string that will replace every occurrence of `searchText`.                                                                                      |
+| **folder**      | String | Query    | The cloud storage folder path that contains the source workbook (e.g., `"/documents/quarterly/"`).                                                  |
+| **storageName** | String | Query    | _(Optional)_ The name of a custom cloud storage (e.g., `"MyS3Bucket"`). If omitted, the default storage configured for the account is used.         |
+| **region**      | String | Query    | _(Optional)_ Locale identifier that may affect character encoding and language‑specific search behavior (e.g., `"en-US"`).                          |
+| **password**    | String | Query    | _(Optional)_ Password to open a protected workbook.                                                                                                 |
 
 ### Response
 
@@ -78,23 +57,23 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/replace/content
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized** – Missing or invalid OAuth 2.0 access token.  
-- **404 Not Found** – The specified spreadsheet file could not be accessed.  
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized** – Missing or invalid OAuth 2.0 access token.
+- **404 Not Found** – The specified spreadsheet file could not be accessed.
 - **500 Server Error** – An unexpected server‑side problem occurred while processing the request.
 
 ## When Should You Use the Replace Content in Remote Spreadsheet API?
 
-- **Batch Cloud File Update** – Modify the contents of multiple Excel files stored in cloud storage such as AWS S3 or Azure Blob.  
-- **Dynamic Population of Cloud Templates** – Populate report templates stored in the cloud with up‑to‑date data.  
+- **Batch Cloud File Update** – Modify the contents of multiple Excel files stored in cloud storage such as AWS S3 or Azure Blob.
+- **Dynamic Population of Cloud Templates** – Populate report templates stored in the cloud with up‑to‑date data.
 - **Cross‑Region File Synchronization** – Keep Excel files consistent across different geographical storage regions.
 
 ## Why Use the Replace Content in Remote Spreadsheet API?
 
-- **Developer‑Friendly** – Aspose.Cells Cloud provides SDK libraries for many programming languages, reducing development effort compared with building a custom solution.  
-- **Reduced Labor Costs** – Eliminates the need for dedicated staff to manually consolidate documents.  
-- **Pay‑Per‑Use** – No upfront investment; you pay only for the API calls you actually make.  
-- **Zero Maintenance Costs** – No servers to manage, no software updates, and no compatibility concerns.  
+- **Developer‑Friendly** – Aspose.Cells Cloud provides SDK libraries for many programming languages, reducing development effort compared with building a custom solution.
+- **Reduced Labor Costs** – Eliminates the need for dedicated staff to manually consolidate documents.
+- **Pay‑Per‑Use** – No upfront investment; you pay only for the API calls you actually make.
+- **Zero Maintenance Costs** – No servers to manage, no software updates, and no compatibility concerns.
 - **Retains All Cell Formatting, Formulas, and Charts** – The operation preserves the original workbook’s layout and calculations after text replacement.
 
 ## How to Use the Replace Content in Remote Spreadsheet API with SDKs

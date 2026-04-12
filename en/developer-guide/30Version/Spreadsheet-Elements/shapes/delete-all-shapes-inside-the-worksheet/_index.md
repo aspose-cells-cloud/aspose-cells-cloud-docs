@@ -18,13 +18,13 @@ This REST API deletes all shapes on an Excel worksheet.
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                            |
-|----------------|--------|----------|----------------------------------------|
-| name           | string | path     | The name of the Excel document.        |
-| sheetName      | string | path     | The name of the worksheet.             |
-| folder         | string | query    | The folder that contains the document. |
+| Parameter Name | Type   | Location | Description                                  |
+| -------------- | ------ | -------- | -------------------------------------------- |
+| name           | string | path     | The name of the Excel document.              |
+| sheetName      | string | path     | The name of the worksheet.                   |
+| folder         | string | query    | The folder that contains the document.       |
 | storageName    | string | query    | The storage name where the document resides. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShapes) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

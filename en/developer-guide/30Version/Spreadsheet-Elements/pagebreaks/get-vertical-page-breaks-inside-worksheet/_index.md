@@ -1,44 +1,31 @@
----  
-title: "Get Vertical Page Breaks"  
-second_title: "Document"  
-linktitle: "Get Vertical Page Breaks"  
-type: docs  
-url: /page-breaks/get-vertical-page-breaks/  
-aliases: [/get-vertical-page-breaks-inside-worksheet/]  
-keywords: "Aspose.Cells, vertical page breaks, Excel API, cloud spreadsheet, REST API"  
-description: "Retrieve vertical page breaks from an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes HTTPS endpoint, required parameters, cURL example, response details, error handling, and SDK samples."  
-weight: 20  
----  
+---
+title: "Get Vertical Page Breaks"
+second_title: "Document"
+linktitle: "Get Vertical Page Breaks"
+type: docs
+url: /page-breaks/get-vertical-page-breaks/
+aliases: [/get-vertical-page-breaks-inside-worksheet/]
+keywords: "Aspose.Cells, vertical page breaks, Excel API, cloud spreadsheet, REST API"
+description: "Retrieve vertical page breaks from an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes HTTPS endpoint, required parameters, cURL example, response details, error handling, and SDK samples."
+weight: 20
+---
 
 This REST API retrieves **vertical** page breaks from a worksheet.
 
-## Rest Api  
-
-### Prerequisites  
-
-1. **Authentication** – Obtain a JWT token via the Aspose Cloud OAuth endpoint (`/connect/token`).  
-2. **Storage configuration** – Ensure the workbook is stored in Aspose Cloud storage (default is the root folder).  
-3. **API version** – This documentation applies to API version **v3.0**.  
-
-### Quick‑Start  
-
-1. Get a JWT token.  
-2. Upload the Excel file to the desired storage folder (if it is not already there).  
-3. Call the endpoint shown below.  
-4. Parse the JSON response to read the `VerticalPageBreakList`.  
+## Rest Api
 
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
 ```
 
-The request parameters for this endpoint are:
+### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                           | Required |
-|----------------|--------|----------|-------------------------------------------------------|----------|
-| `name`         | string | path     | The name of the Excel file.                           | Yes |
-| `sheetName`    | string | path     | The name of the worksheet from which to read breaks. | Yes |
-| `folder`       | string | query    | The folder in storage that contains the file.         | No |
-| `storageName`  | string | query    | The name of the Aspose Cloud storage to use.          | No |
+| Parameter Name | Type   | Location | Description                                          | Required |
+| -------------- | ------ | -------- | ---------------------------------------------------- | -------- |
+| `name`         | string | path     | The name of the Excel file.                          | Yes      |
+| `sheetName`    | string | path     | The name of the worksheet from which to read breaks. | Yes      |
+| `folder`       | string | query    | The folder in storage that contains the file.        | No       |
+| `storageName`  | string | query    | The name of the Aspose Cloud storage to use.         | No       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/GetVerticalPageBreaks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -86,34 +73,30 @@ curl -v "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/workshee
 
 {{< /tabs >}}
 
-### Response Details  
+### Response Details
 
-| Field                     | Type   | Description                                                                    |
-|---------------------------|--------|--------------------------------------------------------------------------------|
-| `VerticalPageBreakList`   | array  | A collection of vertical page‑break objects.                                   |
-| `Column`                  | int    | The column index (zero‑based) where the break occurs.                          |
-| `StartRow`                | int    | The first row of the break range (zero‑based).                                 |
-| `EndRow`                  | int    | The last row of the break range (zero‑based, typically `1048575` for the last row). |
-| `link.Href`               | string | Self‑referencing URL for the resource (HTTPS).                                 |
-| `Code`                    | int    | HTTP status code returned by the service.                                      |
-| `Status`                  | string | Textual description of the HTTP status.                                        |
+| Field                   | Type   | Description                                                                         |
+| ----------------------- | ------ | ----------------------------------------------------------------------------------- |
+| `VerticalPageBreakList` | array  | A collection of vertical page‑break objects.                                        |
+| `Column`                | int    | The column index (zero‑based) where the break occurs.                               |
+| `StartRow`              | int    | The first row of the break range (zero‑based).                                      |
+| `EndRow`                | int    | The last row of the break range (zero‑based, typically `1048575` for the last row). |
+| `link.Href`             | string | Self‑referencing URL for the resource (HTTPS).                                      |
+| `Code`                  | int    | HTTP status code returned by the service.                                           |
+| `Status`                | string | Textual description of the HTTP status.                                             |
 
-### Error Handling  
+### Error Handling
 
-| HTTP Code | Meaning                           | Typical Cause                                 |
-|-----------|-----------------------------------|----------------------------------------------|
-| 401       | Unauthorized                      | Missing or invalid JWT token.               |
-| 404       | Not Found                         | Specified file or worksheet does not exist. |
-| 400       | Bad Request                       | Invalid or malformed query parameters.      |
-| 500       | Internal Server Error             | Unexpected server‑side condition.           |
+| HTTP Code | Meaning               | Typical Cause                               |
+| --------- | --------------------- | ------------------------------------------- |
+| 401       | Unauthorized          | Missing or invalid JWT token.               |
+| 404       | Not Found             | Specified file or worksheet does not exist. |
+| 400       | Bad Request           | Invalid or malformed query parameters.      |
+| 500       | Internal Server Error | Unexpected server‑side condition.           |
 
 Check the `Code` and `Status` fields in the JSON response for additional details.
 
-### Version / Change Log  
-
-This page documents **v3.0** of the Aspose.Cells Cloud API. For newer versions and change‑log details, see the [API changelog](/cells/changelog).
-
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the fastest way to develop against Aspose.Cells Cloud. An SDK abstracts low‑level details so you can focus on your business logic. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

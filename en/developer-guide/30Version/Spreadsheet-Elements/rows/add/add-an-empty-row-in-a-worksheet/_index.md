@@ -18,15 +18,15 @@ This REST API adds a new row to an Excel worksheet.
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location                     | Description                                                            |
-|----------------|--------|------------------------------|------------------------------------------------------------------------|
-| name           | string | path                         | The workbook file name.                                                |
-| sheetName      | string | path                         | The worksheet name.                                                    |
-| rowIndex       | integer| path                         | The zero‑based index where the new row will be inserted.              |
-| folder         | string | query                        | The folder path in storage that contains the workbook.                |
-| storageName    | string | query                        | The name of the Aspose Cloud storage to use.                           |
+| Parameter Name | Type    | Location | Description                                              |
+| -------------- | ------- | -------- | -------------------------------------------------------- |
+| name           | string  | path     | The workbook file name.                                  |
+| sheetName      | string  | path     | The worksheet name.                                      |
+| rowIndex       | integer | path     | The zero‑based index where the new row will be inserted. |
+| folder         | string  | query    | The folder path in storage that contains the workbook.   |
+| storageName    | string  | query    | The name of the Aspose Cloud storage to use.             |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRow) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

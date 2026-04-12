@@ -17,16 +17,16 @@ This REST API adds a worksheet validation to an Excel worksheet.
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| name           | string | path     | Name of the Excel document. |
-| sheetName      | string | path     | Name of the worksheet. |
+| Parameter Name | Type   | Location | Description                                                |
+| -------------- | ------ | -------- | ---------------------------------------------------------- |
+| name           | string | path     | Name of the Excel document.                                |
+| sheetName      | string | path     | Name of the worksheet.                                     |
 | range          | string | query    | Cell range to which the validation applies (e.g., A1:B10). |
-| validation     | object | body     | Validation rule definition. |
-| folder         | string | query    | Folder that contains the document. |
-| storageName    | string | query    | Name of the storage service. |
+| validation     | object | body     | Validation rule definition.                                |
+| folder         | string | query    | Folder that contains the document.                         |
+| storageName    | string | query    | Name of the storage service.                               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

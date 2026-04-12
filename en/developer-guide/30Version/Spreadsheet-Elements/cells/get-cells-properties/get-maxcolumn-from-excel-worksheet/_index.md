@@ -9,25 +9,15 @@ description: "Retrieve the maximum column index of a worksheet using Aspose.Cell
 
 This REST API returns the maximum column index in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxcolumn`.
 
-**API version:** v3.0 (released 2024‑02) – stable  
+## Parameters
 
-### Parameters
-| Parameter            | Type   | Required | Default | Description |
-|----------------------|--------|----------|---------|-------------|
-| `cellOrMethodName`   | string | **Yes**  | —       | Must be set to `maxcolumn` to invoke this method. |
-| `folder`             | string | No       | `""`    | Folder path in cloud storage where the workbook resides. |
-| `storage`            | string | No       | `""`    | Name of the storage service (if multiple are configured). |
-| `fileName`           | string | **Yes**  | —       | Name of the Excel file (e.g., `myWorkbook.xlsx`). |
-| `sheetName`          | string | **Yes**  | —       | Name of the worksheet (e.g., `Sheet1`). |
-
-### Authentication
-All requests must include a valid OAuth 2.0 access token:
-
-```http
-Authorization: Bearer <access_token>
-```
-
-The token is obtained via the Aspose Cloud client‑credentials flow.
+| Parameter          | Type   | Required | Default | Description                                               |
+| ------------------ | ------ | -------- | ------- | --------------------------------------------------------- |
+| `cellOrMethodName` | string | **Yes**  | —       | Must be set to `maxcolumn` to invoke this method.         |
+| `folder`           | string | No       | `""`    | Folder path in cloud storage where the workbook resides.  |
+| `storage`          | string | No       | `""`    | Name of the storage service (if multiple are configured). |
+| `fileName`         | string | **Yes**  | —       | Name of the Excel file (e.g., `myWorkbook.xlsx`).         |
+| `sheetName`        | string | **Yes**  | —       | Name of the worksheet (e.g., `Sheet1`).                   |
 
 - **cURL Example**
 
@@ -52,21 +42,19 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 }
 ```
 
-*`MaxColumn`* – Zero‑based index of the rightmost column that contains data in the specified worksheet.
-
 {{< /tab >}}
 
 {{< /tabs >}}
 
 - **Error Handling**
 
-| HTTP Status | Meaning                              | Sample Error Body |
-|-------------|--------------------------------------|-------------------|
-| 200         | Success – returns the `MaxColumn` value. | `{ "MaxColumn": 15 }` |
-| 400         | Bad request – missing or invalid parameters. | `{ "Code": "BadRequest", "Message": "Parameter `cellOrMethodName` is required." }` |
-| 401         | Unauthorized – invalid or missing token. | `{ "Code": "Unauthorized", "Message": "Access token is invalid or expired." }` |
-| 404         | Not found – workbook or worksheet does not exist. | `{ "Code": "NotFound", "Message": "Worksheet `Sheet1` not found." }` |
-| 500         | Server error – unexpected condition. | `{ "Code": "InternalError", "Message": "An unexpected error occurred." }` |
+| HTTP Status | Meaning                                           | Sample Error Body                                                                |
+| ----------- | ------------------------------------------------- | -------------------------------------------------------------------------------- |
+| 200         | Success – returns the `MaxColumn` value.          | `{ "MaxColumn": 15 }`                                                            |
+| 400         | Bad request – missing or invalid parameters.      | `{ "Code": "BadRequest", "Message": "Parameter`cellOrMethodName`is required." }` |
+| 401         | Unauthorized – invalid or missing token.          | `{ "Code": "Unauthorized", "Message": "Access token is invalid or expired." }`   |
+| 404         | Not found – workbook or worksheet does not exist. | `{ "Code": "NotFound", "Message": "Worksheet`Sheet1`not found." }`               |
+| 500         | Server error – unexpected condition.              | `{ "Code": "InternalError", "Message": "An unexpected error occurred." }`        |
 
 - **Cloud SDK Family**
 
@@ -119,7 +107,9 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
 <!-- Swift example (currently not provided) -->
+
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}

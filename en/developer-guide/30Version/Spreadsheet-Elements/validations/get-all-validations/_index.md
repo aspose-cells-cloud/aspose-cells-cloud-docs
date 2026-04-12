@@ -17,14 +17,14 @@ This REST API retrieves all worksheet validations on an Excel worksheet.
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 ```
 
-**Request parameters**
+### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                 |
-|----------------|--------|----------|---------------------------------------------|
-| name           | string | path     | Name of the Excel document.                 |
-| sheetName      | string | path     | Name of the worksheet.                      |
-| folder         | string | query    | Folder path where the document is stored.   |
-| storageName    | string | query    | Name of the storage service.                |
+| Parameter Name | Type   | Location | Description                               |
+| -------------- | ------ | -------- | ----------------------------------------- |
+| name           | string | path     | Name of the Excel document.               |
+| sheetName      | string | path     | Name of the worksheet.                    |
+| folder         | string | query    | Folder path where the document is stored. |
+| storageName    | string | query    | Name of the storage service.              |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

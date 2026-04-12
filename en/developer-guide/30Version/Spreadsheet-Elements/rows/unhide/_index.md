@@ -18,17 +18,17 @@ This REST API unhides rows on an Excel worksheet.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type    | Location | Description                                             |
-|----------------|---------|----------|---------------------------------------------------------|
-| name           | string  | path     | The workbook name.                                      |
-| sheetName      | string  | path     | The worksheet name.                                     |
-| startrow       | integer | query    | Zero‑based index of the first row to unhide.            |
-| totalRows      | integer | query    | Number of rows to unhide.                               |
-| height         | number  | query    | Row height (default 15.0).                              |
-| folder         | string  | query    | The document folder.                                    |
-| storageName    | string  | query    | Name of the storage.                                    |
+| Parameter Name | Type    | Location | Description                                  |
+| -------------- | ------- | -------- | -------------------------------------------- |
+| name           | string  | path     | The workbook name.                           |
+| sheetName      | string  | path     | The worksheet name.                          |
+| startrow       | integer | query    | Zero‑based index of the first row to unhide. |
+| totalRows      | integer | query    | Number of rows to unhide.                    |
+| height         | number  | query    | Row height (default 15.0).                   |
+| folder         | string  | query    | The document folder.                         |
+| storageName    | string  | query    | Name of the storage.                         |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

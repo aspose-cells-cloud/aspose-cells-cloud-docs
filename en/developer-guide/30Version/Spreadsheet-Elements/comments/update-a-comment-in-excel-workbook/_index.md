@@ -16,16 +16,16 @@ This REST API updates a comment on a worksheet cell.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                                            |
-|----------------|--------|----------|------------------------------------------------------------------------|
-| name           | string | path     | The name of the Excel document.                                        |
-| sheetName      | string | path     | The name of the worksheet that contains the cell.                      |
-| cellName       | string | path     | The address of the cell (e.g., **A1**).                                 |
+| Parameter Name | Type   | Location | Description                                                           |
+| -------------- | ------ | -------- | --------------------------------------------------------------------- |
+| name           | string | path     | The name of the Excel document.                                       |
+| sheetName      | string | path     | The name of the worksheet that contains the cell.                     |
+| cellName       | string | path     | The address of the cell (e.g., **A1**).                               |
 | comment        | object | body     | A **Comment** object that defines the comment to be added or updated. |
-| folder         | string | query    | The folder where the document is stored.                               |
-| storageName    | string | query    | The name of the storage service.                                       |
+| folder         | string | query    | The folder where the document is stored.                              |
+| storageName    | string | query    | The name of the storage service.                                      |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetComment) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

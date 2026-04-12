@@ -1,57 +1,50 @@
----  
-title: "Aspose.Cells Cloud API – Merge Cells Range"  
-second_title: "Document"  
-linktitle: "Merge"  
-type: docs  
-url: /ranges/merge/  
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]  
-keywords: "Aspose.Cells, merge cells, Excel API, REST, cloud SDK"  
-description: "Merge a range of cells into a single cell using Aspose.Cells Cloud REST API. Learn request format, parameters, and SDK examples for C#, Java, Python, and more."  
-weight: 20  
----  
+---
+title: "Aspose.Cells Cloud API – Merge Cells Range"
+second_title: "Document"
+linktitle: "Merge"
+type: docs
+url: /ranges/merge/
+aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+keywords: "Aspose.Cells, merge cells, Excel API, REST, cloud SDK"
+description: "Merge a range of cells into a single cell using Aspose.Cells Cloud REST API. Learn request format, parameters, and SDK examples for C#, Java, Python, and more."
+weight: 20
+---
 
-This REST API merges a range of cells into a single cell on an Excel worksheet.  
+This REST API merges a range of cells into a single cell on an Excel worksheet.
 
 **Overview** – Merging a range combines the selected cells into one cell, preserving the value of the upper‑left cell and discarding the rest. Use this operation when you need to create a header that spans multiple columns or rows, or when you want to simplify the layout of a worksheet.
 
-## REST API  
+## REST API
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/merge
 ```
 
-### Prerequisites  
+### **Request parameters**
 
-- An active Aspose.Cells Cloud account (API key).  
-- A valid JWT access token.  
-- The workbook (`{name}`) must be uploaded to the specified storage folder.  
-- Supported file formats: XLS, XLSX, CSV, ODS, etc.  
+| Parameter Name  | Type   | Location | Description                                         |
+| --------------- | ------ | -------- | --------------------------------------------------- |
+| **name**        | string | path     | Workbook name.                                      |
+| **sheetName**   | string | path     | Worksheet name.                                     |
+| **range**       | object | body     | Range object that specifies the cells to be merged. |
+| **folder**      | string | query    | Folder where the workbook is stored.                |
+| **storageName** | string | query    | Name of the storage.                                |
 
-The request parameters are:
-
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| **name**       | string | path     | Workbook name. |
-| **sheetName**  | string | path     | Worksheet name. |
-| **range**      | object | body     | Range object that specifies the cells to be merged. |
-| **folder**     | string | query    | Folder where the workbook is stored. |
-| **storageName**| string | query    | Name of the storage. |
-
-#### Request Body Schema  
+#### Request Body Schema
 
 The **Range** object must contain the following fields (all others are optional):
 
-| Property      | Type   | Required | Description |
-|---------------|--------|----------|-------------|
-| **FirstRow**   | integer| Yes      | Zero‑based index of the first row in the range. |
-| **FirstColumn**| integer| Yes      | Zero‑based index of the first column in the range. |
-| **RowCount**   | integer| Yes      | Number of rows to include in the range. |
-| **ColumnCount**| integer| Yes      | Number of columns to include in the range. |
-| **Name**       | string | No       | Optional name for the range. |
-| **RefersTo**   | string | No       | A formula that the range refers to. |
-| **Worksheet**  | string | No       | Worksheet name (if different from the path parameter). |
-| **RowHeight**  | number | No       | Height of rows in the range (pixels). |
-| **ColumnWidth**| number | No       | Width of columns in the range (pixels). |
+| Property        | Type    | Required | Description                                            |
+| --------------- | ------- | -------- | ------------------------------------------------------ |
+| **FirstRow**    | integer | Yes      | Zero‑based index of the first row in the range.        |
+| **FirstColumn** | integer | Yes      | Zero‑based index of the first column in the range.     |
+| **RowCount**    | integer | Yes      | Number of rows to include in the range.                |
+| **ColumnCount** | integer | Yes      | Number of columns to include in the range.             |
+| **Name**        | string  | No       | Optional name for the range.                           |
+| **RefersTo**    | string  | No       | A formula that the range refers to.                    |
+| **Worksheet**   | string  | No       | Worksheet name (if different from the path parameter). |
+| **RowHeight**   | number  | No       | Height of rows in the range (pixels).                  |
+| **ColumnWidth** | number  | No       | Width of columns in the range (pixels).                |
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -65,7 +58,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <jwt token>" \
-  -d '{ 
+  -d '{
         "FirstRow": 9,
         "FirstColumn": 0,
         "RowCount": 1,
@@ -88,17 +81,17 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 
 {{< /tabs >}}
 
-#### Response Details  
+#### Response Details
 
-| HTTP Status | Description | Sample JSON |
-|-------------|-------------|-------------|
-| **200 OK** | The range was merged successfully. | `{ "Code": 200, "Status": "OK" }` |
-| **400 Bad Request** | Invalid range parameters (e.g., out‑of‑bounds indices). | `{ "Code": 400, "Message": "Invalid range." }` |
-| **401 Unauthorized** | Missing or invalid JWT token. | `{ "Code": 401, "Message": "Authentication failed." }` |
-| **404 Not Found** | Workbook or worksheet not found. | `{ "Code": 404, "Message": "Resource not found." }` |
-| **500 Internal Server Error** | Unexpected server error. | `{ "Code": 500, "Message": "Internal server error." }` |
+| HTTP Status                   | Description                                             | Sample JSON                                            |
+| ----------------------------- | ------------------------------------------------------- | ------------------------------------------------------ |
+| **200 OK**                    | The range was merged successfully.                      | `{ "Code": 200, "Status": "OK" }`                      |
+| **400 Bad Request**           | Invalid range parameters (e.g., out‑of‑bounds indices). | `{ "Code": 400, "Message": "Invalid range." }`         |
+| **401 Unauthorized**          | Missing or invalid JWT token.                           | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404 Not Found**             | Workbook or worksheet not found.                        | `{ "Code": 404, "Message": "Resource not found." }`    |
+| **500 Internal Server Error** | Unexpected server error.                                | `{ "Code": 500, "Message": "Internal server error." }` |
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -155,55 +148,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-
-### Frequently Asked Questions  
-
-**Q:** What HTTP method and endpoint are used to merge a range of cells?  
-**A:** Use **POST** to `https://api.aspose.cloud/v3.0/cells/{workbookName}/worksheets/{sheetName}/ranges/merge`. Replace `{workbookName}` and `{sheetName}` with your file and worksheet names.
-
-**Q:** Which fields are mandatory in the request body for a merge operation?  
-**A:** The `Range` object must include **FirstRow**, **FirstColumn**, **RowCount**, and **ColumnCount**. All other properties are optional.
-
-**Q:** What response is returned on a successful merge, and what errors might I encounter?  
-**A:** A successful call returns `{ "Code": 200, "Status": "OK" }`. Possible errors are **400 Bad Request**, **401 Unauthorized**, **404 Not Found**, and **500 Internal Server Error**, each with a JSON payload that includes a `Code` and `Message`.
-
-### Next Steps / Related Operations  
-
-- **Unmerge** a previously merged range – see [/cells/ranges/unmerge/](/cells/ranges/unmerge/).  
-- **Move** a range to a different location – see [/cells/ranges/move/](/cells/ranges/move/).  
-- **Get** details of a specific range – see [/cells/ranges/get/](/cells/ranges/get/).  
-
----
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What HTTP method and endpoint are used to merge a range of cells?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Use POST to https://api.aspose.cloud/v3.0/cells/{workbookName}/worksheets/{sheetName}/ranges/merge."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which fields are mandatory in the request body for a merge operation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "FirstRow, FirstColumn, RowCount, and ColumnCount are required; all other properties are optional."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What response is returned on a successful merge, and what errors might I encounter?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A successful call returns { \"Code\": 200, \"Status\": \"OK\" }. Errors can be 400, 401, 404, or 500 with corresponding JSON messages."
-      }
-    }
-  ]
-}
-</script>

@@ -20,16 +20,16 @@ This REST API call **unfreezes** (removes frozen panes) from an Excel worksheet.
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/freezepanes
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                          |
-|----------------|--------|----------|------------------------------------------------------|
-| `name`         | string | path     | Name of the Excel file.                              |
-| `sheetName`    | string | path     | Name of the worksheet.                               |
-| `folder`       | string | query    | Folder path in storage where the file is located.   |
-| `storageName`  | string | query    | Name of the Aspose Cloud storage.                    |
+| Parameter Name | Type   | Location | Description                                       |
+| -------------- | ------ | -------- | ------------------------------------------------- |
+| `name`         | string | path     | Name of the Excel file.                           |
+| `sheetName`    | string | path     | Name of the worksheet.                            |
+| `folder`       | string | query    | Folder path in storage where the file is located. |
+| `storageName`  | string | query    | Name of the Aspose Cloud storage.                 |
 
-*No additional query parameters (such as row, column, frozenRows, or frozenColumns) are required for the unfreeze operation.*
+_No additional query parameters (such as row, column, frozenRows, or frozenColumns) are required for the unfreeze operation._
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetFreezePanes) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

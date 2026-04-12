@@ -10,20 +10,20 @@ description: "Learn how to delete every chart in a worksheet using Aspose.Cells 
 
 This REST API deletes all charts from the specified worksheet.
 
-## REST API – Delete All Charts
+## REST API
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type   | Location | Description                         |
-|----------------|--------|----------|-------------------------------------|
-| name           | string | path     | Name of the workbook file.          |
-| sheetName      | string | path     | Name of the worksheet.              |
-| folder         | string | query    | Folder where the workbook is stored.|
-| storageName    | string | query    | Name of the storage.                |
+| Parameter Name | Type   | Location | Description                          |
+| -------------- | ------ | -------- | ------------------------------------ |
+| name           | string | path     | Name of the workbook file.           |
+| sheetName      | string | path     | Name of the worksheet.               |
+| folder         | string | query    | Folder where the workbook is stored. |
+| storageName    | string | query    | Name of the storage.                 |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetClearCharts) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -41,7 +41,7 @@ curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cha
 -H "Authorization: Bearer <jwt token>"
 ```
 
-*Replace `<jwt token>` with a valid JWT Bearer token obtained via the Aspose Cloud OAuth flow.*
+_Replace `<jwt token>` with a valid JWT Bearer token obtained via the Aspose Cloud OAuth flow._
 
 {{< /tab >}}
 
@@ -54,7 +54,7 @@ curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cha
 }
 ```
 
-*If the request fails, the API returns an error JSON with an appropriate HTTP status code (e.g., 401 Unauthorized, 404 Not Found, 500 Internal Server Error).*
+_If the request fails, the API returns an error JSON with an appropriate HTTP status code (e.g., 401 Unauthorized, 404 Not Found, 500 Internal Server Error)._
 
 {{< /tab >}}
 
@@ -128,4 +128,4 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< /tabs >}}
 
-*See also:* [Delete a Chart](../delete/) • [Get Charts](../list/)
+_See also:_ [Delete a Chart](../delete/) • [Get Charts](../list/)

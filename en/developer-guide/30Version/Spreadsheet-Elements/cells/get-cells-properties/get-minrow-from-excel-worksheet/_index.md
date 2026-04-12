@@ -9,7 +9,7 @@ description: "Learn how to retrieve the minimum row index of a worksheet using A
 
 This REST API returns the minimum row index in an Excel worksheet when the `cellOrMethodName` parameter is set to `minrow`. The endpoint can be used to determine the first non‑empty row (zero‑based) in a given worksheet.
 
-- **cURL Example:**  
+## **cURL Example:**
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -36,7 +36,7 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 {{< /tabs >}}
 
-- **Cloud SDK Family**
+## **Cloud SDK Family**
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

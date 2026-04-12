@@ -10,34 +10,22 @@ description: "Learn how to add or update a chart title in an Excel worksheet usi
 
 Adds a chart title or makes an existing title visible.
 
-**Prerequisites**  
-- API version **v3.0** (or later).  
-- Obtain a JWT token via the `/connect/token` endpoint (OAuth 2.0 client‑credentials flow).  
-- Upload the target workbook to Aspose Cloud storage before invoking the title‑setting endpoint.
-
-**Authentication**  
-All requests must include an `Authorization` header with a valid bearer token:
-
-```http
-Authorization: Bearer <jwt token>
-```
-
 ## REST API
 
 ```bash
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type    | Location | Description                         |
-|----------------|---------|----------|-------------------------------------|
-| name           | string  | path     | Workbook name.                      |
-| sheetName      | string  | path     | Worksheet name.                     |
-| chartIndex     | integer | path     | Index of the chart.                 |
-| title          | string  | body     | Text of the chart title.            |
+| Parameter Name | Type    | Location | Description                        |
+| -------------- | ------- | -------- | ---------------------------------- |
+| name           | string  | path     | Workbook name.                     |
+| sheetName      | string  | path     | Worksheet name.                    |
+| chartIndex     | integer | path     | Index of the chart.                |
+| title          | string  | body     | Text of the chart title.           |
 | folder         | string  | query    | Folder that contains the workbook. |
-| storageName    | string  | query    | Name of the storage.                |
+| storageName    | string  | query    | Name of the storage.               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -73,14 +61,12 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Shee
 
 **Error Responses**
 
-| HTTP Code | Example Payload | Description |
-|-----------|----------------|-------------|
-| 400 | `{ "Code": "400", "Message": "Invalid request payload." }` | The request body is malformed or missing required fields. |
-| 401 | `{ "Code": "401", "Message": "Authentication failed. Invalid or expired JWT token." }` | The bearer token is missing, invalid, or expired. |
-| 404 | `{ "Code": "404", "Message": "Workbook, worksheet, or chart not found." }` | The specified resource does not exist. |
-| 500 | `{ "Code": "500", "Message": "Internal server error." }` | An unexpected error occurred on the server. |
-
-**Quick Action** – Run the cURL command above; a successful response (`200 OK`) means the chart title has been added or updated in the workbook.
+| HTTP Code | Example Payload                                                                        | Description                                               |
+| --------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| 400       | `{ "Code": "400", "Message": "Invalid request payload." }`                             | The request body is malformed or missing required fields. |
+| 401       | `{ "Code": "401", "Message": "Authentication failed. Invalid or expired JWT token." }` | The bearer token is missing, invalid, or expired.         |
+| 404       | `{ "Code": "404", "Message": "Workbook, worksheet, or chart not found." }`             | The specified resource does not exist.                    |
+| 500       | `{ "Code": "500", "Message": "Internal server error." }`                               | An unexpected error occurred on the server.               |
 
 ## Cloud SDK Family
 
@@ -149,14 +135,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**FAQ**
-
-**Q:** *How do I obtain a JWT token?*  
-**A:** Send a `POST` request to `/connect/token` with your client ID and secret; the response contains the bearer token.
-
-**Q:** *What should I do if I receive a 401 error?*  
-**A:** Verify that the JWT token is valid and not expired, then regenerate it using the authentication endpoint.
-
-**Q:** *Can I update the title of an existing chart?*  
-**A:** Yes. The same `PUT` request updates the title; the `Text` field in the JSON body holds the new title.

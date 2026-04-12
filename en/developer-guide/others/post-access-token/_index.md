@@ -14,15 +14,17 @@ Retrieve an access token using the Cells Cloud Get Token API with a client ID an
 
 ## **Post Access Token API**
 
+### **Web API**
+
 ```
 POST http://api.aspose.cloud/v4.0/cells/connect/token
 ```
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Location | Description   |
-|----------------|--------|----------|---------------|
-| Client ID      | string | query    | The client identifier issued to you. |
+| Parameter Name | Type   | Location | Description                               |
+| -------------- | ------ | -------- | ----------------------------------------- |
+| Client ID      | string | query    | The client identifier issued to you.      |
 | Client Secret  | string | query    | The secret associated with the client ID. |
 
 ### **Response**

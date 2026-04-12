@@ -14,7 +14,7 @@ Export charts from a local Excel file to [PDF](https://docs.fileformat.com/pdf/)
 
 ## **Convert Chart to PDF Web API**
 
-### API Endpoint
+### Web API
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
@@ -49,56 +49,56 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
+- **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
 ## Where should you use the Convert Chart to PDF API?
 
 ### **1. Business Reporting & Automation**
 
-- **Financial Departments**: Monthly financial report charts → PDF archiving  
-- **Sales Teams**: Performance trend charts → PDF client reports  
-- **Marketing Analytics**: Campaign performance charts → PDF executive briefings  
-- **Operations Management**: Production monitoring charts → PDF compliance documents  
+- **Financial Departments**: Monthly financial report charts → PDF archiving
+- **Sales Teams**: Performance trend charts → PDF client reports
+- **Marketing Analytics**: Campaign performance charts → PDF executive briefings
+- **Operations Management**: Production monitoring charts → PDF compliance documents
 
 ### **2. Software Development & Integration**
 
-- **SaaS Applications**: User‑generated chart data → downloadable PDF reports  
-- **Enterprise Systems**: ERP/CRM system charts → PDF audit documentation  
-- **Mobile Applications**: In‑app analytics charts → shareable PDF files  
-- **Web Applications**: Dashboard charts → PDF export functionality  
+- **SaaS Applications**: User‑generated chart data → downloadable PDF reports
+- **Enterprise Systems**: ERP/CRM system charts → PDF audit documentation
+- **Mobile Applications**: In‑app analytics charts → shareable PDF files
+- **Web Applications**: Dashboard charts → PDF export functionality
 
 ### **3. Document Processing Workflows**
 
-- **Batch Processing**: Multiple Excel file charts converted to PDF simultaneously  
-- **Scheduled Tasks**: Automated daily/weekly chart report generation  
-- **Template‑based Outputs**: Standard chart formats → PDF documents  
-- **Document Assembly**: Combine charts with other content in PDF format  
+- **Batch Processing**: Multiple Excel file charts converted to PDF simultaneously
+- **Scheduled Tasks**: Automated daily/weekly chart report generation
+- **Template‑based Outputs**: Standard chart formats → PDF documents
+- **Document Assembly**: Combine charts with other content in PDF format
 
 ### **4. Industry‑Specific Applications**
 
-- **Research Institutions**: Experimental data charts → PDF research‑paper figures  
-- **Education Sector**: Educational material charts → PDF course materials  
-- **Consulting Firms**: Analysis charts → PDF client deliverables  
-- **Manufacturing**: Quality‑control charts → PDF inspection reports  
-- **Healthcare**: Patient data charts → PDF medical records  
-- **Government**: Statistical charts → PDF official publications  
+- **Research Institutions**: Experimental data charts → PDF research‑paper figures
+- **Education Sector**: Educational material charts → PDF course materials
+- **Consulting Firms**: Analysis charts → PDF client deliverables
+- **Manufacturing**: Quality‑control charts → PDF inspection reports
+- **Healthcare**: Patient data charts → PDF medical records
+- **Government**: Statistical charts → PDF official publications
 
 ### **5. Content Management & Distribution**
 
-- **Digital Asset Management**: Chart archiving in standardized PDF format  
-- **Knowledge Bases**: Technical documentation with embedded chart PDFs  
-- **Client Portals**: Secure PDF report delivery to stakeholders  
-- **Regulatory Compliance**: Audit‑ready PDF documentation generation  
+- **Digital Asset Management**: Chart archiving in standardized PDF format
+- **Knowledge Bases**: Technical documentation with embedded chart PDFs
+- **Client Portals**: Secure PDF report delivery to stakeholders
+- **Regulatory Compliance**: Audit‑ready PDF documentation generation
 
 ## Why should you use the Convert Chart to PDF API?
 
-- You can convert charts **without first uploading the workbook**, which saves storage space and reduces costs.  
-- Development can be quickly completed through the existing Aspose.Cells Cloud SDKs.  
-- **Simple Integration**: REST API with clear documentation.  
-- **Scalable Architecture**: Handles workloads from small to enterprise‑scale operations.  
+- You can convert charts **without first uploading the workbook**, which saves storage space and reduces costs.
+- Development can be quickly completed through the existing Aspose.Cells Cloud SDKs.
+- **Simple Integration**: REST API with clear documentation.
+- **Scalable Architecture**: Handles workloads from small to enterprise‑scale operations.
 
 ## How to Use the Convert Chart to PDF API with SDKs?
 

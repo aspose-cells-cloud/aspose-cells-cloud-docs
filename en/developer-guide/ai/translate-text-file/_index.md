@@ -14,7 +14,7 @@ The **TranslateTextFile** endpoint leverages Aspose.Cells Cloud AI services to t
 
 ## **Translate Text File API**
 
-### API Endpoint
+### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/ai/translate/text-file

@@ -14,26 +14,22 @@ weight: 40
 
 This REST API hides columns in a worksheet.
 
-**Version note:** This documentation applies to Aspose.Cells Cloud API **v3.0** (latest as of 2026‑03‑30).
-
 ## REST API
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/hide
 ```
 
-The API accepts the following parameters:
+### Request parameters
 
-| Parameter Name | Type    | Location | Description |
-|----------------|---------|----------|-------------|
-| name           | string  | path     | The name of the workbook file. |
-| sheetName      | string  | path     | The name of the worksheet where columns will be hidden. |
-| startColumn    | integer | query    | Zero‑based index of the first column to hide. |
+| Parameter Name | Type    | Location | Description                                                           |
+| -------------- | ------- | -------- | --------------------------------------------------------------------- |
+| name           | string  | path     | The name of the workbook file.                                        |
+| sheetName      | string  | path     | The name of the worksheet where columns will be hidden.               |
+| startColumn    | integer | query    | Zero‑based index of the first column to hide.                         |
 | totalColumns   | integer | query    | Number of consecutive columns to hide, starting from **startColumn**. |
-| folder         | string  | query    | Path to the folder that contains the workbook. |
-| storageName    | string  | query    | Name of the storage service where the file is located. |
-
-**Authentication:** Include the `Authorization: Bearer {access_token}` header with a valid OAuth 2.0 access token. The request must be sent over HTTPS.
+| folder         | string  | query    | Path to the folder that contains the workbook.                        |
+| storageName    | string  | query    | Name of the storage service where the file is located.                |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -62,13 +58,13 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 
 **Possible response codes**
 
-| HTTP Code | Meaning                                 | Example JSON (error)                              |
-|-----------|-----------------------------------------|---------------------------------------------------|
-| 200       | Success                                 | `{ "Code": 200, "Status": "OK" }`                 |
+| HTTP Code | Meaning                                | Example JSON (error)                                  |
+| --------- | -------------------------------------- | ----------------------------------------------------- |
+| 200       | Success                                | `{ "Code": 200, "Status": "OK" }`                     |
 | 400       | Bad request (e.g., invalid parameters) | `{ "Code": 400, "Message": "Invalid column range." }` |
 | 401       | Unauthorized (missing/invalid token)   | `{ "Code": 401, "Message": "Invalid access token." }` |
-| 404       | Not found (workbook or worksheet)       | `{ "Code": 404, "Message": "File not found." }`   |
-| 500       | Internal server error                   | `{ "Code": 500, "Message": "Unexpected error." }` |
+| 404       | Not found (workbook or worksheet)      | `{ "Code": 404, "Message": "File not found." }`       |
+| 500       | Internal server error                  | `{ "Code": 500, "Message": "Unexpected error." }`     |
 
 {{< /tab >}}
 

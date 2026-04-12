@@ -12,51 +12,51 @@ weight: 100
 
 Convert a local spreadsheet/Excel file to another format with the Aspose.Cells Cloud Web API.
 
-| **Out Format**                                                    | **Description**                                                                                                                                                                     |
-| :---------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [XLS](https://docs.fileformat.com/spreadsheet/xls/)               | Excel 95/5.0 - 2003 Workbook.                                                                                                                                                       |
-| [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)             | The Office Open XML SpreadsheetML File Format.                                                                                                                                      |
-| [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)             | Excel Binary Workbook.                                                                                                                                                              |
-| [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)             | Excel Macro‑Enabled Workbook.                                                                                                                                                       |
-| [XLT](https://docs.fileformat.com/spreadsheet/xlt/)               | Excel 97 - Excel 2003 Template.                                                                                                                                                     |
-| [XLTX](https://docs.fileformat.com/spreadsheet/xltx/)             | Excel Template.                                                                                                                                                                     |
-| [XLTM](https://docs.fileformat.com/spreadsheet/xltm/)             | Excel Macro‑Enabled Template.                                                                                                                                                       |
-| [XLAM](https://docs.fileformat.com/spreadsheet/xlam/)             | An Excel Macro‑Enabled Add‑In file that's used to add new functions to Excel.                                                                                                       |
-| [CSV](https://docs.fileformat.com/spreadsheet/csv/)               | CSV (Comma Separated Value) file.                                                                                                                                                   |
-| [TSV](https://docs.fileformat.com/spreadsheet/tsv/)               | TSV (Tab‑separated values) file.                                                                                                                                                    |
-| [TXT](https://docs.fileformat.com/word-processing/txt/)           | Delimited plain‑text file.                                                                                                                                                          |
-| [HTML](https://docs.fileformat.com/web/html/)                     | HTML format.                                                                                                                                                                        |
-| [MHTML](https://docs.fileformat.com/web/mhtml/)                   | MHTML file.                                                                                                                                                                         |
-| [ODS](https://docs.fileformat.com/spreadsheet/ods/)               | ODS (OpenDocument Spreadsheet).                                                                                                                                                     |
-| SpreadsheetML                                                     | Excel 2003 XML file.                                                                                                                                                                |
-| [Numbers](https://docs.fileformat.com/spreadsheet/numbers/)       | The document is created by Apple's “Numbers” application, which is part of the iWork suite for macOS and iOS.                                                                      |
-| [JSON](https://docs.fileformat.com/web/json/)                     | JavaScript Object Notation.                                                                                                                                                         |
-| [DIF](https://docs.fileformat.com/spreadsheet/dif/)               | Data Interchange Format.                                                                                                                                                            |
-| [DBF](https://docs.fileformat.com/database/dbf/)                  | The file with a .dbf extension is a database file used by the dBASE database‑management system.                                                                                   |
-| [PDF](https://docs.fileformat.com/pdf/)                           | Adobe Portable Document Format.                                                                                                                                                     |
-| [XPS](https://docs.fileformat.com/page-description-language/xps/) | XML Paper Specification format.                                                                                                                                                     |
-| [SVG](https://docs.fileformat.com/page-description-language/svg/) | Scalable Vector Graphics format.                                                                                                                                                    |
-| [TIFF](https://docs.fileformat.com/image/tiff/)                   | Tagged Image File Format.                                                                                                                                                           |
-| [PNG](https://docs.fileformat.com/image/png/)                     | Portable Network Graphics format.                                                                                                                                                   |
-| [BMP](https://docs.fileformat.com/image/bmp/)                     | Bitmap Image format.                                                                                                                                                                |
-| [EMF](https://docs.fileformat.com/image/emf/)                     | Enhanced Metafile format.                                                                                                                                                           |
-| [JPEG](https://docs.fileformat.com/image/jpeg/)                   | JPEG is a type of image format that is saved using lossy compression.                                                                                                             |
-| [GIF](https://docs.fileformat.com/image/gif/)                     | Graphics Interchange Format.                                                                                                                                                        |
-| [MARKDOWN](https://docs.fileformat.com/word-processing/md/)       | Represents a Markdown document.                                                                                                                                                     |
-| [SXC](https://docs.fileformat.com/spreadsheet/sxc/)               | An XML‑based format used by OpenOffice and StarOffice.                                                                                                                              |
-| [FODS](https://docs.fileformat.com/spreadsheet/fods/)             | This is an Open Document format stored as flat XML.                                                                                                                                 |
-| [DOCX](https://docs.fileformat.com/word-processing/docx/)         | A well‑known format for Microsoft Word documents that combines XML and binary files.                                                                                              |
-| [PPTX](https://docs.fileformat.com/presentation/pptx/)            | The PPTX format is based on the Microsoft PowerPoint Open XML presentation file format.                                                                                           |
-| [SqlScript](https://docs.fileformat.com/database/sql/)            | Structured Query Language.                                                                                                                                                          |
-| [XHtml](https://docs.fileformat.com/web/xhtml/)                   | XHTML is a text‑based file format with markup in XML, using a reformulation of HTML 4.0.                                                                                           |
-| [Epub](https://docs.fileformat.com/ebook/epub/)                   | Files with a .epub extension are an e‑book format that provides a standard digital publication for publishers and consumers.                                                      |
-| [Xml](https://docs.fileformat.com/web/xml/)                       | XML stands for Extensible Markup Language; it is similar to HTML but uses tags to define objects.                                                                                |
-| [Ots](https://docs.fileformat.com/spreadsheet/ots/)               | Open Document Template Sheet (OTS) file.                                                                                                                                           |
-| [AZW3](https://docs.fileformat.com/ebook/azw3/)                   | AZW is a digital e‑book file format developed by Amazon for Kindle devices. AZW3, also known as Kindle Format 8 (KF8).                                                          |
+| **Out Format**                                                    | **Description**                                                                                                              |
+| :---------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| [XLS](https://docs.fileformat.com/spreadsheet/xls/)               | Excel 95/5.0 - 2003 Workbook.                                                                                                |
+| [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)             | The Office Open XML SpreadsheetML File Format.                                                                               |
+| [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)             | Excel Binary Workbook.                                                                                                       |
+| [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)             | Excel Macro‑Enabled Workbook.                                                                                                |
+| [XLT](https://docs.fileformat.com/spreadsheet/xlt/)               | Excel 97 - Excel 2003 Template.                                                                                              |
+| [XLTX](https://docs.fileformat.com/spreadsheet/xltx/)             | Excel Template.                                                                                                              |
+| [XLTM](https://docs.fileformat.com/spreadsheet/xltm/)             | Excel Macro‑Enabled Template.                                                                                                |
+| [XLAM](https://docs.fileformat.com/spreadsheet/xlam/)             | An Excel Macro‑Enabled Add‑In file that's used to add new functions to Excel.                                                |
+| [CSV](https://docs.fileformat.com/spreadsheet/csv/)               | CSV (Comma Separated Value) file.                                                                                            |
+| [TSV](https://docs.fileformat.com/spreadsheet/tsv/)               | TSV (Tab‑separated values) file.                                                                                             |
+| [TXT](https://docs.fileformat.com/word-processing/txt/)           | Delimited plain‑text file.                                                                                                   |
+| [HTML](https://docs.fileformat.com/web/html/)                     | HTML format.                                                                                                                 |
+| [MHTML](https://docs.fileformat.com/web/mhtml/)                   | MHTML file.                                                                                                                  |
+| [ODS](https://docs.fileformat.com/spreadsheet/ods/)               | ODS (OpenDocument Spreadsheet).                                                                                              |
+| SpreadsheetML                                                     | Excel 2003 XML file.                                                                                                         |
+| [Numbers](https://docs.fileformat.com/spreadsheet/numbers/)       | The document is created by Apple's “Numbers” application, which is part of the iWork suite for macOS and iOS.                |
+| [JSON](https://docs.fileformat.com/web/json/)                     | JavaScript Object Notation.                                                                                                  |
+| [DIF](https://docs.fileformat.com/spreadsheet/dif/)               | Data Interchange Format.                                                                                                     |
+| [DBF](https://docs.fileformat.com/database/dbf/)                  | The file with a .dbf extension is a database file used by the dBASE database‑management system.                              |
+| [PDF](https://docs.fileformat.com/pdf/)                           | Adobe Portable Document Format.                                                                                              |
+| [XPS](https://docs.fileformat.com/page-description-language/xps/) | XML Paper Specification format.                                                                                              |
+| [SVG](https://docs.fileformat.com/page-description-language/svg/) | Scalable Vector Graphics format.                                                                                             |
+| [TIFF](https://docs.fileformat.com/image/tiff/)                   | Tagged Image File Format.                                                                                                    |
+| [PNG](https://docs.fileformat.com/image/png/)                     | Portable Network Graphics format.                                                                                            |
+| [BMP](https://docs.fileformat.com/image/bmp/)                     | Bitmap Image format.                                                                                                         |
+| [EMF](https://docs.fileformat.com/image/emf/)                     | Enhanced Metafile format.                                                                                                    |
+| [JPEG](https://docs.fileformat.com/image/jpeg/)                   | JPEG is a type of image format that is saved using lossy compression.                                                        |
+| [GIF](https://docs.fileformat.com/image/gif/)                     | Graphics Interchange Format.                                                                                                 |
+| [MARKDOWN](https://docs.fileformat.com/word-processing/md/)       | Represents a Markdown document.                                                                                              |
+| [SXC](https://docs.fileformat.com/spreadsheet/sxc/)               | An XML‑based format used by OpenOffice and StarOffice.                                                                       |
+| [FODS](https://docs.fileformat.com/spreadsheet/fods/)             | This is an Open Document format stored as flat XML.                                                                          |
+| [DOCX](https://docs.fileformat.com/word-processing/docx/)         | A well‑known format for Microsoft Word documents that combines XML and binary files.                                         |
+| [PPTX](https://docs.fileformat.com/presentation/pptx/)            | The PPTX format is based on the Microsoft PowerPoint Open XML presentation file format.                                      |
+| [SqlScript](https://docs.fileformat.com/database/sql/)            | Structured Query Language.                                                                                                   |
+| [XHtml](https://docs.fileformat.com/web/xhtml/)                   | XHTML is a text‑based file format with markup in XML, using a reformulation of HTML 4.0.                                     |
+| [Epub](https://docs.fileformat.com/ebook/epub/)                   | Files with a .epub extension are an e‑book format that provides a standard digital publication for publishers and consumers. |
+| [Xml](https://docs.fileformat.com/web/xml/)                       | XML stands for Extensible Markup Language; it is similar to HTML but uses tags to define objects.                            |
+| [Ots](https://docs.fileformat.com/spreadsheet/ots/)               | Open Document Template Sheet (OTS) file.                                                                                     |
+| [AZW3](https://docs.fileformat.com/ebook/azw3/)                   | AZW is a digital e‑book file format developed by Amazon for Kindle devices. AZW3, also known as Kindle Format 8 (KF8).       |
 
 ## **Convert Spreadsheet API**
 
-### API Endpoint
+### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet
@@ -90,25 +90,25 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
-- **500 Server Error**: The spreadsheet has encountered an anomaly while obtaining calculation data.  
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
+- **404 Not Found**: The spreadsheet file is not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly while obtaining calculation data.
 
 ## Where should you use the Convert Spreadsheet API?
 
-- **Legacy System Migration**: Convert thousands of legacy XLS files to XLSX for modern systems.  
-- **Archive Standardization**: Normalize various spreadsheet formats (XLS, XLSM, ODS, CSV) to a single format for archival.  
-- **Office Suite Interoperability**: Convert Excel files to formats compatible with LibreOffice, Google Sheets, or Apple Numbers.  
-- **Data Source Normalization**: Convert various spreadsheet formats to CSV or JSON for database ingestion.  
-- **Web Publishing**: Convert financial models to HTML for web display.  
+- **Legacy System Migration**: Convert thousands of legacy XLS files to XLSX for modern systems.
+- **Archive Standardization**: Normalize various spreadsheet formats (XLS, XLSM, ODS, CSV) to a single format for archival.
+- **Office Suite Interoperability**: Convert Excel files to formats compatible with LibreOffice, Google Sheets, or Apple Numbers.
+- **Data Source Normalization**: Convert various spreadsheet formats to CSV or JSON for database ingestion.
+- **Web Publishing**: Convert financial models to HTML for web display.
 
 ## Why should you use the Convert Spreadsheet API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.  
-- **Cost‑Effective**: You can convert table data without first uploading the workbook, which saves storage space and reduces costs.  
-- **Comprehensive Format Support**: Convert between 20+ spreadsheet formats.  
-- **Preserve Data Fidelity & Formatting.**  
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.
+- **Cost‑Effective**: You can convert table data without first uploading the workbook, which saves storage space and reduces costs.
+- **Comprehensive Format Support**: Convert between 20+ spreadsheet formats.
+- **Preserve Data Fidelity & Formatting.**
 
 ## How to Use the Convert Spreadsheet API with SDKs?
 

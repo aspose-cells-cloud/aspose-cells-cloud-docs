@@ -18,10 +18,10 @@ This REST API deletes a shape on an Excel worksheet.
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
 
-The request parameters are:
+### **Request parameters**
 
 | Parameter Name | Type    | Location | Description                                   |
-|----------------|---------|----------|-----------------------------------------------|
+| -------------- | ------- | -------- | --------------------------------------------- |
 | name           | string  | path     | Name of the workbook file.                    |
 | sheetName      | string  | path     | Name of the worksheet.                        |
 | shapeindex     | integer | path     | Index of the shape in the worksheet’s shapes. |

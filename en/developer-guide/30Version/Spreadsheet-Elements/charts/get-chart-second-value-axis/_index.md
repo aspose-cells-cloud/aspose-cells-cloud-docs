@@ -15,15 +15,15 @@ This REST API retrieves the second value axis of a chart.
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type    | Location                     | Description                                   |
-|----------------|---------|------------------------------|-----------------------------------------------|
-| name           | string  | path                         | The name of the Excel file.                   |
-| sheetName      | string  | path                         | The name of the worksheet containing the chart.|
-| chartIndex     | integer | path                         | The zero‑based index of the chart.            |
-| folder         | string  | query                        | The folder where the file is stored.          |
-| storageName    | string  | query                        | The name of the Aspose Cloud storage.         |
+| Parameter Name | Type    | Location | Description                                     |
+| -------------- | ------- | -------- | ----------------------------------------------- |
+| name           | string  | path     | The name of the Excel file.                     |
+| sheetName      | string  | path     | The name of the worksheet containing the chart. |
+| chartIndex     | integer | path     | The zero‑based index of the chart.              |
+| folder         | string  | query    | The folder where the file is stored.            |
+| storageName    | string  | query    | The name of the Aspose Cloud storage.           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetChartSecondValueAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -65,23 +65,33 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
+
 <!-- C# example placeholder -->
+
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
 <!-- Java example placeholder -->
+
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
+
 <!-- PHP example placeholder -->
+
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
+
 <!-- Ruby example placeholder -->
+
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
+
 <!-- Python example placeholder -->
+
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
@@ -89,19 +99,27 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
+
 <!-- Android example placeholder -->
+
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
 <!-- Swift example placeholder -->
+
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
 <!-- Perl example placeholder -->
+
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
+
 <!-- Go example placeholder -->
+
 {{< /tab >}}
 
 {{< /tabs >}}

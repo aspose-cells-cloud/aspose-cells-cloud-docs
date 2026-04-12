@@ -13,28 +13,19 @@ This REST API removes duplicate rows from a **ListObject** in an Excel worksheet
 
 ## REST API
 
-### Prerequisites
-To call this endpoint you must obtain a JWT access token from the Aspose Cloud OAuth service and include it in the `Authorization` header:
-
-```http
-Authorization: Bearer <jwt token>
-```
-
-### Request
-
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/RemoveDuplicates
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name   | Type    | Location | Description                                                   |
-|------------------|---------|----------|---------------------------------------------------------------|
-| **name**         | String  | Path     | The name of the Excel file.                                    |
-| **sheetName**    | String  | Path     | The name of the worksheet that contains the list object.      |
-| **listObjectIndex** | Integer | Path | The zero‑based index of the list object to process.           |
-| **folder**       | String  | Query    | (Optional) The folder path where the file is stored.          |
-| **storageName**  | String  | Query    | (Optional) The name of the storage service.                   |
+| Parameter Name      | Type    | Location | Description                                              |
+| ------------------- | ------- | -------- | -------------------------------------------------------- |
+| **name**            | String  | Path     | The name of the Excel file.                              |
+| **sheetName**       | String  | Path     | The name of the worksheet that contains the list object. |
+| **listObjectIndex** | Integer | Path     | The zero‑based index of the list object to process.      |
+| **folder**          | String  | Query    | (Optional) The folder path where the file is stored.     |
+| **storageName**     | String  | Query    | (Optional) The name of the storage service.              |
 
 ### Sample Request (cURL)
 
@@ -65,20 +56,22 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
 {{< /tabs >}}
 
 ### Response
+
 On success the service returns a JSON object similar to the example above. The fields are:
 
-- **Code** – HTTP status code (`200` for success).  
-- **Status** – Textual description of the status.  
-- **DuplicateRowsRemoved** – Number of rows that were eliminated.  
+- **Code** – HTTP status code (`200` for success).
+- **Status** – Textual description of the status.
+- **DuplicateRowsRemoved** – Number of rows that were eliminated.
 - **Message** – Additional information about the operation.
 
 ### Error Codes
-| HTTP Status | Meaning                              | When it occurs |
-|-------------|--------------------------------------|----------------|
-| 400         | Bad Request                          | Missing or invalid parameters. |
-| 401         | Unauthorized                         | No token supplied or token is expired/invalid. |
-| 404         | Not Found                            | Specified file, worksheet, or list object does not exist. |
-| 500         | Internal Server Error                | Unexpected server‑side failure. |
+
+| HTTP Status | Meaning               | When it occurs                                            |
+| ----------- | --------------------- | --------------------------------------------------------- |
+| 400         | Bad Request           | Missing or invalid parameters.                            |
+| 401         | Unauthorized          | No token supplied or token is expired/invalid.            |
+| 404         | Not Found             | Specified file, worksheet, or list object does not exist. |
+| 500         | Internal Server Error | Unexpected server‑side failure.                           |
 
 ## Cloud SDK Family
 

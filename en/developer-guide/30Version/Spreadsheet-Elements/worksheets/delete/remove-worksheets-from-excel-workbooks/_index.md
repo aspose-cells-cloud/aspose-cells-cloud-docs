@@ -18,14 +18,14 @@ This REST API deletes a worksheet.
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location | Description          |
-|----------------|--------|----------|----------------------|
-| name           | string | path     | Document name.       |
-| sheetName      | string | path     | The worksheet name.  |
-| folder         | string | query    | Document’s folder.   |
-| storageName    | string | query    | Storage name.        |
+| Parameter Name | Type   | Location | Description         |
+| -------------- | ------ | -------- | ------------------- |
+| name           | string | path     | Document name.      |
+| sheetName      | string | path     | The worksheet name. |
+| folder         | string | query    | Document’s folder.  |
+| storageName    | string | query    | Storage name.       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

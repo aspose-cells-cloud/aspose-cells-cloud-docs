@@ -14,7 +14,7 @@ Divide a large Excel workbook stored in the cloud into separate files by workshe
 
 ## **Split Remote Spreadsheet API**
 
-### API Endpoint
+### Web API
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet
@@ -22,32 +22,32 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTP Body | Description |
-| :- | :- | :- | :- |
-| name | String | Path | The name of the workbook file (e.g., `data.xlsx`) to be split, located in the specified cloud storage folder. |
-| folder | String | Query | The cloud storage folder path where the source workbook is stored. |
-| from | Integer | Query | The starting worksheet index (0‑based) for the split operation. For example, `0` indicates the first worksheet. |
-| to | Integer | Query | The ending worksheet index (0‑based) for the split operation. For example, `2` splits worksheets 0, 1, and 2. |
-| outFormat | String | Query | The output file format for the split files. Supported formats include `XLSX`, `PDF`, `CSV`, `JSON`, `HTML`, and 30+ others. |
-| storageName | String | Query | *(Optional)* The name of the cloud storage where the source workbook resides. If omitted, the default cloud storage is used. |
-| outPath | String | Query | *(Optional)* The target cloud folder path where the split files will be saved. If omitted, files are saved in the source folder. |
-| outStorageName | String | Query | The name of the cloud storage where the output split files will be stored. |
-| fontsLocation | String | Query | *(Optional)* Specifies a custom cloud folder path containing font files for proper text rendering in PDF/image outputs. |
-| region | String | Query | *(Optional)* Sets the locale for formatting numbers, dates, and currency in the output files (e.g., `"en-US"`, `"zh-CN"`, `"de-DE"`). |
-| password | String | Query | *(Optional)* If the source workbook is password‑protected, provide the password to open the file. |
+| Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                                                                                           |
+| :------------- | :------ | :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| name           | String  | Path                        | The name of the workbook file (e.g., `data.xlsx`) to be split, located in the specified cloud storage folder.                         |
+| folder         | String  | Query                       | The cloud storage folder path where the source workbook is stored.                                                                    |
+| from           | Integer | Query                       | The starting worksheet index (0‑based) for the split operation. For example, `0` indicates the first worksheet.                       |
+| to             | Integer | Query                       | The ending worksheet index (0‑based) for the split operation. For example, `2` splits worksheets 0, 1, and 2.                         |
+| outFormat      | String  | Query                       | The output file format for the split files. Supported formats include `XLSX`, `PDF`, `CSV`, `JSON`, `HTML`, and 30+ others.           |
+| storageName    | String  | Query                       | _(Optional)_ The name of the cloud storage where the source workbook resides. If omitted, the default cloud storage is used.          |
+| outPath        | String  | Query                       | _(Optional)_ The target cloud folder path where the split files will be saved. If omitted, files are saved in the source folder.      |
+| outStorageName | String  | Query                       | The name of the cloud storage where the output split files will be stored.                                                            |
+| fontsLocation  | String  | Query                       | _(Optional)_ Specifies a custom cloud folder path containing font files for proper text rendering in PDF/image outputs.               |
+| region         | String  | Query                       | _(Optional)_ Sets the locale for formatting numbers, dates, and currency in the output files (e.g., `"en-US"`, `"zh-CN"`, `"de-DE"`). |
+| password       | String  | Query                       | _(Optional)_ If the source workbook is password‑protected, provide the password to open the file.                                     |
 
 ## **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream",
+      "Name": "file"
     }
+  }
 ]
 ```
 

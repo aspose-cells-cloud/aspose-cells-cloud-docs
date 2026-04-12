@@ -18,22 +18,16 @@ This REST API retrieves an OLE object in a specified format from an Excel worksh
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type    | Location | Description |
-|----------------|---------|----------|-------------|
-| name           | string  | path     | The name of the workbook file. |
+| Parameter Name | Type    | Location | Description                                          |
+| -------------- | ------- | -------- | ---------------------------------------------------- |
+| name           | string  | path     | The name of the workbook file.                       |
 | sheetName      | string  | path     | The name of the worksheet containing the OLE object. |
-| objectNumber   | integer | path     | The zero‑based index of the OLE object. |
-| format         | string  | query    | Desired export format (e.g., `png`, `jpeg`). |
-| folder         | string  | query    | Path to the folder where the workbook is stored. |
-| storageName    | string  | query    | Name of the storage service. |
-
-**Authentication** – The API requires a Bearer JWT token. Obtain the token from the Aspose Cloud authentication guide and include it in the `Authorization` header:
-
-```
--H "Authorization: Bearer <jwt token>"
-```
+| objectNumber   | integer | path     | The zero‑based index of the OLE object.              |
+| format         | string  | query    | Desired export format (e.g., `png`, `jpeg`).         |
+| folder         | string  | query    | Path to the folder where the workbook is stored.     |
+| storageName    | string  | query    | Name of the storage service.                         |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/GetWorksheetOleObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -61,16 +55,18 @@ Binary image data (Content‑Type: image/png)
 
 The successful response returns a **200** status code with `Content‑Type: image/png` (or the requested image type). The payload is binary; you can save it directly to a file or, for debugging, encode it as Base‑64.
 
-**Common response codes**
-
-- **200** – OK. Binary image returned.
-- **401** – Unauthorized. Invalid or missing JWT token.
-- **404** – Not Found. Workbook, worksheet, or OLE object does not exist.
-- **500** – Internal Server Error. Unexpected server condition.
-
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Error Responses
+
+| HTTP Status | Code                   | Description                                     |
+| ----------- | ---------------------- | ----------------------------------------------- |
+| 400         | `InvalidParameter`     | One or more request parameters are invalid.     |
+| 401         | `AuthenticationFailed` | Missing or invalid JWT token.                   |
+| 404         | `PropertyNotFound`     | The specified document property does not exist. |
+| 500         | `InternalError`        | An unexpected error occurred on the server.     |
 
 ## Cloud SDK Family
 

@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/,/tables/add/]
+aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
 keywords: "Aspose.Cells Cloud, Excel API, add list object, table, REST, worksheet"
 description: "Learn how to add a list object (Excel table) to a worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication steps, cURL example, and SDK code samples."
 weight: 10
@@ -18,43 +18,23 @@ This REST API adds a **list object (table)** to an Excel worksheet.
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects
 ```
 
-### Prerequisites
-- API version **v3.0**.  
-- A valid JWT token (see **Authentication** below).  
-- The source workbook must be uploaded to storage.  
-- The target worksheet must already exist.  
-
-### Authentication
-To call this endpoint you need a JWT access token obtained via the OAuth 2.0 client‑credentials flow:
-
-```bash
-POST https://api.aspose.cloud/connect/token \
-  -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
-```
-
-Include the token in the request header:
-
-```
-Authorization: Bearer <jwt token>
-```
-
 ### Request parameters
-The request parameters for this operation are:
 
-| Parameter Name | Type    | Location | Description |
-|----------------|---------|----------|-------------|
-| **name**       | string  | path     | Workbook file name. |
-| **sheetName**  | string  | path     | Worksheet name. |
-| **startRow**   | integer | query    | Zero‑based index of the first row of the table range. |
-| **startColumn**| integer | query    | Zero‑based index of the first column of the table range. |
-| **endRow**     | integer | query    | Zero‑based index of the last row of the table range. |
-| **endColumn**  | integer | query    | Zero‑based index of the last column of the table range. |
-| **hasHeaders** | boolean | query    | `true` if the first row contains column headers; otherwise `false`. |
-| **listObject** | object  | body     | Definition of the list object (see **Request body schema**). |
-| **folder**     | string  | query    | Folder that contains the workbook. |
-| **storageName**| string  | query    | Storage name. |
+| Parameter Name  | Type    | Location | Description                                                         |
+| --------------- | ------- | -------- | ------------------------------------------------------------------- |
+| **name**        | string  | path     | Workbook file name.                                                 |
+| **sheetName**   | string  | path     | Worksheet name.                                                     |
+| **startRow**    | integer | query    | Zero‑based index of the first row of the table range.               |
+| **startColumn** | integer | query    | Zero‑based index of the first column of the table range.            |
+| **endRow**      | integer | query    | Zero‑based index of the last row of the table range.                |
+| **endColumn**   | integer | query    | Zero‑based index of the last column of the table range.             |
+| **hasHeaders**  | boolean | query    | `true` if the first row contains column headers; otherwise `false`. |
+| **listObject**  | object  | body     | Definition of the list object (see **Request body schema**).        |
+| **folder**      | string  | query    | Folder that contains the workbook.                                  |
+| **storageName** | string  | query    | Storage name.                                                       |
 
 ### Request body schema
+
 The **listObject** object describes the table that will be created. Only the most common properties are shown; see the OpenAPI specification for the complete list.
 
 ```json
@@ -90,12 +70,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
 ```
 
 ### Error codes
-| HTTP Status | Reason | Description |
-|-------------|--------|-------------|
-| **400** | Bad Request | Invalid range parameters or malformed JSON body. |
-| **401** | Unauthorized | Missing or expired JWT token. |
-| **404** | Not Found | Specified workbook or worksheet does not exist. |
-| **500** | Internal Server Error | Unexpected server‑side failure. |
+
+| HTTP Status | Reason                | Description                                      |
+| ----------- | --------------------- | ------------------------------------------------ |
+| **400**     | Bad Request           | Invalid range parameters or malformed JSON body. |
+| **401**     | Unauthorized          | Missing or expired JWT token.                    |
+| **404**     | Not Found             | Specified workbook or worksheet does not exist.  |
+| **500**     | Internal Server Error | Unexpected server‑side failure.                  |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) provides the full contract for this operation.
 

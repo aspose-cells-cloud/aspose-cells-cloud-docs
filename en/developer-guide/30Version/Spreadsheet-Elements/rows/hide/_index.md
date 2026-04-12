@@ -20,14 +20,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 
 ### Request parameters
 
-| Parameter      | Type    | Location | Description |
-|----------------|---------|----------|-------------|
-| **name**       | string  | path     | The name of the workbook file. |
-| **sheetName**  | string  | path     | The name of the worksheet containing the rows to hide. |
-| **startrow**   | integer | query    | Zero‑based index of the first row to be hidden. |
-| **totalRows**  | integer | query    | The number of consecutive rows to hide, starting from **startrow**. |
-| **folder**     | string  | query    | The folder in storage where the workbook is located. |
-| **storageName**| string  | query    | The name of the storage service. |
+| Parameter       | Type    | Location | Description                                                         |
+| --------------- | ------- | -------- | ------------------------------------------------------------------- |
+| **name**        | string  | path     | The name of the workbook file.                                      |
+| **sheetName**   | string  | path     | The name of the worksheet containing the rows to hide.              |
+| **startrow**    | integer | query    | Zero‑based index of the first row to be hidden.                     |
+| **totalRows**   | integer | query    | The number of consecutive rows to hide, starting from **startrow**. |
+| **folder**      | string  | query    | The folder in storage where the workbook is located.                |
+| **storageName** | string  | query    | The name of the storage service.                                    |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 

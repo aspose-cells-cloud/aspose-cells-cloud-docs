@@ -18,17 +18,17 @@ This REST API updates the style of a pivot table.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/FormatAll
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name   | Type    | Location | Description                                          |
-|------------------|---------|----------|------------------------------------------------------|
-| name             | string  | path     | The name of the workbook file.                       |
-| sheetName        | string  | path     | The worksheet that contains the pivot table.         |
-| pivotTableIndex  | integer | path     | Zero‑based index of the pivot table to be formatted. |
-| style            | object  | body     | A style DTO that defines the formatting to apply.   |
-| needReCalculate  | boolean | query    | Set to **true** to recalculate the pivot table after formatting; default is **false**. |
-| folder           | string  | query    | The folder where the workbook is stored.             |
-| storageName      | string  | query    | The name of the storage service.                     |
+| Parameter Name  | Type    | Location | Description                                                                            |
+| --------------- | ------- | -------- | -------------------------------------------------------------------------------------- |
+| name            | string  | path     | The name of the workbook file.                                                         |
+| sheetName       | string  | path     | The worksheet that contains the pivot table.                                           |
+| pivotTableIndex | integer | path     | Zero‑based index of the pivot table to be formatted.                                   |
+| style           | object  | body     | A style DTO that defines the formatting to apply.                                      |
+| needReCalculate | boolean | query    | Set to **true** to recalculate the pivot table after formatting; default is **false**. |
+| folder          | string  | query    | The folder where the workbook is stored.                                               |
+| storageName     | string  | query    | The name of the storage service.                                                       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableStyle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

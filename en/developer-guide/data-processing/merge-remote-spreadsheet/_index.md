@@ -17,12 +17,12 @@ Quickly merge Excel files stored in the cloud with other spreadsheets using Aspo
 **Prerequisites**  
 Before calling the API, ensure that you:
 
-* Have generated a valid OAuth 2.0 access token.  
-* Are using a supported cloud storage provider (AWS S3, Azure Blob, Google Cloud Storage).  
-* Are running at least SDK version **23.12** (or later).  
-* Have TLS 1.2 or higher enabled for secure communication.
+- Have generated a valid OAuth 2.0 access token.
+- Are using a supported cloud storage provider (AWS S3, Azure Blob, Google Cloud Storage).
+- Are running at least SDK version **23.12** (or later).
+- Have TLS 1.2 or higher enabled for secure communication.
 
-### API Endpoint
+### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
@@ -32,93 +32,74 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
 
 ### **Request Parameters:**
 
-| Parameter Name      | Type    | Path/Query String/HTTPBody | Description |
-| :-                  | :-      | :-                         | :- |
-| name                | String  | Path                       | The name of the source workbook file to be merged. |
-| mergedSpreadsheet   | String  | Query                      | A comma‑separated list of spreadsheet file names to merge into the source workbook. |
-| folder              | String  | Query                      | The folder path in cloud storage containing the source workbook. |
-| outFormat           | String  | Query                      | The desired format for the merged output file (e.g., `XLSX`, `PDF`, `CSV`). |
-| mergeInOneSheet     | Boolean | Query                      | Set to `true` to merge all source data into a single worksheet; `false` creates separate worksheets for each file. |
-| storageName         | String  | Query                      | *(Optional)* The name of the cloud storage where the source workbook resides. If omitted, the default storage is used. |
-| outPath             | String  | Query                      | *(Optional)* The target folder path in cloud storage for saving the merged file. If omitted, the file is saved in the source folder. |
-| outStorageName      | String  | Query                      | The name of the cloud storage for saving the output file. |
-| fontsLocation       | String  | Query                      | *(Optional)* Custom folder path for font files used during conversion to image/PDF formats. |
-| region              | String  | Query                      | *(Optional)* Locale/region for date, number, and currency formatting in the output file (e.g., `en-US`, `de-DE`). |
-| password            | String  | Query                      | *(Optional)* Password required to open the source workbook if it is protected. |
-
-**Full Request Example (cURL)**  
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/SourceWorkbook.xlsx/merge/spreadsheet\
-?mergedSpreadsheet=Report1.xlsx,Report2.xlsx\
-&folder=Reports/2024\
-&outFormat=pdf\
-&outPath=Merged/Result.pdf\
-&mergeInOneSheet=true" \
--H "Authorization: Bearer {access_token}" \
--H "Accept: application/json"
-```
+| Parameter Name    | Type    | Path/Query String/HTTPBody | Description                                                                                                                          |
+| :---------------- | :------ | :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
+| name              | String  | Path                       | The name of the source workbook file to be merged.                                                                                   |
+| mergedSpreadsheet | String  | Query                      | A comma‑separated list of spreadsheet file names to merge into the source workbook.                                                  |
+| folder            | String  | Query                      | The folder path in cloud storage containing the source workbook.                                                                     |
+| outFormat         | String  | Query                      | The desired format for the merged output file (e.g., `XLSX`, `PDF`, `CSV`).                                                          |
+| mergeInOneSheet   | Boolean | Query                      | Set to `true` to merge all source data into a single worksheet; `false` creates separate worksheets for each file.                   |
+| storageName       | String  | Query                      | _(Optional)_ The name of the cloud storage where the source workbook resides. If omitted, the default storage is used.               |
+| outPath           | String  | Query                      | _(Optional)_ The target folder path in cloud storage for saving the merged file. If omitted, the file is saved in the source folder. |
+| outStorageName    | String  | Query                      | The name of the cloud storage for saving the output file.                                                                            |
+| fontsLocation     | String  | Query                      | _(Optional)_ Custom folder path for font files used during conversion to image/PDF formats.                                          |
+| region            | String  | Query                      | _(Optional)_ Locale/region for date, number, and currency formatting in the output file (e.g., `en-US`, `de-DE`).                    |
+| password          | String  | Query                      | _(Optional)_ Password required to open the source workbook if it is protected.                                                       |
 
 ### **Response**
 
 ```json
-{
-  "FileName": "Result.pdf",
-  "Size": 254312,
-  "DownloadUrl": "https://mycloudstorage.com/Merged/Result.pdf"
-}
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
 ```
 
 The response returns the name, size (in bytes), and a direct download URL for the merged file.
 
 ### Error Codes
 
-- **400 Bad Request** – The request URI is invalid or required parameters are missing.  
-- **401 Unauthorized** – Invalid or missing OAuth 2.0 token, or incorrect client credentials.  
-- **404 Not Found** – The specified spreadsheet file cannot be accessed.  
+- **400 Bad Request** – The request URI is invalid or required parameters are missing.
+- **401 Unauthorized** – Invalid or missing OAuth 2.0 token, or incorrect client credentials.
+- **404 Not Found** – The specified spreadsheet file cannot be accessed.
 - **500 Server Error** – An unexpected error occurred while processing the workbook.
-
-**Sample Error Payload**
-
-```json
-{
-  "ErrorCode": "InvalidParameter",
-  "Message": "The 'mergedSpreadsheet' query parameter is required.",
-  "Description": "Provide at least one spreadsheet name to merge."
-}
-```
 
 ## Where should we use the Merge Remote Spreadsheet API?
 
 ### **Enterprise‑grade data integration**
 
-- **Multi‑department report consolidation** – Consolidate separate Excel reports submitted by sales, marketing, finance, and other teams.  
-- **Branch data summary** – Summarize performance data from each branch worldwide.  
+- **Multi‑department report consolidation** – Consolidate separate Excel reports submitted by sales, marketing, finance, and other teams.
+- **Branch data summary** – Summarize performance data from each branch worldwide.
 - **Partner data consolidation** – Merge data submissions from multiple partners into a single workbook.
 
 ### **Cloud document processing workflow**
 
-- Cloud storage file processing: Directly merge Excel files stored in AWS S3, Azure Blob, or Google Cloud Storage.  
-- **Multi‑source data consolidation** – Combine files from different cloud locations into one workbook.  
+- Cloud storage file processing: Directly merge Excel files stored in AWS S3, Azure Blob, or Google Cloud Storage.
+- **Multi‑source data consolidation** – Combine files from different cloud locations into one workbook.
 - **Automated data pipelines** – Integrate the API into ETL processes to automate file merging.
 
 ### **Document‑management automation**
 
-- **Version‑control consolidation** – Merge different versions of a project plan or budget workbook.  
-- **Template data population** – Insert data files into standardized reporting templates.  
+- **Version‑control consolidation** – Merge different versions of a project plan or budget workbook.
+- **Template data population** – Insert data files into standardized reporting templates.
 - **Regular report generation** – Automate weekly, monthly, and quarterly summary reports.
 
 ### **Cross‑platform collaboration**
 
-- **Remote‑team collaboration** – Consolidate work submitted by dispersed team members.  
-- **Customer data organization** – Merge order or feedback data from multiple customers.  
+- **Remote‑team collaboration** – Consolidate work submitted by dispersed team members.
+- **Customer data organization** – Merge order or feedback data from multiple customers.
 - **Supplier information summary** – Combine quotes or product information from several suppliers.
 
 ## Why should you use the Merge Remote Spreadsheet API?
 
-- **Developer‑friendly** – Aspose.Cells Cloud provides SDKs for many languages, shortening development time and offering comprehensive documentation. Compared with building a custom solution, this reduces workload dramatically.  
-- **Reduced labor costs** – Decreases the need for staff dedicated to manual document consolidation.  
-- **Pay‑per‑use** – No upfront investment; you only pay for the API calls you actually use.  
+- **Developer‑friendly** – Aspose.Cells Cloud provides SDKs for many languages, shortening development time and offering comprehensive documentation. Compared with building a custom solution, this reduces workload dramatically.
+- **Reduced labor costs** – Decreases the need for staff dedicated to manual document consolidation.
+- **Pay‑per‑use** – No upfront investment; you only pay for the API calls you actually use.
 - **Zero maintenance costs** – No servers to maintain, no software updates, and no compatibility concerns.
 
 ## How to Use the Merge Remote Spreadsheet API with SDKs

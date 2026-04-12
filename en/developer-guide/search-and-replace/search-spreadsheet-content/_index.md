@@ -1,54 +1,38 @@
----  
-title: "Search Spreadsheet Content – Aspose.Cells Cloud API (Find Text in Excel)"  
-second_title: "Document"  
-ArticleTitle: "Search Text in Local Excel Spreadsheets – Find Specific Data"  
-linktitle: "Search Spreadsheet Content"  
-type: docs  
-url: /search-spreadsheet-content/  
-keywords: "Aspose.Cells, Excel search API, spreadsheet content search, cloud spreadsheet API, text lookup"  
-description: "Use Aspose.Cells Cloud API to search for text, numbers, or formulas in local Excel files. Supports case‑insensitive queries, worksheet‑level scope, and secure authentication."  
-weight: 100  
----  
+---
+title: "Search Spreadsheet Content – Aspose.Cells Cloud API (Find Text in Excel)"
+second_title: "Document"
+ArticleTitle: "Search Text in Local Excel Spreadsheets – Find Specific Data"
+linktitle: "Search Spreadsheet Content"
+type: docs
+url: /search-spreadsheet-content/
+keywords: "Aspose.Cells, Excel search API, spreadsheet content search, cloud spreadsheet API, text lookup"
+description: "Use Aspose.Cells Cloud API to search for text, numbers, or formulas in local Excel files. Supports case‑insensitive queries, worksheet‑level scope, and secure authentication."
+weight: 100
+---
 
-Programmatically search for specific text within any Excel spreadsheet using the Aspose.Cells Cloud API. The API can locate text, numbers, or formulas in local files stored in the cloud, enabling automated data discovery, content analysis, and spreadsheet‑auditing workflows.  
+## **Search Spreadsheet Content API**
 
-## **Search Spreadsheet Content API**  
+Programmatically search for specific text within any Excel spreadsheet using the Aspose.Cells Cloud API. The API can locate text, numbers, or formulas in local files stored in the cloud, enabling automated data discovery, content analysis, and spreadsheet‑auditing workflows.
 
-### API Endpoint  
+### **Web API**
 
 ```
 PUT https://api.aspose.cloud/v4.0/cells/search/content
-```  
-
-**Authentication** – The API requires an OAuth 2.0 access token. Include the token in the request header:  
-
 ```
-Authorization: Bearer <access‑token>
-```  
 
-Obtain the token by sending a POST request to `https://api.aspose.cloud/connect/token` with your `client_id` and `client_secret`.  
+### **Request Parameters**
 
-### **Request Parameters**  
+| Parameter    | Type    | Location | Description                                                                        |
+| ------------ | ------- | -------- | ---------------------------------------------------------------------------------- |
+| spreadsheet  | File    | FormData | The Excel file to be searched.                                                     |
+| searchText   | String  | Query    | The text (or numeric value) to locate in the workbook.                             |
+| ignoringCase | Boolean | Query    | Set to `true` to perform a case‑insensitive search.                                |
+| worksheet    | String  | Query    | Name of the worksheet to limit the search. If omitted, all worksheets are scanned. |
+| cellArea     | String  | Query    | A‑1 style range (e.g., `A1:C10`) that restricts the search area.                   |
+| region       | String  | Query    | Geographic region of the service (e.g., `us-east-1`).                              |
+| password     | String  | Query    | Password required to open a protected workbook.                                    |
 
-| Parameter      | Type    | Location   | Description                                                                 |
-|----------------|---------|------------|-----------------------------------------------------------------------------|
-| spreadsheet    | File    | FormData   | The Excel file to be searched.                                              |
-| searchText     | String  | Query      | The text (or numeric value) to locate in the workbook.                     |
-| ignoringCase   | Boolean | Query      | Set to `true` to perform a case‑insensitive search.                        |
-| worksheet      | String  | Query      | Name of the worksheet to limit the search. If omitted, all worksheets are scanned. |
-| cellArea       | String  | Query      | A‑1 style range (e.g., `A1:C10`) that restricts the search area.           |
-| region         | String  | Query      | Geographic region of the service (e.g., `us-east-1`).                       |
-| password       | String  | Query      | Password required to open a protected workbook.                            |
-
-#### Sample cURL request  
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/content?searchText=Invoice&ignoringCase=true" \
-     -H "Authorization: Bearer <access-token>" \
-     -F "spreadsheet=@/path/to/Workbook.xlsx"
-```  
-
-### **Response**  
+### **Response**
 
 The API returns a `SearchResult` object that contains an array of matched cells. Each element provides the worksheet name, cell address, and the matched text.
 
@@ -69,41 +53,39 @@ The API returns a `SearchResult` object that contains an array of matched cells.
     }
   ]
 }
-```  
+```
 
-If no matches are found, `Cells` is an empty array while `Code` remains `0`.  
+### Error Codes
 
-### Error Codes  
+- **400 Bad Request** – The request URI or parameters are invalid.
+- **401 Unauthorized** – Missing or invalid access token, or incorrect client credentials.
+- **404 Not Found** – The specified spreadsheet cannot be accessed.
+- **500 Internal Server Error** – An unexpected server error occurred while processing the workbook.
 
-- **400 Bad Request** – The request URI or parameters are invalid.  
-- **401 Unauthorized** – Missing or invalid access token, or incorrect client credentials.  
-- **404 Not Found** – The specified spreadsheet cannot be accessed.  
-- **500 Internal Server Error** – An unexpected server error occurred while processing the workbook.  
+## Where should we use the Search content within the Spreadsheet API?
 
-## Where should we use the Search content within the Spreadsheet API?  
+- **Comprehensive Workbook Compliance Audit** – Scan the entire workbook to locate sensitive terms (e.g., “Confidential Clause”, “Internal Data”) for data‑security and compliance checks.
+- **Cross‑Sheet Data Association Query** – Find a project number or customer name that appears on multiple worksheets, enabling rapid cross‑sheet integration.
+- **Batch Template Content Verification** – After generating reports, verify that all placeholders such as `{{Date}}` have been correctly replaced across a batch of Excel files.
+- **Historical Data Archiving and Mining** – Search legacy Excel files for specific event codes or business terms to accelerate data archaeology and analysis.
 
-- **Comprehensive Workbook Compliance Audit** – Scan the entire workbook to locate sensitive terms (e.g., “Confidential Clause”, “Internal Data”) for data‑security and compliance checks.  
-- **Cross‑Sheet Data Association Query** – Find a project number or customer name that appears on multiple worksheets, enabling rapid cross‑sheet integration.  
-- **Batch Template Content Verification** – After generating reports, verify that all placeholders such as `{{Date}}` have been correctly replaced across a batch of Excel files.  
-- **Historical Data Archiving and Mining** – Search legacy Excel files for specific event codes or business terms to accelerate data archaeology and analysis.  
+## Why should you use the Search content within the Spreadsheet API?
 
-## Why should you use the Search content within the Spreadsheet API?  
+- **Developer‑Friendly** – SDKs are available for many languages, reducing development effort compared with building a custom solution.
+- **Reduced Labor Costs** – Automates tasks that would otherwise require manual inspection of spreadsheets.
+- **Pay‑per‑Use** – You only pay for the API calls you actually make.
+- **Zero Maintenance** – No servers to manage, no software updates, and no compatibility concerns.
+- **Preserves Complex Formatting** – Results can be exported to PDF while retaining the original Excel layout.
 
-- **Developer‑Friendly** – SDKs are available for many languages, reducing development effort compared with building a custom solution.  
-- **Reduced Labor Costs** – Automates tasks that would otherwise require manual inspection of spreadsheets.  
-- **Pay‑per‑Use** – You only pay for the API calls you actually make.  
-- **Zero Maintenance** – No servers to manage, no software updates, and no compatibility concerns.  
-- **Preserves Complex Formatting** – Results can be exported to PDF while retaining the original Excel layout.  
+## How to Use the Search for broken links within the Spreadsheet API with SDKs
 
-## How to Use the Search for broken links within the Spreadsheet API with SDKs  
+### OpenAPI Specification
 
-### OpenAPI Specification  
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/SearchSpreadsheetContent) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/SearchSpreadsheetContent) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.  
+### Use Aspose.Cells Cloud SDKs
 
-### Use Aspose.Cells Cloud SDKs  
-
-Using an SDK is the fastest way to integrate the search functionality. The SDK abstracts the HTTP layer, allowing you to call the API with minimal code. See the full list of SDKs in the [GitHub repository](https://github.com/aspose-cells-cloud).  
+Using an SDK is the fastest way to integrate the search functionality. The SDK abstracts the HTTP layer, allowing you to call the API with minimal code. See the full list of SDKs in the [GitHub repository](https://github.com/aspose-cells-cloud).
 
 The following code examples demonstrate how to invoke the Search Spreadsheet Content operation with various SDKs:
 

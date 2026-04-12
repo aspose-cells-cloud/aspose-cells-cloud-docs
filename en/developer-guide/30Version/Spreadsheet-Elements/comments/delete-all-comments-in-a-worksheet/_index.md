@@ -16,27 +16,24 @@ This REST API deletes all comments from a worksheet.
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments
 ```
 
-**Authentication** – Include an `Authorization: Bearer <jwt token>` header.  
-A JWT token can be obtained from the Aspose Cloud authentication endpoint by supplying your client ID and client secret.
+### Request Parameters
 
-**Request parameters are listed below:**
-
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| name           | string | path     | Name of the Excel file (e.g., `test.xlsx`). |
-| sheetName      | string | path     | Name of the worksheet (e.g., `Sheet1`). |
-| folder         | string | query    | Path to the folder that contains the file. |
+| Parameter Name | Type   | Location | Description                                    |
+| -------------- | ------ | -------- | ---------------------------------------------- |
+| name           | string | path     | Name of the Excel file (e.g., `test.xlsx`).    |
+| sheetName      | string | path     | Name of the worksheet (e.g., `Sheet1`).        |
+| folder         | string | query    | Path to the folder that contains the file.     |
 | storageName    | string | query    | Name of the storage where the file is located. |
 
-**Response codes**
+### **Response codes**
 
-| Code | Meaning | Sample response |
-|------|---------|-----------------|
-| 200  | Success – all comments were deleted. | `{ "Code": 200, "Status": "OK" }` |
-| 400  | Bad request – invalid parameters. | `{ "Code": 400, "Message": "Invalid request." }` |
-| 401  | Unauthorized – missing or invalid JWT token. | `{ "Code": 401, "Message": "Authentication failed." }` |
-| 404  | Not found – file or worksheet does not exist. | `{ "Code": 404, "Message": "Resource not found." }` |
-| 500  | Internal server error. | `{ "Code": 500, "Message": "Server error." }` |
+| Code | Meaning                                       | Sample response                                        |
+| ---- | --------------------------------------------- | ------------------------------------------------------ |
+| 200  | Success – all comments were deleted.          | `{ "Code": 200, "Status": "OK" }`                      |
+| 400  | Bad request – invalid parameters.             | `{ "Code": 400, "Message": "Invalid request." }`       |
+| 401  | Unauthorized – missing or invalid JWT token.  | `{ "Code": 401, "Message": "Authentication failed." }` |
+| 404  | Not found – file or worksheet does not exist. | `{ "Code": 404, "Message": "Resource not found." }`    |
+| 500  | Internal server error.                        | `{ "Code": 500, "Message": "Server error." }`          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComments) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

@@ -18,14 +18,23 @@ This REST API deletes **all** pictures in a worksheet.
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
-**Request parameters**
+### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                     |
-|----------------|--------|----------|---------------------------------|
-| name           | string | Path     | Name of the Excel file.         |
+| Parameter Name | Type   | Location | Description                                |
+| -------------- | ------ | -------- | ------------------------------------------ |
+| name           | string | Path     | Name of the Excel file.                    |
 | sheetName      | string | Path     | Name of the worksheet containing pictures. |
-| folder         | string | Query    | Folder where the file is stored. |
-| storageName    | string | Query    | Name of the storage service.    |
+| folder         | string | Query    | Folder where the file is stored.           |
+| storageName    | string | Query    | Name of the storage service.               |
+
+### Error Responses
+
+| HTTP Code | Description                                                                    |
+| --------- | ------------------------------------------------------------------------------ |
+| 401       | Unauthorized – missing or invalid token.                                       |
+| 404       | Not Found – the specified file, worksheet, or page‑break index does not exist. |
+| 400       | Bad Request – malformed request syntax or invalid parameters.                  |
+| 500       | Internal Server Error – an unexpected condition was encountered.               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

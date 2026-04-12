@@ -19,22 +19,22 @@ The endpoint belongs to **API version v3.0**; ensure that you use a JWT access
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| name | string | path | Document name. |
-| sheetName | string | path | Worksheet name. |
-| shapeDTO | object | body | JSON object that describes the shape to be added (see the OpenAPI specification for the full schema). |
-| drawingType | string | query | Shape object type (e.g., `arc`, `line`, `rectangle`). |
-| upperLeftRow | integer | query | Upper‑left row index of the shape. |
-| upperLeftColumn | integer | query | Upper‑left column index of the shape. |
-| top | integer | query | Vertical offset of the shape from its top edge, in pixels. |
-| left | integer | query | Horizontal offset of the shape from its left edge, in pixels. |
-| width | integer | query | Width of the shape, in pixels. |
-| height | integer | query | Height of the shape, in pixels. |
-| folder | string | query | Folder that contains the document. |
-| storageName | string | query | Name of the storage. |
+| Parameter Name  | Type    | Location | Description                                                                                           |
+| --------------- | ------- | -------- | ----------------------------------------------------------------------------------------------------- |
+| name            | string  | path     | Document name.                                                                                        |
+| sheetName       | string  | path     | Worksheet name.                                                                                       |
+| shapeDTO        | object  | body     | JSON object that describes the shape to be added (see the OpenAPI specification for the full schema). |
+| drawingType     | string  | query    | Shape object type (e.g., `arc`, `line`, `rectangle`).                                                 |
+| upperLeftRow    | integer | query    | Upper‑left row index of the shape.                                                                    |
+| upperLeftColumn | integer | query    | Upper‑left column index of the shape.                                                                 |
+| top             | integer | query    | Vertical offset of the shape from its top edge, in pixels.                                            |
+| left            | integer | query    | Horizontal offset of the shape from its left edge, in pixels.                                         |
+| width           | integer | query    | Width of the shape, in pixels.                                                                        |
+| height          | integer | query    | Height of the shape, in pixels.                                                                       |
+| folder          | string  | query    | Folder that contains the document.                                                                    |
+| storageName     | string  | query    | Name of the storage.                                                                                  |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Shapes/PutWorksheetShape) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -64,13 +64,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 }
 ```
 
-*The successful response returns the HTTP status code, a textual status, and the identifier of the newly created shape (`ShapeId`).*  
+_The successful response returns the HTTP status code, a textual status, and the identifier of the newly created shape (`ShapeId`)._
 
 Typical error responses include:
 
-- **400 Bad Request** – missing or invalid parameters.  
-- **401 Unauthorized** – invalid or missing JWT token.  
-- **404 Not Found** – the specified worksheet or document does not exist.  
+- **400 Bad Request** – missing or invalid parameters.
+- **401 Unauthorized** – invalid or missing JWT token.
+- **404 Not Found** – the specified worksheet or document does not exist.
 
 Each error is returned as a JSON object containing `Code` and `Message` fields.
 

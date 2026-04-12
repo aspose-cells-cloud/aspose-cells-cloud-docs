@@ -17,17 +17,17 @@ This REST API adds several new rows to an Excel worksheet.
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name   | Type    | Location                     | Description                                                            |
-|------------------|---------|------------------------------|------------------------------------------------------------------------|
-| name             | string  | path                         | The workbook name.                                                     |
-| sheetName        | string  | path                         | The worksheet name.                                                    |
-| startrow         | integer | query                        | The index of the first row to be inserted (0‑based).                   |
-| totalRows        | integer | query                        | The number of rows to insert.                                          |
-| updateReference  | boolean | query                        | Whether to update cell references after insertion (`true` or `false`).|
-| folder           | string  | query                        | The folder that contains the document.                                 |
-| storageName      | string  | query                        | The storage name.                                                      |
+| Parameter Name  | Type    | Location | Description                                                            |
+| --------------- | ------- | -------- | ---------------------------------------------------------------------- |
+| name            | string  | path     | The workbook name.                                                     |
+| sheetName       | string  | path     | The worksheet name.                                                    |
+| startrow        | integer | query    | The index of the first row to be inserted (0‑based).                   |
+| totalRows       | integer | query    | The number of rows to insert.                                          |
+| updateReference | boolean | query    | Whether to update cell references after insertion (`true` or `false`). |
+| folder          | string  | query    | The folder that contains the document.                                 |
+| storageName     | string  | query    | The storage name.                                                      |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

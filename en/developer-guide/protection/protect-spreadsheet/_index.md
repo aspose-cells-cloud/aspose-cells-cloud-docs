@@ -14,69 +14,60 @@ Automate Excel password protection at scale with our developer API—apply both 
 
 ## **Protect Spreadsheet API**
 
-### API Endpoint
+### **Web API**
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/protection/spreadsheet
 ```
 
-**Authentication** – All calls require an OAuth 2.0 access token. Include the header  
-`Authorization: Bearer <access_token>` in the request. Tokens are obtained via the client‑credentials flow and are valid for the period returned by the token service.
-
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Path/Query String/HTTPBody | Description |
-| :- | :- | :- | :- |
-| Spreadsheet     | File   | FormData | The Excel spreadsheet file to be uploaded and protected with password encryption. |
-| openPassword    | String | Query    | The password required to open (decrypt) the protected spreadsheet. |
-| modifyPassword  | String | Query    | The password required to enable editing or modification of the spreadsheet contents. |
-| outPath         | String | Query    | (Optional) Specifies the output folder path where the protected workbook will be saved. If not provided, the file is returned in the response. |
-| outStorageName  | String | Query    | The name of the cloud storage used for storing the output protected file. |
-| region          | String | Query    | Specifies the regional/cultural settings (e.g., date format, number formatting) applied to the spreadsheet during processing. |
-
-**cURL example**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/protection/spreadsheet?openPassword=MyOpenPwd&modifyPassword=MyEditPwd" \
-  -H "Authorization: Bearer <access_token>" \
-  -F "Spreadsheet=@/path/to/Report.xlsx" \
-  -F "outPath=protected/Report_protected.xlsx"
-```
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                                    |
+| :------------- | :----- | :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | The Excel spreadsheet file to be uploaded and protected with password encryption.                                                              |
+| openPassword   | String | Query                      | The password required to open (decrypt) the protected spreadsheet.                                                                             |
+| modifyPassword | String | Query                      | The password required to enable editing or modification of the spreadsheet contents.                                                           |
+| outPath        | String | Query                      | (Optional) Specifies the output folder path where the protected workbook will be saved. If not provided, the file is returned in the response. |
+| outStorageName | String | Query                      | The name of the cloud storage used for storing the output protected file.                                                                      |
+| region         | String | Query                      | Specifies the regional/cultural settings (e.g., date format, number formatting) applied to the spreadsheet during processing.                  |
 
 ## **Response**
 
 ```json
-{
-  "FileName": "Report_protected.xlsx",
-  "Url": "https://api.aspose.cloud/v4.0/storage/file/protected/Report_protected.xlsx",
-  "Size": 124567,
-  "Status": "OK"
-}
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
 ```
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized** – Invalid access token, client‑id, or client‑secret.  
-- **403 Forbidden** – Token lacks required scope or insufficient permissions.  
-- **404 Not Found** – The spreadsheet file is not accessible.  
-- **429 Too Many Requests** – Rate limit exceeded; retry after the period indicated in the `Retry-After` header.  
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized** – Invalid access token, client‑id, or client‑secret.
+- **403 Forbidden** – Token lacks required scope or insufficient permissions.
+- **404 Not Found** – The spreadsheet file is not accessible.
+- **429 Too Many Requests** – Rate limit exceeded; retry after the period indicated in the `Retry-After` header.
 - **500 Server Error** – The spreadsheet encountered an internal processing error.
 
 ## Where should we use the Protect Spreadsheet API?
 
-- **Secure Sensitive Financial Data** – Protect Excel files containing budgets, invoices, or payroll information with open and modify passwords to prevent unauthorized access or edits.  
-- **Share Confidential Reports Safely** – Ensure only authorized recipients can view or alter business, audit, or compliance reports when distributing internally or externally.  
-- **Automate Document Security in Workflows** – Integrate the API into enterprise systems (e.g., ERP, CRM) to automatically password‑protect generated spreadsheets before storage or email delivery.  
-- **Enforce Read‑Only Access** – Allow users to open reports for viewing while restricting modifications using a separate modify password—ideal for templates or finalized datasets.  
+- **Secure Sensitive Financial Data** – Protect Excel files containing budgets, invoices, or payroll information with open and modify passwords to prevent unauthorized access or edits.
+- **Share Confidential Reports Safely** – Ensure only authorized recipients can view or alter business, audit, or compliance reports when distributing internally or externally.
+- **Automate Document Security in Workflows** – Integrate the API into enterprise systems (e.g., ERP, CRM) to automatically password‑protect generated spreadsheets before storage or email delivery.
+- **Enforce Read‑Only Access** – Allow users to open reports for viewing while restricting modifications using a separate modify password—ideal for templates or finalized datasets.
 - **Meet Regulatory Compliance** – Help satisfy GDPR, HIPAA, or SOX requirements by encrypting sensitive spreadsheet data at rest and in transit through automated protection.
 
 ## Why should you use the Protect Spreadsheet API?
 
-- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom solutions, this significantly reduces development workload.  
-- **Reduces Staffing Needs** – Automates document consolidation and security, lowering the need for dedicated personnel.  
-- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.  
-- **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility concerns.  
+- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom solutions, this significantly reduces development workload.
+- **Reduces Staffing Needs** – Automates document consolidation and security, lowering the need for dedicated personnel.
+- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.
+- **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility concerns.
 - **Preserves All Original Excel Formatting** while applying password protection, ensuring the protected workbook looks exactly like the source file.
 
 ## How to Use the Protect Spreadsheet API with SDKs
@@ -117,3 +108,7 @@ The following code examples illustrate how to interact with Aspose.Cells web ser
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ProtectSpreadsheet.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+```
+
+```

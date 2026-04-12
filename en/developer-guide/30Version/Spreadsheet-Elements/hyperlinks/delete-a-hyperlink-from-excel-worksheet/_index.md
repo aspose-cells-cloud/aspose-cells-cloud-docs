@@ -9,48 +9,31 @@ weight: 40
 
 This REST API deletes a worksheet hyperlink by its index on an Excel worksheet.
 
-**Quick‑Start**
-
-1️⃣ Obtain a **Bearer JWT token** (see the *Authentication* section).  
-2️⃣ Build the request URL using your file name, worksheet name, and the zero‑based `hyperlinkIndex`.  
-3️⃣ (Optional) Append `folder` and `storageName` query parameters if the file is not in the root folder.  
-4️⃣ Send a **DELETE** request. A successful call returns `200 OK`.
-
-### Prerequisites
-- A valid **Aspose Cloud** account.  
-- An active **JWT access token** with the `Cells` scope.  
-- The target Excel file must already exist in the selected storage location.  
-
-### Authentication
-Aspose.Cells Cloud uses OAuth 2.0. To obtain a token, POST to the token endpoint:
-
-```bash
-curl -X POST "https://api.aspose.cloud/connect/token" \
-  -H "Content-Type: application/x-www-form-urlencoded" \
-  -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
-```
-
-The response contains an `access_token`. Use this token in the `Authorization` header of every request:
-
-```http
-Authorization: Bearer <access_token>
-```
-
 ### REST API
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type    | Location | Required | Description |
-|----------------|---------|----------|----------|-------------|
-| **name**           | string  | path     | ✅ | Name of the Excel document. |
-| **sheetName**      | string  | path     | ✅ | Name of the worksheet. |
-| **hyperlinkIndex** | integer | path     | ✅ | Zero‑based index of the hyperlink to delete. |
-| **folder**         | string  | query    | ❌ | Folder containing the document (default: root). |
-| **storageName**    | string  | query    | ❌ | Name of the storage service (default storage used if omitted). |
+| Parameter Name     | Type    | Location | Required | Description                                                    |
+| ------------------ | ------- | -------- | -------- | -------------------------------------------------------------- |
+| **name**           | string  | path     | ✅       | Name of the Excel document.                                    |
+| **sheetName**      | string  | path     | ✅       | Name of the worksheet.                                         |
+| **hyperlinkIndex** | integer | path     | ✅       | Zero‑based index of the hyperlink to delete.                   |
+| **folder**         | string  | query    | ❌       | Folder containing the document (default: root).                |
+| **storageName**    | string  | query    | ❌       | Name of the storage service (default storage used if omitted). |
+
+#### Responses
+
+| Status Code                   | Description                                             | Example Body                                       |
+| ----------------------------- | ------------------------------------------------------- | -------------------------------------------------- |
+| **200 OK**                    | Hyperlink deleted successfully.                         | `{"Code":200,"Status":"OK"}`                       |
+| **400 Bad Request**           | Missing or invalid parameters.                          | `{"Code":400,"Message":"Invalid hyperlinkIndex."}` |
+| **401 Unauthorized**          | Authentication token is missing or invalid.             | `{"Code":401,"Message":"Invalid access token."}`   |
+| **404 Not Found**             | The file, worksheet, or hyperlink index does not exist. | `{"Code":404,"Message":"Resource not found."}`     |
+| **500 Internal Server Error** | Unexpected server error.                                | `{"Code":500,"Message":"Internal server error."}`  |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hypelinks/DeleteWorksheetHyperlink) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -82,20 +65,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test1.xlsx/worksheets/Sheet1/hyperl
 {{< /tab >}}
 
 {{< /tabs >}}
-
-#### Responses
-| Status Code | Description | Example Body |
-|------------|-------------|--------------|
-| **200 OK** | Hyperlink deleted successfully. | `{"Code":200,"Status":"OK"}` |
-| **400 Bad Request** | Missing or invalid parameters. | `{"Code":400,"Message":"Invalid hyperlinkIndex."}` |
-| **401 Unauthorized** | Authentication token is missing or invalid. | `{"Code":401,"Message":"Invalid access token."}` |
-| **404 Not Found** | The file, worksheet, or hyperlink index does not exist. | `{"Code":404,"Message":"Resource not found."}` |
-| **500 Internal Server Error** | Unexpected server error. | `{"Code":500,"Message":"Internal server error."}` |
-
-#### Notes / Edge Cases
-- Deleting a **non‑existent** `hyperlinkIndex` returns **404 Not Found**.  
-- If the worksheet is empty, the same **404** response is returned.  
-- `folder` and `storageName` are optional; omit them only when the file resides in the default storage root.  
 
 ## Cloud SDK Family
 
@@ -187,12 +156,13 @@ puts result.status
 ```javascript
 // Example_DeleteWorksheetHyperlink.ts (Node.js)
 // Source: https://gist.github.com/aspose-cells-cloud-gists/e82de2e4189bc27ae92abf73c36b4df0
-const AsposeCellsCloud = require('asposecellscloud');
-const api = new AsposeCellsCloud.CellsApi('<client_id>', '<client_secret>');
+const AsposeCellsCloud = require("asposecellscloud");
+const api = new AsposeCellsCloud.CellsApi("<client_id>", "<client_secret>");
 
-api.deleteWorksheetHyperlink('test1.xlsx', 'Sheet1', 0, null, null)
-   .then(() => console.log('Hyperlink deleted'))
-   .catch(err => console.error(err));
+api
+  .deleteWorksheetHyperlink("test1.xlsx", "Sheet1", 0, null, null)
+  .then(() => console.log("Hyperlink deleted"))
+  .catch((err) => console.error(err));
 ```
 
 {{< /tab >}}
@@ -257,14 +227,3 @@ func main() {
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**FAQ**
-
-**Q:** *How do I delete a hyperlink from a worksheet using Aspose.Cells Cloud?*  
-**A:** Send a **DELETE** request to `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}` with a valid Bearer token. Supply `name`, `sheetName`, and the zero‑based `hyperlinkIndex`. Optional query parameters `folder` and `storageName` can be used to target non‑default locations.
-
-**Q:** *What HTTP status codes can be returned when deleting a worksheet hyperlink?*  
-**A:** 200 OK, 400 Bad Request, 401 Unauthorized, 404 Not Found, and 500 Internal Server Error (see the **Responses** table above).
-
-**Q:** *Do I need to specify a folder or storage name when deleting a hyperlink?*  
-**A:** No. Both `folder` and `storageName` are optional. Omit them to use the default storage and the root folder. Include them only when the file resides elsewhere.

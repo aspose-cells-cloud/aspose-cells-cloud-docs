@@ -14,7 +14,7 @@ The **ConvertWorksheetToJson** endpoint reads a spreadsheet file from the local 
 
 ## **Convert Worksheet To JSON API**
 
-### API Endpoint
+### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/json
@@ -41,30 +41,31 @@ Headers:
 - Content-Disposition: attachment; filename="<worksheet>.json"
 - Content-Length: <size in bytes>
 
-Body:  
+Body:
+
 - Binary stream containing the JSON representation of the requested worksheet.
 
 If `outPath` is supplied, the JSON file is stored at the specified location and the response body may be empty (204 No Content) or contain a minimal confirmation payload.
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token or invalid client ID and secret.
+- **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.
 
 ## Where should we use the Convert Worksheet to JSON API?
 
-- **Web dashboards** – Export worksheet data to JSON for client‑side charting libraries (e.g., Chart.js, D3.js).  
-- **Data migration** – Move legacy Excel data into NoSQL databases or REST services that consume JSON.  
-- **Mobile or offline apps** – Convert worksheet content to JSON on the server, then sync the lightweight payload to mobile devices.  
+- **Web dashboards** – Export worksheet data to JSON for client‑side charting libraries (e.g., Chart.js, D3.js).
+- **Data migration** – Move legacy Excel data into NoSQL databases or REST services that consume JSON.
+- **Mobile or offline apps** – Convert worksheet content to JSON on the server, then sync the lightweight payload to mobile devices.
 - **Reporting pipelines** – Feed worksheet data directly into analytics engines that accept JSON input without intermediate CSV steps.
 
 ## Why should you use the Convert Worksheet to JSON API?
 
-- **Zero‑upload workflow** – Process local files in the cloud without first uploading them to storage, saving bandwidth and storage costs.  
-- **Full‑featured conversion** – Supports password‑protected workbooks, custom fonts, and regional formatting for accurate data representation.  
-- **Fast, scalable execution** – Leverages Aspose.Cells’ high‑performance engine on cloud infrastructure, handling large worksheets efficiently.  
+- **Zero‑upload workflow** – Process local files in the cloud without first uploading them to storage, saving bandwidth and storage costs.
+- **Full‑featured conversion** – Supports password‑protected workbooks, custom fonts, and regional formatting for accurate data representation.
+- **Fast, scalable execution** – Leverages Aspose.Cells’ high‑performance engine on cloud infrastructure, handling large worksheets efficiently.
 - **Simplified integration** – Single PUT call returns a ready‑to‑use JSON file or stores it directly, reducing code complexity in client applications.
 
 ## How to Use the Convert Worksheet to JSON API with SDKs

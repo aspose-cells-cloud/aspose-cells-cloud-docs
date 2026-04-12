@@ -14,7 +14,7 @@ Divide a local Excel workbook into separate files entirely — no cloud storage 
 
 ## **Split Spreadsheet API**
 
-### API Endpoint
+### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/split/spreadsheet
@@ -22,56 +22,56 @@ PUT https://api.aspose.cloud/v4.0/cells/split/spreadsheet
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Path/Query String/HTTPBody | Description |
-| :- | :- | :- | :- |
-| Spreadsheet | File | FormData | The local spreadsheet file to be split. Supported formats include XLSX, XLS, ODS, CSV, etc. The file is processed entirely on the server without requiring cloud storage. |
-| from | Integer | Query | The zero‑based starting index of the worksheet range to split (e.g., `0` for the first worksheet). |
-| to | Integer | Query | The zero‑based ending index of the worksheet range to split (e.g., `2` will split worksheets 0, 1, and 2). |
-| outFormat | String | Query | The output format for the split files. Supports 30+ formats such as `PDF`, `CSV`, `JSON`, `XLSX`, `HTML`. |
-| outPath | String | Query | *(Optional)* The local folder path where the split output files will be saved. If omitted, files are saved in a default temporary location. |
-| outStorageName | String | Query | The storage identifier for organizing output files. In local processing mode, this typically refers to a session‑based or user‑defined storage label. |
-| fontsLocation | String | Query | *(Optional)* Specifies a local or custom font directory to ensure accurate text rendering when exporting to PDF or image formats. |
-| region | String | Query | *(Optional)* Sets the locale for number, date, and currency formatting in the output files (e.g., `"en‑US"`, `"de‑DE"`). |
-| password | String | Query | *(Optional)* If the uploaded spreadsheet is password‑protected, provide the password to open and process the file. |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                               |
+| :------------- | :------ | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Spreadsheet    | File    | FormData                   | The local spreadsheet file to be split. Supported formats include XLSX, XLS, ODS, CSV, etc. The file is processed entirely on the server without requiring cloud storage. |
+| from           | Integer | Query                      | The zero‑based starting index of the worksheet range to split (e.g., `0` for the first worksheet).                                                                        |
+| to             | Integer | Query                      | The zero‑based ending index of the worksheet range to split (e.g., `2` will split worksheets 0, 1, and 2).                                                                |
+| outFormat      | String  | Query                      | The output format for the split files. Supports 30+ formats such as `PDF`, `CSV`, `JSON`, `XLSX`, `HTML`.                                                                 |
+| outPath        | String  | Query                      | _(Optional)_ The local folder path where the split output files will be saved. If omitted, files are saved in a default temporary location.                               |
+| outStorageName | String  | Query                      | The storage identifier for organizing output files. In local processing mode, this typically refers to a session‑based or user‑defined storage label.                     |
+| fontsLocation  | String  | Query                      | _(Optional)_ Specifies a local or custom font directory to ensure accurate text rendering when exporting to PDF or image formats.                                         |
+| region         | String  | Query                      | _(Optional)_ Sets the locale for number, date, and currency formatting in the output files (e.g., `"en‑US"`, `"de‑DE"`).                                                  |
+| password       | String  | Query                      | _(Optional)_ If the uploaded spreadsheet is password‑protected, provide the password to open and process the file.                                                        |
 
 ## **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token or invalid client ID and secret.
+- **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet encountered an anomaly while obtaining calculation data.
 
 ## Where should we use the Split Spreadsheet API?
 
-- **Department Data Distribution**: Split a unified workbook containing data from multiple departments into department‑specific files.  
-- **Regional Report Distribution**: Split national sales statements into separate regional reporting files.  
-- **Customer Data Masking Distribution**: Split a workbook containing sensitive information into a deduced customer‑view file.  
-- **Periodic Report Splitting**: Automatically split summary reports into weekly or daily reports on a monthly basis.  
-- **Multi‑Format Distribution**: Split a single Excel file into multiple format versions such as PDF, CSV, JSON, etc., at the same time.  
-- **Templated Splitting**: Split data files into standardized output files based on predefined templates.  
-- **Data Source Preprocessing**: Split the Excel file into a standardized CSV file before loading the data into a database.  
+- **Department Data Distribution**: Split a unified workbook containing data from multiple departments into department‑specific files.
+- **Regional Report Distribution**: Split national sales statements into separate regional reporting files.
+- **Customer Data Masking Distribution**: Split a workbook containing sensitive information into a deduced customer‑view file.
+- **Periodic Report Splitting**: Automatically split summary reports into weekly or daily reports on a monthly basis.
+- **Multi‑Format Distribution**: Split a single Excel file into multiple format versions such as PDF, CSV, JSON, etc., at the same time.
+- **Templated Splitting**: Split data files into standardized output files based on predefined templates.
+- **Data Source Preprocessing**: Split the Excel file into a standardized CSV file before loading the data into a database.
 - **API Data Preparation**: Split large datasets into smaller chunks suitable for API transfer.
 
 ## Why should you use the Split Spreadsheet API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and providing comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.  
-- **Reduced Labor Costs**: Reduces the need for positions dedicated to document consolidation.  
-- **Pay‑per‑use**: No upfront investment; you only pay for API calls actually used.  
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.  
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and providing comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.
+- **Reduced Labor Costs**: Reduces the need for positions dedicated to document consolidation.
+- **Pay‑per‑use**: No upfront investment; you only pay for API calls actually used.
+- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
 - **Preserves complex Excel formatting** in universally accessible PDF format.
 
 ## How to Use the Split Spreadsheet API with SDKs

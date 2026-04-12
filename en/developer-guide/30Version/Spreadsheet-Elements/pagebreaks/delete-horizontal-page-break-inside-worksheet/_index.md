@@ -18,15 +18,24 @@ This REST API deletes a **horizontal** page break.
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks/{index}
 ```
 
-**Request parameters**
+### Request Parameters
 
-| Parameter Name | Type    | Location                     | Description |
-|----------------|---------|------------------------------|-------------|
-| `name`         | string  | path                         | The name of the Excel file (workbook). |
-| `sheetName`    | string  | path                         | The name of the worksheet containing the page break. |
-| `index`        | integer | path                         | Zero‑based index of the horizontal page break to delete. |
-| `folder`       | string  | query                        | Optional folder path in storage where the file is located. |
-| `storageName`  | string  | query                        | Optional name of the storage service. |
+| Parameter Name | Type    | Location | Description                                                |
+| -------------- | ------- | -------- | ---------------------------------------------------------- |
+| `name`         | string  | path     | The name of the Excel file (workbook).                     |
+| `sheetName`    | string  | path     | The name of the worksheet containing the page break.       |
+| `index`        | integer | path     | Zero‑based index of the horizontal page break to delete.   |
+| `folder`       | string  | query    | Optional folder path in storage where the file is located. |
+| `storageName`  | string  | query    | Optional name of the storage service.                      |
+
+### Error Responses
+
+| HTTP Code | Description                                                                    |
+| --------- | ------------------------------------------------------------------------------ |
+| 401       | Unauthorized – missing or invalid token.                                       |
+| 404       | Not Found – the specified file, worksheet, or page‑break index does not exist. |
+| 400       | Bad Request – malformed request syntax or invalid parameters.                  |
+| 500       | Internal Server Error – an unexpected condition was encountered.               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteHorizontalPageBreak) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

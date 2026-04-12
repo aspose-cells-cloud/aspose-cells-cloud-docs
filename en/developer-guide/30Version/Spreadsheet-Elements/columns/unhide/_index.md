@@ -4,7 +4,8 @@ second_title: "Document"
 linktitle: "Unhide"
 type: docs
 url: /columns/unhide/
-aliases: [/unhide-columns-in-an-excel-worksheet/,/unhide-columns-in-excel-worksheet/]
+aliases:
+  [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
 keywords: "unhide columns, Excel, Aspose.Cells Cloud, REST API, SDK, worksheet, API"
 description: "Learn how to use the Aspose.Cells Cloud REST API to unhide columns in an Excel worksheet. Includes request details, a cURL example, and SDK code samples for several programming languages."
 weight: 50
@@ -18,17 +19,17 @@ This REST API unhides worksheet columns.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/unhide
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type    | Location | Description                                            |
-|----------------|---------|----------|--------------------------------------------------------|
-| name           | string  | path     | The workbook name.                                     |
-| sheetName      | string  | path     | The worksheet name.                                    |
-| startColumn    | integer | query    | The index of the first column to be processed.        |
-| totalColumns   | integer | query    | The number of columns to be processed.                |
-| width          | number  | query    | Desired column width (default = 50.0).                |
-| folder         | string  | query    | The folder that contains the document.                |
-| storageName    | string  | query    | The name of the storage service.                      |
+| Parameter Name | Type    | Location | Description                                    |
+| -------------- | ------- | -------- | ---------------------------------------------- |
+| name           | string  | path     | The workbook name.                             |
+| sheetName      | string  | path     | The worksheet name.                            |
+| startColumn    | integer | query    | The index of the first column to be processed. |
+| totalColumns   | integer | query    | The number of columns to be processed.         |
+| width          | number  | query    | Desired column width (default = 50.0).         |
+| folder         | string  | query    | The folder that contains the document.         |
+| storageName    | string  | query    | The name of the storage service.               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

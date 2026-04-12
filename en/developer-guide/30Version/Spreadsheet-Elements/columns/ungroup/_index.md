@@ -1,54 +1,35 @@
----  
-title: "Ungroup Columns in an Excel Worksheet – Aspose.Cells Cloud API"  
-second_title: "Document"  
-linktitle: "Ungroup"  
-type: docs  
-url: /columns/ungroup/  
-aliases:  
-  - /ungroup-columns-in-an-excel-worksheet/  
-  - /ungroup-columns-in-excel-worksheet/  
-keywords: "Aspose.Cells, ungroup columns, Excel API, REST, SDK"  
-description: "Learn how to ungroup columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, cURL example, and SDK code snippets for C#, Java, Python, and more."  
-weight: 70  
----  
+---
+title: "Ungroup Columns in an Excel Worksheet – Aspose.Cells Cloud API"
+second_title: "Document"
+linktitle: "Ungroup"
+type: docs
+url: /columns/ungroup/
+aliases:
+  - /ungroup-columns-in-an-excel-worksheet/
+  - /ungroup-columns-in-excel-worksheet/
+keywords: "Aspose.Cells, ungroup columns, Excel API, REST, SDK"
+description: "Learn how to ungroup columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, cURL example, and SDK code snippets for C#, Java, Python, and more."
+weight: 70
+---
 
 The **Ungroup Columns** REST API removes column grouping in a worksheet.
 
-## Prerequisites  
-
-1. Create an Aspose Cloud account.  
-2. Generate a **Client ID** and **Client Secret**.  
-3. Obtain an OAuth 2.0 access token (`Authorization: Bearer <access_token>`).  
-4. Upload the target workbook to Aspose Cloud storage (or reference an existing file).
-
-## Authentication  
-
-All Aspose.Cells Cloud endpoints require an OAuth 2.0 bearer token.  
-Include the following header in every request:
-
-```http
-Authorization: Bearer <access_token>
-```
-
-You can acquire a token by calling the OAuth 2.0 token endpoint with your client credentials.  
-(See the **Authentication** guide in the main documentation for the exact request.)
-
-## REST API  
+## REST API
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/ungroup
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type    | Location | Description                                                    |
-|----------------|---------|----------|----------------------------------------------------------------|
-| name           | string  | path     | The workbook name.                                             |
-| sheetName      | string  | path     | The worksheet name.                                            |
-| firstIndex     | integer | query    | Zero‑based index of the first column to be ungrouped.          |
-| lastIndex      | integer | query    | Zero‑based index of the last column to be ungrouped.           |
-| folder         | string  | query    | Path to the folder containing the workbook.                    |
-| storageName    | string  | query    | Name of the storage service.                                   |
+| Parameter Name | Type    | Location | Description                                           |
+| -------------- | ------- | -------- | ----------------------------------------------------- |
+| name           | string  | path     | The workbook name.                                    |
+| sheetName      | string  | path     | The worksheet name.                                   |
+| firstIndex     | integer | query    | Zero‑based index of the first column to be ungrouped. |
+| lastIndex      | integer | query    | Zero‑based index of the last column to be ungrouped.  |
+| folder         | string  | query    | Path to the folder containing the workbook.           |
+| storageName    | string  | query    | Name of the storage service.                          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -79,13 +60,13 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 }
 ```
 
-*On error the service returns a JSON object containing `Code`, `Status`, and `ErrorMessage` fields (e.g., 400 Bad Request, 401 Unauthorized).*
+_On error the service returns a JSON object containing `Code`, `Status`, and `ErrorMessage` fields (e.g., 400 Bad Request, 401 Unauthorized)._
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the fastest way to develop against Aspose.Cells Cloud. An SDK abstracts low‑level details, letting you focus on your project logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -142,18 +123,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## FAQ  
-
-**Q:** *How do I ungroup columns in a worksheet using Aspose.Cells Cloud?*  
-**A:** Call the `POST /cells/{name}/worksheets/{sheetName}/cells/columns/ungroup` endpoint, providing the workbook name, worksheet name, and the zero‑based `firstIndex` and `lastIndex` of the columns to ungroup. Include the `Authorization: Bearer <access_token>` header. See the cURL example above.
-
-**Q:** *What response will I receive after a successful ungroup request?*  
-**A:** A JSON object containing at least `Code` (200), `Status` (“OK”), and a `Columns` object that echoes the `firstIndex` and `lastIndex` values. Error responses include an `ErrorMessage` field and the appropriate HTTP status code.
-
-**Q:** *Which SDKs can I use to call the Ungroup Columns API?*  
-**A:** Aspose.Cells Cloud provides SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go. Each SDK offers a method such as `PostUngroupWorksheetColumns` that abstracts the HTTP call. Sample code for each language is shown in the **Cloud SDK Family** section.  
-
----  
-
-*Version note: This documentation targets API version **v3.0**. Future releases may introduce breaking changes; consult the “Version History” page for details.*

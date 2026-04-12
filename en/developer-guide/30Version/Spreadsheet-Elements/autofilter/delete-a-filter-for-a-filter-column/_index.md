@@ -1,58 +1,52 @@
----  
-title: "Delete a Filter from an Excel Worksheet – Aspose.Cells Cloud API"  
-second_title: "Document"  
-linktitle: "Delete filter"  
-type: docs  
-url: /delete-filter/  
-aliases: [/delete-a-filter-for-a-filter-column/,/delete-auto-filter/]  
-keywords: "Aspose.Cells Cloud delete filter, Excel, REST API, SDK"  
-description: "Learn how to delete an AutoFilter from an Excel worksheet using Aspose.Cells Cloud REST API, cURL, and SDKs (C#, Java, Python, etc.). Includes endpoint, parameters, authentication, and sample code."  
-weight: 100  
----  
+---
+title: "Delete a Filter from an Excel Worksheet – Aspose.Cells Cloud API"
+second_title: "Document"
+linktitle: "Delete filter"
+type: docs
+url: /delete-filter/
+aliases: [/delete-a-filter-for-a-filter-column/, /delete-auto-filter/]
+keywords: "Aspose.Cells Cloud delete filter, Excel, REST API, SDK"
+description: "Learn how to delete an AutoFilter from an Excel worksheet using Aspose.Cells Cloud REST API, cURL, and SDKs (C#, Java, Python, etc.). Includes endpoint, parameters, authentication, and sample code."
+weight: 100
+---
 
 This REST API deletes an **AutoFilter** on an Excel worksheet.  
-SDKs are available for multiple development languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift.  
+SDKs are available for multiple development languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift.
 
-## Prerequisites  
-
-- **Authentication** – All requests require a JWT bearer token obtained via the OAuth 2.0 flow. Include it in the `Authorization: Bearer <jwt token>` header.  
-- **API version** – The endpoint shown below uses version **v3.0** (`https://api.aspose.cloud/v3.0`).  
-- **Path parameters** – `name` (workbook file name) and `sheetName` (target worksheet) must be supplied.  
-
-## REST API  
+## REST API
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
-```  
+```
 
 The request parameters are:
 
-| Parameter Name          | Type     | Location | Required? | Description                                                                 |
-|--------------------------|----------|----------|-----------|-----------------------------------------------------------------------------|
-| **name**                | string   | Path     | Yes       | The workbook name.                                                          |
-| **sheetName**           | string   | Path     | Yes       | The worksheet name.                                                         |
-| **range**               | string   | Query    | No        | The cell range to which the filter applies (e.g., `A1:C10`).               |
-| **fieldIndex**          | integer  | Query    | Yes       | Zero‑based index of the column to which the filter is applied.             |
-| **dateTimeGroupingType**| string   | Query    | No        | How date/time values are grouped: `Day`, `Hour`, `Minute`, `Month`, `Second`, or `Year`. |
-| **year**                | integer  | Query    | No        | Year component for date grouping.                                           |
-| **month**               | integer  | Query    | No        | Month component for date grouping.                                          |
-| **day**                 | integer  | Query    | No        | Day component for date grouping.                                            |
-| **hour**                | integer  | Query    | No        | Hour component for date grouping.                                           |
-| **minute**              | integer  | Query    | No        | Minute component for date grouping.                                         |
-| **second**              | integer  | Query    | No        | Second component for date grouping.                                         |
-| **matchBlanks**         | boolean  | Query    | No        | `true` / `false` – whether blank cells are included in the filter.          |
-| **refresh**             | boolean  | Query    | No        | `true` / `false` – whether to refresh the worksheet after deletion.         |
-| **folder**              | string   | Query    | No        | Original workbook folder.                                                   |
-| **storageName**         | string   | Query    | No        | Storage name.                                                               |
+| Parameter Name           | Type    | Location | Required? | Description                                                                              |
+| ------------------------ | ------- | -------- | --------- | ---------------------------------------------------------------------------------------- |
+| **name**                 | string  | Path     | Yes       | The workbook name.                                                                       |
+| **sheetName**            | string  | Path     | Yes       | The worksheet name.                                                                      |
+| **range**                | string  | Query    | No        | The cell range to which the filter applies (e.g., `A1:C10`).                             |
+| **fieldIndex**           | integer | Query    | Yes       | Zero‑based index of the column to which the filter is applied.                           |
+| **dateTimeGroupingType** | string  | Query    | No        | How date/time values are grouped: `Day`, `Hour`, `Minute`, `Month`, `Second`, or `Year`. |
+| **year**                 | integer | Query    | No        | Year component for date grouping.                                                        |
+| **month**                | integer | Query    | No        | Month component for date grouping.                                                       |
+| **day**                  | integer | Query    | No        | Day component for date grouping.                                                         |
+| **hour**                 | integer | Query    | No        | Hour component for date grouping.                                                        |
+| **minute**               | integer | Query    | No        | Minute component for date grouping.                                                      |
+| **second**               | integer | Query    | No        | Second component for date grouping.                                                      |
+| **matchBlanks**          | boolean | Query    | No        | `true` / `false` – whether blank cells are included in the filter.                       |
+| **refresh**              | boolean | Query    | No        | `true` / `false` – whether to refresh the worksheet after deletion.                      |
+| **folder**               | string  | Query    | No        | Original workbook folder.                                                                |
+| **storageName**          | string  | Query    | No        | Storage name.                                                                            |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.  
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-### Step‑by‑step usage flow  
+### Step‑by‑step usage flow
 
-1. **Obtain a JWT token** via the OAuth 2.0 authentication endpoint.  
-2. **Build the request URL** by replacing `{name}` and `{sheetName}` and adding required query parameters (at minimum `fieldIndex`).  
-3. **Send the DELETE request** with the `Authorization` header.  
-4. **Verify the response** – a successful call returns HTTP 200 with a JSON body indicating success.  
+1. **Obtain a JWT token** via the OAuth 2.0 authentication endpoint.
+2. **Build the request URL** by replacing `{name}` and `{sheetName}` and adding required query parameters (at minimum `fieldIndex`).
+3. **Send the DELETE request** with the `Authorization` header.
+4. **Verify the response** – a successful call returns HTTP 200 with a JSON body indicating success.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API using cURL.
 
@@ -83,16 +77,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 
 {{< /tabs >}}
 
-## Error Handling  
+## Error Handling
 
-| HTTP Status | Description                              | Example Response Body                              |
-|-------------|------------------------------------------|----------------------------------------------------|
-| **400**     | Bad request – missing required fields or invalid parameter values. | `{ "Code": 400, "Message": "Invalid fieldIndex value." }` |
-| **401**     | Unauthorized – missing or invalid JWT token. | `{ "Code": 401, "Message": "Authentication failed." }` |
-| **404**     | Not found – workbook, worksheet, or filter does not exist. | `{ "Code": 404, "Message": "Worksheet not found." }` |
-| **500**     | Internal server error – unexpected condition on the server side. | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+| HTTP Status | Description                                                        | Example Response Body                                         |
+| ----------- | ------------------------------------------------------------------ | ------------------------------------------------------------- |
+| **400**     | Bad request – missing required fields or invalid parameter values. | `{ "Code": 400, "Message": "Invalid fieldIndex value." }`     |
+| **401**     | Unauthorized – missing or invalid JWT token.                       | `{ "Code": 401, "Message": "Authentication failed." }`        |
+| **404**     | Not found – workbook, worksheet, or filter does not exist.         | `{ "Code": 404, "Message": "Worksheet not found." }`          |
+| **500**     | Internal server error – unexpected condition on the server side.   | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the most efficient way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

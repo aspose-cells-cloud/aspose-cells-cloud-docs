@@ -16,15 +16,15 @@ This REST API enables you to display the **legend**—the explanatory box that i
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
 
-The request does **not** require a body; it only needs the parameters listed below.
+### Request parameters
 
-| Parameter Name | Type    | Location | Description                              |
-|----------------|---------|----------|------------------------------------------|
-| name           | string  | path     | The workbook filename.                   |
+| Parameter Name | Type    | Location | Description                                 |
+| -------------- | ------- | -------- | ------------------------------------------- |
+| name           | string  | path     | The workbook filename.                      |
 | sheetName      | string  | path     | The worksheet name that contains the chart. |
-| chartIndex     | integer | path     | The zero‑based index of the chart.       |
-| folder         | string  | query    | The folder that contains the workbook.   |
-| storageName    | string  | query    | The name of the storage service.         |
+| chartIndex     | integer | path     | The zero‑based index of the chart.          |
+| folder         | string  | query    | The folder that contains the workbook.      |
+| storageName    | string  | query    | The name of the storage service.            |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartLegend) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -57,10 +57,10 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Shee
 
 The API can return the following HTTP status codes:
 
-- **200 OK** – The legend was displayed successfully.  
-- **400 Bad Request** – Invalid parameters.  
-- **401 Unauthorized** – Authentication failed.  
-- **404 Not Found** – The specified workbook, worksheet, or chart does not exist.  
+- **200 OK** – The legend was displayed successfully.
+- **400 Bad Request** – Invalid parameters.
+- **401 Unauthorized** – Authentication failed.
+- **404 Not Found** – The specified workbook, worksheet, or chart does not exist.
 - **500 Internal Server Error** – An unexpected server error occurred.
 
 {{< /tab >}}

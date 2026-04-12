@@ -18,19 +18,19 @@ This REST API autofits **multiple columns** on an Excel worksheet.
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name      | Type   | Location | Description                                                                                         |
-|---------------------|--------|----------|-----------------------------------------------------------------------------------------------------|
-| name                | string | path     | The file name.                                                                                      |
-| sheetName           | string | path     | The worksheet name.                                                                                 |
-| firstColumn         | integer| query    | The start column index.                                                                             |
-| lastColumn          | integer| query    | The end column index.                                                                               |
-| autoFitterOptions* | object | body     | AutoFitter options (see [Auto Fitter Options](/cells/auto-fitter-options/)). Includes `AutoFitMergedCells`, `IgnoreHidden`, and `OnlyAuto`. |
-| firstRow            | integer| query    | The start row index for autofit (**optional**).                                                     |
-| lastRow             | integer| query    | The end row index for autofit (**optional**).                                                       |
-| folder              | string | query    | Folder path in storage (**optional**).                                                               |
-| storageName         | string | query    | Storage name (**optional**).                                                                        |
+| Parameter Name      | Type    | Location | Description                                                                                                                                 |
+| ------------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| name                | string  | path     | The file name.                                                                                                                              |
+| sheetName           | string  | path     | The worksheet name.                                                                                                                         |
+| firstColumn         | integer | query    | The start column index.                                                                                                                     |
+| lastColumn          | integer | query    | The end column index.                                                                                                                       |
+| autoFitterOptions\* | object  | body     | AutoFitter options (see [Auto Fitter Options](/cells/auto-fitter-options/)). Includes `AutoFitMergedCells`, `IgnoreHidden`, and `OnlyAuto`. |
+| firstRow            | integer | query    | The start row index for autofit (**optional**).                                                                                             |
+| lastRow             | integer | query    | The end row index for autofit (**optional**).                                                                                               |
+| folder              | string  | query    | Folder path in storage (**optional**).                                                                                                      |
+| storageName         | string  | query    | Storage name (**optional**).                                                                                                                |
 
 \*The parameter name is displayed as a link to the related documentation.
 

@@ -10,19 +10,7 @@ description: "Learn how to programmatically add, retrieve, update, and delete Ex
 weight: 100
 ---
 
-When creating an Excel workbook, users can add comments for various reasons. A common use is to explain a formula in a cell, especially when the file will be shared with others. Comments can also serve as reminders, notes for collaborators, or as a means of cross‑referencing with other workbooks.
-
-Once a comment has been added, Excel allows users to resize, reshape, and format the comment box to suit their preferred style. Mastering comment management helps users get the most out of this feature.
-
-**Prerequisites**
-
-- A valid **OAuth 2.0** access token for Aspose.Cells Cloud.  
-- An existing workbook stored in Aspose Cloud storage (provide the **file ID**).  
-- The target worksheet name or index.  
-- Cell address in A1 notation (e.g., `A1`).  
-
-**Version & Compatibility**  
-All examples below target **Aspose.Cells Cloud API version v3.0**. Ensure that the SDK you use matches this version or later.
+When creating an Excel workbook, users can add comments for various reasons. A common use is to explain a formula in a cell, especially when the file will be shared with others. Comments can also serve as reminders, notes for collaborators, or as a means of cross‑referencing with other workbooks.Once a comment has been added, Excel allows users to resize, reshape, and format the comment box to suit their preferred style. Mastering comment management helps users get the most out of this feature.
 
 **Add a Comment**
 
@@ -62,7 +50,7 @@ Content-Type: application/json
 **Common error codes**
 
 | Code | Meaning                              |
-|------|--------------------------------------|
+| ---- | ------------------------------------ |
 | 400  | Invalid cell address or request body |
 | 401  | Unauthorized – missing/invalid token |
 | 404  | Workbook or worksheet not found      |
@@ -118,7 +106,7 @@ Content-Type: application/json
 }
 ```
 
-The response follows the same structure as the *Add a Comment* response.
+The response follows the same structure as the _Add a Comment_ response.
 
 **Delete a Comment**
 
@@ -149,24 +137,12 @@ Authorization: Bearer {access_token}
 
 **Error‑handling guidance**
 
-- **404 Not Found** – Verify that the workbook ID, worksheet name, and comment index are correct.  
-- **400 Bad Request** – Check JSON syntax and required fields (`CellName`, `Comment`).  
+- **404 Not Found** – Verify that the workbook ID, worksheet name, and comment index are correct.
+- **400 Bad Request** – Check JSON syntax and required fields (`CellName`, `Comment`).
 - **429 Too Many Requests** – Implement exponential back‑off and respect the `Retry-After` header.
 
 **Summary**
 
-- Excel comments are used to [add a note or explain a formula in a cell](/cells/comments/add/).  
-- Excel provides users with the flexibility of [editing](/cells/comments/update/), [deleting](/cells/comments/delete/), and [showing](/cells/comments/get/) or [hiding](/cells/comments/update/) comments on a worksheet.  
+- Excel comments are used to [add a note or explain a formula in a cell](/cells/comments/add/).
+- Excel provides users with the flexibility of [editing](/cells/comments/update/), [deleting](/cells/comments/delete/), and [showing](/cells/comments/get/) or [hiding](/cells/comments/update/) comments on a worksheet.
 - Users can also [resize](/cells/comments/update/) and [move](/cells/comments/update/) the comment box.
-
-**Frequently Asked Questions**
-
-| Q | A |
-|---|---|
-| **How can I add a comment to a specific cell using Cells.Cloud API?** | Send a **POST** request to `/cells/{file}/worksheets/{sheet}/comments` with a JSON body containing `CellName`, `Comment`, and optionally `Author`. Include a valid OAuth token in the `Authorization` header. |
-| **What endpoint retrieves all comments from a worksheet?** | Use **GET** `/cells/{file}/worksheets/{sheet}/comments`. The response returns an array of comment objects with properties such as `CellName`, `Author`, and `HtmlComment`. |
-| **How do I delete a single comment from cell C3?** | First obtain the comment’s index (e.g., `0` for the first comment). Then issue a **DELETE** request to `/cells/{file}/worksheets/{sheet}/comments/{commentIndex}`. |
-| **Which API version does this documentation refer to?** | All examples target **Aspose.Cells Cloud API v3.0**. |
-| **What should I do if I receive a 429 response?** | Pause the request, wait for the duration indicated by the `Retry-After` header, and then retry with exponential back‑off. |
-
----

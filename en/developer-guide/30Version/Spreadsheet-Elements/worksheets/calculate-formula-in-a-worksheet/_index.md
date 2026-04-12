@@ -18,15 +18,15 @@ This REST API returns the **calculated value of a formula** in a worksheet.
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResult
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| name           | string | path     | Name of the Excel file. |
-| sheetName      | string | path     | Name of the worksheet that contains the formula. |
+| Parameter Name | Type   | Location | Description                                        |
+| -------------- | ------ | -------- | -------------------------------------------------- |
+| name           | string | path     | Name of the Excel file.                            |
+| sheetName      | string | path     | Name of the worksheet that contains the formula.   |
 | formula        | string | query    | The formula to be evaluated (e.g., `SUM(A5:A10)`). |
-| folder         | string | query    | Folder where the document is stored. |
-| storageName    | string | query    | Name of the storage service (if applicable). |
+| folder         | string | query    | Folder where the document is stored.               |
+| storageName    | string | query    | Name of the storage service (if applicable).       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetCalculateFormula) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

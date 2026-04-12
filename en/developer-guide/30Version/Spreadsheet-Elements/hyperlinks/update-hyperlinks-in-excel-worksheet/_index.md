@@ -16,28 +16,35 @@ This REST API updates a hyperlink in an Excel worksheet identified by its zero�
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type    | Location | Description                                                                 |
-|----------------|---------|----------|-----------------------------------------------------------------------------|
-| name           | string  | path     | Name of the Excel file.                                                     |
-| sheetName      | string  | path     | Name of the worksheet.                                                      |
-| hyperlinkIndex | integer | path     | Zero‑based index of the hyperlink to be updated.                            |
-| hyperlink      | object  | body     | **Hyperlink** object that contains the new values for the hyperlink.       |
-| folder         | string  | query    | Folder path where the workbook is stored.                                   |
-| storageName    | string  | query    | Name of the storage service.                                                |
-
-**Authentication** – Include an `Authorization: Bearer <jwt token>` header obtained via the OAuth2 flow. The API version used throughout this page is **v3.0**.
+| Parameter Name | Type    | Location | Description                                                          |
+| -------------- | ------- | -------- | -------------------------------------------------------------------- |
+| name           | string  | path     | Name of the Excel file.                                              |
+| sheetName      | string  | path     | Name of the worksheet.                                               |
+| hyperlinkIndex | integer | path     | Zero‑based index of the hyperlink to be updated.                     |
+| hyperlink      | object  | body     | **Hyperlink** object that contains the new values for the hyperlink. |
+| folder         | string  | query    | Folder path where the workbook is stored.                            |
+| storageName    | string  | query    | Name of the storage service.                                         |
 
 **Request body schema** – The `hyperlink` object may contain the following fields:
 
-| Field        | Type    | Required | Description                                                    |
-|--------------|---------|----------|----------------------------------------------------------------|
-| Address      | string  | yes      | Target URL of the hyperlink.                                   |
-| Area         | object  | yes      | Defines the cell range where the hyperlink is placed (`StartRow`, `StartColumn`, `EndRow`, `EndColumn`). |
-| ScreenTip    | string  | no       | Text displayed when the mouse hovers over the hyperlink.      |
-| TextToDisplay| string  | no       | Text shown in the cell for the hyperlink.                      |
-| link         | object  | no       | Hypermedia links (`Href`, `Rel`, `Title`, `Type`).             |
+| Field         | Type   | Required | Description                                                                                              |
+| ------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------- |
+| Address       | string | yes      | Target URL of the hyperlink.                                                                             |
+| Area          | object | yes      | Defines the cell range where the hyperlink is placed (`StartRow`, `StartColumn`, `EndRow`, `EndColumn`). |
+| ScreenTip     | string | no       | Text displayed when the mouse hovers over the hyperlink.                                                 |
+| TextToDisplay | string | no       | Text shown in the cell for the hyperlink.                                                                |
+| link          | object | no       | Hypermedia links (`Href`, `Rel`, `Title`, `Type`).                                                       |
+
+### Error Responses
+
+| HTTP Code | Reason                                             | Example Body                                                        |
+| --------- | -------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**   | Bad Request – missing or invalid parameters.       | `{ "Code":"400", "Message":"Invalid parameter value." }`            |
+| **401**   | Unauthorized – missing or invalid JWT token.       | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
+| **404**   | Not Found – workbook or worksheet does not exist.  | `{ "Code":"404", "Message":"File not found." }`                     |
+| **500**   | Internal Server Error – unexpected server failure. | `{ "Code":"500", "Message":"An unexpected error occurred." }`       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hyperlinks/PostWorksheetHyperlink) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

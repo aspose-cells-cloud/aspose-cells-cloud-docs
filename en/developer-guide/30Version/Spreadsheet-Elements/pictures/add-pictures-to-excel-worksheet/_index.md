@@ -18,20 +18,20 @@ This REST API adds a new picture to an Excel worksheet.
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name      | Type   | Location | Description                                                                                 |
-|---------------------|--------|----------|---------------------------------------------------------------------------------------------|
-| name                | string | path     | The workbook name.                                                                          |
-| sheetName           | string | path     | The worksheet name.                                                                         |
-| picture             | object | body     | Picture object (binary data).                                                               |
-| upperLeftRow        | integer| query    | Zero‑based index of the upper‑left row where the picture will be placed.                    |
-| upperLeftColumn     | integer| query    | Zero‑based index of the upper‑left column where the picture will be placed.                 |
-| lowerRightRow       | integer| query    | Zero‑based index of the lower‑right row of the picture area.                               |
-| lowerRightColumn    | integer| query    | Zero‑based index of the lower‑right column of the picture area.                            |
-| picturePath         | string | query    | Path to the picture file; if omitted, the picture data must be supplied in the request body.|
-| folder              | string | query    | The folder that contains the workbook.                                                      |
-| storageName         | string | query    | The name of the storage service.                                                            |
+| Parameter Name   | Type    | Location | Description                                                                                  |
+| ---------------- | ------- | -------- | -------------------------------------------------------------------------------------------- |
+| name             | string  | path     | The workbook name.                                                                           |
+| sheetName        | string  | path     | The worksheet name.                                                                          |
+| picture          | object  | body     | Picture object (binary data).                                                                |
+| upperLeftRow     | integer | query    | Zero‑based index of the upper‑left row where the picture will be placed.                     |
+| upperLeftColumn  | integer | query    | Zero‑based index of the upper‑left column where the picture will be placed.                  |
+| lowerRightRow    | integer | query    | Zero‑based index of the lower‑right row of the picture area.                                 |
+| lowerRightColumn | integer | query    | Zero‑based index of the lower‑right column of the picture area.                              |
+| picturePath      | string  | query    | Path to the picture file; if omitted, the picture data must be supplied in the request body. |
+| folder           | string  | query    | The folder that contains the workbook.                                                       |
+| storageName      | string  | query    | The name of the storage service.                                                             |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

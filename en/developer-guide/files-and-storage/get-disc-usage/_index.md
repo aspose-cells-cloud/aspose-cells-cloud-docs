@@ -12,17 +12,7 @@ weight: 100
 
 ## Excel API: GetDiskUsage
 
-### Prerequisites / Authentication
-
-The **GetDiskUsage** endpoint requires a valid OAuth 2.0 bearer token. Include the token in the `Authorization` header of every request:
-
-```http
-Authorization: Bearer {access_token}
-```
-
-> **Note:** Obtain the token from the Aspose Cloud OAuth endpoint before calling any API.
-
-### API Endpoint
+### Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/storage/disk
@@ -30,32 +20,28 @@ GET https://api.aspose.cloud/v4.0/cells/storage/disk
 
 ### Function Description
 
-- Retrieves the current disk usage for the Excel API in the Aspose Cloud environment.  
-- Allows developers to monitor how much storage their applications have consumed.  
+- Retrieves the current disk usage for the Excel API in the Aspose Cloud environment.
+- Allows developers to monitor how much storage their applications have consumed.
 - Enables proactive management of storage limits and cost control.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                            | Required |
-|----------------|--------|----------|--------------------------------------------------------|----------|
-| storageName    | String | Query    | The name of the storage for which to retrieve usage.   | Optional |
+| Parameter Name | Type   | Location | Description                                          | Required |
+| -------------- | ------ | -------- | ---------------------------------------------------- | -------- |
+| storageName    | String | Query    | The name of the storage for which to retrieve usage. | Optional |
 
 ### Response Description
 
 ```json
 {
   "Name": "DiskUsage",
-  "Description": [
-    "Class for disk space information."
-  ],
+  "Description": ["Class for disk space information."],
   "Type": "Class",
   "IsAbstract": false,
   "Properties": [
     {
       "Name": "UsedSize",
-      "Description": [
-        "Amount of disk space used by the application."
-      ],
+      "Description": ["Amount of disk space used by the application."],
       "Nullable": true,
       "ReadOnly": false,
       "IsInherit": false,
@@ -66,9 +52,7 @@ GET https://api.aspose.cloud/v4.0/cells/storage/disk
     },
     {
       "Name": "TotalSize",
-      "Description": [
-        "Total available disk space."
-      ],
+      "Description": ["Total available disk space."],
       "Nullable": true,
       "ReadOnly": false,
       "IsInherit": false,
@@ -92,10 +76,10 @@ GET https://api.aspose.cloud/v4.0/cells/storage/disk
 
 ### Error Codes
 
-| HTTP Code | Description                              |
-|-----------|------------------------------------------|
-| 401       | Unauthorized – missing or invalid token. |
-| 404       | Not Found – the specified storage does not exist. |
+| HTTP Code | Description                                               |
+| --------- | --------------------------------------------------------- |
+| 401       | Unauthorized – missing or invalid token.                  |
+| 404       | Not Found – the specified storage does not exist.         |
 | 500       | Internal Server Error – an unexpected condition occurred. |
 
 ## OpenAPI Specification
@@ -137,7 +121,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 ### Last Updated
 
-*2026‑03‑30*
+_2026‑03‑30_
 
 ### Author
 

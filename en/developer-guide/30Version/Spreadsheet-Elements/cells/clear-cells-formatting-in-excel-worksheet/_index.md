@@ -17,17 +17,17 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clea
 
 The request parameters are:
 
-| Parameter Name | Type    | Location                     | Description                              |
-|----------------|---------|------------------------------|------------------------------------------|
-| name           | string  | path                         | Name of the workbook.                    |
-| sheetName      | string  | path                         | Name of the worksheet.                   |
-| range          | string  | query                        | Cell range (e.g., `A1:A10`).             |
-| startRow       | integer | query                        | Zero‑based index of the start row.       |
-| startColumn    | integer | query                        | Zero‑based index of the start column.    |
-| endRow         | integer | query                        | Zero‑based index of the end row.         |
-| endColumn      | integer | query                        | Zero‑based index of the end column.      |
-| folder         | string  | query                        | Folder that contains the workbook.       |
-| storageName    | string  | query                        | Name of the storage location.            |
+| Parameter Name | Type    | Location | Description                           |
+| -------------- | ------- | -------- | ------------------------------------- |
+| name           | string  | path     | Name of the workbook.                 |
+| sheetName      | string  | path     | Name of the worksheet.                |
+| range          | string  | query    | Cell range (e.g., `A1:A10`).          |
+| startRow       | integer | query    | Zero‑based index of the start row.    |
+| startColumn    | integer | query    | Zero‑based index of the start column. |
+| endRow         | integer | query    | Zero‑based index of the end row.      |
+| endColumn      | integer | query    | Zero‑based index of the end column.   |
+| folder         | string  | query    | Folder that contains the workbook.    |
+| storageName    | string  | query    | Name of the storage location.         |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostClearFormats) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

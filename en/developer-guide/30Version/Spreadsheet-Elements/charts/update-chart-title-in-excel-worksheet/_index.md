@@ -16,16 +16,16 @@ This REST API updates the chart title.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type   | Location                     | Description                                 |
-|----------------|--------|------------------------------|---------------------------------------------|
-| name           | string | path                         | Workbook name.                              |
-| sheetName      | string | path                         | Worksheet name.                             |
-| chartIndex     | integer| path                         | Zero‑based index of the chart.              |
-| title          | string | body                         | New chart title.                            |
-| folder         | string | query                        | The workbook folder.                        |
-| storageName    | string | query                        | Storage name.                               |
+| Parameter Name | Type    | Location | Description                    |
+| -------------- | ------- | -------- | ------------------------------ |
+| name           | string  | path     | Workbook name.                 |
+| sheetName      | string  | path     | Worksheet name.                |
+| chartIndex     | integer | path     | Zero‑based index of the chart. |
+| title          | string  | body     | New chart title.               |
+| folder         | string  | query    | The workbook folder.           |
+| storageName    | string  | query    | Storage name.                  |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

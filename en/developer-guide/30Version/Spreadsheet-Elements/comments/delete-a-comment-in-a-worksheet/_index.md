@@ -1,52 +1,34 @@
----  
-title: "Delete a Worksheet Comment"  
-type: docs  
-url: /comments/delete/  
-aliases: [/delete-a-comment-in-a-worksheet/]  
-keywords: "Aspose.Cells delete comment, Excel comment API, REST delete worksheet comment, Aspose Cloud SDK, Excel comment removal"  
-description: "Learn how to delete a specific cell comment in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, SDK snippets, and error handling."  
-weight: 40  
----  
+---
+title: "Delete a Worksheet Comment"
+type: docs
+url: /comments/delete/
+aliases: [/delete-a-comment-in-a-worksheet/]
+keywords: "Aspose.Cells delete comment, Excel comment API, REST delete worksheet comment, Aspose Cloud SDK, Excel comment removal"
+description: "Learn how to delete a specific cell comment in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, SDK snippets, and error handling."
+weight: 40
+---
 
-A **comment** is a text note attached to a specific cell in an Excel worksheet. This REST API deletes such a comment from a worksheet cell.  
+A **comment** is a text note attached to a specific cell in an Excel worksheet. This REST API deletes such a comment from a worksheet cell.
 
-**Version:** v3.0  
-
-## REST API  
-
-### Prerequisites  
-
-- The Excel file must already exist in the selected storage.  
-- The target worksheet must contain the comment you intend to delete.  
-- If the file is not stored in the root folder, provide the `folder` query parameter.  
-
-### Authentication  
-
-The endpoint requires **OAuth 2.0 Bearer tokens**. Obtain a token from the Aspose Cloud authentication service and include it in the request header:
-
-```http
-Authorization: Bearer <access_token>
-```  
-
-### Endpoint  
+## REST API
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
-```  
+```
 
-### Parameters  
+### Request Parameters
 
 The endpoint accepts the following parameters:
 
-| Parameter Name | Type   | Location | Required | Description                              |
-|----------------|--------|----------|----------|------------------------------------------|
-| name           | string | path     | Yes      | The name of the Excel document.          |
-| sheetName      | string | path     | Yes      | The name of the worksheet.               |
-| cellName       | string | path     | Yes      | The address of the cell (e.g., `A1`).    |
-| folder         | string | query    | No       | The folder that contains the document.   |
-| storageName    | string | query    | No       | The name of the storage service.         |
+| Parameter Name | Type   | Location | Required | Description                            |
+| -------------- | ------ | -------- | -------- | -------------------------------------- |
+| name           | string | path     | Yes      | The name of the Excel document.        |
+| sheetName      | string | path     | Yes      | The name of the worksheet.             |
+| cellName       | string | path     | Yes      | The address of the cell (e.g., `A1`).  |
+| folder         | string | query    | No       | The folder that contains the document. |
+| storageName    | string | query    | No       | The name of the storage service.       |
 
-### Request Example  
+### Request Example
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -75,22 +57,22 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 {{< /tabs >}}
 
-### Error Responses  
+### Error Responses
 
-| HTTP Code | Description                              | Example Response |
-|-----------|------------------------------------------|------------------|
-| 400       | Bad request – missing or malformed parameters. | `{ "Code": 400, "Message": "Invalid parameters." }` |
-| 401       | Unauthorized – invalid or missing token. | `{ "Code": 401, "Message": "Authentication required." }` |
-| 404       | Not found – the file, worksheet, or comment does not exist. | `{ "Code": 404, "Message": "Resource not found." }` |
-| 500       | Internal server error – unexpected condition on the server. | `{ "Code": 500, "Message": "Server error." }` |
+| HTTP Code | Description                                                 | Example Response                                         |
+| --------- | ----------------------------------------------------------- | -------------------------------------------------------- |
+| 400       | Bad request – missing or malformed parameters.              | `{ "Code": 400, "Message": "Invalid parameters." }`      |
+| 401       | Unauthorized – invalid or missing token.                    | `{ "Code": 401, "Message": "Authentication required." }` |
+| 404       | Not found – the file, worksheet, or comment does not exist. | `{ "Code": 404, "Message": "Resource not found." }`      |
+| 500       | Internal server error – unexpected condition on the server. | `{ "Code": 500, "Message": "Server error." }`            |
 
-For a complete list of status codes, refer to the **Error Responses** section above.  
+For a complete list of status codes, refer to the **Error Responses** section above.
 
-The [OpenAPI Specification for DeleteWorksheetComment](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComment) provides a machine‑readable description of this endpoint.  
+The [OpenAPI Specification for DeleteWorksheetComment](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComment) provides a machine‑readable description of this endpoint.
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
-Using an SDK can speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository for Aspose.Cells Cloud SDKs](https://github.com/aspose-cells-cloud) for a complete list.  
+Using an SDK can speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository for Aspose.Cells Cloud SDKs](https://github.com/aspose-cells-cloud) for a complete list.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

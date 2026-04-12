@@ -6,7 +6,16 @@ type: docs
 url: /worksheets/update-properties/
 aliases: [/update-excel-worksheet-properties/]
 weight: 20
-keywords: ["Aspose.Cells", "Excel", "worksheet", "update properties", "REST API", "cloud", "v3.0"]
+keywords:
+  [
+    "Aspose.Cells",
+    "Excel",
+    "worksheet",
+    "update properties",
+    "REST API",
+    "cloud",
+    "v3.0",
+  ]
 description: "Learn how to update base properties (e.g., display zeros, ruler visibility) of an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL request, SDK samples, parameters, and error handling."
 ---
 
@@ -18,17 +27,15 @@ This REST API updates worksheet base properties.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
-**Authentication** – The endpoint requires an OAuth 2.0 JWT bearer token. Obtain a token from the `/connect/token` endpoint using your Aspose Cloud client ID and secret, then include it in the `Authorization` header (`Bearer <jwt token>`).
+### **Request parameters**
 
-The request parameters are:
-
-| Parameter Name | Type   | Path/Query String/HTTPBody | Description |
-|----------------|--------|----------------------------|-------------|
-| name           | string | path                       | Workbook filename (including extension). |
-| sheetName      | string | path                       | Name of the worksheet to be updated. |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                         |
+| -------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------- |
+| name           | string | path                       | Workbook filename (including extension).                                                            |
+| sheetName      | string | path                       | Name of the worksheet to be updated.                                                                |
 | sheet          | object | body                       | JSON object containing worksheet property key/value pairs (e.g., `DisplayZeros`, `IsRulerVisible`). |
-| folder         | string | query                      | Folder path in storage where the workbook is located. |
-| storageName    | string | query                      | Name of the storage to use. |
+| folder         | string | query                      | Folder path in storage where the workbook is located.                                               |
+| storageName    | string | query                      | Name of the storage to use.                                                                         |
 
 The **sheet** object is sent in the request body as JSON. Example properties that can be modified include `DisplayZeros`, `IsRulerVisible`, `IsGridlinesVisible`, and others defined in the API specification.
 

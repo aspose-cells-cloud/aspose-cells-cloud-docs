@@ -1,55 +1,36 @@
----  
-title: "Match all non‑blank cells in an Excel worksheet"  
-second_title: "Document"  
-linktitle: "Match all non‑blank cells"  
-type: docs  
-url: /autofilter/match-all-non-blank/  
-aliases: [/match-all-non-blank-cells-in-the-list/]  
-keywords: "Aspose.Cells Cloud, match non‑blank cells, AutoFilter, Excel API"  
-description: "Learn how to use Aspose.Cells Cloud REST API to match all non‑blank cells in an AutoFilter list on an Excel worksheet. Includes endpoint, parameters, authentication, response schema, error codes, and SDK examples."  
-weight: 100  
----  
+---
+title: "Match all non‑blank cells in an Excel worksheet"
+second_title: "Document"
+linktitle: "Match all non‑blank cells"
+type: docs
+url: /autofilter/match-all-non-blank/
+aliases: [/match-all-non-blank-cells-in-the-list/]
+keywords: "Aspose.Cells Cloud, match non‑blank cells, AutoFilter, Excel API"
+description: "Learn how to use Aspose.Cells Cloud REST API to match all non‑blank cells in an AutoFilter list on an Excel worksheet. Includes endpoint, parameters, authentication, response schema, error codes, and SDK examples."
+weight: 100
+---
 
-This REST API matches all non‑blank cells in the AutoFilter list on an Excel worksheet.  
+This REST API matches all non‑blank cells in the AutoFilter list on an Excel worksheet.
 
-### Prerequisites  
-
-- A valid **Aspose Cloud** account.  
-- A JWT token (see the **Authentication** section below).  
-- The Excel file must be uploaded to Aspose Cloud storage before calling the API.  
-
-### Authentication  
-
-The API requires a bearer token obtained via the Aspose Cloud OAuth flow.  
-1. Create an application in the Aspose Cloud portal.  
-2. Use the client ID and client secret to request a JWT token.  
-3. Include the token in the `Authorization` header of every request:  
-
-```http
-Authorization: Bearer <jwt token>
-```  
-
-For detailed steps, refer to the **[Authentication guide]**(https://docs.aspose.cloud/cells/authentication/).  
-
-## REST API  
+## REST API
 
 ```bash
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchNonBlanks
-```  
+```
 
-#### Request Parameters  
+### Request Parameters
 
-| Parameter Name | Type    | Location | Description                                               |
-|----------------|---------|----------|-----------------------------------------------------------|
-| name           | string  | path     | The name of the Excel file.                               |
-| sheetName      | string  | path     | The name of the worksheet that contains the AutoFilter.  |
+| Parameter Name | Type    | Location | Description                                                    |
+| -------------- | ------- | -------- | -------------------------------------------------------------- |
+| name           | string  | path     | The name of the Excel file.                                    |
+| sheetName      | string  | path     | The name of the worksheet that contains the AutoFilter.        |
 | fieldIndex     | integer | query    | Zero‑based index of the column to which the filter is applied. |
-| folder         | string  | query    | *(Optional)* Folder path where the file is stored.        |
-| storageName    | string  | query    | *(Optional)* Name of the storage service to use.         |
+| folder         | string  | query    | _(Optional)_ Folder path where the file is stored.             |
+| storageName    | string  | query    | _(Optional)_ Name of the storage service to use.               |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchNonBlanks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.  
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchNonBlanks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.  
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -78,38 +59,27 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 {{< /tabs >}}
 
-#### Response Schema  
+#### Response Schema
 
-| Field  | Type   | Description                                 |
-|--------|--------|---------------------------------------------|
-| Code   | integer| HTTP status code (e.g., `200`).            |
-| Status | string | Textual description of the result (`OK`).  |
+| Field  | Type    | Description                               |
+| ------ | ------- | ----------------------------------------- |
+| Code   | integer | HTTP status code (e.g., `200`).           |
+| Status | string  | Textual description of the result (`OK`). |
 
-#### Possible Error Responses  
+#### Possible Error Responses
 
-| HTTP Code | Reason                     | Example Message                         |
-|-----------|----------------------------|-----------------------------------------|
-| 400       | Bad Request                | `Invalid fieldIndex parameter.`         |
-| 401       | Unauthorized               | `Authentication failed. Invalid token.`|
-| 404       | Not Found                  | `File or worksheet not found.`          |
-| 500       | Internal Server Error      | `Unexpected error on the server.`       |
+| HTTP Code | Reason                | Example Message                         |
+| --------- | --------------------- | --------------------------------------- |
+| 400       | Bad Request           | `Invalid fieldIndex parameter.`         |
+| 401       | Unauthorized          | `Authentication failed. Invalid token.` |
+| 404       | Not Found             | `File or worksheet not found.`          |
+| 500       | Internal Server Error | `Unexpected error on the server.`       |
 
-### FAQ  
+## Cloud SDK Family
 
-**Q:** *How do I match all non‑blank cells in an Excel worksheet using Aspose.Cells Cloud?*  
-**A:** Send a `POST` request to `/cells/{name}/worksheets/{sheetName}/autoFilter/matchNonBlanks` with the required `fieldIndex` query parameter and a valid JWT token in the `Authorization` header.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-**Q:** *What are the required query parameters for the `matchNonBlanks` API?*  
-**A:** `fieldIndex` (integer, required) – the zero‑based column index to filter. Optional parameters are `folder` and `storageName`.
-
-**Q:** *What is the expected response when the request succeeds?*  
-**A:** A JSON object containing `"Code": 200` and `"Status": "OK"` indicating that the filter was applied successfully.
-
-## Cloud SDK Family  
-
-Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.  
-
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:  
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -161,4 +131,4 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< /tab >}}
 
-{{< /tabs >}}  
+{{< /tabs >}}

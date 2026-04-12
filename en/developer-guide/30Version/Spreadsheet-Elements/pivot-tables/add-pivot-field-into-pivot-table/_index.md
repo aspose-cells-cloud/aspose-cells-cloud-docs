@@ -20,16 +20,16 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 
 ### Request parameters
 
-| Parameter Name   | Type    | Location | Description                                    |
-|------------------|---------|----------|------------------------------------------------|
-| name             | string  | path     | Document name.                                 |
-| sheetName        | string  | path     | Worksheet name.                                |
-| pivotTableIndex  | integer | path     | Index of the pivot table.                      |
-| pivotFieldType   | string  | query    | Type of the fields area (e.g., Row, Column).   |
-| request          | object  | body     | DTO that contains the field indexes to add.   |
-| needReCalculate  | boolean | query    | Set to **true** to recalculate the pivot table after the operation. |
-| folder           | string  | query    | Folder where the document is stored.           |
-| storageName      | string  | query    | Name of the storage.                           |
+| Parameter Name  | Type    | Location | Description                                                         |
+| --------------- | ------- | -------- | ------------------------------------------------------------------- |
+| name            | string  | path     | Document name.                                                      |
+| sheetName       | string  | path     | Worksheet name.                                                     |
+| pivotTableIndex | integer | path     | Index of the pivot table.                                           |
+| pivotFieldType  | string  | query    | Type of the fields area (e.g., Row, Column).                        |
+| request         | object  | body     | DTO that contains the field indexes to add.                         |
+| needReCalculate | boolean | query    | Set to **true** to recalculate the pivot table after the operation. |
+| folder          | string  | query    | Folder where the document is stored.                                |
+| storageName     | string  | query    | Name of the storage.                                                |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PutPivotTableField) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

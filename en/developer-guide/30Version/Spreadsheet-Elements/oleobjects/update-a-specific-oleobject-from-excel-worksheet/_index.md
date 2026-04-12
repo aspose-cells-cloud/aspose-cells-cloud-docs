@@ -14,22 +14,6 @@ lastmod: "2024-03-01"
 
 This REST API updates an **OLE object** in an Excel worksheet.
 
-## Prerequisites
-
-* The workbook must already exist in the selected storage folder.  
-* You need a valid **JWT token** for authentication (see the **Authentication** section).  
-
-## Authentication
-
-1. Request a JWT token from the Aspose Cloud authentication endpoint (`/connect/token`).  
-2. Include the token in the request header:
-
-```http
-Authorization: Bearer <jwt token>
-```
-
-For detailed steps, refer to the Aspose Cloud authentication guide.
-
 ## REST API
 
 ```bash
@@ -38,28 +22,28 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 
 The request parameters are:
 
-| Parameter Name   | Type    | Parameter Location | Description                                           |
-|------------------|---------|--------------------|-------------------------------------------------------|
-| name             | string  | path               | The workbook name.                                    |
-| sheetName        | string  | path               | The worksheet name.                                   |
-| oleObjectIndex   | integer | path               | Index of the OLE object within the worksheet.         |
-| ole              | object  | body               | JSON representation of the OLE object to be updated. |
-| folder           | string  | query              | The folder that contains the workbook.                |
-| storageName      | string  | query              | The name of the storage service.                      |
+| Parameter Name | Type    | Parameter Location | Description                                          |
+| -------------- | ------- | ------------------ | ---------------------------------------------------- |
+| name           | string  | path               | The workbook name.                                   |
+| sheetName      | string  | path               | The worksheet name.                                  |
+| oleObjectIndex | integer | path               | Index of the OLE object within the worksheet.        |
+| ole            | object  | body               | JSON representation of the OLE object to be updated. |
+| folder         | string  | query              | The folder that contains the workbook.               |
+| storageName    | string  | query              | The name of the storage service.                     |
 
 ### Request Body Fields
 
-| Field                | Type    | Required | Description                                                |
-|----------------------|---------|----------|------------------------------------------------------------|
-| ImageSourceFullName  | string  | optional | Path to the image file used for the OLE object.           |
-| IsAutoSize           | boolean | optional | Whether the OLE object should be auto‑sized.              |
-| SourceFullName       | string  | required | The source file (e.g., an image or chart) for the OLE.    |
-| UpperLeftRow         | integer | required | Row index (zero‑based) of the upper‑left corner.           |
-| UpperLeftColumn      | integer | required | Column index (zero‑based) of the upper‑left corner.        |
-| Left                 | integer | optional | Horizontal offset, in points, from the upper‑left corner. |
-| Top                  | integer | optional | Vertical offset, in points, from the upper‑left corner.   |
-| Width                | integer | required | Width of the OLE object, in points.                       |
-| Height               | integer | required | Height of the OLE object, in points.                      |
+| Field               | Type    | Required | Description                                               |
+| ------------------- | ------- | -------- | --------------------------------------------------------- |
+| ImageSourceFullName | string  | optional | Path to the image file used for the OLE object.           |
+| IsAutoSize          | boolean | optional | Whether the OLE object should be auto‑sized.              |
+| SourceFullName      | string  | required | The source file (e.g., an image or chart) for the OLE.    |
+| UpperLeftRow        | integer | required | Row index (zero‑based) of the upper‑left corner.          |
+| UpperLeftColumn     | integer | required | Column index (zero‑based) of the upper‑left corner.       |
+| Left                | integer | optional | Horizontal offset, in points, from the upper‑left corner. |
+| Top                 | integer | optional | Vertical offset, in points, from the upper‑left corner.   |
+| Width               | integer | required | Width of the OLE object, in points.                       |
+| Height              | integer | required | Height of the OLE object, in points.                      |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/PostUpdateWorksheetOleObject) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -95,29 +79,16 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
 
 ## Error Responses
 
-| HTTP Status | Code | Message                              |
-|-------------|------|--------------------------------------|
-| 400         | 4000 | Bad request – missing or invalid parameters. |
-| 401         | 4010 | Unauthorized – invalid or missing JWT token. |
+| HTTP Status | Code | Message                                                        |
+| ----------- | ---- | -------------------------------------------------------------- |
+| 400         | 4000 | Bad request – missing or invalid parameters.                   |
+| 401         | 4010 | Unauthorized – invalid or missing JWT token.                   |
 | 404         | 4040 | Not found – workbook, worksheet, or OLE object does not exist. |
 | 500         | 5000 | Internal server error – unexpected failure on the server side. |
 
 ## When to Use This API?
 
 Use this endpoint when you need to modify an existing OLE object—such as an embedded image, chart, or document—without re‑uploading the entire worksheet. Typical scenarios include updating the image source, resizing the object, or changing its position after the workbook has been generated.
-
-## FAQ
-
-**How do I authenticate the Update OLE Object API call?**  
-First obtain a JWT token via the Aspose Cloud authentication endpoint (`/connect/token`). Include it in the request header as `Authorization: Bearer <jwt token>`.
-
-**What fields are required in the OLE object JSON payload?**  
-At a minimum you must provide `SourceFullName`, `UpperLeftRow`, `UpperLeftColumn`, `Width`, and `Height`. Optional fields include `ImageSourceFullName`, `IsAutoSize`, `Left`, and `Top`.
-
-**What error codes can I expect if the workbook is missing?**  
-The API returns **404 Not Found** with a message like `"Workbook not found"` when the specified `name` does not exist in the given `folder`/`storage`.
-
----
 
 ## Cloud SDK Family
 

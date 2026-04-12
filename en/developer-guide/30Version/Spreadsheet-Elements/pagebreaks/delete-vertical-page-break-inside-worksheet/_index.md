@@ -10,27 +10,23 @@ description: "Remove a vertical page break from an Excel worksheet using Aspose.
 weight: 60
 ---
 
-### Prerequisites
+## REST API
 
-- **Authentication** – A valid Bearer JWT token must be supplied in the `Authorization` header.  
-- **API version** – The examples target **v3.0** of the Aspose.Cells Cloud API.  
-- **Storage** – The file must be stored in a supported storage service; optionally specify `folder` and `storageName` if the file is not in the default location.
-
-### REST API
+This REST API deletes a **vertical** page break.
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index}
 ```
 
-The request accepts the following parameters:
+### Request Parameters
 
-| Parameter Name | Type    | Location | Required? | Description                                      |
-|----------------|---------|----------|-----------|--------------------------------------------------|
-| name           | string  | path     | Yes       | The name of the Excel file.                      |
-| sheetName      | string  | path     | Yes       | The name of the worksheet containing the break. |
+| Parameter Name | Type    | Location | Required? | Description                                            |
+| -------------- | ------- | -------- | --------- | ------------------------------------------------------ |
+| name           | string  | path     | Yes       | The name of the Excel file.                            |
+| sheetName      | string  | path     | Yes       | The name of the worksheet containing the break.        |
 | index          | integer | path     | Yes       | Zero‑based index of the vertical page break to delete. |
-| folder         | string  | query    | No        | Folder path where the file is stored.            |
-| storageName    | string  | query    | No        | Name of the storage service.                     |
+| folder         | string  | query    | No        | Folder path where the file is stored.                  |
+| storageName    | string  | query    | No        | Name of the storage service.                           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteVerticalPageBreak) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -65,12 +61,12 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/vertic
 
 ### Error Responses
 
-| HTTP Code | Description                              |
-|-----------|------------------------------------------|
-| 401       | Unauthorized – missing or invalid token. |
+| HTTP Code | Description                                                                    |
+| --------- | ------------------------------------------------------------------------------ |
+| 401       | Unauthorized – missing or invalid token.                                       |
 | 404       | Not Found – the specified file, worksheet, or page‑break index does not exist. |
-| 400       | Bad Request – malformed request syntax or invalid parameters. |
-| 500       | Internal Server Error – an unexpected condition was encountered. |
+| 400       | Bad Request – malformed request syntax or invalid parameters.                  |
+| 500       | Internal Server Error – an unexpected condition was encountered.               |
 
 ## Cloud SDK Family
 

@@ -10,21 +10,21 @@ description: "Learn how to use Aspose.Cells Cloud Math Calculate API to bulk‑a
 weight: 100
 ---
 
-## **Introduction**: Spreadsheet Quick Calculate – Add, Multiply, Subtract, Divide & Percent Formulas in One Running API  
+## **Introduction**: Spreadsheet Quick Calculate – Add, Multiply, Subtract, Divide & Percent Formulas in One Running API
 
-*Boost productivity with bulk calculations across entire columns, rows, or tables without writing a single formula.*
+_Boost productivity with bulk calculations across entire columns, rows, or tables without writing a single formula._
 
-- **Basic math**: add, subtract, multiply or divide every cell in a range by any number  
-- **Percentages**: increase/decrease by %, or find % of a number (e.g. +15%, -8%, 20% of…)  
-- **Bulk**: apply to thousands of cells instantly—no drag‑fill, no array formula, no VBA  
+- **Basic math**: add, subtract, multiply or divide every cell in a range by any number
+- **Percentages**: increase/decrease by %, or find % of a number (e.g. +15%, -8%, 20% of…)
+- **Bulk**: apply to thousands of cells instantly—no drag‑fill, no array formula, no VBA
 
 | **Calculate Operation** | Description |
-| :- | :- |
-| **Add** | + |
-| **Subtract** | - |
-| **Multiply** | * |
-| **Divide** | / |
-| **Percentage** | % |
+| :---------------------- | :---------- |
+| **Add**                 | +           |
+| **Subtract**            | -           |
+| **Multiply**            | \*          |
+| **Divide**              | /           |
+| **Percentage**          | %           |
 
 ## **Math Calculate API**
 
@@ -34,54 +34,54 @@ PUT https://api.aspose.cloud/v4.0/cells/calculate/math
 
 ### **Request Parameters:**
 
-| Parameter Name | Type | Path/Query String/HTTP Body | Description |
-| :- | :- | :- |:- |
-| Spreadsheet | File | FormData | Upload the spreadsheet file for processing. |
-| operation | String | Query | The mathematical operation to perform (Add, Subtract, Multiply, Divide, and Percentage). |
-| value | String | Query | A value to use in the calculation, if applicable. |
-| worksheet | String | Query | The name of the worksheet to operate on. |
-| range | String | Query | The range of cells to include in the calculation. |
-| region | String | Query | Defines the specific region of the spreadsheet. |
-| password | String | Query | The password for opening the spreadsheet file, if protected. |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                              |
+| :------------- | :----- | :-------------------------- | :--------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                    | Upload the spreadsheet file for processing.                                              |
+| operation      | String | Query                       | The mathematical operation to perform (Add, Subtract, Multiply, Divide, and Percentage). |
+| value          | String | Query                       | A value to use in the calculation, if applicable.                                        |
+| worksheet      | String | Query                       | The name of the worksheet to operate on.                                                 |
+| range          | String | Query                       | The range of cells to include in the calculation.                                        |
+| region         | String | Query                       | The spreadsheet region setting.                                                          |
+| password       | String | Query                       | The password for opening the spreadsheet file, if protected.                             |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream",
-            "Name": "file"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream",
+      "Name": "file"
     }
+  }
 ]
 ```
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
-- **500 Server Error**: The spreadsheet encountered an issue retrieving calculation data.  
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
+- **404 Not Found**: The spreadsheet file is not accessible.
+- **500 Server Error**: The spreadsheet encountered an issue retrieving calculation data.
 
 ## Where should we use the Math Calculate API?
 
-- Finance: add 13% VAT to an entire column of purchase prices.  
-- Inventory: multiply kg column by 2.2046 to bulk‑convert to pounds.  
-- Payroll: add a flat bonus of 1,000 to the bonus column for all staff.  
-- FX conversion: divide sales column by live exchange rate to get USD amounts.  
-- Grading: subtract 5 points from every student score for attendance penalty.  
-- E‑commerce: apply a 15% promotional discount by reducing product prices in one click.  
+- Finance: add 13% VAT to an entire column of purchase prices.
+- Inventory: multiply kg column by 2.2046 to bulk‑convert to pounds.
+- Payroll: add a flat bonus of 1,000 to the bonus column for all staff.
+- FX conversion: divide sales column by live exchange rate to get USD amounts.
+- Grading: subtract 5 points from every student score for attendance penalty.
+- E‑commerce: apply a 15% promotional discount by reducing product prices in one click.
 
 ## Why should you use the Math Calculate API?
 
-- **Fast Excel calculations** – finish month‑end reports in seconds.  
-- **Bulk percentage increase Excel** – update prices, forecasts, commissions in one click.  
-- **Add same number to entire column** – inventory, currency conversion, unit conversion.  
-- **Excel without formulas** – non‑technical users love the simplicity.  
-- Development can be quickly completed through the existing SDK.  
+- **Fast Excel calculations** – finish month‑end reports in seconds.
+- **Bulk percentage increase Excel** – update prices, forecasts, commissions in one click.
+- **Add same number to entire column** – inventory, currency conversion, unit conversion.
+- **Excel without formulas** – non‑technical users love the simplicity.
+- Development can be quickly completed through the existing SDK.
 
 ## How to Use the Math Calculate API with SDKs
 

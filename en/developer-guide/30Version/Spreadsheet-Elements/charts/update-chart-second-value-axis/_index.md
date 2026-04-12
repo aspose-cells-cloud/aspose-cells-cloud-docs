@@ -15,16 +15,16 @@ This REST API updates the second value axis of a chart.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type   | Location | Description                                           |
-|----------------|--------|----------|-------------------------------------------------------|
-| name           | string | path     | Name of the Excel file.                               |
-| sheetName      | string | path     | Name of the worksheet containing the chart.           |
-| chartIndex     | integer| path     | Zero‑based index of the chart to modify.              |
-| axis           | object | body     | Settings for the second value axis.                   |
-| folder         | string | query    | Folder path in storage where the file is located.    |
-| storageName    | string | query    | Name of the storage service.                          |
+| Parameter Name | Type    | Location | Description                                       |
+| -------------- | ------- | -------- | ------------------------------------------------- |
+| name           | string  | path     | Name of the Excel file.                           |
+| sheetName      | string  | path     | Name of the worksheet containing the chart.       |
+| chartIndex     | integer | path     | Zero‑based index of the chart to modify.          |
+| axis           | object  | body     | Settings for the second value axis.               |
+| folder         | string  | query    | Folder path in storage where the file is located. |
+| storageName    | string  | query    | Name of the storage service.                      |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostChartSecondValueAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

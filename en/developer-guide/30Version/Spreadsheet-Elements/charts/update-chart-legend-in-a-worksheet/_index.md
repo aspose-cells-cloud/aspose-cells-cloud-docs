@@ -16,16 +16,16 @@ This REST API updates a chart legend.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type    | Location | Description                                 |
-|----------------|---------|----------|---------------------------------------------|
-| name           | string  | path     | Workbook name.                              |
-| sheetName      | string  | path     | Worksheet name.                             |
-| chartIndex     | integer | path     | Index of the chart to modify.               |
+| Parameter Name | Type    | Location | Description                                   |
+| -------------- | ------- | -------- | --------------------------------------------- |
+| name           | string  | path     | Workbook name.                                |
+| sheetName      | string  | path     | Worksheet name.                               |
+| chartIndex     | integer | path     | Index of the chart to modify.                 |
 | legend         | object  | body     | JSON object that defines the legend settings. |
-| folder         | string  | query    | Folder that contains the workbook.          |
-| storageName    | string  | query    | Name of the storage.                        |
+| folder         | string  | query    | Folder that contains the workbook.            |
+| storageName    | string  | query    | Name of the storage.                          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

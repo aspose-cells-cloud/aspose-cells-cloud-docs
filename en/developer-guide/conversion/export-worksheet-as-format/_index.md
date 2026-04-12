@@ -12,12 +12,9 @@ weight: 100
 
 Export a cloud spreadsheet/Excel worksheet to another format file using the Aspose.Cells Cloud Web API.
 
-**Authentication**  
-All calls to the Aspose.Cells Cloud API require a valid OAuth 2.0 access token. Obtain a token by sending a POST request to `https://api.aspose.cloud/connect/token` with your client‑id and client‑secret. Include the token in the `Authorization: Bearer <access_token>` header of every request.
-
 ## **Export Worksheet as Format API**
 
-### API Endpoint
+### Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}
@@ -27,26 +24,18 @@ GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}
 
 All path parameters are required; query parameters are optional unless noted.
 
-| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                      |
-| :------------- | :----- | :------------------------- | :-------------------------------------------------------------------------------- |
-| **name**           | String | Path                       | (Required) The name of the workbook file to be retrieved.                        |
-| **worksheet**      | String | Path                       | (Required) The specific worksheet to convert.                                    |
-| **format**         | String | Query                      | (Required) The desired output format (e.g., `png`, `pdf`, `svg`).                |
-| **folder**         | String | Query                      | (Optional) The folder path where the workbook is stored. The default is `null`. |
-| **storageName**    | String | Query                      | (Optional) The name of the custom cloud storage. Use default storage if omitted. |
-| **outPath**        | String | Query                      | (Optional) The output folder path. The default is `null`.                        |
-| **outStorageName** | String | Query                      | (Optional) Output file storage name.                                             |
-| **fontsLocation**  | String | Query                      | (Optional) Specify custom fonts if needed.                                       |
-| **region**         | String | Query                      | (Optional) The spreadsheet region setting.                                       |
-| **password**       | String | Query                      | (Optional) The password for accessing the spreadsheet file.                      |
-
-### Sample Request (cURL)
-
-```bash
-curl -X GET "https://api.aspose.cloud/v4.0/cells/Book1.xlsx/worksheets/Sheet1?format=pdf" \
-     -H "Authorization: Bearer <access_token>" \
-     -o Sheet1.pdf
-```
+| Parameter Name     | Type   | Path/Query String/HTTPBody | Description                                                                                                                                        |
+| :----------------- | :----- | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**           | String | Path                       | (Required) The name of the workbook file to be retrieved.                                                                                          |
+| **worksheet**      | String | Path                       | (Required) The specific worksheet to convert.                                                                                                      |
+| **format**         | String | Query                      | (Required) The desired output format (e.g., `png`, `pdf`, `svg`).                                                                                  |
+| **folder**         | String | Query                      | (Optional) The folder path where the workbook is stored. The default is `null`.                                                                    |
+| **storageName**    | String | Query                      | (Optional) The name of the custom cloud storage. Use default storage if omitted.                                                                   |
+| **outPath**        | String | Query                      | (Optional) The output folder path. The default is `null`.                                                                                          |
+| **outStorageName** | String | Query                      | (Optional) Output file storage name.                                                                                                               |
+| **fontsLocation**  | String | Query                      | (Optional) Specify custom fonts if needed.                                                                                                         |
+| **region**         | String | Query                      | (Optional) Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| **password**       | String | Query                      | (Optional) The password for accessing the spreadsheet file.                                                                                        |
 
 ### **Response**
 
@@ -64,23 +53,23 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/Book1.xlsx/worksheets/Sheet1?fo
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized** – Invalid or missing access token.  
-- **404 Not Found** – The spreadsheet file is not accessible.  
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized** – Invalid or missing access token.
+- **404 Not Found** – The spreadsheet file is not accessible.
 - **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
 
 ## **Where Should You Use the Export Worksheet to Another Format API?**
 
-- **Legacy System Migration** – Convert thousands of legacy XLS files to XLSX for modern systems.  
-- **Archive Standardization** – Normalize various spreadsheet formats (XLS, XLSM, ODS, CSV) to a single format for archival.  
-- **Office Suite Interoperability** – Convert Excel files to formats compatible with LibreOffice, Google Sheets, or Apple Numbers.  
-- **Data Source Normalization** – Convert various spreadsheet formats to CSV or JSON for database ingestion.  
+- **Legacy System Migration** – Convert thousands of legacy XLS files to XLSX for modern systems.
+- **Archive Standardization** – Normalize various spreadsheet formats (XLS, XLSM, ODS, CSV) to a single format for archival.
+- **Office Suite Interoperability** – Convert Excel files to formats compatible with LibreOffice, Google Sheets, or Apple Numbers.
+- **Data Source Normalization** – Convert various spreadsheet formats to CSV or JSON for database ingestion.
 - **Web Publishing** – Convert financial models to HTML for web display.
 
 ## Why Use the Export Worksheet to Another Format API?
 
-- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.  
-- **Cost‑Effective** – You can convert worksheets without first uploading the workbook, which saves storage space and reduces costs.  
+- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.
+- **Cost‑Effective** – You can convert worksheets without first uploading the workbook, which saves storage space and reduces costs.
 - **Pure Data Extraction Without Formatting** – Retrieve raw data while omitting visual styling.
 
 ## How to Use the Export Spreadsheet Worksheet as Format API with SDKs?

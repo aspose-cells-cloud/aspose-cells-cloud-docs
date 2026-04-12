@@ -18,19 +18,19 @@ This REST API returns a list of cells within a range identified by a named range
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type    | Location                     | Description                                                                                     |
-|----------------|---------|------------------------------|-------------------------------------------------------------------------------------------------|
-| name           | string  | path                         | The workbook file name.                                                                         |
-| sheetName      | string  | path                         | The worksheet name within the workbook.                                                         |
-| namerange      | string  | query                        | The named range to retrieve, e.g., `A1:B2` or `range_name1`.                                   |
-| firstRow       | integer | query                        | Zero‑based index of the first row of the range (used when `namerange` is not supplied).        |
-| firstColumn    | integer | query                        | Zero‑based index of the first column of the range (used when `namerange` is not supplied).     |
-| rowCount       | integer | query                        | Number of rows to include in the range.                                                         |
-| columnCount    | integer | query                        | Number of columns to include in the range.                                                      |
-| folder         | string  | query                        | The folder that contains the workbook.                                                          |
-| storageName    | string  | query                        | The name of the cloud storage where the workbook resides.                                      |
+| Parameter Name | Type    | Location | Description                                                                                |
+| -------------- | ------- | -------- | ------------------------------------------------------------------------------------------ |
+| name           | string  | path     | The workbook file name.                                                                    |
+| sheetName      | string  | path     | The worksheet name within the workbook.                                                    |
+| namerange      | string  | query    | The named range to retrieve, e.g., `A1:B2` or `range_name1`.                               |
+| firstRow       | integer | query    | Zero‑based index of the first row of the range (used when `namerange` is not supplied).    |
+| firstColumn    | integer | query    | Zero‑based index of the first column of the range (used when `namerange` is not supplied). |
+| rowCount       | integer | query    | Number of rows to include in the range.                                                    |
+| columnCount    | integer | query    | Number of columns to include in the range.                                                 |
+| folder         | string  | query    | The folder that contains the workbook.                                                     |
+| storageName    | string  | query    | The name of the cloud storage where the workbook resides.                                  |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

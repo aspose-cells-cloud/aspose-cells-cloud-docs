@@ -20,22 +20,14 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivotta
 
 ### Request parameters
 
-| Parameter Name | Type   | Location | Description                                                         |
-|----------------|--------|----------|---------------------------------------------------------------------|
-| **name**       | string | path     | **Required.** The name of the Excel file.                           |
-| **sheetName**  | string | path     | **Required.** The name of the worksheet.                            |
-| **folder**     | string | query    | The folder that contains the file (optional).                       |
-| **storageName**| string | query    | The storage name to use (optional).                                 |
+| Parameter Name  | Type   | Location | Description                                   |
+| --------------- | ------ | -------- | --------------------------------------------- |
+| **name**        | string | path     | **Required.** The name of the Excel file.     |
+| **sheetName**   | string | path     | **Required.** The name of the worksheet.      |
+| **folder**      | string | query    | The folder that contains the file (optional). |
+| **storageName** | string | query    | The storage name to use (optional).           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTables) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
-
-### Authentication
-
-All calls must be made over TLS 1.2 or higher. Obtain a JWT access token with the appropriate scope and include it in the `Authorization` header:
-
-```
-Authorization: Bearer <jwt token>
-```
 
 ### cURL example
 
@@ -58,12 +50,12 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 
 ### Error handling
 
-| HTTP Status | Meaning                              | Example error payload |
-|-------------|--------------------------------------|-----------------------|
-| 400         | Bad Request – missing or invalid parameters | `{ "Code": 400, "Message": "Missing required parameter 'name'." }` |
-| 401         | Unauthorized – invalid or expired JWT | `{ "Code": 401, "Message": "Invalid authentication token." }` |
-| 404         | Not Found – file or worksheet does not exist | `{ "Code": 404, "Message": "Worksheet not found." }` |
-| 500         | Internal Server Error – unexpected failure | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+| HTTP Status | Meaning                                      | Example error payload                                              |
+| ----------- | -------------------------------------------- | ------------------------------------------------------------------ |
+| 400         | Bad Request – missing or invalid parameters  | `{ "Code": 400, "Message": "Missing required parameter 'name'." }` |
+| 401         | Unauthorized – invalid or expired JWT        | `{ "Code": 401, "Message": "Invalid authentication token." }`      |
+| 404         | Not Found – file or worksheet does not exist | `{ "Code": 404, "Message": "Worksheet not found." }`               |
+| 500         | Internal Server Error – unexpected failure   | `{ "Code": 500, "Message": "An unexpected error occurred." }`      |
 
 ## Cloud SDK Family
 

@@ -18,15 +18,15 @@ This REST API retrieves a shape (including its image data or metadata) from an E
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location                     | Description                                            |
-|----------------|--------|------------------------------|--------------------------------------------------------|
-| name           | string | path                         | Name of the Excel document.                            |
-| sheetName      | string | path                         | Name of the worksheet containing the shape.            |
-| shapeindex     | integer| path                         | Zero‑based index of the shape within the worksheet.    |
-| folder         | string | query                        | Folder path where the document is stored.              |
-| storageName    | string | query                        | Name of the storage service.                           |
+| Parameter Name | Type    | Location | Description                                         |
+| -------------- | ------- | -------- | --------------------------------------------------- |
+| name           | string  | path     | Name of the Excel document.                         |
+| sheetName      | string  | path     | Name of the worksheet containing the shape.         |
+| shapeindex     | integer | path     | Zero‑based index of the shape within the worksheet. |
+| folder         | string  | query    | Folder path where the document is stored.           |
+| storageName    | string  | query    | Name of the storage service.                        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShape) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

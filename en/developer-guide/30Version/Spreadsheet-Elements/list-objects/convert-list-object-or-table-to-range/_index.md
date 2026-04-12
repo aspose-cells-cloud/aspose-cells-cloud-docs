@@ -16,33 +16,19 @@ This REST API converts a **ListObject (table)** to a **Range** within an Excel w
 
 ## REST API
 
-### Prerequisites
-- The workbook must already exist in the selected storage.  
-- The `listObjectIndex` must refer to a valid, zero‑based ListObject in the worksheet.  
-- Use API version **v3.0** (released 2024‑03).
-
-### Authentication
-A valid **JWT access token** with the `Cells` scope is required.  
-Obtain the token via the Aspose Cloud OAuth flow (see the [Authentication guide](https://docs.aspose.cloud/authorization/)). Include the token in the `Authorization` header:
-
-```http
-Authorization: Bearer <your‑jwt‑token>
-```
-
-### Request
-
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange
 ```
 
-#### Parameters
-| Name | Type | Location | Required | Default | Description |
-|------|------|----------|----------|---------|-------------|
-| **name** | string | path | Yes | – | The name of the Excel file. |
-| **sheetName** | string | path | Yes | – | The name of the worksheet that contains the ListObject. |
-| **listObjectIndex** | integer | path | Yes | – | Zero‑based index of the ListObject (table) to be converted. |
-| **folder** | string | query | No | – | Folder path where the file is stored. |
-| **storageName** | string | query | No | – | Name of the storage service. |
+### Request Parameters
+
+| Name                | Type    | Location | Required | Default | Description                                                 |
+| ------------------- | ------- | -------- | -------- | ------- | ----------------------------------------------------------- |
+| **name**            | string  | path     | Yes      | –       | The name of the Excel file.                                 |
+| **sheetName**       | string  | path     | Yes      | –       | The name of the worksheet that contains the ListObject.     |
+| **listObjectIndex** | integer | path     | Yes      | –       | Zero‑based index of the ListObject (table) to be converted. |
+| **folder**          | string  | query    | No       | –       | Folder path where the file is stored.                       |
+| **storageName**     | string  | query    | No       | –       | Name of the storage service.                                |
 
 ### cURL Example (Request)
 
@@ -77,25 +63,25 @@ The API returns a **200 OK** response with details of the newly created range.
 }
 ```
 
-| Field | Type | Description |
-|-------|------|-------------|
-| **Code** | integer | HTTP‑like status code (200 indicates success). |
-| **Status** | string | Textual status message. |
-| **RangeName** | string | The name assigned to the created range. |
-| **Address** | string | Full address of the range, including sheet name. |
-| **FirstRow** | integer | Zero‑based index of the first row in the range. |
+| Field           | Type    | Description                                        |
+| --------------- | ------- | -------------------------------------------------- |
+| **Code**        | integer | HTTP‑like status code (200 indicates success).     |
+| **Status**      | string  | Textual status message.                            |
+| **RangeName**   | string  | The name assigned to the created range.            |
+| **Address**     | string  | Full address of the range, including sheet name.   |
+| **FirstRow**    | integer | Zero‑based index of the first row in the range.    |
 | **FirstColumn** | integer | Zero‑based index of the first column in the range. |
-| **RowCount** | integer | Number of rows in the range. |
-| **ColumnCount** | integer | Number of columns in the range. |
+| **RowCount**    | integer | Number of rows in the range.                       |
+| **ColumnCount** | integer | Number of columns in the range.                    |
 
 ### Error Codes
 
-| Code | Meaning | When it occurs |
-|------|---------|----------------|
-| 400 | Bad Request | The `listObjectIndex` is out of range or required parameters are missing. |
-| 401 | Unauthorized | Missing or invalid JWT token. |
-| 404 | Not Found | The specified workbook, worksheet, or ListObject does not exist. |
-| 500 | Internal Server Error | An unexpected server‑side error occurred. |
+| Code | Meaning               | When it occurs                                                            |
+| ---- | --------------------- | ------------------------------------------------------------------------- |
+| 400  | Bad Request           | The `listObjectIndex` is out of range or required parameters are missing. |
+| 401  | Unauthorized          | Missing or invalid JWT token.                                             |
+| 404  | Not Found             | The specified workbook, worksheet, or ListObject does not exist.          |
+| 500  | Internal Server Error | An unexpected server‑side error occurred.                                 |
 
 {{< tab tabNum="12" >}}
 
@@ -173,21 +159,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## FAQ
-
-**Q: How can I convert a ListObject to a Range using Aspose.Cells Cloud?**  
-A: Call the `POST /cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange` endpoint with the workbook name, worksheet name, and zero‑based ListObject index in the URL. Include a valid JWT token in the `Authorization` header. The response contains the details of the created range.
-
-**Q: What authentication is required for the ConvertToRange call?**  
-A: A JWT access token that includes the `Cells` scope. Obtain the token via the Aspose Cloud OAuth flow and pass it in the `Authorization: Bearer <token>` header.
-
-**Q: What error codes can I expect if the ListObject index is invalid?**  
-A: The API returns **400 Bad Request** for an out‑of‑range index, **401 Unauthorized** for missing or invalid tokens, and **404 Not Found** if the workbook or worksheet does not exist.
-
-## Glossary
-
-- **ListObject** – An Excel table that can be addressed by a zero‑based index.  
-- **Range** – A contiguous block of cells identified by its address (e.g., `A1:C10`).  
-
----

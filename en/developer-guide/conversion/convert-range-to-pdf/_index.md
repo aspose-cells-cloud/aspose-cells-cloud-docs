@@ -14,7 +14,7 @@ Export a range of data from a local Excel file to a [PDF](https://docs.fileforma
 
 ## **Convert Range to PDF API**
 
-### API Endpoint
+### Web API
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/range/pdf
@@ -49,26 +49,26 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/pdf
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
+- **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.
 
 ## **Where Should You Use the Convert Range to PDF API?**
 
-- **Financial Statements**: Convert balance sheets, income statements (specific ranges) to PDF for audit‑ready documentation.  
-- **Sales Reports**: Transform sales dashboards or commission calculations to distributable PDFs.  
-- **Operational Metrics**: Export KPI tables and performance metrics as formal PDF reports.  
-- **Contractual Data**: Export pricing tables and service‑level agreements from spreadsheets to PDF attachments.  
-- **Audit Trails**: Preserve financial data ranges as uneditable PDF evidence.  
-- **Portfolio Summaries**: Export investment performance ranges as client‑ready PDF statements.  
-- **Quality Control Reports**: Export inspection data ranges to PDF for compliance records.  
+- **Financial Statements**: Convert balance sheets, income statements (specific ranges) to PDF for audit‑ready documentation.
+- **Sales Reports**: Transform sales dashboards or commission calculations to distributable PDFs.
+- **Operational Metrics**: Export KPI tables and performance metrics as formal PDF reports.
+- **Contractual Data**: Export pricing tables and service‑level agreements from spreadsheets to PDF attachments.
+- **Audit Trails**: Preserve financial data ranges as uneditable PDF evidence.
+- **Portfolio Summaries**: Export investment performance ranges as client‑ready PDF statements.
+- **Quality Control Reports**: Export inspection data ranges to PDF for compliance records.
 - **Inventory Summaries**: Transform stock‑level tables to PDF for management review.
 
 ## Why Should You Use the Convert Range to PDF API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development and comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.  
-- **Cost‑Effective**: You can convert range data without first uploading the entire workbook, saving storage space and reducing costs.  
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development and comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.
+- **Cost‑Effective**: You can convert range data without first uploading the entire workbook, saving storage space and reducing costs.
 - **Preserves Complex Excel Formatting** in a universally accessible PDF format.
 
 ## How to Use the Convert Range to PDF API with SDKs?

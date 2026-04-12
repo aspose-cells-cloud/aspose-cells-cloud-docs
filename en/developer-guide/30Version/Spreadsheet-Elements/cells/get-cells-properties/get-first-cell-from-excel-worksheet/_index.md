@@ -9,8 +9,6 @@ description: "Learn how to retrieve the first cell (A1) of a worksheet using Asp
 
 This REST API shows how to retrieve the **first cell** in an Excel file when the `cellOrMethodName` parameter is set to `firstcell`.
 
-The request requires a valid Aspose Cloud authentication token. Include the token in the `Authorization` header as `Bearer <access_token>`.
-
 - **cURL Example**
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}

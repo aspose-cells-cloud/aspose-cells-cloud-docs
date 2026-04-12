@@ -1,32 +1,28 @@
----  
-title: "Delete metadata from Excel files"  
-second_title: "Document"  
-linktitle: "Delete without using storage"  
-type: docs  
-url: /metadata/delete/  
-keywords: "delete metadata, Excel, Aspose.Cells Cloud, REST API"  
-description: "Learn how to delete workbook metadata using the Aspose.Cells Cloud REST API. Includes HTTPS endpoint, authentication steps, request parameters, a cURL example, and SDK code samples."  
-weight: 55  
----  
+---
+title: "Delete metadata from Excel files"
+second_title: "Document"
+linktitle: "Delete without using storage"
+type: docs
+url: /metadata/delete/
+keywords: "delete metadata, Excel, Aspose.Cells Cloud, REST API"
+description: "Learn how to delete workbook metadata using the Aspose.Cells Cloud REST API. Includes HTTPS endpoint, authentication steps, request parameters, a cURL example, and SDK code samples."
+weight: 55
+---
 
 This REST API deletes **metadata** from one or more Excel files. It removes workbook properties such as author, title, and custom data, and returns the cleaned files.
 
-**Prerequisites:** An active Aspose Cloud account, a valid JWT bearer token, and (optionally) the latest Aspose.Cells Cloud SDK.
-
-**Authentication:** Include the header `Authorization: Bearer <jwt token>` in every request.
-
-## REST API  
+## REST API
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/metadata/delete
-```  
+```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location  | Description                                          |
-|----------------|--------|-----------|------------------------------------------------------|
-| file           | file   | formData  | Excel file to upload for **metadata** deletion       |
-| type           | string | query     | Operation type; set to **all** to delete all **metadata** |
+| Parameter Name | Type   | Location | Description                                               |
+| -------------- | ------ | -------- | --------------------------------------------------------- |
+| file           | file   | formData | Excel file to upload for **metadata** deletion            |
+| type           | string | query    | Operation type; set to **all** to delete all **metadata** |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/DeleteMetadata) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -41,7 +37,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/metadata/delete?type=all" \
   -X POST \
   -H "Authorization: Bearer <jwt token>" \
   -F "file=@file1.xlsx"
-```  
+```
 
 {{< /tab >}}
 
@@ -57,7 +53,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/metadata/delete?type=all" \
     }
   ]
 }
-```  
+```
 
 {{< /tab >}}
 
@@ -65,13 +61,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/metadata/delete?type=all" \
 
 **Error responses** may include:
 
-* **400 Bad Request** – missing file or invalid `type` value.  
-* **401 Unauthorized** – invalid or missing JWT token.  
-* **500 Internal Server Error** – server‑side processing error.  
+- **400 Bad Request** – missing file or invalid `type` value.
+- **401 Unauthorized** – invalid or missing JWT token.
+- **500 Internal Server Error** – server‑side processing error.
 
 The API returns a JSON object containing an `Error` field with details for each case.
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

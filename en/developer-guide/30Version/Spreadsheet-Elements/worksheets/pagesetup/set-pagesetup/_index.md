@@ -17,15 +17,15 @@ This REST API sets the page setup for an Excel worksheet.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location                     | Description                              |
-|----------------|--------|------------------------------|------------------------------------------|
-| name           | string | path                         | Document name.                           |
-| sheetName      | string | path                         | The worksheet name.                      |
-| pageSetup      | object | body                         | Page‑setup description.                  |
-| folder         | string | query                        | Document folder.                         |
-| storageName    | string | query                        | Storage name.                            |
+| Parameter Name | Type   | Location | Description             |
+| -------------- | ------ | -------- | ----------------------- |
+| name           | string | path     | Document name.          |
+| sheetName      | string | path     | The worksheet name.     |
+| pageSetup      | object | body     | Page‑setup description. |
+| folder         | string | query    | Document folder.        |
+| storageName    | string | query    | Storage name.           |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/PageSetup/PostPageSetup) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

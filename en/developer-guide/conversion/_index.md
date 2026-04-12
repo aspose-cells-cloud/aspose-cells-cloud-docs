@@ -53,11 +53,11 @@ Easily achieve multi‑format spreadsheet conversion using Aspose.Cells Cloud AP
 ## Format Support Matrix
 
 | Target Format | Range | Chart | Table | Worksheet | Spreadsheet |
-| :- | :- | :- | :- | :- | :- |
-| **PDF** | Yes | Yes | Yes | Yes | Yes |
-| **Image** | Yes | Yes | Yes | Yes | Yes |
-| **HTML** | Yes | Yes | Yes | Yes | Yes |
-| **CSV** | Yes | No | Yes | Yes | Yes |
-| **JSON** | Yes | No | Yes | Yes | Yes |
-| **Markdown** | Yes | No | Yes | Yes | Yes |
-| **XML** | Yes | Yes | No | Yes | Yes |
+| :------------ | :---- | :---- | :---- | :-------- | :---------- |
+| **PDF**       | Yes   | Yes   | Yes   | Yes       | Yes         |
+| **Image**     | Yes   | Yes   | Yes   | Yes       | Yes         |
+| **HTML**      | Yes   | Yes   | Yes   | Yes       | Yes         |
+| **CSV**       | Yes   | No    | Yes   | Yes       | Yes         |
+| **JSON**      | Yes   | No    | Yes   | Yes       | Yes         |
+| **Markdown**  | Yes   | No    | Yes   | Yes       | Yes         |
+| **XML**       | Yes   | Yes   | No    | Yes       | Yes         |

@@ -16,12 +16,6 @@ This REST API adds a **date filter** to an Excel worksheet.
 
 ## REST API
 
-### Prerequisites
-- **Authentication** – Obtain a JWT token via the Aspose Cloud OAuth flow and include it in the `Authorization` header as `Bearer <jwt token>`.  
-- **API version** – The endpoint used below targets **v3.0** of the Aspose.Cells Cloud API.  
-- **Supported SDKs** – You may also call the operation through any of the Aspose.Cells Cloud SDKs (C#, Java, Python, etc.).
-
-### Endpoint
 ```bash
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 ```
@@ -30,23 +24,23 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
 
 The request parameters are listed below:
 
-| Parameter Name          | Type    | Location | Description |
-|-------------------------|---------|----------|-------------|
-| **name**                | string  | Path     | The workbook name. |
-| **sheetName**           | string  | Path     | The worksheet name. |
-| **range**               | string  | Query    | Excel range to which the filter is applied (e.g., `A1:B1`). |
-| **fieldIndex**          | integer | Query    | Zero‑based index of the column to filter. |
-| **dateTimeGroupingType**| string  | Query    | Grouping type for the date/time filter. Allowed values are `Day`, `Hour`, `Minute`, `Month`, `Second`, `Year`. Values are case‑sensitive; the default is `Day`. |
-| **year**                | integer | Query    | Year component of the filter value. |
-| **month**               | integer | Query    | Month component of the filter value. |
-| **day**                 | integer | Query    | Day component of the filter value. |
-| **hour**                | integer | Query    | Hour component of the filter value. |
-| **minute**              | integer | Query    | Minute component of the filter value. |
-| **second**              | integer | Query    | Second component of the filter value. |
-| **matchBlanks**         | boolean | Query    | Include blank cells (`true` or `false`). |
-| **refresh**             | boolean | Query    | Refresh the filter after applying (`true` or `false`). |
-| **folder**              | string  | Query    | Folder path of the original workbook. |
-| **storageName**         | string  | Query    | Name of the storage service. |
+| Parameter Name           | Type    | Location | Description                                                                                                                                                     |
+| ------------------------ | ------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**                 | string  | Path     | The workbook name.                                                                                                                                              |
+| **sheetName**            | string  | Path     | The worksheet name.                                                                                                                                             |
+| **range**                | string  | Query    | Excel range to which the filter is applied (e.g., `A1:B1`).                                                                                                     |
+| **fieldIndex**           | integer | Query    | Zero‑based index of the column to filter.                                                                                                                       |
+| **dateTimeGroupingType** | string  | Query    | Grouping type for the date/time filter. Allowed values are `Day`, `Hour`, `Minute`, `Month`, `Second`, `Year`. Values are case‑sensitive; the default is `Day`. |
+| **year**                 | integer | Query    | Year component of the filter value.                                                                                                                             |
+| **month**                | integer | Query    | Month component of the filter value.                                                                                                                            |
+| **day**                  | integer | Query    | Day component of the filter value.                                                                                                                              |
+| **hour**                 | integer | Query    | Hour component of the filter value.                                                                                                                             |
+| **minute**               | integer | Query    | Minute component of the filter value.                                                                                                                           |
+| **second**               | integer | Query    | Second component of the filter value.                                                                                                                           |
+| **matchBlanks**          | boolean | Query    | Include blank cells (`true` or `false`).                                                                                                                        |
+| **refresh**              | boolean | Query    | Refresh the filter after applying (`true` or `false`).                                                                                                          |
+| **folder**               | string  | Query    | Folder path of the original workbook.                                                                                                                           |
+| **storageName**          | string  | Query    | Name of the storage service.                                                                                                                                    |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -80,16 +74,17 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 {{< /tabs >}}
 
 ### Error responses
-| HTTP Status | Code | Message | Description |
-|-------------|------|---------|-------------|
-| 400 Bad Request | 400 | Invalid range format. Expected A1:B1. | The `range` query parameter is malformed or missing. |
-| 401 Unauthorized | 401 | Access token is missing or invalid. | Authentication failed; obtain a valid JWT token. |
-| 404 Not Found | 404 | Workbook or worksheet not found. | The specified `name` or `sheetName` does not exist. |
-| 500 Internal Server Error | 500 | Unexpected server error. | An unhandled exception occurred on the server. |
+
+| HTTP Status               | Code | Message                               | Description                                          |
+| ------------------------- | ---- | ------------------------------------- | ---------------------------------------------------- |
+| 400 Bad Request           | 400  | Invalid range format. Expected A1:B1. | The `range` query parameter is malformed or missing. |
+| 401 Unauthorized          | 401  | Access token is missing or invalid.   | Authentication failed; obtain a valid JWT token.     |
+| 404 Not Found             | 404  | Workbook or worksheet not found.      | The specified `name` or `sheetName` does not exist.  |
+| 500 Internal Server Error | 500  | Unexpected server error.              | An unhandled exception occurred on the server.       |
 
 The successful response contains two fields:
 
-- **Code** – HTTP status code returned by the API (200 for success).  
+- **Code** – HTTP status code returned by the API (200 for success).
 - **Status** – Textual description of the result.
 
 ## Cloud SDK Family

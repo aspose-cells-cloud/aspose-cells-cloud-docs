@@ -18,15 +18,15 @@ This REST API renames an Excel worksheet.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/rename
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                 |
-|----------------|--------|----------|---------------------------------------------|
-| name           | string | path     | The name of the Excel file.                 |
-| sheetName      | string | path     | The current name of the worksheet to rename.|
-| newname        | string | query    | The new name for the worksheet.             |
-| folder         | string | query    | Folder path in storage (optional).          |
-| storageName    | string | query    | Name of the storage (optional).             |
+| Parameter Name | Type   | Location | Description                                  |
+| -------------- | ------ | -------- | -------------------------------------------- |
+| name           | string | path     | The name of the Excel file.                  |
+| sheetName      | string | path     | The current name of the worksheet to rename. |
+| newname        | string | query    | The new name for the worksheet.              |
+| folder         | string | query    | Folder path in storage (optional).           |
+| storageName    | string | query    | Name of the storage (optional).              |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostRenameWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

@@ -1,61 +1,38 @@
----  
-title: "Delete a Column on an Excel Worksheet"  
-second_title: "Document"  
-linktitle: "Delete"  
-type: docs  
-url: /columns/delete/  
-aliases: [/delete-column-from-an-excel-worksheet/,/delete-column-from-a-worksheet/]  
-keywords: "Delete a Column, Aspose.Cells Cloud, Excel API, REST, Spreadsheet"  
-description: "Learn how to delete one or more columns from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request syntax, required parameters, authentication, error handling, and sample code in multiple SDKs."  
-weight: 80  
----  
+---
+title: "Delete a Column on an Excel Worksheet"
+second_title: "Document"
+linktitle: "Delete"
+type: docs
+url: /columns/delete/
+aliases:
+  [/delete-column-from-an-excel-worksheet/, /delete-column-from-a-worksheet/]
+keywords: "Delete a Column, Aspose.Cells Cloud, Excel API, REST, Spreadsheet"
+description: "Learn how to delete one or more columns from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request syntax, required parameters, authentication, error handling, and sample code in multiple SDKs."
+weight: 80
+---
 
 This REST API deletes **one or more columns** in an Excel worksheet.
 
-### Quick checklist  
-
-1️⃣ Obtain an OAuth 2.0 access token.  
-2️⃣ Build the request URL using the correct path and query parameters.  
-3️⃣ Add the required `Authorization: Bearer <access_token>` header.  
-4️⃣ Execute the `DELETE` request.  
-5️⃣ Verify the response (200 OK on success, see error‑response table for failures).  
-
-## REST API  
+## REST API
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
-```  
+```
 
-**Prerequisites**  
+### Request parameters
 
-* A valid Aspose Cloud client ID and client secret.  
-* An access token obtained from `POST https://api.aspose.cloud/connect/token`.  
+| Parameter Name      | Type    | Location | Required | Description                                                                                      |
+| ------------------- | ------- | -------- | -------- | ------------------------------------------------------------------------------------------------ |
+| **name**            | string  | path     | Yes      | The workbook file name.                                                                          |
+| **sheetName**       | string  | path     | Yes      | The worksheet name.                                                                              |
+| **columnIndex**     | integer | path     | Yes      | Zero‑based index of the first column to delete.                                                  |
+| **startColumn**     | integer | query    | No       | Zero‑based index of the column where the deletion starts (defaults to `columnIndex`).            |
+| **totalColumns**    | integer | query    | No       | Number of columns to delete. If omitted, only the column identified by `columnIndex` is removed. |
+| **updateReference** | boolean | query    | No       | When `true`, cell references (including formulas) are updated automatically after the deletion.  |
+| **folder**          | string  | query    | No       | Path to the folder that contains the workbook.                                                   |
+| **storageName**     | string  | query    | No       | Name of the Aspose Cloud storage service.                                                        |
 
-**Authentication**  
-
-All requests must include the header:  
-
-```http
-Authorization: Bearer <access_token>
-Accept: application/json
-```  
-
-The token is valid for the period returned by the authentication service.
-
-### Request parameters  
-
-| Parameter Name   | Type    | Location | Required | Description |
-|------------------|---------|----------|----------|-------------|
-| **name**         | string  | path     | Yes      | The workbook file name. |
-| **sheetName**    | string  | path     | Yes      | The worksheet name. |
-| **columnIndex**  | integer | path     | Yes      | Zero‑based index of the first column to delete. |
-| **startColumn**  | integer | query    | No       | Zero‑based index of the column where the deletion starts (defaults to `columnIndex`). |
-| **totalColumns** | integer | query    | No       | Number of columns to delete. If omitted, only the column identified by `columnIndex` is removed. |
-| **updateReference** | boolean | query | No | When `true`, cell references (including formulas) are updated automatically after the deletion. |
-| **folder**       | string  | query    | No       | Path to the folder that contains the workbook. |
-| **storageName**  | string  | query    | No       | Name of the Aspose Cloud storage service. |
-
-### Example request  
+### Example request
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -82,25 +59,19 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/
 
 {{< /tabs >}}
 
-### Responses  
+### Responses
 
-| HTTP Code | Description | Example |
-|-----------|-------------|---------|
-| **200**   | Success – the column(s) were deleted. | `{ "Code": 200, "Status": "OK" }` |
-| **400**   | Bad request – missing or invalid parameters. | `{ "Code": 400, "Message": "Invalid totalColumns value." }` |
-| **401**   | Unauthorized – missing or invalid access token. | `{ "Code": 401, "Message": "Authentication failed." }` |
-| **404**   | Not found – workbook or worksheet does not exist. | `{ "Code": 404, "Message": "Worksheet 'Sheet1' not found." }` |
+| HTTP Code | Description                                                 | Example                                                       |
+| --------- | ----------------------------------------------------------- | ------------------------------------------------------------- |
+| **200**   | Success – the column(s) were deleted.                       | `{ "Code": 200, "Status": "OK" }`                             |
+| **400**   | Bad request – missing or invalid parameters.                | `{ "Code": 400, "Message": "Invalid totalColumns value." }`   |
+| **401**   | Unauthorized – missing or invalid access token.             | `{ "Code": 401, "Message": "Authentication failed." }`        |
+| **404**   | Not found – workbook or worksheet does not exist.           | `{ "Code": 404, "Message": "Worksheet 'Sheet1' not found." }` |
 | **500**   | Internal server error – unexpected condition on the server. | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
-
-### Best‑practice tips  
-
-* **Batch deletion** – Use `startColumn` and `totalColumns` to remove several consecutive columns in one call.  
-* **Reference updating** – Set `updateReference=true` to keep formulas and cell references valid after deletion; otherwise references become `#REF!`.  
-* **Idempotency** – Re‑issuing the same request after a successful deletion returns `200 OK` with no additional effect.  
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetColumns) defines the full programming interface and lets you perform REST interactions directly from a web browser.
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

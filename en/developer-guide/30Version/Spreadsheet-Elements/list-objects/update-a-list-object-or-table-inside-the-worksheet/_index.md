@@ -1,56 +1,37 @@
----  
-title: "Update a List Object in an Excel Worksheet"  
-second_title: "Document"  
-linktitle: "Update"  
-type: docs  
-url: /list-objects/update/  
-aliases:  
-  - /update-a-list-object-or-table-inside-the-worksheet/  
-  - /tables/update/  
-keywords: "update list object, Excel worksheet, Aspose.Cells Cloud, REST API, table, cells API"  
-description: "Learn how to update an Excel table using Aspose.Cells Cloud API (v3.0). Includes endpoint, parameters, sample cURL, error codes, and SDK examples."  
-weight: 20  
----  
+---
+title: "Update a List Object in an Excel Worksheet"
+second_title: "Document"
+linktitle: "Update"
+type: docs
+url: /list-objects/update/
+aliases:
+  - /update-a-list-object-or-table-inside-the-worksheet/
+  - /tables/update/
+keywords: "update list object, Excel worksheet, Aspose.Cells Cloud, REST API, table, cells API"
+description: "Learn how to update an Excel table using Aspose.Cells Cloud API (v3.0). Includes endpoint, parameters, sample cURL, error codes, and SDK examples."
+weight: 20
+---
 
 This REST API updates the properties of a **list object** (table) in an Excel worksheet.
 
-### Key Concepts  
-
-- **ListObject** – a table‑like structure in an Excel worksheet that groups rows and columns and supports sorting, filtering, and styling.  
-- **JWT token** – the authentication token required for every Aspose.Cells Cloud request.  
-
-## Prerequisites  
-
-- API version **v3.0** (latest as of 2024‑06).  
-- A valid **JWT token** (see the *Authentication* section).  
-- The workbook you want to modify must be stored in a supported Aspose storage location.  
-
-## Authentication  
-
-Obtain a JWT token by following the [Authentication guide](https://docs.aspose.cloud/cells/authentication/). Include the token in the `Authorization` header of every request:
-
-```http
-Authorization: Bearer <jwt token>
-```
-
-## Request Body Schema  
+## Request Body Schema
 
 The `listObject` DTO contains the following fields. Only the fields you need to change are required in the request body.
 
-| Field                     | Type    | Required | Description |
-|---------------------------|---------|----------|-------------|
-| **DisplayName**           | string  | optional | The name displayed for the table. |
-| **StartRow** / **StartColumn** | integer | optional | Zero‑based index of the first row/column of the table. |
-| **EndRow** / **EndColumn** | integer | optional | Zero‑based index of the last row/column of the table. |
-| **Range**                 | string  | optional | A‑1 style address that defines the table range (e.g., `A1:D10`). |
-| **ShowHeaderRow**         | boolean | optional | `true` to display the header row. |
-| **ShowTotals**            | boolean | optional | `true` to display the totals row. |
-| **TableStyleName**        | string  | optional | Name of the built‑in table style to apply. |
-| **TableStyleType**        | string  | optional | Style type (`TableStyleLight`, `TableStyleMedium`, etc.). |
-| **ListColumns**           | array of objects | optional | Collection of column definitions (`Name`, `TotalsCalculation`). |
-| **Sorter**, **AutoFilter**, **ShowTableStyle…** | object | optional | Advanced styling and filtering options (see full DTO in the OpenAPI spec). |
+| Field                                           | Type             | Required | Description                                                                |
+| ----------------------------------------------- | ---------------- | -------- | -------------------------------------------------------------------------- |
+| **DisplayName**                                 | string           | optional | The name displayed for the table.                                          |
+| **StartRow** / **StartColumn**                  | integer          | optional | Zero‑based index of the first row/column of the table.                     |
+| **EndRow** / **EndColumn**                      | integer          | optional | Zero‑based index of the last row/column of the table.                      |
+| **Range**                                       | string           | optional | A‑1 style address that defines the table range (e.g., `A1:D10`).           |
+| **ShowHeaderRow**                               | boolean          | optional | `true` to display the header row.                                          |
+| **ShowTotals**                                  | boolean          | optional | `true` to display the totals row.                                          |
+| **TableStyleName**                              | string           | optional | Name of the built‑in table style to apply.                                 |
+| **TableStyleType**                              | string           | optional | Style type (`TableStyleLight`, `TableStyleMedium`, etc.).                  |
+| **ListColumns**                                 | array of objects | optional | Collection of column definitions (`Name`, `TotalsCalculation`).            |
+| **Sorter**, **AutoFilter**, **ShowTableStyle…** | object           | optional | Advanced styling and filtering options (see full DTO in the OpenAPI spec). |
 
-### Minimal Example Payload  
+### Minimal Example Payload
 
 ```json
 {
@@ -61,26 +42,26 @@ The `listObject` DTO contains the following fields. Only the fields you need to 
 }
 ```
 
-## REST API  
+## REST API
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name   | Type    | Location | Description                         |
-|------------------|---------|----------|-------------------------------------|
-| **name**         | string  | path     | Document name.                      |
-| **sheetName**    | string  | path     | Worksheet name.                     |
-| **listObjectIndex** | integer | path | Index of the list object to update. |
-| **listObject**   | object  | body     | ListObject DTO in the request body. |
-| **folder**       | string  | query    | Folder that contains the document.  |
-| **storageName**  | string  | query    | Name of the storage.                |
+| Parameter Name      | Type    | Location | Description                         |
+| ------------------- | ------- | -------- | ----------------------------------- |
+| **name**            | string  | path     | Document name.                      |
+| **sheetName**       | string  | path     | Worksheet name.                     |
+| **listObjectIndex** | integer | path     | Index of the list object to update. |
+| **listObject**      | object  | body     | ListObject DTO in the request body. |
+| **folder**          | string  | query    | Folder that contains the document.  |
+| **storageName**     | string  | query    | Name of the storage.                |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-### Request  
+### Request
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -107,7 +88,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet7/listob
 
 {{< /tab >}}
 
-### Response  
+### Response
 
 {{< tab tabNum="12" >}}
 
@@ -122,45 +103,45 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet7/listob
 
 {{< /tabs >}}
 
-## Error Responses  
+## Error Responses
 
-| HTTP Code | Description                              | Sample Payload |
-|-----------|------------------------------------------|----------------|
-| **400**   | Bad request – missing required fields or malformed JSON. | `{ "Code": 400, "Message": "Invalid request body." }` |
-| **401**   | Unauthorized – JWT token is missing or invalid. | `{ "Code": 401, "Message": "Authentication failed." }` |
-| **404**   | Not found – the specified workbook, worksheet, or list object does not exist. | `{ "Code": 404, "Message": "Resource not found." }` |
-| **500**   | Internal server error – unexpected condition on the server side. | `{ "Code": 500, "Message": "Server error." }` |
+| HTTP Code | Description                                                                   | Sample Payload                                         |
+| --------- | ----------------------------------------------------------------------------- | ------------------------------------------------------ |
+| **400**   | Bad request – missing required fields or malformed JSON.                      | `{ "Code": 400, "Message": "Invalid request body." }`  |
+| **401**   | Unauthorized – JWT token is missing or invalid.                               | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404**   | Not found – the specified workbook, worksheet, or list object does not exist. | `{ "Code": 404, "Message": "Resource not found." }`    |
+| **500**   | Internal server error – unexpected condition on the server side.              | `{ "Code": 500, "Message": "Server error." }`          |
 
-## FAQ  
-
-<details>  
-<summary>How do I update a list object using the Aspose.Cells Cloud API?</summary>  
-
-Use the `POST /cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}` endpoint. Include a JSON body with the properties you wish to change (e.g., `DisplayName`, `ShowHeaderRow`). Authenticate with a JWT token in the `Authorization` header.  
-
-</details>  
+## FAQ
 
 <details>  
-<summary>What response do I receive after a successful update?</summary>  
+<summary>How do I update a list object using the Aspose.Cells Cloud API?</summary>
 
-A JSON object with `Code: 200` and `Status: "OK"` is returned. If an error occurs, the response contains the appropriate HTTP status code and an `Error` object describing the problem.  
+Use the `POST /cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}` endpoint. Include a JSON body with the properties you wish to change (e.g., `DisplayName`, `ShowHeaderRow`). Authenticate with a JWT token in the `Authorization` header.
 
-</details>  
+</details>
 
 <details>  
-<summary>Can I update only a subset of list object properties?</summary>  
+<summary>What response do I receive after a successful update?</summary>
 
-Yes. Include only the fields you want to modify in the request body; all omitted fields remain unchanged.  
+A JSON object with `Code: 200` and `Status: "OK"` is returned. If an error occurs, the response contains the appropriate HTTP status code and an `Error` object describing the problem.
 
-</details>  
+</details>
 
-## Related Documentation  
+<details>  
+<summary>Can I update only a subset of list object properties?</summary>
 
-- [Add a List Object](https://docs.aspose.cloud/cells/list-objects/add/)  
-- [Get List Object](https://docs.aspose.cloud/cells/list-objects/get/)  
-- [Delete List Object](https://docs.aspose.cloud/cells/list-objects/delete/)  
+Yes. Include only the fields you want to modify in the request body; all omitted fields remain unchanged.
 
-## Cloud SDK Family  
+</details>
+
+## Related Documentation
+
+- [Add a List Object](https://docs.aspose.cloud/cells/list-objects/add/)
+- [Get List Object](https://docs.aspose.cloud/cells/list-objects/get/)
+- [Delete List Object](https://docs.aspose.cloud/cells/list-objects/delete/)
+
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

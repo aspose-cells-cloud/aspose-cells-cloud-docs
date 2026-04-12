@@ -20,13 +20,13 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
 
 ### Request parameters
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| name           | string | path     | Name of the Excel file. |
-| sheetName      | string | path     | Name of the worksheet to be moved. |
+| Parameter Name | Type   | Location | Description                                                                                                           |
+| -------------- | ------ | -------- | --------------------------------------------------------------------------------------------------------------------- |
+| name           | string | path     | Name of the Excel file.                                                                                               |
+| sheetName      | string | path     | Name of the worksheet to be moved.                                                                                    |
 | moving         | object | body     | JSON object that specifies the destination worksheet (`DestinationWorksheet`) and the relative position (`Position`). |
-| folder         | string | query    | Folder path where the workbook is stored. |
-| storageName    | string | query    | Name of the storage service. |
+| folder         | string | query    | Folder path where the workbook is stored.                                                                             |
+| storageName    | string | query    | Name of the storage service.                                                                                          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

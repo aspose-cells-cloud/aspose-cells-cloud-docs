@@ -4,19 +4,20 @@ type: docs
 url: /charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
-keywords: ["Aspose.Cells Cloud", "Chart Title", "Excel", "REST API", "Get Chart Title", "cURL", "SDK"]
+keywords:
+  [
+    "Aspose.Cells Cloud",
+    "Chart Title",
+    "Excel",
+    "REST API",
+    "Get Chart Title",
+    "cURL",
+    "SDK",
+  ]
 description: "Learn how to retrieve a chart title from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication, sample cURL and SDK code."
 ---
 
 This REST API retrieves the title of a chart that is stored in a worksheet of an Excel workbook.
-
-**Prerequisites**  
-- An Aspose.Cells Cloud account.  
-- The appropriate Aspose.Cells Cloud SDK installed for your language (C#, Java, PHP, etc.).  
-- A valid OAuth 2.0 access token (Bearer JWT). See the **Authentication** guide for details.
-
-**Authentication**  
-All requests must include the header `Authorization: Bearer <your‑jwt‑token>` and `Accept: application/json`. The token is obtained from the OAuth token endpoint described in the authentication documentation.
 
 ## REST API
 
@@ -24,15 +25,15 @@ All requests must include the header `Authorization: Bearer <your‑jwt‑token>
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
 
-The endpoint accepts the following parameters:
+### Request parameters
 
-| Parameter Name | Type    | Location | Description                                   |
-|----------------|---------|----------|-----------------------------------------------|
-| name           | string  | path     | Name of the workbook file.                    |
-| sheetName      | string  | path     | Name of the worksheet that contains the chart.|
-| chartIndex     | integer | path     | Zero‑based index of the chart.                |
-| folder         | string  | query    | Folder path where the workbook is stored.     |
-| storageName    | string  | query    | Name of the storage service.                  |
+| Parameter Name | Type    | Location | Description                                    |
+| -------------- | ------- | -------- | ---------------------------------------------- |
+| name           | string  | path     | Name of the workbook file.                     |
+| sheetName      | string  | path     | Name of the worksheet that contains the chart. |
+| chartIndex     | integer | path     | Zero‑based index of the chart.                 |
+| folder         | string  | query    | Folder path where the workbook is stored.      |
+| storageName    | string  | query    | Name of the storage service.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -72,12 +73,12 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/charts
 
 **Response fields**
 
-| Field               | Description                                          |
-|---------------------|------------------------------------------------------|
-| `Title.Text`        | The actual text displayed as the chart title.        |
-| `Title.Font.Name`   | Font family used for the title (e.g., *Arial*).      |
-| `Title.Font.Size`   | Font size in points.                                 |
-| `Title.Font.IsBold` | Indicates whether the title text is bold.            |
+| Field               | Description                                     |
+| ------------------- | ----------------------------------------------- |
+| `Title.Text`        | The actual text displayed as the chart title.   |
+| `Title.Font.Name`   | Font family used for the title (e.g., _Arial_). |
+| `Title.Font.Size`   | Font size in points.                            |
+| `Title.Font.IsBold` | Indicates whether the title text is bold.       |
 
 **How to extract the title in a script (using `jq`)**
 

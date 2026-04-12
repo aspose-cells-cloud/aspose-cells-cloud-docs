@@ -18,17 +18,17 @@ This REST API groups rows on an Excel worksheet.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type    | Location                     | Description                                                            |
-|----------------|---------|------------------------------|------------------------------------------------------------------------|
-| name           | string  | path                         | The name of the workbook file.                                         |
-| sheetName      | string  | path                         | The name of the worksheet.                                            |
-| firstIndex     | integer | query                        | Zero‑based index of the first row to be grouped.                       |
-| lastIndex      | integer | query                        | Zero‑based index of the last row to be grouped.                        |
-| hide           | boolean | query                        | Indicates whether the grouped rows should be hidden (`true` or `false`). |
-| folder         | string  | query                        | Path to the folder that contains the workbook.                         |
-| storageName    | string  | query                        | Name of the storage where the workbook is located.                     |
+| Parameter Name | Type    | Location | Description                                                              |
+| -------------- | ------- | -------- | ------------------------------------------------------------------------ |
+| name           | string  | path     | The name of the workbook file.                                           |
+| sheetName      | string  | path     | The name of the worksheet.                                               |
+| firstIndex     | integer | query    | Zero‑based index of the first row to be grouped.                         |
+| lastIndex      | integer | query    | Zero‑based index of the last row to be grouped.                          |
+| hide           | boolean | query    | Indicates whether the grouped rows should be hidden (`true` or `false`). |
+| folder         | string  | query    | Path to the folder that contains the workbook.                           |
+| storageName    | string  | query    | Name of the storage where the workbook is located.                       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetRows) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

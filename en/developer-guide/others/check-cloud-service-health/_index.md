@@ -12,17 +12,15 @@ weight: 100
 
 Check the health status of Aspose.Cells Cloud services.
 
-### **Check Cloud Service Health API**
+## **Check Cloud Service Health**
+
+### **Web API**
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/status/check
 ```
 
 ### **Request Parameters**
-
-| Parameter Name | Type | Location | Description |
-| :- | :- | :- | :- |
-| *None* | – | – | This endpoint does not require query, path, or body parameters. Only the `Authorization` header is required. |
 
 ### **Response**
 

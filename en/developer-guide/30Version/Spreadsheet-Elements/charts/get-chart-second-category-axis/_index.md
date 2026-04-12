@@ -1,29 +1,29 @@
----  
-title: "Get Chart Second Category Axis"  
-type: docs  
-url: /charts/second-category-axis/get/  
-weight: 60  
-keywords: "Get Chart Second Category Axis, Aspose.Cells Cloud API, Excel chart axis, REST API"  
-description: "Retrieve the second‑category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request format, parameters, sample cURL, and response schema."  
----  
+---
+title: "Get Chart Second Category Axis"
+type: docs
+url: /charts/second-category-axis/get/
+weight: 60
+keywords: "Get Chart Second Category Axis, Aspose.Cells Cloud API, Excel chart axis, REST API"
+description: "Retrieve the second‑category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request format, parameters, sample cURL, and response schema."
+---
 
-This REST API retrieves the **second‑category axis** of a chart.  
+This REST API retrieves the **second‑category axis** of a chart.
 
-## REST API  
+## REST API
 
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis
-```  
+```
 
-**Request parameters**
+### Request parameters
 
 | Parameter Name | Type    | Parameter Location (path/query) | Description                                            |
-|----------------|---------|----------------------------------|--------------------------------------------------------|
-| name           | string  | path                             | Name of the Excel file stored in the cloud.            |
-| sheetName      | string  | path                             | Name of the worksheet that contains the chart.         |
-| chartIndex     | integer | path                             | Zero‑based index of the chart whose axis is requested. |
-| folder         | string  | query                            | Folder path in the storage where the file is located.  |
-| storageName    | string  | query                            | Name of the Aspose Cloud storage to use (optional).   |
+| -------------- | ------- | ------------------------------- | ------------------------------------------------------ |
+| name           | string  | path                            | Name of the Excel file stored in the cloud.            |
+| sheetName      | string  | path                            | Name of the worksheet that contains the chart.         |
+| chartIndex     | integer | path                            | Zero‑based index of the chart whose axis is requested. |
+| folder         | string  | query                           | Folder path in the storage where the file is located.  |
+| storageName    | string  | query                           | Name of the Aspose Cloud storage to use (optional).    |
 
 The **Get‑Chart‑Second‑Category‑Axis** operation is defined in the [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetChartSecondCategoryAxis) and enables direct REST interactions from a web browser or any HTTP client.
 
@@ -62,13 +62,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 }
 ```
 
-*The `Axis` object contains the properties that describe the second‑category axis (e.g., `Name`, `IsVisible`, `AxisLine`, `TickMarks`, `Label`).*  
+_The `Axis` object contains the properties that describe the second‑category axis (e.g., `Name`, `IsVisible`, `AxisLine`, `TickMarks`, `Label`)._
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the fastest way to integrate this API into your project. SDKs handle low‑level details such as authentication, request building, and response parsing, letting you focus on business logic. See the full list of Aspose.Cells Cloud SDKs in the [GitHub repository](https://github.com/aspose-cells-cloud).
 

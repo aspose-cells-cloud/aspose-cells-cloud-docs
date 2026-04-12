@@ -18,15 +18,15 @@ This REST API copies a range in a worksheet of an Excel workbook.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location                     | Description                                                                 |
-|----------------|--------|------------------------------|-----------------------------------------------------------------------------|
-| name           | string | path                         | The name of the workbook.                                                   |
-| sheetName      | string | path                         | The name of the worksheet.                                                  |
-| rangeOperate   | string | body                         | The operation to perform: `copydata`, `copystyle`, `copyto`, or `copyvalue`. |
-| folder         | string | query                        | The folder that contains the workbook.                                      |
-| storageName    | string | query                        | The name of the storage service.                                            |
+| Parameter Name | Type   | Location | Description                                                                  |
+| -------------- | ------ | -------- | ---------------------------------------------------------------------------- |
+| name           | string | path     | The name of the workbook.                                                    |
+| sheetName      | string | path     | The name of the worksheet.                                                   |
+| rangeOperate   | string | body     | The operation to perform: `copydata`, `copystyle`, `copyto`, or `copyvalue`. |
+| folder         | string | query    | The folder that contains the workbook.                                       |
+| storageName    | string | query    | The name of the storage service.                                             |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangesCopy) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

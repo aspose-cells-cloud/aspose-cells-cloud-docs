@@ -16,10 +16,10 @@ This REST API deletes the title of a chart.
 DELETE https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
 
-The request parameters are listed below:
+### Request parameters
 
 | Parameter Name | Type    | Location | Description                         |
-|----------------|---------|----------|-------------------------------------|
+| -------------- | ------- | -------- | ----------------------------------- |
 | name           | string  | path     | The workbook file name.             |
 | sheetName      | string  | path     | The worksheet name.                 |
 | chartIndex     | integer | path     | The zero‑based index of the chart.  |

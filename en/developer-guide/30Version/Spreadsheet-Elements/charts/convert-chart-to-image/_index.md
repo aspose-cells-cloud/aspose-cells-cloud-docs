@@ -10,12 +10,6 @@ description: "Learn how to convert Excel chart objects to PNG, JPEG, or BMP imag
 
 This REST API demonstrates how to convert an **Excel chart** to an image using **Aspose.Cells Cloud**.
 
-## Prerequisites
-
-- **Authentication** – Obtain an OAuth 2.0 JWT token by posting your client ID and client secret to `https://api.aspose.cloud/connect/token`. The response contains an `access_token` that must be supplied in the `Authorization: Bearer <token>` header of every request.  
-- **SDKs (optional)** – Install the Aspose.Cells Cloud SDK for your preferred language (C#, Java, Python, etc.) if you prefer using SDKs instead of raw HTTP calls.  
-- **API version** – The examples below use version **v3.0**. Replace `v3.0` with the current version (e.g., `v4.0`) if a newer API is available.
-
 ## REST API
 
 ```bash
@@ -24,10 +18,10 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 
 Supported image formats include `png`, `jpeg`, `bmp`, `tiff`, and `gif`.
 
-### Parameters
+### Request parameters
 
 | Parameter Name | Type    | Location | Description               |
-|----------------|---------|----------|---------------------------|
+| -------------- | ------- | -------- | ------------------------- |
 | name           | string  | path     | Document name.            |
 | sheetName      | string  | path     | Worksheet name.           |
 | chartNumber    | integer | path     | The chart number.         |
@@ -63,24 +57,14 @@ byte[]
 
 {{< /tabs >}}
 
-### Response
-
-The API returns the image as a binary stream. The `Content-Type` header reflects the requested format (e.g., `image/jpeg` for `format=jpg`). In most languages you can write the returned byte array directly to a file:
-
-```csharp
-// C# example
-byte[] imageBytes = response;
-System.IO.File.WriteAllBytes("chart.jpg", imageBytes);
-```
-
 ### Error Handling
 
-| HTTP Status | Meaning                     | Example JSON Body |
-|-------------|----------------------------|-------------------|
-| 400         | Bad Request – invalid parameters | `{ "error": { "code": "InvalidParameter", "message": "The 'format' value is not supported." } }` |
-| 401         | Unauthorized – missing/invalid JWT token | `{ "error": { "code": "InvalidToken", "message": "Authorization token is missing or invalid." } }` |
-| 404         | Not Found – workbook, worksheet, or chart not found | `{ "error": { "code": "ResourceNotFound", "message": "Specified chart does not exist." } }` |
-| 500         | Internal Server Error – unexpected server condition | `{ "error": { "code": "ServerError", "message": "An unexpected error occurred." } }` |
+| HTTP Status | Meaning                                             | Example JSON Body                                                                                  |
+| ----------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| 400         | Bad Request – invalid parameters                    | `{ "error": { "code": "InvalidParameter", "message": "The 'format' value is not supported." } }`   |
+| 401         | Unauthorized – missing/invalid JWT token            | `{ "error": { "code": "InvalidToken", "message": "Authorization token is missing or invalid." } }` |
+| 404         | Not Found – workbook, worksheet, or chart not found | `{ "error": { "code": "ResourceNotFound", "message": "Specified chart does not exist." } }`        |
+| 500         | Internal Server Error – unexpected server condition | `{ "error": { "code": "ServerError", "message": "An unexpected error occurred." } }`               |
 
 ## Cloud SDK Family
 

@@ -4,7 +4,17 @@ type: docs
 url: /charts/delete/
 aliases: [/delete-a-chart-from-a-worksheet/]
 weight: 40
-keywords: ["Aspose.Cells", "REST API", "Delete Chart", "Worksheet", "Excel", "Cloud SDK", "Chart Deletion", "API Reference"]
+keywords:
+  [
+    "Aspose.Cells",
+    "REST API",
+    "Delete Chart",
+    "Worksheet",
+    "Excel",
+    "Cloud SDK",
+    "Chart Deletion",
+    "API Reference",
+  ]
 description: "Deletes a chart from a worksheet by its zero‑based index using the Aspose.Cells Cloud REST API."
 ---
 
@@ -16,15 +26,15 @@ This REST API deletes a worksheet chart by its index.
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type    | Location | Description                                            |
-|----------------|---------|----------|--------------------------------------------------------|
-| name           | string  | path     | The workbook name.                                     |
-| sheetName      | string  | path     | The worksheet name.                                    |
-| chartIndex     | integer | path     | The zero‑based index of the chart to delete.           |
-| folder         | string  | query    | The folder that contains the workbook.                |
-| storageName    | string  | query    | The name of the storage to use.                        |
+| Parameter Name | Type    | Location | Description                                  |
+| -------------- | ------- | -------- | -------------------------------------------- |
+| name           | string  | path     | The workbook name.                           |
+| sheetName      | string  | path     | The worksheet name.                          |
+| chartIndex     | integer | path     | The zero‑based index of the chart to delete. |
+| folder         | string  | query    | The folder that contains the workbook.       |
+| storageName    | string  | query    | The name of the storage to use.              |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetDeleteChart) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

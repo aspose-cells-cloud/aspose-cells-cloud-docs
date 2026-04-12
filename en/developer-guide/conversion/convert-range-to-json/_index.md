@@ -14,7 +14,7 @@ Export range data from a local Excel file to a JSON file using the Cloud API.
 
 ## **Convert Range to JSON API**
 
-### API Endpoint
+### Web API
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/range/json
@@ -49,33 +49,33 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/json
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
+- **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
 ## **Where Should You Use the Convert Range to JSON API?**
 
-- **Real-time Dashboards**: Convert live Excel data to JSON for real‑time charting libraries (Chart.js, D3.js).  
-- **Spreadsheet-as-Service**: Excel ranges as JSON endpoints for other microservices to consume.  
-- **Webhook Payloads**: Convert spreadsheet data to JSON for webhook notifications.  
-- **Rapid Data Prototyping**: Quick conversion of cleaned Excel data to JSON for Python/R analysis.  
-- **Machine Learning Pipelines**: Pre‑process training data from business‑maintained spreadsheets.  
-- **E-commerce Operations**: Transform product catalogs or pricing sheets to JSON for website sync.  
-- **Reporting Automation**: Generate JSON data feeds from financial models for automated reporting.  
-- **App Configuration**: Manage feature flags, settings, or A/B test parameters in Excel → JSON.  
-- **Multi-language Support**: Convert localization spreadsheets to JSON for i18n libraries.  
+- **Real-time Dashboards**: Convert live Excel data to JSON for real‑time charting libraries (Chart.js, D3.js).
+- **Spreadsheet-as-Service**: Excel ranges as JSON endpoints for other microservices to consume.
+- **Webhook Payloads**: Convert spreadsheet data to JSON for webhook notifications.
+- **Rapid Data Prototyping**: Quick conversion of cleaned Excel data to JSON for Python/R analysis.
+- **Machine Learning Pipelines**: Pre‑process training data from business‑maintained spreadsheets.
+- **E-commerce Operations**: Transform product catalogs or pricing sheets to JSON for website sync.
+- **Reporting Automation**: Generate JSON data feeds from financial models for automated reporting.
+- **App Configuration**: Manage feature flags, settings, or A/B test parameters in Excel → JSON.
+- **Multi-language Support**: Convert localization spreadsheets to JSON for i18n libraries.
 - **Dynamic Menus/Navigation**: Manage website navigation structures in Excel, deploy as JSON.
 
 ## Why should you use the Convert Range to JSON API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart‑rendering solutions, this significantly reduces the development workload.  
-- **Cost‑Effective**: You can convert range data without first uploading the workbook, which saves storage space and reduces costs.  
-- **To Fuel Modern Web & Mobile Applications**: JSON is the native data language of the web. By converting Excel ranges to JSON, you can **seamlessly feed live spreadsheet data into JavaScript frameworks** (React, Vue, Angular), mobile apps, or single‑page applications (SPAs) without complex parsing logic.  
-- **JSON is the lingua franca of modern systems**: compatible with virtually every programming language, database, and web service. Unlike proprietary formats, JSON ensures your Excel data can be consumed anywhere.  
-- **Structured Data Preservation**  
-  - **Intelligent Structure Detection**: Automatically converts tabular data to proper JSON arrays/objects.  
-  - **Header Mapping**: Uses first row as JSON keys for clean object structures.  
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart‑rendering solutions, this significantly reduces the development workload.
+- **Cost‑Effective**: You can convert range data without first uploading the workbook, which saves storage space and reduces costs.
+- **To Fuel Modern Web & Mobile Applications**: JSON is the native data language of the web. By converting Excel ranges to JSON, you can **seamlessly feed live spreadsheet data into JavaScript frameworks** (React, Vue, Angular), mobile apps, or single‑page applications (SPAs) without complex parsing logic.
+- **JSON is the lingua franca of modern systems**: compatible with virtually every programming language, database, and web service. Unlike proprietary formats, JSON ensures your Excel data can be consumed anywhere.
+- **Structured Data Preservation**
+  - **Intelligent Structure Detection**: Automatically converts tabular data to proper JSON arrays/objects.
+  - **Header Mapping**: Uses first row as JSON keys for clean object structures.
   - **Data Type Retention**: Preserves number, date, and boolean types (not just text).
 
 ## How to Use the Convert Range to JSON API with SDKs?

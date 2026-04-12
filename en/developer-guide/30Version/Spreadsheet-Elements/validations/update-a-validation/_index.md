@@ -17,16 +17,16 @@ This REST API updates a worksheet validation by its index on an Excel worksheet.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name   | Type    | Location | Description                                                               |
-|------------------|---------|----------|---------------------------------------------------------------------------|
-| name             | string  | path     | The name of the workbook file.                                            |
-| sheetName        | string  | path     | The name of the worksheet that contains the validation.                  |
-| validationIndex  | integer | path     | The zero‑based index of the validation to be updated.                     |
-| validation       | object  | body     | A JSON object that defines the updated validation settings.              |
-| folder           | string  | query    | The folder in cloud storage where the workbook is located.                |
-| storageName      | string  | query    | The name of the storage service (if a custom storage is used).           |
+| Parameter Name  | Type    | Location | Description                                                    |
+| --------------- | ------- | -------- | -------------------------------------------------------------- |
+| name            | string  | path     | The name of the workbook file.                                 |
+| sheetName       | string  | path     | The name of the worksheet that contains the validation.        |
+| validationIndex | integer | path     | The zero‑based index of the validation to be updated.          |
+| validation      | object  | body     | A JSON object that defines the updated validation settings.    |
+| folder          | string  | query    | The folder in cloud storage where the workbook is located.     |
+| storageName     | string  | query    | The name of the storage service (if a custom storage is used). |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PostWorksheetValidation) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

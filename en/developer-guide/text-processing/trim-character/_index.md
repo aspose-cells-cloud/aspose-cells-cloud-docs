@@ -17,7 +17,6 @@ Automatically trim unnecessary characters, extra spaces, and line breaks from Ex
 - **Trim the first and last spaces**
   - Remove extra spaces at the beginning and end of text
   - Improve data appearance neatness and readability
-  
 - **Processing of extra spaces between words**
   - Eliminate extra spaces between words
   - Solve the format confusion caused by multi-source data
@@ -32,7 +31,7 @@ Automatically trim unnecessary characters, extra spaces, and line breaks from Ex
 
 ## **TrimCharacter API**
 
-### API Endpoint
+### Web API
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/content/trim
@@ -40,29 +39,35 @@ PUT http://api.aspose.cloud/v4.0/cells/content/trim
 
 ### The request parameters of **trimCharacter** API are
 
-| Parameter Name | Type | Path/Query String/HTTPBody | Description |
-| :- | :- | :- | :- |
-| Spreadsheet | File | FormData | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc. |
-| trimContent | String | Query | Specifies the specific characters or strings to be trimmed from cell content. Can be a single character, multiple characters, or a custom pattern. |
-| trimLeading | Boolean | Query | When `true`, removes the specified characters from the beginning of each cell's content. |
-| trimTrailing | Boolean | Query | When `true`, removes the specified characters from the end of each cell's content. |
-| trimSpaceBetweenWordTo1 | Boolean | Query | When `true`, reduces multiple consecutive spaces between words to a single space within each cell. |
-| trimNonBreakingSpaces | Boolean | Query | When `true`, removes non-breaking space characters (Unicode U+00A0) from the cell content. |
-| removeExtraLineBreaks | Boolean | Query | When `true`, reduces multiple consecutive line breaks to a single line break within each cell. |
-| removeAllLineBreaks | Boolean | Query | When `true`, removes all line break characters from the cell content. |
-| worksheet | String | Query | *(Optional)* The name of the worksheet where text trimming will be applied. If omitted, the operation applies to the first worksheet. |
-| range | String | Query | *(Optional)* The cell range where text trimming will be applied (e.g., `"A1:C10"`). If omitted, the operation applies to all used cells in the specified worksheet. |
-| outPath | String | Query | *(Optional)* The cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder. |
-| outStorageName | String | Query | The name of the cloud storage where the output file will be stored. |
-| region | String | Query | *(Optional)* Sets the locale for text processing, which may affect space and line break handling for specific languages (e.g., `"en-US"`, `"ar-SA"`). |
-| password | String | Query | *(Optional)* If the uploaded spreadsheet is password-protected, provide the password to open and process the file. |
+| Parameter Name          | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                         |
+| :---------------------- | :------ | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Spreadsheet             | File    | FormData                   | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                                           |
+| trimContent             | String  | Query                      | Specifies the specific characters or strings to be trimmed from cell content. Can be a single character, multiple characters, or a custom pattern.                  |
+| trimLeading             | Boolean | Query                      | When `true`, removes the specified characters from the beginning of each cell's content.                                                                            |
+| trimTrailing            | Boolean | Query                      | When `true`, removes the specified characters from the end of each cell's content.                                                                                  |
+| trimSpaceBetweenWordTo1 | Boolean | Query                      | When `true`, reduces multiple consecutive spaces between words to a single space within each cell.                                                                  |
+| trimNonBreakingSpaces   | Boolean | Query                      | When `true`, removes non-breaking space characters (Unicode U+00A0) from the cell content.                                                                          |
+| removeExtraLineBreaks   | Boolean | Query                      | When `true`, reduces multiple consecutive line breaks to a single line break within each cell.                                                                      |
+| removeAllLineBreaks     | Boolean | Query                      | When `true`, removes all line break characters from the cell content.                                                                                               |
+| worksheet               | String  | Query                      | _(Optional)_ The name of the worksheet where text trimming will be applied. If omitted, the operation applies to the first worksheet.                               |
+| range                   | String  | Query                      | _(Optional)_ The cell range where text trimming will be applied (e.g., `"A1:C10"`). If omitted, the operation applies to all used cells in the specified worksheet. |
+| outPath                 | String  | Query                      | _(Optional)_ The cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder.                          |
+| outStorageName          | String  | Query                      | The name of the cloud storage where the output file will be stored.                                                                                                 |
+| region                  | String  | Query                      | _(Optional)_ Sets the locale for text processing, which may affect space and line break handling for specific languages (e.g., `"en-US"`, `"ar-SA"`).               |
+| password                | String  | Query                      | _(Optional)_ If the uploaded spreadsheet is password-protected, provide the password to open and process the file.                                                  |
 
 ### **Response**
 
 ```json
-{
-File
-}
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
 ```
 
 ### Error Codes

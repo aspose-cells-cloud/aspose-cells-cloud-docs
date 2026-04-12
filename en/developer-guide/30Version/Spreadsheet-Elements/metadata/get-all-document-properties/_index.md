@@ -5,8 +5,8 @@ linktitle: "Get all"
 type: docs
 url: /document-properties/get-all/
 aliases: [/get-all-document-properties/]
-keywords: "Get All Document Properties, Aspose.Cells Cloud, Excel document properties, REST API, SDK"
-description: "Retrieve all document properties from Excel files using Aspose.Cells Cloud REST API. Supports multiple SDKs across various programming languages."
+keywords: "Get All Document Properties, Aspose.Cells Cloud, Excel document properties, REST API, SDK, Excel metadata"
+description: "Retrieve all document properties from an Excel file using the Aspise.Cells Cloud REST API. The endpoint works with all supported SDKs and programming languages."
 weight: 25
 ---
 
@@ -18,17 +18,17 @@ This REST API reads document properties.
 GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type   | Location | Description                               |
-|----------------|--------|----------|-------------------------------------------|
-| name           | string | path     | Name of the Excel file.                   |
-| folder         | string | query    | Folder containing the file.               |
-| storageName    | string | query    | Name of the storage service.              |
+| Parameter Name | Type   | Location | Description                  |
+| -------------- | ------ | -------- | ---------------------------- |
+| name           | string | path     | Name of the Excel file.      |
+| folder         | string | query    | Folder containing the file.  |
+| storageName    | string | query    | Name of the storage service. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

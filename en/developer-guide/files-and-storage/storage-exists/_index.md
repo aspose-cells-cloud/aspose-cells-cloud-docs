@@ -14,25 +14,20 @@ weight: 100
 
 **Summary** – The `storageExists` endpoint lets you confirm whether a specific storage container is available in Aspose.Cells Cloud. Use it before performing file‑related operations to avoid runtime errors. The API returns a JSON object containing an `Exists` boolean that indicates the storage status.
 
-### Prerequisites / Authentication
-To call this endpoint you must obtain an OAuth 2.0 access token using your `client_id` and `client_secret`. Include the token in the `Authorization` header as a Bearer token:
+### Web API
 
-```
-Authorization: Bearer <access_token>
-```
-
-### API Endpoint
 ```
 GET https://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist
 ```
 
 ### Function Description
+
 The `storageExists` API checks whether a specified storage exists in the Aspose.Cells cloud service. This functionality is critical for ensuring that all operations dependent on storage can proceed without errors.
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                 |
-|----------------|--------|----------|---------------------------------------------|
+| Parameter Name | Type   | Location | Description                                     |
+| -------------- | ------ | -------- | ----------------------------------------------- |
 | storageName    | String | Path     | The name of the storage to check for existence. |
 
 ### Response Description
@@ -40,9 +35,7 @@ The `storageExists` API checks whether a specified storage exists in the Aspose.
 ```json
 {
   "Name": "StorageExist",
-  "Description": [
-    "Indicates whether the specified storage exists."
-  ],
+  "Description": ["Indicates whether the specified storage exists."],
   "Type": "Class",
   "IsAbstract": false,
   "Properties": [
@@ -64,27 +57,13 @@ The `storageExists` API checks whether a specified storage exists in the Aspose.
 }
 ```
 
-### Example Request (cURL)
-
-```bash
-curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/MyStorage/exist" \
-     -H "Authorization: Bearer <access_token>"
-```
-
-### Step‑by‑Step Usage
-
-1. **Obtain** an OAuth 2.0 access token using your client credentials.  
-2. **Replace** `{storageName}` in the URL with the name of the storage you want to verify.  
-3. **Send** a `GET` request to the endpoint with the `Authorization: Bearer <access_token>` header.  
-4. **Inspect** the `Exists` field in the JSON response to determine whether the storage is present.
-
 ### Error Codes
 
-| HTTP Status | Meaning                         |
-|-------------|---------------------------------|
-| 200 OK      | Request succeeded; response contains the `Exists` flag. |
-| 401 Unauthorized | Missing or invalid authentication token. |
-| 404 Not Found | The specified `storageName` does not exist. |
+| HTTP Status      | Meaning                                                 |
+| ---------------- | ------------------------------------------------------- |
+| 200 OK           | Request succeeded; response contains the `Exists` flag. |
+| 401 Unauthorized | Missing or invalid authentication token.                |
+| 404 Not Found    | The specified `storageName` does not exist.             |
 
 ## OpenAPI Specification
 
@@ -122,16 +101,3 @@ The following code examples demonstrate how to make API calls to Aspose.Cells we
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_StorageExists.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-### FAQ
-
-**How can I verify if a storage bucket exists in Aspose.Cells Cloud?**  
-Send a `GET` request to `https://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist` with a valid OAuth2 bearer token. The response JSON contains an `Exists` boolean (`true` if the storage exists).
-
-**What HTTP status codes are returned by the `storageExists` endpoint?**  
-- **200 OK** – Request succeeded; the body includes the `Exists` flag.  
-- **401 Unauthorized** – Missing or invalid token.  
-- **404 Not Found** – The specified `storageName` does not exist.
-
-**Can I use the `storageExists` API with the Aspose.Cells SDKs?**  
-Yes. Each SDK provides a method (e.g., `CellsApi.StorageExists(storageName)` in C#) that handles token acquisition and request construction, returning a boolean indicating existence.

@@ -18,14 +18,14 @@ This REST API deletes the background image of a worksheet.
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                                          |
-|----------------|--------|----------|------------------------------------------------------|
-| name           | string | path     | The name of the Excel file.                          |
+| Parameter Name | Type   | Location | Description                                            |
+| -------------- | ------ | -------- | ------------------------------------------------------ |
+| name           | string | path     | The name of the Excel file.                            |
 | sheetName      | string | path     | The name of the worksheet whose background is removed. |
-| folder         | string | query    | The folder in storage where the file is located.     |
-| storageName    | string | query    | The name of the storage (if not the default storage).|
+| folder         | string | query    | The folder in storage where the file is located.       |
+| storageName    | string | query    | The name of the storage (if not the default storage).  |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

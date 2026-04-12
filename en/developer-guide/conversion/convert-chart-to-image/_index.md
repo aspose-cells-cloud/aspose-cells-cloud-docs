@@ -14,7 +14,7 @@ Convert a chart from a local spreadsheet or Excel file to an image file. Support
 
 ## **Convert Chart to Image API**
 
-### API Endpoint
+### Web API
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/chart/image
@@ -22,17 +22,17 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/image
 
 ### **Request Parameters:**
 
-| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                |
-| :------------- | :------ | :------------------------- | :------------------------------------------------------------------------- |
-| Spreadsheet    | File    | FormData                   | Upload the spreadsheet file containing the chart.                          |
-| worksheet      | String  | Query                      | Specify the worksheet name if applicable.                                  |
-| chartIndex     | Integer | Query                      | Index of the chart to convert.                                             |
-| format         | String  | Query                      | (Required) The desired image type (e.g., svg, png, jpg).                   |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                        |
+| :------------- | :------ | :------------------------- | :--------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                   | Upload the spreadsheet file containing the chart.                                  |
+| worksheet      | String  | Query                      | Specify the worksheet name if applicable.                                          |
+| chartIndex     | Integer | Query                      | Index of the chart to convert.                                                     |
+| format         | String  | Query                      | (Required) The desired image type (e.g., svg, png, jpg).                           |
 | outPath        | String  | Query                      | (Optional) The folder path where the output file will be stored; defaults to null. |
-| outStorageName | String  | Query                      | Name of the storage for the output file.                                   |
-| fontsLocation  | String  | Query                      | Specify custom fonts if needed.                                            |
-| region         | String  | Query                      | Set the spreadsheet region.                                                |
-| password       | String  | Query                      | The password for opening the spreadsheet file.                             |
+| outStorageName | String  | Query                      | Name of the storage for the output file.                                           |
+| fontsLocation  | String  | Query                      | Specify custom fonts if needed.                                                    |
+| region         | String  | Query                      | Set the spreadsheet region.                                                        |
+| password       | String  | Query                      | The password for opening the spreadsheet file.                                     |
 
 ## **Response**
 
@@ -50,27 +50,27 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/image
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
+- **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.
 
 ## Where should you use the Convert Chart to Image API?
 
-- **Report Generation & Dashboards**: Automatically convert charts from Excel data into images (PNG, JPEG, etc.) for embedding in PDF reports, web dashboards, or PowerPoint presentations.  
-- **Web/Email Applications**: Serve chart images directly in web pages or emails without requiring users to download or open Excel files. Useful for dynamic reporting tools, newsletters, or automated notifications.  
-- **Document Processing Workflows**: Integrate into automated pipelines (e.g., invoicing, analytics) where charts from Excel need to be inserted into other formats (Word, PDF, HTML).  
-- **Mobile/Desktop Applications**: Display Excel charts in apps where rendering the full spreadsheet is unnecessary or impractical.  
+- **Report Generation & Dashboards**: Automatically convert charts from Excel data into images (PNG, JPEG, etc.) for embedding in PDF reports, web dashboards, or PowerPoint presentations.
+- **Web/Email Applications**: Serve chart images directly in web pages or emails without requiring users to download or open Excel files. Useful for dynamic reporting tools, newsletters, or automated notifications.
+- **Document Processing Workflows**: Integrate into automated pipelines (e.g., invoicing, analytics) where charts from Excel need to be inserted into other formats (Word, PDF, HTML).
+- **Mobile/Desktop Applications**: Display Excel charts in apps where rendering the full spreadsheet is unnecessary or impractical.
 - **Archiving & Visualization**: Save charts as standalone images for long‑term storage, thumbnails, or quick previews without Excel dependencies.
 
 ## Why should you use the Convert Chart to Image API?
 
-- **Preserve Visual Fidelity**: Maintains exact chart formatting (colors, labels, scaling) as seen in Excel, ensuring professional‑quality output.  
-- **Platform Agnostic**: No Excel installation required. Works cross‑platform (Windows, Linux, macOS) via REST API, suitable for cloud‑based or server‑side applications.  
-- **Automation & Scalability**: Batch‑convert multiple charts or files programmatically, saving time compared to manual export. Handles large volumes efficiently in the cloud.  
-- **Flexible Output Formats**: Supports popular image formats (PNG, JPG, BMP, SVG, etc.), allowing integration with diverse systems and media.  
-- **Secure & Reliable**: Process files in Aspose’s cloud environment without exposing sensitive data to client‑side tools. High availability and consistent performance.  
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.  
+- **Preserve Visual Fidelity**: Maintains exact chart formatting (colors, labels, scaling) as seen in Excel, ensuring professional‑quality output.
+- **Platform Agnostic**: No Excel installation required. Works cross‑platform (Windows, Linux, macOS) via REST API, suitable for cloud‑based or server‑side applications.
+- **Automation & Scalability**: Batch‑convert multiple charts or files programmatically, saving time compared to manual export. Handles large volumes efficiently in the cloud.
+- **Flexible Output Formats**: Supports popular image formats (PNG, JPG, BMP, SVG, etc.), allowing integration with diverse systems and media.
+- **Secure & Reliable**: Process files in Aspose’s cloud environment without exposing sensitive data to client‑side tools. High availability and consistent performance.
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
 - **Cost‑Effective**: You can convert charts without uploading the workbook first, which saves storage space and reduces costs.
 
 ## How to Use the Convert Chart to Image API with SDKs?

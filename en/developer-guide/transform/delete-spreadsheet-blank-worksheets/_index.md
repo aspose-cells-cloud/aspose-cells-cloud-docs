@@ -14,7 +14,7 @@ Automatically delete all blank worksheets from Excel workbooks using Aspose.Cell
 
 ## **DeleteSpreadsheetBlankWorksheets API**
 
-### API Endpoint
+### Web API
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/delete/blank-worksheets
@@ -22,48 +22,48 @@ PUT http://api.aspose.cloud/v4.0/cells/delete/blank-worksheets
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description |
-| :- | :- | :- |:- |
-| Spreadsheet | File | FormData | **Required**. The Excel workbook file to be cleaned. Supports formats such as `.xlsx`, `.xls`, `.xlsm`, `.xlsb`, and `.ods`. |
-| outPath | String | Query | **Optional**. The target folder path within cloud storage where the output file will be saved. If left empty or set to `null`, the processed file will be stored in the default location or the same directory as the source file. |
-| outStorageName | String | Query | **Required**. The name of the configured cloud storage service where the output file should be saved (e.g., `MyFirstStorage`). This parameter specifies which storage space to write the results to. |
-| region | String | Query | **Optional**. The regional/locale setting applied during workbook processing, such as `en-US` or `zh-CN`. This may affect the handling of date, number, and text formats. |
-| password | String | Query | **Optional**. The password required to open a password‑protected Excel file. This parameter can be omitted if the uploaded file is not encrypted. |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                                                                                                                        |
+| :------------- | :----- | :-------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                    | **Required**. The Excel workbook file to be cleaned. Supports formats such as `.xlsx`, `.xls`, `.xlsm`, `.xlsb`, and `.ods`.                                                                                                       |
+| outPath        | String | Query                       | **Optional**. The target folder path within cloud storage where the output file will be saved. If left empty or set to `null`, the processed file will be stored in the default location or the same directory as the source file. |
+| outStorageName | String | Query                       | **Required**. The name of the configured cloud storage service where the output file should be saved (e.g., `MyFirstStorage`). This parameter specifies which storage space to write the results to.                               |
+| region         | String | Query                       | **Optional**. The regional/locale setting applied during workbook processing, such as `en-US` or `zh-CN`. This may affect the handling of date, number, and text formats.                                                          |
+| password       | String | Query                       | **Optional**. The password required to open a password‑protected Excel file. This parameter can be omitted if the uploaded file is not encrypted.                                                                                  |
 
 ## **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
+- **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
 ## Where should we use the Delete Spreadsheet Blank Worksheets API?
 
-- **Post-Data Consolidation Cleanup**: After combining data from multiple source files into a single workbook, automatically remove any leftover or placeholder sheets that were created during the process but contain no data.  
-- **Template-Based Report Generation**: In workflows that use Excel templates with multiple pre‑defined sheets, clean up all unused template sheets after populating only the required ones with data.  
-- **Automated Data Processing Pipelines (ETL)**: As a pre‑processing step to sanitize Excel workbooks ingested from various systems or user uploads before further analysis, storage, or integration, ensuring only sheets with actual content are processed.  
-- **Legacy Workbook Optimization and Migration**: When modernizing or consolidating old, sprawling Excel files that often accumulate numerous empty or obsolete worksheets over time.  
+- **Post-Data Consolidation Cleanup**: After combining data from multiple source files into a single workbook, automatically remove any leftover or placeholder sheets that were created during the process but contain no data.
+- **Template-Based Report Generation**: In workflows that use Excel templates with multiple pre‑defined sheets, clean up all unused template sheets after populating only the required ones with data.
+- **Automated Data Processing Pipelines (ETL)**: As a pre‑processing step to sanitize Excel workbooks ingested from various systems or user uploads before further analysis, storage, or integration, ensuring only sheets with actual content are processed.
+- **Legacy Workbook Optimization and Migration**: When modernizing or consolidating old, sprawling Excel files that often accumulate numerous empty or obsolete worksheets over time.
 - **User‑Generated Content Portals**: Clean and standardize workbooks submitted by users through web applications or forms, removing accidental blank sheets to maintain professional and consistent file quality.
 
 ## Why should you use the Delete Spreadsheet Blank Worksheets API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom solutions, this significantly reduces development workload.  
-- **Reduced Labor Costs**: Reduces the need for positions dedicated to document consolidation.  
-- **Pay‑per‑use**: No upfront investment, only pay for API calls actually used.  
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom solutions, this significantly reduces development workload.
+- **Reduced Labor Costs**: Reduces the need for positions dedicated to document consolidation.
+- **Pay‑per‑use**: No upfront investment, only pay for API calls actually used.
 - **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
 
 ## How to Use the Delete Spreadsheet Blank Worksheets API with SDKs

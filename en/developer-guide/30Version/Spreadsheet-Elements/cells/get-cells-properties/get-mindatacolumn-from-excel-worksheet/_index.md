@@ -1,34 +1,20 @@
----  
-title: "Get MinDataColumn – Aspose.Cells Cloud API Reference (v3.0)"  
-type: docs  
-url: /get-mindatacolumn-from-excel-worksheet/  
-weight: 110  
-keywords: "Aspose.Cells Cloud, MinDataColumn, Excel worksheet, REST API, API reference, v3.0"  
-description: "Retrieve the leftmost column that contains data in an Excel worksheet via Aspose.Cells Cloud REST API (v3.0). Includes authentication details, request syntax, JSON response example, error codes, and SDK snippets."  
----  
+---
+title: "Get MinDataColumn – Aspose.Cells Cloud API Reference (v3.0)"
+type: docs
+url: /get-mindatacolumn-from-excel-worksheet/
+weight: 110
+keywords: "Aspose.Cells Cloud, MinDataColumn, Excel worksheet, REST API, API reference, v3.0"
+description: "Retrieve the leftmost column that contains data in an Excel worksheet via Aspose.Cells Cloud REST API (v3.0). Includes authentication details, request syntax, JSON response example, error codes, and SDK snippets."
+---
 
-## Overview  
+## Overview
 
 The **`mindatacolumn`** endpoint returns the zero‑based index of the leftmost column that contains any cell data in a specified worksheet.  
 In other words, it tells you which column is the first one that actually holds data.
 
 > **Definition** – `mindatacolumn`: the index (starting at 0) of the first column that contains data in the worksheet.
 
----
-
-## Prerequisites  
-
-- **API version:** v3.0  
-- **Authentication:**  
-  - **OAuth 2.0** – include an `Authorization: Bearer {access_token}` header, **or**  
-  - **API key** – add `api_key={your_api_key}` as a query parameter.  
-- A valid workbook (`myWorkbook.xlsx`) must be uploaded to Aspose.Cells Cloud storage.  
-
----
-
-## Request  
-
-### HTTP Request  
+## **cURL Example**
 
 ```bash
 curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mindatacolumn" \
@@ -37,21 +23,21 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
      -H "Accept: application/json"
 ```
 
-### Path Parameters  
+### Path Parameters
 
-| Parameter | Type   | Description                              |
-|-----------|--------|------------------------------------------|
-| `myWorkbook.xlsx` | string | Name of the workbook stored in the cloud. |
-| `Sheet1`           | string | Worksheet name (case‑sensitive).          |
-| `mindatacolumn`    | literal| Fixed operation name that triggers the endpoint. |
+| Parameter         | Type    | Description                                      |
+| ----------------- | ------- | ------------------------------------------------ |
+| `myWorkbook.xlsx` | string  | Name of the workbook stored in the cloud.        |
+| `Sheet1`          | string  | Worksheet name (case‑sensitive).                 |
+| `mindatacolumn`   | literal | Fixed operation name that triggers the endpoint. |
 
-*There are no additional query parameters for this operation.*
+_There are no additional query parameters for this operation._
 
 ---
 
-## Response  
+## Response
 
-### Successful Response (200 OK)  
+### Successful Response (200 OK)
 
 ```json
 {
@@ -59,33 +45,20 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 }
 ```
 
-| Property        | Type   | Description                                 |
-|-----------------|--------|---------------------------------------------|
-| `MinDataColumn` | integer| Zero‑based index of the first column that contains data. |
+| Property        | Type    | Description                                              |
+| --------------- | ------- | -------------------------------------------------------- |
+| `MinDataColumn` | integer | Zero‑based index of the first column that contains data. |
 
-### Error Responses  
+### Error Responses
 
-| HTTP Code | Error Code            | Description                                                            |
-|-----------|----------------------|------------------------------------------------------------------------|
-| 401       | `AuthenticationFailed` | Missing or invalid authentication credentials.                         |
-| 404       | `WorksheetNotFound`    | The specified worksheet does not exist in the workbook.                |
-| 400       | `InvalidRequest`       | The request is malformed or contains invalid parameters.               |
-| 500       | `ServerError`          | An unexpected error occurred on the server side.                       |
+| HTTP Code | Error Code             | Description                                              |
+| --------- | ---------------------- | -------------------------------------------------------- |
+| 401       | `AuthenticationFailed` | Missing or invalid authentication credentials.           |
+| 404       | `WorksheetNotFound`    | The specified worksheet does not exist in the workbook.  |
+| 400       | `InvalidRequest`       | The request is malformed or contains invalid parameters. |
+| 500       | `ServerError`          | An unexpected error occurred on the server side.         |
 
----
-
-## FAQ  
-
-| Question | Answer |
-|----------|--------|
-| **What does the `mindatacolumn` endpoint return?** | It returns the zero‑based index of the first column that contains any cell data, e.g., `{ "MinDataColumn": 2 }`. |
-| **How do I authenticate the request?** | Include either an `Authorization: Bearer {access_token}` header (OAuth 2.0) or the `api_key` query parameter. |
-| **What error is returned if the worksheet does not exist?** | HTTP 404 with body `{ "Code": "WorksheetNotFound", "Message": "Worksheet 'Sheet1' does not exist." }`. |
-| **Can I use this endpoint with a different API version?** | The example uses v3.0; replace `v3.0` in the URL with the version you are targeting (e.g., `v4.0`). |
-
----
-
-## Request / Response Samples  
+## Request / Response Samples
 
 - **cURL Example**
 
@@ -116,7 +89,7 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 ---
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project logic. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

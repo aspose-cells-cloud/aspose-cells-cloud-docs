@@ -12,17 +12,6 @@ weight: 50
 
 This REST API adds a **pivot filter** to the pivot table at the specified index.
 
-## Overview
-A pivot filter limits the data displayed in a pivot table based on defined criteria.  
-Use this operation when you need to programmatically restrict rows or columns in a pivot table without modifying the source data.  
-The API works with Excel workbooks stored in Aspose Cloud storage and supports both synchronous and asynchronous scenarios.
-
-## Prerequisites
-- **Authentication** – Obtain an OAuth 2.0 JWT access token and include it in the `Authorization: Bearer <token>` header of every request.  
-- **Supported SDK version** – Use the latest Aspose.Cells Cloud SDK (v3.0 or newer).  
-- **Excel format** – The workbook must be in a format supported by Aspose.Cells (e.g., `.xlsx`, `.xls`).  
-- **API version** – All URLs reference the **v3.0** version of the API.
-
 ## REST API
 
 ```bash
@@ -32,11 +21,11 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 ### Request parameters
 
 | Parameter Name      | Type    | Location | Description                                                                                     |
-|---------------------|---------|----------|-------------------------------------------------------------------------------------------------|
+| ------------------- | ------- | -------- | ----------------------------------------------------------------------------------------------- |
 | **name**            | string  | path     | The name of the Excel file.                                                                     |
 | **sheetName**       | string  | path     | The worksheet that contains the pivot table.                                                    |
-| **pivotTableIndex** | integer | path     | Zero‑based index of the pivot table to which the filter will be applied.                       |
-| **filter**          | object  | body     | JSON object that defines the filter settings (e.g., `AutoFilter`, `EvaluationOrder`, etc.).    |
+| **pivotTableIndex** | integer | path     | Zero‑based index of the pivot table to which the filter will be applied.                        |
+| **filter**          | object  | body     | JSON object that defines the filter settings (e.g., `AutoFilter`, `EvaluationOrder`, etc.).     |
 | **needReCalculate** | boolean | query    | When **true**, forces the workbook to recalculate after the filter is added. Default **false**. |
 | **folder**          | string  | query    | Folder in cloud storage where the file is located.                                              |
 | **storageName**     | string  | query    | Name of the cloud storage.                                                                      |
@@ -45,13 +34,13 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 
 ### Response codes
 
-| Code | Meaning                                   |
-|------|-------------------------------------------|
-| 200  | Filter added successfully.                |
-| 400  | Bad request – invalid parameters.         |
-| 401  | Unauthorized – missing or invalid token. |
+| Code | Meaning                                      |
+| ---- | -------------------------------------------- |
+| 200  | Filter added successfully.                   |
+| 400  | Bad request – invalid parameters.            |
+| 401  | Unauthorized – missing or invalid token.     |
 | 404  | Not found – workbook or pivot table missing. |
-| 500  | Internal server error.                    |
+| 500  | Internal server error.                       |
 
 You can explore the full OpenAPI definition here:  
 [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTableFilter)

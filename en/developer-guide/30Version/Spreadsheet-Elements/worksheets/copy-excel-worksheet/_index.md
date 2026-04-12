@@ -12,16 +12,7 @@ weight: 20
 
 This REST API copies a worksheet and its formats to a new sheet within the same workbook.
 
-## Prerequisites
-
-- A valid Aspose Cloud account.  
-- An access token with **Cells** scope (obtainable via the OAuth2 token endpoint).  
-- The source workbook must exist in the specified `sourceFolder`.  
-- The destination workbook (`{name}`) must exist in the `folder` path.
-
 ## REST API
-
-**API version:** `v3.0`
 
 ```bash
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/copy
@@ -29,26 +20,16 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/copy
 
 The request parameters are listed below:
 
-| Parameter Name   | Type   | Location | Description |
-|------------------|--------|----------|-------------|
-| `name`           | string | path     | The name of the workbook file. |
-| `sheetName`      | string | path     | The name of the destination worksheet (the new sheet). |
-| `sourceSheet`    | string | query    | The name of the worksheet to be copied. |
-| `options`        | object | body     | JSON object containing copy options (e.g., column width, formulas). |
+| Parameter Name   | Type   | Location | Description                                                              |
+| ---------------- | ------ | -------- | ------------------------------------------------------------------------ |
+| `name`           | string | path     | The name of the workbook file.                                           |
+| `sheetName`      | string | path     | The name of the destination worksheet (the new sheet).                   |
+| `sourceSheet`    | string | query    | The name of the worksheet to be copied.                                  |
+| `options`        | object | body     | JSON object containing copy options (e.g., column width, formulas).      |
 | `sourceWorkbook` | string | query    | The name of the source workbook if it differs from the current workbook. |
-| `sourceFolder`   | string | query    | The folder path where the source workbook is stored. |
-| `folder`         | string | query    | The folder path where the destination workbook will be saved. |
-| `storageName`    | string | query    | The name of the storage service to use. |
-
-### Authentication
-
-All requests must include an **Authorization** header with a Bearer token:
-
-```http
-Authorization: Bearer <access_token>
-```
-
-Obtain the token from the OAuth2 endpoint described in the **Authentication** guide: `POST https://api.aspose.cloud/connect/token`.
+| `sourceFolder`   | string | query    | The folder path where the source workbook is stored.                     |
+| `folder`         | string | query    | The folder path where the destination workbook will be saved.            |
+| `storageName`    | string | query    | The name of the storage service to use.                                  |
 
 ### Request & Response Examples
 
@@ -88,29 +69,12 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/NewSheet/copy
 
 The API returns standard HTTP status codes together with a JSON error body. Typical responses include:
 
-| HTTP Code | Description                              | Sample JSON Error Body |
-|-----------|------------------------------------------|------------------------|
-| 400       | Bad request – missing or invalid parameters. | `{ "Code": 400, "Message": "Invalid request parameters." }` |
-| 401       | Unauthorized – missing or invalid token. | `{ "Code": 401, "Message": "Authentication failed." }` |
-| 404       | Not found – workbook, worksheet, or folder does not exist. | `{ "Code": 404, "Message": "Resource not found." }` |
-| 500       | Internal server error – unexpected condition. | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
-
-### Notes & Limitations
-
-- Copying worksheets across different storage locations is **not** supported in API version v3.0.  
-- All parameters are optional; if omitted, only cell values and basic formatting are copied.  
-- The `options` object supports flags such as `CopyInvalidFormulasAsValues`, `CopyNames`, and `ExtendToAdjacentRange`. Refer to the OpenAPI spec for the full list.
-
-## FAQ
-
-**Q:** *How do I copy a worksheet from one workbook to another?*  
-**A:** Use the `sourceWorkbook`, `sourceFolder`, and `folder` query parameters together with the `copy` endpoint. The destination workbook is identified by the `{name}` path variable.
-
-**Q:** *What authentication method is required?*  
-**A:** Include an `Authorization: Bearer <access_token>` header. Obtain the token via the OAuth2 token endpoint described in the **Authentication** section.
-
-**Q:** *Which copy options are mandatory?*  
-**A:** All options are optional. If omitted, the API copies only cell values and basic formatting. See the `options` JSON schema for available flags.
+| HTTP Code | Description                                                | Sample JSON Error Body                                        |
+| --------- | ---------------------------------------------------------- | ------------------------------------------------------------- |
+| 400       | Bad request – missing or invalid parameters.               | `{ "Code": 400, "Message": "Invalid request parameters." }`   |
+| 401       | Unauthorized – missing or invalid token.                   | `{ "Code": 401, "Message": "Authentication failed." }`        |
+| 404       | Not found – workbook, worksheet, or folder does not exist. | `{ "Code": 404, "Message": "Resource not found." }`           |
+| 500       | Internal server error – unexpected condition.              | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
 
 ## Cloud SDK Family
 

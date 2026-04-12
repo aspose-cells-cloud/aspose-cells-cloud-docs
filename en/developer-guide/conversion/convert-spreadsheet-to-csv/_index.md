@@ -14,7 +14,7 @@ The **ConvertSpreadsheetToCsv** endpoint reads a spreadsheet file uploaded from 
 
 ## **Convert Spreadsheet To CSV API**
 
-### API Endpoint
+### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv
@@ -22,44 +22,45 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Location | Requirement | Description                                                                                                                                                                |
-| :------------- | :----- | :------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData | Required    | The spreadsheet file to be converted. Accepts common formats like .xls, .xlsx, .xlsm. Must be provided as multipart/form‑data. Example: `myWorkbook.xlsx`.                |
-| outPath        | String | Query    | Optional    | Destination folder path where the converted CSV should be saved. If omitted, the CSV is returned directly in the response body. Example: `/output/reports/`.            |
-| outStorageName | String | Query    | Optional    | Name of the cloud storage service where the output file will be stored. When not supplied, the default storage configured for the Aspose.Cells account is used.          |
-| fontsLocation  | String | Query    | Optional    | Path to a folder containing custom fonts required by the spreadsheet. Enables correct rendering of cells that use non‑standard fonts.                                   |
-| region         | String | Query    | Optional    | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.                                   |
-| password       | String | Query    | Optional    | Password used to open password‑protected spreadsheets. If the file is encrypted and the password is omitted or incorrect, a 400/401 error is returned.                  |
+| Parameter Name | Type   | Location | Requirement | Description                                                                                                                                                     |
+| :------------- | :----- | :------- | :---------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData | Required    | The spreadsheet file to be converted. Accepts common formats like .xls, .xlsx, .xlsm. Must be provided as multipart/form‑data. Example: `myWorkbook.xlsx`.      |
+| outPath        | String | Query    | Optional    | Destination folder path where the converted CSV should be saved. If omitted, the CSV is returned directly in the response body. Example: `/output/reports/`.    |
+| outStorageName | String | Query    | Optional    | Name of the cloud storage service where the output file will be stored. When not supplied, the default storage configured for the Aspose.Cells account is used. |
+| fontsLocation  | String | Query    | Optional    | Path to a folder containing custom fonts required by the spreadsheet. Enables correct rendering of cells that use non‑standard fonts.                           |
+| region         | String | Query    | Optional    | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.                         |
+| password       | String | Query    | Optional    | Password used to open password‑protected spreadsheets. If the file is encrypted and the password is omitted or incorrect, a 400/401 error is returned.          |
 
 ### **Response**
 
 **Successful response (200 OK)**  
-Headers:  
-- `Content-Type: text/csv`  
-- `Content-Disposition: attachment; filename="<original_name>.csv"`  
-- `Content-Length: <size in bytes>`  
+Headers:
+
+- `Content-Type: text/csv`
+- `Content-Disposition: attachment; filename="<original_name>.csv"`
+- `Content-Length: <size in bytes>`
 
 Body: Binary stream containing the generated CSV file.
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized** – Invalid access token, or invalid client ID and secret.  
-- **404 Not Found** – The spreadsheet file is not accessible.  
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized** – Invalid access token, or invalid client ID and secret.
+- **404 Not Found** – The spreadsheet file is not accessible.
 - **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
 
 ## Where Should You Use the Convert Spreadsheet To CSV API?
 
-- **Data Export for Reporting Systems** – Generate CSV extracts from Excel‑based reports to feed BI tools or data warehouses without manual file handling.  
-- **Automated Batch Processing** – Convert large numbers of locally stored spreadsheets to CSV in a server‑side job, then stream results directly to downstream services.  
-- **Web Applications with File Uploads** – Allow end‑users to upload an Excel file and instantly receive a CSV version for further analysis or import into other platforms.  
+- **Data Export for Reporting Systems** – Generate CSV extracts from Excel‑based reports to feed BI tools or data warehouses without manual file handling.
+- **Automated Batch Processing** – Convert large numbers of locally stored spreadsheets to CSV in a server‑side job, then stream results directly to downstream services.
+- **Web Applications with File Uploads** – Allow end‑users to upload an Excel file and instantly receive a CSV version for further analysis or import into other platforms.
 - **Legacy System Integration** – Translate legacy spreadsheet formats into CSV for systems that only accept plain‑text delimited files.
 
 ## Why Use the Convert Spreadsheet To CSV API?
 
-- **Zero‑Upload Architecture** – No need to store the source file in cloud storage; conversion happens directly from the uploaded stream, saving time and storage costs.  
-- **High‑Performance Cloud Processing** – Leverages Aspose.Cells’ optimized conversion engine on scalable cloud servers, delivering fast CSV output even for large workbooks.  
-- **Simple Integration** – Single PUT request with optional query parameters; returns the CSV as a ready‑to‑download binary stream, eliminating post‑processing steps.  
+- **Zero‑Upload Architecture** – No need to store the source file in cloud storage; conversion happens directly from the uploaded stream, saving time and storage costs.
+- **High‑Performance Cloud Processing** – Leverages Aspose.Cells’ optimized conversion engine on scalable cloud servers, delivering fast CSV output even for large workbooks.
+- **Simple Integration** – Single PUT request with optional query parameters; returns the CSV as a ready‑to‑download binary stream, eliminating post‑processing steps.
 - **Full Feature Support** – Handles password‑protected files, custom fonts, and locale‑specific settings, ensuring accurate conversion for complex spreadsheets.
 
 ## How to Use the Convert Spreadsheet To CSV API with SDKs

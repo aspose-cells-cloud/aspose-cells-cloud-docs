@@ -1,32 +1,32 @@
----  
-title: "Set Zoom for an Excel Worksheet – Aspose.Cells Cloud API v3.0"  
-second_title: "Document"  
-linktitle: "Zoom"  
-type: docs  
-url: /worksheets/zoom/  
-aliases: [/set-zoom-in-excel-worksheet/]  
-keywords: "Aspose.Cells, Excel zoom, worksheet zoom, REST API, cloud SDK, Excel automation"  
-description: "Learn how to set worksheet zoom (10‑400 %) using Aspose.Cells Cloud API v3.0. Includes cURL, SDK examples, and error handling."  
-weight: 20  
----  
+---
+title: "Set Zoom for an Excel Worksheet – Aspose.Cells Cloud API v3.0"
+second_title: "Document"
+linktitle: "Zoom"
+type: docs
+url: /worksheets/zoom/
+aliases: [/set-zoom-in-excel-worksheet/]
+keywords: "Aspose.Cells, Excel zoom, worksheet zoom, REST API, cloud SDK, Excel automation"
+description: "Learn how to set worksheet zoom (10‑400 %) using Aspose.Cells Cloud API v3.0. Includes cURL, SDK examples, and error handling."
+weight: 20
+---
 
 This REST API sets the zoom value of an Excel worksheet. **Authentication** is required; include a valid Bearer JWT token in the `Authorization` header of every request.
 
-## REST API  
+## REST API
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom
 ```
 
-The following request parameters are required:
+### **Request parameters**
 
-| Parameter | Type    | Location | Description                                 |
-|-----------|---------|----------|---------------------------------------------|
-| name      | string  | path     | Name of the Excel file (workbook).          |
-| sheetName | string  | path     | Name of the worksheet to modify.            |
-| value     | integer | query    | Zoom percentage (allowed range **10 – 400**, e.g., `40` for 40 %). |
-| folder    | string  | query    | Folder path where the file is stored.       |
-| storageName| string | query    | Name of the storage service.                |
+| Parameter   | Type    | Location | Description                                                        |
+| ----------- | ------- | -------- | ------------------------------------------------------------------ |
+| name        | string  | path     | Name of the Excel file (workbook).                                 |
+| sheetName   | string  | path     | Name of the worksheet to modify.                                   |
+| value       | integer | query    | Zoom percentage (allowed range **10 – 400**, e.g., `40` for 40 %). |
+| folder      | string  | query    | Folder path where the file is stored.                              |
+| storageName | string  | query    | Name of the storage service.                                       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -62,14 +62,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/zoom?va
 **Error‑Response Information**  
 Possible HTTP status codes include:
 
-* `400 Bad Request` – missing or invalid parameters.  
-* `401 Unauthorized` – missing or invalid JWT token.  
-* `404 Not Found` – specified file or worksheet does not exist.  
-* `500 Internal Server Error` – unexpected server‑side error.  
+- `400 Bad Request` – missing or invalid parameters.
+- `401 Unauthorized` – missing or invalid JWT token.
+- `404 Not Found` – specified file or worksheet does not exist.
+- `500 Internal Server Error` – unexpected server‑side error.
 
 Each error response returns a JSON body containing a `Code` and a descriptive `Message`.
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -10,55 +10,38 @@ description: "Convert a specific Excel range stored in Aspose Cloud to PDF, PNG,
 weight: 100
 ---
 
-![Aspose.Cells Cloud v4.0](https://img.shields.io/badge/Aspose.Cells%20Cloud-v4.0-blue)
-
 Export a cloud spreadsheet/Excel range to a format file. The format file can be saved in the cloud or exported to local storage.
 
 ## Export Range as Format API
 
-### Prerequisites
-
-To call this API you must obtain an OAuth 2.0 access token.
-
-1. **Request a token** – Send a `POST` request to  
-   `https://api.aspose.cloud/connect/token` with your **client_id** and **client_secret**.  
-2. **Include the token** – Add the header `Authorization: Bearer <access_token>` to every request.  
-3. **Set the storage (optional)** – If you use a custom storage, specify `storageName` or `outStorageName` in the query string.
-
-### API Endpoint
+### Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{range}
 ```
 
-### Full Request Example
-
-```bash
-curl -X GET "https://api.aspose.cloud/v4.0/cells/MyBook.xlsx/worksheets/Sheet1/ranges/A1:C12?format=pdf&outPath=output/MyRange.pdf" \
-     -H "Authorization: Bearer {access_token}"
-```
-
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description |
-| :------------- | :----- | :------- | :---------- |
-| **name** | String | Path | (Required) The name of the workbook file to be retrieved. |
-| **worksheet** | String | Path | The worksheet name of the spreadsheet. |
-| **range** | String | Path | The range to be converted (e.g., `A1:C12`). |
-| **format** | String | Query | (Required) Desired output format (e.g., `pdf`, `png`, `svg`). |
-| **folder** | String | Query | (Optional) Folder path where the workbook is stored. |
-| **storageName** | String | Query | (Optional) Name of the storage if using a custom cloud storage. |
-| **outPath** | String | Query | (Optional) Path for the output file in cloud storage. |
-| **outStorageName** | String | Query | (Optional) Storage name for the output file. |
-| **fontsLocation** | String | Query | (Optional) Custom fonts location. |
-| **region** | String | Query | (Optional) Region setting of the spreadsheet. |
-| **password** | String | Query | (Optional) Password required to open the spreadsheet file. |
+| Parameter Name     | Type   | Location | Description                                                                                                                                        |
+| :----------------- | :----- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**           | String | Path     | (Required) The name of the workbook file to be retrieved.                                                                                          |
+| **worksheet**      | String | Path     | The worksheet name of the spreadsheet.                                                                                                             |
+| **range**          | String | Path     | The range to be converted (e.g., `A1:C12`).                                                                                                        |
+| **format**         | String | Query    | (Required) Desired output format (e.g., `pdf`, `png`, `svg`).                                                                                      |
+| **folder**         | String | Query    | (Optional) Folder path where the workbook is stored.                                                                                               |
+| **storageName**    | String | Query    | (Optional) Name of the storage if using a custom cloud storage.                                                                                    |
+| **outPath**        | String | Query    | (Optional) Path for the output file in cloud storage.                                                                                              |
+| **outStorageName** | String | Query    | (Optional) Storage name for the output file.                                                                                                       |
+| **fontsLocation**  | String | Query    | (Optional) Custom fonts location.                                                                                                                  |
+| **region**         | String | Query    | (Optional) Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
+| **password**       | String | Query    | (Optional) Password required to open the spreadsheet file.                                                                                         |
 
 ### Response Details
 
-The API returns a binary stream containing the exported file.  
-- **Content‑Type** – Corresponds to the requested format (e.g., `application/pdf`).  
-- **Response body** – The file data can be saved directly to disk or streamed to another service.  
+The API returns a binary stream containing the exported file.
+
+- **Content‑Type** – Corresponds to the requested format (e.g., `application/pdf`).
+- **Response body** – The file data can be saved directly to disk or streamed to another service.
 
 ```json
 [
@@ -74,54 +57,54 @@ The API returns a binary stream containing the exported file.
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
-- **404 Not Found** – The spreadsheet file is not accessible.  
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized** – Invalid access token, client ID, or client secret.
+- **404 Not Found** – The spreadsheet file is not accessible.
 - **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
 
 ## Where should you use the Export Range to another format API?
 
 ### Data Export & Migration Scenarios
 
-- **Database Integration** – Export specific Excel ranges directly to database systems.  
-- **Application Integration** – Feed selected spreadsheet data into SaaS applications.  
-- **System Migration** – Transfer specific data ranges between legacy and modern systems.  
+- **Database Integration** – Export specific Excel ranges directly to database systems.
+- **Application Integration** – Feed selected spreadsheet data into SaaS applications.
+- **System Migration** – Transfer specific data ranges between legacy and modern systems.
 - **Cross‑Platform Sharing** – Share focused data subsets across different platforms.
 
 ### Reporting & Analytics
 
-- **Targeted Reporting** – Export specific report sections to other formats for focused analysis.  
-- **Dashboard Data Feeds** – Supply specific data ranges to BI dashboard tools.  
-- **Performance Metrics** – Extract KPI ranges for performance‑tracking systems.  
+- **Targeted Reporting** – Export specific report sections to other formats for focused analysis.
+- **Dashboard Data Feeds** – Supply specific data ranges to BI dashboard tools.
+- **Performance Metrics** – Extract KPI ranges for performance‑tracking systems.
 - **Financial Reporting** – Export financial statement sections for external auditing.
 
 ### Development & Testing
 
-- **Test Data Management** – Export specific data ranges for testing purposes.  
-- **Development Environments** – Share sample data ranges with development teams.  
-- **API Testing** – Generate CSV test data from specific spreadsheet sections.  
+- **Test Data Management** – Export specific data ranges for testing purposes.
+- **Development Environments** – Share sample data ranges with development teams.
+- **API Testing** – Generate CSV test data from specific spreadsheet sections.
 - **Prototype Development** – Provide focused data sets for application prototypes.
 
 ### Business Operations
 
-- **Selective Data Sharing** – Share specific data ranges with external partners.  
-- **Partial Data Backup** – Backup critical data ranges in a chosen format.  
-- **Departmental Data Transfer** – Share specific data between departments.  
+- **Selective Data Sharing** – Share specific data ranges with external partners.
+- **Partial Data Backup** – Backup critical data ranges in a chosen format.
+- **Departmental Data Transfer** – Share specific data between departments.
 - **Compliance Reporting** – Export regulatory data ranges for compliance submissions.
 
 ### Automation Workflows
 
-- **Scheduled Range Exports** – Automatically export specific ranges on a schedule.  
-- **Trigger‑Based Extraction** – Export ranges based on business events or triggers.  
-- **Workflow Integration** – Integrate range exports into business process workflows.  
+- **Scheduled Range Exports** – Automatically export specific ranges on a schedule.
+- **Trigger‑Based Extraction** – Export ranges based on business events or triggers.
+- **Workflow Integration** – Integrate range exports into business process workflows.
 - **Batch Range Processing** – Process multiple specific ranges in batch operations.
 
 ## Why should you use the Export Range to another format API?
 
-- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development with comprehensive documentation. Compared to building custom chart‑rendering solutions, this significantly reduces development workload.  
-- **Reduced Labor Costs** – Less need for personnel dedicated to document consolidation.  
-- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.  
-- **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility issues.  
+- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development with comprehensive documentation. Compared to building custom chart‑rendering solutions, this significantly reduces development workload.
+- **Reduced Labor Costs** – Less need for personnel dedicated to document consolidation.
+- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.
+- **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility issues.
 - **Preserves Complex Excel Formatting** – Output files retain the original spreadsheet’s formatting.
 
 ## How to Use the Export Spreadsheet Range as Format API with SDKs?

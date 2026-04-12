@@ -1,59 +1,44 @@
----  
-title: "Aspose.Cells Cloud API – Get Files List (Folder Contents)"  
-second_title: "Document"  
-ArticleTitle: "Cloud-based Excel File Management Solution – Interface for Quickly Getting File List in the Cloud"  
-linktitle: "Get Files List"  
-type: docs  
-url: /get-files-list/  
-description: "Retrieve a list of files and sub‑folders from a specific folder in Aspose.Cells Cloud storage. Includes endpoint, parameters, sample request, and SDK examples."  
-keywords: "Aspose.Cells, API, Get Files List, Cloud Storage, Excel, REST"  
-weight: 100  
----  
+---
+title: "Aspose.Cells Cloud API – Get Files List (Folder Contents)"
+second_title: "Document"
+ArticleTitle: "Cloud-based Excel File Management Solution – Interface for Quickly Getting File List in the Cloud"
+linktitle: "Get Files List"
+type: docs
+url: /get-files-list/
+description: "Retrieve a list of files and sub‑folders from a specific folder in Aspose.Cells Cloud storage. Includes endpoint, parameters, sample request, and SDK examples."
+keywords: "Aspose.Cells, API, Get Files List, Cloud Storage, Excel, REST"
+weight: 100
+---
 
 ## **Excel API: Get Files List**
 
 The **Get Files List** operation returns the collection of files and sub‑folders stored in a specified folder.
 
-### API Endpoint  
+### Web API
 
 ```
 GET https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
 
-**Authentication** – Every request must contain a valid OAuth 2.0 bearer token:  
-
-```
-Authorization: Bearer <access_token>
-```
-
-**Sample Request**  
-
-```bash
-curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/folder/MyFolder?storageName=MyStorage" \
-     -H "Authorization: Bearer {access_token}"
-```  
-
-### Function Description  
+### Function Description
 
 The **getFilesList** API retrieves a comprehensive list of files and folders contained within a specified directory in Aspose.Cells Cloud storage. This endpoint is essential for efficient file management and supports a variety of Excel‑related file formats.
 
-### Request Parameters for Get Files List API  
+### Request Parameters for Get Files List API
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| **path**       | String | Path     | The path to the folder in cloud storage from which the file list is retrieved. |
-| **storageName**| String | Query    | (Optional) The name of the storage to access. |
-| **pageSize**   | Integer| Query    | (Optional) Maximum number of items to return per page. |
-| **pageNumber** | Integer| Query    | (Optional) Page number to retrieve (starting at 1). |
+| Parameter Name  | Type    | Location | Description                                                                    |
+| --------------- | ------- | -------- | ------------------------------------------------------------------------------ |
+| **path**        | String  | Path     | The path to the folder in cloud storage from which the file list is retrieved. |
+| **storageName** | String  | Query    | (Optional) The name of the storage to access.                                  |
+| **pageSize**    | Integer | Query    | (Optional) Maximum number of items to return per page.                         |
+| **pageNumber**  | Integer | Query    | (Optional) Page number to retrieve (starting at 1).                            |
 
-### Response Description  
+### Response Description
 
 ```json
 {
   "Name": "FilesList",
-  "Description": [
-    "Files list"
-  ],
+  "Description": ["Files list"],
   "Type": "Class",
   "IsAbstract": false,
   "Properties": [
@@ -80,21 +65,21 @@ The **getFilesList** API retrieves a comprehensive list of files and folders con
 }
 ```
 
-#### Common Error Responses  
+#### Common Error Responses
 
-| HTTP Status | Meaning                     | Response Body (example) |
-|-------------|----------------------------|--------------------------|
-| **200 OK**  | Successful retrieval.      | `{ "Value": [ … ] }` |
-| **400 Bad Request** | Invalid parameters. | `{ "Code": 400, "Message": "Invalid request." }` |
-| **401 Unauthorized** | Missing or invalid token. | `{ "Code": 401, "Message": "Authentication failed." }` |
-| **404 Not Found** | Specified folder does not exist. | `{ "Code": 404, "Message": "Folder not found." }` |
-| **500 Internal Server Error** | Server‑side problem. | `{ "Code": 500, "Message": "Unexpected error." }` |
+| HTTP Status                   | Meaning                          | Response Body (example)                                |
+| ----------------------------- | -------------------------------- | ------------------------------------------------------ |
+| **200 OK**                    | Successful retrieval.            | `{ "Value": [ … ] }`                                   |
+| **400 Bad Request**           | Invalid parameters.              | `{ "Code": 400, "Message": "Invalid request." }`       |
+| **401 Unauthorized**          | Missing or invalid token.        | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404 Not Found**             | Specified folder does not exist. | `{ "Code": 404, "Message": "Folder not found." }`      |
+| **500 Internal Server Error** | Server‑side problem.             | `{ "Code": 500, "Message": "Unexpected error." }`      |
 
-## OpenAPI Specification  
+## OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderController/GetFilesList) defines a publicly accessible programming interface that enables REST interactions directly from a web browser, facilitating easy integration and testing.
 
-## Excel API SDK  
+## Excel API SDK
 
 Utilizing an SDK is the optimal approach to accelerate your development process. An SDK manages low‑level details, allowing you to concentrate on your project tasks. For a complete list of Aspose.Cells Cloud SDKs, please visit the [GitHub repository](https://github.com/aspose-cells-cloud).
 

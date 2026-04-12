@@ -18,13 +18,13 @@ This REST API deletes all custom document properties and clears built‑in ones.
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type   | Location | Description            |
-|----------------|--------|----------|------------------------|
-| name           | string | path     | The document name.     |
-| folder         | string | query    | The document folder.   |
-| storageName    | string | query    | The storage name.      |
+| Parameter Name | Type   | Location | Description          |
+| -------------- | ------ | -------- | -------------------- |
+| name           | string | path     | The document name.   |
+| folder         | string | query    | The document folder. |
+| storageName    | string | query    | The storage name.    |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperties) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

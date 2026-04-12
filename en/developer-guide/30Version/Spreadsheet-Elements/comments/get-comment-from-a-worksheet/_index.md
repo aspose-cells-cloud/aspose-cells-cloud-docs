@@ -1,38 +1,30 @@
----  
-title: "Get Worksheet Comment – Aspose.Cells Cloud API Documentation"  
-type: docs  
-url: /comments/get/  
-aliases: [/get-comment-from-a-worksheet/]  
-keywords: "Aspose.Cells Cloud Get Worksheet Comment, REST API, Excel, worksheet comment"  
-description: "Learn how to retrieve a worksheet comment by cell name using Aspose.Cells Cloud API (v3.0). Includes request URL, parameters, cURL sample, and SDK code snippets."  
-weight: 10  
----  
+---
+title: "Get Worksheet Comment – Aspose.Cells Cloud API Documentation"
+type: docs
+url: /comments/get/
+aliases: [/get-comment-from-a-worksheet/]
+keywords: "Aspose.Cells Cloud Get Worksheet Comment, REST API, Excel, worksheet comment"
+description: "Learn how to retrieve a worksheet comment by cell name using Aspose.Cells Cloud API (v3.0). Includes request URL, parameters, cURL sample, and SDK code snippets."
+weight: 10
+---
 
 This REST API retrieves a worksheet comment by cell name using **Aspose.Cells Cloud**.
 
-## Authentication  
-
-Obtain a JWT token by calling the `/connect/token` endpoint with your client ID and client secret. Include the token in the request header:
-
-```http
-Authorization: Bearer <jwt token>
-```
-
-## REST API  
+## REST API
 
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
-The following table lists all request parameters required to retrieve a comment.
+### Request Parameters
 
-| Parameter Name | Type   | Location (URL Path / Query String) | Description |
-|----------------|--------|------------------------------------|-------------|
-| name           | string | URL Path                           | The name of the Excel file. |
-| sheetName      | string | URL Path                           | The name of the worksheet that contains the comment. |
+| Parameter Name | Type   | Location (URL Path / Query String) | Description                                                       |
+| -------------- | ------ | ---------------------------------- | ----------------------------------------------------------------- |
+| name           | string | URL Path                           | The name of the Excel file.                                       |
+| sheetName      | string | URL Path                           | The name of the worksheet that contains the comment.              |
 | cellName       | string | URL Path                           | The cell address (e.g., **A1**) whose comment is being retrieved. |
-| folder         | string | Query String                       | The folder path where the document is stored. |
-| storageName    | string | Query String                       | The name of the storage service. |
+| folder         | string | Query String                       | The folder path where the document is stored.                     |
+| storageName    | string | Query String                       | The name of the storage service.                                  |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetComment) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -78,20 +70,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 {{< /tabs >}}
 
-## Common Errors  
+## Common Errors
 
-- **401 Unauthorized** – Verify that the JWT token is valid, not expired, and correctly placed in the `Authorization` header.  
-- **404 Not Found** – Ensure the file name, worksheet name, and cell address are correct and that the file exists in the specified folder/storage.  
+- **401 Unauthorized** – Verify that the JWT token is valid, not expired, and correctly placed in the `Authorization` header.
+- **404 Not Found** – Ensure the file name, worksheet name, and cell address are correct and that the file exists in the specified folder/storage.
 - **500 Internal Server Error** – Check the request payload for malformed data and confirm that the service is operational.
 
-## Next Steps  
-
-1. Obtain a JWT token (see **Authentication**).  
-2. Replace placeholder values (`{name}`, `{sheetName}`, `{cellName}`, `<jwt token>`) in the request URL and header.  
-3. Execute the cURL command or use one of the SDK examples below.  
-4. Parse the JSON response to access comment details.
-
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -1,31 +1,29 @@
----  
-title: "Get Cell Data from a Worksheet"  
-type: docs  
-url: /get-cell-data-from-a-worksheet/  
-weight: 10  
-keywords: "Aspose.Cells Cloud, get cell data, Excel API, REST API, cell value, worksheet API, Aspose API example"  
-description: "Retrieve a single cell’s value, type, and style from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL, SDK examples, parameters, and error handling."  
----  
+---
+title: "Get Cell Data from a Worksheet"
+type: docs
+url: /get-cell-data-from-a-worksheet/
+weight: 10
+keywords: "Aspose.Cells Cloud, get cell data, Excel API, REST API, cell value, worksheet API, Aspose API example"
+description: "Retrieve a single cell’s value, type, and style from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL, SDK examples, parameters, and error handling."
+---
 
-This REST API retrieves a cell from an Excel worksheet when the **`cellOrMethodName`** parameter specifies a cell name (an A1‑style address such as `A3`).  
-
-**Authentication** – The service uses OAuth 2.0 client‑credentials flow. Provide `client_id` and `client_secret` as query parameters, or include a bearer token in the `Authorization` header (`Authorization: Bearer <access_token>`).  
+This REST API retrieves a cell from an Excel worksheet when the **`cellOrMethodName`** parameter specifies a cell name (an A1‑style address such as `A3`).
 
 **Request parameters**
 
-| Parameter          | Type   | Required | Description                                                                                                                                 |
-|--------------------|--------|----------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `client_id`        | string | Yes      | Your Aspose Cloud client identifier.                                                                                                        |
-| `client_secret`    | string | Yes      | Your Aspose Cloud client secret.                                                                                                            |
-| `storage`          | string | No       | Name of the cloud storage to use (e.g., `Aspose`). If omitted, the default storage is used.                                                |
-| `folder`           | string | No       | Path to the folder containing the workbook in the selected storage.                                                                        |
+| Parameter          | Type   | Required | Description                                                                                                                              |
+| ------------------ | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `client_id`        | string | Yes      | Your Aspose Cloud client identifier.                                                                                                     |
+| `client_secret`    | string | Yes      | Your Aspose Cloud client secret.                                                                                                         |
+| `storage`          | string | No       | Name of the cloud storage to use (e.g., `Aspose`). If omitted, the default storage is used.                                              |
+| `folder`           | string | No       | Path to the folder containing the workbook in the selected storage.                                                                      |
 | `cellOrMethodName` | string | Yes      | The cell address in A1 notation (e.g., `A3`). It can also be a method name for advanced operations (not covered in this simple example). |
-| `fileName`         | string | Yes      | Name of the Excel file (e.g., `myWorkbook.xlsx`).                                                                                           |
-| `sheetName`        | string | Yes      | Name of the worksheet that contains the target cell (e.g., `Sheet1`).                                                                      |
+| `fileName`         | string | Yes      | Name of the Excel file (e.g., `myWorkbook.xlsx`).                                                                                        |
+| `sheetName`        | string | Yes      | Name of the worksheet that contains the target cell (e.g., `Sheet1`).                                                                    |
 
----  
+---
 
-### cURL Example  
+### cURL Example
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

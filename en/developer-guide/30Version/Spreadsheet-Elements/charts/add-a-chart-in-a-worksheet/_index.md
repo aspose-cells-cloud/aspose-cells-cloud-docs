@@ -1,16 +1,22 @@
----  
-title: "Add a Chart to a Worksheet"  
-type: docs  
-url: /charts/add/  
-aliases: [/add-a-chart-in-a-worksheet/]  
-weight: 20  
-description: "Learn how to add a chart to an Excel worksheet using Aspose.Cells Cloud API v3.0. Includes endpoint, parameters, cURL example, and SDK snippets."  
-keywords: ["add chart Aspose.Cells", "Aspose.Cells add chart API", "chart API REST", "Aspose.Cells SDK examples"]  
----  
+---
+title: "Add a Chart to a Worksheet"
+type: docs
+url: /charts/add/
+aliases: [/add-a-chart-in-a-worksheet/]
+weight: 20
+description: "Learn how to add a chart to an Excel worksheet using Aspose.Cells Cloud API v3.0. Includes endpoint, parameters, cURL example, and SDK snippets."
+keywords:
+  [
+    "add chart Aspose.Cells",
+    "Aspose.Cells add chart API",
+    "chart API REST",
+    "Aspose.Cells SDK examples",
+  ]
+---
 
 This REST API adds a new chart to a worksheet. **Prerequisite:** a valid JWT token must be supplied in the `Authorization` header.
 
-## REST API  
+## REST API
 
 ```bash
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
@@ -18,26 +24,26 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 
 The request parameters are:
 
-| Parameter Name          | Type    | Location | Description |
-|-------------------------|---------|----------|-------------|
-| **name**                | string  | path     | Workbook name. |
-| **sheetName**           | string  | path     | Worksheet name. |
+| Parameter Name          | Type    | Location | Description                                                                                                                                                                              |
+| ----------------------- | ------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **name**                | string  | path     | Workbook name.                                                                                                                                                                           |
+| **sheetName**           | string  | path     | Worksheet name.                                                                                                                                                                          |
 | **chartType**           | string  | query    | Chart type (see the **Type** property in the chart resource). Supported chart types include **Bar**, **Column**, **Line**, **Pie**, **Scatter**, **Area**, **Doughnut**, **Radar**, etc. |
-| **upperLeftRow**        | integer | query    | Upper-left row index of the chart area (0‑based). |
-| **upperLeftColumn**     | integer | query    | Upper-left column index of the chart area (0‑based). |
-| **lowerRightRow**       | integer | query    | Lower-right row index of the chart area (0‑based). |
-| **lowerRightColumn**    | integer | query    | Lower-right column index of the chart area (0‑based). |
-| **area**                | string  | query    | Range that provides the values to plot (e.g., `A1:B5`). |
-| **isVertical**          | boolean | query    | Indicates whether the chart orientation is vertical. |
-| **categoryData**        | string  | query    | Range of category‑axis values (e.g., `D1:E10`). |
-| **isAutoGetSerialName**| boolean | query    | If **true**, series names are automatically generated. |
-| **title**               | string  | query    | Title of the chart. |
-| **folder**              | string  | query    | Folder that contains the workbook. |
-| **storageName**         | string  | query    | Name of the storage. |
-| **dataLabels**          | boolean | query    | Show data labels when **true**. |
-| **dataLabelsPosition**  | string  | query    | Position of data labels (e.g., `Above`). |
-| **pivotTableSheet**     | string  | query    | Name of the sheet that contains the pivot table. |
-| **pivotTableName**      | string  | query    | Name of the pivot table. |
+| **upperLeftRow**        | integer | query    | Upper-left row index of the chart area (0‑based).                                                                                                                                        |
+| **upperLeftColumn**     | integer | query    | Upper-left column index of the chart area (0‑based).                                                                                                                                     |
+| **lowerRightRow**       | integer | query    | Lower-right row index of the chart area (0‑based).                                                                                                                                       |
+| **lowerRightColumn**    | integer | query    | Lower-right column index of the chart area (0‑based).                                                                                                                                    |
+| **area**                | string  | query    | Range that provides the values to plot (e.g., `A1:B5`).                                                                                                                                  |
+| **isVertical**          | boolean | query    | Indicates whether the chart orientation is vertical.                                                                                                                                     |
+| **categoryData**        | string  | query    | Range of category‑axis values (e.g., `D1:E10`).                                                                                                                                          |
+| **isAutoGetSerialName** | boolean | query    | If **true**, series names are automatically generated.                                                                                                                                   |
+| **title**               | string  | query    | Title of the chart.                                                                                                                                                                      |
+| **folder**              | string  | query    | Folder that contains the workbook.                                                                                                                                                       |
+| **storageName**         | string  | query    | Name of the storage.                                                                                                                                                                     |
+| **dataLabels**          | boolean | query    | Show data labels when **true**.                                                                                                                                                          |
+| **dataLabelsPosition**  | string  | query    | Position of data labels (e.g., `Above`).                                                                                                                                                 |
+| **pivotTableSheet**     | string  | query    | Name of the sheet that contains the pivot table.                                                                                                                                         |
+| **pivotTableName**      | string  | query    | Name of the pivot table.                                                                                                                                                                 |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -70,13 +76,14 @@ curl -v "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/ch
 
 {{< /tabs >}}
 
-**Common error responses**  
-- **400 Bad Request** – Invalid parameters or missing required fields.  
-- **401 Unauthorized** – Missing or invalid JWT token.  
-- **404 Not Found** – Specified workbook, worksheet, or chart does not exist.  
+**Common error responses**
+
+- **400 Bad Request** – Invalid parameters or missing required fields.
+- **401 Unauthorized** – Missing or invalid JWT token.
+- **404 Not Found** – Specified workbook, worksheet, or chart does not exist.
 - **500 Internal Server Error** – Unexpected server error.
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK abstracts low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

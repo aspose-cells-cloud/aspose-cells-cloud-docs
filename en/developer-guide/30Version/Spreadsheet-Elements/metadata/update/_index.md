@@ -19,10 +19,10 @@ POST http://api.aspose.cloud/v3.0/cells/metadata/update
 
 ### Request parameters
 
-| Parameter Name      | Type   | Location                     | Description                                   |
-|---------------------|--------|------------------------------|-----------------------------------------------|
-| file                | file   | formData                     | The Excel file to upload.                     |
-| DocumentProperties  | object | HTTP body (JSON)             | Document properties to set for the Excel file.|
+| Parameter Name     | Type   | Location         | Description                                    |
+| ------------------ | ------ | ---------------- | ---------------------------------------------- |
+| file               | file   | formData         | The Excel file to upload.                      |
+| DocumentProperties | object | HTTP body (JSON) | Document properties to set for the Excel file. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PostMetadata) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

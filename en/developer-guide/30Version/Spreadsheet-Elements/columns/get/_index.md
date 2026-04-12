@@ -15,39 +15,21 @@ weight: 10
 
 This REST API reads worksheet column data by the column’s index.
 
-### Prerequisites
-
-- A valid Aspose Cloud account.  
-- An OAuth 2.0 access token (Bearer token).  
-- The workbook must be stored in Aspose Cloud storage or a location you specify with `folder`/`storageName`.
-
 ## REST API
 
 ```bash
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}
 ```
 
-> **Note:** All Aspose.Cloud endpoints require **HTTPS**.
+### Request parameters
 
-### Authentication
-
-To call the API you must include an `Authorization` header containing a valid Bearer token:
-
-```bash
--H "Authorization: Bearer <access_token>"
-```
-
-You can obtain an access token by following the [OAuth 2.0 token‑generation guide](https://docs.aspose.cloud/authentication/).
-
-### Parameters
-
-| Parameter Name | Type    | Location | Description                                                                 | Required |
-|----------------|---------|----------|-----------------------------------------------------------------------------|----------|
-| **name**       | string  | path     | The name of the workbook file.                                              | Yes      |
-| **sheetName**  | string  | path     | The name of the worksheet that contains the column.                         | Yes      |
-| **columnIndex**| integer | path     | Zero‑based index of the column to retrieve.                                 | Yes      |
-| **folder**     | string  | query    | The folder path in storage where the workbook is located. *(optional)*    | No       |
-| **storageName**| string  | query    | The name of the storage service (e.g., Aspose Cloud Storage). *(optional)*| No       |
+| Parameter Name  | Type    | Location | Description                                                                | Required |
+| --------------- | ------- | -------- | -------------------------------------------------------------------------- | -------- |
+| **name**        | string  | path     | The name of the workbook file.                                             | Yes      |
+| **sheetName**   | string  | path     | The name of the worksheet that contains the column.                        | Yes      |
+| **columnIndex** | integer | path     | Zero‑based index of the column to retrieve.                                | Yes      |
+| **folder**      | string  | query    | The folder path in storage where the workbook is located. _(optional)_     | No       |
+| **storageName** | string  | query    | The name of the storage service (e.g., Aspose Cloud Storage). _(optional)_ | No       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -86,12 +68,12 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/test.xlsx/worksheets/Sheet1/cel
 
 ### Possible Errors
 
-| HTTP Status | Code | Message                              | When it occurs                                    |
-|-------------|------|--------------------------------------|---------------------------------------------------|
-| 400         | 400  | Bad Request                          | Required parameter is missing or malformed.      |
-| 401         | 401  | Unauthorized                         | Missing or invalid `Authorization` header.       |
-| 404         | 404  | Not Found                            | The specified workbook, worksheet, or column does not exist. |
-| 500         | 500  | Internal Server Error                | Unexpected server‑side problem.                   |
+| HTTP Status | Code | Message               | When it occurs                                               |
+| ----------- | ---- | --------------------- | ------------------------------------------------------------ |
+| 400         | 400  | Bad Request           | Required parameter is missing or malformed.                  |
+| 401         | 401  | Unauthorized          | Missing or invalid `Authorization` header.                   |
+| 404         | 404  | Not Found             | The specified workbook, worksheet, or column does not exist. |
+| 500         | 500  | Internal Server Error | Unexpected server‑side problem.                              |
 
 **Example – 404 Not Found**
 

@@ -14,7 +14,7 @@ The **ConvertWorksheetToHtml** endpoint reads an Excel workbook from the local f
 
 ## Convert worksheet to HTML API
 
-### API Endpoint
+### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/html
@@ -22,21 +22,21 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/html
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Required/Optional | Description                                                                                                                                                                                          |
-| :------------- | :----- | :------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Parameter Name | Type   | Location | Required/Optional | Description                                                                                                                                                                                                |
+| :------------- | :----- | :------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Spreadsheet    | File   | Required | FormData          | Binary Excel file to be processed. Must be a valid .xlsx, .xls, .xlsb, etc. Example: `myWorkbook.xlsx`. The Excel file is read directly from the request body; no prior upload to cloud storage is needed. |
-| worksheet      | String | Required | Query             | Name of the worksheet to convert (case‑sensitive). Must exist in the supplied workbook. Example: `Sheet1`.                                                                                           |
-| outPath        | String | Optional | Query             | Target folder path (in cloud storage) where the generated HTML file will be saved. If omitted, the file is returned directly in the response. Example: `/output/html/`.                              |
-| outStorageName | String | Optional | Query             | Name of the cloud storage service to use for `outPath`. Required only when `outPath` points to a non‑default storage.                                                                                |
-| fontsLocation  | String | Optional | Query             | Absolute path to a folder containing custom TrueType/OpenType fonts that should be used during conversion. Enables correct rendering of non‑standard characters.                                     |
-| region         | String | Optional | Query             | Locale identifier that influences number/date formatting (e.g., `en-US`, `fr-FR`). Defaults to the workbook's internal region setting.                                                               |
-| password       | String | Optional | Query             | Password required to open a protected workbook. Omit for unprotected files.                                                                                                                          |
+| worksheet      | String | Required | Query             | Name of the worksheet to convert (case‑sensitive). Must exist in the supplied workbook. Example: `Sheet1`.                                                                                                 |
+| outPath        | String | Optional | Query             | Target folder path (in cloud storage) where the generated HTML file will be saved. If omitted, the file is returned directly in the response. Example: `/output/html/`.                                    |
+| outStorageName | String | Optional | Query             | Name of the cloud storage service to use for `outPath`. Required only when `outPath` points to a non‑default storage.                                                                                      |
+| fontsLocation  | String | Optional | Query             | Absolute path to a folder containing custom TrueType/OpenType fonts that should be used during conversion. Enables correct rendering of non‑standard characters.                                           |
+| region         | String | Optional | Query             | Locale identifier that influences number/date formatting (e.g., `en-US`, `fr-FR`). Defaults to the workbook's internal region setting.                                                                     |
+| password       | String | Optional | Query             | Password required to open a protected workbook. Omit for unprotected files.                                                                                                                                |
 
 ### Response
 
 **Successful response (200 OK)**  
 Content‑Type: `text/html`  
-Body: binary stream of the generated HTML file representing the requested worksheet.  
+Body: binary stream of the generated HTML file representing the requested worksheet.
 
 Headers:
 
@@ -47,23 +47,23 @@ If `outPath` is supplied, the response still returns the HTML stream, and the fi
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized** – Invalid access token, client‑id, or client‑secret.  
-- **404 Not Found** – The spreadsheet file is not accessible.  
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized** – Invalid access token, client‑id, or client‑secret.
+- **404 Not Found** – The spreadsheet file is not accessible.
 - **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
 
 ## Where should we use the Convert worksheet to HTML API?
 
-- Embed live spreadsheet data in a web portal – Convert a financial‑report worksheet to HTML for direct viewing in browsers without requiring Excel plugins.  
-- Generate printable HTML invoices from an Excel template – Automate the creation of web‑ready invoice pages from a predefined worksheet.  
-- Create documentation snippets – Convert design‑specification sheets to HTML fragments that can be inserted into technical manuals or wikis.  
+- Embed live spreadsheet data in a web portal – Convert a financial‑report worksheet to HTML for direct viewing in browsers without requiring Excel plugins.
+- Generate printable HTML invoices from an Excel template – Automate the creation of web‑ready invoice pages from a predefined worksheet.
+- Create documentation snippets – Convert design‑specification sheets to HTML fragments that can be inserted into technical manuals or wikis.
 - Develop low‑code BI dashboards – Pull worksheet data, convert it to HTML, and display it within custom dashboard widgets.
 
 ## Why should you use the Convert worksheet to HTML API?
 
-- **Zero‑Upload Workflow** – Convert local files directly in the cloud, eliminating the need to transfer large workbooks to storage first.  
-- **High‑Performance Rendering** – Server‑side conversion leverages Aspose's optimized engine, delivering fast and accurate HTML output.  
-- **Full Control Over Output** – Optional parameters (custom fonts, region, password) let you tailor the HTML to match locale and branding requirements.  
+- **Zero‑Upload Workflow** – Convert local files directly in the cloud, eliminating the need to transfer large workbooks to storage first.
+- **High‑Performance Rendering** – Server‑side conversion leverages Aspose's optimized engine, delivering fast and accurate HTML output.
+- **Full Control Over Output** – Optional parameters (custom fonts, region, password) let you tailor the HTML to match locale and branding requirements.
 - **Seamless Integration** – Simple PUT request with multipart/form‑data fits naturally into CI/CD pipelines, micro‑services, or serverless functions.
 
 ## How to use the Convert worksheet to HTML API with SDKs

@@ -1,45 +1,38 @@
----  
-title: "Get Conditional Formatting Rules"  
-type: docs  
-url: /conditional-formattings/get-all/  
-aliases: [/get-conditional-formattings-of-worksheet/]  
-keywords: "Aspose.Cells Cloud, REST API, Excel, Conditional Formatting, Worksheet, Conditional Formatting API"  
-description: "Retrieve all conditional formatting rules applied to a worksheet using the Aspose.Cells Cloud REST API. Includes request syntax, authentication steps, parameters, concise response examples, and error handling."  
-weight: 20  
----  
+---
+title: "Get Conditional Formatting Rules"
+type: docs
+url: /conditional-formattings/get-all/
+aliases: [/get-conditional-formattings-of-worksheet/]
+keywords: "Aspose.Cells Cloud, REST API, Excel, Conditional Formatting, Worksheet, Conditional Formatting API"
+description: "Retrieve all conditional formatting rules applied to a worksheet using the Aspose.Cells Cloud REST API. Includes request syntax, authentication steps, parameters, concise response examples, and error handling."
+weight: 20
+---
 
-This REST API retrieves the conditional‑formatting rules that are applied to a worksheet.  
+This REST API retrieves the conditional‑formatting rules that are applied to a worksheet.
 
-## Prerequisites / Authentication  
-
-The Aspose.Cells Cloud API uses OAuth 2.0. Obtain an access token by sending a **client‑credentials** request to  
-
-```
-https://api.aspose.cloud/connect/token
-```  
-
-with your **client ID** and **client secret**. The response contains an `access_token` that must be supplied in every request via the `Authorization` header:
-
-```
-Authorization: Bearer <access_token>
-```  
-
-> **Note** – All examples below use **HTTPS** endpoints.
-
-## REST API  
+## REST API
 
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings
-```  
+```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type   | Location | Description                                   |
-|----------------|--------|----------|-----------------------------------------------|
-| name           | string | path     | The name of the Excel file.                   |
-| sheetName      | string | path     | The name of the worksheet.                    |
-| folder         | string | query    | The folder path where the file is stored.     |
-| storageName    | string | query    | The name of the storage service (optional).  |
+| Parameter Name | Type   | Location | Description                                 |
+| -------------- | ------ | -------- | ------------------------------------------- |
+| name           | string | path     | The name of the Excel file.                 |
+| sheetName      | string | path     | The name of the worksheet.                  |
+| folder         | string | query    | The folder path where the file is stored.   |
+| storageName    | string | query    | The name of the storage service (optional). |
+
+### Error Responses
+
+| HTTP Code | Reason                                             | Example Body                                                        |
+| --------- | -------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**   | Bad Request – missing or invalid parameters.       | `{ "Code":"400", "Message":"Invalid parameter value." }`            |
+| **401**   | Unauthorized – missing or invalid JWT token.       | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
+| **404**   | Not Found – workbook or worksheet does not exist.  | `{ "Code":"404", "Message":"File not found." }`                     |
+| **500**   | Internal Server Error – unexpected server failure. | `{ "Code":"500", "Message":"An unexpected error occurred." }`       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -89,26 +82,17 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/condit
 }
 ```
 
-*The example above shows only the most relevant fields to keep the payload concise.*  
+_The example above shows only the most relevant fields to keep the payload concise._
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Error Responses  
+## Cloud SDK Family
 
-| HTTP Status | Description                              | Example JSON |
-|-------------|------------------------------------------|--------------|
-| 400         | Bad request – missing or invalid parameters. | `{ "Error": "Invalid parameter", "Code": 400 }` |
-| 401         | Unauthorized – missing or expired token. | `{ "Error": "Invalid token", "Code": 401 }` |
-| 404         | Not found – the file or worksheet does not exist. | `{ "Error": "Resource not found", "Code": 404 }` |
-| 500         | Internal server error – unexpected condition on the server. | `{ "Error": "Server error", "Code": 500 }` |
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-## SDK Source  
-
-The Aspose.Cells Cloud SDKs can be downloaded from the following page: [Available SDKs](/cells/available-sdks/)
-
-### SDK Examples  
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 

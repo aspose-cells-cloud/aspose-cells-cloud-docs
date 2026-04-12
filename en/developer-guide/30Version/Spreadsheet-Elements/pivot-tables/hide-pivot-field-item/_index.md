@@ -18,20 +18,20 @@ This REST API hides a pivot field item in a pivot table.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Hide
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name   | Type    | Location                     | Description                                                |
-|------------------|---------|------------------------------|------------------------------------------------------------|
-| name             | string  | path                         | Name of the Excel file.                                    |
-| sheetName        | string  | path                         | Worksheet that contains the pivot table.                  |
-| pivotTableIndex  | integer | path                         | Index of the pivot table within the worksheet.            |
-| pivotFieldType   | string  | query                        | Type of the pivot field (Row, Column, Page, Data, etc.). |
-| fieldIndex       | integer | query                        | Zero‑based index of the pivot field to modify.            |
-| itemIndex        | integer | query                        | Index of the specific item within the field to hide.      |
-| isHide           | boolean | query                        | Set to **true** to hide the item; **false** to show it.    |
-| needReCalculate  | boolean | query                        | Indicates whether the pivot table should be recalculated after the change. Default is **false**. |
-| folder           | string  | query                        | Folder path where the workbook is stored.                  |
-| storageName      | string  | query                        | Name of the storage service.                               |
+| Parameter Name  | Type    | Location | Description                                                                                      |
+| --------------- | ------- | -------- | ------------------------------------------------------------------------------------------------ |
+| name            | string  | path     | Name of the Excel file.                                                                          |
+| sheetName       | string  | path     | Worksheet that contains the pivot table.                                                         |
+| pivotTableIndex | integer | path     | Index of the pivot table within the worksheet.                                                   |
+| pivotFieldType  | string  | query    | Type of the pivot field (Row, Column, Page, Data, etc.).                                         |
+| fieldIndex      | integer | query    | Zero‑based index of the pivot field to modify.                                                   |
+| itemIndex       | integer | query    | Index of the specific item within the field to hide.                                             |
+| isHide          | boolean | query    | Set to **true** to hide the item; **false** to show it.                                          |
+| needReCalculate | boolean | query    | Indicates whether the pivot table should be recalculated after the change. Default is **false**. |
+| folder          | string  | query    | Folder path where the workbook is stored.                                                        |
+| storageName     | string  | query    | Name of the storage service.                                                                     |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableFieldHideItem) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

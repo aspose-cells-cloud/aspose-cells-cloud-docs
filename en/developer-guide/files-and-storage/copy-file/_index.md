@@ -12,7 +12,7 @@ weight: 100
 
 ## **Excel API: Copy File**
 
-### API Endpoint
+### Web API
 
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
@@ -24,13 +24,13 @@ The **copyFile** API allows users to duplicate an Excel file from a specified so
 
 ### The request parameters of the **copyFile** API are
 
-| Parameter Name  | Type   | Path/Query String/HTTPBody | Description                                 |
-|-----------------|--------|----------------------------|---------------------------------------------|
-| srcPath         | String | Path                       | The source path of the file to be copied.   |
+| Parameter Name  | Type   | Path/Query String/HTTPBody | Description                                        |
+| --------------- | ------ | -------------------------- | -------------------------------------------------- |
+| srcPath         | String | Path                       | The source path of the file to be copied.          |
 | destPath        | String | Query                      | The destination path where the file will be saved. |
-| srcStorageName  | String | Query                      | The name of the source storage.             |
-| destStorageName | String | Query                      | The name of the destination storage.        |
-| versionId       | String | Query                      | Optional version ID of the file to copy.   |
+| srcStorageName  | String | Query                      | The name of the source storage.                    |
+| destStorageName | String | Query                      | The name of the destination storage.               |
+| versionId       | String | Query                      | Optional version ID of the file to copy.           |
 
 ### **Response Description**
 

@@ -12,27 +12,26 @@ weight: 180
 
 This REST API adds a background image to a worksheet.
 
-> **Prerequisite:** The workbook must already exist in Aspose Cloud storage, and you need a valid JWT access token. Obtain a token through the OAuth2 `/connect/token` endpoint (see the authentication guide).
-
 ## REST API
 
 ```bash
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| name           | string | path     | Name of the Excel workbook. |
-| sheetName      | string | path     | Name of the worksheet to which the image is applied. |
+| Parameter name | Type   | Location | Description                                                    |
+| -------------- | ------ | -------- | -------------------------------------------------------------- |
+| name           | string | path     | Name of the Excel workbook.                                    |
+| sheetName      | string | path     | Name of the worksheet to which the image is applied.           |
 | imageFile      | file   | body     | Binary image file (PNG, JPEG, BMP, etc.) to set as background. |
-| folder         | string | query    | Folder in storage where the workbook is located. |
-| storageName    | string | query    | Name of the Aspose Cloud storage. |
+| folder         | string | query    | Folder in storage where the workbook is located.               |
+| storageName    | string | query    | Name of the Aspose Cloud storage.                              |
 
-**Supported formats & limits**  
-- Accepted image extensions: **PNG, JPEG, BMP, GIF**.  
-- Maximum file size: **5 MB**.  
+**Supported formats & limits**
+
+- Accepted image extensions: **PNG, JPEG, BMP, GIF**.
+- Maximum file size: **5 MB**.
 - The image is tiled to fill the entire worksheet background.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
@@ -63,14 +62,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/b
 }
 ```
 
-*Possible error responses*  
+_Possible error responses_
 
-| HTTP Code | Description |
-|-----------|-------------|
-| 400 | Bad request – missing or invalid parameters. |
-| 401 | Unauthorized – invalid or expired JWT token. |
-| 404 | Not found – workbook or worksheet does not exist. |
-| 500 | Internal server error – unexpected condition on the server. |
+| HTTP Code | Description                                                 |
+| --------- | ----------------------------------------------------------- |
+| 400       | Bad request – missing or invalid parameters.                |
+| 401       | Unauthorized – invalid or expired JWT token.                |
+| 404       | Not found – workbook or worksheet does not exist.           |
+| 500       | Internal server error – unexpected condition on the server. |
 
 {{< /tab >}}
 

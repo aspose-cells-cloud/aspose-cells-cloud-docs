@@ -18,19 +18,19 @@ This REST API adds a pivot table into a worksheet.
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location                     | Description                                                                                                                                                     |
-|----------------|--------|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| name           | string | path                         | The name of the Excel document.                                                                                                                                 |
-| sheetName      | string | path                         | The name of the worksheet where the pivot table will be created.                                                                                               |
-| request        | object | body                         | `CreatePivotTableRequest` DTO containing the pivot table definition.                                                                                          |
-| folder         | string | query                        | The folder that contains the document.                                                                                                                          |
-| storageName    | string | query                        | The name of the storage where the document is located.                                                                                                         |
-| sourceData     | string | query                        | The range that provides the source data for the new pivot table cache (e.g., `A5:E10`).                                                                        |
-| destCellName   | string | query                        | The address of the upper‑left cell of the destination range for the pivot table report.                                                                        |
-| tableName      | string | query                        | The name assigned to the new pivot table.                                                                                                                      |
-| useSameSource  | boolean| query                        | When `true`, the new pivot table reuses an existing data source, saving memory if another pivot table has already used this source.                           |
+| Parameter Name | Type    | Location | Description                                                                                                                         |
+| -------------- | ------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| name           | string  | path     | The name of the Excel document.                                                                                                     |
+| sheetName      | string  | path     | The name of the worksheet where the pivot table will be created.                                                                    |
+| request        | object  | body     | `CreatePivotTableRequest` DTO containing the pivot table definition.                                                                |
+| folder         | string  | query    | The folder that contains the document.                                                                                              |
+| storageName    | string  | query    | The name of the storage where the document is located.                                                                              |
+| sourceData     | string  | query    | The range that provides the source data for the new pivot table cache (e.g., `A5:E10`).                                             |
+| destCellName   | string  | query    | The address of the upper‑left cell of the destination range for the pivot table report.                                             |
+| tableName      | string  | query    | The name assigned to the new pivot table.                                                                                           |
+| useSameSource  | boolean | query    | When `true`, the new pivot table reuses an existing data source, saving memory if another pivot table has already used this source. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTable) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

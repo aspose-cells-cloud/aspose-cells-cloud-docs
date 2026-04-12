@@ -18,16 +18,25 @@ This REST API updates a picture, identified by its index, on an Excel worksheet.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location                     | Description                                                     |
-|----------------|--------|------------------------------|-----------------------------------------------------------------|
-| name           | string | path                         | The name of the Excel document.                                 |
-| sheetName      | string | path                         | The name of the worksheet that contains the picture.           |
-| pictureIndex   | integer| path                         | Zero‑based index of the picture to be updated.                  |
-| picture        | object | body                         | JSON object that describes the picture properties to update.   |
-| folder         | string | query                        | The folder where the document is stored.                        |
-| storageName    | string | query                        | The name of the storage service.                                |
+| Parameter Name | Type    | Location | Description                                                  |
+| -------------- | ------- | -------- | ------------------------------------------------------------ |
+| name           | string  | path     | The name of the Excel document.                              |
+| sheetName      | string  | path     | The name of the worksheet that contains the picture.         |
+| pictureIndex   | integer | path     | Zero‑based index of the picture to be updated.               |
+| picture        | object  | body     | JSON object that describes the picture properties to update. |
+| folder         | string  | query    | The folder where the document is stored.                     |
+| storageName    | string  | query    | The name of the storage service.                             |
+
+### Error Responses
+
+| HTTP Code | Description                                                                    |
+| --------- | ------------------------------------------------------------------------------ |
+| 401       | Unauthorized – missing or invalid token.                                       |
+| 404       | Not Found – the specified file, worksheet, or page‑break index does not exist. |
+| 400       | Bad Request – malformed request syntax or invalid parameters.                  |
+| 500       | Internal Server Error – an unexpected condition was encountered.               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

@@ -4,38 +4,14 @@ second_title: "Document"
 linktitle: "Copy"
 type: docs
 url: /columns/copy/
-aliases: [/copy-columns-in-excel-worksheet/,/copy-columns-in-an-excel-worksheet/]
+aliases:
+  [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
 keywords: "Aspose.Cells, copy columns, Excel API, REST, Cloud SDK, cURL, Java, Python"
 description: "Learn how to copy one or more columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, required parameters, authentication, error handling, and SDK examples in C#, Java, Python, and more."
 weight: 30
 ---
 
-This REST API copies **columns** in an Excel worksheet.
-
-## Overview
-The **Copy Columns** operation lets you duplicate a single column or a range of columns and insert the copy at a specified location within the same worksheet.
-
-## Prerequisites
-- An Aspose Cloud account.  
-- A valid **client ID** and **client secret** to obtain an OAuth 2.0 access token.  
-- The workbook you want to modify must be stored in Aspose Cloud storage (or provided via the `folder` parameter).  
-- cURL installed locally, or any HTTP client capable of sending `POST` requests.
-
-## Authentication
-All Aspose.Cells Cloud requests require an **Authorization** header containing a Bearer token.
-
-1. **Obtain an access token**  
-   Send a `POST` request to `https://api.aspose.cloud/connect/token` with your client credentials. The response includes `access_token`.
-
-2. **Include the token in every API call**  
-
-   ```bash
-   curl -X POST "https://api.aspose.cloud/v3.0/cells/<workbook>.xlsx/worksheets/<sheet>/cells/columns/copy?sourceColumnIndex=1&destinationColumnIndex=12&columnNumber=10" \
-        -H "Authorization: Bearer <access_token>" \
-        -H "accept: application/json"
-   ```
-
-> **Tip:** Store the token in an environment variable (e.g., `ASPOSE_TOKEN`) and reference it with `$ASPOSE_TOKEN` to avoid exposing credentials in scripts.
+This REST API copies **columns** in an Excel worksheet. The **Copy Columns** operation lets you duplicate a single column or a range of columns and insert the copy at a specified location within the same worksheet.
 
 ## REST API
 
@@ -45,15 +21,15 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/col
 
 ### Request Parameters
 
-| Parameter Name          | Type    | Location | Description                                                                 |
-|-------------------------|---------|----------|-----------------------------------------------------------------------------|
-| **name**                | string  | path     | The workbook name.                                                          |
-| **sheetName**           | string  | path     | The worksheet name.                                                         |
-| **sourceColumnIndex**   | integer | query    | 0‑based index of the column to copy.                                        |
-| **destinationColumnIndex** | integer | query | 0‑based index where the copied column(s) will be inserted.                  |
-| **columnNumber**        | integer | query    | Number of consecutive columns to copy.                                      |
-| **worksheet**           | string  | query    | *(Optional)* Worksheet identifier used when the worksheet name differs from the path. |
-| **folder**              | string  | query    | Path to the folder containing the workbook in Aspose Cloud storage.        |
+| Parameter Name             | Type    | Location | Description                                                                           |
+| -------------------------- | ------- | -------- | ------------------------------------------------------------------------------------- |
+| **name**                   | string  | path     | The workbook name.                                                                    |
+| **sheetName**              | string  | path     | The worksheet name.                                                                   |
+| **sourceColumnIndex**      | integer | query    | 0‑based index of the column to copy.                                                  |
+| **destinationColumnIndex** | integer | query    | 0‑based index where the copied column(s) will be inserted.                            |
+| **columnNumber**           | integer | query    | Number of consecutive columns to copy.                                                |
+| **worksheet**              | string  | query    | _(Optional)_ Worksheet identifier used when the worksheet name differs from the path. |
+| **folder**                 | string  | query    | Path to the folder containing the workbook in Aspose Cloud storage.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) defines the full contract for this operation.
 
@@ -65,7 +41,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
      -H "accept: application/json"
 ```
 
-### Successful Response
+### Response
 
 ```json
 {
@@ -75,14 +51,15 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 ```
 
 ## Error Handling
+
 The API returns standard HTTP status codes with a JSON payload describing the error.
 
-| Status Code | Meaning                     | Example JSON Body                              |
-|-------------|----------------------------|-----------------------------------------------|
-| **400**     | Bad request – invalid parameters | `{ "Code": 400, "Message": "Invalid column index." }` |
-| **401**     | Unauthorized – missing or invalid token | `{ "Code": 401, "Message": "Access token is invalid or expired." }` |
-| **404**     | Not found – workbook or worksheet does not exist | `{ "Code": 404, "Message": "Workbook not found." }` |
-| **500**     | Internal server error – unexpected condition | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+| Status Code | Meaning                                          | Example JSON Body                                                   |
+| ----------- | ------------------------------------------------ | ------------------------------------------------------------------- |
+| **400**     | Bad request – invalid parameters                 | `{ "Code": 400, "Message": "Invalid column index." }`               |
+| **401**     | Unauthorized – missing or invalid token          | `{ "Code": 401, "Message": "Access token is invalid or expired." }` |
+| **404**     | Not found – workbook or worksheet does not exist | `{ "Code": 404, "Message": "Workbook not found." }`                 |
+| **500**     | Internal server error – unexpected condition     | `{ "Code": 500, "Message": "An unexpected error occurred." }`       |
 
 > **How to troubleshoot:** Verify that the access token is current, the workbook and worksheet names are correct, and that `sourceColumnIndex`, `destinationColumnIndex`, and `columnNumber` are within the worksheet’s column range.
 

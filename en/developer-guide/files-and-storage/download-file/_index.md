@@ -12,19 +12,11 @@ weight: 100
 
 ## **Excel API: Download File**
 
-### API Endpoint
+### Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/storage/file/{path}
 ```
-
-**Authentication** – All requests must include an OAuth 2.0 access token (or API key) in the `Authorization` header:
-
-```
-Authorization: Bearer {access_token}
-```
-
-The endpoint uses HTTPS; transmitting credentials over plain HTTP is not permitted.
 
 **Version** – This documentation refers to API version **v4.0**, which is the latest release at the time of publishing.
 
@@ -34,40 +26,24 @@ The **DownloadFile** API enables you to retrieve files stored in Aspose.Cells Cl
 
 ### The request parameters of **DownloadFile** API are
 
-| Parameter Name | Type   | Location (Path / Query) | Description |
-|----------------|--------|--------------------------|-------------|
-| path           | String | Path                     | The virtual path to the file you want to download. |
-| storageName    | String | Query                    | The name of the storage from which the file will be retrieved. |
-| versionId      | String | Query                    | The version identifier of the file to download, if applicable. |
+| Parameter Name | Type   | Location (Path / Query) | Description                                                    |
+| -------------- | ------ | ----------------------- | -------------------------------------------------------------- |
+| path           | String | Path                    | The virtual path to the file you want to download.             |
+| storageName    | String | Query                   | The name of the storage from which the file will be retrieved. |
+| versionId      | String | Query                   | The version identifier of the file to download, if applicable. |
 
 ### **Response Description**
 
 The API returns a **binary file stream**. The `Content-Type` header matches the file format (e.g., `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet` for XLSX). No JSON payload is returned.
 
-**Sample request (cURL)**
-
-```bash
-curl -L -H "Authorization: Bearer {access_token}" \
-     "https://api.aspose.cloud/v4.0/cells/storage/file/Folder1/Report.xlsx?storageName=MyStorage" \
-     -o Report.xlsx
-```
-
-**Sample response headers**
-
-```
-HTTP/1.1 200 OK
-Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
-Content-Length: 124578
-```
-
 **Error handling**
 
-| HTTP Code | Error Code | Message |
-|-----------|------------|---------|
-| 400       | BadRequest | The request is malformed or missing required parameters. |
-| 401       | Unauthorized | Authentication failed – missing or invalid token. |
-| 404       | FileNotFound | The specified file does not exist in the given storage. |
-| 500       | ServerError | An unexpected error occurred on the server. |
+| HTTP Code | Error Code   | Message                                                  |
+| --------- | ------------ | -------------------------------------------------------- |
+| 400       | BadRequest   | The request is malformed or missing required parameters. |
+| 401       | Unauthorized | Authentication failed – missing or invalid token.        |
+| 404       | FileNotFound | The specified file does not exist in the given storage.  |
+| 500       | ServerError  | An unexpected error occurred on the server.              |
 
 ## OpenAPI Specification
 

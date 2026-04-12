@@ -1,23 +1,16 @@
----  
-title: "Aspose.Cells Cloud API – Get Picture from Worksheet"  
-second_title: "Document"  
-linktitle: "Get"  
-type: docs  
-url: /pictures/get/  
-aliases: [/convert-picture-to-image/]  
-keywords: "Aspose.Cells Get Picture API, Excel picture API, Cells Cloud picture, Aspose.Cells Cloud, REST API"  
-description: "Retrieve a specific picture from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication steps, response codes, and code examples."  
-weight: 10  
----  
-
-**Version:** `v3.0`  
-**Last updated:** 2024‑06‑30  
+---
+title: "Aspose.Cells Cloud API – Get Picture from Worksheet"
+second_title: "Document"
+linktitle: "Get"
+type: docs
+url: /pictures/get/
+aliases: [/convert-picture-to-image/]
+keywords: "Aspose.Cells Get Picture API, Excel picture API, Cells Cloud picture, Aspose.Cells Cloud, REST API"
+description: "Retrieve a specific picture from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication steps, response codes, and code examples."
+weight: 10
+---
 
 This REST API retrieves a picture by its zero‑based index from an Excel worksheet.
-
-**Prerequisites:** Create an Aspose Cloud account, obtain a *client‑id* and *client‑secret*, generate a JWT token, and upload the workbook to your storage location.  
-
-**Authentication:** Request a JWT token via the OAuth 2.0 `/connect/token` endpoint and supply it in the request header as `Authorization: Bearer <jwt token>`.
 
 ## REST API
 
@@ -25,16 +18,25 @@ This REST API retrieves a picture by its zero‑based index from an Excel worksh
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type    | Location | Description                              |
-|----------------|---------|----------|------------------------------------------|
-| name           | string  | path     | Name of the Excel document.              |
-| sheetName      | string  | path     | Name of the worksheet.                   |
-| pictureIndex   | integer | path     | Zero‑based index of the picture.         |
+| Parameter Name | Type    | Location | Description                                                                                                         |
+| -------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------- |
+| name           | string  | path     | Name of the Excel document.                                                                                         |
+| sheetName      | string  | path     | Name of the worksheet.                                                                                              |
+| pictureIndex   | integer | path     | Zero‑based index of the picture.                                                                                    |
 | format         | string  | query    | Desired export format (e.g., png, jpg, bmp, gif, tiff). If omitted, the picture is returned in its original format. |
-| folder         | string  | query    | Folder that contains the document.       |
-| storageName    | string  | query    | Name of the storage location.            |
+| folder         | string  | query    | Folder that contains the document.                                                                                  |
+| storageName    | string  | query    | Name of the storage location.                                                                                       |
+
+### Error Responses
+
+| HTTP Code | Description                                                                    |
+| --------- | ------------------------------------------------------------------------------ |
+| 401       | Unauthorized – missing or invalid token.                                       |
+| 404       | Not Found – the specified file, worksheet, or page‑break index does not exist. |
+| 400       | Bad Request – malformed request syntax or invalid parameters.                  |
+| 500       | Internal Server Error – an unexpected condition was encountered.               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPicture) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -59,14 +61,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 ```bash
 <IMAGE DATA>
 ```
-
-*Successful response:* HTTP **200 OK** with `Content‑Type: image/png` (or the appropriate image MIME type).  
-
-*Possible error codes:*  
-
-- **401 Unauthorized** – missing or invalid JWT token.  
-- **404 Not Found** – workbook, worksheet, or picture index does not exist.  
-- **500 Internal Server Error** – server‑side problem.
 
 {{< /tab >}}
 

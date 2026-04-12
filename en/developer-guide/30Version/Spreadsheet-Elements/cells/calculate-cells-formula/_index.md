@@ -11,42 +11,30 @@ This REST API calculates the **cell formula** in an Excel workbook.
 
 ## REST API
 
-### Prerequisites
-- Upload the Excel workbook to Aspose Cloud storage (e.g., `Book1.xlsx`).
-- Obtain a **JWT** access token using the Aspose Cloud OAuth 2.0 client‑credentials flow.  
-- Ensure you are using API version **v3.0**.
-
-### Authentication
-The API requires an **OAuth 2.0 Bearer token**. Include the token in the `Authorization` header of every request:
-
-```
-Authorization: Bearer <jwt token>
-```
-
-### Endpoint
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/calculate
 ```
 
 ### Request Parameters
 
-| Parameter Name | Type   | Parameter location (path/query/body) | Description |
-|----------------|--------|--------------------------------------|-------------|
-| name           | string | path                                 | Name of the Excel file (e.g., `Book1.xlsx`). |
-| sheetName      | string | path                                 | Name of the worksheet that contains the cell. |
-| cellName       | string | path                                 | Address of the cell to be calculated (e.g., `A1`). |
+| Parameter Name | Type   | Parameter location (path/query/body) | Description                                                          |
+| -------------- | ------ | ------------------------------------ | -------------------------------------------------------------------- |
+| name           | string | path                                 | Name of the Excel file (e.g., `Book1.xlsx`).                         |
+| sheetName      | string | path                                 | Name of the worksheet that contains the cell.                        |
+| cellName       | string | path                                 | Address of the cell to be calculated (e.g., `A1`).                   |
 | options        | object | body                                 | JSON object with calculation options (see **Options object** table). |
-| folder         | string | query                                | Folder in storage where the file is located. |
-| storageName    | string | query                                | Name of the Aspose Cloud storage. |
+| folder         | string | query                                | Folder in storage where the file is located.                         |
+| storageName    | string | query                                | Name of the Aspose Cloud storage.                                    |
 
 #### Options object
-| Field          | Type    | Description | Default |
-|----------------|---------|-------------|---------|
-| CalcStackSize  | string  | Maximum calculation stack size. | `"1"` |
-| IgnoreError    | boolean | If `true`, calculation errors are ignored and the cell value is set to `#N/A`. | `false` |
-| Recursive      | boolean | Enables recursive calculation of dependent cells. | `false` |
-| Precision      | string  | Number of decimal places for numeric results. | `"15"` |
-| UseThreading   | boolean | Enables multi‑threaded calculation. | `false` |
+
+| Field         | Type    | Description                                                                    | Default |
+| ------------- | ------- | ------------------------------------------------------------------------------ | ------- |
+| CalcStackSize | string  | Maximum calculation stack size.                                                | `"1"`   |
+| IgnoreError   | boolean | If `true`, calculation errors are ignored and the cell value is set to `#N/A`. | `false` |
+| Recursive     | boolean | Enables recursive calculation of dependent cells.                              | `false` |
+| Precision     | string  | Number of decimal places for numeric results.                                  | `"15"`  |
+| UseThreading  | boolean | Enables multi‑threaded calculation.                                            | `false` |
 
 ### Request example (cURL)
 
@@ -82,12 +70,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/
 {{< /tabs >}}
 
 ### Error handling
-| HTTP Status | Code | Message | Example body |
-|-------------|------|---------|--------------|
-| 400 | 4000 | Bad Request – missing or invalid parameters. | `{ "Code": 4000, "Message": "The parameter 'name' is required." }` |
-| 401 | 4010 | Unauthorized – invalid or expired JWT token. | `{ "Code": 4010, "Message": "Access token is invalid or has expired." }` |
-| 404 | 4040 | Not Found – the specified file, worksheet, or cell does not exist. | `{ "Code": 4040, "Message": "File 'Book1.xlsx' not found." }` |
-| 500 | 5000 | Internal Server Error – unexpected server condition. | `{ "Code": 5000, "Message": "An unexpected error occurred." }` |
+
+| HTTP Status | Code | Message                                                            | Example body                                                             |
+| ----------- | ---- | ------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+| 400         | 4000 | Bad Request – missing or invalid parameters.                       | `{ "Code": 4000, "Message": "The parameter 'name' is required." }`       |
+| 401         | 4010 | Unauthorized – invalid or expired JWT token.                       | `{ "Code": 4010, "Message": "Access token is invalid or has expired." }` |
+| 404         | 4040 | Not Found – the specified file, worksheet, or cell does not exist. | `{ "Code": 4040, "Message": "File 'Book1.xlsx' not found." }`            |
+| 500         | 5000 | Internal Server Error – unexpected server condition.               | `{ "Code": 5000, "Message": "An unexpected error occurred." }`           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostCellCalculate) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

@@ -18,17 +18,17 @@ This REST API ungroups rows on an Excel worksheet.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/ungroup
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type    | Location                     | Description |
-|----------------|---------|------------------------------|-------------|
-| name           | string  | path                         | The workbook name. |
-| sheetName      | string  | path                         | The worksheet name. |
-| firstIndex     | integer | query                        | The zero‑based index of the first row to be ungrouped. |
-| lastIndex      | integer | query                        | The zero‑based index of the last row to be ungrouped. |
-| isAll          | boolean | query                        | If **true**, all rows in the specified range are ungrouped. |
-| folder         | string  | query                        | The folder that contains the workbook. |
-| storageName    | string  | query                        | The name of the storage where the workbook is located. |
+| Parameter Name | Type    | Location | Description                                                 |
+| -------------- | ------- | -------- | ----------------------------------------------------------- |
+| name           | string  | path     | The workbook name.                                          |
+| sheetName      | string  | path     | The worksheet name.                                         |
+| firstIndex     | integer | query    | The zero‑based index of the first row to be ungrouped.      |
+| lastIndex      | integer | query    | The zero‑based index of the last row to be ungrouped.       |
+| isAll          | boolean | query    | If **true**, all rows in the specified range are ungrouped. |
+| folder         | string  | query    | The folder that contains the workbook.                      |
+| storageName    | string  | query    | The name of the storage where the workbook is located.      |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUngroupWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

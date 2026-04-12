@@ -12,24 +12,11 @@ weight: 100
 
 ## **Excel API: Create Folder**
 
-### API Endpoint
+### Web API
 
 ```
 PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
-
-> **Version:** v4.0 (June 2026) – HTTPS is required for all requests.
-
-### Authentication
-
-All requests must include a valid OAuth 2.0 bearer token.  
-Add the token in the `Authorization` header:
-
-```bash
--H "Authorization: Bearer <access_token>"
-```
-
-You can obtain the token through the client‑credentials flow described in the **Aspose.Cells Cloud authentication guide**.
 
 ### Function Description
 
@@ -37,22 +24,12 @@ The **createFolder** operation creates a new folder at the specified location in
 
 ### The request parameters of **createFolder** API are
 
-| Parameter Name | Type   | Location | Required | Default | Description |
-|----------------|--------|----------|----------|---------|-------------|
-| `path`         | String | Path     | Yes      | –       | The folder path to be created (e.g., `myFolder/subFolder`). |
+| Parameter Name | Type   | Location | Required | Default | Description                                                                 |
+| -------------- | ------ | -------- | -------- | ------- | --------------------------------------------------------------------------- |
+| `path`         | String | Path     | Yes      | –       | The folder path to be created (e.g., `myFolder/subFolder`).                 |
 | `storageName`  | String | Query    | No       | –       | The name of the storage to use. If omitted, the default storage is applied. |
 
-### Sample Request
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/MyNewFolder" \
-     -H "Authorization: Bearer <access_token>" \
-     -H "Accept: application/json"
-```
-
 ### Response Description
-
-A successful request returns **204 No Content** (no body) or a JSON confirmation message, for example:
 
 ```json
 {
@@ -62,13 +39,13 @@ A successful request returns **204 No Content** (no body) or a JSON confirmati
 
 ### Error Handling
 
-| HTTP Status | Meaning                               | Suggested Remedy                              |
-|-------------|---------------------------------------|----------------------------------------------|
-| 200 OK / 204 No Content | Folder created successfully. | – |
-| 400 Bad Request | Invalid `path` or missing parameters. | Verify the path syntax and required fields. |
-| 401 Unauthorized | Missing or invalid OAuth token. | Obtain a valid token and include it in the request. |
-| 409 Conflict | The folder already exists. | Choose a different folder name or delete the existing one. |
-| 500 Internal Server Error | Server‑side problem. | Retry later or contact support. |
+| HTTP Status               | Meaning                               | Suggested Remedy                                           |
+| ------------------------- | ------------------------------------- | ---------------------------------------------------------- |
+| 200 OK / 204 No Content   | Folder created successfully.          | –                                                          |
+| 400 Bad Request           | Invalid `path` or missing parameters. | Verify the path syntax and required fields.                |
+| 401 Unauthorized          | Missing or invalid OAuth token.       | Obtain a valid token and include it in the request.        |
+| 409 Conflict              | The folder already exists.            | Choose a different folder name or delete the existing one. |
+| 500 Internal Server Error | Server‑side problem.                  | Retry later or contact support.                            |
 
 ## OpenAPI Specification
 
@@ -110,6 +87,6 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 **See also**
 
 - Delete Folder – `DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/{path}`
-- Copy Folder – `PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{srcPath}/copy`  
+- Copy Folder – `PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{srcPath}/copy`
 
 ---

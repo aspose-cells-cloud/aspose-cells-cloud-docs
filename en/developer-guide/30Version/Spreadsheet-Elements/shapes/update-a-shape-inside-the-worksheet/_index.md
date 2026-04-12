@@ -12,20 +12,6 @@ weight: 31
 
 This REST API updates a shape on an Excel worksheet.
 
-## Prerequisites
-
-- **Authentication** – Obtain a JWT access token via the OAuth 2.0 client‑credentials flow. The token must be included in the `Authorization: Bearer <accessToken>` header of every request.  
-- **API version** – The examples use **v3.0** of the Aspose.Cells Cloud API (verify that this is the latest version for your account).  
-- **Storage configuration** – Ensure the workbook is stored in an Aspose Cloud storage location that you have access to (default storage is used if `storageName` is omitted).
-
-## Authentication
-
-```http
-Authorization: Bearer <accessToken>
-```
-
-Replace `<accessToken>` with the JWT token you obtained in the prerequisites step. The token must have the **Cells** scope.
-
 ## REST API
 
 ```bash
@@ -34,38 +20,39 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{s
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description |
-|----------------|---------|----------|-------------|
-| **name** | string | path | The name of the workbook file. |
-| **sheetName** | string | path | The name of the worksheet that contains the shape. |
-| **shapeindex** | integer | path | The zero‑based index of the shape within the worksheet. |
-| **dto** | object | body | The shape data‑transfer object that contains the updated properties (see *DTO Schema* below). |
-| **folder** | string | query | The folder where the workbook is stored. |
-| **storageName** | string | query | The name of the Aspose Cloud storage. |
+| Parameter Name  | Type    | Location | Description                                                                                   |
+| --------------- | ------- | -------- | --------------------------------------------------------------------------------------------- |
+| **name**        | string  | path     | The name of the workbook file.                                                                |
+| **sheetName**   | string  | path     | The name of the worksheet that contains the shape.                                            |
+| **shapeindex**  | integer | path     | The zero‑based index of the shape within the worksheet.                                       |
+| **dto**         | object  | body     | The shape data‑transfer object that contains the updated properties (see _DTO Schema_ below). |
+| **folder**      | string  | query    | The folder where the workbook is stored.                                                      |
+| **storageName** | string  | query    | The name of the Aspose Cloud storage.                                                         |
 
 ### DTO Schema
 
 The `dto` object contains the properties that can be updated. All fields are optional unless otherwise noted.
 
-| Field | Type | Required | Description |
-|-------|------|----------|-------------|
-| **Name** | string | No | New name for the shape. |
-| **UpperLeftRow** | integer | No | Row index of the shape’s upper‑left corner. |
-| **UpperLeftColumn** | integer | No | Column index of the shape’s upper‑left corner. |
-| **Width** | integer | No | Width of the shape (in points). |
-| **Height** | integer | No | Height of the shape (in points). |
-| **RotationAngle** | integer | No | Rotation angle in degrees. |
-| **IsHidden** | boolean | No | `true` to hide the shape. |
-| **IsLocked** | boolean | No | `true` to lock the shape. |
-| **Font** | object | No | Font settings (see OpenAPI spec for sub‑properties). |
-| **...** | … | No | Additional properties such as `HtmlText`, `AlternativeText`, `ZOrderPosition`, etc. |
+| Field               | Type    | Required | Description                                                                         |
+| ------------------- | ------- | -------- | ----------------------------------------------------------------------------------- |
+| **Name**            | string  | No       | New name for the shape.                                                             |
+| **UpperLeftRow**    | integer | No       | Row index of the shape’s upper‑left corner.                                         |
+| **UpperLeftColumn** | integer | No       | Column index of the shape’s upper‑left corner.                                      |
+| **Width**           | integer | No       | Width of the shape (in points).                                                     |
+| **Height**          | integer | No       | Height of the shape (in points).                                                    |
+| **RotationAngle**   | integer | No       | Rotation angle in degrees.                                                          |
+| **IsHidden**        | boolean | No       | `true` to hide the shape.                                                           |
+| **IsLocked**        | boolean | No       | `true` to lock the shape.                                                           |
+| **Font**            | object  | No       | Font settings (see OpenAPI spec for sub‑properties).                                |
+| **...**             | …       | No       | Additional properties such as `HtmlText`, `AlternativeText`, `ZOrderPosition`, etc. |
+
 > For a complete list, refer to the official OpenAPI specification: <https://apireference.aspose.cloud/cells/#/Shapes/PostWorksheetShape>.
 
 ### Request headers
 
 - `Content-Type: application/json`
 - `Accept: application/json`
-- `Authorization: Bearer <accessToken>`  *(the JWT token from the *Authentication* step)*
+- `Authorization: Bearer <accessToken>` _(the JWT token from the \_Authentication_ step)\_
 
 ### Request body (example)
 
@@ -87,14 +74,6 @@ The `dto` object contains the properties that can be updated. All fields are opt
   }
 }
 ```
-
-## Step‑by‑Step Usage
-
-1. **Obtain a JWT token** – Follow the *Authentication* prerequisites.  
-2. **Upload the workbook** (if it does not already exist) to the desired folder in Aspose Cloud storage.  
-3. **Create the DTO** – Populate the JSON body with the properties you wish to modify.  
-4. **Call the API** – Use the cURL command‑line tool (or an SDK) shown below.  
-5. **Verify the response** – A successful call returns a `200` status code and a JSON payload confirming the update.
 
 ## Example with cURL (command‑line tool)
 
@@ -126,12 +105,12 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 
 **Error handling** – The API may return the following status codes:
 
-| Code | Meaning | Typical cause |
-|------|---------|---------------|
-| 400 | Bad Request | Invalid JSON or missing required fields. |
-| 401 | Unauthorized | Missing or invalid JWT token. |
-| 404 | Not Found | Workbook, worksheet, or shape index does not exist. |
-| 500 | Internal Server Error | Unexpected server‑side problem. |
+| Code | Meaning               | Typical cause                                       |
+| ---- | --------------------- | --------------------------------------------------- |
+| 400  | Bad Request           | Invalid JSON or missing required fields.            |
+| 401  | Unauthorized          | Missing or invalid JWT token.                       |
+| 404  | Not Found             | Workbook, worksheet, or shape index does not exist. |
+| 500  | Internal Server Error | Unexpected server‑side problem.                     |
 
 ## Cloud SDK Family
 

@@ -19,12 +19,11 @@ Easily clean and standardize your Excel data by removing specific, unwanted char
 - **Remove Custom Characters**  
   Delete any specific symbols you define. Simply enter each character into the field, and the add‑in will instantly remove all instances from your selected cells. Perfect for eliminating unique delimiters, typos, or special marks.
 
-- **Remove Character Sets (Bulk Cleaning)**  
-
-  - **Non‑printing Characters** – Cleanse your data of invisible characters that disrupt analysis and formatting (line breaks, carriage returns, tabs, and other control characters such as ASCII 0‑31, 127, 129, 141, 143, 144, 157).  
-  - **Text Characters (All Letters)** – Isolate numbers and symbols by stripping every letter (A‑Z, a‑z) from the selected range.  
-  - **Numeric Characters (All Digits)** – Extract pure text by deleting all digits (0‑9), ideal for cleaning product names or textual descriptions.  
-  - **Symbols** – Remove a wide array of symbolic clutter, including mathematical (e.g., ±, √), geometric (e.g., ∆, °), technical, currency (e.g., £, ¢), and letter‑like symbols (e.g., ™, ®, ©).  
+- **Remove Character Sets (Bulk Cleaning)**
+  - **Non‑printing Characters** – Cleanse your data of invisible characters that disrupt analysis and formatting (line breaks, carriage returns, tabs, and other control characters such as ASCII 0‑31, 127, 129, 141, 143, 144, 157).
+  - **Text Characters (All Letters)** – Isolate numbers and symbols by stripping every letter (A‑Z, a‑z) from the selected range.
+  - **Numeric Characters (All Digits)** – Extract pure text by deleting all digits (0‑9), ideal for cleaning product names or textual descriptions.
+  - **Symbols** – Remove a wide array of symbolic clutter, including mathematical (e.g., ±, √), geometric (e.g., ∆, °), technical, currency (e.g., £, ¢), and letter‑like symbols (e.g., ™, ®, ©).
   - **Punctuation Marks** – Achieve clean, punctuation‑free text by deleting all punctuation marks such as periods, commas, quotation marks, and hyphens.
 
 - **Remove a Specific Substring**  
@@ -34,7 +33,7 @@ Easily clean and standardize your Excel data by removing specific, unwanted char
 
 ## RemoveCharacters API
 
-### API Endpoint
+### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters
@@ -42,52 +41,56 @@ PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters
 
 ### Request Parameters
 
-| Parameter Name      | Type   | Location                     | Description                                                                                                                                                     |
-|---------------------|--------|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Spreadsheet         | File   | FormData                     | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                                        |
-| removeTextMethod    | String | Query                        | Specifies the text‑removal method. Options: `None`, `RemoveCustomCharacter`, `RemoveCharacterSets`, `RemoveSubString`. Default is `None`.                     |
-| characterSets       | String | Query                        | Predefined character set(s) to remove when `RemoveCharacterSets` is selected. Options: `NonPrintingCharacters`, `TextCharacters`, `NumericCharacters`, `Symbols`, `PunctuationMarks`. Multiple sets can be combined with commas. |
-| removeCustomValue   | String | Query                        | Custom character(s) or substring(s) to remove when using `RemoveCustomCharacter` or `RemoveSubString`.                                                          |
-| worksheet           | String | Query *(optional)*          | The name of the worksheet where text removal will be applied. **When omitted, the API processes the first worksheet of the workbook.**                       |
-| range               | String | Query *(optional)*          | The cell range where text removal will be applied (e.g., `"A1:C10"`). **When omitted, the operation applies to all used cells in the specified worksheet.** |
-| outPath             | String | Query *(optional)*          | Cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder.                                      |
-| outStorageName      | String | Query *(optional)*          | The name of the cloud storage where the output file will be stored.                                                                                             |
-| region              | String | Query *(optional)*          | Sets the locale for character‑set definitions (e.g., `"en-US"`, `"ja-JP"`).                                                                                     |
-| password            | String | Query *(optional)*          | Password for a protected workbook, if required.                                                                                                                 |
+| Parameter Name    | Type   | Location           | Description                                                                                                                                                                                                                      |
+| ----------------- | ------ | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet       | File   | FormData           | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                                                                                                        |
+| removeTextMethod  | String | Query              | Specifies the text‑removal method. Options: `None`, `RemoveCustomCharacter`, `RemoveCharacterSets`, `RemoveSubString`. Default is `None`.                                                                                        |
+| characterSets     | String | Query              | Predefined character set(s) to remove when `RemoveCharacterSets` is selected. Options: `NonPrintingCharacters`, `TextCharacters`, `NumericCharacters`, `Symbols`, `PunctuationMarks`. Multiple sets can be combined with commas. |
+| removeCustomValue | String | Query              | Custom character(s) or substring(s) to remove when using `RemoveCustomCharacter` or `RemoveSubString`.                                                                                                                           |
+| worksheet         | String | Query _(optional)_ | The name of the worksheet where text removal will be applied. **When omitted, the API processes the first worksheet of the workbook.**                                                                                           |
+| range             | String | Query _(optional)_ | The cell range where text removal will be applied (e.g., `"A1:C10"`). **When omitted, the operation applies to all used cells in the specified worksheet.**                                                                      |
+| outPath           | String | Query _(optional)_ | Cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder.                                                                                                        |
+| outStorageName    | String | Query _(optional)_ | The name of the cloud storage where the output file will be stored.                                                                                                                                                              |
+| region            | String | Query _(optional)_ | Sets the locale for character‑set definitions (e.g., `"en-US"`, `"ja-JP"`).                                                                                                                                                      |
+| password          | String | Query _(optional)_ | Password for a protected workbook, if required.                                                                                                                                                                                  |
 
 ### Response
 
 ```json
-{
-  "FileName": "cleaned.xlsx",
-  "Size": 124567,
-  "DownloadUrl": "https://api.aspose.cloud/v4.0/storage/file/cleaned.xlsx"
-}
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
 ```
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized** – Invalid access token, or incorrect client ID and secret.  
-- **404 Not Found** – The spreadsheet file is not accessible.  
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized** – Invalid access token, or incorrect client ID and secret.
+- **404 Not Found** – The spreadsheet file is not accessible.
 - **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
 
 ## Where Should You Use the Remove Characters API?
 
-- **Data Import/Export** – Clean imported CSV/data by removing invisible characters and formatting errors.  
-- **Database Management** – Standardize product codes, IDs, and names by removing unwanted symbols or punctuation.  
-- **Financial Analysis** – Extract pure numbers by stripping currency symbols and text characters.  
-- **Text Processing** – Remove line breaks and tabs for clean text analysis and reporting.  
+- **Data Import/Export** – Clean imported CSV/data by removing invisible characters and formatting errors.
+- **Database Management** – Standardize product codes, IDs, and names by removing unwanted symbols or punctuation.
+- **Financial Analysis** – Extract pure numbers by stripping currency symbols and text characters.
+- **Text Processing** – Remove line breaks and tabs for clean text analysis and reporting.
 - **Inventory Management** – Clean product names by eliminating redundant prefixes or suffixes.
 
 ## Why Use the Remove Characters API?
 
-- **Save Time** – Bulk‑remove multiple character types instantly versus manual cleaning.  
-- **Ensure Accuracy** – Eliminate hidden characters that cause analysis errors and formatting issues.  
-- **Standardize Data** – Achieve consistent formatting across datasets and systems.  
-- **Improve Analysis** – Obtain clean, analysis‑ready data by isolating numbers or text as needed.  
-- **Fix Import Errors** – Remove problematic characters that break databases and formulas.  
-- **Developer‑Friendly** – Aspose.Cells Cloud provides SDK libraries in multiple languages, enabling quick development with comprehensive documentation. Compared with building custom solutions, this significantly reduces development workload.  
+- **Save Time** – Bulk‑remove multiple character types instantly versus manual cleaning.
+- **Ensure Accuracy** – Eliminate hidden characters that cause analysis errors and formatting issues.
+- **Standardize Data** – Achieve consistent formatting across datasets and systems.
+- **Improve Analysis** – Obtain clean, analysis‑ready data by isolating numbers or text as needed.
+- **Fix Import Errors** – Remove problematic characters that break databases and formulas.
+- **Developer‑Friendly** – Aspose.Cells Cloud provides SDK libraries in multiple languages, enabling quick development with comprehensive documentation. Compared with building custom solutions, this significantly reduces development workload.
 - **Cost‑Effective** – Remove characters without first uploading the workbook, saving storage space and reducing costs.
 
 ## OpenAPI Specification

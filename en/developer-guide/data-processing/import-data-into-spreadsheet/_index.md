@@ -14,66 +14,40 @@ weight: 100
 
 ### Multi-Format Data Support
 
-- **[CSV](https://docs.fileformat.com/spreadsheet/csv/) Data Import**: Supports various delimiters and automatically detects encoding.  
-- **[JSON](https://docs.fileformat.com/web/json/) Data Handling**: Flattens complex JSON structures into Excel tables.  
+- **[CSV](https://docs.fileformat.com/spreadsheet/csv/) Data Import**: Supports various delimiters and automatically detects encoding.
+- **[JSON](https://docs.fileformat.com/web/json/) Data Handling**: Flattens complex JSON structures into Excel tables.
 - **[XML](https://docs.fileformat.com/web/xml/) File Conversion**: Maps node data to Excel row and column structure.
 
 ### Advanced Data Processing Capabilities
 
-- **Intelligent Field Mapping**: Automatically matches source fields to target columns.  
-- **Data Transformation Rules**: Supports data‑type conversion and formatting.  
+- **Intelligent Field Mapping**: Automatically matches source fields to target columns.
+- **Data Transformation Rules**: Supports data‑type conversion and formatting.
 - **Batch Processing Support**: Allows importing multiple data files simultaneously.
 
 ## **Import Data into Spreadsheet API Description**
 
-### Authentication
-
-All calls to Aspose.Cells Cloud must be made over TLS and include a valid OAuth 2.0 access token.
-
-1. **Obtain a token** – POST your `client_id` and `client_secret` to  
-
-   ```
-   https://api.aspose.cloud/connect/token
-   ```
-
-   The response contains an `access_token`.  
-2. **Use the token** – Add the header  
-
-   ```
-   Authorization: Bearer <access_token>
-   ```
-
-   to every request, including the import endpoint.
-
-### API Endpoint
+### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/import/data
 ```
 
-### Prerequisites
-
-- An active Aspose.Cloud account with a valid **API Key** / **Client ID** and **Client Secret**.  
-- A storage location (Aspose Cloud Storage or your own) where the source files and the target workbook reside.  
-- Supported file formats: **CSV**, **JSON**, **XML**, and **XLSX** for the workbook.  
-- Maximum file size: 500 MB per request (subject to your subscription limits).
-
 ### Request Parameters
 
-| Parameter Name      | Type   | Location                | Description                                                                     |
-|---------------------|--------|-------------------------|---------------------------------------------------------------------------------|
-| datafile            | File   | FormData                | The data file (CSV, JSON, or XML) to be imported.                               |
-| spreadsheet         | File   | FormData                | The target workbook that will receive the imported data.                        |
-| worksheet           | string | Query                   | Name of the worksheet where data will be placed.                                |
-| startCell           | string | Query                   | Top‑left cell (e.g., `A1`) that marks the start position for the import.        |
-| insert              | bool   | Query                   | `true` to insert rows; `false` to overwrite existing data.                     |
-| convertNumericData | bool   | Query                   | `true` to convert numeric strings to numbers during import.                    |
-| splitter            | string | Query                   | Single‑character CSV delimiter (default is `,`).                               |
-| outPath             | string | Query (optional)        | Folder path where the updated workbook will be stored.                          |
-| outStorageName      | string | Query (optional)        | Name of the storage location for the output file.                               |
-| fontsLocation       | string | Query (optional)        | Path to a custom fonts folder, if required.                                     |
-| region              | string | Query (optional)        | Spreadsheet region configuration (e.g., `en-US`).                              |
-| password            | string | Query (optional)        | Password for opening a protected workbook.                                      |
+| Parameter Name     | Type   | Location         | Description                                                              |
+| ------------------ | ------ | ---------------- | ------------------------------------------------------------------------ |
+| datafile           | File   | FormData         | The data file (CSV, JSON, or XML) to be imported.                        |
+| spreadsheet        | File   | FormData         | The target workbook that will receive the imported data.                 |
+| worksheet          | string | Query            | Name of the worksheet where data will be placed.                         |
+| startCell          | string | Query            | Top‑left cell (e.g., `A1`) that marks the start position for the import. |
+| insert             | bool   | Query            | `true` to insert rows; `false` to overwrite existing data.               |
+| convertNumericData | bool   | Query            | `true` to convert numeric strings to numbers during import.              |
+| splitter           | string | Query            | Single‑character CSV delimiter (default is `,`).                         |
+| outPath            | string | Query (optional) | Folder path where the updated workbook will be stored.                   |
+| outStorageName     | string | Query (optional) | Name of the storage location for the output file.                        |
+| fontsLocation      | string | Query (optional) | Path to a custom fonts folder, if required.                              |
+| region             | string | Query (optional) | Spreadsheet region configuration (e.g., `en-US`).                        |
+| password           | string | Query (optional) | Password for opening a protected workbook.                               |
 
 ### Response
 
@@ -91,33 +65,17 @@ PUT https://api.aspose.cloud/v4.0/cells/import/data
 
 ### Error Codes
 
-| Code | Message                                   | When It Occurs                                          |
-|------|-------------------------------------------|---------------------------------------------------------|
-| 400  | Bad Request                               | Invalid API URI or malformed request parameters.       |
-| 401  | Unauthorized                              | Missing/invalid access token or client credentials.    |
-| 404  | Not Found                                 | The specified spreadsheet cannot be accessed.          |
-| 500  | Internal Server Error                     | An unexpected server‑side problem while processing.    |
-
-### Quick‑Start Guide
-
-1. **Get an OAuth 2.0 token** (see *Authentication* above).  
-2. **Upload** the source data file and the target workbook to your chosen storage.  
-3. **Call** the `PUT https://api.aspose.cloud/v4.0/cells/import/data` endpoint with the required parameters.  
-4. **Download** the updated workbook from the location returned in the response.
-
-## Use Cases & Benefits
-
-- **ETL Pipelines** – Automate the loading of CSV, JSON, or XML extracts directly into Excel for downstream analysis.  
-- **Reporting Dashboards** – Refresh Excel‑based dashboards by importing fresh data on a scheduled basis.  
-- **Data Consolidation** – Merge multiple source files into a single workbook without manual copy‑paste.  
-- **Regulatory Reporting** – Populate pre‑formatted Excel templates with required data fields automatically.  
-
-These scenarios focus on practical data‑integration tasks that developers commonly face.
+| Code | Message               | When It Occurs                                      |
+| ---- | --------------------- | --------------------------------------------------- |
+| 400  | Bad Request           | Invalid API URI or malformed request parameters.    |
+| 401  | Unauthorized          | Missing/invalid access token or client credentials. |
+| 404  | Not Found             | The specified spreadsheet cannot be accessed.       |
+| 500  | Internal Server Error | An unexpected server‑side problem while processing. |
 
 ## Why You Should Use This API
 
-- **Efficient Data Loading** – Import large volumes of data without first creating intermediate files.  
-- **Developer‑Friendly** – SDKs are available for many languages, reducing development effort and ensuring consistent implementations.  
+- **Efficient Data Loading** – Import large volumes of data without first creating intermediate files.
+- **Developer‑Friendly** – SDKs are available for many languages, reducing development effort and ensuring consistent implementations.
 - **Cost‑Effective** – The API processes data in‑memory, minimizing storage usage and associated costs.
 
 ## How to Use the Import Data into Spreadsheet API with SDKs
@@ -134,6 +92,7 @@ The following code examples illustrate how to invoke Aspose.Cells web services u
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
+
 ```csharp
 // C# example – Import CSV into a workbook
 var config = new Configuration
@@ -158,8 +117,10 @@ var result = apiInstance.ImportDataIntoSpreadsheet(
 );
 Console.WriteLine($"File saved to: {result[0].Name}");
 ```
+
 {{</tab>}}
 {{<tab tabNum="2" >}}
+
 ```java
 // Java example – Import JSON into a workbook
 CellsApi api = new CellsApi("<client_id>", "<client_secret>");
@@ -180,8 +141,10 @@ ImportResponse response = api.importDataIntoSpreadsheet(
 );
 System.out.println("Output file: " + response.getName());
 ```
+
 {{</tab>}}
 {{<tab tabNum="3" >}}
+
 ```php
 <?php
 // PHP example – Import XML into a workbook
@@ -211,8 +174,10 @@ $response = $api->importDataIntoSpreadsheet(
 echo "Result file: " . $response[0]->getName();
 ?>
 ```
+
 {{</tab>}}
 {{<tab tabNum="4" >}}
+
 ```ruby
 # Ruby example – Import CSV into a workbook
 require 'aspose_cells_cloud'
@@ -239,40 +204,48 @@ result = api_instance.import_data_into_spreadsheet(
 )
 puts "Saved as #{result[0].name}"
 ```
+
 {{</tab>}}
 {{<tab tabNum="5" >}}
+
 ```javascript
 // Node.js example – Import CSV into a workbook
-const { CellsApi, Configuration } = require('asposecellscloud');
-const fs = require('fs');
+const { CellsApi, Configuration } = require("asposecellscloud");
+const fs = require("fs");
 
 let config = new Configuration({
-    clientId: '<client_id>',
-    clientSecret: '<client_secret>'
+  clientId: "<client_id>",
+  clientSecret: "<client_secret>",
 });
 let api = new CellsApi(config);
 
-api.oAuth2GetToken().then(token => {
+api
+  .oAuth2GetToken()
+  .then((token) => {
     api.accessToken = token.access_token;
 
-    const dataFile = fs.createReadStream('data.csv');
-    const workbookFile = fs.createReadStream('template.xlsx');
+    const dataFile = fs.createReadStream("data.csv");
+    const workbookFile = fs.createReadStream("template.xlsx");
 
     return api.importDataIntoSpreadsheet(
-        dataFile,
-        workbookFile,
-        'Sheet1',
-        'A1',
-        true,
-        true,
-        null
+      dataFile,
+      workbookFile,
+      "Sheet1",
+      "A1",
+      true,
+      true,
+      null,
     );
-}).then(result => {
-    console.log('Result file:', result[0].name);
-}).catch(err => console.error(err));
+  })
+  .then((result) => {
+    console.log("Result file:", result[0].name);
+  })
+  .catch((err) => console.error(err));
 ```
+
 {{</tab>}}
 {{<tab tabNum="6" >}}
+
 ```python
 # Python example – Import JSON into a workbook
 from asposecellscloud import CellsApi, Configuration
@@ -295,8 +268,10 @@ with open('data.json', 'rb') as data_file, open('template.xlsx', 'rb') as workbo
     )
 print('Output file:', result[0].name)
 ```
+
 {{</tab>}}
 {{<tab tabNum="7" >}}
+
 ```perl
 # Perl example – Import CSV into a workbook
 use Aspose::Cells::Api::CellsApi;
@@ -324,8 +299,10 @@ my $result = $api->import_data_into_spreadsheet(
 );
 print "Result file: $result->[0]{name}\n";
 ```
+
 {{</tab>}}
 {{<tab tabNum="8" >}}
+
 ```go
 // Go example – Import XML into a workbook
 package main
@@ -369,5 +346,6 @@ func main() {
     fmt.Println("Result file:", result[0].Name)
 }
 ```
+
 {{</tab>}}
 {{< /tabs >}}

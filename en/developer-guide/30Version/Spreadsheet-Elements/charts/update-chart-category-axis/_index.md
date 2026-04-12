@@ -15,16 +15,16 @@ This REST API updates a chart’s category axis.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| name           | string | path     | |
-| sheetName      | string | path     | |
-| chartIndex     | integer| path     | |
-| axis           | object | body     | |
-| folder         | string | query    | |
-| storageName    | string | query    | |
+| Parameter Name | Type    | Location | Description |
+| -------------- | ------- | -------- | ----------- |
+| name           | string  | path     |             |
+| sheetName      | string  | path     |             |
+| chartIndex     | integer | path     |             |
+| axis           | object  | body     |             |
+| folder         | string  | query    |             |
+| storageName    | string  | query    |             |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostChartCategoryAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

@@ -12,31 +12,6 @@ weight: 10
 
 This REST API enables retrieval of all shapes on an Excel worksheet.
 
-## Authentication & Prerequisites
-
-Before calling the endpoint you must obtain a **Bearer JWT token**.  
-1. Register an application in the Aspose Cloud console to get a **client ID** and **client secret**.  
-2. Request a token with the following cURL command (replace the placeholders with your credentials):
-
-```bash
-curl -X POST "https://api.aspose.cloud/connect/token" \
--H "Content-Type: application/x-www-form-urlencoded" \
--d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
-```
-
-The response contains an `access_token`. Use this token in the `Authorization` header of all subsequent API calls.
-
-If the workbook is not already stored, upload it first:
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/storage/file/<folder>/<fileName>" \
--H "Authorization: Bearer <jwt token>" \
--H "Content-Type: application/octet-stream" \
---data-binary @<local_file_path>
-```
-
-> **Note:** All requests must be made over **HTTPS**; the `http` scheme is not supported.
-
 ## REST API
 
 ```bash
@@ -45,12 +20,12 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                              |
-|----------------|--------|----------|------------------------------------------|
-| **name**       | string | path     | The name of the Excel file.              |
-| **sheetName**  | string | path     | The name of the worksheet.               |
-| **folder**     | string | query    | The folder that contains the document.   |
-| **storageName**| string | query    | The name of the storage service to use.  |
+| Parameter Name  | Type   | Location | Description                             |
+| --------------- | ------ | -------- | --------------------------------------- |
+| **name**        | string | path     | The name of the Excel file.             |
+| **sheetName**   | string | path     | The name of the worksheet.              |
+| **folder**      | string | query    | The folder that contains the document.  |
+| **storageName** | string | query    | The name of the storage service to use. |
 
 > **Optional**: `folder` and `storageName` can be omitted when the file resides in the root storage.
 
@@ -129,24 +104,24 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 
 The `Shapes` object contains a list of `Shape` items. Each shape includes the following properties (when the `include=details` flag is used; otherwise only the `link` object is returned).
 
-| Property | Type   | Description |
-|----------|--------|-------------|
-| **Name** | string | The name assigned to the shape (e.g., “Chart 1”). |
-| **Type** | string | The shape type (e.g., `Chart`, `Picture`, `TextBox`). |
-| **Top**  | number | The distance, in points, from the top edge of the worksheet to the shape. |
-| **Left** | number | The distance, in points, from the left edge of the worksheet to the shape. |
-| **Width**| number | The width of the shape in points. |
-| **Height**| number| The height of the shape in points. |
-| **Link** | object | Hyperlink information (`Href`, `Rel`, `Type`, `Title`). |
+| Property   | Type   | Description                                                                |
+| ---------- | ------ | -------------------------------------------------------------------------- |
+| **Name**   | string | The name assigned to the shape (e.g., “Chart 1”).                          |
+| **Type**   | string | The shape type (e.g., `Chart`, `Picture`, `TextBox`).                      |
+| **Top**    | number | The distance, in points, from the top edge of the worksheet to the shape.  |
+| **Left**   | number | The distance, in points, from the left edge of the worksheet to the shape. |
+| **Width**  | number | The width of the shape in points.                                          |
+| **Height** | number | The height of the shape in points.                                         |
+| **Link**   | object | Hyperlink information (`Href`, `Rel`, `Type`, `Title`).                    |
 
 ## Error Handling
 
-| HTTP Status | Description                              | Sample Error Body |
-|-------------|------------------------------------------|-------------------|
-| **400**     | Bad request – malformed parameters.      | `{ "Code": 400, "Message": "Invalid parameter value." }` |
-| **401**     | Unauthorized – missing or invalid token. | `{ "Code": 401, "Message": "Access token is missing or invalid." }` |
-| **404**     | Not found – workbook or worksheet does not exist. | `{ "Code": 404, "Message": "File or worksheet not found." }` |
-| **500**     | Internal server error – unexpected condition. | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+| HTTP Status | Description                                       | Sample Error Body                                                   |
+| ----------- | ------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**     | Bad request – malformed parameters.               | `{ "Code": 400, "Message": "Invalid parameter value." }`            |
+| **401**     | Unauthorized – missing or invalid token.          | `{ "Code": 401, "Message": "Access token is missing or invalid." }` |
+| **404**     | Not found – workbook or worksheet does not exist. | `{ "Code": 404, "Message": "File or worksheet not found." }`        |
+| **500**     | Internal server error – unexpected condition.     | `{ "Code": 500, "Message": "An unexpected error occurred." }`       |
 
 When an error occurs, inspect the `Code` and `Message` fields to determine the corrective action (e.g., refresh the token, verify the file path, or correct query parameters).
 
@@ -207,11 +182,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## See Also
-
-- **Add a Shape** – `POST /cells/{name}/worksheets/{sheetName}/shapes`
-- **Update a Shape** – `PUT /cells/{name}/worksheets/{sheetName}/shapes/{shapeIndex}`
-- **Delete a Shape** – `DELETE /cells/{name}/worksheets/{sheetName}/shapes/{shapeIndex}`
-
----

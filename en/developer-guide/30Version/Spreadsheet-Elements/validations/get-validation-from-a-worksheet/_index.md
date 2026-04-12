@@ -19,15 +19,15 @@ Before calling the endpoint, obtain a JWT token via the `/connect/token` endpoin
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
-**Request parameters**
+### **Request parameters**
 
-| Parameter Name   | Type    | Location | Description                                    |
-|------------------|---------|----------|------------------------------------------------|
-| name             | string  | path     | The name of the workbook file.                 |
-| sheetName        | string  | path     | The name of the worksheet.                     |
-| validationIndex  | integer | path     | Zero‑based index of the validation to retrieve.|
-| folder           | string  | query    | Folder that contains the workbook.             |
-| storageName      | string  | query    | Name of the storage service.                   |
+| Parameter Name  | Type    | Location | Description                                     |
+| --------------- | ------- | -------- | ----------------------------------------------- |
+| name            | string  | path     | The name of the workbook file.                  |
+| sheetName       | string  | path     | The name of the worksheet.                      |
+| validationIndex | integer | path     | Zero‑based index of the validation to retrieve. |
+| folder          | string  | query    | Folder that contains the workbook.              |
+| storageName     | string  | query    | Name of the storage service.                    |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidation) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -89,39 +89,28 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/v
 
 **Response schema**
 
-| Field          | Type    | Description                                                                 |
-|----------------|---------|-----------------------------------------------------------------------------|
-| AlertStyle     | string  | The style of the alert shown to the user (Stop, Warning, Information).   |
-| AreaList       | array   | Collection of cell ranges that the validation applies to.                  |
-| IgnoreBlank    | boolean | If `true`, blank cells are ignored during validation.                      |
-| InCellDropDown | boolean | If `true`, a drop‑down list is displayed in the cell.                      |
-| Operator       | string  | Comparison operator used for the validation (e.g., `None`, `Between`).    |
-| ShowError      | boolean | Determines whether an error message is shown when validation fails.       |
-| ShowInput      | boolean | Determines whether an input message is shown when the cell is selected.   |
-| Type           | string  | Type of validation (e.g., `AnyValue`, `WholeNumber`, `Decimal`, etc.).     |
-| link.Href      | string  | Self‑reference URL to the validation resource.                              |
-| link.Rel       | string  | Relation type (always `self`).                                              |
+| Field          | Type    | Description                                                             |
+| -------------- | ------- | ----------------------------------------------------------------------- |
+| AlertStyle     | string  | The style of the alert shown to the user (Stop, Warning, Information).  |
+| AreaList       | array   | Collection of cell ranges that the validation applies to.               |
+| IgnoreBlank    | boolean | If `true`, blank cells are ignored during validation.                   |
+| InCellDropDown | boolean | If `true`, a drop‑down list is displayed in the cell.                   |
+| Operator       | string  | Comparison operator used for the validation (e.g., `None`, `Between`).  |
+| ShowError      | boolean | Determines whether an error message is shown when validation fails.     |
+| ShowInput      | boolean | Determines whether an input message is shown when the cell is selected. |
+| Type           | string  | Type of validation (e.g., `AnyValue`, `WholeNumber`, `Decimal`, etc.).  |
+| link.Href      | string  | Self‑reference URL to the validation resource.                          |
+| link.Rel       | string  | Relation type (always `self`).                                          |
 
 **Possible error codes**
 
-| HTTP Status | Meaning                              |
-|-------------|--------------------------------------|
-| 200         | Validation retrieved successfully.   |
-| 400         | Bad request – missing or invalid parameters. |
-| 401         | Unauthorized – invalid or missing JWT token. |
+| HTTP Status | Meaning                                                              |
+| ----------- | -------------------------------------------------------------------- |
+| 200         | Validation retrieved successfully.                                   |
+| 400         | Bad request – missing or invalid parameters.                         |
+| 401         | Unauthorized – invalid or missing JWT token.                         |
 | 404         | Not found – workbook, worksheet, or validation index does not exist. |
-| 500         | Internal server error – unexpected condition. |
-
-**Frequently asked questions**
-
-- **How do I authenticate to call this API?**  
-  Obtain a JWT token from the `/connect/token` endpoint using your client ID and secret, then include it in the `Authorization` header as `Bearer <jwt token>`.
-
-- **What does the `AlertStyle` property represent?**  
-  It indicates the type of alert presented to the user when validation fails. Allowed values are `Stop`, `Warning`, and `Information`.
-
-- **Is this request idempotent?**  
-  Yes. A `GET` request does not modify server state and can be safely retried.
+| 500         | Internal server error – unexpected condition.                        |
 
 ## Cloud SDK Family
 

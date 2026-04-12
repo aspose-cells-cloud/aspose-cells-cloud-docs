@@ -1,95 +1,84 @@
----  
-title: "Aspose.Cells Cloud Excel Compression Web API – Reduce Spreadsheet File Size Programmatically"  
-second_title: "Document"  
-ArticleTitle: "How to Compress Excel Files – Reduce Spreadsheet Size & Optimize Performance"  
-linktitle: "Compress Spreadsheet"  
-type: docs  
-url: /compress-spreadsheet/  
-keywords: "Excel compression, Aspose.Cells Cloud, spreadsheet size reduction, API, workbook optimization"  
-description: "Learn how to compress Excel workbooks with Aspose.Cells Cloud API. Get step‑by‑step examples, parameters, authentication, and best practices."  
-weight: 100  
----  
+---
+title: "Aspose.Cells Cloud Excel Compression Web API – Reduce Spreadsheet File Size Programmatically"
+second_title: "Document"
+ArticleTitle: "How to Compress Excel Files – Reduce Spreadsheet Size & Optimize Performance"
+linktitle: "Compress Spreadsheet"
+type: docs
+url: /compress-spreadsheet/
+keywords: "Excel compression, Aspose.Cells Cloud, spreadsheet size reduction, API, workbook optimization"
+description: "Learn how to compress Excel workbooks with Aspose.Cells Cloud API. Get step‑by‑step examples, parameters, authentication, and best practices."
+weight: 100
+---
 
 Programmatically compress Excel spreadsheets and reduce file size with Aspose.Cells Cloud API. Optimize workbook performance by removing unused data, compressing embedded objects, and cleaning formatting. This RESTful API enables automated Excel file compression and optimization workflows.
 
 ## **Compress Spreadsheet API**
 
-### API Endpoint  
+### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/compress
 ```
 
-**All requests must include a valid Bearer token in the `Authorization` header** (e.g., `Authorization: Bearer <access_token>`).
+### Request Parameters
 
-#### Sample Request (cURL)
+| Parameter Name | Type    | Path/Query/String/HTTP Body | Description                                                                                                                           |
+| -------------- | ------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File    | FormData                    | **Required.** The source Excel workbook file (`.xlsx`, `.xls`, etc.) to compress.                                                     |
+| level          | Integer | Query                       | **Optional.** Compression intensity (0 = fastest/lowest, 9 = slowest/highest). If omitted, a balanced default (5) is applied.         |
+| outPath        | String  | Query                       | **Optional.** Destination folder path in your cloud storage. If omitted, the file is saved in the same folder as the source workbook. |
+| outStorageName | String  | Query                       | **Required.** Identifier of the configured cloud storage service (e.g., `CorporateDrive`).                                            |
+| region         | String  | Query                       | **Optional.** Locale setting (e.g., `de-DE`) that may affect region‑specific data handling.                                           |
+| password       | String  | Query                       | **Optional.** Password for decrypting a protected spreadsheet. Leave blank if the file is not encrypted.                              |
 
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/compress?level=5&outStorageName=MyStorage" \
-  -H "Authorization: Bearer <access_token>" \
-  -F "Spreadsheet=@/path/to/source.xlsx" \
-  -o compressed.xlsx
-```
-
-### Request Parameters  
-
-| Parameter Name | Type   | Path/Query/String/HTTP Body | Description |
-|----------------|--------|-----------------------------|-------------|
-| Spreadsheet    | File   | FormData                    | **Required.** The source Excel workbook file (`.xlsx`, `.xls`, etc.) to compress. |
-| level          | Integer| Query                       | **Optional.** Compression intensity (0 = fastest/lowest, 9 = slowest/highest). If omitted, a balanced default (5) is applied. |
-| outPath        | String | Query                       | **Optional.** Destination folder path in your cloud storage. If omitted, the file is saved in the same folder as the source workbook. |
-| outStorageName | String | Query                       | **Required.** Identifier of the configured cloud storage service (e.g., `CorporateDrive`). |
-| region         | String | Query                       | **Optional.** Locale setting (e.g., `de-DE`) that may affect region‑specific data handling. |
-| password       | String | Query                       | **Optional.** Password for decrypting a protected spreadsheet. Leave blank if the file is not encrypted. |
-
-### Response  
+### Response
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
-### Error Codes  
+### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized** – Invalid access token or client credentials.  
-- **404 Not Found** – The spreadsheet file is not accessible.  
-- **429 Too Many Requests** – Rate limit exceeded; retry after the period indicated in the `Retry-After` header.  
-- **500 Server Error** – The spreadsheet encountered an anomaly while processing.  
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized** – Invalid access token or client credentials.
+- **404 Not Found** – The spreadsheet file is not accessible.
+- **429 Too Many Requests** – Rate limit exceeded; retry after the period indicated in the `Retry-After` header.
+- **500 Server Error** – The spreadsheet encountered an anomaly while processing.
 
-### Limits & Quotas  
+### Limits & Quotas
 
-- Maximum file size: **500 MB** per request.  
-- Supported formats: `.xlsx`, `.xls`, `.xlsb`, `.xlsm`.  
-- Rate limit: **100 requests per minute** per account.  
+- Maximum file size: **500 MB** per request.
+- Supported formats: `.xlsx`, `.xls`, `.xlsb`, `.xlsm`.
+- Rate limit: **100 requests per minute** per account.
 
 ## Where should we use the Compress Spreadsheet API?
 
-- **Automated report distribution** – Compress monthly financial statements before emailing them to ensure successful delivery and improve the recipient’s experience.  
-- **User file‑upload optimization** – Compress uploaded Excel files in the background to save cloud storage space and reduce storage costs.  
-- **Data‑pipeline processing and migration** – Compress intermediate Excel files generated during ETL processes to speed up network transfer and lower temporary‑storage pressure.  
+- **Automated report distribution** – Compress monthly financial statements before emailing them to ensure successful delivery and improve the recipient’s experience.
+- **User file‑upload optimization** – Compress uploaded Excel files in the background to save cloud storage space and reduce storage costs.
+- **Data‑pipeline processing and migration** – Compress intermediate Excel files generated during ETL processes to speed up network transfer and lower temporary‑storage pressure.
 
 ## Why should you use the Compress Spreadsheet API?
 
-- **Developer‑friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development with comprehensive documentation.  
-- **Reduced labor costs** – Eliminates the need for dedicated personnel to consolidate documents manually.  
-- **Pay‑per‑use** – No upfront investment; you only pay for the API calls you actually make.  
-- **Zero maintenance** – No servers to maintain, no software updates, and no compatibility concerns.  
+- **Developer‑friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development with comprehensive documentation.
+- **Reduced labor costs** – Eliminates the need for dedicated personnel to consolidate documents manually.
+- **Pay‑per‑use** – No upfront investment; you only pay for the API calls you actually make.
+- **Zero maintenance** – No servers to maintain, no software updates, and no compatibility concerns.
 
 ## How to Use the Compress Spreadsheet API with SDKs
 
-### Compress Spreadsheet API Specification  
+### Compress Spreadsheet API Specification
 
 The [Compress Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/ManagementController/CompressSpreadsheet) provides a publicly accessible interface for REST interactions, allowing direct API calls from a web browser.
 
-### Use Aspose.Cells Cloud SDKs  
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop, as it abstracts low‑level details and lets you compress a spreadsheet with just a few lines of code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -124,19 +113,19 @@ The following code examples demonstrate how to interact with Aspose.Cells web se
 
 ---
 
-### Frequently Asked Questions  
+### Frequently Asked Questions
 
 1. **How do I compress an Excel file using Aspose.Cells Cloud?**  
-   Call the `PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/compress` endpoint, include the workbook in `FormData` as `Spreadsheet`, optionally set `level`, and provide `outStorageName`. Authenticate with a Bearer token. The API returns the compressed file stream.  
+   Call the `PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/compress` endpoint, include the workbook in `FormData` as `Spreadsheet`, optionally set `level`, and provide `outStorageName`. Authenticate with a Bearer token. The API returns the compressed file stream.
 
 2. **What compression levels are supported and how do they affect speed?**  
-   The `level` parameter accepts integers **0‑9**. `0` gives the fastest, lowest‑ratio compression; `9` yields the smallest file but takes longer. If omitted, the default level **5** (balanced) is used.  
+   The `level` parameter accepts integers **0‑9**. `0` gives the fastest, lowest‑ratio compression; `9` yields the smallest file but takes longer. If omitted, the default level **5** (balanced) is used.
 
 3. **Can I compress a password‑protected workbook?**  
-   Yes. Supply the workbook password via the `password` query parameter. The API decrypts, compresses, and re‑encrypts the file using the same password.  
+   Yes. Supply the workbook password via the `password` query parameter. The API decrypts, compresses, and re‑encrypts the file using the same password.
 
 4. **What is the maximum file size I can compress?**  
-   The API accepts files up to **500 MB** per request.  
+   The API accepts files up to **500 MB** per request.
 
 5. **How is rate limiting enforced?**  
-   You may make up to **100 requests per minute**. Exceeding this limit returns a **429 Too Many Requests** response with a `Retry-After` header indicating when to retry.  
+   You may make up to **100 requests per minute**. Exceeding this limit returns a **429 Too Many Requests** response with a `Retry-After` header indicating when to retry.

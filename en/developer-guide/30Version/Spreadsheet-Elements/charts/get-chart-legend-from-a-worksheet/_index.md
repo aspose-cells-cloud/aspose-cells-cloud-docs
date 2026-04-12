@@ -8,36 +8,23 @@ keywords: "Aspose.Cells, chart legend, REST API, Excel, cloud SDK, get chart leg
 description: "Retrieve the legend of a chart from a specific worksheet in an Excel workbook using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL sample, and SDK snippets."
 ---
 
-**Overview**  
 The **Get Chart Legend** operation returns the legend information of a chart that resides in a worksheet of an Excel workbook. This endpoint is part of **Aspose.Cells Cloud API v3.0** and can be used when you need to read legend properties such as position, font, size, and formatting.
 
-**Quick‑start**  
-
-1. Obtain a JWT access token.  
-2. (Optional) Upload the workbook to Aspose Cloud storage if it is not already present.  
-3. Call the GET endpoint described below, supplying the required path parameters and any optional query parameters.  
-4. Parse the JSON response to read legend properties.
-
-**Prerequisites**  
-
-- A valid Aspose Cloud account and JWT token.  
-- The workbook must be stored in Aspose Cloud storage (or the `folder` query parameter must point to its location).  
-
-**REST API**
+## **REST API**
 
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
 
-The request parameters are listed below:
+### Request parameters
 
-| Parameter Name | Type    | Location | Description                                 |
-|----------------|---------|----------|---------------------------------------------|
-| name           | string  | path     | Name of the workbook file.                  |
-| sheetName      | string  | path     | Name of the worksheet.                      |
-| chartIndex     | integer | path     | Zero‑based index of the chart.              |
-| folder         | string  | query    | Folder path where the workbook is stored.   |
-| storageName    | string  | query    | Name of the storage.                        |
+| Parameter Name | Type    | Location | Description                               |
+| -------------- | ------- | -------- | ----------------------------------------- |
+| name           | string  | path     | Name of the workbook file.                |
+| sheetName      | string  | path     | Name of the worksheet.                    |
+| chartIndex     | integer | path     | Zero‑based index of the chart.            |
+| folder         | string  | query    | Folder path where the workbook is stored. |
+| storageName    | string  | query    | Name of the storage.                      |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartLegend) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -145,30 +132,30 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 
 {{< /tabs >}}
 
-**Response fields reference**
+### **Response fields reference**
 
-| Field                     | Type   | Description |
-|---------------------------|--------|-------------|
-| `Legend.Position`         | string | Position of the legend (e.g., *Right*, *Top*). |
-| `Legend.AutoScaleFont`    | bool   | Indicates whether the legend font is auto‑scaled. |
-| `Legend.Font.Name`        | string | Font family name used for the legend text. |
-| `Legend.Font.Size`        | number | Font size (points). |
-| `Legend.Font.Color`       | object | RGBA color object for the legend text. |
-| `Legend.Border`           | object | Border properties (color, style, weight, etc.). |
-| `Legend.Width` / `Height` | number | Physical size of the legend area (pixels). |
+| Field                     | Type   | Description                                          |
+| ------------------------- | ------ | ---------------------------------------------------- |
+| `Legend.Position`         | string | Position of the legend (e.g., _Right_, _Top_).       |
+| `Legend.AutoScaleFont`    | bool   | Indicates whether the legend font is auto‑scaled.    |
+| `Legend.Font.Name`        | string | Font family name used for the legend text.           |
+| `Legend.Font.Size`        | number | Font size (points).                                  |
+| `Legend.Font.Color`       | object | RGBA color object for the legend text.               |
+| `Legend.Border`           | object | Border properties (color, style, weight, etc.).      |
+| `Legend.Width` / `Height` | number | Physical size of the legend area (pixels).           |
 | `Legend.X` / `Y`          | number | Top‑left coordinates of the legend within the chart. |
-| `Legend.Area` …           | object | Background fill and formatting details. |
-| `Code`                    | int    | Operation result code (0 = success). |
-| `Status`                  | string | Operation status message. |
+| `Legend.Area` …           | object | Background fill and formatting details.              |
+| `Code`                    | int    | Operation result code (0 = success).                 |
+| `Status`                  | string | Operation status message.                            |
 
 **Possible error responses**
 
-| HTTP Status | Reason                              | Example error JSON |
-|-------------|-------------------------------------|--------------------|
-| 400         | Bad request – missing/invalid parameters. | `{"Error": {"Code": "InvalidParameter", "Message": "Parameter 'name' is required."}}` |
-| 401         | Unauthorized – invalid or expired JWT token. | `{"Error": {"Code": "Unauthorized", "Message": "Access token is missing or invalid."}}` |
-| 404         | Not found – workbook, worksheet, or chart does not exist. | `{"Error": {"Code": "ResourceNotFound", "Message": "Chart with index 0 not found."}}` |
-| 500         | Internal server error.               | `{"Error": {"Code": "ServerError", "Message": "An unexpected error occurred."}}` |
+| HTTP Status | Reason                                                    | Example error JSON                                                                      |
+| ----------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| 400         | Bad request – missing/invalid parameters.                 | `{"Error": {"Code": "InvalidParameter", "Message": "Parameter 'name' is required."}}`   |
+| 401         | Unauthorized – invalid or expired JWT token.              | `{"Error": {"Code": "Unauthorized", "Message": "Access token is missing or invalid."}}` |
+| 404         | Not found – workbook, worksheet, or chart does not exist. | `{"Error": {"Code": "ResourceNotFound", "Message": "Chart with index 0 not found."}}`   |
+| 500         | Internal server error.                                    | `{"Error": {"Code": "ServerError", "Message": "An unexpected error occurred."}}`        |
 
 ---
 

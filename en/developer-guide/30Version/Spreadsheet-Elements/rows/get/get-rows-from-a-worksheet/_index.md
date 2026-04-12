@@ -18,12 +18,10 @@ This REST API retrieves rows information from an Excel worksheet.
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
 
-*Note: HTTPS is mandatory for production use.*
-
-The request parameters are:
+### **Request parameters**
 
 | Parameter Name | Type   | Location | Description          |
-|----------------|--------|----------|----------------------|
+| -------------- | ------ | -------- | -------------------- |
 | name           | string | path     | The workbook name.   |
 | sheetName      | string | path     | The worksheet name.  |
 | folder         | string | query    | The workbook folder. |
@@ -55,16 +53,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
     "MaxRow": 20,
     "RowsCount": 17,
     "RowsList": [
-      { "link": { "Href": "/0",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/1",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/2",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/3",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/4",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/5",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/6",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/7",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/8",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/9",  "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/0", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/1", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/2", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/3", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/4", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/5", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/6", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/7", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/8", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/9", "Rel": "self", "Title": null, "Type": null } },
       { "link": { "Href": "/10", "Rel": "self", "Title": null, "Type": null } },
       { "link": { "Href": "/11", "Rel": "self", "Title": null, "Type": null } },
       { "link": { "Href": "/12", "Rel": "self", "Title": null, "Type": null } },
@@ -121,16 +119,16 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cel
     "MaxRow": 20,
     "RowsCount": 17,
     "RowsList": [
-      { "link": { "Href": "/0",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/1",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/2",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/3",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/4",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/5",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/6",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/7",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/8",  "Rel": "self", "Title": null, "Type": null } },
-      { "link": { "Href": "/9",  "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/0", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/1", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/2", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/3", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/4", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/5", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/6", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/7", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/8", "Rel": "self", "Title": null, "Type": null } },
+      { "link": { "Href": "/9", "Rel": "self", "Title": null, "Type": null } },
       { "link": { "Href": "/10", "Rel": "self", "Title": null, "Type": null } },
       { "link": { "Href": "/11", "Rel": "self", "Title": null, "Type": null } },
       { "link": { "Href": "/12", "Rel": "self", "Title": null, "Type": null } },

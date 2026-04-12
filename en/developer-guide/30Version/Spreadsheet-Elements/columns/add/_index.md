@@ -21,17 +21,17 @@ Before invoking the endpoint, obtain an OAuth 2.0 access token and include it 
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}?totalColumns=1
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name      | Type    | Location | Description                                                                    |
-|---------------------|---------|----------|--------------------------------------------------------------------------------|
-| **name**            | string  | path     | The workbook file name.                                                        |
-| **sheetName**       | string  | path     | The worksheet name.                                                            |
-| **columnIndex**     | integer | path     | Zero‑based index of the column where insertion begins.                        |
-| **totalColumns**    | integer | query    | Number of columns to insert.                                                   |
-| **updateReference**| boolean | query    | When **true**, cell references are updated to reflect the insertion.          |
-| **folder**          | string  | query    | Path to the folder containing the workbook.                                    |
-| **storageName**     | string  | query    | Name of the storage service.                                                   |
+| Parameter Name      | Type    | Location | Description                                                          |
+| ------------------- | ------- | -------- | -------------------------------------------------------------------- |
+| **name**            | string  | path     | The workbook file name.                                              |
+| **sheetName**       | string  | path     | The worksheet name.                                                  |
+| **columnIndex**     | integer | path     | Zero‑based index of the column where insertion begins.               |
+| **totalColumns**    | integer | query    | Number of columns to insert.                                         |
+| **updateReference** | boolean | query    | When **true**, cell references are updated to reflect the insertion. |
+| **folder**          | string  | query    | Path to the folder containing the workbook.                          |
+| **storageName**     | string  | query    | Name of the storage service.                                         |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

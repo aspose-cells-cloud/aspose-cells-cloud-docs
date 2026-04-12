@@ -12,21 +12,23 @@ weight: 23
 This REST API retrieves **metadata** from one or more Excel files.  
 The request must include an `Authorization: Bearer <access_token>` header obtained via the OAuth 2.0 client‑credentials flow.
 
+## REST API
+
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/metadata/get
 ```
 
 ### Query Parameter
 
-| Parameter Name | Type   | Description                                                                 |
-|----------------|--------|-----------------------------------------------------------------------------|
-| type           | string | `ALL` / `BuiltIn` / `Custom` – specifies which metadata groups to return.   |
+| Parameter Name | Type   | Description                                                               |
+| -------------- | ------ | ------------------------------------------------------------------------- |
+| type           | string | `ALL` / `BuiltIn` / `Custom` – specifies which metadata groups to return. |
 
 ### Request Body Parameter
 
-| Parameter Name | Type      | Description                                                            |
-|----------------|-----------|------------------------------------------------------------------------|
-| excel file     | data file | The Excel file supplied as the first part of the multipart request.   |
+| Parameter Name | Type      | Description                                                         |
+| -------------- | --------- | ------------------------------------------------------------------- |
+| excel file     | data file | The Excel file supplied as the first part of the multipart request. |
 
 ### Response
 

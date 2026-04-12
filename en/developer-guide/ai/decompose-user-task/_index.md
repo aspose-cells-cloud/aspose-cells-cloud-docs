@@ -14,7 +14,7 @@ The **DecomposeUserTask** endpoint empowers developers to turn a free‑form tas
 
 ## **Decompose User Task API**
 
-### API Endpoint
+### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/ai/task/decompose
@@ -22,16 +22,16 @@ PUT https://api.aspose.cloud/v4.0/cells/ai/task/decompose
 
 ### **Request Parameters:**
 
-| Parameter Name  | Type   | Location | Required/Optional | Description |
-| :-------------- | :----- | :------- | :---------------- | :---------- |
+| Parameter Name  | Type   | Location | Required/Optional | Description                                                                                                                                                                                                                              |
+| :-------------- | :----- | :------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | TaskDescription | string | Body     | Required          | A plain‑text description of the user’s overall objective. The service parses the description and generates individual tasks. Example: “Launch marketing campaign for Q3, including content creation, email blast, and social media ads.” |
-| region          | string | Query    | Optional          | Specifies the spreadsheet region (e.g., “A1:D20”) where the result should be placed when the response is saved as a workbook. If omitted, the API uses the default worksheet start cell. |
-| password        | string | Query    | Optional          | Password for opening an encrypted spreadsheet file before inserting the decomposition result. Required only when the target workbook is protected. |
+| region          | string | Query    | Optional          | Specifies the spreadsheet region (e.g., “A1:D20”) where the result should be placed when the response is saved as a workbook. If omitted, the API uses the default worksheet start cell.                                                 |
+| password        | string | Query    | Optional          | Password for opening an encrypted spreadsheet file before inserting the decomposition result. Required only when the target workbook is protected.                                                                                       |
 
 ### **Response**
 
 Successful response (200 OK)  
-Content‑Type: `application/octet-stream` (binary file stream)  
+Content‑Type: `application/octet-stream` (binary file stream)
 
 Headers:
 
@@ -42,25 +42,25 @@ The same structure is used for XLSX/ODS formats, with columns placed in the firs
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
-- **429 Too Many Requests**: Rate limit exceeded; reduce request frequency.  
-- **422 Unprocessable Entity**: The request payload is syntactically correct but semantically invalid (e.g., empty `TaskDescription`).  
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
+- **404 Not Found**: The spreadsheet file is not accessible.
+- **429 Too Many Requests**: Rate limit exceeded; reduce request frequency.
+- **422 Unprocessable Entity**: The request payload is syntactically correct but semantically invalid (e.g., empty `TaskDescription`).
 - **500 Server Error**: The spreadsheet encountered an anomaly while obtaining calculation data.
 
 ## Where should we use the Decompose User Task API?
 
-- **Project kickoff**: Convert a high‑level project brief into a Redmine‑compatible task list with time estimates, enabling immediate sprint planning.  
-- **Marketing automation**: Break down campaign objectives into executable steps, export as CSV, and import into task‑management tools for cross‑team coordination.  
-- **Resource allocation**: Generate hour‑based estimates for each sub‑task, allowing managers to balance workload across team members before the project starts.  
+- **Project kickoff**: Convert a high‑level project brief into a Redmine‑compatible task list with time estimates, enabling immediate sprint planning.
+- **Marketing automation**: Break down campaign objectives into executable steps, export as CSV, and import into task‑management tools for cross‑team coordination.
+- **Resource allocation**: Generate hour‑based estimates for each sub‑task, allowing managers to balance workload across team members before the project starts.
 - **Milestone tracking**: Automatically create milestone nodes that can be synced with Gantt‑chart tools, ensuring that each phase has a clear deliverable.
 
 ## Why should you use the Decompose User Task API?
 
-- **SMART‑compliant output** guarantees that each generated task meets quality criteria (Specific, Measurable, Achievable, Relevant, Time‑bound).  
-- **Built‑in hour‑based time estimation** saves manual calculation and improves forecasting accuracy.  
-- **Ready‑to‑import file formats** (CSV, XLSX, etc.) streamline integration with Redmine, Jira, Azure DevOps, and other project‑management platforms.  
+- **SMART‑compliant output** guarantees that each generated task meets quality criteria (Specific, Measurable, Achievable, Relevant, Time‑bound).
+- **Built‑in hour‑based time estimation** saves manual calculation and improves forecasting accuracy.
+- **Ready‑to‑import file formats** (CSV, XLSX, etc.) streamline integration with Redmine, Jira, Azure DevOps, and other project‑management platforms.
 - **One‑call automation** reduces the effort of manual task breakdown, accelerating project initiation and minimizing human error.
 
 ## How to Use the Decompose User Task API with SDKs

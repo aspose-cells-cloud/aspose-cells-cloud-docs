@@ -4,7 +4,7 @@ second_title: "Document"
 type: docs
 linktitle: "Hyperlinks"
 url: /hyperlinks/
-aliases: [/working-with-hyperlinks/,/working-with-hyperlink/]
+aliases: [/working-with-hyperlinks/, /working-with-hyperlink/]
 keywords: "Excel, hyperlinks, spreadsheet, Cells.Cloud API"
 description: "Learn how to manage hyperlinks in Excel files using the Cells.Cloud API, covering retrieval, addition, updating, and deletion."
 weight: 100

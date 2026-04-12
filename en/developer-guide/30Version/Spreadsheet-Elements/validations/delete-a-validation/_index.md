@@ -1,47 +1,31 @@
----  
-title: "Delete Worksheet Validation – Aspose.Cells Cloud"  
-second_title: "Document"  
-linktitle: "Delete"  
-type: docs  
-url: /validations/delete/  
-keywords: "Delete, worksheet validation, Aspose.Cells Cloud, Excel API"  
-description: "Learn how to delete a worksheet validation from an Excel file using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication details, cURL example, error handling, and SDK code snippets."  
-weight: 10  
----  
+---
+title: "Delete Worksheet Validation – Aspose.Cells Cloud"
+second_title: "Document"
+linktitle: "Delete"
+type: docs
+url: /validations/delete/
+keywords: "Delete, worksheet validation, Aspose.Cells Cloud, Excel API"
+description: "Learn how to delete a worksheet validation from an Excel file using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication details, cURL example, error handling, and SDK code snippets."
+weight: 10
+---
 
 This REST API deletes a worksheet validation by its zero‑based index on an Excel worksheet.
 
-## Prerequisites  
-
-- **Aspose.Cells Cloud SDK** version 3.0 or later (or any language‑specific SDK that supports the DeleteWorksheetValidation operation).  
-- A valid **JWT access token** with the required scopes (see the **Authentication** section).  
-- The target workbook must be stored in Aspose Cloud storage or a connected external storage service.  
-
-## Authentication  
-
-All requests must include an `Authorization` header containing a Bearer JWT token:
-
-```http
-Authorization: Bearer <jwt-token>
-```
-
-You can generate a JWT token by calling the **OAuth 2.0** token endpoint with your client credentials. The token is valid for 1 hour; refresh it before expiration.
-
-## REST API  
+## REST API
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
-**Request parameters**
+### **Request parameters**
 
-| Parameter Name   | Type    | Location | Description                                                          |
-|------------------|---------|----------|----------------------------------------------------------------------|
-| name             | string  | path     | The name of the Excel file.                                          |
-| sheetName        | string  | path     | The name of the worksheet.                                           |
-| validationIndex  | integer | path     | The zero‑based index of the validation to delete.                    |
-| folder           | string  | query    | The folder that contains the document.                               |
-| storageName      | string  | query    | The name of the storage service.                                     |
+| Parameter Name  | Type    | Location | Description                                       |
+| --------------- | ------- | -------- | ------------------------------------------------- |
+| name            | string  | path     | The name of the Excel file.                       |
+| sheetName       | string  | path     | The name of the worksheet.                        |
+| validationIndex | integer | path     | The zero‑based index of the validation to delete. |
+| folder          | string  | query    | The folder that contains the document.            |
+| storageName     | string  | query    | The name of the storage service.                  |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -74,17 +58,17 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/v
 
 {{< /tabs >}}
 
-## Error Handling / Response Codes  
+## Error Handling / Response Codes
 
-| Status Code | Meaning                                 | Description                                                                 |
-|------------|------------------------------------------|-----------------------------------------------------------------------------|
-| 200        | OK                                       | Validation was deleted successfully.                                        |
-| 400        | Bad Request                              | Missing or invalid parameters.                                              |
-| 401        | Unauthorized                             | Invalid or missing JWT token.                                               |
-| 404        | Not Found                                | The specified file, worksheet, or validation index does not exist.         |
-| 500        | Internal Server Error                    | Unexpected server error; see the response body for details.                |
+| Status Code | Meaning               | Description                                                        |
+| ----------- | --------------------- | ------------------------------------------------------------------ |
+| 200         | OK                    | Validation was deleted successfully.                               |
+| 400         | Bad Request           | Missing or invalid parameters.                                     |
+| 401         | Unauthorized          | Invalid or missing JWT token.                                      |
+| 404         | Not Found             | The specified file, worksheet, or validation index does not exist. |
+| 500         | Internal Server Error | Unexpected server error; see the response body for details.        |
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the fastest way to integrate this operation into your application. SDKs handle low‑level details so you can focus on business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -141,11 +125,3 @@ The following code examples demonstrate how to delete a worksheet validation usi
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## Summary / Next Steps  
-
-1. **Verify deletion** – Call `GET /cells/{name}/worksheets/{sheetName}/validations` to ensure the validation list no longer contains the removed entry.  
-2. **Refresh the workbook** if you are working with an opened file in your application.  
-3. **Handle errors** according to the response‑code table above and retry authentication if a 401 status is returned.  
-
----  

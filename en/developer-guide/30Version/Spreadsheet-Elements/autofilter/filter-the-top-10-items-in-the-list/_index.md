@@ -1,45 +1,39 @@
----  
-title: "Add Top 10 Filter to an Excel Worksheet (Aspose.Cells Cloud)"  
-second_title: "Document"  
-linktitle: "Add top 10 filter"  
-type: docs  
-url: /autofilter/add-top-10-filter/  
-aliases: [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]  
-keywords: "Aspose.Cells Cloud Top 10 filter, Excel AutoFilter, REST API, spreadsheet automation"  
-description: "Learn how to apply a Top 10 AutoFilter to an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, authentication details, error handling, and SDK snippets for C#, Java, Python, and more."  
-weight: 65  
----  
+---
+title: "Add Top 10 Filter to an Excel Worksheet (Aspose.Cells Cloud)"
+second_title: "Document"
+linktitle: "Add top 10 filter"
+type: docs
+url: /autofilter/add-top-10-filter/
+aliases:
+  [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
+keywords: "Aspose.Cells Cloud Top 10 filter, Excel AutoFilter, REST API, spreadsheet automation"
+description: "Learn how to apply a Top 10 AutoFilter to an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, authentication details, error handling, and SDK snippets for C#, Java, Python, and more."
+weight: 65
+---
 
-This REST API filters the **Top 10** items in a list.  
+This REST API filters the **Top 10** items in a list.
 
-**Prerequisites**  
-You must have a valid Aspose Cloud account, obtain an access token (JWT), and ensure the workbook exists in your storage before calling the API. The `Authorization` header must contain a bearer token:  
-
-```http
-Authorization: Bearer <jwt token>
-```  
-
-## REST API  
+## REST API
 
 ```bash
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10
-```  
+```
 
 The request parameters are:
 
-| Parameter Name | Type    | Location | Required | Default | Description |
-|----------------|---------|----------|----------|---------|-------------|
-| **name** | string | path | Yes | — | The name of the Excel file. |
-| **sheetName** | string | path | Yes | — | The name of the worksheet that contains the data. |
-| **range** | string | query | Yes | — | The cell range to which the filter is applied (e.g., `A1:B10`). |
-| **fieldIndex** | integer | query | Yes | — | Zero‑based index of the column on which the filter is applied. |
-| **isTop** | boolean | query | Yes | `true` | `true` to filter the top items; `false` for bottom items. |
-| **isPercent** | boolean | query | No | `false` | `true` to treat `itemCount` as a percentage; `false` for an absolute count. |
-| **itemCount** | integer | query | No | `10` | Number of items to include in the filter. |
-| **matchBlanks** | boolean | query | No | `false` | `true` to include blank cells in the filter results. |
-| **refresh** | boolean | query | No | `false` | `true` to refresh the filter after applying it. |
-| **folder** | string | query | No | — | The folder in storage where the Excel file is located. |
-| **storageName** | string | query | No | — | The name of the Aspose Cloud storage. |
+| Parameter Name  | Type    | Location | Required | Default | Description                                                                 |
+| --------------- | ------- | -------- | -------- | ------- | --------------------------------------------------------------------------- |
+| **name**        | string  | path     | Yes      | —       | The name of the Excel file.                                                 |
+| **sheetName**   | string  | path     | Yes      | —       | The name of the worksheet that contains the data.                           |
+| **range**       | string  | query    | Yes      | —       | The cell range to which the filter is applied (e.g., `A1:B10`).             |
+| **fieldIndex**  | integer | query    | Yes      | —       | Zero‑based index of the column on which the filter is applied.              |
+| **isTop**       | boolean | query    | Yes      | `true`  | `true` to filter the top items; `false` for bottom items.                   |
+| **isPercent**   | boolean | query    | No       | `false` | `true` to treat `itemCount` as a percentage; `false` for an absolute count. |
+| **itemCount**   | integer | query    | No       | `10`    | Number of items to include in the filter.                                   |
+| **matchBlanks** | boolean | query    | No       | `false` | `true` to include blank cells in the filter results.                        |
+| **refresh**     | boolean | query    | No       | `false` | `true` to refresh the filter after applying it.                             |
+| **folder**      | string  | query    | No       | —       | The folder in storage where the Excel file is located.                      |
+| **storageName** | string  | query    | No       | —       | The name of the Aspose Cloud storage.                                       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -68,29 +62,21 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 }
 ```
 
-```json
-// Example error response (e.g., invalid token)
-{
-  "Code": 401,
-  "Message": "Authentication failed. Invalid or expired token."
-}
-```
-
 {{< /tab >}}
 
 {{< /tabs >}}
 
 ### Common HTTP Status Codes
 
-| Code | Meaning | Suggested Fix |
-|------|---------|---------------|
-| 200 | Success | – |
-| 400 | Bad Request | Verify required parameters and their formats. |
-| 401 | Unauthorized | Provide a valid JWT token; check token expiration. |
-| 404 | Not Found | Ensure the file and worksheet exist in the specified folder/storage. |
-| 500 | Internal Server Error | Retry later or contact Aspose support with the request ID. |
+| Code | Meaning               | Suggested Fix                                                        |
+| ---- | --------------------- | -------------------------------------------------------------------- |
+| 200  | Success               | –                                                                    |
+| 400  | Bad Request           | Verify required parameters and their formats.                        |
+| 401  | Unauthorized          | Provide a valid JWT token; check token expiration.                   |
+| 404  | Not Found             | Ensure the file and worksheet exist in the specified folder/storage. |
+| 500  | Internal Server Error | Retry later or contact Aspose support with the request ID.           |
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -150,5 +136,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 ---
 
-*Author: Aspose.Cells Cloud product team (10+ years of spreadsheet automation experience)*  
-*Last updated: 2024‑12‑01*  
+_Author: Aspose.Cells Cloud product team (10+ years of spreadsheet automation experience)_  
+_Last updated: 2024‑12‑01_

@@ -20,19 +20,19 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                                          |
-|----------------|---------|----------|------------------------------------------------------|
-| name           | string  | path     | The workbook file name.                              |
-| sheetName      | string  | path     | The worksheet name.                                  |
-| oleObject      | object  | body     | The OLE object definition.                          |
-| upperLeftRow   | integer | query    | Row index of the upper‑left corner (default 0).      |
-| upperLeftColumn| integer | query    | Column index of the upper‑left corner (default 0).   |
-| height         | integer | query    | Height of the OLE object (default 0).                |
-| width          | integer | query    | Width of the OLE object (default 0).                 |
-| oleFile        | string  | query    | Name of the OLE source file.                         |
-| imageFile      | string  | query    | Name of the preview image file.                      |
-| folder         | string  | query    | Folder that contains the workbook.                   |
-| storageName    | string  | query    | Name of the storage to use.                          |
+| Parameter Name  | Type    | Location | Description                                        |
+| --------------- | ------- | -------- | -------------------------------------------------- |
+| name            | string  | path     | The workbook file name.                            |
+| sheetName       | string  | path     | The worksheet name.                                |
+| oleObject       | object  | body     | The OLE object definition.                         |
+| upperLeftRow    | integer | query    | Row index of the upper‑left corner (default 0).    |
+| upperLeftColumn | integer | query    | Column index of the upper‑left corner (default 0). |
+| height          | integer | query    | Height of the OLE object (default 0).              |
+| width           | integer | query    | Width of the OLE object (default 0).               |
+| oleFile         | string  | query    | Name of the OLE source file.                       |
+| imageFile       | string  | query    | Name of the preview image file.                    |
+| folder          | string  | query    | Folder that contains the workbook.                 |
+| storageName     | string  | query    | Name of the storage to use.                        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

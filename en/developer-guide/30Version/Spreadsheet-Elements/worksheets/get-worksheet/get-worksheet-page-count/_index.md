@@ -13,33 +13,18 @@ This REST API returns the **page count** for a worksheet.
 
 ## REST API
 
-### Prerequisites
-- **API version:** `v3.0` (see the Version History note below).  
-- **Authentication:** OAuth 2.0 Bearer token (JWT).  
-- **Storage:** The workbook must be stored in a supported Aspose Cloud storage location.  
-- **Permissions:** The token must have permission to read the specified file.
-
-### Authentication
-1. **Obtain a token** – send a `POST` request to `https://api.aspose.cloud/connect/token` with your client ID and client secret (client‑credentials flow).  
-2. **Receive the JWT** – the response contains an `access_token` that is valid for a limited time (default 1 hour).  
-3. **Include the token** in every API call using the header:  
-
-   ```http
-   Authorization: Bearer <access_token>
-   ```
-
-### Request
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagecount
 ```
 
 ### Request Parameters
-| Parameter   | Type   | Location | Description                              |
-|-------------|--------|----------|------------------------------------------|
-| name        | string | path     | Document name.                           |
-| sheetName   | string | path     | Worksheet name.                          |
-| folder      | string | query    | Folder that contains the document.       |
-| storageName | string | query    | Name of the storage.                     |
+
+| Parameter   | Type   | Location | Description                        |
+| ----------- | ------ | -------- | ---------------------------------- |
+| name        | string | path     | Document name.                     |
+| sheetName   | string | path     | Worksheet name.                    |
+| folder      | string | query    | Folder that contains the document. |
+| storageName | string | query    | Name of the storage.               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetPageCount) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -72,15 +57,17 @@ curl -v "https://api.aspose.cloud/v3.0/cells/worksheets/Sheet1/pagecount" \
 {{< /tabs >}}
 
 ### Response Details
-| HTTP Status | Meaning                               |
-|-------------|---------------------------------------|
-| **200**     | Success – returns the JSON payload shown above. |
-| **401**     | Unauthorized – missing or invalid token. |
-| **404**     | Not Found – the file or worksheet does not exist. |
+
+| HTTP Status | Meaning                                              |
+| ----------- | ---------------------------------------------------- |
+| **200**     | Success – returns the JSON payload shown above.      |
+| **401**     | Unauthorized – missing or invalid token.             |
+| **404**     | Not Found – the file or worksheet does not exist.    |
 | **500**     | Internal Server Error – unexpected server condition. |
 
 ### Version History
-*API version **v3.0** (released 2025). If you are using a newer version, refer to the updated endpoint documentation.*
+
+_API version **v3.0** (released 2025). If you are using a newer version, refer to the updated endpoint documentation._
 
 ## Cloud SDK Family
 

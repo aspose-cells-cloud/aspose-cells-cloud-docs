@@ -1,51 +1,34 @@
----  
-title: "Hide Chart Legend in an Excel Worksheet – Aspose.Cells Cloud API"  
-type: docs  
-url: /charts/legend/hide/  
-aliases: [/hide-chart-legend-in-a-worksheet/]  
-weight: 110  
-keywords: "Aspose.Cells, Excel, hide chart legend, REST API, Cloud SDK, chart legend"  
-description: "Learn how to hide a chart legend in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes HTTPS endpoint, required authentication, request syntax, response details, error handling, and SDK examples."  
----  
+---
+title: "Hide Chart Legend in an Excel Worksheet – Aspose.Cells Cloud API"
+type: docs
+url: /charts/legend/hide/
+aliases: [/hide-chart-legend-in-a-worksheet/]
+weight: 110
+keywords: "Aspose.Cells, Excel, hide chart legend, REST API, Cloud SDK, chart legend"
+description: "Learn how to hide a chart legend in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes HTTPS endpoint, required authentication, request syntax, response details, error handling, and SDK examples."
+---
 
 This REST API hides the legend in a chart. A **chart legend** is the box that identifies the data series plotted in the chart.
 
-## Prerequisites  
-
-- A valid **Aspose Cloud** account.  
-- A **JWT access token** obtained through the Aspose Cloud OAuth flow.  
-- The target workbook stored in a supported storage (e.g., default Aspose Cloud storage).  
-- The worksheet name, chart index, and optional folder/storage parameters you intend to target.
-
-## Authentication  
-
-All requests must include an `Authorization` header with a Bearer JWT token:
-
-```http
-Authorization: Bearer <jwt token>
-```
-
-You can generate the token by calling the Aspose Cloud authentication endpoint (see the [Authentication guide](https://docs.aspose.cloud/cells/authentication/)).
-
-## REST API  
+## REST API
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
 
-The request parameters are listed below.
+### Request parameters
 
-| Parameter Name | Type    | Location | Description                     |
-|----------------|---------|----------|---------------------------------|
-| **name**       | string  | path     | Workbook name.                  |
-| **sheetName**  | string  | path     | Worksheet name.                 |
-| **chartIndex** | integer | path     | Index of the chart.             |
-| **folder**     | string  | query    | Workbook folder (optional).     |
-| **storageName**| string  | query    | Storage name (optional).        |
+| Parameter Name  | Type    | Location | Description                 |
+| --------------- | ------- | -------- | --------------------------- |
+| **name**        | string  | path     | Workbook name.              |
+| **sheetName**   | string  | path     | Worksheet name.             |
+| **chartIndex**  | integer | path     | Index of the chart.         |
+| **folder**      | string  | query    | Workbook folder (optional). |
+| **storageName** | string  | query    | Storage name (optional).    |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartLegend) defines this publicly accessible programming interface.
 
-You can use the cURL command‑line tool to call the API easily. The example below demonstrates a request that hides the legend of chart 0 in *Sample_Test_Book.xls*.
+You can use the cURL command‑line tool to call the API easily. The example below demonstrates a request that hides the legend of chart 0 in _Sample_Test_Book.xls_.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -74,30 +57,30 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 
 {{< /tabs >}}
 
-## Responses  
+## Responses
 
-| HTTP Status | Description                              | Example JSON |
-|-------------|------------------------------------------|--------------|
-| **200 OK**  | Legend hidden successfully.              | `{ "Code": 200, "Status": "OK" }` |
-| **401 Unauthorized** | Missing or invalid JWT token. | `{ "Code": 401, "Message": "Invalid access token." }` |
-| **404 Not Found** | Workbook, worksheet, or chart does not exist. | `{ "Code": 404, "Message": "Chart not found." }` |
-| **500 Internal Server Error** | Unexpected server error. | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+| HTTP Status                   | Description                                   | Example JSON                                                  |
+| ----------------------------- | --------------------------------------------- | ------------------------------------------------------------- |
+| **200 OK**                    | Legend hidden successfully.                   | `{ "Code": 200, "Status": "OK" }`                             |
+| **401 Unauthorized**          | Missing or invalid JWT token.                 | `{ "Code": 401, "Message": "Invalid access token." }`         |
+| **404 Not Found**             | Workbook, worksheet, or chart does not exist. | `{ "Code": 404, "Message": "Chart not found." }`              |
+| **500 Internal Server Error** | Unexpected server error.                      | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
 
-## FAQ  
+## FAQ
 
-**Q:** *How do I hide a chart legend using Aspose.Cells Cloud?*  
+**Q:** _How do I hide a chart legend using Aspose.Cells Cloud?_  
 **A:** Send a `DELETE` request to `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend` with a valid JWT token in the `Authorization` header. A `200 OK` response indicates success.
 
-**Q:** *What authentication is required for the Hide Chart Legend API?*  
+**Q:** _What authentication is required for the Hide Chart Legend API?_  
 **A:** Include an `Authorization: Bearer <jwt token>` header. Obtain the token via the Aspose Cloud OAuth flow.
 
-**Q:** *What error response will I receive if the chart index is invalid?*  
+**Q:** _What error response will I receive if the chart index is invalid?_  
 **A:** The service returns `404 Not Found` with a JSON body containing `Code: 404` and a message describing the missing chart.
 
-**Q:** *Can I use HTTP instead of HTTPS?*  
+**Q:** _Can I use HTTP instead of HTTPS?_  
 **A:** No. All Aspose Cloud endpoints require HTTPS for security.
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the fastest way to develop. An SDK abstracts low‑level details so you can focus on your project tasks. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

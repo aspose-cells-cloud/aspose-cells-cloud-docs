@@ -14,56 +14,52 @@ The **ConvertSpreadsheetToJson** endpoint converts a spreadsheet stored on a loc
 
 ## Convert Spreadsheet to JSON API
 
-### API Endpoint
+### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json
 ```
 
-### Authentication
-
-Include an `Authorization: Bearer <access_token>` header in every request. Obtain the access token through the Aspose Cloud OAuth flow using your client ID and secret. The token must be valid for the duration of the request.
-
 ### Request Parameters
 
-| Parameter Name | Type                       | Location | Required/Optional | Description                                                                                                                                                                         |
-| :------------- | :------------------------- | :------- | :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File (multipart/form-data) | FormData | Required          | The source spreadsheet file (e.g., .xls, .xlsx, .xlsm). Example: `curl -F "Spreadsheet=@myfile.xlsx"`                                                                              |
-| outPath        | String                     | Query    | Optional          | Target folder path on cloud storage where the converted JSON file will be saved. If omitted, the JSON is returned directly in the response stream. Example: `outPath=/output/`. |
-| outStorageName | String                     | Query    | Optional          | Name of the cloud storage (e.g., Amazon S3, Azure Blob) where the output file should be written. Required only when `outPath` is used with a non‑default storage.                |
-| fontsLocation  | String                     | Query    | Optional          | Path to a custom fonts folder on the server. Use this when the spreadsheet references fonts that are not available in the default library.                                         |
-| region         | String                     | Query    | Optional          | Locale/region identifier (e.g., `en-US`, `fr-FR`) that influences number, date, and currency formatting during conversion.                                                          |
-| password       | String                     | Query    | Optional          | Password to open a password‑protected spreadsheet. Omit for unprotected files.                                                                                                      |
+| Parameter Name | Type                       | Location | Required/Optional | Description                                                                                                                                                                                     |
+| :------------- | :------------------------- | :------- | :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File (multipart/form-data) | FormData | Required          | The source spreadsheet file (e.g., .xls, .xlsx, .xlsm). Example: `curl -F "Spreadsheet=@myfile.xlsx"`                                                                                           |
+| outPath        | String                     | Query    | Optional          | Target folder path on cloud storage where the converted JSON file will be saved. If omitted, the JSON is returned directly in the response stream. Example: `outPath=/output/`.                 |
+| outStorageName | String                     | Query    | Optional          | Name of the cloud storage (e.g., Amazon S3, Azure Blob) where the output file should be written. Required only when `outPath` is used with a non‑default storage.                               |
+| fontsLocation  | String                     | Query    | Optional          | Path to a custom fonts folder on the server. Use this when the spreadsheet references fonts that are not available in the default library.                                                      |
+| region         | String                     | Query    | Optional          | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.number, date, and currency formatting during conversion. |
+| password       | String                     | Query    | Optional          | Password to open a password‑protected spreadsheet. Omit for unprotected files.                                                                                                                  |
 
 ### Response
 
-**Successful response (200 OK)**  
+**Successful response (200 OK)**
 
-*Content-Type:* `application/json`  
-*Content-Disposition:* `attachment; filename="converted.json"`  
-*Content-Length:* `<size in bytes>`
+_Content-Type:_ `application/json`  
+_Content-Disposition:_ `attachment; filename="converted.json"`  
+_Content-Length:_ `<size in bytes>`
 
 The response body contains a binary stream with the JSON representation of the workbook.
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized** – Invalid access token or incorrect client credentials.  
-- **404 Not Found** – The spreadsheet file is not accessible.  
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized** – Invalid access token or incorrect client credentials.
+- **404 Not Found** – The spreadsheet file is not accessible.
 - **500 Server Error** – An unexpected condition occurred while processing the spreadsheet.
 
 ## Where should we use the Convert Spreadsheet to JSON API?
 
-- **Data migration pipelines** – Convert legacy Excel reports into JSON for ingestion into modern NoSQL databases or data lakes.  
-- **Mobile or web applications** – Quickly transform user‑uploaded spreadsheets into JSON for client‑side rendering without storing the original file in the cloud.  
-- **Automated reporting** – Generate JSON payloads for downstream analytics services (e.g., Power BI, Tableau) directly from spreadsheet inputs.  
+- **Data migration pipelines** – Convert legacy Excel reports into JSON for ingestion into modern NoSQL databases or data lakes.
+- **Mobile or web applications** – Quickly transform user‑uploaded spreadsheets into JSON for client‑side rendering without storing the original file in the cloud.
+- **Automated reporting** – Generate JSON payloads for downstream analytics services (e.g., Power BI, Tableau) directly from spreadsheet inputs.
 - **Serverless functions** – Use the API within AWS Lambda or Azure Functions to perform on‑the‑fly conversions without managing temporary storage.
 
 ## Why should you use the Convert Spreadsheet to JSON API?
 
-- Cloud‑native conversion removes the need to upload large files to storage before processing, reducing latency and storage costs.  
-- Single‑request workflow: upload the spreadsheet and receive JSON in the same HTTP call, simplifying integration logic.  
-- Supports password‑protected and region‑specific spreadsheets, ensuring accurate data representation across locales.  
+- Cloud‑native conversion removes the need to upload large files to storage before processing, reducing latency and storage costs.
+- Single‑request workflow: upload the spreadsheet and receive JSON in the same HTTP call, simplifying integration logic.
+- Supports password‑protected and region‑specific spreadsheets, ensuring accurate data representation across locales.
 - Scalable on Aspose’s infrastructure – handles large workbooks and complex formulas without impacting your own server resources.
 
 ## How to Use the Convert Spreadsheet to JSON API with SDKs

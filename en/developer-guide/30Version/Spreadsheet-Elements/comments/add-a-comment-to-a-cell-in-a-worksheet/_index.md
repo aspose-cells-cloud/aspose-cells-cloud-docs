@@ -16,10 +16,10 @@ This REST API adds a comment to a specific worksheet cell.
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
-The request parameters are:
+### Request Parameters
 
 | Parameter Name | Type   | Location | Description                                            |
-|----------------|--------|----------|--------------------------------------------------------|
+| -------------- | ------ | -------- | ------------------------------------------------------ |
 | name           | string | path     | The name of the workbook file.                         |
 | sheetName      | string | path     | The name of the worksheet.                             |
 | cellName       | string | path     | The address of the cell (e.g., **A1**).                |

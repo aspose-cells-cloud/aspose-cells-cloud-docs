@@ -9,9 +9,10 @@ description: "Remove all data validation rules from a worksheet in an Excel file
 weight: 10
 ---
 
-**Prerequisites**  
-- A valid Aspose Cloud account.  
-- A JWT access token obtained via the Aspose Cloud authentication API (`/connect/token`).  
+**Prerequisites**
+
+- A valid Aspose Cloud account.
+- A JWT access token obtained via the Aspose Cloud authentication API (`/connect/token`).
 - The workbook must be stored in your Aspose Cloud storage (or the appropriate `folder`/`storageName` query parameters must be provided).
 
 This REST API deletes all worksheet validations on an Excel worksheet.
@@ -22,14 +23,14 @@ This REST API deletes all worksheet validations on an Excel worksheet.
 DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| name           | string | path     | The name of the Excel document. |
+| Parameter Name | Type   | Location | Description                                           |
+| -------------- | ------ | -------- | ----------------------------------------------------- |
+| name           | string | path     | The name of the Excel document.                       |
 | sheetName      | string | path     | The name of the worksheet containing the validations. |
-| folder         | string | query    | The folder where the document is stored. |
-| storageName    | string | query    | The name of the storage service. |
+| folder         | string | query    | The folder where the document is stored.              |
+| storageName    | string | query    | The name of the storage service.                      |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/DeleteWorksheetValidation) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -64,12 +65,12 @@ curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/va
 
 ### Error Handling
 
-| HTTP Status | Meaning                              | Description |
-|-------------|--------------------------------------|-------------|
-| 400         | Bad Request                          | The request is malformed or missing required parameters. |
-| 401         | Unauthorized                         | The JWT token is missing, invalid, or expired. |
-| 404         | Not Found                            | The specified workbook or worksheet does not exist. |
-| 500         | Internal Server Error                | An unexpected error occurred on the server side. |
+| HTTP Status | Meaning               | Description                                              |
+| ----------- | --------------------- | -------------------------------------------------------- |
+| 400         | Bad Request           | The request is malformed or missing required parameters. |
+| 401         | Unauthorized          | The JWT token is missing, invalid, or expired.           |
+| 404         | Not Found             | The specified workbook or worksheet does not exist.      |
+| 500         | Internal Server Error | An unexpected error occurred on the server side.         |
 
 The error payload follows the same JSON structure with `Code` and `Message` fields, for example:
 

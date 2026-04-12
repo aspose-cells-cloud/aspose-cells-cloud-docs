@@ -4,7 +4,14 @@ type: docs
 url: /charts/chart-area/fill-format/get/
 aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
 weight: 70
-keywords: ["chart area fill format","Aspose.Cells Cloud","REST API","GET","worksheet"]
+keywords:
+  [
+    "chart area fill format",
+    "Aspose.Cells Cloud",
+    "REST API",
+    "GET",
+    "worksheet",
+  ]
 description: "Retrieve the fill format (color, pattern, gradient) of a chart area in an Excel worksheet via Aspose.Cells Cloud API. Includes cURL example, SDK code snippets, and required authentication steps."
 ---
 
@@ -16,15 +23,15 @@ This REST API retrieves the fill‑format information of a **Chart Area**.
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat
 ```
 
-The request parameters are:
+### Request parameters
 
-| Parameter Name | Type    | Location | Description                                 |
-|----------------|---------|----------|---------------------------------------------|
-| name           | string  | path     | Workbook name.                              |
-| sheetName      | string  | path     | Worksheet name.                             |
-| chartIndex     | integer | path     | Index of the chart.                         |
-| folder         | string  | query    | Folder that contains the workbook.          |
-| storageName    | string  | query    | Name of the storage.                        |
+| Parameter Name | Type    | Location | Description                        |
+| -------------- | ------- | -------- | ---------------------------------- |
+| name           | string  | path     | Workbook name.                     |
+| sheetName      | string  | path     | Worksheet name.                    |
+| chartIndex     | integer | path     | Index of the chart.                |
+| folder         | string  | query    | Folder that contains the workbook. |
+| storageName    | string  | query    | Name of the storage.               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

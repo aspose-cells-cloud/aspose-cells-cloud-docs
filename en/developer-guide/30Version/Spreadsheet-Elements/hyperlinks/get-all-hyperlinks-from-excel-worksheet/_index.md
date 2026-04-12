@@ -2,7 +2,8 @@
 title: "Get All Hyperlinks – Aspose.Cells Cloud REST API"
 type: docs
 url: /hyperlinks/get-all/
-aliases: [/get-hyperlink-from-excel-worksheet/,/get-hyperlinks-from-excel-worksheet/]
+aliases:
+  [/get-hyperlink-from-excel-worksheet/, /get-hyperlinks-from-excel-worksheet/]
 keywords: "Aspose.Cells, Get All Hyperlinks, Excel API, REST API, Cloud SDK, cURL example, spreadsheet hyperlinks"
 description: "Retrieve every hyperlink from a worksheet in an Excel file using the Aspose.Cells Cloud REST API (v3.0). Includes HTTPS endpoint, required parameters, cURL example, response schema, and SDK code samples."
 weight: 10
@@ -16,16 +17,14 @@ This REST API retrieves **all hyperlinks** from a specific worksheet in an Excel
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-> **Note:** All Aspose.Cells Cloud API calls must use **HTTPS** to protect credentials and data in transit.
-
 ### Request parameters
 
-| Parameter Name | Type   | Location | Required | Default | Description                              |
-|----------------|--------|----------|----------|---------|------------------------------------------|
-| name           | string | path     | Yes      | –       | Name of the Excel document.              |
-| sheetName      | string | path     | Yes      | –       | Name of the worksheet.                   |
-| folder         | string | query    | No       | –       | Folder that contains the document.       |
-| storageName    | string | query    | No       | –       | Name of the storage service to use.      |
+| Parameter Name | Type   | Location | Required | Default | Description                         |
+| -------------- | ------ | -------- | -------- | ------- | ----------------------------------- |
+| name           | string | path     | Yes      | –       | Name of the Excel document.         |
+| sheetName      | string | path     | Yes      | –       | Name of the worksheet.              |
+| folder         | string | query    | No       | –       | Folder that contains the document.  |
+| storageName    | string | query    | No       | –       | Name of the storage service to use. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hyperlinks/GetWorksheetHyperlinks) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -96,12 +95,19 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperli
 
 {{< /tabs >}}
 
-The JSON response contains a `Hyperlinks` object.  
+The JSON response contains a `Hyperlinks` object.
 
-* **Count** – total number of hyperlinks in the worksheet.  
-* **HyperlinkList** – an array where each item holds a `link` object. The `Href` property stores the hyperlink address, while `Rel`, `Title`, and `Type` provide additional metadata (often `null` for simple links).  
+- **Count** – total number of hyperlinks in the worksheet.
+- **HyperlinkList** – an array where each item holds a `link` object. The `Href` property stores the hyperlink address, while `Rel`, `Title`, and `Type` provide additional metadata (often `null` for simple links).
 
-If the request fails, the API returns an error object with an appropriate HTTP status code (e.g., 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error) and a JSON body that includes `Code` and `Message` fields describing the problem.
+### Error Responses
+
+| HTTP Code | Reason                                             | Example Body                                                        |
+| --------- | -------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**   | Bad Request – missing or invalid parameters.       | `{ "Code":"400", "Message":"Invalid parameter value." }`            |
+| **401**   | Unauthorized – missing or invalid JWT token.       | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
+| **404**   | Not Found – workbook or worksheet does not exist.  | `{ "Code":"404", "Message":"File not found." }`                     |
+| **500**   | Internal Server Error – unexpected server failure. | `{ "Code":"500", "Message":"An unexpected error occurred." }`       |
 
 ## Cloud SDK Family
 

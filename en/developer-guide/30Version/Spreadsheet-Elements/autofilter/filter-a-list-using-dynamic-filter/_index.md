@@ -22,28 +22,27 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 
 ### Request parameters
 
-| Parameter Name       | Type    | Location | Description                                                                                           |
-|----------------------|---------|----------|-------------------------------------------------------------------------------------------------------|
-| **name**             | string  | path     | The name of the Excel file (e.g., `Book1.xlsx`).                                                      |
-| **sheetName**        | string  | path     | The name of the worksheet that contains the range to be filtered.                                    |
-| **range**            | string  | query    | The cell range on which the filter is applied (e.g., `A1:B1`).                                        |
-| **fieldIndex**       | integer | query    | Zero‑based index of the column within the range to which the dynamic filter is applied.              |
-| **dynamicFilterType**| string  | query    | The type of dynamic filter. Supported values are listed below.                                        |
-| **matchBlanks**      | boolean | query    | Indicates whether blank cells should be included in the filter results.                             |
-| **refresh**          | boolean | query    | If `true`, the filter is refreshed after being applied.                                               |
-| **folder**           | string  | query    | The folder path in storage where the workbook is located.                                            |
-| **storageName**      | string  | query    | The name of the Aspose Cloud storage to use.                                                          |
+| Parameter Name        | Type    | Location | Description                                                                             |
+| --------------------- | ------- | -------- | --------------------------------------------------------------------------------------- |
+| **name**              | string  | path     | The name of the Excel file (e.g., `Book1.xlsx`).                                        |
+| **sheetName**         | string  | path     | The name of the worksheet that contains the range to be filtered.                       |
+| **range**             | string  | query    | The cell range on which the filter is applied (e.g., `A1:B1`).                          |
+| **fieldIndex**        | integer | query    | Zero‑based index of the column within the range to which the dynamic filter is applied. |
+| **dynamicFilterType** | string  | query    | The type of dynamic filter. Supported values are listed below.                          |
+| **matchBlanks**       | boolean | query    | Indicates whether blank cells should be included in the filter results.                 |
+| **refresh**           | boolean | query    | If `true`, the filter is refreshed after being applied.                                 |
+| **folder**            | string  | query    | The folder path in storage where the workbook is located.                               |
+| **storageName**       | string  | query    | The name of the Aspose Cloud storage to use.                                            |
 
 **Supported `dynamicFilterType` values**
 
-- `BelowAverage` – rows whose value is below the column’s average.  
-- `AboveAverage` – rows whose value is above the column’s average.  
-- `Tomorrow` – rows with dates equal to tomorrow’s date.  
-- `Yesterday` – rows with dates equal to yesterday’s date.  
-- `NextWeek` – rows with dates falling in the next calendar week.  
-- `LastMonth` – rows with dates from the previous month.  
-- `ThisYear` – rows with dates occurring in the current year.  
-- *(and other built‑in date/statistical conditions offered by the API).*
+- `BelowAverage` – rows whose value is below the column’s average.
+- `AboveAverage` – rows whose value is above the column’s average.
+- `Tomorrow` – rows with dates equal to tomorrow’s date.
+- `Yesterday` – rows with dates equal to yesterday’s date.
+- `NextWeek` – rows with dates falling in the next calendar week.
+- `LastMonth` – rows with dates from the previous month.
+- `ThisYear` – rows with dates occurring in the current year.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -72,15 +71,15 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 }
 ```
 
-*Error responses*  
+_Error responses_  
 The API can also return the following error codes:
 
-| HTTP Status | Description                               | Sample Body |
-|-------------|-------------------------------------------|-------------|
-| 400         | Invalid request parameters                | `{ "Code":400, "Message":"Invalid parameter value." }` |
-| 401         | Unauthorized – missing or invalid token   | `{ "Code":401, "Message":"Authentication failed." }` |
-| 404         | Resource not found (e.g., workbook)      | `{ "Code":404, "Message":"File not found." }` |
-| 500         | Internal server error                     | `{ "Code":500, "Message":"Unexpected error." }` |
+| HTTP Status | Description                             | Sample Body                                            |
+| ----------- | --------------------------------------- | ------------------------------------------------------ |
+| 400         | Invalid request parameters              | `{ "Code":400, "Message":"Invalid parameter value." }` |
+| 401         | Unauthorized – missing or invalid token | `{ "Code":401, "Message":"Authentication failed." }`   |
+| 404         | Resource not found (e.g., workbook)     | `{ "Code":404, "Message":"File not found." }`          |
+| 500         | Internal server error                   | `{ "Code":500, "Message":"Unexpected error." }`        |
 
 {{< /tab >}}
 

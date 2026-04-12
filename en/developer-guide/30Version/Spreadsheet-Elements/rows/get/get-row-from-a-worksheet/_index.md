@@ -1,31 +1,31 @@
----  
-title: "Get Row Description from an Excel Worksheet"  
-second_title: "Document"  
-linktitle: "Row"  
-type: docs  
-url: /rows/get/row/  
-aliases: [/get-row-from-a-worksheet/]  
-keywords: "Aspose.Cells Cloud, Excel row API, Get Worksheet Row, REST API, .NET SDK, Java SDK, Python SDK"  
-description: "Retrieve detailed information (height, style, hidden state, etc.) for a specific row in an Excel worksheet using Aspose.Cells Cloud REST API. Includes curl example, SDK snippets, and error handling."  
-weight: 10  
----  
+---
+title: "Get Row Description from an Excel Worksheet"
+second_title: "Document"
+linktitle: "Row"
+type: docs
+url: /rows/get/row/
+aliases: [/get-row-from-a-worksheet/]
+keywords: "Aspose.Cells Cloud, Excel row API, Get Worksheet Row, REST API, .NET SDK, Java SDK, Python SDK"
+description: "Retrieve detailed information (height, style, hidden state, etc.) for a specific row in an Excel worksheet using Aspose.Cells Cloud REST API. Includes curl example, SDK snippets, and error handling."
+weight: 10
+---
 
 This REST API retrieves row data by its index on an Excel worksheet.
 
-## REST API  
+## REST API
 
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
-```  
+```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type    | Location | Description                                    |
-|----------------|---------|----------|------------------------------------------------|
-| name           | string  | path     | The name of the workbook file.                 |
-| sheetName      | string  | path     | The name of the worksheet within the workbook. |
-| rowIndex       | integer | path     | Zero‑based index of the row to retrieve.       |
-| folder         | string  | query    | The folder that contains the workbook.         |
+| Parameter Name | Type    | Location | Description                                         |
+| -------------- | ------- | -------- | --------------------------------------------------- |
+| name           | string  | path     | The name of the workbook file.                      |
+| sheetName      | string  | path     | The name of the worksheet within the workbook.      |
+| rowIndex       | integer | path     | Zero‑based index of the row to retrieve.            |
+| folder         | string  | query    | The folder that contains the workbook.              |
 | storageName    | string  | query    | The name of the storage where the workbook resides. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
@@ -77,7 +77,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 {{< /tabs >}}
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the fastest way to develop. An SDK abstracts low‑level details so you can focus on your project tasks. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

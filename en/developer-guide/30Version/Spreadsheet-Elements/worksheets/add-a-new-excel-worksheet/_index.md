@@ -18,16 +18,16 @@ This REST API adds a new worksheet to an existing workbook.
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type    | Location | Description                                 |
-|----------------|---------|----------|---------------------------------------------|
-| name           | string  | path     | Name of the workbook file.                  |
-| sheetName      | string  | path     | Name of the new worksheet to be created.   |
-| position       | integer | query    | Zero‑based position where the sheet is inserted. |
+| Parameter Name | Type    | Location | Description                                          |
+| -------------- | ------- | -------- | ---------------------------------------------------- |
+| name           | string  | path     | Name of the workbook file.                           |
+| sheetName      | string  | path     | Name of the new worksheet to be created.             |
+| position       | integer | query    | Zero‑based position where the sheet is inserted.     |
 | sheettype      | string  | query    | Type of the new sheet (e.g., **Chart**, **Dialog**). |
-| folder         | string  | query    | Folder that contains the workbook.          |
-| storageName    | string  | query    | Name of the Aspose Cloud storage.           |
+| folder         | string  | query    | Folder that contains the workbook.                   |
+| storageName    | string  | query    | Name of the Aspose Cloud storage.                    |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutAddNewWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

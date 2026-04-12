@@ -12,7 +12,7 @@ weight: 100
 
 ## **Excel API: Get File Versions**
 
-### API Endpoint
+### Web API
 
 ```
 GET https://api.aspose.cloud/v4.0/cells/storage/version/{path}
@@ -22,18 +22,11 @@ GET https://api.aspose.cloud/v4.0/cells/storage/version/{path}
 
 The **GetFileVersions** API returns all version records for a specified spreadsheet stored in Aspose.Cells Cloud. It helps you keep a complete change history for each file.
 
-#### Authentication
-Call this endpoint with a valid API key or OAuth 2.0 token. Include the token in the request header:
-
-```
-Authorization: Bearer <your_access_token>
-```
-
 ### The request parameters of **GetFileVersions** API are
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| `path`         | String | Path     | **Required.** Full path to the file whose versions are being retrieved. |
+| Parameter Name | Type   | Location | Description                                                                                 |
+| -------------- | ------ | -------- | ------------------------------------------------------------------------------------------- |
+| `path`         | String | Path     | **Required.** Full path to the file whose versions are being retrieved.                     |
 | `storageName`  | String | Query    | Optional. Name of the storage containing the file. If omitted, the default storage is used. |
 
 ### **Response Description**
@@ -49,9 +42,7 @@ Authorization: Bearer <your_access_token>
   "Properties": [
     {
       "Name": "Value",
-      "Description": [
-        "A collection of file version details."
-      ],
+      "Description": ["A collection of file version details."],
       "Nullable": true,
       "ReadOnly": false,
       "IsInherit": false,
@@ -92,13 +83,14 @@ Authorization: Bearer <your_access_token>
 ```
 
 #### Error Handling
-| HTTP Status | Description                               | Typical Cause                     |
-|-------------|-------------------------------------------|-----------------------------------|
-| 401         | Unauthorized – missing or invalid token   | No `Authorization` header or bad key |
-| 403         | Forbidden – insufficient permissions      | Token lacks required scopes |
-| 404         | Not Found – file or storage does not exist | Incorrect `path` or `storageName` |
-| 409         | Conflict – version information unavailable | Concurrent modifications |
-| 500         | Internal Server Error – unexpected failure | Server‑side issue |
+
+| HTTP Status | Description                                | Typical Cause                        |
+| ----------- | ------------------------------------------ | ------------------------------------ |
+| 401         | Unauthorized – missing or invalid token    | No `Authorization` header or bad key |
+| 403         | Forbidden – insufficient permissions       | Token lacks required scopes          |
+| 404         | Not Found – file or storage does not exist | Incorrect `path` or `storageName`    |
+| 409         | Conflict – version information unavailable | Concurrent modifications             |
+| 500         | Internal Server Error – unexpected failure | Server‑side issue                    |
 
 ## OpenAPI Specification
 

@@ -12,27 +12,19 @@ weight: 10
 
 This REST API returns information about the worksheets contained in a workbook.
 
-## Prerequisites
-
-Before calling the API, ensure you have:
-
-* A valid **JWT token** generated from your Aspose Cloud client‑id and client‑secret.  
-* The target workbook stored in your default Aspose Cloud storage (or specify `storageName`).  
-* API version **v3.0** (the current stable release).  
-
 ## REST API
 
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 ```
 
-The request parameters are listed below:
+### **Request parameters**
 
-| Parameter Name | Type   | Location | Description                              |
-|----------------|--------|----------|------------------------------------------|
-| name           | string | path     | The name of the Excel document.          |
-| folder         | string | query    | The folder that contains the document.   |
-| storageName    | string | query    | The name of the storage to use.          |
+| Parameter Name | Type   | Location | Description                            |
+| -------------- | ------ | -------- | -------------------------------------- |
+| name           | string | path     | The name of the Excel document.        |
+| folder         | string | query    | The folder that contains the document. |
+| storageName    | string | query    | The name of the storage to use.        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -89,12 +81,12 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets" \
 
 Typical HTTP status codes returned by this endpoint:
 
-| Code | Meaning                     | Description                                          |
-|------|-----------------------------|------------------------------------------------------|
-| 400  | Bad Request                 | Missing required parameter (e.g., `name`).          |
-| 401  | Unauthorized                | Invalid or missing JWT token.                        |
-| 404  | Not Found                   | Specified workbook does not exist.                   |
-| 500  | Internal Server Error       | Unexpected server condition.                         |
+| Code | Meaning               | Description                                |
+| ---- | --------------------- | ------------------------------------------ |
+| 400  | Bad Request           | Missing required parameter (e.g., `name`). |
+| 401  | Unauthorized          | Invalid or missing JWT token.              |
+| 404  | Not Found             | Specified workbook does not exist.         |
+| 500  | Internal Server Error | Unexpected server condition.               |
 
 Error responses are returned in JSON format, for example:
 

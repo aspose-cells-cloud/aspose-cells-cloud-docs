@@ -20,18 +20,10 @@ This REST API **lets you** group worksheet columns.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/group
 ```
 
-### Authentication
-
-All requests must include a valid OAuth 2.0 access token.
-
-```bash
--H "Authorization: Bearer <access_token>"
-```
-
 ### Request Parameters
 
 | Parameter Name | Type    | Location | Description                                                                 |
-|----------------|---------|----------|-----------------------------------------------------------------------------|
+| -------------- | ------- | -------- | --------------------------------------------------------------------------- |
 | name           | string  | path     | Name of the workbook file.                                                  |
 | sheetName      | string  | path     | Name of the worksheet containing the columns.                               |
 | firstIndex     | integer | query    | Zero‑based index of the first column to group.                              |
@@ -41,11 +33,6 @@ All requests must include a valid OAuth 2.0 access token.
 | storageName    | string  | query    | Name of the storage service where the file is located.                      |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
-
-### Prerequisites
-
-1. Generate a client ID/secret and obtain an OAuth 2.0 access token.  
-2. Upload the workbook to the desired storage location (if it is not already present).  
 
 ### cURL Example
 
@@ -76,21 +63,21 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 
 ### Success Response
 
-| Field | Type   | Description                     |
-|-------|--------|---------------------------------|
-| Code  | integer| HTTP status code (200 for success). |
-| Status| string | Textual status of the operation (e.g., **OK**). |
+| Field  | Type    | Description                                     |
+| ------ | ------- | ----------------------------------------------- |
+| Code   | integer | HTTP status code (200 for success).             |
+| Status | string  | Textual status of the operation (e.g., **OK**). |
 
 ### Error Response
 
 When the request fails, the API returns additional fields describing the error.
 
-| Field        | Type   | Description                                            |
-|--------------|--------|--------------------------------------------------------|
-| Code         | integer| HTTP status code (e.g., 400, 401, 404, 500).          |
-| Status       | string | Textual status (e.g., **Error**).                     |
-| ErrorMessage | string | Human‑readable description of the problem.            |
-| ErrorCode    | string | Specific error identifier for programmatic handling.  |
+| Field        | Type    | Description                                          |
+| ------------ | ------- | ---------------------------------------------------- |
+| Code         | integer | HTTP status code (e.g., 400, 401, 404, 500).         |
+| Status       | string  | Textual status (e.g., **Error**).                    |
+| ErrorMessage | string  | Human‑readable description of the problem.           |
+| ErrorCode    | string  | Specific error identifier for programmatic handling. |
 
 ## Cloud SDK Family
 

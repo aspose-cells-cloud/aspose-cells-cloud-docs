@@ -14,15 +14,17 @@ This API retrieves the public key from an asymmetric encryption algorithm.
 
 ## **Get Public Key API**
 
+### **Web API**
+
 ```
 GET https://api.aspose.cloud/v4.0/cells/publickey
 ```
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Location | Description                                                                 |
-|----------------|--------|----------|-----------------------------------------------------------------------------|
-| Authorization  | string | Header   | Bearer token for OAuth2 authentication (required).                         |
+| Parameter Name | Type   | Location | Description                                                                     |
+| -------------- | ------ | -------- | ------------------------------------------------------------------------------- |
+| Authorization  | string | Header   | Bearer token for OAuth2 authentication (required).                              |
 | Accept         | string | Header   | Desired response format, e.g., `application/json` (optional, defaults to JSON). |
 
 ### **Response**

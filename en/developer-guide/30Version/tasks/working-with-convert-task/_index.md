@@ -4,10 +4,9 @@ second_title: "Document"
 type: docs
 url: /tasks/convert/
 aliases: [/working-with-convert-task/]
-keywords: "REST API, task, convert, spreadsheets, excel"
-description: "Cells.Cloud API for Excel operate: tasks support convert excel file."
+keywords: "Aspose.Cells Cloud, REST API, Convert Task, Excel, Spreadsheet, PDF, CSV, JSON, Markdown"
+description: "The Cells Cloud API for Excel provides task support for converting Excel files to various formats."
 weight: 30
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Working with Convert Task
 ---
 
 ## REST API
@@ -17,18 +16,16 @@ kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Wo
 |/cells/task/runtask|POST|Run Task|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser. 
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.  
 
-You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```java
-
 curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" -H "accept: application/json" -H "Content-Type: application/json" -H "x-aspose-client: Containerize.Swagger" -d "{<TaskData>\t<Tasks>\t<TaskDescription>\t\t<TaskType>SmartMarker</TaskType>\t\t<SmartMarkerTaskParameter>\t\t<SourceWorkbook>\t\t\t<FileSourceType>CloudFileSystem</FileSourceType>\t\t\t<FilePath>Book1.xlsx</FilePath>\t\t</SourceWorkbook>\t\t<DestinationWorkbook>\t\t\t<FileSourceType>InMemoryFiles</FileSourceType>\t\t\t<FilePath>ReportTask.xlsx</FilePath>\t\t</DestinationWorkbook>\t\t<xmlFile>\t\t\t<FileSourceType>CloudFileSystem</FileSourceType>\t\t\t<FilePath>ReportData.xml</FilePath>\t\t</xmlFile>\t\t</SmartMarkerTaskParameter>\t</TaskDescription>\t<TaskDescription>\t\t<TaskType>SaveResult</TaskType>\t\t<SaveResultTaskParameter>\t\t<ResultSource>InMemoryFiles</ResultSource>\t\t<ResultDestination>\t\t\t<DestinationType>OutputStream</DestinationType>\t\t\t<InputFile>ReportTask.xlsx</InputFile>\t\t\t<OutputFile>Output.xlsx</OutputFile>\t\t</ResultDestination>\t\t</SaveResultTaskParameter>\t</TaskDescription>\t</Tasks></TaskData>}"
-
 ```
 
 {{< /tab >}}
@@ -36,16 +33,14 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" -H "accept: appl
 {{< tab tabNum="2" >}}
 
 ```java
-
-HttpResponseMessage with the operation result.
-
+HttpResponseMessage containing the operation result.
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low-level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to accelerate development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
@@ -54,7 +49,6 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< tab tabNum="1" >}}
 
 ```csharp
-
 var xml = @"<TaskData>
 
                 <Tasks>
@@ -123,26 +117,15 @@ var xml = @"<TaskData>
 ServiceHelper helper = new ServiceHelper(sid, key);
 
 using (HttpWebResponse response = helper.CallPost("http://api.aspose.com/v3.0/cells/task/runtask", xml, "application/xml"))
-
 {
-
     if (response.StatusCode == HttpStatusCode.OK)
-
     {
-
         System.Console.WriteLine("OK");
-
         Stream st = response.GetResponseStream();
-
         FileStream fs = new FileStream("Output.xlsx", FileMode.OpenOrCreate);
-
         st.CopyTo(fs);
-
     }
-
 }//using
-
-
 ```
 
 {{< /tab >}}

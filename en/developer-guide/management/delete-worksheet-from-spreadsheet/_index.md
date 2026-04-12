@@ -14,73 +14,55 @@ Programmatically delete worksheets from Excel workbooks using Aspose.Cells Cloud
 
 ## **Delete worksheet from Spreadsheet API**
 
-### API Endpoint
+### Web API
 
 ```http
 DELETE https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets/{sheetName}
 ```
 
-### Authentication
-
-All requests must include an OAuth 2.0 bearer token:
-
-```
-Authorization: Bearer <access_token>
-```
-
-Obtain the token by following the standard Aspose Cloud authentication flow (client‑credentials grant).
-
 ### **Request Parameters:**
 
-| Parameter Name   | Type   | Location | Description |
-| :-               | :-     | :-       | :- |
-| Spreadsheet      | File   | FormData | **Required.** The source Excel workbook file (.xlsx, .xls, etc.) from which a worksheet will be removed. |
-| sheetName        | String | Query   | **Required.** The exact name of the worksheet to be deleted (e.g., `Sheet1`, `TemporaryData`). |
-| outPath          | String | Query   | **Optional.** The target folder path in cloud storage where the modified workbook will be saved. If omitted or `null`, the workbook is saved in the same location as the source file or a default path. |
-| outStorageName   | String | Query   | **Optional.** The identifier of the cloud storage service (e.g., `ProjectStorage`) where the output file will be written. If not supplied, the default storage is used. |
-| region           | String | Query   | **Optional.** The locale setting (e.g., `it-IT`) that may affect region‑specific formulas or data during the save operation. |
-| password         | String | Query   | **Optional.** The password required to open and modify a password‑protected spreadsheet. Omit if the file is not encrypted. |
-
-### Sample Request (cURL)
-
-```bash
-curl -X DELETE "https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets/Sheet1?outPath=output/UpdatedWorkbook.xlsx" \
-     -H "Authorization: Bearer {access_token}" \
-     -F "Spreadsheet=@MyWorkbook.xlsx"
-```
+| Parameter Name | Type   | Location | Description                                                                                                                                                                                             |
+| :------------- | :----- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Spreadsheet    | File   | FormData | **Required.** The source Excel workbook file (.xlsx, .xls, etc.) from which a worksheet will be removed.                                                                                                |
+| sheetName      | String | Query    | **Required.** The exact name of the worksheet to be deleted (e.g., `Sheet1`, `TemporaryData`).                                                                                                          |
+| outPath        | String | Query    | **Optional.** The target folder path in cloud storage where the modified workbook will be saved. If omitted or `null`, the workbook is saved in the same location as the source file or a default path. |
+| outStorageName | String | Query    | **Optional.** The identifier of the cloud storage service (e.g., `ProjectStorage`) where the output file will be written. If not supplied, the default storage is used.                                 |
+| region         | String | Query    | **Optional.** The locale setting (e.g., `it-IT`) that may affect region‑specific formulas or data during the save operation.                                                                            |
+| password       | String | Query    | **Optional.** The password required to open and modify a password‑protected spreadsheet. Omit if the file is not encrypted.                                                                             |
 
 ### **Response**
 
 ```json
 [
-    {
-        "Name": "ResponseFile",
-        "DataType": {
-            "Identifier": "File",
-            "Reference": "Stream"
-        }
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
     }
+  }
 ]
 ```
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized** – Invalid access token or incorrect client credentials.  
-- **404 Not Found** – The spreadsheet file is not accessible or the specified worksheet does not exist.  
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized** – Invalid access token or incorrect client credentials.
+- **404 Not Found** – The spreadsheet file is not accessible or the specified worksheet does not exist.
 - **500 Server Error** – An unexpected condition occurred while processing the workbook.
 
 ## Where should we use the Delete worksheet from Spreadsheet API?
 
-- **Automated Report Post‑processing** – After generating a final financial report, automatically remove intermediate worksheets used for temporary calculations, keeping the final file clean and professional.  
-- **Dynamic Cleanup of Template Files** – When users generate customized documents (e.g., quotations) from a template, delete optional pages that were not selected.  
+- **Automated Report Post‑processing** – After generating a final financial report, automatically remove intermediate worksheets used for temporary calculations, keeping the final file clean and professional.
+- **Dynamic Cleanup of Template Files** – When users generate customized documents (e.g., quotations) from a template, delete optional pages that were not selected.
 - **Optimization of Workflow Archiving** – After a project or audit is completed, remove draft or collaboration worksheets, retaining only the final version for archiving and compliance.
 
 ## Why should you use the Delete worksheet from Spreadsheet API?
 
-- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development and providing comprehensive documentation.  
-- **Reduced Labor Costs** – Eliminates the need for dedicated personnel to consolidate documents manually.  
-- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.  
+- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development and providing comprehensive documentation.
+- **Reduced Labor Costs** – Eliminates the need for dedicated personnel to consolidate documents manually.
+- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.
 - **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility concerns.
 
 ## How to Use the Delete worksheet from Spreadsheet API with SDKs

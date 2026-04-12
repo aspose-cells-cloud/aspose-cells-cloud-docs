@@ -18,15 +18,15 @@ This REST API provides an endpoint to **unhide a worksheet** in an Excel workboo
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 ```
 
-The request parameters are:
+### **Request parameters**
 
-| Parameter Name | Type    | Location                     | Description                              |
-|----------------|---------|------------------------------|------------------------------------------|
-| name           | string  | path                         | Document name.                           |
-| sheetName      | string  | path                         | Worksheet name.                          |
-| isVisible      | boolean | query                        | New worksheet visibility value (`true`). |
-| folder         | string  | query                        | The document folder.                     |
-| storageName    | string  | query                        | Storage name.                            |
+| Parameter Name | Type    | Location | Description                              |
+| -------------- | ------- | -------- | ---------------------------------------- |
+| name           | string  | path     | Document name.                           |
+| sheetName      | string  | path     | Worksheet name.                          |
+| isVisible      | boolean | query    | New worksheet visibility value (`true`). |
+| folder         | string  | query    | The document folder.                     |
+| storageName    | string  | query    | Storage name.                            |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 

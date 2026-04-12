@@ -16,21 +16,30 @@ This REST API adds a hyperlink to an Excel worksheet.
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 ```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type    | Location | Description |
-|----------------|---------|----------|-------------|
-| name           | string  | path     | Document name. |
-| sheetName      | string  | path     | Worksheet name. |
-| firstRow       | integer | query    | Zero‑based index of the first row of the range to which the hyperlink will be applied. |
+| Parameter Name | Type    | Location | Description                                                                               |
+| -------------- | ------- | -------- | ----------------------------------------------------------------------------------------- |
+| name           | string  | path     | Document name.                                                                            |
+| sheetName      | string  | path     | Worksheet name.                                                                           |
+| firstRow       | integer | query    | Zero‑based index of the first row of the range to which the hyperlink will be applied.    |
 | firstColumn    | integer | query    | Zero‑based index of the first column of the range to which the hyperlink will be applied. |
-| totalRows      | integer | query    | Number of rows that the hyperlink range spans. |
-| totalColumns   | integer | query    | Number of columns that the hyperlink range spans. |
-| address        | string  | query    | The target URL that the hyperlink points to (URL‑encoded). |
-| folder         | string  | query    | The document folder. |
-| storageName    | string  | query    | Storage name. |
+| totalRows      | integer | query    | Number of rows that the hyperlink range spans.                                            |
+| totalColumns   | integer | query    | Number of columns that the hyperlink range spans.                                         |
+| address        | string  | query    | The target URL that the hyperlink points to (URL‑encoded).                                |
+| folder         | string  | query    | The document folder.                                                                      |
+| storageName    | string  | query    | Storage name.                                                                             |
 
 The request can also include a JSON body containing the same fields (`Address`, `FirstRow`, `FirstColumn`, `TotalRows`, `TotalColumns`). Supplying the body is useful when you prefer a payload over query‑string parameters.
+
+### Error Responses
+
+| HTTP Code | Reason                                             | Example Body                                                        |
+| --------- | -------------------------------------------------- | ------------------------------------------------------------------- |
+| **400**   | Bad Request – missing or invalid parameters.       | `{ "Code":"400", "Message":"Invalid parameter value." }`            |
+| **401**   | Unauthorized – missing or invalid JWT token.       | `{ "Code":"401", "Message":"Access token is missing or invalid." }` |
+| **404**   | Not Found – workbook or worksheet does not exist.  | `{ "Code":"404", "Message":"File not found." }`                     |
+| **500**   | Internal Server Error – unexpected server failure. | `{ "Code":"500", "Message":"An unexpected error occurred." }`       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hypelinks/PutWorksheetHyperlink) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

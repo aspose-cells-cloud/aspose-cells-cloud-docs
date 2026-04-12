@@ -17,48 +17,23 @@ This REST API inserts a slicer for a list object on an Excel worksheet.
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/InsertSlicer
 ```
 
-> **NOTE:** The original documentation contained a double slash (`//`) after `v3.0`. The corrected URL above uses a single slash to avoid potential 404 errors.
-
-### Prerequisites
-
-- A valid Aspose Cloud subscription.  
-- The Excel file must be uploaded to Aspose Cloud storage.  
-- A ListObject must already exist in the target worksheet.  
-
-### Authentication
-
-The request must include an **Authorization** header with a JWT token.  
-Obtain the token via the OAuth 2.0 client‑credentials flow:
-
-```bash
-POST https://api.aspose.cloud/connect/token
-Content-Type: application/x-www-form-urlencoded
-
-grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>
-```
-
-The response contains an `access_token`. Use it as follows:
-
-```
-Authorization: Bearer <access_token>
-```
-
 ### Request Parameters
 
-| Parameter Name   | Type    | Location | Description                                                                 |
-|------------------|---------|----------|-----------------------------------------------------------------------------|
-| name             | String  | Path     | The name of the Excel file.                                                |
-| sheetName        | String  | Path     | The name of the worksheet that contains the list object.                  |
-| listObjectIndex  | Integer | Path     | The zero‑based index of the list object to which the slicer will be added.|
-| columnIndex      | Integer | Query    | The zero‑based index of the column on which the slicer is based.           |
-| destCellName     | String  | Query    | The cell reference (e.g., **A1**) where the slicer will be placed.        |
-| folder           | String  | Query    | The folder in storage that contains the Excel file.                        |
-| storageName      | String  | Query    | The name of the Aspose Cloud storage service.                              |
+| Parameter Name  | Type    | Location | Description                                                                |
+| --------------- | ------- | -------- | -------------------------------------------------------------------------- |
+| name            | String  | Path     | The name of the Excel file.                                                |
+| sheetName       | String  | Path     | The name of the worksheet that contains the list object.                   |
+| listObjectIndex | Integer | Path     | The zero‑based index of the list object to which the slicer will be added. |
+| columnIndex     | Integer | Query    | The zero‑based index of the column on which the slicer is based.           |
+| destCellName    | String  | Query    | The cell reference (e.g., **A1**) where the slicer will be placed.         |
+| folder          | String  | Query    | The folder in storage that contains the Excel file.                        |
+| storageName     | String  | Query    | The name of the Aspose Cloud storage service.                              |
 
 You can use the cURL command‑line tool to call the API:
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 {{< tab tabNum="1" >}}
+
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/InsertSlicer" \
   -X POST \
@@ -66,8 +41,10 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
   -H "Accept: application/json" \
   -H "Authorization: Bearer <jwt token>"
 ```
+
 {{< /tab >}}
 {{< tab tabNum="2" >}}
+
 ```json
 {
   "Code": 200,
@@ -79,19 +56,20 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
   }
 }
 ```
+
 {{< /tab >}}
 {{< /tabs >}}
 
 ### Response Codes
 
-| HTTP Code | Meaning                     | Description                                                            |
-|----------|-----------------------------|------------------------------------------------------------------------|
-| 200      | OK                          | The slicer was inserted successfully.                                 |
-| 400      | Bad Request                 | Missing or invalid parameters.                                         |
-| 401      | Unauthorized                | Invalid or missing JWT token.                                          |
-| 403      | Forbidden                   | Insufficient permissions to access the file or storage.               |
-| 404      | Not Found                   | The specified file, worksheet, or list object does not exist.         |
-| 500      | Internal Server Error       | An unexpected error occurred on the server side.                       |
+| HTTP Code | Meaning               | Description                                                   |
+| --------- | --------------------- | ------------------------------------------------------------- |
+| 200       | OK                    | The slicer was inserted successfully.                         |
+| 400       | Bad Request           | Missing or invalid parameters.                                |
+| 401       | Unauthorized          | Invalid or missing JWT token.                                 |
+| 403       | Forbidden             | Insufficient permissions to access the file or storage.       |
+| 404       | Not Found             | The specified file, worksheet, or list object does not exist. |
+| 500       | Internal Server Error | An unexpected error occurred on the server side.              |
 
 ### Error Handling
 
@@ -138,35 +116,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## Frequently Asked Questions
-
-**Q: How do I obtain the JWT token required for the `Authorization` header?**  
-A: Use the OAuth 2.0 client‑credentials flow:  
-
-```bash
-POST https://api.aspose.cloud/connect/token
-Content-Type: application/x-www-form-urlencoded
-
-grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>
-```  
-
-The response contains an `access_token`. Include it as `Bearer <access_token>` in the `Authorization` header.
-
-**Q: What is the correct endpoint URL for inserting a slicer?**  
-A: `POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/InsertSlicer` (note the single slash after `v3.0`).
-
-**Q: What does the API return after a successful slicer insertion?**  
-A: A JSON object with HTTP status `200`. Example:
-
-```json
-{
-  "Code": 200,
-  "Status": "OK",
-  "Slicer": {
-    "Name": "Slicer1",
-    "ColumnIndex": 2,
-    "Position": "A1"
-  }
-}
-```

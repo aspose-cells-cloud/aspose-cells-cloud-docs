@@ -9,28 +9,6 @@ description: "Learn how to retrieve the style of a specific cell in an Excel wor
 
 Use this REST API to retrieve the **style** of a cell in an Excel worksheet.
 
-## Prerequisites
-
-- The workbook must be uploaded to Aspose Cloud storage (default or a custom folder).  
-- Obtain a JWT bearer token via the Aspose Cloud OAuth2 flow.  
-- Include the token in the `Authorization` header of every request.
-
-## Authentication
-
-1. Register an Aspose Cloud application to receive a **client_id** and **client_secret**.  
-2. Request an access token:
-
-```bash
-curl -X POST "https://api.aspose.cloud/connect/token" \
-  -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
-```
-
-3. Use the returned token:
-
-```bash
--H "Authorization: Bearer <jwt token>"
-```
-
 ## REST API
 
 ```bash
@@ -40,7 +18,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cel
 The request parameters are:
 
 | Parameter Name | Type   | Location | Description                         |
-|----------------|--------|----------|-------------------------------------|
+| -------------- | ------ | -------- | ----------------------------------- |
 | name           | string | path     | The name of the Excel document.     |
 | sheetName      | string | path     | The name of the worksheet.          |
 | cellName       | string | path     | The address of the cell (e.g., A1). |
@@ -102,14 +80,46 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/a
     "VerticalAlignment": "Bottom",
     "HorizontalAlignment": "General",
     "BorderCollection": [
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "BottomBorder" },
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "DiagonalDown" },
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "DiagonalUp" },
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "Horizontal" },
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "LeftBorder" },
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "RightBorder" },
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "TopBorder" },
-      { "LineStyle": "None", "Color": { "A": 255, "R": 0, "G": 0, "B": 0 }, "BorderType": "Vertical" }
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "BottomBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "DiagonalDown"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "DiagonalUp"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "Horizontal"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "LeftBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "RightBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "TopBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "Vertical"
+      }
     ],
     "BackgroundThemeColor": null,
     "ForegroundThemeColor": null,
@@ -131,32 +141,32 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/a
 
 ## Response Schema
 
-| Field                     | Type    | Description                                                                    |
-|---------------------------|---------|--------------------------------------------------------------------------------|
-| **Style**                 | object  | Container for all style‑related properties of the cell.                       |
-| Style.Font                | object  | Font settings (name, size, color, style flags).                               |
-| Style.Font.Color          | object  | RGBA color values for the font.                                                |
-| Style.Font.IsBold         | boolean | `true` if the font is bold.                                                    |
-| Style.Font.IsItalic       | boolean | `true` if the font is italic.                                                  |
-| Style.Font.IsStrikeout    | boolean | `true` if the font has a strike‑through.                                       |
-| Style.Font.IsSubscript    | boolean | `true` if the font is subscript.                                               |
-| Style.Font.IsSuperscript  | boolean | `true` if the font is superscript.                                             |
-| Style.Font.Name           | string  | Font family name (e.g., **Calibri**).                                          |
-| Style.Font.Size           | number  | Font size in points.                                                          |
-| Style.Font.Underline      | string  | Underline style (e.g., **Single**).                                            |
-| Style.IsLocked            | boolean | Indicates whether the cell is protected from editing.                         |
-| Style.IsTextWrapped       | boolean | `true` if text wrapping is enabled.                                            |
-| Style.IsGradient          | boolean | `true` if a gradient fill is applied.                                          |
-| Style.Pattern             | string  | Fill pattern name (e.g., **None**).                                            |
-| Style.BorderCollection    | array   | List of border objects defining line style, color, and border type.           |
-| Style.BackgroundColor     | object  | RGBA values for the cell background.                                           |
-| Style.ForegroundColor     | object  | RGBA values for the cell foreground.                                           |
-| …                         | …       | *(Other fields follow the same pattern as defined in the API reference.)*    |
+| Field                    | Type    | Description                                                               |
+| ------------------------ | ------- | ------------------------------------------------------------------------- |
+| **Style**                | object  | Container for all style‑related properties of the cell.                   |
+| Style.Font               | object  | Font settings (name, size, color, style flags).                           |
+| Style.Font.Color         | object  | RGBA color values for the font.                                           |
+| Style.Font.IsBold        | boolean | `true` if the font is bold.                                               |
+| Style.Font.IsItalic      | boolean | `true` if the font is italic.                                             |
+| Style.Font.IsStrikeout   | boolean | `true` if the font has a strike‑through.                                  |
+| Style.Font.IsSubscript   | boolean | `true` if the font is subscript.                                          |
+| Style.Font.IsSuperscript | boolean | `true` if the font is superscript.                                        |
+| Style.Font.Name          | string  | Font family name (e.g., **Calibri**).                                     |
+| Style.Font.Size          | number  | Font size in points.                                                      |
+| Style.Font.Underline     | string  | Underline style (e.g., **Single**).                                       |
+| Style.IsLocked           | boolean | Indicates whether the cell is protected from editing.                     |
+| Style.IsTextWrapped      | boolean | `true` if text wrapping is enabled.                                       |
+| Style.IsGradient         | boolean | `true` if a gradient fill is applied.                                     |
+| Style.Pattern            | string  | Fill pattern name (e.g., **None**).                                       |
+| Style.BorderCollection   | array   | List of border objects defining line style, color, and border type.       |
+| Style.BackgroundColor    | object  | RGBA values for the cell background.                                      |
+| Style.ForegroundColor    | object  | RGBA values for the cell foreground.                                      |
+| …                        | …       | _(Other fields follow the same pattern as defined in the API reference.)_ |
 
 ## Related Operations
 
-- **Update Multiple Cells Style** – Modify the style of several cells in a single request.  
-- **Set Value of a Cell** – Write data to a specific cell.  
+- **Update Multiple Cells Style** – Modify the style of several cells in a single request.
+- **Set Value of a Cell** – Write data to a specific cell.
 
 ## Cloud SDK Family
 

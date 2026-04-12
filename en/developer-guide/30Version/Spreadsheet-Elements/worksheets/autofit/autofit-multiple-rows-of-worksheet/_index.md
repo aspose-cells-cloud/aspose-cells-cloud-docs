@@ -18,26 +18,24 @@ This REST API automatically adjusts the height of rows in an Excel worksheet.
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitrows
 ```
 
-**Authentication** – Obtain a JWT token from the `/connect/token` endpoint and include it in the request header as `Authorization: Bearer <token>`.
+### **Request parameters**
 
-The request parameters are:
-
-| Parameter Name       | Type    | Location | Description                                                                                                                            | Required |
-|----------------------|---------|----------|----------------------------------------------------------------------------------------------------------------------------------------|----------|
-| **name**             | string  | path     | The name of the Excel file.                                                                                                            | ✔︎ |
-| **sheetName**        | string  | path     | The name of the worksheet.                                                                                                             | ✔︎ |
-| **autoFitterOptions**| object  | body     | Options that control how rows are autofitted (e.g., ignore hidden rows). See the brief field description below.                        | ✘ |
-| **startRow**         | integer | query    | The first row to autofit (1-based index).                                                                                              | ✔︎ |
-| **endRow**           | integer | query    | The last row to autofit (inclusive).                                                                                                   | ✔︎ |
-| **onlyAuto**         | boolean | query    | When `true`, the API adjusts only rows whose height is automatically calculated by Excel. When `false`, a full autofit is performed. | ✘ |
-| **folder**           | string  | query    | The folder that contains the document.                                                                                                 | ✘ |
-| **storageName**      | string  | query    | The name of the storage service.                                                                                                       | ✘ |
+| Parameter Name        | Type    | Location | Description                                                                                                                          | Required |
+| --------------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| **name**              | string  | path     | The name of the Excel file.                                                                                                          | ✔︎        |
+| **sheetName**         | string  | path     | The name of the worksheet.                                                                                                           | ✔︎        |
+| **autoFitterOptions** | object  | body     | Options that control how rows are autofitted (e.g., ignore hidden rows). See the brief field description below.                      | ✘        |
+| **startRow**          | integer | query    | The first row to autofit (1-based index).                                                                                            | ✔︎        |
+| **endRow**            | integer | query    | The last row to autofit (inclusive).                                                                                                 | ✔︎        |
+| **onlyAuto**          | boolean | query    | When `true`, the API adjusts only rows whose height is automatically calculated by Excel. When `false`, a full autofit is performed. | ✘        |
+| **folder**            | string  | query    | The folder that contains the document.                                                                                               | ✘        |
+| **storageName**       | string  | query    | The name of the storage service.                                                                                                     | ✘        |
 
 **autoFitterOptions** fields (all optional):
 
-- `AutoFitMergedCells` *(boolean)* – If `true`, merged cells are taken into account when calculating row height.  
-- `IgnoreHidden` *(boolean)* – When `true`, hidden rows are ignored during the autofit process.  
-- `OnlyAuto` *(boolean)* – Mirrors the query‑parameter `onlyAuto`; when set, it overrides the query value.
+- `AutoFitMergedCells` _(boolean)_ – If `true`, merged cells are taken into account when calculating row height.
+- `IgnoreHidden` _(boolean)_ – When `true`, hidden rows are ignored during the autofit process.
+- `OnlyAuto` _(boolean)_ – Mirrors the query‑parameter `onlyAuto`; when set, it overrides the query value.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -69,9 +67,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/sampleAutoFit.xlsx/worksheets/Sheet
 
 Typical error responses include:
 
-- **400 Bad Request** – Invalid parameter values or malformed JSON body.  
-- **401 Unauthorized** – Missing or invalid JWT token.  
-- **404 Not Found** – The specified file or worksheet does not exist.  
+- **400 Bad Request** – Invalid parameter values or malformed JSON body.
+- **401 Unauthorized** – Missing or invalid JWT token.
+- **404 Not Found** – The specified file or worksheet does not exist.
 - **500 Internal Server Error** – An unexpected server error occurred.
 
 {{< /tab >}}

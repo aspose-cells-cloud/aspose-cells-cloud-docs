@@ -20,11 +20,11 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
 
 ### Request parameters
 
-| Parameter Name | Type   | Location      | Description                              |
-|----------------|--------|---------------|------------------------------------------|
-| name           | string | Path          | The name of the Excel document.          |
-| folder         | string | Query string  | The folder that contains the document.   |
-| storageName    | string | Query string  | The storage name where the document resides.|
+| Parameter Name | Type   | Location     | Description                                  |
+| -------------- | ------ | ------------ | -------------------------------------------- |
+| name           | string | Path         | The name of the Excel document.              |
+| folder         | string | Query string | The folder that contains the document.       |
+| storageName    | string | Query string | The storage name where the document resides. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 

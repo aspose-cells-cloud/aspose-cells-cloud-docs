@@ -12,17 +12,10 @@ weight: 100
 
 ## **Excel API: Move File**
 
-### API Endpoint
+### Web API
 
 ```bash
 PUT https://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}
-```
-
-*Sample request (cURL)*
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/file/move/MyFolder/Source.xlsx?destPath=MyFolder/Destination.xlsx" \
-  -H "Authorization: Bearer {access_token}"
 ```
 
 ### **Function Description**
@@ -31,13 +24,13 @@ The **moveFile** API moves a file from one location to another within Aspose.Cel
 
 ### The request parameters of **moveFile** API are
 
-| Parameter Name   | Type   | Path/Query String/HTTP Body | Description                              |
-|------------------|--------|-----------------------------|------------------------------------------|
-| srcPath          | String | Path                        | The source path of the file to be moved. |
-| destPath         | String | Query                       | The destination path where the file will be moved. |
-| srcStorageName   | String | Query                       | The source storage name, if applicable. |
-| destStorageName  | String | Query                       | The destination storage name, if applicable. |
-| versionId        | String | Query                       | The version ID of the file, if applicable. |
+| Parameter Name  | Type   | Path/Query String/HTTP Body | Description                                        |
+| --------------- | ------ | --------------------------- | -------------------------------------------------- |
+| srcPath         | String | Path                        | The source path of the file to be moved.           |
+| destPath        | String | Query                       | The destination path where the file will be moved. |
+| srcStorageName  | String | Query                       | The source storage name, if applicable.            |
+| destStorageName | String | Query                       | The destination storage name, if applicable.       |
+| versionId       | String | Query                       | The version ID of the file, if applicable.         |
 
 ### **Response Description**
 

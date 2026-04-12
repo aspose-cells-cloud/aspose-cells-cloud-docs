@@ -13,7 +13,9 @@ kwords: "Excel API, Aspose Cloud, REST API, Health Check, Cloud Service, Respons
 
 Get the Health Status of the Aspose.Cells Cloud Service in real-time.
 
-## **Get Aspose.Cells Cloud Status API Endpoint**
+## **Get Aspose.Cells Cloud Status**
+
+### **Web API**
 
 ```
 GET http://api.aspose.cloud/v4.0/cells
@@ -22,7 +24,7 @@ GET http://api.aspose.cloud/v4.0/cells
 ### **Request Parameters:**
 
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |
-| :- | :- | :- | :- |
+| :------------- | :--- | :-------------------------- | :---------- |
 
 ### **Response**
 

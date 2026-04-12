@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Get"
 type: docs
 url: /list-objects/get/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/,/tables/get/]
+aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/get/]
 keywords: "Aspose.Cells, Cloud API, Excel ListObject, Get Table, REST, SDK"
 description: "Retrieve a ListObject (table) from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, HTTPS cURL example, response schema, and SDK snippets for multiple languages."
 weight: 9
@@ -14,24 +14,20 @@ This REST API retrieves a **list object** (table) from an Excel worksheet and ca
 
 ## REST API
 
-**Endpoint (HTTPS)**  
-
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listobjectindex}
 ```
 
-**Authentication** – Before calling the endpoint, obtain a JWT token using the Aspose Cloud OAuth 2.0 client‑credentials flow (`/connect/token`). Include the token in the `Authorization` header as `Bearer <jwt token>`.
+### **Request parameters**
 
-**Request parameters**
-
-| Parameter Name   | Type    | Location | Description                                                    | Required/Optional |
-|------------------|---------|----------|----------------------------------------------------------------|-------------------|
-| name             | string  | path     | The name of the Excel file.                                     | Required          |
-| sheetName        | string  | path     | The name of the worksheet containing the list object.          | Required          |
-| listobjectindex  | integer | path     | Zero‑based index of the list object to retrieve.               | Required          |
-| format           | string  | query    | Desired export format (e.g., `pdf`, `csv`, `json`).            | Optional          |
-| folder           | string  | query    | Folder path where the workbook is stored.                      | Optional          |
-| storageName      | string  | query    | Name of the Aspose Cloud storage to use.                       | Optional          |
+| Parameter Name  | Type    | Location | Description                                           | Required/Optional |
+| --------------- | ------- | -------- | ----------------------------------------------------- | ----------------- |
+| name            | string  | path     | The name of the Excel file.                           | Required          |
+| sheetName       | string  | path     | The name of the worksheet containing the list object. | Required          |
+| listobjectindex | integer | path     | Zero‑based index of the list object to retrieve.      | Required          |
+| format          | string  | query    | Desired export format (e.g., `pdf`, `csv`, `json`).   | Optional          |
+| folder          | string  | query    | Folder path where the workbook is stored.             | Optional          |
+| storageName     | string  | query    | Name of the Aspose Cloud storage to use.              | Optional          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/GetWorksheetListObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -165,16 +161,18 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
 
 {{< /tabs >}}
 
-**Error handling** – The API can return the following status codes:
+### **Error handling**
 
-| HTTP Code | Meaning                     | Example JSON error body |
-|-----------|----------------------------|--------------------------|
-| 400       | Bad request – missing/invalid parameters | `{"Code":400,"Message":"Invalid format parameter."}` |
-| 401       | Unauthorized – invalid or missing JWT token | `{"Code":401,"Message":"Authentication failed."}` |
-| 404       | Not found – workbook, worksheet, or list object does not exist | `{"Code":404,"Message":"ListObject not found."}` |
-| 500       | Internal server error | `{"Code":500,"Message":"Unexpected server error."}` |
+– The API can return the following status codes:
 
-**Next steps** – After retrieving the `ListObject`, you can manipulate its rows/columns via the corresponding SDK methods or export the table directly by adding the `format` query parameter (e.g., `?format=csv`).  
+| HTTP Code | Meaning                                                        | Example JSON error body                              |
+| --------- | -------------------------------------------------------------- | ---------------------------------------------------- |
+| 400       | Bad request – missing/invalid parameters                       | `{"Code":400,"Message":"Invalid format parameter."}` |
+| 401       | Unauthorized – invalid or missing JWT token                    | `{"Code":401,"Message":"Authentication failed."}`    |
+| 404       | Not found – workbook, worksheet, or list object does not exist | `{"Code":404,"Message":"ListObject not found."}`     |
+| 500       | Internal server error                                          | `{"Code":500,"Message":"Unexpected server error."}`  |
+
+**Next steps** – After retrieving the `ListObject`, you can manipulate its rows/columns via the corresponding SDK methods or export the table directly by adding the `format` query parameter (e.g., `?format=csv`).
 
 ## Cloud SDK Family
 

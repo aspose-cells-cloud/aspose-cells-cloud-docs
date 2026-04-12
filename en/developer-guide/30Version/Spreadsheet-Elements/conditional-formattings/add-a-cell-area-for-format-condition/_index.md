@@ -1,79 +1,31 @@
----  
-title: "Add CellArea to Conditional Formatting"  
-type: docs  
-url: /conditional-formattings/add-cell-area/  
-aliases: [/add-a-cell-area-for-format-condition/]  
-keywords: "Aspose.Cells Cloud, conditional formatting, add cell area, REST API, Excel, SDK"  
-description: "Learn how to add a cell area to a conditional formatting rule in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, SDK snippets, and error handling."  
-weight: 30  
----  
+---
+title: "Add CellArea to Conditional Formatting"
+type: docs
+url: /conditional-formattings/add-cell-area/
+aliases: [/add-a-cell-area-for-format-condition/]
+keywords: "Aspose.Cells Cloud, conditional formatting, add cell area, REST API, Excel, SDK"
+description: "Learn how to add a cell area to a conditional formatting rule in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, SDK snippets, and error handling."
+weight: 30
+---
 
 This REST API adds a cell area to a format condition.
 
-## REST API  
+## REST API
 
 ```bash
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}/area
-```  
+```
 
-**Quick‑Start**  
+### Request Parameters
 
-1️⃣ Obtain a JWT token via the Aspose Cloud OAuth 2.0 flow.  
-2️⃣ Replace `{name}`, `{sheetName}` and `{index}` with your file name, worksheet name, and rule index.  
-3️⃣ Supply the `cellArea` query parameter (e.g., `A1:C3`).  
-4️⃣ Send the **PUT** request with the `Authorization: Bearer <jwt token>` header.  
-
-The API accepts the following parameters:
-
-<table>  
-<caption>Parameters for Add CellArea API</caption>  
-<thead>  
-<tr>  
-<th scope="col">Parameter Name</th>  
-<th scope="col">Type</th>  
-<th scope="col">Location</th>  
-<th scope="col">Description</th>  
-</tr>  
-</thead>  
-<tbody>  
-<tr>  
-<td>name</td>  
-<td>string</td>  
-<td>path</td>  
-<td>The name of the Excel file.</td>  
-</tr>  
-<tr>  
-<td>sheetName</td>  
-<td>string</td>  
-<td>path</td>  
-<td>The name of the worksheet that contains the condition.</td>  
-</tr>  
-<tr>  
-<td>index</td>  
-<td>integer</td>  
-<td>path</td>  
-<td>The zero‑based index of the conditional formatting rule.</td>  
-</tr>  
-<tr>  
-<td>cellArea</td>  
-<td>string</td>  
-<td>query</td>  
-<td>The cell range to add, expressed in A1 notation (e.g., <code>A1:C3</code>).</td>  
-</tr>  
-<tr>  
-<td>folder</td>  
-<td>string</td>  
-<td>query</td>  
-<td>The folder where the file is stored.</td>  
-</tr>  
-<tr>  
-<td>storageName</td>  
-<td>string</td>  
-<td>query</td>  
-<td>The name of the storage service.</td>  
-</tr>  
-</tbody>  
-</table>  
+| Parameter Name | Type    | Location | Description                                                    |
+| -------------- | ------- | -------- | -------------------------------------------------------------- |
+| name           | string  | path     | The name of the Excel file.                                    |
+| sheetName      | string  | path     | The name of the worksheet that contains the condition.         |
+| index          | integer | path     | The zero‑based index of the conditional formatting rule.       |
+| cellArea       | string  | query    | The cell range to add, expressed in A1 notation (e.g., A1:C3). |
+| folder         | string  | query    | The folder where the file is stored.                           |
+| storageName    | string  | query    | The name of the storage service.                               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionArea) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -102,19 +54,21 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/condit
 }
 ```
 
-*Successful response* – a JSON object containing `Code` `200` and `Status` `OK`. The body may also include the updated `CellArea` object.
+### Successful response –
 
-*Common error responses*  
+a JSON object containing `Code` `200` and `Status` `OK`. The body may also include the updated `CellArea` object.
 
-- **400 Bad Request** – `{ "Code":"400", "Message":"Invalid cellArea format." }`  
-- **401 Unauthorized** – `{ "Code":"401", "Message":"Invalid or missing JWT token." }`  
+### Common error responses
+
+- **400 Bad Request** – `{ "Code":"400", "Message":"Invalid cellArea format." }`
+- **401 Unauthorized** – `{ "Code":"401", "Message":"Invalid or missing JWT token." }`
 - **404 Not Found** – `{ "Code":"404", "Message":"Worksheet or conditional formatting rule not found." }`
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

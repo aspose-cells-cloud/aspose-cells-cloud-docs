@@ -1,61 +1,42 @@
----  
-title: "Add a Vertical Page Break"  
-second_title: "Document"  
-linktitle: "Add a Vertical Page Break"  
-type: docs  
-url: /page-breaks/add-vertical-page-break/  
-aliases: [/insert-vertical-page-break-inside-worksheet/]  
-keywords: "Aspose.Cells Cloud, vertical page break, REST API, Excel, SDK, cURL, add page break"  
-description: "Learn how to insert a vertical page break into an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, cURL example, SDK samples, authentication guide, and error‑handling details."  
-weight: 40  
----  
+---
+title: "Add a Vertical Page Break"
+second_title: "Document"
+linktitle: "Add a Vertical Page Break"
+type: docs
+url: /page-breaks/add-vertical-page-break/
+aliases: [/insert-vertical-page-break-inside-worksheet/]
+keywords: "Aspose.Cells Cloud, vertical page break, REST API, Excel, SDK, cURL, add page break"
+description: "Learn how to insert a vertical page break into an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, cURL example, SDK samples, authentication guide, and error‑handling details."
+weight: 40
+---
 
 This REST API inserts a vertical page break into a worksheet.
 
-## Prerequisites  
-
-### Authentication  
-Aspose.Cells Cloud uses OAuth 2.0. Obtain a **client‑id** and **client‑secret** from the Aspose Cloud console, request a JWT access token (POST `/connect/token`), and include it in every request header as  
-
-```http
-Authorization: Bearer <jwt token>
-```  
-
-### Storage  
-The workbook must exist in your Aspose Cloud storage before you add a page break. Upload the file (e.g., `SampleBreaks.xlsx`) to a folder such as `/myFolder/` using the **Upload File** endpoint or the Aspose Cloud UI.
-
-## REST API  
+## REST API
 
 ```bash
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks
-```  
+```
 
-The request parameters are:
+### Request Parameters
 
-| Parameter Name | Type    | Location | Description |
-|----------------|---------|----------|-------------|
-| name           | string  | path     | The name of the Excel workbook. |
-| sheetName      | string  | path     | The name of the worksheet where the page break will be added. |
+| Parameter Name | Type    | Location | Description                                                             |
+| -------------- | ------- | -------- | ----------------------------------------------------------------------- |
+| name           | string  | path     | The name of the Excel workbook.                                         |
+| sheetName      | string  | path     | The name of the worksheet where the page break will be added.           |
 | cellname       | string  | query    | The cell reference (e.g., **A1**) that defines the page‑break location. |
-| column         | integer | query    | The zero-based index of the column where the page break starts. |
-| row            | integer | query    | The zero-based index of the row where the page break starts. |
-| startRow       | integer | query    | The first row of the page‑break range. |
-| endRow         | integer | query    | The last row of the page‑break range. |
-| folder         | string  | query    | The folder path in the storage where the workbook is located. |
-| storageName    | string  | query    | The name of the storage service. |
+| column         | integer | query    | The zero-based index of the column where the page break starts.         |
+| row            | integer | query    | The zero-based index of the row where the page break starts.            |
+| startRow       | integer | query    | The first row of the page‑break range.                                  |
+| endRow         | integer | query    | The last row of the page‑break range.                                   |
+| folder         | string  | query    | The folder path in the storage where the workbook is located.           |
+| storageName    | string  | query    | The name of the storage service.                                        |
 
 **Required parameters** – Either `cellname` **or** `column` must be supplied. When `column` is used you may also provide `row`, `startRow`, and `endRow` to define a range. All other fields are optional.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/PutVerticalPageBreak) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-### Step‑by‑step summary  
-
-1️⃣ **Upload** the workbook (`SampleBreaks.xlsx`) to the desired folder if it is not already present.  
-2️⃣ **Build** the request URL, inserting the workbook name and worksheet name, and add the required query parameter(s) (`cellname` or `column`).  
-3️⃣ **Send** the `PUT` request with the `Authorization: Bearer <jwt token>` header.  
-4️⃣ **Verify** that the response contains `{ "Code":200, "Status":"OK" }`.  
-
-### cURL Example  
+### cURL Example
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/SampleBreaks.xlsx/worksheets/Sheet1/verticalpagebreaks?column=9" \
@@ -65,7 +46,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/SampleBreaks.xlsx/worksheets/Sheet1
   -H "Authorization: Bearer <jwt token>"
 ```
 
-#### Response  
+#### Response
 
 ```json
 {
@@ -74,16 +55,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/SampleBreaks.xlsx/worksheets/Sheet1
 }
 ```
 
-## Error Codes  
+## Error Codes
 
-| HTTP Status | Description                              | Sample Error JSON |
-|-------------|------------------------------------------|-------------------|
-| 400         | Bad request – missing or invalid parameters. | `{ "Code": 400, "Message": "Invalid parameter: column" }` |
-| 401         | Unauthorized – invalid or missing JWT token. | `{ "Code": 401, "Message": "Authentication failed." }` |
-| 404         | Not found – workbook or worksheet does not exist. | `{ "Code": 404, "Message": "File not found." }` |
-| 500         | Internal server error – unexpected condition. | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
+| HTTP Status | Description                                       | Sample Error JSON                                             |
+| ----------- | ------------------------------------------------- | ------------------------------------------------------------- |
+| 400         | Bad request – missing or invalid parameters.      | `{ "Code": 400, "Message": "Invalid parameter: column" }`     |
+| 401         | Unauthorized – invalid or missing JWT token.      | `{ "Code": 401, "Message": "Authentication failed." }`        |
+| 404         | Not found – workbook or worksheet does not exist. | `{ "Code": 404, "Message": "File not found." }`               |
+| 500         | Internal server error – unexpected condition.     | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
