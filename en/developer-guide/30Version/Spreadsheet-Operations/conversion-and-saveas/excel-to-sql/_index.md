@@ -11,29 +11,29 @@ weight: 100
 
 This REST API converts a spreadsheet file to an SQL format file.
 
-**Query Parameter**
+## REST API
 
-| Parameter Name          | Type   | Description                                                                                 |
-|-------------------------|--------|---------------------------------------------------------------------------------------------|
-| password                | string | Password required to open the Excel file.                                                   |
-| storageName             | string | Name of the storage where the file is stored.                                                |
-| checkExcelRestriction   | bool   | Indicates whether to check Excel file restrictions when modifying cell‑related objects.   |
+| **API**            | **Type** | **Description**                       | **Swagger Link**                                                                                       |
+| ------------------ | -------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| /cells/convert/sql | POST     | Convert a spreadsheet to an SQL file. | [PostConvertWorkbookToSQL](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL) |
 
-**Request Body Parameter**
+### **Query Parameter**
+
+| Parameter Name        | Type   | Description                                                                             |
+| --------------------- | ------ | --------------------------------------------------------------------------------------- |
+| password              | string | Password required to open the Excel file.                                               |
+| storageName           | string | Name of the storage where the file is stored.                                           |
+| checkExcelRestriction | bool   | Indicates whether to check Excel file restrictions when modifying cell‑related objects. |
+
+### **Request Body Parameter**
 
 | Parameter Name | Type      | Description                                                                      |
-|----------------|-----------|----------------------------------------------------------------------------------|
+| -------------- | --------- | -------------------------------------------------------------------------------- |
 | datafile       | data file | The spreadsheet file to be converted, included as the first part of the request. |
 
-**Response**
+### **Response**
 
 [FileInfo](/cells/file-info/)
-
-## REST API Specification
-
-| **API**                | **Type** | **Description**                         | **Swagger Link**                                                                 |
-|------------------------|----------|-----------------------------------------|-----------------------------------------------------------------------------------|
-| /cells/convert/sql     | POST     | Convert a spreadsheet to an SQL file.   | [PostConvertWorkbookToSQL](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL) |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

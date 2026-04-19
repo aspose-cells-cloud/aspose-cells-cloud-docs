@@ -9,11 +9,9 @@ description: "Adds text to a specified location in an Excel spreadsheet via the 
 weight: 100
 ---
 
-# **Excel API: PostAddTextContent**
-
 Adds text content to a specified location within a spreadsheet. It requires an object that defines the text to be added and the insertion location.
 
-## **Interface Details**
+## **Excel API: PostAddTextContent**
 
 ### **Endpoint**
 
@@ -39,8 +37,8 @@ This method safely appends new text to specified cells, supporting multiple inse
 
 ### The request parameters of **postAddTextContent** API are
 
-| Parameter Name | Type  | Location | Description |
-|----------------|-------|----------|-------------|
+| Parameter Name | Type  | Location | Description                                                                 |
+| -------------- | ----- | -------- | --------------------------------------------------------------------------- |
 | addTextOptions | Class | Body     | Specifies the text content and the position where the text should be added. |
 
 ### **Response Description**

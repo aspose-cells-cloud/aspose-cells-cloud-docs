@@ -18,13 +18,13 @@ This REST API reads a workbook’s **text items** in an Excel file.
 GET http://api.aspose.cloud/v3.0/cells/{name}/textItems
 ```
 
-The request parameters are:
+### The request parameters are
 
-| Parameter Name | Type   | Location                | Description |
-|----------------|--------|-------------------------|-------------|
-| name           | string | path                    | The name of the workbook file. |
-| folder         | string | query                   | The folder path in storage where the workbook resides. |
-| storageName    | string | query                   | The name of the storage service. |
+| Parameter Name | Type   | Location | Description                                            |
+| -------------- | ------ | -------- | ------------------------------------------------------ |
+| name           | string | path     | The name of the workbook file.                         |
+| folder         | string | query    | The folder path in storage where the workbook resides. |
+| storageName    | string | query    | The name of the storage service.                       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookTextItems) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

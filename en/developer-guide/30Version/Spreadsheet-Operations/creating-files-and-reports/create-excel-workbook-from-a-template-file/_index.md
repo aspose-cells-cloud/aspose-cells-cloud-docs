@@ -1,69 +1,47 @@
----  
-title: "How to Create an Excel Workbook with a Template File"  
-second_title: "Document"  
-linktitle: "Template File"  
-type: docs  
-url: /create-an-excel-file-with-template-file/  
-aliases:  
-  - /create-excel-workbook-from-a-template-file/  
-  - /workbook/new-from-a-template-file/  
-  - /workbook/create/template-file/  
-keywords: "Excel template API, Aspose.Cells create workbook, Excel workbook template, REST API, Aspose.Cells Cloud"  
-description: "Learn how to generate Excel workbooks from template files using the Aspose.Cells Cloud REST API. Includes prerequisites, authentication steps, cURL examples, error‑handling details, and SDK code snippets."  
-weight: 30  
----  
-
-**Prerequisites**  
-
-Before calling the API, complete the following steps:
-
-1. **Obtain an access token** – request a JWT/OAuth token from the `/connect/token` endpoint.  
-2. **Upload the template file** (`templateFile`) and the data file (`dataFile`) to your Aspose Cloud storage.  
-3. (Optional) Note the **storage name** and **folder path** if you are using a custom storage service.
-
-### Authentication  
-
-All API calls must include the `Authorization` header:
-
-```http
-Authorization: Bearer {access_token}
-```
-
-Replace `{access_token}` with the token obtained in the previous step.
-
----  
+---
+title: "How to Create an Excel Workbook with a Template File"
+second_title: "Document"
+linktitle: "Template File"
+type: docs
+url: /create-an-excel-file-with-template-file/
+aliases:
+  - /create-excel-workbook-from-a-template-file/
+  - /workbook/new-from-a-template-file/
+  - /workbook/create/template-file/
+keywords: "Excel template API, Aspose.Cells create workbook, Excel workbook template, REST API, Aspose.Cells Cloud"
+description: "Learn how to generate Excel workbooks from template files using the Aspose.Cells Cloud REST API. Includes prerequisites, authentication steps, cURL examples, error‑handling details, and SDK code snippets."
+weight: 30
+---
 
 This REST API creates a **workbook** from a **template file**. It generates a new Excel workbook based on the supplied template and data.
 
-### Query Parameters  
+## REST API
+
+| **API**         | **Type** | **Description**                                  | **Swagger Link**                                                                          |
+| --------------- | -------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| `/cells/{name}` | PUT      | Create a new Excel workbook from a template file | [PutWorkbookCreate](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) |
+
+### Query Parameters
 
 **Query Parameters** – key‑value pairs that control workbook creation.
 
-| Parameter Name | Type    | Description |
-|----------------|---------|-------------|
-| `templateFile` | string  | Name of the template file stored in the cloud. |
-| `dataFile`     | string  | Name of the data file (e.g., XML, JSON) used to populate the template. |
+| Parameter Name | Type    | Description                                                                                       |
+| -------------- | ------- | ------------------------------------------------------------------------------------------------- |
+| `templateFile` | string  | Name of the template file stored in the cloud.                                                    |
+| `dataFile`     | string  | Name of the data file (e.g., XML, JSON) used to populate the template.                            |
 | `isWriteOver`  | boolean | Flag indicating whether to overwrite an existing file. Pass `true` or `false` **without** quotes. |
-| `folder`       | string  | Folder path where the original workbook resides. |
-| `storageName`  | string  | Name of the storage service. |
+| `folder`       | string  | Folder path where the original workbook resides.                                                  |
+| `storageName`  | string  | Name of the storage service.                                                                      |
 
-### Request Body Parameter  
+### Request Body Parameter
 
-**Request Body** – contains the data file for Smart‑Marker placeholders.  
+**Request Body** – contains the data file for Smart‑Marker placeholders.
 
-| Parameter Name | Type | Description |
-|----------------|------|-------------|
+| Parameter Name | Type | Description                                                               |
+| -------------- | ---- | ------------------------------------------------------------------------- |
 | `data`         | file | File containing the data for the **smart‑marker** template (XML or JSON). |
 
 > **Smart‑marker**: a placeholder syntax that Aspose.Cells replaces with values from the supplied data file.
-
-## REST API  
-
-**REST API** – endpoint that creates the workbook.
-
-| **API**          | **Type** | **Description**                                 | **Swagger Link** |
-|------------------|----------|-------------------------------------------------|------------------|
-| `/cells/{name}`  | PUT      | Create a new Excel workbook from a template file | [PutWorkbookCreate](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -149,17 +127,17 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?templateFile=C
 
 {{< /tabs >}}
 
-### Error Handling  
+### Error Handling
 
-| HTTP Status | Meaning                         | Example Body |
-|-------------|---------------------------------|--------------|
-| **200**     | Workbook created successfully   | `{ "Status": "OK", "Workbook": { … } }` |
-| **400**     | Bad request – missing/invalid parameters | `{ "error": "Invalid isWriteOver value." }` |
-| **401**     | Unauthorized – invalid or missing token | `{ "error": "Authentication required." }` |
-| **404**     | Not found – template or data file not found | `{ "error": "File not found." }` |
-| **500**     | Internal server error           | `{ "error": "Unexpected server error." }` |
+| HTTP Status | Meaning                                     | Example Body                                |
+| ----------- | ------------------------------------------- | ------------------------------------------- |
+| **200**     | Workbook created successfully               | `{ "Status": "OK", "Workbook": { … } }`     |
+| **400**     | Bad request – missing/invalid parameters    | `{ "error": "Invalid isWriteOver value." }` |
+| **401**     | Unauthorized – invalid or missing token     | `{ "error": "Authentication required." }`   |
+| **404**     | Not found – template or data file not found | `{ "error": "File not found." }`            |
+| **500**     | Internal server error                       | `{ "error": "Unexpected server error." }`   |
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK abstracts low‑level details, letting you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

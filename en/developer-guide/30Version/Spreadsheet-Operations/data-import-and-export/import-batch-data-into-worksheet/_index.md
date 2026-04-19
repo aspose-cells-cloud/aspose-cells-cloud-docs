@@ -25,36 +25,34 @@ POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
-**Authentication** – The API requires OAuth 2.0. Include an `Authorization: Bearer <access_token>` header in the request. Details on obtaining an access token are available in the Aspose Cloud authentication guide.
-
 The important parameters are described in the tables below.
 
 ### ImportBatchDataOption
 
-| Parameter Name          | Type               | Description |
-|-------------------------|--------------------|-------------|
-| **BatchData**           | `List<CellValue>`  | Collection of cell values to be written directly. |
-| **DestinationWorksheet**| `string`           | Name of the worksheet where the data will be imported. |
-| **IsInsert**            | `bool`             | When `true`, the data is inserted and existing cells are shifted; when `false`, the data overwrites existing cells. |
-| **ImportDataType**      | `string`           | Format of the data to import. Allowed values: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
-| **Source**              | `FileSource`       | Specifies the location of the data file when **BatchData** is `null`. |
+| Parameter Name           | Type              | Description                                                                                                                                                                                   |
+| ------------------------ | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **BatchData**            | `List<CellValue>` | Collection of cell values to be written directly.                                                                                                                                             |
+| **DestinationWorksheet** | `string`          | Name of the worksheet where the data will be imported.                                                                                                                                        |
+| **IsInsert**             | `bool`            | When `true`, the data is inserted and existing cells are shifted; when `false`, the data overwrites existing cells.                                                                           |
+| **ImportDataType**       | `string`          | Format of the data to import. Allowed values: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
+| **Source**               | `FileSource`      | Specifies the location of the data file when **BatchData** is `null`.                                                                                                                         |
 
 ### CellValue
 
-| Parameter Name | Type   | Description |
-|----------------|--------|-------------|
-| **rowIndex**   | `int`  | Zero‑based row index of the target cell. |
-| **columnIndex**| `int`  | Zero‑based column index of the target cell. |
-| **type**       | `string`| Data type of the value (e.g., `int`, `double`, `string`). |
-| **value**      | `string`| The actual value to write into the cell. |
-| **style**      | `Style`| Optional styling information for the cell. |
+| Parameter Name  | Type     | Description                                               |
+| --------------- | -------- | --------------------------------------------------------- |
+| **rowIndex**    | `int`    | Zero‑based row index of the target cell.                  |
+| **columnIndex** | `int`    | Zero‑based column index of the target cell.               |
+| **type**        | `string` | Data type of the value (e.g., `int`, `double`, `string`). |
+| **value**       | `string` | The actual value to write into the cell.                  |
+| **style**       | `Style`  | Optional styling information for the cell.                |
 
 ### FileSource
 
-| Parameter Name   | Type   | Description |
-|------------------|--------|-------------|
-| **FileSourceType**| `string`| Source of the file: `InMemoryFiles`, `CloudFileSystem`, or `RequestFiles`. |
-| **FilePath**      | `string`| Path or identifier of the file within the chosen source. |
+| Parameter Name     | Type     | Description                                                                |
+| ------------------ | -------- | -------------------------------------------------------------------------- |
+| **FileSourceType** | `string` | Source of the file: `InMemoryFiles`, `CloudFileSystem`, or `RequestFiles`. |
+| **FilePath**       | `string` | Path or identifier of the file within the chosen source.                   |
 
 ### Example (XML)
 

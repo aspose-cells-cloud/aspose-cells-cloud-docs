@@ -17,15 +17,15 @@ This REST API replaces data in Excel files.
 POST https://api.aspose.cloud/v3.0/cells/replace
 ```
 
-The request parameters are:
+### The request parameters are
 
-| Parameter Name | Type   | Location                     | Description                                          |
-|----------------|--------|------------------------------|------------------------------------------------------|
-| **file**       | file   | formData (multipart)         | Excel file to be processed.                          |
-| **text**       | string | query                        | Text string to be replaced.                          |
-| **newtext**    | string | query                        | Replacement text.                                    |
-| **password**   | string | query                        | Password for a protected workbook (optional).       |
-| **sheetname**  | string | query                        | Name of the worksheet to target (optional).          |
+| Parameter Name | Type   | Location             | Description                                   |
+| -------------- | ------ | -------------------- | --------------------------------------------- |
+| **file**       | file   | formData (multipart) | Excel file to be processed.                   |
+| **text**       | string | query                | Text string to be replaced.                   |
+| **newtext**    | string | query                | Replacement text.                             |
+| **password**   | string | query                | Password for a protected workbook (optional). |
+| **sheetname**  | string | query                | Name of the worksheet to target (optional).   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -51,18 +51,18 @@ curl -v "https://api.aspose.cloud/v3.0/cells/replace?text=1&newtext=aspose.cells
 
 ```json
 {
-    "Files": [
-        {
-            "Filename": "xxxx1",
-            "FileSize": 274022,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "xxxx2",
-            "FileSize": 274022,
-            "FileContent": "-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "xxxx1",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "xxxx2",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 

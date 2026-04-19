@@ -1,59 +1,34 @@
----  
-title: "Remove Write‑Protection (Password) from an Excel Workbook"  
-second_title: "Document"  
-linktitle: "Clear Excel Files Password"  
-type: docs  
-url: /clear-excel-files-password/  
-aliases: [/clear-modify-password-of-excel-workbooks/,/workbook/clear-modify-password/，/workbook/password/clear/]  
-keywords: "remove Excel password, Aspose.Cells Cloud, write‑protection, REST API, SDK examples"  
-description: "Learn how to delete password protection from an Excel workbook using Aspose.Cells Cloud REST API. Includes cURL command, authentication steps, error‑code table, and SDK samples."  
-weight: 110  
----  
+---
+title: "Remove Write‑Protection (Password) from an Excel Workbook"
+second_title: "Document"
+linktitle: "Clear Excel Files Password"
+type: docs
+url: /clear-excel-files-password/
+aliases:
+  [
+    /clear-modify-password-of-excel-workbooks/,
+    /workbook/clear-modify-password/，/workbook/password/clear/,
+  ]
+keywords: "remove Excel password, Aspose.Cells Cloud, write‑protection, REST API, SDK examples"
+description: "Learn how to delete password protection from an Excel workbook using Aspose.Cells Cloud REST API. Includes cURL command, authentication steps, error‑code table, and SDK samples."
+weight: 110
+---
 
 This REST API removes **write‑protection (password)** from an Excel workbook, allowing you to **remove Excel password** protection programmatically.
 
-## Prerequisites  
-
-Before calling the endpoint, ensure the following steps are completed:
-
-1. **Authentication** – Obtain a JWT access token.  
-   ```bash
-   POST https://api.aspose.cloud/connect/token
-   Content-Type: application/x-www-form-urlencoded
-
-   grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>
-   ```  
-   The response contains the `access_token` that must be supplied in the `Authorization` header of every request.
-
-2. **Upload the workbook** (if it is not already stored).  
-   Use the **Upload File** API or place the file in your Aspose Cloud storage folder.
-
-3. **Know the file location** – Identify the `folder` (if any) and `storageName` where the workbook resides.
-
-## Glossary  
-
-<dl>  
-  <dt>Write‑protection</dt>  
-  <dd>A password that prevents modifications to an Excel workbook. It is sometimes referred to as a “modify password”.</dd>  
-  <dt>Clear password</dt>  
-  <dd>The action of removing write‑protection from a workbook.</dd>  
-  <dt>JWT (JSON Web Token)</dt>  
-  <dd>A bearer token used to authorize calls to Aspose.Cells Cloud APIs.</dd>  
-</dl>  
-
-## REST API  
+## REST API
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 ```
 
-**Request parameters**
+### **Request parameters**
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| `name`         | string | path     | The name of the Excel workbook. |
+| Parameter Name | Type   | Location | Description                                       |
+| -------------- | ------ | -------- | ------------------------------------------------- |
+| `name`         | string | path     | The name of the Excel workbook.                   |
 | `folder`       | string | query    | The folder that contains the workbook (optional). |
-| `storageName`  | string | query    | The name of the storage service (optional). |
+| `storageName`  | string | query    | The name of the storage service (optional).       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDocumentUnprotectFromChanges) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -86,18 +61,18 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xlsx/writeProtecti
 
 {{< /tabs >}}
 
-## Response Codes  
+### Response Codes
 
-| HTTP Status | Meaning                            | Example JSON (error) |
-|-------------|------------------------------------|----------------------|
-| **200**     | Password removed successfully.     | `{ "Code":200, "Status":"OK" }` |
-| **401**     | Unauthorized – missing/invalid token. | `{ "Code":401, "Message":"Invalid access token." }` |
-| **404**     | Workbook not found.                | `{ "Code":404, "Message":"File not found." }` |
-| **500**     | Internal server error.             | `{ "Code":500, "Message":"An unexpected error occurred." }` |
+| HTTP Status | Meaning                               | Example JSON (error)                                        |
+| ----------- | ------------------------------------- | ----------------------------------------------------------- |
+| **200**     | Password removed successfully.        | `{ "Code":200, "Status":"OK" }`                             |
+| **401**     | Unauthorized – missing/invalid token. | `{ "Code":401, "Message":"Invalid access token." }`         |
+| **404**     | Workbook not found.                   | `{ "Code":404, "Message":"File not found." }`               |
+| **500**     | Internal server error.                | `{ "Code":500, "Message":"An unexpected error occurred." }` |
 
 When an error occurs, inspect the `Code` and `Message` fields to implement appropriate handling in your application.
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

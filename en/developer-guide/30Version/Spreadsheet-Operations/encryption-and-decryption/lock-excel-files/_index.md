@@ -1,20 +1,20 @@
----  
-title: "Lock Excel Files"  
-second_title: "Document"  
-linktitle: "Lock Excel files"  
-type: docs  
-url: /lock-excel-files/  
-aliases: [/lock/without-storage/,/lock/,/lock/without-using-storage/]  
-keywords: "Lock Excel files API, Aspose.Cells Cloud, REST API, Excel workbook, Spreadsheet, SDK"  
-description: "Learn how to lock Excel workbooks using Aspose.Cells Cloud REST API (v3.0). Includes HTTPS endpoint, authentication, cURL request, response schema, and SDK code samples for C#, Java, Python, and more."  
-weight: 70  
----  
+---
+title: "Lock Excel Files"
+second_title: "Document"
+linktitle: "Lock Excel files"
+type: docs
+url: /lock-excel-files/
+aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+keywords: "Lock Excel files API, Aspose.Cells Cloud, REST API, Excel workbook, Spreadsheet, SDK"
+description: "Learn how to lock Excel workbooks using Aspose.Cells Cloud REST API (v3.0). Includes HTTPS endpoint, authentication, cURL request, response schema, and SDK code samples for C#, Java, Python, and more."
+weight: 70
+---
 
-**API Version:** v3.0 (current)  
+**API Version:** v3.0 (current)
 
 This REST API **locks** Excel workbooks.
 
-## REST API  
+## REST API
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/lock
@@ -22,12 +22,12 @@ POST https://api.aspose.cloud/v3.0/cells/lock
 
 **Prerequisites** – The request must be sent over **HTTPS** and include a valid OAuth 2.0 Bearer token in the `Authorization` header.
 
-The request parameters are:
+### The request parameters are
 
-| Parameter Name | Type | Location | Description |
-|----------------|------|----------|-------------|
-| file | file | form‑data (multipart body) | The Excel workbook to be uploaded and locked. |
-| password | string | query string | Password for the workbook (optional). |
+| Parameter Name | Type   | Location                   | Description                                   |
+| -------------- | ------ | -------------------------- | --------------------------------------------- |
+| file           | file   | form‑data (multipart body) | The Excel workbook to be uploaded and locked. |
+| password       | string | query string               | Password for the workbook (optional).         |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostLock) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -66,21 +66,21 @@ curl -v "https://api.aspose.cloud/v3.0/cells/lock?password=123456" \
 
 {{< /tabs >}}
 
-**Response details**
+### **Response details**
 
-| Field | Type | Description |
-|-------|------|-------------|
-| Filename | string | Name of the locked workbook returned by the service. |
-| FileSize | integer | Size of the locked file in bytes. |
-| FileContent | string (Base64) | The locked workbook encoded as a Base64 string. |
+| Field       | Type            | Description                                          |
+| ----------- | --------------- | ---------------------------------------------------- |
+| Filename    | string          | Name of the locked workbook returned by the service. |
+| FileSize    | integer         | Size of the locked file in bytes.                    |
+| FileContent | string (Base64) | The locked workbook encoded as a Base64 string.      |
 
 To retrieve the locked workbook, decode the `FileContent` value from Base64 and save it using the `Filename` provided in the response.
 
-**Security note** – All calls must use TLS (HTTPS). Bearer tokens expire after a configurable period; obtain a new token via the `/connect/token` endpoint when needed.
+### **Error handling**
 
-**Error handling** – The API returns standard HTTP status codes (e.g., `400 Bad Request`, `401 Unauthorized`, `500 Internal Server Error`) together with a JSON error object that contains `Code` and `Message` fields.
+– The API returns standard HTTP status codes (e.g., `400 Bad Request`, `401 Unauthorized`, `500 Internal Server Error`) together with a JSON error object that contains `Code` and `Message` fields.
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

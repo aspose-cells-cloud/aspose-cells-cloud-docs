@@ -15,35 +15,29 @@ weight: 40
 
 This REST API creates a workbook using a Smart Marker template.
 
-**What is a Smart Marker?**  
-A Smart Marker is a placeholder syntax that maps data fields in an XML (or JSON) file to cells in an Excel template. At runtime Aspose.Cells replaces the markers with the corresponding data, allowing you to generate fully populated reports programmatically.
-
-**Prerequisites**  
-Before calling the API, ensure you have:
-
-* A valid Aspose Cloud API key and access token.  
-* The template workbook stored in your chosen storage (or included in the request).  
-* A Smart Marker XML data file that follows the Aspose Smart Marker schema.  
-
-**Query Parameters**
-
-| Parameter Name | Type   | Description                                                               |
-|----------------|--------|---------------------------------------------------------------------------|
-| outPath        | string | Destination path where the generated workbook will be saved.             |
-| folder         | string | Folder containing the original workbook.                                 |
-| storageName    | string | Name of the storage service to use.                                       |
-
-**Request Body Parameter**
-
-| Parameter Name | Type | Description                                            |
-|----------------|------|--------------------------------------------------------|
-| xmlFile        | file | Smart Marker XML data file uploaded with the request. |
-
 ## REST API
 
-| **API**                         | **Type** | **Description**                                            | **Swagger Link** |
-|---------------------------------|----------|------------------------------------------------------------|------------------|
-| /cells/{name}/smartmarker       | POST     | Create a new Excel workbook from a Smart Marker template file | [PostWorkbookGetSmartMarkerResult](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) |
+| **API**                   | **Type** | **Description**                                               | **Swagger Link**                                                                                                        |
+| ------------------------- | -------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| /cells/{name}/smartmarker | POST     | Create a new Excel workbook from a Smart Marker template file | [PostWorkbookGetSmartMarkerResult](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) |
+
+### **What is a Smart Marker?**
+
+A Smart Marker is a placeholder syntax that maps data fields in an XML (or JSON) file to cells in an Excel template. At runtime Aspose.Cells replaces the markers with the corresponding data, allowing you to generate fully populated reports programmatically.
+
+### **Query Parameters**
+
+| Parameter Name | Type   | Description                                                  |
+| -------------- | ------ | ------------------------------------------------------------ |
+| outPath        | string | Destination path where the generated workbook will be saved. |
+| folder         | string | Folder containing the original workbook.                     |
+| storageName    | string | Name of the storage service to use.                          |
+
+### **Request Body Parameter**
+
+| Parameter Name | Type | Description                                           |
+| -------------- | ---- | ----------------------------------------------------- |
+| xmlFile        | file | Smart Marker XML data file uploaded with the request. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -79,14 +73,14 @@ Content-Type: application/json
 
 {{< /tabs >}}
 
-**Error Handling**  
+### **Error Handling**
 
-| HTTP Status | Description                              | Typical Cause                                 |
-|-------------|------------------------------------------|-----------------------------------------------|
-| 400         | Bad Request                              | Missing template, malformed XML, or invalid parameters. |
-| 401         | Unauthorized                             | Invalid or missing authentication token.      |
-| 404         | Not Found                                | Specified workbook or storage location does not exist. |
-| 500         | Internal Server Error                    | Unexpected server‑side failure.               |
+| HTTP Status | Description           | Typical Cause                                           |
+| ----------- | --------------------- | ------------------------------------------------------- |
+| 400         | Bad Request           | Missing template, malformed XML, or invalid parameters. |
+| 401         | Unauthorized          | Invalid or missing authentication token.                |
+| 404         | Not Found             | Specified workbook or storage location does not exist.  |
+| 500         | Internal Server Error | Unexpected server‑side failure.                         |
 
 ## Cloud SDK Family
 

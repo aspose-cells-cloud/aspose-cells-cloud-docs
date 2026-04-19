@@ -4,7 +4,14 @@ second_title: "Document"
 linktitle: "Import 2 dimension string array"
 type: docs
 url: /import-a-2D-string-array-into-excel-worksheet/
-aliases: [/import-2dimension-string-array-into-excel-worksheet/,/import-2dimension-string-array-into-worksheet/,/import-data/-2dimension-string-array/,/import-data/2dimension-string-array/,/import/2dimension-string-array/]
+aliases:
+  [
+    /import-2dimension-string-array-into-excel-worksheet/,
+    /import-2dimension-string-array-into-worksheet/,
+    /import-data/-2dimension-string-array/,
+    /import-data/2dimension-string-array/,
+    /import/2dimension-string-array/,
+  ]
 keywords: "Aspose.Cells Cloud, import 2D string array, Excel, REST API, SDK"
 description: "Learn how to use Aspose.Cells Cloud REST API to import a two‑dimensional string array into an Excel worksheet. Includes request format, parameter details, and SDK code examples for C#, PHP, and Ruby."
 weight: 20
@@ -23,30 +30,30 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 
 The important parameters are described in the following table:
 
-**Import2DimensionStringArrayOption**
+### **Import2DimensionStringArrayOption**
 
-| Parameter Name          | Type                | Description                                                                 |
-|-------------------------|---------------------|-----------------------------------------------------------------------------|
-| FirstRow                | int                 | Zero‑based index of the row where the import starts.                        |
-| FirstColumn             | int                 | Zero‑based index of the column where the import starts.                     |
-| Data                    | String[,]           | Two‑dimensional array containing the string values to be imported.         |
-| DestinationWorksheet    | string              | Name of the worksheet that will receive the imported data.                 |
-| IsInsert                | string (true/false) | If **true**, the data is inserted and existing cells are shifted accordingly. |
-| ImportDataType          | string              | Specifies the data type; for this operation use `TwoDimensionStringArray`. |
-| Source                  | FileSource          | Indicates the data file location when the `BatchData` parameter is null.   |
+| Parameter Name       | Type                | Description                                                                   |
+| -------------------- | ------------------- | ----------------------------------------------------------------------------- |
+| FirstRow             | int                 | Zero‑based index of the row where the import starts.                          |
+| FirstColumn          | int                 | Zero‑based index of the column where the import starts.                       |
+| Data                 | String[,]           | Two‑dimensional array containing the string values to be imported.            |
+| DestinationWorksheet | string              | Name of the worksheet that will receive the imported data.                    |
+| IsInsert             | string (true/false) | If **true**, the data is inserted and existing cells are shifted accordingly. |
+| ImportDataType       | string              | Specifies the data type; for this operation use `TwoDimensionStringArray`.    |
+| Source               | FileSource          | Indicates the data file location when the `BatchData` parameter is null.      |
 
 ### Example Request Body
 
 ```json
 {
-    "Data": [
-        ["1.0", "2.9"],
-        ["2.0", "2.1"]
-    ],
-    "DestinationWorksheet": "Sheet2",
-    "FirstRow": 1,
-    "FirstColumn": 1,
-    "ImportDataType": "TwoDimensionStringArray"
+  "Data": [
+    ["1.0", "2.9"],
+    ["2.0", "2.1"]
+  ],
+  "DestinationWorksheet": "Sheet2",
+  "FirstRow": 1,
+  "FirstColumn": 1,
+  "ImportDataType": "TwoDimensionStringArray"
 }
 ```
 

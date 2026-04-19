@@ -18,45 +18,27 @@ This REST API **imports double‑array data** into an Excel worksheet.
 You send an HTTP request with **multipart** content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
 The first part of the multipart body contains the **ImportDoubleArrayOption** data and the second part contains the data file.
 
-### Authentication
-
-All calls must be authorized with an OAuth 2.0 access token.  
-1. Obtain a token by posting to the token endpoint:
-
-```bash
-POST https://api.aspose.cloud/connect/token
-Content-Type: application/x-www-form-urlencoded
-
-grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>
-```
-
-2. Include the token in the `Authorization` header of every request:
-
-```
-Authorization: Bearer <access_token>
-```
-
-### REST API
+## REST API
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
-#### Request Parameters
+### Request Parameters
 
-**ImportDoubleArrayOption**
+#### **ImportDoubleArrayOption**
 
-| Parameter Name        | Type      | Description                                                                                                 |
-|-----------------------|-----------|-------------------------------------------------------------------------------------------------------------|
-| FirstRow              | int       | Zero‑based index of the first row where the data will be placed.                                            |
-| FirstColumn           | int       | Zero‑based index of the first column where the data will be placed.                                         |
-| IsVertical            | boolean   | `true` / `false` – determines whether the array is inserted vertically (`true`) or horizontally (`false`). |
-| Data                  | Double[]  | Array of double values to import.                                                                            |
-| DestinationWorksheet  | string    | Name of the target worksheet.                                                                                |
-| IsInsert              | boolean   | `true` / `false` – if `true`, data is inserted; if `false`, existing cells are overwritten.                 |
-| ImportDataType        | string    | Type of data being imported (e.g., `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`).      |
-| Source                | FileSource| Specifies the data file location when the `BatchData` parameter is null.                                   |
+| Parameter Name       | Type       | Description                                                                                                |
+| -------------------- | ---------- | ---------------------------------------------------------------------------------------------------------- |
+| FirstRow             | int        | Zero‑based index of the first row where the data will be placed.                                           |
+| FirstColumn          | int        | Zero‑based index of the first column where the data will be placed.                                        |
+| IsVertical           | boolean    | `true` / `false` – determines whether the array is inserted vertically (`true`) or horizontally (`false`). |
+| Data                 | Double[]   | Array of double values to import.                                                                          |
+| DestinationWorksheet | string     | Name of the target worksheet.                                                                              |
+| IsInsert             | boolean    | `true` / `false` – if `true`, data is inserted; if `false`, existing cells are overwritten.                |
+| ImportDataType       | string     | Type of data being imported (e.g., `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`).      |
+| Source               | FileSource | Specifies the data file location when the `BatchData` parameter is null.                                   |
 
 #### Example (XML)
 
@@ -80,51 +62,51 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 
 ```json
 {
-    "Data": [1.99, 1.9, 2.0],
-    "DestinationWorksheet": "Sheet1",
-    "FirstRow": 0,
-    "FirstColumn": 0,
-    "IsVertical": false,
-    "IsInsert": true,
-    "ImportDataType": "DoubleArray"
+  "Data": [1.99, 1.9, 2.0],
+  "DestinationWorksheet": "Sheet1",
+  "FirstRow": 0,
+  "FirstColumn": 0,
+  "IsVertical": false,
+  "IsInsert": true,
+  "ImportDataType": "DoubleArray"
 }
 ```
 
-#### Response
+### Response
 
 A successful request returns **HTTP 200** with a JSON payload similar to:
 
 ```json
 {
-    "Code": 200,
-    "Status": "OK",
-    "Message": "Import completed successfully.",
-    "Data": {
-        "Worksheet": "Sheet1",
-        "FirstRow": 0,
-        "FirstColumn": 0
-    }
+  "Code": 200,
+  "Status": "OK",
+  "Message": "Import completed successfully.",
+  "Data": {
+    "Worksheet": "Sheet1",
+    "FirstRow": 0,
+    "FirstColumn": 0
+  }
 }
 ```
 
 Possible status codes:
 
-| Code | Meaning                              |
-|------|--------------------------------------|
-| 200  | Import succeeded                     |
-| 400  | Bad request – missing or invalid data|
-| 401  | Unauthorized – invalid or missing token|
-| 500  | Internal server error                |
+| Code | Meaning                                 |
+| ---- | --------------------------------------- |
+| 200  | Import succeeded                        |
+| 400  | Bad request – missing or invalid data   |
+| 401  | Unauthorized – invalid or missing token |
+| 500  | Internal server error                   |
 
-#### Error Handling
+### Error Handling
 
 When an error occurs the API returns a JSON object containing the error code and a descriptive message. Example for an unauthorized request:
 
 ```json
 {
-    "Code": 401,
-    "Status": "Error",
-    "Message": "Access token is missing or invalid."
+  "Code": 401,
+  "Status": "Error",
+  "Message": "Access token is missing or invalid."
 }
 ```
 

@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Worksheet"
 type: docs
 url: /export-excel-worksheet-to-different-formats/
-aliases: [ /export/excel-worksheet-to-different-formats/]
+aliases: [/export/excel-worksheet-to-different-formats/]
 keywords: "Aspose.Cells Cloud, export worksheet, REST API, PDF, CSV, TIFF, XLSX, ODS, image formats"
 description: "Learn how to export an Excel worksheet to PDF, CSV, TIFF, and other formats using the Aspose.Cells Cloud REST API. Includes cURL example, required authentication, parameter details, and response handling."
 weight: 20
@@ -33,24 +33,22 @@ You can export a worksheet to the following formats:
 - **NUMBERS** – [Link](https://docs.fileformat.com/spreadsheet/numbers/)
 - **FODS** – [Link](https://docs.fileformat.com/spreadsheet/fods/)
 
-### REST API
+## REST API
 
-| **API** | **Type** | **Description** | **Swagger Link** |
-| ------- | -------- | --------------- | ---------------- |
-| /cells/export | POST | Export an Excel worksheet from the request body to a specified format | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
+| **API**       | **Type** | **Description**                                                       | **Swagger Link**                                                              |
+| ------------- | -------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| /cells/export | POST     | Export an Excel worksheet from the request body to a specified format | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-**Authentication**  
-The Aspose.Cells Cloud API uses OAuth 2.0. Obtain an access token from the `/connect/token` endpoint and include it in the request header as `Authorization: Bearer <access_token>`.
+### **Parameters**
 
-**Parameters**  
-- `objectType` – The type of Excel object to export (e.g., `worksheet`).  
+- `objectType` – The type of Excel object to export (e.g., `worksheet`).
 - `format` – The desired output format (e.g., `tiff`). Both parameters are required and are passed as query strings.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
-#### Request
+### Request
 
 ```bash
 # Export a worksheet to TIFF format
@@ -62,71 +60,72 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=worksheet&fo
      -F "File=@MyWorkbook.xlsx"
 ```
 
-#### Response
+### Response
 
 ```json
 {
-    "Files": [
-        {
-            "Filename": "Book1_xlsx_Sheet1.tif",
-            "FileSize": 390,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "Book1_xlsx_Sheet2.tif",
-            "FileSize": 10040,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "Book1_xlsx_Sheet3.tif",
-            "FileSize": 2824,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "Book1_xlsx_Sheet4.tif",
-            "FileSize": 1350,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "Book1_xlsx_Sheet5.tif",
-            "FileSize": 12978,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "Book1_xlsx_Sheet6.tif",
-            "FileSize": 7002,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "Book1_xlsx_Sheet7.tif",
-            "FileSize": 11532,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "myDocument_xlsx_Sheet1.tif",
-            "FileSize": 382,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "myDocument_xlsx_Sheet2.tif",
-            "FileSize": 382,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "myDocument_xlsx_Sheet3.tif",
-            "FileSize": 130084,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "myDocument_xlsx_Sheet4.tif",
-            "FileSize": 120062,
-            "FileContent": "-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Book1_xlsx_Sheet1.tif",
+      "FileSize": 390,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet2.tif",
+      "FileSize": 10040,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet3.tif",
+      "FileSize": 2824,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet4.tif",
+      "FileSize": 1350,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet5.tif",
+      "FileSize": 12978,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet6.tif",
+      "FileSize": 7002,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet7.tif",
+      "FileSize": 11532,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet1.tif",
+      "FileSize": 382,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet2.tif",
+      "FileSize": 382,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet3.tif",
+      "FileSize": 130084,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet4.tif",
+      "FileSize": 120062,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
-**Error handling**  
+### **Error handling**
+
 If the request fails, the API returns a JSON error object containing fields such as `Code` and `Message`. Typical HTTP status codes include **401 Unauthorized** (missing or invalid token) and **400 Bad Request** (invalid parameters).
 
 ### Cloud SDK Family

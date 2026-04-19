@@ -15,25 +15,18 @@ weight: 170
 
 This REST API deletes the background image of an Excel workbook.
 
-**Prerequisites**  
-To use this endpoint you must:
-
-* Include a valid **Authorization** header (`Authorization: Bearer <access_token>`).  
-* Provide the workbook name in the path (`{name}`), e.g., `Book1.xlsx`.  
-* (Optional) Specify the storage folder (`folder`) and storage service (`storageName`) when the file is not stored in the root folder.
-
-**Query Parameter**
-
-| Parameter Name | Type   | Description                              | Required |
-|----------------|--------|------------------------------------------|----------|
-| folder         | string | Folder that contains the original workbook. | No |
-| storageName    | string | Name of the storage service to use.       | No |
-
 ## REST API
 
-| **API**                     | **Type** | **Description**                | **Resource Link** |
-|-----------------------------|----------|--------------------------------|-------------------|
-| /cells/{name}/background    | DELETE   | Delete background in an Excel file | [DeleteWorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground) |
+| **API**                  | **Type** | **Description**                    | **Resource Link**                                                                                       |
+| ------------------------ | -------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| /cells/{name}/background | DELETE   | Delete background in an Excel file | [DeleteWorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground) |
+
+### **Query Parameter**
+
+| Parameter Name | Type   | Description                                 | Required |
+| -------------- | ------ | ------------------------------------------- | -------- |
+| folder         | string | Folder that contains the original workbook. | No       |
+| storageName    | string | Name of the storage service to use.         | No       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -124,5 +117,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-
-*Updated: 2024‑10‑15*

@@ -11,29 +11,29 @@ weight: 90
 
 This REST API converts a spreadsheet file to PNG format.
 
-**Query Parameter**
-
-| Parameter Name          | Type   | Description                                                                                         |
-|--------------------------|--------|-----------------------------------------------------------------------------------------------------|
-| password                 | string | The password required to open the Excel file.                                                       |
-| storageName              | string | The name of the storage where the file is located.                                                  |
-| checkExcelRestriction    | bool   | Determines whether to check Excel file restrictions when modifying cells or related objects.      |
-
-**Request Body Parameter**
-
-| Parameter Name | Type      | Description                                                                 |
-|----------------|-----------|-----------------------------------------------------------------------------|
-| datafile       | data file | The spreadsheet file included in the first part of the multipart request. |
-
-**Response**
-
-[FileInfo](/cells/file-info/)
-
 ## REST API Specification
 
-| **API**                | **Type** | **Description**                     | **Swagger Link** |
-|------------------------|----------|-------------------------------------|------------------|
-| /cells/convert/png     | POST     | Convert a spreadsheet to a PNG file.| [PostConvertWorkbookToPNG](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG) |
+| **API**            | **Type** | **Description**                      | **Swagger Link**                                                                                       |
+| ------------------ | -------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| /cells/convert/png | POST     | Convert a spreadsheet to a PNG file. | [PostConvertWorkbookToPNG](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG) |
+
+### **Query Parameter**
+
+| Parameter Name        | Type   | Description                                                                                  |
+| --------------------- | ------ | -------------------------------------------------------------------------------------------- |
+| password              | string | The password required to open the Excel file.                                                |
+| storageName           | string | The name of the storage where the file is located.                                           |
+| checkExcelRestriction | bool   | Determines whether to check Excel file restrictions when modifying cells or related objects. |
+
+### **Request Body Parameter**
+
+| Parameter Name | Type      | Description                                                               |
+| -------------- | --------- | ------------------------------------------------------------------------- |
+| datafile       | data file | The spreadsheet file included in the first part of the multipart request. |
+
+### **Response**
+
+[FileInfo](/cells/file-info/)
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

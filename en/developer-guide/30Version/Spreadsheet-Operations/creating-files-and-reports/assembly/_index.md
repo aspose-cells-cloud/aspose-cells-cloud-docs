@@ -20,11 +20,11 @@ POST https://api.aspose.cloud/v3.0/cells/assembly
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                                                 |
-|----------------|--------|------------------------------|-----------------------------------------------------------------------------|
-| file           | file   | formData (multipart body)   | The spreadsheet file to upload.                                            |
-| DataSource     | string | query string                 | Identifier of the data source that provides the data for the assembly.    |
-| format         | string | query string                 | Desired output format (e.g., `xlsx`, `pdf`).                               |
+| Parameter Name | Type   | Location                  | Description                                                            |
+| -------------- | ------ | ------------------------- | ---------------------------------------------------------------------- |
+| file           | file   | formData (multipart body) | The spreadsheet file to upload.                                        |
+| DataSource     | string | query string              | Identifier of the data source that provides the data for the assembly. |
+| format         | string | query string              | Desired output format (e.g., `xlsx`, `pdf`).                           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostAssemble) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

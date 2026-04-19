@@ -1,38 +1,43 @@
----  
-title: "Create an Empty Excel Workbook"  
-second_title: "Document"  
-linktitle: "Empty Workbook"  
-type: docs  
-url: /create-an-empty-excel-file/  
-aliases: [/create-an-empty-excel-workbook/,/workbook/new/,/workbook/create/empty-workbook/]  
-keywords: "Aspose.Cells Cloud, Excel, empty workbook, REST API, SDK, create workbook"  
-description: "Learn how to create an empty Excel workbook using Aspose.Cells Cloud REST API. Includes cURL and SDK examples."  
-weight: 20  
----  
+---
+title: "Create an Empty Excel Workbook"
+second_title: "Document"
+linktitle: "Empty Workbook"
+type: docs
+url: /create-an-empty-excel-file/
+aliases:
+  [
+    /create-an-empty-excel-workbook/,
+    /workbook/new/,
+    /workbook/create/empty-workbook/,
+  ]
+keywords: "Aspose.Cells Cloud, Excel, empty workbook, REST API, SDK, create workbook"
+description: "Learn how to create an empty Excel workbook using Aspose.Cells Cloud REST API. Includes cURL and SDK examples."
+weight: 20
+---
 
 This REST API creates an **empty workbook**.
 
-### Query Parameters  
+## REST API
 
-| Parameter Name | Type    | Description                                                            |  
-|----------------|---------|------------------------------------------------------------------------|  
-| templateFile   | string  | Path to a template workbook to use as a base (optional).              |  
-| dataFile       | string  | Path to a data file for populating the workbook (optional).           |  
-| isWriteOver    | boolean | `true` to overwrite an existing file; `false` otherwise.              |  
-| folder         | string  | Destination folder for the created workbook (optional).               |  
-| storageName    | string  | Name of the storage service to use.                                    |  
+| Endpoint      | Type | Description              | Resource Link                                                                             |
+| ------------- | ---- | ------------------------ | ----------------------------------------------------------------------------------------- |
+| /cells/{name} | PUT  | Create an empty workbook | [PutWorkbookCreate](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) |
 
-### Request Body Parameter  
+### Query Parameters
 
-| Parameter Name | Type | Description                     |  
-|----------------|------|---------------------------------|  
-| data           | file | Binary content of the workbook file to create. |  
+| Parameter Name | Type    | Description                                                 |
+| -------------- | ------- | ----------------------------------------------------------- |
+| templateFile   | string  | Path to a template workbook to use as a base (optional).    |
+| dataFile       | string  | Path to a data file for populating the workbook (optional). |
+| isWriteOver    | boolean | `true` to overwrite an existing file; `false` otherwise.    |
+| folder         | string  | Destination folder for the created workbook (optional).     |
+| storageName    | string  | Name of the storage service to use.                         |
 
-## REST API  
+### Request Body Parameter
 
-| Endpoint          | Type | Description                | Resource Link |  
-|-------------------|------|----------------------------|---------------|  
-| /cells/{name}     | PUT  | Create an empty workbook   | [PutWorkbookCreate](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) |  
+| Parameter Name | Type | Description                                    |
+| -------------- | ---- | ---------------------------------------------- |
+| data           | file | Binary content of the workbook file to create. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -119,7 +124,7 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?isWriteOver=fa
 
 {{< /tabs >}}
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK abstracts low‑level details so you can focus on your project tasks. Check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

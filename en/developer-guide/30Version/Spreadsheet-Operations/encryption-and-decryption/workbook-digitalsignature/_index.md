@@ -14,19 +14,6 @@ weight: 35
 
 This REST API adds a **digital signature** to an Excel workbook.
 
-## Prerequisites
-
-* **HTTPS** – All requests must be made over **HTTPS** to protect credentials and files.  
-* **OAuth 2.0** – Obtain a Bearer token from `https://api.aspose.cloud/connect/token` using your client‑id and client‑secret, then include `Authorization: Bearer <token>` in every request.  
-* **Digital‑signature file format** – The API accepts a PKCS#12 certificate (`.pfx` or `.p12`) that contains your private key. You can create one with OpenSSL, for example:  
-
-  ```bash
-  openssl req -new -x509 -days 365 -keyout private.key -out cert.crt
-  openssl pkcs12 -export -out signature.pfx -inkey private.key -in cert.crt
-  ```
-
-* **API version** – The current version is **v4.0**. All URLs in this document use this version.
-
 ## REST API
 
 ```bash
@@ -35,23 +22,23 @@ POST https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature
 
 The request parameters include:
 
-| Parameter Name          | Type   | Location                | Description                                                            |
-|-------------------------|--------|-------------------------|------------------------------------------------------------------------|
-| **name**                | string | `<code>path</code>`     | The name of the workbook.                                             |
-| **digitalsignaturefile**| string | `<code>query</code>`    | Path to the digital‑signature file (`.pfx` or `.p12`).                |
-| **password**            | string | `<code>query</code>`    | Password for the workbook, if it is protected.                        |
-| **folder**              | string | `<code>query</code>`    | Folder where the workbook is stored.                                   |
-| **storageName**         | string | `<code>query</code>`    | Name of the storage service to use.                                    |
+| Parameter Name           | Type   | Location             | Description                                            |
+| ------------------------ | ------ | -------------------- | ------------------------------------------------------ |
+| **name**                 | string | `<code>path</code>`  | The name of the workbook.                              |
+| **digitalsignaturefile** | string | `<code>query</code>` | Path to the digital‑signature file (`.pfx` or `.p12`). |
+| **password**             | string | `<code>query</code>` | Password for the workbook, if it is protected.         |
+| **folder**               | string | `<code>query</code>` | Folder where the workbook is stored.                   |
+| **storageName**          | string | `<code>query</code>` | Name of the storage service to use.                    |
 
 ### Error Handling
 
-| HTTP Status | Meaning                              |
-|-------------|--------------------------------------|
-| 200         | Signature applied successfully.      |
-| 400         | Bad request – missing or invalid parameters. |
-| 401         | Unauthorized – invalid or expired OAuth token. |
+| HTTP Status | Meaning                                                |
+| ----------- | ------------------------------------------------------ |
+| 200         | Signature applied successfully.                        |
+| 400         | Bad request – missing or invalid parameters.           |
+| 401         | Unauthorized – invalid or expired OAuth token.         |
 | 403         | Forbidden – insufficient permissions or access denied. |
-| 500         | Internal server error – unexpected failure. |
+| 500         | Internal server error – unexpected failure.            |
 
 You can use the cURL command‑line tool to call Aspose.Cells web services. The example below demonstrates a request to the API:
 

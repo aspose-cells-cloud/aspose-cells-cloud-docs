@@ -4,54 +4,38 @@ second_title: "Document"
 linktitle: "Decrypt an Excel file"
 type: docs
 url: /excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/,/workbook/decrypt/]
+aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
 keywords: "Aspose.Cells, Excel decryption, REST API, cloud SDK"
 description: "Learn how to decrypt an Excel workbook using Aspose.Cells Cloud REST API. Includes required parameters, cURL example, SDK code samples, and error handling details."
 weight: 50
 ---
 
-## Prerequisites
+## REST API
 
-- An active Aspose Cloud account.  
-- A valid **access token** obtained from the Aspose Cloud OAuth endpoint (client ID and secret are required).  
-- The workbook you want to decrypt must be stored in a supported Aspose storage.  
+| API                      | Type   | Description        | Swagger Link                                                                                      |
+| ------------------------ | ------ | ------------------ | ------------------------------------------------------------------------------------------------- |
+| /cells/{name}/encryption | DELETE | Decrypt a document | [DeleteDecryptWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) |
 
-## Authentication
+### Query Parameters
 
-All requests to the Cells API must include the `Authorization` header:
-
-```
-Authorization: Bearer <access_token>
-```
-
-Replace `<access_token>` with the token you obtained in the previous step.
-
-## Query Parameters
-
-| Parameter Name | Type   | Description                              |
-|----------------|--------|------------------------------------------|
-| folder         | string | Folder path of the original workbook.   |
+| Parameter Name | Type   | Description                                     |
+| -------------- | ------ | ----------------------------------------------- |
+| folder         | string | Folder path of the original workbook.           |
 | storageName    | string | Name of the storage where the workbook resides. |
 
-## Request Body Parameter
+### Request Body Parameter
 
-| Parameter Name | Type                     | Description                                 |
-|----------------|--------------------------|---------------------------------------------|
-| encryption     | WorkbookEncryptionRequest| Encryption settings required for decryption.|
+| Parameter Name | Type                      | Description                                  |
+| -------------- | ------------------------- | -------------------------------------------- |
+| encryption     | WorkbookEncryptionRequest | Encryption settings required for decryption. |
 
 ### WorkbookEncryptionRequest
 
-| Parameter Name | Type   | Description                                                                                                                               |
-|----------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| EncryptionType | string | Encryption algorithm (`XOR`, `Compatible`, `EnhancedCryptographicProviderV1`, `StrongCryptographicProvider`).                           |
-| KeyLength      | integer| Length of the encryption key in bits.                                                                                                     |
-| Password       | string | Password used for decryption.                                                                                                            |
-
-## REST API
-
-| API                              | Type   | Description          | Swagger Link |
-|----------------------------------|--------|----------------------|--------------|
-| /cells/{name}/encryption          | DELETE | Decrypt a document   | [DeleteDecryptWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) |
+| Parameter Name | Type    | Description                                                                                                   |
+| -------------- | ------- | ------------------------------------------------------------------------------------------------------------- |
+| EncryptionType | string  | Encryption algorithm (`XOR`, `Compatible`, `EnhancedCryptographicProviderV1`, `StrongCryptographicProvider`). |
+| KeyLength      | integer | Length of the encryption key in bits.                                                                         |
+| Password       | string  | Password used for decryption.                                                                                 |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -79,22 +63,6 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
   "Status": "OK"
 }
 ```
-
-**Possible error responses**
-
-| HTTP Status | Code | Description                              | Example |
-|-------------|------|------------------------------------------|---------|
-| 400 | `BadRequest` | The request is malformed or missing required fields. | `{ "Code":"400", "Message":"Invalid request body." }` |
-| 401 | `Unauthorized` | Missing or invalid authentication token. | `{ "Code":"401", "Message":"Access token is invalid or expired." }` |
-| 500 | `InternalError` | An unexpected server error occurred. | `{ "Code":"500", "Message":"Unexpected error." }` |
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-### Edge‑Case Note
-
-The API supports only the encryption algorithms listed in the **EncryptionType** field. Attempting to decrypt a workbook encrypted with an unsupported algorithm or using a key length that exceeds the algorithm’s maximum will result in a `400 BadRequest` error.
 
 ## Cloud SDK Family
 
@@ -153,10 +121,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## Next Steps
-
-- **Encrypt an Excel workbook** – learn how to protect a file before uploading it.  
-- **Protect an Excel workbook** – explore additional security options such as password protection for worksheets.  
-
----

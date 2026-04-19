@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Conversion and Save As"
 type: docs
 url: /conversion-and-save-as/
-aliases: [/convert-excel/,/convert/]
+aliases: [/convert-excel/, /convert/]
 keywords: "Aspose.Cells, Excel conversion API, convert Excel to PDF, Excel to CSV, Excel to JSON, cloud spreadsheet conversion"
 description: "Learn how to convert Excel workbooks to PDF, CSV, JSON, HTML, and over 15 other formats using Aspose.Cells Cloud REST API. Includes endpoint details, sample cURL commands, and SDK snippets for Java, .NET, Python, and more."
 weight: 30
@@ -21,11 +21,11 @@ The service works seamlessly for any document format conversion. You can both im
 
 ### Conversion APIs
 
-| API | Description |
-| :- | :- |
-| `GET /cells/{name}` | Retrieves an Excel workbook from cloud storage and converts it to the requested format. |
-| `PUT /cells/convert` | Converts an Excel workbook supplied in the request body to the specified output format. |
-| `POST /cells/{name}/saveAs` | Saves an existing Excel workbook as another format directly to cloud storage. |
+| API                         | Description                                                                             |
+| :-------------------------- | :-------------------------------------------------------------------------------------- |
+| `GET /cells/{name}`         | Retrieves an Excel workbook from cloud storage and converts it to the requested format. |
+| `PUT /cells/convert`        | Converts an Excel workbook supplied in the request body to the specified output format. |
+| `POST /cells/{name}/saveAs` | Saves an existing Excel workbook as another format directly to cloud storage.           |
 
 The following articles explain each API in detail and include cURL and SDK examples:
 

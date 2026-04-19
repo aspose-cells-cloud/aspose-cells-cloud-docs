@@ -4,7 +4,11 @@ second_title: "Document"
 linktitle: "Convert Excel"
 type: docs
 url: /convert-an-excel-file-to-different-formats/
-aliases: [/convert-excel-workbook-to-different-file-formats/,/convert/excel-to-different-formats/]
+aliases:
+  [
+    /convert-excel-workbook-to-different-file-formats/,
+    /convert/excel-to-different-formats/,
+  ]
 keywords: "Aspose.Cells Cloud, Excel conversion, file format conversion, REST API, SDK, CSV, PDF, HTML, JSON, Markdown"
 description: "Convert Excel workbooks to formats such as CSV, PDF, HTML, JSON, Markdown, and more using the Aspose.Cells Cloud REST API."
 weight: 10
@@ -12,40 +16,40 @@ weight: 10
 
 This REST API converts an Excel file to various output formats.
 
+## REST API
+
+| API              | Type | Description                                                    | Swagger Link                                                                                |
+| ---------------- | ---- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| `/cells/convert` | PUT  | Converts a workbook from request content to the chosen format. | [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) |
+
 The request is an HTTP **PUT** with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
 The first part of the multipart body contains the **data file**, and the second part contains the **save options**.
 
 ### Query Parameters
 
-| Parameter Name            | Type   | Description |
-|---------------------------|--------|-------------|
-| `format`                  | string | Target file format (e.g., CSV, XLS, HTML, PDF, XML, TXT, TIFF, PNG, JPG, GIF, EMF, BMP, MD, Numbers, WMF, SVG, etc.). |
-| `password`                | string | Password required to open the source Excel file. |
-| `outPath`                 | string | Full path (including filename and extension) for a single output file, or a folder path when multiple files are generated. |
-| `storageName`             | string | Name of the storage where the source file resides. |
-| `checkExcelRestriction`  | bool   | When **true**, validates Excel restrictions before modifying cells or related objects. |
-| `streamFormat`            | string | Format of the input file stream. |
-| `region`                  | string | Regional settings applied to the workbook. |
-| `pageWideFitOnPerSheet`   | bool   | Adjusts page width to fit each worksheet when converting to PDF. |
-| `pageTallFitOnPerSheet`   | bool   | Adjusts page height to fit each worksheet when converting to PDF. |
-| `sheetName`               | string | Name of the worksheet to convert. |
-| `pageIndex`               | string | Index of the page to convert (requires `sheetName`). |
-| `onePagePerSheet`         | bool   | When **true**, generates one PDF page per worksheet. |
-| `AutoRowsFit`             | bool   | Auto‑fits all rows in the workbook. |
-| `AutoColumnsFit`          | bool   | Auto‑fits column widths in the workbook. |
+| Parameter Name          | Type   | Description                                                                                                                |
+| ----------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------- |
+| `format`                | string | Target file format (e.g., CSV, XLS, HTML, PDF, XML, TXT, TIFF, PNG, JPG, GIF, EMF, BMP, MD, Numbers, WMF, SVG, etc.).      |
+| `password`              | string | Password required to open the source Excel file.                                                                           |
+| `outPath`               | string | Full path (including filename and extension) for a single output file, or a folder path when multiple files are generated. |
+| `storageName`           | string | Name of the storage where the source file resides.                                                                         |
+| `checkExcelRestriction` | bool   | When **true**, validates Excel restrictions before modifying cells or related objects.                                     |
+| `streamFormat`          | string | Format of the input file stream.                                                                                           |
+| `region`                | string | Regional settings applied to the workbook.                                                                                 |
+| `pageWideFitOnPerSheet` | bool   | Adjusts page width to fit each worksheet when converting to PDF.                                                           |
+| `pageTallFitOnPerSheet` | bool   | Adjusts page height to fit each worksheet when converting to PDF.                                                          |
+| `sheetName`             | string | Name of the worksheet to convert.                                                                                          |
+| `pageIndex`             | string | Index of the page to convert (requires `sheetName`).                                                                       |
+| `onePagePerSheet`       | bool   | When **true**, generates one PDF page per worksheet.                                                                       |
+| `AutoRowsFit`           | bool   | Auto‑fits all rows in the workbook.                                                                                        |
+| `AutoColumnsFit`        | bool   | Auto‑fits column widths in the workbook.                                                                                   |
 
 ### Request Body Parameters
 
-| Parameter Name | Type      | Description |
-|----------------|-----------|-------------|
+| Parameter Name | Type      | Description                                                    |
+| -------------- | --------- | -------------------------------------------------------------- |
 | `datafile`     | data file | The Excel file placed in the first part of the multipart body. |
-| `SaveOptions`  | object    | Save options placed in the second part of the multipart body. |
-
-## REST API
-
-| API                | Type | Description                                            | Swagger Link |
-|--------------------|------|--------------------------------------------------------|--------------|
-| `/cells/convert`   | PUT  | Converts a workbook from request content to the chosen format. | [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) |
+| `SaveOptions`  | object    | Save options placed in the second part of the multipart body.  |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) defines a publicly accessible interface that enables direct REST interactions from a web browser.
 

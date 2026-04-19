@@ -1,30 +1,30 @@
----  
-title: "Add watermark to Excel files"  
-second_title: "Document"  
-linktitle: "Add Watermark to Excel Files"  
-type: docs  
-url: /add-watermark-into-excel-files/  
-aliases: [ /watermark/ ]  
-keywords: "add watermark to Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"  
-description: "Learn how to add a text watermark to Excel workbooks using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, required parameters, and response details."  
-weight: 39  
----  
+---
+title: "Add watermark to Excel files"
+second_title: "Document"
+linktitle: "Add Watermark to Excel Files"
+type: docs
+url: /add-watermark-into-excel-files/
+aliases: [/watermark/]
+keywords: "add watermark to Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Learn how to add a text watermark to Excel workbooks using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, required parameters, and response details."
+weight: 39
+---
 
 This REST API adds a **watermark** to Excel files.
 
-## REST API  
+## REST API
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/watermark
-```  
+```
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                                                 |
-|----------------|--------|------------------------------|-----------------------------------------------------------------------------|
-| `file`         | file   | formData (multipart body)   | The Excel file to which the watermark will be applied.                     |
-| `text`         | string | query                        | The watermark text to display.                                              |
-| `color`        | string | query                        | The watermark colour in ARGB hex format (e.g., `004433ff`).                |
+| Parameter Name | Type   | Location                  | Description                                                 |
+| -------------- | ------ | ------------------------- | ----------------------------------------------------------- |
+| `file`         | file   | formData (multipart body) | The Excel file to which the watermark will be applied.      |
+| `text`         | string | query                     | The watermark text to display.                              |
+| `color`        | string | query                     | The watermark colour in ARGB hex format (e.g., `004433ff`). |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostWatermark) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -61,9 +61,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&c
 
 The JSON response contains a **Files** array. For each file object:
 
-* **Filename** – name of the processed workbook.  
-* **FileSize** – size of the file in bytes.  
-* **FileContent** – Base64‑encoded content of the watermarked Excel file; decode it to obtain the actual file.
+- **Filename** – name of the processed workbook.
+- **FileSize** – size of the file in bytes.
+- **FileContent** – Base64‑encoded content of the watermarked Excel file; decode it to obtain the actual file.
 
 {{< /tab >}}
 

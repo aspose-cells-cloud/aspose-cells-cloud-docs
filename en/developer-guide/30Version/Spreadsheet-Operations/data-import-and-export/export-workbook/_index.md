@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Workbook"
 type: docs
 url: /export-excel-to-different-formats/
-aliases: [ /export/excel-to-different-formats/]
+aliases: [/export/excel-to-different-formats/]
 keywords: "Aspose.Cells Cloud, Excel export, workbook conversion, PDF, CSV, JSON, image formats, spreadsheet API, XLSX, ODS, PNG"
 description: "A step‑by‑step guide on exporting Excel workbooks to multiple formats—including PDF, CSV, JSON, and various image types—using the Aspose.Cells Cloud REST API and SDKs."
 weight: 20
@@ -12,19 +12,19 @@ weight: 20
 
 You can export workbooks to any of the following formats: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
-### REST API
+## REST API
 
-| **API**       | **Method** | **Description**                                            | **Swagger Link** |
-|---------------|------------|------------------------------------------------------------|------------------|
+| **API**       | **Method** | **Description**                                               | **Swagger Link**                                                              |
+| ------------- | ---------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | /cells/export | POST       | Export Excel objects from the request body to a chosen format | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface that allows you to perform REST interactions directly from a web browser.
 
-#### cURL Example
+### cURL Example
 
 You can use the **cURL** command‑line tool to call the Aspose.Cells Cloud service.
 
-**Request**
+### **Request**
 
 ```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=workbook&format=tiff" \
@@ -34,26 +34,26 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=workbook&for
      -d '{"File":{}}'
 ```
 
-**Response**
+### **Response**
 
 ```json
 {
-    "Files": [
-        {
-            "Filename": "Book1_xlsx.tif",
-            "FileSize": 274022,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "myDocument_xlsx.tif",
-            "FileSize": 348126,
-            "FileContent": "-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Book1_xlsx.tif",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx.tif",
+      "FileSize": 348126,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
-### Cloud SDK Family
+## Cloud SDK Family
 
 Using an SDK speeds up development by handling low‑level details so you can focus on business logic. A complete list of Aspose.Cells Cloud SDKs is available in the [GitHub repository](https://github.com/aspose-cells-cloud).
 

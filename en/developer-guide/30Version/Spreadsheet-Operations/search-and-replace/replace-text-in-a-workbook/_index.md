@@ -20,14 +20,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceTex
 
 ### Request parameters
 
-| Parameter Name | Type   | Location | Description                                          |
-|----------------|--------|----------|------------------------------------------------------|
-| name           | string | path     | Name of the workbook file.                           |
-| sheetName      | string | path     | Name of the worksheet where the replacement occurs. |
-| oldValue       | string | query    | Text that should be replaced.                        |
-| newValue       | string | query    | Text that will replace the old value.                |
-| folder         | string | query    | Folder path containing the workbook.                |
-| storageName    | string | query    | Name of the storage service where the workbook resides.|
+| Parameter Name | Type   | Location | Description                                             |
+| -------------- | ------ | -------- | ------------------------------------------------------- |
+| name           | string | path     | Name of the workbook file.                              |
+| sheetName      | string | path     | Name of the worksheet where the replacement occurs.     |
+| oldValue       | string | query    | Text that should be replaced.                           |
+| newValue       | string | query    | Text that will replace the old value.                   |
+| folder         | string | query    | Folder path containing the workbook.                    |
+| storageName    | string | query    | Name of the storage service where the workbook resides. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextReplace) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

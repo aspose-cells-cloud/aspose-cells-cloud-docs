@@ -9,21 +9,17 @@ description: "Use Aspose.Cells Cloud PostTrimContent API to automatically clean 
 weight: 100
 ---
 
-# **Excel API : PostTrimContent**
-
 The **PostTrimContent** API processes and trims content within a specified range in a spreadsheet. It removes extra spaces, line breaks, and other unnecessary characters from the content of selected cells, making it useful for cleaning data entries and ensuring consistent spreadsheet formatting.
 
-## **Interface Details**
+## **Excel Web API : PostTrimContent**
 
-### **Endpoint**
-
-```
+```http
 POST https://api.aspose.cloud/v3.0/cells/trimcontent
 ```
 
 **Authentication** – Include a valid Aspose Cloud access token in the request header:
 
-```
+```http
 Authorization: Bearer <your_access_token>
 ```
 
@@ -33,7 +29,7 @@ Authorization: Bearer <your_access_token>
 {
   "trimContentOptions": {
     "range": "A1:C10",
-    "trimMode": "All",          // Options: All, Leading, Trailing
+    "trimMode": "All", // Options: All, Leading, Trailing
     "ignoreCase": false,
     "preserveFormula": true
   }
@@ -42,16 +38,16 @@ Authorization: Bearer <your_access_token>
 
 ### **Function Description**
 
-- **Efficiency** – Trims content only within the designated range, saving time and resources by avoiding unnecessary operations on the entire worksheet.  
-- **Flexibility** – Allows users to define the exact cell range to be processed, accommodating various data sets and requirements.  
-- **Data Integrity** – Removes extra spaces and line breaks, helping maintain consistent and reliable data for analysis and reporting.  
+- **Efficiency** – Trims content only within the designated range, saving time and resources by avoiding unnecessary operations on the entire worksheet.
+- **Flexibility** – Allows users to define the exact cell range to be processed, accommodating various data sets and requirements.
+- **Data Integrity** – Removes extra spaces and line breaks, helping maintain consistent and reliable data for analysis and reporting.
 - **Ease of Use** – Simple integration with minimal setup, suitable for both developers and end‑users.
 
 ### Request Parameters of **postTrimContent** API
 
-| Parameter Name      | Type  | Location | Description                                   |
-|---------------------|-------|----------|-----------------------------------------------|
-| trimContentOptions  | Class | Body     | Options that specify how the content should be trimmed (e.g., target range, trim mode). |
+| Parameter Name     | Type  | Location | Description                                                                             |
+| ------------------ | ----- | -------- | --------------------------------------------------------------------------------------- |
+| trimContentOptions | Class | Body     | Options that specify how the content should be trimmed (e.g., target range, trim mode). |
 
 ### **Response Description**
 
@@ -65,12 +61,12 @@ Authorization: Bearer <your_access_token>
 
 ### **Error Handling**
 
-| HTTP Status | Code | Description |
-|-------------|------|-------------|
-| 400 | BadRequest | Invalid request parameters or malformed JSON. |
-| 401 | Unauthorized | Missing or invalid authentication token. |
-| 404 | NotFound | Specified workbook or range not found. |
-| 500 | InternalServerError | Unexpected server error. |
+| HTTP Status | Code                | Description                                   |
+| ----------- | ------------------- | --------------------------------------------- |
+| 400         | BadRequest          | Invalid request parameters or malformed JSON. |
+| 401         | Unauthorized        | Missing or invalid authentication token.      |
+| 404         | NotFound            | Specified workbook or range not found.        |
+| 500         | InternalServerError | Unexpected server error.                      |
 
 ## OpenAPI Specification
 

@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Encrypt an Excel file"
 type: docs
 url: /excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/,/workbook/encrypt/]
+aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
 keywords: "encrypt Excel workbook API, Aspose Cells, Excel encryption, REST API, Cloud SDK, cURL, C#, Java, Python, PHP, Ruby, Node.js, Go, Perl"
 description: "Learn how to encrypt an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes cURL command, SDK code samples (C#, Java, Python, …), required parameters, and error handling."
 weight: 20
@@ -12,58 +12,41 @@ weight: 20
 
 This REST API encrypts an Excel **workbook**.
 
-**Prerequisites**
-
-- A valid Aspose Cloud client ID and client secret.  
-- An access token obtained via OAuth 2.0 (see the **Authentication** note below).  
-- The workbook to be encrypted must already exist in your Aspose Cloud storage.  
-- Supported file formats: `.xlsx`, `.xlsb`.
-
-**Authentication**
-
-All requests must include an `Authorization` header containing a bearer token:
-
-```
-Authorization: Bearer <access_token>
-```
-
-Obtain the token by sending a POST request to the Aspose Cloud OAuth endpoint with your client ID and secret. The token is valid for a limited time; refresh it as needed.
-
-**Query Parameters**
-
-| Parameter Name | Type   | Required | Description                              |
-|----------------|--------|----------|------------------------------------------|
-| folder         | string | ✗        | Folder path of the original workbook.   |
-| storageName    | string | ✗        | Name of the storage to use.              |
-
-**Request Body Parameter**
-
-| Parameter Name | Type                     | Required | Description                              |
-|----------------|--------------------------|----------|------------------------------------------|
-| encryption     | WorkbookEncryptionRequest| ✓        | Encryption settings for the workbook.   |
-
-**WorkbookEncryptionRequest**
-
-| Parameter Name | Type   | Required | Description                                                                                              |
-|----------------|--------|----------|----------------------------------------------------------------------------------------------------------|
-| EncryptionType | string | ✓        | Encryption algorithm. See the table below for supported values and their meanings.                       |
-| KeyLength      | integer| ✗        | Length of the encryption key in bits (ignored for `XOR` and `Compatible`).                              |
-| Password       | string | ✓        | Password used for encryption.                                                                            |
-
-**EncryptionType values**
-
-| Value                              | Description                                                |
-|------------------------------------|------------------------------------------------------------|
-| `XOR`                              | Simple XOR algorithm (legacy, low security).              |
-| `Compatible`                       | Excel 97‑2003 compatible encryption (40‑bit).             |
-| `EnhancedCryptographicProviderV1`  | AES‑128 with SHA‑1 hash.                                   |
-| `StrongCryptographicProvider`      | AES‑256 with SHA‑512 hash (strongest).                     |
-
 ## REST API
 
-| **API**                     | **Type** | **Description**          | **Swagger Link** |
-|-----------------------------|----------|--------------------------|------------------|
-| /cells/{name}/encryption    | POST     | Encrypt Excel document   | [PostEncryptDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) |
+| **API**                  | **Type** | **Description**        | **Swagger Link**                                                                              |
+| ------------------------ | -------- | ---------------------- | --------------------------------------------------------------------------------------------- |
+| /cells/{name}/encryption | POST     | Encrypt Excel document | [PostEncryptDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) |
+
+### **Query Parameters**
+
+| Parameter Name | Type   | Required | Description                           |
+| -------------- | ------ | -------- | ------------------------------------- |
+| folder         | string | ✗        | Folder path of the original workbook. |
+| storageName    | string | ✗        | Name of the storage to use.           |
+
+### **Request Body Parameter**
+
+| Parameter Name | Type                      | Required | Description                           |
+| -------------- | ------------------------- | -------- | ------------------------------------- |
+| encryption     | WorkbookEncryptionRequest | ✓        | Encryption settings for the workbook. |
+
+#### **WorkbookEncryptionRequest**
+
+| Parameter Name | Type    | Required | Description                                                                        |
+| -------------- | ------- | -------- | ---------------------------------------------------------------------------------- |
+| EncryptionType | string  | ✓        | Encryption algorithm. See the table below for supported values and their meanings. |
+| KeyLength      | integer | ✗        | Length of the encryption key in bits (ignored for `XOR` and `Compatible`).         |
+| Password       | string  | ✓        | Password used for encryption.                                                      |
+
+#### **EncryptionType values**
+
+| Value                             | Description                                   |
+| --------------------------------- | --------------------------------------------- |
+| `XOR`                             | Simple XOR algorithm (legacy, low security).  |
+| `Compatible`                      | Excel 97‑2003 compatible encryption (40‑bit). |
+| `EnhancedCryptographicProviderV1` | AES‑128 with SHA‑1 hash.                      |
+| `StrongCryptographicProvider`     | AES‑256 with SHA‑512 hash (strongest).        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -88,19 +71,19 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
 
 ```json
 {
-    "Code": "200",
-    "Status": "OK"
+  "Code": "200",
+  "Status": "OK"
 }
 ```
 
 **Possible error responses**
 
-| HTTP Status | Code | Message                           |
-|-------------|------|-----------------------------------|
-| 400         | BadRequest | Missing or invalid parameters. |
-| 401         | Unauthorized | Authentication token is absent or invalid. |
-| 403         | Forbidden | Insufficient permissions to access the storage. |
-| 500         | InternalServerError | Unexpected server error. |
+| HTTP Status | Code                | Message                                         |
+| ----------- | ------------------- | ----------------------------------------------- |
+| 400         | BadRequest          | Missing or invalid parameters.                  |
+| 401         | Unauthorized        | Authentication token is absent or invalid.      |
+| 403         | Forbidden           | Insufficient permissions to access the storage. |
+| 500         | InternalServerError | Unexpected server error.                        |
 
 {{< /tab >}}
 

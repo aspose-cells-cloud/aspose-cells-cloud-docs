@@ -20,12 +20,12 @@ This REST API imports **data** into an Excel file.
 POST https://api.aspose.cloud/v3.0/cells/import
 ```
 
-**The request parameters are:**
+### **The request parameters are:**
 
-| Parameter Name | Type          | Location   | Description                                                                                                                                 |
-|----------------|---------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| file           | file          | formData   | The Excel file to upload.                                                                                                                   |
-| ImportOption   | ImportOptions| JSON body  | JSON object that defines the data to import, its type (e.g., `IntArray`, `DoubleArray`, `StringArray`), and the placement within the worksheet. |
+| Parameter Name | Type          | Location  | Description                                                                                                                                     |
+| -------------- | ------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| file           | file          | formData  | The Excel file to upload.                                                                                                                       |
+| ImportOption   | ImportOptions | JSON body | JSON object that defines the data to import, its type (e.g., `IntArray`, `DoubleArray`, `StringArray`), and the placement within the worksheet. |
 
 The **ImportOption** parameters are described in the **ImportData option reference** [/cells/import/#import-data-option-parameter](/cells/import/#import-data-option-parameter).
 

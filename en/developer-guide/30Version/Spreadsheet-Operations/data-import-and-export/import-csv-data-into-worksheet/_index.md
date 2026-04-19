@@ -28,22 +28,22 @@ The important parameters are described in the tables below.
 
 ### ImportCSVDataOption
 
-| Parameter Name      | Type                                 | Description                                                                 |
-|---------------------|--------------------------------------|-----------------------------------------------------------------------------|
-| SeparatorString     | string                               | Character used to separate fields in the CSV file (e.g., `,` or `;`).      |
-| ConvertNumericData  | string (`true`/`false`)              | Indicates whether numeric strings should be converted to numeric values. |
-| FirstRow            | int                                  | 1‑based index of the first row where the data will be placed.              |
-| FirstColumn         | int                                  | 1‑based index of the first column where the data will be placed.           |
-| SourceFile          | string                               | Name of the source CSV file to be imported.                                 |
-| CustomParsers       | List\<CustomParserConfig\>           | Collection of custom parser configurations for specific columns.          |
+| Parameter Name     | Type                       | Description                                                              |
+| ------------------ | -------------------------- | ------------------------------------------------------------------------ |
+| SeparatorString    | string                     | Character used to separate fields in the CSV file (e.g., `,` or `;`).    |
+| ConvertNumericData | string (`true`/`false`)    | Indicates whether numeric strings should be converted to numeric values. |
+| FirstRow           | int                        | 1‑based index of the first row where the data will be placed.            |
+| FirstColumn        | int                        | 1‑based index of the first column where the data will be placed.         |
+| SourceFile         | string                     | Name of the source CSV file to be imported.                              |
+| CustomParsers      | List\<CustomParserConfig\> | Collection of custom parser configurations for specific columns.         |
 
 ### CustomParserConfig
 
 | Parameter Name | Type   | Description                                                             |
-|----------------|--------|-------------------------------------------------------------------------|
-| ColumnIndex    | int    | Zero‑based index of the column to which the custom parser applies.     |
-| ParseMethod    | string | Parsing method for the column (e.g., `ToString`, `ToDate`, `ToNumber`).|
-| CustomStyle    | string | Custom style (e.g., number format) applied to the parsed cells.        |
+| -------------- | ------ | ----------------------------------------------------------------------- |
+| ColumnIndex    | int    | Zero‑based index of the column to which the custom parser applies.      |
+| ParseMethod    | string | Parsing method for the column (e.g., `ToString`, `ToDate`, `ToNumber`). |
+| CustomStyle    | string | Custom style (e.g., number format) applied to the parsed cells.         |
 
 **Example**
 

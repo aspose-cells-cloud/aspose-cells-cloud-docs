@@ -1,45 +1,36 @@
----  
-title: "Convert Excel to Markdown"  
-second_title: "Document"  
-linktitle: "Excel to Markdown"  
-type: docs  
-url: /convert-excel-file-to-markdown-file/  
-keywords: "Excel, Markdown, conversion, Aspose.Cells Cloud, REST API, excel to markdown conversion, aspose cells markdown api, excel markdown export"  
-description: "Learn how to convert Excel worksheets to Markdown using Aspose.Cells Cloud REST API. Includes curl example, SDK snippets, required parameters and authentication."  
-weight: 100  
----  
+---
+title: "Convert Excel to Markdown"
+second_title: "Document"
+linktitle: "Excel to Markdown"
+type: docs
+url: /convert-excel-file-to-markdown-file/
+keywords: "Excel, Markdown, conversion, Aspose.Cells Cloud, REST API, excel to markdown conversion, aspose cells markdown api, excel markdown export"
+description: "Learn how to convert Excel worksheets to Markdown using Aspose.Cells Cloud REST API. Includes curl example, SDK snippets, required parameters and authentication."
+weight: 100
+---
 
 This REST API converts a spreadsheet file to a Markdown-format file.
 
-### Prerequisites  
+## REST API
 
-- A valid Aspose Cloud account with an API key.  
-- OAuth 2.0 access token (see **Authentication** below).
+| API                     | Type | Description                               | Swagger Link                                                                                                     |
+| ----------------------- | ---- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| /cells/convert/markdown | POST | Convert a spreadsheet to a Markdown file. | [PostConvertWorkbookToMarkdown](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown) |
 
-### Authentication  
+### Parameters
 
-All requests must include an `Authorization` header with a bearer token:
-
-```http
-Authorization: Bearer <access_token>
-```
-
-Obtain the token from the Aspose Cloud OAuth endpoint using your client ID and secret.
-
-### Parameters  
-
-| Parameter Name | Type   | Location | Description                                                                 |
-|----------------|--------|----------|-----------------------------------------------------------------------------|
-| password       | string | query    | Password required to open the Excel file.                                   |
-| storageName    | string | query    | Name of the storage where the file is located.                               |
+| Parameter Name        | Type   | Location | Description                                                                                       |
+| --------------------- | ------ | -------- | ------------------------------------------------------------------------------------------------- |
+| password              | string | query    | Password required to open the Excel file.                                                         |
+| storageName           | string | query    | Name of the storage where the file is located.                                                    |
 | checkExcelRestriction | bool   | query    | Indicates whether to enforce Excel‑specific restrictions when modifying cells or related objects. |
-| datafile       | file   | body     | The Excel file to be uploaded as the first part of the multipart content.   |
+| datafile              | file   | body     | The Excel file to be uploaded as the first part of the multipart content.                         |
 
-### Response  
+### Response
 
 The API returns a JSON object of type **FileInfo**:
 
-- **FileInfo** – object containing the name, size, and base‑64‑encoded content of the generated Markdown file.  
+- **FileInfo** – object containing the name, size, and base‑64‑encoded content of the generated Markdown file.
 
 ```json
 {
@@ -49,19 +40,13 @@ The API returns a JSON object of type **FileInfo**:
 }
 ```
 
-### Error Responses  
+### Error Responses
 
-| HTTP Code | Description                               | Example JSON Body |
-|----------|-------------------------------------------|-------------------|
-| 401      | Unauthorized – missing or invalid token. | `{"error":"Invalid access token."}` |
-| 400      | Bad Request – missing required parameters or invalid file format. | `{"error":"The 'datafile' field is required."}` |
-| 500      | Internal Server Error – unexpected server problem. | `{"error":"An unexpected error occurred."}` |
-
-## REST API Specification  
-
-| API                         | Type | Description                              | Swagger Link |
-|-----------------------------|------|------------------------------------------|--------------|
-| /cells/convert/markdown     | POST | Convert a spreadsheet to a Markdown file.| [PostConvertWorkbookToMarkdown](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown) |
+| HTTP Code | Description                                                       | Example JSON Body                               |
+| --------- | ----------------------------------------------------------------- | ----------------------------------------------- |
+| 401       | Unauthorized – missing or invalid token.                          | `{"error":"Invalid access token."}`             |
+| 400       | Bad Request – missing required parameters or invalid file format. | `{"error":"The 'datafile' field is required."}` |
+| 500       | Internal Server Error – unexpected server problem.                | `{"error":"An unexpected error occurred."}`     |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -95,7 +80,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/markdown" \
 
 {{< /tabs >}}
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -153,8 +138,8 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< /tabs >}}
 
-## Other APIs that Implement This Function  
+## Other APIs that Implement This Function
 
-- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Saves an Excel file as HTML with additional settings and stores the result.  
-- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Converts an Excel file to HTML with extra options and returns the result in the response.  
-- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Retrieves an Excel file and can convert it to HTML with optional settings.  
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Saves an Excel file as HTML with additional settings and stores the result.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Converts an Excel file to HTML with extra options and returns the result in the response.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Retrieves an Excel file and can convert it to HTML with optional settings.

@@ -11,61 +11,27 @@ weight: 100
 
 This REST API converts a spreadsheet file to a JSON‑formatted file.
 
-### Prerequisites
+### REST API
 
-- **API version:** v3.0 (default for Aspose.Cells Cloud).  
-- **Authentication:** OAuth 2.0 bearer token (see the **Authentication** section below).  
-- **Storage:** An Aspose Cloud storage location must exist (e.g., the default storage).  
-- **SDK / Tools:** cURL or any Aspose.Cells Cloud SDK (C#, Java, Python, etc.) of version 23.9 or later.
-
-### Authentication
-
-Obtain an access token by sending a POST request to the Aspose Cloud token endpoint:
-
-```bash
-curl -X POST "https://api.aspose.cloud/connect/token" \
-     -H "Content-Type: application/x-www-form-urlencoded" \
-     -d "grant_type=client_credentials&client_id=<YOUR_CLIENT_ID>&client_secret=<YOUR_CLIENT_SECRET>"
-```
-
-The response contains the token:
-
-```json
-{
-  "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOi...",
-  "expires_in": 3600,
-  "token_type": "Bearer"
-}
-```
-
-Use the token in the `Authorization` header for all subsequent API calls:
-
-```
-Authorization: Bearer <access_token>
-```
-
-### Quick‑Start Steps
-
-1️⃣ **Upload the Excel file** (or reference an existing file in storage).  
-2️⃣ **Call the conversion endpoint** `/cells/convert/json` with `multipart/form-data`.  
-3️⃣ **Receive a `FileInfo` JSON object** containing the converted file content (base64‑encoded).  
-4️⃣ **Decode the `FileContent`** to obtain the final JSON file.
+| **API**             | **Type** | **Description**                       | **Swagger Link**                                                                                         |
+| ------------------- | -------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| /cells/convert/json | POST     | Convert a spreadsheet to a JSON file. | [PostConvertWorkbookToJson](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToJson) |
 
 ### Request
 
 **Query Parameters**
 
-| Parameter Name        | Type   | Description                                                                                     |
-|-----------------------|--------|-------------------------------------------------------------------------------------------------|
-| `password`            | string | Password required to open the Excel file (optional).                                           |
-| `storageName`         | string | Name of the storage where the file is located (optional).                                      |
-| `checkExcelRestriction` | bool   | Enforces Excel‑specific restrictions when modifying cells (optional).                         |
+| Parameter Name          | Type   | Description                                                           |
+| ----------------------- | ------ | --------------------------------------------------------------------- |
+| `password`              | string | Password required to open the Excel file (optional).                  |
+| `storageName`           | string | Name of the storage where the file is located (optional).             |
+| `checkExcelRestriction` | bool   | Enforces Excel‑specific restrictions when modifying cells (optional). |
 
 **Request Body Parameter**
 
-| Parameter Name | Type      | Description                                                                                               |
-|----------------|-----------|-----------------------------------------------------------------------------------------------------------|
-| `datafile`     | file      | The Excel file to be uploaded. Must be sent as the first part of a `multipart/form-data` request.       |
+| Parameter Name | Type | Description                                                                                       |
+| -------------- | ---- | ------------------------------------------------------------------------------------------------- |
+| `datafile`     | file | The Excel file to be uploaded. Must be sent as the first part of a `multipart/form-data` request. |
 
 #### Example cURL Call
 
@@ -81,11 +47,11 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/json" \
 
 The service returns a **FileInfo** object. The important fields are described below:
 
-| Field        | Type   | Description                                                                      |
-|--------------|--------|----------------------------------------------------------------------------------|
-| `Filename`   | string | Name of the generated JSON file (e.g., `myWorkbook.json`).                      |
-| `FileSize`   | integer| Size of the generated file in bytes.                                            |
-| `FileContent`| string | Base64‑encoded content of the JSON file. Decode to retrieve the actual JSON.    |
+| Field         | Type    | Description                                                                  |
+| ------------- | ------- | ---------------------------------------------------------------------------- |
+| `Filename`    | string  | Name of the generated JSON file (e.g., `myWorkbook.json`).                   |
+| `FileSize`    | integer | Size of the generated file in bytes.                                         |
+| `FileContent` | string  | Base64‑encoded content of the JSON file. Decode to retrieve the actual JSON. |
 
 **Example response**
 
@@ -101,22 +67,16 @@ The service returns a **FileInfo** object. The important fields are described be
 
 If the request fails, the API returns an error object with the following structure:
 
-| Field   | Type   | Description                              |
-|---------|--------|------------------------------------------|
-| `Code`  | string | Machine‑readable error identifier.       |
-| `Message`| string | Human‑readable description of the error.|
+| Field     | Type   | Description                              |
+| --------- | ------ | ---------------------------------------- |
+| `Code`    | string | Machine‑readable error identifier.       |
+| `Message` | string | Human‑readable description of the error. |
 
 Common HTTP status codes:
 
-- **400** – Bad request (e.g., missing file, invalid parameters).  
-- **401** – Unauthorized (invalid or missing access token).  
+- **400** – Bad request (e.g., missing file, invalid parameters).
+- **401** – Unauthorized (invalid or missing access token).
 - **500** – Internal server error.
-
-### REST API Specification
-
-| **API**                | **Type** | **Description**                     | **Swagger Link**                                                                                           |
-|------------------------|----------|-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| /cells/convert/json    | POST     | Convert a spreadsheet to a JSON file. | [PostConvertWorkbookToJson](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToJson) |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToJson) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -210,6 +170,6 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 ## Other APIs that implement similar functionality
 
-- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Saves an Excel file as an HTML file with additional settings and stores the result in the specified storage.  
-- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Converts an Excel file to an HTML file with additional settings and returns the result in the response.  
-- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Retrieves an Excel file; can be used with query parameters to obtain the file in HTML format.  
+- **[POST /cells/{name}/saveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)** – Saves an Excel file as an HTML file with additional settings and stores the result in the specified storage.
+- **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Converts an Excel file to an HTML file with additional settings and returns the result in the response.
+- **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Retrieves an Excel file; can be used with query parameters to obtain the file in HTML format.

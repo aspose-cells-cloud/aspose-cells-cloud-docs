@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "List Object"
 type: docs
 url: /export-excel-listobject-to-different-formats/
-aliases: [ /export/excel-listobject-to-different-formats/]
+aliases: [/export/excel-listobject-to-different-formats/]
 keywords: "Export ListObject, Excel ListObject, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, XLSX, ODS, PNG, TIFF, SDKs"
 description: "The Aspose.Cells Cloud REST API enables exporting Excel ListObjects to a wide range of file formats. SDKs are available for many programming languages, including C#, Java, Python, Node.js, Go, PHP, Ruby, Perl, and Swift."
 weight: 20
@@ -12,17 +12,17 @@ weight: 20
 
 You can export the following formats: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
-### REST API
+## REST API
 
-| API | Type | Description | Swagger Link |
-| :- | :- | :- | :- |
+| API           | Type | Description                                      | Swagger Link                                                                  |
+| :------------ | :--- | :----------------------------------------------- | :---------------------------------------------------------------------------- |
 | /cells/export | POST | Export an Excel ListObject to a specified format | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
-#### Request
+### Request
 
 ```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=listobject&format=tiff" \
@@ -32,31 +32,31 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=listobject&f
 -d '{"File":{}}'
 ```
 
-#### Response
+### Response
 
 ```json
 {
-    "Files": [
-        {
-            "Filename": "Book1_xlsx_Sheet1_ListObjects_0.tif",
-            "FileSize": 390,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "Book1_xlsx_Sheet2_ListObjects_0.tif",
-            "FileSize": 10040,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "myDocument_xlsx_Sheet1_ListObjects_0.tif",
-            "FileSize": 382,
-            "FileContent": "-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "Book1_xlsx_Sheet1_ListObjects_0.tif",
+      "FileSize": 390,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "Book1_xlsx_Sheet2_ListObjects_0.tif",
+      "FileSize": 10040,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "myDocument_xlsx_Sheet1_ListObjects_0.tif",
+      "FileSize": 382,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 
-### Cloud SDK Family
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

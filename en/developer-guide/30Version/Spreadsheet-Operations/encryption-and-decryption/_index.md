@@ -10,7 +10,7 @@ description: "Learn how to protect, encrypt, decrypt, and digitally sign Excel w
 weight: 36
 ---
 
-**Protecting and unprotecting Excel files**
+## **Protecting and un-protecting Excel files**
 
 - [How to encrypt an Excel file](/cells/excel-file-encrypt/)
 - [How to protect an Excel file](/cells/protect-excel-file/)

@@ -11,29 +11,29 @@ weight: 90
 
 This REST API converts a spreadsheet file to a DOCX format file.
 
+## REST API
+
+| API                 | Type | Description                           | Swagger Link                                                                                             |
+| ------------------- | ---- | ------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| /cells/convert/docx | POST | Convert a spreadsheet to a DOCX file. | [PostConvertWorkbookToDocx](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToDocx) |
+
 **Query Parameters**
 
-| Parameter Name          | Type   | Description                                                                                     |
-| ----------------------- | ------ | ----------------------------------------------------------------------------------------------- |
-| password                | string | The password required to open the Excel file.                                                   |
-| storageName             | string | The name of the storage where the file is located.                                               |
-| checkExcelRestriction   | bool   | Indicates whether to check restrictions of the Excel file when the user modifies cell‑related objects. |
+| Parameter Name        | Type   | Description                                                                                            |
+| --------------------- | ------ | ------------------------------------------------------------------------------------------------------ |
+| password              | string | The password required to open the Excel file.                                                          |
+| storageName           | string | The name of the storage where the file is located.                                                     |
+| checkExcelRestriction | bool   | Indicates whether to check restrictions of the Excel file when the user modifies cell‑related objects. |
 
 **Request Body Parameter**
 
-| Parameter Name | Type      | Description                                                            |
-| -------------- | --------- | ---------------------------------------------------------------------- |
-| datafile       | data file | The data file saved in the first part of the multipart request body.  |
+| Parameter Name | Type      | Description                                                          |
+| -------------- | --------- | -------------------------------------------------------------------- |
+| datafile       | data file | The data file saved in the first part of the multipart request body. |
 
 **Response**
 
 [FileInfo](/cells/file-info/)
-
-## REST API Specification
-
-| API                     | Type | Description                                 | Swagger Link |
-| ----------------------- | ---- | ------------------------------------------- | ------------ |
-| /cells/convert/docx     | POST | Convert a spreadsheet to a DOCX file.      | [PostConvertWorkbookToDocx](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToDocx) |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToDocx) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

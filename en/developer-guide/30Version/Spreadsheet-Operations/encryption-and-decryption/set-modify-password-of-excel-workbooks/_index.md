@@ -14,12 +14,6 @@ weight: 100
 
 This REST API **changes the write‑protection password** of an existing Excel workbook.
 
-**Quick start**
-
-1. Obtain a JWT token (OAuth 2.0) and include it in the `Authorization: Bearer <token>` header.  
-2. Build a `PUT` request to `https://api.aspose.cloud/v3.0/cells/{name}/writeProtection` with a JSON body that contains the new password.  
-3. Send the request and verify that the response returns `Code: 200` and `Status: OK`.
-
 ## REST API
 
 ```bash
@@ -28,14 +22,16 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 
 ### Request parameters
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| **name**       | string | path     | Name of the Excel workbook (required). |
-| **password**   | string | body (JSON) | New write‑protection password to set (required). |
-| **folder**     | string | query    | Optional folder where the workbook is stored. |
-| **storageName**| string | query    | Optional name of the storage service. |
+| Parameter Name  | Type   | Location    | Description                                      |
+| --------------- | ------ | ----------- | ------------------------------------------------ |
+| **name**        | string | path        | Name of the Excel workbook (required).           |
+| **password**    | string | body (JSON) | New write‑protection password to set (required). |
+| **folder**      | string | query       | Optional folder where the workbook is stored.    |
+| **storageName** | string | query       | Optional name of the storage service.            |
 
-**Authentication** – The API requires an OAuth 2.0 / JWT token. Include the token in the request header:
+### **Authentication**
+
+– The API requires an OAuth 2.0 / JWT token. Include the token in the request header:
 
 ```http
 Authorization: Bearer <jwt token>
@@ -73,15 +69,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtectio
 
 {{< /tabs >}}
 
-**Response codes**
+### **Response codes**
 
-| HTTP Code | Meaning                     | Description |
-|-----------|-----------------------------|-------------|
-| 200       | OK                          | Password changed successfully. |
-| 400       | Bad Request                 | Missing or invalid parameters. |
-| 401       | Unauthorized                | Invalid or missing JWT token. |
-| 404       | Not Found                   | Specified workbook does not exist. |
-| 500       | Internal Server Error       | Unexpected server‑side failure. |
+| HTTP Code | Meaning               | Description                        |
+| --------- | --------------------- | ---------------------------------- |
+| 200       | OK                    | Password changed successfully.     |
+| 400       | Bad Request           | Missing or invalid parameters.     |
+| 401       | Unauthorized          | Invalid or missing JWT token.      |
+| 404       | Not Found             | Specified workbook does not exist. |
+| 500       | Internal Server Error | Unexpected server‑side failure.    |
 
 ## Cloud SDK Family
 

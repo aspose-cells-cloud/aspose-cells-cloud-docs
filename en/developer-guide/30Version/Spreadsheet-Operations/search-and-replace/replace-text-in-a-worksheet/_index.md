@@ -13,22 +13,6 @@ weight: 70
 
 This REST API replaces text in an Excel worksheet using the **Aspose.Cells replace text API**.
 
-## Prerequisites
-
-1. A valid Aspose Cloud client ID and client secret.  
-2. An access token obtained via OAuth/JWT (`https://api.aspose.cloud/connect/token`).  
-3. The workbook must be uploaded to Aspose Cloud storage (or already exist in the specified folder).  
-
-## Authentication
-
-All requests must include the following HTTP header:
-
-```
-Authorization: Bearer {access_token}
-```
-
-Replace `{access_token}` with the token acquired in the prerequisites step. The token should be refreshed before it expires.
-
 ## REST API
 
 ```bash
@@ -37,14 +21,14 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceTe
 
 ### Request Parameters
 
-| Parameter Name | Type   | Location | Description                         |
-|----------------|--------|----------|-------------------------------------|
-| **name**       | string | path     | The name of the Excel workbook.     |
-| **sheetName**  | string | path     | The name of the worksheet.          |
-| **oldValue**   | string | query    | The text to be replaced.            |
-| **newValue**   | string | query    | The replacement text.               |
-| **folder**     | string | query    | The folder that contains the file.  |
-| **storageName**| string | query    | The storage service name.           |
+| Parameter Name  | Type   | Location | Description                        |
+| --------------- | ------ | -------- | ---------------------------------- |
+| **name**        | string | path     | The name of the Excel workbook.    |
+| **sheetName**   | string | path     | The name of the worksheet.         |
+| **oldValue**    | string | query    | The text to be replaced.           |
+| **newValue**    | string | query    | The replacement text.              |
+| **folder**      | string | query    | The folder that contains the file. |
+| **storageName** | string | query    | The storage service name.          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorsheetTextReplace) defines this publicly accessible interface.
 
@@ -86,20 +70,20 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/re
 
 ### Response Details
 
-| Property | Type   | Description |
-|----------|--------|-------------|
-| **Matches** | integer | Number of cells where `oldValue` was replaced. |
-| **Worksheet.link.Href** | string | Relative URL of the affected worksheet. |
-| **Code** | integer | HTTP status code returned by the API (e.g., 200). |
-| **Status** | string | Textual representation of the status (e.g., “OK”). |
+| Property                | Type    | Description                                        |
+| ----------------------- | ------- | -------------------------------------------------- |
+| **Matches**             | integer | Number of cells where `oldValue` was replaced.     |
+| **Worksheet.link.Href** | string  | Relative URL of the affected worksheet.            |
+| **Code**                | integer | HTTP status code returned by the API (e.g., 200).  |
+| **Status**              | string  | Textual representation of the status (e.g., “OK”). |
 
 ### Error Handling
 
-| HTTP Status | Example JSON Payload | Meaning |
-|-------------|----------------------|---------|
-| **400** | `{ "Code": 400, "Message": "Invalid request.", "Description": "The parameter 'oldValue' is missing." }` | Bad request – required parameter missing or malformed. |
-| **401** | `{ "Code": 401, "Message": "Unauthorized.", "Description": "Access token is invalid or expired." }` | Authentication failure – obtain a new token. |
-| **404** | `{ "Code": 404, "Message": "Worksheet not found.", "Description": "The sheetName 'SheetX' does not exist." }` | The specified worksheet could not be located. |
+| HTTP Status | Example JSON Payload                                                                                          | Meaning                                                |
+| ----------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| **400**     | `{ "Code": 400, "Message": "Invalid request.", "Description": "The parameter 'oldValue' is missing." }`       | Bad request – required parameter missing or malformed. |
+| **401**     | `{ "Code": 401, "Message": "Unauthorized.", "Description": "Access token is invalid or expired." }`           | Authentication failure – obtain a new token.           |
+| **404**     | `{ "Code": 404, "Message": "Worksheet not found.", "Description": "The sheetName 'SheetX' does not exist." }` | The specified worksheet could not be located.          |
 
 ## Cloud SDK Family
 

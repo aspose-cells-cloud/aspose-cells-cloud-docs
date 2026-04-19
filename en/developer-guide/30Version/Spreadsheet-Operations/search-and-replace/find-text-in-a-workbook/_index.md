@@ -14,25 +14,17 @@ This REST API searches for text in an Excel workbook.
 
 ## REST API
 
-**Prerequisites** – You need a valid Aspose.Cells Cloud account, the API version **v3.0**, and an OAuth 2.0 bearer token for authentication. The API works with Excel formats such as XLS, XLSX, XLSM, XLSB, and ODS.
-
-**Authentication** – Include the following header in every request:  
-
-```
-Authorization: Bearer <your_access_token>
-```
-
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/findText
 ```
 
 The request accepts the following parameters:
 
-| Parameter Name | Type   | Location | Description |
-|----------------|--------|----------|-------------|
-| name           | string | path     | Name of the Excel workbook. |
-| text           | string | query    | Text string to search for. |
-| folder         | string | query    | Folder that contains the workbook (optional). |
+| Parameter Name | Type   | Location | Description                                                |
+| -------------- | ------ | -------- | ---------------------------------------------------------- |
+| name           | string | path     | Name of the Excel workbook.                                |
+| text           | string | query    | Text string to search for.                                 |
+| folder         | string | query    | Folder that contains the workbook (optional).              |
 | storageName    | string | query    | Name of the storage where the workbook resides (optional). |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksTextSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
@@ -82,21 +74,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/findText?text=a" \
 
 {{< /tabs >}}
 
-**Error handling** – The API may return standard HTTP status codes such as **401 Unauthorized** (invalid or missing token), **404 Not Found** (workbook does not exist), and **500 Internal Server Error** (unexpected server condition). The response body for errors follows the common Aspose.Cells error format.
+### **Error handling**
 
-**Quick FAQ**
-
-- **How do I search for a specific string in an Excel workbook using Aspose.Cells Cloud?**  
-  Send a **POST** request to `https://api.aspose.cloud/v3.0/cells/{workbookName}/findText` with the query parameter `text=<searchString>` and include the `Authorization: Bearer <token>` header. The response contains a `TextItems` collection with each match.
-
-- **What parameters are required for the Find Text API?**  
-  - `name` (path) – workbook name (required)  
-  - `text` (query) – string to locate (required)  
-  - `folder` (query) – workbook folder (optional)  
-  - `storageName` (query) – storage name (optional)
-
-- **What does the API response look like when a match is found?**  
-  The JSON response includes a `Status` field and a `TextItems` object. `TextItems.TextItemList` is an array; each entry provides a `link` object (Href, Rel, Title, Type) and a `Text` field with the matched string.
+– The API may return standard HTTP status codes such as **401 Unauthorized** (invalid or missing token), **404 Not Found** (workbook does not exist), and **500 Internal Server Error** (unexpected server condition). The response body for errors follows the common Aspose.Cells error format.
 
 ## Cloud SDK Family
 

@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Chart"
 type: docs
 url: /export-excel-chart-to-different-formats/
-aliases: [ /export/excel-chart-to-different-formats/]
+aliases: [/export/excel-chart-to-different-formats/]
 description: "Learn how to export Excel chart objects to PNG, JPEG, PDF, SVG, TIFF, EMF, WMF, and other formats using Aspose.Cells Cloud REST API or SDKs. Includes authentication, a cURL example, and code samples for multiple languages."
 keywords: "Aspose.Cells, export chart, Excel chart export, REST API, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK"
 weight: 20
@@ -12,17 +12,17 @@ weight: 20
 
 You can export charts to the following formats: [PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/), and [PDF](https://docs.fileformat.com/pdf/).
 
-- **REST API**
+## **REST API**
 
-| **API** | **Type** | **Description** | **Swagger Link** |
-| :- | :- | :- | :- |
-| /cells/export | POST | Export Excel chart objects to the specified format | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
+| **API**       | **Type** | **Description**                                    | **Swagger Link**                                                              |
+| :------------ | :------- | :------------------------------------------------- | :---------------------------------------------------------------------------- |
+| /cells/export | POST     | Export Excel chart objects to the specified format | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 All requests must include a valid OAuth 2.0 Bearer token in the `Authorization` header. The example below shows how to call the API with **cURL** and upload a workbook using multipart/form‑data.
 
-- **Request**
+### **Request**
 
 ```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format=tiff" \
@@ -33,7 +33,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format
   -F "File=@/path/to/your/workbook.xlsx"
 ```
 
-- **Response**
+### **Response**
 
 ```json
 {
@@ -82,7 +82,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format
 }
 ```
 
-- **Cloud SDK Family**
+## **Cloud SDK Family**
 
 Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

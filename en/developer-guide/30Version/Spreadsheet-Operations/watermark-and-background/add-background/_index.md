@@ -15,41 +15,29 @@ weight: 160
 
 This REST API adds a **background image** to an Excel workbook.
 
-**Prerequisites** – Before calling the endpoint you must:
+## REST API
 
-1. Have a valid Aspose Cloud client ID and client secret.  
-2. Obtain an OAuth 2.0 access token and include it in the `Authorization` header as `Bearer <access_token>`.  
-3. Ensure the picture file referenced by `picPath` exists in the chosen storage location.
+| API                        | Type | Description                             | Resource Link                                                                                     |
+| -------------------------- | ---- | --------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `/cells/{name}/background` | PUT  | Add a background image to an Excel file | [PutWorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) |
 
 ### Query Parameters
 
-| Parameter Name | Type   | Description                                 |
-|----------------|--------|---------------------------------------------|
+| Parameter Name | Type   | Description                                        |
+| -------------- | ------ | -------------------------------------------------- |
 | `picPath`      | string | Path to the picture file to be used as background. |
-| `folder`       | string | Folder that contains the original workbook. |
-| `storageName`  | string | Name of the storage where the file resides. |
+| `folder`       | string | Folder that contains the original workbook.        |
+| `storageName`  | string | Name of the storage where the file resides.        |
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description |
-|----------------|------|-------------|
+| Parameter Name | Type | Description                                                |
+| -------------- | ---- | ---------------------------------------------------------- |
 | `datafile`     | file | The workbook file to which the background will be applied. |
 
 **Path Parameter** – `{name}` in the URL represents the **workbook file name** (e.g., `Book1.xlsx`).
 
-## REST API
-
-| API                               | Type | Description                     | Resource Link |
-|-----------------------------------|------|---------------------------------|---------------|
-| `/cells/{name}/background`        | PUT  | Add a background image to an Excel file | [PutWorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) |
-
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
-
-**Authentication** – Include the OAuth 2.0 token in the request header:
-
-```
-Authorization: Bearer <access_token>
-```
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows a complete request, including the multipart file upload flag and the required authentication header.
 
@@ -82,12 +70,12 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=D
 
 ### Error Responses
 
-| HTTP Status | Code | Message | When it occurs |
-|-------------|------|---------|----------------|
-| 400 | Bad Request | The request is malformed or missing required parameters. |
-| 401 | Unauthorized | Invalid or missing OAuth 2.0 token. |
-| 404 | Not Found | The specified workbook (`{name}`) or picture file does not exist. |
-| 500 | Internal Server Error | An unexpected error occurred on the server side. |
+| HTTP Status | Code                  | Message                                                           | When it occurs |
+| ----------- | --------------------- | ----------------------------------------------------------------- | -------------- |
+| 400         | Bad Request           | The request is malformed or missing required parameters.          |
+| 401         | Unauthorized          | Invalid or missing OAuth 2.0 token.                               |
+| 404         | Not Found             | The specified workbook (`{name}`) or picture file does not exist. |
+| 500         | Internal Server Error | An unexpected error occurred on the server side.                  |
 
 ## Cloud SDK Family
 

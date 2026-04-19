@@ -23,14 +23,14 @@ This REST API imports data into an Excel file.
 POST http://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
-The request parameters are:
+### The request parameters are
 
-| Parameter Name | Type   | Location                     | Description                                                |
-|----------------|--------|------------------------------|------------------------------------------------------------|
-| name           | string | path                         | The name of the Excel file.                                |
-| folder         | string | query                        | The folder path in the storage where the file resides.    |
-| storageName    | string | query                        | The name of the storage service.                           |
-| importData     | object | body                         | JSON object that contains the data to be imported.        |
+| Parameter Name | Type   | Location | Description                                            |
+| -------------- | ------ | -------- | ------------------------------------------------------ |
+| name           | string | path     | The name of the Excel file.                            |
+| folder         | string | query    | The folder path in the storage where the file resides. |
+| storageName    | string | query    | The name of the storage service.                       |
+| importData     | object | body     | JSON object that contains the data to be imported.     |
 
 **The import‑data options parameters** are described in [the reference link](/cells/import/#import-data-option-parameter).
 
@@ -65,5 +65,3 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata" \
 {{< /tab >}}
 
 {{< /tabs >}}
-
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

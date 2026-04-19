@@ -4,7 +4,12 @@ second_title: "Document"
 linktitle: "Names"
 type: docs
 url: /get-names-from-an-excel-file/
-aliases: [/get-names-count-from-excel-workbooks/,/workbook/names/,/workbook/get/names/]
+aliases:
+  [
+    /get-names-count-from-excel-workbooks/,
+    /workbook/names/,
+    /workbook/get/names/,
+  ]
 keywords: "Aspose.Cells Cloud, Get Workbook Names, Excel workbook names, REST API, Cloud SDK"
 description: "Retrieve all defined names from an Excel workbook using the Aspose.Cells Cloud REST API. Includes authentication guidance, cURL example, response schema, error handling, and SDK samples."
 weight: 120
@@ -20,11 +25,11 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/names
 
 The request parameters are:
 
-| Parameter Name | Type   | Location | Description                              |
-|----------------|--------|----------|------------------------------------------|
-| name           | string | path     | The workbook file name.                  |
-| folder         | string | query    | The folder that contains the workbook.   |
-| storageName    | string | query    | The name of the storage to use.          |
+| Parameter Name | Type   | Location | Description                            |
+| -------------- | ------ | -------- | -------------------------------------- |
+| name           | string | path     | The workbook file name.                |
+| folder         | string | query    | The folder that contains the workbook. |
+| storageName    | string | query    | The name of the storage to use.        |
 
 **Authentication** – The API requires an OAuth2/JWT bearer token. Obtain a token from `https://api.aspose.cloud/connect/token` using your client‑id and client‑secret, then include the header `Authorization: Bearer <jwt token>` in every request.
 
@@ -73,20 +78,20 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/names" \
 }
 ```
 
-*Response fields*  
+_Response fields_
 
-- **Status** *(string)* – Operation status message.  
-- **Names.link** *(object)* – Hyperlink information for the collection.  
-- **Names.Count** *(integer)* – Total number of defined names returned.  
-- **Names.NameList** *(array)* – List of name objects; each object contains a **link** object with navigation details.
+- **Status** _(string)_ – Operation status message.
+- **Names.link** _(object)_ – Hyperlink information for the collection.
+- **Names.Count** _(integer)_ – Total number of defined names returned.
+- **Names.NameList** _(array)_ – List of name objects; each object contains a **link** object with navigation details.
 
-**Error handling** – The service may return the following HTTP status codes:  
+**Error handling** – The service may return the following HTTP status codes:
 
-| Code | Meaning                     | Recommended action                              |
-|------|-----------------------------|-------------------------------------------------|
-| 401  | Unauthorized                | Verify that a valid JWT token is supplied.      |
-| 404  | Not Found                   | Check that the workbook name, folder, and storage are correct. |
-| 500  | Internal Server Error       | Retry later or contact Aspose support if the problem persists. |
+| Code | Meaning               | Recommended action                                             |
+| ---- | --------------------- | -------------------------------------------------------------- |
+| 401  | Unauthorized          | Verify that a valid JWT token is supplied.                     |
+| 404  | Not Found             | Check that the workbook name, folder, and storage are correct. |
+| 500  | Internal Server Error | Retry later or contact Aspose support if the problem persists. |
 
 {{< /tab >}}
 

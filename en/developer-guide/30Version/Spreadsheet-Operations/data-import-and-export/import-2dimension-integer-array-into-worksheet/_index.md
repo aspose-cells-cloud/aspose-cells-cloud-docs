@@ -4,7 +4,13 @@ second_title: "Document"
 linktitle: "Import 2 dimension integer array"
 type: docs
 url: /import-a-2D-integer-array-into-excel-worksheet/
-aliases: [/import-2dimension-integer-array-into-excel-worksheet/,/import-2dimension-integer-array-into-worksheet/, /import-data/2dimension-integer-array/, /import/2dimension-integer-array/]
+aliases:
+  [
+    /import-2dimension-integer-array-into-excel-worksheet/,
+    /import-2dimension-integer-array-into-worksheet/,
+    /import-data/2dimension-integer-array/,
+    /import/2dimension-integer-array/,
+  ]
 keywords: "Aspose.Cells Cloud, import 2D integer array, Excel worksheet, REST API, SDK, Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
 description: "Aspose.Cells Cloud REST API enables importing two‑dimensional integer arrays into Excel worksheets. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 20
@@ -23,30 +29,30 @@ POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
-**Import2DimensionIntegerArrayOption**
+### **Import2DimensionIntegerArrayOption**
 
-| Parameter Name          | Type            | Description                                                                                                   |
-|-------------------------|-----------------|---------------------------------------------------------------------------------------------------------------|
-| FirstRow                | int             | The 1‑based index of the first row where the data will be placed.                                            |
-| FirstColumn             | int             | The 1‑based index of the first column where the data will be placed.                                         |
-| Data                    | Integer[,]      | Two‑dimensional integer array containing the values to import.                                               |
-| DestinationWorksheet    | string          | Name of the destination worksheet.                                                                            |
-| IsInsert                | string          | `"true"` to insert the data (shifting existing cells), `"false"` to overwrite existing cells.                |
-| ImportDataType          | string          | Specifies the data format. Supported values: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
-| Source                  | FileSource      | Indicates the data file location when the `BatchData` parameter is `null`.                                   |
+| Parameter Name       | Type       | Description                                                                                                                                                                                  |
+| -------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| FirstRow             | int        | The 1‑based index of the first row where the data will be placed.                                                                                                                            |
+| FirstColumn          | int        | The 1‑based index of the first column where the data will be placed.                                                                                                                         |
+| Data                 | Integer[,] | Two‑dimensional integer array containing the values to import.                                                                                                                               |
+| DestinationWorksheet | string     | Name of the destination worksheet.                                                                                                                                                           |
+| IsInsert             | string     | `"true"` to insert the data (shifting existing cells), `"false"` to overwrite existing cells.                                                                                                |
+| ImportDataType       | string     | Specifies the data format. Supported values: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
+| Source               | FileSource | Indicates the data file location when the `BatchData` parameter is `null`.                                                                                                                   |
 
-**Example**
+### **Example**
 
 ```json
 {
-    "Data": [
-        [1, 2],
-        [3, 4]
-    ],
-    "DestinationWorksheet": "Sheet2",
-    "FirstRow": 4,
-    "FirstColumn": 1,
-    "ImportDataType": "TwoDimensionIntArray"
+  "Data": [
+    [1, 2],
+    [3, 4]
+  ],
+  "DestinationWorksheet": "Sheet2",
+  "FirstRow": 4,
+  "FirstColumn": 1,
+  "ImportDataType": "TwoDimensionIntArray"
 }
 ```
 

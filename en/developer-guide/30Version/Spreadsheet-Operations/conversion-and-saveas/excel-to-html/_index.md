@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Excel to HTML"
 type: docs
 url: /convert-excel-file-to-html-file/
-aliases: [/convert-excel-file-to-html-in-cloud/,/convert/excel-to-html/]
+aliases: [/convert-excel-file-to-html-in-cloud/, /convert/excel-to-html/]
 keywords: "Excel, HTML, Aspose.Cells, Cloud API, spreadsheet conversion, REST, SDK"
 description: "Use Aspose.Cells Cloud REST API to convert Excel workbooks to HTML. Includes cURL example, SDK code samples, and a detailed response schema."
 weight: 100
@@ -12,60 +12,46 @@ weight: 100
 
 This REST API converts a spreadsheet file to an HTML‑format file.
 
-### Prerequisites
-- An active Aspose.Cloud account with a valid **access token** (OAuth 2.0).  
-- API version **v3.0** (released Oct 2023).  
-- Sufficient storage space in the selected storage (default is **First Storage**).  
-- File size must not exceed the service limit (typically 200 MB).
+## REST API
 
-### Authentication
-All requests must contain the **Authorization** header:
+| **API**             | **Type** | **Description**                        | **Swagger Link**                                                                                         |
+| ------------------- | -------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| /cells/convert/html | POST     | Convert a spreadsheet to an HTML file. | [PostConvertWorkbookToHtml](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToHtml) |
 
-```http
-Authorization: Bearer <access-token>
-```
+### Query Parameters
 
-Obtain the token from the OAuth 2.0 endpoint `/connect/token`. Include the header in every cURL call (or SDK request) as shown in the example below.
+| Parameter Name        | Type   | Description                                                              |
+| --------------------- | ------ | ------------------------------------------------------------------------ |
+| password              | string | The password required to open the Excel file.                            |
+| storageName           | string | The name of the storage where the file is located.                       |
+| checkExcelRestriction | bool   | Indicates whether to check Excel file restrictions when modifying cells. |
 
-## Query Parameters
+### Request Body Parameter
 
-| Parameter Name        | Type   | Description                                                                      |
-|-----------------------|--------|----------------------------------------------------------------------------------|
-| password              | string | The password required to open the Excel file.                                   |
-| storageName           | string | The name of the storage where the file is located.                               |
-| checkExcelRestriction| bool   | Indicates whether to check Excel file restrictions when modifying cells.       |
-
-## Request Body Parameter
-
-| Parameter Name | Type | Description                                                                          |
-|----------------|------|--------------------------------------------------------------------------------------|
+| Parameter Name | Type | Description                                                                                |
+| -------------- | ---- | ------------------------------------------------------------------------------------------ |
 | **File**       | file | The spreadsheet file to be converted, supplied as the first part of the multipart request. |
 
-## Response
+### Response
 
 The API returns a **FileInfo** object that contains the generated HTML file.
 
-| Field        | Type   | Description                                            |
-|--------------|--------|--------------------------------------------------------|
-| **Filename** | string | Name of the HTML file (e.g., `example.html`).         |
-| **FileSize** | int    | Size of the file in bytes.                             |
-| **FileContent** | string | Base64‑encoded content of the HTML file.               |
+| Field           | Type   | Description                                   |
+| --------------- | ------ | --------------------------------------------- |
+| **Filename**    | string | Name of the HTML file (e.g., `example.html`). |
+| **FileSize**    | int    | Size of the file in bytes.                    |
+| **FileContent** | string | Base64‑encoded content of the HTML file.      |
 
 [FileInfo](/cells/file-info/)
 
 ### Error Responses
-| HTTP Status | Description                                 | Error Model |
-|-------------|---------------------------------------------|-------------|
-| 400         | Bad request – missing file or invalid parameters. | `Error` (`Code`, `Message`) |
-| 401         | Unauthorized – invalid or missing access token. | `Error` |
-| 404         | File not found – the specified file does not exist in storage. | `Error` |
-| 500         | Internal server error – unexpected failure on the server side. | `Error` |
 
-## REST API Specification
-
-| **API**                | **Type** | **Description**                     | **Swagger Link**                                                                 |
-|------------------------|----------|-------------------------------------|---------------------------------------------------------------------------------|
-| /cells/convert/html    | POST     | Convert a spreadsheet to an HTML file. | [PostConvertWorkbookToHtml](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToHtml) |
+| HTTP Status | Description                                                    | Error Model                 |
+| ----------- | -------------------------------------------------------------- | --------------------------- |
+| 400         | Bad request – missing file or invalid parameters.              | `Error` (`Code`, `Message`) |
+| 401         | Unauthorized – invalid or missing access token.                | `Error`                     |
+| 404         | File not found – the specified file does not exist in storage. | `Error`                     |
+| 500         | Internal server error – unexpected failure on the server side. | `Error`                     |
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToHtml) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

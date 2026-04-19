@@ -1,27 +1,19 @@
----  
-title: "Calculate All Formulas on an Excel Workbook"  
-second_title: "Document"  
-linktitle: "Calculate"  
-type: docs  
-url: /calculate-all-formulas-on-an-excel-file/  
-aliases: [/calculate-all-formulas-in-a-workbook/,/workbook/calculate-all-formulas/]  
-keywords: "Aspose.Cells, calculate formulas, Excel workbook, REST API, cloud SDK"  
-description: "Learn how to calculate every formula in an Excel workbook using the Aspose.Cells Cloud REST API. Includes cURL example, request parameters, detailed response schema, prerequisites, error‑handling guidance, and inline SDK code samples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."  
-weight: 140  
----  
+---
+title: "Calculate All Formulas on an Excel Workbook"
+second_title: "Document"
+linktitle: "Calculate"
+type: docs
+url: /calculate-all-formulas-on-an-excel-file/
+aliases:
+  [/calculate-all-formulas-in-a-workbook/, /workbook/calculate-all-formulas/]
+keywords: "Aspose.Cells, calculate formulas, Excel workbook, REST API, cloud SDK"
+description: "Learn how to calculate every formula in an Excel workbook using the Aspose.Cells Cloud REST API. Includes cURL example, request parameters, detailed response schema, prerequisites, error‑handling guidance, and inline SDK code samples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
+weight: 140
+---
 
 This REST API calculates **all formulas** in an Excel workbook.
 
-### Prerequisites  
-
-Before calling the endpoint, ensure you have completed the following steps:
-
-- **Aspose Cloud account** – sign up and obtain your *Client Id* and *Client Secret*.  
-- **JWT token** – generate an access token using the authentication API.  
-- **Workbook upload** – upload the target Excel file to the desired storage location (default storage is used if none is specified).  
-- **Correct permissions** – the token must have permission to read and write the specified storage.
-
-## REST API  
+## REST API
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/calculateformula
@@ -29,13 +21,13 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/calculateformula
 
 The request parameters are listed below:
 
-| Parameter Name | Type               | Location | Description                                                                                     |
-|----------------|--------------------|----------|-------------------------------------------------------------------------------------------------|
-| **name**       | string             | path     | Name of the workbook file.                                                                      |
-| **options**    | CalculationOptions | body     | JSON object that specifies calculation settings (e.g., `CalcStackSize`, `IgnoreError`).       |
-| **ignoreError**| boolean            | query    | When `true`, errors encountered during calculation are ignored.                                |
-| **folder**     | string             | query    | Path to the folder that contains the workbook.                                                  |
-| **storageName**| string             | query    | Name of the storage service where the workbook is stored.                                      |
+| Parameter Name  | Type               | Location | Description                                                                             |
+| --------------- | ------------------ | -------- | --------------------------------------------------------------------------------------- |
+| **name**        | string             | path     | Name of the workbook file.                                                              |
+| **options**     | CalculationOptions | body     | JSON object that specifies calculation settings (e.g., `CalcStackSize`, `IgnoreError`). |
+| **ignoreError** | boolean            | query    | When `true`, errors encountered during calculation are ignored.                         |
+| **folder**      | string             | query    | Path to the folder that contains the workbook.                                          |
+| **storageName** | string             | query    | Name of the storage service where the workbook is stored.                               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookCalculateFormula) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -76,26 +68,26 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/calculateformula?ignoreE
 
 {{< /tabs >}}
 
-#### Response Details  
+#### Response Details
 
-| Field          | Type   | Description                                                                                     |
-|----------------|--------|-------------------------------------------------------------------------------------------------|
-| **Code**       | int    | HTTP‑like status code (200 indicates success).                                                  |
-| **Status**     | string | Short textual description of the result (e.g., `OK`).                                         |
-| **WorkbookUrl**| string | Direct URL from which the updated workbook can be downloaded.                                   |
-| **ErrorMessage**| string| Detailed error information when the request fails; `null` on success.                         |
+| Field            | Type   | Description                                                           |
+| ---------------- | ------ | --------------------------------------------------------------------- |
+| **Code**         | int    | HTTP‑like status code (200 indicates success).                        |
+| **Status**       | string | Short textual description of the result (e.g., `OK`).                 |
+| **WorkbookUrl**  | string | Direct URL from which the updated workbook can be downloaded.         |
+| **ErrorMessage** | string | Detailed error information when the request fails; `null` on success. |
 
-#### Next Steps / Common Errors  
+#### Next Steps / Common Errors
 
-- **Handle calculation errors** – set `ignoreError=false` to receive an error response when a formula cannot be evaluated.  
-- **Rate‑limit awareness** – check the `X-RateLimit-Remaining` header; if it reaches `0`, back‑off before retrying.  
-- **HTTP status guidance**:  
-  - `400` – Invalid request parameters.  
-  - `401` – Authentication failed (invalid or expired JWT).  
-  - `404` – Workbook not found.  
-  - `500` – Server‑side error; contact Aspose support if it persists.  
+- **Handle calculation errors** – set `ignoreError=false` to receive an error response when a formula cannot be evaluated.
+- **Rate‑limit awareness** – check the `X-RateLimit-Remaining` header; if it reaches `0`, back‑off before retrying.
+- **HTTP status guidance**:
+  - `400` – Invalid request parameters.
+  - `401` – Authentication failed (invalid or expired JWT).
+  - `404` – Workbook not found.
+  - `500` – Server‑side error; contact Aspose support if it persists.
 
-## Cloud SDK Family  
+## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -196,19 +188,23 @@ puts "Status: #{response.status}"
 {{< tab tabNum="5" >}}
 
 ```javascript
-const { CellsApi, PostWorkbookCalculateFormulaRequest, CalculationOptions } = require('asposecellscloud');
+const {
+  CellsApi,
+  PostWorkbookCalculateFormulaRequest,
+  CalculationOptions,
+} = require("asposecellscloud");
 
 const api = new CellsApi("<clientId>", "<clientSecret>");
 const options = new CalculationOptions({ CalcStackSize: 1, IgnoreError: true });
 
 const request = new PostWorkbookCalculateFormulaRequest({
-    name: "Book1.xlsx",
-    ignoreError: true,
-    options: options
+  name: "Book1.xlsx",
+  ignoreError: true,
+  options: options,
 });
 
-api.postWorkbookCalculateFormula(request).then(response => {
-    console.log(`Status: ${response.status}`);
+api.postWorkbookCalculateFormula(request).then((response) => {
+  console.log(`Status: ${response.status}`);
 });
 ```
 

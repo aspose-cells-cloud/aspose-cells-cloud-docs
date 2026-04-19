@@ -4,7 +4,13 @@ second_title: "Document"
 linktitle: "Import 2‑dimension double array"
 type: docs
 url: /import-a-2D-double-array-into-excel-worksheet/
-aliases: [/import-2dimension-double-array-into-excel-worksheet/,/import-2dimension-double-array-into-worksheet/, /import-data/2dimension-double-array/, /import/2dimension-double-array/]
+aliases:
+  [
+    /import-2dimension-double-array-into-excel-worksheet/,
+    /import-2dimension-double-array-into-worksheet/,
+    /import-data/2dimension-double-array/,
+    /import/2dimension-double-array/,
+  ]
 keywords: "Import 2‑Dimension Double Array, Excel, Aspose Cells Cloud, REST API, Spreadsheet, Data Import"
 description: "Learn how to import a two‑dimensional double array into an Excel worksheet using Aspose.Cells Cloud REST API. Includes request format, parameters, and SDK code samples."
 weight: 20
@@ -25,28 +31,28 @@ The important parameters are described in the following table:
 
 ### Import2DimensionDoubleArrayOption
 
-| Parameter Name          | Type          | Description |
-|-------------------------|---------------|-------------|
-| **FirstRow**            | `int`         | Row index (1‑based) where the import starts. |
-| **FirstColumn**         | `int`         | Column index (1‑based) where the import starts. |
-| **Data**                | `Double[,]`   | Two‑dimensional array of double values to be imported. |
-| **DestinationWorksheet**| `string`      | Name of the worksheet that will receive the data. |
-| **IsInsert**            | `string`      | `"true"` to insert rows, `"false"` to overwrite existing cells. |
-| **ImportDataType**      | `string`      | Type of data being imported (e.g., `IntArray`, `DoubleArray`, `TwoDimensionDoubleArray`, `BatchData`, `csvData`, etc.). |
-| **Source**              | `FileSource`  | Indicates the data file location when the `BatchData` parameter is null. |
+| Parameter Name           | Type         | Description                                                                                                             |
+| ------------------------ | ------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| **FirstRow**             | `int`        | Row index (1‑based) where the import starts.                                                                            |
+| **FirstColumn**          | `int`        | Column index (1‑based) where the import starts.                                                                         |
+| **Data**                 | `Double[,]`  | Two‑dimensional array of double values to be imported.                                                                  |
+| **DestinationWorksheet** | `string`     | Name of the worksheet that will receive the data.                                                                       |
+| **IsInsert**             | `string`     | `"true"` to insert rows, `"false"` to overwrite existing cells.                                                         |
+| **ImportDataType**       | `string`     | Type of data being imported (e.g., `IntArray`, `DoubleArray`, `TwoDimensionDoubleArray`, `BatchData`, `csvData`, etc.). |
+| **Source**               | `FileSource` | Indicates the data file location when the `BatchData` parameter is null.                                                |
 
 **Example**
 
 ```json
 {
-    "Data": [
-        [1.0, 2.9, 3.1],
-        [2.0, 2.1, 3.1]
-    ],
-    "DestinationWorksheet": "Sheet2",
-    "FirstRow": 4,
-    "FirstColumn": 1,
-    "importDataType": "TwoDimensionDoubleArray"
+  "Data": [
+    [1.0, 2.9, 3.1],
+    [2.0, 2.1, 3.1]
+  ],
+  "DestinationWorksheet": "Sheet2",
+  "FirstRow": 4,
+  "FirstColumn": 1,
+  "importDataType": "TwoDimensionDoubleArray"
 }
 ```
 

@@ -18,15 +18,15 @@ This REST API searches for text in an Excel worksheet.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/findText
 ```
 
-The request parameters are:
+### The request parameters are
 
-| Parameter Name | Type   | Location  | Description          |
-|----------------|--------|-----------|----------------------|
-| name           | string | path      | Document name.       |
-| sheetName      | string | path      | Worksheet name.      |
-| text           | string | query     | Text to search.      |
-| folder         | string | query     | Document's folder.   |
-| storageName    | string | query     | Storage name.        |
+| Parameter Name | Type   | Location | Description        |
+| -------------- | ------ | -------- | ------------------ |
+| name           | string | path     | Document name.     |
+| sheetName      | string | path     | Worksheet name.    |
+| text           | string | query    | Text to search.    |
+| folder         | string | query    | Document's folder. |
+| storageName    | string | query    | Storage name.      |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextSearch) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 

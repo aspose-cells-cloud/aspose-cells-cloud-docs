@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Unlock Excel Files"
 type: docs
 url: /unlock-excel-files/
-aliases: [/unlock/without-storage/,/unlock/,/unlock/without-using-storage/]
+aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
 keywords: "Unlock Excel, Aspose.Cells Cloud, REST API, Excel unlocking, password-protected workbook, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
 description: "The Aspose.Cells Cloud REST API provides an endpoint to unlock password‑protected Excel files. SDKs are available for multiple programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 70
@@ -18,12 +18,12 @@ This REST API unlocks Excel files.
 POST http://api.aspose.cloud/v3.0/cells/unlock
 ```
 
-The request parameters are:
+### The request parameters are
 
-| Parameter Name | Type   | Location                     | Description                                 |
-|----------------|--------|------------------------------|---------------------------------------------|
-| file           | file   | formData (HTTP body)         | File to upload                              |
-| password       | string | query string                 | Password to unlock the file (if protected) |
+| Parameter Name | Type   | Location             | Description                                |
+| -------------- | ------ | -------------------- | ------------------------------------------ |
+| file           | file   | formData (HTTP body) | File to upload                             |
+| password       | string | query string         | Password to unlock the file (if protected) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostUnlock) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -49,18 +49,18 @@ curl -v "http://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
 
 ```json
 {
-    "Files": [
-        {
-            "Filename": "xxxxx",
-            "FileSize": 274022,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "xxxxx",
-            "FileSize": 274022,
-            "FileContent": "-----Base64String--------"
-        }
-    ]
+  "Files": [
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    },
+    {
+      "Filename": "xxxxx",
+      "FileSize": 274022,
+      "FileContent": "-----Base64String--------"
+    }
+  ]
 }
 ```
 

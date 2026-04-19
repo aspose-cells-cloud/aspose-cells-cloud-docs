@@ -42,9 +42,24 @@ Aspose.Cells Cloud provides a comprehensive set of REST endpoints for managing E
   "breadcrumb": {
     "@type": "ItemList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.aspose.cloud/" },
-      { "@type": "ListItem", "position": 2, "name": "Cells", "item": "https://docs.aspose.cloud/cells/" },
-      { "@type": "ListItem", "position": 3, "name": "Workbook Operations", "item": "https://docs.aspose.cloud/cells/workbook/" }
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://docs.aspose.cloud/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Cells",
+        "item": "https://docs.aspose.cloud/cells/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Workbook Operations",
+        "item": "https://docs.aspose.cloud/cells/workbook/"
+      }
     ]
   },
   "datePublished": "2026-03-30",

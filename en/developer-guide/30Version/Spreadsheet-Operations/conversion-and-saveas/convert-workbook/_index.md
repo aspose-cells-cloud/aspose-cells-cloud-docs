@@ -11,22 +11,22 @@ weight: 10
 
 This REST API converts an Excel file to a different format. It supports a wide range of output formats and allows you to set page‑setup and save options before conversion.
 
+## REST API
+
+| API            | Type | Description                                                         | Swagger Link                                                                                  |
+| -------------- | ---- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| /cells/convert | POST | Converts a workbook from the request content to a specified format. | [PostConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook) |
+
 **Request Body Parameter**
 
-| Parameter Name | Type   | Description                     |
-|----------------|--------|---------------------------------|
+| Parameter Name                                                                          | Type   | Description                          |
+| --------------------------------------------------------------------------------------- | ------ | ------------------------------------ |
 | `ConvertWorkbookOptions`<br/>[ConvertWorkbookOptions](/cells/convert-workbook-options/) | object | Options for converting the workbook. |
 
 **Response**
 
 `FileInfo` – details of the generated file.  
 [FileInfo](/cells/file-info/)
-
-## REST API
-
-| API            | Type | Description                                                | Swagger Link |
-|----------------|------|------------------------------------------------------------|--------------|
-| /cells/convert | POST | Converts a workbook from the request content to a specified format. | [PostConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
