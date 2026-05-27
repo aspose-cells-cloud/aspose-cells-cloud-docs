@@ -1,19 +1,19 @@
 ---
-title: "Aspose.Cells Cloud API – Update Chart Value Axis (POST /valueaxis)"
+title: "Aspose.Cells Cloud API – Update Chart Value Axis for Excel (POST /valueaxis)"
 type: docs
 url: /charts/value-axis/update/
 weight: 160
 keywords:
   - Aspose.Cells Cloud
   - Update Chart Value Axis
-  - REST API
   - Excel chart axis
+  - REST API
   - POST valueaxis
   - cURL example
   - SDK
   - JSON payload
   - chart axis settings
-description: "Learn how to update the value axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, request‑body schema, sample cURL/JSON payload, and error‑response details."
+description: "Learn how to update the value axis of an Excel chart using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, request‑body schema, sample cURL/JSON payload, and error‑response details."
 ---
 
 This REST API updates the chart value axis.
@@ -49,7 +49,7 @@ The **axis** object may contain any of the following properties:
 - `tickMark` (string) – Style of tick marks (e.g., `"inside"`).
 - `crossAt` (number) – Position where the axis crosses the perpendicular axis.
 
-Only the properties you need to change have to be included in the JSON payload.
+Only the properties you need to change need to be included in the JSON payload.
 
 ### Sample Request Body
 
