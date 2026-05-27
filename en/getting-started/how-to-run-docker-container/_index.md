@@ -1,12 +1,12 @@
 ---
-title: "Run Aspose.Cells Cloud Docker Container – Pull, Configure & Start"
+title: "Run Aspose.Cells Cloud Docker Container – Pull Image, Configure Settings & Start"
 second_title: "Document"
-ArticleTitle: "How to Run Aspose.Cells Cloud Docker Container"
+ArticleTitle: "How to Pull, Configure, and Run Aspose.Cells Cloud Docker Container"
 LinkTitle: "Docker Container"
 type: docs
 url: /getting-started/how-to-run-docker-container/
 aliases: [/how-to-run-docker-container/]
-description: "Learn how to pull, configure, and run the Aspose.Cells Cloud Docker container on Windows or Linux. Includes Docker‑Compose YAML, license setup, port mapping, and troubleshooting tips."
+description: "Step‑by‑step guide to pull, configure, and run the Aspose.Cells Cloud Docker container on Windows or Linux, with licensing and health‑check tips."
 weight: 100
 keywords:
   - "Aspose.Cells Cloud Docker"
@@ -42,7 +42,7 @@ The Aspose.Cells Cloud team has published the Docker container on [Docker Hub](h
 | LicensePublicKey | Public key of the license |
 | LicensePrivateKey | Private key of the license |
 
-If the **License** parameters are omitted, the app runs in trial mode.
+If the **License** parameters are omitted, the container runs in trial mode.
 
 ### 1. Pull Aspose.Cells Cloud Image
 
@@ -72,7 +72,7 @@ AsposeCellsCloud:
   ports: ["5000:80"]   # host 5000 → container 80
   volumes:
     - "C:/Windows/Fonts:C:/Windows/Fonts"
-    - "c:/data:c:/data"
+    - "C:/data:C:/data"
   environment:
     LicensePublicKey: "yourPublicKey"
     LicensePrivateKey: "yourPrivateKey"
@@ -86,7 +86,7 @@ AsposeCellsCloud:
 docker run \
   -e "LicensePublicKey=yourPublicKey" \
   -e "LicensePrivateKey=yourPrivateKey" \
-  -v c:/data:c:/data \
+  -v C:/data:C:/data \
   -v C:/Windows/Fonts:C:/Windows/Fonts \
   -p 5000:80 \
   aspose/cells-cloud:25.9.0
