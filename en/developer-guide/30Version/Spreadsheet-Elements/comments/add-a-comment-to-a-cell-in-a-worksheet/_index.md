@@ -1,14 +1,14 @@
 ---
-title: "Add Worksheet Comment"
+title: "Add Worksheet Comment – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /comments/add/
 aliases: [/add-a-comment-to-a-cell-in-a-worksheet/]
-keywords: "Aspose.Cells Cloud API, Add Worksheet Comment, REST API, Excel, Spreadsheet, Cell Comment"
-description: "Adds a comment to a specific cell in a worksheet using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells Cloud, Worksheet Comment, Excel API, Cell Comment, REST"
+description: "Add a comment to a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, full request/response schema, and SDK snippets for C#, Java, Python, and more."
 weight: 20
 ---
 
-This REST API adds a comment to a specific worksheet cell.
+This REST API adds a comment to a specific cell in a worksheet.
 
 ## REST API
 
@@ -27,7 +27,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{c
 | folder         | string | query    | The folder where the workbook is stored.               |
 | storageName    | string | query    | The name of the storage service.                       |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetComment) defines a publicly accessible programming interface, allowing you to perform REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetComment) defines a publicly accessible programming interface that allows you to perform REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
