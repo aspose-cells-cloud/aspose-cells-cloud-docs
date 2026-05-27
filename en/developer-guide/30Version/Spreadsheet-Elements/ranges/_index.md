@@ -1,12 +1,12 @@
 ---
-title: "Working with Excel Ranges"
+title: "Working with Excel Ranges – Aspose.Cells Cloud API Guide"
 second_title: "Document"
 linktitle: "Range"
 type: docs
 url: /ranges/
 aliases: [/working-with-ranges/]
-keywords: "Aspose.Cells, Excel range, REST API, SDK, .NET, Java, Python, merge cells, copy range"
-description: "Learn how to retrieve, modify, style, merge, move, and copy Excel ranges using the Aspose.Cells Cloud REST API. Includes SDK code samples for .NET, Java, Python, and more."
+keywords: "Aspose.Cells range API, Excel range REST, merge cells API, copy range Aspose, Excel range examples"
+description: "Learn how to retrieve, modify, style, merge, move, and copy Excel ranges using Aspose.Cells Cloud REST API, with .NET, Java, and Python SDK code examples."
 weight: 100
 ---
 
@@ -22,5 +22,5 @@ A **range** represents a single cell, an entire row, a whole column, a contiguou
 - [Copy Range in a Worksheet with Paste Options](/cells/copy-range-in-a-worksheet-with-paste-options/) – Copies a source range to a destination range with optional paste types (values, formats, formulas, etc.).
 - [Set the Style of the Range](/cells/set-the-style-of-the-range/) – Applies font, fill, border, and alignment styles to every cell in the range.
 - [Unmerge Merged Cells of the Range](/cells/unmerge-merged-cells-of-the-range/) – Reverses a previous merge operation, restoring the original individual cells.
-- [Move a Named Range with an Excel Worksheet](/cells/move-a-named-ranged-with-a-excel-worksheet/) – Relocates a named range to a new address within the same worksheet or to another worksheet.
+- [Move a Named Range within an Excel Worksheet](/cells/move-a-named-ranged-with-a-excel-worksheet/) – Relocates a named range to a new address within the same worksheet or to another worksheet.
 - [Set Range Value in Excel Worksheet](/cells/ranges/set-value/) – Writes a single value or an array of values to the specified range.
