@@ -1,12 +1,12 @@
 ---
-title: "Search Spreadsheet Content – Aspose.Cells Cloud API (Find Text in Excel)"
+title: "Search Spreadsheet Content with Aspose.Cells Cloud API – Find Text, Numbers & Formulas in Excel"
 second_title: "Document"
-ArticleTitle: "Search Text in Local Excel Spreadsheets – Find Specific Data"
+ArticleTitle: "Search Text in Local Excel Spreadsheets Using Aspose.Cells Cloud API – Find Specific Data"
 linktitle: "Search Spreadsheet Content"
 type: docs
 url: /search-spreadsheet-content/
-keywords: "Aspose.Cells, Excel search API, spreadsheet content search, cloud spreadsheet API, text lookup"
-description: "Use Aspose.Cells Cloud API to search for text, numbers, or formulas in local Excel files. Supports case‑insensitive queries, worksheet‑level scope, and secure authentication."
+keywords: "search spreadsheet content, Aspose.Cells Cloud, Excel text search API, find text in Excel, spreadsheet content API"
+description: "Use Aspose.Cells Cloud API to search spreadsheet content for text, numbers, or formulas in local Excel files. Supports case‑insensitive queries, worksheet‑level scope, and secure authentication."
 weight: 100
 ---
 
@@ -28,7 +28,7 @@ PUT https://api.aspose.cloud/v4.0/cells/search/content
 | searchText   | String  | Query    | The text (or numeric value) to locate in the workbook.                             |
 | ignoringCase | Boolean | Query    | Set to `true` to perform a case‑insensitive search.                                |
 | worksheet    | String  | Query    | Name of the worksheet to limit the search. If omitted, all worksheets are scanned. |
-| cellArea     | String  | Query    | A‑1 style range (e.g., `A1:C10`) that restricts the search area.                   |
+| cellArea     | String  | Query    | An A‑1 style range (e.g., `A1:C10`) that restricts the search area.                |
 | region       | String  | Query    | Geographic region of the service (e.g., `us-east-1`).                              |
 | password     | String  | Query    | Password required to open a protected workbook.                                    |
 
@@ -57,27 +57,27 @@ The API returns a `SearchResult` object that contains an array of matched cells.
 
 ### Error Codes
 
-- **400 Bad Request** – The request URI or parameters are invalid.
-- **401 Unauthorized** – Missing or invalid access token, or incorrect client credentials.
-- **404 Not Found** – The specified spreadsheet cannot be accessed.
+- **400 Bad Request** – The request URI or parameters are invalid.  
+- **401 Unauthorized** – Missing or invalid access token, or incorrect client credentials.  
+- **404 Not Found** – The specified spreadsheet cannot be accessed.  
 - **500 Internal Server Error** – An unexpected server error occurred while processing the workbook.
 
 ## Where should we use the Search content within the Spreadsheet API?
 
-- **Comprehensive Workbook Compliance Audit** – Scan the entire workbook to locate sensitive terms (e.g., “Confidential Clause”, “Internal Data”) for data‑security and compliance checks.
-- **Cross‑Sheet Data Association Query** – Find a project number or customer name that appears on multiple worksheets, enabling rapid cross‑sheet integration.
-- **Batch Template Content Verification** – After generating reports, verify that all placeholders such as `{{Date}}` have been correctly replaced across a batch of Excel files.
+- **Comprehensive Workbook Compliance Audit** – Scan the entire workbook to locate sensitive terms (e.g., “Confidential Clause”, “Internal Data”) for data‑security and compliance checks.  
+- **Cross‑Sheet Data Association Query** – Find a project number or customer name that appears on multiple worksheets, enabling rapid cross‑sheet integration.  
+- **Batch Template Content Verification** – After generating reports, verify that all placeholders such as `{{Date}}` have been correctly replaced across a batch of Excel files.  
 - **Historical Data Archiving and Mining** – Search legacy Excel files for specific event codes or business terms to accelerate data archaeology and analysis.
 
 ## Why should you use the Search content within the Spreadsheet API?
 
-- **Developer‑Friendly** – SDKs are available for many languages, reducing development effort compared with building a custom solution.
-- **Reduced Labor Costs** – Automates tasks that would otherwise require manual inspection of spreadsheets.
-- **Pay‑per‑Use** – You only pay for the API calls you actually make.
-- **Zero Maintenance** – No servers to manage, no software updates, and no compatibility concerns.
+- **Developer‑Friendly** – SDKs are available for many languages, reducing development effort compared with building a custom solution.  
+- **Reduced Labor Costs** – Automates tasks that would otherwise require manual inspection of spreadsheets.  
+- **Pay‑per‑Use** – You only pay for the API calls you actually make.  
+- **Zero Maintenance** – No servers to manage, no software updates, and no compatibility concerns.  
 - **Preserves Complex Formatting** – Results can be exported to PDF while retaining the original Excel layout.
 
-## How to Use the Search for broken links within the Spreadsheet API with SDKs
+## How to Use the Search Spreadsheet Content API with SDKs
 
 ### OpenAPI Specification
 
