@@ -1,5 +1,5 @@
 ---
-title: "Aspose.Cells Cloud – Convert Excel Workbook to PDF, CSV, HTML, and More (GET /cells/{name})"
+title: "Aspose.Cells Cloud API – Convert Excel Workbook to PDF, CSV, HTML, PNG & More (GET /cells/{name})"
 second_title: "Document"
 linktitle: "Convert Excel"
 type: docs
@@ -7,8 +7,8 @@ url: /get-different-formats-files/
 aliases:
   - /export-excel-workbook-to-different-file-formats/
   - /export-different-formats/
-keywords: "Aspose.Cells, Excel conversion, convert Excel, PDF, CSV, HTML, ODS, JSON, image formats, spreadsheet export"
-description: "Learn how to retrieve an Excel workbook in any format (PDF, CSV, HTML, PNG, etc.) using Aspose.Cells Cloud REST API. Includes cURL, SDK samples, authentication, and response details."
+keywords: "Aspose.Cells, Excel conversion API, convert XLSX to PDF, REST API, cloud spreadsheet, file format conversion, API example"
+description: "Learn how to use Aspose.Cells Cloud REST API to export an Excel workbook to PDF, CSV, HTML, PNG, and over 30 other formats. Includes cURL example, SDK snippets, authentication guide, and error handling."
 weight: 10
 ---
 
@@ -24,7 +24,7 @@ This REST API retrieves an Excel workbook in a different format.
 
 | Parameter Name        | Type   | Description                                                                                                                                                          | Default |
 | --------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| format                | string | Target file format (e.g., CSV, XLS, HTML, MHTML, ODS, PDF, XML, TXT, TIFF, XLSB, XLSM, XLSX, XLTM, XLTX, XPS, PNG, JPG, GIF, EMF, BMP, MD, Numbers, WMF, SVG, etc.). | –       |
+| format                | string | Target file format (e.g., CSV, XLS, HTML, MHTML, ODS, PDF, XML, TXT, TIFF, XLSB, XLSM, XLSX, XLTM, XLTX, XPS, PNG, JPG, GIF, EMF, BMP, MD, Numbers, WMF, SVG, and other supported formats). | –       |
 | password              | string | Password required to open the Excel file.                                                                                                                            | –       |
 | isAutoFit             | bool   | Automatically fits rows and columns width.                                                                                                                           | false   |
 | onlySaveTable         | bool   | When **true**, only table data is saved. Accepts `true` or `false`.                                                                                                  | false   |
