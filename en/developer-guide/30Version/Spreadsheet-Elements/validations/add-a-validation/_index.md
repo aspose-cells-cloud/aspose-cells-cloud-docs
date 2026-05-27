@@ -1,11 +1,11 @@
 ---
-title: "Add a worksheet validation to an Excel worksheet"
+title: "Add Worksheet Validation – Aspose.Cells Cloud API Reference"
 second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /validations/add/
-keywords: "Add worksheet validation, Excel, Aspose.Cells Cloud, REST API, Spreadsheet, Validation rule"
-description: "Use the Aspose.Cells Cloud REST API to add a worksheet validation to an Excel file. SDKs are available for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, and Swift."
+keywords: "worksheet validation, Aspose.Cells Cloud, REST API, Excel, validation rule"
+description: "Learn how to add a validation rule to an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, required parameters, JSON body example, SDK snippets, and error handling."
 weight: 10
 ---
 
@@ -30,7 +30,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PutWorksheetValidation) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a request to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
