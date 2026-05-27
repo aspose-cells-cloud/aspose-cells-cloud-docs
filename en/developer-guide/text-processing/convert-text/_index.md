@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert Text to Numbers in Excel & Clean Special Characters"
+title: "Convert Text to Numbers and Clean Special Characters in Excel – Aspose.Cells Cloud API"
 second_title: "Document"
-ArticleTitle: "Excel Data Cleaner - Convert Text to Numbers & Remove Unwanted Characters"
+ArticleTitle: "Excel Data Cleaner – Convert Text to Numbers and Remove Unwanted Characters with Aspose.Cells Cloud API"
 linktitle: "Convert Text"
 type: docs
 url: /convert-text/
-keywords: "Aspose.Cells convert text, Excel text to numbers, remove special characters Excel, replace line breaks Excel, normalize accented characters, Excel data cleaning API"
-description: "Convert text‑formatted numbers to numeric values, replace unwanted characters and line breaks, and normalize accented characters in Excel files using Aspose.Cells Cloud API."
+keywords: "Aspose.Cells, convert text to numbers, Excel data cleaning, remove special characters, API, cloud spreadsheet"
+description: "Use Aspose.Cells Cloud API to convert text‑formatted numbers to true numeric values, strip unwanted characters, replace line breaks, and normalize accented letters in Excel files—all in one request."
 weight: 100
 ---
 
