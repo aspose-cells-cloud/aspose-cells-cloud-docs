@@ -1,12 +1,12 @@
 ---
-title: "Excel Worksheet Rename"
+title: "Rename an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Rename"
 type: docs
 url: /worksheets/rename/
 aliases: [/rename-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel worksheet rename, REST API, spreadsheet SDK, rename worksheet, cloud storage"
-description: "Rename a worksheet in an Excel workbook using Aspose.Cells Cloud REST API. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "Aspose.Cells, Excel worksheet rename, REST API, cloud SDK, rename worksheet, cloud storage"
+description: "Learn how to rename a worksheet in an Excel workbook using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, and SDK code in C#, Java, Python, and more."
 weight: 20
 ---
 
@@ -15,7 +15,7 @@ This REST API renames an Excel worksheet.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/rename
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/rename
 ```
 
 ### **Request parameters**
@@ -37,7 +37,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/rename?newname=newSheet" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/rename?newname=newSheet" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
