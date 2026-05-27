@@ -1,5 +1,5 @@
 ---
-title: "Import Picture into Excel Worksheet"
+title: "How to Import a Picture into an Excel Worksheet using Aspose.Cells Cloud REST API"
 second_title: "Document"
 linktitle: "Import picture"
 type: docs
@@ -8,8 +8,8 @@ aliases:
   - /import-picture-into-worksheet/
   - /import-data/picture/
   - /import/picture/
-keywords: "Import picture, Excel worksheet, Aspose.Cells Cloud, REST API, v3.0"
-description: "Learn how to import pictures into an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes multipart request example, SDK code samples, and error handling."
+keywords: "Import picture Excel, Aspose.Cells Cloud import picture, REST API v3.0, Excel worksheet image, multipart import"
+description: "Step-by-step guide to import images into an Excel worksheet with Aspose.Cells Cloud REST API v3.0, including multipart request sample, SDK code snippets, and error handling."
 weight: 19
 ---
 
@@ -154,19 +154,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## Frequently Asked Questions
-
-**Q1: How do I specify the picture location in a worksheet?**  
-A: Use `UpperLeftRow`, `UpperLeftColumn`, `LowerRightRow`, and `LowerRightColumn` in the `ImportPictureOption` JSON. The coordinates are zero‑based (row 0 = first row, column 0 = first column).
-
-**Q2: What format should the picture data be sent in?**  
-A: You can either upload the image file as the second part of the multipart request or include a Base64‑encoded string in the `Data` field of the JSON object.
-
-**Q3: Can I replace an existing picture?**  
-A: Yes. Set `IsInsert` to `false` to replace a picture that already exists at the specified location.
-
-**Q4: Do I need to specify the `Source` parameter?**  
-A: Only when `ImportDataType` is `BatchData`. In that case, `Source` indicates where the batch file is stored (e.g., Aspose Cloud Storage).
-
----

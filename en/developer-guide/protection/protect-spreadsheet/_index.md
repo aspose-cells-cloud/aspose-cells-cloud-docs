@@ -1,20 +1,18 @@
 ---
-title: "Aspose.Cells Cloud Excel Password Protection Web API – Automate Open and Modify Password Encryption"
+title: "Aspose.Cells Cloud API for Excel Password Protection – Automate Open and Modify Encryption"
 second_title: "Developer Guide for Excel Protection"
 ArticleTitle: "Excel Password Protection Tool – Set Open and Modify Passwords – Secure Your Spreadsheets"
 linktitle: "Protect Spreadsheet"
 type: docs
 url: /protect-spreadsheet/
-keywords: "Aspose.Cells, Excel password protection, API, open password, modify password, cloud storage, spreadsheet security"
-description: "Secure Excel files programmatically with Aspose.Cells Cloud. Set both open and modify passwords via a single API call. Supports .xlsx, .xls, and cloud storage. Try it free."
+keywords: "Aspose.Cells, Excel password protection, API, open password, modify password, cloud storage, spreadsheet security, protect spreadsheet, Excel encryption"
+description: "Use Aspose.Cells Cloud API to programmatically protect Excel files with open and modify passwords. Supports .xlsx, .xls, and cloud storage. Secure your spreadsheets easily with a single call."
 weight: 100
 ---
 
 Automate Excel password protection at scale with our developer API—apply both open and modify passwords programmatically. Ideal for enterprise workflows and compatible with .xlsx and legacy formats. Get documentation and start your free integration today.
 
-## **Protect Spreadsheet API**
-
-### **Web API**
+## **Web API**
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/protection/spreadsheet
@@ -108,7 +106,3 @@ The following code examples illustrate how to interact with Aspose.Cells web ser
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ProtectSpreadsheet.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-```
-
-```

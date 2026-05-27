@@ -1,10 +1,12 @@
 ---
-title: "Add CellArea to Conditional Formatting"
+title: "Add Cell Area to Conditional Formatting with Aspose.Cells Cloud API"
+second_title: "Document"
+linktitle: "AddCellArea"
 type: docs
 url: /conditional-formattings/add-cell-area/
 aliases: [/add-a-cell-area-for-format-condition/]
-keywords: "Aspose.Cells Cloud, conditional formatting, add cell area, REST API, Excel, SDK"
-description: "Learn how to add a cell area to a conditional formatting rule in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, SDK snippets, and error handling."
+keywords: "Aspose.Cells Cloud, conditional formatting, add cell area, Excel, REST API, SDK, format condition, worksheet"
+description: "Learn how to add a cell area to a conditional formatting rule in an Excel worksheet using the Aspose.Cells Cloud REST API v3.0, including endpoint details, parameters, cURL example, SDK snippets, and error handling."
 weight: 30
 ---
 
@@ -27,7 +29,11 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditiona
 | folder         | string  | query    | The folder where the file is stored.                           |
 | storageName    | string  | query    | The name of the storage service.                               |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionArea) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## Cloud SDK Family
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionArea) defines a publicly accessible programming interface and lets
+
+you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -53,16 +59,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/condit
   "Status": "OK"
 }
 ```
-
-### Successful response –
-
-a JSON object containing `Code` `200` and `Status` `OK`. The body may also include the updated `CellArea` object.
-
-### Common error responses
-
-- **400 Bad Request** – `{ "Code":"400", "Message":"Invalid cellArea format." }`
-- **401 Unauthorized** – `{ "Code":"401", "Message":"Invalid or missing JWT token." }`
-- **404 Not Found** – `{ "Code":"404", "Message":"Worksheet or conditional formatting rule not found." }`
 
 {{< /tab >}}
 

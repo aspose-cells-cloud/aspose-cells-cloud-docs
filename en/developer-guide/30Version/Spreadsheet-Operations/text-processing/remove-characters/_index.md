@@ -1,11 +1,11 @@
 ---
-title: "Remove Characters from Excel – Aspose.Cells Cloud API (POST /cells/removecharacters)"
+title: "Remove Characters from Excel Worksheets – Aspose.Cells Cloud API (POST /cells/removecharacters)"
 second_title: "Document"
 linktitle: "Remove Characters"
 type: docs
 url: /excel-remove-characters/
-keywords: "remove characters, Excel, Aspose.Cells Cloud, API, POST, text cleaning, data sanitization"
-description: "Learn how to use Aspose.Cells Cloud API to delete custom characters, character sets, or substrings from Excel worksheets. Includes request schema, sample cURL, SDK code, and error handling."
+keywords: "remove characters, Excel worksheet, Aspose.Cells Cloud API, text cleaning, data sanitization, character removal, Excel API, POST"
+description: "Step-by-step guide to using Aspose.Cells Cloud API (POST /cells/removecharacters) to delete custom characters, predefined character sets, or substrings from Excel worksheets. Provides request schema, sample cURL, SDK examples, and error‑handling details."
 weight: 100
 ---
 

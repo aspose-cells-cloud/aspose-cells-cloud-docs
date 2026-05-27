@@ -1,20 +1,18 @@
 ---
-title: "Aspose.Cells Cloud – Check Service Health (API)"
+title: "Aspose.Cells Cloud – Service Health Check API"
 second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud Health Check"
+ArticleTitle: "Aspose.Cells Cloud Service Health Check"
 linktitle: "Check Cloud Service Health"
 type: docs
 url: /check-cloud-service-health/
-keywords: "Aspose Cells Cloud, API health check, service status, REST API, Excel cloud, monitoring"
-description: "Monitor Aspose.Cells Cloud health in real‑time. Learn the GET /v4.0/cells/status/check endpoint, parameters, response format, and SDK examples."
+keywords: "Aspose.Cells Cloud, API health check, service status, REST API, Excel cloud, cloud monitoring, service health API"
+description: "Monitor Aspose.Cells Cloud service health in real time using the GET /v4.0/cells/status/check endpoint. Learn request parameters, response format, and SDK examples."
 weight: 100
 ---
 
 Check the health status of Aspose.Cells Cloud services.
 
-## **Check Cloud Service Health**
-
-### **Web API**
+## **Web API**
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/status/check
