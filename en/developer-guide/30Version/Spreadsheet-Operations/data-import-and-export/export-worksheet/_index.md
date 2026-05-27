@@ -1,12 +1,12 @@
 ---
-title: "Export Worksheet – Aspose.Cells Cloud"
+title: "Export Worksheet to PDF, CSV, TIFF & More – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Worksheet"
 type: docs
 url: /export-excel-worksheet-to-different-formats/
 aliases: [/export/excel-worksheet-to-different-formats/]
-keywords: "Aspose.Cells Cloud, export worksheet, REST API, PDF, CSV, TIFF, XLSX, ODS, image formats"
-description: "Learn how to export an Excel worksheet to PDF, CSV, TIFF, and other formats using the Aspose.Cells Cloud REST API. Includes cURL example, required authentication, parameter details, and response handling."
+keywords: "export worksheet, Aspose.Cells Cloud, REST API, PDF, CSV, TIFF, PNG, XLSX, ODS, image formats"
+description: "Discover how to export an Excel worksheet to PDF, CSV, TIFF, PNG, and many other formats using the Aspose.Cells Cloud REST API. Includes authentication steps, cURL and SDK examples, parameter details, and error handling."
 weight: 20
 ---
 
@@ -46,7 +46,7 @@ The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells
 - `objectType` – The type of Excel object to export (e.g., `worksheet`).
 - `format` – The desired output format (e.g., `tiff`). Both parameters are required and are passed as query strings.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 ### Request
 
@@ -126,7 +126,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=worksheet&fo
 
 ### **Error handling**
 
-If the request fails, the API returns a JSON error object containing fields such as `Code` and `Message`. Typical HTTP status codes include **401 Unauthorized** (missing or invalid token) and **400 Bad Request** (invalid parameters).
+If the request fails, the API returns a JSON error object containing fields including `Code` and `Message`. Typical HTTP status codes are **401 Unauthorized** (missing or invalid token) and **400 Bad Request** (invalid parameters).
 
 ### Cloud SDK Family
 
