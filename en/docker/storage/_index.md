@@ -1,15 +1,14 @@
 ---
-title: "How to set the storage position for Aspose.Cells Cloud Docker Container storage"
+title: "Configure Storage Position for Aspose.Cells Cloud Docker Container – Windows & Linux Guide"
 second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud Docker Container Storage Configuration"
+ArticleTitle: "Aspose.Cells Cloud Docker Container Storage Configuration Guide"
 linktitle: "Container Storage"
 type: docs
 url: /docker/storage/
-description: "How to set the storage position for Aspose.Cells Cloud Docker Container storage."
+description: "Learn how to configure default and custom storage locations for Aspose.Cells Cloud Docker containers on Windows and Linux, including JSON schema and Docker run commands."
 weight: 30
-kwords: Excel Cloud Docker Container, Self-Cloud Docker Container, REST Docker Container, Spreadsheet, PDF, CSV, Json, Markdown, Docker Image, Run Docker Container
+keywords: "Aspose.Cells Cloud, Docker storage, container storage configuration, storageResource.json, Windows Docker, Linux Docker"
 ---
-
 
 ## Default Storage Configuration ##
 
@@ -17,8 +16,7 @@ kwords: Excel Cloud Docker Container, Self-Cloud Docker Container, REST Docker C
 
 {{< tab tabNum="1" >}}
 
-``` json
-
+```json
 {
   "Local": [
     {
@@ -33,8 +31,7 @@ kwords: Excel Cloud Docker Container, Self-Cloud Docker Container, REST Docker C
 
 {{< tab tabNum="2" >}}
 
-``` json
-
+```json
 {
   "Local": [
     {
@@ -43,7 +40,6 @@ kwords: Excel Cloud Docker Container, Self-Cloud Docker Container, REST Docker C
     }
   ]
 }
-
 ```
 
 {{< /tab >}}
@@ -52,33 +48,30 @@ kwords: Excel Cloud Docker Container, Self-Cloud Docker Container, REST Docker C
 
 ## Default Position ##
 
-- **windows**
+- **Windows**
 
 ```powershell
-
 c:\app\storageResource.json
-
 ```
 
-- **linux**
+- **Linux**
 
-```linux
-
+```bash
 /app/storageResource.json
-
-
 ```
 
 ## Custom Storage Configuration ##
 
-Need to re-specify the storage profile for Aspose.Cells Cloud image file when the customer need specifies storage folder.
+You need to re‑specify the storage profile for the Aspose.Cells Cloud image when you want to use a custom storage folder.
 
-``` powershell
-
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey  -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
-
+```bash
+docker run -d -v c:/data:/data -p 47900:5000 \
+  -e LicensePublicKey=yourLicensePublicKey \
+  -e LicensePrivateKey=yourLicensePrivateKey \
+  -e STORAGE_CREDENTIALS_FILE_PATH=c:/data/storageResource.json \
+  --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
 ```
 
 **Reference Document** :
 
-- [How to run Aspose.Cells Cloud Docker container.]( https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)
+- [How to run Aspose.Cells Cloud Docker container.](https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)
