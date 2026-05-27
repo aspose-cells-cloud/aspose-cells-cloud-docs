@@ -1,12 +1,12 @@
 ---
-title: "Copy contents and formats from another worksheet."
+title: "Copy Worksheet Contents and Formats – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Copy"
 type: docs
 url: /worksheets/copy/
 aliases: [/copy-excel-worksheet/]
-keywords: "Aspose Cells copy worksheet API, Excel copy sheet REST, Aspose Cloud SDK copy, spreadsheet copy worksheet"
-description: "Learn how to copy a worksheet and its formats to a new sheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL, and SDK examples for C#, Java, Python, and more."
+keywords: "Aspose.Cells copy worksheet, Excel sheet copy API, Aspose Cloud"
+description: "Learn how to copy a worksheet and its formats to a new sheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, and SDK code samples."
 weight: 20
 ---
 
@@ -67,7 +67,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/NewSheet/copy
 
 ### Error Handling
 
-The API returns standard HTTP status codes together with a JSON error body. Typical responses include:
+Aspose.Cells Cloud API returns standard HTTP status codes together with a JSON error body. Typical responses include:
 
 | HTTP Code | Description                                                | Sample JSON Error Body                                        |
 | --------- | ---------------------------------------------------------- | ------------------------------------------------------------- |
