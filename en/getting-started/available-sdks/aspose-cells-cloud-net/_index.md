@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud SDK for C#: Convert, merge, split, protect, search, replace, and more."
+title: "Aspose.Cells Cloud SDK for .NET (C#) – Convert, Merge, Split, Protect, Search & Replace Excel Files"
 second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud SDK for C#: Convert, merge, split, protect, search, replace, and more."
+ArticleTitle: "Aspose.Cells Cloud SDK for .NET (C#) – Convert, Merge, Split, Protect, Search & Replace Excel Files"
 linktitle: "Aspose.Cells Cloud SDK for .Net"
 type: docs
 url: /available-sdks/aspose-cells-cloud-net/
-description: "Aspose.Cells Cloud SDK for .NET provides a cross‑platform, fluent API for creating, converting, merging, splitting, protecting, searching, and replacing Excel objects—no Office installation required."
-keywords: "Aspose.Cells, Cloud SDK, .NET, Excel, convert, merge, split, protect, search, replace, API"
+description: "Download the Aspose.Cells Cloud .NET SDK (MIT‑licensed) to create, convert, merge, split, protect, search & replace Excel files in the cloud – no Office needed. Get started in minutes."
+keywords: "Aspose.Cells Cloud .NET SDK, C# Excel conversion, Excel to PDF .NET, Aspose.Cells API, cloud Excel library"
 weight: 30
 ---
 
-The SDK is open‑source and licensed under the MIT License. You can access [the .NET library source code for Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
+The SDK is open-source and licensed under the MIT License. You can access [the .NET library source code for Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-dotnet).
 
 # **How to use .NET library of Aspose.Cells Cloud**
 
@@ -48,7 +48,7 @@ dotnet add package Aspose.Cells-Cloud
   Define the source file name, desired output format, and storage folder path.
 
 - **Execute workbook conversion**  
-  Call the `PostConvertWorkbook` method and handle the response.
+  Call the `PostConvertWorkbook` method and handle the response object.
 
 ### **Sample Code**
 
