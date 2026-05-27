@@ -1,12 +1,12 @@
 ---
-title: "Match all blank cells in an Excel worksheet"
+title: "Aspose.Cells Cloud API – Match All Blank Cells (AutoFilter)"
 second_title: "Document"
 linktitle: "Match all blank cells"
 type: docs
 url: /autofilter/match-all-blank/
 aliases: [/match-all-blank-cells-in-the-list/]
-keywords: "Aspose.Cells, match blank cells, auto filter, REST API, Excel, cloud"
-description: "Learn how to use Aspose.Cells Cloud REST API to filter and match all blank cells in an Excel worksheet. Includes endpoint, parameters, authentication steps, cURL example, and SDK snippets for C#, Java, Python, and more."
+keywords: "Aspose.Cells, match blank cells, AutoFilter, REST API, Excel, cloud, API, filter blank cells, Aspose Cloud"
+description: "Learn how to use Aspose.Cells Cloud REST API to match all blank cells in an Excel worksheet. Includes endpoint, parameters, authentication, cURL example, and SDK snippets."
 weight: 100
 ---
 
@@ -22,11 +22,11 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilte
 
 | Parameter Name | Type    | Location | Description                                                            |
 |----------------|---------|----------|------------------------------------------------------------------------|
-| name           | string  | path     | The name of the workbook file.                                         |
-| sheetName      | string  | path     | The name of the worksheet that contains the filter.                    |
-| fieldIndex     | integer | query    | Zero‑based index of the column to which the filter is applied.         |
-| folder         | string  | query    | The folder path in storage where the workbook is located.              |
-| storageName    | string  | query    | The name of the Aspose Cloud storage.                                   |
+| name           | string  | path     | Specifies the workbook file name.                                      |
+| sheetName      | string  | path     | Specifies the worksheet that contains the filter.                     |
+| fieldIndex     | integer | query    | Specifies the zero‑based index of the column to which the filter is applied. |
+| folder         | string  | query    | Specifies the folder path in storage where the workbook is located.   |
+| storageName    | string  | query    | Specifies the name of the Aspose Cloud storage.                       |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchBlanks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
