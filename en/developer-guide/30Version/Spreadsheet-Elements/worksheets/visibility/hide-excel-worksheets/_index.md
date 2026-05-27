@@ -1,12 +1,12 @@
 ---
-title: "Hide an Excel worksheet"
+title: "Hide an Excel Worksheet – Aspose.Cells Cloud API Documentation"
 second_title: "Document"
 linktitle: "Hide"
 type: docs
 url: /worksheets/hide/
 aliases: [/hide-excel-worksheets/]
-keywords: "Aspose.Cells Cloud, Excel, hide worksheet, REST API, spreadsheet"
-description: "Step‑by‑step guide to hide a worksheet in an Excel workbook using Aspose.Cells Cloud REST API, including request details, a cURL example, and SDK code snippets for multiple languages."
+keywords: "Aspose.Cells Cloud, Excel, hide worksheet, worksheet visibility, REST API, spreadsheet, Aspose.Cells"
+description: "Learn how to hide a worksheet in an Excel workbook using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, and SDK code snippets."
 weight: 50
 ---
 
@@ -15,7 +15,7 @@ This REST API hides a worksheet.
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 ```
 
 ### **Request parameters**
@@ -24,8 +24,8 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 | -------------- | ------- | -------- | --------------------------------------------------------- |
 | name           | string  | path     | The name of the Excel workbook file.                      |
 | sheetName      | string  | path     | The name of the worksheet to modify.                      |
-| isVisible      | boolean | query    | Visibility flag (`true` for visible, `false` for hidden). |
-| folder         | string  | query    | The folder path where the workbook is stored.             |
+| isVisible      | boolean | query    | Visibility flag (`true` for visible, `false` for hidden`). |
+| folder         | string  | query     | The folder path where the workbook is stored.             |
 | storageName    | string  | query    | The name of the storage service.                          |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutChangeVisibilityWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
@@ -37,7 +37,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/visible?isVisible=false" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/visible?isVisible=false" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
