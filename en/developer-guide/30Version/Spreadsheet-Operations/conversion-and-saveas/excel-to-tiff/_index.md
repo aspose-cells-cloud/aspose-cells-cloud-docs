@@ -1,12 +1,12 @@
 ---
-title: "Excel to TIFF"
+title: "Convert Excel to TIFF – Aspose.Cells Cloud API Documentation"
 second_title: "Document"
 linketitle: "Excel to TIFF"
 type: docs
 url: /convert-excel-file-to-tiff-file/
 aliases: [/convert-excel-file-to-tiff-in-cloud/, /convert/excel-to-tiff/]
 keywords: "Aspose.Cells Cloud, Excel to TIFF conversion, REST API, cURL, SDK, .NET, Java, Python, image export"
-description: "Learn how to convert Excel workbooks to high‑quality TIFF images with Aspose.Cells Cloud API. Detailed cURL commands, SDK examples (C#, Java, Python, …), authentication steps, and error handling."
+description: "Learn how to convert Excel workbooks to high‑quality TIFF images using Aspose.Cells Cloud API. Includes detailed cURL commands, SDK examples (C#, Java, Python, …), authentication steps, and error handling."
 weight: 90
 ---
 
@@ -113,7 +113,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutConvertWorkbookToTiff.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutConvertWorkbookToTiff.ts" >}}
 
 {{< /tab >}}
 
