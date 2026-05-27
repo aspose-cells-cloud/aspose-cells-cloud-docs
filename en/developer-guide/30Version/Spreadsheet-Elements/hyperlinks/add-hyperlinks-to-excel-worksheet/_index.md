@@ -1,10 +1,10 @@
 ---
-title: "Add Hyperlink to Worksheet"
+title: "Add Hyperlink to Worksheet – Aspose.Cells Cloud REST API"
 type: docs
 url: /hyperlinks/add/
 aliases: [/add-hyperlinks-to-excel-worksheet/]
-keywords: "Aspose.Cells, add hyperlink, Excel REST API, cloud SDK"
-description: "Learn how to add a hyperlink to an Excel worksheet using the Aspose.Cells Cloud v3.0 REST API. Includes endpoint, full parameter guide, cURL example, and SDK snippets for C#, Java, Python, and more."
+keywords: "Aspose.Cells, add hyperlink, worksheet API, REST API, Excel hyperlink, cloud SDK"
+description: "Learn how to add a hyperlink to an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes endpoint, parameters, cURL example, and SDK snippets for C#, Java, Python, and more."
 weight: 20
 ---
 
@@ -30,7 +30,7 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 | folder         | string  | query    | The document folder.                                                                      |
 | storageName    | string  | query    | Storage name.                                                                             |
 
-The request can also include a JSON body containing the same fields (`Address`, `FirstRow`, `FirstColumn`, `TotalRows`, `TotalColumns`). Supplying the body is useful when you prefer a payload over query‑string parameters.
+The request can also include a JSON body containing the same fields (`Address`, `FirstRow`, `FirstColumn`, `TotalRows`, `TotalColumns`). Providing a JSON body is useful when you prefer a payload over query‑string parameters.
 
 ### Error Responses
 
