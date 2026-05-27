@@ -1,5 +1,5 @@
 ---
-title: "Unprotect Excel Workbook – Aspose.Cells Cloud API"
+title: "Unprotect Excel Workbook with Aspose.Cells Cloud API – Delete Protection (v3.0)"
 second_title: "Document"
 linktitle: "Unprotect Excel File"
 type: docs
@@ -7,8 +7,8 @@ url: /excel-file-unprotect/
 aliases:
   - /unprotect-excel-workbooks/
   - /workbook/unprotect/
-keywords: "Aspose Cells, Excel unprotect API, remove workbook protection, REST API, cloud spreadsheet"
-description: "Learn how to remove protection from an Excel workbook using Aspose.Cells Cloud REST API. Includes request syntax, parameters, cURL example, and SDK code in multiple languages."
+keywords: "Aspose, Cells, Excel, unprotect, API, workbook protection, REST, cloud"
+description: "Learn how to remove protection from an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL sample, error codes, and SDK snippets for C#, Java, Python, and more."
 weight: 60
 ---
 
