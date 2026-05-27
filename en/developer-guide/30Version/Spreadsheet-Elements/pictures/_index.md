@@ -1,12 +1,12 @@
 ---
-title: "Working with Excel pictures"
+title: "Working with Excel Pictures – Add, Retrieve, Update & Delete via Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Pictures"
 type: docs
 url: /pictures/
 aliases: [/working-with-pictures/]
-keywords: "Excel, picture, Aspose.Cells Cloud, REST API, image handling"
-description: "Learn how to retrieve, add, update, and delete pictures in Excel worksheets using Aspose.Cells Cloud REST API. Includes code samples for C#, Java, Python, and more."
+keywords: "Excel pictures, Aspose.Cells Cloud API, add picture to Excel, delete Excel image, retrieve Excel picture, update Excel picture"
+description: "Learn how to manage Excel pictures (images) with Aspose.Cells Cloud REST API. Step‑by‑step examples for GET, POST, PUT, DELETE in C#, Java, Python and more."
 weight: 100
 ---
 
@@ -21,4 +21,4 @@ This guide explains how to work with **pictures** (also called images) in Excel 
 - [How to add a picture for an Excel worksheet.](/cells/pictures/add/) – Insert a new picture into a worksheet, specifying its position and size.  
 - [How to update a specific picture from an Excel worksheet.](/cells/pictures/update/) – Modify the properties (e.g., dimensions, placement) of an existing picture.  
 - [How to delete all pictures from an Excel worksheet.](/cells/pictures/clear/) – Remove every picture object from a worksheet in a single call.  
-- [How to delete a picture from an Excel worksheet.](/cells/pictures/delete/) – Delete a single picture identified by its index.  
+- [How to delete a picture from an Excel worksheet.](/cells/pictures/delete/) – Delete a single picture identified by its index.
