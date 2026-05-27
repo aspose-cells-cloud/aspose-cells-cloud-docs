@@ -1,12 +1,12 @@
 ---
-title: "Get all pictures in an Excel worksheet"
+title: "Aspose.Cells Cloud API – Get All Pictures in an Excel Worksheet (v3.0)"
 second_title: "Document"
 linktitle: "Get all"
 type: docs
 url: /pictures/get-all/
 aliases: [/get-picture-from-a-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel worksheet, retrieve all pictures, REST API, SDKs"
-description: "Learn how to retrieve all pictures from an Excel worksheet using the Aspose.Cells Cloud REST API. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "Aspose.Cells Cloud API, get all pictures, Excel worksheet pictures, REST, SDK"
+description: "Retrieve every picture from a worksheet using Aspose.Cells Cloud API (v3.0). Supports C#, Java, Python, and more."
 weight: 10
 ---
 
@@ -32,13 +32,13 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 | HTTP Code | Description                                                                    |
 | --------- | ------------------------------------------------------------------------------ |
 | 401       | Unauthorized – missing or invalid token.                                       |
-| 404       | Not Found – the specified file, worksheet, or page‑break index does not exist. |
+| 404       | Not Found – the specified file, worksheet, or picture index does not exist.    |
 | 400       | Bad Request – malformed request syntax or invalid parameters.                  |
 | 500       | Internal Server Error – an unexpected condition was encountered.               |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/GetWorksheetPictures) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
