@@ -1,16 +1,16 @@
 ---
-title: "Convert Excel to PDF"
+title: "Convert Excel to PDF with Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Convert Excel to PDF"
 type: docs
 url: /convert-excel-file-to-pdf-file/
 aliases: [/convert-excel-file-to-pdf-in-cloud/, /convert/excel-to-pdf/]
-keywords: "Aspose Cells, Excel to PDF, Cloud API, file conversion"
-description: "Learn how to convert Excel workbooks to PDF with Aspose.Cells Cloud REST API. Includes cURL, SDK samples (C#, Java, Python) and authentication guide."
+keywords: "Aspose.Cells Cloud, Excel to PDF, Cloud API, file conversion"
+description: "Learn how to convert Excel workbooks to PDF using the Aspose.Cells Cloud REST API (v3.0). Includes cURL commands, SDK samples for C#, Java, Python, and authentication guidance."
 weight: 80
 ---
 
-This REST API converts a spreadsheet file to a PDF‑format file.
+This REST API converts a spreadsheet file to a PDF format file.
 
 ## REST API
 
@@ -18,7 +18,7 @@ This REST API converts a spreadsheet file to a PDF‑format file.
 | :----------------- | :------- | :----------------------------------- | :----------------------------------------------------------------------------------------------------- |
 | /cells/convert/pdf | POST     | Convert a spreadsheet to a PDF file. | [PostConvertWorkbookToPDF](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPDF) |
 
-### **Query Parameter**
+### Query Parameter
 
 | Parameter Name        | Type   | Description                                                                     |
 | :-------------------- | :----- | :------------------------------------------------------------------------------ |
@@ -26,13 +26,13 @@ This REST API converts a spreadsheet file to a PDF‑format file.
 | storageName           | string | The name of the storage where the file is located.                              |
 | checkExcelRestriction | bool   | Whether to enforce Excel file restrictions when modifying cell‑related objects. |
 
-### **Request Body Parameter**
+### Request Body Parameter
 
 | Parameter Name | Type | Description                                                     |
 | :------------- | :--- | :-------------------------------------------------------------- |
 | datafile       | file | The data file saved as the first part of the multipart content. |
 
-### **Response**
+### Response
 
 [FileInfo](/cells/file-info/)
 
@@ -58,9 +58,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pdf" \
 
 ```json
 {
-  "Filename": "xxxxxx.pdf",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
+  "Filename": "sample.pdf",
+  "FileSize": 123456,
+  "FileContent": "Base64 encoded file content"
 }
 ```
 
