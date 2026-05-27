@@ -1,11 +1,11 @@
 ---
-title: "Aspose.Cells Cloud – Complete List of Paper Size Constants"
+title: "Aspose.Cells Cloud – Full List of Paper Size Constants (A4, Letter, ISO, JIS, PRC, Custom)"
 second_title: "Document"
 linktitle: "Paper Size"
 type: docs
 url: /paper-size/
-keywords: "paper size, Aspose.Cells Cloud, REST API, spreadsheet, A4, Letter, custom paper size, ISO, JIS, PRC"
-description: "Explore the full set of paper‑size constants supported by the Aspose.Cells Cloud REST API. Learn dimensions, usage examples, and how to set custom sizes in your spreadsheets."
+keywords: "Aspose.Cells, paper size, constants, REST API, A4, Letter, ISO, JIS, PRC, custom paper size, spreadsheet"
+description: "Discover every paper‑size constant supported by Aspose.Cells Cloud REST API, with exact dimensions and a ready‑to‑use cURL example. Set page size in seconds – see A4, Letter, ISO, JIS, PRC and custom options."
 weight: 20
 ---
 
@@ -40,9 +40,9 @@ Developers use these constants with the `SetPageSetup` API (or the equivalent SD
 | PaperEnvelope11                    | Envelope #11 (4½ in × 10 3/8 in)                   |
 | PaperEnvelope12                    | Envelope #12 (4½ in × 11 in)                       |
 | PaperEnvelope14                    | Envelope #14 (5 in × 11½ in)                       |
-| PaperCSheet                        | C size sheet                                       |
-| PaperDSheet                        | D size sheet                                       |
-| PaperESheet                        | E size sheet                                       |
+| PaperCSheet                        | C‑size sheet                                       |
+| PaperDSheet                        | D‑size sheet                                       |
+| PaperESheet                        | E‑size sheet                                       |
 | PaperEnvelopeDL                    | Envelope DL (110 mm × 220 mm)                      |
 | PaperEnvelopeC5                    | Envelope C5 (162 mm × 229 mm)                      |
 | PaperEnvelopeC3                    | Envelope C3 (324 mm × 458 mm)                      |
