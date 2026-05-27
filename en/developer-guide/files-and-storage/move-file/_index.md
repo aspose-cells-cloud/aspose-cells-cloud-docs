@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Move File API – Interface for Fast Moving of Files in the Cloud"
+title: "Aspose.Cells Cloud API – Move File (v4.0) – Quickly Relocate Excel Files in Cloud Storage"
 second_title: "Document"
-ArticleTitle: "Cloud-based Excel File Efficient Management Solution – Interface for Fast Moving of Files in the Cloud."
+ArticleTitle: "Aspose.Cells Cloud – Move File API for Efficient Excel File Management in Cloud Storage"
 linktitle: "Move File"
 type: docs
 url: /move-file/
-keywords: "Aspose.Cells, Move File API, Cloud Storage, REST API, Excel Cloud, File Management"
-description: "How to move files between folders in Aspose.Cells Cloud storage using the v4.0 Move File API – endpoint, parameters, examples, and SDK links."
+keywords: "Aspose.Cells, Move File API, Cloud Storage, REST API, Excel Cloud, File Management, Aspose Cells move file, Excel file move, cloud storage API"
+description: "Learn how to move Excel files between folders in Aspose.Cells Cloud storage using the v4.0 Move File REST API. Includes request parameters, example SDK code in C# and Python, error handling, and endpoint details."
 weight: 100
 ---
 
@@ -22,7 +22,7 @@ PUT https://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}
 
 The **moveFile** API moves a file from one location to another within Aspose.Cells Cloud storage. It helps you organize files and manage storage efficiently.
 
-### The request parameters of **moveFile** API are
+### The request parameters of the **moveFile** API are
 
 | Parameter Name  | Type   | Path/Query String/HTTP Body | Description                                        |
 | --------------- | ------ | --------------------------- | -------------------------------------------------- |
