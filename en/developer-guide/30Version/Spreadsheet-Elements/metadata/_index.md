@@ -1,5 +1,5 @@
 ---
-title: "Working with Excel Metadata & Properties"
+title: "Working with Excel Metadata and Document Properties – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Metadata & Properties"
 type: docs
@@ -7,8 +7,8 @@ url: /metadata/
 aliases:
   - /document-properties/
   - /working-with-document-properties/
-keywords: "Aspose.Cells Cloud, Excel metadata API, document properties, GET metadata, update Excel properties, delete Excel metadata, REST API example"
-description: "Explore how to read, add, update, and delete Excel file metadata using Aspose.Cells Cloud REST API. Includes cURL & SDK examples for Java, .NET, Python, Node.js, and more."
+keywords: "Aspose.Cells, Excel metadata, document properties, REST API, cURL example"
+description: "Learn how to read, add, update, and delete Excel metadata with Aspose.Cells Cloud REST API. Includes cURL and SDK examples for Java, .NET, Python, Node.js."
 weight: 100
 ---
 
@@ -16,7 +16,7 @@ weight: 100
 
 Before learning how to use Aspose.Cells Cloud APIs to view, modify, and remove document properties (metadata) in Excel, let's clarify the kinds of properties an Excel document can have.
 
-- **Standard properties** are common to Excel. They contain basic information such as Title, Subject, Author, Category, etc. You can assign custom text values to these properties to make the file easier to locate.
+- **Standard properties** are common to Excel. They contain basic information such as Title, Subject, Author, Category, etc. Assign custom text values to these properties to make the file easier to locate.
 
 - **Custom properties** are user‑defined. They allow you to add additional metadata to your Excel document.
 
