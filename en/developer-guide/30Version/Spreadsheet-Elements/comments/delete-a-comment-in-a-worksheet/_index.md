@@ -1,5 +1,5 @@
 ---
-title: "Delete a Worksheet Comment"
+title: "Delete Worksheet Comment – Aspose.Cells Cloud API Reference"
 type: docs
 url: /comments/delete/
 aliases: [/delete-a-comment-in-a-worksheet/]
@@ -8,7 +8,7 @@ description: "Learn how to delete a specific cell comment in an Excel worksheet 
 weight: 40
 ---
 
-A **comment** is a text note attached to a specific cell in an Excel worksheet. This REST API deletes such a comment from a worksheet cell.
+Deletes a comment attached to a specific cell in an Excel worksheet.
 
 ## REST API
 
