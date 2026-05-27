@@ -1,11 +1,11 @@
 ---
-title: "Get Page Count for an Excel Worksheet"
+title: "Aspose.Cells Cloud API – Get Worksheet Page Count (v3.0)"
 second_title: "Document"
 linktitle: "PageCount"
 type: docs
 url: /worksheets/page-count/
-keywords: "Aspose.Cells, Excel page count, REST API, cloud SDK, worksheet pagination"
-description: "Retrieve the number of printable pages in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes HTTPS request format, authentication steps, sample cURL, full JSON response, status codes, and SDK code samples."
+keywords: "Aspose.Cells Cloud, worksheet page count API, Excel pagination, REST API, cloud SDK, worksheet pagination"
+description: "Use Aspose.Cells Cloud API (v3.0) to retrieve the printable page count of an Excel worksheet. Includes request format, authentication steps, cURL example, response details, status codes, and SDK code samples."
 weight: 10
 ---
 
@@ -28,7 +28,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagecount
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetPageCount) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The example below shows how to call the API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following cURL command demonstrates how to request the page count.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
