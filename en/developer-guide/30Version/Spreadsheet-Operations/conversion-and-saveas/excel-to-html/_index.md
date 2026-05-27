@@ -1,12 +1,12 @@
 ---
-title: "Convert Excel to HTML – Aspose.Cells Cloud API v3.0"
+title: "Convert Excel Workbooks to HTML – Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Excel to HTML"
 type: docs
 url: /convert-excel-file-to-html-file/
 aliases: [/convert-excel-file-to-html-in-cloud/, /convert/excel-to-html/]
-keywords: "Excel, HTML, Aspose.Cells, Cloud API, spreadsheet conversion, REST, SDK"
-description: "Use Aspose.Cells Cloud REST API to convert Excel workbooks to HTML. Includes cURL example, SDK code samples, and a detailed response schema."
+keywords: "Excel to HTML conversion, Aspose.Cells Cloud, REST API, cURL example, SDK samples, spreadsheet conversion"
+description: "Learn how to convert Excel workbooks to HTML using Aspose.Cells Cloud API v3.0. Includes cURL, SDK samples (C#, Java, Python, etc.), request/response specifications, and error handling."
 weight: 100
 ---
 
