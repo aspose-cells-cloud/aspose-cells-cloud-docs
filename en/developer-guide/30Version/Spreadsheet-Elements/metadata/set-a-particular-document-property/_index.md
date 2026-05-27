@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud API – Update (Set) Document Property"
+title: "Update (Set) Document Property – Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Update"
 type: docs
 url: /document-properties/update/
 aliases: [/set-a-particular-document-property/]
-keywords: "Aspose.Cells, Cloud API, Update Document Property, Excel metadata, REST API, SDK examples"
-description: "Learn how to set or create a document property in an Excel workbook using Aspose.Cells Cloud REST API. Includes HTTPS endpoint, required parameters, cURL sample, error codes, and SDK snippets for C#, Java, Python, and more."
+keywords: "Aspose.Cells Cloud, document property, update property, Excel metadata API, REST API, cURL example"
+description: "Learn how to set or create a document property in an Excel workbook using Aspose.Cells Cloud API v3.0. Includes endpoint, parameters, cURL example, response schema, error codes, and SDK snippets for C#, Java, Python, and more."
 weight: 30
 ---
 
@@ -71,7 +71,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author
 
 ## Error Handling
 
-The API can return the following error responses. Handle them according to your application’s needs.
+The API can return the following error responses. Handle each response according to your application’s needs.
 
 | HTTP Status | Description                                                 | Example JSON Body                                                                |
 | ----------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------- |
