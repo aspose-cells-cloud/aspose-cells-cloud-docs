@@ -1,12 +1,12 @@
 ---
-title: "Delete background on an Excel worksheet"
+title: "Delete Worksheet Background Image with Aspose.Cells Cloud REST API"
 second_title: "Document"
 linktitle: "Delete"
 type: docs
 url: /worksheets/background/delete/
 aliases: [/delete-background-or-watermark-of-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, Delete worksheet background, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
-description: "Use Aspose.Cells Cloud REST API to delete the background image of an Excel worksheet. SDKs are available for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
+keywords: "Aspose.Cells Cloud, Delete worksheet background, Excel background removal, REST API, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Learn how to delete the background image of an Excel worksheet using the Aspose.Cells Cloud REST API. Code examples and SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go are provided."
 weight: 210
 ---
 
