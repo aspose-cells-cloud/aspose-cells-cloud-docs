@@ -1,11 +1,11 @@
 ---
-title: "Insert a Slicer into an Excel ListObject – Aspose.Cells Cloud API"
+title: "Insert a Slicer into an Excel ListObject – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Insert slicer"
 type: docs
-keywords: "Aspose.Cells, insert slicer, ListObject API, Excel REST API, cloud SDK"
+keywords: "Aspose.Cells, Insert Slicer, ListObject, Excel API, REST, Cloud SDK"
 url: /list-objects/insert-slicer/
-description: "Learn how to add a slicer to an Excel ListObject using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, sample cURL request, and response JSON."
+description: "Learn how to add a slicer to an Excel ListObject using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication steps, sample cURL request, and response JSON."
 weight: 20
 ---
 
@@ -19,15 +19,15 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjec
 
 ### Request Parameters
 
-| Parameter Name  | Type    | Location | Description                                                                |
-| --------------- | ------- | -------- | -------------------------------------------------------------------------- |
-| name            | String  | Path     | The name of the Excel file.                                                |
-| sheetName       | String  | Path     | The name of the worksheet that contains the list object.                   |
-| listObjectIndex | Integer | Path     | The zero‑based index of the list object to which the slicer will be added. |
-| columnIndex     | Integer | Query    | The zero‑based index of the column on which the slicer is based.           |
-| destCellName    | String  | Query    | The cell reference (e.g., **A1**) where the slicer will be placed.         |
-| folder          | String  | Query    | The folder in storage that contains the Excel file.                        |
-| storageName     | String  | Query    | The name of the Aspose Cloud storage service.                              |
+| Parameter name   | Type    | Location | Description                                                                |
+| ---------------- | ------- | -------- | -------------------------------------------------------------------------- |
+| name             | String  | Path     | The name of the Excel file.                                                |
+| sheetName        | String  | Path     | The name of the worksheet that contains the list object.                   |
+| listObjectIndex  | Integer | Path     | The zero‑based index of the list object to which the slicer will be added. |
+| columnIndex      | Integer | Query    | The zero‑based index of the column on which the slicer is based.           |
+| destCellName     | String  | Query    | The cell reference (e.g., **A1**) where the slicer will be placed.         |
+| folder           | String  | Query    | The folder in storage that contains the Excel file.                        |
+| storageName      | String  | Query    | The name of the Aspose Cloud storage service.                              |
 
 You can use the cURL command‑line tool to call the API:
 
@@ -73,7 +73,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
 
 ### Error Handling
 
-When an error occurs, the API returns a JSON object with an `ErrorMessage` field that describes the problem. Inspect the HTTP status code and the `ErrorMessage` to determine the corrective action.
+When an error occurs, the API returns a JSON object with an `ErrorMessage` field that describes the problem. Inspect the HTTP status code and the `ErrorMessage` field to determine the corrective action.
 
 ## Cloud SDK Family
 
