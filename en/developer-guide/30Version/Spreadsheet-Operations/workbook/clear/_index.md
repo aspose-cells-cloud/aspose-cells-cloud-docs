@@ -1,12 +1,12 @@
 ---
-title: "Clear Objects in an Excel File"
+title: "Clear Objects in an Excel Workbook – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Clear"
 type: docs
 url: /clear/
 aliases: [/clearobjects/]
-keywords: "Aspose.Cells, Excel, Clear Objects, REST API, Cloud SDK, Remove Comments, Delete Charts"
-description: "Use Aspose.Cells Cloud REST API to delete comments, charts, shapes and other objects from an Excel workbook. Supports multiple SDKs and returns the cleaned file as Base64."
+keywords: "Aspose.Cells, Excel, clear objects, REST API, cloud SDK"
+description: "Delete comments, charts, shapes, and other objects from an Excel workbook via Aspose.Cells Cloud REST API. Supports multiple SDKs and returns a Base64 file."
 weight: 39
 ---
 
@@ -18,16 +18,16 @@ This REST API clears the objects in an Excel file.
 POST https://api.aspose.cloud/v3.0/cells/clearobjects
 ```
 
-### The request parameters
+### Request Parameters
 
 | Parameter  | Type   | Location  | Required | Default | Allowed Values                                                                                                                                                                                        | Description                                 |
 | ---------- | ------ | --------- | -------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| file       | file   | form‑data | Yes      | —       | —                                                                                                                                                                                                     | The Excel file to upload                    |
-| objecttype | string | query     | No       | —       | `duplicaterows`, `blankcolumns`, `blankrows`, `formula`, `content`, `style`, `chart`, `comment`, `picture`, `shape`, `listobject`, `hyperlink`, `oleobject`, `pivottable`, `validation`, `background` | Types of objects to clear (comma‑separated) |
+| file       | file   | form-data | Yes      | —       | —                                                                                                                                                                                                     | The Excel file to upload                    |
+| objecttype | string | query     | No       | —       | `duplicaterows`, `blankcolumns`, `blankrows`, `formula`, `content`, `style`, `chart`, `comment`, `picture`, `shape`, `listobject`, `hyperlink`, `oleobject`, `pivottable`, `validation`, `background` | Types of objects to clear (comma-separated) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostClearObjects) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
