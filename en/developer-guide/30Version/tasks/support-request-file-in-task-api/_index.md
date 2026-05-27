@@ -1,11 +1,11 @@
 ---
-title: "Support Request File in Task API"
+title: "Aspose.Cells Cloud – Support Request File (Task API) – How‑to Guide"
 second_title: "Document"
 type: docs
 url: /tasks/support-request-file/
 aliases: [/support-request-file-in-task-api/]
-keywords: "Aspose.Cells, REST API, Task, ImportData, SaveResult, Excel, Cloud"
-description: "The Cells Cloud API for Excel provides task support for handling request files."
+keywords: "Aspose.Cells, REST API, Task API, Support Request File, ImportData, SaveResult, Excel, Cloud, run task, cURL example"
+description: "Learn how to use the Support Request File feature in Aspose.Cells Cloud Task API. Includes cURL, PHP SDK sample, payload format, and error handling."
 weight: 10
 ---
 
@@ -17,7 +17,7 @@ weight: 10
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example demonstrates how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -36,7 +36,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" \
 {{< tab tabNum="2" >}}
 
 ```text
-HttpResponseMessage with the operation result.
+An HttpResponseMessage containing the operation result.
 ```
 
 {{< /tab >}}
