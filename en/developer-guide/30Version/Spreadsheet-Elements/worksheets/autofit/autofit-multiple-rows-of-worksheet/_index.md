@@ -1,12 +1,12 @@
 ---
-title: "Autofit Multiple Rows in an Excel Worksheet"
+title: "Aspose.Cells Cloud API – Autofit Multiple Rows in an Excel Worksheet (v3.0)"
 second_title: "Document"
 linktitle: "Rows"
 type: docs
 url: /worksheets/autofit/rows/
 aliases: [/autofit-multiple-rows-of-worksheet/]
-keywords: "autofit rows Excel, Aspose.Cells Cloud, REST API, worksheet, spreadsheet"
-description: "Learn how to use the Aspose.Cells Cloud REST API to autofit multiple rows in an Excel worksheet. Includes request syntax, parameters, cURL example, SDK snippets, and error handling."
+keywords: "autofit rows, Aspose.Cells Cloud, REST API, Excel worksheet, spreadsheet, autoFitterOptions"
+description: "Learn how to use Aspose.Cells Cloud REST API v3.0 to automatically adjust the height of multiple rows in an Excel worksheet. Includes request syntax, parameters, cURL example, SDK snippets, authentication details, and error handling."
 weight: 40
 ---
 
@@ -35,7 +35,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitro
 
 - `AutoFitMergedCells` _(boolean)_ – If `true`, merged cells are taken into account when calculating row height.
 - `IgnoreHidden` _(boolean)_ – When `true`, hidden rows are ignored during the autofit process.
-- `OnlyAuto` _(boolean)_ – Mirrors the query‑parameter `onlyAuto`; when set, it overrides the query value.
+- `OnlyAuto` _(boolean)_ – Mirrors the query‑parameter `onlyAuto`; when set, this field overrides the query value.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
