@@ -1,13 +1,13 @@
 ---
-title: "Aspose.Cells Cloud SDK for Ruby: Convert, merge, split, protect, search, replace, and more"
+title: "Aspose.Cells Ruby SDK – Convert, Merge, Split & Protect"
 second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud SDK for Ruby: Convert, merge, split, protect, search, replace, and more"
+ArticleTitle: "Aspose.Cells Ruby SDK – Convert, Merge, Split & Protect"
 linktitle: "Aspose.Cells Cloud SDK for Ruby"
 type: docs
 url: /available-sdks/aspose-cells-cloud-ruby/
-description: "The Aspose.Cells Cloud SDK for Ruby provides a fluent, cross‑platform API for creating, converting, merging, splitting, protecting, searching, and replacing Excel objects without requiring Office installations."
+description: "Learn how to install, authenticate, and use Aspose.Cells Cloud Ruby SDK to create, convert, merge, split, protect, search, and replace Excel workbooks directly from Ruby."
 weight: 30
-keywords: "Ruby, Aspose.Cells Cloud, Excel SDK, REST API, Convert, Merge, Split, Protect, Search, Replace, Chart, Pivot Table, Table/List Object, PDF, CSV, JSON, Markdown"
+keywords: "Aspose Cells Ruby, Excel API Ruby, cloud Excel conversion, Ruby SDK"
 ---
 
 The SDK is open‑source and licensed under the MIT License. You can access [the Ruby library source code for Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby).
@@ -42,6 +42,6 @@ gem install aspose_cells_cloud
   Define the source file name, desired output format, and the storage folder path.
 
 - **Execute workbook conversion**  
-  Call the `post_convert_workbook` method and handle the response.
+  Call the `post_convert_workbook` method and handle the API response.
 
 {{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_AvailableSDKs.rb" >}}
