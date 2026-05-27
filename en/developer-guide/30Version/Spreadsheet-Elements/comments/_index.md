@@ -1,16 +1,16 @@
 ---
-title: "Working with Excel Comments"
+title: "Add, Retrieve, Update & Delete Excel Comments – Aspose.Cells Cloud API 3.0"
 second_title: "Document"
 linktitle: "Comments"
 type: docs
 url: /comments/
 aliases: [/working-with-comments/]
-keywords: "Excel comments, cell notes, comment box, Aspose Cells Cloud API, REST API, spreadsheet annotation"
-description: "Learn how to programmatically add, retrieve, update, and delete Excel comments using the Aspose.Cells Cloud REST API (v3.0). Includes request/response examples, prerequisites, version info, and error‑handling guidance."
+keywords: "Aspose.Cells, Excel comments API, add comment, retrieve comment, update comment, delete comment, REST API"
+description: "Learn how to add, get, update, and delete Excel comments via Aspose.Cells Cloud REST API (v3.0). Includes request/response examples, required authentication, and error handling."
 weight: 100
 ---
 
-When creating an Excel workbook, users can add comments for various reasons. A common use is to explain a formula in a cell, especially when the file will be shared with others. Comments can also serve as reminders, notes for collaborators, or as a means of cross‑referencing with other workbooks.Once a comment has been added, Excel allows users to resize, reshape, and format the comment box to suit their preferred style. Mastering comment management helps users get the most out of this feature.
+When creating an Excel workbook, users can add comments for various reasons. A common use is to explain a formula in a cell, especially when the file will be shared with others. Comments can also serve as reminders, notes for collaborators, or as a means of cross‑referencing with other workbooks. After a comment has been added, Excel allows users to resize, reshape, and format the comment box to suit their preferred style. Mastering comment management helps users get the most out of this feature.
 
 **Add a Comment**
 
