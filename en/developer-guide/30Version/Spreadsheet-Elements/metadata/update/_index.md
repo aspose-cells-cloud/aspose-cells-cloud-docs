@@ -1,15 +1,15 @@
 ---
-title: "Update Metadata"
+title: "Update Metadata in Excel Files – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Update without using storage"
 type: docs
 url: /metadata/update/
-keywords: "metadata, Excel, Aspose.Cells Cloud, REST API, update, spreadsheet"
-description: "The Aspose.Cells Cloud REST API enables updating metadata in Excel files. It supports multiple SDKs (C#, Java, Python, Ruby, Go, etc.) for seamless integration across various programming languages."
+keywords: "Aspose.Cells, update metadata, Excel API, REST, cloud SDK"
+description: "Learn how to update document metadata in Excel files using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, request parameters, response format, and SDK code samples for C#, Java, Python, and more."
 weight: 35
 ---
 
-This REST API updates **metadata** in multiple Excel files.
+This REST API updates **metadata** in a single Excel file.
 
 ## REST API
 
@@ -26,7 +26,7 @@ POST http://api.aspose.cloud/v3.0/cells/metadata/update
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PostMetadata) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example demonstrates how to call the Cloud API using cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
