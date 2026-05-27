@@ -1,12 +1,12 @@
 ---
-title: "Get page count from an Excel File"
+title: "Get Page Count from an Excel Workbook – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Pages"
 type: docs
 url: /get-page-count-from-an-excel-file/
 aliases: [/workbook/page-count/, /workbook/get/page-count/]
-keywords: "Aspose.Cells Cloud, get page count from Excel file, REST API, workbook page count, Excel API"
-description: "Retrieve the total number of printable pages in an Excel workbook via the Aspose.Cells Cloud REST API (v3.0). Includes request format, required parameters, cURL example, response schema, error handling, and SDK snippets for multiple languages."
+keywords: "Aspose.Cells, page count, Excel API, REST, v3.0"
+description: "Learn how to retrieve the printable page count of an Excel workbook using Aspose.Cells Cloud REST API v3.0. Includes request format, required parameters, cURL example, SDK code snippets, and error handling."
 weight: 10
 version: "v3.0"
 ---
@@ -15,8 +15,8 @@ This REST API returns the **page count** for a workbook.
 
 ## REST API
 
-```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/pagecount
+```http
+GET https://api.aspose.cloud/v3.0/cells/{name}/pagecount
 ```
 
 ### The request parameters
@@ -36,11 +36,10 @@ You can use the cURL command‑line tool to access Aspose.Cells REST API easily.
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/pagecount" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Report.xlsx/pagecount?folder=Docs&storageName=MyStorage" \
   -X GET \
-  -H "Content-Type: application/json" \
-  -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
+  -H "Authorization: Bearer <jwt token>" \
+  -H "Accept: application/json"
 ```
 
 {{< /tab >}}
@@ -60,7 +59,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/pagecount" \
 | HTTP Status | Data Type | Description                                                       |
 | ----------- | --------- | ----------------------------------------------------------------- |
 | 200         | integer   | The total number of printable pages in the workbook (e.g., `13`). |
-| 4xx‑5xx     | JSON      | Error object (see _Error Handling_ section).                      |
+| 4xx-5xx     | JSON      | Error object (see _Error Handling_ section).                      |
 
 ## Cloud SDK Family
 
