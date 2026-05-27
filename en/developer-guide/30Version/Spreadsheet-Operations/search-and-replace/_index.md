@@ -1,12 +1,12 @@
 ---
-title: "Search and Replace Text Content within Excel Files"
+title: "Search and Replace Text in Excel Files – Aspose.Cells Cloud API"
 second_title: "Documentation"
 linktitle: "Search and Replace"
 type: docs
 url: /search-and-replace/
 aliases: [/working-with-text/, /text/]
-description: "Learn how to search and replace text in Excel workbooks and worksheets using Aspose.Cells Cloud REST API. Includes request format, sample code for .NET, Java, Python, and error handling."
-keywords: "Aspose.Cells Cloud, Excel, search and replace, REST API, .NET, Java, Python"
+description: "Learn how to search and replace text in Excel workbooks and worksheets using the Aspose.Cells Cloud REST API. Includes request format, SDK code samples for .NET, Java, Python, and error‑handling guidance."
+keywords: "Aspose.Cells, Excel, search replace, REST API, .NET, Java, Python"
 weight: 20
 ---
 
@@ -14,7 +14,7 @@ Text operations are complex processes for Excel files. Many factors contribute t
 
 ## Overview
 
-Search and replace lets you locate specific strings in a workbook or a particular worksheet and substitute them with new values. The operation works with all formats supported by Aspose.Cells Cloud, such as **XLS, XLSX, XLSM, XLSB, ODS, CSV**, and others.
+Search and replace lets you locate specific strings in a workbook or a particular worksheet and substitute them with new values. Aspose.Cells Cloud works with all formats supported, such as **XLS, XLSX, XLSM, XLSB, ODS, CSV**, and others.
 
 ## Prerequisites
 
