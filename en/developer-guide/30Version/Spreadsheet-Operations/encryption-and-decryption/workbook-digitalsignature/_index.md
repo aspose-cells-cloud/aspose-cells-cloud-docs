@@ -1,5 +1,5 @@
 ---
-title: "Add a Digital Signature to an Excel Workbook"
+title: "Add a Digital Signature to an Excel Workbook – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Digital signature"
 type: docs
@@ -7,8 +7,8 @@ url: /excel-digital-signature/
 aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/
-keywords: "Aspose.Cells Cloud, digital signature, Excel workbook, REST API, .pfx, OAuth2"
-description: "Learn how to add a digital signature to an Excel workbook using the Aspose.Cells Cloud API (v4.0). Includes endpoint, required parameters, authentication flow, error handling, and SDK samples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
+keywords: "Aspose.Cells Cloud, digital signature, Excel workbook, REST API, .pfx, OAuth2, API v4.0"
+description: "Learn how to add a digital signature to an Excel workbook with Aspose.Cells Cloud API v4.0. Includes endpoint, parameters, authentication steps, error handling, and SDK examples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
 weight: 35
 ---
 
