@@ -1,11 +1,11 @@
 ---
-title: "Working with Excel Data Validation"
+title: "Working with Excel Data Validation – Aspose.Cells Cloud API 3.0"
 second_title: "Document"
 linktitle: "Validations"
 type: docs
 url: /validations/
-keywords: "Excel data validation, Aspose.Cells Cloud, REST API, spreadsheet, Office Cloud"
-description: "Learn how to add, retrieve, update, delete, and clear Excel data validation rules programmatically with Aspose.Cells Cloud REST API. Includes examples for .NET, Java, Python, and PHP."
+keywords: "Aspose.Cells, Excel data validation, REST API, add validation, get validation, update validation, delete validation, clear validation"
+description: "Learn how to add, retrieve, update, delete, and clear Excel data‑validation rules with Aspose.Cells Cloud 3.0 REST API. Code samples in .NET, Java, Python & PHP."
 weight: 100
 ---
 
@@ -13,7 +13,7 @@ Data validation is a feature in Microsoft Excel used to control what a user ca
 
 For example, a user can specify a meeting scheduled between 9:00 AM and 6:00 PM.
 
-Data validation can be used to ensure a value is a positive number, a date between the 15th and 30th of a month, a date occurring within the next 30 days, or a text entry containing fewer than 25 characters, and so on.
+Data validation can be used to ensure a value is a positive number, a date between the 15th and 30th of a month, a date occurring within the next 30 days, or a text entry containing fewer than 25 characters and so on.
 
 ## Working with validations on an Excel file
 
