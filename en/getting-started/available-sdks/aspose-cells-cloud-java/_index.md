@@ -1,13 +1,13 @@
 ---
-title: "Aspose.Cells Cloud SDK for Java: Convert, merge, split, protect, search, replace, and more"
+title: "Aspose.Cells Cloud Java SDK – Convert, Merge, Split, Protect, Search & Replace Excel Files"
 second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud SDK for Java: Convert, merge, split, protect, search, replace, and more"
+ArticleTitle: "Aspose.Cells Cloud Java SDK – Convert, Merge, Split, Protect, Search & Replace Excel Files"
 linktitle: "Aspose.Cells Cloud SDK for Java"
 type: docs
 url: /available-sdks/aspose-cells-cloud-java/
-description: "Use Aspose.Cells Cloud Java SDK to create, convert, merge, split, protect, search & replace Excel files without Office installed."
+description: "Learn how to convert, merge, split, protect, search, and replace Excel files using Aspose.Cells Cloud Java SDK. Quick Maven setup, sample code, and authentication guide."
 weight: 30
-keywords: "Aspose Cells Java SDK, Excel conversion Java, Cloud spreadsheet API, Java Excel library, Aspose.Cells Cloud Java"
+keywords: "Aspose Cells Java SDK, Excel to PDF Java, cloud spreadsheet API, Maven Aspose Cells"
 ---
 
 The SDK is open‑source and licensed under the MIT License. You can access [the Java library source code for Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-java).
@@ -65,6 +65,8 @@ In your Maven project, add the Aspose repository and the SDK dependency to `pom.
    import com.aspose.cloud.cells.model.*;
    import java.io.FileOutputStream;
    import java.io.InputStream;
+   import java.nio.file.Files;
+   import java.nio.file.Paths;
    ```
 
 2. **Configure API client with credentials**  
@@ -165,5 +167,3 @@ Add the Aspose Cloud repository and the `aspose-cloud-cells` dependency (version
 ### Where can I find the full API reference?
 
 The official reference is available at <https://reference.aspose.cloud/cells/java/>. Each method used in this guide (e.g., `uploadFile`, `postConvertWorkbook`) is documented there with parameter details and response types.
-
----
