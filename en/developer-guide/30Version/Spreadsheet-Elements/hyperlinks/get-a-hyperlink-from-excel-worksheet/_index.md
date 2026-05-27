@@ -1,9 +1,9 @@
 ---
-title: "Get Worksheet Hyperlink"
+title: "Aspose.Cells Cloud API – Get Worksheet Hyperlink (v3.0)"
 type: docs
 url: /hyperlinks/get/
-keywords: "Aspose.Cells Cloud, Get Worksheet Hyperlink, Excel hyperlink API, REST, JWT authentication"
-description: "Retrieve a specific hyperlink from an Excel worksheet using Aspose.Cells Cloud API (v3.0). Includes endpoint, parameters, cURL example, authentication steps, error handling, and SDK snippets."
+keywords: "Aspose.Cells, Cloud API, Get Worksheet Hyperlink, Excel hyperlink, REST, JWT"
+description: "Retrieve a specific hyperlink from an Excel worksheet using Aspose.Cells Cloud API v3.0. Learn endpoint syntax, required parameters, authentication steps, error handling, and SDK examples."
 weight: 10
 ---
 
@@ -20,7 +20,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks
 | Parameter Name | Type    | Location | Description                                    |
 | -------------- | ------- | -------- | ---------------------------------------------- |
 | name           | string  | path     | The name of the Excel file.                    |
-| sheetName      | string  | path     | The name of the worksheet containing the link. |
+| sheetName      | string  | path     | The name of the worksheet containing the hyperlink. |
 | hyperlinkIndex | integer | path     | Zero‑based index of the hyperlink to retrieve. |
 | folder         | string  | query    | The folder where the document is stored.       |
 | storageName    | string  | query    | The name of the storage service.               |
