@@ -1,14 +1,13 @@
 ---
-title: "Aspose.Cells Cloud Web API - Get Aspose Cells Cloud Status"
+title: "Aspose.Cells Cloud API – Retrieve Real‑Time Service Health Status"
 second_title: "Document"
-ArticleTitle: "Get Aspose.Cells Cloud Run Status"
+ArticleTitle: "Retrieve Aspose.Cells Cloud Service Run Status"
 linktitle: "Get Aspose Cells Cloud Status"
 type: docs
 url: /get-aspose-cells-cloud-status/
-keywords: "Aspose, Cells, Cloud, API, Health Status, Excel, REST, Service Monitoring, SLA Compliance"
-description: "Monitor the Health Status of Aspose.Cells Cloud Service in real-time."
+keywords: "Aspose.Cells Cloud status, health check API, Excel API monitoring, Aspose Cloud SLA, REST health endpoint"
+description: "Check the real‑time health status of Aspose.Cells Cloud via the GET endpoint, including request details and response format."
 weight: 100
-kwords: "Excel API, Aspose Cloud, REST API, Health Check, Cloud Service, Response Latency, Error Rates, SLA Monitoring, Integration Troubleshooting"
 ---
 
 Get the Health Status of the Aspose.Cells Cloud Service in real-time.
@@ -17,8 +16,8 @@ Get the Health Status of the Aspose.Cells Cloud Service in real-time.
 
 ### **Web API**
 
-```
-GET http://api.aspose.cloud/v4.0/cells
+```http
+GET https://api.aspose.cloud/v4.0/cells
 ```
 
 ### **Request Parameters:**
@@ -30,7 +29,7 @@ GET http://api.aspose.cloud/v4.0/cells
 
 ```json
 {
-String
+  "String"
 }
 ```
 
