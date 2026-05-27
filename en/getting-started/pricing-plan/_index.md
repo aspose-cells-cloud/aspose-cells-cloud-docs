@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Pricing Plan: 150 free API calls per month, with a tiered pricing model for exceeding usage."
+title: "Aspose.Cells Cloud Pricing – 150 Free API Calls Monthly + Tiered Pay‑As‑You‑Go Rates"
 second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud Pricing Plan"
+ArticleTitle: "Aspose.Cells Cloud Pricing Overview"
 linktitle: "Pricing Plan"
 type: docs
 url: /pricing-plan/
 description: "Explore Aspose.Cells Cloud pricing: 150 free API calls each month, then pay‑as‑you‑go with rates as low as $0.007 per call. No hidden upgrades—just transparent, tiered pricing."
 weight: 70
-keywords: "Aspose.Cells Cloud pricing, API call cost, pay‑as‑you‑go Excel API, cloud spreadsheet pricing"
+keywords: "Aspose.Cells Cloud pricing, API call cost, pay‑as‑you‑go Excel API, cloud spreadsheet pricing, tiered pricing, free API calls"
 ---
 
-Aspose builds incredibly easy‑to‑use Software as a Service (SaaS) that developers can fully evaluate before committing to buying. To do this, we rely on a slightly different sales model.
+Aspose builds an incredibly easy‑to‑use Software as a Service (SaaS) that developers can fully evaluate before committing to purchase. To do this, we rely on a slightly different sales model.
 
 <table style="font-size: 16px; width: 100%; border-collapse: collapse;">
     <thead>
