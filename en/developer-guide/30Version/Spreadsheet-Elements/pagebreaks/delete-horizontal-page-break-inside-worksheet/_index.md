@@ -1,12 +1,12 @@
 ---
-title: "Delete horizontal page break"
+title: "Delete Horizontal Page Break – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Delete horizontal page break"
 type: docs
 url: /page-breaks/delete-horizontal-page-break/
 aliases: [/delete-horizontal-page-break-inside-worksheet/]
-keywords: "Aspose.Cells Cloud, Delete horizontal page break, Excel worksheet, REST API, SDK"
-description: "Use Aspose.Cells Cloud REST API to delete a horizontal page break from an Excel worksheet. The API is available through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) for seamless integration."
+keywords: "Aspose.Cells, Cloud API, delete horizontal page break, Excel, REST, SDK"
+description: "Delete a horizontal page break from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, SDK code snippets, parameters, and error handling."
 weight: 50
 ---
 
@@ -22,11 +22,11 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizont
 
 | Parameter Name | Type    | Location | Description                                                |
 | -------------- | ------- | -------- | ---------------------------------------------------------- |
-| `name`         | string  | path     | The name of the Excel file (workbook).                     |
-| `sheetName`    | string  | path     | The name of the worksheet containing the page break.       |
-| `index`        | integer | path     | Zero‑based index of the horizontal page break to delete.   |
-| `folder`       | string  | query    | Optional folder path in storage where the file is located. |
-| `storageName`  | string  | query    | Optional name of the storage service.                      |
+| `name`         | string  | Path     | The name of the Excel file (workbook).                     |
+| `sheetName`    | string  | Path     | The name of the worksheet containing the page break.       |
+| `index`        | integer | Path     | Zero‑based index of the horizontal page break to delete.   |
+| `folder`       | string  | Query    | Optional folder path in storage where the file is located. |
+| `storageName`  | string  | Query    | Optional name of the storage service.                      |
 
 ### Error Responses
 
