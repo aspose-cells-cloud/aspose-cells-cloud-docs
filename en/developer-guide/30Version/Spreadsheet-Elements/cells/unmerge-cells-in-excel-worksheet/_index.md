@@ -1,15 +1,15 @@
 ---
-title: "Unmerge Cells in Excel Worksheet"
+title: "Unmerge Cells in an Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /unmerge-cells-in-excel-worksheet/
 weight: 120
-keywords: "Aspose.Cells, Excel, Unmerge Cells, REST API, Cloud SDK, Spreadsheet"
-description: "Learn how to use the Aspose.Cells Cloud REST API to unmerge cells in an Excel worksheet, with request examples, response format, and SDK code samples for multiple programming languages."
+keywords: "Aspose.Cells Cloud, unmerge cells, Excel API, REST API, merge/unmerge cells, spreadsheet manipulation, cloud SDK"
+description: "Learn how to unmerge cells in an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes request syntax, parameter table, cURL example, and SDK code samples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
 ---
 
 This REST API unmerges cells in an Excel file.
 
-## REST API
+## Unmerge Cells REST API
 
 ```bash
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge
