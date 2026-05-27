@@ -1,12 +1,12 @@
 ---
-title: "Delete a pivot table in an Excel worksheet"
+title: "Delete a Pivot Table in an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: Delete
 type: docs
 url: /pivot-tables/delete/
 aliases: [/delete-worksheet-pivot-table-by-index/]
-keywords: "Aspose.Cells Cloud, delete pivot table, Excel worksheet, REST API, SDK, cURL"
-description: "Delete a pivot table from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request format, cURL example, error codes, and SDK snippets for C#, Java, Python, Node.js."
+keywords: "Aspose.Cells, delete pivot table, Excel REST API, cloud SDK"
+description: "Learn how to delete a pivot table from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request format, cURL example, error codes, and SDK snippets for C#, Java, Python, Node.js."
 weight: 70
 ---
 
@@ -30,7 +30,7 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivotta
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/DeleteWorksheetPivotTable) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
-You can use the **cURL command‑line tool** to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the **cURL command‑line tool** to access Aspose.Cells web services easily. The following example calls the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
