@@ -1,12 +1,12 @@
 ---
-title: "Delete a Picture from an Excel Worksheet – Aspose.Cells Cloud API"
+title: "Delete a Picture from an Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Delete"
 type: docs
 url: /pictures/delete/
 aliases: [/delete-a-specific-picture-from-excel-worksheet/]
-keywords: "Aspose.Cells, Cloud API, delete picture, Excel worksheet, REST"
-description: "Delete a picture from an Excel worksheet using Aspose.Cells Cloud REST API. Learn the DELETE endpoint, required parameters, authentication, error codes, and example code."
+keywords: "Aspose.Cells, delete picture API, Excel worksheet picture removal, REST DELETE, cloud SDK"
+description: "Learn how to delete a picture from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, parameters, curl example, error codes, and SDK samples."
 weight: 50
 ---
 
@@ -28,7 +28,7 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/picture
 | folder         | string  | query    | No       | The folder where the workbook is stored.             |
 | storageName    | string  | query    | No       | The name of the storage service (optional).          |
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make the call with cURL.
+You can use the cURL command-line tool to easily access Aspose.Cells web services. The following example shows how to make the call with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
