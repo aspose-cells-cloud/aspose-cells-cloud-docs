@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Upload File API – An Interface for Fast Uploading of Files in the Cloud"
+title: "Upload File – Aspose.Cells Cloud REST API (v4.0)"
 second_title: "Document"
-ArticleTitle: "Cloud-Based Excel File Management Solution – An Interface for Fast Uploading of Files in the Cloud"
+ArticleTitle: "Upload File – Aspose.Cells Cloud REST API (v4.0)"
 linktitle: "Upload File"
 type: docs
 url: /upload-file/
-keywords: "Aspose.Cells, file upload, Excel API, cloud storage, REST API, spreadsheet, PDF, CSV, JSON, Markdown"
-description: "A comprehensive guide to uploading files with the Aspose.Cells Cloud API, covering request parameters, response format, and usage examples."
+keywords: "Aspose.Cells Cloud, Upload File API, Excel file upload, REST API, cloud storage"
+description: "Learn how to upload Excel files to Aspose.Cells Cloud storage using the RESTful Upload File endpoint. Includes request syntax, parameters, sample cURL, and SDK code snippets."
 weight: 100
 ---
 
