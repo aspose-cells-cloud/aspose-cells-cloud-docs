@@ -1,13 +1,13 @@
 ---
-title: "Copy columns in an Excel worksheet"
+title: "Copy Columns in an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Copy"
 type: docs
 url: /columns/copy/
 aliases:
   [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
-keywords: "Aspose.Cells, copy columns, Excel API, REST, Cloud SDK, cURL, Java, Python"
-description: "Learn how to copy one or more columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, required parameters, authentication, error handling, and SDK examples in C#, Java, Python, and more."
+keywords: "Aspose.Cells, Aspose.Cells Cloud, copy columns, Excel API, REST, Cloud SDK, cURL, Java, Python"
+description: "Learn how to copy one or more columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, required parameters, authentication steps, error handling, and SDK examples for C#, Java, Python, and more."
 weight: 30
 ---
 
@@ -28,8 +28,8 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/col
 | **sourceColumnIndex**      | integer | query    | 0‑based index of the column to copy.                                                  |
 | **destinationColumnIndex** | integer | query    | 0‑based index where the copied column(s) will be inserted.                            |
 | **columnNumber**           | integer | query    | Number of consecutive columns to copy.                                                |
-| **worksheet**              | string  | query    | _(Optional)_ Worksheet identifier used when the worksheet name differs from the path. |
-| **folder**                 | string  | query    | Path to the folder containing the workbook in Aspose Cloud storage.                   |
+| **worksheet**              | string  | query    | Optional worksheet identifier used when the worksheet name differs from the path.    |
+| **folder**                 | string  | query    | Path to the folder containing the workbook in Aspose Cloud storage.                  |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostCopyWorksheetColumns) defines the full contract for this operation.
 
@@ -52,7 +52,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 
 ## Error Handling
 
-The API returns standard HTTP status codes with a JSON payload describing the error.
+The API returns standard HTTP status codes and provides a JSON payload that describes the error.
 
 | Status Code | Meaning                                          | Example JSON Body                                                   |
 | ----------- | ------------------------------------------------ | ------------------------------------------------------------------- |
