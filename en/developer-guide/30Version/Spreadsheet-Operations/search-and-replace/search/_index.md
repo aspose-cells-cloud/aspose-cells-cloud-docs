@@ -1,11 +1,11 @@
 ---
-title: "Find Text in Excel Files"
+title: "Search Text in Excel Files – Aspose.Cells Cloud REST API"
 second_title: "Document"
 linktitle: "Find Without Using Storage"
 type: docs
 url: /search/
 aliases: [/search-without-using-storage/, /search-without-storage/]
-keywords: "Aspose.Cells Cloud, Excel search, find text, REST API, cURL, SDK examples, XLSX, ODS"
+keywords: "Aspose.Cells Cloud, Excel text search API, find text in spreadsheet, REST API, cURL example, SDK examples"
 description: "Use the Aspose.Cells Cloud REST API to locate specific text within Excel (XLS, XLSX, XLSM, XLSB) and OpenDocument Spreadsheet (ODS) files. Includes cURL requests and SDK code snippets for multiple programming languages."
 weight: 50
 ---
