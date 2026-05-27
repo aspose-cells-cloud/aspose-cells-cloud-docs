@@ -1,10 +1,10 @@
 ---
-title: "How to Merge Cells in an Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
+title: "Merge Cells in an Excel Worksheet – Aspose.Cells Cloud API v3.0"
 type: docs
 url: /merge-cells-in-excel-worksheet/
 weight: 110
-keywords: "merge cells in Excel worksheet, Aspose.Cells Cloud, REST API, Excel, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Perl"
-description: "Step‑by‑step guide to merge cells in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, required parameters, authentication, response codes, and error handling."
+keywords: "Aspose Cells, merge cells, Excel API, REST, SDK"
+description: "Learn how to merge a range of cells in an Excel workbook using Aspose.Cells Cloud API v3.0. Includes authentication steps, cURL example, SDK code snippets, required parameters, response codes, and error handling."
 ---
 
 **API version:** v3.0 (last verified 2024‑09)
