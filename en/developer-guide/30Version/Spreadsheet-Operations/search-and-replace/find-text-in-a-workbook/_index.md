@@ -1,13 +1,13 @@
 ---
-title: "Find text in an Excel workbook"
+title: "Find Text in an Excel Workbook using Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Find in workbook"
 type: docs
 url: /workbook/find-text/
 aliases: [/find-text-in-a-workbook/]
 weight: 30
-keywords: "Find text, Excel workbook, Aspose.Cells Cloud, REST API, SDK, search text in workbook, Aspose.Cells findText, Excel API"
-description: "Learn how to use Aspose.Cells Cloud API to **find text** in Excel workbooks (XLS‑X, ODS). Includes cURL example, SDK snippets, and response schema. Get started now."
+keywords: "find text in Excel workbook, Aspose.Cells Cloud, findText API, Excel API, REST API, SDK, search text in workbook, Excel workbook search"
+description: "Learn how to use the Aspose.Cells Cloud v3.0 API to search for text in Excel workbooks (XLSX, ODS). Includes cURL example, SDK snippets, parameters, response schema, and error handling."
 ---
 
 This REST API searches for text in an Excel workbook.
@@ -29,7 +29,7 @@ The request accepts the following parameters:
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksTextSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
