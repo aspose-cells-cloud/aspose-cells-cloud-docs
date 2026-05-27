@@ -1,12 +1,12 @@
 ---
-title: "Export Excel Range to PDF, PNG, CSV – Aspose.Cells Cloud API"
+title: "Export Excel Range to PDF, PNG, CSV – Aspose.Cells Cloud API (v4.0)"
 second_title: "Document"
-ArticleTitle: "How to Export a Remote Spreadsheet Range to Other Formats: Step‑by‑Step Guide"
+ArticleTitle: "Step‑by‑Step Guide to Export a Remote Spreadsheet Range to Multiple Formats"
 linktitle: "Export Range as Format"
 type: docs
 url: /export-range-as-format/
-keywords: "Aspose.Cells, Export Range, Cloud API, Excel to PDF, Excel to CSV, Spreadsheet conversion"
-description: "Convert a specific Excel range stored in Aspose Cloud to PDF, PNG, CSV or other formats. Learn the endpoint, parameters, sample code, and error handling."
+keywords: "Aspose.Cells Cloud, Export Excel range, PDF conversion, PNG conversion, CSV conversion, API v4.0, spreadsheet conversion"
+description: "Export Excel range to PDF, PNG, CSV or other formats using Aspose.Cells Cloud API v4.0. Learn the endpoint, parameters, authentication, sample code, and error handling."
 weight: 100
 ---
 
