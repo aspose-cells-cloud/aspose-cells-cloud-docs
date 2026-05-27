@@ -1,12 +1,12 @@
 ---
-title: "Encrypt an Excel Workbook with Aspose.Cells Cloud API – Quick cURL & SDK Examples"
+title: "Encrypt an Excel Workbook with Aspose.Cells Cloud API – cURL & SDK Examples"
 second_title: "Document"
 linktitle: "Encrypt an Excel file"
 type: docs
 url: /excel-file-encrypt/
 aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
-keywords: "encrypt Excel workbook API, Aspose Cells, Excel encryption, REST API, Cloud SDK, cURL, C#, Java, Python, PHP, Ruby, Node.js, Go, Perl"
-description: "Learn how to encrypt an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes cURL command, SDK code samples (C#, Java, Python, …), required parameters, and error handling."
+keywords: "encrypt Excel workbook, Aspose.Cells, Excel encryption, REST API, cURL, SDK, C#, Java, Python, PHP, Ruby, Node.js, Go, Perl"
+description: "Learn how to encrypt an Excel workbook via Aspose.Cells Cloud REST API (v3.0) with cURL and SDK code samples for C#, Java, Python, and more."
 weight: 20
 ---
 
