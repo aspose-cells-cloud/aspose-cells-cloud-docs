@@ -1,17 +1,17 @@
 ---
-title: "Clear Contents and Styles of Cells in an Excel Worksheet"
+title: "How to Clear Cell Contents and Styles in an Excel Worksheet with Aspose.Cells Cloud REST API"
 type: docs
 url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
 keywords:
-  - Excel
-  - Aspose.Cells
+  - Aspose.Cells Cloud
+  - Excel clear cell contents
+  - clear cell styles
   - REST API
-  - clear contents
-  - clear styles
-  - worksheet
+  - cURL example
+  - worksheet clear
   - cloud API
-description: "Learn how to use Aspose.Cells Cloud REST API to clear cell contents and styles in an Excel worksheet, with cURL examples and SDK code snippets."
+description: "Step-by-step guide to clear cell contents and styles in an Excel worksheet using Aspose.Cells Cloud REST API, including cURL examples and SDK code snippets for multiple programming languages."
 ---
 
 This REST API clears the contents of cells in an Excel file.
