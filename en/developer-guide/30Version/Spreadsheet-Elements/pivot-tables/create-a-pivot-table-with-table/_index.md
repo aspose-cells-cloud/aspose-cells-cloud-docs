@@ -1,5 +1,5 @@
 ---
-title: "Convert table to pivot table"
+title: "Convert Table to Pivot Table with Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: Convert
 type: docs
@@ -9,8 +9,8 @@ aliases:
     /create-a-pivottable-with-table/,
     /create-new-pivot-table-with-list-object-as-source-data/,
   ]
-keywords: "pivot table, list object, Aspose.Cells Cloud, REST API, convert table to pivot table"
-description: "Learn how to create a pivot table from a list object using Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK references."
+keywords: "aspose cells, pivot table, list object, rest api, convert table to pivot table"
+description: "Learn how to convert an Excel table (ListObject) into a PivotTable using Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK code samples."
 weight: 60
 ---
 
@@ -19,20 +19,20 @@ This REST API creates a **pivot table** from a list object.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/SummarizeWithPivotTable
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/SummarizeWithPivotTable
 ```
 
 ### **Request parameters**
 
-| Parameter Name  | Type    | Location | Description                                |
-| --------------- | ------- | -------- | ------------------------------------------ |
-| name            | string  | path     | Workbook file name.                        |
-| sheetName       | string  | path     | Worksheet that contains the list object.   |
-| listObjectIndex | integer | path     | Index of the list object in the worksheet. |
-| destsheetName   | string  | query    | Name of the destination worksheet.         |
-| request         | object  | body     | JSON payload that defines the pivot table. |
-| folder          | string  | query    | Folder path where the workbook resides.    |
-| storageName     | string  | query    | Name of the storage.                       |
+| Parameter Name | Type    | Location | Description                                 |
+| -------------- | ------- | -------- | ------------------------------------------- |
+| name           | string  | path     | Workbook file name.                         |
+| sheetName      | string  | path     | Worksheet that contains the list object.    |
+| listObjectIndex| integer | path     | Index of the list object in the worksheet.  |
+| destSheetName  | string  | query    | Name of the destination worksheet.          |
+| request        | object  | body     | JSON payload that defines the pivot table.  |
+| folder         | string  | query    | Folder path where the workbook resides.     |
+| storageName    | string  | query    | Name of the storage.                        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSummarizeWithPivotTable) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -43,7 +43,7 @@ You can use the **cURL** command‑line tool to access Aspose.Cells web services
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "https://api-qa.aspose.cloud/v3.0/cells/TestCase.xlsx/worksheets/Sheet2/listobjects/0/SummarizeWithPivotTable?folder=CellsTests&destsheetName=Sheet4" \
+curl -v "https://api.aspose.cloud/v3.0/cells/TestCase.xlsx/worksheets/Sheet2/listobjects/0/SummarizeWithPivotTable?folder=CellsTests&destSheetName=Sheet4" \
 -X POST \
 -d '{"Name":"TestPivot","DestCellName":"C1","PivotFieldRows":[0,1],"PivotFieldColumns":[2],"PivotFieldData":[3,4]}' \
 -H "Content-Type: application/json" \
