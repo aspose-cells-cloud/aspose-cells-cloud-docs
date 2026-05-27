@@ -1,18 +1,18 @@
 ---
-title: "Delete Vertical Page Break"
+title: "Delete Vertical Page Break – Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Delete vertical page break"
 type: docs
 url: /page-breaks/delete-vertical-page-break/
 aliases: [/delete-vertical-page-break-inside-worksheet/]
-keywords: "delete vertical page break, Aspose.Cells Cloud, REST API"
-description: "Remove a vertical page break from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, SDK code snippets, parameters, and error handling."
+keywords: "Aspose.Cells Cloud, delete vertical page break, REST API, Excel, v3.0, cURL, SDK"
+description: "Remove a vertical page break from an Excel worksheet using Aspose.Cells Cloud REST API v3.0. See request format, parameters, cURL example, error codes, and SDK snippets."
 weight: 60
 ---
 
 ## REST API
 
-This REST API deletes a **vertical** page break.
+Use this REST API to delete a **vertical** page break.
 
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index}
@@ -20,17 +20,17 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/vertica
 
 ### Request Parameters
 
-| Parameter Name | Type    | Location | Required? | Description                                            |
-| -------------- | ------- | -------- | --------- | ------------------------------------------------------ |
-| name           | string  | path     | Yes       | The name of the Excel file.                            |
-| sheetName      | string  | path     | Yes       | The name of the worksheet containing the break.        |
-| index          | integer | path     | Yes       | Zero‑based index of the vertical page break to delete. |
-| folder         | string  | query    | No        | Folder path where the file is stored.                  |
-| storageName    | string  | query    | No        | Name of the storage service.                           |
+| Parameter Name | Type    | Location | Required | Description                                            |
+| -------------- | ------- | -------- | -------- | ------------------------------------------------------ |
+| name           | string  | path     | Yes      | The name of the Excel file.                            |
+| sheetName      | string  | path     | Yes      | The name of the worksheet containing the break.        |
+| index          | integer | path     | Yes      | Zero‑based index of the vertical page break to delete. |
+| folder         | string  | query    | No       | Folder path where the file is stored.                  |
+| storageName    | string  | query    | No       | Name of the storage service.                           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/DeleteVerticalPageBreak) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
