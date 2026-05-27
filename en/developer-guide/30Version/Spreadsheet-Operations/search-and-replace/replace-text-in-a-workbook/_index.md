@@ -1,13 +1,13 @@
 ---
-title: "Replace text in an Excel workbook"
+title: "Replace Text in Excel Workbook – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Replace in workbook"
 type: docs
 url: /workbook/replace-text/
 aliases: [/replace-text-in-a-workbook/]
 weight: 60
-keywords: "Aspose.Cells Cloud, Replace Text, Excel Workbook, XLSX, ODS, REST API, Spreadsheet, SDK"
-description: "Replace text in Excel (XLS, XLSX, XLSM, XLSB) and OpenDocument Spreadsheet (ODS) workbooks using Aspose.Cells Cloud REST API. Available via cURL and a wide range of SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, etc.)."
+keywords: "Aspose.Cells, Replace Text, Excel API, Cloud, REST, SDK"
+description: "Learn how to replace text in Excel (XLS, XLSX, XLSM, XLSB) and ODS workbooks using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, and SDK snippets."
 ---
 
 This REST API replaces text in an Excel workbook.
@@ -31,14 +31,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceTex
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextReplace) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to call Aspose.Cells web services easily. The example below shows how to make a request with cURL.
+You can use the cURL command‑line tool to call Aspose.Cells web services easily. The example below demonstrates how to make a request with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/replaceText?oldValue=a&newValue=a12" -H "accept: application/json"
+curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/replaceText?oldValue=a&newValue=a12" -H "accept: application/json"
 ```
 
 {{< /tab >}}
