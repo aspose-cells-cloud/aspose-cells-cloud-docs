@@ -1,11 +1,11 @@
 ---
-title: "Delete Worksheet Validation – Aspose.Cells Cloud"
+title: "Delete Worksheet Validation – Aspose.Cells Cloud API Reference"
 second_title: "Document"
 linktitle: "Delete"
 type: docs
 url: /validations/delete/
-keywords: "Delete, worksheet validation, Aspose.Cells Cloud, Excel API"
-description: "Learn how to delete a worksheet validation from an Excel file using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication details, cURL example, error handling, and SDK code snippets."
+keywords: "delete worksheet validation, Aspose.Cells Cloud, Excel API, REST API"
+description: "Learn how to delete a worksheet validation in an Excel file using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication, cURL example, error handling, and SDK snippets."
 weight: 10
 ---
 
