@@ -1,16 +1,16 @@
 ---
-title: "Find text in an Excel worksheet"
+title: "Find Text in an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Find in worksheet"
 type: docs
 url: /worksheets/find-text/
 aliases: [/find-text-in-a-worksheet/]
 weight: 40
-keywords: "Excel, Aspose.Cells Cloud, REST API, find text, worksheet, spreadsheet, search"
-description: "Use the Aspose.Cells Cloud REST API to find text in an Excel worksheet. The API is available across multiple SDKs and programming languages."
+keywords: "Excel, Aspose.Cells, Cloud API, find text, worksheet search"
+description: "Learn how to use Aspose.Cells Cloud REST API to search for specific text within an Excel worksheet. Includes request format, parameters, cURL example, and SDK code samples."
 ---
 
-This REST API searches for text in an Excel worksheet.
+This REST API searches for specific text within an Excel worksheet.
 
 ## REST API
 
@@ -18,7 +18,7 @@ This REST API searches for text in an Excel worksheet.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/findText
 ```
 
-### The request parameters are
+### Request Parameters
 
 | Parameter Name | Type   | Location | Description        |
 | -------------- | ------ | -------- | ------------------ |
@@ -30,7 +30,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/findText
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextSearch) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The example below shows how to call the Cloud API with cURL.
+You can use the **cURL** command-line tool to access Aspose.Cells web services easily. The example below shows how to call the Cloud API using cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
