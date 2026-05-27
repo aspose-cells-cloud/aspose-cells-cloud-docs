@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud – Merge, Split & Import Spreadsheet Data"
+title: "Aspose.Cells Cloud API – Import, Merge & Split Spreadsheet Data (v3.0)"
 second_title: "Document"
-ArticleTitle: "Spreadsheet Data Processing – Merge, Split & Import"
+ArticleTitle: "Spreadsheet Data Processing – Import, Merge & Split with Aspose.Cells Cloud"
 linktitle: "Data Processing"
 type: docs
 url: /data-processing/
-keywords: "Aspose.Cells, Cloud API, spreadsheet merge, spreadsheet split, data import"
-description: "Learn how to import CSV/JSON, merge remote Excel files, and split worksheets using Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells Cloud, data processing, import CSV, merge Excel files, split worksheets, REST API, v3.0"
+description: "Learn how to import CSV/JSON data, merge remote Excel workbooks, and split worksheets using Aspose.Cells Cloud REST API (v3.0, June 2026)."
 weight: 30
 ---
 
@@ -24,9 +24,9 @@ The **Data Processing** section of Aspose.Cells Cloud API enables you to import,
 ## Data Import and Management
 
 - **[Import CSV, JSON, XML data into Excel files](https://docs.aspose.cloud/cells/import-data-into-spreadsheet/)**
-  - Supports multiple data‑format conversions,
-  - Batch data‑import processing,
-  - Field mapping and format preservation.
+  - Supports multiple data‑format conversions
+  - Batch data‑import processing
+  - Field mapping and format preservation
 
   **When to use**
   - _Use case_: Load external data sources into a workbook for further analysis.
@@ -38,8 +38,8 @@ The **Data Processing** section of Aspose.Cells Cloud API enables you to import,
 ### Basic Merging Functionality
 
 - **[Merge Remote Excel Files into Specified Workbook](https://docs.aspose.cloud/cells/merge-remote-spreadsheet/)**
-  - Merging across cloud‑storage files,
-  - Sheet‑level merging control.
+  - Merging across cloud‑storage files
+  - Sheet‑level merging control
 
   **When to use**
   - _Use case_: Consolidate several workbooks stored in cloud storage into a single workbook.
@@ -49,8 +49,8 @@ The **Data Processing** section of Aspose.Cells Cloud API enables you to import,
 ### Batch Merging Function
 
 - **[Merge Multiple Excel Files into a Single Workbook](https://docs.aspose.cloud/cells/merge-spreadsheets/)**
-  - Intelligent merging of multiple files,
-  - Automatic handling of conflicting data.
+  - Intelligent merging of multiple files
+  - Automatic handling of conflicting data
 
   **When to use**
   - _Use case_: Combine a collection of related reports into one comprehensive document.
@@ -60,8 +60,8 @@ The **Data Processing** section of Aspose.Cells Cloud API enables you to import,
 ### Folder‑level Merging
 
 - **[Merge Excel files that match in a remote folder](https://docs.aspose.cloud/cells/merge-spreadsheets-in-remote-folder/)**
-  - Filter files by rules,
-  - Batch folder operations.
+  - Filter files by rules
+  - Batch folder operations
 
   **When to use**
   - _Use case_: Merge all spreadsheets that follow a naming convention within a specific cloud folder.
@@ -73,8 +73,8 @@ The **Data Processing** section of Aspose.Cells Cloud API enables you to import,
 ### Worksheet Level Splitting
 
 - **[Split an Excel file into multiple files based on worksheets](https://docs.aspose.cloud/cells/split-remote-spreadsheet/)**
-  - Each worksheet generates an independent file,
-  - Preserves formatting and formulas.
+  - Each worksheet generates an independent file
+  - Preserves formatting and formulas
 
   **When to use**
   - _Use case_: Distribute individual worksheets to different stakeholders.
@@ -84,8 +84,8 @@ The **Data Processing** section of Aspose.Cells Cloud API enables you to import,
 ### Custom Rule Splitting
 
 - **[Split Excel File According to Custom Rules](https://docs.aspose.cloud/cells/split-spreadsheet/)**
-  - Split by row count, column count, content conditions,
-  - Flexible rule‑based partitioning.
+  - Split by row count, column count, content conditions
+  - Flexible rule‑based partitioning
 
   **When to use**
   - _Use case_: Partition a large dataset into smaller, more manageable files for batch processing.
