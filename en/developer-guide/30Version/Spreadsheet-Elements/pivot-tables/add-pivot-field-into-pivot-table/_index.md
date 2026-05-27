@@ -1,12 +1,12 @@
 ---
-title: "Add a Pivot Field to a Pivot Table"
+title: "Add a Pivot Field to a Pivot Table – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Add Pivot Field"
 type: docs
 url: /pivot-tables/add-pivot-field/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel, pivot table, add pivot field, REST API, SDK"
-description: "Learn how to add a pivot field to an existing pivot table using the Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells Cloud, Excel, pivot table, add pivot field, REST API, SDK, Aspose Cells Cloud API, v3.0"
+description: "Learn how to add a pivot field to an existing PivotTable in Excel using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint URL, request parameters, cURL example, authentication details, and SDK code snippets for C#, Java, Python, Node.js, and more."
 weight: 40
 ---
 
@@ -15,7 +15,7 @@ This REST API **adds** a pivot field to an existing pivot table.
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
 ```
 
 ### Request parameters
@@ -40,7 +40,7 @@ You can use the **cURL** command‑line tool to call Aspose.Cells web services. 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row" \
   -X PUT \
   -d '{"Data":[1,2]}' \
   -H "Content-Type: application/json" \
