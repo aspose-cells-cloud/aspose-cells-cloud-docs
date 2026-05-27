@@ -1,9 +1,9 @@
 ---
-title: "Delete Worksheet Hyperlink"
+title: "Delete Worksheet Hyperlink – Aspose.Cells Cloud API"
 type: docs
 url: /hyperlinks/delete/
-keywords: "Aspose.Cells Cloud, delete hyperlink, Excel API, REST delete hyperlink, worksheet hyperlink removal"
-description: "Delete a worksheet hyperlink by index using Aspose.Cells Cloud API. Learn required parameters, authentication, and see code samples for C#, Java, Python, and more."
+keywords: "delete worksheet hyperlink, Aspose.Cells Cloud, REST API"
+description: "Remove a hyperlink from an Excel worksheet by its index using Aspose.Cells Cloud REST API. Learn required parameters, authentication steps, and see code samples in C#, Java, Python, and more."
 weight: 40
 ---
 
@@ -37,7 +37,7 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperli
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Hypelinks/DeleteWorksheetHyperlink) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The example below shows how to call the API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The cURL command below shows how to call the API.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
