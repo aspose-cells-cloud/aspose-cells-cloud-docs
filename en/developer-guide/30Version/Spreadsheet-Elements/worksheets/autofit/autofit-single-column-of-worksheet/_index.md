@@ -1,5 +1,5 @@
 ---
-title: "Autofit Column in Excel with Aspose.Cells Cloud API – Quick Guide"
+title: "How to Autofit a Column in Excel Using Aspose.Cells Cloud API – Quick Guide"
 second_title: "Document"
 linktitle: "Column"
 type: docs
@@ -10,7 +10,7 @@ description: "Learn how to automatically resize a column (or column range) in an
 weight: 10
 ---
 
-This REST API automatically adjusts the width of a single column or a contiguous range of columns on an Excel worksheet.
+This REST API automatically adjusts the width of a single column or a contiguous range of columns in an Excel worksheet.
 
 ## REST API
 
@@ -43,7 +43,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitco
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to call Aspose.Cells Cloud services. The example below demonstrates how to invoke the autofit‑column endpoint.
+You can use the **cURL** command‑line tool to call Aspose.Cells Cloud services. The example below demonstrates how to invoke the autofit‑column API endpoint.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
