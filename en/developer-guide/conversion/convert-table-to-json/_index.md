@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Web API – Convert Local Excel Table Data to a JSON File"
+title: "Convert Table to JSON – Aspose.Cells Cloud API (v4.0) | Free Online Tool"
 second_title: "Document"
-ArticleTitle: "How to Convert Local Spreadsheet Table Data to a JSON File: Step‑by‑Step Guide"
+ArticleTitle: "Step‑by‑Step Guide to Convert a Local Spreadsheet Table to JSON Using Aspose.Cells Cloud API"
 linktitle: "Convert Table to JSON"
 type: docs
 url: /convert-table-to-json/
-keywords: "Excel API, JSON conversion, cloud file conversion, spreadsheet"
-description: "Use Aspose.Cells Cloud API to transform a local Excel table into a JSON file in a single PUT request. Includes cURL example, parameters, and SDK snippets for C#, Java, Python, and more."
+keywords: "Aspose.Cells, Convert Table to JSON, Excel to JSON, Cloud API, v4.0, SDK snippets"
+description: "Learn how to convert a local Excel table to JSON with Aspose.Cells Cloud API (v4.0). Includes cURL example, parameters, and SDK snippets for C#, Java, Python, and more."
 weight: 100
 ---
 
@@ -54,7 +54,7 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sh
 ### Request Body Example (multipart/form‑data)
 
 ```http
-POST /v4.0/cells/convert/table/json?worksheet=Sheet1&tableName=MyTable HTTP/1.1
+PUT /v4.0/cells/convert/table/json?worksheet=Sheet1&tableName=MyTable HTTP/1.1
 Host: api.aspose.cloud
 Authorization: Bearer {access_token}
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
@@ -160,7 +160,7 @@ The following code examples demonstrate how to interact with Aspose.Cells web se
 ### Frequently Asked Questions
 
 **Q:** _How do I convert a local Excel table to JSON using Aspose.Cells Cloud?_  
-**A:** Send a `PUT` request to `https://api.aspose.cloud/v4.0/cells/convert/table/json` with the workbook in `FormData` and specify `worksheet` and `tableName` as query parameters. The API returns the JSON file as a stream.
+**A:** Send a `PUT` request to `https://api.aspose.cloud/v4.0/cells/convert/table/json` with the workbook in `FormData` and specify `worksheet` and `tableName` as query parameters. The API returns the JSON file as a stream in the response body.
 
 **Q:** _What are the required parameters for this API?_  
 **A:** Required: `Spreadsheet` (multipart/form‑data file), `worksheet` (string), `tableName` (string). Optional: `outPath`, `outStorageName`, `fontsLocation`, `region`, `password`.
