@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Web API – Translate Spreadsheet to Target Language"
+title: "Translate Spreadsheet with Aspose.Cells Cloud AI – Multi‑Language Excel API"
 second_title: "Document"
 ArticleTitle: "How to Translate an Entire Spreadsheet Using Aspose.Cells Cloud AI Translation API"
 linktitle: "Translate Spreadsheet"
 type: docs
 url: /translate-spreadsheet/
-keywords: "Aspose.Cells Cloud, Translate Spreadsheet API, AI translation, spreadsheet translation, targetLanguage, multi‑sheet translation, cloud spreadsheet processing, Aspose.Cells Cloud translation"
-description: "Translate an entire Excel workbook with Aspose.Cells Cloud AI. Preserve formulas, charts, and formatting while converting text to any supported language. Learn endpoint, parameters, SDK examples, limits, and error handling."
+keywords: "Aspose.Cells Cloud, Translate Spreadsheet API, AI translation, Excel translation, multi-language spreadsheet, cloud spreadsheet processing"
+description: "Translate an entire Excel workbook while preserving formulas, charts, and layout. Learn the API endpoint, parameters, SDK examples, rate limits, and error handling."
 weight: 100
 ---
 
-The **TranslateSpreadsheet** endpoint, part of the **Translate Spreadsheet API**, reads every text element in a workbook, sends the content to an AI‑powered translation service, and returns a new spreadsheet file where all textual data is rendered in the specified **targetLanguage**. The operation keeps the original layout, cell styles, formulas, and **the** multi‑sheet structure intact, making it ideal for globalizing reports, dashboards, and data‑driven documents. Supported file formats include XLS, XLSX, XLSM, CSV, and ODS. Errors are returned for invalid language codes, authentication failures, or translation‑service outages.
+The **TranslateSpreadsheet** endpoint, part of the **Translate Spreadsheet API**, reads every text element in a workbook, sends the content to an AI‑powered translation service, and returns a new spreadsheet file where all textual data is rendered in the specified **targetLanguage**. The operation keeps the original layout, cell styles, formulas, and multi‑sheet structure intact, making it ideal for globalizing reports, dashboards, and data‑driven documents. Supported file formats include XLS, XLSX, XLSM, CSV, and ODS. Errors are returned for invalid language codes, authentication failures, or translation‑service outages.
 
 ## **Translate Spreadsheet API**
 
@@ -33,7 +33,7 @@ PUT https://api.aspose.cloud/v4.0/cells/ai/translate/spreadsheet
 
 Successful response (200 OK)  
 Headers:  
-Content‑Type: application/octet-stream // or text/csv when CSV output is requested  
+Content‑Type: application/octet-stream or text/csv when CSV output is requested  
 Content‑Disposition: attachment; filename="translated.xlsx"  
 Content‑Length: <size in bytes>
 
@@ -44,23 +44,23 @@ Error responses follow the standard Aspose.Cells Cloud error model (application/
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized**: Invalid access token or invalid client ID and secret.  
+- **404 Not Found**: The spreadsheet file is not accessible.  
 - **500 Server Error**: The spreadsheet encountered an anomaly while obtaining calculation data.
 
 ## Where should we use the Translate Spreadsheet API?
 
-- **International Financial Reporting** – Convert quarterly Excel reports into multiple languages for regional offices while preserving formulas and chart layouts.
-- **Multi‑language Marketing Dashboards** – Automatically generate localized versions of sales performance dashboards for global teams.
-- **Educational Content Distribution** – Translate grade‑books, assignment sheets, or curriculum spreadsheets for students in different countries without manual copy‑pasting.
+- **International Financial Reporting** – Convert quarterly Excel reports into multiple languages for regional offices while preserving formulas and chart layouts.  
+- **Multi‑language Marketing Dashboards** – Automatically generate localized versions of sales performance dashboards for global teams.  
+- **Educational Content Distribution** – Translate grade‑books, assignment sheets, or curriculum spreadsheets for students in different countries without manual copy‑pasting.  
 - **Regulatory Compliance** – Produce language‑specific compliance spreadsheets that retain validation rules and data‑validation lists.
 
 ## Why should you use the Translate Spreadsheet API?
 
-- **AI‑driven accuracy** – Leverages state‑of‑the‑art neural translation models for context‑aware, high‑quality language conversion.
-- **Zero layout disruption** – Keeps cell formulas, conditional formatting, charts, and worksheet ordering exactly as in the source file.
-- **Single‑call multi‑sheet processing** – Translates every worksheet in one request, eliminating the need for per‑sheet loops.
+- **AI‑driven accuracy** – Leverages state‑of‑the‑art neural translation models for context‑aware, high‑quality language conversion.  
+- **Zero layout disruption** – Keeps cell formulas, conditional formatting, charts, and worksheet ordering exactly as in the source file.  
+- **Single‑call multi‑sheet processing** – Translates every worksheet in one request, eliminating the need for per‑sheet loops.  
 - **Seamless cloud integration** – Works with Aspose.Cells Cloud authentication, enabling automated pipelines in CI/CD, serverless functions, or enterprise back‑ends.
 
 ## How to Use the Translate Spreadsheet API with SDKs
@@ -73,7 +73,7 @@ The [Translate Spreadsheet API Specification](https://reference.aspose.cloud/cel
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to merge a spreadsheet into another spreadsheet with short code.  
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to merge a spreadsheet into another spreadsheet with concise code.  
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.  
 The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:
 
