@@ -5,21 +5,21 @@ ArticleTitle: "Aspose.Cells Cloud API – Convert, Merge, Split & Protect Excel 
 linktitle: "Developer Center"
 type: docs
 url: /
-description: "Use Aspose.Cells Cloud REST APIs to convert, merge, split, protect and process Excel spreadsheets. Free 150 calls/month, SDKs for 8 languages."
+description: "Use Aspose.Cells Cloud REST APIs to convert, merge, split, protect, and process Excel spreadsheets. Free 150 calls/month. SDKs for 8 languages."
 weight: 10
 keywords: "Aspose.Cells Cloud API, Excel, Spreadsheet, REST API, Cloud, Conversion, Merge, Split, Protect"
 ---
 
-## What is Aspose.Cells Cloud APIs?
+## What is Aspose.Cells Cloud?
 
-Aspose.Cells Cloud API is a collection of cloud‑based Spreadsheet/Excel services. No installation of Office or server configuration is required—simply send an HTTP request and you can create, edit, convert, clean data, generate charts, build pivot tables, encrypt, split, merge, add watermarks, apply digital signatures, and more, from any language.
+Aspose.Cells Cloud provides a collection of cloud‑based spreadsheet/Excel services. No installation of Office or server configuration is required—simply send an HTTP request and you can create, edit, convert, clean data, generate charts, build pivot tables, encrypt, split, merge, add watermarks, apply digital signatures, and more, from any language.
 
-## Why use Aspose.Cells Cloud APIs?
+## Why use Aspose.Cells Cloud?
 
-- Creating, editing, converting, and analyzing spreadsheets in cloud storage based on Aspose.Cells Cloud Web API services.  
-- Create, edit, convert, and analyze local spreadsheet files based on Aspose.Cells Cloud Web API services.  
+- Creating, editing, converting, and analyzing spreadsheets in cloud storage using Aspose.Cells Cloud.  
+- Create, edit, convert, and analyze local spreadsheet files using Aspose.Cells Cloud.  
 - Supported file formats include 30 formats, such as **xlsx**, **csv**, **ods**, **xlsb**, etc.  
-- Operate spreadsheets directly through the Aspose.Cells Cloud Web API without the need for Microsoft Excel dependencies.  
+- Operate spreadsheets directly through Aspose.Cells Cloud without the need for Microsoft Excel dependencies.  
 - Free 150 API calls per month.  
 - Pay‑as‑you‑go pricing – the more you use, the larger the discount.  
 - **Short‑code**: Things that can be done in one sentence.  
@@ -27,14 +27,14 @@ Aspose.Cells Cloud API is a collection of cloud‑based Spreadsheet/Excel servic
   - **Delete extra spaces in the entire file** → TrimSpreadsheetContent  
   - **Combine 10+ files into one report** → MergeSpreadsheets  
 
-## **How to use Aspose.Cells Cloud APIs?**
+## **How to use Aspose.Cells Cloud?**
 
 ### Step 1: **Get API Credentials**  
 
 - **[Register Aspose Cloud Account](https://dashboard.aspose.cloud/signup)**  
 - **[Get Client Credentials](https://dashboard.aspose.cloud/#/applications)**  
 
-### Step 2: **Call Spreadsheet Web APIs with SDK (recommended)**  
+### Step 2: **Call Spreadsheet APIs with SDK (recommended)**  
 
 It is recommended to use the official SDK to simplify authentication and request handling. The SDK automatically acquires and refreshes access tokens.
 
@@ -59,7 +59,7 @@ cellsApi.ConvertSpreadsheet(
 
 - **Spreadsheet**: The name of the Excel file located in local storage.  
 - **Format**: Target format (e.g., pdf, png, csv, json).  
-- **Output file**: The resulting file will be saved locally with the specified name.  
+- **Output file**: The resulting PDF file will be saved locally with the specified name.  
 
 ## **Core Functions**
 

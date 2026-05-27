@@ -1,17 +1,17 @@
 ---
-title: "Aspose.Cells Cloud 3.0 Developer Guide"
+title: "Aspose.Cells Cloud 3.0 – Excel API Developer Guide | Create, Convert, Manipulate Workbooks"
 second_title: "Document"
 type: docs
 url: /developer-guide-3.0/
 aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
-keywords: "Aspose.Cells Cloud, REST API, Excel workbook, developer guide, chart API, data import, export, PDF, CSV, JSON"
-description: "Learn how to use Aspose.Cells Cloud 3.0 REST APIs for Excel workbook creation, conversion, styling, charts, tables, and more. Includes code samples, prerequisites, and best‑practice tips."
+keywords: "Aspose.Cells, Cloud, REST API, Excel, workbook, conversion, chart, table, pivot"
+description: "Explore Aspose.Cells Cloud 3.0 REST APIs to create, convert, and edit Excel workbooks programmatically. Includes code samples, prerequisites, and best‑practice tips."
 weight: 150
 ---
 
 ## Working with Aspose.Cells Cloud REST APIs
 
-The **Aspose.Cells Cloud 3.0 Developer Guide** provides a concise, searchable overview of the most‑used REST API operations for Excel workbooks and worksheets. It is intended for developers who need to create, modify, convert, and manipulate Excel files programmatically. Use the sections below to locate the operation you require; each link leads to a detailed page with request syntax, parameters, and examples.
+The **Aspose.Cells Cloud 3.0 Developer Guide** provides a concise, searchable overview of the most‑used REST API operations for Excel workbooks and worksheets. Developers who need to create, modify, convert, and manipulate Excel files programmatically use this guide. Use the sections below to locate the operation you require; each link leads to a detailed page with request syntax, parameters, and examples.
 
 {{< tabs tabTotal="8" tabID="1" tabName1="File" tabName2="Home" tabName3="Insert" tabName4="Page Layout" tabName5="Formulas" tabName6="Data" tabName7="Review" tabName8="View" >}}
 {{< tab tabNum="1" >}}
@@ -27,7 +27,7 @@ The **Aspose.Cells Cloud 3.0 Developer Guide** provides a concise, searchable ov
         </ul>
         <p>Search, Replace</p>
         <ul>
-            <li><a href="/cells/search/" title="Search text in Excel files" rel="noopener">Search text from Excel files.</a></li>
+            <li><a href="/cells/search/" title="Search text in Excel files" rel="noopener">Search text in Excel files.</a></li>
             <li><a href="/cells/replace/" title="Replace values in Excel files" rel="noopener">Replace old values with new values in Excel files.</a></li>
         </ul>
         <p>Compress</p>
@@ -122,12 +122,12 @@ The **Aspose.Cells Cloud 3.0 Developer Guide** provides a concise, searchable ov
         <ul>
             <li><a href="/cells/add-a-pivot-table-in-a-worksheet/" title="Add a pivot table to a worksheet" rel="noopener">Add a pivot table on an Excel worksheet.</a></li>
             <li><a href="/cells/delete-worksheet-pivot-tables/" title="Delete all pivot tables from a worksheet" rel="noopener">Delete all pivot tables on an Excel worksheet.</a></li>
-            <li><a href="/cells/delete-worksheet-pivot-table-by-index/" title="Delete a pivot table by its index" rel="noopener">Delete a pivot table by index on an Excel worksheet.</a></li>
+            <li><a href="/cells/delete-worksheet-pivot-table-by-index/" title="Delete a pivot table by its index" rel="noopener">Delete pivot table by index on an Excel worksheet.</a></li>
             <li><a href="/cells/update-cell-style-for-pivot-table/" title="Update cell style in a pivot table" rel="noopener">Update cell style of a pivot table on an Excel worksheet.</a></li>
             <li><a href="/cells/update-style-for-pivot-table/" title="Update the overall style of a pivot table" rel="noopener">Update style of a pivot table on an Excel worksheet.</a></li>
             <li><a href="/cells/working-with-pivot-filters/" title="Work with pivot table filters" rel="noopener">Work with pivot filters on an Excel worksheet.</a></li>
             <li><a href="/cells/hide-pivot-field-item/" title="Hide a pivot field item" rel="noopener">Hide pivot field items on an Excel worksheet.</a></li>
-            <li><a href="/cells/move-pivot-table/" title="Move a pivot table within a worksheet" rel="noopener">Move a pivot table on an Excel worksheet.</a></li>
+            <li><a href="/cells/move-pivot-table/" title="Move a pivot table within a worksheet" rel="noopener">Move pivot table on an Excel worksheet.</a></li>
         </ul>
     </div>
 </div>
