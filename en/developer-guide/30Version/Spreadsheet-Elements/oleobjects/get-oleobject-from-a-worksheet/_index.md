@@ -1,18 +1,18 @@
 ---
-title: "Get OLE Object from Excel Worksheet – Aspose.Cells Cloud API"
+title: "Get OLE Object from an Excel Worksheet – Aspose.Cells Cloud REST API"
 second_title: "Document"
 linktitle: "Get"
 type: docs
 url: /oleobjects/get/
 aliases: [/get-oleobject-from-a-worksheet/]
-keywords: "aspose cells api, ole object, excel worksheet, get ole object, rest api"
-description: "Retrieve an OLE object (image, chart, or embedded file) from a worksheet using Aspose.Cells Cloud REST API. Includes HTTPS endpoint, required parameters, sample cURL, and SDK code in multiple languages."
+keywords: "aspose cells ole object api"
+description: "Retrieve an OLE object (image, chart, or embedded file) from an Excel worksheet via Aspose.Cells Cloud REST API. Shows endpoint, parameters, sample cURL and SDK code."
 weight: 10
 ---
 
 This REST API retrieves an **OLE object** from an Excel worksheet.
 
-## Rest API
+## REST API
 
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{objectNumber}?format={format}
