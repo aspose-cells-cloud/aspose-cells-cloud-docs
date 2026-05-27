@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert Local Excel Table Data to an Image File - Free Online Tool"
+title: "Convert Excel Table to Image – Aspose.Cells Cloud API (PNG, JPEG, SVG, TIFF, BMP)"
 second_title: "Document"
-ArticleTitle: "How to Convert Local Spreadsheet Table Data to an Image File: Step‑by‑Step Guide"
+ArticleTitle: "Step‑by‑Step Guide: Convert Local Excel Table to Image Using Aspose.Cells Cloud"
 linktitle: "Convert Table to Image"
 type: docs
 url: /convert-table-to-image/
-keywords: "Aspose.Cells Cloud, Convert Table to Image, Excel to Image, Spreadsheet Table Image, REST API, Cloud Conversion, Image Formats, PNG, JPEG, TIFF, BMP, SVG"
-description: "Convert a local Excel spreadsheet table to an image file quickly using Aspose.Cells Cloud Web API. Supports PNG, JPEG, TIFF, BMP, SVG and more."
+keywords: "Aspose.Cells Cloud, Convert Table to Image, Excel to Image, Spreadsheet Table Image, REST API, Cloud Conversion, Image Formats, PNG, JPEG, TIFF, BMP, SVG, convert excel table to image"
+description: "Use Aspose.Cells Cloud to transform a local Excel table into high‑quality PNG, JPEG, SVG, TIFF, or BMP images via a simple REST API. Learn request syntax, parameters, and SDK examples."
 weight: 100
 ---
 
-Export table data from a local Excel file to an [Image](https://docs.fileformat.com/image/) file using the Cloud API.
+Export table data from a local Excel file and convert it to an Image file using the Cloud API.
 
 **Supported IMAGE FORMATS:**
 
@@ -20,7 +20,7 @@ Export table data from a local Excel file to an [Image](https://docs.fileformat.
 - [JPEG](https://docs.fileformat.com/image/jpeg/)
 - [BMP](https://docs.fileformat.com/image/bmp/)
 
-## **Convert Table to Image API**
+## **Convert Excel Table to Image API**
 
 ### Web API
 
