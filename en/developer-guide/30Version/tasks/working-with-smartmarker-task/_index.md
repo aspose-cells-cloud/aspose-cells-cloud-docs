@@ -1,10 +1,10 @@
 ---
-title: "Working with SmartMarker Task in Aspose.Cells Cloud API"
+title: "SmartMarker Task – Aspose.Cells Cloud API Guide"
 type: docs
 url: /tasks/smartmarker/
 aliases: [/working-with-smartmarker-task/]
-keywords: "SmartMarker task, Aspose.Cells Cloud, REST API, Excel, spreadsheet automation"
-description: "Learn how to use the SmartMarker task of Aspose.Cells Cloud API with cURL and SDK examples, including request schema and error handling."
+keywords: "SmartMarker task, Aspose.Cells Cloud, REST API, Excel, spreadsheet automation, API guide"
+description: "Step‑by‑step guide to run SmartMarker tasks with Aspose.Cells Cloud API. Includes cURL request, JSON schema, error codes, and SDK samples for .NET, Java, Python."
 weight: 60
 ---
 
@@ -102,7 +102,7 @@ HttpResponseMessage with the operation result.
 
 ### Error handling
 
-The API may return the following HTTP status codes:
+The API returns the following HTTP status codes:
 
 - **400 Bad Request** – malformed request payload or missing required fields.  
 - **401 Unauthorized** – invalid or missing authentication token.  
