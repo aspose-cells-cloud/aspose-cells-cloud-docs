@@ -1,11 +1,11 @@
 ---
-title: "Working with SaveResult Task"
+title: "SaveResult Task – Export Workbook Result | Aspose.Cells Cloud API"
 second_title: "Document"
 type: docs
 url: /tasks/save-result/
 aliases: [/working-with-saveresult-task/]
-keywords: "SaveResult task, Aspose.Cells Cloud API, export result, download workbook, cloud storage, REST API, spreadsheets, Excel"
-description: "Learn how to use the SaveResult task in Aspose.Cells Cloud API to export processed workbook data to cloud storage or download it directly. Includes cURL, Java, .NET examples and a full parameter reference."
+keywords: "SaveResult, Aspose.Cells Cloud, API, export workbook, download, task"
+description: "Learn how to use the SaveResult task in Aspose.Cells Cloud to export workbook results to cloud storage or download them. Includes cURL, Java, and .NET examples with parameters."
 weight: 50
 ---
 
