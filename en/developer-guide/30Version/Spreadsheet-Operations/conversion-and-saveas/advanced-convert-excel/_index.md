@@ -1,19 +1,19 @@
 ---
-title: "Advanced Convert Excel File"
+title: "Advanced Excel Conversion API – Aspose.Cells Cloud 3.0"
 second_title: "Document"
 linktitle: "Advanced Convert"
 type: docs
 url: /advanced-convert-excel/
-keywords: "Aspose.Cells Cloud, Excel conversion, spreadsheet conversion, page setup, save options, print settings, REST API, SDKs, Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
-description: "The Aspose.Cells Cloud REST API provides powerful features for converting Excel workbooks to a wide range of formats, configuring page setup, save options, and print settings. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift, enabling seamless integration across multiple platforms."
+keywords: "Aspose.Cells Cloud, advanced Excel conversion, Excel to PDF, Excel to CSV, REST API, SDKs, .NET, Java, Python, Node.js, PHP, Ruby, Go, Perl, Swift, page setup, save options"
+description: "Use Aspose.Cells Cloud’s advanced conversion API to transform Excel workbooks to PDF, CSV, PNG, and other formats. Includes detailed page‑setup and save‑option controls, plus SDKs for .NET, Java, Python, Node.js, PHP, Ruby, Go, and more."
 weight: 50
 ---
 
-## Advanced Cloud API for Excel Conversion
+## Advanced Excel Conversion API
 
-### The ability to load spreadsheet files from multiple data sources
+### Loading Spreadsheet Files from Multiple Data Sources
 
-### Set Page Setup and Save Options
+### Configuring Page Setup and Save Options
 
 ## Cloud SDK Family
 
