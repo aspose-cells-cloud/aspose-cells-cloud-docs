@@ -1,16 +1,16 @@
 ---
-title: "Autofit Multiple Columns on an Excel Worksheet"
+title: "Autofit Multiple Columns – Aspose.Cells Cloud API for Excel Worksheets"
 second_title: "Document"
 linktitle: "Columns"
 type: docs
 url: /worksheets/autofit/columns/
 aliases: [/autofit-multiple-columns-of-worksheet/]
-keywords: "Aspose.Cells, autofit columns, Excel API, cloud spreadsheet, REST"
-description: "Learn how to autofit multiple columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, error handling, and SDK code snippets for C#, Java, Python, and more."
+keywords: "Aspose.Cells, autofit columns API, Excel API, cloud spreadsheet, REST"
+description: "Learn how to autofit multiple columns in an Excel worksheet using the Aspose.Cells Cloud autofit columns API (v3.0). Includes endpoint URL, required parameters, cURL example, error handling, and SDK code snippets for C#, Java, Python, and more."
 weight: 20
 ---
 
-This REST API autofits **multiple columns** on an Excel worksheet.
+The **Autofit Columns** REST API automatically adjusts the width of multiple columns in an Excel worksheet.
 
 ## REST API
 
@@ -18,7 +18,7 @@ This REST API autofits **multiple columns** on an Excel worksheet.
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitcolumns
 ```
 
-### **Request parameters**
+### Request parameters
 
 | Parameter Name      | Type    | Location | Description                                                                                                                                 |
 | ------------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -36,7 +36,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitco
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
