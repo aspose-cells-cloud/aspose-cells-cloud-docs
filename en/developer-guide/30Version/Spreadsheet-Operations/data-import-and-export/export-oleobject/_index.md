@@ -1,12 +1,12 @@
 ---
-title: "Export OLE Object – Aspose.Cells Cloud API"
+title: "Export OLE Object – Aspose.Cells Cloud API Documentation"
 second_title: "Document"
 linktitle: "OLE Object"
 type: docs
 url: /export-excel-ole-object/
 aliases: [/export/excel-ole-object/]
-keywords: "export OLE object, Aspose.Cells API, Excel OLE export, cloud spreadsheet API"
-description: "Learn how to export OLE objects from an Excel workbook using the Aspose.Cells Cloud REST API. Includes authentication details, request parameters, response schema, error handling, and SDK examples."
+keywords: "export, OLE, object, Aspose.Cells, API, Excel"
+description: "Learn to export OLE objects from an Excel workbook via Aspose.Cells Cloud REST API, covering authentication, request parameters, response schema, error handling, and SDK examples."
 weight: 20
 ---
 
