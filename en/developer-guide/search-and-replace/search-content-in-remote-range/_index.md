@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Excel Text Search Web API – Find Text in Remote Spreadsheet Ranges"
+title: "Search Text in Remote Excel Spreadsheet Ranges – Aspose.Cells Cloud API"
 second_title: "Document"
-ArticleTitle: "Search Text in Remote Excel Spreadsheets – Find Data in Specific Ranges"
+ArticleTitle: "Search Text in Remote Excel Spreadsheet Ranges – Find Data in Specific Ranges"
 linktitle: "Search Remote Range Content"
 type: docs
 url: /search-content-in-remote-range/
-keywords: "Aspose.Cells, Excel search API, remote range, cloud spreadsheet, text lookup"
-description: "Search for text, numbers, or formulas in a specific range of an Excel workbook stored in Aspose Cloud."
+keywords: "Aspose.Cells, Excel search API, remote range, cloud spreadsheet, text lookup, search text in remote Excel range"
+description: "Use Aspose.Cells Cloud API to search for text, numbers, or formulas within a specific range of an Excel workbook stored in cloud storage. Supports case‑insensitive search, password‑protected files, and custom storage."
 weight: 100
 ---
 
-## **Search Content In Remote Range**I
+## **Search Content In Remote Range**
 
 Programmatically search for specific text within any range of Excel spreadsheets using Aspose.Cells Cloud API. Find text, numbers, or formulas in remote files stored in cloud storage. RESTful API for automated data discovery, content analysis, and spreadsheet‑auditing workflows.
 
@@ -26,7 +26,7 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{ce
 | :------------- | :------ | :------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
 | name           | String  | Path                       | **Required**. The filename (including extension) of the Excel workbook to search, e.g., `customer_data.xlsx`.                                       |
 | worksheet      | String  | Path                       | **Required**. The exact name of the worksheet within the workbook to search in, e.g., `Orders_2024`.                                                |
-| cellArea       | String  | Path                       | **Required**. The target cell range for the search, specified in A1 notation (e.g., `B2:H100`). The search is confined to this area.                |
+| cellArea       | String  | Path                       | **Required**. The target cell range for the search, specified in A1 notation (e.g., `B2:H100`). The search is confined to the defined cell area.                |
 | searchText     | String  | Query                      | **Required**. The specific text string, number, or partial content to find within the defined cell area.                                            |
 | ignoreCase     | Boolean | Query                      | **Optional**. When set to `true`, the search ignores case differences (e.g., “Report” matches “report”). Default is `false` (case‑sensitive).       |
 | folder         | String  | Query                      | **Optional**. The directory path in your cloud storage where the workbook is located. If omitted, the root directory is used.                       |
