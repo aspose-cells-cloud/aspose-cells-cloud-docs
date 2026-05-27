@@ -1,11 +1,11 @@
 ---
-title: "Working with Convert Task"
+title: "Convert Excel Files with Aspose.Cells Cloud – Convert Task API Guide"
 second_title: "Document"
 type: docs
 url: /tasks/convert/
 aliases: [/working-with-convert-task/]
 keywords: "Aspose.Cells Cloud, REST API, Convert Task, Excel, Spreadsheet, PDF, CSV, JSON, Markdown"
-description: "The Cells Cloud API for Excel provides task support for converting Excel files to various formats."
+description: "Learn how to use Aspose.Cells Cloud Convert Task to transform Excel workbooks to PDF, CSV, JSON, Markdown and more. Includes request payload, cURL, and SDK samples."
 weight: 30
 ---
 
@@ -16,7 +16,7 @@ weight: 30
 |/cells/task/runtask|POST|Run Task|[PostRunTask](https://apireference.aspose.cloud/cells/#/Task/PostRunTask)|
 
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Task/PostRunTask) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.  
+The OpenAPI Specification defines a publicly accessible programming interface for the Convert task and lets you carry out REST interactions directly from a web browser.  
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
