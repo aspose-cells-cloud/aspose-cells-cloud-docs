@@ -1,14 +1,14 @@
 ---
-title: "Spreadsheet Operations"
+title: "Spreadsheet Operations – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 type: docs
 url: /spreadsheet-operations/
-keywords: "Aspose Cells Cloud, Excel API, spreadsheet operations, REST API, Python, C#, Java, code examples"
-description: "Learn how to perform spreadsheet operations such as auto‑fit, batch conversion, protection, merging, and search‑replace using Aspose.Cells Cloud REST API. Includes concise usage notes and code‑sample guidance."
+keywords: "Aspose.Cells Cloud, spreadsheet operations, Excel API, auto‑fit columns, batch conversion, protect worksheet, REST API, Python SDK, C# SDK, Java SDK"
+description: "Explore the full set of spreadsheet operations available in Aspose.Cells Cloud API v3.0 – auto‑fit, batch processing, conversion, protection, and more. Quick endpoints, code samples, and SDK support."
 weight: 100
 ---
 
-Spreadsheet Operations provides a concise guide to the most common actions you can perform on Excel workbooks with **Aspose.Cells Cloud** (v3.0). Whether you need to auto‑fit columns, batch‑process files, protect worksheets, or manipulate text, the REST API offers dedicated endpoints that work across languages like Python, C#, and Java. The list below links to the detailed documentation for each operation and includes a brief usage note to help you get started quickly.
+Spreadsheet Operations provides a concise guide to the most common actions you can perform on Excel workbooks with **Aspose.Cells Cloud** (v3.0). Whether you need to auto‑fit columns, batch‑process files, protect worksheets, or manipulate text, the REST API offers dedicated endpoints that work across languages such as Python, C#, and Java. The list below links to the detailed documentation for each operation and includes a brief usage note to help you get started quickly.
 
 - **[Auto Fitter Options](https://docs.aspose.cloud/cells/auto-fitter-options/)** – Automatically adjusts column widths and row heights. `POST /cells/{file}/worksheets/{sheet}/autoFitColumns`.
 - **[Batch processing of Excel files: conversion, lock, protect, split, and unlock](https://docs.aspose.cloud/cells/batch/)** – Perform bulk actions (convert, lock, protect, split, unlock) on up to 100 files per request. `POST /cells/batch`.
