@@ -1,11 +1,11 @@
 ---
-title: "Excel to JSON"
+title: "Convert Excel to JSON – Aspose.Cells Cloud REST API"
 second_title: "Document"
 linktitle: "Excel to JSON"
 type: docs
 url: /convert-excel-file-to-json-file/
-keywords: "Aspose.Cells, Excel to JSON, Cloud API, spreadsheet conversion, REST API"
-description: "Learn how to convert Excel spreadsheets to JSON files with Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets (C#, Java, Python), required parameters, authentication, and response format."
+keywords: "Aspose.Cells, Excel to JSON, REST API, cloud conversion"
+description: "Learn how to convert Excel spreadsheets to JSON using Aspose.Cells Cloud REST API (v3.0). Includes authentication steps, cURL example, SDK snippets, parameters, and response handling."
 weight: 100
 ---
 
@@ -45,7 +45,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/json" \
 
 ### Response
 
-The service returns a **FileInfo** object. The important fields are described below:
+The API returns a **FileInfo** object. The important fields are described below:
 
 | Field         | Type    | Description                                                                  |
 | ------------- | ------- | ---------------------------------------------------------------------------- |
