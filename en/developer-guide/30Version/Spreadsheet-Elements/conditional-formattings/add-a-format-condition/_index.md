@@ -1,10 +1,10 @@
 ---
-title: "Add Format Condition"
+title: "Add Format Condition – Aspose.Cells Cloud API"
 type: docs
 url: /conditional-formattings/add-format-condition/
 aliases: [/add-a-format-condition/]
-keywords: "Aspose.Cells Cloud, Add Format Condition API, Conditional Formatting, Excel, Spreadsheet, REST API"
-description: "Learn how to add a format condition to an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, parameters, cURL example, and SDK snippets."
+keywords: "Aspose.Cells, add format condition, conditional formatting API, Excel REST API, cloud SDK"
+description: "Learn how to add a conditional format rule to an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, and SDK snippets."
 weight: 50
 ---
 
@@ -13,7 +13,7 @@ This REST API adds a format condition to a worksheet.
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
 ```
 
 ### Request parameters
@@ -42,7 +42,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditional
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatCondition) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** to call the Aspose.Cells API. The example below shows a complete request, including an empty JSON body.
+You can use **cURL** to call the Aspose.Cells API. The following example sends a complete request, including an empty JSON body.
 
 ### cURL Example
 
@@ -51,7 +51,7 @@ You can use **cURL** to call the Aspose.Cells API. The example below shows a com
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0?cellArea=A1:C3&type=Expression&operatorType=Between&formula1=v1&formula2=v2" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0?cellArea=A1:C3&type=Expression&operatorType=Between&formula1=v1&formula2=v2" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
