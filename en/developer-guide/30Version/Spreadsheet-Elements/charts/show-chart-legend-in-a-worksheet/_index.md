@@ -1,11 +1,11 @@
 ---
-title: "Show Chart Legend in a Worksheet"
+title: "Show Chart Legend in an Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /charts/legend/show/
 aliases: [/show-chart-legend-in-a-worksheet/]
 weight: 100
-keywords: "Aspose.Cells Cloud, chart legend API, Excel chart legend, REST PUT chart legend, Aspose API v3.0"
-description: "Learn how to display a chart legend in an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint details, parameters, a cURL example, and SDK snippets."
+keywords: "Aspose.Cells, chart legend, REST API, Excel, v3.0"
+description: "Learn how to display a chart legend in an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes endpoint details, parameters, a cURL example, and SDK snippets."
 ---
 
 This REST API enables you to display the **legend**—the explanatory box that identifies data series—in a chart that resides in a worksheet of an Excel workbook.
@@ -28,7 +28,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartLegend) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-Authentication is performed with a Bearer JWT token supplied in the **Authorization** header.
+Authentication is performed with a Bearer JWT token supplied in the **Authorization** request header.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make the call with cURL.
 
