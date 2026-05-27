@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Web API – Translate Text File with AI-Powered Language Conversion"
+title: "Aspose.Cells Cloud API v4.0 – Translate Text File (AI‑Powered)"
 second_title: "Document"
-ArticleTitle: "How to Translate Text Files Using Aspose.Cells Cloud AI Translation API"
+ArticleTitle: "Step‑by‑Step Guide to Translate Text Files with Aspose.Cells Cloud AI API"
 linktitle: "Translate Text File"
 type: docs
 url: /translate-text-file/
-keywords: "Aspose.Cells, Cloud API, AI translation, translate text file, multilingual conversion, REST PUT, target language code, file upload translation, raw text translation, spreadsheet AI"
-description: "Learn how to use the Aspose.Cells Cloud AI TranslateTextFile endpoint to convert text files into any supported language. Supports both multipart file upload and raw text payload, preserves formatting, and returns a downloadable translated file."
+keywords: "Aspose.Cells Cloud, Translate Text File, AI translation, REST API, v4.0, multilingual, plain text, file upload, raw text, target language"
+description: "Translate plain‑text files with Aspose.Cells Cloud AI. Supports multipart upload or raw text, preserves formatting, and returns a downloadable “_translated” file."
 weight: 100
 ---
 
-The **TranslateTextFile** endpoint leverages Aspose.Cells Cloud AI services to translate the content of a text file into a specified target language. It supports two operation modes: (1) **File Upload Mode** – send a text file via multipart/form-data and receive a translated file; (2) **Direct Content Mode** – post raw text in the request body and get the translated text directly. The service preserves original line breaks and formatting, automatically appends a "\_translated" suffix to the filename, and returns the result as a downloadable stream. Ideal for batch translation of documents, integration into multilingual workflows, or on‑the‑fly translation of user‑generated content.
+The **TranslateTextFile** endpoint leverages Aspose.Cells Cloud AI services to translate the content of a text file into a specified target language. It supports two operation modes: (1) **File Upload Mode** – send a text file via multipart/form-data and receive a translated file; (2) **Direct Content Mode** – post raw text in the request body and get the translated text directly. The service preserves original line breaks and formatting, automatically appends a “_translated” suffix to the filename, and returns the result as a downloadable stream. Ideal for batch translation of documents, integration into multilingual workflows, or on‑the‑fly translation of user‑generated content.
 
 ## **Translate Text File API**
 
@@ -22,43 +22,43 @@ PUT https://api.aspose.cloud/v4.0/cells/ai/translate/text-file
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Location | Required/Optional | Description                                                                                                                                                                    |
-| :------------- | :----- | :------- | :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | Required | FormData          | The source text file to be translated. Must be a plain‑text (.txt) or supported spreadsheet format. Example: upload `document.txt` via multipart/form-data field named "file". |
-| targetLanguage | String | Required | Query             | ISO‑639‑1 language code of the desired output (e.g., "es" for Spanish, "fr" for French, "de" for German). The code is case‑insensitive.                                        |
-| region         | String | Optional | Query             | Optional region hint for the translation service (e.g., "us-east", "eu-west"). If omitted, the service selects the default region.                                             |
-| password       | String | Optional | Query             | Password required to open encrypted spreadsheet files. Not needed for plain‑text files.                                                                                        |
+| Parameter Name | Type   | Location | Required? | Description |
+| :------------- | :----- | :------- | :-------- | :---------- |
+| file | File | FormData | Yes | The source text file to be translated. Must be a plain‑text (.txt) file. Example: upload `document.txt` via multipart/form-data field named "file". |
+| targetLanguage | String | Query | Yes | ISO‑639‑1 language code of the desired output (e.g., "es" for Spanish, "fr" for French, "de" for German). The code is case‑insensitive. |
+| region | String | Query | No | Optional region hint for the translation service (e.g., "us-east", "eu-west"). If omitted, the service selects the default region. |
+| password | String | Query | No | Password required to open encrypted spreadsheet files. Not needed for plain‑text files. |
 
 ### **Response**
 
-Successful response (200 OK)
-Headers:
-Content-Type: application/octet-stream // binary stream of the translated file
-Content-Disposition: attachment; filename="<original_name>\_translated.txt"
+Successful response (200 OK)  
+Headers:  
+Content-Type: application/octet-stream // binary stream of the translated file  
+Content-Disposition: attachment; filename="<original_name>_translated.txt"  
 Content-Length: <size in bytes>
 
 Body: binary stream containing the translated text preserving original line breaks and formatting.
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized**: Invalid access token or invalid client ID and secret.  
+- **404 Not Found**: The file is not accessible.  
+- **500 Server Error**: The service encountered an unexpected error while processing the request.
 
 ## Where should we use the Translate Text File API?
 
-- **Multilingual Documentation Portals** – Automatically translate user manuals or help files uploaded as text documents, delivering localized versions on demand.
-- **Content Management Systems (CMS)** – Integrate into a CMS workflow to translate blog posts or articles before publishing to international audiences.
-- **Enterprise Data Pipelines** – Use in batch jobs that process large volumes of CSV or TXT reports, converting them to the language of regional offices while keeping original formatting.
+- **Multilingual Documentation Portals** – Automatically translate user manuals or help files uploaded as text documents, delivering localized versions on demand.  
+- **Content Management Systems (CMS)** – Integrate into a CMS workflow to translate blog posts or articles before publishing to international audiences.  
+- **Enterprise Data Pipelines** – Use in batch jobs that process large volumes of CSV or TXT reports, converting them to the language of regional offices while keeping original formatting.  
 - **Customer Support Platforms** – Translate incoming plain‑text tickets or chat logs in real time to assist support agents working in different languages.
 
 ## Why should you use the Translate Text File API?
 
-- **AI‑Driven Accuracy** – Leverages state‑of‑the‑art neural translation models for natural, context‑aware output.
-- **Dual Input Flexibility** – Accepts both file uploads and raw text payloads, simplifying integration with diverse client applications.
-- **Preserves Original Layout** – Maintains line breaks, indentation, and special characters, eliminating post‑processing cleanup.
-- **Seamless File Handling** – Returns a ready‑to‑download file with an auto‑generated "\_translated" suffix, reducing client‑side code complexity.
+- **AI‑Driven Accuracy** – Leverages state‑of‑the‑art neural translation models for natural, context‑aware output.  
+- **Dual Input Flexibility** – Accepts both file uploads and raw text payloads, simplifying integration with diverse client applications.  
+- **Preserves Original Layout** – Maintains line breaks, indentation, and special characters, eliminating post‑processing cleanup.  
+- **Seamless File Handling** – Returns a ready‑to‑download file with an auto‑generated "_translated" suffix, reducing client‑side code complexity.
 
 ## How to Use the Translate Text File API with SDKs
 
@@ -70,8 +70,8 @@ The [Translate Text File API Specification](https://reference.aspose.cloud/cells
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low-level details, allowing you to merge a spreadsheet into another spreadsheet with short code.
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to merge a spreadsheet into another spreadsheet with short code.  
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.  
 The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
