@@ -1,12 +1,12 @@
 ---
-title: "Search Spreadsheet Broken Links – Aspose.Cells Cloud API"
+title: "Search Spreadsheet Broken Links – Aspose.Cells Cloud API Documentation"
 second_title: "Document"
-ArticleTitle: "Find & Fix Broken Links in Excel – Cloud Spreadsheet Link Checker"
+ArticleTitle: "Find and Fix Broken Links in Excel Workbooks – Aspose.Cells Cloud API"
 linktitle: "Search Spreadsheet Broken Links"
 type: docs
 url: /search-spreadsheet-broken-links/
-keywords: "Aspose Cells API, broken links detection, spreadsheet link validation, Excel API, cloud spreadsheet audit"
-description: "Detect and fix broken links in Excel workbooks via Aspose.Cells Cloud API. Scan ranges, get detailed JSON results, and integrate with any language SDK."
+keywords: "Aspose Cells, broken links, spreadsheet validation, Excel API, cloud audit, SDK"
+description: "Detect and fix broken external links in Excel workbooks with Aspose.Cells Cloud API. Supports range‑specific scans, JSON results, and SDKs for C#, Java, Python, and more."
 weight: 100
 ---
 
@@ -57,33 +57,33 @@ PUT https://api.aspose.cloud/v4.0/cells/search/broken-links
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.
-- **404 Not Found** – The spreadsheet file is not accessible.
-- **429 Too Many Requests** – Rate limit exceeded (60 calls / minute).
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
+- **404 Not Found** – The spreadsheet file is not accessible.  
+- **429 Too Many Requests** – Rate limit exceeded (60 calls / minute).  
 - **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
 
 ### Limits & Throttling
 
-- Maximum workbook size: **150 MB**.
-- Rate limit: **60 requests per minute** per account.
+- Maximum workbook size: **150 MB**.  
+- Rate limit: **60 requests per minute** per account.  
 - If you receive a `429` response, wait at least one minute before retrying.
 
-## Where should we use the Search broken links within the Spreadsheet API?
+## Where should we use the Search Broken Links within the Spreadsheet API?
 
-- **Regular Audit of Large Financial Models**: Before releasing monthly or quarterly reports, automatically scan key calculation areas (e.g., `Dashboard!B5:K50`) that contain many external data references to ensure all links point to valid source files.
-- **Data Integration for Mergers and Acquisitions**: When merging multiple spreadsheet files representing business units, scan the “Overview” worksheet after integration to identify links that have become invalid due to changed file paths or permission issues.
+- **Regular Audit of Large Financial Models**: Before releasing monthly or quarterly reports, automatically scan key calculation areas (e.g., `Dashboard!B5:K50`) that contain many external data references to ensure all links point to valid source files.  
+- **Data Integration for Mergers and Acquisitions**: When merging multiple spreadsheet files representing business units, scan the “Overview” worksheet after integration to identify links that have become invalid due to changed file paths or permission issues.  
 - **Preparation of Investor Data Packages**: Before finalizing presentation materials that contain charts and tables linked to external databases or market data sources, verify the validity of all links.
 
-## Why should you use the Search broken links within the Spreadsheet API?
+## Why should you use the Search Broken Links within the Spreadsheet API?
 
-- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comprehensive documentation. Compared with building custom solutions, this significantly reduces development workload.
-- **Reduced Labor Costs** – Eliminates the need for dedicated staff to manually verify document links.
-- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.
-- **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility issues.
+- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comprehensive documentation. Compared with building custom solutions, this significantly reduces development workload.  
+- **Reduced Labor Costs** – Eliminates the need for dedicated staff to manually verify document links.  
+- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.  
+- **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility issues.  
 - **Preserves Complex Excel Formatting** – Results are returned in a universally accessible JSON format while retaining the original workbook’s layout.
 
-## How to Use the Search for broken links within the Spreadsheet API with SDKs
+## How to Use the Search Broken Links within the Spreadsheet API with SDKs
 
 ### OpenAPI Specification
 
