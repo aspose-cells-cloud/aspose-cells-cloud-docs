@@ -1,16 +1,16 @@
 ---
-title: "Delete Blank Columns from Excel with Aspose.Cells Cloud API – Quick REST Example"
+title: "Delete Blank Columns from Excel – Aspose.Cells Cloud API (v4.0)"
 second_title: "Document"
-ArticleTitle: "How to Delete Blank Columns in Excel – Automate Column Cleanup"
+ArticleTitle: "How to Delete Blank Columns in Excel – Automate Column Cleanup with Aspose.Cells Cloud"
 linktitle: "Delete Blank Columns"
 type: docs
 url: /delete-spreadsheet-blank-columns/
-keywords: "delete blank columns Excel API, Aspose.Cells Cloud, REST API, Excel cleanup, spreadsheet automation"
-description: "Learn how to remove empty columns from Excel files using Aspose.Cells Cloud REST API. Includes endpoint, authentication, request/response samples, and SDK code in C#, Java, Python, and more."
+keywords: "delete blank columns, Aspose.Cells Cloud, REST API, Excel cleanup, spreadsheet automation"
+description: "Delete blank columns from Excel files using Aspose.Cells Cloud REST API. Includes endpoint, authentication, request and response examples, and SDK code in C#, Java, Python, and more."
 weight: 100
 ---
 
-Use Aspose.Cells Cloud API to automatically delete all blank columns from Excel spreadsheets. Our intelligent API detects and removes columns whose cells contain no data, formulas, comments, charts, or objects. The API supports batch processing, cloud automation, and seamless REST integration for enterprise‑grade spreadsheet‑cleanup workflows.
+Use Aspose.Cells Cloud API to automatically delete all blank columns from Excel spreadsheets. The Aspose.Cells Cloud API detects and removes columns whose cells contain no data, formulas, comments, charts, or objects. The API supports batch processing, cloud automation, and seamless REST integration for enterprise‑grade spreadsheet‑cleanup workflows.
 
 ## **DeleteSpreadsheetBlankColumns API**
 
@@ -60,13 +60,13 @@ PUT https://api.aspose.cloud/v4.0/cells/delete/blank-columns
 
 ## When to Use the Delete Spreadsheet Blank Columns API
 
-- **Data Import & Cleanup Workflows** – Remove trailing or structural blank columns immediately after loading data from CSV, databases, or web APIs.
-- **Report & Dashboard Generation** – Ensure final reports have a clean layout without unnecessary empty columns.
-- **ETL Pipelines** – Pre‑process Excel files before loading them into data warehouses such as Snowflake or BigQuery.
-- **System Integration** – Normalize partner‑supplied Excel files before further processing.
-- **Batch Document Automation** – Strip placeholder columns from generated templates in bulk.
-- **User‑Generated Content** – Clean Excel uploads from web portals before storage or analysis.
-- **Legacy Data Migration** – Streamline old spreadsheet archives by removing historically empty columns.
+- **Data Import & Cleanup Workflows – Remove trailing or structural blank columns immediately after loading data from CSV, databases, or web APIs.**
+- **Report & Dashboard Generation – Ensure final reports have a clean layout without unnecessary empty columns.**
+- **ETL Pipelines – Pre‑process Excel files before loading them into data warehouses such as Snowflake or BigQuery.**
+- **System Integration – Normalize partner‑supplied Excel files before further processing.**
+- **Batch Document Automation – Strip placeholder columns from generated templates in bulk.**
+- **User‑Generated Content – Clean Excel uploads from web portals before storage or analysis.**
+- **Legacy Data Migration – Streamline old spreadsheet archives by removing historically empty columns.**
 
 ## Why Use This API?
 
