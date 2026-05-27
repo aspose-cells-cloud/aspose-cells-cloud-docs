@@ -1,10 +1,10 @@
 ---
-title: "Export a Worksheet with Aspose.Cells Cloud API – Formats, cURL & SDK Samples"
+title: "Export Worksheet – Aspose.Cells Cloud API Formats, cURL Example & SDK Samples"
 second_title: "Document"
 linktitle: "Worksheet Export"
 type: docs
 url: /worksheets/get-worksheet/
-keywords: "Aspose.Cells Cloud Get Worksheet, worksheet export, Excel API, REST, CSV, PDF, PNG, JPEG, GIF, BMP, TIFF, EMF, XPS, OTS, XLS, XLSX, XLSB, XLSM, ODS, FODS, Numbers, cloud API"
+keywords: "Aspose.Cells, Cloud API, Export Worksheet, Excel to PDF, CSV, PNG, SDK Samples"
 description: "Learn how to export a single worksheet from an Excel file using Aspose.Cells Cloud REST API. Includes endpoint, parameters, a corrected cURL example, authentication details, error handling, and SDK snippets for C#, Java, Python, and more."
 weight: 10
 ---
@@ -81,7 +81,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?f
 
 ```json
 {
-  "stream"
+  "stream": "<base64-encoded-content>"
 }
 ```
 
