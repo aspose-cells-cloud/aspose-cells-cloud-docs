@@ -1,10 +1,10 @@
 ---
-title: "Clear Conditional Formatting"
+title: "Clear Conditional Formatting – Aspose.Cells Cloud API v3.2"
 type: docs
 url: /conditional-formattings/clear/
 aliases: [/clear-all-condition-formattings/]
-keywords: "Aspose.Cells Cloud, REST API, clear conditional formatting, Excel, worksheets, JWT, v3.2"
-description: "Delete all conditional formatting rules from a worksheet with Aspose.Cells Cloud API (v3.2). Learn the request syntax, required parameters, authentication steps, and see sample code in multiple SDKs."
+keywords: "Aspose.Cells Cloud, REST API, clear conditional formatting, delete conditional formatting, Excel, worksheets, JWT, v3.2, SDK examples"
+description: "Delete all conditional formatting rules from a worksheet using Aspose.Cells Cloud API v3.2. See request syntax, required parameters, authentication steps, and SDK code samples."
 weight: 80
 ---
 
@@ -25,7 +25,7 @@ DELETE https://api.aspose.cloud/v3.2/cells/{name}/worksheets/{sheetName}/conditi
 | **folder**      | string | query    | _(Optional)_ Folder path in storage where the workbook is located.     |
 | **storageName** | string | query    | _(Optional)_ Name of the storage service.                              |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormattings) defines a publicly accessible programming interface and **the OpenAPI Specification** lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/DeleteWorksheetConditionalFormattings) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
