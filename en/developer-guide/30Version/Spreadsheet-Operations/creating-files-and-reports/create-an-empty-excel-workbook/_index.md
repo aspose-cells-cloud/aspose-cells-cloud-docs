@@ -1,5 +1,5 @@
 ---
-title: "Create an Empty Excel Workbook"
+title: "Create an Empty Excel Workbook – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Empty Workbook"
 type: docs
@@ -10,8 +10,8 @@ aliases:
     /workbook/new/,
     /workbook/create/empty-workbook/,
   ]
-keywords: "Aspose.Cells Cloud, Excel, empty workbook, REST API, SDK, create workbook"
-description: "Learn how to create an empty Excel workbook using Aspose.Cells Cloud REST API. Includes cURL and SDK examples."
+keywords: "Aspose.Cells Cloud, Excel, empty workbook, REST API, SDK, create workbook, API reference"
+description: "Learn how to create an empty Excel workbook with Aspose.Cells Cloud REST API. Includes cURL example, required parameters, SDK code samples, and response details."
 weight: 20
 ---
 
@@ -35,9 +35,9 @@ This REST API creates an **empty workbook**.
 
 ### Request Body Parameter
 
-| Parameter Name | Type | Description                                    |
-| -------------- | ---- | ---------------------------------------------- |
-| data           | file | Binary content of the workbook file to create. |
+| Parameter Name | Type | Description                                                |
+| -------------- | ---- | ---------------------------------------------------------- |
+| data           | file | No request body is required when creating an empty workbook. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
