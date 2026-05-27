@@ -1,5 +1,5 @@
 ---
-title: "Import Integer Array into Excel Worksheet"
+title: "Import Integer Array into Excel Worksheet – Aspose.Cells Cloud API"
 linktitle: "Import integer array"
 type: docs
 url: /import-integer-array-into-excel-worksheet/
@@ -8,8 +8,8 @@ aliases:
   - /import-integer-array-into-worksheet/
   - /import-data/integer-array/
   - /import/integer-array/
-keywords: "Aspose.Cells Cloud, Excel, Import integer array, REST API, SDK"
-description: "Import an integer array into an Excel worksheet using Aspose.Cells Cloud REST API. Supports multipart requests and multiple SDKs (C#, PHP, Ruby, etc.)."
+keywords: "import integer array excel, Aspose.Cells Cloud, Excel API, REST API, C#, PHP, Ruby, Python, SDK"
+description: "Learn how to import a one‑dimensional integer array into an Excel worksheet using Aspose.Cells Cloud REST API. Includes multipart request format and sample SDK code (C#, PHP, Ruby, Python)."
 weight: 30
 ---
 
@@ -24,7 +24,7 @@ POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
-The important parameters are described in the following table.
+The important parameters are listed in the table below.
 
 ### ImportIntegerArrayOption
 
