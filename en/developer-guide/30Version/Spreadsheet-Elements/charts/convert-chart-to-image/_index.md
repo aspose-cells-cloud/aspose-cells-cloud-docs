@@ -1,11 +1,11 @@
 ---
-title: "Convert Excel Chart to Image – Aspose.Cells Cloud REST API"
+title: "Convert Excel Chart to Image – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /charts/to-image/
 aliases: [/convert-charts-to-image/]
 weight: 50
-keywords: "Aspose.Cells Cloud, chart to image, Excel chart conversion, REST API, image format, PNG, JPEG, BMP"
-description: "Learn how to convert Excel chart objects to PNG, JPEG, or BMP images using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, SDK snippets, response handling, and error handling."
+keywords: "Aspose.Cells, Excel chart to image, chart conversion API, REST API, PNG, JPEG, BMP, TIFF, GIF, cloud SDK"
+description: "Learn how to convert Excel chart objects to PNG, JPEG, BMP, TIFF, or GIF images using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, SDK snippets, and error handling."
 ---
 
 This REST API demonstrates how to convert an **Excel chart** to an image using **Aspose.Cells Cloud**.
@@ -31,7 +31,7 @@ Supported image formats include `png`, `jpeg`, `bmp`, `tiff`, and `gif`.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
