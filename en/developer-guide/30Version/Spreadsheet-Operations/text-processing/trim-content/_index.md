@@ -1,11 +1,11 @@
 ---
-title: "Aspose.Cells Trim Content API – Remove Spaces & Line Breaks from Excel"
+title: "Aspose.Cells Trim Content API – Remove Spaces and Line Breaks from Excel Files"
 second_title: "Document"
 linktitle: "Trim Content"
 type: docs
 url: /spreadsheet-trim-content/
-keywords: "Aspose.Cells, Trim Content API, Excel clean data, remove spaces Excel, line break removal, spreadsheet data cleaning"
-description: "Use Aspose.Cells Cloud PostTrimContent API to automatically clean extra spaces, line breaks, and unwanted characters from Excel cells. Learn the endpoint, request format, sample code, and error handling."
+keywords: "Aspose.Cells, Trim Content API, Excel clean data, remove spaces, line break removal, spreadsheet data cleaning, PostTrimContent, Aspose Cloud, Excel API"
+description: "Trim spaces, line breaks, and unwanted characters from Excel cells with Aspose.Cells Cloud PostTrimContent API. Learn request format, parameters, sample code, and error handling."
 weight: 100
 ---
 
@@ -29,7 +29,7 @@ Authorization: Bearer <your_access_token>
 {
   "trimContentOptions": {
     "range": "A1:C10",
-    "trimMode": "All", // Options: All, Leading, Trailing
+    "trimMode": "All",
     "ignoreCase": false,
     "preserveFormula": true
   }
