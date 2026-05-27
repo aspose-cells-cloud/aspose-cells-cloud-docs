@@ -1,5 +1,5 @@
 ---
-title: "Auto‑fit columns in an Excel file"
+title: "Auto‑Fit Columns in an Excel Workbook – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Columns"
 type: docs
@@ -7,21 +7,21 @@ url: /autofit-columns-on-an-excel-file/
 aliases:
   [
     /auto-fit-columns-in-excel-workbooks,
-    /autofit-columns-in-excel-workbooks/,
+    /auto-fit-columns-in-excel-workbooks/,
     /columns/autofit/,
     /workbook/autofit/columns/,
   ]
-keywords: "Auto‑fit columns, Excel, Aspose.Cells Cloud, REST API, SDK, cURL, API"
-description: "Learn how to use the Aspose.Cells Cloud REST API to auto‑fit columns in an Excel workbook. Includes request details, a cURL example, and SDK code samples for multiple languages."
+keywords: "auto‑fit columns, Aspose.Cells Cloud, Excel API, REST API, column width, auto‑fit workbook columns"
+description: "Learn how to auto‑fit column widths in an Excel workbook using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint details, required parameters, authentication steps, cURL example, and SDK code samples for C#, Java, Python, and more."
 weight: 90
 ---
 
-This REST API supports auto‑fitting columns in an Excel workbook.
+Use this REST API to auto‑fit columns in an Excel workbook.
 
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
+POST https://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
 ```
 
 The request parameters are:
@@ -44,7 +44,7 @@ You can use the cURL command‑line tool to easily access Aspose.Cells web servi
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
