@@ -1,5 +1,5 @@
 ---
-title: "Group columns on an Excel worksheet"
+title: "Group Columns in an Excel Worksheet – Aspose.Cells Cloud REST API (v3.0)"
 second_title: "Document"
 linktitle: "Group"
 type: docs
@@ -7,12 +7,12 @@ url: /columns/group/
 aliases:
   - /group-columns-in-an-excel-worksheet/
   - /group-columns-in-excel-worksheet/
-keywords: "Aspose.Cells Cloud, group columns, Excel API, REST, SDK, spreadsheet"
-description: "Learn how to group columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL, SDK examples, parameters, and response details."
+keywords: "Aspose.Cells Cloud, group columns, Excel worksheet, API, REST, SDK, spreadsheet"
+description: "Learn how to group columns in an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes request syntax, parameters, cURL example, success and error responses, and SDK code samples for C#, Java, Python, and more."
 weight: 60
 ---
 
-This REST API **lets you** group worksheet columns.
+This REST API **allows you** to group worksheet columns.
 
 ## REST API
 
@@ -32,7 +32,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 | folder         | string  | query    | Path to the folder that contains the workbook.                              |
 | storageName    | string  | query    | Name of the storage service where the file is located.                      |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostGroupWorksheetColumns) defines a publicly accessible programming interface and **allows you** to perform REST interactions directly from a web browser.
 
 ### cURL Example
 
