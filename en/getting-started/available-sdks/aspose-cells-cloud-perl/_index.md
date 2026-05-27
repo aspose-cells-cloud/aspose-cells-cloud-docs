@@ -1,13 +1,13 @@
 ---
-title: "Aspose.Cells Cloud SDK for Perl – Convert, Merge, Split, Protect & More"
+title: "Aspose.Cells Cloud SDK for Perl – Convert, Merge, Split, Protect Excel Files"
 second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud SDK for Perl – Convert, Merge, Split, Protect & More"
+ArticleTitle: "Aspose.Cells Cloud SDK for Perl – Convert, Merge, Split, Protect Excel Files"
 linktitle: "Aspose.Cells Cloud SDK for Perl"
 type: docs
 url: /available-sdks/aspose-cells-cloud-perl/
-description: "Explore the Aspose.Cells Cloud Perl SDK – a cross‑platform library to create, convert, merge, split, protect, search and replace Excel files without Office installed."
+description: "Learn how to install and use the Aspose.Cells Cloud Perl SDK (vX.Y.Z) to create, convert, merge, split, protect, and manipulate Excel files in the cloud."
 weight: 30
-keywords: "Perl SDK, Aspose.Cells Cloud, Excel conversion Perl, Excel SDK for Perl, Cloud SDK"
+keywords: "Perl SDK, Aspose.Cells Cloud, Excel conversion, PDF conversion, Perl API, cloud spreadsheet"
 ---
 
 The SDK is open‑source and licensed under the MIT License. You can access [the Perl library source code for Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl).
@@ -22,9 +22,9 @@ In this article, we’ll explore how to use Aspose.Cells Cloud SDK for Perl to p
 
 Before you can start using the Aspose.Cells Cloud SDK for **Perl**, you need to set up your development environment and install the required dependencies.
 
-* **Perl version** – Perl 5.30 or later is required.  
-* **Credentials** – Obtain a *client ID* and *client secret* from the Aspose Cloud console. Set them as environment variables (`ASPOSE_CLIENT_ID`, `ASPOSE_CLIENT_SECRET`) or pass them directly to the API client.  
-* **CPAN configuration** – Ensure your CPAN client is configured and can install modules from CPAN.
+* **Perl version** - Perl 5.30 or later is required.  
+* **Credentials** - Obtain a *client ID* and *client secret* from the Aspose Cloud console. Set them as environment variables (`ASPOSE_CLIENT_ID`, `ASPOSE_CLIENT_SECRET`) or pass them directly to the API client.  
+* **CPAN configuration** - Ensure your CPAN client is configured and can install modules from CPAN.
 
 Refer to the [Aspose quick‑start guide](https://docs.aspose.cloud/cells/quickstart/) for detailed steps on obtaining your credentials.
 
@@ -61,7 +61,7 @@ use warnings;
 use AsposeCellsCloud::CellsApi;
 
 # -----------------------------------------------------------------
-# Prerequisites – set these values or export them as environment vars
+# Prerequisites - set these values or export them as environment vars
 # -----------------------------------------------------------------
 my $client_id     = $ENV{'ASPOSE_CLIENT_ID'}     // 'YOUR_CLIENT_ID';
 my $client_secret = $ENV{'ASPOSE_CLIENT_SECRET'} // 'YOUR_CLIENT_SECRET';
@@ -77,8 +77,8 @@ my $api = AsposeCellsCloud::CellsApi->new($client_id, $client_secret);
 eval {
     # Upload the source workbook
     $api->UploadFile(
-        path      => "$storage_path/$source_file",
-        file      => $source_file
+        path => "$storage_path/$source_file",
+        file => $source_file
     );
 
     # Convert the workbook
@@ -102,10 +102,10 @@ if ($@) {
 
 **Explanation of the script**
 
-* `use strict; use warnings;` – Enforces good Perl coding practices.  
-* `AsposeCellsCloud::CellsApi->new` – Creates an authenticated client.  
-* `UploadFile` – Places the source workbook in the cloud storage.  
-* `PostConvertWorkbook` – Performs the conversion; `format => 'pdf'` selects PDF output.  
+* `use strict; use warnings;` - Enforces good Perl coding practices.  
+* `AsposeCellsCloud::CellsApi->new` - Creates an authenticated client.  
+* `UploadFile` - Places the source workbook in the cloud storage.  
+* `PostConvertWorkbook` - Performs the conversion; `format => 'pdf'` selects PDF output.  
 * The `eval` block captures any runtime exceptions, and the final `if ($@)` prints a helpful error message.
 
 ---
