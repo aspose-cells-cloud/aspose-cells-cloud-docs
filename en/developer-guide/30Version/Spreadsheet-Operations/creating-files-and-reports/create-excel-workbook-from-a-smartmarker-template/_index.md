@@ -1,5 +1,5 @@
 ---
-title: "Build Excel Reports with Smart Marker Templates"
+title: "Build Excel Reports with Smart Marker Templates – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "SmartMarker"
 type: docs
@@ -8,8 +8,8 @@ aliases:
   - /create-excel-workbook-from-a-smartmarker-template/
   - /workbook/smartmarker/
   - /workbook/create/smartmarker/
-keywords: "Excel, Smart Marker, Aspose.Cells Cloud, REST API, Workbook, SDK, API"
-description: "Learn how to generate Excel workbooks from Smart Marker templates using the Aspose.Cells Cloud REST API. Includes request/response details, cURL example, and SDK code samples."
+keywords: "Aspose.Cells, Smart Marker, Excel report API, REST, cURL"
+description: "Generate Excel workbooks from Smart Marker templates using Aspose.Cells Cloud v3.0. Learn the REST endpoint, required parameters, cURL example, SDK samples, and error handling."
 weight: 40
 ---
 
@@ -21,11 +21,11 @@ This REST API creates a workbook using a Smart Marker template.
 | ------------------------- | -------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | /cells/{name}/smartmarker | POST     | Create a new Excel workbook from a Smart Marker template file | [PostWorkbookGetSmartMarkerResult](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) |
 
-### **What is a Smart Marker?**
+### What is a Smart Marker?
 
 A Smart Marker is a placeholder syntax that maps data fields in an XML (or JSON) file to cells in an Excel template. At runtime Aspose.Cells replaces the markers with the corresponding data, allowing you to generate fully populated reports programmatically.
 
-### **Query Parameters**
+### Query Parameters
 
 | Parameter Name | Type   | Description                                                  |
 | -------------- | ------ | ------------------------------------------------------------ |
@@ -33,7 +33,7 @@ A Smart Marker is a placeholder syntax that maps data fields in an XML (or JSON)
 | folder         | string | Folder containing the original workbook.                     |
 | storageName    | string | Name of the storage service to use.                          |
 
-### **Request Body Parameter**
+### Request Body Parameter
 
 | Parameter Name | Type | Description                                           |
 | -------------- | ---- | ----------------------------------------------------- |
@@ -41,7 +41,7 @@ A Smart Marker is a placeholder syntax that maps data fields in an XML (or JSON)
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -73,7 +73,7 @@ Content-Type: application/json
 
 {{< /tabs >}}
 
-### **Error Handling**
+### Error Handling
 
 | HTTP Status | Description           | Typical Cause                                           |
 | ----------- | --------------------- | ------------------------------------------------------- |
