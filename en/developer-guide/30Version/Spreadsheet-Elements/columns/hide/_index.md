@@ -1,5 +1,5 @@
 ---
-title: "Hide columns on an Excel worksheet"
+title: "Hide Columns in an Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Hide"
 type: docs
@@ -7,8 +7,8 @@ url: /columns/hide/
 aliases:
   - /hide-columns-in-excel-worksheet/
   - /hide-columns-in-an-excel-worksheet/
-keywords: "Aspose.Cells Cloud, hide columns API, Excel column hide, REST API hide columns, Aspose.Cells SDK, spreadsheet automation"
-description: "Learn how to hide one or more columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, SDK code samples, and error handling."
+keywords: "Aspose.Cells, hide columns, Excel API, REST, SDK"
+description: "Learn how to hide one or more columns in an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes endpoint, parameters, cURL and SDK examples, authentication details, and error handling."
 weight: 40
 ---
 
@@ -33,7 +33,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/col
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to call Aspose.Cells web services easily. The example below shows how to hide a column with cURL.
+You can use the **cURL** command‑line tool to call Aspose.Cells web services easily. The example below shows how to hide a column using cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
