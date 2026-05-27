@@ -1,12 +1,12 @@
 ---
-title: "Import Data without Using Storage – Aspose.Cells Cloud API"
+title: "Import Data without Using Storage – Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Import data without storage"
 type: docs
 url: /import/without-using-storage/
 aliases: [/import-data-in-excel-worksheet-without-using-storage/]
-keywords: "Aspose.Cells, Cloud API, import data without storage, Excel import API, REST import"
-description: "Learn how to import data directly into an Excel workbook using Aspose.Cells Cloud API without storing the file first. Includes request format, parameters, cURL example, SDK code, and error handling."
+keywords: "Aspose.Cells, Cells Cloud API, import data without storage, Excel import without storage, REST API, cURL example, SDK"
+description: "Learn how to import data directly into an Excel workbook with Aspose.Cells Cloud API v3.0 without first storing the file. Includes request syntax, parameters, cURL example, SDK snippets, and error handling."
 weight: 10
 ---
 
