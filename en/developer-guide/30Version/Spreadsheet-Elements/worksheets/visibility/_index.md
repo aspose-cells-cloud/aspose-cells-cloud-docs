@@ -1,10 +1,10 @@
 ---
-title: "How to Work with Visibility on an Excel Worksheet"
+title: "How to Hide or Unhide an Excel Worksheet with Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Visibility"
 type: docs
 url: /worksheets/panes/
-keywords: "Aspose.Cells Cloud, hide worksheet API, unhide worksheet API, Excel worksheet visibility, REST API Excel, Aspose.Cells v3.0"
+keywords: "Aspose.Cells Cloud, hide worksheet API, unhide worksheet API, Excel worksheet visibility, REST API, Aspose.Cells v3.0"
 description: "Learn to programmatically hide or unhide Excel worksheets using Aspose.Cells Cloud REST API. Includes request URLs, cURL & .NET SDK examples, error handling, and version‑specific notes."
 weight: 20
 ---
