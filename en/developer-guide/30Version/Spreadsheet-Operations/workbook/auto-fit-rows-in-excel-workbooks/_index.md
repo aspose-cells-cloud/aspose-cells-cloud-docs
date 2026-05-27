@@ -1,24 +1,24 @@
 ---
-title: "Autofit Rows on an Excel Workbook"
+title: "How to Autofit Rows in an Excel Workbook using Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Rows"
 type: docs
 url: /autofit-rows-on-an-excel-file/
 aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
-keywords: "autofit rows, Excel workbook, Aspose.Cells Cloud, REST API, auto fitter options"
-description: "Learn to automatically adjust row heights in an Excel workbook using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, and SDK snippets for C#, Java, Python, and more."
+keywords: "autofit rows, Excel workbook, Aspose.Cells Cloud, REST API, AutoFitterOptions, JWT authentication, upload workbook, row height"
+description: "Step-by-step guide to automatically adjust row heights in an Excel workbook with Aspose.Cells Cloud API. Includes endpoint details, parameters, authentication, cURL example, and SDK snippets for C#, Java, Python, and more."
 weight: 90
 ---
 
 This REST API enables you to **autofit rows** in an Excel workbook, automatically adjusting row height after data is inserted or modified.
 
-## REST API
+## POST /autofitrows Endpoint
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/autofitrows
 ```
 
-The request parameters include:
+The request parameters are:
 
 | Parameter Name    | Type              | Location | Description                                                                     |
 | ----------------- | ----------------- | -------- | ------------------------------------------------------------------------------- |
@@ -32,11 +32,11 @@ The request parameters include:
 | folder            | string            | query    | Folder path where the workbook is stored.                                       |
 | storageName       | string            | query    | Name of the storage service.                                                    |
 
-**AutoFitterOptions** is an object that specifies how the autofit operation behaves (e.g., `AutoFitMergedCells`, `IgnoreHidden`).
+AutoFitterOptions is an object that defines the autofit behavior, such as `AutoFitMergedCells` and `IgnoreHidden`.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to call Aspose.Cells web services. Replace `<jwt token>` with a valid Bearer JWT token obtained from the Aspose authentication service.
+Use the cURL command‑line tool to call Aspose.Cells web services. Replace `<jwt token>` with a valid Bearer JWT token obtained from the Aspose authentication service.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
