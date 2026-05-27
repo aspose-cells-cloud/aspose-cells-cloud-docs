@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert Local Excel Range Data to an Image File - Free Online Tool"
+title: "Convert Excel Range to Image – Aspose.Cells Cloud API (PNG, JPEG, SVG, TIFF, BMP)"
 second_title: "Document"
-ArticleTitle: "How to Convert Local Spreadsheet Range Data to an Image File: Step‑by‑Step Guide"
+ArticleTitle: "Step‑by‑Step Guide to Convert a Local Excel Range to an Image (PNG, JPEG, SVG, TIFF, BMP)"
 linktitle: "Convert Range to Image"
 type: docs
 url: /convert-range-to-image/
-keywords: "Aspose.Cells Cloud, Convert Range to Image, Spreadsheet to Image, Cloud Conversion, Image Formats, REST API, PNG, SVG, TIFF, JPEG, BMP"
-description: "Use Aspose.Cells Cloud REST API to convert a specific range from a local Excel file (XLSX or XLS) into various image formats such as PNG, JPEG, SVG, TIFF, or BMP without uploading the entire workbook."
+keywords: "Aspose.Cells Cloud, convert range to image, Excel to image, PNG, JPEG, SVG, TIFF, BMP, REST API"
+description: "Learn how to convert a specific cell range from a local Excel workbook to PNG, JPEG, SVG, TIFF, or BMP using Aspose.Cells Cloud REST API. Includes endpoint, parameters, sample cURL, and SDK code snippets."
 weight: 100
 ---
 
-Export data of a range from a local Excel file to an [Image](https://docs.fileformat.com/image/) file using the Cloud API.
+Export a range of data from a local Excel file to an image file using the Cloud API.
 
 **Supported IMAGE FORMATS:**
 
@@ -33,7 +33,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
 | Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                               |
 | :------------- | :------ | :------------------------- | :------------------------------------------------------------------------ |
 | Spreadsheet    | File    | FormData                   | Upload the spreadsheet file for conversion.                               |
-| worksheet      | String  | Query                      | The worksheet name of the spreadsheet.                                    |
+| worksheet      | String  | Query                      | The worksheet name within the spreadsheet.                                |
 | range          | String  | Query                      | Define the cell area to convert (e.g., A1:C10).                           |
 | format         | String  | Query                      | Specify the output file format (e.g., png, svg, tiff).                    |
 | printHeadings  | Boolean | Query                      | Indicate if row and column headings should be printed.                    |
@@ -73,7 +73,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
 
 ## Why Should You Use the Convert Range to Image API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and providing comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.
 - **Cost‑Effective**: You can convert range data without first uploading the entire workbook, which saves storage space and reduces costs.
 - **Pixel‑Perfect Preservation**: Faithfully replicates Excel’s appearance—including cell formatting, formulas (as displayed values), borders, colors, and conditional formatting—in the output image.
 - **Universal Compatibility**: Image formats (PNG, JPEG, TIFF, BMP, SVG, and others) are viewable on any device or platform without specialized software, ensuring maximum accessibility.
@@ -82,7 +82,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
 
 ### Convert Range to Image API Specification
 
-The [Convert Range to Image API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToImage) provides a publicly accessible programming interface, enabling REST interactions directly from your web browser.
+The [Convert Range to Image API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToImage) provides a publicly accessible programming interface that enables REST interactions directly from your web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
