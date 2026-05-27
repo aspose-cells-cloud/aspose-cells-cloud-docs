@@ -1,10 +1,10 @@
 ---
-title: "Update Chart Second Value Axis"
+title: "Update Chart Second Value Axis – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /charts/second-value-axis/update/
 weight: 160
-keywords: "Aspose.Cells, REST API, Excel, Update Chart Second Value Axis, Cloud SDK"
-description: "Updates the second value axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells, Update Chart Second Value Axis, Excel API, REST, Cloud SDK, Chart Axis, v3.0"
+description: "Learn how to update the secondary value axis of an Excel chart using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, sample cURL, error codes, and SDK snippets."
 ---
 
 This REST API updates the second value axis of a chart.
