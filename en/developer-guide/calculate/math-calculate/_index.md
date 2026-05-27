@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud – Math Calculate API (Add, Subtract, Multiply, Divide, %)"
+title: "Aspose.Cells Cloud Math Calculate API – Add, Subtract, Multiply, Divide, Percentage Operations for Excel"
 second_title: "Document"
-ArticleTitle: "Add, Subtract, Multiply, Divide, and Percentage in Spreadsheets/Excel"
+ArticleTitle: "Perform Add, Subtract, Multiply, Divide, and Percentage Calculations in Excel with Aspose.Cells Cloud"
 linktitle: "Math Calculate"
 type: docs
 url: /math-calculate/
-keywords: "Math Calculate API, Aspose.Cells Cloud, Excel calculations, Add, Subtract, Multiply, Divide, Percentage, Bulk Excel processing, REST API"
-description: "Learn how to use Aspose.Cells Cloud Math Calculate API to bulk‑apply add, subtract, multiply, divide or percentage operations on Excel ranges. Includes request format, sample code and error handling."
+keywords: "Aspose.Cells Cloud Math Calculate API, Excel bulk calculation, add subtract multiply divide API, percentage calculation API"
+description: "Learn how to use the Aspose.Cells Cloud Math Calculate API to bulk‑apply add, subtract, multiply, divide, or percentage operations to Excel ranges. Includes request format, authentication, sample code, and error handling."
 weight: 100
 ---
 
