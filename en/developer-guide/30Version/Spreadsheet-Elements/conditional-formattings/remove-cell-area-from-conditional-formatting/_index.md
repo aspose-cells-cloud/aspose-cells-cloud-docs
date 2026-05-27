@@ -1,10 +1,10 @@
 ---
-title: "Delete Cell Area – Aspose.Cells Cloud API Documentation"
+title: "Delete Cell Area – Aspose.Cells Cloud API | Remove Conditional Formatting Range"
 type: docs
 url: /conditional-formattings/delete-cell-area/
 aliases: [/remove-cell-area-from-conditional-formatting/]
-keywords: "Aspose.Cells Cloud, Delete Cell Area, Conditional Formatting API, Excel REST API"
-description: "Use the Aspose.Cells Cloud REST API to delete a specific cell area from conditional formatting in an Excel worksheet. Includes ASP.NET, Java, and Python examples."
+keywords: "Aspose.Cells, Cloud, Delete Cell Area, Conditional Formatting, API, Excel, REST"
+description: "Delete a specific cell area from a conditional‑formatting rule in an Excel worksheet using Aspose.Cells Cloud API (v3.0). Includes cURL example and SDK snippets for C#, Java, Ruby, Node.js, and more."
 weight: 70
 ---
 
