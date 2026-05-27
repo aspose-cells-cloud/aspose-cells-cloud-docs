@@ -1,10 +1,10 @@
 ---
-title: "Get Worksheet Comment – Aspose.Cells Cloud API Documentation"
+title: "Retrieve Worksheet Comment – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /comments/get/
 aliases: [/get-comment-from-a-worksheet/]
-keywords: "Aspose.Cells Cloud Get Worksheet Comment, REST API, Excel, worksheet comment"
-description: "Learn how to retrieve a worksheet comment by cell name using Aspose.Cells Cloud API (v3.0). Includes request URL, parameters, cURL sample, and SDK code snippets."
+keywords: "Aspose.Cells Cloud, Retrieve Worksheet Comment, REST API, Excel, worksheet comment, API v3.0, comment retrieval"
+description: "Retrieve a worksheet comment by cell name with Aspose.Cells Cloud API v3.0. Provides request syntax, parameters, sample cURL, response format, error handling, and SDK examples."
 weight: 10
 ---
 
@@ -28,7 +28,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetComment) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Aspose.Cells Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -53,8 +53,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
     "Author": "roy.wang",
     "HtmlNote": "",
     "Note": "Aspose.Cells Cloud.",
-    "AutoSize": "True",
-    "IsVisible": "True",
+    "AutoSize": true,
+    "IsVisible": true,
     "Width": 30,
     "Height": 10,
     "TextHorizontalAlignment": "Bottom",
