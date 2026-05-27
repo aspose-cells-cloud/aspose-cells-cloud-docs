@@ -1,11 +1,11 @@
 ---
-title: "Set page setup for a worksheet"
+title: "Set Page Setup for an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Set page setup"
 type: docs
 url: /set-page-setup/
-keywords: "Aspose.Cells Cloud, Excel, page setup, REST API, worksheet, SDK"
-description: "Learn how to set the page setup for an Excel worksheet using Aspose.Cells Cloud REST API. Includes request details, a cURL example, response format, and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells Cloud, Excel worksheet, page setup, set page setup, REST API, SDK"
+description: "Learn how to configure page setup (orientation, paper size, margins, headers/footers) for an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, JSON body example, cURL command and SDK code snippets."
 weight: 20
 ---
 
@@ -36,8 +36,8 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks/pagesetup" \
--X PUT \
+curl -v "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks/pagesetup" \
+-X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
