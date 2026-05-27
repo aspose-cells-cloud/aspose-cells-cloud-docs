@@ -1,12 +1,12 @@
 ---
-title: "Add Horizontal Page Break"
+title: "Add Horizontal Page Break to Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Add Horizontal Page Break"
 type: docs
 url: /page-breaks/add-horizontal-page-break/
 aliases: [/insert-horizontal-page-break-inside-worksheet/]
-keywords: "horizontal page break, Excel, Aspose.Cells Cloud, REST API, SDK, worksheet, cURL"
-description: "Learn how to add a horizontal page break to an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells, Excel API, horizontal page break, REST, cloud SDK"
+description: "Learn how to insert a horizontal page break in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes full request syntax, required parameters, cURL example, and SDK snippets for C#, Java, Python, and more."
 weight: 30
 ---
 
