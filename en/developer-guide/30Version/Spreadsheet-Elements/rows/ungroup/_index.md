@@ -1,12 +1,12 @@
 ---
-title: "Ungroup rows on an Excel Worksheet"
+title: "Aspose.Cells Cloud – Ungroup Rows in an Excel Worksheet (REST API)"
 second_title: "Document"
 linktitle: "Ungroup"
 type: docs
 url: /rows/ungroup/
 aliases: [/ungroup-rows-in-excel-worksheet/]
-keywords: "Ungroup rows, Excel, Aspose.Cells Cloud, REST API, SDK, spreadsheet"
-description: "Learn how to ungroup rows in an Excel worksheet using the Aspose.Cells Cloud REST API and SDKs for various programming languages."
+keywords: "Aspose.Cells, ungroup rows, Excel API, REST, SDK, cloud spreadsheet, .NET, Java, Python"
+description: "Step‑by‑step guide to ungroup rows in an Excel worksheet with Aspose.Cells Cloud REST API. Includes request parameters, cURL example, and SDK code samples for C#, Java, Python, and more."
 weight: 70
 ---
 
