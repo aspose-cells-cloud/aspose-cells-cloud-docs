@@ -1,12 +1,12 @@
 ---
-title: "Merge Multiple Excel Files into a Single Workbook"
+title: "Merge Multiple Excel Files into a Single Workbook with Aspose.Cells Cloud REST API"
 second_title: "Document"
 linktitle: "Merge Multiple Excel Files"
 type: docs
 url: /merge-multi-files-into-excel/
 aliases: [/merge/multi-files/]
-keywords: "Aspose.Cells Cloud, merge multiple Excel files, REST API, spreadsheet merge, cloud SDK"
-description: "Learn how to merge multiple Excel workbooks into one file using the Aspose.Cells Cloud REST API (v3.0). Includes HTTPS endpoint, cURL command, SDK samples, required parameters, and error‑handling details."
+keywords: "Aspose.Cells Cloud, merge multiple Excel files, Excel merge API, REST API, spreadsheet merge, cloud SDK"
+description: "Step-by-step guide to merging multiple Excel workbooks into one file using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint, cURL example, SDK samples, required parameters, and error handling."
 weight: 32
 ---
 
