@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Overview"
+title: "Aspose.Cells Cloud API – RESTful Excel Processing, Conversion & Rendering"
 second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud Overview: a REST‑first, language‑neutral API service that turns Excel operations into simple HTTPS calls—no local Office installation, no platform dependency."
+ArticleTitle: "Aspose.Cells Cloud API – REST‑first, language‑neutral service that turns Excel operations into simple HTTPS calls—no local Office installation, no platform dependency."
 linktitle: "Overview"
 type: docs
 url: /overview/
-description: "Explore Aspose.Cells Cloud – a REST‑first API that lets you create, convert, merge, split, protect and render Excel files (XLS/XLSX) to PDF, HTML, ODS, XPS, CSV & more. Free trial available."
-keywords: "Aspose.Cells Cloud API tutorial, Excel to PDF conversion API, cloud spreadsheet SDK"
+description: "Explore Aspose.Cells Cloud – a REST‑first API that lets you create, convert, merge, split, protect, and render Excel files (XLS/XLSX) to PDF, HTML, CSV, and more. Free trial available."
+keywords: "Aspose.Cells Cloud API, Excel conversion API, REST Excel SDK, cloud spreadsheet API"
 weight: 10
 ---
 
@@ -25,7 +25,7 @@ Utilizing an SDK (API client) expedites development by handling low‑level deta
 
 ## **API Explorer**
 
-The [Aspose.Cells Cloud API Reference](https://apireference.aspose.cloud/cells/) provides a user‑friendly way to experiment with the APIs directly in your browser. It enables seamless interaction and testing of every operation exposed by the service.
+The [Aspose.Cells Cloud API Reference](https://apireference.aspose.cloud/cells/) provides a user‑friendly way to experiment with the APIs directly in your browser. The API Explorer enables seamless interaction and testing of every operation exposed by the service.
 
 ## **Security and Authentication**
 
