@@ -1,16 +1,16 @@
 ---
-title: "Match all non‑blank cells in an Excel worksheet"
+title: "Match All Non‑Blank Cells in an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Match all non‑blank cells"
 type: docs
 url: /autofilter/match-all-non-blank/
 aliases: [/match-all-non-blank-cells-in-the-list/]
-keywords: "Aspose.Cells Cloud, match non‑blank cells, AutoFilter, Excel API"
-description: "Learn how to use Aspose.Cells Cloud REST API to match all non‑blank cells in an AutoFilter list on an Excel worksheet. Includes endpoint, parameters, authentication, response schema, error codes, and SDK examples."
+keywords: "Aspose.Cells Cloud, match all non‑blank cells, AutoFilter, Excel API, REST API, cURL example"
+description: "Learn how to use the Aspose.Cells Cloud REST API to match all non‑blank cells in an AutoFilter list on an Excel worksheet. Includes endpoint details, parameters, authentication, response schema, error codes, and SDK examples."
 weight: 100
 ---
 
-This REST API matches all non‑blank cells in the AutoFilter list on an Excel worksheet.
+This REST API matches all non‑blank cells within the AutoFilter list of an Excel worksheet.
 
 ## REST API
 
@@ -28,9 +28,9 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
 | folder         | string  | query    | _(Optional)_ Folder path where the file is stored.             |
 | storageName    | string  | query    | _(Optional)_ Name of the storage service to use.               |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchNonBlanks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchNonBlanks) defines a publicly accessible programming interface and enables you to perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to easily access Aspose.Cells web services. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
