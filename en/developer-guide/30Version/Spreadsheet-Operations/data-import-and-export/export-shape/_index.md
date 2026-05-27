@@ -1,12 +1,12 @@
 ---
-title: "Export Shapes"
+title: "Export Excel Shapes – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Shape"
 type: docs
 url: /export-excel-shape-to-different-formats/
 aliases: [/export/excel-shape-to-different-formats/]
-keywords: "Export Shapes, Aspose.Cells Cloud, Excel shape export, Image formats, REST API, SDK"
-description: "Learn how to export Excel shapes to various image formats (PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF) using the Aspose.Cells Cloud REST API and SDKs."
+keywords: "Aspose.Cells, export shape, Excel API, image format"
+description: "Learn how to export Excel shapes (PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF) using Aspose.Cells Cloud REST API or SDKs. Includes cURL, code samples, and response schema."
 weight: 20
 ---
 
@@ -16,7 +16,7 @@ You can export shapes to the following formats: **PNG**, **GIF**, **JPEG**, **BM
 
 | **API**       | **Type** | **Description**                                                    | **Swagger Link**                                                              |
 | :------------ | :------- | :----------------------------------------------------------------- | :---------------------------------------------------------------------------- |
-| /cells/export | PUT      | Export Excel objects from the request content to a specific format | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
+| /cells/export | PUT      | Export Excel shapes from the request content to a specific format | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -198,7 +198,7 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=
       "FileContent": "-----Base64String--------"
     },
     {
-      "Filename": "myDocument_xlsx_Sheet2_Shapes_5.tif",
+      "Filename": "myDocument_xxlsx_Sheet2_Shapes_5.tif",
       "FileSize": 1644,
       "FileContent": "-----Base64String--------"
     },
