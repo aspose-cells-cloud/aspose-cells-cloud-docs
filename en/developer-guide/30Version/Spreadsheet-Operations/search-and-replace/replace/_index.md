@@ -1,11 +1,11 @@
 ---
-title: "Replace text from Excel files"
+title: "Replace Text in Excel Files – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Replace without using storage"
 type: docs
 url: /replace/
-keywords: "Excel replace text, Aspose.Cells Cloud, REST API, spreadsheet replace, API, Excel file text replacement"
-description: "Use Aspose.Cells Cloud REST API to replace existing text with new values in Excel files. Supports SDKs for C#, Java, Python, Node.js, PHP, Ruby, Go, and Perl."
+keywords: "Excel replace text, Aspose.Cells Cloud, REST API, spreadsheet replace, find-and-replace, bulk replace, Excel text replace API, API, Excel file text replacement"
+description: "Learn how to replace text in Excel workbooks using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint details, parameters, cURL example, SDK snippets for multiple languages, and error handling."
 weight: 80
 ---
 
