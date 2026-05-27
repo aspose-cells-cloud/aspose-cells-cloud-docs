@@ -1,5 +1,5 @@
 ---
-title: "Protect Excel Files"
+title: "Encrypt Excel Files with Aspose.Cells Cloud API – POST /cells/protect"
 second_title: "Document"
 linktitle: "Encrypt Excel files"
 type: docs
@@ -10,8 +10,8 @@ aliases:
     /protect/without-using-storage/,
     /protect/without-using-storage/,
   ]
-keywords: "Aspose.Cells, Excel protection API, encrypt Excel workbook, cloud spreadsheet security, REST API"
-description: "Use Aspose.Cells Cloud REST API to protect Excel files. This guide shows how to encrypt workbooks via HTTP POST, cURL, and SDKs for multiple programming languages, as of 2026."
+keywords: "encrypt excel files, Aspose.Cells Cloud, protect workbook API, Excel protection API, cloud spreadsheet security, REST API"
+description: "Learn how to encrypt Excel workbooks using Aspose.Cells Cloud REST API (POST /cells/protect). Includes cURL sample, error codes, SDK snippets for C#, Java, Python, and more. Requires OAuth token – get started in minutes."
 weight: 40
 ---
 
@@ -20,7 +20,7 @@ This REST API protects Excel files.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/protect
+POST https://api.aspose.cloud/v3.0/cells/protect
 ```
 
 ### _Request parameters for `POST /cells/protect`_
@@ -39,12 +39,11 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/protect?password=MySecretPwd" \
+curl -v "https://api.aspose.cloud/v3.0/cells/protect?password=MySecretPwd" \
   -X POST \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <jwt token>" \
-  -F 'file1=@sample1.xlsx' \
-  -F 'file2=@sample2.xlsx'
+  -F "file=@sample1.xlsx"
 ```
 
 {{< /tab >}}
@@ -74,7 +73,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/protect?password=MySecretPwd" \
 
 ### **Error handling**
 
-– The API can return the following status codes:
+– The API returns the following status codes:
 
 | HTTP Code | Meaning                                 | Example JSON error payload                          |
 | --------- | --------------------------------------- | --------------------------------------------------- |
