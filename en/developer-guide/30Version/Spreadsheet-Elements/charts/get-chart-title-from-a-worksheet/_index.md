@@ -1,5 +1,5 @@
 ---
-title: "Get Chart Title from a Worksheet"
+title: "Aspose.Cells Cloud – Get Chart Title from a Worksheet"
 type: docs
 url: /charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
@@ -7,6 +7,7 @@ weight: 120
 keywords:
   [
     "Aspose.Cells Cloud",
+    "Aspose.Cells Cloud API",
     "Chart Title",
     "Excel",
     "REST API",
@@ -14,7 +15,7 @@ keywords:
     "cURL",
     "SDK",
   ]
-description: "Learn how to retrieve a chart title from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication, sample cURL and SDK code."
+description: "Learn how to retrieve a chart title from an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, and sample cURL and SDK code."
 ---
 
 This REST API retrieves the title of a chart that is stored in a worksheet of an Excel workbook.
@@ -37,7 +38,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
