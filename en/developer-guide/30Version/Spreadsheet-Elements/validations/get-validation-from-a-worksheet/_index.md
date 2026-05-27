@@ -1,16 +1,16 @@
 ---
-title: "Get a worksheet validation by index from an Excel worksheet"
+title: "Aspose.Cells Cloud API – Get Worksheet Validation by Index (v3.0)"
 second_title: "Document"
 linktitle: "Get"
 type: docs
 url: /validations/get/
 aliases: [/get-validation-from-a-worksheet/]
-keywords: "Aspose.Cells Cloud, worksheet validation API, get validation by index, Excel REST API, Aspose.Cells SDK"
-description: "Retrieve a worksheet validation by its zero‑based index from an Excel workbook using Aspose.Cells Cloud API (v3.0). Includes cURL example, response schema, error codes, and SDK snippets for C#, Java, Python, and more."
+keywords: "Aspose.Cells Cloud, worksheet validation, API, get validation, Excel, REST API, v3.0, SDK"
+description: "Retrieve a specific worksheet validation by its zero‑based index using Aspose.Cells Cloud REST API (v3.0). Includes cURL request, full response schema, error‑code guide, and SDK examples for C#, Java, Python, and more."
 weight: 10
 ---
 
-This REST API retrieves a worksheet validation by its index on an Excel worksheet.  
+Use this REST API to retrieve a worksheet validation by its index on an Excel worksheet.  
 Before calling the endpoint, obtain a JWT token via the `/connect/token` endpoint and include it in the `Authorization` header as `Bearer <jwt token>`.
 
 ## REST API
@@ -31,7 +31,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validation
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidation) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The example below demonstrates how to call the API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -91,15 +91,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/v
 
 | Field          | Type    | Description                                                             |
 | -------------- | ------- | ----------------------------------------------------------------------- |
-| AlertStyle     | string  | The style of the alert shown to the user (Stop, Warning, Information).  |
+| AlertStyle     | string  | The style of the alert shown to the user (Stop, Warning, Information). |
 | AreaList       | array   | Collection of cell ranges that the validation applies to.               |
 | IgnoreBlank    | boolean | If `true`, blank cells are ignored during validation.                   |
 | InCellDropDown | boolean | If `true`, a drop‑down list is displayed in the cell.                   |
-| Operator       | string  | Comparison operator used for the validation (e.g., `None`, `Between`).  |
-| ShowError      | boolean | Determines whether an error message is shown when validation fails.     |
-| ShowInput      | boolean | Determines whether an input message is shown when the cell is selected. |
+| Operator       | string  | Comparison operator used for the validation (e.g., `None`, `Between`). |
+| ShowError      | boolean | Determines whether an error message is shown when validation fails.    |
+| ShowInput      | boolean | Determines whether an input message is shown when the cell is selected.|
 | Type           | string  | Type of validation (e.g., `AnyValue`, `WholeNumber`, `Decimal`, etc.).  |
-| link.Href      | string  | Self‑reference URL to the validation resource.                          |
+| link.Href      | string  | Self‑reference URL to the validation resource.                         |
 | link.Rel       | string  | Relation type (always `self`).                                          |
 
 **Possible error codes**
