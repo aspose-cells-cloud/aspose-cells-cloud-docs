@@ -1,13 +1,13 @@
 ---
-title: "Calculate All Formulas on an Excel Workbook"
+title: "Calculate All Formulas in an Excel Workbook – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Calculate"
 type: docs
 url: /calculate-all-formulas-on-an-excel-file/
 aliases:
   [/calculate-all-formulas-in-a-workbook/, /workbook/calculate-all-formulas/]
-keywords: "Aspose.Cells, calculate formulas, Excel workbook, REST API, cloud SDK"
-description: "Learn how to calculate every formula in an Excel workbook using the Aspose.Cells Cloud REST API. Includes cURL example, request parameters, detailed response schema, prerequisites, error‑handling guidance, and inline SDK code samples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
+keywords: "calculate formulas, Aspose.Cells, Excel workbook API, REST API, cloud SDK"
+description: "Learn how to calculate every formula in an Excel workbook using Aspose.Cells Cloud REST API. Includes cURL example, request parameters, error handling guidance, and SDK code samples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
 weight: 140
 ---
 
