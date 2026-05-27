@@ -1,12 +1,12 @@
 ---
-title: "Add a Filter in an Excel Worksheet"
+title: "Add an AutoFilter to an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Add filter"
 type: docs
 url: /autofilter/add-filter/
 aliases: [/add-a-filter-for-a-filter-column/]
-keywords: "Aspose.Cells, Cloud, Excel, AutoFilter, Add Filter, REST API, SDK"
-description: "Learn how to add an auto‑filter to a column in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL, SDK samples, and parameter guide."
+keywords: "Aspose.Cells Cloud, AutoFilter API, Excel filter REST, v3.0, REST API, SDK"
+description: "Learn how to add an AutoFilter to a column in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, parameters, cURL example, error handling, and SDK code samples in multiple languages."
 weight: 60
 ---
 
@@ -15,7 +15,7 @@ This REST API adds a filter for a specific column on an Excel worksheet.
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
 ```
 
 ### Request parameters
@@ -41,7 +41,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?range=A1:B1&fieldIndex=0&criteria=Year" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?range=A1:B1&fieldIndex=0&criteria=Year" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
