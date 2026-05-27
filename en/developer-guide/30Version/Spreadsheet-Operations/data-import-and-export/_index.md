@@ -1,11 +1,11 @@
 ---
-title: "Import Data into Excel Files and Export Data from Excel Files"
+title: "Import & Export Data with Aspose.Cells Cloud API v3.0 – CSV, JSON, Arrays, Pictures"
 second_title: "Document"
 linktitle: "Import and Export Data"
 type: docs
 url: /data-import-and-export/
-keywords: "Aspose.Cells Cloud, import data, export Excel, API, CSV, JSON, picture, array"
-description: "Learn how to import data from CSV, JSON, arrays, and pictures into Excel files and export workbooks, charts, and shapes to PDF, PNG, and more using Aspose.Cells Cloud API (v3.0)."
+keywords: "Aspose.Cells Cloud, Excel import API, Excel export API, CSV import, JSON import, picture import, workbook export, API v3.0"
+description: "Learn how to import CSV, JSON, arrays, and pictures into Excel workbooks and export worksheets, charts, or shapes to PDF, PNG, and more using Aspose.Cells Cloud API v3.0. Quick‑start guide, request parameters, and sample code."
 weight: 25
 ---
 
