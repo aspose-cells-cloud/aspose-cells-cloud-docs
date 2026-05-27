@@ -1,20 +1,20 @@
 ---
-title: "Get Chart Area from a Worksheet"
+title: "Get Chart Area from a Worksheet – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /charts/area/get/
 aliases: [/get-chart-area-from-a-worksheet/]
 weight: 60
 keywords:
-  [
-    "Aspose.Cells",
-    "REST API",
-    "ChartArea",
-    "Worksheet",
-    "cURL",
-    "SDK",
-    "GetChartArea",
-  ]
-description: "Learn how to retrieve chart‑area information from a worksheet using the Aspose.Cells Cloud REST API, with examples for cURL and multiple SDKs."
+  - "Aspose.Cells"
+  - "REST API"
+  - "ChartArea"
+  - "Worksheet"
+  - "cURL"
+  - "SDK"
+  - "GetChartArea"
+  - "Aspose.Cells Cloud"
+  - "v3.0"
+description: "Retrieve detailed chart‑area properties (size, position, colors, borders) from an Excel worksheet using Aspose.Cells Cloud REST API. Includes HTTPS endpoint, cURL example, and JSON response."
 ---
 
 This REST API returns chart‑area information.
@@ -22,7 +22,7 @@ This REST API returns chart‑area information.
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea
 ```
 
 ### Request parameters
@@ -44,7 +44,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -108,7 +108,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
     "X": 0,
     "Y": 0,
     "link": {
-      "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea",
+      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea",
       "Rel": "self"
     }
   },
