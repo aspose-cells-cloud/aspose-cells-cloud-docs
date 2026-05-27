@@ -1,5 +1,5 @@
 ---
-title: "Add a dynamic filter in an Excel worksheet"
+title: "Aspose.Cells Cloud – Add Dynamic Filter to Excel Worksheet (API v3.0)"
 second_title: "Document"
 linktitle: "Add dynamic filter"
 type: docs
@@ -7,8 +7,8 @@ url: /autofilter/add-dynamic-filter/
 aliases:
   - /filter-a-list-using-dynamic-filter/
   - /autofilter/add-a-dynamic-filter/
-keywords: "Aspose.Cells, dynamic filter, Excel API, REST, auto filter, cloud SDK"
-description: "Learn how to apply a dynamic filter (e.g., BelowAverage, Tomorrow, LastMonth) to an Excel worksheet using the Aspose.Cells Cloud REST API. Includes cURL, SDK snippets, authentication guidance, and error handling."
+keywords: "Aspose.Cells Cloud, Excel dynamic filter API, REST AutoFilter, add dynamic filter, Aspose SDK examples"
+description: "Step‑by‑step guide to add a dynamic filter (BelowAverage, Tomorrow, LastMonth, etc.) to an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL, SDK snippets, authentication, and error handling."
 weight: 65
 ---
 
@@ -46,7 +46,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL. **First obtain a JWT token** by authenticating against the `/connect/token` endpoint and replace `<jwt token>` with the token value.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL. **First, obtain a JWT token** by authenticating against the `/connect/token` endpoint and replace `<jwt token>` with the token value.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
