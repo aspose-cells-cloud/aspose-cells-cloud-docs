@@ -1,12 +1,12 @@
 ---
-title: "Add a Vertical Page Break"
+title: "Add a Vertical Page Break – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Add a Vertical Page Break"
 type: docs
 url: /page-breaks/add-vertical-page-break/
 aliases: [/insert-vertical-page-break-inside-worksheet/]
-keywords: "Aspose.Cells Cloud, vertical page break, REST API, Excel, SDK, cURL, add page break"
-description: "Learn how to insert a vertical page break into an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, cURL example, SDK samples, authentication guide, and error‑handling details."
+keywords: "Aspose.Cells Cloud API, vertical page break API, Excel page break REST, REST API, SDK, cURL"
+description: "Learn how to insert a vertical page break into an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes request syntax, cURL example, SDK snippets, authentication steps, and error handling."
 weight: 40
 ---
 
@@ -24,11 +24,11 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpa
 | -------------- | ------- | -------- | ----------------------------------------------------------------------- |
 | name           | string  | path     | The name of the Excel workbook.                                         |
 | sheetName      | string  | path     | The name of the worksheet where the page break will be added.           |
-| cellname       | string  | query    | The cell reference (e.g., **A1**) that defines the page‑break location. |
+| cellname       | string  | query    | The cell reference (e.g., **A1**) that defines the page break location. |
 | column         | integer | query    | The zero-based index of the column where the page break starts.         |
 | row            | integer | query    | The zero-based index of the row where the page break starts.            |
-| startRow       | integer | query    | The first row of the page‑break range.                                  |
-| endRow         | integer | query    | The last row of the page‑break range.                                   |
+| startRow       | integer | query    | The first row of the page break range.                                  |
+| endRow         | integer | query    | The last row of the page break range.                                   |
 | folder         | string  | query    | The folder path in the storage where the workbook is located.           |
 | storageName    | string  | query    | The name of the storage service.                                        |
 
