@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Web API – Convert Local Excel Table Data to an HTML File – Free Online Tool"
+title: "Convert Excel Table to HTML – Aspose.Cells Cloud API (v5)"
 second_title: "Document"
-ArticleTitle: "How to Convert Local Spreadsheet Table Data to an HTML File: Step‑by‑Step Guide"
+ArticleTitle: "Step‑by‑Step Guide to Convert a Local Spreadsheet Table to HTML with Aspose.Cells Cloud"
 linktitle: "Convert Table to HTML"
 type: docs
 url: /convert-table-to-html/
-keywords: "Aspose.Cells Cloud, Excel to HTML, Table conversion, Spreadsheet API, REST conversion, Cloud document conversion"
-description: "Convert Excel tables to HTML quickly using the Aspose.Cells Cloud API, with support for custom fonts, regions, and secure storage."
+keywords: "aspose cells, excel to html, table conversion, spreadsheet api, cloud conversion"
+description: "Learn how to convert a local Excel table to HTML using the Aspose.Cells Cloud API. Includes request parameters, sample code, and best‑practice guidance for seamless integration."
 weight: 100
 ---
 
@@ -30,7 +30,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/html
 | outPath        | String | Query                       | (Optional) The folder path where the converted file will be stored. The default value is null.                                                    |
 | outStorageName | String | Query                       | The designated storage name for the output file.                                                                                                  |
 | fontsLocation  | String | Query                       | Specify custom fonts for the conversion.                                                                                                          |
-| region         | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. settings. |
+| region         | String | Query                       | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`) that influences number formatting, date parsing, and locale‑specific behavior.        |
 | password       | String | Query                       | The password required to access the spreadsheet file.                                                                                             |
 
 ### **Response**
