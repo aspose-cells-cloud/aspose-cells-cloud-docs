@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Web API – Convert Spreadsheet to CSV"
+title: "How to Convert a Spreadsheet to CSV Using Aspose.Cells Cloud API"
 second_title: "Document"
 ArticleTitle: "How to Convert a Spreadsheet to CSV Using Aspose.Cells Cloud API"
 linktitle: "Convert Spreadsheet To CSV"
 type: docs
 url: /convert-spreadsheet-to-csv/
-keywords: "convert spreadsheet to csv, Aspose.Cells Cloud API, REST API, cURL example, spreadsheet conversion, CSV export"
-description: "Learn how to convert Excel files (XLS, XLSX, XLSM…) to CSV using Aspose.Cells Cloud API. Includes authentication steps, cURL sample, SDK code snippets, and error handling."
+keywords: "Aspose.Cells Cloud, convert spreadsheet to CSV, Excel to CSV API, REST conversion, cURL CSV conversion"
+description: "Step-by-step guide to convert Excel files (XLS, XLSX, XLSM) to CSV using Aspose.Cells Cloud REST API, including authentication, cURL example, SDK snippets, and error handling."
 weight: 100
 ---
 
-The **ConvertSpreadsheetToCsv** endpoint reads a spreadsheet file uploaded from a local drive, processes the conversion entirely on Aspose.Cells Cloud servers, and returns the resulting CSV file as a binary stream. This cloud‑native operation eliminates the need to upload the source file to cloud storage, reduces storage costs, and simplifies the workflow for developers needing quick spreadsheet‑to‑CSV transformations. Supported formats depend on the underlying libraries, and proper permissions are required for reading the source file. Errors such as missing files, invalid requests, or conversion failures are returned with standard HTTP status codes.
+The **ConvertSpreadsheetToCsv** endpoint reads a spreadsheet file uploaded from a local drive, processes the conversion entirely on Aspose.Cells Cloud servers, and returns the resulting CSV file as a binary stream. The operation eliminates the need to upload the source file to cloud storage, reduces storage costs, and simplifies the workflow for developers needing quick spreadsheet‑to‑CSV transformations. Supported formats depend on the underlying libraries, and proper permissions are required for reading the source file. Errors such as missing files, invalid requests, or conversion failures are returned with standard HTTP status codes.
 
 ## **Convert Spreadsheet To CSV API**
 
