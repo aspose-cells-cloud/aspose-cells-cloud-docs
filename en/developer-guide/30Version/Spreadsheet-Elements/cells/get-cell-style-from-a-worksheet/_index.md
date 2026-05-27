@@ -1,10 +1,10 @@
 ---
-title: "Get Cell Style from a Worksheet – Aspose.Cells Cloud API"
+title: "Get Cell Style from a Worksheet | Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /get-cell-style-from-a-worksheet/
 weight: 10
-keywords: "Aspose.Cells, get cell style, Excel API, REST, cloud SDK, spreadsheet styling"
-description: "Learn how to retrieve the style of a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, response schema, and SDK snippets."
+keywords: "Aspose Cells API, get cell style, Excel REST API, cell formatting, Aspose.Cells Cloud"
+description: "Retrieve the style (font, color, borders, alignment) of a specific cell in an Excel worksheet using Aspose.Cells Cloud API v3.0. Includes cURL example, full JSON schema, and SDK code snippets."
 ---
 
 Use this REST API to retrieve the **style** of a cell in an Excel worksheet.
@@ -27,7 +27,7 @@ The request parameters are:
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCellStyle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services simply. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
