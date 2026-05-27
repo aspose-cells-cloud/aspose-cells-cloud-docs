@@ -1,12 +1,12 @@
 ---  
-title: "Unmerge Cells in a Range"  
+title: "Aspose.Cells Cloud API – Unmerge Cells in a Range (v3.0)"  
 second_title: "Document"  
 linktitle: "Unmerge"  
 type: docs  
 url: /ranges/unmerge/  
 aliases: [/unmerge-merged-cells-of-the-range/]  
-keywords: "Aspose.Cells Cloud, unmerge cells, Excel API, worksheet range, REST API"  
-description: "Learn how to use the Aspose.Cells Cloud API to unmerge merged cells in a specific worksheet range. Includes endpoint, parameters, sample cURL, and SDK code snippets for C#, Java, Python, and more."  
+keywords: "Aspose.Cells, unmerge cells, Excel API, REST, v3.0"  
+description: "Learn how to unmerge merged cells in an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, SDK snippets, and error handling."  
 weight: 20  
 ---  
 
@@ -30,7 +30,7 @@ The request parameters are:
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeUnmerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
