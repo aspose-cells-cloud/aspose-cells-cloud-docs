@@ -1,12 +1,12 @@
 ---
-title: "Unhide rows on an Excel worksheet"
+title: "Unhide Rows in Excel Worksheets – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Unhide"
 type: docs
 url: /rows/unhide/
 aliases: [/unhide-rows-in-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel, unhide rows, REST API, spreadsheet, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
-description: "Use the Aspose.Cells Cloud REST API to unhide rows in an Excel worksheet. The API is available through multiple SDKs such as .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, and Swift."
+keywords: "Aspose.Cells, Cloud, Excel, unhide rows, REST API, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift"
+description: "Learn how to unhide rows in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL, SDK examples, parameters, and response details."
 weight: 50
 ---
 
