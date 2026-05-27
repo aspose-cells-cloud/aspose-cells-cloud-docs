@@ -1,12 +1,12 @@
 ---
-title: What's new in Aspose.Cells Cloud in 2024
+title: What's New in Aspose.Cells Cloud 2024 – API Updates, Text Extraction & Data Transformation
 second_title: "Document"
 linktitle: "What's new in 2024"
 type: docs
 weight: 20
 url: /new-features/2024/
-keywords: "Aspose.Cells Cloud, new features 2024, API updates, spreadsheet processing, Excel, CSV, PDF, REST API"
-description: "Overview of the new features and enhancements introduced in Aspose.Cells Cloud during 2024 releases, including API updates, data transformation, and document‑processing capabilities."
+keywords: "Aspose.Cells Cloud, 2024 release notes, API updates, text extraction, data transformation, .NET Standard"
+description: "Explore the 2024 release notes for Aspose.Cells Cloud. New APIs (Remove Duplicates, Extract Text), text‑processing enhancements, data‑transformation optimisations, and .NET compatibility updates."
 ---
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
@@ -51,7 +51,7 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 
 ## Enhancements in Version 24.5.1
 
-- Add a merge‑queries method for loading data in data transformation.  
+- Add a merge‑queries method for loading data during data transformation.  
 - Optimize the chart data model.  
 - Update the access‑token endpoint.
 
