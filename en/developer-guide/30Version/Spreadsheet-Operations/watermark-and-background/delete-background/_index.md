@@ -1,5 +1,5 @@
 ---
-title: "Delete Background on an Excel Workbook"
+title: "How to Delete a Background Image from an Excel Workbook – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Delete"
 type: docs
@@ -8,8 +8,8 @@ aliases:
   - /delete-background-in-workbook/
   - /workbook/delete-background/
   - /workbook/background/delete/
-keywords: "Aspose Cells delete background, Excel API delete background, Aspose.Cells Cloud, DELETE /cells background"
-description: "Remove a background image from an Excel workbook using Aspose.Cells Cloud API. Learn the DELETE endpoint, required parameters, cURL example, and SDK code in C#, Java, Python, and more."
+keywords: "Aspose.Cells, delete background Excel, remove workbook background, Excel API, Aspose Cloud DELETE"
+description: "Remove a background image from an Excel workbook using Aspose.Cells Cloud API. Learn the DELETE /cells/{name}/background endpoint, required parameters, cURL request, and SDK examples."
 weight: 170
 ---
 
