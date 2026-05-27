@@ -1,12 +1,12 @@
 ---
-title: "Get All Document Properties"
+title: "Aspose.Cells Cloud API – Get All Document Properties (Excel Metadata)"
 second_title: "Document"
 linktitle: "Get all"
 type: docs
 url: /document-properties/get-all/
 aliases: [/get-all-document-properties/]
-keywords: "Get All Document Properties, Aspose.Cells Cloud, Excel document properties, REST API, SDK, Excel metadata"
-description: "Retrieve all document properties from an Excel file using the Aspise.Cells Cloud REST API. The endpoint works with all supported SDKs and programming languages."
+keywords: "Aspose.Cells get all document properties, Excel metadata API, retrieve Excel properties"
+description: "Retrieve every document property (Title, Author, Created, etc.) from an Excel file using the Aspose.Cells Cloud REST API. Includes authentication steps and code examples for multiple languages."
 weight: 25
 ---
 
@@ -15,7 +15,7 @@ This REST API reads document properties.
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
+GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties
 ```
 
 ### Request Parameters
@@ -28,7 +28,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/GetDocumentProperties) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
+You can use the cURL command‑line tool to access the Aspose.Cells Cloud API easily. The following example shows how to call the API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -306,7 +306,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_GetDocumentProperties.go" >}}
+{{< gist "aspose-cells-cloud-gists" "2b824d8e13644368d12682856aa49185" "Example_GetDocumentProperties.go" >}}
 
 {{< /tab >}}
 
