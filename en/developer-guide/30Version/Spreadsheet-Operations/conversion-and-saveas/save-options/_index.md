@@ -1,11 +1,11 @@
 ---
-title: "Save Options"
+title: "Aspose.Cells Cloud Save Options – Configure Workbook Save Behavior"
 second_title: "Document"
 linktitle: "Save options"
 type: docs
 url: /save-options/
-keywords: "Aspose.Cells Cloud, SaveOptions, Excel, Workbook, REST API, File Formats, PDF, CSV, JSON, HTTP Compression, Chart Cache, Named Ranges, Directory Creation"
-description: "Describes the SaveOptions properties of the Aspose.Cells Cloud REST API, enabling developers to configure workbook‑saving behavior across multiple file formats and options such as HTTP compression, chart cache refresh, and automatic directory creation."
+keywords: "Aspose.Cells SaveOptions, Excel save options API, Aspose Cells Cloud save format, HTTP compression, chart cache refresh, directory creation, workbook"
+description: "Learn how to use Aspose.Cells Cloud SaveOptions to control workbook saving – set format, HTTP compression, directory creation, chart cache refresh, and more. Includes defaults, code samples, and FAQ."
 weight: 79
 ---
 
