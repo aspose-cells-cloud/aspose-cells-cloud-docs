@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Web API – Set / Modify Open Password for Excel Files"
+title: "Aspose.Cells Cloud API – Set or Modify Open and Read‑Write Passwords for Excel Files"
 second_title: "Comprehensive Developer Guide"
-ArticleTitle: "Spreadsheet Protection – Set Open Password and Modify Password"
+ArticleTitle: "Spreadsheet Protection – Set or Modify Open and Read‑Write Passwords"
 linktitle: "Protection"
 type: docs
 url: /protection/
-keywords: "Aspose.Cells Cloud API, spreadsheet protection, open password, read‑write password, Excel security"
-description: "Learn how to protect an Excel workbook with an open or read‑write password using Aspose.Cells Cloud REST API. Includes request syntax, code samples, and error handling."
+keywords: "Aspose.Cells Cloud, spreadsheet protection, open password, read‑write password, Excel security, API endpoint, password protection"
+description: "Learn how to set, modify, or remove open and read‑write passwords for Excel workbooks using Aspose.Cells Cloud API. Includes request syntax, JSON payload, code samples (C#, Java, Python), and error handling."
 weight: 60
 ---
 
