@@ -1,12 +1,12 @@
 ---
-title: "Decrypt an Excel Workbook"
+title: "Decrypt an Excel Workbook using Aspose.Cells Cloud REST API"
 second_title: "Document"
 linktitle: "Decrypt an Excel file"
 type: docs
 url: /excel-file-decrypt/
 aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
-keywords: "Aspose.Cells, Excel decryption, REST API, cloud SDK"
-description: "Learn how to decrypt an Excel workbook using Aspose.Cells Cloud REST API. Includes required parameters, cURL example, SDK code samples, and error handling details."
+keywords: "Aspose.Cells decrypt Excel API, Excel workbook decryption, REST delete decrypt workbook, Aspose Cloud SDK, Aspose.Cells, Excel decryption, REST API, cloud SDK"
+description: "Learn how to decrypt password‑protected Excel workbooks with Aspose.Cells Cloud REST API (v3.0). Includes query parameters, request body details, cURL example, SDK snippets, and error handling."
 weight: 50
 ---
 
@@ -39,7 +39,7 @@ weight: 50
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use **cURL** to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
+You can use **cURL** to access Aspose.Cells web services easily. The following example shows how to call the Cloud API using cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -50,7 +50,7 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
      -H "accept: application/json" \
      -H "Content-Type: application/json" \
      -H "Authorization: Bearer <access_token>" \
-     -d '{ "EncryptionType": "XOR", "KeyLength": 1280, "Password": "aspose"}'
+     -d '{ "EncryptionType": "XOR", "KeyLength": 128, "Password": "aspose"}'
 ```
 
 {{< /tab >}}
@@ -63,6 +63,10 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
   "Status": "OK"
 }
 ```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ## Cloud SDK Family
 
