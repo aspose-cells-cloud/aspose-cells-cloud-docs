@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Get File Versions API – Fast Retrieval of File Version History"
+title: "Aspose.Cells Cloud Get File Versions API – Retrieve Excel File Version History Quickly"
 second_title: "Document"
-ArticleTitle: "Cloud‑Based Excel Management – Quickly Retrieve File Version History in Aspose.Cells Cloud"
+ArticleTitle: "Cloud-Based Excel Management – Retrieve File Version History Quickly with Aspose.Cells Cloud"
 linktitle: "Get File Versions"
 type: docs
 url: /get-file-versions/
-keywords: "Aspose Cells API, file versions, spreadsheet versioning, cloud storage API, REST, Excel file history"
-description: "Get a complete list of version history for any Excel file stored in Aspose.Cells Cloud. Supports storage selection, authentication, and detailed error codes."
+keywords: "Aspose.Cells Cloud, GetFileVersions API, Excel file version history, spreadsheet versioning, cloud storage API, REST API, Excel file versions"
+description: "Use the Aspose.Cells Cloud GetFileVersions API to retrieve a complete list of version history for any Excel spreadsheet. Supports specifying storage, authentication, and provides detailed error codes."
 weight: 100
 ---
 
