@@ -1,11 +1,9 @@
 ---
-title: "Release Notes"
+title: "Aspose.Cells Cloud Release Notes – Excel API Updates"
 second_title: "Document"
 type: docs
 url: /release-notes/
-description: "Aspose.Cells Cloud supports Excel to create, convert, merge, split, protected, inner object operation, and so on."
+description: "Aspose.Cells Cloud provides a comprehensive Excel API for creating, converting, merging, splitting, protecting spreadsheets, and manipulating embedded objects."
 weight: 40
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Release Notes
+keywords: "Aspose.Cells Cloud, Excel API, release notes, spreadsheet conversion, PDF, CSV, JSON, REST API, cloud spreadsheet"
 ---
-
-
