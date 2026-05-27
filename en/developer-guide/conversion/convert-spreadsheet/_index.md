@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert a Spreadsheet to another format - Free Online Tool"
+title: "Convert Spreadsheet to PDF, CSV, XLSX & 20+ Formats – Aspose.Cells Cloud API"
 second_title: "Document"
-ArticleTitle: "How to Convert a Spreadsheet to another format: Step‑by‑Step Guide"
+ArticleTitle: "How to Convert a Spreadsheet to PDF, CSV, XLSX & 20+ Formats – Step‑by‑Step Guide"
 linktitle: "Convert Spreadsheet"
 type: docs
 url: /convert-spreadsheet/
-keywords: "spreadsheet conversion, convert spreadsheet, cloud conversion, REST API, XLSX, PDF, CSV, JSON, Markdown, convert local files"
-description: "Effortlessly convert a spreadsheet from a local drive to various formats using the Excel API."
+keywords: "spreadsheet conversion, convert spreadsheet, cloud conversion, REST API, XLSX, PDF, CSV, JSON, Markdown, convert local files, convert xls to xlsx online, excel to pdf REST API, aspose cells conversion guide"
+description: "Use Aspose.Cells Cloud API to convert Excel files to PDF, CSV, JSON, HTML, and 20+ other formats. Free online tool, SDKs for 10 languages, instant results."
 weight: 100
 ---
 
@@ -40,7 +40,7 @@ Convert a local spreadsheet/Excel file to another format with the Aspose.Cells C
 | [PNG](https://docs.fileformat.com/image/png/)                     | Portable Network Graphics format.                                                                                            |
 | [BMP](https://docs.fileformat.com/image/bmp/)                     | Bitmap Image format.                                                                                                         |
 | [EMF](https://docs.fileformat.com/image/emf/)                     | Enhanced Metafile format.                                                                                                    |
-| [JPEG](https://docs.fileformat.com/image/jpeg/)                   | JPEG is a type of image format that is saved using lossy compression.                                                        |
+| [JPEG](https://docs.fileformat.com/image/jpeg/)                   | JPEG is a type of image format that is saved using lossy compression.                                                      |
 | [GIF](https://docs.fileformat.com/image/gif/)                     | Graphics Interchange Format.                                                                                                 |
 | [MARKDOWN](https://docs.fileformat.com/word-processing/md/)       | Represents a Markdown document.                                                                                              |
 | [SXC](https://docs.fileformat.com/spreadsheet/sxc/)               | An XML‑based format used by OpenOffice and StarOffice.                                                                       |
@@ -64,15 +64,15 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                  |
-| :------------- | :----- | :------------------------- | :------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                   | Upload the spreadsheet file to be converted.                                                 |
-| format         | String | Query                      | (Required) The desired output format (e.g., “Xlsx”, “PDF”, “CSV”).                           |
-| outPath        | String | Query                      | (Optional) The folder path where the converted workbook will be stored. The default is null. |
-| outStorageName | String | Query                      | Specify an output file storage name.                                                         |
-| fontsLocation  | String | Query                      | Use custom fonts for the spreadsheet.                                                        |
-| region         | String | Query                      | Specify the spreadsheet region setting.                                                      |
-| password       | String | Query                      | The password for opening the spreadsheet file if it is protected.                            |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                   |
+| :------------- | :----- | :------------------------- | :------------------------------------------------------------------------------------------------------------ |
+| Spreadsheet    | File   | FormData                   | Upload the spreadsheet file to be converted.                                                                  |
+| format         | String | Query                      | (Required) The desired output format (e.g., “Xlsx”, “PDF”, “CSV”).                                            |
+| outPath        | String | Query                      | (Optional) The folder path where the converted workbook will be stored. If not provided, the default value is null. |
+| outStorageName | String | Query                      | Specify an output file storage name.                                                                          |
+| fontsLocation  | String | Query                      | Use custom fonts for the spreadsheet.                                                                         |
+| region         | String | Query                      | Specify the spreadsheet region setting.                                                                       |
+| password       | String | Query                      | The password for opening the spreadsheet file if it is protected.                                            |
 
 ### **Response**
 
@@ -90,24 +90,24 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
+- **404 Not Found**: The spreadsheet file is not accessible.  
 - **500 Server Error**: The spreadsheet has encountered an anomaly while obtaining calculation data.
 
 ## Where should you use the Convert Spreadsheet API?
 
-- **Legacy System Migration**: Convert thousands of legacy XLS files to XLSX for modern systems.
-- **Archive Standardization**: Normalize various spreadsheet formats (XLS, XLSM, ODS, CSV) to a single format for archival.
-- **Office Suite Interoperability**: Convert Excel files to formats compatible with LibreOffice, Google Sheets, or Apple Numbers.
-- **Data Source Normalization**: Convert various spreadsheet formats to CSV or JSON for database ingestion.
+- **Legacy‑System Migration**: Convert thousands of legacy XLS files to XLSX for modern systems.  
+- **Archive Standardization**: Normalize various spreadsheet formats (XLS, XLSM, ODS, CSV) to a single format for archival.  
+- **Office‑Suite Interoperability**: Convert Excel files to formats compatible with LibreOffice, Google Sheets, or Apple Numbers.  
+- **Data‑Source Normalization**: Convert various spreadsheet formats to CSV or JSON for database ingestion.  
 - **Web Publishing**: Convert financial models to HTML for web display.
 
 ## Why should you use the Convert Spreadsheet API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.
-- **Cost‑Effective**: You can convert table data without first uploading the workbook, which saves storage space and reduces costs.
-- **Comprehensive Format Support**: Convert between 20+ spreadsheet formats.
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.  
+- **Cost‑Effective**: You can convert table data without first uploading the workbook, which saves storage space and reduces costs.  
+- **Comprehensive Format Support**: Convert between 20+ spreadsheet formats.  
 - **Preserve Data Fidelity & Formatting.**
 
 ## How to Use the Convert Spreadsheet API with SDKs?
