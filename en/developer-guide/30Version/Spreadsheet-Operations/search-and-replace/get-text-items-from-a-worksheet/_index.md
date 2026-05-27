@@ -1,13 +1,13 @@
 ---
-title: "Get Text Items from an Excel Worksheet"
+title: "Aspose.Cells Cloud API – Get Text Items from an Excel Worksheet (v3.0)"
 second_title: "Document"
 linktitle: "Get Text Items in Worksheet"
 type: docs
 url: /worksheets/get-text-items/
 aliases: [/get-text-items-from-a-worksheet/]
 weight: 20
-keywords: "Aspose.Cells, Cloud API, Excel, worksheet, text items, REST"
-description: "Retrieve all text items from a specific worksheet in an Excel file using Aspose.Cells Cloud REST API. Includes sample cURL, SDK code, authentication steps, and response schema."
+keywords: "Aspose.Cells Cloud, Excel API, get text items, worksheet text, REST, cURL, SDK"
+description: "Retrieve all text items from a worksheet in an Excel file via Aspose.Cells Cloud v3.0 REST API. Includes cURL example, SDK snippets, authentication details, and response schema."
 ---
 
 This REST API reads a worksheet’s text items in an Excel file.
@@ -37,7 +37,7 @@ The request parameters are as follows:
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetTextItems) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -89,7 +89,7 @@ The API can return the following HTTP status codes:
 - **400 Bad Request** – Missing or invalid parameters.
 - **401 Unauthorized** – Access token is absent, expired, or invalid.
 - **404 Not Found** – The specified workbook or worksheet does not exist.
-- **500 Internal Server Error** – An unexpected server‑side error occurred.
+- **500 Internal Server Error** – An unexpected server-side error occurred.
 
 Error responses are returned in JSON format, for example:
 
