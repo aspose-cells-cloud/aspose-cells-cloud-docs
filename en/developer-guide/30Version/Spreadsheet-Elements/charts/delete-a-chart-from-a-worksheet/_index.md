@@ -1,24 +1,24 @@
 ---
-title: "Delete a Chart from a Worksheet"
+title: "Delete a Chart from a Worksheet – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /charts/delete/
 aliases: [/delete-a-chart-from-a-worksheet/]
 weight: 40
 keywords:
   [
-    "Aspose.Cells",
-    "REST API",
+    "Aspose.Cells Cloud",
     "Delete Chart",
     "Worksheet",
     "Excel",
-    "Cloud SDK",
+    "REST API",
     "Chart Deletion",
     "API Reference",
+    "v3.0"
   ]
-description: "Deletes a chart from a worksheet by its zero‑based index using the Aspose.Cells Cloud REST API."
+description: "Delete a chart from an Excel worksheet by its zero‑based index using Aspose.Cells Cloud REST API (v3.0). Includes request format, parameters, and cURL example."
 ---
 
-This REST API deletes a worksheet chart by its index.
+This REST API deletes a chart from a worksheet by specifying its zero‑based index.
 
 ## REST API
 
@@ -38,14 +38,14 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetDeleteChart) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the cURL command‑line tool to call Aspose.Cells web services. The example below demonstrates a DELETE request to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
