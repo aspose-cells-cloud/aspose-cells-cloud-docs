@@ -1,11 +1,11 @@
 ---
-title: "Working with Excel OLE Objects"
+title: "Working with Excel OLE Objects using Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "OleObjects"
 type: docs
 url: /oleobjects/
 aliases: [/working-with-oleobjects/]
-keywords: "OLE objects, Excel worksheet, Aspose.Cells Cloud, REST API, get OLE object, add OLE object, update OLE object, delete OLE object, convert OLE to image"
+keywords: "Aspose.Cells Cloud, Excel OLE objects, OLE object API, REST API, get OLE object, add OLE object, update OLE object, delete OLE object, convert OLE to image"
 description: "Use the Aspose.Cells Cloud REST API to retrieve, add, update, delete, and convert OLE objects in Excel worksheets. SDKs are available for Java, .NET, Python, PHP, Ruby, Go, Node.js, Perl, Swift, and Android."
 weight: 100
 ---
