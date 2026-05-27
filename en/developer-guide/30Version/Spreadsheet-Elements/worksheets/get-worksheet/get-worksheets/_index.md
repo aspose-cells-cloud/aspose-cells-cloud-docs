@@ -1,12 +1,12 @@
 ---
-title: "Get All Worksheets"
+title: "Aspose.Cells Cloud API – Get All Worksheets (Retrieve Worksheet List)"
 second_title: "Document"
 linktitle: "All"
 type: docs
 url: /worksheets/get-all/
 aliases: [/get-worksheet-count/]
-keywords: "Aspose.Cells, Cloud API, Get Worksheets, Excel, REST, SDK"
-description: "Retrieve the list of worksheets in an Excel workbook via Aspose.Cells Cloud REST API (v3.0). Includes cURL example, SDK snippets, and response format."
+keywords: "Aspose.Cells Cloud, Get All Worksheets, Excel, REST API, SDK"
+description: "Retrieve a list of worksheets from an Excel workbook using Aspose.Cells Cloud REST API v3.0. Includes cURL example, SDK snippets, response schema, and error handling."
 weight: 10
 ---
 
@@ -18,7 +18,7 @@ This REST API returns information about the worksheets contained in a workbook.
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 ```
 
-### **Request parameters**
+### Request parameters
 
 | Parameter Name | Type   | Location | Description                            |
 | -------------- | ------ | -------- | -------------------------------------- |
@@ -28,7 +28,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheets) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells Cloud services. The example below demonstrates a GET request to retrieve the worksheets.
+You can use the cURL command‑line tool to access Aspose.Cells Cloud services. The example below shows a GET request that retrieves the worksheets.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -88,7 +88,7 @@ Typical HTTP status codes returned by this endpoint:
 | 404  | Not Found             | Specified workbook does not exist.         |
 | 500  | Internal Server Error | Unexpected server condition.               |
 
-Error responses are returned in JSON format, for example:
+The API returns error responses in JSON format, for example:
 
 ```json
 {
