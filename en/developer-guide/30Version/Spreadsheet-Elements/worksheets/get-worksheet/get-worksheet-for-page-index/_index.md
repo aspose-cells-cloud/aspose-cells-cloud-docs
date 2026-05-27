@@ -1,12 +1,12 @@
 ---
-title: "Export a Worksheet Page – Aspose.Cells Cloud API Reference"
+title: "Export Worksheet Page – Convert to PDF, PNG, CSV with Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Page"
 type: docs
 url: /worksheets/page-to-different-formats/
 aliases: [/get-worksheet-for-page-index/]
-keywords: "Aspose.Cells Cloud, worksheet page export, PDF, PNG, CSV, REST API, JWT authentication, file formats"
-description: "Learn how to export a specific worksheet page to PDF, PNG, CSV, and more using Aspose.Cells Cloud REST API. Includes cURL request, parameter guide, and SDK samples for multiple languages."
+keywords: "Export Worksheet Page, Aspose.Cells Cloud, PDF, PNG, CSV, REST API, JWT authentication, file formats, API version 3.0"
+description: "Learn how to export a specific worksheet page to PDF, PNG, CSV, and over 20 other formats using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, parameter reference, possible errors, and SDK samples for multiple languages."
 weight: 240
 ---
 
