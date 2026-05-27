@@ -1,10 +1,10 @@
 ---
-title: "Add Condition to Conditional Formatting"
+title: "Add a Condition to Conditional Formatting – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /conditional-formattings/add-a-condition/
 aliases: [/add-a-condition-for-format-condition/]
-keywords: "Aspose.Cells Cloud, Conditional Formatting, Add Condition, REST API, Excel, Worksheet"
-description: "Learn how to add a condition to a worksheet's conditional formatting using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication details, cURL example, and SDK snippets."
+keywords: "Aspose.Cells Cloud, Conditional Formatting, Add Condition, REST API, Excel, Worksheet, Cloud SDK"
+description: "Learn how to add a condition to a worksheet’s conditional formatting using Aspose.Cells Cloud API v3.0. Includes endpoint, required parameters, cURL example, SDK snippets, and error handling."
 weight: 40
 ---
 
@@ -26,7 +26,7 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditiona
 | type           | string  | query    | Type of the condition (e.g., _CellValue_, _Expression_).        |
 | operatorType   | string  | query    | Operator used for the condition (e.g., _Equal_, _GreaterThan_). |
 | formula1       | string  | query    | First formula or value for the condition.                       |
-| formula2       | string  | query    | Second formula or value (used with some operators).             |
+| formula2       | string  | query    | Second formula or value (used with some operators).            |
 | folder         | string  | query    | Folder in storage where the workbook is located.                |
 | storageName    | string  | query    | Name of the storage service.                                    |
 
@@ -34,7 +34,7 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditiona
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatConditionCondition) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
