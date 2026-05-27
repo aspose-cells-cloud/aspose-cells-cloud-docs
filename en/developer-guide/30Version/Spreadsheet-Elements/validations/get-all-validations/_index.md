@@ -1,11 +1,11 @@
 ---
-title: "Get All Worksheet Validations from an Excel Worksheet"
+title: "Get All Worksheet Validations – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Get All"
 type: docs
 url: /validations/get-all/
-keywords: "Aspose.Cells Cloud, Excel, worksheet validations, REST API, Get all validations, SDKs"
-description: "Retrieve all worksheet validations from an Excel worksheet using the Aspose.Cells Cloud REST API. Supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) for rapid integration."
+keywords: "Aspose.Cells Cloud, Excel, worksheet validations, REST API, Get all validations, SDKs, API endpoint, cURL"
+description: "Retrieve every data‑validation rule from a worksheet via Aspose.Cells Cloud API. Supports C#, Java, Python, PHP, Ruby, Node.js, Go, and Perl SDKs."
 weight: 10
 ---
 
@@ -14,10 +14,10 @@ This REST API retrieves all worksheet validations on an Excel worksheet.
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 ```
 
-### **Request parameters**
+### Request parameters
 
 | Parameter Name | Type   | Location | Description                               |
 | -------------- | ------ | -------- | ----------------------------------------- |
@@ -35,7 +35,7 @@ You can use the cURL command‑line tool to access Aspose.Cells Cloud web servic
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -47,7 +47,7 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/vali
 {{< tab tabNum="2" >}}
 
 ```bash
-# (Response example will be displayed here)
+*See live response in the API console.*
 ```
 
 {{< /tab >}}
