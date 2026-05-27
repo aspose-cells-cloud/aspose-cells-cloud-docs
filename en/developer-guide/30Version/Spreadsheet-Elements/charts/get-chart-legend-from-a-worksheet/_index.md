@@ -1,11 +1,11 @@
 ---
-title: "Get Chart Legend from a Worksheet"
+title: "Get Chart Legend – Aspose.Cells Cloud API v3.0 Documentation"
 type: docs
 url: /charts/legend/get/
 aliases: [/get-chart-legend-from-a-worksheet/]
 weight: 80
-keywords: "Aspose.Cells, chart legend, REST API, Excel, cloud SDK, get chart legend, worksheet, spreadsheet"
-description: "Retrieve the legend of a chart from a specific worksheet in an Excel workbook using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL sample, and SDK snippets."
+keywords: "Aspose.Cells, chart legend API, Excel chart legend, REST GET legend, Aspose.Cells Cloud v3.0"
+description: "Retrieve legend properties (position, font, size, formatting) of a chart in an Excel worksheet using Aspose.Cells Cloud API v3.0. Includes endpoint, parameters, cURL and SDK examples."
 ---
 
 The **Get Chart Legend** operation returns the legend information of a chart that resides in a worksheet of an Excel workbook. This endpoint is part of **Aspose.Cells Cloud API v3.0** and can be used when you need to read legend properties such as position, font, size, and formatting.
@@ -28,7 +28,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartLegend) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API using cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
