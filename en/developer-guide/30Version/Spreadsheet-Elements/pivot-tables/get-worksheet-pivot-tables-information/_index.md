@@ -1,12 +1,12 @@
 ---
-title: "Get All Pivot Tables in an Excel Worksheet"
+title: "Get All Pivot Tables – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: Get all
 type: docs
 url: /pivot-tables/get-all/
 aliases: [/get-worksheet-pivot-tables-information/]
-keywords: "get all pivot tables, Aspose.Cells Cloud API, Excel PivotTable, REST API"
-description: "Retrieve every PivotTable from an Excel worksheet via Aspose.Cells Cloud API. Includes endpoint, parameters, auth steps, cURL, and SDK samples."
+keywords: "pivot tables, Aspose.Cells Cloud, Excel API, REST API, get all pivot tables"
+description: "Retrieve all PivotTables from an Excel worksheet using Aspose.Cells Cloud API v3.0. Includes endpoint, parameters, authentication, cURL example, and SDK code samples."
 weight: 20
 ---
 
