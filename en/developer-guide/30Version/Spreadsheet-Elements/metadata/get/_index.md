@@ -1,11 +1,11 @@
 ---
-title: "Get metadata from Excel files"
+title: "Aspose.Cells Cloud API – Get Excel Metadata (v3.0) | REST"
 second_title: "Document"
 linktitle: "Get without using storage"
 type: docs
 url: /metadata/get/
-keywords: "Aspose.Cells, Excel metadata, REST API, cloud SDK, get metadata"
-description: "Retrieve built‑in or custom metadata from Excel workbooks using Aspose.Cells Cloud REST API. Includes request format, parameters, sample SDK code, and error handling."
+keywords: "Aspose.Cells, Excel metadata API, get metadata, REST, OAuth 2.0"
+description: "Retrieve built‑in or custom metadata from Excel workbooks via Aspose.Cells Cloud REST API. Supports multipart upload, OAuth 2.0, and returns JSON with name, value, and read‑only status."
 weight: 23
 ---
 
@@ -28,7 +28,7 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 
 | Parameter Name | Type      | Description                                                         |
 | -------------- | --------- | ------------------------------------------------------------------- |
-| excel file     | data file | The Excel file supplied as the first part of the multipart request. |
+| Excel file     | data file | The Excel file supplied as the first part of the multipart request. |
 
 ### Response
 
