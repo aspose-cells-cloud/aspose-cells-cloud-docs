@@ -1,10 +1,10 @@
 ---
-title: "Clear Cell Formatting in an Excel Worksheet"
+title: "Clear Cell Formatting in Excel Worksheet – Aspose.Cells Cloud REST API (v3.0)"
 type: docs
 url: /clear-cells-formatting-in-excel-worksheet/
 weight: 100
-keywords: "Aspose.Cells Cloud, Excel, Clear Cell Formatting, REST API, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
-description: "Use Aspose.Cells Cloud REST API to clear cell formatting in an Excel worksheet. Includes request details, a cURL example, and SDK code snippets for multiple languages."
+keywords: "clear cell formatting, Aspose.Cells Cloud, Excel worksheet API, REST API, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Learn how to remove formatting from cells or an entire worksheet using the Aspose.Cells Cloud REST API. Includes endpoint details, parameters, a cURL example, response schema, and SDK snippets for multiple languages."
 ---
 
 This REST API clears cell formatting in an Excel file.
@@ -15,7 +15,7 @@ This REST API clears cell formatting in an Excel file.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name | Type    | Location | Description                           |
 | -------------- | ------- | -------- | ------------------------------------- |
