@@ -1,12 +1,12 @@
 ---
-title: "Add a Shape to an Excel Worksheet"
+title: "Add a Shape to an Excel Worksheet – Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /shapes/add/
 aliases: [/add-a-shape-inside-the-worksheet/]
-keywords: "Aspose.Cells, add shape, Excel API, REST API, cloud SDK, shapeDTO, drawing type"
-description: "Learn how to add shapes (arc, line, rectangle, etc.) to an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes request syntax, required parameters, authentication steps, and sample SDK code."
+keywords: "Aspose.Cells, add shape, Excel API, REST API, cloud SDK, shapeDTO, drawing type, Excel worksheet, shape"
+description: "Learn how to add arcs, lines, rectangles, and other shapes to an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes full request syntax, required parameters, authentication steps, and SDK examples in C#, Java, Python, and more."
 weight: 30
 ---
 
@@ -68,8 +68,8 @@ _The successful response returns the HTTP status code, a textual status, and the
 
 Typical error responses include:
 
-- **400 Bad Request** – missing or invalid parameters.
-- **401 Unauthorized** – invalid or missing JWT token.
+- **400 Bad Request** – missing or invalid parameters.  
+- **401 Unauthorized** – invalid or missing JWT token.  
 - **404 Not Found** – the specified worksheet or document does not exist.
 
 Each error is returned as a JSON object containing `Code` and `Message` fields.
