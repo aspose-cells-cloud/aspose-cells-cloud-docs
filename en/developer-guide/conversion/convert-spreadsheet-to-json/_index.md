@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Web API – Convert Spreadsheet to JSON"
+title: "Convert Spreadsheet to JSON – Aspose.Cells Cloud API Documentation"
 second_title: "Document"
-ArticleTitle: "How to Convert a Local Spreadsheet to JSON Using Aspose.Cells Cloud API"
+ArticleTitle: "How to Convert a Local Spreadsheet to JSON with Aspose.Cells Cloud API"
 linktitle: "Convert Spreadsheet to JSON"
 type: docs
 url: /convert-spreadsheet-to-json/
-keywords: "Aspose Cells Cloud, spreadsheet to JSON, API conversion, Excel JSON, cloud conversion, REST API"
-description: "Learn how to convert local Excel files to JSON with Aspose.Cells Cloud API. Includes endpoint, parameters, sample code, and error handling for seamless integration."
+keywords: "Aspose, Cells, Cloud, Spreadsheet, JSON, API, Conversion"
+description: "Learn how to convert local Excel files to JSON with Aspose.Cells Cloud API (v4.0). Includes endpoint, authentication, sample cURL request, response format, error handling, and SDK examples."
 weight: 100
 ---
 
@@ -28,7 +28,7 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json
 | outPath        | String                     | Query    | Optional          | Target folder path on cloud storage where the converted JSON file will be saved. If omitted, the JSON is returned directly in the response stream. Example: `outPath=/output/`.                 |
 | outStorageName | String                     | Query    | Optional          | Name of the cloud storage (e.g., Amazon S3, Azure Blob) where the output file should be written. Required only when `outPath` is used with a non‑default storage.                               |
 | fontsLocation  | String                     | Query    | Optional          | Path to a custom fonts folder on the server. Use this when the spreadsheet references fonts that are not available in the default library.                                                      |
-| region         | String                     | Query    | Optional          | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.number, date, and currency formatting during conversion. |
+| region         | String                     | Query    | Optional          | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior, including number, date, and currency formatting during conversion. |
 | password       | String                     | Query    | Optional          | Password to open a password‑protected spreadsheet. Omit for unprotected files.                                                                                                                  |
 
 ### Response
