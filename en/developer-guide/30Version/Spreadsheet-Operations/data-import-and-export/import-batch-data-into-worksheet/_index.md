@@ -1,5 +1,5 @@
 ---
-title: "Import Batch Data into Excel Worksheet"
+title: "Import Batch Data into Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Import batch data"
 type: docs
@@ -8,8 +8,8 @@ aliases:
   - /import-batch-data-into-worksheet/
   - /import-data/batch-data/
   - /import/batch-data/
-keywords: "Aspose.Cells, Cloud API, import batch data, Excel, CSV, JSON, XML, SDK"
-description: "Learn how to import batch data (CSV, JSON, XML, arrays) into an Excel worksheet using Aspose.Cells Cloud REST API. Includes authentication, request/response examples, SDK snippets, and error handling."
+keywords: "Aspose.Cells Cloud, import batch data, Excel worksheet, CSV, JSON, XML, SDK"
+description: "Learn how to import batch data (CSV, JSON, XML, arrays) into an Excel worksheet with Aspose.Cells Cloud API. Includes authentication, examples, SDK snippets, and error handling."
 weight: 19
 ---
 
@@ -34,7 +34,7 @@ The important parameters are described in the tables below.
 | **BatchData**            | `List<CellValue>` | Collection of cell values to be written directly.                                                                                                                                             |
 | **DestinationWorksheet** | `string`          | Name of the worksheet where the data will be imported.                                                                                                                                        |
 | **IsInsert**             | `bool`            | When `true`, the data is inserted and existing cells are shifted; when `false`, the data overwrites existing cells.                                                                           |
-| **ImportDataType**       | `string`          | Format of the data to import. Allowed values: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`. |
+| **ImportDataType**       | `string`          | Format of the data to import. Allowed values: `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `CsvData`. |
 | **Source**               | `FileSource`      | Specifies the location of the data file when **BatchData** is `null`.                                                                                                                         |
 
 ### CellValue
