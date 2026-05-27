@@ -1,13 +1,13 @@
 ---
-title: "Get text items from an Excel workbook"
+title: "Get Text Items from an Excel Workbook – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Get in workbook"
 type: docs
 url: /workbook/get-text-items/
 aliases: [/get-text-items-from-a-workbook/]
 weight: 10
-keywords: "Excel, Aspose.Cells Cloud, REST API, Spreadsheet, Get Text Items, Workbook"
-description: "Retrieve text items from an Excel workbook using the Aspose.Cells Cloud REST API. The API is available through various SDKs for languages such as C#, Java, Python, PHP, Ruby, Go, Node.js, Perl, and Swift."
+keywords: "Aspose.Cells Cloud, Excel, Get Text Items, REST API, Workbook, API Reference"
+description: "Learn how to retrieve all text items from an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, parameters, sample cURL, JSON response, and SDK code in C#, Java, Python and more."
 ---
 
 This REST API reads a workbook’s **text items** in an Excel file.
@@ -18,7 +18,7 @@ This REST API reads a workbook’s **text items** in an Excel file.
 GET http://api.aspose.cloud/v3.0/cells/{name}/textItems
 ```
 
-### The request parameters are
+### Request parameters
 
 | Parameter Name | Type   | Location | Description                                            |
 | -------------- | ------ | -------- | ------------------------------------------------------ |
@@ -28,7 +28,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/textItems
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookTextItems) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
