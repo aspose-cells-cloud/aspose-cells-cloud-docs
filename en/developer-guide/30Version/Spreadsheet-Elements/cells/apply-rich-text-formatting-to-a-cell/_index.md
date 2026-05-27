@@ -1,10 +1,10 @@
 ---
-title: "Apply Rich Text Formatting to a Cell"
+title: "Apply Rich Text Formatting to a Cell – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /apply-rich-text-formatting-to-a-cell/
 weight: 40
-keywords: "Aspose.Cells Cloud, Excel, rich text formatting, REST API, cell formatting, API reference"
-description: "Learn how to apply rich text formatting to a specific Excel cell using the Aspose.Cells Cloud REST API. Includes request syntax, parameter details, cURL example, and SDK snippets."
+keywords: "Aspose.Cells, Cloud API, Excel rich text formatting, cell formatting, REST API, v3.0"
+description: "Learn how to apply rich‑text formatting (font style, size, color, bold, italic) to a specific Excel cell using Aspose.Cells Cloud REST API v3.0. Includes endpoint, parameters, cURL example, and SDK snippets."
 ---
 
 This REST API applies **rich text formatting** to a cell in an Excel file.
@@ -12,19 +12,19 @@ This REST API applies **rich text formatting** to a cell in an Excel file.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/characters
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/characters
 ```
 
 The request parameters are:
 
-| Parameter Name | Type   | Location                     | Description                                                                 |
-|----------------|--------|------------------------------|-----------------------------------------------------------------------------|
-| name           | string | path                         | The name of the Excel file (e.g., `Book1.xlsx`).                           |
-| sheetName      | string | path                         | The worksheet that contains the target cell.                               |
-| cellName       | string | path                         | The address of the cell to format (e.g., `A1`).                            |
-| options        | object | body                         | JSON object that defines the rich‑text formatting settings for the cell. |
-| folder         | string | query                        | The folder in storage where the Excel file is located.                     |
-| storageName    | string | query                        | The name of the storage service (if a custom storage is used).            |
+| Parameter Name | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| name           | string | path     | The name of the Excel file (e.g., `Book1.xlsx`). |
+| sheetName      | string | path     | The worksheet that contains the target cell. |
+| cellName       | string | path     | The address of the cell to format (e.g., `A1`). |
+| options        | object | body     | JSON object that defines the rich‑text formatting settings for the cell. |
+| folder         | string | query    | The folder in storage where the Excel file is located. |
+| storageName    | string | query    | The name of the storage service (if a custom storage is used). |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostCellCharacters) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -35,7 +35,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/A1/characters" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/A1/characters" \
 -X POST \
 -d "{ \"FontSetting\": [ { \"Font\": { \"IsBold\": \"true\", \"Size\": \"24\" }, \"Length\": \"5\", \"StartIndex\": \"0\" }, { \"Font\": { \"IsItalic\": \"true\", \"Size\": \"15\" }, \"Length\": \"4\", \"StartIndex\": \"5\" } ] }" \
 -H "Content-Type: application/json" \
