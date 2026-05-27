@@ -4,8 +4,8 @@ second_title: "Documentation"
 linktitle: "Delete"
 type: docs
 url: /validations/clear/
-keywords: "Aspose.Cells Cloud, Delete worksheet validations, Excel, REST API, Spreadsheet validation, API"
-description: "Remove all data validation rules from a worksheet in an Excel file using Aspose.Cells Cloud REST API. Includes authentication steps, request details, cURL example, response schema, error handling, and SDK snippets."
+keywords: "Aspose.Cells Cloud, worksheet validation, delete validations, Excel API, REST"
+description: "Delete all data validation rules from an Excel worksheet via Aspose.Cells Cloud REST API. Includes authentication, request syntax, cURL example, response schema, error handling, and SDK snippets."
 weight: 10
 ---
 
@@ -20,7 +20,7 @@ This REST API deletes all worksheet validations on an Excel worksheet.
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 ```
 
 ### **Request parameters**
@@ -41,7 +41,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
   -X DELETE \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -115,7 +115,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_DeleteWorksheetValidations.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_DeleteWorksheetValidations.ts" >}}
 
 {{< /tab >}}
 
