@@ -1,12 +1,12 @@
 ---  
-title: "Set Range Style – Aspose.Cells Cloud API"  
+title: "Set Range Style – Aspose.Cells Cloud API Documentation"  
 second_title: "Documentation"  
 linktitle: "Set Range Style"  
 type: docs  
 url: /ranges/update/style/  
 aliases: [/set-the-style-of-the-range/]  
-keywords: "Aspose.Cells, range style, API, Excel, cloud"  
-description: "Learn how to set the style of a cell range in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes authentication steps, request format, response details, and SDK examples for .NET, Java, Python, Go, and more."  
+keywords: "Aspose.Cells Cloud, Excel API, set range style"  
+description: "Apply font styling (bold, italic, superscript, etc.) to a cell range in an Excel workbook using Aspose.Cells Cloud REST API. Includes cURL request, response example, and SDK snippets for .NET, Java, Python, Go, and more."  
 weight: 70  
 ---  
 
@@ -72,7 +72,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ra
 }
 ```
 
-**Error handling** – For unsuccessful calls the API returns an appropriate HTTP status code (e.g., 400, 401, 500) together with a JSON body that includes `Error` and `Message` fields. Inspect the `Code` value; any non‑200 result should be logged and processed according to your error‑handling policy.  
+**Error handling** – For unsuccessful calls, the API returns an appropriate HTTP status code (e.g., 400, 401, 500) together with a JSON body that includes `Error` and `Message` fields. Inspect the `Code` value; any non‑200 result should be logged and processed according to your error‑handling policy.  
 
 {{< /tab >}}
 
