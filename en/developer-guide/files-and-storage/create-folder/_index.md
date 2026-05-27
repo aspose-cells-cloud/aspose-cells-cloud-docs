@@ -1,16 +1,16 @@
 ---
-title: "Create Folder – Aspose.Cells Cloud API | Excel Storage Management"
+title: "Create Folder – Aspose.Cells Cloud API | RESTful Storage Management"
 second_title: "Document"
 ArticleTitle: "Create Folder – Aspose.Cells Cloud API"
 linktitle: "Create Folder"
 type: docs
 url: /create-folder/
-keywords: "Aspose.Cells Cloud, Create Folder, Excel API, REST, Storage"
-description: "Learn how to create a folder in Aspose.Cells Cloud storage via a simple REST PUT request. Includes sample cURL, authentication guide, and error handling."
+keywords: "Aspose.Cells Cloud, Create Folder, Aspose.Cells storage API, create directory, cloud file management, REST PUT folder"
+description: "Learn how to create a folder in Aspose.Cells Cloud storage with a single PUT request. Includes request syntax, parameters, response examples, error handling, and SDK code samples for C#, Java, Python, and more."
 weight: 100
 ---
 
-## **Excel API: Create Folder**
+## **Aspose.Cells API: Create Folder**
 
 ### Web API
 
@@ -20,9 +20,9 @@ PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 
 ### Function Description
 
-The **createFolder** operation creates a new folder at the specified location in the cloud storage used by the Excel API. This is essential for organizing files and maintaining a structured directory hierarchy.
+The **createFolder** operation creates a new folder at the specified location in the cloud storage used by the Aspose.Cells API. This is essential for organizing files and maintaining a structured directory hierarchy.
 
-### The request parameters of **createFolder** API are
+### The request parameters for **createFolder** API are
 
 | Parameter Name | Type   | Location | Required | Default | Description                                                                 |
 | -------------- | ------ | -------- | -------- | ------- | --------------------------------------------------------------------------- |
@@ -41,7 +41,7 @@ The **createFolder** operation creates a new folder at the specified location in
 
 | HTTP Status               | Meaning                               | Suggested Remedy                                           |
 | ------------------------- | ------------------------------------- | ---------------------------------------------------------- |
-| 200 OK / 204 No Content   | Folder created successfully.          | –                                                          |
+| 200 OK or 204 No Content   | Folder created successfully.          | –                                                          |
 | 400 Bad Request           | Invalid `path` or missing parameters. | Verify the path syntax and required fields.                |
 | 401 Unauthorized          | Missing or invalid OAuth token.       | Obtain a valid token and include it in the request.        |
 | 409 Conflict              | The folder already exists.            | Choose a different folder name or delete the existing one. |
@@ -51,7 +51,7 @@ The **createFolder** operation creates a new folder at the specified location in
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderController/CreateFolder) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+## Aspose.Cells API SDK
 
 Using an SDK is the best way to speed up development. An SDK manages low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
