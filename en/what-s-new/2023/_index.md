@@ -5,11 +5,11 @@ linktitle: "What’s New in 2023"
 type: docs
 weight: 30
 url: /new-features/2023/
-keywords: "Aspose.Cells Cloud 2023, Excel API, file conversion API, chart axis API, digital signature API, release notes"
-description: "Explore the latest Aspose.Cells Cloud 2023 updates: new conversion APIs, region parameters, chart‑axis support, digital signatures, and more. Click for detailed release notes and code examples."
+keywords: "Aspose.Cells Cloud, 2023 release, API, Excel conversion, JSON, SQL, CSV, PPTX, Markdown, HTML, PDF, PNG, DOCX, chart axis, transposition, digital signature"
+description: "Explore the 2023 Aspose.Cells Cloud releases: new conversion APIs, region parameters, chart‑axis support, digital signatures, and other enhancements."
 ---
 
-Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
+Welcome to What's New in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
 
 ## Enhancements in Version 23.12.0
 
@@ -80,4 +80,4 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 
 ## Aspose.Cells Cloud 23.1
 
-- Fixed bug in PostCellCharacters method.  
+- Fixed bug in PostCellCharacters method.
