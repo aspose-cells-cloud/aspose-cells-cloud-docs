@@ -5,8 +5,8 @@ linktitle: "Get"
 type: docs
 url: /list-objects/get/
 aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/get/]
-keywords: "Aspose.Cells, Cloud API, Excel ListObject, Get Table, REST, SDK"
-description: "Retrieve a ListObject (table) from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, HTTPS cURL example, response schema, and SDK snippets for multiple languages."
+keywords: "Aspose.Cells Cloud, Get ListObject, Excel table API, Cells API, REST, SDK"
+description: "Retrieve a ListObject (Excel table) from a worksheet using Aspose.Cells Cloud REST API. Provides endpoint, parameters, cURL example, response schema, and SDK code snippets for multiple languages."
 weight: 9
 ---
 
