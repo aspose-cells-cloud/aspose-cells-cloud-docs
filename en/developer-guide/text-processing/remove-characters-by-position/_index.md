@@ -1,12 +1,12 @@
 ---
 title: "Aspose.Cells Cloud Remove Characters by Position Web API – Delete Text from Specific Locations in Excel"
 second_title: "Document"
-ArticleTitle: "Excel Position‑Based Character Remover – Delete Text at Specific Locations – Online Shortcode"
+ArticleTitle: "Excel Position-Based Character Removal API – Delete Text at Specific Locations"
 linktitle: "Remove Characters by Position"
 type: docs
 url: /remove-characters-by-position/
-keywords: "Aspose.Cells Cloud, remove characters by position, Excel text cleaning, delete first N characters, delete last N characters, remove text before marker, remove text after marker, between values removal"
-description: "Use Aspose.Cells Cloud Web API to delete characters from Excel cells based on position—remove first/last N characters or text before/after specific markers with high precision."
+keywords: "Aspose.Cells Cloud, remove characters by position, Excel text cleaning, delete first N characters, delete last N characters, remove text before marker, remove text after marker, between values removal, Aspose Cells Cloud API"
+description: "Use Aspose.Cells Cloud API to delete characters from Excel cells by position—remove first or last N characters, or text before or after specific markers, with precise control."
 weight: 100
 ---
 
@@ -34,7 +34,7 @@ Delete characters from Excel cells by position: remove first/last N characters
 PUT http://api.aspose.cloud/v4.0/cells/content/remove/characters
 ```
 
-### The request parameters of **RemoveCharactersByPosition** API are
+### The request parameters for **RemoveCharactersByPosition** API are
 
 | Parameter Name          | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                             |
 | ----------------------- | ------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
