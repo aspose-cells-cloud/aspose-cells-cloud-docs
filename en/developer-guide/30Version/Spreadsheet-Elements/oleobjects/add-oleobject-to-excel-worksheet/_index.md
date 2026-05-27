@@ -1,12 +1,12 @@
 ---
-title: "Add an OLE object in an Excel worksheet"
+title: "Add OLE Object to Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Add OLE object"
 type: docs
 url: /oleobjects/add/
 aliases: [/add-oleobject-to-excel-worksheet/]
-keywords: "Add OLE object, Excel worksheet, Aspose.Cells Cloud, REST API, SDK"
-description: "Use Aspose.Cells Cloud REST API to add OLE objects to Excel worksheets. The API can be called directly or through SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
+keywords: "Aspose.Cells Cloud, OLE object, Excel API, add OLE, REST API, VBA alternative, cloud spreadsheet"
+description: "Learn how to add an OLE object to an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, required parameters, cURL example, and SDK snippets for C#, Java, Python, and more."
 weight: 20
 ---
 
@@ -32,11 +32,11 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 | oleFile         | string  | query    | Name of the OLE source file.                       |
 | imageFile       | string  | query    | Name of the preview image file.                    |
 | folder          | string  | query    | Folder that contains the workbook.                 |
-| storageName     | string  | query    | Name of the storage to use.                        |
+| storageName     | string  | query     | Name of the storage to use.                        |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below demonstrates how to add an OLE object with cURL.
+You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below shows how to add an OLE object using cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
