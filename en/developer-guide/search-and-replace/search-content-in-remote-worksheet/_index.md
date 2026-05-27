@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Excel Text Search Web API – Find Text in Remote Worksheet"
+title: "Aspose.Cells Cloud API – Search Text in Remote Excel Worksheet"
 second_title: "Document"
-ArticleTitle: "Search Text in Remote Excel Spreadsheet Worksheet – Find Specific Data"
+ArticleTitle: "Search Text in Remote Excel Worksheet – Find Specific Data"
 linktitle: "Search Remote Worksheet Content"
 type: docs
 url: /search-content-in-remote-worksheet/
-keywords: "Aspose Cells, Excel API, text search, remote worksheet"
-description: "Search for text, numbers, or formulas in a remote Excel worksheet using Aspose.Cells Cloud API. Supports case‑insensitive and password‑protected files."
+keywords: "Aspose.Cells Cloud, Excel API, text search, remote worksheet, spreadsheet data discovery"
+description: "Search for text, numbers, or formulas in a remote Excel worksheet using Aspose.Cells Cloud API. Supports case‑insensitive searches and password‑protected files."
 weight: 100
 ---
 
@@ -19,9 +19,7 @@ Programmatically search for specific text within any Excel worksheet using the A
 ### **Web API**
 
 ```curl
-
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/content
-
 ```
 
 ### **Request Parameters**
@@ -84,7 +82,7 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/con
 - **Zero maintenance:** No servers to manage, no software updates, and no compatibility concerns.
 - **Preserves complex Excel formatting** when exporting results to PDF or other formats.
 
-## How to Use the Search for broken links within the worksheet of the Spreadsheet API with SDKs
+## How to Use the Search for content within the worksheet of the Spreadsheet API with SDKs
 
 ### OpenAPI Specification
 
@@ -92,7 +90,6 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControl
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search content within worksheet of spreadsheets for cells with minimal code.
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search content within worksheets of spreadsheets with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
