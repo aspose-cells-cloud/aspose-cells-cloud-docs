@@ -1,12 +1,12 @@
 ---
-title: "Get a Pivot Table in an Excel Worksheet"
+title: "Aspose.Cells Cloud API – Get Pivot Table from Excel Worksheet (v3.0)"
 second_title: "Document"
 linktitle: Get
 type: docs
 url: /pivot-tables/get/
 aliases: [/get-worksheet-pivot-table-information-by-index/]
-keywords: "Aspose.Cells, pivot table, Excel, REST API, get worksheet pivot table"
-description: "Retrieve a pivot table from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request syntax, required parameters, authentication guidance, response schema, error handling, and SDK code samples for multiple languages."
+keywords: "Aspose.Cells Cloud, pivot table, Excel worksheet, REST API, v3.0"
+description: "Retrieve a specific pivot table from an Excel worksheet using Aspose.Cells Cloud v3.0 REST API. Learn request syntax, required parameters, authentication steps, sample cURL and SDK code, plus error handling details."
 weight: 10
 ---
 
@@ -24,7 +24,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | ------------------- | ------- | -------- | -------------------------------------------------------- |
 | **name**            | string  | path     | The name of the Excel file.                              |
 | **sheetName**       | string  | path     | The name of the worksheet that contains the pivot table. |
-| **pivottableIndex** | integer | path     | Zero-based index of the pivot table in the worksheet.    |
+| **pivottableIndex** | integer | path     | Zero‑based index of the pivot table in the worksheet.    |
 | **folder**          | string  | query    | The folder where the document is stored.                 |
 | **storageName**     | string  | query    | The name of the Aspose Cloud storage.                    |
 
@@ -167,7 +167,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 
 {{< /tabs >}}
 
-### **Error handling**
+### Error handling
 
 The API follows standard HTTP status codes. Typical responses include:
 
