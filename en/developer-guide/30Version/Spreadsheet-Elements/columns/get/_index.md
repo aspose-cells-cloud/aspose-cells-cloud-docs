@@ -1,5 +1,5 @@
 ---
-title: "Get Column Details – Aspose.Cells Cloud API Reference (v4.0)"
+title: "Get Column Details – Retrieve Worksheet Column Metadata – Aspose.Cells Cloud API Reference (v4.0)"
 second_title: "Document"
 linktitle: "Get"
 type: docs
@@ -8,8 +8,8 @@ aliases:
   - /get-columns-from-an-excel-worksheet/
   - /get-columns-from-a-worksheet/
   - /get-column-from-a-worksheet/
-keywords: "Aspose.Cells Cloud, Get Column API, Excel column API, retrieve column data, Aspose.Cells SDK"
-description: "Retrieve detailed information about a worksheet column (index, width, style, hidden state) using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, authentication steps, and error handling."
+keywords: "Aspose.Cells Cloud, Get Column Details, Excel column metadata, worksheet column API, retrieve column information, column index, column width, column style, hidden column, REST API"
+description: "Retrieve detailed metadata for a worksheet column—including index, width, style, and hidden state—using the Aspose.Cells Cloud REST API v4.0. Includes request syntax, cURL example, authentication guidance, response fields, and error handling."
 weight: 10
 ---
 
