@@ -1,12 +1,12 @@
 ---
-title: "Delete Multiple Excel Worksheets"
+title: "Delete Multiple Worksheets – Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Multiple worksheets"
 type: docs
 url: /worksheets/delete-multiple/
 aliases: [/delete-excel-worksheets/]
-keywords: "Aspose.Cells Cloud, delete multiple worksheets, Excel workbook, REST API, v3.0"
-description: "Learn how to delete several worksheets from an Excel workbook using the Aspose.Cells Cloud REST API (v3.0). Includes a secure HTTPS endpoint, required parameters, a corrected cURL example, and SDK snippets for multiple programming languages."
+keywords: "Aspose.Cells Cloud, delete multiple worksheets, Excel workbook, REST API, v3.0, API endpoint, cURL, SDK examples"
+description: "How to delete multiple worksheets from an Excel workbook using the Aspise.Cells Cloud REST API v3.0. Includes the endpoint, required parameters, authentication details, a cURL example, and SDK code samples for various programming languages."
 weight: 20
 ---
 
@@ -23,7 +23,7 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 | Parameter Name | Type   | Location | Description                                                                 |
 | -------------- | ------ | -------- | --------------------------------------------------------------------------- |
 | name           | string | path     | The name of the Excel file.                                                 |
-| matchCondition | object | body     | A `MatchConditionRequest` object that specifies which worksheets to delete. |
+| MatchCondition | object | body     | A `MatchConditionRequest` object that specifies which worksheets to delete. |
 | folder         | string | query    | Folder path in storage where the file is located.                           |
 | storageName    | string | query    | Name of the storage service.                                                |
 
@@ -36,7 +36,7 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheets) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL. **A valid JWT token is required in the `Authorization` header.**
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL. **A valid JWT token must be provided in the `Authorization` header.**
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
