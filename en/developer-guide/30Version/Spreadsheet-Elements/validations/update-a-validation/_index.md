@@ -1,11 +1,11 @@
 ---
-title: "Update a worksheet validation on an Excel worksheet"
+title: "Update Worksheet Validation – Aspose.Cells Cloud API Reference"
 second_title: "Document"
 linktitle: "Update"
 type: docs
 url: /validations/update/
-keywords: "Aspose.Cells Cloud, Excel validation update, REST API, worksheet validation, SDK"
-description: "How to update a worksheet validation in an Excel file using the Aspose.Cells Cloud REST API, with cURL examples and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells, worksheet validation, update validation, Excel API, REST, cloud SDK"
+description: "Learn how to update an existing worksheet validation in an Excel file using Aspose.Cells Cloud REST API. Includes cURL, SDK examples, parameters, and error handling."
 weight: 10
 ---
 
@@ -14,7 +14,7 @@ This REST API updates a worksheet validation by its index on an Excel worksheet.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
 ### **Request parameters**
@@ -37,7 +37,7 @@ You can use the cURL command‑line tool to call Aspose.Cells web services easil
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
