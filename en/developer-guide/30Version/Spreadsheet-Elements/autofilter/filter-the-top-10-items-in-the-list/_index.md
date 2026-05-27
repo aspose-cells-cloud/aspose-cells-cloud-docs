@@ -1,13 +1,13 @@
 ---
-title: "Add Top 10 Filter to an Excel Worksheet (Aspose.Cells Cloud)"
+title: "Add Top 10 AutoFilter to an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Add top 10 filter"
 type: docs
 url: /autofilter/add-top-10-filter/
 aliases:
   [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
-keywords: "Aspose.Cells Cloud Top 10 filter, Excel AutoFilter, REST API, spreadsheet automation"
-description: "Learn how to apply a Top 10 AutoFilter to an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, authentication details, error handling, and SDK snippets for C#, Java, Python, and more."
+keywords: "Aspose.Cells Cloud, Top 10 AutoFilter, Excel AutoFilter, REST API, spreadsheet automation, API endpoint, cURL example, SDK snippets"
+description: "Learn how to apply a Top 10 AutoFilter to an Excel worksheet with Aspose.Cells Cloud REST API. Includes HTTPS endpoint, required parameters, cURL example, authentication steps, error handling, and SDK snippets for C#, Java, Python, and more."
 weight: 65
 ---
 
@@ -16,7 +16,7 @@ This REST API filters the **Top 10** items in a list.
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10
 ```
 
 The request parameters are:
@@ -44,7 +44,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filterTop10?range=A1:B10&fieldIndex=0&isTop=true&itemCount=10" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filterTop10?range=A1:B10&fieldIndex=0&isTop=true&itemCount=10" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
