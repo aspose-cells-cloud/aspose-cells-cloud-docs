@@ -1,5 +1,5 @@
 ---
-title: "Convert List Object to Range – Aspose.Cells Cloud API"
+title: "Convert ListObject to Range – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Conversion"
 type: docs
@@ -7,8 +7,8 @@ url: /list-objects/to-range/
 aliases:
   - /convert-list-object-or-table-to-range/
   - /tables/to-range/
-keywords: "Aspose Cells API, convert list object to range, Excel REST API"
-description: "Learn how to convert an Excel ListObject (table) to a Range using Aspose.Cells Cloud REST API. Includes request syntax, parameters, sample cURL, response schema, authentication details, error codes, and SDK examples."
+keywords: "Aspose Cells API, convert ListObject to Range, Excel REST API, Aspose.Cells Cloud"
+description: "Learn how to convert an Excel ListObject (table) to a Range using Aspose.Cells Cloud API v3.0. Includes request syntax, parameters, cURL sample, authentication steps, response schema, error codes, and SDK examples for multiple languages."
 weight: 30
 ---
 
