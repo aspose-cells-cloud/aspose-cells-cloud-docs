@@ -1,18 +1,18 @@
 ---
-title: "Aspose.Cells Cloud – Excel Broken Links Detection API – Scan & Validate Spreadsheet Links in Remote Workbooks"
+title: "Aspose.Cells Cloud API – Detect and Fix Broken Links in Remote Excel Workbooks"
 second_title: "Document"
-ArticleTitle: "Find & Fix Broken Links in Remote Excel – Cloud Spreadsheet Link Checker"
+ArticleTitle: "Search and Repair Broken Links in Remote Excel Spreadsheets with Aspose.Cells Cloud"
 linktitle: "Search Remote Spreadsheets Broken Links"
 type: docs
 url: /search-broken-links-in-remote-spreadsheet/
-keywords: "Excel, broken links, API, cloud, spreadsheet, validation, Aspose.Cells"
-description: "Use Aspose.Cells Cloud API to scan remote Excel workbooks for broken external links, invalid formulas, and missing data sources."
+keywords: "Excel, broken links, API, cloud, spreadsheet, validation, Aspose.Cells, broken links in Excel, remote spreadsheet"
+description: "Use Aspose.Cells Cloud API to automatically scan Excel workbooks in cloud storage for broken links, invalid formulas, and missing data sources."
 weight: 100
 ---
 
 ## **Search Broken Links In Remote Spreadsheet API**
 
-Automatically detect broken links in Excel files stored in cloud storage. Our API scans specified ranges for broken external references, invalid formulas, and missing data sources. It supports remote spreadsheet auditing, automated quality checks, and integration with cloud‑storage providers. Use the RESTful API to automate enterprise‑level workflow automation.
+Automatically detect broken links in Excel files stored in cloud storage. Our API scans specified ranges for broken external references, invalid formulas, and missing data sources. It supports remote spreadsheet auditing, automated quality checks, and integration with cloud‑storage providers. Use the RESTful API to automate enterprise‑level workflows.
 
 ### **Web API**
 
