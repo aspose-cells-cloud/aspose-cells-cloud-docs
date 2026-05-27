@@ -1,10 +1,10 @@
 ---
-title: "Get Conditional Formatting Rules"
+title: "Aspose.Cells Cloud API – Retrieve All Conditional Formatting Rules (GET)"
 type: docs
 url: /conditional-formattings/get-all/
 aliases: [/get-conditional-formattings-of-worksheet/]
-keywords: "Aspose.Cells Cloud, REST API, Excel, Conditional Formatting, Worksheet, Conditional Formatting API"
-description: "Retrieve all conditional formatting rules applied to a worksheet using the Aspose.Cells Cloud REST API. Includes request syntax, authentication steps, parameters, concise response examples, and error handling."
+keywords: "Aspose.Cells Cloud, Conditional Formatting API, Excel, REST API, Get Conditional Formatting Rules, Worksheet"
+description: "Learn how to use the Aspose.Cells Cloud REST API to fetch every conditional formatting rule applied to a worksheet. Includes request syntax, parameters, cURL example, SDK snippets, and error handling."
 weight: 20
 ---
 
