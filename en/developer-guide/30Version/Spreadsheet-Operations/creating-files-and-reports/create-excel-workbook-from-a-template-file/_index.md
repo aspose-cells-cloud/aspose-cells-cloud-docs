@@ -1,5 +1,5 @@
 ---
-title: "How to Create an Excel Workbook with a Template File"
+title: "Create an Excel Workbook from a Template File – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Template File"
 type: docs
@@ -8,8 +8,8 @@ aliases:
   - /create-excel-workbook-from-a-template-file/
   - /workbook/new-from-a-template-file/
   - /workbook/create/template-file/
-keywords: "Excel template API, Aspose.Cells create workbook, Excel workbook template, REST API, Aspose.Cells Cloud"
-description: "Learn how to generate Excel workbooks from template files using the Aspose.Cells Cloud REST API. Includes prerequisites, authentication steps, cURL examples, error‑handling details, and SDK code snippets."
+keywords: "Aspose.Cells create workbook from template, Excel template API, Aspose Cloud cURL, smart-marker"
+description: "Learn how to generate an Excel workbook using a template file with Aspose.Cells Cloud REST API. Includes authentication, required parameters, cURL example, error codes, and SDK snippets."
 weight: 30
 ---
 
@@ -29,7 +29,7 @@ This REST API creates a **workbook** from a **template file**. It generates a ne
 | -------------- | ------- | ------------------------------------------------------------------------------------------------- |
 | `templateFile` | string  | Name of the template file stored in the cloud.                                                    |
 | `dataFile`     | string  | Name of the data file (e.g., XML, JSON) used to populate the template.                            |
-| `isWriteOver`  | boolean | Flag indicating whether to overwrite an existing file. Pass `true` or `false` **without** quotes. |
+| `isWriteOver`  | boolean | Indicates whether to overwrite an existing file; pass true or false without quotes.               |
 | `folder`       | string  | Folder path where the original workbook resides.                                                  |
 | `storageName`  | string  | Name of the storage service.                                                                      |
 
@@ -129,13 +129,13 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?templateFile=C
 
 ### Error Handling
 
-| HTTP Status | Meaning                                     | Example Body                                |
-| ----------- | ------------------------------------------- | ------------------------------------------- |
-| **200**     | Workbook created successfully               | `{ "Status": "OK", "Workbook": { … } }`     |
-| **400**     | Bad request – missing/invalid parameters    | `{ "error": "Invalid isWriteOver value." }` |
-| **401**     | Unauthorized – invalid or missing token     | `{ "error": "Authentication required." }`   |
-| **404**     | Not found – template or data file not found | `{ "error": "File not found." }`            |
-| **500**     | Internal server error                       | `{ "error": "Unexpected server error." }`   |
+| HTTP Status | Meaning                                     | Example Body                                          |
+| ----------- | ------------------------------------------- | ----------------------------------------------------- |
+| **200**     | Workbook created successfully               | `{ "Status": "OK", "Workbook": { … } }`               |
+| **400**     | Bad request – missing/invalid parameters    | `{ "error": "Invalid value for the isWriteOver parameter." }` |
+| **401**     | Unauthorized – invalid or missing token     | `{ "error": "Authentication required." }`             |
+| **404**     | Not found – template or data file not found | `{ "error": "File not found." }`                      |
+| **500**     | Internal server error                       | `{ "error": "Unexpected server error." }`             |
 
 ## Cloud SDK Family
 
