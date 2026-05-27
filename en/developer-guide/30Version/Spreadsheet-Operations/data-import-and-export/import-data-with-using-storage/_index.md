@@ -1,5 +1,5 @@
 ---
-title: "Import Data Using Storage"
+title: "Import Data Using Storage – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Import data with storage"
 type: docs
@@ -10,8 +10,8 @@ aliases:
   - /import-data-in-excel-worksheet/
   - /import-data/
   - /import/with-using-storage/
-description: "Import data into an Excel worksheet using Aspose.Cells Cloud API from various storage sources."
-keywords: "Aspose.Cells Cloud, Excel, Import Data, REST API, Cloud Storage, JSON, CSV, PDF, Markdown"
+description: "Learn how to import JSON, CSV, or array data into an Excel workbook stored on Aspose Cloud storage using the Aspose.Cells Cloud REST API (v3.0). Includes request schema, cURL example, and error handling."
+keywords: "Aspose.Cells, import data, cloud storage, REST API, Excel import, JSON to Excel, CSV to Excel, API reference"
 weight: 10
 ---
 
@@ -20,7 +20,7 @@ This REST API imports data into an Excel file.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/importdata
+POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
 ### The request parameters are
@@ -36,16 +36,16 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/importdata
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata" \
 -X POST \
--D "{\"Data\":[1,2,4],\"DestinationWorksheet\":\"Sheet1\",\"FirstRow\":1,\"FirstColumn\":2,\"IsVertical\":true,\"IsInsert\":true,\"importDataType\":\"IntArray\"}" \
+-d "{\"Data\":[1,2,4],\"DestinationWorksheet\":\"Sheet1\",\"FirstRow\":1,\"FirstColumn\":2,\"IsVertical\":true,\"IsInsert\":true,\"importDataType\":\"IntArray\"}" \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
