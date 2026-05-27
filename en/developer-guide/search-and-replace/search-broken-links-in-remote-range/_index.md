@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud – Detect Broken Links in Excel Range (API)"
+title: "Aspose.Cells Cloud API – Detect Broken Links in an Excel Range"
 second_title: "Document"
-ArticleTitle: "Find & Fix Broken Links in Remote Excel Range – Cloud Spreadsheet Link Checker"
+ArticleTitle: "Find and Fix Broken Links in Remote Excel Ranges – Cloud Spreadsheet Link Checker"
 linktitle: "Search Remote Range Broken Links"
 type: docs
 url: /search-broken-links-in-remote-range/
-keywords: "Aspose Cells, broken links API, Excel range validation, cloud spreadsheet, external reference checker"
-description: "Use Aspose.Cells Cloud API to scan a specific Excel range for broken external links, invalid formulas, or missing data sources. Secure, fast, and cloud‑based."
+keywords: "Aspose.Cells, broken link detection, Excel API, cloud spreadsheet, external reference, range validation"
+description: "Detect and fix broken external links, invalid formulas, or missing data sources within a specific Excel range using Aspose.Cells Cloud API."
 weight: 100
 ---
 
