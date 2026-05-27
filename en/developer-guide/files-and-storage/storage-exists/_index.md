@@ -1,18 +1,18 @@
 ---
-title: "Check if a Storage Exists – Aspose.Cells Cloud API (v4.0)"
+title: "Check if a Storage Exists – Aspose.Cells Cloud API v4.0"
 second_title: "Document"
-ArticleTitle: "Cloud-based Excel File Management – Check Storage Existence"
+ArticleTitle: "Aspose.Cells Cloud API – Verify Storage Existence for Cloud‑based Excel File Management"
 linktitle: "Storage Exists"
 type: docs
 url: /storage-exists/
-keywords: "Aspose.Cells, storage exists, cloud storage API, REST, Excel"
-description: "Verify the existence of a storage container in Aspose.Cells Cloud. Learn the GET /v4.0/cells/storage/{storageName}/exist endpoint, required parameters, response format, and see SDK examples in C#, Java, Python, and more."
+keywords: "Aspose.Cells, storage exists, storageExists, cloud storage API, REST, Excel"
+description: "Use Aspose.Cells Cloud API to verify whether a storage container exists. Learn the GET /v4.0/cells/storage/{storageName}/exist endpoint, required parameters, sample cURL, response format, and SDK examples in C#, Java, Python, and more."
 weight: 100
 ---
 
 ## Check Storage Existence (storageExists)
 
-**Summary** – The `storageExists` endpoint lets you confirm whether a specific storage container is available in Aspose.Cells Cloud. Use it before performing file‑related operations to avoid runtime errors. The API returns a JSON object containing an `Exists` boolean that indicates the storage status.
+**Summary** – The `storageExists` endpoint lets you confirm whether a specific storage container is available in Aspose.Cells Cloud. Use it before performing file‑related operations to avoid runtime errors. The API returns a JSON object containing an `Exists` boolean that indicates whether the storage exists.
 
 ### Web API
 
