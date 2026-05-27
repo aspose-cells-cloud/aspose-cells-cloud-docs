@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud – Delete File API"
+title: "Aspose.Cells Cloud API – Delete File | Remove Excel File from Cloud Storage"
 second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud – Delete File API"
+ArticleTitle: "Aspose.Cells Cloud API – Delete File | Remove Excel File from Cloud Storage"
 linktitle: "Delete File"
 type: docs
 url: /delete-file/
-keywords: "Aspose Cells, Delete File API, Excel Cloud Storage, REST API, File Management"
-description: "Delete an Excel file from Aspose.Cells Cloud storage using the RESTful Delete File API. Includes endpoint, parameters, auth, and sample code."
+keywords: "Aspose.Cells Cloud, Delete File API, Excel, Cloud Storage, REST API, OAuth, Authentication, File Management"
+description: "Delete an Excel file from Aspose.Cells Cloud storage with a DELETE request. Includes endpoint URL, parameters, authentication, response codes, and code examples."
 weight: 100
 ---
 
