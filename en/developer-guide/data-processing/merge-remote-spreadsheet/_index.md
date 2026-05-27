@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud – Merge Excel Files in Cloud | Combine Spreadsheets via API"
+title: "Merge Excel Files in Cloud – Combine Spreadsheets via Aspose.Cells Cloud API"
 second_title: "Aspose.Cells Cloud"
 ArticleTitle: "Merge Excel Files in Cloud – Combine Spreadsheets Online with Aspose.Cells Cloud API"
 linktitle: "Merge Remote Spreadsheet"
 type: docs
 url: /merge-remote-spreadsheet/
-keywords: "merge excel files in cloud, Aspose.Cells merge API, cloud spreadsheet merge, remote spreadsheet merge, combine Excel workbooks, cloud Excel merger"
-description: "Merge Excel workbooks stored in cloud storage with Aspose.Cells Cloud API. Specify output format, target folder, and merge mode in a single HTTPS call."
+keywords: "merge excel, aspose cells, cloud api, spreadsheet merge, aws s3, azure blob"
+description: "Use Aspose.Cells Cloud API to merge Excel workbooks stored in AWS S3, Azure Blob or Google Cloud. Choose output format, target folder and merge mode in a single HTTPS request."
 weight: 100
 ---
 
@@ -60,7 +60,7 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
 ]
 ```
 
-The response returns the name, size (in bytes), and a direct download URL for the merged file.
+The response includes the file name, size (in bytes), and a direct download URL for the merged file.
 
 ### Error Codes
 
