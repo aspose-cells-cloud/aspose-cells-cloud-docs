@@ -1,12 +1,12 @@
 ---
-title: "Get cells data based on named range"
+title: "Aspose.Cells Cloud API – Get Cell Values by Named Range (REST)"
 second_title: "Document"
 linktitle: "Values"
 type: docs
 url: /ranges/get/values/
 aliases: [/get-cells-data-based-on-named-range/]
-keywords: "Aspose.Cells Cloud, REST API, Excel, named range, get cell values, worksheet range, API reference"
-description: "Retrieve cell values from a named range in an Excel worksheet using the Aspose.Cells Cloud REST API. The service is accessible through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) and works across a wide variety of development platforms."
+keywords: "Aspose.Cells Cloud, get cell values, named range, REST API, Excel, API reference"
+description: "Retrieve cell values from a named range or address in an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes curl example, SDK snippets (C#, Java, Python, etc.), and full response schema."
 weight: 20
 ---
 
@@ -24,7 +24,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/valu
 | -------------- | ------- | -------- | ------------------------------------------------------------------------------------------ |
 | name           | string  | path     | The workbook file name.                                                                    |
 | sheetName      | string  | path     | The worksheet name within the workbook.                                                    |
-| namerange      | string  | query    | The named range to retrieve, e.g., `A1:B2` or `range_name1`.                               |
+| namerange      | string  | query    | The named range to retrieve, for example `A1:B2` or `range_name1`.                        |
 | firstRow       | integer | query    | Zero‑based index of the first row of the range (used when `namerange` is not supplied).    |
 | firstColumn    | integer | query    | Zero‑based index of the first column of the range (used when `namerange` is not supplied). |
 | rowCount       | integer | query    | Number of rows to include in the range.                                                    |
@@ -34,7 +34,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/valu
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/GetWorksheetCellsRangeValue) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to call Aspose.Cells web services easily. The example below demonstrates how to request cell values from a named range.
+Use the cURL command‑line tool to call Aspose.Cells web services easily. The example below demonstrates how to request cell values from a named range.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
