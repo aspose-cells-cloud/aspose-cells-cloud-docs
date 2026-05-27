@@ -1,12 +1,12 @@
 ---
-title: "Get Named Ranges on an Excel Workbook"
+title: "Get Named Ranges – Aspose.Cells Cloud REST API"
 second_title: "Document"
 linktitle: "Name"
 type: docs
 url: /ranges/get/name/
 aliases: [/get-named-ranges-inside-the-workbook/]
-keywords: "named ranges, Excel, Aspose.Cells Cloud, REST API, get named ranges, worksheets, API, cloud SDK"
-description: "Retrieve named ranges from an Excel workbook using the Aspose.Cells Cloud REST API. Includes request details, sample cURL commands, and SDK examples for multiple programming languages."
+keywords: "named ranges, Aspose.Cells Cloud, REST API, Excel, get named ranges, worksheets, cloud SDK"
+description: "Retrieve all named ranges from an Excel workbook using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, and SDK code snippets."
 weight: 10
 ---
 
@@ -15,7 +15,7 @@ This REST API returns information about named ranges defined within worksheets.
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
 ```
 
 ### Request parameters
