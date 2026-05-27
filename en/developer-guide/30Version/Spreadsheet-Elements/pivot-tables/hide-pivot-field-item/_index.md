@@ -1,16 +1,16 @@
 ---
-title: "Hide pivot field item in a pivot table"
+title: "Hide a Pivot Field Item – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: Hide
 type: docs
 url: /pivot-tables/hide-pivot-field-item/
 aliases: [/hide-pivot-field-item/]
-keywords: "Aspose.Cells Cloud, hide pivot field, pivot table API, REST API, SDK examples"
-description: "Learn how to hide a pivot field item in a pivot table using Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK code snippets for multiple languages."
+keywords: "Aspose.Cells, PivotTable, Hide Field Item, REST API, Cloud SDK"
+description: "Learn how to hide a specific pivot field item in an Excel workbook using Aspose.Cells Cloud REST API. Includes request syntax, parameters, cURL example, and SDK code snippets (C#, Go)."
 weight: 110
 ---
 
-This REST API hides a pivot field item in a pivot table.
+The REST API hides a pivot field item in a pivot table.
 
 ## REST API
 
