@@ -1,5 +1,5 @@
 ---
-title: "Delete a Date Filter – Aspose.Cells Cloud"
+title: "Delete a Date Filter – Aspose.Cells Cloud REST API"
 second_title: "Document"
 linktitle: "Delete date filter"
 type: docs
@@ -8,11 +8,11 @@ aliases:
   - /remove-a-date-filter/
   - /autofilter/delete-a-date-filter/
 weight: 100
-keywords: "Aspose.Cells, delete date filter, Excel AutoFilter, REST API, SDK"
-description: "Learn how to delete a date filter from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, HTTPS cURL example, response payload, and SDK code samples."
+keywords: "Aspose.Cells Cloud, delete date filter, Excel AutoFilter API, REST API, cURL example, SDK"
+description: "Learn how to delete a date filter from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, required parameters, cURL request, response format, authentication guidance, and SDK code samples."
 ---
 
-This REST API deletes a date filter on an Excel worksheet.
+This REST API deletes a date filter from an Excel worksheet.
 
 ## REST API
 
@@ -28,16 +28,16 @@ The request parameters are:
 | sheetName            | string  | path     | Worksheet name.                                                                                 |
 | fieldIndex           | integer | query    | Zero‑based index of the column to which the filter is applied.                                 |
 | dateTimeGroupingType | string  | query    | Grouping type for the date filter (e.g., Year, Month, Day).                                    |
-| year                 | integer | query    | Year component of the filter (default 0).                                                       |
-| month                | integer | query    | Month component of the filter (default 0).                                                      |
-| day                  | integer | query    | Day component of the filter (default 0).                                                        |
-| hour                 | integer | query    | Hour component of the filter (default 0).                                                       |
-| minute               | integer | query    | Minute component of the filter (default 0).                                                     |
-| second               | integer | query    | Second component of the filter (default 0).                                                     |
+| year                 | integer | query    | Year component of the filter (default 0).                                                       |
+| month                | integer | query    | Month component of the filter (default 0).                                                      |
+| day                  | integer | query    | Day component of the filter (default 0).                                                        |
+| hour                 | integer | query    | Hour component of the filter (default 0).                                                       |
+| minute               | integer | query    | Minute component of the filter (default 0).                                                     |
+| second               | integer | query    | Second component of the filter (default 0).                                                     |
 | folder               | string  | query    | Folder path in storage where the file is located.                                               |
 | storageName          | string  | query    | Name of the Aspose Cloud storage.                                                               |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetDateFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetDateFilter) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
