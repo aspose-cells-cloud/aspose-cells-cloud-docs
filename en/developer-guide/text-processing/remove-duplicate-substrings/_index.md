@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Remove Duplicate Substrings Web API - Deduplicate Repeated Text in Excel"
+title: "Aspose.Cells Cloud API – Remove Duplicate Substrings from Excel Cells"
 second_title: "Document"
-ArticleTitle: "Excel Duplicate Substring Remover - Clean Repeated Text in Cells"
+ArticleTitle: "Excel Duplicate Substring Remover – Clean Repeated Text in Cells"
 linktitle: "Remove Duplicate Substrings"
 type: docs
 url: /remove-duplicate-substrings/
-keywords: "Aspose.Cells remove duplicate substrings, Excel deduplication API, clean repeated text in cells, Excel text cleaning, substring removal, duplicate text removal, Excel data cleaning, Aspose.Cells Cloud API"
-description: "Use Aspose.Cells Cloud API to automatically detect and remove duplicate substrings in Excel cells while preserving formatting, formulas, and data validation."
+keywords: "Aspose.Cells Cloud, Remove Duplicate Substrings API, Excel duplicate substring removal, Excel text deduplication, cell text cleaning, spreadsheet data cleaning, duplicate text removal, Aspose Cells API, Excel API"
+description: "The Aspose.Cells Cloud Remove Duplicate Substrings API detects and eliminates repeated substrings within Excel cell values while preserving formatting, formulas, data validation, and workbook structure."
 weight: 100
 ---
 
@@ -42,9 +42,9 @@ PUT http://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings
 ### The request parameters of **RemoveDuplicateSubstrings** API are
 
 | Parameter Name                  | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                                       |
-| :------------------------------ | :------ | :------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| :------------------------------ | :------ | :------------------------- | : -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
 | Spreadsheet                     | File    | FormData                   | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                                                         |
-| delimiters                      | String  | Query                      | Specifies one or more delimiter characters used to split cell content into substrings for duplicate detection and removal. Multiple delimiters can be specified (e.g., `",;       | "`). |
+| delimiters                      | String  | Query                      | Specifies one or more delimiter characters used to split cell content into substrings for duplicate detection and removal. Multiple delimiters can be specified (e.g., `",;`). |
 | treatConsecutiveDelimitersAsOne | Boolean | Query                      | When set to `true`, consecutive delimiter characters are treated as a single separator. When `false`, each delimiter is processed individually.                                   |
 | caseSensitive                   | Boolean | Query                      | When `true`, duplicate detection considers letter case (e.g., "Text" ≠ "text"). When `false`, case is ignored during duplicate comparison.                                        |
 | worksheet                       | String  | Query                      | _(Optional)_ The name of the worksheet where duplicate substring removal will be applied. If omitted, the operation applies to the first worksheet.                               |
