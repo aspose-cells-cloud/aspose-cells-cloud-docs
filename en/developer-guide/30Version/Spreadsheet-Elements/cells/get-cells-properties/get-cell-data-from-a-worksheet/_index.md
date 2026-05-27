@@ -1,13 +1,13 @@
 ---
-title: "Get Cell Data from a Worksheet"
+title: "Get Cell Data from a Worksheet – Aspose.Cells Cloud API v3.0 | REST Example"
 type: docs
 url: /get-cell-data-from-a-worksheet/
 weight: 10
-keywords: "Aspose.Cells Cloud, get cell data, Excel API, REST API, cell value, worksheet API, Aspose API example"
-description: "Retrieve a single cell’s value, type, and style from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL, SDK examples, parameters, and error handling."
+keywords: "Aspose.Cells, Cloud API, get cell data, Excel REST, cell value, worksheet, API example, v3.0"
+description: "Retrieve a single cell’s value, type, and style from an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL request, JSON response, SDK code samples, and error‑handling tips."
 ---
 
-This REST API retrieves a cell from an Excel worksheet when the **`cellOrMethodName`** parameter specifies a cell name (an A1‑style address such as `A3`).
+This REST API retrieves a cell from an Excel worksheet when the **`cellOrMethodName`** parameter specifies a cell name (an A1-style address such as `A3`).
 
 **Request parameters**
 
@@ -17,7 +17,7 @@ This REST API retrieves a cell from an Excel worksheet when the **`cellOrMethodN
 | `client_secret`    | string | Yes      | Your Aspose Cloud client secret.                                                                                                         |
 | `storage`          | string | No       | Name of the cloud storage to use (e.g., `Aspose`). If omitted, the default storage is used.                                              |
 | `folder`           | string | No       | Path to the folder containing the workbook in the selected storage.                                                                      |
-| `cellOrMethodName` | string | Yes      | The cell address in A1 notation (e.g., `A3`). It can also be a method name for advanced operations (not covered in this simple example). |
+| `cellOrMethodName` | string | Yes      | The cell address in A1 notation (e.g., `A3`). The `cellOrMethodName` parameter can also be a method name for advanced operations (not covered in this simple example). |
 | `fileName`         | string | Yes      | Name of the Excel file (e.g., `myWorkbook.xlsx`).                                                                                        |
 | `sheetName`        | string | Yes      | Name of the worksheet that contains the target cell (e.g., `Sheet1`).                                                                    |
 
