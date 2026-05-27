@@ -1,9 +1,9 @@
 ---
-title: "Working with Pivot Tables Using the CellsObjectOperate Task"
+title: "How to Create Pivot Tables with Aspose.Cells Cloud Using the CellsObjectOperate Task (REST API)"
 type: docs
 url: /tasks/cells-object-operate/pivottable/
 aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
-keywords: "Aspose Cells pivot table API, CellsObjectOperate, Excel REST API"
+keywords: "Aspose, Cells, Pivot Table, CellsObjectOperate, Excel, REST API"
 description: "Learn how to generate a pivot table in Excel using Aspose.Cells Cloud’s CellsObjectOperate task. Includes cURL example, parameter guide, and SDK references."
 weight: 10
 ---
