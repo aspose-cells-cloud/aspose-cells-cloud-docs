@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert Excel Chart to Image - Free Online Tool"
+title: "Aspose.Cells Cloud API – Convert Excel Chart to Image – Free Online Tool"
 second_title: "Document"
-ArticleTitle: "How to Convert Spreadsheet Chart to Image: Step-by-Step Guide"
+ArticleTitle: "How to Convert a Spreadsheet Chart to an Image: Step‑by‑Step Guide"
 linktitle: "Convert Chart to Image"
 type: docs
 url: /convert-chart-to-image/
-keywords: "convert chart to image, excel chart to png, excel chart to svg, excel chart to jpg, excel chart to bmp, excel chart to tiff"
-description: "Use Aspose.Cells Cloud Web API to convert an Excel chart into PNG, SVG, TIFF, JPEG, or BMP images directly from a spreadsheet file."
+keywords: "convert chart to image, excel chart to png, excel chart to svg, excel chart to jpg, excel chart to jpeg, excel chart to bmp, excel chart to tiff, aspose cells cloud api, chart conversion api"
+description: "Convert Excel charts to PNG, SVG, TIFF, JPEG, or BMP images using Aspose.Cells Cloud Web API—fast, secure, and without needing Excel installed."
 weight: 100
 ---
 
@@ -70,7 +70,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/image
 - **Automation & Scalability**: Batch‑convert multiple charts or files programmatically, saving time compared to manual export. Handles large volumes efficiently in the cloud.
 - **Flexible Output Formats**: Supports popular image formats (PNG, JPG, BMP, SVG, etc.), allowing integration with diverse systems and media.
 - **Secure & Reliable**: Process files in Aspose’s cloud environment without exposing sensitive data to client‑side tools. High availability and consistent performance.
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and providing comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
 - **Cost‑Effective**: You can convert charts without uploading the workbook first, which saves storage space and reduces costs.
 
 ## How to Use the Convert Chart to Image API with SDKs?
