@@ -1,12 +1,12 @@
 ---
-title: "Sort Data of Range on an Excel Worksheet"
+title: "Sort Excel Worksheet Range Using Aspose.Cells Cloud REST API"
 second_title: "Document"
 linktitle: "Sort"
 type: docs
 url: /worksheets/sort-data/
 aliases: [/sort-worksheet-data/]
-keywords: "Aspose.Cells Cloud, Excel sort API, worksheet range sorting, REST API, dataSorter"
-description: "Sort a specific range in an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, required parameters, authentication steps, error handling, and SDK examples."
+keywords: "Aspose.Cells, Excel sort API, worksheet range sort, REST API, cloud SDK"
+description: "Learn how to sort a specific cell range in an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, error handling, and SDK code samples for multiple languages."
 weight: 20
 ---
 
@@ -29,7 +29,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/sort
 | folder         | string | query    | No       | The folder that contains the workbook.                            |
 | storageName    | string | query    | No       | The name of the storage where the workbook is located.            |
 
-**`dataSorter` object schema** – The body must contain a JSON object with the following properties:
+**`dataSorter` object schema** – Include a JSON object in the body with the following properties:
 
 - `CaseSensitive` _(boolean, required)_ – Determines whether the sort is case‑sensitive.
 - `HasHeaders` _(boolean, required)_ – Indicates whether the range includes a header row.
