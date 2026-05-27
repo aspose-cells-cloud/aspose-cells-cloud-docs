@@ -1,12 +1,12 @@
 ---
-title: "Working with Excel worksheet."
+title: "Working with Excel Worksheets – Aspose.Cells Cloud API Guide"
 second_title: "Document"
 linktitle: "Worksheets"
 type: docs
 url: /worksheets/
 aliases: [/working-with-worksheets/]
-keywords: "Excel worksheet, Aspose.Cells Cloud, REST API, spreadsheet, workbook, data manipulation, Excel automation"
-description: "Aspose.Cells Cloud REST API enables working with worksheets in an Excel workbook. The SDK supports multiple programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "Aspose.Cells Cloud, Excel worksheets API, spreadsheet automation, REST API, Java, .NET, Python"
+description: "Learn how to retrieve, create, modify, and export Excel worksheets using Aspose.Cells Cloud REST API. Supports Java, .NET, Python, PHP, and more."
 weight: 100
 ---
 
@@ -28,8 +28,8 @@ A worksheet is a collection of cells where you store and manipulate data. Each E
 - [How to calculate an Excel formula](/cells/worksheets/calculate-formula/)
 - [How to copy an Excel worksheet](/cells/worksheets/copy/)
 - [How to rename an Excel worksheet](/cells/worksheets/rename/)
-- [How to update Excel worksheet properties](/cells/worksheets/update-properties/)
-- [How to set Excel worksheet zoom](/cells/worksheets/zoom/)
+- [How to update an Excel worksheet’s properties](/cells/worksheets/update-properties/)
+- [How to set the zoom of an Excel worksheet](/cells/worksheets/zoom/)
 - [How to freeze panes in an Excel worksheet](/cells/worksheets/freeze-panes/)
 - [How to unfreeze panes in an Excel worksheet](/cells/worksheets/unfreeze-panes/)
 - [How to delete an Excel worksheet](/cells/worksheets/delete/)
