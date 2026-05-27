@@ -1,12 +1,12 @@
 ---
-title: "Working with Excel AutoFilter"
+title: "Aspose.Cells Cloud: Working with Excel AutoFilter – Add, Edit, Delete Filters via API"
 second_title: "Document"
 linktitle: "AutoFilter"
 type: docs
 url: /autofilter/
 aliases: [/working-with-autofilter/]
-keywords: "AutoFilter, Aspose.Cells Cloud, Excel filter, color filter, date filter, dynamic filter, number filter, text filter, blank filter, custom filter"
-description: "Learn to add, edit, and delete Excel AutoFilters (color, date, dynamic, number, text, blank) using Aspose.Cells Cloud APIs. Code samples in multiple languages."
+keywords: "Aspose.Cells Cloud AutoFilter, Excel AutoFilter API, add color filter Excel, delete AutoFilter, dynamic date filter, Excel REST API"
+description: "Learn how to add, edit, and delete Excel AutoFilters (color, date, dynamic, number, text, blank) using Aspose.Cells Cloud REST APIs. Includes code samples for .NET, Java, Python, and CURL."
 weight: 100
 ---
 
@@ -38,13 +38,13 @@ Aspose.Cells Cloud provides multiple APIs to apply various filter types, such as
   <tr>
     <td class="col-md-2"><strong>Number</strong></td>
     <td class="col-md-10">
-      <p>The <a href="/cells/autofilter/add-filter/">Custom Filters API</a> enables filtering cells whose numeric values fall within a given range.</p>
+      <p>The <a href="/cells/autofilter/add-filter/">Add Number Filter API</a> enables filtering cells whose numeric values fall within a given range.</p>
     </td>
   </tr>
   <tr>
     <td class="col-md-2"><strong>Text</strong></td>
     <td class="col-md-10">
-      <p>If a column contains text, you can select cells containing a specific string using <a href="/cells/autofilter/add-filter/">the Add Filter API</a>.</p>
+      <p>If a column contains text, you can select cells containing a specific string using <a href="/cells/autofilter/add-filter/">the Add Text Filter API</a>.</p>
     </td>
   </tr>
   <tr>
