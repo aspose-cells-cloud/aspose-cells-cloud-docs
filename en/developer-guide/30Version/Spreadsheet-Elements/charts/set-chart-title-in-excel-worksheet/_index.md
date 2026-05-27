@@ -1,11 +1,11 @@
 ---
-title: "Aspose.Cells Cloud API – Set Chart Title in an Excel Worksheet"
+title: "Aspose.Cells Cloud API – Set Chart Title in an Excel Worksheet (v3.0)"
 type: docs
 url: /chart/title/add/
 aliases: [/set-chart-title-in-excel-worksheet/]
 weight: 30
-keywords: "Aspose.Cells Cloud, chart title API, Excel chart title, REST API, SDK examples"
-description: "Learn how to add or update a chart title in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes cURL, SDK samples, required parameters, authentication steps, and error handling."
+keywords: "Aspose.Cells Cloud, Set Chart Title, Excel chart title, REST API, v3.0, SDK examples"
+description: "Learn how to add or update a chart title in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL command, SDK samples, required parameters, authentication steps, and error handling."
 ---
 
 Adds a chart title or makes an existing title visible.
@@ -18,14 +18,14 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 
 ### Request parameters
 
-| Parameter Name | Type    | Location | Description                        |
-| -------------- | ------- | -------- | ---------------------------------- |
-| name           | string  | path     | Workbook name.                     |
-| sheetName      | string  | path     | Worksheet name.                    |
-| chartIndex     | integer | path     | Index of the chart.                |
-| title          | string  | body     | Text of the chart title.           |
-| folder         | string  | query    | Folder that contains the workbook. |
-| storageName    | string  | query    | Name of the storage.               |
+| Parameter Name | Type    | Location | Description                                                    |
+| -------------- | ------- | -------- | -------------------------------------------------------------- |
+| name           | string  | path     | Workbook name.                                                 |
+| sheetName      | string  | path     | Worksheet name.                                                |
+| chartIndex     | integer | path     | Zero‑based index of the chart.                                 |
+| title          | object  | body     | JSON object containing the **Text** property for the chart title. |
+| folder         | string  | query    | Folder that contains the workbook.                             |
+| storageName    | string  | query    | Name of the storage.                                           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
