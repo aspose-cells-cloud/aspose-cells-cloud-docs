@@ -1,12 +1,12 @@
 ---
-title: "Get a shape by index on an Excel worksheet"
+title: "Aspose.Cells Cloud API – Get Shape by Index on an Excel Worksheet"
 second_title: "Document"
 linktitle: "Get"
 type: docs
 url: /shapes/get/
 aliases: [/get-a-shape-by-index-inside-the-worksheet/]
-keywords: "Get shape by index, Excel worksheet, Aspose.Cells Cloud, REST API, shape retrieval"
-description: "Retrieve a shape by its index from an Excel worksheet using Aspose.Cells Cloud REST API. Supports multiple SDKs and programming languages."
+keywords: "Aspose.Cells, shape by index, Excel API, get shape, REST API, cloud SDK"
+description: "Retrieve a shape by its index from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, and SDK snippets for multiple programming languages."
 weight: 20
 ---
 
@@ -15,7 +15,7 @@ This REST API retrieves a shape (including its image data or metadata) from an E
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeIndex}
 ```
 
 ### **Request parameters**
@@ -24,7 +24,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{sha
 | -------------- | ------- | -------- | --------------------------------------------------- |
 | name           | string  | path     | Name of the Excel document.                         |
 | sheetName      | string  | path     | Name of the worksheet containing the shape.         |
-| shapeindex     | integer | path     | Zero‑based index of the shape within the worksheet. |
+| shapeIndex     | integer | path     | Zero‑based index of the shape within the worksheet. |
 | folder         | string  | query    | Folder path where the document is stored.           |
 | storageName    | string  | query    | Name of the storage service.                        |
 
@@ -37,7 +37,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/autoshapes/1" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/shapes/1" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
