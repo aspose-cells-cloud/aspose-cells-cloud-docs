@@ -1,13 +1,13 @@
 ---
-title: "Aspose.Cells Cloud API – File & Folder Management (Upload, Download, Copy, Move)"
+title: "Aspose.Cells Cloud – File & Folder Management API (Upload, Download, Copy, Move, Delete)"
 second_title: "Document"
-ArticleTitle: "Cloud File Management for Excel – An Efficient and Secure Solution for Excel File Storage and Intelligent Organization"
+ArticleTitle: "Cloud File Management for Excel – Secure and Efficient Excel File Storage and Organization"
 linktitle: "Files and Storage"
 type: docs
 url: /files-and-storage/
 aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
-keywords: "Aspose Cells Cloud, file storage API, upload Excel, download Excel, copy file, move folder, REST API, cURL"
-description: "Learn how to manage Excel files in Aspose.Cells Cloud storage: upload, download, copy, move, delete, and query folders via RESTful API. Includes cURL examples, parameters, and error handling."
+keywords: "Aspose.Cells Cloud, Excel file storage API, upload Excel, download Excel, file management API, cURL, REST, cloud storage"
+description: "Manage Excel files in Aspose.Cells Cloud storage: upload, download, copy, move, delete, and list folders via simple REST APIs. Includes cURL examples, parameters, and error handling."
 weight: 100
 ---
 
@@ -30,14 +30,12 @@ The request parameters are:
 | Parameter Name | Type   | Location | Description |
 |----------------|--------|----------|-------------|
 | path           | string | path     | Path to upload the file, including the filename and extension (e.g., `/folder1/Report.xlsx`). |
-| file           | file   | formData | The file to upload. |
+| File           | file   | formData | The file to upload. |
 | storageName    | string | query    | Name of the storage to use. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/File/UploadFile) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
 ### Upload File Example
-
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to upload a file with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 {{< tab tabNum="11" >}}
@@ -452,7 +450,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/move/desfolder?destP
 ```
 
 {{< /tab >}}
-{{< tab tabnum="24" >}}
+{{< tab tabNum="24" >}}
 
 ```json
 {
@@ -618,7 +616,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/version/Report.xlsx?storage
 ```
 
 {{< /tab >}}
-{{< tab tabnum="47" >}}
+{{< tab tabNum="47" >}}
 
 ```json
 {
