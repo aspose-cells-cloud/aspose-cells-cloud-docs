@@ -1,12 +1,12 @@
 ---
-title: "Convert OLE Object to Image – Aspose.Cells Cloud REST API"
+title: "Convert OLE Object to Image – Aspose.Cells Cloud REST API (v3.0)"
 second_title: "Document"
 linktitle: "Conversion"
 type: docs
 url: /oleobjects/convert/
 aliases: [/convert-oleobject-to-image/]
-keywords: "convert OLE object to image, Aspose.Cells Cloud, REST API, SDK, Excel, OLE object, image conversion, PNG, JPEG"
-description: "Learn how to use Aspose.Cells Cloud REST API to convert an embedded OLE object in an Excel worksheet to PNG, JPEG, or other image formats. Includes cURL, SDK examples, authentication steps, and error‑handling guidance."
+keywords: "Aspose Cells, OLE conversion, REST API, image export, Excel"
+description: "Learn how to convert an embedded OLE object in an Excel worksheet to PNG, JPEG, or other image formats using Aspose.Cells Cloud REST API (v3.0). Includes cURL, SDK examples, and error handling."
 weight: 40
 ---
 
@@ -61,12 +61,12 @@ The successful response returns a **200** status code with `Content‑Type: imag
 
 ### Error Responses
 
-| HTTP Status | Code                   | Description                                     |
-| ----------- | ---------------------- | ----------------------------------------------- |
-| 400         | `InvalidParameter`     | One or more request parameters are invalid.     |
-| 401         | `AuthenticationFailed` | Missing or invalid JWT token.                   |
-| 404         | `PropertyNotFound`     | The specified document property does not exist. |
-| 500         | `InternalError`        | An unexpected error occurred on the server.     |
+| HTTP Status | Code                   | Description                                         |
+| ----------- | ---------------------- | --------------------------------------------------- |
+| 400         | `InvalidParameter`     | One or more request parameters are invalid.        |
+| 401         | `AuthenticationFailed` | Missing or invalid JWT token.                      |
+| 404         | `PropertyNotFound`     | The requested OLE object was not found.            |
+| 500         | `InternalError`        | An unexpected error occurred on the server.        |
 
 ## Cloud SDK Family
 
