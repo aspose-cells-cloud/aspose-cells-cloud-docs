@@ -1,12 +1,12 @@
 ---
-title: "Working with Excel Conditional Formattings"
+title: "Aspose.Cells Cloud API – Working with Excel Conditional Formatting"
 second_title: "Document"
 linktitle: "Conditional Formattings"
 type: docs
 url: /conditional-formattings/
 aliases: [/working-with-conditional-formatting/]
-keywords: "Excel, conditional formatting, spreadsheet, Cells.Cloud API, REST API"
-description: "The Cells.Cloud API for Excel provides endpoints to retrieve, add, modify, and clear conditional formatting rules, enabling dynamic visual analysis of worksheet data."
+keywords: "Aspose.Cells Cloud, Excel Conditional Formatting, API, REST, spreadsheet"
+description: "Learn how to retrieve, add, update, and clear Excel conditional formatting rules using the Aspose.Cells Cloud REST API (v3.0). Includes request examples, parameters, and error handling."
 weight: 100
 ---
 
