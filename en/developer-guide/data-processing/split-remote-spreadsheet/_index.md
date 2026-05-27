@@ -1,11 +1,11 @@
 ---
-title: "Aspose.Cells Cloud Spreadsheet Splitter Web API - Divide Excel Workbook into Multiple Files in 30+ Formats"
+title: "Aspose.Cells Cloud Spreadsheet Splitter API – Split Excel Workbook into Multiple Files & Export to 30+ Formats"
 second_title: "Document"
-ArticleTitle: "Split Excel File in Cloud to Separate Files & Export to 30+ Formats"
+ArticleTitle: "Split Excel Workbook in Cloud into Separate Files and Export to 30+ Formats"
 linktitle: "Split Remote Spreadsheet in Cloud"
 type: docs
 url: /split-remote-spreadsheet/
-keywords: "Aspose.Cells Cloud, split Excel workbook, spreadsheet splitter, cloud API, export to PDF, export to CSV, export to JSON, multiple format export, cloud spreadsheet processing"
+keywords: "Aspose.Cells Cloud, spreadsheet splitter API, split Excel workbook, cloud spreadsheet processing, export to PDF, export to CSV, export to JSON, multiple format export, cloud Excel split, Excel to PDF, Excel to HTML"
 description: "Use Aspose.Cells Cloud API to split an Excel workbook stored in cloud storage into separate worksheets and export each part to over 30 formats such as PDF, CSV, JSON, XLSX, HTML, ODS, and XPS."
 weight: 100
 ---
@@ -54,8 +54,8 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet
 ### Error Codes
 
 - **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
+- **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
 ## Where should we use the Split Remote Spreadsheet API?
@@ -72,8 +72,8 @@ PUT http://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet
 
 ## Why should you use the Split Remote Spreadsheet API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Reduced Labor Costs**: Reduced the need for positions dedicated to document consolidation.
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and providing comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.
+- **Reduced Labor Costs**: Reduces the need for positions dedicated to document consolidation.
 - **Pay‑per‑use**: No upfront investment, only pay for API calls actually used.
 - **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
 - **Preserves complex Excel formatting** in universally accessible PDF format.
