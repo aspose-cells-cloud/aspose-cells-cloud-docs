@@ -1,18 +1,18 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert Local Excel Range Data to a PDF File - Free Online Tool"
+title: "Convert Excel Range to PDF with Aspose.Cells Cloud API – Quick Guide"
 second_title: "Document"
-ArticleTitle: "How to Convert Local Spreadsheet Range Data to a PDF File: Step-by-Step Guide"
+ArticleTitle: "Step‑by‑Step Guide to Convert a Local Spreadsheet Range to PDF using Aspose.Cells Cloud"
 linktitle: "Convert Range to PDF"
 type: docs
 url: /convert-range-to-pdf/
-keywords: "Aspose.Cells Cloud, Convert Range to PDF, Excel to PDF, Spreadsheet Conversion API, REST API, Cloud Conversion"
-description: "Easily convert a specific range from a local Excel spreadsheet to a PDF file using Aspose.Cells Cloud's REST API."
+keywords: "Aspose.Cells, convert range to PDF, Excel API, REST, PDF conversion"
+description: "Learn how to export a specific cell range from a local Excel workbook to PDF using Aspose.Cells Cloud REST API. Includes request format, cURL sample, SDK code, and error handling."
 weight: 100
 ---
 
 Export a range of data from a local Excel file to a [PDF](https://docs.fileformat.com/pdf/) file using the Cloud API.
 
-## **Convert Range to PDF API**
+## Convert Range to PDF API
 
 ### Web API
 
@@ -20,7 +20,7 @@ Export a range of data from a local Excel file to a [PDF](https://docs.fileforma
 PUT http://api.aspose.cloud/v4.0/cells/convert/range/pdf
 ```
 
-### **Request Parameters:**
+### Request Parameters:
 
 | Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                   |
 | -------------- | ------ | --------------------------- | ----------------------------------------------------------------------------- |
@@ -33,7 +33,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/pdf
 | region         | String | Query                       | The spreadsheet region setting.                                               |
 | password       | String | Query                       | The password for opening the spreadsheet file.                                |
 
-### **Response**
+### Response
 
 ```json
 [
@@ -54,7 +54,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/pdf
 - **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.
 
-## **Where Should You Use the Convert Range to PDF API?**
+## Where Should You Use the Convert Range to PDF API?
 
 - **Financial Statements**: Convert balance sheets, income statements (specific ranges) to PDF for audit‑ready documentation.
 - **Sales Reports**: Transform sales dashboards or commission calculations to distributable PDFs.
