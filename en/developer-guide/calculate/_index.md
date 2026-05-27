@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Web API – Calculate SUM, COUNT, AVERAGE, MIN, MAX & Basic Math Operations"
+title: "Aspose.Cells Cloud API – Calculate SUM, COUNT, AVERAGE, MIN, MAX & Basic Math Operations (v3.0)"
 second_title: "Document"
 ArticleTitle: "Boost Your Data Skills: Learn Key Excel Calculations – Add, Subtract, Multiply, Divide & More"
 linktitle: "Calculate"
 type: docs
 url: /calculate/
-keywords: "Aspose.Cells, Excel calculation API, SUM, COUNT, AVERAGE, MIN, MAX, REST"
-description: "Learn how to use Aspose.Cells Cloud REST API to calculate SUM, COUNT, AVERAGE, MIN, MAX and basic math operations on Excel worksheets. Includes request examples, responses, and error handling."
+keywords: "Aspose.Cells Cloud, Excel calculation API, SUM, COUNT, AVERAGE, MIN, MAX, REST, calculate, basic math operations"
+description: "Learn how to use Aspose.Cells Cloud REST API (v3.0) to calculate SUM, COUNT, AVERAGE, MIN, MAX and basic arithmetic on Excel worksheets. Includes authentication steps, request/response examples, and error‑handling details."
 weight: 20
 ---
 
