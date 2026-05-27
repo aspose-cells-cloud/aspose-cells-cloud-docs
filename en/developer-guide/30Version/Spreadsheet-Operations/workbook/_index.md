@@ -1,12 +1,12 @@
 ---
-title: "Working with Excel files: Formula Calculation, Auto‑fit, Clear Objects, etc."
+title: "Working with Excel Workbooks – Formula Calculation, Auto‑Fit Columns/Rows, Clear Objects – Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "Excel Common Operations"
 type: docs
 url: /workbook/
 aliases: [/working-with-workbook/]
-keywords: "Aspose.Cells, Excel API, workbook operations, calculate formulas, auto‑fit"
-description: "Learn how to work with Excel workbooks using Aspose.Cells Cloud REST API. Step‑by‑step guides cover formula calculation, auto‑fitting rows/columns, clearing objects, and retrieving workbook metadata. SDKs for Python, .NET, Java, and more."
+keywords: "Aspose.Cells, Excel API, workbook operations, calculate formulas, auto‑fit, clear objects"
+description: "Learn how to work with Excel workbooks using Aspose.Cells Cloud REST API. Includes step‑by‑step guidance for formula calculation, auto‑fitting rows and columns, clearing objects, and retrieving workbook metadata. Supports Python, .NET, Java, and more."
 weight: 20
 ---
 
