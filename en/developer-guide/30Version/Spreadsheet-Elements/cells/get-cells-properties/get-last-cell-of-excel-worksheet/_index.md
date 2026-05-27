@@ -1,15 +1,15 @@
 ---
-title: "Get Last Cell of Excel Worksheet – Aspose.Cells Cloud API (v4.0)"
+title: "Retrieve Last Cell of an Excel Worksheet – Aspose.Cells Cloud API v4.0"
 type: docs
 url: /get-last-cell-of-excel-worksheet/
 weight: 30
-keywords: "Aspose.Cells, Cloud API, Excel last cell, endcell, REST"
-description: "Retrieve the address of the last used cell in an Excel worksheet with Aspose.Cells Cloud REST API (v4.0). Includes cURL request, JSON response, and SDK samples."
+keywords: "Aspose.Cells, Cloud API, Excel last cell, endcell, REST, Get Last Cell, Excel worksheet API"
+description: "Retrieve the address of the last used cell in an Excel worksheet using Aspose.Cells Cloud REST API v4.0. Includes cURL request, JSON response, and SDK samples."
 ---
 
 This REST API returns the **endcell** of an Excel worksheet when the `cellOrMethodName` parameter is set to `endcell`.
 
-- **cURL Example.**
+- **cURL Example**
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -64,8 +64,8 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/myWorkbook.xlsx/worksheets/Shee
 | Field           | Type    | Description                                           |
 | --------------- | ------- | ----------------------------------------------------- |
 | `Name`          | string  | Address of the cell (e.g., `F341`).                   |
-| `Row`           | integer | Zero‑based row index.                                 |
-| `Column`        | integer | Zero‑based column index.                              |
+| `Row`           | integer | Zero-based row index.                                 |
+| `Column`        | integer | Zero-based column index.                              |
 | `Value`         | string  | The cell’s displayed value.                           |
 | `Type`          | string  | Data type of the cell (e.g., `IsString`).             |
 | `Formula`       | string  | Formula text if the cell contains a formula.          |
@@ -76,7 +76,7 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/myWorkbook.xlsx/worksheets/Shee
 | `IsErrorValue`  | bool    | Indicates whether the cell contains an error value.   |
 | `IsInTable`     | bool    | Indicates whether the cell is inside a table.         |
 | `IsStyleSet`    | bool    | Indicates whether a style is applied to the cell.     |
-| `HtmlString`    | string  | HTML‑encoded representation of the cell’s value.      |
+| `HtmlString`    | string  | HTML-encoded representation of the cell’s value.      |
 | `Style.link`    | object  | Hyperlink to the style resource.                      |
 
 - **Cloud SDK Family**
