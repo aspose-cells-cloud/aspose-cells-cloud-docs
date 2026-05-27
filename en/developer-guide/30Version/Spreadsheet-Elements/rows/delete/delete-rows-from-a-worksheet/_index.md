@@ -1,11 +1,11 @@
 ---
-title: "Delete multiple rows from an Excel worksheet"
+title: "Aspose.Cells Cloud API – Delete Multiple Rows from an Excel Worksheet (v3.0)"
 second_title: "Document"
 linktitle: "Rows"
 type: docs
 url: /rows/delete/rows/
-keywords: "Aspose.Cells Cloud, delete rows, delete multiple rows, Excel worksheet, REST API, SDK"
-description: "Learn how to delete one or more rows from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint details, parameters, a cURL example, and SDK code samples for various languages."
+keywords: "Aspose.Cells Cloud, delete rows, delete multiple rows, Excel worksheet, REST API, SDK, v3.0"
+description: "Learn how to delete one or more rows from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL request, error handling, and SDK code samples."
 weight: 80
 ---
 
@@ -29,7 +29,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/ro
 | folder          | string  | query                           | The document folder.                                                 |
 | storageName     | string  | query                           | The storage name.                                                    |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/DeleteWorksheetRows) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
