@@ -1,13 +1,13 @@
 ---
-title: "Get Cells Properties"
+title: "Get Cells Properties – Aspose.Cells Cloud API (v4.0)"
 type: docs
 url: /get-cells-properties/
 weight: 130
-keywords: "Aspose Cells Cloud, REST API, Excel, Worksheet, Cell Properties, Get Cells Properties"
-description: "Learn how to use the Aspose.Cells Cloud REST API to retrieve properties of a specific cell or predefined cell methods in an Excel worksheet."
+keywords: "Aspose Cells, Cloud API, Get Cell Properties, Excel REST API, v4.0, cell value, cell formula, cell style"
+description: "Learn how to retrieve cell properties (value, formula, style, etc.) from an Excel worksheet using Aspose.Cells Cloud REST API (v4.0). Includes request/response examples, SDK code snippets, and error handling."
 ---
 
-This REST API demonstrates how to retrieve a specific cell in an Excel file.
+This REST API demonstrates how to retrieve a specific cell from an Excel file.
 
 ## REST API
 
