@@ -1,18 +1,18 @@
 ---
-title: "Working with Pivot Filters"
+title: "Aspose.Cells Cloud – Add Pivot Filters via REST API"
 second_title: "Document"
 linktitle: Filters
 type: docs
 url: /pivot-tables/add-filters/
 aliases: [/working-with-pivot-filters/]
-keywords: "Aspose.Cells Cloud, pivot filter, REST API, Excel, add filter, pivot table"
-description: "Learn how to add, retrieve, and delete pivot table filters using the Aspose.Cells Cloud REST API. Includes request syntax, required parameters, cURL example, and SDK snippets for C# and Go."
+keywords: "Aspose.Cells, Cloud API, Pivot Table Filter, Excel REST API, Add Pivot Filter, Aspose SDK"
+description: "Add Pivot Filters in Aspose.Cells Cloud – Learn the REST API request syntax, required parameters, cURL example, and SDK snippets for C# and Go."
 weight: 50
 ---
 
 This REST API adds a **pivot filter** to the pivot table at the specified index.
 
-## REST API
+## REST API – Add Pivot Filter
 
 ```bash
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters
@@ -27,8 +27,8 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | **pivotTableIndex** | integer | path     | Zero‑based index of the pivot table to which the filter will be applied.                        |
 | **filter**          | object  | body     | JSON object that defines the filter settings (e.g., `AutoFilter`, `EvaluationOrder`, etc.).     |
 | **needReCalculate** | boolean | query    | When **true**, forces the workbook to recalculate after the filter is added. Default **false**. |
-| **folder**          | string  | query    | Folder in cloud storage where the file is located.                                              |
-| **storageName**     | string  | query    | Name of the cloud storage.                                                                      |
+| **folder**          | string  | query     | Folder in cloud storage where the file is located.                                              |
+| **storageName**     | string  | query     | Name of the cloud storage.                                                                      |
 
 > **Note:** All parameters listed above are required unless explicitly marked as optional in the API reference.
 
