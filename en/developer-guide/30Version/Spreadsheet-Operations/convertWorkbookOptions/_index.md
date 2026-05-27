@@ -1,11 +1,11 @@
 ---
-title: "Convert Workbook Options"
+title: "Aspose.Cells Cloud – Convert Workbook Options API Reference"
 second_title: "Document"
 linktitle: "Convert Workbook Options"
 type: docs
 url: /convert-workbook-options/
-keywords: "Aspose.Cells Cloud, ConvertWorkbookOptions, Excel conversion API, REST API, Save Options, File formats, API reference"
-description: "Learn how to use the ConvertWorkbookOptions class in Aspose.Cells Cloud REST API. Detailed property list, defaults, and code examples for converting Excel workbooks to PDF, CSV, HTML, and more."
+keywords: "Aspose.Cells, ConvertWorkbookOptions, Excel to PDF API, cloud conversion, REST API, file format conversion"
+description: "Explore the Aspose.Cells Cloud ConvertWorkbookOptions API (v23.12). Learn required fields, optional flags, and see ready‑to‑run code samples for converting Excel workbooks to PDF, HTML, CSV, and more."
 weight: 79
 ---
 
