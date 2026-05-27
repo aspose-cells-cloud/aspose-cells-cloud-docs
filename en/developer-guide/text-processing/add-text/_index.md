@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Add Text API – Add Text to Multiple Excel Cells at Once – Insert Prefixes, Suffixes & Labels"
+title: "Add Text to Multiple Excel Cells – Aspose.Cells Cloud API for Prefixes, Suffixes & Labels"
 second_title: "Document"
-ArticleTitle: "Bulk Text Insertion for Excel – Add Prefixes, Suffixes & Custom Text to Cells – Step‑by‑Step Guide"
+ArticleTitle: "Bulk Text Insertion for Excel – Add Prefixes, Suffixes, and Custom Text to Cells – Aspose.Cells Cloud Guide"
 linktitle: "AddText"
 type: docs
 url: /add-text/
-keywords: "Aspose Cells API, add text Excel, bulk text insertion, prefix suffix Excel, spreadsheet text replace"
-description: "Insert prefixes, suffixes, or custom labels into many Excel cells in one call with Aspose.Cells Cloud. Choose start, end, before or after any text. Supports range, worksheet, and empty‑cell handling."
+keywords: "Aspose.Cells Cloud, Add Text API, Excel bulk text insertion, prefix suffix Excel, spreadsheet text replacement"
+description: "Insert prefixes, suffixes or custom labels into many Excel cells in one call with Aspose.Cells Cloud. Supports range, worksheet and empty‑cell handling."
 weight: 100
 ---
 
@@ -30,8 +30,8 @@ One‑call bulk insert of prefixes, suffixes, or anchored strings into every cel
 - Skip blank cells to avoid clutter.
 - The API touches only **string‑type** values; numbers, booleans, and formulas are first converted to text.
 - **Empty cells**
-  - `skipEmptyCells = true` → empty cells are skipped.
-  - `skipEmptyCells = false` → empty cells are filled with the insert text (cell becomes text type).
+  - `skipEmptyCells=true` → empty cells are skipped.
+  - `skipEmptyCells=false` → empty cells are filled with the insert text (cell becomes text type).
 
 - **Anchor not found**: When `position = BeforeText | AfterText` and `selectText` does **not** exist, the cell value remains unchanged.
 
