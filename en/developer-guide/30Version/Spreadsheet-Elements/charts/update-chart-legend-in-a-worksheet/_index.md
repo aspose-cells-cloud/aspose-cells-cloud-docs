@@ -1,11 +1,11 @@
 ---
-title: "Update Chart Legend in a Worksheet"
+title: "Update Chart Legend in an Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /charts/legend/update/
 aliases: [/update-chart-legend-in-a-worksheet/]
 weight: 160
-keywords: "Aspose.Cells Cloud, Excel, Chart Legend, REST API, Update Chart Legend, Worksheet, cURL, SDK"
-description: "How to update a chart legend in an Excel worksheet using the Aspose.Cells Cloud REST API, with cURL request examples and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells Cloud, Excel, Chart Legend, REST API, Update Chart Legend, Worksheet, cURL, SDK, v3.0"
+description: "Learn how to update a chart legend in an Excel worksheet using Aspose.Cells Cloud REST API. Includes request format, required parameters, cURL example, and SDK code snippets for C#, Java, Python, and more."
 ---
 
 This REST API updates a chart legend.
@@ -13,7 +13,7 @@ This REST API updates a chart legend.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
 
 ### Request parameters
@@ -29,14 +29,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartLegend) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API using cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API using cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
+curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend" \
 -d '{"Font":{"Color":{"A":"1","R":"255","G":"0","B":"0"},"DoubleSize":10.0,"IsBold":true,"IsItalic":false,"IsStrikeout":false,"IsSubscript":false,"IsSuperscript":false,"Name":"Arial","Size":15,"Underline":"None"},"Shadow":true}' \
 -X POST \
 -H "Content-Type: application/json" \
