@@ -1,5 +1,5 @@
 ---
-title: "Convert an Excel File to Different Formats"
+title: "Convert Excel to CSV, PDF, HTML, JSON & More – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Convert Excel"
 type: docs
@@ -9,8 +9,8 @@ aliases:
     /convert-excel-workbook-to-different-file-formats/,
     /convert/excel-to-different-formats/,
   ]
-keywords: "Aspose.Cells Cloud, Excel conversion, file format conversion, REST API, SDK, CSV, PDF, HTML, JSON, Markdown"
-description: "Convert Excel workbooks to formats such as CSV, PDF, HTML, JSON, Markdown, and more using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells, Aspose.Cells Cloud, Excel conversion, file format conversion, REST API, SDK, CSV, PDF, HTML, JSON, Markdown"
+description: "Convert Excel workbooks to CSV, PDF, HTML, JSON, Markdown and over 20 other formats using the Aspose.Cells Cloud REST API."
 weight: 10
 ---
 
@@ -48,8 +48,8 @@ The first part of the multipart body contains the **data file**, and the second 
 
 | Parameter Name | Type      | Description                                                    |
 | -------------- | --------- | -------------------------------------------------------------- |
-| `datafile`     | data file | The Excel file placed in the first part of the multipart body. |
-| `SaveOptions`  | object    | Save options placed in the second part of the multipart body.  |
+| `datafile`     | data file | The Excel file is placed in the first part of the multipart body. |
+| `SaveOptions`  | object    | Save options are placed in the second part of the multipart body.  |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) defines a publicly accessible interface that enables direct REST interactions from a web browser.
 
