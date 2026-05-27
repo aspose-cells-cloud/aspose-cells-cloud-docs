@@ -1,10 +1,10 @@
 ---
-title: "Clear Worksheet Comments"
+title: "Clear Worksheet Comments – Aspose.Cells Cloud API (DELETE)"
 type: docs
 url: /comments/clear/
 aliases: [/delete-all-comments-in-a-worksheet/]
-keywords: "Aspose Cells clear comments API, delete worksheet comments, Aspose.Cells Cloud REST, Excel comment removal"
-description: "Delete all comments from a specific worksheet in an Excel file using Aspose.Cells Cloud API. Learn the DELETE endpoint, required parameters, sample cURL request, and SDK examples (C#, Java, Python, …)."
+keywords: "Aspose Cells clear comments API, delete worksheet comments, Aspose.Cells Cloud REST, Excel comment removal, clear worksheet comments"
+description: "Delete all comments from a specific worksheet in an Excel file using Aspose.Cells Cloud API. Learn the DELETE endpoint, required parameters, cURL example, and SDK code snippets (C#, Java, Python, …)."
 weight: 50
 ---
 
@@ -25,7 +25,7 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comment
 | folder         | string | query    | Path to the folder that contains the file.     |
 | storageName    | string | query    | Name of the storage where the file is located. |
 
-### **Response codes**
+### Response codes
 
 | Code | Meaning                                       | Sample response                                        |
 | ---- | --------------------------------------------- | ------------------------------------------------------ |
