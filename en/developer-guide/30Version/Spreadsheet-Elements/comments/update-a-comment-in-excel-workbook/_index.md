@@ -1,10 +1,10 @@
 ---
-title: "Update a Worksheet Cell Comment"
+title: "Update a Worksheet Cell Comment – Aspose.Cells Cloud API v3.0"
 type: docs
 url: /comments/update/
 aliases: [/update-a-comment-in-excel-workbook/]
-keywords: "Aspose.Cells Cloud, REST API, Excel, worksheet, cell comment, update comment"
-description: "Use Aspose.Cells Cloud REST API to update a comment on a worksheet cell in an Excel workbook."
+keywords: "Aspose.Cells, Cloud API, Excel comment, update comment, REST, v3.0"
+description: "Learn how to update a comment on a specific worksheet cell using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, SDK snippets, and error handling."
 weight: 30
 ---
 
@@ -13,7 +13,7 @@ This REST API updates a comment on a worksheet cell.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
 ### Request Parameters
@@ -36,13 +36,13 @@ You can use the **cURL** command‑line tool to access Aspose.Cells web services
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/a1" \
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comments/A1" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <jwt token>" \
   -d '{
-        "CellName": "a1",
+        "CellName": "A1",
         "Author": "test",
         "HtmlNote": "string",
         "Note": "this is a comment",
