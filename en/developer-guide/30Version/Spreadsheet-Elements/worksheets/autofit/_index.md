@@ -1,18 +1,18 @@
 ---
-title: "Working with Autofit on an Excel Worksheet"
+title: "Working with AutoFit – Auto‑Resize Rows & Columns in Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Autofit"
 type: docs
 url: /worksheets/autofit/
 aliases: [/autofit-rows-and-columns-of-worksheet/]
-keywords: "autofit column, autofit row, Aspose.Cells Cloud, Excel API, resize column, resize row, SDK"
-description: "Learn how to automatically resize rows and columns in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL, .NET, Java, and Python examples."
+keywords: "autofit, aspose cells cloud, excel autofit, resize columns, resize rows, api example"
+description: "Learn how to automatically resize rows and columns in an Excel worksheet using Aspose.Cells Cloud Autofit API. Includes cURL, .NET, Java, and Python code samples, plus usage tips and limits."
 weight: 20
 ---
 
-## Working with autofit on an Excel worksheet
+## Working with AutoFit on an Excel Worksheet
 
-- [How to autoFit a column on an Excel worksheet.](/cells/worksheets/autofit/column/)
-- [How to autoFit columns on an Excel worksheet.](/cells/worksheets/autofit/columns/)
-- [How to autoFit a row on an Excel worksheet.](/cells/worksheets/autofit/row/)
-- [How to autoFit rows on an Excel worksheet.](/cells/worksheets/autofit/rows/)
+- [How to AutoFit a column on an Excel worksheet.](/cells/worksheets/autofit/column/)
+- [How to AutoFit columns on an Excel worksheet.](/cells/worksheets/autofit/columns/)
+- [How to AutoFit a row on an Excel worksheet.](/cells/worksheets/autofit/row/)
+- [How to AutoFit rows on an Excel worksheet.](/cells/worksheets/autofit/rows/)
