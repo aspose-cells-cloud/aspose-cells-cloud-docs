@@ -1,12 +1,12 @@
 ---
-title: "Add a color filter in an Excel worksheet"
+title: "Add a Color Filter to an Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Add color filter"
 type: docs
 url: /autofilter/add-color-filter/
 aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
-keywords: "Excel, color filter, Aspose.Cells Cloud, REST API, auto filter, JWT authentication"
-description: "Learn how to apply a color filter to an Excel worksheet with Aspose.Cells Cloud API. Includes endpoint, parameters, cURL example, error handling, and SDK samples."
+keywords: "Aspose.Cells, Excel color filter, REST API, auto filter, cloud SDK, cURL, JSON schema"
+description: "Learn how to apply a foreground/background color filter to an Excel worksheet using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, error handling, and SDK code samples for C#, Java, Python, and more."
 weight: 65
 ---
 
