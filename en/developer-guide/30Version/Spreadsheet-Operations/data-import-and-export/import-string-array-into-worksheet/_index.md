@@ -1,5 +1,5 @@
 ---
-title: "Import String Array into Excel Worksheet – Aspose.Cells Cloud"
+title: "Import String Array into Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Import string array"
 type: docs
@@ -8,8 +8,8 @@ aliases:
   - /import-string-array-into-worksheet/
   - /import-data/string-array/
   - /import/string-array/
-keywords: "Aspose.Cells Cloud, import string array, Excel REST API, multipart upload, worksheet data import"
-description: "Learn how to import a string array into an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request format, parameters, and SDK examples."
+keywords: "import string array excel, Aspose.Cells Cloud, REST API, multipart/form-data, ImportStringArrayOption, worksheet data import"
+description: "Learn how to import a string array into an Excel worksheet using the Aspose.Cells Cloud REST API v3.0. See request format, required parameters, and SDK code samples."
 weight: 40
 ---
 
