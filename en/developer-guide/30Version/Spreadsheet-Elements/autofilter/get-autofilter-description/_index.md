@@ -1,12 +1,12 @@
 ---
-title: "Get an AutoFilter in an Excel worksheet"
+title: "Aspose.Cells Cloud API – Get AutoFilter of an Excel Worksheet (REST)"
 second_title: "Document"
 linktitle: "Get AutoFilter"
 type: docs
 url: /autofilter/get/
 aliases: [/get-autofilter-description/]
-keywords: "AutoFilter, Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
-description: "Retrieve the AutoFilter description from an Excel worksheet using the Aspose.Cells Cloud REST API. The endpoint is compatible with SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, and more."
+keywords: "Get AutoFilter, AutoFilter, Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
+description: "Retrieve the AutoFilter configuration of an Excel worksheet using the Aspose.Cells Cloud REST API. Includes a cURL example, required parameters, and SDK compatibility for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
 weight: 50
 ---
 
@@ -27,9 +27,9 @@ The request parameters are:
 | folder         | string | query      | Folder path in storage where the file is located. |
 | storageName    | string | query      | Name of the storage to use. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/GetWorksheetAutoFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/GetWorksheetAutoFilter) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The example below demonstrates how to call the Cloud API using cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
