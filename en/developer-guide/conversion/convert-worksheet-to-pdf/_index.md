@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Web API – Convert a Local Excel Worksheet to a PDF File – Free Online Tool"
+title: "Convert Worksheet to PDF with Aspose.Cells Cloud API – Free Online Tool"
 second_title: "Document"
-ArticleTitle: "How to Convert a Local Spreadsheet Worksheet to a PDF File: Step‑by‑Step Guide"
+ArticleTitle: "Step‑by‑Step Guide: Convert a Local Worksheet to PDF Using Aspose.Cells Cloud API"
 linktitle: "Convert Worksheet to PDF"
 type: docs
 url: /convert-worksheet-to-pdf/
-keywords: "Aspose.Cells, Excel to PDF, worksheet conversion, REST API, cloud conversion, spreadsheet PDF, API endpoint, PDF generation"
-description: "Use Aspose.Cells Cloud API to convert a worksheet from a local Excel file into a PDF document quickly and securely."
+keywords: "Aspose.Cells, Excel to PDF, worksheet conversion, REST API, cloud conversion, spreadsheet PDF, API endpoint, PDF generation, convert worksheet to PDF"
+description: "Learn how to convert a single worksheet from a local Excel file to PDF using Aspose.Cells Cloud REST API. Includes request format, parameters, sample code (C#, Java, Python) and error handling."
 weight: 100
 ---
 
@@ -28,9 +28,9 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
 | worksheet      | String | Query                      | Name of the worksheet in the spreadsheet.                             |
 | outPath        | String | Query                      | (Optional) The folder path for storing the workbook; default is null. |
 | outStorageName | String | Query                      | The output file storage name.                                         |
-| fontsLocation  | String | Query                      | Use custom fonts for the PDF.                                         |
-| region         | String | Query                      | Define the spreadsheet region setting.                                |
-| password       | String | Query                      | The password required to open the spreadsheet file.                   |
+| fontsLocation  | String | Query                      | Specifies a folder that contains custom fonts for the PDF.           |
+| region         | String | Query                      | Specifies the spreadsheet region setting.                             |
+| password       | String | Query                      | Password required to open the spreadsheet file.                       |
 
 ### **Response**
 
@@ -49,9 +49,9 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
+- **404 Not Found**: The system cannot access the spreadsheet file.  
 - **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.
 
 ## **Where Should You Use the Convert Worksheet to PDF API?**
