@@ -1,17 +1,17 @@
 ---
-title: "Delete all OLE objects in an Excel worksheet"
+title: "Delete All OLE Objects from an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Clear"
 type: docs
 url: /oleobjects/clear/
 aliases: [/delete-all-oleobjects-from-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, delete OLE objects, Excel API, REST API, worksheet OLE clear, cloud SDK"
-description: "Learn how to remove every OLE object from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, HTTPS cURL example, SDK snippets, authentication steps, error handling, and FAQ."
+keywords: "Aspose.Cells, OLE object, delete, Excel, REST API, cloud"
+description: "Remove every OLE object (embedded Word, PowerPoint, image, etc.) from a worksheet via Aspose.Cells Cloud v3.0. Includes endpoint, parameters, cURL & SDK examples."
 weight: 60
 ---
 
 An **OLE (Object Linking and Embedding) object** is an embedded file such as a Word document, PowerPoint slide, image, or another workbook that resides inside an Excel worksheet.  
-The _Clear_ operation removes **all** such OLE objects from a specified worksheet, leaving only the cell data. This is useful for cleaning up legacy spreadsheets or preparing a workbook for redistribution.
+The Clear operation removes all OLE objects from the specified worksheet, leaving only the cell data. This is useful for cleaning up legacy spreadsheets or preparing a workbook for redistribution.
 
 ## REST API
 
@@ -30,7 +30,7 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobje
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/DeleteWorksheetOleObjects) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below shows how to delete all OLE objects **using** cURL.
+You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below shows how to delete all OLE objects using cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
