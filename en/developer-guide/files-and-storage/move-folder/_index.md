@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Move Folder API – Quickly Move Folders in the Cloud"
+title: "Aspose.Cells Cloud Move Folder API – Move Folders in Cloud Storage (v4.0)"
 second_title: "Document"
-ArticleTitle: "Cloud-based Excel File Management – Quickly Move Folders in the Cloud"
+ArticleTitle: "Aspose.Cells Cloud – Move Folder API for Excel File Management"
 linktitle: "Move Folder"
 type: docs
 url: /move-folder/
-keywords: "Aspose.Cells, Move Folder API, Cloud Storage, Excel REST API, Files Management"
-description: "Learn how to move folders in Aspose.Cells Cloud storage via the RESTful Move Folder API. Includes endpoint, parameters, sample cURL, error codes, and SDK examples for C#, Java, Python, and more."
+keywords: "Aspose.Cells Cloud Move Folder, move folder API, Aspose cloud storage, REST move folder, Excel file management, Aspose SDK"
+description: "Move a folder in Aspose.Cells Cloud storage with a single REST call. Learn the endpoint, required parameters, sample cURL, SDK usage (C#, Java, Python) and error handling."
 weight: 100
 ---
 
@@ -20,9 +20,9 @@ PUT https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
 
 ### **Function Description**
 
-This API moves a folder from one location to another within Aspose.Cells Cloud storage. It helps organise files and manage cloud storage efficiently.
+This API moves a folder from one location to another within Aspose.Cells Cloud storage, helping organize files and manage cloud storage efficiently.
 
-### The request parameters of **moveFolder** API are
+### The **moveFolder** API accepts the following parameters:
 
 | Parameter Name  | Type   | Location | Description                                                       |
 | --------------- | ------ | -------- | ----------------------------------------------------------------- |
@@ -40,7 +40,7 @@ This API moves a folder from one location to another within Aspose.Cells Cloud s
 
 ### **Response Description**
 
-On success the API returns an empty response body (`200 OK`). Errors are returned as JSON objects containing an `error` field.
+On success, the API returns an empty response body (`200 OK`). Errors are returned as JSON objects containing an `error` field.
 
 ### **Error Handling**
 
