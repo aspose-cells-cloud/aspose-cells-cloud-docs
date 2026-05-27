@@ -1,19 +1,19 @@
 ---
-title: What's new in Aspose.Cells Cloud
+title: What's New in Aspose.Cells Cloud – Version 4.0 Release Notes
 second_title: "Document"
 linktitle: "What's new"
 type: docs
 weight: 9
 url: /new-features/
 aliases: [/what-s-new-in-aspose-cells-cloud/]
-keywords: "Aspose.Cells Cloud, new features, Microsoft Office Excel, OpenOffice Spreadsheet, CSV, PDF, REST API, SDK, spreadsheet, cloud"
-description: "Explore the latest features, improvements, and bug fixes in Aspose.Cells Cloud, including updates for Excel, OpenOffice, CSV, and PDF handling."
+keywords: "Aspose.Cells Cloud, version 4.0, release notes, API improvements, spreadsheet trimming"
+description: "Discover the latest features, bug fixes, and improvements in Aspose.Cells Cloud 4.0, including trimming support, SDK consolidation, and updated API parameters."
 ---
 
 # Most Important Release
 
 - **The latest version of Aspose.Cells Cloud 4.0 is now available. This release has been redesigned to be more streamlined and efficient, ensuring a stable and reliable experience.**
-- **The latest SDK consolidates all the APIs from Aspose.Cells Cloud 3.0 and 4.0, streamlining the development process and making it more practical and convenient.**
+- **The latest SDK consolidates all APIs from Aspose.Cells Cloud 3.0 and 4.0, streamlining development and making it more practical and convenient.**
 
 # Latest Release
 
