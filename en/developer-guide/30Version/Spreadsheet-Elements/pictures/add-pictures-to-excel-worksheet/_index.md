@@ -1,12 +1,12 @@
 ---
-title: "Add a Picture in an Excel File"
+title: "Add a Picture to an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /pictures/add/
 aliases: [/add-pictures-to-excel-worksheet/]
-keywords: "Aspose.Cells, Excel, Add Picture, REST API, Cloud SDK, Spreadsheet, Worksheet, Image"
-description: "Use Aspose.Cells Cloud REST API to add an image to an Excel worksheet. SDKs for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift simplify integration across platforms."
+keywords: "Aspose.Cells Cloud, Excel API, add picture, picture API, worksheet image, REST API, SDK"
+description: "Learn how to add an image to an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, and SDK code samples for multiple languages."
 weight: 20
 ---
 
@@ -15,7 +15,7 @@ This REST API adds a new picture to an Excel worksheet.
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
 ### Request Parameters
@@ -42,7 +42,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures?picturePath=aspose-cloud.png" \
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures?picturePath=aspose-cloud.png" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
