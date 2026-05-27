@@ -1,5 +1,5 @@
 ---
-title: "Import Double Array into Excel Worksheet"
+title: "Import Double Array into Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Import double array"
 type: docs
@@ -8,15 +8,15 @@ aliases:
   - /import-double-array-into-worksheet/
   - /import-data/double-array/
   - /import/double-array/
-keywords: "Aspose.Cells, import double array, Excel API, cloud SDK"
-description: "Learn how to import a double‑array into an Excel worksheet using Aspose.Cells Cloud REST API. Includes authentication, request format, parameters, sample XML/JSON, and response details."
+keywords: "Aspose.Cells import double array, Excel API multipart upload, cloud spreadsheet data import, Aspose.Cells, import double array, Excel API, cloud SDK"
+description: "Learn how to import a double-array into an Excel worksheet using the Aspose.Cells Cloud REST API. Includes authentication, request format, parameters, sample XML/JSON, and response details."
 weight: 20
 ---
 
 This REST API **imports double‑array data** into an Excel worksheet.
 
 You send an HTTP request with **multipart** content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
-The first part of the multipart body contains the **ImportDoubleArrayOption** data and the second part contains the data file.
+The first part of the multipart body contains the **ImportDoubleArrayOption** data, and the second part contains the data file.
 
 ## REST API
 
