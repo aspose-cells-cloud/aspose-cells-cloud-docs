@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Web API – Merge Matching Spreadsheets in Remote Folder to 30+ Formats"
+title: "Merge Matching Spreadsheets in Remote Folder – Aspose.Cells Cloud API (30+ Output Formats)"
 second_title: "Document"
-ArticleTitle: "Merge matching spreadsheet files into a single file in a remote folder."
+ArticleTitle: "Merge Matching Spreadsheet Files into a Single File in a Remote Folder using Aspose.Cells Cloud"
 linktitle: "Merge Spreadsheets in Remote Folder"
 type: docs
 url: /merge-spreadsheets-in-remote-folder/
-keywords: "merge matching spreadsheet files remote folder, Aspose.Cells Cloud merge API, batch merge Excel files cloud, merge spreadsheets to PDF, CSV, JSON, cloud folder spreadsheet merger, remote Excel file merging, merge matching files multiple formats, Aspose merge API, automate Excel file merging"
-description: "Combine spreadsheet files stored in Aspose Cloud storage into one file. Supports over 30 output formats such as PDF, CSV, JSON, XLSX, ODS, XPS, and more."
+keywords: "merge spreadsheets remote folder, Aspose.Cells Cloud, spreadsheet merge API, PDF export, CSV export, XLSX, cloud storage, batch merge, API"
+description: "Combine multiple spreadsheet files stored in Aspose Cloud storage into a single document. The Merge Spreadsheets in Remote Folder API supports 30+ output formats (PDF, CSV, JSON, XLSX, ODS, XPS) and provides fast, secure cloud processing."
 weight: 100
 ---
 
