@@ -1,17 +1,17 @@
 ---
-title: "Unhide columns on an Excel worksheet"
+title: "Unhide Columns in an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Unhide"
 type: docs
 url: /columns/unhide/
 aliases:
   [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
-keywords: "unhide columns, Excel, Aspose.Cells Cloud, REST API, SDK, worksheet, API"
-description: "Learn how to use the Aspose.Cells Cloud REST API to unhide columns in an Excel worksheet. Includes request details, a cURL example, and SDK code samples for several programming languages."
+keywords: "unhide columns, Excel, Aspose.Cells Cloud, REST API, SDK, worksheet, API, Excel API, column width"
+description: "Learn how to use the Aspose.Cells Cloud REST API (v3.0) to unhide columns in an Excel worksheet. Includes request syntax, cURL example, SDK code samples, and response details."
 weight: 50
 ---
 
-This REST API unhides worksheet columns.
+This REST API unhides columns in a worksheet.
 
 ## REST API
 
@@ -31,9 +31,9 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 | folder         | string  | query    | The folder that contains the document.         |
 | storageName    | string  | query    | The name of the storage service.               |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetColumns) defines a publicly accessible programming interface and enables you to perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API using cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
