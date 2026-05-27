@@ -1,12 +1,12 @@
 ---
-title: "Create Spreadsheet API – Aspose.Cells Cloud (v5.0) | Generate Excel Files"
+title: "Create Spreadsheet API – Aspose.Cells Cloud v5.0"
 second_title: "Document"
 ArticleTitle: "How to Create New Excel Spreadsheets – Generate Blank or Template‑Based Files"
 linktitle: "Create Spreadsheet"
 type: docs
 url: /create-spreadsheet/
-keywords: "create spreadsheet api, Aspose.Cells Cloud, generate Excel, Excel template API, cloud spreadsheet creation, Excel generation API, workbook creator, dynamic spreadsheet API"
-description: "Learn how to create blank or template‑based Excel workbooks with Aspose.Cells Cloud API (v5.0). Includes endpoint, parameters, error codes, authentication steps, and SDK examples."
+keywords: "create spreadsheet, Aspose.Cells Cloud, Excel API, generate Excel, template spreadsheet"
+description: "Create blank or template‑based Excel workbooks with Aspose.Cells Cloud API v5.0. Learn parameters, examples, and error handling."
 weight: 100
 ---
 
@@ -25,7 +25,7 @@ PUT https://api.aspose.cloud/v5.0/cells/spreadsheet/create
 | Parameter Name     | Type   | Location | Description                                                                                                                                       |
 | ------------------ | ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **format**         | String | Query    | **Required**. File format for the new spreadsheet (e.g., `XLSX`, `XLS`, `ODS`, `CSV`).                                                            |
-| **template**       | String | Query    | **Optional**. Name of a template file stored in your cloud storage (e.g., `invoice_template.xlsx`). If omitted, a blank workbook is created.      |
+| **template**       | String | Query    | **Optional**. Name of a template file stored in your cloud storage (e.g., `invoice_template.xlsx`). If the template parameter is omitted, a blank workbook is created.      |
 | **outPath**        | String | Query    | **Optional**. Target folder path in cloud storage for the generated file. If `null` or omitted, the spreadsheet is saved to the default location. |
 | **outStorageName** | String | Query    | **Required**. Identifier of the configured cloud storage (e.g., `MyDrive`).                                                                       |
 | **region**         | String | Query    | **Optional**. Locale setting (e.g., `fr-FR`) that determines default date, number, and currency formats.                                          |
