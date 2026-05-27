@@ -1,5 +1,5 @@
 ---
-title: "Save As Excel"
+title: "Save Excel Workbook as PDF, CSV, JSON, Markdown – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Save as"
 type: docs
@@ -7,8 +7,8 @@ url: /save-an-excel-file-as-other-formats-files/
 aliases:
   - /convert-excel-workbook-to-different-file-formats/
   - /saveas-other-formats/
-keywords: "Save As, Excel, Aspose Cells Cloud, REST API, file format conversion, PDF, CSV, JSON, Markdown"
-description: "Use Aspose.Cells Cloud REST API to save Excel workbooks in multiple formats such as PDF, CSV, JSON, and Markdown. SDKs are available for many programming languages."
+keywords: "Aspose.Cells Cloud, Save Excel as PDF, CSV, JSON, Markdown, REST API, file format conversion"
+description: "Convert and save Excel workbooks to PDF, CSV, JSON, Markdown and other formats using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, and full parameter reference."
 weight: 30
 ---
 
@@ -31,8 +31,8 @@ This REST API allows you **to save** an Excel file in different formats.
 | Parameter Name        | Type   | Description                                                                              |
 | --------------------- | ------ | ---------------------------------------------------------------------------------------- |
 | newfilename           | string | New file name for the saved document.                                                    |
-| isAutoFitRows         | string | If true, automatically fits all rows in the workbook. Default is `false`.                |
-| isAutoFitColumns      | string | If true, automatically fits column widths in the workbook. Default is `false`.           |
+| isAutoFitRows         | bool   | If true, automatically fits all rows in the workbook. Default is `false`.                |
+| isAutoFitColumns      | bool   | If true, automatically fits column widths in the workbook. Default is `false`.           |
 | folder                | string | Folder containing the original workbook.                                                 |
 | storageName           | string | Name of the storage where the source file is located.                                    |
 | outStorageName        | string | Name of the storage where the output file will be saved.                                 |
