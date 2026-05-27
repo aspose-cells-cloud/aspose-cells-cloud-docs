@@ -1,11 +1,11 @@
 ---
-title: "Batch processing of Excel files. Conversion, Lock, Protect, Split, and Unlock."
+title: "Batch Processing of Excel Files – Convert, Lock, Protect, Split & Unlock | Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "Batch Excel files"
 type: docs
 url: /batch/
-keywords: "Batch processing, Excel, conversion, lock, protect, split, unlock, Aspose.Cells Cloud API"
-description: "Aspose.Cells Cloud API enables batch processing of multiple Excel files for conversion, locking, protection, splitting, and unlocking, with SDK support for Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, and Swift."
+keywords: "Aspose.Cells, batch Excel processing, Excel conversion API, Excel lock API, Excel protect API, Excel split, Excel unlock, cloud spreadsheet"
+description: "Learn how to batch‑process Excel workbooks with Aspose.Cells Cloud: convert formats, lock sheets, protect cells, split files, or unlock them—all via REST API and SDKs for .NET, Java, Python, and more."
 weight: 35
 ---
 
