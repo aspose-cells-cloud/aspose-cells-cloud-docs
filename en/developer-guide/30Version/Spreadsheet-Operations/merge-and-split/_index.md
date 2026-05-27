@@ -1,15 +1,15 @@
 ---
-title: "Merge and Split Excel Files"
+title: "Merge and Split Excel Files with Aspose.Cells Cloud API – Guide and Code Samples"
 second_title: "Document"
 linktitle: "Merge and Split"
 type: docs
 url: /merge-and-split/
-keywords: "Aspose.Cells Cloud, merge Excel files, combine Excel sheets, split Excel workbook, Excel file splitter, Excel API"
-description: "Use Aspose.Cells Cloud REST API to merge and split Excel workbooks. SDKs are available for Android, .NET, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "merge Excel files, split Excel workbook, Aspose.Cells Cloud merge, Excel file splitter API, Excel merge API, Aspose.Cells 3.0"
+description: "Learn how to merge multiple Excel workbooks or split a workbook into separate files using Aspose.Cells Cloud REST API. Includes step‑by‑step examples and code snippets for .NET, Java, Python, Node.js and more."
 weight: 32
 ---
 
-## Merge and split with Excel files
+## Merge and Split with Excel Files
 
 - [How to merge multiple Excel files into a single workbook](/cells/merge-multi-files-into-excel/)
 - [How to merge an Excel workbook into another workbook](/cells/merge-an-excel-file-into-the-excel-file/)
