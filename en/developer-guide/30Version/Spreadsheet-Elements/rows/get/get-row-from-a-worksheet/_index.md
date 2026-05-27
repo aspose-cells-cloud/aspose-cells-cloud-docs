@@ -1,12 +1,12 @@
 ---
-title: "Get Row Description from an Excel Worksheet"
+title: "Get Row Details – Aspose.Cells Cloud API Reference"
 second_title: "Document"
 linktitle: "Row"
 type: docs
 url: /rows/get/row/
 aliases: [/get-row-from-a-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel row API, Get Worksheet Row, REST API, .NET SDK, Java SDK, Python SDK"
-description: "Retrieve detailed information (height, style, hidden state, etc.) for a specific row in an Excel worksheet using Aspose.Cells Cloud REST API. Includes curl example, SDK snippets, and error handling."
+keywords: "Aspose.Cells, Excel API, row metadata, REST, cloud SDK"
+description: "Retrieve row metadata (height, style, hidden state, etc.) from an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL, SDK examples and error handling."
 weight: 10
 ---
 
@@ -30,7 +30,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL. Include the `Authorization: Bearer <jwt token>` header to authenticate the request.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL. Include the `Authorization: Bearer <jwt token>` header to authenticate the request.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
