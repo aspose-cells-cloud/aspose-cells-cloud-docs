@@ -1,16 +1,16 @@
 ---
-title: "Set Zoom for an Excel Worksheet – Aspose.Cells Cloud API v3.0"
+title: "Set Worksheet Zoom (10‑400%) – Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Zoom"
 type: docs
 url: /worksheets/zoom/
 aliases: [/set-zoom-in-excel-worksheet/]
-keywords: "Aspose.Cells, Excel zoom, worksheet zoom, REST API, cloud SDK, Excel automation"
-description: "Learn how to set worksheet zoom (10‑400 %) using Aspose.Cells Cloud API v3.0. Includes cURL, SDK examples, and error handling."
+keywords: "Aspose.Cells, Excel zoom, worksheet zoom API, REST API, cloud SDK, set zoom percentage"
+description: "Learn how to set the zoom level of an Excel worksheet (10‑400%) using Aspose.Cells Cloud API v3.0. Includes cURL example, SDK snippets, required parameters, and error handling."
 weight: 20
 ---
 
-This REST API sets the zoom value of an Excel worksheet. **Authentication** is required; include a valid Bearer JWT token in the `Authorization` header of every request.
+This REST API sets the zoom level of an Excel worksheet. Authentication is required; include a valid Bearer JWT token in the `Authorization` header of each request.
 
 ## REST API
 
@@ -28,9 +28,9 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/zoom
 | folder      | string  | query    | Folder path where the file is stored.                              |
 | storageName | string  | query    | Name of the storage service.                                       |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostUpdateWorksheetZoom) defines a publicly accessible programming interface and enables you to perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The example below demonstrates how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
