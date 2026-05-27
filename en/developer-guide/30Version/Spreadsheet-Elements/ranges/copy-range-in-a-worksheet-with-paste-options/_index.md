@@ -1,12 +1,12 @@
 ---
-title: "Copy Range in a Worksheet with Paste Options"
+title: "Copy Range in a Worksheet – Aspose.Cells Cloud API with Paste Options"
 second_title: "Document"
 linktitle: "Copy"
 type: docs
 url: /ranges/copy/
 aliases: [/copy-range-in-a-worksheet-with-paste-options/]
-keywords: "Aspose.Cells Cloud, REST API, Excel, copy range, worksheet, paste options"
-description: "Use Aspose.Cells Cloud REST API to copy a range within an Excel worksheet with full paste‑option support. Includes SDK examples for multiple programming languages."
+keywords: "Aspose.Cells copy range, Excel API paste options, Aspose.Cells SDK, Aspose.Cells Cloud, REST API, Excel, copy range, worksheet, paste options"
+description: "Copy a range within an Excel worksheet using Aspose.Cells Cloud API (v3.0). Learn required parameters, authentication, cURL example, and SDK code snippets for C#, Java, Python, and more."
 weight: 20
 ---
 
