@@ -1,11 +1,11 @@
 ---
-title: "Add an Excel Worksheet"
+title: "Add a Worksheet to an Excel Workbook – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /worksheets/add/
 aliases: [/add-a-new-excel-worksheet/]
-keywords: "Add Excel worksheet, Aspose.Cells Cloud, REST API, PUT worksheet, Excel workbook, API request"
+keywords: "Aspose.Cells, add worksheet, Excel API, REST, PUT, cloud storage, SDK"
 description: "Step‑by‑step guide to add a new worksheet to an Excel workbook using Aspose.Cells Cloud REST API, including request details, a cURL example, and SDK code snippets for multiple languages."
 weight: 20
 ---
