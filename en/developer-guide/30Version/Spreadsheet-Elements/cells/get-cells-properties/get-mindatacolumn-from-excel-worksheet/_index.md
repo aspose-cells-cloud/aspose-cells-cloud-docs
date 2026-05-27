@@ -1,10 +1,10 @@
 ---
-title: "Get MinDataColumn – Aspose.Cells Cloud API Reference (v3.0)"
+title: "Get MinDataColumn – Retrieve First Data Column Index via Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /get-mindatacolumn-from-excel-worksheet/
 weight: 110
 keywords: "Aspose.Cells Cloud, MinDataColumn, Excel worksheet, REST API, API reference, v3.0"
-description: "Retrieve the leftmost column that contains data in an Excel worksheet via Aspose.Cells Cloud REST API (v3.0). Includes authentication details, request syntax, JSON response example, error codes, and SDK snippets."
+description: "Find the leftmost column containing data in an Excel worksheet using Aspose.Cells Cloud v3.0. Learn request format, required parameters, sample cURL, and SDK code snippets."
 ---
 
 ## Overview
@@ -31,7 +31,7 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 | `Sheet1`          | string  | Worksheet name (case‑sensitive).                 |
 | `mindatacolumn`   | literal | Fixed operation name that triggers the endpoint. |
 
-_There are no additional query parameters for this operation._
+*There are no additional query parameters for this operation.*
 
 ---
 
