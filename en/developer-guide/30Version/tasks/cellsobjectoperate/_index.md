@@ -1,19 +1,20 @@
 ---
-title: "Aspose.Cells Cloud API – Working with CellsObjectOperate Task (REST)"
+title: "Aspose.Cells Cloud API – CellsObjectOperate Task (REST) – Create/Update Charts, PivotTables, etc."
 second_title: "Document"
 type: docs
 url: /tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
-description: "Learn how to use the CellsObjectOperate task in Aspose.Cells Cloud API. Detailed parameter reference, request/response examples, and best‑practice tips for operating worksheets, charts, pivot tables, and more."
+description: "Learn how to use the CellsObjectOperate task in Aspose.Cells Cloud API (v3.0). Detailed parameter tables, cURL example, error codes, and common use cases for charts, worksheets, pivots, page breaks, and more."
 weight: 20
 keywords:
-  - "Aspose CellsObjectOperate"
-  - "CellsObjectOperate task"
-  - "Aspose.Cells Cloud API"
-  - "Excel REST API"
-  - "chart operation"
-  - "pivot table API"
-  - "page break API"
+  - "Aspose.Cells Cloud"
+  - "CellsObjectOperate"
+  - "REST API"
+  - "chart"
+  - "pivot table"
+  - "page break"
+  - "worksheet"
+  - "Excel API"
 ---
 
 **Overview**  
@@ -50,9 +51,9 @@ The **CellsObjectOperate** task lets you perform create, read, update, and delet
 | LowerRightRow         | integer | Row number of the chart’s lower‑right corner. |
 | LowerRightColumn      | integer | Column number of the chart’s lower‑right corner. |
 | Area                  | string  | Data range for the chart (e.g., `A1:B5`). |
-| IsVertical            | string  | `true` if the chart orientation is vertical; otherwise `false`. |
+| IsVertical            | boolean | `true` if the chart orientation is vertical; otherwise `false`. |
 | CategoryData          | string  | Range that provides category (X‑axis) labels. |
-| IsAutoGetSerialName   | string  | `true` to automatically generate series names; `false` to use custom names. |
+| IsAutoGetSerialName   | boolean | `true` to automatically generate series names; `false` to use custom names. |
 | Title                 | string  | Title text displayed on the chart. |
 
 **ListObjectOperateParameter**
@@ -85,7 +86,7 @@ The **CellsObjectOperate** task lets you perform create, read, update, and delet
 | DestCellName     | string      | Upper‑left cell of the destination range for the pivot table (e.g., `C5`). |
 | SourceData       | string      | Source range for the pivot table (e.g., `A1:D100`). |
 | TableName        | string      | Name assigned to the created pivot table. |
-| UseSameSource    | string      | `true` to reuse an existing source range; `false` to create a new one. |
+| UseSameSource    | boolean     | `true` to reuse an existing source range; `false` to create a new one. |
 | PivotTableIndex  | integer     | Index of the pivot table to update (required for modify/delete actions). |
 | PivotFieldRows   | integer[]   | Collection of field indexes that will appear in the rows area. |
 | PivotFieldColumns| integer[]   | Collection of field indexes that will appear in the columns area. |
@@ -121,9 +122,9 @@ The **CellsObjectOperate** task lets you perform create, read, update, and delet
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostImportData) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Prerequisites
-- **Authentication** – Include a valid `Authorization: Bearer <access_token>` header.  
-- **Storage** – The source workbook must be stored in Aspose Cloud Storage or supplied as base‑64‑encoded content in the request body.  
-- **API Version** – This documentation targets **v3.0** of the Aspose.Cells Cloud API.
+- **Authentication** – include a valid `Authorization: Bearer <access_token>` header.  
+- **Storage** – the source workbook must be stored in Aspose Cloud Storage or supplied as base‑64‑encoded content in the request body.  
+- **API Version** – this documentation targets **v3.0** of the Aspose.Cells Cloud API.
 
 ### Sample Request (cURL)
 
