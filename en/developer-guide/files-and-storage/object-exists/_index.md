@@ -1,12 +1,12 @@
 ---
-title: "Object Exists API – Check File/Folder Presence in Aspose.Cells Cloud"
+title: "Object Exists API – Verify File or Folder Presence | Aspose.Cells Cloud"
 second_title: "Document"
 ArticleTitle: "Object Exists API – Verify File or Folder Presence in Aspose.Cells Cloud"
 linktitle: "Object Exists"
 type: docs
 url: /object-exists/
-keywords: "object exists, Aspose.Cells Cloud, storage API, file existence, Excel API"
-description: "Use the Object Exists API to quickly verify whether a file or folder exists in Aspose.Cells Cloud storage. Supports optional storage name and version ID."
+keywords: "Object Exists API, Aspose.Cells Cloud, storage API, file existence, cloud storage, Excel API"
+description: "Use the Object Exists API to check if a file or folder exists in Aspose.Cells Cloud storage. Supports optional storage name and version ID for precise queries."
 weight: 100
 ---
 
@@ -50,13 +50,13 @@ A successful call returns a JSON payload with two properties:
 }
 ```
 
-- **Exists** – `true` if the file or folder exists; otherwise `false`.
+- **Exists** – `true` if the file or folder exists; otherwise `false`.  
 - **IsFolder** – `true` when the path points to a folder; `false` for a file.
 
 ### Notes / Limitations
 
-- Rate limits are applied per account; consult the **Rate Limits** page for exact values.
-- If `storageName` is omitted, the default storage configured for the account is used.
+- Rate limits are applied per account; consult the **Rate Limits** page for exact values.  
+- If `storageName` is omitted, the default storage configured for the account is used.  
 - The API currently supports version 5.0; older version paths (`/v4.0/`) are deprecated.
 
 ## OpenAPI Specification
