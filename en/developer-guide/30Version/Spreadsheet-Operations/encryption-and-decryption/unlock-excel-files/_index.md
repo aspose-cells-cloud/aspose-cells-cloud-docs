@@ -1,12 +1,12 @@
 ---
-title: "Unlock Excel Files"
+title: "Unlock Password-Protected Excel Files – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Unlock Excel Files"
 type: docs
 url: /unlock-excel-files/
 aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
-keywords: "Unlock Excel, Aspose.Cells Cloud, REST API, Excel unlocking, password-protected workbook, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
-description: "The Aspose.Cells Cloud REST API provides an endpoint to unlock password‑protected Excel files. SDKs are available for multiple programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "unlock Excel file, Aspose.Cells Cloud, REST API, Excel unlocking, password-protected workbook, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
+description: "Unlock password-protected Excel workbooks via Aspose.Cells Cloud v3.0. Learn the POST endpoint, required parameters, cURL example, and SDK usage."
 weight: 70
 ---
 
@@ -15,10 +15,10 @@ This REST API unlocks Excel files.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/unlock
+POST https://api.aspose.cloud/v3.0/cells/unlock
 ```
 
-### The request parameters are
+### Request Parameters
 
 | Parameter Name | Type   | Location             | Description                                |
 | -------------- | ------ | -------------------- | ------------------------------------------ |
@@ -34,7 +34,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
+curl -v "https://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
