@@ -1,18 +1,18 @@
 ---
-title: "Aspose.Cells Cloud Excel Rename Worksheet Web API – Change Sheet Names Programmatically"
+title: "Rename Worksheet in Excel using Aspose.Cells Cloud API – Change Sheet Names Programmatically"
 second_title: "Document"
-ArticleTitle: "How to Rename Worksheets in Excel – Change Sheet Names"
+ArticleTitle: "How to Rename Worksheets in Excel Using Aspose.Cells Cloud API – Change Sheet Names"
 linktitle: "Rename Worksheet in Spreadsheet"
 type: docs
 url: /rename-worksheet-in-spreadsheet/
-keywords: "rename worksheet, Aspose.Cells Cloud, Excel API, worksheet rename API, spreadsheet automation, cloud Excel management"
-description: "Easily rename Excel worksheets via Aspose.Cells Cloud API. Learn required parameters, see cURL examples, and get SDK code for C#, Java, Python, and more."
+keywords: "rename worksheet, Aspose.Cells Cloud, Excel API, spreadsheet automation, cloud Excel management"
+description: "Rename worksheet in Excel programmatically via Aspose.Cells Cloud API. See required parameters, cURL example, and SDK code for C#, Java, Python, and more."
 weight: 100
 ---
 
 Programmatically rename worksheets in Excel workbooks using Aspose.Cells Cloud API. Change sheet names, update tab labels dynamically, and automate spreadsheet organization through RESTful API calls. Perfect for document standardization and workflow automation.
 
-## Rename worksheet name in Spreadsheet API
+## Rename Worksheet in Spreadsheet API
 
 ### Web API
 
@@ -50,22 +50,22 @@ A successful request returns a JSON object with status information and a link to
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI or malformed parameters.
-- **401 Unauthorized** – Missing or invalid access token.
-- **404 Not Found** – The spreadsheet file is not accessible or the specified worksheet does not exist.
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI or malformed parameters.  
+- **401 Unauthorized** – Missing or invalid access token.  
+- **404 Not Found** – The spreadsheet file is not accessible or the specified worksheet does not exist.  
 - **500 Server Error** – The spreadsheet encountered an internal processing error.
 
 ## Where should we use the Rename Worksheet in Spreadsheet API?
 
-- **Report Generation and Brand Standardization** – When generating customer reports automatically, generic worksheet names (e.g., `Sheet1`) are renamed to customer‑specific names (e.g., `AcmeCorp_Q1_Summary`) to ensure a professional delivery.
-- **Data‑Processing Pipeline Standardization** – In ETL workflows, worksheets exported with irregular names are renamed to standardized names such as `Raw_Data` or `Cleaned_Data` to satisfy downstream analysis requirements.
+- **Report Generation and Brand Standardization** – When generating customer reports automatically, generic worksheet names (e.g., `Sheet1`) are renamed to customer‑specific names (e.g., `AcmeCorp_Q1_Summary`) to ensure a professional delivery.  
+- **Data‑Processing Pipeline Standardization** – In ETL workflows, worksheets exported with irregular names are renamed to standardized names such as `Raw_Data` or `Cleaned_Data` to satisfy downstream analysis requirements.  
 - **Multilingual Content Delivery** – Based on the user's language preference, worksheet names are localized (e.g., `数据` or `Data`) before the file is delivered, providing a tailored experience.
 
 ## Why should you use the Rename Worksheet in Spreadsheet API?
 
-- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development with comprehensive documentation. Compared with building a custom solution, this significantly reduces development effort.
-- **Reduced Labor Costs** – Reduces the need for positions dedicated to manual document consolidation.
-- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.
+- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development with comprehensive documentation. Compared with building a custom solution, this significantly reduces development effort.  
+- **Reduced Labor Costs** – Reduces the need for positions dedicated to manual document consolidation.  
+- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.  
 - **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility concerns.
 
 ## How to Use the Rename Worksheet in Spreadsheet API with SDKs
