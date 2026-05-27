@@ -1,22 +1,22 @@
 ---
-title: "Aspose.Cells Cloud – Change Word Case (Upper, Lower, Proper, Sentence)"
-ArticleTitle: "Excel Case Converter – Uppercase, Lowercase, Proper Case & Sentence Case"
+title: "Aspose.Cells Cloud API – Change Word Case (Uppercase, Lowercase, Proper Case, Sentence Case)"
+ArticleTitle: "Excel Case Converter API – Uppercase, Lowercase, Proper Case, Sentence Case"
 linktitle: "Word Case"
 type: docs
 url: /change-word-case/
-keywords: "change word case API, Aspose.Cells, Excel case conversion, uppercase, lowercase, proper case, sentence case, text formatting"
-description: "Easily convert text case in Excel files using Aspose.Cells Cloud API. Supports Uppercase, Lowercase, Proper Case, and Sentence Case. Get code samples in C#, Java, Python & more."
+keywords: "Aspose.Cells, word case API, Excel text conversion, Uppercase, Lowercase"
+description: "Convert text case in Excel files with Aspose.Cells Cloud. Supports Uppercase, Lowercase, Proper Case, and Sentence Case. Get code samples in C#, Java, Python, and more."
 weight: 100
 ---
 
 ## **Change Word Case**
 
-Use the Aspose.Cells Cloud Web API to instantly convert text case in your spreadsheet—switch between uppercase, lowercase, proper case (capitalize each word), or sentence case (capitalize the first letter of each sentence) across a selected range. Only string cells are affected; numbers, booleans, errors, and blanks are ignored. Formulas, formatting, and data validation remain untouched.
+Use the Aspose.Cells Cloud Web API to instantly convert text case in your spreadsheet—switch between uppercase, lowercase, proper case (capitalize each word), or sentence case (capitalize the first letter of each sentence) across a selected range. Only string cells are affected; numbers, booleans, errors, and blanks are ignored. Formulas, cell formatting, and data‑validation rules remain untouched.
 
-- **UpperCase** – every character capitalized.
-- **LowerCase** – every character lower‑cased.
-- **ProperCase** – first letter of each word upper‑cased, the remainder lower‑cased.
-- **SentenceCase** – first letter of each sentence upper‑cased, the remainder lower‑cased.
+- **UpperCase** – every character is capitalized.
+- **LowerCase** – every character is lower‑cased.
+- **ProperCase** – first letter of each word is upper‑cased, the remainder lower‑cased.
+- **SentenceCase** – first letter of each sentence is upper‑cased, the remainder lower‑cased.
 
 ![Before/After case conversion screenshot](images/result.png)
 
