@@ -1,11 +1,11 @@
 ---
-title: "Add Text to Excel: Efficiently Insert Data with Spreadsheet Web API"
+title: "Add Text to Excel with Aspose.Cells Cloud API – Insert, Append, or Prepend Cell Content"
 second_title: "Document"
 linktitle: "Add Text"
 type: docs
 url: /excel-add-text/
-keywords: "Excel, Aspose.Cells, Add Text, Spreadsheet API, REST API, Office Cloud, Text Insertion, Excel API"
-description: "Adds text to a specified location in an Excel spreadsheet via the Aspose.Cells Cloud API."
+keywords: "add text, Excel API, Aspose.Cells Cloud, spreadsheet text insertion"
+description: "Learn how to add, prepend, or append text in Excel worksheets using the Aspose.Cells Cloud REST API. Includes endpoint, request body, and response details."
 weight: 100
 ---
 
@@ -16,18 +16,18 @@ Adds text content to a specified location within a spreadsheet. It requires an o
 ### **Endpoint**
 
 ```
-POST http://api.aspose.cloud/v3.0/cells/addtext
+POST https://api.aspose.cloud/v3.0/cells/addtext
 ```
 
 ### **Function Description**
 
-This method safely appends new text to specified cells, supporting multiple insertion modes and format handling.
+This method appends new text to specified cells, supporting multiple insertion modes and format handling.
 
 - **Add text to the beginning of selected cells**  
-  Prepends text to all selected cells, ensuring consistency in your data entry. Ideal for adding common identifiers or labels such as product codes, categories, or prefixes.
+  Prepends text to all selected cells, ensuring consistency in data entry. Useful for adding common identifiers or labels such as product codes, categories, or prefixes.
 
 - **Insert characters before or after specific text**  
-  Places characters before or after the target text in the selected cells, allowing you to create structured and organized content easily.
+  Places characters before or after the target text in the selected cells, enabling structured and organized content.
 
 - **Append the same text to the end of every selected cell**  
   Adds identical text to the end of multiple cells in one operation, simplifying data entry and guaranteeing a uniform appearance.
@@ -45,9 +45,9 @@ This method safely appends new text to specified cells, supporting multiple inse
 
 ```json
 {
-  "Filename": "xxxxxx.pdf",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
+  "FileName": "Sample.xlsx",
+  "FileSize": 12345,
+  "FileContent": "base64_encoded_string"
 }
 ```
 
