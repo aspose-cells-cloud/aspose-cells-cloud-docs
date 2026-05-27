@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud – Swap Columns, Rows & Ranges (v4.0)"
+title: "Aspose.Cells Cloud API – Swap Columns, Rows and Ranges in Excel (v4.0)"
 second_title: "Document"
-ArticleTitle: "Swap/Exchange Data Between Columns, Rows, and Cells in Excel"
+ArticleTitle: "Swap or Exchange Data Between Columns, Rows, and Cells in Excel"
 linktitle: "Swap Range"
 type: docs
 url: /swap-range/
-keywords: "Aspose Cells, Excel API, swap range, column swap, row swap, cloud spreadsheet"
-description: "Swap columns, rows or ranges in Excel files with Aspose.Cells Cloud API. Preserve formatting, formulas, and cell references in a single request."
+keywords: "Aspose.Cells, Excel API, swap range, column swap, row swap, cloud spreadsheet"
+description: "Swap columns, rows, or ranges in Excel files using Aspose.Cells Cloud API, preserving formatting, formulas, and cell references in a single request."
 weight: 100
 ---
 
