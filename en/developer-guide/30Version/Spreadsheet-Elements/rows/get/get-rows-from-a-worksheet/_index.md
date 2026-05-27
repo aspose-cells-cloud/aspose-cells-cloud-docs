@@ -1,12 +1,12 @@
 ---
-title: "Get rows information from an Excel worksheet"
+title: "Get Rows from an Excel Worksheet – Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Rows"
 type: docs
 url: /rows/get/rows/
 aliases: [/get-row-from-a-worksheet/]
-keywords: "Aspose.Cells Cloud, Get Rows API, Excel worksheet rows, REST API, cURL example, SDK examples, .NET, Java, Python"
-description: "Learn how to retrieve rows information from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, cURL, and SDK code samples for C#, Java, Python, and more."
+keywords: "Aspose.Cells Cloud Get Rows, Excel rows API, Aspose Cells REST, retrieve worksheet rows"
+description: "Retrieve detailed row information (max row, row count, links) from an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes endpoint, parameters, authentication guide, cURL sample, and SDK code snippets."
 weight: 10
 ---
 
