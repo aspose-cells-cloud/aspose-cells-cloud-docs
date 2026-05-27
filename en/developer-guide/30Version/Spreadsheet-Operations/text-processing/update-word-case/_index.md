@@ -1,11 +1,11 @@
 ---
-title: "Aspose.Cells – Update Word Case API"
+title: "Update Word Case API – Aspose.Cells Cloud 3.0 | Convert Text Case in Excel, CSV, Google Sheets"
 second_title: "Document"
 linktitle: "Word Case"
 type: docs
 url: /post-update-word-case/
-keywords: "Aspose.Cells, Update Word Case API, text case conversion, Excel, CSV, Google Sheets, REST API"
-description: "Convert text case in Excel, CSV, or Google Sheets files with Aspose.Cells Cloud’s Update Word Case API. Supports upper‑/lower‑case, title case, and first‑letter capitalization."
+keywords: "Aspose.Cells, Update Word Case API, text case conversion, Excel API, CSV case change, Google Sheets API, REST, OAuth2"
+description: "Easily convert text case (upper, lower, title, capitalize) in Excel, CSV, or Google Sheets files using Aspose.Cells Cloud 3.0 Update Word Case API. Supports OAuth2, returns Base64 file, and includes SDK examples."
 weight: 100
 ---
 
