@@ -1,12 +1,12 @@
 ---
-title: "Assembling Data for the Creation of an Excel Report"
+title: "Assembling Data for Creating an Excel Report | Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Assembly Data"
 type: docs
 url: /assembly-data-for-the-creation-of-an-excel-report/
 aliases: [/assembly/]
 keywords: "Aspose.Cells, Excel report, data assembly, Cloud API, REST, SDK, cURL, PDF, ODS"
-description: "Learn how to use Aspose.Cells Cloud’s Assembly API to merge data into Excel (XLSX, PDF, ODS) reports. Includes endpoint, parameters, cURL sample, SDK code, auth guide, and error handling."
+description: "Learn to use Aspose.Cells Cloud Assembly API to merge JSON data into Excel, PDF or ODS reports. Includes endpoint, parameters, cURL/SDK examples, auth and error handling."
 weight: 40
 ---
 
@@ -23,19 +23,19 @@ The request parameters are:
 | Parameter Name | Type   | Location                  | Description                                                            |
 | -------------- | ------ | ------------------------- | ---------------------------------------------------------------------- |
 | file           | file   | formData (multipart body) | The spreadsheet file to upload.                                        |
-| DataSource     | string | query string              | Identifier of the data source that provides the data for the assembly. |
+| dataSource     | string | query string              | Identifier of the data source that provides the data for the assembly. |
 | format         | string | query string              | Desired output format (e.g., `xlsx`, `pdf`).                           |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostAssemble) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+Use the cURL command‑line tool to access Aspose.Cells web services. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/assembly?DataSource=ds&format=pdf" \
+curl -v "https://api.aspose.cloud/v3.0/cells/assembly?dataSource=ds&format=pdf" \
   -X POST \
   -H "Content-Type: multipart/form-data" \
   -H "Accept: application/json" \
