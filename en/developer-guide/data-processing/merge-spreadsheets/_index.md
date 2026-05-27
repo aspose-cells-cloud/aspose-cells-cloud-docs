@@ -1,12 +1,12 @@
 ---
-title: "Merge Multiple Excel Files into One Spreadsheet – Aspose.Cells Cloud API"
+title: "Merge Multiple Excel, CSV & ODS Files into One Workbook – Aspose.Cells Cloud API"
 second_title: "Document"
-ArticleTitle: "Combine Multiple Excel Files into One – Batch Merge Spreadsheets to 30+ Formats"
+ArticleTitle: "Combine Multiple Excel, CSV, and ODS Files into One Workbook – Batch Merge Spreadsheets to 30+ Formats"
 linktitle: "Merge Spreadsheets"
 type: docs
 url: /merge-spreadsheets/
-keywords: "Aspose.Cells merge spreadsheets, merge Excel files API, batch merge spreadsheets, convert Excel to PDF, cloud spreadsheet merge, spreadsheet conversion, merge CSV files, merge ODS files, Aspose API, Excel file merging"
-description: "Combine several local Excel, CSV, or ODS files into a single workbook and convert the result to 30+ formats (PDF, HTML, etc.) using Aspose.Cells Cloud. Includes endpoint, parameters, authentication guide, and SDK examples."
+keywords: "Aspose.Cells, merge spreadsheets, Excel API, CSV merge, ODS merge, cloud spreadsheet conversion"
+description: "Combine several Excel, CSV, or ODS files into a single workbook and convert the result to 30+ formats (PDF, HTML, etc.) using Aspose.Cells Cloud. Includes endpoint, parameters, authentication guide, and SDK examples."
 weight: 100
 ---
 
@@ -62,7 +62,7 @@ PUT https://api.aspose.cloud/v4.0/cells/merge/spreadsheet
 - **404 Not Found** – The specified spreadsheet file is not accessible.
 - **500 Server Error** – An internal error occurred while processing the spreadsheet.
 
-## Where should we use the Merge Spreadsheet API?
+## When should the Merge Spreadsheet API be used?
 
 ### **Education and Academic Applications**
 
