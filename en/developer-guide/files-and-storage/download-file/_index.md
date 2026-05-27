@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Download File API – Interface for Fast File Download in the Cloud"
+title: "Download File API – Aspose.Cells Cloud Interface for Fast File Download"
 second_title: "Document"
-ArticleTitle: "Cloud-based Excel File Management Solution – Interface for Fast File Download in the Cloud"
+ArticleTitle: "Download File API – Cloud-based Excel File Management with Aspose.Cells"
 linktitle: "Download File API"
 type: docs
 url: /download-file/
-keywords: "Aspose.Cells, Download File API, Excel cloud storage, REST API, file download, PDF, CSV, SDK"
-description: "Learn how to download Excel, PDF, CSV, and other files from Aspose.Cells Cloud storage using the secure Download File API (v4.0). Includes endpoint, parameters, authentication, and code samples."
+keywords: "Aspose.Cells, Download File API, Cloud Storage, Excel, REST API"
+description: "Learn how to download Excel, PDF, CSV, and other files from Aspose.Cells Cloud storage using the RESTful Download File API (v4.0). Includes endpoint, required parameters, authentication, sample curl, error codes, and SDK examples."
 weight: 100
 ---
 
@@ -28,7 +28,7 @@ The **DownloadFile** API enables you to retrieve files stored in Aspose.Cells Cl
 
 | Parameter Name | Type   | Location (Path / Query) | Description                                                    |
 | -------------- | ------ | ----------------------- | -------------------------------------------------------------- |
-| path           | String | Path                    | The virtual path to the file you want to download.             |
+| path           | String | Path                    | The virtual path to the file to be downloaded.                |
 | storageName    | String | Query                   | The name of the storage from which the file will be retrieved. |
 | versionId      | String | Query                   | The version identifier of the file to download, if applicable. |
 
