@@ -1,21 +1,21 @@
 ---
-title: "Remove All Document Properties"
+title: "Remove All Document Properties – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Clear"
 type: docs
 url: /document-properties/clear/
 aliases: [/remove-all-document-properties/]
-keywords: "Aspose.Cells, delete document properties, clear Excel properties, REST API, cloud SDK, spreadsheet, API reference"
-description: "Step‑by‑step guide to removing all custom and built‑in properties from an Excel workbook using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells, delete document properties, clear Excel metadata, REST API, cloud SDK, spreadsheet, API reference"
+description: "Step‑by‑step guide to deleting all custom and built‑in document properties from an Excel workbook using the Aspose.Cells Cloud REST API."
 weight: 58
 ---
 
-This REST API deletes all custom document properties and clears built‑in ones.
+This REST API deletes all custom document properties and clears built‑in properties.
 
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/documentproperties
 ```
 
 ### Request Parameters
@@ -28,7 +28,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/DeleteDocumentProperties) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
