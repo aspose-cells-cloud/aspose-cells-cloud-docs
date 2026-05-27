@@ -1,34 +1,34 @@
 ---
-title: "Aspose.Cells Cloud Supported File Formats"
+title: "Supported File Formats – Aspose.Cells Cloud API (Excel, CSV, PDF, JSON, Markdown, ODS, etc.)"
 second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud Supported File Formats: Excel, PDF, CSV, JSON, Markdown, and More"
+ArticleTitle: "Aspose.Cells Cloud Supported File Formats: Excel, CSV, PDF, JSON, Markdown, ODS, and More"
 linktitle: "Supported File Formats"
 type: docs
 url: /supported-file-formats/
 description: "Explore the full list of file formats supported by Aspose.Cells Cloud – import, export, and convert Excel, CSV, PDF, JSON, Markdown, ODS, and more."
 weight: 40
-keywords: "Aspose.Cells Cloud, supported file formats, Excel, PDF, CSV, JSON, Markdown, ODS, file conversion"
+keywords: "Aspose.Cells Cloud supported formats, Excel to PDF conversion, CSV import API, JSON spreadsheet export, file format conversion, Aspose.Cells Cloud API"
 ---
 
 |**Format**|**Description**|**Load**|**Save**|
 | :- | :- | :- | :- |
-|[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Excel 95/5.0 - 2003 Workbook.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Excel 95/5.0 – 2003 Workbook.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|The Office Open XML SpreadsheetML File Format.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLSB](https://docs.fileformat.com/spreadsheet/xlsb/)|Excel Binary Workbook.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLSM](https://docs.fileformat.com/spreadsheet/xlsm/)|Excel Macro-Enabled Workbook.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLT](https://docs.fileformat.com/spreadsheet/xlt/)|Excel 97 - Excel 2003 Template.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XLT](https://docs.fileformat.com/spreadsheet/xlt/)|Excel 97 – Excel 2003 Template.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLTX](https://docs.fileformat.com/spreadsheet/xltx/)|Excel Template.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[XLTM](https://docs.fileformat.com/spreadsheet/xltm/)|Excel Macro-Enabled Template.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[XLAM](https://docs.fileformat.com/spreadsheet/xlam/)|An Excel Macro-Enabled Add-In file that's used to add new functions to Excel.|—|{{< emoticons/tick >}}|
-|[CSV](https://docs.fileformat.com/spreadsheet/csv/)|CSV (Comma Separated Value) file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[TSV](https://docs.fileformat.com/spreadsheet/tsv/)|TSV (Tab-separated values) file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|TabDelimited|Tab-delimited text file, same with TSV file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XLAM](https://docs.fileformat.com/spreadsheet/xlam/)|An Excel Macro-Enabled Add‑In file that's used to add new functions to Excel.|—|{{< emoticons/tick >}}|
+|[CSV](https://docs.fileformat.com/spreadsheet/csv/)|CSV (Comma‑Separated Values) file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[TSV](https://docs.fileformat.com/spreadsheet/tsv/)|TSV (Tab‑separated values) file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|TabDelimited|Tab‑delimited text file, same as TSV file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[TXT](https://docs.fileformat.com/word-processing/txt/)|Delimited plain text file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[HTML](https://docs.fileformat.com/web/html/)|HTML format.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[MHTML](https://docs.fileformat.com/web/mhtml/)|MHTML file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[ODS](https://docs.fileformat.com/spreadsheet/ods/)|ODS (OpenDocument Spreadsheet).|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |SpreadsheetML|Excel 2003 XML file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[Numbers](https://docs.fileformat.com/spreadsheet/numbers/)|The document is created by Apple's "Numbers" application which forms part of Apple's iWork office suite, a set of applications which run on the Mac OS X and iOS operating systems.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[Numbers](https://docs.fileformat.com/spreadsheet/numbers/)|The document is created by Apple's "Numbers" application which forms part of Apple's iWork office suite, a set of applications which run on the macOS and iOS operating systems.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[JSON](https://docs.fileformat.com/web/json/)|JavaScript Object Notation.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[DIF](https://docs.fileformat.com/spreadsheet/dif/)|Data Interchange Format.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[DBF](https://docs.fileformat.com/database/dbf/)|The file with .dbf extension is a database file used by a database management system application called dBASE.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
@@ -38,16 +38,16 @@ keywords: "Aspose.Cells Cloud, supported file formats, Excel, PDF, CSV, JSON, Ma
 |[TIFF](https://docs.fileformat.com/image/tiff/)|Tagged Image File Format.|—|{{< emoticons/tick >}}|
 |[PNG](https://docs.fileformat.com/image/png/)|Portable Network Graphics Format.|—|{{< emoticons/tick >}}|
 |[BMP](https://docs.fileformat.com/image/bmp/)|Bitmap Image Format.|—|{{< emoticons/tick >}}|
-|[EMF](https://docs.fileformat.com/image/emf/)|Enhanced metafile Format.|—|{{< emoticons/tick >}}|
+|[EMF](https://docs.fileformat.com/image/emf/)|Enhanced Metafile Format.|—|{{< emoticons/tick >}}|
 |[JPEG](https://docs.fileformat.com/image/jpeg/)|JPEG is a type of image format that is saved using the method of lossy compression.|—|{{< emoticons/tick >}}|
 |[GIF](https://docs.fileformat.com/image/gif/)|Graphical Interchange Format.|—|{{< emoticons/tick >}}|
-|[MARKDOWN](https://docs.fileformat.com/word-processing/md/)|Provides a markdown document.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[SXC](https://docs.fileformat.com/spreadsheet/sxc/)|An XML based format used by OpenOffice and StarOffice.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[MARKDOWN](https://docs.fileformat.com/word-processing/md/)|Provides a Markdown document.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[SXC](https://docs.fileformat.com/spreadsheet/sxc/)|An XML‑based format used by OpenOffice and StarOffice.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[FODS](https://docs.fileformat.com/spreadsheet/fods/)|This is an Open Document format stored as flat XML.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
-|[DOCX](https://docs.fileformat.com/word-processing/docx/)|A well-known format for Microsoft Word documents that is a combination of XML and binary files.|—|{{< emoticons/tick >}}|
-|[PPTX](https://docs.fileformat.com/presentation/pptx/)|The PPTX format is based on the Microsoft PowerPoint open XML presentation file format.|—|{{< emoticons/tick >}}|
+|[DOCX](https://docs.fileformat.com/word-processing/docx/)|A well‑known format for Microsoft Word documents that is a combination of XML and binary files.|—|{{< emoticons/tick >}}|
+|[PPTX](https://docs.fileformat.com/presentation/pptx/)|The PPTX format is based on the Microsoft PowerPoint Open XML presentation file format.|—|{{< emoticons/tick >}}|
 |[SqlScript](https://docs.fileformat.com/database/sql/)|Structured Query Language.|—|{{< emoticons/tick >}}|
-|[XHtml](https://docs.fileformat.com/web/xhtml/)|The XHTML is a text based file format with markup in the XML, using a reformulation of HTML 4.0.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
+|[XHtml](https://docs.fileformat.com/web/xhtml/)|XHTML is a text‑based file format with markup in XML, using a reformulation of HTML 4.0.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Epub](https://docs.fileformat.com/ebook/epub/)|Files with .epub extension are an e‑book file format that provide a standard digital publication format for publishers and consumers.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Xml](https://docs.fileformat.com/web/xml/)|XML stands for Extensible Markup Language that is similar to HTML but different in using tags for defining objects.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
 |[Ots](https://docs.fileformat.com/spreadsheet/ots/)|Open Document Template Sheet (OTS) file.|{{< emoticons/tick >}}|{{< emoticons/tick >}}|
