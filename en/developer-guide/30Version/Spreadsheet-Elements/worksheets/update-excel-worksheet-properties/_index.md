@@ -16,7 +16,7 @@ keywords:
     "cloud",
     "v3.0",
   ]
-description: "Learn how to update base properties (e.g., display zeros, ruler visibility) of an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL request, SDK samples, parameters, and error handling."
+description: "Learn how to update worksheet base properties such as display zeros, ruler visibility, gridlines, and more with Aspose.Cells Cloud REST API v3.0. Includes cURL request, SDK samples, full parameter list, and error handling."
 ---
 
 This REST API updates worksheet base properties.
@@ -24,7 +24,7 @@ This REST API updates worksheet base properties.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
 ### **Request parameters**
