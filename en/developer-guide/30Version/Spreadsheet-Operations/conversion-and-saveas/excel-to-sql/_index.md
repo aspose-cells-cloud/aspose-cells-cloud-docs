@@ -1,15 +1,15 @@
 ---
-title: "Excel to SQL"
+title: "Convert Excel to SQL – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Excel to SQL"
 type: docs
 url: /convert-excel-file-to-sql-file/
-keywords: "Excel to SQL, Aspose.Cells Cloud, REST API, spreadsheet conversion, SQL file, data migration, API integration"
-description: "Use Aspose.Cells Cloud REST API to convert Excel spreadsheets into SQL files. Supports multiple SDKs and programming languages for seamless integration into your applications."
+keywords: "Aspose Cells, Excel to SQL, REST API, cloud conversion, spreadsheet conversion"
+description: "Learn how to convert Excel workbooks to SQL scripts using Aspose.Cells Cloud REST API (v3.0). Includes request format, authentication, sample cURL, and SDK code in C#, Java, Python, and more."
 weight: 100
 ---
 
-This REST API converts a spreadsheet file to an SQL format file.
+This REST API converts a spreadsheet file into an SQL-format file.
 
 ## REST API
 
@@ -37,7 +37,7 @@ This REST API converts a spreadsheet file to an SQL format file.
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example demonstrates how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
