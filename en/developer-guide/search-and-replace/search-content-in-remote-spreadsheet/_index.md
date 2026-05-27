@@ -1,12 +1,12 @@
 ---
 title: "Search Text in Remote Excel Spreadsheets – Aspose.Cells Cloud API"
 second_title: "Document"
-ArticleTitle: "Search Text in Remote Excel Spreadsheets – Find Specific Data"
+ArticleTitle: "Search Text in Remote Excel Spreadsheets – Find Specific Data Using Aspose.Cells Cloud API"
 linktitle: "Search Remote Spreadsheet Content"
 type: docs
 url: /search-content-in-remote-spreadsheet/
-keywords: "Aspose.Cells, Excel search API, cloud spreadsheet, text search, REST"
-description: "Search for text, numbers, or formulas in Excel files stored in cloud storage using Aspose.Cells Cloud. Supports case‑insensitive queries, folder selection, and password‑protected workbooks."
+keywords: "Aspose.Cells, Excel search API, remote spreadsheet text search, cloud spreadsheet API, REST, Excel file search"
+description: "Use Aspose.Cells Cloud API to search for text, numbers, or formulas in remote Excel spreadsheets stored in cloud storage. Supports case‑insensitive queries, folder selection, and password‑protected workbooks, returning matching cell locations."
 weight: 100
 ---
 
@@ -26,7 +26,7 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content
 | :------------- | :------ | :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | name           | String  | Path                       | **Required**. The filename of the Excel workbook (including extension) where the text search will be performed, e.g., `sales_data.xlsx`.                         |
 | searchText     | String  | Query                      | **Required**. The exact string, number, or partial content to locate across the entire workbook or worksheet(s).                                                 |
-| ignoringCase   | Boolean | Query                      | **Optional**. Determines case‑sensitivity. Set to `true` for case‑insensitive matching (e.g., “Report” matches “REPORT”); default is `false`.                    |
+| ignoringCase   | Boolean | Query                      | **Optional**. Determines case sensitivity. Set to `true` for case‑insensitive matching (e.g., “Report” matches “REPORT”); default is `false`.                    |
 | folder         | String  | Query                      | **Optional**. The directory path within your cloud storage that contains the target workbook. If omitted, the root folder is assumed.                            |
 | storageName    | String  | Query                      | **Optional**. The name identifier for a custom‑configured cloud storage service. If not specified, the API uses the default storage associated with the account. |
 | region         | String  | Query                      | **Optional**. The locale setting (e.g., `es-ES`) applied during the search, which may affect text normalization or collation rules.                              |
