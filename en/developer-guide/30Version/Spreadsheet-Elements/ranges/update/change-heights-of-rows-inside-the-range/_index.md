@@ -1,12 +1,12 @@
 ---
-title: "Set Row Height for a Range in Excel – Aspose.Cells Cloud API (v3.0)"
+title: "Set Row Height for a Range in Excel - Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Row height"
 type: docs
 url: /ranges/update/row-height/
 aliases: [/change-heights-of-rows-inside-the-range/]
-keywords: "row height, range, Excel, Aspose.Cells Cloud, REST API, SDK, cURL"
-description: "Learn how to change the height of rows within a specific range of an Excel worksheet using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, and SDK code snippets for C#, Java, Python, and more."
+keywords: "Aspose.Cells, row height, Excel range, REST API, cloud SDK, cURL, v3.0"
+description: "Learn how to set the row height of a specific range in an Excel worksheet using Aspose.Cells Cloud API v3.0. Includes endpoint, parameters, cURL example, and SDK snippets."
 weight: 76
 ---
 
