@@ -1,16 +1,16 @@
 ---
-title: "Working with Excel Cells"
+title: "Working with Excel Cells – Aspose.Cells Cloud API Guide"
 second_title: "Document"
 linktitle: "Cells"
 type: docs
 url: /working-with-cells/
 aliases: [/working-with-worksheets/]
-keywords: "Excel, Aspose.Cells, cell operations, spreadsheet API, REST API, cell styling, cell merging, formula calculation"
-description: "Explore the Aspose.Cells Cloud API for Excel cell operations, including setting values, applying styles, merging/unmerging cells, and calculating formulas."
+keywords: "Aspose.Cells, Excel, cell API, spreadsheet, cloud"
+description: "Learn how to read, write, style, merge, and calculate Excel cells using Aspose.Cells Cloud API. Includes code samples, request formats, and best practices."
 weight: 100
 ---
 
-Cells is the basic operational object of Aspose.Cells for Excel files.
+A cell is the basic operational object of Aspose.Cells for Excel files.
 
 ## Feature Map
 
