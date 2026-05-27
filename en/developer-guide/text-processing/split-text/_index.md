@@ -1,12 +1,12 @@
 ---
-title: "Split Text API – Segment Excel Cells into Columns | Aspose.Cells Cloud"
+title: "Split Text API – Segment Excel Cells into Columns & Rows | Aspose.Cells Cloud"
 second_title: "Document"
-ArticleTitle: "Excel Text Splitter – Segment Cell Content into Multiple Columns | Aspose.Cells Cloud"
+ArticleTitle: "Excel Text Splitter – Segment Cell Content into Multiple Columns & Rows | Aspose.Cells Cloud"
 linktitle: "Split Text"
 type: docs
 url: /split-text/
-keywords: "Aspose Cells split text API, Excel text segmentation, split cell content, delimiter split, cloud API"
-description: "Easily split Excel cell text into separate columns or rows using Aspose.Cells Cloud. Supports custom delimiters, masks, line‑breaks, and optional delimiter retention. Get started with curl or SDKs in minutes."
+keywords: "Split Text API, Aspose.Cells Cloud, Excel cell split, delimiter, text segmentation, cloud API"
+description: "Split Excel cell text into columns or rows using Aspose.Cells Cloud. Supports custom delimiters, masks, line breaks, and optional delimiter retention. Get started with cURL or SDKs."
 weight: 100
 ---
 
@@ -99,7 +99,7 @@ When importing data from external systems, fields are often concatenated into si
 - **Line Breaks** – instantly parse multiline cells into separate rows (addresses, comments, descriptions).
 - **Custom Delimiters** – define any character combination as a delimiter for proprietary data formats.
 - **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom solutions, this significantly reduces development workload.
-- **Cost‑Effective** – you can remove duplicate characters without first uploading the workbook, which saves storage space and reduces costs.
+- **Cost‑Effective** – you can remove duplicate characters without first uploading the workbook, saving storage space and reducing costs.
 
 ## OpenAPI Specification
 
