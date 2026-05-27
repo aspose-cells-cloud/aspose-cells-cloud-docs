@@ -1,12 +1,12 @@
 ---
-title: "Calculate a formula on an Excel worksheet"
+title: "Calculate Formula in Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Calculate"
 type: docs
 url: /worksheets/calculate-formula/
 aliases: [/calculate-formula-in-a-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel, formula calculation, REST API, SDKs, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
-description: "Calculate formulas in an Excel worksheet using Aspose.Cells Cloud REST API. Supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift) with ready‑to‑use examples."
+keywords: "Aspose.Cells Cloud, Excel formula calculation, REST API, calculate formula, spreadsheet API"
+description: "Retrieve the calculated result of any Excel formula using Aspose.Cells Cloud REST API. Supports C#, Java, Python, Node.js, and more."
 weight: 20
 ---
 
@@ -30,7 +30,7 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResu
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetCalculateFormula) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to call Aspose.Cells Cloud web services easily. The example below shows how to request a formula result with cURL.
+You can use the **cURL** command-line tool to call Aspose.Cells Cloud web services easily. The example below shows how to request a formula result with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
