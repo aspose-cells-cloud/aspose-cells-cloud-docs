@@ -1,11 +1,11 @@
 ---
-title: "Update Chart Title in Excel Worksheet"
+title: "Update Chart Title in Excel Worksheet – Aspose.Cells Cloud REST API"
 type: docs
 url: /charts/title/update/
 aliases: [/update-chart-title-in-excel-worksheet/]
 weight: 160
-keywords: Excel, Aspose.Cells, REST API, Chart Title, Update Chart, Cloud SDK
-description: Learn how to update a chart title in an Excel worksheet using Aspose.Cells Cloud REST API, cURL, and various SDKs.
+keywords: Aspose.Cells, update chart title, Excel API, REST, chart title API, cloud SDK
+description: Learn how to update a chart title in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes cURL example, request parameters, response codes, and SDK snippets for C#, Java, Python, and more.
 ---
 
 This REST API updates the chart title.
@@ -13,7 +13,7 @@ This REST API updates the chart title.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
 
 ### Request parameters
@@ -29,14 +29,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API using cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v POST "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
+curl -v POST "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
 -d '{"Text":"Stock exchange"}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
