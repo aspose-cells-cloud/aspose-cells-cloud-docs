@@ -1,12 +1,12 @@
 ---
-title: "Autofit a row on an Excel worksheet"
+title: "Aspose.Cells Cloud API – Autofit Row in Excel Worksheet (REST, cURL, SDK Examples)"
 second_title: "Document"
 linktitle: "Row"
 type: docs
 url: /worksheets/autofit/row/
 aliases: [/autofit-single-row-of-worksheet/]
-description: "Learn how to use Aspose.Cells Cloud REST API to autofit a row in an Excel worksheet. Includes endpoint, parameters, authentication, error handling, cURL request, and SDK examples."
-keywords: "autofit row, Aspose.Cells Cloud, Excel API, REST, worksheet, SDK"
+description: "Learn how to autofit a row in an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication steps, error handling, cURL sample, and SDK code examples."
+keywords: "Aspose.Cells Cloud, autofit row, Excel worksheet, REST API, cURL, SDK, Excel API"
 weight: 30
 ---
 
@@ -42,7 +42,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitro
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRow) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The example below demonstrates how to call the API with cURL.
+Use the cURL command‑line tool to access Aspose.Cells web services easily. The example below shows how to call the API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
