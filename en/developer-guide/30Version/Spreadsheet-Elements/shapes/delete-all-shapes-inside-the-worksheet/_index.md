@@ -1,12 +1,12 @@
 ---
-title: "Delete all shapes on an Excel worksheet"
+title: "Delete All Shapes – Aspose.Cells Cloud REST API (v3.0)"
 second_title: "Document"
 linktitle: "Clear"
 type: docs
 url: /shapes/clear/
 aliases: [/delete-all-shapes-inside-the-worksheet/]
-keywords: "Aspose.Cells Cloud, Delete all shapes, Excel worksheet, REST API, SDK, cURL, .NET, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift"
-description: "Delete all shapes from an Excel worksheet using the Aspose.Cells Cloud REST API. The operation is available via cURL and a wide range of SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift)."
+keywords: "Aspose.Cells, Cloud API, delete shapes, Excel worksheet, REST, SDK, cURL"
+description: "Remove every shape from a worksheet in an Excel file using Aspose.Cells Cloud REST API. Includes cURL example, required parameters, and SDK support for .NET, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, and Swift."
 weight: 40
 ---
 
@@ -24,7 +24,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 | -------------- | ------ | -------- | -------------------------------------------- |
 | name           | string | path     | The name of the Excel document.              |
 | sheetName      | string | path     | The name of the worksheet.                   |
-| folder         | string | query    | The folder that contains the document.       |
+| folder         | string | query    | Folder containing the document.              |
 | storageName    | string | query    | The storage name where the document resides. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShapes) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
