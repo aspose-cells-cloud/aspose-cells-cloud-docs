@@ -1,11 +1,11 @@
 ---
-title: "Aspose.Cells Cloud Web API - Post Access Token"
+title: "Aspose.Cells Cloud API - POST Access Token (OAuth2)"
 second_title: "Document"
-ArticleTitle: "Get Access Token with Client ID and Secret"
+ArticleTitle: "Retrieve Access Token with Client ID and Secret"
 linktitle: "Post Access Token"
 type: docs
 url: /post-access-token/
-keywords: "Aspose.Cells Cloud, Access Token, OAuth2, API Authentication, REST API, Excel, Office Cloud"
+keywords: "Aspose.Cells Cloud, Access Token, OAuth2, API Authentication, REST API, Excel, Office Cloud, POST token"
 description: "Obtain an OAuth2 access token for Aspose.Cells Cloud by calling the POST /cells/connect/token endpoint with your client ID and secret."
 weight: 100
 ---
@@ -41,7 +41,7 @@ POST http://api.aspose.cloud/v4.0/cells/connect/token
 ]
 ```
 
-## How to Use the Get public key API with SDKs
+## How to Use the Access Token API with SDKs
 
 ### OpenAPI Specification
 
