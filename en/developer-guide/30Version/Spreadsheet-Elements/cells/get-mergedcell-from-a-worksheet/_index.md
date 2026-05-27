@@ -1,5 +1,5 @@
 ---
-title: "Get Merged Cells from an Excel Worksheet – Aspose.Cells Cloud API"
+title: "Get Merged Cells from an Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /get-mergedcell-from-a-worksheet/
 weight: 60
@@ -9,7 +9,7 @@ description: "Learn how to retrieve merged‑cell ranges from an Excel worksheet
 
 This REST API returns information about **merged cells** in an Excel worksheet.
 
-> **Note** – The API object is called **MergedCell** (singular). In the prose we refer to the *concept* of merged cells (plural).
+> **Note** – The API object is called `MergedCell` (singular). In this document we refer to the *concept* of merged cells (plural).
 
 ## REST API
 
@@ -42,7 +42,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/mergedCells/0" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/mergedCells" \
   -X GET \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -55,16 +55,18 @@ curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet
 
 ```json
 {
-  "MergedCell": {
-    "EndColumn": 7,
-    "EndRow": 1,
-    "StartColumn": 0,
-    "StartRow": 1,
-    "link": {
-      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/cells/mergedcells/0",
-      "Rel": "self"
+  "MergedCells": [
+    {
+      "EndColumn": 7,
+      "EndRow": 1,
+      "StartColumn": 0,
+      "StartRow": 1,
+      "link": {
+        "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/mergedCells/0",
+        "Rel": "self"
+      }
     }
-  },
+  ],
   "Code": "200",
   "Status": "OK"
 }
@@ -76,7 +78,7 @@ curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet
 
 ### Response model  
 
-The JSON payload contains a single **MergedCell** object with the following properties:
+The JSON payload contains a collection of **MergedCell** objects with the following properties:
 
 | Property      | Type | Description |
 |---------------|------|-------------|
