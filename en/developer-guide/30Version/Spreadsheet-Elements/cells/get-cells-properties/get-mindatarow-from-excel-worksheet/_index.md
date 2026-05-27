@@ -1,17 +1,17 @@
 ---
-title: "Get MinDataRow from Excel Worksheet"
+title: "Aspose.Cells Cloud API v3.0 – Get MinDataRow (First Data Row Index) from Excel Worksheet"
 type: docs
 url: /get-mindatarow-from-excel-worksheet/
 weight: 90
-keywords: "Aspose.Cells Cloud API, MinDataRow, Excel, REST, v3.0, worksheet, cellOrMethodName"
-description: "Retrieve the minimum data row index of a worksheet using Aspose.Cells Cloud API v3.0. Includes authentication steps, request pattern, parameters table, sample cURL, response schema, error codes, and SDK examples."
+keywords: "Aspose.Cells Cloud, Get MinDataRow, Excel worksheet, API v3.0, REST, cellOrMethodName, worksheet"
+description: "Learn how to retrieve the first data‑containing row index (MinDataRow) of an Excel worksheet using Aspose.Cells Cloud API v3.0. Includes authentication guide, cURL request, parameters, JSON response, error handling, and SDK code samples for multiple languages."
 ---
 
-The **Get MinDataRow** endpoint of **Aspose.Cells Cloud API v3.0** returns the index of the first row that contains data in a specified worksheet. The operation requires a valid access token (Bearer authentication) and the query parameter `cellOrMethodName` set to `mindatarow`.
+The **Get MinDataRow** endpoint of **Aspose.Cells Cloud API v3.0** returns the index of the first row that contains data in a specified worksheet. The operation requires a valid access token (Bearer authentication) and the query parameter `cellOrMethodName` set to `mindatarow`.
 
 ## **cURL Example**
 
-The request uses the HTTP GET method. Replace the placeholders `{fileName}` and `{sheetName}` with the actual workbook and worksheet names.
+The request uses the HTTP GET method. Replace the placeholders `{fileName}` and `{sheetName}` with the actual workbook and worksheet names.
 
 ```bash
 curl -X GET "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/mindatarow?cellOrMethodName=mindatarow" \
@@ -30,7 +30,7 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetNam
 
 ### **Response**
 
-A successful call returns HTTP 200 with a JSON payload that contains the minimum data‑row index (0‑based).
+A successful call returns HTTP 200 with a JSON payload that contains the minimum data‑row index (0‑based).
 
 ```json
 {
