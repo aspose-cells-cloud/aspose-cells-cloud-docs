@@ -1,5 +1,5 @@
 ---
-title: "Modify Password Protection of an Excel Workbook"
+title: "Modify Write‑Protection Password of an Excel Workbook – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Modify an Excel file password"
 type: docs
@@ -7,8 +7,8 @@ url: /workbook/password/modify/
 aliases:
   - /set-modify-password-of-excel-workbooks/
   - /workbook/modify-password/
-keywords: "modify Excel password, Aspose.Cells Cloud, write protection, REST API, Excel workbook"
-description: "Change the write‑protection password of an Excel workbook via Aspose.Cells Cloud REST API (v3.0). Includes cURL and SDK examples."
+keywords: "Aspose Cells, Excel password modify, write protection API, REST, cURL, SDK examples"
+description: "Learn how to change the write‑protection password of an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, response codes, and SDK snippets for multiple languages."
 weight: 100
 ---
 
@@ -29,9 +29,9 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 | **folder**      | string | query       | Optional folder where the workbook is stored.    |
 | **storageName** | string | query       | Optional name of the storage service.            |
 
-### **Authentication**
+### Authentication
 
-– The API requires an OAuth 2.0 / JWT token. Include the token in the request header:
+The API requires an OAuth 2.0 or JWT token. Include the token in the request header:
 
 ```http
 Authorization: Bearer <jwt token>
@@ -39,7 +39,7 @@ Authorization: Bearer <jwt token>
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutDocumentProtectFromChanges) defines the publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The cURL command below shows how to call the Cloud API.
+You can use the **cURL** command-line tool to access Aspose.Cells web services easily. The cURL command below shows how to call the Cloud API.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -69,7 +69,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtectio
 
 {{< /tabs >}}
 
-### **Response codes**
+### Response codes
 
 | HTTP Code | Meaning               | Description                        |
 | --------- | --------------------- | ---------------------------------- |
