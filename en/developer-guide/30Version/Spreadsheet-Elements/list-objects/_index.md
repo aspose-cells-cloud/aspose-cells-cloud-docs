@@ -1,5 +1,5 @@
 ---
-title: "Working with Excel ListObject"
+title: "Working with Excel ListObjects (Tables) – Add, Update, Sort & Convert – Aspose.Cells Cloud 3.0"
 second_title: "Document"
 linktitle: "ListObjects"
 type: docs
@@ -7,12 +7,12 @@ url: /list-objects/
 aliases:
   - /working-with-list-objects/
   - /working-with-list-object-or-table/
-keywords: "Aspose.Cells, Excel ListObject, Excel table API, add table, update table, delete table, convert table to range, sort Excel table"
-description: "Learn how to add, update, delete, retrieve, sort, and convert Excel ListObjects (tables) using Aspose.Cells Cloud REST API. Includes code samples for C#, Java, Python, and more."
+keywords: "Excel ListObject, Aspose.Cells Cloud, list object API, add table, update table, delete table, convert table to range, sort Excel table"
+description: "Learn how to create, modify, sort, delete, and convert Excel ListObjects (tables) using Aspose.Cells Cloud 3.0 REST API. Includes code samples in C#, Java, Python and best‑practice tips."
 weight: 100
 ---
 
-Excel ListObjects (tables) provide a structured way to organize data sets. They include features such as automatic data arrangement, header rows, built‑in filters, and optional total rows. Master these capabilities to analyze your data quickly and efficiently.
+Excel ListObjects (tables) provide a structured way to organize data sets, offering features such as automatic data arrangement, header rows, built‑in filters, and optional total rows. Master these capabilities to analyze your data quickly and efficiently.
 
 **ListObject definition:** A **ListObject** is Excel’s native table object that groups rows and columns, enables sorting, filtering, styling, and can be accessed via the Aspose.Cells Cloud API.
 
