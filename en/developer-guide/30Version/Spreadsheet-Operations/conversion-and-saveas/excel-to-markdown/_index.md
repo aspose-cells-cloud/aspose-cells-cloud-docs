@@ -1,11 +1,11 @@
 ---
-title: "Convert Excel to Markdown"
+title: "Convert Excel to Markdown with Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Excel to Markdown"
 type: docs
 url: /convert-excel-file-to-markdown-file/
-keywords: "Excel, Markdown, conversion, Aspose.Cells Cloud, REST API, excel to markdown conversion, aspose cells markdown api, excel markdown export"
-description: "Learn how to convert Excel worksheets to Markdown using Aspose.Cells Cloud REST API. Includes curl example, SDK snippets, required parameters and authentication."
+keywords: "Aspose Cells, Excel to Markdown, convert Excel to Markdown API, Aspose.Cells Cloud, REST conversion, Markdown export, cURL Excel API"
+description: "Learn how to convert Excel worksheets to Markdown files using the Aspose.Cells Cloud REST API. Includes authentication steps, cURL request, sample response, and SDK snippets for multiple languages."
 weight: 100
 ---
 
@@ -61,7 +61,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/markdown" \
      -H "accept: multipart/form-data" \
      -H "Content-Type: multipart/form-data" \
      -H "Authorization: Bearer <access_token>" \
-     -F "File=@your_excel_file.xlsx"
+     -F "datafile=@your_excel_file.xlsx"
 ```
 
 {{< /tab >}}
@@ -114,7 +114,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PostConvertWorkbookToMarkdown.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PostConvertWorkbookToMarkdown.ts" >}}
 
 {{< /tab >}}
 
