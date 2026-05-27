@@ -1,12 +1,12 @@
 ---
-title: "Update a shape on an Excel worksheet"
+title: "Update a Shape in Excel Worksheet – Aspose.Cells Cloud API Reference"
 second_title: "Document"
 linktitle: "Update"
 type: docs
 url: /shapes/update/
 aliases: [/update-a-shape-inside-the-worksheet/]
-keywords: "update shape Excel API, Aspose.Cells Cloud, Excel shape update, REST API, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
-description: "Learn how to update a shape in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes HTTPS endpoint, authentication details, DTO schema, step‑by‑step usage, cURL example, and SDK code samples for multiple languages."
+keywords: "Aspose.Cells Cloud, update shape, Excel API, REST, Excel worksheet, shape update, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
+description: "Learn how to update a shape in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, JSON body, cURL example, error codes, and SDK snippets for C#, Java, Python, and more."
 weight: 31
 ---
 
@@ -52,7 +52,7 @@ The `dto` object contains the properties that can be updated. All fields are opt
 
 - `Content-Type: application/json`
 - `Accept: application/json`
-- `Authorization: Bearer <accessToken>` _(the JWT token from the \_Authentication_ step)\_
+- `Authorization: Bearer <accessToken>` _(the JWT token obtained in the Authentication step)_
 
 ### Request body (example)
 
