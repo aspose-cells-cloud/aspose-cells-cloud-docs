@@ -1,15 +1,15 @@
 ---
-title: "Delete Folder – Aspose.Cells Cloud API | Remove Folders via REST"
+title: "Delete Folder – Aspose.Cells Cloud API | RESTful Storage Management"
 ArticleTitle: "Delete Folder – Aspose.Cells Cloud API"
 linktitle: "Delete Folder"
 type: docs
 url: /delete-folder/
-keywords: "Aspose.Cells delete folder, cloud storage, REST API, Excel file management, recursive delete"
-description: "Learn how to delete a folder (optionally recursively) from Aspose.Cells Cloud storage using the DELETE /v4.0/cells/storage/folder/{path} endpoint. Includes request syntax, parameters, sample code, and error handling."
+keywords: "delete folder, Aspose.Cells storage API, recursive delete, REST DELETE folder, cloud storage, Excel file management"
+description: "Learn how to delete a folder (optionally recursively) from Aspose.Cells Cloud storage via the DELETE /v4.0/cells/storage/folder/{path} endpoint. Includes request syntax, required parameters, sample cURL, SDK code, and error handling."
 weight: 100
 ---
 
-## **Excel API : Delete Folder**
+## **Aspose.Cells Cloud API : Delete Folder**
 
 ### Web API
 
@@ -53,7 +53,7 @@ A successful call returns **HTTP 200 OK** with an empty body:
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderController/DeleteFolder) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
 
-## Excel API SDK
+## Aspose.Cells Cloud API SDK
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
