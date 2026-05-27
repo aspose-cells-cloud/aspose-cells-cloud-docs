@@ -1,16 +1,16 @@
 ---
-title: "How to Run Aspose.Cells Cloud Docker Container"
+title: "Run Aspose.Cells Cloud Docker Container – Trial, Metered‑Billing, License‑Billing & Access Token (Windows Server 2022)"
+ArticleTitle: "Run Aspose.Cells Cloud Docker Container – Trial, Metered‑Billing, License‑Billing & Access Token (Windows Server 2022)"
 second_title: "Document"
-ArticleTitle: "How to Run Aspose.Cells Cloud Docker Container"
 linktitle: "Container Run"
 type: docs
 url: /run-aspose-cells-cloud-docker-container/
-description: "Learn how to launch Aspose.Cells Cloud in a Docker container on Windows Server 2022. Step‑by‑step commands for trial, metered‑billing, and license‑billing modes, plus prerequisites, storage setup, and health‑check examples."
+description: "Step‑by‑step guide to launch Aspose.Cells Cloud in Docker on Windows Server 2022, covering trial, metered‑billing, license‑billing and access‑token modes, prerequisites, storage setup, and health‑check verification."
 weight: 30
-keywords: "Aspose.Cells Cloud Docker, trial mode, metered billing, license billing, Docker run command, storage configuration, Windows Server 2022"
+keywords: "Aspose.Cells Cloud, Docker container, Windows Server 2022, trial mode, metered billing, license file, access token, health check"
 ---
 
-Aspose.Cells Cloud Docker provides a ready‑to‑run container image that hosts the Aspose.Cells Cloud API locally or in a private cloud. This guide shows how to start the container in three common licensing modes—**Trial**, **Metered Billing**, and **License Billing**—and includes a variant that uses an access token. All commands are written for PowerShell on Windows Server 2022; adapt the volume paths if you are using Linux.
+Aspose.Cells Cloud Docker provides a ready‑to‑run container image that hosts the Aspose.Cells Cloud API locally or in a private cloud. This guide shows how to start the container in three common licensing modes—**Trial**, **Metered‑Billing**, and **License‑Billing**—and includes a variant that uses an access token. All commands are written for PowerShell on Windows Server 2022; adapt the volume paths if you are using Linux.
 
 ## Run Aspose.Cells Cloud Docker Container in Trial Mode
 
@@ -21,7 +21,7 @@ docker run -p 47900:5000 aspose/cells-cloud:ltsc2022.22.9.0
 
 The container runs in the foreground and listens on host port **47900**, which forwards to the container’s internal port **5000**.
 
-## Run Aspose.Cells Cloud Docker Container in Metered Billing Mode
+## Run Aspose.Cells Cloud Docker Container in Metered‑Billing Mode
 
 ```powershell
 # Windows Server 2022
@@ -41,13 +41,13 @@ docker run -d `
   aspose/cells-cloud:ltsc2022.25.9.0
 ```
 
-The container runs in detached mode (`-d`). After it starts, you can verify that the service is reachable:
+The container runs in detached mode (`-d`). After the container starts, you can verify that the service is reachable:
 
 ```powershell
 curl http://localhost:47900/v3.0/health
 ```
 
-## Run Aspose.Cells Cloud Docker Container in License Billing Mode
+## Run Aspose.Cells Cloud Docker Container in License‑Billing Mode
 
 ```powershell
 # Windows Server 2022
@@ -66,7 +66,7 @@ docker run -d `
   aspose/cells-cloud:ltsc2022.25.9.0
 ```
 
-## Run Aspose.Cells Cloud Docker Container with Access Token
+## Run Aspose.Cells Cloud Docker Container with Access‑Token Mode
 
 ```powershell
 # Windows Server 2022
@@ -87,7 +87,7 @@ docker run -d `
   aspose/cells-cloud:ltsc2022.25.9.0
 ```
 
-After starting the container, confirm the service is operational with the same health‑check command shown earlier.
+After the container starts, confirm the service is operational with the same health‑check command shown earlier.
 
 ## Reference Document
 
