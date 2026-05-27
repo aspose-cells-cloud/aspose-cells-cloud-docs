@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Excel Delete Worksheet Web API - Remove Sheets from Workbooks Programmatically"
+title: "Aspose.Cells Cloud API v4 – Delete Worksheet from Spreadsheet (REST)"
 second_title: "Document"
-ArticleTitle: "How to Delete Worksheets from Excel - Remove Sheets from Workbooks"
+ArticleTitle: "How to Delete a Worksheet from an Excel Spreadsheet Using Aspose.Cells Cloud API v4"
 linktitle: "Delete Worksheet from Spreadsheet"
 type: docs
 url: /delete-worksheet-from-spreadsheet/
-keywords: "Aspose Cells, delete worksheet API, Excel sheet removal, cloud spreadsheet, REST API"
-description: "Learn how to delete a worksheet from an Excel file using Aspose.Cells Cloud API. Includes endpoint, parameters, sample cURL, and SDK examples."
+keywords: "Aspose.Cells, delete worksheet, Excel API, cloud spreadsheet, REST, v4"
+description: "Remove unwanted sheets from Excel workbooks with Aspose.Cells Cloud API v4. Learn the DELETE endpoint, required parameters, sample cURL and SDK examples."
 weight: 100
 ---
 
-Programmatically delete worksheets from Excel workbooks using Aspose.Cells Cloud API. Safely remove single or multiple sheets, clean up workbook structure, and automate spreadsheet optimization. RESTful API for enterprise‑grade Excel management and document‑processing workflows.
+Programmatically delete worksheets from Excel workbooks using Aspose.Cells Cloud API. Safely remove single or multiple sheets, clean up workbook structure, and automate spreadsheet optimization. RESTful API for enterprise-grade Excel management and document-processing workflows.
 
 ## **Delete worksheet from Spreadsheet API**
 
@@ -28,8 +28,8 @@ DELETE https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets/{sheetName}
 | sheetName      | String | Query    | **Required.** The exact name of the worksheet to be deleted (e.g., `Sheet1`, `TemporaryData`).                                                                                                          |
 | outPath        | String | Query    | **Optional.** The target folder path in cloud storage where the modified workbook will be saved. If omitted or `null`, the workbook is saved in the same location as the source file or a default path. |
 | outStorageName | String | Query    | **Optional.** The identifier of the cloud storage service (e.g., `ProjectStorage`) where the output file will be written. If not supplied, the default storage is used.                                 |
-| region         | String | Query    | **Optional.** The locale setting (e.g., `it-IT`) that may affect region‑specific formulas or data during the save operation.                                                                            |
-| password       | String | Query    | **Optional.** The password required to open and modify a password‑protected spreadsheet. Omit if the file is not encrypted.                                                                             |
+| region         | String | Query    | **Optional.** The locale setting (e.g., `it-IT`) that may affect region-specific formulas or data during the save operation.                                                                            |
+| password       | String | Query    | **Optional.** The password required to open and modify a password-protected spreadsheet. Omit if the file is not encrypted.                                                                             |
 
 ### **Response**
 
@@ -73,7 +73,7 @@ The [Delete worksheet from Spreadsheet API Specification](https://reference.aspo
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the fastest way to develop, as it abstracts low‑level details and lets you delete a worksheet with minimal code. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop, as it abstracts low-level details and lets you delete a worksheet with minimal code. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
