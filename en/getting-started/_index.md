@@ -1,13 +1,13 @@
 ---
 title: "Getting Started with Aspose.Cells Cloud API – Process Excel Files in 3 Simple Steps"
 second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud Getting Started"
+ArticleTitle: "Aspose.Cells Cloud – Getting Started Guide"
 linktitle: "Getting Started"
 type: docs
 url: /getting-started/
-description: "Learn how to upload, convert, and download Excel files using Aspose.Cells Cloud REST API in just three steps. Includes code samples for cURL, Python, .NET, and Java."
+description: "Learn how to upload, convert, and download Excel files using the Aspose.Cells Cloud REST API in three easy steps. Includes cURL, Python, .NET, and Java examples."
 weight: 10
-keywords: "Aspose.Cells Cloud, Excel API, REST API, convert Excel to PDF, upload Excel, download Excel, cloud spreadsheet"
+keywords: "Aspose.Cells, Cloud API, Excel to PDF, REST"
 ---
 
 - [Overview](/cells/overview/)
