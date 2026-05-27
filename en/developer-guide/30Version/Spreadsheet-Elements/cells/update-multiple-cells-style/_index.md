@@ -1,10 +1,10 @@
 ---
-title: "Update Multiple Cells Style – Aspose.Cells Cloud API Reference (v3.0)"
+title: "Update Multiple Cells Style – Aspose.Cells Cloud API (v3.0) – Excel"
 type: docs
 url: /update-multiple-cells-style/
 weight: 20
-keywords: ["Aspose.Cells update cell style API", "Excel cell range styling", "Aspose Cloud SDK example", "Aspose.Cells", "REST API", "Excel", "Cloud SDK", "cURL", "JSON"]
-description: "Learn how to update the style of a cell range in an Excel workbook using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, authentication, error handling, SDK snippets, and version information."
+keywords: ["Aspose.Cells", "update cell style", "Excel API", "REST", "v3.0", "cloud SDK"]
+description: "Learn how to update the style of a cell range in an Excel workbook using the Aspose.Cells Cloud REST API. Includes prerequisites, endpoint, parameters, cURL example, authentication, error handling, SDK snippets, and version information."
 ---
 
 **v3.0 – Updated 2024‑11‑01**
@@ -14,7 +14,7 @@ This REST API sets the **style** for a range of cells in an Excel workbook.
 ## REST API
 
 ### Authentication
-To call this endpoint you must include a valid JWT access token in the `Authorization` header.
+To call this endpoint, include a valid JWT access token in the `Authorization` header.
 
 1. Request a token from the Aspose Cloud OAuth endpoint (`/connect/token`) using your **client‑id** and **client‑secret**.  
 2. The response contains an `access_token`.  
@@ -65,7 +65,6 @@ cURL -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/s
   -d '{
         "Font": {
           "Color": { "A":255, "R":255, "G":255, "B":0 },
-          "DoubleSize": 10,
           "IsBold": true,
           "IsItalic": true,
           "IsStrikeout": true,
@@ -103,7 +102,7 @@ cURL -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/s
 {{< /tabs >}}
 
 ### Error handling
-The API can return the following error responses:
+The API returns the following error responses:
 
 | HTTP Status | Description | Example JSON |
 |-------------|-------------|--------------|
