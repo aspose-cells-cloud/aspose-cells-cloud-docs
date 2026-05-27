@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud API – Get Files List (Folder Contents)"
+title: "Aspose.Cells Cloud API – Get Files List (Folder Contents) | Retrieve Files & Sub‑folders"
 second_title: "Document"
-ArticleTitle: "Cloud-based Excel File Management Solution – Interface for Quickly Getting File List in the Cloud"
+ArticleTitle: "Aspose.Cells Cloud API – Retrieve Files and Sub‑folders List from Cloud Storage"
 linktitle: "Get Files List"
 type: docs
 url: /get-files-list/
-description: "Retrieve a list of files and sub‑folders from a specific folder in Aspose.Cells Cloud storage. Includes endpoint, parameters, sample request, and SDK examples."
-keywords: "Aspose.Cells, API, Get Files List, Cloud Storage, Excel, REST"
+description: "Learn how to retrieve a list of files and sub‑folders from a specific folder in Aspose.Cells Cloud storage. Includes endpoint, required parameters, authentication, sample cURL, and SDK code examples for C#, Java, Python, and more."
+keywords: "Aspose.Cells, Cloud API, Get Files List, folder contents, storage API, Excel cloud, REST API"
 weight: 100
 ---
 
-## **Excel API: Get Files List**
+## **Aspose.Cells Cloud API: Get Files List**
 
 The **Get Files List** operation returns the collection of files and sub‑folders stored in a specified folder.
 
@@ -22,13 +22,13 @@ GET https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 
 ### Function Description
 
-The **getFilesList** API retrieves a comprehensive list of files and folders contained within a specified directory in Aspose.Cells Cloud storage. This endpoint is essential for efficient file management and supports a variety of Excel‑related file formats.
+The **getFilesList** API returns a comprehensive list of files and folders contained within a specified directory in Aspose.Cells Cloud storage. This endpoint is essential for efficient file management and supports a variety of Excel‑related file formats.
 
 ### Request Parameters for Get Files List API
 
 | Parameter Name  | Type    | Location | Description                                                                    |
 | --------------- | ------- | -------- | ------------------------------------------------------------------------------ |
-| **path**        | String  | Path     | The path to the folder in cloud storage from which the file list is retrieved. |
+| **path**        | String  | Path     | The path to the folder in cloud storage from which the file list is retrieved. **(required)** |
 | **storageName** | String  | Query    | (Optional) The name of the storage to access.                                  |
 | **pageSize**    | Integer | Query    | (Optional) Maximum number of items to return per page.                         |
 | **pageNumber**  | Integer | Query    | (Optional) Page number to retrieve (starting at 1).                            |
@@ -79,9 +79,9 @@ The **getFilesList** API retrieves a comprehensive list of files and folders con
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderController/GetFilesList) defines a publicly accessible programming interface that enables REST interactions directly from a web browser, facilitating easy integration and testing.
 
-## Excel API SDK
+## Aspose.Cells Cloud API SDK
 
-Utilizing an SDK is the optimal approach to accelerate your development process. An SDK manages low‑level details, allowing you to concentrate on your project tasks. For a complete list of Aspose.Cells Cloud SDKs, please visit the [GitHub repository](https://github.com/aspose-cells-cloud).
+Using an SDK accelerates development by handling low‑level details, allowing you to focus on your project. For a complete list of Aspose.Cells Cloud SDKs, please visit the [GitHub repository](https://github.com/aspose-cells-cloud).
 
 The following code examples illustrate how to invoke Aspose.Cells web services using various SDKs:
 
