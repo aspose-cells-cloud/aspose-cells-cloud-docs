@@ -1,5 +1,5 @@
 ---
-title: "Get Names from an Excel Workbook"
+title: "Get Defined Names from an Excel Workbook using Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Names"
 type: docs
@@ -10,8 +10,8 @@ aliases:
     /workbook/names/,
     /workbook/get/names/,
   ]
-keywords: "Aspose.Cells Cloud, Get Workbook Names, Excel workbook names, REST API, Cloud SDK"
-description: "Retrieve all defined names from an Excel workbook using the Aspose.Cells Cloud REST API. Includes authentication guidance, cURL example, response schema, error handling, and SDK samples."
+keywords: "Aspose.Cells Cloud, Excel workbook defined names, Get Workbook Names API, REST API, Excel API, Cloud SDK"
+description: "Learn how to retrieve all defined names from an Excel workbook via the Aspose.Cells Cloud REST API. Includes authentication steps, cURL example, response schema, error handling, and SDK code samples."
 weight: 120
 ---
 
@@ -35,7 +35,7 @@ The request parameters are:
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookNames) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services. The example below demonstrates how to call the Aspose.Cells Cloud API with cURL.
+Use the cURL command‑line tool to access Aspose.Cells web services. The example below shows how to call the Aspose.Cells Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
