@@ -1,10 +1,10 @@
 ---
-title: "Clear Hyperlinks"
+title: "Clear All Hyperlinks in an Excel Worksheet – Aspose.Cells Cloud API"
 type: docs
 url: /hyperlinks/clear/
 aliases: [/add-hyperlinks-to-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel, clear hyperlinks, delete hyperlinks, REST API, worksheet, SDK"
-description: "Learn how to remove all hyperlinks from an Excel worksheet using the Aspose.Cells Cloud REST API or any supported SDK (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl, etc.)."
+keywords: "Aspose.Cells Cloud, clear hyperlinks, Excel API, delete worksheet hyperlinks, REST API"
+description: "Use Aspose.Cells Cloud REST API to delete every hyperlink from a worksheet in a single request. See request format, parameters, responses, and code samples for C#, Java, Python, and more."
 weight: 40
 ---
 
