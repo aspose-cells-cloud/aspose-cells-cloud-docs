@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Excel Unprotect Web API – Programmatically Remove Open & Modify Passwords"
+title: "Aspose.Cells Cloud API – Unprotect Spreadsheet (Remove Open & Modify Passwords)"
 second_title: "Document"
-ArticleTitle: "Remove Excel Password Protection – Unlock Open & Modify Passwords Instantly"
+ArticleTitle: "Remove Excel Password Protection – Instantly Unprotect Open and Modify Passwords"
 linktitle: "Unprotect Spreadsheet"
 type: docs
 url: /unprotect-spreadsheet/
-keywords: "unprotect spreadsheet API, Aspose Cells, Excel password removal, OAuth2 authentication, cloud Excel API"
-description: "Remove open and modify passwords from Excel files programmatically with the Aspose.Cells Cloud Unprotect Spreadsheet API. Supports .xlsx/.xls, OAuth2 authentication, and batch processing."
+keywords: "unprotect, spreadsheet, API, Aspose, Cells, Excel, password removal, OAuth2, cloud"
+description: "Remove open and modify passwords from Excel files programmatically using Aspose.Cells Cloud Unprotect Spreadsheet API. Supports .xlsx/.xls, OAuth2 authentication, and batch processing."
 weight: 100
 ---
 
-The Unprotect Spreadsheet API removes open‑ and modify‑password protection from Excel files in a single call. It is ideal for data pipelines, document‑management systems, and migration workflows.
+The Unprotect Spreadsheet API removes open and modify password protection from Excel files in a single call. It is ideal for data pipelines, document‑management systems, and migration workflows.
 
 ## **Unprotect Spreadsheet API**
 
@@ -58,7 +58,7 @@ PUT https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet
 - **Restore Access to Locked Workbooks** – Quickly remove forgotten open or modify passwords without manual intervention.
 - **Automate Bulk Unlocking** – Process large numbers of files in data‑migration or archival projects.
 - **Integrate with Existing Workflows** – Combine with storage or conversion APIs to create end‑to‑end pipelines (e.g., upload → unprotect → convert to PDF).
-- **Maintain Data Security** – The operation occurs on the server side, keeping the original files secure while the unprotected version is stored in your cloud storage.
+- **Maintain Data Security** – The Unprotect Spreadsheet API operates on the server side, keeping the original files secure while the unprotected version is stored in your cloud storage.
 
 ## How to use the Unprotect Spreadsheet API with SDKs
 
