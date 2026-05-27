@@ -1,11 +1,11 @@
 ---
-title: "Delete All Charts from a Worksheet"
+title: "Delete All Charts from a Worksheet – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /charts/clear/
 aliases: [/delete-all-charts-from-a-worksheet/]
 weight: 30
-keywords: "Aspose.Cells Cloud, delete all charts, worksheet, REST API, DELETE, Cloud SDK"
-description: "Learn how to delete every chart in a worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL sample, SDK code snippets, authentication steps, and error handling."
+keywords: "Aspose.Cells Cloud, delete all charts, Excel API, REST DELETE, charts clear, v3.0"
+description: "Learn how to delete every chart in an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL, SDK examples and error handling."
 ---
 
 This REST API deletes all charts from the specified worksheet.
@@ -41,7 +41,7 @@ curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cha
 -H "Authorization: Bearer <jwt token>"
 ```
 
-_Replace `<jwt token>` with a valid JWT Bearer token obtained via the Aspose Cloud OAuth flow._
+Replace `<jwt token>` with a valid JWT Bearer token obtained via the Aspose Cloud OAuth flow.
 
 {{< /tab >}}
 
@@ -54,7 +54,7 @@ _Replace `<jwt token>` with a valid JWT Bearer token obtained via the Aspose Clo
 }
 ```
 
-_If the request fails, the API returns an error JSON with an appropriate HTTP status code (e.g., 401 Unauthorized, 404 Not Found, 500 Internal Server Error)._
+If the request fails, the API returns an error JSON with an appropriate HTTP status code (e.g., 401 Unauthorized, 404 Not Found, 500 Internal Server Error).
 
 {{< /tab >}}
 
