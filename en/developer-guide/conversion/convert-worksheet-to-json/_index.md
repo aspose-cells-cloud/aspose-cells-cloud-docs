@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Web API – Convert Worksheet to JSON"
+title: "Aspose.Cells Cloud API – Convert Worksheet to JSON (v4.0) – Quick Guide"
 second_title: "Document"
-ArticleTitle: "How to Convert a Spreadsheet Worksheet to JSON Using Aspose.Cells Cloud API"
+ArticleTitle: "Step-by-Step Guide to Convert an Excel Worksheet to JSON with Aspose.Cells Cloud API"
 linktitle: "Convert Worksheet to JSON"
 type: docs
 url: /convert-worksheet-to-json/
-keywords: "Aspose.Cells Cloud, worksheet to JSON, Excel to JSON, API, conversion"
-description: "Learn how to convert an Excel worksheet to JSON using the Aspose.Cells Cloud API. This guide explains request parameters, response handling, error codes, and common use cases."
+keywords: "Aspose.Cells, Cloud API, Convert Worksheet to JSON, Excel to JSON, REST API"
+description: "Convert an Excel worksheet to JSON instantly with Aspose.Cells Cloud API. Get request syntax, authentication steps, sample code, and response details."
 weight: 100
 ---
 
@@ -25,7 +25,7 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/json
 | Parameter Name | Type   | Location | Required/Optional | Description                                                                                                                                                                                            |
 | :------------- | :----- | :------- | :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Spreadsheet    | file   | FormData | Required          | The Excel workbook to be processed. Must be a supported format (xls, xlsx, csv, etc.). Sent as multipart/form-data. Example: `Spreadsheet=@C:\Docs\Sample.xlsx`.                                       |
-| worksheet      | string | Query    | Required          | Exact name of the worksheet to convert (case‑sensitive). If omitted or not found, the API returns an error. Example: `worksheet=Sheet1`.                                                               |
+| worksheet      | string | Query    | Required          | Exact name of the worksheet to convert (case‑sensitive). If the worksheet is not found, the API returns an error. Example: `worksheet=Sheet1`.                                                          |
 | outPath        | string | Query    | Optional          | Destination folder on the configured cloud storage where the generated JSON file will be saved. If not provided, the JSON is returned directly in the response stream. Example: `outPath=/converted/`. |
 | outStorageName | string | Query    | Optional          | Name of the target storage (e.g., "MyStorage") that contains the `outPath`. Uses the default storage when omitted.                                                                                     |
 | fontsLocation  | string | Query    | Optional          | Server‑side folder that holds custom fonts required for accurate rendering of text in the worksheet. Example: `fontsLocation=/fonts/custom/`.                                                          |
