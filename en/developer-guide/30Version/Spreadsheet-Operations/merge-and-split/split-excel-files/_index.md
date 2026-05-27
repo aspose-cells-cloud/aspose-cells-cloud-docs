@@ -1,12 +1,12 @@
 ---
-title: "Split an Excel workbook into multiple files"
+title: "Split an Excel Workbook into Multiple Files – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Split an Excel file"
 type: docs
 url: /split-multi-excel-files/
 aliases: [/split/multi-files/]
-keywords: "Excel, Aspose.Cells Cloud, REST API, split workbook, multiple files, JPEG, PNG, PDF, CSV, JSON"
-description: "The Aspose.Cells Cloud REST API enables splitting an Excel workbook into multiple files in various formats. This documentation provides request parameters, a cURL example, and SDK code samples for languages such as C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
+keywords: "Aspose.Cells split workbook API"
+description: "Learn how to split an Excel workbook into separate files using the Aspose.Cells Cloud REST API. Includes request format, query parameters, cURL example, and SDK code samples for C#, Java, Python, and more."
 weight: 130
 ---
 
@@ -34,7 +34,7 @@ The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/P
 | folder               | string  | Folder containing the original workbook.   |
 | storageName          | string  | Name of the storage to use.                |
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+Use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example demonstrates how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
