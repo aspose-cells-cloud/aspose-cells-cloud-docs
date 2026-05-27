@@ -1,12 +1,12 @@
 ---
-title: "Move an Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
+title: "Move an Excel Worksheet – Aspose.Cells Cloud API v3.0 | REST Endpoint"
 second_title: "Document"
 linktitle: "Move"
 type: docs
 url: /worksheets/move/
 aliases: [/move-excel-worksheets/]
-keywords: "Aspose.Cells Cloud, Move Worksheet, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
-description: "Learn how to move an Excel worksheet to a new position using Aspose.Cells Cloud API (v3.0). Includes endpoint, required parameters, cURL example, and SDK code in C#, Java, Python, and more."
+keywords: "Aspose.Cells, Excel, move worksheet, REST API, SDK"
+description: "Learn how to move a worksheet within an Excel file using Aspose.Cells Cloud API v3.0. Includes endpoint, parameters, cURL sample, and SDK code snippets."
 weight: 20
 ---
 
@@ -30,7 +30,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/position
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostMoveWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to call Aspose.Cells web services. The example below shows how to move a worksheet with a single request.
+You can use the cURL command‑line tool to call Aspose.Cells web services. The example below shows how to move a worksheet using a single request.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
