@@ -1,5 +1,5 @@
 ---
-title: "Get Chart Area Fill Format – Aspose.Cells Cloud API (v3.0)"
+title: "Get Chart Area Fill Format – Aspose.Cells Cloud API v3.0"
 type: docs
 url: /charts/chart-area/fill-format/get/
 aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
@@ -12,10 +12,10 @@ keywords:
     "GET",
     "worksheet",
   ]
-description: "Retrieve the fill format (color, pattern, gradient) of a chart area in an Excel worksheet via Aspose.Cells Cloud API. Includes cURL example, SDK code snippets, and required authentication steps."
+description: "Retrieve the fill format (color, pattern, gradient) of a chart area in an Excel worksheet via Aspose.Cells Cloud API v3.0. Includes cURL and SDK examples."
 ---
 
-This REST API retrieves the fill‑format information of a **Chart Area**.
+This REST API retrieves the fill‑format information of a **Chart Area**. The call returns a `FillFormat` object that describes the background fill applied to the chart’s container.
 
 ## REST API
 
@@ -35,7 +35,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartAreaFillFormat) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services. The example below shows how to call the API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services. The example below shows how to call the API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
