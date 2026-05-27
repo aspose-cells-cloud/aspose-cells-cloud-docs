@@ -1,20 +1,18 @@
 ---
-title: "Add a Chart to a Worksheet"
+title: "Add a Chart to a Worksheet – Aspose.Cells Cloud API"
 type: docs
 url: /charts/add/
 aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
-description: "Learn how to add a chart to an Excel worksheet using Aspose.Cells Cloud API v3.0. Includes endpoint, parameters, cURL example, and SDK snippets."
+description: "Learn how to add a chart to an Excel worksheet using Aspose.Cells Cloud API v3.0. Includes endpoint, parameters, cURL example, SDK snippets, and error handling."
 keywords:
-  [
-    "add chart Aspose.Cells",
-    "Aspose.Cells add chart API",
-    "chart API REST",
-    "Aspose.Cells SDK examples",
-  ]
+  - "add chart Aspose.Cells Cloud"
+  - "Aspose.Cells add chart API"
+  - "Excel chart REST API"
+  - "Aspose.Cells SDK examples"
 ---
 
-This REST API adds a new chart to a worksheet. **Prerequisite:** a valid JWT token must be supplied in the `Authorization` header.
+This REST API adds a new chart to a worksheet. **Prerequisite:** you must include a valid JWT token in the `Authorization` request header (e.g., `Authorization: Bearer <jwt token>`).
 
 ## REST API
 
@@ -29,10 +27,10 @@ The request parameters are:
 | **name**                | string  | path     | Workbook name.                                                                                                                                                                           |
 | **sheetName**           | string  | path     | Worksheet name.                                                                                                                                                                          |
 | **chartType**           | string  | query    | Chart type (see the **Type** property in the chart resource). Supported chart types include **Bar**, **Column**, **Line**, **Pie**, **Scatter**, **Area**, **Doughnut**, **Radar**, etc. |
-| **upperLeftRow**        | integer | query    | Upper-left row index of the chart area (0‑based).                                                                                                                                        |
-| **upperLeftColumn**     | integer | query    | Upper-left column index of the chart area (0‑based).                                                                                                                                     |
-| **lowerRightRow**       | integer | query    | Lower-right row index of the chart area (0‑based).                                                                                                                                       |
-| **lowerRightColumn**    | integer | query    | Lower-right column index of the chart area (0‑based).                                                                                                                                    |
+| **upperLeftRow**        | integer | query    | Upper‑left row index of the chart area (0‑based).                                                                                                                                        |
+| **upperLeftColumn**     | integer | query    | Upper‑left column index of the chart area (0‑based).                                                                                                                                     |
+| **lowerRightRow**       | integer | query    | Lower‑right row index of the chart area (0‑based).                                                                                                                                       |
+| **lowerRightColumn**    | integer | query    | Lower‑right column index of the chart area (0‑based).                                                                                                                                    |
 | **area**                | string  | query    | Range that provides the values to plot (e.g., `A1:B5`).                                                                                                                                  |
 | **isVertical**          | boolean | query    | Indicates whether the chart orientation is vertical.                                                                                                                                     |
 | **categoryData**        | string  | query    | Range of category‑axis values (e.g., `D1:E10`).                                                                                                                                          |
