@@ -1,16 +1,16 @@
 ---
-title: "Encrypt, Decrypt, and Digitally Sign Excel Files"
+title: "Encrypt, Decrypt & Digitally Sign Excel Files with Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Protect Excel"
 type: docs
 url: /protect/
 aliases: [/workbook/password/]
-keywords: "Excel, protect, encrypt, decrypt, digital signature, Aspose.Cells Cloud, REST API, password, security"
-description: "Learn how to protect, encrypt, decrypt, and digitally sign Excel workbooks using the Aspose.Cells Cloud REST API, with examples for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "Aspose.Cells Cloud, Excel encryption, Excel decryption, digital signature, REST API, password protection, security"
+description: "Learn how to encrypt, decrypt, and digitally sign Excel workbooks using Aspose.Cells Cloud REST API. Includes code examples for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 36
 ---
 
-## **Protecting and un-protecting Excel files**
+## **Protecting and un‑protecting Excel files**
 
 - [How to encrypt an Excel file](/cells/excel-file-encrypt/)
 - [How to protect an Excel file](/cells/protect-excel-file/)
