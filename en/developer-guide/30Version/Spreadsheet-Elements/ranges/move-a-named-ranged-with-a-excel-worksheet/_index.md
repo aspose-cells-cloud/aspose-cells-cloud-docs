@@ -1,12 +1,12 @@
 ---
-title: "Move a named range with an Excel worksheet"
+title: "Move a Named Range in Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Move"
 type: docs
 url: /ranges/move/
 aliases: [/move-a-named-range-with-an-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, move named range, Excel API, REST API, range move, worksheet, SDK examples"
-description: "Learn how to move a named range within an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint details, authentication, request/response examples, and SDK code samples for C#, Java, Python, and more."
+keywords: "Aspose.Cells, move named range, Excel API, REST, v3.0"
+description: "Learn how to move a named range in an Excel worksheet using Aspose.Cells Cloud v3.0 REST API. Includes request format, parameters, sample code, and error handling."
 weight: 20
 ---
 
@@ -50,8 +50,8 @@ The token must have the **Cells** scope.
 |--------------|--------|----------|-------------|
 | **ColumnCount** | integer | No | Number of columns in the source range |
 | **ColumnWidth** | integer | No | Width of each column (in points) |
-| **FirstColumn** | integer | No | Zero‑based index of the first column of the source range |
-| **FirstRow**    | integer | No | Zero‑based index of the first row of the source range |
+| **FirstColumn** | integer | No | 0‑based index of the first column of the source range |
+| **FirstRow**    | integer | No | 0‑based index of the first row of the source range |
 | **Name**        | string  | No | Name of the range (if it is a named range) |
 | **RefersTo**    | string  | No | A‑1 style reference that defines the range |
 | **RowCount**    | integer | No | Number of rows in the source range |
