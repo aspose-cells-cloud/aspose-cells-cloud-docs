@@ -1,12 +1,12 @@
 ---
-title: "Lock Excel Files"
+title: "Lock Excel Files with Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Lock Excel files"
 type: docs
 url: /lock-excel-files/
 aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
-keywords: "Lock Excel files API, Aspose.Cells Cloud, REST API, Excel workbook, Spreadsheet, SDK"
-description: "Learn how to lock Excel workbooks using Aspose.Cells Cloud REST API (v3.0). Includes HTTPS endpoint, authentication, cURL request, response schema, and SDK code samples for C#, Java, Python, and more."
+keywords: "lock excel, aspose cells, excel api, workbook protection, cloud api"
+description: "Learn how to lock an Excel workbook using Aspose.Cells Cloud REST API v3.0. Includes endpoint, parameters, cURL example, response schema, error handling, and SDK code samples."
 weight: 70
 ---
 
