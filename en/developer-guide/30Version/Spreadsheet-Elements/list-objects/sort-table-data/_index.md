@@ -1,12 +1,12 @@
 ---
-title: "Sort ListObject Data in an Excel Worksheet"
+title: "Sort ListObject Data in an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Sort"
 type: docs
 url: /list-objects/sort-data/
 aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
-keywords: "Aspose.Cells Cloud, Excel, list object, sort data, REST API, worksheet"
-description: "Learn how to sort ListObject (table) data in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, sample cURL request, and SDK examples."
+keywords: "Aspose.Cells Cloud, ListObject sort, Excel API, REST sort table, dataSorter, cloud spreadsheet"
+description: "Learn how to sort a ListObject (table) in an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes endpoint, parameters, cURL request, and SDK examples."
 weight: 40
 ---
 
@@ -32,7 +32,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSortTable) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
