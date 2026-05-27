@@ -1,10 +1,10 @@
 ---
-title: "Update Chart Second Category Axis"
+title: "Update Second Category Axis of Chart – Aspose.Cells Cloud REST API"
 type: docs
 url: /charts/second-category-axis/update/
 weight: 160
-keywords: "Aspose.Cells, Chart, Second Category Axis, REST API, Update Chart, Excel, Cloud API"
-description: "Updates the second category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells Cloud, Update Chart Second Category Axis, REST API, Excel, Cloud API, Chart Axis"
+description: "Learn how to update the second category axis of an Excel chart using Aspose.Cells Cloud REST API, with request syntax, parameters, cURL example, and SDK guidance."
 ---
 
 This REST API updates the second category axis of a chart.
@@ -28,7 +28,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostChartSecondCategoryAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
