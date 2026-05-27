@@ -1,12 +1,12 @@
 ---
-title: "Freeze Panes on an Excel Worksheet"
+title: "Freeze Panes on an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Freeze"
 type: docs
 url: /worksheets/panes/freeze/
 aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
-keywords: "Aspose.Cells Cloud, Freeze Panes, Excel, REST API, Worksheet"
-description: "Learn how to freeze rows and columns in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes endpoint syntax, required parameters, a cURL example, authentication guidance, error‑response details, and SDK code samples for multiple languages."
+keywords: "freeze panes, Aspose.Cells API, Excel freeze rows, cloud spreadsheet API, cURL freeze panes"
+description: "Learn how to freeze rows and columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint syntax, required parameters, cURL example, authentication steps, error handling, and SDK code samples for C#, Java, PHP, Ruby, Node.js, Go, and more."
 weight: 190
 ---
 
