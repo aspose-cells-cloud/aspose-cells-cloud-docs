@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Web API – Transform Spreadsheet: Delete Empty Rows, Columns, Worksheets, Swap Ranges"
+title: "Aspose.Cells Cloud API – Delete Blank Rows/Columns, Worksheets & Swap Ranges (REST)"
 second_title: "Document"
-ArticleTitle: "Transform Spreadsheet: Delete Empty Rows, Columns, Worksheets, and Swap Ranges"
+ArticleTitle: "Aspose.Cells Cloud API – Transform Spreadsheet: Delete Blank Rows, Columns, Worksheets & Swap Ranges"
 linktitle: "Transform"
 type: docs
 url: /transform/
-keywords: "Aspose Cells API, delete blank rows, delete blank columns, swap range, spreadsheet cleanup"
-description: "Use Aspose.Cells Cloud APIs to delete empty rows, columns, worksheets, and swap Excel ranges. Fast, cloud‑based data cleanup for automation."
+keywords: "aspose cells api delete blank rows columns worksheets swap range"
+description: "Use Aspose.Cells Cloud REST APIs to automatically delete empty rows, columns, worksheets and to swap Excel ranges. Fast, server‑side cleanup for automation and reporting."
 weight: 40
 ---
 
-Robust Excel data‑manipulation APIs for professional spreadsheet management. They delete blank columns, rows, and worksheets automatically and swap data between ranges seamlessly. Use them to prepare spreadsheets for analysis, reporting, or integration without installing Excel.
+Robust Excel data‑manipulation APIs for professional spreadsheet management. These APIs delete blank columns, rows, and worksheets automatically and swap data between ranges seamlessly. Use them to prepare spreadsheets for analysis, reporting, or integration without installing Excel.
 
 ## Excel Data Cleanup & Optimization APIs
 
