@@ -1,12 +1,12 @@
 ---
-title: "Delete all pictures in an Excel worksheet"
+title: "How to Delete All Pictures from an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Clear"
 type: docs
 url: /pictures/clear/
 aliases: [/delete-all-pictures-from-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel, delete all pictures, worksheet, REST API"
-description: "How to delete all pictures from a worksheet in an Excel file using the Aspose.Cells Cloud REST API, with cURL and SDK code examples."
+keywords: "Aspose.Cells Cloud, Excel, delete pictures, worksheet, REST API"
+description: "Step-by-step guide to delete all pictures from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes HTTPS endpoint, request parameters, cURL example, error responses, and SDK code snippets."
 weight: 60
 ---
 
@@ -15,7 +15,7 @@ This REST API deletes **all** pictures in a worksheet.
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
 ### **Request parameters**
@@ -45,7 +45,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures" \
   -X DELETE \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
