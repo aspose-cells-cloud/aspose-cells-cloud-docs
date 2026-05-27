@@ -1,11 +1,11 @@
 ---
-title: "Worksheet Page Setup"
+title: "Aspose.Cells Cloud – Worksheet Page Setup API Reference"
 second_title: "Document"
 linktitle: "Page setup"
 type: docs
 url: /page-setup/
-keywords: "Aspose.Cells, pageSetup, worksheet, print settings, margins, orientation, paper size, header, footer, scaling"
-description: "Learn how to configure Excel worksheet print layout with Aspose.Cells Cloud’s pageSetup object. Includes property list, defaults, ranges, and code samples for C#, Java, and Python."
+keywords: "Aspose.Cells Cloud, pageSetup API, worksheet page setup, print layout, Excel worksheet, margins, orientation, paper size, header, footer, scaling, C#, Java, Python"
+description: "Configure print layout for Excel worksheets using the Aspose.Cells Cloud pageSetup API. Includes a full property reference, default values, and code samples in C#, Java, and Python."
 weight: 20
 ---
 
