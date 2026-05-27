@@ -1,12 +1,12 @@
 ---
-title: "Copy Rows on an Excel Worksheet"
+title: "Copy Rows in an Excel Worksheet – Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Copy"
 type: docs
 url: /rows/copy/
 aliases: [/copy-rows-in-excel-worksheet/]
-keywords: "Aspose.Cells Cloud Copy Rows, Excel, Aspose.Cells Cloud, REST API, worksheet rows"
-description: "Learn how to copy rows in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes authentication steps, request/response details, error handling, and SDK examples."
+keywords: "copy rows, Aspose.Cells Cloud Copy Rows, Excel, Aspose.Cells Cloud API, REST API, worksheet rows"
+description: "Learn how to copy rows in an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes authentication steps, request/response details, error handling, and SDK examples for C#, Java, Python, and more."
 weight: 30
 ---
 
@@ -27,7 +27,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/row
 | sourceRowIndex      | integer | query    | Zero‑based index of the source row.                                   |
 | destinationRowIndex | integer | query    | Zero‑based index where the rows will be placed.                       |
 | rowNumber           | integer | query    | Number of rows to copy.                                               |
-| worksheet           | string  | query    | _(Optional)_ Worksheet identifier; usually the same as **sheetName**. |
+| worksheet           | string  | query    | _(Optional)_ Worksheet identifier; typically identical to **sheetName**. |
 | folder              | string  | query    | Path to the folder containing the document.                           |
 | storageName         | string  | query    | Name of the storage service.                                          |
 
