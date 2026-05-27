@@ -1,11 +1,11 @@
 ---
-title: "Add multiple rows to an Excel worksheet"
+title: "Add Multiple Rows to an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Rows"
 type: docs
 url: /rows/add/rows/
-keywords: "Aspose.Cells Cloud, insert rows, Excel worksheet, REST API, SDK"
-description: "Learn how to use the Aspose.Cells Cloud REST API to insert multiple rows into an Excel worksheet. This guide covers the endpoint, request parameters, sample cURL commands, and SDK usage examples."
+keywords: "add rows, Aspose.Cells Cloud API, Excel worksheet, REST API, SDK examples"
+description: "Learn how to add multiple rows to an Excel worksheet using the Aspose.Cells Cloud REST API. This guide provides the HTTPS endpoint, request parameters, cURL example, and SDK code snippets."
 weight: 20
 ---
 
@@ -14,7 +14,7 @@ This REST API adds several new rows to an Excel worksheet.
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
 
 ### **Request parameters**
