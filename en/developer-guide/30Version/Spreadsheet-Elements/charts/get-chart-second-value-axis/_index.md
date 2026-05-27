@@ -1,18 +1,18 @@
 ---
-title: "Get Chart Second Value Axis"
+title: "Retrieve Chart Second Value Axis – Aspose.Cells Cloud API v3.0"
 type: docs
 url: /charts/second-value-axis/get/
 weight: 60
-keywords: Aspose.Cells, REST API, Get Chart Second Value Axis, Excel, Cloud, chart axis, second value axis, API
-description: Retrieves the second value axis of a specified chart in an Excel worksheet using the Aspose.Cells Cloud REST API.
+keywords: Aspose.Cells, REST API, chart axis, second value axis, Excel, cloud
+description: Learn how to get the second value axis of a chart in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes full request URL, required parameters, authentication steps, sample cURL, and SDK code snippets.
 ---
 
-This REST API retrieves the second value axis of a chart.
+This REST API retrieves the second value axis of a specified chart in an Excel worksheet.
 
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis
 ```
 
 ### Request parameters
@@ -34,7 +34,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/" \
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis?folder={folder}&storageName={storageName}" \
   -X GET \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
