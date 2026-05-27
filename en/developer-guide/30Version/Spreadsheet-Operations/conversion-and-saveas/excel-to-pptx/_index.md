@@ -1,11 +1,11 @@
 ---
-title: "Excel to PPTX"
+title: "Convert Excel to PPTX with Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Excel to PPTX"
 type: docs
 url: /convert-excel-file-to-pptx-file/
-keywords: "convert Excel to PPTX, Aspose.Cells Cloud, spreadsheet conversion, REST API, PPTX conversion, authentication"
-description: "Learn how to convert Excel workbooks to PPTX presentations using Aspose.Cells Cloud REST API (v3.0). Includes cURL request, SDK code samples, authentication, and error handling."
+keywords: "convert excel to pptx, aspose cells cloud, excel conversion api, powerpoint conversion"
+description: "Learn how to convert Excel workbooks to PPTX presentations using the Aspose.Cells Cloud REST API (v3.0). Includes cURL example, SDK snippets, authentication, and error handling."
 weight: 90
 ---
 
@@ -29,7 +29,7 @@ This REST API converts a spreadsheet file to PPTX format.
 
 | Parameter Name | Type      | Description                                                              |
 | -------------- | --------- | ------------------------------------------------------------------------ |
-| `datafile`     | data file | The Excel file included in the first part of the multipart request body. |
+| `file`         | data file | The Excel file included in the first part of the multipart request body. |
 
 ### Response
 
@@ -48,7 +48,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pptx?storageName=MySto
      -H "Authorization: Bearer {access_token}" \
      -H "accept: multipart/form-data" \
      -H "Content-Type: multipart/form-data" \
-     -F "File=@/path/to/input.xlsx" \
+     -F "file=@/path/to/input.xlsx" \
      -F "password=MyPwd"
 ```
 
