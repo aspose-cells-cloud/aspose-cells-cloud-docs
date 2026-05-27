@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert Local Excel Table Data to a PDF File - Free Online Tool"
+title: "Convert Excel Table to PDF with Aspose.Cells Cloud API"
 second_title: "Document"
-ArticleTitle: "How to Convert Local Spreadsheet Table Data to a PDF File: Step‑by‑Step Guide"
+ArticleTitle: "Step‑by‑Step Guide: Convert a Local Spreadsheet Table to PDF with Aspose.Cells Cloud"
 linktitle: "Convert Table to PDF"
 type: docs
 url: /convert-table-to-pdf/
-keywords: "Aspose.Cells Cloud, Table to PDF, Excel table conversion, REST API, PDF generation, spreadsheet conversion"
-description: "Convert a local Excel table to a PDF file quickly using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells Cloud, Table to PDF, Excel table conversion, REST API, PDF generation, spreadsheet conversion, convert table to PDF"
+description: "Learn how to convert a local Excel table to PDF using Aspose.Cells Cloud REST API. Includes endpoint, parameters, and a sample request."
 weight: 100
 ---
 
@@ -69,7 +69,7 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/table/pdf
 
 - **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development and comes with comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.
 - **Cost‑Effective**: You can convert table data without first uploading the workbook, which saves storage space and reduces costs.
-- **Preserves Complex Excel Formatting** in a universally accessible PDF format.
+- **Preserves complex Excel formatting in a universally accessible PDF format**
 
 ## How to Use the Convert Table to PDF API with SDKs?
 
