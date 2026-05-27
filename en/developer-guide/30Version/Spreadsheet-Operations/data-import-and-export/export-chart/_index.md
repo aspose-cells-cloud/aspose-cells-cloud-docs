@@ -1,12 +1,12 @@
 ---
-title: "Export Excel Chart"
+title: "Export Excel Chart – Aspose.Cells Cloud API Documentation"
 second_title: "Document"
 linktitle: "Chart"
 type: docs
 url: /export-excel-chart-to-different-formats/
 aliases: [/export/excel-chart-to-different-formats/]
-description: "Learn how to export Excel chart objects to PNG, JPEG, PDF, SVG, TIFF, EMF, WMF, and other formats using Aspose.Cells Cloud REST API or SDKs. Includes authentication, a cURL example, and code samples for multiple languages."
-keywords: "Aspose.Cells, export chart, Excel chart export, REST API, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK"
+description: "Learn how to export Excel chart objects to PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF, PDF, and other formats using Aspose.Cells Cloud REST API or SDKs. Includes authentication steps, a cURL example, and code samples for multiple languages."
+keywords: "Aspose.Cells, export chart, Excel chart export, REST API, cURL, PDF, PNG, JPEG, GIF, BMP, SVG, TIFF, EMF, WMF, SDK"
 weight: 20
 ---
 
