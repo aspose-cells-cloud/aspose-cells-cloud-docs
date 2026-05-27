@@ -1,17 +1,15 @@
 ---
-title: "Change Cell Style in Excel Worksheet"
+title: "Change Cell Style in Excel Worksheet – Aspose.Cells Cloud API"
 type: docs
 url: /change-cell-style-in-excel-worksheet/
 weight: 30
 keywords:
   - Aspose.Cells
-  - Aspose.Cells Cloud
-  - Excel
-  - Cell Style
+  - Excel cell style
   - REST API
-  - Cloud SDK
-  - cURL
-description: "Learn how to update the style of a specific cell in an Excel worksheet using the Aspose.Cells Cloud REST API, including example requests, responses, and SDK code snippets."
+  - cloud SDK
+  - update cell formatting
+description: "Learn how to update a cell's style (font, color, borders, etc.) in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL example and SDK snippets."
 ---
 
 This REST API updates the **cell style** of an Excel file.
