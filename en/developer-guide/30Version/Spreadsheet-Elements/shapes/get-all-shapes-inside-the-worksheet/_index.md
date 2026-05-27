@@ -1,12 +1,12 @@
 ---
-title: "Get All Shapes on an Excel Worksheet"
+title: "Get All Shapes on an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Get-all"
 type: docs
 url: /shapes/get-all/
 aliases: [/get-all-shapes-inside-the-worksheet/]
-keywords: "Aspose.Cells, Cloud API, Excel shapes, get shapes, REST, SDK"
-description: "Retrieve every shape (charts, pictures, text boxes) from a worksheet using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, authentication steps, and error handling."
+keywords: "Aspose.Cells, Excel API, shapes, get shapes, REST"
+description: "Retrieve all shapes such as charts, pictures, and text boxes from an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, authentication steps, and error handling."
 weight: 10
 ---
 
@@ -106,7 +106,7 @@ The `Shapes` object contains a list of `Shape` items. Each shape includes the fo
 
 | Property   | Type   | Description                                                                |
 | ---------- | ------ | -------------------------------------------------------------------------- |
-| **Name**   | string | The name assigned to the shape (e.g., “Chart 1”).                          |
+| **Name**   | string | The name assigned to the shape (e.g., "Chart 1").                          |
 | **Type**   | string | The shape type (e.g., `Chart`, `Picture`, `TextBox`).                      |
 | **Top**    | number | The distance, in points, from the top edge of the worksheet to the shape.  |
 | **Left**   | number | The distance, in points, from the left edge of the worksheet to the shape. |
