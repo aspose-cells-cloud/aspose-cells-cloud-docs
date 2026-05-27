@@ -1,5 +1,5 @@
 ---
-title: "Ungroup Columns in an Excel Worksheet – Aspose.Cells Cloud API"
+title: "Ungroup Columns in Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Ungroup"
 type: docs
@@ -7,7 +7,7 @@ url: /columns/ungroup/
 aliases:
   - /ungroup-columns-in-an-excel-worksheet/
   - /ungroup-columns-in-excel-worksheet/
-keywords: "Aspose.Cells, ungroup columns, Excel API, REST, SDK"
+keywords: "Aspose.Cells, ungroup columns, Excel API, REST, SDK, cURL, VBA alternative"
 description: "Learn how to ungroup columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, cURL example, and SDK code snippets for C#, Java, Python, and more."
 weight: 70
 ---
@@ -60,7 +60,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ce
 }
 ```
 
-_On error the service returns a JSON object containing `Code`, `Status`, and `ErrorMessage` fields (e.g., 400 Bad Request, 401 Unauthorized)._
+_On error, the service returns a JSON object containing `Code`, `Status`, and `ErrorMessage` fields (e.g., 400 Bad Request, 401 Unauthorized)._
 
 {{< /tab >}}
 
