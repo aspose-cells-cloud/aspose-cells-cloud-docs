@@ -1,12 +1,12 @@
 ---
-title: "Add watermark to Excel files"
+title: "Add Text Watermark to Excel Files with Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Add Watermark to Excel Files"
 type: docs
 url: /add-watermark-into-excel-files/
 aliases: [/watermark/]
-keywords: "add watermark to Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
-description: "Learn how to add a text watermark to Excel workbooks using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, required parameters, and response details."
+keywords: "Aspose.Cells, watermark, Excel, REST API, cloud SDK, cURL, C#, Java, Python"
+description: "Learn how to add a text watermark to Excel workbooks using the Aspose.Cells Cloud REST API (v3.0). Includes cURL request, authentication header, required parameters, and response details with Base64 file content."
 weight: 39
 ---
 
@@ -61,8 +61,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&c
 
 The JSON response contains a **Files** array. For each file object:
 
-- **Filename** – name of the processed workbook.
-- **FileSize** – size of the file in bytes.
+- **Filename** – name of the processed workbook.  
+- **FileSize** – size of the file in bytes.  
 - **FileContent** – Base64‑encoded content of the watermarked Excel file; decode it to obtain the actual file.
 
 {{< /tab >}}
