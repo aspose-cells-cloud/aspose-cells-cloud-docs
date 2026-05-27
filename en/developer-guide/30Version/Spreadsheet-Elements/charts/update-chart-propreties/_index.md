@@ -1,11 +1,11 @@
 ---
-title: "Update Chart Properties"
+title: "Update Chart Properties in Excel – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /charts/properties/update/
 aliases: [/update-chart-properties/]
 weight: 160
 keywords: "Aspose.Cells, chart properties, update chart, Excel API, REST API, cURL, SDK, C#, Java, PHP, Ruby, Node.js, Go, Perl"
-description: "Learn how to update chart properties (type, title, legend, etc.) in an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, and SDK snippets for C#, Java, PHP, Ruby, Node.js, Perl, and Go."
+description: "Learn how to update chart properties (type, title, legend, etc.) in an Excel workbook using Aspose.Cells Cloud REST API v3.0. Includes endpoint, parameters, cURL example, and SDK snippets for C#, Java, PHP, Ruby, Node.js, Perl, and Go."
 ---
 
 This REST API updates chart properties.
@@ -18,14 +18,14 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 
 ### Request parameters
 
-| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                   |
-| -------------- | ------- | -------------------------- | ------------------------------------------------------------- |
-| name           | string  | path                       | The name of the Excel file.                                   |
-| sheetName      | string  | path                       | The name of the worksheet containing the chart.               |
-| chartIndex     | integer | path                       | Zero-based index of the chart to be updated.                  |
-| chart          | object  | body                       | JSON object that defines the chart properties to be modified. |
-| folder         | string  | query                      | The folder in storage where the file is located.              |
-| storageName    | string  | query                      | The name of the storage service.                              |
+| Parameter Name | Type    | Path / Query / HTTP Body | Description                                                   |
+| -------------- | ------- | ------------------------ | ------------------------------------------------------------- |
+| name           | string  | path                     | The name of the Excel file.                                   |
+| sheetName      | string  | path                     | The name of the worksheet containing the chart.               |
+| chartIndex     | integer | path                     | Zero-based index of the chart to be updated.                  |
+| chart          | object  | body                     | JSON object that defines the chart properties to be modified. |
+| folder         | string  | query                    | The folder in storage where the file is located.              |
+| storageName    | string  | query                    | The name of the storage service.                              |
 
 ### Request Body Schema
 
@@ -49,7 +49,7 @@ The **`chart`** object contains the properties you can modify. Below is a repres
 }
 ```
 
-> **Note:** Only the fields you need to change have to be supplied. Omitted properties retain their existing values.
+> **Note:** Only the fields you need to change must be included in the request body; any omitted properties will retain their current values.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChart) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
