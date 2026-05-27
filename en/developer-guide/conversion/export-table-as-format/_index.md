@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Web API - Export a Remote Spreadsheet Table to Another Format"
+title: "Export Spreadsheet Table to PDF, PNG, CSV, JSON – Aspose.Cells Cloud API"
 second_title: "Document"
-ArticleTitle: "How to Export a Remote Spreadsheet Table to Another Format: Step‑by‑Step Guide"
+ArticleTitle: "Step‑by‑Step Guide to Export a Remote Spreadsheet Table to PDF, PNG, CSV, or JSON using Aspose.Cells Cloud"
 linktitle: "Export Table to Specified Format"
 type: docs
 url: /export-table-as-format/
 keywords: "Aspose.Cells, Export Table, API, PDF, PNG, CSV, JSON, Cloud, Excel, REST"
-description: "Convert a table from a cloud‑stored Excel workbook to PDF, PNG, CSV, JSON, or other formats using Aspose.Cells Cloud API. Secure HTTPS endpoint, authentication, and sample code in 8 languages."
+description: "Convert a table from a cloud‑stored Excel workbook to PDF, PNG, CSV, JSON, or other formats with Aspose.Cells Cloud API. Learn the secure HTTPS endpoint, required authentication, and see sample code in eight languages."
 weight: 100
 ---
 
-Export a cloud‑stored spreadsheet (Excel) table to another format file.
+Export a cloud‑stored Excel spreadsheet table to another format.
 
 ## **Export Table as Format API**
 
