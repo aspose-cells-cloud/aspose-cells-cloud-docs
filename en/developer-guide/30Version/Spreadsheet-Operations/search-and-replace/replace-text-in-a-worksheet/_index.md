@@ -1,17 +1,17 @@
 ---
-title: "Replace Text in an Excel Worksheet – Aspose.Cells Cloud API"
+title: "Replace Text in an Excel Worksheet using Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Replace in worksheet"
 type: docs
 url: /replace-text-in-a-worksheet/
 url: /worksheets/replace-text/
 aliases: [/replace-text-in-a-workbook/]
-keywords: "Aspose.Cells replace text API, Excel replace text, Aspose.Cells Cloud, REST API, spreadsheet, worksheet"
-description: "Learn how to replace text in an Excel worksheet using the Aspose.Cells Cloud API (v3.0). Includes prerequisites, authentication, request syntax, cURL example, SDK code samples, response details, and error handling."
+keywords: "Aspose.Cells, replace text, Excel API, cloud spreadsheet, REST"
+description: "Learn how to replace text in an Excel worksheet with Aspose.Cells Cloud API v3.0. Includes prerequisites, authentication, request syntax, cURL example, SDK samples, response details, and error handling."
 weight: 70
 ---
 
-This REST API replaces text in an Excel worksheet using the **Aspose.Cells replace text API**.
+This REST API replaces text in an Excel worksheet using the **Aspose.Cells Replace Text API**.
 
 ## REST API
 
@@ -32,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceTe
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorsheetTextReplace) defines this publicly accessible interface.
 
-You can use the cURL command‑line tool to call the service:
+You can use the cURL command-line tool to call the service:
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -75,7 +75,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/re
 | **Matches**             | integer | Number of cells where `oldValue` was replaced.     |
 | **Worksheet.link.Href** | string  | Relative URL of the affected worksheet.            |
 | **Code**                | integer | HTTP status code returned by the API (e.g., 200).  |
-| **Status**              | string  | Textual representation of the status (e.g., “OK”). |
+| **Status**              | string  | Textual representation of the status (e.g., OK).  |
 
 ### Error Handling
 
