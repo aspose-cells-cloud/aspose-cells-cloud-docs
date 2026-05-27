@@ -1,12 +1,12 @@
 ---
-title: "Delete a Specific Document Property"
+title: "Aspose.Cells Cloud API – Delete a Specific Document Property"
 second_title: "Document"
 linktitle: "Delete"
 type: docs
 url: /document-properties/delete/
 aliases: [/remove-a-particular-document-property/]
-keywords: "Aspose.Cells, delete document property, Excel metadata API, REST, cloud SDK, cURL example"
-description: "Delete a specific document property from an Excel workbook using Aspose.Cells Cloud REST API v3.0. Includes cURL and SDK examples for C#, Java, Python, and more."
+keywords: "Aspose.Cells, delete, document property, Excel, REST API, cloud SDK"
+description: "Delete a specific document property from an Excel workbook using Aspose.Cells Cloud REST API v3.0. Includes cURL and SDK examples (C#, Java, Python, …)."
 weight: 50
 ---
 
