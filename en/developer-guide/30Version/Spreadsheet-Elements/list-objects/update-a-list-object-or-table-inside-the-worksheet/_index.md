@@ -1,5 +1,5 @@
 ---
-title: "Update a List Object in an Excel Worksheet"
+title: "Update List Object (Table) in Excel Worksheet – Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Update"
 type: docs
@@ -7,8 +7,8 @@ url: /list-objects/update/
 aliases:
   - /update-a-list-object-or-table-inside-the-worksheet/
   - /tables/update/
-keywords: "update list object, Excel worksheet, Aspose.Cells Cloud, REST API, table, cells API"
-description: "Learn how to update an Excel table using Aspose.Cells Cloud API (v3.0). Includes endpoint, parameters, sample cURL, error codes, and SDK examples."
+keywords: "Aspose.Cells Cloud, Excel, List Object, Table, Update, API v3.0, REST"
+description: "Update a List Object (Excel table) via Aspose.Cells Cloud REST API v3.0 – includes request schema, cURL example, error handling, and SDK samples."
 weight: 20
 ---
 
@@ -20,16 +20,16 @@ The `listObject` DTO contains the following fields. Only the fields you need to 
 
 | Field                                           | Type             | Required | Description                                                                |
 | ----------------------------------------------- | ---------------- | -------- | -------------------------------------------------------------------------- |
-| **DisplayName**                                 | string           | optional | The name displayed for the table.                                          |
-| **StartRow** / **StartColumn**                  | integer          | optional | Zero‑based index of the first row/column of the table.                     |
-| **EndRow** / **EndColumn**                      | integer          | optional | Zero‑based index of the last row/column of the table.                      |
-| **Range**                                       | string           | optional | A‑1 style address that defines the table range (e.g., `A1:D10`).           |
-| **ShowHeaderRow**                               | boolean          | optional | `true` to display the header row.                                          |
-| **ShowTotals**                                  | boolean          | optional | `true` to display the totals row.                                          |
-| **TableStyleName**                              | string           | optional | Name of the built‑in table style to apply.                                 |
-| **TableStyleType**                              | string           | optional | Style type (`TableStyleLight`, `TableStyleMedium`, etc.).                  |
-| **ListColumns**                                 | array of objects | optional | Collection of column definitions (`Name`, `TotalsCalculation`).            |
-| **Sorter**, **AutoFilter**, **ShowTableStyle…** | object           | optional | Advanced styling and filtering options (see full DTO in the OpenAPI spec). |
+| `DisplayName`                                   | string           | optional | The name displayed for the table.                                          |
+| `StartRow` / `StartColumn`                      | integer          | optional | Zero‑based index of the first row/column of the table.                     |
+| `EndRow` / `EndColumn`                          | integer          | optional | Zero‑based index of the last row/column of the table.                      |
+| `Range`                                         | string           | optional | A‑1 style address that defines the table range (e.g., `A1:D10`).           |
+| `ShowHeaderRow`                                 | boolean          | optional | `true` to display the header row.                                          |
+| `ShowTotals`                                    | boolean          | optional | `true` to display the totals row.                                          |
+| `TableStyleName`                                | string           | optional | Name of the built‑in table style to apply.                                 |
+| `TableStyleType`                                | string           | optional | Style type (`TableStyleLight`, `TableStyleMedium`, etc.).                  |
+| `ListColumns`                                   | array of objects | optional | Collection of column definitions (`Name`, `TotalsCalculation`).            |
+| `Sorter`, `AutoFilter`, `ShowTableStyle…`       | object           | optional | Advanced styling and filtering options (see full DTO in the OpenAPI spec). |
 
 ### Minimal Example Payload
 
@@ -52,12 +52,12 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjec
 
 | Parameter Name      | Type    | Location | Description                         |
 | ------------------- | ------- | -------- | ----------------------------------- |
-| **name**            | string  | path     | Document name.                      |
-| **sheetName**       | string  | path     | Worksheet name.                     |
-| **listObjectIndex** | integer | path     | Index of the list object to update. |
-| **listObject**      | object  | body     | ListObject DTO in the request body. |
-| **folder**          | string  | query    | Folder that contains the document.  |
-| **storageName**     | string  | query    | Name of the storage.                |
+| `name`              | string  | path     | Document name.                      |
+| `sheetName`         | string  | path     | Worksheet name.                     |
+| `listObjectIndex`   | integer | path     | Index of the list object to update. |
+| `listObject`        | object  | body     | ListObject DTO in the request body. |
+| `folder`            | string  | query    | Folder that contains the document.  |
+| `storageName`       | string  | query    | Name of the storage.                |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObject) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -117,7 +117,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet7/listob
 <details>  
 <summary>How do I update a list object using the Aspose.Cells Cloud API?</summary>
 
-Use the `POST /cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}` endpoint. Include a JSON body with the properties you wish to change (e.g., `DisplayName`, `ShowHeaderRow`). Authenticate with a JWT token in the `Authorization` header.
+Use the `POST /cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}` endpoint for the list object. Include a JSON body with the properties you wish to change (e.g., `DisplayName`, `ShowHeaderRow`). Authenticate with a JWT token in the `Authorization` header.
 
 </details>
 
