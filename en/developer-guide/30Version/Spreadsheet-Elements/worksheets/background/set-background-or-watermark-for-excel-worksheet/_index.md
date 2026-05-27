@@ -1,12 +1,12 @@
 ---
-title: "Set background on an Excel worksheet"
+title: "Add Background Image to an Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Add"
 type: docs
 url: /worksheets/background/add/
 aliases: [/set-background-or-watermark-for-excel-worksheet/]
-keywords: "Aspose.Cells, Excel, worksheet background, REST API, SDK, add image"
-description: "Learn how to add a background image (PNG, JPEG, BMP) to an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, required parameters, authentication steps, cURL example, and SDK code samples."
+keywords: "Aspose.Cells Cloud, Excel background image, REST API, VBA alternative, worksheet background, API v3.0"
+description: "Add a PNG, JPEG, BMP or GIF background to an Excel worksheet using Aspose.Cells Cloud v3.0 REST API. Learn the endpoint, required parameters, authentication, cURL example, and SDK code snippets."
 weight: 180
 ---
 
@@ -30,9 +30,9 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
 
 **Supported formats & limits**
 
-- Accepted image extensions: **PNG, JPEG, BMP, GIF**.
-- Maximum file size: **5 MB**.
-- The image is tiled to fill the entire worksheet background.
+- Accepted image extensions: **PNG, JPEG, BMP, GIF**.  
+- Maximum file size: **5 MB**.  
+- The provided image is tiled to fill the entire worksheet background.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
