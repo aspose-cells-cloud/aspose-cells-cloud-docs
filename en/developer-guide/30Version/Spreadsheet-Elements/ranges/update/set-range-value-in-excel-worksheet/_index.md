@@ -1,16 +1,16 @@
 ---
-title: "Set Range Value in an Excel Worksheet"
+title: "How to Set a Range Value in an Excel Worksheet using Aspose.Cells Cloud API (v3.0)"
 second_title: "Document"
 linktitle: "Set values"
 type: docs
 url: /ranges/update/values/
 aliases: [/set-range-value-in-excel-worksheet/]
 keywords: "Aspose.Cells, Excel API, set range value, REST API, cloud SDK, worksheet update"
-description: "Learn how to set a cell or range value in an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, SDK code samples, and error handling."
+description: "Learn step‑by‑step how to update a cell or range value in an Excel workbook with Aspose.Cells Cloud REST API (v3.0). Includes request schema, authentication, cURL example, SDK code snippets, and error handling."
 weight: 72
 ---
 
-Use this REST API to set a value in the specified range. When appropriate, the value is converted to another data type and the cell’s number format is reset.
+Use this REST API to set a value in the specified range. When appropriate, the service converts the value to another data type and resets the cell’s number format.
 
 ## REST API
 
@@ -18,7 +18,7 @@ Use this REST API to set a value in the specified range. When appropriate, the v
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
 ```
 
-The request parameters are:
+The request parameters include:
 
 | Parameter Name | Type    | Location | Description                                                |
 |----------------|---------|----------|------------------------------------------------------------|
