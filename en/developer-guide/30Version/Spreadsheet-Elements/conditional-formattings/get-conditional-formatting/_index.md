@@ -1,10 +1,10 @@
 ---
-title: "Get Conditional Formatting"
+title: "Get Conditional Formatting – Aspose.Cells Cloud API Reference"
 type: docs
 url: /conditional-formattings/get/
 aliases: [/get-conditional-formatting/]
-keywords: "Aspose.Cells Cloud, REST API, Conditional Formatting, Excel, Spreadsheet"
-description: "Retrieve conditional formatting rules from a worksheet using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells Cloud, Conditional Formatting, REST API, Excel, Spreadsheet, Get Conditional Formatting, API Reference"
+description: "Retrieve a specific conditional formatting rule from a worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, error codes, cURL example, and SDK snippets."
 weight: 10
 ---
 
@@ -13,7 +13,7 @@ This REST API retrieves conditional formatting rules from a worksheet.
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditionalFormattings/{index}
 ```
 
 ### Request Parameters
@@ -44,7 +44,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0" \
   -X GET \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
