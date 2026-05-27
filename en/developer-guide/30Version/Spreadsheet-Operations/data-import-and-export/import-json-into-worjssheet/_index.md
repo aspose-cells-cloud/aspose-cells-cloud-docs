@@ -1,12 +1,12 @@
 ---
-title: "Import JSON Data into Excel"
+title: "Import JSON Data into Excel with Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Import JSON"
 type: docs
 url: /import-json-data-into-excel/
 aliases: [/import/json/]
-keywords: "Aspose.Cells Cloud, JSON import, Excel API, REST import JSON, SDK examples"
-description: "Learn how to import JSON data into an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint details, request/response examples, and SDK code for .NET, Java, and Python."
+keywords: "Aspose.Cells, Cloud, JSON import, Excel API, REST, SDK examples"
+description: "Learn how to import JSON data into an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint details, parameters, request/response examples, authentication, and SDK code snippets for .NET, Java, and Python."
 weight: 40
 ---
 
@@ -25,7 +25,7 @@ The important parameters are described in the table below.
 | Parameter Name        | Location     | Type   | Description                                                                                          |
 | --------------------- | ------------ | ------ | ---------------------------------------------------------------------------------------------------- |
 | name                  | Path         | string | The name of the workbook file.                                                                       |
-| importJsonRequest     | HTTP body    | class  | The request payload that contains JSON import details.                                               |
+| importJsonRequest     | HTTP body    | class  | The request payload containing JSON import details.                                                 |
 | password              | Query string | string | Password for opening the workbook (if protected).                                                    |
 | folder                | Query string | string | The folder that contains the original workbook.                                                      |
 | storageName           | Query string | string | The name of the storage where the workbook resides.                                                  |
