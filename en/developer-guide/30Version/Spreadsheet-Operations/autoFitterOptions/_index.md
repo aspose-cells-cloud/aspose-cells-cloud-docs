@@ -1,11 +1,11 @@
 ---
-title: "AutoFitterOptions – Properties & Usage Guide | Aspose.Cells Cloud API"
+title: "AutoFitterOptions – Property Reference & JSON Samples | Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "AutoFitterOptions"
 type: docs
 url: /auto-fitter-options/
-keywords: "AutoFitterOptions, Aspose.Cells, Excel auto fit, row height, merged cells, API"
-description: "Learn how to control row‑height auto‑fitting, merged‑cell handling, hidden rows/columns, language settings, and rendering options with the AutoFitterOptions object in the Aspose.Cells Cloud API."
+keywords: "AutoFitterOptions, Aspose.Cells Cloud, Excel API, row height auto fit, merged cells, hidden rows, language settings, rendering options, JSON sample"
+description: "Control row‑height auto‑fitting, merged‑cell handling, hidden rows, language and rendering options with Aspose.Cells Cloud’s AutoFitterOptions. See JSON payloads and code examples."
 weight: 79
 ---
 
