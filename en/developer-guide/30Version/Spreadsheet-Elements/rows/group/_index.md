@@ -1,12 +1,12 @@
 ---
-title: "Group rows on an Excel Worksheet"
+title: "Group Rows in an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Group"
 type: docs
 url: /rows/group/
 aliases: [/group-rows-in-excel-worksheet/]
-keywords: "group rows, Excel, Aspose.Cells Cloud, REST API, SDK, worksheet, Excel API"
-description: "Group rows in an Excel worksheet using the Aspose.Cells Cloud REST API. Supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) for easy integration."
+keywords: "aspose cells, group rows, excel api, rest api, cloud sdk"
+description: "Learn how to group rows in an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, and SDK snippets for C#, Java, Python, and more."
 weight: 60
 ---
 
