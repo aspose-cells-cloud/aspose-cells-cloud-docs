@@ -1,7 +1,7 @@
 ---
-title: "Aspose.Cells Cloud Docker Core Functionality: Spreadsheet Conversion, Merging, Splitting, Protecting, Data Processing, and More."
+title: "Aspose.Cells Cloud Docker Features: Spreadsheet Conversion, Merging, Splitting, Protecting, Data Processing, PDF Export, and More"
 second_title: "Document"
-ArticleTitle: "Aspose.Cells Cloud Docker Core Functionality"
+ArticleTitle: "Aspose.Cells Cloud Docker Core Features and Functionality"
 linktitle: "Features"
 type: docs
 url: /docker-container-features/
@@ -22,7 +22,7 @@ keywords:
 
 ## What is Aspose.Cells Cloud Docker Container?
 
-Aspose.Cells Cloud Docker Container is a containerized service provided by Aspose that is based on Docker, allowing you to deploy the functionalities of the Aspose.Cells Cloud API in local or private cloud environments without relying on Aspose's public cloud services.
+Aspose.Cells Cloud Docker Container is a containerized service provided by Aspose that is based on Docker, allowing you to deploy the functionalities of the Aspose.Cells Cloud API in a local or private cloud environment without relying on Aspose's public cloud services.
 
 ## Why Use Aspose.Cells Cloud Docker Container?
 
@@ -42,7 +42,7 @@ Aspose.Cells Cloud Docker Container encapsulates these features as a RESTful API
 | Benefits               | Description                                                                 |
 | ---------------------- | --------------------------------------------------------------------------- |
 | Data privacy and security | All file processing is done within your private network; no need to upload to a third‑party cloud. |
-| Offline availability   | Does not rely on Aspose public cloud, suitable for intranet or isolated environments. |
+| Offline availability   | It does not rely on Aspose's public cloud, making it suitable for intranet or isolated environments. |
 | Scalability            | Easily scale out via Docker/Kubernetes.                                    |
 | Unified API            | Fully compatible with the Aspose.Cells Cloud public API; no code changes required. |
 | License control        | Supports two types of authorization; choose the one that suits your situation. |
