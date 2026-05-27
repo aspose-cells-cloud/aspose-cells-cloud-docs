@@ -1,11 +1,11 @@
 ---
-title: "Aspose.Cells Cloud Web API – Extract Text"
+title: "Aspose.Cells Cloud API – Extract Text from Excel Cells (v4.0)"
 second_title: "Aspose.Cells Cloud – Online Short‑Code"
 linktitle: "Extract Text"
 type: docs
 url: /extract-text/
-keywords: "Aspose.Cells Cloud, Extract Text, Excel API, cell text extraction, REST API"
-description: "Extract substrings, numbers or characters from Excel cells using Aspose.Cells Cloud API. Supports before/after text, position‑based extraction, and direct output to a new range."
+keywords: "Aspose.Cells, extract text API, Excel text extraction, cloud spreadsheet API, REST text processing"
+description: "Extract substrings, numbers, or characters from Excel cells using Aspose.Cells Cloud API. Supports before/after text, position‑based extraction, and direct output to a target range."
 weight: 100
 ---
 
@@ -17,7 +17,7 @@ Extracts substrings, characters, or numbers from a spreadsheet cell into another
 PUT http://api.aspose.cloud/v4.0/cells/content/extract/text
 ```
 
-### The request parameters of **extractText** API are
+### The request parameters of the **ExtractText** API are
 
 | Parameter Name   | Type    | Location           | Description                                                                                                                     |
 | ---------------- | ------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
