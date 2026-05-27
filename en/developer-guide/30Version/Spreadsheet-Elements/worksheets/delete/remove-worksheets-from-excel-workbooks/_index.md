@@ -1,12 +1,12 @@
 ---
-title: "Delete Worksheet"
+title: "Delete Worksheet – Aspose.Cells Cloud REST API (v3.0)"
 second_title: "Document"
 linktitle: "One worksheet"
 type: docs
 url: /worksheets/delete-worksheet/
 aliases: [/remove-worksheets-from-excel-workbooks/]
-keywords: "Aspose.Cells Cloud, Delete Worksheet, Excel, Spreadsheet, REST API"
-description: "Delete a worksheet from an Excel workbook using Aspose.Cells Cloud REST API. Supports SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go and cURL."
+keywords: "Aspose.Cells Cloud Delete Worksheet, Excel API delete sheet, REST API worksheet delete, Aspose.Cells Cloud, Delete Worksheet, Excel, Spreadsheet, REST API"
+description: "Learn how to delete a worksheet from an Excel workbook using the Aspose.Cells Cloud REST API (v3.0). Includes cURL and SDK examples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
 weight: 20
 ---
 
@@ -15,7 +15,7 @@ This REST API deletes a worksheet.
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
 ### **Request parameters**
@@ -29,14 +29,14 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet3" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet3" \
   -X DELETE \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
