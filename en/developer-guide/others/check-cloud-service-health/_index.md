@@ -23,16 +23,7 @@ GET https://api.aspose.cloud/v4.0/cells/status/check
 ### **Response**
 
 ```json
-{
-  "status": "OK",
-  "service": "Cells",
-  "timestamp": "2024-03-28T12:34:56Z",
-  "components": {
-    "api": "Operational",
-    "storage": "Operational",
-    "database": "Operational"
-  }
-}
+"OK"
 ```
 
 ## How to Use the Aspose.Cells Cloud Status API with SDKs

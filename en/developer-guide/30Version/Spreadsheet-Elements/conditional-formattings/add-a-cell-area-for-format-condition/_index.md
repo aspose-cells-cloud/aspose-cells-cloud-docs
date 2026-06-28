@@ -55,7 +55,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/condit
 
 ```json
 {
-  "Code": "200",
+  "Code": 200,
   "Status": "OK"
 }
 ```

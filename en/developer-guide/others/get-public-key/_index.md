@@ -32,9 +32,8 @@ GET https://api.aspose.cloud/v4.0/cells/publickey
   "Code": 200,
   "Status": "OK",
   "CellsCloudPublicKey": {
-    "PublicKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAr...",
-    "Algorithm": "RSA",
-    "KeySize": 2048
+    "Exponent": "********",
+    "Modulus": "********"
   }
 }
 ```
