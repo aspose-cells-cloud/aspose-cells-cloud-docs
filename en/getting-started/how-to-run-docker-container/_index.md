@@ -16,13 +16,20 @@ keywords:
   - "Excel"
   - "spreadsheet"
   - "cloud API"
+  - "Docker"
+  - "Aspose Cells"
+  - "API"
 ---
 
 Docker technology is designed to automate the deployment of applications by using lightweight containers. Developers can use a Docker container to bundle an application with all of its libraries and dependencies and deploy everything as a single package.
 
-The Aspose.Cells Cloud team has published the Docker container on [Docker Hub](https://hub.docker.com/r/aspose/cells-cloud) to facilitate Docker users.  
+The Aspose.Cells Cloud team has published the Docker container on <a href="https://hub.docker.com/r/aspose/cells-cloud" target="_blank" rel="noopener noreferrer">Docker Hub</a> to facilitate Docker users.  
 
 **Prerequisites** – Ensure Docker Engine ≥ 20.x is installed and that your operating system (Windows 10/Server 2019/2022 or a supported Linux distribution) meets the requirements. An optional license key can be supplied to run in licensed mode.
+
+- Docker Engine ≥ 20.x installed  
+- Supported OS (Windows 10/Server 2019/2022 or a Linux distribution)  
+- Optional license key for licensed mode  
 
 ## Container configuration
 

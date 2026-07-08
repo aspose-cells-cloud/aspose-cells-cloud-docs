@@ -5,12 +5,15 @@ linktitle: "Add"
 type: docs
 url: /list-objects/add/
 aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
-keywords: "Aspose.Cells Cloud, Excel API, add list object, table, REST, worksheet"
+keywords: "Aspose.Cells Cloud, Excel API, list object, table, REST API, worksheet"
 description: "Learn how to add a list object (Excel table) to a worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication steps, cURL example, and SDK code samples."
 weight: 10
+ArticleTitle: "Add a List Object (Table) to an Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
 
 This REST API adds a **list object (table)** to an Excel worksheet.
+
+Before using this endpoint, ensure you have a valid JWT token, the workbook is stored in a supported cloud storage, and the worksheet exists.
 
 ## REST API
 
@@ -77,6 +80,26 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
 | **401**     | Unauthorized          | Missing or expired JWT token.                    |
 | **404**     | Not Found             | Specified workbook or worksheet does not exist.  |
 | **500**     | Internal Server Error | Unexpected server‑side failure.                  |
+
+**Example 400 response**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Invalid range parameters."
+}
+```
+
+**Example 401 response**
+
+```json
+{
+  "Code": 401,
+  "Status": "Unauthorized",
+  "Message": "Authentication token is missing or expired."
+}
+```
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PutWorksheetListObject) provides the full contract for this operation.
 

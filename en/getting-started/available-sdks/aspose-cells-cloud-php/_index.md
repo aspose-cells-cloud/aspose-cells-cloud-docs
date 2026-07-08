@@ -6,11 +6,11 @@ linktitle: "Aspose.Cells Cloud PHP SDK"
 type: docs  
 url: /available-sdks/aspose-cells-cloud-php/  
 description: "Download the Aspose.Cells Cloud PHP SDK (v24.3). Learn how to install via Composer, authenticate, convert XLSX to PDF/CSV, merge workbooks, protect sheets, and more – all without installing Office."  
-keywords: "Aspose.Cells Cloud PHP SDK, Excel SDK, PHP Excel library, Convert Excel, Merge Excel, Split Excel, Protect Excel, Search and Replace, Cloud API, Composer"  
+keywords: "Aspose.Cells, Cloud, PHP, SDK, Excel, Convert, Merge, Split, Protect"  
 weight: 30  
 ---  
 
-The SDK is open‑source and licensed under the MIT License. You can access [the PHP library source code for Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php).
+The SDK is open‑source and licensed under the MIT License. You can access [the PHP library source code for Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php){:target="_blank" rel="noopener noreferrer"}.
 
 # **How to use Aspose.Cells Cloud SDK for PHP**
 
@@ -23,8 +23,10 @@ In this article, we will explore how to use the Aspose.Cells Cloud **PHP** SDK t
 Before you can start using the Aspose.Cells Cloud SDK for **PHP**, you need to prepare a few prerequisites:
 
 - **Aspose Cloud account** – sign up on the Aspose website.  
-- **client_id** and **client_secret** – generate them from the Aspose Cloud console (see the [Authentication guide](https://docs.aspose.cloud/cells/quickstart/)).  
-- **Storage** – decide whether to use Aspose Cloud storage or a custom storage solution and ensure it is accessible from your application.
+- **client_id** and **client_secret** – generate them from the Aspose Cloud console (see the [Authentication guide](https://docs.aspose.cloud/cells/quickstart/){:target="_blank" rel="noopener noreferrer"}).  
+- **Storage** – decide whether to use Aspose Cloud storage or a custom storage solution and ensure it is accessible from your application.  
+
+The SDK requires **PHP 7.4** or later and **Composer 2.x**. Ensure the `curl` and `json` extensions are enabled in your PHP installation.
 
 Once the prerequisites are in place, you can set up your development environment.
 
@@ -112,5 +114,3 @@ try {
 - A `try … catch` block demonstrates simple error handling for common HTTP errors such as 401 (unauthorized) or 404 (not found).
 
 ---
-
-*All references to “Go” have been corrected to “PHP”, and the content now follows the recommended SEO, completeness, and AI‑friendliness guidelines.*

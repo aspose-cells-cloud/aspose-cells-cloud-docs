@@ -8,14 +8,18 @@ aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
 keywords: "Excel, color filter, Aspose.Cells Cloud, REST API, auto filter, JWT authentication"
 description: "Learn how to apply a color filter to an Excel worksheet with Aspose.Cells Cloud API. Includes endpoint, parameters, cURL example, error handling, and SDK samples."
 weight: 65
+ArticleTitle: "Add a Color Filter in an Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
 This REST API adds a **color filter** to an Excel worksheet.
 
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter
 ```
 
 **Prerequisites** – The endpoint requires OAuth 2.0 authentication. Obtain a JWT token as described in the Aspose.Cells Cloud authentication guide and pass it in the request header as `Authorization: Bearer <jwt token>`. The API version is **v3.0**, and the workbook must be stored in Aspose Cloud Storage (or another supported storage) before the call.
@@ -73,6 +77,17 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Response Status Codes**
+
+| Code | Description |
+|------|-------------|
+| 200 | OK – The color filter was applied successfully. |
+| 400 | Bad Request – Missing or invalid parameters. |
+| 401 | Unauthorized – Authentication failed or token missing. |
+| 403 | Forbidden – Insufficient permissions to modify the workbook. |
+| 404 | Not Found – Specified workbook, worksheet, or range does not exist. |
+| 500 | Internal Server Error – Unexpected server error. |
 
 **Error handling** – The API may return standard error objects. Example responses:
 

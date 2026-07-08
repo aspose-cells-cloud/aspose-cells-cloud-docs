@@ -5,12 +5,28 @@ ArticleTitle: "How to Run Aspose.Cells Cloud Docker Container"
 linktitle: "Container Run"
 type: docs
 url: /run-aspose-cells-cloud-docker-container/
-description: "Learn how to launch Aspose.Cells Cloud in a Docker container on Windows Server 2022. Step‑by‑step commands for trial, metered‑billing, and license‑billing modes, plus prerequisites, storage setup, and health‑check examples."
+description: "Learn how to launch Aspose.Cells Cloud in a Docker container on Windows Server 2022. Step‑by‑step commands for trial, metered‑billing, license‑billing, storage setup, and health‑check."
 weight: 30
-keywords: "Aspose.Cells Cloud Docker, trial mode, metered billing, license billing, Docker run command, storage configuration, Windows Server 2022"
+keywords: "Aspose.Cells, Docker, Windows Server 2022, trial mode, metered billing, license billing, storage configuration"
 ---
 
 Aspose.Cells Cloud Docker provides a ready‑to‑run container image that hosts the Aspose.Cells Cloud API locally or in a private cloud. This guide shows how to start the container in three common licensing modes—**Trial**, **Metered Billing**, and **License Billing**—and includes a variant that uses an access token. All commands are written for PowerShell on Windows Server 2022; adapt the volume paths if you are using Linux.
+
+**Prerequisites**
+
+- Docker Engine 20.10 or later installed and running.  
+- PowerShell 5.1 or PowerShell 7+.  
+- Open port 5000 inside the container (mapped to host port 47900) and ensure the host firewall allows inbound traffic on 47900.  
+- For Metered or License billing modes, have your `LicensePublicKey`, `LicensePrivateKey`, or a license file ready, or an `AccessToken` if using token mode.  
+- A local folder (e.g., `C:\data`) to be mounted as storage for the container.
+
+**Quick‑Start (Trial mode)**  
+
+Run the following command to start the container in trial mode:
+
+```powershell
+docker run -p 47900:5000 aspose/cells-cloud:ltsc2022.22.9.0
+```
 
 ## Run Aspose.Cells Cloud Docker Container in Trial Mode
 

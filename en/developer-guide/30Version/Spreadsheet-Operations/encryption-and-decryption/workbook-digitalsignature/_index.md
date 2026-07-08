@@ -1,5 +1,6 @@
 ---
 title: "Add a Digital Signature to an Excel Workbook"
+ArticleTitle: "Add a Digital Signature to an Excel Workbook – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Digital signature"
 type: docs
@@ -13,6 +14,8 @@ weight: 35
 ---
 
 This REST API adds a **digital signature** to an Excel workbook.
+
+**Last updated: July 2026**
 
 ## REST API
 
@@ -39,6 +42,40 @@ The request parameters include:
 | 401         | Unauthorized – invalid or expired OAuth token.         |
 | 403         | Forbidden – insufficient permissions or access denied. |
 | 500         | Internal server error – unexpected failure.            |
+
+**Example error responses**
+
+```json
+// 400 Bad Request
+{
+  "Code": 400,
+  "Message": "Invalid parameters supplied."
+}
+```
+
+```json
+// 401 Unauthorized
+{
+  "Code": 401,
+  "Message": "Authentication failed. Token is missing or expired."
+}
+```
+
+```json
+// 403 Forbidden
+{
+  "Code": 403,
+  "Message": "You do not have permission to modify this workbook."
+}
+```
+
+```json
+// 500 Internal Server Error
+{
+  "Code": 500,
+  "Message": "An unexpected error occurred while applying the signature."
+}
+```
 
 You can use the cURL command‑line tool to call Aspose.Cells web services. The example below demonstrates a request to the API:
 
@@ -71,7 +108,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature?digitalsign
 
 ## Cloud SDK Family
 
-Using an SDK is the fastest way to integrate digital‑signature functionality. SDKs handle low‑level details so you can focus on your business logic. Check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to integrate digital‑signature functionality. SDKs handle low‑level details so you can focus on your business logic. Check the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services with various SDKs:
 
@@ -126,3 +163,5 @@ The following code examples demonstrate how to call Aspose.Cells web services wi
 {{< /tab >}}
 
 {{< /tabs >}}
+
+You may also find related API pages useful, such as **[Encrypt an Excel File](/excel-encrypt/)** and **[Protect an Excel File](/excel-protect/)**, which provide additional security options for your workbooks.

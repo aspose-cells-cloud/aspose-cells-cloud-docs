@@ -1,5 +1,6 @@
 ---
 title: "Add an empty row on an Excel worksheet"
+ArticleTitle: "Add an empty row to an Excel worksheet using Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Row"
 type: docs
@@ -11,6 +12,14 @@ weight: 20
 ---
 
 This REST API adds a new row to an Excel worksheet.
+
+**Prerequisites:**  
+- A valid Aspose Cloud access token (Bearer JWT) must be included in the `Authorization` header.  
+- The target workbook must be uploaded to your Aspose Cloud storage, and the `folder` and `storageName` parameters should point to its location.
+
+**Notes:**  
+- The `rowIndex` is zero‑based; inserting at index 0 adds a row at the top of the worksheet.  
+- Excel worksheets have a maximum of 1,048,576 rows; attempting to insert beyond this limit will result in an error.
 
 ## REST API
 
@@ -59,9 +68,20 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 {{< /tabs >}}
 
+**Response Codes**
+
+| Code | Description |
+|------|-------------|
+| 200 | Row inserted successfully. |
+| 400 | Bad request – missing or invalid parameters. |
+| 401 | Unauthorized – authentication failed or token missing. |
+| 403 | Forbidden – insufficient permissions to modify the workbook. |
+| 404 | Not found – the specified workbook or worksheet does not exist. |
+| 500 | Internal server error – unexpected condition on the server. |
+
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

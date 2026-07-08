@@ -6,11 +6,15 @@ type: docs
 url: /worksheets/autofit/row/
 aliases: [/autofit-single-row-of-worksheet/]
 description: "Learn how to use Aspose.Cells Cloud REST API to autofit a row in an Excel worksheet. Includes endpoint, parameters, authentication, error handling, cURL request, and SDK examples."
-keywords: "autofit row, Aspose.Cells Cloud, Excel API, REST, worksheet, SDK"
+keywords: "autofit row, Aspose.Cells Cloud, Excel API, REST, worksheet, SDK, spreadsheet, cloud API"
 weight: 30
+ArticleTitle: "Autofit Row in Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
 This REST API **autofits a row** on an Excel worksheet.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -31,6 +35,17 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitro
 | folder            | string  | query    | Folder where the file is stored.                                                                                                                                                                             |
 | storageName       | string  | query    | Name of the storage.                                                                                                                                                                                         |
 
+**Sample `autoFitterOptions` JSON body**
+
+```json
+{
+  "IsMergedCells": true,
+  "IsWrapped": false,
+  "AutoFitMergedCells": true,
+  "AutoFitWrappedCells": false
+}
+```
+
 ### Entity Definitions
 
 | Entity              | Description                                                                              |
@@ -40,7 +55,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autofitro
 | `lastColumn`        | Ending column for the autofit operation.                                                 |
 | `autoFitterOptions` | Optional settings that influence how the row is autofit (merged cells, wrap text, etc.). |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostAutofitWorksheetRow) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The [OpenAPI Specification](/cells/#/Worksheets/PostAutofitWorksheetRow) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The example below demonstrates how to call the API with cURL.
 
@@ -82,7 +97,7 @@ The API returns standard HTTP status codes. Common error responses for this endp
 
 ## Cloud SDK Family
 
-Using an SDK is the fastest way to develop. An SDK abstracts low‑level details, allowing you to focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK abstracts low‑level details, allowing you to focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud){:rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
@@ -121,3 +136,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**See also:** [Autofit column](/worksheets/autofit/column/), [Autofit rows](/worksheets/autofit/rows/), [AutoFitterOptions](/cells/auto-fitter-options).

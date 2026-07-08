@@ -14,11 +14,15 @@ Export a worksheet from a local Excel file to a [PDF](https://docs.fileformat.co
 
 ## **Convert Worksheet to PDF API**
 
+Before calling the API, you must obtain a valid OAuth 2.0 access token and include it in the `Authorization` header as `Bearer {access_token}`. The token is acquired from the Aspose Cloud authentication service using your client ID and secret. Ensure you are using HTTPS for all requests to protect the token and data in transit.
+
 ### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
+PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/pdf
 ```
+
+> **Security note:** Always use the HTTPS endpoint and transmit your OAuth token securely. Do not expose the token in client‑side code or logs.
 
 ### **Request Parameters:**
 

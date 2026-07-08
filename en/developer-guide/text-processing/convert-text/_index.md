@@ -26,8 +26,10 @@ Clean Excel data by converting text‑formatted numbers to numeric values, repla
 ### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/content/convert/text
+PUT https://api.aspose.cloud/v4.0/cells/content/convert/text
 ```
+
+**Prerequisites:** The API requires a valid OAuth 2.0 access token. Include it in the request header as `Authorization: Bearer {access_token}`. Always use HTTPS to protect the token and data in transit.
 
 ### The request parameters of **convertText** API are
 

@@ -5,7 +5,7 @@ ArticleTitle: "Bulk Text Insertion for Excel – Add Prefixes, Suffixes & Custom
 linktitle: "AddText"
 type: docs
 url: /add-text/
-keywords: "Aspose Cells API, add text Excel, bulk text insertion, prefix suffix Excel, spreadsheet text replace"
+keywords: "Aspose Cells API, add text Excel, bulk text insertion, prefix suffix Excel, spreadsheet text replace, Excel automation, cloud spreadsheet API"
 description: "Insert prefixes, suffixes, or custom labels into many Excel cells in one call with Aspose.Cells Cloud. Choose start, end, before or after any text. Supports range, worksheet, and empty‑cell handling."
 weight: 100
 ---
@@ -38,24 +38,35 @@ One‑call bulk insert of prefixes, suffixes, or anchored strings into every cel
 ### **Web API**
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/content/add/text
+PUT https://api.aspose.cloud/v4.0/cells/content/add/text
 ```
+
+**Authentication** – The API uses OAuth 2.0. Include an `Authorization: Bearer {access_token}` header with a valid access token obtained via the Aspose Cloud authentication flow.
 
 ### The request parameters of the **AddText** API are
 
-| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                                              |
-| :------------- | :------ | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File    | FormData                   | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                                |
-| text           | String  | Query                      | The text content to be added to the specified cells in the spreadsheet.                                                                                  |
-| position       | String  | Query                      | Specifies where to insert the text relative to the existing cell content. Options: `AtTheBeginning`, `AtTheEnd`, `BeforeText`, `AfterText`, `None`.      |
-| selectText     | String  | Query                      | _(Optional)_ If provided, the text will be added only in cells that contain this exact substring. Used in conjunction with the `position` parameter.     |
-| skipEmptyCells | Boolean | Query                      | If `true`, empty cells are skipped; if `false`, text is added to empty cells.                                                                            |
-| worksheet      | String  | Query                      | _(Optional)_ The name of the worksheet where text will be added. If omitted, the operation applies to the first worksheet by default.                    |
-| range          | String  | Query                      | _(Optional)_ The cell range where text will be added (e.g., `"A1:C10"`). If omitted, the operation applies to all used cells in the specified worksheet. |
-| outPath        | String  | Query                      | _(Optional)_ The cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder.               |
-| outStorageName | String  | Query                      | The name of the cloud storage where the output file will be stored.                                                                                      |
-| region         | String  | Query                      | _(Optional)_ Sets the locale for formatting numbers, dates, and currency in the output file (e.g., `"en-US"`, `"zh-CN"`, `"de-DE"`).                     |
-| password       | String  | Query                      | _(Optional)_ If the uploaded spreadsheet is password‑protected, provide the password to open and process the file.                                       |
+| Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                                              | Required |
+| :------------- | :------ | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- |
+| Spreadsheet    | File    | FormData                   | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                                | Yes |
+| text           | String  | Query                      | The text content to be added to the specified cells in the spreadsheet.                                                                                  | Yes |
+| position       | String  | Query                      | Specifies where to insert the text relative to the existing cell content. Options: `AtTheBeginning`, `AtTheEnd`, `BeforeText`, `AfterText`, `None`.      | Yes |
+| selectText     | String  | Query                      | _(Optional)_ If provided, the text will be added only in cells that contain this exact substring. Used in conjunction with the `position` parameter.     | No |
+| skipEmptyCells | Boolean | Query                      | If `true`, empty cells are skipped; if `false`, text is added to empty cells.                                                                            | No |
+| worksheet      | String  | Query                      | _(Optional)_ The name of the worksheet where text will be added. If omitted, the operation applies to the first worksheet by default.                    | No |
+| range          | String  | Query                      | _(Optional)_ The cell range where text will be added (e.g., `"A1:C10"`). If omitted, the operation applies to all used cells in the specified worksheet. | No |
+| outPath        | String  | Query                      | _(Optional)_ The cloud storage folder path where the processed workbook will be saved. If omitted, the file is saved in the source folder.               | No |
+| outStorageName | String  | Query                      | The name of the cloud storage where the output file will be stored.                                                                                      | No |
+| region         | String  | Query                      | _(Optional)_ Sets the locale for formatting numbers, dates, and currency in the output file (e.g., `"en-US"`, `"zh-CN"`, `"de-DE"`).                     | No |
+| password       | String  | Query                      | _(Optional)_ If the uploaded spreadsheet is password‑protected, provide the password to open and process the file.                                       | No |
+
+**cURL Example**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/content/add/text?text=Report&position=AtTheBeginning&skipEmptyCells=true" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/workbook.xlsx" \
+  -F "outPath=output/workbook_modified.xlsx"
+```
 
 ### **Response**
 
@@ -66,17 +77,32 @@ PUT http://api.aspose.cloud/v4.0/cells/content/add/text
     "DataType": {
       "Identifier": "File",
       "Reference": "Stream"
-    }
+    },
+    "FileName": "workbook_modified.xlsx",
+    "FileSize": 124578,
+    "DownloadUrl": "https://storage.aspose.cloud/v4.0/files/workbook_modified.xlsx"
   }
 ]
 ```
 
+The response returns a JSON array containing a single object that describes the generated file:
+
+| Property      | Type   | Description                                          |
+| ------------- | ------ | ---------------------------------------------------- |
+| Name          | string | Fixed value `"ResponseFile"`                         |
+| FileName      | string | Name of the processed workbook file.                 |
+| FileSize      | int    | Size of the file in bytes.                           |
+| DownloadUrl   | string | Direct URL to download the processed workbook.       |
+| DataType      | object | Describes the data type (always a file stream).     |
+
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
-- **500 Server Error**: The spreadsheet encountered an anomaly while obtaining calculation data.
+| Code | Description |
+| ---- | ----------- |
+| **400** Bad Request | Invalid Aspose.Cells Cloud API URI or missing required parameters. |
+| **401** Unauthorized | Invalid access token or invalid client ID and secret. |
+| **404** Not Found | The spreadsheet file is not accessible. |
+| **500** Server Error | The spreadsheet encountered an anomaly while obtaining calculation data. |
 
 ## Where should we use the Add Text for Spreadsheet API?
 

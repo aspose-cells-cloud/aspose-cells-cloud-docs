@@ -14,10 +14,21 @@ weight: 100
 
 **Summary** – The `storageExists` endpoint lets you confirm whether a specific storage container is available in Aspose.Cells Cloud. Use it before performing file‑related operations to avoid runtime errors. The API returns a JSON object containing an `Exists` boolean that indicates the storage status.
 
+**Prerequisites** – An active Aspose Cloud account and a valid OAuth 2.0 access token are required before invoking this endpoint.
+
+**Authentication** – Include the header `Authorization: Bearer <access_token>` in the request.
+
 ### Web API
 
 ```
 GET https://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist
+```
+
+**cURL example**
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
 ### Function Description
@@ -67,11 +78,11 @@ The `storageExists` API checks whether a specified storage exists in the Aspose.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageController/StorageExists) defines a publicly accessible programming interface, allowing developers to seamlessly interact with the REST API directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/#/StorageController/StorageExists" rel="nofollow noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface, allowing developers to seamlessly interact with the REST API directly from a web browser.
 
 ## Excel API SDK
 
-Utilizing an SDK is the most efficient approach to accelerate development. An SDK abstracts low‑level implementation details, enabling developers to concentrate on their project tasks. For a comprehensive list of available Aspose.Cells Cloud SDKs, please visit the [GitHub repository](https://github.com/aspose-cells-cloud).
+Utilizing an SDK is the most efficient approach to accelerate development. An SDK abstracts low‑level implementation details, enabling developers to concentrate on their project tasks. For a comprehensive list of available Aspose.Cells Cloud SDKs, please visit the <a href="https://github.com/aspose-cells-cloud" rel="nofollow noopener noreferrer">GitHub repository</a>.
 
 The following code examples demonstrate how to make API calls to Aspose.Cells web services using various SDKs:
 

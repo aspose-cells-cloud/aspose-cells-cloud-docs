@@ -5,7 +5,7 @@ ArticleTitle: "Find & Fix Broken Links in Remote Excel Range – Cloud Spreadshe
 linktitle: "Search Remote Range Broken Links"
 type: docs
 url: /search-broken-links-in-remote-range/
-keywords: "Aspose Cells, broken links API, Excel range validation, cloud spreadsheet, external reference checker"
+keywords: "Aspose, Cells, broken links, API, Excel range, validation, cloud, spreadsheet, external reference, checker"
 description: "Use Aspose.Cells Cloud API to scan a specific Excel range for broken external links, invalid formulas, or missing data sources. Secure, fast, and cloud‑based."
 weight: 100
 ---
@@ -13,6 +13,8 @@ weight: 100
 ## **Search Broken Links in Remote Range API**
 
 Automatically detect broken links in the range data of Excel files stored in cloud storage. Our API scans specified ranges for broken external references, invalid formulas, and missing data sources. Supports remote spreadsheet auditing, automated quality checks, and integration with cloud storage providers. RESTful API for enterprise workflow automation.
+
+**Prerequisites**: To call this API you must have a valid OAuth 2.0 access token, and the workbook must be stored in a supported cloud storage (e.g., Aspose Cloud Storage, Dropbox, Amazon S3). The request also requires the `name`, `worksheet`, and `cellArea` path parameters. Ensure that the SDK version you use matches the API version (v4.0).
 
 ### **Web API**
 
@@ -31,6 +33,20 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{ce
 | storageName    | String | Query    | **Optional.** The name of your configured cloud storage service (e.g., `DropboxBusiness`, `S3Bucket`). If not specified, the API uses the account’s default storage. |
 | region         | String | Query    | **Optional.** The locale setting (e.g., `en-GB`, `de-DE`) to apply for regional‑specific data interpretation during the scan.                                        |
 | password       | String | Query    | **Optional.** The decryption password required to access a password‑protected workbook. Leave empty if the file is not encrypted.                                    |
+
+**Example Request Body**
+
+```json
+{
+  "name": "financial_report.xlsx",
+  "worksheet": "Sheet1",
+  "cellArea": "A1:F100",
+  "folder": "reports/2024",
+  "storageName": "MyDropbox",
+  "region": "en-US",
+  "password": ""
+}
+```
 
 ### Response
 
@@ -72,6 +88,8 @@ The `BrokenLinks` collection contains objects of type **BrokenLink**. Each objec
 - **CellName** – The address of the cell that contains the broken reference (e.g., `B12`).
 - **LinkType** – The type of link that is broken (e.g., `ExternalReference`, `Formula`).
 - **ErrorMessage** – A description of why the link is considered broken.
+
+**Note**: The API is subject to rate limits. Refer to the [Pricing and Rate Limits](https://www.aspose.cloud/pricing) page for details.
 
 ### Error Codes
 
@@ -132,3 +150,5 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchBrokenLinksInRemoteRange.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+For scanning an entire worksheet, see the **Search Broken Links in Remote Worksheet** API.

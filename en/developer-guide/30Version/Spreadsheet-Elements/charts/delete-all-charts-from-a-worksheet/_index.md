@@ -10,6 +10,13 @@ description: "Learn how to delete every chart in a worksheet using Aspose.Cells 
 
 This REST API deletes all charts from the specified worksheet.
 
+**Background** – Removing all charts from a worksheet is useful when you need to reset a sheet’s visual layout, replace outdated visualizations, or prepare a workbook for reuse without retaining previous chart data.
+
+**Prerequisites** –  
+- A valid Aspose Cloud JWT token obtained via the OAuth 2.0 flow.  
+- The workbook must be stored in a supported storage location (default Aspose Cloud storage or a custom storage you have configured).  
+- The target worksheet must exist in the workbook.
+
 ## REST API
 
 ```bash
@@ -59,6 +66,15 @@ _If the request fails, the API returns an error JSON with an appropriate HTTP st
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Response Codes**
+
+| HTTP Status | Meaning                              | When It Occurs |
+|-------------|--------------------------------------|----------------|
+| 200         | Success – all charts were deleted    | Valid request |
+| 401         | Unauthorized – missing or invalid JWT| Authentication failure |
+| 404         | Not Found – workbook, worksheet, or chart collection does not exist | Incorrect `name` or `sheetName` |
+| 500         | Internal Server Error – unexpected condition on the server | Server‑side issue |
 
 ## Cloud SDK Family
 
@@ -129,3 +145,5 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tabs >}}
 
 _See also:_ [Delete a Chart](../delete/) • [Get Charts](../list/)
+
+In addition to the examples above, you may also want to review the related operations **Delete a Chart** and **Get Charts** for a complete workflow when managing chart objects in a worksheet.

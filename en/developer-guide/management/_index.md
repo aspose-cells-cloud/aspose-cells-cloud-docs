@@ -5,12 +5,14 @@ ArticleTitle: "Advanced Excel Workbook Operations: Sheet Management and Compress
 linktitle: "Management"
 type: docs
 url: /management/
-keywords: "Aspose.Cells Cloud, Excel API, worksheet management, compress spreadsheet, create workbook"
-description: "Use Aspose.Cells Cloud API to add, delete, move, rename worksheets, compress spreadsheets, and create workbooks from templates—no local Excel required."
+keywords: "Aspose.Cells Cloud, Excel API, worksheet management, compress spreadsheet, create workbook, Excel automation, cloud workbook operations"
+description: "Use Aspose.Cells Cloud API to add, delete, move, rename worksheets, compress spreadsheets, and create workbooks from templates — no local Excel required."
 weight: 50
 ---
 
 Complete suite of Excel worksheet management APIs. Add, delete, move, rename worksheets, compress spreadsheet size, and create new workbooks from templates. Full control over Excel workbook structure and organization through the cloud API. No local Excel installation required.
+
+This page provides an overview of the management capabilities offered by Aspose.Cells Cloud, helping you understand how to manipulate worksheet structures, optimise file size, and generate workbooks programmatically.
 
 ## Excel Worksheet Management APIs
 

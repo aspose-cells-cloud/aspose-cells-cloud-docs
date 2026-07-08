@@ -5,10 +5,14 @@ url: /conditional-formattings/delete-cell-area/
 aliases: [/remove-cell-area-from-conditional-formatting/]
 keywords: "Aspose.Cells Cloud, Delete Cell Area, Conditional Formatting API, Excel REST API"
 description: "Use the Aspose.Cells Cloud REST API to delete a specific cell area from conditional formatting in an Excel worksheet. Includes ASP.NET, Java, and Python examples."
+ArticleTitle: "Delete Cell Area – Aspose.Cells Cloud API Documentation"
 weight: 70
 ---
 
 This REST API removes a cell area from a conditional‑formatting rule.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -71,7 +75,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/condit
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud){:target="_blank" rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

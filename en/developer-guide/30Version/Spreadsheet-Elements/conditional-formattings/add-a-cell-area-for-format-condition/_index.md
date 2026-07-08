@@ -4,11 +4,14 @@ type: docs
 url: /conditional-formattings/add-cell-area/
 aliases: [/add-a-cell-area-for-format-condition/]
 keywords: "Aspose.Cells Cloud, conditional formatting, add cell area, REST API, Excel, SDK"
-description: "Learn how to add a cell area to a conditional formatting rule in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, SDK snippets, and error handling."
+description: "Add a cell area to a conditional formatting rule in Excel via Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL, SDK examples, and error handling."
 weight: 30
 ---
 
 This REST API adds a cell area to a format condition.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token‑based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -54,19 +57,30 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/condit
 }
 ```
 
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ### Successful response –
 
-a JSON object containing `Code` `200` and `Status` `OK`. The body may also include the updated `CellArea` object.
+A JSON object containing `Code` `200` and `Status` `OK`. The body may also include the updated `CellArea` object.
+
+#### Updated CellArea schema
+| Property | Type   | Description                         |
+|----------|--------|-------------------------------------|
+| StartRow | int    | Zero‑based index of the first row.  |
+| StartColumn | int | Zero‑based index of the first column. |
+| EndRow   | int    | Zero‑based index of the last row.   |
+| EndColumn| int    | Zero‑based index of the last column.|
 
 ### Common error responses
 
 - **400 Bad Request** – `{ "Code":"400", "Message":"Invalid cellArea format." }`
 - **401 Unauthorized** – `{ "Code":"401", "Message":"Invalid or missing JWT token." }`
+- **403 Forbidden** – `{ "Code":"403", "Message":"Insufficient permissions." }`
 - **404 Not Found** – `{ "Code":"404", "Message":"Worksheet or conditional formatting rule not found." }`
-
-{{< /tab >}}
-
-{{< /tabs >}}
+- **409 Conflict** – `{ "Code":"409", "Message":"CellArea overlaps with an existing area." }`
+- **500 Internal Server Error** – `{ "Code":"500", "Message":"Unexpected server error." }`
 
 ## Cloud SDK Family
 
@@ -90,6 +104,34 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="3" >}}
 
+```php
+<?php
+require 'vendor/autoload.php';
+
+use Aspose\Cells\Cloud\Sdk\Api\ConditionalFormattingsApi;
+use Aspose\Cells\Cloud\Sdk\Configuration;
+
+$config = new Configuration();
+$config->setAppSid('YOUR_APP_SID');
+$config->setAppKey('YOUR_APP_KEY');
+
+$apiInstance = new ConditionalFormattingsApi($config);
+$name = 'Book1.xlsx';
+$sheetName = 'sheet1';
+$index = 0;
+$cellArea = 'A1:C3';
+$folder = null;
+$storageName = null;
+
+try {
+    $result = $apiInstance->putWorksheetFormatConditionArea($name, $sheetName, $index, $cellArea, $folder, $storageName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ConditionalFormattingsApi->putWorksheetFormatConditionArea: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
@@ -106,13 +148,81 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="6" >}}
 
+```python
+import asposecellscloudsdk
+from asposecellscloudsdk.rest import ApiException
+from asposecellscloudsdk import Configuration, ApiClient
+from asposecellscloudsdk.api import conditional_formattings_api
+
+config = Configuration()
+config.app_sid = 'YOUR_APP_SID'
+config.app_key = 'YOUR_APP_KEY'
+
+api_instance = conditional_formattings_api.ConditionalFormattingsApi(ApiClient(config))
+name = 'Book1.xlsx'
+sheet_name = 'sheet1'
+index = 0
+cell_area = 'A1:C3'
+
+try:
+    result = api_instance.put_worksheet_format_condition_area(name, sheet_name, index, cell_area)
+    print(result)
+except ApiException as e:
+    print("Exception when calling ConditionalFormattingsApi->put_worksheet_format_condition_area: %s\n" % e)
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
+```java
+// Android (Java) example using Aspose.Cells Cloud SDK
+import com.aspose.cloud.cells.api.ConditionalFormattingsApi;
+import com.aspose.cloud.cells.client.ApiClient;
+import com.aspose.cloud.cells.client.Configuration;
+
+Configuration config = new Configuration();
+config.setAppSid("YOUR_APP_SID");
+config.setAppKey("YOUR_APP_KEY");
+
+ConditionalFormattingsApi api = new ConditionalFormattingsApi(new ApiClient(config));
+
+String name = "Book1.xlsx";
+String sheetName = "sheet1";
+Integer index = 0;
+String cellArea = "A1:C3";
+
+try {
+    com.aspose.cloud.cells.model.ResponseMessage response = api.putWorksheetFormatConditionArea(name, sheetName, index, cellArea, null, null);
+    System.out.println(response);
+} catch (Exception e) {
+    e.printStackTrace();
+}
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
+```swift
+import AsposeCellsCloud
+
+let config = Configuration(appSid: "YOUR_APP_SID", appKey: "YOUR_APP_KEY")
+let api = ConditionalFormattingsApi(configuration: config)
+
+let name = "Book1.xlsx"
+let sheetName = "sheet1"
+let index = 0
+let cellArea = "A1:C3"
+
+api.putWorksheetFormatConditionArea(name: name, sheetName: sheetName, index: index, cellArea: cellArea, folder: nil, storageName: nil) { result, error in
+    if let err = error {
+        print("Error: \\(err)")
+    } else if let res = result {
+        print(res)
+    }
+}
+```
 
 {{< /tab >}}
 
@@ -129,3 +239,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Developers can also refer to related operations such as **Delete Cell Area** and **Add Condition to Conditional Formatting** for further workflow integration.

@@ -4,12 +4,47 @@ second_title: "Document"
 linktitle: "Advanced Convert"
 type: docs
 url: /advanced-convert-excel/
-keywords: "Aspose.Cells Cloud, Excel conversion, spreadsheet conversion, page setup, save options, print settings, REST API, SDKs, Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
+keywords: "Aspose.Cells, Excel conversion, Cloud API, SDK"
 description: "The Aspose.Cells Cloud REST API provides powerful features for converting Excel workbooks to a wide range of formats, configuring page setup, save options, and print settings. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift, enabling seamless integration across multiple platforms."
 weight: 50
+ArticleTitle: "Advanced Convert Excel File – Aspose.Cells Cloud API Guide"
 ---
 
 ## Advanced Cloud API for Excel Conversion
+
+The Advanced Convert operation enables you to transform an Excel workbook into various output formats (PDF, HTML, CSV, etc.) while giving you fine‑grained control over page setup, save options, and print settings.  
+
+**API Reference**  
+- **Method:** `PUT`  
+- **Endpoint:** `/cells/convert`  
+- **Parameters:**  
+  - `format` (string, required) – Desired output format (e.g., `pdf`, `html`).  
+  - `outPath` (string, optional) – Path in cloud storage where the converted file will be saved.  
+  - `options` (object, optional) – JSON object containing advanced conversion options such as `pageSetup`, `saveOptions`, and `printSettings`.  
+- **Request Body Example:**  
+  ```json
+  {
+    "format": "pdf",
+    "outPath": "output/converted.pdf",
+    "options": {
+      "pageSetup": {
+        "orientation": "Landscape",
+        "paperSize": "A4"
+      },
+      "saveOptions": {
+        "compress": true
+      },
+      "printSettings": {
+        "printHeadings": false
+      }
+    }
+  }
+  ```  
+- **Response:**  
+  - `200 OK` – Conversion succeeded; response contains the converted file stream or a reference to the saved file.  
+  - `400 Bad Request` – Invalid parameters or malformed request body.  
+  - `401 Unauthorized` – Authentication failed or token missing.  
+  - `500 Internal Server Error` – Server‑side error during conversion.  
 
 ### The ability to load spreadsheet files from multiple data sources
 
@@ -17,7 +52,7 @@ weight: 50
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK helps accelerate development by handling low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

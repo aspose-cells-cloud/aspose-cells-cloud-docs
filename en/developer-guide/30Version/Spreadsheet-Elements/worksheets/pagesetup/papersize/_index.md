@@ -4,9 +4,10 @@ second_title: "Document"
 linktitle: "Paper Size"
 type: docs
 url: /paper-size/
-keywords: "paper size, Aspose.Cells Cloud, REST API, spreadsheet, A4, Letter, custom paper size, ISO, JIS, PRC"
-description: "Explore the full set of paper‑size constants supported by the Aspose.Cells Cloud REST API. Learn dimensions, usage examples, and how to set custom sizes in your spreadsheets."
+keywords: "paper size, Aspose.Cells Cloud, REST API, spreadsheet, A4, Letter, ISO, JIS, PRC"
+description: "Full list of paper‑size constants supported by Aspose.Cells Cloud REST API, including dimensions and usage examples for setting custom sizes in spreadsheets."
 weight: 20
+ArticleTitle: "Aspose.Cells Cloud Paper Size Constants – Complete Reference"
 ---
 
 ## **Paper Size Values**
@@ -18,7 +19,7 @@ Developers use these constants with the `SetPageSetup` API (or the equivalent SD
 | Name                               | Description                                        |
 | ---------------------------------- | -------------------------------------------------- |
 | PaperLetter                        | Letter (8½ in × 11 in)                             |
-| PaperLetterSmall                   | Letter Small (8½ in × 11 in)                       |
+| PaperLetterSmall                   | Letter Small (8½ in × 11 in) – same as Letter      |
 | PaperTabloid                       | Tabloid (11 in × 17 in)                            |
 | PaperLedger                        | Ledger (17 in × 11 in)                             |
 | PaperLegal                         | Legal (8½ in × 14 in)                              |
@@ -26,7 +27,7 @@ Developers use these constants with the `SetPageSetup` API (or the equivalent SD
 | PaperExecutive                     | Executive (7¼ in × 10½ in)                         |
 | PaperA3                            | A3 (297 mm × 420 mm)                               |
 | PaperA4                            | A4 (210 mm × 297 mm)                               |
-| PaperA4Small                       | A4 Small (210 mm × 297 mm)                         |
+| PaperA4Small                       | A4 Small (210 mm × 297 mm) – same as A4            |
 | PaperA5                            | A5 (148 mm × 210 mm)                               |
 | PaperB4                            | JIS B4 (257 mm × 364 mm)                           |
 | PaperB5                            | JIS B5 (182 mm × 257 mm)                           |
@@ -40,9 +41,9 @@ Developers use these constants with the `SetPageSetup` API (or the equivalent SD
 | PaperEnvelope11                    | Envelope #11 (4½ in × 10 3/8 in)                   |
 | PaperEnvelope12                    | Envelope #12 (4½ in × 11 in)                       |
 | PaperEnvelope14                    | Envelope #14 (5 in × 11½ in)                       |
-| PaperCSheet                        | C size sheet                                       |
-| PaperDSheet                        | D size sheet                                       |
-| PaperESheet                        | E size sheet                                       |
+| PaperCSheet                        | C size sheet                                      |
+| PaperDSheet                        | D size sheet                                      |
+| PaperESheet                        | E size sheet                                      |
 | PaperEnvelopeDL                    | Envelope DL (110 mm × 220 mm)                      |
 | PaperEnvelopeC5                    | Envelope C5 (162 mm × 229 mm)                      |
 | PaperEnvelopeC3                    | Envelope C3 (324 mm × 458 mm)                      |
@@ -64,13 +65,13 @@ Developers use these constants with the `SetPageSetup` API (or the equivalent SD
 | Paper10x11                         | 10 in × 11 in                                      |
 | Paper15x11                         | 15 in × 11 in                                      |
 | PaperEnvelopeInvite                | Envelope Invite (220 mm × 220 mm)                  |
-| PaperLetterExtra                   | US Letter Extra (9 ¼ in × 12 in)                   |
-| PaperLegalExtra                    | US Legal Extra (9 ¼ in × 15 in)                    |
+| PaperLetterExtra                   | US Letter Extra (9¼ in × 12 in)                    |
+| PaperLegalExtra                    | US Legal Extra (9¼ in × 15 in)                     |
 | PaperTabloidExtra                  | US Tabloid Extra (11.69 in × 18 in)                |
 | PaperA4Extra                       | A4 Extra (9.27 in × 12.69 in)                      |
-| PaperLetterTransverse              | Letter Transverse (8 ¼ in × 11 in)                 |
+| PaperLetterTransverse              | Letter Transverse (8¼ in × 11 in)                 |
 | PaperA4Transverse                  | A4 Transverse (210 mm × 297 mm)                    |
-| PaperLetterExtraTransverse         | Letter Extra Transverse (9 ¼ in × 12 in)           |
+| PaperLetterExtraTransverse         | Letter Extra Transverse (9¼ in × 12 in)           |
 | PaperSuperA                        | SuperA / SuperA / A4 (227 mm × 356 mm)             |
 | PaperSuperB                        | SuperB / SuperB / A3 (305 mm × 487 mm)             |
 | PaperLetterPlus                    | US Letter Plus (8.5 in × 12.69 in)                 |
@@ -85,10 +86,10 @@ Developers use these constants with the `SetPageSetup` API (or the equivalent SD
 | PaperA3ExtraTransverse             | A3 Extra Transverse (322 mm × 445 mm)              |
 | PaperJapaneseDoublePostcard        | Japanese Double Postcard (200 mm × 148 mm)         |
 | PaperA6                            | A6 (105 mm × 148 mm)                               |
-| PaperJapaneseEnvelopeKaku2         | Japanese Envelope Kaku #2                          |
-| PaperJapaneseEnvelopeKaku3         | Japanese Envelope Kaku #3                          |
-| PaperJapaneseEnvelopeChou3         | Japanese Envelope Chou #3                          |
-| PaperJapaneseEnvelopeChou4         | Japanese Envelope Chou #4                          |
+| PaperJapaneseEnvelopeKaku2         | Japanese Envelope Kaku #2 (100 mm × 148 mm)       |
+| PaperJapaneseEnvelopeKaku3         | Japanese Envelope Kaku #3 (120 mm × 235 mm)       |
+| PaperJapaneseEnvelopeChou3         | Japanese Envelope Chou #3 (120 mm × 235 mm)       |
+| PaperJapaneseEnvelopeChou4         | Japanese Envelope Chou #4 (120 mm × 235 mm)       |
 | PaperLetterRotated                 | 11 in × 8.5 in                                     |
 | PaperA3Rotated                     | 420 mm × 297 mm                                    |
 | PaperA4Rotated                     | 297 mm × 210 mm                                    |
@@ -98,15 +99,15 @@ Developers use these constants with the `SetPageSetup` API (or the equivalent SD
 | PaperJapanesePostcardRotated       | Japanese Postcard Rotated (148 mm × 100 mm)        |
 | PaperJapaneseDoublePostcardRotated | Double Japanese Postcard Rotated (148 mm × 200 mm) |
 | PaperA6Rotated                     | A6 Rotated (148 mm × 105 mm)                       |
-| PaperJapaneseEnvelopeKaku2Rotated  | Japanese Envelope Kaku #2 Rotated                  |
-| PaperJapaneseEnvelopeKaku3Rotated  | Japanese Envelope Kaku #3 Rotated                  |
-| PaperJapaneseEnvelopeChou3Rotated  | Japanese Envelope Chou #3 Rotated                  |
-| PaperJapaneseEnvelopeChou4Rotated  | Japanese Envelope Chou #4 Rotated                  |
+| PaperJapaneseEnvelopeKaku2Rotated  | Japanese Envelope Kaku #2 Rotated (148 mm × 100 mm) |
+| PaperJapaneseEnvelopeKaku3Rotated  | Japanese Envelope Kaku #3 Rotated (235 mm × 120 mm) |
+| PaperJapaneseEnvelopeChou3Rotated  | Japanese Envelope Chou #3 Rotated (235 mm × 120 mm) |
+| PaperJapaneseEnvelopeChou4Rotated  | Japanese Envelope Chou #4 Rotated (235 mm × 120 mm) |
 | PaperJISB6                         | B6 (JIS) 128 mm × 182 mm                           |
 | PaperJISB6Rotated                  | B6 (JIS) Rotated (182 mm × 128 mm)                 |
 | Paper12x11                         | 12 in × 11 in                                      |
-| PaperJapaneseEnvelopeYou4          | Japanese Envelope You #4                           |
-| PaperJapaneseEnvelopeYou4Rotated   | Japanese Envelope You #4 Rotated                   |
+| PaperJapaneseEnvelopeYou4          | Japanese Envelope You #4 (100 mm × 148 mm)        |
+| PaperJapaneseEnvelopeYou4Rotated   | Japanese Envelope You #4 Rotated (148 mm × 100 mm) |
 | PaperPRC16K                        | PRC 16K (146 mm × 215 mm)                          |
 | PaperPRC32K                        | PRC 32K (97 mm × 151 mm)                           |
 | PaperPRCEnvelope1                  | PRC Envelope #1 (102 mm × 165 mm)                  |
@@ -135,7 +136,7 @@ Developers use these constants with the `SetPageSetup` API (or the equivalent SD
 | PaperB3                            | Usual B3 (13.9 in × 19.7 in)                       |
 | PaperBusinessCard                  | Business Card (90 mm × 55 mm)                      |
 | PaperThermal                       | Thermal (3 in × 11 in)                             |
-| Custom                             | Represents a custom paper size.                    |
+| Custom                             | Represents a custom paper size. Use the `Custom` enum together with explicit width and height values in points. |
 
 ### How to set a paper size with the Aspose.Cells Cloud REST API
 
@@ -145,3 +146,24 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/Workbook/worksheets/Sheet1/page
   -H "Content-Type: application/json" \
   -d '{"PaperSize":"PaperA4"}'
 ```
+
+**Request Details**  
+- **Method:** `PUT`  
+- **Endpoint:** `/cells/Workbook/worksheets/{sheetName}/pageSetup`  
+- **Path Parameters:** `sheetName` – name of the worksheet (string, required).  
+- **Request Body:** JSON object containing the `PaperSize` property. The value must be one of the constants listed in the table above, e.g., `"PaperA4"`.
+
+**Responses**  
+- `200 OK` – Page setup updated successfully.  
+- `400 Bad Request` – Invalid `PaperSize` value.  
+- `401 Unauthorized` – Authentication failed or missing token.  
+- `404 Not Found` – Specified worksheet does not exist.
+
+**Example SDK (C#)**  
+```csharp
+var api = new CellsApi("client_id", "client_secret");
+var request = new PageSetup { PaperSize = PaperSizeEnum.PaperA4 };
+api.PutWorksheetPageSetup("Book1.xlsx", "Sheet1", request);
+```
+
+For a complete OpenAPI definition, see the [Aspose.Cells Cloud Swagger specification](https://api.aspose.cloud/v3.0/swagger.json).

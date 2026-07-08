@@ -8,9 +8,13 @@ aliases: [/insert-horizontal-page-break-inside-worksheet/]
 keywords: "horizontal page break, Excel, Aspose.Cells Cloud, REST API, SDK, worksheet, cURL"
 description: "Learn how to add a horizontal page break to an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK code snippets for multiple programming languages."
 weight: 30
+ArticleTitle: "Add Horizontal Page Break – Aspose.Cells Cloud API"
 ---
 
-This REST API inserts a horizontal page break.
+The **Add Horizontal Page Break** API inserts a horizontal page break into an Excel worksheet.
+
+**Prerequisites & Authentication**  
+A valid JWT token is required for all calls to the Aspose.Cells Cloud API. Obtain the token via the OAuth 2.0 workflow described in the authentication guide, and include it in the request header as `Authorization: Bearer <jwt token>`. The target workbook must reside in a storage location accessible to the API (default storage or a custom `storageName` you specify).
 
 ## REST API
 
@@ -20,19 +24,19 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalp
 
 ### Request Parameters
 
-| Parameter Name | Type    | Location | Description                                                           |
-| -------------- | ------- | -------- | --------------------------------------------------------------------- |
-| name           | string  | path     | Name of the Excel file.                                               |
-| sheetName      | string  | path     | Name of the worksheet where the break will be added.                  |
-| cellname       | string  | query    | Cell reference (e.g., **A1**) that marks the start of the page break. |
-| row            | integer | query    | Zero‑based row index for the page break.                              |
-| column         | integer | query    | Zero‑based column index for the page break.                           |
-| startColumn    | integer | query    | Starting column of a range when inserting a break.                    |
-| endColumn      | integer | query    | Ending column of a range when inserting a break.                      |
-| folder         | string  | query    | Folder path containing the Excel file.                                |
-| storageName    | string  | query    | Name of the Aspose Cloud storage.                                     |
+| Parameter Name | Type    | Location | Description                                                               |
+| -------------- | ------- | -------- | ------------------------------------------------------------------------- |
+| name           | string  | path     | Name of the Excel file.                                                   |
+| sheetName      | string  | path     | Name of the worksheet where the break will be added.                      |
+| cellname       | string  | query    | Cell reference (e.g., **A1**) that marks the start of the page break.    |
+| row            | integer | query    | Zero‑based row index for the page break.                                  |
+| column         | integer | query    | Zero‑based column index for the page break.                               |
+| startColumn    | integer | query    | Starting column of a range when inserting a break.                        |
+| endColumn      | integer | query    | Ending column of a range when inserting a break.                          |
+| folder         | string  | query    | Folder path containing the Excel file.                                    |
+| storageName    | string  | query    | Name of the Aspose Cloud storage.                                         |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/PutHorizontalPageBreak) defines a publicly accessible interface that lets you perform REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/PageBreaks/PutHorizontalPageBreak" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible interface that lets you perform REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL.
 
@@ -63,9 +67,21 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheet
 
 {{< /tabs >}}
 
+**Response Codes**
+
+| HTTP Code | Description                                 |
+|-----------|---------------------------------------------|
+| 200       | The horizontal page break was added successfully. |
+| 400       | Bad request – missing or invalid parameters. |
+| 401       | Unauthorized – invalid or missing JWT token. |
+| 404       | Not found – the specified workbook or worksheet does not exist. |
+| 500       | Internal server error – an unexpected condition occurred. |
+
+For more details on related operations, see the API pages for **[Get Horizontal Page Breaks](../get-horizontal-page-breaks/)** and **[Delete Horizontal Page Break](../delete-horizontal-page-break/)**.
+
 ## Cloud SDK Family
 
-Using an SDK is the fastest way to develop. An SDK abstracts low‑level details so you can focus on your project. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK abstracts low‑level details so you can focus on your project. Please check the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

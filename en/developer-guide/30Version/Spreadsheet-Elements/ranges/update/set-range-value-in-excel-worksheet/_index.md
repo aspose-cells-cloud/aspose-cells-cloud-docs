@@ -8,9 +8,15 @@ aliases: [/set-range-value-in-excel-worksheet/]
 keywords: "Aspose.Cells, Excel API, set range value, REST API, cloud SDK, worksheet update"
 description: "Learn how to set a cell or range value in an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, SDK code samples, and error handling."
 weight: 72
+ArticleTitle: "Set Range Value in an Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
 Use this REST API to set a value in the specified range. When appropriate, the value is converted to another data type and the cell’s number format is reset.
+
+**Prerequisites**  
+- A valid Aspose Cloud account.  
+- A JWT token that includes the `Cells.ReadWrite` scope.  
+- The workbook must already be uploaded to the target storage location.
 
 ## REST API
 
@@ -61,6 +67,24 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Response Schema**
+
+| Field   | Type    | Description                                              |
+|---------|---------|----------------------------------------------------------|
+| Code    | integer | HTTP status code of the operation.                      |
+| Status  | string  | Short description of the result (e.g., "OK").           |
+| Message | string  | Detailed error message when the request fails (optional).|
+| Result  | object  | Additional data returned for successful calls (optional).|
+
+**Possible HTTP Status Codes**
+
+- **200 OK** – The range value was set successfully.  
+- **400 Bad Request** – Invalid parameters or malformed request body.  
+- **401 Unauthorized** – Missing or invalid JWT token.  
+- **403 Forbidden** – Insufficient permissions for the requested operation.  
+- **404 Not Found** – Specified workbook, worksheet, or range does not exist.  
+- **500 Internal Server Error** – Unexpected server error.
 
 ## Cloud SDK Family
 

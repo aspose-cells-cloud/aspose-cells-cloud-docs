@@ -8,7 +8,13 @@ aliases: [/get-row-from-a-worksheet/]
 keywords: "Aspose.Cells Cloud, Excel row API, Get Worksheet Row, REST API, .NET SDK, Java SDK, Python SDK"
 description: "Retrieve detailed information (height, style, hidden state, etc.) for a specific row in an Excel worksheet using Aspose.Cells Cloud REST API. Includes curl example, SDK snippets, and error handling."
 weight: 10
+ArticleTitle: "Get Row Description from an Excel Worksheet – Aspose.Cells Cloud API"
 ---
+
+**Prerequisites:**  
+- Obtain a valid JWT access token and include it in the `Authorization: Bearer <jwt token>` header.  
+- Ensure the workbook is stored in Aspose Cloud storage or specify the folder path where it resides.  
+- Use API version **v3.0** as shown in the endpoint URL.
 
 This REST API retrieves row data by its index on an Excel worksheet.
 
@@ -76,6 +82,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Notes / Error handling:** The API may return the following HTTP status codes:
+
+- **200** – Success; the row data is returned.  
+- **401** – Unauthorized; the JWT token is missing or invalid.  
+- **404** – Not found; the specified workbook, worksheet, or row does not exist.  
+- **500** – Internal server error; an unexpected condition occurred.
+
+For a complete list of error codes, see the Aspose.Cells Cloud [Error Codes documentation](https://docs.aspose.cloud/cells/).
 
 ## Cloud SDK Family
 

@@ -5,7 +5,7 @@ ArticleTitle: "How to Delete All Blank/Empty Rows in Excel – Complete Data Cle
 linktitle: "Delete Blank Rows"
 type: docs
 url: /delete-spreadsheet-blank-rows/
-keywords: "Excel, blank rows, Aspose.Cells Cloud, API"
+keywords: "Aspose.Cells, Excel, blank rows, delete rows, spreadsheet cleanup, API"
 description: "Remove all empty rows from Excel files via Aspose.Cells Cloud API. Fast, batch‑ready, and fully programmable – see code examples in C#, Java, Python, and more."
 weight: 100
 ---
@@ -29,6 +29,14 @@ PUT https://api.aspose.cloud/v4.0/cells/delete/blank-rows
 | outStorageName | String | Query    | Name of the configured cloud storage (e.g., `MyDropbox`, `CorporateOneDrive`). Required when you want the output stored in a specific storage. |
 | region         | String | Query    | Locale settings (e.g., `en-US`, `fr-FR`) applied during processing.                                                                            |
 | password       | String | Query    | Password for opening an encrypted spreadsheet. Omit if the file is not protected.                                                              |
+
+**Authentication**  
+All calls must include the `Authorization: Bearer <access_token>` header. Obtain the access token via the Aspose Cloud OAuth2 flow described in the authentication guide.
+
+**Prerequisites & Notes**  
+- Ensure your Aspose Cloud storage is configured and the source workbook is uploaded before invoking the API.  
+- Supported file formats include `.xlsx`, `.xls`, `.ods`, and other common spreadsheet types.  
+- Maximum file size is 150 MB for a single request; larger files should be processed in chunks.  
 
 ### Response
 

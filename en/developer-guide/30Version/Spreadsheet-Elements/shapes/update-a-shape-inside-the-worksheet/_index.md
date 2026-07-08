@@ -7,10 +7,15 @@ url: /shapes/update/
 aliases: [/update-a-shape-inside-the-worksheet/]
 keywords: "update shape Excel API, Aspose.Cells Cloud, Excel shape update, REST API, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
 description: "Learn how to update a shape in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes HTTPS endpoint, authentication details, DTO schema, step‑by‑step usage, cURL example, and SDK code samples for multiple languages."
+ArticleTitle: "Update a shape on an Excel worksheet - Aspose.Cells Cloud API"
 weight: 31
 ---
 
 This REST API updates a shape on an Excel worksheet.
+
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -52,7 +57,7 @@ The `dto` object contains the properties that can be updated. All fields are opt
 
 - `Content-Type: application/json`
 - `Accept: application/json`
-- `Authorization: Bearer <accessToken>` _(the JWT token from the \_Authentication_ step)\_
+- `Authorization: Bearer <accessToken>` _(the JWT token from the _Authentication_ step)_
 
 ### Request body (example)
 
@@ -111,6 +116,44 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 | 401  | Unauthorized          | Missing or invalid JWT token.                       |
 | 404  | Not Found             | Workbook, worksheet, or shape index does not exist. |
 | 500  | Internal Server Error | Unexpected server‑side problem.                     |
+
+**Example error responses**
+
+*400 – Bad Request*
+
+```json
+{
+  "Code": 400,
+  "Message": "Invalid request payload. 'Name' field exceeds maximum length."
+}
+```
+
+*401 – Unauthorized*
+
+```json
+{
+  "Code": 401,
+  "Message": "Authentication failed. Invalid or expired JWT token."
+}
+```
+
+*404 – Not Found*
+
+```json
+{
+  "Code": 404,
+  "Message": "The specified workbook, worksheet, or shape index was not found."
+}
+```
+
+*500 – Internal Server Error*
+
+```json
+{
+  "Code": 500,
+  "Message": "An unexpected error occurred on the server."
+}
+```
 
 ## Cloud SDK Family
 

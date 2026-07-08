@@ -5,9 +5,9 @@ linktitle: "What's new in 2025"
 type: docs
 weight: 9
 url: /new-features/2025/
-keywords: "What's new in aspose cells cloud. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF."
+keywords: "Aspose.Cells Cloud, new features 2025, spreadsheet API, Excel, CSV, PDF, cloud spreadsheet"
 description: "This page describes the most interesting new Aspose.Cells Cloud features introduced in recent releases."
-kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, What's new in Aspose.Cells Cloud
+ArticleTitle: "What's new in Aspose.Cells Cloud in 2025 – Latest Features and Enhancements"
 ---
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
@@ -16,67 +16,67 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 
 |**ID**|**Summary**|**Category**|
 | :- | :- | :- |
-| 56632 | Update form data parameter name for cells cloud code specification on cells cloud 3.0 services. | Improvement  |
-| 56793 | Fix the issue of StringEnumConverter on Aspose.Cells Cloud Services. | Bug  |
-| 56866 | Support trim spreadsheet content in Cells Cloud 4.0. | Improvement  |
-| 56867 | Support trim worksheet range content in Cells Cloud 4.0. | Improvement  |
-| 56919 | An exception occurred when saving the spreadsheet as a different format file on the cell cloud. | Bug  |
-| 56922 | When exporting the range/table as an HTML file, data is lost. | Bug  |
-| 56936 | Fix few issues about spelling error. | Bug  |
+| 56632 | Update the form‑data parameter name for the Cells Cloud 3.0 API specification. | Improvement |
+| 56793 | Fix the StringEnumConverter issue in Aspose.Cells Cloud Services. | Bug |
+| 56866 | Add support for trimming spreadsheet content in Cells Cloud 4.0. | Improvement |
+| 56867 | Add support for trimming worksheet range content in Cells Cloud 4.0. | Improvement |
+| 56919 | Fix exception thrown when saving a spreadsheet to a different format in Cells Cloud. | Bug |
+| 56922 | Fix data loss when exporting a range or table as an HTML file. | Bug |
+| 56936 | Fix several spelling‑error issues. | Bug |
 
 ## Feature & Enhancements in Version 25.8
 
 |**ID**|**Summary**|**Category**|
 | :- | :- | :- |
-|37693|Support of Authorization in Aspose.Cells Cloud Docker Container|New Feature|
-|56300|New Feature: Aggregate cells by color in CalculateController.|New Feature|
-|56301|New Feature: Math Calculations in CalculateController.|New Feature|
-|56302|New Feature: Adding/Deleting/Renaming worksheet in ManagementController.|New Feature|
-|56303|New Feature: Adding/Deleting worksheet in ManagementController.|New Feature|
-|56304|New Feature: create spreadsheet in ManagementController.|New Feature|
-|56309|New feature: Redesign the data import into the Spreadsheet.|New Feature|
-|56310|New feature: Swap data ranges in the spreadsheet.|New Feature|
-|56407|Fix the code generator of the cells cloud SDK specification for the enum query parameter.|Bug|
+| 37693 | Add support for authorization in Aspose.Cells Cloud Docker container. | New Feature |
+| 56300 | Introduce aggregate cells by color in CalculateController. | New Feature |
+| 56301 | Introduce math calculations in CalculateController. | New Feature |
+| 56302 | Add ability to add, delete, or rename worksheets in ManagementController. | New Feature |
+| 56303 | Add ability to add or delete worksheets in ManagementController. | New Feature |
+| 56304 | Add ability to create a spreadsheet in ManagementController. | New Feature |
+| 56309 | Redesign data import into the spreadsheet. | New Feature |
+| 56310 | Add ability to swap data ranges in the spreadsheet. | New Feature |
+| 56407 | Fix code generator for enum query parameters in the Cells Cloud SDK specification. | Bug |
 
 ## Feature & Enhancements in Version 25.7
 
 |**ID**|**Summary**|**Category**|
 | :- | :- | :- |
-|55754|Trimming the entire workbook failed.|Bug|
-|55755|Updating word case of the entire workbook failed.|Bug|
-|55930|Add protect/unprotect spreadsheet features.|New Feature|
-|55931|Add convert worksheet/table/range to other formats.|New Feature|
-|56088|Optimize operate scope options for TextProcessingController.|Improvement|
+| 55754 | Fix workbook trimming failure. | Bug |
+| 55755 | Fix workbook word‑case update failure. | Bug |
+| 55930 | Add protect/unprotect spreadsheet features. | New Feature |
+| 55931 | Add ability to convert worksheets, tables, or ranges to other formats. | New Feature |
+| 56088 | Optimize operation‑scope options for TextProcessingController. | Improvement |
 
 ## Feature & Enhancements in Version 25.6
 
 |**ID**|**Summary**|**Category**|
 | :- | :- | :- |
-| 55222 | Fix the bug about uploading multi-files in Swagger UI. | Bug |
-| 55335 | Optimize convert range to image. | Improvement |
-| 55370 | Fix the bug for replacing text in a local file on cells cloud 4.0. | Bug |
-| 55374 | Fix the bug about uploading multi-files in Swagger UI. | Bug |
-| 55440 | Unable to convert chart to svg format image | Bug |
-| 55539 | Support delete blank rows, columns, and worksheets. | New Feature |
+| 55222 | Fix bug related to uploading multiple files in Swagger UI. | Bug |
+| 55335 | Optimize conversion of range to image. | Improvement |
+| 55370 | Fix bug when replacing text in a local file on Cells Cloud 4.0. | Bug |
+| 55374 | Fix bug related to uploading multiple files in Swagger UI. | Bug |
+| 55440 | Fix inability to convert chart to SVG format image. | Bug |
+| 55539 | Add support for deleting blank rows, columns, and worksheets. | New Feature |
 | 55540 | Optimize search context for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area. | New Feature |
-| 55541 | Optimize search broken links for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area. | New Feature |
+| 55541 | Optimize broken‑link search for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area. | New Feature |
 | 55542 | Optimize replace context for remote spreadsheet features by splitting them into independent APIs, each dedicated to a specific operational area. | New Feature |
 
 ## Feature & Enhancements in Version 25.5
 
 |**ID**|**Summary**|**Category**|
 | :- | :- | :- |
-| 54791 | Add the new API for getting the public key for encrypting the password. | New Feature |
-| 54792 | Optimize the convert workbook feature: Add auto-fit row parameter. | Improvement |
-| 54854 | Optimize auto-fit rows for the worksheet: Add row count. | Improvement |
-| 54915 | Optimize auto-fit rows for the worksheet: Add firstColumn and lastColumn. | Improvement |
+| 54791 | Add new API for retrieving the public key used to encrypt passwords. | New Feature |
+| 54792 | Add auto‑fit row parameter to the workbook conversion feature. | Improvement |
+| 54854 | Add row‑count parameter to auto‑fit rows for a worksheet. | Improvement |
+| 54915 | Add firstColumn and lastColumn parameters to auto‑fit rows for a worksheet. | Improvement |
 
 ## Feature & Enhancements in Version 25.4
 
 |**ID**|**Summary**|**Category**|
 | :- | :- | :- |
-| 54059 | New API for Comprehensive Formula Error Checks in Excel Workbooks | New Feature |
-| 54060 | New API for External Reference Checks in Excel Workbooks | New Feature |
+| 54059 | New API for comprehensive formula error checks in Excel workbooks. | New Feature |
+| 54060 | New API for external reference checks in Excel workbooks. | New Feature |
 | 54135 | Support for using custom fonts from cloud storage. | New Feature |
 
 ## Feature & Enhancements in Version 25.3
@@ -95,9 +95,9 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 | :- | :- | :- |
 | 53048 | Support copying a range from one workbook to another workbook. | Improvement |
 | 53361 | Add query parameters for image and print options to enhance the Get Worksheet API. | Improvement |
-| 53363 | Added an API to count the number of Excel characters for cells cloud. | New Feature |
-| 53364 | Added an API to count the number of Excel words for cells cloud. | New Feature |
-| 53365 | Added an API to count the number of occurrences of a specified word in Excel for cells cloud. | New Feature |
+| 53363 | Added an API to count the number of Excel characters for Cells Cloud. | New Feature |
+| 53364 | Added an API to count the number of Excel words for Cells Cloud. | New Feature |
+| 53365 | Added an API to count the number of occurrences of a specified word in Excel for Cells Cloud. | New Feature |
 | 53367 | Add a new feature to support converting range to images. | New Feature |
 | 53368 | Add a new feature to support converting worksheets to images. | New Feature |
 
@@ -106,4 +106,4 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 |**ID**|**Summary**|**Category**|
 | :- | :- | :- |
 | 52489 | Add the new API for splitting text in the cell. | New Feature |
-| 52639 | Optimize pivot table filter-related APIs. | Improvement |
+| 52639 | Optimize pivot table filter‑related APIs. | Improvement |

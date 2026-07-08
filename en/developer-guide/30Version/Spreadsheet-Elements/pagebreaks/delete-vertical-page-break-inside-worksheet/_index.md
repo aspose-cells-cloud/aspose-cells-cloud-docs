@@ -8,6 +8,7 @@ aliases: [/delete-vertical-page-break-inside-worksheet/]
 keywords: "delete vertical page break, Aspose.Cells Cloud, REST API"
 description: "Remove a vertical page break from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, SDK code snippets, parameters, and error handling."
 weight: 60
+ArticleTitle: "Delete Vertical Page Break – Aspose.Cells Cloud REST API"
 ---
 
 ## REST API
@@ -17,6 +18,8 @@ This REST API deletes a **vertical** page break.
 ```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/verticalpagebreaks/{index}
 ```
+
+**Prerequisites**: A valid JWT authentication token must be supplied in the `Authorization` header, and the workbook must be accessible in the specified folder or storage location.
 
 ### Request Parameters
 
@@ -67,6 +70,44 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/vertic
 | 404       | Not Found – the specified file, worksheet, or page‑break index does not exist. |
 | 400       | Bad Request – malformed request syntax or invalid parameters.                  |
 | 500       | Internal Server Error – an unexpected condition was encountered.               |
+
+**Sample error payloads**
+
+*401 – Unauthorized*
+
+```json
+{
+  "Code": 401,
+  "Message": "Invalid authentication token."
+}
+```
+
+*404 – Not Found*
+
+```json
+{
+  "Code": 404,
+  "Message": "The specified file, worksheet, or page‑break index was not found."
+}
+```
+
+*400 – Bad Request*
+
+```json
+{
+  "Code": 400,
+  "Message": "The request parameters are invalid or malformed."
+}
+```
+
+*500 – Internal Server Error*
+
+```json
+{
+  "Code": 500,
+  "Message": "An unexpected server error occurred."
+}
+```
 
 ## Cloud SDK Family
 

@@ -12,13 +12,18 @@ weight: 100
 
 ## **Search Broken Links In Remote Spreadsheet API**
 
-Automatically detect broken links in Excel files stored in cloud storage. Our API scans specified ranges for broken external references, invalid formulas, and missing data sources. It supports remote spreadsheet auditing, automated quality checks, and integration with cloud‑storage providers. Use the RESTful API to automate enterprise‑level workflow automation.
+Automatically detect broken links in Excel files stored in cloud storage. Our API scans specified ranges for broken external references, invalid formulas, and missing data sources. It supports remote spreadsheet auditing, automated quality checks, and integration with cloud‑storage providers. Use the RESTful API to automate enterprise‑level workflows.
 
 ### **Web API**
 
 ```
 PUT https://api.aspose.cloud/v4.0/cells/{name}/search/broken-links
 ```
+
+**Prerequisites:**  
+- Obtain an OAuth 2.0 access token using your Aspose Cloud client credentials.  
+- Include the token in the request header: `Authorization: Bearer {access_token}`.  
+- Ensure the target workbook resides in a supported cloud storage and that any custom storage name is correctly configured.
 
 ### **Request Parameters:**
 
@@ -31,6 +36,14 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/search/broken-links
 | storageName    | String | Query                      | **Optional.** The name of your custom cloud‑storage configuration. If omitted, the system’s default storage is used.                                      |
 | region         | String | Query                      | **Optional.** Locale setting applied during processing (e.g., `en-US`). It can affect the interpretation of region‑specific formula syntax or references. |
 | password       | String | Query                      | **Optional.** Password required to open an encrypted spreadsheet. Omit if the file is not password‑protected.                                             |
+
+**Sample cURL request**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/Quarterly_Report.xlsx/search/broken-links?worksheet=Sheet1&cellArea=C5:J50" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
 
 ### **Response**
 
@@ -67,24 +80,49 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/search/broken-links
 }
 ```
 
+**Sample JSON response**
+
+```json
+{
+  "BrokenLinks": [
+    {
+      "Worksheet": "Sheet1",
+      "CellName": "D12",
+      "Link": "https://example.com/data/source.xlsx",
+      "IsValid": false,
+      "ErrorMessage": "File not found"
+    },
+    {
+      "Worksheet": "Sheet1",
+      "CellName": "F30",
+      "Link": "C:\\LocalFolder\\data.xlsx",
+      "IsValid": false,
+      "ErrorMessage": "External reference not supported in cloud mode"
+    }
+  ],
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.
-- **404 Not Found** – The spreadsheet file is not accessible.
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
+- **404 Not Found** – The spreadsheet file is not accessible.  
 - **500 Server Error** – An anomaly occurred while obtaining calculation data.
 
 ## Where should we use the Search for broken links within the Spreadsheet API?
 
-- **Regular audit of large financial models** – Before releasing monthly or quarterly reports, automatically scan key calculation areas (e.g., `Dashboard!B5:K50`) that contain many external data references to ensure all links point to valid source files.
-- **Data integration for mergers and acquisitions** – When merging multiple spreadsheets representing business units, scan the “Overview” worksheet after integration to identify links that have become invalid due to changed file paths or permission issues.
+- **Regular audit of large financial models** – Before releasing monthly or quarterly reports, automatically scan key calculation areas (e.g., `Dashboard!B5:K50`) that contain many external data references to ensure all links point to valid source files.  
+- **Data integration for mergers and acquisitions** – When merging multiple spreadsheets representing business units, scan the “Overview” worksheet after integration to identify links that have become invalid due to changed file paths or permission issues.  
 - **Preparation of investor data packages** – Before finalising presentation materials that contain charts and tables linked to external databases or market‑data sources, verify the validity of all links.
 
 ## Why should you use the Search for broken links within the Spreadsheet API?
 
-- **Developer‑friendly** – Aspose.Cells Cloud provides SDK libraries in multiple languages, enabling rapid development with comprehensive documentation. Compared with building a custom solution, this significantly reduces development effort.
-- **Reduced labor costs** – Automates link validation, eliminating the need for dedicated staff to manually consolidate documents.
-- **Pay‑per‑use** – No upfront investment; you only pay for the API calls you actually use.
+- **Developer‑friendly** – Aspose.Cells Cloud provides SDK libraries in multiple languages, enabling rapid development with comprehensive documentation. Compared with building a custom solution, this significantly reduces development effort.  
+- **Reduced labor costs** – Automates link validation, eliminating the need for dedicated staff to manually consolidate documents.  
+- **Pay‑per‑use** – No upfront investment; you only pay for the API calls you actually use.  
 - **Zero maintenance costs** – No servers to maintain, no software updates, and no compatibility concerns.
 
 ## How to Use the Search for broken links within the Spreadsheet API with SDKs

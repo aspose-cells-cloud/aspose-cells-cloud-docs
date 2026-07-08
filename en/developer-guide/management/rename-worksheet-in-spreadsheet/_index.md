@@ -5,12 +5,12 @@ ArticleTitle: "How to Rename Worksheets in Excel – Change Sheet Names"
 linktitle: "Rename Worksheet in Spreadsheet"
 type: docs
 url: /rename-worksheet-in-spreadsheet/
-keywords: "rename worksheet, Aspose.Cells Cloud, Excel API, worksheet rename API, spreadsheet automation, cloud Excel management"
+keywords: "rename worksheet, Aspose.Cells Cloud, Excel API, spreadsheet management, file conversion, cloud storage, SDK, REST API"
 description: "Easily rename Excel worksheets via Aspose.Cells Cloud API. Learn required parameters, see cURL examples, and get SDK code for C#, Java, Python, and more."
 weight: 100
 ---
 
-Programmatically rename worksheets in Excel workbooks using Aspose.Cells Cloud API. Change sheet names, update tab labels dynamically, and automate spreadsheet organization through RESTful API calls. Perfect for document standardization and workflow automation.
+Programmatically rename worksheets in Excel workbooks using Aspose.Cells Cloud API. Change sheet names, update tab labels dynamically, and automate spreadsheet organization through RESTful API calls. Ideal for document standardization and workflow automation.
 
 ## Rename worksheet name in Spreadsheet API
 
@@ -19,6 +19,8 @@ Programmatically rename worksheets in Excel workbooks using Aspose.Cells Cloud A
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet
 ```
+
+**Prerequisites**: You must have a valid Aspose Cloud client ID and client secret, and the workbook must be uploaded to Aspose Cloud storage. Include an access token in the `Authorization` header of the request.
 
 ### Request Parameters
 
@@ -31,6 +33,8 @@ PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet
 | **outStorageName** | String | Query    | **Optional**. The name identifier of your configured cloud storage service (e.g., `ArchiveStorage`). If omitted, the default storage is used.                                                                   |
 | **region**         | String | Query    | **Optional**. The locale setting (e.g., `ko-KR`) that may influence character encoding or regional naming conventions.                                                                                          |
 | **password**       | String | Query    | **Optional**. The decryption password required to open and modify a password‑protected workbook. Omit if the file is not encrypted.                                                                             |
+
+**Notes**: Worksheet names are limited to 31 characters and cannot contain the characters `:`, `\`, `?`, `*`, `[`, or `]`.
 
 ### Response
 
@@ -67,12 +71,13 @@ A successful request returns a JSON object with status information and a link to
 - **Reduced Labor Costs** – Reduces the need for positions dedicated to manual document consolidation.
 - **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.
 - **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility concerns.
+- **Automation Capability** – Enables automated document standardization and workflow integration.
 
 ## How to Use the Rename Worksheet in Spreadsheet API with SDKs
 
 ### OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ManagementController/RenameWorksheetInSpreadsheet) details a publicly accessible programming interface, allowing for REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/#/ManagementController/RenameWorksheetInSpreadsheet" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> details a publicly accessible programming interface, allowing for REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -106,3 +111,17 @@ The following code examples illustrate how to call Aspose.Cells web services usi
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_RenameWorksheet.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "Rename Worksheet in Spreadsheet",
+  "description": "Renames a worksheet in an Excel workbook via Aspose.Cells Cloud.",
+  "url": "https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet",
+  "httpMethod": "PUT",
+  "documentation": "https://docs.aspose.cloud/cells/rename-worksheet-in-spreadsheet/",
+  "targetPlatform": "Cloud",
+  "programmingLanguage": ["C#","Java","Python","Node.js","PHP","Ruby","Go","Perl"]
+}
+</script>

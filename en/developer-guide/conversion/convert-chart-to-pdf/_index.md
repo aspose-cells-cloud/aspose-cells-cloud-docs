@@ -5,7 +5,7 @@ ArticleTitle: "How to Convert a Local Spreadsheet Chart to a PDF File: Step‑by
 linktitle: "Convert Chart to PDF"
 type: docs
 url: /convert-chart-to-pdf/
-keywords: "Aspose.Cells Cloud, convert Excel chart to PDF, chart to PDF API, cloud conversion, Excel to PDF, REST API"
+keywords: "Aspose Cells, chart to PDF, Excel chart conversion, cloud API"
 description: "Export charts from local Excel files to PDF format using the Aspose.Cells Cloud REST API. Supports XLSX and XLS files."
 weight: 100
 ---
@@ -17,7 +17,18 @@ Export charts from a local Excel file to [PDF](https://docs.fileformat.com/pdf/)
 ### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
+PUT https://api.aspose.cloud/v4.0/cells/convert/chart/pdf
+```
+
+> **Authentication** – The request must include a valid OAuth 2.0 access token in the `Authorization` header, e.g., `Authorization: Bearer {accessToken}`.
+
+**Sample cURL request**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/chart/pdf?worksheet=Sheet1&chartIndex=0" \
+     -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+     -F "Spreadsheet=@/path/to/your/file.xlsx" \
+     -F "outPath=output/chart.pdf"
 ```
 
 ### **Request Parameters:**
@@ -47,8 +58,14 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 ]
 ```
 
+### **Success Status Codes**
+
+- **200 OK** – The chart was converted successfully and the PDF file is returned in the response body.
+- **202 Accepted** – The request has been accepted for asynchronous processing; the result will be available at the location specified by `outPath`.
+
 ### Error Codes
 
+- **200 OK**: File returned successfully. *(included for completeness)*
 - **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
 - **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
 - **404 Not Found**: The spreadsheet file is not accessible.

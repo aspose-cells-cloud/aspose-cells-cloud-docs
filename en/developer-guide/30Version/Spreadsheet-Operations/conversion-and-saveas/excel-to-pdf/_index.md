@@ -1,11 +1,12 @@
 ---
-title: "Convert Excel to PDF"
+title: "Convert Excel to PDF – Aspose.Cells Cloud API"
+ArticleTitle: "Convert Excel to PDF – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Convert Excel to PDF"
 type: docs
 url: /convert-excel-file-to-pdf-file/
 aliases: [/convert-excel-file-to-pdf-in-cloud/, /convert/excel-to-pdf/]
-keywords: "Aspose Cells, Excel to PDF, Cloud API, file conversion"
+keywords: "Aspose, Cells, Excel, PDF, conversion, Cloud API"
 description: "Learn how to convert Excel workbooks to PDF with Aspose.Cells Cloud REST API. Includes cURL, SDK samples (C#, Java, Python) and authentication guide."
 weight: 80
 ---
@@ -13,6 +14,12 @@ weight: 80
 This REST API converts a spreadsheet file to a PDF‑format file.
 
 ## REST API
+
+**Prerequisites**
+- An OAuth 2.0 access token (Bearer) with the `CellsApi` scope.  
+- API version `v3.0`.  
+- The source Excel file must be stored in a supported storage (default is Aspose Cloud storage).  
+- Rate limit: up to 60 requests per minute per account.
 
 | **API**            | **Type** | **Description**                      | **Swagger Link**                                                                                       |
 | :----------------- | :------- | :----------------------------------- | :----------------------------------------------------------------------------------------------------- |
@@ -26,6 +33,8 @@ This REST API converts a spreadsheet file to a PDF‑format file.
 | storageName           | string | The name of the storage where the file is located.                              |
 | checkExcelRestriction | bool   | Whether to enforce Excel file restrictions when modifying cell‑related objects. |
 
+`checkExcelRestriction` defaults to `false` if omitted.
+
 ### **Request Body Parameter**
 
 | Parameter Name | Type | Description                                                     |
@@ -35,6 +44,8 @@ This REST API converts a spreadsheet file to a PDF‑format file.
 ### **Response**
 
 [FileInfo](/cells/file-info/)
+
+The response returns a JSON object with file metadata. The PDF file itself can be downloaded using the provided `FileContent` (base64) or via the `FileInfo` link.
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPDF) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -67,6 +78,24 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pdf" \
 {{< /tab >}}
 
 {{< /tabs >}}
+
+#### HTTP Status Codes
+
+| Status Code | Description |
+|------------|-------------|
+| 200 OK | File converted successfully; response contains PDF file information. |
+| 400 Bad Request | Invalid request parameters or malformed file. |
+| 401 Unauthorized | Missing or invalid access token. |
+| 500 Internal Server Error | Server‑side error during conversion. |
+
+**Sample error response**
+
+```json
+{
+  "ErrorCode": "InvalidFile",
+  "Message": "The provided Excel file is corrupted or not supported."
+}
+```
 
 ## Cloud SDK Family
 
@@ -140,3 +169,5 @@ This REST API converts an Excel file to PDF.
 [GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) API lets you convert an MS Excel file to PDF with additional settings and return the result in the response.
 
 These [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook), [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook), and [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) APIs define a publicly accessible programming interface and allow you to perform REST interactions directly from a web browser.
+
+For additional conversion options, see the [Save Options](/cells/save-options/) page.

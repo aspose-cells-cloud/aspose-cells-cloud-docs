@@ -5,8 +5,9 @@ linktitle: "Merge an Excel workbook into another workbook"
 type: docs
 url: /merge-an-excel-file-into-the-excel-file/
 aliases: [/merge-excel-workbooks/, /workbook/merge/]
-keywords: "Excel workbook merge, Aspose.Cells Cloud, REST API, spreadsheet merging, cloud SDK, authentication, mergeWith, cURL example"
-description: "Learn how to merge one Excel workbook into another using the Aspose.Cells Cloud REST API (v3.0). Includes authentication details, the required `mergeWith` parameter, a cURL example, and SDK code samples for multiple languages."
+keywords: "Excel merge, Aspose.Cells Cloud, workbook API, REST API, spreadsheet merging, cloud SDK, authentication, mergeWith, cURL example"
+description: "Step‑by‑step guide to merge one Excel workbook into another using Aspose.Cells Cloud REST API (v3.0). Includes authentication, required mergeWith parameter, cURL example and SDK code snippets."
+ArticleTitle: "Merge an Excel Workbook into Another Workbook using Aspose.Cells Cloud API"
 weight: 50
 ---
 
@@ -31,6 +32,9 @@ The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/P
 ### How to merge two workbooks (cURL)
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL, including the required authentication header.
+
+**Prerequisites / Authentication**  
+To call this endpoint you must have a valid Aspose Cloud account and obtain an access token via OAuth 2.0. Generate the token by sending a POST request to `https://api.aspose.cloud/connect/token` with your client ID and secret, then include the returned bearer token in the `Authorization` header as shown below.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -162,6 +166,8 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/merge?mergeWith=test
   "Status": "OK"
 }
 ```
+
+The response returns a `Workbook` object that contains metadata about the merged workbook, including links for downloading the result in various formats (CSV, PDF, HTML, etc.).
 
 Response headers
 

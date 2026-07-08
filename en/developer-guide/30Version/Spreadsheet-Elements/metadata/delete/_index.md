@@ -4,9 +4,10 @@ second_title: "Document"
 linktitle: "Delete without using storage"
 type: docs
 url: /metadata/delete/
-keywords: "delete metadata, Excel, Aspose.Cells Cloud, REST API"
-description: "Learn how to delete workbook metadata using the Aspose.Cells Cloud REST API. Includes HTTPS endpoint, authentication steps, request parameters, a cURL example, and SDK code samples."
+keywords: "Aspose.Cells, delete metadata, Excel API, workbook properties, REST API"
+description: "Delete workbook metadata (author, title, custom) via Aspose.Cells Cloud API. Includes endpoint, auth, parameters, cURL and SDK samples."
 weight: 55
+ArticleTitle: "Delete metadata from Excel files – Aspose.Cells Cloud Documentation"
 ---
 
 This REST API deletes **metadata** from one or more Excel files. It removes workbook properties such as author, title, and custom data, and returns the cleaned files.
@@ -24,7 +25,7 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/delete
 | file           | file   | formData | Excel file to upload for **metadata** deletion            |
 | type           | string | query    | Operation type; set to **all** to delete all **metadata** |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/DeleteMetadata) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/DeleteMetadata" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -67,9 +68,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/metadata/delete?type=all" \
 
 The API returns a JSON object containing an `Error` field with details for each case.
 
+| Code | Meaning | Description |
+|------|---------|-------------|
+| 200 | OK | Metadata deleted, file returned |
+| 400 | Bad Request | Missing file or invalid `type` |
+| 401 | Unauthorized | Invalid or missing JWT |
+| 500 | Internal Server Error | Server processing failure |
+
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

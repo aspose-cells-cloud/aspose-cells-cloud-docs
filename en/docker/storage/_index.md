@@ -7,18 +7,18 @@ type: docs
 url: /docker/storage/
 description: "How to set the storage position for Aspose.Cells Cloud Docker Container storage."
 weight: 30
-kwords: Excel Cloud Docker Container, Self-Cloud Docker Container, REST Docker Container, Spreadsheet, PDF, CSV, Json, Markdown, Docker Image, Run Docker Container
+keywords: "Aspose.Cells, Docker storage, container configuration, JSON, PowerShell, Bash"
 ---
 
-
 ## Default Storage Configuration ##
+
+**Prerequisites**: Ensure Docker Engine 20.10+ is installed, you have valid Aspose.Cells Cloud license keys (`LicensePublicKey` and `LicensePrivateKey`), and the host folder you intend to use for storage (e.g., `c:/data` on Windows or `/data` on Linux) exists with appropriate permissions.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
 {{< tab tabNum="1" >}}
 
-``` json
-
+```json
 {
   "Local": [
     {
@@ -33,8 +33,7 @@ kwords: Excel Cloud Docker Container, Self-Cloud Docker Container, REST Docker C
 
 {{< tab tabNum="2" >}}
 
-``` json
-
+```json
 {
   "Local": [
     {
@@ -43,7 +42,6 @@ kwords: Excel Cloud Docker Container, Self-Cloud Docker Container, REST Docker C
     }
   ]
 }
-
 ```
 
 {{< /tab >}}
@@ -55,30 +53,46 @@ kwords: Excel Cloud Docker Container, Self-Cloud Docker Container, REST Docker C
 - **windows**
 
 ```powershell
-
 c:\app\storageResource.json
-
 ```
 
 - **linux**
 
-```linux
-
+```bash
 /app/storageResource.json
-
-
 ```
 
 ## Custom Storage Configuration ##
 
-Need to re-specify the storage profile for Aspose.Cells Cloud image file when the customer need specifies storage folder.
+Re‑specify the storage profile when you need to use a custom storage folder for Aspose.Cells Cloud images.
 
-``` powershell
+```bash
+docker run -d \
+  -v c:/data:c:/data \   # mount host folder as container storage
+  -p 47900:5000 \        # map API port
+  -e LicensePublicKey=yourLicensePublicKey \
+  -e LicensePrivateKey=yourLicensePrivateKey \
+  -e storagesCredentialsFilePath=c:/data/storageResource.json \
+  --name asposecellscloud \
+  aspose/cells-cloud:ltsc2019.22.9.0
+```
 
-docker run  -d  -v c:/data:c:/data  -p 47900:5000  -e LicensePublicKey=yourLicensePublicKey  -e LicensePrivateKey=yourLicensePrivateKey  -e storagesCredentialsFilePath=c:/data/storageResource.json --name asposecellscloud aspose/cells-cloud:ltsc2019.22.9.0
+*Linux example*:
 
+```bash
+docker run -d \
+  -v /data:/data \   # mount host folder as container storage
+  -p 47900:5000 \    # map API port
+  -e LicensePublicKey=yourLicensePublicKey \
+  -e LicensePrivateKey=yourLicensePrivateKey \
+  -e storagesCredentialsFilePath=/data/storageResource.json \
+  --name asposecellscloud \
+  aspose/cells-cloud:ltsc2019.22.9.0
 ```
 
 **Reference Document** :
 
-- [How to run Aspose.Cells Cloud Docker container.]( https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)
+- [How to run Aspose.Cells Cloud Docker container.](https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/)
+- [Docker Container Features](https://docs.aspose.cloud/cells/docker/container-features/)
+- [Downloading Aspose.Cells Cloud Docker Image](https://docs.aspose.cloud/cells/docker/download-image/)
+- [Managing Container Tags](https://docs.aspose.cloud/cells/docker/manage-tags/)

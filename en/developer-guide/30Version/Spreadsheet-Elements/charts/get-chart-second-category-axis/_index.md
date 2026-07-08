@@ -3,8 +3,9 @@ title: "Get Chart Second Category Axis"
 type: docs
 url: /charts/second-category-axis/get/
 weight: 60
-keywords: "Get Chart Second Category Axis, Aspose.Cells Cloud API, Excel chart axis, REST API"
-description: "Retrieve the second‑category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request format, parameters, sample cURL, and response schema."
+keywords: "Get Chart Second Category Axis, Aspose.Cells Cloud API, Excel chart axis, REST API, second-category axis, Aspose.Cells"
+description: "Retrieve the second‑category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request format, parameters, sample cURL, response schema, status codes, and usage notes."
+ArticleTitle: "Get Chart Second Category Axis – Aspose.Cells Cloud API"
 ---
 
 This REST API retrieves the **second‑category axis** of a chart.
@@ -14,6 +15,10 @@ This REST API retrieves the **second‑category axis** of a chart.
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis
 ```
+
+**Prerequisites**: The request must include a valid JWT access token in the `Authorization` header. The target workbook must be stored in Aspose Cloud storage and the specified `name`, `sheetName`, and `chartIndex` must exist.
+
+**Notes**: Rate‑limit information, supported file formats, and known limitations for the second‑category axis endpoint are documented in the general Aspose.Cells API guide.
 
 ### Request parameters
 
@@ -63,6 +68,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 ```
 
 _The `Axis` object contains the properties that describe the second‑category axis (e.g., `Name`, `IsVisible`, `AxisLine`, `TickMarks`, `Label`)._
+
+| Status Code | Description | Typical Response |
+|------------|-------------|------------------|
+| 200 | Request succeeded. Returns the second‑category axis object. | `{ "Code": 200, "Status": "OK", "Axis": { ... } }` |
+| 400 | Bad request – missing or invalid parameters. | `{ "Code": 400, "Message": "Invalid parameter." }` |
+| 401 | Unauthorized – authentication failed or token missing. | `{ "Code": 401, "Message": "Authentication required." }` |
+| 404 | Not found – the specified workbook, worksheet, or chart does not exist. | `{ "Code": 404, "Message": "Resource not found." }` |
+| 500 | Internal server error – unexpected condition on the server. | `{ "Code": 500, "Message": "Server error." }` |
 
 {{< /tab >}}
 

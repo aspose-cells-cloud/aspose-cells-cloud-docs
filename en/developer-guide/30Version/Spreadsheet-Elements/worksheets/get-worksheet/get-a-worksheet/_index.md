@@ -7,6 +7,7 @@ url: /worksheets/get-worksheet/
 keywords: "Aspose.Cells Cloud Get Worksheet, worksheet export, Excel API, REST, CSV, PDF, PNG, JPEG, GIF, BMP, TIFF, EMF, XPS, OTS, XLS, XLSX, XLSB, XLSM, ODS, FODS, Numbers, cloud API"
 description: "Learn how to export a single worksheet from an Excel file using Aspose.Cells Cloud REST API. Includes endpoint, parameters, a corrected cURL example, authentication details, error handling, and SDK snippets for C#, Java, Python, and more."
 weight: 10
+ArticleTitle: "Export a Worksheet with Aspose.Cells Cloud API – Formats, cURL & SDK Samples"
 ---
 
 This REST API allows you to **export a worksheet** from an Excel file to many different file formats.
@@ -30,14 +31,17 @@ You can export to the following formats:
 | XPS     | .xps      | application/vnd.ms-xpsdocument                                    |
 | DIF     | .dif      | application/x-dif                                                 |
 | PNG     | .png      | image/png                                                         |
-| JPEG    | .jpeg     | image/jpeg                                                        |
+| JPEG    | .jpeg    | image/jpeg                                                        |
 | GIF     | .gif      | image/gif                                                         |
 | BMP     | .bmp      | image/bmp                                                         |
 | WMF     | .wmf      | image/wmf                                                         |
-| TIFF    | .tiff     | image/tiff                                                        |
+| TIFF    | .tiff    | image/tiff                                                        |
 | EMF     | .emf      | image/emf                                                         |
 | NUMBERS | .numbers  | application/vnd.apple.numbers                                     |
 | FODS    | .fods     | application/vnd.oasis.opendocument.spreadsheet-flat-xml           |
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -59,7 +63,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 | **folder**               | string  | query    | Folder path in storage where the source file is located.            |
 | **storageName**          | string  | query    | Name of the Aspose Cloud storage.                                   |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
@@ -79,10 +83,12 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1?f
 
 {{< tab tabNum="2" >}}
 
-```json
-{
-  "stream"
-}
+```http
+HTTP/1.1 200 OK
+Content-Type: image/gif
+Content-Disposition: attachment; filename="Sheet1.gif"
+
+<binary data>
 ```
 
 {{< /tab >}}
@@ -105,7 +111,7 @@ Handle these responses in your client code to provide appropriate feedback to us
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
@@ -160,5 +166,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
-
----

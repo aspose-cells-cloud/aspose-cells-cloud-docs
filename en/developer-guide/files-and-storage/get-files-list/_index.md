@@ -12,12 +12,22 @@ weight: 100
 
 ## **Excel API: Get Files List**
 
-The **Get Files List** operation returns the collection of files and sub‑folders stored in a specified folder.
+The **Get Files List** operation returns the collection of files and sub‑folders stored in a specified folder. For an overview of all storage‑related operations, see the **[Files and Storage](/files-and-storage/)** page.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token‑based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### Web API
 
 ```
 GET https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
+```
+
+**Sample request (cURL)**  
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/folder/{path}?storageName=MyStorage&pageSize=100&pageNumber=1" \
+     -H "Authorization: Bearer <your_access_token>"
 ```
 
 ### Function Description
@@ -65,15 +75,36 @@ The **getFilesList** API retrieves a comprehensive list of files and folders con
 }
 ```
 
+**Sample successful response**
+
+```json
+{
+  "Value": [
+    {
+      "Name": "Report.xlsx",
+      "IsFolder": false,
+      "Size": 124578,
+      "ModifiedDate": "2024-03-10T12:34:56Z"
+    },
+    {
+      "Name": "Archives",
+      "IsFolder": true,
+      "Size": 0,
+      "ModifiedDate": "2024-02-01T08:00:00Z"
+    }
+  ]
+}
+```
+
 #### Common Error Responses
 
-| HTTP Status                   | Meaning                          | Response Body (example)                                |
-| ----------------------------- | -------------------------------- | ------------------------------------------------------ |
-| **200 OK**                    | Successful retrieval.            | `{ "Value": [ … ] }`                                   |
-| **400 Bad Request**           | Invalid parameters.              | `{ "Code": 400, "Message": "Invalid request." }`       |
-| **401 Unauthorized**          | Missing or invalid token.        | `{ "Code": 401, "Message": "Authentication failed." }` |
-| **404 Not Found**             | Specified folder does not exist. | `{ "Code": 404, "Message": "Folder not found." }`      |
-| **500 Internal Server Error** | Server‑side problem.             | `{ "Code": 500, "Message": "Unexpected error." }`      |
+| Status Code | Meaning                          | Response Body (example)                                |
+| ----------- | -------------------------------- | ------------------------------------------------------ |
+| **200**     | Successful retrieval.            | `{ "Value": [ … ] }`                                   |
+| **400**     | Invalid parameters.              | `{ "Code": 400, "Message": "Invalid request." }`       |
+| **401**     | Missing or invalid token.        | `{ "Code": 401, "Message": "Authentication failed." }` |
+| **404**     | Specified folder does not exist. | `{ "Code": 404, "Message": "Folder not found." }`      |
+| **500**     | Server‑side problem.             | `{ "Code": 500, "Message": "Unexpected error." }`      |
 
 ## OpenAPI Specification
 

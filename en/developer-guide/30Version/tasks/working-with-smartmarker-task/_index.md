@@ -6,6 +6,7 @@ aliases: [/working-with-smartmarker-task/]
 keywords: "SmartMarker task, Aspose.Cells Cloud, REST API, Excel, spreadsheet automation"
 description: "Learn how to use the SmartMarker task of Aspose.Cells Cloud API with cURL and SDK examples, including request schema and error handling."
 weight: 60
+ArticleTitle: "Working with SmartMarker Task in Aspose.Cells Cloud API"
 ---
 
 ## REST API
@@ -80,8 +81,16 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" \
 
 {{< tab tabNum="2" >}}
 
-```text
-HttpResponseMessage with the operation result.
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "Result": {
+    "FileLink": "https://api.aspose.cloud/v3.0/storage/file/Output.xlsx",
+    "FileSize": 254321,
+    "FileName": "Output.xlsx"
+  }
+}
 ```
 
 {{< /tab >}}
@@ -111,7 +120,7 @@ The API may return the following HTTP status codes:
 
 Check the response body for an `Error` object that includes a `Code` and a descriptive `Message`.
 
-Using an SDK is the best way to speed up the development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up the development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud){:rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

@@ -6,7 +6,8 @@ type: docs
 url: /pictures/get-all/
 aliases: [/get-picture-from-a-worksheet/]
 keywords: "Aspose.Cells Cloud, Excel worksheet, retrieve all pictures, REST API, SDKs"
-description: "Learn how to retrieve all pictures from an Excel worksheet using the Aspose.Cells Cloud REST API. SDKs are available for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+description: "Retrieve all picture objects from an Excel worksheet via Aspose.Cells Cloud REST API."
+ArticleTitle: "Get all pictures in an Excel worksheet - Aspose.Cells Cloud API"
 weight: 10
 ---
 
@@ -15,8 +16,10 @@ This REST API retrieves all picture information from an Excel worksheet.
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
+
+**Note:** Use HTTPS (TLS 1.2 or higher) when calling the API and include a valid JWT token in the `Authorization` header.
 
 ### **Request parameters**
 

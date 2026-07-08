@@ -5,17 +5,19 @@ url: /charts/chart-area/fill-format/get/
 aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
 weight: 70
 keywords:
-  [
-    "chart area fill format",
-    "Aspose.Cells Cloud",
-    "REST API",
-    "GET",
-    "worksheet",
-  ]
-description: "Retrieve the fill format (color, pattern, gradient) of a chart area in an Excel worksheet via Aspose.Cells Cloud API. Includes cURL example, SDK code snippets, and required authentication steps."
+  - "chart area"
+  - "fill format"
+  - "Aspose.Cells"
+  - "REST API"
+  - "worksheet"
+description: "Retrieve the fill format (color, pattern, gradient) of a chart area in an Excel worksheet via Aspose.Cells Cloud API. Includes cURL example, SDK code snippets, authentication steps, and response details."
+ArticleTitle: "Get Chart Area Fill Format Aspose.Cells Cloud API v3.0"
 ---
 
 This REST API retrieves the fill‑format information of a **Chart Area**.
+
+**Prerequisites**  
+To call this endpoint you must have a valid OAuth/JWT access token. Obtain the token using the Aspose.Cells Cloud authentication flow and include it in the `Authorization` header as `Bearer <jwt token>`. If you are using one of the SDKs, ensure the SDK is configured with your `client_id` and `client_secret` before invoking the method.
 
 ## REST API
 
@@ -58,10 +60,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
   "FillFormat": {
     "Type": "Automatic"
   },
-  "Code": "200",
+  "Code": 200,
   "Status": "OK"
 }
 ```
+
+**Notes**  
+- A successful call returns HTTP 200 with the fill‑format details.  
+- HTTP 401 indicates an authentication failure (invalid or missing token).  
+- HTTP 404 is returned when the specified workbook, worksheet, or chart index does not exist.  
+- HTTP 500 denotes a server‑side error; retry the request or contact support if the problem persists.
 
 {{< /tab >}}
 

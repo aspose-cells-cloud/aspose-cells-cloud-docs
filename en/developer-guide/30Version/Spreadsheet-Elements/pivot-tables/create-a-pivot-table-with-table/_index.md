@@ -12,9 +12,15 @@ aliases:
 keywords: "pivot table, list object, Aspose.Cells Cloud, REST API, convert table to pivot table"
 description: "Learn how to create a pivot table from a list object using Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK references."
 weight: 60
+ArticleTitle: "Convert Table to Pivot Table – Aspose.Cells Cloud Documentation"
 ---
 
 This REST API creates a **pivot table** from a list object.
+
+**Prerequisites:**  
+- A valid JWT bearer token for authentication.  
+- The workbook must exist in the specified storage location.  
+- The target worksheet must contain the list object you want to summarize.
 
 ## REST API
 
@@ -34,6 +40,35 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
 | folder          | string  | query    | Folder path where the workbook resides.    |
 | storageName     | string  | query    | Name of the storage.                       |
 
+The request body must follow the JSON schema defined below:
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "Name": { "type": "string", "description": "Name of the new pivot table." },
+    "DestCellName": { "type": "string", "description": "Top‑left cell of the pivot table (e.g., \"C1\")." },
+    "PivotFieldRows": {
+      "type": "array",
+      "items": { "type": "integer" },
+      "description": "Zero‑based indices of fields to place in rows."
+    },
+    "PivotFieldColumns": {
+      "type": "array",
+      "items": { "type": "integer" },
+      "description": "Zero‑based indices of fields to place in columns."
+    },
+    "PivotFieldData": {
+      "type": "array",
+      "items": { "type": "integer" },
+      "description": "Zero‑based indices of fields to use as data fields."
+    }
+  },
+  "required": ["Name", "DestCellName", "PivotFieldRows", "PivotFieldColumns", "PivotFieldData"]
+}
+```
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSummarizeWithPivotTable) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
@@ -43,13 +78,15 @@ You can use the **cURL** command‑line tool to access Aspose.Cells web services
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "https://api-qa.aspose.cloud/v3.0/cells/TestCase.xlsx/worksheets/Sheet2/listobjects/0/SummarizeWithPivotTable?folder=CellsTests&destsheetName=Sheet4" \
+curl -v "https://api.aspose.cloud/v3.0/cells/TestCase.xlsx/worksheets/Sheet2/listobjects/0/SummarizeWithPivotTable?folder=CellsTests&destsheetName=Sheet4" \
 -X POST \
 -d '{"Name":"TestPivot","DestCellName":"C1","PivotFieldRows":[0,1],"PivotFieldColumns":[2],"PivotFieldData":[3,4]}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
 ```
+
+*Note: Use the production endpoint (`api.aspose.cloud`) for live environments. The QA endpoint (`api-qa.aspose.cloud`) is intended for testing only.*
 
 {{< /tab >}}
 
@@ -65,6 +102,17 @@ curl -v "https://api-qa.aspose.cloud/v3.0/cells/TestCase.xlsx/worksheets/Sheet2/
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Response Status Codes**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | Pivot table created successfully.        |
+| 400  | Bad request – invalid parameters or payload. |
+| 401  | Unauthorized – missing or invalid JWT token. |
+| 403  | Forbidden – insufficient permissions.   |
+| 404  | Not found – workbook, worksheet, or list object does not exist. |
+| 500  | Internal server error – unexpected failure on the server side. |
 
 ## Cloud SDK Family
 

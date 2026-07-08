@@ -6,14 +6,21 @@ aliases: [/get-chart-from-a-worksheet/]
 weight: 10
 keywords: "Aspose.Cells Cloud, Get Chart, Worksheet, REST API, Excel, Chart API, chart retrieval, Excel chart"
 description: "Retrieve chart information, including metadata and export format, from a worksheet using the Aspose.Cells Cloud REST API."
+ArticleTitle: "Get Chart from a Worksheet – Aspose.Cells Cloud API"
 ---
 
 This REST API retrieves chart information.
 
+**Prerequisites**:  
+- An Aspose Cloud storage account must be configured.  
+- The target Excel file must be uploaded to the selected storage.  
+- A valid OAuth 2.0 bearer token is required for authentication.  
+- Ensure the chart index you request exists; otherwise a `404` error is returned.
+
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}
 ```
 
 ### Request parameters
@@ -36,11 +43,11 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" \
--X GET \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" \
+  -X GET \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -50,7 +57,38 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 ```json
 {
   "Code": 200,
-  "Status": "OK"
+  "Status": "OK",
+  "Chart": {
+    "Name": "Chart 1",
+    "Type": "Bar",
+    "Top": 50,
+    "Left": 100,
+    "Width": 400,
+    "Height": 300,
+    "DataRange": "A1:B5",
+    "ShowLegend": true,
+    "Format": "png"
+  }
+}
+```
+
+**Status Codes**
+
+| Code | Meaning                              | Description                                                            |
+|------|--------------------------------------|------------------------------------------------------------------------|
+| 200  | OK                                   | The chart information was retrieved successfully.                     |
+| 400  | Bad Request                          | Required parameters are missing or malformed.                         |
+| 401  | Unauthorized                         | Invalid or missing authentication token.                               |
+| 404  | Not Found                            | The specified file, worksheet, or chart does not exist.               |
+| 500  | Internal Server Error                | An unexpected error occurred on the server.                            |
+
+**Error Response Example**
+
+```json
+{
+  "Code": 404,
+  "Status": "Not Found",
+  "Message": "Chart with index 0 does not exist in worksheet 'Sheet5'."
 }
 ```
 
@@ -125,3 +163,9 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
+For additional chart operations, see the related pages:
+
+- [Add a Chart](/charts/add/)
+- [Delete a Chart](/charts/delete/)
+- [Update a Chart](/charts/update/)

@@ -4,9 +4,10 @@ second_title: "Document"
 linktitle: "Convert Workbook Options"
 type: docs
 url: /convert-workbook-options/
-keywords: "Aspose.Cells Cloud, ConvertWorkbookOptions, Excel conversion API, REST API, Save Options, File formats, API reference"
-description: "Learn how to use the ConvertWorkbookOptions class in Aspose.Cells Cloud REST API. Detailed property list, defaults, and code examples for converting Excel workbooks to PDF, CSV, HTML, and more."
+keywords: "Aspose.Cells, ConvertWorkbookOptions, Excel conversion, PDF, CSV, API"
+description: "Convert Workbook Options – configure Excel workbook conversion to PDF, CSV, HTML, and more with Aspose.Cells Cloud API."
 weight: 79
+ArticleTitle: "Convert Workbook Options – Aspose.Cells Cloud API"
 ---
 
 # ConvertWorkbookOptions Properties
@@ -23,6 +24,45 @@ weight: 79
 | **SaveOptions**                     | **Object**  | Container for format‑specific save‑option objects (e.g., `PdfSaveOptions`, `HtmlSaveOptions`).                |       |
 | **ConvertFormat**                   | **string**  | Target file format (e.g., **PDF**, **CSV**, **HTML**, **XLSX**, **TIFF**, etc.).                              |       |
 | **CheckExcelRestriction**           | **boolean** | Gets or sets whether to enforce Excel‑specific restrictions (maximum rows, columns, sheet name length, etc.). |       |
+
+**Prerequisites**
+
+- Obtain a valid OAuth 2.0 access token for Aspose.Cells Cloud.  
+- Ensure the source file is accessible via one of the supported `DataSource` types.
+
+**Quick example**
+
+```json
+{
+  "DataSource": {
+    "FileInfo": {
+      "FileName": "Sample.xlsx",
+      "FileContent": "<base64‑encoded‑content>"
+    }
+  },
+  "ConvertFormat": "pdf",
+  "SaveOptions": {
+    "PdfSaveOptions": {
+      "CompressImages": true,
+      "ImageQuality": 90
+    }
+  }
+}
+```
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/convert" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -d @request.json \
+     -o Sample.pdf
+```
+
+**Notes / Limitations**
+
+- The `CheckExcelRestriction` flag enforces Excel limits such as maximum rows (1,048,576) and columns (16,384).  
+- Not all target formats support every `SaveOptions` property; unsupported options are ignored.  
+- When using `HttpUri` as a data source, the URL must be publicly reachable without authentication.
 
 ## FileSource Properties
 

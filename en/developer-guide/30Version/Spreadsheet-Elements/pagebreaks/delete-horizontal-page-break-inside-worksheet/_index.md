@@ -1,12 +1,13 @@
 ---
 title: "Delete horizontal page break"
+ArticleTitle: "Aspose.Cells Cloud – Delete Horizontal Page Break (REST API)"
 second_title: "Document"
 linktitle: "Delete horizontal page break"
 type: docs
 url: /page-breaks/delete-horizontal-page-break/
 aliases: [/delete-horizontal-page-break-inside-worksheet/]
 keywords: "Aspose.Cells Cloud, Delete horizontal page break, Excel worksheet, REST API, SDK"
-description: "Use Aspose.Cells Cloud REST API to delete a horizontal page break from an Excel worksheet. The API is available through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) for seamless integration."
+description: "Delete a horizontal page break from an Excel worksheet using Aspose.Cells Cloud REST API. SDKs available for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go."
 weight: 50
 ---
 
@@ -15,8 +16,10 @@ This REST API deletes a **horizontal** page break.
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks/{index}
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks/{index}
 ```
+
+*All API calls must be made over **HTTPS**.*
 
 ### Request Parameters
 
@@ -46,7 +49,7 @@ You can use the **cURL** command‑line tool to access Aspose.Cells web services
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/horizontalpagebreaks/0" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/horizontalpagebreaks/0" \
   -X DELETE \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -63,6 +66,14 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/horizon
   "Status": "OK"
 }
 ```
+
+**Response Schema**
+
+| Field   | Type    | Description                                      |
+|---------|---------|--------------------------------------------------|
+| Code    | integer | HTTP status code (e.g., 200).                    |
+| Status  | string  | Textual status message (e.g., "OK").             |
+| Message | string  | Optional additional information for error cases. |
 
 {{< /tab >}}
 

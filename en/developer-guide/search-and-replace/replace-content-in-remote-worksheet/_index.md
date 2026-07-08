@@ -1,18 +1,25 @@
 ---
 title: "Aspose.Cells Cloud Replace Web API – Update Text in Remote Worksheet"
 second_title: "Document"
-ArticleTitle: "Bulk Text Replacement in Cloud Worksheet of Excel Files – Find and Replace API"
+ArticleTitle: "Find and Replace Text in Remote Worksheet with Aspose.Cells Cloud API"
 linktitle: "Replace Remote Worksheet Content"
 type: docs
 url: /replace-content-in-remote-worksheet/
 keywords: "Aspose.Cells, replace text, remote worksheet, Excel API, cloud spreadsheet, find and replace, REST API"
-description: "Use Aspose.Cells Cloud to find and replace text in a specific worksheet of an Excel file stored in cloud storage. Supports password‑protected workbooks, region‑aware search, and fast bulk updates."
+description: "Replace text in a specific worksheet of an Excel file stored in Aspose Cloud. Supports password‑protected workbooks, region‑aware search, and bulk updates."
 weight: 100
 ---
 
 Replace specified text within a particular worksheet of remote Excel files. Update content in targeted spreadsheet sheets efficiently using Aspose.Cells Find and Replace API for precise worksheet editing.
 
 ## **Replace Content in Remote Worksheet API**
+
+**Prerequisites / Authentication**  
+To call this endpoint you must first obtain an OAuth 2.0 access token from the Aspose Cloud authentication service and include it in the request header:
+
+```
+Authorization: Bearer {access_token}
+```
 
 ### **Web API**
 
@@ -33,35 +40,30 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/replace/co
 | region         | String | Query                      | _(Optional)_ Sets the locale for text handling, which may affect character encoding and language‑specific search behavior within the worksheet (e.g., `"en-GB"`, `"es-ES"`). |
 | password       | String | Query                      | _(Optional)_ If the workbook is password‑protected, provide the password to open and modify the file.                                                                        |
 
+**Example request (cURL)**  
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/sales_report.xlsx/worksheets/Sheet1/replace/content?searchText=OldValue&replaceText=NewValue&folder=/reports" \
+     -H "Authorization: Bearer {access_token}"
+```
+
 ### **Response**
 
 ```json
 {
-  "Name": "CellsCloudResponse",
-  "Type": "Class",
-  "Properties": [
-    {
-      "Name": "Code",
-      "DataType": {
-        "Identifier": "Integer"
-      }
-    },
-    {
-      "Name": "Status",
-      "DataType": {
-        "Identifier": "String"
-      }
-    }
-  ]
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
-### Error Codes
+### **Error Codes**
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
-- **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.
+| Code | Description                              | When it occurs                                                   |
+|------|------------------------------------------|------------------------------------------------------------------|
+| 400  | Bad Request                              | The request URI is malformed or required parameters are missing. |
+| 401  | Unauthorized                             | Access token is missing, invalid, or the client credentials are wrong. |
+| 404  | Not Found                                | The specified workbook or worksheet cannot be found.            |
+| 500  | Internal Server Error                    | An unexpected error occurred while processing the request.      |
 
 ## Where should we use the Replace content of Worksheet in Remote Spreadsheet API?
 

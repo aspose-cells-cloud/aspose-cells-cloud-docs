@@ -8,6 +8,7 @@ aliases: [/working-with-autofilter/]
 keywords: "AutoFilter, Aspose.Cells Cloud, Excel filter, color filter, date filter, dynamic filter, number filter, text filter, blank filter, custom filter"
 description: "Learn to add, edit, and delete Excel AutoFilters (color, date, dynamic, number, text, blank) using Aspose.Cells Cloud APIs. Code samples in multiple languages."
 weight: 100
+ArticleTitle: "Working with Excel AutoFilter – Aspose.Cells Cloud Documentation"
 ---
 
 AutoFilter is the quickest way to display only the items you need from a worksheet. The AutoFilter feature lets users filter a list based on specified criteria—by text, numbers, or dates.
@@ -69,15 +70,15 @@ Aspose.Cells Cloud provides multiple APIs to apply various filter types, such as
 
 **AutoFilter Operations**
 
-- [How to add a color filter in an Excel worksheet](/cells/autofilter/add-color-filter/)
-- [How to add a custom filter in an Excel worksheet](/cells/autofilter/add-custom-filter/)
-- [How to add a date filter in an Excel worksheet](/cells/autofilter/add-date-filter/)
-- [How to add a dynamic filter in an Excel worksheet](/cells/autofilter/add-dynamic-filter/)
-- [How to add a filter in an Excel worksheet](/cells/autofilter/add-filter/)
-- [How to add an icon filter in an Excel worksheet](/cells/autofilter/add-icon-filter/)
-- [How to delete a date filter in an Excel worksheet](/cells/autofilter/delete-a-date-filter/)
-- [How to delete a filter in an Excel worksheet](/cells/delete-filter/)
-- [How to get an AutoFilter description from an Excel worksheet](/cells/autofilter/get/)
-- [How to match all blank cells in an Excel worksheet](/cells/autofilter/match-all-blank/)
-- [How to match all non‑blank cells in an Excel worksheet](/cells/autofilter/match-all-non-blank/)
-- [How to refresh an AutoFilter in an Excel worksheet](/cells/autofilter/refresh/)
+- [How to add a color filter in an Excel worksheet](/cells/autofilter/add-color-filter/) – **Method:** POST, **Endpoint:** `/cells/autofilter/add-color-filter/`
+- [How to add a custom filter in an Excel worksheet](/cells/autofilter/add-custom-filter/) – **Method:** POST, **Endpoint:** `/cells/autofilter/add-custom-filter/`
+- [How to add a date filter in an Excel worksheet](/cells/autofilter/add-date-filter/) – **Method:** POST, **Endpoint:** `/cells/autofilter/add-date-filter/`
+- [How to add a dynamic filter in an Excel worksheet](/cells/autofilter/add-dynamic-filter/) – **Method:** POST, **Endpoint:** `/cells/autofilter/add-dynamic-filter/`
+- [How to add a filter in an Excel worksheet](/cells/autofilter/add-filter/) – **Method:** POST, **Endpoint:** `/cells/autofilter/add-filter/`
+- [How to add an icon filter in an Excel worksheet](/cells/autofilter/add-icon-filter/) – **Method:** POST, **Endpoint:** `/cells/autofilter/add-icon-filter/`
+- [How to delete a date filter in an Excel worksheet](/cells/autofilter/delete-a-date-filter/) – **Method:** DELETE, **Endpoint:** `/cells/autofilter/delete-a-date-filter/`
+- [How to delete a filter in an Excel worksheet](/cells/delete-filter/) – **Method:** DELETE, **Endpoint:** `/cells/delete-filter/`
+- [How to get an AutoFilter description from an Excel worksheet](/cells/autofilter/get/) – **Method:** GET, **Endpoint:** `/cells/autofilter/get/`
+- [How to match all blank cells in an Excel worksheet](/cells/autofilter/match-all-blank/) – **Method:** POST, **Endpoint:** `/cells/autofilter/match-all-blank/`
+- [How to match all non‑blank cells in an Excel worksheet](/cells/autofilter/match-all-non-blank/) – **Method:** POST, **Endpoint:** `/cells/autofilter/match-all-non-blank/`
+- [How to refresh an AutoFilter in an Excel worksheet](/cells/autofilter/refresh/) – **Method:** POST, **Endpoint:** `/cells/autofilter/refresh/`

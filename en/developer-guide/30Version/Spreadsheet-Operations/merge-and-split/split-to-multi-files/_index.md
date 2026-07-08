@@ -5,12 +5,13 @@ linktitle: "Split Multi Excel files"
 type: docs
 url: /split-an-excel-file-to-multi-files/
 aliases: [/split-excel-workbooks/,/workbook/split/]
-keywords: "Aspose.Cells Cloud, Excel, Split, REST API, PDF, CSV, JSON, Swift, Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby"
+keywords: "Aspose.Cells, Cloud, Excel, Split, API, PDF, CSV, JSON"
 description: "Use the Aspose.Cells Cloud REST API to split multi‑sheet Excel workbooks into separate files. Supports output formats such as PDF, CSV, and JSON, and is available through SDKs for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 32
+ArticleTitle: "Split an Excel file into multiple files - Aspose.Cells Cloud Documentation"
 ---
 
-This REST API splits multi‑sheet Excel workbooks into separate files.
+The Aspose.Cells Cloud REST API splits multi‑sheet Excel workbooks into separate files.
 
 ## REST API
 
@@ -28,7 +29,18 @@ The request parameters are:
 | from           | integer| query     | Index of the first sheet to include (1‑based).                    |
 | to             | integer| query     | Index of the last sheet to include (inclusive).                  |
 
+**Prerequisites**: Before calling the endpoint you must obtain a valid JWT access token, ensure the target storage is accessible, and be aware of any applicable rate‑limit policies.
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostSplit) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+**HTTP status codes**
+
+| Code | Meaning                         | Description                                                                      |
+|------|---------------------------------|----------------------------------------------------------------------------------|
+| 200  | OK                              | The workbook was split successfully and the response contains the file list.   |
+| 400  | Bad Request                     | Missing or invalid parameters (e.g., unsupported format).                     |
+| 401  | Unauthorized                    | Invalid or missing JWT token.                                                    |
+| 500  | Internal Server Error           | An unexpected error occurred on the server side.                                 |
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 

@@ -10,14 +10,17 @@ aliases:
     /workbook/new/,
     /workbook/create/empty-workbook/,
   ]
-keywords: "Aspose.Cells Cloud, Excel, empty workbook, REST API, SDK, create workbook"
+keywords: "Aspose.Cells, Cloud, Excel, empty workbook, REST API, SDK, create workbook"
 description: "Learn how to create an empty Excel workbook using Aspose.Cells Cloud REST API. Includes cURL and SDK examples."
 weight: 20
+ArticleTitle: "Create an Empty Excel Workbook using Aspose.Cells Cloud API"
 ---
 
 This REST API creates an **empty workbook**.
 
 ## REST API
+
+Before calling the API, ensure you have obtained a valid OAuth2/JWT access token with the required scopes (e.g., `Cells.ReadWrite`). See the authentication guide for details on generating and refreshing tokens.
 
 | Endpoint      | Type | Description              | Resource Link                                                                             |
 | ------------- | ---- | ------------------------ | ----------------------------------------------------------------------------------------- |
@@ -38,10 +41,12 @@ This REST API creates an **empty workbook**.
 | Parameter Name | Type | Description                                    |
 | -------------- | ---- | ---------------------------------------------- |
 | data           | file | Binary content of the workbook file to create. |
+  
+The request body can be omitted when creating a brand‑new workbook, or you can upload a template file as `multipart/form-data`.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services. Include the `Authorization` header with a valid OAuth2/JWT access token.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services. Include the `Authorization` header with a valid OAuth2/JWT access token. For example, obtain your token from the authentication endpoint and use it in the header as shown below.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -120,6 +125,16 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?isWriteOver=fa
 }
 ```
 
+**HTTP Status Codes**
+
+| Code | Meaning                     | When Returned                           |
+|------|-----------------------------|-----------------------------------------|
+| 200 OK | Workbook created successfully | Normal flow                              |
+| 201 Created | Workbook created (alternative response) | When the API returns a created status |
+| 400 Bad Request | Invalid parameters | Client‑side error                        |
+| 401 Unauthorized | Missing or invalid token | Authentication error                    |
+| 409 Conflict | File exists and `isWriteOver=false` | Conflict with existing file            |
+
 {{< /tab >}}
 
 {{< /tabs >}}
@@ -181,3 +196,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+*See also*: Create workbook from a template, Upload an existing workbook, and other related operations.

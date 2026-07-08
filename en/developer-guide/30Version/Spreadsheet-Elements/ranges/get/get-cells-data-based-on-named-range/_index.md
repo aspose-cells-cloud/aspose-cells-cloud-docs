@@ -5,17 +5,26 @@ linktitle: "Values"
 type: docs
 url: /ranges/get/values/
 aliases: [/get-cells-data-based-on-named-range/]
-keywords: "Aspose.Cells Cloud, REST API, Excel, named range, get cell values, worksheet range, API reference"
-description: "Retrieve cell values from a named range in an Excel worksheet using the Aspose.Cells Cloud REST API. The service is accessible through multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) and works across a wide variety of development platforms."
+keywords: "Aspose.Cells, Cloud, REST API, Excel, named range, cell values, worksheet"
+description: "Retrieve cell values from a named range in an Excel worksheet using the Aspose.Cells Cloud REST API. The service is available via multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) and works across a wide range of development platforms."
 weight: 20
+ArticleTitle: "Get Cells Data Based on Named Range – Aspose.Cells Cloud API"
 ---
 
+**Prerequisites**
+
+- A valid JWT access token with the appropriate scope.  
+- The workbook must be uploaded to Aspose Cloud storage (or specified folder).  
+- Ensure the target storage name is provided if using a non‑default storage.
+
 This REST API returns a list of cells within a range identified by a named range or by row‑column indexes.
+
+This operation allows developers to programmatically retrieve the values of cells that belong to a specific named range in an Excel worksheet. By supplying either the `namedRange` identifier or explicit row and column indexes, the API returns a detailed list of cells, including their address, row, column, value, data type, and formatting information. The response can be used to drive data‑driven applications, generate reports, or perform further calculations on the server side. The Aspose.Cells Cloud service supports multiple programming languages through its SDKs, ensuring seamless integration regardless of the development platform. Using HTTPS guarantees secure transmission of data, and the API adheres to RESTful principles, returning standard HTTP status codes for success and error conditions.
 
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
 ```
 
 ### **Request parameters**
@@ -24,9 +33,9 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/valu
 | -------------- | ------- | -------- | ------------------------------------------------------------------------------------------ |
 | name           | string  | path     | The workbook file name.                                                                    |
 | sheetName      | string  | path     | The worksheet name within the workbook.                                                    |
-| namerange      | string  | query    | The named range to retrieve, e.g., `A1:B2` or `range_name1`.                               |
-| firstRow       | integer | query    | Zero‑based index of the first row of the range (used when `namerange` is not supplied).    |
-| firstColumn    | integer | query    | Zero‑based index of the first column of the range (used when `namerange` is not supplied). |
+| namedRange     | string  | query    | The named range to retrieve, e.g., `A1:B2` or `range_name1`.                               |
+| firstRow       | integer | query    | Zero‑based index of the first row of the range (used when `namedRange` is not supplied).    |
+| firstColumn    | integer | query    | Zero‑based index of the first column of the range (used when `namedRange` is not supplied). |
 | rowCount       | integer | query    | Number of rows to include in the range.                                                    |
 | columnCount    | integer | query    | Number of columns to include in the range.                                                 |
 | folder         | string  | query    | The folder that contains the workbook.                                                     |
@@ -246,6 +255,30 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Security Note:** Always use HTTPS when calling the API. The service does not support plain HTTP; using HTTPS ensures the request is encrypted and complies with security best practices.
+
+**Response Codes**
+
+| Status Code | Description |
+|-------------|-------------|
+| 200 | Successful request. Returns the list of cells in the range. |
+| 400 | Bad request – invalid parameters or malformed request. |
+| 401 | Unauthorized – authentication token missing or invalid. |
+| 404 | Not found – the specified workbook, worksheet, or named range does not exist. |
+| 500 | Internal server error – unexpected condition on the server. |
+
+**Example error response (400 Bad Request)**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "The parameter 'namedRange' is missing or invalid."
+}
+```
+
+> **Tip:** The API uses zero‑based indices for `firstRow` and `firstColumn`. For example, the first row of the worksheet is `0`.
 
 ## Cloud SDK Family
 

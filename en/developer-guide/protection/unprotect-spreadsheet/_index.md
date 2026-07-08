@@ -5,7 +5,7 @@ ArticleTitle: "Remove Excel Password Protection – Unlock Open & Modify Passwor
 linktitle: "Unprotect Spreadsheet"
 type: docs
 url: /unprotect-spreadsheet/
-keywords: "unprotect spreadsheet API, Aspose Cells, Excel password removal, OAuth2 authentication, cloud Excel API"
+keywords: "unprotect, spreadsheet, Aspose.Cells, API, Excel, password removal"
 description: "Remove open and modify passwords from Excel files programmatically with the Aspose.Cells Cloud Unprotect Spreadsheet API. Supports .xlsx/.xls, OAuth2 authentication, and batch processing."
 weight: 100
 ---
@@ -18,6 +18,17 @@ The Unprotect Spreadsheet API removes open‑ and modify‑password protection f
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet
+```
+
+**Authentication / Prerequisites**  
+The API requires a valid OAuth 2.0 access token. Obtain the token using your Aspose Cloud client ID and client secret, then include it in the `Authorization` header as `Bearer {access_token}`. Ensure that the target storage (default or named) is configured for the account that owns the token.
+
+**cURL Example**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet?password=OldPass&modifyPassword=ModPass" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@myfile.xlsx"
 ```
 
 ### **Request Parameters**
@@ -45,6 +56,8 @@ PUT https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet
   }
 ]
 ```
+
+A successful response returns the unprotected file as a stream. The file can be saved to the location specified by `outPath`/`outStorageName` or retrieved directly from the response payload.
 
 ### **Error Codes**
 

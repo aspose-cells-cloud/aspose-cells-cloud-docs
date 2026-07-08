@@ -24,6 +24,8 @@ Programmatically add worksheets to Excel files with full control over sheet type
 
 ## **Add Worksheet to Spreadsheet API**
 
+**Prerequisites**: To call this endpoint you must obtain an access token from Aspose Cloud. Request a token via `POST https://api.aspose.cloud/connect/token` using your client ID and secret, then include the header `Authorization: Bearer <access_token>` in the request.
+
 ### Web API
 
 ```http
@@ -44,6 +46,8 @@ PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet
 | **password**       | String  | Query    | **Optional.** Password to decrypt and modify a password‑protected workbook. Omit if the file is not encrypted.                                                                                       |
 
 ### Response
+
+On success the API returns **HTTP 200 OK** (or **201 Created** when a new file is generated) with the updated workbook file.
 
 ```json
 [
@@ -70,6 +74,7 @@ PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet
 - **Batch Template Initialization** – Add a dedicated analysis worksheet for each new customer or project when generating sales quotations or proposals in bulk.
 - **Dynamic Dashboard Expansion** – Insert new chart worksheets in real time as new data dimensions become available.
 - **Compliance & Audit Archiving** – Automatically add evidence‑collection sheets during annual audits, keeping each inspection point isolated.
+- For removing a sheet, see the **[Delete Worksheet](/delete-worksheet/)** operation.
 
 ## Why should you use the Add Worksheet to Spreadsheet API?
 

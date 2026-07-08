@@ -5,7 +5,7 @@ ArticleTitle: "Available Aspose.Cells Cloud SDKs: C#, Java, PHP, Python, Ruby, N
 LinkTitle: "Available SDKs"
 type: docs
 url: /available-sdks/
-description: "Explore Aspose.Cells Cloud SDKs for C#, Java, PHP, Python, Ruby, Node.js, Go & Perl. Build, convert, and analyze Excel files in the cloud with rich APIs, low cost, and cross‑platform support."
+description: "Explore Aspose.Cells Cloud SDKs for C#, Java, PHP, Python, Ruby, Node.js, Go & Perl. Build, convert, and analyze Excel files in the cloud with low‑cost, cross‑platform APIs."
 weight: 30
 keywords: "Aspose.Cells Cloud SDKs, C#, Java, PHP, Python, Ruby, Node.js, Go, Perl, Excel, Cloud API"
 ---
@@ -18,7 +18,7 @@ Aspose.Cells Cloud SDK offers a reliable, stable library for multiple developmen
 
 ## **Efficient Excel processing and rich feature set**
 
-Aspose.Cells Cloud SDK allows developers to efficiently work with Excel files in the cloud, including reading, writing, modifying, and converting, without installing any local Office software. The SDK provides a wealth of APIs and functions to support complex Excel operations, such as formula calculation, chart creation, conditional formatting, etc., to meet the diverse needs of developers.
+Aspose.Cells Cloud SDK allows developers to efficiently work with Excel files in the cloud, including reading, writing, modifying, and converting, without installing any local Office software. The SDK provides a wealth of APIs and functions to support complex Excel operations, such as formula calculation, chart creation, conditional formatting, and more, meeting the diverse needs of developers.
 
 ## **Easy to integrate**
 
@@ -27,6 +27,51 @@ The SDK provides a concise, clear API that lets developers quickly integrate it 
 ## **Reduce costs**
 
 Using Aspose.Cells Cloud SDK can reduce the operating costs of your business by avoiding the need to purchase and maintain expensive on‑premise Office software or servers.
+
+### SDK Overview
+
+| Language | Latest Version | Installation | Quick‑start Example | Documentation |
+|----------|----------------|--------------|---------------------|----------------|
+| C# | 23.12 | `dotnet add package Aspose.Cells-Cloud` | ```csharp\nvar api = new CellsApi(\"clientId\", \"clientSecret\");\nvar result = api.PostConvertDocument(new ConvertDocumentRequest(\"sample.xlsx\", \"pdf\"));\n``` | [API reference](/cells/csharp/) |
+| Java | 23.12 | `mvn dependency:copy -Dartifact=aspose:aspose-cells-cloud:23.12` | ```java\nCellsApi api = new CellsApi(\"clientId\", \"clientSecret\");\nFile result = api.postConvertDocument(new ConvertDocumentRequest(\"sample.xlsx\", \"pdf\"));\n``` | [API reference](/cells/java/) |
+| PHP | 23.12 | `composer require aspose/cells-cloud-sdk` | ```php\n$api = new Aspose\Cells\Cloud\CellsApi($clientId, $clientSecret);\n$result = $api->postConvertDocument(['file' => 'sample.xlsx', 'format' => 'pdf']);\n``` | [API reference](/cells/php/) |
+| Python | 23.12 | `pip install aspose-cells-cloud` | ```python\napi = CellsApi(client_id, client_secret)\nresult = api.post_convert_document(file='sample.xlsx', format='pdf')\n``` | [API reference](/cells/python/) |
+| Ruby | 23.12 | `gem install aspose_cells_cloud` | ```ruby\napi = AsposeCellsCloud::CellsApi.new(client_id, client_secret)\nresult = api.post_convert_document('sample.xlsx', 'pdf')\n``` | [API reference](/cells/ruby/) |
+| Node.js | 23.12 | `npm install asposecellscloud` | ```javascript\nconst { CellsApi } = require('asposecellscloud');\nconst api = new CellsApi(clientId, clientSecret);\napi.postConvertDocument({ file: 'sample.xlsx', format: 'pdf' }).then(result => console.log(result));\n``` | [API reference](/cells/nodejs/) |
+| Go | 23.12 | `go get github.com/aspose/cells-cloud-go/v2` | ```go\napi := cellscloud.NewCellsApi(clientId, clientSecret)\nresult, _ := api.PostConvertDocument(cellscloud.ConvertDocumentRequest{File: \"sample.xlsx\", Format: \"pdf\"})\n``` | [API reference](/cells/go/) |
+| Perl | 23.12 | `cpanm Aspose::Cells::Cloud` | ```perl\nuse Aspose::Cells::Cloud::CellsApi;\nmy $api = Aspose::Cells::Cloud::CellsApi->new(client_id => $cid, client_secret => $csecret);\nmy $result = $api->post_convert_document(file => 'sample.xlsx', format => 'pdf');\n``` | [API reference](/cells/perl/) |
+
+**Prerequisites** – .NET 6+ / Java 8+ / PHP 7.4+ / Python 3.7+ / Ruby 2.6+ / Node 12+ / Go 1.16+ / Perl 5.30+. You also need a valid Aspose Cloud client ID and client secret.
+
+**Sample API request & response** – converting an Excel workbook to PDF:
+
+```json
+// Request
+{
+  "File": "sample.xlsx",
+  "OutputFormat": "pdf"
+}
+```
+
+```json
+// Response (success)
+{
+  "Code": 200,
+  "Status": "OK",
+  "FileUrl": "https://api.aspose.cloud/v3.0/cells/convert/pdf/sample.xlsx"
+}
+```
+
+The SDKs are open‑source and hosted on GitHub; you can fork or contribute to them:
+
+- C#: https://github.com/aspose-cells-cloud/aspose-cells-cloud-csharp
+- Java: https://github.com/aspose-cells-cloud/aspose-cells-cloud-java
+- PHP: https://github.com/aspose-cells-cloud/aspose-cells-cloud-php
+- Python: https://github.com/aspose-cells-cloud/aspose-cells-cloud-python
+- Ruby: https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby
+- Node.js: https://github.com/aspose-cells-cloud/aspose-cells-cloud-node
+- Go: https://github.com/aspose-cells-cloud/aspose-cells-cloud-go
+- Perl: https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl
 
 In summary, using Aspose.Cells Cloud SDK can bring many benefits, including cross‑platform compatibility, efficient handling of Excel files, a rich feature set, security and privacy protection, high scalability, easy integration, community support and documentation, and reduced costs. These advantages make the SDK an ideal choice for developers working with Excel files.
 

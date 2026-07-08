@@ -20,6 +20,8 @@ Programmatically compress Excel spreadsheets and reduce file size with Aspose.Ce
 PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/compress
 ```
 
+**Prerequisites**: You must have a valid Aspose Cloud account and obtain an OAuth 2.0 access token. Include the token in the `Authorization: Bearer <access_token>` header for all API calls. The SDKs can also manage authentication automatically.
+
 ### Request Parameters
 
 | Parameter Name | Type    | Path/Query/String/HTTP Body | Description                                                                                                                           |
@@ -30,6 +32,14 @@ PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/compress
 | outStorageName | String  | Query                       | **Required.** Identifier of the configured cloud storage service (e.g., `CorporateDrive`).                                            |
 | region         | String  | Query                       | **Optional.** Locale setting (e.g., `de-DE`) that may affect region‑specific data handling.                                           |
 | password       | String  | Query                       | **Optional.** Password for decrypting a protected spreadsheet. Leave blank if the file is not encrypted.                              |
+
+**Sample cURL request**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/compress?level=5&outStorageName=MyStorage" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/input.xlsx"
+```
 
 ### Response
 
@@ -69,8 +79,8 @@ PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/compress
 
 - **Developer‑friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development with comprehensive documentation.
 - **Reduced labor costs** – Eliminates the need for dedicated personnel to consolidate documents manually.
-- **Pay‑per‑use** – No upfront investment; you only pay for the API calls you actually make.
-- **Zero maintenance** – No servers to maintain, no software updates, and no compatibility concerns.
+- **Pay‑per‑use pricing** – No upfront investment; you only pay for the API calls you actually make.
+- **No server maintenance required** – No servers to maintain, no software updates, and no compatibility concerns.
 
 ## How to Use the Compress Spreadsheet API with SDKs
 
@@ -129,3 +139,16 @@ The following code examples demonstrate how to interact with Aspose.Cells web se
 
 5. **How is rate limiting enforced?**  
    You may make up to **100 requests per minute**. Exceeding this limit returns a **429 Too Many Requests** response with a `Retry-After` header indicating when to retry.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Compress Spreadsheet API",
+  "description": "REST API to compress Excel files programmatically using Aspose.Cells Cloud.",
+  "url": "https://docs.aspose.cloud/cells/compress-spreadsheet/",
+  "author": { "@type": "Organization", "name": "Aspose" },
+  "datePublished": "2024-01-01",
+  "keywords": ["Aspose.Cells", "Excel compression", "API"]
+}
+</script>

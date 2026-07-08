@@ -1,5 +1,6 @@
 ---
 title: "Ungroup Columns in an Excel Worksheet – Aspose.Cells Cloud API"
+ArticleTitle: "Ungroup Columns in an Excel Worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Ungroup"
 type: docs
@@ -7,12 +8,15 @@ url: /columns/ungroup/
 aliases:
   - /ungroup-columns-in-an-excel-worksheet/
   - /ungroup-columns-in-excel-worksheet/
-keywords: "Aspose.Cells, ungroup columns, Excel API, REST, SDK"
-description: "Learn how to ungroup columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, cURL example, and SDK code snippets for C#, Java, Python, and more."
+keywords: "Aspose.Cells, ungroup columns, Excel API, REST, cloud SDK"
+description: "Learn how to ungroup columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, cURL example, and SDK code snippets."
 weight: 70
 ---
 
 The **Ungroup Columns** REST API removes column grouping in a worksheet.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token‑based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -65,6 +69,17 @@ _On error the service returns a JSON object containing `Code`, `Status`, and `Er
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Response Status Codes
+
+| HTTP Code | Description |
+|-----------|-------------|
+| 200 | Success – columns ungrouped. |
+| 400 | Bad Request – invalid parameters. |
+| 401 | Unauthorized – missing or invalid authentication token. |
+| 403 | Forbidden – insufficient permissions. |
+| 404 | Not Found – workbook, worksheet, or columns not found. |
+| 500 | Internal Server Error – unexpected server error. |
 
 ## Cloud SDK Family
 

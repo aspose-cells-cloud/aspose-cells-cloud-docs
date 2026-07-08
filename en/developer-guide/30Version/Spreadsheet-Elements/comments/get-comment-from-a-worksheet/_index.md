@@ -3,12 +3,15 @@ title: "Get Worksheet Comment – Aspose.Cells Cloud API Documentation"
 type: docs
 url: /comments/get/
 aliases: [/get-comment-from-a-worksheet/]
-keywords: "Aspose.Cells Cloud Get Worksheet Comment, REST API, Excel, worksheet comment"
-description: "Learn how to retrieve a worksheet comment by cell name using Aspose.Cells Cloud API (v3.0). Includes request URL, parameters, cURL sample, and SDK code snippets."
+keywords: "Aspose.Cells, worksheet comment, API, GET, Excel"
+description: "Learn how to retrieve a worksheet comment by cell name using Aspose.Cells Cloud API (v3.0). Includes request URL, parameters, cURL example, response details, and SDK code snippets."
 weight: 10
+ArticleTitle: "Get Worksheet Comment – Aspose.Cells Cloud API Documentation"
 ---
 
 This REST API retrieves a worksheet comment by cell name using **Aspose.Cells Cloud**.
+
+**Prerequisites:** To call this operation you must include a valid JWT access token in the `Authorization` header (`Bearer <jwt token>`). Tokens can be obtained via the Aspose.Cells Cloud authentication flow described in the [Authentication guide](/cells/authentication/).
 
 ## REST API
 
@@ -70,11 +73,36 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 {{< /tabs >}}
 
+**Response:** The API returns a JSON object containing a `Comment` object with the following fields:
+
+| Field                      | Type    | Description                                            |
+| -------------------------- | ------- | ------------------------------------------------------ |
+| `CellName`                 | string  | Address of the cell (e.g., **A1**).                    |
+| `Author`                   | string  | Name of the comment’s author.                          |
+| `HtmlNote`                 | string  | Comment content in HTML format (if any).               |
+| `Note`                     | string  | Plain‑text version of the comment.                     |
+| `AutoSize`                 | boolean | Indicates whether the comment box auto‑sizes.          |
+| `IsVisible`                | boolean | Determines if the comment is visible.                 |
+| `Width`                    | integer | Width of the comment box (in characters).              |
+| `Height`                   | integer | Height of the comment box (in characters).             |
+| `TextHorizontalAlignment` | string  | Horizontal alignment of the text (e.g., **Bottom**).   |
+| `TextOrientationType`      | string  | Orientation of the text (e.g., **TopToBottom**).       |
+| `TextVerticalAlignment`    | string  | Vertical alignment of the text (e.g., **Bottom**).     |
+
 ## Common Errors
 
 - **401 Unauthorized** – Verify that the JWT token is valid, not expired, and correctly placed in the `Authorization` header.
 - **404 Not Found** – Ensure the file name, worksheet name, and cell address are correct and that the file exists in the specified folder/storage.
 - **500 Internal Server Error** – Check the request payload for malformed data and confirm that the service is operational.
+
+**Status Codes**
+
+| Code | Meaning                         |
+| ---- | ------------------------------- |
+| 200  | Comment retrieved successfully. |
+| 401  | Unauthorized – invalid or missing JWT token. |
+| 404  | Not Found – specified file/worksheet/comment does not exist. |
+| 500  | Internal Server Error – unexpected server condition. |
 
 ## Cloud SDK Family
 

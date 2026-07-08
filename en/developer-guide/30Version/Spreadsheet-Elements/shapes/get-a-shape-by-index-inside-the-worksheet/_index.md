@@ -5,9 +5,10 @@ linktitle: "Get"
 type: docs
 url: /shapes/get/
 aliases: [/get-a-shape-by-index-inside-the-worksheet/]
-keywords: "Get shape by index, Excel worksheet, Aspose.Cells Cloud, REST API, shape retrieval"
-description: "Retrieve a shape by its index from an Excel worksheet using Aspose.Cells Cloud REST API. Supports multiple SDKs and programming languages."
+keywords: "Aspose.Cells Cloud, Excel shape API, get shape by index, worksheet shape, REST API, shape retrieval"
+description: "Learn how to retrieve a shape by its index from an Excel worksheet using Aspose.Cells Cloud REST API. Includes request syntax, parameters, response details, status codes, and SDK examples."
 weight: 20
+ArticleTitle: "Get a Shape by Index on an Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
 
 This REST API retrieves a shape (including its image data or metadata) from an Excel worksheet.
@@ -15,8 +16,12 @@ This REST API retrieves a shape (including its image data or metadata) from an E
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
+
+**Prerequisites**  
+- A valid Aspose Cloud access token (Bearer JWT).  
+- The workbook must be stored in your Aspose Cloud storage or a specified folder.  
 
 ### **Request parameters**
 
@@ -37,7 +42,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/autoshapes/1" \
+curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/autoshapes/1" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -100,6 +105,16 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4
 
 {{< /tabs >}}
 
+**Possible HTTP status codes**
+
+| Code | Description |
+|------|-------------|
+| **200 OK** | The shape was retrieved successfully. |
+| **400 Bad Request** | The request is malformed or missing required parameters. |
+| **401 Unauthorized** | Authentication failed or token is missing/invalid. |
+| **404 Not Found** | The specified workbook, worksheet, or shape index does not exist. |
+| **500 Internal Server Error** | An unexpected server error occurred. |
+
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
@@ -157,3 +172,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+For related operations, see the documentation on **[Adding a Shape](/shapes/add/)** and **[Updating a Shape](/shapes/update/)**.

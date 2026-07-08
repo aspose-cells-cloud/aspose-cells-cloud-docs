@@ -31,6 +31,25 @@ PUT https://api.aspose.cloud/v4.0/cells/protection/spreadsheet
 | outStorageName | String | Query                      | The name of the cloud storage used for storing the output protected file.                                                                      |
 | region         | String | Query                      | Specifies the regional/cultural settings (e.g., date format, number formatting) applied to the spreadsheet during processing.                  |
 
+**Authentication**  
+All calls to the Protect Spreadsheet API require a valid OAuth 2.0 access token. Include the token in the `Authorization` header:
+
+```http
+Authorization: Bearer {access_token}
+```
+
+The token must be obtained from Aspose Cloud’s authentication endpoint and must include the **Cells** scope.
+
+**Sample cURL Request**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/protection/spreadsheet?openPassword=MyOpenPwd&modifyPassword=MyModifyPwd" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@/path/to/workbook.xlsx" \
+     -F "outPath=protected/" \
+     -F "outStorageName=MyStorage"
+```
+
 ## **Response**
 
 ```json
@@ -74,11 +93,11 @@ PUT https://api.aspose.cloud/v4.0/cells/protection/spreadsheet
 
 ### OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/ProtectionController/ProtectSpreadsheet) provides a detailed programming interface for executing REST interactions directly from a web browser.
+<a href="https://reference.aspose.cloud/cells/#/ProtectionController/ProtectSpreadsheet" rel="noopener noreferrer">OpenAPI Specification</a> provides a detailed programming interface for executing REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement protect‑spreadsheet functionality with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement protect‑spreadsheet functionality with minimal code. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to interact with Aspose.Cells web services using various SDKs:
 
@@ -109,6 +128,4 @@ The following code examples illustrate how to interact with Aspose.Cells web ser
 {{</tab>}}
 {{< /tabs >}}
 
-```
-
-```
+*If any of the above code snippets fail to load, you can view the source directly on GitHub Gist.*

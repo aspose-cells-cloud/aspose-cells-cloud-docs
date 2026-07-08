@@ -6,7 +6,7 @@ linktitle: "Overview"
 type: docs
 url: /overview/
 description: "Explore Aspose.Cells Cloud – a REST‑first API that lets you create, convert, merge, split, protect and render Excel files (XLS/XLSX) to PDF, HTML, ODS, XPS, CSV & more. Free trial available."
-keywords: "Aspose.Cells Cloud API tutorial, Excel to PDF conversion API, cloud spreadsheet SDK"
+keywords: "Aspose Cells, Cloud API, Excel conversion, PDF, HTML, ODS, XPS, CSV, spreadsheet SDK"
 weight: 10
 ---
 
@@ -19,13 +19,15 @@ Aspose.Cells Cloud is a REST API that enables a wide array of document‑process
 - CSV  
 - and other popular formats  
 
+**Prerequisites:** To use the service you need an Aspose Cloud account and a valid API key. These credentials are required for all authenticated requests.
+
 ## **SDKs**
 
-Utilizing an SDK (API client) expedites development by handling low‑level details of making requests and managing responses, allowing developers to focus on project‑specific code. Explore our [GitHub repository](https://github.com/aspose-cells-cloud) for a comprehensive list of Aspose.Cells SDKs, complete with working examples to accelerate your project development. Refer to our "[Available SDKs](/cells/available-sdks/)" article to learn how to integrate an SDK into your project.
+Utilizing an SDK (API client) expedites development by handling low‑level details of making requests and managing responses, allowing developers to focus on project‑specific code. Explore our <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a comprehensive list of Aspose.Cells SDKs, complete with working examples to accelerate your project development. Refer to our "[Available SDKs](/cells/available-sdks/)" article to learn how to integrate an SDK into your project.
 
 ## **API Explorer**
 
-The [Aspose.Cells Cloud API Reference](https://apireference.aspose.cloud/cells/) provides a user‑friendly way to experiment with the APIs directly in your browser. It enables seamless interaction and testing of every operation exposed by the service.
+The <a href="https://apireference.aspose.cloud/cells/" rel="noopener noreferrer">Aspose.Cells Cloud API Reference</a> provides a user‑friendly way to experiment with the APIs directly in your browser. It enables seamless interaction and testing of every operation exposed by the service. For a quick start, you can try the “Convert Workbook” example, which demonstrates a simple POST request to convert an Excel file to PDF.
 
 ## **Security and Authentication**
 

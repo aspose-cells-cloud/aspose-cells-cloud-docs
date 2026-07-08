@@ -7,7 +7,7 @@ type: docs
 url: /available-sdks/aspose-cells-cloud-perl/
 description: "Explore the Aspose.Cells Cloud Perl SDK – a cross‑platform library to create, convert, merge, split, protect, search and replace Excel files without Office installed."
 weight: 30
-keywords: "Perl SDK, Aspose.Cells Cloud, Excel conversion Perl, Excel SDK for Perl, Cloud SDK"
+keywords: "Perl, Aspose.Cells Cloud, Excel SDK, conversion, PDF, API"
 ---
 
 The SDK is open‑source and licensed under the MIT License. You can access [the Perl library source code for Aspose.Cells Cloud](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl).
@@ -43,15 +43,13 @@ perl -MCPAN -e "install AsposeCellsCloud::CellsApi"
 
 The conversion workflow consists of the following steps:
 
-| Step | Description |
-|------|-------------|
-| **Import the library** | `use AsposeCellsCloud::CellsApi;` |
-| **Configure the API client** | Provide the `client_id` and `client_secret` (or rely on the environment variables). |
-| **Upload the source workbook** | Use `UploadFile` to place the XLSX file in the chosen storage folder. |
-| **Define conversion parameters** | Specify the source file name, the target format (e.g., `pdf`), and the output path. |
-| **Execute the conversion** | Call `PostConvertWorkbook` and capture the response. |
-| **Download the result** | Retrieve the converted file from the storage location. |
-| **Handle errors** | Check the response status and use `eval { … }` or `$api->error` for exception handling. |
+1. **Import the library** – `use AsposeCellsCloud::CellsApi;`
+2. **Configure the API client** – Provide the `client_id` and `client_secret` (or rely on the environment variables).
+3. **Upload the source workbook** – Use `UploadFile` to place the XLSX file in the chosen storage folder.
+4. **Define conversion parameters** – Specify the source file name, the target format (e.g., `pdf`), and the output path.
+5. **Execute the conversion** – Call `PostConvertWorkbook` and capture the response.
+6. **Download the result** – Retrieve the converted file from the storage location.
+7. **Handle errors** – Check the response status and use `eval { … }` or `$api->error` for exception handling.
 
 Below is a complete, runnable Perl script that demonstrates an end‑to‑end conversion from **XLSX** to **PDF**, including basic error handling:
 
@@ -77,15 +75,15 @@ my $api = AsposeCellsCloud::CellsApi->new($client_id, $client_secret);
 eval {
     # Upload the source workbook
     $api->UploadFile(
-        path      => "$storage_path/$source_file",
-        file      => $source_file
+        path => "$storage_path/$source_file",
+        file => $source_file
     );
 
     # Convert the workbook
     my $result = $api->PostConvertWorkbook(
-        file   => "$storage_path/$source_file",
-        format => 'pdf',
-        outPath=> "$storage_path/$output_file"
+        file    => "$storage_path/$source_file",
+        format  => 'pdf',
+        outPath => "$storage_path/$output_file"
     );
 
     # Check the conversion result
@@ -111,3 +109,19 @@ if ($@) {
 ---
 
 {{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_AvailableSDKs.pl" >}}
+
+You can also download the sample script directly from the repository: [example.pl](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/raw/master/examples/example.pl)
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Aspose.Cells Cloud SDK for Perl",
+  "operatingSystem": "Cross‑Platform",
+  "programmingLanguage": "Perl",
+  "description": "Perl library to create, edit, convert, merge, split and protect Excel files via Aspose.Cells Cloud.",
+  "url": "https://docs.aspose.cloud/cells/available-sdks/aspose-cells-cloud-perl/",
+  "downloadUrl": "https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl",
+  "license": "MIT"
+}
+</script>

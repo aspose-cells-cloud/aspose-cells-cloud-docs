@@ -7,6 +7,7 @@ aliases: [/working-with-tasks/]
 keywords: "Aspose Cells, Cloud API, Excel tasks, Convert task, ImportData task, SmartMarker, SaveResult, REST API, spreadsheet automation"
 description: "Explore the full set of Aspose.Cells Cloud Tasks API: Convert, ImportData, SaveResult, SmartMarker, and more. Learn usage, parameters, and code examples for Excel automation."
 weight: 100
+ArticleTitle: "Aspose.Cells Cloud Tasks API"
 ---
 
 ## Working with tasks
@@ -22,3 +23,5 @@ Aspose.Cells Cloud provides a **Task API** that enables developers to perform a 
 - [Working with SaveResult Task](/cells/working-with-saveresult-task/) – Saves the result of a previously executed task (e.g., a converted file) back to cloud storage or returns it in the response.
 - [Working with SmartMarker Task](/cells/working-with-smartmarker-task/) – Processes a workbook containing SmartMarker tags (e.g., `{{Customer.Name}}`) using a JSON data source to generate a populated report.
 - [Working with WorksheetOperates in Task API](/cells/working-with-worksheetoperates-in-task-api/) – Performs worksheet‑level operations such as adding, deleting, or renaming worksheets as part of a task workflow.
+
+For complete method specifications—including HTTP verbs, endpoint URLs, request/response schemas, parameter tables, and example payloads—refer to the individual task pages linked above. This detailed API reference helps developers integrate the Tasks API quickly and reliably.

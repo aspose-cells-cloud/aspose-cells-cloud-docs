@@ -8,9 +8,12 @@ aliases: [/working-with-text/, /text/]
 description: "Learn how to search and replace text in Excel workbooks and worksheets using Aspose.Cells Cloud REST API. Includes request format, sample code for .NET, Java, Python, and error handling."
 keywords: "Aspose.Cells Cloud, Excel, search and replace, REST API, .NET, Java, Python"
 weight: 20
+ArticleTitle: "Search and Replace Text in Excel Files using Aspose.Cells Cloud API"
 ---
 
 Text operations are complex processes for Excel files. Many factors contribute to this complexity and should be considered during processing. Aspose.Cells Cloud provides a reliable way to search for and replace text across a variety of spreadsheet formats.
+
+Working with text in Excel workbooks often requires locating specific strings and updating them across multiple sheets. The Aspose.Cells Cloud API simplifies this task by providing a unified **search and replace** operation that works on any supported spreadsheet format.
 
 ## Overview
 
@@ -90,6 +93,11 @@ Below are minimal examples for three popular SDKs. Replace `{clientId}`, `{clien
 | 401       | Unauthorized – invalid or expired token          | Refresh the access token.                                                |
 | 404       | Not Found – workbook or worksheet does not exist | Check the file name, folder path, and `sheetName`.                       |
 | 500       | Internal Server Error – unexpected failure       | Retry after a short delay; contact Aspose support if the issue persists. |
+
+**Notes:**  
+- Large workbooks may exceed request size limits; consider uploading the file to cloud storage first.  
+- When `ignoreCase` is set to `true`, be aware that locale‑specific case mappings can affect results.  
+- Using `matchWholeCell` with formulas will not replace partial matches inside the formula text.
 
 ## Search and replace in Excel files
 

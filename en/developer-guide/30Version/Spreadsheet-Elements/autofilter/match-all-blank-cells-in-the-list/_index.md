@@ -5,12 +5,12 @@ linktitle: "Match all blank cells"
 type: docs
 url: /autofilter/match-all-blank/
 aliases: [/match-all-blank-cells-in-the-list/]
-keywords: "Aspose.Cells, match blank cells, auto filter, REST API, Excel, cloud"
+keywords: "Aspose.Cells, blank cells, AutoFilter, REST API, Excel"
 description: "Learn how to use Aspose.Cells Cloud REST API to filter and match all blank cells in an Excel worksheet. Includes endpoint, parameters, authentication steps, cURL example, and SDK snippets for C#, Java, Python, and more."
 weight: 100
 ---
 
-This REST API matches all **blank cells** in the filter list on an Excel worksheet.
+This REST API matches all **blank cells** in the filter list on an Excel worksheet. **Prerequisite:** You must provide a valid JWT bearer token and ensure the workbook is stored in your Aspose Cloud storage.
 
 ## REST API
 
@@ -27,6 +27,8 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilte
 | fieldIndex     | integer | query    | Zero‑based index of the column to which the filter is applied.         |
 | folder         | string  | query    | The folder path in storage where the workbook is located.              |
 | storageName    | string  | query    | The name of the Aspose Cloud storage.                                   |
+
+**Notes:** The endpoint supports only .xlsx files and the maximum worksheet size is limited by the service plan.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchBlanks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -96,3 +98,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+*Last updated: 2026‑07‑06*

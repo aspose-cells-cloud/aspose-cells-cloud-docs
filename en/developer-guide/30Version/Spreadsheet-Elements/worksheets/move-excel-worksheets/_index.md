@@ -8,6 +8,7 @@ aliases: [/move-excel-worksheets/]
 keywords: "Aspose.Cells Cloud, Move Worksheet, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
 description: "Learn how to move an Excel worksheet to a new position using Aspose.Cells Cloud API (v3.0). Includes endpoint, required parameters, cURL example, and SDK code in C#, Java, Python, and more."
 weight: 20
+ArticleTitle: "How to Move an Excel Worksheet with Aspose.Cells Cloud API v3.0"
 ---
 
 This REST API moves a worksheet within an Excel workbook.
@@ -53,6 +54,26 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 {
   "Code": 200,
   "Status": "OK"
+}
+```
+
+**Response Codes**
+
+| Code | Meaning               | Description                                    |
+|------|-----------------------|------------------------------------------------|
+| 200  | OK                    | Worksheet moved successfully.                 |
+| 400  | Bad Request           | Invalid parameters (e.g., missing `moving`). |
+| 401  | Unauthorized          | Invalid or missing JWT token.                 |
+| 404  | Not Found             | Workbook or worksheet not found.              |
+| 500  | Internal Server Error | Unexpected server error.                      |
+
+**Sample Error Payload**
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Missing required parameter 'moving'."
 }
 ```
 

@@ -8,9 +8,13 @@ aliases: [/delete-worksheet-pivot-tables/]
 keywords: "Aspose.Cells, delete pivot tables, Excel API, REST, cloud, pivot table clear, worksheet"
 description: "Learn how to delete every pivot table from a worksheet using Aspose.Cells Cloud REST API. Includes endpoint, required parameters, cURL request, response, and SDK examples for C#, Java, Python, Node.js, and more."
 weight: 80
+ArticleTitle: "Delete All Pivot Tables in an Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
 When you need to reset a worksheet’s analysis, you can remove all pivot tables in a single call. This REST API deletes all pivot tables from a worksheet.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 

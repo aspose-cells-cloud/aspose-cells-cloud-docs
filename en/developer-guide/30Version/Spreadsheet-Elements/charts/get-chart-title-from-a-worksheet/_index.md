@@ -5,19 +5,20 @@ url: /charts/title/get/
 aliases: [/get-chart-title-from-a-worksheet/]
 weight: 120
 keywords:
-  [
-    "Aspose.Cells Cloud",
-    "Chart Title",
-    "Excel",
-    "REST API",
-    "Get Chart Title",
-    "cURL",
-    "SDK",
-  ]
+  - "Aspose.Cells Cloud"
+  - "Chart Title"
+  - "Excel"
+  - "REST API"
+  - "Get Chart Title"
+  - "cURL"
+  - "SDK"
 description: "Learn how to retrieve a chart title from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication, sample cURL and SDK code."
+ArticleTitle: "Get Chart Title from a Worksheet"
 ---
 
 This REST API retrieves the title of a chart that is stored in a worksheet of an Excel workbook.
+
+**Prerequisites**: To call this endpoint you must have a valid Aspose.Cells Cloud OAuth2/JWT access token with the `Cells.Read` scope. The workbook must already be uploaded to the specified storage location.
 
 ## REST API
 
@@ -79,6 +80,17 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/charts
 | `Title.Font.Name`   | Font family used for the title (e.g., _Arial_). |
 | `Title.Font.Size`   | Font size in points.                            |
 | `Title.Font.IsBold` | Indicates whether the title text is bold.       |
+
+**Response status codes**
+
+| Code | Description |
+|------|-------------|
+| 200 OK | The chart title was retrieved successfully. |
+| 401 Unauthorized | Authentication failed or token is missing/invalid. |
+| 404 Not Found | The specified workbook, worksheet, or chart does not exist. |
+| 500 Internal Server Error | An unexpected server error occurred. |
+
+**Notes**: The chart index is zero‑based; ensure the chart exists. If the workbook has not been uploaded, upload it first using the appropriate API.
 
 **How to extract the title in a script (using `jq`)**
 

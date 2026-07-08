@@ -1,10 +1,11 @@
 ---
 title: "Add multiple rows to an Excel worksheet"
+ArticleTitle: "Add multiple rows to an Excel worksheet using Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Rows"
 type: docs
 url: /rows/add/rows/
-keywords: "Aspose.Cells Cloud, insert rows, Excel worksheet, REST API, SDK"
+keywords: "Aspose.Cells Cloud, insert rows, Excel worksheet, REST API, SDK, add multiple rows"
 description: "Learn how to use the Aspose.Cells Cloud REST API to insert multiple rows into an Excel worksheet. This guide covers the endpoint, request parameters, sample cURL commands, and SDK usage examples."
 weight: 20
 ---
@@ -23,11 +24,17 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 | --------------- | ------- | -------- | ---------------------------------------------------------------------- |
 | name            | string  | path     | The workbook name.                                                     |
 | sheetName       | string  | path     | The worksheet name.                                                    |
-| startrow        | integer | query    | The index of the first row to be inserted (0‑based).                   |
+| startrow        | integer | query    | The index of the first row to be inserted (**0‑based**).               |
 | totalRows       | integer | query    | The number of rows to insert.                                          |
 | updateReference | boolean | query    | Whether to update cell references after insertion (`true` or `false`). |
 | folder          | string  | query    | The folder that contains the document.                                 |
 | storageName     | string  | query    | The storage name.                                                      |
+
+**Prerequisites**  
+The workbook must already exist in the specified storage (or folder) before invoking this operation.
+
+**Authentication**  
+The API requires a valid JWT token. Include it in the `Authorization` header as shown in the cURL example below.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -55,6 +62,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
   "Status": "OK"
 }
 ```
+
+*Possible response codes*  
+
+- **200 OK** – Rows inserted successfully.  
+- **400 Bad Request** – Invalid parameters (e.g., negative row index).  
+- **401 Unauthorized** – Missing or invalid JWT token.  
+- **404 Not Found** – Specified workbook or worksheet does not exist.  
+- **500 Internal Server Error** – Unexpected server error.
 
 {{< /tab >}}
 

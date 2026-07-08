@@ -3,12 +3,16 @@ title: "Add Format Condition"
 type: docs
 url: /conditional-formattings/add-format-condition/
 aliases: [/add-a-format-condition/]
-keywords: "Aspose.Cells Cloud, Add Format Condition API, Conditional Formatting, Excel, Spreadsheet, REST API"
-description: "Learn how to add a format condition to an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, parameters, cURL example, and SDK snippets."
+keywords: "Aspose.Cells Cloud, Conditional Formatting API, Add Format Condition, Excel REST API, Cells API"
+description: "Learn how to add a format condition to an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes request syntax, parameters, secure cURL example, and SDK snippets."
+ArticleTitle: "Add Format Condition – Aspose.Cells Cloud API Documentation"
 weight: 50
 ---
 
 This REST API adds a format condition to a worksheet.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -40,6 +44,12 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditional
 | **404**   | Not Found – workbook or worksheet does not exist.  | `{ "Code":"404", "Message":"File not found." }`                     |
 | **500**   | Internal Server Error – unexpected server failure. | `{ "Code":"500", "Message":"An unexpected error occurred." }`       |
 
+### Success Response
+
+| HTTP Code | Reason            | Example Body                              |
+| --------- | ----------------- | ------------------------------------------ |
+| **200**   | OK – condition added or updated successfully. | `{ "Code": "200", "Status": "OK" }` |
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/PutWorksheetFormatCondition) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use **cURL** to call the Aspose.Cells API. The example below shows a complete request, including an empty JSON body.
@@ -51,7 +61,7 @@ You can use **cURL** to call the Aspose.Cells API. The example below shows a com
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0?cellArea=A1:C3&type=Expression&operatorType=Between&formula1=v1&formula2=v2" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/conditionalFormattings/0?cellArea=A1:C3&type=Expression&operatorType=Between&formula1=v1&formula2=v2" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \

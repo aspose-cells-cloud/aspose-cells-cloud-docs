@@ -5,9 +5,10 @@ linktitle: "Conditional Formattings"
 type: docs
 url: /conditional-formattings/
 aliases: [/working-with-conditional-formatting/]
-keywords: "Excel, conditional formatting, spreadsheet, Cells.Cloud API, REST API"
+keywords: "Excel, Conditional Formatting, Aspose.Cells Cloud, API"
 description: "The Cells.Cloud API for Excel provides endpoints to retrieve, add, modify, and clear conditional formatting rules, enabling dynamic visual analysis of worksheet data."
 weight: 100
+ArticleTitle: "Working with Excel Conditional Formatting – API Guide"
 ---
 
 Conditional formatting in Excel enables you to highlight cells with a specific color, depending on the cell’s value.
@@ -21,10 +22,18 @@ A conditional format changes the appearance of cells based on the conditions you
 **Summary**
 
 - [Get Conditional Formattings of Worksheet](/cells/conditional-formattings/get-all/)
+  - Retrieves all conditional formatting rules applied to a worksheet.  
 - [Get Conditional Formatting](/cells/conditional-formattings/get/)
+  - Returns a specific conditional formatting rule by its identifier.  
 - [Add a Cell Area for Format Condition](/cells/conditional-formattings/add-cell-area/)
+  - Adds a cell range that the specified conditional format will affect.  
 - [Add a Condition for Format Condition](/cells/conditional-formattings/add-a-condition/)
+  - Defines a new condition (e.g., value, formula) for an existing format rule.  
 - [Add a Format Condition](/cells/conditional-formattings/add-format-condition/)
+  - Creates a complete conditional formatting rule, including type and style.  
 - [Clear All Condition Formattings](/cells/conditional-formattings/clear/)
+  - Removes every conditional formatting rule from the target worksheet.  
 - [Remove Cell Area from Conditional Formatting](/cells/conditional-formattings/delete-cell-area/)
+  - Deletes a previously defined cell area from a conditional formatting rule.  
 - [Remove Conditional Formatting](/cells/conditional-formattings/delete/)
+  - Deletes an entire conditional formatting rule from the worksheet.

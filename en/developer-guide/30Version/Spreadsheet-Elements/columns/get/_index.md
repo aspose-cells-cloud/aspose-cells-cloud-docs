@@ -8,12 +8,16 @@ aliases:
   - /get-columns-from-an-excel-worksheet/
   - /get-columns-from-a-worksheet/
   - /get-column-from-a-worksheet/
-keywords: "Aspose.Cells Cloud, Get Column API, Excel column API, retrieve column data, Aspose.Cells SDK"
+keywords: "Aspose.Cells, Cloud API, Excel column, Get column, REST API"
 description: "Retrieve detailed information about a worksheet column (index, width, style, hidden state) using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, authentication steps, and error handling."
 weight: 10
+ArticleTitle: "Get Column Details – Aspose.Cells Cloud API Reference (v4.0)"
 ---
 
 This REST API reads worksheet column data by the column’s index.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -66,6 +70,19 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/test.xlsx/worksheets/Sheet1/cel
 }
 ```
 
+### Response Schema
+
+| Field               | Type    | Description                                                |
+|---------------------|---------|------------------------------------------------------------|
+| `Column.GroupLevel` | integer | Outline level of the column (used for grouping).          |
+| `Column.Index`      | integer | Zero‑based index of the column.                            |
+| `Column.IsHidden`   | boolean | Indicates whether the column is hidden.                   |
+| `Column.Width`      | number  | Width of the column in characters.                         |
+| `Column.Style`      | object  | Style information; contains a `link` to the style resource. |
+| `Column.link`       | object  | Self‑link to the column resource.                          |
+| `Code`              | integer | HTTP status code of the response.                          |
+| `Status`            | string  | Textual description of the status (e.g., **OK**).          |
+
 ### Possible Errors
 
 | HTTP Status | Code | Message               | When it occurs                                               |
@@ -81,6 +98,15 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/test.xlsx/worksheets/Sheet1/cel
 {
   "Code": 404,
   "Message": "Column index out of range."
+}
+```
+
+**Example – 401 Unauthorized**
+
+```json
+{
+  "Code": 401,
+  "Message": "Invalid or missing authentication token."
 }
 ```
 

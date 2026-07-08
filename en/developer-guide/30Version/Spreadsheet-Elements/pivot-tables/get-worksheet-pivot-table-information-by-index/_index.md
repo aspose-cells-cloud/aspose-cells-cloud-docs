@@ -6,11 +6,16 @@ type: docs
 url: /pivot-tables/get/
 aliases: [/get-worksheet-pivot-table-information-by-index/]
 keywords: "Aspose.Cells, pivot table, Excel, REST API, get worksheet pivot table"
-description: "Retrieve a pivot table from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request syntax, required parameters, authentication guidance, response schema, error handling, and SDK code samples for multiple languages."
+description: "Retrieve a pivot table from an Excel worksheet via Aspose.Cells Cloud REST API. Includes request syntax, parameters, authentication, response schema, error handling, and SDK samples."
 weight: 10
+ArticleTitle: "Get a Pivot Table in an Excel Worksheet"
 ---
 
 This REST API retrieves worksheet **pivot table** information by its index.
+
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -162,6 +167,19 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
   ]
 }
 ```
+
+**Response Schema**
+
+| Field          | Type    | Description                                      |
+|----------------|---------|--------------------------------------------------|
+| Status         | string  | Operation status text (e.g., “OK”).             |
+| PivotFilters   | array   | Collection of pivot filter definitions.         |
+| └─ AutoFilter  | object  | Details of automatic filtering applied to pivot. |
+|    └─ link     | object  | Hyperlink information for the filter.            |
+|    └─ FilterColumns | array | Individual column filter settings.          |
+|    └─ Range    | string  | Cell range the filter applies to.                |
+|    └─ Sorter   | object  | Sorting configuration for the filtered data.    |
+| (additional nested fields follow the same structure as shown in the sample JSON) |
 
 {{< /tab >}}
 

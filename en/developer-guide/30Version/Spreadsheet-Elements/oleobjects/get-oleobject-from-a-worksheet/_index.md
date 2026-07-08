@@ -5,12 +5,16 @@ linktitle: "Get"
 type: docs
 url: /oleobjects/get/
 aliases: [/get-oleobject-from-a-worksheet/]
-keywords: "aspose cells api, ole object, excel worksheet, get ole object, rest api"
+keywords: "aspose, cells, ole object, excel, worksheet, get ole object, rest api"
 description: "Retrieve an OLE object (image, chart, or embedded file) from a worksheet using Aspose.Cells Cloud REST API. Includes HTTPS endpoint, required parameters, sample cURL, and SDK code in multiple languages."
+ArticleTitle: "Get OLE Object from Excel Worksheet – Aspose.Cells Cloud API"
 weight: 10
 ---
 
 This REST API retrieves an **OLE object** from an Excel worksheet.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## Rest API
 
@@ -96,6 +100,16 @@ If `format` is omitted or set to `json`, the API returns a JSON payload describi
 | 401         | Unauthorized | Invalid or missing JWT token.                 |
 | 404         | NotFound     | Workbook, worksheet, or OLE object not found. |
 | 500         | ServerError  | Unexpected server error.                      |
+
+**Example 404 response**
+
+```json
+{
+  "Code": 404,
+  "Status": "NotFound",
+  "Message": "The requested OLE object with number 0 was not found in worksheet 'Sheet1'."
+}
+```
 
 ## Cloud SDK Family
 

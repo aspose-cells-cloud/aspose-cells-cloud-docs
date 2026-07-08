@@ -5,7 +5,7 @@ ArticleTitle: "Combine Multiple Excel Files into One – Batch Merge Spreadsheet
 linktitle: "Merge Spreadsheets"
 type: docs
 url: /merge-spreadsheets/
-keywords: "Aspose.Cells merge spreadsheets, merge Excel files API, batch merge spreadsheets, convert Excel to PDF, cloud spreadsheet merge, spreadsheet conversion, merge CSV files, merge ODS files, Aspose API, Excel file merging"
+keywords: "Aspose.Cells, merge spreadsheets, Excel API, cloud spreadsheet conversion, batch merge, convert Excel to PDF, CSV merge, ODS merge, spreadsheet conversion, Aspose API"
 description: "Combine several local Excel, CSV, or ODS files into a single workbook and convert the result to 30+ formats (PDF, HTML, etc.) using Aspose.Cells Cloud. Includes endpoint, parameters, authentication guide, and SDK examples."
 weight: 100
 ---
@@ -13,6 +13,12 @@ weight: 100
 _One‑Line Summary_: Merge multiple local Excel, CSV, or ODS files into a single workbook and convert it to 30+ output formats with Aspose.Cells Cloud API.
 
 ## **Merge Spreadsheet API**
+
+Before using the API, ensure you have completed the following prerequisites:
+
+* **Authentication** – Obtain a valid OAuth 2.0 access token (or JWT) as described in the Aspose.Cells Cloud authentication guide. Include the token in the `Authorization` header of each request.  
+* **SDK Installation (optional)** – Install the Aspose.Cells Cloud SDK for your language of choice to simplify request construction and response handling.  
+* **File Access** – The source spreadsheet files must be accessible from the client machine or uploaded as multipart/form‑data in the request.
 
 ### Web API
 
@@ -43,24 +49,25 @@ PUT https://api.aspose.cloud/v4.0/cells/merge/spreadsheet
 
 ### **Response**
 
+A successful request returns a JSON object containing the merged file information. Example:
+
 ```json
-[
-  {
-    "Name": "ResponseFile",
-    "DataType": {
-      "Identifier": "File",
-      "Reference": "Stream"
-    }
-  }
-]
+{
+  "FileName": "MergedResult.pdf",
+  "FileSize": 254312,
+  "ContentType": "application/pdf",
+  "FileUrl": "https://api.aspose.cloud/v4.0/storage/file/MergedResult.pdf"
+}
 ```
+
+The file can be downloaded directly from the `FileUrl` or saved to the location specified by `outPath`.
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token or client credentials.
-- **404 Not Found** – The specified spreadsheet file is not accessible.
-- **500 Server Error** – An internal error occurred while processing the spreadsheet.
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI. *Check the endpoint and required parameters.*  
+- **401 Unauthorized** – Invalid access token or client credentials. *Refresh your OAuth token and ensure the `Authorization` header is correct.*  
+- **404 Not Found** – The specified spreadsheet file is not accessible. *Verify the file path or upload the file again.*  
+- **500 Server Error** – An internal error occurred while processing the spreadsheet. *Retry the request; if the problem persists, contact support with the request ID.*
 
 ## Where should we use the Merge Spreadsheet API?
 

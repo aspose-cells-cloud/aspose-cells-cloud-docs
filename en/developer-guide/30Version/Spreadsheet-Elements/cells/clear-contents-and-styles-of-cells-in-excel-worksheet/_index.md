@@ -12,14 +12,18 @@ keywords:
   - worksheet
   - cloud API
 description: "Learn how to use Aspose.Cells Cloud REST API to clear cell contents and styles in an Excel worksheet, with cURL examples and SDK code snippets."
+ArticleTitle: "Clear Contents and Styles of Cells in an Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
 This REST API clears the contents of cells in an Excel file.
 
 ## REST API
 
+**Prerequisites**  
+To call this endpoint you need a valid Aspose Cloud **JWT bearer token** and appropriate permissions for the target workbook.
+
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
 ```
 
 The request parameters are:
@@ -36,6 +40,16 @@ The request parameters are:
 | folder         | string  | query    | Folder containing the workbook.               |
 | storageName    | string  | query    | Name of the storage location.                 |
 
+**Possible HTTP response codes**
+
+| Code | Description |
+|------|-------------|
+| 200  | Operation completed successfully. |
+| 400  | Bad request – missing or invalid parameters. |
+| 401  | Unauthorized – invalid or missing JWT token. |
+| 404  | Not found – workbook or worksheet does not exist. |
+| 500  | Internal server error – unexpected failure on the server side. |
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
@@ -45,7 +59,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/clearcontents?range=A2:C11" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -124,3 +138,28 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Clear Contents and Styles of Cells in an Excel Worksheet",
+  "description": "How to use Aspose.Cells Cloud REST API to clear cell contents and styles in an Excel worksheet.",
+  "url": "https://docs.aspose.cloud/cells/clear-contents-and-styles-of-cells-in-excel-worksheet/",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2026-07-08",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://docs.aspose.cloud/cells/images/Aspose-image-for-open-graph.jpg",
+      "caption": "Aspose.Cells Cloud – Clear Contents and Styles of Cells"
+    }
+  },
+  "keywords": "Aspose.Cells, Excel API, clear cell contents, clear cell styles, REST API, cloud spreadsheet"
+}
+</script>

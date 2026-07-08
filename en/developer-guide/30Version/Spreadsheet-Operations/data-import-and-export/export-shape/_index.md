@@ -12,6 +12,12 @@ weight: 20
 
 You can export shapes to the following formats: **PNG**, **GIF**, **JPEG**, **BMP**, **SVG**, **TIFF**, **EMF**, **WMF**.
 
+Before calling the API, ensure you have a valid Aspose Cloud access token. Include it in the request header as:
+
+```
+Authorization: Bearer <your_access_token>
+```
+
 ## REST API
 
 | **API**       | **Type** | **Description**                                                    | **Swagger Link**                                                              |
@@ -28,9 +34,18 @@ You can use the **cURL** command‑line tool to access Aspose.Cells web services
 curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=tiff" \
      -H "accept: multipart/form-data" \
      -H "Content-Type: multipart/form-data" \
+     -H "Authorization: Bearer <your_access_token>" \
      -H "x-aspose-client: Containerize.Swagger" \
      -d '{"File":{}}'
 ```
+
+**Parameters**
+
+| Parameter   | Type   | Required | Description |
+|-------------|--------|----------|-------------|
+| `objectType`| string | Yes      | Specifies the type of object to export. Use `shape` for exporting shapes. |
+| `format`    | string | Yes      | Target image format. Supported values: `png`, `gif`, `jpeg`, `bmp`, `svg`, `tiff`, `emf`, `wmf`. |
+| `File`      | binary | Yes      | The Excel file payload sent as `multipart/form-data`. |
 
 ### Response
 
@@ -240,6 +255,15 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=
   ]
 }
 ```
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description |
+|------|-----------------------|-------------|
+| 200  | OK                    | Shapes exported successfully; response contains the file list. |
+| 400  | Bad Request           | Missing or invalid parameters. |
+| 401  | Unauthorized          | Invalid or missing access token. |
+| 500  | Internal Server Error | Unexpected server error. |
 
 ## Cloud SDK Family
 

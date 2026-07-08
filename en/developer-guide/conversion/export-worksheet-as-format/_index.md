@@ -16,8 +16,11 @@ Export a cloud spreadsheet/Excel worksheet to another format file using the Aspo
 
 ### Web API
 
+The API uses OAuth 2.0 for authentication. Include an `Authorization` header with a Bearer token that you obtain from the Aspose Cloud console (or via the OAuth 2.0 client‑credentials flow). Example:
+
 ```http
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}
+Authorization: Bearer {access_token}
 ```
 
 ### **Request Parameters**
@@ -51,6 +54,13 @@ All path parameters are required; query parameters are optional unless noted.
 ]
 ```
 
+**Success Status Codes**
+
+| Code | Description |
+|------|-------------|
+| 200 OK | The worksheet was successfully converted and the file is returned in the response body. |
+| 202 Accepted | The request has been accepted for asynchronous processing; the result will be available at the location specified by `outPath`. |
+
 ### Error Codes
 
 - **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
@@ -68,9 +78,9 @@ All path parameters are required; query parameters are optional unless noted.
 
 ## Why Use the Export Worksheet to Another Format API?
 
-- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.
-- **Cost‑Effective** – You can convert worksheets without first uploading the workbook, which saves storage space and reduces costs.
-- **Pure Data Extraction Without Formatting** – Retrieve raw data while omitting visual styling.
+- **Multi‑language SDK support** – Provides client libraries for several programming languages, allowing developers to call the API directly from their preferred environment.
+- **Direct conversion without intermediate upload** – Enables conversion of a worksheet stored in cloud storage to the requested format without the need to download and re‑upload the file.
+- **Data‑only extraction** – Returns the worksheet content in the selected format without preserving visual styling.
 
 ## How to Use the Export Spreadsheet Worksheet as Format API with SDKs?
 

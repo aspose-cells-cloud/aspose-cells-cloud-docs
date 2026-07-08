@@ -5,6 +5,7 @@ url: /get-maxdatarow-from-excel-worksheet/
 weight: 50
 keywords: "Excel, Aspose.Cells Cloud, REST API, Get MaxDataRow, Worksheet"
 description: "Retrieves the index of the last row that contains data in a specified worksheet of an Excel workbook using the Aspose.Cells Cloud REST API."
+ArticleTitle: "Aspose.Cells Cloud API – Get MaxDataRow from Excel Worksheet"
 ---
 
 This REST API returns the maximum data row index in an Excel file when the `cellOrMethodName` parameter is set to `maxdatarow`.
@@ -15,21 +16,52 @@ This REST API returns the maximum data row index in an Excel file when the `cell
 
 {{< tab tabNum="11" >}}
 
-```java
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatarow" -H "Content-Type: application/json" -H "Accept: application/json"
+```bash
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxdatarow" \
+     -H "Authorization: Bearer <your_access_token>" \
+     -H "Content-Type: application/json" \
+     -H "Accept: application/json"
 ```
+
+*Note: The request must be sent over **HTTPS** and include a valid OAuth2 bearer token.*
 
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
-```java
-{}
+```json
+{
+  "MaxDataRow": 57
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**API Reference**
+
+- **Method**: `GET`  
+- **Endpoint**: `/cells/{fileName}/worksheets/{sheetName}/cells/maxdatarow`  
+- **Path Parameters**  
+  - `fileName` *(string)* – Name of the Excel workbook (e.g., `myWorkbook.xlsx`).  
+  - `sheetName` *(string)* – Name of the worksheet (e.g., `Sheet1`).  
+- **Headers**  
+  - `Authorization: Bearer <access_token>` – Required OAuth2 token.  
+  - `Accept: application/json` – Response format.  
+- **Success Response (200)**  
+
+  ```json
+  {
+    "MaxDataRow": 57
+  }
+  ```
+
+- **Error Responses**  
+  - `400 Bad Request` – Invalid parameters.  
+  - `401 Unauthorized` – Missing or invalid authentication token.  
+  - `404 Not Found` – Specified workbook or worksheet does not exist.  
+  - `500 Internal Server Error` – Unexpected server error.
 
 ## **Cloud SDK Family**
 
@@ -98,3 +130,40 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**See also**
+
+- [Get MaxRow from Excel Worksheet](https://docs.aspose.cloud/cells/get-maxrow-from-excel-worksheet/)  
+- [Get MaxColumn from Excel Worksheet](https://docs.aspose.cloud/cells/get-maxcolumn-from-excel-worksheet/)  
+- [Get MinDataRow from Excel Worksheet](https://docs.aspose.cloud/cells/get-mindatarow-from-excel-worksheet/)
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "Aspose.Cells Cloud Get MaxDataRow",
+  "description": "Returns the index of the last row that contains data in a specified worksheet.",
+  "url": "https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/maxdatarow",
+  "method": "GET",
+  "documentation": "https://docs.aspose.cloud/cells/get-maxdatarow-from-excel-worksheet/",
+  "input": [
+    {
+      "name": "fileName",
+      "valueRequired": true,
+      "description": "The name of the Excel workbook."
+    },
+    {
+      "name": "sheetName",
+      "valueRequired": true,
+      "description": "The name of the worksheet."
+    }
+  ],
+  "output": {
+    "@type": "DataType",
+    "name": "MaxDataRow",
+    "description": "Zero‑based index of the last row that contains data."
+  }
+}
+</script>
+
+*Last updated: 2024‑12‑01*

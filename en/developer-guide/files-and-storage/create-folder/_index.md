@@ -5,8 +5,8 @@ ArticleTitle: "Create Folder – Aspose.Cells Cloud API"
 linktitle: "Create Folder"
 type: docs
 url: /create-folder/
-keywords: "Aspose.Cells Cloud, Create Folder, Excel API, REST, Storage"
-description: "Learn how to create a folder in Aspose.Cells Cloud storage via a simple REST PUT request. Includes sample cURL, authentication guide, and error handling."
+keywords: "Aspose.Cells Cloud, Create Folder, Excel API, REST API, Storage, Folder Management"
+description: "Learn how to create a new folder in Aspose.Cells Cloud storage using a simple REST PUT request. Includes sample code, authentication guidance, and error handling."
 weight: 100
 ---
 
@@ -21,6 +21,13 @@ PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ### Function Description
 
 The **createFolder** operation creates a new folder at the specified location in the cloud storage used by the Excel API. This is essential for organizing files and maintaining a structured directory hierarchy.
+
+**Prerequisites**  
+- An OAuth 2.0 access token must be obtained beforehand.  
+- The default storage must be configured, or a specific storage name provided via the `storageName` query parameter.
+
+**Authentication**  
+Include the OAuth token in the `Authorization` header of the request (`Bearer {access_token}`). Without a valid token, the API returns a **401 Unauthorized** error.
 
 ### The request parameters of **createFolder** API are
 
@@ -86,7 +93,5 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 **See also**
 
-- Delete Folder – `DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/{path}`
-- Copy Folder – `PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{srcPath}/copy`
-
----
+- Delete Folder – `DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/{path}` (see [/cells/delete-folder/](/cells/delete-folder/))  
+- Copy Folder – `PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{srcPath}/copy` (see [/cells/copy-folder/](/cells/copy-folder/))

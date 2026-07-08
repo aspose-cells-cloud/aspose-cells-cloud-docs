@@ -9,12 +9,14 @@ description: "Retrieve all worksheet validations from an Excel worksheet using t
 weight: 10
 ---
 
+Worksheet validations let you define rules that restrict the type or range of data that can be entered into cells. They are commonly used to enforce data integrity, such as limiting entries to a list of values, dates within a specific range, or numeric limits.
+
 This REST API retrieves all worksheet validations on an Excel worksheet.
 
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 ```
 
 ### **Request parameters**
@@ -26,16 +28,25 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations
 | folder         | string | query    | Folder path where the document is stored. |
 | storageName    | string | query    | Name of the storage service.              |
 
+**Response status codes**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | Successful request – list of validations |
+| 401  | Unauthorized – invalid or missing token  |
+| 404  | Not found – document or worksheet missing |
+| 500  | Internal server error                    |
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/GetWorksheetValidations) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells Cloud web services easily. The example below shows how to call the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells Cloud web services easily. **Prerequisite:** you must include a valid JWT token in the `Authorization` header.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -46,8 +57,27 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/vali
 
 {{< tab tabNum="2" >}}
 
-```bash
-# (Response example will be displayed here)
+```json
+{
+  "validations": [
+    {
+      "name": "Validation1",
+      "type": "WholeNumber",
+      "operator": "Between",
+      "formula1": "1",
+      "formula2": "100",
+      "showErrorMessage": true,
+      "errorMessage": "Value must be between 1 and 100."
+    },
+    {
+      "name": "Validation2",
+      "type": "List",
+      "formula1": "\"Option1,Option2,Option3\"",
+      "showErrorMessage": true,
+      "errorMessage": "Select a value from the list."
+    }
+  ]
+}
 ```
 
 {{< /tab >}}

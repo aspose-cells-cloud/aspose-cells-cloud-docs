@@ -8,7 +8,11 @@ aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
 keywords: "Aspose.Cells Cloud, Excel, list object, sort data, REST API, worksheet"
 description: "Learn how to sort ListObject (table) data in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, sample cURL request, and SDK examples."
 weight: 40
+ArticleTitle: "Sort ListObject Data in an Excel Worksheet – Aspose.Cells Cloud API"
 ---
+
+**Prerequisites**  
+To call this API you must have a valid Aspose Cloud JWT access token and the workbook must be uploaded to Aspose Cloud storage. Include the header `Authorization: Bearer <jwt token>` in every request.
 
 This REST API sorts a table’s data in an Excel worksheet.  
 To use this operation, provide the workbook name, worksheet name, and the index of the target ListObject, together with a `dataSorter` JSON body that defines the sorting criteria.
@@ -30,6 +34,9 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobject
 | folder          | string  | query                      | Folder path in storage where the Excel file is located.                                                         |
 | storageName     | string  | query                      | Name of the Aspose Cloud storage.                                                                               |
 
+**Notes**  
+The request body must be a valid JSON object matching the `dataSorter` schema. Ensure that the workbook, worksheet, and ListObject exist before invoking the sort operation.
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSortTable) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
@@ -40,11 +47,22 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet7/listobjects/1/sort" \
--X POST \
--d '{ "CaseSensitive": true, "HasHeaders": true, "KeyList": [ { "Key": 1, "SortOrder": "Ascending", "CustomList": "string" } ], "SortLeftToRight": true}' \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+  -X POST \
+  -d '{
+        "CaseSensitive": true,
+        "HasHeaders": true,
+        "KeyList": [
+          {
+            "Key": 1,
+            "SortOrder": "Ascending",
+            "CustomList": "string"
+          }
+        ],
+        "SortLeftToRight": true
+      }' \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
 
 {{< /tab >}}
@@ -57,6 +75,23 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet7/listob
   "Status": "OK"
 }
 ```
+
+**HTTP Status Codes**
+
+| Status Code | Description                              |
+|------------|------------------------------------------|
+| 200        | OK – sorting completed successfully.    |
+| 400        | Bad Request – invalid parameters.       |
+| 401        | Unauthorized – authentication failed.    |
+| 404        | Not Found – workbook, worksheet, or ListObject not found. |
+| 500        | Internal Server Error – server‑side issue.|
+
+**Response Parameters**
+
+| Parameter | Type    | Description                                 |
+|-----------|---------|---------------------------------------------|
+| Code      | integer | HTTP status code returned by the API.       |
+| Status    | string  | Textual description of the result (e.g., "OK"). |
 
 {{< /tab >}}
 
@@ -119,3 +154,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+[Back to ListObjects Overview](/list-objects/)

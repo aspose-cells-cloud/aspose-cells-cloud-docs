@@ -26,6 +26,9 @@ _Boost productivity with bulk calculations across entire columns, rows, or table
 | **Divide**              | /           |
 | **Percentage**          | %           |
 
+**Prerequisites**  
+To call the Math Calculate API you must have a valid Aspose Cloud access token and the appropriate client ID/secret. The SDKs can be installed via NuGet, Maven, Composer, npm, pip, etc.
+
 ## **Math Calculate API**
 
 ```http
@@ -43,6 +46,22 @@ PUT https://api.aspose.cloud/v4.0/cells/calculate/math
 | range          | String | Query                       | The range of cells to include in the calculation.                                        |
 | region         | String | Query                       | The spreadsheet region setting.                                                          |
 | password       | String | Query                       | The password for opening the spreadsheet file, if protected.                             |
+
+**Sample Request Body (multipart/form‑data)**  
+
+```http
+POST /v4.0/cells/calculate/math?operation=Add&value=10&worksheet=Sheet1&range=A1:A100 HTTP/1.1
+Host: api.aspose.cloud
+Authorization: Bearer {access_token}
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="Spreadsheet"; filename="Book1.xlsx"
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+
+<binary file content>
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+```
 
 ### **Response**
 
@@ -66,6 +85,17 @@ PUT https://api.aspose.cloud/v4.0/cells/calculate/math
 - **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet encountered an issue retrieving calculation data.
 
+**HTTP Status Codes**
+
+| Code | Meaning |
+|------|---------|
+| 200 OK | Request succeeded and calculation result returned. |
+| 202 Accepted | Request accepted for processing; result will be available later. |
+| 400 Bad Request | Invalid request parameters. |
+| 401 Unauthorized | Authentication failed. |
+| 404 Not Found | Specified spreadsheet or range not found. |
+| 500 Server Error | Internal server error. |
+
 ## Where should we use the Math Calculate API?
 
 - Finance: add 13% VAT to an entire column of purchase prices.
@@ -82,6 +112,9 @@ PUT https://api.aspose.cloud/v4.0/cells/calculate/math
 - **Add same number to entire column** – inventory, currency conversion, unit conversion.
 - **Excel without formulas** – non‑technical users love the simplicity.
 - Development can be quickly completed through the existing SDK.
+
+**Notes**  
+The maximum file size supported is 200 MB. The `range` parameter must be a valid Excel address (e.g., A1:B10). Very large worksheets may require additional processing time.
 
 ## How to Use the Math Calculate API with SDKs
 

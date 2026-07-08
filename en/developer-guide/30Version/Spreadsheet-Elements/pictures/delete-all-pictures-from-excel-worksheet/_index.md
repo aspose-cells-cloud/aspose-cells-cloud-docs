@@ -5,17 +5,26 @@ linktitle: "Clear"
 type: docs
 url: /pictures/clear/
 aliases: [/delete-all-pictures-from-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel, delete all pictures, worksheet, REST API"
-description: "How to delete all pictures from a worksheet in an Excel file using the Aspose.Cells Cloud REST API, with cURL and SDK code examples."
+keywords: "Aspose.Cells Cloud, Excel, delete all pictures, worksheet, REST API, clear pictures"
+description: "Learn how to delete all pictures from an Excel worksheet using Aspose.Cells Cloud REST API with cURL and SDK examples."
 weight: 60
+ArticleTitle: "How to Delete All Pictures in an Excel Worksheet with Aspose.Cells Cloud"
 ---
 
 This REST API deletes **all** pictures in a worksheet.
 
+**Prerequisites**  
+- An active Aspose.Cells Cloud account with a valid OAuth 2.0 access token.  
+- API version 3.0 (or later) is required; earlier versions are deprecated.  
+- The target Excel file must be stored in a supported storage location (default or custom).
+
+**Version Compatibility**  
+The endpoint follows the Cells Cloud 3.0 API specification. Ensure that your client libraries and request URLs target `api.aspose.cloud/v3.0`.
+
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
 ### **Request parameters**
@@ -45,7 +54,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures" \
+curl -v "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetName}/pictures" \
   -X DELETE \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -124,3 +133,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**See also**:  
+- [/pictures/delete/](../delete/) – Delete a specific picture from a worksheet.  
+- [/pictures/add/](../add/) – Add a picture to a worksheet.  

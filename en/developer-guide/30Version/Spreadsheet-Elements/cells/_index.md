@@ -1,5 +1,6 @@
 ---
 title: "Working with Excel Cells"
+ArticleTitle: "Working with Excel Cells – Aspose.Cells Cloud Documentation"
 second_title: "Document"
 linktitle: "Cells"
 type: docs
@@ -11,6 +12,8 @@ weight: 100
 ---
 
 Cells is the basic operational object of Aspose.Cells for Excel files.
+
+Developers use cell operations to read, write, style, merge, and calculate data within Excel workbooks, enabling powerful automation and data‑processing scenarios.
 
 ## Feature Map
 
@@ -48,7 +51,7 @@ Cells is the basic operational object of Aspose.Cells for Excel files.
     <div class="col-md-6">
         <ul>
             <li><a href="/cells/merge-cells-in-excel-worksheet/">Merge cells in an Excel worksheet.</a></li>
-            <li><a href="/cells/Unmerge Cells in Excel Worksheet/">Unmerge cells in an Excel worksheet.</a></li>
+            <li><a href="/cells/unmerge-cells-in-excel-worksheet/">Unmerge Cells in an Excel worksheet.</a></li>
             <li><a href="/cells/get-cells-properties/">Get cells properties.</a></li>
         </ul>
     </div>

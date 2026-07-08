@@ -3,12 +3,26 @@ title: "Delete a Worksheet Comment"
 type: docs
 url: /comments/delete/
 aliases: [/delete-a-comment-in-a-worksheet/]
-keywords: "Aspose.Cells delete comment, Excel comment API, REST delete worksheet comment, Aspose Cloud SDK, Excel comment removal"
+keywords: "Aspose.Cells, delete comment, Excel API, REST"
 description: "Learn how to delete a specific cell comment in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, SDK snippets, and error handling."
 weight: 40
+ArticleTitle: "Delete Worksheet Comment API – Aspose.Cells Cloud"
 ---
 
+## Overview
+
 A **comment** is a text note attached to a specific cell in an Excel worksheet. This REST API deletes such a comment from a worksheet cell.
+
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+## Prerequisites
+
+- A valid **JWT access token** for Aspose.Cells Cloud.  
+- Access to the storage location where the Excel file resides.  
+- The target workbook must exist in the specified folder (or root) of the chosen storage.  
+- Optional: SDK installed for your preferred language if you prefer using code snippets instead of raw HTTP calls.
 
 ## REST API
 
@@ -46,6 +60,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 {{< tab tabNum="12" >}}
 
+### Response Details
+
 ```json
 {
   "Code": 200,
@@ -68,11 +84,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 
 For a complete list of status codes, refer to the **Error Responses** section above.
 
-The [OpenAPI Specification for DeleteWorksheetComment](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComment) provides a machine‑readable description of this endpoint.
+The <a href="https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetComment" target="_blank" rel="noopener noreferrer">OpenAPI Specification for DeleteWorksheetComment</a> provides a machine‑readable description of this endpoint.
 
 ## Cloud SDK Family
 
-Using an SDK can speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository for Aspose.Cells Cloud SDKs](https://github.com/aspose-cells-cloud) for a complete list.
+Using an SDK can speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository for Aspose.Cells Cloud SDKs</a> for a complete list.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
@@ -127,3 +143,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+*Related operations:* <a href="/comments/add/" target="_blank" rel="noopener noreferrer">Add Worksheet Comment</a>, <a href="/comments/update/" target="_blank" rel="noopener noreferrer">Update Worksheet Comment</a>.

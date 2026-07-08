@@ -5,6 +5,7 @@ url: /comments/add/
 aliases: [/add-a-comment-to-a-cell-in-a-worksheet/]
 keywords: "Aspose.Cells Cloud API, Add Worksheet Comment, REST API, Excel, Spreadsheet, Cell Comment"
 description: "Adds a comment to a specific cell in a worksheet using the Aspose.Cells Cloud REST API."
+ArticleTitle: "Add Worksheet Comment"
 weight: 20
 ---
 
@@ -13,7 +14,7 @@ This REST API adds a comment to a specific worksheet cell.
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
 ### Request Parameters
@@ -27,9 +28,11 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{c
 | folder         | string | query    | The folder where the workbook is stored.               |
 | storageName    | string | query    | The name of the storage service.                       |
 
+All production calls **must** use HTTPS to protect the bearer token and ensure secure transmission.
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PutWorksheetComment) defines a publicly accessible programming interface, allowing you to perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -77,6 +80,29 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Possible HTTP response codes**
+
+| Code | Description |
+|------|-------------|
+| 200 | Comment added successfully. |
+| 400 | Bad request – missing or invalid parameters. |
+| 401 | Unauthorized – invalid or missing authentication token. |
+| 404 | Not found – the specified workbook, worksheet, or cell does not exist. |
+| 500 | Internal server error – an unexpected condition occurred on the server. |
+
+*Sample error response (e.g., 400 Bad Request)*
+
+```json
+{
+  "Error": {
+    "Code": "InvalidParameter",
+    "Message": "The 'cellName' parameter is missing or malformed."
+  },
+  "Code": 400,
+  "Status": "Bad Request"
+}
+```
 
 ## Cloud SDK Family
 

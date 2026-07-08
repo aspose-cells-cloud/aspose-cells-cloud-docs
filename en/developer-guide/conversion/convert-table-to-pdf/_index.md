@@ -5,12 +5,15 @@ ArticleTitle: "How to Convert Local Spreadsheet Table Data to a PDF File: Stepâ€
 linktitle: "Convert Table to PDF"
 type: docs
 url: /convert-table-to-pdf/
-keywords: "Aspose.Cells Cloud, Table to PDF, Excel table conversion, REST API, PDF generation, spreadsheet conversion"
+keywords: "Aspose.Cells, Table to PDF, Excel conversion, REST API, PDF generation"
 description: "Convert a local Excel table to a PDF file quickly using the Aspose.Cells Cloud REST API."
 weight: 100
 ---
 
 Export table data from a local Excel file to a PDF file using the Cloud API.
+
+**Prerequisites**  
+To call the Convert Table to PDF API you must have a valid Aspose Cloud access token. Obtain it by registering your application in the Aspose Cloud dashboard and using the client ID and secret to request a token via OAuthâ€¯2.0. Include the token in the `Authorization: Bearer {access_token}` header of each request.
 
 ## **Convert Table to PDF API**
 
@@ -109,3 +112,13 @@ The following code examples illustrate how to call Aspose.Cells web services usi
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertTableToPDF.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+**cURL example**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/pdf?worksheet=Sheet1&tableName=MyTable" \
+     -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+     -F "Spreadsheet=@/path/to/file.xlsx"
+```
+
+**See also:** Convert Range to PDF, Convert Spreadsheet to PDF, Convert Worksheet to PDF.

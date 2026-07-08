@@ -5,7 +5,7 @@ ArticleTitle: "How to Convert Local Spreadsheet Table Data to an Image File: Ste
 linktitle: "Convert Table to Image"
 type: docs
 url: /convert-table-to-image/
-keywords: "Aspose.Cells Cloud, Convert Table to Image, Excel to Image, Spreadsheet Table Image, REST API, Cloud Conversion, Image Formats, PNG, JPEG, TIFF, BMP, SVG"
+keywords: "Aspose.Cells, Cloud API, Convert Table to Image, Excel, PNG, JPEG, TIFF, BMP, SVG"
 description: "Convert a local Excel spreadsheet table to an image file quickly using Aspose.Cells Cloud Web API. Supports PNG, JPEG, TIFF, BMP, SVG and more."
 weight: 100
 ---
@@ -20,12 +20,17 @@ Export table data from a local Excel file to an [Image](https://docs.fileformat.
 - [JPEG](https://docs.fileformat.com/image/jpeg/)
 - [BMP](https://docs.fileformat.com/image/bmp/)
 
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+Prerequisites: Obtain an OAuth 2.0 access token using the Aspose.Cells Cloud authentication flow and include it in the `Authorization: Bearer <access_token>` header of each request.
+
 ## **Convert Table to Image API**
 
 ### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/table/image
+PUT https://api.aspose.cloud/v4.0/cells/convert/table/image
 ```
 
 ### **Request Parameters:**
@@ -62,6 +67,17 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/image
 - **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
 - **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.
+
+### Response Status Codes
+
+| Code | Meaning | Description |
+|------|---------|-------------|
+| 200  | OK      | Image generated successfully. |
+| 202  | Accepted| Async processing started (if applicable). |
+| 400  | Bad Request | Invalid parameters. |
+| 401  | Unauthorized | Invalid or missing token. |
+| 404  | Not Found | Spreadsheet or table not found. |
+| 500  | Internal Server Error | Processing failure. |
 
 ## **Where Should You Use the Convert Table to Image API?**
 

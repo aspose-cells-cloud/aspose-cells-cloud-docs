@@ -5,17 +5,20 @@ linktitle: "Update"
 type: docs
 url: /pictures/update/
 aliases: [/update-a-specific-picture-from-excel-workshee/]
-keywords: "Aspose.Cells Cloud, Excel, Update picture, REST API, Spreadsheet, cURL, SDK"
-description: "Learn how to update a picture in an Excel worksheet using Aspose.Cells Cloud REST API. This guide provides request details, a cURL example, and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells Cloud, Excel, Update picture, REST API, SDK"
+description: "Learn how to update a picture in an Excel worksheet with Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK snippets."
+ArticleTitle: "Update picture in an Excel file using Aspose.Cells Cloud REST API"
 weight: 70
 ---
 
 This REST API updates a picture, identified by its index, on an Excel worksheet.
 
+**Prerequisites:** You must have a valid Aspose Cloud JWT token, the target Excel file stored in your Aspose Cloud storage, and use API version 3.0 or later.
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
 
 ### **Request parameters**
@@ -24,19 +27,21 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{
 | -------------- | ------- | -------- | ------------------------------------------------------------ |
 | name           | string  | path     | The name of the Excel document.                              |
 | sheetName      | string  | path     | The name of the worksheet that contains the picture.         |
-| pictureIndex   | integer | path     | Zero‑based index of the picture to be updated.               |
+| pictureIndex   | integer | path     | Zero-based index of the picture to be updated.               |
 | picture        | object  | body     | JSON object that describes the picture properties to update. |
 | folder         | string  | query    | The folder where the document is stored.                     |
 | storageName    | string  | query    | The name of the storage service.                             |
 
+**Note:** The picture index is zero‑based. Supported image formats include JPEG, PNG, BMP, and GIF. The maximum picture size is 10 MB.
+
 ### Error Responses
 
-| HTTP Code | Description                                                                    |
-| --------- | ------------------------------------------------------------------------------ |
-| 401       | Unauthorized – missing or invalid token.                                       |
-| 404       | Not Found – the specified file, worksheet, or page‑break index does not exist. |
-| 400       | Bad Request – malformed request syntax or invalid parameters.                  |
-| 500       | Internal Server Error – an unexpected condition was encountered.               |
+| HTTP Code | Description                                            |
+| --------- | ------------------------------------------------------ |
+| 401       | Unauthorized - missing or invalid token.               |
+| 404       | Not Found - the specified file, worksheet, or page-break index does not exist. |
+| 400       | Bad Request - malformed request syntax or invalid parameters. |
+| 500       | Internal Server Error - an unexpected condition was encountered. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

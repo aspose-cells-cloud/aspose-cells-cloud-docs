@@ -5,8 +5,8 @@ ArticleTitle: "Object Exists API – Verify File or Folder Presence in Aspose.Ce
 linktitle: "Object Exists"
 type: docs
 url: /object-exists/
-keywords: "object exists, Aspose.Cells Cloud, storage API, file existence, Excel API"
-description: "Use the Object Exists API to quickly verify whether a file or folder exists in Aspose.Cells Cloud storage. Supports optional storage name and version ID."
+keywords: "Aspose.Cells, cloud storage, object exists, file existence, folder existence, API"
+description: "Use the Object Exists API to quickly verify whether a file or folder exists in Aspense.Cells Cloud storage. Supports optional storage name and version ID."
 weight: 100
 ---
 
@@ -15,6 +15,8 @@ weight: 100
 The **Object Exists API** lets developers determine whether a specific file or folder is present in Aspose.Cells Cloud storage. It returns a simple Boolean indicating existence and whether the path points to a folder.
 
 ### Web API
+
+> **Authentication** – All requests require a valid OAuth 2.0 access token passed in the `Authorization: Bearer <token>` header.
 
 ```http
 GET https://api.aspose.cloud/v5.0/cells/storage/exist/{path}
@@ -53,10 +55,10 @@ A successful call returns a JSON payload with two properties:
 - **Exists** – `true` if the file or folder exists; otherwise `false`.
 - **IsFolder** – `true` when the path points to a folder; `false` for a file.
 
-### Notes / Limitations
+### Notes & Limitations
 
-- Rate limits are applied per account; consult the **Rate Limits** page for exact values.
-- If `storageName` is omitted, the default storage configured for the account is used.
+- Rate limits are applied per account; consult the **[Rate Limits](/rate-limits/)** page for exact values.  
+- If `storageName` is omitted, the default storage configured for the account is used.  
 - The API currently supports version 5.0; older version paths (`/v4.0/`) are deprecated.
 
 ## OpenAPI Specification
@@ -95,3 +97,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ObjectExists.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+---
+
+[← Back to Files and Storage](../)

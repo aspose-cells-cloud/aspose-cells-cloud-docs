@@ -5,12 +5,16 @@ linktitle: "Copy"
 type: docs
 url: /rows/copy/
 aliases: [/copy-rows-in-excel-worksheet/]
-keywords: "Aspose.Cells Cloud Copy Rows, Excel, Aspose.Cells Cloud, REST API, worksheet rows"
+keywords: "Aspose.Cells, Copy Rows, Excel, REST API"
 description: "Learn how to copy rows in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes authentication steps, request/response details, error handling, and SDK examples."
+ArticleTitle: "Copy Rows on an Excel Worksheet - Aspose.Cells Cloud API"
 weight: 30
 ---
 
 This REST API copies rows within a worksheet.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -73,6 +77,46 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 Handle these responses by checking the HTTP status code and parsing the JSON error object for `Code` and `Message`.
 
+**Example error responses**
+
+```json
+// 400 Bad Request
+{
+  "Code": 400,
+  "Message": "Invalid sourceRowIndex."
+}
+```
+
+```json
+// 401 Unauthorized
+{
+  "Code": 401,
+  "Message": "Authentication failed."
+}
+```
+
+```json
+// 404 Not Found
+{
+  "Code": 404,
+  "Message": "File not found."
+}
+```
+
+```json
+// 500 Internal Server Error
+{
+  "Code": 500,
+  "Message": "An unexpected error occurred."
+}
+```
+
+*How to handle:*  
+- **400** – Verify all required query parameters and their formats.  
+- **401** – Regenerate or refresh the JWT token.  
+- **404** – Check that the workbook and worksheet names are correct and that the file exists in the specified folder/storage.  
+- **500** – Retry the request after a short delay; if the problem persists, contact support.
+
 ## Cloud SDK Family
 
 Using an SDK is the fastest way to develop. An SDK abstracts low‑level details, allowing you to focus on your project logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
@@ -130,3 +174,8 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**See also:**  
+- [Add Row on an Excel Worksheet](/rows/add/)  
+- [Delete Row on an Excel Worksheet](/rows/delete/)  
+- [Update Row on an Excel Worksheet](/rows/update/)

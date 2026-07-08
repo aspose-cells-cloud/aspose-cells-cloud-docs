@@ -12,9 +12,14 @@ aliases:
 keywords: "remove Excel password, Aspose.Cells Cloud, write‑protection, REST API, SDK examples"
 description: "Learn how to delete password protection from an Excel workbook using Aspose.Cells Cloud REST API. Includes cURL command, authentication steps, error‑code table, and SDK samples."
 weight: 110
+ArticleTitle: "Remove Write‑Protection (Password) from an Excel Workbook"
 ---
 
 This REST API removes **write‑protection (password)** from an Excel workbook, allowing you to **remove Excel password** protection programmatically.
+
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -106,7 +111,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_DeleteDocumentUnprotectFromChanges.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_DeleteDocumentUnprotectFromChanges.ts" >}}
 
 {{< /tab >}}
 

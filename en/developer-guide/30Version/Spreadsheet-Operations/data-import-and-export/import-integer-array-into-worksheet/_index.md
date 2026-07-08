@@ -8,14 +8,15 @@ aliases:
   - /import-integer-array-into-worksheet/
   - /import-data/integer-array/
   - /import/integer-array/
-keywords: "Aspose.Cells Cloud, Excel, Import integer array, REST API, SDK"
-description: "Import an integer array into an Excel worksheet using Aspose.Cells Cloud REST API. Supports multipart requests and multiple SDKs (C#, PHP, Ruby, etc.)."
+keywords: "Aspose.Cells Cloud, Excel, import integer array, REST API, SDK, C#, PHP, Ruby, Java, Python"
+description: "Learn how to import an integer array into an Excel worksheet using Aspose.Cells Cloud REST API. Includes request syntax, parameters, sample code for multiple SDKs, and response details."
 weight: 30
+ArticleTitle: "Import Integer Array into Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
 This REST API imports an integer array into an Excel worksheet.
 
-The request is an HTTP **POST** with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart body contains the **ImportIntegerArrayOption** data, and the second part contains the source data file.
+The request must be an HTTP **POST** with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart body contains the **ImportIntegerArrayOption** JSON payload, and the second part contains the source data file (e.g., a CSV or binary Excel file). Authentication is required via a valid OAuth 2.0 access token passed in the `Authorization` header.
 
 ## REST API
 
@@ -23,6 +24,8 @@ The request is an HTTP **POST** with multipart content (see [RFC 2046](http:
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
+
+Both endpoints accept the same multipart payload. The first endpoint works with a generic import operation, while the second targets a specific workbook identified by `{name}`.
 
 The important parameters are described in the following table.
 
@@ -52,6 +55,13 @@ The important parameters are described in the following table.
   "ImportDataType": "IntArray"
 }
 ```
+
+When the request is sent, the API returns a JSON response that includes the status of the operation and, if successful, a reference to the updated workbook. Typical response codes are:
+
+* **200 OK** – Import succeeded; the workbook is updated.
+* **400 Bad Request** – Missing or invalid parameters.
+* **401 Unauthorized** – Authentication token is missing or invalid.
+* **500 Internal Server Error** – Unexpected server error.
 
 ## Cloud SDK Family
 

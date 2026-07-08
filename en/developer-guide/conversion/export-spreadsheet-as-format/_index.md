@@ -59,6 +59,17 @@ The response contains a single object that represents the converted file stream.
 - **404 Not Found** – The spreadsheet file is not accessible.
 - **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
 
+### Status Codes
+
+| Code | Meaning | When Returned |
+|------|---------|---------------|
+| 200 OK | Successful conversion, file stream returned | Normal operation |
+| 202 Accepted | Asynchronous conversion started (if supported) | Large files |
+| 400 Bad Request | Invalid parameters | … |
+| 401 Unauthorized | Invalid token | … |
+| 404 Not Found | File not found | … |
+| 500 Internal Server Error | Processing failure | … |
+
 ## Where should you use the Export Spreadsheet as another format API?
 
 - **Legacy System Migration**: Convert thousands of legacy XLS files to XLSX for modern systems.
@@ -80,14 +91,14 @@ The response contains a single object that represents the converted file stream.
 
 ### Export Spreadsheet as Format API Specification
 
-The [Export Spreadsheet as Format API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportSpreadsheetAsFormat) provides a publicly accessible programming interface to perform REST interactions seamlessly.
+<a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportSpreadsheetAsFormat" rel="noopener noreferrer">Export Spreadsheet as Format API Specification</a> provides a publicly accessible programming interface to perform REST interactions seamlessly.
 
 ### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to export a spreadsheet to a format file with short code.  
 Before calling the API, obtain an OAuth 2.0 access token and include it in the `Authorization: Bearer <token>` header.
 
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to interact with Aspose.Cells web services via various SDKs:
 

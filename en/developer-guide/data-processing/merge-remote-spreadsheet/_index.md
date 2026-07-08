@@ -5,14 +5,14 @@ ArticleTitle: "Merge Excel Files in Cloud – Combine Spreadsheets Online with A
 linktitle: "Merge Remote Spreadsheet"
 type: docs
 url: /merge-remote-spreadsheet/
-keywords: "merge excel files in cloud, Aspose.Cells merge API, cloud spreadsheet merge, remote spreadsheet merge, combine Excel workbooks, cloud Excel merger"
+keywords: "Aspose.Cells Cloud, merge Excel, remote spreadsheet, cloud API, combine workbooks"
 description: "Merge Excel workbooks stored in cloud storage with Aspose.Cells Cloud API. Specify output format, target folder, and merge mode in a single HTTPS call."
 weight: 100
 ---
 
 Quickly merge Excel files stored in the cloud with other spreadsheets using Aspose.Cells Cloud API, and specify the output data format and storage location.
 
-## **Merge Remote Spreadsheet API**
+## Merge Remote Spreadsheet API
 
 **Prerequisites**  
 Before calling the API, ensure that you:
@@ -30,7 +30,7 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
 
 > **Note:** The endpoint uses HTTPS, providing encrypted transmission and compliance with Google’s security ranking factors.
 
-### **Request Parameters:**
+### Request Parameters:
 
 | Parameter Name    | Type    | Path/Query String/HTTPBody | Description                                                                                                                          |
 | :---------------- | :------ | :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
@@ -46,7 +46,13 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
 | region            | String  | Query                      | _(Optional)_ Locale/region for date, number, and currency formatting in the output file (e.g., `en-US`, `de-DE`).                    |
 | password          | String  | Query                      | _(Optional)_ Password required to open the source workbook if it is protected.                                                       |
 
-### **Response**
+**Sample request**
+
+```
+PUT https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/merge/spreadsheet?mergedSpreadsheet=Report1.xlsx,Report2.xlsx&outFormat=XLSX&mergeInOneSheet=true
+```
+
+### Response
 
 ```json
 [
@@ -60,7 +66,7 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
 ]
 ```
 
-The response returns the name, size (in bytes), and a direct download URL for the merged file.
+The response returns the name, size (in bytes), and a direct download URL for the merged file. A successful call returns **200 OK** with the file stream.
 
 ### Error Codes
 
@@ -69,27 +75,36 @@ The response returns the name, size (in bytes), and a direct download URL for th
 - **404 Not Found** – The specified spreadsheet file cannot be accessed.
 - **500 Server Error** – An unexpected error occurred while processing the workbook.
 
+**Error code details**
+
+| Code | Meaning                     | Possible Cause                               | Recommended Remediation                                   |
+|------|----------------------------|----------------------------------------------|-----------------------------------------------------------|
+| 400  | Bad Request                | Missing or malformed parameters              | Verify all required query/path parameters are present.   |
+| 401  | Unauthorized               | Invalid/expired OAuth token                   | Refresh the token and ensure correct client credentials. |
+| 404  | Not Found                  | File not found in the specified storage       | Check the `name`, `folder`, and `storageName` values.     |
+| 500  | Internal Server Error      | Unexpected processing error on the server     | Retry later; contact Aspose support if the issue persists.|
+
 ## Where should we use the Merge Remote Spreadsheet API?
 
-### **Enterprise‑grade data integration**
+### Enterprise‑grade data integration
 
 - **Multi‑department report consolidation** – Consolidate separate Excel reports submitted by sales, marketing, finance, and other teams.
 - **Branch data summary** – Summarize performance data from each branch worldwide.
 - **Partner data consolidation** – Merge data submissions from multiple partners into a single workbook.
 
-### **Cloud document processing workflow**
+### Cloud document processing workflow
 
 - Cloud storage file processing: Directly merge Excel files stored in AWS S3, Azure Blob, or Google Cloud Storage.
 - **Multi‑source data consolidation** – Combine files from different cloud locations into one workbook.
 - **Automated data pipelines** – Integrate the API into ETL processes to automate file merging.
 
-### **Document‑management automation**
+### Document‑management automation
 
 - **Version‑control consolidation** – Merge different versions of a project plan or budget workbook.
 - **Template data population** – Insert data files into standardized reporting templates.
 - **Regular report generation** – Automate weekly, monthly, and quarterly summary reports.
 
-### **Cross‑platform collaboration**
+### Cross‑platform collaboration
 
 - **Remote‑team collaboration** – Consolidate work submitted by dispersed team members.
 - **Customer data organization** – Merge order or feedback data from multiple customers.
@@ -106,14 +121,14 @@ The response returns the name, size (in bytes), and a direct download URL for th
 
 ### Merge Remote Spreadsheet API Specification
 
-The [Merge Remote Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/MergeRemoteSpreadsheet) describes the REST interface that can be called directly from any HTTP client.
+The <a href="https://reference.aspose.cloud/cells/#/DataProcessingController/MergeRemoteSpreadsheet" target="_blank" rel="noopener noreferrer">Merge Remote Spreadsheet API Specification</a> describes the REST interface that can be called directly from any HTTP client.
 
 ## Excel API SDK
 
 ### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop, as it abstracts low‑level details and lets you merge a spreadsheet into another spreadsheet with a short code snippet.  
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:
 

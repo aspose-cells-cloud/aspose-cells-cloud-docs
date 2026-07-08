@@ -18,6 +18,10 @@ description: "Learn how to update the value axis of a chart in an Excel workshee
 
 This REST API updates the chart value axis.
 
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 ## REST API
 
 ```bash
@@ -149,23 +153,105 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
 
 {{< tab tabNum="1" >}}
-<!-- C# example placeholder -->
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+
+var api = new ChartsApi("client_id", "client_secret");
+var axis = new Axis()
+{
+    Minimum = 0,
+    Maximum = 200,
+    MajorUnit = 20,
+    MinorUnit = 5,
+    LogBase = 10,
+    IsLogarithmic = false
+};
+
+var response = api.PostChartValueAxis("Book1.xlsx", "Sheet1", 0, axis);
+Console.WriteLine($"Status: {response.Status}");
+```
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
-<!-- Java example placeholder -->
+```java
+import com.aspose.cells.cloud.api.ChartsApi;
+import com.aspose.cells.cloud.model.Axis;
+
+ChartsApi api = new ChartsApi("client_id", "client_secret");
+Axis axis = new Axis()
+        .minimum(0.0)
+        .maximum(200.0)
+        .majorUnit(20.0)
+        .minorUnit(5.0)
+        .logBase(10.0)
+        .isLogarithmic(false);
+
+api.postChartValueAxis("Book1.xlsx", "Sheet1", 0, axis);
+System.out.println("Value axis updated.");
+```
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
-<!-- PHP example placeholder -->
+```php
+<?php
+require 'vendor/autoload.php';
+
+use Aspose\Cells\Cloud\Api\ChartsApi;
+use Aspose\Cells\Cloud\Model\Axis;
+
+$api = new ChartsApi('client_id', 'client_secret');
+$axis = new Axis([
+    'minimum' => 0,
+    'maximum' => 200,
+    'majorUnit' => 20,
+    'minorUnit' => 5,
+    'logBase' => 10,
+    'isLogarithmic' => false
+]);
+
+$api->postChartValueAxis('Book1.xlsx', 'Sheet1', 0, $axis);
+echo "Value axis updated.\n";
+?>
+```
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
-<!-- Ruby example placeholder -->
+```ruby
+require 'aspose_cells_cloud'
+
+api = AsposeCellsCloud::ChartsApi.new('client_id', 'client_secret')
+axis = AsposeCellsCloud::Axis.new(
+  minimum: 0,
+  maximum: 200,
+  majorUnit: 20,
+  minorUnit: 5,
+  logBase: 10,
+  isLogarithmic: false
+)
+
+api.post_chart_value_axis('Book1.xlsx', 'Sheet1', 0, axis)
+puts 'Value axis updated.'
+```
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
-<!-- Python example placeholder -->
+```python
+from asposecellscloud import ChartsApi, Axis
+
+api = ChartsApi('client_id', 'client_secret')
+axis = Axis(
+    minimum=0,
+    maximum=200,
+    majorUnit=20,
+    minorUnit=5,
+    logBase=10,
+    isLogarithmic=False
+)
+
+api.post_chart_value_axis('Book1.xlsx', 'Sheet1', 0, axis)
+print('Value axis updated.')
+```
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
@@ -173,19 +259,97 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
-<!-- Android example placeholder -->
+```java
+// Android (Java) example using the Aspose.Cells Cloud SDK
+ChartsApi api = new ChartsApi("client_id", "client_secret");
+Axis axis = new Axis()
+        .minimum(0.0)
+        .maximum(200.0)
+        .majorUnit(20.0)
+        .minorUnit(5.0)
+        .logBase(10.0)
+        .isLogarithmic(false);
+
+api.postChartValueAxis("Book1.xlsx", "Sheet1", 0, axis);
+```
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
-<!-- Swift example placeholder -->
+```swift
+import AsposeCellsCloud
+
+let api = ChartsApi(clientId: "client_id", clientSecret: "client_secret")
+var axis = Axis()
+axis.minimum = 0
+axis.maximum = 200
+axis.majorUnit = 20
+axis.minorUnit = 5
+axis.logBase = 10
+axis.isLogarithmic = false
+
+api.postChartValueAxis(name: "Book1.xlsx", sheetName: "Sheet1", chartIndex: 0, axis: axis) { result, error in
+    if let error = error {
+        print("Error: \\(error)")
+    } else {
+        print("Value axis updated.")
+    }
+}
+```
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
-<!-- Perl example placeholder -->
+```perl
+use Aspose::Cells::Cloud::Api::ChartsApi;
+use Aspose::Cells::Cloud::Model::Axis;
+
+my $api  = ChartsApi->new('client_id', 'client_secret');
+my $axis = Axis->new(
+    minimum        => 0,
+    maximum        => 200,
+    majorUnit      => 20,
+    minorUnit      => 5,
+    logBase        => 10,
+    isLogarithmic  => JSON::false
+);
+
+$api->postChartValueAxis('Book1.xlsx', 'Sheet1', 0, $axis);
+print "Value axis updated.\n";
+```
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
-<!-- Go example placeholder -->
+```go
+package main
+
+import (
+    "fmt"
+    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v2/api"
+    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v2/model"
+)
+
+func main() {
+    cfg := api.NewConfiguration()
+    cfg.AddDefaultHeader("client_id", "client_id")
+    cfg.AddDefaultHeader("client_secret", "client_secret")
+    client := api.NewAPIClient(cfg)
+
+    axis := model.Axis{
+        Minimum:       0,
+        Maximum:       200,
+        MajorUnit:     20,
+        MinorUnit:     5,
+        LogBase:       10,
+        IsLogarithmic: false,
+    }
+
+    _, err := client.ChartsApi.PostChartValueAxis(context.Background(), "Book1.xlsx", "Sheet1", 0, axis)
+    if err != nil {
+        fmt.Println("Error:", err)
+    } else {
+        fmt.Println("Value axis updated.")
+    }
+}
+```
 {{< /tab >}}
 
 {{< /tabs >}}

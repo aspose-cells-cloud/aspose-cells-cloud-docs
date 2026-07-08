@@ -5,14 +5,17 @@ linktitle: "Get"
 type: docs
 url: /pictures/get/
 aliases: [/convert-picture-to-image/]
-keywords: "Aspose.Cells Get Picture API, Excel picture API, Cells Cloud picture, Aspose.Cells Cloud, REST API"
-description: "Retrieve a specific picture from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication steps, response codes, and code examples."
+keywords: "Aspose.Cells, Get Picture, API, Excel, Cloud, REST"
+description: "Retrieve a specific picture from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication steps, response codes, and code examples."
 weight: 10
+ArticleTitle: "Aspose.Cells Cloud API – Get Picture from Worksheet"
 ---
 
 This REST API retrieves a picture by its zero‑based index from an Excel worksheet.
 
 ## REST API
+
+To call this endpoint you must include a valid JWT access token in the **Authorization** header. Tokens are obtained via the Aspose.Cells Cloud authentication flow and require the appropriate scopes for file access. For details on acquiring a token, see the global **Authentication** guide.
 
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
@@ -59,7 +62,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 {{< tab tabNum="2" >}}
 
 ```bash
-<IMAGE DATA>
+# Binary image data (PNG) returned in the response body.
+# Example: base64‑encoded snippet
+iVBORw0KGgoAAAANSUhEUgAA...
 ```
 
 {{< /tab >}}

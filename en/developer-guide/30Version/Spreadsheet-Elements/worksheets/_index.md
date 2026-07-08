@@ -1,5 +1,5 @@
 ---
-title: "Working with Excel worksheet."
+title: "Working with Excel worksheets."
 second_title: "Document"
 linktitle: "Worksheets"
 type: docs
@@ -8,6 +8,7 @@ aliases: [/working-with-worksheets/]
 keywords: "Excel worksheet, Aspose.Cells Cloud, REST API, spreadsheet, workbook, data manipulation, Excel automation"
 description: "Aspose.Cells Cloud REST API enables working with worksheets in an Excel workbook. The SDK supports multiple programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 100
+ArticleTitle: "Working with Excel Worksheets – Aspose.Cells Cloud Documentation"
 ---
 
 A worksheet is a collection of cells where you store and manipulate data. Each Excel workbook can contain multiple worksheets.

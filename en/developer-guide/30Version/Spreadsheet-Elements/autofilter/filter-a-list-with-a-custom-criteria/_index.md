@@ -8,14 +8,17 @@ aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter
 keywords: "Excel, custom filter, Aspose.Cells Cloud, REST API, auto filter, worksheet, custom criteria"
 description: "Learn how to use the Aspose.Cells Cloud REST API to add a custom filter to an Excel worksheet. Includes request details, a cURL example, and SDK code snippets for multiple programming languages."
 weight: 65
+ArticleTitle: "Add a custom criterion in an Excel worksheet – Aspose.Cells Cloud API"
 ---
 
 This REST API filters a list using a **custom criteria**.
 
+**Prerequisites**: You must have a valid Aspose Cloud JWT token and the workbook stored in your Aspose Cloud storage before invoking this operation.
+
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/custom
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/custom
 ```
 
 The request parameters are:
@@ -45,7 +48,7 @@ You can use the **cURL** command‑line tool to access Aspose.Cells web services
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/custom?range=A1:B1&fieldIndex=0&operatorType1=LessOrEqual&criteria1=1" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/custom?range=A1:B1&fieldIndex=0&operatorType1=LessOrEqual&criteria1=1" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -66,6 +69,16 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Typical HTTP status codes**
+
+| Code | Meaning                                 |
+|------|------------------------------------------|
+| 200  | Request succeeded; filter applied.      |
+| 400  | Bad request – invalid parameters.       |
+| 401  | Unauthorized – missing or invalid token.|
+| 404  | Not found – workbook or worksheet missing.|
+| 500  | Internal server error.                  |
 
 ## Cloud SDK Family
 

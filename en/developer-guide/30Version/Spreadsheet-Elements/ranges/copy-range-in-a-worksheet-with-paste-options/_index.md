@@ -8,14 +8,17 @@ aliases: [/copy-range-in-a-worksheet-with-paste-options/]
 keywords: "Aspose.Cells Cloud, REST API, Excel, copy range, worksheet, paste options"
 description: "Use Aspose.Cells Cloud REST API to copy a range within an Excel worksheet with full paste‑option support. Includes SDK examples for multiple programming languages."
 weight: 20
+ArticleTitle: "Copy Range in a Worksheet with Paste Options – Aspose.Cells Cloud API"
 ---
 
-This REST API copies a range in a worksheet of an Excel workbook.
+This REST API copies a range in a worksheet of an Excel workbook. For related operations, see the **Get Range** and **Update Range** documentation.
+
+**Prerequisites:** To use this endpoint you must have a valid OAuth 2.0 / JWT token and ensure your API version matches the request URL.
 
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 ```
 
 ### **Request parameters**
@@ -27,6 +30,8 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges
 | rangeOperate   | string | body     | The operation to perform: `copydata`, `copystyle`, `copyto`, or `copyvalue`. |
 | folder         | string | query    | The folder that contains the workbook.                                       |
 | storageName    | string | query    | The name of the storage service.                                             |
+
+**Notes:** The `rangeOperate` field determines what is copied. Use `copydata` to copy only cell values, `copystyle` for formatting, `copyto` for both data and style, and `copyvalue` to copy values without formulas. The API supports ranges up to 1 million cells; larger ranges may result in a timeout.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangesCopy) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -86,9 +91,31 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/ranges
 }
 ```
 
+The successful response returns a `200 OK` status. In case of an error, the API may return payloads such as:
+
+```json
+{
+  "Code": 400,
+  "Message": "Bad Request – invalid parameters."
+}
+```
+
+or
+
+```json
+{
+  "Code": 401,
+  "Message": "Unauthorized – authentication token missing or invalid."
+}
+```
+
+These error objects include an HTTP status code and a descriptive message to help diagnose issues.
+
 {{< /tab >}}
 
 {{< /tabs >}}
+
+You can download a sample workbook to test the copy operation [here](https://example.com/sample.xlsx).
 
 ## Cloud SDK Family
 

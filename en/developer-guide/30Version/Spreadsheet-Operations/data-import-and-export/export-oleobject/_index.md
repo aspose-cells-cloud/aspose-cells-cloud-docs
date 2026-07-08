@@ -5,9 +5,10 @@ linktitle: "OLE Object"
 type: docs
 url: /export-excel-ole-object/
 aliases: [/export/excel-ole-object/]
-keywords: "export OLE object, Aspose.Cells API, Excel OLE export, cloud spreadsheet API"
-description: "Learn how to export OLE objects from an Excel workbook using the Aspose.Cells Cloud REST API. Includes authentication details, request parameters, response schema, error handling, and SDK examples."
+keywords: "Aspose.Cells, OLE object, export, Excel, cloud API, PDF, PNG, DOCX, PPTX"
+description: "Export OLE objects from an Excel workbook using Aspose.Cells Cloud API. Learn request format, parameters, sample cURL, and error handling."
 weight: 20
+ArticleTitle: "Export OLE Object – Aspose.Cells Cloud API"
 ---
 
 ## **REST API**
@@ -17,6 +18,10 @@ weight: 20
 | /cells/export | POST     | Exports an Excel workbook containing OLE objects to the specified output format. | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### What is an OLE object?
 

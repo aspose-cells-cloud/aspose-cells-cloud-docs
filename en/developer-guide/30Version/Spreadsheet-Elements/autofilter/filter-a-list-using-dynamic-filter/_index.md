@@ -10,14 +10,20 @@ aliases:
 keywords: "Aspose.Cells, dynamic filter, Excel API, REST, auto filter, cloud SDK"
 description: "Learn how to apply a dynamic filter (e.g., BelowAverage, Tomorrow, LastMonth) to an Excel worksheet using the Aspose.Cells Cloud REST API. Includes cURL, SDK snippets, authentication guidance, and error handling."
 weight: 65
+ArticleTitle: "Add a dynamic filter in an Excel worksheet using Aspose.Cells Cloud API"
 ---
 
 This REST API adds a **dynamic filter** to an Excel worksheet.
 
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token‑based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+Before calling the endpoint, ensure you have obtained a JWT token from the `/connect/token` endpoint and that the target workbook is stored in the appropriate folder or storage.
+
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dynamicFilter
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dynamicFilter
 ```
 
 ### Request parameters
@@ -36,12 +42,12 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 
 **Supported `dynamicFilterType` values**
 
-- `BelowAverage` – rows whose value is below the column’s average.
-- `AboveAverage` – rows whose value is above the column’s average.
-- `Tomorrow` – rows with dates equal to tomorrow’s date.
-- `Yesterday` – rows with dates equal to yesterday’s date.
-- `NextWeek` – rows with dates falling in the next calendar week.
-- `LastMonth` – rows with dates from the previous month.
+- `BelowAverage` – rows whose value is below the column’s average.  
+- `AboveAverage` – rows whose value is above the column’s average.  
+- `Tomorrow` – rows with dates equal to tomorrow’s date.  
+- `Yesterday` – rows with dates equal to yesterday’s date.  
+- `NextWeek` – rows with dates falling in the next calendar week.  
+- `LastMonth` – rows with dates from the previous month.  
 - `ThisYear` – rows with dates occurring in the current year.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
@@ -53,11 +59,12 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dynamicFilter?range=A1:B1&fieldIndex=0&dynamicFilterType=BelowAverage&matchBlanks=true" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/dynamicFilter?range=A1:B1&fieldIndex=0&dynamicFilterType=BelowAverage&matchBlanks=true" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
+  -H "Authorization: Bearer <jwt token>" \
+  -d '{}'   # PUT request has an empty JSON body
 ```
 
 {{< /tab >}}

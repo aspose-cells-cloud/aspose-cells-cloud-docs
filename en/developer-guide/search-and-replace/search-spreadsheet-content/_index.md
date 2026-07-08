@@ -14,10 +14,21 @@ weight: 100
 
 Programmatically search for specific text within any Excel spreadsheet using the Aspose.Cells Cloud API. The API can locate text, numbers, or formulas in local files stored in the cloud, enabling automated data discovery, content analysis, and spreadsheet‑auditing workflows.
 
+**Prerequisites**: You must have a valid OAuth 2.0 access token and appropriate storage permissions before invoking the API.
+
 ### **Web API**
 
 ```
 PUT https://api.aspose.cloud/v4.0/cells/search/content
+```
+
+If you prefer using raw HTTP, the following cURL example demonstrates the same request:
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/content?searchText=Invoice&ignoringCase=true" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: multipart/form-data" \
+     -F "spreadsheet=@/path/to/your/file.xlsx"
 ```
 
 ### **Request Parameters**
@@ -31,6 +42,8 @@ PUT https://api.aspose.cloud/v4.0/cells/search/content
 | cellArea     | String  | Query    | A‑1 style range (e.g., `A1:C10`) that restricts the search area.                   |
 | region       | String  | Query    | Geographic region of the service (e.g., `us-east-1`).                              |
 | password     | String  | Query    | Password required to open a protected workbook.                                    |
+
+*Note: The API also supports additional optional parameters such as `isRegex` and `matchWholeCell` for advanced search scenarios.*
 
 ### **Response**
 
@@ -54,6 +67,8 @@ The API returns a `SearchResult` object that contains an array of matched cells.
   ]
 }
 ```
+
+*Version: API v4.0 (last updated 2024‑12‑01).*
 
 ### Error Codes
 

@@ -8,9 +8,13 @@ aliases: [/set-zoom-in-excel-worksheet/]
 keywords: "Aspose.Cells, Excel zoom, worksheet zoom, REST API, cloud SDK, Excel automation"
 description: "Learn how to set worksheet zoom (10‑400 %) using Aspose.Cells Cloud API v3.0. Includes cURL, SDK examples, and error handling."
 weight: 20
+ArticleTitle: "Set Zoom for an Excel Worksheet – Aspose.Cells Cloud API v3.0"
 ---
 
 This REST API sets the zoom value of an Excel worksheet. **Authentication** is required; include a valid Bearer JWT token in the `Authorization` header of every request.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -41,7 +45,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/zoom?va
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
 
 {{< /tab >}}

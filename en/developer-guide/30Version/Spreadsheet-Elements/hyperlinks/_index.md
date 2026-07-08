@@ -1,16 +1,19 @@
 ---
 title: "Working with Excel hyperlinks"
+ArticleTitle: "Working with Excel Hyperlinks – Aspose Cells Cloud Documentation"
 second_title: "Document"
 type: docs
 linktitle: "Hyperlinks"
 url: /hyperlinks/
 aliases: [/working-with-hyperlinks/, /working-with-hyperlink/]
-keywords: "Excel, hyperlinks, spreadsheet, Cells.Cloud API"
-description: "Learn how to manage hyperlinks in Excel files using the Cells.Cloud API, covering retrieval, addition, updating, and deletion."
+keywords: "Excel hyperlinks, Cells.Cloud API, Aspose.Cells, spreadsheet links, API guide"
+description: "Explore how to retrieve, add, update, and delete Excel hyperlinks using the Aspose Cells Cloud API."
 weight: 100
 ---
 
 Hyperlinks in Excel allow users to create shortcuts to any worksheet, file, folder, or webpage, enabling quick access to specific locations.
+
+Before using the hyperlink operations, ensure you have a valid API token and the Cells.Cloud SDK installed.
 
 ## Working with Hyperlinks on an Excel file
 

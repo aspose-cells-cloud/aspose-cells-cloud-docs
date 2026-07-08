@@ -8,14 +8,16 @@ aliases: [/add-pictures-to-excel-worksheet/]
 keywords: "Aspose.Cells, Excel, Add Picture, REST API, Cloud SDK, Spreadsheet, Worksheet, Image"
 description: "Use Aspose.Cells Cloud REST API to add an image to an Excel worksheet. SDKs for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift simplify integration across platforms."
 weight: 20
+ArticleTitle: "Add a Picture to an Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
-This REST API adds a new picture to an Excel worksheet.
+This REST API adds a new picture to an Excel worksheet.  
+**Prerequisites:** You must have a valid Aspose Cloud authentication token, an existing workbook stored in a supported storage, and appropriate permissions to modify the worksheet.
 
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
 
 ### Request Parameters
@@ -33,6 +35,18 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 | folder           | string  | query    | The folder that contains the workbook.                                                       |
 | storageName      | string  | query    | The name of the storage service.                                                             |
 
+**Request Body Note:** When `picturePath` is omitted, send the binary image data in the request body using `multipart/form-data`.
+
+**Response Codes**
+
+| Code | Description |
+|------|-------------|
+| 200  | Picture added successfully. |
+| 400  | Bad request – missing or invalid parameters. |
+| 401  | Unauthorized – authentication token is missing or invalid. |
+| 404  | Not found – specified workbook, worksheet, or storage does not exist. |
+| 500  | Internal server error – unexpected condition encountered. |
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
@@ -42,7 +56,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures?picturePath=aspose-cloud.png" \
+curl -v "https://api.aspose.com/v1.1/cells/Sample_Test_Book.xls/worksheets/Sheet6/pictures?picturePath=aspose-cloud.png" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -121,3 +135,5 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Note:** Supported image formats include PNG, JPEG, BMP, and GIF. Maximum picture size is 10 MB; larger files will be rejected with a `400 Bad Request` response.

@@ -17,14 +17,17 @@ keywords:
     "v3.0",
   ]
 description: "Learn how to update base properties (e.g., display zeros, ruler visibility) of an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL request, SDK samples, parameters, and error handling."
+ArticleTitle: "Update Worksheet Properties – Aspose.Cells Cloud API Reference (v3.0)"
 ---
 
 This REST API updates worksheet base properties.
 
 ## REST API
 
+**Prerequisites:** You must have a valid Aspose Cloud account, obtain a JWT access token, and ensure the target workbook is stored in a supported storage location. All requests should be made over **HTTPS**.
+
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
 
 ### **Request parameters**
@@ -78,6 +81,14 @@ Typical response codes:
 - **401** – Unauthorized – missing or invalid JWT token.
 - **404** – Workbook or worksheet not found.
 - **500** – Internal server error.
+
+| Code | Meaning |
+|------|---------|
+| 200 | Success – the worksheet properties were updated. |
+| 400 | Bad request – malformed JSON or missing required parameter. |
+| 401 | Unauthorized – missing or invalid JWT token. |
+| 404 | Not found – workbook or worksheet does not exist. |
+| 500 | Internal server error. |
 
 ## Cloud SDK Family
 

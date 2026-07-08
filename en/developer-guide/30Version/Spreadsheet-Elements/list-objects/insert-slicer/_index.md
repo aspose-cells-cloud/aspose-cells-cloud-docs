@@ -3,10 +3,10 @@ title: "Insert a Slicer into an Excel ListObject – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Insert slicer"
 type: docs
-keywords: "Aspose.Cells, insert slicer, ListObject API, Excel REST API, cloud SDK"
-url: /list-objects/insert-slicer/
+keywords: "Aspose.Cells, Excel slicer, ListObject, REST API, cloud SDK"
 description: "Learn how to add a slicer to an Excel ListObject using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, sample cURL request, and response JSON."
 weight: 20
+ArticleTitle: "Insert a Slicer into an Excel ListObject – Aspose.Cells Cloud API"
 ---
 
 This REST API inserts a slicer for a list object on an Excel worksheet.
@@ -42,6 +42,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
   -H "Authorization: Bearer <jwt token>"
 ```
 
+> **Note:** The request requires a valid JWT bearer token obtained from the Aspose Cloud authentication service. This endpoint does not require a request body; send an empty JSON object `{}` if your client library mandates a payload.
+
 {{< /tab >}}
 {{< tab tabNum="2" >}}
 
@@ -56,6 +58,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
   }
 }
 ```
+
+> **Response Header:** `Content-Type: application/json`
 
 {{< /tab >}}
 {{< /tabs >}}

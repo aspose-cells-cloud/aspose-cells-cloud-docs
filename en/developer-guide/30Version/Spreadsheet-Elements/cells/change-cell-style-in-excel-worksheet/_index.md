@@ -12,14 +12,17 @@ keywords:
   - Cloud SDK
   - cURL
 description: "Learn how to update the style of a specific cell in an Excel worksheet using the Aspose.Cells Cloud REST API, including example requests, responses, and SDK code snippets."
+ArticleTitle: "Change Cell Style in Excel Worksheet – Aspose.Cells Cloud API Guide"
 ---
 
 This REST API updates the **cell style** of an Excel file.
 
+**Prerequisites**: To use this endpoint you must have a valid Aspose Cloud account, generate an OAuth 2.0 access token, and ensure the target workbook is uploaded to a storage location that you specify via the `folder` and `storageName` parameters.
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
 ```
 
 The request parameters are:
@@ -35,14 +38,14 @@ The request parameters are:
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetCellStyle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API using cURL.
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. Replace `<jwt token>` with a valid OAuth 2.0 access token obtained from the Aspose Cloud authentication endpoint.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/cells/A1/style" \
+curl -v "https://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/cells/A1/style" \
 -d '{ "BackgroundThemeColor": { "ColorType": "Text2", "Tint": 1 } }' \
 -X POST \
 -H "Content-Type: application/json" \
@@ -101,7 +104,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/ce
     "BackgroundThemeColor": null,
     "ForegroundThemeColor": null,
     "link": {
-      "Href": "http://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/cells/A1/style",
+      "Href": "https://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/cells/A1/style",
       "Rel": "self",
       "Title": null,
       "Type": null
@@ -111,6 +114,16 @@ curl -v "http://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/ce
   "Status": "OK"
 }
 ```
+
+**Possible HTTP status codes**
+
+| Status Code | Description                                      |
+|------------|--------------------------------------------------|
+| 200        | Style updated successfully                       |
+| 400        | Bad request – invalid JSON or parameters         |
+| 401        | Unauthorized – invalid or missing token          |
+| 404        | Not found – workbook or worksheet does not exist |
+| 500        | Server error – unexpected condition              |
 
 {{< /tab >}}
 

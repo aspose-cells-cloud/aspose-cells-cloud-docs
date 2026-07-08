@@ -1,5 +1,5 @@
 ---
-title: "Save As Excel"
+title: "Save Excel Workbook – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Save as"
 type: docs
@@ -7,18 +7,19 @@ url: /save-an-excel-file-as-other-formats-files/
 aliases:
   - /convert-excel-workbook-to-different-file-formats/
   - /saveas-other-formats/
-keywords: "Save As, Excel, Aspose Cells Cloud, REST API, file format conversion, PDF, CSV, JSON, Markdown"
-description: "Use Aspose.Cells Cloud REST API to save Excel workbooks in multiple formats such as PDF, CSV, JSON, and Markdown. SDKs are available for many programming languages."
+keywords: "Aspose Cells, Excel Save As, PDF conversion, CSV export, JSON, Markdown, REST API"
+description: "Use Aspose.Cells Cloud REST API to save Excel workbooks in formats like PDF, CSV, JSON, and Markdown. SDKs available for multiple languages."
 weight: 30
 ---
 
-This REST API allows you **to save** an Excel file in different formats.
+This REST API allows you **to save** an Excel file in different formats.  
+Before calling this endpoint, ensure you have a valid OAuth 2.0 access token and that the source workbook is stored in your Aspose Cloud storage.
 
 ## REST API
 
-| API                  | Type | Description                 | Resource Link                                                                             |
-| -------------------- | ---- | --------------------------- | ----------------------------------------------------------------------------------------- |
-| /cells/{name}/saveAs | POST | Export workbook to a format | [PostDocumentSaveAs](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) |
+| API                  | Type | Description                 | Resource Link                                                                                                                                          |
+| -------------------- | ---- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| /cells/{name}/saveAs | POST | Export workbook to a format | <a href="https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs" target="_blank" rel="noopener noreferrer">PostDocumentSaveAs</a> |
 
 ### **Path Parameter**
 
@@ -44,13 +45,34 @@ This REST API allows you **to save** an Excel file in different formats.
 | pageIndex             | string | Index of the page to convert within the specified worksheet (requires `sheetName`).      |
 | onePagePerSheet       | bool   | When converting to PDF, generate one page per worksheet.                                 |
 
+#### Response Codes
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | Success – workbook saved.                |
+| 400  | Bad request – invalid parameters.       |
+| 401  | Unauthorized – authentication required. |
+| 404  | Not found – source workbook does not exist. |
+| 500  | Internal server error.                   |
+
 ### **Request Body Parameter**
 
 | Parameter Name | Type   | Description                                                        |
 | -------------- | ------ | ------------------------------------------------------------------ |
 | SaveOptions    | Object | Save options supplied in the second part of the multipart request. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+**Sample request body (JSON part of multipart request)**
+
+```json
+{
+  "SaveOptions": {
+    "SaveFormat": "pdf",
+    "CompressionLevel": 9
+  }
+}
+```
+
+The OpenAPI Specification for this operation defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use **cURL** to access Aspose.Cells web services easily. The example below shows how to call the Cloud API with cURL.
 
@@ -94,7 +116,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfile
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
@@ -149,3 +171,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+For other conversion scenarios, see the [Convert Excel to PDF](/convert-excel-to-pdf/) and [Export Excel to CSV](/export-excel-to-csv/) guides.

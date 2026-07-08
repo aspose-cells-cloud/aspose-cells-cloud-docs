@@ -7,13 +7,25 @@ url: /validations/
 keywords: "Excel data validation, Aspose.Cells Cloud, REST API, spreadsheet, Office Cloud"
 description: "Learn how to add, retrieve, update, delete, and clear Excel data validation rules programmatically with Aspose.Cells Cloud REST API. Includes examples for .NET, Java, Python, and PHP."
 weight: 100
+ArticleTitle: "Working with Excel Data Validation - Aspose.Cells Cloud API Documentation"
 ---
 
-Data validation is a feature in Microsoft Excel used to control what a user can enter in a cell of a worksheet. It can restrict entries to a specific date range, whole numbers only, or even create drop‑down lists that save space and display values in a single cell. You can also define a custom message that appears when a user enters an incorrect value or an invalid format.
+Excel data validation is a feature in Microsoft Excel used to control what a user can enter in a cell of a worksheet. It can restrict entries to a specific date range, whole numbers only, or even create drop‑down lists that save space and display values in a single cell. You can also define a custom message that appears when a user enters an incorrect value or an invalid format.
 
 For example, a user can specify a meeting scheduled between 9:00 AM and 6:00 PM.
 
 Data validation can be used to ensure a value is a positive number, a date between the 15th and 30th of a month, a date occurring within the next 30 days, or a text entry containing fewer than 25 characters, and so on.
+
+### API Summary
+
+| Operation | HTTP Method | Endpoint | Description |
+|-----------|-------------|----------|-------------|
+| Add | POST | `/cells/{file}/worksheets/{sheet}/validations` | Create a validation rule |
+| Get | GET | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Retrieve a specific rule |
+| Get All | GET | `/cells/{file}/worksheets/{sheet}/validations` | List all rules |
+| Update | PUT | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Modify a rule |
+| Delete | DELETE | `/cells/{file}/worksheets/{sheet}/validations/{index}` | Remove a rule |
+| Clear | POST | `/cells/{file}/worksheets/{sheet}/validations/clear` | Remove all rules |
 
 ## Working with validations on an Excel file
 

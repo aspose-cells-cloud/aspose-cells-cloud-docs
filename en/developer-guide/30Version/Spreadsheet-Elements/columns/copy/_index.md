@@ -6,12 +6,16 @@ type: docs
 url: /columns/copy/
 aliases:
   [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
-keywords: "Aspose.Cells, copy columns, Excel API, REST, Cloud SDK, cURL, Java, Python"
-description: "Learn how to copy one or more columns in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request syntax, required parameters, authentication, error handling, and SDK examples in C#, Java, Python, and more."
+keywords: "Aspose.Cells, copy columns, Excel API, REST, Cloud SDK, cURL, C#, Java, Python, Ruby, Node.js, Go, Perl"
+description: "Learn how to copy one or more columns in an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes request syntax, required parameters, authentication details, error handling, and SDK examples in C#, Java, Python, Ruby, Node.js, Go, Perl, and more."
+articleTitle: "Copy Columns in an Excel Worksheet using Aspose.Cells Cloud API"
 weight: 30
 ---
 
-This REST API copies **columns** in an Excel worksheet. The **Copy Columns** operation lets you duplicate a single column or a range of columns and insert the copy at a specified location within the same worksheet.
+This REST API copies **columns** in an Excel worksheet. The **Copy Columns** operation lets you duplicate a single column or a range of columns and insert the copy at a specified location within the same worksheet. Use this endpoint to efficiently copy columns when working with large spreadsheets, and refer to related operations such as [Add Column](/columns/add/) and [Hide Column](/columns/hide/) for additional column management tasks.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 

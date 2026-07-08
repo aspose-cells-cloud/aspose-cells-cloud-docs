@@ -39,7 +39,7 @@ A successful call returns **HTTP 200** with an empty JSON body:
 
 ```json
 {}
-````
+```
 
 ### Error Codes
 
@@ -105,4 +105,4 @@ A: Yes. Use the optional `srcStorageName` and `destStorageName` query parameters
 **Q: Is there a size limit for the folder being copied?**  
 A: The API does not impose a specific size limit, but the request is subject to the overall storage quota and the service’s timeout settings.
 
----
+This documentation was last updated on July 8, 2026.

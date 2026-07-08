@@ -2,12 +2,18 @@
 title: "Get Worksheet Hyperlink"
 type: docs
 url: /hyperlinks/get/
-keywords: "Aspose.Cells Cloud, Get Worksheet Hyperlink, Excel hyperlink API, REST, JWT authentication"
-description: "Retrieve a specific hyperlink from an Excel worksheet using Aspose.Cells Cloud API (v3.0). Includes endpoint, parameters, cURL example, authentication steps, error handling, and SDK snippets."
+keywords: "Aspose.Cells Cloud, Get Worksheet Hyperlink, Excel hyperlink API, REST, JWT authentication, Excel worksheet, API endpoint"
+description: "Retrieve a specific hyperlink from an Excel worksheet using Aspose.Cells Cloud API (v3.0). Includes endpoint, parameters, cURL example, authentication details, error handling, and SDK snippets."
 weight: 10
+ArticleTitle: "Aspose.Cells Cloud API – Get Worksheet Hyperlink"
 ---
 
 This REST API retrieves a worksheet **hyperlink** using the **Aspose.Cells Get Hyperlink API**.
+
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token‑based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).  
+Before calling the endpoint, obtain a JWT access token using your client ID and secret, and include it in the `Authorization: Bearer <jwt token>` header.
 
 ## REST API
 

@@ -3,8 +3,9 @@ title: "Update Multiple Cells Style – Aspose.Cells Cloud API Reference (v3.0)"
 type: docs
 url: /update-multiple-cells-style/
 weight: 20
-keywords: ["Aspose.Cells update cell style API", "Excel cell range styling", "Aspose Cloud SDK example", "Aspose.Cells", "REST API", "Excel", "Cloud SDK", "cURL", "JSON"]
-description: "Learn how to update the style of a cell range in an Excel workbook using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, authentication, error handling, SDK snippets, and version information."
+keywords: ["Aspose.Cells", "update multiple cells style", "Excel cell style API", "cloud SDK", "REST API", "cURL example", "JSON request", "JWT authentication"]
+description: "Learn how to update the style of a range of cells in an Excel workbook using the Aspose.Cells Cloud REST API v3.0. Includes endpoint, HTTP method, parameters, cURL and SDK examples, authentication, error handling, and version information."
+ArticleTitle: "Update Multiple Cells Style – Aspose.Cells Cloud API Reference (v3.0)"
 ---
 
 **v3.0 – Updated 2024‑11‑01**
@@ -24,12 +25,14 @@ To call this endpoint you must include a valid JWT access token in the `Authoriz
 Authorization: Bearer <access_token>
 ```
 
-> **Note:** The token expires after a configurable period; obtain a new token when it expires.
+> **Note:** The token expires after a configurable period; obtain a new token when it expires.  
+> **Required scope:** `Cells.ReadWrite` (or a broader scope that includes worksheet modification).
 
 ### Endpoint
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
 ```
+**Method:** POST
 
 ### Request parameters
 | Parameter Name | Type   | Location | Description |
@@ -65,14 +68,13 @@ cURL -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/s
   -d '{
         "Font": {
           "Color": { "A":255, "R":255, "G":255, "B":0 },
-          "DoubleSize": 10,
+          "Size": 22,
           "IsBold": true,
           "IsItalic": true,
           "IsStrikeout": true,
           "IsSubscript": true,
           "IsSuperscript": true,
-          "Name": "Arial",
-          "Size": 22
+          "Name": "Arial"
         },
         "Name": "string",
         "CultureCustom": "string",

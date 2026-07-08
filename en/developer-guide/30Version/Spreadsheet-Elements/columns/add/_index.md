@@ -10,10 +10,17 @@ aliases:
 keywords: "add column Excel API, Aspose.Cells Cloud, REST API, insert column"
 description: "Learn how to insert a new column into an Excel sheet using Aspose.Cells Cloud REST API. Includes request syntax, cURL example, and SDK code samples."
 weight: 20
+ArticleTitle: "Add Empty Column to Excel Worksheet Using Aspose.Cells Cloud API"
 ---
 
 This REST API inserts one or more columns into a worksheet.  
-Before invoking the endpoint, obtain an OAuth 2.0 access token and include it in the `Authorization` header. Ensure the workbook is stored in the selected storage (default = “Default”).
+
+**Prerequisites**  
+Before calling this endpoint, ensure you have completed the following steps:
+
+- Obtain a valid OAuth 2.0 access token and include it in the `Authorization` header.  
+- Store the target workbook in the selected storage (default = “Default”) or specify the appropriate `folder` and `storageName` parameters.  
+- Verify that the worksheet name provided in `sheetName` exists in the workbook.
 
 ## REST API
 
@@ -62,9 +69,19 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cel
 
 {{< /tabs >}}
 
+**Response codes**
+
+| Code | Description                                 |
+|------|---------------------------------------------|
+| 200  | Column(s) inserted successfully.            |
+| 400  | Bad request – missing or invalid parameters.|
+| 401  | Unauthorized – invalid or missing token.    |
+| 404  | Workbook or worksheet not found.            |
+| 500  | Internal server error.                      |
+
 ## Cloud SDK Family
 
-Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project logic. See the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

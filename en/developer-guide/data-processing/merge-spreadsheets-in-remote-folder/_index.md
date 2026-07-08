@@ -5,12 +5,15 @@ ArticleTitle: "Merge matching spreadsheet files into a single file in a remote f
 linktitle: "Merge Spreadsheets in Remote Folder"
 type: docs
 url: /merge-spreadsheets-in-remote-folder/
-keywords: "merge matching spreadsheet files remote folder, Aspose.Cells Cloud merge API, batch merge Excel files cloud, merge spreadsheets to PDF, CSV, JSON, cloud folder spreadsheet merger, remote Excel file merging, merge matching files multiple formats, Aspose merge API, automate Excel file merging"
+keywords: "merge spreadsheets, Aspose.Cells Cloud, remote folder merge, Excel to PDF, batch merge Excel, cloud spreadsheet API"
 description: "Combine spreadsheet files stored in Aspose Cloud storage into one file. Supports over 30 output formats such as PDF, CSV, JSON, XLSX, ODS, XPS, and more."
 weight: 100
 ---
 
 Merge matching spreadsheet files from a remote cloud folder and export to 30+ supported formats like PDF, CSV, JSON, ODS, and XPS using Aspose.Cells Cloud API.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## **Merge Spreadsheets in Remote Folder API**
 
@@ -22,18 +25,18 @@ PUT https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
 
 ### **Request Parameters:**
 
-| Parameter Name      | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                    |
-| :------------------ | :------ | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| folder              | String  | Query                      | The source folder path in cloud storage where the spreadsheet files to be merged are located.                                                                  |
-| fileMatchExpression | String  | Query                      | A string expression or pattern to filter and select matching files in the source folder for merging (e.g., `"*report*.xlsx"`).                                 |
-| outFormat           | String  | Query                      | Specifies the output file format after merging (e.g., `PDF`, `CSV`, `JSON`, `XLSX`). Supports 30+ common formats.                                              |
-| mergeInOneSheet     | Boolean | Query                      | When `true`, merges content from all matched files into a single worksheet; when `false`, each file’s content is kept in separate worksheets.                  |
-| storageName         | String  | Query                      | _(Optional)_ The name of the cloud storage where source files reside. If omitted, the default cloud storage is used.                                           |
-| outPath             | String  | Query                      | _(Optional)_ Specifies the target folder path in cloud storage where the merged file will be saved. If omitted, the merged file is saved in the source folder. |
-| outStorageName      | String  | Query                      | The name of the cloud storage where the output merged file will be saved.                                                                                      |
-| fontsLocation       | String  | Query                      | _(Optional)_ Specifies a custom folder path containing font files to ensure proper text rendering when exporting to PDF or image formats.                      |
-| region              | String  | Query                      | _(Optional)_ Sets the locale/region for number, date, and currency formatting in the output file (e.g., `"en-US"`, `"de-DE"`).                                 |
-| password            | String  | Query                      | _(Optional)_ If any matched spreadsheet file is password‑protected, provide the password to open the file.                                                     |
+| Parameter Name      | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                    | Required |
+| :------------------ | :------ | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- |
+| folder              | String  | Query                      | The source folder path in cloud storage where the spreadsheet files to be merged are located.                                                                  | Yes |
+| fileMatchExpression | String  | Query                      | A string expression or pattern to filter and select matching files in the source folder for merging (e.g., `"*report*.xlsx"`).                                 | Yes |
+| outFormat           | String  | Query                      | Specifies the output file format after merging (e.g., `PDF`, `CSV`, `JSON`, `XLSX`). Supports 30+ common formats.                                              | Yes |
+| mergeInOneSheet     | Boolean | Query                      | When `true`, merges content from all matched files into a single worksheet; when `false`, each file’s content is kept in separate worksheets.                  | Yes |
+| storageName         | String  | Query                      | _(Optional)_ The name of the cloud storage where source files reside. If omitted, the default cloud storage is used.                                           | No |
+| outPath             | String  | Query                      | _(Optional)_ Specifies the target folder path in cloud storage where the merged file will be saved. If omitted, the merged file is saved in the source folder. | No |
+| outStorageName      | String  | Query                      | The name of the cloud storage where the output merged file will be saved.                                                                                      | No |
+| fontsLocation       | String  | Query                      | _(Optional)_ Specifies a custom folder path containing font files to ensure proper text rendering when exporting to PDF or image formats.                      | No |
+| region              | String  | Query                      | _(Optional)_ Sets the locale/region for number, date, and currency formatting in the output file (e.g., `"en-US"`, `"de-DE"`).                                 | No |
+| password            | String  | Query                      | _(Optional)_ If any matched spreadsheet file is password‑protected, provide the password to open the file.                                                     | No |
 
 **Full Request Example (cURL)**
 
@@ -70,6 +73,20 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets?folde
 | 401  | Unauthorized – verify OAuth token.             | `string`  |
 | 404  | Resource not found – confirm file/folder path. | `string`  |
 | 500  | Internal server error – see logs for details.  | `string`  |
+
+**Sample Error Response (JSON)**
+
+```json
+{
+  "error": {
+    "code": 400,
+    "message": "Bad request – check URI and parameters.",
+    "requestId": "123e4567-e89b-12d3-a456-426614174000"
+  }
+}
+```
+
+> **Note:** The API is subject to rate limiting. Exceeding the allowed number of requests per minute will result in a `429 Too Many Requests` response.
 
 ## Where should we use the Merge Spreadsheet in remote folder API?
 

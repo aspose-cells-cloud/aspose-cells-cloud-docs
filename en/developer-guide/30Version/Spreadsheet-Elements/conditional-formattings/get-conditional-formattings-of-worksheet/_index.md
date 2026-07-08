@@ -8,7 +8,10 @@ description: "Retrieve all conditional formatting rules applied to a worksheet u
 weight: 20
 ---
 
-This REST API retrieves the conditional‑formatting rules that are applied to a worksheet.
+This REST API retrieves the conditional formatting rules that are applied to a worksheet.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -34,7 +37,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/conditiona
 | **404**   | Not Found – workbook or worksheet does not exist.  | `{ "Code":"404", "Message":"File not found." }`                     |
 | **500**   | Internal Server Error – unexpected server failure. | `{ "Code":"500", "Message":"An unexpected error occurred." }`       |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/ConditionalFormattings/GetWorksheetConditionalFormattings" target="_blank">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -84,13 +87,42 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet1/condit
 
 _The example above shows only the most relevant fields to keep the payload concise._
 
+**Response Parameters**
+
+| Parameter | Type   | Description |
+|-----------|--------|-------------|
+| Status | string | Result status of the request (e.g., **OK**). |
+| ConditionalFormattings | object | Container for conditional formatting data. |
+| ConditionalFormattings.Count | integer | Number of conditional formatting rules returned. |
+| ConditionalFormattings.ConditionalFormattingList | array | List of conditional formatting objects. |
+| ConditionalFormattingList[].sqref | string | Cell range to which the formatting applies (e.g., **A1:B10**). |
+| ConditionalFormattingList[].FormatConditions | array | Collection of format condition objects for the range. |
+| FormatConditions[].Priority | integer | Evaluation priority of the condition. |
+| FormatConditions[].Type | string | Type of condition (e.g., **CellValue**). |
+| FormatConditions[].Operator | string | Operator used for the condition (e.g., **GreaterThan**). |
+| FormatConditions[].Formula1 | string | First formula or value for the condition. |
+| FormatConditions[].Style | object | Styling applied when the condition is met. |
+| Style.Font.Color | object | RGBA color definition for the font. |
+| Style.Font.IsBold | boolean | Indicates whether the font is bold. |
+
+**Status Codes**
+
+| HTTP Code | Description |
+|-----------|-------------|
+| 200 | Successful request – returns conditional formatting rules. |
+| 202 | Accepted – request is being processed (if applicable). |
+| 400 | Bad Request – missing or invalid parameters. |
+| 401 | Unauthorized – missing or invalid JWT token. |
+| 404 | Not Found – workbook or worksheet does not exist. |
+| 500 | Internal Server Error – unexpected server failure. |
+
 {{< /tab >}}
 
 {{< /tabs >}}
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

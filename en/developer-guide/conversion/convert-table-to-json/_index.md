@@ -5,7 +5,7 @@ ArticleTitle: "How to Convert Local Spreadsheet Table Data to a JSON File: Step�
 linktitle: "Convert Table to JSON"
 type: docs
 url: /convert-table-to-json/
-keywords: "Excel API, JSON conversion, cloud file conversion, spreadsheet"
+keywords: "Excel, API, JSON, conversion, cloud, file, spreadsheet"
 description: "Use Aspose.Cells Cloud API to transform a local Excel table into a JSON file in a single PUT request. Includes cURL example, parameters, and SDK snippets for C#, Java, Python, and more."
 weight: 100
 ---
@@ -54,7 +54,7 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sh
 ### Request Body Example (multipart/form‑data)
 
 ```http
-POST /v4.0/cells/convert/table/json?worksheet=Sheet1&tableName=MyTable HTTP/1.1
+PUT /v4.0/cells/convert/table/json?worksheet=Sheet1&tableName=MyTable HTTP/1.1
 Host: api.aspose.cloud
 Authorization: Bearer {access_token}
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
@@ -94,6 +94,15 @@ output/json
 
 **Handling Tips:** Validate all required parameters before sending the request, refresh the OAuth token if a 401 is returned, and implement retry logic for 5xx responses.
 
+#### HTTP Status Reference
+
+| Status | Description                               | Suggested Handling                                      |
+|--------|-------------------------------------------|----------------------------------------------------------|
+| 400    | Bad Request                               | Check URI syntax and required parameters.               |
+| 401    | Unauthorized                              | Refresh or obtain a new OAuth token.                    |
+| 404    | Not Found                                 | Verify the file path and storage name.                  |
+| 500    | Internal Server Error                     | Retry after a short delay or contact Aspose support.    |
+
 ## **Where Should You Use the Convert Table to JSON API?**
 
 - **Real‑time Dashboards** – Convert live Excel data to JSON for charting libraries such as Chart.js or D3.js.
@@ -117,6 +126,8 @@ output/json
   - **Intelligent Structure Detection** – Automatically converts tabular data to proper JSON arrays/objects.
   - **Header Mapping** – Uses the first row as JSON keys for clean object structures.
   - **Data Type Retention** – Preserves numbers, dates, and booleans (not just text).
+
+*Version History:* The Convert Table to JSON endpoint was introduced with API version **v4.0** (2024) and remains the current stable release. Earlier v3.x endpoints are deprecated.
 
 ## How to Use the Convert Table to JSON API with SDKs?
 

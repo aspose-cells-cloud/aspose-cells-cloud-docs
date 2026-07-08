@@ -5,9 +5,9 @@ ArticleTitle: "Aspose.Cells Cloud API – Convert, Merge, Split & Protect Excel 
 linktitle: "Developer Center"
 type: docs
 url: /
-description: "Use Aspose.Cells Cloud REST APIs to convert, merge, split, protect and process Excel spreadsheets. Free 150 calls/month, SDKs for 8 languages."
+description: "Aspose.Cells Cloud REST API enables conversion, merging, splitting, protecting, and comprehensive processing of Excel spreadsheets. Free 150 calls/month, SDKs for 8 languages."
 weight: 10
-keywords: "Aspose.Cells Cloud API, Excel, Spreadsheet, REST API, Cloud, Conversion, Merge, Split, Protect"
+keywords: "Aspose.Cells Cloud, Excel API, spreadsheet conversion, merge Excel, split Excel, protect Excel, cloud spreadsheet SDK, REST API, Excel processing"
 ---
 
 ## What is Aspose.Cells Cloud APIs?
@@ -79,6 +79,8 @@ Aspose.Cells Cloud offers the following key features to meet enterprise‑level 
 - **[Delete Spreadsheet blank columns](https://docs.aspose.cloud/cells/delete-spreadsheet-blank-columns/)**  
 - **[Replace Spreadsheet content](https://docs.aspose.cloud/cells/replace-spreadsheet-content/)**  
 
+> **Note:** Detailed request/response schemas, HTTP methods, query parameters, and sample responses for each endpoint are available in the **Aspose.Cells Cloud Spreadsheet Web API Reference** linked below.
+
 ## Support SDKs (**Available SDKs**)
 
 - Aspose.Cells Cloud provides instant‑ready [SDKs](https://github.com/aspose-cells-cloud) in every major language—pull, code, and ship:
@@ -107,4 +109,4 @@ All SDKs are open‑source and include rich examples:
 - [PHP SDK Examples on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-php/tree/master/examples)  
 - [Go SDK Examples on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go/tree/master/examples)  
 - [Ruby SDK Examples on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby/tree/master/examples)  
-- [Perl SDK Examples on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/tree/master/examples)  
+- [Perl SDK Examples on Github.](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl/tree/master/examples)

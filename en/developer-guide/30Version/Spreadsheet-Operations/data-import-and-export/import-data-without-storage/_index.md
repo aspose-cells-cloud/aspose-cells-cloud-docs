@@ -8,6 +8,7 @@ aliases: [/import-data-in-excel-worksheet-without-using-storage/]
 keywords: "Aspose.Cells, Cloud API, import data without storage, Excel import API, REST import"
 description: "Learn how to import data directly into an Excel workbook using Aspose.Cells Cloud API without storing the file first. Includes request format, parameters, cURL example, SDK code, and error handling."
 weight: 10
+ArticleTitle: "Import Data without Using Storage – Aspose.Cells Cloud API"
 ---
 
 Excel data import can be complex because many factors influence the outcome. All of these factors should be considered during the **import** process. Aspose.Cells Cloud makes it easy to import a variety of formats and data types into an Excel file with professional‑grade quality.
@@ -64,6 +65,39 @@ curl -v "https://api.aspose.cloud/v3.0/cells/import" \
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Prerequisites:**  
+- Valid Aspose.Cloud JWT token with the `Cells` scope.  
+- The request must be sent over HTTPS.  
+- Maximum file size for the `file` parameter is 100 MB.
+
+**Status Codes**
+
+| Code | Description                                   |
+|------|-----------------------------------------------|
+| 200  | Import successful; response contains file data. |
+| 400  | Bad request – malformed JSON or missing parameters. |
+| 401  | Unauthorized – invalid or missing JWT token. |
+| 403  | Forbidden – insufficient permissions. |
+| 500  | Internal server error – unexpected failure on the server side. |
+
+**Error‑Response Example (400 Bad Request)**
+
+```json
+{
+  "Error": {
+    "Code": "InvalidImportOption",
+    "Message": "The ImportOption JSON is malformed or contains unsupported data types."
+  }
+}
+```
+
+**Notes / Tips:**  
+- Use `IsVertical` `true` for column‑wise import and `false` for row‑wise import.  
+- When `IsInsert` is `true`, the data is inserted and existing cells are shifted; set to `false` to overwrite.  
+- Supported `ImportDataType` values are `IntArray`, `DoubleArray`, `StringArray`, and `DateTimeArray`.  
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) also lists additional response formats and error codes.
 
 ## Cloud SDK Family
 

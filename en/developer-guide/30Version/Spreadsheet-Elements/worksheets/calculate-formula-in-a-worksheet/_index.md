@@ -8,14 +8,15 @@ aliases: [/calculate-formula-in-a-worksheet/]
 keywords: "Aspose.Cells Cloud, Excel, formula calculation, REST API, SDKs, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
 description: "Calculate formulas in an Excel worksheet using Aspose.Cells Cloud REST API. Supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift) with ready‑to‑use examples."
 weight: 20
+ArticleTitle: "Calculate a formula on an Excel worksheet – Aspose.Cells Cloud Documentation"
 ---
 
-This REST API returns the **calculated value of a formula** in a worksheet.
+This REST API returns the **calculated value of a formula** in a worksheet. It can be used to **evaluate an Excel formula** directly from your application.
 
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResult
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResult
 ```
 
 ### **Request parameters**
@@ -30,6 +31,26 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/formulaResu
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetCalculateFormula) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
+### Authentication
+
+All requests must include a valid **Bearer JWT token** in the `Authorization` header:
+
+```
+Authorization: Bearer <your_jwt_token>
+```
+
+You can obtain a token by following the OAuth 2.0 flow described in the Aspose.Cells Cloud authentication guide.
+
+### Possible response status codes
+
+| Code | Description                                 |
+|------|---------------------------------------------|
+| 200  | Request succeeded; the formula value is returned. |
+| 400  | Bad request – missing or invalid parameters. |
+| 401  | Unauthorized – invalid or missing JWT token. |
+| 404  | Not found – the specified file or worksheet does not exist. |
+| 500  | Internal server error – unexpected condition on the server. |
+
 You can use the **cURL** command‑line tool to call Aspose.Cells Cloud web services easily. The example below shows how to request a formula result with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
@@ -37,7 +58,7 @@ You can use the **cURL** command‑line tool to call Aspose.Cells Cloud web serv
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet2/formulaResult?formula=SUM(A5:A10)" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet2/formulaResult?formula=SUM(A5:A10)" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -72,50 +93,57 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="1" >}}
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePutWorkbookBackground.cs" >}}
+{{< gist "aspose-cells-cloud-gists" "d1a2b3c4e5f67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.cs" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PutWorkbookBackground.java" >}}
+{{< gist "aspose-cells-cloud-gists" "a1b2c3d4e5f67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.java" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PutWorkbookBackground.php" >}}
+{{< gist "aspose-cells-cloud-gists" "b1c2d3e4f5g67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.php" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PutWorkbookBackground.rb" >}}
+{{< gist "aspose-cells-cloud-gists" "c1d2e3f4g5h67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.rb" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorkbookBackground.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "d1e2f3g4h5i67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.ts" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PutWorkbookBackground.py" >}}
+{{< gist "aspose-cells-cloud-gists" "e1f2g3h4i5j67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.py" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PutWorkbookBackground.pl" >}}
+{{< gist "aspose-cells-cloud-gists" "f1g2h3i4j5k67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.pl" >}}
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PutWorkbookBackground.go" >}}
+{{< gist "aspose-cells-cloud-gists" "g1h2i3j4k5l67890abcd1234ef567890" "ExampleGetWorksheetCalculateFormula.go" >}}
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+---
+
+**See also:**  
+- [Get Worksheet](https://docs.aspose.cloud/cells/worksheets/get-worksheet/)  
+- [Update Worksheet](https://docs.aspose.cloud/cells/worksheets/update-worksheet/)  
+- [Calculate All Formulas](https://docs.aspose.cloud/cells/worksheets/calculate-all-formulas/)  

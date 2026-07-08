@@ -1,17 +1,43 @@
 ---
 title: "Aspose.Cells Cloud 3.0 Developer Guide"
+ArticleTitle: "Aspose.Cells Cloud 3.0 REST API Developer Guide – Excel Workbook Creation, Conversion & Styling"
 second_title: "Document"
 type: docs
 url: /developer-guide-3.0/
 aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
-keywords: "Aspose.Cells Cloud, REST API, Excel workbook, developer guide, chart API, data import, export, PDF, CSV, JSON"
+keywords: "Aspose.Cells Cloud, Excel REST API, workbook conversion, chart API, data import, export, PDF, CSV, JSON, developer guide"
 description: "Learn how to use Aspose.Cells Cloud 3.0 REST APIs for Excel workbook creation, conversion, styling, charts, tables, and more. Includes code samples, prerequisites, and best‑practice tips."
 weight: 150
 ---
 
 ## Working with Aspose.Cells Cloud REST APIs
 
-The **Aspose.Cells Cloud 3.0 Developer Guide** provides a concise, searchable overview of the most‑used REST API operations for Excel workbooks and worksheets. It is intended for developers who need to create, modify, convert, and manipulate Excel files programmatically. Use the sections below to locate the operation you require; each link leads to a detailed page with request syntax, parameters, and examples.
+The **Aspose.Cells Cloud 3.0 Developer Guide** provides a concise, searchable overview of the most‑used REST API operations for Excel workbooks and worksheets. It is intended for developers who need to create, modify, convert, and manipulate Excel files programmatically. Use the sections below to locate the operation you require; each link leads to a detailed page with request syntax, parameters, and examples. This hub page centralizes the **Aspose.Cells Cloud REST API** reference, making it easier to find workbook‑related endpoints, chart handling, data import, and export functions.
+
+### Table of Contents
+- [File Operations](#file-operations)
+- [Home (Cell Formatting & Row/Column Management)](#home-cell-formatting--rowcolumn-management)
+- [Insert (Charts, Tables & OLE Objects)](#insert-charts-tables--ole-objects)
+- [Page Layout (Page Breaks & Setup)](#page-layout-page-breaks--setup)
+- [Formulas (Calculate & Names)](#formulas-calculate--names)
+- [Data (Outline, Filter & Import)](#data-outline-filter--import)
+- [Review (Comments & Protection)](#review-comments--protection)
+- [View (Window & Zoom Controls)](#view-window--zoom-controls)
+
+### Quick API Summary
+
+| API Group | Sample Endpoint | Primary Action |
+|-----------|----------------|----------------|
+| **Create Workbook** | `POST /cells/workbook` | Create a new empty Excel workbook |
+| **Convert Workbook** | `PUT /cells/workbook/convert` | Convert an Excel file to PDF, CSV, JSON, etc. |
+| **Add Chart** | `POST /cells/worksheets/{sheetName}/charts` | Insert a new chart into a worksheet |
+| **Manage Tables** | `PUT /cells/worksheets/{sheetName}/tables/{tableName}` | Update or delete a list object (table) |
+| **Import Data** | `POST /cells/worksheets/{sheetName}/import` | Import CSV, JSON, images, or arrays into a worksheet |
+| **Calculate Formulas** | `POST /cells/workbook/calculate` | Recalculate all formulas in a workbook |
+| **Apply Filters** | `POST /cells/worksheets/{sheetName}/filters` | Add or remove AutoFilter criteria |
+| **Protect Workbook** | `POST /cells/workbook/protect` | Apply password protection to a workbook |
+
+These high‑frequency operations cover the core functionality of the **Aspose.Cells Cloud Excel REST API** and link directly to detailed documentation pages.
 
 {{< tabs tabTotal="8" tabID="1" tabName1="File" tabName2="Home" tabName3="Insert" tabName4="Page Layout" tabName5="Formulas" tabName6="Data" tabName7="Review" tabName8="View" >}}
 {{< tab tabNum="1" >}}

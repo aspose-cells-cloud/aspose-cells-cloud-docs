@@ -7,6 +7,7 @@ url: /extract-text/
 keywords: "Aspose.Cells Cloud, Extract Text, Excel API, cell text extraction, REST API"
 description: "Extract substrings, numbers or characters from Excel cells using Aspose.Cells Cloud API. Supports before/after text, position‑based extraction, and direct output to a new range."
 weight: 100
+ArticleTitle: "Aspose.Cells Cloud Extract Text API Documentation"
 ---
 
 Extracts substrings, characters, or numbers from a spreadsheet cell into another cell, eliminating the need for complex FIND, MIN, LEFT, or RIGHT formulas.
@@ -14,7 +15,14 @@ Extracts substrings, characters, or numbers from a spreadsheet cell into another
 ## **ExtractText API**
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/content/extract/text
+PUT https://api.aspose.cloud/v4.0/cells/content/extract/text
+```
+
+**Authentication**  
+All requests to the ExtractText API must include a valid OAuth 2.0 bearer token in the `Authorization` header:
+
+```
+Authorization: Bearer {access_token}
 ```
 
 ### The request parameters of **extractText** API are
@@ -35,6 +43,14 @@ PUT http://api.aspose.cloud/v4.0/cells/content/extract/text
 | region           | String  | Query              | Spreadsheet region setting (e.g., `US`, `EU`).                                                                                  |
 | password         | String  | Query              | Password for opening a protected workbook.                                                                                      |
 
+**Sample cURL request**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/content/extract/text?extractTextType=Before&beforeText=Total&outPositionRange=Sheet1!B1&worksheet=Sheet1&range=A1" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@Sample.xlsx"
+```
+
 ### **Response**
 
 When the request succeeds, the API returns a JSON payload containing the extracted text and the address of the cell where it was written:
@@ -53,11 +69,22 @@ When the request succeeds, the API returns a JSON payload containing the extract
 
 If the `outPath` parameter is provided, the response contains only a status message; the workbook is written to the specified location.
 
+**Sample response when `outPath` is omitted**
+
+```json
+{
+  "extractedText": "Total",
+  "targetCell": "Sheet1!B1"
+}
+```
+
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI or missing required parameters.
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.
-- **404 Not Found** – The specified spreadsheet file cannot be accessed.
+- **200 OK** – Extraction completed successfully.  
+- **202 Accepted** – Request accepted for asynchronous processing.  
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI or missing required parameters.  
+- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
+- **404 Not Found** – The specified spreadsheet file cannot be accessed.  
 - **500 Server Error** – An unexpected error occurred while processing the workbook.
 
 ## OpenAPI Specification
@@ -137,3 +164,9 @@ The following code examples illustrate how to make calls to Aspose.Cells web ser
 {{</tab>}}
 
 {{< /tabs >}}
+
+### See Also
+
+- [Add Text to a Cell](https://docs.aspose.cloud/cells/add-text/)
+- [Convert Text to Number](https://docs.aspose.cloud/cells/convert-text/)
+- [Split Text in a Cell](https://docs.aspose.cloud/cells/split-text/)

@@ -12,6 +12,8 @@ weight: 100
 
 Delete characters from Excel cells by position: remove first/last N characters, or delete text before/after specified markers. Precise text cleaning with Aspose.Cells Cloud Web API.
 
+**Prerequisites**: To use this API you need an active Aspose Cloud subscription, a valid access token obtained via OAuth, and a storage location (default or custom) where the input workbook resides.
+
 ## **Introduction**: Remove Unwanted Characters by Position
 
 **Position modes**
@@ -31,14 +33,17 @@ Delete characters from Excel cells by position: remove first/last N characters
 ### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/content/remove/characters
+PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters
 ```
+
+**Authentication**: Include the `Authorization: Bearer {access_token}` header with the request.
 
 ### The request parameters of **RemoveCharactersByPosition** API are
 
 | Parameter Name          | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                             |
 | ----------------------- | ------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Spreadsheet             | File    | FormData                   | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                                               |
+| Authorization           | String  | Header                     | Bearer token for authentication (required).                                                                                                                             |
 | theFirstNCharacters     | Integer | Query                      | Number of characters to remove from the beginning of the text in each selected cell (e.g., `3` removes the first 3 characters).                                         |
 | theLastNCharacters      | Integer | Query                      | Number of characters to remove from the end of the text in each selected cell (e.g., `2` removes the last 2 characters).                                                |
 | allCharactersBeforeText | String  | Query                      | Removes all characters that appear before the specified text string in each cell. If the text appears multiple times, removal is based on the first occurrence.         |
@@ -66,6 +71,7 @@ PUT http://api.aspose.cloud/v4.0/cells/content/remove/characters
 
 ### Error Codes
 
+- **200 OK** – The request succeeded and the processed file is returned.
 - **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
 - **401 Unauthorized**: Invalid access token or invalid client ID and secret.
 - **404 Not Found**: The spreadsheet file is not accessible.

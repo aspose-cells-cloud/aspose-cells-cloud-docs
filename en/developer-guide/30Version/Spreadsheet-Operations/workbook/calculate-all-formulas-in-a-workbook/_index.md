@@ -6,12 +6,15 @@ type: docs
 url: /calculate-all-formulas-on-an-excel-file/
 aliases:
   [/calculate-all-formulas-in-a-workbook/, /workbook/calculate-all-formulas/]
-keywords: "Aspose.Cells, calculate formulas, Excel workbook, REST API, cloud SDK"
-description: "Learn how to calculate every formula in an Excel workbook using the Aspose.Cells Cloud REST API. Includes cURL example, request parameters, detailed response schema, prerequisites, error‑handling guidance, and inline SDK code samples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
+keywords: "Aspose.Cells, calculate formulas, Excel API, cloud SDK"
+description: "Calculate every formula in an Excel workbook via Aspose.Cells Cloud REST API. Includes cURL example, request parameters, response schema, prerequisites, and SDK snippets for multiple languages."
 weight: 140
+ArticleTitle: "Calculate All Formulas on an Excel Workbook"
 ---
 
 This REST API calculates **all formulas** in an Excel workbook.
+
+**Prerequisites:** Before calling this endpoint, ensure you have a valid JWT authentication token, your Aspose.Cells Cloud client ID and secret, and that the target workbook is uploaded to the designated storage location.
 
 ## REST API
 
@@ -86,6 +89,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/calculateformula?ignoreE
   - `401` – Authentication failed (invalid or expired JWT).
   - `404` – Workbook not found.
   - `500` – Server‑side error; contact Aspose support if it persists.
+
+| Code | Meaning               | When Returned                                             |
+|------|-----------------------|-----------------------------------------------------------|
+| 400  | Bad Request           | Invalid request parameters or malformed JSON.            |
+| 401  | Unauthorized          | Missing, invalid, or expired JWT token.                  |
+| 404  | Not Found             | Specified workbook does not exist in storage.            |
+| 500  | Internal Server Error | Unexpected server‑side failure; contact Aspose support.   |
 
 ## Cloud SDK Family
 

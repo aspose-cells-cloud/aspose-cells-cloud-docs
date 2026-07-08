@@ -8,15 +8,19 @@ aliases: [/remove-worksheets-from-excel-workbooks/]
 keywords: "Aspose.Cells Cloud, Delete Worksheet, Excel, Spreadsheet, REST API"
 description: "Delete a worksheet from an Excel workbook using Aspose.Cells Cloud REST API. Supports SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, Go and cURL."
 weight: 20
+ArticleTitle: "Delete Worksheet – Aspose.Cells Cloud API"
 ---
 
-This REST API deletes a worksheet.
+This REST API deletes a worksheet.  
+Prerequisites: To call this API you must provide a valid JWT authentication token in the **Authorization** header and have access to the storage location where the workbook resides.
 
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 ```
+
+*Note: The API uses version **v3.0**, which is the current stable version. Future version changes will be announced in the release notes.*
 
 ### **Request parameters**
 
@@ -27,6 +31,16 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}
 | folder         | string | query    | Document’s folder.  |
 | storageName    | string | query    | Storage name.       |
 
+Possible HTTP responses:
+
+| Status Code | Description |
+| ----------- | ----------- |
+| 200 OK | Worksheet deleted successfully. |
+| 400 Bad Request | Invalid request parameters. |
+| 401 Unauthorized | Authentication failed or token missing. |
+| 404 Not Found | Specified workbook or worksheet does not exist. |
+| 500 Internal Server Error | Unexpected server error. |
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
@@ -36,12 +50,14 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet3" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet3" \
   -X DELETE \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <jwt token>"
 ```
+
+*All requests must be made over HTTPS; the API does not support non‑TLS connections.*
 
 {{< /tab >}}
 

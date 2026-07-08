@@ -5,8 +5,9 @@ linktitle: "What's new in 2024"
 type: docs
 weight: 20
 url: /new-features/2024/
-keywords: "Aspose.Cells Cloud, new features 2024, API updates, spreadsheet processing, Excel, CSV, PDF, REST API"
-description: "Overview of the new features and enhancements introduced in Aspose.Cells Cloud during 2024 releases, including API updates, data transformation, and document‑processing capabilities."
+keywords: "Aspose.Cells Cloud, 2024 new features, Remove Duplicates API, Extract Text API, data transformation, spreadsheet processing, Excel, CSV, PDF, REST API"
+description: "Overview of the new features and enhancements in Aspose.Cells Cloud for 2024, including the Remove Duplicates API, Extract Text API, and data‑transformation improvements."
+ArticleTitle: "Aspose.Cells Cloud 2024 New Features and Enhancements"
 ---
 
 Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
@@ -15,7 +16,7 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 
 - Add the new **Remove Duplicates API**.  
 - Add the new **Extract Text API**.  
-- Pivot filter creation may fail.
+- Fixed a bug where creating a pivot filter could fail.
 
 ## Enhancements in Version 24.11
 
@@ -36,7 +37,7 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 
 ## Enhancements in Version 24.7
 
-- Add a feature for adding text content.  
+- Introduce **AddTextContent** API to insert arbitrary text into a worksheet.  
 - Add ability to obtain an access token using client ID and client secret.
 
 ## Enhancements in Version 24.6.1

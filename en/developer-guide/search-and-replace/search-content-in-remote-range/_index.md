@@ -1,23 +1,33 @@
 ---
-title: "Aspose.Cells Cloud Excel Text Search Web API – Find Text in Remote Spreadsheet Ranges"
+title: "Aspose Cells Cloud Excel Text Search API – Find Text in Remote Spreadsheet Ranges"
 second_title: "Document"
 ArticleTitle: "Search Text in Remote Excel Spreadsheets – Find Data in Specific Ranges"
 linktitle: "Search Remote Range Content"
 type: docs
 url: /search-content-in-remote-range/
-keywords: "Aspose.Cells, Excel search API, remote range, cloud spreadsheet, text lookup"
+keywords: "Aspose.Cells, Excel API, search text, remote range, cloud spreadsheet, REST API, data discovery"
 description: "Search for text, numbers, or formulas in a specific range of an Excel workbook stored in Aspose Cloud."
 weight: 100
 ---
 
-## **Search Content In Remote Range**I
+## **Search Content In Remote Range**
 
 Programmatically search for specific text within any range of Excel spreadsheets using Aspose.Cells Cloud API. Find text, numbers, or formulas in remote files stored in cloud storage. RESTful API for automated data discovery, content analysis, and spreadsheet‑auditing workflows.
+
+**Prerequisites**: To call this API you must have a valid Aspose Cloud access token. Obtain the token using your client ID and client secret via the authentication endpoint, then include it in the `Authorization: Bearer <access_token>` header of each request.
 
 ### **Web API**
 
 ```
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/content
+```
+
+**cURL example**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Orders_2024/ranges/B2:H100/search/content?searchText=Report&ignoreCase=true" \
+     -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+     -H "Content-Type: application/json"
 ```
 
 ### Request Parameters
@@ -48,22 +58,22 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{ce
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.
-- **404 Not Found** – The spreadsheet file is not accessible.
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
+- **404 Not Found** – The spreadsheet file is not accessible.  
 - **500 Server Error** – An unexpected condition prevented the server from fulfilling the request.
 
 ## Where should we use the Search content within the range of the Spreadsheet API?
 
-- **Large‑scale Data Quality Check** – During the acceptance stage of the data‑warehouse ETL process, search for missing field descriptions, undefined abbreviations, or placeholder text (e.g., `"TBD"` or `"NULL"`) in the data‑mapping table (`DataDictionary!B2:F1000`) to identify incomplete data definitions.
-- **Dynamic Report Generation and Content Extraction** – In automated reporting systems, intelligently search and extract current‑period data blocks marked with specific identifiers (e.g., `"[KPI]"`) from template worksheets containing mixed data (`Monthly_Metrics!C10:G50`) for assembling the final report.
+- **Large‑scale Data Quality Check** – During the acceptance stage of the data‑warehouse ETL process, search for missing field descriptions, undefined abbreviations, or placeholder text (e.g., `"TBD"` or `"NULL"`) in the data‑mapping table (`DataDictionary!B2:F1000`) to identify incomplete data definitions.  
+- **Dynamic Report Generation and Content Extraction** – In automated reporting systems, intelligently search and extract current‑period data blocks marked with specific identifiers (e.g., `"[KPI]"`) from template worksheets containing mixed data (`Monthly_Metrics!C10:G50`) for assembling the final report.  
 - **Contract and Legal Document Analysis** – When reviewing spreadsheet appendices that contain many clauses, efficiently locate specific legal terms (e.g., `"liability limit"`), party names, or dates within a defined range (`Contract_Terms!A:A`) to accelerate the review process.
 
 ## Why should you use the Search content within the range of the Spreadsheet API?
 
-- **Developer‑friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comprehensive documentation, which significantly reduces the development workload compared with building custom solutions.
-- **Reduced labor costs** – Eliminates the need for dedicated positions handling document consolidation.
-- **Pay‑per‑use** – No upfront investment; you only pay for the API calls actually used.
+- **Developer‑friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comprehensive documentation, which significantly reduces the development workload compared with building custom solutions.  
+- **Reduced labor costs** – Eliminates the need for dedicated positions handling document consolidation.  
+- **Pay‑per‑use** – No upfront investment; you only pay for the API calls actually used.  
 - **Zero maintenance costs** – No servers to maintain, no software updates, and no compatibility concerns.
 
 ## How to Use the Search Content within the range of the Spreadsheet API with SDKs

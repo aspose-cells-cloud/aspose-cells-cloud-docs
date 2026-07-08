@@ -1,5 +1,6 @@
 ---
 title: "Convert List Object to Range – Aspose.Cells Cloud API"
+ArticleTitle: "Convert List Object to Range using Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Conversion"
 type: docs
@@ -14,7 +15,13 @@ weight: 30
 
 This REST API converts a **ListObject (table)** to a **Range** within an Excel worksheet.
 
+**Prerequisites:**  
+Before calling the endpoint, ensure that the workbook is uploaded to your Aspose Cloud storage, the worksheet contains the target ListObject, and you are using a supported file format (e.g., .xlsx, .xlsm).
+
 ## REST API
+
+**Authentication**  
+To call this operation you must include a valid JWT token in the `Authorization` header. Obtain the token by sending a POST request to the OAuth 2.0 token endpoint with your client ID and client secret. The token must include the `Cells.ReadWrite` scope and is valid for the period returned by the token service.
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange
@@ -41,7 +48,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/listob
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
-  -H "Authorization: Bearer <your‑jwt‑token>"
+  -H "Authorization: Bearer <your-jwt-token>"
 ```
 
 {{< /tab >}}
@@ -79,8 +86,8 @@ The API returns a **200 OK** response with details of the newly created range.
 | Code | Meaning               | When it occurs                                                            |
 | ---- | --------------------- | ------------------------------------------------------------------------- |
 | 400  | Bad Request           | The `listObjectIndex` is out of range or required parameters are missing. |
-| 401  | Unauthorized          | Missing or invalid JWT token.                                             |
-| 404  | Not Found             | The specified workbook, worksheet, or ListObject does not exist.          |
+| 401  | Unauthorized          | Missing or invalid JWT token.                                            |
+| 404  | Not Found             | The specified workbook, worksheet, or ListObject does not exist.         |
 | 500  | Internal Server Error | An unexpected server‑side error occurred.                                 |
 
 {{< tab tabNum="12" >}}

@@ -3,17 +3,21 @@ title: "Update a Hyperlink in an Excel Worksheet"
 type: docs
 url: /hyperlinks/update/
 aliases: [/update-hyperlinks-in-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, update hyperlink API, Excel hyperlink REST, v3.0, SDK example"
+keywords: "Aspose.Cells, hyperlink update, Excel API, REST API, cloud spreadsheet, v3.0"
 description: "Learn how to update a hyperlink in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, request‑body schema, cURL sample, and SDK code snippets for C#, Java, Python, and more."
+ArticleTitle: "Update a Hyperlink in an Excel Worksheet – Aspose.Cells Cloud API Guide"
 weight: 30
 ---
 
 This REST API updates a hyperlink in an Excel worksheet identified by its zero‑based index.
 
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/hyperlinks/{hyperlinkIndex}
 ```
 
 ### Request parameters
@@ -55,7 +59,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks/1" \
+curl -L -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/hyperlinks/1" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \

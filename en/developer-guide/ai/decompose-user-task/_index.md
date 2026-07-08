@@ -10,7 +10,7 @@ description: "Transform free‑form objectives into SMART, time‑estimated task
 weight: 100
 ---
 
-The **DecomposeUserTask** endpoint empowers developers to turn a free‑form task description into a detailed, sequential action plan that adheres to SMART criteria. It automatically allocates hour‑based time estimates, formats the output for Redmine‑compatible import, and creates project‑milestone nodes. Supplying only the raw task list and optional time estimates, the API returns a ready‑to‑use file (CSV, XLSX, etc.) that can be directly imported into project‑management tools, eliminating manual task breakdown and reducing planning errors.
+The **DecomposeUserTask** endpoint provides a REST endpoint to turn a free‑form task description into a detailed, sequential action plan that adheres to SMART criteria. It automatically allocates hour‑based time estimates, formats the output for Redmine‑compatible import, and creates project‑milestone nodes. Supplying only the raw task list and optional time estimates, the API returns a ready‑to‑use file (CSV, XLSX, etc.) that can be directly imported into project‑management tools, eliminating manual task breakdown and reducing planning errors.
 
 ## **Decompose User Task API**
 
@@ -28,6 +28,12 @@ PUT https://api.aspose.cloud/v4.0/cells/ai/task/decompose
 | region          | string | Query    | Optional          | Specifies the spreadsheet region (e.g., “A1:D20”) where the result should be placed when the response is saved as a workbook. If omitted, the API uses the default worksheet start cell.                                                 |
 | password        | string | Query    | Optional          | Password for opening an encrypted spreadsheet file before inserting the decomposition result. Required only when the target workbook is protected.                                                                                       |
 
+**Authentication**  
+Calls to the Decompose User Task API require an OAuth 2.0 access token. Include the token in the `Authorization` header as `Bearer <access_token>`. Tokens are obtained from the Aspose Cloud authentication endpoint.
+
+**Rate‑Limit**  
+The API enforces a default limit of 60 requests per minute per account. The response includes the header `X-RateLimit-Remaining` indicating the remaining calls in the current window. If the limit is exceeded, the service returns **429 Too Many Requests**; retry after the period indicated in the `Retry-After` header.
+
 ### **Response**
 
 Successful response (200 OK)  
@@ -40,14 +46,25 @@ Headers:
 
 The same structure is used for XLSX/ODS formats, with columns placed in the first worksheet.
 
-### Error Codes
+**Sample Request Body (JSON)**  
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
-- **429 Too Many Requests**: Rate limit exceeded; reduce request frequency.
-- **422 Unprocessable Entity**: The request payload is syntactically correct but semantically invalid (e.g., empty `TaskDescription`).
-- **500 Server Error**: The spreadsheet encountered an anomaly while obtaining calculation data.
+```json
+{
+  "TaskDescription": "Launch marketing campaign for Q3, including content creation, email blast, and social media ads.",
+  "region": "A1:D20",
+  "password": "optionalPassword"
+}
+```
+
+**Sample Response**  
+The API returns a binary stream containing the generated file. To preview the first few rows of a CSV response, decode the stream and view the header row, e.g.:
+
+```
+Task ID,Task Name,Estimated Hours,Start Date,End Date,Milestone
+1,Create campaign brief,4,2024-07-01,2024-07-01,Planning
+2,Design graphics,8,2024-07-02,2024-07-03,Design
+...
+```
 
 ## Where should we use the Decompose User Task API?
 
@@ -61,20 +78,20 @@ The same structure is used for XLSX/ODS formats, with columns placed in the firs
 - **SMART‑compliant output** guarantees that each generated task meets quality criteria (Specific, Measurable, Achievable, Relevant, Time‑bound).
 - **Built‑in hour‑based time estimation** saves manual calculation and improves forecasting accuracy.
 - **Ready‑to‑import file formats** (CSV, XLSX, etc.) streamline integration with Redmine, Jira, Azure DevOps, and other project‑management platforms.
-- **One‑call automation** reduces the effort of manual task breakdown, accelerating project initiation and minimizing human error.
+- **Single‑request automation** reduces the effort of manual task breakdown, accelerating project initiation and minimizing human error.
 
 ## How to Use the Decompose User Task API with SDKs
 
 ### Decompose User Task API Specification
 
-The [Decompose User Task API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/AI/DecomposeUserTask) provides a publicly accessible programming interface for executing REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/AI/DecomposeUserTask" target="_blank" rel="noopener noreferrer">Decompose User Task API Specification</a> provides a publicly accessible programming interface for executing REST interactions directly from a web browser.
 
 ## Excel API SDK
 
 ### Use Aspose.Cells Cloud SDKs
 
 Using the SDK is the fastest way to develop, as it abstracts low‑level details and lets you call the DecomposeUserTask endpoint with concise code.  
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.  
+Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.  
 The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}

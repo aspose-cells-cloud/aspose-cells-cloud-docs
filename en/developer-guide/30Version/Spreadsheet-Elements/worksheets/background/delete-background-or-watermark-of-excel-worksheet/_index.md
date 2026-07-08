@@ -8,14 +8,17 @@ aliases: [/delete-background-or-watermark-of-excel-worksheet/]
 keywords: "Aspose.Cells Cloud, Delete worksheet background, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Use Aspose.Cells Cloud REST API to delete the background image of an Excel worksheet. SDKs are available for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
 weight: 210
+ArticleTitle: "Delete background on an Excel worksheet using Aspose.Cells Cloud API"
 ---
 
 This REST API deletes the background image of a worksheet.
 
+**Prerequisites:** You must have the workbook stored in Aspose Cloud storage and possess a valid JWT access token for authentication.
+
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/background
 ```
 
 ### **Request parameters**
@@ -29,14 +32,14 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/backgrou
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/DeleteWorksheetBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. All requests require a valid JWT token. Obtain the token via the OAuth2 token endpoint as described in the Authentication guide.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/WorkSheetBackground_Sample_Test_Book.xls/worksheets/Sheet1/background" \
+curl -v "https://api.aspose.cloud/v3.0/cells/WorkSheetBackground_Sample_Test_Book.xls/worksheets/Sheet1/background" \
   -X DELETE \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -53,6 +56,16 @@ curl -v "http://api.aspose.com/v3.0/cells/WorkSheetBackground_Sample_Test_Book.x
   "Status": "OK"
 }
 ```
+
+**Response Codes**
+
+| Code | Meaning               | Description                                 |
+|------|-----------------------|---------------------------------------------|
+| 200  | OK                    | Background removed successfully.            |
+| 400  | Bad Request           | Invalid parameters supplied.                |
+| 401  | Unauthorized          | Missing or invalid JWT token.               |
+| 404  | Not Found             | Specified file or worksheet does not exist. |
+| 500  | Internal Server Error | Unexpected server error.                    |
 
 {{< /tab >}}
 

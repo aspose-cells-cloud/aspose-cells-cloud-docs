@@ -74,11 +74,17 @@ PUT https://api.aspose.cloud/v4.0/cells/import/data
 
 ## Why You Should Use This API
 
-- **Efficient Data Loading** – Import large volumes of data without first creating intermediate files.
-- **Developer‑Friendly** – SDKs are available for many languages, reducing development effort and ensuring consistent implementations.
-- **Cost‑Effective** – The API processes data in‑memory, minimizing storage usage and associated costs.
+- **Efficient data loading** – Enables bulk import of large datasets directly into a workbook without creating intermediate files.  
+- **Broad SDK support** – Provides client libraries for .NET, Java, PHP, Ruby, Node.js, Python, Go, and Perl, simplifying integration.  
+- **In‑memory processing** – Performs transformations in memory, which reduces temporary storage requirements.  
 
 ## How to Use the Import Data into Spreadsheet API with SDKs
+
+**Prerequisites:** To use this API you must have a valid Aspose Cloud account, the latest version of the Aspose.Cells Cloud SDK (v4.0 or newer), and an OAuth2 access token with the `Cells.ReadWrite` scope. The data files must not exceed the service‑specific size limits (typically 100 MB per file).
+
+**Notes / Limitations:** The API supports up to 1 000 000 rows per import. Only comma is the default CSV delimiter; other single‑character delimiters can be specified via the `splitter` parameter. Large XML files may increase processing time.
+
+For related operations such as exporting data or converting workbook formats, see the **Export Data** and **Convert Workbook** documentation.
 
 ### Import Data into Spreadsheet API Specification
 
@@ -349,3 +355,26 @@ func main() {
 
 {{</tab>}}
 {{< /tabs >}}
+
+**cURL example**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/import/data?worksheet=Sheet1&startCell=A1" \
+     -H "Authorization: Bearer <access_token>" \
+     -F "datafile=@data.csv" \
+     -F "spreadsheet=@template.xlsx"
+```
+
+**Error handling (generic SDK pattern)**  
+
+```csharp
+try
+{
+    var result = apiInstance.ImportDataIntoSpreadsheet(...);
+    Console.WriteLine($"File saved to: {result[0].Name}");
+}
+catch (ApiException e)
+{
+    Console.WriteLine($"Error: {e.ErrorCode} – {e.Message}");
+}
+```

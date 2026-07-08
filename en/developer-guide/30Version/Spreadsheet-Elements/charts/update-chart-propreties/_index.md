@@ -6,14 +6,18 @@ aliases: [/update-chart-properties/]
 weight: 160
 keywords: "Aspose.Cells, chart properties, update chart, Excel API, REST API, cURL, SDK, C#, Java, PHP, Ruby, Node.js, Go, Perl"
 description: "Learn how to update chart properties (type, title, legend, etc.) in an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, and SDK snippets for C#, Java, PHP, Ruby, Node.js, Perl, and Go."
+ArticleTitle: "Update Chart Properties – Aspose.Cells Cloud REST API"
 ---
 
 This REST API updates chart properties.
 
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
 ```
 
 ### Request parameters
@@ -60,7 +64,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -X POST "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet4/charts/1" \
+curl -X POST "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/sheet4/charts/1" \
 -d '{"Type": "line"}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -92,6 +96,19 @@ The API returns a JSON object indicating the operation result. A successful upda
   "Status": "OK"
 }
 ```
+
+**Success status codes**
+
+| HTTP Status | Description |
+| ----------- | ----------- |
+| 200         | OK – The chart properties were updated successfully. |
+
+**Response headers**
+
+| Header | Description |
+| ------ | ----------- |
+| `Content-Type` | `application/json` – Indicates that the response body is JSON formatted. |
+| `X-RequestId` | Unique identifier for the request (useful for troubleshooting). |
 
 Possible error responses include:
 

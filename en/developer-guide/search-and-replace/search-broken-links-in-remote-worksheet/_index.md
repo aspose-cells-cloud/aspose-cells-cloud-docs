@@ -20,6 +20,8 @@ Automatically detect broken links in an Excel worksheet stored in cloud storage.
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/broken-links
 ```
 
+**Prerequisites**: The request requires a valid OAuth 2.0 access token, which must be included in the `Authorization` header as `Bearer {access_token}`. The workbook must be stored in a supported cloud storage (Aspose Cloud Storage, Amazon S3, Azure Blob, etc.). If the file is password‑protected, supply the `password` query parameter.
+
 ### **Request Parameters:**
 
 | Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                                                                                                                                |
@@ -30,6 +32,14 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/bro
 | storageName    | String | Query                       | **Optional.** The identifier of your custom‑configured cloud storage. If not provided, the API uses the account’s default storage.                                                                                                         |
 | region         | String | Query                       | **Optional.** The locale setting to apply during the search (e.g., `fr-FR`). This may influence the interpretation of certain formulas or regional data formats. _Supported locale codes include `en-US`, `fr-FR`, `de-DE`, `es-ES`, etc._ |
 | password       | String | Query                       | **Optional.** The decryption password for a password‑protected spreadsheet. Omit if the file is not encrypted.                                                                                                                             |
+
+**Example cURL request**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/Annual_Report.xlsx/worksheets/DataSheet1/search/broken-links?folder=Reports&storageName=MyStorage" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
 
 ### **Response**
 
@@ -52,6 +62,8 @@ The response object is of type **BrokenLinksResponse** and contains:
 - **BrokenLinks** – a collection of `BrokenLink` items, each describing the problematic reference (address, error code, and message).
 - **Code** – numeric status code returned by the service.
 - **Status** – textual description of the result.
+
+**Notes**: The API does not paginate results. Up to 10,000 broken links can be returned per request. Rate limit is 100 requests per minute per account.
 
 ### Error Codes
 

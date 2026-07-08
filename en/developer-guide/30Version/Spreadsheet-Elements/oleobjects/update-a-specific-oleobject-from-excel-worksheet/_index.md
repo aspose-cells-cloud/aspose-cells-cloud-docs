@@ -10,14 +10,18 @@ description: "Learn how to update an OLE object (image, chart, etc.) in an Excel
 weight: 30
 author: "Aspose Cloud Documentation Team"
 lastmod: "2024-03-01"
+ArticleTitle: "Update an OLE Object in an Excel Worksheet – Aspose.Cells Cloud API Guide"
 ---
 
 This REST API updates an **OLE object** in an Excel worksheet.
 
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
 ```
 
 The request parameters are:
@@ -54,7 +58,7 @@ You can use the **cURL** command‑line tool to access Aspose.Cells web services
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/" \
+curl -v "https://api.aspose.cloud/v3.0/cells/" \
   -X POST \
   -d '{"ImageSourceFullName":"aspose-logo.png","IsAutoSize":true,"SourceFullName":"Sample_Book2.xls","UpperLeftRow":15,"Top":10,"UpperLeftColumn":5,"Left":10,"Width":400,"Height":400}' \
   -H "Content-Type: application/json" \

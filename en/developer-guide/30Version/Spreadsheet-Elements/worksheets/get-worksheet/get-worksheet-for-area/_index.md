@@ -5,16 +5,56 @@ linktitle: "Area"
 type: docs
 url: /worksheets/area-to-different-formats/
 aliases: [/get-worksheet-for-area/]
-keywords: "Aspose.Cells, export worksheet area, Excel to PDF, Excel to PNG, REST API, SDK"
-description: "Learn how to export a specific cell range from an Excel worksheet to PNG, PDF, CSV and more using Aspose.Cells Cloud REST API or SDKs (C#, Java, Python, …)."
+keywords: "Aspose.Cells, export worksheet area, PNG, PDF, CSV, Excel conversion, REST API, SDK"
+description: "Learn how to export a specific cell range from an Excel worksheet to PNG, PDF, CSV and over 20 other formats using Aspose.Cells Cloud REST API or SDKs (C#, Java, Python, …)."
 weight: 230
+ArticleTitle: "Export Worksheet Area to PNG, PDF, CSV with Aspose.Cells Cloud API – Complete Guide"
 ---
 
 [GET /cells/{name}/worksheets/{sheetName}](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheet) API lets you convert a specified area of a worksheet to various file formats. Supported formats: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/), [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [GIF](https://docs.fileformat.com/image/gif/), [BMP](https://docs.fileformat.com/image/bmp/), [WMF](https://docs.fileformat.com/image/wmf/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/).
 
+This guide shows how to export a **specific cell range** from an Excel worksheet to PNG, PDF, CSV, and more than 20 additional formats using the Aspose.Cells Cloud API. For related operations such as exporting an entire worksheet or converting a workbook, see the **[Export Entire Worksheet](https://docs.aspose.cloud/cells/worksheets/worksheet-to-different-formats/)** and **[Convert Workbook to PDF](https://docs.aspose.cloud/cells/workbook/convert-to-pdf/)** pages.
+
 ## REST API
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetWithFormat) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+
+### Request parameters
+
+| Parameter            | Type   | Required | Description                                    |
+|----------------------|--------|----------|------------------------------------------------|
+| `name`               | string | Yes      | Workbook file name.                            |
+| `sheetName`          | string | Yes      | Target worksheet name.                         |
+| `format`             | string | Yes      | Desired output format (png, pdf, csv, …).      |
+| `area`               | string | No       | Cell range to export (e.g., `B3:K8`).          |
+| `verticalResolution`| int    | No       | Vertical DPI for raster formats.               |
+| `horizontalResolution`| int  | No       | Horizontal DPI for raster formats.             |
+| `folder`             | string | No       | Cloud storage folder that contains the file.   |
+| `storage`            | string | No       | Name of the storage service.                   |
+
+### Successful response
+
+* **200 OK** – Returns the requested file in binary format (PNG, PDF, CSV, etc.).
+
+### Error responses
+
+| Status Code | Description                              |
+|-------------|------------------------------------------|
+| 400         | Bad request – missing or invalid parameters. |
+| 401         | Unauthorized – authentication token is missing or invalid. |
+| 404         | Not found – specified workbook or worksheet does not exist. |
+| 500         | Internal server error – unexpected condition on the server. |
+
+**Example error payload**
+
+```json
+{
+  "error": {
+    "code": "InvalidParameter",
+    "message": "The 'area' parameter is malformed. Expected format: B3:K8."
+  }
+}
+```
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 

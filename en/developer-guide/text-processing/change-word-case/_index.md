@@ -5,7 +5,7 @@ linktitle: "Word Case"
 type: docs
 url: /change-word-case/
 keywords: "change word case API, Aspose.Cells, Excel case conversion, uppercase, lowercase, proper case, sentence case, text formatting"
-description: "Easily convert text case in Excel files using Aspose.Cells Cloud API. Supports Uppercase, Lowercase, Proper Case, and Sentence Case. Get code samples in C#, Java, Python & more."
+description: "Easily convert text case in Excel files using Aspise.Cells Cloud API. Supports Uppercase, Lowercase, Proper Case, and Sentence Case. Get code samples in C#, Java, Python & more."
 weight: 100
 ---
 
@@ -18,9 +18,11 @@ Use the Aspose.Cells Cloud Web API to instantly convert text case in your spread
 - **ProperCase** – first letter of each word upper‑cased, the remainder lower‑cased.
 - **SentenceCase** – first letter of each sentence upper‑cased, the remainder lower‑cased.
 
-![Before/After case conversion screenshot](images/result.png)
+<img src="images/result.png" alt="Before/After case conversion screenshot" width="800" height="450" />
 
 ### Web API
+
+**Authentication** – The API requires an OAuth 2.0 Bearer token passed in the `Authorization` header (e.g., `Authorization: Bearer {access_token}`). See the Aspose Cloud authentication guide for details.
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/wordcase
@@ -41,16 +43,12 @@ PUT https://api.aspose.cloud/v4.0/cells/content/wordcase
 
 ### Response
 
+On success the service returns **200 OK** (or **202 Accepted**) with a JSON payload containing the URL or binary stream of the processed workbook.
+
 ```json
-[
-  {
-    "Name": "ResponseFile",
-    "DataType": {
-      "Identifier": "File",
-      "Reference": "Stream"
-    }
-  }
-]
+{
+  "FileUrl": "https://example.com/output/updatedWorkbook.xlsx"
+}
 ```
 
 ### Error Codes
@@ -111,11 +109,11 @@ PUT https://api.aspose.cloud/v4.0/cells/content/wordcase
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/UpdateWordCase) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/#/TextProcessingController/UpdateWordCase" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement **UpdateWordCase** for cells with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement **UpdateWordCase** for cells with minimal code. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to make calls to Aspose.Cells web services using various SDKs:
 

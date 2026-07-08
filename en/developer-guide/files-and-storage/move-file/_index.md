@@ -1,11 +1,11 @@
 ---
 title: "Aspose.Cells Cloud Move File API – Interface for Fast Moving of Files in the Cloud"
 second_title: "Document"
-ArticleTitle: "Cloud-based Excel File Efficient Management Solution – Interface for Fast Moving of Files in the Cloud."
+ArticleTitle: "Cloud-based Excel File Efficient Management Solution – Interface for Fast Moving of Files in the Cloud"
 linktitle: "Move File"
 type: docs
 url: /move-file/
-keywords: "Aspose.Cells, Move File API, Cloud Storage, REST API, Excel Cloud, File Management"
+keywords: "Aspose.Cells, Move File API, Cloud Storage, Excel API, File Management"
 description: "How to move files between folders in Aspose.Cells Cloud storage using the v4.0 Move File API – endpoint, parameters, examples, and SDK links."
 weight: 100
 ---
@@ -40,6 +40,33 @@ A successful request returns **HTTP 200 OK** with an empty JSON body.
 {}
 ```
 
+**Possible HTTP status codes**
+
+| Status Code | Description                         |
+| ----------- | ----------------------------------- |
+| 200 OK      | File moved successfully.            |
+| 400 Bad Request | Invalid request parameters.      |
+| 401 Unauthorized | Authentication failed.          |
+| 404 Not Found   | Source file not found.            |
+| 500 Internal Server Error | Server error.          |
+
+**cURL example**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/file/move/{srcPath}?destPath={destPath}" \
+     -H "Authorization: Bearer {access_token}"
+```
+
+**Example error payload**
+
+```json
+{
+  "error": "File not found",
+  "code": 404,
+  "message": "The specified source file does not exist."
+}
+```
+
 ## OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/MoveFile) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
@@ -49,3 +76,26 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileControlle
 Using an SDK is the best way to speed up the development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+
+**C# example**
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model.Requests;
+
+var apiInstance = new CellsApi("client_id", "client_secret");
+var request = new MoveFileRequest(srcPath, destPath);
+apiInstance.MoveFile(request);
+```
+
+**Python example**
+
+```python
+from asposecellscloud import CellsApi, MoveFileRequest
+
+api_instance = CellsApi(client_id="client_id", client_secret="client_secret")
+request = MoveFileRequest(src_path=src_path, dest_path=dest_path)
+api_instance.move_file(request)
+```
+
+**See also:** [Copy File](/copy-file/), [Delete File](/delete-file/)

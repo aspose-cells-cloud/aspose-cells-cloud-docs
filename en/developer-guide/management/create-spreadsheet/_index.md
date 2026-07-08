@@ -6,13 +6,15 @@ linktitle: "Create Spreadsheet"
 type: docs
 url: /create-spreadsheet/
 keywords: "create spreadsheet api, Aspose.Cells Cloud, generate Excel, Excel template API, cloud spreadsheet creation, Excel generation API, workbook creator, dynamic spreadsheet API"
-description: "Learn how to create blank or template‑based Excel workbooks with Aspose.Cells Cloud API (v5.0). Includes endpoint, parameters, error codes, authentication steps, and SDK examples."
+description: "Learn how to create blank or template‑based Excel workbooks using Aspose.Cells Cloud API (v5.0). Includes endpoint, parameters, error codes, authentication steps, and SDK examples."
 weight: 100
 ---
 
 Programmatically create new Excel spreadsheets using Aspose.Cells Cloud API. Generate blank workbooks or instantiate files from custom templates. The RESTful API enables automated Excel file creation, perfect for report generation, document automation, and data‑processing workflows.
 
 ## **Create Spreadsheet API**
+
+To use the Create Spreadsheet API you must have a valid Aspose Cloud account and obtain an access token. Include the token in the `Authorization` header as `Bearer <your_access_token>`. Additionally, ensure that the target storage (specified by `outStorageName`) is configured in your Aspose Cloud storage settings.
 
 ### Web API
 
@@ -47,16 +49,20 @@ PUT https://api.aspose.cloud/v5.0/cells/spreadsheet/create
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token or incorrect client ID/secret.
-- **404 Not Found** – The specified spreadsheet or template file is not accessible.
-- **500 Server Error** – An internal error occurred while processing the request.
+| Code | Description                                            | Resolution                                                                                     |
+|------|--------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| 400  | Invalid Aspose.Cells Cloud API URI.                    | Verify the request URL and query parameters.                                                  |
+| 401  | Invalid access token or incorrect client ID/secret.   | Obtain a fresh access token and check credentials.                                            |
+| 404  | The specified spreadsheet or template file is not accessible. | Ensure the file exists in the indicated storage path and the name is correct.                |
+| 500  | An internal error occurred while processing the request. | Retry later or contact support with the request ID.                                           |
 
 ## Where should we use the Create Spreadsheet API?
 
 - **Initialization of the Automated Reporting System** – Create a new blank workbook or generate a report file from a standard template at the start of each daily/weekly automation cycle.
 - **User Self‑service Portal** – Allow customers to select a template (quotation, project schedule, etc.) and instantly download a customized Excel file.
 - **Batch Data Export and Distribution** – Produce separate workbooks with a uniform format for each exported data set, simplifying downstream distribution and processing.
+
+For subsequent operations such as adding worksheets or populating cells, see the **Add Worksheet API**, **Update Cell API**, and **Export Workbook API**.
 
 ## Why should you use the Create Spreadsheet API?
 

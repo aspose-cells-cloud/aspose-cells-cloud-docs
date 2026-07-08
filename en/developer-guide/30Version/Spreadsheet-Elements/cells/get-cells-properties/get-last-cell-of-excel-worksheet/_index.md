@@ -3,11 +3,38 @@ title: "Get Last Cell of Excel Worksheet – Aspose.Cells Cloud API (v4.0)"
 type: docs
 url: /get-last-cell-of-excel-worksheet/
 weight: 30
-keywords: "Aspose.Cells, Cloud API, Excel last cell, endcell, REST"
-description: "Retrieve the address of the last used cell in an Excel worksheet with Aspose.Cells Cloud REST API (v4.0). Includes cURL request, JSON response, and SDK samples."
+keywords: "Aspose.Cells Cloud, Excel API, get end cell, last cell worksheet, REST API"
+description: "Retrieve the address of the end cell of an Excel worksheet using Aspose.Cells Cloud REST API v4.0. Includes request details, cURL example, JSON response, and SDK samples."
+ArticleTitle: "Get End Cell of an Excel Worksheet – Aspose.Cells Cloud API v4.0"
 ---
 
 This REST API returns the **endcell** of an Excel worksheet when the `cellOrMethodName` parameter is set to `endcell`.
+
+**Request Method:** `GET`  
+**Endpoint:** `/cells/{fileName}/worksheets/{sheetName}/cells/endcell`  
+
+**Path Parameters**
+
+| Parameter | Type   | Description                                 |
+|-----------|--------|---------------------------------------------|
+| `fileName`| string | Name of the Excel file (including extension). |
+| `sheetName`| string | Name of the worksheet from which to obtain the end cell. |
+
+**Query Parameters (optional)**
+
+| Parameter | Type   | Description                                          |
+|-----------|--------|------------------------------------------------------|
+| `folder`  | string | Path to the folder in cloud storage where the file is located. |
+| `storage` | string | Name of the storage. If omitted, the default storage is used. |
+
+**Possible Status Codes**
+
+| Code | Meaning                                 |
+|------|-----------------------------------------|
+| 200  | Success – the response contains the end‑cell information. |
+| 401  | Unauthorized – invalid or missing access token. |
+| 404  | Not Found – the specified file or worksheet does not exist. |
+| 500  | Internal Server Error – an unexpected error occurred on the server. |
 
 - **cURL Example.**
 
@@ -81,7 +108,7 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/myWorkbook.xlsx/worksheets/Shee
 
 - **Cloud SDK Family**
 
-Using an SDK is the best way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

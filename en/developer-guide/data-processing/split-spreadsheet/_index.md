@@ -5,7 +5,7 @@ ArticleTitle: "Excel Split Tool – Divide Local Spreadsheet into Files in 30+ F
 linktitle: "Split Spreadsheet"
 type: docs
 url: /split-spreadsheet/
-keywords: "split excel, excel api, aspose cells, spreadsheet split, export pdf, csv, json"
+keywords: "split, excel, aspose cells, spreadsheet API, export pdf, csv, json"
 description: "Split an Excel workbook locally into separate files using Aspose.Cells Cloud API. Export to 30+ formats (PDF, CSV, JSON, XLSX, HTML) without uploading to cloud."
 weight: 100
 ---
@@ -48,12 +48,24 @@ PUT https://api.aspose.cloud/v4.0/cells/split/spreadsheet
 ]
 ```
 
+On success the API returns **HTTP 200 OK** with a stream of the generated file(s). The response body contains a JSON array where each element represents a split file, including its name and a download link.
+
 ### Error Codes
 
 - **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
 - **401 Unauthorized**: Invalid access token or invalid client ID and secret.
 - **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet encountered an anomaly while obtaining calculation data.
+
+#### Status Code Summary
+
+| Code | Description                                   |
+|------|-----------------------------------------------|
+| 200  | Success – split files returned as a stream    |
+| 400  | Bad request – malformed URI or parameters     |
+| 401  | Unauthorized – invalid authentication token   |
+| 404  | Not found – spreadsheet file unavailable      |
+| 500  | Internal server error – processing failure    |
 
 ## Where should we use the Split Spreadsheet API?
 
@@ -113,3 +125,8 @@ The following code examples illustrate how to invoke Aspose.Cells web services u
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SplitLocalFile.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+**Related articles:**  
+- Merge Spreadsheets – `/cells/merge-spreadsheets/`  
+- Split Remote Spreadsheet – `/cells/split-remote-spreadsheet/`  
+- Conversion Overview – `/cells/conversion/`

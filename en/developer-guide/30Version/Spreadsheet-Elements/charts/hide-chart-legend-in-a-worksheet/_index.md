@@ -10,6 +10,11 @@ description: "Learn how to hide a chart legend in an Excel worksheet using the A
 
 This REST API hides the legend in a chart. A **chart legend** is the box that identifies the data series plotted in the chart.
 
+The API requires a valid Aspose Cloud JWT token, the workbook must be uploaded to Aspose Cloud storage, and the API version used is **v3.0**.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 ## REST API
 
 ```http

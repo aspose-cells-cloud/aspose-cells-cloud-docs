@@ -6,12 +6,16 @@ type: docs
 url: /columns/delete/
 aliases:
   [/delete-column-from-an-excel-worksheet/, /delete-column-from-a-worksheet/]
-keywords: "Delete a Column, Aspose.Cells Cloud, Excel API, REST, Spreadsheet"
+keywords: "Delete a Column, Aspose.Cells Cloud, Excel API, REST, Spreadsheet, Excel worksheet, column deletion"
 description: "Learn how to delete one or more columns from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request syntax, required parameters, authentication, error handling, and sample code in multiple SDKs."
+ArticleTitle: "Delete Column from Excel Worksheet using Aspose.Cells Cloud API"
 weight: 80
 ---
 
-This REST API deletes **one or more columns** in an Excel worksheet.
+This REST API deletes **one or more columns** in an Excel worksheet. It is part of the Aspose.Cells Cloud API for Excel worksheets, enabling developers to programmatically delete columns via a RESTful call.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 

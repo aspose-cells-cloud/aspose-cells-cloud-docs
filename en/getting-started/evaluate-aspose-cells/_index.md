@@ -18,6 +18,9 @@ keywords:
 
 You can evaluate the **Aspose.Cells Cloud** REST APIs by creating a free‑trial account on the Aspose Cloud Dashboard. After registration, you will receive a **Client Id** and **Client Secret** that allow up to 150 API calls per month.
 
+**Prerequisites**  
+Before you begin, ensure you have an active internet connection and a supported development environment. The API can be called directly via HTTP, or you can use one of the Aspose.Cells SDKs (e.g., .NET, Java, Python, PHP) for easier integration.
+
 **Quick start steps**
 
 1. **Create a free‑trial account** – visit the [Aspose Cloud Dashboard](https://dashboard.aspose.cloud), sign up, and confirm your email address.  

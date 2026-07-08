@@ -11,9 +11,13 @@ aliases:
 keywords: "Aspose Cells delete background, Excel API delete background, Aspose.Cells Cloud, DELETE /cells background"
 description: "Remove a background image from an Excel workbook using Aspose.Cells Cloud API. Learn the DELETE endpoint, required parameters, cURL example, and SDK code in C#, Java, Python, and more."
 weight: 170
+ArticleTitle: "Delete Background Image from Excel Workbook using Aspose.Cells Cloud API"
 ---
 
 This REST API deletes the background image of an Excel workbook.
+
+**Prerequisites:**  
+To call this endpoint you must have a valid OAuth 2.0 access token and include the required headers `Authorization: Bearer <access_token>` and `Accept: application/json` in the request.
 
 ## REST API
 
@@ -21,14 +25,14 @@ This REST API deletes the background image of an Excel workbook.
 | ------------------------ | -------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | /cells/{name}/background | DELETE   | Delete background in an Excel file | [DeleteWorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground) |
 
-### **Query Parameter**
+### **Query Parameters**
 
 | Parameter Name | Type   | Description                                 | Required |
 | -------------- | ------ | ------------------------------------------- | -------- |
 | folder         | string | Folder that contains the original workbook. | No       |
 | storageName    | string | Name of the storage service to use.         | No       |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/DeleteWorkbookBackground) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The OpenAPI Specification defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool (a utility for transferring data with URLs) to access Aspose.Cells web services easily. The following example demonstrates how to call the Cloud API with cURL.
 
@@ -37,11 +41,15 @@ You can use the **cURL** command‑line tool (a utility for transferring data wi
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -X DELETE "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?folder=DotnetFiles" \
+curl -X DELETE "https://api.aspose.cloud/v3.0/cells/{name}/background?folder=DotnetFiles" \
      -H "accept: application/json" \
      -H "Authorization: Bearer <access_token>" \
      -H "x-aspose-client: Containerize.Swagger"
 ```
+
+*Sample Request URL (replace `{name}` with your workbook file name):*  
+
+`https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?folder=MyFolder`
 
 {{< /tab >}}
 
@@ -53,6 +61,16 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?folder
   "Status": "OK"
 }
 ```
+
+**HTTP Status Codes**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | Background deleted successfully.         |
+| 400  | Bad request – missing or invalid parameters. |
+| 401  | Unauthorized – invalid or missing token. |
+| 404  | Workbook not found or no background set. |
+| 500  | Internal server error.                   |
 
 {{< /tab >}}
 
@@ -117,3 +135,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+*Notes:*  
+- If the workbook does not contain a background image, the API returns `200 OK` with no changes (idempotent).  
+- Ensure the `folder` parameter points to the correct storage location; otherwise a `404 Not Found` may be returned.

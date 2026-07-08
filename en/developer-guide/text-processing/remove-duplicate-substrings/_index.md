@@ -1,12 +1,12 @@
 ---
 title: "Aspose.Cells Cloud Remove Duplicate Substrings Web API - Deduplicate Repeated Text in Excel"
 second_title: "Document"
-ArticleTitle: "Excel Duplicate Substring Remover - Clean Repeated Text in Cells"
+ArticleTitle: "Excel Duplicate Substring Remover – Clean Repeated Text in Cells"
 linktitle: "Remove Duplicate Substrings"
 type: docs
 url: /remove-duplicate-substrings/
-keywords: "Aspose.Cells remove duplicate substrings, Excel deduplication API, clean repeated text in cells, Excel text cleaning, substring removal, duplicate text removal, Excel data cleaning, Aspose.Cells Cloud API"
-description: "Use Aspose.Cells Cloud API to automatically detect and remove duplicate substrings in Excel cells while preserving formatting, formulas, and data validation."
+keywords: "Aspose.Cells, duplicate substrings, Excel API, text cleaning, cloud"
+description: "Remove duplicate substrings from Excel cells via Aspose.Cells Cloud API while preserving formatting and validation."
 weight: 100
 ---
 
@@ -16,35 +16,37 @@ Remove duplicate substrings from Excel cells with intelligent detection. Keep or
 
 The Repeat Substring Cleaner API removes duplicate substrings within individual cells of an Excel range while preserving cell formatting, data validation, and other workbook structures. It processes each cell independently, keeping only the first occurrence of each duplicate substring.
 
+**Prerequisites** – Ensure you have a valid Aspose Cloud access token, the required SDK version installed, and sufficient storage space in your Aspose Cloud account before calling the API.
+
 ### **Data Source Options**
 
 | Field      | Type   | Required | Description                                             |
 | ---------- | ------ | -------- | ------------------------------------------------------- |
-| `workbook` | file   | Yes      | Excel workbook file (.xlsx, .xlsm)                      |
+| `workbook` | file   | Yes      | Excel workbook file (.xlsx, .xlsm)                     |
 | `range`    | string | Yes      | Target range to process (e.g., "A1:D100", "Sheet1!A:D") |
 
 ### **Delimiter Options**
 
-| Field                   | Type    | Default    | Description                                                                                                                                              |
-| ----------------------- | ------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `delimiters`            | string  | `"preset"` | Options: `preset`, `custom`, `comma`, `semicolon`, `space`, `tab`, `line-break` or a custom delimiter string (treats multiple characters as a composite) |
-| `treatConsecutiveAsOne` | boolean | `false`    | Collapse adjacent delimiters into a single separator                                                                                                     |
-| `ignoreCase`            | boolean | `false`    | Ignore case when comparing strings                                                                                                                       |
+| Field                               | Type    | Default    | Description                                                                                                                                               |
+| ----------------------------------- | ------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `delimiters`                        | string  | `"preset"` | Options: `preset`, `custom`, `comma`, `semicolon`, `space`, `tab`, `line-break` or a custom delimiter string (multiple characters are treated as a composite) |
+| `treatConsecutiveDelimitersAsOne`  | boolean | `false`    | Collapse adjacent delimiters into a single separator                                                                                                      |
+| `caseSensitive`                    | boolean | `false`    | Determines whether the comparison is case‑sensitive. When `false`, case is ignored during duplicate detection.                                            |
 
 ## **RemoveDuplicateSubstrings API**
 
 ### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings
+PUT https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings
 ```
 
 ### The request parameters of **RemoveDuplicateSubstrings** API are
 
 | Parameter Name                  | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                                       |
-| :------------------------------ | :------ | :------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| :------------------------------ | :------ | :------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Spreadsheet                     | File    | FormData                   | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                                                         |
-| delimiters                      | String  | Query                      | Specifies one or more delimiter characters used to split cell content into substrings for duplicate detection and removal. Multiple delimiters can be specified (e.g., `",;       | "`). |
+| delimiters                      | String  | Query                      | Specifies one or more delimiter characters used to split cell content into substrings for duplicate detection and removal. Multiple delimiters can be specified (e.g., `",;"`). |
 | treatConsecutiveDelimitersAsOne | Boolean | Query                      | When set to `true`, consecutive delimiter characters are treated as a single separator. When `false`, each delimiter is processed individually.                                   |
 | caseSensitive                   | Boolean | Query                      | When `true`, duplicate detection considers letter case (e.g., "Text" ≠ "text"). When `false`, case is ignored during duplicate comparison.                                        |
 | worksheet                       | String  | Query                      | _(Optional)_ The name of the worksheet where duplicate substring removal will be applied. If omitted, the operation applies to the first worksheet.                               |
@@ -54,18 +56,23 @@ PUT http://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings
 | region                          | String  | Query                      | _(Optional)_ Sets the locale for text processing, which may affect delimiter interpretation and case‑sensitivity rules for certain languages (e.g., `"en-US"`, `"tr-TR"`).        |
 | password                        | String  | Query                      | _(Optional)_ If the uploaded spreadsheet is password‑protected, provide the password to open and process the file.                                                                |
 
+**Example request (cURL)**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings?delimiters=comma&caseSensitive=false" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@Sample.xlsx" \
+     -F "range=A1:D100"
+```
+
 ### **Response**
 
 ```json
-[
-  {
-    "Name": "ResponseFile",
-    "DataType": {
-      "Identifier": "File",
-      "Reference": "Stream"
-    }
-  }
-]
+{
+  "FileName": "Sample_processed.xlsx",
+  "DownloadUrl": "https://api.aspose.cloud/v4.0/storage/file/Sample_processed.xlsx",
+  "Status": "OK"
+}
 ```
 
 ### Error Codes
@@ -75,6 +82,17 @@ PUT http://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings
 - **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet encountered an anomaly while obtaining calculation data.
 
+**Status‑code table**
+
+| Code | Meaning                                 | Description                                                                                     |
+|------|-----------------------------------------|-------------------------------------------------------------------------------------------------|
+| 200  | OK                                      | The request succeeded and the processed workbook is returned.                                   |
+| 202  | Accepted                                | The request is accepted for asynchronous processing.                                            |
+| 400  | Bad Request                             | The request is malformed or contains invalid parameters.                                        |
+| 401  | Unauthorized                            | Authentication failed or token is missing/invalid.                                              |
+| 404  | Not Found                               | The specified workbook or resource could not be found.                                          |
+| 500  | Internal Server Error                   | An unexpected error occurred on the server side.                                                |
+
 ## Where should we use the Remove Duplicate Substrings API?
 
 - **Data Cleaning & Standardization Scenarios**: Clean up tags like `"VIP,Premium,VIP,Gold"` → `"VIP,Premium,Gold"`.
@@ -83,12 +101,11 @@ PUT http://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings
 
 ## Why should you use the Remove Duplicate Substrings API?
 
-- **Automate Manual, Error‑Prone Work**: Eliminate tedious editing, reduce human error, and scale instantly.
-- **Preserve Data Integrity**: Cell colors, fonts, borders, and conditional formatting remain unchanged; drop‑down lists and validation rules are preserved.
-- **Flexible & Intelligent Processing**: Delimiter‑agnostic, case‑sensitive control, header protection.
-- **Seamless Integration**: API‑first design, language‑agnostic, returns a clean file.
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom solutions, this significantly reduces development workload.
-- **Cost‑Effective**: You can remove duplicate substrings without first uploading the workbook, which saves storage space and reduces costs.
+- **Automate Manual Tasks**: Eliminate tedious editing and reduce human error.  
+- **Preserve Data Integrity**: Cell colors, fonts, borders, and conditional formatting remain unchanged; drop‑down lists and validation rules are preserved.  
+- **Flexible Processing**: Delimiter‑agnostic with optional case‑sensitivity control and header protection.  
+- **Developer‑Friendly**: Aspose.Cells Cloud provides SDK libraries in multiple languages, enabling quick development with comprehensive documentation.  
+- **Cost‑Effective**: The operation is performed in the cloud, avoiding the need to store intermediate files locally.  
 
 ## OpenAPI Specification
 

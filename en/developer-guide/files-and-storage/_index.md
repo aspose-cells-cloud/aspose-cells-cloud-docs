@@ -6,8 +6,8 @@ linktitle: "Files and Storage"
 type: docs
 url: /files-and-storage/
 aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
-keywords: "Aspose Cells Cloud, file storage API, upload Excel, download Excel, copy file, move folder, REST API, cURL"
-description: "Learn how to manage Excel files in Aspose.Cells Cloud storage: upload, download, copy, move, delete, and query folders via RESTful API. Includes cURL examples, parameters, and error handling."
+keywords: "Aspose.Cells Cloud, file storage API, upload Excel file, download Excel file, copy file, move file, delete file, folder management, REST API, cURL examples"
+description: "Comprehensive guide to managing Excel files and folders in Aspose.Cells Cloud storage. Includes upload, download, copy, move, delete, and folder operations with cURL examples, required parameters, and authentication notes."
 weight: 100
 ---
 
@@ -15,7 +15,9 @@ Aspose.Cells Cloud provides a comprehensive set of helper functions for working 
 
 **Aspose.Cells Cloud offers a range of file, folder, and storage operation APIs.**
 
-> **Note:** All API calls must use **HTTPS**.
+> **Note:** All API calls must use **HTTPS**. See the [Authentication Guide](/cells/authentication/) for details on obtaining a JWT token.
+
+**Prerequisites:** To use these APIs you must have a valid Aspose Cloud account, obtain a JWT access token, and have a storage location configured (either Aspose Cloud Storage or a connected third‑party storage).
 
 ## **How to Upload a File**
 
@@ -65,6 +67,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MyFolder/Report.xlsx" 
 {{< /tab >}}
 {{< /tabs >}}
 
+*Note: The maximum file size for upload is 100 MB. Rate limits may apply.*
+
 ## **How to Download a File**
 
 ### Download File API Information
@@ -106,6 +110,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MyFolder/Report.xlsx" 
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*Note: The response contains the file’s binary stream. Save the output to a file when using cURL (`-o filename.xlsx`).*
 
 ## **How to Delete a File**
 
@@ -149,6 +155,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MyFolder/OldReport.xls
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*Note: Deleting a file is permanent; ensure you have a backup if needed.*
 
 ## **How to Copy a File**
 
@@ -195,6 +203,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/copy/MyFolder/Report.x
 {{< /tab >}}
 {{< /tabs >}}
 
+*Note: The copy operation does not remove the source file.*
+
 ## **How to Move a File**
 
 ### Move File API Information
@@ -240,6 +250,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/move/MyFolder/Report.x
 {{< /tab >}}
 {{< /tabs >}}
 
+*Note: Moving a file retains the file’s version history.*
+
 ## **How to Create a Folder**
 
 ### Create Folder API Information
@@ -283,6 +295,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/newfolder" \
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*Note: Folder paths are case‑sensitive.*
 
 ## **How to Get Files in a Folder**
 
@@ -333,6 +347,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
 {{< /tab >}}
 {{< /tabs >}}
 
+*Note: The response lists both files and sub‑folders within the specified path.*
+
 ## **How to Delete a Folder**
 
 ### Delete Folder API Information
@@ -375,6 +391,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*Note: Deleting a folder with `recursive=true` removes all its contents permanently.*
 
 ## **How to Copy a Folder**
 
@@ -420,6 +438,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/copy/srcfolder?destP
 {{< /tab >}}
 {{< /tabs >}}
 
+*Note: The copy operation creates a new folder with the same contents as the source.*
+
 ## **How to Move a Folder**
 
 ### Move Folder API Information
@@ -463,6 +483,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/move/desfolder?destP
 
 {{< /tab >}}
 {{< /tabs >}}
+
+*Note: Moving a folder retains its internal structure and file versions.*
 
 ## **How to Check if Storage Exists**
 

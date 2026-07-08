@@ -5,8 +5,8 @@ ArticleTitle: "How to Export a Remote Spreadsheet Range to Other Formats: Step�
 linktitle: "Export Range as Format"
 type: docs
 url: /export-range-as-format/
-keywords: "Aspose.Cells, Export Range, Cloud API, Excel to PDF, Excel to CSV, Spreadsheet conversion"
-description: "Convert a specific Excel range stored in Aspose Cloud to PDF, PNG, CSV or other formats. Learn the endpoint, parameters, sample code, and error handling."
+keywords: "Aspose Cells, Export Excel Range, Convert Excel to PDF, Convert Excel to PNG, Convert Excel to CSV, Cloud API, Spreadsheet conversion"
+description: "Learn how to convert a specific Excel range stored in Aspose Cells Cloud to PDF, PNG, CSV or other formats. Includes endpoint details, parameters, sample requests, response handling, and error information."
 weight: 100
 ---
 
@@ -43,6 +43,25 @@ The API returns a binary stream containing the exported file.
 - **Content‑Type** – Corresponds to the requested format (e.g., `application/pdf`).
 - **Response body** – The file data can be saved directly to disk or streamed to another service.
 
+**Sample Request**
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/Book1.xlsx/worksheets/Sheet1/ranges/A1:C12?format=pdf&outPath=Exported/A1_C12.pdf" \
+     -H "Authorization: Bearer {access_token}" \
+     -o A1_C12.pdf
+```
+
+**Sample Response**
+
+The command above writes the binary PDF data to `A1_C12.pdf`. For error scenarios the service returns a JSON payload similar to:
+
+```json
+{
+  "code": "InvalidRequest",
+  "message": "The requested format is not supported."
+}
+```
+
 ```json
 [
   {
@@ -57,10 +76,20 @@ The API returns a binary stream containing the exported file.
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.
-- **404 Not Found** – The spreadsheet file is not accessible.
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
+- **404 Not Found** – The spreadsheet file is not accessible.  
 - **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
+
+**HTTP Status‑Code Summary**
+
+| Status | Description                                   |
+| ------ | --------------------------------------------- |
+| 200    | Successful export; binary file returned.      |
+| 400    | Bad request – malformed URI or parameters.    |
+| 401    | Unauthorized – authentication failure.        |
+| 404    | Not found – workbook or worksheet missing.    |
+| 500    | Internal server error – processing failure.   |
 
 ## Where should you use the Export Range to another format API?
 
@@ -104,7 +133,7 @@ The API returns a binary stream containing the exported file.
 - **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development with comprehensive documentation. Compared to building custom chart‑rendering solutions, this significantly reduces development workload.
 - **Reduced Labor Costs** – Less need for personnel dedicated to document consolidation.
 - **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.
-- **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility issues.
+- **No Server Maintenance** – No servers to maintain, no software updates, and no compatibility issues.
 - **Preserves Complex Excel Formatting** – Output files retain the original spreadsheet’s formatting.
 
 ## How to Use the Export Spreadsheet Range as Format API with SDKs?

@@ -6,11 +6,16 @@ type: docs
 url: /document-properties/update/
 aliases: [/set-a-particular-document-property/]
 keywords: "Aspose.Cells, Cloud API, Update Document Property, Excel metadata, REST API, SDK examples"
-description: "Learn how to set or create a document property in an Excel workbook using Aspose.Cells Cloud REST API. Includes HTTPS endpoint, required parameters, cURL sample, error codes, and SDK snippets for C#, Java, Python, and more."
+description: "Learn how to set or create a document property in an Excel workbook using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL sample, error codes, and SDK snippets."
 weight: 30
+ArticleTitle: "Aspose.Cells Cloud API – Update (Set) Document Property"
 ---
 
 This REST API allows you to **set** or **create** a document property.
+
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -37,7 +42,7 @@ A **Document Property** is a name/value pair stored in the workbook’s metadata
 - **BuiltIn** _(string, optional)_ – Indicates whether the property is built‑in.
 - **Link** _(object, optional)_ – Hyperlink information with fields `Href`, `Rel`, `Title`, and `Type`.
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Properties/PutDocumentProperty) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+<a href="https://apireference.aspose.cloud/cells/#/Properties/PutDocumentProperty" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -61,7 +66,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author
 ```json
 {
   "Code": 200,
-  "Status": "Created"
+  "Status": "OK"
 }
 ```
 
@@ -82,7 +87,7 @@ The API can return the following error responses. Handle them according to your 
 
 ## Cloud SDK Family
 
-Using an SDK is the fastest way to develop against the API. An SDK handles low‑level details so you can focus on your project logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop against the API. An SDK handles low‑level details so you can focus on your project logic. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

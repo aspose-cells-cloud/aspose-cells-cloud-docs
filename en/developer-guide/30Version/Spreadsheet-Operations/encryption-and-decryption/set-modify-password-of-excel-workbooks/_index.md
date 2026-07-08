@@ -7,12 +7,17 @@ url: /workbook/password/modify/
 aliases:
   - /set-modify-password-of-excel-workbooks/
   - /workbook/modify-password/
-keywords: "modify Excel password, Aspose.Cells Cloud, write protection, REST API, Excel workbook"
-description: "Change the write‑protection password of an Excel workbook via Aspose.Cells Cloud REST API (v3.0). Includes cURL and SDK examples."
+keywords: "Excel password, Aspose.Cells Cloud, write‑protection, REST API, modify workbook password"
+description: "Change the write‑protection password of an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes cURL and SDK examples."
 weight: 100
+ArticleTitle: "Modify Password Protection of an Excel Workbook – Aspose.Cells Cloud"
 ---
 
 This REST API **changes the write‑protection password** of an existing Excel workbook.
+
+Updating the write‑protection password programmatically allows you to rotate or replace passwords without downloading the file. It is especially handy when managing secured workbooks stored in Aspose.Cells Cloud storage.
+
+**Prerequisites**: You must have a valid JWT access token and the workbook must already exist in the specified storage folder. For details on obtaining a token, see the [Authentication guide](/authentication/). To learn how to initially protect a workbook, refer to the [Protect an Excel File](/workbook/password/protect/) documentation.
 
 ## REST API
 

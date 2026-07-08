@@ -8,11 +8,14 @@ aliases:
   - /convert-worksheet-to-image/
   - /worksheets/to-image/
 keywords: "Aspose.Cells, worksheet conversion, REST API, cURL, SDK, PDF, PNG, CSV"
-description: "Learn how to convert a single worksheet from an Excel workbook to PDF, PNG, CSV, and 15+ other formats using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, and full parameter reference."
+description: "Learn how to convert a single worksheet from an Excel workbook to PDF, PNG, CSV, and more than 15 other formats using the Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, and a full parameter reference."
 weight: 130
+ArticleTitle: "Convert Worksheet to PDF, PNG, CSV & More – Aspose.Cells Cloud API"
 ---
 
 **Worksheet conversion API** – The `GET /cells/{name}/worksheets/{sheetName}` endpoint converts a single worksheet (a sheet inside an Excel workbook) to another file type.
+
+> **Prerequisite:** You must have a valid JWT token and the workbook stored in a supported Aspose Cloud storage location before invoking this endpoint.
 
 Supported **importable** formats (the worksheet can be read from):
 

@@ -5,7 +5,7 @@ ArticleTitle: "Cloud-based Excel File Management – Quickly Move Folders in the
 linktitle: "Move Folder"
 type: docs
 url: /move-folder/
-keywords: "Aspose.Cells, Move Folder API, Cloud Storage, Excel REST API, Files Management"
+keywords: "Aspose.Cells, Move Folder API, Cloud Storage, Excel REST API, Files Management, Excel API, Cloud Excel"
 description: "Learn how to move folders in Aspose.Cells Cloud storage via the RESTful Move Folder API. Includes endpoint, parameters, sample cURL, error codes, and SDK examples for C#, Java, Python, and more."
 weight: 100
 ---
@@ -16,6 +16,13 @@ weight: 100
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
+```
+
+**Example cURL request**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/FolderA?destPath=FolderB" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
 ### **Function Description**
@@ -59,3 +66,24 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderControl
 ## Excel API SDK
 
 Using an SDK is the best way to speed up development. An SDK abstracts low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+**C# example**
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+
+var apiInstance = new FolderApi();
+var srcPath = "FolderA";
+var destPath = "FolderB";
+
+try
+{
+    apiInstance.MoveFolder(srcPath, destPath);
+    Console.WriteLine("Folder moved successfully.");
+}
+catch (Exception e)
+{
+    Console.WriteLine("Exception when calling FolderApi.MoveFolder: " + e.Message);
+}
+```

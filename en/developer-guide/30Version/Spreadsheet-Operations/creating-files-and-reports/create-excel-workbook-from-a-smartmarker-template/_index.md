@@ -8,12 +8,17 @@ aliases:
   - /create-excel-workbook-from-a-smartmarker-template/
   - /workbook/smartmarker/
   - /workbook/create/smartmarker/
-keywords: "Excel, Smart Marker, Aspose.Cells Cloud, REST API, Workbook, SDK, API"
+keywords: "Excel, Smart Marker, Aspose.Cells Cloud, REST API, Workbook, SDK, API, Report Generation"
 description: "Learn how to generate Excel workbooks from Smart Marker templates using the Aspose.Cells Cloud REST API. Includes request/response details, cURL example, and SDK code samples."
 weight: 40
+ArticleTitle: "Build Excel Reports with Smart Marker Templates – Aspose.Cells Cloud API Guide"
 ---
 
 This REST API creates a workbook using a Smart Marker template.
+
+**Prerequisites:** You must have a valid Aspose Cloud authentication token, a storage location configured, and the source workbook uploaded to that storage before invoking this operation.
+
+For more details on creating workbooks from templates, see the [Create Excel file with a template](/create-excel-workbook-from-template/) guide.
 
 ## REST API
 
@@ -139,3 +144,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**See also:** [Smart Marker Syntax](/smart-marker-syntax/), [Advanced Data Mapping](/advanced-data-mapping/), and [Create Excel file with a template](/create-excel-workbook-from-template/).

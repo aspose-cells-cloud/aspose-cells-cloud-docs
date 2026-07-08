@@ -5,12 +5,15 @@ linktitle: "Add OLE object"
 type: docs
 url: /oleobjects/add/
 aliases: [/add-oleobject-to-excel-worksheet/]
-keywords: "Add OLE object, Excel worksheet, Aspose.Cells Cloud, REST API, SDK"
+keywords: "Add OLE object, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "Use Aspose.Cells Cloud REST API to add OLE objects to Excel worksheets. The API can be called directly or through SDKs for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
+ArticleTitle: "Add OLE Object to Excel Worksheet with Aspose.Cells Cloud API"
 weight: 20
 ---
 
 This REST API adds an **OLE object** to an Excel worksheet.
+
+**Prerequisites** – You must have a valid JWT authentication token, and any source files referenced by `oleFile` or `imageFile` should be uploaded to the specified storage location before invoking the endpoint.
 
 ## REST API
 
@@ -33,6 +36,8 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 | imageFile       | string  | query    | Name of the preview image file.                    |
 | folder          | string  | query    | Folder that contains the workbook.                 |
 | storageName     | string  | query    | Name of the storage to use.                        |
+
+**Notes** – `upperLeftRow` and `upperLeftColumn` use zero‑based indexing. The `oleFile` (and optionally `imageFile`) must already exist in the target storage; otherwise the request will return an error.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -65,6 +70,18 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobje
 {{< /tab >}}
 
 {{< /tabs >}}
+
+![Screenshot showing an OLE object embedded in an Excel worksheet](/cells/images/ole-object-example.png)
+
+**Possible HTTP status codes**
+
+| Code | Description                                 |
+|------|---------------------------------------------|
+| 200  | OLE object added successfully.              |
+| 400  | Bad request – missing or invalid parameters.|
+| 401  | Unauthorized – invalid or missing JWT token.|
+| 404  | Not found – workbook, worksheet, or source file does not exist. |
+| 500  | Internal server error – unexpected failure. |
 
 ## Cloud SDK Family
 

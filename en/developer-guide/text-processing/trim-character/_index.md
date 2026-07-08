@@ -5,8 +5,8 @@ ArticleTitle: "Excel Data Cleaner - Trim Characters, Spaces & Line Breaks Automa
 linktitle: "Trim Character"
 type: docs
 url: /trim-character/
-keywords: "Excel text trimming API, remove extra spaces Excel, delete line breaks Excel, clean spreadsheet content, Aspose.Cells trim characters, Excel data cleaning tool, trim unnecessary characters, normalize cell formatting, Excel content cleanup API"
-description: "Clean Excel data by trimming extra spaces, removing line breaks, and eliminating unnecessary characters from selected cells with Aspose.Cells Trim Character API. Ensure consistent spreadsheet formatting and data quality."
+keywords: "Excel, text trimming, remove spaces, line breaks, Aspose.Cells, data cleaning, spreadsheet, normalize cell formatting"
+description: "Trim extra spaces, line breaks, and unwanted characters from Excel cells with Aspose.Cells Cloud API. Ensure clean, consistent spreadsheet data."
 weight: 100
 ---
 
@@ -31,10 +31,12 @@ Automatically trim unnecessary characters, extra spaces, and line breaks from Ex
 
 ## **TrimCharacter API**
 
+Before calling the API, ensure you have a valid Aspose Cloud account, a `client_id`/`client_secret`, and an access token with the **Cells** scope.
+
 ### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/content/trim
+PUT https://api.aspose.cloud/v4.0/cells/content/trim
 ```
 
 ### The request parameters of **trimCharacter** API are
@@ -70,6 +72,8 @@ PUT http://api.aspose.cloud/v4.0/cells/content/trim
 ]
 ```
 
+**Success example (HTTP 200):** The API returns a file stream containing the trimmed workbook.
+
 ### Error Codes
 
 - **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
@@ -86,22 +90,22 @@ PUT http://api.aspose.cloud/v4.0/cells/content/trim
 
 ## Why should you use the Trim Character API?
 
-- **Reduced Labor Costs**: Eliminate time-consuming manual efforts for data cleaning
+- **Reduced Labor Costs**: Eliminate time‑consuming manual efforts for data cleaning
 - **Reduced Error Cost**: Avoid analysis errors caused by formatting issues
 - Pay Per Use: No fixed fees, only the actual throughput is billed
 - **Zero Infrastructure Investment**: No need to maintain servers or software
 - **Multi-format Support**: Supports multiple format processing such as XLSX, XLS, CSV, ODS, etc
-- **Developer-Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
-- **Cost-Effective**: You can remove deduplicate characters without first uploading the workbook, which saves storage space and reduces costs.
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart rendering solutions, this significantly reduces the development workload.
+- **Cost‑Effective**: You can remove deduplicate characters without first uploading the workbook, which saves storage space and reduces costs.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/TrimCharacter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+<a href="https://reference.aspose.cloud/cells/#/TextProcessingController/TrimCharacter" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
 Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement Trim character for cells with minimal code.
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to make calls to Aspose.Cells web services using various SDKs:
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
@@ -131,5 +135,5 @@ The following code examples illustrate how to make calls to Aspose.Cells web ser
 {{</tab>}}
 {{< /tabs >}}
 
-[](images/source001.png)
-[](images/target001.png)
+![Before trimming – Excel cells with extra spaces and line breaks](images/source001.png)
+![After trimming – Cleaned Excel cells](images/target001.png)

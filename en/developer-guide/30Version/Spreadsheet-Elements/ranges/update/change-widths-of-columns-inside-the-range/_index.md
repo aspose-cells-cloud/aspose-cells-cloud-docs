@@ -1,5 +1,6 @@
 ---
 title: "Change Column Widths Inside a Range"
+ArticleTitle: "Change Column Widths Inside a Range – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Column width"
 type: docs
@@ -11,6 +12,9 @@ weight: 74
 ---
 
 This REST API sets the column width of a range.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -43,6 +47,8 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 
 {{< tab tabNum="1" >}}
 
+<h3 id="request">Request</h3>
+
 ```bash
 # Call the column‑width endpoint for workbook *test.xlsx*,
 # worksheet *Sheet1*, setting the width of the selected columns to 20 points.
@@ -67,6 +73,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
+<h3 id="response">Response</h3>
 
 ```json
 {

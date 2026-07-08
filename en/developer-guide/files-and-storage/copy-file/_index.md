@@ -5,7 +5,7 @@ ArticleTitle: "Cloud-based Excel File Management Solution – Detailed Explanati
 linktitle: "Copy File"
 type: docs
 url: /copy-file/
-keywords: "Aspose.Cells, Excel API, Cloud File Copy, CopyFile API, REST API, Spreadsheet Management"
+keywords: "Aspose.Cells, CopyFile API, Excel file copy, Cloud storage, REST API"
 description: "Learn how to use the Aspose.Cells Cloud CopyFile API to efficiently duplicate Excel files and manage them across storage locations."
 weight: 100
 ---
@@ -15,12 +15,17 @@ weight: 100
 ### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
+PUT https://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
 ```
+
+> **Note:** All Aspose Cloud endpoints require HTTPS.
 
 ### **Function Description**
 
 The **copyFile** API allows users to duplicate an Excel file from a specified source path to a destination path, supporting various storage options.
+
+**Authentication:** The request must include a valid OAuth 2.0 access token in the `Authorization` header (Bearer token).  
+**Rate limits:** Calls to this endpoint are subject to the standard Aspose Cloud rate‑limit policy.
 
 ### The request parameters of the **copyFile** API are
 
@@ -34,11 +39,15 @@ The **copyFile** API allows users to duplicate an Excel file from a specified so
 
 ### **Response Description**
 
-```json
-{
-  "Void"
-}
-```
+The operation returns no content on success. Typical HTTP status codes are:
+
+| Status Code | Meaning                              |
+| ----------- | ------------------------------------ |
+| 200 OK      | File copied successfully.           |
+| 400 Bad Request | Invalid request parameters.      |
+| 401 Unauthorized | Authentication failed or token missing. |
+| 404 Not Found | Source file not found.             |
+| 500 Internal Server Error | Unexpected server error. |
 
 ## OpenAPI Specification
 

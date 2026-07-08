@@ -5,12 +5,16 @@ linktitle: "Multiple worksheets"
 type: docs
 url: /worksheets/delete-multiple/
 aliases: [/delete-excel-worksheets/]
-keywords: "Aspose.Cells Cloud, delete multiple worksheets, Excel workbook, REST API, v3.0"
+keywords: "Aspose.Cells Cloud, delete multiple worksheets, Excel API, REST API, v3.0, delete worksheets"
 description: "Learn how to delete several worksheets from an Excel workbook using the Aspose.Cells Cloud REST API (v3.0). Includes a secure HTTPS endpoint, required parameters, a corrected cURL example, and SDK snippets for multiple programming languages."
 weight: 20
+ArticleTitle: "Delete Multiple Excel Worksheets using Aspose.Cells Cloud REST API"
 ---
 
 This REST API deletes multiple worksheets from a workbook.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -133,3 +137,8 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**See also:**  
+- [Delete a Single Worksheet](https://docs.aspose.cloud/cells/worksheets/delete/)  
+- [Copy Worksheet](https://docs.aspose.cloud/cells/worksheets/copy/)  
+- [Move Worksheet](https://docs.aspose.cloud/cells/worksheets/move/)  

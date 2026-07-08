@@ -3,17 +3,22 @@ title: "Update a Worksheet Cell Comment"
 type: docs
 url: /comments/update/
 aliases: [/update-a-comment-in-excel-workbook/]
-keywords: "Aspose.Cells Cloud, REST API, Excel, worksheet, cell comment, update comment"
-description: "Use Aspose.Cells Cloud REST API to update a comment on a worksheet cell in an Excel workbook."
+keywords: "Aspose.Cells Cloud, REST API, Excel, worksheet, cell comment, update worksheet comment, comment object"
+description: "Use Aspose.Cells Cloud REST API to update a worksheet comment on a cell in an Excel workbook, including request details, response codes, and SDK examples."
 weight: 30
+ArticleTitle: "Update Worksheet Cell Comment – Aspose.Cells Cloud API"
 ---
 
-This REST API updates a comment on a worksheet cell.
+This REST API updates a comment on a worksheet cell. Use this endpoint to **update a worksheet comment** in an Excel file.  
+
+**Prerequisites:**  
+- A valid OAuth/JWT access token must be included in the `Authorization` header.  
+- The workbook must be stored in a supported cloud storage location (specify `folder` and optionally `storageName`).  
 
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
 
 ### Request Parameters
@@ -67,6 +72,20 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Possible response status codes:
+
+| Code | Description                                   |
+|------|-----------------------------------------------|
+| 200  | Comment updated successfully.                |
+| 400  | Bad request – missing or invalid parameters. |
+| 401  | Unauthorized – authentication failed.        |
+| 404  | Not found – workbook, worksheet, or comment does not exist. |
+| 500  | Internal server error.                       |
+
+**Notes / Tips:**  
+- Maximum comment length is 1024 characters.  
+- Supported characters are UTF‑8; avoid control characters.  
 
 ## Cloud SDK Family
 
@@ -125,3 +144,8 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Related Operations:  
+- [Get Worksheet Comment](/comments/get/)  
+- [Add Worksheet Comment](/comments/add/)  
+- [Delete Worksheet Comment](/comments/delete/)

@@ -4,9 +4,10 @@ second_title: "Document"
 linktitle: "Excel to SQL"
 type: docs
 url: /convert-excel-file-to-sql-file/
-keywords: "Excel to SQL, Aspose.Cells Cloud, REST API, spreadsheet conversion, SQL file, data migration, API integration"
+keywords: "Excel, SQL, Aspose.Cells, Cloud API, spreadsheet conversion"
 description: "Use Aspose.Cells Cloud REST API to convert Excel spreadsheets into SQL files. Supports multiple SDKs and programming languages for seamless integration into your applications."
 weight: 100
+ArticleTitle: "Convert Excel to SQL – Aspose.Cells Cloud API"
 ---
 
 This REST API converts a spreadsheet file to an SQL format file.
@@ -16,6 +17,17 @@ This REST API converts a spreadsheet file to an SQL format file.
 | **API**            | **Type** | **Description**                       | **Swagger Link**                                                                                       |
 | ------------------ | -------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | /cells/convert/sql | POST     | Convert a spreadsheet to an SQL file. | [PostConvertWorkbookToSQL](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL) |
+
+**Prerequisites**
+
+- A valid Aspose Cloud access token.
+- The source Excel file must be stored in a supported storage location (e.g., default storage or a specified `storageName`).
+
+**Notes**
+
+- Supported Excel formats include XLS, XLSX, and XLSM.
+- Maximum file size for conversion is 200 MB.
+- Only the first worksheet is converted to SQL by default; additional options are not currently exposed.
 
 ### **Query Parameter**
 
@@ -35,9 +47,16 @@ This REST API converts a spreadsheet file to an SQL format file.
 
 [FileInfo](/cells/file-info/)
 
+| **Status Code** | **Description**                                   |
+|-----------------|---------------------------------------------------|
+| 200 OK          | Conversion succeeded; the SQL file is returned. |
+| 400 Bad Request | Invalid request parameters or malformed file.    |
+| 401 Unauthorized| Authentication token missing or invalid.         |
+| 500 Internal Server Error | Unexpected server error during conversion. |
+
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 

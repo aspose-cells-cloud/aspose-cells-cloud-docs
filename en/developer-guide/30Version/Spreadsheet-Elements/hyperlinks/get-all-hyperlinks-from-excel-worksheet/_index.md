@@ -7,9 +7,14 @@ aliases:
 keywords: "Aspose.Cells, Get All Hyperlinks, Excel API, REST API, Cloud SDK, cURL example, spreadsheet hyperlinks"
 description: "Retrieve every hyperlink from a worksheet in an Excel file using the Aspose.Cells Cloud REST API (v3.0). Includes HTTPS endpoint, required parameters, cURL example, response schema, and SDK code samples."
 weight: 10
+ArticleTitle: "Get All Hyperlinks – Aspose.Cells Cloud REST API Documentation"
 ---
 
 This REST API retrieves **all hyperlinks** from a specific worksheet in an Excel workbook.
+
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 

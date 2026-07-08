@@ -42,12 +42,14 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/mergedCells/0" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/mergedCells" \
   -X GET \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <jwt token>"
 ```
+
+*Note: The `/mergedCells` endpoint returns a collection of merged‑cell ranges. To retrieve a specific merged cell by index, use `/mergedCells/{index}`.*  
 
 {{< /tab >}}
 

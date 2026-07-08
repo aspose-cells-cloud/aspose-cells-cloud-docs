@@ -8,6 +8,7 @@ aliases: [/group-rows-in-excel-worksheet/]
 keywords: "group rows, Excel, Aspose.Cells Cloud, REST API, SDK, worksheet, Excel API"
 description: "Group rows in an Excel worksheet using the Aspose.Cells Cloud REST API. Supports multiple SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) for easy integration."
 weight: 60
+ArticleTitle: "Group Rows in Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
 This REST API groups rows on an Excel worksheet.
@@ -15,7 +16,7 @@ This REST API groups rows on an Excel worksheet.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
 ```
 
 ### **Request parameters**
@@ -57,9 +58,21 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 }
 ```
 
+**Response Codes**
+
+| Code | Description                                 |
+|------|---------------------------------------------|
+| 200  | Success – rows were grouped as requested.   |
+| 400  | Bad Request – invalid parameters or payload.|
+| 401  | Unauthorized – missing or invalid token.    |
+| 404  | Not Found – workbook or worksheet not found.|
+| 500  | Internal Server Error – unexpected server issue.|
+
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**See also:** [Ungroup rows](../rows/ungroup/), [Hide rows](../rows/hide/), [Unhide rows](../rows/unhide/).
 
 ## Cloud SDK Family
 

@@ -1,5 +1,6 @@
 ---
 title: "Group columns on an Excel worksheet"
+ArticleTitle: "Group columns on an Excel worksheet – Aspose.Cells Cloud API Guide"
 second_title: "Document"
 linktitle: "Group"
 type: docs
@@ -13,6 +14,10 @@ weight: 60
 ---
 
 This REST API **lets you** group worksheet columns.
+
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -78,6 +83,17 @@ When the request fails, the API returns additional fields describing the error.
 | Status       | string  | Textual status (e.g., **Error**).                    |
 | ErrorMessage | string  | Human‑readable description of the problem.           |
 | ErrorCode    | string  | Specific error identifier for programmatic handling. |
+
+**Example – Bad Request (400)**
+
+```json
+{
+  "Code": 400,
+  "Status": "Error",
+  "ErrorMessage": "Invalid column index.",
+  "ErrorCode": "InvalidParameter"
+}
+```
 
 ## Cloud SDK Family
 

@@ -7,15 +7,19 @@ url: /autofilter/match-all-non-blank/
 aliases: [/match-all-non-blank-cells-in-the-list/]
 keywords: "Aspose.Cells Cloud, match non‑blank cells, AutoFilter, Excel API"
 description: "Learn how to use Aspose.Cells Cloud REST API to match all non‑blank cells in an AutoFilter list on an Excel worksheet. Includes endpoint, parameters, authentication, response schema, error codes, and SDK examples."
+ArticleTitle: "Match all non‑blank cells in an Excel worksheet using Aspose.Cells Cloud API"
 weight: 100
 ---
 
 This REST API matches all non‑blank cells in the AutoFilter list on an Excel worksheet.
 
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchNonBlanks
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchNonBlanks
 ```
 
 ### Request Parameters
@@ -37,7 +41,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/matchNonBlanks?fieldIndex=0" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/matchNonBlanks?fieldIndex=0" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \

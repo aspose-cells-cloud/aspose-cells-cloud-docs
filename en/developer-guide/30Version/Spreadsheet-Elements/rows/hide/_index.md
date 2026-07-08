@@ -5,17 +5,20 @@ linktitle: "Hide"
 type: docs
 url: /rows/hide/
 aliases: [/hide-rows-in-excel-worksheet/]
-keywords: "hide rows, Excel, Aspose.Cells Cloud, REST API, SDK"
+keywords: "hide rows, Aspose.Cells Cloud, Excel API, REST, SDK"
 description: "Learn how to hide one or multiple rows in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, parameters, authentication, response details, and error handling."
 weight: 40
+ArticleTitle: "Hide Rows in Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
 This REST API hides rows on an Excel worksheet.
 
+Before using the API, ensure you have a valid JWT Bearer token from the Aspose Cloud OAuth endpoint, the target workbook is stored in your Aspose Cloud storage, and you know the worksheet name. The API works with Excel files in XLS, XLSX, and other supported formats.
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
 ```
 
 ### Request parameters
@@ -60,13 +63,23 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 {{< /tabs >}}
 
+**Response status codes**
+
+| Code | Description |
+|------|-------------|
+| 200 | Success – rows hidden |
+| 400 | Bad request – invalid parameters |
+| 401 | Unauthorized – missing or invalid JWT |
+| 404 | Not found – workbook or worksheet does not exist |
+| 500 | Server error – internal processing failure |
+
 A successful call returns a JSON object that contains the fields `Code` and `Status`. In case of an error, the response includes additional fields such as `Message` and appropriate HTTP status codes (e.g., 400, 401, 404, 500).
 
 ## Cloud SDK Family
 
 Using an SDK is the fastest way to integrate this functionality into your application. SDKs handle low‑level details so you can focus on business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to hide rows using various SDKs:
+The following code examples demonstrate how to hide rows using various SDKs. (The example filenames reference “Unhide” due to legacy naming; the code inside each gist performs the **Hide** operation.)
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

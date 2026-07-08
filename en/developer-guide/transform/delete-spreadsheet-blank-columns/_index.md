@@ -12,6 +12,9 @@ weight: 100
 
 Use Aspose.Cells Cloud API to automatically delete all blank columns from Excel spreadsheets. Our intelligent API detects and removes columns whose cells contain no data, formulas, comments, charts, or objects. The API supports batch processing, cloud automation, and seamless REST integration for enterprise‑grade spreadsheet‑cleanup workflows.
 
+**Background:**  
+Blank columns often appear after data imports, template generation, or legacy file migrations. Removing these empty columns improves file size, rendering performance, and downstream data‑processing accuracy. The Delete Spreadsheet Blank Columns API provides a fast, server‑side way to clean up spreadsheets without manual editing.
+
 ## **DeleteSpreadsheetBlankColumns API**
 
 ### Web API
@@ -19,6 +22,8 @@ Use Aspose.Cells Cloud API to automatically delete all blank columns from Excel 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/delete/blank-columns
 ```
+
+**Method:** `PUT`
 
 ### Request Parameters
 
@@ -75,6 +80,13 @@ PUT https://api.aspose.cloud/v4.0/cells/delete/blank-columns
 - **Zero Maintenance** – No servers to manage; the service is continuously updated by Aspose.
 
 ## How to Use the Delete Spreadsheet Blank Columns API with SDKs
+
+### Quick‑Start Example (C#)
+
+```csharp
+var cellsApi = new CellsApi(clientId, clientSecret);
+await cellsApi.DeleteSpreadsheetBlankColumnsAsync("sample.xlsx");
+```
 
 ### API Specification
 

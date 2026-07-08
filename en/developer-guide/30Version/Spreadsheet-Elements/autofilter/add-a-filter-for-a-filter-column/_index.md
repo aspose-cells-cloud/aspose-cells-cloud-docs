@@ -8,14 +8,17 @@ aliases: [/add-a-filter-for-a-filter-column/]
 keywords: "Aspose.Cells, Cloud, Excel, AutoFilter, Add Filter, REST API, SDK"
 description: "Learn how to add an auto‑filter to a column in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL, SDK samples, and parameter guide."
 weight: 60
+ArticleTitle: "Add a Filter to an Excel Worksheet using Aspose.Cells Cloud"
 ---
 
 This REST API adds a filter for a specific column on an Excel worksheet.
 
+**Prerequisites**: You must obtain a valid JWT Bearer token and include it in the `Authorization` header of the request.
+
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
 ```
 
 ### Request parameters
@@ -32,7 +35,7 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/
 | folder         | string  | Query    | The folder where the original workbook is stored. |
 | storageName    | string  | Query    | The name of the storage service. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL.
 
@@ -41,7 +44,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?range=A1:B1&fieldIndex=0&criteria=Year" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filter?range=A1:B1&fieldIndex=0&criteria=Year" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -59,13 +62,22 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 }
 ```
 
+**Possible response codes**
+
+| Code | Meaning                     | Description                                                       |
+|------|----------------------------|-------------------------------------------------------------------|
+| 200  | Success                    | Filter applied successfully.                                      |
+| 400  | Bad Request                | Invalid parameters or malformed request.                         |
+| 401  | Unauthorized               | Missing or invalid JWT token.                                     |
+| 500  | Internal Server Error      | Unexpected server error while processing the request.            |
+
 {{< /tab >}}
 
 {{< /tabs >}}
 
 ## Cloud SDK Family
 
-Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
@@ -120,3 +132,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+For more details on related AutoFilter operations, see the documentation for adding color filters, deleting filters, and applying multiple criteria.

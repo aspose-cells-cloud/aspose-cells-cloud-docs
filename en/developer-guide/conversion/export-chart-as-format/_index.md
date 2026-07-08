@@ -14,10 +14,13 @@ Export a cloud spreadsheet/Excel chart to another format file using the Aspose.C
 
 ## **Export Chart as Format API**
 
+**Authentication**  
+All calls to the Aspose.Cells Cloud API require a valid OAuth 2.0 access token. Include the token in the request header as `Authorization: Bearer <access_token>`. Tokens can be obtained from the Aspose Cloud console or via the OAuth token endpoint. Ensure the token has permission to access the target storage.
+
 ### Web API
 
 ```http
-GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
+GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
 ```
 
 ### **Request Parameters:**
@@ -52,10 +55,34 @@ GET http://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{cha
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
-- **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
+  ```json
+  {
+    "code": 400,
+    "message": "Invalid request URI."
+  }
+  ```
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
+  ```json
+  {
+    "code": 401,
+    "message": "Invalid access token."
+  }
+  ```
+- **404 Not Found**: The spreadsheet file is not accessible.  
+  ```json
+  {
+    "code": 404,
+    "message": "File not found."
+  }
+  ```
+- **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.  
+  ```json
+  {
+    "code": 500,
+    "message": "Internal server error."
+  }
+  ```
 
 ## Where should you use the Export Chart to another format API?
 
@@ -142,3 +169,5 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportChartAsFormat.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+[Back to top](#)

@@ -5,39 +5,41 @@ linktitle: "Worksheet"
 type: docs
 url: /export-excel-worksheet-to-different-formats/
 aliases: [/export/excel-worksheet-to-different-formats/]
-keywords: "Aspose.Cells Cloud, export worksheet, REST API, PDF, CSV, TIFF, XLSX, ODS, image formats"
+keywords: "Aspose.Cells, Cloud, export, worksheet, REST API, PDF, CSV, TIFF, XLSX, ODS, image formats"
 description: "Learn how to export an Excel worksheet to PDF, CSV, TIFF, and other formats using the Aspose.Cells Cloud REST API. Includes cURL example, required authentication, parameter details, and response handling."
 weight: 20
 ---
 
 You can export a worksheet to the following formats:
 
-- **XLS** – [Link](https://docs.fileformat.com/spreadsheet/xls/)
-- **XLSX** – [Link](https://docs.fileformat.com/spreadsheet/xlsx/)
-- **XLSB** – [Link](https://docs.fileformat.com/spreadsheet/xlsb/)
-- **CSV** – [Link](https://docs.fileformat.com/spreadsheet/csv/)
-- **TSV** – [Link](https://docs.fileformat.com/spreadsheet/tsv/)
-- **XLSM** – [Link](https://docs.fileformat.com/spreadsheet/xlsm/)
-- **ODS** – [Link](https://docs.fileformat.com/spreadsheet/ods/)
-- **TXT** – [Link](https://docs.fileformat.com/word-processing/txt/)
-- **PDF** – [Link](https://docs.fileformat.com/pdf/)
-- **OTS** – [Link](https://docs.fileformat.com/spreadsheet/ots/)
-- **XPS** – [Link](https://docs.fileformat.com/page-description-language/xps/)
-- **DIF** – [Link](https://docs.fileformat.com/spreadsheet/dif/)
-- **PNG** – [Link](https://docs.fileformat.com/Image/png/)
-- **JPEG** – [Link](https://docs.fileformat.com/image/jpeg/)
-- **BMP** – [Link](https://docs.fileformat.com/image/bmp/)
-- **SVG** – [Link](https://docs.fileformat.com/page-description-language/svg/)
-- **TIFF** – [Link](https://docs.fileformat.com/image/tiff/)
-- **EMF** – [Link](https://docs.fileformat.com/image/emf/)
-- **NUMBERS** – [Link](https://docs.fileformat.com/spreadsheet/numbers/)
-- **FODS** – [Link](https://docs.fileformat.com/spreadsheet/fods/)
+- **XLS** – [XLS format details](https://docs.fileformat.com/spreadsheet/xls/)
+- **XLSX** – [XLSX format details](https://docs.fileformat.com/spreadsheet/xlsx/)
+- **XLSB** – [XLSB format details](https://docs.fileformat.com/spreadsheet/xlsb/)
+- **CSV** – [CSV format details](https://docs.fileformat.com/spreadsheet/csv/)
+- **TSV** – [TSV format details](https://docs.fileformat.com/spreadsheet/tsv/)
+- **XLSM** – [XLSM format details](https://docs.fileformat.com/spreadsheet/xlsm/)
+- **ODS** – [ODS format details](https://docs.fileformat.com/spreadsheet/ods/)
+- **TXT** – [TXT format details](https://docs.fileformat.com/word-processing/txt/)
+- **PDF** – [PDF format details](https://docs.fileformat.com/pdf/)
+- **OTS** – [OTS format details](https://docs.fileformat.com/spreadsheet/ots/)
+- **XPS** – [XPS format details](https://docs.fileformat.com/page-description-language/xps/)
+- **DIF** – [DIF format details](https://docs.fileformat.com/spreadsheet/dif/)
+- **PNG** – [PNG format details](https://docs.fileformat.com/Image/png/)
+- **JPEG** – [JPEG format details](https://docs.fileformat.com/image/jpeg/)
+- **BMP** – [BMP format details](https://docs.fileformat.com/image/bmp/)
+- **SVG** – [SVG format details](https://docs.fileformat.com/page-description-language/svg/)
+- **TIFF** – [TIFF format details](https://docs.fileformat.com/image/tiff/)
+- **EMF** – [EMF format details](https://docs.fileformat.com/image/emf/)
+- **NUMBERS** – [Numbers format details](https://docs.fileformat.com/spreadsheet/numbers/)
+- **FODS** – [FODS format details](https://docs.fileformat.com/spreadsheet/fods/)
 
 ## REST API
 
+Before invoking the API, ensure you have a valid OAuth 2.0 access token with the required **Cells** scope. Obtain the token via the Aspose Cloud authentication endpoint and include it in the `Authorization` header as shown in the request example.
+
 | **API**       | **Type** | **Description**                                                       | **Swagger Link**                                                              |
 | ------------- | -------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| /cells/export | POST     | Export an Excel worksheet from the request body to a specified format | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
+| /cells/export | POST     | Export an Excel worksheet from the request body to a specified format | [Swagger UI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -127,6 +129,18 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=worksheet&fo
 ### **Error handling**
 
 If the request fails, the API returns a JSON error object containing fields such as `Code` and `Message`. Typical HTTP status codes include **401 Unauthorized** (missing or invalid token) and **400 Bad Request** (invalid parameters).
+
+#### Response Status Codes
+
+| Status Code | Description                                            |
+|-------------|--------------------------------------------------------|
+| 200 OK      | Export succeeded; file(s) returned in the response.   |
+| 202 Accepted| Request accepted for asynchronous processing (if applicable). |
+| 400 Bad Request | Invalid query parameters or malformed request body. |
+| 401 Unauthorized | Authentication token missing or invalid. |
+| 403 Forbidden | Insufficient permissions to perform the operation. |
+| 404 Not Found | Specified worksheet or file not found. |
+| 500 Internal Server Error | Unexpected server error. |
 
 ### Cloud SDK Family
 

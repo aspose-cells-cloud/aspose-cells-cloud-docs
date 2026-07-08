@@ -5,17 +5,26 @@ ArticleTitle: "Cloud‑based Excel File Management Solution – Interface to qui
 linktitle: "Get Disk Usage"
 type: docs
 url: /get-disk-usage/
-keywords: "Aspose.Cells Cloud, Get Disk Usage, API, storage, cloud, Excel, REST"
+keywords: "Aspose Cells, Cloud API, Disk Usage, Storage Metrics, Excel, REST"
 description: "Retrieve real‑time disk usage for Aspose.Cells Cloud. Learn the GET /v4.0/cells/storage/disk endpoint, required authentication, sample response, and error handling."
 weight: 100
 ---
 
 ## Excel API: GetDiskUsage
 
+The **Get Disk Usage** operation returns real‑time storage metrics for your Aspose.Cells Cloud account. Use this endpoint to monitor consumed and total disk space.
+
+Prerequisites: You must have a valid Aspose Cloud account and an access token (JWT) with sufficient permissions.
+
 ### Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/storage/disk
+```
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/disk?storageName=MyStorage" \
+     -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
 
 ### Function Description
@@ -29,6 +38,8 @@ GET https://api.aspose.cloud/v4.0/cells/storage/disk
 | Parameter Name | Type   | Location | Description                                          | Required |
 | -------------- | ------ | -------- | ---------------------------------------------------- | -------- |
 | storageName    | String | Query    | The name of the storage for which to retrieve usage. | Optional |
+
+Authentication: Include the `Authorization: Bearer <access_token>` header in the request.
 
 ### Response Description
 
@@ -73,6 +84,8 @@ GET https://api.aspose.cloud/v4.0/cells/storage/disk
   "TotalSize": 10737418240
 }
 ```
+
+Related operations: [Upload File](/upload-file/), [Get Files List](/list-files/).
 
 ### Error Codes
 
@@ -121,7 +134,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 ### Last Updated
 
-_2026‑03‑30_
+_2026‑07‑06_
 
 ### Author
 

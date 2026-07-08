@@ -6,7 +6,7 @@ linktitle: "Convert Range to Image"
 type: docs
 url: /convert-range-to-image/
 keywords: "Aspose.Cells Cloud, Convert Range to Image, Spreadsheet to Image, Cloud Conversion, Image Formats, REST API, PNG, SVG, TIFF, JPEG, BMP"
-description: "Use Aspose.Cells Cloud REST API to convert a specific range from a local Excel file (XLSX or XLS) into various image formats such as PNG, JPEG, SVG, TIFF, or BMP without uploading the entire workbook."
+description: "Convert a specific range from a local Excel file to PNG, JPEG, SVG, TIFF, or BMP using Aspose.Cells Cloud REST API – no full workbook upload required."
 weight: 100
 ---
 
@@ -22,10 +22,22 @@ Export data of a range from a local Excel file to an [Image](https://docs.filefo
 
 ## **Convert Range to Image API**
 
+**Prerequisites:** To use this API you must have a valid Aspose.Cloud OAuth 2.0 access token, optionally install the appropriate Aspose.Cells Cloud SDK, and target API version v4.0. The request supports XLSX and XLS files.
+
 ### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
+PUT https://api.aspose.cloud/v4.0/cells/convert/range/image
+```
+
+*Note: Always use HTTPS to transmit the request securely and include your OAuth 2.0 access token in the `Authorization` header.*
+
+**cURL example**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/image?worksheet=Sheet1&range=A1:C10&format=png" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@/path/to/file.xlsx"
 ```
 
 ### **Request Parameters:**
@@ -56,6 +68,8 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/image
   }
 ]
 ```
+
+A successful response returns a streamed image file. The `Name` field contains the generated image file name, and the response body is the binary content of the image.
 
 ### Error Codes
 

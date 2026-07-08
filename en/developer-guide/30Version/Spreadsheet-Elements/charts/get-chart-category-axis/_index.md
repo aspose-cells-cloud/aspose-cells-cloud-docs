@@ -3,16 +3,18 @@ title: "Get Chart Category Axis"
 type: docs
 url: /charts/category-axis/get/
 weight: 60
-keywords: "Aspose.Cells, Chart Category Axis, REST API, Get Chart Category Axis, Excel, Cloud API"
+keywords: "Aspose.Cells, Chart Category Axis, REST API, Excel, Cloud API"
 description: "Retrieves the category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API."
+ArticleTitle: "Get Chart Category Axis – Aspose.Cells Cloud API Documentation"
 ---
 
-This REST API retrieves the **Category Axis** of a chart.
+This REST API retrieves the **Category Axis** of a chart.  
+To call this endpoint you must provide a valid OAuth 2.0 access token, and the workbook must be stored in Aspose Cloud storage.
 
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis
 ```
 
 ### Request parameters
@@ -25,6 +27,16 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 | folder         | string  | query    | The folder path in storage where the workbook resides. |
 | storageName    | string  | query    | The name of the storage service (if not the default).  |
 
+**Status Codes**
+
+| Status Code | Description                                             |
+| ----------- | ------------------------------------------------------- |
+| 200         | Successful response with Category Axis details.        |
+| 400         | Bad request – missing or invalid parameters.           |
+| 401         | Unauthorized – authentication failed.                  |
+| 404         | Not found – workbook, worksheet, or chart does not exist. |
+| 500         | Internal server error.                                  |
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetChartCategoryAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
@@ -34,7 +46,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis" \
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -48,7 +60,25 @@ curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ```json
 {
   "Code": 200,
-  "Status": "OK"
+  "Status": "OK",
+  "CategoryAxis": {
+    "AxisBetweenCategories": true,
+    "AxisLine": {
+      "IsVisible": true,
+      "Weight": 1.0
+    },
+    "MajorTickMark": "Cross",
+    "MinorTickMark": "None",
+    "Title": {
+      "Text": "Category Axis",
+      "IsVisible": true
+    },
+    "Labels": {
+      "IsAutoRotation": false,
+      "RotationAngle": 0,
+      "IsVisible": true
+    }
+  }
 }
 ```
 
@@ -123,3 +153,25 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+For modifying the category axis, see the **[Update Chart Category Axis](/charts/category-axis/update/)** page.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Get Chart Category Axis – Aspose.Cells Cloud API",
+  "description": "Retrieves the category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API.",
+  "url": "https://docs.aspose.cloud/cells/charts/category-axis/get/",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2026-07-08",
+  "keywords": "Aspose.Cells, Chart Category Axis, REST API, Excel, Cloud API"
+}
+</script>

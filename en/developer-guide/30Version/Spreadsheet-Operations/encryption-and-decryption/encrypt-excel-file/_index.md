@@ -5,12 +5,16 @@ linktitle: "Encrypt an Excel file"
 type: docs
 url: /excel-file-encrypt/
 aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
-keywords: "encrypt Excel workbook API, Aspose Cells, Excel encryption, REST API, Cloud SDK, cURL, C#, Java, Python, PHP, Ruby, Node.js, Go, Perl"
+keywords: "Aspose Cells encrypt workbook, Excel encryption API, REST API, cURL, .NET, Java, Python, PHP, Ruby, Node.js, Go, Perl"
 description: "Learn how to encrypt an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes cURL command, SDK code samples (C#, Java, Python, …), required parameters, and error handling."
 weight: 20
+ArticleTitle: "Encrypt Excel Workbook with Aspose.Cells Cloud API – cURL and SDK Examples"
 ---
 
 This REST API encrypts an Excel **workbook**.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 

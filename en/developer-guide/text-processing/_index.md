@@ -5,14 +5,26 @@ ArticleTitle: "Spreadsheet Text Processing: Trim, Split, Convert, Extract, and R
 linktitle: "Text Processing"
 type: docs
 url: /text-processing/
-description: "Explore Aspose.Cells Cloud Text Processing APIs: trim, split, convert, extract, and remove text in Excel files. Quick REST examples & SDK code."
-keywords: "Aspose.Cells, Cloud API, Text Processing, Trim Text, Split Text, Convert Text, Excel"
+description: "Learn how to trim, split, convert, extract, and remove text in Excel files using Aspose.Cells Cloud REST APIs. Includes concise examples and SDK snippets."
+keywords: "Aspose.Cells, Cloud API, Text Processing, Trim Text, Split Text, Convert Text, Extract Text, Remove Text, Excel API"
 weight: 30
 ---
 
 ## Excel Text Manipulation APIs
 
-Aspose.Cells Cloud provides a set of REST endpoints for working with text inside Excel worksheets. The operations below cover common tasks such as adding new text, changing its case, converting formats, and cleaning unwanted characters. Each link leads to a detailed example that includes request payloads, response samples, and SDK code snippets.
+Aspose.Cells Cloud offers a collection of REST endpoints that let you manipulate text inside Excel worksheets. These operations cover everyday tasks such as trimming whitespace, splitting strings, converting case, extracting substrings, and removing unwanted characters.  
+
+**Prerequisites:** All requests must be authenticated with a valid access token supplied in the `Authorization` header. Refer to the authentication guide for details on obtaining and using tokens.
+
+Below is a concise reference that summarises the most frequently used text‑processing endpoints.
+
+| Operation | HTTP Method | Endpoint (template) | Key Parameters | Sample Response |
+|-----------|------------|---------------------|----------------|-----------------|
+| Trim whitespace or characters | POST | `/cells/{file}/worksheets/{sheet}/cells/trim` | `range`, `trimChars` (optional) | `{ "code": 200, "status": "OK", "trimmedCells": 12 }` |
+| Split text into multiple cells | POST | `/cells/{file}/worksheets/{sheet}/cells/split` | `range`, `delimiter`, `destinationRange` | `{ "code": 200, "status": "OK", "splitCells": 8 }` |
+| Convert text case (upper, lower, title) | POST | `/cells/{file}/worksheets/{sheet}/cells/convert-case` | `range`, `caseType` | `{ "code": 200, "status": "OK", "convertedCells": 15 }` |
+| Extract substring | POST | `/cells/{file}/worksheets/{sheet}/cells/extract` | `range`, `startIndex`, `length` | `{ "code": 200, "status": "OK", "extractedValue": "Sample" }` |
+| Remove specific characters | POST | `/cells/{file}/worksheets/{sheet}/cells/remove-characters` | `range`, `characters` | `{ "code": 200, "status": "OK", "removedChars": 5 }` |
 
 ### Basic Text Operations
 

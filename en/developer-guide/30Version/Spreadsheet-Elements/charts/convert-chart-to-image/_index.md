@@ -4,11 +4,15 @@ type: docs
 url: /charts/to-image/
 aliases: [/convert-charts-to-image/]
 weight: 50
-keywords: "Aspose.Cells Cloud, chart to image, Excel chart conversion, REST API, image format, PNG, JPEG, BMP"
-description: "Learn how to convert Excel chart objects to PNG, JPEG, or BMP images using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, SDK snippets, response handling, and error handling."
+keywords: "Aspose.Cells Cloud, chart to image, Excel chart conversion, REST API, image format, PNG, JPEG, BMP, TIFF, GIF"
+description: "Learn how to convert Excel chart objects to PNG, JPEG, BMP, TIFF, or GIF images using Aspose.Cells Cloud REST API. Includes endpoint details, parameters, cURL example, SDK snippets, response example, and error handling."
+ArticleTitle: "Convert Excel Chart to Image Using Aspose.Cells Cloud REST API"
 ---
 
 This REST API demonstrates how to convert an **Excel chart** to an image using **Aspose.Cells Cloud**.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -56,6 +60,24 @@ byte[]
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Response
+
+A successful request returns **HTTP 200 OK** with the image binary data in the response body.
+
+| Status Code | Description                     |
+| ----------- | -------------------------------- |
+| 200         | Image returned successfully (binary stream). |
+| 202         | Accepted – request is being processed asynchronously (if applicable). |
+
+**Example success payload** (binary image stream shown as base64 for readability):
+
+```json
+{
+  "contentType": "image/jpeg",
+  "content": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhU..."
+}
+```
 
 ### Error Handling
 

@@ -5,7 +5,7 @@ ArticleTitle: "Swap/Exchange Data Between Columns, Rows, and Cells in Excel"
 linktitle: "Swap Range"
 type: docs
 url: /swap-range/
-keywords: "Aspose Cells, Excel API, swap range, column swap, row swap, cloud spreadsheet"
+keywords: "Aspose Cells, Excel API, Swap Range, Cloud Spreadsheet"
 description: "Swap columns, rows or ranges in Excel files with Aspose.Cells Cloud API. Preserve formatting, formulas, and cell references in a single request."
 weight: 100
 ---
@@ -34,6 +34,14 @@ PUT https://api.aspose.cloud/v4.0/cells/swap/range
 | **region**         | String | Query    | **Optional.** Locale setting (e.g., `en-US`, `ja-JP`) that may affect formatting.                                                             |
 | **password**       | String | Query    | **Optional.** Password to decrypt a protected spreadsheet. Omit if not encrypted.                                                             |
 
+**Sample Request (cURL)**  
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/swap/range?worksheet1=Sheet1&range1=A1:D10&worksheet2=Sheet2&range2=F1:I10&outStorageName=MyCompanyStorage" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@/path/to/workbook.xlsx"
+```
+
 ### **Response**
 
 ```json
@@ -47,6 +55,10 @@ PUT https://api.aspose.cloud/v4.0/cells/swap/range
   }
 ]
 ```
+
+**Notes:**  
+- The API returns the modified workbook as a file stream. If `outPath` is specified, the file is also saved to the given cloud storage location.  
+- Mismatched range dimensions will result in a **400 Bad Request** error.
 
 ### Error Codes
 
@@ -72,11 +84,20 @@ PUT https://api.aspose.cloud/v4.0/cells/swap/range
 
 ## Quick‑Start: Step‑by‑Step Guide
 
-1. **Upload** the source workbook to your configured cloud storage (if it is not already there).
-2. **Obtain** an OAuth 2.0 access token and set the `Authorization` header.
-3. **Call** the **Swap Range API** with the required parameters (`worksheet1`, `range1`, `worksheet2`, `range2`).
-4. **Specify** `outPath`/`outStorageName` if you want the modified file saved automatically; otherwise, read the file stream from the response.
+**Prerequisites:**  
+- An active Aspose.Cells Cloud account with a configured storage name (`outStorageName`).  
+- OAuth 2.0 access token obtained from the Aspose authentication service.  
+- The source workbook uploaded to the designated cloud storage location (if not already present).
+
+1. **Upload** the source workbook to your configured cloud storage (if it is not already there).  
+2. **Obtain** an OAuth 2.0 access token and set the `Authorization` header.  
+3. **Call** the **Swap Range API** with the required parameters (`worksheet1`, `range1`, `worksheet2`, `range2`).  
+4. **Specify** `outPath`/`outStorageName` if you want the modified file saved automatically; otherwise, read the file stream from the response.  
 5. **Download** the swapped workbook from the location you specified or directly from the response payload.
+
+**Notes:**  
+- Ensure that `range1` and `range2` have the same number of rows and columns; otherwise the request will fail.  
+- The API does not modify worksheet protection settings; if a sheet is locked, you must unlock it before swapping.
 
 ## How to Use the Swap Range API with SDKs
 

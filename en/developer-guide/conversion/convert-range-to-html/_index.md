@@ -5,14 +5,14 @@ ArticleTitle: "How to Convert Local Spreadsheet Range Data to an HTML File: Step
 linktitle: "Convert Range to HTML"
 type: docs
 url: /convert-range-to-html/
-keywords: "Aspose.Cells, Excel range to HTML, cloud API, convert range to HTML, REST API, spreadsheet conversion"
+keywords: "Aspose.Cells, Excel, HTML conversion, cloud API, spreadsheet"
 description: "Learn how to convert a specific Excel range (e.g., A1:C10) to an HTML file using Aspose.Cells Cloud REST API. Includes authentication steps, cURL example, and SDK snippets for C#, Java, Python, and more."
 weight: 100
 ---
 
 Export a range of data from a local Excel file to an HTML file using the Cloud API.
 
-## **Convert Range to HTML API**
+## Convert Range to HTML API
 
 ### Web API
 
@@ -20,7 +20,22 @@ Export a range of data from a local Excel file to an HTML file using the Cloud A
 PUT https://api.aspose.cloud/v4.0/cells/convert/range/html
 ```
 
-### **Request Parameters**
+**Prerequisites / Authentication**  
+To call this endpoint you must obtain a Bearer access token via OAuth 2.0. Send a POST request to `https://api.aspose.cloud/connect/token` with your `client_id` and `client_secret`. The response contains an `access_token` that you include in the `Authorization` header of every API call:
+
+```bash
+curl -X POST "https://api.aspose.cloud/connect/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
+```
+
+Use the returned token in the examples below:
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### Request Parameters
 
 | Parameter Name | Type   | Location | Description                                                             |
 | -------------- | ------ | -------- | ----------------------------------------------------------------------- |
@@ -33,7 +48,7 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/range/html
 | region         | String | Query    | Spreadsheet region setting.                                             |
 | password       | String | Query    | Password for opening the spreadsheet file.                              |
 
-### **Full Request Example (cURL)**
+### Full Request Example (cURL)
 
 ```bash
 curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/html?worksheet=Sheet1&range=A1:C10" \
@@ -42,7 +57,15 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/html?worksheet=Sh
      -F "outPath=output/report.html"
 ```
 
-### **Response**
+*One‑line example (default parameters):*
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/html?range=A1:C10" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@Report.xlsx"
+```
+
+### Response
 
 ```json
 [
@@ -56,21 +79,42 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/html?worksheet=Sh
 ]
 ```
 
-### **Response Handling**
+### Response Handling
 
 The API returns the converted HTML file as a binary stream. Save the stream to a file (e.g., `report.html`) and verify the HTTP status code:
 
 - **200 OK** – Conversion succeeded; the response body contains the HTML file.
-- **4xx / 5xx** – See the _Error Codes_ table for troubleshooting.
+- **4xx / 5xx** – See the Error Codes section for troubleshooting.
 
-### **Error Codes**
+A typical snippet of the returned HTML looks like this:
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.
-- **404 Not Found** – The spreadsheet file is not accessible.
-- **500 Server Error** – The service encountered an internal problem while processing the workbook (e.g., corrupted data or unsupported formulas).
+```html
+<table>
+  <tr><th>Product</th><th>Price</th></tr>
+  <tr><td>Widget A</td><td>$10</td></tr>
+</table>
+```
 
-## **Use Cases**
+### Error Codes
+
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
+  ```json
+  { "code": "BadRequest", "message": "The request URI is malformed." }
+  ```
+- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
+  ```json
+  { "code": "Unauthorized", "message": "Authentication failed." }
+  ```
+- **404 Not Found** – The spreadsheet file is not accessible.  
+  ```json
+  { "code": "NotFound", "message": "The specified file could not be found." }
+  ```
+- **500 Server Error** – The service encountered an internal problem while processing the workbook (e.g., corrupted data or unsupported formulas).  
+  ```json
+  { "code": "InternalServerError", "message": "An unexpected error occurred." }
+  ```
+
+## Use Cases
 
 - **Dynamic Web Content Generation** – Convert selected Excel ranges (pricing tables, schedules, product lists) into HTML snippets for direct embedding in websites, portals, or CMSs.
 - **Email Template Integration** – Transform Excel‑based data tables (order summaries, reports) into HTML for inclusion in marketing or transactional emails, ensuring consistent rendering across email clients.
@@ -122,3 +166,8 @@ The following code examples illustrate how to interact with Aspose.Cells web ser
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToHtml.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+### Related Conversions
+
+- [Convert Range to CSV](/convert-range-to-csv/)
+- [Convert Worksheet to HTML](/convert-worksheet-to-html/)

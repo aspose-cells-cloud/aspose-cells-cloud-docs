@@ -1,12 +1,13 @@
 ---
 title: "Add Top 10 Filter to an Excel Worksheet (Aspose.Cells Cloud)"
+ArticleTitle: "Add Top 10 Filter to an Excel Worksheet – Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "Add top 10 filter"
 type: docs
 url: /autofilter/add-top-10-filter/
 aliases:
   [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
-keywords: "Aspose.Cells Cloud Top 10 filter, Excel AutoFilter, REST API, spreadsheet automation"
+keywords: "Aspose.Cells Cloud, Top 10 filter, AutoFilter, Excel API, REST, spreadsheet automation, Excel worksheet filter"
 description: "Learn how to apply a Top 10 AutoFilter to an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, authentication details, error handling, and SDK snippets for C#, Java, Python, and more."
 weight: 65
 ---
@@ -14,6 +15,8 @@ weight: 65
 This REST API filters the **Top 10** items in a list.
 
 ## REST API
+
+**Prerequisites:** Before calling this endpoint, ensure you have a valid Aspose Cloud JWT token, the target workbook is uploaded to your Aspose Cloud storage, and the specified worksheet exists.
 
 ```bash
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10
@@ -65,6 +68,17 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Error Handling Example:** If the request fails, the API returns a JSON payload with `Code` and `Message`. For instance, a 404 response looks like:
+
+```json
+{
+  "Code": 404,
+  "Message": "File or worksheet not found."
+}
+```
+
+For more filtering options, see the [Add Filter](/autofilter/add-filter/) and [Delete Filter](/autofilter/delete-filter/) documentation.
 
 ### Common HTTP Status Codes
 

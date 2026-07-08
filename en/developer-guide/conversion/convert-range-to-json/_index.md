@@ -17,7 +17,7 @@ Export range data from a local Excel file to a JSON file using the Cloud API.
 ### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/range/json
+PUT https://api.aspose.cloud/v4.0/cells/convert/range/json
 ```
 
 ### **Request Parameters:**
@@ -32,6 +32,28 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/json
 | fontsLocation  | String | Query                       | Location for storing custom fonts for home use.                       |
 | region         | String | Query                       | The spreadsheet region setting.                                       |
 | password       | String | Query                       | Password for opening the spreadsheet file.                            |
+
+**Example request body (multipart/form‑data):**
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/convert/range/json
+Content-Type: multipart/form-data; boundary=---boundary
+
+---boundary
+Content-Disposition: form-data; name="Spreadsheet"; filename="sample.xlsx"
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+
+<binary data>
+---boundary
+Content-Disposition: form-data; name="worksheet"
+
+Sheet1
+---boundary
+Content-Disposition: form-data; name="range"
+
+A1:C10
+---boundary--
+```
 
 ### **Response**
 
@@ -49,9 +71,10 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/json
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
+- **200 OK** – Returns the converted JSON file stream.  
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
+- **404 Not Found**: The spreadsheet file is not accessible.  
 - **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
 ## **Where Should You Use the Convert Range to JSON API?**
@@ -67,15 +90,17 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/json
 - **Multi-language Support**: Convert localization spreadsheets to JSON for i18n libraries.
 - **Dynamic Menus/Navigation**: Manage website navigation structures in Excel, deploy as JSON.
 
+*For other conversion options, see the [Convert Range to CSV](/convert-range-to-csv/) guide.*
+
 ## Why should you use the Convert Range to JSON API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart‑rendering solutions, this significantly reduces the development workload.
-- **Cost‑Effective**: You can convert range data without first uploading the workbook, which saves storage space and reduces costs.
-- **To Fuel Modern Web & Mobile Applications**: JSON is the native data language of the web. By converting Excel ranges to JSON, you can **seamlessly feed live spreadsheet data into JavaScript frameworks** (React, Vue, Angular), mobile apps, or single‑page applications (SPAs) without complex parsing logic.
-- **JSON is the lingua franca of modern systems**: compatible with virtually every programming language, database, and web service. Unlike proprietary formats, JSON ensures your Excel data can be consumed anywhere.
+- **Developer‑Friendly**: Aspose.Cells Cloud provides SDK libraries for multiple languages, enabling quick development with comprehensive documentation. This reduces the amount of custom code required compared with building a conversion solution from scratch.  
+- **Cost‑Effective**: You can convert range data without first uploading the workbook, which saves storage space and reduces costs.  
+- **Modern Web & Mobile Applications**: JSON is the native data format for web applications. Converting Excel ranges to JSON allows JavaScript frameworks such as React, Vue, or Angular to consume the data directly.  
+- **Broad Compatibility**: JSON is supported by virtually every programming language, database, and web service, ensuring the converted data can be used anywhere.  
 - **Structured Data Preservation**
   - **Intelligent Structure Detection**: Automatically converts tabular data to proper JSON arrays/objects.
-  - **Header Mapping**: Uses first row as JSON keys for clean object structures.
+  - **Header Mapping**: Uses the first row as JSON keys for clean object structures.
   - **Data Type Retention**: Preserves number, date, and boolean types (not just text).
 
 ## How to Use the Convert Range to JSON API with SDKs?
@@ -116,3 +141,5 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToJson.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+*Note: The API supports Excel files up to 50 MB and a maximum range of 1 million cells. Ensure the first row contains headers for proper key mapping.*

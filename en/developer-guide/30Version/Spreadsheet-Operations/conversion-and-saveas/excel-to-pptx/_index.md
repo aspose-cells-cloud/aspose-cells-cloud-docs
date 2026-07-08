@@ -1,15 +1,19 @@
 ---
-title: "Excel to PPTX"
+title: "Convert Excel to PPTX using Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Excel to PPTX"
 type: docs
 url: /convert-excel-file-to-pptx-file/
-keywords: "convert Excel to PPTX, Aspose.Cells Cloud, spreadsheet conversion, REST API, PPTX conversion, authentication"
-description: "Learn how to convert Excel workbooks to PPTX presentations using Aspose.Cells Cloud REST API (v3.0). Includes cURL request, SDK code samples, authentication, and error handling."
+keywords: "Aspose Cells, Excel to PPTX, spreadsheet conversion, REST API, cloud conversion"
+description: "Learn how to convert Excel workbooks to PPTX presentations with Aspose.Cells Cloud REST API v3.0. Includes cURL request, SDK code samples, authentication, and error handling."
 weight: 90
+ArticleTitle: "Convert Excel to PPTX using Aspose.Cells Cloud API v3.0"
 ---
 
 This REST API converts a spreadsheet file to PPTX format.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -123,7 +127,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PostConvertWorkbookToPptx.py" >}}
+{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1c" "Example_PostConvertWorkbookToPptx.py" >}}
 
 {{< /tab >}}
 

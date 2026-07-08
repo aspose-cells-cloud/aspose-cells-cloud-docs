@@ -10,9 +10,13 @@ aliases:
 keywords: "Aspose Cells, Excel unprotect API, remove workbook protection, REST API, cloud spreadsheet"
 description: "Learn how to remove protection from an Excel workbook using Aspose.Cells Cloud REST API. Includes request syntax, parameters, cURL example, and SDK code in multiple languages."
 weight: 60
+ArticleTitle: "Unprotect Excel Workbook – Aspose.Cells Cloud API"
 ---
 
 Use this REST API to unprotect an Excel workbook.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -60,7 +64,7 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=
 
 ```json
 {
-  "Code": "200",
+  "Code": 200,
   "Status": "OK"
 }
 ```
@@ -76,11 +80,11 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=
 
 Each error returns a JSON object containing `Code` and `Message`.
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectWorkbook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The OpenAPI Specification defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK simplifies integration and reduces boiler‑plate code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

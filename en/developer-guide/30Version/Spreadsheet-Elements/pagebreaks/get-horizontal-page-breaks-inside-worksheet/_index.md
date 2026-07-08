@@ -7,10 +7,15 @@ url: /page-breaks/get-horizontal-page-breaks/
 aliases: [/get-horizontal-page-breaks-inside-worksheet/]
 keywords: "horizontal page breaks, Aspose.Cells Cloud, REST API, Excel worksheet, SDK"
 description: "Retrieve horizontal page breaks from an Excel worksheet via Aspose.Cells Cloud API. Includes endpoint, parameters, cURL example, response format, and SDK snippets for C#, Java, Python, and more."
+ArticleTitle: "Get Horizontal Page Breaks - Aspose.Cells Cloud API Documentation"
 weight: 10
 ---
 
 **Horizontal page break** – a row‑based break that forces the worksheet to start a new printed page after the specified row. This REST API retrieves those horizontal page breaks.
+
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -27,7 +32,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontal
 | folder         | string | query    | The folder path in storage where the file is located. _(optional)_ |
 | storageName    | string | query    | The name of the storage. _(optional)_                              |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreaks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/PageBreaks/GetHorizontalPageBreaks" rel="noopener" title="OpenAPI specification for GetHorizontalPageBreaks">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 

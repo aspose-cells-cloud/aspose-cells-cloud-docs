@@ -2,12 +2,16 @@
 title: "Delete Worksheet Hyperlink"
 type: docs
 url: /hyperlinks/delete/
-keywords: "Aspose.Cells Cloud, delete hyperlink, Excel API, REST delete hyperlink, worksheet hyperlink removal"
 description: "Delete a worksheet hyperlink by index using Aspose.Cells Cloud API. Learn required parameters, authentication, and see code samples for C#, Java, Python, and more."
+keywords: "Aspose.Cells, Cloud, delete hyperlink, Excel API, REST, worksheet hyperlink"
+ArticleTitle: "Delete Worksheet Hyperlink – Aspose.Cells Cloud API Documentation"
 weight: 40
 ---
 
 This REST API deletes a worksheet hyperlink by its index on an Excel worksheet.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### REST API
 

@@ -8,9 +8,13 @@ aliases: [/get-text-items-from-a-worksheet/]
 weight: 20
 keywords: "Aspose.Cells, Cloud API, Excel, worksheet, text items, REST"
 description: "Retrieve all text items from a specific worksheet in an Excel file using Aspose.Cells Cloud REST API. Includes sample cURL, SDK code, authentication steps, and response schema."
+ArticleTitle: "Get Text Items from an Excel Worksheet"
 ---
 
 This REST API reads a worksheet’s text items in an Excel file.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -35,9 +39,9 @@ The request parameters are as follows:
 | folder         | string | query    | No       | Path to the folder that contains the workbook. |
 | storageName    | string | query    | No       | Name of the Aspose Cloud storage.              |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetTextItems) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetTextItems){:target="_blank" rel="noopener noreferrer"} defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -82,6 +86,20 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/sheet1/tex
 
 {{< /tabs >}}
 
+### Response Schema
+
+| Field | Type | Description |
+|-------|------|-------------|
+| **Status** | string | Operation status message. |
+| **TextItems.link** | object | Hyperlink information for the collection. |
+| &nbsp;&nbsp;Href | string | URL of the linked resource. |
+| &nbsp;&nbsp;Rel | string | Relationship type. |
+| &nbsp;&nbsp;Title | string | Human‑readable title of the link. |
+| &nbsp;&nbsp;Type | string | MIME type of the linked resource. |
+| **TextItems.TextItemList** | array of objects | List of text items found in the worksheet. |
+| &nbsp;&nbsp;link | object | Hyperlink for the individual text item (same sub‑fields as above). |
+| &nbsp;&nbsp;Text | string | The actual text string from the worksheet. |
+
 ### Error Handling
 
 The API can return the following HTTP status codes:
@@ -104,7 +122,7 @@ Error responses are returned in JSON format, for example:
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+SDKs simplify integration by handling low‑level details and letting you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud){:target="_blank" rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
@@ -159,3 +177,5 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Related operations: [Find Text in Worksheet](/worksheets/find-text/), [Replace Text in Worksheet](/worksheets/replace-text/)

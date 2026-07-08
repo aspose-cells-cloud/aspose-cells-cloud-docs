@@ -1,12 +1,13 @@
 ---
 title: "Compress Data in an Excel File"
+ArticleTitle: "Compress Data in an Excel File – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Compress Excel Files"
 type: docs
 url: /compress-excel-files/
 aliases: [/compress/]
 keywords: "compress excel files, aspose cells cloud, excel compression, spreadsheet compression, rest api, file compression, excel file compression, xls xlsx compression"
-description: "Use Aspose.Cells Cloud REST API to compress Excel files (XLS, XLSX, XLSM, XLSB, ODS). Choose the compression level, process multiple files at once, and integrate via SDKs for various programming languages."
+description: "Compress Excel files (XLS, XLSX, XLSM, XLSB, ODS) using Aspose.Cells Cloud REST API. Set compression level, handle multiple files, and integrate via SDKs."
 weight: 39
 ---
 
@@ -30,6 +31,30 @@ The request parameters are:
 | file           | file    | formData                    | File to upload                                             |
 | CompressLevel  | integer | query                       | Compression level (0‑100); higher values indicate stronger compression |
 
+**Prerequisites / Notes**  
+Supported formats: XLS, XLSX, XLSM, XLSB, ODS. The maximum file size is 100 MB per request. The endpoint requires OAuth 2.0 JWT authentication; include the `Authorization: Bearer <jwt token>` header.
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+**Error Response Example**
+
+```json
+{
+    "Error": {
+        "Code": "InvalidParameter",
+        "Message": "CompressLevel must be between 0 and 100."
+    }
+}
+```
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
@@ -39,7 +64,8 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/compress?CompressLevel=88" \
+# Use HTTPS for a secure connection
+curl -v "https://api.aspose.cloud/v3.0/cells/compress?CompressLevel=88" \
 -X POST \
 -H "Content-Type: multipart/form-data" \
 -H "Accept: application/json" \

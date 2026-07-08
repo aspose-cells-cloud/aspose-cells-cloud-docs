@@ -5,9 +5,10 @@ linktitle: "Move"
 type: docs
 url: /ranges/move/
 aliases: [/move-a-named-range-with-an-excel-worksheet/]
-keywords: "Aspose.Cells Cloud, move named range, Excel API, REST API, range move, worksheet, SDK examples"
+keywords: "Aspose.Cells Cloud, move named range, Excel worksheet, REST API, range move, SDK examples"
 description: "Learn how to move a named range within an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint details, authentication, request/response examples, and SDK code samples for C#, Java, Python, and more."
 weight: 20
+ArticleTitle: "Move a named range with an Excel worksheet using Aspose.Cells Cloud API"
 ---
 
 This REST API moves a specified range to a destination range on an Excel worksheet.
@@ -34,29 +35,29 @@ The token must have the **Cells** scope.
 
 ### Request Parameters
 
-| Name          | Type   | Location | Description |
-|---------------|--------|----------|-------------|
-| **name**      | string | path     | Name of the workbook file |
-| **sheetName** | string | path     | Name of the worksheet |
-| **destRow**   | integer| query    | Starting row index of the destination range (0‑based) |
+| Name           | Type   | Location | Description |
+|----------------|--------|----------|-------------|
+| **name**       | string | path     | Name of the workbook file |
+| **sheetName**  | string | path     | Name of the worksheet |
+| **destRow**    | integer| query    | Starting row index of the destination range (0‑based) |
 | **destColumn**| integer| query    | Starting column index of the destination range (0‑based) |
-| **range**     | object | body     | Definition of the source range to be moved |
-| **folder**    | string | query    | Folder path where the workbook is stored |
-| **storageName**| string| query    | Name of the Aspose Cloud storage |
+| **range**      | object | body     | Definition of the source range to be moved |
+| **folder**     | string | query    | Folder path where the workbook is stored |
+| **storageName**| string | query    | Name of the Aspose Cloud storage |
 
 ### Request Body
 
-| Field        | Type   | Required | Description |
-|--------------|--------|----------|-------------|
-| **ColumnCount** | integer | No | Number of columns in the source range |
-| **ColumnWidth** | integer | No | Width of each column (in points) |
-| **FirstColumn** | integer | No | Zero‑based index of the first column of the source range |
-| **FirstRow**    | integer | No | Zero‑based index of the first row of the source range |
-| **Name**        | string  | No | Name of the range (if it is a named range) |
-| **RefersTo**    | string  | No | A‑1 style reference that defines the range |
-| **RowCount**    | integer | No | Number of rows in the source range |
-| **RowHeight**   | integer | No | Height of each row (in points) |
-| **Worksheet**   | string  | No | Worksheet that contains the source range |
+| Field          | Type   | Required | Description |
+|----------------|--------|----------|-------------|
+| **ColumnCount**| integer| No | Number of columns in the source range |
+| **ColumnWidth**| integer| No | Width of each column (in points) |
+| **FirstColumn**| integer| No | Zero‑based index of the first column of the source range |
+| **FirstRow**   | integer| No | Zero‑based index of the first row of the source range |
+| **Name**       | string | No | Name of the range (if it is a named range) |
+| **RefersTo**   | string | No | A‑1 style reference that defines the range |
+| **RowCount**   | integer| No | Number of rows in the source range |
+| **RowHeight**  | integer| No | Height of each row (in points) |
+| **Worksheet**  | string | No | Worksheet that contains the source range |
 
 ### Workflow
 
@@ -114,6 +115,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 | 401 | Unauthorized | Invalid or expired JWT token | Authentication fails |
 | 404 | NotFound | Workbook, worksheet, or named range not found | Specified resource does not exist |
 | 500 | InternalServerError | Unexpected server error | Server‑side problem |
+
+**Response Schema**
+
+| Field | Type   | Description |
+|-------|--------|-------------|
+| **Code** | integer | HTTP‑like status code returned by the API (e.g., 200) |
+| **Status** | string | Textual description of the result (e.g., "OK") |
+| **ErrorMessage** | string (optional) | Human‑readable error details when the call fails |
 
 ## Cloud SDK Family
 

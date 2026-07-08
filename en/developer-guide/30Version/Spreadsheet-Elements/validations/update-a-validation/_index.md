@@ -4,17 +4,20 @@ second_title: "Document"
 linktitle: "Update"
 type: docs
 url: /validations/update/
-keywords: "Aspose.Cells Cloud, Excel validation update, REST API, worksheet validation, SDK"
+keywords: "Aspose.Cells Cloud, Excel validation update, REST API, worksheet validation, Excel API"
 description: "How to update a worksheet validation in an Excel file using the Aspose.Cells Cloud REST API, with cURL examples and SDK code snippets for multiple programming languages."
 weight: 10
+ArticleTitle: "Update Worksheet Validation Using Aspose.Cells Cloud API"
 ---
 
 This REST API updates a worksheet validation by its index on an Excel worksheet.
 
+Before calling this endpoint, obtain a JWT access token with the appropriate scopes (e.g., `Cells.ReadWrite`). Include the token in the `Authorization` header as shown in the examples.
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validations/{validationIndex}
 ```
 
 ### **Request parameters**
@@ -28,7 +31,7 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/validation
 | folder          | string  | query    | The folder in cloud storage where the workbook is located.     |
 | storageName     | string  | query    | The name of the storage service (if a custom storage is used). |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/WorksheetValidations/PostWorksheetValidation) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/WorksheetValidations/PostWorksheetValidation" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to call Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -37,7 +40,7 @@ You can use the cURL command‑line tool to call Aspose.Cells web services easil
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/validations/0" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -60,9 +63,27 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/vali
 
 {{< /tabs >}}
 
+**Possible HTTP status codes**
+
+| Code | Meaning                                 | Description |
+|------|-----------------------------------------|-------------|
+| 200  | OK                                      | Validation was updated successfully. |
+| 400  | Bad Request                             | The request is malformed or missing required parameters. |
+| 401  | Unauthorized                            | Invalid or missing JWT token. |
+| 403  | Forbidden                               | The token does not have sufficient scopes. |
+| 404  | Not Found                               | The specified workbook, worksheet, or validation index does not exist. |
+| 500  | Internal Server Error                   | An unexpected error occurred on the server. |
+
+For more details on handling errors, refer to the <a href="https://apireference.aspose.cloud/cells/#/Errors" target="_blank" rel="noopener noreferrer">Aspose.Cells Cloud error documentation</a>.
+
+You may also want to explore related operations such as adding a new validation or deleting an existing one:
+
+- [Add a worksheet validation](https://docs.aspose.cloud/cells/validations/add/)
+- [Delete a worksheet validation](https://docs.aspose.cloud/cells/validations/delete/)
+
 ## Cloud SDK Family
 
-Using an SDK is the fastest way to develop. An SDK abstracts low‑level details, allowing you to focus on your business logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK abstracts low‑level details, allowing you to focus on your business logic. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

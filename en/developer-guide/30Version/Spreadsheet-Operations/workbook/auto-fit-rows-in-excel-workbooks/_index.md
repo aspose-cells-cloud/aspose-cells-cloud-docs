@@ -8,7 +8,11 @@ aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
 keywords: "autofit rows, Excel workbook, Aspose.Cells Cloud, REST API, auto fitter options"
 description: "Learn to automatically adjust row heights in an Excel workbook using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, and SDK snippets for C#, Java, Python, and more."
 weight: 90
+ArticleTitle: "Autofit Rows on an Excel Workbook – Aspose.Cells Cloud API"
 ---
+
+**Prerequisites**  
+Before calling the API, obtain a valid Bearer JWT token from the Aspose authentication service and ensure the target workbook is stored in a supported storage location (default storage or a custom one you have configured).
 
 This REST API enables you to **autofit rows** in an Excel workbook, automatically adjusting row height after data is inserted or modified.
 
@@ -33,6 +37,16 @@ The request parameters include:
 | storageName       | string            | query    | Name of the storage service.                                                    |
 
 **AutoFitterOptions** is an object that specifies how the autofit operation behaves (e.g., `AutoFitMergedCells`, `IgnoreHidden`).
+
+**Status Codes**  
+
+| Code | Description                                 |
+|------|---------------------------------------------|
+| 200  | OK – Rows were successfully autofitted.     |
+| 400  | Bad Request – Invalid parameters or payload.|
+| 401  | Unauthorized – Missing or invalid JWT token.|
+| 404  | Not Found – Specified workbook or resource not found.|
+| 500  | Internal Server Error – Unexpected server condition.|
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -62,9 +76,23 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitrows" \
 }
 ```
 
+*Example error response (e.g., missing workbook):*
+
+```json
+{
+  "Code": 404,
+  "Status": "Not Found",
+  "Message": "The specified workbook 'myWorkbook.xlsx' does not exist."
+}
+```
+
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Notes**  
+- When `AutoFitMergedCells` is set to **true**, merged cells are considered as a single entity during the autofit operation.  
+- Setting `IgnoreHidden` to **true** skips hidden rows and columns, preserving their current dimensions.
 
 ## Cloud SDK Family
 

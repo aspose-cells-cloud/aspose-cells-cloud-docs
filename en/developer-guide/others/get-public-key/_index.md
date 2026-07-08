@@ -5,14 +5,17 @@ ArticleTitle: "Get Public Key"
 linktitle: "Get Public Key"
 type: docs
 url: /get-public-key/
-keywords: "aspose cells cloud, public key API, asymmetric encryption, REST API, Excel API"
-description: "Retrieve the asymmetric public key used for encrypting data with Aspose.Cells Cloud. Learn request format, parameters, sample responses, and SDK usage examples."
+keywords: "Aspose.Cells Cloud, Get Public Key API, RSA public key, asymmetric encryption, Excel API, cloud SDK"
+description: "Retrieve the RSA public key used for encrypting data with Aspose.Cells Cloud. Includes request format, parameters, sample responses, status‑code details, and SDK usage examples."
 weight: 100
 ---
 
 This API retrieves the public key from an asymmetric encryption algorithm.
 
 ## **Get Public Key API**
+
+**Prerequisites:**  
+Obtain a valid OAuth2 access token with the required scopes before invoking this endpoint.
 
 ### **Web API**
 
@@ -41,6 +44,15 @@ GET https://api.aspose.cloud/v4.0/cells/publickey
 }
 ```
 
+**Status Codes**
+
+| Code | Description |
+|------|-------------|
+| 200 | OK – public key returned successfully. |
+| 401 | Unauthorized – missing or invalid OAuth2 token. |
+| 403 | Forbidden – insufficient permissions to access the key. |
+| 500 | Internal Server Error – unexpected server error. |
+
 ## How to Use the Get public key API with SDKs
 
 ### OpenAPI Specification
@@ -49,7 +61,7 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/KeyController
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement get public key for cells with minimal code.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement get public key for cells with minimal code.  
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to interact with Aspose.Cells web services using various SDKs:

@@ -3,8 +3,8 @@ title: "Get Cell Style from a Worksheet – Aspose.Cells Cloud API"
 type: docs
 url: /get-cell-style-from-a-worksheet/
 weight: 10
-keywords: "Aspose.Cells, get cell style, Excel API, REST, cloud SDK, spreadsheet styling"
-description: "Learn how to retrieve the style of a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, response schema, and SDK snippets."
+keywords: "Aspose.Cells, Excel, REST API, cell style, spreadsheet, cloud SDK"
+description: "Retrieve the style of a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL example, response schema, possible HTTP status codes, and SDK snippets."
 ---
 
 Use this REST API to retrieve the **style** of a cell in an Excel worksheet.
@@ -24,6 +24,19 @@ The request parameters are:
 | cellName       | string | path     | The address of the cell (e.g., A1). |
 | folder         | string | query    | The folder that contains the file.  |
 | storageName    | string | query    | The name of the storage to use.     |
+
+**Authentication**  
+The API requires a valid OAuth 2.0 access token (JWT) passed in the `Authorization` header as `Bearer <jwt token>`.
+
+**Possible HTTP responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | OK – style retrieved successfully. |
+| 400 | Bad Request – invalid parameters. |
+| 401 | Unauthorized – authentication failed or token missing. |
+| 404 | Not Found – workbook, worksheet, or cell does not exist. |
+| 500 | Internal Server Error – unexpected server error. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCellStyle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

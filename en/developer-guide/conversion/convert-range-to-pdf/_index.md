@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Web API - Convert Local Excel Range Data to a PDF File - Free Online Tool"
+title: "Convert Excel Range to PDF with Aspose.Cells Cloud API"
 second_title: "Document"
 ArticleTitle: "How to Convert Local Spreadsheet Range Data to a PDF File: Step-by-Step Guide"
 linktitle: "Convert Range to PDF"
 type: docs
 url: /convert-range-to-pdf/
-keywords: "Aspose.Cells Cloud, Convert Range to PDF, Excel to PDF, Spreadsheet Conversion API, REST API, Cloud Conversion"
-description: "Easily convert a specific range from a local Excel spreadsheet to a PDF file using Aspose.Cells Cloud's REST API."
+keywords: "Aspose.Cells Cloud, Convert Excel Range to PDF, Excel to PDF, Cloud Conversion"
+description: "Convert a specific range from a local Excel spreadsheet to PDF using Aspose.Cells Cloud's REST API."
 weight: 100
 ---
 
@@ -16,8 +16,14 @@ Export a range of data from a local Excel file to a [PDF](https://docs.fileforma
 
 ### Web API
 
+**Authentication** – All calls to the Aspose.Cells Cloud API require a valid OAuth 2.0 access token. Obtain the token using your client ID and client secret, then include it in the request header:
+
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/range/pdf
+Authorization: Bearer <access_token>
+```
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/convert/range/pdf
 ```
 
 ### **Request Parameters:**
@@ -47,28 +53,31 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/range/pdf
 ]
 ```
 
+*Typical response is a binary PDF stream returned as a file download.*
+
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
+- **404 Not Found**: The spreadsheet file is not accessible.  
+- **429 Too Many Requests**: Rate limit exceeded; retry after the period specified in the `Retry-After` header.  
 - **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.
 
 ## **Where Should You Use the Convert Range to PDF API?**
 
-- **Financial Statements**: Convert balance sheets, income statements (specific ranges) to PDF for audit‑ready documentation.
-- **Sales Reports**: Transform sales dashboards or commission calculations to distributable PDFs.
-- **Operational Metrics**: Export KPI tables and performance metrics as formal PDF reports.
-- **Contractual Data**: Export pricing tables and service‑level agreements from spreadsheets to PDF attachments.
-- **Audit Trails**: Preserve financial data ranges as uneditable PDF evidence.
-- **Portfolio Summaries**: Export investment performance ranges as client‑ready PDF statements.
-- **Quality Control Reports**: Export inspection data ranges to PDF for compliance records.
+- **Financial Statements**: Convert balance sheets, income statements (specific ranges) to PDF for audit‑ready documentation.  
+- **Sales Reports**: Transform sales dashboards or commission calculations to distributable PDFs.  
+- **Operational Metrics**: Export KPI tables and performance metrics as formal PDF reports.  
+- **Contractual Data**: Export pricing tables and service‑level agreements from spreadsheets to PDF attachments.  
+- **Audit Trails**: Preserve financial data ranges as uneditable PDF evidence.  
+- **Portfolio Summaries**: Export investment performance ranges as client‑ready PDF statements.  
+- **Quality Control Reports**: Export inspection data ranges to PDF for compliance records.  
 - **Inventory Summaries**: Transform stock‑level tables to PDF for management review.
 
 ## Why Should You Use the Convert Range to PDF API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development and comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.
-- **Cost‑Effective**: You can convert range data without first uploading the entire workbook, saving storage space and reducing costs.
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development and comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.  
+- **Cost‑Effective**: You can convert range data without first uploading the entire workbook, saving storage space and reducing costs.  
 - **Preserves Complex Excel Formatting** in a universally accessible PDF format.
 
 ## How to Use the Convert Range to PDF API with SDKs?

@@ -12,6 +12,7 @@ keywords:
     "chart API REST",
     "Aspose.Cells SDK examples",
   ]
+ArticleTitle: "Add a Chart to a Worksheet – Aspose.Cells Cloud API Guide"
 ---
 
 This REST API adds a new chart to a worksheet. **Prerequisite:** a valid JWT token must be supplied in the `Authorization` header.
@@ -19,7 +20,7 @@ This REST API adds a new chart to a worksheet. **Prerequisite:** a valid JWT tok
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ```
 
 The request parameters are:
@@ -54,11 +55,12 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/charts?chartType=Bar&area=B1:F2&title=SalesState" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/charts?chartType=Bar&area=B1:F2&title=SalesState" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
+# No request body is required for this operation
 ```
 
 {{< /tab >}}
@@ -82,6 +84,26 @@ curl -v "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/ch
 - **401 Unauthorized** – Missing or invalid JWT token.
 - **404 Not Found** – Specified workbook, worksheet, or chart does not exist.
 - **500 Internal Server Error** – Unexpected server error.
+
+### Status Codes
+
+| Code | Description |
+|------|-------------|
+| **200** | Chart added successfully. |
+| **201** | Chart created (if the API returns a created status). |
+| **400** | Bad request – invalid parameters. |
+| **401** | Unauthorized – missing or invalid JWT token. |
+| **403** | Forbidden – insufficient permissions to access the storage or workbook. |
+| **404** | Not found – workbook, worksheet, or chart does not exist. |
+| **500** | Internal server error – unexpected condition on the server. |
+
+**Prerequisites**  
+Before calling this endpoint, ensure that you have generated a valid JWT token, the target workbook exists in the specified storage folder, and you have appropriate read/write permissions.
+
+**Notes**  
+The request does **not** require a JSON body; all required information is supplied via query parameters. For more complex chart configurations, refer to the full Chart object definition in the OpenAPI spec.
+
+For related operations such as retrieving, updating, or deleting a chart, see the “Get Chart”, “Update Chart”, and “Delete Chart” documentation pages.
 
 ## Cloud SDK Family
 

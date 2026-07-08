@@ -4,13 +4,22 @@ second_title: "Document"
 linktitle: "Get without using storage"
 type: docs
 url: /metadata/get/
-keywords: "Aspose.Cells, Excel metadata, REST API, cloud SDK, get metadata"
+keywords: "Aspose.Cells, Excel, metadata, REST API, cloud SDK"
 description: "Retrieve built‑in or custom metadata from Excel workbooks using Aspose.Cells Cloud REST API. Includes request format, parameters, sample SDK code, and error handling."
 weight: 23
+ArticleTitle: "Get metadata from Excel files - Aspose.Cells Cloud API"
 ---
 
 This REST API retrieves **metadata** from one or more Excel files.  
 The request must include an `Authorization: Bearer <access_token>` header obtained via the OAuth 2.0 client‑credentials flow.
+
+**Prerequisites**: To call this endpoint you must have a valid access token obtained from the Aspose Cloud OAuth 2.0 token endpoint. Example curl request to acquire a token:
+
+```bash
+curl -X POST "https://api.aspose.cloud/connect/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&client_id=<your_client_id>&client_secret=<your_client_secret>"
+```
 
 ## REST API
 
@@ -49,7 +58,15 @@ POST https://api.aspose.cloud/v3.0/cells/metadata/get
 ]
 ```
 
-The API returns standard HTTP status codes (e.g., **200** for success, **400** for a bad request, **401** for unauthorized access, **404** if the file is not found, and **500** for server errors) together with an error‑response JSON object when applicable.
+| Code | Meaning                 | When                              |
+|------|-------------------------|-----------------------------------|
+| 200  | Success                 | Metadata returned.                |
+| 400  | Bad Request             | Missing file or invalid query.    |
+| 401  | Unauthorized            | Invalid or missing token.         |
+| 404  | Not Found               | Specified file not found.         |
+| 500  | Internal Server Error   | Unexpected server failure.        |
+
+The API returns these standard HTTP status codes together with an error‑response JSON object when applicable.
 
 ### Cloud SDK Family
 

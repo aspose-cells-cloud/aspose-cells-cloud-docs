@@ -5,9 +5,10 @@ linktitle: "Find Without Using Storage"
 type: docs
 url: /search/
 aliases: [/search-without-using-storage/, /search-without-storage/]
-keywords: "Aspose.Cells Cloud, Excel search, find text, REST API, cURL, SDK examples, XLSX, ODS"
-description: "Use the Aspose.Cells Cloud REST API to locate specific text within Excel (XLS, XLSX, XLSM, XLSB) and OpenDocument Spreadsheet (ODS) files. Includes cURL requests and SDK code snippets for multiple programming languages."
+keywords: "Aspose.Cells, Excel, search, API, REST"
+description: "Search for specific text in Excel (XLS, XLSX, XLSM, XLSB) and ODS files using Aspose.Cells Cloud API. Includes cURL and SDK examples."
 weight: 50
+ArticleTitle: "Find Text in Excel Files – Aspose.Cells Cloud API"
 ---
 
 This REST API searches for text within Excel files.
@@ -15,7 +16,7 @@ This REST API searches for text within Excel files.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/search
+POST https://api.aspose.cloud/v3.0/cells/search
 ```
 
 ### Request parameters
@@ -29,20 +30,18 @@ POST http://api.aspose.cloud/v3.0/cells/search
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL. **Make sure you replace `<jwt token>` with a valid JWT token that has the required scope for the Cells API.**
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/search?text=1" \
+curl -v "https://api.aspose.cloud/v3.0/cells/search?text=1" \
   -X POST \
-  -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer <jwt token>" \
-  -F 'file1=@book1.xlsx' \
-  -F 'file2=@book2.xlsx'
+  -F "file=@book1.xlsx"
 ```
 
 {{< /tab >}}
@@ -158,6 +157,15 @@ curl -v "http://api.aspose.cloud/v3.0/cells/search?text=1" \
   }
 ]
 ```
+
+**Response status codes**
+
+- **200 OK** – Successful search; returns a JSON array of matching cells (as shown above).  
+- **400 Bad Request** – Missing required parameters or invalid query values.  
+- **401 Unauthorized** – Invalid or missing JWT token.  
+- **403 Forbidden** – Insufficient permissions to access the workbook.  
+- **404 Not Found** – The specified file or worksheet does not exist.  
+- **500 Internal Server Error** – Unexpected server error.
 
 {{< /tab >}}
 

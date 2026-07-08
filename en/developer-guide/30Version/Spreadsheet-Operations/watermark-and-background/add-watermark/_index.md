@@ -8,7 +8,13 @@ aliases: [/watermark/]
 keywords: "add watermark to Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Learn how to add a text watermark to Excel workbooks using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, required parameters, and response details."
 weight: 39
+ArticleTitle: "Add Watermark to Excel Files – Aspose.Cells Cloud Documentation"
 ---
+
+**Prerequisites**:  
+- Obtain a valid JWT access token from the Aspose authentication endpoint.  
+- Ensure the Excel file you upload is in a supported format (e.g., .xlsx, .xls).  
+- The request must be sent with the `Content-Type: multipart/form-data` header.
 
 This REST API adds a **watermark** to Excel files.
 
@@ -61,13 +67,29 @@ curl -v "https://api.aspose.cloud/v3.0/cells/watermark?text=aspose.cells.cloud&c
 
 The JSON response contains a **Files** array. For each file object:
 
-- **Filename** – name of the processed workbook.
-- **FileSize** – size of the file in bytes.
+- **Filename** – name of the processed workbook.  
+- **FileSize** – size of the file in bytes.  
 - **FileContent** – Base64‑encoded content of the watermarked Excel file; decode it to obtain the actual file.
+
+**HTTP Status Codes**
+
+| Code | Description                                 |
+|------|---------------------------------------------|
+| 200  | Watermark applied successfully.             |
+| 400  | Bad Request – missing or invalid parameters.|
+| 401  | Unauthorized – invalid or expired JWT token.|
+| 500  | Internal Server Error – unexpected failure. |
+
+**Notes**  
+- The `text` parameter supports up to 256 characters.  
+- The `color` value must be a valid ARGB hex string; invalid formats will result in a 400 error.  
+- For large workbooks, consider increasing the request timeout.
 
 {{< /tab >}}
 
 {{< /tabs >}}
+
+A downloadable sample workbook for testing can be found here: [Sample.xlsx](https://example.com/downloads/Sample.xlsx).
 
 ## Cloud SDK Family
 
@@ -126,3 +148,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+[Back to Watermark and Background Index](#)

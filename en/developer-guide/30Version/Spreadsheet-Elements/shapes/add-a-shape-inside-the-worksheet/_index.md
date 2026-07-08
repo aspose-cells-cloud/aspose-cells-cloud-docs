@@ -5,18 +5,22 @@ linktitle: "Add"
 type: docs
 url: /shapes/add/
 aliases: [/add-a-shape-inside-the-worksheet/]
-keywords: "Aspose.Cells, add shape, Excel API, REST API, cloud SDK, shapeDTO, drawing type"
+keywords: "Aspose.Cells, add shape, Excel, REST API, cloud SDK, shapeDTO, drawing type"
 description: "Learn how to add shapes (arc, line, rectangle, etc.) to an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes request syntax, required parameters, authentication steps, and sample SDK code."
 weight: 30
+ArticleTitle: "Add a Shape to an Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
 This REST API adds a shape to an Excel worksheet.  
 The endpoint belongs to **API version v3.0**; ensure that you use a JWT access token obtained through the Aspose Cloud OAuth2 flow (client‑id/client‑secret) and include it in the `Authorization: Bearer <token>` header.
 
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
 ### **Request parameters**
@@ -66,17 +70,26 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/shapes
 
 _The successful response returns the HTTP status code, a textual status, and the identifier of the newly created shape (`ShapeId`)._
 
-Typical error responses include:
-
-- **400 Bad Request** – missing or invalid parameters.
-- **401 Unauthorized** – invalid or missing JWT token.
-- **404 Not Found** – the specified worksheet or document does not exist.
-
-Each error is returned as a JSON object containing `Code` and `Message` fields.
-
 {{< /tab >}}
 
 {{< /tabs >}}
+
+### Response Codes
+
+| Code | Description                     |
+|------|---------------------------------|
+| 200  | Shape added successfully.       |
+| 400  | Bad Request – missing/invalid parameters. |
+| 401  | Unauthorized – invalid or missing JWT token. |
+| 404  | Not Found – worksheet or document does not exist. |
+
+Typical error responses include:
+
+- **400 Bad Request** – missing or invalid parameters.  
+- **401 Unauthorized** – invalid or missing JWT token.  
+- **404 Not Found** – the specified worksheet or document does not exist.
+
+Each error is returned as a JSON object containing `Code` and `Message` fields.
 
 ## Cloud SDK Family
 

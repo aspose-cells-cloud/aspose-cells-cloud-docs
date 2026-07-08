@@ -4,14 +4,20 @@ second_title: "Document"
 linktitle: "Remove Characters"
 type: docs
 url: /excel-remove-characters/
-keywords: "remove characters, Excel, Aspose.Cells Cloud, API, POST, text cleaning, data sanitization"
-description: "Learn how to use Aspose.Cells Cloud API to delete custom characters, character sets, or substrings from Excel worksheets. Includes request schema, sample cURL, SDK code, and error handling."
+keywords: "remove characters, Aspose.Cells, Excel API, text processing, cloud"
+description: "Learn how to remove characters, character sets, or substrings from Excel worksheets using Aspose.Cells Cloud API. Includes request schema, cURL example, SDK code, and error handling."
 weight: 100
+ArticleTitle: "Remove Characters from Excel – Aspose.Cells Cloud API (POST /cells/removecharacters)"
 ---
 
 A comprehensive set of tools for cleaning text content within selected cells. The API removes specific characters, predefined character sets, or substrings, ensuring that worksheet text is standardized and free from unwanted symbols.
 
 ## Remove Characters from Excel Web API
+
+> **Prerequisites / Authentication**  
+> • An active Aspose Cloud account with a valid **OAuth 2.0** access token.  
+> • The target workbook must be uploaded to Aspose Cloud storage or referenced via a public URL.  
+> • Include the `Authorization: Bearer {access_token}` header in every request.
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/removecharacters
@@ -19,13 +25,13 @@ POST https://api.aspose.cloud/v3.0/cells/removecharacters
 
 ### Function Description
 
-- **Remove custom characters** – Specify any characters you want to delete. Enter each character in the _Remove custom characters_ field; the API will delete every occurrence of those characters in the selected cells.
-- **Remove character sets** – Choose from the predefined sets:
-  - **Non‑printing characters** – Deletes line‑breaks and the first 32 non‑printing ASCII characters (0‑31) plus additional codes (127, 129, 141, 143, 144, 157).
-  - **Text characters** – Removes all letters.
-  - **Numeric characters** – Deletes all digits.
-  - **Symbols** – Removes mathematical, geometric, technical, currency symbols and letter‑like symbols such as “?”, “1”, and “™”.
-  - **Punctuation marks** – Eliminates all punctuation.
+- **Remove custom characters** – Specify any characters you want to delete. Enter each character in the _Remove custom characters_ field; the API will delete every occurrence of those characters in the selected cells.  
+- **Remove character sets** – Choose from the predefined sets:  
+  - **Non‑printing characters** – Deletes line‑breaks and the first 32 non‑printing ASCII characters (0‑31) plus additional codes (127, 129, 141, 143, 144, 157).  
+  - **Text characters** – Removes all letters.  
+  - **Numeric characters** – Deletes all digits.  
+  - **Symbols** – Removes mathematical, geometric, technical, currency symbols and letter‑like symbols such as “?”, “1”, and “™”.  
+  - **Punctuation marks** – Eliminates all punctuation.  
 - **Remove a substring** – Deletes any specified substring (e.g., a word) from the selected cells.
 
 ### Request Parameters
@@ -54,6 +60,21 @@ POST https://api.aspose.cloud/v3.0/cells/removecharacters
   "Substring": "USD",
   "IgnoreCase": true
 }
+```
+
+**Sample cURL request**
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/removecharacters" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -d '{
+           "Range": "A1:B20",
+           "CustomCharacters": "@#$",
+           "CharacterSet": "NonPrinting",
+           "Substring": "USD",
+           "IgnoreCase": true
+         }'
 ```
 
 ### Response Description
@@ -99,6 +120,26 @@ POST https://api.aspose.cloud/v3.0/cells/removecharacters
       }
     }
   ]
+}
+```
+
+#### Status Codes
+
+| Code | Description                                   |
+|------|-----------------------------------------------|
+| 200  | Request succeeded; characters removed.        |
+| 400  | Bad request – missing or invalid parameters. |
+| 401  | Unauthorized – invalid or missing token.      |
+| 404  | Not found – specified workbook or range not found. |
+| 500  | Internal server error.                        |
+
+#### Error Response Schema
+
+```json
+{
+  "Code": "ErrorCode",
+  "Message": "Human‑readable error message.",
+  "Description": "Detailed description of the error."
 }
 ```
 

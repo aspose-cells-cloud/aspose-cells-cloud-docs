@@ -23,3 +23,43 @@ The `AutoFitterOptions` object lets you fine‑tune the automatic row‑height a
 | **AutoFitWrappedTextType** | **string**  | Controls how wrapped text within cells is auto‑fitted.                                          | Allowed values: `All`, `OnlyWrapped`, `None`. Default: `All`. Sample JSON: `"AutoFitWrappedTextType":"All"` |
 | **FormatStrategy**         | **string**  | Specifies the formatting strategy used during the auto‑fit operation.                           | Common values: `AutoFit`, `PreserveExisting`. Default: `AutoFit`. Sample JSON: `"FormatStrategy":"AutoFit"` |
 | **ForRendering**           | **string**  | Indicates whether the auto‑fit should be performed for rendering purposes (e.g., PDF, image).   | Allowed values: `True`, `False`. Default: `False`. Sample JSON: `"ForRendering":"False"`                    |
+
+Below is a typical JSON payload that can be sent to the API when configuring `AutoFitterOptions`.
+
+```json
+{
+  "AutoFitMergedCellsType": "All",
+  "IgnoreHidden": false,
+  "OnlyAuto": false,
+  "DefaultEditLanguage": "en-US",
+  "MaxRowHeight": 0,
+  "AutoFitWrappedTextType": "All",
+  "FormatStrategy": "AutoFit",
+  "ForRendering": "False"
+}
+```
+
+A sample `cURL` request that applies these options to a workbook:
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/workbook/autoFitter" \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Content-Type: application/json" \
+  -d @autoFitterOptions.json
+```
+
+**Endpoint reference**
+
+| Method | URL | Required Parameters | Description |
+|--------|-----|---------------------|-------------|
+| PUT    | `/cells/workbook/autoFitter` | `autoFitterOptions` (JSON body) | Applies the specified `AutoFitterOptions` to the target workbook. |
+| GET    | `/cells/workbook/autoFitter` | *none* | Retrieves the current `AutoFitterOptions` settings for the workbook. |
+
+Typical response codes:
+
+- **200 OK** – Operation completed successfully.  
+- **400 Bad Request** – Invalid JSON payload or unsupported value.  
+- **401 Unauthorized** – Missing or invalid authentication token.  
+- **500 Internal Server Error** – Unexpected server error.
+
+These examples illustrate how to configure and invoke the `AutoFitterOptions` model within the Aspose.Cells Cloud API.

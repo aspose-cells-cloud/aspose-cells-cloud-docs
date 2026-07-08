@@ -1,16 +1,18 @@
 ---
 title: "Aspose.Cells Cloud Upload File API – An Interface for Fast Uploading of Files in the Cloud"
 second_title: "Document"
-ArticleTitle: "Cloud-Based Excel File Management Solution – An Interface for Fast Uploading of Files in the Cloud"
+ArticleTitle: "Aspose.Cells Cloud Upload File API – An Interface for Fast Uploading of Files in the Cloud"
 linktitle: "Upload File"
 type: docs
 url: /upload-file/
-keywords: "Aspose.Cells, file upload, Excel API, cloud storage, REST API, spreadsheet, PDF, CSV, JSON, Markdown"
-description: "A comprehensive guide to uploading files with the Aspose.Cells Cloud API, covering request parameters, response format, and usage examples."
+keywords: "Aspose.Cells, file upload, Excel API, cloud storage, REST API"
+description: "Guide to uploading files with Aspose.Cells Cloud API, covering request parameters, HTTP status codes, error handling, and code examples."
 weight: 100
 ---
 
 ## **Aspose Cells API: Upload File**
+
+**Prerequisites**: Before calling this endpoint you must obtain an OAuth 2.0 access token using your Aspose Cloud client ID and client secret. Include the token in the `Authorization: Bearer {access_token}` header. The token must have the **Storage** scope. See the authentication guide for details.
 
 ```
 PUT http://api.aspose.cloud/v4.0/cells/storage/file/{path}
@@ -27,6 +29,15 @@ The **uploadFile** API enables developers to upload files directly to cloud stor
 | UploadFiles | File | FormData | Upload files to cloud storage. |
 | path | String | Path | The destination path in the cloud storage. Specify the path where the file should be uploaded. |
 | storageName | String | Query | The name of the storage where the file will be uploaded. |
+
+**cURL Example**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/file/Folder/Book1.xlsx" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "UploadFiles=@/path/to/Book1.xlsx" \
+  -F "path=Folder/Book1.xlsx"
+```
 
 ### **Response Description**
 
@@ -80,6 +91,25 @@ The **uploadFile** API enables developers to upload files directly to cloud stor
 }
 ```
 
+The API returns the following HTTP status codes:
+
+| Status Code | Description |
+|-------------|-------------|
+| **200 OK** | File uploaded successfully. |
+| **400 Bad Request** | Invalid parameters or malformed request. |
+| **401 Unauthorized** | Missing or invalid authentication token. |
+| **403 Forbidden** | Insufficient permissions for the specified storage. |
+| **500 Internal Server Error** | Unexpected server error. |
+
+For a complete list of error codes, refer to the [Error Codes reference](/error-codes/).
+
+**Best Practices**
+
+- Ensure the file size does not exceed the service limit (default 500 MB).  
+- Use HTTPS endpoints to protect data in transit.  
+- Retry transient failures (e.g., 5xx responses) with exponential back‑off.  
+- Validate file formats before uploading to avoid unnecessary errors.
+
 ## OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/UploadFile) provides a detailed description of the API, enabling developers to interact with it directly via a web browser.
@@ -116,3 +146,9 @@ The following code examples illustrate how to call Aspose.Cells web services usi
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_UploadFile.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+**See also**
+
+- [Download File API](/download-file/) – Retrieve a file from cloud storage.  
+- [Copy File API](/copy-file/) – Duplicate a file within cloud storage.  
+- [Delete File API](/delete-file/) – Remove a file from cloud storage.  

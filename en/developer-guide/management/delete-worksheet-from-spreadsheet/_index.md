@@ -12,15 +12,19 @@ weight: 100
 
 Programmatically delete worksheets from Excel workbooks using Aspose.Cells Cloud API. Safely remove single or multiple sheets, clean up workbook structure, and automate spreadsheet optimization. RESTful API for enterprise‑grade Excel management and document‑processing workflows.
 
-## **Delete worksheet from Spreadsheet API**
+## Delete worksheet from Spreadsheet API
+
+**Prerequisites**: To call this API you must have a valid Aspose Cloud access token. Obtain it by creating an application in the Aspose Cloud Dashboard and using the client ID and secret to request a JWT token. Include the token in the `Authorization: Bearer {access_token}` header.
 
 ### Web API
 
-```http
-DELETE https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets/{sheetName}
+```bash
+curl -X DELETE "https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets/Sheet1?outPath=output.xlsx" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json"
 ```
 
-### **Request Parameters:**
+### Request Parameters:
 
 | Parameter Name | Type   | Location | Description                                                                                                                                                                                             |
 | :------------- | :----- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -31,7 +35,7 @@ DELETE https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets/{sheetName}
 | region         | String | Query    | **Optional.** The locale setting (e.g., `it-IT`) that may affect region‑specific formulas or data during the save operation.                                                                            |
 | password       | String | Query    | **Optional.** The password required to open and modify a password‑protected spreadsheet. Omit if the file is not encrypted.                                                                             |
 
-### **Response**
+### Response
 
 ```json
 [

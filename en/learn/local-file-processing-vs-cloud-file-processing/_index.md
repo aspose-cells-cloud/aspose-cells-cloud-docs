@@ -5,12 +5,14 @@ ArticleTitle: "What is the difference between local file processing and cloud fi
 linktitle: "Local File Processing vs. Cloud File Processing"
 type: docs
 url: /learn/local-file-processing-vs-cloud-file-processing/
-description: "Compare Aspose.Cells Cloud local‑file and cloud‑file processing: storage, cost, security, and typical scenarios. Learn which approach fits your workflow."
+description: "Compare Aspose.Cells Cloud local‑file and cloud‑file processing: storage, cost, security, and typical scenarios. Learn which approach fits your workflow and start converting today."
 keywords: "Aspose.Cells Cloud, local file processing, cloud file processing, Excel API, PDF conversion"
 weight: 10
 ---
 
 Local file processing and cloud file processing are different data management paradigms, with significant differences in file storage infrastructure, business processing, access, cost structure, security, and applicable scenarios. The main differences between the two are:
+
+**Prerequisites:** Before using the examples, ensure you have a valid Aspose.Cells Cloud account, the latest SDK version installed, and your Client Id and Client Secret ready for authentication.
 
 ## 1. File storage location and infrastructure
 
@@ -116,3 +118,5 @@ Regardless of local file processing or cloud file processing, all business proce
 
 - Local file: File operations can only be performed locally.  
 - Cloud file: File operations can be performed locally or in the cloud.  
+
+**Notes / Limitations:** The API supports files up to 200 MB for cloud processing, and only the formats listed in the documentation can be converted. Network latency may affect processing time for large spreadsheets.

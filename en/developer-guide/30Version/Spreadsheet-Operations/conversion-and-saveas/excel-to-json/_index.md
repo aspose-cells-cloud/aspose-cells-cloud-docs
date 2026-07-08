@@ -7,15 +7,21 @@ url: /convert-excel-file-to-json-file/
 keywords: "Aspose.Cells, Excel to JSON, Cloud API, spreadsheet conversion, REST API"
 description: "Learn how to convert Excel spreadsheets to JSON files with Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets (C#, Java, Python), required parameters, authentication, and response format."
 weight: 100
+ArticleTitle: "Convert Excel to JSON using Aspose.Cells Cloud API – Quick Guide"
 ---
 
-This REST API converts a spreadsheet file to a JSON‑formatted file.
+This REST API converts a spreadsheet file to a JSON‑formatted file.  
+Last updated: July 2026
+
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### REST API
 
 | **API**             | **Type** | **Description**                       | **Swagger Link**                                                                                         |
 | ------------------- | -------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| /cells/convert/json | POST     | Convert a spreadsheet to a JSON file. | [PostConvertWorkbookToJson](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToJson) |
+| /cells/convert/json | POST     | Convert a spreadsheet to a JSON file. | <a href="https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToJson" rel="noopener noreferrer" title="Aspose.Cells API reference – Convert Workbook to JSON">PostConvertWorkbookToJson</a> |
 
 ### Request
 
@@ -78,7 +84,16 @@ Common HTTP status codes:
 - **401** – Unauthorized (invalid or missing access token).
 - **500** – Internal server error.
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToJson) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+**Status Codes**
+
+| Status Code | Description                                            |
+|-------------|--------------------------------------------------------|
+| 200         | Success – JSON file returned.                          |
+| 400         | Bad request – missing file or invalid parameters.     |
+| 401         | Unauthorized – invalid or missing access token.        |
+| 500         | Internal server error.                                 |
+
+The <a href="https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToJson" rel="noopener noreferrer" title="Aspose.Cells OpenAPI Specification – Convert Workbook to JSON">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -112,7 +127,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/json" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer" title="Aspose.Cells Cloud SDKs on GitHub">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

@@ -5,12 +5,14 @@ ArticleTitle: "Excel Text Splitter – Segment Cell Content into Multiple Column
 linktitle: "Split Text"
 type: docs
 url: /split-text/
-keywords: "Aspose Cells split text API, Excel text segmentation, split cell content, delimiter split, cloud API"
+keywords: "Aspose, Cells, Split Text API, Excel, delimiter, text segmentation, cloud API"
 description: "Easily split Excel cell text into separate columns or rows using Aspose.Cells Cloud. Supports custom delimiters, masks, line‑breaks, and optional delimiter retention. Get started with curl or SDKs in minutes."
 weight: 100
 ---
 
 Segment Excel cell text into multiple columns using custom segmentation rules. Split content by delimiter and output to specified ranges with the Aspose.Cells Cloud text‑splitting Web API.
+
+![Excel cell split example](https://example.com/images/split-text-illustration.png "Excel cell split into multiple columns using Aspose.Cells Cloud API")
 
 ## **Introduction**: Split Text
 
@@ -24,6 +26,8 @@ The Text Segmentation API divides cell contents into multiple cells based on spe
 - **Remove or keep delimiters** – decide whether delimiters are removed or retained at the beginning or end of the resulting cells.
 
 ## **SplitText API**
+
+**Prerequisites**: To use this API you need a valid Aspose Cloud access token, and the workbook to be processed must be uploaded to Aspose Cloud storage or supplied directly in the request. The API supports common spreadsheet formats such as XLSX, XLS, ODS, and CSV.
 
 ### Web API
 

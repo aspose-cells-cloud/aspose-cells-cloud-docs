@@ -1,18 +1,24 @@
 ---
 title: "Update Chart Second Value Axis"
+ArticleTitle: "Update Chart Second Value Axis – Aspose.Cells Cloud REST API"
 type: docs
 url: /charts/second-value-axis/update/
 weight: 160
-keywords: "Aspose.Cells, REST API, Excel, Update Chart Second Value Axis, Cloud SDK"
-description: "Updates the second value axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API."
+keywords: "Aspose.Cells, Chart API, Second Value Axis, Excel, REST, Cloud SDK"
+description: "Updates the second value axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request examples, response codes, and prerequisites."
 ---
 
 This REST API updates the second value axis of a chart.
 
+**Prerequisites:**  
+- A valid JWT access token (see the [Authentication guide](https://docs.aspose.cloud/cells/authentication/)).  
+- The target Excel file must be stored in Aspose Cloud storage (provide `folder` and optional `storageName`).  
+- API version v3.0 is used; ensure the base URL is `https://api.aspose.cloud/v3.0`.
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis
 ```
 
 ### Request parameters
@@ -26,6 +32,21 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 | folder         | string  | query    | Folder path in storage where the file is located. |
 | storageName    | string  | query    | Name of the storage service.                      |
 
+**Example request body (JSON):**
+
+```json
+{
+  "IsAutomaticMajorUnit": true,
+  "Maximum": 100,
+  "Minimum": 0,
+  "MajorUnit": 10,
+  "MinorUnit": 2,
+  "Title": {
+    "Text": "Secondary Axis"
+  }
+}
+```
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostChartSecondValueAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
@@ -35,7 +56,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis" \
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -56,6 +77,20 @@ curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Response Codes**
+
+| Code | Meaning | Description |
+|------|---------|-------------|
+| 200 | OK | Axis updated successfully. |
+| 400 | Bad Request | Invalid parameters or malformed JSON. |
+| 401 | Unauthorized | Missing or invalid JWT token. |
+| 404 | Not Found | File, worksheet, or chart not found. |
+| 500 | Internal Server Error | Unexpected server error. |
+
+**See also:**  
+- [Get Chart Second Value Axis](https://docs.aspose.cloud/cells/charts/second-value-axis/get/)  
+- [Update Chart Value Axis](https://docs.aspose.cloud/cells/charts/value-axis/update/)
 
 ## Cloud SDK Family
 

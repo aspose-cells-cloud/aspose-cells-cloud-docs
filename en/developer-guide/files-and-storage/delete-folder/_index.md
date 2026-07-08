@@ -4,8 +4,8 @@ ArticleTitle: "Delete Folder – Aspose.Cells Cloud API"
 linktitle: "Delete Folder"
 type: docs
 url: /delete-folder/
-keywords: "Aspose.Cells delete folder, cloud storage, REST API, Excel file management, recursive delete"
-description: "Learn how to delete a folder (optionally recursively) from Aspose.Cells Cloud storage using the DELETE /v4.0/cells/storage/folder/{path} endpoint. Includes request syntax, parameters, sample code, and error handling."
+keywords: "Aspose.Cells, delete folder, cloud storage API, REST, Excel file management"
+description: "Learn how to delete a folder (optionally recursively) from Aspose.Cells Cloud storage using the DELETE /v4.0/cells/storage/folder/{path} endpoint. Includes request syntax, parameters, prerequisites, sample code, and error handling."
 weight: 100
 ---
 
@@ -20,6 +20,10 @@ DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ### Function Description
 
 The `deleteFolder` API removes a specified folder from Aspose.Cells Cloud storage. It can delete the folder alone or, when the `recursive` flag is set to `true`, remove the folder together with all of its contents.
+
+Developers often need to remove temporary or obsolete folders in cloud storage as part of cleanup or automation workflows.
+
+**Prerequisites:** A valid Aspose.Cells Cloud authentication token and, if applicable, the name of the storage where the folder resides must be provided.
 
 ### Request Parameters
 
@@ -48,6 +52,11 @@ A successful call returns **HTTP 200 OK** with an empty body:
 | 404         | Not found – the specified folder does not exist.                                          |
 | 409         | Conflict – folder cannot be deleted because it contains items and `recursive` is not set. |
 | 500         | Internal server error – unexpected condition on the server.                               |
+
+**See Also**  
+- [Create Folder](/create-folder/)  
+- [Copy Folder](/copy-folder/)  
+- [Move Folder](/move-folder/)
 
 ### OpenAPI Specification
 

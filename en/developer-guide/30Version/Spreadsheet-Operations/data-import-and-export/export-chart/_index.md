@@ -5,12 +5,19 @@ linktitle: "Chart"
 type: docs
 url: /export-excel-chart-to-different-formats/
 aliases: [/export/excel-chart-to-different-formats/]
-description: "Learn how to export Excel chart objects to PNG, JPEG, PDF, SVG, TIFF, EMF, WMF, and other formats using Aspose.Cells Cloud REST API or SDKs. Includes authentication, a cURL example, and code samples for multiple languages."
-keywords: "Aspose.Cells, export chart, Excel chart export, REST API, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK"
+description: "Export Excel chart objects to popular formats such as PNG, JPEG, PDF, SVG, TIFF, EMF, WMF, and more using Aspose.Cells Cloud REST API or SDKs. Includes authentication, a cURL example, and code samples for multiple languages."
+keywords: "Aspose.Cells, export chart, Excel chart export, REST API, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK, chart formats, Aspose Cells Cloud"
 weight: 20
+ArticleTitle: "Export Excel Chart – Document"
 ---
 
+Exporting chart objects from an Excel workbook to various image and document formats is a common requirement for reporting and publishing. Aspose.Cells Cloud provides a simple REST endpoint that converts charts directly to popular formats such as PNG, JPEG, PDF, SVG, TIFF, EMF, WMF, and more.
+
 You can export charts to the following formats: [PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/), and [PDF](https://docs.fileformat.com/pdf/).
+
+**See also**
+- [Export Excel Worksheet to Different Formats](/export-excel-worksheet-to-different-formats/)
+- [Export Excel Picture to Different Formats](/export-excel-picture-to-different-formats/)
 
 ## **REST API**
 
@@ -20,7 +27,11 @@ You can export charts to the following formats: [PNG](https://docs.fileformat.co
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-All requests must include a valid OAuth 2.0 Bearer token in the `Authorization` header. The example below shows how to call the API with **cURL** and upload a workbook using multipart/form‑data.
+All requests must include a valid OAuth 2.0 Bearer token in the `Authorization` header. The example below shows how to call the API with **cURL** and upload a workbook using multipart/form‑data.
+
+**Parameters**
+- `objectType` (string, required): The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc.
+- `format` (string, required): Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.
 
 ### **Request**
 
@@ -81,6 +92,12 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format
   ]
 }
 ```
+
+**Status Codes**
+- `200 OK` – The chart was exported successfully; the response contains a JSON array with file details.
+- `400 Bad Request` – Invalid query parameters (e.g., unsupported format) or missing required `objectType`.
+- `401 Unauthorized` – Missing or invalid OAuth 2.0 access token.
+- `500 Internal Server Error` – An unexpected error occurred on the server.
 
 ## **Cloud SDK Family**
 

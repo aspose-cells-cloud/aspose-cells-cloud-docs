@@ -1,16 +1,19 @@
 ---
-title: "Aspose.Cells Cloud Web API - Export a Remote Spreadsheet Table to Another Format"
+title: "Export Table – Aspose.Cells Cloud API | Convert Excel to PDF, PNG, CSV"
 second_title: "Document"
 ArticleTitle: "How to Export a Remote Spreadsheet Table to Another Format: Step‑by‑Step Guide"
 linktitle: "Export Table to Specified Format"
 type: docs
 url: /export-table-as-format/
 keywords: "Aspose.Cells, Export Table, API, PDF, PNG, CSV, JSON, Cloud, Excel, REST"
-description: "Convert a table from a cloud‑stored Excel workbook to PDF, PNG, CSV, JSON, or other formats using Aspose.Cells Cloud API. Secure HTTPS endpoint, authentication, and sample code in 8 languages."
+description: "Export a remote Excel table to PDF, PNG, CSV, JSON, or other formats using Aspose.Cells Cloud API. Secure HTTPS endpoint with JWT authentication and SDK examples."
 weight: 100
 ---
 
 Export a cloud‑stored spreadsheet (Excel) table to another format file.
+
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## **Export Table as Format API**
 
@@ -68,7 +71,7 @@ GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/tables/{ta
 ## Why Should You Use the Export Table to Another Format API?
 
 - **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart‑rendering solutions, this significantly reduces development workload.
-- **Reduced Labor Costs**: Decreases the need for positions dedicated to document consolidation.
+- **Reduced Labor Costs**: Decreases the need to dedicate positions to document consolidation.
 - **Pay‑per‑Use**: No upfront investment; you only pay for API calls actually used.
 - **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
 - **The API returns only the raw table data without any workbook styling.**
@@ -77,11 +80,11 @@ GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/tables/{ta
 
 ### Export Table as Format API Specification
 
-The [Export Table as Format API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportTableAsFormat) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportTableAsFormat" target="_blank" rel="noopener noreferrer">Export Table as Format API Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to export a spreadsheet table to a format file with short code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to export a spreadsheet table to a format file with short code. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

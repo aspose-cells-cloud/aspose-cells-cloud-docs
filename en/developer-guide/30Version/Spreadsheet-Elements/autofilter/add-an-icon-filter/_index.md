@@ -5,12 +5,17 @@ linktitle: "Add icon filter"
 type: docs
 url: /autofilter/add-icon-filter/
 aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
-keywords: "Aspose.Cells Cloud, Excel icon filter, REST API, auto filter, spreadsheet automation, icon set, HTTP PUT"
-description: "Learn how to add an icon filter to an Excel worksheet using Aspose.Cells Cloud REST API. Includes HTTPS endpoint, required parameters, cURL example, SDK code samples, and error handling."
+keywords: "Aspose.Cells Cloud, Excel, Icon Filter, AutoFilter, REST API"
+description: "Learn how to add an icon filter to an Excel worksheet using Aspose.Cells Cloud REST API with request details, cURL example, SDK code samples, and error handling."
 weight: 65
+ArticleTitle: "Add an Icon Filter to an Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
 
 This REST API adds an **icon filter** to an Excel worksheet using the **Aspose.Cells Cloud REST API**.
+
+**Prerequisites:** To call this endpoint you must have a valid OAuth/JWT access token obtained from Aspose Cloud authentication service, and the target workbook must reside in a storage location accessible to the API (default Aspose Cloud storage or a specified `storageName`). Ensure the `folder` path is correct and the workbook is uploaded prior to applying the filter.
+
+**Background:** An icon filter applies a visual icon set to cells based on their values, allowing quick visual analysis of data trends. Common use‑cases include highlighting performance metrics, status indicators, or categorizing values with traffic‑light icons directly within Excel worksheets.
 
 ## REST API
 
@@ -42,7 +47,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/iconFilter?range=A1:B1&fieldIndex=0&iconSetType=ArrowsGray3&iconId=1" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/iconFilter?range=A1:B1&fieldindex=0&iconsettype=ArrowsGray3&iconid=1" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -60,6 +65,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 }
 ```
 
+Possible response status codes:
+
+| Code | Description |
+|------|-------------|
+| 200 | Filter applied successfully. |
+| 400 | Bad request – missing or invalid parameters. |
+| 401 | Unauthorized – invalid or missing authentication token. |
+| 404 | Workbook, worksheet, or specified range not found. |
+| 500 | Internal server error. |
 {{< /tab >}}
 
 {{< /tabs >}}
@@ -121,3 +135,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+For other AutoFilter capabilities, see the documentation on **[Add Color Filter](/autofilter/add-color-filter/)**, **[Add Date Filter](/autofilter/add-date-filter/)**, and **[Clear AutoFilter](/autofilter/clear-autofilter/)**.

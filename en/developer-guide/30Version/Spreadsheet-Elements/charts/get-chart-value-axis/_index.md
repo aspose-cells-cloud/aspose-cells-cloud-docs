@@ -4,7 +4,8 @@ type: docs
 url: /charts/value-axis/get/
 weight: 60
 keywords: Aspose.Cells, Chart Value Axis, REST API, Excel, Cloud SDK, Get Chart Value Axis
-description: Retrieves the value axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API.
+description: "Aspose.Cells Cloud REST API – Retrieve the value axis of a chart in an Excel worksheet."
+ArticleTitle: "Get Chart Value Axis – Aspose.Cells Cloud REST API"
 ---
 
 This REST API retrieves the value axis of a chart.
@@ -12,7 +13,7 @@ This REST API retrieves the value axis of a chart.
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis
 ```
 
 ### Request parameters
@@ -34,7 +35,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis" \
+curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis" \
  -X GET \
  -H "Content-Type: application/json" \
  -H "Accept: application/json" \
@@ -51,6 +52,8 @@ curl -v "http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
   "Status": "OK"
 }
 ```
+
+The response contains a minimal status object. In a full implementation, the payload may also include properties that describe the axis (e.g., minimum, maximum, major unit, minor unit, title, and formatting details).  
 
 {{< /tab >}}
 

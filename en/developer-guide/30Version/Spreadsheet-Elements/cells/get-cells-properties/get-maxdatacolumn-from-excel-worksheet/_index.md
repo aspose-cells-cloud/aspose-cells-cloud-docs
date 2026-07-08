@@ -5,9 +5,38 @@ url: /get-maxdatacolumn-from-excel-worksheet/
 weight: 70
 keywords: "Aspose.Cells Cloud, Get MaxDataColumn, Excel worksheet, REST API, v3.0, SDK"
 description: "Retrieve the highest column index that contains data in a specified worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes authentication details, sample request/response, and SDK examples."
+ArticleTitle: "Aspose.Cells Cloud API – Get MaxDataColumn of an Excel Worksheet (v3.0)"
 ---
 
 This REST API returns the maximum data‑column index in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxdatacolumn`.
+
+**Request Details**
+
+| Item               | Description |
+|--------------------|-------------|
+| **Method**         | `GET` |
+| **Endpoint**       | `/cells/{fileName}/worksheets/{sheetName}/cells/maxdatacolumn` |
+| **Path Parameters** | `fileName` – name of the Excel file (string, required) <br> `sheetName` – name of the worksheet (string, required) |
+| **Query Parameters** | `folder` – path to the folder containing the file (optional) <br> `storageName` – name of the storage (optional) |
+| **Headers**        | `Authorization: Bearer <access_token>` <br> `Accept: application/json` |
+
+**Response Codes**
+
+| Code | Meaning | Description |
+|------|---------|-------------|
+| `200 OK` | Success | Returns a JSON object with the `MaxDataColumn` value. |
+| `401 Unauthorized` | Authentication required | Invalid or missing access token. |
+| `404 Not Found` | Resource not found | The specified file or worksheet does not exist. |
+| `500 Internal Server Error` | Server error | An unexpected error occurred on the server. |
+
+**Error Response Example**
+
+```json
+{
+  "Code": "InvalidFileName",
+  "Message": "The file 'myWorkbook.xlsx' could not be found."
+}
+```
 
 ## **cURL Example**
 
@@ -103,3 +132,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+*Related API examples:* [Get MaxRow](../get-maxrow-from-excel-worksheet/), [Get MaxColumn](../get-maxcolumn-from-excel-worksheet/).

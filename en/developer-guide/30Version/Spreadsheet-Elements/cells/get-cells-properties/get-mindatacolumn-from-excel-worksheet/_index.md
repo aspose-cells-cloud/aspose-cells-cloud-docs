@@ -3,8 +3,9 @@ title: "Get MinDataColumn – Aspose.Cells Cloud API Reference (v3.0)"
 type: docs
 url: /get-mindatacolumn-from-excel-worksheet/
 weight: 110
-keywords: "Aspose.Cells Cloud, MinDataColumn, Excel worksheet, REST API, API reference, v3.0"
+keywords: "Aspose.Cells Cloud, MinDataColumn, Excel worksheet, REST API, API reference, v3.0, data column, cloud API"
 description: "Retrieve the leftmost column that contains data in an Excel worksheet via Aspose.Cells Cloud REST API (v3.0). Includes authentication details, request syntax, JSON response example, error codes, and SDK snippets."
+ArticleTitle: "Get MinDataColumn – Aspose.Cells Cloud API Reference (v3.0)"
 ---
 
 ## Overview
@@ -14,6 +15,10 @@ In other words, it tells you which column is the first one that actually holds d
 
 > **Definition** – `mindatacolumn`: the index (starting at 0) of the first column that contains data in the worksheet.
 
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 ## **cURL Example**
 
 ```bash
@@ -22,6 +27,14 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
 ```
+
+**Request Details**
+
+| Element          | Value                                                                                                                                 |
+|------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| HTTP Method      | GET                                                                                                                                   |
+| URL Pattern      | `https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/mindatacolumn`                                            |
+| Required Headers | `Authorization: Bearer {access_token}`<br>`Content-Type: application/json`<br>`Accept: application/json`                           |
 
 ### Path Parameters
 
@@ -38,6 +51,12 @@ _There are no additional query parameters for this operation._
 ## Response
 
 ### Successful Response (200 OK)
+
+**Success Status Code**
+
+| Code | Description                                      |
+|------|--------------------------------------------------|
+| 200  | Request succeeded; returns the `MinDataColumn` value. |
 
 ```json
 {
@@ -156,3 +175,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+*Note: SDK sample code is currently loaded from GitHub Gist. For improved performance and reliability, consider hosting these snippets locally within the documentation repository.*

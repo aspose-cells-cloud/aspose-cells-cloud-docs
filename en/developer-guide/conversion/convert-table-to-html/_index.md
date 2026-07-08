@@ -5,7 +5,7 @@ ArticleTitle: "How to Convert Local Spreadsheet Table Data to an HTML File: Step
 linktitle: "Convert Table to HTML"
 type: docs
 url: /convert-table-to-html/
-keywords: "Aspose.Cells Cloud, Excel to HTML, Table conversion, Spreadsheet API, REST conversion, Cloud document conversion"
+keywords: "Aspose.Cells, Excel to HTML, Table conversion, Cloud API"
 description: "Convert Excel tables to HTML quickly using the Aspose.Cells Cloud API, with support for custom fonts, regions, and secure storage."
 weight: 100
 ---
@@ -17,8 +17,10 @@ Export table data from a local Excel file to an HTML file using the Cloud API.
 ### Web API
 
 ```http
-PUT http://api.aspose.cloud/v4.0/cells/convert/table/html
+PUT https://api.aspose.cloud/v4.0/cells/convert/table/html
 ```
+
+> **Note:** All Aspose.Cells Cloud endpoints require **HTTPS**. Using `http` may result in mixed‑content errors or blocked requests in modern browsers.
 
 ### **Request Parameters:**
 
@@ -71,7 +73,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/table/html
 
 ## How to Use the Convert Table to HTML API with SDKs?
 
-### Convert Table to HTML API Specification
+> **Prerequisites:** You must have a valid Aspose Cloud authentication token and, if you intend to store the result in Aspose Cloud storage, a configured storage name.
 
 The [Convert Table to HTML API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToHtml) outlines a publicly accessible programming interface, allowing you to perform REST interactions directly from your web browser.
 

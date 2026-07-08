@@ -6,16 +6,19 @@ type: docs
 url: /pivot-tables/add-pivot-field/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
 keywords: "Aspose.Cells Cloud, Excel, pivot table, add pivot field, REST API, SDK"
-description: "Learn how to add a pivot field to an existing pivot table using the Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK code snippets for multiple programming languages."
+description: "Add a pivot field to an existing pivot table using Aspose.Cells Cloud REST API. Includes request details, cURL example, and SDK snippets."
 weight: 40
+ArticleTitle: "Add a Pivot Field to a Pivot Table – Aspose.Cells Cloud Documentation"
 ---
 
 This REST API **adds** a pivot field to an existing pivot table.
 
+> **Prerequisite:** To call this endpoint you must include a valid JWT authentication token in the `Authorization` header and ensure the workbook is stored in the specified folder or default storage.
+
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField
 ```
 
 ### Request parameters
@@ -40,7 +43,7 @@ You can use the **cURL** command‑line tool to call Aspose.Cells web services. 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/PivotField?pivotFieldType=Row" \
   -X PUT \
   -d '{"Data":[1,2]}' \
   -H "Content-Type: application/json" \
@@ -62,6 +65,17 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Pivot_Table_Example.xls/workshe
 {{< /tab >}}
 
 {{< /tabs >}}
+
+The successful response returns a JSON object with `Code` and `Status` fields. Example schema:
+
+```json
+{
+  "Code": 0,        // integer indicating the HTTP status code
+  "Status": "OK"    // string message
+}
+```
+
+Possible error responses include **400 Bad Request** for missing parameters, **401 Unauthorized** if the token is invalid, and **500 Internal Server Error** for server‑side issues.
 
 ## Cloud SDK Family
 
@@ -118,3 +132,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**See also:**  
+- [Add a Pivot Table](https://docs.aspose.cloud/cells/pivot-tables/add-pivot-table/)  
+- [Delete Pivot Field](https://docs.aspose.cloud/cells/pivot-tables/delete-pivot-field/)

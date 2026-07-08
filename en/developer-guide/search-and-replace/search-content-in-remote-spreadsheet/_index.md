@@ -22,6 +22,8 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content
 
 ### **Request Parameters:**
 
+> **Prerequisite:** Obtain a valid OAuth 2.0 access token and include it in the `Authorization` header of the request.
+
 | Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                      |
 | :------------- | :------ | :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | name           | String  | Path                       | **Required**. The filename of the Excel workbook (including extension) where the text search will be performed, e.g., `sales_data.xlsx`.                         |
@@ -65,10 +67,22 @@ The response contains a list of cells (`CellName`) where the searched text was f
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.
-- **404 Not Found** – The spreadsheet file is not accessible.
-- **500 Server Error** – An unexpected condition prevented the API from completing the request.
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
+  ```json
+  {"code":400,"message":"Invalid request URI"}
+  ```
+- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
+  ```json
+  {"code":401,"message":"Invalid access token"}
+  ```
+- **404 Not Found** – The spreadsheet file is not accessible.  
+  ```json
+  {"code":404,"message":"File not found"}
+  ```
+- **500 Server Error** – An unexpected condition prevented the API from completing the request.  
+  ```json
+  {"code":500,"message":"Internal server error"}
+  ```
 
 ## Where should we use the Search content within the Spreadsheet API?
 
@@ -89,11 +103,11 @@ The response contains a list of cells (`CellName`) where the searched text was f
 
 ### OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteSpreadsheet) defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+<a href="https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteSpreadsheet" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search content within spreadsheets for cells with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search content within spreadsheets for cells with minimal code. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to invoke Aspose.Cells web services using various SDKs:
 

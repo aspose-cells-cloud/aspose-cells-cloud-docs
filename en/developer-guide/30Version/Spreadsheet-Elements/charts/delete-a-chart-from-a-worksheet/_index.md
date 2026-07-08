@@ -5,26 +5,31 @@ url: /charts/delete/
 aliases: [/delete-a-chart-from-a-worksheet/]
 weight: 40
 keywords:
-  [
-    "Aspose.Cells",
-    "REST API",
-    "Delete Chart",
-    "Worksheet",
-    "Excel",
-    "Cloud SDK",
-    "Chart Deletion",
-    "API Reference",
-  ]
+  - "Aspose.Cells"
+  - "REST API"
+  - "Delete Chart"
+  - "Worksheet"
+  - "Excel"
+  - "Cloud SDK"
+  - "Chart Deletion"
+  - "API Reference"
 description: "Deletes a chart from a worksheet by its zero‑based index using the Aspose.Cells Cloud REST API."
+ArticleTitle: "Delete a Chart from a Worksheet using Aspose.Cells Cloud REST API"
 ---
 
 This REST API deletes a worksheet chart by its index.
 
+**Prerequisites:** A valid JWT authentication token, proper storage configuration, and API version v3.0 must be used.
+
+For related operations, see the **[Add a Chart](#)** and **[Get Chart](#)** pages.
+
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
 ```
+
+*All API calls must be made over HTTPS.*
 
 ### Request parameters
 
@@ -45,7 +50,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0" \
 -X DELETE \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -66,6 +71,18 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 {{< /tab >}}
 
 {{< /tabs >}}
+
+The API returns the following status codes:
+
+| Code | Description                                 |
+|------|---------------------------------------------|
+| 200  | Chart deleted successfully                  |
+| 400  | Bad request (e.g., invalid index)          |
+| 401  | Unauthorized (missing or invalid JWT)      |
+| 404  | Workbook, worksheet, or chart not found     |
+| 500  | Server error                                |
+
+**Error handling:** For detailed error information, refer to the generic error model in the OpenAPI specification.
 
 ## Cloud SDK Family
 

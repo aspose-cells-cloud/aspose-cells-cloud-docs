@@ -3,8 +3,9 @@ title: "Unmerge Cells in Excel Worksheet"
 type: docs
 url: /unmerge-cells-in-excel-worksheet/
 weight: 120
-keywords: "Aspose.Cells, Excel, Unmerge Cells, REST API, Cloud SDK, Spreadsheet"
+keywords: "Aspose.Cells, Excel, Unmerge Cells, REST API, Cloud SDK"
 description: "Learn how to use the Aspose.Cells Cloud REST API to unmerge cells in an Excel worksheet, with request examples, response format, and SDK code samples for multiple programming languages."
+ArticleTitle: "Unmerge Cells in Excel Worksheet"
 ---
 
 This REST API unmerges cells in an Excel file.
@@ -12,7 +13,7 @@ This REST API unmerges cells in an Excel file.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/unmerge
 ```
 
 The request parameters are:
@@ -27,6 +28,8 @@ The request parameters are:
 | totalColumns   | integer | query    | Number of columns to include in the unmerge operation. |
 | folder         | string  | query    | Folder path where the workbook is stored.               |
 | storageName    | string  | query    | Name of the storage service.                            |
+
+The POST request does **not** require a request body.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetUnmerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -58,6 +61,18 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/u
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Status Codes**
+
+| Code | Meaning                                 |
+|------|------------------------------------------|
+| 200  | Success – cells were unmerged            |
+| 400  | Bad request – missing or invalid parameters |
+| 401  | Unauthorized – invalid or missing JWT token |
+| 404  | Not found – workbook or worksheet does not exist |
+| 500  | Internal server error                    |
+
+For related operations, see the **[Merge Cells](https://docs.aspose.cloud/cells/merge-cells-in-excel-worksheet/)** and **[Get Merged Cells](https://docs.aspose.cloud/cells/get-merged-cells/)** topics.
 
 ## Cloud SDK Family
 

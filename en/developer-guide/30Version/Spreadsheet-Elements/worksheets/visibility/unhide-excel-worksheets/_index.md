@@ -5,17 +5,24 @@ linktitle: "Unhide"
 type: docs
 url: /worksheets/unhide/
 aliases: [/unhide-excel-worksheets/]
-keywords: "unhide worksheet, Aspose.Cells Cloud, REST API, Excel, spreadsheet visibility"
+keywords: "Aspose.Cells, unhide worksheet, Excel API, cloud spreadsheet, REST, worksheet visibility, Excel workbook"
 description: "Learn how to use Aspose.Cells Cloud REST API to unhide a worksheet in an Excel workbook. Includes request details, cURL examples, and SDK code snippets for multiple programming languages."
 weight: 60
 ---
 
 This REST API provides an endpoint to **unhide a worksheet** in an Excel workbook.
 
+**Prerequisites**  
+Before calling this operation you must have:
+
+* A valid Aspose Cloud access token (JWT) included in the `Authorization` header.  
+* The workbook stored in a supported storage location that you specify with the `folder` and `storageName` query parameters.  
+* The workbook must be in a format supported by Aspose.Cells (e.g., `.xls`, `.xlsx`, `.xlsm`).  
+
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/visible
 ```
 
 ### **Request parameters**
@@ -37,11 +44,11 @@ You can use the cURL command‑line tool to call Aspose.Cells web services easil
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/visible?isVisible=true" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/visible?isVisible=true" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+-H "Authorization: Bearer <jwt token>"   # replace <jwt token> with your access token
 ```
 
 {{< /tab >}}
@@ -54,6 +61,16 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1
   "Status": "OK"
 }
 ```
+
+**Possible response codes**
+
+| HTTP Code | Meaning                              | Sample Body (when applicable)                               |
+|-----------|--------------------------------------|--------------------------------------------------------------|
+| 200       | Worksheet visibility updated successfully | `{ "Code": 200, "Status": "OK" }`                           |
+| 400       | Bad request – missing or invalid parameters | `{ "Code": 400, "Message": "Invalid request parameters." }` |
+| 401       | Unauthorized – missing or invalid JWT token | `{ "Code": 401, "Message": "Authentication failed." }`      |
+| 404       | Not found – workbook or worksheet does not exist | `{ "Code": 404, "Message": "File or worksheet not found." }` |
+| 500       | Internal server error                | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
 
 {{< /tab >}}
 

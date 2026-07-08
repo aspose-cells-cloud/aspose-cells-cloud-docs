@@ -7,6 +7,7 @@ url: /unlock-excel-files/
 aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
 keywords: "Unlock Excel, Aspose.Cells Cloud, REST API, Excel unlocking, password-protected workbook, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
 description: "The Aspose.Cells Cloud REST API provides an endpoint to unlock password‑protected Excel files. SDKs are available for multiple programming languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+ArticleTitle: "Unlock Excel Files using Aspose.Cells Cloud REST API"
 weight: 70
 ---
 
@@ -14,8 +15,13 @@ This REST API unlocks Excel files.
 
 ## REST API
 
+**Prerequisites**  
+- A valid JWT authentication token.  
+- The Excel file must be uploaded as `multipart/form-data`.  
+- The request must be sent over **HTTPS**; plain HTTP is not supported.
+
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/unlock
+POST https://api.aspose.cloud/v3.0/cells/unlock
 ```
 
 ### The request parameters are
@@ -24,6 +30,18 @@ POST http://api.aspose.cloud/v3.0/cells/unlock
 | -------------- | ------ | -------------------- | ------------------------------------------ |
 | file           | file   | formData (HTTP body) | File to upload                             |
 | password       | string | query string         | Password to unlock the file (if protected) |
+
+**Response codes**
+
+| Code | Meaning                               | Description |
+|------|---------------------------------------|-------------|
+| 200  | OK                                    | Unlock successful; returns the unlocked file(s) in the response body. |
+| 400  | Bad Request                           | Missing file or invalid parameters. |
+| 401  | Unauthorized                          | Invalid or expired JWT token. |
+| 403  | Forbidden                             | Incorrect password for the protected workbook. |
+| 500  | Internal Server Error                 | An unexpected error occurred on the server. |
+
+> **Note:** The API follows the standard error‑model defined in the OpenAPI specification. Consult the specification for detailed error payloads.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostUnlock) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -34,7 +52,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
+curl -v "https://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -71,6 +89,10 @@ curl -v "http://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+**Notes**  
+- The API can unlock multiple Excel files in a single request; each file is returned in the `Files` array of the response.  
+- Ensure your SDK version matches the API version (`v3.0`) to avoid compatibility issues.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

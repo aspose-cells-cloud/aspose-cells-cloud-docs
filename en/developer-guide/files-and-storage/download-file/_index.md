@@ -1,12 +1,12 @@
 ---
 title: "Aspose.Cells Cloud Download File API – Interface for Fast File Download in the Cloud"
 second_title: "Document"
-ArticleTitle: "Cloud-based Excel File Management Solution – Interface for Fast File Download in the Cloud"
+ArticleTitle: "Aspose.Cells Cloud Download File API – Interface for Fast File Download in the Cloud"
 linktitle: "Download File API"
 type: docs
 url: /download-file/
 keywords: "Aspose.Cells, Download File API, Excel cloud storage, REST API, file download, PDF, CSV, SDK"
-description: "Learn how to download Excel, PDF, CSV, and other files from Aspose.Cells Cloud storage using the secure Download File API (v4.0). Includes endpoint, parameters, authentication, and code samples."
+description: "Download Excel, PDF, CSV, and other files from Aspose.Cells Cloud storage using the Download File API (v4.0). Includes endpoint, parameters, authentication details, and code samples."
 weight: 100
 ---
 
@@ -24,6 +24,9 @@ GET https://api.aspose.cloud/v4.0/cells/storage/file/{path}
 
 The **DownloadFile** API enables you to retrieve files stored in Aspose.Cells Cloud storage. The Download File API is essential for accessing Excel spreadsheets, PDFs, CSVs, and other supported formats directly from the cloud.
 
+**Prerequisites / Authentication**  
+To call this endpoint you must include a valid OAuth 2.0 or JWT access token in the `Authorization` header. Tokens are obtained from the Aspose Cloud authentication service. Ensure the token has the `Read` scope for the target storage.  
+
 ### The request parameters of **DownloadFile** API are
 
 | Parameter Name | Type   | Location (Path / Query) | Description                                                    |
@@ -31,6 +34,15 @@ The **DownloadFile** API enables you to retrieve files stored in Aspose.Cells Cl
 | path           | String | Path                    | The virtual path to the file you want to download.             |
 | storageName    | String | Query                   | The name of the storage from which the file will be retrieved. |
 | versionId      | String | Query                   | The version identifier of the file to download, if applicable. |
+
+**Sample cURL request**
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/file/Example.xlsx?storageName=MyStorage" \
+     -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+     -H "Accept: application/octet-stream" \
+     -o Example.xlsx
+```
 
 ### **Response Description**
 

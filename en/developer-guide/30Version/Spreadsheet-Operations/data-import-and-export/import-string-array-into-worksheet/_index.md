@@ -22,11 +22,12 @@ POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
-The request uses multipart HTTP content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
+The request uses multipart HTTP content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
 The first part of the multipart body contains an **ImportStringArrayOption** payload; the second part contains the source data file.
 
 The important parameters are described in the following table:
 
+<caption>ImportStringArrayOption parameters</caption>
 ### **ImportStringArrayOption**
 
 | Parameter Name       | Type       | Description                                                                                                                                                                         |
@@ -65,6 +66,8 @@ The important parameters are described in the following table:
 | 400         | Required parameter omitted (`Source` or `FirstRow`) | Verify that all mandatory fields are supplied and correctly typed.                                |
 | 415         | Incorrect content‑type for multipart body           | Use `multipart/form-data` with proper boundary delimiters.                                        |
 | 500         | Server‑side processing error                        | Check the payload for malformed XML/JSON and confirm that the file referenced in `Source` exists. |
+
+For related import operations, see the documentation on **[Import CSV data](/import-csv-data/)** and **[Import 2‑D string array](/import-two-dimensional-array/)**.
 
 ## Cloud SDK Family
 

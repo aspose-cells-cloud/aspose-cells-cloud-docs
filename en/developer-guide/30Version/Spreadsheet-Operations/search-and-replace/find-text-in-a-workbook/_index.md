@@ -6,8 +6,9 @@ type: docs
 url: /workbook/find-text/
 aliases: [/find-text-in-a-workbook/]
 weight: 30
-keywords: "Find text, Excel workbook, Aspose.Cells Cloud, REST API, SDK, search text in workbook, Aspose.Cells findText, Excel API"
+keywords: "Aspose.Cells, find text, Excel API, workbook search"
 description: "Learn how to use Aspose.Cells Cloud API to **find text** in Excel workbooks (XLS‑X, ODS). Includes cURL example, SDK snippets, and response schema. Get started now."
+ArticleTitle: "Find Text in an Excel Workbook using Aspose.Cells Cloud API"
 ---
 
 This REST API searches for text in an Excel workbook.
@@ -27,7 +28,7 @@ The request accepts the following parameters:
 | folder         | string | query    | Folder that contains the workbook (optional).              |
 | storageName    | string | query    | Name of the storage where the workbook resides (optional). |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksTextSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+<a href="https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksTextSearch" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
@@ -78,9 +79,17 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/findText?text=a" \
 
 – The API may return standard HTTP status codes such as **401 Unauthorized** (invalid or missing token), **404 Not Found** (workbook does not exist), and **500 Internal Server Error** (unexpected server condition). The response body for errors follows the common Aspose.Cells error format.
 
+| Status Code | Description |
+|------------|-------------|
+| 200 OK | Search successful; returns `TextItems`. |
+| 400 Bad Request | Invalid request parameters. |
+| 401 Unauthorized | Missing or invalid authentication token. |
+| 404 Not Found | Specified workbook not found. |
+| 500 Internal Server Error | Unexpected server error. |
+
 ## Cloud SDK Family
 
-Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

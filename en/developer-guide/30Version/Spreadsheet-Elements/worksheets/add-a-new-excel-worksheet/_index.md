@@ -1,5 +1,6 @@
 ---
 title: "Add an Excel Worksheet"
+ArticleTitle: "Add an Excel Worksheet - Aspose.Cells Cloud API Guide"
 second_title: "Document"
 linktitle: "Add"
 type: docs
@@ -11,6 +12,8 @@ weight: 20
 ---
 
 This REST API adds a new worksheet to an existing workbook.
+
+**Prerequisites**: To call this endpoint you must have a valid Aspose Cloud authentication token, the target workbook must be uploaded to Aspose Cloud storage, and you should know the storage name (if using a custom storage).
 
 ## REST API
 
@@ -38,7 +41,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
+curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
 -X PUT \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -59,6 +62,16 @@ curl -v "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks" \
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Possible response status codes**
+
+| Status Code | Description                                          |
+|------------|------------------------------------------------------|
+| 200        | Worksheet added successfully.                        |
+| 400        | Bad request – invalid parameters.                    |
+| 401        | Unauthorized – authentication token missing/invalid. |
+| 404        | Not found – workbook or folder does not exist.       |
+| 500        | Internal server error – unexpected condition.        |
 
 ## Cloud SDK Family
 

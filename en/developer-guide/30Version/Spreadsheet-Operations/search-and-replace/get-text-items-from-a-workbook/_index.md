@@ -1,5 +1,6 @@
 ---
 title: "Get text items from an Excel workbook"
+ArticleTitle: "Get Text Items from an Excel Workbook using Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Get in workbook"
 type: docs
@@ -7,16 +8,20 @@ url: /workbook/get-text-items/
 aliases: [/get-text-items-from-a-workbook/]
 weight: 10
 keywords: "Excel, Aspose.Cells Cloud, REST API, Spreadsheet, Get Text Items, Workbook"
-description: "Retrieve text items from an Excel workbook using the Aspose.Cells Cloud REST API. The API is available through various SDKs for languages such as C#, Java, Python, PHP, Ruby, Go, Node.js, Perl, and Swift."
+description: "Retrieve text items from an Excel workbook using the Aspose.Cells Cloud REST API. Available through SDKs for C#, Java, Python, PHP, Ruby, Go, Node.js, Perl, and Swift."
 ---
 
 This REST API reads a workbook’s **text items** in an Excel file.
 
+**Prerequisites:** To call this endpoint you must have a valid OAuth 2.0 access token, and the workbook file must be stored in Aspose Cloud storage (or supplied as a multipart request). Specify the target storage name and folder if the file is not in the default location.
+
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/textItems
+GET https://api.aspose.cloud/v3.0/cells/{name}/textItems
 ```
+
+All API calls must be made over **HTTPS** to protect credentials.
 
 ### The request parameters are
 
@@ -25,6 +30,13 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/textItems
 | name           | string | path     | The name of the workbook file.                         |
 | folder         | string | query    | The folder path in storage where the workbook resides. |
 | storageName    | string | query    | The name of the storage service.                       |
+
+**Request Headers** (required):
+
+```bash
+Authorization: Bearer <access_token>
+Accept: application/json
+```
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookTextItems) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -71,9 +83,19 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/textItems" -H "accept
 
 {{< /tabs >}}
 
+Typical HTTP response codes:
+
+| Code | Description                                 |
+|------|---------------------------------------------|
+| 200  | Request succeeded; text items are returned. |
+| 401  | Unauthorized – missing or invalid token.    |
+| 403  | Forbidden – insufficient permissions.       |
+| 404  | Not Found – workbook or resource not found. |
+| 500  | Internal Server Error – unexpected failure. |
+
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+This example uses API version **v3.0**; refer to the changelog for newer versions. Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

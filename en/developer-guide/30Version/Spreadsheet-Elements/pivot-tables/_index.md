@@ -1,16 +1,19 @@
 ---
-title: "Working with Excel PivotTable"
+title: "Working with Excel PivotTables"
 second_title: "Document"
 linktitle: "PivotTables"
 type: docs
 url: /pivottables/
 aliases: [/working-with-pivot-tables/]
-keywords: "Excel, PivotTable, Aspose.Cells Cloud, REST API, Spreadsheet, Data Analysis"
-description: "Learn how to use Aspose.Cells Cloud REST APIs to work with PivotTables in Excel worksheets. Includes guidance for SDKs such as Android, .NET, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
+keywords: "Excel PivotTable, Aspose.Cells Cloud, REST API, Spreadsheet, Data Analysis"
+description: "Learn how to use Aspose.Cells Cloud REST APIs to manage PivotTables in Excel worksheets, with guidance for SDKs such as Android, .NET, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift."
 weight: 100
+ArticleTitle: "Working with Excel PivotTables – Aspose.Cells Cloud Documentation"
 ---
 
 ## Working with PivotTables on an Excel file
+
+PivotTables are powerful data‑summarization tools in Excel that let developers dynamically aggregate, filter, and analyze large data sets. The Aspose.Cells Cloud API provides endpoints to create, retrieve, modify, and delete PivotTables programmatically, enabling seamless integration into your applications.
 
 - [How to get PivotTable information from an Excel worksheet.](/cells/pivot-tables/get-all/)
 - [How to get PivotTable information by index from an Excel worksheet.](/cells/pivot-tables/get/)

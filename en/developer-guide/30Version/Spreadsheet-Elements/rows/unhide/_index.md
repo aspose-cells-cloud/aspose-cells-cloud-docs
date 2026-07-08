@@ -8,6 +8,7 @@ aliases: [/unhide-rows-in-excel-worksheet/]
 keywords: "Aspose.Cells Cloud, Excel, unhide rows, REST API, spreadsheet, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
 description: "Use the Aspose.Cells Cloud REST API to unhide rows in an Excel worksheet. The API is available through multiple SDKs such as .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, and Swift."
 weight: 50
+ArticleTitle: "Unhide rows on an Excel worksheet using Aspose.Cells Cloud API"
 ---
 
 This REST API unhides rows on an Excel worksheet.
@@ -15,7 +16,7 @@ This REST API unhides rows on an Excel worksheet.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/unhide
 ```
 
 ### **Request parameters**
@@ -31,6 +32,9 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 | storageName    | string  | query    | Name of the storage.                         |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+**Authentication**  
+All requests must be authenticated using a JWT access token obtained from the Aspose Cloud authentication service. Include the token in the `Authorization: Bearer <jwt token>` header.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -60,6 +64,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Response Codes**
+
+| HTTP Status | Description                              |
+|------------|------------------------------------------|
+| 200 OK     | Rows were successfully unhidden.        |
+| 400 Bad Request | Invalid parameters or request format. |
+| 401 Unauthorized | Missing or invalid JWT token.       |
+| 404 Not Found | Specified workbook, worksheet, or rows do not exist. |
+| 500 Internal Server Error | Unexpected server error. |
 
 ## Cloud SDK Family
 

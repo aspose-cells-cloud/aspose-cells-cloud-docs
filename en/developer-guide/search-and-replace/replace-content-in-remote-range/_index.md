@@ -12,6 +12,9 @@ weight: 100
 
 Perform bulk text replacement across remote Excel files stored in the cloud. Find and update specific text strings within selected ranges efficiently using Aspose.Cells Find and Replace API.
 
+## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 ## **Replace Content in Remote Range API**
 
 ### Web API
@@ -57,6 +60,15 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{ce
 }
 ```
 
+A successful call returns the following concrete JSON payload:
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
 ### Rate Limits & Throttling
 
 The API allows **60 calls per minute** per account. If the limit is exceeded, the service returns HTTP 429. Implement exponential back‑off and retry after the `Retry-After` header value.
@@ -78,7 +90,7 @@ The API allows **60 calls per minute** per account. If the limit is exceeded, th
 
 ## Why should you use the Replace content of Range in Remote Spreadsheet API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom solutions, this significantly reduces development workload.
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comprehensive documentation. Compared with building custom solutions, this significantly reduces development workload.
 - **Reduced Labor Costs**: Decreases the need for dedicated positions handling document consolidation.
 - **Pay‑per‑use**: No upfront investment; you only pay for API calls actually used.
 - **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
@@ -101,7 +113,24 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 ```csharp
 // C# example – Replace text in a remote range
-// (Insert actual SDK code here)
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model.Requests;
+
+var config = new Configuration
+{
+    ClientId = "YOUR_CLIENT_ID",
+    ClientSecret = "YOUR_CLIENT_SECRET"
+};
+var api = new CellsApi(config);
+var request = new PutReplaceContentRequest(
+    name: "report.xlsx",
+    worksheet: "Sheet1",
+    cellArea: "A1:D20",
+    searchText: "OldText",
+    replaceText: "NewText",
+    folder: "input",
+    storageName: null);
+api.PutReplaceContent(request);
 ```
 
 {{</tab>}}
@@ -109,7 +138,19 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 ```java
 // Java example – Replace text in a remote range
-// (Insert actual SDK code here)
+import com.aspose.cloud.cells.api.CellsApi;
+import com.aspose.cloud.cells.model.*;
+import com.aspose.cloud.cells.model.requests.*;
+
+CellsApi api = new CellsApi("YOUR_CLIENT_ID", "YOUR_CLIENT_SECRET");
+PutReplaceContentRequest request = new PutReplaceContentRequest()
+        .name("report.xlsx")
+        .worksheet("Sheet1")
+        .cellArea("A1:D20")
+        .searchText("OldText")
+        .replaceText("NewText")
+        .folder("input");
+api.putReplaceContent(request);
 ```
 
 {{</tab>}}
@@ -117,7 +158,17 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 ```php
 // PHP example – Replace text in a remote range
-// (Insert actual SDK code here)
+require_once 'vendor/autoload.php';
+
+$config = new Aspose\Cells\Configuration();
+$config->setClientId('YOUR_CLIENT_ID');
+$config->setClientSecret('YOUR_CLIENT_SECRET');
+
+$apiInstance = new Aspose\Cells\Api\CellsApi($config);
+$request = new Aspose\Cells\Model\Requests\PutReplaceContentRequest(
+    "report.xlsx", "Sheet1", "A1:D20", "OldText", "NewText", "input"
+);
+$apiInstance->putReplaceContent($request);
 ```
 
 {{</tab>}}
@@ -125,7 +176,22 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 ```ruby
 # Ruby example – Replace text in a remote range
-# (Insert actual SDK code here)
+require 'aspose_cells_cloud'
+
+config = AsposeCellsCloud::Configuration.new
+config.client_id = 'YOUR_CLIENT_ID'
+config.client_secret = 'YOUR_CLIENT_SECRET'
+
+api_instance = AsposeCellsCloud::CellsApi.new
+request = AsposeCellsCloud::PutReplaceContentRequest.new(
+  name: 'report.xlsx',
+  worksheet: 'Sheet1',
+  cell_area: 'A1:D20',
+  search_text: 'OldText',
+  replace_text: 'NewText',
+  folder: 'input'
+)
+api_instance.put_replace_content(request)
 ```
 
 {{</tab>}}
@@ -133,7 +199,28 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 ```javascript
 // Node.js example – Replace text in a remote range
-// (Insert actual SDK code here)
+const { CellsApi, PutReplaceContentRequest } = require('asposecellscloud');
+
+const config = {
+    clientId: 'YOUR_CLIENT_ID',
+    clientSecret: 'YOUR_CLIENT_SECRET'
+};
+
+const api = new CellsApi(config);
+const request = new PutReplaceContentRequest({
+    name: 'report.xlsx',
+    worksheet: 'Sheet1',
+    cellArea: 'A1:D20',
+    searchText: 'OldText',
+    replaceText: 'NewText',
+    folder: 'input'
+});
+
+api.putReplaceContent(request).then(() => {
+    console.log('Content replaced successfully.');
+}).catch(err => {
+    console.error(err);
+});
 ```
 
 {{</tab>}}
@@ -141,7 +228,24 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 ```python
 # Python example – Replace text in a remote range
-# (Insert actual SDK code here)
+from asposecellscloud import CellsApi, PutReplaceContentRequest, Configuration
+
+configuration = Configuration()
+configuration.client_id = 'YOUR_CLIENT_ID'
+configuration.client_secret = 'YOUR_CLIENT_SECRET'
+
+api_instance = CellsApi(configuration)
+
+request = PutReplaceContentRequest(
+    name='report.xlsx',
+    worksheet='Sheet1',
+    cell_area='A1:D20',
+    search_text='OldText',
+    replace_text='NewText',
+    folder='input'
+)
+
+api_instance.put_replace_content(request)
 ```
 
 {{</tab>}}
@@ -149,7 +253,25 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 ```perl
 # Perl example – Replace text in a remote range
-# (Insert actual SDK code here)
+use AsposeCellsCloud::Api::CellsApi;
+use AsposeCellsCloud::Configuration;
+use AsposeCellsCloud::Object::PutReplaceContentRequest;
+
+my $config = AsposeCellsCloud::Configuration->new(
+    client_id => 'YOUR_CLIENT_ID',
+    client_secret => 'YOUR_CLIENT_SECRET'
+);
+my $api = AsposeCellsCloud::Api::CellsApi->new($config);
+
+my $request = AsposeCellsCloud::Object::PutReplaceContentRequest->new(
+    name => 'report.xlsx',
+    worksheet => 'Sheet1',
+    cell_area => 'A1:D20',
+    search_text => 'OldText',
+    replace_text => 'NewText',
+    folder => 'input'
+);
+$api->put_replace_content(request => $request);
 ```
 
 {{</tab>}}
@@ -157,11 +279,42 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 ```go
 // Go example – Replace text in a remote range
-// (Insert actual SDK code here)
+package main
+
+import (
+    "github.com/asposecellscloud/aspose-cells-cloud-go/v4"
+    "github.com/asposecellscloud/aspose-cells-cloud-go/v4/api"
+    "github.com/asposecellscloud/aspose-cells-cloud-go/v4/model"
+)
+
+func main() {
+    cfg := asposecellscloud.NewConfiguration()
+    cfg.ClientId = "YOUR_CLIENT_ID"
+    cfg.ClientSecret = "YOUR_CLIENT_SECRET"
+
+    apiInstance := api.NewCellsApi(cfg)
+
+    request := model.PutReplaceContentRequest{
+        Name:        "report.xlsx",
+        Worksheet:   "Sheet1",
+        CellArea:    "A1:D20",
+        SearchText:  "OldText",
+        ReplaceText: "NewText",
+        Folder:      "input",
+    }
+
+    _, err := apiInstance.PutReplaceContent(request)
+    if err != nil {
+        panic(err)
+    }
+    fmt.Println("Content replaced successfully.")
+}
 ```
 
 {{</tab>}}
 {{< /tabs >}}
+
+For related operations, see the **Replace Content in Remote Worksheet** API.
 
 ## Frequently Asked Questions
 
