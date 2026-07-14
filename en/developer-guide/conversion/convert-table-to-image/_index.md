@@ -20,10 +20,6 @@ Export table data from a local Excel file to an [Image](https://docs.fileformat.
 - [JPEG](https://docs.fileformat.com/image/jpeg/)
 - [BMP](https://docs.fileformat.com/image/bmp/)
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-Prerequisites: Obtain an OAuth 2.0 access token using the Aspose.Cells Cloud authentication flow and include it in the `Authorization: Bearer <access_token>` header of each request.
 
 ## **Convert Table to Image API**
 
@@ -31,6 +27,14 @@ Prerequisites: Obtain an OAuth 2.0 access token using the Aspose.Cells Cloud a
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/table/image
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### **Request Parameters:**

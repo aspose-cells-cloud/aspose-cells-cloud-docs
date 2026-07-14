@@ -20,6 +20,14 @@ The **ConvertSpreadsheetToJson** endpoint converts a spreadsheet stored on a loc
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 ### Request Parameters
 
 | Parameter Name | Type                       | Location | Required/Optional | Description                                                                                                                                                                                     |
@@ -33,13 +41,17 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json
 
 ### Response
 
-**Successful response (200 OK)**
-
-_Content-Type:_ `application/json`  
-_Content-Disposition:_ `attachment; filename="converted.json"`  
-_Content-Length:_ `<size in bytes>`
-
-The response body contains a binary stream with the JSON representation of the workbook.
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
 
 ### Error Codes
 

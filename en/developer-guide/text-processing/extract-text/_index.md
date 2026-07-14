@@ -18,11 +18,12 @@ Extracts substrings, characters, or numbers from a spreadsheet cell into another
 PUT https://api.aspose.cloud/v4.0/cells/content/extract/text
 ```
 
-**Authentication**  
-All requests to the ExtractText API must include a valid OAuth 2.0 bearer token in the `Authorization` header:
+### **Security and Authentication**
 
-```
-Authorization: Bearer {access_token}
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### The request parameters of **extractText** API are
@@ -73,8 +74,8 @@ If the `outPath` parameter is provided, the response contains only a status mess
 
 ```json
 {
-  "extractedText": "Total",
-  "targetCell": "Sheet1!B1"
+  "Code": 200,
+  "Status":"OK"
 }
 ```
 
@@ -89,7 +90,7 @@ If the `outPath` parameter is provided, the response contains only a status mess
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/ExtractText) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/ExtractText) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -165,8 +166,3 @@ The following code examples illustrate how to make calls to Aspose.Cells web ser
 
 {{< /tabs >}}
 
-### See Also
-
-- [Add Text to a Cell](https://docs.aspose.cloud/cells/add-text/)
-- [Convert Text to Number](https://docs.aspose.cloud/cells/convert-text/)
-- [Split Text in a Cell](https://docs.aspose.cloud/cells/split-text/)

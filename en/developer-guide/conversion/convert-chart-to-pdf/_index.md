@@ -12,6 +12,7 @@ weight: 100
 
 Export charts from a local Excel file to [PDF](https://docs.fileformat.com/pdf/) format using the Cloud API.
 
+
 ## **Convert Chart to PDF Web API**
 
 ### Web API
@@ -20,7 +21,12 @@ Export charts from a local Excel file to [PDF](https://docs.fileformat.com/pdf/)
 PUT https://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 ```
 
-> **Authentication** – The request must include a valid OAuth 2.0 access token in the `Authorization` header, e.g., `Authorization: Bearer {accessToken}`.
+### Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 **Sample cURL request**
 

@@ -22,7 +22,6 @@ Export data of a range from a local Excel file to an [Image](https://docs.filefo
 
 ## **Convert Range to Image API**
 
-**Prerequisites:** To use this API you must have a valid Aspose.Cloud OAuth 2.0 access token, optionally install the appropriate Aspose.Cells Cloud SDK, and target API version v4.0. The request supports XLSX and XLS files.
 
 ### Web API
 
@@ -30,7 +29,13 @@ Export data of a range from a local Excel file to an [Image](https://docs.filefo
 PUT https://api.aspose.cloud/v4.0/cells/convert/range/image
 ```
 
-*Note: Always use HTTPS to transmit the request securely and include your OAuth 2.0 access token in the `Authorization` header.*
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 **cURL example**
 

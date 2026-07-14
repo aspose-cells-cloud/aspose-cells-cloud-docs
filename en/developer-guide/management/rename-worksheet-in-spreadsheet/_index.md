@@ -20,7 +20,14 @@ Programmatically rename worksheets in Excel workbooks using Aspose.Cells Cloud A
 PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet
 ```
 
-**Prerequisites**: You must have a valid Aspose Cloud client ID and client secret, and the workbook must be uploaded to Aspose Cloud storage. Include an access token in the `Authorization` header of the request.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 
 ### Request Parameters
 
@@ -41,15 +48,15 @@ PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet
 A successful request returns a JSON object with status information and a link to the renamed file.
 
 ```json
-{
-  "Code": 200,
-  "Status": "OK",
-  "File": {
-    "Href": "https://api.aspose.cloud/v4.0/storage/file/output/renamed.xlsx",
-    "Name": "renamed.xlsx",
-    "Size": 123456
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
   }
-}
+]
 ```
 
 ### Error Codes
@@ -111,17 +118,3 @@ The following code examples illustrate how to call Aspose.Cells web services usi
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_RenameWorksheet.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebAPI",
-  "name": "Rename Worksheet in Spreadsheet",
-  "description": "Renames a worksheet in an Excel workbook via Aspose.Cells Cloud.",
-  "url": "https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet",
-  "httpMethod": "PUT",
-  "documentation": "https://docs.aspose.cloud/cells/rename-worksheet-in-spreadsheet/",
-  "targetPlatform": "Cloud",
-  "programmingLanguage": ["C#","Java","Python","Node.js","PHP","Ruby","Go","Perl"]
-}
-</script>

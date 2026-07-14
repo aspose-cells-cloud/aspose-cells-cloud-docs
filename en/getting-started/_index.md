@@ -28,7 +28,7 @@ Before you begin, make sure you have a valid **Aspose Cloud API key** and **stor
 Upload your source workbook to Aspose Cloud storage.
 
 ```curl
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/storage/file/{path}" \
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/file/{path}" \
      -H "Authorization: Bearer {access_token}" \
      -H "Content-Type: application/octet-stream" \
      --data-binary @sample.xlsx
@@ -38,7 +38,7 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/storage/file/{path}" \
 Send a conversion request after the file is stored.
 
 ```curl
-curl -X POST "https://api.aspose.cloud/v3.0/cells/{name}/save?format=pdf&outPath={outputPath}" \
+curl -X POST "https://api.aspose.cloud/v4.0/cells/{name}/saveas?format=pdf&outPath={outputPath}" \
      -H "Authorization: Bearer {access_token}"
 ```
 
@@ -46,7 +46,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/{name}/save?format=pdf&outPath
 Retrieve the resulting PDF from storage.
 
 ```curl
-curl -X GET "https://api.aspose.cloud/v3.0/cells/storage/file/{outputPath}" \
+curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/file/{outputPath}" \
      -H "Authorization: Bearer {access_token}" \
      -o result.pdf
 ```
@@ -59,6 +59,3 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/storage/file/{outputPath}" \
 | Convert   | POST        | /cells/{name}/save?format=pdf&outPath={outputPath} | 200 OK |
 | Download  | GET         | /cells/storage/file/{outputPath} | 200 OK |
 
-For more detailed code examples in **Python**, **.NET**, and **Java**, see the SDK documentation linked in the navigation above.  
-
-If you encounter any issues, refer to the **Technical Support** page or the **FAQ** section of the documentation.

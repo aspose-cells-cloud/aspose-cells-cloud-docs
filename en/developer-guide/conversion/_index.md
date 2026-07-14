@@ -60,4 +60,4 @@ Easily achieve multi‑format spreadsheet conversion using Aspose.Cells Cloud AP
 | **CSV**       | Yes   | No    | Yes   | Yes       | Yes         |
 | **JSON**      | Yes   | No    | Yes   | Yes       | Yes         |
 | **Markdown**  | Yes   | No    | Yes   | Yes       | Yes         |
-| **XML**       | Yes   | Yes   | No    | Yes       | Yes         |
+| **XML**       | Yes   | No    | Yes   | Yes       | Yes         |

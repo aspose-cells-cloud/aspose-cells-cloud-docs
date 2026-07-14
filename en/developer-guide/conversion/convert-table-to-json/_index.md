@@ -20,13 +20,13 @@ Convert a local spreadsheet/Excel table to a **JSON** file with the Aspose.Cells
 PUT https://api.aspose.cloud/v4.0/cells/convert/table/json
 ```
 
-**Version & Deprecation** – Current API version: **v4.0** (stable).
+### **Security and Authentication**
 
-### Prerequisites
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-1. Create an Aspose Cloud account.
-2. Generate **client_id** and **client_secret** in the dashboard.
-3. Obtain an OAuth 2.0 access token and include it in the `Authorization` header of every request.
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### Sample cURL Request
 
@@ -51,25 +51,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sh
 | **region**         | String | Query    | (Optional) Regional settings for the workbook.                                                 |
 | **password**       | String | Query    | (Optional) Password to open a protected workbook.                                              |
 
-### Request Body Example (multipart/form‑data)
-
-```http
-PUT /v4.0/cells/convert/table/json?worksheet=Sheet1&tableName=MyTable HTTP/1.1
-Host: api.aspose.cloud
-Authorization: Bearer {access_token}
-Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
-
-------WebKitFormBoundary7MA4YWxkTrZu0gW
-Content-Disposition: form-data; name="Spreadsheet"; filename="Sample.xlsx"
-Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
-
-<binary content of Sample.xlsx>
-------WebKitFormBoundary7MA4YWxkTrZu0gW
-Content-Disposition: form-data; name="outPath"
-
-output/json
-------WebKitFormBoundary7MA4YWxkTrZu0gW--
-```
 
 ### Response
 

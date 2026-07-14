@@ -161,7 +161,7 @@ The API provides a fast, reliable way to perform color‑based calculations with
 
 ### Aggregate by Color API Specification
 
-The <a href="https://reference.aspose.cloud/cells/#/CalculateController/AggregateCellsByColor" rel="noopener noreferrer">Aggregate by Color API Specification</a> defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Calculate/AggregateCellsByColor" rel="noopener noreferrer">Aggregate by Color API Specification</a> defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

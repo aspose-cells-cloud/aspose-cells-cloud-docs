@@ -20,16 +20,10 @@ Export a range of data from a local Excel file to an HTML file using the Cloud A
 PUT https://api.aspose.cloud/v4.0/cells/convert/range/html
 ```
 
-**Prerequisites / Authentication**  
-To call this endpoint you must obtain a Bearer access token via OAuth 2.0. Send a POST request to `https://api.aspose.cloud/connect/token` with your `client_id` and `client_secret`. The response contains an `access_token` that you include in the `Authorization` header of every API call:
+### Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-```bash
-curl -X POST "https://api.aspose.cloud/connect/token" \
-     -H "Content-Type: application/x-www-form-urlencoded" \
-     -d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
-```
-
-Use the returned token in the examples below:
+Use the access token in the examples below:
 
 ```bash
 -H "Authorization: Bearer {access_token}"

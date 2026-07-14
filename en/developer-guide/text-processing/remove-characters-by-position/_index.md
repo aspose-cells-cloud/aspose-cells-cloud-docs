@@ -12,7 +12,6 @@ weight: 100
 
 Delete characters from Excel cells by position: remove first/last N characters, or delete text before/after specified markers. Precise text cleaning with Aspose.Cells Cloud Web API.
 
-**Prerequisites**: To use this API you need an active Aspose Cloud subscription, a valid access token obtained via OAuth, and a storage location (default or custom) where the input workbook resides.
 
 ## **Introduction**: Remove Unwanted Characters by Position
 
@@ -36,7 +35,13 @@ Delete characters from Excel cells by position: remove first/last N characters
 PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters
 ```
 
-**Authentication**: Include the `Authorization: Bearer {access_token}` header with the request.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### The request parameters of **RemoveCharactersByPosition** API are
 
@@ -96,7 +101,7 @@ PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/RemoveCharactersByPosition) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/RemoveCharactersByPositionInRemoteSpreadsheet) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

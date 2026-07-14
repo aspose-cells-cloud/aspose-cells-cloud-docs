@@ -10,7 +10,7 @@ weight: 70
 keywords: "Aspose.Cells Cloud pricing, API call cost, pay‑as‑you‑go Excel API, cloud spreadsheet pricing"
 ---
 
-Aspose builds incredibly easy‑to‑use Software as a Service (SaaS) that developers can fully evaluate before committing to buying. To do this, we rely on a slightly different sales model.
+Aspose builds incredibly easy‑to‑use Web APIs that developers can fully evaluate before committing to buying. To do this, we rely on a slightly different sales model.
 
 <table style="font-size: 16px; width: 100%; border-collapse: collapse;">
     <thead>

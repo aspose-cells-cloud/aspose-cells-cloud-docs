@@ -20,6 +20,14 @@ Automatically exchange data between any two columns, rows, ranges, or cells in E
 PUT https://api.aspose.cloud/v4.0/cells/swap/range
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 ### **Request Parameters**
 
 | Parameter Name     | Type   | Location | Description                                                                                                                                   |
@@ -82,28 +90,11 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/swap/range?worksheet1=Sheet1&ra
 - **Pay‑per‑Use** – You only pay for the API calls you actually make.
 - **Zero Maintenance** – No servers to manage, no software updates, and no compatibility concerns.
 
-## Quick‑Start: Step‑by‑Step Guide
-
-**Prerequisites:**  
-- An active Aspose.Cells Cloud account with a configured storage name (`outStorageName`).  
-- OAuth 2.0 access token obtained from the Aspose authentication service.  
-- The source workbook uploaded to the designated cloud storage location (if not already present).
-
-1. **Upload** the source workbook to your configured cloud storage (if it is not already there).  
-2. **Obtain** an OAuth 2.0 access token and set the `Authorization` header.  
-3. **Call** the **Swap Range API** with the required parameters (`worksheet1`, `range1`, `worksheet2`, `range2`).  
-4. **Specify** `outPath`/`outStorageName` if you want the modified file saved automatically; otherwise, read the file stream from the response.  
-5. **Download** the swapped workbook from the location you specified or directly from the response payload.
-
-**Notes:**  
-- Ensure that `range1` and `range2` have the same number of rows and columns; otherwise the request will fail.  
-- The API does not modify worksheet protection settings; if a sheet is locked, you must unlock it before swapping.
-
 ## How to Use the Swap Range API with SDKs
 
 ### Swap Range API Specification
 
-The [Swap Range API Specification](https://reference.aspose.cloud/cells/#/TransformController/SwapRange) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [Swap Range API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Transform/SwapRange) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

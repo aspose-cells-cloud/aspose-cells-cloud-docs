@@ -14,13 +14,21 @@ weight: 100
 
 Programmatically search for specific text within any range of Excel spreadsheets using Aspose.Cells Cloud API. Find text, numbers, or formulas in remote files stored in cloud storage. RESTful API for automated data discovery, content analysis, and spreadsheet‑auditing workflows.
 
-**Prerequisites**: To call this API you must have a valid Aspose Cloud access token. Obtain the token using your client ID and client secret via the authentication endpoint, then include it in the `Authorization: Bearer <access_token>` header of each request.
 
 ### **Web API**
 
 ```
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/content
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 
 **cURL example**
 
@@ -44,15 +52,20 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Orde
 | region         | String  | Query                      | **Optional**. The culture/region setting (e.g., `en‑AU`) that may affect interpretation of region‑specific characters or formats during the search. |
 | password       | String  | Query                      | **Optional**. The password to decrypt and access a password‑protected spreadsheet file. Omit if the file is not encrypted.                          |
 
-### Response (Schema)
+### Response
 
 ```json
 {
-  "Found": "Boolean – Indicates whether the search text was found.",
-  "CellAddresses": [
-    "String[] – List of cell addresses (A1 notation) where matches were located."
-  ],
-  "Occurrences": "Integer – Total number of matches found."
+  "Code": 200,
+  "Status": "OK",
+  "TextItems": [
+    {
+      "Filename": "string",
+      "Worksheet": "string",
+      "Position": "string",
+      "Content": "string"
+    }
+  ]
 }
 ```
 
@@ -80,7 +93,7 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Orde
 
 ### OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteRange) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteRange) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

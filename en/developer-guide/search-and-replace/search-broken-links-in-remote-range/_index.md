@@ -14,12 +14,19 @@ weight: 100
 
 Automatically detect broken links in the range data of Excel files stored in cloud storage. Our API scans specified ranges for broken external references, invalid formulas, and missing data sources. Supports remote spreadsheet auditing, automated quality checks, and integration with cloud storage providers. RESTful API for enterprise workflow automation.
 
-**Prerequisites**: To call this API you must have a valid OAuth 2.0 access token, and the workbook must be stored in a supported cloud storage (e.g., Aspose Cloud Storage, Dropbox, Amazon S3). The request also requires the `name`, `worksheet`, and `cellArea` path parameters. Ensure that the SDK version you use matches the API version (v4.0).
 
 ### **Web API**
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{cellArea}/search/broken-links
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### Request Parameters
@@ -116,7 +123,7 @@ The `BrokenLinks` collection contains objects of type **BrokenLink**. Each objec
 
 ### OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/SearchBrokenLinksInRemoteRange) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchBrokenLinksInRemoteRange) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -150,5 +157,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchBrokenLinksInRemoteRange.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-For scanning an entire worksheet, see the **Search Broken Links in Remote Worksheet** API.

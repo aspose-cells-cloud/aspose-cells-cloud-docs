@@ -20,9 +20,15 @@ Programmatically search for specific text within any Excel spreadsheet using the
 PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content
 ```
 
-### **Request Parameters:**
+### **Security and Authentication**
 
-> **Prerequisite:** Obtain a valid OAuth 2.0 access token and include it in the `Authorization` header of the request.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### **Request Parameters:**
 
 | Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                      |
 | :------------- | :------ | :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -47,19 +53,16 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content
 
 ```json
 {
-  "Cells": [
+  "Code": 200,
+  "Status": "OK",
+  "TextItems": [
     {
-      "CellName": "A1",
-      "WorksheetName": "Sheet1",
-      "Text": "Report"
-    },
-    {
-      "CellName": "B5",
-      "WorksheetName": "Sheet2",
-      "Text": "Report"
+      "Filename": "string",
+      "Worksheet": "string",
+      "Position": "string",
+      "Content": "string"
     }
-  ],
-  "Status": "OK"
+  ]
 }
 ```
 
@@ -103,7 +106,7 @@ The response contains a list of cells (`CellName`) where the searched text was f
 
 ### OpenAPI Specification
 
-<a href="https://reference.aspose.cloud/cells/#/SearchControllor/SearchContentInRemoteSpreadsheet" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
+<a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteSpreadsheet" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and enables you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

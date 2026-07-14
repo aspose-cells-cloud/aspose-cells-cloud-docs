@@ -20,7 +20,14 @@ Programmatically compress Excel spreadsheets and reduce file size with Aspose.Ce
 PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/compress
 ```
 
-**Prerequisites**: You must have a valid Aspose Cloud account and obtain an OAuth 2.0 access token. Include the token in the `Authorization: Bearer <access_token>` header for all API calls. The SDKs can also manage authentication automatically.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 
 ### Request Parameters
 
@@ -63,11 +70,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/compress?level=5&ou
 - **429 Too Many Requests** – Rate limit exceeded; retry after the period indicated in the `Retry-After` header.
 - **500 Server Error** – The spreadsheet encountered an anomaly while processing.
 
-### Limits & Quotas
-
-- Maximum file size: **500 MB** per request.
-- Supported formats: `.xlsx`, `.xls`, `.xlsb`, `.xlsm`.
-- Rate limit: **100 requests per minute** per account.
 
 ## Where should we use the Compress Spreadsheet API?
 
@@ -121,34 +123,3 @@ The following code examples demonstrate how to interact with Aspose.Cells web se
 {{</tab>}}
 {{< /tabs >}}
 
----
-
-### Frequently Asked Questions
-
-1. **How do I compress an Excel file using Aspose.Cells Cloud?**  
-   Call the `PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/compress` endpoint, include the workbook in `FormData` as `Spreadsheet`, optionally set `level`, and provide `outStorageName`. Authenticate with a Bearer token. The API returns the compressed file stream.
-
-2. **What compression levels are supported and how do they affect speed?**  
-   The `level` parameter accepts integers **0‑9**. `0` gives the fastest, lowest‑ratio compression; `9` yields the smallest file but takes longer. If omitted, the default level **5** (balanced) is used.
-
-3. **Can I compress a password‑protected workbook?**  
-   Yes. Supply the workbook password via the `password` query parameter. The API decrypts, compresses, and re‑encrypts the file using the same password.
-
-4. **What is the maximum file size I can compress?**  
-   The API accepts files up to **500 MB** per request.
-
-5. **How is rate limiting enforced?**  
-   You may make up to **100 requests per minute**. Exceeding this limit returns a **429 Too Many Requests** response with a `Retry-After` header indicating when to retry.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Compress Spreadsheet API",
-  "description": "REST API to compress Excel files programmatically using Aspose.Cells Cloud.",
-  "url": "https://docs.aspose.cloud/cells/compress-spreadsheet/",
-  "author": { "@type": "Organization", "name": "Aspose" },
-  "datePublished": "2024-01-01",
-  "keywords": ["Aspose.Cells", "Excel compression", "API"]
-}
-</script>

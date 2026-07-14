@@ -29,6 +29,14 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/FolderA?des
 
 This API moves a folder from one location to another within Aspose.Cells Cloud storage. It helps organise files and manage cloud storage efficiently.
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 ### The request parameters of **moveFolder** API are
 
 | Parameter Name  | Type   | Location | Description                                                       |

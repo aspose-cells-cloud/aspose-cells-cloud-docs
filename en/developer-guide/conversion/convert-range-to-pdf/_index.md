@@ -16,14 +16,16 @@ Export a range of data from a local Excel file to a [PDF](https://docs.fileforma
 
 ### Web API
 
-**Authentication** – All calls to the Aspose.Cells Cloud API require a valid OAuth 2.0 access token. Obtain the token using your client ID and client secret, then include it in the request header:
-
-```http
-Authorization: Bearer <access_token>
-```
-
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/range/pdf
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### **Request Parameters:**

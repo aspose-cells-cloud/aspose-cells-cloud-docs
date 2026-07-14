@@ -22,12 +22,18 @@ Use the Aspose.Cells Cloud Web API to instantly convert text case in your spread
 
 ### Web API
 
-**Authentication** – The API requires an OAuth 2.0 Bearer token passed in the `Authorization` header (e.g., `Authorization: Bearer {access_token}`). See the Aspose Cloud authentication guide for details.
-
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/wordcase
 ```
 
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 ### Request Parameters for **UpdateWordCase** API
 
 | Parameter Name | Type   | Location | Description                                                                                                                                                           |
@@ -43,12 +49,18 @@ PUT https://api.aspose.cloud/v4.0/cells/content/wordcase
 
 ### Response
 
-On success the service returns **200 OK** (or **202 Accepted**) with a JSON payload containing the URL or binary stream of the processed workbook.
+On success the service returns **200 OK** (or **202 Accepted**) with a JSON payload containing the binary stream of the processed workbook.
 
 ```json
-{
-  "FileUrl": "https://example.com/output/updatedWorkbook.xlsx"
-}
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
 ```
 
 ### Error Codes
@@ -109,7 +121,7 @@ On success the service returns **200 OK** (or **202 Accepted**) with a JSON 
 
 ## OpenAPI Specification
 
-The <a href="https://reference.aspose.cloud/cells/#/TextProcessingController/UpdateWordCase" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/UpdateWordCase) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

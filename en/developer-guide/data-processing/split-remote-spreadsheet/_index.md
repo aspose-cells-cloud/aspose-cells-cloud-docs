@@ -20,6 +20,14 @@ Divide a large Excel workbook stored in the cloud into separate files by workshe
 PUT http://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 ### **Request Parameters:**
 
 | Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                                                                                           |

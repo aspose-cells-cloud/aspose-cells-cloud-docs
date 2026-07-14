@@ -16,11 +16,17 @@ Export a cloud spreadsheet/Excel worksheet to another format file using the Aspo
 
 ### Web API
 
-The API uses OAuth 2.0 for authentication. Include an `Authorization` header with a Bearer token that you obtain from the Aspose Cloud console (or via the OAuth 2.0 client‑credentials flow). Example:
-
 ```http
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}
-Authorization: Bearer {access_token}
+
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### **Request Parameters**

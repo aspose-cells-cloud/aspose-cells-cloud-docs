@@ -26,7 +26,7 @@ PUT https://api.aspose.cloud/v4.0/cells/ai/translate/text-file
 | :------------- | :----- | :------- | :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Spreadsheet    | File   | Required | FormData          | The source text file to be translated. Must be a plain‑text (.txt) or supported spreadsheet format. Example: upload `document.txt` via multipart/form-data field named "file". |
 | targetLanguage | String | Required | Query             | ISO‑639‑1 language code of the desired output (e.g., "es" for Spanish, "fr" for French, "de" for German). The code is case‑insensitive.                                        |
-| region         | String | Optional | Query             | Optional region hint for the translation service (e.g., "us-east", "eu-west"). If omitted, the service selects the default region.                                             |
+| region         | string | Optional | Query             | Spreadsheet region identifier that influences locale‑specific formatting such as dates, numbers, and currency. Common values: "US", "EU", "CN". If omitted, the workbook’s original region setting is used. |
 | password       | String | Optional | Query             | Password required to open encrypted spreadsheet files. Not needed for plain‑text files.                                                                                        |
 
 ### **Response**

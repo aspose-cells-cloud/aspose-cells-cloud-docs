@@ -20,9 +20,16 @@ The API requires a valid OAuth 2.0 access token. Obtain the token by registering
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/saveas
-Authorization: Bearer {access_token}
-Content-Type: application/json
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 
 ### **Request Parameters**
 

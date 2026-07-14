@@ -29,7 +29,13 @@ Clean Excel data by converting text‑formatted numbers to numeric values, repla
 PUT https://api.aspose.cloud/v4.0/cells/content/convert/text
 ```
 
-**Prerequisites:** The API requires a valid OAuth 2.0 access token. Include it in the request header as `Authorization: Bearer {access_token}`. Always use HTTPS to protect the token and data in transit.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### The request parameters of **convertText** API are
 
@@ -85,7 +91,7 @@ PUT https://api.aspose.cloud/v4.0/cells/content/convert/text
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/ConvertText) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/ConvertText) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

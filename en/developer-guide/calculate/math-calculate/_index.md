@@ -26,8 +26,10 @@ _Boost productivity with bulk calculations across entire columns, rows, or table
 | **Divide**              | /           |
 | **Percentage**          | %           |
 
-**Prerequisites**  
-To call the Math Calculate API you must have a valid Aspose Cloud access token and the appropriate client ID/secret. The SDKs can be installed via NuGet, Maven, Composer, npm, pip, etc.
+## **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 
 ## **Math Calculate API**
 
@@ -47,21 +49,6 @@ PUT https://api.aspose.cloud/v4.0/cells/calculate/math
 | region         | String | Query                       | The spreadsheet region setting.                                                          |
 | password       | String | Query                       | The password for opening the spreadsheet file, if protected.                             |
 
-**Sample Request Body (multipart/form‑data)**  
-
-```http
-POST /v4.0/cells/calculate/math?operation=Add&value=10&worksheet=Sheet1&range=A1:A100 HTTP/1.1
-Host: api.aspose.cloud
-Authorization: Bearer {access_token}
-Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
-
-------WebKitFormBoundary7MA4YWxkTrZu0gW
-Content-Disposition: form-data; name="Spreadsheet"; filename="Book1.xlsx"
-Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
-
-<binary file content>
-------WebKitFormBoundary7MA4YWxkTrZu0gW--
-```
 
 ### **Response**
 
@@ -85,16 +72,6 @@ Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 - **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet encountered an issue retrieving calculation data.
 
-**HTTP Status Codes**
-
-| Code | Meaning |
-|------|---------|
-| 200 OK | Request succeeded and calculation result returned. |
-| 202 Accepted | Request accepted for processing; result will be available later. |
-| 400 Bad Request | Invalid request parameters. |
-| 401 Unauthorized | Authentication failed. |
-| 404 Not Found | Specified spreadsheet or range not found. |
-| 500 Server Error | Internal server error. |
 
 ## Where should we use the Math Calculate API?
 

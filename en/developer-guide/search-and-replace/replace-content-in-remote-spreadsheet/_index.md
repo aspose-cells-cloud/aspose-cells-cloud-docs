@@ -12,8 +12,6 @@ weight: 100
 
 Perform bulk text replacement across remote Excel files stored in the cloud. Find and update specific text strings efficiently using Aspose.Cells Find & Replace API for cloud spreadsheets.
 
-**Prerequisites**  
-To call this API you need a valid OAuth 2.0 access token obtained from the Aspose.Cloud authentication service, the name of the workbook stored in your cloud storage, and the appropriate API version (v4.0). The default storage configured for your account is used unless you specify a custom `storageName`. Ensure the workbook is accessible and, if protected, that you provide the correct `password` parameter.
 
 ## **Replace Content in Remote Spreadsheet API**
 
@@ -21,6 +19,14 @@ To call this API you need a valid OAuth 2.0 access token obtained from the Asp
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/replace/content
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### Request Parameters
@@ -42,8 +48,7 @@ A typical successful response returns the status of the operation and the number
 ```json
 {
   "Code": 200,
-  "Status": "OK",
-  "ReplacementsCount": 12
+  "Status": "OK"
 }
 ```
 
@@ -70,79 +75,13 @@ A typical successful response returns the status of the operation and the number
 
 ## How to Use the Replace Content in Remote Spreadsheet API with SDKs
 
-Below are ready‑to‑copy code snippets for the three most‑used SDKs. Each example assumes you have already obtained an OAuth 2.0 access token and initialized the SDK client.
+### OpenAPI Specification
 
-**C# Example**
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceContentInRemoteRange) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-```csharp
-using Aspose.Cells.Cloud.SDK.Api;
-using Aspose.Cells.Cloud.SDK.Model;
+### Use Aspose.Cells Cloud SDKs
 
-var clientId = "YOUR_CLIENT_ID";
-var clientSecret = "YOUR_CLIENT_SECRET";
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement replace content in spreadsheets for cells with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-var api = new CellsApi(clientId, clientSecret);
-var result = api.ReplaceContentInRemoteSpreadsheet(
-    name: "report.xlsx",
-    searchText: "OldValue",
-    replaceText: "NewValue",
-    folder: "/documents/quarterly/",
-    storageName: null);
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
-Console.WriteLine($"Status: {result.Status}, Replacements: {result.ReplacementsCount}");
-```
-
-**Java Example**
-
-```java
-import com.aspose.cloud.cells.api.CellsApi;
-import com.aspose.cloud.cells.model.*;
-
-public class ReplaceContentDemo {
-    public static void main(String[] args) {
-        CellsApi api = new CellsApi("YOUR_CLIENT_ID", "YOUR_CLIENT_SECRET");
-        ReplaceContentResponse response = api.replaceContentInRemoteSpreadsheet(
-            "report.xlsx",
-            "OldValue",
-            "NewValue",
-            "/documents/quarterly/",
-            null,
-            null,
-            null);
-
-        System.out.println("Status: " + response.getStatus() +
-                           ", Replacements: " + response.getReplacementsCount());
-    }
-}
-```
-
-**Python Example**
-
-```python
-from asposecellscloud import CellsApi, ApiClientConfiguration
-
-config = ApiClientConfiguration(client_id="YOUR_CLIENT_ID", client_secret="YOUR_CLIENT_SECRET")
-api = CellsApi(configuration=config)
-
-response = api.replace_content_in_remote_spreadsheet(
-    name="report.xlsx",
-    search_text="OldValue",
-    replace_text="NewValue",
-    folder="/documents/quarterly/",
-    storage_name=None
-)
-
-print(f"Status: {response.status}, Replacements: {response.replacements_count}")
-```
-
-**Sample `curl` Request**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/report.xlsx/replace/content?searchText=OldValue&replaceText=NewValue&folder=/documents/quarterly/" \
-     -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
-     -H "Accept: application/json"
-```
-
-These snippets demonstrate how to invoke the Replace Content API with minimal code. Refer to the full SDK documentation for additional configuration options.
-
----

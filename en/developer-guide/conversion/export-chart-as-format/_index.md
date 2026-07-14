@@ -14,14 +14,20 @@ Export a cloud spreadsheet/Excel chart to another format file using the Aspose.C
 
 ## **Export Chart as Format API**
 
-**Authentication**  
-All calls to the Aspose.Cells Cloud API require a valid OAuth 2.0 access token. Include the token in the request header as `Authorization: Bearer <access_token>`. Tokens can be obtained from the Aspose Cloud console or via the OAuth token endpoint. Ensure the token has permission to access the target storage.
-
 ### Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/charts/{chartIndex}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 
 ### **Request Parameters:**
 

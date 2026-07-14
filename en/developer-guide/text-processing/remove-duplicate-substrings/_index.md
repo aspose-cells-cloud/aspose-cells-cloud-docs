@@ -16,7 +16,6 @@ Remove duplicate substrings from Excel cells with intelligent detection. Keep or
 
 The Repeat Substring Cleaner API removes duplicate substrings within individual cells of an Excel range while preserving cell formatting, data validation, and other workbook structures. It processes each cell independently, keeping only the first occurrence of each duplicate substring.
 
-**Prerequisites** – Ensure you have a valid Aspose Cloud access token, the required SDK version installed, and sufficient storage space in your Aspose Cloud account before calling the API.
 
 ### **Data Source Options**
 
@@ -39,6 +38,14 @@ The Repeat Substring Cleaner API removes duplicate substrings within individual 
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### The request parameters of **RemoveDuplicateSubstrings** API are
@@ -68,21 +75,18 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substr
 ### **Response**
 
 ```json
-{
-  "FileName": "Sample_processed.xlsx",
-  "DownloadUrl": "https://api.aspose.cloud/v4.0/storage/file/Sample_processed.xlsx",
-  "Status": "OK"
-}
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
 ```
 
-### Error Codes
-
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
-- **500 Server Error**: The spreadsheet encountered an anomaly while obtaining calculation data.
-
-**Status‑code table**
+### **Status Code**
 
 | Code | Meaning                                 | Description                                                                                     |
 |------|-----------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -109,7 +113,7 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substr
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/RemoveDuplicateSubstrings) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/RemoveDuplicateSubstrings) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -20,6 +20,14 @@ The **ConvertSpreadsheetToCsv** endpoint reads a spreadsheet file uploaded from 
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 ### **Request Parameters:**
 
 | Parameter Name | Type   | Location | Requirement | Description                                                                                                                                                     |
@@ -33,14 +41,17 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv
 
 ### **Response**
 
-**Successful response (200 OK)**  
-Headers:
-
-- `Content-Type: text/csv`
-- `Content-Disposition: attachment; filename="<original_name>.csv"`
-- `Content-Length: <size in bytes>`
-
-Body: Binary stream containing the generated CSV file.
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
 
 ### Error Codes
 

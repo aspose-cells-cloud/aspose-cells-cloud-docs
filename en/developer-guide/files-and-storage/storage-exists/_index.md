@@ -14,9 +14,6 @@ weight: 100
 
 **Summary** – The `storageExists` endpoint lets you confirm whether a specific storage container is available in Aspose.Cells Cloud. Use it before performing file‑related operations to avoid runtime errors. The API returns a JSON object containing an `Exists` boolean that indicates the storage status.
 
-**Prerequisites** – An active Aspose Cloud account and a valid OAuth 2.0 access token are required before invoking this endpoint.
-
-**Authentication** – Include the header `Authorization: Bearer <access_token>` in the request.
 
 ### Web API
 
@@ -34,6 +31,14 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist" \
 ### Function Description
 
 The `storageExists` API checks whether a specified storage exists in the Aspose.Cells cloud service. This functionality is critical for ensuring that all operations dependent on storage can proceed without errors.
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### Request Parameters
 

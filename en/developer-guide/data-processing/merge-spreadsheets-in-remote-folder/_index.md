@@ -12,8 +12,6 @@ weight: 100
 
 Merge matching spreadsheet files from a remote cloud folder and export to 30+ supported formats like PDF, CSV, JSON, ODS, and XPS using Aspose.Cells Cloud API.
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## **Merge Spreadsheets in Remote Folder API**
 
@@ -22,6 +20,15 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 
 ### **Request Parameters:**
 
@@ -51,9 +58,11 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets?folde
 ```json
 [
   {
-    "Name": "MergedResult.pdf",
-    "Url": "https://storage.aspose.cloud/v4.0/files/MergedResult.pdf",
-    "Size": 124578
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
   }
 ]
 ```
@@ -74,19 +83,7 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/remote-spreadsheets?folde
 | 404  | Resource not found – confirm file/folder path. | `string`  |
 | 500  | Internal server error – see logs for details.  | `string`  |
 
-**Sample Error Response (JSON)**
 
-```json
-{
-  "error": {
-    "code": 400,
-    "message": "Bad request – check URI and parameters.",
-    "requestId": "123e4567-e89b-12d3-a456-426614174000"
-  }
-}
-```
-
-> **Note:** The API is subject to rate limiting. Exceeding the allowed number of requests per minute will result in a `429 Too Many Requests` response.
 
 ## Where should we use the Merge Spreadsheet in remote folder API?
 

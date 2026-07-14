@@ -20,6 +20,14 @@ Export range data from a local Excel file to a JSON file using the Cloud API.
 PUT https://api.aspose.cloud/v4.0/cells/convert/range/json
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 ### **Request Parameters:**
 
 | Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                           |
@@ -33,27 +41,6 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/range/json
 | region         | String | Query                       | The spreadsheet region setting.                                       |
 | password       | String | Query                       | Password for opening the spreadsheet file.                            |
 
-**Example request body (multipart/form‑data):**
-
-```http
-PUT https://api.aspose.cloud/v4.0/cells/convert/range/json
-Content-Type: multipart/form-data; boundary=---boundary
-
----boundary
-Content-Disposition: form-data; name="Spreadsheet"; filename="sample.xlsx"
-Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
-
-<binary data>
----boundary
-Content-Disposition: form-data; name="worksheet"
-
-Sheet1
----boundary
-Content-Disposition: form-data; name="range"
-
-A1:C10
----boundary--
-```
 
 ### **Response**
 
@@ -142,4 +129,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{</tab>}}
 {{< /tabs >}}
 
-*Note: The API supports Excel files up to 50 MB and a maximum range of 1 million cells. Ensure the first row contains headers for proper key mapping.*

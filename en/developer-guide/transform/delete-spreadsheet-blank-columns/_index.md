@@ -23,7 +23,13 @@ Blank columns often appear after data imports, template generation, or legacy fi
 PUT https://api.aspose.cloud/v4.0/cells/delete/blank-columns
 ```
 
-**Method:** `PUT`
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### Request Parameters
 
@@ -56,12 +62,6 @@ PUT https://api.aspose.cloud/v4.0/cells/delete/blank-columns
 - **404 Not Found** – The specified spreadsheet could not be located.
 - **500 Server Error** – An unexpected condition prevented the API from processing the file.
 
-## Prerequisites & Limits
-
-- **Supported formats**: XLS, XLSX, XLSM, CSV, ODS, and other formats listed in the Aspose.Cells documentation.
-- **File‑size limit**: Up to 200 MB per request (larger files require multipart upload).
-- **Rate limit**: 60 requests per minute per account (subject to change).
-- **SDK version**: Requires Aspose.Cells Cloud SDK v4.0 or later.
 
 ## When to Use the Delete Spreadsheet Blank Columns API
 
@@ -81,16 +81,10 @@ PUT https://api.aspose.cloud/v4.0/cells/delete/blank-columns
 
 ## How to Use the Delete Spreadsheet Blank Columns API with SDKs
 
-### Quick‑Start Example (C#)
-
-```csharp
-var cellsApi = new CellsApi(clientId, clientSecret);
-await cellsApi.DeleteSpreadsheetBlankColumnsAsync("sample.xlsx");
-```
 
 ### API Specification
 
-The [Delete Spreadsheet Blank Columns API Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankColumns) provides the full OpenAPI definition and examples.
+The [Delete Spreadsheet Blank Columns API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Transform/RemoveSpreadsheetBlankColumns) provides the full OpenAPI definition and examples.
 
 ### Using Aspose.Cells Cloud SDKs
 

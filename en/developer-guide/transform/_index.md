@@ -26,13 +26,3 @@ Robust Excel data‑manipulation APIs for professional spreadsheet management. T
 
 - **[Swap Range Data](https://docs.aspose.cloud/cells/swap-range/)** – Exchange data between any two ranges, columns, rows, or individual cells within an Excel file.
 
-#### Quick Reference
-
-| API | HTTP Method | Endpoint | Key Parameters | Sample Request |
-|-----|--------------|----------|----------------|----------------|
-| Delete Blank Columns | DELETE | `/cells/{fileName}/worksheets/{sheetName}/columns/blank` | `fileName`, `sheetName`, optional `storage` | `DELETE https://api.aspose.cloud/v3.0/cells/MyBook.xlsx/worksheets/Sheet1/columns/blank` |
-| Delete Blank Rows | DELETE | `/cells/{fileName}/worksheets/{sheetName}/rows/blank` | `fileName`, `sheetName`, optional `storage` | `DELETE https://api.aspose.cloud/v3.0/cells/MyBook.xlsx/worksheets/Sheet1/rows/blank` |
-| Delete Blank Worksheets | DELETE | `/cells/{fileName}/worksheets/blank` | `fileName`, optional `storage` | `DELETE https://api.aspose.cloud/v3.0/cells/MyBook.xlsx/worksheets/blank` |
-| Swap Range Data | POST | `/cells/{fileName}/worksheets/{sheetName}/ranges/swap` | `fileName`, `sheetName`, `range1`, `range2`, optional `storage` | `POST https://api.aspose.cloud/v3.0/cells/MyBook.xlsx/worksheets/Sheet1/ranges/swap` (body: `{ "range1":"A1:B2", "range2":"C3:D4" }`) |
-
-These concise snippets give developers immediate insight into how to call each transformation API without navigating away from the hub page.

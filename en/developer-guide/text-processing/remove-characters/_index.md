@@ -39,6 +39,14 @@ Easily clean and standardize your Excel data by removing specific, unwanted char
 PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 ### Request Parameters
 
 | Parameter Name    | Type   | Location           | Description                                                                                                                                                                                                                      |
@@ -95,7 +103,7 @@ PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/RemoveCharacters) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/RemoveCharacters) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

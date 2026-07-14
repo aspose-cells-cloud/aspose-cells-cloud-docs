@@ -14,13 +14,6 @@ Quickly merge Excel files stored in the cloud with other spreadsheets using Aspo
 
 ## Merge Remote Spreadsheet API
 
-**Prerequisites**  
-Before calling the API, ensure that you:
-
-- Have generated a valid OAuth 2.0 access token.
-- Are using a supported cloud storage provider (AWS S3, Azure Blob, Google Cloud Storage).
-- Are running at least SDK version **23.12** (or later).
-- Have TLS 1.2 or higher enabled for secure communication.
 
 ### Web API
 
@@ -28,7 +21,14 @@ Before calling the API, ensure that you:
 PUT https://api.aspose.cloud/v4.0/cells/{name}/merge/spreadsheet
 ```
 
-> **Note:** The endpoint uses HTTPS, providing encrypted transmission and compliance with Google’s security ranking factors.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 
 ### Request Parameters:
 
@@ -65,8 +65,6 @@ PUT https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/merge/spreadsheet?merged
   }
 ]
 ```
-
-The response returns the name, size (in bytes), and a direct download URL for the merged file. A successful call returns **200 OK** with the file stream.
 
 ### Error Codes
 

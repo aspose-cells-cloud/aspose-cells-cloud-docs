@@ -20,6 +20,14 @@ Programmatically move worksheets within Excel workbooks using the Aspose.Cells C
 PUT http://api.aspose.cloud/v4.0/cells/spreadsheet/move/worksheet
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 ### **Request Parameters:**
 
 | Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                           |

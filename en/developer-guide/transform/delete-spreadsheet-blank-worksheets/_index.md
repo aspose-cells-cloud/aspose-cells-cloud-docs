@@ -20,7 +20,13 @@ Automatically delete all blank worksheets from Excel workbooks using Aspose.Cell
 PUT https://api.aspose.cloud/v4.0/cells/delete/blank-worksheets
 ```
 
-> **Note:** The endpoint must be called over **HTTPS**; using `http://` may be blocked by browsers and can expose credentials.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### **Request Parameters:**
 
@@ -75,17 +81,9 @@ The API returns the processed workbook as a file stream.
 
 ## How to Use the Delete Spreadsheet Blank Worksheets API with SDKs
 
-### Authentication
-
-All Aspose.Cells Cloud API calls require an OAuth 2.0 access token. Obtain the token by sending a `POST` request to the authentication endpoint with your `client_id` and `client_secret`. Include the token in the `Authorization` header of each request:
-
-```http
-Authorization: Bearer <access_token>
-```
-
 ### Delete Spreadsheet Blank Worksheets API Specification
 
-The [Delete Spreadsheet Blank Worksheets API Specification](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankWorksheets) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
+The [Delete Spreadsheet Blank Worksheets API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Transform/RemoveSpreadsheetBlankWorksheets) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -119,5 +117,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankWorksheets.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-For related operations, see the **Delete Blank Columns**, **Delete Blank Rows**, and **Swap Range** API pages.

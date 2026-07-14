@@ -17,18 +17,15 @@ description: "Explore the latest features, improvements, and bug fixes in Aspose
 
 # Latest Release
 
-| **ID** | **Summary** | **Category** |
-| :- | :- | :- |
-| 56632 | Update form‑data parameter name for Cells Cloud code specification on Cells Cloud 3.0 services. | Improvement |
-| 56793 | Fix the issue of `StringEnumConverter` on Aspose.Cells Cloud services. | Bug |
-| 56866 | Support trimming spreadsheet content in Cells Cloud 4.0. | Improvement |
-| 56867 | Support trimming worksheet‑range content in Cells Cloud 4.0. | Improvement |
-| 56919 | An exception occurs when saving the spreadsheet as a different format file on Cells Cloud. | Bug |
-| 56922 | When exporting a range/table as an HTML file, data is lost. | Bug |
-| 56936 | Fix several spelling errors. | Bug |
+| **ID** | **Summary**                                                 | **Category** |
+|:-----:|:-----------------------------------------------------------:|:-----------:|
+| 60858 | Implement the data transpose Web API on Aspose Cells Cloud. | New Feature |
+| 60912 | Implement the data unpivot Web API on Aspose Cells Cloud.   | New Feature |
+
 
 # Historical Releases
 
+- [2026 Release](/cells/new-features/2026/)
 - [2025 Release](/cells/new-features/2025/)
 - [2024 Release](/cells/new-features/2024/)
 - [2023 Release](/cells/new-features/2023/)

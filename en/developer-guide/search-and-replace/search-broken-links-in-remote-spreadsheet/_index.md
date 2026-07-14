@@ -20,10 +20,13 @@ Automatically detect broken links in Excel files stored in cloud storage. Our AP
 PUT https://api.aspose.cloud/v4.0/cells/{name}/search/broken-links
 ```
 
-**Prerequisites:**  
-- Obtain an OAuth 2.0 access token using your Aspose Cloud client credentials.  
-- Include the token in the request header: `Authorization: Bearer {access_token}`.  
-- Ensure the target workbook resides in a supported cloud storage and that any custom storage name is correctly configured.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### **Request Parameters:**
 
@@ -129,7 +132,7 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/Quarterly_Report.xlsx/search/br
 
 ### OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchController/SearchBrokenLinksInRemoteSpreadsheet) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchBrokenLinksInRemoteSpreadsheet) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

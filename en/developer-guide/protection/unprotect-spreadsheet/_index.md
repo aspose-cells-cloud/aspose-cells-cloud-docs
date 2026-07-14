@@ -20,15 +20,20 @@ The Unprotect Spreadsheet API removes open‑ and modify‑password protection f
 PUT https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet
 ```
 
-**Authentication / Prerequisites**  
-The API requires a valid OAuth 2.0 access token. Obtain the token using your Aspose Cloud client ID and client secret, then include it in the `Authorization` header as `Bearer {access_token}`. Ensure that the target storage (default or named) is configured for the account that owns the token.
-
 **cURL Example**
 
 ```bash
 curl -X PUT "https://api.aspose.cloud/v4.0/cells/unprotection/spreadsheet?password=OldPass&modifyPassword=ModPass" \
      -H "Authorization: Bearer {access_token}" \
      -F "Spreadsheet=@myfile.xlsx"
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### **Request Parameters**

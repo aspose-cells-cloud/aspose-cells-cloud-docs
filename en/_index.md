@@ -41,7 +41,7 @@ It is recommended to use the official SDK to simplify authentication and request
 #### **[Install SDK (using .NET as an example)](https://www.nuget.org/packages/Aspose.cells-Cloud/#readme-body-tab)**
 
 ```powershell
-dotnet add package Aspose.Cells-Cloud --version 25.8.0
+dotnet add package Aspose.Cells-Cloud --version 26.6.0
 ```
 
 #### Example: **Convert Excel to PDF with SDK**

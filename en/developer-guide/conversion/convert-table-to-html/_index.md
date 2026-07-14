@@ -20,7 +20,13 @@ Export table data from a local Excel file to an HTML file using the Cloud API.
 PUT https://api.aspose.cloud/v4.0/cells/convert/table/html
 ```
 
-> **Note:** All Aspose.Cells Cloud endpoints require **HTTPS**. Using `http` may result in mixed‑content errors or blocked requests in modern browsers.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### **Request Parameters:**
 

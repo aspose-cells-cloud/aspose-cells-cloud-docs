@@ -12,8 +12,6 @@ weight: 100
 
 Segment Excel cell text into multiple columns using custom segmentation rules. Split content by delimiter and output to specified ranges with the Aspose.Cells Cloud text‑splitting Web API.
 
-![Excel cell split example](https://example.com/images/split-text-illustration.png "Excel cell split into multiple columns using Aspose.Cells Cloud API")
-
 ## **Introduction**: Split Text
 
 The Text Segmentation API divides cell contents into multiple cells based on specified delimiters, patterns, or line breaks, and outputs the results to a target range. It supports flexible splitting methods, directional output (columns or rows), and options to preserve delimiters—ideal for parsing concatenated data, CSV‑style content, or multiline text into structured formats.
@@ -33,7 +31,14 @@ The Text Segmentation API divides cell contents into multiple cells based on spe
 
 ```http
 POST https://api.aspose.cloud/v4.0/cells/content/split/text
-# Required header: Authorization: Bearer {access_token}
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### The request parameters of **splitText** API are
@@ -107,7 +112,7 @@ When importing data from external systems, fields are often concatenated into si
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/SplitText) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/SplitText) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

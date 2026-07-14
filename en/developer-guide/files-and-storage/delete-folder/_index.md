@@ -23,7 +23,14 @@ The `deleteFolder` API removes a specified folder from Aspose.Cells Cloud storag
 
 Developers often need to remove temporary or obsolete folders in cloud storage as part of cleanup or automation workflows.
 
-**Prerequisites:** A valid Aspose.Cells Cloud authentication token and, if applicable, the name of the storage where the folder resides must be provided.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 
 ### Request Parameters
 

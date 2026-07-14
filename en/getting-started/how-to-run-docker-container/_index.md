@@ -99,20 +99,3 @@ docker run \
   aspose/cells-cloud:25.9.0
 ```
 
-#### Viewing logs & health‑check (optional)
-
-```bash
-# Show container logs
-docker logs <container-id>
-
-# Simple health‑check (add to docker‑compose if desired)
-# healthcheck:
-#   test: ["CMD", "curl", "-f", "http://localhost:80/health"]
-#   interval: 30s
-#   timeout: 10s
-#   retries: 3
-```
-
----
-
-[^1]: See the official Aspose.Cells Cloud release notes for version 25.9.0 and later.

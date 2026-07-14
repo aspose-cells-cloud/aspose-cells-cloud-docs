@@ -12,15 +12,20 @@ weight: 100
 
 Export table data from a local Excel file to a PDF file using the Cloud API.
 
-**Prerequisites**  
-To call the Convert Table to PDF API you must have a valid Aspose Cloud access token. Obtain it by registering your application in the Aspose Cloud dashboard and using the client ID and secret to request a token via OAuth 2.0. Include the token in the `Authorization: Bearer {access_token}` header of each request.
-
 ## **Convert Table to PDF API**
 
 ### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/table/pdf
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### **Request Parameters:**

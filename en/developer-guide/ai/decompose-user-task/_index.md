@@ -25,14 +25,10 @@ PUT https://api.aspose.cloud/v4.0/cells/ai/task/decompose
 | Parameter Name  | Type   | Location | Required/Optional | Description                                                                                                                                                                                                                              |
 | :-------------- | :----- | :------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | TaskDescription | string | Body     | Required          | A plain‑text description of the user’s overall objective. The service parses the description and generates individual tasks. Example: “Launch marketing campaign for Q3, including content creation, email blast, and social media ads.” |
-| region          | string | Query    | Optional          | Specifies the spreadsheet region (e.g., “A1:D20”) where the result should be placed when the response is saved as a workbook. If omitted, the API uses the default worksheet start cell.                                                 |
-| password        | string | Query    | Optional          | Password for opening an encrypted spreadsheet file before inserting the decomposition result. Required only when the target workbook is protected.                                                                                       |
 
 **Authentication**  
 Calls to the Decompose User Task API require an OAuth 2.0 access token. Include the token in the `Authorization` header as `Bearer <access_token>`. Tokens are obtained from the Aspose Cloud authentication endpoint.
 
-**Rate‑Limit**  
-The API enforces a default limit of 60 requests per minute per account. The response includes the header `X-RateLimit-Remaining` indicating the remaining calls in the current window. If the limit is exceeded, the service returns **429 Too Many Requests**; retry after the period indicated in the `Retry-After` header.
 
 ### **Response**
 
@@ -50,9 +46,7 @@ The same structure is used for XLSX/ODS formats, with columns placed in the firs
 
 ```json
 {
-  "TaskDescription": "Launch marketing campaign for Q3, including content creation, email blast, and social media ads.",
-  "region": "A1:D20",
-  "password": "optionalPassword"
+  "TaskDescription": "Develop a web API for a task-splitting feature on the existing system.",
 }
 ```
 
@@ -60,9 +54,11 @@ The same structure is used for XLSX/ODS formats, with columns placed in the firs
 The API returns a binary stream containing the generated file. To preview the first few rows of a CSV response, decode the stream and view the header row, e.g.:
 
 ```
-Task ID,Task Name,Estimated Hours,Start Date,End Date,Milestone
-1,Create campaign brief,4,2024-07-01,2024-07-01,Planning
-2,Design graphics,8,2024-07-02,2024-07-03,Design
+ID,Subject,Trucker,Estimated Duration,Description
+1	Requirement gathering for task‑splitting API	Business Analyst	8	Collect functional and non‑functional requirements, user stories and acceptance criteria for the new task‑splitting endpoint.
+2	API specification (OpenAPI)	Business Analyst	6	Define the OpenAPI contract for POST /tasks/split, including request schema, response formats, error codes and security requirements.
+3	Splitting algorithm & data‑model design	Solution Architect	5	Design the core algorithm that divides a parent task into subtasks, and extend the data model (DB tables / entities) to store hierarchy and metadata.
+4	Architecture integration review	Solution Architect	4	Analyse impact on existing services, event flows and database migrations; produce integration plan.
 ...
 ```
 

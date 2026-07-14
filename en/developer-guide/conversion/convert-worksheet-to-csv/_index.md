@@ -12,26 +12,20 @@ weight: 100
 
 The **ConvertWorksheetToCsv** endpoint transforms a single worksheet from a local spreadsheet file into a CSV document entirely on the Aspose.Cells Cloud server. By uploading the source file and specifying the target worksheet, developers receive a binary CSV stream without needing to store the file in cloud storage. This API is ideal for automating data extraction, integrating spreadsheet data into downstream systems, and reducing storage overhead.
 
-**Last updated:** 2026-07-05
-
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-## Prerequisites
-
-Before calling the API, you need:
-
-- An Aspose Cloud account.
-- A **Client ID** and **Client Secret**.
-- An OAuth 2.0 access token (obtainable via the Aspose Cloud token endpoint).
-
 ## Convert Worksheet to CSV API
 
 ### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/csv
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### cURL Sample
@@ -56,23 +50,16 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/worksheet/csv?worksheet
 
 ### Response
 
-**Successful response (200 OK)**
-
-- `Content-Type`: `text/csv` or `application/octet-stream`
-- Headers:
-  - `Content‑Disposition: attachment; filename="<worksheet>.csv"`
-  - `Content‑Length: <size in bytes>`
-- Body: binary stream containing the generated CSV file.
-
-If `outPath` is supplied, the response body is empty and the CSV is stored at the specified cloud location; the response includes a JSON payload with the storage path.
-
-**Error responses** follow standard HTTP status codes (400, 401, 404, 500) with a JSON error object:
-
 ```json
-{
-  "code": "ErrorCode",
-  "message": "Human‑readable error description"
-}
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
 ```
 
 ### Error Codes
@@ -136,17 +123,3 @@ The following code examples demonstrate how to interact with Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_v40_ConvertWorksheetToCsv.go" >}}  
 {{</tab>}}  
 {{< /tabs >}}
-
-## Frequently Asked Questions
-
-**Q:** _What HTTP method and endpoint are used to convert a worksheet to CSV?_  
-**A:** Send a `PUT` request to `https://api.aspose.cloud/v4.0/cells/convert/worksheet/csv`.
-
-**Q:** _How do I authenticate the request?_  
-**A:** Include an `Authorization: Bearer <access_token>` header obtained via the Aspose Cloud OAuth 2.0 flow.
-
-**Q:** _Can I save the generated CSV directly to cloud storage?_  
-**A:** Yes. Provide the `outPath` (target folder) and optionally `outStorageName` (storage service) as query parameters. The response will contain a JSON payload with the storage location.
-
-**Q:** _What is the maximum file size supported?_  
-**A:** The API accepts files up to 100 MB. Larger files may result in a `400 Bad Request` error.

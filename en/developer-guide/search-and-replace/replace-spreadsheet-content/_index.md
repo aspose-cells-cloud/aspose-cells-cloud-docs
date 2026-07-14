@@ -20,7 +20,13 @@ Replace specified text within local Excel spreadsheet files without cloud upload
 PUT https://api.aspose.cloud/v4.0/cells/replace/content
 ```
 
-> **Note:** The API requires an OAuth 2.0 **Bearer** token. Obtain the token via the client‑credentials flow and include it in the request header: `Authorization: Bearer <access_token>`.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### **Request Parameters:**
 
@@ -76,7 +82,7 @@ The response is a binary stream containing the updated workbook. Save it with th
 
 ### OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/ReplaceSpreadsheetContent) defines a publicly accessible programming interface, allowing you to perform REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceSpreadsheetContent) defines a publicly accessible programming interface, allowing you to perform REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

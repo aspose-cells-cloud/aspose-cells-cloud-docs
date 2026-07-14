@@ -22,6 +22,14 @@ PUT http://api.aspose.cloud/v4.0/cells/storage/file/{path}
 
 The **uploadFile** API enables developers to upload files directly to cloud storage for processing with Aspose Cells.
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 ### The request parameters of the **uploadFile** API are
 
 | Parameter Name | Type | Path/Query String/HTTP Body | Description |

@@ -12,6 +12,57 @@ weight: 100
 
 Convert a local spreadsheet/Excel file to another format with the Aspose.Cells Cloud Web API.
 
+## **Convert Spreadsheet API**
+
+### Web API
+
+```http
+PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
+### **Request Parameters:**
+
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                  |
+| :------------- | :----- | :------------------------- | :------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload the spreadsheet file to be converted.                                                 |
+| format         | String | Query                      | (Required) The desired output format (e.g., “Xlsx”, “PDF”, “CSV”).                           |
+| outPath        | String | Query                      | (Optional) The folder path where the converted workbook will be stored. The default is null. |
+| outStorageName | String | Query                      | Specify an output file storage name.                                                         |
+| fontsLocation  | String | Query                      | Use custom fonts for the spreadsheet.                                                        |
+| region         | String | Query                      | Specify the spreadsheet region setting.                                                      |
+| password       | String | Query                      | The password for opening the spreadsheet file if it is protected.                            |
+
+### **Response**
+
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
+
+### Error Codes
+
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
+- **404 Not Found**: The spreadsheet file is not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly while obtaining calculation data.
+
+## Format
+
 | **Out Format**                                                    | **Description**                                                                                                              |
 | :---------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
 | <a href="https://docs.fileformat.com/spreadsheet/xls/" rel="noopener noreferrer">XLS</a>               | Excel 95/5.0 - 2003 Workbook.                                                                                                |
@@ -53,50 +104,6 @@ Convert a local spreadsheet/Excel file to another format with the Aspose.Cells C
 | <a href="https://docs.fileformat.com/web/xml/" rel="noopener noreferrer">Xml</a>                       | XML stands for Extensible Markup Language; it is similar to HTML but uses tags to define objects.                            |
 | <a href="https://docs.fileformat.com/spreadsheet/ots/" rel="noopener noreferrer">Ots</a>               | Open Document Template Sheet (OTS) file.                                                                                     |
 | <a href="https://docs.fileformat.com/ebook/azw3/" rel="noopener noreferrer">AZW3</a>                   | AZW is a digital e‑book file format developed by Amazon for Kindle devices. AZW3, also known as Kindle Format 8 (KF8).       |
-
-## **Convert Spreadsheet API**
-
-**Prerequisites**  
-To use this API you must have a valid Aspose Cloud account, obtain an access token (OAuth 2.0 or JWT), and include the token in the `Authorization` header of each request. Ensure the appropriate SDK version is installed if you prefer using a language‑specific client.
-
-### Web API
-
-```http
-PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet
-```
-
-### **Request Parameters:**
-
-| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                  |
-| :------------- | :----- | :------------------------- | :------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                   | Upload the spreadsheet file to be converted.                                                 |
-| format         | String | Query                      | (Required) The desired output format (e.g., “Xlsx”, “PDF”, “CSV”).                           |
-| outPath        | String | Query                      | (Optional) The folder path where the converted workbook will be stored. The default is null. |
-| outStorageName | String | Query                      | Specify an output file storage name.                                                         |
-| fontsLocation  | String | Query                      | Use custom fonts for the spreadsheet.                                                        |
-| region         | String | Query                      | Specify the spreadsheet region setting.                                                      |
-| password       | String | Query                      | The password for opening the spreadsheet file if it is protected.                            |
-
-### **Response**
-
-```json
-[
-  {
-    "Name": "ResponseFile",
-    "DataType": {
-      "Identifier": "File",
-      "Reference": "Stream"
-    }
-  }
-]
-```
-
-### Error Codes
-
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly while obtaining calculation data.
 
 ## Where should you use the Convert Spreadsheet API?
 

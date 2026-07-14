@@ -16,11 +16,6 @@ Automatically detect broken links in Excel files. Our API scans specified ranges
 
 **Summary:** Use this endpoint to quickly identify and repair invalid links in workbooks, ensuring data integrity across financial models, M&A data sets, and investor‑ready packages.
 
-**Prerequisites:**  
-- Obtain an OAuth 2.0 access token from the Aspose Cloud console.  
-- Include the token in the request header: `Authorization: Bearer <access_token>`.  
-- Ensure your client‑id and client‑secret are configured in your application as described in the Aspose authentication guide.
-
 ### **Web API**
 
 ```bash
@@ -31,6 +26,14 @@ PUT https://api.aspose.cloud/v4.0/cells/search/broken-links
 curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/broken-links?worksheet=Sheet1" \
      -H "Authorization: Bearer {access_token}" \
      -F "Spreadsheet=@sample.xlsx"
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### Request Parameters
@@ -76,11 +79,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/broken-links?worksheet=S
 | **429 Too Many Requests** | Rate limit exceeded (60 calls / minute). |
 | **500 Server Error** | The spreadsheet encountered an anomaly while obtaining calculation data. |
 
-### Limits & Throttling
-
-- Maximum workbook size: **150 MB**.  
-- Rate limit: **60 requests per minute** per account.  
-- If you receive a `429` response, wait at least one minute before retrying.
 
 ## Where should we use the Search broken links within the Spreadsheet API?
 
@@ -135,4 +133,3 @@ The following code examples illustrate how to make calls to Aspose.Cells web ser
 {{</tab>}}
 {{< /tabs >}}
 
-You can also download a **sample JSON response** file [here](https://example.com/sample-broken-links-response.json){:target="_blank" rel="noopener noreferrer"} to experiment offline.

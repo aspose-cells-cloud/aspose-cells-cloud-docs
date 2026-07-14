@@ -24,8 +24,14 @@ GET https://api.aspose.cloud/v4.0/cells/storage/file/{path}
 
 The **DownloadFile** API enables you to retrieve files stored in Aspose.Cells Cloud storage. The Download File API is essential for accessing Excel spreadsheets, PDFs, CSVs, and other supported formats directly from the cloud.
 
-**Prerequisites / Authentication**  
-To call this endpoint you must include a valid OAuth 2.0 or JWT access token in the `Authorization` header. Tokens are obtained from the Aspose Cloud authentication service. Ensure the token has the `Read` scope for the target storage.  
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 
 ### The request parameters of **DownloadFile** API are
 

@@ -14,8 +14,6 @@ weight: 100
 
 The **Get Disk Usage** operation returns real‑time storage metrics for your Aspose.Cells Cloud account. Use this endpoint to monitor consumed and total disk space.
 
-Prerequisites: You must have a valid Aspose Cloud account and an access token (JWT) with sufficient permissions.
-
 ### Web API
 
 ```http
@@ -32,6 +30,14 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/disk?storageName=MyStor
 - Retrieves the current disk usage for the Excel API in the Aspose Cloud environment.
 - Allows developers to monitor how much storage their applications have consumed.
 - Enables proactive management of storage limits and cost control.
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### Request Parameters
 

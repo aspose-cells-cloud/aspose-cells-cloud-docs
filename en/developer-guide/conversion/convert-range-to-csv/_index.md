@@ -11,8 +11,7 @@ description: "Convert a specific range from a local Excel file to CSV using the 
 
 Export a specific range from a local Excel file to CSV using the Aspose.Cells Cloud API.
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 
 ## **Convert Range to CSV API**
 
@@ -20,6 +19,13 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/range/csv
+```
+
+### Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### **Request Parameters:**

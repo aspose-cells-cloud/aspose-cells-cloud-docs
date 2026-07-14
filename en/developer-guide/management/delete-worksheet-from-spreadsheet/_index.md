@@ -14,14 +14,20 @@ Programmatically delete worksheets from Excel workbooks using Aspose.Cells Cloud
 
 ## Delete worksheet from Spreadsheet API
 
-**Prerequisites**: To call this API you must have a valid Aspose Cloud access token. Obtain it by creating an application in the Aspose Cloud Dashboard and using the client ID and secret to request a JWT token. Include the token in the `Authorization: Bearer {access_token}` header.
-
 ### Web API
 
 ```bash
 curl -X DELETE "https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets/Sheet1?outPath=output.xlsx" \
      -H "Authorization: Bearer {access_token}" \
      -H "Content-Type: application/json"
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### Request Parameters:

@@ -24,8 +24,14 @@ PUT https://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
 
 The **copyFile** API allows users to duplicate an Excel file from a specified source path to a destination path, supporting various storage options.
 
-**Authentication:** The request must include a valid OAuth 2.0 access token in the `Authorization` header (Bearer token).  
-**Rate limits:** Calls to this endpoint are subject to the standard Aspose Cloud rate‑limit policy.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 
 ### The request parameters of the **copyFile** API are
 

@@ -22,12 +22,13 @@ PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 
 The **createFolder** operation creates a new folder at the specified location in the cloud storage used by the Excel API. This is essential for organizing files and maintaining a structured directory hierarchy.
 
-**Prerequisites**  
-- An OAuth 2.0 access token must be obtained beforehand.  
-- The default storage must be configured, or a specific storage name provided via the `storageName` query parameter.
+### **Security and Authentication**
 
-**Authentication**  
-Include the OAuth token in the `Authorization` header of the request (`Bearer {access_token}`). Without a valid token, the API returns a **401 Unauthorized** error.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### The request parameters of **createFolder** API are
 

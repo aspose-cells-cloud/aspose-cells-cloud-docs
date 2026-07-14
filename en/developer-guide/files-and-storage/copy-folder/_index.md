@@ -22,6 +22,14 @@ PUT https://api.aspose.cloud/v4.0/cells/storage/folder/copy/{srcPath}
 
 The **CopyFolder** API duplicates an existing folder within Aspose.Cells Cloud storage. This is useful for creating backups, reorganising data, or preparing a folder hierarchy for further processing without manual file moves.
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 ### The CopyFolder API accepts the following parameters
 
 | Parameter Name    | Required | Type   | Location (Path/Query) | Description                                                            |

@@ -20,6 +20,14 @@ Export a cloud spreadsheet/Excel range to a format file. The format file can be 
 GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{range}
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 ### Request Parameters
 
 | Parameter Name     | Type   | Location | Description                                                                                                                                        |
@@ -36,31 +44,8 @@ GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{ra
 | **region**         | String | Query    | (Optional) Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
 | **password**       | String | Query    | (Optional) Password required to open the spreadsheet file.                                                                                         |
 
-### Response Details
+### Response
 
-The API returns a binary stream containing the exported file.
-
-- **Content‑Type** – Corresponds to the requested format (e.g., `application/pdf`).
-- **Response body** – The file data can be saved directly to disk or streamed to another service.
-
-**Sample Request**
-
-```bash
-curl -X GET "https://api.aspose.cloud/v4.0/cells/Book1.xlsx/worksheets/Sheet1/ranges/A1:C12?format=pdf&outPath=Exported/A1_C12.pdf" \
-     -H "Authorization: Bearer {access_token}" \
-     -o A1_C12.pdf
-```
-
-**Sample Response**
-
-The command above writes the binary PDF data to `A1_C12.pdf`. For error scenarios the service returns a JSON payload similar to:
-
-```json
-{
-  "code": "InvalidRequest",
-  "message": "The requested format is not supported."
-}
-```
 
 ```json
 [

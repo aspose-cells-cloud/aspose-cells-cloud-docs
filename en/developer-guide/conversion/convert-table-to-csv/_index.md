@@ -20,7 +20,14 @@ Export table data from a local Excel file to a CSV file using the Cloud API.
 ```http
 PUT http://api.aspose.cloud/v4.0/cells/convert/table/csv
 ```
-````
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### **Request Parameters:**
 

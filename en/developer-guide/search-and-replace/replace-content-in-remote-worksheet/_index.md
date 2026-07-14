@@ -14,17 +14,18 @@ Replace specified text within a particular worksheet of remote Excel files. Upda
 
 ## **Replace Content in Remote Worksheet API**
 
-**Prerequisites / Authentication**  
-To call this endpoint you must first obtain an OAuth 2.0 access token from the Aspose Cloud authentication service and include it in the request header:
-
-```
-Authorization: Bearer {access_token}
-```
-
 ### **Web API**
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/replace/content
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### **Request Parameters**
@@ -82,7 +83,7 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/sales_report.xlsx/worksheets/Sh
 
 ### OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/ReplaceContentInRemoteWorksheet) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceContentInRemoteRange) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -14,7 +14,6 @@ weight: 100
 
 Programmatically search for specific text within any Excel spreadsheet using the Aspose.Cells Cloud API. The API can locate text, numbers, or formulas in local files stored in the cloud, enabling automated data discovery, content analysis, and spreadsheet‑auditing workflows.
 
-**Prerequisites**: You must have a valid OAuth 2.0 access token and appropriate storage permissions before invoking the API.
 
 ### **Web API**
 
@@ -31,6 +30,14 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/content?searchText=Invoi
      -F "spreadsheet=@/path/to/your/file.xlsx"
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 ### **Request Parameters**
 
 | Parameter    | Type    | Location | Description                                                                        |
@@ -43,7 +50,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/content?searchText=Invoi
 | region       | String  | Query    | Geographic region of the service (e.g., `us-east-1`).                              |
 | password     | String  | Query    | Password required to open a protected workbook.                                    |
 
-*Note: The API also supports additional optional parameters such as `isRegex` and `matchWholeCell` for advanced search scenarios.*
 
 ### **Response**
 
@@ -51,24 +57,22 @@ The API returns a `SearchResult` object that contains an array of matched cells.
 
 ```json
 {
-  "Code": 0,
-  "Status": "OK",
-  "Cells": [
+  "textItems": [
     {
-      "Worksheet": "Sheet1",
-      "CellName": "B4",
-      "Text": "Invoice"
+      "cellName": "A1",
+      "text": "Total",
+      "occurrences": 1
     },
     {
-      "Worksheet": "Sheet2",
-      "CellName": "A12",
-      "Text": "Invoice"
+      "cellName": "B5",
+      "text": "Total",
+      "occurrences": 2
     }
-  ]
+  ],
+  "code": 200,
+  "status": "OK"
 }
 ```
-
-*Version: API v4.0 (last updated 2024‑12‑01).*
 
 ### Error Codes
 

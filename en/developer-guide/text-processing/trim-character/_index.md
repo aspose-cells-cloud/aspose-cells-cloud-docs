@@ -39,6 +39,14 @@ Before calling the API, ensure you have a valid Aspose Cloud account, a `client_
 PUT https://api.aspose.cloud/v4.0/cells/content/trim
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 ### The request parameters of **trimCharacter** API are
 
 | Parameter Name          | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                         |
@@ -100,7 +108,7 @@ PUT https://api.aspose.cloud/v4.0/cells/content/trim
 
 ## OpenAPI Specification
 
-<a href="https://reference.aspose.cloud/cells/#/TextProcessingController/TrimCharacter" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/TrimCharacter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -134,6 +142,3 @@ The following code examples illustrate how to make calls to Aspose.Cells web ser
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_TrimTextInSpreadsheet.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-![Before trimming – Excel cells with extra spaces and line breaks](images/source001.png)
-![After trimming – Cleaned Excel cells](images/target001.png)

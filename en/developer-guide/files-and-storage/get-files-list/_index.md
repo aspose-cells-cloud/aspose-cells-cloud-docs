@@ -14,8 +14,6 @@ weight: 100
 
 The **Get Files List** operation returns the collection of files and sub‑folders stored in a specified folder. For an overview of all storage‑related operations, see the **[Files and Storage](/files-and-storage/)** page.
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token‑based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### Web API
 
@@ -33,6 +31,14 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/folder/{path}?storageNa
 ### Function Description
 
 The **getFilesList** API retrieves a comprehensive list of files and folders contained within a specified directory in Aspose.Cells Cloud storage. This endpoint is essential for efficient file management and supports a variety of Excel‑related file formats.
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### Request Parameters for Get Files List API
 

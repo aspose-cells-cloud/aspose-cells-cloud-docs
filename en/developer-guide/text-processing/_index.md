@@ -16,15 +16,6 @@ Aspose.Cells Cloud offers a collection of REST endpoints that let you manipulate
 
 **Prerequisites:** All requests must be authenticated with a valid access token supplied in the `Authorization` header. Refer to the authentication guide for details on obtaining and using tokens.
 
-Below is a concise reference that summarises the most frequently used text‑processing endpoints.
-
-| Operation | HTTP Method | Endpoint (template) | Key Parameters | Sample Response |
-|-----------|------------|---------------------|----------------|-----------------|
-| Trim whitespace or characters | POST | `/cells/{file}/worksheets/{sheet}/cells/trim` | `range`, `trimChars` (optional) | `{ "code": 200, "status": "OK", "trimmedCells": 12 }` |
-| Split text into multiple cells | POST | `/cells/{file}/worksheets/{sheet}/cells/split` | `range`, `delimiter`, `destinationRange` | `{ "code": 200, "status": "OK", "splitCells": 8 }` |
-| Convert text case (upper, lower, title) | POST | `/cells/{file}/worksheets/{sheet}/cells/convert-case` | `range`, `caseType` | `{ "code": 200, "status": "OK", "convertedCells": 15 }` |
-| Extract substring | POST | `/cells/{file}/worksheets/{sheet}/cells/extract` | `range`, `startIndex`, `length` | `{ "code": 200, "status": "OK", "extractedValue": "Sample" }` |
-| Remove specific characters | POST | `/cells/{file}/worksheets/{sheet}/cells/remove-characters` | `range`, `characters` | `{ "code": 200, "status": "OK", "removedChars": 5 }` |
 
 ### Basic Text Operations
 

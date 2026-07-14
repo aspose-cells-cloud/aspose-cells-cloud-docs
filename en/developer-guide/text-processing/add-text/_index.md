@@ -41,7 +41,13 @@ One‑call bulk insert of prefixes, suffixes, or anchored strings into every cel
 PUT https://api.aspose.cloud/v4.0/cells/content/add/text
 ```
 
-**Authentication** – The API uses OAuth 2.0. Include an `Authorization: Bearer {access_token}` header with a valid access token obtained via the Aspose Cloud authentication flow.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### The request parameters of the **AddText** API are
 
@@ -77,23 +83,10 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/content/add/text?text=Report&po
     "DataType": {
       "Identifier": "File",
       "Reference": "Stream"
-    },
-    "FileName": "workbook_modified.xlsx",
-    "FileSize": 124578,
-    "DownloadUrl": "https://storage.aspose.cloud/v4.0/files/workbook_modified.xlsx"
+    }
   }
 ]
 ```
-
-The response returns a JSON array containing a single object that describes the generated file:
-
-| Property      | Type   | Description                                          |
-| ------------- | ------ | ---------------------------------------------------- |
-| Name          | string | Fixed value `"ResponseFile"`                         |
-| FileName      | string | Name of the processed workbook file.                 |
-| FileSize      | int    | Size of the file in bytes.                           |
-| DownloadUrl   | string | Direct URL to download the processed workbook.       |
-| DataType      | object | Describes the data type (always a file stream).     |
 
 ### Error Codes
 
@@ -130,7 +123,7 @@ The response returns a JSON array containing a single object that describes the 
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/AddText) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/AddText) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

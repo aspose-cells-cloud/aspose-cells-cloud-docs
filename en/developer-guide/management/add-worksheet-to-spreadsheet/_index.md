@@ -24,12 +24,19 @@ Programmatically add worksheets to Excel files with full control over sheet type
 
 ## **Add Worksheet to Spreadsheet API**
 
-**Prerequisites**: To call this endpoint you must obtain an access token from Aspose Cloud. Request a token via `POST https://api.aspose.cloud/connect/token` using your client ID and secret, then include the header `Authorization: Bearer <access_token>` in the request.
 
 ### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### Request Parameters
@@ -122,13 +129,3 @@ The following code examples demonstrate how to call the service with various SDK
 {{</tab>}}  
 {{< /tabs >}}
 
-### Frequently Asked Questions
-
-**How do I authenticate before calling the Add Worksheet API?**  
-Obtain a client ID and secret from the Aspose Cloud console, request an access token via `POST https://api.aspose.cloud/connect/token`, then include `Authorization: Bearer <access_token>` in the request header.
-
-**What values can I use for the `sheetType` parameter?**  
-Acceptable values are `worksheet` (default), `chartsheet`, `macrosheet`, `vbmodule`, and `dialog`. Each value determines the kind of sheet created.
-
-**How can I specify where the new sheet will be inserted?**  
-Use the `position` query parameter (zero‑based). `0` inserts before the first sheet; `2` inserts as the third sheet. Omit the parameter to append the sheet at the end.

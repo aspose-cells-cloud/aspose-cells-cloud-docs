@@ -12,11 +12,6 @@ weight: 100
 
 The **ConvertWorksheetToJson** endpoint reads a spreadsheet file from the local file system, extracts the specified worksheet, and returns its content as a JSON file. The conversion is performed entirely on Aspose.Cells Cloud servers, so no intermediate upload or storage is required. It supports password‑protected workbooks, custom font locations, and regional settings, delivering a fast, cloud‑native solution for exporting worksheet data to JSON for downstream processing.
 
-**Prerequisites**
-
-- A valid Aspose.Cells Cloud access token (see the authentication guide).  
-- The appropriate Aspose.Cells Cloud SDK installed for your development language, or the ability to issue raw HTTP requests.  
-- The source workbook must be in a supported format (e.g., XLS, XLSX, CSV).  
 
 ## **Convert Worksheet To JSON API**
 
@@ -24,6 +19,14 @@ The **ConvertWorksheetToJson** endpoint reads a spreadsheet file from the local 
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/json
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### **Request Parameters:**
@@ -40,18 +43,17 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/json
 
 ### **Response**
 
-Successful response (200 OK)  
-Headers:
-
-- Content-Type: application/json
-- Content-Disposition: attachment; filename="<worksheet>.json"
-- Content-Length: <size in bytes>
-
-Body:
-
-- Binary stream containing the JSON representation of the requested worksheet.
-
-If `outPath` is supplied, the JSON file is stored at the specified location and the response body may be empty (204 No Content) or contain a minimal confirmation payload.
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
+```
 
 ### Error Codes
 

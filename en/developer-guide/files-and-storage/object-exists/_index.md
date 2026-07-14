@@ -16,13 +16,20 @@ The **Object Exists API** lets developers determine whether a specific file or f
 
 ### Web API
 
-> **Authentication** – All requests require a valid OAuth 2.0 access token passed in the `Authorization: Bearer <token>` header.
 
 ```http
 GET https://api.aspose.cloud/v5.0/cells/storage/exist/{path}
 ```
 
 _`{path}`_ is the full path to the file or folder in storage.
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### Request Parameters
 

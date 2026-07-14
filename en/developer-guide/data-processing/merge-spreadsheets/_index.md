@@ -10,20 +10,20 @@ description: "Combine several local Excel, CSV, or ODS files into a single workb
 weight: 100
 ---
 
-_One‑Line Summary_: Merge multiple local Excel, CSV, or ODS files into a single workbook and convert it to 30+ output formats with Aspose.Cells Cloud API.
-
-## **Merge Spreadsheet API**
-
-Before using the API, ensure you have completed the following prerequisites:
-
-* **Authentication** – Obtain a valid OAuth 2.0 access token (or JWT) as described in the Aspose.Cells Cloud authentication guide. Include the token in the `Authorization` header of each request.  
-* **SDK Installation (optional)** – Install the Aspose.Cells Cloud SDK for your language of choice to simplify request construction and response handling.  
-* **File Access** – The source spreadsheet files must be accessible from the client machine or uploaded as multipart/form‑data in the request.
+Merge multiple local Excel, CSV, or ODS files into a single workbook and convert it to 30+ output formats with Aspose.Cells Cloud API.
 
 ### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/merge/spreadsheet
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### **Request Parameters**
@@ -39,25 +39,19 @@ PUT https://api.aspose.cloud/v4.0/cells/merge/spreadsheet
 | region          | String  | Query (optional) | Locale for number, date, and currency formatting (e.g., `en-US`, `zh-CN`).                       |
 | password        | String  | Query (optional) | Password for opening a protected spreadsheet.                                                    |
 
-#### Parameter Glossary
-
-<dl>
-  <dt>outFormat</dt><dd>Output file format such as **XLSX**, **PDF**, **CSV**, **HTML**, etc.</dd>
-  <dt>mergeInOneSheet</dt><dd>If **true**, all worksheets are combined into a single sheet; otherwise each source sheet is retained.</dd>
-  <dt>fontsLocation</dt><dd>Path to a folder with custom font files to ensure accurate rendering in PDF or image outputs.</dd>
-</dl>
 
 ### **Response**
 
-A successful request returns a JSON object containing the merged file information. Example:
-
 ```json
-{
-  "FileName": "MergedResult.pdf",
-  "FileSize": 254312,
-  "ContentType": "application/pdf",
-  "FileUrl": "https://api.aspose.cloud/v4.0/storage/file/MergedResult.pdf"
-}
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream"
+    }
+  }
+]
 ```
 
 The file can be downloaded directly from the `FileUrl` or saved to the location specified by `outPath`.

@@ -14,12 +14,19 @@ Programmatically create new Excel spreadsheets using Aspose.Cells Cloud API. Gen
 
 ## **Create Spreadsheet API**
 
-To use the Create Spreadsheet API you must have a valid Aspose Cloud account and obtain an access token. Include the token in the `Authorization` header as `Bearer <your_access_token>`. Additionally, ensure that the target storage (specified by `outStorageName`) is configured in your Aspose Cloud storage settings.
 
 ### Web API
 
 ```http
 PUT https://api.aspose.cloud/v5.0/cells/spreadsheet/create
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
 ```
 
 ### Request Parameters
