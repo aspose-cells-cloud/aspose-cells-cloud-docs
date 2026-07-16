@@ -15,15 +15,14 @@ This REST API converts a spreadsheet file to a PDF‑format file.
 
 ## REST API
 
-**Prerequisites**
-- An OAuth 2.0 access token (Bearer) with the `CellsApi` scope.  
-- API version `v3.0`.  
-- The source Excel file must be stored in a supported storage (default is Aspose Cloud storage).  
-- Rate limit: up to 60 requests per minute per account.
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/pdf
+```
 
-| **API**            | **Type** | **Description**                      | **Swagger Link**                                                                                       |
-| :----------------- | :------- | :----------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| /cells/convert/pdf | POST     | Convert a spreadsheet to a PDF file. | [PostConvertWorkbookToPDF](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPDF) |
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 
 ### **Query Parameter**
 
@@ -46,6 +45,33 @@ This REST API converts a spreadsheet file to a PDF‑format file.
 [FileInfo](/cells/file-info/)
 
 The response returns a JSON object with file metadata. The PDF file itself can be downloaded using the provided `FileContent` (base64) or via the `FileInfo` link.
+The API returns a JSON object of type **FileInfo**:
+
+- **FileInfo** – object containing the name, size, and base‑64‑encoded content of the generated Markdown file.
+
+```json
+{
+  "Filename": "example.pdf",
+  "FileSize": 12345,
+  "FileContent": "base64_encoded_string"
+}
+```
+
+#### HTTP Status Codes
+
+| Status Code | Description |
+|------------|-------------|
+| 200 OK | File converted successfully; response contains PDF file information. |
+| 400 Bad Request | Invalid request parameters or malformed file. |
+| 401 Unauthorized | Missing or invalid access token. |
+| 500 Internal Server Error | Server‑side error during conversion. |
+
+
+
+## How to Use the PostConvertWorkbookToPDF API with SDKs
+
+### PostConvertWorkbookToPDF API Specification
+
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPDF) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -79,25 +105,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pdf" \
 
 {{< /tabs >}}
 
-#### HTTP Status Codes
 
-| Status Code | Description |
-|------------|-------------|
-| 200 OK | File converted successfully; response contains PDF file information. |
-| 400 Bad Request | Invalid request parameters or malformed file. |
-| 401 Unauthorized | Missing or invalid access token. |
-| 500 Internal Server Error | Server‑side error during conversion. |
+### Use Aspose.Cells Cloud SDKs
 
-**Sample error response**
-
-```json
-{
-  "ErrorCode": "InvalidFile",
-  "Message": "The provided Excel file is corrupted or not supported."
-}
-```
-
-## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

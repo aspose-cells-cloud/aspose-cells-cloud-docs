@@ -16,6 +16,10 @@ This REST API enables **batch conversion** of eligible files.
 POST http://api.aspose.cloud/v3.0/cells/batch/convert
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 ### Request Parameters
 
 | Parameter Name       | Type   | Location | Description                                           |
@@ -38,6 +42,40 @@ POST http://api.aspose.cloud/v3.0/cells/batch/convert
 |--------------------|-----------|------------------------------------------------------|-------|
 | **RegexPattern**   | string    | Regular expression used to filter file names.       | [optional] |
 | **FullMatchConditions** | string[] | List of exact file name conditions for matching.    | [optional] |
+
+
+### Request Body Parameter
+
+| Parameter Name | Type | Description                                    |
+| -------------- | ---- | ---------------------------------------------- |
+| data           | file | Binary content of the workbook file to create. |
+  
+### **Response**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning                     | When Returned                           |
+|------|-----------------------------|-----------------------------------------|
+| 200 OK | Workbook created successfully | Normal flow                              |
+| 201 Created | Workbook created (alternative response) | When the API returns a created status |
+| 400 Bad Request | Invalid parameters | Client‑side error                        |
+| 401 Unauthorized | Missing or invalid token | Authentication error                    |
+| 409 Conflict | File exists and `isWriteOver=false` | Conflict with existing file    
+
+## How to Use the PostBatchConvert API with SDKs
+
+### PostBatchConvert API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PostBatchConvert) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -71,7 +109,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/convert" \
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

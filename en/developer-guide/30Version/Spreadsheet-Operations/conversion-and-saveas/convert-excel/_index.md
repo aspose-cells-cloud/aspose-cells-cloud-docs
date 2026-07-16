@@ -14,16 +14,21 @@ description: "Convert Excel workbooks to formats such as CSV, PDF, HTML, JSON, M
 weight: 10
 ---
 
-This REST API converts an Excel file to various output formats.
 
 ## REST API
 
-| API              | Type | Description                                                    | Swagger Link                                                                                |
-| ---------------- | ---- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| `/cells/convert` | PUT  | Converts a workbook from request content to the chosen format. | [PutConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) |
+This REST API converts an Excel file to various output formats.
+
+```http
+PUT https://api.aspose.cloud/v3.0/cells/convert
+```
 
 The request is an HTTP **PUT** with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
 The first part of the multipart body contains the **data file**, and the second part contains the **save options**.
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Query Parameters
 
@@ -51,6 +56,34 @@ The first part of the multipart body contains the **data file**, and the second 
 | `datafile`     | data file | The Excel file placed in the first part of the multipart body. |
 | `SaveOptions`  | object    | Save options placed in the second part of the multipart body.  |
 
+### **Response**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PutConvertWorkBook API with SDKs
+
+### PutConvertWorkBook API Specification
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook) defines a publicly accessible interface that enables direct REST interactions from a web browser.
 
 ### cURL Example
@@ -63,7 +96,7 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/convert?format=html" \
      -d '{"File":{}}'
 ```
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK accelerates development by handling low‑level details, allowing you to focus on business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

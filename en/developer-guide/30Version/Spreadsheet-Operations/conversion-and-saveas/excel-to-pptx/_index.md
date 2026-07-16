@@ -12,14 +12,15 @@ ArticleTitle: "Convert Excel to PPTX using Aspose.Cells Cloud API v3.0"
 
 This REST API converts a spreadsheet file to PPTX format.
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
 ## REST API
 
-| API                 | Type | Description                           | Swagger Link                                                                                             |
-| ------------------- | ---- | ------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| /cells/convert/pptx | POST | Convert a spreadsheet to a PPTX file. | [PostConvertWorkbookToPptx](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPptx) |
+```
+POST https://api.aspose.cloud/v3.0/cells/convert/pptx
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Query Parameters
 
@@ -37,7 +38,31 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ### Response
 
+The API returns a **FileInfo** object that contains the generated pptx file.
+
+| Field           | Type   | Description                                   |
+| --------------- | ------ | --------------------------------------------- |
+| **Filename**    | string | Name of the pptx file (e.g., `example.pptx`). |
+| **FileSize**    | int    | Size of the file in bytes.                    |
+| **FileContent** | string | Base64‑encoded content of the pptx file.      |
+
 [FileInfo](/cells/file-info/)
+
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostConvertWorkbookToPptx API with SDKs
+
+### PostConvertWorkbookToPptx API Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPptx) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -72,22 +97,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pptx?storageName=MySto
 
 {{< /tabs >}}
 
-### Error Handling
-
-| HTTP Code | Meaning                | Sample JSON Error Payload                                                 |
-| --------- | ---------------------- | ------------------------------------------------------------------------- |
-| 400       | Bad Request            | `{ "code": 400, "message": "Invalid request parameters." }`               |
-| 401       | Unauthorized           | `{ "code": 401, "message": "Access token is missing or invalid." }`       |
-| 415       | Unsupported Media Type | `{ "code": 415, "message": "File format not supported for conversion." }` |
-| 500       | Internal Server Error  | `{ "code": 500, "message": "An unexpected error occurred." }`             |
-
-### Next Steps
-
-- **Save options** – Learn how to store the converted PPTX file in a specific folder.
-- **Batch conversion** – Convert multiple workbooks in a single request.
-- **Rate limits** – Review the API usage limits for your account.
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop. An SDK abstracts low‑level details so you can focus on your project. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

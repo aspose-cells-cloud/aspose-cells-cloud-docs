@@ -16,15 +16,15 @@ ArticleTitle: "Build Excel Reports with Smart Marker Templates – Aspose.Cells 
 
 This REST API creates a workbook using a Smart Marker template.
 
-**Prerequisites:** You must have a valid Aspose Cloud authentication token, a storage location configured, and the source workbook uploaded to that storage before invoking this operation.
-
-For more details on creating workbooks from templates, see the [Create Excel file with a template](/create-excel-workbook-from-template/) guide.
-
 ## REST API
 
-| **API**                   | **Type** | **Description**                                               | **Swagger Link**                                                                                                        |
-| ------------------------- | -------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| /cells/{name}/smartmarker | POST     | Create a new Excel workbook from a Smart Marker template file | [PostWorkbookGetSmartMarkerResult](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) |
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/smartmarker
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **What is a Smart Marker?**
 
@@ -44,7 +44,36 @@ A Smart Marker is a placeholder syntax that maps data fields in an XML (or JSON)
 | -------------- | ---- | ----------------------------------------------------- |
 | xmlFile        | file | Smart Marker XML data file uploaded with the request. |
 
+### **Response**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the Workbook SmartMarker API 
+
+### Workbook SmartMarker API Specification
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookGetSmartMarkerResult) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
 
 You can use **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -68,9 +97,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "status": "OK",
-  "message": "Workbook generated successfully.",
-  "downloadUrl": "https://api.aspose.cloud/v3.0/storage/file/GeneratedReport.xlsx"
+  "Code": 200,
+  "Status": "OK"  
 }
 ```
 
@@ -144,5 +172,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-
-**See also:** [Smart Marker Syntax](/smart-marker-syntax/), [Advanced Data Mapping](/advanced-data-mapping/), and [Create Excel file with a template](/create-excel-workbook-from-template/).

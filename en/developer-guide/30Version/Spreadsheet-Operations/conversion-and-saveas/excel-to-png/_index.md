@@ -13,9 +13,13 @@ This REST API converts a spreadsheet file to PNG format.
 
 ## REST API Specification
 
-| **API**            | **Type** | **Description**                      | **Swagger Link**                                                                                       |
-| ------------------ | -------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| /cells/convert/png | POST     | Convert a spreadsheet to a PNG file. | [PostConvertWorkbookToPNG](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG) |
+```
+POST https://api.aspose.cloud/v3.0/cells/convert/png
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Query Parameter**
 
@@ -33,7 +37,32 @@ This REST API converts a spreadsheet file to PNG format.
 
 ### **Response**
 
+The API returns a **FileInfo** object that contains the generated PNG file.
+
+| Field           | Type   | Description                                   |
+| --------------- | ------ | --------------------------------------------- |
+| **Filename**    | string | Name of the PNG file (e.g., `example.png`). |
+| **FileSize**    | int    | Size of the file in bytes.                    |
+| **FileContent** | string | Base64‑encoded content of the PNG file.      |
+
 [FileInfo](/cells/file-info/)
+
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostConvertWorkbookToPNG API with SDKs
+
+### PostConvertWorkbookToPNG API Specification
+
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPNG) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -67,7 +96,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/png" \
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

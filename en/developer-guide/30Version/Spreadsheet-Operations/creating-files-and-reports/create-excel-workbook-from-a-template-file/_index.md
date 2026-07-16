@@ -13,13 +13,17 @@ description: "Learn how to generate Excel workbooks from template files using th
 weight: 30
 ---
 
-This REST API creates a **workbook** from a **template file**. It generates a new Excel workbook based on the supplied template and data.
-
 ## REST API
 
-| **API**         | **Type** | **Description**                                  | **Swagger Link**                                                                          |
-| --------------- | -------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------- |
-| `/cells/{name}` | PUT      | Create a new Excel workbook from a template file | [PutWorkbookCreate](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) |
+This REST API creates a **workbook** from a **template file**. It generates a new Excel workbook based on the supplied template and data.
+
+```HTTP
+PUT https://api.aspose.cloud/v3.0/cells/{name}
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Query Parameters
 
@@ -41,7 +45,32 @@ This REST API creates a **workbook** from a **template file**. It generates a ne
 | -------------- | ---- | ------------------------------------------------------------------------- |
 | `data`         | file | File containing the data for the **smart‑marker** template (XML or JSON). |
 
-> **Smart‑marker**: a placeholder syntax that Aspose.Cells replaces with values from the supplied data file.
+### **Response**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the PutWorkbookCreate API with SDKs
+
+### PutWorkbookCreate API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -64,62 +93,8 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?templateFile=C
 
 ```json
 {
-  "Status": "OK",
-  "Workbook": {
-    "FileName": "newworkbook.xlsx",
-    "Links": [
-      {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    ],
-    "Worksheets": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "DefaultStyle": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "DocumentProperties": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Names": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Settings": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "IsWriteProtected": "false",
-    "IsProtected": "false",
-    "IsEncryption": "false",
-    "Password": ""
-  }
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
@@ -127,17 +102,8 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?templateFile=C
 
 {{< /tabs >}}
 
-### Error Handling
 
-| HTTP Status | Meaning                                     | Example Body                                |
-| ----------- | ------------------------------------------- | ------------------------------------------- |
-| **200**     | Workbook created successfully               | `{ "Status": "OK", "Workbook": { … } }`     |
-| **400**     | Bad request – missing/invalid parameters    | `{ "error": "Invalid isWriteOver value." }` |
-| **401**     | Unauthorized – invalid or missing token     | `{ "error": "Authentication required." }`   |
-| **404**     | Not found – template or data file not found | `{ "error": "File not found." }`            |
-| **500**     | Internal server error                       | `{ "error": "Unexpected server error." }`   |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK abstracts low‑level details, letting you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

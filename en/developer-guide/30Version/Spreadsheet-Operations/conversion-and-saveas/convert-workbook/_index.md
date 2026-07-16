@@ -13,9 +13,14 @@ This REST API converts an Excel file to a different format. It supports a wide r
 
 ## REST API
 
-| API            | Type | Description                                                         | Swagger Link                                                                                  |
-| -------------- | ---- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| /cells/convert | POST | Converts a workbook from the request content to a specified format. | [PostConvertWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook) |
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 
 **Request Body Parameter**
 
@@ -25,8 +30,32 @@ This REST API converts an Excel file to a different format. It supports a wide r
 
 **Response**
 
-`FileInfo` – details of the generated file.  
+The API returns a **FileInfo** object that contains the generated Spreadsheet file.
+
+| Field           | Type   | Description                                   |
+| --------------- | ------ | --------------------------------------------- |
+| **Filename**    | string | Name of the Spreadsheet file (e.g., `example.xlsx`). |
+| **FileSize**    | int    | Size of the file in bytes.                    |
+| **FileContent** | string | Base64‑encoded content of the Spreadsheet file.      |
+
 [FileInfo](/cells/file-info/)
+
+
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostConvertWorkBook API with SDKs
+
+### PostConvertWorkBook API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostConvertWorkBook) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -60,7 +89,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert" \
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop. An SDK abstracts low‑level details so you can focus on your project. Check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

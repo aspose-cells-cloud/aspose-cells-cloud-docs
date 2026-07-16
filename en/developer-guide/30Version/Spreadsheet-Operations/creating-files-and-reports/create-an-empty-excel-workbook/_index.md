@@ -16,15 +16,18 @@ weight: 20
 ArticleTitle: "Create an Empty Excel Workbook using Aspose.Cells Cloud API"
 ---
 
-This REST API creates an **empty workbook**.
-
 ## REST API
 
-Before calling the API, ensure you have obtained a valid OAuth2/JWT access token with the required scopes (e.g., `Cells.ReadWrite`). See the authentication guide for details on generating and refreshing tokens.
+This REST API creates an **empty workbook**.
 
-| Endpoint      | Type | Description              | Resource Link                                                                             |
-| ------------- | ---- | ------------------------ | ----------------------------------------------------------------------------------------- |
-| /cells/{name} | PUT  | Create an empty workbook | [PutWorkbookCreate](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) |
+
+```http
+PUT  https://api.aspose.cloud/v3.0//cells/{name}
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Query Parameters
 
@@ -42,86 +45,16 @@ Before calling the API, ensure you have obtained a valid OAuth2/JWT access token
 | -------------- | ---- | ---------------------------------------------- |
 | data           | file | Binary content of the workbook file to create. |
   
-The request body can be omitted when creating a brand‑new workbook, or you can upload a template file as `multipart/form-data`.
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use the **cURL** command‑line tool to access Aspose.Cells web services. Include the `Authorization` header with a valid OAuth2/JWT access token. For example, obtain your token from the authentication endpoint and use it in the header as shown below.
-
-{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
-
-{{< tab tabNum="1" >}}
-
-```bash
-# Create an empty workbook named newworkbook.xlsx
-curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?isWriteOver=false" \
-     -H "accept: application/json" \
-     -H "Authorization: Bearer <access_token>" \
-     -H "x-aspose-client: Containerize.Swagger"
-```
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
+### **Response**
 
 ```json
 {
-  "Status": "string",
-  "Workbook": {
-    "FileName": "string",
-    "Links": [
-      {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    ],
-    "Worksheets": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "DefaultStyle": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "DocumentProperties": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Names": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "Settings": {
-      "link": {
-        "Href": "string",
-        "Rel": "string",
-        "Title": "string",
-        "Type": "string"
-      }
-    },
-    "IsWriteProtected": "string",
-    "IsProtected": "string",
-    "IsEncryption": "string",
-    "Password": "string"
-  }
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
 }
 ```
 
@@ -135,11 +68,43 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?isWriteOver=fa
 | 401 Unauthorized | Missing or invalid token | Authentication error                    |
 | 409 Conflict | File exists and `isWriteOver=false` | Conflict with existing file            |
 
+
+## How to Use the PutWorkbookCreate API with SDKs
+
+### PutWorkbookCreate API Specification
+
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookCreate) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+You can use the **cURL** command‑line tool to access Aspose.Cells web services. Include the `Authorization` header with a valid OAuth2/JWT access token. For example, obtain your token from the authentication endpoint and use it in the header as shown below.
+
+{{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
+
+{{< tab tabNum="1" >}}
+
+```bash
+# Create an empty workbook named newworkbook.xlsx
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/newworkbook.xlsx?isWriteOver=false" \
+     -H "accept: application/json" \
+     -H "Authorization: Bearer <access_token>"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="2" >}}
+
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK abstracts low‑level details so you can focus on your project tasks. Check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -197,4 +162,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< /tabs >}}
 
-*See also*: Create workbook from a template, Upload an existing workbook, and other related operations.

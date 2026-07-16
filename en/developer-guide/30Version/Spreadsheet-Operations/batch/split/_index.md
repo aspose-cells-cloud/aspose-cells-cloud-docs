@@ -16,7 +16,11 @@ This REST API performs a **batch split** of eligible files.
 POST http://api.aspose.cloud/v3.0/cells/batch/split
 ```
 
-The request parameters are:
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### Request Parameters
 
 | Parameter Name   | Type               | Path/Query/String/HTTPBody | Description                                   |
 |------------------|--------------------|----------------------------|-----------------------------------------------|
@@ -41,6 +45,40 @@ The request parameters are:
 |---------------------|-----------|---------------------------------------------|------------|
 | RegexPattern        | string    | Regular expression to match file names.     | [optional] |
 | FullMatchConditions| string[]  | List of exact match conditions.             | [optional] |
+
+### Request Body Parameter
+
+| Parameter Name | Type | Description                                    |
+| -------------- | ---- | ---------------------------------------------- |
+| data           | file | Binary content of the workbook file to create. |
+  
+### **Response**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**HTTP Status Codes**
+
+| Code | Meaning                     | When Returned                           |
+|------|-----------------------------|-----------------------------------------|
+| 200 OK | Workbook created successfully | Normal flow                              |
+| 201 Created | Workbook created (alternative response) | When the API returns a created status |
+| 400 Bad Request | Invalid parameters | Client‑side error                        |
+| 401 Unauthorized | Missing or invalid token | Authentication error                    |
+| 409 Conflict | File exists and `isWriteOver=false` | Conflict with existing file            |
+
+
+## How to Use the PostBatchSplit API with SDKs
+
+### PostBatchSplit API Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Batch/PostBatchSplit) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -74,7 +112,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/batch/split" \
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your split tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

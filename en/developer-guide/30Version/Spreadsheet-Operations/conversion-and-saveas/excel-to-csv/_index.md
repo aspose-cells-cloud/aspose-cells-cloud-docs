@@ -17,9 +17,14 @@ This REST API converts a spreadsheet file to a CSV‑format file.
 
 ## REST API
 
-| API                  | Type | Description                          | Swagger Link                                                                                           |
-| -------------------- | ---- | ------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| `/cells/convert/csv` | POST | Convert a spreadsheet to a CSV file. | [PostConvertWorkbookToCSV](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToCSV) |
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/csv
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 
 ### Query Parameters
 
@@ -37,7 +42,31 @@ This REST API converts a spreadsheet file to a CSV‑format file.
 
 ### Response
 
+The API returns a **FileInfo** object that contains the generated CSV file.
+
+| Field           | Type   | Description                                   |
+| --------------- | ------ | --------------------------------------------- |
+| **Filename**    | string | Name of the CSV file (e.g., `example.csv`). |
+| **FileSize**    | int    | Size of the file in bytes.                    |
+| **FileContent** | string | Base64‑encoded content of the CSV file.      |
+
 [FileInfo](/cells/file-info/)
+
+
+**Response Status Codes**
+
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
+
+## How to Use the PostConvertWorkbookToCSV API with SDKs
+
+### PostConvertWorkbookToCSV API Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToCSV) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -71,7 +100,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/csv" \
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -128,14 +157,3 @@ The following code examples demonstrate how to call Aspose.Cells web services wi
 {{< /tab >}}
 
 {{< /tabs >}}
-
-## Other APIs Implementing This Function
-
-- **POST** `/cells/{name}/saveAs` – Save an Excel file as a CSV file with additional settings and store the result in a storage location.  
-  [API reference](https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs)
-
-- **PUT** `/cells/convert` – Convert an Excel file to CSV with extra options and return the result directly in the response.  
-  [API reference](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)
-
-- **GET** `/cells/{name}` – Retrieve an Excel workbook and convert it to CSV with optional settings.  
-  [API reference](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)

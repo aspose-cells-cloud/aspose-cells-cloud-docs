@@ -14,20 +14,14 @@ This REST API converts a spreadsheet file to an SQL format file.
 
 ## REST API
 
-| **API**            | **Type** | **Description**                       | **Swagger Link**                                                                                       |
-| ------------------ | -------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| /cells/convert/sql | POST     | Convert a spreadsheet to an SQL file. | [PostConvertWorkbookToSQL](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL) |
+```
+POST https://api.aspose.cloud/v3.0/cells/convert/sql
+```
 
-**Prerequisites**
+### **Security and Authentication**
 
-- A valid Aspose Cloud access token.
-- The source Excel file must be stored in a supported storage location (e.g., default storage or a specified `storageName`).
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-**Notes**
-
-- Supported Excel formats include XLS, XLSX, and XLSM.
-- Maximum file size for conversion is 200 MB.
-- Only the first worksheet is converted to SQL by default; additional options are not currently exposed.
 
 ### **Query Parameter**
 
@@ -43,16 +37,33 @@ This REST API converts a spreadsheet file to an SQL format file.
 | -------------- | --------- | -------------------------------------------------------------------------------- |
 | datafile       | data file | The spreadsheet file to be converted, included as the first part of the request. |
 
-### **Response**
+### Response
+
+The API returns a **FileInfo** object that contains the generated sql file.
+
+| Field           | Type   | Description                                   |
+| --------------- | ------ | --------------------------------------------- |
+| **Filename**    | string | Name of the sql file (e.g., `example.sql`). |
+| **FileSize**    | int    | Size of the file in bytes.                    |
+| **FileContent** | string | Base64‑encoded content of the sql file.      |
 
 [FileInfo](/cells/file-info/)
 
-| **Status Code** | **Description**                                   |
-|-----------------|---------------------------------------------------|
-| 200 OK          | Conversion succeeded; the SQL file is returned. |
-| 400 Bad Request | Invalid request parameters or malformed file.    |
-| 401 Unauthorized| Authentication token missing or invalid.         |
-| 500 Internal Server Error | Unexpected server error during conversion. |
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostConvertWorkbookToSQL API with SDKs
+
+### PostConvertWorkbookToSQL API Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -86,7 +97,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/sql" \
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

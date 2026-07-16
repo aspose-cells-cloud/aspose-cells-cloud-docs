@@ -24,15 +24,35 @@ This REST API compresses data in an Excel file.
 POST https://api.aspose.cloud/v3.0/cells/compress
 ```
 
-The request parameters are:
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### Request Parameters
 
 | Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                |
 |----------------|---------|-----------------------------|------------------------------------------------------------|
 | file           | file    | formData                    | File to upload                                             |
 | CompressLevel  | integer | query                       | Compression level (0‑100); higher values indicate stronger compression |
 
-**Prerequisites / Notes**  
-Supported formats: XLS, XLSX, XLSM, XLSB, ODS. The maximum file size is 100 MB per request. The endpoint requires OAuth 2.0 JWT authentication; include the `Authorization: Bearer <jwt token>` header.
+### Request Body Parameter
+
+| Parameter Name | Type | Description                                    |
+| -------------- | ---- | ---------------------------------------------- |
+| data           | file | Binary content of the workbook file to compress. |
+  
+### **Response**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
 
 **Response Status Codes**
 
@@ -44,16 +64,10 @@ Supported formats: XLS, XLSX, XLSM, XLSB, ODS. The maximum file size is 100 MB
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
 
-**Error Response Example**
 
-```json
-{
-    "Error": {
-        "Code": "InvalidParameter",
-        "Message": "CompressLevel must be between 0 and 100."
-    }
-}
-```
+## How to Use the PostCompress API with SDKs
+
+### PostCompress API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostCompress) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -80,18 +94,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/compress?CompressLevel=88" \
 
 ```json
 {
-    "Files": [
-        {
-            "Filename": "xxxx1",
-            "FileSize": 274022,
-            "FileContent": "-----Base64String--------"
-        },
-        {
-            "Filename": "xxxx2",
-            "FileSize": 274022,
-            "FileContent": "-----Base64String--------"
-        }
-    ]
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
@@ -99,7 +103,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/compress?CompressLevel=88" \
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to accelerate development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

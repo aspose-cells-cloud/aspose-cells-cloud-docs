@@ -20,24 +20,49 @@ Aspose.Cells Cloud Excel Repair recovers data from corrupt Excel files online wi
 
 The **Repair Excel Files** endpoint repairs corrupted spreadsheet files and returns the repaired content.
 
-**Prerequisites** – You must obtain a JWT access token from Aspose Cloud (OAuth 2.0 client‑credentials flow) before invoking the API.
-
-**Authentication** – Include the token in the request header:
-
-```
-Authorization: Bearer <access_token>
-```
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/repair
 ```
 
-The request parameters are:
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### Request Parameters
 
 | Parameter Name | Type   | Location                     | Description |
 |----------------|--------|------------------------------|-------------|
 | file           | file   | formData (multipart)         | File to upload |
 | format         | string | query                        | Desired output format. If omitted (null), the output format defaults to the same format as the input file. |
+
+### **Response**
+
+```json
+{
+    "Name": "ResponseFile",
+    "DataType": {
+        "Identifier": "File",
+        "Reference": "Stream",
+        "Name": "file"
+    }
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostRepair API with SDKs
+
+### PostRepair API Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/LightCells/PostRepair) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

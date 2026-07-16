@@ -17,11 +17,16 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ## REST API
 
-| API                     | Type | Description                               | Swagger Link                                                                                                     |
-| ----------------------- | ---- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| /cells/convert/markdown | POST | Convert a spreadsheet to a Markdown file. | [PostConvertWorkbookToMarkdown](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown) |
+```http
+POST https://api.aspose.cloud/v3.0/cells/convert/markdown
+```
 
-### Parameters
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### Query Parameters
+
 
 | Parameter Name        | Type   | Location | Description                                                                                       |
 | --------------------- | ------ | -------- | ------------------------------------------------------------------------------------------------- |
@@ -51,6 +56,12 @@ The API returns a JSON object of type **FileInfo**:
 | 401       | Unauthorized – missing or invalid token.                          | `{"error":"Invalid access token."}`             |
 | 400       | Bad Request – missing required parameters or invalid file format. | `{"error":"The 'datafile' field is required."}` |
 | 500       | Internal Server Error – unexpected server problem.                | `{"error":"An unexpected error occurred."}`     |
+
+
+
+## How to Use the PostConvertWorkbookToMarkdown API with SDKs
+
+### PostConvertWorkbookToMarkdown API Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToMarkdown) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -84,7 +95,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/markdown" \
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

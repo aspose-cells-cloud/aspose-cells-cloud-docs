@@ -16,9 +16,13 @@ This REST API retrieves an Excel workbook in a different format.
 
 ## REST API
 
-| API           | Type | Description                           | Swagger Link                                                                  |
-| ------------- | ---- | ------------------------------------- | ----------------------------------------------------------------------------- |
-| /cells/{name} | GET  | Exports a workbook to another format. | [GetWorkBook](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) |
+```
+GET https://api.aspose.cloud/v3.0/cells/{name}
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Query Parameters**
 
@@ -37,6 +41,38 @@ This REST API retrieves an Excel workbook in a different format.
 | onePagePerSheet       | bool   | Generates one PDF page per worksheet.                                                                                                                                | false   |
 | folder                | string | Folder path of the original workbook.                                                                                                                                | –       |
 | storageName           | string | Name of the storage where the source file is located.                                                                                                                | –       |
+
+### Response
+
+**Success (200)** 
+
+- The API returns a **[Workbook](/cells/workbook/)** object that contains workbook structure info when the format query parameter value is blank.
+
+- The API returns the converted file in the requested format when the format query parameter value is file format type.
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/pdf
+Content-Disposition: attachment; filename="book1.pdf"
+Content-Length: 123456
+
+(binary PDF data)
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the GetWorkBook API with SDKs
+
+### GetWorkBook API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -60,31 +96,8 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/book1.xlsx?format=pdf" \
 
 {{< /tabs >}}
 
-### Response
 
-**Success (200)** – The API returns the converted file in the requested format.
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/pdf
-Content-Disposition: attachment; filename="book1.pdf"
-Content-Length: 123456
-
-(binary PDF data)
-```
-
-**Error (4xx/5xx)** – Example of a JSON error object when the source file is not found.
-
-```json
-{
-  "error": {
-    "code": "FileNotFound",
-    "message": "The file 'book1.xlsx' does not exist."
-  }
-}
-```
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop. An SDK abstracts low‑level details so you can focus on your project tasks. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

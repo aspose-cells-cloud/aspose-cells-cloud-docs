@@ -17,9 +17,14 @@ Before calling this endpoint, ensure you have a valid OAuth 2.0 access token a
 
 ## REST API
 
-| API                  | Type | Description                 | Resource Link                                                                                                                                          |
-| -------------------- | ---- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| /cells/{name}/saveAs | POST | Export workbook to a format | <a href="https://apireference.aspose.cloud/cells/#/SaveAs/PostDocumentSaveAs" target="_blank" rel="noopener noreferrer">PostDocumentSaveAs</a> |
+```
+POST https://api.aspose.cloud/v3.0/cells/{name}/saveAs 
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 
 ### **Path Parameter**
 
@@ -45,15 +50,6 @@ Before calling this endpoint, ensure you have a valid OAuth 2.0 access token a
 | pageIndex             | string | Index of the page to convert within the specified worksheet (requires `sheetName`).      |
 | onePagePerSheet       | bool   | When converting to PDF, generate one page per worksheet.                                 |
 
-#### Response Codes
-
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | Success – workbook saved.                |
-| 400  | Bad request – invalid parameters.       |
-| 401  | Unauthorized – authentication required. |
-| 404  | Not found – source workbook does not exist. |
-| 500  | Internal server error.                   |
 
 ### **Request Body Parameter**
 
@@ -72,7 +68,47 @@ Before calling this endpoint, ensure you have a valid OAuth 2.0 access token a
 }
 ```
 
-The OpenAPI Specification for this operation defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+### Response
+
+The API returns a SaveResponse object.
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "SaveResult":
+  {
+    "Documents":[
+      {
+        "Name":"xxxxx",
+        "Size":xxxxx,
+        "Folder":"xxxxxx",
+        "Storage":"xxxxx"
+      }
+    ]
+  }
+}
+```
+
+#### Response Codes
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | Success – workbook saved.                |
+| 400  | Bad request – invalid parameters.       |
+| 401  | Unauthorized – authentication required. |
+| 404  | Not found – source workbook does not exist. |
+| 500  | Internal server error.                   |
+
+
+## How to Use the PostWorkbookSaveAs API with SDKs
+
+### PostWorkbookSaveAs API Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostWorkbookSaveAs) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+
 
 You can use **cURL** to access Aspose.Cells web services easily. The example below shows how to call the Cloud API with cURL.
 
@@ -91,19 +127,14 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfile
 ```json
 {
   "SaveResult": {
-    "SourceDocument": {
-      "Href": "test.xlsx",
-      "Rel": null,
-      "Title": null,
-      "Type": null
-    },
-    "DestDocument": {
-      "Href": "test.pdf",
-      "Rel": null,
-      "Title": null,
-      "Type": null
-    },
-    "AdditionalItems": []
+     "Documents":[
+      {
+        "Name":"xxxxx",
+        "Size":10240,
+        "Folder":"xxxxxx",
+        "Storage":"xxxxx"
+      }
+    ]
   },
   "Code": 200,
   "Status": "OK"
@@ -114,7 +145,8 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfile
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -60,9 +60,3 @@ SaveOptions allow you to control how a workbook is saved when using the Aspose.C
 - Enabling **EnableHTTPCompression** can reduce payload size for large workbooks, but the client must support gzip/deflate decoding.  
 - **RefreshChartCache** should be used when charts rely on dynamic data that may have changed since the workbook was generated.
 
-**See also**  
-- Convert Workbook Options  
-- AutoFitterOptions  
-- Workbook API Overview  
-
----
