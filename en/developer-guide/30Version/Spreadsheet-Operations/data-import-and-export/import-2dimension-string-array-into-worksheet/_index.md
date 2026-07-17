@@ -61,6 +61,24 @@ The important parameters are described in the following table:
 }
 ```
 
+### Response
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
 
 ## How to Use the PostImportData API with SDKs
 

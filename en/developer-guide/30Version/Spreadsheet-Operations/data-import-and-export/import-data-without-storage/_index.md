@@ -21,7 +21,11 @@ This REST API imports **data** into an Excel file.
 POST https://api.aspose.cloud/v3.0/cells/import
 ```
 
-### **The request parameters are:**
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### **Request Parameters:**
 
 | Parameter Name | Type          | Location  | Description                                                                                                                                     |
 | -------------- | ------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -29,6 +33,30 @@ POST https://api.aspose.cloud/v3.0/cells/import
 | ImportOption   | ImportOptions | JSON body | JSON object that defines the data to import, its type (e.g., `IntArray`, `DoubleArray`, `StringArray`), and the placement within the worksheet. |
 
 The **ImportOption** parameters are described in the **ImportData option reference** [/cells/import/#import-data-option-parameter](/cells/import/#import-data-option-parameter).
+
+
+### Response
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostImportData API with SDKs
+
+### PostImportData API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -52,13 +80,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/import" \
 
 ```json
 {
-  "Files": [
-    {
-      "Filename": "file.xlsx",
-      "FileSize": 274022,
-      "FileContent": "-----Base64String--------"
-    }
-  ]
+  "Status":"OK",
+  "Code":200
 }
 ```
 
@@ -66,40 +89,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/import" \
 
 {{< /tabs >}}
 
-**Prerequisites:**  
-- Valid Aspose.Cloud JWT token with the `Cells` scope.  
-- The request must be sent over HTTPS.  
-- Maximum file size for the `file` parameter is 100 MB.
 
-**Status Codes**
-
-| Code | Description                                   |
-|------|-----------------------------------------------|
-| 200  | Import successful; response contains file data. |
-| 400  | Bad request – malformed JSON or missing parameters. |
-| 401  | Unauthorized – invalid or missing JWT token. |
-| 403  | Forbidden – insufficient permissions. |
-| 500  | Internal server error – unexpected failure on the server side. |
-
-**Error‑Response Example (400 Bad Request)**
-
-```json
-{
-  "Error": {
-    "Code": "InvalidImportOption",
-    "Message": "The ImportOption JSON is malformed or contains unsupported data types."
-  }
-}
-```
-
-**Notes / Tips:**  
-- Use `IsVertical` `true` for column‑wise import and `false` for row‑wise import.  
-- When `IsInsert` is `true`, the data is inserted and existing cells are shifted; set to `false` to overwrite.  
-- Supported `ImportDataType` values are `IntArray`, `DoubleArray`, `StringArray`, and `DateTimeArray`.  
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) also lists additional response formats and error codes.
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

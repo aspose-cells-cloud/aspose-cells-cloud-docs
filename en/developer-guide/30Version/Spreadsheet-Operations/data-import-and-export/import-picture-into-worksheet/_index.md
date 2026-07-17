@@ -16,15 +16,18 @@ weight: 19
 
 Importing a picture into an Excel worksheet allows you to enrich spreadsheets with visual content such as logos, charts, or diagrams. This guide shows how to use the Aspose.Cells Cloud **ImportPicture** operation, the required request format, and how to handle responses.
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
 ## REST API
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### **Request Parameters**
 
 The request is an HTTP **POST** with **multipart/related** content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).
 
@@ -67,56 +70,35 @@ _`IsInsert` is a **boolean** – `true` inserts a new picture, `false` replaces 
 | ImportDataType       | string      | Type of data being imported (e.g., `Picture`, `IntArray`, `DoubleArray`, `StringArray`, `TwoDimensionIntArray`, `TwoDimensionDoubleArray`, `TwoDimensionStringArray`, `BatchData`, `csvData`). |
 | Source               | FileSource  | Indicates the data file’s location when the `BatchData` parameter is null.                                                                                                                     |
 
-### Full multipart request example
+### Response
 
-```http
-POST /v3.0/cells/{fileName}/importdata HTTP/1.1
-Host: api.aspose.cloud
-Authorization: Bearer <access_token>
-Content-Type: multipart/related; boundary=----Boundary
-
-------Boundary
-Content-Type: application/json
-
-{
-  "UpperLeftRow": 2,
-  "UpperLeftColumn": 1,
-  "LowerRightRow": 12,
-  "LowerRightColumn": 6,
-  "Filename": "chart.png",
-  "DestinationWorksheet": "Sheet1",
-  "IsInsert": true,
-  "ImportDataType": "Picture"
-}
-------Boundary
-Content-Type: image/png
-Content-Disposition: attachment; filename="chart.png"
-
-<binary image data>
-------Boundary--
-```
-
-### Example response
+A successful request returns **HTTP 200** with a JSON payload similar to:
 
 ```json
 {
   "Code": 200,
-  "Status": "OK",
-  "PictureId": "d9f7c3a2-5b1e-4a9b-8f2c-7e5b6c9a1f3d",
-  "Location": "Sheet1!A3:F13"
+  "Status": "OK"
 }
 ```
 
-### Common error codes
+Possible status codes:
 
-| HTTP Status | Code                   | Message                                       |
-| ----------- | ---------------------- | --------------------------------------------- |
-| 400         | `InvalidRequest`       | Required parameter missing or malformed.      |
-| 401         | `AuthenticationFailed` | Invalid or missing access token.              |
-| 415         | `UnsupportedMediaType` | Incorrect content‑type for multipart request. |
-| 500         | `InternalError`        | Unexpected server error.                      |
+| Code | Meaning                                 |
+| ---- | --------------------------------------- |
+| 200  | Import succeeded                        |
+| 400  | Bad request – missing or invalid data   |
+| 401  | Unauthorized – invalid or missing token |
+| 500  | Internal server error                   |
 
-## Cloud SDK Family
+
+## How to Use the PostImportData API with SDKs
+
+### PostImportData API Specification
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
 
 Using an SDK is the best way to accelerate development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -161,16 +143,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< /tabs >}}
 
-## Frequently Asked Questions
-
-**Q1: How do I specify the picture location in a worksheet?**  
-A: Use `UpperLeftRow`, `UpperLeftColumn`, `LowerRightRow`, and `LowerRightColumn` in the `ImportPictureOption` JSON. The coordinates are zero‑based (row 0 = first row, column 0 = first column).
-
-**Q2: What format should the picture data be sent in?**  
-A: You can either upload the image file as the second part of the multipart request or include a Base64‑encoded string in the `Data` field of the JSON object.
-
-**Q3: Can I replace an existing picture?**  
-A: Yes. Set `IsInsert` to `false` to replace a picture that already exists at the specified location.
-
-**Q4: Do I need to specify the `Source` parameter?**  
-A: Only when `ImportDataType` is `BatchData`. In that case, `Source` indicates where the batch file is stored (e.g., Aspose Cloud Storage).

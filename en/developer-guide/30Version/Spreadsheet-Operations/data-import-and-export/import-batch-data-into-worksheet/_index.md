@@ -39,69 +39,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | `folder` | Query (optional) | Cloud folder path where the workbook resides. |
 | `storageName` | Query (optional) | Name of the storage to use. |
 
-**Response schema**  
-| Field | Type | Description |
-|-------|------|-------------|
-| `code` | `int` | HTTP status code of the operation. |
-| `status` | `string` | Short description of the result (`OK`, `Error`, etc.). |
-| `data` | `object` | Details of the import operation, including the number of rows/columns affected. |
-| `error` | `object` (optional) | Error information when the request fails. |
-
-**Status‑code table**
-
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | Batch data imported successfully. |
-| 202 | Accepted | Request accepted for processing (asynchronous). |
-| 400 | Bad Request | Invalid parameters or malformed request body. |
-| 401 | Unauthorized | Authentication failed or token missing. |
-| 404 | Not Found | Specified workbook or file not found. |
-| 500 | Internal Server Error | Unexpected server error. |
-
-**Multipart request example**
-
-```http
-POST https://api.aspose.cloud/v3.0/cells/MyWorkbook.xlsx/importdata HTTP/1.1
-Authorization: Bearer {access_token}
-Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
-
-------WebKitFormBoundary7MA4YWxkTrZu0gW
-Content-Disposition: form-data; name="importBatchDataOption"
-Content-Type: application/xml
-
-<ImportBatchDataOption>
-    <DestinationWorksheet>Sheet1</DestinationWorksheet>
-    <IsInsert>false</IsInsert>
-    <ImportDataType>IntArray</ImportDataType>
-    <Source>
-        <FileSourceType>CloudFileSystem</FileSourceType>
-        <FilePath>Array_int_xml.txt</FilePath>
-    </Source>
-</ImportBatchDataOption>
-
-------WebKitFormBoundary7MA4YWxkTrZu0gW
-Content-Disposition: form-data; name="file"; filename="Array_int_xml.txt"
-Content-Type: text/plain
-
-1,2,3,4,5
-6,7,8,9,10
-
-------WebKitFormBoundary7MA4YWxkTrZu0gW--
-```
-
-**Response example (JSON)**
-
-```json
-{
-  "code": 200,
-  "status": "OK",
-  "data": {
-    "importedRows": 2,
-    "importedColumns": 5,
-    "worksheet": "Sheet1"
-  }
-}
-```
 
 The important parameters are described in the tables below.
 
@@ -148,6 +85,25 @@ The important parameters are described in the tables below.
     </Source>
 </ImportBatchDataOption>
 ```
+
+
+### Response
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 
 ## How to Use the PostImportData API with SDKs

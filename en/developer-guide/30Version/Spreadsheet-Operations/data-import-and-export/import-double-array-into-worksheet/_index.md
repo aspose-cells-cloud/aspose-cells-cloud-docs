@@ -25,6 +25,10 @@ POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 ### Request Parameters
 
 #### **ImportDoubleArrayOption**
@@ -79,13 +83,7 @@ A successful request returns **HTTP 200** with a JSON payload similar to:
 ```json
 {
   "Code": 200,
-  "Status": "OK",
-  "Message": "Import completed successfully.",
-  "Data": {
-    "Worksheet": "Sheet1",
-    "FirstRow": 0,
-    "FirstColumn": 0
-  }
+  "Status": "OK"
 }
 ```
 
@@ -106,13 +104,15 @@ When an error occurs the API returns a JSON object containing the error code and
 {
   "Code": 401,
   "Status": "Error",
-  "Message": "Access token is missing or invalid."
 }
 ```
+## How to Use the PostImportData API with SDKs
 
-Handle errors by checking the HTTP status code and parsing the `Message` field for details.
+### PostImportData API Specification
 
-## Cloud SDK Family
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

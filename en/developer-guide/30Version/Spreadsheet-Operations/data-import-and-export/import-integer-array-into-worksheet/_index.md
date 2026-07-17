@@ -16,7 +16,7 @@ ArticleTitle: "Import Integer Array into Excel Worksheet – Aspose.Cells Cloud 
 
 This REST API imports an integer array into an Excel worksheet.
 
-The request must be an HTTP **POST** with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart body contains the **ImportIntegerArrayOption** JSON payload, and the second part contains the source data file (e.g., a CSV or binary Excel file). Authentication is required via a valid OAuth 2.0 access token passed in the `Authorization` header.
+The request must be an HTTP **POST** with multipart content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)). The first part of the multipart body contains the **ImportIntegerArrayOption** JSON payload, and the second part contains the source data file (e.g., a CSV or binary Excel file).
 
 ## REST API
 
@@ -27,7 +27,11 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 
 Both endpoints accept the same multipart payload. The first endpoint works with a generic import operation, while the second targets a specific workbook identified by `{name}`.
 
-The important parameters are described in the following table.
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### **Request Parameters**
 
 ### ImportIntegerArrayOption
 
@@ -56,14 +60,34 @@ The important parameters are described in the following table.
 }
 ```
 
-When the request is sent, the API returns a JSON response that includes the status of the operation and, if successful, a reference to the updated workbook. Typical response codes are:
+### Response
 
-* **200 OK** – Import succeeded; the workbook is updated.
-* **400 Bad Request** – Missing or invalid parameters.
-* **401 Unauthorized** – Authentication token is missing or invalid.
-* **500 Internal Server Error** – Unexpected server error.
+A successful request returns **HTTP 200** with a JSON payload similar to:
 
-## Cloud SDK Family
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+Possible status codes:
+
+| Code | Meaning                                 |
+| ---- | --------------------------------------- |
+| 200  | Import succeeded                        |
+| 400  | Bad request – missing or invalid data   |
+| 401  | Unauthorized – invalid or missing token |
+| 500  | Internal server error                   |
+
+
+## How to Use the PostImportData API with SDKs
+
+### PostImportData API Specification
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to integrate this functionality. SDKs abstract low‑level details, letting you focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

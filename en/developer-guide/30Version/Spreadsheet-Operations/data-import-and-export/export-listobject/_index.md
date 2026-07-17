@@ -57,7 +57,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ```
 
 
-**Response Status Codes**
+**Http Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|

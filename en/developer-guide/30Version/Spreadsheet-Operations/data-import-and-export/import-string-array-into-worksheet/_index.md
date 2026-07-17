@@ -13,14 +13,22 @@ description: "Learn how to import a string array into an Excel worksheet using A
 weight: 40
 ---
 
-This REST API imports string‑array data into an Excel worksheet.
 
 ## REST API
+
+This REST API imports string‑array data into an Excel worksheet.
+
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### **Request Parameters**
 
 The request uses multipart HTTP content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
 The first part of the multipart body contains an **ImportStringArrayOption** payload; the second part contains the source data file.
@@ -58,18 +66,34 @@ The important parameters are described in the following table:
 </ImportStringArrayOption>
 ```
 
-### Common Errors & Troubleshooting
+### Response
 
-| HTTP Status | Cause                                               | Remedy                                                                                            |
-| ----------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| 401         | Missing or invalid access token                     | Ensure the `Authorization: Bearer <token>` header is present and the token is still valid.        |
-| 400         | Required parameter omitted (`Source` or `FirstRow`) | Verify that all mandatory fields are supplied and correctly typed.                                |
-| 415         | Incorrect content‑type for multipart body           | Use `multipart/form-data` with proper boundary delimiters.                                        |
-| 500         | Server‑side processing error                        | Check the payload for malformed XML/JSON and confirm that the file referenced in `Source` exists. |
+A successful request returns **HTTP 200** with a JSON payload similar to:
 
-For related import operations, see the documentation on **[Import CSV data](/import-csv-data/)** and **[Import 2‑D string array](/import-two-dimensional-array/)**.
+```json
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
 
-## Cloud SDK Family
+Possible status codes:
+
+| Code | Meaning                                 |
+| ---- | --------------------------------------- |
+| 200  | Import succeeded                        |
+| 400  | Bad request – missing or invalid data   |
+| 401  | Unauthorized – invalid or missing token |
+| 500  | Internal server error                   |
+
+
+## How to Use the PostImportData API with SDKs
+
+### PostImportData API Specification
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostImport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
