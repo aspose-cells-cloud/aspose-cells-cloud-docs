@@ -14,23 +14,24 @@ You can export pictures to the following formats: [PNG](https://docs.fileformat.
 
 ## REST API
 
-| **API**       | **Method** | **Description**                                                           | **Swagger Link**                                                              |
-| :------------ | :--------- | :------------------------------------------------------------------------ | :---------------------------------------------------------------------------- |
-| /cells/export | POST       | Export Excel objects from the request content to a specified image format | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
-
-### Request
 
 ```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=picture&format=tiff" \
-     -H "accept: multipart/form-data" \
-     -H "Content-Type: multipart/form-data" \
-     -H "x-aspose-client: Containerize.Swagger" \
-     -d '{"File":{}}'
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+
+### Request Parameters
+
+| Parameter       | Location  | Type   | Required | Description                                                                    |
+| --------------- | --------- | ------ | -------- | ------------------------------------------------------------------------------ |
+| `file`          | Form‑data | file   | Yes      | The Excel workbook (`.xlsx`, `.xls`, etc.) that contains the OLE objects.      |
+| `outputFormat`  | Query     | string | Yes      | Target format for the exported objects (`pdf`, `png`, `jpeg`, `docx`, `pptx`). |
+| `objectType`    | Query     | string | Yes      | Fixed value `oleobject`.                                                       |
+
 
 ### Response
 
@@ -60,8 +61,33 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=picture&form
   ]
 }
 ```
+### Error Codes
 
-## Cloud SDK Family
+| HTTP Status | Description                                                    | Example JSON                                                                                |
+| ----------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| **400**     | Bad request – missing or invalid parameters.                   | `{ "error": { "code": "BadRequest", "message": "The 'file' field is required." } }`         |
+| **401**     | Unauthorized – invalid or missing access token.                | `{ "error": { "code": "Unauthorized", "message": "Access token is missing or invalid." } }` |
+| **500**     | Internal server error – unexpected failure on the server side. | `{ "error": { "code": "InternalError", "message": "An unexpected error occurred." } }`      |
+
+
+## How to Use the PostExport API with SDKs
+
+### PostExport API Specification
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=picture&format=tiff" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -d '{"File":{}}'
+```
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the most efficient way to accelerate development. An SDK handles low‑level details so you can focus on your project logic. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

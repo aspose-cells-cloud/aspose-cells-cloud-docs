@@ -26,10 +26,9 @@ POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
-**Prerequisites**  
-- A valid OAuth2 access token (see the authentication guide).  
-- The target workbook must already exist in the cloud storage.  
-- The `{name}` placeholder represents the workbook file name, including its extension (e.g., `Report.xlsx`).  
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 **Request parameters**  
 | Parameter | Location | Description |
@@ -150,11 +149,14 @@ The important parameters are described in the tables below.
 </ImportBatchDataOption>
 ```
 
-**Notes**  
-- Maximum batch size is 10 MB per request.  
-- Supported data types depend on the chosen `ImportDataType`.  
 
-## Cloud SDK Family
+## How to Use the PostImportData API with SDKs
+
+### PostImportData API Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData) defines a publicly accessible programming interface that allows you to perform REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to integrate this functionality. SDKs handle low‑level details so you can focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

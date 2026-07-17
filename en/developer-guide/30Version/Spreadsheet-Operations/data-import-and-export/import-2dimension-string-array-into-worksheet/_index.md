@@ -28,6 +28,10 @@ POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 The important parameters are described in the following table:
 
 ### **Import2DimensionStringArrayOption**
@@ -57,7 +61,15 @@ The important parameters are described in the following table:
 }
 ```
 
-## Cloud SDK Family
+
+## How to Use the PostImportData API with SDKs
+
+### PostImportData API Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData) defines a publicly accessible programming interface that allows you to perform REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
 
 Using an SDK is the fastest way to integrate this functionality. An SDK abstracts low‑level details so you can focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

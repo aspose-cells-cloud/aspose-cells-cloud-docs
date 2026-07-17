@@ -14,23 +14,23 @@ You can export the following formats: [XLS](https://docs.fileformat.com/spreadsh
 
 ## REST API
 
-| API           | Type | Description                                      | Swagger Link                                                                  |
-| :------------ | :--- | :----------------------------------------------- | :---------------------------------------------------------------------------- |
-| /cells/export | POST | Export an Excel ListObject to a specified format | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
-
-### Request
-
 ```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=listobject&format=tiff" \
--H "accept: multipart/form-data" \
--H "Content-Type: multipart/form-data" \
--H "x-aspose-client: Containerize.Swagger" \
--d '{"File":{}}'
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+
+### Request Parameters
+
+| Parameter Name | Type    | Path/Query String/HTTP Body | required |Description                                                |
+|----------------|---------|-----------------------------|-----------|------------------------------------------------------------|
+| file           | file    | formData                    | True | File to upload                                             |
+| objectType  | string | query                       |   True | The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc. |
+| format  | string | query                       |  True | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.
+ |
 
 ### Response
 
@@ -56,7 +56,35 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=listobject&f
 }
 ```
 
-## Cloud SDK Family
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostExport API with SDKs
+
+### PostExport API Specification
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=listobject&format=tiff" \
+-H "accept: multipart/form-data" \
+-H "Content-Type: multipart/form-data" \
+-H "x-aspose-client: Containerize.Swagger" \
+-d '{"File":{}}'
+```
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

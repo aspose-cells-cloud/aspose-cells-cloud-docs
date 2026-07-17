@@ -56,9 +56,13 @@ The important parameters are described in the following table:
 }
 ```
 
-> **Note:** The JSON field `importDataType` follows the naming used by the API; keep the case as shown in the example.
+## How to Use the PostImportData API with SDKs
 
-## Cloud SDK Family
+### PostImportData API Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessing/PostImportData) defines a publicly accessible programming interface that allows you to perform REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to integrate this functionality. SDKs handle low‑level details so you can focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

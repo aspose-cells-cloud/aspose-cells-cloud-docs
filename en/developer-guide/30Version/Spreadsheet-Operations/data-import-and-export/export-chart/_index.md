@@ -15,34 +15,28 @@ Exporting chart objects from an Excel workbook to various image and document for
 
 You can export charts to the following formats: [PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/), and [PDF](https://docs.fileformat.com/pdf/).
 
-**See also**
-- [Export Excel Worksheet to Different Formats](/export-excel-worksheet-to-different-formats/)
-- [Export Excel Picture to Different Formats](/export-excel-picture-to-different-formats/)
 
 ## **REST API**
 
-| **API**       | **Type** | **Description**                                    | **Swagger Link**                                                              |
-| :------------ | :------- | :------------------------------------------------- | :---------------------------------------------------------------------------- |
-| /cells/export | POST     | Export Excel chart objects to the specified format | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-All requests must include a valid OAuth 2.0 Bearer token in the `Authorization` header. The example below shows how to call the API with **cURL** and upload a workbook using multipart/form‑data.
-
-**Parameters**
-- `objectType` (string, required): The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc.
-- `format` (string, required): Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.
-
-### **Request**
 
 ```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format=tiff" \
-  -H "Authorization: Bearer {access_token}" \
-  -H "Accept: multipart/form-data" \
-  -H "Content-Type: multipart/form-data" \
-  -H "x-aspose-client: Containerize.Swagger" \
-  -F "File=@/path/to/your/workbook.xlsx"
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+
+### Request Parameters
+
+| Parameter Name | Type    | Path/Query String/HTTP Body | required |Description                                                |
+|----------------|---------|-----------------------------|-----------|------------------------------------------------------------|
+| file           | file    | formData                    | True | File to upload                                             |
+| objectType  | string | query                       |   True | The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc. |
+| format  | string | query                       |  True | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.
+ |
+
 
 ### **Response**
 
@@ -93,13 +87,36 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format
 }
 ```
 
-**Status Codes**
-- `200 OK` – The chart was exported successfully; the response contains a JSON array with file details.
-- `400 Bad Request` – Invalid query parameters (e.g., unsupported format) or missing required `objectType`.
-- `401 Unauthorized` – Missing or invalid OAuth 2.0 access token.
-- `500 Internal Server Error` – An unexpected error occurred on the server.
+**Response Status Codes**
 
-## **Cloud SDK Family**
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostExport API with SDKs
+
+### PostExport API Specification
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+All requests must include a valid OAuth 2.0 Bearer token in the `Authorization` header. The example below shows how to call the API with **cURL** and upload a workbook using multipart/form‑data.
+
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format=tiff" \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Accept: multipart/form-data" \
+  -H "Content-Type: multipart/form-data" \
+  -H "x-aspose-client: Containerize.Swagger" \
+  -F "File=@/path/to/your/workbook.xlsx"
+```
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -35,32 +35,27 @@ You can export a worksheet to the following formats:
 
 ## REST API
 
-Before invoking the API, ensure you have a valid OAuth 2.0 access token with the required **Cells** scope. Obtain the token via the Aspose Cloud authentication endpoint and include it in the `Authorization` header as shown in the request example.
 
-| **API**       | **Type** | **Description**                                                       | **Swagger Link**                                                              |
-| ------------- | -------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| /cells/export | POST     | Export an Excel worksheet from the request body to a specified format | [Swagger UI](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
-
-### **Parameters**
-
-- `objectType` – The type of Excel object to export (e.g., `worksheet`).
-- `format` – The desired output format (e.g., `tiff`). Both parameters are required and are passed as query strings.
-
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
-
-### Request
+## REST API
 
 ```bash
-# Export a worksheet to TIFF format
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=worksheet&format=tiff" \
-     -H "Authorization: Bearer <access_token>" \
-     -H "accept: multipart/form-data" \
-     -H "Content-Type: multipart/form-data" \
-     -H "x-aspose-client: Containerize.Swagger" \
-     -F "File=@MyWorkbook.xlsx"
+POST https://api.aspose.cloud/v3.0/cells/export
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+
+### Request Parameters
+
+| Parameter Name | Type    | Path/Query String/HTTP Body | required |Description                                                |
+|----------------|---------|-----------------------------|-----------|------------------------------------------------------------|
+| file           | file    | formData                    | True | File to upload                                             |
+| objectType  | string | query                       |   True | The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc. |
+| format  | string | query                       |  True | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.
+ |
+
 
 ### Response
 
@@ -142,7 +137,25 @@ If the request fails, the API returns a JSON error object containing fields such
 | 404 Not Found | Specified worksheet or file not found. |
 | 500 Internal Server Error | Unexpected server error. |
 
-### Cloud SDK Family
+## How to Use the PostExport API with SDKs
+
+### PostExport API Specification
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
+
+```bash
+# Export a worksheet to TIFF format
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=worksheet&format=tiff" \
+     -H "Authorization: Bearer <access_token>" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -F "File=@MyWorkbook.xlsx"
+```
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop against Aspose.Cells Cloud. An SDK abstracts low‑level details, allowing you to focus on your business logic. For a complete list of supported SDKs, please visit the [GitHub repository](https://github.com/aspose-cells-cloud).
 

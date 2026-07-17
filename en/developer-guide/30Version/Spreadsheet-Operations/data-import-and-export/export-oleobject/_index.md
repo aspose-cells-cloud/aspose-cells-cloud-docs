@@ -13,26 +13,14 @@ ArticleTitle: "Export OLE Object – Aspose.Cells Cloud API"
 
 ## **REST API**
 
-| **API**       | **Type** | **Description**                                                                  | **Swagger Link**                                                              |
-| ------------- | -------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| /cells/export | POST     | Exports an Excel workbook containing OLE objects to the specified output format. | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
+```bash
+POST https://api.aspose.cloud/v3.0/cells/export
+```
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Security and Authentication**
 
-## Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-### What is an OLE object?
-
-An **OLE (Object Linking and Embedding) object** embeds external content—such as Word documents, PowerPoint slides, images, or other files—inside an Excel workbook. When exported, the embedded content is extracted and saved in the requested output format.
-
-### Endpoint Overview
-
-`POST https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject&format={outputFormat}`
-
-- `objectType` – Must be set to `oleobject`.
-- `format` – Desired output format (e.g., `pdf`, `png`, `jpeg`, `docx`, `pptx`).
 
 ### Request Parameters
 
@@ -41,16 +29,7 @@ An **OLE (Object Linking and Embedding) object** embeds external content—such 
 | `file`          | Form‑data | file   | Yes      | The Excel workbook (`.xlsx`, `.xls`, etc.) that contains the OLE objects.      |
 | `outputFormat`  | Query     | string | Yes      | Target format for the exported objects (`pdf`, `png`, `jpeg`, `docx`, `pptx`). |
 | `objectType`    | Query     | string | Yes      | Fixed value `oleobject`.                                                       |
-| `Authorization` | Header    | string | Yes      | Bearer token obtained via OAuth 2.0.                                           |
 
-### Sample cURL request
-
-```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject&format=pdf" \
-  -H "Authorization: Bearer $ACCESS_TOKEN" \
-  -F "file=@MyWorkbook.xlsx" \
-  -F "outputFormat=pdf"
-```
 
 ### Response
 
@@ -81,15 +60,36 @@ A successful request returns a JSON object that lists the exported files:
 | **401**     | Unauthorized – invalid or missing access token.                | `{ "error": { "code": "Unauthorized", "message": "Access token is missing or invalid." } }` |
 | **500**     | Internal server error – unexpected failure on the server side. | `{ "error": { "code": "InternalError", "message": "An unexpected error occurred." } }`      |
 
-### Common Errors & Remedies
 
-| Situation                        | Cause                                         | Remedy                                                                                                            |
-| -------------------------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **File size exceeds limit**      | Uploaded file > 100 MB.                       | Upload the file to Aspose Cloud storage first and reference it via the `Path` parameter, or reduce the file size. |
-| **Unsupported output format**    | `format` query value not in the allowed list. | Use one of the supported formats: `pdf`, `png`, `jpeg`, `docx`, `pptx`.                                           |
-| **Missing Authorization header** | No bearer token supplied.                     | Obtain a token from `/connect/token` and include `Authorization: Bearer <token>` in the request.                  |
+## How to Use the PostExport API with SDKs
 
-## **Cloud SDK Family**
+### PostExport API Specification
+
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject&format=pdf" \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -F "file=@MyWorkbook.xlsx" \
+  -F "outputFormat=pdf"
+```
+
+### What is an OLE object?
+
+An **OLE (Object Linking and Embedding) object** embeds external content—such as Word documents, PowerPoint slides, images, or other files—inside an Excel workbook. When exported, the embedded content is extracted and saved in the requested output format.
+
+### Endpoint Overview
+
+`POST https://api.aspose.cloud/v3.0/cells/export?objectType=oleobject&format={outputFormat}`
+
+- `objectType` – Must be set to `oleobject`.
+- `format` – Desired output format (e.g., `pdf`, `png`, `jpeg`, `docx`, `pptx`).
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to accelerate development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

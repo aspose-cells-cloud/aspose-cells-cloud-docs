@@ -12,23 +12,28 @@ weight: 20
 
 You can export shapes to the following formats: **PNG**, **GIF**, **JPEG**, **BMP**, **SVG**, **TIFF**, **EMF**, **WMF**.
 
-Before calling the API, ensure you have a valid Aspose Cloud access token. Include it in the request header as:
-
-```
-Authorization: Bearer <your_access_token>
-```
 
 ## REST API
 
-| **API**       | **Type** | **Description**                                                    | **Swagger Link**                                                              |
-| :------------ | :------- | :----------------------------------------------------------------- | :---------------------------------------------------------------------------- |
-| /cells/export | PUT      | Export Excel objects from the request content to a specific format | [PostExport](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) |
+```bash
+POST https://api.aspose.cloud/v3.0/cells/export
+```
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+### **Security and Authentication**
 
-You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API using cURL.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### Request
+
+### Request Parameters
+
+| Parameter Name | Type    | Path/Query String/HTTP Body | required |Description                                                |
+|----------------|---------|-----------------------------|-----------|------------------------------------------------------------|
+| file           | file    | formData                    | True | File to upload                                             |
+| objectType  | string | query                       |   True | The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc. |
+| format  | string | query                       |  True | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.
+ |
+
+### **Request Example**
 
 ```bash
 curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=tiff" \
@@ -38,14 +43,6 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=
      -H "x-aspose-client: Containerize.Swagger" \
      -d '{"File":{}}'
 ```
-
-**Parameters**
-
-| Parameter   | Type   | Required | Description |
-|-------------|--------|----------|-------------|
-| `objectType`| string | Yes      | Specifies the type of object to export. Use `shape` for exporting shapes. |
-| `format`    | string | Yes      | Target image format. Supported values: `png`, `gif`, `jpeg`, `bmp`, `svg`, `tiff`, `emf`, `wmf`. |
-| `File`      | binary | Yes      | The Excel file payload sent as `multipart/form-data`. |
 
 ### Response
 
@@ -263,9 +260,28 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=
 | 200  | OK                    | Shapes exported successfully; response contains the file list. |
 | 400  | Bad Request           | Missing or invalid parameters. |
 | 401  | Unauthorized          | Invalid or missing access token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error | Unexpected server error. |
 
-## Cloud SDK Family
+
+## How to Use the PostExport API with SDKs
+
+### PostExport API Specification
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+
+You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API using cURL.
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v3.0/cells/export?objectType=shape&format=tiff" \
+     -H "accept: multipart/form-data" \
+     -H "Content-Type: multipart/form-data" \
+     -H "Authorization: Bearer <your_access_token>" \
+     -H "x-aspose-client: Containerize.Swagger" \
+     -d '{"File":{}}'
+```
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop against Aspose.Cells Cloud. An SDK abstracts low‑level details, letting you focus on business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
