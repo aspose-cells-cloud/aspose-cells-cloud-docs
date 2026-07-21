@@ -40,12 +40,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ```json
 {
-    "Name": "ResponseFile",
-    "DataType": {
-        "Identifier": "File",
-        "Reference": "Stream",
-        "Name": "file"
-    }
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[merged filename]",
+    "Filesize" : [file size],
+    "FileContent" : "[Base64String]"
 }
 ```
 

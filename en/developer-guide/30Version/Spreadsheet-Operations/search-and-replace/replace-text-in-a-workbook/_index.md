@@ -17,6 +17,9 @@ This REST API replaces text in an Excel workbook.
 ```bash
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceText
 ```
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 
@@ -28,6 +31,139 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceTex
 | newValue       | string | query    | Text that will replace the old value.                   |
 | folder         | string | query    | Folder path containing the workbook.                    |
 | storageName    | string | query    | Name of the storage service where the workbook resides. |
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+      "Workbook": {
+    "FileName": "test.xlsx",
+    "Links": [
+      {
+        "Href": "/test.xlsx",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As CSV",
+        "Type": "text/csv"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As HTML",
+        "Type": "text/html"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As ODS",
+        "Type": "application/vnd.oasis.opendocument.spreadsheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As PDF",
+        "Type": "application/pdf"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As Table Delimited Text Format",
+        "Type": "text/plain"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As TIFF",
+        "Type": "image/tiff"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As Microsoft Excel 2003",
+        "Type": "application/vnd.ms-excel"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As Microsoft Excel 2007",
+        "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As XPS",
+        "Type": "application/vnd.ms-xpsdocument"
+      }
+    ],
+    "Worksheets": {
+      "link": {
+        "Href": "/worksheets",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DefaultStyle": {
+      "link": {
+        "Href": "/defaultstyle",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DocumentProperties": {
+      "link": {
+        "Href": "/documentproperties",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Names": {
+      "link": {
+        "Href": "/names",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Settings": {
+      "link": {
+        "Href": "/settings",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "IsWriteProtected": "False",
+    "IsProtected": "False",
+    "IsEncryption": "false",
+    "Password": null
+  }
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostReplace API with SDKs
+
+### PostReplace API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextReplace) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -65,7 +201,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/replaceText?oldValue
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to integrate this functionality. An SDK handles low‑level details, allowing you to focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

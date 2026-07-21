@@ -11,18 +11,19 @@ weight: 30
 ArticleTitle: "Protect an Excel Workbook Using Aspose.Cells Cloud API"
 ---
 
-This REST API **protects** an Excel workbook, enabling you to securely protect an Excel workbook with password and protection options using Aspose.Cells Cloud.
-
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-Version: **v3.0** – current as of 2026.
-
 ## REST API
 
-| **API**                  | **HTTP Method** | **Description**    | **Swagger Link**                                                                              |
-| ------------------------ | --------------- | ------------------ | --------------------------------------------------------------------------------------------- |
-| /cells/{name}/protection | POST            | Protect a workbook | [PostProtectDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument) |
+This REST API **protects** an Excel workbook, enabling you to securely protect an Excel workbook with password and protection options using Aspose.Cells Cloud.
+
+
+```bash
+POST https://api.aspose.cloud/v3.0/cells/{name}/protection
+```
+
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 
 ### Query Parameters
 
@@ -44,6 +45,29 @@ Version: **v3.0** – current as of 2026.
 | ProtectionType | string | Type of protection to apply. Allowed values (case‑insensitive): **ALL**, **CONTENTS**, **NONE**, **OBJECTS**, **SCENARIOS**, **STRUCTURE**, **WINDOWS**. |
 | Password       | string | Optional password to set for the protection.                                                                                                             |
 
+### Response
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the PostProtectDocument API with SDKs
+
+### PostProtectDocument API Specification
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostProtectDocument) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Example: Protect a Workbook with cURL
@@ -59,16 +83,7 @@ The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/P
         -d '{ "ProtectionType": "ALL", "Password": "aspose" }'
    ```
 
-#### Expected Responses
-
-| HTTP Status | Description                                                   | Example Payload                                                 |
-| ----------- | ------------------------------------------------------------- | --------------------------------------------------------------- |
-| **200**     | Workbook protected successfully.                              | `{ "Code": "200", "Status": "OK" }`                             |
-| **401**     | Unauthorized – missing or invalid token.                      | `{ "Code": "401", "Message": "Invalid access token." }`         |
-| **400**     | Bad request – malformed JSON or unsupported `ProtectionType`. | `{ "Code": "400", "Message": "Invalid request data." }`         |
-| **500**     | Internal server error.                                        | `{ "Code": "500", "Message": "An unexpected error occurred." }` |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop against Aspose.Cells Cloud. An SDK abstracts low‑level details, allowing you to focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

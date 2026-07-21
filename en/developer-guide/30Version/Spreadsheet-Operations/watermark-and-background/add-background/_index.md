@@ -13,13 +13,18 @@ description: "Learn how to add a background image to an Excel workbook using the
 weight: 160
 ---
 
-This REST API adds a **background image** to an Excel workbook.
-
 ## REST API
 
-| API                        | Type | Description                             | Resource Link                                                                                     |
-| -------------------------- | ---- | --------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `/cells/{name}/background` | PUT  | Add a background image to an Excel file | [PutWorkbookBackground](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) |
+This REST API adds a **background image** to an Excel workbook.
+
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/background
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 
 ### Query Parameters
 
@@ -36,6 +41,31 @@ This REST API adds a **background image** to an Excel workbook.
 | `datafile`     | file | The workbook file to which the background will be applied. |
 
 **Path Parameter** – `{name}` in the URL represents the **workbook file name** (e.g., `Book1.xlsx`).
+
+
+### **Response**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PutWorkbookBackground API with SDKs
+
+### PutWorkbookBackground API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutWorkbookBackground) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
@@ -68,16 +98,8 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/background?picPath=D
 
 {{< /tabs >}}
 
-### Error Responses
 
-| HTTP Status | Code                  | Message                                                           | When it occurs |
-| ----------- | --------------------- | ----------------------------------------------------------------- | -------------- |
-| 400         | Bad Request           | The request is malformed or missing required parameters.          |
-| 401         | Unauthorized          | Invalid or missing OAuth 2.0 token.                               |
-| 404         | Not Found             | The specified workbook (`{name}`) or picture file does not exist. |
-| 500         | Internal Server Error | An unexpected error occurred on the server side.                  |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop. An SDK abstracts low‑level details so you can concentrate on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

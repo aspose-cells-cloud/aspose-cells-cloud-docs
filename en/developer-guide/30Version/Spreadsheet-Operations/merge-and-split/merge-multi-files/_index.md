@@ -10,13 +10,18 @@ description: "Learn how to merge multiple Excel workbooks into one file using th
 weight: 32
 ---
 
-This REST API merges multiple Excel files into a single Excel workbook.
-
 ## REST API
+
+This REST API merges multiple Excel files into a single Excel workbook.
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/merge
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 
 ### Request parameters
 
@@ -25,6 +30,33 @@ POST https://api.aspose.cloud/v3.0/cells/merge
 | files[]         | file    | formData | One or more Excel workbooks to be merged. Use `file1`, `file2`, … in the request. | Yes      |
 | format          | string  | query    | Desired output format (e.g., `xlsx`).                                             | Yes      |
 | mergeToOneSheet | boolean | query    | Set to `true` to combine all worksheets into a single sheet; default is `false`.  | No       |
+
+### **Response**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[merged filename]",
+    "Filesize" : [file size],
+    "FileContent" : "[Base64String]"
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostMerge API with SDKs
+
+### PostMerge API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostMerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -48,40 +80,19 @@ curl -v "https://api.aspose.cloud/v3.0/cells/merge?format=xlsx" \
 
 ```json
 {
-  "Files": [
-    {
-      "Filename": "file1.xlsx",
-      "FileSize": 274022,
-      "FileContent": "-----Base64String--------"
-    },
-    {
-      "Filename": "file2.xlsx",
-      "FileSize": 274022,
-      "FileContent": "-----Base64String--------"
-    }
-  ]
+  {
+    "Filename": "file1.xlsx",
+    "FileSize": 274022,
+    "FileContent": "-----Base64String--------"
+  }
 }
 ```
-
-_Explanation_:
-
-- The response returns a JSON object containing the merged workbook(s) encoded in **Base64**.
-- Each entry in the `Files` array provides the original filename, its size, and the merged file content.
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-### Error handling
-
-| HTTP Status | Meaning                                                        | Sample error body                                                                            |
-| ----------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| 400         | Bad request – missing required files or parameters.            | `{ "ErrorMessage": "File list cannot be empty.", "ErrorCode": "BadRequest" }`                |
-| 401         | Unauthorized – invalid or expired JWT token.                   | `{ "ErrorMessage": "Access token is invalid.", "ErrorCode": "Unauthorized" }`                |
-| 415         | Unsupported Media Type – file format not supported.            | `{ "ErrorMessage": "Only Excel formats are allowed.", "ErrorCode": "UnsupportedMediaType" }` |
-| 500         | Internal server error – unexpected failure on the server side. | `{ "ErrorMessage": "An unexpected error occurred.", "ErrorCode": "InternalError" }`          |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -14,20 +14,14 @@ ArticleTitle: "Aspose.Cells – Update Word Case API Documentation"
 
 Managing inconsistent text case in spreadsheets (Excel, Google Sheets, CSV) can be frustrating, especially with large datasets. The **PostUpdateWordCase web API** automates text‑case conversions, ensuring clean and standardized data with minimal effort.
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## **Excel Web API – Update Word Case API**
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/updatewordcase
 ```
-
-**Authentication** – Include an OAuth 2.0 bearer token in the request header:
-
-```http
-Authorization: Bearer <access_token>
-```
+### Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### **Function Description**
 
@@ -41,7 +35,7 @@ The PostUpdateWordCase web API addresses the common issue of inconsistent text c
 
 - **Support for Multiple Formats** – The API works with a wide range of spreadsheet formats, including Excel, OpenOffice, JSON, CSV, and others. This versatility makes it suitable for various data‑processing needs.
 
-### Request Parameters of **postUpdateWordCase** API
+### **Request Parameters**
 
 | Parameter Name    | Type   | Location     | Description                                                                                                               |
 | ----------------- | ------ | ------------ | ------------------------------------------------------------------------------------------------------------------------- |
@@ -61,13 +55,15 @@ The PostUpdateWordCase web API addresses the common issue of inconsistent text c
 - **CaseType** – The type of case conversion. Allowed values are `Upper`, `Lower`, `Capitalize`, and `Title`.
 - **IgnoreBlank** – If `true`, blank cells are ignored; default is `false`.
 
-### **Response Description**
+### **Response**
 
 ```json
 {
-  "Filename": "Result.xlsx",
-  "FileSize": 25432,
-  "FileContent": "base64_encoded_string"
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[merged filename]",
+    "Filesize" : [file size],
+    "FileContent" : "[Base64String]"
 }
 ```
 
@@ -75,21 +71,23 @@ The PostUpdateWordCase web API addresses the common issue of inconsistent text c
 - **FileSize** – Size of the file in bytes.
 - **FileContent** – Base‑64 encoded content of the transformed file.
 
-### **Error Handling**
+**Http Status Codes**
 
-| HTTP Status | Meaning                                             | Sample Error Payload                               |
-| ----------- | --------------------------------------------------- | -------------------------------------------------- |
-| **200**     | Success – the file is returned.                     | N/A                                                |
-| **400**     | Bad request – missing or invalid parameters.        | `{ "error": "Invalid wordCaseOptions supplied." }` |
-| **401**     | Unauthorized – missing or invalid OAuth token.      | `{ "error": "Authentication failed." }`            |
-| **415**     | Unsupported Media Type – file format not supported. | `{ "error": "File format not supported." }`        |
-| **500**     | Internal server error.                              | `{ "error": "An unexpected error occurred." }`     |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
-## OpenAPI Specification
+## How to Use the PostUpdateWordCase API with SDKs
+
+### PostUpdateWordCase API Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/TextProcessingController/PostUpdateWordCase" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 

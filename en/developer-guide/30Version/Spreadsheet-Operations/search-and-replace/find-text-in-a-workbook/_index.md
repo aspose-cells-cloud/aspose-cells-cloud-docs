@@ -19,7 +19,12 @@ This REST API searches for text in an Excel workbook.
 POST https://api.aspose.cloud/v3.0/cells/{name}/findText
 ```
 
-The request accepts the following parameters:
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+
+### Request parameters
 
 | Parameter Name | Type   | Location | Description                                                |
 | -------------- | ------ | -------- | ---------------------------------------------------------- |
@@ -28,9 +33,52 @@ The request accepts the following parameters:
 | folder         | string | query    | Folder that contains the workbook (optional).              |
 | storageName    | string | query    | Name of the storage where the workbook resides (optional). |
 
-<a href="https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksTextSearch" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### **Response**
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostWorkbooksTextSearch API with SDKs
+
+### PostWorkbooksTextSearch API Specification
+
+The <a href="https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksTextSearch" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -75,19 +123,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/findText?text=a" \
 
 {{< /tabs >}}
 
-### **Error handling**
-
-– The API may return standard HTTP status codes such as **401 Unauthorized** (invalid or missing token), **404 Not Found** (workbook does not exist), and **500 Internal Server Error** (unexpected server condition). The response body for errors follows the common Aspose.Cells error format.
-
-| Status Code | Description |
-|------------|-------------|
-| 200 OK | Search successful; returns `TextItems`. |
-| 400 Bad Request | Invalid request parameters. |
-| 401 Unauthorized | Missing or invalid authentication token. |
-| 404 Not Found | Specified workbook not found. |
-| 500 Internal Server Error | Unexpected server error. |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 

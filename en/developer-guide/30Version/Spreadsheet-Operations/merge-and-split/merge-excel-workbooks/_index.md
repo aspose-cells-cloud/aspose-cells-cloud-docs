@@ -11,15 +11,18 @@ ArticleTitle: "Merge an Excel Workbook into Another Workbook using Aspose.Cells 
 weight: 50
 ---
 
-This REST API merges an Excel **workbook** into another workbook.
-
 ## REST API
 
-| **API**             | **Type** | **Description**       | **Swagger Link**                                                                            |
-| ------------------- | -------- | --------------------- | ------------------------------------------------------------------------------------------- |
-| /cells/{name}/merge | POST     | Merge Excel workbooks | [PostWorkbooksMerge](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) |
+This REST API merges an Excel **workbook** into another workbook.
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) defines a publicly accessible programming interface and lets the API carry out REST interactions directly from a web browser.
+```bash
+POST https://api.aspose.cloud/v3.0/cells/{name}/merge
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 
 ### **Query Parameter**
 
@@ -29,12 +32,143 @@ The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/P
 | storageName    | string | Name of the storage.                                        |
 | **mergeWith**  | string | Name of the workbook to be merged into the target workbook. |
 
-### How to merge two workbooks (cURL)
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+      "Workbook": {
+    "FileName": "test.xlsx",
+    "Links": [
+      {
+        "Href": "/test.xlsx",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As CSV",
+        "Type": "text/csv"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As HTML",
+        "Type": "text/html"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As ODS",
+        "Type": "application/vnd.oasis.opendocument.spreadsheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As PDF",
+        "Type": "application/pdf"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As Table Delimited Text Format",
+        "Type": "text/plain"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As TIFF",
+        "Type": "image/tiff"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As Microsoft Excel 2003",
+        "Type": "application/vnd.ms-excel"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As Microsoft Excel 2007",
+        "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As XPS",
+        "Type": "application/vnd.ms-xpsdocument"
+      }
+    ],
+    "Worksheets": {
+      "link": {
+        "Href": "/worksheets",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DefaultStyle": {
+      "link": {
+        "Href": "/defaultstyle",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DocumentProperties": {
+      "link": {
+        "Href": "/documentproperties",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Names": {
+      "link": {
+        "Href": "/names",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Settings": {
+      "link": {
+        "Href": "/settings",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "IsWriteProtected": "False",
+    "IsProtected": "False",
+    "IsEncryption": "false",
+    "Password": null
+  }
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostWorkbooksMerge API with SDKs
+
+### PostWorkbooksMerge API Specification
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbooksMerge) defines a publicly accessible programming interface and lets the API carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL, including the required authentication header.
 
-**Prerequisites / Authentication**  
-To call this endpoint you must have a valid Aspose Cloud account and obtain an access token via OAuth 2.0. Generate the token by sending a POST request to `https://api.aspose.cloud/connect/token` with your client ID and secret, then include the returned bearer token in the `Authorization` header as shown below.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -175,16 +309,7 @@ Response headers
 
 {{< /tabs >}}
 
-### Error Handling
-
-| HTTP Status | Description                                                 |
-| ----------- | ----------------------------------------------------------- |
-| 400         | Bad request – missing or invalid parameters.                |
-| 401         | Unauthorized – invalid or missing access token.             |
-| 404         | Not found – the specified workbook does not exist.          |
-| 500         | Internal server error – unexpected condition on the server. |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK abstracts low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

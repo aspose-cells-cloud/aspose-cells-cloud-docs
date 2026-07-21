@@ -9,15 +9,21 @@ description: "Use Aspose.Cells Cloud REST API to replace existing text with new 
 weight: 80
 ---
 
-This REST API replaces data in Excel files.
 
 ## REST API
+
+This REST API replaces data in Excel files.
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/replace
 ```
 
-### The request parameters are
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+
+### Request Parameter
 
 | Parameter Name | Type   | Location             | Description                                   |
 | -------------- | ------ | -------------------- | --------------------------------------------- |
@@ -26,6 +32,48 @@ POST https://api.aspose.cloud/v3.0/cells/replace
 | **newtext**    | string | query                | Replacement text.                             |
 | **password**   | string | query                | Password for a protected workbook (optional). |
 | **sheetname**  | string | query                | Name of the worksheet to target (optional).   |
+
+### **Response**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Files": [
+    {
+      "Filename" : "[file1 name]",
+      "Filesize" : [file size],
+      "FileContent" : "[Base64String]"
+    },
+    {
+      "Filename" : "[file2 name]",
+      "Filesize" : [file size],
+      "FileContent" : "[Base64String]"
+    },
+    {
+      "Filename" : "[file3 name]",
+      "Filesize" : [file size],
+      "FileContent" : "[Base64String]"
+    }
+  ]
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostReplace API with SDKs
+
+### PostReplace API Specification
+
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostReplace) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

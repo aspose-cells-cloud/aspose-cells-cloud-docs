@@ -9,32 +9,18 @@ description: "Use Aspose.Cells Cloud PostTrimContent API to automatically clean 
 weight: 100
 ---
 
-The **PostTrimContent** API processes and trims content within a specified range in a spreadsheet. It removes extra spaces, line breaks, and other unnecessary characters from the content of selected cells, making it useful for cleaning data entries and ensuring consistent spreadsheet formatting.
-
 ## **Excel Web API : PostTrimContent**
+
+The **PostTrimContent** API processes and trims content within a specified range in a spreadsheet. It removes extra spaces, line breaks, and other unnecessary characters from the content of selected cells, making it useful for cleaning data entries and ensuring consistent spreadsheet formatting.
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/trimcontent
 ```
 
-**Authentication** – Include a valid Aspose Cloud access token in the request header:
+### **Security and Authentication**
 
-```http
-Authorization: Bearer <your_access_token>
-```
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### **Sample Request Body**
-
-```json
-{
-  "trimContentOptions": {
-    "range": "A1:C10",
-    "trimMode": "All", // Options: All, Leading, Trailing
-    "ignoreCase": false,
-    "preserveFormula": true
-  }
-}
-```
 
 ### **Function Description**
 
@@ -43,36 +29,43 @@ Authorization: Bearer <your_access_token>
 - **Data Integrity** – Removes extra spaces and line breaks, helping maintain consistent and reliable data for analysis and reporting.
 - **Ease of Use** – Simple integration with minimal setup, suitable for both developers and end‑users.
 
-### Request Parameters of **postTrimContent** API
+### **Request Parameters**
 
 | Parameter Name     | Type  | Location | Description                                                                             |
 | ------------------ | ----- | -------- | --------------------------------------------------------------------------------------- |
 | trimContentOptions | Class | Body     | Options that specify how the content should be trimmed (e.g., target range, trim mode). |
 
-### **Response Description**
+### **Response**
 
 ```json
 {
-  "Filename": "sample.xlsx",
-  "FileSize": 123456,
-  "FileContent": "base64_encoded_string"
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[merged filename]",
+    "Filesize" : [file size],
+    "FileContent" : "[Base64String]"
 }
 ```
 
-### **Error Handling**
+**Http Status Codes**
 
-| HTTP Status | Code                | Description                                   |
-| ----------- | ------------------- | --------------------------------------------- |
-| 400         | BadRequest          | Invalid request parameters or malformed JSON. |
-| 401         | Unauthorized        | Missing or invalid authentication token.      |
-| 404         | NotFound            | Specified workbook or range not found.        |
-| 500         | InternalServerError | Unexpected server error.                      |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
-## OpenAPI Specification
+
+## How to Use the PostRemoveCharacters API with SDKs
+
+### PostRemoveCharacters API Specification
+
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/PostTrimContent) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

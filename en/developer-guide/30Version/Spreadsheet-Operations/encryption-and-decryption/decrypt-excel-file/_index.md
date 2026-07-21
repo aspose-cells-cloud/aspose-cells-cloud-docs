@@ -12,9 +12,13 @@ weight: 50
 
 ## REST API
 
-| API                      | Type   | Description        | Swagger Link                                                                                      |
-| ------------------------ | ------ | ------------------ | ------------------------------------------------------------------------------------------------- |
-| /cells/{name}/encryption | DELETE | Decrypt a document | [DeleteDecryptWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) |
+```bash
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/encryption
+```
+
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### Query Parameters
 
@@ -36,6 +40,29 @@ weight: 50
 | EncryptionType | string  | Encryption algorithm (`XOR`, `Compatible`, `EnhancedCryptographicProviderV1`, `StrongCryptographicProvider`). |
 | KeyLength      | integer | Length of the encryption key in bits.                                                                         |
 | Password       | string  | Password used for decryption.                                                                                 |
+
+### Response
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the DeleteDecryptWorkbook API with SDKs
+
+### DeleteDecryptWorkbook API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDecryptWorkbook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -64,7 +91,7 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
 }
 ```
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

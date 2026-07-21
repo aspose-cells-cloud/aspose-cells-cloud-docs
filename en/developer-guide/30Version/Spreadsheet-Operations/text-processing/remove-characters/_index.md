@@ -10,18 +10,18 @@ weight: 100
 ArticleTitle: "Remove Characters from Excel – Aspose.Cells Cloud API (POST /cells/removecharacters)"
 ---
 
-A comprehensive set of tools for cleaning text content within selected cells. The API removes specific characters, predefined character sets, or substrings, ensuring that worksheet text is standardized and free from unwanted symbols.
-
 ## Remove Characters from Excel Web API
 
-> **Prerequisites / Authentication**  
-> • An active Aspose Cloud account with a valid **OAuth 2.0** access token.  
-> • The target workbook must be uploaded to Aspose Cloud storage or referenced via a public URL.  
-> • Include the `Authorization: Bearer {access_token}` header in every request.
+A comprehensive set of tools for cleaning text content within selected cells. The API removes specific characters, predefined character sets, or substrings, ensuring that worksheet text is standardized and free from unwanted symbols.
+
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/removecharacters
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Function Description
 
@@ -77,77 +77,36 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/removecharacters" \
          }'
 ```
 
-### Response Description
+### **Response**
 
 ```json
 {
-  "Name": "FileInfo",
-  "Description": ["Represents file information."],
-  "Type": "Class",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "Filename",
-      "Description": ["Represents filename."],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "String",
-        "Name": "string"
-      }
-    },
-    {
-      "Name": "FileSize",
-      "Description": ["Represents file size."],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Long",
-        "Name": "long"
-      }
-    },
-    {
-      "Name": "FileContent",
-      "Description": ["Represents file content, byte to base64 string."],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "String",
-        "Name": "string"
-      }
-    }
-  ]
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[merged filename]",
+    "Filesize" : [file size],
+    "FileContent" : "[Base64String]"
 }
 ```
 
-#### Status Codes
+**Http Status Codes**
 
-| Code | Description                                   |
-|------|-----------------------------------------------|
-| 200  | Request succeeded; characters removed.        |
-| 400  | Bad request – missing or invalid parameters. |
-| 401  | Unauthorized – invalid or missing token.      |
-| 404  | Not found – specified workbook or range not found. |
-| 500  | Internal server error.                        |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
-#### Error Response Schema
 
-```json
-{
-  "Code": "ErrorCode",
-  "Message": "Human‑readable error message.",
-  "Description": "Detailed description of the error."
-}
-```
+## How to Use the PostRemoveCharacters API with SDKs
 
-## OpenAPI Specification
+### PostRemoveCharacters API Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/PostRemoveCharacters) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

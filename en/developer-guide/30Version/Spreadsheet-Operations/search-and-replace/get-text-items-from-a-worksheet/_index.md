@@ -11,26 +11,19 @@ description: "Retrieve all text items from a specific worksheet in an Excel file
 ArticleTitle: "Get Text Items from an Excel Worksheet"
 ---
 
-This REST API reads a worksheet’s text items in an Excel file.
-
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
 ## REST API
+
+This REST API reads a worksheet’s text items in an Excel file.
 
 ```
 https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{worksheet}/textItems
 ```
 
-### Request
+### Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-```bash
-GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/textItems
-```
+### Request Parameters
 
-### Parameters
-
-The request parameters are as follows:
 
 | Parameter Name | Type   | Location | Required | Description                                    |
 | -------------- | ------ | -------- | -------- | ---------------------------------------------- |
@@ -38,6 +31,49 @@ The request parameters are as follows:
 | sheetName      | string | path     | Yes      | Name of the worksheet.                         |
 | folder         | string | query    | No       | Path to the folder that contains the workbook. |
 | storageName    | string | query    | No       | Name of the Aspose Cloud storage.              |
+
+### **Response**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the GetWorksheetTextItems API with SDKs
+
+### GetWorksheetTextItems API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetTextItems){:target="_blank" rel="noopener noreferrer"} defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -86,41 +122,7 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/sheet1/tex
 
 {{< /tabs >}}
 
-### Response Schema
-
-| Field | Type | Description |
-|-------|------|-------------|
-| **Status** | string | Operation status message. |
-| **TextItems.link** | object | Hyperlink information for the collection. |
-| &nbsp;&nbsp;Href | string | URL of the linked resource. |
-| &nbsp;&nbsp;Rel | string | Relationship type. |
-| &nbsp;&nbsp;Title | string | Human‑readable title of the link. |
-| &nbsp;&nbsp;Type | string | MIME type of the linked resource. |
-| **TextItems.TextItemList** | array of objects | List of text items found in the worksheet. |
-| &nbsp;&nbsp;link | object | Hyperlink for the individual text item (same sub‑fields as above). |
-| &nbsp;&nbsp;Text | string | The actual text string from the worksheet. |
-
-### Error Handling
-
-The API can return the following HTTP status codes:
-
-- **400 Bad Request** – Missing or invalid parameters.
-- **401 Unauthorized** – Access token is absent, expired, or invalid.
-- **404 Not Found** – The specified workbook or worksheet does not exist.
-- **500 Internal Server Error** – An unexpected server‑side error occurred.
-
-Error responses are returned in JSON format, for example:
-
-```json
-{
-  "Error": {
-    "Code": "InvalidToken",
-    "Message": "The access token is invalid or has expired."
-  }
-}
-```
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 SDKs simplify integration by handling low‑level details and letting you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud){:target="_blank" rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -177,5 +179,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
-
-Related operations: [Find Text in Worksheet](/worksheets/find-text/), [Replace Text in Worksheet](/worksheets/replace-text/)

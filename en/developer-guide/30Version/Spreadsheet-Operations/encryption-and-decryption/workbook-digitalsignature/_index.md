@@ -13,17 +13,21 @@ description: "Learn how to add a digital signature to an Excel workbook using th
 weight: 35
 ---
 
-This REST API adds a **digital signature** to an Excel workbook.
-
-**Last updated: July 2026**
 
 ## REST API
+
+This REST API adds a **digital signature** to an Excel workbook.
 
 ```bash
 POST https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature
 ```
 
-The request parameters include:
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+
+### Request Parameters
 
 | Parameter Name           | Type   | Location             | Description                                            |
 | ------------------------ | ------ | -------------------- | ------------------------------------------------------ |
@@ -43,39 +47,21 @@ The request parameters include:
 | 403         | Forbidden – insufficient permissions or access denied. |
 | 500         | Internal server error – unexpected failure.            |
 
-**Example error responses**
+### Https status Error Responses
 
-```json
-// 400 Bad Request
-{
-  "Code": 400,
-  "Message": "Invalid parameters supplied."
-}
-```
+| HTTP Status | Code                | Description                                               |
+| ----------- | ------------------- | --------------------------------------------------------- |
+| 400         | BadRequest          | Missing or invalid parameters.                            |
+| 401         | Unauthorized        | Invalid or missing access token.                          |
+| 404         | NotFound            | Specified workbook not found in the given folder/storage. |
+| 500         | InternalServerError | Unexpected server error.                                  |
 
-```json
-// 401 Unauthorized
-{
-  "Code": 401,
-  "Message": "Authentication failed. Token is missing or expired."
-}
-```
 
-```json
-// 403 Forbidden
-{
-  "Code": 403,
-  "Message": "You do not have permission to modify this workbook."
-}
-```
+## How to Use the PostDigitalSignature API with SDKs
 
-```json
-// 500 Internal Server Error
-{
-  "Code": 500,
-  "Message": "An unexpected error occurred while applying the signature."
-}
-```
+### PostDigitalSignature API Specification
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Protection/PostDigitalSignature) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to call Aspose.Cells web services. The example below demonstrates a request to the API:
 
@@ -106,11 +92,11 @@ curl -v "https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature?digitalsign
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the fastest way to integrate digital‑signature functionality. SDKs handle low‑level details so you can focus on your business logic. Check the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK simplifies integration and reduces boiler‑plate code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to call Aspose.Cells web services with various SDKs:
+The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 
@@ -163,5 +149,3 @@ The following code examples demonstrate how to call Aspose.Cells web services wi
 {{< /tab >}}
 
 {{< /tabs >}}
-
-You may also find related API pages useful, such as **[Encrypt an Excel File](/excel-encrypt/)** and **[Protect an Excel File](/excel-protect/)**, which provide additional security options for your workbooks.

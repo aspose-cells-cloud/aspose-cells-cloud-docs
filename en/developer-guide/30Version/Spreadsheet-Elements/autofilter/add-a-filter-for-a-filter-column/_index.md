@@ -63,7 +63,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### PutWorksheetFilter API Specification
 
-
 The <a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL.

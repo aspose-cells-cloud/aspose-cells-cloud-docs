@@ -33,6 +33,139 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/replaceTe
 | **folder**      | string | query    | The folder that contains the file. |
 | **storageName** | string | query    | The storage service name.          |
 
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+      "Workbook": {
+    "FileName": "test.xlsx",
+    "Links": [
+      {
+        "Href": "/test.xlsx",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As CSV",
+        "Type": "text/csv"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As HTML",
+        "Type": "text/html"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As ODS",
+        "Type": "application/vnd.oasis.opendocument.spreadsheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As PDF",
+        "Type": "application/pdf"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As Table Delimited Text Format",
+        "Type": "text/plain"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As TIFF",
+        "Type": "image/tiff"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As Microsoft Excel 2003",
+        "Type": "application/vnd.ms-excel"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As Microsoft Excel 2007",
+        "Type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      },
+      {
+        "Href": "/test.xlsx",
+        "Rel": "alternate",
+        "Title": "Download As XPS",
+        "Type": "application/vnd.ms-xpsdocument"
+      }
+    ],
+    "Worksheets": {
+      "link": {
+        "Href": "/worksheets",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DefaultStyle": {
+      "link": {
+        "Href": "/defaultstyle",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "DocumentProperties": {
+      "link": {
+        "Href": "/documentproperties",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Names": {
+      "link": {
+        "Href": "/names",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Settings": {
+      "link": {
+        "Href": "/settings",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "IsWriteProtected": "False",
+    "IsProtected": "False",
+    "IsEncryption": "false",
+    "Password": null
+  }
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostWorksheetTextReplace API with SDKs
+
+### PostWorksheetTextReplace API Specification
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextReplace) defines this publicly accessible interface.
 
 You can use the cURL command-line tool to call the service:
@@ -71,24 +204,8 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/re
 
 {{< /tabs >}}
 
-### Response Details
 
-| Property                | Type    | Description                                        |
-| ----------------------- | ------- | -------------------------------------------------- |
-| **Matches**             | integer | Number of cells where `oldValue` was replaced.     |
-| **Worksheet.link.Href** | string  | Relative URL of the affected worksheet.            |
-| **Code**                | integer | HTTP status code returned by the API (e.g., 200).  |
-| **Status**              | string  | Textual representation of the status (e.g., "OK"). |
-
-### Error Handling
-
-| HTTP Status | Example JSON Payload                                                                                          | Meaning                                                |
-| ----------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| **400**     | `{ "Code": 400, "Message": "Invalid request.", "Description": "The parameter 'oldValue' is missing." }`       | Bad request – required parameter missing or malformed. |
-| **401**     | `{ "Code": 401, "Message": "Unauthorized.", "Description": "Access token is invalid or expired." }`           | Authentication failure – obtain a new token.           |
-| **404**     | `{ "Code": 404, "Message": "Worksheet not found.", "Description": "The sheetName 'SheetX' does not exist." }` | The specified worksheet could not be located.          |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -146,8 +263,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< /tabs >}}
 
-## See Also
-
-- [Find text in a worksheet](/cells/worksheets/find-text/)
-- [Replace text in a workbook](/cells/workbook/replace-text/)
-- [Search and replace overview](/cells/overview/search-replace/)

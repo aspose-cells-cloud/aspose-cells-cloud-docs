@@ -12,41 +12,6 @@ ArticleTitle: "File Info – Excel File Metadata and Base64 Content (Aspose.Cell
 
 ## FileInfo Properties
 
-The **FileInfo** endpoint returns metadata for a specified Excel file stored in Aspose Cloud storage. It provides the file name, size in bytes, and the raw file content encoded as a Base64 string.
-
-**Request**  
-- **Method:** `GET`  
-- **Endpoint:** `https://api.aspose.cloud/v3.0/cells/file/info/{path}` – replace `{path}` with the full storage path of the Excel file.  
-- **Headers:** `Authorization: Bearer <access_token>`
-
-**Sample cURL request**
-
-```bash
-curl -X GET "https://api.aspose.cloud/v3.0/cells/file/info/MyFolder/MyWorkbook.xlsx" \
-     -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
-```
-
-**Sample .NET request (Aspose.Cells Cloud SDK)**
-
-```csharp
-using Aspose.Cells.Cloud.SDK.Api;
-using Aspose.Cells.Cloud.SDK.Model.Requests;
-
-var config = new Configuration
-{
-    AppSid = "YOUR_APP_SID",
-    AppKey = "YOUR_APP_KEY"
-};
-var fileInfoApi = new FileInfoApi(config);
-var request = new GetFileInfoRequest
-{
-    Path = "MyFolder/MyWorkbook.xlsx"
-};
-var response = fileInfoApi.GetFileInfo(request);
-Console.WriteLine($"Name: {response.FileName}");
-Console.WriteLine($"Size: {response.FileSize} bytes");
-Console.WriteLine($"Content (Base64): {response.FileContent.Substring(0, 50)}...");
-```
 
 | Name            | Type   | Description                                         |
 | --------------- | ------ | --------------------------------------------------- |

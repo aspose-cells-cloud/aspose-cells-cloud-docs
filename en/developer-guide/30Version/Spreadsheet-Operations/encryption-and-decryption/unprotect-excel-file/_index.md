@@ -13,16 +13,19 @@ weight: 60
 ArticleTitle: "Unprotect Excel Workbook – Aspose.Cells Cloud API"
 ---
 
-Use this REST API to unprotect an Excel workbook.
-
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
-| **API**                  | **Type** | **Description**      | **Swagger Link**                                                                                      |
-| ------------------------ | -------- | -------------------- | ----------------------------------------------------------------------------------------------------- |
-| /cells/{name}/protection | DELETE   | Unprotect a document | [DeleteUnProtectWorkbook](https://apireference.aspose.cloud/cells/#/Workbook/DeleteUnProtectWorkbook) |
+Use this REST API to unprotect an Excel workbook.
+
+```bash
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/protection
+```
+
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 
 ### Path Parameters
 
@@ -69,7 +72,7 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=
 }
 ```
 
-### Error Responses
+### Https status Error Responses
 
 | HTTP Status | Code                | Description                                               |
 | ----------- | ------------------- | --------------------------------------------------------- |
@@ -78,11 +81,16 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/protection?folder=
 | 404         | NotFound            | Specified workbook not found in the given folder/storage. |
 | 500         | InternalServerError | Unexpected server error.                                  |
 
-Each error returns a JSON object containing `Code` and `Message`.
 
-The OpenAPI Specification defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## How to Use the DeleteUnProtectWorkbook API with SDKs
 
-## Cloud SDK Family
+### DeleteUnProtectWorkbook API Specification
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Protection/DeleteUnProtectWorkbook) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK simplifies integration and reduces boiler‑plate code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -13,11 +13,14 @@ Adds text content to a specified location within a spreadsheet. It requires an o
 
 ## **Excel API: PostAddTextContent**
 
-### **Endpoint**
-
 ```
 POST http://api.aspose.cloud/v3.0/cells/addtext
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 
 ### **Function Description**
 
@@ -35,13 +38,13 @@ This method safely appends new text to specified cells, supporting multiple inse
 - **Insert text before or after a specified number of characters**  
   Inserts text after a defined number of characters from the beginning or the end of each cell in the target range. Typical use cases include formatting codes, timestamps, or custom delimiters.
 
-### The request parameters of **postAddTextContent** API are
+### **Request Parameter**
 
 | Parameter Name | Type  | Location | Description                                                                 |
 | -------------- | ----- | -------- | --------------------------------------------------------------------------- |
 | addTextOptions | Class | Body     | Specifies the text content and the position where the text should be added. |
 
-### **Response Description**
+### **Response**
 
 ```json
 {
@@ -51,11 +54,23 @@ This method safely appends new text to specified cells, supporting multiple inse
 }
 ```
 
-## OpenAPI Specification
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the PostAddTextContent API with SDKs
+
+### PostAddTextContent API Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/PostAddTextContent) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the most efficient way to accelerate development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

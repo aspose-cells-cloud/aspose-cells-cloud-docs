@@ -18,13 +18,45 @@ This REST API assembles data **into** an Excel file.
 POST https://api.aspose.cloud/v3.0/cells/assembly
 ```
 
-The request parameters are:
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### Request Parameters
+
 
 | Parameter Name | Type   | Location                  | Description                                                            |
 | -------------- | ------ | ------------------------- | ---------------------------------------------------------------------- |
 | file           | file   | formData (multipart body) | The spreadsheet file to upload.                                        |
 | DataSource     | string | query string              | Identifier of the data source that provides the data for the assembly. |
 | format         | string | query string              | Desired output format (e.g., `xlsx`, `pdf`).                           |
+
+### **Response**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Filename" : "[file2 name]",
+    "Filesize" : [file size],
+    "FileContent" : "[Base64String]"
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostAssemble API with SDKs
+
+### PostAssemble API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostAssemble) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -43,8 +75,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/assembly?DataSource=ds&format=pdf" 
   -F 'template=@template.xlsx' \
   -F 'data=@data.json'
 ```
-
-> **Authentication** – Obtain a JWT token from `https://api.aspose.cloud/connect/token` using your client ID and secret, then include it in the `Authorization: Bearer <jwt token>` header. Tokens are valid for 1 hour and must be refreshed as needed.
 
 {{< /tab >}}
 
@@ -67,13 +97,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/assembly?DataSource=ds&format=pdf" 
 }
 ```
 
-> **Error handling** – If the request fails, the API returns a standard HTTP error code (e.g., 400 Bad Request, 401 Unauthorized, 500 Internal Server Error) together with a JSON payload that contains `Code`, `Message`, and optional `Details` fields.
-
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop against the API. An SDK abstracts low‑level details, allowing you to focus on your business logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

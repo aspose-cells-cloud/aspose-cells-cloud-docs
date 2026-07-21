@@ -15,14 +15,13 @@ This REST API unlocks Excel files.
 
 ## REST API
 
-**Prerequisites**  
-- A valid JWT authentication token.  
-- The Excel file must be uploaded as `multipart/form-data`.  
-- The request must be sent over **HTTPS**; plain HTTP is not supported.
-
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/unlock
 ```
+
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### The request parameters are
 
@@ -31,7 +30,16 @@ POST https://api.aspose.cloud/v3.0/cells/unlock
 | file           | file   | formData (HTTP body) | File to upload                             |
 | password       | string | query string         | Password to unlock the file (if protected) |
 
-**Response codes**
+### Response
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Http Status Codes**
 
 | Code | Meaning                               | Description |
 |------|---------------------------------------|-------------|
@@ -41,7 +49,9 @@ POST https://api.aspose.cloud/v3.0/cells/unlock
 | 403  | Forbidden                             | Incorrect password for the protected workbook. |
 | 500  | Internal Server Error                 | An unexpected error occurred on the server. |
 
-> **Note:** The API follows the standard error‑model defined in the OpenAPI specification. Consult the specification for detailed error payloads.
+## How to Use the PostUnlock API with SDKs
+
+### PostUnlock API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostUnlock) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -86,7 +96,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/unlock?password=123456" \
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

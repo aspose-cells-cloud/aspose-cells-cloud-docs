@@ -11,19 +11,21 @@ keywords: "Excel, Aspose.Cells Cloud, REST API, Spreadsheet, Get Text Items, Wor
 description: "Retrieve text items from an Excel workbook using the Aspose.Cells Cloud REST API. Available through SDKs for C#, Java, Python, PHP, Ruby, Go, Node.js, Perl, and Swift."
 ---
 
-This REST API reads a workbook’s **text items** in an Excel file.
-
-**Prerequisites:** To call this endpoint you must have a valid OAuth 2.0 access token, and the workbook file must be stored in Aspose Cloud storage (or supplied as a multipart request). Specify the target storage name and folder if the file is not in the default location.
 
 ## REST API
+
+This REST API reads a workbook’s **text items** in an Excel file.
 
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/textItems
 ```
 
-All API calls must be made over **HTTPS** to protect credentials.
+### **Security and Authentication**
 
-### The request parameters are
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+
+### Request parameters
 
 | Parameter Name | Type   | Location | Description                                            |
 | -------------- | ------ | -------- | ------------------------------------------------------ |
@@ -31,12 +33,48 @@ All API calls must be made over **HTTPS** to protect credentials.
 | folder         | string | query    | The folder path in storage where the workbook resides. |
 | storageName    | string | query    | The name of the storage service.                       |
 
-**Request Headers** (required):
+### **Response**
 
-```bash
-Authorization: Bearer <access_token>
-Accept: application/json
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
 ```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the GetWorkbookTextItems API with SDKs
+
+### GetWorkbookTextItems API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkbookTextItems) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -93,7 +131,7 @@ Typical HTTP response codes:
 | 404  | Not Found – workbook or resource not found. |
 | 500  | Internal Server Error – unexpected failure. |
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 This example uses API version **v3.0**; refer to the changelog for newer versions. Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

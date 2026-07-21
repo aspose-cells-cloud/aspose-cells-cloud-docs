@@ -18,7 +18,13 @@ This REST API searches for text in an Excel worksheet.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/findText
 ```
 
-### The request parameters are
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+
+### Request parameters
 
 | Parameter Name | Type   | Location | Description        |
 | -------------- | ------ | -------- | ------------------ |
@@ -27,6 +33,49 @@ POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/findText
 | text           | string | query    | Text to search.    |
 | folder         | string | query    | Document's folder. |
 | storageName    | string | query    | Storage name.      |
+
+### **Response**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostWorksheetTextSearch API with SDKs
+
+### PostWorksheetTextSearch API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/PostWorksheetTextSearch) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -73,7 +122,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/fi
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

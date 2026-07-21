@@ -19,6 +19,10 @@ This REST API searches for text within Excel files.
 POST https://api.aspose.cloud/v3.0/cells/search
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 ### Request parameters
 
 | Parameter Name | Type   | Location                | Description                                                    |
@@ -27,6 +31,48 @@ POST https://api.aspose.cloud/v3.0/cells/search
 | text           | string | query string            | The text string to search for.                                 |
 | password       | string | query string (optional) | Password for opening a protected workbook, if required.        |
 | sheetname      | string | query string (optional) | Name of the worksheet to limit the search to a specific sheet. |
+
+### **Response**
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "TextItems": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "TextItemList": [
+      {
+        "link": {
+          "Href": "string",
+          "Rel": "string",
+          "Title": "string",
+          "Type": "string"
+        },
+        "Text": "string"
+      }
+    ]
+  }
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the PostSearch API with SDKs
+
+### PostSearch API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostSearch) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -157,21 +203,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/search?text=1" \
   }
 ]
 ```
-
-**Response status codes**
-
-- **200 OK** – Successful search; returns a JSON array of matching cells (as shown above).  
-- **400 Bad Request** – Missing required parameters or invalid query values.  
-- **401 Unauthorized** – Invalid or missing JWT token.  
-- **403 Forbidden** – Insufficient permissions to access the workbook.  
-- **404 Not Found** – The specified file or worksheet does not exist.  
-- **500 Internal Server Error** – Unexpected server error.
-
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the most efficient way to accelerate development. An SDK abstracts low‑level details, allowing you to focus on your business logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

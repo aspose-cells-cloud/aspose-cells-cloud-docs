@@ -11,16 +11,16 @@ weight: 20
 ArticleTitle: "Encrypt Excel Workbook with Aspose.Cells Cloud API – cURL and SDK Examples"
 ---
 
-This REST API encrypts an Excel **workbook**.
-
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
 ## REST API
 
-| **API**                  | **Type** | **Description**        | **Swagger Link**                                                                              |
-| ------------------------ | -------- | ---------------------- | --------------------------------------------------------------------------------------------- |
-| /cells/{name}/encryption | POST     | Encrypt Excel document | [PostEncryptDocument](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) |
+This REST API encrypts an Excel **workbook**.
+
+```bash
+POST https://api.aspose.cloud/v3.0/cells/{name}/encryption
+```
+
+### Security and Authentication
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### **Query Parameters**
 
@@ -51,6 +51,29 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 | `Compatible`                      | Excel 97‑2003 compatible encryption (40‑bit). |
 | `EnhancedCryptographicProviderV1` | AES‑128 with SHA‑1 hash.                      |
 | `StrongCryptographicProvider`     | AES‑256 with SHA‑512 hash (strongest).        |
+
+### Response
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the PostEncryptDocument API with SDKs
+
+### PostEncryptDocument API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -93,7 +116,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

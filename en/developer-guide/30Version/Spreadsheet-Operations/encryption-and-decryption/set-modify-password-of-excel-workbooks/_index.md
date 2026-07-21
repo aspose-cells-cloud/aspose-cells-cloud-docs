@@ -17,13 +17,17 @@ This REST API **changes the write‑protection password** of an existing Excel w
 
 Updating the write‑protection password programmatically allows you to rotate or replace passwords without downloading the file. It is especially handy when managing secured workbooks stored in Aspose.Cells Cloud storage.
 
-**Prerequisites**: You must have a valid JWT access token and the workbook must already exist in the specified storage folder. For details on obtaining a token, see the [Authentication guide](/authentication/). To learn how to initially protect a workbook, refer to the [Protect an Excel File](/workbook/password/protect/) documentation.
 
 ## REST API
 
 ```bash
 PUT https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 ```
+
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 
 ### Request parameters
 
@@ -34,13 +38,28 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 | **folder**      | string | query       | Optional folder where the workbook is stored.    |
 | **storageName** | string | query       | Optional name of the storage service.            |
 
-### **Authentication**
+### Response
 
-– The API requires an OAuth 2.0 / JWT token. Include the token in the request header:
-
-```http
-Authorization: Bearer <jwt token>
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
 ```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the PutDocumentProtectFromChanges API with SDKs
+
+### PutDocumentProtectFromChanges API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PutDocumentProtectFromChanges) defines the publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
@@ -74,17 +93,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/writeProtectio
 
 {{< /tabs >}}
 
-### **Response codes**
-
-| HTTP Code | Meaning               | Description                        |
-| --------- | --------------------- | ---------------------------------- |
-| 200       | OK                    | Password changed successfully.     |
-| 400       | Bad Request           | Missing or invalid parameters.     |
-| 401       | Unauthorized          | Invalid or missing JWT token.      |
-| 404       | Not Found             | Specified workbook does not exist. |
-| 500       | Internal Server Error | Unexpected server‑side failure.    |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details, allowing you to focus on your business logic. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -19,7 +19,12 @@ The Aspose.Cells Cloud REST API splits multi‑sheet Excel workbooks into separa
 POST http://api.aspose.cloud/v3.0/cells/split
 ```
 
-The request parameters are:
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+
+### Request parameters
 
 | Parameter Name | Type   | Location  | Description                                                       |
 |----------------|--------|-----------|-------------------------------------------------------------------|
@@ -29,7 +34,44 @@ The request parameters are:
 | from           | integer| query     | Index of the first sheet to include (1‑based).                    |
 | to             | integer| query     | Index of the last sheet to include (inclusive).                  |
 
-**Prerequisites**: Before calling the endpoint you must obtain a valid JWT access token, ensure the target storage is accessible, and be aware of any applicable rate‑limit policies.
+### **Response**
+
+```json
+{
+    "Status" : "OK",
+    "Code" : 200,
+    "Files": [
+        {
+            "Filename" : "[file1 name]",
+            "Filesize" : [file size],
+            "FileContent" : "[Base64String]"
+        },        {
+            "Filename" : "[file2 name]",
+            "Filesize" : [file size],
+            "FileContent" : "[Base64String]"
+        },        {
+            "Filename" : "[file3 name]",
+            "Filesize" : [file size],
+            "FileContent" : "[Base64String]"
+        }
+    ]
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostSplit API with SDKs
+
+### PostSplit API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostSplit) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -84,7 +126,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/split?format=pdf" \
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

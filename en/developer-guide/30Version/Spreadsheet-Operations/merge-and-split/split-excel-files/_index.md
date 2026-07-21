@@ -10,29 +10,77 @@ description: "The Aspose.Cells Cloud REST API enables splitting an Excel workboo
 weight: 130
 ---
 
-This REST API splits an Excel **workbook** into multiple files in different formats.
-
 ## REST API
 
-| **API**             | **Type** | **Description**         | **Swagger Link**                                                                          |
-| ------------------- | -------- | ----------------------- | ----------------------------------------------------------------------------------------- |
-| /cells/{name}/split | POST     | Split an Excel workbook | [PostWorkbookSplit](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) |
+This REST API splits an Excel **workbook** into multiple files in different formats.
+
+```bash
+PUT https://api.aspose.cloud/v3.0/cells/{name}/split
+```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+
+### Request parameters
+
+| Parameter Name       | Type    | Location | Description                                | Required |
+| -------------------- | ------- | ---------|--------------------------------- | -------- |
+| files[]              | file    | formData | One or more Excel workbooks to be merged. Use `file1`, `file2`, … in the request. | Yes      |
+| format               | string  |  Query   | Desired output format for the split files. |  No       |
+| from                 | integer |  Query   | Starting worksheet index.                  | No       |
+| to                   | integer |  Query   | Ending worksheet index.                    | No       |
+| horizontalResolution | integer |  Query   | Image horizontal resolution.               | No       |
+| verticalResolution   | integer |  Query   | Image vertical resolution.                 | No       |
+| outFolder            | string  |  Query   | Output folder for the split files.         | No       |
+| splitNameRule        | string  |  Query   | Naming rule applied to split files.        | No       |
+| folder               | string  |  Query   | Folder containing the original workbook.   | No       |
+| storageName          | string  |  Query   | Name of the storage to use.                | No       |
+
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+    "Files": [
+      {
+        "Filename" : "[file1 name]",
+        "Filesize" : [file size],
+        "FileContent" : "[Base64String]"
+      },
+      {
+        "Filename" : "[file2 name]",
+        "Filesize" : [file size],
+        "FileContent" : "[Base64String]"
+      },
+      {
+        "Filename" : "[file3 name]",
+        "Filesize" : [file size],
+        "FileContent" : "[Base64String]"
+      }
+    ]
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostWorkbookSplit API with SDKs
+
+### PostWorkbookSplit API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostWorkbookSplit) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-### **Query Parameter**
-
-| Parameter Name       | Type    | Description                                |
-| -------------------- | ------- | ------------------------------------------ |
-| format               | string  | Desired output format for the split files. |
-| from                 | integer | Starting worksheet index.                  |
-| to                   | integer | Ending worksheet index.                    |
-| horizontalResolution | integer | Image horizontal resolution.               |
-| verticalResolution   | integer | Image vertical resolution.                 |
-| outFolder            | string  | Output folder for the split files.         |
-| splitNameRule        | string  | Naming rule applied to split files.        |
-| folder               | string  | Folder containing the original workbook.   |
-| storageName          | string  | Name of the storage to use.                |
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -72,7 +120,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/split?format=jpeg&fr
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

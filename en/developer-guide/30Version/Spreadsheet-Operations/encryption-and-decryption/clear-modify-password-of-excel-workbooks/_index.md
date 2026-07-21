@@ -15,17 +15,19 @@ weight: 110
 ArticleTitle: "Remove Write‑Protection (Password) from an Excel Workbook"
 ---
 
-This REST API removes **write‑protection (password)** from an Excel workbook, allowing you to **remove Excel password** protection programmatically.
-
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
+
+This REST API removes **write‑protection (password)** from an Excel workbook, allowing you to **remove Excel password** protection programmatically.
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 ```
+
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 
 ### **Request parameters**
 
@@ -34,6 +36,30 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 | `name`         | string | path     | The name of the Excel workbook.                   |
 | `folder`       | string | query    | The folder that contains the workbook (optional). |
 | `storageName`  | string | query    | The name of the storage service (optional).       |
+
+
+### Response
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the DeleteDocumentUnprotectFromChanges API with SDKs
+
+### DeleteDocumentUnprotectFromChanges API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/DeleteDocumentUnprotectFromChanges) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -66,18 +92,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xlsx/writeProtecti
 
 {{< /tabs >}}
 
-### Response Codes
 
-| HTTP Status | Meaning                               | Example JSON (error)                                        |
-| ----------- | ------------------------------------- | ----------------------------------------------------------- |
-| **200**     | Password removed successfully.        | `{ "Code":200, "Status":"OK" }`                             |
-| **401**     | Unauthorized – missing/invalid token. | `{ "Code":401, "Message":"Invalid access token." }`         |
-| **404**     | Workbook not found.                   | `{ "Code":404, "Message":"File not found." }`               |
-| **500**     | Internal server error.                | `{ "Code":500, "Message":"An unexpected error occurred." }` |
-
-When an error occurs, inspect the `Code` and `Message` fields to implement appropriate handling in your application.
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
