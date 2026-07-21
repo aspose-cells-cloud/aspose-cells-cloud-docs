@@ -10,15 +10,18 @@ description: "Retrieve the AutoFilter description from an Excel worksheet using 
 weight: 50
 ---
 
-This REST API retrieves the **AutoFilter** description from an Excel worksheet.
-
 ## REST API
+
+This REST API retrieves the **AutoFilter** description from an Excel worksheet.
 
 ```bash
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
 ```
+### **Security and Authentication**
 
-The request parameters are:
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### Request parameters
 
 | Parameter Name | Type   | Path/Query | Description |
 |----------------|--------|------------|-------------|
@@ -26,6 +29,132 @@ The request parameters are:
 | sheetName      | string | path       | Worksheet name. |
 | folder         | string | query      | Folder path in storage where the file is located. |
 | storageName    | string | query      | Name of the storage to use. |
+
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200,
+    AutoFilter": {
+    "link": {
+      "Href": "string",
+      "Rel": "string",
+      "Title": "string",
+      "Type": "string"
+    },
+    "FilterColumns": [
+      {
+        "FieldIndex": 0,
+        "FilterType": "string",
+        "MultipleFilters": {
+          "MatchBlank": true,
+          "MultipleFilterList": [
+            {}
+          ]
+        },
+        "ColorFilter": {
+          "FilterByFillColor": "string",
+          "Pattern": "string",
+          "Color": {
+            "Color": {
+              "A": 0,
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "ColorIndex": 0,
+            "IsShapeColor": true,
+            "ThemeColor": {
+              "ColorType": "string",
+              "Tint": 0
+            },
+            "Type": "string"
+          },
+          "ForegroundColorColor": {
+            "Color": {
+              "A": 0,
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "ColorIndex": 0,
+            "IsShapeColor": true,
+            "ThemeColor": {
+              "ColorType": "string",
+              "Tint": 0
+            },
+            "Type": "string"
+          },
+          "BackgroundColor": {
+            "Color": {
+              "A": 0,
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "ColorIndex": 0,
+            "IsShapeColor": true,
+            "ThemeColor": {
+              "ColorType": "string",
+              "Tint": 0
+            },
+            "Type": "string"
+          }
+        },
+        "CustomFilters": [
+          {
+            "FilterOperatorType": "string"
+          }
+        ],
+        "DynamicFilter": {
+          "DynamicFilterType": "string"
+        },
+        "IconFilter": {
+          "IconId": 0,
+          "IconSetType": "string"
+        },
+        "Top10Filter": {
+          "Criteria": "string",
+          "IsPercent": true,
+          "IsTop": true,
+          "Items": 0
+        },
+        "Visibledropdown": "string"
+      }
+    ],
+    "Range": "string",
+    "Sorter": {
+      "CaseSensitive": true,
+      "HasHeaders": true,
+      "KeyList": [
+        {
+          "Key": 0,
+          "SortOrder": "string",
+          "CustomList": "string"
+        }
+      ],
+      "SortLeftToRight": true
+    }
+  }
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the GetWorksheetAutoFilter API with SDKs
+
+### GetWorksheetAutoFilter API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/GetWorksheetAutoFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 

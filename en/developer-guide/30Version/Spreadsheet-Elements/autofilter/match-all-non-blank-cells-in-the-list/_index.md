@@ -11,16 +11,17 @@ ArticleTitle: "Match all non‑blank cells in an Excel worksheet using Aspose.Ce
 weight: 100
 ---
 
-This REST API matches all non‑blank cells in the AutoFilter list on an Excel worksheet.
-
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
 ## REST API
+
+This REST API matches all non‑blank cells in the AutoFilter list on an Excel worksheet.
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchNonBlanks
 ```
+
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### Request Parameters
 
@@ -31,6 +32,30 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilte
 | fieldIndex     | integer | query    | Zero‑based index of the column to which the filter is applied. |
 | folder         | string  | query    | _(Optional)_ Folder path where the file is stored.             |
 | storageName    | string  | query    | _(Optional)_ Name of the storage service to use.               |
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostWorksheetMatchNonBlanks API with SDKs
+
+### PostWorksheetMatchNonBlanks API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchNonBlanks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -63,23 +88,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 
 {{< /tabs >}}
 
-#### Response Schema
-
-| Field  | Type    | Description                               |
-| ------ | ------- | ----------------------------------------- |
-| Code   | integer | HTTP status code (e.g., `200`).           |
-| Status | string  | Textual description of the result (`OK`). |
-
-#### Possible Error Responses
-
-| HTTP Code | Reason                | Example Message                         |
-| --------- | --------------------- | --------------------------------------- |
-| 400       | Bad Request           | `Invalid fieldIndex parameter.`         |
-| 401       | Unauthorized          | `Authentication failed. Invalid token.` |
-| 404       | Not Found             | `File or worksheet not found.`          |
-| 500       | Internal Server Error | `Unexpected error on the server.`       |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -11,19 +11,23 @@ weight: 65
 ArticleTitle: "Add an Icon Filter to an Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
 
-This REST API adds an **icon filter** to an Excel worksheet using the **Aspose.Cells Cloud REST API**.
+## REST API
 
-**Prerequisites:** To call this endpoint you must have a valid OAuth/JWT access token obtained from Aspose Cloud authentication service, and the target workbook must reside in a storage location accessible to the API (default Aspose Cloud storage or a specified `storageName`). Ensure the `folder` path is correct and the workbook is uploaded prior to applying the filter.
+This REST API adds an **icon filter** to an Excel worksheet using the **Aspose.Cells Cloud REST API**.
 
 **Background:** An icon filter applies a visual icon set to cells based on their values, allowing quick visual analysis of data trends. Common use‑cases include highlighting performance metrics, status indicators, or categorizing values with traffic‑light icons directly within Excel worksheets.
 
-## REST API
 
 ```bash
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/iconFilter
 ```
 
-The request parameters are listed below:
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+
+### Request Parameters:
 
 | Parameter Name | Type    | Location | Description |
 |----------------|---------|----------|-------------|
@@ -37,6 +41,30 @@ The request parameters are listed below:
 | refresh        | boolean | Query    | Indicates whether the filter should be refreshed after applying (`true` or `false`). |
 | folder         | string  | Query    | The folder that contains the original workbook. |
 | storageName    | string  | Query    | The name of the storage where the workbook resides. |
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PutWorksheetIconFilter API with SDKs
+
+### PutWorksheetIconFilter API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetIconFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -78,7 +106,7 @@ Possible response status codes:
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

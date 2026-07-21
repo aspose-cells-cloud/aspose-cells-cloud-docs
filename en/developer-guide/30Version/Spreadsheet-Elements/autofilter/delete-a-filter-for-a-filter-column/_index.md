@@ -10,16 +10,19 @@ description: "Learn how to delete an AutoFilter from an Excel worksheet using As
 weight: 100
 ---
 
-This REST API deletes an **AutoFilter** on an Excel worksheet.  
-SDKs are available for multiple development languages, including Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift.
-
 ## REST API
+
+This REST API deletes an **AutoFilter** on an Excel worksheet. 
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
 ```
 
-The request parameters are:
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### Request parameters
 
 | Parameter Name           | Type    | Location | Required? | Description                                                                              |
 | ------------------------ | ------- | -------- | --------- | ---------------------------------------------------------------------------------------- |
@@ -39,14 +42,32 @@ The request parameters are:
 | **folder**               | string  | Query    | No        | Original workbook folder.                                                                |
 | **storageName**          | string  | Query    | No        | Storage name.                                                                            |
 
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the DeleteWorksheetFilter API with SDKs
+
+### DeleteWorksheetFilter API Specification
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-### Step‑by‑step usage flow
-
-1. **Obtain a JWT token** via the OAuth 2.0 authentication endpoint.
-2. **Build the request URL** by replacing `{name}` and `{sheetName}` and adding required query parameters (at minimum `fieldIndex`).
-3. **Send the DELETE request** with the `Authorization` header.
-4. **Verify the response** – a successful call returns HTTP 200 with a JSON body indicating success.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API using cURL.
 
@@ -77,16 +98,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 
 {{< /tabs >}}
 
-## Error Handling
-
-| HTTP Status | Description                                                        | Example Response Body                                         |
-| ----------- | ------------------------------------------------------------------ | ------------------------------------------------------------- |
-| **400**     | Bad request – missing required fields or invalid parameter values. | `{ "Code": 400, "Message": "Invalid fieldIndex value." }`     |
-| **401**     | Unauthorized – missing or invalid JWT token.                       | `{ "Code": 401, "Message": "Authentication failed." }`        |
-| **404**     | Not found – workbook, worksheet, or filter does not exist.         | `{ "Code": 404, "Message": "Worksheet not found." }`          |
-| **500**     | Internal server error – unexpected condition on the server side.   | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the most efficient way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -13,18 +13,18 @@ weight: 65
 ArticleTitle: "Add a dynamic filter in an Excel worksheet using Aspose.Cells Cloud API"
 ---
 
-This REST API adds a **dynamic filter** to an Excel worksheet.
-
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token‑based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-Before calling the endpoint, ensure you have obtained a JWT token from the `/connect/token` endpoint and that the target workbook is stored in the appropriate folder or storage.
-
 ## REST API
+
+This REST API adds a **dynamic filter** to an Excel worksheet.
 
 ```bash
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dynamicFilter
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 
 ### Request parameters
 
@@ -49,6 +49,30 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
 - `NextWeek` – rows with dates falling in the next calendar week.  
 - `LastMonth` – rows with dates from the previous month.  
 - `ThisYear` – rows with dates occurring in the current year.
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PutWorksheetDynamicFilter API with SDKs
+
+### PutWorksheetDynamicFilter API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDynamicFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -78,21 +102,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 }
 ```
 
-_Error responses_  
-The API can also return the following error codes:
-
-| HTTP Status | Description                             | Sample Body                                            |
-| ----------- | --------------------------------------- | ------------------------------------------------------ |
-| 400         | Invalid request parameters              | `{ "Code":400, "Message":"Invalid parameter value." }` |
-| 401         | Unauthorized – missing or invalid token | `{ "Code":401, "Message":"Authentication failed." }`   |
-| 404         | Resource not found (e.g., workbook)     | `{ "Code":404, "Message":"File not found." }`          |
-| 500         | Internal server error                   | `{ "Code":500, "Message":"Unexpected error." }`        |
-
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the most efficient way to develop. An SDK abstracts low‑level details so you can focus on your project logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

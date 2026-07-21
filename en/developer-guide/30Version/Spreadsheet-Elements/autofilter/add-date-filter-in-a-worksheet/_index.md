@@ -12,17 +12,20 @@ description: "Learn how to add a date filter to an Excel worksheet using Aspose.
 weight: 65
 ---
 
-This REST API adds a **date filter** to an Excel worksheet.
-
 ## REST API
+
+This REST API adds a **date filter** to an Excel worksheet.
 
 ```bash
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 ### Request parameters
 
-The request parameters are listed below:
 
 | Parameter Name           | Type    | Location | Description                                                                                                                                                     |
 | ------------------------ | ------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -41,6 +44,30 @@ The request parameters are listed below:
 | **refresh**              | boolean | Query    | Refresh the filter after applying (`true` or `false`).                                                                                                          |
 | **folder**               | string  | Query    | Folder path of the original workbook.                                                                                                                           |
 | **storageName**          | string  | Query    | Name of the storage service.                                                                                                                                    |
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PutWorksheetDateFilter API with SDKs
+
+### PutWorksheetDateFilter API Specification
+
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -73,21 +100,9 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 
 {{< /tabs >}}
 
-### Error responses
 
-| HTTP Status               | Code | Message                               | Description                                          |
-| ------------------------- | ---- | ------------------------------------- | ---------------------------------------------------- |
-| 400 Bad Request           | 400  | Invalid range format. Expected A1:B1. | The `range` query parameter is malformed or missing. |
-| 401 Unauthorized          | 401  | Access token is missing or invalid.   | Authentication failed; obtain a valid JWT token.     |
-| 404 Not Found             | 404  | Workbook or worksheet not found.      | The specified `name` or `sheetName` does not exist.  |
-| 500 Internal Server Error | 500  | Unexpected server error.              | An unhandled exception occurred on the server.       |
 
-The successful response contains two fields:
-
-- **Code** – HTTP status code returned by the API (200 for success).
-- **Status** – Textual description of the result.
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

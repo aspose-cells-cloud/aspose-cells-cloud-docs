@@ -12,17 +12,21 @@ description: "Learn how to apply a Top 10 AutoFilter to an Excel worksheet usi
 weight: 65
 ---
 
-This REST API filters the **Top 10** items in a list.
 
 ## REST API
 
-**Prerequisites:** Before calling this endpoint, ensure you have a valid Aspose Cloud JWT token, the target workbook is uploaded to your Aspose Cloud storage, and the specified worksheet exists.
+
+This REST API filters the **Top 10** items in a list.
 
 ```bash
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10
 ```
 
-The request parameters are:
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### Request parameters
 
 | Parameter Name  | Type    | Location | Required | Default | Description                                                                 |
 | --------------- | ------- | -------- | -------- | ------- | --------------------------------------------------------------------------- |
@@ -37,6 +41,31 @@ The request parameters are:
 | **refresh**     | boolean | query    | No       | `false` | `true` to refresh the filter after applying it.                             |
 | **folder**      | string  | query    | No       | —       | The folder in storage where the Excel file is located.                      |
 | **storageName** | string  | query    | No       | —       | The name of the Aspose Cloud storage.                                       |
+
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PutWorksheetFilterTop10 API with SDKs
+
+### PutWorksheetFilterTop10 API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilterTop10) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -69,28 +98,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFil
 
 {{< /tabs >}}
 
-**Error Handling Example:** If the request fails, the API returns a JSON payload with `Code` and `Message`. For instance, a 404 response looks like:
-
-```json
-{
-  "Code": 404,
-  "Message": "File or worksheet not found."
-}
-```
-
-For more filtering options, see the [Add Filter](/autofilter/add-filter/) and [Delete Filter](/autofilter/delete-filter/) documentation.
-
-### Common HTTP Status Codes
-
-| Code | Meaning               | Suggested Fix                                                        |
-| ---- | --------------------- | -------------------------------------------------------------------- |
-| 200  | Success               | –                                                                    |
-| 400  | Bad Request           | Verify required parameters and their formats.                        |
-| 401  | Unauthorized          | Provide a valid JWT token; check token expiration.                   |
-| 404  | Not Found             | Ensure the file and worksheet exist in the specified folder/storage. |
-| 500  | Internal Server Error | Retry later or contact Aspose support with the request ID.           |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -148,7 +156,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< /tabs >}}
 
----
-
-_Author: Aspose.Cells Cloud product team (10+ years of spreadsheet automation experience)_  
-_Last updated: 2024‑12‑01_

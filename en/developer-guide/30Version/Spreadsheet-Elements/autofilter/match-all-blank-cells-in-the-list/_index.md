@@ -10,13 +10,19 @@ description: "Learn how to use Aspose.Cells Cloud REST API to filter and match a
 weight: 100
 ---
 
-This REST API matches all **blank cells** in the filter list on an Excel worksheet. **Prerequisite:** You must provide a valid JWT bearer token and ensure the workbook is stored in your Aspose Cloud storage.
-
 ## REST API
+
+This REST API matches all **blank cells** in the filter list on an Excel worksheet.
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchBlanks
 ```
+
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 
 ### Request parameters
 
@@ -28,7 +34,29 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilte
 | folder         | string  | query    | The folder path in storage where the workbook is located.              |
 | storageName    | string  | query    | The name of the Aspose Cloud storage.                                   |
 
-**Notes:** The endpoint supports only .xlsx files and the maximum worksheet size is limited by the service plan.
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostWorksheetMatchBlanks API with SDKs
+
+### PostWorksheetMatchBlanks API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PostWorksheetMatchBlanks) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -57,7 +85,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK abstracts low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -98,5 +126,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-
-*Last updated: 2026‑07‑06*

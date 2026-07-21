@@ -11,15 +11,19 @@ weight: 60
 ArticleTitle: "Add a Filter to an Excel Worksheet using Aspose.Cells Cloud"
 ---
 
-This REST API adds a filter for a specific column on an Excel worksheet.
-
-**Prerequisites**: You must obtain a valid JWT Bearer token and include it in the `Authorization` header of the request.
-
 ## REST API
+
+
+This REST API adds a filter for a specific column on an Excel worksheet.
 
 ```bash
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filter
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 
 ### Request parameters
 
@@ -34,6 +38,31 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
 | refresh        | boolean | Query    | Set to `true` to refresh the filter after applying; otherwise `false`. |
 | folder         | string  | Query    | The folder where the original workbook is stored. |
 | storageName    | string  | Query    | The name of the storage service. |
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PutWorksheetFilter API with SDKs
+
+### PutWorksheetFilter API Specification
+
 
 The <a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetFilter" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -75,7 +104,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -133,4 +162,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< /tabs >}}
 
-For more details on related AutoFilter operations, see the documentation for adding color filters, deleting filters, and applying multiple criteria.

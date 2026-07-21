@@ -11,20 +11,20 @@ weight: 65
 ArticleTitle: "Add a Color Filter in an Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
-This REST API adds a **color filter** to an Excel worksheet.
-
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
 ## REST API
+
+This REST API adds a **color filter** to an Excel worksheet.
 
 ```bash
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter
 ```
 
-**Prerequisites** – The endpoint requires OAuth 2.0 authentication. Obtain a JWT token as described in the Aspose.Cells Cloud authentication guide and pass it in the request header as `Authorization: Bearer <jwt token>`. The API version is **v3.0**, and the workbook must be stored in Aspose Cloud Storage (or another supported storage) before the call.
+## Security and Authentication
 
-The request parameters are:
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+### Request Parameters:
+
 
 | Parameter Name | Type    | Location | Description                                                                 |
 |----------------|---------|----------|-----------------------------------------------------------------------------|
@@ -45,6 +45,30 @@ The request parameters are:
 | Pattern           | string | Filter pattern (e.g., `"Solid"`).                                             | Yes      |
 | ForegroundColor   | object | Defines the foreground color. Contains sub‑properties such as `Color`, `ColorIndex`, `IsShapeColor`, `ThemeColor`, and `Type`. | No |
 | BackgroundColor   | object | Defines the background color. Same sub‑properties as `ForegroundColor`.      | No |
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PutWorksheetColorFilter API with SDKs
+
+### PutWorksheetColorFilter API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetColorFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -78,36 +102,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 
 {{< /tabs >}}
 
-**Response Status Codes**
-
-| Code | Description |
-|------|-------------|
-| 200 | OK – The color filter was applied successfully. |
-| 400 | Bad Request – Missing or invalid parameters. |
-| 401 | Unauthorized – Authentication failed or token missing. |
-| 403 | Forbidden – Insufficient permissions to modify the workbook. |
-| 404 | Not Found – Specified workbook, worksheet, or range does not exist. |
-| 500 | Internal Server Error – Unexpected server error. |
-
-**Error handling** – The API may return standard error objects. Example responses:
-
-```json
-// 400 Bad Request – missing or invalid parameters
-{
-  "Code": 400,
-  "Message": "Invalid request parameters."
-}
-```
-
-```json
-// 401 Unauthorized – authentication failed or token missing
-{
-  "Code": 401,
-  "Message": "Authentication failed. Please provide a valid JWT token."
-}
-```
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK abstracts low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

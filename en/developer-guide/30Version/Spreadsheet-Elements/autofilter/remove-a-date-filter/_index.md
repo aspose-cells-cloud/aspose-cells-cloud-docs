@@ -12,15 +12,20 @@ keywords: "Aspose.Cells, delete date filter, Excel AutoFilter, REST API, SDK"
 description: "Learn how to delete a date filter from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, HTTPS cURL example, response payload, and SDK code samples."
 ---
 
-This REST API deletes a date filter on an Excel worksheet.
 
 ## REST API
+
+This REST API deletes a date filter on an Excel worksheet.
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 ```
 
-The request parameters are:
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+### Request Parameters
 
 | Parameter Name       | Type    | Location | Description                                                                                     |
 |----------------------|---------|----------|-------------------------------------------------------------------------------------------------|
@@ -36,6 +41,31 @@ The request parameters are:
 | second               | integer | query    | Second component of the filter (default 0).                                                     |
 | folder               | string  | query    | Folder path in storage where the file is located.                                               |
 | storageName          | string  | query    | Name of the Aspose Cloud storage.                                                               |
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the DeleteWorksheetDateFilter API with SDKs
+
+### DeleteWorksheetDateFilter API Specification
+
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetDateFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -68,7 +98,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
