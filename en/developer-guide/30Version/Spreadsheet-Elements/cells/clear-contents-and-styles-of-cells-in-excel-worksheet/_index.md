@@ -15,18 +15,20 @@ description: "Learn how to use Aspose.Cells Cloud REST API to clear cell content
 ArticleTitle: "Clear Contents and Styles of Cells in an Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
-This REST API clears the contents of cells in an Excel file.
+
 
 ## REST API
 
-**Prerequisites**  
-To call this endpoint you need a valid Aspose Cloud **JWT bearer token** and appropriate permissions for the target workbook.
+This REST API clears the contents of cells in an Excel file.
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
 ```
 
-The request parameters are:
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 
 | Parameter Name | Type    | Location | Description                                   |
 |----------------|---------|----------|-----------------------------------------------|
@@ -40,15 +42,30 @@ The request parameters are:
 | folder         | string  | query    | Folder containing the workbook.               |
 | storageName    | string  | query    | Name of the storage location.                 |
 
-**Possible HTTP response codes**
 
-| Code | Description |
-|------|-------------|
-| 200  | Operation completed successfully. |
-| 400  | Bad request – missing or invalid parameters. |
-| 401  | Unauthorized – invalid or missing JWT token. |
-| 404  | Not found – workbook or worksheet does not exist. |
-| 500  | Internal server error – unexpected failure on the server side. |
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostClearContents API with SDKs
+
+### PostClearContents API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostClearContents) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
@@ -81,7 +98,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/c
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

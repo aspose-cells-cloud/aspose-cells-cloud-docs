@@ -7,15 +7,20 @@ keywords: "Aspose.Cells, Excel, REST API, cell style, spreadsheet, cloud SDK"
 description: "Retrieve the style of a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL example, response schema, possible HTTP status codes, and SDK snippets."
 ---
 
-Use this REST API to retrieve the **style** of a cell in an Excel worksheet.
-
 ## REST API
+
+Use this REST API to retrieve the **style** of a cell in an Excel worksheet.
 
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
 ```
 
-The request parameters are:
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+### Request Parameters
+
 
 | Parameter Name | Type   | Location | Description                         |
 | -------------- | ------ | -------- | ----------------------------------- |
@@ -25,18 +30,114 @@ The request parameters are:
 | folder         | string | query    | The folder that contains the file.  |
 | storageName    | string | query    | The name of the storage to use.     |
 
-**Authentication**  
-The API requires a valid OAuth 2.0 access token (JWT) passed in the `Authorization` header as `Bearer <jwt token>`.
 
-**Possible HTTP responses**
+### **Response**
 
-| Code | Description |
-| ---- | ----------- |
-| 200 | OK – style retrieved successfully. |
-| 400 | Bad Request – invalid parameters. |
-| 401 | Unauthorized – authentication failed or token missing. |
-| 404 | Not Found – workbook, worksheet, or cell does not exist. |
-| 500 | Internal Server Error – unexpected server error. |
+```json
+{
+  "Style": {
+    "Font": {
+      "Color": { "A": 255, "R": 5, "G": 99, "B": 193 },
+      "DoubleSize": 11,
+      "IsBold": false,
+      "IsItalic": false,
+      "IsStrikeout": false,
+      "IsSubscript": false,
+      "IsSuperscript": false,
+      "Name": "Calibri",
+      "Size": 11,
+      "Underline": "Single"
+    },
+    "Name": null,
+    "CultureCustom": "General",
+    "Custom": "",
+    "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+    "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+    "IsFormulaHidden": false,
+    "IsDateTime": false,
+    "IsTextWrapped": false,
+    "IsGradient": false,
+    "IsLocked": true,
+    "IsPercent": false,
+    "ShrinkToFit": false,
+    "IndentLevel": 0,
+    "Number": 0,
+    "RotationAngle": 0,
+    "Pattern": "None",
+    "TextDirection": "Context",
+    "VerticalAlignment": "Bottom",
+    "HorizontalAlignment": "General",
+    "BorderCollection": [
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "BottomBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "DiagonalDown"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "DiagonalUp"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "Horizontal"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "LeftBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "RightBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "TopBorder"
+      },
+      {
+        "LineStyle": "None",
+        "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+        "BorderType": "Vertical"
+      }
+    ],
+    "BackgroundThemeColor": null,
+    "ForegroundThemeColor": null,
+    "link": {
+      "Href": "/test.xlsx/worksheets/Sheet1/cells/a1/style",
+      "Rel": "self",
+      "Title": null,
+      "Type": null
+    }
+  },
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the GetWorksheetCellStyle API with SDKs
+
+### GetWorksheetCellStyle API Specification
+
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCellStyle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -176,12 +277,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/a
 | Style.ForegroundColor    | object  | RGBA values for the cell foreground.                                      |
 | …                        | …       | _(Other fields follow the same pattern as defined in the API reference.)_ |
 
-## Related Operations
-
-- **Update Multiple Cells Style** – Modify the style of several cells in a single request.
-- **Set Value of a Cell** – Write data to a specific cell.
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

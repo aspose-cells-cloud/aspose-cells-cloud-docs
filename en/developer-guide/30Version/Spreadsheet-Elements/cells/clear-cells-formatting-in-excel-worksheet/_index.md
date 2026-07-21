@@ -7,15 +7,18 @@ keywords: "Aspose.Cells Cloud, Excel, Clear Cell Formatting, REST API, C#, Java,
 description: "Use Aspose.Cells Cloud REST API to clear cell formatting in an Excel worksheet. Includes request details, a cURL example, and SDK code snippets for multiple languages."
 ---
 
-This REST API clears cell formatting in an Excel file.
-
 ## REST API
+
+This REST API clears cell formatting in an Excel file.
 
 ```bash
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
 ```
 
-The request parameters are:
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 
 | Parameter Name | Type    | Location | Description                           |
 | -------------- | ------- | -------- | ------------------------------------- |
@@ -28,6 +31,31 @@ The request parameters are:
 | endColumn      | integer | query    | Zero‑based index of the end column.   |
 | folder         | string  | query    | Folder that contains the workbook.    |
 | storageName    | string  | query    | Name of the storage location.         |
+
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostClearFormats API with SDKs
+
+### PostClearFormats API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostClearFormats) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -60,7 +88,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/c
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

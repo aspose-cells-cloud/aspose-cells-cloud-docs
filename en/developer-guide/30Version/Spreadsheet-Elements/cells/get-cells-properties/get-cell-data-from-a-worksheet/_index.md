@@ -7,9 +7,21 @@ keywords: "Aspose.Cells Cloud, get cell data, Excel API, REST API, cell value, w
 description: "Retrieve a single cell’s value, type, and style from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL, SDK examples, parameters, and error handling."
 ---
 
+## REST API
+
 This REST API retrieves a cell from an Excel worksheet when the **`cellOrMethodName`** parameter specifies a cell name (an A1‑style address such as `A3`).
 
-**Request parameters**
+
+```bash
+GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}
+```
+
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+### Request Parameters
+
 
 | Parameter          | Type   | Required | Description                                                                                                                              |
 | ------------------ | ------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -21,10 +33,15 @@ This REST API retrieves a cell from an Excel worksheet when the **`cellOrMethodN
 | `fileName`         | string | Yes      | Name of the Excel file (e.g., `myWorkbook.xlsx`).                                                                                        |
 | `sheetName`        | string | Yes      | Name of the worksheet that contains the target cell (e.g., `Sheet1`).                                                                    |
 
----
 
-### cURL Example
+## How to Use the GetWorksheetCell API with SDKs
 
+### GetWorksheetCell API Specification
+
+
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
 {{< tab tabNum="11" >}}
@@ -74,7 +91,7 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Shee
 
 {{< /tabs >}}
 
-- **Cloud SDKs**
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop against the API. An SDK handles low‑level details, allowing you to focus on your project logic. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of **Aspose.Cells Cloud** SDKs.
 

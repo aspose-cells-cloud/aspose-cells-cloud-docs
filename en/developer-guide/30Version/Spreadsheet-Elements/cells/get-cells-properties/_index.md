@@ -15,7 +15,12 @@ This REST API demonstrates how to retrieve a specific cell in an Excel file.
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellOrMethodName}
 ```
 
-The request parameters are:
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+### Request Parameters
+
 
 | Parameter Name       | Type   | Location | Description                                                                                                                                                                           |
 | -------------------- | ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

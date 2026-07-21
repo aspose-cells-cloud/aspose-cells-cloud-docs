@@ -15,17 +15,20 @@ description: "Learn how to update the style of a specific cell in an Excel works
 ArticleTitle: "Change Cell Style in Excel Worksheet – Aspose.Cells Cloud API Guide"
 ---
 
-This REST API updates the **cell style** of an Excel file.
-
-**Prerequisites**: To use this endpoint you must have a valid Aspose Cloud account, generate an OAuth 2.0 access token, and ensure the target workbook is uploaded to a storage location that you specify via the `folder` and `storageName` parameters.
 
 ## REST API
+
+This REST API updates the **cell style** of an Excel file.
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
 ```
 
-The request parameters are:
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+### Request Parameters
 
 | Parameter Name | Type   | Location | Description                                    |
 |----------------|--------|----------|------------------------------------------------|
@@ -35,6 +38,32 @@ The request parameters are:
 | style          | object | body     | JSON object that defines the style settings to apply to the cell. |
 | folder         | string | query    | The folder that contains the workbook.         |
 | storageName    | string | query    | The storage name where the workbook is stored. |
+
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostUpdateWorksheetCellStyle API with SDKs
+
+### PostUpdateWorksheetCellStyle API Specification
+
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetCellStyle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -115,21 +144,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test_cells.xlsx/worksheets/Sheet3/c
 }
 ```
 
-**Possible HTTP status codes**
-
-| Status Code | Description                                      |
-|------------|--------------------------------------------------|
-| 200        | Style updated successfully                       |
-| 400        | Bad request – invalid JSON or parameters         |
-| 401        | Unauthorized – invalid or missing token          |
-| 404        | Not found – workbook or worksheet does not exist |
-| 500        | Server error – unexpected condition              |
-
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop against the API. An SDK abstracts low‑level details so you can focus on your business logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

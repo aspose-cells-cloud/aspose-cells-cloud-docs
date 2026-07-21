@@ -8,15 +8,19 @@ description: "Learn how to apply rich text formatting to a specific Excel cell u
 ArticleTitle: "Apply Rich Text Formatting to a Cell using Aspose.Cells Cloud API"
 ---
 
-This REST API applies **rich text formatting** to a cell in an Excel file.
-
 ## REST API
+
+This REST API applies **rich text formatting** to a cell in an Excel file.
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/characters
 ```
 
-The request parameters are:
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+### Request parameters
 
 | Parameter Name | Type   | Location                     | Description                                                                 |
 |----------------|--------|------------------------------|-----------------------------------------------------------------------------|
@@ -27,21 +31,29 @@ The request parameters are:
 | folder         | string | query                        | The folder in storage where the Excel file is located.                     |
 | storageName    | string | query                        | The name of the storage service (if a custom storage is used).            |
 
-**Prerequisites**  
-- A valid Aspose Cloud authentication token (JWT) must be included in the `Authorization` header.  
-- The target Excel file must already exist in the specified storage folder.  
+### **Response**
 
-**Error Codes**  
-| HTTP Status | Meaning                                 |
-|-------------|------------------------------------------|
-| 200         | Request succeeded.                       |
-| 400         | Bad request – missing or invalid parameters. |
-| 401         | Unauthorized – invalid or missing token. |
-| 404         | Not found – the specified file or worksheet does not exist. |
-| 500         | Internal server error – unexpected condition. |
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
 
-**Rate Limiting**  
-The API enforces a default limit of 100 requests per minute per account. Exceeding this limit returns a `429 Too Many Requests` response.
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PostCellCharacters API with SDKs
+
+### PostCellCharacters API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostCellCharacters) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -75,7 +87,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/cells/
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -132,5 +144,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-
-_Last updated: 2026-07-08_
