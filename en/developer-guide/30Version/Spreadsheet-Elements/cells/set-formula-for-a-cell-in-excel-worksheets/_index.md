@@ -15,8 +15,9 @@ This REST API sets a **cell formula** in an Excel file.
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
 ```
 
-**Prerequisites**  
-Before calling this endpoint you must obtain an OAuth2 access token and include it in the `Authorization` header. The workbook must already exist in the selected storage (or be uploaded beforehand).
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 **Request parameters**
 
@@ -31,6 +32,61 @@ Before calling this endpoint you must obtain an OAuth2 access token and include 
 | folder         | string | query    | N        | Folder that contains the document.       |
 | storageName    | string | query    | N        | Name of the storage service.             |
 
+## **Response**
+
+Return CellResponse.
+
+- **Response Fields Overview**
+
+| Field           | Type    | Description                                           |
+| --------------- | ------- | ----------------------------------------------------- |
+| `Name`          | string  | Address of the cell (e.g., `F341`).                   |
+| `Row`           | integer | Zero‑based row index.                                 |
+| `Column`        | integer | Zero‑based column index.                              |
+| `Value`         | string  | The cell’s displayed value.                           |
+| `Type`          | string  | Data type of the cell (e.g., `IsString`).             |
+| `Formula`       | string  | Formula text if the cell contains a formula.          |
+| `IsFormula`     | bool    | Indicates whether the cell contains a formula.        |
+| `IsMerged`      | bool    | Indicates whether the cell is part of a merged range. |
+| `IsArrayHeader` | bool    | Indicates whether the cell is an array header.        |
+| `IsInArray`     | bool    | Indicates whether the cell belongs to an array.       |
+| `IsErrorValue`  | bool    | Indicates whether the cell contains an error value.   |
+| `IsInTable`     | bool    | Indicates whether the cell is inside a table.         |
+| `IsStyleSet`    | bool    | Indicates whether a style is applied to the cell.     |
+| `HtmlString`    | string  | HTML‑encoded representation of the cell’s value.      |
+| `Style.link`    | object  | Hyperlink to the style resource.                      |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Cell":{
+    "Name":"A1",
+    "Row": 0,
+    "Column":0,
+    "Value": "",
+    "Type":"String",
+    "Formula" : "=Sum(A2:A15)",
+    ...
+  }
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the PostWorksheetCellSetValue API with SDKs
+
+### PostWorksheetCellSetValue API Specification
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 Use the cURL command‑line tool to call Aspose.Cells web services.
@@ -40,7 +96,7 @@ Use the cURL command‑line tool to call Aspose.Cells web services.
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?value=1234&type=string&formula=sum(A1,A2)" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A1?value=1234&type=string&formula=sum(A2:A15)" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -54,7 +110,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/c
 ```json
 {
   "Code": 200,
-  "Status": "OK"
+  "Status": "OK",
+  "Cell":{
+    "Name":"A1",
+    "Row": 0,
+    "Column":0,
+    "Value": "",
+    "Type":"String",
+    "Formula" : "=Sum(A2:A15)",
+    ...
+  }
 }
 ```
 
@@ -62,17 +127,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/c
 
 {{< /tabs >}}
 
-**Error handling**  
-The API can return the following status codes:
-
-| Code | Meaning                | Example JSON payload |
-|------|------------------------|----------------------|
-| 400  | Bad Request – missing or invalid parameters | `{ "Code": 400, "Message": "The 'formula' parameter is required." }` |
-| 401  | Unauthorized – invalid or missing token | `{ "Code": 401, "Message": "Access token is missing or invalid." }` |
-| 404  | Not Found – workbook or worksheet does not exist | `{ "Code": 404, "Message": "File not found." }` |
-| 500  | Internal Server Error – unexpected condition | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

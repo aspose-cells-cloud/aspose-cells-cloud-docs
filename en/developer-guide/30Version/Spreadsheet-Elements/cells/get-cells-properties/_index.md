@@ -30,9 +30,114 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 | **folder**           | string | query    | The folder where the document is stored.                                                                                                                                              |
 | **storageName**      | string | query    | The name of the storage service.                                                                                                                                                      |
 
+## **Response**
+
+Return the CellResponse.
+
+- **Response Fields Overview**
+
+| Field           | Type    | Description                                           |
+| --------------- | ------- | ----------------------------------------------------- |
+| `Name`          | string  | Address of the cell (e.g., `F341`).                   |
+| `Row`           | integer | Zero‑based row index.                                 |
+| `Column`        | integer | Zero‑based column index.                              |
+| `Value`         | string  | The cell’s displayed value.                           |
+| `Type`          | string  | Data type of the cell (e.g., `IsString`).             |
+| `Formula`       | string  | Formula text if the cell contains a formula.          |
+| `IsFormula`     | bool    | Indicates whether the cell contains a formula.        |
+| `IsMerged`      | bool    | Indicates whether the cell is part of a merged range. |
+| `IsArrayHeader` | bool    | Indicates whether the cell is an array header.        |
+| `IsInArray`     | bool    | Indicates whether the cell belongs to an array.       |
+| `IsErrorValue`  | bool    | Indicates whether the cell contains an error value.   |
+| `IsInTable`     | bool    | Indicates whether the cell is inside a table.         |
+| `IsStyleSet`    | bool    | Indicates whether a style is applied to the cell.     |
+| `HtmlString`    | string  | HTML‑encoded representation of the cell’s value.      |
+| `Style.link`    | object  | Hyperlink to the style resource.                      |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Cell":{
+    "Name":"A1",
+    "Row": 0,
+    "Column":0,
+    "Value": "Hello Aspose.Cells",
+    "Type":"String",
+    "Formula" : "",
+    ...
+  }
+}
+```
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the GetWorksheetCell API with SDKs
+
+### GetWorksheetCell API Specification
+
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-### Cloud SDK Family
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3?client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET" \
+     -H "Accept: application/json"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```json
+{
+  "Cell": {
+    "Name": "A3",
+    "Row": 2,
+    "Column": 0,
+    "Value": "Statistical",
+    "Type": "IsString",
+    "IsFormula": false,
+    "IsMerged": false,
+    "IsArrayHeader": false,
+    "IsInArray": false,
+    "IsErrorValue": false,
+    "IsInTable": false,
+    "IsStyleSet": false,
+    "HtmlString": "<Font Style=\"FONT-FAMILY: Calibri;FONT-SIZE: 11pt;COLOR: #000000;\">Statistical</Font>",
+    "Style": {
+      "link": {
+        "Href": "/style",
+        "Rel": "self"
+      }
+    },
+    "link": {
+      "Href": "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/A3",
+      "Rel": "self"
+    }
+  },
+  "Code": "200",
+  "Status": "OK"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the most efficient way to accelerate development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

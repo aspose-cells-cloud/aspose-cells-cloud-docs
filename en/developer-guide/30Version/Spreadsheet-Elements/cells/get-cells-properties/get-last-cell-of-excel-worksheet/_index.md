@@ -10,31 +10,6 @@ ArticleTitle: "Get End Cell of an Excel Worksheet – Aspose.Cells Cloud API v4.
 
 This REST API returns the **endcell** of an Excel worksheet when the `cellOrMethodName` parameter is set to `endcell`.
 
-**Request Method:** `GET`  
-**Endpoint:** `/cells/{fileName}/worksheets/{sheetName}/cells/endcell`  
-
-**Path Parameters**
-
-| Parameter | Type   | Description                                 |
-|-----------|--------|---------------------------------------------|
-| `fileName`| string | Name of the Excel file (including extension). |
-| `sheetName`| string | Name of the worksheet from which to obtain the end cell. |
-
-**Query Parameters (optional)**
-
-| Parameter | Type   | Description                                          |
-|-----------|--------|------------------------------------------------------|
-| `folder`  | string | Path to the folder in cloud storage where the file is located. |
-| `storage` | string | Name of the storage. If omitted, the default storage is used. |
-
-**Possible Status Codes**
-
-| Code | Meaning                                 |
-|------|-----------------------------------------|
-| 200  | Success – the response contains the end‑cell information. |
-| 401  | Unauthorized – invalid or missing access token. |
-| 404  | Not Found – the specified file or worksheet does not exist. |
-| 500  | Internal Server Error – an unexpected error occurred on the server. |
 
 - **cURL Example.**
 
@@ -86,27 +61,8 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/myWorkbook.xlsx/worksheets/Shee
 
 {{< /tabs >}}
 
-- **Response Fields Overview**
 
-| Field           | Type    | Description                                           |
-| --------------- | ------- | ----------------------------------------------------- |
-| `Name`          | string  | Address of the cell (e.g., `F341`).                   |
-| `Row`           | integer | Zero‑based row index.                                 |
-| `Column`        | integer | Zero‑based column index.                              |
-| `Value`         | string  | The cell’s displayed value.                           |
-| `Type`          | string  | Data type of the cell (e.g., `IsString`).             |
-| `Formula`       | string  | Formula text if the cell contains a formula.          |
-| `IsFormula`     | bool    | Indicates whether the cell contains a formula.        |
-| `IsMerged`      | bool    | Indicates whether the cell is part of a merged range. |
-| `IsArrayHeader` | bool    | Indicates whether the cell is an array header.        |
-| `IsInArray`     | bool    | Indicates whether the cell belongs to an array.       |
-| `IsErrorValue`  | bool    | Indicates whether the cell contains an error value.   |
-| `IsInTable`     | bool    | Indicates whether the cell is inside a table.         |
-| `IsStyleSet`    | bool    | Indicates whether a style is applied to the cell.     |
-| `HtmlString`    | string  | HTML‑encoded representation of the cell’s value.      |
-| `Style.link`    | object  | Hyperlink to the style resource.                      |
-
-- **Cloud SDK Family**
+- **Use Aspose.Cells Cloud SDKs**
 
 Using an SDK is the best way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -10,10 +10,7 @@ ArticleTitle: "Get MinDataRow from Excel Worksheet – Aspose.Cells Cloud API"
 
 The **Get MinDataRow** endpoint of **Aspose.Cells Cloud API v3.0** returns the index of the first row that contains data in a specified worksheet. The operation requires a valid access token (Bearer authentication) and the query parameter `cellOrMethodName` set to `mindatarow`.
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-## cURL Example
+- cURL Example
 
 The request uses the HTTP GET method. Replace the placeholders `{fileName}` and `{sheetName}` with the actual workbook and worksheet names.
 
@@ -24,50 +21,8 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetNam
      -H "Accept: application/json"
 ```
 
-### Parameters
 
-| Name               | Type   | Required | Description                                             |
-| ------------------ | ------ | -------- | ------------------------------------------------------- |
-| `cellOrMethodName` | string | Yes      | Must be set to **mindatarow** to invoke this operation. |
-| `folder`           | string | No       | Path to the folder containing the workbook.             |
-| `storage`          | string | No       | Name of the Aspose Cloud storage to use.                |
-
-### Response
-
-A successful call returns HTTP 200 with a JSON payload that contains the minimum data‑row index (0‑based).
-
-```json
-{
-  "MinDataRow": 5
-}
-```
-
-### Error Handling
-
-| HTTP Status | Code          | Message                  | When it occurs                                              |
-| ----------- | ------------- | ------------------------ | ----------------------------------------------------------- |
-| 400         | BadRequest    | Invalid query parameter. | `cellOrMethodName` missing or set to an unsupported value.  |
-| 401         | Unauthorized  | Authentication failed.   | Missing or invalid Bearer token.                            |
-| 404         | FileNotFound  | Worksheet not found.     | The specified `{fileName}` or `{sheetName}` does not exist. |
-| 500         | InternalError | Unexpected server error. | Server‑side problem while processing the request.           |
-
-### Status Codes
-
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | Success – minimum data row returned      |
-| 400  | Bad request – invalid parameters         |
-| 401  | Unauthorized – authentication failure    |
-| 404  | Not found – workbook or worksheet missing |
-| 500  | Internal server error                    |
-
-**See Also**
-
-- [Get MaxDataRow](https://docs.aspose.cloud/cells/get-maxdatarow-from-excel-worksheet/)
-- [Get MinRow](https://docs.aspose.cloud/cells/get-minrow-from-excel-worksheet/)
-- [Authentication Guide](https://docs.aspose.cloud/cells/authentication/)
-
-- **Cloud SDK Family**
+- **Use Aspose.Cells Cloud SDKs**
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project logic. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 

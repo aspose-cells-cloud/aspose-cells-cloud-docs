@@ -10,7 +10,7 @@ ArticleTitle: "Aspose.Cells Cloud API – Get MaxDataRow from Excel Worksheet"
 
 This REST API returns the maximum data row index in an Excel file when the `cellOrMethodName` parameter is set to `maxdatarow`.
 
-## **cURL Example**
+- **cURL Example**
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -39,31 +39,8 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 {{< /tabs >}}
 
-**API Reference**
 
-- **Method**: `GET`  
-- **Endpoint**: `/cells/{fileName}/worksheets/{sheetName}/cells/maxdatarow`  
-- **Path Parameters**  
-  - `fileName` *(string)* – Name of the Excel workbook (e.g., `myWorkbook.xlsx`).  
-  - `sheetName` *(string)* – Name of the worksheet (e.g., `Sheet1`).  
-- **Headers**  
-  - `Authorization: Bearer <access_token>` – Required OAuth2 token.  
-  - `Accept: application/json` – Response format.  
-- **Success Response (200)**  
-
-  ```json
-  {
-    "MaxDataRow": 57
-  }
-  ```
-
-- **Error Responses**  
-  - `400 Bad Request` – Invalid parameters.  
-  - `401 Unauthorized` – Missing or invalid authentication token.  
-  - `404 Not Found` – Specified workbook or worksheet does not exist.  
-  - `500 Internal Server Error` – Unexpected server error.
-
-## **Cloud SDK Family**
+- **Use Aspose.Cells Cloud SDKs**
 
 Using an SDK is the most efficient way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

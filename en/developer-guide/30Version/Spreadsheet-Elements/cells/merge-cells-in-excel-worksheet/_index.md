@@ -7,32 +7,7 @@ keywords: "merge cells in Excel worksheet, Aspose.Cells Cloud, REST API, Excel, 
 description: "Step‑by‑step guide to merge cells in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, required parameters, authentication, response codes, and error handling."
 ---
 
-**API version:** v3.0 (last verified 2024‑09)
-
 The Aspose.Cells Cloud REST API merges a rectangular block of cells into a single cell that spans the specified rows and columns.
-
-## Prerequisites
-- A valid Aspose Cloud subscription.  
-- An Excel workbook stored in Aspose Cloud storage (or a public URL).  
-- Supported Excel formats: `.xlsx`, `.xls`, `.xlsm`, etc.  
-
-## Authentication
-All requests must include a **Bearer JWT token** in the `Authorization` header.
-
-1. Generate a token by sending a POST request to the OAuth 2.0 token endpoint with your client ID and secret.  
-2. Use the returned token in subsequent API calls:
-
-```bash
--H "Authorization: Bearer <jwt token>"
-```
-
-Refer to the **Authentication** guide for detailed steps.
-
-## How‑to Merge Cells (quick summary)
-1. **Set up authentication** – obtain a JWT token.  
-2. **Build the request URL** with the workbook name, worksheet name, and merge parameters (`startRow`, `startColumn`, `totalRows`, `totalColumns`).  
-3. **Send a POST request** to the merge endpoint.  
-4. **Check the response** – a `200` status indicates success; otherwise handle the error codes listed below.
 
 ## REST API
 
@@ -40,7 +15,11 @@ Refer to the **Authentication** guide for detailed steps.
 POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merge
 ```
 
-The request parameters are:
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+### Request parameters
 
 | Name          | Type    | Location | Description                                      |
 |---------------|---------|----------|--------------------------------------------------|
@@ -52,6 +31,31 @@ The request parameters are:
 | totalColumns  | integer | query    | Number of columns to merge.                      |
 | folder        | string  | query    | The folder that contains the workbook.           |
 | storageName   | string  | query    | The storage name.                                |
+
+## **Response**
+
+Return CellsCloudResponse.
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the PostWorksheetMerge API with SDKs
+
+### PostWorksheetMerge API Specification
+
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetMerge) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -84,33 +88,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/m
 
 {{< /tabs >}}
 
-## Response
-
-| HTTP Code | Meaning                | Description                                                            |
-|-----------|------------------------|------------------------------------------------------------------------|
-| **200**   | Success                | Cells merged successfully. Returns `{ "Code":200, "Status":"OK" }`.   |
-| **400**   | Bad Request            | Missing or invalid parameters. Error payload includes details.        |
-| **401**   | Unauthorized           | Invalid or expired JWT token.                                          |
-| **404**   | Not Found              | Specified workbook or worksheet does not exist.                        |
-| **500**   | Internal Server Error  | Server‑side problem.                                                   |
-
-## FAQ
-
-**How do I merge a range of cells using Aspose.Cells Cloud API?**  
-Use the POST endpoint `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merge` with query parameters `startRow`, `startColumn`, `totalRows`, and `totalColumns`. Include a valid JWT token in the `Authorization` header. A successful call returns `{ "Code":200, "Status":"OK" }`.
-
-**What authentication is required for the merge‑cells request?**  
-A bearer JWT token generated from your Aspose Cloud client credentials must be sent in the `Authorization: Bearer <token>` header. Tokens are obtained via the OAuth 2.0 token endpoint documented in the **Authentication** guide.
-
-**What error codes might I receive when merging cells, and how should I handle them?**  
-- **400 Bad Request** – missing or invalid parameters.  
-- **401 Unauthorized** – invalid or expired JWT token.  
-- **404 Not Found** – workbook or worksheet does not exist.  
-- **500 Internal Server Error** – server‑side issue.  
-
-Handle errors by checking the `Code` field and inspecting the error message in the response body.
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

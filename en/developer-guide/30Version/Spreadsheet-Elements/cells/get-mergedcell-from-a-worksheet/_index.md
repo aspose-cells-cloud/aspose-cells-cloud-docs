@@ -17,12 +17,9 @@ This REST API returns information about **merged cells** in an Excel worksheet.
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/mergedCells
 ```
 
-### Authentication  
+## Security and Authentication
 
-All calls must be authorized with a JWT access token.  
-1. Register an application in the Aspose Cloud console to obtain a **Client ID** and **Client Secret**.  
-2. Request a token via `POST https://api.aspose.cloud/connect/token` with `grant_type=client_credentials`.  
-3. Include the token in the request header: `Authorization: Bearer <jwt token>`.
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### Request parameters
 
@@ -32,6 +29,44 @@ All calls must be authorized with a JWT access token.
 | **sheetName**  | string | path     | The worksheet name.                 |
 | **folder**     | string | query    | Folder that contains the document.  |
 | **storageName**| string | query    | Name of the storage to use.         |
+
+## **Response**
+
+Return MergedCellsResponse.
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "MergedCells":{
+    "Count": 0,
+    "MergedCellList":[
+      {
+        "Link":{
+          "Href":"",
+          "Rel":"",
+          "Type":"",
+          "Title":""
+        }
+      }
+    ]
+  }
+}
+```
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the GetWorksheetMergedCells API with SDKs
+
+### GetWorksheetMergedCells API Specification
+
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetWorksheetMergedCells) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -49,23 +84,22 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
   -H "Authorization: Bearer <jwt token>"
 ```
 
-*Note: The `/mergedCells` endpoint returns a collection of merged‑cell ranges. To retrieve a specific merged cell by index, use `/mergedCells/{index}`.*  
-
 {{< /tab >}}
 
 {{< tab tabNum="12" >}}
 
 ```json
 {
-  "MergedCell": {
-    "EndColumn": 7,
-    "EndRow": 1,
-    "StartColumn": 0,
-    "StartRow": 1,
-    "link": {
-      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/cells/mergedcells/0",
-      "Rel": "self"
-    }
+  "MergedCells": {
+    "Count": 1,
+    "MergedCells": [
+      {
+      "link": {
+            "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/cells/mergedcells/0",
+            "Rel": "self"
+          }
+      }
+    ]    
   },
   "Code": "200",
   "Status": "OK"
@@ -76,32 +110,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 
 {{< /tabs >}}
 
-### Response model  
 
-The JSON payload contains a single **MergedCell** object with the following properties:
-
-| Property      | Type | Description |
-|---------------|------|-------------|
-| **StartRow**  | int  | Zero‑based index of the first row in the merged range. |
-| **StartColumn**| int | Zero‑based index of the first column in the merged range. |
-| **EndRow**    | int  | Zero‑based index of the last row in the merged range. |
-| **EndColumn** | int  | Zero‑based index of the last column in the merged range. |
-| **link**      | object | A self‑reference URL (`Href`) pointing to the merged‑cell resource. |
-
-### Error handling  
-
-Common HTTP status codes returned by this endpoint:
-
-| Status Code | Meaning | Sample payload |
-|-------------|---------|----------------|
-| **400** | Bad request – missing or invalid parameters. | `{ "Code": "400", "Message": "Invalid parameter." }` |
-| **401** | Unauthorized – JWT token is missing or expired. | `{ "Code": "401", "Message": "Authentication failed." }` |
-| **404** | Not found – the specified file, worksheet, or index does not exist. | `{ "Code": "404", "Message": "Resource not found." }` |
-| **500** | Internal server error – unexpected condition on the server. | `{ "Code": "500", "Message": "An unexpected error occurred." }` |
-
-Handle these responses in your code (e.g., try/catch blocks in SDKs) and retry or correct the request as appropriate.
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to develop against the API. An SDK handles low‑level details so you can focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

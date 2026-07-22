@@ -9,7 +9,7 @@ description: "Learn how to retrieve the minimum row index of a worksheet using A
 
 This REST API returns the minimum row index in an Excel worksheet when the `cellOrMethodName` parameter is set to `minrow`. The endpoint can be used to determine the first non‑empty row (zero‑based) in a given worksheet.
 
-## **cURL Example:**
+- **cURL Example:**
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -36,24 +36,7 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 {{< /tabs >}}
 
-**API Specification**
-
-| Element          | Details |
-|------------------|---------|
-| **Method**       | `GET` |
-| **URL**          | `https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/minrow` |
-| **Path Params**  | `fileName` – name of the workbook (string)<br>`sheetName` – worksheet name (string) |
-| **Query Params** | *None* (optional `folder`, `storage` may be used) |
-| **Headers**      | `Authorization: Bearer <access_token>`<br>`Accept: application/json` |
-| **Success Response** | `200 OK` – `{ "MinRow": integer }` |
-| **Error Responses** | `400 Bad Request`<br>`401 Unauthorized`<br>`404 Not Found` (example bodies can be found in the API reference) |
-
-> **Prerequisites / Notes**  
-> • A valid OAuth 2.0 access token is required.  
-> • The workbook must be uploaded to Aspose Cloud storage or supplied via a multipart request.  
-> • The API works with all Excel‑compatible formats supported by Aspose.Cells.
-
-## **Cloud SDK Family**
+- **Use Aspose.Cells Cloud SDKs**
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project. Please check the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 

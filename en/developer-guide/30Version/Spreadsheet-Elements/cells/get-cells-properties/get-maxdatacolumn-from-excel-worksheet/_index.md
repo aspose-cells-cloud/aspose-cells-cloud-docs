@@ -10,33 +10,6 @@ ArticleTitle: "Aspose.Cells Cloud API – Get MaxDataColumn of an Excel Workshee
 
 This REST API returns the maximum data‑column index in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxdatacolumn`.
 
-**Request Details**
-
-| Item               | Description |
-|--------------------|-------------|
-| **Method**         | `GET` |
-| **Endpoint**       | `/cells/{fileName}/worksheets/{sheetName}/cells/maxdatacolumn` |
-| **Path Parameters** | `fileName` – name of the Excel file (string, required) <br> `sheetName` – name of the worksheet (string, required) |
-| **Query Parameters** | `folder` – path to the folder containing the file (optional) <br> `storageName` – name of the storage (optional) |
-| **Headers**        | `Authorization: Bearer <access_token>` <br> `Accept: application/json` |
-
-**Response Codes**
-
-| Code | Meaning | Description |
-|------|---------|-------------|
-| `200 OK` | Success | Returns a JSON object with the `MaxDataColumn` value. |
-| `401 Unauthorized` | Authentication required | Invalid or missing access token. |
-| `404 Not Found` | Resource not found | The specified file or worksheet does not exist. |
-| `500 Internal Server Error` | Server error | An unexpected error occurred on the server. |
-
-**Error Response Example**
-
-```json
-{
-  "Code": "InvalidFileName",
-  "Message": "The file 'myWorkbook.xlsx' could not be found."
-}
-```
 
 ## **cURL Example**
 
@@ -65,7 +38,7 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 {{< /tabs >}}
 
-## **Cloud SDK Family**
+- **Use Aspose.Cells Cloud SDKs**
 
 Using an SDK is the most efficient way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -133,4 +106,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< /tabs >}}
 
-*Related API examples:* [Get MaxRow](../get-maxrow-from-excel-worksheet/), [Get MaxColumn](../get-maxcolumn-from-excel-worksheet/).

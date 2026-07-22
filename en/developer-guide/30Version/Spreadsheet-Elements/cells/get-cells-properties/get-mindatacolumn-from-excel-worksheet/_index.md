@@ -8,18 +8,12 @@ description: "Retrieve the leftmost column that contains data in an Excel worksh
 ArticleTitle: "Get MinDataColumn – Aspose.Cells Cloud API Reference (v3.0)"
 ---
 
-## Overview
-
 The **`mindatacolumn`** endpoint returns the zero‑based index of the leftmost column that contains any cell data in a specified worksheet.  
 In other words, it tells you which column is the first one that actually holds data.
 
 > **Definition** – `mindatacolumn`: the index (starting at 0) of the first column that contains data in the worksheet.
 
-## Security and Authentication
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-## **cURL Example**
+- **cURL Example**
 
 ```bash
 curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mindatacolumn" \
@@ -27,57 +21,6 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
 ```
-
-**Request Details**
-
-| Element          | Value                                                                                                                                 |
-|------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| HTTP Method      | GET                                                                                                                                   |
-| URL Pattern      | `https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/mindatacolumn`                                            |
-| Required Headers | `Authorization: Bearer {access_token}`<br>`Content-Type: application/json`<br>`Accept: application/json`                           |
-
-### Path Parameters
-
-| Parameter         | Type    | Description                                      |
-| ----------------- | ------- | ------------------------------------------------ |
-| `myWorkbook.xlsx` | string  | Name of the workbook stored in the cloud.        |
-| `Sheet1`          | string  | Worksheet name (case‑sensitive).                 |
-| `mindatacolumn`   | literal | Fixed operation name that triggers the endpoint. |
-
-_There are no additional query parameters for this operation._
-
----
-
-## Response
-
-### Successful Response (200 OK)
-
-**Success Status Code**
-
-| Code | Description                                      |
-|------|--------------------------------------------------|
-| 200  | Request succeeded; returns the `MinDataColumn` value. |
-
-```json
-{
-  "MinDataColumn": 2
-}
-```
-
-| Property        | Type    | Description                                              |
-| --------------- | ------- | -------------------------------------------------------- |
-| `MinDataColumn` | integer | Zero‑based index of the first column that contains data. |
-
-### Error Responses
-
-| HTTP Code | Error Code             | Description                                              |
-| --------- | ---------------------- | -------------------------------------------------------- |
-| 401       | `AuthenticationFailed` | Missing or invalid authentication credentials.           |
-| 404       | `WorksheetNotFound`    | The specified worksheet does not exist in the workbook.  |
-| 400       | `InvalidRequest`       | The request is malformed or contains invalid parameters. |
-| 500       | `ServerError`          | An unexpected error occurred on the server side.         |
-
-## Request / Response Samples
 
 - **cURL Example**
 
@@ -108,7 +51,7 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 ---
 
-## Cloud SDK Family
+- Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to accelerate development. An SDK handles low‑level details, allowing you to focus on your project logic. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -176,4 +119,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< /tabs >}}
 
-*Note: SDK sample code is currently loaded from GitHub Gist. For improved performance and reliability, consider hosting these snippets locally within the documentation repository.*

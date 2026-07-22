@@ -7,8 +7,6 @@ keywords: "Aspose Cells API set cell value, Excel cell update REST, Aspose.Cells
 description: "Learn how to set the value of a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API. Includes request syntax, parameters, HTTPS cURL example, and SDK code samples."  
 ---  
 
-> **Version Notice:** This documentation applies to API version **v3.0**. Newer versions (e.g., v3.1, v4) may be available; refer to the changelog for the latest information.  
-
 This REST API sets the **cell value** in an Excel file.
 
 ## REST API  
@@ -17,7 +15,10 @@ This REST API sets the **cell value** in an Excel file.
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}
 ```  
 
-All requests must be sent over **HTTPS**. The API requires a **JWT bearer token** obtained from the Aspose Cloud OAuth endpoint. Include the token in the `Authorization` header as `Bearer <jwt token>`.
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 
 **Request parameters**
 
@@ -31,6 +32,61 @@ All requests must be sent over **HTTPS**. The API requires a **JWT bearer token*
 | formula       | string | query    | Formula to apply to the cell (optional). |
 | folder        | string | query    | Folder that contains the document (optional). |
 | storageName   | string | query    | Name of the storage where the file resides (optional). |
+
+## **Response**
+
+Return CellResponse.
+
+- **Response Fields Overview**
+
+| Field           | Type    | Description                                           |
+| --------------- | ------- | ----------------------------------------------------- |
+| `Name`          | string  | Address of the cell (e.g., `F341`).                   |
+| `Row`           | integer | Zero‑based row index.                                 |
+| `Column`        | integer | Zero‑based column index.                              |
+| `Value`         | string  | The cell’s displayed value.                           |
+| `Type`          | string  | Data type of the cell (e.g., `IsString`).             |
+| `Formula`       | string  | Formula text if the cell contains a formula.          |
+| `IsFormula`     | bool    | Indicates whether the cell contains a formula.        |
+| `IsMerged`      | bool    | Indicates whether the cell is part of a merged range. |
+| `IsArrayHeader` | bool    | Indicates whether the cell is an array header.        |
+| `IsInArray`     | bool    | Indicates whether the cell belongs to an array.       |
+| `IsErrorValue`  | bool    | Indicates whether the cell contains an error value.   |
+| `IsInTable`     | bool    | Indicates whether the cell is inside a table.         |
+| `IsStyleSet`    | bool    | Indicates whether a style is applied to the cell.     |
+| `HtmlString`    | string  | HTML‑encoded representation of the cell’s value.      |
+| `Style.link`    | object  | Hyperlink to the style resource.                      |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200,
+  "Cell":{
+    "Name":"A1",
+    "Row": 0,
+    "Column":0,
+    "Value": "",
+    "Type":"String",
+    "Formula" : "=Sum(A2:A15)",
+    ...
+  }
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the PostWorksheetCellSetValue API with SDKs
+
+### PostWorksheetCellSetValue API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostWorksheetCellSetValue) defines a publicly accessible programming interface, which enables developers to invoke REST endpoints directly from a browser or any HTTP client.
 
@@ -53,26 +109,29 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/c
 {{< tab tabNum="12" >}}
 
 ```json
+
+```json
 {
   "Code": 200,
-  "Status": "OK"
+  "Status": "OK",
+  "Cell":{
+    "Name":"A3",
+    "Row": 2,
+    "Column":0,
+    "Value": "",
+    "Type":"String",
+    "Formula" : "=Sum(A2:A15)",
+    ...
+  }
 }
+```
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
-**Error handling**
-
-| HTTP Status | Description                              | Example payload |
-|-------------|------------------------------------------|-----------------|
-| 400         | Bad request – missing or invalid parameters. | `{"Code":400,"Message":"Invalid parameter 'value'."}` |
-| 401         | Unauthorized – JWT token is missing or invalid. | `{"Code":401,"Message":"Authentication failed."}` |
-| 404         | Not found – the specified file, worksheet, or cell does not exist. | `{"Code":404,"Message":"Worksheet not found."}` |
-| 500         | Internal server error – unexpected condition on the server. | `{"Code":500,"Message":"An unexpected error occurred."}` |
-
-## Cloud SDK Family  
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK speeds up development by handling low‑level details so you can focus on your project. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

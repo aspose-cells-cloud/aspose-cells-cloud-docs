@@ -8,33 +8,21 @@ description: "Learn how to update the style of a range of cells in an Excel work
 ArticleTitle: "Update Multiple Cells Style – Aspose.Cells Cloud API Reference (v3.0)"
 ---
 
-**v3.0 – Updated 2024‑11‑01**
+## REST API
 
 This REST API sets the **style** for a range of cells in an Excel workbook.
 
-## REST API
-
-### Authentication
-To call this endpoint you must include a valid JWT access token in the `Authorization` header.
-
-1. Request a token from the Aspose Cloud OAuth endpoint (`/connect/token`) using your **client‑id** and **client‑secret**.  
-2. The response contains an `access_token`.  
-3. Include the token in each request:
-
 ```http
-Authorization: Bearer <access_token>
-```
-
-> **Note:** The token expires after a configurable period; obtain a new token when it expires.  
-> **Required scope:** `Cells.ReadWrite` (or a broader scope that includes worksheet modification).
-
-### Endpoint
-```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/style
 ```
-**Method:** POST
+
+## Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 
 ### Request parameters
+
 | Parameter Name | Type   | Location | Description |
 |----------------|--------|----------|-------------|
 | **name**       | string | path     | Workbook name. |
@@ -52,11 +40,42 @@ The `style` JSON object represents cell formatting. It may contain any of the fo
 - **ForegroundColor** – Foreground color in ARGB format.  
 - **Name**, **CultureCustom**, **Custom** – Additional style metadata.
 
-Only the properties you need to change have to be supplied; omitted properties retain their existing values.
+## **Response**
+
+Return CellCloudResponse.
+
+- **Response Fields Overview**
+
+| Field           | Type    | Description                                           |
+| --------------- | ------- | ----------------------------------------------------- |
+| `Status`          | string  |                    |
+| `Code`           | integer | 200,400,401,500,...                                 |
+
+
+```json
+{
+  "Status":"OK",
+  "Code":200
+}
+```
+
+**Http Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+## How to Use the PostUpdateWorksheetRangeStyle API with SDKs
+
+### PostUpdateWorksheetRangeStyle API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUpdateWorksheetRangeStyle) provides the full schema.
 
-### Request
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -89,8 +108,6 @@ cURL -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/s
 
 {{< /tab >}}
 
-### Response
-
 {{< tab tabNum="12" >}}
 
 ```json
@@ -104,17 +121,8 @@ cURL -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/s
 
 {{< /tabs >}}
 
-### Error handling
-The API can return the following error responses:
 
-| HTTP Status | Description | Example JSON |
-|-------------|-------------|--------------|
-| **400 Bad Request** | Invalid request parameters (e.g., malformed range). | `{ "Code": 400, "Message": "Invalid range format." }` |
-| **401 Unauthorized** | Missing or invalid JWT token. | `{ "Code": 401, "Message": "Authentication failed." }` |
-| **404 Not Found** | Specified workbook or worksheet does not exist. | `{ "Code": 404, "Message": "Workbook not found." }` |
-| **500 Internal Server Error** | Unexpected server error. | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
