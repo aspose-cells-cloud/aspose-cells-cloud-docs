@@ -11,8 +11,6 @@ ArticleTitle: "Convert Excel Chart to Image Using Aspose.Cells Cloud REST API"
 
 This REST API demonstrates how to convert an **Excel chart** to an image using **Aspose.Cells Cloud**.
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
 
@@ -21,6 +19,10 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 ```
 
 Supported image formats include `png`, `jpeg`, `bmp`, `tiff`, and `gif`.
+
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### Request parameters
 
@@ -32,6 +34,31 @@ Supported image formats include `png`, `jpeg`, `bmp`, `tiff`, and `gif`.
 | format         | string  | query    | The exported file format. |
 | folder         | string  | query    | The document folder.      |
 | storageName    | string  | query    | Storage name.             |
+
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PutWorksheetAddChart API with SDKs
+
+### PutWorksheetAddChart API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -61,34 +88,8 @@ byte[]
 
 {{< /tabs >}}
 
-### Response
 
-A successful request returns **HTTP 200 OK** with the image binary data in the response body.
-
-| Status Code | Description                     |
-| ----------- | -------------------------------- |
-| 200         | Image returned successfully (binary stream). |
-| 202         | Accepted – request is being processed asynchronously (if applicable). |
-
-**Example success payload** (binary image stream shown as base64 for readability):
-
-```json
-{
-  "contentType": "image/jpeg",
-  "content": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhU..."
-}
-```
-
-### Error Handling
-
-| HTTP Status | Meaning                                             | Example JSON Body                                                                                  |
-| ----------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| 400         | Bad Request – invalid parameters                    | `{ "error": { "code": "InvalidParameter", "message": "The 'format' value is not supported." } }`   |
-| 401         | Unauthorized – missing/invalid JWT token            | `{ "error": { "code": "InvalidToken", "message": "Authorization token is missing or invalid." } }` |
-| 404         | Not Found – workbook, worksheet, or chart not found | `{ "error": { "code": "ResourceNotFound", "message": "Specified chart does not exist." } }`        |
-| 500         | Internal Server Error – unexpected server condition | `{ "error": { "code": "ServerError", "message": "An unexpected error occurred." } }`               |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -12,16 +12,16 @@ This REST API deletes all charts from the specified worksheet.
 
 **Background** – Removing all charts from a worksheet is useful when you need to reset a sheet’s visual layout, replace outdated visualizations, or prepare a workbook for reuse without retaining previous chart data.
 
-**Prerequisites** –  
-- A valid Aspose Cloud JWT token obtained via the OAuth 2.0 flow.  
-- The workbook must be stored in a supported storage location (default Aspose Cloud storage or a custom storage you have configured).  
-- The target worksheet must exist in the workbook.
-
 ## REST API
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ```
+
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 
 ### Request parameters
 
@@ -31,6 +31,31 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 | sheetName      | string | path     | Name of the worksheet.               |
 | folder         | string | query    | Folder where the workbook is stored. |
 | storageName    | string | query    | Name of the storage.                 |
+
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the DeleteWorksheetClearCharts API with SDKs
+
+### DeleteWorksheetClearCharts API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetClearCharts) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -48,7 +73,6 @@ curl -v "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cha
 -H "Authorization: Bearer <jwt token>"
 ```
 
-_Replace `<jwt token>` with a valid JWT Bearer token obtained via the Aspose Cloud OAuth flow._
 
 {{< /tab >}}
 
@@ -61,22 +85,7 @@ _Replace `<jwt token>` with a valid JWT Bearer token obtained via the Aspose Clo
 }
 ```
 
-_If the request fails, the API returns an error JSON with an appropriate HTTP status code (e.g., 401 Unauthorized, 404 Not Found, 500 Internal Server Error)._
-
-{{< /tab >}}
-
-{{< /tabs >}}
-
-**Response Codes**
-
-| HTTP Status | Meaning                              | When It Occurs |
-|-------------|--------------------------------------|----------------|
-| 200         | Success – all charts were deleted    | Valid request |
-| 401         | Unauthorized – missing or invalid JWT| Authentication failure |
-| 404         | Not Found – workbook, worksheet, or chart collection does not exist | Incorrect `name` or `sheetName` |
-| 500         | Internal Server Error – unexpected condition on the server | Server‑side issue |
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development when you need to **delete all charts** from a worksheet. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -143,7 +152,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
-
-_See also:_ [Delete a Chart](../delete/) • [Get Charts](../list/)
-
-In addition to the examples above, you may also want to review the related operations **Delete a Chart** and **Get Charts** for a complete workflow when managing chart objects in a worksheet.

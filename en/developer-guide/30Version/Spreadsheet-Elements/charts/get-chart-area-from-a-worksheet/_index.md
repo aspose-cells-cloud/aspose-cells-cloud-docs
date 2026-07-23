@@ -25,6 +25,10 @@ This REST API returns chart‑area information.
 GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea
 ```
 
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 ### Request parameters
 
 | Parameter Name | Type    | Location | Description                                    |
@@ -34,6 +38,85 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 | chartIndex     | integer | path     | Zero‑based index of the chart.                 |
 | folder         | string  | query    | Folder where the workbook is stored.           |
 | storageName    | string  | query    | Name of the storage service.                   |
+
+### **Response**
+
+```json
+{
+  "ChartArea": {
+    "Area": {
+      "BackgroundColor": { "A": "0", "R": "0", "G": "0", "B": "0" },
+      "FillFormat": { "Type": "Automatic" },
+      "ForegroundColor": { "A": "0", "R": "0", "G": "0", "B": "0" },
+      "Formatting": "Automatic",
+      "InvertIfNegative": false,
+      "Transparency": 0.0
+    },
+    "AutoScaleFont": false,
+    "BackgroundMode": "Automatic",
+    "Border": {
+      "BeginArrowLength": "Medium",
+      "BeginArrowWidth": "Medium",
+      "BeginType": "None",
+      "CapType": "Flat",
+      "Color": { "A": "0", "R": "0", "G": "0", "B": "0" },
+      "CompoundType": "Single",
+      "DashType": "Solid",
+      "EndArrowLength": "Medium",
+      "EndArrowWidth": "Medium",
+      "EndType": "None",
+      "IsAuto": false,
+      "IsAutomaticColor": false,
+      "IsVisible": false,
+      "JoinType": "Round",
+      "Style": "Solid",
+      "Transparency": 0.0,
+      "Weight": "HairLine",
+      "WeightPt": 0.0
+    },
+    "Font": {
+      "Color": { "A": "255", "R": "0", "G": "0", "B": "0" },
+      "DoubleSize": 10.0,
+      "IsBold": false,
+      "IsItalic": false,
+      "IsStrikeout": false,
+      "IsSubscript": false,
+      "IsSuperscript": false,
+      "Name": "Arial",
+      "Size": 10,
+      "Underline": "None"
+    },
+    "IsAutomaticSize": false,
+    "IsInnerMode": false,
+    "Shadow": false,
+    "Width": 0,
+    "Height": 0,
+    "X": 0,
+    "Y": 0,
+    "link": {
+      "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea",
+      "Rel": "self"
+    }
+  },
+  "Code": "200",
+  "Status": "OK"
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the GetChartArea API with SDKs
+
+### GetChartArea API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartArea) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -121,7 +204,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

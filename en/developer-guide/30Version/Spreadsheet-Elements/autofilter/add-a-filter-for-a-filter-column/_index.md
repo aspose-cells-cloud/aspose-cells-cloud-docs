@@ -90,14 +90,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 }
 ```
 
-**Possible response codes**
-
-| Code | Meaning                     | Description                                                       |
-|------|----------------------------|-------------------------------------------------------------------|
-| 200  | Success                    | Filter applied successfully.                                      |
-| 400  | Bad Request                | Invalid parameters or malformed request.                         |
-| 401  | Unauthorized               | Missing or invalid JWT token.                                     |
-| 500  | Internal Server Error      | Unexpected server error while processing the request.            |
 
 {{< /tab >}}
 

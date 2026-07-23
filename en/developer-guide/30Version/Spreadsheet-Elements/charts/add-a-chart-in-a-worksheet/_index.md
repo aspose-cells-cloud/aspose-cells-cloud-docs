@@ -15,7 +15,7 @@ keywords:
 ArticleTitle: "Add a Chart to a Worksheet – Aspose.Cells Cloud API Guide"
 ---
 
-This REST API adds a new chart to a worksheet. **Prerequisite:** a valid JWT token must be supplied in the `Authorization` header.
+This REST API adds a new chart to a worksheet. 
 
 ## REST API
 
@@ -23,7 +23,12 @@ This REST API adds a new chart to a worksheet. **Prerequisite:** a valid JWT tok
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ```
 
-The request parameters are:
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+
+### Request parameters
 
 | Parameter Name          | Type    | Location | Description                                                                                                                                                                              |
 | ----------------------- | ------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -45,6 +50,30 @@ The request parameters are:
 | **dataLabelsPosition**  | string  | query    | Position of data labels (e.g., `Above`).                                                                                                                                                 |
 | **pivotTableSheet**     | string  | query    | Name of the sheet that contains the pivot table.                                                                                                                                         |
 | **pivotTableName**      | string  | query    | Name of the pivot table.                                                                                                                                                                 |
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PutWorksheetAddChart API with SDKs
+
+### PutWorksheetAddChart API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetAddChart) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -78,34 +107,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/c
 
 {{< /tabs >}}
 
-**Common error responses**
-
-- **400 Bad Request** – Invalid parameters or missing required fields.
-- **401 Unauthorized** – Missing or invalid JWT token.
-- **404 Not Found** – Specified workbook, worksheet, or chart does not exist.
-- **500 Internal Server Error** – Unexpected server error.
-
-### Status Codes
-
-| Code | Description |
-|------|-------------|
-| **200** | Chart added successfully. |
-| **201** | Chart created (if the API returns a created status). |
-| **400** | Bad request – invalid parameters. |
-| **401** | Unauthorized – missing or invalid JWT token. |
-| **403** | Forbidden – insufficient permissions to access the storage or workbook. |
-| **404** | Not found – workbook, worksheet, or chart does not exist. |
-| **500** | Internal server error – unexpected condition on the server. |
-
-**Prerequisites**  
-Before calling this endpoint, ensure that you have generated a valid JWT token, the target workbook exists in the specified storage folder, and you have appropriate read/write permissions.
-
-**Notes**  
-The request does **not** require a JSON body; all required information is supplied via query parameters. For more complex chart configurations, refer to the full Chart object definition in the OpenAPI spec.
-
-For related operations such as retrieving, updating, or deleting a chart, see the “Get Chart”, “Update Chart”, and “Delete Chart” documentation pages.
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK abstracts low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -16,6 +16,10 @@ The **Get Chart Legend** operation returns the legend information of a chart tha
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
 
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 ### Request parameters
 
 | Parameter Name | Type    | Location | Description                               |
@@ -25,6 +29,105 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 | chartIndex     | integer | path     | Zero‑based index of the chart.            |
 | folder         | string  | query    | Folder path where the workbook is stored. |
 | storageName    | string  | query    | Name of the storage.                      |
+
+### **Response**
+
+```json
+{
+  "Legend": {
+    "Position": "Right",
+    "LegendEntries": {
+      "link": {
+        "Href": "/legendEntries",
+        "Rel": "self",
+        "Title": null,
+        "Type": null
+      }
+    },
+    "Area": {
+      "BackgroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+      "FillFormat": {
+        "Type": "Automatic",
+        "SolidFill": null,
+        "PatternFill": null,
+        "TextureFill": null,
+        "GradientFill": null,
+        "ImageData": null
+      },
+      "ForegroundColor": { "A": 0, "R": 0, "G": 0, "B": 0 },
+      "Formatting": "Automatic",
+      "InvertIfNegative": false,
+      "Transparency": 0.0
+    },
+    "AutoScaleFont": true,
+    "BackgroundMode": "Automatic",
+    "Border": {
+      "BeginArrowLength": "Medium",
+      "BeginArrowWidth": "Medium",
+      "BeginType": "None",
+      "CapType": "Flat",
+      "Color": { "A": 0, "R": 0, "G": 0, "B": 0 },
+      "CompoundType": "Single",
+      "DashType": "Solid",
+      "EndArrowLength": "Medium",
+      "EndArrowWidth": "Medium",
+      "EndType": "None",
+      "GradientFill": null,
+      "IsAuto": true,
+      "IsAutomaticColor": true,
+      "IsVisible": true,
+      "JoinType": "Round",
+      "Style": "Solid",
+      "Transparency": 0.0,
+      "Weight": "HairLine",
+      "WeightPt": 0.0
+    },
+    "Font": {
+      "Color": { "A": 255, "R": 0, "G": 0, "B": 0 },
+      "DoubleSize": 10.0,
+      "IsBold": false,
+      "IsItalic": false,
+      "IsStrikeout": false,
+      "IsSubscript": false,
+      "IsSuperscript": false,
+      "Name": "Arial",
+      "Size": 10,
+      "Underline": "None"
+    },
+    "IsAutomaticSize": true,
+    "IsInnerMode": null,
+    "Shadow": false,
+    "ShapeProperties": null,
+    "Width": 823,
+    "Height": 1043,
+    "X": 3125,
+    "Y": 1466,
+    "link": {
+      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/legend",
+      "Rel": "self",
+      "Title": null,
+      "Type": null
+    }
+  },
+  "Code": 0,
+  "Status": "0"
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the GetWorksheetChartLegend API with SDKs
+
+### GetWorksheetChartLegend API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChartLegend) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -123,8 +226,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
       "Type": null
     }
   },
-  "Code": 0,
-  "Status": "0"
+  "Code": 200,
+  "Status": "OK"
 }
 ```
 
@@ -132,34 +235,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 
 {{< /tabs >}}
 
-### **Response fields reference**
-
-| Field                     | Type   | Description                                          |
-| ------------------------- | ------ | ---------------------------------------------------- |
-| `Legend.Position`         | string | Position of the legend (e.g., _Right_, _Top_).       |
-| `Legend.AutoScaleFont`    | bool   | Indicates whether the legend font is auto‑scaled.    |
-| `Legend.Font.Name`        | string | Font family name used for the legend text.           |
-| `Legend.Font.Size`        | number | Font size (points).                                  |
-| `Legend.Font.Color`       | object | RGBA color object for the legend text.               |
-| `Legend.Border`           | object | Border properties (color, style, weight, etc.).      |
-| `Legend.Width` / `Height` | number | Physical size of the legend area (pixels).           |
-| `Legend.X` / `Y`          | number | Top‑left coordinates of the legend within the chart. |
-| `Legend.Area` …           | object | Background fill and formatting details.              |
-| `Code`                    | int    | Operation result code (0 = success).                 |
-| `Status`                  | string | Operation status message.                            |
-
-**Possible error responses**
-
-| HTTP Status | Reason                                                    | Example error JSON                                                                      |
-| ----------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| 400         | Bad request – missing/invalid parameters.                 | `{"Error": {"Code": "InvalidParameter", "Message": "Parameter 'name' is required."}}`   |
-| 401         | Unauthorized – invalid or expired JWT token.              | `{"Error": {"Code": "Unauthorized", "Message": "Access token is missing or invalid."}}` |
-| 404         | Not found – workbook, worksheet, or chart does not exist. | `{"Error": {"Code": "ResourceNotFound", "Message": "Chart with index 0 not found."}}`   |
-| 500         | Internal server error.                                    | `{"Error": {"Code": "ServerError", "Message": "An unexpected error occurred."}}`        |
-
----
-
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

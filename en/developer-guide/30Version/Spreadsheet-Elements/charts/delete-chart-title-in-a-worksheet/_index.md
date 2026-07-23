@@ -16,6 +16,11 @@ This REST API deletes the title of a chart.
 DELETE https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
 
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+
 ### Request parameters
 
 | Parameter Name | Type    | Location | Description                         |
@@ -25,6 +30,31 @@ DELETE https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/charts/
 | chartIndex     | integer | path     | The zero‑based index of the chart.  |
 | folder         | string  | query    | The folder containing the workbook. |
 | storageName    | string  | query    | The storage name.                   |
+
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the DeleteWorksheetChartTitle API with SDKs
+
+### DeleteWorksheetChartTitle API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -57,7 +87,7 @@ curl -v "https://api.aspose.cloud/v4.0/cells/Sample_Test_Book.xls/worksheets/She
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

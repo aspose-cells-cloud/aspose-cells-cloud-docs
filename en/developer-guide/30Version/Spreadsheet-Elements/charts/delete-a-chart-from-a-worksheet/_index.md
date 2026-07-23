@@ -19,8 +19,6 @@ ArticleTitle: "Delete a Chart from a Worksheet using Aspose.Cells Cloud REST API
 
 This REST API deletes a worksheet chart by its index.
 
-**Prerequisites:** A valid JWT authentication token, proper storage configuration, and API version v3.0 must be used.
-
 For related operations, see the **[Add a Chart](#)** and **[Get Chart](#)** pages.
 
 ## REST API
@@ -29,7 +27,9 @@ For related operations, see the **[Add a Chart](#)** and **[Get Chart](#)** page
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}
 ```
 
-*All API calls must be made over HTTPS.*
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ### Request parameters
 
@@ -40,6 +40,31 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/
 | chartIndex     | integer | path     | The zero‑based index of the chart to delete. |
 | folder         | string  | query    | The folder that contains the workbook.       |
 | storageName    | string  | query    | The name of the storage to use.              |
+
+
+### **Response**
+
+```json
+{
+    "Status":"OK",
+    "Code":200
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the PutWorksheetAddChart API with SDKs
+
+### PutWorksheetAddChart API Specification
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/DeleteWorksheetDeleteChart) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -84,7 +109,7 @@ The API returns the following status codes:
 
 **Error handling:** For detailed error information, refer to the generic error model in the OpenAPI specification.
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

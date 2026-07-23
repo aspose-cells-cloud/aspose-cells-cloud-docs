@@ -17,6 +17,8 @@ To call this endpoint you must provide a valid OAuth 2.0 access token, and the
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis
 ```
 
+**Background** – Removing all charts from a worksheet is useful when you need to reset a sheet’s visual layout, replace outdated visualizations, or prepare a workbook for reuse without retaining previous chart data.
+
 ### Request parameters
 
 | Parameter Name | Type    | Location | Description                                            |
@@ -27,15 +29,48 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 | folder         | string  | query    | The folder path in storage where the workbook resides. |
 | storageName    | string  | query    | The name of the storage service (if not the default).  |
 
-**Status Codes**
+### **Response**
 
-| Status Code | Description                                             |
-| ----------- | ------------------------------------------------------- |
-| 200         | Successful response with Category Axis details.        |
-| 400         | Bad request – missing or invalid parameters.           |
-| 401         | Unauthorized – authentication failed.                  |
-| 404         | Not found – workbook, worksheet, or chart does not exist. |
-| 500         | Internal server error.                                  |
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "CategoryAxis": {
+    "AxisBetweenCategories": true,
+    "AxisLine": {
+      "IsVisible": true,
+      "Weight": 1.0
+    },
+    "MajorTickMark": "Cross",
+    "MinorTickMark": "None",
+    "Title": {
+      "Text": "Category Axis",
+      "IsVisible": true
+    },
+    "Labels": {
+      "IsAutoRotation": false,
+      "RotationAngle": 0,
+      "IsVisible": true
+    }
+  }
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the GetChartCategoryAxis API with SDKs
+
+### GetChartCategoryAxis API Specification
+
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetChartCategoryAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -86,7 +121,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -154,24 +189,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< /tabs >}}
 
-For modifying the category axis, see the **[Update Chart Category Axis](/charts/category-axis/update/)** page.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Get Chart Category Axis – Aspose.Cells Cloud API",
-  "description": "Retrieves the category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API.",
-  "url": "https://docs.aspose.cloud/cells/charts/category-axis/get/",
-  "author": {
-    "@type": "Organization",
-    "name": "Aspose"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Aspose"
-  },
-  "datePublished": "2026-07-08",
-  "keywords": "Aspose.Cells, Chart Category Axis, REST API, Excel, Cloud API"
-}
-</script>

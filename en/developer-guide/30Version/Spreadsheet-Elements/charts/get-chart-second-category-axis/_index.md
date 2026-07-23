@@ -16,9 +16,10 @@ This REST API retrieves the **second‑category axis** of a chart.
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis
 ```
 
-**Prerequisites**: The request must include a valid JWT access token in the `Authorization` header. The target workbook must be stored in Aspose Cloud storage and the specified `name`, `sheetName`, and `chartIndex` must exist.
+### **Security and Authentication**
 
-**Notes**: Rate‑limit information, supported file formats, and known limitations for the second‑category axis endpoint are documented in the general Aspose.Cells API guide.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 
 ### Request parameters
 
@@ -29,6 +30,41 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 | chartIndex     | integer | path                            | Zero‑based index of the chart whose axis is requested. |
 | folder         | string  | query                           | Folder path in the storage where the file is located.  |
 | storageName    | string  | query                           | Name of the Aspose Cloud storage to use (optional).    |
+
+
+### **Response**
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "Axis": {
+    "Name": "Second Category Axis",
+    "IsVisible": true,
+    "AxisLine": { "Style": "Solid", "Weight": 1 },
+    "TickMarks": "Inside",
+    "Label": {
+      "Font": { "Size": 10, "Color": "#000000" },
+      "Format": "General"
+    }
+  }
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the GetChartSecondCategoryAxis API with SDKs
+
+### GetChartSecondCategoryAxis API Specification
 
 The **Get‑Chart‑Second‑Category‑Axis** operation is defined in the [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetChartSecondCategoryAxis) and enables direct REST interactions from a web browser or any HTTP client.
 
@@ -67,21 +103,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 }
 ```
 
-_The `Axis` object contains the properties that describe the second‑category axis (e.g., `Name`, `IsVisible`, `AxisLine`, `TickMarks`, `Label`)._
-
-| Status Code | Description | Typical Response |
-|------------|-------------|------------------|
-| 200 | Request succeeded. Returns the second‑category axis object. | `{ "Code": 200, "Status": "OK", "Axis": { ... } }` |
-| 400 | Bad request – missing or invalid parameters. | `{ "Code": 400, "Message": "Invalid parameter." }` |
-| 401 | Unauthorized – authentication failed or token missing. | `{ "Code": 401, "Message": "Authentication required." }` |
-| 404 | Not found – the specified workbook, worksheet, or chart does not exist. | `{ "Code": 404, "Message": "Resource not found." }` |
-| 500 | Internal server error – unexpected condition on the server. | `{ "Code": 500, "Message": "Server error." }` |
-
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the fastest way to integrate this API into your project. SDKs handle low‑level details such as authentication, request building, and response parsing, letting you focus on business logic. See the full list of Aspose.Cells Cloud SDKs in the [GitHub repository](https://github.com/aspose-cells-cloud).
 

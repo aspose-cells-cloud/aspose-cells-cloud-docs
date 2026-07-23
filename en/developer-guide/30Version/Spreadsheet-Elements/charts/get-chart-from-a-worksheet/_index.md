@@ -9,19 +9,19 @@ description: "Retrieve chart information, including metadata and export format, 
 ArticleTitle: "Get Chart from a Worksheet – Aspose.Cells Cloud API"
 ---
 
-This REST API retrieves chart information.
-
-**Prerequisites**:  
-- An Aspose Cloud storage account must be configured.  
-- The target Excel file must be uploaded to the selected storage.  
-- A valid OAuth 2.0 bearer token is required for authentication.  
-- Ensure the chart index you request exists; otherwise a `404` error is returned.
-
 ## REST API
+
+This REST API retrieves chart information.
 
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}
 ```
+
+
+### Security and Authentication
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 
 ### Request parameters
 
@@ -33,6 +33,43 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 | format         | string  | query    | Desired export format (e.g., png, jpeg).    |
 | folder         | string  | query    | Folder path where the document is stored.   |
 | storageName    | string  | query    | Name of the storage service.                |
+
+
+### **Response**
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "Chart": {
+    "Name": "Chart 1",
+    "Type": "Bar",
+    "Top": 50,
+    "Left": 100,
+    "Width": 400,
+    "Height": 300,
+    "DataRange": "A1:B5",
+    "ShowLegend": true,
+    "Format": "png"
+  }
+}
+```
+
+**Response Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
+
+## How to Use the GetWorksheetChart API with SDKs
+
+### GetWorksheetChart API Specification
+
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -72,31 +109,11 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 }
 ```
 
-**Status Codes**
-
-| Code | Meaning                              | Description                                                            |
-|------|--------------------------------------|------------------------------------------------------------------------|
-| 200  | OK                                   | The chart information was retrieved successfully.                     |
-| 400  | Bad Request                          | Required parameters are missing or malformed.                         |
-| 401  | Unauthorized                         | Invalid or missing authentication token.                               |
-| 404  | Not Found                            | The specified file, worksheet, or chart does not exist.               |
-| 500  | Internal Server Error                | An unexpected error occurred on the server.                            |
-
-**Error Response Example**
-
-```json
-{
-  "Code": 404,
-  "Status": "Not Found",
-  "Message": "Chart with index 0 does not exist in worksheet 'Sheet5'."
-}
-```
-
 {{< /tab >}}
 
 {{< /tabs >}}
 
-## Cloud SDK Family
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -163,9 +180,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
-
-For additional chart operations, see the related pages:
-
-- [Add a Chart](/charts/add/)
-- [Delete a Chart](/charts/delete/)
-- [Update a Chart](/charts/update/)
