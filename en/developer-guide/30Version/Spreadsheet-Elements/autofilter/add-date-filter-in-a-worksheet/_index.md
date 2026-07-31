@@ -7,14 +7,17 @@ url: /autofilter/add-date-filter/
 aliases:
   - /add-date-filter-in-a-worksheet/
   - /autofilter/add-a-date-filter/
-keywords: "Aspose.Cells, Excel date filter, AutoFilter API, REST API, cloud SDK, cURL, spreadsheet automation"
 description: "Learn how to add a date filter to an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes cURL example, SDK snippets (C#, Java, Python, etc.), parameters, and error handling."
 weight: 65
+ArticleTitle: "Add Date Filter to an Excel Worksheet | Aspose.Cells Cloud API"
+keywords: "Aspose.Cells, Excel date filter, AutoFilter API, REST API, cloud SDK, cURL, spreadsheet automation"
 ---
 
 ## REST API
 
 This REST API adds a **date filter** to an Excel worksheet.
+
+**Prerequisites:** You must have a valid JWT token, and the target workbook must already exist in the specified storage location. The request does not require a JSON body.
 
 ```bash
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
@@ -44,6 +47,9 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | **refresh**              | boolean | Query    | Refresh the filter after applying (`true` or `false`).                                                                                                          |
 | **folder**               | string  | Query    | Folder path of the original workbook.                                                                                                                           |
 | **storageName**          | string  | Query    | Name of the storage service.                                                                                                                                    |
+
+*The PUT request does not require a request body; all parameters are supplied via the query string.*
+
 ### **Response**
 
 ```json
@@ -57,7 +63,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Operation succeeded; response contains status details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
@@ -69,7 +75,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ### PutWorksheetDateFilter API Specification
 
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/AutoFilter/PutWorksheetDateFilter" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -104,7 +110,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
@@ -136,7 +142,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDateFilter.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutWorksheetDateFilter.ts" >}}
 
 {{< /tab >}}
 

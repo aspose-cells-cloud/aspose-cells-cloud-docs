@@ -15,9 +15,9 @@ ArticleTitle: "Add Rows to Excel Worksheet using Aspose.Cells Cloud API – Step
 This article explains how to insert a single empty row or multiple rows into an existing worksheet by using the Aspose.Cells Cloud REST API. Ensure you have a valid API key and the appropriate SDK installed before proceeding.
 
 **Prerequisites**  
-- Aspose.Cells Cloud account with an active subscription.  
-- API key/Access token generated from the Aspose Cloud dashboard.  
-- One of the supported SDKs (C#, Java, Python, Node.js) installed and configured.  
+- [ ] Aspose.Cells Cloud account with an active subscription.  
+- [ ] API key/Access token generated from the Aspose Cloud dashboard.  
+- [ ] One of the supported SDKs (C#, Java, Python, Node.js) installed and configured.  
 
 **API Reference**  
 - **HTTP Method:** `POST`  
@@ -39,6 +39,15 @@ This article explains how to insert a single empty row or multiple rows into an 
   }
   ```
 
+  **cURL example**
+
+  ```bash
+  curl -X POST "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/rows?startrow=5&totalRows=3&folder=MyFolder&storage=MyStorage" \
+      -H "Authorization: Bearer {access_token}" \
+      -H "Content-Type: application/json" \
+      -d '{"startrow":5,"totalRows":3}'
+  ```
+
 - **Successful Response (HTTP 200):** Returns the updated worksheet information, including the new row count.  
 
   ```json
@@ -49,6 +58,16 @@ This article explains how to insert a single empty row or multiple rows into an 
       "Name": "Sheet1",
       "RowsCount": 30
     }
+  }
+  ```
+
+- **Error Response Example (HTTP 400):**  
+
+  ```json
+  {
+    "Code": 400,
+    "Status": "Bad Request",
+    "Message": "Invalid startrow parameter. It must be a non‑negative integer."
   }
   ```
 

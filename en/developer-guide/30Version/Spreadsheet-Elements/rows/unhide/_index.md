@@ -13,6 +13,8 @@ ArticleTitle: "Unhide rows on an Excel worksheet using Aspose.Cells Cloud API"
 
 This REST API unhides rows on an Excel worksheet.
 
+**Prerequisites:** Obtain a valid JWT access token from the Aspose Cloud authentication service and ensure the target workbook is uploaded to a supported storage before invoking this endpoint.
+
 ## REST API
 
 ```bash
@@ -31,7 +33,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/row
 | folder         | string  | query    | The document folder.                         |
 | storageName    | string  | query    | Name of the storage.                         |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/Cells/PostUnhideWorksheetRows" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 **Authentication**  
 All requests must be authenticated using a JWT access token obtained from the Aspose Cloud authentication service. Include the token in the `Authorization: Bearer <jwt token>` header.
@@ -48,6 +50,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
  -H "Content-Type: application/json" \
  -H "Accept: application/json" \
  -H "Authorization: Bearer <jwt token>"
+# Note: POST body is empty for this endpoint
 ```
 
 {{< /tab >}}
@@ -74,6 +77,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 | 401 Unauthorized | Missing or invalid JWT token.       |
 | 404 Not Found | Specified workbook, worksheet, or rows do not exist. |
 | 500 Internal Server Error | Unexpected server error. |
+
+For detailed troubleshooting, see the [Error Handling guide](/error-handling/).
 
 ## Cloud SDK Family
 

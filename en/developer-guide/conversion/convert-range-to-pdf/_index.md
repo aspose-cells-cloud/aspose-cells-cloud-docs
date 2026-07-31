@@ -1,7 +1,7 @@
 ---
 title: "Convert Excel Range to PDF with Aspose.Cells Cloud API"
 second_title: "Document"
-ArticleTitle: "How to Convert Local Spreadsheet Range Data to a PDF File: Step-by-Step Guide"
+ArticleTitle: "How to Convert Local Spreadsheet Range Data to a PDF File: Step‑By‑Step Guide"
 linktitle: "Convert Range to PDF"
 type: docs
 url: /convert-range-to-pdf/
@@ -12,12 +12,20 @@ weight: 100
 
 Export a range of data from a local Excel file to a [PDF](https://docs.fileformat.com/pdf/) file using the Cloud API.
 
+**Prerequisites**: Before using this API you need a valid Aspose.Cells Cloud account, a JWT access token, and optionally an Aspose.Cells Cloud SDK for your programming language. Ensure the target storage (default or custom) is configured if you plan to use the `outStorageName` parameter.
+
 ## **Convert Range to PDF API**
 
 ### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/range/pdf
+```
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/pdf?worksheet=Sheet1&range=A1:C10" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/file.xlsx"
 ```
 
 ### **Security and Authentication**
@@ -74,7 +82,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - **Audit Trails**: Preserve financial data ranges as uneditable PDF evidence.  
 - **Portfolio Summaries**: Export investment performance ranges as client‑ready PDF statements.  
 - **Quality Control Reports**: Export inspection data ranges to PDF for compliance records.  
-- **Inventory Summaries**: Transform stock‑level tables to PDF for management review.
+- **Inventory Summaries**: Transform stock‑level tables to PDF for management review.  
 
 ## Why Should You Use the Convert Range to PDF API?
 
@@ -120,3 +128,5 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToPDF.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+**See also**: [Convert Worksheet to PDF](/convert-worksheet-to-pdf/), [Export Range as Image](/export-range-to-image/), [Convert Spreadsheet to PDF](/convert-spreadsheet-to-pdf/).

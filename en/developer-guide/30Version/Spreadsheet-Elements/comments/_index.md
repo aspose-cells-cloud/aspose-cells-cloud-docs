@@ -5,8 +5,8 @@ linktitle: "Comments"
 type: docs
 url: /comments/
 aliases: [/working-with-comments/]
-keywords: "Excel comments, cell notes, comment box, Aspose Cells Cloud API, REST API, spreadsheet annotation"
-description: "Learn how to programmatically add, retrieve, update, and delete Excel comments using the Aspose.Cells Cloud REST API (v3.0). Includes request/response examples, prerequisites, version info, and error‑handling guidance."
+keywords: "Aspose.Cells Cloud, Excel comments API, spreadsheet comments, REST API"
+description: "Learn how to add, retrieve, update, and delete Excel comments using Aspose.Cells Cloud REST API v3.0 with code examples, prerequisites, and error handling."
 weight: 100
 ArticleTitle: "Working with Excel Comments – Aspose.Cells Cloud API Guide"
 ---

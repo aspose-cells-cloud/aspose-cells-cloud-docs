@@ -1,16 +1,16 @@
 ---
-title: "Aspose.Cells Cloud Web API – Automatically Delete Blank/Empty Rows"
+title: "Aspose.Cells Cloud API – Delete Blank/Empty Rows"
 second_title: "Document"
 ArticleTitle: "How to Delete All Blank/Empty Rows in Excel – Complete Data Cleanup Guide"
 linktitle: "Delete Blank Rows"
 type: docs
 url: /delete-spreadsheet-blank-rows/
-keywords: "Aspose.Cells, Excel, blank rows, delete rows, spreadsheet cleanup, API"
-description: "Remove all empty rows from Excel files via Aspose.Cells Cloud API. Fast, batch‑ready, and fully programmable – see code examples in C#, Java, Python, and more."
+keywords: "Aspose.Cells, delete blank rows, Excel API, spreadsheet cleanup"
+description: "Remove all empty rows from Excel files via Aspose.Cells Cloud API. Supports batch processing, multiple languages, and easy SDK integration."
 weight: 100
 ---
 
-Automatically delete all blank rows from Excel spreadsheets using Aspose.Cells Cloud API. Our intelligent API detects and removes rows that contain no data, formulas, comments, or objects while preserving all other content. It supports batch processing, cloud automation, and seamless integration for enterprise data‑cleaning workflows.
+Automatically delete all blank rows from Excel spreadsheets using Aspose.Cells Cloud API. The API scans the workbook and removes rows that contain no data, formulas, comments, or objects while preserving all other content. It supports batch processing, cloud automation, and seamless integration for enterprise data‑cleaning workflows.
 
 ## DeleteSpreadsheetBlankRows API
 
@@ -49,7 +49,7 @@ All calls must include the `Authorization: Bearer <access_token>` header. Obtain
 
 ### Response
 
-The API returns a JSON array containing a reference to the processed file.
+On success the API returns **HTTP 200 OK** with a JSON payload containing a reference to the processed file.
 
 ```json
 [
@@ -61,6 +61,14 @@ The API returns a JSON array containing a reference to the processed file.
     }
   }
 ]
+```
+
+**Example cURL request**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/delete/blank-rows?outPath=cleaned.xlsx" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/input.xlsx"
 ```
 
 ### Error Codes
@@ -85,7 +93,7 @@ The API returns a JSON array containing a reference to the processed file.
 - **Developer‑Friendly** – SDKs are available for multiple languages, reducing development effort compared with building custom solutions.
 - **Reduced Labor Costs** – Eliminates the need for manual spreadsheet cleanup or dedicated staff.
 - **Pay‑per‑Use** – You only pay for the API calls you actually make.
-- **Zero Maintenance Costs** – No servers to manage, no software updates, and no compatibility concerns.
+- **No server maintenance required** – the service is fully managed.
 
 ## How to Use the Delete Spreadsheet Blank Rows API with SDKs
 
@@ -126,3 +134,5 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankRows.go" >}}  
 {{</tab>}}  
 {{< /tabs >}}
+
+For related operations, see the [Delete Spreadsheet Blank Columns API](https://reference.aspose.cloud/cells/#/TransformController/DeleteSpreadsheetBlankColumns).

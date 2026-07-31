@@ -14,6 +14,12 @@ ArticleTitle: "Remove Characters from Excel – Aspose.Cells Cloud API (POST /ce
 
 A comprehensive set of tools for cleaning text content within selected cells. The API removes specific characters, predefined character sets, or substrings, ensuring that worksheet text is standardized and free from unwanted symbols.
 
+**Prerequisites**
+
+- An active Aspose Cloud account.  
+- A valid JWT access token obtained as described in the authentication guide.  
+- The Excel file must be uploaded to storage before calling this endpoint.  
+- Supported file formats include `.xlsx`, `.xls`, `.xlsm`, and other common Excel types.
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/removecharacters
@@ -21,7 +27,7 @@ POST https://api.aspose.cloud/v3.0/cells/removecharacters
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
 
 ### Function Description
 
@@ -93,21 +99,20 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/removecharacters" \
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Removal succeeded; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
 
-
 ## How to Use the PostRemoveCharacters API with SDKs
 
 ### PostRemoveCharacters API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/TextProcessingController/PostRemoveCharacters) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/#/TextProcessingController/PostRemoveCharacters" rel="noopener noreferrer">Full OpenAPI spec for PostRemoveCharacters endpoint</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

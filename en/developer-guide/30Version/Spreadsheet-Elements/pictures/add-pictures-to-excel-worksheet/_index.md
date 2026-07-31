@@ -5,7 +5,7 @@ linktitle: "Add"
 type: docs
 url: /pictures/add/
 aliases: [/add-pictures-to-excel-worksheet/]
-keywords: "Aspose.Cells, Excel, Add Picture, REST API, Cloud SDK, Spreadsheet, Worksheet, Image"
+keywords: "Aspose.Cells, Excel, add picture, REST API"
 description: "Use Aspose.Cells Cloud REST API to add an image to an Excel worksheet. SDKs for Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, and Swift simplify integration across platforms."
 weight: 20
 ArticleTitle: "Add a Picture to an Excel Worksheet – Aspose.Cells Cloud API"
@@ -46,6 +46,18 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 | 401  | Unauthorized – authentication token is missing or invalid. |
 | 404  | Not found – specified workbook, worksheet, or storage does not exist. |
 | 500  | Internal server error – unexpected condition encountered. |
+
+**Example 200 Response Schema**
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "PictureUrl": "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/1"
+}
+```
+
+**Note:** The maximum picture size is 10 MB; larger files will be rejected with a `400 Bad Request` response.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/PutWorksheetAddPicture) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -112,7 +124,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutWorksheetAddPicture.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82deb4189bc27ae92abf73c36b4df0" "Example_PutWorksheetAddPicture.ts" >}}
 
 {{< /tab >}}
 

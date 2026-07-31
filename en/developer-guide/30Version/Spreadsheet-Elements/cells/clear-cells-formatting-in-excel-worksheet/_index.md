@@ -5,20 +5,31 @@ url: /clear-cells-formatting-in-excel-worksheet/
 weight: 100
 keywords: "Aspose.Cells Cloud, Excel, Clear Cell Formatting, REST API, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Use Aspose.Cells Cloud REST API to clear cell formatting in an Excel worksheet. Includes request details, a cURL example, and SDK code snippets for multiple languages."
+ArticleTitle: "Clear Cell Formatting in an Excel Worksheet - Aspose.Cells Cloud API"
 ---
 
 ## REST API
 
-This REST API clears cell formatting in an Excel file.
+**Note:** All Aspose.Cells Cloud API calls must be made over **HTTPS**. HTTP endpoints are deprecated and may be blocked by browsers.
+
+- **Method:** POST  
+- **Endpoint:** `https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats`
+
+This REST API clears cell formatting in an Excel file and is part of the Aspose.Cells Cloud suite for clearing cell formatting in Excel worksheets.
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
 ```
 
 ## Security and Authentication
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+**Prerequisites**
 
+- A valid Aspose Cloud account.  
+- A JWT access token obtained via the authentication flow.  
+- The target workbook uploaded to storage (or specify `folder`/`storageName` parameters).
+
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 | Parameter Name | Type    | Location | Description                           |
 | -------------- | ------- | -------- | ------------------------------------- |
@@ -32,7 +43,6 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 | folder         | string  | query    | Folder that contains the workbook.    |
 | storageName    | string  | query    | Name of the storage location.         |
 
-
 ### **Response**
 
 ```json
@@ -41,6 +51,13 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
     "Code":200
 }
 ```
+
+**Response Schema**
+
+| Field  | Type    | Description                                   |
+|--------|---------|-----------------------------------------------|
+| Code   | integer | HTTP status code returned by the API (e.g., 200). |
+| Status | string  | Result of the operation (`OK` for success).   |
 
 **Http Status Codes**
 
@@ -52,12 +69,11 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
 
-
 ## How to Use the PostClearFormats API with SDKs
 
 ### PostClearFormats API Specification
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostClearFormats) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+<a href="https://apireference.aspose.cloud/cells/#/Cells/PostClearFormats" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -145,3 +161,8 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**See also**
+
+- [Clear Contents and Styles of Cells](https://docs.aspose.cloud/cells/clear-contents-and-styles)  
+- [Set Cell Style](https://docs.aspose.cloud/cells/set-cell-style)

@@ -58,11 +58,54 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert" \
      -o Sample.pdf
 ```
 
+**API request details**
+
+The conversion operation is performed with a **POST** request to the endpoint:
+
+```
+https://api.aspose.cloud/v3.0/cells/convert
+```
+
+Required headers:
+
+| Header                | Value                              |
+|-----------------------|------------------------------------|
+| `Authorization`       | `Bearer {access_token}`            |
+| `Content-Type`        | `application/json`                |
+
+The request body must be a JSON representation of `ConvertWorkbookOptions` (see the example above). All properties are optional unless required by the chosen `ConvertFormat`.
+
+**API response**
+
+A successful conversion returns **HTTP 200 OK** (or **202 Accepted** for asynchronous processing) with the converted file streamed in the response body. When the response is streamed, the `Content-Disposition` header contains the suggested file name.
+
+Example of a JSON response for an asynchronous request:
+
+```json
+{
+  "JobId": "a1b2c3d4e5",
+  "Status": "InProgress",
+  "ResultUrl": "https://api.aspose.cloud/v3.0/cells/jobs/a1b2c3d4e5/result"
+}
+```
+
+**Status codes**
+
+| Code | Meaning                                 |
+|------|------------------------------------------|
+| 200  | Conversion completed; file returned.     |
+| 202  | Conversion accepted; result available later. |
+| 400  | Bad request – missing or invalid parameters. |
+| 401  | Unauthorized – invalid or missing token. |
+| 403  | Forbidden – insufficient permissions.   |
+| 500  | Internal server error.                   |
+
 **Notes / Limitations**
 
 - The `CheckExcelRestriction` flag enforces Excel limits such as maximum rows (1,048,576) and columns (16,384).  
 - Not all target formats support every `SaveOptions` property; unsupported options are ignored.  
-- When using `HttpUri` as a data source, the URL must be publicly reachable without authentication.
+- When using `HttpUri` as a data source, the URL must be publicly reachable without authentication.  
+- The API method and endpoint information have been added to improve developer clarity and reduce integration errors.  
 
 ## FileSource Properties
 
@@ -134,12 +177,12 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert" \
 | CachedFileFolder                  | String        | true     | false    |               | Folder used for temporary cached files.               |
 | ClearData                         | Boolean       | true     | false    |               | Clears existing data before saving.                   |
 | CreateDirectory                   | Boolean       | true     | false    |               | Creates the target directory if it does not exist.    |
-| EnableHttpCompression             | Boolean       | true     | false    |               | Enables HTTP compression for the response.            |
-| RefreshChartCache                 | Boolean       | true     | false    |               | Refreshes cached chart data before saving.            |
-| SortNames                         | Boolean       | true     | false    |               | Sorts named ranges alphabetically.                    |
-| ValidateMergedAreas               | Boolean       | true     | false    |               | Validates merged cells for consistency.               |
-| CheckExcelRestriction             | Boolean       | true     | false    |               | Enforces Excel‑specific limits during conversion.     |
-| EncryptDocumentProperties         | Boolean       | true     | false    |               | Encrypts document properties in the output file.      |
+| EnableHttpCompression             | Boolean       | true     | false    |               | Enables HTTP compression for the response.           |
+| RefreshChartCache                 | Boolean       | true     | false    |               | Refreshes cached chart data before saving.           |
+| SortNames                         | Boolean       | true     | false    |               | Sorts named ranges alphabetically.                   |
+| ValidateMergedAreas               | Boolean       | true     | false    |               | Validates merged cells for consistency.              |
+| CheckExcelRestriction             | Boolean       | true     | false    |               | Enforces Excel‑specific limits during conversion.    |
+| EncryptDocumentProperties          | Boolean       | true     | false    |               | Encrypts document properties in the output file.      |
 
 ## HtmlSaveOptions Properties
 

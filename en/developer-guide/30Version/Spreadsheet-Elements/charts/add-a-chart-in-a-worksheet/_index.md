@@ -6,16 +6,17 @@ aliases: [/add-a-chart-in-a-worksheet/]
 weight: 20
 description: "Learn how to add a chart to an Excel worksheet using Aspose.Cells Cloud API v3.0. Includes endpoint, parameters, cURL example, and SDK snippets."
 keywords:
-  [
-    "add chart Aspose.Cells",
-    "Aspose.Cells add chart API",
-    "chart API REST",
-    "Aspose.Cells SDK examples",
-  ]
+  - "add chart Aspose.Cells"
+  - "Aspose.Cells add chart API"
+  - "chart API REST"
+  - "Aspose.Cells SDK examples"
 ArticleTitle: "Add a Chart to a Worksheet – Aspose.Cells Cloud API Guide"
 ---
 
-This REST API adds a new chart to a worksheet. 
+This REST API adds a new chart to a worksheet.
+
+**Prerequisites**  
+Before calling this operation, obtain a valid JWT access token and ensure the target workbook is stored in the specified folder or storage location.
 
 ## REST API
 
@@ -26,7 +27,6 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
 
 ### Request parameters
 
@@ -64,12 +64,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Chart added successfully; response contains chart object details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
 
 ## How to Use the PutWorksheetAddChart API with SDKs
 

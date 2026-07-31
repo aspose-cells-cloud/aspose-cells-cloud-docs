@@ -5,15 +5,15 @@ linktitle: "Columns"
 type: docs
 url: /columns/
 aliases: [/working-with-columns/]
-keywords: "Excel columns, Aspose.Cells Cloud API, spreadsheet column operations, REST API"
-description: "Explore Aspose.Cells Cloud API operations for Excel worksheet columns, including retrieving, adding, copying, hiding, unhiding, grouping, ungrouping, and deleting columns."
+keywords: "Excel, columns, Aspose.Cells Cloud, API, spreadsheet, worksheet, REST API"
+description: "Detailed guide to Aspose.Cells Cloud API operations for Excel worksheet columns, covering retrieval, addition, copying, hiding, unhiding, grouping, ungrouping, and deletion."
 weight: 100
 ArticleTitle: "Working with Excel columns – Aspose.Cells Cloud Documentation"
 ---
 
 ## Working with Columns on an Excel file
 
-This page provides quick navigation to the primary column‑related operations available through the Aspose.Cells Cloud API. Use the links below to view detailed documentation, request parameters, and sample responses for each action.
+This page provides a concise overview of the primary column‑related operations available through the Aspose.Cells Cloud API. Use the links below to navigate to the detailed documentation for each action, including request parameters, example code, and sample responses.
 
 - [How to get a column from an Excel worksheet.](/cells/columns/get/)
 - [How to add an empty column to an Excel worksheet.](/cells/columns/add/)

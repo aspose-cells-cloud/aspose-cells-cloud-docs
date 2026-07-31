@@ -5,8 +5,8 @@ ArticleTitle: "Create Folder – Aspose.Cells Cloud API"
 linktitle: "Create Folder"
 type: docs
 url: /create-folder/
-keywords: "Aspose.Cells Cloud, Create Folder, Excel API, REST API, Storage, Folder Management"
-description: "Learn how to create a new folder in Aspose.Cells Cloud storage using a simple REST PUT request. Includes sample code, authentication guidance, and error handling."
+keywords: "Aspose.Cells, Cloud API, Create Folder, Storage Management, Excel"
+description: "Create a new folder in Aspose.Cells Cloud storage via a simple PUT request. See request format, parameters, response and error handling."
 weight: 100
 ---
 
@@ -16,6 +16,22 @@ weight: 100
 
 ```
 PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
+```
+
+**Sample cURL request**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/myFolder/subFolder" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
+**Sample request payload**
+
+```json
+{
+  // No request body is required for this operation.
+}
 ```
 
 ### Function Description
@@ -29,6 +45,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ```bash
 -H "Authorization: Bearer {access_token}"
 ```
+
+**Prerequisites**
+
+1. A valid Aspose Cloud account.  
+2. A generated JWT access token (see the authentication link above).  
+3. Write permission for the target storage (default storage is used if `storageName` is omitted).
 
 ### The request parameters of **createFolder** API are
 
@@ -57,11 +79,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderController/CreateFolder) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/#/FolderController/CreateFolder" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
 ## Excel API SDK
 
-Using an SDK is the best way to speed up development. An SDK manages low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK manages low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
@@ -94,5 +116,5 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 **See also**
 
-- Delete Folder – `DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/{path}` (see [/cells/delete-folder/](/cells/delete-folder/))  
-- Copy Folder – `PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{srcPath}/copy` (see [/cells/copy-folder/](/cells/copy-folder/))
+- Delete Folder – `DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/{path}` (see <a href="/cells/delete-folder/" rel="noopener noreferrer">Delete Folder</a>)  
+- Copy Folder – `PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{srcPath}/copy` (see <a href="/cells/copy-folder/" rel="noopener noreferrer">Copy Folder</a>)

@@ -1,67 +1,108 @@
 ---
 title: "Aspose.Cells Cloud API – Update (Set) Document Property"
-second_title: "Document"
-linktitle: "Update"
-type: docs
-url: /document-properties/update/
-aliases: [/set-a-particular-document-property/]
+description: "Set or create a document property in an Excel workbook using Aspose.Cells Cloud REST API."
 keywords: "Aspose.Cells, Cloud API, Update Document Property, Excel metadata, REST API, SDK examples"
-description: "Learn how to set or create a document property in an Excel workbook using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL sample, error codes, and SDK snippets."
-weight: 30
-ArticleTitle: "Aspose.Cells Cloud API – Update (Set) Document Property"
+api_version: "v3.0"
 ---
 
-This REST API allows you to **set** or **create** a document property.
+# Overview
+The **Update (Set) Document Property** operation lets you create a new document property or modify an existing one in an Excel workbook stored in Aspose Cloud Storage.
 
-## Security and Authentication
+*Endpoint*  
+`PUT https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}`  
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+The request accepts a JSON payload that describes the property to be set.
 
-## REST API
+---
 
-```bash
-PUT https://api.aspose.cloud/v3.0/cells/{name}/documentproperties/{propertyName}
+## Prerequisites
+- A valid **JWT access token** (see the **Authentication** section).  
+- The target workbook (`{name}`) must already exist in Aspose Cloud Storage (or a folder you specify).  
+- The storage name (`storageName`) is optional; if omitted, the default storage is used.
+
+---
+
+## Authentication
+Aspose.Cells Cloud uses **JWT token‑based authentication**. Include the token in the `Authorization` header:
+
+```http
+Authorization: Bearer <jwt-token>
 ```
 
-The following parameters are accepted:
+For details on obtaining a JWT token, see the [Authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
-| Parameter Name   | Type   | Location | Description                                       |
-| ---------------- | ------ | -------- | ------------------------------------------------- |
-| **name**         | string | path     | The name of the Excel file.                       |
-| **propertyName** | string | path     | The name of the property to set.                  |
-| **property**     | object | body     | JSON object that contains the new property value. |
-| **folder**       | string | query    | The folder where the file is stored (optional).   |
-| **storageName**  | string | query    | The name of the storage (optional).               |
+---
 
-### Document Property Object Schema
+## HTTP Request
 
-A **Document Property** is a name/value pair stored in the workbook’s metadata.
+| Element          | Value |
+|------------------|-------|
+| **Method**       | `PUT` |
+| **URI**          | `/cells/{name}/documentproperties/{propertyName}` |
+| **Content-Type**| `application/json` |
+| **Accept**       | `application/json` |
 
-- **Name** _(string, required)_ – The property name (e.g., `author`).
-- **Value** _(string, required)_ – The property value.
-- **BuiltIn** _(string, optional)_ – Indicates whether the property is built‑in.
-- **Link** _(object, optional)_ – Hyperlink information with fields `Href`, `Rel`, `Title`, and `Type`.
+### Path Parameters
 
-<a href="https://apireference.aspose.cloud/cells/#/Properties/PutDocumentProperty" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+| Name          | Type   | Required | Description |
+|---------------|--------|----------|-------------|
+| `name`        | string | ✅ | The name of the Excel file (including extension). |
+| `propertyName`| string | ✅ | The name of the document property to set or create. |
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+### Query Parameters
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+| Name          | Type   | Required | Description |
+|---------------|--------|----------|-------------|
+| `folder`      | string | ❌ | Folder path in storage where the workbook resides. |
+| `storageName` | string | ❌ | Name of the storage service. If omitted, the default storage is used. |
 
-{{< tab tabNum="11" >}}
+### Request Body – Document Property Object
 
-```bash
-curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>" \
--d '{ "link": { "Href": "string", "Rel": "string", "Title": "string", "Type": "string" }, "Name": "author", "Value": "aspose", "BuiltIn": "string" }'
+```json
+{
+  "Name": "author",
+  "Value": "aspose",
+  "BuiltIn": "string",          // optional, e.g., "true" or "false"
+  "Link": {                     // optional
+    "Href": "string",
+    "Rel": "string",
+    "Title": "string",
+    "Type": "string"
+  }
+}
 ```
 
-{{< /tab >}}
+| Field   | Type   | Required | Description |
+|---------|--------|----------|-------------|
+| **Name**   | string | ✅ | Property name (e.g., `author`). |
+| **Value**  | string | ✅ | Property value. |
+| **BuiltIn**| string | ❌ | Indicates whether the property is built‑in. |
+| **Link**   | object | ❌ | Hyperlink information (`Href`, `Rel`, `Title`, `Type`). |
 
-{{< tab tabNum="12" >}}
+---
+
+## Example Request (cURL)
+
+```bash
+curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author?folder=Docs&storageName=MyStorage" \
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt-token>" \
+  -d '{
+        "Name": "author",
+        "Value": "aspose",
+        "BuiltIn": "false",
+        "Link": {
+          "Href": "https://example.com",
+          "Rel": "self",
+          "Title": "Author link",
+          "Type": "text/html"
+        }
+      }'
+```
+
+### Example Successful Response
 
 ```json
 {
@@ -70,75 +111,40 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author
 }
 ```
 
-{{< /tab >}}
+---
 
-{{< /tabs >}}
+## Response Codes
 
-## Error Handling
+| Code | Meaning            | Response Body |
+|------|--------------------|---------------|
+| **200** | Property set successfully | `{ "Code": 200, "Status": "OK" }` |
+| **202** | Request accepted for asynchronous processing (if applicable) | `{ "Code": 202, "Status": "Accepted" }` |
+| **400** | Bad request – missing or invalid parameters | `{ "Code": 400, "Message": "Invalid request data." }` |
+| **401** | Unauthorized – invalid or missing JWT token | `{ "Code": 401, "Message": "Authentication failed. Invalid or missing token." }` |
+| **404** | Not found – workbook or property does not exist | `{ "Code": 404, "Message": "File or property not found." }` |
+| **500** | Internal server error | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
 
-The API can return the following error responses. Handle them according to your application’s needs.
+---
 
-| HTTP Status | Description                                                 | Example JSON Body                                                                |
-| ----------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| **400**     | Bad request – missing or invalid parameters.                | `{ "Code": 400, "Message": "Invalid request data." }`                            |
-| **401**     | Unauthorized – JWT token is missing or invalid.             | `{ "Code": 401, "Message": "Authentication failed. Invalid or missing token." }` |
-| **404**     | Not found – the specified file or property does not exist.  | `{ "Code": 404, "Message": "File or property not found." }`                      |
-| **500**     | Internal server error – unexpected condition on the server. | `{ "Code": 500, "Message": "An unexpected error occurred." }`                    |
+## SDK Samples
+The following code snippets demonstrate how to invoke the operation with the official Aspose.Cells Cloud SDKs.
 
-## Cloud SDK Family
+| Language | Sample |
+|----------|--------|
+| **C#** | <details><summary>Show C# example</summary>```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar apiInstance = new DocumentPropertiesApi();\nvar request = new PutDocumentPropertyRequest(\n    name: \"test.xlsx\",\n    propertyName: \"author\",\n    property: new CellsDocumentProperty {\n        Name = \"author\",\n        Value = \"aspose\",\n        BuiltIn = \"false\",\n        Link = new Link {\n            Href = \"https://example.com\",\n            Rel = \"self\",\n            Title = \"Author link\",\n            Type = \"text/html\"\n        }\n    },\n    folder: \"Docs\",\n    storageName: \"MyStorage\"\n);\nvar response = apiInstance.PutDocumentProperty(request);\nConsole.WriteLine(response.Status);\n```\n</details> |
+| **Java** | <details><summary>Show Java example</summary>```java\nimport com.aspose.cells.cloud.api.DocumentPropertiesApi;\nimport com.aspose.cells.cloud.model.*;\n\nDocumentPropertiesApi api = new DocumentPropertiesApi();\nCellsDocumentProperty prop = new CellsDocumentProperty();\nprop.setName(\"author\");\nprop.setValue(\"aspose\");\nprop.setBuiltIn(\"false\");\nLink link = new Link();\nlink.setHref(\"https://example.com\");\nlink.setRel(\"self\");\nlink.setTitle(\"Author link\");\nlink.setType(\"text/html\");\nprop.setLink(link);\n\nPutDocumentPropertyRequest request = new PutDocumentPropertyRequest(\"test.xlsx\", \"author\", prop, \"Docs\", \"MyStorage\");\nCellsCloudResponse response = api.putDocumentProperty(request);\nSystem.out.println(response.getStatus());\n```\n</details> |
+| **Python** | <details><summary>Show Python example</summary>```python\nfrom asposecellscloud import DocumentPropertiesApi, CellsDocumentProperty, Link\n\napi = DocumentPropertiesApi()\nprop = CellsDocumentProperty(name=\"author\", value=\"aspose\", built_in=\"false\")\nprop.link = Link(href=\"https://example.com\", rel=\"self\", title=\"Author link\", type=\"text/html\")\nresponse = api.put_document_property(name=\"test.xlsx\", property_name=\"author\", property=prop, folder=\"Docs\", storage_name=\"MyStorage\")\nprint(response.status)\n```\n</details> |
+| **Node.js** | <details><summary>Show Node.js example</summary>```javascript\nconst { DocumentPropertiesApi, CellsDocumentProperty, Link } = require('asposecellscloud');\n\nconst api = new DocumentPropertiesApi();\nconst prop = new CellsDocumentProperty({\n  name: 'author',\n  value: 'aspose',\n  builtIn: 'false',\n  link: new Link({ href: 'https://example.com', rel: 'self', title: 'Author link', type: 'text/html' })\n});\n\napi.putDocumentProperty({\n  name: 'test.xlsx',\n  propertyName: 'author',\n  property: prop,\n  folder: 'Docs',\n  storageName: 'MyStorage'\n}).then(res => console.log(res.status));\n```\n</details> |
+| **Go** | <details><summary>Show Go example</summary>```go\nimport (\n    \"context\"\n    cells \"github.com/aspose-cells-cloud/aspose-cells-cloud-go/v3\"\n)\n\napi := cells.NewDocumentPropertiesApi()\nprop := cells.CellsDocumentProperty{Name: \"author\", Value: \"aspose\", BuiltIn: \"false\"}\nprop.Link = &cells.Link{Href: \"https://example.com\", Rel: \"self\", Title: \"Author link\", Type: \"text/html\"}\nreq := cells.PutDocumentPropertyRequest{Name: \"test.xlsx\", PropertyName: \"author\", Property: &prop, Folder: \"Docs\", StorageName: \"MyStorage\"}\nresp, _, err := api.PutDocumentProperty(context.Background(), req)\nif err != nil { panic(err) }\nfmt.Println(resp.Status)\n```\n</details> |
+| **Ruby** | <details><summary>Show Ruby example</summary>```ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::DocumentPropertiesApi.new\nprop = AsposeCellsCloud::CellsDocumentProperty.new(\n  name: 'author',\n  value: 'aspose',\n  built_in: 'false',\n  link: AsposeCellsCloud::Link.new(\n    href: 'https://example.com',\n    rel: 'self',\n    title: 'Author link',\n    type: 'text/html'\n  )\n)\nresponse = api.put_document_property('test.xlsx', 'author', prop, folder: 'Docs', storage_name: 'MyStorage')\nputs response.status\n```\n</details> |
+| **PHP** | <details><summary>Show PHP example</summary>```php\n<?php\nuse Aspose\Cells\DocumentPropertiesApi;\nuse Aspose\Cells\Model\CellsDocumentProperty;\nuse Aspose\Cells\Model\Link;\n\n$api = new DocumentPropertiesApi();\n$prop = new CellsDocumentProperty([\n    'Name' => 'author',\n    'Value' => 'aspose',\n    'BuiltIn' => 'false',\n    'Link' => new Link([\n        'Href' => 'https://example.com',\n        'Rel' => 'self',\n        'Title' => 'Author link',\n        'Type' => 'text/html'\n    ])\n]);\n$response = $api->putDocumentProperty('test.xlsx', 'author', $prop, 'Docs', 'MyStorage');\necho $response->getStatus();\n?>\n```\n</details> |
+| **Perl** | <details><summary>Show Perl example</summary>```perl\nuse AsposeCellsCloud::DocumentPropertiesApi;\nuse AsposeCellsCloud::Object::CellsDocumentProperty;\nuse AsposeCellsCloud::Object::Link;\n\nmy $api = AsposeCellsCloud::DocumentPropertiesApi->new();\nmy $prop = AsposeCellsCloud::Object::CellsDocumentProperty->new(\n    Name    => 'author',\n    Value   => 'aspose',\n    BuiltIn => 'false',\n    Link    => AsposeCellsCloud::Object::Link->new(\n        Href  => 'https://example.com',\n        Rel   => 'self',\n        Title => 'Author link',\n        Type  => 'text/html'\n    )\n);\nmy $response = $api->put_document_property(name => 'test.xlsx', property_name => 'author', property => $prop, folder => 'Docs', storage_name => 'MyStorage');\nprint $response->{Status}, \"\\n\";\n```\n</details> |
 
-Using an SDK is the fastest way to develop against the API. An SDK handles low‑level details so you can focus on your project logic. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+---
 
-The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+## Related Links
+- **OpenAPI Specification**: <https://apireference.aspose.cloud/cells/#/Properties/PutDocumentProperty> (opens in a new tab, `rel="noopener noreferrer"`).  
+- **Authentication Guide**: <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/> (opens in a new tab, `rel="noopener noreferrer"`).  
+- **Aspose.Cells Cloud SDKs**: <https://github.com/aspose-cells-cloud> (opens in a new tab, `rel="noopener noreferrer"`).
 
-{{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-
-{{< tab tabNum="1" >}}
-
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "ExamplePutDocumentProperty.cs" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="2" >}}
-
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example_PutDocumentProperty.java" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="3" >}}
-
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example_PutDocumentProperty.php" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="4" >}}
-
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example_PutDocumentProperty.rb" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutDocumentProperty.ts" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example_PutDocumentProperty.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example_PutDocumentProperty.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example_PutDocumentProperty.go" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+---

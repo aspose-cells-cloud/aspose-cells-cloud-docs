@@ -20,8 +20,8 @@ Aspose.Cells Cloud API is a collection of cloud‑based Spreadsheet/Excel servic
 - Create, edit, convert, and analyze local spreadsheet files based on Aspose.Cells Cloud Web API services.  
 - Supported file formats include 30 formats, such as **xlsx**, **csv**, **ods**, **xlsb**, etc.  
 - Operate spreadsheets directly through the Aspose.Cells Cloud Web API without the need for Microsoft Excel dependencies.  
-- Free 150 API calls per month.  
-- Pay‑as‑you‑go pricing – the more you use, the larger the discount.  
+- Free tier includes up to 150 API calls per month.  
+- Pay‑as‑you‑go pricing based on usage.  
 - **Short‑code**: Things that can be done in one sentence.  
   - **Convert XLSX to PDF** → ConvertSpreadsheetToPdf  
   - **Delete extra spaces in the entire file** → TrimSpreadsheetContent  
@@ -38,7 +38,7 @@ Aspose.Cells Cloud API is a collection of cloud‑based Spreadsheet/Excel servic
 
 It is recommended to use the official SDK to simplify authentication and request handling. The SDK automatically acquires and refreshes access tokens.
 
-#### **[Install SDK (using .NET as an example)](https://www.nuget.org/packages/Aspose.cells-Cloud/#readme-body-tab)**
+#### **[Install .NET SDK (NuGet)](https://www.nuget.org/packages/Aspose.cells-Cloud/#readme-body-tab)**
 
 ```powershell
 dotnet add package Aspose.Cells-Cloud --version 26.6.0
@@ -81,6 +81,16 @@ Aspose.Cells Cloud offers the following key features to meet enterprise‑level 
 
 > **Note:** Detailed request/response schemas, HTTP methods, query parameters, and sample responses for each endpoint are available in the **Aspose.Cells Cloud Spreadsheet Web API Reference** linked below.
 
+**Quick endpoint reference**
+
+| Operation | HTTP Method | Path | Required Parameters | Sample Response |
+|-----------|-------------|------|---------------------|-----------------|
+| Convert Spreadsheet | POST | `/cells/convert` | `Spreadsheet` (file), `format` (string) | Binary file (e.g., PDF) |
+| Merge Spreadsheets | POST | `/cells/worksheets/merge` | `files` (list of files) | Merged workbook |
+| Split Spreadsheet | POST | `/cells/worksheets/split` | `Spreadsheet` (file), `format` (string) | Archive of split files |
+| Delete Blank Rows | POST | `/cells/worksheets/blankrows/delete` | `Spreadsheet` (file) | Updated workbook |
+| Replace Content | POST | `/cells/replace` | `Spreadsheet` (file), `oldValue`, `newValue` | Updated workbook |
+
 ## Support SDKs (**Available SDKs**)
 
 - Aspose.Cells Cloud provides instant‑ready [SDKs](https://github.com/aspose-cells-cloud) in every major language—pull, code, and ship:
@@ -95,8 +105,7 @@ Aspose.Cells Cloud offers the following key features to meet enterprise‑level 
 | [GoLang](https://go.dev/) | [Go Modules](https://pkg.go.dev/github.com/aspose-cells-cloud/aspose-cells-cloud-go/v25) | [GoLang SDK GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-go) |
 | [Ruby](https://www.ruby-lang.org/) | [RubyGems](https://rubygems.org/gems/aspose_cells_cloud) | [Ruby SDK GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-ruby) |
 | [Perl](https://www.perl.org/) | [CPAN](https://metacpan.org/dist/AsposeCellsCloud-CellsApi) | [Perl SDK GitHub Repository](https://github.com/aspose-cells-cloud/aspose-cells-cloud-perl) |
-
-- **API Endpoint**: [Aspose.Cells Cloud Spreadsheet Web API Reference](https://reference.aspose.cloud/cells/)
+| **API Endpoint** | [Aspose.Cells Cloud Spreadsheet Web API Reference](https://reference.aspose.cloud/cells/) |  |
 
 ## **Code examples and open source projects**
 

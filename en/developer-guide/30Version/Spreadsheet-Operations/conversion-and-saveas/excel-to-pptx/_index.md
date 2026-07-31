@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Excel to PPTX"
 type: docs
 url: /convert-excel-file-to-pptx-file/
-keywords: "Aspose Cells, Excel to PPTX, spreadsheet conversion, REST API, cloud conversion"
+keywords: "Aspose, Cells, Excel, PPTX, conversion, REST API, cloud"
 description: "Learn how to convert Excel workbooks to PPTX presentations with Aspose.Cells Cloud REST API v3.0. Includes cURL request, SDK code samples, authentication, and error handling."
 weight: 90
 ArticleTitle: "Convert Excel to PPTX using Aspose.Cells Cloud API v3.0"
@@ -20,7 +20,11 @@ POST https://api.aspose.cloud/v3.0/cells/convert/pptx
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.  
+**Prerequisites:**  
+- Obtain a valid JWT access token.  
+- Ensure the source Excel file is stored in a supported storage location (default or specified via `storageName`).  
+- If the workbook is password‑protected, provide the password using the `password` query parameter.
 
 ### Query Parameters
 
@@ -35,6 +39,21 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | Parameter Name | Type      | Description                                                              |
 | -------------- | --------- | ------------------------------------------------------------------------ |
 | `datafile`     | data file | The Excel file included in the first part of the multipart request body. |
+
+**Example multipart request body (simplified):**
+
+```
+--boundary
+Content-Disposition: form-data; name="File"; filename="input.xlsx"
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+
+<binary content of input.xlsx>
+--boundary
+Content-Disposition: form-data; name="password"
+
+MyPwd
+--boundary--
+```
 
 ### Response
 
@@ -53,18 +72,19 @@ The API returns a **FileInfo** object that contains the generated pptx file.
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Conversion succeeded; response contains generated PPTX file details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
 
+*Notes:* The endpoint supports common Excel formats (`.xlsx`, `.xls`, `.xlsm`). The maximum file size is limited to 50 MB. Conversion may be restricted for workbooks containing macros or protected sheets unless the appropriate parameters are supplied.
 
 ## How to Use the PostConvertWorkbookToPptx API with SDKs
 
 ### PostConvertWorkbookToPptx API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPptx) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPptx" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The example below shows how to call the Cloud API with cURL.
 
@@ -99,7 +119,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pptx?storageName=MySto
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the fastest way to develop. An SDK abstracts low‑level details so you can focus on your project. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK abstracts low‑level details so you can focus on your project. See the [GitHub repository](https://github.com/aspose-cells-cloud" rel="noopener noreferrer") for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

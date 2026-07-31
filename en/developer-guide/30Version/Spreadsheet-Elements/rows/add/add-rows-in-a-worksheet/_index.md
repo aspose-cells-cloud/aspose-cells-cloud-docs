@@ -52,6 +52,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
   -H "Authorization: Bearer <jwt token>"
 ```
 
+> **Note:** This `PUT` operation does not require a request body; an empty JSON object (`{}`) can be sent if the client library forces a payload.
+
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
@@ -74,6 +76,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 {{< /tab >}}
 
 {{< /tabs >}}
+
+For further operations on rows, see the related pages: **Delete rows**, **Get rows**, and **Copy rows**.
 
 ## Cloud SDK Family
 
@@ -109,7 +113,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="5" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Example_PutInsertWorksheetRows.ts" >}}
 
 {{< /tab >}}
 

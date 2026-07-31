@@ -6,7 +6,7 @@ type: docs
 weight: 9
 url: /new-features/2025/
 keywords: "Aspose.Cells Cloud, new features 2025, spreadsheet API, Excel, CSV, PDF, cloud spreadsheet"
-description: "This page describes the most interesting new Aspose.Cells Cloud features introduced in recent releases."
+description: "This page lists the latest Aspose.Cells Cloud features and enhancements released in 2025, including new APIs, improvements, and bug fixes."
 ArticleTitle: "What's new in Aspose.Cells Cloud in 2025 – Latest Features and Enhancements"
 ---
 
@@ -16,13 +16,13 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 
 |**ID**|**Summary**|**Category**|
 | :- | :- | :- |
-| 56632 | Update the form‑data parameter name for the Cells Cloud 3.0 API specification. | Improvement |
+| 56632 | Update the form-data parameter name for the Cells Cloud 3.0 API specification. | Improvement |
 | 56793 | Fix the StringEnumConverter issue in Aspose.Cells Cloud Services. | Bug |
 | 56866 | Add support for trimming spreadsheet content in Cells Cloud 4.0. | Improvement |
 | 56867 | Add support for trimming worksheet range content in Cells Cloud 4.0. | Improvement |
 | 56919 | Fix exception thrown when saving a spreadsheet to a different format in Cells Cloud. | Bug |
 | 56922 | Fix data loss when exporting a range or table as an HTML file. | Bug |
-| 56936 | Fix several spelling‑error issues. | Bug |
+| 56936 | Fix several spelling-error issues. | Bug |
 
 ## Feature & Enhancements in Version 25.8
 

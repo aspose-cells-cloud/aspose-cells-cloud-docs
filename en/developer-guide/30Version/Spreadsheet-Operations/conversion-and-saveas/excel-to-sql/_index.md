@@ -4,13 +4,16 @@ second_title: "Document"
 linktitle: "Excel to SQL"
 type: docs
 url: /convert-excel-file-to-sql-file/
-keywords: "Excel, SQL, Aspose.Cells, Cloud API, spreadsheet conversion"
+keywords: "Aspose.Cells, Excel to SQL, cloud API, spreadsheet conversion, REST"
 description: "Use Aspose.Cells Cloud REST API to convert Excel spreadsheets into SQL files. Supports multiple SDKs and programming languages for seamless integration into your applications."
 weight: 100
 ArticleTitle: "Convert Excel to SQL – Aspose.Cells Cloud API"
 ---
 
 This REST API converts a spreadsheet file to an SQL format file.
+
+**Prerequisites**  
+To use this endpoint you must have a valid JWT token generated as described in the <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a> guide. The API supports Excel files up to the size limits defined in the service documentation and can handle password‑protected workbooks when the `password` query parameter is supplied.
 
 ## REST API
 
@@ -21,7 +24,6 @@ POST https://api.aspose.cloud/v3.0/cells/convert/sql
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
 
 ### **Query Parameter**
 
@@ -49,7 +51,6 @@ The API returns a **FileInfo** object that contains the generated sql file.
 
 [FileInfo](/cells/file-info/)
 
-
 **Response Status Codes**
 
 | Code | Meaning                     | Description                                      |
@@ -60,12 +61,11 @@ The API returns a **FileInfo** object that contains the generated sql file.
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
 
-
 ## How to Use the PostConvertWorkbookToSQL API with SDKs
 
 ### PostConvertWorkbookToSQL API Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToSQL" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -87,9 +87,9 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/sql" \
 
 ```json
 {
-  "Filename": "xxxxxx.json",
-  "FileSize": xxxx,
-  "FileContent": "File Content: base64_encoded_string"
+  "Filename": "example.sql",
+  "FileSize": 1024,
+  "FileContent": "base64_encoded_string"
 }
 ```
 
@@ -99,7 +99,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/sql" \
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
@@ -161,3 +161,10 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 - **[PUT /cells/convert](https://apireference.aspose.cloud/cells/#/Workbook/PutConvertWorkBook)** – Converts a workbook to another format with optional settings and returns the result in the response.
 
 - **[GET /cells/{name}](https://apireference.aspose.cloud/cells/#/Workbook/GetWorkBook)** – Retrieves a workbook with optional conversion settings.
+
+**Notes**  
+- When converting password‑protected Excel files, ensure the `password` query parameter is supplied; otherwise the conversion will fail with a 400 error.  
+- The service returns the SQL file content as Base64; decode it before saving to a `.sql` file.  
+
+**Sample Files**  
+Download a sample Excel workbook [here](https://example.com/sample.xlsx) and a pre‑generated SQL result [here](https://example.com/sample.sql) to test the API quickly.

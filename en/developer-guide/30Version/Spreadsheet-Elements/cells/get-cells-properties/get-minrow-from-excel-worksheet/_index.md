@@ -5,6 +5,7 @@ url: /get-minrow-from-excel-worksheet/
 weight: 80
 keywords: "Aspose.Cells, GetMinRow, Excel worksheet, REST API, min row index, cloud SDK"
 description: "Learn how to retrieve the minimum row index of a worksheet using Aspose.Cells Cloud REST API (v3.0). Includes full cURL request with authentication, response schema, and SDK examples for multiple languages."
+ArticleTitle: "Get MinRow from Excel Worksheet – Aspose.Cells Cloud API Reference"
 ---
 
 This REST API returns the minimum row index in an Excel worksheet when the `cellOrMethodName` parameter is set to `minrow`. The endpoint can be used to determine the first non‑empty row (zero‑based) in a given worksheet.
@@ -35,6 +36,33 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Request**
+
+```
+GET https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{sheetName}/cells/minrow
+```
+
+| Property          | Type   | Required | Description                                            |
+|-------------------|--------|----------|--------------------------------------------------------|
+| `fileName`        | string | Yes      | Name of the workbook (e.g., `myWorkbook.xlsx`).        |
+| `sheetName`       | string | Yes      | Target worksheet (e.g., `Sheet1`).                     |
+| `cellOrMethodName`| string | Yes      | Fixed value `minrow`.                                   |
+| `folder`          | string | No       | Cloud storage folder path.                             |
+| `storageName`     | string | No       | Storage name if a non‑default storage is used.        |
+
+**Response**
+
+The service returns a JSON object that contains the `MinRow` property, indicating the index of the first non‑empty row (zero‑based).
+
+| HTTP Status | Meaning                                 |
+|-------------|------------------------------------------|
+| 200         | Success – JSON payload with `MinRow`.   |
+| 401         | Unauthorized – invalid or missing token.|
+| 404         | Workbook or worksheet not found.        |
+| 500         | Internal server error.                  |
+
+The `MinRow` value is useful when you need to quickly locate the starting point of data in a sheet.
 
 - **Use Aspose.Cells Cloud SDKs**
 

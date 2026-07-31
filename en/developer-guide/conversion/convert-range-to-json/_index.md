@@ -5,7 +5,7 @@ ArticleTitle: "How to Convert Local Spreadsheet Range Data to a JSON File: Step-
 linktitle: "Convert Range to JSON"
 type: docs
 url: /convert-range-to-json/
-keywords: "convert range to json, Aspose.Cells Cloud, Excel to JSON, spreadsheet range conversion, API, cloud-based conversion"
+keywords: "convert range to json, Aspose.Cells Cloud, Excel to JSON, spreadsheet conversion, API"
 description: "Convert a specific range from a local Excel spreadsheet to JSON using the Aspose.Cells Cloud API."
 weight: 100
 ---
@@ -20,9 +20,17 @@ Export range data from a local Excel file to a JSON file using the Cloud API.
 PUT https://api.aspose.cloud/v4.0/cells/convert/range/json
 ```
 
+**Sample cURL request**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/json?worksheet=Sheet1&range=A1:C10" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@/path/to/your/file.xlsx"
+```
+
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs require JWT token‑based authentication. Obtain a token as described in the <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentication guide</a> and include it in the `Authorization` header:
 
 ```bash
 -H "Authorization: Bearer {access_token}"
@@ -30,17 +38,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                           |
-| -------------- | ------ | --------------------------- | --------------------------------------------------------------------- |
-| Spreadsheet    | File   | FormData                    | Upload the spreadsheet file.                                          |
-| worksheet      | String | Query                       | Name of the worksheet in the spreadsheet.                             |
-| range          | String | Query                       | Cell area to convert, e.g., A1:C10.                                   |
+| Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                            |
+| -------------- | ------ | --------------------------- | ---------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                    | Upload the spreadsheet file.                                           |
+| worksheet      | String | Query                       | Name of the worksheet in the spreadsheet.                              |
+| range          | String | Query                       | Cell area to convert, e.g., A1:C10.                                    |
 | outPath        | String | Query                       | (Optional) Folder path where the workbook is stored; default is null. |
-| outStorageName | String | Query                       | Name of the output file storage.                                      |
-| fontsLocation  | String | Query                       | Location for storing custom fonts for home use.                       |
-| region         | String | Query                       | The spreadsheet region setting.                                       |
-| password       | String | Query                       | Password for opening the spreadsheet file.                            |
-
+| outStorageName | String | Query                       | Name of the output file storage.                                       |
+| fontsLocation  | String | Query                       | Location for storing custom fonts for home use.                        |
+| region         | String | Query                       | The spreadsheet region setting.                                        |
+| password       | String | Query                       | Password for opening the spreadsheet file.                             |
 
 ### **Response**
 
@@ -56,39 +63,41 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
-### Error Codes
+### **Response Status Codes**
 
-- **200 OK** – Returns the converted JSON file stream.  
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+| Code | Description                                                            |
+|------|------------------------------------------------------------------------|
+| 200  | Returns the converted JSON file stream.                                 |
+| 400  | Invalid Aspose.Cells Cloud API request.                                 |
+| 401  | Invalid access token, or invalid client ID and secret.                 |
+| 404  | The spreadsheet file is not accessible.                                 |
+| 500  | The spreadsheet encountered an error while obtaining calculation data. |
 
 ## **Where Should You Use the Convert Range to JSON API?**
 
-- **Real-time Dashboards**: Convert live Excel data to JSON for real‑time charting libraries (Chart.js, D3.js).
-- **Spreadsheet-as-Service**: Excel ranges as JSON endpoints for other microservices to consume.
-- **Webhook Payloads**: Convert spreadsheet data to JSON for webhook notifications.
-- **Rapid Data Prototyping**: Quick conversion of cleaned Excel data to JSON for Python/R analysis.
-- **Machine Learning Pipelines**: Pre‑process training data from business‑maintained spreadsheets.
-- **E-commerce Operations**: Transform product catalogs or pricing sheets to JSON for website sync.
-- **Reporting Automation**: Generate JSON data feeds from financial models for automated reporting.
-- **App Configuration**: Manage feature flags, settings, or A/B test parameters in Excel → JSON.
-- **Multi-language Support**: Convert localization spreadsheets to JSON for i18n libraries.
-- **Dynamic Menus/Navigation**: Manage website navigation structures in Excel, deploy as JSON.
+- Real‑time dashboards: Convert live Excel data to JSON for charting libraries such as Chart.js or D3.js.  
+- Spreadsheet‑as‑a‑service: Expose Excel ranges as JSON endpoints for other services.  
+- Webhook payloads: Transform spreadsheet data to JSON for webhook notifications.  
+- Rapid data prototyping: Quickly convert cleaned Excel data to JSON for Python or R analysis.  
+- Machine‑learning pipelines: Pre‑process training data from business‑maintained spreadsheets.  
+- E‑commerce operations: Sync product catalogs or pricing sheets to websites via JSON.  
+- Reporting automation: Generate JSON data feeds from financial models for automated reporting.  
+- Application configuration: Manage feature flags, settings, or A/B test parameters in Excel → JSON.  
+- Multi‑language support: Convert localization spreadsheets to JSON for i18n libraries.  
+- Dynamic menus/navigation: Store website navigation structures in Excel and deploy them as JSON.
 
 *For other conversion options, see the [Convert Range to CSV](/convert-range-to-csv/) guide.*
 
 ## Why should you use the Convert Range to JSON API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud provides SDK libraries for multiple languages, enabling quick development with comprehensive documentation. This reduces the amount of custom code required compared with building a conversion solution from scratch.  
-- **Cost‑Effective**: You can convert range data without first uploading the workbook, which saves storage space and reduces costs.  
-- **Modern Web & Mobile Applications**: JSON is the native data format for web applications. Converting Excel ranges to JSON allows JavaScript frameworks such as React, Vue, or Angular to consume the data directly.  
-- **Broad Compatibility**: JSON is supported by virtually every programming language, database, and web service, ensuring the converted data can be used anywhere.  
-- **Structured Data Preservation**
-  - **Intelligent Structure Detection**: Automatically converts tabular data to proper JSON arrays/objects.
-  - **Header Mapping**: Uses the first row as JSON keys for clean object structures.
-  - **Data Type Retention**: Preserves number, date, and boolean types (not just text).
+- **SDK support**: Aspose.Cells Cloud provides libraries for multiple languages, reducing the amount of custom code needed.  
+- **Reduced storage costs**: The range can be converted without first uploading the entire workbook, saving storage space.  
+- **Compatibility with web and mobile apps**: JSON is the native data format for modern JavaScript frameworks such as React, Vue, and Angular.  
+- **Broad language support**: Virtually every programming language and database can consume JSON.  
+- **Structured data preservation**  
+  - **Intelligent structure detection**: Automatically converts tabular data to proper JSON arrays or objects.  
+  - **Header mapping**: Uses the first row as JSON keys for clean object structures.  
+  - **Data type retention**: Preserves number, date, and boolean types instead of plain text.
 
 ## How to Use the Convert Range to JSON API with SDKs?
 
@@ -98,7 +107,7 @@ The [Convert Range to JSON API Specification](https://reference.aspose.cloud/cel
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to convert a range of data to a JSON file with concise code.  
+Using the SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to convert a range of data to a JSON file with concise code.  
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
@@ -128,4 +137,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToJson.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-

@@ -1,12 +1,12 @@
 ---
-title: "Aspose.Cells Cloud Remove Characters Web API – Delete Custom Characters & Substrings from Excel (Online Short‑Code)"
+title: "Aspose.Cells Cloud – Remove Characters API | Delete Custom Characters"
 second_title: "Document"
-ArticleTitle: "Excel Text Cleaner – Delete Characters & Substrings from Selected Range"
+ArticleTitle: "Excel Text Cleaner – Delete Characters & Substrings from a Selected Range"
 linktitle: "Remove Characters"
 type: docs
 url: /remove-characters/
-keywords: "Aspose.Cells, remove characters, Excel API, text cleaning, spreadsheet"
-description: "Remove custom characters, character sets, and substrings from Excel cells in a selected range. Delete text at specific positions using the Aspose.Cells API for precise data cleaning."
+keywords: "Aspose.Cells, Remove Characters API, Excel text cleaning, Cloud API"
+description: "Remove custom characters, character sets, and substrings from Excel cells in a selected range using the Aspose.Cells Cloud API for precise data cleaning."
 weight: 100
 ---
 
@@ -38,6 +38,9 @@ Easily clean and standardize your Excel data by removing specific, unwanted char
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters
 ```
+
+**Prerequisites**  
+Before calling the Remove Characters API, ensure you have a valid Aspose Cloud account, the appropriate SDK installed, and a JWT access token generated using your client ID and secret. The API works with files stored in Aspose Cloud storage or supported external storage services.
 
 ### **Security and Authentication**
 
@@ -76,12 +79,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
+**Successful response:** `200 OK` with the processed workbook returned as a file stream.
+
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token, or incorrect client ID and secret.
-- **404 Not Found** – The spreadsheet file is not accessible.
-- **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
+| HTTP Code | Description                     | Typical Cause                                 | Suggested Fix                                          |
+|-----------|---------------------------------|-----------------------------------------------|--------------------------------------------------------|
+| 400       | Bad Request                     | Missing or invalid request parameters         | Verify that all required query/form fields are present |
+| 401       | Unauthorized                    | Invalid/expired JWT token                      | Refresh the token or check client credentials           |
+| 404       | Not Found                       | Spreadsheet file not accessible                | Confirm the `Spreadsheet` name, `outPath`, and storage |
+| 500       | Internal Server Error           | Processing anomaly on the server              | Retry the request or contact support with request ID   |
 
 ## Where Should You Use the Remove Characters API?
 
@@ -90,6 +97,8 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - **Financial Analysis** – Extract pure numbers by stripping currency symbols and text characters.
 - **Text Processing** – Remove line breaks and tabs for clean text analysis and reporting.
 - **Inventory Management** – Clean product names by eliminating redundant prefixes or suffixes.
+
+For related operations, see the [Add Text](/add-text/) and [Trim Character](/trim-character/) APIs.
 
 ## Why Use the Remove Characters API?
 

@@ -9,7 +9,7 @@ aliases:
   - /workbook/smartmarker/
   - /workbook/create/smartmarker/
 keywords: "Excel, Smart Marker, Aspose.Cells Cloud, REST API, Workbook, SDK, API, Report Generation"
-description: "Learn how to generate Excel workbooks from Smart Marker templates using the Aspose.Cells Cloud REST API. Includes request/response details, cURL example, and SDK code samples."
+description: "Learn how to generate Excel workbooks from Smart Marker templates using the Aspose.Cells Cloud REST API. Includes request/response details, cURL example, prerequisites, notes, and SDK code samples."
 weight: 40
 ArticleTitle: "Build Excel Reports with Smart Marker Templates – Aspose.Cells Cloud API Guide"
 ---
@@ -24,7 +24,9 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/smartmarker
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
+
+**Prerequisites:** To call this API you must obtain a JWT access token. Register an application in the Aspose Cloud Dashboard to receive a **Client Id** and **Client Secret**, then request a token from the `/connect/token` endpoint. Include the token in the request header as `Authorization: Bearer {access_token}`.
 
 ### **What is a Smart Marker?**
 
@@ -57,15 +59,20 @@ A Smart Marker is a placeholder syntax that maps data fields in an XML (or JSON)
 }
 ```
 
+**Notes / Limitations:**  
+- The API supports Excel files up to **50 MB** in size.  
+- Accepted formats are **.xlsx**, **.xlsm**, and **.xlsb** only.  
+- A rate limit of **20 requests per second** per account is enforced.
+
 **Response Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning                     | Description                                                                 |
+|------|-----------------------------|-----------------------------------------------------------------------------|
+| 200  | OK                          | Report generation succeeded; response contains details of the generated file. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type).               |
+| 401  | Unauthorized                | Invalid or missing JWT token.                                               |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit.                                            |
+| 500  | Internal Server Error       | Unexpected server error.                                                    |
 
 ## How to Use the Workbook SmartMarker API 
 
@@ -76,6 +83,12 @@ The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/P
 ### Use Aspose.Cells Cloud SDKs
 
 You can use **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+**Quick one‑liner example**
+
+```bash
+curl -X POST "https://api.aspose.cloud/v3.0/cells/{name}/smartmarker?outPath={outPath}" -H "Authorization: Bearer {access_token}" -F "xmlFile=@Sample_SmartMarker_Data.xml"
+```
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -98,7 +111,7 @@ Content-Type: application/json
 
 {
   "Code": 200,
-  "Status": "OK"  
+  "Status": "OK"
 }
 ```
 
@@ -114,6 +127,15 @@ Content-Type: application/json
 | 401         | Unauthorized          | Invalid or missing authentication token.                |
 | 404         | Not Found             | Specified workbook or storage location does not exist.  |
 | 500         | Internal Server Error | Unexpected server‑side failure.                         |
+
+**Example error response (400)**
+
+```json
+{
+  "Code": 400,
+  "Message": "The XML data file is missing or malformed."
+}
+```
 
 ## Cloud SDK Family
 

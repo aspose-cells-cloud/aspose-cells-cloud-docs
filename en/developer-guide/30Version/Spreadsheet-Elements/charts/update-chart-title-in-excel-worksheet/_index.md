@@ -4,7 +4,7 @@ type: docs
 url: /charts/title/update/
 aliases: [/update-chart-title-in-excel-worksheet/]
 weight: 160
-keywords: Excel, Aspose.Cells, REST API, Chart Title, Update Chart, Cloud SDK
+keywords: Excel, Aspose.Cells, REST API, Chart Title, Update, Cloud SDK
 description: Learn how to update a chart title in an Excel worksheet using Aspose.Cells Cloud REST API, cURL, and various SDKs.
 ArticleTitle: "Update Chart Title in Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
@@ -13,7 +13,11 @@ This REST API updates the chart title.
 
 ## REST API
 
-**Prerequisites:** You must have a valid Aspose Cloud account and a JWT token for authorization.
+**Prerequisites:** You must have a valid Aspose Cloud account and a JWT token for authorization. Typical steps include:
+
+- Sign up for an Aspose Cloud account.  
+- Generate a JWT token via the authentication endpoint.  
+- Ensure the target workbook is stored in a supported cloud storage (default or custom).  
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
@@ -42,7 +46,9 @@ All API calls must be made over **HTTPS** to avoid mixed‑content warnings.
 | 404  | Not Found – Workbook, worksheet, or chart not found. |
 | 500  | Internal Server Error – Unexpected server condition. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+**Note:** The `chartIndex` is zero‑based; the first chart on a worksheet is referenced with `0`.
+
+The <a href="https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChartTitle" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -51,8 +57,8 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v POST "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
--d '{"Text":"Stock exchange"}' \
+curl -v POST "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
+-d '{"title":"Stock exchange"}' \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>"
@@ -75,7 +81,7 @@ curl -v POST "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

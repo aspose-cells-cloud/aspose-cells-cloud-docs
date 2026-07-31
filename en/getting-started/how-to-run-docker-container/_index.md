@@ -69,6 +69,8 @@ docker pull aspose/cells-cloud:ltsc2022.25.9.0
 docker pull aspose/cells-cloud:ltsc2022.25.9.0
 ```
 
+> **Note:** To always get the most recent release, you can also pull the `latest` tag: `docker pull aspose/cells-cloud:latest`.
+
 ### 2. Configurations for Docker‑Compose Tool
 
 You can write the following configuration in a **docker‑compose.yml** file:
@@ -99,3 +101,38 @@ docker run \
   aspose/cells-cloud:25.9.0
 ```
 
+**Troubleshooting:**  
+- **Port conflict:** Ensure that port 5000 on the host is free or change the mapping to an unused port.  
+- **License load failure:** Verify that the public and private keys are correctly passed as environment variables or mounted as files.  
+- **Missing fonts:** If documents render with incorrect fonts, confirm that the font directory is correctly mounted and contains the required font files.
+
+**Related resources:**  
+- <a href="/cells/api/">API reference</a> | <a href="/cells/license/">License activation guide</a> | <a href="/cells/getting-started/">Getting started overview</a>
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Run Aspose.Cells Cloud Docker Container",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "url": "#1-pull-asposecells-cloud-image",
+      "name": "Pull the Docker image",
+      "text": "Run `docker pull aspose/cells-cloud:<version>` to download the required image."
+    },
+    {
+      "@type": "HowToStep",
+      "url": "#2-configurations-for-docker-compose-tool",
+      "name": "Create a docker‑compose file",
+      "text": "Define the image, ports, volumes, and license environment variables in `docker‑compose.yml`."
+    },
+    {
+      "@type": "HowToStep",
+      "url": "#3-run-a-docker-container-using-the-command-line",
+      "name": "Run the container",
+      "text": "Execute `docker run` with the appropriate environment variables, volume mounts, and port mapping."
+    }
+  ]
+}
+```

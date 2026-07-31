@@ -5,17 +5,23 @@ linktitle: Add
 type: docs
 url: /pivot-tables/add/
 aliases: [/add-a-pivot-table-in-a-worksheet/]
-keywords: "Add pivot table, Excel worksheet, Aspose.Cells Cloud, REST API, SDK"
-description: "Use Aspose.Cells Cloud REST API to add a pivot table to an Excel worksheet. The service is available through multiple SDKs (C#, Java, PHP, Python, Node.js, Android, Swift, Perl, Go)."
+keywords: "Add pivot table, Excel worksheet, Aspose.Cells Cloud, REST API, SDK, Excel pivot table"
+description: "Use Aspose.Cells Cloud REST API to add a pivot table to an Excel worksheet. Available through SDKs for C#, Java, PHP, Python, Node.js, Android, Swift, Perl, Go."
 weight: 30
+ArticleTitle: "How to Add a Pivot Table in an Excel Worksheet using Aspose.Cells Cloud"
 ---
 
 This REST API adds a pivot table into a worksheet.
 
+**Prerequisites:**  
+- An Aspose.Cells Cloud account with a valid JWT access token.  
+- The target workbook must be stored in a supported storage location (default storage or a user‑specified storage).  
+- The worksheet specified by `sheetName` must exist in the workbook.  
+
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 ```
 
 ### **Request parameters**
@@ -36,12 +42,14 @@ The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTable
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL.
 
+**Security Note:** Always use `https://` when calling the API and keep your JWT token confidential; transmitting it over plain HTTP can expose the token to interception.
+
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/pivottables" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet1/pivottables" \
 -X PUT \
 -d '{"Name":"MyPivot","SourceData":"A5:E10","DestCellName":"H20","UseSameSource":true,"PivotFieldRows":[1],"PivotFieldColumns":[1],"PivotFieldData":[1]}' \
 -H "Content-Type: application/json" \
@@ -63,6 +71,16 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Shee
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Response Codes**
+
+| HTTP Status | Meaning                               | When it occurs |
+|-------------|---------------------------------------|----------------|
+| 200         | OK – Pivot table created successfully | Successful request |
+| 400         | Bad Request – Invalid parameters or malformed JSON | Missing required fields, invalid range syntax |
+| 401         | Unauthorized – Invalid or missing JWT token | Authentication failure |
+| 404         | Not Found – Specified workbook or worksheet does not exist | Incorrect `name` or `sheetName` |
+| 500         | Internal Server Error – Unexpected server condition | Service outage or internal error |
 
 ## Cloud SDK Family
 
@@ -127,3 +145,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+For more operations, see the related API pages: **[Get a pivot table](https://docs.aspose.cloud/cells/pivot-tables/get/)**, **[Delete a pivot table](https://docs.aspose.cloud/cells/pivot-tables/delete/)**, and **[Update a pivot table](https://docs.aspose.cloud/cells/pivot-tables/update/)**.

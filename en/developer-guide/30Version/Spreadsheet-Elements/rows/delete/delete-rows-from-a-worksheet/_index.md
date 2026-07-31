@@ -63,6 +63,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 {{< /tabs >}}
 
+**Possible response codes**
+
+| HTTP Status | Description |
+|-------------|-------------|
+| 200 | Rows deleted successfully. |
+| 400 | Bad request – invalid parameters. |
+| 401 | Unauthorized – missing or invalid JWT token. |
+| 404 | Not found – workbook or worksheet does not exist. |
+| 500 | Internal server error – unexpected condition. |
+
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.

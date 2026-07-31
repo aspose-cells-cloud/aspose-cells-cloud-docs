@@ -30,4 +30,11 @@ Before you begin, ensure you have an active internet connection and a supported 
 
 The free trial gives you a practical sense of the service’s capabilities, allowing early development and testing without any cost.
 
+**API reference summary**
+
+| Operation | Method | URL | Required parameters | Sample response |
+|-----------|--------|-----|---------------------|-----------------|
+| Get access token | POST | `https://api.aspose.cloud/connect/token` | `grant_type=client_credentials`, `client_id`, `client_secret` (form‑urlencoded) | `{ "access_token": "eyJ0eXAi...", "expires_in": 3600 }` |
+| List worksheets | GET | `https://api.aspose.cloud/v3.0/cells/{file}/worksheets` | Path: `{file}` – name of the uploaded workbook; Header: `Authorization: Bearer <token>` | `{ "Worksheets": { "WorksheetList": [ { "Name": "Sheet1" }, { "Name": "Sheet2" } ] } }` |
+
 For detailed pricing, usage limits, and additional plan options, see the [Trial Plan](https://purchase.aspose.cloud/trial) page.

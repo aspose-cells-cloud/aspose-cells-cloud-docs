@@ -9,16 +9,19 @@ aliases:
     /clear-modify-password-of-excel-workbooks/,
     /workbook/clear-modify-password/，/workbook/password/clear/,
   ]
-keywords: "remove Excel password, Aspose.Cells Cloud, write‑protection, REST API, SDK examples"
-description: "Learn how to delete password protection from an Excel workbook using Aspose.Cells Cloud REST API. Includes cURL command, authentication steps, error‑code table, and SDK samples."
+keywords: "Aspose.Cells, Excel, password removal, write‑protection, REST API, SDK examples"
+description: "Learn how to delete write‑protection (password) from an Excel workbook using Aspose.Cells Cloud REST API. Includes cURL example, authentication steps, and SDK code samples."
 weight: 110
 ArticleTitle: "Remove Write‑Protection (Password) from an Excel Workbook"
 ---
 
-
 ## REST API
 
 This REST API removes **write‑protection (password)** from an Excel workbook, allowing you to **remove Excel password** protection programmatically.
+
+**Prerequisites:** Obtain a valid JWT token, ensure the workbook is stored in a supported storage location, and use API version v3.0.
+
+For adding protection, see the [Protect Excel](/cells/protect/) guide.
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
@@ -51,7 +54,7 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Password removal succeeded; workbook is no longer write‑protected. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |

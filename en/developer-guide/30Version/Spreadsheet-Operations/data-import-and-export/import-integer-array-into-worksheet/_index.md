@@ -25,11 +25,11 @@ POST https://api.aspose.cloud/v3.0/cells/import
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
-Both endpoints accept the same multipart payload. The first endpoint works with a generic import operation, while the second targets a specific workbook identified by `{name}`.
+Both endpoints accept the same multipart payload. The first endpoint performs a generic import operation, while the second targets a specific workbook identified by `{name}`.
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
 
 ### **Request Parameters**
 
@@ -79,7 +79,6 @@ Possible status codes:
 | 400  | Bad request – missing or invalid data   |
 | 401  | Unauthorized – invalid or missing token |
 | 500  | Internal server error                   |
-
 
 ## How to Use the PostImportData API with SDKs
 

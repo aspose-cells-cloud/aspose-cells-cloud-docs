@@ -5,7 +5,7 @@ ArticleTitle: "Find & Fix Broken Links in Excel – Cloud Spreadsheet Link Check
 linktitle: "Search Spreadsheet Broken Links"
 type: docs
 url: /search-spreadsheet-broken-links/
-keywords: "Aspose Cells, broken links, spreadsheet audit, Excel API, cloud spreadsheet, link checker"
+keywords: "Aspose, Cells, broken links, spreadsheet audit, Excel, API, cloud spreadsheet, link checker"
 description: "Detect and fix broken links in Excel workbooks via Aspose.Cells Cloud API. Scan ranges, get detailed JSON results, and integrate with any language SDK."
 weight: 100
 ---
@@ -22,6 +22,8 @@ Automatically detect broken links in Excel files. Our API scans specified ranges
 PUT https://api.aspose.cloud/v4.0/cells/search/broken-links
 ```
 
+> **Note:** This endpoint follows API version **v4.0**. Be sure to use the latest Aspose.Cells Cloud SDKs to benefit from updated features and compatibility.
+
 ```bash
 curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/broken-links?worksheet=Sheet1" \
      -H "Authorization: Bearer {access_token}" \
@@ -35,6 +37,8 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ```bash
 -H "Authorization: Bearer {access_token}"
 ```
+
+**Prerequisite:** You must have an active Aspose Cloud account and obtain a JWT access token before calling the API.
 
 ### Request Parameters
 
@@ -132,4 +136,3 @@ The following code examples illustrate how to make calls to Aspose.Cells web ser
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SearchSpreadsheetBrokenLinks.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-

@@ -14,6 +14,11 @@ weight: 100
 
 Programmatically search for specific text within any range of Excel spreadsheets using Aspose.Cells Cloud API. Find text, numbers, or formulas in remote files stored in cloud storage. RESTful API for automated data discovery, content analysis, and spreadsheet‑auditing workflows.
 
+**Prerequisites**
+
+- Obtain a valid JWT access token (see Aspose.Cells Cloud authentication guide).  
+- Ensure the target workbook is stored in Aspose Cloud storage and you have appropriate permissions.  
+- Verify that the workbook format is supported (e.g., `.xlsx`, `.xlsb`).  
 
 ### **Web API**
 
@@ -69,12 +74,28 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Orde
 }
 ```
 
+**Status Codes**
+
+| Code | Description |
+|------|-------------|
+| 200 | Search completed successfully; `TextItems` contains matched cells. |
+| 400 | Bad request – invalid parameters or malformed URI. |
+| 401 | Unauthorized – invalid or missing JWT token. |
+| 404 | Not found – workbook or worksheet does not exist. |
+| 500 | Internal server error – unexpected condition on the server. |
+
 ### Error Codes
 
 - **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
 - **401 Unauthorized** – Invalid access token, client ID, or client secret.  
 - **404 Not Found** – The spreadsheet file is not accessible.  
 - **500 Server Error** – An unexpected condition prevented the server from fulfilling the request.
+
+**Notes**
+
+- Respect the service’s rate‑limit headers to avoid throttling.  
+- The maximum searchable range is limited to 10 000 cells; split larger areas into multiple calls if needed.  
+- For large result sets, consider processing `TextItems` in batches or using pagination logic in your application.
 
 ## Where should we use the Search content within the range of the Spreadsheet API?
 
@@ -93,11 +114,11 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Orde
 
 ### OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteRange) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+<a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/SearchContentInRemoteRange" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search content within a range of spreadsheets for cells with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search content within a range of spreadsheets for cells with minimal code. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

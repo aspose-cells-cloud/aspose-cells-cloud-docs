@@ -5,12 +5,14 @@ ArticleTitle: "Swap/Exchange Data Between Columns, Rows, and Cells in Excel"
 linktitle: "Swap Range"
 type: docs
 url: /swap-range/
-keywords: "Aspose Cells, Excel API, Swap Range, Cloud Spreadsheet"
+keywords: "Aspose.Cells, Excel, Swap Range, Cloud API, Spreadsheet"
 description: "Swap columns, rows or ranges in Excel files with Aspose.Cells Cloud API. Preserve formatting, formulas, and cell references in a single request."
 weight: 100
 ---
 
 Automatically exchange data between any two columns, rows, ranges, or cells in Excel files using Aspose.Cells Cloud API. The Swap Range API enables precise data swapping while preserving all formatting, formulas, and cell references. It supports complex data re‑organization, batch processing, and seamless cloud integration for enterprise workflows.
+
+**Prerequisites:** Before using the Swap Range API you must register for an Aspose Cloud account, obtain a client ID and secret, and generate a JWT access token for authentication.
 
 ## **Swap Range API**
 

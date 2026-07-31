@@ -12,6 +12,8 @@ keywords:
   - "Get Chart Title"
   - "cURL"
   - "SDK"
+  - "Excel chart automation"
+  - "GET chart title"
 description: "Learn how to retrieve a chart title from an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, authentication, sample cURL and SDK code."
 ArticleTitle: "Get Chart Title from a Worksheet"
 ---
@@ -110,37 +112,152 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="1" >}}
 
+```csharp
+// C# example using Aspose.Cells Cloud SDK
+var config = new Configuration
+{
+    AccessToken = "<jwt token>",
+    BasePath = "https://api.aspose.cloud"
+};
+var api = new ChartsApi(config);
+var response = api.GetWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, folder: "", storageName: "");
+Console.WriteLine(response.Title.Text);
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
+```java
+// Java example using Aspose.Cells Cloud SDK
+Configuration config = new Configuration();
+config.setAccessToken("<jwt token>");
+config.setBasePath("https://api.aspose.cloud");
+ChartsApi api = new ChartsApi(config);
+ChartTitleResponse response = api.getWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, "", "");
+System.out.println(response.getTitle().getText());
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
+```php
+<?php
+// PHP example using Aspose.Cells Cloud SDK
+$config = new Aspose\Cells\Configuration();
+$config->setAccessToken('<jwt token>');
+$config->setHost('https://api.aspose.cloud');
+$apiInstance = new Aspose\Cells\Api\ChartsApi($config);
+$response = $apiInstance->getWorksheetChartTitle('Book1.xlsx', 'Sheet1', 0, '', '');
+echo $response->getTitle()->getText();
+?>
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
+
+```ruby
+# Ruby example using Aspose.Cells Cloud SDK
+require 'aspose_cells_cloud'
+
+config = AsposeCellsCloud::Configuration.new
+config.access_token = '<jwt token>'
+config.host = 'https://api.aspose.cloud'
+
+api_instance = AsposeCellsCloud::ChartsApi.new
+result = api_instance.get_worksheet_chart_title('Book1.xlsx', 'Sheet1', 0, '', '')
+puts result.title.text
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
+```python
+# Python example using Aspose.Cells Cloud SDK
+from asposecellscloud import ChartsApi, Configuration
+
+config = Configuration()
+config.access_token = "<jwt token>"
+config.host = "https://api.aspose.cloud"
+
+api_instance = ChartsApi(config)
+response = api_instance.get_worksheet_chart_title("Book1.xlsx", "Sheet1", 0, "", "")
+print(response.title.text)
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
+
+```javascript
+// Node.js example using Aspose.Cells Cloud SDK
+const { ChartsApi, Configuration } = require('asposecellscloud');
+
+let config = new Configuration();
+config.accessToken = "<jwt token>";
+config.basePath = "https://api.aspose.cloud";
+
+let apiInstance = new ChartsApi(config);
+apiInstance.getWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, "", "", (error, data) => {
+    if (error) console.error(error);
+    else console.log(data.title.text);
+});
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
+```java
+// Android (Java) example using Aspose.Cells Cloud SDK
+Configuration config = new Configuration();
+config.setAccessToken("<jwt token>");
+config.setBasePath("https://api.aspose.cloud");
+ChartsApi api = new ChartsApi(config);
+ChartTitleResponse response = api.getWorksheetChartTitle("Book1.xlsx", "Sheet1", 0, "", "");
+Log.d("ChartTitle", response.getTitle().getText());
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
+```swift
+// Swift example using Aspose.Cells Cloud SDK
+import AsposeCellsCloud
+
+let config = Configuration()
+config.accessToken = "<jwt token>"
+config.host = "https://api.aspose.cloud"
+
+let api = ChartsApi(configuration: config)
+api.getWorksheetChartTitle(name: "Book1.xlsx", sheetName: "Sheet1", chartIndex: 0, folder: "", storageName: "") { result, error in
+    if let title = result?.title?.text {
+        print("Chart title: \(title)")
+    }
+}
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
+
+```perl
+# Perl example using Aspose.Cells Cloud SDK
+use AsposeCellsCloud::ChartsApi;
+use AsposeCellsCloud::Configuration;
+
+my $config = AsposeCellsCloud::Configuration->new();
+$config->{access_token} = '<jwt token>';
+$config->{host} = 'https://api.aspose.cloud';
+
+my $api_instance = AsposeCellsCloud::ChartsApi->new($config);
+my $result = $api_instance->get_worksheet_chart_title('Book1.xlsx', 'Sheet1', 0, '', '');
+print $result->{title}{text}, "\n";
+```
 
 {{< /tab >}}
 
@@ -151,3 +268,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
+You can also refer to the individual SDK documentation for more advanced scenarios, such as updating or deleting a chart title.  
+
+**See also**: [Update Chart Title](/charts/title/put/), [Delete Chart Title](/charts/title/delete/).

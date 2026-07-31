@@ -5,7 +5,7 @@ linktitle: "Update"
 type: docs
 url: /oleobjects/update/
 aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
-keywords: "update OLE object Excel, OLE object, Excel, Aspose Cells Cloud, REST API, SDK"
+keywords: "update OLE object, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "Learn how to update an OLE object (image, chart, etc.) in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL, SDK examples, authentication steps, and error handling."
 weight: 30
 author: "Aspose Cloud Documentation Team"
@@ -16,6 +16,8 @@ ArticleTitle: "Update an OLE Object in an Excel Worksheet – Aspose.Cells Cloud
 This REST API updates an **OLE object** in an Excel worksheet.
 
 ## Security and Authentication
+**Prerequisites:** Before calling this API you must obtain a valid JWT token from Aspose Cloud, have the target workbook stored in your Aspose Cloud storage, and know the folder and storage names you will reference.
+
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
@@ -73,7 +75,19 @@ curl -v "https://api.aspose.cloud/v3.0/cells/" \
 ```json
 {
   "Code": 200,
-  "Status": "OK"
+  "Status": "OK",
+  "OLEObject": {
+    "Index": 0,
+    "ImageSourceFullName": "aspose-logo.png",
+    "IsAutoSize": true,
+    "SourceFullName": "Sample_Book2.xls",
+    "UpperLeftRow": 15,
+    "UpperLeftColumn": 5,
+    "Left": 10,
+    "Top": 10,
+    "Width": 400,
+    "Height": 400
+  }
 }
 ```
 
@@ -90,13 +104,44 @@ curl -v "https://api.aspose.cloud/v3.0/cells/" \
 | 404         | 4040 | Not found – workbook, worksheet, or OLE object does not exist. |
 | 500         | 5000 | Internal server error – unexpected failure on the server side. |
 
+The API also returns a custom **Code** field in the response body that maps to the HTTP status (e.g., 200 → 2000, 400 → 4000, etc.).
+
 ## When to Use This API?
 
-Use this endpoint when you need to modify an existing OLE object—such as an embedded image, chart, or document—without re‑uploading the entire worksheet. Typical scenarios include updating the image source, resizing the object, or changing its position after the workbook has been generated.
+Use this endpoint when you need to modify an existing OLE object—such as an embedded image, chart, or document—without re‑uploading the entire worksheet. Typical scenarios include updating the image source, resizing the object, or changing its position after the workbook has been generated. For related operations see [Add an OLE Object](/oleobjects/add/) and [Delete an OLE Object](/oleobjects/delete/).
 
 ## Cloud SDK Family
 
 Using an SDK is the fastest way to develop. An SDK abstracts low‑level details so you can focus on your project. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+Below is a short C# example that updates an OLE object using the Aspose.Cells Cloud SDK:
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+
+var config = new Configuration
+{
+    AppSid = "<your-app-sid>",
+    AppKey = "<your-app-key>"
+};
+var oleApi = new OleObjectsApi(config);
+var request = new OleObjectUpdateRequest
+{
+    ImageSourceFullName = "aspose-logo.png",
+    IsAutoSize = true,
+    SourceFullName = "Sample_Book2.xls",
+    UpperLeftRow = 15,
+    UpperLeftColumn = 5,
+    Left = 10,
+    Top = 10,
+    Width = 400,
+    Height = 400
+};
+
+var response = oleApi.UpdateWorksheetOleObject("SampleBook.xlsx", "Sheet1", 0, request, folder: "myFolder");
+Console.WriteLine($"Status: {response.Status}");
+```
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

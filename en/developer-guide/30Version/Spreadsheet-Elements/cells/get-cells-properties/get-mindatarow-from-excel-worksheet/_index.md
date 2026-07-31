@@ -3,14 +3,16 @@ title: "Get MinDataRow from Excel Worksheet"
 type: docs
 url: /get-mindatarow-from-excel-worksheet/
 weight: 90
-keywords: "Aspose Cells, Get MinDataRow, Excel worksheet, Aspose.Cells Cloud API, REST, v3.0, cellOrMethodName"
-description: "Retrieve the minimum data row index of a worksheet using Aspose.Cells Cloud API v3.0. Includes authentication steps, request pattern, parameters, sample cURL, response schema, error codes, and SDK examples."
+keywords: "Aspose Cells, MinDataRow, Excel API, Cloud SDK"
+description: "Retrieve the minimum data row index of a worksheet using Aspose.Cells Cloud API v3.0. Includes request pattern, parameters, sample cURL, response example, status codes, and SDK snippets."
 ArticleTitle: "Get MinDataRow from Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
 The **Get MinDataRow** endpoint of **Aspose.Cells Cloud API v3.0** returns the index of the first row that contains data in a specified worksheet. The operation requires a valid access token (Bearer authentication) and the query parameter `cellOrMethodName` set to `mindatarow`.
 
-- cURL Example
+**API version: 3.0**
+
+### cURL Example
 
 The request uses the HTTP GET method. Replace the placeholders `{fileName}` and `{sheetName}` with the actual workbook and worksheet names.
 
@@ -21,8 +23,32 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetNam
      -H "Accept: application/json"
 ```
 
+**Request Parameters**
 
-- **Use Aspose.Cells Cloud SDKs**
+| Parameter          | Location | Type   | Required | Description                                                   |
+|--------------------|----------|--------|----------|---------------------------------------------------------------|
+| `fileName`         | Path     | string | Yes      | Name of the Excel workbook (including extension).            |
+| `sheetName`        | Path     | string | Yes      | Name of the worksheet within the workbook.                    |
+| `cellOrMethodName` | Query    | string | Yes      | Must be set to `mindatarow` to invoke this operation.        |
+
+**Response Example**
+
+```json
+{
+  "MinDataRow": 5
+}
+```
+
+**Status Codes**
+
+| Code | Description                                 |
+|------|---------------------------------------------|
+| 200  | Success – returns the minimum data row index. |
+| 401  | Unauthorized – invalid or missing access token. |
+| 404  | Not Found – workbook or worksheet does not exist. |
+| 500  | Internal Server Error – unexpected condition. |
+
+### SDK Examples
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project logic. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -89,3 +115,9 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**See also**
+
+- [Get MaxDataRow](https://docs.aspose.cloud/cells/get-maxdatarow-from-excel-worksheet/)
+- [Get MinColumn](https://docs.aspose.cloud/cells/get-mincolumn-from-excel-worksheet/)
+- [Get MaxColumn](https://docs.aspose.cloud/cells/get-maxcolumn-from-excel-worksheet/)

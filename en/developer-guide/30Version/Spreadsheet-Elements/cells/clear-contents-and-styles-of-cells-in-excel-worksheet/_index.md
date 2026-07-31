@@ -4,18 +4,21 @@ type: docs
 url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
 keywords:
-  - Excel
   - Aspose.Cells
+  - Excel API
+  - clear cell contents
+  - clear cell styles
+  - cloud spreadsheet
   - REST API
-  - clear contents
-  - clear styles
-  - worksheet
-  - cloud API
 description: "Learn how to use Aspose.Cells Cloud REST API to clear cell contents and styles in an Excel worksheet, with cURL examples and SDK code snippets."
 ArticleTitle: "Clear Contents and Styles of Cells in an Excel Worksheet – Aspose.Cells Cloud API"
 ---
 
+Before using the **Clear Contents and Styles** endpoint, ensure you have:
 
+* A valid **JWT token** obtained from the Aspose.Cells Cloud authentication flow.  
+* The workbook uploaded to your chosen storage location (or accessible via the `folder` parameter).  
+* The required SDK version installed if you prefer to work with one of the language‑specific client libraries.
 
 ## REST API
 
@@ -56,7 +59,7 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Clear contents operation succeeded; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
@@ -167,7 +170,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
     "@type": "Organization",
     "name": "Aspose"
   },
-  "datePublished": "2026-07-08",
+  "datePublished": "2023-07-08",
   "publisher": {
     "@type": "Organization",
     "name": "Aspose",

@@ -3,13 +3,15 @@ title: "Get Last Cell of Excel Worksheet – Aspose.Cells Cloud API (v4.0)"
 type: docs
 url: /get-last-cell-of-excel-worksheet/
 weight: 30
-keywords: "Aspose.Cells Cloud, Excel API, get end cell, last cell worksheet, REST API"
+keywords: "Aspose.Cells, Excel API, get last cell, spreadsheet, cloud"
 description: "Retrieve the address of the end cell of an Excel worksheet using Aspose.Cells Cloud REST API v4.0. Includes request details, cURL example, JSON response, and SDK samples."
 ArticleTitle: "Get End Cell of an Excel Worksheet – Aspose.Cells Cloud API v4.0"
 ---
 
 This REST API returns the **endcell** of an Excel worksheet when the `cellOrMethodName` parameter is set to `endcell`.
 
+**Overview**  
+The **Get Last Cell** operation returns the address of the last used cell in a specified worksheet. It is useful for determining the effective data range of a sheet without scanning the entire workbook.
 
 - **cURL Example.**
 
@@ -61,6 +63,23 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/myWorkbook.xlsx/worksheets/Shee
 
 {{< /tabs >}}
 
+### Parameters
+| Parameter            | Type   | Required | Description |
+|----------------------|--------|----------|-------------|
+| `fileName`           | string | Yes      | Name of the Excel file stored in the cloud. |
+| `worksheetName`      | string | Yes      | Name of the worksheet from which to retrieve the last cell. |
+| `cellOrMethodName`   | string | Yes      | Must be set to **`endcell`** to invoke this operation. |
+| `folder` *(optional)*| string | No       | Cloud folder path where the workbook is located. |
+| `storageName` *(optional)*| string | No   | Name of the storage. If omitted, the default storage is used. |
+
+### Response Codes
+| Code | Description |
+|------|-------------|
+| **200** | Successful request – returns the cell information. |
+| **400** | Bad request – missing or invalid parameters. |
+| **401** | Unauthorized – authentication token is missing or invalid. |
+| **404** | Not found – the specified workbook or worksheet does not exist. |
+| **500** | Internal server error – an unexpected condition occurred. |
 
 - **Use Aspose.Cells Cloud SDKs**
 
@@ -102,7 +121,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetLastCellWorksheet-1.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetLastCellWorksheet-1.js" >}}
 
 {{< /tab >}}
 
@@ -131,3 +150,5 @@ _Coming soon._
 {{< /tab >}}
 
 {{< /tabs >}}
+
+For further operations related to cell navigation, see the **[Get First Cell](/get-first-cell-of-excel-worksheet/)** and **[Get Max Row](/get-max-row-of-worksheet/)** topics.

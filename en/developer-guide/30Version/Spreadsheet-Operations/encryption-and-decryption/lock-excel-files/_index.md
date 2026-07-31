@@ -5,8 +5,9 @@ linktitle: "Lock Excel files"
 type: docs
 url: /lock-excel-files/
 aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
-keywords: "Lock Excel files API, Aspose.Cells Cloud, REST API, Excel workbook, Spreadsheet, SDK"
+keywords: "Lock, Excel, API, Aspose.Cells, Cloud, REST, Workbook, Spreadsheet, SDK"
 description: "Learn how to lock Excel workbooks using Aspose.Cells Cloud REST API (v3.0). Includes HTTPS endpoint, authentication, cURL request, response schema, and SDK code samples for C#, Java, Python, and more."
+ArticleTitle: "Lock Excel Files – Aspose.Cells Cloud API Documentation"
 weight: 70
 ---
 
@@ -29,7 +30,7 @@ POST https://api.aspose.cloud/v3.0/cells/lock
 | file           | file   | form‑data (multipart body) | The Excel workbook to be uploaded and locked. |
 | password       | string | query string               | Password for the workbook (optional).         |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostLock) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/LightCells/PostLock" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to **call** the Cloud API with cURL.
 
@@ -66,6 +67,10 @@ curl -v "https://api.aspose.cloud/v3.0/cells/lock?password=123456" \
 
 {{< /tabs >}}
 
+*You can download a sample workbook — [Sample.xlsx](https://example.com/Sample.xlsx) — to test the request.*
+
+**Note:** The API supports files up to 100 MB; larger payloads may result in a 413 (Payload Too Large) response.
+
 ### **Response details**
 
 | Field       | Type            | Description                                          |
@@ -82,7 +87,7 @@ To retrieve the locked workbook, decode the `FileContent` value from Base64 and 
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK abstracts low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

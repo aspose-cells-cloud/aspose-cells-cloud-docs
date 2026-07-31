@@ -4,11 +4,13 @@ type: docs
 url: /charts/value-axis/get/
 weight: 60
 keywords: Aspose.Cells, Chart Value Axis, REST API, Excel, Cloud SDK, Get Chart Value Axis
-description: "Aspose.Cells Cloud REST API – Retrieve the value axis of a chart in an Excel worksheet."
-ArticleTitle: "Get Chart Value Axis – Aspose.Cells Cloud REST API"
+description: "Aspose.Cells Cloud REST API - Retrieve the value axis of a chart in an Excel worksheet."
+ArticleTitle: "Get Chart Value Axis - Aspose.Cells Cloud REST API"
 ---
 
-This REST API retrieves the value axis of a chart.
+This REST API retrieves the value axis of a chart. It is part of the **Aspose.Cells Cloud REST API** and works with Excel worksheets stored in the cloud.
+
+For related operations, see the **[Get Chart Category Axis](/charts/category-axis/get/)** endpoint.
 
 ## REST API
 
@@ -49,11 +51,37 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 ```json
 {
   "Code": 200,
-  "Status": "OK"
+  "Status": "OK",
+  "ValueAxis": {
+    "Minimum": 0,
+    "Maximum": 100,
+    "MajorUnit": 10,
+    "MinorUnit": 5,
+    "Title": "Values",
+    "Format": {
+      "NumberFormat": "General",
+      "Font": {
+        "Name": "Arial",
+        "Size": 10,
+        "Bold": false,
+        "Italic": false
+      }
+    }
+  }
 }
 ```
 
-The response contains a minimal status object. In a full implementation, the payload may also include properties that describe the axis (e.g., minimum, maximum, major unit, minor unit, title, and formatting details).  
+**Possible HTTP status codes**
+
+| Code | Description                                 |
+|------|---------------------------------------------|
+| 200  | Success – the value axis information is returned. |
+| 400  | Bad Request – required parameters are missing or invalid. |
+| 401  | Unauthorized – authentication token is missing or invalid. |
+| 404  | Not Found – the specified workbook, worksheet, or chart does not exist. |
+| 500  | Internal Server Error – an unexpected error occurred on the server. |
+
+The response contains a detailed `ValueAxis` object with properties such as `Minimum`, `Maximum`, `MajorUnit`, `MinorUnit`, `Title`, and `Format`. In a full implementation, additional formatting details may be provided.
 
 {{< /tab >}}
 

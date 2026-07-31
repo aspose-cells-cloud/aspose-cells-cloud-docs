@@ -5,25 +5,27 @@ linktitle: "What’s New in 2023"
 type: docs
 weight: 30
 url: /new-features/2023/
-keywords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Aspose.Cells Cloud"
+keywords: "Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, JSON, Markdown, Aspose.Cells Cloud, 2023 updates"
 description: "Discover Aspose.Cells Cloud 2023 new features, including region‑aware conversion APIs, chart‑axis support, digital signatures, and other enhancements. Detailed release notes and code examples."
 ArticleTitle: "What’s New in Aspose.Cells Cloud 2023 – Feature Updates & Release Notes"
 ---
 
-Welcome to what's new in Aspose.Cells Cloud docs. This page highlights **Aspose.Cells Cloud 2023 new features** and lets you quickly find the latest changes.
+Welcome to what’s new in Aspose.Cells Cloud docs. This page highlights **Aspose.Cells Cloud 2023 new features** and lets you quickly find the latest changes.
+
+**Last updated:** July 2026  
 
 ## Enhancements in Version 23.12.0
 
-- Added region parameter to Conversion API.  
-- Added region parameter to Protection API.  
-- Added region parameter to Assemble Data API.  
-- Added region parameter to Merge Files API.  
-- Added region parameter to Split Files API.  
-- Added region parameter to Import Data API.  
-- Added region parameter to Watermark API.  
-- Added region parameter to Clear Object API.  
-- Added region parameter to Reverse Data API.  
-- Added region parameter to Rotate Data API.  
+- Added region‑parameter to Conversion API.  
+- Added region‑parameter to Protection API.  
+- Added region‑parameter to Assemble Data API.  
+- Added region‑parameter to Merge Files API.  
+- Added region‑parameter to Split Files API.  
+- Added region‑parameter to Import Data API.  
+- Added region‑parameter to Watermark API.  
+- Added region‑parameter to Clear Object API.  
+- Added region‑parameter to Reverse Data API.  
+- Added region‑parameter to Rotate Data API.  
 
 ## Enhancements in Version 23.11
 

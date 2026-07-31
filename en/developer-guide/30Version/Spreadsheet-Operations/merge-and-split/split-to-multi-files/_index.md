@@ -13,10 +13,13 @@ ArticleTitle: "Split an Excel file into multiple files - Aspose.Cells Cloud Docu
 
 The Aspose.Cells Cloud REST API splits multi‑sheet Excel workbooks into separate files.
 
+**Prerequisites**  
+Before calling the API you must obtain a valid JWT token and include it in the `Authorization` header of each request. See the [authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/split
+POST https://api.aspose.cloud/v3.0/cells/split
 ```
 
 ### **Security and Authentication**
@@ -62,7 +65,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Split operation succeeded; response contains split file details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
@@ -91,13 +94,14 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/split?format=pdf" \
+curl -v "https://api.aspose.cloud/v3.0/cells/split?format=pdf" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -F 'xxxxx1=@xxxx1.xlsx' \
--F 'xxxxx2=@xxxx2.xlsx'
+-F 'xxxxx2=@xxxx2.xlsx' \
+# Replace xxxxx1.xlsx and xxxxx2.xlsx with the paths to your Excel files
 ```
 
 {{< /tab >}}

@@ -5,7 +5,7 @@ ArticleTitle: "Cloud-based Excel File Management Solution – Detailed Explanati
 linktitle: "Copy Folder"
 type: docs
 url: /copy-folder/
-keywords: "Copy Folder API, Aspose.Cells, Cloud Storage, REST API, Spreadsheet Management"
+keywords: "Copy Folder, Aspose.Cells Cloud, REST API, Cloud Storage, Spreadsheet Management"
 description: "Learn how to copy folders in Aspose.Cells Cloud storage with a single REST call. Includes endpoint, parameters, sample requests, error codes, and SDK examples."
 weight: 100
 ---
@@ -22,9 +22,12 @@ PUT https://api.aspose.cloud/v4.0/cells/storage/folder/copy/{srcPath}
 
 The **CopyFolder** API duplicates an existing folder within Aspose.Cells Cloud storage. This is useful for creating backups, reorganising data, or preparing a folder hierarchy for further processing without manual file moves.
 
+**Prerequisites:**  
+To use this API you must obtain a JWT access token with the appropriate scopes. Generate the token via the Aspose Cloud authentication endpoint, then include it in the `Authorization` header of every request (`Bearer {access_token}`). Ensure that the target storage is already configured in your Aspose Cloud account.
+
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
 
 ```bash
 -H "Authorization: Bearer {access_token}"
@@ -39,14 +42,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | `srcStorageName`  | No       | String | Query                 | The name of the storage that contains the source folder.               |
 | `destStorageName` | No       | String | Query                 | The name of the destination storage where the folder should be copied. |
 
-````
-
 ### Sample Response
 
 A successful call returns **HTTP 200** with an empty JSON body:
 
 ```json
 {}
+```
+
+**Sample cURL request**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/copy/MyFolder?destPath=MyFolderCopy" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
 ### Error Codes
@@ -58,6 +66,9 @@ A successful call returns **HTTP 200** with an empty JSON body:
 | 404         | NotFound            | Source folder does not exist      | Incorrect `srcPath`                     |
 | 409         | Conflict            | Destination folder already exists | `destPath` points to an existing folder |
 | 500         | InternalServerError | Unexpected server error           | Service outage or internal bug          |
+
+**Notes / Limitations:**  
+The API does not enforce a specific size limit on the folder being copied, but the operation is subject to the overall storage quota and the service’s timeout settings. Deeply nested folder structures may take longer to copy, and very large folders could encounter timeout errors.
 
 ## OpenAPI Specification
 
@@ -114,3 +125,23 @@ A: Yes. Use the optional `srcStorageName` and `destStorageName` query parameters
 A: The API does not impose a specific size limit, but the request is subject to the overall storage quota and the service’s timeout settings.
 
 This documentation was last updated on July 8, 2026.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Aspose.Cells Cloud Folder Copy API – Fast Copying of Folders in the Cloud",
+  "description": "Details how to copy folders in Aspose.Cells Cloud storage using the CopyFolder API, including endpoint, parameters, sample requests, error handling, and SDK examples.",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2026-07-08",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "keywords": "Copy Folder, Aspose.Cells Cloud, REST API, Cloud Storage, Spreadsheet Management",
+  "url": "https://docs.aspose.cloud/cells/copy-folder/"
+}
+</script>

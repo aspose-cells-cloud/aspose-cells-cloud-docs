@@ -10,7 +10,7 @@ aliases:
     /workbook/names/,
     /workbook/get/names/,
   ]
-keywords: "Aspose.Cells Cloud, Get Workbook Names, Excel workbook names, REST API, Cloud SDK"
+keywords: "Aspose.Cells, Cloud, Excel, Workbook, Names, REST API, SDK"
 description: "Retrieve all defined names from an Excel workbook using the Aspose.Cells Cloud REST API. Includes authentication guidance, cURL example, response schema, error handling, and SDK samples."
 weight: 120
 ArticleTitle: "Get Names from an Excel Workbook – Aspose.Cells Cloud API"
@@ -36,6 +36,14 @@ The request parameters are:
 | name           | string | path     | The workbook file name.                |
 | folder         | string | query    | The folder that contains the workbook. |
 | storageName    | string | query    | The name of the storage to use.        |
+
+The request must include the following HTTP headers:
+
+| Header        | Type   | Description                              |
+|---------------|--------|------------------------------------------|
+| Authorization | string | Bearer JWT token (required)              |
+| Accept        | string | `application/json`                       |
+| Content-Type  | string | `application/json` (for requests with a body) |
 
 **Authentication** – The API requires an OAuth2/JWT bearer token. Obtain a token from `https://api.aspose.cloud/connect/token` using your client‑id and client‑secret, then include the header `Authorization: Bearer <jwt token>` in every request.
 

@@ -16,7 +16,7 @@ Compressing an Excel workbook reduces its file size by removing unused styles, i
 - **[Repair Excel Files](https://docs.aspose.cloud/cells/repair-excel-files/).**
 
 **Compress Workbook API**  
-The **Compress** operation uses a simple POST request. Below is a concise specification:
+The **Compress** operation uses a simple POST request. Below is a complete request/response specification:
 
 | Method | Endpoint | Required Parameters | Request Body | Sample Response | Typical Status Codes |
 |--------|----------|---------------------|--------------|-----------------|----------------------|

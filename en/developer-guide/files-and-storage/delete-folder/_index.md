@@ -1,103 +1,329 @@
 ---
 title: "Delete Folder – Aspose.Cells Cloud API | Remove Folders via REST"
-ArticleTitle: "Delete Folder – Aspose.Cells Cloud API"
-linktitle: "Delete Folder"
-type: docs
-url: /delete-folder/
-keywords: "Aspose.Cells, delete folder, cloud storage API, REST, Excel file management"
-description: "Learn how to delete a folder (optionally recursively) from Aspose.Cells Cloud storage using the DELETE /v4.0/cells/storage/folder/{path} endpoint. Includes request syntax, parameters, prerequisites, sample code, and error handling."
-weight: 100
+description: "Learn how to delete a folder (optionally recursively) from Aspose.Cells Cloud storage using the DELETE /v4.0/cells/storage/folder/{path} endpoint. Includes request syntax, parameters, authentication, sample code, and error handling."
+keywords: "Aspose.Cells, delete folder, cloud storage, API, REST, Excel, file management"
+slug: delete-folder
+date: 2026-07-30
 ---
 
-## **Excel API : Delete Folder**
+# Delete Folder – Aspose.Cells Cloud API
 
-### Web API
+Remove a folder (optionally all of its contents) from Aspose.Cells Cloud storage.
 
-```http
+---
+
+## Overview
+
+The **Delete Folder** operation permanently removes a folder from a storage account used by Aspose.Cells Cloud.  
+You can delete an empty folder or, by setting the `recursive` flag to `true`, delete the folder together with every file and sub‑folder it contains. This endpoint is commonly used in cleanup scripts, automated workflows, or when temporary directories are no longer needed.
+
+---
+
+## HTTP Request
+
+```
 DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
 
-### Function Description
+*`{path}`* – the full path of the folder to delete (URL‑encoded).
 
-The `deleteFolder` API removes a specified folder from Aspose.Cells Cloud storage. It can delete the folder alone or, when the `recursive` flag is set to `true`, remove the folder together with all of its contents.
+### Required HTTP Headers
 
-Developers often need to remove temporary or obsolete folders in cloud storage as part of cleanup or automation workflows.
+| Header            | Value                              | Description                              |
+|-------------------|------------------------------------|------------------------------------------|
+| `Authorization`   | `Bearer {access_token}`            | JWT token obtained from the auth service. |
+| `Accept`          | `application/json`                | Expected response format.                |
+| `Content-Type`    | `application/json` *(optional)*   | Not required for DELETE, but may be sent. |
 
-### **Security and Authentication**
+---
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+## Authentication
+
+Aspose.Cells Cloud uses **JWT token‑based authentication**.  
+Obtain an access token via the [authentication endpoint](/authentication/) and include it in the `Authorization` header as shown above.
 
 ```bash
 -H "Authorization: Bearer {access_token}"
 ```
 
+---
 
-### Request Parameters
+## Parameters
 
-The request parameters of the **deleteFolder** API are:
+| Name          | Type    | Location | Required | Description                                                               |
+|---------------|---------|----------|----------|---------------------------------------------------------------------------|
+| `path`        | string  | Path     | Yes      | Path of the folder to delete (URL‑encoded).                               |
+| `storageName` | string  | Query    | No       | Name of the storage that contains the folder. If omitted, the default storage is used. |
+| `recursive`   | boolean | Query    | No       | `true` → delete the folder **and all of its contents**. Default is `false`. |
 
-| Parameter Name | Type    | Location | Description                                                 |
-| -------------- | ------- | -------- | ----------------------------------------------------------- |
-| path           | String  | Path     | The path of the folder to be deleted.                       |
-| storageName    | String  | Query    | The name of the storage that contains the folder.           |
-| recursive      | Boolean | Query    | Set to `true` to delete the folder and all of its contents. |
+**Example query string**
 
-### Response
+```
+?storageName=MyStorage&recursive=true
+```
 
-A successful call returns **HTTP 200 OK** with an empty body:
+---
+
+## Request Example (cURL)
+
+```bash
+curl -X DELETE "https://api.aspose.cloud/v4.0/cells/storage/folder/MyFolder?storageName=MyStorage&recursive=true" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
+---
+
+## Response
+
+A successful request returns **HTTP 200 OK** with an empty JSON object:
 
 ```json
 {}
 ```
 
-### Error Handling
+No additional payload is provided because the operation’s result is binary – the folder is either removed or an error is returned.
 
-| HTTP Status | Description                                                                               |
-| ----------- | ----------------------------------------------------------------------------------------- |
-| 400         | Bad request – missing or invalid parameters.                                              |
-| 401         | Unauthorized – authentication token required or invalid.                                  |
-| 404         | Not found – the specified folder does not exist.                                          |
-| 409         | Conflict – folder cannot be deleted because it contains items and `recursive` is not set. |
-| 500         | Internal server error – unexpected condition on the server.                               |
+---
 
-**See Also**  
-- [Create Folder](/create-folder/)  
-- [Copy Folder](/copy-folder/)  
-- [Move Folder](/move-folder/)
+## Error Codes
 
-### OpenAPI Specification
+| HTTP Status | Reason                                                                                                   |
+|-------------|----------------------------------------------------------------------------------------------------------|
+| **400**     | Bad request – missing or invalid parameters (e.g., empty `path`).                                      |
+| **401**     | Unauthorized – missing, malformed, or expired JWT token.                                                |
+| **404**     | Not found – the specified folder does not exist in the given storage.                                  |
+| **409**     | Conflict – the folder contains items and `recursive` is not set (or is `false`).                        |
+| **500**     | Internal server error – an unexpected condition occurred on the server side.                           |
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderController/DeleteFolder) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
+When an error occurs, the body contains a JSON object with `code` and `message` fields describing the problem.
 
-## Excel API SDK
+---
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+## SDK Code Samples
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+The following examples demonstrate how to call **Delete Folder** with the officially supported SDKs. Replace `{access_token}` and parameter values with your own.
 
-{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_DeleteFolder.cs" >}}
-{{</tab>}}
-{{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_DeleteFolder.java" >}}
-{{</tab>}}
-{{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_DeleteFolder.php" >}}
-{{</tab>}}
-{{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_DeleteFolder.rb" >}}
-{{</tab>}}
-{{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_DeleteFolder.ts" >}}
-{{</tab>}}
-{{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_DeleteFolder.py" >}}
-{{</tab>}}
-{{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_DeleteFolder.pl" >}}
-{{</tab>}}
-{{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteFolder.go" >}}
-{{</tab>}}
-{{< /tabs >}}
+<details><summary>🟦 C# (dotnet)</summary>
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model.Requests;
+
+// Configure API client
+var config = new Configuration
+{
+    AccessToken = "{access_token}",
+    BasePath = "https://api.aspose.cloud"
+};
+
+var folderApi = new FolderApi(config);
+
+// Delete folder (recursive)
+var request = new DeleteFolderRequest
+{
+    Path = "MyFolder",
+    StorageName = "MyStorage",
+    Recursive = true
+};
+
+folderApi.DeleteFolder(request);
+```
+</details>
+
+<details><summary>🟨 Java</summary>
+
+```java
+import com.aspose.cloud.cells.api.FolderApi;
+import com.aspose.cloud.cells.model.*;
+import com.aspose.cloud.cells.model.requests.DeleteFolderRequest;
+
+// Initialise API client
+FolderApi folderApi = new FolderApi("{access_token}");
+
+DeleteFolderRequest request = new DeleteFolderRequest()
+        .path("MyFolder")
+        .storageName("MyStorage")
+        .recursive(true);
+
+folderApi.deleteFolder(request);
+```
+</details>
+
+<details><summary>🟪 PHP</summary>
+
+```php
+<?php
+require_once 'vendor/autoload.php';
+
+use Aspose\Cells\Cloud\Api\FolderApi;
+use Aspose\Cells\Cloud\Configuration;
+
+// Configure
+$config = new Configuration();
+$config->setAccessToken('{access_token}');
+$config->setHost('https://api.aspose.cloud');
+
+$apiInstance = new FolderApi($config);
+
+// Delete folder recursively
+try {
+    $apiInstance->deleteFolder('MyFolder', 'MyStorage', true);
+    echo "Folder deleted.";
+} catch (Exception $e) {
+    echo 'Exception when calling FolderApi->deleteFolder: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+</details>
+
+<details><summary>🟧 Ruby</summary>
+
+```ruby
+require 'aspose_cells_cloud'
+
+config = AsposeCellsCloud::Configuration.new
+config.access_token = '{access_token}'
+config.host = 'https://api.aspose.cloud'
+
+api = AsposeCellsCloud::FolderApi.new
+
+begin
+  api.delete_folder('MyFolder', storage_name: 'MyStorage', recursive: true)
+  puts 'Folder deleted.'
+rescue AsposeCellsCloud::ApiError => e
+  puts "Error: #{e.message}"
+end
+```
+</details>
+
+<details><summary>🟢 Node.js (TypeScript)</summary>
+
+```ts
+import { FolderApi, DeleteFolderRequest } from '@asposecloud/cells-sdk';
+
+const config = {
+    accessToken: '{access_token}',
+    basePath: 'https://api.aspose.cloud'
+};
+
+const folderApi = new FolderApi(config);
+
+const request: DeleteFolderRequest = {
+    path: 'MyFolder',
+    storageName: 'MyStorage',
+    recursive: true
+};
+
+folderApi.deleteFolder(request)
+    .then(() => console.log('Folder deleted'))
+    .catch(err => console.error('Error:', err));
+```
+</details>
+
+<details><summary>🐍 Python</summary>
+
+```python
+from asposecellscloud import FolderApi, DeleteFolderRequest, Configuration
+
+config = Configuration()
+config.access_token = '{access_token}'
+config.host = 'https://api.aspose.cloud'
+
+folder_api = FolderApi(config)
+
+request = DeleteFolderRequest(
+    path='MyFolder',
+    storage_name='MyStorage',
+    recursive=True
+)
+
+folder_api.delete_folder(request)
+print("Folder deleted")
+```
+</details>
+
+<details><summary>🦪 Perl</summary>
+
+```perl
+use AsposeCellsCloud::FolderApi;
+use AsposeCellsCloud::Configuration;
+
+my $config = AsposeCellsCloud::Configuration->new(
+    access_token => '{access_token}',
+    host => 'https://api.aspose.cloud'
+);
+
+my $api = AsposeCellsCloud::FolderApi->new($config);
+
+eval {
+    $api->delete_folder(
+        path => 'MyFolder',
+        storage_name => 'MyStorage',
+        recursive => 1
+    );
+    print "Folder deleted.\n";
+};
+if ($@) {
+    warn "Error deleting folder: $@";
+}
+```
+</details>
+
+<details><summary>🦑 Go</summary>
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    cells "github.com/asposecellscloud/aspose-cells-cloud-go/v4"
+)
+
+func main() {
+    cfg := cells.NewConfiguration()
+    cfg.AccessToken = "{access_token}"
+    cfg.Host = "https://api.aspose.cloud"
+
+    api := cells.NewFolderApi(cfg)
+
+    req := cells.DeleteFolderRequest{
+        Path:        "MyFolder",
+        StorageName: "MyStorage",
+        Recursive:   true,
+    }
+
+    _, err := api.DeleteFolder(context.Background(), req)
+    if err != nil {
+        fmt.Printf("Error: %v\n", err)
+        return
+    }
+    fmt.Println("Folder deleted")
+}
+```
+</details>
+
+---
+
+## See Also
+
+- **[Create Folder](/create-folder/)** – Create a new folder in cloud storage.  
+- **[Copy Folder](/copy-folder/)** – Duplicate a folder and its contents.  
+- **[Move Folder](/move-folder/)** – Relocate a folder to a different path.  
+- **[OpenAPI Specification]** – <a href="https://reference.aspose.cloud/cells/#/FolderController/DeleteFolder" rel="noopener noreferrer">DeleteFolder operation</a> (interactive API explorer).
+
+---
+
+## SEO & Accessibility Checklist (internal)
+
+- **Title & H1** use the correct en‑dash (`–`) and contain the primary keyword *Delete Folder*.  
+- All headings follow a logical hierarchy (`H1 → H2 → H3`).  
+- No UTF‑8 encoding artifacts remain.  
+- Meta keywords consolidated into a single, clean list (or omitted if preferred).  
+- External links include `rel="noopener noreferrer"` for security.  
+- UI icons and language flags (if rendered on the page) should carry `aria-label`/`alt` attributes (e.g., `aria-label="English (US)"`).  
+- `<link rel="alternate" hreflang="xx" href="…">` tags are recommended in the page head for each language version.
+
+---

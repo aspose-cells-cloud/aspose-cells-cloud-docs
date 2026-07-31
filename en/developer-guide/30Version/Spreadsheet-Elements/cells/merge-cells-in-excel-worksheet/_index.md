@@ -3,16 +3,22 @@ title: "How to Merge Cells in an Excel Worksheet – Aspose.Cells Cloud API (v3.
 type: docs
 url: /merge-cells-in-excel-worksheet/
 weight: 110
-keywords: "merge cells in Excel worksheet, Aspose.Cells Cloud, REST API, Excel, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Perl"
-description: "Step‑by‑step guide to merge cells in an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL example, SDK snippets, required parameters, authentication, response codes, and error handling."
+keywords: "merge cells, Aspose.Cells, Cloud API, Excel"
+description: "Guide to merge cells in an Excel worksheet using Aspose.Cells Cloud REST API with cURL and SDK examples."
+ArticleTitle: "How to Merge Cells in an Excel Worksheet – Aspose.Cells Cloud API (v3.0)"
 ---
 
 The Aspose.Cells Cloud REST API merges a rectangular block of cells into a single cell that spans the specified rows and columns.
 
+**Prerequisites**  
+- A valid JWT token for authentication.  
+- The workbook must already exist in the specified storage folder.  
+- Storage configuration (folder and storage name) must be set up in your Aspose.Cloud account.
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merge
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merge
 ```
 
 ## Security and Authentication
@@ -32,6 +38,8 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 | folder        | string  | query    | The folder that contains the workbook.           |
 | storageName   | string  | query    | The storage name.                                |
 
+*No request body is required for this operation.*
+
 ## **Response**
 
 Return CellsCloudResponse.
@@ -46,7 +54,7 @@ Return CellsCloudResponse.
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Merge operation completed successfully; the workbook now contains the merged cell range. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |

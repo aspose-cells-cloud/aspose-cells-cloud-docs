@@ -9,12 +9,14 @@ aliases:
   - /import-picture-into-worksheet/
   - /import-data/picture/
   - /import/picture/
-keywords: "Import picture, Excel worksheet, Aspose.Cells Cloud, REST API, v3.0"
-description: "Learn how to import pictures into an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes multipart request example, SDK code samples, and error handling."
+keywords: "Import picture, Excel, Aspose.Cells Cloud, REST API, v3.0"
+description: "Learn how to import pictures into Excel worksheets using Aspose.Cells Cloud REST API v3.0. Includes multipart request examples, SDK code samples, and error‑handling guidance. Get started quickly with clear steps."
 weight: 19
 ---
 
 Importing a picture into an Excel worksheet allows you to enrich spreadsheets with visual content such as logos, charts, or diagrams. This guide shows how to use the Aspose.Cells Cloud **ImportPicture** operation, the required request format, and how to handle responses.
+
+**Prerequisites:** You must have a valid JWT authentication token and an existing workbook stored in Aspose Cloud Storage before invoking the import operation.
 
 ## REST API
 
@@ -142,4 +144,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-

@@ -10,12 +10,14 @@ aliases:
 weight: 100
 keywords: "Aspose.Cells, delete date filter, Excel AutoFilter, REST API, SDK"
 description: "Learn how to delete a date filter from an Excel worksheet using the Aspose.Cells Cloud REST API. Includes endpoint, parameters, HTTPS cURL example, response payload, and SDK code samples."
+ArticleTitle: "Delete a Date Filter – Aspise.Cells Cloud API Documentation"
 ---
-
 
 ## REST API
 
 This REST API deletes a date filter on an Excel worksheet.
+
+**Prerequisites:** Ensure you have a valid JWT token, the workbook is stored in Aspose Cloud storage, and you have appropriate permissions to modify the worksheet.
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
@@ -23,7 +25,7 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFil
 
 ## Security and Authentication
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 
@@ -53,21 +55,21 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 **Http Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+The API returns standard HTTP status codes indicating the result of the delete operation.
 
+| Code | Meaning | Description |
+|------|---------|-------------|
+| 200  | OK      | The date filter was successfully deleted; the response contains the operation status. |
+| 400  | Bad Request | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized | Invalid or missing JWT token. |
+| 413  | Payload Too Large | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error | Unexpected server error. |
 
 ## How to Use the DeleteWorksheetDateFilter API with SDKs
 
 ### DeleteWorksheetDateFilter API Specification
 
-
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetDateFilter) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/AutoFilter/DeleteWorksheetDateFilter" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -100,7 +102,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

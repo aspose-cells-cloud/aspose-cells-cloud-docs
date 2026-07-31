@@ -10,7 +10,7 @@ aliases:
   - /import-data-in-excel-worksheet/
   - /import-data/
   - /import/with-using-storage/
-description: "Import data into an Excel worksheet using Aspose.Cells Cloud API from various storage sources. Learn how to import JSON, CSV, or other formats securely via HTTPS."
+description: "Import Data Using Storage: Import data into an Excel worksheet using Aspose.Cells Cloud API from various storage sources. Supports JSON, CSV, and other formats via HTTPS."
 keywords: "Aspose.Cells Cloud, Excel, Import Data, REST API, Cloud Storage, JSON, CSV, PDF, Markdown, HTTPS"
 weight: 10
 ArticleTitle: "Import Data Using Storage - Aspose.Cells Cloud API Documentation"
@@ -23,7 +23,6 @@ This REST API imports data into an Excel file.
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
-
 
 ### **Security and Authentication**
 
@@ -40,6 +39,8 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **The import‑data options parameters** are described in [the reference link](/cells/import/#import-data-option-parameter).
 
+**Prerequisites:** You must provide a valid JWT token in the `Authorization` header and ensure that the target workbook already exists in the specified storage location.
+
 ### Response
 
 ```json
@@ -50,19 +51,17 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ```
 **Http Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-
+| Code | Meaning | Description |
+|------|---------|-------------|
+| 200  | OK      | Import succeeded; the workbook is updated with the supplied data. |
+| 400  | Bad Request | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized | Invalid or missing JWT token. |
+| 413  | Payload Too Large | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error | Unexpected server error. |
 
 ## How to Use the PostImportData API with SDKs
 
 ### PostImportData API Specification
-
 
 The <a href="https://apireference.aspose.cloud/cells/#/Workbook/PostImportData" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -101,4 +100,3 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/importdata" \
 Using an SDK is the best way to accelerate development. An SDK abstracts low‑level details, allowing you to focus on your business logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code example demonstrates how to call the Aspose.Cells web service using the PHP SDK:
-

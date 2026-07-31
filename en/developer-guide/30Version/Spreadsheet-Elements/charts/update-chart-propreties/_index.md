@@ -4,7 +4,7 @@ type: docs
 url: /charts/properties/update/
 aliases: [/update-chart-properties/]
 weight: 160
-keywords: "Aspose.Cells, chart properties, update chart, Excel API, REST API, cURL, SDK, C#, Java, PHP, Ruby, Node.js, Go, Perl"
+keywords: "Aspose.Cells, chart, update, Excel, REST API, SDK"
 description: "Learn how to update chart properties (type, title, legend, etc.) in an Excel workbook using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL example, and SDK snippets for C#, Java, PHP, Ruby, Node.js, Perl, and Go."
 ArticleTitle: "Update Chart Properties – Aspose.Cells Cloud REST API"
 ---
@@ -12,7 +12,7 @@ ArticleTitle: "Update Chart Properties – Aspose.Cells Cloud REST API"
 This REST API updates chart properties.
 
 ## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" target="_blank" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ## REST API
 
@@ -55,7 +55,7 @@ The **`chart`** object contains the properties you can modify. Below is a repres
 
 > **Note:** Only the fields you need to change have to be supplied. Omitted properties retain their existing values.
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChart) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/Charts/PostWorksheetChart" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -119,9 +119,11 @@ Possible error responses include:
 | 404         | Not Found – file, worksheet, or chart not found |
 | 500         | Internal Server Error                           |
 
+For other chart‑related operations, see the related topics such as [Update Chart Title](/charts/title/update/) and [Update Chart Legend](/charts/legend/update/).
+
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

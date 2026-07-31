@@ -5,17 +5,43 @@ linktitle: "Page setup"
 type: docs
 url: /page-setup/
 keywords: "Aspose.Cells, pageSetup, worksheet, print settings, margins, orientation, paper size, header, footer, scaling"
-description: "Learn how to configure Excel worksheet print layout with Aspose.Cells Cloud’s pageSetup object. Includes property list, defaults, ranges, and code samples for C#, Java, and Python."
+description: "Learn how to configure Excel worksheet print layout with Aspose.Cells Cloud’s PageSetup object. Includes property list, defaults, ranges, and code samples for C#, Java, and Python."
 weight: 20
+ArticleTitle: "Worksheet Page Setup – Configure Print Layout with Aspose.Cells Cloud"
 ---
 
-# **pageSetup**
+# **PageSetup**
 
 Excel print page settings
 
 ## Overview
 
-The **pageSetup** object defines the print‑layout options for an Excel worksheet, such as margins, orientation, scaling, headers, footers, and other print‑related settings. Configuring these properties lets developers produce printable workbooks that match the desired appearance and pagination.
+The **PageSetup** object defines the print‑layout options for an Excel worksheet, such as margins, orientation, scaling, headers, footers, and other print‑related settings. Configuring these properties lets developers produce printable workbooks that match the desired appearance and pagination.
+
+Below is a short C# example that demonstrates how to set common page‑setup properties using the Aspose.Cells Cloud SDK:
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
+
+// Initialize the API client (replace with your credentials)
+var apiInstance = new CellsApi("YOUR_CLIENT_ID", "YOUR_CLIENT_SECRET");
+
+// Define the PageSetup settings
+var pageSetup = new PageSetup()
+{
+    Orientation = "Landscape",
+    PaperSize = "A4",
+    CenterHorizontally = true,
+    CenterVertically = true,
+    Zoom = 100
+};
+
+// Apply the settings to the first worksheet of the workbook
+apiInstance.PutWorksheetPageSetup("Sample.xlsx", "Sheet1", pageSetup);
+```
+
+This snippet sets the worksheet to landscape orientation, uses A4 paper, centers the content, and applies a 100 % zoom factor.
 
 ## Properties
 
@@ -58,6 +84,6 @@ The **pageSetup** object defines the print‑layout options for an Excel workshe
 
 ## Related Objects
 
-- **Header** – Configures the worksheet header.
-- **Footer** – Configures the worksheet footer.
-- **PrintOptions** – Additional print‑related settings such as page breaks and print area.
+- **Header** – Configures the worksheet header.  
+- **Footer** – Configures the worksheet footer.  
+- **PrintOptions** – Additional print‑related settings such as page breaks and print area.  

@@ -5,7 +5,7 @@ ArticleTitle: "Find & Fix Broken Links in Remote Excel – Cloud Spreadsheet Lin
 linktitle: "Search Remote Spreadsheets Broken Links"
 type: docs
 url: /search-broken-links-in-remote-spreadsheet/
-keywords: "Excel, broken links, API, cloud, spreadsheet, validation, Aspose.Cells"
+keywords: "Aspose.Cells, broken links, Excel API, cloud spreadsheet, link validation, spreadsheet audit"
 description: "Use Aspose.Cells Cloud API to scan remote Excel workbooks for broken external links, invalid formulas, and missing data sources."
 weight: 100
 ---
@@ -13,6 +13,11 @@ weight: 100
 ## **Search Broken Links In Remote Spreadsheet API**
 
 Automatically detect broken links in Excel files stored in cloud storage. Our API scans specified ranges for broken external references, invalid formulas, and missing data sources. It supports remote spreadsheet auditing, automated quality checks, and integration with cloud‑storage providers. Use the RESTful API to automate enterprise‑level workflows.
+
+**Prerequisites**:  
+- Obtain a valid JWT access token (see the Authentication section below).  
+- Ensure the workbook you want to scan is stored in a supported cloud storage location and is accessible to the API.  
+- If the workbook is password‑protected, include the `password` query parameter; otherwise, omit it.
 
 ### **Web API**
 
@@ -114,6 +119,10 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/Quarterly_Report.xlsx/search/br
 - **401 Unauthorized** – Invalid access token, client ID, or client secret.  
 - **404 Not Found** – The spreadsheet file is not accessible.  
 - **500 Server Error** – An anomaly occurred while obtaining calculation data.
+
+**Notes**:  
+- The API does not support local file system paths when operating in cloud mode; use only URLs or files stored in supported cloud storage.  
+- Be aware of rate‑limit restrictions; excessive calls may result in throttling responses.
 
 ## Where should we use the Search for broken links within the Spreadsheet API?
 

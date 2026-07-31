@@ -5,8 +5,8 @@ linktitle: "Get"
 type: docs
 url: /shapes/get/
 aliases: [/get-a-shape-by-index-inside-the-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel shape API, get shape by index, worksheet shape, REST API, shape retrieval"
-description: "Learn how to retrieve a shape by its index from an Excel worksheet using Aspose.Cells Cloud REST API. Includes request syntax, parameters, response details, status codes, and SDK examples."
+keywords: "Aspose.Cells Cloud, Excel shape API, get shape by index, worksheet shape, REST API, shape retrieval, Aspose.Cells SDK"
+description: "Retrieve a shape by its index from an Excel worksheet using Aspose.Cells Cloud REST API. Includes request syntax, parameters, response details, and SDK examples."
 weight: 20
 ArticleTitle: "Get a Shape by Index on an Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
@@ -33,6 +33,8 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{sh
 | folder         | string  | query    | Folder path where the document is stored.           |
 | storageName    | string  | query    | Name of the storage service.                        |
 
+**Note:** `shapeindex` is zero‑based; the first shape has index 0. Ensure the workbook is stored in the specified `folder` and `storageName` if you are not using the default storage.
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Shapes/GetWorksheetShape) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
@@ -42,7 +44,8 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/autoshapes/1" \
+# Corrected endpoint and path
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet4/shapes/1" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -114,6 +117,8 @@ curl -v "https://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet
 | **401 Unauthorized** | Authentication failed or token is missing/invalid. |
 | **404 Not Found** | The specified workbook, worksheet, or shape index does not exist. |
 | **500 Internal Server Error** | An unexpected server error occurred. |
+
+**Common pitfalls:** Using an incorrect base domain (`api.aspose.com`) or the outdated `/autoshapes/` segment will result in a 404 error. Always use the `/shapes/` segment with the `api.aspose.cloud` domain.
 
 ## Cloud SDK Family
 

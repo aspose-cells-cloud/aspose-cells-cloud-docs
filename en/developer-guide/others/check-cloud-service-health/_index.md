@@ -5,12 +5,15 @@ ArticleTitle: "Aspose.Cells Cloud Health Check"
 linktitle: "Check Cloud Service Health"
 type: docs
 url: /check-cloud-service-health/
-keywords: "Aspose, Cells, Cloud, API, health check, REST"
+keywords: "Aspose.Cells Cloud, API health check, REST status, cloud service monitoring"
 description: "Monitor Aspose.Cells Cloud health in real‑time. Learn the GET /v4.0/cells/status/check endpoint, parameters, response format, and SDK examples."
 weight: 100
 ---
 
 Check the health status of Aspose.Cells Cloud services.
+
+**Prerequisites**  
+To call this endpoint you must have a valid Aspose Cloud access token. Obtain the token by registering an application in the Aspose Cloud Dashboard and using the client‑id and client‑secret to request a Bearer token via the OAuth2 token endpoint. Include the token in the `Authorization` header as shown below.
 
 ## **Check Cloud Service Health**
 
@@ -22,11 +25,11 @@ GET https://api.aspose.cloud/v4.0/cells/status/check
 
 ### **Request Parameters**
 
-| Parameter      | Type   | Required | Description                                                     |
-|----------------|--------|----------|-----------------------------------------------------------------|
-| Authorization  | header | Yes      | Bearer token for authentication (`Authorization: Bearer <token>`). |
-| detail         | query  | No       | Set to `true` to include detailed component information.       |
-| Accept         | header | No       | Desired response format, default is `application/json`.        |
+| Parameter      | Type   | Required | Description                                                                                                            |
+|----------------|--------|----------|------------------------------------------------------------------------------------------------------------------------|
+| Authorization  | header | Yes      | Bearer token for authentication (`Authorization: Bearer <token>`).                                                   |
+| detail         | query  | No       | Set to `true` to include detailed component information.                                                               |
+| Accept         | header | No       | Desired response format, default is `application/json`.                                                                |
 
 ### **Response**
 
@@ -67,3 +70,35 @@ Using the SDK is the best way to accelerate development. The SDK handles the und
 Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 Below are sample snippets that demonstrate how to call the health‑check endpoint with the most common SDKs.
+
+#### C# Example
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Client;
+using Aspose.Cells.Cloud.SDK.Model;
+
+var config = new Configuration
+{
+    ClientId = "<your-client-id>",
+    ClientSecret = "<your-client-secret>",
+    BaseUrl = "https://api.aspose.cloud"
+};
+
+var apiInstance = new CellsApi(config);
+try
+{
+    // Call the health‑check endpoint
+    var response = apiInstance.CheckCloudServiceHealth(detail: true);
+    Console.WriteLine($"Status: {response.Status}");
+    Console.WriteLine($"Timestamp: {response.Timestamp}");
+}
+catch (Exception e)
+{
+    Console.WriteLine("Exception when calling CellsApi.CheckCloudServiceHealth: " + e.Message);
+}
+```
+
+*Replace `<your-client-id>` and `<your-client-secret>` with the credentials obtained from the Aspose Cloud Dashboard.*
+
+> **Accessibility note:** The language selector on the documentation site uses CSS‑based flag icons (`<em class="flag-xx flag-24">`). For screen‑reader users, add an `aria-label` (e.g., `aria-label="English (US)"`) to each flag element to provide descriptive text. This improves WCAG 2.1 AA compliance.

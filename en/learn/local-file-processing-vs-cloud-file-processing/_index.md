@@ -5,14 +5,14 @@ ArticleTitle: "What is the difference between local file processing and cloud fi
 linktitle: "Local File Processing vs. Cloud File Processing"
 type: docs
 url: /learn/local-file-processing-vs-cloud-file-processing/
-description: "Compare Aspose.Cells Cloud local‑file and cloud‑file processing: storage, cost, security, and typical scenarios. Learn which approach fits your workflow and start converting today."
-keywords: "Aspose.Cells Cloud, local file processing, cloud file processing, Excel API, PDF conversion"
+description: "Compare Aspose.Cells Cloud local file and cloud file processing: storage, cost, security, and typical scenarios. Understand which approach fits your workflow."
+keywords: "Aspose.Cells Cloud, local file processing, cloud file processing, spreadsheet conversion, API"
 weight: 10
 ---
 
 Local file processing and cloud file processing are different data management paradigms, with significant differences in file storage infrastructure, business processing, access, cost structure, security, and applicable scenarios. The main differences between the two are:
 
-**Prerequisites:** Before using the examples, ensure you have a valid Aspose.Cells Cloud account, the latest SDK version installed, and your Client Id and Client Secret ready for authentication.
+**Prerequisites:** Before using the examples, ensure you have a valid Aspose.Cells Cloud account, the latest SDK version installed, and your Client Id and Client Secret ready for authentication.
 
 ## 1. File storage location and infrastructure
 
@@ -35,6 +35,12 @@ api.convert_spreadsheet(
     local_outpath="BookSales.pdf"
 )
 ```
+
+**API Reference – Convert Spreadsheet**
+
+| Method                | HTTP Verb | Endpoint            | Parameters (key)                                 | Responses            |
+|-----------------------|-----------|---------------------|--------------------------------------------------|----------------------|
+| `convert_spreadsheet` | POST      | `/cells/convert`    | `inputFile` – path to source file<br>`format` – target format (e.g., `pdf`) | `200 OK` – conversion successful<br>`400 Bad Request` – invalid parameters<br>`401 Unauthorized` – authentication failure |
 
 - Cloud file:
 
@@ -84,6 +90,14 @@ api.save_spreadsheet_as(
 )
 ```
 
+**API Reference – Cloud File Operations**
+
+| Method                     | HTTP Verb | Endpoint                     | Parameters (key)                                                                                 | Responses                                    |
+|----------------------------|-----------|------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------|
+| `upload_file`              | PUT       | `/cells/storage/file`        | `localPath` – local file path<br>`remotePath` – destination in cloud storage                     | `200 OK` – upload successful<br>`401 Unauthorized` |
+| `export_spreadsheet_as_format` | POST      | `/cells/{name}/export`       | `name` – cloud file name<br>`format` – target format (e.g., `pdf`)<br>`folder` – optional folder | `200 OK` – export successful<br>`400 Bad Request` |
+| `save_spreadsheet_as`      | POST      | `/cells/{name}/saveas`       | `name` – cloud file name<br>`format` – target format<br>`folder` – destination folder            | `200 OK` – save successful<br>`401 Unauthorized` |
+
 ## 2. Business processing
 
 Regardless of local file processing or cloud file processing, all business processing is completed in the Cells Cloud server, **so Internet support is required**.
@@ -105,7 +119,7 @@ Regardless of local file processing or cloud file processing, all business proce
 ## 4. Cost structure and security
 
 - Local file:
-  
+
   - High capital expenditure is required in the early stage. This leads to additional costs for operational support later.
   - Physical security and network security are both controlled by the users themselves.
 
@@ -120,3 +134,5 @@ Regardless of local file processing or cloud file processing, all business proce
 - Cloud file: File operations can be performed locally or in the cloud.  
 
 **Notes / Limitations:** The API supports files up to 200 MB for cloud processing, and only the formats listed in the documentation can be converted. Network latency may affect processing time for large spreadsheets.
+
+_Last updated: July 30, 2026_

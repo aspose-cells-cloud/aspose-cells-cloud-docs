@@ -1,5 +1,6 @@
 ---
 title: "Delete all shapes on an Excel worksheet"
+ArticleTitle: "Delete all shapes on an Excel worksheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Clear"
 type: docs
@@ -12,10 +13,12 @@ weight: 40
 
 This REST API deletes all shapes on an Excel worksheet.
 
+**Prerequisites:** A valid JWT access token is required. Obtain it via the Aspose Cloud OAuth2 flow and include it in the `Authorization` header as shown in the example below.
+
 ## REST API
 
 ```bash
-DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
+DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
 ### **Request parameters**
@@ -27,7 +30,7 @@ DELETE http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 | folder         | string | query    | The folder that contains the document.       |
 | storageName    | string | query    | The storage name where the document resides. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShapes) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/Shapes/DeleteWorksheetShapes" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 

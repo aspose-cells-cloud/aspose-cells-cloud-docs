@@ -6,11 +6,13 @@ linktitle: "Search Spreadsheet Content"
 type: docs
 url: /search-spreadsheet-content/
 keywords: "Aspose.Cells, Excel search API, spreadsheet content search, cloud spreadsheet API, text lookup"
-description: "Use Aspose.Cells Cloud API to search for text, numbers, or formulas in local Excel files. Supports case‑insensitive queries, worksheet‑level scope, and secure authentication."
+description: "Use Aspose.Cells Cloud API to search for text, numbers, or formulas in Excel files. Supports case‑insensitive queries, worksheet‑level scope, and secure authentication."
 weight: 100
 ---
 
 ## **Search Spreadsheet Content API**
+
+**Prerequisites:** The API requires a valid JWT access token obtained via Aspose Cloud authentication. Ensure your account has sufficient credits and that the target Excel file is accessible in your cloud storage.
 
 Programmatically search for specific text within any Excel spreadsheet using the Aspose.Cells Cloud API. The API can locate text, numbers, or formulas in local files stored in the cloud, enabling automated data discovery, content analysis, and spreadsheet‑auditing workflows.
 
@@ -81,6 +83,8 @@ The API returns a `SearchResult` object that contains an array of matched cells.
 - **404 Not Found** – The specified spreadsheet cannot be accessed.
 - **500 Internal Server Error** – An unexpected server error occurred while processing the workbook.
 
+**Notes:** The Search Spreadsheet Content API is subject to standard Aspose.Cells Cloud rate limits. Typically, up to 100 requests per second are allowed per account. Exceeding this limit may result in a 429 Too Many Requests response.
+
 ## Where should we use the Search content within the Spreadsheet API?
 
 - **Comprehensive Workbook Compliance Audit** – Scan the entire workbook to locate sensitive terms (e.g., “Confidential Clause”, “Internal Data”) for data‑security and compliance checks.
@@ -100,11 +104,11 @@ The API returns a `SearchResult` object that contains an array of matched cells.
 
 ### OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControllor/SearchSpreadsheetContent) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+<a href="https://reference.aspose.cloud/cells/#/SearchControllor/SearchSpreadsheetContent" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the fastest way to integrate the search functionality. The SDK abstracts the HTTP layer, allowing you to call the API with minimal code. See the full list of SDKs in the [GitHub repository](https://github.com/aspose-cells-cloud).
+Using an SDK is the fastest way to integrate the search functionality. The SDK abstracts the HTTP layer, allowing you to call the API with minimal code. See the full list of SDKs in the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a>.
 
 The following code examples demonstrate how to invoke the Search Spreadsheet Content operation with various SDKs:
 

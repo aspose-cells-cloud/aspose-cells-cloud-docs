@@ -13,6 +13,10 @@ ArticleTitle: "Group Rows in Excel Worksheet using Aspose.Cells Cloud API"
 
 This REST API groups rows on an Excel worksheet.
 
+**Prerequisites:**  
+- A valid OAuth 2.0 access token (Bearer JWT) must be supplied in the `Authorization` header.  
+- The workbook must already exist in the specified `folder` of the chosen `storageName` (or the default storage) before the request is made.
+
 ## REST API
 
 ```bash
@@ -68,11 +72,17 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 | 404  | Not Found – workbook or worksheet not found.|
 | 500  | Internal Server Error – unexpected server issue.|
 
+Typical error responses:
+
+- **400 Bad Request** – check that `firstIndex` and `lastIndex` are valid integers and that `firstIndex` ≤ `lastIndex`.  
+- **401 Unauthorized** – verify that the `Authorization` header contains a current JWT token.  
+- **404 Not Found** – ensure the workbook (`name`) and worksheet (`sheetName`) exist in the specified `folder`/`storageName`.
+
 {{< /tab >}}
 
 {{< /tabs >}}
 
-**See also:** [Ungroup rows](../rows/ungroup/), [Hide rows](../rows/hide/), [Unhide rows](../rows/unhide/).
+**See also:** [Ungroup rows on an Excel worksheet](../rows/ungroup/ "Ungroup rows on an Excel worksheet"), [Hide rows on an Excel worksheet](../rows/hide/ "Hide rows on an Excel worksheet"), [Unhide rows on an Excel worksheet](../rows/unhide/ "Unhide rows on an Excel worksheet").
 
 ## Cloud SDK Family
 

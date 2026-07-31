@@ -8,16 +8,15 @@ aliases:
   - /import-batch-data-into-worksheet/
   - /import-data/batch-data/
   - /import/batch-data/
-keywords: "Aspose.Cells, Cloud API, import batch data, Excel"
+keywords: "Aspose.Cells, Cloud API, import batch data, Excel, CSV, JSON, XML, arrays"
 description: "Learn how to import batch data (CSV, JSON, XML, arrays) into an Excel worksheet using Aspose.Cells Cloud REST API. Includes authentication, request/response examples, SDK snippets, and error handling."
 weight: 19
 ArticleTitle: "Import Batch Data into Excel Worksheet – Aspose.Cells Cloud Documentation"
 ---
 
-This REST API **imports batch data** into an Excel worksheet.
+This REST API **imports batch data** into an Excel worksheet. It accepts a multipart request where the first part contains the **ImportBatchDataOption** object and the second part carries the actual data file (CSV, JSON, XML, etc.).
 
 The operation uses an HTTP request with multipart content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
-The first part of the multipart payload contains the **ImportBatchDataOption** object, and the second part carries the data file.
 
 ## REST API
 
@@ -28,7 +27,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
 
 **Request parameters**  
 | Parameter | Location | Description |
@@ -38,7 +37,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | `file` | Body (second part) | The data file (CSV, JSON, XML, etc.) to be imported. |
 | `folder` | Query (optional) | Cloud folder path where the workbook resides. |
 | `storageName` | Query (optional) | Name of the storage to use. |
-
 
 The important parameters are described in the tables below.
 
@@ -86,7 +84,6 @@ The important parameters are described in the tables below.
 </ImportBatchDataOption>
 ```
 
-
 ### Response
 
 ```json
@@ -95,16 +92,16 @@ The important parameters are described in the tables below.
   "Code":200
 }
 ```
+
 **Http Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Import succeeded; response contains operation status. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
 
 ## How to Use the PostImportData API with SDKs
 

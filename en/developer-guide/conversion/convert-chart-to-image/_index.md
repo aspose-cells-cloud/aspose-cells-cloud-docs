@@ -10,9 +10,9 @@ description: "Use Aspose.Cells Cloud Web API to convert an Excel chart into PNG,
 weight: 100
 ---
 
+Excel charts are visual representations of data that can be embedded within worksheets. Converting these charts to image formats enables easy reuse across documents, web pages, and reports without requiring Excel.
+
 Convert a chart from a local spreadsheet or Excel file to an image file. Supported **IMAGE FORMATS:** <a href="https://docs.fileformat.com/image/png/" rel="noopener noreferrer">PNG</a>, <a href="https://docs.fileformat.com/page-description-language/svg/" rel="noopener noreferrer">SVG</a>, <a href="https://docs.fileformat.com/image/tiff/" rel="noopener noreferrer">TIFF</a>, <a href="https://docs.fileformat.com/image/jpeg/" rel="noopener noreferrer">JPEG</a>, <a href="https://docs.fileformat.com/image/bmp/" rel="noopener noreferrer">BMP</a>
-
-
 
 ## **Convert Chart to Image API**
 
@@ -22,6 +22,13 @@ Convert a chart from a local spreadsheet or Excel file to an image file. Support
 PUT https://api.aspose.cloud/v4.0/cells/convert/chart/image
 ```
 
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/chart/image?format=png&chartIndex=0" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@MyWorkbook.xlsx" \
+     -o chart.png
+```
+
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
@@ -29,6 +36,8 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ```bash
 -H "Authorization: Bearer {access_token}"
 ```
+
+**Prerequisites**: To use this API you must have an active Aspose Cloud account, register an application to obtain a client ID and client secret, and generate a JWT access token using those credentials.
 
 ### **Request Parameters:**
 
@@ -132,3 +141,5 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertChartToImage.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+**See Also:** Convert Worksheet to Image, Convert Range to Image, and the full API reference for chart conversion.

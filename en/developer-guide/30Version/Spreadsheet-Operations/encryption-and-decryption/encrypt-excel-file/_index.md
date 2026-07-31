@@ -15,12 +15,14 @@ ArticleTitle: "Encrypt Excel Workbook with Aspose.Cells Cloud API – cURL and S
 
 This REST API encrypts an Excel **workbook**.
 
+**Prerequisites:** You must have a valid JWT token and the workbook uploaded to a storage location before calling this endpoint.
+
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/encryption
 ```
 
 ### Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Query Parameters**
 
@@ -75,7 +77,7 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 ### PostEncryptDocument API Specification
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/Workbook/PostEncryptDocument" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -118,7 +120,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

@@ -5,7 +5,7 @@ ArticleTitle: "How to Convert a Spreadsheet to CSV Using Aspose.Cells Cloud API"
 linktitle: "Convert Spreadsheet To CSV"
 type: docs
 url: /convert-spreadsheet-to-csv/
-keywords: "convert spreadsheet to csv, Aspose.Cells Cloud API, REST API, cURL example, spreadsheet conversion, CSV export"
+keywords: "Aspose Cells, CSV conversion, Excel API, cloud conversion"
 description: "Learn how to convert Excel files (XLS, XLSX, XLSM…) to CSV using Aspose.Cells Cloud API. Includes authentication steps, cURL sample, SDK code snippets, and error handling."
 weight: 100
 ---
@@ -22,7 +22,7 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>. To obtain a token, send a POST request to the authentication endpoint with your client ID and secret; the response contains an `access_token` that must be included in the `Authorization` header of every API call. Required scopes include `Cells.Read` and `Cells.Write`. The service enforces standard rate‑limit rules (typically 100 requests per minute per account).
 
 ```bash
 -H "Authorization: Bearer {access_token}"
@@ -39,7 +39,17 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | region         | String | Query    | Optional    | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.                         |
 | password       | String | Query    | Optional    | Password used to open password‑protected spreadsheets. If the file is encrypted and the password is omitted or incorrect, a 400/401 error is returned.          |
 
+**cURL Example**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv?outPath=/output/reports/" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@myWorkbook.xlsx"
+```
+
 ### **Response**
+
+On success the API returns **HTTP 200** (or **202** for asynchronous processing) with the header `Content-Type: application/octet-stream`. The response body contains the generated CSV file as a binary stream.
 
 ```json
 [
@@ -55,9 +65,10 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token, or invalid client ID and secret.
-- **404 Not Found** – The spreadsheet file is not accessible.
+- **200 OK** – CSV file returned successfully.  
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI or malformed request parameters.  
+- **401 Unauthorized** – Invalid access token, or invalid client ID and secret.  
+- **404 Not Found** – The spreadsheet file is not accessible.  
 - **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
 
 ## Where Should You Use the Convert Spreadsheet To CSV API?

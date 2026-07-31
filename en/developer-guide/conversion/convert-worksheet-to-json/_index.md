@@ -5,13 +5,12 @@ ArticleTitle: "How to Convert a Spreadsheet Worksheet to JSON Using Aspose.Cells
 linktitle: "Convert Worksheet to JSON"
 type: docs
 url: /convert-worksheet-to-json/
-keywords: "Aspose.Cells, worksheet to JSON, Excel conversion, Cloud API"
-description: "Learn how to convert an Excel worksheet to JSON using the Aspose.Cells Cloud API. This guide explains request parameters, response handling, error codes, and common use cases."
+keywords: "Aspose.Cells, worksheet to JSON, Excel conversion, cloud API, API v4, data export"
+description: "Step‑by‑step guide on converting an Excel worksheet to JSON with Aspose.Cells Cloud API, including request parameters, response handling, error codes, and SDK examples."
 weight: 100
 ---
 
 The **ConvertWorksheetToJson** endpoint reads a spreadsheet file from the local file system, extracts the specified worksheet, and returns its content as a JSON file. The conversion is performed entirely on Aspose.Cells Cloud servers, so no intermediate upload or storage is required. It supports password‑protected workbooks, custom font locations, and regional settings, delivering a fast, cloud‑native solution for exporting worksheet data to JSON for downstream processing.
-
 
 ## **Convert Worksheet To JSON API**
 
@@ -20,6 +19,12 @@ The **ConvertWorksheetToJson** endpoint reads a spreadsheet file from the local 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/json
 ```
+
+**Prerequisites**  
+Before using this endpoint you must:
+
+- Obtain a valid JWT access token (see the authentication guide).  
+- Ensure the Aspose.Cells Cloud SDK for your language is installed if you prefer using a client library.  
 
 ### **Security and Authentication**
 
@@ -57,16 +62,49 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
-- **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.
+- **400 Bad Request** – The request URI is malformed or required parameters are missing.  
+  ```json
+  {
+    "error": {
+      "code": "BadRequest",
+      "message": "Required parameter 'worksheet' is missing."
+    }
+  }
+  ```
+- **401 Unauthorized** – Invalid access token or invalid client ID and secret.  
+  ```json
+  {
+    "error": {
+      "code": "InvalidCredentials",
+      "message": "The provided JWT token is invalid or expired."
+    }
+  }
+  ```
+- **404 Not Found** – The spreadsheet file is not accessible.  
+  ```json
+  {
+    "error": {
+      "code": "FileNotFound",
+      "message": "The specified spreadsheet could not be found."
+    }
+  }
+  ```
+- **500 Server Error** – The spreadsheet encountered an error while obtaining calculation data.  
+  ```json
+  {
+    "error": {
+      "code": "InternalServerError",
+      "message": "An unexpected error occurred while processing the workbook."
+    }
+  }
+  ```
 
 **Notes & Best Practices**
 
 - For large worksheets, consider streaming the response to avoid loading the entire JSON payload into memory.  
 - Use the `region` parameter to ensure numeric and date formats match your downstream systems.  
-- Always validate the JSON output against your expected schema before further processing.
+- Always validate the JSON output against your expected schema before further processing.  
+- When exporting very large datasets, paginate the request (using `outPath` to store intermediate files) to keep memory usage low.
 
 ## Where should we use the Convert Worksheet to JSON API?
 

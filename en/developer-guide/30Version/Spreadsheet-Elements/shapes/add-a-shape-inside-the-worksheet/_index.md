@@ -15,6 +15,12 @@ This REST API adds a shape to an Excel worksheet.
 The endpoint belongs to **API version v3.0**; ensure that you use a JWT access token obtained through the Aspose Cloud OAuth2 flow (client‑id/client‑secret) and include it in the `Authorization: Bearer <token>` header.
 
 ## Security and Authentication
+Before calling the API, make sure you have:
+
+* A valid JWT access token generated via the Aspose Cloud OAuth2 flow.  
+* The target workbook stored in Aspose Cloud storage (or specify the appropriate `folder` and `storageName`).  
+* The correct `name` (workbook) and `sheetName` (worksheet) values for the file you want to modify.
+
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API

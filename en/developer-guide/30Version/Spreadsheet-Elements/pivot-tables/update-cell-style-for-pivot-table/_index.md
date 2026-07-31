@@ -5,9 +5,10 @@ linktitle: Format
 type: docs
 url: /pivot-tables/format/
 aliases: [/update-cell-style-for-pivot-table/]
-keywords: "Aspose.Cells Cloud, pivot table style, update cell style API, REST API, Excel API, spreadsheet formatting, cloud SDK"
-description: "Learn how to update the style of a specific cell in an Aspose.Cells Cloud pivot table via the REST API. Includes endpoint, parameters, authentication, cURL example, and Go SDK code snippet."
+keywords: "Aspose.Cells Cloud, pivot table style, update cell style API, REST API, Excel API, spreadsheet formatting, cloud SDK, cell style, pivot table"
+description: "Learn how to update the style of a specific cell in an Aspose.Cells Cloud pivot table via the REST API. Includes endpoint, parameters, authentication, cURL example, Go SDK code snippet, and SEO‑optimized guidance."
 weight: 90
+ArticleTitle: "Update Cell Style for Pivot Table - Aspose.Cells Cloud API Documentation"
 ---
 
 This REST API updates the **style** of a cell in a pivot table.
@@ -18,6 +19,8 @@ To call this endpoint you must have a valid Aspose Cloud JWT access token. Obtai
 ```http
 Authorization: Bearer <jwt token>
 ```
+
+The JWT token is required for all Aspose.Cells Cloud API calls.
 
 ## REST API
 
@@ -38,8 +41,9 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottabl
 | needReCalculate | boolean | query    | Indicates whether the pivot table should be recalculated after styling. The default value is **false**. |
 | folder          | string  | query    | Folder where the document is stored (optional).                                                         |
 | storageName     | string  | query    | Name of the storage (optional).                                                                         |
+| Method          | string  | N/A      | HTTP method used for the request (**POST**).                                                             |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableCellStyle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/PivotTables/PostPivotTableCellStyle" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -82,9 +86,13 @@ On success the service returns HTTP 200 with an empty body indicating that the
 | 404        | Not found – specified document, worksheet, or pivot table does not exist. |
 | 500        | Internal server error – unexpected condition.  |
 
+The response body is empty on success.
+
+For more information, see the **Get Pivot Table** API documentation.
+
 ## Cloud SDK Family
 
-Using an SDK is the fastest way to develop. An SDK abstracts low‑level details, allowing you to focus on your business logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK abstracts low‑level details, allowing you to focus on your business logic. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code example demonstrates how to call Aspose.Cells web services using the **Go** SDK:
 
@@ -97,3 +105,23 @@ The following code example demonstrates how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Update Cell Style for Pivot Table",
+  "description": "Guide to updating the style of a specific cell in an Aspose.Cells Cloud pivot table using the REST API.",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2026-07-30",
+  "keywords": "Aspose.Cells Cloud, pivot table, cell style, REST API, Go SDK",
+  "url": "https://docs.aspose.cloud/cells/pivot-tables/format/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose"
+  }
+}
+</script>

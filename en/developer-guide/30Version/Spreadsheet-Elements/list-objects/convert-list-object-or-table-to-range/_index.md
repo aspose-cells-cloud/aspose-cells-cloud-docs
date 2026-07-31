@@ -37,6 +37,8 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjec
 | **folder**          | string  | query    | No       | –       | Folder path where the file is stored.                       |
 | **storageName**     | string  | query    | No       | –       | Name of the storage service.                                |
 
+> **Note:** This operation works only with modern Excel formats such as **.xlsx** and **.xlsm**. The ListObject must not be protected. For more information about ListObjects, see the [ListObjects overview](/list-objects/). For details on working with ranges, refer to the [Ranges documentation](/ranges/).
+
 ### cURL Example (Request)
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
@@ -85,10 +87,21 @@ The API returns a **200 OK** response with details of the newly created range.
 
 | Code | Meaning               | When it occurs                                                            |
 | ---- | --------------------- | ------------------------------------------------------------------------- |
+| 200  | OK                    | The request succeeded and the range was created.                         |
 | 400  | Bad Request           | The `listObjectIndex` is out of range or required parameters are missing. |
 | 401  | Unauthorized          | Missing or invalid JWT token.                                            |
+| 403  | Forbidden             | The authenticated user does not have permission to modify the workbook. |
 | 404  | Not Found             | The specified workbook, worksheet, or ListObject does not exist.         |
 | 500  | Internal Server Error | An unexpected server‑side error occurred.                                 |
+
+**Error Response Schema (example):**
+
+```json
+{
+  "Code": 400,
+  "Message": "Invalid listObjectIndex. Index must be between 0 and 5."
+}
+```
 
 {{< tab tabNum="12" >}}
 

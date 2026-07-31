@@ -6,7 +6,7 @@ type: docs
 url: /pictures/update/
 aliases: [/update-a-specific-picture-from-excel-workshee/]
 keywords: "Aspose.Cells Cloud, Excel, Update picture, REST API, SDK"
-description: "Learn how to update a picture in an Excel worksheet with Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK snippets."
+description: "Learn how to update a picture in an Excel worksheet using Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK snippets for multiple languages."
 ArticleTitle: "Update picture in an Excel file using Aspose.Cells Cloud REST API"
 weight: 70
 ---
@@ -27,7 +27,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/
 | -------------- | ------- | -------- | ------------------------------------------------------------ |
 | name           | string  | path     | The name of the Excel document.                              |
 | sheetName      | string  | path     | The name of the worksheet that contains the picture.         |
-| pictureIndex   | integer | path     | Zero-based index of the picture to be updated.               |
+| pictureIndex   | integer | path     | Zero‑based index of the picture to be updated.               |
 | picture        | object  | body     | JSON object that describes the picture properties to update. |
 | folder         | string  | query    | The folder where the document is stored.                     |
 | storageName    | string  | query    | The name of the storage service.                             |
@@ -38,12 +38,12 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/
 
 | HTTP Code | Description                                            |
 | --------- | ------------------------------------------------------ |
-| 401       | Unauthorized - missing or invalid token.               |
-| 404       | Not Found - the specified file, worksheet, or page-break index does not exist. |
-| 400       | Bad Request - malformed request syntax or invalid parameters. |
-| 500       | Internal Server Error - an unexpected condition was encountered. |
+| 401       | Unauthorized – missing or invalid token.               |
+| 404       | Not Found – the specified file, worksheet, or picture index does not exist. |
+| 400       | Bad Request – malformed request syntax or invalid parameters. |
+| 500       | Internal Server Error – an unexpected condition was encountered. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/Pictures/PostWorksheetPicture" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -77,7 +77,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 
 ## Cloud SDK Family
 
-Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
@@ -132,3 +132,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+*See also:* Add picture, Delete picture, Get picture, Clear pictures – other picture‑related operations in the Aspose.Cells Cloud API.

@@ -13,10 +13,14 @@ ArticleTitle: "Convert Excel Files to PDF, CSV, JSON and More with Aspose.Cells 
 
 If you originally created an Excel file in a certain format—such as [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), or [CSV](https://docs.fileformat.com/spreadsheet/csv/)—you may find it useful to convert the Excel file to another format to take advantage of special features. For example, converting an Excel file to [PDF](https://docs.fileformat.com/pdf/) protects its contents from unauthorized modifications and makes it easy to read and share.
 
+**Prerequisites**  
+Before calling the conversion APIs, obtain an OAuth 2.0 access token from Aspose Cloud and ensure the workbook is stored in your Aspose Cloud storage (or included in the request body for the PUT conversion endpoint).
+
 Document conversion is a complex process. Many factors contribute to the conversion process’s complexity and should be considered during transformation. Providing precise, professional‑quality conversion between Excel formats is a key feature of Aspose.Cells Cloud.
 
 The service works seamlessly for any document format conversion. You can both import and export documents in these formats:
 
+**Supported Formats**  
 - Import/Export: [XLS](https://docs.fileformat.com/spreadsheet/xls/), [XLSX](https://docs.fileformat.com/spreadsheet/xlsx/), [XLSB](https://docs.fileformat.com/spreadsheet/xlsb/), [CSV](https://docs.fileformat.com/spreadsheet/csv/), [TSV](https://docs.fileformat.com/spreadsheet/tsv/), [XLSM](https://docs.fileformat.com/spreadsheet/xlsm/), [ODS](https://docs.fileformat.com/spreadsheet/ods/), [TXT](https://docs.fileformat.com/word-processing/txt/)
 - Export‑only: [PDF](https://docs.fileformat.com/pdf/), [OTS](https://docs.fileformat.com/spreadsheet/ots/), [XPS](https://docs.fileformat.com/page-description-language/xps/), [DIF](https://docs.fileformat.com/spreadsheet/dif/), [PNG](https://docs.fileformat.com/Image/png/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [NUMBERS](https://docs.fileformat.com/spreadsheet/numbers/), [FODS](https://docs.fileformat.com/spreadsheet/fods/)
 
@@ -44,7 +48,17 @@ The service works seamlessly for any document format conversion. You can both im
 - **POST /cells/{name}/saveAs**  
   - **Path parameters:** `name` – existing workbook name.  
   - **Query parameters:** `format` – target format; `outPath` – destination path in cloud storage (optional); `storage` – storage name (optional).  
-  - **Response:** JSON object with operation result and the path of the saved file.  
+  - **Response:** JSON object with operation result and the path of the saved file. Example response:  
+
+    ```json
+    {
+      "status": "OK",
+      "code": 200,
+      "message": "File saved successfully.",
+      "path": "Converted/MyWorkbook.pdf"
+    }
+    ```  
+
   - **Status codes:** 200 OK, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error.  
 
 **Sample cURL for converting to PDF**

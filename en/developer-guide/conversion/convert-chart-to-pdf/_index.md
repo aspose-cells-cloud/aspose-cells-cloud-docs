@@ -1,11 +1,11 @@
 ---
-title: "Aspose.Cells Cloud Web API – Convert a Local Excel Chart to a PDF File – Free Online Tool"
+title: "Aspose.Cells Cloud API – Convert Excel Chart to PDF"
 second_title: "Document"
 ArticleTitle: "How to Convert a Local Spreadsheet Chart to a PDF File: Step‑by‑Step Guide"
 linktitle: "Convert Chart to PDF"
 type: docs
 url: /convert-chart-to-pdf/
-keywords: "Aspose Cells, chart to PDF, Excel chart conversion, cloud API"
+keywords: "Aspose Cells, chart, PDF, Excel, conversion, cloud API"
 description: "Export charts from local Excel files to PDF format using the Aspose.Cells Cloud REST API. Supports XLSX and XLS files."
 weight: 100
 ---
@@ -22,6 +22,7 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 ```
 
 ### Security and Authentication
+**Prerequisites:** Obtain a JWT access token by registering an application in the Aspose Cloud dashboard.  
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ```bash
@@ -36,6 +37,13 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/chart/pdf?worksheet=She
      -F "Spreadsheet=@/path/to/your/file.xlsx" \
      -F "outPath=output/chart.pdf"
 ```
+
+The request uses **multipart/form‑data**. The required fields are:
+
+- `Spreadsheet` – the Excel file to upload.  
+- `worksheet` – (optional) name of the worksheet containing the chart.  
+- `chartIndex` – (optional) zero‑based index of the chart to convert.  
+- `outPath` – (optional) path where the generated PDF should be stored.  
 
 ### **Request Parameters:**
 
@@ -71,7 +79,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/chart/pdf?worksheet=She
 
 ### Error Codes
 
-- **200 OK**: File returned successfully. *(included for completeness)*
 - **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
 - **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
 - **404 Not Found**: The spreadsheet file is not accessible.

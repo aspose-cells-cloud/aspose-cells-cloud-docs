@@ -57,10 +57,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Error Codes
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token or incorrect client credentials.
-- **404 Not Found** – The spreadsheet file is not accessible or the specified worksheet does not exist.
-- **500 Server Error** – An unexpected condition occurred while processing the workbook.
+| Code | Description | Typical Cause |
+|------|-------------|---------------|
+| **400 Bad Request** | Invalid Aspose.Cells Cloud API URI. | Malformed request URL or parameters. |
+| **401 Unauthorized** | Invalid access token or incorrect client credentials. | Authentication failure. |
+| **404 Not Found** | The spreadsheet file is not accessible or the specified worksheet does not exist. | Wrong file path or sheet name. |
+| **500 Server Error** | An unexpected condition occurred while processing the workbook. | Server‑side exception. |
 
 ## Where should we use the Delete worksheet from Spreadsheet API?
 
@@ -79,11 +81,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Delete worksheet from Spreadsheet API Specification
 
-The [Delete worksheet from Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/ManagementController/DeleteWorksheetFromSpreadsheet) defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/#/ManagementController/DeleteWorksheetFromSpreadsheet" rel="noopener noreferrer">Delete worksheet from Spreadsheet API Specification</a> defines a publicly accessible programming interface, allowing you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the fastest way to develop, as it abstracts low‑level details and lets you delete a worksheet with minimal code. Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop, as it abstracts low‑level details and lets you delete a worksheet with minimal code. Please check the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

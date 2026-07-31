@@ -3,8 +3,9 @@ title: "Get MaxRow from an Excel Worksheet"
 type: docs
 url: /get-maxrow-from-excel-worksheet/
 weight: 40
-keywords: "Aspose.Cells, Excel, MaxRow, REST API, Cloud SDK, Spreadsheet, Worksheet"
-description: "Learn how to retrieve the maximum row number of a worksheet in an Excel file using the Aspose.Cells Cloud REST API."
+ArticleTitle: "Retrieve Maximum Row Number in an Excel Worksheet – Aspose.Cells Cloud API"
+keywords: "Aspose.Cells, Excel, MaxRow, REST API, Cloud SDK, Spreadsheet, Worksheet, GetMaxRow"
+description: "Learn how to retrieve the maximum row number of a worksheet in an Excel file using the Aspose.Cells Cloud REST API. Includes request syntax, response schema, SDK examples, and usage notes."
 ---
 
 This REST API returns the **maximum row number** in an Excel worksheet when the `cellOrMethodName` parameter is set to `maxrow`.
@@ -16,7 +17,7 @@ This REST API returns the **maximum row number** in an Excel worksheet when the 
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxrow" \
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/maxrow" \
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
 ```
@@ -26,7 +27,9 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< tab tabNum="12" >}}
 
 ```json
-{}
+{
+  "MaxRow": 1048576
+}
 ```
 
 {{< /tab >}}
@@ -100,3 +103,26 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**API Reference**
+
+| Item | Details |
+|------|---------|
+| **Method** | `GET` |
+| **Endpoint** | `/cells/{fileName}/worksheets/{sheetName}/cells/maxrow` |
+| **Path Parameters** | `fileName` – name of the Excel file (required) <br> `sheetName` – name of the worksheet (required) |
+| **Query Parameters** | `folder` – folder path in storage (optional) <br> `storageName` – storage name (optional) |
+| **Success Response** | `200 OK` <br> ```json { "MaxRow": integer } ``` |
+| **Error Responses** | `400 Bad Request` – invalid parameters <br> `401 Unauthorized` – authentication failure <br> `404 Not Found` – file or worksheet not found |
+
+**Prerequisites**
+
+- A valid Aspose Cloud authentication token.  
+- The target workbook must be uploaded to Aspose Cloud storage or accessible via a public URL.  
+
+**Notes**
+
+- The operation is available in API version **v3.0** and later.  
+- The returned `MaxRow` value corresponds to the highest used row index (1‑based). For a blank worksheet, the value is typically `1`.  
+
+The following SDK examples illustrate how to invoke the operation in different programming languages.

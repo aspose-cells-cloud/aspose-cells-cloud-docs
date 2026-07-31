@@ -6,12 +6,12 @@ linktitle: "Row"
 type: docs
 url: /rows/add/row/
 aliases: [/add-an-empty-row-in-a-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel, add empty row, worksheet, REST API"
+keywords: "Aspose.Cells Cloud, Excel, add empty row, worksheet, REST API, insert row, cloud spreadsheet"
 description: "Use Aspose.Cells Cloud REST API to insert an empty row into an Excel worksheet. Supports multiple SDKs (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) for rapid development."
 weight: 20
 ---
 
-This REST API adds a new row to an Excel worksheet.
+This REST API adds a new row to an Excel worksheet. It inserts an empty row at the specified zero‑based index.
 
 **Prerequisites:**  
 - A valid Aspose Cloud access token (Bearer JWT) must be included in the `Authorization` header.  
@@ -19,12 +19,12 @@ This REST API adds a new row to an Excel worksheet.
 
 **Notes:**  
 - The `rowIndex` is zero‑based; inserting at index 0 adds a row at the top of the worksheet.  
-- Excel worksheets have a maximum of 1,048,576 rows; attempting to insert beyond this limit will result in an error.
+- Excel worksheets have a maximum of 1,048,576 rows; attempting to insert beyond this limit will result
 
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
 ```
 
 ### **Request parameters**
@@ -47,11 +47,13 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/rows/10" \
--X PUT \
--H "Content-Type: application/json" \
--H "Accept: application/json" \
--H "Authorization: Bearer <jwt token>"
+  -X PUT \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -H "Authorization: Bearer <jwt token>"
 ```
+
+> **Note:** All Aspose.Cells Cloud endpoints require HTTPS. Use the secure `https://` scheme for production calls.
 
 {{< /tab >}}
 
@@ -78,6 +80,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 | 403 | Forbidden – insufficient permissions to modify the workbook. |
 | 404 | Not found – the specified workbook or worksheet does not exist. |
 | 500 | Internal server error – unexpected condition on the server. |
+
+*Example of an error response (e.g., when the row index exceeds the worksheet limit):*
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "Row index out of range. Maximum rows allowed: 1048576."
+}
+```
 
 ## Cloud SDK Family
 

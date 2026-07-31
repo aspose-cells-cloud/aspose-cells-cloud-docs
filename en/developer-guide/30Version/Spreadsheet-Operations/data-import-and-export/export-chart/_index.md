@@ -15,9 +15,12 @@ Exporting chart objects from an Excel workbook to various image and document for
 
 You can export charts to the following formats: [PNG](https://docs.fileformat.com/Image/png/), [GIF](https://docs.fileformat.com/image/gif/), [JPEG](https://docs.fileformat.com/image/jpeg/), [BMP](https://docs.fileformat.com/image/bmp/), [SVG](https://docs.fileformat.com/page-description-language/svg/), [TIFF](https://docs.fileformat.com/image/tiff/), [EMF](https://docs.fileformat.com/image/emf/), [WMF](https://docs.fileformat.com/image/Wmf/), and [PDF](https://docs.fileformat.com/pdf/).
 
+**Prerequisites:**  
+- A valid Aspose.Cells Cloud account with an active subscription.  
+- An OAuth 2.0 Bearer token (JWT) obtained via the authentication flow.  
+- The workbook file to be uploaded (maximum size < 50 MB).  
 
 ## **REST API**
-
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/export
@@ -27,16 +30,13 @@ POST https://api.aspose.cloud/v3.0/cells/export
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-
 ### Request Parameters
 
-| Parameter Name | Type    | Path/Query String/HTTP Body | required |Description                                                |
-|----------------|---------|-----------------------------|-----------|------------------------------------------------------------|
-| file           | file    | formData                    | True | File to upload                                             |
-| objectType  | string | query                       |   True | The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc. |
-| format  | string | query                       |  True | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.
- |
-
+| Parameter Name | Type   | Path/Query String/HTTP Body | required | Description                                                                                                                     |
+|----------------|--------|-----------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------|
+| file           | file   | formData                    | True     | File to upload                                                                                                                  |
+| objectType     | string | query                       | True     | The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc.            |
+| format         | string | query                       | True     | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.                        |
 
 ### **Response**
 
@@ -89,14 +89,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| Code | Meaning                     | Description                                            |
+|------|-----------------------------|--------------------------------------------------------|
+| 200  | OK                          | Chart export succeeded; response contains exported file details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-
+| 401  | Unauthorized                | Invalid or missing JWT token.                          |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit.                      |
+| 500  | Internal Server Error       | Unexpected server error.                               |
 
 ## How to Use the PostExport API with SDKs
 
@@ -105,7 +104,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/LightCells/PostExport) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 All requests must include a valid OAuth 2.0 Bearer token in the `Authorization` header. The example below shows how to call the API with **cURL** and upload a workbook using multipart/form‑data.
-
 
 ```bash
 curl -X POST "https://api.aspose.cloud/v3.0/cells/export?objectType=chart&format=tiff" \

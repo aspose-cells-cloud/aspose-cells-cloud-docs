@@ -14,7 +14,10 @@ ArticleTitle: "Calculate All Formulas on an Excel Workbook"
 
 This REST API calculates **all formulas** in an Excel workbook.
 
-**Prerequisites:** Before calling this endpoint, ensure you have a valid JWT authentication token, your Aspose.Cells Cloud client ID and secret, and that the target workbook is uploaded to the designated storage location.
+**Prerequisites:** Before calling this endpoint, ensure you have:
+- A valid JWT authentication token. (See the [Authentication Guide](/authentication/).)  
+- Your Aspose.Cells Cloud client ID and secret.  
+- The target workbook uploaded to the designated storage location. (Refer to the [Storage Setup](/storage/).)
 
 ## REST API
 

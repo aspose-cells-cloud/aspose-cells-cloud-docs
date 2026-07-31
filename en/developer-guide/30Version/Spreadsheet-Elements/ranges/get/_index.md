@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Get"
 type: docs
 url: /ranges/get/
-keywords: "Aspose.Cells, Excel, API, get range, spreadsheet, REST"
+keywords: "Aspose.Cells, Excel, API, get, range, spreadsheet, REST"
 description: "Learn how to retrieve range content from an Excel worksheet using Aspose.Cells Cloud REST API. Includes request syntax and sample code."
 weight: 20
 ArticleTitle: "How to Get Range Content from an Excel Worksheet – Aspose.Cells Cloud API"
@@ -14,6 +14,12 @@ ArticleTitle: "How to Get Range Content from an Excel Worksheet – Aspose.Cells
 
 - [How to get cell data based on a named range](/cells/ranges/get/values/)
 - [How to get a named range from an Excel workbook](/cells/ranges/get/name/)
+
+**Prerequisites**
+
+- A valid Aspose Cloud access token (or `client_id`/`client_secret` for OAuth).
+- The Excel file must be uploaded to the target storage folder.
+- Aspose.Cells Cloud SDK version 3.0 or later.
 
 The **Get Range** operation returns the content of a specified range in a worksheet.  
 It is a simple `GET` request that returns the range data in JSON format (or other formats when requested).
@@ -115,6 +121,32 @@ print(response)
 - `401 Unauthorized` – Invalid or missing access token.  
 - `404 Not Found` – Specified file, worksheet, or range does not exist.  
 - `500 Internal Server Error` – Unexpected server error.
+
+**Error‑Response Examples**
+
+```json
+// 400 Bad Request
+{
+  "Code": 400,
+  "Message": "The request parameters are invalid or missing."
+}
+```
+
+```json
+// 401 Unauthorized
+{
+  "Code": 401,
+  "Message": "Invalid or missing access token."
+}
+```
+
+```json
+// 404 Not Found
+{
+  "Code": 404,
+  "Message": "The specified file, worksheet, or range could not be found."
+}
+```
 
 **See also**
 

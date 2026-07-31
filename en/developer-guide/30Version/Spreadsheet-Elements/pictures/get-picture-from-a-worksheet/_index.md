@@ -5,13 +5,21 @@ linktitle: "Get all"
 type: docs
 url: /pictures/get-all/
 aliases: [/get-picture-from-a-worksheet/]
-keywords: "Aspose.Cells Cloud, Excel worksheet, retrieve all pictures, REST API, SDKs"
+keywords: "Aspose.Cells Cloud, Excel worksheet, pictures API, get all pictures, REST API, SDK"
 description: "Retrieve all picture objects from an Excel worksheet via Aspose.Cells Cloud REST API."
 ArticleTitle: "Get all pictures in an Excel worksheet - Aspose.Cells Cloud API"
 weight: 10
 ---
 
 This REST API retrieves all picture information from an Excel worksheet.
+
+**Prerequisites**  
+Before calling this endpoint, ensure you have:
+
+- A valid Aspose Cloud JWT access token.  
+- The target Excel file uploaded to the selected storage.  
+- The correct storage name (if using a custom storage).  
+- The worksheet name that contains the pictures.
 
 ## REST API
 
@@ -104,6 +112,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
 
 {{< /tabs >}}
 
+**Success Response** – A successful call returns HTTP 200 with a JSON payload containing a `Pictures` object that lists each picture’s resource link.
+
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
@@ -161,3 +171,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
+You can download the SDKs directly from their respective package managers (e.g., NuGet for .NET, Maven Central for Java, Composer for PHP, npm for Node.js, PyPI for Python, CPAN for Perl, and Go modules for Go).  
+
+*See also:* Add a picture, Delete a picture, Update picture properties.

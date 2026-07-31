@@ -13,6 +13,10 @@ weight: 10
 
 This REST API returns information about named ranges defined within worksheets.
 
+**Background** – A *named range* is a user‑defined identifier that refers to a specific cell or block of cells in a worksheet. Named ranges simplify formula creation, improve readability, and enable programmatic access to frequently used areas of a workbook.
+
+**Prerequisites** – Access to the Aspose.Cells Cloud API requires a valid JWT access token. Obtain the token by authenticating with your Aspose Cloud client ID and client secret via the OAuth 2.0 token endpoint. Include the token in the `Authorization: Bearer <jwt token>` header of every request.
+
 ## REST API
 
 ```bash
@@ -38,7 +42,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to call Aspose.Cells web services. The example below demonstrates how to retrieve named ranges using cURL.
+You can use the cURL command-line tool to call Aspose.Cells web services. The example below demonstrates how to retrieve named ranges using cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -81,6 +85,20 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/ranges" \
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Response Model**
+
+| Field          | Type    | Description                                          |
+|----------------|---------|------------------------------------------------------|
+| `ColumnCount`  | integer | Number of columns in the range.                      |
+| `ColumnWidth`  | number  | Width of each column (in points).                    |
+| `FirstColumn`  | integer | Zero‑based index of the first column in the range.   |
+| `FirstRow`     | integer | Zero‑based index of the first row in the range.      |
+| `Name`         | string  | The user‑defined name of the range.                  |
+| `RefersTo`     | string  | A formula that defines the cell reference (e.g., `=Sheet1!$B$10:$H$10`). |
+| `RowCount`     | integer | Number of rows in the range.                         |
+| `RowHeight`    | number  | Height of each row (in points).                      |
+| `Worksheet`    | string  | Name of the worksheet that contains the range.       |
 
 ## Cloud SDK Family
 

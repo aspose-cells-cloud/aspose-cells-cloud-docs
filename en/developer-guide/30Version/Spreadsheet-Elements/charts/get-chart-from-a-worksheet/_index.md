@@ -13,6 +13,8 @@ ArticleTitle: "Get Chart from a Worksheet – Aspose.Cells Cloud API"
 
 This REST API retrieves chart information.
 
+**Prerequisites** – To call this endpoint you must have a valid Aspose.Cells Cloud account, an active storage location, and a JWT access token. Obtain the token following the instructions in the authentication guide before making any API requests.
+
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartNumber}
 ```
@@ -20,8 +22,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 
 ### Security and Authentication
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
+The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/). See the “How to obtain a JWT token” section in the authentication guide for details on generating a token.
 
 ### Request parameters
 
@@ -59,7 +60,7 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Request succeeded; response contains chart details, including metadata and optional image format. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |

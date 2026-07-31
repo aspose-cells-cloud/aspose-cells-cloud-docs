@@ -7,10 +7,16 @@ url: /excel-file-decrypt/
 aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
 keywords: "Aspose.Cells, Excel decryption, REST API, cloud SDK"
 description: "Learn how to decrypt an Excel workbook using Aspose.Cells Cloud REST API. Includes required parameters, cURL example, SDK code samples, and error handling details."
+ArticleTitle: "How to Decrypt an Excel Workbook Using Aspose.Cells Cloud API"
 weight: 50
 ---
 
 ## REST API
+
+**Prerequisites**
+
+- A valid JWT access token.
+- The workbook must be uploaded to Aspose Cloud storage and its path specified in the `folder` query parameter.
 
 ```bash
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/encryption
@@ -50,11 +56,41 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 }
 ```
 
+**Sample Error Responses**
+
+```json
+{
+  "Code": "400",
+  "Message": "Invalid request parameters."
+}
+```
+
+```json
+{
+  "Code": "401",
+  "Message": "Authentication failed. Invalid or missing JWT token."
+}
+```
+
+```json
+{
+  "Code": "413",
+  "Message": "Payload too large. The uploaded file exceeds the allowed size."
+}
+```
+
+```json
+{
+  "Code": "500",
+  "Message": "Internal server error. Please try again later."
+}
+```
+
 **Http Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Decryption succeeded; response confirms the workbook has been decrypted. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
@@ -90,6 +126,8 @@ curl -X DELETE "https://api.aspose.cloud/v3.0/cells/test.xlsx/encryption" \
   "Status": "OK"
 }
 ```
+
+{{< /tab >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

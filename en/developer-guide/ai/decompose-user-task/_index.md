@@ -10,7 +10,7 @@ description: "Transform free‑form objectives into SMART, time‑estimated task
 weight: 100
 ---
 
-The **DecomposeUserTask** endpoint provides a REST endpoint to turn a free‑form task description into a detailed, sequential action plan that adheres to SMART criteria. It automatically allocates hour‑based time estimates, formats the output for Redmine‑compatible import, and creates project‑milestone nodes. Supplying only the raw task list and optional time estimates, the API returns a ready‑to‑use file (CSV, XLSX, etc.) that can be directly imported into project‑management tools, eliminating manual task breakdown and reducing planning errors.
+The **DecomposeUserTask** endpoint provides a REST endpoint to turn a free‑form task description into a detailed, sequential action plan that adheres to SMART criteria. It automatically allocates hour‑based time estimates, formats the output for Redmine‑compatible import, and creates project‑milestone nodes. Supplying only the raw task list and optional time estimates, the API returns a ready‑to‑use file (CSV, XLSX, etc.) that can be directly imported into project‑management tools, automating task breakdown and reducing manual effort.
 
 ## **Decompose User Task API**
 
@@ -27,8 +27,8 @@ PUT https://api.aspose.cloud/v4.0/cells/ai/task/decompose
 | TaskDescription | string | Body     | Required          | A plain‑text description of the user’s overall objective. The service parses the description and generates individual tasks. Example: “Launch marketing campaign for Q3, including content creation, email blast, and social media ads.” |
 
 **Authentication**  
-Calls to the Decompose User Task API require an OAuth 2.0 access token. Include the token in the `Authorization` header as `Bearer <access_token>`. Tokens are obtained from the Aspose Cloud authentication endpoint.
-
+Calls to the Decompose User Task API require an OAuth 2.0 access token. Include the token in the `Authorization` header as `Bearer <access_token>`. Tokens are obtained from the Aspose Cloud authentication endpoint.  
+To obtain a token, send a POST request to `https://api.aspose.cloud/connect/token` with your client ID and client secret. The response contains an `access_token` value that must be included in subsequent API calls.
 
 ### **Response**
 
@@ -42,11 +42,30 @@ Headers:
 
 The same structure is used for XLSX/ODS formats, with columns placed in the first worksheet.
 
+**Response Codes**
+
+| Code | Description | Response Body |
+| ---- | ----------- | ------------- |
+| 200 OK | Successful generation of the task plan file. Returns a binary stream (CSV, XLSX, etc.). | Binary file stream |
+| 400 Bad Request | Validation error in the request payload. | JSON error object with `code` and `message` |
+| 401 Unauthorized | Missing or invalid OAuth 2.0 token. | JSON error object |
+| 403 Forbidden | Insufficient permissions to access the API. | JSON error object |
+| 500 Internal Server Error | Unexpected server failure. | JSON error object |
+
+**Error Response Example (400 Bad Request)**
+
+```json
+{
+  "code": "InvalidParameter",
+  "message": "The 'TaskDescription' field is required and cannot be empty."
+}
+```
+
 **Sample Request Body (JSON)**  
 
 ```json
 {
-  "TaskDescription": "Develop a web API for a task-splitting feature on the existing system.",
+  "TaskDescription": "Develop a web API for a task-splitting feature on the existing system."
 }
 ```
 
@@ -71,10 +90,10 @@ ID,Subject,Trucker,Estimated Duration,Description
 
 ## Why should you use the Decompose User Task API?
 
-- **SMART‑compliant output** guarantees that each generated task meets quality criteria (Specific, Measurable, Achievable, Relevant, Time‑bound).
-- **Built‑in hour‑based time estimation** saves manual calculation and improves forecasting accuracy.
-- **Ready‑to‑import file formats** (CSV, XLSX, etc.) streamline integration with Redmine, Jira, Azure DevOps, and other project‑management platforms.
-- **Single‑request automation** reduces the effort of manual task breakdown, accelerating project initiation and minimizing human error.
+- **SMART‑compliant output** ensures that each generated task meets the Specific, Measurable, Achievable, Relevant, and Time‑bound criteria.
+- **Built‑in hour‑based time estimation** removes the need for manual calculations and improves forecasting accuracy.
+- **Ready‑to‑import file formats** (CSV, XLSX, etc.) facilitate integration with Redmine, Jira, Azure DevOps, and other project‑management platforms.
+- **Single‑request automation** enables task breakdown via a single request, accelerating project initiation and minimizing manual effort.
 
 ## How to Use the Decompose User Task API with SDKs
 

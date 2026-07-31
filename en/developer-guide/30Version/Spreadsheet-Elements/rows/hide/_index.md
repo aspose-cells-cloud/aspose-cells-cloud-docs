@@ -13,7 +13,7 @@ ArticleTitle: "Hide Rows in Excel Worksheet using Aspose.Cells Cloud API"
 
 This REST API hides rows on an Excel worksheet.
 
-Before using the API, ensure you have a valid JWT Bearer token from the Aspose Cloud OAuth endpoint, the target workbook is stored in your Aspose Cloud storage, and you know the worksheet name. The API works with Excel files in XLS, XLSX, and other supported formats.
+**Prerequisites:** A valid JWT Bearer token obtained from the Aspose Cloud OAuth endpoint, the workbook stored in Aspose Cloud storage, and the name of the worksheet that contains the rows to hide. The API works with Excel files in XLS, XLSX, and other supported formats.
 
 ## REST API
 
@@ -32,7 +32,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/row
 | **folder**      | string  | query    | The folder in storage where the workbook is located.                |
 | **storageName** | string  | query    | The name of the storage service.                                    |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PostHideWorksheetRows) provides a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to call Aspose.Cells web services. The API requires a JWT Bearer token obtained from the Aspose Cloud OAuth endpoint; include it in the `Authorization` header. The example below demonstrates how to hide a row using cURL.
 
@@ -74,6 +74,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 | 500 | Server error – internal processing failure |
 
 A successful call returns a JSON object that contains the fields `Code` and `Status`. In case of an error, the response includes additional fields such as `Message` and appropriate HTTP status codes (e.g., 400, 401, 404, 500).
+
+**Notes:** Ensure that the `startrow` value is within the worksheet’s row range; otherwise the API will return a 400 error. Row indices are zero‑based, so `startrow=0` refers to the first row.
 
 ## Cloud SDK Family
 

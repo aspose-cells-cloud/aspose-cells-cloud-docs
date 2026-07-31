@@ -6,10 +6,12 @@ type: docs
 url: /ranges/move/
 aliases: [/move-a-named-range-with-an-excel-worksheet/]
 keywords: "Aspose.Cells Cloud, move named range, Excel worksheet, REST API, range move, SDK examples"
-description: "Learn how to move a named range within an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint details, authentication, request/response examples, and SDK code samples for C#, Java, Python, and more."
+description: "Learn how to move a named range within an Excel worksheet using Aspose.Cells Cloud REST API v3.0, with endpoint details, authentication, examples, and SDK code samples."
 weight: 20
 ArticleTitle: "Move a named range with an Excel worksheet using Aspose.Cells Cloud API"
 ---
+
+Moving a named range is a common task when you need to reorganize data programmatically. This section explains how to relocate a defined range to a new position on the same worksheet using the Aspose.Cells Cloud REST API.
 
 This REST API moves a specified range to a destination range on an Excel worksheet.
 
@@ -107,6 +109,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 
 {{< /tabs >}}
 
+When an error occurs, the response includes an optional `ErrorMessage` field that provides additional details about the failure.
+
 ### Error Codes
 
 | HTTP Status | Code | Message | When it occurs |
@@ -126,7 +130,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

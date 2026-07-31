@@ -5,8 +5,8 @@ ArticleTitle: "How to Save a Spreadsheet as Another Format File on Remote Storag
 linktitle: "Save Spreadsheet as"
 type: docs
 url: /save-spreadsheet-as/
-keywords: "Aspose Cells, spreadsheet conversion, API, save as, XLSX to PDF, cloud storage"
-description: "Convert an Excel workbook stored in Aspose Cloud to XLSX, PDF, CSV, or any of 20+ formats with a single API call. Learn request syntax, parameters, and sample SDK code."
+keywords: "Aspose Cells, spreadsheet conversion, save as, API, XLSX to PDF, cloud storage, Excel to PDF, CSV export, cloud conversion"
+description: "Learn how to save a spreadsheet stored in Aspose Cloud as another format (XLSX, PDF, CSV, etc.) using the Aspose.Cells Cloud Save Spreadsheet API. Includes request syntax, parameters, curl example, and SDK code."
 weight: 100
 ---
 
@@ -22,6 +22,15 @@ The API requires a valid OAuth 2.0 access token. Obtain the token by registering
 PUT https://api.aspose.cloud/v4.0/cells/{name}/saveas
 ```
 
+**Example with request body and curl**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/saveas?format=pdf&outPath=output.pdf" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -d '{"SaveOptions":{"SaveFormat":"pdf"}}'
+```
+
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
@@ -30,6 +39,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 -H "Authorization: Bearer {access_token}"
 ```
 
+Before invoking the API, ensure you have:
+
+1. An active Aspose Cloud subscription.  
+2. Generated an OAuth 2.0 access token (see the authentication guide).  
+3. A storage location configured (default or custom) where the source workbook resides.  
 
 ### **Request Parameters**
 
@@ -111,12 +125,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ## Why should you use the Save Spreadsheet API?
 
-- **Developer‑Friendly** – Aspose.Cells Cloud provides SDKs in multiple languages, enabling rapid development with comprehensive documentation. This reduces the workload compared with building custom conversion solutions.  
-- **Reduced Labor Costs** – Eliminates the need for dedicated personnel to handle document consolidation.  
-- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually make.  
-- **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility concerns.  
-- **Comprehensive Format Support** – Convert between more than 20 spreadsheet formats.  
-- **Preserve Data Fidelity & Formatting** – Maintains original layout, formulas, and styling.
+- **Developer‑Friendly** – Provides SDKs for multiple languages with detailed documentation, simplifying integration.  
+- **Labor‑Efficient** – Handles conversion on the server, reducing the need for custom conversion code.  
+- **Usage‑Based Pricing** – Charges only for the API calls performed, without upfront licensing fees.  
+- **No Server Maintenance** – The service runs in the cloud, removing the need to manage conversion infrastructure.  
+- **Extensive Format Support** – Supports conversion among more than 20 spreadsheet formats.  
+- **Data Fidelity** – Preserves layout, formulas, and styling during conversion.
 
 ## How to Use the Save Spreadsheet as API with SDKs?
 

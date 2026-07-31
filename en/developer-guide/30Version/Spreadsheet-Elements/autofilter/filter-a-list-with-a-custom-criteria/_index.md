@@ -23,6 +23,9 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
+**Prerequisites:**  
+You must have a valid JWT token, the target workbook stored in Aspose Cloud storage, and the worksheet should be in a supported Excel format (e.g., .xlsx, .xls).
+
 ### Request Parameters:
 
 | Parameter Name | Type    | Location                     | Description                                                                 |
@@ -54,7 +57,7 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Filter applied successfully; worksheet is updated with the custom criteria. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
@@ -154,3 +157,5 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+For other AutoFilter operations, such as adding a standard filter or a date filter, see the related documentation pages within the AutoFilter section.

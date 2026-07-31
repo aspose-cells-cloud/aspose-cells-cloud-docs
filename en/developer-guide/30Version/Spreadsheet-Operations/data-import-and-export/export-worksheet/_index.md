@@ -5,9 +5,10 @@ linktitle: "Worksheet"
 type: docs
 url: /export-excel-worksheet-to-different-formats/
 aliases: [/export/excel-worksheet-to-different-formats/]
-keywords: "Aspose.Cells, Cloud, export, worksheet, REST API, PDF, CSV, TIFF, XLSX, ODS, image formats"
+keywords: "Aspose.Cells, export worksheet, Excel API, PDF, CSV, TIFF, ODS, image formats"
 description: "Learn how to export an Excel worksheet to PDF, CSV, TIFF, and other formats using the Aspose.Cells Cloud REST API. Includes cURL example, required authentication, parameter details, and response handling."
 weight: 20
+ArticleTitle: "Export Excel Worksheet to Various Formats – Aspose.Cells Cloud"
 ---
 
 You can export a worksheet to the following formats:
@@ -33,8 +34,7 @@ You can export a worksheet to the following formats:
 - **NUMBERS** – [Numbers format details](https://docs.fileformat.com/spreadsheet/numbers/)
 - **FODS** – [FODS format details](https://docs.fileformat.com/spreadsheet/fods/)
 
-## REST API
-
+[Explore related export operations such as exporting an entire workbook or a chart.](https://docs.aspose.cloud/cells/export-excel-workbook-to-different-formats/)
 
 ## REST API
 
@@ -46,16 +46,13 @@ POST https://api.aspose.cloud/v3.0/cells/export
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-
 ### Request Parameters
 
-| Parameter Name | Type    | Path/Query String/HTTP Body | required |Description                                                |
-|----------------|---------|-----------------------------|-----------|------------------------------------------------------------|
-| file           | file    | formData                    | True | File to upload                                             |
-| objectType  | string | query                       |   True | The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc. |
-| format  | string | query                       |  True | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`.
- |
-
+| Parameter Name | Type    | Path/Query String/HTTP Body | required | Description                                                |
+|----------------|---------|-----------------------------|----------|------------------------------------------------------------|
+| file           | file    | formData                    | True     | File to upload                                             |
+| objectType     | string  | query                       | True     | The type of object to export. For chart export use `chart`. Other possible values are `worksheet`, `picture`, etc. |
+| format         | string  | query                       | True     | Desired output format. Supported values: `png`, `jpeg`, `gif`, `bmp`, `svg`, `tiff`, `emf`, `wmf`, `pdf`. |
 
 ### Response
 
@@ -137,7 +134,17 @@ If the request fails, the API returns a JSON error object containing fields such
 | 404 Not Found | Specified worksheet or file not found. |
 | 500 Internal Server Error | Unexpected server error. |
 
+**Notes**
+
+- Maximum file size for upload is 50 MB.  
+- The API supports exporting multiple worksheets in a single request; each worksheet is returned as a separate file in the `Files` array.  
+- Asynchronous processing is available for large workbooks; use the `202 Accepted` response to poll the operation status.
+
 ## How to Use the PostExport API with SDKs
+
+### Prerequisites
+
+Before calling the API, obtain a valid JWT access token using the Aspose.Cells Cloud authentication flow. Ensure the token is included in the `Authorization` header of each request. The SDKs handle token acquisition automatically when configured with your client credentials.
 
 ### PostExport API Specification
 

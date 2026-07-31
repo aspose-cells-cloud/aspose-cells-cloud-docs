@@ -5,12 +5,12 @@ linktitle: "What's new in 2024"
 type: docs
 weight: 20
 url: /new-features/2024/
-keywords: "Aspose.Cells Cloud, 2024 new features, Remove Duplicates API, Extract Text API, data transformation, spreadsheet processing, Excel, CSV, PDF, REST API"
+keywords: "Aspose.Cells, Cloud, 2024, new features, Remove Duplicates API, Extract Text API, data transformation, spreadsheet, Excel, CSV, PDF, REST API"
 description: "Overview of the new features and enhancements in Aspose.Cells Cloud for 2024, including the Remove Duplicates API, Extract Text API, and data‑transformation improvements."
 ArticleTitle: "Aspose.Cells Cloud 2024 New Features and Enhancements"
 ---
 
-Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes.
+Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find the latest changes. This changelog summarizes the major enhancements, bug fixes, and new APIs introduced in each release of Aspose.Cells Cloud during 2024.
 
 ## Enhancements in Version 24.12
 
@@ -62,14 +62,14 @@ Welcome to what's new in Aspose.Cells Cloud docs. Use this page to quickly find 
 
 ## Enhancements in Version 24.3
 
-- Support data deduplication.  
+- Support data deduplication (enhanced).  
 - Support data filling.  
 - Support deleting incomplete rows.  
 - Support data cleansing.
 
 ## Enhancements in Version 24.2.1
 
-- Support data deduplication.
+- Support data deduplication (initial support, expanded in later versions).
 
 ## Enhancements in Version 24.1.1
 

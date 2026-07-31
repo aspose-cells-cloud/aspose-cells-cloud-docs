@@ -11,6 +11,8 @@ ArticleTitle: "Add OLE Object to Excel Worksheet with Aspose.Cells Cloud API"
 weight: 20
 ---
 
+The Aspose.Cells Cloud API enables programmatic manipulation of Excel workbooks, including the ability to embed OLE objects (e.g., Word documents, PDFs, or other binary files) directly into a worksheet.
+
 This REST API adds an **OLE object** to an Excel worksheet.
 
 **Prerequisites** – You must have a valid JWT authentication token, and any source files referenced by `oleFile` or `imageFile` should be uploaded to the specified storage location before invoking the endpoint.
@@ -18,7 +20,7 @@ This REST API adds an **OLE object** to an Excel worksheet.
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 ```
 
 ### Request parameters
@@ -41,14 +43,14 @@ PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/OleObjects/PutWorksheetOleObject) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below demonstrates how to add an OLE object with cURL.
+You can use the **cURL** command‑line tool to call Aspose.Cells web services. The example below demonstrates how to add an OLE object with cURL. **HTTPS is required for all production calls.**
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobjects" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobjects" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -82,6 +84,24 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/oleobje
 | 401  | Unauthorized – invalid or missing JWT token.|
 | 404  | Not found – workbook, worksheet, or source file does not exist. |
 | 500  | Internal server error – unexpected failure. |
+
+A typical successful response returns the following JSON payload:
+
+```json
+{
+  "Code": 200,
+  "Status": "OK",
+  "Data": {
+    "OleObjectId": "12345",
+    "UpperLeftRow": 15,
+    "UpperLeftColumn": 5,
+    "Width": 400,
+    "Height": 400,
+    "SourceFullName": "Sample_Book2.xls",
+    "ImageSourceFullName": "aspose-logo.png"
+  }
+}
+```
 
 ## Cloud SDK Family
 

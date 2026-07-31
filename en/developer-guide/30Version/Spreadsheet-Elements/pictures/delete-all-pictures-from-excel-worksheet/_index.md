@@ -14,8 +14,8 @@ ArticleTitle: "How to Delete All Pictures in an Excel Worksheet with Aspose.Cell
 This REST API deletes **all** pictures in a worksheet.
 
 **Prerequisites**  
-- An active Aspose.Cells Cloud account with a valid OAuth 2.0 access token.  
-- API version 3.0 (or later) is required; earlier versions are deprecated.  
+- An active Aspose.Cells Cloud account with a valid OAuth 2.0 access token.  
+- API version 3.0 (or later) is required; earlier versions are deprecated.  
 - The target Excel file must be stored in a supported storage location (default or custom).
 
 **Version Compatibility**  
@@ -47,7 +47,7 @@ DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/picture
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Pictures/DeleteWorksheetPictures) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to call the API with cURL.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -133,6 +133,8 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Notes:** The DELETE operation does not support pagination and is subject to the standard Aspose.Cells Cloud API rate limits (default 100 requests per minute). Adjust your client logic accordingly.
 
 **See also**:  
 - [/pictures/delete/](../delete/) – Delete a specific picture from a worksheet.  

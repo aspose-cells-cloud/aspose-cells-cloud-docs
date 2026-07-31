@@ -7,6 +7,7 @@ url: /convert-a-spread-file-to-different-formats/
 keywords: "Excel conversion, spreadsheet conversion, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, file format conversion"
 description: "Use Aspose.Cells Cloud REST API to convert Excel workbooks to various formats such as PDF, CSV, JSON, and Markdown. The API supports multiple SDKs for languages like C#, Java, Python, and more."
 weight: 10
+ArticleTitle: "Convert an Excel File to Different Formats – Aspose.Cells Cloud API Guide"
 ---
 
 This REST API converts an Excel file to a different format. It supports a wide range of output formats and allows you to set page‑setup and save options before conversion.
@@ -16,6 +17,8 @@ This REST API converts an Excel file to a different format. It supports a wide r
 ```http
 POST https://api.aspose.cloud/v3.0/cells/convert
 ```
+
+Before using this API, ensure you have a valid JWT token and have installed the appropriate Aspose.Cells Cloud SDK for your programming language.
 
 ### **Security and Authentication**
 
@@ -46,7 +49,7 @@ The API returns a **FileInfo** object that contains the generated Spreadsheet fi
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Conversion succeeded; response contains converted file details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |

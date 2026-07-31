@@ -5,12 +5,11 @@ url: /charts/to-image/
 aliases: [/convert-charts-to-image/]
 weight: 50
 keywords: "Aspose.Cells Cloud, chart to image, Excel chart conversion, REST API, image format, PNG, JPEG, BMP, TIFF, GIF"
-description: "Learn how to convert Excel chart objects to PNG, JPEG, BMP, TIFF, or GIF images using Aspose.Cells Cloud REST API. Includes endpoint details, parameters, cURL example, SDK snippets, response example, and error handling."
-ArticleTitle: "Convert Excel Chart to Image Using Aspose.Cells Cloud REST API"
+description: "Learn how to convert Excel chart objects to PNG, JPEG, BMP, TIFF, or GIF images using Aspise.Cells Cloud REST API. Includes endpoint details, parameters, cURL example, SDK snippets, response example, and error handling."
+ArticleTitle: "Convert Excel Chart to Image – Aspose.Cells Cloud REST API"
 ---
 
 This REST API demonstrates how to convert an **Excel chart** to an image using **Aspose.Cells Cloud**.
-
 
 ## REST API
 
@@ -22,7 +21,7 @@ Supported image formats include `png`, `jpeg`, `bmp`, `tiff`, and `gif`.
 
 ### Security and Authentication
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
 
 ### Request parameters
 
@@ -35,32 +34,25 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 | folder         | string  | query    | The document folder.      |
 | storageName    | string  | query    | Storage name.             |
 
-
 ### **Response**
 
-```json
-{
-    "Status":"OK",
-    "Code":200
-}
-```
+The endpoint returns the image file in the requested format as a binary stream (e.g., `byte[]`). The response `Content‑Type` header matches the selected image format such as `image/png`, `image/jpeg`, etc.
 
 **Response Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Image file returned in the requested format. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
 
-
 ## How to Use the PutWorksheetAddChart API with SDKs
 
 ### PutWorksheetAddChart API Specification
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/Charts/GetWorksheetChart" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -88,10 +80,9 @@ byte[]
 
 {{< /tabs >}}
 
-
 ### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

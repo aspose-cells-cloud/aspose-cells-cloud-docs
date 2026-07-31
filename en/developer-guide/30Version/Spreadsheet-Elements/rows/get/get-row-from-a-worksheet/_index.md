@@ -30,13 +30,13 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 | -------------- | ------- | -------- | --------------------------------------------------- |
 | name           | string  | path     | The name of the workbook file.                      |
 | sheetName      | string  | path     | The name of the worksheet within the workbook.      |
-| rowIndex       | integer | path     | Zero‑based index of the row to retrieve.            |
+| rowIndex       | integer | path     | Zero-based index of the row to retrieve.            |
 | folder         | string  | query    | The folder that contains the workbook.              |
 | storageName    | string  | query    | The name of the storage where the workbook resides. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetRow) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL. Include the `Authorization: Bearer <jwt token>` header to authenticate the request.
+You can use the cURL command-line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL. Include the `Authorization: Bearer <jwt token>` header to authenticate the request.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
@@ -79,6 +79,21 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 }
 ```
 
+**Response schema**
+
+| Property          | Type    | Description                                                          |
+|-------------------|---------|----------------------------------------------------------------------|
+| `GroupLevel`      | integer | Outline level of the row (used for grouping).                       |
+| `Height`          | number  | Height of the row in points.                                         |
+| `Index`           | integer | Zero‑based index of the row returned.                                |
+| `IsBlank`         | boolean | Indicates whether the row contains any data.                         |
+| `IsHeightMatched`| boolean | `true` if the row height matches the default row height.            |
+| `IsHidden`        | boolean | `true` if the row is hidden.                                         |
+| `Style`           | object  | Object containing style information for the row.                    |
+| `link`            | object  | Hyperlink reference to the row resource.                             |
+| `Code`            | integer | HTTP status code of the response.                                    |
+| `Status`          | string  | Textual description of the status (e.g., “OK”).                     |
+
 {{< /tab >}}
 
 {{< /tabs >}}
@@ -89,6 +104,13 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 - **401** – Unauthorized; the JWT token is missing or invalid.  
 - **404** – Not found; the specified workbook, worksheet, or row does not exist.  
 - **500** – Internal server error; an unexpected condition occurred.
+
+| Code | Description                                   | Remediation                              |
+|------|-----------------------------------------------|------------------------------------------|
+| 200  | Success – row data returned.                  | –                                        |
+| 401  | Unauthorized – missing or invalid JWT token.  | Provide a valid JWT token.               |
+| 404  | Not found – workbook, worksheet, or row missing.| Verify names and row index.             |
+| 500  | Internal server error – unexpected condition. | Contact Aspose support.                  |
 
 For a complete list of error codes, see the Aspose.Cells Cloud [Error Codes documentation](https://docs.aspose.cloud/cells/).
 

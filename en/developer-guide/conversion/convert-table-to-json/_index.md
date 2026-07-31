@@ -22,7 +22,13 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/table/json
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+**Prerequisites**
+
+- A valid Aspose.Cells Cloud subscription.  
+- A JWT access token obtained via the authentication flow.  
+- The exact worksheet name and table name you intend to convert.
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" target="_blank" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ```bash
 -H "Authorization: Bearer {access_token}"
@@ -62,6 +68,25 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sh
       "Identifier": "File",
       "Reference": "Stream"
     }
+  }
+]
+```
+
+**Example of a successful JSON payload (200 OK)**  
+
+```json
+[
+  {
+    "Id": 1,
+    "ProductName": "Widget A",
+    "Price": 12.99,
+    "InStock": true
+  },
+  {
+    "Id": 2,
+    "ProductName": "Widget B",
+    "Price": 8.5,
+    "InStock": false
   }
 ]
 ```
@@ -114,7 +139,7 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sh
 
 ### Convert Table to JSON API Specification
 
-The [Convert Table to JSON API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToJson) provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
+The [Convert Table to JSON API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToJson){:target="_blank" rel="noopener noreferrer"} provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -4,11 +4,19 @@ second_title: "Document"
 linktitle: "Delete without using storage"
 type: docs
 url: /metadata/delete/
-keywords: "Aspose.Cells, delete metadata, Excel API, workbook properties, REST API"
-description: "Delete workbook metadata (author, title, custom) via Aspose.Cells Cloud API. Includes endpoint, auth, parameters, cURL and SDK samples."
+keywords: "Aspose.Cells, delete metadata, Excel API, workbook properties"
+description: "Delete workbook metadata (author, title, custom) via Aspose.Cells Cloud API. Includes endpoint, authentication, parameters, cURL and SDK samples."
 weight: 55
 ArticleTitle: "Delete metadata from Excel files – Aspose.Cells Cloud Documentation"
 ---
+
+**Overview**  
+The Delete Metadata operation permanently removes all workbook properties (standard and custom) from the uploaded Excel file(s) and returns the processed file(s) in the response.
+
+**Prerequisites**  
+- A valid Aspose.Cells Cloud JWT token (obtainable via the OAuth 2.0 authentication flow).  
+- API version **v3.0** (the endpoint used in this example).  
+- For SDK usage, install the appropriate Aspose.Cells Cloud SDK for your language (e.g., via NuGet, Maven, npm, pip, CPAN, or Go modules).
 
 This REST API deletes **metadata** from one or more Excel files. It removes workbook properties such as author, title, and custom data, and returns the cleaned files.
 

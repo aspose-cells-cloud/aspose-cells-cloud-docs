@@ -7,14 +7,17 @@ url: /metadata/update/
 keywords: "metadata, Excel, Aspose.Cells Cloud, REST API, update, spreadsheet"
 description: "The Aspose.Cells Cloud REST API enables updating metadata in Excel files. It supports multiple SDKs (C#, Java, Python, Ruby, Go, etc.) for seamless integration across various programming languages."
 weight: 35
+ArticleTitle: "Update Metadata – Aspose.Cells Cloud API Documentation"
 ---
 
 This REST API updates **metadata** in multiple Excel files.
 
+**Prerequisites:** An active Aspose Cloud account, a valid JWT access token, and the Excel files to be uploaded.
+
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/metadata/update
+POST https://api.aspose.cloud/v3.0/cells/metadata/update
 ```
 
 ### Request parameters
@@ -23,6 +26,8 @@ POST http://api.aspose.cloud/v3.0/cells/metadata/update
 | ------------------ | ------ | ---------------- | ---------------------------------------------- |
 | file               | file   | formData         | The Excel file to upload.                      |
 | DocumentProperties | object | HTTP body (JSON) | Document properties to set for the Excel file. |
+
+**Notes:** Up to 10 files can be uploaded in a single request. Supported formats include `.xlsx`, `.xls`, and `.csv`. The total request size must not exceed 100 MB.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PostMetadata) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
@@ -33,7 +38,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/metadata/update" \
+curl -v "https://api.aspose.cloud/v3.0/cells/metadata/update" \
   -X POST \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -42,6 +47,8 @@ curl -v "http://api.aspose.cloud/v3.0/cells/metadata/update" \
   -F 'xxxxx2=@xxxx2.xlsx' \
   -d '[{ "name": "test", "value": "test" }]'
 ```
+
+The request requires an **Authorization** header with a Bearer JWT token. Ensure the token is generated using your Aspose Cloud client credentials.
 
 {{< /tab >}}
 
@@ -125,3 +132,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**See also:**  
+- [Get Metadata](/metadata/get/)  
+- [Delete Metadata](/metadata/delete/)  

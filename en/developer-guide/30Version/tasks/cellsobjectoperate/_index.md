@@ -4,8 +4,9 @@ second_title: "Document"
 type: docs
 url: /tasks/cells-object-operate/
 aliases: [/working-with-cellsobjectoperate-task/]
-description: "Learn how to use the CellsObjectOperate task in Aspose.Cells Cloud API. Detailed parameter reference, request/response examples, and best‑practice tips for operating worksheets, charts, pivot tables, and more."
+description: "Learn how to use the CellsObjectOperate task in Aspose.Cells Cloud API with parameter reference, request/response examples, and best‑practice tips for worksheets, charts, and pivot tables."
 weight: 20
+ArticleTitle: "Aspose.Cells Cloud API – Working with CellsObjectOperate Task (REST)"
 keywords:
   - "Aspose CellsObjectOperate"
   - "CellsObjectOperate task"
@@ -152,6 +153,65 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" \
          }'
 ```
 
+The request body follows the **CellsObjectOperateRequest** schema defined below:
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CellsObjectOperateRequest",
+  "type": "object",
+  "required": ["OperateObject"],
+  "properties": {
+    "OperateObject": {
+      "type": "object",
+      "required": ["OperateObjectType"],
+      "properties": {
+        "OperateObjectType": { "type": "string", "enum": ["Workbook","Worksheet","PageSetup","Cells","Chart","Shape","ListObject","PivotTable","WorkbookSettings","PageBreak"] },
+        "OperateObjectPosition": { "$ref": "#/definitions/OperateObjectPosition" }
+      }
+    },
+    "ChartOperateParameter": { "$ref": "#/definitions/ChartOperateParameter" },
+    "ListObjectOperateParameter": { "$ref": "#/definitions/ListObjectOperateParameter" },
+    "PageBreakOperateParameter": { "$ref": "#/definitions/PageBreakOperateParameter" },
+    "PageSetupOperateParameter": { "$ref": "#/definitions/PageSetupOperateParameter" },
+    "PivotTableOperateParameter": { "$ref": "#/definitions/PivotTableOperateParameter" },
+    "ShapeOperateParameter": { "$ref": "#/definitions/ShapeOperateParameter" },
+    "WorkbookSettingsOperateParameter": { "$ref": "#/definitions/WorkbookSettingsOperateParameter" },
+    "WorksheetOperateParameter": { "$ref": "#/definitions/WorksheetOperateParameter" }
+  },
+  "definitions": {
+    "OperateObjectPosition": {
+      "type": "object",
+      "properties": {
+        "Workbook": { "type": "object" },
+        "SheetName": { "type": "string" },
+        "ChartIndex": { "type": "integer" },
+        "ShapeIndex": { "type": "integer" },
+        "CellName": { "type": "string" },
+        "ListObjectIndex": { "type": "integer" }
+      }
+    },
+    "ChartOperateParameter": {
+      "type": "object",
+      "properties": {
+        "ChartIndex": { "type": "integer" },
+        "ChartType": { "type": "string" },
+        "UpperLeftRow": { "type": "integer" },
+        "UpperLeftColumn": { "type": "integer" },
+        "LowerRightRow": { "type": "integer" },
+        "LowerRightColumn": { "type": "integer" },
+        "Area": { "type": "string" },
+        "IsVertical": { "type": "string", "enum": ["true","false"] },
+        "CategoryData": { "type": "string" },
+        "IsAutoGetSerialName": { "type": "string", "enum": ["true","false"] },
+        "Title": { "type": "string" }
+      }
+    }
+    /* Additional definitions omitted for brevity */
+  }
+}
+```
+
 ### Sample Response (Success – 200)
 
 ```json
@@ -165,6 +225,17 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/task/runtask" \
   }
 }
 ```
+
+The response contains the following fields:
+
+| Field   | Type   | Description |
+| ------- | ------ | ----------- |
+| Code    | integer| HTTP‑like status code returned by the task engine. |
+| Status  | string | Human‑readable status (e.g., `OK`). |
+| TaskId  | string | Identifier of the asynchronous task. |
+| Result  | object | Object holding operation‑specific results. |
+| Result.ChartId | integer | Identifier of the created or modified chart. |
+| Result.Message | string | Short message describing the outcome. |
 
 ### Error Handling
 

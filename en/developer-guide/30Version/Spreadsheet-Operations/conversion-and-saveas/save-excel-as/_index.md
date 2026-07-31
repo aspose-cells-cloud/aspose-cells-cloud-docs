@@ -7,13 +7,18 @@ url: /save-an-excel-file-as-other-formats-files/
 aliases:
   - /convert-excel-workbook-to-different-file-formats/
   - /saveas-other-formats/
-keywords: "Aspose Cells, Excel Save As, PDF conversion, CSV export, JSON, Markdown, REST API"
-description: "Use Aspose.Cells Cloud REST API to save Excel workbooks in formats like PDF, CSV, JSON, and Markdown. SDKs available for multiple languages."
+keywords: "Aspose Cells, Excel, Save As, PDF, CSV, JSON, Markdown, REST API"
+description: "Save Excel workbooks to PDF, CSV, JSON, Markdown and other formats using Aspose.Cells Cloud REST API."
 weight: 30
 ---
 
 This REST API allows you **to save** an Excel file in different formats.  
 Before calling this endpoint, ensure you have a valid OAuth 2.0 access token and that the source workbook is stored in your Aspose Cloud storage.
+
+**Prerequisites**  
+1. Obtain a JWT access token and include it in the `Authorization: Bearer <token>` header of every request.  
+2. Upload the source workbook to Aspose Cloud storage (or confirm it already exists).  
+3. Know the storage name and folder path where the workbook resides.
 
 ## REST API
 
@@ -24,7 +29,6 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/saveAs
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
 
 ### **Path Parameter**
 
@@ -50,7 +54,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | pageIndex             | string | Index of the page to convert within the specified worksheet (requires `sheetName`).      |
 | onePagePerSheet       | bool   | When converting to PDF, generate one page per worksheet.                                 |
 
-
 ### **Request Body Parameter**
 
 | Parameter Name | Type   | Description                                                        |
@@ -68,24 +71,21 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-
 ### Response
 
-The API returns a SaveResponse object.
-
+The API returns a `SaveResponse` object.
 
 ```json
 {
-  "Status":"OK",
-  "Code":200,
-  "SaveResult":
-  {
-    "Documents":[
+  "Status": "OK",
+  "Code": 200,
+  "SaveResult": {
+    "Documents": [
       {
-        "Name":"xxxxx",
-        "Size":xxxxx,
-        "Folder":"xxxxxx",
-        "Storage":"xxxxx"
+        "Name": "sample.pdf",
+        "Size": 10240,
+        "Folder": "output",
+        "Storage": "MyStorage"
       }
     ]
   }
@@ -102,13 +102,11 @@ The API returns a SaveResponse object.
 | 404  | Not found – source workbook does not exist. |
 | 500  | Internal server error.                   |
 
-
 ## How to Use the PostWorkbookSaveAs API with SDKs
 
 ### PostWorkbookSaveAs API Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostWorkbookSaveAs) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
-
 
 You can use **cURL** to access Aspose.Cells web services easily. The example below shows how to call the Cloud API with cURL.
 
@@ -117,7 +115,9 @@ You can use **cURL** to access Aspose.Cells web services easily. The example bel
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfilename=sample.pdf&isAutoFitRows=true&isAutoFitColumns=true" -H "accept: multipart/form-data"
+curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfilename=sample.pdf&isAutoFitRows=true&isAutoFitColumns=true" \
+  -H "accept: multipart/form-data" \
+  -H "Authorization: Bearer <your_jwt_token>"
 ```
 
 {{< /tab >}}
@@ -127,12 +127,12 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfile
 ```json
 {
   "SaveResult": {
-     "Documents":[
+    "Documents": [
       {
-        "Name":"xxxxx",
-        "Size":10240,
-        "Folder":"xxxxxx",
-        "Storage":"xxxxx"
+        "Name": "sample.pdf",
+        "Size": 10240,
+        "Folder": "output",
+        "Storage": "MyStorage"
       }
     ]
   },
@@ -144,7 +144,6 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/sampleBook.xlsx/SaveAs?newfile
 {{< /tab >}}
 
 {{< /tabs >}}
-
 
 ### Use Aspose.Cells Cloud SDKs
 

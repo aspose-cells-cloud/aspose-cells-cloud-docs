@@ -30,40 +30,104 @@ Using Aspose.Cells Cloud SDK can reduce the operating costs of your business by 
 
 ### SDK Overview
 
-| Language | Latest Version | Installation | Quick‑start Example | 
-|----------|----------------|--------------|---------------------|
-| C# | 23.12 | `dotnet add package Aspose.Cells-Cloud` | ```csharp
-var api = new CellsApi("clientId", "clientSecret");
-var result = api.ConvertSpreadsheet(new ConvertSpreadsheetRequest("sample.xlsx", "pdf"));``` | 
-| Java | 23.12 | `mvn dependency:copy -Dartifact=aspose:aspose-cells-cloud:23.12` | ```CellsApi api = new CellsApi("clientId", "clientSecret");
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Latest Version</th>
+<th>Installation</th>
+<th>Quick‑start Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C#</td>
+<td>23.12</td>
+<td><code>dotnet add package Aspose.Cells-Cloud</code></td>
+<td>
+<pre><code class="language-csharp">var api = new CellsApi("clientId", "clientSecret");
+var result = api.ConvertSpreadsheet(new ConvertSpreadsheetRequest("sample.xlsx", "pdf"));</code></pre>
+</td>
+</tr>
+<tr>
+<td>Java</td>
+<td>23.12</td>
+<td><code>mvn dependency:copy -Dartifact=aspose:aspose-cells-cloud:23.12</code></td>
+<td>
+<pre><code class="language-java">CellsApi api = new CellsApi("clientId", "clientSecret");
 ConvertSpreadsheetRequest request = new ConvertSpreadsheetRequest();
 request.setSpreadsheet("Book1.xlsx");
 request.setFormat("pdf");
-File result = api.ConvertSpreadsheetRequest(request);``` | 
-| PHP | 23.12 | `composer require aspose/cells-cloud-sdk` | ```$instance = new CellsApi(getenv("CellsCloudClientId"),getenv("CellsCloudClientSecret"));
+File result = api.ConvertSpreadsheetRequest(request);</code></pre>
+</td>
+</tr>
+<tr>
+<td>PHP</td>
+<td>23.12</td>
+<td><code>composer require aspose/cells-cloud-sdk</code></td>
+<td>
+<pre><code class="language-php">$instance = new CellsApi(getenv("CellsCloudClientId"), getenv("CellsCloudClientSecret"));
 $convertSpreadsheetRequest = new ConvertSpreadsheetRequest();
 $convertSpreadsheetRequest->setSpreadsheet($EmployeeSalesSummaryXlsx);
 $convertSpreadsheetRequest->setFormat("pdf");
-$instance->convertSpreadsheet($convertSpreadsheetRequest ,"export-out1.pdf" );``` |
-| Python | 23.12 | `pip install aspose-cells-cloud` | ```instance  = CellsApi(os.getenv('CellsCloudClientId'),os.getenv('CellsCloudClientSecret'))
-instance.convert_spreadsheet(ConvertSpreadsheetRequest( 'EmployeeSalesSummary.xlsx', 'pdf') , local_outpath = "EmployeeSalesSummary.pdf")``` |
-| Ruby | 23.12 | `gem install aspose_cells_cloud` | ```@instance = AsposeCellsCloud::CellsApi.new(ENV['CellsCloudClientId'], ENV['CellsCloudClientSecret']);
-request = AsposeCellsCloud::ConvertSpreadsheetRequest.new(:Spreadsheet=>'EmployeeSalesSummary.xlsx',:format=>'pdf');
-response = @instance.convert_spreadsheet(request);``` | 
-| Node.js | 23.12 | `npm install asposecellscloud` | ```const cellsApi = new CellsApi(process.env.CellsCloudClientId, process.env.CellsCloudClientSecret,"v4.0",process.env.CellsCloudApiBaseUrl);
+$instance->convertSpreadsheet($convertSpreadsheetRequest, "export-out1.pdf");</code></pre>
+</td>
+</tr>
+<tr>
+<td>Python</td>
+<td>23.12</td>
+<td><code>pip install aspose-cells-cloud</code></td>
+<td>
+<pre><code class="language-python">instance = CellsApi(os.getenv('CellsCloudClientId'), os.getenv('CellsCloudClientSecret'))
+instance.convert_spreadsheet(ConvertSpreadsheetRequest('EmployeeSalesSummary.xlsx', 'pdf'), local_outpath="EmployeeSalesSummary.pdf")</code></pre>
+</td>
+</tr>
+<tr>
+<td>Ruby</td>
+<td>23.12</td>
+<td><code>gem install aspose_cells_cloud</code></td>
+<td>
+<pre><code class="language-ruby">@instance = AsposeCellsCloud::CellsApi.new(ENV['CellsCloudClientId'], ENV['CellsCloudClientSecret'])
+request = AsposeCellsCloud::ConvertSpreadsheetRequest.new(:Spreadsheet=>'EmployeeSalesSummary.xlsx', :format=>'pdf')
+response = @instance.convert_spreadsheet(request)</code></pre>
+</td>
+</tr>
+<tr>
+<td>Node.js</td>
+<td>23.12</td>
+<td><code>npm install asposecellscloud</code></td>
+<td>
+<pre><code class="language-javascript">const cellsApi = new CellsApi(process.env.CellsCloudClientId, process.env.CellsCloudClientSecret, "v4.0", process.env.CellsCloudApiBaseUrl);
 var request = new model.ConvertSpreadsheetRequest();
-request.spreadsheet =  "Book1.xlsx";
-request.format =  "pdf";
+request.spreadsheet = "Book1.xlsx";
+request.format = "pdf";
 return cellsApi.convertSpreadsheet(request).then((result) => {
     expect(result.response.statusCode).to.equal(200);
-});``` | 
-| Go | 23.12 | `go get github.com/aspose/cells-cloud-go/v2` | ```instance := NewCellsApiService(os.Getenv("ProductClientId"), os.Getenv("ProductClientSecret"))
-convertedData, httpResponse, err := instance.ConvertSpreadsheet(&ConvertSpreadsheetRequest{Spreadsheet: employeeSalesSummaryXlsx, Format: "pdf"})``` | 
+});</code></pre>
+</td>
+</tr>
+<tr>
+<td>Go</td>
+<td>23.12</td>
+<td><code>go get github.com/aspose/cells-cloud-go/v2</code></td>
+<td>
+<pre><code class="language-go">instance := NewCellsApiService(os.Getenv("ProductClientId"), os.Getenv("ProductClientSecret"))
+convertedData, httpResponse, err := instance.ConvertSpreadsheet(&amp;ConvertSpreadsheetRequest{Spreadsheet: employeeSalesSummaryXlsx, Format: "pdf"})</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
 
 **Prerequisites** – .NET 6+ / Java 8+ / PHP 7.4+ / Python 3.7+ / Ruby 2.6+ / Node 12+ / Go 1.16+ / Perl 5.30+. You also need a valid Aspose Cloud client ID and client secret.
 
 **Sample API request & response** – converting an Excel workbook to PDF:
 
+```json
+{
+  "Input": "EmployeeSalesSummary.xlsx",
+  "OutputFormat": "pdf"
+}
+```
 
 The SDKs are open‑source and hosted on GitHub; you can fork or contribute to them:
 

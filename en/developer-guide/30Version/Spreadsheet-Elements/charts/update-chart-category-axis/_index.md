@@ -3,7 +3,7 @@ title: "Update Chart Category Axis"
 type: docs
 url: /charts/category-axis/update/
 weight: 160
-keywords: "Aspose.Cells, Chart Category Axis, REST API, Excel, Cloud SDK, Excel chart, category axis update"
+keywords: "Aspose.Cells, Chart, Category Axis, REST API, Excel, Cloud SDK"
 description: "Updates the category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API."
 ArticleTitle: "Update Chart Category Axis – Aspose.Cells Cloud API"
 ---
@@ -78,6 +78,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
+**Example Response**
 
 ```json
 {

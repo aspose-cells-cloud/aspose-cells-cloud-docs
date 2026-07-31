@@ -12,7 +12,7 @@ weight: 100
 
 ## **Introduction**: Spreadsheet Quick Calculate – Add, Multiply, Subtract, Divide & Percent Formulas in One Running API
 
-_Boost productivity with bulk calculations across entire columns, rows, or tables without writing a single formula._
+_Perform bulk calculations across entire columns, rows, or tables without writing a formula._
 
 - **Basic math**: add, subtract, multiply or divide every cell in a range by any number
 - **Percentages**: increase/decrease by %, or find % of a number (e.g. +15%, -8%, 20% of…)
@@ -102,7 +102,7 @@ The [Math Calculate Specification](https://reference.aspose.cloud/cells/#/Calcul
 ### Use Aspose.Cells Cloud SDKs
 
 Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to perform math calculations by cell with just a short code.  
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Please check out the [Aspose.Cells Cloud SDKs on GitHub](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

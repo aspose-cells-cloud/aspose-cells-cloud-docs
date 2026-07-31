@@ -5,12 +5,14 @@ ArticleTitle: "How to Export a Remote Spreadsheet Range to Other Formats: Step�
 linktitle: "Export Range as Format"
 type: docs
 url: /export-range-as-format/
-keywords: "Aspose Cells, Export Excel Range, Convert Excel to PDF, Convert Excel to PNG, Convert Excel to CSV, Cloud API, Spreadsheet conversion"
+keywords: "Aspose Cells, Export Excel Range, PDF, PNG, CSV, Cloud API, Spreadsheet Conversion"
 description: "Learn how to convert a specific Excel range stored in Aspose Cells Cloud to PDF, PNG, CSV or other formats. Includes endpoint details, parameters, sample requests, response handling, and error information."
 weight: 100
 ---
 
 Export a cloud spreadsheet/Excel range to a format file. The format file can be saved in the cloud or exported to local storage.
+
+**Prerequisites:** To use this API you must have a valid Aspose Cloud account, obtain a client ID and client secret, generate a JWT access token, and ensure the workbook you want to convert is uploaded to your chosen storage.
 
 ## Export Range as Format API
 
@@ -43,6 +45,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | **fontsLocation**  | String | Query    | (Optional) Custom fonts location.                                                                                                                  |
 | **region**         | String | Query    | (Optional) Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
 | **password**       | String | Query    | (Optional) Password required to open the spreadsheet file.                                                                                         |
+
+#### Sample cURL Request
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Sheet1/ranges/A1:C12?format=pdf" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/octet-stream"
+```
 
 ### Response
 
@@ -125,11 +135,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Export Range as Format API Specification
 
-The [Export Range as Format API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportRangeAsFormat) provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportRangeAsFormat" rel="noopener noreferrer">Export Range as Format API Specification</a> provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to export a spreadsheet range to a format file with concise code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to export a spreadsheet range to a format file with concise code. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
@@ -159,3 +169,11 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportRangeAsFormat.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+### See Also
+
+- **Export Worksheet as Format** – Convert an entire worksheet to PDF, PNG, CSV, etc.  
+- **Convert Workbook to PDF** – Transform a whole workbook into a PDF document.  
+- **Export Range to Image** – Generate image files (PNG, JPEG) from a specific range.  
+
+These related endpoints can help you handle broader conversion scenarios.

@@ -1,5 +1,5 @@
 ---
-title: "Add an Empty Column to an Excel Worksheet – Aspose.Cells Cloud API"
+title: "Add an Empty Column to an Excel Worksheet - Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Add"
 type: docs
@@ -7,7 +7,7 @@ url: /columns/add/
 aliases:
   - /add-an-empty-column-in-an-excel-worksheet/
   - /add-an-empty-column-in-a-worksheet/
-keywords: "add column Excel API, Aspose.Cells Cloud, REST API, insert column"
+keywords: "add, column, Excel, API, Aspose.Cells, Cloud, REST, insert"
 description: "Learn how to insert a new column into an Excel sheet using Aspose.Cells Cloud REST API. Includes request syntax, cURL example, and SDK code samples."
 weight: 20
 ArticleTitle: "Add Empty Column to Excel Worksheet Using Aspose.Cells Cloud API"
@@ -39,6 +39,12 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/colu
 | **updateReference** | boolean | query    | When **true**, cell references are updated to reflect the insertion. |
 | **folder**          | string  | query    | Path to the folder containing the workbook.                          |
 | **storageName**     | string  | query    | Name of the storage service.                                         |
+
+**Notes**
+
+- The `columnIndex` must be between 0 and the current number of columns in the worksheet. Inserting beyond the existing range will automatically expand the sheet.  
+- Inserting multiple columns (`totalColumns` > 1) shifts existing columns to the right.  
+- The `updateReference` flag defaults to `false`; set to `true` to update formulas and named ranges.
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Cells/PutInsertWorksheetColumns) defines a publicly accessible programming interface and lets you perform REST interactions directly from a web browser.
 
@@ -78,6 +84,34 @@ curl -X PUT "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cel
 | 401  | Unauthorized – invalid or missing token.    |
 | 404  | Workbook or worksheet not found.            |
 | 500  | Internal server error.                      |
+
+**Example error responses**
+
+```json
+// 400 Bad Request – missing or invalid parameters
+{
+  "Code": 400,
+  "Message": "Invalid parameter: totalColumns must be a positive integer."
+}
+
+// 401 Unauthorized – invalid or missing token
+{
+  "Code": 401,
+  "Message": "Authentication failed. Access token is missing or invalid."
+}
+
+// 404 Not Found – workbook or worksheet does not exist
+{
+  "Code": 404,
+  "Message": "Workbook 'test.xlsx' not found."
+}
+
+// 500 Internal Server Error
+{
+  "Code": 500,
+  "Message": "An unexpected error occurred on the server."
+}
+```
 
 ## Cloud SDK Family
 

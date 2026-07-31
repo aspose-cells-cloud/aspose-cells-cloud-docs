@@ -17,7 +17,7 @@ Before calling the API, ensure you have:
 * The target workbook uploaded to your Aspose Cloud storage.  
 * The worksheet and pivot table already created.
 
-These prerequisites prevent authentication errors and “resource not found” responses.
+These prerequisites prevent authentication errors and “resource not found” responses. The following steps outline the required setup before invoking the API.
 
 This REST API hides a pivot field item in a pivot table.
 
@@ -83,12 +83,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/pivott
 
 **Response details**
 
-| Status Code | Description                              |
-| ----------- | ---------------------------------------- |
-| 200         | The item was hidden successfully.       |
-| 400         | Bad request – missing or invalid parameters. |
-| 401         | Unauthorized – invalid or missing JWT token. |
-| 500         | Server error – the operation could not be completed. |
+| Status Code | Description                                                          |
+| ----------- | -------------------------------------------------------------------- |
+| 200         | The item was hidden successfully.                                   |
+| 400         | Bad request – missing or invalid parameters.                        |
+| 401         | Unauthorized – invalid or missing JWT token.                        |
+| 500         | Server error – the operation could not be completed.                |
+
+**Note:** If the supplied `fieldIndex` or `itemIndex` is out of range, the API returns a **400 Bad Request** response.
 
 ## Cloud SDK Family
 
@@ -165,3 +167,5 @@ public void Run_PivotTable_NeedReCalculate()
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Note:** The SDK examples assume that you have already configured authentication (JWT token) and that the workbook resides in the specified storage folder. Adjust the `folder` and `storageName` parameters as needed for your environment.

@@ -4,13 +4,20 @@ type: docs
 url: /charts/clear/
 aliases: [/delete-all-charts-from-a-worksheet/]
 weight: 30
-keywords: "Aspose.Cells Cloud, delete all charts, worksheet, REST API, DELETE, Cloud SDK"
+keywords: "Aspose.Cells, Cloud, delete, all charts, worksheet, REST API, DELETE, SDK"
 description: "Learn how to delete every chart in a worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, cURL sample, SDK code snippets, authentication steps, and error handling."
+ArticleTitle: "Delete All Charts from a Worksheet using Aspose.Cells Cloud API"
 ---
 
 This REST API deletes all charts from the specified worksheet.
 
 **Background** – Removing all charts from a worksheet is useful when you need to reset a sheet’s visual layout, replace outdated visualizations, or prepare a workbook for reuse without retaining previous chart data.
+
+Before calling the API, ensure the following prerequisites are met:
+
+- A valid JWT token is available for authentication.  
+- The workbook file exists in the specified storage location and folder.  
+- You are using API version **v3.0**.
 
 ## REST API
 
@@ -32,8 +39,19 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 | folder         | string | query    | Folder where the workbook is stored. |
 | storageName    | string | query    | Name of the storage.                 |
 
+**Request Headers**
 
-### **Response**
+| Header        | Description                     |
+|---------------|---------------------------------|
+| Authorization | Bearer `<jwt token>`            |
+| Accept        | `application/json`              |
+| Content-Type  | `application/json` (no body)   |
+
+**Request Body**
+
+The DELETE operation does **not** require a request body.
+
+**Response**
 
 ```json
 {
@@ -46,12 +64,39 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Operation succeeded; all charts were removed from the worksheet. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
 
+*Example error responses*
+
+```json
+// 400 Bad Request
+{
+    "Code": 400,
+    "Message": "Invalid parameter: 'sheetName' is required."
+}
+
+// 401 Unauthorized
+{
+    "Code": 401,
+    "Message": "Authentication failed. Invalid JWT token."
+}
+
+// 413 Payload Too Large
+{
+    "Code": 413,
+    "Message": "The request payload exceeds the maximum allowed size."
+}
+
+// 500 Internal Server Error
+{
+    "Code": 500,
+    "Message": "An unexpected error occurred on the server."
+}
+```
 
 ## How to Use the DeleteWorksheetClearCharts API with SDKs
 

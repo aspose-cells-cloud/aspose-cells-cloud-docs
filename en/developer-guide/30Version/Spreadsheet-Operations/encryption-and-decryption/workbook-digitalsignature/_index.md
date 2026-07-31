@@ -8,11 +8,18 @@ url: /excel-digital-signature/
 aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/
-keywords: "Aspose.Cells Cloud, digital signature, Excel workbook, REST API, .pfx, OAuth2"
-description: "Learn how to add a digital signature to an Excel workbook using the Aspose.Cells Cloud API (v4.0). Includes endpoint, required parameters, authentication flow, error handling, and SDK samples for C#, Java, PHP, Ruby, Node.js, Python, Perl, and Go."
+keywords: "Aspose.Cells Cloud, digital signature, Excel workbook, REST API, .pfx, JWT, signature API"
+description: "Learn how to add a digital signature to an Excel workbook using the Aspose.Cells Cloud REST API (v4.0). Includes endpoint, parameters, authentication, response schema, error handling, and SDK examples for multiple languages."
 weight: 35
 ---
 
+
+**Prerequisites:**  
+Before calling this endpoint, ensure you have:
+
+- A valid JWT access token obtained via Aspose Cloud authentication.  
+- The target workbook uploaded to your Aspose Cloud storage.  
+- A digital signature file in `.pfx` or `.p12` format and its password.
 
 ## REST API
 
@@ -36,6 +43,8 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 | **password**             | string | `<code>query</code>` | Password for the workbook, if it is protected.         |
 | **folder**               | string | `<code>query</code>` | Folder where the workbook is stored.                   |
 | **storageName**          | string | `<code>query</code>` | Name of the storage service to use.                    |
+
+*Note: If the file name contains special characters, URL‑encode it before adding it to the query string.*
 
 ### Error Handling
 
@@ -91,6 +100,16 @@ curl -v "https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature?digitalsign
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Response Schema**  
+The API returns a JSON object with the following fields:
+
+| Field        | Type   | Description                                          |
+| ------------ | ------ | ---------------------------------------------------- |
+| `Code`       | int    | HTTP‑like status code indicating the result.         |
+| `Status`     | string | Short text describing the outcome (e.g., `OK`).     |
+| `SignatureId`| string | Identifier of the applied digital signature (optional). |
+| `Message`    | string | Additional information or error details (optional). |
 
 ### Use Aspose.Cells Cloud SDKs
 

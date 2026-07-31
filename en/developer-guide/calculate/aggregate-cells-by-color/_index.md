@@ -24,7 +24,7 @@ The API can perform data calculations based on cell **color**. It can sum, count
 
 ## Authentication
 
-To call the Aggregate by **Color** endpoint you must obtain an OAuth 2.0 access token.
+**Prerequisites** – Ensure you have a registered Aspose Cloud application and that you are using a supported SDK version for your platform (e.g., .NET 6+, Java 11+, Python 3.8+). The API requires an OAuth 2.0 access token.
 
 1. **Register an application** in the Aspose Cloud Dashboard to receive a **Client Id** and **Client Secret**.
 2. **Request a token**
@@ -196,3 +196,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_AggregateCellsByColor.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+**Notes:**  
+- When working with protected workbooks, include the optional `Password` query parameter; otherwise the request will fail with a 401 error.  
+- The maximum request size for the `Spreadsheet` file is 100 MB. If you need to process larger files, consider uploading the workbook to Aspose Cloud storage first and referencing it via the `Path` parameter (not shown here).

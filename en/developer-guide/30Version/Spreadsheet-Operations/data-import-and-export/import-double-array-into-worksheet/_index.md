@@ -11,11 +11,14 @@ aliases:
 keywords: "Aspose.Cells, import double array, Excel API, cloud SDK"
 description: "Learn how to import a double‑array into an Excel worksheet using Aspose.Cells Cloud REST API. Includes authentication, request format, parameters, sample XML/JSON, and response details."
 weight: 20
+ArticleTitle: "Import Double Array into Excel Worksheet – Aspose.Cells Cloud Guide"
 ---
 
 This REST API **imports double‑array data** into an Excel worksheet.
 
-You send an HTTP request with **multipart** content (see [RFC 2046](http://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
+> **Prerequisites:** You must have a valid JWT token before calling this API. See the authentication guide for details.
+
+You send an HTTP request with **multipart** content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
 The first part of the multipart body contains the **ImportDoubleArrayOption** data and the second part contains the data file.
 
 ## REST API
@@ -103,9 +106,12 @@ When an error occurs the API returns a JSON object containing the error code and
 ```json
 {
   "Code": 401,
-  "Status": "Error",
+  "Status": "Error"
 }
 ```
+
+For more information on related import operations, see the “Import 2‑Dimension Double Array” and “Import Integer Array” documentation pages.
+
 ## How to Use the PostImportData API with SDKs
 
 ### PostImportData API Specification

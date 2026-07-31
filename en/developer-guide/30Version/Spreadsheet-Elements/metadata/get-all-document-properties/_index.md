@@ -6,7 +6,8 @@ type: docs
 url: /document-properties/get-all/
 aliases: [/get-all-document-properties/]
 keywords: "Get All Document Properties, Aspose.Cells Cloud, Excel document properties, REST API, SDK, Excel metadata"
-description: "Retrieve all document properties from an Excel file using the Aspise.Cells Cloud REST API. The endpoint works with all supported SDKs and programming languages."
+description: "Retrieve all document properties from an Excel file using the Aspose.Cells Cloud REST API. The endpoint works with all supported SDKs and programming languages."
+ArticleTitle: "Get All Document Properties – Aspose.Cells Cloud API"
 weight: 25
 ---
 
@@ -15,7 +16,7 @@ This REST API reads document properties.
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/documentproperties
+GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties
 ```
 
 ### Request Parameters
@@ -253,6 +254,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties" \
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Response Codes**
+
+- **200 OK** – The request succeeded and the document properties are returned.  
+- **400 Bad Request** – The request was malformed or missing required parameters.  
+- **401 Unauthorized** – Authentication failed or the JWT token is missing/invalid.  
+- **404 Not Found** – The specified workbook or storage location could not be found.  
+- **500 Internal Server Error** – An unexpected error occurred on the server.
 
 ## Cloud SDK Family
 

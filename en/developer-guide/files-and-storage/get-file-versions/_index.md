@@ -12,6 +12,8 @@ weight: 100
 
 ## **Excel API: Get File Versions**
 
+Retrieve a complete list of version records for a specific spreadsheet stored in Aspose.Cells Cloud. This endpoint enables developers to track changes, audit modifications, and implement version‑control workflows directly from the cloud storage.
+
 ### Web API
 
 ```
@@ -24,11 +26,18 @@ The **GetFileVersions** API returns all version records for a specified spreadsh
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
 
 ```bash
 -H "Authorization: Bearer {access_token}"
 ```
+
+**Prerequisites / Authentication**
+
+- Obtain a JWT access token from the Aspose Cloud authentication service.  
+- The token must include the required **Storage** scope to access file version information.  
+- Include the `Authorization` header with the bearer token in every request.  
+- Tokens expire after a configurable period; refresh the token as needed before making subsequent calls.
 
 ### The request parameters of **GetFileVersions** API are
 
@@ -36,6 +45,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | -------------- | ------ | -------- | ------------------------------------------------------------------------------------------- |
 | `path`         | String | Path     | **Required.** Full path to the file whose versions are being retrieved.                     |
 | `storageName`  | String | Query    | Optional. Name of the storage containing the file. If omitted, the default storage is used. |
+
+#### cURL Example
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/version/MyFolder/MyFile.xlsx" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
 
 ### **Response Description**
 
@@ -90,6 +107,8 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
+On success, the API returns **HTTP 200 OK** with a JSON payload containing the `Value` array of file‑version objects, as illustrated above.
+
 #### Error Handling
 
 | HTTP Status | Description                                | Typical Cause                        |
@@ -136,3 +155,5 @@ The following code examples illustrate how to interact with Aspose.Cells web ser
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_GetFileVersions.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+[Back to Files and Storage](#)

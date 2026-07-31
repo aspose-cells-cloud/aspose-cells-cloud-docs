@@ -17,7 +17,7 @@ Working with text in Excel workbooks often requires locating specific strings an
 
 ## Overview
 
-Search and replace lets you locate specific strings in a workbook or a particular worksheet and substitute them with new values. The operation works with all formats supported by Aspose.Cells Cloud, such as **XLS, XLSX, XLSM, XLSB, ODS, CSV**, and others.
+Search and replace lets you locate specific strings in a workbook or a particular worksheet and substitute them with new values. The operation works with all formats supported by Aspose.Cells Cloud, such as **XLS, XLSX, XLSM, XLSB, ODS, CSV**, and others. Using the **search and replace** feature you can quickly clean up data, correct repeated typos, or apply bulk naming conventions throughout an entire workbook.
 
 ## Prerequisites
 
@@ -28,6 +28,7 @@ Search and replace lets you locate specific strings in a workbook or a particula
 
 ## API Reference
 
+**Method:** `POST`  
 **Endpoint**
 
 ```
@@ -83,7 +84,7 @@ POST https://api.aspose.cloud/v3.0/cells/{fileName}/searchreplace
 
 ## Code Samples
 
-Below are minimal examples for three popular SDKs. Replace `{clientId}`, `{clientSecret}`, and other placeholders with your actual values.
+Below are minimal examples for three popular SDKs. Replace `{clientId}`, `{clientSecret}`, and other placeholders with your actual values. These samples demonstrate how to perform a **search and replace** operation programmatically.
 
 ## Error Handling & Edge Cases
 
@@ -92,6 +93,9 @@ Below are minimal examples for three popular SDKs. Replace `{clientId}`, `{clien
 | 400       | Bad Request – missing or invalid parameters      | Verify required fields and data types.                                   |
 | 401       | Unauthorized – invalid or expired token          | Refresh the access token.                                                |
 | 404       | Not Found – workbook or worksheet does not exist | Check the file name, folder path, and `sheetName`.                       |
+| 415       | Unsupported Media Type – invalid file format     | Ensure the uploaded file is in a supported Excel or CSV format.          |
+| 202       | Accepted – request accepted for processing       | Poll the operation status if asynchronous processing is used.            |
+| 204       | No Content – operation succeeded with no body    | The replacement was applied; no additional data returned.               |
 | 500       | Internal Server Error – unexpected failure       | Retry after a short delay; contact Aspose support if the issue persists. |
 
 **Notes:**  
@@ -109,3 +113,23 @@ Below are minimal examples for three popular SDKs. Replace `{clientId}`, `{clien
 - [How to replace text from an Excel workbook.](/cells/workbook/replace-text/)
 - [How to replace text from an Excel worksheet.](/cells/worksheets/replace-text/)
 - [How to replace text from Excel files without uploading a file.](/cells/replace/)
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Search and Replace Text in Excel Files using Aspose.Cells Cloud API",
+  "description": "Documentation for the search and replace endpoint of Aspose.Cells Cloud, including request format, parameters, examples, and error handling.",
+  "url": "https://docs.aspose.cloud/cells/search-and-replace/",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2026-07-30",
+  "keywords": "Aspose.Cells Cloud, Excel, search and replace, API, REST"
+}
+</script>

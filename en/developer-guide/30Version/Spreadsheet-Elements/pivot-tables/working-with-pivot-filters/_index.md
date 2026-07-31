@@ -5,7 +5,7 @@ linktitle: Filters
 type: docs
 url: /pivot-tables/add-filters/
 aliases: [/working-with-pivot-filters/]
-keywords: "Aspose.Cells Cloud, Pivot Table Filter, REST API, Excel, Add Filter, Delete Filter, Retrieve Filter"
+keywords: "Aspose.Cells, Pivot Table, Filter, REST API, Cloud"
 description: "Learn how to add, retrieve, and delete pivot table filters using the Aspose.Cells Cloud REST API. Includes request syntax, required parameters, cURL example, and SDK snippets for C# and Go."
 weight: 50
 ArticleTitle: "Working with Pivot Filters – Aspose.Cells Cloud Documentation"
@@ -33,10 +33,30 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | **name**            | string  | path     | The name of the Excel file.                                                                     |
 | **sheetName**       | string  | path     | The worksheet that contains the pivot table.                                                    |
 | **pivotTableIndex** | integer | path     | Zero‑based index of the pivot table to which the filter will be applied.                        |
-| **filter**          | object  | body     | JSON object that defines the filter settings (e.g., `AutoFilter`, `EvaluationOrder`, etc.).     |
+| **filter**          | object  | body     | JSON object that defines the filter settings. See the **filter schema** table below.            |
 | **needReCalculate** | boolean | query    | When **true**, forces the workbook to recalculate after the filter is added. Default **false**. |
 | **folder**          | string  | query    | Folder in cloud storage where the file is located.                                              |
 | **storageName**     | string  | query     | Name of the cloud storage.                                                                      |
+
+**filter schema**
+
+| Property                     | Type    | Description                                                                                 |
+| ---------------------------- | ------- | ------------------------------------------------------------------------------------------- |
+| **AutoFilter**               | object  | Settings for an AutoFilter; can be omitted if not used.                                    |
+| **EvaluationOrder**          | integer | Order in which the filter is evaluated.                                                     |
+| **FieldIndex**               | integer | Zero‑based index of the field to which the filter applies.                                 |
+| **FilterType**               | string  | Type of filter (e.g., `Value`, `Count`, `Label`).                                          |
+| **MeasureFldIndex**          | integer | Index of the measure field, if applicable.                                                  |
+| **MemberPropertyFieldIndex** | integer | Index of the member property field, if applicable.                                         |
+| **Name**                     | string  | Optional name for the filter.                                                               |
+| **Value1**                   | string  | First value used by the filter (e.g., lower bound for a range).                            |
+| **Value2**                   | string  | Second value used by the filter (e.g., upper bound for a range).                           |
+| **CustomFilters**            | array   | Collection of custom filter objects (each with `FilterOperatorType`, `Value1`, `Value2`). |
+| **DynamicFilter**            | object  | Settings for a dynamic filter (e.g., Top10, Bottom10).                                      |
+| **IconFilter**               | object  | Settings for an icon‑based filter.                                                          |
+| **Top10Filter**              | object  | Settings for a Top10/Bottom10 filter.                                                       |
+| **ColorFilter**              | object  | Settings for a color‑based filter.                                                          |
+| **Visibledropdown**          | boolean | Indicates whether the filter dropdown is visible.                                          |
 
 > **Note:** All parameters listed above are required unless explicitly marked as optional in the API reference.
 
@@ -52,8 +72,12 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 
 **Best Practices**  
 - Keep filter objects as small as possible; large filter definitions may increase request latency.  
-- Calls are idempotent – adding the same filter twice will not create duplicates.  
-- Respect the API rate‑limit of 100 requests per minute per account.
+- Calls are idempotent — adding the same filter twice will not create duplicates.  
+- Respect the API rate‑limit of 100 requests per minute per account.  
+
+*Additional notes:*  
+- The maximum size of a filter definition is 1 MB; larger payloads will be rejected with a 400 error.  
+- When using `needReCalculate=true`, the recalculation may increase response time for large workbooks.  
 
 You can explore the full OpenAPI definition here:  
 [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/PivotTables/PutWorksheetPivotTableFilter)

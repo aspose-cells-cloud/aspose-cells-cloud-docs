@@ -14,6 +14,12 @@ ArticleTitle: "Delete a Picture from an Excel Worksheet – Aspose.Cells Cloud A
 This REST API deletes a picture from an Excel worksheet.
 
 ## Security and Authentication
+**Prerequisites:** Before calling this endpoint, make sure you have:
+
+- A valid Aspose.Cells Cloud account.  
+- The latest Aspose.Cells Cloud SDKs installed (if you prefer using an SDK).  
+- A JWT access token generated as described in the [authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
 ## REST API
@@ -56,6 +62,14 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet2/picture
   "Status": "OK"
 }
 ```
+
+**Sample Response Headers**
+
+| Header        | Value                         |
+|---------------|------------------------------|
+| Content-Type  | application/json             |
+| Content-Length| (varies)                     |
+| Date          | (server date)                |
 
 {{< /tab >}}
 

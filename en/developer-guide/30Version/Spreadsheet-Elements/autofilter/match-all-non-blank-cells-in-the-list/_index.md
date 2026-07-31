@@ -11,6 +11,14 @@ ArticleTitle: "Match all non‑blank cells in an Excel worksheet using Aspose.Ce
 weight: 100
 ---
 
+**Overview**  
+The *Match all non‑blank cells* operation applies an AutoFilter to a worksheet and returns only the rows where the specified column contains data, ignoring empty cells. This is useful for cleaning data sets, generating reports, or preparing data for further analysis.
+
+**Prerequisites**  
+- A valid JWT token for Aspose.Cells Cloud authentication.  
+- The workbook must be uploaded to Aspose Cloud storage.  
+- You need the file name, worksheet name, and the zero‑based column index (`fieldIndex`) you wish to filter.
+
 ## REST API
 
 This REST API matches all non‑blank cells in the AutoFilter list on an Excel worksheet.
@@ -44,14 +52,22 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 **Http Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning                     | Description                                                                      |
+|------|-----------------------------|----------------------------------------------------------------------------------|
+| 200  | OK                          | Match operation succeeded; response contains operation status.                  |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type).                   |
+| 401  | Unauthorized                | Invalid or missing JWT token.                                                    |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit.                                                |
+| 500  | Internal Server Error       | Unexpected server error.                                                         |
 
+*Example error response (400)*  
+
+```json
+{
+  "Code": 400,
+  "Message": "Invalid parameter: fieldIndex must be a non‑negative integer."
+}
+```
 
 ## How to Use the PostWorksheetMatchNonBlanks API with SDKs
 

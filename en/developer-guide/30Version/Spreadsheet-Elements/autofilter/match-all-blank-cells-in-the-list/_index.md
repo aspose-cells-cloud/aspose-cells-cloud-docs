@@ -1,5 +1,6 @@
 ---
 title: "Match all blank cells in an Excel worksheet"
+ArticleTitle: "Match all blank cells in an Excel worksheet – Aspose.Cells Cloud API Guide"
 second_title: "Document"
 linktitle: "Match all blank cells"
 type: docs
@@ -13,6 +14,8 @@ weight: 100
 ## REST API
 
 This REST API matches all **blank cells** in the filter list on an Excel worksheet.
+
+**Prerequisites:** Before calling this endpoint, ensure you have a valid JWT access token, the workbook is uploaded to Aspose Cloud storage, and you know the storage folder (if applicable). Provide the `folder` and `storageName` parameters when the file is not in the default root.
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/matchBlanks
@@ -47,7 +50,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Operation succeeded; the response confirms that blank cells have been matched in the AutoFilter. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |

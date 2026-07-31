@@ -1,18 +1,20 @@
 ---
-title: "How to set the storage position for Aspose.Cells Cloud Docker Container storage"
+title: "How to Set the Storage Position for Aspose.Cells Cloud Docker Container Storage"
 second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud Docker Container Storage Configuration"
 linktitle: "Container Storage"
 type: docs
 url: /docker/storage/
-description: "How to set the storage position for Aspose.Cells Cloud Docker Container storage."
+description: "Configure the storage location for Aspose.Cells Cloud Docker containers using JSON, PowerShell, or Bash."
 weight: 30
-keywords: "Aspose.Cells, Docker storage, container configuration, JSON, PowerShell, Bash"
+keywords: "Aspose.Cells, Docker, container storage, JSON configuration, PowerShell, Bash"
 ---
+
+**Summary**: This guide shows how to configure the storage location for Aspose.Cells Cloud Docker containers on Windows and Linux using JSON configuration files and Docker run commands.
 
 ## Default Storage Configuration ##
 
-**Prerequisites**: Ensure Docker Engine 20.10+ is installed, you have valid Aspose.Cells Cloud license keys (`LicensePublicKey` and `LicensePrivateKey`), and the host folder you intend to use for storage (e.g., `c:/data` on Windows or `/data` on Linux) exists with appropriate permissions.
+**Prerequisites**: Ensure Docker Engine 20.10+ is installed, you have valid Aspose.Cells Cloud license keys (`LicensePublicKey` and `LicensePrivateKey`), and the host folder you intend to use for storage (e.g., `c:/data` on Windows or `/data` on Linux) exists with appropriate permissions.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="windows" tabName2="linux" >}}
 
@@ -64,7 +66,7 @@ c:\app\storageResource.json
 
 ## Custom Storage Configuration ##
 
-Re‑specify the storage profile when you need to use a custom storage folder for Aspose.Cells Cloud images.
+Specify a custom storage profile when you need to use a different folder for Aspose.Cells Cloud data.
 
 ```bash
 docker run -d \

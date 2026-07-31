@@ -11,7 +11,7 @@ description: "Learn how to convert Excel workbooks to PDF with Aspose.Cells Clou
 weight: 80
 ---
 
-This REST API converts a spreadsheet file to a PDF‑format file.
+This REST API converts a spreadsheet file to a PDF‑format file. **Prerequisites:** Obtain a valid JWT access token, ensure the source Excel file is stored in a supported storage, and have appropriate permissions to invoke the conversion endpoint.
 
 ## REST API
 
@@ -22,7 +22,6 @@ POST https://api.aspose.cloud/v3.0/cells/convert/pdf
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
 
 ### **Query Parameter**
 
@@ -44,10 +43,9 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 [FileInfo](/cells/file-info/)
 
-The response returns a JSON object with file metadata. The PDF file itself can be downloaded using the provided `FileContent` (base64) or via the `FileInfo` link.
-The API returns a JSON object of type **FileInfo**:
+The response returns a JSON object with file metadata. The PDF file itself can be downloaded using the provided `FileContent` (base64) or via the `FileInfo` link. The API returns a JSON object of type **FileInfo**:
 
-- **FileInfo** – object containing the name, size, and base‑64‑encoded content of the generated Markdown file.
+- **FileInfo** – object containing the name, size, and base‑64‑encoded content of the generated **PDF** file.
 
 ```json
 {
@@ -74,6 +72,14 @@ The API returns a JSON object of type **FileInfo**:
 
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/Conversion/PostConvertWorkbookToPDF) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+**Request Headers**
+
+| Header        | Type   | Description                                            |
+| :------------ | :----- | :----------------------------------------------------- |
+| Authorization | string | Bearer token obtained via JWT authentication.         |
+| Content-Type  | string | Must be `multipart/form-data` for file upload.        |
+| Accept        | string | `application/json` to receive the response metadata. |
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. Include an access token in the `Authorization` header, then run the request below.
 
@@ -109,7 +115,7 @@ curl -X POST "https://api.aspose.cloud/v3.0/cells/convert/pdf" \
 ### Use Aspose.Cells Cloud SDKs
 
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK can simplify development by handling low‑level details. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}

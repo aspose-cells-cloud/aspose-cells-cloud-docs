@@ -5,8 +5,8 @@ ArticleTitle: "How to Convert a Local Spreadsheet Range to a CSV File: Step‑by
 linktitle: "Convert Range to CSV"
 type: docs
 url: /convert-range-to-csv/
-keywords: "Convert, Excel, CSV, Aspose.Cells, Cloud API"
-description: "Convert a specific range from a local Excel file to CSV using the Aspose.Cells Cloud REST API. Supports XLSX and XLS formats."
+keywords: "Aspose Cells, Convert Range to CSV, Excel to CSV, Excel API, Cloud Spreadsheet, Convert, Excel, CSV, Aspose.Cells, Cloud API"
+description: "Learn how to convert a specific range from a local Excel workbook (XLSX or XLS) to CSV using the Aspose.Cells Cloud REST API. Includes request syntax, parameters, error handling, and SDK examples."
 ---
 
 Export a specific range from a local Excel file to CSV using the Aspose.Cells Cloud API.
@@ -15,10 +15,21 @@ Export a specific range from a local Excel file to CSV using the Aspose.Cells Cl
 
 ## **Convert Range to CSV API**
 
+**Prerequisites**  
+To call this endpoint you must have a valid Aspose Cloud **client ID** and **client secret**, obtain a **JWT access token**, and ensure the source spreadsheet is in **XLSX** or **XLS** format.
+
 ### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/range/csv
+```
+
+**cURL example**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/csv?worksheet=Sheet1&range=A1:C10" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@sample.xlsx"
 ```
 
 ### Security and Authentication
@@ -65,11 +76,13 @@ Jane Smith,2023-01-16,980.50
 
 ### Error Codes
 
-- **200 OK** – CSV file returned successfully.  
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token, client ID, or client secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
-- **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.
+| Status Code | Description                              | Typical Cause                                 | Suggested Remedy                                   |
+|------------:|------------------------------------------|----------------------------------------------|----------------------------------------------------|
+| 200         | CSV file returned successfully           | –                                            | Process the returned file.                         |
+| 400         | Bad Request                              | Invalid URI or missing required parameters   | Verify the request URL and required parameters.   |
+| 401         | Unauthorized                             | Invalid or expired JWT token                 | Regenerate a valid access token.                   |
+| 404         | Not Found                                | Spreadsheet file cannot be accessed          | Check file path, storage name, and permissions.    |
+| 500         | Internal Server Error                    | Server‑side processing failure               | Review server logs or contact support if persistent.|
 
 ## Where should you use the Convert Range to CSV API?
 
@@ -126,7 +139,8 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryNa
 Using the SDK is the fastest way to develop, as it abstracts away the low‑level details, allowing you to convert a range of data to a CSV file with minimal code.  
 Explore the complete list of Aspose.Cells Cloud SDKs in our [GitHub repository](https://github.com/aspose-cells-cloud).
 
-The following code examples illustrate how to call Aspose.Cells web services using various SDKs:
+The following code examples illustrate how to call Aspose.Cells web services using various SDKs. If loading from Gist is blocked, you can download the examples directly from the repository.
+
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
 {{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ConvertRangeToCSV.cs" >}}

@@ -12,6 +12,8 @@ weight: 100
 
 The **ConvertSpreadsheetToPdf** endpoint reads a spreadsheet file uploaded from a local drive, processes it on the Aspose.Cells Cloud server, and returns the resulting PDF document as a binary stream. This cloud‑native conversion eliminates the need to upload the source file to storage, reduces resource consumption, and simplifies workflows by delivering the PDF directly to the client. Supported formats depend on the underlying libraries; the API validates file existence, permissions, and conversion integrity, throwing appropriate HTTP errors for invalid input or processing failures.
 
+**Prerequisites** – To use this API you must have a valid JWT access token, ensure the source file is one of the supported spreadsheet formats (XLS, XLSX, CSV, etc.), and respect the maximum file size of 100 MB. The token is obtained via the Aspose.Cells Cloud authentication flow described in the linked guide.
+
 ## **Convert Spreadsheet To Pdf API**
 
 ### Web API
@@ -46,27 +48,47 @@ Content-Type: application/pdf
 Content‑Disposition: attachment; filename="converted.pdf"  
 Content‑Length: `<size in bytes>`
 
-Body: binary stream of the generated PDF file
+Body: binary stream of the generated PDF file  
+
+**Example using `curl`**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/pdf" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@myWorkbook.xlsx" \
+  -o converted.pdf
+```
+
+### **Status Codes**
+
+| Code | Description |
+| ---- | ----------- |
+| 200  | Conversion succeeded; PDF returned in the response body. |
+| 400  | Bad request – invalid URI or missing required parameters. |
+| 401  | Unauthorized – invalid or expired JWT token. |
+| 404  | Not found – the specified spreadsheet file cannot be accessed. |
+| 500  | Internal server error – an unexpected condition occurred during conversion. |
 
 ### Error Codes
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized**: Invalid access token or invalid client ID and secret.  
+- **404 Not Found**: The spreadsheet file is not accessible.  
 - **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.
 
 ## Where should we use the Convert Spreadsheet To Pdf API?
 
-- **Automated reporting pipelines** – Convert daily‑generated Excel reports to PDF for archiving or email distribution without manual steps.
-- **Document management systems** – Store PDFs directly in a DMS after conversion, keeping the original spreadsheet only on the client side.
-- **Web applications with on‑the‑fly export** – Allow end‑users to download a PDF version of a spreadsheet they edit in the browser, leveraging cloud conversion to preserve layout.
-- **Regulatory compliance** – Generate immutable PDF snapshots of financial spreadsheets for audit trails, ensuring the source file never leaves the client environment.
+- **Automated reporting pipelines** – Convert daily‑generated Excel reports to PDF for archiving or email distribution without manual steps.  
+- **Document management systems** – Store PDFs directly in a DMS after conversion, keeping the original spreadsheet only on the client side.  
+- **Web applications with on‑the‑fly export** – Allow end‑users to download a PDF version of a spreadsheet they edit in the browser, leveraging cloud conversion to preserve layout.  
+- **Regulatory compliance** – Generate immutable PDF snapshots of financial spreadsheets for audit trails, ensuring the source file never leaves the client environment.  
+- **Cross‑format conversion workflows** – Combine with other conversion endpoints such as the [Convert Spreadsheet to CSV](/convert-spreadsheet-to-csv/) API to create multi‑format archives.
 
 ## Why should you use the Convert Spreadsheet To Pdf API?
 
-- **Zero‑upload workflow** – No need to upload the source file to cloud storage; conversion happens directly from the uploaded stream, saving bandwidth and storage costs.
-- **High‑fidelity rendering** – Aspose.Cells preserves complex formulas, charts, and formatting when converting to PDF, matching desktop Excel output.
-- **Scalable cloud execution** – Leverages Aspose’s cloud infrastructure for fast, reliable conversion regardless of client hardware.
+- **Zero‑upload workflow** – No need to upload the source file to cloud storage; conversion happens directly from the uploaded stream, saving bandwidth and storage costs.  
+- **High‑fidelity rendering** – Aspose.Cells preserves complex formulas, charts, and formatting when converting to PDF, matching desktop Excel output.  
+- **Scalable cloud execution** – Leverages Aspose’s cloud infrastructure for fast, reliable conversion regardless of client hardware.  
 - **Simple REST interface** – A single `PUT` request with optional query parameters; returns a ready‑to‑download PDF stream, making integration straightforward in any language.
 
 ## How to Use the Convert Spreadsheet To Pdf API with SDKs

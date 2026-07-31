@@ -18,8 +18,12 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
 
+**Prerequisites**
+- Register for an Aspose Cloud account and obtain a **Client Id** and **Client Secret**.
+- Generate a JWT token using the client credentials (see the linked authentication guide).
+- Include the token in the `Authorization` header of each request: `Authorization: Bearer <jwt token>`.
 
 ### Request parameters
 
@@ -30,7 +34,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | chartIndex     | integer | path                            | Zero‑based index of the chart whose axis is requested. |
 | folder         | string  | query                           | Folder path in the storage where the file is located.  |
 | storageName    | string  | query                           | Name of the Aspose Cloud storage to use (optional).    |
-
 
 ### **Response**
 
@@ -53,14 +56,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-
+| Code | Meaning                     | Description                                                                      |
+|------|-----------------------------|----------------------------------------------------------------------------------|
+| 200  | OK                          | Axis retrieved successfully; response contains axis details.                    |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type).                    |
+| 401  | Unauthorized                | Invalid or missing JWT token.                                                    |
+| 404  | Not Found                   | The specified chart or axis does not exist.                                      |
+| 500  | Internal Server Error       | Unexpected server error.                                                         |
 
 ## How to Use the GetChartSecondCategoryAxis API with SDKs
 
@@ -117,61 +119,298 @@ The following code examples demonstrate how to call the **Get Chart Second Categ
 
 {{< tab tabNum="1" >}}
 
-<!-- C# example placeholder -->
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model.Requests;
+
+// Configure API client
+var config = new Configuration
+{
+    ClientId = "<your-client-id>",
+    ClientSecret = "<your-client-secret>"
+};
+var apiInstance = new ChartsApi(config);
+
+// Build request
+var request = new GetChartSecondCategoryAxisRequest(
+    name: "Sample.xlsx",
+    sheetName: "Sheet1",
+    chartIndex: 0,
+    folder: "Documents",
+    storageName: null
+);
+
+// Execute
+var response = apiInstance.GetChartSecondCategoryAxis(request);
+Console.WriteLine($"Axis Name: {response.Axis.Name}");
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
 
-<!-- Java example placeholder -->
+```java
+import com.aspose.cells.cloud.api.ChartsApi;
+import com.aspose.cells.cloud.model.*;
+import com.aspose.cells.cloud.model.requests.*;
+
+public class GetSecondCategoryAxis {
+    public static void main(String[] args) {
+        // Configure API client
+        Configuration config = new Configuration();
+        config.setClientId("<your-client-id>");
+        config.setClientSecret("<your-client-secret>");
+
+        ChartsApi api = new ChartsApi(config);
+
+        // Build request
+        GetChartSecondCategoryAxisRequest request = new GetChartSecondCategoryAxisRequest(
+                "Sample.xlsx", "Sheet1", 0, "Documents", null);
+
+        // Execute
+        AxisResponse response = api.getChartSecondCategoryAxis(request);
+        System.out.println("Axis Name: " + response.getAxis().getName());
+    }
+}
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
-<!-- PHP example placeholder -->
+```php
+<?php
+use Aspose\Cells\Cloud\Sdk\Api\ChartsApi;
+use Aspose\Cells\Cloud\Sdk\Configuration;
+use Aspose\Cells\Cloud\Sdk\Model\Requests\GetChartSecondCategoryAxisRequest;
+
+// Configure
+$config = new Configuration();
+$config->setClientId('<your-client-id>');
+$config->setClientSecret('<your-client-secret>');
+
+$apiInstance = new ChartsApi($config);
+
+$request = new GetChartSecondCategoryAxisRequest(
+    'Sample.xlsx',       // name
+    'Sheet1',            // sheetName
+    0,                   // chartIndex
+    'Documents',         // folder
+    null                 // storageName
+);
+
+try {
+    $result = $apiInstance->getChartSecondCategoryAxis($request);
+    echo "Axis Name: " . $result->getAxis()->getName();
+} catch (Exception $e) {
+    echo 'Exception when calling ChartsApi->getChartSecondCategoryAxis: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
-<!-- Ruby example placeholder -->
+```ruby
+require 'aspose_cells_cloud'
+
+# Configure SDK
+config = AsposeCellsCloud::Configuration.new
+config.client_id = '<your-client-id>'
+config.client_secret = '<your-client-secret>'
+
+api_instance = AsposeCellsCloud::ChartsApi.new
+
+begin
+  result = api_instance.get_chart_second_category_axis(
+    name: 'Sample.xlsx',
+    sheet_name: 'Sheet1',
+    chart_index: 0,
+    folder: 'Documents'
+  )
+  puts "Axis Name: #{result.axis.name}"
+rescue AsposeCellsCloud::ApiError => e
+  puts "Exception when calling ChartsApi->get_chart_second_category_axis: #{e}"
+end
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
 
-<!-- Python example placeholder -->
+```python
+import asposecellscloud
+from asposecellscloud.rest import ApiException
+from asposecellscloud.apis.charts_api import ChartsApi
+from asposecellscloud.models import GetChartSecondCategoryAxisRequest
+
+# Configure API client
+config = asposecellscloud.Configuration()
+config.client_id = '<your-client-id>'
+config.client_secret = '<your-client-secret>'
+
+api_instance = ChartsApi(asposecellscloud.ApiClient(config))
+
+request = GetChartSecondCategoryAxisRequest(
+    name='Sample.xlsx',
+    sheet_name='Sheet1',
+    chart_index=0,
+    folder='Documents'
+)
+
+try:
+    response = api_instance.get_chart_second_category_axis(request)
+    print('Axis Name:', response.axis.name)
+except ApiException as e:
+    print('Exception when calling ChartsApi->get_chart_second_category_axis:', e)
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example-Get-ChartSecondCategoryAxis.js" >}}
+```javascript
+// Node.js example using the Aspose.Cells Cloud SDK
+const { ChartsApi, Configuration } = require('asposecellscloud');
+
+const config = new Configuration({
+    clientId: '<your-client-id>',
+    clientSecret: '<your-client-secret>'
+});
+const api = new ChartsApi(config);
+
+(async () => {
+    try {
+        const response = await api.getChartSecondCategoryAxis({
+            name: 'Sample.xlsx',
+            sheetName: 'Sheet1',
+            chartIndex: 0,
+            folder: 'Documents'
+        });
+        console.log('Axis Name:', response.axis.name);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+})();
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="7" >}}
 
-<!-- Android example placeholder -->
+```java
+// Android (Java) example using the Aspose.Cells Cloud SDK for Android
+import com.aspose.cells.cloud.sdk.api.ChartsApi;
+import com.aspose.cells.cloud.sdk.model.*;
+import com.aspose.cells.cloud.sdk.model.requests.*;
+
+public class GetSecondCategoryAxisAndroid {
+    public void execute() {
+        Configuration config = new Configuration();
+        config.setClientId("<your-client-id>");
+        config.setClientSecret("<your-client-secret>");
+
+        ChartsApi api = new ChartsApi(config);
+        GetChartSecondCategoryAxisRequest request = new GetChartSecondCategoryAxisRequest(
+                "Sample.xlsx", "Sheet1", 0, "Documents", null);
+
+        try {
+            AxisResponse response = api.getChartSecondCategoryAxis(request);
+            System.out.println("Axis Name: " + response.getAxis().getName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
 
-<!-- Swift example placeholder -->
+```swift
+import AsposeCellsCloud
+
+let config = Configuration(clientId: "<your-client-id>", clientSecret: "<your-client-secret>")
+let api = ChartsApi(configuration: config)
+
+let request = GetChartSecondCategoryAxisRequest(
+    name: "Sample.xlsx",
+    sheetName: "Sheet1",
+    chartIndex: 0,
+    folder: "Documents",
+    storageName: nil
+)
+
+api.getChartSecondCategoryAxis(request: request) { result, error in
+    if let axis = result?.axis {
+        print("Axis Name: \(axis.name ?? "")")
+    } else if let err = error {
+        print("Error: \(err)")
+    }
+}
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
 
-<!-- Perl example placeholder -->
+```perl
+use Aspose::Cells::Cloud::Sdk::Api::ChartsApi;
+use Aspose::Cells::Cloud::Sdk::Configuration;
+
+my $config = Aspose::Cells::Cloud::Sdk::Configuration->new(
+    client_id     => '<your-client-id>',
+    client_secret => '<your-client-secret>'
+);
+my $api = Aspose::Cells::Cloud::Sdk::Api::ChartsApi->new($config);
+
+my $response = $api->get_chart_second_category_axis(
+    name        => 'Sample.xlsx',
+    sheet_name  => 'Sheet1',
+    chart_index => 0,
+    folder      => 'Documents'
+);
+print "Axis Name: " . $response->axis->name . "\n";
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
 
-<!-- Go example placeholder -->
+```go
+package main
+
+import (
+    "fmt"
+    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v3"
+    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v3/api"
+)
+
+func main() {
+    cfg := asposecellscloud.NewConfiguration()
+    cfg.ClientId = "<your-client-id>"
+    cfg.ClientSecret = "<your-client-secret>"
+
+    apiInstance := api.NewChartsApi(cfg)
+
+    request := asposecellscloud.GetChartSecondCategoryAxisRequest{
+        Name:      "Sample.xlsx",
+        SheetName: "Sheet1",
+        ChartIndex: 0,
+        Folder:    "Documents",
+        StorageName: nil,
+    }
+
+    result, _, err := apiInstance.GetChartSecondCategoryAxis(request)
+    if err != nil {
+        fmt.Println("Error:", err)
+        return
+    }
+    fmt.Println("Axis Name:", result.Axis.Name)
+}
+```
 
 {{< /tab >}}
 

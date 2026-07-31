@@ -1,87 +1,91 @@
 ---
 title: "Aspose.Cells Cloud API – Get Files List (Folder Contents)"
-second_title: "Document"
-ArticleTitle: "Cloud-based Excel File Management Solution – Interface for Quickly Getting File List in the Cloud"
-linktitle: "Get Files List"
+description: "Retrieve a list of files and sub‑folders from a specific folder in Aspose.Cells Cloud storage."
+keywords:
+  - Aspose.Cells
+  - API
+  - Get Files List
+  - Cloud Storage
+  - Excel
+  - REST
 type: docs
-url: /get-files-list/
-description: "Retrieve a list of files and sub‑folders from a specific folder in Aspose.Cells Cloud storage. Includes endpoint, parameters, sample request, and SDK examples."
-keywords: "Aspose.Cells, API, Get Files List, Cloud Storage, Excel, REST"
 weight: 100
 ---
 
-## **Excel API: Get Files List**
+# Aspose.Cells Cloud API – Get Files List (Folder Contents)
 
-The **Get Files List** operation returns the collection of files and sub‑folders stored in a specified folder. For an overview of all storage‑related operations, see the **[Files and Storage](/files-and-storage/)** page.
+## Overview
+The **Get Files List** operation returns the collection of files and sub‑folders stored in a specified folder of Aspose.Cells Cloud storage.  
+It is the primary entry point for browsing cloud‑based Excel workbooks, archives, and other supported file types.
 
+> **Prerequisites**
+> - A valid **JWT access token** (see [Authenticating API requests](/total/getting-started/rest-api-overview/authenticating-api-requests/)).  
+> - An existing storage account (default storage is used if `storageName` is omitted).  
 
-### Web API
+---
+
+## Endpoint
 
 ```
 GET https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
 
-**Sample request (cURL)**  
+- **{path}** – URL‑encoded path of the folder whose contents you want to list.
+
+### Request URL Template
+
+```
+https://api.aspose.cloud/v4.0/cells/storage/folder/{path}?storageName={storageName}&pageSize={pageSize}&pageNumber={pageNumber}
+```
+
+---
+
+## Authentication
+
+All Aspose.Cells Cloud APIs require **Bearer token** authentication.
+
+```http
+Authorization: Bearer <your_access_token>
+```
+
+---
+
+## Request Parameters
+
+| Name          | Location | Type    | Required | Description |
+|---------------|----------|---------|----------|-------------|
+| **path**      | Path     | string  | Yes      | Path to the folder in cloud storage. |
+| **storageName** | Query   | string  | No       | Name of the storage to use. If omitted, the default storage is used. |
+| **pageSize**  | Query    | integer | No       | Maximum number of items to return per page (default: 100). |
+| **pageNumber**| Query    | integer | No       | Page number to retrieve (starting at 1, default: 1). |
+
+---
+
+## Sample Request (cURL)
 
 ```bash
 curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/folder/{path}?storageName=MyStorage&pageSize=100&pageNumber=1" \
      -H "Authorization: Bearer <your_access_token>"
 ```
 
-### Function Description
+> **Note**: Replace `{path}`, `MyStorage`, and `<your_access_token>` with your actual values.  
+> The `path` parameter must be URL‑encoded (e.g., `My%20Folder/Reports`).
 
-The **getFilesList** API retrieves a comprehensive list of files and folders contained within a specified directory in Aspose.Cells Cloud storage. This endpoint is essential for efficient file management and supports a variety of Excel‑related file formats.
+---
 
-### **Security and Authentication**
+## Response Codes
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+| Code | Meaning                              | Description |
+|------|--------------------------------------|-------------|
+| **200** | OK | The folder contents were retrieved successfully. |
+| **400** | Bad Request | One or more parameters are invalid. |
+| **401** | Unauthorized | Missing or invalid JWT token. |
+| **404** | Not Found | The specified folder does not exist. |
+| **500** | Internal Server Error | An unexpected server‑side error occurred. |
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
+---
 
-### Request Parameters for Get Files List API
-
-| Parameter Name  | Type    | Location | Description                                                                    |
-| --------------- | ------- | -------- | ------------------------------------------------------------------------------ |
-| **path**        | String  | Path     | The path to the folder in cloud storage from which the file list is retrieved. |
-| **storageName** | String  | Query    | (Optional) The name of the storage to access.                                  |
-| **pageSize**    | Integer | Query    | (Optional) Maximum number of items to return per page.                         |
-| **pageNumber**  | Integer | Query    | (Optional) Page number to retrieve (starting at 1).                            |
-
-### Response Description
-
-```json
-{
-  "Name": "FilesList",
-  "Description": ["Files list"],
-  "Type": "Class",
-  "IsAbstract": false,
-  "Properties": [
-    {
-      "Name": "Value",
-      "Description": [
-        "Files and folders contained by the specified StorageFile."
-      ],
-      "Nullable": true,
-      "ReadOnly": false,
-      "IsInherit": false,
-      "DataType": {
-        "Identifier": "Container",
-        "Reference": "StorageFile",
-        "ElementDataType": {
-          "Identifier": "Class",
-          "Reference": "StorageFile",
-          "Name": "class:storagefile"
-        },
-        "Name": "container"
-      }
-    }
-  ]
-}
-```
-
-**Sample successful response**
+## Successful Response (JSON)
 
 ```json
 {
@@ -102,49 +106,204 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-#### Common Error Responses
+- **Value** – Array of `StorageFile` objects. Each object contains:
+  - `Name` – File or folder name.
+  - `IsFolder` – `true` if the entry is a folder.
+  - `Size` – Size in bytes (folders report `0`).
+  - `ModifiedDate` – Last modification timestamp (ISO 8601).
 
-| Status Code | Meaning                          | Response Body (example)                                |
-| ----------- | -------------------------------- | ------------------------------------------------------ |
-| **200**     | Successful retrieval.            | `{ "Value": [ … ] }`                                   |
-| **400**     | Invalid parameters.              | `{ "Code": 400, "Message": "Invalid request." }`       |
-| **401**     | Missing or invalid token.        | `{ "Code": 401, "Message": "Authentication failed." }` |
-| **404**     | Specified folder does not exist. | `{ "Code": 404, "Message": "Folder not found." }`      |
-| **500**     | Server‑side problem.             | `{ "Code": 500, "Message": "Unexpected error." }`      |
+---
 
-## OpenAPI Specification
+## Error Response Example
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderController/GetFilesList) defines a publicly accessible programming interface that enables REST interactions directly from a web browser, facilitating easy integration and testing.
+```json
+{
+  "Code": 404,
+  "Message": "Folder not found."
+}
+```
 
-## Excel API SDK
+---
 
-Utilizing an SDK is the optimal approach to accelerate your development process. An SDK manages low‑level details, allowing you to concentrate on your project tasks. For a complete list of Aspose.Cells Cloud SDKs, please visit the [GitHub repository](https://github.com/aspose-cells-cloud).
+## SDK Samples
 
-The following code examples illustrate how to invoke Aspose.Cells web services using various SDKs:
+The following code snippets demonstrate how to call **Get Files List** using the official Aspose.Cells Cloud SDKs.
 
-{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{<tab tabNum="1" >}}
-{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_GetFilesList.cs" >}}
-{{</tab>}}
-{{<tab tabNum="2" >}}
-{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_GetFilesList.java" >}}
-{{</tab>}}
-{{<tab tabNum="3" >}}
-{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_GetFilesList.php" >}}
-{{</tab>}}
-{{<tab tabNum="4" >}}
-{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_GetFilesList.rb" >}}
-{{</tab>}}
-{{<tab tabNum="5" >}}
-{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_GetFilesList.ts" >}}
-{{</tab>}}
-{{<tab tabNum="6" >}}
-{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_GetFilesList.py" >}}
-{{</tab>}}
-{{<tab tabNum="7" >}}
-{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_GetFilesList.pl" >}}
-{{</tab>}}
-{{<tab tabNum="8" >}}
-{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_GetFilesList.go" >}}
-{{</tab>}}
-{{< /tabs >}}
+### C# (.NET)
+
+```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model.Requests;
+
+var apiInstance = new FolderApi();
+var request = new GetFilesListRequest(
+    path: "MyFolder",
+    storageName: "MyStorage",
+    pageSize: 100,
+    pageNumber: 1
+);
+
+var response = apiInstance.GetFilesList(request);
+Console.WriteLine(response);
+```
+
+### Java
+
+```java
+import com.aspose.cells.cloud.api.FolderApi;
+import com.aspose.cells.cloud.model.requests.GetFilesListRequest;
+
+FolderApi api = new FolderApi();
+GetFilesListRequest request = new GetFilesListRequest()
+        .path("MyFolder")
+        .storageName("MyStorage")
+        .pageSize(100)
+        .pageNumber(1);
+
+var result = api.getFilesList(request);
+System.out.println(result);
+```
+
+### Python
+
+```python
+from asposecellscloud import FolderApi
+from asposecellscloud.models import GetFilesListRequest
+
+api = FolderApi()
+request = GetFilesListRequest(
+    path='MyFolder',
+    storage_name='MyStorage',
+    page_size=100,
+    page_number=1
+)
+
+response = api.get_files_list(request)
+print(response)
+```
+
+### Node.js (TypeScript)
+
+```typescript
+import { FolderApi, GetFilesListRequest } from "asposecellscloud";
+
+const api = new FolderApi();
+const request = new GetFilesListRequest({
+    path: "MyFolder",
+    storageName: "MyStorage",
+    pageSize: 100,
+    pageNumber: 1
+});
+
+api.getFilesList(request).then(result => console.log(result));
+```
+
+### PHP
+
+```php
+<?php
+require_once('vendor/autoload.php');
+
+use Aspose\Cells\Cloud\Api\FolderApi;
+use Aspose\Cells\Cloud\Model\Requests\GetFilesListRequest;
+
+$apiInstance = new FolderApi();
+$request = new GetFilesListRequest(
+    "MyFolder",          // path
+    "MyStorage",         // storageName (optional)
+    100,                 // pageSize (optional)
+    1                    // pageNumber (optional)
+);
+
+$response = $apiInstance->getFilesList($request);
+print_r($response);
+?>
+```
+
+### Ruby
+
+```ruby
+require 'aspose_cells_cloud'
+
+api_instance = AsposeCellsCloud::FolderApi.new
+request = AsposeCellsCloud::GetFilesListRequest.new(
+  path: 'MyFolder',
+  storage_name: 'MyStorage',
+  page_size: 100,
+  page_number: 1
+)
+
+result = api_instance.get_files_list(request)
+puts result
+```
+
+### Go
+
+```go
+package main
+
+import (
+    "fmt"
+    cells "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v4"
+    "github.com/aspose-cells-cloud/aspose-cells-cloud-go/v4/api"
+)
+
+func main() {
+    cfg := cells.NewConfiguration()
+    cfg.AddDefaultHeader("Authorization", "Bearer <your_access_token>")
+    client := api.NewAPIClient(cfg)
+
+    request := client.FolderApi.GetFilesList(
+        "MyFolder",   // path
+        "MyStorage",  // storageName (optional)
+        100,          // pageSize (optional)
+        1,            // pageNumber (optional)
+    )
+    result, _, err := request.Execute()
+    if err != nil {
+        panic(err)
+    }
+    fmt.Printf("%+v\n", result)
+}
+```
+
+### Perl
+
+```perl
+#!/usr/bin/perl
+use AsposeCellsCloud::FolderApi;
+use AsposeCellsCloud::Object::GetFilesListRequest;
+
+my $api_instance = AsposeCellsCloud::FolderApi->new();
+my $request = AsposeCellsCloud::Object::GetFilesListRequest->new(
+    path         => 'MyFolder',
+    storage_name => 'MyStorage',
+    page_size    => 100,
+    page_number  => 1,
+);
+
+my $result = $api_instance->get_files_list(request => $request);
+print $result;
+```
+
+---
+
+## Related API Endpoints
+
+- **Copy File** – `POST /cells/storage/file/copy`  
+- **Delete Folder** – `DELETE /cells/storage/folder/{path}`  
+- **Upload File** – `PUT /cells/storage/file/{path}`  
+
+Explore these links to build a complete file‑management workflow.
+
+---
+
+## Additional Resources
+
+- **OpenAPI Specification**: <https://reference.aspose.cloud/cells/#/FolderController/GetFilesList>  
+- **SDK Repository**: <https://github.com/aspose-cells-cloud>  
+- **Authentication Guide**: <https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/>  
+
+---
+
+*Document last updated: 2026‑07‑30*  

@@ -23,6 +23,22 @@ POST https://api.aspose.cloud/v3.0/cells/updatewordcase
 ### Security and Authentication
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
+**Prerequisites** – To call this API you must obtain a valid JWT access token.  
+1. Register your application in the Aspose Cloud dashboard to receive a **Client ID** and **Client Secret**.  
+2. Request a token from the OAuth 2.0 token endpoint (`https://api.aspose.cloud/connect/token`) using the client credentials grant.  
+3. Include the token in the `Authorization: Bearer <access_token>` header of every request.
+
+Below is a minimal example (cURL) for acquiring a token:
+
+```bash
+curl -X POST "https://api.aspose.cloud/connect/token" \
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  -d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
+```
+
+The response contains the `access_token` that you will use when invoking the **PostUpdateWordCase** endpoint.
+
+
 ### **Function Description**
 
 The PostUpdateWordCase web API addresses the common issue of inconsistent text case in spreadsheets, which can significantly impact data analysis and processing. This API automates case conversion, ensuring that your data is clean, standardized, and ready for further manipulation or analysis.
@@ -51,6 +67,16 @@ The PostUpdateWordCase web API addresses the common issue of inconsistent text c
 }
 ```
 
+**Example request body**
+
+```json
+{
+  "Range": "A1:B10",
+  "CaseType": "Upper",
+  "IgnoreBlank": true
+}
+```
+
 - **Range** – The cell range to which the case conversion will be applied (e.g., `A1:C5`).
 - **CaseType** – The type of case conversion. Allowed values are `Upper`, `Lower`, `Capitalize`, and `Title`.
 - **IgnoreBlank** – If `true`, blank cells are ignored; default is `false`.
@@ -75,7 +101,7 @@ The PostUpdateWordCase web API addresses the common issue of inconsistent text c
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Text case conversion succeeded; response contains the transformed file. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |

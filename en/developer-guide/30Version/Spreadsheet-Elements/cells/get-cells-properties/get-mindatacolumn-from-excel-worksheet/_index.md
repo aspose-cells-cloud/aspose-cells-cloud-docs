@@ -13,6 +13,18 @@ In other words, it tells you which column is the first one that actually holds d
 
 > **Definition** – `mindatacolumn`: the index (starting at 0) of the first column that contains data in the worksheet.
 
+**Prerequisites**  
+- A valid OAuth2 access token is required.  
+- The Excel file must be uploaded to Aspose Cloud storage.
+
+**Request Parameters**
+
+| Parameter      | Type   | Required | Description                                 |
+|----------------|--------|----------|---------------------------------------------|
+| `fileName`     | string | Yes      | Name of the Excel file stored in cloud storage. |
+| `sheetName`    | string | Yes      | Name of the worksheet from which to retrieve the column index. |
+| `Authorization` (header) | string | Yes | Bearer token for OAuth2 authentication. |
+
 - **cURL Example**
 
 ```bash
@@ -21,8 +33,6 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
 ```
-
-- **cURL Example**
 
 {{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
@@ -48,6 +58,15 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Response Status Codes**
+
+| Code | Description                                          |
+|------|------------------------------------------------------|
+| 200  | Success – returns JSON with `MinDataColumn`.         |
+| 401  | Unauthorized – invalid or missing access token.      |
+| 404  | Not Found – specified file or worksheet does not exist. |
+| 500  | Internal Server Error – unexpected server condition. |
 
 ---
 
@@ -91,7 +110,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 {{< tab tabNum="6" >}}
 
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetMinDataColumnWorksheet-1.js" >}}
+{{< gist "aspose-cells-cloud-gists" "e82de2b4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Cells-GetMinDataColumnWorksheet-1.js" >}}
 
 {{< /tab >}}
 
@@ -118,4 +137,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-

@@ -21,7 +21,7 @@ This REST API supports auto‑fitting columns in an Excel workbook.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
+POST https://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
 ```
 
 The request parameters are:
@@ -35,7 +35,7 @@ The request parameters are:
 | **folder**            | string  | query    | The folder that contains the workbook.            |
 | **storageName**       | string  | query    | The name of the storage service.                  |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Workbook/PostAutofitWorkbookColumns){:rel="noopener noreferrer"} defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to easily access Aspose.Cells web services. The following example shows how to call the Cloud API with cURL.
 
@@ -44,13 +44,15 @@ You can use the cURL command‑line tool to easily access Aspose.Cells web servi
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
+curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
 -X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
 -d '{"AutoFitMergedCells":true, "IgnoreHidden":true}'
 ```
+
+> **Note:** Always use the HTTPS endpoint in production and keep your JWT token confidential.
 
 {{< /tab >}}
 
@@ -67,9 +69,22 @@ curl -v "http://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
 
 {{< /tabs >}}
 
+### Prerequisites
+Before calling this operation, ensure that you have a valid Aspose Cloud API key, a generated JWT token, and that the target workbook already exists in the specified storage location.
+
+### Response Codes
+The API can return the following HTTP status codes:
+
+| Code | Description |
+|------|-------------|
+| 200  | Success – columns auto‑fitted |
+| 400  | Bad request – missing or invalid parameters |
+| 401  | Unauthorized – invalid or expired JWT |
+| 500  | Server error – internal processing failure |
+
 ## Cloud SDK Family
 
-Using an SDK is the most efficient way to accelerate development. An SDK handles low‑level details so you can focus on your project logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the most efficient way to accelerate development. An SDK handles low‑level details so you can focus on your project logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud){:rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

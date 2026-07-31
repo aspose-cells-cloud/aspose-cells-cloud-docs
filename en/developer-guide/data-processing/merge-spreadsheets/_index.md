@@ -5,7 +5,7 @@ ArticleTitle: "Combine Multiple Excel Files into One – Batch Merge Spreadsheet
 linktitle: "Merge Spreadsheets"
 type: docs
 url: /merge-spreadsheets/
-keywords: "Aspose.Cells, merge spreadsheets, Excel API, cloud spreadsheet conversion, batch merge, convert Excel to PDF, CSV merge, ODS merge, spreadsheet conversion, Aspose API"
+keywords: "Aspose.Cells, merge spreadsheets, Excel API, cloud spreadsheet, batch merge, PDF conversion, CSV merge, ODS merge, API reference, SDK"
 description: "Combine several local Excel, CSV, or ODS files into a single workbook and convert the result to 30+ formats (PDF, HTML, etc.) using Aspose.Cells Cloud. Includes endpoint, parameters, authentication guide, and SDK examples."
 weight: 100
 ---
@@ -20,7 +20,8 @@ PUT https://api.aspose.cloud/v4.0/cells/merge/spreadsheet
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.  
+Before calling the API, ensure you have obtained a valid access token and that your application has the required scopes. Include the token in the `Authorization` header as shown below:
 
 ```bash
 -H "Authorization: Bearer {access_token}"
@@ -32,13 +33,21 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | --------------- | ------- | ---------------- | ------------------------------------------------------------------------------------------------ |
 | Spreadsheet     | File    | FormData         | The local spreadsheet file to upload. Supports XLSX, XLS, CSV, ODS, etc.                         |
 | outFormat       | String  | Query            | Desired output format (e.g., `XLSX`, `PDF`, `CSV`, `HTML`). Supports 30+ formats.                |
-| mergeInOneSheet | Boolean | Query            | `true` → all data merged into a single worksheet; `false` → each original sheet is preserved.    |
+| mergeInOneSheet | Boolean | Query            | `true` → all data merged into a single worksheet; `false` → each original sheet is preserved.    |
 | outPath         | String  | Query (optional) | Cloud folder path where the merged file will be saved. If omitted, the default location is used. |
 | outStorageName  | String  | Query            | Name of the cloud storage to use (default or custom).                                            |
 | fontsLocation   | String  | Query (optional) | Cloud folder containing custom fonts for correct PDF/image rendering.                            |
 | region          | String  | Query (optional) | Locale for number, date, and currency formatting (e.g., `en-US`, `zh-CN`).                       |
 | password        | String  | Query (optional) | Password for opening a protected spreadsheet.                                                    |
 
+**Example request body (multipart/form‑data)**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/spreadsheet?outFormat=PDF&mergeInOneSheet=true" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/Book1.xlsx" \
+  -F "Spreadsheet=@/path/to/Book2.xlsx"
+```
 
 ### **Response**
 
@@ -55,6 +64,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ```
 
 The file can be downloaded directly from the `FileUrl` or saved to the location specified by `outPath`.
+
+**Success response details**
+
+| Status Code | Content‑Type                | Description                                    |
+|-------------|-----------------------------|------------------------------------------------|
+| 200 OK      | `application/octet-stream` | Binary stream of the merged workbook file.     |
+| 202 Accepted| `application/json`          | JSON containing `FileUrl`, `FileName`, etc.   |
 
 ### Error Codes
 
@@ -94,7 +110,7 @@ The file can be downloaded directly from the `FileUrl` or saved to the location 
 
 ### OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/MergeSpreadsheets) provides a machine‑readable description of the API, enabling direct REST interactions.
+The <a href="https://reference.aspose.cloud/cells/#/DataProcessingController/MergeSpreadsheets" rel="noopener noreferrer">OpenAPI Specification</a> provides a machine‑readable description of the API, enabling direct REST interactions.
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -102,7 +118,7 @@ Using an SDK abstracts low‑level details, allowing you to merge multiple sprea
 
 > _Example_: Merge multiple spreadsheets into **a** spreadsheet with short code.
 
-Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Please check the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -130,3 +146,23 @@ Please check the [GitHub repository](https://github.com/aspose-cells-cloud) for 
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MergeSpreadsheets.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Merge Multiple Excel Files into One Spreadsheet – Aspose.Cells Cloud API",
+  "description": "Combine several local Excel, CSV, or ODS files into a single workbook and convert the result to 30+ formats using Aspose.Cells Cloud.",
+  "url": "https://docs.aspose.cloud/cells/merge-spreadsheets/",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "keywords": "Aspose.Cells, merge spreadsheets, Excel API, cloud spreadsheet, batch merge, PDF conversion, CSV merge, ODS merge, API reference, SDK",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2026-07-30"
+}
+</script>

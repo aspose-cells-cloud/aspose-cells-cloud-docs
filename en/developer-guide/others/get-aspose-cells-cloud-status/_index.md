@@ -1,21 +1,24 @@
 ---
 title: "Aspose.Cells Cloud Web API - Get Aspose Cells Cloud Status"
 second_title: "Document"
-ArticleTitle: "Get Aspose.Cells Cloud Run Status"
+ArticleTitle: "Get Aspose.Cells Cloud Status"
 linktitle: "Get Aspose Cells Cloud Status"
 type: docs
 url: /get-aspose-cells-cloud-status/
-keywords: "Aspose.Cells Cloud, health status, API, Excel, REST, service monitoring, SLA, status check"
+keywords: "Aspose.Cells, Cloud API, Health Check, Excel, REST"
 description: "Monitor the Health Status of Aspose.Cells Cloud Service in real-time."
 weight: 100
 ---
 
-
 Get the Health Status of the Aspose.Cells Cloud Service in real-time.
+
+**Prerequisites:** To call this API you must obtain a Bearer access token using your Aspose Cloud client credentials. Include the token in the `Authorization` header as `Bearer {access_token}`.
 
 ## **Get Aspose.Cells Cloud Status**
 
 ### **Web API**
+
+The endpoint uses the HTTP **GET** method and does not require a request body.
 
 ```
 GET https://api.aspose.cloud/v4.0/cells
@@ -38,6 +41,14 @@ GET https://api.aspose.cloud/v4.0/cells
 }
 ```
 
+**Response Schema**
+
+| Field     | Type                | Description                                   |
+|-----------|---------------------|-----------------------------------------------|
+| status    | string              | Service health (`OK`, `Degraded`, etc.).     |
+| service   | string              | Name of the service.                         |
+| timestamp | string (ISO‑8601)   | Time of the status check.                    |
+
 The API returns a standard JSON payload that includes the current health **status** of the Aspose.Cells Cloud service.  
 
 **HTTP Status Codes**
@@ -56,10 +67,21 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CellsStatusCo
 
 Using the SDK simplifies integration and reduces boilerplate code. The SDK handles the underlying details, allowing you to retrieve the Aspose.Cells Cloud run status with minimal effort. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+**C# Example**
 
-*Add SDK-specific examples here as needed.*
+```csharp
+var apiInstance = new CellsApi("clientId", "clientSecret");
+var response = apiInstance.GetCellsCloudStatus(format: "json");
+Console.WriteLine(response.Status);
+```
+
+**Python Example**
+
+```python
+import asposecellscloud
+api = asposecellscloud.CellsApi(client_id="YOUR_CLIENT_ID", client_secret="YOUR_CLIENT_SECRET")
+status = api.get_cells_cloud_status(format="json")
+print(status['status'])
+```
 
 For more information on overall cloud service health, see the [Health Check API](./health-check/) page.  
-
----

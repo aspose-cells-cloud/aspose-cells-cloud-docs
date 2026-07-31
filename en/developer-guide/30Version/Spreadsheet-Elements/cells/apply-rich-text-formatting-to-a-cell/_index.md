@@ -12,6 +12,10 @@ ArticleTitle: "Apply Rich Text Formatting to a Cell using Aspose.Cells Cloud API
 
 This REST API applies **rich text formatting** to a cell in an Excel file.
 
+**Prerequisites:** You must have a valid JWT token and the target Excel file must already exist in the specified storage folder before invoking this operation.
+
+**Background:** Rich‑text formatting allows you to apply multiple font styles within a single cell, enabling more expressive data presentation in Excel worksheets.
+
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/characters
 ```
@@ -44,12 +48,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Rich‑text formatting applied successfully; response contains formatting details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
 
 ## How to Use the PostCellCharacters API with SDKs
 

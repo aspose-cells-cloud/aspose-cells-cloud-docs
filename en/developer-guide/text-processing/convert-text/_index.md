@@ -5,7 +5,7 @@ ArticleTitle: "Excel Data Cleaner - Convert Text to Numbers & Remove Unwanted Ch
 linktitle: "Convert Text"
 type: docs
 url: /convert-text/
-keywords: "Aspose.Cells convert text, Excel text to numbers, remove special characters Excel, replace line breaks Excel, normalize accented characters, Excel data cleaning API"
+keywords: "Aspose.Cells, convert text, Excel, data cleaning, API"
 description: "Convert text‑formatted numbers to numeric values, replace unwanted characters and line breaks, and normalize accented characters in Excel files using Aspose.Cells Cloud API."
 weight: 100
 ---
@@ -38,6 +38,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ```
 
 ### The request parameters of **convertText** API are
+
+**Prerequisites:**  
+- You must have a valid Aspose Cloud account and an active JWT access token.  
+- The spreadsheet file should be uploaded to Aspose Cloud storage or provided as multipart/form‑data.  
+- Supported file formats include XLSX, XLS, ODS, CSV, and others listed in the API documentation.
 
 | Parameter Name   | Type   | Path/Query String/HTTPBody | Description                                                                                                                                                           |
 | ---------------- | ------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -73,6 +78,17 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - **404 Not Found**: The spreadsheet file is not accessible.
 - **500 Server Error**: The spreadsheet encountered an anomaly while obtaining calculation data.
 
+**Response Status Code Summary**
+
+| Code | Meaning                              |
+|------|--------------------------------------|
+| 200  | Success – file returned in the response |
+| 202  | Accepted – processing is asynchronous |
+| 400  | Bad Request – invalid parameters |
+| 401  | Unauthorized – authentication failure |
+| 404  | Not Found – file not found |
+| 500  | Internal Server Error – processing error |
+
 ## Where should we use the Convert Text API?
 
 - **Number Format Correction**: Convert numbers stored as text (e.g., “123.45”) into a numeric format suitable for calculations.
@@ -91,12 +107,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/ConvertText) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/ConvertText){:rel="noopener noreferrer"} defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
 Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement Convert Text for cells with minimal code.  
-Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud){:rel="noopener noreferrer"} for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to make calls to Aspose.Cells web services using various SDKs:
 
@@ -126,3 +142,15 @@ The following code examples illustrate how to make calls to Aspose.Cells web ser
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertText.go" >}}
 {{</tab>}}
 {{< /tabs >}}
+
+**cURL Example**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/content/convert/text?convertTextType=NumbersAsText&sourceCharacters=%E2%80%9C%C3%A9%E2%80%9D&targetCharacters=e" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/your/file.xlsx"
+```
+
+## Version History
+
+*API version: v4.0 – Last updated: 2026‑07‑30*

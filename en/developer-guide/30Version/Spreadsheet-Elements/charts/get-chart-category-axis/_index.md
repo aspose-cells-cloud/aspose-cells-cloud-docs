@@ -3,13 +3,21 @@ title: "Get Chart Category Axis"
 type: docs
 url: /charts/category-axis/get/
 weight: 60
-keywords: "Aspose.Cells, Chart Category Axis, REST API, Excel, Cloud API"
+keywords: "Aspose.Cells, Chart Category Axis, Excel, REST API, Cloud Storage, OAuth2, API Documentation"
 description: "Retrieves the category axis of a chart in an Excel worksheet using the Aspose.Cells Cloud REST API."
 ArticleTitle: "Get Chart Category Axis – Aspose.Cells Cloud API Documentation"
 ---
 
 This REST API retrieves the **Category Axis** of a chart.  
 To call this endpoint you must provide a valid OAuth 2.0 access token, and the workbook must be stored in Aspose Cloud storage.
+
+**Prerequisites**  
+Before using this endpoint, ensure that:  
+
+- An OAuth 2.0 token has been obtained and is valid for the Aspose Cloud services.  
+- The workbook file is uploaded to Aspose Cloud storage (default or a specified folder).  
+- You are using API version **v3.0** as shown in the request URL.  
+- The calling application has permission to read the workbook and access its worksheets.
 
 ## REST API
 
@@ -60,19 +68,18 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{ch
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Successfully retrieved the chart’s category axis. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
 
 ## How to Use the GetChartCategoryAxis API with SDKs
 
 ### GetChartCategoryAxis API Specification
 
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetChartCategoryAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/Charts/GetChartCategoryAxis" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -123,7 +130,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
@@ -188,4 +195,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-

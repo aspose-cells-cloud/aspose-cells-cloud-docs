@@ -7,7 +7,7 @@ type: docs
 url: /docker/downloads/  
 description: "Get the latest Aspose.Cells Cloud Docker images for Windows Server 2016/2019 and Linux. Follow step‑by‑step instructions, prerequisites, and security tips to run the container locally."  
 weight: 30  
-keywords: "Aspose.Cells, Cloud, Docker, image, download, Windows Server, Linux"  
+keywords: "Aspose.Cells, Cloud, Docker, container, image, download, Windows Server, Linux, REST API"  
 ---  
 
 ## Overview  
@@ -15,6 +15,13 @@ keywords: "Aspose.Cells, Cloud, Docker, image, download, Windows Server, Linux"
 `aspose/cells-cloud` – the official Docker image that hosts the **Aspose.Cells Cloud** REST API. The image lets you run the full spreadsheet‑processing engine inside a container, enabling offline or private‑cloud deployments without relying on Aspose’s public cloud services.  
 
 **Last updated:** 2026‑06‑30  
+
+**Quick‑start checklist**
+
+- Verify Docker Engine version 20.10 or later.  
+- Pull the appropriate image for your OS (see sections below).  
+- Set `ASPOSE_CLIENT_ID` and `ASPOSE_CLIENT_SECRET` environment variables.  
+- Run the container with port 8080 mapped to the internal port 80.  
 
 ---  
 
@@ -102,7 +109,8 @@ docker run -d \
 
 * **Structured Data (JSON‑LD) Example**  
 
-  ```json
+  ```html
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -115,6 +123,7 @@ docker run -d \
       "priceCurrency": "USD"
     }
   }
+  </script>
   ```
 
 ---  

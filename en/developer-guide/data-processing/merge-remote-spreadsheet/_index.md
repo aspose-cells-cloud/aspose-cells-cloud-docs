@@ -5,7 +5,7 @@ ArticleTitle: "Merge Excel Files in Cloud – Combine Spreadsheets Online with A
 linktitle: "Merge Remote Spreadsheet"
 type: docs
 url: /merge-remote-spreadsheet/
-keywords: "Aspose.Cells Cloud, merge Excel, remote spreadsheet, cloud API, combine workbooks"
+keywords: "Aspose.Cells, merge Excel, cloud API, spreadsheet combine"
 description: "Merge Excel workbooks stored in cloud storage with Aspose.Cells Cloud API. Specify output format, target folder, and merge mode in a single HTTPS call."
 weight: 100
 ---
@@ -14,6 +14,11 @@ Quickly merge Excel files stored in the cloud with other spreadsheets using Aspo
 
 ## Merge Remote Spreadsheet API
 
+Before calling this operation, ensure you have:
+
+* A valid **JWT access token** (see the authentication guide).  
+* The source workbook and all files to be merged uploaded to your cloud storage.  
+* Appropriate permissions to read from the source folder and write to the target folder.
 
 ### Web API
 
@@ -28,7 +33,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ```bash
 -H "Authorization: Bearer {access_token}"
 ```
-
 
 ### Request Parameters:
 
@@ -53,6 +57,8 @@ PUT https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/merge/spreadsheet?merged
 ```
 
 ### Response
+
+**Status:** `200 OK`
 
 ```json
 [

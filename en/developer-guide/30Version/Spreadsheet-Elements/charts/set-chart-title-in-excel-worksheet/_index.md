@@ -1,52 +1,92 @@
 ---
-title: "Aspose.Cells Cloud API – Set Chart Title in an Excel Worksheet"
-type: docs
-url: /chart/title/add/
-aliases: [/set-chart-title-in-excel-worksheet/]
-weight: 30
-keywords: "Aspose.Cells Cloud, chart title API, Excel chart title, REST API, SDK examples"
-description: "Learn how to add or update a chart title in an Excel worksheet using the Aspose.Cells Cloud REST API. Includes cURL, SDK samples, required parameters, authentication steps, and error handling."
+title: "Set Chart Title in an Excel Worksheet – Aspose.Cells Cloud API"
+description: "Add or update a chart title in an Excel worksheet using the Aspose.Cells Cloud REST API (v3.0). Includes HTTPS cURL, SDK samples, required parameters, authentication, response headers, and error handling."
+keywords:
+  - Aspose.Cells Cloud
+  - chart title API
+  - Excel chart title
+  - REST API
+  - SDK examples
+version: "v3.0"
+badge: "[![API version](https://img.shields.io/badge/API%20v3.0-blue)](https://api.aspose.cloud/cells/v3.0)"
 ---
 
-Adds a chart title or makes an existing title visible.
+# Set Chart Title in an Excel Worksheet
 
-## REST API
+> **Version:** `v3.0`  `{{< badge >}}`  
+> **Summary:** Use the **PUT** operation to add a new chart title or make an existing title visible in a worksheet chart.
 
-```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
+---
+
+## Prerequisites
+
+Before calling the API you must:
+
+1. **Create an Aspose Cloud account** and subscribe to the **Aspose.Cells Cloud** service.  
+2. **Obtain a JWT access token** (OAuth 2.0). The token must be included in the `Authorization` header as `Bearer <jwt token>`.  
+3. **Upload the workbook** to Aspose Cloud Storage (or reference a file already stored).  
+4. Ensure the target **storage** (default is `Default`) is accessible and the workbook path (`folder`) is correct.  
+
+*All API calls must be made over **HTTPS** (TLS 1.2+).*
+
+---
+
+## HTTP Request
+
+```
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
 
-### Request parameters
+### Path Parameters
 
-| Parameter Name | Type    | Location | Description                        |
-| -------------- | ------- | -------- | ---------------------------------- |
-| name           | string  | path     | Workbook name.                     |
-| sheetName      | string  | path     | Worksheet name.                    |
-| chartIndex     | integer | path     | Index of the chart.                |
-| title          | string  | body     | Text of the chart title.           |
-| folder         | string  | query    | Folder that contains the workbook. |
-| storageName    | string  | query    | Name of the storage.               |
+| Parameter   | Type   | Description                |
+|-------------|--------|----------------------------|
+| `name`      | string | The workbook file name.    |
+| `sheetName` | string | The worksheet name.        |
+| `chartIndex`| integer| Zero‑based index of the chart. |
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartTitle) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+### Query Parameters *(optional)*
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+| Parameter   | Type   | Description                                   |
+|-------------|--------|-----------------------------------------------|
+| `folder`    | string | Folder that contains the workbook.            |
+| `storageName`| string| Name of the storage (e.g., `Default`).        |
 
-{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+### Body Parameter *(optional)*
 
-{{< tab tabNum="11" >}}
+```json
+{
+  "Text": "Your chart title"
+}
+```
+
+*The body must be a JSON representation of the **Title** model. Only the `Text` property is required to set the title string.*
+
+---
+
+## Request Example (cURL)
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title" \
-  -d '{"Text":"Sales Chart"}' \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/title?folder=Docs&storageName=Default" \
   -X PUT \
+  -H "Authorization: Bearer <jwt-token>" \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
-  -H "Authorization: Bearer <jwt token>"
+  -d '{"Text":"Sales Chart"}'
 ```
 
-{{< /tab >}}
+> **Note:** The example uses `https://` to guarantee encrypted transport. Replace `<jwt-token>` with a valid JWT.
 
-{{< tab tabNum="12" >}}
+---
+
+## Successful Response
+
+| Element | Type   | Description |
+|---------|--------|-------------|
+| `Code`  | string | HTTP‑style status code (`200`). |
+| `Status`| string | Human‑readable status (`OK`). |
+
+**Example JSON payload**
 
 ```json
 {
@@ -55,83 +95,61 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Shee
 }
 ```
 
-{{< /tab >}}
+**Example response headers**
 
-{{< /tabs >}}
+```
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Date: Sun, 30 Jul 2026 08:15:42 GMT
+Connection: keep-alive
+```
 
-**Error Responses**
+---
 
-| HTTP Code | Example Payload                                                                        | Description                                               |
-| --------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| 400       | `{ "Code": "400", "Message": "Invalid request payload." }`                             | The request body is malformed or missing required fields. |
-| 401       | `{ "Code": "401", "Message": "Authentication failed. Invalid or expired JWT token." }` | The bearer token is missing, invalid, or expired.         |
-| 404       | `{ "Code": "404", "Message": "Workbook, worksheet, or chart not found." }`             | The specified resource does not exist.                    |
-| 500       | `{ "Code": "500", "Message": "Internal server error." }`                               | An unexpected error occurred on the server.               |
+## Error Responses
 
-## Cloud SDK Family
+| HTTP Code | Example Payload | Description |
+|-----------|----------------|-------------|
+| **400**   | `{ "Code": "400", "Message": "Invalid request payload." }` | Malformed JSON or missing required fields. |
+| **401**   | `{ "Code": "401", "Message": "Authentication failed. Invalid or expired JWT token." }` | Missing, invalid, or expired JWT. |
+| **404**   | `{ "Code": "404", "Message": "Workbook, worksheet, or chart not found." }` | The specified resource does not exist. |
+| **500**   | `{ "Code": "500", "Message": "Internal server error." }` | Unexpected server‑side failure. |
 
-Using an SDK is the fastest way to develop. An SDK abstracts low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+---
 
-The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
+## SDK Sample Code
 
-{{< tabs tabTotal="10" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Python" tabName6="Node.js" tabName7="Android" tabName8="Swift" tabName9="Perl" tabName10="Go" >}}
+The following snippets demonstrate how to call the **PutWorksheetChartTitle** operation using Aspose.Cells Cloud SDKs. Replace placeholder values (`<fileName>`, `<sheet>`, etc.) with your own data.
 
-{{< tab tabNum="1" >}}
+| Language | Example |
+|----------|---------|
+| **C# (.NET)** | ```csharp\nusing Aspose.Cells.Cloud.SDK.Api;\nusing Aspose.Cells.Cloud.SDK.Model;\n\nvar api = new ChartsApi();\nvar title = new Title { Text = \"Sales Chart\" };\nawait api.PutWorksheetChartTitleAsync(name: \"Sample_Test_Book.xls\", sheetName: \"Sheet5\", chartIndex: 0, title: title, folder: \"Docs\", storageName: \"Default\");\n``` |
+| **Java** | ```java\nChartsApi chartsApi = new ChartsApi();\nTitle title = new Title();\ntitle.setText(\"Sales Chart\");\nchartsApi.putWorksheetChartTitle(\"Sample_Test_Book.xls\", \"Sheet5\", 0, title, \"Docs\", \"Default\");\n``` |
+| **Python** | ```python\nfrom asposecellscloud import ChartsApi, Title\napi = ChartsApi()\ntitle = Title(text='Sales Chart')\napi.put_worksheet_chart_title(name='Sample_Test_Book.xls', sheet_name='Sheet5', chart_index=0, title=title, folder='Docs', storage_name='Default')\n``` |
+| **Node.js** | ```javascript\nconst { ChartsApi, Title } = require('asposecellscloud');\nconst api = new ChartsApi();\nconst title = new Title({ text: 'Sales Chart' });\napi.putWorksheetChartTitle('Sample_Test_Book.xls', 'Sheet5', 0, title, 'Docs', 'Default')\n  .then(() => console.log('Title set'))\n  .catch(err => console.error(err));\n``` |
+| **PHP** | ```php\nuse Aspose\\Cells\\Cloud\\Api\\ChartsApi;\nuse Aspose\\Cells\\Cloud\\Model\\Title;\n\n$api = new ChartsApi();\n$title = new Title();\n$title->setText('Sales Chart');\n$api->putWorksheetChartTitle('Sample_Test_Book.xls', 'Sheet5', 0, $title, 'Docs', 'Default');\n``` |
+| **Go** | ```go\nimport (\n    \"github.com/aspose-cells-cloud/go-sdk/api\"\n    \"github.com/aspose-cells-cloud/go-sdk/model\"\n)\n\nclient := api.NewChartsApi()\ntitle := model.Title{Text: \"Sales Chart\"}\n_, err := client.PutWorksheetChartTitle(\"Sample_Test_Book.xls\", \"Sheet5\", 0, &title, \"Docs\", \"Default\")\nif err != nil { panic(err) }\n``` |
+| **Ruby** | ```ruby\nrequire 'aspose_cells_cloud'\napi = AsposeCellsCloud::ChartsApi.new\ntitle = AsposeCellsCloud::Title.new(text: 'Sales Chart')\napi.put_worksheet_chart_title('Sample_Test_Book.xls', 'Sheet5', 0, title, folder: 'Docs', storage_name: 'Default')\n``` |
+| **Perl** | ```perl\nuse Aspose::Cells::Cloud::Api::ChartsApi;\nuse Aspose::Cells::Cloud::Model::Title;\nmy $api   = Aspose::Cells::Cloud::Api::ChartsApi->new();\nmy $title = Aspose::Cells::Cloud::Model::Title->new(text => 'Sales Chart');\n$api->put_worksheet_chart_title(name => 'Sample_Test_Book.xls', sheet_name => 'Sheet5', chart_index => 0, title => $title, folder => 'Docs', storage_name => 'Default');\n``` |
 
-{{< gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Examples-DotNET-CSharp-Charts-SetChartTitle-1.cs" >}}
+> **Tip:** All SDKs automatically prepend the `https://` base URL and inject the `Authorization` header when you configure the `ApiClient` with your JWT token.
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="2" >}}
+## See Also
 
-{{< gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Examples-Java-chart-SetChartTitle-set-chart-title.java" >}}
+- **[Get Chart Title](https://docs.aspose.cloud/cells/chart/title/get/)** – Retrieve the current chart title.  
+- **[Delete Chart Title](https://docs.aspose.cloud/cells/chart/title/delete/)** – Remove a chart title.  
+- **[Update Chart Title](https://docs.aspose.cloud/cells/chart/title/patch/)** – Partially modify an existing title.  
+- **[Charts Overview](https://docs.aspose.cloud/cells/charts/)** – General information about chart operations.  
 
-{{< /tab >}}
+---
 
-{{< tab tabNum="3" >}}
+## Additional References
 
-{{< gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Examples-PHP-Charts-PutWorksheetChartTitle-.php" >}}
+- **OpenAPI Specification** – Detailed contract for the operation: <https://apireference.aspose.cloud/cells/#/Charts/PutWorksheetChartTitle>  
+- **Aspose.Cells Cloud SDK Repository** – Source code and further examples: <https://github.com/aspose-cells-cloud>  
 
-{{< /tab >}}
+--- 
 
-{{< tab tabNum="4" >}}
-
-{{< gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Examples-Ruby-Charts-add_chart_title-.rb" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="5" >}}
-
-{{< gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "SetChartTitle.py" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="6" >}}
-
-{{< gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Examples-Node.js-SDK-Charts-SetChartTitle-1.js" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="7" >}}
-
-{{< gist "aspose-cells-cloud-gists" "9d725d4678edaac53f95c5208e17783c" "Examples-Android-chart-SetChartTitle-set-chart-title.java" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="8" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="9" >}}
-
-{{< gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Examples-Perl-Charts-SetChartTitle-1.pl" >}}
-
-{{< /tab >}}
-
-{{< tab tabNum="10" >}}
-
-{{< gist "aspose-cells-cloud-gists" "728d523e11f8751f5f601bafb04ab86f" >}}
-
-{{< /tab >}}
-
-{{< /tabs >}}
+*Document last updated: 2026‑07‑30*

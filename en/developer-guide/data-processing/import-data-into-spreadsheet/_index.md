@@ -14,9 +14,9 @@ weight: 100
 
 ### Multi-Format Data Support
 
-- **[CSV](https://docs.fileformat.com/spreadsheet/csv/) Data Import**: Supports various delimiters and automatically detects encoding.
-- **[JSON](https://docs.fileformat.com/web/json/) Data Handling**: Flattens complex JSON structures into Excel tables.
-- **[XML](https://docs.fileformat.com/web/xml/) File Conversion**: Maps node data to Excel row and column structure.
+- **<a href="https://docs.fileformat.com/spreadsheet/csv/" rel="noopener noreferrer">CSV</a> Data Import**: Supports various delimiters and automatically detects encoding.
+- **<a href="https://docs.fileformat.com/web/json/" rel="noopener noreferrer">JSON</a> Data Handling**: Flattens complex JSON structures into Excel tables.
+- **<a href="https://docs.fileformat.com/web/xml/" rel="noopener noreferrer">XML</a> File Conversion**: Maps node data to Excel row and column structure.
 
 ## **Import Data into Spreadsheet API Description**
 
@@ -24,6 +24,15 @@ weight: 100
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/import/data
+```
+
+**cURL example**
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/import/data?worksheet=Sheet1&startCell=A1&insert=true" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "datafile=@/path/to/data.csv" \
+  -F "spreadsheet=@/path/to/workbook.xlsx"
 ```
 
 ### **Security and Authentication**
@@ -69,10 +78,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 | Code | Message               | When It Occurs                                      |
 | ---- | --------------------- | --------------------------------------------------- |
-| 400  | Bad Request           | Invalid API URI or malformed request parameters.    |
-| 401  | Unauthorized          | Missing/invalid access token or client credentials. |
-| 404  | Not Found             | The specified spreadsheet cannot be accessed.       |
-| 500  | Internal Server Error | An unexpected server‑side problem while processing. |
+| 200  | OK                    | Request succeeded and file is returned.            |
+| 202  | Accepted              | Request accepted for asynchronous processing.      |
+| 400  | Bad Request           | Invalid API URI or malformed request parameters.   |
+| 401  | Unauthorized          | Missing/invalid access token or client credentials.|
+| 404  | Not Found             | The specified spreadsheet cannot be accessed.      |
+| 415  | Unsupported Media Type| Uploaded file type is not supported.               |
+| 500  | Internal Server Error | An unexpected server‑side problem while processing.|
 
 ## Why You Should Use This API
 
@@ -90,11 +102,11 @@ For related operations such as exporting data or converting workbook formats, se
 
 ### Import Data into Spreadsheet API Specification
 
-The [Import Data into Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet) provides a publicly accessible programming interface, allowing REST interactions directly from your web browser.
+The <a href="https://reference.aspose.cloud/cells/#/DataProcessingController/ImportDataIntoSpreadsheet" rel="noopener noreferrer">Import Data into Spreadsheet API Specification</a> provides a publicly accessible programming interface, allowing REST interactions directly from your web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to import data into a spreadsheet worksheet with short code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to import data into a spreadsheet worksheet with short code. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to invoke Aspose.Cells web services using various SDKs:
 
@@ -102,52 +114,152 @@ The following code examples illustrate how to invoke Aspose.Cells web services u
 {{<tab tabNum="1" >}}
 
 ```csharp
+using Aspose.Cells.Cloud.SDK.Api;
+using Aspose.Cells.Cloud.SDK.Model;
 
+var api = new CellsApi("clientId", "clientSecret");
+var response = api.ImportDataIntoSpreadsheet(
+    dataFile: "data.csv",
+    spreadsheet: "book.xlsx",
+    worksheet: "Sheet1",
+    startCell: "A1",
+    insert: true);
+Console.WriteLine($"Imported file: {response.Name}");
 ```
 
 {{</tab>}}
 {{<tab tabNum="2" >}}
 
 ```java
+import com.aspose.cells.cloud.api.CellsApi;
+import com.aspose.cells.cloud.model.ResponseFile;
 
+CellsApi api = new CellsApi("clientId", "clientSecret");
+ResponseFile response = api.importDataIntoSpreadsheet(
+    "data.csv",
+    "book.xlsx",
+    "Sheet1",
+    "A1",
+    true);
+System.out.println("Imported file: " + response.getName());
 ```
 
 {{</tab>}}
 {{<tab tabNum="3" >}}
 
 ```php
+<?php
+require_once 'vendor/autoload.php';
+
+use Aspose\Cells\Cloud\Api\CellsApi;
+
+$api = new CellsApi('clientId', 'clientSecret');
+$response = $api->importDataIntoSpreadsheet(
+    'data.csv',
+    'book.xlsx',
+    'Sheet1',
+    'A1',
+    true
+);
+echo "Imported file: " . $response->getName();
+?>
 ```
 
 {{</tab>}}
 {{<tab tabNum="4" >}}
 
 ```ruby
+require 'aspose_cells_cloud'
+
+api = AsposeCellsCloud::CellsApi.new('clientId', 'clientSecret')
+response = api.import_data_into_spreadsheet(
+  'data.csv',
+  'book.xlsx',
+  'Sheet1',
+  'A1',
+  true
+)
+puts "Imported file: #{response.name}"
 ```
 
 {{</tab>}}
 {{<tab tabNum="5" >}}
 
 ```javascript
+const { CellsApi } = require('asposecellscloud');
+
+const api = new CellsApi('clientId', 'clientSecret');
+api.importDataIntoSpreadsheet(
+    'data.csv',
+    'book.xlsx',
+    'Sheet1',
+    'A1',
+    true
+).then(response => {
+    console.log(`Imported file: ${response.name}`);
+});
 ```
 
 {{</tab>}}
 {{<tab tabNum="6" >}}
 
 ```python
+from asposecellscloud import CellsApi
+
+api = CellsApi('clientId', 'clientSecret')
+response = api.import_data_into_spreadsheet(
+    data_file='data.csv',
+    spreadsheet='book.xlsx',
+    worksheet='Sheet1',
+    start_cell='A1',
+    insert=True
+)
+print(f"Imported file: {response.name}")
 ```
 
 {{</tab>}}
 {{<tab tabNum="7" >}}
 
 ```perl
+use Aspose::Cells::Cloud::Api::CellsApi;
+
+my $api = Aspose::Cells::Cloud::Api::CellsApi->new('clientId', 'clientSecret');
+my $response = $api->importDataIntoSpreadsheet(
+    'data.csv',
+    'book.xlsx',
+    'Sheet1',
+    'A1',
+    1
+);
+print "Imported file: " . $response->{Name} . "\n";
 ```
 
 {{</tab>}}
 {{<tab tabNum="8" >}}
 
 ```go
+package main
+
+import (
+    "fmt"
+    "github.com/asposecellscloud/aspose-cells-cloud-go/v4"
+)
+
+func main() {
+    api := asposecellscloud.NewCellsApi("clientId", "clientSecret")
+    response, err := api.ImportDataIntoSpreadsheet(
+        "data.csv",
+        "book.xlsx",
+        "Sheet1",
+        "A1",
+        true,
+    )
+    if err != nil {
+        panic(err)
+    }
+    fmt.Printf("Imported file: %s\n", response.Name)
+}
 ```
 
 {{</tab>}}
 {{< /tabs >}}
-

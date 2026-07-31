@@ -30,6 +30,21 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup
 | folder         | string | query    | Document folder.        |
 | storageName    | string | query    | Storage name.           |
 
+**Example JSON payload for the `pageSetup` object**
+
+```json
+{
+  "pageSetup": {
+    "orientation": "Portrait",
+    "paperSize": "A4",
+    "fitToPagesTall": 1,
+    "fitToPagesWide": 1,
+    "centerHorizontally": true,
+    "centerVertically": false
+  }
+}
+```
+
 The <a href="https://reference.aspose.cloud/cells/#/PageSetup/PostPageSetup" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
@@ -40,16 +55,27 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 
 ```bash
 curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/worksheets/Tasks/pagesetup" \
--X PUT \
+-X POST \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
 -H "Authorization: Bearer <jwt token>" \
--d {pageSetup}
+-d '{
+  "pageSetup": {
+    "orientation": "Portrait",
+    "paperSize": "A4",
+    "fitToPagesTall": 1,
+    "fitToPagesWide": 1,
+    "centerHorizontally": true,
+    "centerVertically": false
+  }
+}'
 ```
 
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
+The API returns a JSON object indicating the result of the operation:
 
 ```json
 {

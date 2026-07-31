@@ -6,7 +6,7 @@ linktitle: "Convert Table to Image"
 type: docs
 url: /convert-table-to-image/
 keywords: "Aspose.Cells, Cloud API, Convert Table to Image, Excel, PNG, JPEG, TIFF, BMP, SVG"
-description: "Convert a local Excel spreadsheet table to an image file quickly using Aspose.Cells Cloud Web API. Supports PNG, JPEG, TIFF, BMP, SVG and more."
+description: "Convert a local Excel spreadsheet table to an image file quickly using the Aspose.Cells Cloud API. Supports PNG, JPEG, TIFF, BMP, SVG and other formats."
 weight: 100
 ---
 
@@ -22,6 +22,12 @@ Export table data from a local Excel file to an [Image](https://docs.fileformat.
 
 
 ## **Convert Table to Image API**
+
+Before using this endpoint, ensure you have the following prerequisites:
+
+- A valid JWT access token obtained through Aspose.Cells Cloud authentication.  
+- An accessible storage account if you intend to use the `outPath` or `outStorageName` parameters.  
+- The source workbook (local Excel file) must be readable and, if protected, the correct password must be supplied.
 
 ### Web API
 
@@ -74,10 +80,10 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### Response Status Codes
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200  | OK      | Image generated successfully. |
-| 202  | Accepted| Async processing started (if applicable). |
+| Code | Meaning   | Description               |
+|------|-----------|---------------------------|
+| 200  | OK        | Image generated successfully. |
+| 202  | Accepted  | Async processing started (if applicable). |
 | 400  | Bad Request | Invalid parameters. |
 | 401  | Unauthorized | Invalid or missing token. |
 | 404  | Not Found | Spreadsheet or table not found. |

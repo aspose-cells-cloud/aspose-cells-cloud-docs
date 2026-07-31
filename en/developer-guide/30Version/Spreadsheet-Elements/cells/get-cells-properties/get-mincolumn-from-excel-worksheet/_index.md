@@ -5,6 +5,7 @@ url: /get-mincolumn-from-excel-worksheet/
 weight: 100
 keywords: Excel, Aspose.Cells Cloud, REST API, Get MinColumn, Worksheet, SDK, Cloud API
 description: Retrieve the minimum column index containing data in a worksheet of an Excel file via the Aspose.Cells Cloud REST API.
+ArticleTitle: "Get MinColumn from Excel Worksheet - Aspose.Cells Cloud API"
 ---
 
 This REST API returns the minimum column index that contains data in an Excel worksheet when the `cellOrMethodName` parameter is set to `mincolumn`.
@@ -16,7 +17,8 @@ This REST API returns the minimum column index that contains data in an Excel wo
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" \
+curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/cells/mincolumn" \
+     -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>" \
      -H "Content-Type: application/json" \
      -H "Accept: application/json"
 ```
@@ -26,16 +28,43 @@ curl -X GET "http://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1/
 {{< tab tabNum="12" >}}
 
 ```json
-{}
+{
+  "MinColumn": 2
+}
 ```
 
 {{< /tab >}}
 
 {{< /tabs >}}
 
+**Request details**
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `cellOrMethodName` | string | Yes | Fixed value `mincolumn` to indicate the operation. |
+| `folder` | string | No | Path to the folder containing the workbook (if not the root). |
+| `storageName` | string | No | Name of the Aspose Cloud storage to use. |
+
+**Response details**
+
+The API returns a JSON object with a single property:
+
+```json
+{
+  "MinColumn": integer   // Zero‑based index of the left‑most column that contains data.
+}
+```
+
+Typical HTTP status codes:
+
+- **200 OK** – Successful request, returns the `MinColumn` value.  
+- **401 Unauthorized** – Missing or invalid authentication token.  
+- **404 Not Found** – The specified workbook, worksheet, or cell range does not exist.  
+- **500 Internal Server Error** – Unexpected server error.
+
 - **Use Aspose.Cells Cloud SDKs**
 
-Using an SDK is the most efficient way to develop. An SDK abstracts low‑level details, allowing you to focus on your project logic. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the most efficient way to develop. An SDK abstracts low‑level details, allowing you to focus on your project logic. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 

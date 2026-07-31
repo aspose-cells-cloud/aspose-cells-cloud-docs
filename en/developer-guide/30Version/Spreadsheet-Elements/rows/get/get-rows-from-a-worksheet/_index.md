@@ -8,11 +8,15 @@ aliases: [/get-row-from-a-worksheet/]
 keywords: "Aspose.Cells Cloud, Get Rows API, Excel worksheet rows, REST API, cURL example, SDK examples, .NET, Java, Python"
 description: "Learn how to retrieve rows information from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, authentication, cURL, and SDK code samples for C#, Java, Python, and more."
 weight: 10
+ArticleTitle: "Get rows information from an Excel worksheet – Aspose.Cells Cloud API Documentation"
 ---
 
 This REST API retrieves rows information from an Excel worksheet.
 
 ## REST API
+
+**Prerequisites**  
+To call this endpoint you must provide a valid JWT token in the `Authorization` header. The token should be obtained using the Aspose.Cloud authentication flow and must include the required scopes for Cells operations. The API follows the v3.0 versioning scheme and is subject to standard rate‑limit policies.
 
 ```bash
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
@@ -95,6 +99,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 {{< /tabs >}}
 
+**Response codes**
+
+| Code | Meaning                     | Description                                                                 |
+|------|-----------------------------|-----------------------------------------------------------------------------|
+| 200  | OK                          | The request succeeded and the rows information is returned.                |
+| 400  | Bad Request                 | The request is malformed (e.g., missing required parameters).              |
+| 401  | Unauthorized                | Invalid or missing JWT token.                                               |
+| 404  | Not Found                   | The specified workbook or worksheet does not exist.                         |
+| 500  | Internal Server Error       | An unexpected error occurred on the server.                                 |
+
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
@@ -163,9 +177,7 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cel
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Below are language‑specific code samples for retrieving worksheet rows.
 
 {{< tabs tabTotal="8" tabID="4" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 

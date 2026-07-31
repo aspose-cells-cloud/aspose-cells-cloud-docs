@@ -13,6 +13,7 @@ ArticleTitle: "Add a Filter to an Excel Worksheet using Aspose.Cells Cloud"
 
 ## REST API
 
+**Prerequisites:** Before calling this API you must obtain a valid JWT token, ensure the target workbook is uploaded to the specified storage, and have the necessary permissions to access the file. A recent version of cURL (7.68 or later) is recommended for command‑line examples.
 
 This REST API adds a filter for a specific column on an Excel worksheet.
 
@@ -23,7 +24,6 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
 
 ### Request parameters
 
@@ -52,12 +52,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
 
 ## How to Use the PutWorksheetFilter API with SDKs
 
@@ -89,7 +88,6 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
   "Status": "OK"
 }
 ```
-
 
 {{< /tab >}}
 
@@ -152,4 +150,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-

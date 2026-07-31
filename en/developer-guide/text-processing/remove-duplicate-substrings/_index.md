@@ -5,8 +5,8 @@ ArticleTitle: "Excel Duplicate Substring Remover – Clean Repeated Text in Cell
 linktitle: "Remove Duplicate Substrings"
 type: docs
 url: /remove-duplicate-substrings/
-keywords: "Aspose.Cells, duplicate substrings, Excel API, text cleaning, cloud"
-description: "Remove duplicate substrings from Excel cells via Aspose.Cells Cloud API while preserving formatting and validation."
+keywords: "Aspose.Cells, duplicate substrings, Excel duplicate substring remover, text cleaning, cloud API"
+description: "Remove duplicate substrings from Excel cells using Aspose.Cells Cloud API while preserving formatting, data validation, and workbook structure."
 weight: 100
 ---
 
@@ -16,6 +16,7 @@ Remove duplicate substrings from Excel cells with intelligent detection. Keep or
 
 The Repeat Substring Cleaner API removes duplicate substrings within individual cells of an Excel range while preserving cell formatting, data validation, and other workbook structures. It processes each cell independently, keeping only the first occurrence of each duplicate substring.
 
+**Prerequisites** – To use this API you must have an active Aspose Cloud account, a valid JWT access token, and the workbook you wish to process uploaded to Aspose Cloud storage or included in the request payload.
 
 ### **Data Source Options**
 
@@ -86,6 +87,8 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substr
 ]
 ```
 
+The response returns a file stream containing the processed workbook. The stream can be saved directly to disk or streamed to a client application.
+
 ### **Status Code**
 
 | Code | Meaning                                 | Description                                                                                     |
@@ -96,6 +99,8 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substr
 | 401  | Unauthorized                            | Authentication failed or token is missing/invalid.                                              |
 | 404  | Not Found                               | The specified workbook or resource could not be found.                                          |
 | 500  | Internal Server Error                   | An unexpected error occurred on the server side.                                                |
+
+**Rate‑Limit Note** – The API is subject to standard Aspose Cloud rate limits. Exceeding the allowed number of calls within a given time window will result in a `429 Too Many Requests` response. Refer to your account dashboard for specific limits.
 
 ## Where should we use the Remove Duplicate Substrings API?
 

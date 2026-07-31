@@ -19,6 +19,8 @@ Aspose.Cells Cloud provides a comprehensive set of helper functions for working 
 
 **Prerequisites:** To use these APIs you must have a valid Aspose Cloud account, obtain a JWT access token, and have a storage location configured (either Aspose Cloud Storage or a connected third‑party storage).
 
+**Last updated:** 2024‑12‑01
+
 ## **How to Upload a File**
 
 ### Upload File API Information
@@ -27,13 +29,23 @@ Aspose.Cells Cloud provides a comprehensive set of helper functions for working 
 PUT https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name | Type   | Location | Description |
 |----------------|--------|----------|-------------|
 | path           | string | path     | Path to upload the file, including the filename and extension (e.g., `/folder1/Report.xlsx`). |
 | file           | file   | formData | The file to upload. |
 | storageName    | string | query    | Name of the storage to use. |
+
+**HTTP Responses**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | File uploaded successfully.              |
+| 400  | Bad request – missing or invalid parameters. |
+| 401  | Unauthorized – invalid or missing JWT token. |
+| 404  | Storage not found.                       |
+| 500  | Internal server error.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/File/UploadFile) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -77,13 +89,23 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MyFolder/Report.xlsx" 
 GET https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name | Type   | Location | Description |
 |----------------|--------|----------|-------------|
 | path           | string | path     | File path (e.g., `/folder/Report.xlsx`). |
 | storageName    | string | query    | Name of the storage to use. |
 | versionId      | string | query    | Identifier of the file version to download (optional). |
+
+**HTTP Responses**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | File downloaded; binary stream returned. |
+| 400  | Bad request – invalid parameters.        |
+| 401  | Unauthorized – missing or invalid JWT.   |
+| 404  | File not found.                          |
+| 500  | Internal server error.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/File/DownloadFile) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -121,13 +143,23 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MyFolder/Report.xlsx" 
 DELETE https://api.aspose.cloud/v3.0/cells/storage/file/{path}
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name | Type   | Location | Description |
 |----------------|--------|----------|-------------|
 | path           | string | path     | File path (e.g., `/folder/Report.xlsx`). |
 | storageName    | string | query    | Name of the storage to use. |
 | versionId      | string | query    | Identifier of the file version to delete (optional). |
+
+**HTTP Responses**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | File deleted successfully.               |
+| 400  | Bad request – missing or invalid parameters. |
+| 401  | Unauthorized – invalid JWT token.        |
+| 404  | File not found.                          |
+| 500  | Internal server error.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/File/DeleteFile) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -166,7 +198,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/MyFolder/OldReport.xls
 PUT https://api.aspose.cloud/v3.0/cells/storage/file/copy/{srcPath}
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name   | Type   | Location | Description |
 |------------------|--------|----------|-------------|
@@ -175,6 +207,16 @@ The request parameters are:
 | srcStorageName   | string | query    | Source storage name (optional). |
 | destStorageName  | string | query    | Destination storage name (optional). |
 | versionId        | string | query    | File version ID to copy (optional). |
+
+**HTTP Responses**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | File copied successfully.                |
+| 400  | Bad request – invalid parameters.        |
+| 401  | Unauthorized – missing or invalid JWT.   |
+| 404  | Source file not found.                   |
+| 500  | Internal server error.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/File/CopyFile) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -213,7 +255,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/copy/MyFolder/Report.x
 PUT https://api.aspose.cloud/v3.0/cells/storage/file/move/{srcPath}
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name   | Type   | Location | Description |
 |------------------|--------|----------|-------------|
@@ -222,6 +264,16 @@ The request parameters are:
 | srcStorageName   | string | query    | Source storage name (optional). |
 | destStorageName  | string | query    | Destination storage name (optional). |
 | versionId        | string | query    | File version ID to move (optional). |
+
+**HTTP Responses**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | File moved successfully.                 |
+| 400  | Bad request – invalid parameters.        |
+| 401  | Unauthorized – missing or invalid JWT.   |
+| 404  | Source file not found.                   |
+| 500  | Internal server error.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/File/MoveFile) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -260,12 +312,21 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/file/move/MyFolder/Report.x
 PUT https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name | Type   | Location | Description |
 |----------------|--------|----------|-------------|
 | path           | string | path     | Folder path to create (e.g., `folder1/folder2/`). |
 | storageName    | string | query    | Name of the storage to use. |
+
+**HTTP Responses**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | Folder created successfully.             |
+| 400  | Bad request – invalid path or parameters. |
+| 401  | Unauthorized – missing or invalid JWT.   |
+| 500  | Internal server error.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Folder/CreateFolder) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -306,12 +367,22 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/newfolder" \
 GET https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name | Type   | Location | Description |
 |----------------|--------|----------|-------------|
 | path           | string | path     | Folder path (e.g., `/folder`). |
 | storageName    | string | query    | Name of the storage to use. |
+
+**HTTP Responses**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | List of files and sub‑folders returned.  |
+| 400  | Bad request – invalid path.              |
+| 401  | Unauthorized – missing or invalid JWT.   |
+| 404  | Folder not found.                        |
+| 500  | Internal server error.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Folder/GetFilesList) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -357,13 +428,23 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
 DELETE https://api.aspose.cloud/v3.0/cells/storage/folder/{path}
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name | Type    | Location | Description |
 |----------------|---------|----------|-------------|
 | path           | string  | path     | Folder path (e.g., `/folder`). |
 | storageName    | string  | query    | Name of the storage to use. |
 | recursive      | boolean | query    | Set to `true` to delete the folder recursively. |
+
+**HTTP Responses**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | Folder deleted successfully.             |
+| 400  | Bad request – invalid parameters.        |
+| 401  | Unauthorized – missing or invalid JWT.   |
+| 404  | Folder not found.                        |
+| 500  | Internal server error.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Folder/DeleteFolder) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -402,7 +483,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/desfolder" \
 PUT https://api.aspose.cloud/v3.0/cells/storage/folder/copy/{srcPath}
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name   | Type   | Location | Description |
 |------------------|--------|----------|-------------|
@@ -410,6 +491,16 @@ The request parameters are:
 | destPath         | string | query    | Destination folder path (e.g., `/dst`). |
 | srcStorageName   | string | query    | Source storage name (optional). |
 | destStorageName  | string | query    | Destination storage name (optional). |
+
+**HTTP Responses**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | Folder copied successfully.              |
+| 400  | Bad request – invalid parameters.        |
+| 401  | Unauthorized – missing or invalid JWT.   |
+| 404  | Source folder not found.                 |
+| 500  | Internal server error.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Folder/CopyFolder) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -448,7 +539,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/copy/srcfolder?destP
 PUT https://api.aspose.cloud/v3.0/cells/storage/folder/move/{srcPath}
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name   | Type   | Location | Description |
 |------------------|--------|----------|-------------|
@@ -456,6 +547,16 @@ The request parameters are:
 | destPath         | string | query    | Destination folder path (e.g., `/dst`). |
 | srcStorageName   | string | query    | Source storage name (optional). |
 | destStorageName  | string | query    | Destination storage name (optional). |
+
+**HTTP Responses**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | Folder moved successfully.               |
+| 400  | Bad request – invalid parameters.        |
+| 401  | Unauthorized – missing or invalid JWT.   |
+| 404  | Source folder not found.                 |
+| 500  | Internal server error.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Folder/MoveFolder) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -494,11 +595,20 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/folder/move/desfolder?destP
 GET https://api.aspose.cloud/v3.0/cells/storage/{storageName}/exist
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name | Type   | Location | Description |
 |----------------|--------|----------|-------------|
 | storageName    | string | path     | Name of the storage to check. |
+
+**HTTP Responses**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | Storage existence returned (`true` or `false`). |
+| 401  | Unauthorized – missing or invalid JWT.   |
+| 404  | Storage not found.                       |
+| 500  | Internal server error.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Storage/StorageExists) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -534,13 +644,22 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/MyStorage/exist" \
 GET https://api.aspose.cloud/v3.0/cells/storage/exist/{path}
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name | Type   | Location | Description |
 |----------------|--------|----------|-------------|
 | path           | string | path     | File or folder path (e.g., `/file.xlsx` or `/folder`). |
 | storageName    | string | query    | Name of the storage to check. |
 | versionId      | string | query    | File version identifier (optional). |
+
+**HTTP Responses**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | Existence information returned.          |
+| 401  | Unauthorized – missing or invalid JWT.   |
+| 404  | File or folder not found.                |
+| 500  | Internal server error.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Storage/ObjectExists) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -577,11 +696,19 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/exist/Book1.xlsx" \
 GET https://api.aspose.cloud/v3.0/cells/storage/disc
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name | Type   | Location | Description |
 |----------------|--------|----------|-------------|
 | storageName    | string | query    | Name of the storage to query. |
+
+**HTTP Responses**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | Disk usage information returned.         |
+| 401  | Unauthorized – missing or invalid JWT.   |
+| 500  | Internal server error.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Storage/GetDiscUsage) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
@@ -618,12 +745,21 @@ curl -v "https://api.aspose.cloud/v3.0/cells/storage/disc?storageName=MyStorage"
 GET https://api.aspose.cloud/v3.0/cells/storage/version/{path}
 ```
 
-The request parameters are:
+The request parameters are listed below:
 
 | Parameter Name | Type   | Location | Description |
 |----------------|--------|----------|-------------|
 | path           | string | path     | File path (e.g., `/file.xlsx`). |
 | storageName    | string | query    | Name of the storage to query. |
+
+**HTTP Responses**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | List of file versions returned.          |
+| 401  | Unauthorized – missing or invalid JWT.   |
+| 404  | File not found.                          |
+| 500  | Internal server error.                   |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Storage/GetFileVersions) defines a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 

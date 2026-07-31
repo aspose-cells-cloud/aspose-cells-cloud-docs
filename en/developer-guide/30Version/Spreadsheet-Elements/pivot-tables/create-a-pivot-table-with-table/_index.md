@@ -17,6 +17,8 @@ ArticleTitle: "Convert Table to Pivot Table – Aspose.Cells Cloud Documentation
 
 This REST API creates a **pivot table** from a list object.
 
+A pivot table summarizes data from a list object, allowing you to analyze and report on large data sets directly within the workbook.
+
 **Prerequisites:**  
 - A valid JWT bearer token for authentication.  
 - The workbook must exist in the specified storage location.  
@@ -25,7 +27,7 @@ This REST API creates a **pivot table** from a list object.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/SummarizeWithPivotTable
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/SummarizeWithPivotTable
 ```
 
 ### **Request parameters**
@@ -69,7 +71,7 @@ The request body must follow the JSON schema defined below:
 }
 ```
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSummarizeWithPivotTable) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/ListObjects/PostWorksheetListObjectSummarizeWithPivotTable" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the **cURL** command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
@@ -86,7 +88,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/TestCase.xlsx/worksheets/Sheet2/lis
 -H "Authorization: Bearer <jwt token>"
 ```
 
-*Note: Use the production endpoint (`api.aspose.cloud`) for live environments. The QA endpoint (`api-qa.aspose.cloud`) is intended for testing only.*
+*Note: Use the production endpoint (`api.aspose.cloud`) for live environments. The QA endpoint (`api-qa.aspose.cloud`) is intended for testing only. HTTPS is required for all production calls.*
 
 {{< /tab >}}
 

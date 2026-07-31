@@ -5,7 +5,7 @@ linktitle: "Word Case"
 type: docs
 url: /change-word-case/
 keywords: "change word case API, Aspose.Cells, Excel case conversion, uppercase, lowercase, proper case, sentence case, text formatting"
-description: "Easily convert text case in Excel files using Aspise.Cells Cloud API. Supports Uppercase, Lowercase, Proper Case, and Sentence Case. Get code samples in C#, Java, Python & more."
+description: "Easily convert text case in Excel files using Aspose.Cells Cloud API. Supports Uppercase, Lowercase, Proper Case, and Sentence Case. Get code samples in C#, Java, Python & more."
 weight: 100
 ---
 
@@ -18,14 +18,16 @@ Use the Aspose.Cells Cloud Web API to instantly convert text case in your spread
 - **ProperCase** – first letter of each word upper‑cased, the remainder lower‑cased.
 - **SentenceCase** – first letter of each sentence upper‑cased, the remainder lower‑cased.
 
-<img src="images/result.png" alt="Before/After case conversion screenshot" width="800" height="450" />
+<img src="https://docs.aspose.cloud/cells/images/result.png" alt="Before/After case conversion screenshot" width="800" height="450" />
 
 ### Web API
+
+**Prerequisites:**  
+To call this endpoint you must have a valid JWT access token, and optionally the Aspose.Cells Cloud SDK installed. All requests must be sent over HTTPS to the Aspose.Cells Cloud service.
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/content/wordcase
 ```
-
 
 ### **Security and Authentication**
 
@@ -34,6 +36,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ```bash
 -H "Authorization: Bearer {access_token}"
 ```
+
 ### Request Parameters for **UpdateWordCase** API
 
 | Parameter Name | Type   | Location | Description                                                                                                                                                           |
@@ -69,6 +72,21 @@ On success the service returns **200 OK** (or **202 Accepted**) with a JSON 
 - **401 Unauthorized** – Invalid access token or incorrect client credentials.
 - **404 Not Found** – The spreadsheet file is not accessible.
 - **500 Server Error** – The spreadsheet encountered an internal processing anomaly.
+
+**Status Codes Summary**
+
+| Code | Meaning                     |
+|------|-----------------------------|
+| 200  | Request succeeded (synchronous) |
+| 202  | Request accepted for processing (asynchronous) |
+| 400  | Bad request – malformed syntax |
+| 401  | Unauthorized – invalid token |
+| 404  | Not found – resource missing |
+| 429  | Too Many Requests – rate limit exceeded |
+| 500  | Internal server error |
+
+**Rate‑limit / Throttling**  
+The API enforces a default limit of X requests per minute per account. Exceeding this limit returns **429 Too Many Requests**.
 
 ## Where should we use the change word case API?
 
@@ -121,7 +139,7 @@ On success the service returns **200 OK** (or **202 Accepted**) with a JSON 
 
 ## OpenAPI Specification
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/UpdateWordCase) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/UpdateWordCase" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 

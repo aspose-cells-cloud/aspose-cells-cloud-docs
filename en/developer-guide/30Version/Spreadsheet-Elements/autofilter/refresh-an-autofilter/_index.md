@@ -6,11 +6,10 @@ type: docs
 url: /autofilter/refresh/
 aliases: [/refresh-an-autofilter/]
 weight: 100
-keywords: "Aspose.Cells Cloud, refresh autofilter, Excel API, AutoFilter refresh, REST API, spreadsheet"
+keywords: "Aspose.Cells, AutoFilter, refresh, Excel, API, REST"
 description: "Refresh an existing AutoFilter on an Excel worksheet using Aspose.Cells Cloud REST API. Includes cURL and SDK examples for C#, Java, Python, and more."
+ArticleTitle: "Refresh an Auto Filter in an Excel Worksheet"
 ---
-
-
 
 ### What does **Refresh** do?
 
@@ -18,13 +17,16 @@ Calling the endpoint re‑applies the current filter criteria after the workshee
 
 ### REST API
 
-This REST API refreshes an auto‑filter on an Excel worksheet.
+This REST API refreshes an auto‑filter on an Excel worksheet (API version **v3.0**).
 
 ```bash
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh
 ```
 
 ## Security and Authentication
+
+**Prerequisites:**  
+A valid JWT token is required to call any Aspose.Cells Cloud endpoint. Obtain the token by following the authentication guide linked below.
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
@@ -50,12 +52,39 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Refresh operation succeeded; response contains status details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
 
+*Example error responses*  
+
+```json
+// 400 Bad Request
+{
+    "Code": 400,
+    "Message": "Invalid parameter: sheetName not found."
+}
+
+// 401 Unauthorized
+{
+    "Code": 401,
+    "Message": "Authentication failed. JWT token is missing or invalid."
+}
+
+// 413 Payload Too Large
+{
+    "Code": 413,
+    "Message": "The uploaded file exceeds the maximum allowed size."
+}
+
+// 500 Internal Server Error
+{
+    "Code": 500,
+    "Message": "An unexpected error occurred on the server."
+}
+```
 
 ## How to Use the PostWorksheetAutoFilterRefresh API with SDKs
 
@@ -148,4 +177,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
-

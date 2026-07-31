@@ -35,6 +35,16 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 }
 ```
 
+**Possible HTTP status codes**
+
+| Code | Description |
+|------|-------------|
+| 200 | Success – returns the maximum data row index. |
+| 401 | Unauthorized – invalid or missing authentication token. |
+| 403 | Forbidden – insufficient permissions to access the workbook. |
+| 404 | Not Found – specified workbook or worksheet does not exist. |
+| 500 | Internal Server Error – unexpected server condition. |
+
 {{< /tab >}}
 
 {{< /tabs >}}
@@ -110,9 +120,9 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 
 **See also**
 
-- [Get MaxRow from Excel Worksheet](https://docs.aspose.cloud/cells/get-maxrow-from-excel-worksheet/)  
-- [Get MaxColumn from Excel Worksheet](https://docs.aspose.cloud/cells/get-maxcolumn-from-excel-worksheet/)  
-- [Get MinDataRow from Excel Worksheet](https://docs.aspose.cloud/cells/get-mindatarow-from-excel-worksheet/)
+- <a href="https://docs.aspose.cloud/cells/get-maxrow-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">Get MaxRow from Excel Worksheet</a>  
+- <a href="https://docs.aspose.cloud/cells/get-maxcolumn-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">Get MaxColumn from Excel Worksheet</a>  
+- <a href="https://docs.aspose.cloud/cells/get-mindatarow-from-excel-worksheet/" target="_blank" rel="noopener noreferrer">Get MinDataRow from Excel Worksheet</a>
 
 <script type="application/ld+json">
 {
@@ -143,4 +153,4 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 }
 </script>
 
-*Last updated: 2024‑12‑01*
+*Last updated: 2026-07-30*

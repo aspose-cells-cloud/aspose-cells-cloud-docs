@@ -5,7 +5,7 @@ linktitle: "Sort"
 type: docs
 url: /list-objects/sort-data/
 aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
-keywords: "Aspose.Cells Cloud, Excel, list object, sort data, REST API, worksheet"
+keywords: "Aspose.Cells Cloud, Excel, ListObject, Sort Data, REST API, Worksheet"
 description: "Learn how to sort ListObject (table) data in an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes endpoint, parameters, sample cURL request, and SDK examples."
 weight: 40
 ArticleTitle: "Sort ListObject Data in an Excel Worksheet – Aspose.Cells Cloud API"
@@ -20,7 +20,7 @@ To use this operation, provide the workbook name, worksheet name, and the index 
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/sort
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/sort
 ```
 
 ### **Request parameters**

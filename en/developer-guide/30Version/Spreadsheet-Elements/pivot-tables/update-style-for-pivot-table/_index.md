@@ -8,6 +8,7 @@ aliases: [/update-style-for-pivot-table/]
 keywords: "pivot table, update style, Aspose.Cells Cloud, REST API, Excel, spreadsheet, API, pivot table style, format all"
 description: "Learn how to update the style of an entire pivot table using the Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK snippets for multiple programming languages."
 weight: 100
+ArticleTitle: "Update style for pivot table - Aspose.Cells Cloud API"
 ---
 
 This REST API updates the style of a pivot table.
@@ -15,8 +16,11 @@ This REST API updates the style of a pivot table.
 ## REST API
 
 ```bash
-POST http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/FormatAll
+POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/FormatAll
 ```
+
+**Prerequisites / Authentication**  
+A valid JWT access token must be supplied in the `Authorization` header (e.g., `Bearer <jwt token>`). Ensure the token has permission to access the specified workbook and worksheet.
 
 ### **Request parameters**
 
@@ -39,7 +43,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/FormatAll" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/worksheets/Sheet2/pivottables/0/FormatAll" \
   -X POST \
   -d '{"Font":{"Name":"Arial","Size":10}}' \
   -H "Content-Type: application/json" \
@@ -58,13 +62,23 @@ curl -v "http://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/works
 }
 ```
 
+**Status Codes**
+
+| Code | Description                              |
+|------|------------------------------------------|
+| 200  | OK – style applied                       |
+| 400  | Bad Request – invalid parameters         |
+| 401  | Unauthorized – missing/invalid token     |
+| 404  | Not Found – workbook or pivot table not found |
+| 500  | Internal Server Error                    |
+
 {{< /tab >}}
 
 {{< /tabs >}}
 
 ## Cloud SDK Family
 
-Using an SDK is the fastest way to develop against the API. The SDK abstracts low‑level details so you can focus on your business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the fastest way to develop against the API. The SDK abstracts low‑level details so you can focus on your business logic. See the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code example demonstrates how to call the API using the Go SDK:
 

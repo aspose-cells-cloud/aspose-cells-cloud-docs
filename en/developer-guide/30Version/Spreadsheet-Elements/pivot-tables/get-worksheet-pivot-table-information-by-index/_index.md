@@ -17,6 +17,10 @@ This REST API retrieves worksheet **pivot table** information by its index.
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
 
+**Prerequisites:**  
+1. Obtain a valid JWT access token.  
+2. Ensure the target Excel file is uploaded to Aspose Cloud storage (or specify the correct folder path).  
+
 ## REST API
 
 ```bash
@@ -29,7 +33,7 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottable
 | ------------------- | ------- | -------- | -------------------------------------------------------- |
 | **name**            | string  | path     | The name of the Excel file.                              |
 | **sheetName**       | string  | path     | The name of the worksheet that contains the pivot table. |
-| **pivottableIndex** | integer | path     | Zero-based index of the pivot table in the worksheet.    |
+| **pivottableIndex** | integer | path     | Zero‑based index of the pivot table in the worksheet.    |
 | **folder**          | string  | query    | The folder where the document is stored.                 |
 | **storageName**     | string  | query    | The name of the Aspose Cloud storage.                    |
 
@@ -185,7 +189,7 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 
 {{< /tabs >}}
 
-### **Error handling**
+### Error handling
 
 The API follows standard HTTP status codes. Typical responses include:
 
@@ -196,7 +200,7 @@ The API follows standard HTTP status codes. Typical responses include:
 | 404         | Not found – file, worksheet, or pivot‑table index does not exist | `{"code":404,"message":"Pivot table not found."}` |
 | 500         | Server error – unexpected condition                              | `{"code":500,"message":"Internal server error."}` |
 
-Review the status code and error message to troubleshoot issues.
+**Notes:** The API supports Excel files up to 150 MB and works with Excel 2007‑2021 formats. Ensure the worksheet name is case‑sensitive.
 
 ## Cloud SDK Family
 

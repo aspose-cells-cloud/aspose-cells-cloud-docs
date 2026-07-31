@@ -3,8 +3,9 @@ title: "Get Chart Second Value Axis"
 type: docs
 url: /charts/second-value-axis/get/
 weight: 60
-keywords: Aspose.Cells, REST API, Get Chart Second Value Axis, Excel, Cloud, chart axis, second value axis, API
+keywords: Aspose.Cells, chart second value axis, Excel, REST API, cloud, API, Excel chart axis
 description: Retrieves the second value axis of a specified chart in an Excel worksheet using the Aspose.Cells Cloud REST API.
+ArticleTitle: "Get Chart Second Value Axis – Aspose.Cells Cloud API"
 ---
 
 This REST API retrieves the second value axis of a chart.
@@ -12,7 +13,7 @@ This REST API retrieves the second value axis of a chart.
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis
 ```
 
 ### Request parameters
@@ -25,16 +26,18 @@ GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{cha
 | folder         | string  | query    | The folder where the file is stored.            |
 | storageName    | string  | query    | The name of the Aspose Cloud storage.           |
 
+**Prerequisites**: A valid JWT access token obtained via the Aspose Cloud OAuth2 flow must be supplied in the `Authorization` header of each request.
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Charts/GetChartSecondValueAxis) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL. All Aspose Cloud endpoints require HTTPS.
 
 {{< tabs tabTotal="2" tabID="1" tabName1="Request" tabName2="Response" >}}
 
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/" \
+curl -v "https://api.aspose.cloud/v3.0/cells/" \
   -X GET \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -48,9 +51,38 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
 ```json
 {
   "Code": 200,
-  "Status": "OK"
+  "Status": "OK",
+  "Axis": {
+    "AxisId": 1,
+    "IsVisible": true,
+    "MinimumScale": 0,
+    "MaximumScale": 100,
+    "MajorUnit": 10,
+    "MinorUnit": 5,
+    "Title": "Second Value Axis"
+  }
 }
 ```
+
+**Response fields**
+
+- **Code** – HTTP status code of the operation (e.g., `200` for success).  
+- **Status** – Textual description of the status (`"OK"` for success).  
+- **Axis** – Object containing details of the second value axis:  
+  - **AxisId** – Identifier of the axis.  
+  - **IsVisible** – Boolean indicating whether the axis is displayed.  
+  - **MinimumScale** – Minimum value displayed on the axis.  
+  - **MaximumScale** – Maximum value displayed on the axis.  
+  - **MajorUnit** – Interval between major tick marks.  
+  - **MinorUnit** – Interval between minor tick marks.  
+  - **Title** – Title text of the axis.
+
+**Error responses** (non‑200)
+
+- `400 Bad Request` – Invalid parameters or malformed request.  
+- `401 Unauthorized` – Missing or invalid JWT token.  
+- `404 Not Found` – Specified file, worksheet, or chart does not exist.  
+- `500 Internal Server Error` – Unexpected server error.
 
 {{< /tab >}}
 
@@ -58,7 +90,7 @@ curl -v "http://api.aspose.cloud/v3.0/cells/" \
 
 ## Cloud SDK Family
 
-Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 

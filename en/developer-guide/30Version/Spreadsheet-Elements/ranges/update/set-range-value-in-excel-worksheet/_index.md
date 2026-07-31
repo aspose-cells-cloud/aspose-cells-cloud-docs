@@ -37,6 +37,19 @@ The request parameters are:
 | folder         | string  | query    | Workbook folder                                            |
 | storageName    | string  | query    | Storage name                                               |
 
+**Example of the `range` object** that can be sent in the request body:
+
+```json
+{
+  "range": {
+    "FirstRow": 0,
+    "FirstColumn": 0,
+    "RowCount": 1,
+    "ColumnCount": 1
+  }
+}
+```
+
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Ranges/PostWorksheetCellsRangeValue) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to call the Cloud API with cURL. **Include a valid JWT token in the `Authorization` header.**
@@ -85,6 +98,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 - **403 Forbidden** – Insufficient permissions for the requested operation.  
 - **404 Not Found** – Specified workbook, worksheet, or range does not exist.  
 - **500 Internal Server Error** – Unexpected server error.
+
+*Example error response for a 400 Bad Request:*
+
+```json
+{
+  "Code": 400,
+  "Status": "Bad Request",
+  "Message": "The 'range' object is missing required fields."
+}
+```
 
 ## Cloud SDK Family
 

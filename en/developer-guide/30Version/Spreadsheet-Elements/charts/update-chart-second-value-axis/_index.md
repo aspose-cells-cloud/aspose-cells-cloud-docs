@@ -102,21 +102,60 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="1" >}}
 
+```csharp
+// C# example to update the second value axis
+var api = new CellsApi("clientId", "clientSecret");
+var axis = new Axis { IsAutomaticMajorUnit = true, Maximum = 100 };
+api.PostChartSecondValueAxis(name, sheetName, chartIndex, axis);
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="2" >}}
+
+```java
+// Java example to update the second value axis
+CellsApi api = new CellsApi("clientId", "clientSecret");
+Axis axis = new Axis();
+axis.setIsAutomaticMajorUnit(true);
+axis.setMaximum(100.0);
+api.postChartSecondValueAxis(name, sheetName, chartIndex, axis);
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="3" >}}
 
+```php
+// PHP example to update the second value axis
+$api = new CellsApi($clientId, $clientSecret);
+$axis = new Axis();
+$axis->setIsAutomaticMajorUnit(true);
+$axis->setMaximum(100);
+$api->postChartSecondValueAxis($name, $sheetName, $chartIndex, $axis);
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="4" >}}
 
+```ruby
+# Ruby example to update the second value axis
+api = AsposeCellsCloud::ApiClient.new(client_id, client_secret)
+axis = Axis.new(is_automatic_major_unit: true, maximum: 100)
+api.post_chart_second_value_axis(name, sheet_name, chart_index, axis)
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="5" >}}
+
+```python
+# Python example to update the second value axis
+api = asposecellscloud.ApiClient(client_id, client_secret)
+axis = Axis(is_automatic_major_unit=True, maximum=100)
+api.post_chart_second_value_axis(name, sheet_name, chart_index, axis)
+```
 
 {{< /tab >}}
 
@@ -128,17 +167,44 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 
 {{< tab tabNum="7" >}}
 
+```java
+// Android (Java) example – same as Java snippet above
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="8" >}}
+
+```swift
+// Swift example to update the second value axis
+let api = CellsApi(clientId: "clientId", clientSecret: "clientSecret")
+var axis = Axis()
+axis.isAutomaticMajorUnit = true
+axis.maximum = 100
+api.postChartSecondValueAxis(name: name, sheetName: sheetName, chartIndex: chartIndex, axis: axis)
+```
 
 {{< /tab >}}
 
 {{< tab tabNum="9" >}}
 
+```perl
+# Perl example to update the second value axis
+my $api = AsposeCellsCloud::ApiClient->new(client_id => $client_id, client_secret => $client_secret);
+my $axis = AsposeCellsCloud::Object::Axis->new(isAutomaticMajorUnit => 1, maximum => 100);
+$api->post_chart_second_value_axis(name => $name, sheet_name => $sheet_name, chart_index => $chart_index, axis => $axis);
+```
+
 {{< /tab >}}
 
 {{< tab tabNum="10" >}}
+
+```go
+// Go example to update the second value axis
+api := cells.NewApiClient("clientId", "clientSecret")
+axis := cells.Axis{IsAutomaticMajorUnit: true, Maximum: 100}
+api.PostChartSecondValueAxis(name, sheetName, chartIndex, axis)
+```
 
 {{< /tab >}}
 

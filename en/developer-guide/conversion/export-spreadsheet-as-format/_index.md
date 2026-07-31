@@ -10,7 +10,8 @@ description: "Convert Excel workbooks stored in Aspose Cloud to PDF, XLSX, CSV, 
 weight: 100
 ---
 
-Export a cloud spreadsheet (Excel) to another file format.
+Export a cloud spreadsheet (Excel) to another file format.  
+**Prerequisites:** You must have a valid Aspose.Cells Cloud access token and, if required, the appropriate storage configured.
 
 ## **Export Spreadsheet as Format API**
 
@@ -20,6 +21,19 @@ All requests must be made over **HTTPS** to protect credentials.
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/{name}?format={format}&folder={folder}&storageName={storageName}&outPath={outPath}&outStorageName={outStorageName}&fontsLocation={fontsLocation}&region={region}&password={password}
+```
+
+**Example request**
+
+```http
+GET https://api.aspose.cloud/v4.0/cells/Report.xlsx?format=pdf&folder=Docs&storageName=MyStorage
+```
+
+**cURL example**
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/Report.xlsx?format=pdf&folder=Docs&storageName=MyStorage" \
+     -H "Authorization: Bearer {access_token}"
 ```
 
 ### **Security and Authentication**
@@ -89,9 +103,9 @@ The response contains a single object that represents the converted file stream.
 ## Why should you use the Export Spreadsheet as another format API?
 
 - **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces the development workload.
-- **Reduced Labor Costs**: Reduces the need for positions dedicated to document consolidation.
+- **Reduced Labor Costs**: Reduces the need to dedicate positions to document consolidation.
 - **Pay‑per‑use**: No upfront investment; you only pay for API calls actually used.
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
+- **No server‑side maintenance required**: No need to maintain servers, update software, or deal with compatibility issues.
 - **Comprehensive Format Support**: Convert between 20+ spreadsheet formats.
 - **Preserve Data Fidelity & Formatting**: Maintains the original layout, formulas, and styling during conversion.
 

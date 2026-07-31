@@ -13,6 +13,9 @@ ArticleTitle: "Add Watermark to Excel Files – Aspose.Cells Cloud Documentation
 
 This REST API adds a **watermark** to Excel files.
 
+**Prerequisites:** You must obtain a valid JWT access token and ensure the Excel file is in a supported format (e.g., `.xlsx`, `.xls`).  
+**Background:** A watermark is a semi‑transparent text overlay applied to each worksheet to indicate ownership or confidentiality.
+
 ## REST API
 
 ```bash
@@ -23,7 +26,6 @@ POST https://api.aspose.cloud/v3.0/cells/watermark
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-
 ### **Request Parameters**
 
 | Parameter Name | Type   | Location                  | Description                                                 |
@@ -31,7 +33,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | `file`         | file   | formData (multipart body) | The Excel file to which the watermark will be applied.      |
 | `text`         | string | query                     | The watermark text to display.                              |
 | `color`        | string | query                     | The watermark colour in ARGB hex format (e.g., `004433ff`). |
-
 
 ### **Response**
 
@@ -65,14 +66,13 @@ The JSON response contains a **Files** array. For each file object:
 
 **Response Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-
+| Code | Meaning                     | Description                                                                      |
+|------|-----------------------------|----------------------------------------------------------------------------------|
+| 200  | OK                          | Watermark applied successfully; response contains watermarked file details.    |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type).                   |
+| 401  | Unauthorized                | Invalid or missing JWT token.                                                    |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit.                                                |
+| 500  | Internal Server Error       | Unexpected server error.                                                         |
 
 ## How to Use the PostWatermark API with SDKs
 

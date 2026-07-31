@@ -12,6 +12,8 @@ weight: 100
 
 Export a worksheet from a local Excel file to a [PDF](https://docs.fileformat.com/pdf/) file using the Cloud API.
 
+**Prerequisites**: Before calling the API, obtain a valid JWT access token using your Aspose.Cells Cloud client ID and secret, and ensure you have an active Aspose.Cells Cloud subscription.
+
 ## **Convert Worksheet to PDF API**
 
 
@@ -41,6 +43,8 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | fontsLocation  | String | Query                      | Use custom fonts for the PDF.                                         |
 | region         | String | Query                      | Define the spreadsheet region setting.                                |
 | password       | String | Query                      | The password required to open the spreadsheet file.                   |
+
+**Notes**: Worksheet names are case‑sensitive. The maximum file size for upload is 50 MB. If the worksheet contains formulas that depend on external data, ensure those references are available.
 
 ### **Response**
 

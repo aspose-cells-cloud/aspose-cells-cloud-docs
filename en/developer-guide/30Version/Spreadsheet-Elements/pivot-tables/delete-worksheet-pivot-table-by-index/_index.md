@@ -5,7 +5,7 @@ linktitle: Delete
 type: docs
 url: /pivot-tables/delete/
 aliases: [/delete-worksheet-pivot-table-by-index/]
-keywords: "Aspose.Cells, Cloud, delete, pivot, table, Excel, worksheet, REST API, SDK, cURL"
+keywords: "Aspose.Cells, pivot table, delete, Excel, REST API"
 description: "Delete a pivot table from an Excel worksheet using Aspose.Cells Cloud REST API (v3.0). Includes request format, cURL example, error codes, and SDK snippets for C#, Java, Python, Node.js."
 weight: 70
 ArticleTitle: "How to Delete a Pivot Table in an Excel Worksheet with Aspose.Cells Cloud"
@@ -53,6 +53,8 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 
 {{< tab tabNum="2" >}}
 
+**Response Example**
+
 ```json
 {
   "Code": 200,
@@ -74,6 +76,8 @@ The response follows a simple JSON schema:
 {{< /tabs >}}
 
 ### Error handling
+
+Common response status codes are listed below:
 
 | HTTP Status | Description                                                             |
 | ----------- | ----------------------------------------------------------------------- |

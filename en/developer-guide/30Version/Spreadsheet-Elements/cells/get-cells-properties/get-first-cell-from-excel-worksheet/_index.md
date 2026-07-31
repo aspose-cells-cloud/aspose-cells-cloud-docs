@@ -4,10 +4,14 @@ type: docs
 url: /get-first-cell-from-excel-worksheet/
 weight: 20
 keywords: "Aspose.Cells Cloud, Excel, REST API, Get First Cell, Worksheet, A1, API v3"
-description: "Learn how to retrieve the first cell (A1) of an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL request, JSON response, and SDK samples for C#, Java, PHP, Python, and more."
+description: "Learn how to retrieve the first cell (A1) of an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL request, JSON response, error examples, and SDK samples for C#, Java, PHP, Python, and more."
+ArticleTitle: "Get First Cell (A1) from an Excel Worksheet using Aspose.Cells Cloud API"
 ---
 
 This REST API shows how to retrieve the **first cell** in an Excel file when the `cellOrMethodName` parameter is set to `firstcell`.
+
+**Endpoint**  
+`GET https://api.aspose.com/v3.0/cells/{fileName}/worksheets/{worksheet}/cells/firstcell`
 
 - **cURL Example**
 
@@ -60,6 +64,35 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
   },
   "Code": "200",
   "Status": "OK"
+}
+```
+
+**Error Responses**
+
+- **401 Unauthorized**
+
+```json
+{
+  "Code": "401",
+  "Message": "Invalid access token."
+}
+```
+
+- **404 Not Found**
+
+```json
+{
+  "Code": "404",
+  "Message": "The specified workbook, worksheet, or cell does not exist."
+}
+```
+
+- **500 Internal Server Error**
+
+```json
+{
+  "Code": "500",
+  "Message": "An unexpected error occurred on the server."
 }
 ```
 

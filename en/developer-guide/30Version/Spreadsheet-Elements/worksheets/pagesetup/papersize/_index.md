@@ -138,6 +138,9 @@ Developers use these constants with the `SetPageSetup` API (or the equivalent SD
 | PaperThermal                       | Thermal (3 in × 11 in)                             |
 | Custom                             | Represents a custom paper size. Use the `Custom` enum together with explicit width and height values in points. |
 
+**Prerequisites**  
+An active Aspose Cloud access token with the appropriate permissions and the API version (`v3.0`) must be obtained before invoking the endpoint.
+
 ### How to set a paper size with the Aspose.Cells Cloud REST API
 
 ```bash
@@ -166,4 +169,6 @@ var request = new PageSetup { PaperSize = PaperSizeEnum.PaperA4 };
 api.PutWorksheetPageSetup("Book1.xlsx", "Sheet1", request);
 ```
 
-For a complete OpenAPI definition, see the [Aspose.Cells Cloud Swagger specification](https://api.aspose.cloud/v3.0/swagger.json).
+For a complete OpenAPI definition, see the <a href="https://api.aspose.cloud/v3.0/swagger.json" target="_blank" rel="noopener">Aspose.Cells Cloud Swagger specification</a>.
+
+See also the [Page Setup documentation](/page-setup/) for configuring margins, orientation, and other layout options.

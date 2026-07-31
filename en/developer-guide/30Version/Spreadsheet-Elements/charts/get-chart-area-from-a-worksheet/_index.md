@@ -5,29 +5,32 @@ url: /charts/area/get/
 aliases: [/get-chart-area-from-a-worksheet/]
 weight: 60
 keywords:
-  [
-    "Aspose.Cells",
-    "REST API",
-    "ChartArea",
-    "Worksheet",
-    "cURL",
-    "SDK",
-    "GetChartArea",
-  ]
+  - "Aspose.Cells"
+  - "REST API"
+  - "ChartArea"
+  - "Worksheet"
+  - "cURL"
+  - "SDK"
+  - "GetChartArea"
 description: "Learn how to retrieve chart‑area information from a worksheet using the Aspose.Cells Cloud REST API, with examples for cURL and multiple SDKs."
+ArticleTitle: "Get Chart Area from a Worksheet - Aspose.Cells Cloud API"
 ---
 
 This REST API returns chart‑area information.
 
+**Prerequisites:** To call this endpoint you must have a valid JWT access token, the target workbook must be uploaded to Aspose Cloud storage, and the file format must be supported by Aspose.Cells.
+
+**Background:** A chart area defines the outermost bounding box of an Excel chart, including titles, legends, and the plot area. Retrieving its properties allows you to adjust layout and styling programmatically.
+
 ## REST API
 
 ```bash
-GET http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea
+GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea
 ```
 
 ### Security and Authentication
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" target="_blank" rel="noopener noreferrer">JWT token‑based authentication</a>.
 
 ### Request parameters
 
@@ -94,7 +97,7 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
     "X": 0,
     "Y": 0,
     "link": {
-      "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea",
+      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea",
       "Rel": "self"
     }
   },
@@ -105,20 +108,19 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 **Response Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-
+| Code | Meaning                     | Description                                                                 |
+|------|-----------------------------|-----------------------------------------------------------------------------|
+| 200  | OK                          | Successful retrieval of chart‑area details; response contains the ChartArea object. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type).               |
+| 401  | Unauthorized                | Invalid or missing JWT token.                                               |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit.                                           |
+| 500  | Internal Server Error       | Unexpected server error.                                                    |
 
 ## How to Use the GetChartArea API with SDKs
 
 ### GetChartArea API Specification
 
-The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/ChartArea/GetChartArea) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+The <a href="https://apireference.aspose.cloud/cells/#/ChartArea/GetChartArea" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make a call to the Cloud API with cURL.
 
@@ -127,7 +129,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea" \
 -X GET \
 -H "Content-Type: application/json" \
 -H "Accept: application/json" \
@@ -191,7 +193,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
     "X": 0,
     "Y": 0,
     "link": {
-      "Href": "http://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea",
+      "Href": "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea",
       "Rel": "self"
     }
   },
@@ -206,7 +208,7 @@ curl -v "http://api.aspose.com/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to call Aspose.Cells web services using various SDKs:
 
@@ -252,3 +254,18 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**Generic HTTP request (e.g., using fetch):**
+
+```javascript
+fetch('https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/Sheet5/charts/0/chartArea', {
+  method: 'GET',
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'Authorization': 'Bearer <jwt token>'
+  }
+})
+  .then(response => response.json())
+  .then(data => console.log(data));
+```

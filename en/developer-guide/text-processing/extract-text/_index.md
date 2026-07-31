@@ -1,5 +1,5 @@
 ---
-title: "Aspose.Cells Cloud Web API – Extract Text"
+title: "Aspose.Cells Cloud – Extract Text"
 second_title: "Aspose.Cells Cloud – Online Short‑Code"
 linktitle: "Extract Text"
 type: docs
@@ -19,6 +19,8 @@ PUT https://api.aspose.cloud/v4.0/cells/content/extract/text
 ```
 
 ### **Security and Authentication**
+
+Before using this API, you must have an Aspose Cloud account, obtain a client ID and client secret, and generate a JWT access token as described in the authentication guide.  
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -68,6 +70,14 @@ When the request succeeds, the API returns a JSON payload containing the extract
 ]
 ```
 
+**Response schema**
+
+| Field                 | Type   | Description                                                            |
+|-----------------------|--------|------------------------------------------------------------------------|
+| Name                  | string | Identifier of the returned object (`ResponseFile`).                    |
+| DataType.Identifier   | string | Data type of the object (`File`).                                      |
+| DataType.Reference    | string | Indicates the data is returned as a stream.                           |
+
 If the `outPath` parameter is provided, the response contains only a status message; the workbook is written to the specified location.
 
 **Sample response when `outPath` is omitted**
@@ -94,7 +104,7 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryNa
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement **Extract Text** for cells with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement **Extract Text** for cells with minimal code. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to make calls to Aspose.Cells web services using various SDKs:
 
@@ -165,4 +175,3 @@ The following code examples illustrate how to make calls to Aspose.Cells web ser
 {{</tab>}}
 
 {{< /tabs >}}
-

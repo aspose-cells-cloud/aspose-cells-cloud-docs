@@ -6,10 +6,17 @@ linktitle: "Compress Excel Files"
 type: docs
 url: /compress-excel-files/
 aliases: [/compress/]
-keywords: "compress excel files, aspose cells cloud, excel compression, spreadsheet compression, rest api, file compression, excel file compression, xls xlsx compression"
+keywords: "compress excel file, aspose cells cloud, excel compression, spreadsheet compression, rest api, file compression"
 description: "Compress Excel files (XLS, XLSX, XLSM, XLSB, ODS) using Aspose.Cells Cloud REST API. Set compression level, handle multiple files, and integrate via SDKs."
 weight: 39
 ---
+
+## The PostCompress API of Aspose.Cells Cloud Web Services
+
+**Prerequisites:**  
+- A valid JWT token is required for authentication.  
+- Supported file formats are XLS, XLSX, XLSM, XLSB, and ODS.  
+- The maximum allowed file size is 500 MB per request (subject to service limits).
 
 This REST API compresses data in an Excel file.
 
@@ -18,9 +25,9 @@ This REST API compresses data in an Excel file.
 - Choose the level of compression
 - Supports multiple files
 
-## REST API
+### Web API Endpoint
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/compress
 ```
 
@@ -52,6 +59,8 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
     "FileContent" : "[Base64String]"
 }
 ```
+
+*Note:* `FileContent` contains the compressed workbook encoded as a Base64 string. The length of the string corresponds to the size of the compressed file; you can decode it using standard Base64 utilities to retrieve the binary Excel file.
 
 **Response Status Codes**
 

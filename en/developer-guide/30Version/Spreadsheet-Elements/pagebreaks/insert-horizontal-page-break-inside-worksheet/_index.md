@@ -5,7 +5,7 @@ linktitle: "Add Horizontal Page Break"
 type: docs
 url: /page-breaks/add-horizontal-page-break/
 aliases: [/insert-horizontal-page-break-inside-worksheet/]
-keywords: "horizontal page break, Excel, Aspose.Cells Cloud, REST API, SDK, worksheet, cURL"
+keywords: "horizontal page break, Aspose.Cells Cloud, Excel API, REST, SDK, worksheet, cURL"
 description: "Learn how to add a horizontal page break to an Excel worksheet using the Aspose.Cells Cloud REST API. Includes request details, a cURL example, and SDK code snippets for multiple programming languages."
 weight: 30
 ArticleTitle: "Add Horizontal Page Break – Aspose.Cells Cloud API"
@@ -19,7 +19,7 @@ A valid JWT token is required for all calls to the Aspose.Cells Cloud API. Obtai
 ## REST API
 
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks
 ```
 
 ### Request Parameters
@@ -45,7 +45,8 @@ You can use the **cURL** command‑line tool to access Aspose.Cells web services
 {{< tab tabNum="1" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/horizontalpagebreaks?row=18" \
+# Use HTTPS to ensure encrypted communication
+curl -v "https://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheets/Sheet1/horizontalpagebreaks?row=18" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -66,6 +67,16 @@ curl -v "http://api.aspose.cloud/v3.0/cells/sampleExcelPageBreaks.xlsx/worksheet
 {{< /tab >}}
 
 {{< /tabs >}}
+
+Example of an error response when the JWT token is missing or invalid:
+
+```json
+{
+  "Code": 401,
+  "Status": "Unauthorized",
+  "Message": "Invalid or missing JWT token."
+}
+```
 
 **Response Codes**
 

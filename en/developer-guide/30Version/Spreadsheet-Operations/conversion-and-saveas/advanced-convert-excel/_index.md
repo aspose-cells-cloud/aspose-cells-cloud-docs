@@ -14,6 +14,9 @@ ArticleTitle: "Advanced Convert Excel File – Aspose.Cells Cloud API Guide"
 
 The Advanced Convert operation enables you to transform an Excel workbook into various output formats (PDF, HTML, CSV, etc.) while giving you fine‑grained control over page setup, save options, and print settings.  
 
+**Prerequisites / Authentication**  
+To use this endpoint you must obtain an access token from Aspose.Cells Cloud and include it in the `Authorization` header as a Bearer token.  
+
 **API Reference**  
 - **Method:** `PUT`  
 - **Endpoint:** `/cells/convert`  
@@ -46,13 +49,25 @@ The Advanced Convert operation enables you to transform an Excel workbook into v
   - `401 Unauthorized` – Authentication failed or token missing.  
   - `500 Internal Server Error` – Server‑side error during conversion.  
 
+**Status Codes**
+
+| Code | Description                              | Possible Error Body |
+|------|------------------------------------------|---------------------|
+| 200  | Conversion succeeded                     | Binary stream or file reference |
+| 400  | Invalid request (missing/invalid params) | JSON with error details |
+| 401  | Authentication failure                   | JSON with authentication error |
+| 500  | Unexpected server error                  | JSON with server error information |
+
+**Notes**  
+* Some output formats have specific limitations (e.g., HTML conversion does not preserve macros). Review the format‑specific documentation for details.  
+
 ### The ability to load spreadsheet files from multiple data sources
 
 ### Set Page Setup and Save Options
 
 ## Cloud SDK Family
 
-Using an SDK helps accelerate development by handling low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using an SDK helps accelerate development by handling low‑level details, allowing you to focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
 
@@ -107,3 +122,26 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{< /tab >}}
 
 {{< /tabs >}}
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebAPI",
+  "name":"Aspose.Cells Cloud Advanced Convert",
+  "description":"Convert an Excel workbook to PDF/HTML/CSV with advanced options.",
+  "url":"https://api.aspose.cloud/v3.0/cells/convert",
+  "documentation":"https://docs.aspose.cloud/cells/advanced-convert-excel/",
+  "endpointDescription":"PUT /cells/convert",
+  "input":{
+    "@type":"PropertyValueSpecification",
+    "valueRequired":true,
+    "valueName":"format",
+    "description":"Desired output format (pdf, html, csv, …)"
+  },
+  "target":{
+    "@type":"EntryPoint",
+    "urlTemplate":"https://api.aspose.cloud/v3.0/cells/convert?format={format}",
+    "httpMethod":"PUT"
+  }
+}
+</script>

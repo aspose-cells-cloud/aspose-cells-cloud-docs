@@ -3,8 +3,9 @@ title: "Get Cell Style from a Worksheet – Aspose.Cells Cloud API"
 type: docs
 url: /get-cell-style-from-a-worksheet/
 weight: 10
-keywords: "Aspose.Cells, Excel, REST API, cell style, spreadsheet, cloud SDK"
-description: "Retrieve the style of a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API v3.0. Includes cURL example, response schema, possible HTTP status codes, and SDK snippets."
+keywords: "Aspose.Cells, Excel, REST API, cell style, spreadsheet, cloud SDK, API documentation"
+description: "Learn how to retrieve the style of a specific cell in an Excel worksheet using Aspose.Cells Cloud REST API v3. Includes cURL example, response schema, status codes, and SDK snippets."
+ArticleTitle: "Get Cell Style from a Worksheet using Aspose.Cells Cloud API – Detailed Guide"
 ---
 
 ## REST API
@@ -18,6 +19,8 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cel
 ## Security and Authentication
 
 The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+
+**Prerequisites:** a valid JWT access token, the target workbook stored in Aspose Cloud storage (or specified folder), and the file must be in a supported Excel format (e.g., .xlsx, .xls).
 
 ### Request Parameters
 
@@ -127,12 +130,32 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Request succeeded; returns the cell style JSON. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
 
+**Error Responses**  
+Typical error payloads for this endpoint follow the standard Aspose.Cells error format. For example, a 400 Bad Request returns:
+
+```json
+{
+  "Code": 400,
+  "Message": "Invalid parameter 'cellName'.",
+  "Description": "The cell name provided is not in a valid A1 format."
+}
+```
+
+Similarly, a 401 Unauthorized returns:
+
+```json
+{
+  "Code": 401,
+  "Message": "Authentication failed.",
+  "Description": "The JWT token is missing or invalid."
+}
+```
 
 ## How to Use the GetWorksheetCellStyle API with SDKs
 
@@ -334,3 +357,7 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
+
+**See Also**  
+- [Set Cell Style](https://apireference.aspose.cloud/cells/#/Cells/SetWorksheetCellStyle)  
+- [Get Cell Value](https://apireference.aspose.cloud/cells/#/Cells/GetWorksheetCell)

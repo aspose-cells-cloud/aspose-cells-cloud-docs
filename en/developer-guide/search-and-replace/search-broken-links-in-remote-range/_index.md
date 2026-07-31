@@ -5,7 +5,7 @@ ArticleTitle: "Find & Fix Broken Links in Remote Excel Range – Cloud Spreadshe
 linktitle: "Search Remote Range Broken Links"
 type: docs
 url: /search-broken-links-in-remote-range/
-keywords: "Aspose, Cells, broken links, API, Excel range, validation, cloud, spreadsheet, external reference, checker"
+keywords: "Aspose Cells, broken links, Excel API, cloud spreadsheet, link checker, external references, range validation"
 description: "Use Aspose.Cells Cloud API to scan a specific Excel range for broken external links, invalid formulas, or missing data sources. Secure, fast, and cloud‑based."
 weight: 100
 ---
@@ -14,6 +14,10 @@ weight: 100
 
 Automatically detect broken links in the range data of Excel files stored in cloud storage. Our API scans specified ranges for broken external references, invalid formulas, and missing data sources. Supports remote spreadsheet auditing, automated quality checks, and integration with cloud storage providers. RESTful API for enterprise workflow automation.
 
+**Prerequisites**  
+Before calling this endpoint, ensure you have a valid JWT access token, the target workbook is uploaded to your configured cloud storage, and you are aware of any applicable API rate limits. The storage name and folder path (if used) must correspond to an existing location in your account.
+
+**Use the Search Broken Links in Remote Range API** to detect broken external references within a specified Excel range.
 
 ### **Web API**
 
@@ -23,7 +27,7 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{ce
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
 
 ```bash
 -H "Authorization: Bearer {access_token}"

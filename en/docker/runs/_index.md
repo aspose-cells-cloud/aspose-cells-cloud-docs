@@ -63,6 +63,17 @@ The container runs in detached mode (`-d`). After it starts, you can verify that
 curl http://localhost:47900/v3.0/health
 ```
 
+**Sample `storageResource.json`**
+
+```json
+{
+  "default": {
+    "type": "Local",
+    "rootFolder": "c:/data"
+  }
+}
+```
+
 ## Run Aspose.Cells Cloud Docker Container in License Billing Mode
 
 ```powershell
@@ -108,3 +119,29 @@ After starting the container, confirm the service is operational with the same h
 ## Reference Document
 
 - [How to configure Aspose.Cells Cloud Docker Container storage.](https://docs.aspose.cloud/cells/docker/storage/)
+
+---
+
+### Troubleshooting
+
+- **Health‑check fails** – Ensure port 47900 is not blocked by a firewall and that the container is running (`docker ps`).  
+- **License errors** – Verify that `LicensePublicKey`, `LicensePrivateKey`, or `LicenseFile` values are correct and that the environment variables are passed without extra whitespace.  
+- **Storage not accessible** – Confirm the host folder (`c:/data`) exists and Docker has permission to read/write to it.
+
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "How to Run Aspose.Cells Cloud Docker Container",
+  "description": "Step‑by‑step guide to launch Aspose.Cells Cloud in a Docker container on Windows Server 2022, covering trial, metered‑billing, license‑billing, and access‑token modes.",
+  "author": {
+    "@type": "Organization",
+    "name": "Aspose"
+  },
+  "datePublished": "2026-07-30",
+  "url": "https://docs.aspose.cloud/cells/run-aspose-cells-cloud-docker-container/",
+  "keywords": "Aspose.Cells, Docker, Windows Server 2022, trial mode, metered billing, license billing, storage configuration"
+}
+</script>

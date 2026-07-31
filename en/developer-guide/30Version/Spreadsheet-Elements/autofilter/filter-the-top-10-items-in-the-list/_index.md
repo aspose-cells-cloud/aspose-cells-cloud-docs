@@ -7,19 +7,22 @@ type: docs
 url: /autofilter/add-top-10-filter/
 aliases:
   [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
-keywords: "Aspose.Cells Cloud, Top 10 filter, AutoFilter, Excel API, REST, spreadsheet automation, Excel worksheet filter"
-description: "Learn how to apply a Top 10 AutoFilter to an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, cURL example, authentication details, error handling, and SDK snippets for C#, Java, Python, and more."
+keywords: "Aspose.Cells, AutoFilter, Top 10 filter, Excel API"
+description: "Learn how to apply a Top 10 AutoFilter to an Excel worksheet using Aspose.Cells Cloud REST API. Includes endpoint, parameters, HTTPS cURL example, authentication details, error handling, and SDK snippets for C#, Java, Python, and more."
 weight: 65
 ---
 
-
 ## REST API
-
 
 This REST API filters the **Top 10** items in a list.
 
+> **Prerequisites**  
+> • Obtain a valid JWT token using Aspose.Cells Cloud authentication.  
+> • Upload the Excel workbook to your Aspose Cloud storage (or specify the storage/folder where it resides).  
+> • Know the worksheet name and the cell range that you want to filter.
+
 ```bash
-PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10
+PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/filterTop10
 ```
 
 ### **Security and Authentication**
@@ -42,13 +45,42 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | **folder**      | string  | query    | No       | —       | The folder in storage where the Excel file is located.                      |
 | **storageName** | string  | query    | No       | —       | The name of the Aspose Cloud storage.                                       |
 
-
 ### **Response**
 
 ```json
 {
     "Status":"OK",
     "Code":200
+}
+```
+
+**Typical error responses**
+
+```json
+{
+    "Code":400,
+    "Message":"Bad Request – missing or invalid parameters."
+}
+```
+
+```json
+{
+    "Code":401,
+    "Message":"Unauthorized – invalid or missing JWT token."
+}
+```
+
+```json
+{
+    "Code":413,
+    "Message":"Payload Too Large – uploaded file exceeds the allowed size."
+}
+```
+
+```json
+{
+    "Code":500,
+    "Message":"Internal Server Error – unexpected server condition."
 }
 ```
 
@@ -61,7 +93,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
 
 ## How to Use the PutWorksheetFilterTop10 API with SDKs
 
@@ -76,7 +107,7 @@ You can use the cURL command‑line tool to access Aspose.Cells web services eas
 {{< tab tabNum="11" >}}
 
 ```bash
-curl -v "http://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filterTop10?range=A1:B10&fieldIndex=0&isTop=true&itemCount=10" \
+curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFilter/filterTop10?range=A1:B10&fieldIndex=0&isTop=true&itemCount=10" \
   -X PUT \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
@@ -155,4 +186,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{< /tab >}}
 
 {{< /tabs >}}
-
