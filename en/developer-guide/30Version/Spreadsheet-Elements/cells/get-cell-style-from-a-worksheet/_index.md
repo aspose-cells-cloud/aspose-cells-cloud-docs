@@ -8,19 +8,17 @@ description: "Learn how to retrieve the style of a specific cell in an Excel wor
 ArticleTitle: "Get Cell Style from a Worksheet using Aspose.Cells Cloud API – Detailed Guide"
 ---
 
-## REST API
-
 Use this REST API to retrieve the **style** of a cell in an Excel worksheet.
 
-```bash
+## GetWorksheetCellStyle API
+
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
 ```
 
-## Security and Authentication
+### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-**Prerequisites:** a valid JWT access token, the target workbook stored in Aspose Cloud storage (or specified folder), and the file must be in a supported Excel format (e.g., .xlsx, .xls).
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 
@@ -126,11 +124,11 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 }
 ```
 
-**Http Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Request succeeded; returns the cell style JSON. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |

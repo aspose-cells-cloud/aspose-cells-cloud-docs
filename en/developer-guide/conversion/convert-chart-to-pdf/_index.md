@@ -21,29 +21,9 @@ Export charts from a local Excel file to [PDF](https://docs.fileformat.com/pdf/)
 PUT https://api.aspose.cloud/v4.0/cells/convert/chart/pdf
 ```
 
-### Security and Authentication
-**Prerequisites:** Obtain a JWT access token by registering an application in the Aspose Cloud dashboard.  
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+### **Security and Authentication**
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
-**Sample cURL request**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/chart/pdf?worksheet=Sheet1&chartIndex=0" \
-     -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
-     -F "Spreadsheet=@/path/to/your/file.xlsx" \
-     -F "outPath=output/chart.pdf"
-```
-
-The request uses **multipart/form‑data**. The required fields are:
-
-- `Spreadsheet` – the Excel file to upload.  
-- `worksheet` – (optional) name of the worksheet containing the chart.  
-- `chartIndex` – (optional) zero‑based index of the chart to convert.  
-- `outPath` – (optional) path where the generated PDF should be stored.  
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request Parameters:**
 
@@ -72,18 +52,15 @@ The request uses **multipart/form‑data**. The required fields are:
 ]
 ```
 
-### **Success Status Codes**
+**HTTP Status Codes**
 
-- **200 OK** – The chart was converted successfully and the PDF file is returned in the response body.
-- **202 Accepted** – The request has been accepted for asynchronous processing; the result will be available at the location specified by `outPath`.
-
-### Error Codes
-
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should you use the Convert Chart to PDF API?
 
 ### **1. Business Reporting & Automation**

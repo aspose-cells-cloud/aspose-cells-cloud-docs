@@ -18,11 +18,10 @@ Importing a picture into an Excel worksheet allows you to enrich spreadsheets wi
 
 **Prerequisites:** You must have a valid JWT authentication token and an existing workbook stored in Aspose Cloud Storage before invoking the import operation.
 
-## REST API
+## PostImportData API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
 ### **Security and Authentication**

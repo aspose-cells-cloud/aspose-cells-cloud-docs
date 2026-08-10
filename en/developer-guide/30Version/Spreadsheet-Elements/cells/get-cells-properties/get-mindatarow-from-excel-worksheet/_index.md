@@ -39,15 +39,15 @@ curl -X GET "https://api.aspose.cloud/v3.0/cells/{fileName}/worksheets/{sheetNam
 }
 ```
 
-**Status Codes**
+**HTTP Status Codes**
 
-| Code | Description                                 |
-|------|---------------------------------------------|
-| 200  | Success – returns the minimum data row index. |
-| 401  | Unauthorized – invalid or missing access token. |
-| 404  | Not Found – workbook or worksheet does not exist. |
-| 500  | Internal Server Error – unexpected condition. |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ### SDK Examples
 
 Using an SDK is the fastest way to develop. An SDK handles low‑level details so you can focus on your project logic. Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

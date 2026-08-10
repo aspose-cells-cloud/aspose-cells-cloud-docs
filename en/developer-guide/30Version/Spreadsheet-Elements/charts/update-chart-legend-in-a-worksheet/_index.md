@@ -15,11 +15,15 @@ This REST API updates a chart legend.
 
 A chart legend displays the names and symbols for the data series in a chart. Updating the legend allows you to customize its appearance, such as font style, color, and shadow.
 
-## REST API
+## PostWorksheetChartLegend API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/legend
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 

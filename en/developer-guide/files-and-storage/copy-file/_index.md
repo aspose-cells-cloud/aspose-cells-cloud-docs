@@ -28,26 +28,6 @@ The **copyFile** API allows users to duplicate an Excel file from a specified so
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
-**Prerequisites**
-
-- An active Aspose Cloud account.  
-- A generated JWT access token (see the example below).  
-- Optional: Storage name(s) if you are using a custom cloud storage.
-
-**Sample request to obtain a JWT token**
-
-```bash
-curl -X POST "https://api.aspose.cloud/connect/token" \
-     -H "Content-Type: application/x-www-form-urlencoded" \
-     -d "grant_type=client_credentials&client_id={YOUR_CLIENT_ID}&client_secret={YOUR_CLIENT_SECRET}"
-```
-
-The response contains the `access_token` that must be included in the `Authorization` header of subsequent API calls.
-
 ### The request parameters of the **copyFile** API are
 
 | Parameter Name  | Type   | Path/Query String/HTTPBody | Description                                        |

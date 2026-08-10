@@ -72,14 +72,15 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/myWorkbook.xlsx/worksheets/Shee
 | `folder` *(optional)*| string | No       | Cloud folder path where the workbook is located. |
 | `storageName` *(optional)*| string | No   | Name of the storage. If omitted, the default storage is used. |
 
-### Response Codes
-| Code | Description |
-|------|-------------|
-| **200** | Successful request – returns the cell information. |
-| **400** | Bad request – missing or invalid parameters. |
-| **401** | Unauthorized – authentication token is missing or invalid. |
-| **404** | Not found – the specified workbook or worksheet does not exist. |
-| **500** | Internal server error – an unexpected condition occurred. |
+**HTTP Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 - **Use Aspose.Cells Cloud SDKs**
 

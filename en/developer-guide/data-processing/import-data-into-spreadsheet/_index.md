@@ -39,10 +39,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/import/data?worksheet=Sheet1&st
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### Request Parameters
 
 | Parameter Name     | Type   | Location         | Description                                                              |
@@ -74,18 +70,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-| Code | Message               | When It Occurs                                      |
-| ---- | --------------------- | --------------------------------------------------- |
-| 200  | OK                    | Request succeeded and file is returned.            |
-| 202  | Accepted              | Request accepted for asynchronous processing.      |
-| 400  | Bad Request           | Invalid API URI or malformed request parameters.   |
-| 401  | Unauthorized          | Missing/invalid access token or client credentials.|
-| 404  | Not Found             | The specified spreadsheet cannot be accessed.      |
-| 415  | Unsupported Media Type| Uploaded file type is not supported.               |
-| 500  | Internal Server Error | An unexpected server‑side problem while processing.|
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Why You Should Use This API
 
 - **Efficient data loading** – Enables bulk import of large datasets directly into a workbook without creating intermediate files.  

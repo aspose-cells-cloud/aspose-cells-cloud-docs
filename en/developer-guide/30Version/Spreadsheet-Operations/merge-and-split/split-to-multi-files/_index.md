@@ -16,9 +16,9 @@ The Aspose.Cells Cloud REST API splits multi‑sheet Excel workbooks into separa
 **Prerequisites**  
 Before calling the API you must obtain a valid JWT token and include it in the `Authorization` header of each request. See the [authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/) for details.
 
-## REST API
+## PostSplit API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/split
 ```
 
@@ -61,17 +61,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-**Response Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Split operation succeeded; response contains split file details. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
-
 ## How to Use the PostSplit API with SDKs
 
 ### PostSplit API Specification

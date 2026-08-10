@@ -38,16 +38,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | `storageName`  | string | Query    | The name of the storage where the file resides. Omit if the default storage is used.        |
 | `versionId`    | string | Query    | Identifier of a specific file version to delete. If omitted, the latest version is removed. |
 
-### HTTP Response Codes
+**HTTP Status Codes**
 
-| Code | Meaning                                                   |
-| ---- | --------------------------------------------------------- |
-| 200  | File deleted successfully (empty body).                   |
-| 401  | Unauthorized – missing or invalid token.                  |
-| 404  | Not Found – the specified file or storage does not exist. |
-| 429  | Too Many Requests – rate limit exceeded.                  |
-| 500  | Internal Server Error – unexpected condition.             |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ### Response Description
 
 A successful request returns **HTTP 200** with an empty response body. No JSON payload is returned.

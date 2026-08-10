@@ -20,6 +20,10 @@ This REST API updates **metadata** in multiple Excel files.
 POST https://api.aspose.cloud/v3.0/cells/metadata/update
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 ### Request parameters
 
 | Parameter Name     | Type   | Location         | Description                                    |

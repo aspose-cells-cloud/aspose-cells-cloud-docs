@@ -20,12 +20,7 @@ PUT https://api.aspose.cloud/v4.0/cells/merge/spreadsheet
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.  
-Before calling the API, ensure you have obtained a valid access token and that your application has the required scopes. Include the token in the `Authorization` header as shown below:
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request Parameters**
 
@@ -72,13 +67,15 @@ The file can be downloaded directly from the `FileUrl` or saved to the location 
 | 200 OK      | `application/octet-stream` | Binary stream of the merged workbook file.     |
 | 202 Accepted| `application/json`          | JSON containing `FileUrl`, `FileName`, etc.   |
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI. *Check the endpoint and required parameters.*  
-- **401 Unauthorized** – Invalid access token or client credentials. *Refresh your OAuth token and ensure the `Authorization` header is correct.*  
-- **404 Not Found** – The specified spreadsheet file is not accessible. *Verify the file path or upload the file again.*  
-- **500 Server Error** – An internal error occurred while processing the spreadsheet. *Retry the request; if the problem persists, contact support with the request ID.*
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should we use the Merge Spreadsheet API?
 
 ### **Education and Academic Applications**

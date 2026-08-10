@@ -13,13 +13,13 @@ ArticleTitle: "Add Date Filter to an Excel Worksheet | Aspose.Cells Cloud API"
 keywords: "Aspose.Cells, Excel date filter, AutoFilter API, REST API, cloud SDK, cURL, spreadsheet automation"
 ---
 
-## REST API
-
 This REST API adds a **date filter** to an Excel worksheet.
 
 **Prerequisites:** You must have a valid JWT token, and the target workbook must already exist in the specified storage location. The request does not require a JSON body.
 
-```bash
+## PutWorksheetDateFilter API
+
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 ```
 
@@ -59,17 +59,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-**Response Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Operation succeeded; response contains status details. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
-
 ## How to Use the PutWorksheetDateFilter API with SDKs
 
 ### PutWorksheetDateFilter API Specification

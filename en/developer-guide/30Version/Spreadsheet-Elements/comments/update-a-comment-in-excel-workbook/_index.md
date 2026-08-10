@@ -15,11 +15,15 @@ This REST API updates a comment on a worksheet cell. Use this endpoint to **upda
 - A valid OAuth/JWT access token must be included in the `Authorization` header.  
 - The workbook must be stored in a supported cloud storage location (specify `folder` and optionally `storageName`).  
 
-## REST API
+## PostWorksheetComment API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 

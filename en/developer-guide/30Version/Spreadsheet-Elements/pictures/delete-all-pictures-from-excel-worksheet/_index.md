@@ -21,11 +21,15 @@ This REST API deletes **all** pictures in a worksheet.
 **Version Compatibility**  
 The endpoint follows the Cells Cloud 3.0 API specification. Ensure that your client libraries and request URLs target `api.aspose.cloud/v3.0`.
 
-## REST API
+## DeleteWorksheetPictures API
 
-```bash
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 

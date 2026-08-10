@@ -71,6 +71,10 @@ Authorization: Bearer {access_token}
 
 ---
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 ## Request Parameters
 
 | Name | Location | Type | Required | Description |
@@ -124,14 +128,15 @@ The response body contains the full HTML markup of the requested table.
 
 ---
 
-## Error Codes
+**HTTP Status Codes**
 
-| HTTP Code | Meaning | When it occurs |
-|-----------|---------|----------------|
-| **400 Bad Request** | Invalid request URI or missing required parameters. |
-| **401 Unauthorized** | Invalid or missing JWT token, or incorrect client credentials. |
-| **404 Not Found** | The specified workbook, worksheet, or table cannot be found. |
-| **500 Internal Server Error** | An unexpected error while processing the spreadsheet (e.g., corrupted file, calculation failure). |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 Error responses are returned in JSON format:
 

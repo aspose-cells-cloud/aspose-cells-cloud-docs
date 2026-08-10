@@ -16,11 +16,15 @@ The **Add Horizontal Page Break** API inserts a horizontal page break into an Ex
 **Prerequisites & Authentication**  
 A valid JWT token is required for all calls to the Aspose.Cells Cloud API. Obtain the token via the OAuth 2.0 workflow described in the authentication guide, and include it in the request header as `Authorization: Bearer <jwt token>`. The target workbook must reside in a storage location accessible to the API (default storage or a custom `storageName` you specify).
 
-## REST API
+## PutHorizontalPageBreak API
 
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 
@@ -78,15 +82,15 @@ Example of an error response when the JWT token is missing or invalid:
 }
 ```
 
-**Response Codes**
+**HTTP Status Codes**
 
-| HTTP Code | Description                                 |
-|-----------|---------------------------------------------|
-| 200       | The horizontal page break was added successfully. |
-| 400       | Bad request – missing or invalid parameters. |
-| 401       | Unauthorized – invalid or missing JWT token. |
-| 404       | Not found – the specified workbook or worksheet does not exist. |
-| 500       | Internal server error – an unexpected condition occurred. |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 For more details on related operations, see the API pages for **[Get Horizontal Page Breaks](../get-horizontal-page-breaks/)** and **[Delete Horizontal Page Break](../delete-horizontal-page-break/)**.
 

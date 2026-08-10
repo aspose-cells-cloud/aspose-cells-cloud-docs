@@ -13,7 +13,7 @@ weight: 80
 
 This REST API converts a spreadsheet file to a PDF‑format file. **Prerequisites:** Obtain a valid JWT access token, ensure the source Excel file is stored in a supported storage, and have appropriate permissions to invoke the conversion endpoint.
 
-## REST API
+## PostConvertWorkbookToPDF API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/convert/pdf
@@ -55,17 +55,15 @@ The response returns a JSON object with file metadata. The PDF file itself can b
 }
 ```
 
-#### HTTP Status Codes
+**HTTP Status Codes**
 
-| Status Code | Description |
-|------------|-------------|
-| 200 OK | File converted successfully; response contains PDF file information. |
-| 400 Bad Request | Invalid request parameters or malformed file. |
-| 401 Unauthorized | Missing or invalid access token. |
-| 500 Internal Server Error | Server‑side error during conversion. |
-
-
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## How to Use the PostConvertWorkbookToPDF API with SDKs
 
 ### PostConvertWorkbookToPDF API Specification

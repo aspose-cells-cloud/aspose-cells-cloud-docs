@@ -27,11 +27,7 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/con
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request Parameters**
 
@@ -71,13 +67,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - **code** – HTTP status code returned by the service.
 - **status** – Textual description of the result.
 
-### **Error Codes**
+**HTTP Status Codes**
 
-- **400 Bad Request** – Invalid API URI or malformed parameters.
-- **401 Unauthorized** – Missing or invalid OAuth 2.0 token.
-- **404 Not Found** – The workbook or worksheet cannot be located.
-- **500 Server Error** – An unexpected condition occurred while processing the request.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should we use the Search content within the worksheet of the Spreadsheet API?
 
 - **Workbook compliance audit:** Quickly locate sensitive terms (e.g., “Confidential”) across the entire file.

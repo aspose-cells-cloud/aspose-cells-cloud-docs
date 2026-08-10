@@ -18,9 +18,9 @@ This REST API adds a new chart to a worksheet.
 **Prerequisites**  
 Before calling this operation, obtain a valid JWT access token and ensure the target workbook is stored in the specified folder or storage location.
 
-## REST API
+## PutWorksheetAddChart API
 
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts
 ```
 
@@ -60,16 +60,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-**Response Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Chart added successfully; response contains chart object details. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
 ## How to Use the PutWorksheetAddChart API with SDKs
 
 ### PutWorksheetAddChart API Specification

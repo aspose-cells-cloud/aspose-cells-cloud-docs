@@ -22,11 +22,15 @@ This REST API retrieves the title of a chart that is stored in a worksheet of an
 
 **Prerequisites**: To call this endpoint you must have a valid Aspose.Cells Cloud OAuth2/JWT access token with the `Cells.Read` scope. The workbook must already be uploaded to the specified storage location.
 
-## REST API
+## GetWorksheetChartTitle API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 

@@ -15,22 +15,21 @@ weight: 110
 ArticleTitle: "Remove Write‑Protection (Password) from an Excel Workbook"
 ---
 
-## REST API
-
 This REST API removes **write‑protection (password)** from an Excel workbook, allowing you to **remove Excel password** protection programmatically.
 
 **Prerequisites:** Obtain a valid JWT token, ensure the workbook is stored in a supported storage location, and use API version v3.0.
 
 For adding protection, see the [Protect Excel](/cells/protect/) guide.
 
-```bash
+## DeleteDocumentUnprotectFromChanges API
+
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/writeProtection
 ```
 
-### Security and Authentication
+### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 
@@ -50,16 +49,15 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 }
 ```
 
-**Http Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Password removal succeeded; workbook is no longer write‑protected. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
 ## How to Use the DeleteDocumentUnprotectFromChanges API with SDKs
 
 ### DeleteDocumentUnprotectFromChanges API Specification

@@ -20,11 +20,15 @@ The Delete Metadata operation permanently removes all workbook properties (stand
 
 This REST API deletes **metadata** from one or more Excel files. It removes workbook properties such as author, title, and custom data, and returns the cleaned files.
 
-## REST API
+## a API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/metadata/delete
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 

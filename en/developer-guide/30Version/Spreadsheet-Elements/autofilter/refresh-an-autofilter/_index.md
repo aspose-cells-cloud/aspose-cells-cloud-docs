@@ -23,21 +23,9 @@ This REST API refreshes an auto‑filter on an Excel worksheet (API version **v3
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/refresh
 ```
 
-## Security and Authentication
+### **Security and Authentication**
 
-**Prerequisites:**  
-A valid JWT token is required to call any Aspose.Cells Cloud endpoint. Obtain the token by following the authentication guide linked below.
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-#### Request parameters
-
-| Parameter Name  | Type   | Location | Description                                     |
-| --------------- | ------ | -------- | ----------------------------------------------- |
-| **name**        | string | path     | Name of the Excel file (e.g., `Book1.xlsx`).    |
-| **sheetName**   | string | path     | Name of the worksheet that contains the filter. |
-| **folder**      | string | query    | Folder path in storage where the file resides.  |
-| **storageName** | string | query    | Name of the storage (if not the default).       |
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Response**
 
@@ -48,11 +36,11 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 }
 ```
 
-**Http Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Refresh operation succeeded; response contains status details. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |

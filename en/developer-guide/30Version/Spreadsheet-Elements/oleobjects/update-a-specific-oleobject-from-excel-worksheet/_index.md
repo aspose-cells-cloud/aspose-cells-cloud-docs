@@ -15,14 +15,13 @@ ArticleTitle: "Update an OLE Object in an Excel Worksheet – Aspose.Cells Cloud
 
 This REST API updates an **OLE object** in an Excel worksheet.
 
-## Security and Authentication
-**Prerequisites:** Before calling this API you must obtain a valid JWT token from Aspose Cloud, have the target workbook stored in your Aspose Cloud storage, and know the folder and storage names you will reference.
+### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-## REST API
+## PostUpdateWorksheetOleObject API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects/{oleObjectIndex}
 ```
 

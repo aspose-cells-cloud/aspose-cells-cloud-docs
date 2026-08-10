@@ -13,17 +13,17 @@ description: "Learn how to delete a date filter from an Excel worksheet using th
 ArticleTitle: "Delete a Date Filter – Aspise.Cells Cloud API Documentation"
 ---
 
-## REST API
-
 This REST API deletes a date filter on an Excel worksheet.
 
 **Prerequisites:** Ensure you have a valid JWT token, the workbook is stored in Aspose Cloud storage, and you have appropriate permissions to modify the worksheet.
 
-```bash
+## DeleteWorksheetDateFilter API
+
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/dateFilter
 ```
 
-## Security and Authentication
+### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
@@ -53,7 +53,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-**Http Status Codes**
+**HTTP Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 The API returns standard HTTP status codes indicating the result of the delete operation.
 

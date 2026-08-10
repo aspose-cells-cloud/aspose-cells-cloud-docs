@@ -12,7 +12,7 @@ ArticleTitle: "Convert an Excel File to Different Formats – Aspose.Cells Cloud
 
 This REST API converts an Excel file to a different format. It supports a wide range of output formats and allows you to set page‑setup and save options before conversion.
 
-## REST API
+## PostConvertWorkBook API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/convert
@@ -23,38 +23,6 @@ Before using this API, ensure you have a valid JWT token and have installed the 
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
-
-**Request Body Parameter**
-
-| Parameter Name                                                                          | Type   | Description                          |
-| --------------------------------------------------------------------------------------- | ------ | ------------------------------------ |
-| `ConvertWorkbookOptions`<br/>[ConvertWorkbookOptions](/cells/convert-workbook-options/) | object | Options for converting the workbook. |
-
-**Response**
-
-The API returns a **FileInfo** object that contains the generated Spreadsheet file.
-
-| Field           | Type   | Description                                   |
-| --------------- | ------ | --------------------------------------------- |
-| **Filename**    | string | Name of the Spreadsheet file (e.g., `example.xlsx`). |
-| **FileSize**    | int    | Size of the file in bytes.                    |
-| **FileContent** | string | Base64‑encoded content of the Spreadsheet file.      |
-
-[FileInfo](/cells/file-info/)
-
-
-
-**Response Status Codes**
-
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Conversion succeeded; response contains converted file details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-
 
 ## How to Use the PostConvertWorkBook API with SDKs
 

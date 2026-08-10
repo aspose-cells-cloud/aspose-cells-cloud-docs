@@ -13,13 +13,9 @@ ArticleTitle: "Get a Pivot Table in an Excel Worksheet"
 
 This REST API retrieves worksheet **pivot table** information by its index.
 
-## Security and Authentication
+### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-**Prerequisites:**  
-1. Obtain a valid JWT access token.  
-2. Ensure the target Excel file is uploaded to Aspose Cloud storage (or specify the correct folder path).  
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ## REST API
 

@@ -22,11 +22,7 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>. To obtain a token, send a POST request to the authentication endpoint with your client ID and secret; the response contains an `access_token` that must be included in the `Authorization` header of every API call. Required scopes include `Cells.Read` and `Cells.Write`. The service enforces standard rate‑limit rules (typically 100 requests per minute per account).
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request Parameters:**
 
@@ -63,14 +59,15 @@ On success the API returns **HTTP 200** (or **202** for asynchronous processin
 ]
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-- **200 OK** – CSV file returned successfully.  
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI or malformed request parameters.  
-- **401 Unauthorized** – Invalid access token, or invalid client ID and secret.  
-- **404 Not Found** – The spreadsheet file is not accessible.  
-- **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where Should You Use the Convert Spreadsheet To CSV API?
 
 - **Data Export for Reporting Systems** – Generate CSV extracts from Excel‑based reports to feed BI tools or data warehouses without manual file handling.

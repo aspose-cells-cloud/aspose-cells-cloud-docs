@@ -14,11 +14,15 @@ ArticleTitle: "Add a Picture to an Excel Worksheet – Aspose.Cells Cloud API"
 This REST API adds a new picture to an Excel worksheet.  
 **Prerequisites:** You must have a valid Aspose Cloud authentication token, an existing workbook stored in a supported storage, and appropriate permissions to modify the worksheet.
 
-## REST API
+## PutWorksheetAddPicture API
 
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 
@@ -37,15 +41,15 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures
 
 **Request Body Note:** When `picturePath` is omitted, send the binary image data in the request body using `multipart/form-data`.
 
-**Response Codes**
+**HTTP Status Codes**
 
-| Code | Description |
-|------|-------------|
-| 200  | Picture added successfully. |
-| 400  | Bad request – missing or invalid parameters. |
-| 401  | Unauthorized – authentication token is missing or invalid. |
-| 404  | Not found – specified workbook, worksheet, or storage does not exist. |
-| 500  | Internal server error – unexpected condition encountered. |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Example 200 Response Schema**
 

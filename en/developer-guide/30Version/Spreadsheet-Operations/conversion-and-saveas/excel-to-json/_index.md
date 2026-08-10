@@ -85,16 +85,15 @@ Common HTTP status codes:
 - **401** – Unauthorized (invalid or missing access token).
 - **500** – Internal server error.
 
-**Status Codes**
+**HTTP Status Codes**
 
-| Status Code | Description                                            |
-|-------------|--------------------------------------------------------|
-| 200         | Success – JSON file returned.                          |
-| 400         | Bad request – missing file or invalid parameters.     |
-| 401         | Unauthorized – invalid or missing access token.        |
-| 500         | Internal server error.                                 |
-
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## How to Use the PostConvertWorkbookToJson API with SDKs
 
 ### PostConvertWorkbookToJson API Specification

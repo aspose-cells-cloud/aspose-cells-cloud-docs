@@ -45,6 +45,10 @@ The request body is `multipart/form-data` containing the spreadsheet file. All o
 
 ---
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 ## Request Parameters
 
 | Name            | Type    | Location | Required | Description |
@@ -152,26 +156,16 @@ Save the response body to a file (e.g., `report.html`) to view the rendered tabl
 
 ---
 
-## Response Codes
+**HTTP Status Codes**
 
-| Code | Meaning                     | Description |
-|------|-----------------------------|-------------|
-| **200** | OK | Conversion succeeded; binary HTML file returned. |
-| **400** | Bad Request | Malformed URI or missing required parameters. |
-| **401** | Unauthorized | Invalid or missing JWT token. |
-| **404** | Not Found | Specified workbook or worksheet could not be located. |
-| **500** | Internal Server Error | Unexpected server error (e.g., corrupted workbook). |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ---
-
-## Error Codes (Detailed)
-
-| Code | JSON Body Example | When It Occurs |
-|------|-------------------|----------------|
-| 400 | `{ "code": "BadRequest", "message": "The request URI is malformed." }` | Invalid query string, missing required fields. |
-| 401 | `{ "code": "Unauthorized", "message": "Authentication failed." }` | Invalid access token, client ID, or secret. |
-| 404 | `{ "code": "NotFound", "message": "The specified file could not be found." }` | Workbook not accessible or worksheet name incorrect. |
-| 500 | `{ "code": "InternalServerError", "message": "An unexpected error occurred." }` | Server‑side processing issue (e.g., corrupted file). |
 
 ---
 

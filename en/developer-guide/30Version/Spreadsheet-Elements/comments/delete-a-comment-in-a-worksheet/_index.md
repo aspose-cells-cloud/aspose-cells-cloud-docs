@@ -72,13 +72,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 }
 ```
 
-### Response Codes Summary
-- **200 OK** – Comment deleted successfully.  
-- **400 Bad Request** – Missing or malformed parameters.  
-- **401 Unauthorized** – Invalid or missing JWT token.  
-- **404 Not Found** – Workbook, worksheet, or comment does not exist.  
-- **500 Internal Server Error** – Unexpected server‑side condition.
+**HTTP Status Codes**
 
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ### Error Responses
 
 | HTTP Code | Description | Example |

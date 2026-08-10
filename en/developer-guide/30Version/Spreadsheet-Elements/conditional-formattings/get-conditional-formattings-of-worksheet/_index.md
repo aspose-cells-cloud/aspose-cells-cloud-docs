@@ -105,16 +105,15 @@ _The example above shows only the most relevant fields to keep the payload conci
 | Style.Font.Color | object | RGBA color definition for the font. |
 | Style.Font.IsBold | boolean | Indicates whether the font is bold. |
 
-**Status Codes**
+**HTTP Status Codes**
 
-| HTTP Code | Description |
-|-----------|-------------|
-| 200 | Successful request – returns conditional formatting rules. |
-| 202 | Accepted – request is being processed (if applicable). |
-| 400 | Bad Request – missing or invalid parameters. |
-| 401 | Unauthorized – missing or invalid JWT token. |
-| 404 | Not Found – workbook or worksheet does not exist. |
-| 500 | Internal Server Error – unexpected server failure. |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 {{< /tab >}}
 

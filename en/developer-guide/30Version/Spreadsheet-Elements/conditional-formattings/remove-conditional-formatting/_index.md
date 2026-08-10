@@ -86,16 +86,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/condit
 }
 ```
 
-## Status Codes
+**HTTP Status Codes**
 
-| Code | Meaning                              |
-|------|--------------------------------------|
-| 200  | Conditional formatting deleted successfully. |
-| 400  | Bad Request – missing or invalid parameters. |
-| 401  | Unauthorized – invalid or missing JWT token. |
-| 404  | Not Found – workbook or worksheet does not exist. |
-| 500  | Internal Server Error – unexpected failure. |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Error Responses
 
 | HTTP Code | Reason | Example Body |

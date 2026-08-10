@@ -37,10 +37,6 @@ The `storageExists` API checks whether a specified storage exists in the Aspose.
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### Request Parameters
 
 | Parameter Name | Type   | Location | Description                                     |
@@ -82,14 +78,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-| HTTP Status      | Meaning                                                 |
-| ---------------- | ------------------------------------------------------- |
-| 200 OK           | Request succeeded; response contains the `Exists` flag. |
-| 401 Unauthorized | Missing or invalid authentication token.                |
-| 404 Not Found    | The specified `storageName` does not exist.             |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## OpenAPI Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/StorageController/StorageExists" rel="nofollow noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface, allowing developers to seamlessly interact with the REST API directly from a web browser.

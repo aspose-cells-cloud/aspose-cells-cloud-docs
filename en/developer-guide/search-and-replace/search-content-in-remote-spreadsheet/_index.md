@@ -30,10 +30,6 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### **Request Parameters:**
 
 | Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                      |
@@ -74,9 +70,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 The response contains a list of cells (`CellName`) where the searched text was found, together with the worksheet name and the matching text. If no matches are found, the `Cells` array is empty and the request still returns HTTP 200 OK.
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
   ```json
   {"code":400,"message":"Invalid request URI"}
   ```

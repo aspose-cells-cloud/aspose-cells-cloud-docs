@@ -37,10 +37,6 @@ POST https://api.aspose.cloud/v4.0/cells/content/split/text
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### The request parameters of **splitText** API are
 
 | Parameter Name                 | Type    | Location | Required? | Default        | Description                                                                                                                                         |
@@ -87,14 +83,15 @@ The generic schema previously shown is retained for reference:
 ]
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI or malformed parameters.  
-- **401 Unauthorized** – Missing or invalid access token (or client‑id/secret).  
-- **404 Not Found** – The specified spreadsheet file could not be accessed.  
-- **429 Too Many Requests** – Rate limit exceeded; retry after the period indicated in the `Retry-After` header.  
-- **500 Server Error** – The spreadsheet encountered an internal processing anomaly.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should we use the Split Text API?
 
 ### **CSV & Text File Import Cleanup**

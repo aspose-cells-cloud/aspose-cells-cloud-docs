@@ -62,15 +62,15 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/compress?level=5&ou
 ]
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token or client credentials.
-- **404 Not Found** – The spreadsheet file is not accessible.
-- **429 Too Many Requests** – Rate limit exceeded; retry after the period indicated in the `Retry-After` header.
-- **500 Server Error** – The spreadsheet encountered an anomaly while processing.
-
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should we use the Compress Spreadsheet API?
 
 - **Automated report distribution** – Compress monthly financial statements before emailing them to ensure successful delivery and improve the recipient’s experience.

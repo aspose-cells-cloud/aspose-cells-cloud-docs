@@ -20,10 +20,10 @@ Before calling this endpoint, ensure you have a valid OAuth 2.0 access token a
 2. Upload the source workbook to Aspose Cloud storage (or confirm it already exists).  
 3. Know the storage name and folder path where the workbook resides.
 
-## REST API
+## PostWorkbookSaveAs API
 
-```
-POST https://api.aspose.cloud/v3.0/cells/{name}/saveAs 
+```http
+POST https://api.aspose.cloud/v3.0/cells/{name}/saveAs
 ```
 
 ### **Security and Authentication**
@@ -92,16 +92,15 @@ The API returns a `SaveResponse` object.
 }
 ```
 
-#### Response Codes
+**HTTP Status Codes**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | Success – workbook saved.                |
-| 400  | Bad request – invalid parameters.       |
-| 401  | Unauthorized – authentication required. |
-| 404  | Not found – source workbook does not exist. |
-| 500  | Internal server error.                   |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## How to Use the PostWorkbookSaveAs API with SDKs
 
 ### PostWorkbookSaveAs API Specification

@@ -20,24 +20,9 @@ Managing inconsistent text case in spreadsheets (Excel, Google Sheets, CSV) can 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/updatewordcase
 ```
-### Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+### **Security and Authentication**
 
-**Prerequisites** – To call this API you must obtain a valid JWT access token.  
-1. Register your application in the Aspose Cloud dashboard to receive a **Client ID** and **Client Secret**.  
-2. Request a token from the OAuth 2.0 token endpoint (`https://api.aspose.cloud/connect/token`) using the client credentials grant.  
-3. Include the token in the `Authorization: Bearer <access_token>` header of every request.
-
-Below is a minimal example (cURL) for acquiring a token:
-
-```bash
-curl -X POST "https://api.aspose.cloud/connect/token" \
-  -H "Content-Type: application/x-www-form-urlencoded" \
-  -d "grant_type=client_credentials&client_id=YOUR_CLIENT_ID&client_secret=YOUR_CLIENT_SECRET"
-```
-
-The response contains the `access_token` that you will use when invoking the **PostUpdateWordCase** endpoint.
-
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Function Description**
 
@@ -97,16 +82,15 @@ The PostUpdateWordCase web API addresses the common issue of inconsistent text c
 - **FileSize** – Size of the file in bytes.
 - **FileContent** – Base‑64 encoded content of the transformed file.
 
-**Http Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Text case conversion succeeded; response contains the transformed file. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
 ## How to Use the PostUpdateWordCase API with SDKs
 
 ### PostUpdateWordCase API Specification

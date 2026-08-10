@@ -13,15 +13,19 @@ ArticleTitle: "Get a Shape by Index on an Excel Worksheet – Aspose.Cells Cloud
 
 This REST API retrieves a shape (including its image data or metadata) from an Excel worksheet.
 
-## REST API
+## GetWorksheetShape API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes/{shapeindex}
 ```
 
 **Prerequisites**  
 - A valid Aspose Cloud access token (Bearer JWT).  
 - The workbook must be stored in your Aspose Cloud storage or a specified folder.  
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 

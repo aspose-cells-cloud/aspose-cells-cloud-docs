@@ -16,9 +16,9 @@ This REST API adds a **watermark** to Excel files.
 **Prerequisites:** You must obtain a valid JWT access token and ensure the Excel file is in a supported format (e.g., `.xlsx`, `.xls`).  
 **Background:** A watermark is a semi‑transparent text overlay applied to each worksheet to indicate ownership or confidentiality.
 
-## REST API
+## PostWatermark API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/watermark
 ```
 
@@ -64,16 +64,15 @@ The JSON response contains a **Files** array. For each file object:
 }
 ```
 
-**Response Status Codes**
+**HTTP Status Codes**
 
-| Code | Meaning                     | Description                                                                      |
-|------|-----------------------------|----------------------------------------------------------------------------------|
-| 200  | OK                          | Watermark applied successfully; response contains watermarked file details.    |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type).                   |
-| 401  | Unauthorized                | Invalid or missing JWT token.                                                    |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit.                                                |
-| 500  | Internal Server Error       | Unexpected server error.                                                         |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## How to Use the PostWatermark API with SDKs
 
 ### PostWatermark API Specification

@@ -86,15 +86,15 @@ No additional payload is provided because the operation’s result is binary –
 
 ---
 
-## Error Codes
+**HTTP Status Codes**
 
-| HTTP Status | Reason                                                                                                   |
-|-------------|----------------------------------------------------------------------------------------------------------|
-| **400**     | Bad request – missing or invalid parameters (e.g., empty `path`).                                      |
-| **401**     | Unauthorized – missing, malformed, or expired JWT token.                                                |
-| **404**     | Not found – the specified folder does not exist in the given storage.                                  |
-| **409**     | Conflict – the folder contains items and `recursive` is not set (or is `false`).                        |
-| **500**     | Internal server error – an unexpected condition occurred on the server side.                           |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 When an error occurs, the body contains a JSON object with `code` and `message` fields describing the problem.
 

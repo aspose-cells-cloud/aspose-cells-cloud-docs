@@ -22,17 +22,7 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/table/json
 
 ### **Security and Authentication**
 
-**Prerequisites**
-
-- A valid Aspose.Cells Cloud subscription.  
-- A JWT access token obtained via the authentication flow.  
-- The exact worksheet name and table name you intend to convert.
-
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" target="_blank" rel="noopener noreferrer">JWT token-based authentication</a>.
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Sample cURL Request
 
@@ -91,12 +81,15 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sh
 ]
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request** – Invalid URI or missing required parameters.
-- **401 Unauthorized** – Invalid access token or incorrect client credentials.
-- **404 Not Found** – The specified spreadsheet file cannot be accessed.
-- **500 Server Error** – An internal error occurred while obtaining calculation data.
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Handling Tips:** Validate all required parameters before sending the request, refresh the OAuth token if a 401 is returned, and implement retry logic for 5xx responses.
 

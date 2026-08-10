@@ -13,24 +13,17 @@ ArticleTitle: "Add a Color Filter in an Excel Worksheet using Aspose.Cells Cloud
 
 Learn how to add a color filter to an Excel worksheet using the Aspose.Cells Cloud API. This guide covers the required endpoint, parameters, authentication prerequisites, sample cURL request, SDK examples, and response handling.
 
-## REST API
-
 This REST API adds a **color filter** to an Excel worksheet.
 
-```bash
+## PutWorksheetColorFilter API
+
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/autoFilter/colorFilter
 ```
 
-## Security and Authentication
+### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-**Prerequisites**
-
-- Obtain a JWT token using your client ID and client secret via the authentication endpoint.  
-- Include the token in the `Authorization: Bearer <jwt token>` header for every request.  
-- Use API version **v3.0** (the endpoint shown above).  
-- Ensure the Excel file resides in a supported storage (e.g., Aspose Cloud Storage) and specify the correct `folder` and `storageName` parameters if needed.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters:
 
@@ -64,17 +57,15 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 }
 ```
 
-**Http Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response confirms the operation. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
-
 ## How to Use the PutWorksheetColorFilter API with SDKs
 
 ### PutWorksheetColorFilter API Specification

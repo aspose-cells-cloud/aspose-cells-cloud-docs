@@ -21,11 +21,15 @@ These prerequisites prevent authentication errors and “resource not found” r
 
 This REST API hides a pivot field item in a pivot table.
 
-## REST API
+## PostPivotTableFieldHideItem API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotField/Hide
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 

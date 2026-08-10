@@ -20,6 +20,10 @@ The **DecomposeUserTask** endpoint provides a REST endpoint to turn a free‑for
 PUT https://api.aspose.cloud/v4.0/cells/ai/task/decompose
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 ### **Request Parameters:**
 
 | Parameter Name  | Type   | Location | Required/Optional | Description                                                                                                                                                                                                                              |
@@ -42,15 +46,15 @@ Headers:
 
 The same structure is used for XLSX/ODS formats, with columns placed in the first worksheet.
 
-**Response Codes**
+**HTTP Status Codes**
 
-| Code | Description | Response Body |
-| ---- | ----------- | ------------- |
-| 200 OK | Successful generation of the task plan file. Returns a binary stream (CSV, XLSX, etc.). | Binary file stream |
-| 400 Bad Request | Validation error in the request payload. | JSON error object with `code` and `message` |
-| 401 Unauthorized | Missing or invalid OAuth 2.0 token. | JSON error object |
-| 403 Forbidden | Insufficient permissions to access the API. | JSON error object |
-| 500 Internal Server Error | Unexpected server failure. | JSON error object |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Error Response Example (400 Bad Request)**
 

@@ -10,11 +10,15 @@ ArticleTitle: "Update Chart Second Category Axis – Aspose.Cells Cloud API"
 
 This REST API updates the second category axis of a chart.
 
-## REST API
+## PostChartSecondCategoryAxis API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 

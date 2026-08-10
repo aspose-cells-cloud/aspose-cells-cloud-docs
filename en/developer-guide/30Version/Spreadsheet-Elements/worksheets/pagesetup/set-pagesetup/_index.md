@@ -20,6 +20,10 @@ This REST API sets the page setup for an Excel worksheet.
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pagesetup
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 ### **Request parameters**
 
 | Parameter Name | Type   | Location | Description             |

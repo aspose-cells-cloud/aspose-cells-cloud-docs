@@ -58,16 +58,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkBook.xlsx/worksheets/Sheet1/v
 
 {{< /tabs >}}
 
-## Error Handling / Response Codes
+**HTTP Status Codes**
 
-| Status Code | Meaning               | Description                                                        |
-| ----------- | --------------------- | ------------------------------------------------------------------ |
-| 200         | OK                    | Validation was deleted successfully.                               |
-| 400         | Bad Request           | Missing or invalid parameters.                                     |
-| 401         | Unauthorized          | Invalid or missing JWT token.                                      |
-| 404         | Not Found             | The specified file, worksheet, or validation index does not exist. |
-| 500         | Internal Server Error | Unexpected server error; see the response body for details.        |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Cloud SDK Family
 
 Using an SDK is the fastest way to integrate this operation into your application. SDKs handle low‑level details so you can focus on business logic. See the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.

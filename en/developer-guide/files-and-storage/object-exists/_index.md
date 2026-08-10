@@ -24,11 +24,7 @@ _`{path}`_ is the full path to the file or folder in storage.
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 
@@ -38,15 +34,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | `storageName`  | string | Query    | No       | Name of the storage; defaults to the primary storage if omitted.    |
 | `versionId`    | string | Query    | No       | Specific version identifier of the file (if versioning is enabled). |
 
-### Response Codes
+**HTTP Status Codes**
 
-| Code | Meaning               | Description                                           |
-| ---- | --------------------- | ----------------------------------------------------- |
-| 200  | OK                    | The request succeeded; response body contains result. |
-| 401  | Unauthorized          | Missing or invalid authentication token.              |
-| 404  | Not Found             | The specified path does not exist.                    |
-| 500  | Internal Server Error | An unexpected error occurred on the server.           |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ### Response Description
 
 A successful call returns a JSON payload with two properties:

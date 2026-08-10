@@ -42,16 +42,6 @@ The **createFolder** operation creates a new folder at the specified location in
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
-**Prerequisites**
-
-1. A valid Aspose Cloud account.  
-2. A generated JWT access token (see the authentication link above).  
-3. Write permission for the target storage (default storage is used if `storageName` is omitted).
-
 ### The request parameters of **createFolder** API are
 
 | Parameter Name | Type   | Location | Required | Default | Description                                                                 |

@@ -93,14 +93,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 }
 ```
 
-## Status Codes
+**HTTP Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| **200 OK** | Success | Row height was updated successfully. |
-| **400 Bad Request** | Client error | Missing or invalid parameters (e.g., negative height). |
-| **401 Unauthorized** | Authentication error | No token supplied or token is invalid/expired. |
-| **500 Internal Server Error** | Server error | Unexpected error on the server side. |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 All responses contain a numeric `Code` and a human‑readable `Status` (or `Message` for errors). Additional `ErrorDetails` may be provided when an error occurs.
 

@@ -17,11 +17,15 @@ This REST API deletes a pivot table from a worksheet by its index.
 
 Pivot tables are a powerful way to summarise data in an **Excel worksheet**. Using Aspose.Cells Cloud, you can programmatically remove an unwanted pivot table with a single HTTP DELETE request. This operation is ideal when you need to clean up worksheets, automate report generation, or integrate Excel manipulation into your applications.
 
-## REST API
+## DeleteWorksheetPivotTable API
 
-```bash
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 

@@ -42,10 +42,6 @@ To call this endpoint you must have a valid JWT access token, an Aspose Cloud st
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### The request parameters of **RemoveCharactersByPosition** API are
 
 | Parameter Name          | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                             |
@@ -77,16 +73,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-| Status Code | Description                                 | Possible Causes                                    |
-| ----------- | ------------------------------------------- | --------------------------------------------------- |
-| 200         | Request succeeded; the processed file is returned. | –                                                   |
-| 400         | Invalid Aspose.Cells Cloud API URI.         | Malformed request URL or missing required parameters. |
-| 401         | Invalid access token or client credentials. | Expired or incorrect JWT token.                     |
-| 404         | The spreadsheet file is not accessible.     | Incorrect file path or missing file in storage.    |
-| 500         | Server encountered an unexpected condition. | Internal processing error or corrupted workbook.   |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should we use the Remove Characters by Position API?
 
 - **Data Standardization**: Clean product codes (remove leading zeros or suffixes), phone numbers (strip country codes)

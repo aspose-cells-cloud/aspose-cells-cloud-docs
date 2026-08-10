@@ -58,23 +58,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 On success the API returns **HTTP 200 OK** with a stream of the generated file(s). The response body contains a JSON array where each element represents a split file, including its name and a download link.
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
-- **500 Server Error**: The spreadsheet encountered an anomaly while obtaining calculation data.
-
-#### Status Code Summary
-
-| Code | Description                                   |
-|------|-----------------------------------------------|
-| 200  | Success – split files returned as a stream    |
-| 400  | Bad request – malformed URI or parameters     |
-| 401  | Unauthorized – invalid authentication token   |
-| 404  | Not found – spreadsheet file unavailable      |
-| 500  | Internal server error – processing failure    |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should we use the Split Spreadsheet API?
 
 - **Department Data Distribution**: Split a unified workbook containing data from multiple departments into department‑specific files.

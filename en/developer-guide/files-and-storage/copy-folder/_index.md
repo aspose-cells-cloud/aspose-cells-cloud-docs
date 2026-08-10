@@ -27,11 +27,7 @@ To use this API you must obtain a JWT access token with the appropriate scopes. 
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### The CopyFolder API accepts the following parameters
 
@@ -57,15 +53,15 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/copy/MyFolder?de
      -H "Authorization: Bearer {access_token}"
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-| HTTP Status | Code                | Meaning                           | Typical Cause                           |
-| ----------- | ------------------- | --------------------------------- | --------------------------------------- |
-| 400         | BadRequest          | Missing or invalid parameters     | `srcPath` or `destPath` not supplied    |
-| 401         | Unauthorized        | Invalid or missing OAuth token    | Token expired or not provided           |
-| 404         | NotFound            | Source folder does not exist      | Incorrect `srcPath`                     |
-| 409         | Conflict            | Destination folder already exists | `destPath` points to an existing folder |
-| 500         | InternalServerError | Unexpected server error           | Service outage or internal bug          |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Notes / Limitations:**  
 The API does not enforce a specific size limit on the folder being copied, but the operation is subject to the overall storage quota and the service’s timeout settings. Deeply nested folder structures may take longer to copy, and very large folders could encounter timeout errors.

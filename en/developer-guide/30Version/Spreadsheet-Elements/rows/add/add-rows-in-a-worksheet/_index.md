@@ -12,11 +12,15 @@ weight: 20
 
 This REST API adds several new rows to an Excel worksheet.
 
-## REST API
+## PutInsertWorksheetRows API
 
-```bash
+```http
 PUT http://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 

@@ -55,6 +55,10 @@ Authorization: Bearer <jwt token>
 
 ---
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 ## Request Parameters
 
 | Name          | Location | Type   | Required | Description |
@@ -394,15 +398,15 @@ func main() {
 
 The response type is `CellsCloudResponse`.
 
-### Error Codes
+**HTTP Status Codes**
 
-| HTTP Status | Code | Message |
-|-------------|------|---------|
-| 400 | 400 | Invalid request parameters or body. |
-| 401 | 401 | Authentication failed. |
-| 404 | 404 | Specified file, worksheet, or chart not found. |
-| 500 | 500 | Internal server error. |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ---
 
 ## Additional Resources

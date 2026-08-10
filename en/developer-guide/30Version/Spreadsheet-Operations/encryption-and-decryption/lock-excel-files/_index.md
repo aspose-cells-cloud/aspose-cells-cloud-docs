@@ -15,9 +15,9 @@ weight: 70
 
 This REST API **locks** Excel workbooks.
 
-## REST API
+## PostLock API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/lock
 ```
 

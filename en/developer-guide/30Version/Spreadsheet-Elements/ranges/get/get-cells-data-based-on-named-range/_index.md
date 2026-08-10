@@ -258,15 +258,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/ranges/
 
 **Security Note:** Always use HTTPS when calling the API. The service does not support plain HTTP; using HTTPS ensures the request is encrypted and complies with security best practices.
 
-**Response Codes**
+**HTTP Status Codes**
 
-| Status Code | Description |
-|-------------|-------------|
-| 200 | Successful request. Returns the list of cells in the range. |
-| 400 | Bad request – invalid parameters or malformed request. |
-| 401 | Unauthorized – authentication token missing or invalid. |
-| 404 | Not found – the specified workbook, worksheet, or named range does not exist. |
-| 500 | Internal server error – unexpected condition on the server. |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Example error response (400 Bad Request)**
 

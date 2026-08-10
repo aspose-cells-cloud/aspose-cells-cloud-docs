@@ -17,21 +17,17 @@ description: "Learn how to update the style of a specific cell in an Excel works
 ArticleTitle: "Change Cell Style in Excel Worksheet – Aspose.Cells Cloud API Guide"
 ---
 
-## REST API
-
 This REST API updates the **cell style** of an Excel file.
 
-```bash
+## PostUpdateWorksheetCellStyle API
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/{cellName}/style
 ```
 
-## Security and Authentication
+### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-**Prerequisites:**  
-- Obtain a valid JWT token (see the authentication guide linked above).  
-- Ensure the target workbook exists in the specified storage folder.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 
@@ -53,16 +49,15 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 }
 ```
 
-**Http Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Operation succeeded; response contains updated cell style details. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
 ## How to Use the PostUpdateWorksheetCellStyle API with SDKs
 
 ### PostUpdateWorksheetCellStyle API Specification

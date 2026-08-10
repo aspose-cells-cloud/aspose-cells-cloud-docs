@@ -113,17 +113,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties/author
 
 ---
 
-## Response Codes
+**HTTP Status Codes**
 
-| Code | Meaning            | Response Body |
-|------|--------------------|---------------|
-| **200** | Property set successfully | `{ "Code": 200, "Status": "OK" }` |
-| **202** | Request accepted for asynchronous processing (if applicable) | `{ "Code": 202, "Status": "Accepted" }` |
-| **400** | Bad request – missing or invalid parameters | `{ "Code": 400, "Message": "Invalid request data." }` |
-| **401** | Unauthorized – invalid or missing JWT token | `{ "Code": 401, "Message": "Authentication failed. Invalid or missing token." }` |
-| **404** | Not found – workbook or property does not exist | `{ "Code": 404, "Message": "File or property not found." }` |
-| **500** | Internal server error | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ---
 
 ## SDK Samples

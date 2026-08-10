@@ -60,20 +60,15 @@ All path parameters are required; query parameters are optional unless noted.
 ]
 ```
 
-**Success Status Codes**
+**HTTP Status Codes**
 
-| Code | Description |
-|------|-------------|
-| 200 OK | The worksheet was successfully converted and the file is returned in the response body. |
-| 202 Accepted | The request has been accepted for asynchronous processing; the result will be available at the location specified by `outPath`. |
-
-### Error Codes
-
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid or missing access token.
-- **404 Not Found** – The spreadsheet file is not accessible.
-- **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## **Where Should You Use the Export Worksheet to Another Format API?**
 
 - **Legacy System Migration** – Convert thousands of legacy XLS files to XLSX for modern systems.

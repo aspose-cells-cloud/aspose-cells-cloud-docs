@@ -26,10 +26,6 @@ PUT https://api.aspose.cloud/v4.0/cells/swap/range
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### **Request Parameters**
 
 | Parameter Name     | Type   | Location | Description                                                                                                                                   |
@@ -70,15 +66,15 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/swap/range?worksheet1=Sheet1&ra
 - The API returns the modified workbook as a file stream. If `outPath` is specified, the file is also saved to the given cloud storage location.  
 - Mismatched range dimensions will result in a **400 Bad Request** error.
 
-### Error Codes
+**HTTP Status Codes**
 
-| Code                 | Description                                                        |
-| -------------------- | ------------------------------------------------------------------ |
-| **400 Bad Request**  | Invalid request URI or mismatched range dimensions.                |
-| **401 Unauthorized** | Invalid or expired access token; client‑id or secret is incorrect. |
-| **404 Not Found**    | The specified spreadsheet file cannot be accessed.                 |
-| **500 Server Error** | An internal error occurred while processing the workbook.          |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where Should We Use the Swap Range API?
 
 - **Financial Model Restructuring** – Re‑organize data blocks (e.g., move Q3 forecast to Q4) while preserving formulas and conditional formatting.

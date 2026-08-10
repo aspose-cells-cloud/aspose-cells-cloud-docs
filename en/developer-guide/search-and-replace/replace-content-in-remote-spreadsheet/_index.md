@@ -29,17 +29,9 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/report.xlsx/replace/content?sea
      -H "Accept: application/json"
 ```
 
-### Security and Authentication
+### **Security and Authentication**
 
-**Prerequisites:**  
-- Obtain a JWT access token as described in the [authentication guide](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).  
-- Install the appropriate Aspose.Cells Cloud SDK for your language (e.g., npm package `asposecellscloud`, NuGet `Aspose.Cells-Cloud`, Maven `com.aspose:aspose-cells-cloud`).  
-
-The Aspose.Cells Cloud APIs are secure and require JWT token‑based authentication.
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 
@@ -65,13 +57,15 @@ A typical successful response returns the status of the operation and the number
 }
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized** – Missing or invalid OAuth 2.0 access token.  
-- **404 Not Found** – The specified spreadsheet file could not be accessed.  
-- **500 Server Error** – An unexpected server‑side problem occurred while processing the request.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## When Should You Use the Replace Content in Remote Spreadsheet API?
 
 - **Batch Cloud File Update** – Modify the contents of multiple Excel files stored in cloud storage such as AWS S3 or Azure Blob.  

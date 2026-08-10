@@ -21,11 +21,10 @@ This REST API **imports double‑array data** into an Excel worksheet.
 You send an HTTP request with **multipart** content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
 The first part of the multipart body contains the **ImportDoubleArrayOption** data and the second part contains the data file.
 
-## REST API
+## PostImportData API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
 ### **Security and Authentication**

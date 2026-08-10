@@ -64,13 +64,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 A successful response returns the unprotected file as a stream. The file can be saved to the location specified by `outPath`/`outStorageName` or retrieved directly from the response payload.
 
-### **Error Codes**
+**HTTP Status Codes**
 
-- **400 Bad Request** – The request URI or parameters are invalid.
-- **401 Unauthorized** – Access token is missing, expired, or invalid.
-- **404 Not Found** – The specified spreadsheet file cannot be accessed.
-- **500 Internal Server Error** – An unexpected error occurred while processing the file.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## When should you use the Unprotect Spreadsheet API?
 
 - **Restore Access to Locked Workbooks** – Quickly remove forgotten open or modify passwords without manual intervention.

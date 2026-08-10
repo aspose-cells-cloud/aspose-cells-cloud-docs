@@ -19,9 +19,9 @@ This REST API calculates **all formulas** in an Excel workbook.
 - Your Aspose.Cells Cloud client ID and secret.  
 - The target workbook uploaded to the designated storage location. (Refer to the [Storage Setup](/storage/).)
 
-## REST API
+## PostWorkbookCalculateFormula API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/calculateformula
 ```
 

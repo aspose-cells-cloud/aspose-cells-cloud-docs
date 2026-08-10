@@ -15,11 +15,15 @@ This REST API updates a picture, identified by its index, on an Excel worksheet.
 
 **Prerequisites:** You must have a valid Aspose Cloud JWT token, the target Excel file stored in your Aspose Cloud storage, and use API version 3.0 or later.
 
-## REST API
+## PostWorksheetPicture API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pictures/{pictureIndex}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 

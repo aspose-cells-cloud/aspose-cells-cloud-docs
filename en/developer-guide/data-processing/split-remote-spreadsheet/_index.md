@@ -34,10 +34,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/Report.xlsx/split/spreadsheet?f
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### **Request Parameters:**
 
 | Parameter Name | Type    | Path/Query String/HTTP Body | Description                                                                                                                           |
@@ -87,13 +83,15 @@ Each object in the response array represents a split file. Typical fields includ
 | 202  | Accepted – The request has been accepted for processing (asynchronous execution). |
 | 206  | Partial Content – Some worksheets were processed; others failed. |
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
-- **500 Server Error**: The spreadsheet encountered an anomaly while obtaining calculation data.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should we use the Split Remote Spreadsheet API?
 
 - **Department Data Distribution**: Split a unified workbook containing data from multiple departments into department‑specific files.  

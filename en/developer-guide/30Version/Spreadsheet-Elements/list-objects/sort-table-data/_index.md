@@ -17,11 +17,15 @@ To call this API you must have a valid Aspose Cloud JWT access token and the wor
 This REST API sorts a table’s data in an Excel worksheet.  
 To use this operation, provide the workbook name, worksheet name, and the index of the target ListObject, together with a `dataSorter` JSON body that defines the sorting criteria.
 
-## REST API
+## PostWorksheetListObjectSortTable API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/sort
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 

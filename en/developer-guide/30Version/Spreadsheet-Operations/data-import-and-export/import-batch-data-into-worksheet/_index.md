@@ -18,27 +18,15 @@ This REST API **imports batch data** into an Excel worksheet. It accepts a multi
 
 The operation uses an HTTP request with multipart content (see [RFC 2046](https://tools.ietf.org/html/rfc2046#page-17) or [RFC 1341](https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html)).  
 
-## REST API
+## PostImportData API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
-
-**Request parameters**  
-| Parameter | Location | Description |
-|-----------|----------|-------------|
-| `name` | Path | Name of the workbook to which the data will be imported. |
-| `importBatchDataOption` | Body (first part) | JSON or XML representation of the `ImportBatchDataOption` object. |
-| `file` | Body (second part) | The data file (CSV, JSON, XML, etc.) to be imported. |
-| `folder` | Query (optional) | Cloud folder path where the workbook resides. |
-| `storageName` | Query (optional) | Name of the storage to use. |
-
-The important parameters are described in the tables below.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### ImportBatchDataOption
 
@@ -93,16 +81,15 @@ The important parameters are described in the tables below.
 }
 ```
 
-**Http Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Import succeeded; response contains operation status. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
 ## How to Use the PostImportData API with SDKs
 
 ### PostImportData API Specification

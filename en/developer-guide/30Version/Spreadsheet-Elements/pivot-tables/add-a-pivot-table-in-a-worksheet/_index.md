@@ -18,11 +18,15 @@ This REST API adds a pivot table into a worksheet.
 - The target workbook must be stored in a supported storage location (default storage or a user‑specified storage).  
 - The worksheet specified by `sheetName` must exist in the workbook.  
 
-## REST API
+## PutWorksheetPivotTable API
 
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 
@@ -72,16 +76,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 
 {{< /tabs >}}
 
-**Response Codes**
+**HTTP Status Codes**
 
-| HTTP Status | Meaning                               | When it occurs |
-|-------------|---------------------------------------|----------------|
-| 200         | OK – Pivot table created successfully | Successful request |
-| 400         | Bad Request – Invalid parameters or malformed JSON | Missing required fields, invalid range syntax |
-| 401         | Unauthorized – Invalid or missing JWT token | Authentication failure |
-| 404         | Not Found – Specified workbook or worksheet does not exist | Incorrect `name` or `sheetName` |
-| 500         | Internal Server Error – Unexpected server condition | Service outage or internal error |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.

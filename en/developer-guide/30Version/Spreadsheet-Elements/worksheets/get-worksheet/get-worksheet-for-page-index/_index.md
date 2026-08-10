@@ -62,16 +62,15 @@ iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABG0lEQVR42mNkYGBg+M+ABbJw
 | `pageIndex`            | integer | Zero‑based index of the worksheet page to export (`0` = first page). | `0`     |
 | `folder`               | string  | Cloud storage folder where the source workbook resides.              | —       |
 
-**Status Codes**
+**HTTP Status Codes**
 
-| Code | Meaning                               |
-|------|---------------------------------------|
-| 200  | Success – file returned in the body   |
-| 202  | Accepted – request is being processed |
-| 401  | Unauthorized – invalid or missing JWT |
-| 404  | Not Found – workbook or worksheet missing |
-| 400  | Bad Request – invalid parameter value |
-| 500  | Internal Server Error – unexpected issue |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Possible errors**
 

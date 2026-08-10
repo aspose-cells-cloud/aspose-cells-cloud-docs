@@ -20,11 +20,15 @@ Before calling this endpoint you must:
 - Ensure the target workbook is stored in a cloud folder that you have access to (specify `folder` and optionally `storageName`).  
 - Use Aspose.Cells Cloud API version 3.0 or later.
 
-## REST API
+## PutWorksheetPivotTableFilter API
 
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/PivotFilters
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 

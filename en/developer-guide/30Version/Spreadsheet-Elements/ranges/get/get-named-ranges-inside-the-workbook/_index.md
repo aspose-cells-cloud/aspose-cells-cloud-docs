@@ -17,11 +17,15 @@ This REST API returns information about named ranges defined within worksheets.
 
 **Prerequisites** – Access to the Aspose.Cells Cloud API requires a valid JWT access token. Obtain the token by authenticating with your Aspose Cloud client ID and client secret via the OAuth 2.0 token endpoint. Include the token in the `Authorization: Bearer <jwt token>` header of every request.
 
-## REST API
+## GetNamedRanges API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 
@@ -31,14 +35,15 @@ GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/ranges
 | folder         | string | Query string | The folder that contains the document.       |
 | storageName    | string | Query string | The storage name where the document resides. |
 
-**Status Codes**
+**HTTP Status Codes**
 
-| Status Code | Description |
-|-------------|-------------|
-| 200 | OK – The request succeeded and named ranges are returned. |
-| 401 | Unauthorized – Invalid or missing authentication token. |
-| 404 | Not Found – The specified workbook or named range does not exist. |
-| 500 | Internal Server Error – An unexpected error occurred on the server. |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 The [OpenAPI Specification](https://apireference.aspose.cloud/cells/#/Worksheets/GetNamedRanges) defines a publicly accessible programming interface that lets you perform REST interactions directly from a web browser.
 

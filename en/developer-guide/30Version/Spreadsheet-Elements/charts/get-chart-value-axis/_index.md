@@ -12,11 +12,15 @@ This REST API retrieves the value axis of a chart. It is part of the **Aspose.Ce
 
 For related operations, see the **[Get Chart Category Axis](/charts/category-axis/get/)** endpoint.
 
-## REST API
+## GetChartValueAxis API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/valueaxis
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 

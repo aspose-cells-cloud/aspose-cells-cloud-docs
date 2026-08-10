@@ -13,17 +13,17 @@ weight: 60
 ArticleTitle: "Unprotect Excel Workbook – Aspose.Cells Cloud API"
 ---
 
-## REST API
-
 Use this REST API to unprotect an Excel workbook.
 
-```bash
+## DeleteUnProtectWorkbook API
+
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/protection
 ```
 
-### Security and Authentication
+### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Path Parameters
 

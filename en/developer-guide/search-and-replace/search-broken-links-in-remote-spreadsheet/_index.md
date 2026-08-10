@@ -29,10 +29,6 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/search/broken-links
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### **Request Parameters:**
 
 | Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                                               |
@@ -113,12 +109,15 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/Quarterly_Report.xlsx/search/br
 }
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
-- **404 Not Found** – The spreadsheet file is not accessible.  
-- **500 Server Error** – An anomaly occurred while obtaining calculation data.
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Notes**:  
 - The API does not support local file system paths when operating in cloud mode; use only URLs or files stored in supported cloud storage.  

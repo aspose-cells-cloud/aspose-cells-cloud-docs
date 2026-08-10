@@ -23,6 +23,10 @@ To call this endpoint you must have a valid Aspose Cloud access token. Obtain th
 GET https://api.aspose.cloud/v4.0/cells/status/check
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 ### **Request Parameters**
 
 | Parameter      | Type   | Required | Description                                                                                                            |

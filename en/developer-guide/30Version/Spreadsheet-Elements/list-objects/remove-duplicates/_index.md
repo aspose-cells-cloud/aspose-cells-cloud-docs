@@ -64,15 +64,15 @@ On success the service returns a JSON object similar to the example above. The f
 - **DuplicateRowsRemoved** – Number of rows that were eliminated.
 - **Message** – Additional information about the operation.
 
-### Error Codes
+**HTTP Status Codes**
 
-| HTTP Status | Meaning               | When it occurs                                            |
-| ----------- | --------------------- | --------------------------------------------------------- |
-| 400         | Bad Request           | Missing or invalid parameters.                            |
-| 401         | Unauthorized          | No token supplied or token is expired/invalid.            |
-| 404         | Not Found             | Specified file, worksheet, or list object does not exist. |
-| 500         | Internal Server Error | Unexpected server‑side failure.                           |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details so you can focus on your project tasks. Please check the GitHub repository for a complete list of Aspose.Cells Cloud SDKs.

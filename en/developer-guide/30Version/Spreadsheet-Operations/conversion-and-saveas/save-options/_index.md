@@ -46,14 +46,15 @@ SaveOptions allow you to control how a workbook is saved when using the Aspose.C
 }
 ```
 
-**Status Codes**  
+**HTTP Status Codes**
 
-| Code | Meaning                                 |
-|------|------------------------------------------|
-| 200  | Save operation completed successfully.   |
-| 400  | Invalid request – missing or malformed parameters. |
-| 401  | Unauthorized – authentication failed.    |
-| 500  | Server error – unexpected failure during processing. |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Notes / Remarks**  
 - When **CreateDirectory** is set to `true`, the API will automatically create the target folder if it does not already exist.  

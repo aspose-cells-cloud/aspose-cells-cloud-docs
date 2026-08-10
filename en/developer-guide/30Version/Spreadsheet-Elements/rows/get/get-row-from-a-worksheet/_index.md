@@ -18,11 +18,15 @@ ArticleTitle: "Get Row Description from an Excel Worksheet – Aspose.Cells Clou
 
 This REST API retrieves row data by its index on an Excel worksheet.
 
-## REST API
+## GetWorksheetRow API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 

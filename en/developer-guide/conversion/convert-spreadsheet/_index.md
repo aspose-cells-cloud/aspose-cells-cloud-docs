@@ -22,17 +22,7 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet
 
 ### **Security and Authentication**
 
-**Prerequisites**
-
-- An active Aspose Cloud account.  
-- A JWT access token obtained from the Aspose authentication service (see the link below).  
-- (Optional) If you plan to use the `outPath` parameter, configure a storage location in your Aspose Cloud account.
-
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
 
 ### **Request Parameters:**
 
@@ -64,13 +54,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - **200 OK** – The conversion succeeded and the response body contains the converted file stream.  
 - The `Content-Type` header reflects the MIME type of the requested output format (e.g., `application/pdf` for PDF).
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
-- **500 Server Error**: The spreadsheet has encountered an anomaly while obtaining calculation data.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Format
 
 | **Out Format**                                                    | **Description**                                                                                                              |

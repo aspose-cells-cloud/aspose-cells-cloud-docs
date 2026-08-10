@@ -21,18 +21,17 @@ Before calling this endpoint, ensure you have:
 - The target workbook uploaded to your Aspose Cloud storage.  
 - A digital signature file in `.pfx` or `.p12` format and its password.
 
-## REST API
-
 This REST API adds a **digital signature** to an Excel workbook.
 
-```bash
+## PostDigitalSignature API
+
+```http
 POST https://api.aspose.cloud/v4.0/cells/{name}/digitalsignature
 ```
 
-### Security and Authentication
+### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 

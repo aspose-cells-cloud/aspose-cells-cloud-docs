@@ -14,18 +14,13 @@ ArticleTitle: "Add a Shape to an Excel Worksheet using Aspose.Cells Cloud API"
 This REST API adds a shape to an Excel worksheet.  
 The endpoint belongs to **API version v3.0**; ensure that you use a JWT access token obtained through the Aspose Cloud OAuth2 flow (client‑id/client‑secret) and include it in the `Authorization: Bearer <token>` header.
 
-## Security and Authentication
-Before calling the API, make sure you have:
+### **Security and Authentication**
 
-* A valid JWT access token generated via the Aspose Cloud OAuth2 flow.  
-* The target workbook stored in Aspose Cloud storage (or specify the appropriate `folder` and `storageName`).  
-* The correct `name` (workbook) and `sheetName` (worksheet) values for the file you want to modify.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+## PutWorksheetShape API
 
-## REST API
-
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
 
@@ -80,14 +75,15 @@ _The successful response returns the HTTP status code, a textual status, and the
 
 {{< /tabs >}}
 
-### Response Codes
+**HTTP Status Codes**
 
-| Code | Description                     |
-|------|---------------------------------|
-| 200  | Shape added successfully.       |
-| 400  | Bad Request – missing/invalid parameters. |
-| 401  | Unauthorized – invalid or missing JWT token. |
-| 404  | Not Found – worksheet or document does not exist. |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 Typical error responses include:
 

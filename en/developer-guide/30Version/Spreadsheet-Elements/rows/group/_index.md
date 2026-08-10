@@ -17,11 +17,15 @@ This REST API groups rows on an Excel worksheet.
 - A valid OAuth 2.0 access token (Bearer JWT) must be supplied in the `Authorization` header.  
 - The workbook must already exist in the specified `folder` of the chosen `storageName` (or the default storage) before the request is made.
 
-## REST API
+## PostGroupWorksheetRows API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/group
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 
@@ -62,15 +66,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 }
 ```
 
-**Response Codes**
+**HTTP Status Codes**
 
-| Code | Description                                 |
-|------|---------------------------------------------|
-| 200  | Success – rows were grouped as requested.   |
-| 400  | Bad Request – invalid parameters or payload.|
-| 401  | Unauthorized – missing or invalid token.    |
-| 404  | Not Found – workbook or worksheet not found.|
-| 500  | Internal Server Error – unexpected server issue.|
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 Typical error responses:
 

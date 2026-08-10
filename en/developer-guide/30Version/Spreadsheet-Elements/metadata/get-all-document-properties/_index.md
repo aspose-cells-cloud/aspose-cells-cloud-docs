@@ -13,11 +13,15 @@ weight: 25
 
 This REST API reads document properties.
 
-## REST API
+## GetDocumentProperties API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/documentproperties
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 
@@ -255,14 +259,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/documentproperties" \
 
 {{< /tabs >}}
 
-**Response Codes**
+**HTTP Status Codes**
 
-- **200 OK** – The request succeeded and the document properties are returned.  
-- **400 Bad Request** – The request was malformed or missing required parameters.  
-- **401 Unauthorized** – Authentication failed or the JWT token is missing/invalid.  
-- **404 Not Found** – The specified workbook or storage location could not be found.  
-- **500 Internal Server Error** – An unexpected error occurred on the server.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.

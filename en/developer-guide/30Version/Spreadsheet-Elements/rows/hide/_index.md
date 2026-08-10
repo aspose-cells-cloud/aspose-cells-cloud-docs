@@ -15,11 +15,15 @@ This REST API hides rows on an Excel worksheet.
 
 **Prerequisites:** A valid JWT Bearer token obtained from the Aspose Cloud OAuth endpoint, the workbook stored in Aspose Cloud storage, and the name of the worksheet that contains the rows to hide. The API works with Excel files in XLS, XLSX, and other supported formats.
 
-## REST API
+## PostHideWorksheetRows API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/hide
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 

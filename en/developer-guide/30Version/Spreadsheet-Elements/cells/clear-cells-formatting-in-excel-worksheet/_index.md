@@ -8,8 +8,6 @@ description: "Use Aspose.Cells Cloud REST API to clear cell formatting in an Exc
 ArticleTitle: "Clear Cell Formatting in an Excel Worksheet - Aspose.Cells Cloud API"
 ---
 
-## REST API
-
 **Note:** All Aspose.Cells Cloud API calls must be made over **HTTPS**. HTTP endpoints are deprecated and may be blocked by browsers.
 
 - **Method:** POST  
@@ -17,31 +15,15 @@ ArticleTitle: "Clear Cell Formatting in an Excel Worksheet - Aspose.Cells Cloud 
 
 This REST API clears cell formatting in an Excel file and is part of the Aspose.Cells Cloud suite for clearing cell formatting in Excel worksheets.
 
-```bash
+## PostClearFormats API
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearformats
 ```
 
-## Security and Authentication
+### **Security and Authentication**
 
-**Prerequisites**
-
-- A valid Aspose Cloud account.  
-- A JWT access token obtained via the authentication flow.  
-- The target workbook uploaded to storage (or specify `folder`/`storageName` parameters).
-
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-| Parameter Name | Type    | Location | Description                           |
-| -------------- | ------- | -------- | ------------------------------------- |
-| name           | string  | path     | Name of the workbook.                 |
-| sheetName      | string  | path     | Name of the worksheet.                |
-| range          | string  | query    | Cell range (e.g., `A1:A10`).          |
-| startRow       | integer | query    | Zero‑based index of the start row.    |
-| startColumn    | integer | query    | Zero‑based index of the start column. |
-| endRow         | integer | query    | Zero‑based index of the end row.      |
-| endColumn      | integer | query    | Zero‑based index of the end column.   |
-| folder         | string  | query    | Folder that contains the workbook.    |
-| storageName    | string  | query    | Name of the storage location.         |
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Response**
 
@@ -59,16 +41,15 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 | Code   | integer | HTTP status code returned by the API (e.g., 200). |
 | Status | string  | Result of the operation (`OK` for success).   |
 
-**Http Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
 ## How to Use the PostClearFormats API with SDKs
 
 ### PostClearFormats API Specification

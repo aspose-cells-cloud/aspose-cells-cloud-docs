@@ -36,10 +36,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/search/content?searchText=Invoi
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### **Request Parameters**
 
 | Parameter    | Type    | Location | Description                                                                        |
@@ -76,12 +72,15 @@ The API returns a `SearchResult` object that contains an array of matched cells.
 }
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request** – The request URI or parameters are invalid.
-- **401 Unauthorized** – Missing or invalid access token, or incorrect client credentials.
-- **404 Not Found** – The specified spreadsheet cannot be accessed.
-- **500 Internal Server Error** – An unexpected server error occurred while processing the workbook.
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Notes:** The Search Spreadsheet Content API is subject to standard Aspose.Cells Cloud rate limits. Typically, up to 100 requests per second are allowed per account. Exceeding this limit may result in a 429 Too Many Requests response.
 

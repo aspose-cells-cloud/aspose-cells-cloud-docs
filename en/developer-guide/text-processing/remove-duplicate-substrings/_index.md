@@ -45,10 +45,6 @@ PUT https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substrings
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### The request parameters of **RemoveDuplicateSubstrings** API are
 
 | Parameter Name                  | Type    | Path/Query String/HTTPBody | Description                                                                                                                                                                       |
@@ -89,16 +85,15 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/content/remove/duplicate-substr
 
 The response returns a file stream containing the processed workbook. The stream can be saved directly to disk or streamed to a client application.
 
-### **Status Code**
+**HTTP Status Codes**
 
-| Code | Meaning                                 | Description                                                                                     |
-|------|-----------------------------------------|-------------------------------------------------------------------------------------------------|
-| 200  | OK                                      | The request succeeded and the processed workbook is returned.                                   |
-| 202  | Accepted                                | The request is accepted for asynchronous processing.                                            |
-| 400  | Bad Request                             | The request is malformed or contains invalid parameters.                                        |
-| 401  | Unauthorized                            | Authentication failed or token is missing/invalid.                                              |
-| 404  | Not Found                               | The specified workbook or resource could not be found.                                          |
-| 500  | Internal Server Error                   | An unexpected error occurred on the server side.                                                |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Rate‑Limit Note** – The API is subject to standard Aspose Cloud rate limits. Exceeding the allowed number of calls within a given time window will result in a `429 Too Many Requests` response. Refer to your account dashboard for specific limits.
 

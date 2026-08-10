@@ -21,11 +21,15 @@ This REST API adds a new row to an Excel worksheet. It inserts an empty row at t
 - The `rowIndex` is zero‑based; inserting at index 0 adds a row at the top of the worksheet.  
 - Excel worksheets have a maximum of 1,048,576 rows; attempting to insert beyond this limit will result
 
-## REST API
+## PutInsertWorksheetRow API
 
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows/{rowIndex}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 
@@ -70,16 +74,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/cells/r
 
 {{< /tabs >}}
 
-**Response Codes**
+**HTTP Status Codes**
 
-| Code | Description |
-|------|-------------|
-| 200 | Row inserted successfully. |
-| 400 | Bad request – missing or invalid parameters. |
-| 401 | Unauthorized – authentication failed or token missing. |
-| 403 | Forbidden – insufficient permissions to modify the workbook. |
-| 404 | Not found – the specified workbook or worksheet does not exist. |
-| 500 | Internal server error – unexpected condition on the server. |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 *Example of an error response (e.g., when the row index exceeds the worksheet limit):*
 

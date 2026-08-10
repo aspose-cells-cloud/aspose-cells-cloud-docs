@@ -20,31 +20,17 @@ Before using the **Clear Contents and Styles** endpoint, ensure you have:
 * The workbook uploaded to your chosen storage location (or accessible via the `folder` parameter).  
 * The required SDK version installed if you prefer to work with one of the language‑specific client libraries.
 
-## REST API
-
 This REST API clears the contents of cells in an Excel file.
 
-```bash
+## PostClearContents API
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/clearcontents
 ```
 
-## Security and Authentication
+### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
-
-
-| Parameter Name | Type    | Location | Description                                   |
-|----------------|---------|----------|-----------------------------------------------|
-| name           | string  | path     | Name of the workbook.                         |
-| sheetName      | string  | path     | Name of the worksheet.                        |
-| range          | string  | query    | Cell range to clear (e.g., `A2:C11`).         |
-| startRow       | integer | query    | Index of the first row to clear.              |
-| startColumn    | integer | query    | Index of the first column to clear.           |
-| endRow         | integer | query    | Index of the last row to clear.               |
-| endColumn      | integer | query    | Index of the last column to clear.            |
-| folder         | string  | query    | Folder containing the workbook.               |
-| storageName    | string  | query    | Name of the storage location.                 |
-
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Response**
 
@@ -55,17 +41,15 @@ The Aspose.Cells Cloud APIs are secure and require [JWT token-based authenticati
 }
 ```
 
-**Http Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Clear contents operation succeeded; response contains operation details. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
-
 ## How to Use the PostClearContents API with SDKs
 
 ### PostClearContents API Specification

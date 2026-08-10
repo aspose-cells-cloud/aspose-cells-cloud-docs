@@ -13,14 +13,18 @@ ArticleTitle: "Update style for pivot table - Aspose.Cells Cloud API"
 
 This REST API updates the style of a pivot table.
 
-## REST API
+## PostPivotTableStyle API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/pivottables/{pivotTableIndex}/FormatAll
 ```
 
 **Prerequisites / Authentication**  
 A valid JWT access token must be supplied in the `Authorization` header (e.g., `Bearer <jwt token>`). Ensure the token has permission to access the specified workbook and worksheet.
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 
@@ -62,15 +66,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Pivot_Table_Example.xls/work
 }
 ```
 
-**Status Codes**
+**HTTP Status Codes**
 
-| Code | Description                              |
-|------|------------------------------------------|
-| 200  | OK – style applied                       |
-| 400  | Bad Request – invalid parameters         |
-| 401  | Unauthorized – missing/invalid token     |
-| 404  | Not Found – workbook or pivot table not found |
-| 500  | Internal Server Error                    |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 {{< /tab >}}
 

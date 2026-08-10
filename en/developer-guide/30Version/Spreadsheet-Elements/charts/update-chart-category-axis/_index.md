@@ -10,11 +10,15 @@ ArticleTitle: "Update Chart Category Axis – Aspose.Cells Cloud API"
 
 This REST API updates a chart’s category axis.
 
-## REST API
+## PostChartCategoryAxis API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/categoryaxis
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 
@@ -39,15 +43,15 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{c
 | TickLabelPosition | string | Position of tick labels (e.g., `Low`, `High`, `NextToAxis`). |
 | ... | ... | Additional axis properties as defined in the API spec. |
 
-**Response Codes**
+**HTTP Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200  | OK      | The category axis was updated successfully. |
-| 400  | Bad Request | The request is malformed or missing required parameters. |
-| 401  | Unauthorized | Authentication failed – invalid or missing JWT token. |
-| 404  | Not Found | Specified file, worksheet, or chart does not exist. |
-| 500  | Internal Server Error | An unexpected error occurred on the server. |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Prerequisites / Authentication**
 

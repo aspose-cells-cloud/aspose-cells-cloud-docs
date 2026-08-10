@@ -59,15 +59,15 @@ curl -X GET "https://api.aspose.com/v3.0/cells/myWorkbook.xlsx/worksheets/Sheet1
 
 {{< /tabs >}}
 
-**Response Status Codes**
+**HTTP Status Codes**
 
-| Code | Description                                          |
-|------|------------------------------------------------------|
-| 200  | Success – returns JSON with `MinDataColumn`.         |
-| 401  | Unauthorized – invalid or missing access token.      |
-| 404  | Not Found – specified file or worksheet does not exist. |
-| 500  | Internal Server Error – unexpected server condition. |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ---
 
 - Use Aspose.Cells Cloud SDKs

@@ -14,11 +14,15 @@ This REST API deletes multiple rows **from** an Excel worksheet.
 
 **Prerequisites:** To call this endpoint you must have a valid JWT access token obtained from Aspose Cloud authentication and appropriate storage permissions for the workbook.
 
-## REST API
+## DeleteWorksheetRows API
 
-```bash
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 

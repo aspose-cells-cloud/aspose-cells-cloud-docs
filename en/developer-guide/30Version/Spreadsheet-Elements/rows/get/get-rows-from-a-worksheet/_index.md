@@ -13,14 +13,18 @@ ArticleTitle: "Get rows information from an Excel worksheet – Aspose.Cells Clo
 
 This REST API retrieves rows information from an Excel worksheet.
 
-## REST API
-
 **Prerequisites**  
 To call this endpoint you must provide a valid JWT token in the `Authorization` header. The token should be obtained using the Aspose.Cloud authentication flow and must include the required scopes for Cells operations. The API follows the v3.0 versioning scheme and is subject to standard rate‑limit policies.
 
-```bash
+## GetWorksheetRows API
+
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/rows
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 

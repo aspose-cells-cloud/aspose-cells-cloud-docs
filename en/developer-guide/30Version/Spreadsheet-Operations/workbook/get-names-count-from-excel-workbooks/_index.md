@@ -18,14 +18,13 @@ ArticleTitle: "Get Names from an Excel Workbook – Aspose.Cells Cloud API"
 
 This REST API retrieves the defined names from an Excel workbook.
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+### **Security and Authentication**
 
-**Prerequisites:** A valid OAuth2/JWT access token is required for every request. Obtain the token from the Aspose.Cells Cloud authentication endpoint using your client‑id and client‑secret, then include it in the `Authorization: Bearer <jwt token>` header.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-## REST API
+## GetWorkbookNames API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/names
 ```
 

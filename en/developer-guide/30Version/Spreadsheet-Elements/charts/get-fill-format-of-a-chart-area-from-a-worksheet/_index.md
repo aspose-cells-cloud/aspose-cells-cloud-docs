@@ -19,11 +19,15 @@ This REST API retrieves the fill‑format information of a **Chart Area**.
 **Prerequisites**  
 To call this endpoint you must have a valid OAuth/JWT access token. Obtain the token using the Aspose.Cells Cloud authentication flow and include it in the `Authorization` header as `Bearer <jwt token>`. If you are using one of the SDKs, ensure the SDK is configured with your `client_id` and `client_secret` before invoking the method.
 
-## REST API
+## GetChartAreaFillFormat API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/chartArea/fillFormat
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 

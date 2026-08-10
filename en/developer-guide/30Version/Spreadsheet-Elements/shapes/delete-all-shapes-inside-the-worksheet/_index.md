@@ -15,11 +15,15 @@ This REST API deletes all shapes on an Excel worksheet.
 
 **Prerequisites:** A valid JWT access token is required. Obtain it via the Aspose Cloud OAuth2 flow and include it in the `Authorization` header as shown in the example below.
 
-## REST API
+## DeleteWorksheetShapes API
 
-```bash
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/shapes
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request parameters**
 

@@ -22,11 +22,15 @@ Before calling this endpoint, ensure you have completed the following steps:
 - Store the target workbook in the selected storage (default = “Default”) or specify the appropriate `folder` and `storageName` parameters.  
 - Verify that the worksheet name provided in `sheetName` exists in the workbook.
 
-## REST API
+## PutInsertWorksheetColumns API
 
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/{columnIndex}?totalColumns=1
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 

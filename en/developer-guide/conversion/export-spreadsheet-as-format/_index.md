@@ -40,10 +40,6 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/Report.xlsx?format=pdf&folder=D
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### **Request Parameters:**
 
 | Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                                        |
@@ -74,24 +70,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 The response contains a single object that represents the converted file stream.
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token, or invalid client ID and secret.
-- **404 Not Found** – The spreadsheet file is not accessible.
-- **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
-
-### Status Codes
-
-| Code | Meaning | When Returned |
-|------|---------|---------------|
-| 200 OK | Successful conversion, file stream returned | Normal operation |
-| 202 Accepted | Asynchronous conversion started (if supported) | Large files |
-| 400 Bad Request | Invalid parameters | … |
-| 401 Unauthorized | Invalid token | … |
-| 404 Not Found | File not found | … |
-| 500 Internal Server Error | Processing failure | … |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should you use the Export Spreadsheet as another format API?
 
 - **Legacy System Migration**: Convert thousands of legacy XLS files to XLSX for modern systems.

@@ -22,11 +22,7 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/replace/co
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" target="_blank" rel="noopener noreferrer">JWT token-based authentication</a>.
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request Parameters**
 
@@ -57,25 +53,15 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/sales_report.xlsx/worksheets/Sh
 }
 ```
 
-**Response Status Codes**
+**HTTP Status Codes**
 
-- **200 OK** – The replace operation completed successfully. The response may include an additional field `ReplacedCount` indicating how many occurrences were replaced.  
-- **202 Accepted** – The request has been accepted for asynchronous processing; a separate job ID will be returned.  
-- **204 No Content** – The operation succeeded but there is no content to return (used when only status is needed).  
-- **400 Bad Request** – Required parameters are missing or malformed.  
-- **401 Unauthorized** – Access token is missing, invalid, or the client credentials are wrong.  
-- **404 Not Found** – The specified workbook or worksheet cannot be found.  
-- **500 Internal Server Error** – An unexpected error occurred while processing the request.
-
-### **Error Codes**
-
-| Code | Description                              | When it occurs                                                   |
-|------|------------------------------------------|------------------------------------------------------------------|
-| 400  | Bad Request                              | The request URI is malformed or required parameters are missing. |
-| 401  | Unauthorized                             | Access token is missing, invalid, or the client credentials are wrong. |
-| 404  | Not Found                                | The specified workbook or worksheet cannot be found.            |
-| 500  | Internal Server Error                    | An unexpected error occurred while processing the request.      |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should we use the Replace content of Worksheet in Remote Spreadsheet API?
 
 - **Batch Cloud File Update**: Modify the contents of multiple Excel files stored in cloud storage such as AWS S3 and Azure Blob.  

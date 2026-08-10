@@ -91,18 +91,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/condit
 
 ---
 
-## Response Codes
+**HTTP Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| **200** | Success | Cell area added successfully. |
-| **400** | Bad Request | Invalid `cellArea` format. |
-| **401** | Unauthorized | Missing or invalid JWT token. |
-| **403** | Forbidden | Insufficient permissions. |
-| **404** | Not Found | Worksheet or conditional‑formatting rule not found. |
-| **409** | Conflict | `cellArea` overlaps with an existing area. |
-| **500** | Internal Server Error | Unexpected server error. |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ---
 
 ## SDK Examples

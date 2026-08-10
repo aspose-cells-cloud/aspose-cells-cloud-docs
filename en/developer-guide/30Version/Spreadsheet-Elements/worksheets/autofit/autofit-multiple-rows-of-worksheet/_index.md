@@ -76,15 +76,15 @@ Typical error responses include:
 - **404 Not Found** – The specified file or worksheet does not exist.
 - **500 Internal Server Error** – An unexpected server error occurred.
 
-**Status Codes**
+**HTTP Status Codes**
 
-| Code | Meaning                                            |
-|------|----------------------------------------------------|
-| 200  | OK – rows autofitted                               |
-| 400  | Bad Request – invalid parameters                  |
-| 401  | Unauthorized – missing/invalid JWT token          |
-| 404  | Not Found – file or worksheet missing             |
-| 500  | Internal Server Error – unexpected failure        |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 {{< /tab >}}
 

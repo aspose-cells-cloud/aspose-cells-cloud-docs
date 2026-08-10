@@ -39,13 +39,15 @@ Content-Length: <size in bytes>
 
 Body: binary stream containing the translated text preserving original line breaks and formatting.
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
-- **404 Not Found**: The spreadsheet file not accessible.
-- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should we use the Translate Text File API?
 
 - **Multilingual Documentation Portals** – Automatically translate user manuals or help files uploaded as text documents, delivering localized versions on demand.

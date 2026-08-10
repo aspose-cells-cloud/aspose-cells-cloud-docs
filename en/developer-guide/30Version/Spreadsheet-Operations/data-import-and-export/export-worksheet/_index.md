@@ -36,9 +36,9 @@ You can export a worksheet to the following formats:
 
 [Explore related export operations such as exporting an entire workbook or a chart.](https://docs.aspose.cloud/cells/export-excel-workbook-to-different-formats/)
 
-## REST API
+## PostExport API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/export
 ```
 
@@ -122,17 +122,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 If the request fails, the API returns a JSON error object containing fields such as `Code` and `Message`. Typical HTTP status codes include **401 Unauthorized** (missing or invalid token) and **400 Bad Request** (invalid parameters).
 
-#### Response Status Codes
+**HTTP Status Codes**
 
-| Status Code | Description                                            |
-|-------------|--------------------------------------------------------|
-| 200 OK      | Export succeeded; file(s) returned in the response.   |
-| 202 Accepted| Request accepted for asynchronous processing (if applicable). |
-| 400 Bad Request | Invalid query parameters or malformed request body. |
-| 401 Unauthorized | Authentication token missing or invalid. |
-| 403 Forbidden | Insufficient permissions to perform the operation. |
-| 404 Not Found | Specified worksheet or file not found. |
-| 500 Internal Server Error | Unexpected server error. |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Notes**
 

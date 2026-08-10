@@ -37,10 +37,6 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/disk?storageName=MyStor
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### Request Parameters
 
 | Parameter Name | Type   | Location | Description                                          | Required |
@@ -96,14 +92,15 @@ Authentication: Include the `Authorization: Bearer <access_token>` header in the
 Related operations: [Upload File](/upload-file/), [Get Files List](/list-files/).  
 Related topics: [Get Files List](/list-files/), [Upload File](/upload-file/), [Delete File](/delete-file/).
 
-### Error Codes
+**HTTP Status Codes**
 
-| HTTP Code | Description                                               |
-| --------- | --------------------------------------------------------- |
-| 401       | Unauthorized – missing or invalid token.                  |
-| 404       | Not Found – the specified storage does not exist.         |
-| 500       | Internal Server Error – an unexpected condition occurred. |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageController/GetDiskUsage) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

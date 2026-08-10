@@ -98,14 +98,15 @@ Save the response body to a file with the appropriate extension (e.g., `.xlsx`).
 
 ---
 
-## Error Codes {#error-codes}
-| HTTP Code | Meaning | Suggested Action |
-|-----------|---------|------------------|
-| **400 Bad Request** | Invalid URI or malformed parameters. | Verify query string values and required fields. |
-| **401 Unauthorized** | Missing or invalid JWT token. | Obtain a fresh access token. |
-| **404 Not Found** | Spreadsheet file not found or worksheet name invalid. | Check file path and worksheet spelling. |
-| **500 Internal Server Error** | Unexpected processing error. | Contact Aspose support with request details. |
+**HTTP Status Codes**
 
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ---
 
 ## SDK Samples {#sdk-samples}

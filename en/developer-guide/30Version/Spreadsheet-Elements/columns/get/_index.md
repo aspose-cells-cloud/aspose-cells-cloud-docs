@@ -51,6 +51,10 @@ GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{sheetName}/cells/colu
 
 ---
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 ## Request Parameters
 
 | Name          | Location | Type    | Required | Description |

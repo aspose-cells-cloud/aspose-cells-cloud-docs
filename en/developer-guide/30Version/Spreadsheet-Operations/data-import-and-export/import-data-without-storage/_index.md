@@ -15,9 +15,9 @@ Excel data import can be complex because many factors influence the outcome. All
 
 This REST API imports **data** into an Excel file.
 
-## REST API
+## PostImportData API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
 ```
 
@@ -45,11 +45,12 @@ A valid JWT token must be generated beforehand, and the file size must not excee
   "Code":200
 }
 ```
-**Http Status Codes**
+
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Import succeeded; response confirms data was imported. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |

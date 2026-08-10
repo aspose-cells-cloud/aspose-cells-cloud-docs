@@ -49,14 +49,15 @@ To use this endpoint you must obtain an access token from Aspose.Cells Cloud and
   - `401 Unauthorized` – Authentication failed or token missing.  
   - `500 Internal Server Error` – Server‑side error during conversion.  
 
-**Status Codes**
+**HTTP Status Codes**
 
-| Code | Description                              | Possible Error Body |
-|------|------------------------------------------|---------------------|
-| 200  | Conversion succeeded                     | Binary stream or file reference |
-| 400  | Invalid request (missing/invalid params) | JSON with error details |
-| 401  | Authentication failure                   | JSON with authentication error |
-| 500  | Unexpected server error                  | JSON with server error information |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Notes**  
 * Some output formats have specific limitations (e.g., HTML conversion does not preserve macros). Review the format‑specific documentation for details.  

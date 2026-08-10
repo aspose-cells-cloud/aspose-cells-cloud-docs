@@ -62,13 +62,15 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/worksheet/csv?worksheet
 ]
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.
-- **404 Not Found** – The spreadsheet file is not accessible.
-- **500 Server Error** – The spreadsheet caused an internal processing error.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## When to Use the Convert Worksheet to CSV API?
 
 - **Data Extraction for BI pipelines** – Pull a specific worksheet from an Excel report and feed the resulting CSV directly into Power BI or Tableau without intermediate file handling.

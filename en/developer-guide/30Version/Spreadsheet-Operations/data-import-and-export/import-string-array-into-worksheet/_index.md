@@ -16,8 +16,6 @@ ArticleTitle: "Import String Array into Excel Worksheet – Aspose.Cells Cloud"
 
 Importing a string array into an Excel worksheet is a common task when populating spreadsheets with list‑based data. This operation is useful for scenarios such as loading configuration values, transferring data from external sources, or initializing worksheets with predefined string collections.
 
-## REST API
-
 **Prerequisites:**  
 - A valid JWT token obtained via the Aspose.Cells Cloud authentication flow.  
 - An existing workbook (or the ability to create one) in your Aspose Cloud storage.  
@@ -25,9 +23,10 @@ Importing a string array into an Excel worksheet is a common task when populatin
 
 This REST API imports string‑array data into an Excel worksheet.
 
-```bash
+## PostImportData API
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/import
-POST https://api.aspose.cloud/v3.0/cells/{name}/importdata
 ```
 
 ### **Security and Authentication**

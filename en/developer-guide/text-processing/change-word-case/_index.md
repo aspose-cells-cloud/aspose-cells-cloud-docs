@@ -33,10 +33,6 @@ PUT https://api.aspose.cloud/v4.0/cells/content/wordcase
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### Request Parameters for **UpdateWordCase** API
 
 | Parameter Name | Type   | Location | Description                                                                                                                                                           |
@@ -66,24 +62,15 @@ On success the service returns **200 OK** (or **202 Accepted**) with a JSON 
 ]
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized** – Invalid access token or incorrect client credentials.
-- **404 Not Found** – The spreadsheet file is not accessible.
-- **500 Server Error** – The spreadsheet encountered an internal processing anomaly.
-
-**Status Codes Summary**
-
-| Code | Meaning                     |
-|------|-----------------------------|
-| 200  | Request succeeded (synchronous) |
-| 202  | Request accepted for processing (asynchronous) |
-| 400  | Bad request – malformed syntax |
-| 401  | Unauthorized – invalid token |
-| 404  | Not found – resource missing |
-| 429  | Too Many Requests – rate limit exceeded |
-| 500  | Internal server error |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Rate‑limit / Throttling**  
 The API enforces a default limit of X requests per minute per account. Exceeding this limit returns **429 Too Many Requests**.

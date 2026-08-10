@@ -57,15 +57,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/WorkSheetBackground_Sample_Test_Boo
 }
 ```
 
-**Response Codes**
+**HTTP Status Codes**
 
-| Code | Meaning               | Description                                 |
-|------|-----------------------|---------------------------------------------|
-| 200  | OK                    | Background removed successfully.            |
-| 400  | Bad Request           | Invalid parameters supplied.                |
-| 401  | Unauthorized          | Missing or invalid JWT token.               |
-| 404  | Not Found             | Specified file or worksheet does not exist. |
-| 500  | Internal Server Error | Unexpected server error.                    |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 {{< /tab >}}
 

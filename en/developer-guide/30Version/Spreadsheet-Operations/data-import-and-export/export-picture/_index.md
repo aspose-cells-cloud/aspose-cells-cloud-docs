@@ -61,15 +61,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
   ]
 }
 ```
-### Error Codes
 
-| HTTP Status | Description                                                    | Example JSON                                                                                |
-| ----------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| **400**     | Bad request – missing or invalid parameters.                   | `{ "error": { "code": "BadRequest", "message": "The 'file' field is required." } }`         |
-| **401**     | Unauthorized – invalid or missing access token.                | `{ "error": { "code": "Unauthorized", "message": "Access token is missing or invalid." } }` |
-| **500**     | Internal server error – unexpected failure on the server side. | `{ "error": { "code": "InternalError", "message": "An unexpected error occurred." } }`      |
+**HTTP Status Codes**
 
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## How to Use the PostExport API with SDKs
 
 ### PostExport API Specification

@@ -11,19 +11,23 @@ ArticleTitle: "Update Chart Title in Excel Worksheet – Aspose.Cells Cloud Docu
 
 This REST API updates the chart title.
 
-## REST API
-
 **Prerequisites:** You must have a valid Aspose Cloud account and a JWT token for authorization. Typical steps include:
 
 - Sign up for an Aspose Cloud account.  
 - Generate a JWT token via the authentication endpoint.  
-- Ensure the target workbook is stored in a supported cloud storage (default or custom).  
+- Ensure the target workbook is stored in a supported cloud storage (default or custom).
 
-```bash
+## PostWorksheetChartTitle API
+
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/title
 ```
 
 All API calls must be made over **HTTPS** to avoid mixed‑content warnings.
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 

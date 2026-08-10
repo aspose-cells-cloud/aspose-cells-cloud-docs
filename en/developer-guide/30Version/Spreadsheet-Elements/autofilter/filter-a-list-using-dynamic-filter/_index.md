@@ -86,16 +86,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Book1.xlsx/worksheets/Sheet1/autoFi
 }
 ```
 
-### HTTP Status Codes
+**HTTP Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| **200** | OK | Dynamic filter applied successfully. |
-| **400** | Bad Request | Missing or invalid parameters (e.g., unsupported `dynamicFilterType`). |
-| **401** | Unauthorized | Invalid or missing JWT token. |
-| **413** | Payload Too Large | Uploaded file exceeds the allowed size limit. |
-| **500** | Internal Server Error | Unexpected server‑side error. |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## SDK Examples
 
 Below are ready‑to‑run snippets for the most popular SDKs. Replace `YOUR_JWT_TOKEN`, `YOUR_FILE_NAME`, and other placeholders with your actual values.

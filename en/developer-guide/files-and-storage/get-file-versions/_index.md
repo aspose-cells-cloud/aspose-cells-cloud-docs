@@ -26,18 +26,7 @@ The **GetFileVersions** API returns all version records for a specified spreadsh
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
-**Prerequisites / Authentication**
-
-- Obtain a JWT access token from the Aspose Cloud authentication service.  
-- The token must include the required **Storage** scope to access file version information.  
-- Include the `Authorization` header with the bearer token in every request.  
-- Tokens expire after a configurable period; refresh the token as needed before making subsequent calls.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### The request parameters of **GetFileVersions** API are
 

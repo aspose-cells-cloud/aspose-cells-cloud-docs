@@ -59,15 +59,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/SampleBreaks.xlsx/worksheets/Sheet1
 }
 ```
 
-## Error Codes
+**HTTP Status Codes**
 
-| HTTP Status | Description                                       | Sample Error JSON                                             |
-| ----------- | ------------------------------------------------- | ------------------------------------------------------------- |
-| 400         | Bad request – missing or invalid parameters.      | `{ "Code": 400, "Message": "Invalid parameter: column" }`     |
-| 401         | Unauthorized – invalid or missing JWT token.      | `{ "Code": 401, "Message": "Authentication failed." }`        |
-| 404         | Not found – workbook or worksheet does not exist. | `{ "Code": 404, "Message": "File not found." }`               |
-| 500         | Internal server error – unexpected condition.     | `{ "Code": 500, "Message": "An unexpected error occurred." }` |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.

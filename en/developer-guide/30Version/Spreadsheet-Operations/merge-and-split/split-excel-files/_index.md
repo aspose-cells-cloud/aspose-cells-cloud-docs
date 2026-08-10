@@ -11,13 +11,13 @@ description: "The Aspose.Cells Cloud REST API enables splitting an Excel workboo
 weight: 130
 ---
 
-## REST API
-
 This REST API splits an Excel **workbook** into multiple files in different formats.
 
 > **Prerequisites** – To use this API you must obtain a valid JWT token, ensure you are using a supported SDK version, and verify that your workbook is stored in a supported storage location. The API also enforces file‑size limits that are documented in the platform guidelines.
 
-```bash
+## PostWorkbookSplit API
+
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/split
 ```
 
@@ -66,16 +66,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-**Response Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Split succeeded; response contains details of the split files. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
 ## How to Use the PostWorkbookSplit API with SDKs
 
 ### PostWorkbookSplit API Specification

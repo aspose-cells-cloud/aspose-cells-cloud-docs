@@ -26,10 +26,6 @@ curl -X DELETE "https://api.aspose.cloud/v4.0/cells/spreadsheet/worksheets/Sheet
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### Request Parameters:
 
 | Parameter Name | Type   | Location | Description                                                                                                                                                                                             |
@@ -55,15 +51,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-| Code | Description | Typical Cause |
-|------|-------------|---------------|
-| **400 Bad Request** | Invalid Aspose.Cells Cloud API URI. | Malformed request URL or parameters. |
-| **401 Unauthorized** | Invalid access token or incorrect client credentials. | Authentication failure. |
-| **404 Not Found** | The spreadsheet file is not accessible or the specified worksheet does not exist. | Wrong file path or sheet name. |
-| **500 Server Error** | An unexpected condition occurred while processing the workbook. | Server‑side exception. |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should we use the Delete worksheet from Spreadsheet API?
 
 - **Automated Report Post‑processing** – After generating a final financial report, automatically remove intermediate worksheets used for temporary calculations, keeping the final file clean and professional.

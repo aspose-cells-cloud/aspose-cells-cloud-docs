@@ -39,10 +39,6 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/table/image
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### **Request Parameters:**
 
 | Parameter Name | Type   | Path/Query String/HTTP Body | Description                                                                                                                             |
@@ -71,24 +67,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.
-- **404 Not Found**: The spreadsheet file is not accessible.
-- **500 Server Error**: The spreadsheet encountered an error while obtaining calculation data.
-
-### Response Status Codes
-
-| Code | Meaning   | Description               |
-|------|-----------|---------------------------|
-| 200  | OK        | Image generated successfully. |
-| 202  | Accepted  | Async processing started (if applicable). |
-| 400  | Bad Request | Invalid parameters. |
-| 401  | Unauthorized | Invalid or missing token. |
-| 404  | Not Found | Spreadsheet or table not found. |
-| 500  | Internal Server Error | Processing failure. |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## **Where Should You Use the Convert Table to Image API?**
 
 - **Static Report Snapshots**: Convert financial tables, calculation results, or any formatted data into images for inclusion in PDF reports, PowerPoint slides, or printed documents where editing is not required.

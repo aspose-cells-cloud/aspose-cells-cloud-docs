@@ -32,12 +32,9 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/csv?worksheet=She
      -F "Spreadsheet=@sample.xlsx"
 ```
 
-### Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+### **Security and Authentication**
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request Parameters:**
 
@@ -74,16 +71,15 @@ John Doe,2023-01-15,1250.00
 Jane Smith,2023-01-16,980.50
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-| Status Code | Description                              | Typical Cause                                 | Suggested Remedy                                   |
-|------------:|------------------------------------------|----------------------------------------------|----------------------------------------------------|
-| 200         | CSV file returned successfully           | –                                            | Process the returned file.                         |
-| 400         | Bad Request                              | Invalid URI or missing required parameters   | Verify the request URL and required parameters.   |
-| 401         | Unauthorized                             | Invalid or expired JWT token                 | Regenerate a valid access token.                   |
-| 404         | Not Found                                | Spreadsheet file cannot be accessed          | Check file path, storage name, and permissions.    |
-| 500         | Internal Server Error                    | Server‑side processing failure               | Review server logs or contact support if persistent.|
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should you use the Convert Range to CSV API?
 
 ### **1. Data Export & Migration Scenarios**

@@ -25,10 +25,6 @@ PUT https://api.aspose.cloud/v5.0/cells/spreadsheet/create
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### Request Parameters
 
 | Parameter Name     | Type   | Location | Description                                                                                                                                       |
@@ -54,15 +50,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-| Code | Description                                            | Resolution                                                                                     |
-|------|--------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| 400  | Invalid Aspose.Cells Cloud API URI.                    | Verify the request URL and query parameters.                                                  |
-| 401  | Invalid access token or incorrect client ID/secret.   | Obtain a fresh access token and check credentials.                                            |
-| 404  | The specified spreadsheet or template file is not accessible. | Ensure the file exists in the indicated storage path and the name is correct.                |
-| 500  | An internal error occurred while processing the request. | Retry later or contact support with the request ID.                                           |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should we use the Create Spreadsheet API?
 
 - **Initialization of the Automated Reporting System** – Create a new blank workbook or generate a report file from a standard template at the start of each daily/weekly automation cycle.

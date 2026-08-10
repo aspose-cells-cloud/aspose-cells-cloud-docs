@@ -12,19 +12,15 @@ ArticleTitle: "Convert Excel to PPTX using Aspose.Cells Cloud API v3.0"
 
 This REST API converts a spreadsheet file to PPTX format.
 
-## REST API
+## PostConvertWorkbookToPptx API
 
-```
+```http
 POST https://api.aspose.cloud/v3.0/cells/convert/pptx
 ```
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.  
-**Prerequisites:**  
-- Obtain a valid JWT access token.  
-- Ensure the source Excel file is stored in a supported storage location (default or specified via `storageName`).  
-- If the workbook is password‑protected, provide the password using the `password` query parameter.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Query Parameters
 
@@ -68,11 +64,11 @@ The API returns a **FileInfo** object that contains the generated pptx file.
 [FileInfo](/cells/file-info/)
 
 
-**Response Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Conversion succeeded; response contains generated PPTX file details. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |

@@ -64,17 +64,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listo
 {{< /tab >}}
 {{< /tabs >}}
 
-### Response Codes
+**HTTP Status Codes**
 
-| HTTP Code | Meaning               | Description                                                   |
-| --------- | --------------------- | ------------------------------------------------------------- |
-| 200       | OK                    | The slicer was inserted successfully.                         |
-| 400       | Bad Request           | Missing or invalid parameters.                                |
-| 401       | Unauthorized          | Invalid or missing JWT token.                                 |
-| 403       | Forbidden             | Insufficient permissions to access the file or storage.       |
-| 404       | Not Found             | The specified file, worksheet, or list object does not exist. |
-| 500       | Internal Server Error | An unexpected error occurred on the server side.              |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ### Error Handling
 
 When an error occurs, the API returns a JSON object with an `ErrorMessage` field that describes the problem. Inspect the HTTP status code and the `ErrorMessage` to determine the corrective action.

@@ -13,11 +13,15 @@ This REST API retrieves a worksheet comment by cell name using **Aspose.Cells Cl
 
 **Prerequisites:** To call this operation you must include a valid JWT access token in the `Authorization` header (`Bearer <jwt token>`). Tokens can be obtained via the Aspose.Cells Cloud authentication flow described in the [Authentication guide](/cells/authentication/).
 
-## REST API
+## GetWorksheetComment API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/comments/{cellName}
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 
@@ -95,15 +99,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/test.xlsx/worksheets/Sheet1/comment
 - **404 Not Found** – Ensure the file name, worksheet name, and cell address are correct and that the file exists in the specified folder/storage.
 - **500 Internal Server Error** – Check the request payload for malformed data and confirm that the service is operational.
 
-**Status Codes**
+**HTTP Status Codes**
 
-| Code | Meaning                         |
-| ---- | ------------------------------- |
-| 200  | Comment retrieved successfully. |
-| 401  | Unauthorized – invalid or missing JWT token. |
-| 404  | Not Found – specified file/worksheet/comment does not exist. |
-| 500  | Internal Server Error – unexpected server condition. |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Cloud SDK Family
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.

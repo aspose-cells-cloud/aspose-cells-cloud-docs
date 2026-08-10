@@ -31,16 +31,7 @@ This API moves a folder from one location to another within Aspose.Cells Cloud s
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs require JWT token‑based authentication. Follow these steps before calling the API:
-
-1. **Obtain a JWT token** – send a request to the authentication endpoint (`/connect/token`) with your client credentials.  
-2. **Include the token** in every request header:
-
-   ```bash
-   -H "Authorization: Bearer {access_token}"
-   ```
-
-For detailed instructions, see the <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">authentication guide</a>.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### The request parameters of **moveFolder** API are
 

@@ -57,15 +57,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Sample_Test_Book.xls/worksheets/She
 }
 ```
 
-**Response Codes**
+**HTTP Status Codes**
 
-| Code | Meaning               | Description                                    |
-|------|-----------------------|------------------------------------------------|
-| 200  | OK                    | Worksheet moved successfully.                 |
-| 400  | Bad Request           | Invalid parameters (e.g., missing `moving`). |
-| 401  | Unauthorized          | Invalid or missing JWT token.                 |
-| 404  | Not Found             | Workbook or worksheet not found.              |
-| 500  | Internal Server Error | Unexpected server error.                      |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Sample Error Payload**
 

@@ -15,10 +15,9 @@ Exporting shapes from Excel enables reuse of diagrammatic content across platfor
 
 You can export shapes to the following formats: **PNG**, **GIF**, **JPEG**, **BMP**, **SVG**, **TIFF**, **EMF**, **WMF**.
 
+## PostExport API
 
-## REST API
-
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/export
 ```
 

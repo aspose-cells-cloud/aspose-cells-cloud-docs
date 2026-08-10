@@ -15,13 +15,17 @@ This REST API deletes a **horizontal** page break.
 
 **Prerequisites**: To call this endpoint you must have a valid Aspose Cloud JWT access token. Obtain it by following the [Authentication guide](https://docs.aspose.cloud/cells/authentication/).
 
-## REST API
+## DeleteHorizontalPageBreak API
 
-```bash
+```http
 DELETE https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/horizontalpagebreaks/{index}
 ```
 
 *All API calls must be made over **HTTPS**.*
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 

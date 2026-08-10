@@ -20,13 +20,7 @@ PUT https://api.aspose.cloud/v4.0/cells/content/extract/text
 
 ### **Security and Authentication**
 
-Before using this API, you must have an Aspose Cloud account, obtain a client ID and client secret, and generate a JWT access token as described in the authentication guide.  
-
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
 
 ### The request parameters of **extractText** API are
 
@@ -89,15 +83,15 @@ If the `outPath` parameter is provided, the response contains only a status mess
 }
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-- **200 OK** – Extraction completed successfully.  
-- **202 Accepted** – Request accepted for asynchronous processing.  
-- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI or missing required parameters.  
-- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
-- **404 Not Found** – The specified spreadsheet file cannot be accessed.  
-- **500 Server Error** – An unexpected error occurred while processing the workbook.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/ExtractText) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.

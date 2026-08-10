@@ -30,11 +30,7 @@ PUT http://api.aspose.cloud/v4.0/cells/convert/worksheet/image
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
-
-```bash
--H "Authorization: Bearer {access_token}"
-```
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request Parameters**
 
@@ -63,13 +59,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-- **400 Bad Request** – The request URI or parameters are invalid.  
-- **401 Unauthorized** – Invalid or missing access token, or incorrect client credentials.  
-- **404 Not Found** – The specified spreadsheet file cannot be located or accessed.  
-- **500 Server Error** – An unexpected server‑side error occurred while processing the request.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## **Where Should You Use the Convert Worksheet to Image API?**
 
 - **Static Report Snapshots** – Convert financial tables, calculations, or other data into images for inclusion in PDF reports, PowerPoint slides, or printed documents where editing is not required.  

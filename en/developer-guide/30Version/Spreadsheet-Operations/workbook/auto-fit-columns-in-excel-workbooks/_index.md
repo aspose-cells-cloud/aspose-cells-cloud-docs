@@ -18,9 +18,9 @@ weight: 90
 
 This REST API supports auto‑fitting columns in an Excel workbook.
 
-## REST API
+## PostAutofitWorkbookColumns API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/autofitcolumns
 ```
 
@@ -72,7 +72,16 @@ curl -v "https://api.aspose.cloud/v3.0/cells/myWorkbook.xlsx/autofitcolumns" \
 ### Prerequisites
 Before calling this operation, ensure that you have a valid Aspose Cloud API key, a generated JWT token, and that the target workbook already exists in the specified storage location.
 
-### Response Codes
+**HTTP Status Codes**
+
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
+
 The API can return the following HTTP status codes:
 
 | Code | Description |

@@ -10,20 +10,15 @@ ArticleTitle: "Get Chart Second Category Axis – Aspose.Cells Cloud API"
 
 This REST API retrieves the **second‑category axis** of a chart.
 
-## REST API
+## GetChartSecondCategoryAxis API
 
-```bash
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondcategoryaxis
 ```
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
-
-**Prerequisites**
-- Register for an Aspose Cloud account and obtain a **Client Id** and **Client Secret**.
-- Generate a JWT token using the client credentials (see the linked authentication guide).
-- Include the token in the `Authorization` header of each request: `Authorization: Bearer <jwt token>`.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 
@@ -54,16 +49,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-**Response Status Codes**
+**HTTP Status Codes**
 
-| Code | Meaning                     | Description                                                                      |
-|------|-----------------------------|----------------------------------------------------------------------------------|
-| 200  | OK                          | Axis retrieved successfully; response contains axis details.                    |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type).                    |
-| 401  | Unauthorized                | Invalid or missing JWT token.                                                    |
-| 404  | Not Found                   | The specified chart or axis does not exist.                                      |
-| 500  | Internal Server Error       | Unexpected server error.                                                         |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## How to Use the GetChartSecondCategoryAxis API with SDKs
 
 ### GetChartSecondCategoryAxis API Specification

@@ -12,15 +12,9 @@ weight: 100
 
 Export a cloud‑stored spreadsheet (Excel) table to another format file.
 
-## Security and Authentication
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+### **Security and Authentication**
 
-**Prerequisites**
-
-- An active Aspose.Cloud account with a valid subscription.  
-- The latest version of the Aspose.Cells Cloud SDK for your language (available on the [GitHub repository](https://github.com/aspose-cells-cloud)).  
-- A generated JWT access token; see the authentication guide for details.  
-- Awareness of rate‑limit policies (default 100 requests per minute per account).
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ## **Export Table as Format API**
 
@@ -68,21 +62,15 @@ Authentication is required for this endpoint. See the main **Security and Authen
 ]
 ```
 
-### **Success Status Codes**
+**HTTP Status Codes**
 
-| Code | Description                                          |
-| ---- | ---------------------------------------------------- |
-| 200  | File returned successfully.                         |
-| 202  | Request accepted; processing will continue asynchronously. |
-| 204  | No content – the operation completed but there is no file to return. |
-
-### Error Codes
-
-- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
-- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
-- **404 Not Found**: The spreadsheet file is not accessible.  
-- **500 Server Error**: The spreadsheet encountered an anomaly while obtaining calculation data.
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## **Where Should You Use the Export Table to Another Format API?**
 
 - **Legacy System Migration**: Convert thousands of legacy XLS files to XLSX for modern systems.

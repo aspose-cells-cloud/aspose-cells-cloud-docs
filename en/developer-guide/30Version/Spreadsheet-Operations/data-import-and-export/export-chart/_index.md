@@ -87,16 +87,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-**Response Status Codes**
+**HTTP Status Codes**
 
-| Code | Meaning                     | Description                                            |
-|------|-----------------------------|--------------------------------------------------------|
-| 200  | OK                          | Chart export succeeded; response contains exported file details. |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token.                          |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit.                      |
-| 500  | Internal Server Error       | Unexpected server error.                               |
-
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## How to Use the PostExport API with SDKs
 
 ### PostExport API Specification

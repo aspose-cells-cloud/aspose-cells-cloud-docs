@@ -18,9 +18,9 @@ Use this REST API to set a value in the specified range. When appropriate, the v
 - A JWT token that includes the `Cells.ReadWrite` scope.  
 - The workbook must already be uploaded to the target storage location.
 
-## REST API
+## PostWorksheetCellsRangeValue API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/ranges/value
 ```
 

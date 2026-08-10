@@ -16,7 +16,7 @@ ArticleTitle: "Build Excel Reports with Smart Marker Templates – Aspose.Cells 
 
 This REST API creates a workbook using a Smart Marker template.
 
-## REST API
+## Workbook SmartMarker API
 
 ```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/smartmarker
@@ -24,9 +24,7 @@ POST https://api.aspose.cloud/v3.0/cells/{name}/smartmarker
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.
-
-**Prerequisites:** To call this API you must obtain a JWT access token. Register an application in the Aspose Cloud Dashboard to receive a **Client Id** and **Client Secret**, then request a token from the `/connect/token` endpoint. Include the token in the request header as `Authorization: Bearer {access_token}`.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **What is a Smart Marker?**
 
@@ -64,16 +62,15 @@ A Smart Marker is a placeholder syntax that maps data fields in an XML (or JSON)
 - Accepted formats are **.xlsx**, **.xlsm**, and **.xlsb** only.  
 - A rate limit of **20 requests per second** per account is enforced.
 
-**Response Status Codes**
+**HTTP Status Codes**
 
-| Code | Meaning                     | Description                                                                 |
-|------|-----------------------------|-----------------------------------------------------------------------------|
-| 200  | OK                          | Report generation succeeded; response contains details of the generated file. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type).               |
-| 401  | Unauthorized                | Invalid or missing JWT token.                                               |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit.                                            |
-| 500  | Internal Server Error       | Unexpected server error.                                                    |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## How to Use the Workbook SmartMarker API 
 
 ### Workbook SmartMarker API Specification

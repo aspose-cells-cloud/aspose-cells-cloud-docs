@@ -15,15 +15,15 @@ The Aspose.Cells Cloud REST API merges a rectangular block of cells into a singl
 - The workbook must already exist in the specified storage folder.  
 - Storage configuration (folder and storage name) must be set up in your Aspose.Cloud account.
 
-## REST API
+## PostWorksheetMerge API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/merge
 ```
 
-## Security and Authentication
+### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require [JWT token-based authentication](https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/).
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 
@@ -50,16 +50,16 @@ Return CellsCloudResponse.
   "Code":200
 }
 ```
-**Http Status Codes**
+
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Merge operation completed successfully; the workbook now contains the merged cell range. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
-
 ## How to Use the PostWorksheetMerge API with SDKs
 
 ### PostWorksheetMerge API Specification

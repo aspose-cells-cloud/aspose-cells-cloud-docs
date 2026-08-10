@@ -16,11 +16,15 @@ This REST API unhides worksheet columns.
 
 **Prerequisites** – All Aspose.Cells Cloud endpoints require HTTPS and a valid OAuth 2.0 access token. Ensure you have obtained an access token and included it in the `Authorization` header of your requests.
 
-## REST API
+## PostUnhideWorksheetColumns API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/cells/columns/unhide
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request Parameters
 

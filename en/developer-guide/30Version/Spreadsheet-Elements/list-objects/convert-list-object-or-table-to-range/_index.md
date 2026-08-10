@@ -27,6 +27,10 @@ To call this operation you must include a valid JWT token in the `Authorization`
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/listobjects/{listObjectIndex}/ConvertToRange
 ```
 
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
 ### Request Parameters
 
 | Name                | Type    | Location | Required | Default | Description                                                 |
@@ -83,16 +87,15 @@ The API returns a **200 OK** response with details of the newly created range.
 | **RowCount**    | integer | Number of rows in the range.                       |
 | **ColumnCount** | integer | Number of columns in the range.                    |
 
-### Error Codes
+**HTTP Status Codes**
 
-| Code | Meaning               | When it occurs                                                            |
-| ---- | --------------------- | ------------------------------------------------------------------------- |
-| 200  | OK                    | The request succeeded and the range was created.                         |
-| 400  | Bad Request           | The `listObjectIndex` is out of range or required parameters are missing. |
-| 401  | Unauthorized          | Missing or invalid JWT token.                                            |
-| 403  | Forbidden             | The authenticated user does not have permission to modify the workbook. |
-| 404  | Not Found             | The specified workbook, worksheet, or ListObject does not exist.         |
-| 500  | Internal Server Error | An unexpected server‑side error occurred.                                 |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **Error Response Schema (example):**
 

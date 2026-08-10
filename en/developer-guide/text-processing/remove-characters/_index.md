@@ -46,10 +46,6 @@ Before calling the Remove Characters API, ensure you have a valid Aspose Cloud a
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### Request Parameters
 
 | Parameter Name    | Type   | Location           | Description                                                                                                                                                                                                                      |
@@ -81,15 +77,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Successful response:** `200 OK` with the processed workbook returned as a file stream.
 
-### Error Codes
+**HTTP Status Codes**
 
-| HTTP Code | Description                     | Typical Cause                                 | Suggested Fix                                          |
-|-----------|---------------------------------|-----------------------------------------------|--------------------------------------------------------|
-| 400       | Bad Request                     | Missing or invalid request parameters         | Verify that all required query/form fields are present |
-| 401       | Unauthorized                    | Invalid/expired JWT token                      | Refresh the token or check client credentials           |
-| 404       | Not Found                       | Spreadsheet file not accessible                | Confirm the `Spreadsheet` name, `outPath`, and storage |
-| 500       | Internal Server Error           | Processing anomaly on the server              | Retry the request or contact support with request ID   |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where Should You Use the Remove Characters API?
 
 - **Data Import/Export** – Clean imported CSV/data by removing invisible characters and formatting errors.

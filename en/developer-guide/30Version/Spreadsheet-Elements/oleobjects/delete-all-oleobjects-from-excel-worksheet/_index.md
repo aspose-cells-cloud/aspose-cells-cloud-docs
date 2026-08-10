@@ -76,16 +76,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/Embedded_OleObject_Sample_Book1.xls
 }
 ```
 
-### Response Codes
+**HTTP Status Codes**
 
-| HTTP Status | Description | Example |
-|-------------|-------------|---------|
-| **200 OK** | All OLE objects were removed (or none existed). | `{ "Code": 200, "Status": "OK" }` |
-| **400 Bad Request** | Missing or invalid parameters. | `{ "Code": 400, "Message": "Invalid worksheet name." }` |
-| **401 Unauthorized** | Authentication failed or token missing/expired. | `{ "Code": 401, "Message": "Access token is invalid." }` |
-| **404 Not Found** | Workbook or worksheet does not exist. | `{ "Code": 404, "Message": "Workbook not found." }` |
-| **500 Internal Server Error** | Unexpected server error. | `{ "Code": 500, "Message": "Unexpected error." }` |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ---
 
 ## SDK Samples

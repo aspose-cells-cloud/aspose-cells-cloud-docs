@@ -24,10 +24,6 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/html
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-```bash
--H "Authorization: Bearer {access_token}"
-```
-
 ### Request Parameters
 
 | Parameter Name | Type   | Location | Required/Optional | Description                                                                                                                                                                                                |
@@ -54,15 +50,15 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
-### Error Codes
+**HTTP Status Codes**
 
-| Code | Meaning                | Typical Cause                           | Resolution                                            |
-|------|------------------------|----------------------------------------|-------------------------------------------------------|
-| 400  | Bad Request            | Invalid API URI or malformed request   | Verify the endpoint URL and request syntax.           |
-| 401  | Unauthorized           | Missing or invalid authentication token | Refresh the OAuth 2.0 token and ensure proper scopes. |
-| 404  | Not Found              | Spreadsheet file cannot be accessed     | Confirm the file name and storage location.           |
-| 500  | Server Error           | Unexpected processing error on server   | Retry the request; if the problem persists, contact support. |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should we use the Convert worksheet to HTML API?
 
 - Embed live spreadsheet data in a web portal – Convert a financial‑report worksheet to HTML for direct viewing in browsers without requiring Excel plugins.

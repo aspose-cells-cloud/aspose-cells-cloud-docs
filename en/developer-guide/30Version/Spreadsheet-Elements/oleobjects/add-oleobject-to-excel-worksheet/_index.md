@@ -17,11 +17,15 @@ This REST API adds an **OLE object** to an Excel worksheet.
 
 **Prerequisites** – You must have a valid JWT authentication token, and any source files referenced by `oleFile` or `imageFile` should be uploaded to the specified storage location before invoking the endpoint.
 
-## REST API
+## PutWorksheetOleObject API
 
-```bash
+```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/oleobjects
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 

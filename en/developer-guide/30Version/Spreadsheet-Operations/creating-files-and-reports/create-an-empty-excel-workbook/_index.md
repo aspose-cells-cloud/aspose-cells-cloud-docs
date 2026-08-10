@@ -16,9 +16,9 @@ weight: 20
 ArticleTitle: "Create an Empty Excel Workbook using Aspose.Cells Cloud API"
 ---
 
-## REST API
-
 This REST API creates an **empty workbook**.
+
+## PutWorkbookCreate API
 
 ```http
 PUT https://api.aspose.cloud/v3.0/cells/{name}
@@ -26,8 +26,7 @@ PUT https://api.aspose.cloud/v3.0/cells/{name}
 
 ### **Security and Authentication**
 
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token‑based authentication</a>.  
-To obtain a JWT token, call the authentication endpoint with your client ID and client secret. The service returns an access token that must be included in the `Authorization` header of every request (e.g., `Authorization: Bearer <access_token>`).
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Query Parameters
 

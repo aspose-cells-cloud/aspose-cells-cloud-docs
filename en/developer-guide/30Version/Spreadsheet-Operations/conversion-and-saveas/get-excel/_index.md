@@ -15,9 +15,9 @@ ArticleTitle: "Aspose.Cells Cloud – Convert Excel Workbook to PDF, CSV, HTML, 
 
 This REST API retrieves an Excel workbook in a different format.
 
-## REST API
+## GetWorkBook API
 
-```
+```http
 GET https://api.aspose.cloud/v3.0/cells/{name}
 ```
 
@@ -60,11 +60,11 @@ Content-Length: 123456
 (binary PDF data)
 ```
 
-**Response Status Codes**
+**HTTP Status Codes**
 
 | Code | Meaning                     | Description                                      |
 |------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Compression succeeded; response contains compressed file details. |
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
 | 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |

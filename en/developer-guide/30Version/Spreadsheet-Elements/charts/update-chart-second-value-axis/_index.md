@@ -15,11 +15,15 @@ This REST API updates the second value axis of a chart.
 - The target Excel file must be stored in Aspose Cloud storage (provide `folder` and optional `storageName`).  
 - API version v3.0 is used; ensure the base URL is `https://api.aspose.cloud/v3.0`.
 
-## REST API
+## PostChartSecondValueAxis API
 
-```bash
+```http
 POST https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/charts/{chartIndex}/secondvalueaxis
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### Request parameters
 
@@ -78,15 +82,15 @@ curl -v "https://api.aspose.cloud/v3.0/cells/{name}/worksheets/{sheetName}/chart
 
 {{< /tabs >}}
 
-**Response Codes**
+**HTTP Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| 200 | OK | Axis updated successfully. |
-| 400 | Bad Request | Invalid parameters or malformed JSON. |
-| 401 | Unauthorized | Missing or invalid JWT token. |
-| 404 | Not Found | File, worksheet, or chart not found. |
-| 500 | Internal Server Error | Unexpected server error. |
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 
 **See also:**  
 - [Get Chart Second Value Axis](https://docs.aspose.cloud/cells/charts/second-value-axis/get/)  

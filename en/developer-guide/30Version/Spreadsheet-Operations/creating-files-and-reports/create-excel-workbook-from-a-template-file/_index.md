@@ -128,17 +128,15 @@ A successful call returns a **`200 OK`** (or **`201 Created`** when a new file i
 
 ---
 
-## Status Codes
+**HTTP Status Codes**
 
-| Code | Meaning | Description |
-|------|---------|-------------|
-| **200** | OK | Workbook created successfully; response contains file metadata. |
-| **201** | Created | Same as 200, used when the service explicitly returns “Created”. |
-| **400** | Bad Request | Missing or invalid parameters (e.g., unsupported file type). |
-| **401** | Unauthorized | Invalid or missing JWT token. |
-| **413** | Payload Too Large | Uploaded file exceeds the allowed size. |
-| **500** | Internal Server Error | Unexpected server‑side problem. |
-
+| Code | Meaning                     | Description                                      |
+|------|-----------------------------|--------------------------------------------------|
+| 200  | OK                          | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
+| 401  | Unauthorized                | Invalid or missing JWT token. |
+| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
+| 500  | Internal Server Error       | Unexpected server error. |
 ---
 
 ## SDK Examples
