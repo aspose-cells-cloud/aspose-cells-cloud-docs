@@ -56,17 +56,24 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
-On success the API returns **HTTP 200 OK** with a stream of the generated file(s). The response body contains a JSON array where each element represents a split file, including its name and a download link.
+The file can be downloaded directly from or saved to the location specified by `outPath`.
+
+**Success response details**
+
+| Status Code | Content‑Type               | Description                                |
+| ----------- | -------------------------- | ------------------------------------------ |
+| 200 OK      | `application/octet-stream` | Binary stream of the merged workbook file. |
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Where should we use the Split Spreadsheet API?
 
 - **Department Data Distribution**: Split a unified workbook containing data from multiple departments into department‑specific files.
@@ -91,6 +98,35 @@ On success the API returns **HTTP 200 OK** with a stream of the generated fi
 ### Split Spreadsheet API Specification
 
 The [Split Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/SplitSpreadsheet) provides a publicly accessible programming interface for performing REST interactions directly from a web browser.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/split/spreadsheet?outFormat=PDF" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@myWorkbook.xlsx" \
+  -o split-spreadsheet.zip
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -125,8 +161,3 @@ The following code examples illustrate how to invoke Aspose.Cells web services u
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_SplitLocalFile.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-**Related articles:**  
-- Merge Spreadsheets – `/cells/merge-spreadsheets/`  
-- Split Remote Spreadsheet – `/cells/split-remote-spreadsheet/`  
-- Conversion Overview – `/cells/conversion/`

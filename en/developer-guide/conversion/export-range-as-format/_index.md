@@ -12,8 +12,6 @@ weight: 100
 
 Export a cloud spreadsheet/Excel range to a format file. The format file can be saved in the cloud or exported to local storage.
 
-**Prerequisites:** To use this API you must have a valid Aspose Cloud account, obtain a client ID and client secret, generate a JWT access token, and ensure the workbook you want to convert is uploaded to your chosen storage.
-
 ## Export Range as Format API
 
 ### Web API
@@ -42,16 +40,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | **region**         | String | Query    | (Optional) Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior. |
 | **password**       | String | Query    | (Optional) Password required to open the spreadsheet file.                                                                                         |
 
-#### Sample cURL Request
-
-```bash
-curl -X GET "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Sheet1/ranges/A1:C12?format=pdf" \
-     -H "Authorization: Bearer {access_token}" \
-     -H "Accept: application/octet-stream"
-```
-
 ### Response
-
 
 ```json
 [
@@ -67,23 +56,13 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Shee
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-
-**HTTP Status‑Code Summary**
-
-| Status | Description                                   |
-| ------ | --------------------------------------------- |
-| 200    | Successful export; binary file returned.      |
-| 400    | Bad request – malformed URI or parameters.    |
-| 401    | Unauthorized – authentication failure.        |
-| 404    | Not found – workbook or worksheet missing.    |
-| 500    | Internal server error – processing failure.   |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## Where should you use the Export Range to another format API?
 
@@ -136,6 +115,35 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Shee
 
 The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportRangeAsFormat" rel="noopener noreferrer">Export Range as Format API Specification</a> provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
 
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Sheet1/ranges/A1:C12?format=pdf" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/octet-stream"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ### Use Aspose.Cells Cloud SDKs
 
 Using the SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to export a spreadsheet range to a format file with concise code. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
@@ -168,11 +176,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportRangeAsFormat.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-### See Also
-
-- **Export Worksheet as Format** – Convert an entire worksheet to PDF, PNG, CSV, etc.  
-- **Convert Workbook to PDF** – Transform a whole workbook into a PDF document.  
-- **Export Range to Image** – Generate image files (PNG, JPEG) from a specific range.  
-
-These related endpoints can help you handle broader conversion scenarios.

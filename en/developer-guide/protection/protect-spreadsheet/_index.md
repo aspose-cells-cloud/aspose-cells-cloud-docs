@@ -48,16 +48,6 @@ Authorization: Bearer {access_token}
 
 The token must be obtained from Aspose Cloud’s authentication endpoint and must include the **Cells** scope.
 
-**Sample cURL Request**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/protection/spreadsheet?openPassword=MyOpenPwd&modifyPassword=MyModifyPwd" \
-     -H "Authorization: Bearer {access_token}" \
-     -F "Spreadsheet=@/path/to/workbook.xlsx" \
-     -F "outPath=protected/" \
-     -F "outStorageName=MyStorage"
-```
-
 ## **Response**
 
 ```json
@@ -74,13 +64,14 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/protection/spreadsheet?openPass
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Where should we use the Protect Spreadsheet API?
 
 - **Secure Sensitive Financial Data** – Protect Excel files containing budgets, invoices, or payroll information with open and modify passwords to prevent unauthorized access or edits.
@@ -101,7 +92,36 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/protection/spreadsheet?openPass
 
 ### OpenAPI Specification
 
-<a href="https://reference.aspose.cloud/cells/#/ProtectionController/ProtectSpreadsheet" rel="noopener noreferrer">OpenAPI Specification</a> provides a detailed programming interface for executing REST interactions directly from a web browser.
+The [Protect Spreadsheet API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Protection/ProtectSpreadsheet) provides a publicly accessible programming interface to facilitate direct REST interactions from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/protection/spreadsheet?openPassword=MyOpenPwd&modifyPassword=MyModifyPwd" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@/path/to/workbook.xlsx"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -135,4 +155,3 @@ The following code examples illustrate how to interact with Aspose.Cells web ser
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ProtectSpreadsheet.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-

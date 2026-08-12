@@ -14,11 +14,10 @@ Programmatically create new Excel spreadsheets using Aspose.Cells Cloud API. Gen
 
 ## **Create Spreadsheet API**
 
-
 ### Web API
 
 ```http
-PUT https://api.aspose.cloud/v5.0/cells/spreadsheet/create
+PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/create
 ```
 
 ### **Security and Authentication**
@@ -52,13 +51,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Where should we use the Create Spreadsheet API?
 
 - **Initialization of the Automated Reporting System** – Create a new blank workbook or generate a report file from a standard template at the start of each daily/weekly automation cycle.
@@ -69,9 +69,9 @@ For subsequent operations such as adding worksheets or populating cells, see the
 
 ## Why should you use the Create Spreadsheet API?
 
-- **Developer‑Friendly** – Provides SDK libraries for multiple languages and extensive documentation, simplifying integration compared to building custom solutions.  
-- **Labor Efficiency** – Allows automation of document consolidation, reducing manual effort.  
-- **Pay‑per‑Use Pricing** – Charges are based on API usage without upfront licensing fees.  
+- **Developer‑Friendly** – Provides SDK libraries for multiple languages and extensive documentation, simplifying integration compared to building custom solutions.
+- **Labor Efficiency** – Allows automation of document consolidation, reducing manual effort.
+- **Pay‑per‑Use Pricing** – Charges are based on API usage without upfront licensing fees.
 - **Managed Service** – The API is fully hosted, removing the need for on‑premises server maintenance or software updates.
 
 ## How to Use the Create Spreadsheet API with SDKs
@@ -79,6 +79,34 @@ For subsequent operations such as adding worksheets or populating cells, see the
 ### Create Spreadsheet API Specification
 
 The [Create Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/ManagementController/CreateSpreadsheet) defines a publicly accessible programming interface and enables REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/create?format=XLSX&outStorageName=MyStorage" \
+  -H "Authorization: Bearer {access_token}"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

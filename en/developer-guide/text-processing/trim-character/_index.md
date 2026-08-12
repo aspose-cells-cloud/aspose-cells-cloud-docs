@@ -82,15 +82,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Success example (HTTP 200):** The API returns a file stream containing the trimmed workbook.
 
-**HTTP Status Codes**
+### Error Codes
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token. Or invalid client id and secret.
+- **404 Not Found**: The spreadsheet file not accessible.
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
+
 ## Where should we use the Trim Character API?
 
 - **User Input Normalization**: Clean up manual user input table data, removing excess spaces and line breaks.

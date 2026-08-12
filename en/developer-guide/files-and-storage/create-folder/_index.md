@@ -10,6 +10,8 @@ description: "Create a new folder in Aspose.Cells Cloud storage via a simple PUT
 weight: 100
 ---
 
+The **createFolder** operation creates a new folder at the specified location in the cloud storage used by the Excel API. This is essential for organizing files and maintaining a structured directory hierarchy.
+
 ## **Excel API: Create Folder**
 
 ### Web API
@@ -17,26 +19,6 @@ weight: 100
 ```
 PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{path}
 ```
-
-**Sample cURL request**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/myFolder/subFolder" \
-     -H "Authorization: Bearer {access_token}" \
-     -H "Accept: application/json"
-```
-
-**Sample request payload**
-
-```json
-{
-  // No request body is required for this operation.
-}
-```
-
-### Function Description
-
-The **createFolder** operation creates a new folder at the specified location in the cloud storage used by the Excel API. This is essential for organizing files and maintaining a structured directory hierarchy.
 
 ### **Security and Authentication**
 
@@ -52,26 +34,51 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ### Response Description
 
 ```json
-{
-  "message": "Folder created successfully."
-}
+{}
 ```
 
-### Error Handling
+The operation returns no content on success. Typical HTTP status codes are:
 
-| HTTP Status               | Meaning                               | Suggested Remedy                                           |
-| ------------------------- | ------------------------------------- | ---------------------------------------------------------- |
-| 200 OK / 204 No Content   | Folder created successfully.          | –                                                          |
-| 400 Bad Request           | Invalid `path` or missing parameters. | Verify the path syntax and required fields.                |
-| 401 Unauthorized          | Missing or invalid OAuth token.       | Obtain a valid token and include it in the request.        |
-| 409 Conflict              | The folder already exists.            | Choose a different folder name or delete the existing one. |
-| 500 Internal Server Error | Server‑side problem.                  | Retry later or contact support.                            |
+**HTTP Status Codes**
+
+| HTTP Code | HTTP Status           | Description                                                       |
+| --------- | --------------------- | ----------------------------------------------------------------- |
+| 200       | OK                    | Web API called successfully; response contains operation details. |
+| 400       | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401       | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413       | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500       | Internal Server Error | Unexpected server error.                                          |
 
 ## OpenAPI Specification
 
-The <a href="https://reference.aspose.cloud/cells/#/FolderController/CreateFolder" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderController/CreateFolder) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/myFolder/subFolder" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK manages low‑level details and lets you focus on your project tasks. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -103,8 +110,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CreateFolder.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-**See also**
-
-- Delete Folder – `DELETE https://api.aspose.cloud/v4.0/cells/storage/folder/{path}` (see <a href="/cells/delete-folder/" rel="noopener noreferrer">Delete Folder</a>)  
-- Copy Folder – `PUT https://api.aspose.cloud/v4.0/cells/storage/folder/{srcPath}/copy` (see <a href="/cells/copy-folder/" rel="noopener noreferrer">Copy Folder</a>)

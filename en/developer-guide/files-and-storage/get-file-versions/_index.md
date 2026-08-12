@@ -10,19 +10,17 @@ description: "Get a complete list of version history for any Excel file stored i
 weight: 100
 ---
 
-## **Excel API: Get File Versions**
-
 Retrieve a complete list of version records for a specific spreadsheet stored in Aspose.Cells Cloud. This endpoint enables developers to track changes, audit modifications, and implement version‑control workflows directly from the cloud storage.
+
+The **GetFileVersions** API returns all version records for a specified spreadsheet stored in Aspose.Cells Cloud. It helps you keep a complete change history for each file.
+
+## **Excel API: Get File Versions**
 
 ### Web API
 
 ```
 GET https://api.aspose.cloud/v4.0/cells/storage/version/{path}
 ```
-
-### **Function Description**
-
-The **GetFileVersions** API returns all version records for a specified spreadsheet stored in Aspose.Cells Cloud. It helps you keep a complete change history for each file.
 
 ### **Security and Authentication**
 
@@ -35,15 +33,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | `path`         | String | Path     | **Required.** Full path to the file whose versions are being retrieved.                     |
 | `storageName`  | String | Query    | Optional. Name of the storage containing the file. If omitted, the default storage is used. |
 
-#### cURL Example
-
-```bash
-curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/version/MyFolder/MyFile.xlsx" \
-     -H "Authorization: Bearer {access_token}" \
-     -H "Accept: application/json"
-```
-
-### **Response Description**
+### **Response**
 
 ```json
 {
@@ -75,7 +65,37 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/version/MyFolder/MyFile
 }
 ```
 
-**Example response**
+On success, the API returns **HTTP 200 OK** with a JSON payload containing the `Value` array of file‑version objects, as illustrated above.
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageController/GetFileVersions) provides a comprehensive programming interface for executing REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/version/MyFolder/MyFile.xlsx" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
 
 ```json
 {
@@ -96,23 +116,11 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/version/MyFolder/MyFile
 }
 ```
 
-On success, the API returns **HTTP 200 OK** with a JSON payload containing the `Value` array of file‑version objects, as illustrated above.
+{{< /tab >}}
 
-#### Error Handling
+{{< /tabs >}}
 
-| HTTP Status | Description                                | Typical Cause                        |
-| ----------- | ------------------------------------------ | ------------------------------------ |
-| 401         | Unauthorized – missing or invalid token    | No `Authorization` header or bad key |
-| 403         | Forbidden – insufficient permissions       | Token lacks required scopes          |
-| 404         | Not Found – file or storage does not exist | Incorrect `path` or `storageName`    |
-| 409         | Conflict – version information unavailable | Concurrent modifications             |
-| 500         | Internal Server Error – unexpected failure | Server‑side issue                    |
-
-## OpenAPI Specification
-
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageController/GetFileVersions) provides a comprehensive programming interface for executing REST interactions directly from a web browser.
-
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
 Utilizing an SDK streamlines development by abstracting low‑level complexities, allowing developers to focus on core functionalities. Explore the [GitHub repository](https://github.com/aspose-cells-cloud) for a full list of Aspose.Cells Cloud SDKs.
 
@@ -144,5 +152,3 @@ The following code examples illustrate how to interact with Aspose.Cells web ser
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_GetFileVersions.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-[Back to Files and Storage](#)

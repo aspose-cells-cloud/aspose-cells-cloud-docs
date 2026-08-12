@@ -14,12 +14,6 @@ weight: 100
 
 Programmatically search for specific text within any Excel spreadsheet using the Aspose.Cells Cloud API. Find text, numbers, or formulas in files stored in cloud storage. This RESTful API enables automated data discovery, content analysis, and spreadsheet‑auditing workflows.
 
-**Prerequisites**
-
-- An active Aspose Cloud account with a valid JWT access token.  
-- The target workbook stored in Aspose Cloud storage (or a connected external storage service).  
-- (Optional) One of the Aspose.Cells Cloud SDKs installed for your preferred programming language.
-
 ### **Web API**
 
 ```bash
@@ -29,6 +23,10 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/search/content
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### **Request Parameters:**
 
@@ -44,11 +42,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Glossary**
 
-- **searchText** – The exact string to locate; can be a partial match.  
-- **ignoringCase** – `true` makes the search case‑insensitive; `false` enforces case‑sensitivity.  
-- **folder** – Path to the directory that holds the workbook.  
-- **storageName** – Identifier of a custom storage configuration.  
-- **region** – Locale code that influences text comparison rules.  
+- **searchText** – The exact string to locate; can be a partial match.
+- **ignoringCase** – `true` makes the search case‑insensitive; `false` enforces case‑sensitivity.
+- **folder** – Path to the directory that holds the workbook.
+- **storageName** – Identifier of a custom storage configuration.
+- **region** – Locale code that influences text comparison rules.
 - **password** – Decryption password for protected workbooks.
 
 ### **Response**
@@ -70,16 +68,9 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 The response contains a list of cells (`CellName`) where the searched text was found, together with the worksheet name and the matching text. If no matches are found, the `Cells` array is empty and the request still returns HTTP 200 OK.
 
-**HTTP Status Codes**
+### Error Codes
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.  
   ```json
   {"code":400,"message":"Invalid request URI"}
   ```
@@ -98,17 +89,17 @@ The response contains a list of cells (`CellName`) where the searched text was f
 
 ## Where should we use the Search content within the Spreadsheet API?
 
-- **Comprehensive workbook compliance audit** – Quickly scan the entire Excel file to identify all sensitive terms (e.g., “Confidential Clause”, “Internal Data”) for enterprise data‑security and compliance checks.  
-- **Cross‑sheet data association query** – When project information is scattered across multiple worksheets, search for a specific project number or customer name and instantly locate all related data.  
-- **Batch template content verification** – After automated report generation, scan multiple Excel files in batches to confirm that all preset placeholders (such as `{{Date}}`) have been correctly replaced, ensuring report completeness and accuracy.  
+- **Comprehensive workbook compliance audit** – Quickly scan the entire Excel file to identify all sensitive terms (e.g., “Confidential Clause”, “Internal Data”) for enterprise data‑security and compliance checks.
+- **Cross‑sheet data association query** – When project information is scattered across multiple worksheets, search for a specific project number or customer name and instantly locate all related data.
+- **Batch template content verification** – After automated report generation, scan multiple Excel files in batches to confirm that all preset placeholders (such as `{{Date}}`) have been correctly replaced, ensuring report completeness and accuracy.
 - **Historical data archiving and mining** – Analyse legacy files, search for specific event codes or business terms, and quickly understand historical business logic for data archaeology.
 
 ## Why should you use the Search content within the Spreadsheet API?
 
-- **Developer‑friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development with comprehensive documentation. Compared with building custom solutions, this significantly reduces development effort.  
-- **Reduced labor costs** – Automates repetitive search tasks, freeing developers from manual data‑extraction work.  
-- **Pay‑per‑use** – No upfront investment; you only pay for the API calls you actually use.  
-- **No maintenance required** – Aspose manages servers, updates, and compatibility, so you can focus on your application logic.  
+- **Developer‑friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development with comprehensive documentation. Compared with building custom solutions, this significantly reduces development effort.
+- **Reduced labor costs** – Automates repetitive search tasks, freeing developers from manual data‑extraction work.
+- **Pay‑per‑use** – No upfront investment; you only pay for the API calls you actually use.
+- **No maintenance required** – Aspose manages servers, updates, and compatibility, so you can focus on your application logic.
 - **Preserves complex Excel formatting** – Results can be exported to universally accessible PDF format while retaining original styling.
 
 ## How to Use the Search for broken links within the range of the Spreadsheet API with SDKs

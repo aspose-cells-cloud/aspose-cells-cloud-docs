@@ -14,8 +14,6 @@ Convert a local spreadsheet/Excel file to another format with the Aspose.Cells C
 
 ## **Convert Spreadsheet API**
 
-### Web API
-
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet
 ```
@@ -50,23 +48,25 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
-**Success status**  
-- **200 OK** – The conversion succeeded and the response body contains the converted file stream.  
+**Success status**
+
+- **200 OK** – The conversion succeeded and the response body contains the converted file stream.
 - The `Content-Type` header reflects the MIME type of the requested output format (e.g., `application/pdf` for PDF).
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Format
 
-| **Out Format**                                                    | **Description**                                                                                                              |
-| :---------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| **Out Format**                                                                                         | **Description**                                                                                                              |
+| :----------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
 | <a href="https://docs.fileformat.com/spreadsheet/xls/" rel="noopener noreferrer">XLS</a>               | Excel 95/5.0 - 2003 Workbook.                                                                                                |
 | <a href="https://docs.fileformat.com/spreadsheet/xlsx/" rel="noopener noreferrer">XLSX</a>             | The Office Open XML SpreadsheetML File Format.                                                                               |
 | <a href="https://docs.fileformat.com/spreadsheet/xlsb/" rel="noopener noreferrer">XLSB</a>             | Excel Binary Workbook.                                                                                                       |
@@ -81,7 +81,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | <a href="https://docs.fileformat.com/web/html/" rel="noopener noreferrer">HTML</a>                     | HTML format.                                                                                                                 |
 | <a href="https://docs.fileformat.com/web/mhtml/" rel="noopener noreferrer">MHTML</a>                   | MHTML file.                                                                                                                  |
 | <a href="https://docs.fileformat.com/spreadsheet/ods/" rel="noopener noreferrer">ODS</a>               | ODS (OpenDocument Spreadsheet).                                                                                              |
-| SpreadsheetML                                                     | Excel 2003 XML file.                                                                                                         |
+| SpreadsheetML                                                                                          | Excel 2003 XML file.                                                                                                         |
 | <a href="https://docs.fileformat.com/spreadsheet/numbers/" rel="noopener noreferrer">Numbers</a>       | The document is created by Apple's “Numbers” application, which is part of the iWork suite for macOS and iOS.                |
 | <a href="https://docs.fileformat.com/web/json/" rel="noopener noreferrer">JSON</a>                     | JavaScript Object Notation.                                                                                                  |
 | <a href="https://docs.fileformat.com/spreadsheet/dif/" rel="noopener noreferrer">DIF</a>               | Data Interchange Format.                                                                                                     |
@@ -129,6 +129,34 @@ The following code examples demonstrate how to use the Convert Spreadsheet API w
 ### Convert Spreadsheet API Specification
 
 <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertSpreadsheet" rel="noopener noreferrer">Convert Spreadsheet API Specification</a> defines a publicly accessible programming interface, allowing you to perform REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert?format=pdf \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/file.xlsx"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="file.pdf"
+Content-Length: 8423
+
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -14,9 +14,9 @@ Programmatically add worksheets to Excel files with full control over sheet type
 
 **Prerequisites**
 
-- An active Aspose.Cells Cloud account with a valid JWT access token.  
-- A configured cloud storage name (e.g., `CompanyOneDrive`) where the workbook will be saved.  
-- The target workbook must be accessible in the specified storage and, if protected, the correct password must be supplied.  
+- An active Aspose.Cells Cloud account with a valid JWT access token.
+- A configured cloud storage name (e.g., `CompanyOneDrive`) where the workbook will be saved.
+- The target workbook must be accessible in the specified storage and, if protected, the correct password must be supplied.
 
 | **Worksheet Type**     | Description                                       |
 | :--------------------- | :------------------------------------------------ |
@@ -58,71 +58,39 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 On success the API returns **HTTP 200 OK** (or **201 Created** when a new file is generated) with the updated workbook file.
 
 ```json
-[
-  {
-    "Name": "ResponseFile",
-    "DataType": {
-      "Identifier": "File",
-      "Reference": "Stream"
-    }
+{
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream"
   }
-]
+}
 ```
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-
-**Example error response bodies**
-
-```json
-{
-  "code": 400,
-  "message": "The request URI is malformed or missing required parameters."
-}
-```
-
-```json
-{
-  "code": 401,
-  "message": "Authentication failed. Verify that the JWT token is valid."
-}
-```
-
-```json
-{
-  "code": 404,
-  "message": "The specified spreadsheet could not be found in the given storage."
-}
-```
-
-```json
-{
-  "code": 500,
-  "message": "An unexpected server error occurred while processing the workbook."
-}
-```
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## Where should we use the Add Worksheet to Spreadsheet API?
 
-- **Automated Report Generation** – Dynamically create and insert monthly worksheets (e.g., `2024‑05`) during financial‑statement generation.  
-- **Batch Template Initialization** – Add a dedicated analysis worksheet for each new customer or project when generating sales quotations or proposals in bulk.  
-- **Dynamic Dashboard Expansion** – Insert new chart worksheets in real time as new data dimensions become available.  
-- **Compliance & Audit Archiving** – Automatically add evidence‑collection sheets during annual audits, keeping each inspection point isolated.  
-- For removing a sheet, see the **[Delete Worksheet](/delete-worksheet/)** operation.  
+- **Automated Report Generation** – Dynamically create and insert monthly worksheets (e.g., `2024‑05`) during financial‑statement generation.
+- **Batch Template Initialization** – Add a dedicated analysis worksheet for each new customer or project when generating sales quotations or proposals in bulk.
+- **Dynamic Dashboard Expansion** – Insert new chart worksheets in real time as new data dimensions become available.
+- **Compliance & Audit Archiving** – Automatically add evidence‑collection sheets during annual audits, keeping each inspection point isolated.
+- For removing a sheet, see the **[Delete Worksheet](/delete-worksheet/)** operation.
 - For moving a sheet, see the **[Move Worksheet](/move-worksheet/)** operation.
 
 ## Why should you use the Add Worksheet to Spreadsheet API?
 
-- **Developer‑Friendly** – Aspose.Cells Cloud provides SDKs for multiple languages, reducing development effort and offering extensive documentation.  
-- **Reduced Labor Costs** – Eliminates the need for manual worksheet creation and repetitive copy‑paste tasks.  
-- **Pay‑per‑Use** – You only pay for the API calls you actually make.  
+- **Developer‑Friendly** – Aspose.Cells Cloud provides SDKs for multiple languages, reducing development effort and offering extensive documentation.
+- **Reduced Labor Costs** – Eliminates the need for manual worksheet creation and repetitive copy‑paste tasks.
+- **Pay‑per‑Use** – You only pay for the API calls you actually make.
 - **Zero Maintenance** – No servers to manage, no software updates, and no compatibility concerns.
 
 ## How to Use the Add Worksheet to Spreadsheet API with SDKs
@@ -130,6 +98,36 @@ On success the API returns **HTTP 200 OK** (or **201 Created** when a new 
 ### Add Worksheet to Spreadsheet API Specification
 
 The [Add Worksheet to Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/ManagementController/AddWorksheetToSpreadsheet) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet?worksheetName=Sheet1" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json" \
+     -F "Spreadsheet=@/path/to/Book1.xlsx"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -163,49 +161,3 @@ The following code examples demonstrate how to call the service with various SDK
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_AddWorksheet.go" >}}  
 {{</tab>}}  
 {{< /tabs >}}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebAPI",
-  "name": "Add Worksheet to Spreadsheet",
-  "description": "Adds a new worksheet, chart sheet, or macro sheet to an existing Excel workbook stored in Aspose.Cells Cloud.",
-  "url": "https://api.aspose.cloud/v4.0/cells/spreadsheet/add/worksheet",
-  "documentation": "https://reference.aspose.cloud/cells/#/ManagementController/AddWorksheetToSpreadsheet",
-  "targetPlatform": "Aspose.Cells Cloud",
-  "version": "v4.0",
-  "authentication": {
-    "@type": "AuthenticateAction",
-    "url": "https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/",
-    "description": "JWT token‑based authentication"
-  },
-  "input": [
-    {
-      "name": "Spreadsheet",
-      "description": "Excel workbook file to modify",
-      "required": true,
-      "valueRequired": true
-    },
-    {
-      "name": "sheetType",
-      "description": "Type of sheet to create (worksheet, chartsheet, macrosheet, vbmodule, dialog)",
-      "required": false
-    },
-    {
-      "name": "position",
-      "description": "Zero‑based index indicating where to insert the new sheet",
-      "required": false
-    },
-    {
-      "name": "sheetName",
-      "description": "Desired name for the new sheet; must be unique",
-      "required": false
-    }
-  ],
-  "output": {
-    "name": "ResponseFile",
-    "description": "Updated workbook containing the newly added sheet",
-    "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-  }
-}
-</script>

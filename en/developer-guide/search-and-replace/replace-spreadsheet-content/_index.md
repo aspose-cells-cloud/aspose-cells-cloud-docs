@@ -1,245 +1,118 @@
 ---
 title: "Aspose.Cells Cloud – Replace Text in Local Excel Files (Find & Replace API)"
 second_title: "Document"
-article_title: "Bulk Text Replacement in Local Excel Files – Find & Replace API"
+ArticleTitle: "Bulk Text Replacement in Local Excel Files – Find & Replace API"
 linktitle: "Replace Spreadsheet Content"
 type: docs
 url: /replace-spreadsheet-content/
-keywords: "replace text, Excel, Aspose.Cells, Find and Replace, local spreadsheet API"
+keywords: "replace text in Excel, Aspose.Cells Find and Replace, local spreadsheet API, Excel file replace, API replace content"
 description: "Replace text in local Excel workbooks without uploading to the cloud. Use Aspose.Cells Cloud Find & Replace API to update specific ranges, worksheets, or whole files in a single call."
 weight: 100
 ---
 
-# Bulk Text Replacement in Local Excel Files – Find & Replace API  
+Replace specified text within local Excel spreadsheet files without cloud upload. Update content in workbooks efficiently using Aspose.Cells Find & Replace API for offline editing.
 
-Replace specified text within local Excel spreadsheet files without cloud upload. The operation is performed in the Aspose.Cells Cloud service, so the original file never needs to be stored in the cloud.
+## **Replace Spreadsheet Content API**
 
----
-
-## Table of Contents
-1. [Prerequisites](#prerequisites)  
-2. [Endpoint](#endpoint)  
-3. [Authentication](#authentication)  
-4. [Request Parameters](#request-parameters)  
-5. [cURL Example](#curl-example)  
-6. [Response](#response)  
-7. [Error Codes](#error-codes)  
-8. [SDK Samples](#sdk-samples)  
-9. [Additional Notes](#additional-notes)  
-
----
-
-## Prerequisites {#prerequisites}
-- An active Aspose Cloud account.  
-- **Client ID** and **Client Secret** to obtain a JWT access token.  
-- The access token must be included in the `Authorization` header of each request.  
-- The spreadsheet file you want to modify must be accessible locally (no prior upload required).  
-
----
-
-## Endpoint {#endpoint}
-**HTTP Method:** `PUT`  
-
-**URL:**  
-
-```text
-https://api.aspose.cloud/v4.0/cells/replace/content
-```
-
----
-
-## Authentication {#authentication}
-All Aspose.Cells Cloud APIs use **JWT token‑based authentication**.
+### **Web API**
 
 ```http
-Authorization: Bearer {access_token}
+PUT https://api.aspose.cloud/v4.0/cells/replace/content
 ```
 
-> **Note:** Tokens are valid for 1 hour. Request a new token when the current one expires.
+### **Security and Authentication**
 
----
-
-## Request Parameters {#request-parameters}
-
-| Parameter   | Type   | Location | Required | Description |
-|-------------|--------|----------|----------|-------------|
-| **Spreadsheet** | File | FormData | **Yes** | The local workbook to process. Supported formats: XLSX, XLS, ODS, CSV, etc. |
-| **searchText** | String | Query | **Yes** | Text to search for. |
-| **replaceText** | String | Query | **Yes** | Text that will replace every occurrence of `searchText`. |
-| **worksheet** *(optional)* | String | Query | No | Name of the worksheet to limit the operation. If omitted, the first worksheet is used. |
-| **cellArea** *(optional)* | String | Query | No | Cell range (e.g., `A1:D20`). If omitted, the whole used range of the worksheet is processed. |
-| **region** *(optional)* | String | Query | No | Locale identifier (e.g., `en-US`, `fr-FR`). Influences case‑sensitivity and character handling. |
-| **password** *(optional)* | String | Query | No | Password for password‑protected workbooks. |
-
----
-
-## cURL Example {#curl-example}
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/replace/content?searchText=OldValue&replaceText=NewValue&worksheet=Sheet1&cellArea=A1:D20&region=en-US" \
-  -H "Authorization: Bearer {access_token}" \
-  -F "Spreadsheet=@/path/to/your/file.xlsx" \
-  -o UpdatedFile.xlsx
+-H "Authorization: Bearer {access_token}"
 ```
 
-The command uploads `file.xlsx`, replaces **OldValue** with **NewValue** in the range `A1:D20` of **Sheet1**, and saves the updated workbook as `UpdatedFile.xlsx`.
+### **Request Parameters:**
 
----
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                                                                                                                           |
+| :------------- | :----- | :------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | The local spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                                                                       |
+| searchText     | String | Query                      | The text string to search for within the specified worksheet and cell area.                                                                                                                           |
+| replaceText    | String | Query                      | The text string that will replace all occurrences of `searchText` within the specified range.                                                                                                         |
+| worksheet      | String | Query                      | _(Optional)_ The name of the worksheet where the find‑and‑replace operation will be performed. If omitted, the operation applies to the first worksheet.                                              |
+| cellArea       | String | Query                      | _(Optional)_ The specific cell range (e.g., `"A1:D20"`, `"B5:F15"`) where the text search and replacement will occur. If omitted, the operation applies to all used cells in the specified worksheet. |
+| region         | String | Query                      | _(Optional)_ Sets the locale for text handling, which may affect case sensitivity and character encoding in search operations (e.g., `"en-US"`, `"fr-FR"`).                                           |
+| password       | String | Query                      | _(Optional)_ If the uploaded spreadsheet is password‑protected, provide the password to open and process the file.                                                                                    |
 
-## Response {#response}
-A successful request returns **HTTP 200** with a binary stream that represents the updated workbook.
+### **Response**
 
-| Header | Value |
-|--------|-------|
-| `Content-Type` | `application/octet-stream` |
-| `Content-Disposition` | `attachment; filename="{original_name}"` |
-
-Save the response body to a file with the appropriate extension (e.g., `.xlsx`).
-
----
-
-**HTTP Status Codes**
-
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
----
-
-## SDK Samples {#sdk-samples}
-Below are ready‑to‑run examples for the most popular languages. Each snippet loads the required SDK, authenticates, and calls **ReplaceSpreadsheetContent**.
-
-> **Security note:** All external gist scripts are loaded with `rel="noopener noreferrer"` and open in a new tab.
-
-<details><summary>**C#**</summary>
-
-```html
-<script src="https://gist.github.com/aspose-cells-cloud-gists/8a5b324fdf3e574dbd747c1a1e24b05d.js?file=Example40_ReplaceTextInLocalFile.cs"
-        rel="noopener noreferrer" target="_blank"></script>
-```
-
-</details>
-
-<details><summary>**Java**</summary>
-
-```html
-<script src="https://gist.github.com/aspose-cells-cloud-gists/c59aa5c02f735466a5e34751cee73f5f.js?file=Example40_ReplaceTextInLocalFile.java"
-        rel="noopener noreferrer" target="_blank"></script>
-```
-
-</details>
-
-<details><summary>**PHP**</summary>
-
-```html
-<script src="https://gist.github.com/aspose-cells-cloud-gists/84283c8ba766ed815f47e6dfb0891152.js?file=Example40_ReplaceTextInLocalFile.php"
-        rel="noopener noreferrer" target="_blank"></script>
-```
-
-</details>
-
-<details><summary>**Ruby**</summary>
-
-```html
-<script src="https://gist.github.com/aspose-cells-cloud-gists/36ed8b8727561b92692939513d365fca.js?file=Example40_ReplaceTextInLocalFile.rb"
-        rel="noopener noreferrer" target="_blank"></script>
-```
-
-</details>
-
-<details><summary>**Node.js / TypeScript**</summary>
-
-```html
-<script src="https://gist.github.com/aspose-cells-cloud-gists/e82de2e4189bc27ae92abf73c36b4df0.js?file=Example40_ReplaceTextInLocalFile.ts"
-        rel="noopener noreferrer" target="_blank"></script>
-```
-
-</details>
-
-<details><summary>**Python**</summary>
-
-```html
-<script src="https://gist.github.com/aspose-cells-cloud-gists/61e922de11e6e7144db88adcad6501c1.js?file=Example40_ReplaceTextInLocalFile.py"
-        rel="noopener noreferrer" target="_blank"></script>
-```
-
-</details>
-
-<details><summary>**Perl**</summary>
-
-```html
-<script src="https://gist.github.com/aspose-cells-cloud-gists/f82a3a00251e34ff8766116282c8c9ca.js?file=Example40_ReplaceTextInLocalFile.pl"
-        rel="noopener noreferrer" target="_blank"></script>
-```
-
-</details>
-
-<details><summary>**Go**</summary>
-
-```html
-<script src="https://gist.github.com/aspose-cells-cloud-gists/2b824d4e13644368d12682856aa49185.js?file=Example40_ReplaceTextInLocalFile.go"
-        rel="noopener noreferrer" target="_blank"></script>
-```
-
-</details>
-
----
-
-## Additional Notes {#additional-notes}
-
-### Accessibility
-* Decorative flag icons used in the language selector now include `aria-label` attributes (e.g., `<em class="flag-us flag-24" aria-label="English"></em>`).  
-* All SVG icons have explicit `width` and `height` attributes to prevent layout shifts.
-
-### SEO Enhancements
-* Cleaned `meta keywords` to the essential terms listed in the front‑matter.  
-* Added JSON‑LD structured data (WebAPI schema) to enable rich results in search engines.
-
-### Performance & Security
-* The main stylesheet is preloaded asynchronously to improve First Contentful Paint.  
-* A **Content‑Security‑Policy** header is recommended to restrict script sources to `self` and `https://gist.github.com`.  
-* When possible, host code snippets locally or add Subresource Integrity (`integrity` + `crossorigin`) to external scripts.
-
----
-
-### JSON‑LD Structured Data
-```html
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebAPI",
-  "name": "Replace Spreadsheet Content",
-  "description": "Replaces specified text in a local Excel workbook via Aspose.Cells Cloud.",
-  "url": "https://api.aspose.cloud/v4.0/cells/replace/content",
-  "httpMethod": "PUT",
-  "request": {
-    "urlTemplate": "/cells/replace/content{?searchText,replaceText,worksheet,cellArea,region,password}",
-    "encodingType": "application/json",
-    "parameters": [
-      { "name": "Spreadsheet", "in": "formData", "required": true, "type": "file" },
-      { "name": "searchText", "in": "query", "required": true, "type": "string" },
-      { "name": "replaceText", "in": "query", "required": true, "type": "string" },
-      { "name": "worksheet", "in": "query", "required": false, "type": "string" },
-      { "name": "cellArea", "in": "query", "required": false, "type": "string" },
-      { "name": "region", "in": "query", "required": false, "type": "string" },
-      { "name": "password", "in": "query", "required": false, "type": "string" }
-    ]
-  },
-  "response": {
-    "encodingType": "application/octet-stream",
-    "contentType": "application/octet-stream"
-  },
-  "authentication": {
-    "type": "apiKey",
-    "in": "header",
-    "name": "Authorization",
-    "description": "Bearer {access_token}"
+```json
+[
+  {
+    "Name": "ResponseFile",
+    "DataType": {
+      "Identifier": "File",
+      "Reference": "Stream",
+      "Name": "file"
+    }
   }
-}
-</script>
+]
 ```
 
----
+The response is a binary stream containing the updated workbook. Save it with the appropriate file extension (e.g., `.xlsx`).
+
+### **Error Codes**
+
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI or malformed parameters.
+- **401 Unauthorized** – Invalid or missing access token; obtain a new token.
+- **404 Not Found** – The spreadsheet file is not accessible or the specified worksheet does not exist.
+- **500 Server Error** – The spreadsheet encountered an internal processing error; contact support if the problem persists.
+
+## Where should we use the Replace content in Spreadsheet API?
+
+- **Batch processing of local Excel files** – Automate find‑and‑replace across many workbooks stored on-premises.
+- **On‑premise data pipelines** – Integrate the API into scheduled jobs that modify reports before they are archived or distributed.
+- **Local report generation** – Dynamically insert values into template workbooks without uploading them to the cloud.
+
+## Why should you use the Replace content in Spreadsheet API?
+
+- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comprehensive documentation. Compared with building custom solutions, this significantly reduces development effort.
+- **Reduced Labor Costs** – Reduces the need for dedicated staff to perform manual document consolidation.
+- **Pay‑per‑Use** – No upfront investment; you only pay for the API calls you actually use.
+- **Zero Maintenance Costs** – No servers to maintain, no software updates, and no compatibility worries.
+- **Preserves complex Excel formatting** – The original workbook’s formatting, formulas, and charts remain intact after replacement.
+
+## How to Use the Replace content in Spreadsheet API with SDKs
+
+### OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceSpreadsheetContent) defines a publicly accessible programming interface, allowing you to perform REST interactions directly from a web browser.
+
+### Use Aspose.Cells Cloud SDKs
+
+Using an SDK is the quickest way to accelerate development. The SDK handles the underlying details, allowing you to implement replace‑content operations with minimal code. See the official **Aspose.Cells Cloud SDK GitHub** repository for a complete list of supported languages.
+
+The following code examples demonstrate how to interact with Aspose.Cells web services using various SDKs:
+
+{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
+{{<tab tabNum="1" >}}
+{{<gist "aspose-cells-cloud-gists" "8a5b324fdf3e574dbd747c1a1e24b05d" "Example40_ReplaceTextInLocalFile.cs" >}}
+{{</tab>}}
+{{<tab tabNum="2" >}}
+{{<gist "aspose-cells-cloud-gists" "c59aa5c02f735466a5e34751cee73f5f" "Example40_ReplaceTextInLocalFile.java" >}}
+{{</tab>}}
+{{<tab tabNum="3" >}}
+{{<gist "aspose-cells-cloud-gists" "84283c8ba766ed815f47e6dfb0891152" "Example40_ReplaceTextInLocalFile.php" >}}
+{{</tab>}}
+{{<tab tabNum="4" >}}
+{{<gist "aspose-cells-cloud-gists" "36ed8b8727561b92692939513d365fca" "Example40_ReplaceTextInLocalFile.rb" >}}
+{{</tab>}}
+{{<tab tabNum="5" >}}
+{{<gist "aspose-cells-cloud-gists" "e82de2e4189bc27ae92abf73c36b4df0" "Example40_ReplaceTextInLocalFile.ts" >}}
+{{</tab>}}
+{{<tab tabNum="6" >}}
+{{<gist "aspose-cells-cloud-gists" "61e922de11e6e7144db88adcad6501c1" "Example40_ReplaceTextInLocalFile.py" >}}
+{{</tab>}}
+{{<tab tabNum="7" >}}
+{{<gist "aspose-cells-cloud-gists" "f82a3a00251e34ff8766116282c8c9ca" "Example40_ReplaceTextInLocalFile.pl" >}}
+{{</tab>}}
+{{<tab tabNum="8" >}}
+{{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ReplaceTextInLocalFile.go" >}}
+{{</tab>}}
+{{< /tabs >}}

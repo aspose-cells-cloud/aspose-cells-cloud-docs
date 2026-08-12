@@ -14,8 +14,6 @@ The **ConvertSpreadsheetToCsv** endpoint reads a spreadsheet file uploaded from 
 
 ## **Convert Spreadsheet To CSV API**
 
-### Web API
-
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv
 ```
@@ -35,14 +33,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | region         | String | Query    | Optional    | Spreadsheet region/language setting (e.g., `en-US`, `fr-FR`). Influences number formatting, date parsing, and locale‑specific behavior.                         |
 | password       | String | Query    | Optional    | Password used to open password‑protected spreadsheets. If the file is encrypted and the password is omitted or incorrect, a 400/401 error is returned.          |
 
-**cURL Example**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/csv?outPath=/output/reports/" \
-     -H "Authorization: Bearer {access_token}" \
-     -F "Spreadsheet=@myWorkbook.xlsx"
-```
-
 ### **Response**
 
 On success the API returns **HTTP 200** (or **202** for asynchronous processing) with the header `Content-Type: application/octet-stream`. The response body contains the generated CSV file as a binary stream.
@@ -61,13 +51,14 @@ On success the API returns **HTTP 200** (or **202** for asynchronous processin
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Where Should You Use the Convert Spreadsheet To CSV API?
 
 - **Data Export for Reporting Systems** – Generate CSV extracts from Excel‑based reports to feed BI tools or data warehouses without manual file handling.
@@ -88,7 +79,32 @@ On success the API returns **HTTP 200** (or **202** for asynchronous processin
 
 The [Convert Spreadsheet To CSV API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertSpreadsheetToCsv) provides a publicly accessible programming interface for executing REST interactions directly from a web browser.
 
-## Excel API SDK
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/spreadsheet/json?outPath=/output/result.json" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@myWorkbook.xlsx"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -31,9 +31,9 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ### **Request Parameters:**
 
 | Parameter Name | Type   | Path/Query String/HTTP Body | Description                                 |
-|----------------|--------|-----------------------------|---------------------------------------------|
-| Authorization  | String | Header                      | Bearer token for authentication (required).|
-| format         | String | Query                       | Desired response format, e.g., `json`.     |
+| -------------- | ------ | --------------------------- | ------------------------------------------- |
+| Authorization  | String | Header                      | Bearer token for authentication (required). |
+| format         | String | Query                       | Desired response format, e.g., `json`.      |
 
 ### **Response**
 
@@ -47,19 +47,19 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Response Schema**
 
-| Field     | Type                | Description                                   |
-|-----------|---------------------|-----------------------------------------------|
-| status    | string              | Service health (`OK`, `Degraded`, etc.).     |
-| service   | string              | Name of the service.                         |
-| timestamp | string (ISO‑8601)   | Time of the status check.                    |
+| Field     | Type              | Description                              |
+| --------- | ----------------- | ---------------------------------------- |
+| status    | string            | Service health (`OK`, `Degraded`, etc.). |
+| service   | string            | Name of the service.                     |
+| timestamp | string (ISO‑8601) | Time of the status check.                |
 
-The API returns a standard JSON payload that includes the current health **status** of the Aspose.Cells Cloud service.  
+The API returns a standard JSON payload that includes the current health **status** of the Aspose.Cells Cloud service.
 
 **HTTP Status Codes**
 
-- **200 OK** – The service is healthy and the response contains the status information.  
-- **401 Unauthorized** – Missing or invalid authentication token.  
-- **503 Service Unavailable** – The service is currently down for maintenance or experiencing issues.  
+- **200 OK** – The service is healthy and the response contains the status information.
+- **401 Unauthorized** – Missing or invalid authentication token.
+- **503 Service Unavailable** – The service is currently down for maintenance or experiencing issues.
 
 ## How to Use the Get Aspose.Cells Cloud Status API with SDKs
 
@@ -70,22 +70,3 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/CellsStatusCo
 ### Use Aspose.Cells Cloud SDKs
 
 Using the SDK simplifies integration and reduces boilerplate code. The SDK handles the underlying details, allowing you to retrieve the Aspose.Cells Cloud run status with minimal effort. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
-
-**C# Example**
-
-```csharp
-var apiInstance = new CellsApi("clientId", "clientSecret");
-var response = apiInstance.GetCellsCloudStatus(format: "json");
-Console.WriteLine(response.Status);
-```
-
-**Python Example**
-
-```python
-import asposecellscloud
-api = asposecellscloud.CellsApi(client_id="YOUR_CLIENT_ID", client_secret="YOUR_CLIENT_SECRET")
-status = api.get_cells_cloud_status(format="json")
-print(status['status'])
-```
-
-For more information on overall cloud service health, see the [Health Check API](./health-check/) page.  

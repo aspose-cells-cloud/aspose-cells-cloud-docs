@@ -20,12 +20,6 @@ The **ConvertWorksheetToJson** endpoint reads a spreadsheet file from the local 
 PUT https://api.aspose.cloud/v4.0/cells/convert/worksheet/json
 ```
 
-**Prerequisites**  
-Before using this endpoint you must:
-
-- Obtain a valid JWT access token (see the authentication guide).  
-- Ensure the Aspose.Cells Cloud SDK for your language is installed if you prefer using a client library.  
-
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
@@ -58,69 +52,26 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-
-  ```json
-  {
-    "error": {
-      "code": "BadRequest",
-      "message": "Required parameter 'worksheet' is missing."
-    }
-  }
-  ```
-- **401 Unauthorized** – Invalid access token or invalid client ID and secret.  
-  ```json
-  {
-    "error": {
-      "code": "InvalidCredentials",
-      "message": "The provided JWT token is invalid or expired."
-    }
-  }
-  ```
-- **404 Not Found** – The spreadsheet file is not accessible.  
-  ```json
-  {
-    "error": {
-      "code": "FileNotFound",
-      "message": "The specified spreadsheet could not be found."
-    }
-  }
-  ```
-- **500 Server Error** – The spreadsheet encountered an error while obtaining calculation data.  
-  ```json
-  {
-    "error": {
-      "code": "InternalServerError",
-      "message": "An unexpected error occurred while processing the workbook."
-    }
-  }
-  ```
-
-**Notes & Best Practices**
-
-- For large worksheets, consider streaming the response to avoid loading the entire JSON payload into memory.  
-- Use the `region` parameter to ensure numeric and date formats match your downstream systems.  
-- Always validate the JSON output against your expected schema before further processing.  
-- When exporting very large datasets, paginate the request (using `outPath` to store intermediate files) to keep memory usage low.
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## Where should we use the Convert Worksheet to JSON API?
 
-- **Web dashboards** – Export worksheet data to JSON for client‑side charting libraries (e.g., Chart.js, D3.js).  
-- **Data migration** – Move legacy Excel data into NoSQL databases or REST services that consume JSON.  
-- **Mobile or offline apps** – Convert worksheet content to JSON on the server, then sync the lightweight payload to mobile devices.  
+- **Web dashboards** – Export worksheet data to JSON for client‑side charting libraries (e.g., Chart.js, D3.js).
+- **Data migration** – Move legacy Excel data into NoSQL databases or REST services that consume JSON.
+- **Mobile or offline apps** – Convert worksheet content to JSON on the server, then sync the lightweight payload to mobile devices.
 - **Reporting pipelines** – Feed worksheet data directly into analytics engines that accept JSON input without intermediate CSV steps.
 
 ## Why should you use the Convert Worksheet to JSON API?
 
-- **Zero‑upload workflow** – Process local files in the cloud without first uploading them to storage, saving bandwidth and storage costs.  
-- **Full‑featured conversion** – Supports password‑protected workbooks, custom fonts, and regional formatting for accurate data representation.  
-- **Fast, scalable execution** – Leverages Aspose.Cells’ high‑performance engine on cloud infrastructure, handling large worksheets efficiently.  
+- **Zero‑upload workflow** – Process local files in the cloud without first uploading them to storage, saving bandwidth and storage costs.
+- **Full‑featured conversion** – Supports password‑protected workbooks, custom fonts, and regional formatting for accurate data representation.
+- **Fast, scalable execution** – Leverages Aspose.Cells’ high‑performance engine on cloud infrastructure, handling large worksheets efficiently.
 - **Simplified integration** – Single PUT call returns a ready‑to‑use JSON file or stores it directly, reducing code complexity in client applications.
 
 ## How to Use the Convert Worksheet to JSON API with SDKs
@@ -129,7 +80,35 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertWorksheetToJson" rel="noopener noreferrer">Convert Worksheet to JSON API Specification</a> provides a publicly accessible programming interface for executing REST interactions directly from a web browser.
 
-## Excel API SDK
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/worksheet/json?worksheet=Sheet1" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@myWorkbook.xlsx" \
+  -o converted.json
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -22,12 +22,12 @@ PUT https://api.aspose.cloud/v4.0/cells/ai/translate/text-file
 
 ### **Request Parameters:**
 
-| Parameter Name | Type   | Location | Required/Optional | Description                                                                                                                                                                    |
-| :------------- | :----- | :------- | :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Spreadsheet    | File   | Required | FormData          | The source text file to be translated. Must be a plain‑text (.txt) or supported spreadsheet format. Example: upload `document.txt` via multipart/form-data field named "file". |
-| targetLanguage | String | Required | Query             | ISO‑639‑1 language code of the desired output (e.g., "es" for Spanish, "fr" for French, "de" for German). The code is case‑insensitive.                                        |
+| Parameter Name | Type   | Location | Required/Optional | Description                                                                                                                                                                                                 |
+| :------------- | :----- | :------- | :---------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | Required | FormData          | The source text file to be translated. Must be a plain‑text (.txt) or supported spreadsheet format. Example: upload `document.txt` via multipart/form-data field named "file".                              |
+| targetLanguage | String | Required | Query             | ISO‑639‑1 language code of the desired output (e.g., "es" for Spanish, "fr" for French, "de" for German). The code is case‑insensitive.                                                                     |
 | region         | string | Optional | Query             | Spreadsheet region identifier that influences locale‑specific formatting such as dates, numbers, and currency. Common values: "US", "EU", "CN". If omitted, the workbook’s original region setting is used. |
-| password       | String | Optional | Query             | Password required to open encrypted spreadsheet files. Not needed for plain‑text files.                                                                                        |
+| password       | String | Optional | Query             | Password required to open encrypted spreadsheet files. Not needed for plain‑text files.                                                                                                                     |
 
 ### **Response**
 
@@ -41,13 +41,14 @@ Body: binary stream containing the translated text preserving original line brea
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Where should we use the Translate Text File API?
 
 - **Multilingual Documentation Portals** – Automatically translate user manuals or help files uploaded as text documents, delivering localized versions on demand.

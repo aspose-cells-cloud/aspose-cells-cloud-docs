@@ -22,30 +22,6 @@ The API can perform data calculations based on cell **color**. It can sum, count
 | Min Value           | Find the lowest value among cells with the same colour.      |
 | Average Value       | Compute the mean value of cells with the same colour.        |
 
-## Authentication
-
-**Prerequisites** – Ensure you have a registered Aspose Cloud application and that you are using a supported SDK version for your platform (e.g., .NET 6+, Java 11+, Python 3.8+). The API requires an OAuth 2.0 access token.
-
-1. **Register an application** in the Aspose Cloud Dashboard to receive a **Client Id** and **Client Secret**.
-2. **Request a token**
-
-   ```http
-   POST https://api.aspose.cloud/connect/token
-   Content-Type: application/x-www-form-urlencoded
-
-   grant_type=client_credentials&client_id=<YOUR_CLIENT_ID>&client_secret=<YOUR_CLIENT_SECRET>
-   ```
-
-   The response contains an `access_token`.
-
-3. **Include the token** in every API request
-
-   ```http
-   Authorization: Bearer <access_token>
-   ```
-
-The token is valid for one hour; refresh it by repeating step 2.
-
 ## Web API
 
 ```http
@@ -147,13 +123,14 @@ The schema below describes the response object. A concrete example follows the s
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Where should we use the Aggregate by Color API?
 
 In a spreadsheet, data from different categories is often color‑coded. This API enables you to sum, count, average, or find the minimum and maximum values for each color group, simplifying color‑based data analysis.
@@ -202,6 +179,7 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{</tab>}}
 {{< /tabs >}}
 
-**Notes:**  
-- When working with protected workbooks, include the optional `Password` query parameter; otherwise the request will fail with a 401 error.  
+**Notes:**
+
+- When working with protected workbooks, include the optional `Password` query parameter; otherwise the request will fail with a 401 error.
 - The maximum request size for the `Spreadsheet` file is 100 MB. If you need to process larger files, consider uploading the workbook to Aspose Cloud storage first and referencing it via the `Path` parameter (not shown here).

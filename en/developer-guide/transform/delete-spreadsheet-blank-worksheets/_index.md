@@ -5,17 +5,12 @@ ArticleTitle: "Delete All Blank Worksheets in Excel – Remove Empty Sheets Guid
 linktitle: "Delete Blank Worksheets"
 type: docs
 url: /delete-spreadsheet-blank-worksheets/
-keywords: "Aspose.Cells, Cloud API, delete blank worksheets, Excel cleanup, workbook optimization"
-description: "Use Aspose.Cells Cloud API to automatically delete blank or empty worksheets from Excel workbooks. Identify and remove sheets without data, formulas, charts, or objects to improve workbook performance and organization."
+keywords: "Aspose.Cells Cloud, delete blank worksheets, Excel API, workbook cleanup, spreadsheet optimization"
+description: "Use Aspose.Cells Cloud API to automatically delete blank or empty worksheets from Excel workbooks. Learn how to identify and remove sheets without data, formulas, charts, or objects, improving workbook performance and organization."
 weight: 100
 ---
 
 Automatically delete all blank worksheets from Excel workbooks using Aspose.Cells Cloud API. Our intelligent API detects and removes sheets containing no data, formulas, charts, comments, or objects while preserving all populated worksheets. Supports batch processing, cloud automation, and seamless integration for enterprise workbook cleanup workflows.
-
-**Prerequisites:**  
-- A valid Aspose.Cells Cloud account with an active storage configuration.  
-- A JWT access token obtained via the Aspose authentication flow.  
-- The target workbook uploaded to the configured cloud storage (or provided as multipart/form‑data).
 
 ## **DeleteSpreadsheetBlankWorksheets API**
 
@@ -28,6 +23,10 @@ PUT https://api.aspose.cloud/v4.0/cells/delete/blank-worksheets
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### **Request Parameters:**
 
@@ -58,25 +57,12 @@ The API returns the processed workbook as a file stream.
 - **Success status code:** `200 OK` – the workbook was processed and the cleaned file is returned in the response body.  
 - **Content‑Type:** `application/octet-stream`
 
-**HTTP Status Codes**
+### Error Codes
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-
-**Status‑code reference**
-
-| Code | Description |
-|------|-------------|
-| 200  | Workbook processed successfully |
-| 400  | Bad request – malformed URI or parameters |
-| 401  | Unauthorized – invalid or missing token |
-| 404  | Not found – spreadsheet not accessible |
-| 500  | Internal server error – processing failure |
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.  
+- **401 Unauthorized**: Invalid access token, or invalid client ID and secret.  
+- **404 Not Found**: The spreadsheet file is not accessible.  
+- **500 Server Error**: The spreadsheet has encountered an anomaly in obtaining calculation data.
 
 ## Where should we use the Delete Spreadsheet Blank Worksheets API?
 
@@ -131,15 +117,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_DeleteSpreadsheetBlankWorksheets.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-### cURL Example
-
-For developers who prefer raw HTTP requests, the following cURL command demonstrates the same operation:
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/delete/blank-worksheets?outPath=cleaned%2Foutput.xlsx&outStorageName=MyFirstStorage" \
-     -H "Authorization: Bearer {access_token}" \
-     -F "Spreadsheet=@/path/to/input.xlsx"
-```
-
-This request uploads `input.xlsx`, removes any blank worksheets, and stores the cleaned file as `output.xlsx` in the `cleaned` folder of the specified storage.

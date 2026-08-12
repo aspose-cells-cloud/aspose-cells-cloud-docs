@@ -30,10 +30,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | :-------------- | :----- | :------- | :---------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | TaskDescription | string | Body     | Required          | A plain‑text description of the user’s overall objective. The service parses the description and generates individual tasks. Example: “Launch marketing campaign for Q3, including content creation, email blast, and social media ads.” |
 
-**Authentication**  
-Calls to the Decompose User Task API require an OAuth 2.0 access token. Include the token in the `Authorization` header as `Bearer <access_token>`. Tokens are obtained from the Aspose Cloud authentication endpoint.  
-To obtain a token, send a POST request to `https://api.aspose.cloud/connect/token` with your client ID and client secret. The response contains an `access_token` value that must be included in subsequent API calls.
-
 ### **Response**
 
 Successful response (200 OK)  
@@ -48,13 +44,13 @@ The same structure is used for XLSX/ODS formats, with columns placed in the firs
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 **Error Response Example (400 Bad Request)**
 
@@ -65,7 +61,7 @@ The same structure is used for XLSX/ODS formats, with columns placed in the firs
 }
 ```
 
-**Sample Request Body (JSON)**  
+**Sample Request Body (JSON)**
 
 ```json
 {

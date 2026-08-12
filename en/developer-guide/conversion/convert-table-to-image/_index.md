@@ -20,13 +20,12 @@ Export table data from a local Excel file to an [Image](https://docs.fileformat.
 - [JPEG](https://docs.fileformat.com/image/jpeg/)
 - [BMP](https://docs.fileformat.com/image/bmp/)
 
-
 ## **Convert Table to Image API**
 
 Before using this endpoint, ensure you have the following prerequisites:
 
-- A valid JWT access token obtained through Aspose.Cells Cloud authentication.  
-- An accessible storage account if you intend to use the `outPath` or `outStorageName` parameters.  
+- A valid JWT access token obtained through Aspose.Cells Cloud authentication.
+- An accessible storage account if you intend to use the `outPath` or `outStorageName` parameters.
 - The source workbook (local Excel file) must be readable and, if protected, the correct password must be supplied.
 
 ### Web API
@@ -69,13 +68,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## **Where Should You Use the Convert Table to Image API?**
 
 - **Static Report Snapshots**: Convert financial tables, calculation results, or any formatted data into images for inclusion in PDF reports, PowerPoint slides, or printed documents where editing is not required.
@@ -95,6 +95,36 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ### Convert Table to Image API Specification
 
 The [Convert Table to Image API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToImage) provides a publicly accessible programming interface for conducting REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/image?format=png&worksheet=Sheet1&tableName=Table1" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@myWorkbook.xlsx" \
+  -o converted.png
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

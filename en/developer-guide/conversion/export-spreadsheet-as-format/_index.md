@@ -10,30 +10,14 @@ description: "Convert Excel workbooks stored in Aspose Cloud to PDF, XLSX, CSV, 
 weight: 100
 ---
 
-Export a cloud spreadsheet (Excel) to another file format.  
-**Prerequisites:** You must have a valid Aspose.Cells Cloud access token and, if required, the appropriate storage configured.
+Export a cloud spreadsheet (Excel) to another file format.
 
 ## **Export Spreadsheet as Format API**
-
-All requests must be made over **HTTPS** to protect credentials.
 
 ### Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/{name}?format={format}&folder={folder}&storageName={storageName}&outPath={outPath}&outStorageName={outStorageName}&fontsLocation={fontsLocation}&region={region}&password={password}
-```
-
-**Example request**
-
-```http
-GET https://api.aspose.cloud/v4.0/cells/Report.xlsx?format=pdf&folder=Docs&storageName=MyStorage
-```
-
-**cURL example**
-
-```bash
-curl -X GET "https://api.aspose.cloud/v4.0/cells/Report.xlsx?format=pdf&folder=Docs&storageName=MyStorage" \
-     -H "Authorization: Bearer {access_token}"
 ```
 
 ### **Security and Authentication**
@@ -72,13 +56,14 @@ The response contains a single object that represents the converted file stream.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Where should you use the Export Spreadsheet as another format API?
 
 - **Legacy System Migration**: Convert thousands of legacy XLS files to XLSX for modern systems.
@@ -101,6 +86,35 @@ The response contains a single object that represents the converted file stream.
 ### Export Spreadsheet as Format API Specification
 
 <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportSpreadsheetAsFormat" rel="noopener noreferrer">Export Spreadsheet as Format API Specification</a> provides a publicly accessible programming interface to perform REST interactions seamlessly.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets?format=pdf" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/octet-stream"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -28,7 +28,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 -H "Authorization: Bearer {access_token}"
 ```
 
-
 ### Request Parameters
 
 | Parameter Name | Type    | Path/Query/String/HTTP Body | Description                                                                                                                           |
@@ -39,14 +38,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | outStorageName | String  | Query                       | **Required.** Identifier of the configured cloud storage service (e.g., `CorporateDrive`).                                            |
 | region         | String  | Query                       | **Optional.** Locale setting (e.g., `de-DE`) that may affect region‑specific data handling.                                           |
 | password       | String  | Query                       | **Optional.** Password for decrypting a protected spreadsheet. Leave blank if the file is not encrypted.                              |
-
-**Sample cURL request**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/compress?level=5&outStorageName=MyStorage" \
-  -H "Authorization: Bearer {access_token}" \
-  -F "Spreadsheet=@/path/to/input.xlsx"
-```
 
 ### Response
 
@@ -64,13 +55,14 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/compress?level=5&ou
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Where should we use the Compress Spreadsheet API?
 
 - **Automated report distribution** – Compress monthly financial statements before emailing them to ensure successful delivery and improve the recipient’s experience.
@@ -89,6 +81,35 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/compress?level=5&ou
 ### Compress Spreadsheet API Specification
 
 The [Compress Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/ManagementController/CompressSpreadsheet) provides a publicly accessible interface for REST interactions, allowing direct API calls from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/compress?level=5&outStorageName=MyStorage" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/input.xlsx"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -122,4 +143,3 @@ The following code examples demonstrate how to interact with Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_CompressSpreadsheet.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-

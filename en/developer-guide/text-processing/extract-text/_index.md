@@ -1,5 +1,5 @@
 ---
-title: "Aspose.Cells Cloud – Extract Text"
+title: "Aspose.Cells Cloud Web API – Extract Text"
 second_title: "Aspose.Cells Cloud – Online Short‑Code"
 linktitle: "Extract Text"
 type: docs
@@ -21,6 +21,10 @@ PUT https://api.aspose.cloud/v4.0/cells/content/extract/text
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### The request parameters of **extractText** API are
 
@@ -64,14 +68,6 @@ When the request succeeds, the API returns a JSON payload containing the extract
 ]
 ```
 
-**Response schema**
-
-| Field                 | Type   | Description                                                            |
-|-----------------------|--------|------------------------------------------------------------------------|
-| Name                  | string | Identifier of the returned object (`ResponseFile`).                    |
-| DataType.Identifier   | string | Data type of the object (`File`).                                      |
-| DataType.Reference    | string | Indicates the data is returned as a stream.                           |
-
 If the `outPath` parameter is provided, the response contains only a status message; the workbook is written to the specified location.
 
 **Sample response when `outPath` is omitted**
@@ -83,22 +79,22 @@ If the `outPath` parameter is provided, the response contains only a status mess
 }
 ```
 
-**HTTP Status Codes**
+### Error Codes
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+- **200 OK** – Extraction completed successfully.  
+- **202 Accepted** – Request accepted for asynchronous processing.  
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI or missing required parameters.  
+- **401 Unauthorized** – Invalid access token, client ID, or client secret.  
+- **404 Not Found** – The specified spreadsheet file cannot be accessed.  
+- **500 Server Error** – An unexpected error occurred while processing the workbook.
+
 ## OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/ExtractText) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement **Extract Text** for cells with minimal code. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement **Extract Text** for cells with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 The following code examples illustrate how to make calls to Aspose.Cells web services using various SDKs:
 
@@ -169,3 +165,4 @@ The following code examples illustrate how to make calls to Aspose.Cells web ser
 {{</tab>}}
 
 {{< /tabs >}}
+

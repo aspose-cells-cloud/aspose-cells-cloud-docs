@@ -12,10 +12,6 @@ weight: 100
 
 Export a cloud‑stored spreadsheet (Excel) table to another format file.
 
-### **Security and Authentication**
-
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
 ## **Export Table as Format API**
 
 ### Web API
@@ -26,7 +22,7 @@ GET https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/tables/{ta
 
 ### **Security and Authentication**
 
-Authentication is required for this endpoint. See the main **Security and Authentication** section above for details.
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ```bash
 -H "Authorization: Bearer {access_token}"
@@ -64,13 +60,14 @@ Authentication is required for this endpoint. See the main **Security and Authen
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## **Where Should You Use the Export Table to Another Format API?**
 
 - **Legacy System Migration**: Convert thousands of legacy XLS files to XLSX for modern systems.
@@ -92,6 +89,35 @@ Authentication is required for this endpoint. See the main **Security and Authen
 ### Export Table as Format API Specification
 
 The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ExportTableAsFormat" target="_blank" rel="noopener noreferrer">Export Table as Format API Specification</a> defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/worksheets/Sheet1/tables/Table1?format=pdf" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/octet-stream"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -125,11 +151,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ExportTableAsFormat.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-**Tips**
-
-- Ensure the `format` query parameter matches one of the supported output types (pdf, png, csv, json, etc.).  
-- Large tables may require increased timeout settings; consider using the asynchronous `202 Accepted` response for long‑running conversions.  
-- When exporting to image formats, specify `fontsLocation` if your workbook uses custom fonts.
-
-[Back to top](#export-table-as-format-api)

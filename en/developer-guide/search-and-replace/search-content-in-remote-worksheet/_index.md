@@ -5,19 +5,14 @@ ArticleTitle: "Search Text in Remote Excel Spreadsheet Worksheet – Find Specif
 linktitle: "Search Remote Worksheet Content"
 type: docs
 url: /search-content-in-remote-worksheet/
-keywords: "Aspose, Cells, Excel, API, text search, remote worksheet, cloud storage"
-description: "Search for text, numbers, or formulas in a remote Excel worksheet using Aspose.Cells Cloud API. Supports case‑insensitive searches and password‑protected files."
+keywords: "Aspose Cells, Excel API, text search, remote worksheet"
+description: "Search for text, numbers, or formulas in a remote Excel worksheet using Aspose.Cells Cloud API. Supports case‑insensitive and password‑protected files."
 weight: 100
 ---
 
 ## **Search Content in Remote Worksheet**
 
 Programmatically search for specific text within any Excel worksheet using the Aspose.Cells Cloud API. The service can locate text, numbers, or formulas in remote files stored in cloud storage, enabling automated data‑discovery, content‑analysis, and spreadsheet‑auditing workflows.
-
-**Prerequisites**  
-- A valid Aspose.Cloud JWT access token (see the Authentication link below).  
-- The workbook must be stored in Aspose Cloud storage.  
-- Appropriate permissions for the target storage location.
 
 ### **Web API**
 
@@ -28,6 +23,10 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/con
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### **Request Parameters**
 
@@ -67,15 +66,13 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - **code** – HTTP status code returned by the service.
 - **status** – Textual description of the result.
 
-**HTTP Status Codes**
+### **Error Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+- **400 Bad Request** – Invalid API URI or malformed parameters.
+- **401 Unauthorized** – Missing or invalid OAuth 2.0 token.
+- **404 Not Found** – The workbook or worksheet cannot be located.
+- **500 Server Error** – An unexpected condition occurred while processing the request.
+
 ## Where should we use the Search content within the worksheet of the Spreadsheet API?
 
 - **Workbook compliance audit:** Quickly locate sensitive terms (e.g., “Confidential”) across the entire file.
@@ -99,4 +96,5 @@ The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/SearchControl
 
 ### Use Aspose.Cells Cloud SDKs
 
-Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search content within worksheets of spreadsheets for cells with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement search content within worksheet of spreadsheets for cells with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+

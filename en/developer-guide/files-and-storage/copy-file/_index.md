@@ -10,6 +10,8 @@ description: "Learn how to use the Aspose.Cells Cloud CopyFile API to efficientl
 weight: 100
 ---
 
+The **copyFile** API allows users to duplicate an Excel file from a specified source path to a destination path, supporting various storage options.
+
 ## **Excel API: Copy File**
 
 ### Web API
@@ -17,12 +19,6 @@ weight: 100
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/storage/file/copy/{srcPath}
 ```
-
-> **Note:** All Aspose Cloud endpoints require HTTPS.
-
-### **Function Description**
-
-The **copyFile** API allows users to duplicate an Excel file from a specified source path to a destination path, supporting various storage options.
 
 ### **Security and Authentication**
 
@@ -38,167 +34,53 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | destStorageName | String | Query                      | The name of the destination storage.               |
 | versionId       | String | Query                      | Optional version ID of the file to copy.           |
 
-**Full request example**
-
-```http
-PUT https://api.aspose.cloud/v4.0/cells/storage/file/copy/MyFolder/Source.xlsx?destPath=MyFolder/Dest.xlsx&srcStorageName=MyStorage&destStorageName=MyStorage
-Authorization: Bearer {access_token}
-Content-Type: application/json
-```
-
-**Typical responses**
-
-- **200 OK** – File copied successfully (empty body).  
-- **404 Not Found** – Example error payload:
-
-```json
-{
-  "error": {
-    "code": "FileNotFound",
-    "message": "Source file '/MyFolder/Source.xlsx' does not exist."
-  }
-}
-```
-
-### **Response Description**
+### **Response**
 
 The operation returns no content on success. Typical HTTP status codes are:
 
-| Status Code | Meaning                              |
-| ----------- | ------------------------------------ |
-| 200 OK      | File copied successfully.           |
-| 400 Bad Request | Invalid request parameters.      |
-| 401 Unauthorized | Authentication failed or token missing. |
-| 404 Not Found | Source file not found.             |
-| 500 Internal Server Error | Unexpected server error. |
+**HTTP Status Codes**
 
-## OpenAPI Specification
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/CopyFile) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+## How to Use the Copy File API with SDKs?
 
-## Excel API SDK
+### Copy File API Specification
 
-Using an SDK is the best way to accelerate development. An SDK manages low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+The [Copy File API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/File/CopyFile) provides a publicly accessible programming interface for conducting REST interactions directly from a web browser.
 
-The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
-{{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
-{{<tab tabNum="1" >}}
-```csharp
-// Example40_CopyFile.cs
-using Aspose.Cells.Cloud.SDK.Api;
-using Aspose.Cells.Cloud.SDK.Model;
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
-var api = new CellsApi("client_id", "client_secret");
-var response = api.CopyFile("MyFolder/Source.xlsx", "MyFolder/Dest.xlsx");
-Console.WriteLine("Copy operation completed.");
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/file/copy/MyFolder/Source.xlsx?destPath=MyFolder/Dest.xlsx&srcStorageName=MyStorage&destStorageName=MyStorage" \
+     -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+     -H "Accept: application/json"
 ```
-{{</tab>}}
-{{<tab tabNum="2" >}}
-```java
-// Example40_CopyFile.java
-import com.aspose.cells.cloud.api.CellsApi;
-import com.aspose.cells.cloud.model.*;
 
-CellsApi api = new CellsApi("client_id", "client_secret");
-api.copyFile("MyFolder/Source.xlsx", "MyFolder/Dest.xlsx");
-System.out.println("Copy operation completed.");
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
 ```
-{{</tab>}}
-{{<tab tabNum="3" >}}
-```php
-// Example40_CopyFile.php
-require_once 'vendor/autoload.php';
-use Aspose\Cells\Cloud\Api\CellsApi;
-
-$api = new CellsApi("client_id", "client_secret");
-$api->copyFile("MyFolder/Source.xlsx", "MyFolder/Dest.xlsx");
-echo "Copy operation completed.";
-```
-{{</tab>}}
-{{<tab tabNum="4" >}}
-```ruby
-# Example40_CopyFile.rb
-require 'aspose_cells_cloud'
-
-api = AsposeCellsCloud::CellsApi.new('client_id', 'client_secret')
-api.copy_file('MyFolder/Source.xlsx', 'MyFolder/Dest.xlsx')
-puts 'Copy operation completed.'
-```
-{{</tab>}}
-{{<tab tabNum="5" >}}
-```javascript
-// Example40_CopyFile.ts (Node.js)
-const { CellsApi } = require("@aspose/cells-cloud");
-const api = new CellsApi("client_id", "client_secret");
-api.copyFile("MyFolder/Source.xlsx", "MyFolder/Dest.xlsx")
-   .then(() => console.log("Copy operation completed."))
-   .catch(err => console.error(err));
-```
-{{</tab>}}
-{{<tab tabNum="6" >}}
-```python
-# Example40_CopyFile.py
-from asposecellscloud import CellsApi
-
-api = CellsApi("client_id", "client_secret")
-api.copy_file("MyFolder/Source.xlsx", "MyFolder/Dest.xlsx")
-print("Copy operation completed.")
-```
-{{</tab>}}
-{{<tab tabNum="7" >}}
-```perl
-# Example40_CopyFile.pl
-use Aspose::Cells::Cloud::Api::CellsApi;
-
-my $api = Aspose::Cells::Cloud::Api::CellsApi->new('client_id', 'client_secret');
-$api->copy_file('MyFolder/Source.xlsx', 'MyFolder/Dest.xlsx');
-print "Copy operation completed.\n";
-```
-{{</tab>}}
-{{<tab tabNum="8" >}}
-```go
-// Example40_CopyFile.go
-package main
-
-import (
-    "fmt"
-    "github.com/asposecellscloud/aspose-cells-cloud-go/v4"
-)
-
-func main() {
-    api := asposecellscloud.NewCellsApi("client_id", "client_secret")
-    _, err := api.CopyFile("MyFolder/Source.xlsx", "MyFolder/Dest.xlsx")
-    if err != nil {
-        fmt.Println(err)
-    } else {
-        fmt.Println("Copy operation completed.")
-    }
+{
 }
 ```
-{{</tab>}}
+
+{{< /tab >}}
+
 {{< /tabs >}}
 
-### See also
+### Use Aspose.Cells Cloud SDKs
 
-- **Copy Folder API** – <a href="/copy-folder/">Copy Folder</a>  
-- **Move File API** – <a href="/move-file/">Move File</a>  
-- **Delete File API** – <a href="/delete-file/">Delete File</a>
+Using the SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to convert spreadsheet table data to an image with minimal code. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Aspose.Cells Cloud File Copy API",
-  "description": "Documentation for the CopyFile API that enables fast copying of Excel files in Aspose.Cells Cloud storage.",
-  "url": "https://docs.aspose.cloud/cells/copy-file/",
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://docs.aspose.cloud/" },
-      { "@type": "ListItem", "position": 2, "name": "Cells", "item": "https://docs.aspose.cloud/cells/" },
-      { "@type": "ListItem", "position": 3, "name": "Copy File", "item": "https://docs.aspose.cloud/cells/copy-file/" }
-    ]
-  }
-}
-</script>
+The following code examples illustrate how to invoke Aspose.Cells web services using various SDKs:

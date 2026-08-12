@@ -10,28 +10,19 @@ description: "Retrieve real‑time disk usage for Aspose.Cells Cloud. Learn the 
 weight: 100
 ---
 
-## Excel API: GetDiskUsage
-
 The **Get Disk Usage** operation returns real‑time storage metrics for your Aspose.Cells Cloud account. Use this endpoint to monitor consumed and total disk space.
+
+- Retrieves the current disk usage for the Excel API in the Aspose Cloud environment.
+- Allows developers to monitor how much storage their applications have consumed.
+- Enables proactive management of storage limits and cost control.
+
+## Excel API: GetDiskUsage
 
 ### Web API
 
 ```http
 GET https://api.aspose.cloud/v4.0/cells/storage/disk
 ```
-
-```bash
-curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/disk?storageName=MyStorage" \
-     -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
-```
-
-### Function Description
-
-- Retrieves the current disk usage for the Excel API in the Aspose Cloud environment.
-- Allows developers to monitor how much storage their applications have consumed.
-- Enables proactive management of storage limits and cost control.
-
-**Prerequisites:** To call this endpoint you must have a valid JWT access token that includes the `Cells.Storage` scope. Generate the token following the authentication guide and include it in the `Authorization` header.
 
 ### **Security and Authentication**
 
@@ -43,9 +34,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | -------------- | ------ | -------- | ---------------------------------------------------- | -------- |
 | storageName    | String | Query    | The name of the storage for which to retrieve usage. | Optional |
 
-Authentication: Include the `Authorization: Bearer <access_token>` header in the request.
-
-### Response Description
+### **Response**
 
 ```json
 {
@@ -80,7 +69,34 @@ Authentication: Include the `Authorization: Bearer <access_token>` header in the
 }
 ```
 
-#### Sample Success Response
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageController/GetDiskUsage) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/disk?storageName=MyStorage" \
+     -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
 
 ```json
 {
@@ -89,23 +105,11 @@ Authentication: Include the `Authorization: Bearer <access_token>` header in the
 }
 ```
 
-Related operations: [Upload File](/upload-file/), [Get Files List](/list-files/).  
-Related topics: [Get Files List](/list-files/), [Upload File](/upload-file/), [Delete File](/delete-file/).
+{{< /tab >}}
 
-**HTTP Status Codes**
+{{< /tabs >}}
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-## OpenAPI Specification
-
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/StorageController/GetDiskUsage) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details, allowing you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
@@ -137,26 +141,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_GetDiskUsage.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-### Last Updated
-
-_2026‑07‑06_
-
-### Author
-
-Written by the **Aspose Cloud Documentation Team**, 2024‑2026.
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Aspose.Cells Cloud",
-  "applicationCategory": "DeveloperTools",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  },
-  "url": "https://docs.aspose.cloud/cells/get-disk-usage/"
-}
-```

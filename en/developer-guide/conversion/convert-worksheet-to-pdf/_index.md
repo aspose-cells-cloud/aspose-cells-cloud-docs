@@ -12,10 +12,7 @@ weight: 100
 
 Export a worksheet from a local Excel file to a [PDF](https://docs.fileformat.com/pdf/) file using the Cloud API.
 
-**Prerequisites**: Before calling the API, obtain a valid JWT access token using your Aspose.Cells Cloud client ID and secret, and ensure you have an active Aspose.Cells Cloud subscription.
-
 ## **Convert Worksheet to PDF API**
-
 
 ### Web API
 
@@ -39,8 +36,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | region         | String | Query                      | Define the spreadsheet region setting.                                |
 | password       | String | Query                      | The password required to open the spreadsheet file.                   |
 
-**Notes**: Worksheet names are case‑sensitive. The maximum file size for upload is 50 MB. If the worksheet contains formulas that depend on external data, ensure those references are available.
-
 ### **Response**
 
 ```json
@@ -58,13 +53,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## **Where Should You Use the Convert Worksheet to PDF API?**
 
 - **Financial Statements**: Convert balance sheets, income statements (specific tables) to PDF for audit‑ready documentation.
@@ -87,6 +83,36 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ### Convert Worksheet to PDF API Specification
 
 The [Convert Worksheet to PDF API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertWorksheetToPDF) provides a publicly accessible programming interface and enables REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/worksheet/json?worksheet=Sheet1" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@myWorkbook.xlsx" \
+  -o converted.json
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

@@ -34,16 +34,16 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters**
 
-| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                                 |
-| :------------- | :----- | :------------------------- | :------------------------------------------------------------------------------------------ |
-| Spreadsheet    | File   | FormData                   | Upload the spreadsheet file.                                                                |
-| worksheet      | String | Query                      | Name of the worksheet to be converted.                                                      |
-| format         | String | Query                      | Desired image format (`svg`, `png`, `tiff`, `jpeg`, `bmp`, etc.).                           |
-| outPath        | String | Query                      | *(Optional)* Folder path where the output image will be stored; defaults to `null`.        |
-| outStorageName | String | Query                      | Name of the storage location for the output file.                                           |
-| fontsLocation  | String | Query                      | Path to a custom fonts folder, if you need to use fonts not available on the server.      |
-| region         | String | Query                      | Spreadsheet region setting (e.g., `en-US`).                                                |
-| password       | String | Query                      | Password required to open a protected spreadsheet file.                                    |
+| Parameter Name | Type   | Path/Query String/HTTPBody | Description                                                                          |
+| :------------- | :----- | :------------------------- | :----------------------------------------------------------------------------------- |
+| Spreadsheet    | File   | FormData                   | Upload the spreadsheet file.                                                         |
+| worksheet      | String | Query                      | Name of the worksheet to be converted.                                               |
+| format         | String | Query                      | Desired image format (`svg`, `png`, `tiff`, `jpeg`, `bmp`, etc.).                    |
+| outPath        | String | Query                      | _(Optional)_ Folder path where the output image will be stored; defaults to `null`.  |
+| outStorageName | String | Query                      | Name of the storage location for the output file.                                    |
+| fontsLocation  | String | Query                      | Path to a custom fonts folder, if you need to use fonts not available on the server. |
+| region         | String | Query                      | Spreadsheet region setting (e.g., `en-US`).                                          |
+| password       | String | Query                      | Password required to open a protected spreadsheet file.                              |
 
 ### **Response**
 
@@ -61,25 +61,26 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## **Where Should You Use the Convert Worksheet to Image API?**
 
-- **Static Report Snapshots** – Convert financial tables, calculations, or other data into images for inclusion in PDF reports, PowerPoint slides, or printed documents where editing is not required.  
-- **Data Visualization in Presentations** – Turn complex spreadsheet tables (including conditional formatting or simple charts) into images that can be embedded in presentations (PPTX, Google Slides).  
-- **Documentation & Training Materials** – Capture spreadsheet examples, templates, or data‑entry forms as images for user manuals, tutorials, or knowledge‑base articles.  
+- **Static Report Snapshots** – Convert financial tables, calculations, or other data into images for inclusion in PDF reports, PowerPoint slides, or printed documents where editing is not required.
+- **Data Visualization in Presentations** – Turn complex spreadsheet tables (including conditional formatting or simple charts) into images that can be embedded in presentations (PPTX, Google Slides).
+- **Documentation & Training Materials** – Capture spreadsheet examples, templates, or data‑entry forms as images for user manuals, tutorials, or knowledge‑base articles.
 - **Thumbnail Previews** – Generate small image previews of key spreadsheet sections for file browsers, document libraries, or search results.
 
 ## Why Should You Use the Convert Worksheet to Image API?
 
-- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development and comes with comprehensive documentation. Compared with building a custom chart‑rendering solution, this significantly reduces development workload.  
-- **Cost‑Effective** – You can convert table data without first storing the workbook permanently, which saves storage space and reduces costs.  
-- **Pixel‑Perfect Preservation** – Faithfully replicates Excel’s appearance—including cell formatting, formulas (as displayed values), borders, colors, and conditional formatting—in the output image.  
+- **Developer‑Friendly** – Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development and comes with comprehensive documentation. Compared with building a custom chart‑rendering solution, this significantly reduces development workload.
+- **Cost‑Effective** – You can convert table data without first storing the workbook permanently, which saves storage space and reduces costs.
+- **Pixel‑Perfect Preservation** – Faithfully replicates Excel’s appearance—including cell formatting, formulas (as displayed values), borders, colors, and conditional formatting—in the output image.
 - **Universal Compatibility** – Image formats (PNG, JPEG, TIFF, BMP, SVG, and so on) are viewable on any device or platform without specialized software, ensuring maximum accessibility.
 
 ## How to Use the Convert Worksheet to Image API with SDKs?
@@ -87,6 +88,36 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ### Convert Worksheet to Image API Specification
 
 The [Convert Worksheet to Image API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertWorksheetToImage) defines a publicly accessible programming interface and allows for REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/worksheet/image?format=png&worksheet=Sheet1" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@myWorkbook.xlsx" \
+  -o converted.png
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

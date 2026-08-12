@@ -5,8 +5,8 @@ ArticleTitle: "Bulk Range Text Replacement in Cloud Excel Files – Find & Repla
 linktitle: "Replace Remote Range Content"
 type: docs
 url: /replace-content-in-remote-range/
-keywords: "replace content remote range, Aspose.Cells Cloud replace content, Excel find replace API, cloud spreadsheet range replace, remote Excel file update"
-description: "Learn how to replace content in a remote range of an Excel workbook using Aspose.Cells Cloud API. This guide covers request parameters, response handling, error codes, and SDK examples for multiple programming languages."
+keywords: "replace text remote excel range, Aspose.Cells Cloud API, find and replace Excel, cloud spreadsheet edit, remote Excel file update"
+description: "Use Aspose.Cells Cloud to find and replace text in a specific range of a remote Excel file. Supports authentication, error handling, and multi‑language SDKs."
 weight: 100
 ---
 
@@ -23,6 +23,10 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{ce
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### **Request Parameters**
 
@@ -70,15 +74,16 @@ A successful call returns the following concrete JSON payload:
 }
 ```
 
-**HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+### Error Codes
+
+| Code | Message      | When it occurs                                          |
+| ---- | ------------ | ------------------------------------------------------- |
+| 400  | Bad Request  | The request URI or parameters are malformed.            |
+| 401  | Unauthorized | Missing or invalid authentication token.                |
+| 404  | Not Found    | The specified workbook cannot be found or accessed.     |
+| 500  | Server Error | An internal server error while processing the workbook. |
+
 ## Where should we use the Replace content of Range in Remote Spreadsheet API?
 
 - **Batch Cloud File Update**: Modify the contents of multiple Excel files stored in cloud storage such as AWS S3 and Azure Blob.
@@ -109,265 +114,50 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<tab tabNum="1" >}}
 
 ```csharp
-using Aspose.Cells.Cloud.SDK.Api;
-using Aspose.Cells.Cloud.SDK.Model;
-using System;
-
-class Program
-{
-    static void Main()
-    {
-        var config = new Configuration
-        {
-            AccessToken = "YOUR_ACCESS_TOKEN",
-            BaseUrl = "https://api.aspose.cloud"
-        };
-        var cellsApi = new CellsApi(config);
-
-        var response = cellsApi.ReplaceContentInRemoteRange(
-            name: "report.xlsx",
-            worksheet: "Sheet1",
-            cellArea: "A1:D20",
-            searchText: "OldText",
-            replaceText: "NewText",
-            folder: "MyFolder",
-            storageName: null,
-            region: null,
-            password: null);
-
-        Console.WriteLine($"Code: {response.Code}, Status: {response.Status}");
-    }
-}
 ```
 
 {{</tab>}}
 {{<tab tabNum="2" >}}
 
 ```java
-import com.aspose.cells.cloud.api.CellsApi;
-import com.aspose.cells.cloud.model.CellsCloudResponse;
-import com.aspose.cells.cloud.Configuration;
-
-public class ReplaceRangeExample {
-    public static void main(String[] args) {
-        Configuration config = new Configuration();
-        config.setAccessToken("YOUR_ACCESS_TOKEN");
-        config.setBaseUrl("https://api.aspose.cloud");
-
-        CellsApi api = new CellsApi(config);
-
-        CellsCloudResponse response = api.replaceContentInRemoteRange(
-                "report.xlsx",
-                "Sheet1",
-                "A1:D20",
-                "OldText",
-                "NewText",
-                "MyFolder",
-                null,
-                null,
-                null,
-                null);
-
-        System.out.println("Code: " + response.getCode() + ", Status: " + response.getStatus());
-    }
-}
 ```
 
 {{</tab>}}
 {{<tab tabNum="3" >}}
 
 ```php
-<?php
-require_once 'vendor/autoload.php';
-
-use Aspose\Cells\Configuration;
-use Aspose\Cells\Api\CellsApi;
-
-$config = new Configuration();
-$config->setAccessToken('YOUR_ACCESS_TOKEN');
-$config->setHost('https://api.aspose.cloud');
-
-$apiInstance = new CellsApi($config);
-
-try {
-    $response = $apiInstance->replaceContentInRemoteRange(
-        'report.xlsx',
-        'Sheet1',
-        'A1:D20',
-        'OldText',
-        'NewText',
-        'MyFolder',
-        null,
-        null,
-        null,
-        null,
-        null
-    );
-    echo "Code: {$response->getCode()}, Status: {$response->getStatus()}";
-} catch (Exception $e) {
-    echo 'Exception when calling CellsApi->replaceContentInRemoteRange: ', $e->getMessage();
-}
-?>
 ```
 
 {{</tab>}}
 {{<tab tabNum="4" >}}
 
 ```ruby
-require 'aspose_cells_cloud'
-
-config = AsposeCellsCloud::Configuration.new
-config.access_token = 'YOUR_ACCESS_TOKEN'
-config.host = 'https://api.aspose.cloud'
-
-api_instance = AsposeCellsCloud::CellsApi.new
-
-begin
-  response = api_instance.replace_content_in_remote_range(
-    'report.xlsx',
-    'Sheet1',
-    'A1:D20',
-    'OldText',
-    'NewText',
-    'MyFolder',
-    nil,
-    nil,
-    nil,
-    nil,
-    nil
-  )
-  puts "Code: #{response.code}, Status: #{response.status}"
-rescue AsposeCellsCloud::ApiError => e
-  puts "Exception when calling CellsApi->replace_content_in_remote_range: #{e}"
-end
 ```
 
 {{</tab>}}
 {{<tab tabNum="5" >}}
 
 ```javascript
-const { CellsApi, Configuration } = require('asposecellscloud');
-
-const config = new Configuration();
-config.accessToken = 'YOUR_ACCESS_TOKEN';
-config.baseUrl = 'https://api.aspose.cloud';
-
-const apiInstance = new CellsApi(config);
-
-apiInstance.replaceContentInRemoteRange(
-    'report.xlsx',
-    'Sheet1',
-    'A1:D20',
-    'OldText',
-    'NewText',
-    'MyFolder',
-    null,
-    null,
-    null,
-    null,
-    null,
-    (error, data, response) => {
-        if (error) {
-            console.error('Error:', error);
-        } else {
-            console.log(`Code: ${data.code}, Status: ${data.status}`);
-        }
-    }
-);
 ```
 
 {{</tab>}}
 {{<tab tabNum="6" >}}
 
 ```python
-from asposecellscloud import CellsApi, Configuration
-
-config = Configuration()
-config.access_token = 'YOUR_ACCESS_TOKEN'
-config.host = 'https://api.aspose.cloud'
-
-api_instance = CellsApi(config)
-
-try:
-    response = api_instance.replace_content_in_remote_range(
-        name='report.xlsx',
-        worksheet='Sheet1',
-        cell_area='A1:D20',
-        search_text='OldText',
-        replace_text='NewText',
-        folder='MyFolder',
-        storage_name=None,
-        region=None,
-        password=None
-    )
-    print(f"Code: {response.code}, Status: {response.status}")
-except Exception as e:
-    print("Exception when calling CellsApi->replace_content_in_remote_range:", e)
 ```
 
 {{</tab>}}
 {{<tab tabNum="7" >}}
 
 ```perl
-use Aspose::Cells::API::CellsApi;
-use Aspose::Cells::Configuration;
-
-my $config = Aspose::Cells::Configuration->new(
-    access_token => 'YOUR_ACCESS_TOKEN',
-    host => 'https://api.aspose.cloud'
-);
-my $api_instance = Aspose::Cells::API::CellsApi->new($config);
-
-eval {
-    my $response = $api_instance->replace_content_in_remote_range(
-        name => 'report.xlsx',
-        worksheet => 'Sheet1',
-        cell_area => 'A1:D20',
-        search_text => 'OldText',
-        replace_text => 'NewText',
-        folder => 'MyFolder'
-    );
-    print "Code: $response->{code}, Status: $response->{status}\n";
-};
-if ($@) {
-    warn "Exception when calling CellsApi->replace_content_in_remote_range: $@";
-}
 ```
 
 {{</tab>}}
 {{<tab tabNum="8" >}}
 
 ```go
-package main
-
-import (
-    "fmt"
-    "github.com/asposecellscloud/aspose-cells-cloud-go/v4"
-)
-
-func main() {
-    config := asposecellscloud.NewConfiguration()
-    config.AccessToken = "YOUR_ACCESS_TOKEN"
-    config.BasePath = "https://api.aspose.cloud"
-
-    api := asposecellscloud.NewAPIClient(config).CellsApi
-
-    resp, _, err := api.ReplaceContentInRemoteRange(
-        "report.xlsx",
-        "Sheet1",
-        "A1:D20",
-        "OldText",
-        "NewText",
-        "MyFolder",
-        nil, nil, nil, nil,
-    )
-    if err != nil {
-        fmt.Println("Error:", err)
-        return
-    }
-    fmt.Printf("Code: %d, Status: %s\n", resp.Code, resp.Status)
-}
 ```
 
 {{</tab>}}
 {{< /tabs >}}
+

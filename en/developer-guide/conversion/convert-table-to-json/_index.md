@@ -24,16 +24,6 @@ PUT https://api.aspose.cloud/v4.0/cells/convert/table/json
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### Sample cURL Request
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sheet1&tableName=MyTable" \
-     -H "Authorization: Bearer {access_token}" \
-     -F "Spreadsheet=@/path/to/your/file.xlsx" \
-     -F "outPath=output/folder" \
-     -F "outStorageName=MyStorage"
-```
-
 ### Request Parameters
 
 | Parameter Name     | Type   | Location | Description                                                                                    |
@@ -46,7 +36,6 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sh
 | **fontsLocation**  | String | Query    | (Optional) Path to custom fonts used during conversion.                                        |
 | **region**         | String | Query    | (Optional) Regional settings for the workbook.                                                 |
 | **password**       | String | Query    | (Optional) Password to open a protected workbook.                                              |
-
 
 ### Response
 
@@ -62,45 +51,15 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sh
 ]
 ```
 
-**Example of a successful JSON payload (200 OK)**  
-
-```json
-[
-  {
-    "Id": 1,
-    "ProductName": "Widget A",
-    "Price": 12.99,
-    "InStock": true
-  },
-  {
-    "Id": 2,
-    "ProductName": "Widget B",
-    "Price": 8.5,
-    "InStock": false
-  }
-]
-```
-
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-
-**Handling Tips:** Validate all required parameters before sending the request, refresh the OAuth token if a 401 is returned, and implement retry logic for 5xx responses.
-
-#### HTTP Status Reference
-
-| Status | Description                               | Suggested Handling                                      |
-|--------|-------------------------------------------|----------------------------------------------------------|
-| 400    | Bad Request                               | Check URI syntax and required parameters.               |
-| 401    | Unauthorized                              | Refresh or obtain a new OAuth token.                    |
-| 404    | Not Found                                 | Verify the file path and storage name.                  |
-| 500    | Internal Server Error                     | Retry after a short delay or contact Aspose support.    |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## **Where Should You Use the Convert Table to JSON API?**
 
@@ -126,13 +85,58 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sh
   - **Header Mapping** – Uses the first row as JSON keys for clean object structures.
   - **Data Type Retention** – Preserves numbers, dates, and booleans (not just text).
 
-*Version History:* The Convert Table to JSON endpoint was introduced with API version **v4.0** (2024) and remains the current stable release. Earlier v3.x endpoints are deprecated.
+_Version History:_ The Convert Table to JSON endpoint was introduced with API version **v4.0** (2024) and remains the current stable release. Earlier v3.x endpoints are deprecated.
 
 ## How to Use the Convert Table to JSON API with SDKs?
 
 ### Convert Table to JSON API Specification
 
-The [Convert Table to JSON API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToJson){:target="_blank" rel="noopener noreferrer"} provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
+The [Convert Table to JSON API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToJson){:target="\_blank" rel="noopener noreferrer"} provides a publicly accessible programming interface, enabling REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sheet1&tableName=Table1" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@myWorkbook.xlsx" \
+  -o converted.json
+```
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/json?worksheet=Sheet1&tableName=MyTable" \
+     -H "Authorization: Bearer {access_token}" \
+     -F "Spreadsheet=@/path/to/your/file.xlsx" \
+     -F "outPath=output/folder" \
+     -F "outStorageName=MyStorage"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+```
+{
+ "Code": 200,
+ "Status": "OK"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -166,23 +170,3 @@ The following code examples demonstrate how to interact with Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertTableToJson.go" >}}  
 {{</tab>}}  
 {{< /tabs >}}
-
-### Frequently Asked Questions
-
-**Q:** _How do I convert a local Excel table to JSON using Aspose.Cells Cloud?_  
-**A:** Send a `PUT` request to `https://api.aspose.cloud/v4.0/cells/convert/table/json` with the workbook in `FormData` and specify `worksheet` and `tableName` as query parameters. The API returns the JSON file as a stream.
-
-**Q:** _What are the required parameters for this API?_  
-**A:** Required: `Spreadsheet` (multipart/form‑data file), `worksheet` (string), `tableName` (string). Optional: `outPath`, `outStorageName`, `fontsLocation`, `region`, `password`.
-
-**Q:** _Which error codes might I encounter and how should I handle them?_  
-**A:**
-
-- **400** – Bad request; verify the URI and required parameters.
-- **401** – Unauthorized; refresh the access token.
-- **404** – File not found; ensure the file path is correct.
-- **500** – Server error; retry after a short delay or contact support.
-
----
-
-_Note: The Cloud SDK Family section (code tabs) has been left unchanged as requested._

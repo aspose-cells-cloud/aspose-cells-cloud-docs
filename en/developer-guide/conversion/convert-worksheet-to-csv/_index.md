@@ -28,14 +28,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 -H "Authorization: Bearer {access_token}"
 ```
 
-### cURL Sample
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/worksheet/csv?worksheet=Sheet1" \
-  -H "Authorization: Bearer {access_token}" \
-  -F "Spreadsheet=@myWorkbook.xlsx"
-```
-
 ### Request Parameters
 
 | Parameter Name | Type   | Location | Required/Optional | Description                                                                                                                                 |
@@ -64,13 +56,14 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/worksheet/csv?worksheet
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## When to Use the Convert Worksheet to CSV API?
 
 - **Data Extraction for BI pipelines** – Pull a specific worksheet from an Excel report and feed the resulting CSV directly into Power BI or Tableau without intermediate file handling.
@@ -91,7 +84,35 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/worksheet/csv?worksheet
 
 <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertWorksheetToCsv" target="_blank" rel="noopener noreferrer">Convert Worksheet to CSV API Specification</a> provides a publicly accessible programming interface for executing REST interactions directly from a web browser.
 
-## Excel API SDK
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/image?format=png&worksheet=Sheet1&tableName=Table1" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@myWorkbook.xlsx" \
+  -o converted.png
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

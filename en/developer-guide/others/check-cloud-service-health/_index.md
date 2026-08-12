@@ -29,11 +29,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Request Parameters**
 
-| Parameter      | Type   | Required | Description                                                                                                            |
-|----------------|--------|----------|------------------------------------------------------------------------------------------------------------------------|
-| Authorization  | header | Yes      | Bearer token for authentication (`Authorization: Bearer <token>`).                                                   |
-| detail         | query  | No       | Set to `true` to include detailed component information.                                                               |
-| Accept         | header | No       | Desired response format, default is `application/json`.                                                                |
+| Parameter     | Type   | Required | Description                                                        |
+| ------------- | ------ | -------- | ------------------------------------------------------------------ |
+| Authorization | header | Yes      | Bearer token for authentication (`Authorization: Bearer <token>`). |
+| detail        | query  | No       | Set to `true` to include detailed component information.           |
+| Accept        | header | No       | Desired response format, default is `application/json`.            |
 
 ### **Response**
 
@@ -54,13 +54,13 @@ The service returns a JSON payload when the request succeeds.
 
 **HTTP status codes**
 
-| Code | Meaning                     | Description                                                                      |
-|------|-----------------------------|----------------------------------------------------------------------------------|
-| 200  | OK                          | The service is healthy; see the JSON example above.                             |
-| 401  | Unauthorized                | Invalid or missing authentication token.                                         |
-| 503  | Service Unavailable         | The service is currently unhealthy or under maintenance.                         |
-| 4xx  | Client error                | Incorrect request parameters or malformed request.                               |
-| 5xx  | Server error                | Unexpected server failure; retry later.                                          |
+| Code | Meaning             | Description                                              |
+| ---- | ------------------- | -------------------------------------------------------- |
+| 200  | OK                  | The service is healthy; see the JSON example above.      |
+| 401  | Unauthorized        | Invalid or missing authentication token.                 |
+| 503  | Service Unavailable | The service is currently unhealthy or under maintenance. |
+| 4xx  | Client error        | Incorrect request parameters or malformed request.       |
+| 5xx  | Server error        | Unexpected server failure; retry later.                  |
 
 ## How to Use the Aspose.Cells Cloud Status API with SDKs
 
@@ -74,35 +74,3 @@ Using the SDK is the best way to accelerate development. The SDK handles the und
 Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 Below are sample snippets that demonstrate how to call the health‑check endpoint with the most common SDKs.
-
-#### C# Example
-
-```csharp
-using Aspose.Cells.Cloud.SDK.Api;
-using Aspose.Cells.Cloud.SDK.Client;
-using Aspose.Cells.Cloud.SDK.Model;
-
-var config = new Configuration
-{
-    ClientId = "<your-client-id>",
-    ClientSecret = "<your-client-secret>",
-    BaseUrl = "https://api.aspose.cloud"
-};
-
-var apiInstance = new CellsApi(config);
-try
-{
-    // Call the health‑check endpoint
-    var response = apiInstance.CheckCloudServiceHealth(detail: true);
-    Console.WriteLine($"Status: {response.Status}");
-    Console.WriteLine($"Timestamp: {response.Timestamp}");
-}
-catch (Exception e)
-{
-    Console.WriteLine("Exception when calling CellsApi.CheckCloudServiceHealth: " + e.Message);
-}
-```
-
-*Replace `<your-client-id>` and `<your-client-secret>` with the credentials obtained from the Aspose Cloud Dashboard.*
-
-> **Accessibility note:** The language selector on the documentation site uses CSS‑based flag icons (`<em class="flag-xx flag-24">`). For screen‑reader users, add an `aria-label` (e.g., `aria-label="English (US)"`) to each flag element to provide descriptive text. This improves WCAG 2.1 AA compliance.

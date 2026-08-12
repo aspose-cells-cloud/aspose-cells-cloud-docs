@@ -16,9 +16,9 @@ Quickly merge Excel files stored in the cloud with other spreadsheets using Aspo
 
 Before calling this operation, ensure you have:
 
-* A valid **JWT access token** (see the authentication guide).  
-* The source workbook and all files to be merged uploaded to your cloud storage.  
-* Appropriate permissions to read from the source folder and write to the target folder.
+- A valid **JWT access token** (see the authentication guide).
+- The source workbook and all files to be merged uploaded to your cloud storage.
+- Appropriate permissions to read from the source folder and write to the target folder.
 
 ### Web API
 
@@ -46,12 +46,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | region            | String  | Query                      | _(Optional)_ Locale/region for date, number, and currency formatting in the output file (e.g., `en-US`, `de-DE`).                    |
 | password          | String  | Query                      | _(Optional)_ Password required to open the source workbook if it is protected.                                                       |
 
-**Sample request**
-
-```
-PUT https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/merge/spreadsheet?mergedSpreadsheet=Report1.xlsx,Report2.xlsx&outFormat=XLSX&mergeInOneSheet=true
-```
-
 ### Response
 
 **Status:** `200 OK`
@@ -68,24 +62,23 @@ PUT https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/merge/spreadsheet?merged
 ]
 ```
 
+The file can be downloaded directly from or saved to the location specified by `outPath`.
+
+**Success response details**
+
+| Status Code | Content‑Type               | Description                                |
+| ----------- | -------------------------- | ------------------------------------------ |
+| 200 OK      | `application/octet-stream` | Binary stream of the merged workbook file. |
+
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-
-**Error code details**
-
-| Code | Meaning                     | Possible Cause                               | Recommended Remediation                                   |
-|------|----------------------------|----------------------------------------------|-----------------------------------------------------------|
-| 400  | Bad Request                | Missing or malformed parameters              | Verify all required query/path parameters are present.   |
-| 401  | Unauthorized               | Invalid/expired OAuth token                   | Refresh the token and ensure correct client credentials. |
-| 404  | Not Found                  | File not found in the specified storage       | Check the `name`, `folder`, and `storageName` values.     |
-| 500  | Internal Server Error      | Unexpected processing error on the server     | Retry later; contact Aspose support if the issue persists.|
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## Where should we use the Merge Remote Spreadsheet API?
 
@@ -126,7 +119,33 @@ PUT https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/merge/spreadsheet?merged
 
 The <a href="https://reference.aspose.cloud/cells/#/DataProcessingController/MergeRemoteSpreadsheet" target="_blank" rel="noopener noreferrer">Merge Remote Spreadsheet API Specification</a> describes the REST interface that can be called directly from any HTTP client.
 
-## Excel API SDK
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/merge/spreadsheet?mergedSpreadsheet=Report1.xlsx&outFormat=XLSX&mergeInOneSheet=true" \
+  -H "Authorization: Bearer {access_token}"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

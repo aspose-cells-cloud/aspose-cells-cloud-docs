@@ -10,8 +10,7 @@ description: "Convert a local Excel table to a PDF file quickly using the Aspose
 weight: 100
 ---
 
-Export table data from a local Excel file to a PDF file using the Cloud API.  
-**Prerequisite:** Obtain a valid JWT access token by following the authentication guide linked below before invoking the API.
+Export table data from a local Excel file to a PDF file using the Cloud API.
 
 ## **Convert Table to PDF API**
 
@@ -63,13 +62,14 @@ Content-Length: 124578
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## **Where Should You Use the Convert Table to PDF API?**
 
 - **Financial Statements**: Convert balance sheets, income statements (specific tables) to PDF for audit‑ready documentation.
@@ -92,6 +92,35 @@ Content-Length: 124578
 ### Convert Table to PDF API Specification
 
 The [Convert Table to PDF API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertTableToPDF) provides a publicly accessible programming interface for executing REST interactions directly from a web browser.
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/pdf?worksheet=Sheet1&tableName=Table1" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@myWorkbook.xlsx" \
+  -o converted.pdf
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -125,13 +154,3 @@ The following code examples illustrate how to call Aspose.Cells web services usi
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertTableToPDF.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-**cURL example**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/table/pdf?worksheet=Sheet1&tableName=MyTable" \
-     -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
-     -F "Spreadsheet=@/path/to/file.xlsx"
-```
-
-**See also:** Convert Range to PDF, Convert Spreadsheet to PDF, Convert Worksheet to PDF.

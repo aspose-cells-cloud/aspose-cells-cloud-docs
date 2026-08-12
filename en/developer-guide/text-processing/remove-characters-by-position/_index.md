@@ -5,8 +5,8 @@ ArticleTitle: "Excel Position‑Based Character Remover – Delete Text at Speci
 linktitle: "Remove Characters by Position"
 type: docs
 url: /remove-characters-by-position/
-keywords: "Aspose.Cells, Cloud, remove characters, Excel, text processing"
-description: "Delete characters from Excel cells by position using Aspose.Cells Cloud API. Remove first or last N characters, or text before/after markers, with precise control."
+keywords: "Aspose.Cells Cloud, remove characters by position, Excel text cleaning, delete first N characters, delete last N characters, remove text before marker, remove text after marker, between values removal"
+description: "Use Aspose.Cells Cloud Web API to delete characters from Excel cells based on position—remove first/last N characters or text before/after specific markers with high precision."
 weight: 100
 ---
 
@@ -35,12 +35,13 @@ Delete characters from Excel cells by position: remove first/last N characters
 PUT https://api.aspose.cloud/v4.0/cells/content/remove/characters
 ```
 
-**Prerequisites**  
-To call this endpoint you must have a valid JWT access token, an Aspose Cloud storage account, and be using API version v4.0.
-
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### The request parameters of **RemoveCharactersByPosition** API are
 
@@ -73,15 +74,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
-**HTTP Status Codes**
+### Error Codes
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+- **200 OK** – The request succeeded and the processed file is returned.
+- **400 Bad Request**: Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized**: Invalid access token or invalid client ID and secret.
+- **404 Not Found**: The spreadsheet file is not accessible.
+- **500 Server Error**: The spreadsheet encountered an anomaly while obtaining calculation data.
+
 ## Where should we use the Remove Characters by Position API?
 
 - **Data Standardization**: Clean product codes (remove leading zeros or suffixes), phone numbers (strip country codes)
@@ -92,12 +92,12 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ## Why should you use the Remove Characters by Position API?
 
-- **Precise and efficient**: Direct positional deletion eliminates the need for complex regular expressions.  
-- **Flexible configuration**: Five positioning modes plus a case‑sensitivity option cover diverse scenarios.  
-- **Batch processing**: Clean entire columns with a single call, which can improve processing speed in many scenarios.  
-- **Smart parsing**: Easily handle content extraction between two delimiters.  
-- **Developer‑friendly**: Aspose.Cells Cloud provides SDKs for multiple languages, accelerating development and offering comprehensive documentation. Compared with building custom text‑processing logic, this reduces development workload.  
-- **Cost‑effective**: Characters can be removed without first uploading the workbook, which can reduce storage usage.
+- **Precise & Efficient**: Direct positional deletion eliminates the need for complex regular expressions.
+- **Flexible Configuration**: Five positioning modes plus a case‑sensitivity option cover diverse scenarios.
+- **Batch Processing**: Clean entire columns with a single call, boosting efficiency by up to 10×.
+- **Smart Parsing**: Easily handle content extraction between two delimiters.
+- **Developer‑Friendly**: Aspose.Cells Cloud provides SDKs for multiple languages, accelerating development and offering comprehensive documentation. Compared with building custom text‑processing logic, this significantly reduces development workload.
+- **Cost‑Effective**: Characters can be removed without first uploading the workbook, saving storage space and reducing costs.
 
 ## OpenAPI Specification
 

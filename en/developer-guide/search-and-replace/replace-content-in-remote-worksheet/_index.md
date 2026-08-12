@@ -6,7 +6,7 @@ linktitle: "Replace Remote Worksheet Content"
 type: docs
 url: /replace-content-in-remote-worksheet/
 keywords: "Aspose.Cells, replace text, remote worksheet, Excel API, cloud spreadsheet, find and replace, REST API"
-description: "Replace text in a specific worksheet of an Excel file stored in Aspose Cloud. Supports password‑protected workbooks, region‑aware search, bulk updates, and returns operation status for Excel API, cloud find‑replace, and remote worksheet editing."
+description: "Replace text in a specific worksheet of an Excel file stored in Aspose Cloud. Supports password‑protected workbooks, region‑aware search, and bulk updates."
 weight: 100
 ---
 
@@ -23,6 +23,10 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/replace/co
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### **Request Parameters**
 
@@ -53,113 +57,37 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/sales_report.xlsx/worksheets/Sh
 }
 ```
 
-**HTTP Status Codes**
+### **Error Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Description                              | When it occurs                                                   |
+|------|------------------------------------------|------------------------------------------------------------------|
+| 400  | Bad Request                              | The request URI is malformed or required parameters are missing. |
+| 401  | Unauthorized                             | Access token is missing, invalid, or the client credentials are wrong. |
+| 404  | Not Found                                | The specified workbook or worksheet cannot be found.            |
+| 500  | Internal Server Error                    | An unexpected error occurred while processing the request.      |
+
 ## Where should we use the Replace content of Worksheet in Remote Spreadsheet API?
 
-- **Batch Cloud File Update**: Modify the contents of multiple Excel files stored in cloud storage such as AWS S3 and Azure Blob.  
-- **Dynamic population of cloud templates**: Batch‑populate dynamic data for report templates stored in the cloud.  
+- **Batch Cloud File Update**: Modify the contents of multiple Excel files stored in cloud storage such as AWS S3 and Azure Blob.
+- **Dynamic population of cloud templates**: Batch‑populate dynamic data for report templates stored in the cloud.
 - **Cross‑region file synchronization**: Synchronize the content consistency of Excel files in cloud storage across different geographical regions.
 
 ## Why should you use the Replace content of Worksheet in Remote Spreadsheet API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.  
-- **Reduced Labor Costs**: Decreases the need for personnel dedicated to document consolidation.  
-- **Pay‑per‑use**: No upfront investment; you only pay for API calls actually used.  
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.
+- **Reduced Labor Costs**: Decreases the need for personnel dedicated to document consolidation.
+- **Pay‑per‑use**: No upfront investment; you only pay for API calls actually used.
 - **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
 
 ## How to Use the Replace content of Worksheet in Remote Spreadsheet API with SDKs
 
 ### OpenAPI Specification
 
-The <a href="https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceContentInRemoteRange" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Search/ReplaceContentInRemoteRange) defines a publicly accessible programming interface and allows you to carry out REST interactions directly from a web browser.
 
 ### Use Aspose.Cells Cloud SDKs
 
 Using the SDK is the best way to accelerate development. The SDK handles the underlying details, allowing you to simply implement replace content of worksheet in spreadsheets for cells with minimal code.  
-Please check out the <a href="https://github.com/aspose-cells-cloud" target="_blank" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
-Below are concise examples for the most popular languages. Each snippet demonstrates how to invoke the **Replace Content in Remote Worksheet** operation and handle the response status.
-
-**C# (.NET)**  
-
-```csharp
-using Aspose.Cells.Cloud.SDK.Api;
-using Aspose.Cells.Cloud.SDK.Model.Requests;
-
-var apiInstance = new CellsApi("client_id", "client_secret");
-var request = new PutReplaceContentRequest(
-    name: "sales_report.xlsx",
-    worksheet: "Sheet1",
-    searchText: "OldValue",
-    replaceText: "NewValue",
-    folder: "/reports",
-    storageName: null);
-
-var response = apiInstance.PutReplaceContent(request);
-Console.WriteLine($"Status: {response.Status}, Replaced: {response.ReplacedCount}");
-```
-
-**Python**  
-
-```python
-from asposecellscloud import CellsApi, PutReplaceContentRequest
-
-api = CellsApi(client_id="client_id", client_secret="client_secret")
-request = PutReplaceContentRequest(
-    name="sales_report.xlsx",
-    worksheet="Sheet1",
-    searchText="OldValue",
-    replaceText="NewValue",
-    folder="/reports"
-)
-
-response = api.put_replace_content(request)
-print(f"Status: {response.status}, Replaced: {response.replaced_count}")
-```
-
-**Java**  
-
-```java
-import com.aspose.cells.cloud.api.CellsApi;
-import com.aspose.cells.cloud.model.PutReplaceContentRequest;
-
-CellsApi api = new CellsApi("client_id", "client_secret");
-PutReplaceContentRequest request = new PutReplaceContentRequest()
-        .name("sales_report.xlsx")
-        .worksheet("Sheet1")
-        .searchText("OldValue")
-        .replaceText("NewValue")
-        .folder("/reports");
-
-var response = api.putReplaceContent(request);
-System.out.println("Status: " + response.getStatus() + ", Replaced: " + response.getReplacedCount());
-```
-
-**Node.js**  
-
-```javascript
-const { CellsApi, PutReplaceContentRequest } = require('asposecellscloud');
-
-const api = new CellsApi("client_id", "client_secret");
-const request = new PutReplaceContentRequest({
-    name: "sales_report.xlsx",
-    worksheet: "Sheet1",
-    searchText: "OldValue",
-    replaceText: "NewValue",
-    folder: "/reports"
-});
-
-api.putReplaceContent(request).then(response => {
-    console.log(`Status: ${response.body.Status}, Replaced: ${response.body.ReplacedCount}`);
-});
-```
-
-For additional language examples, see the SDK documentation linked above or explore the repository. You can also refer to the related **Replace Content in Remote Range** API for similar operations on cell ranges.
+The following code examples illustrate how to interact with Aspose.Cells web services using various SDKs:

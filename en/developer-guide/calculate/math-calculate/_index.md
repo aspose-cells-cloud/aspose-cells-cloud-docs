@@ -26,15 +26,15 @@ _Perform bulk calculations across entire columns, rows, or tables without writin
 | **Divide**              | /           |
 | **Percentage**          | %           |
 
-### **Security and Authentication**
-
-The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
-
 ## **Math Calculate API**
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/calculate/math
 ```
+
+### **Security and Authentication**
+
+The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
 ### **Request Parameters:**
 
@@ -47,7 +47,6 @@ PUT https://api.aspose.cloud/v4.0/cells/calculate/math
 | range          | String | Query                       | The range of cells to include in the calculation.                                        |
 | region         | String | Query                       | The spreadsheet region setting.                                                          |
 | password       | String | Query                       | The password for opening the spreadsheet file, if protected.                             |
-
 
 ### **Response**
 
@@ -66,13 +65,14 @@ PUT https://api.aspose.cloud/v4.0/cells/calculate/math
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Where should we use the Math Calculate API?
 
 - Finance: add 13% VAT to an entire column of purchase prices.

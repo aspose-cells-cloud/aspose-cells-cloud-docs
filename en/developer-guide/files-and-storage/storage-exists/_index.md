@@ -10,28 +10,16 @@ description: "Verify the existence of a storage container in Aspose.Cells Cloud.
 weight: 100
 ---
 
-## Check Storage Existence (storageExists)
-
+The `storageExists` API checks whether a specified storage exists in the Aspose.Cells cloud service. This functionality is critical for ensuring that all operations dependent on storage can proceed without errors.
 **Summary** – The `storageExists` endpoint lets you confirm whether a specific storage container is available in Aspose.Cells Cloud. Use it before performing file‑related operations to avoid runtime errors.
 
-**Prerequisites** – The request must include a valid JWT access token with the necessary scope for storage operations. Ensure the token is obtained via the standard Aspose.Cells authentication flow before invoking this endpoint.
+## Check Storage Existence (storageExists)
 
 ### Web API
 
 ```
 GET https://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist
 ```
-
-**cURL example**
-
-```bash
-curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist" \
-     -H "Authorization: Bearer {access_token}"
-```
-
-### Function Description
-
-The `storageExists` API checks whether a specified storage exists in the Aspose.Cells cloud service. This functionality is critical for ensuring that all operations dependent on storage can proceed without errors.
 
 ### **Security and Authentication**
 
@@ -43,7 +31,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | -------------- | ------ | -------- | ----------------------------------------------- |
 | storageName    | String | Path     | The name of the storage to check for existence. |
 
-### Response Description
+### **Response**
 
 ```json
 {
@@ -70,7 +58,36 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-**Example response**
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
+## How to Use the storage exists API with SDKs?
+
+### OpenAPI Specification
+
+The <a href="https://reference.aspose.cloud/cells/#/StorageController/StorageExists" rel="nofollow noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface, allowing developers to seamlessly interact with the REST API directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/{storageName}/exist" \
+     -H "Authorization: Bearer {access_token}"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
 
 ```json
 {
@@ -78,20 +95,11 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 }
 ```
 
-**HTTP Status Codes**
+{{< /tab >}}
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
-## OpenAPI Specification
+{{< /tabs >}}
 
-The <a href="https://reference.aspose.cloud/cells/#/StorageController/StorageExists" rel="nofollow noopener noreferrer">OpenAPI Specification</a> defines a publicly accessible programming interface, allowing developers to seamlessly interact with the REST API directly from a web browser.
-
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
 Utilizing an SDK is the most efficient approach to accelerate development. An SDK abstracts low‑level implementation details, enabling developers to concentrate on their project tasks. For a comprehensive list of available Aspose.Cells Cloud SDKs, please visit the <a href="https://github.com/aspose-cells-cloud" rel="nofollow noopener noreferrer">GitHub repository</a>.
 

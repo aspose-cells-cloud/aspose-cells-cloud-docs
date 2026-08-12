@@ -10,6 +10,8 @@ description: "Learn how to move folders in Aspose.Cells Cloud storage via the RE
 weight: 100
 ---
 
+This API moves a folder from one location to another within Aspose.Cells Cloud storage. It helps organize files and manage cloud storage efficiently.
+
 ## **Excel API: Move Folder**
 
 ### Web API
@@ -24,10 +26,6 @@ PUT https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}
 curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/FolderA?destPath=FolderB" \
      -H "Authorization: Bearer {access_token}"
 ```
-
-### **Function Description**
-
-This API moves a folder from one location to another within Aspose.Cells Cloud storage. It helps organize files and manage cloud storage efficiently.
 
 ### **Security and Authentication**
 
@@ -49,45 +47,47 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 - **srcStorageName** – optional. Identifier of the source storage.
 - **destStorageName** – optional. Identifier of the destination storage.
 
-### **Response Description**
+### **Response**
 
 On success the API returns an empty response body with HTTP status **200 OK**. Errors are returned as JSON objects containing an `error` field.
 
-### **Error Handling**
+**HTTP Status Codes**
 
-| HTTP Status | Error Code            | Description                            |
-| ----------- | --------------------- | -------------------------------------- |
-| 400         | `FolderAlreadyExists` | Destination folder already exists.     |
-| 400         | `InvalidPath`         | Source or destination path is invalid. |
-| 401         | `Unauthorized`        | Missing or invalid access token.       |
-| 404         | `FolderNotFound`      | Source folder does not exist.          |
-| 500         | `InternalError`       | Unexpected server error.               |
+| HTTP Code | HTTP Status           | Description                                                       |
+| --------- | --------------------- | ----------------------------------------------------------------- |
+| 200       | OK                    | Web API called successfully; response contains operation details. |
+| 400       | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401       | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413       | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500       | Internal Server Error | Unexpected server error.                                          |
 
 ## OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FolderController/MoveFolder) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
 
-## Excel API SDK
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
 
-Using an SDK is the best way to speed up development. An SDK abstracts low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
 
-**C# example**
+{{< tab tabNum="11" >}}
 
-```csharp
-using Aspose.Cells.Cloud.SDK.Api;
-using Aspose.Cells.Cloud.SDK.Model;
-
-var apiInstance = new FolderApi();
-var srcPath = "FolderA";
-var destPath = "FolderB";
-
-try
-{
-    apiInstance.MoveFolder(srcPath, destPath);
-    Console.WriteLine("Folder moved successfully.");
-}
-catch (Exception e)
-{
-    Console.WriteLine("Exception when calling FolderApi.MoveFolder: " + e.Message);
-}
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/storage/folder/move/{srcPath}?destPath={destPath}" \
+     -H "Authorization: Bearer {access_token}"
 ```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```json
+{}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+Using an SDK is the best way to speed up the development. An SDK takes care of low‑level details and lets you focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
+
+The following code examples demonstrate how to make calls to Aspose.Cells web services using various SDKs:

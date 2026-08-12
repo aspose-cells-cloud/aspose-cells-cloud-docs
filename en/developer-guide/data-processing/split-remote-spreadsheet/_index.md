@@ -20,16 +20,6 @@ Divide a large Excel workbook stored in the cloud into separate files by workshe
 PUT https://api.aspose.cloud/v4.0/cells/{name}/split/spreadsheet
 ```
 
-*Note: The API endpoint requires HTTPS; using HTTP will result in a failed request.*
-
-#### Sample cURL Request
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/Report.xlsx/split/spreadsheet?folder=Input&outFormat=PDF&from=0&to=2" \
-     -H "Authorization: Bearer {access_token}" \
-     -H "Accept: application/json"
-```
-
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
@@ -65,51 +55,42 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
-Each object in the response array represents a split file. Typical fields include:
+The file can be downloaded directly from or saved to the location specified by `outPath`.
 
-```json
-{
-  "Name": "Report_Part1.pdf",
-  "Link": "https://mycloudstorage.com/output/Report_Part1.pdf",
-  "Size": 124567
-}
-```
+**Success response details**
 
-### Success Status‑Code Table
-
-| Code | Description                               |
-| ---- | ------------------------------------------ |
-| 200  | OK – The split operation completed successfully and the list of generated files is returned. |
-| 202  | Accepted – The request has been accepted for processing (asynchronous execution). |
-| 206  | Partial Content – Some worksheets were processed; others failed. |
+| Status Code | Content‑Type               | Description                                |
+| ----------- | -------------------------- | ------------------------------------------ |
+| 200 OK      | `application/octet-stream` | Binary stream of the merged workbook file. |
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Where should we use the Split Remote Spreadsheet API?
 
-- **Department Data Distribution**: Split a unified workbook containing data from multiple departments into department‑specific files.  
-- **Regional Report Distribution**: Split national sales statements into separate regional reporting files by region.  
-- **Customer Data Masking Distribution**: Split a workbook containing sensitive information into a dedicated customer‑view file.  
-- **Periodic Report Splitting**: Automatically split summary reports into weekly or daily reports on a monthly basis.  
-- **Multi‑Format Distribution**: Split a single Excel file into multiple format versions such as PDF, CSV, JSON, etc., at the same time.  
-- **Templated Splitting**: Split data files into standardized output files based on predefined templates.  
-- **Data Source Preprocessing**: Split the Excel file into a standardized CSV file before loading the data into the database.  
-- **API Data Preparation**: Split large datasets into smaller chunks suitable for API transfer.  
+- **Department Data Distribution**: Split a unified workbook containing data from multiple departments into department‑specific files.
+- **Regional Report Distribution**: Split national sales statements into separate regional reporting files by region.
+- **Customer Data Masking Distribution**: Split a workbook containing sensitive information into a dedicated customer‑view file.
+- **Periodic Report Splitting**: Automatically split summary reports into weekly or daily reports on a monthly basis.
+- **Multi‑Format Distribution**: Split a single Excel file into multiple format versions such as PDF, CSV, JSON, etc., at the same time.
+- **Templated Splitting**: Split data files into standardized output files based on predefined templates.
+- **Data Source Preprocessing**: Split the Excel file into a standardized CSV file before loading the data into the database.
+- **API Data Preparation**: Split large datasets into smaller chunks suitable for API transfer.
 - **Microservices Data Distribution**: Split the central data file into separate data files required by each microservice.
 
 ## Why should you use the Split Remote Spreadsheet API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart‑rendering solutions, this significantly reduces the development workload.  
-- **Reduced Labor Costs**: Decreases the need for positions dedicated to document consolidation.  
-- **Pay‑per‑use**: No upfront investment; you only pay for API calls actually used.  
-- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.  
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart‑rendering solutions, this significantly reduces the development workload.
+- **Reduced Labor Costs**: Decreases the need for positions dedicated to document consolidation.
+- **Pay‑per‑use**: No upfront investment; you only pay for API calls actually used.
+- **Zero Maintenance Costs**: No need to maintain servers, update software, or deal with compatibility issues.
 - **Preserves complex Excel formatting** in universally accessible PDF format.
 
 ## How to Use the Split Remote Spreadsheet API with SDKs
@@ -117,6 +98,35 @@ Each object in the response array represents a split file. Typical fields includ
 ### Split Remote Spreadsheet API Specification
 
 The [Split Remote Spreadsheet API Specification](https://reference.aspose.cloud/cells/#/DataProcessingController/SplitRemoteSpreadsheet) defines a publicly accessible programming interface and enables REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/Report.xlsx/split/spreadsheet?folder=Input&outFormat=PDF&from=0&to=2" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Accept: application/json"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

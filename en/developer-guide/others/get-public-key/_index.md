@@ -60,13 +60,14 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## How to Use the Get public key API with SDKs
 
 ### OpenAPI Specification
@@ -79,79 +80,3 @@ Using the SDK is the best way to accelerate development. The SDK handles the und
 Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 
 Below are concrete examples for the most common languages:
-
-**C#**
-
-```csharp
-using Aspose.Cells.Cloud.SDK.Api;
-using Aspose.Cells.Cloud.SDK.Model.Requests;
-
-// Configure API client
-var config = new Configuration
-{
-    AccessToken = "{access_token}",
-    BasePath = "https://api.aspose.cloud"
-};
-var apiInstance = new CellsApi(config);
-
-// Call GetPublicKey
-var response = apiInstance.GetPublicKey();
-Console.WriteLine($"Public Key: {response.CellsCloudPublicKey.PublicKey}");
-```
-
-**Java**
-
-```java
-import com.aspose.cloud.cells.api.CellsApi;
-import com.aspose.cloud.cells.client.ApiClient;
-import com.aspose.cloud.cells.model.CellsCloudPublicKeyResponse;
-
-public class GetPublicKeyExample {
-    public static void main(String[] args) {
-        ApiClient client = new ApiClient();
-        client.setAccessToken("{access_token}");
-        CellsApi api = new CellsApi(client);
-
-        CellsCloudPublicKeyResponse resp = api.getPublicKey();
-        System.out.println("Public Key: " + resp.getCellsCloudPublicKey().getPublicKey());
-    }
-}
-```
-
-**Python**
-
-```python
-from asposecellscloud import CellsApi, ApiClient, Configuration
-
-configuration = Configuration()
-configuration.access_token = '{access_token}'
-configuration.host = 'https://api.aspose.cloud'
-
-api_client = ApiClient(configuration)
-cells_api = CellsApi(api_client)
-
-response = cells_api.get_public_key()
-print("Public Key:", response.cells_cloud_public_key.public_key)
-```
-
-**Node.js**
-
-```javascript
-const { CellsApi, Configuration } = require('asposecellscloud');
-
-const config = new Configuration({
-    accessToken: '{access_token}',
-    basePath: 'https://api.aspose.cloud'
-});
-const cellsApi = new CellsApi(config);
-
-cellsApi.getPublicKey()
-    .then(response => {
-        console.log('Public Key:', response.cellsCloudPublicKey.publicKey);
-    })
-    .catch(error => {
-        console.error(error);
-    });
-```
-
-For additional language support, refer to the SDK documentation linked in the GitHub repository. You may also explore related APIs such as **[Post Access Token](/post-access-token/)** to programmatically obtain the required OAuth 2.0 token.

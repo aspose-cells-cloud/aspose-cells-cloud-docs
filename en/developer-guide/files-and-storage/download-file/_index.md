@@ -10,6 +10,8 @@ description: "Download Excel, PDF, CSV, and other files from Aspose.Cells Cloud 
 weight: 100
 ---
 
+The **DownloadFile** API enables you to retrieve files stored in Aspose.Cells Cloud storage. The Download File API is essential for accessing Excel spreadsheets, PDFs, CSVs, and other supported formats directly from the cloud.
+
 ## **Excel API: Download File**
 
 ### Web API
@@ -17,12 +19,6 @@ weight: 100
 ```http
 GET https://api.aspose.cloud/v4.0/cells/storage/file/{path}
 ```
-
-**Version** – This documentation refers to API version **v4.0**, which is the latest release at the time of publishing.
-
-### **Function Description**
-
-The **DownloadFile** API enables you to retrieve files stored in Aspose.Cells Cloud storage. The Download File API is essential for accessing Excel spreadsheets, PDFs, CSVs, and other supported formats directly from the cloud.
 
 ### **Security and Authentication**
 
@@ -32,7 +28,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 -H "Authorization: Bearer {access_token}"
 ```
 
-
 ### The request parameters of **DownloadFile** API are
 
 | Parameter Name | Type   | Location (Path / Query) | Description                                                    |
@@ -41,7 +36,29 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | storageName    | String | Query                   | The name of the storage from which the file will be retrieved. |
 | versionId      | String | Query                   | The version identifier of the file to download, if applicable. |
 
-**Sample cURL request**
+### **Response**
+
+The API returns a **binary file stream**. The `Content-Type` header matches the file format (e.g., `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet` for XLSX). No JSON payload is returned.
+
+**HTTP Status Codes**
+
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
+## OpenAPI Specification
+
+The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/DownloadFile) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
 
 ```bash
 curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/file/Example.xlsx?storageName=MyStorage" \
@@ -50,24 +67,15 @@ curl -X GET "https://api.aspose.cloud/v4.0/cells/storage/file/Example.xlsx?stora
      -o Example.xlsx
 ```
 
-### **Response Description**
+{{< /tab >}}
 
-The API returns a **binary file stream**. The `Content-Type` header matches the file format (e.g., `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet` for XLSX). No JSON payload is returned.
+{{< tab tabNum="12" >}}
 
-**Error handling**
+{{< /tab >}}
 
-| HTTP Code | Error Code   | Message                                                  |
-| --------- | ------------ | -------------------------------------------------------- |
-| 400       | BadRequest   | The request is malformed or missing required parameters. |
-| 401       | Unauthorized | Authentication failed – missing or invalid token.        |
-| 404       | FileNotFound | The specified file does not exist in the given storage.  |
-| 500       | ServerError  | An unexpected error occurred on the server.              |
+{{< /tabs >}}
 
-## OpenAPI Specification
-
-The [OpenAPI Specification](https://reference.aspose.cloud/cells/#/FileController/DownloadFile) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
-
-## Excel API SDK
+### Use Aspose.Cells Cloud SDKs
 
 Using an SDK is the best way to speed up development. An SDK handles low‑level details and enables you to focus on your project tasks. Please check out the [GitHub repository](https://github.com/aspose-cells-cloud) for a complete list of Aspose.Cells Cloud SDKs.
 

@@ -14,21 +14,10 @@ Save a cloud spreadsheet or Excel file as a different format in cloud storage.
 
 ## **Save Spreadsheet as API**
 
-The API requires a valid OAuth 2.0 access token. Obtain the token by registering an application in the Aspose Cloud dashboard, then request a token using your client ID and client secret. Include the token in the `Authorization: Bearer {access_token}` header for every request.
-
 ### Web API
 
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/{name}/saveas
-```
-
-**Example with request body and curl**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/saveas?format=pdf&outPath=output.pdf" \
-     -H "Authorization: Bearer {access_token}" \
-     -H "Content-Type: application/json" \
-     -d '{"SaveOptions":{"SaveFormat":"pdf"}}'
 ```
 
 ### **Security and Authentication**
@@ -52,18 +41,18 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **Supported output formats**
 
-| Format | Extension |
-| :----- | :-------- |
-| Xlsx   | .xlsx |
-| Pdf    | .pdf |
-| Csv    | .csv |
-| Html   | .html |
-| Ods    | .ods |
-| Xls    | .xls |
-| Txt    | .txt |
-| Mhtml  | .mhtml |
-| Tiff   | .tiff |
-| Pptx   | .pptx |
+| Format   | Extension                                        |
+| :------- | :----------------------------------------------- |
+| Xlsx     | .xlsx                                            |
+| Pdf      | .pdf                                             |
+| Csv      | .csv                                             |
+| Html     | .html                                            |
+| Ods      | .ods                                             |
+| Xls      | .xls                                             |
+| Txt      | .txt                                             |
+| Mhtml    | .mhtml                                           |
+| Tiff     | .tiff                                            |
+| Pptx     | .pptx                                            |
 | … (more) | See API spec for the full list (over 20 formats) |
 
 ### **Response**
@@ -86,42 +75,43 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Where should you use the Save Spreadsheet API?
 
 ### Enterprise Document Management System
 
-- Automatically save financial reports as PDF archives.  
-- Regularly back up sales data in CSV format.  
+- Automatically save financial reports as PDF archives.
+- Regularly back up sales data in CSV format.
 - Save project plans as read‑only files to prevent accidental changes.
 
 ### Data Integration and ETL Processes
 
-- Export CRM system data and save it as a standard Excel template.  
-- Convert ERP data to CSV for import into other systems.  
+- Export CRM system data and save it as a standard Excel template.
+- Convert ERP data to CSV for import into other systems.
 - Save raw data as JSON for API transmission.
 
 ### Development and Automation Scenarios
 
-- Backend processing for web applications.  
-- Automated report‑generation systems.  
-- Cloud collaboration platforms.  
-- Approval‑process integration.  
+- Backend processing for web applications.
+- Automated report‑generation systems.
+- Cloud collaboration platforms.
+- Approval‑process integration.
 - Data backup and migration.
 
 ## Why should you use the Save Spreadsheet API?
 
-- **Developer‑Friendly** – Provides SDKs for multiple languages with detailed documentation, simplifying integration.  
-- **Labor‑Efficient** – Handles conversion on the server, reducing the need for custom conversion code.  
-- **Usage‑Based Pricing** – Charges only for the API calls performed, without upfront licensing fees.  
-- **No Server Maintenance** – The service runs in the cloud, removing the need to manage conversion infrastructure.  
-- **Extensive Format Support** – Supports conversion among more than 20 spreadsheet formats.  
+- **Developer‑Friendly** – Provides SDKs for multiple languages with detailed documentation, simplifying integration.
+- **Labor‑Efficient** – Handles conversion on the server, reducing the need for custom conversion code.
+- **Usage‑Based Pricing** – Charges only for the API calls performed, without upfront licensing fees.
+- **No Server Maintenance** – The service runs in the cloud, removing the need to manage conversion infrastructure.
+- **Extensive Format Support** – Supports conversion among more than 20 spreadsheet formats.
 - **Data Fidelity** – Preserves layout, formulas, and styling during conversion.
 
 ## How to Use the Save Spreadsheet as API with SDKs?
@@ -129,6 +119,36 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ### Save Spreadsheet as API Specification
 
 The [Save Spreadsheet as API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/SaveSpreadsheetAs) defines a publicly accessible programming interface, allowing you to perform REST interactions directly from a web browser.
+
+**Example with request body and curl**
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/MyWorkbook.xlsx/saveas?format=pdf&outPath=output.pdf" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -d '{"SaveOptions":{"SaveFormat":"pdf"}}'
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "Code": 200,
+  "Status": "OK"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -162,13 +182,3 @@ The following code examples demonstrate how to call Aspose.Cells web services us
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_WorkbookSaveAs.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-### Related Topics
-
-Explore other conversion APIs that may complement your workflow:
-
-- **Convert Spreadsheet to PDF** – Quickly turn Excel files into PDF documents.  
-- **Export Table as CSV** – Extract tabular data for analytics pipelines.  
-- **Convert Spreadsheet to HTML** – Render workbooks directly in web pages.
-
-These links help developers discover additional functionality within the Aspose.Cells Cloud suite.

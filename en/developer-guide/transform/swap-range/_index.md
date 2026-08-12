@@ -5,14 +5,12 @@ ArticleTitle: "Swap/Exchange Data Between Columns, Rows, and Cells in Excel"
 linktitle: "Swap Range"
 type: docs
 url: /swap-range/
-keywords: "Aspose.Cells, Excel, Swap Range, Cloud API, Spreadsheet"
+keywords: "Aspose Cells, Excel API, Swap Range, Cloud Spreadsheet"
 description: "Swap columns, rows or ranges in Excel files with Aspose.Cells Cloud API. Preserve formatting, formulas, and cell references in a single request."
 weight: 100
 ---
 
 Automatically exchange data between any two columns, rows, ranges, or cells in Excel files using Aspose.Cells Cloud API. The Swap Range API enables precise data swapping while preserving all formatting, formulas, and cell references. It supports complex data re‑organization, batch processing, and seamless cloud integration for enterprise workflows.
-
-**Prerequisites:** Before using the Swap Range API you must register for an Aspose Cloud account, obtain a client ID and secret, and generate a JWT access token for authentication.
 
 ## **Swap Range API**
 
@@ -25,6 +23,10 @@ PUT https://api.aspose.cloud/v4.0/cells/swap/range
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### **Request Parameters**
 
@@ -66,15 +68,15 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/swap/range?worksheet1=Sheet1&ra
 - The API returns the modified workbook as a file stream. If `outPath` is specified, the file is also saved to the given cloud storage location.  
 - Mismatched range dimensions will result in a **400 Bad Request** error.
 
-**HTTP Status Codes**
+### Error Codes
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code                 | Description                                                        |
+| -------------------- | ------------------------------------------------------------------ |
+| **400 Bad Request**  | Invalid request URI or mismatched range dimensions.                |
+| **401 Unauthorized** | Invalid or expired access token; client‑id or secret is incorrect. |
+| **404 Not Found**    | The specified spreadsheet file cannot be accessed.                 |
+| **500 Server Error** | An internal error occurred while processing the workbook.          |
+
 ## Where Should We Use the Swap Range API?
 
 - **Financial Model Restructuring** – Re‑organize data blocks (e.g., move Q3 forecast to Q4) while preserving formulas and conditional formatting.

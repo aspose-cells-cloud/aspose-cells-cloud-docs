@@ -5,14 +5,12 @@ ArticleTitle: "Find & Fix Broken Links in Remote Excel Worksheet – Cloud Sprea
 linktitle: "Search Remote Worksheet Broken Links"
 type: docs
 url: /search-broken-links-in-remote-worksheet/
-keywords: "Aspose, Cells, broken links, Excel, API, cloud spreadsheet"
+keywords: "Aspose Cells, broken links, Excel API, cloud spreadsheet, link validation"
 description: "Detect and fix broken external links in Excel worksheets stored in cloud storage. Use the Aspose.Cells Cloud API to scan ranges, return link details, and automate quality checks."
 weight: 100
 ---
 
 ## **Search Broken Links in Remote Worksheet API**
-
-Last updated: July 30 2026
 
 Automatically detect broken links in an Excel worksheet stored in cloud storage. Our API scans specified ranges to locate broken external references, invalid formulas, and missing data sources. Supports remote spreadsheet auditing, automated quality checks, and integration with cloud‑storage providers. RESTful API for enterprise workflow automation.
 
@@ -25,6 +23,10 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/search/bro
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### **Request Parameters:**
 
@@ -69,15 +71,13 @@ The response object is of type **BrokenLinksResponse** and contains:
 
 **Notes**: The API does not paginate results. Up to 10,000 broken links can be returned per request. Rate limit is 100 requests per minute per account.
 
-**HTTP Status Codes**
+### Error Codes
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized** – Invalid or missing access token.
+- **404 Not Found** – The spreadsheet file is not accessible.
+- **500 Server Error** – An anomaly occurred while obtaining calculation data.
+
 ## Where should we use the Search for broken links within the worksheet of Spreadsheet API?
 
 - **Regular Audit of Large Financial Models**: Before releasing monthly or quarterly reports, automatically scan the key calculation areas (such as `Dashboard!B5:K50`) that contain a large amount of external data references to ensure that all links point to valid source files.
@@ -88,8 +88,8 @@ The response object is of type **BrokenLinksResponse** and contains:
 
 - **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces the development workload.
 - **Reduces Labor Costs**: Cuts the need for personnel dedicated to manual document consolidation and link verification.
-- **Cost‑Effective, Pay‑Per‑Use Pricing**: You only pay for the API calls you actually use.
-- **Low Maintenance Requirements**: No servers to maintain, no software updates, and minimal compatibility concerns.
+- **Pay‑per‑Use**: No upfront investment; you only pay for the API calls you actually use.
+- **Zero Maintenance Costs**: No servers to maintain, no software updates, and no compatibility issues to manage.
 - **Preserves Complex Excel Formatting** in universally accessible PDF format.
 
 ## How to Use the Search for broken links within the worksheet of the Spreadsheet API with SDKs

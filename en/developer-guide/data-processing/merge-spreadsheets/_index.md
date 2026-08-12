@@ -35,47 +35,36 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | region          | String  | Query (optional) | Locale for number, date, and currency formatting (e.g., `en-US`, `zh-CN`).                       |
 | password        | String  | Query (optional) | Password for opening a protected spreadsheet.                                                    |
 
-**Example request body (multipart/form‑data)**
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/spreadsheet?outFormat=PDF&mergeInOneSheet=true" \
-  -H "Authorization: Bearer {access_token}" \
-  -F "Spreadsheet=@/path/to/Book1.xlsx" \
-  -F "Spreadsheet=@/path/to/Book2.xlsx"
-```
-
 ### **Response**
 
 ```json
-[
-  {
-    "Name": "ResponseFile",
-    "DataType": {
-      "Identifier": "File",
-      "Reference": "Stream"
-    }
+{
+  "Name": "ResponseFile",
+  "DataType": {
+    "Identifier": "File",
+    "Reference": "Stream"
   }
-]
+}
 ```
 
-The file can be downloaded directly from the `FileUrl` or saved to the location specified by `outPath`.
+The file can be downloaded directly from or saved to the location specified by `outPath`.
 
 **Success response details**
 
-| Status Code | Content‑Type                | Description                                    |
-|-------------|-----------------------------|------------------------------------------------|
-| 200 OK      | `application/octet-stream` | Binary stream of the merged workbook file.     |
-| 202 Accepted| `application/json`          | JSON containing `FileUrl`, `FileName`, etc.   |
+| Status Code | Content‑Type               | Description                                |
+| ----------- | -------------------------- | ------------------------------------------ |
+| 200 OK      | `application/octet-stream` | Binary stream of the merged workbook file. |
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## Where should we use the Merge Spreadsheet API?
 
 ### **Education and Academic Applications**
@@ -109,13 +98,39 @@ The file can be downloaded directly from the `FileUrl` or saved to the location 
 
 The <a href="https://reference.aspose.cloud/cells/#/DataProcessingController/MergeSpreadsheets" rel="noopener noreferrer">OpenAPI Specification</a> provides a machine‑readable description of the API, enabling direct REST interactions.
 
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/merge/spreadsheet?outFormat=PDF&mergeInOneSheet=true" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/Book1.xlsx" \
+  -F "Spreadsheet=@/path/to/Book2.xlsx"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
 ### Use Aspose.Cells Cloud SDKs
 
-Using an SDK abstracts low‑level details, allowing you to merge multiple spreadsheets into a single workbook with minimal code.
-
-> _Example_: Merge multiple spreadsheets into **a** spreadsheet with short code.
-
-Please check the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
+Using the SDK is the fastest way to develop, as it abstracts away low‑level details, allowing you to import data into a spreadsheet worksheet with short code. Please check out the <a href="https://github.com/aspose-cells-cloud" rel="noopener noreferrer">GitHub repository</a> for a complete list of Aspose.Cells Cloud SDKs.
 
 {{<tabs tabTotal="8" tabID="1" tabName1="C#" tabName2="Java" tabName3="PHP" tabName4="Ruby" tabName5="Node.js" tabName6="Python" tabName7="Perl" tabName8="Go" >}}
 {{<tab tabNum="1" >}}
@@ -143,23 +158,3 @@ Please check the <a href="https://github.com/aspose-cells-cloud" rel="noopener n
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_MergeSpreadsheets.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Merge Multiple Excel Files into One Spreadsheet – Aspose.Cells Cloud API",
-  "description": "Combine several local Excel, CSV, or ODS files into a single workbook and convert the result to 30+ formats using Aspose.Cells Cloud.",
-  "url": "https://docs.aspose.cloud/cells/merge-spreadsheets/",
-  "author": {
-    "@type": "Organization",
-    "name": "Aspose"
-  },
-  "keywords": "Aspose.Cells, merge spreadsheets, Excel API, cloud spreadsheet, batch merge, PDF conversion, CSV merge, ODS merge, API reference, SDK",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Aspose"
-  },
-  "datePublished": "2026-07-30"
-}
-</script>

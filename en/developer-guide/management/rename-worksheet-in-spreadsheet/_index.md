@@ -17,12 +17,8 @@ Programmatically rename worksheets in Excel workbooks using Aspose.Cells Cloud A
 ### Web API
 
 ```http
-PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet
+PUT https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet?sourceName={sourceName}&targetName={targetName}&outPath={outPath}&outStorageName={outStorageName}&region={region}&password={password}
 ```
-
-**Prerequisites**  
-- Obtain a valid JWT access token.  
-- Ensure the workbook is uploaded to Aspose Cloud storage or is provided as a file parameter.
 
 **cURL example**
 
@@ -68,13 +64,13 @@ A successful request returns a JSON object with status information and a link to
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
 
 ## Where should we use the Rename Worksheet in Spreadsheet API?
 
@@ -84,10 +80,10 @@ A successful request returns a JSON object with status information and a link to
 
 ## Why should you use the Rename Worksheet in Spreadsheet API?
 
-- **Developer‑Friendly** – Provides SDKs for several languages with comprehensive documentation, simplifying integration compared to building a custom solution.  
-- **Reduced Labor** – Automates worksheet renaming, decreasing manual effort.  
-- **Pay‑per‑Use Model** – Charges only for API calls, eliminating upfront licensing costs.  
-- **No Server Maintenance** – As a cloud service, it removes the need to host and maintain servers or apply software updates.  
+- **Developer‑Friendly** – Provides SDKs for several languages with comprehensive documentation, simplifying integration compared to building a custom solution.
+- **Reduced Labor** – Automates worksheet renaming, decreasing manual effort.
+- **Pay‑per‑Use Model** – Charges only for API calls, eliminating upfront licensing costs.
+- **No Server Maintenance** – As a cloud service, it removes the need to host and maintain servers or apply software updates.
 - **Automation Support** – Facilitates automated document standardization within workflows.
 
 ## How to Use the Rename Worksheet in Spreadsheet API with SDKs
@@ -95,6 +91,36 @@ A successful request returns a JSON object with status information and a link to
 ### OpenAPI Specification
 
 The <a href="https://reference.aspose.cloud/cells/#/ManagementController/RenameWorksheetInSpreadsheet" target="_blank" rel="noopener noreferrer">OpenAPI Specification</a> details a publicly accessible programming interface, allowing for REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/spreadsheet/rename/worksheet?sheetName=Sheet1&destName=NewSheetName" \
+     -H "Authorization: Bearer {access_token}" \
+     -H "Content-Type: application/json" \
+     -F "Spreadsheet=@/path/to/input.xlsx"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+{
+  "type": "FileContentResult",
+  "fileContents": "byte[] (Base64 encoded)",
+  "contentType": "MIME type",
+  "fileDownloadName": "optional file name"
+}
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 

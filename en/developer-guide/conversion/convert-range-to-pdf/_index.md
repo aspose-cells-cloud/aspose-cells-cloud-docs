@@ -16,16 +16,8 @@ Export a range of data from a local Excel file to a [PDF](https://docs.fileforma
 
 ## **Convert Range to PDF API**
 
-### Web API
-
 ```http
 PUT https://api.aspose.cloud/v4.0/cells/convert/range/pdf
-```
-
-```bash
-curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/pdf?worksheet=Sheet1&range=A1:C10" \
-  -H "Authorization: Bearer {access_token}" \
-  -F "Spreadsheet=@/path/to/file.xlsx"
 ```
 
 ### **Security and Authentication**
@@ -59,32 +51,33 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ]
 ```
 
-*Typical response is a binary PDF stream returned as a file download.*
+_Typical response is a binary PDF stream returned as a file download._
 
 **HTTP Status Codes**
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+| Code | Meaning               | Description                                                       |
+| ---- | --------------------- | ----------------------------------------------------------------- |
+| 200  | OK                    | Filter applied successfully; response contains operation details. |
+| 400  | Bad Request           | Missing or invalid parameters (e.g., unsupported file type).      |
+| 401  | Unauthorized          | Invalid or missing JWT token.                                     |
+| 413  | Payload Too Large     | Uploaded file exceeds size limit.                                 |
+| 500  | Internal Server Error | Unexpected server error.                                          |
+
 ## **Where Should You Use the Convert Range to PDF API?**
 
-- **Financial Statements**: Convert balance sheets, income statements (specific ranges) to PDF for audit‑ready documentation.  
-- **Sales Reports**: Transform sales dashboards or commission calculations to distributable PDFs.  
-- **Operational Metrics**: Export KPI tables and performance metrics as formal PDF reports.  
-- **Contractual Data**: Export pricing tables and service‑level agreements from spreadsheets to PDF attachments.  
-- **Audit Trails**: Preserve financial data ranges as uneditable PDF evidence.  
-- **Portfolio Summaries**: Export investment performance ranges as client‑ready PDF statements.  
-- **Quality Control Reports**: Export inspection data ranges to PDF for compliance records.  
-- **Inventory Summaries**: Transform stock‑level tables to PDF for management review.  
+- **Financial Statements**: Convert balance sheets, income statements (specific ranges) to PDF for audit‑ready documentation.
+- **Sales Reports**: Transform sales dashboards or commission calculations to distributable PDFs.
+- **Operational Metrics**: Export KPI tables and performance metrics as formal PDF reports.
+- **Contractual Data**: Export pricing tables and service‑level agreements from spreadsheets to PDF attachments.
+- **Audit Trails**: Preserve financial data ranges as uneditable PDF evidence.
+- **Portfolio Summaries**: Export investment performance ranges as client‑ready PDF statements.
+- **Quality Control Reports**: Export inspection data ranges to PDF for compliance records.
+- **Inventory Summaries**: Transform stock‑level tables to PDF for management review.
 
 ## Why Should You Use the Convert Range to PDF API?
 
-- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development and comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.  
-- **Cost‑Effective**: You can convert range data without first uploading the entire workbook, saving storage space and reducing costs.  
+- **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling rapid development and comprehensive documentation. Compared with building custom chart‑rendering solutions, this significantly reduces development workload.
+- **Cost‑Effective**: You can convert range data without first uploading the entire workbook, saving storage space and reducing costs.
 - **Preserves Complex Excel Formatting** in a universally accessible PDF format.
 
 ## How to Use the Convert Range to PDF API with SDKs?
@@ -92,6 +85,34 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 ### Convert Range to PDF API Specification
 
 The [Convert Range to PDF API Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/Conversion/ConvertRangeToPDF) defines a publicly accessible programming interface and allows you to perform REST interactions directly from a web browser.
+
+You can use the cURL command‑line tool to access Aspose.Cells web services easily. The following example shows how to make calls to the Cloud API with cURL.
+
+{{< tabs tabTotal="2" tabID="11" tabName11="Request" tabName12="Response" >}}
+
+{{< tab tabNum="11" >}}
+
+```bash
+curl -X PUT "https://api.aspose.cloud/v4.0/cells/convert/range/pdf?worksheet=Sheet1&range=A1:C10" \
+  -H "Authorization: Bearer {access_token}" \
+  -F "Spreadsheet=@/path/to/file.xlsx"
+```
+
+{{< /tab >}}
+
+{{< tab tabNum="12" >}}
+
+```
+HTTP/1.1 200 OK
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="result.pdf"
+Content-Length: 8423
+
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
 
 ### Use Aspose.Cells Cloud SDKs
 
@@ -125,5 +146,3 @@ The following code examples demonstrate how to make calls to Aspose.Cells web se
 {{<gist "aspose-cells-cloud-gists" "2b824d4e13644368d12682856aa49185" "Example40_ConvertRangeToPDF.go" >}}
 {{</tab>}}
 {{< /tabs >}}
-
-**See also**: [Convert Worksheet to PDF](/convert-worksheet-to-pdf/), [Export Range as Image](/export-range-to-image/), [Convert Spreadsheet to PDF](/convert-spreadsheet-to-pdf/).

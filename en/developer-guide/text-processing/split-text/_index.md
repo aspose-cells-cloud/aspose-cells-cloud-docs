@@ -37,11 +37,15 @@ POST https://api.aspose.cloud/v4.0/cells/content/split/text
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
+```bash
+-H "Authorization: Bearer {access_token}"
+```
+
 ### The request parameters of **splitText** API are
 
 | Parameter Name                 | Type    | Location | Required? | Default        | Description                                                                                                                                         |
 | ------------------------------ | ------- | -------- | --------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| spreadsheet                    | File    | FormData | Yes       | —              | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                            |
+| spreadsheet                    | File    | FormData | Yes       | —              | The spreadsheet file to be processed. Supported formats include XLSX, XLS, ODS, CSV, etc.                                                           |
 | delimiters                     | String  | Query    | No        | —              | One or more delimiter characters used to split text within cells (e.g., `","`, `";"`, `Space`, `LineBreak`, `Tab`, `Pipe`, `Custom`).               |
 | keepDelimitersInResultingCells | Boolean | Query    | No        | false          | When `true`, the delimiter characters are retained in the resulting split cells.                                                                    |
 | keepDelimitersPosition         | String  | Query    | No        | None           | Where to retain delimiters if `keepDelimitersInResultingCells` is `true`. Options: `None`, `AtTheBeginning`, `AtTheEnd`, `BeforeText`, `AfterText`. |
@@ -56,21 +60,6 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 
 ### **Response**
 
-A successful request returns **200 OK** with a file stream containing the processed workbook.
-
-```json
-{
-  "status": 200,
-  "description": "File stream of the workbook with split text applied.",
-  "content": {
-    "type": "application/octet-stream",
-    "example": "Base64‑encoded binary data representing the updated workbook."
-  }
-}
-```
-
-The generic schema previously shown is retained for reference:
-
 ```json
 [
   {
@@ -83,15 +72,13 @@ The generic schema previously shown is retained for reference:
 ]
 ```
 
-**HTTP Status Codes**
+### Error Codes
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI or malformed parameters.
+- **401 Unauthorized** – Missing or invalid access token (or client‑id/secret).
+- **404 Not Found** – The specified spreadsheet file could not be accessed.
+- **500 Server Error** – The spreadsheet encountered an internal processing anomaly.
+
 ## Where should we use the Split Text API?
 
 ### **CSV & Text File Import Cleanup**

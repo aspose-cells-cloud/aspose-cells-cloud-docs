@@ -57,6 +57,7 @@ The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.
 | 401  | Unauthorized                | Invalid or missing JWT token. |
 | 413  | Payload Too Large           | Uploaded file exceeds size limit. |
 | 500  | Internal Server Error       | Unexpected server error. |
+
 ## How to Use the PutWorksheetFilter API with SDKs
 
 ### PutWorksheetFilter API Specification

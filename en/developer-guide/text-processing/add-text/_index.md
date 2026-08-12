@@ -5,7 +5,7 @@ ArticleTitle: "Bulk Text Insertion for Excel – Add Prefixes, Suffixes & Custom
 linktitle: "AddText"
 type: docs
 url: /add-text/
-keywords: "Aspose.Cells, Add Text API, Excel bulk text, prefix suffix, spreadsheet automation"
+keywords: "Aspose Cells API, add text Excel, bulk text insertion, prefix suffix Excel, spreadsheet text replace, Excel automation, cloud spreadsheet API"
 description: "Insert prefixes, suffixes, or custom labels into many Excel cells in one call with Aspose.Cells Cloud. Choose start, end, before or after any text. Supports range, worksheet, and empty‑cell handling."
 weight: 100
 ---
@@ -45,9 +45,11 @@ PUT https://api.aspose.cloud/v4.0/cells/content/add/text
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
 
-### The request parameters of the **AddText** API are
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
-**Prerequisites**: To call this operation you need a valid Aspose Cloud account, a JWT access token with the **Cells** scope, and the workbook must be stored in a supported format (XLSX, XLS, ODS, CSV, etc.).
+### The request parameters of the **AddText** API are
 
 | Parameter Name | Type    | Path/Query String/HTTPBody | Description                                                                                                                                              | Required |
 | :------------- | :------ | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- |
@@ -86,17 +88,15 @@ curl -X PUT "https://api.aspose.cloud/v4.0/cells/content/add/text?text=Report&po
 ]
 ```
 
-Typical response codes include **200 OK** for a successful operation and **202 Accepted** when the request is queued for processing.
+### Error Codes
 
-**HTTP Status Codes**
+| Code | Description |
+| ---- | ----------- |
+| **400** Bad Request | Invalid Aspose.Cells Cloud API URI or missing required parameters. |
+| **401** Unauthorized | Invalid access token or invalid client ID and secret. |
+| **404** Not Found | The spreadsheet file is not accessible. |
+| **500** Server Error | The spreadsheet encountered an anomaly while obtaining calculation data. |
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
 ## Where should we use the Add Text for Spreadsheet API?
 
 - **Dynamic Report Labeling**: Add dynamic titles, date tags, or notes to automatically generated financial statements and sales reports.
@@ -105,8 +105,6 @@ Typical response codes include **200 OK** for a successful operation and **202
 - **Data Classification Tagging**: Automatically add classification tags or status labels (e.g., “Pending Review”, “Approved”) to data rows based on analysis results.
 - **Data Quality Annotation**: Add notes for problematic data during data cleaning.
 - **Batch Text Formatting**: Uniformly add prefixes or suffixes to product names or client names.
-
-For related operations such as converting or extracting text, see the **[Convert Text](https://docs.aspose.cloud/cells/convert-text/)** and **[Extract Text](https://docs.aspose.cloud/cells/extract-text/)** APIs.
 
 ## Why should you use the Add Text for Spreadsheet API?
 
@@ -123,13 +121,9 @@ For related operations such as converting or extracting text, see the **[Convert
 - **Developer‑Friendly**: Aspose.Cells Cloud offers SDK libraries in multiple languages, enabling quick development and comes with comprehensive documentation. Compared to building custom chart‑rendering solutions, this significantly reduces development workload.
 - **Cost‑Effective**: You can append text in a cell without first uploading the workbook, which saves storage space and reduces costs.
 
-For more API usage patterns, refer to the **[Convert Text](https://docs.aspose.cloud/cells/convert-text/)** and **[Extract Text](https://docs.aspose.cloud/cells/extract-text/)** documentation.
-
 ## OpenAPI Specification
 
 The [OpenAPI Specification](https://reference.aspose.cloud/cells/?urls.primaryName=API+v4#/TextProcessing/AddText) defines a publicly accessible programming interface and lets you carry out REST interactions directly from a web browser.
-
-You can download the full OpenAPI (Swagger) definition as a JSON file [here](https://reference.aspose.cloud/cells/v4.0/swagger.json).
 
 ### Use Aspose.Cells Cloud SDKs
 

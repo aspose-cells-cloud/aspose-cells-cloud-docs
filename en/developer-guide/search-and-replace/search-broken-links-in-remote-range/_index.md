@@ -5,7 +5,7 @@ ArticleTitle: "Find & Fix Broken Links in Remote Excel Range – Cloud Spreadshe
 linktitle: "Search Remote Range Broken Links"
 type: docs
 url: /search-broken-links-in-remote-range/
-keywords: "Aspose Cells, broken links, Excel API, cloud spreadsheet, link checker, external references, range validation"
+keywords: "Aspose, Cells, broken links, API, Excel range, validation, cloud, spreadsheet, external reference, checker"
 description: "Use Aspose.Cells Cloud API to scan a specific Excel range for broken external links, invalid formulas, or missing data sources. Secure, fast, and cloud‑based."
 weight: 100
 ---
@@ -14,10 +14,6 @@ weight: 100
 
 Automatically detect broken links in the range data of Excel files stored in cloud storage. Our API scans specified ranges for broken external references, invalid formulas, and missing data sources. Supports remote spreadsheet auditing, automated quality checks, and integration with cloud storage providers. RESTful API for enterprise workflow automation.
 
-**Prerequisites**  
-Before calling this endpoint, ensure you have a valid JWT access token, the target workbook is uploaded to your configured cloud storage, and you are aware of any applicable API rate limits. The storage name and folder path (if used) must correspond to an existing location in your account.
-
-**Use the Search Broken Links in Remote Range API** to detect broken external references within a specified Excel range.
 
 ### **Web API**
 
@@ -28,6 +24,10 @@ PUT https://api.aspose.cloud/v4.0/cells/{name}/worksheets/{worksheet}/ranges/{ce
 ### **Security and Authentication**
 
 The Aspose.Cells Cloud APIs are secure and require <a href="https://docs.aspose.cloud/total/getting-started/rest-api-overview/authenticating-api-requests/" rel="noopener noreferrer">JWT token-based authentication</a>.
+
+```bash
+-H "Authorization: Bearer {access_token}"
+```
 
 ### Request Parameters
 
@@ -98,15 +98,13 @@ The `BrokenLinks` collection contains objects of type **BrokenLink**. Each objec
 
 **Note**: The API is subject to rate limits. Refer to the [Pricing and Rate Limits](https://www.aspose.cloud/pricing) page for details.
 
-**HTTP Status Codes**
+### Error Codes
 
-| Code | Meaning                     | Description                                      |
-|------|-----------------------------|--------------------------------------------------|
-| 200  | OK                          | Filter applied successfully; response contains operation details. |
-| 400  | Bad Request                 | Missing or invalid parameters (e.g., unsupported file type). |
-| 401  | Unauthorized                | Invalid or missing JWT token. |
-| 413  | Payload Too Large           | Uploaded file exceeds size limit. |
-| 500  | Internal Server Error       | Unexpected server error. |
+- **400 Bad Request** – Invalid Aspose.Cells Cloud API URI.
+- **401 Unauthorized** – Invalid access token, client ID, or client secret.
+- **404 Not Found** – The spreadsheet file is not accessible.
+- **500 Server Error** – The spreadsheet encountered an anomaly while obtaining calculation data.
+
 ## Where should we use the Search for broken links within the range of the Spreadsheet API?
 
 - **Regular audit of large financial models** – Before releasing monthly or quarterly reports, automatically scan key calculation areas (e.g., `Dashboard!B5:K50`) that contain many external data references to ensure all links point to valid source files.
