@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Bilder"
 type: docs
 url: /sv/pictures/
-aliases: [/sv/working-with-pictures/]
+aliases: [  /sv/working-with-pictures/ ]
 keywords: "Excel, bild, Aspose.Cells Cloud, REST API, bildhantering, Excel-bilder"
 description: "Lär dig hur du hämtar, lägger till, uppdaterar och raderar bilder i Excel-ark med Aspose.Cells Cloud REST API. Inkluderar kodexempel för C#, Java, Python och mer."
 weight: 100

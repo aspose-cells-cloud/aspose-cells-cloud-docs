@@ -1,7 +1,7 @@
 ---
 title: "Formel für eine Zelle in Excel-Arbeitsblättern festlegen"
 type: docs
-url: /set-formula-for-a-cell-in-excel-worksheets/
+url: /de/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
 keywords: "Excel, Aspose.Cells, REST API, Formel festlegen, Arbeitsblatt, Zelle, Cloud SDK, cURL"
 description: "Erfahren Sie, wie Sie mithilfe der Aspose.Cells Cloud REST API eine Formel für eine bestimmte Zelle in einem Excel-Arbeitsblatt festlegen. Enthält cURL-Beispiel, vollständige Parameterliste, Fehlerbehandlung und SDK-Codebeispiele."

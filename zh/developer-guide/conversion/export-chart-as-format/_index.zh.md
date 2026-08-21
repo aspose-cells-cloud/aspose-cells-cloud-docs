@@ -5,7 +5,7 @@ description: "通过单次 REST 调用，将存储于云端的 Excel 工作簿�
 ArticleTitle: "如何将本地电子表格工作表转换为 PDF 文件：分步指南"
 linktitle: "将工作表转换为 PDF"
 type: docs
-url: /export-chart-as-format/
+url: /zh/export-chart-as-format/
 keywords: "Aspose.Cells Cloud, 导出图表, API, PDF, PNG, SVG, Excel, REST, 云端转换"
 weight: 100
 ---

@@ -1,8 +1,8 @@
 ---
 title: "Удаление всех диаграмм из рабочего листа"
 type: docs
-url: /charts/clear/
-aliases: [/delete-all-charts-from-a-worksheet/]
+url: /ru/charts/clear/
+aliases: [  /ru/delete-all-charts-from-a-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells, Cloud, удаление, все диаграммы, рабочий лист, REST API, DELETE, SDK"
 description: "Узнайте, как удалить все диаграммы из рабочего листа с помощью Aspose.Cells Cloud REST API (v3.0). Включает адрес конечной точки, параметры, пример cURL, фрагменты кода SDK, шаги аутентификации и обработку ошибок."

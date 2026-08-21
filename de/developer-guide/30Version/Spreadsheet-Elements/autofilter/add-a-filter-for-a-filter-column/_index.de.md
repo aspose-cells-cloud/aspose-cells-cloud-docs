@@ -3,8 +3,8 @@ title: "Hinzufügen eines Filters in einem Excel-Arbeitsblatt"
 second_title: "Dokument"
 linktitle: "Filter hinzufügen"
 type: docs
-url: /autofilter/add-filter/
-aliases: [/add-a-filter-for-a-filter-column/]
+url: /de/autofilter/add-filter/
+aliases: [  /de/add-a-filter-for-a-filter-column/ ]
 keywords: "Aspose.Cells, Cloud, Excel, AutoFilter, Filter hinzufügen, REST API, SDK"
 description: "Erfahren Sie, wie Sie mithilfe der Aspose.Cells Cloud REST API einen Auto-Filter für eine Spalte in einem Excel-Arbeitsblatt hinzufügen. Enthält cURL-Beispiele, SDK-Beispiele und eine Parameteranleitung."
 weight: 60

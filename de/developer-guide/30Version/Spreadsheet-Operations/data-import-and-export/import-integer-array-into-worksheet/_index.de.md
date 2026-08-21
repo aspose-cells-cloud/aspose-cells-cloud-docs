@@ -2,7 +2,7 @@
 title: "Ganzzahl-Array in Excel-Arbeitsblatt importieren"
 linktitle: "Ganzzahl-Array importieren"
 type: docs
-url: /import-integer-array-into-excel-worksheet/
+url: /de/import-integer-array-into-excel-worksheet/
 aliases:
   - /import-integer-array-into-excel-worksheet/
   - /import-integer-array-into-worksheet/

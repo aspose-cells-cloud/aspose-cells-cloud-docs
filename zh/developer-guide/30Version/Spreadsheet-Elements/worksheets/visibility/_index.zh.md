@@ -3,7 +3,7 @@ title: "如何操作 Excel 工作表的可见性"
 second_title: "Document"
 linktitle: "可见性"
 type: docs
-url: /worksheets/panes/
+url: /zh/worksheets/panes/
 keywords: "Aspose.Cells Cloud, 隐藏工作表 API, 取消隐藏工作表 API, Excel 工作表可见性, REST API Excel, Aspose.Cells v3.0"
 description: "了解如何通过 Aspose.Cells Cloud REST API 以编程方式隐藏或取消隐藏 Excel 工作表。包含请求 URL、cURL 与 .NET SDK 示例、错误处理及版本特定说明。"
 weight: 20

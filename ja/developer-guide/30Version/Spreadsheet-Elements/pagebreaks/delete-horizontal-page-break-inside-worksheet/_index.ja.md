@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud – 水平改ページの削除（REST API）"
 second_title: "ドキュメント"
 linktitle: "水平改ページの削除"
 type: docs
-url: /page-breaks/delete-horizontal-page-break/
-aliases: [/delete-horizontal-page-break-inside-worksheet/]
+url: /ja/page-breaks/delete-horizontal-page-break/
+aliases: [  /ja/delete-horizontal-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 水平改ページの削除, Excelワークシート, REST API, SDK"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートから水平改ページを削除します。C#、Java、PHP、Ruby、Node.js、Python、Perl、Go 向けの SDK が利用可能です。"
 weight: 50

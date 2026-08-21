@@ -4,7 +4,7 @@ ArticleTitle: "Lägg till Top 10-filter i ett Excel-arbetsblad – Aspose.Cell
 second_title: "Dokument"
 linktitle: "Lägg till top 10-filter"
 type: docs
-url: /autofilter/add-top-10-filter/
+url: /sv/autofilter/add-top-10-filter/
 aliases:
   [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
 keywords: "Aspose.Cells, AutoFilter, Top 10-filter, Excel API"

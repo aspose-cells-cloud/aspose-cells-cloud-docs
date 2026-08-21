@@ -1,8 +1,8 @@
 ---
 title: "การลบหัวเรื่องของแผนภูมิในแผ่นงาน"
 type: docs
-url: /charts/delete-chart-title/
-aliases: [/delete-chart-title-in-a-worksheet/]
+url: /th/charts/delete-chart-title/
+aliases: [  /th/delete-chart-title-in-a-worksheet/ ]
 weight: 150
 keywords: "Aspose.Cells, Cloud API, ลบหัวเรื่องของแผนภูมิ, Excel, REST, SDK"
 description: "เรียนรู้วิธีการลบหัวเรื่องของแผนภูมิออกจากแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 4.0) รวมถึงตัวอย่าง cURL, SDK และการจัดการข้อผิดพลาด"

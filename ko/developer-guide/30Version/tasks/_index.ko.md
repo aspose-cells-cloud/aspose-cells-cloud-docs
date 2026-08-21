@@ -2,8 +2,8 @@
 title: "작업(Task)"
 second_title: "문서"
 type: docs
-url: /tasks/
-aliases: [/working-with-tasks/]
+url: /ko/tasks/
+aliases: [  /ko/working-with-tasks/ ]
 keywords: "Aspose Cells, 클라우드 API, Excel 작업, 변환 작업, ImportData 작업, SmartMarker, SaveResult, REST API, 스프레드시트 자동화"
 description: "Aspose.Cells 클라우드 작업(Task) API의 전체 기능을 탐색하세요: 변환, ImportData, SaveResult, SmartMarker 등. Excel 자동화를 위한 사용법, 파라미터, 코드 예제를 알아보세요."
 weight: 100

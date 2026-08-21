@@ -3,8 +3,8 @@ title: "إظهار الصفوف المخفية في ورقة عمل إكسل"
 second_title: "وثيقة"
 linktitle: "إظهار"
 type: docs
-url: /rows/unhide/
-aliases: [/unhide-rows-in-excel-worksheet/]
+url: /ar/rows/unhide/
+aliases: [  /ar/unhide-rows-in-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, إكسل, إظهار الصفوف, واجهة REST API, جدول بيانات, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
 description: "استخدم واجهة Aspose.Cells Cloud REST API لإظهار الصفوف المخفية في ورقة عمل إكسل. تتوفر الواجهة عبر العديد من حزم التطوير (SDKs) مثل .NET و Java و Python و Node.js و Ruby و Go و PHP و Perl و Swift."
 weight: 50

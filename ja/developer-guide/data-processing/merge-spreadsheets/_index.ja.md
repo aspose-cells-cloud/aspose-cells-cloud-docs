@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "複数のExcelファイルを1つに結合する – 30以上の形式にスプレッドシートを一括統合"
 linktype: "スプレッドシートの統合"
 type: docs
-url: /merge-spreadsheets/
+url: /ja/merge-spreadsheets/
 keywords: "Aspose.Cells, スプレッドシートの統合, Excel API, クラウドスプレッドシート, 一括統合, PDF変換, CSV統合, ODS統合, APIリファレンス, SDK"
 description: "Aspose.Cells Cloud を使用して、ローカルの Excel、CSV、ODS ファイルを複数統合し、結果を 30 以上の形式（PDF、HTML など）に変換します。エンドポイント、パラメータ、認証ガイド、SDK サンプルを含みます。"
 weight: 100

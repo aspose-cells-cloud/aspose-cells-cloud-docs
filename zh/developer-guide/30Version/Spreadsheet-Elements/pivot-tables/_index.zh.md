@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "透视表"
 type: docs
 url: /zh/pivottables/
-aliases: [/zh/working-with-pivot-tables/]
+aliases: [  /zh/working-with-pivot-tables/ ]
 keywords: "Excel, 透视表, Aspose.Cells Cloud, API, 电子表格, 数据分析, REST API"
 description: "全面指南，介绍如何使用 Aspose.Cells Cloud REST API 在 Excel 工作表中创建、获取、更新和删除透视表。包含 SDK 参考、示例调用及版本说明。"
 weight: 100

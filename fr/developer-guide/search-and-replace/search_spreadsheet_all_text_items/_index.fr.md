@@ -4,7 +4,7 @@ ArticleTitle: "Rechercher tous les éléments textuels d'une feuille de calcul �
 second_title: "Document"
 linktitle: "Rechercher tous les éléments textuels d'une feuille de calcul"
 type: docs
-url: /cells/search/content/all-textitems
+url: /fr/cells/search/content/all-textitems
 aliases: []
 keywords: "Aspose.Cells, Recherche, Éléments textuels, API"
 description: "Rechercher tous les éléments textuels dans un fichier de feuille de calcul à l’aide de l’API Aspose.Cells Cloud."

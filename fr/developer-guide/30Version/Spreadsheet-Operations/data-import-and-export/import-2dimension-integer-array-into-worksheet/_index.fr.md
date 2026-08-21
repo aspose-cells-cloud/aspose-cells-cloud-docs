@@ -3,7 +3,7 @@ title: "Importer un tableau d’entiers à 2 dimensions dans une feuille Excel"
 second_title: "Document"
 linktitle: "Importer un tableau d’entiers à 2 dimensions"
 type: docs
-url: /import-a-2D-integer-array-into-excel-worksheet/
+url: /fr/import-a-2D-integer-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-integer-array-into-excel-worksheet/,

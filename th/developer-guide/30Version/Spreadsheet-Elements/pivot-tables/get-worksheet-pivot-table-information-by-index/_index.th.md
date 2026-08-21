@@ -3,8 +3,8 @@ title: "รับข้อมูลตารางไข่ข้าว (Pivot T
 second_title: "เอกสาร"
 linktype: "Get"
 type: docs
-url: "/pivot-tables/get/"
-aliases: [/get-worksheet-pivot-table-information-by-index/]
+url: /th/pivot-tables/get/
+aliases: [  /th/get-worksheet-pivot-table-information-by-index/ ]
 keywords: "Aspose.Cells, pivot table, Excel, REST API, รับข้อมูลตารางไข่ข้าวในแผ่นงาน"
 description: "ดึงข้อมูลตารางไข่ข้าวจากแผ่นงาน Excel ผ่าน Aspose.Cells Cloud REST API รวมถึงไคลเอนต์คำสั่งร้องขอ พารามิเตอร์ การยืนยันตัวตน โครงสร้างคำตอบ การจัดการข้อผิดพลาด และตัวอย่าง SDK"
 weight: 10

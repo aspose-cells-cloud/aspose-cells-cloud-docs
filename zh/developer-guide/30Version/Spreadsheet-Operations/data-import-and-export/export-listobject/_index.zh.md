@@ -3,8 +3,8 @@ title: "导出列表对象"
 second_title: "文档"
 linktitle: "列表对象"
 type: docs
-url: /export-excel-listobject-to-different-formats/
-aliases: [/export/excel-listobject-to-different-formats/]
+url: /zh/export-excel-listobject-to-different-formats/
+aliases: [  /zh/export/excel-listobject-to-different-formats/ ]
 keywords: "导出 ListObject, Excel ListObject, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, XLSX, ODS, PNG, TIFF, SDKs"
 description: "Aspose.Cells Cloud REST API 支持将 Excel ListObjects 导出为多种文件格式。SDK 支持多种编程语言，包括 C#、Java、Python、Node.js、Go、PHP、Ruby、Perl 和 Swift。"
 weight: 20

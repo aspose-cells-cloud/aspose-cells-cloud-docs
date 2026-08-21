@@ -3,8 +3,8 @@ title: "Bir Excel Çalışma Sayfasında bir OLE Nesnesini Güncelleme"
 second_title: "Belge"
 linktitle: "Güncelle"
 type: docs
-url: /oleobjects/update/
-aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
+url: /tr/oleobjects/update/
+aliases: [  /tr/update-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "OLE nesnesini güncelle, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında bir OLE nesnesini (resim, grafik vb.) nasıl güncelleyeceğinizi öğrenin. cURL, SDK örnekleri, kimlik doğrulama adımları ve hata işleme içerir."
 weight: 30

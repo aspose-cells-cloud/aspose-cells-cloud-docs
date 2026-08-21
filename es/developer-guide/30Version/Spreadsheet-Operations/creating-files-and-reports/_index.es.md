@@ -2,8 +2,8 @@
 title: "Crear archivos de Excel y generar informes de Excel"
 second_title: "Documento"
 type: docs
-url: /creating-files-and-reports/
-aliases: [/workbook/create/]
+url: /es/creating-files-and-reports/
+aliases: [  /es/workbook/create/ ]
 linktitle: "Crear Excel e informes"
 keywords: "Aspose.Cells Cloud, API de Excel, crear libro, informe de Excel, SmartMarker, plantilla, generación de informes"
 description: "Aprenda a crear libros de Excel vacíos, generar archivos a partir de plantillas y construir informes impulsados por SmartMarker utilizando la API de Aspose.Cells Cloud, con ejemplos de código."

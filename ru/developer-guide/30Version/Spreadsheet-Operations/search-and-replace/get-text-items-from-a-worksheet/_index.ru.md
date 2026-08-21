@@ -3,8 +3,8 @@ title: "Получение текстовых элементов из рабоч
 second_title: "Документ"
 linktitle: "Получение текстовых элементов в рабочем листе"
 type: docs
-url: /worksheets/get-text-items/
-aliases: [/get-text-items-from-a-worksheet/]
+url: /ru/worksheets/get-text-items/
+aliases: [  /ru/get-text-items-from-a-worksheet/ ]
 weight: 20
 keywords: "Aspose.Cells, облачный API, Excel, рабочий лист, текстовые элементы, REST"
 description: "Получение всех текстовых элементов из конкретного рабочего листа файла Excel с использованием облачного API Aspose.Cells REST. Включает примеры cURL, код SDK, шаги аутентификации и схему ответа."

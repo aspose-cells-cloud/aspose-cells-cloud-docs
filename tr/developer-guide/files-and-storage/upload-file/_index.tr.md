@@ -4,7 +4,7 @@ secondtitle: "Belge"
 ArticleTitle: "Aspose.Cells Cloud Dosya Yükleme API’si – Bulutta Dosyaları Hızlı Yükleme İçin Bir Arayüz"
 linktitle: "Dosya Yükle"
 type: docs
-url: /upload-file/
+url: /tr/upload-file/
 keywords: "Aspose.Cells, dosya yükleme, Excel API, bulut depolama, REST API"
 description: "Aspose.Cells Cloud API ile dosya yükleme kılavuzu, istek parametrelerini, HTTP durum kodlarını, hata işleme yöntemlerini ve kod örneklerini kapsar."
 weight: 100

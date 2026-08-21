@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "모든"
 type: docs
 url: /ko/worksheets/get-all/
-aliases: [/get-worksheet-count/]
+aliases: [  /ko/get-worksheet-count/ ]
 keywords: "Aspose.Cells, 클라우드 API, 워크시트 가져오기, Excel, REST, SDK"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 Excel 워크북에 포함된 워크시트 목록을 검색합니다. cURL 예제, SDK 스니펫 및 응답 형식을 포함합니다."
 weight: 10

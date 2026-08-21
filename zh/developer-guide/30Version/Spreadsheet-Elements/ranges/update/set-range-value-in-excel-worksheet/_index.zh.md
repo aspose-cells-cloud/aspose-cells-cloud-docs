@@ -3,8 +3,8 @@ title: "在 Excel 工作表中设置范围值"
 second_title: "文档"
 linktitle: "设置值"
 type: docs
-url: /ranges/update/values/
-aliases: [/set-range-value-in-excel-worksheet/]
+url: /zh/ranges/update/values/
+aliases: [  /zh/set-range-value-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel API, 设置范围值, REST API, 云 SDK, 工作表更新"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）在 Excel 工作簿中设置单元格或范围的值。包含端点、参数、cURL 示例、SDK 代码示例及错误处理。"
 weight: 72

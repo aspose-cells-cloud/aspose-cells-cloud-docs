@@ -3,8 +3,8 @@ title: "Copiar un rango en una hoja de cálculo con opciones de pegado"
 second_title: "Document"
 linktype: "Copiar"
 type: docs
-url: /ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+url: /es/ranges/copy/
+aliases: [  /es/copy-range-in-a-worksheet-with-paste-options/ ]
 keywords: "Aspose.Cells Cloud, API REST, Excel, copiar rango, hoja de cálculo, opciones de pegado"
 description: "Use la API REST de Aspose.Cells Cloud para copiar un rango dentro de una hoja de cálculo de Excel con soporte completo para opciones de pegado. Incluye ejemplos de SDK para múltiples lenguajes de programación."
 weight: 20

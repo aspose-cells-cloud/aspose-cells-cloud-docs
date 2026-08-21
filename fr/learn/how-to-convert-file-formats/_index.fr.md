@@ -2,7 +2,7 @@
 title: "Comment convertir des formats de fichiers de feuilles de calcul avec Aspose.Cells Cloud"
 linktitle: "Comment convertir des formats de fichiers de feuilles de calcul"
 type: docs
-url: /how-to-convert-file-formats
+url: /fr/how-to-convert-file-formats
 description: "Comment convertir des formats de fichiers avec Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, REST API, feuille de calcul, PDF, CSV, JSON, Markdown, comment convertir des formats de fichiers via Aspose.Cells Cloud

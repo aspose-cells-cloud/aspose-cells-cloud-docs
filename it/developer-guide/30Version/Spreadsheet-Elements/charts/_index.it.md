@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Grafici"
 type: docs
 url: /it/charts/
-aliases: [/it/working-with-charts/]
+aliases: [  /it/working-with-charts/ ]
 keywords: "Aspose, Cells, Excel, grafico, API, REST, Cloud, foglio di calcolo"
 description: "Scopri come gestire i grafici di Excel con l'API Aspose.Cells Cloud. Guide passo-passo, esempi di codice e gestione degli errori per recuperare, aggiungere, aggiornare, eliminare e convertire i grafici in immagini."
 weight: 100

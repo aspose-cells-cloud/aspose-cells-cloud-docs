@@ -3,7 +3,7 @@ title: "Lägg till eller ta bort bakgrundsbild i kalkylblad – Aspose.Cells Clo
 second_title: "Dokument"
 linktitle: "Bakgrund"
 type: docs
-url: /worksheets/background/
+url: /sv/worksheets/background/
 keywords: "Aspose.Cells Cloud, kalkylbladsbakgrund, Excel-API, lägg till bakgrundsbild, ta bort kalkylbladsbakgrund, SDK-exempel"
 description: "Lär dig hur du lägger till eller tar bort en bakgrundsbild i ett Excel-kalkylblad med Aspose.Cells Cloud REST API. Inkluderar begärsyntax, SDK-exempel för Java, .NET, Python, PHP samt felhantering."
 weight: 20

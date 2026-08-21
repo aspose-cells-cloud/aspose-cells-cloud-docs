@@ -3,7 +3,7 @@ title: "การลบการป้องกันการเขียน (�
 second_title: "เอกสาร"
 linktype: "ล้างรหัสผ่านไฟล์ Excel"
 type: docs
-url: /clear-excel-files-password/
+url: /th/clear-excel-files-password/
 aliases:
   [
     "/clear-modify-password-of-excel-workbooks/",

@@ -1,7 +1,7 @@
 ---
 title: "Ställ in cellformel i Excel-arbetsblad"
 type: docs
-url: /set-formula-for-a-cell-in-excel-worksheets/
+url: /sv/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
 keywords: "Excel, Aspose.Cells, REST API, Ställ in formel, Arbetsblad, Cell, Molntjänst, cURL"
 description: "Lär dig hur du ställer in en formel för en specifik cell i ett Excel-arbetsblad med Aspose.Cells Cloud REST API. Innehåller cURL-exempel, fullständig parameterlista, felhantering och SDK-kodexempel."

@@ -3,7 +3,7 @@ title: "Come aggiungere righe a un foglio di lavoro di Excel"
 second_title: "Document"
 linktype: "Add"
 type: docs
-url: /rows/add/
+url: /it/rows/add/
 keywords: "Aspose.Cells, aggiungere righe, API Excel, REST, C#, Java, Python, Node.js"
 description: "Guida passo-passo per aggiungere una singola riga o più righe a un foglio di lavoro di Excel utilizzando l'API REST di Aspose.Cells Cloud, con esempi di codice per C#, Java, Python e Node.js."
 weight: 20

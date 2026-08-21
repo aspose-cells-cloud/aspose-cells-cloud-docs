@@ -3,7 +3,7 @@ title: "Meta Verilerini Güncelleme"
 second_title: "Belge"
 linktitle: "Depolama kullanmadan güncelleme"
 type: docs
-url: /metadata/update/
+url: /tr/metadata/update/
 keywords: "meta veriler, Excel, Aspose.Cells Cloud, REST API, güncelleme, elektronik tablo"
 description: "Aspose.Cells Cloud REST API, Excel dosyalarında meta verileri güncellemenizi sağlar. Birden fazla programlama dilinde (C#, Java, Python, Ruby, Go vb.) sorunsuz entegrasyon için çeşitli SDK’ları (C#, Java, Python, Ruby, Go vb.) destekler."
 weight: 35

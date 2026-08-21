@@ -4,7 +4,7 @@ ArticleTitle: "将表格转换为 CSV – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "将表格转换为 CSV"
 type: docs
-url: /cells/convert/table/csv
+url: /zh/cells/convert/table/csv
 aliases: []
 keywords: "将表格转换为 CSV, Aspose.Cells, 云 API"
 description: "将本地磁盘上电子表格中的表格转换为 CSV 文件。"

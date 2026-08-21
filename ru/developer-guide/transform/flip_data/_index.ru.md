@@ -3,7 +3,7 @@ title: "FlipData"
 ArticleTitle: "FlipData – Aspose.Cells Cloud"
 second_title: "Документ"
 linktype: "docs"
-url: /cells/flip
+url: /ru/cells/flip
 aliases: []
 keywords: "FlipData, Преобразование, Aspose.Cells"
 description: "Транспонирует заданный диапазон данных в файле электронной таблицы."

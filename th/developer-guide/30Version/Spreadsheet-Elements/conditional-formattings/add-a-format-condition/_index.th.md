@@ -1,8 +1,8 @@
 ---
 title: "เพิ่มเงื่อนไขการจัดรูปแบบ"
 type: docs
-url: /conditional-formattings/add-format-condition/
-aliases: [/add-a-format-condition/]
+url: /th/conditional-formattings/add-format-condition/
+aliases: [  /th/add-a-format-condition/ ]
 keywords: "Aspose.Cells Cloud, Conditional Formatting API, เพิ่มเงื่อนไขการจัดรูปแบบ, Excel REST API, Cells API"
 description: "เรียนรู้วิธีเพิ่มเงื่อนไขการจัดรูปแบบให้กับแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 3.0) รวมถึงไวยากรณ์คำขอ พารามิเตอร์ ตัวอย่าง cURL ที่ปลอดภัย และตัวอย่าง SDK"
 ArticleTitle: "เพิ่มเงื่อนไขการจัดรูปแบบ – เอกสารประกอบ Aspose.Cells Cloud API"

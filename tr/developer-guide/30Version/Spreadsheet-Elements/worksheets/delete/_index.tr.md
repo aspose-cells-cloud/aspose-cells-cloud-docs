@@ -3,7 +3,7 @@ title: "Excel çalışma kitabında çalışma sayfalarını silme ile çalışm
 second_title: "Belge"
 linktitle: "Sil"
 type: docs
-url: /worksheets/delete/
+url: /tr/worksheets/delete/
 keywords: "Aspose.Cells, Bulut, REST API, Çalışma Sayfası Sil, Excel, C#, Java, Python"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabından tek veya birden fazla çalışma sayfasını nasıl sileceğinizi öğrenin. C#, Java ve Python örneklerini, önkoşulları, hata ayıklama ipuçlarını ve ilgili işlemleri içerir."
 weight: 20

@@ -3,8 +3,8 @@ title: "Excel dosyasında resim güncelleme"
 second_title: "Belge"
 linktitle: "Güncelle"
 type: docs
-url: /pictures/update/
-aliases: [/update-a-specific-picture-from-excel-workshee/]
+url: /tr/pictures/update/
+aliases: [  /tr/update-a-specific-picture-from-excel-workshee/ ]
 keywords: "Aspose.Cells Cloud, Excel, Resim güncelle, REST API, SDK"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında resim nasıl güncellenir öğrenin. İstek detaylarını, cURL örneğini ve birden fazla dil için SDK snippet'lerini içerir."
 ArticleTitle: "Aspose.Cells Cloud REST API kullanarak Excel dosyasında resim güncelleme"

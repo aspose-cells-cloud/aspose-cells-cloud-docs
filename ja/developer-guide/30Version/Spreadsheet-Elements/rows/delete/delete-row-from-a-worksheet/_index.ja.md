@@ -3,8 +3,8 @@ title: "Excelワークシートから行を削除する"
 second_title: "Document"
 linktitle: "Row"
 type: docs
-url: /rows/delete/row/
-aliases: [/delete-row-from-a-worksheet/]
+url: /ja/rows/delete/row/
+aliases: [  /ja/delete-row-from-a-worksheet/ ]
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシートから特定の行を削除するには、DELETE /worksheets/{sheetName}/cells/rows/{rowIndex} エンドポイントを使用します。cURL コマンド、SDK サンプル、および完全なパラメーターリファレンスを含みます。"
 keywords: "Aspose.Cells, 行の削除, Excel, API, REST, Cloud, SDK"
 weight: 80

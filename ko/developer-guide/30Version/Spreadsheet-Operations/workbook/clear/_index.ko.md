@@ -3,8 +3,8 @@ title: "Excel 파일에서 개체 지우기"
 second_title: "문서"
 linktitle: "지우기"
 type: docs
-url: /clear/
-aliases: [/clearobjects/]
+url: /ko/clear/
+aliases: [  /ko/clearobjects/ ]
 keywords: "Aspose.Cells, Excel, 개체 지우기, REST API, 클라우드 SDK, 주석 삭제, 차트 삭제"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북에서 주석, 차트, 도형 및 기타 개체를 삭제합니다. 여러 SDK를 지원하며 정리된 파일을 Base64 형식으로 반환합니다."
 weight: 39

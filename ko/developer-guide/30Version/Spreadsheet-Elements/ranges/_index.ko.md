@@ -3,8 +3,8 @@ title: "Excel 범위 작업하기"
 second_title: "문서"
 linktype: "범위"
 type: docs
-url: /ranges/
-aliases: [/working-with-ranges/]
+url: /ko/ranges/
+aliases: [  /ko/working-with-ranges/ ]
 keywords: "Aspose.Cells, Excel 범위, REST API, SDK, .NET, Java, Python, 셀 병합, 범위 복사, 범위 값 설정"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 범위를 검색, 수정, 스타일 지정, 병합, 이동 및 복사하는 방법을 배워보세요. .NET, Java, Python 등에 대한 SDK 코드 예제가 포함되어 있습니다."
 weight: 100

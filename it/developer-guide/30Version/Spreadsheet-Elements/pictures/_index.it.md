@@ -4,7 +4,7 @@ second_title: "Documenti"
 linktitle: "Immagini"
 type: docs
 url: /it/pictures/
-aliases: [/it/working-with-pictures/]
+aliases: [  /it/working-with-pictures/ ]
 keywords: "Excel, immagine, Aspose.Cells Cloud, REST API, gestione immagini, immagini Excel"
 description: "Scopri come recuperare, aggiungere, aggiornare ed eliminare le immagini nei fogli di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud. Include esempi di codice per C#, Java, Python e altro ancora."
 weight: 100

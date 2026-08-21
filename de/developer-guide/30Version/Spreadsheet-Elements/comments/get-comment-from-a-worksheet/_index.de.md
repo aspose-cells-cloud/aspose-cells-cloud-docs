@@ -1,8 +1,8 @@
 ---
 title: "Arbeitsblattkommentar abrufen – Aspose.Cells Cloud API-Dokumentation"
 type: docs
-url: /comments/get/
-aliases: [/get-comment-from-a-worksheet/]
+url: /de/comments/get/
+aliases: [  /de/get-comment-from-a-worksheet/ ]
 keywords: "Aspose.Cells, Arbeitsblattkommentar, API, GET, Excel"
 description: "Erfahren Sie, wie Sie einen Arbeitsblattkommentar anhand des Zellnamens mit der Aspose.Cells Cloud API (v3.0) abrufen. Enthält die Anforderungs-URL, Parameter, ein cURL-Beispiel, Antwortdetails und SDK-Codebeispiele."
 weight: 10

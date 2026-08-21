@@ -1,8 +1,8 @@
 ---
 title: "Aggiungi un grafico a un foglio di lavoro"
 type: docs
-url: /charts/add/
-aliases: [/add-a-chart-in-a-worksheet/]
+url: /it/charts/add/
+aliases: [  /it/add-a-chart-in-a-worksheet/ ]
 weight: 20
 description: "Scopri come aggiungere un grafico a un foglio di lavoro Excel utilizzando l'API Aspose.Cells Cloud v3.0. Include endpoint, parametri, esempio cURL e frammenti di codice SDK."
 keywords:

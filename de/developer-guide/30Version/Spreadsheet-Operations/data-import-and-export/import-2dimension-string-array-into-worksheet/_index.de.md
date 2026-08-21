@@ -3,7 +3,7 @@ title: "2D-Zeichenfolgenarray in Excel-Arbeitsblatt importieren"
 second_title: "Dokument"
 linktitle: "2D-Zeichenfolgenarray importieren"
 type: docs
-url: /import-a-2d-string-array-into-excel-worksheet/
+url: /de/import-a-2d-string-array-into-excel-worksheet/
 aliases:
   [
     "/import-2dimension-string-array-into-excel-worksheet/",

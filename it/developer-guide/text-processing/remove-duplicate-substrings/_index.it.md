@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Rimuovi sottotesti duplicati in Excel – Pulisci il testo ripetuto nelle celle"
 linktitle: "Rimuovi i sottotesti duplicati"
 type: docs
-url: /remove-duplicate-substrings/
+url: /it/remove-duplicate-substrings/
 keywords: "Aspose.Cells, sottotesti duplicati, API Excel, pulizia del testo, cloud"
 description: "Rimuovi i sottotesti duplicati dalle celle Excel tramite l'API Aspose.Cells Cloud, preservando la formattazione e la convalida."
 weight: 100

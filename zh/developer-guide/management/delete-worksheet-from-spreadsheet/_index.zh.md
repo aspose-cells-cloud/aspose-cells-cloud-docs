@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何删除 Excel 中的工作表 - 从工作簿中移除工作表"
 linktitle: "从电子表格中删除工作表"
 type: docs
-url: /delete-worksheet-from-spreadsheet/
+url: /zh/delete-worksheet-from-spreadsheet/
 keywords: "Aspose Cells, 删除工作表 API, Excel 工作表移除, 云电子表格, REST API"
 description: "了解如何使用 Aspose.Cells Cloud API 从 Excel 文件中删除工作表。包含端点、参数、示例 cURL 和 SDK 示例。"
 weight: 100

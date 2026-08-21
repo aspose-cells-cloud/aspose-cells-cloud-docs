@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "SDKs de Aspose.Cells Cloud disponibles: C#, Java, PHP, Python, Ruby, Node.js, Go y Perl"
 LinkTitle: "SDKs disponibles"
 type: docs
-url: /available-sdks/
+url: /es/available-sdks/
 description: "Explore los SDKs de Aspose.Cells Cloud para C#, Java, PHP, Python, Ruby, Node.js, Go y Perl. Desarrolle, convierta y analice archivos de Excel en la nube mediante APIs de bajo coste y multiplataforma."
 weight: 30
 keywords: "SDKs de Aspose.Cells Cloud, C#, Java, PHP, Python, Ruby, Node.js, Go, Perl, Excel, API en la nube"

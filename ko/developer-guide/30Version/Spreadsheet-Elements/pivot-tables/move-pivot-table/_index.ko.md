@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: 이동
 type: docs
 url: /ko/pivot-tables/move/
-aliases: [/ko/move-pivot-table/]
+aliases: [  /ko/move-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, 피벗 테이블 이동, 엑셀, REST API, SDK, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크북 내에서 피벗 테이블을 이동하는 방법을 배워보세요. Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift용 SDK가 제공됩니다."
 weight: 120

@@ -3,8 +3,8 @@ title: "Excel dosyaları ile çalışma: Formül Hesaplama, Otomatik Sığdırma
 second_title: "Belge"
 linktitle: "Excel Ortak İşlemler"
 type: docs
-url: /workbook/
-aliases: [/working-with-workbook/]
+url: /tr/workbook/
+aliases: [  /tr/working-with-workbook/ ]
 keywords: "Aspose.Cells, Excel API, çalışma kitabını işleme, formülleri hesapla, otomatik sığdır"
 description: "Aspose.Cells Cloud REST API kullanarak Excel çalışma kitaplarıyla nasıl çalışacağınızı öğrenin. Adım adım kılavuzlar, formül hesaplama, satır/sütunların otomatik sığdırılması, nesnelerin temizlenmesi ve çalışma kitabının meta verilerinin alınması gibi konuları kapsar. Python, .NET, Java ve daha fazlası için SDK'lar."
 weight: 20

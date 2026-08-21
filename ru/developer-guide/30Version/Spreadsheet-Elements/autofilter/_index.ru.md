@@ -3,8 +3,8 @@ title: "Работа с автофильтром Excel"
 second_title: "Документ"
 linktype: "AutoFilter"
 type: docs
-url: /autofilter/
-aliases: [/working-with-autofilter/]
+url: /ru/autofilter/
+aliases: [  /ru/working-with-autofilter/ ]
 keywords: "Автофильтр, Aspose.Cells Cloud, фильтр Excel, цветовой фильтр, фильтр по дате, динамический фильтр, числовой фильтр, текстовый фильтр, фильтр пустых значений, пользовательский фильтр"
 description: "Узнайте, как добавлять, редактировать и удалять автофильтры Excel (цветовой, по дате, динамический, числовой, текстовый, пустых значений) с помощью API Aspose.Cells Cloud. Примеры кода на множестве языков."
 weight: 100

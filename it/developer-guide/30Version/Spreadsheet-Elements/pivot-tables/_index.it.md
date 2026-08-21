@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "PivotTable"
 type: docs
 url: /it/pivottables/
-aliases: [/it/working-with-pivot-tables/]
+aliases: [  /it/working-with-pivot-tables/ ]
 keywords: "Excel, PivotTable, Aspose.Cells Cloud, API, Foglio di calcolo, Analisi dati, API REST"
 description: "Guida completa all'utilizzo delle API REST di Aspose.Cells Cloud per creare, recuperare, aggiornare ed eliminare PivotTable nei fogli di calcolo di Excel. Include riferimenti agli SDK, esempi di chiamate e note sulla versione."
 weight: 100

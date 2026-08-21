@@ -4,8 +4,8 @@ second_title: "เอกสาร"
 linktitle: "คู่มือนักพัฒนา"
 ArticleTitle: "แปลง ผสาน แยก ป้องกัน ค้นหา แทนที่ และแปลงข้อมูล — ทั้งหมดใน Cells Cloud"
 type: docs
-url: /developer‑guide/
-aliases: [/developer‑guide‑v4.0/]
+url: /th/developer‑guide/
+aliases: [  /th/developer‑guide‑v4.0/ ]
 keywords: "Aspose.Cells Cloud, Excel REST API, การแปลงสเปรดชีต, ผสาน, แยก, ป้องกัน, ค้นหาและแทนที่, การแปลงข้อมูล, ตัวอย่าง SDK, Java, .NET, Python, Node.js, PHP, Go, Ruby, Perl"
 description: "คู่มือนักพัฒนาโดยละเอียดสำหรับ REST API ของ Aspose.Cells Cloud ครอบคลุมการแปลงสเปรดชีต การผสาน การแยก การป้องกัน การค้นหาและแทนที่ รวมทั้งการแปลงข้อมูล มีลิงก์ไปยังตัวอย่าง SDK สำหรับ Java, .NET, Python, Node.js, PHP, Go, Ruby และ Perl"
 weight: 20

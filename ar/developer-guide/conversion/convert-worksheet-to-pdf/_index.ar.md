@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيفية تحويل ورقة عمل جدول بيانات محلي إلى ملف PDF: دليل خطوة بخطوة"
 linktype: "تحويل ورقة عمل إلى PDF"
 type: docs
-url: /convert-worksheet-to-pdf/
+url: /ar/convert-worksheet-to-pdf/
 keywords: "Aspose.Cells، Excel إلى PDF، تحويل ورقة العمل، واجهة REST API، التحويل السحابي، PDF جدول البيانات، نقطة نهاية API، إنشاء ملف PDF"
 description: "استخدم واجهة Aspose.Cells Cloud API لتحويل ورقة عمل من ملف Excel محلي إلى مستند PDF بسرعة وأمان."
 weight: 100

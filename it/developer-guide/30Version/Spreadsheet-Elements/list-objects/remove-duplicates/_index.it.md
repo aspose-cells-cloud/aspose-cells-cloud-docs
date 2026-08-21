@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Rimuovi duplicati"
 type: docs
 keywords: "rimuovi duplicati, listobject, API Aspose.Cells Cloud, Excel, REST"
-url: /list-objects/remove-duplicates/
+url: /it/list-objects/remove-duplicates/
 description: "Scopri come eliminare le righe duplicate da un ListObject in un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud. Include endpoint, parametri, autenticazione e esempi di richieste e risposte."
 weight: 20
 ---

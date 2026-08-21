@@ -5,7 +5,7 @@ second_title: "Document"
 linktitle: "Cellules"
 type: docs
 url: /fr/working-with-cells/
-aliases: [/fr/working-with-worksheets/]
+aliases: [  /fr/working-with-worksheets/ ]
 keywords: "Excel, Aspose.Cells, opérations sur les cellules, API de feuilles de calcul, API REST, mise en forme des cellules, fusion de cellules, calcul de formules"
 description: "Découvrez l’API Aspose.Cells Cloud pour effectuer des opérations sur les cellules Excel, notamment définir des valeurs, appliquer des styles, fusionner/défusionner des cellules et calculer des formules."
 weight: 100

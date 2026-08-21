@@ -2,7 +2,7 @@
 title: "Travail avec les tableaux croisés dynamiques à l’aide de la tâche CellsObjectOperate"
 type: docs
 url: /fr/tasks/cells-object-operate/pivottable/
-aliases: [/fr/working-with-pivot-table-using-cellsobjectoperate-task/]
+aliases: [  /fr/working-with-pivot-table-using-cellsobjectoperate-task/ ]
 keywords: "API tableau croisé dynamique Aspose Cells, CellsObjectOperate, API REST Excel"
 description: "Découvrez comment générer un tableau croisé dynamique dans Excel à l’aide de la tâche CellsObjectOperate d’Aspose.Cells Cloud. Inclut un exemple cURL, un guide des paramètres et des références aux SDK."
 weight: 10

@@ -4,7 +4,7 @@ ArticleTitle: "Importa dati JSON in un foglio di calcolo – Aspose.Cells Cloud 
 second_title: "Documento"
 linktitle: "Importa dati JSON in un foglio di calcolo"
 type: docs
-url: /cells/import/data/json
+url: /it/cells/import/data/json
 aliases: []
 keywords: "Importa JSON, Aspose.Cells, Foglio di calcolo, API"
 description: "Importa un file di dati JSON in un foglio di calcolo locale."

@@ -4,7 +4,7 @@ secondtitle: "Belge"
 articletitle: "Uzaktaki Excel Aralığında Bozuk Bağlantıları Bul ve Düzelt – Bulut Tabanlı Elektronik Tablo Bağlantı Denetleyicisi"
 linktitle: "Uzak Aralıktaki Bozuk Bağlantıları Ara"
 type: docs
-url: /search-broken-links-in-remote-range/
+url: /tr/search-broken-links-in-remote-range/
 keywords: "Aspose, Cells, bozuk bağlantılar, API, Excel aralığı, doğrulama, bulut, elektronik tablo, dış referans, denetleyici"
 description: "Aspose.Cells Cloud API’sini kullanarak belirli bir Excel aralığında bozuk dış bağlantıları, geçersiz formülleri veya eksik veri kaynaklarını tarayın. Güvenli, hızlı ve bulut tabanlı."
 weight: 100

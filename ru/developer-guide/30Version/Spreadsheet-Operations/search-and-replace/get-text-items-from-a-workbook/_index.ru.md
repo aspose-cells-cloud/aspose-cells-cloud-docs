@@ -3,8 +3,8 @@ title: "Получение текстовых элементов из книги
 ArticleTitle: "Получение текстовых элементов из книги Excel с помощью API Aspose.Cells Cloud"
 second_title: "Документ"
 linktype: "docs"
-url: /workbook/get-text-items/
-aliases: [/get-text-items-from-a-workbook/]
+url: /ru/workbook/get-text-items/
+aliases: [  /ru/get-text-items-from-a-workbook/ ]
 weight: 10
 keywords: "Excel, Aspose.Cells Cloud, REST API, Таблица, Получение текстовых элементов, Книга"
 description: "Получение текстовых элементов из книги Excel с помощью REST API Aspose.Cells Cloud. Доступно через SDK для C#, Java, Python, PHP, Ruby, Go, Node.js, Perl и Swift."

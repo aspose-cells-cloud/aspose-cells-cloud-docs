@@ -4,7 +4,7 @@ second_title: "Excel保護開発者ガイド"
 ArticleTitle: "Excelパスワード保護ツール – 開くパスワードと変更パスワードを設定 – スプレッドシートを安全に保護"
 linktitle: "スプレッドシートの保護"
 type: docs
-url: /protect-spreadsheet/
+url: /ja/protect-spreadsheet/
 keywords: "Aspose.Cells, Excelパスワード保護, API, 開くパスワード, 変更パスワード, クラウドストレージ, スプレッドシートセキュリティ"
 description: "Aspose.Cells Cloud を使用して Excel ファイルをプログラムで安全に保護します。1回の API コールで開くパスワードと変更パスワードの両方を設定できます。.xlsx、.xls、およびクラウドストレージをサポートしています。無料で試してみてください。"
 weight: 100

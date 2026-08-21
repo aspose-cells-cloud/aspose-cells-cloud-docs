@@ -3,8 +3,8 @@ title: "Exportera ett arbetsbladsområde till PNG, PDF, CSV – Aspose.Cells Clo
 second_title: "Dokument"
 linktitle: "Område"
 type: docs
-url: /worksheets/area-to-different-formats/
-aliases: [/get-worksheet-for-area/]
+url: /sv/worksheets/area-to-different-formats/
+aliases: [  /sv/get-worksheet-for-area/ ]
 keywords: "Aspose.Cells, exportera arbetsbladsområde, PNG, PDF, CSV, Excel-konvertering, REST API, SDK"
 description: "Lär dig hur du exporterar ett specifikt cellområde från ett Excel-arbetsblad till PNG, PDF, CSV och över 20 andra format med Aspose.Cells Cloud REST API eller SDK:er (C#, Java, Python, …)."
 weight: 230

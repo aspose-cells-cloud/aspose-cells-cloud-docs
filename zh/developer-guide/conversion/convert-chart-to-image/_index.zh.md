@@ -4,7 +4,7 @@ second_title: "文档"
 articleTitle: "如何将电子表格图表转换为图像：分步指南"
 linktitle: "将图表转换为图像"
 type: docs
-url: /convert-chart-to-image/
+url: /zh/convert-chart-to-image/
 keywords: "将图表转换为图像, Aspose.Cells, Excel 图表导出, PNG, SVG, JPEG, BMP, TIFF"
 description: "使用 Aspose.Cells Cloud Web API，直接从电子表格文件将 Excel 图表转换为 PNG、SVG、TIFF、JPEG 或 BMP 图像。"
 weight: 100

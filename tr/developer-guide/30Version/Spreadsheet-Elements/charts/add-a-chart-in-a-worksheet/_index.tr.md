@@ -1,8 +1,8 @@
 ---
 title: "Çalışma Sayfasına Bir Grafik Ekleyin"
 type: docs
-url: /charts/add/
-aliases: [/add-a-chart-in-a-worksheet/]
+url: /tr/charts/add/
+aliases: [  /tr/add-a-chart-in-a-worksheet/ ]
 weight: 20
 description: "Aspose.Cells Cloud API v3.0 kullanarak bir Excel çalışma sayfasına grafik nasıl ekleneğini öğrenin. Endpoint, parametreler, cURL örneği ve SDK kod parçacıklarını içerir."
 keywords:

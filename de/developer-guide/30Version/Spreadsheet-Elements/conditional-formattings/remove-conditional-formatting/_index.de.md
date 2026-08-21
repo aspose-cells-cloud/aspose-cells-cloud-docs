@@ -1,7 +1,7 @@
 ---
 title: "Bedingte Formatierung löschen – Aspose.Cells Cloud API Referenz"
 type: docs
-url: /conditional-formattings/delete/
+url: /de/conditional-formattings/delete/
 aliases:
   - /remove-conditional-formatting/
 keywords: "Aspose.Cells, Bedingte Formatierung, Löschen, API, Excel, Cloud"

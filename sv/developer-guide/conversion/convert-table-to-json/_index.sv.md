@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man konverterar lokalt kalkylbladstabelldata till en JSON-fil: Steg-för-steg-guide"
 linktitle: "Konvertera tabell till JSON"
 type: docs
-url: /convert-table-to-json/
+url: /sv/convert-table-to-json/
 keywords: "Excel, API, JSON, konvertering, moln, fil, kalkylark"
 description: "Använd Aspose.Cells Cloud API för att omvandla en lokal Excel-tabell till en JSON-fil med ett enda PUT-anrop. Inkluderar cURL-exempel, parametrar och SDK-utdrag för C#, Java, Python och mer."
 weight: 100

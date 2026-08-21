@@ -3,8 +3,8 @@ title: "Calculer une formule dans une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Calculer"
 type: docs
-url: /worksheets/calculate-formula/
-aliases: [/calculate-formula-in-a-worksheet/]
+url: /fr/worksheets/calculate-formula/
+aliases: [  /fr/calculate-formula-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, calcul de formule, API REST, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
 description: "Calculer les formules dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Prend en charge plusieurs SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift) avec des exemples prêts à l’emploi."
 weight: 20

@@ -3,7 +3,7 @@ title: "Créer un classeur Excel vide"
 second_title: "Document"
 linktitle: "Classeur vide"
 type: docs
-url: /create-an-empty-excel-file/
+url: /fr/create-an-empty-excel-file/
 aliases:
   [
     /create-an-empty-excel-workbook/,

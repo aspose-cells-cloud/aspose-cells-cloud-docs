@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Ajouter"
 type: docs
 url: /fr/list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+aliases: [  /fr/add-a-list-object-or-table-inside-the-worksheet/ , /fr/tables/add/ ]
 keywords: "Aspose.Cells Cloud, API Excel, objet liste, tableau, API REST, feuille de calcul"
 description: "Découvrez comment ajouter un objet liste (tableau Excel) à une feuille de calcul à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’endpoint, les paramètres, les étapes d’authentification, un exemple cURL et des exemples de code SDK."
 weight: 10

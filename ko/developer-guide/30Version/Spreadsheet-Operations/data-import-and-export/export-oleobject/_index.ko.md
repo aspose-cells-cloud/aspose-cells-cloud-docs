@@ -3,8 +3,8 @@ title: "OLE 개체 내보내기 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktitle: "OLE 개체"
 type: docs
-url: /export-excel-ole-object/
-aliases: [/export/excel-ole-object/]
+url: /ko/export-excel-ole-object/
+aliases: [  /ko/export/excel-ole-object/ ]
 keywords: "Aspose.Cells, OLE 개체, 내보내기, Excel, 클라우드 API, PDF, PNG, DOCX, PPTX"
 description: "Aspose.Cells Cloud API를 사용하여 Excel 워크북에서 OLE 개체를 내보냅니다. 요청 형식, 매개변수, 샘플 cURL 및 오류 처리 방법을 확인하세요."
 weight: 20

@@ -3,7 +3,7 @@ title: "ワークブック変換オプション"
 second_title: "Document"
 linktitle: "ワークブック変換オプション"
 type: docs
-url: /convert-workbook-options/
+url: /ja/convert-workbook-options/
 keywords: "Aspose.Cells, ConvertWorkbookOptions, Excel変換, PDF, CSV, API"
 description: "ワークブック変換オプション – Aspose.Cells Cloud APIを使用して、ExcelワークブックをPDF、CSV、HTMLなどに変換する設定を行います。"
 weight: 79

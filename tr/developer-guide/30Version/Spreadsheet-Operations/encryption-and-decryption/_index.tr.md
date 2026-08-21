@@ -4,7 +4,7 @@ second_title: "Belge"
 linktype: "Koruma"
 type: docs
 url: /tr/protect/
-aliases: [/tr/workbook/password/]
+aliases: [  /tr/workbook/password/ ]
 keywords: "Excel, koruma, şifreleme, şifre çözme, dijital imza, Aspose.Cells Cloud, REST API, şifre, güvenlik"
 description: "Aspose.Cells Cloud REST API ile Excel çalışma kitaplarını nasıl koruyacağınıza, şifreleyip şifresini çözeceğinize ve dijital imza ekleyeceğinize ilişkin bilgileri öğrenin – Android, C#, Java, Python ve daha fazlası için kod örnekleri."
 ArticleTitle: "Aspose.Cells Cloud API kullanarak Excel Dosyalarını Şifreleyin, Şifresini Çözün, Dijital Olarak İmzalayın ve Koruyun"

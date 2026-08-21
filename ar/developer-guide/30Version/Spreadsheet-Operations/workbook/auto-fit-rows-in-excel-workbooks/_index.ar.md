@@ -3,8 +3,8 @@ title: "ضبط تلقائي لارتفاعات الصفوف في ملف Excel"
 second_title: "مستند"
 linktitle: "الصفوف"
 type: docs
-url: /autofit-rows-on-an-excel-file/
-aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
+url: /ar/autofit-rows-on-an-excel-file/
+aliases: [  /ar/auto-fit-rows-in-excel-workbooks/ , /ar/workbook/autofit/rows/ ]
 keywords: "ضبط تلقائي للصفوف، ملف Excel، Aspose.Cells Cloud، واجهة برمجة تطبيقات REST"
 description: "تعرّف على كيفية ضبط ارتفاعات الصفوف تلقائيًا في ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يشمل الرابط endpoint، المُعطَلات (Parameters)، مثال cURL، وأجزاء كود SDK بلغات C#، Java، Python، والمزيد."
 weight: 90

@@ -1,7 +1,7 @@
 ---
 title: "Obtenir tous les liens hypertexte – Aspose.Cells Cloud REST API"
 type: docs
-url: /hyperlinks/get-all/
+url: /fr/hyperlinks/get-all/
 aliases:
   [/get-hyperlink-from-excel-worksheet/, /get-hyperlinks-from-excel-worksheet/]
 keywords: "Aspose.Cells, obtenir tous les liens hypertexte, API Excel, API REST, SDK cloud, exemple cURL, liens hypertexte dans des feuilles de calcul"

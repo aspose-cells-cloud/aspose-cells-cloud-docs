@@ -3,8 +3,8 @@ title: "Supprimer une propriété de document spécifique"
 second_title: "Document"
 linktitle: "Supprimer"
 type: docs
-url: /document-properties/delete/
-aliases: [/remove-a-particular-document-property/]
+url: /fr/document-properties/delete/
+aliases: [  /fr/remove-a-particular-document-property/ ]
 keywords: "Aspose.Cells, supprimer une propriété de document, API de métadonnées Excel, REST, SDK cloud, exemple cURL"
 description: "Supprimer une propriété de document spécifique d’un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud v3.0. Inclut des exemples cURL et des exemples de SDK pour C#, Java, Python, et plus encore."
 weight: 50

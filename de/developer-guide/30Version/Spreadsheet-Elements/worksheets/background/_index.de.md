@@ -3,7 +3,7 @@ title: "Hintergrundbild für Arbeitsblatt hinzufügen oder entfernen – Aspose.
 second_title: "Dokument"
 linktitle: "Hintergrund"
 type: docs
-url: /worksheets/background/
+url: /de/worksheets/background/
 keywords: "Aspose.Cells Cloud, Hintergrundbild für Arbeitsblatt, Excel-API, Hintergrundbild hinzufügen, Hintergrundbild entfernen, SDK-Beispiele"
 description: "Erfahren Sie, wie Sie mit der Aspose.Cells Cloud REST-API ein Hintergrundbild für ein Excel-Arbeitsblatt hinzufügen oder entfernen. Enthält Anforderungssyntax, SDK-Beispiele für Java, .NET, Python, PHP sowie Fehlerbehandlung."
 weight: 20

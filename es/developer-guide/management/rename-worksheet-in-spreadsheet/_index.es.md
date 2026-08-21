@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Cómo renombrar hojas en Excel – Cambiar nombres de hojas"
 linktype: "Rename Worksheet in Spreadsheet"
 type: docs
-url: /rename-worksheet-in-spreadsheet/
+url: /es/rename-worksheet-in-spreadsheet/
 keywords: "renombrar hoja de cálculo, Aspose.Cells Cloud, API de Excel, hoja de cálculo, SDK, API REST"
 description: "Renombre fácilmente hojas de cálculo de Excel mediante la API de Aspose.Cells Cloud. Aprenda los parámetros necesarios, vea ejemplos con cURL y obtenga código de SDK para C#, Java, Python y más."
 weight: 100

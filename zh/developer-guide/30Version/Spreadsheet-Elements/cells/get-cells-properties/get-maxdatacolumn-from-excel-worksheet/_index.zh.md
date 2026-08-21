@@ -1,7 +1,7 @@
 ---
 title: "Aspose.Cells Cloud API – 获取 Excel 工作表的最大数据列（v3.0）"
 type: docs
-url: /get-maxdatacolumn-from-excel-worksheet/
+url: /zh/get-maxdatacolumn-from-excel-worksheet/
 weight: 70
 keywords: "Aspose.Cells Cloud、获取 MaxDataColumn、Excel 工作表、REST API、v3.0、SDK"
 description: "使用 Aspose.Cells Cloud REST API（v3.0）获取指定工作表中包含数据的最高列索引。包含请求详情、示例响应和 SDK 示例。"

@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Страницы"
 type: docs
 url: /ru/get-page-count-from-an-excel-file/
-aliases: [/workbook/page-count/, /workbook/get/page-count/]
+aliases: [  /ru/workbook/page-count/ , /ru/workbook/get/page-count/ ]
 keywords: "Aspose.Cells, Cloud API, количество страниц Excel, постраничная разбивка книги"
 description: "Получить общее количество страниц для печати в книге Excel с помощью REST API Aspose.Cells Cloud (версия 3.0). Включает формат запроса, необходимые параметры, пример cURL, схему ответа, обработку ошибок и фрагменты кода SDK для различных языков программирования."
 weight: 10

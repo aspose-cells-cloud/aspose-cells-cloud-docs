@@ -3,7 +3,7 @@ title: "Получить количество страниц для листа E
 second_title: "Документ"
 linktitle: "PageCount"
 type: docs
-url: /worksheets/page-count/
+url: /ru/worksheets/page-count/
 keywords: "Aspose.Cells, Excel API, количество страниц листа, REST, облачный SDK, разбиение Excel на страницы"
 description: "Получите количество печатаемых страниц в листе Excel с помощью REST API Aspose.Cells Cloud (v3.0). Включает формат HTTPS-запроса, шаги аутентификации, пример cURL, полный JSON-ответ, коды состояния и примеры кода SDK."
 weight: 10

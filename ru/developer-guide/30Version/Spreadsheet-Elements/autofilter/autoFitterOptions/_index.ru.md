@@ -3,7 +3,7 @@ title: "AutoFitterOptions — Свойства и руководство по и
 second_title: "Документ"
 linktitle: "AutoFitterOptions"
 type: docs
-url: /auto-fitter-options/
+url: /ru/auto-fitter-options/
 keywords: "AutoFitterOptions, Aspose.Cells, Автоподбор высоты строк в Excel, высота строк, объединённые ячейки, API"
 description: "Узнайте, как управлять автоподбором высоты строк, обработкой объединённых ячеек, скрытыми строками/столбцами, настройками языка и параметрами отображения с помощью объекта AutoFitterOptions в API Aspose.Cells Cloud."
 weight: 79

@@ -3,8 +3,8 @@ title: "Hämta radinformation från ett Excel-ark"
 second_title: "Document"
 linktitle: "Rader"
 type: docs
-url: /rows/get/rows/
-aliases: [/get-row-from-a-worksheet/]
+url: /sv/rows/get/rows/
+aliases: [  /sv/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Get Rows API, Excel-arkrader, REST API, cURL-exempel, SDK-exempel, .NET, Java, Python"
 description: "Lär dig hur du hämtar radinformation från ett Excel-ark med Aspose.Cells Cloud REST API (v3.0). Inkluderar slutpunkt, parametrar, autentisering, cURL- och SDK-kodexempel för C#, Java, Python m.fl."
 weight: 10

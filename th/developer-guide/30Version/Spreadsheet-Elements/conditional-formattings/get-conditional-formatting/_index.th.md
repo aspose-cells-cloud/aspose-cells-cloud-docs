@@ -1,8 +1,8 @@
 ---
 title: "รับรูปแบบการปรับเงื่อนไข"
 type: docs
-url: /conditional-formattings/get/
-aliases: [/get-conditional-formatting/]
+url: /th/conditional-formattings/get/
+aliases: [  /th/get-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, REST API, รูปแบบการปรับเงื่อนไข, Excel, สเปรดชีต"
 description: "ดึงกฎรูปแบบการปรับเงื่อนไขจากชีตงานโดยใช้ Aspose.Cells Cloud REST API"
 weight: 10

@@ -1,8 +1,8 @@
 ---
 title: "Biçim Koşulu Ekle"
 type: docs
-url: /conditional-formattings/add-format-condition/
-aliases: [/add-a-format-condition/]
+url: /tr/conditional-formattings/add-format-condition/
+aliases: [  /tr/add-a-format-condition/ ]
 keywords: "Aspose.Cells Cloud, Koşullu Biçimlendirme API'si, Biçim Koşulu Ekle, Excel REST API, Cells API"
 description: "Aspose.Cells Cloud REST API'sini (v3.0) kullanarak bir Excel çalışma sayfasına nasıl biçim koşulu ekleneceğini öğrenin. İstek sözdizimi, parametreler, güvenli cURL örneği ve SDK kod parçacıklarını içerir."
 ArticleTitle: "Biçim Koşulu Ekle – Aspose.Cells Cloud API Dokümantasyonu"

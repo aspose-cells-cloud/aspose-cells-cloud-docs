@@ -5,7 +5,7 @@ second_title: "Documento"
 type: docs
 linktitle: "Collegamenti ipertestuali"
 url: /it/hyperlinks/
-aliases: [/it/working-with-hyperlinks/, /it/working-with-hyperlink/]
+aliases: [  /it/working-with-hyperlinks/ , /it/working-with-hyperlink/ ]
 keywords: "Excel, collegamenti ipertestuali, Cells.Cloud, API, Aspose.Cells, foglio di calcolo, link, guida"
 description: "Esplora come recuperare, aggiungere, aggiornare ed eliminare i collegamenti ipertestuali in Excel utilizzando l'API di Aspose Cells Cloud."
 weight: 100

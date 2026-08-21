@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Blocca file Excel"
 type: docs
 url: /it/lock-excel-files/
-aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+aliases: [  /it/lock/without-storage/ , /it/lock/ , /it/lock/without-using-storage/ ]
 keywords: "Blocca, Excel, API, Aspose.Cells, Cloud, REST, Workbook, Spreadsheet, SDK"
 description: "Scopri come bloccare cartelle di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include endpoint HTTPS, autenticazione, richiesta cURL, schema di risposta e esempi di codice SDK per C#, Java, Python e altri linguaggi."
 ArticleTitle: "Blocca file Excel – Documentazione API Aspose.Cells Cloud"

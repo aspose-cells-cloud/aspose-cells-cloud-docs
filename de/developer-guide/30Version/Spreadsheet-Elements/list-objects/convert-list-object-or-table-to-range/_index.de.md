@@ -4,7 +4,7 @@ ArticleTitle: "Listobjekt mit Aspose.Cells Cloud API in Bereich konvertieren"
 second_title: "Dokument"
 linktitle: "Konvertierung"
 type: docs
-url: /list-objects/to-range/
+url: /de/list-objects/to-range/
 aliases:
   - /convert-list-object-or-table-to-range/
   - /tables/to-range/

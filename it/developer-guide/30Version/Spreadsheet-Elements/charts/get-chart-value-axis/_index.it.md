@@ -1,7 +1,7 @@
 ---
 title: "Ottenere l'asse dei valori di un grafico"
 type: docs
-url: /charts/value-axis/get/
+url: /it/charts/value-axis/get/
 weight: 60
 keywords: Aspose.Cells, Asse dei valori del grafico, REST API, Excel, Cloud SDK, Ottenere l'asse dei valori di un grafico
 description: "Aspose.Cells Cloud REST API - Recupera l'asse dei valori di un grafico in un foglio di calcolo Excel."

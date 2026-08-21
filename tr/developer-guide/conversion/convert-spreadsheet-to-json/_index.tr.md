@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Yerel Elektronik Tabloyu Aspose.Cells Cloud API Kullanarak JSON'ye Nasıl Dönüştürürüz?"
 linktitle: "Elektronik Tabloyu JSON'ye Dönüştür"
 type: docs
-url: /convert-spreadsheet-to-json/
+url: /tr/convert-spreadsheet-to-json/
 keywords: "Aspose Cells Cloud, Elektronik Tabloyu JSON'ye Dönüştür, Excel'den JSON'ye API, Aspose.Cells Cloud API, REST API, elektronik tablo dönüştürme"
 description: "Aspose.Cells Cloud API ile yerel Excel dosyalarını JSON’a dönüştürmeyi öğrenin. Entegrasyonu sorunsuz gerçekleştirmek için uç nokta, parametreler, örnek kod ve hata yönetimi içerir."
 weight: 100

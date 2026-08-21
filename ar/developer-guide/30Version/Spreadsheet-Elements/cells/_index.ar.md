@@ -4,8 +4,8 @@ ArticleTitle: "العمل مع خلايا إكسل – وثائق Aspose.Cells C
 second_title: "مستند"
 linktitle: "الخلايا"
 type: docs
-url: /working-with-cells/
-aliases: [/working-with-worksheets/]
+url: /ar/working-with-cells/
+aliases: [  /ar/working-with-worksheets/ ]
 keywords: "Excel, Aspose.Cells, عمليات الخلايا, واجهة برمجة تطبيقات الجداول الإلكترونية, واجهة برمجة تطبيقات REST, تنسيق الخلايا, دمج الخلايا, حساب الصيغ"
 description: "استكشف واجهة برمجة تطبيقات Aspose.Cells Cloud لعمليات خلايا إكسل، بما في ذلك تعيين القيم، وتطبيق التنسيقات، ودمج/إلغاء دمج الخلايا، وحساب الصيغ."
 weight: 100

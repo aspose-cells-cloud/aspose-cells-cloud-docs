@@ -3,8 +3,8 @@ title: "Arbeiten mit Excel-Bereichen"
 second_title: "Dokument"
 linktitle: "Bereich"
 type: docs
-url: /ranges/
-aliases: [/working-with-ranges/]
+url: /de/ranges/
+aliases: [  /de/working-with-ranges/ ]
 keywords: "Aspose.Cells, Excel-Bereich, REST-API, SDK, .NET, Java, Python, Zellen zusammenführen, Bereich kopieren, Bereichswert festlegen"
 description: "Erfahren Sie, wie Sie Excel-Bereiche mithilfe der Aspose.Cells Cloud REST API abrufen, ändern, gestalten, zusammenführen, verschieben und kopieren. Enthält SDK-Codebeispiele für .NET, Java, Python und weitere."
 weight: 100

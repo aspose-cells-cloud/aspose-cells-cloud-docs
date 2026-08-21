@@ -1,7 +1,7 @@
 ---
 title: "计算单元格公式 – Aspose.Cells Cloud API"
 type: docs
-url: /calculate-cells-formula/
+url: /zh/calculate-cells-formula/
 weight: 90
 keywords: "Aspose.Cells Cloud, 计算单元格公式, Excel API, REST API, SDK"
 description: "通过 Aspose.Cells Cloud REST API（v3.0）计算 Excel 单元格公式。包含端点、参数、cURL 示例及 SDK 代码片段。"

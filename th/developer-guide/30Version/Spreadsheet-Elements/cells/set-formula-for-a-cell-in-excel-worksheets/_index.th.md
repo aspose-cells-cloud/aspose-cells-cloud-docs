@@ -1,7 +1,7 @@
 ---
 title: "ตั้งค่าสูตรในเซลล์ของสมุดงาน Excel"
 type: docs
-url: /set-formula-for-a-cell-in-excel-worksheets/
+url: /th/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
 keywords: "Excel, Aspose.Cells, REST API, ตั้งค่าสูตร, worksheet, เซลล์, Cloud SDK, cURL"
 description: "เรียนรู้วิธีการตั้งค่าสูตรให้กับเซลล์เฉพาะในสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่าง cURL รายการพารามิเตอร์แบบเต็ม การจัดการข้อผิดพลาด และตัวอย่างโค้ด SDK"

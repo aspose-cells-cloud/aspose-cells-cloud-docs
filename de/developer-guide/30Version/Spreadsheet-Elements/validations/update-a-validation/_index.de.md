@@ -3,7 +3,7 @@ title: "Aktualisieren einer Arbeitsblattvalidierung in einem Excel-Arbeitsblatt"
 second_title: "Dokument"
 linktitle: "Aktualisieren"
 type: docs
-url: /validations/update/
+url: /de/validations/update/
 keywords: "Aspose.Cells Cloud, Excel-Validierung aktualisieren, REST-API, Arbeitsblattvalidierung, Excel-API"
 description: "Wie Sie eine Arbeitsblattvalidierung in einer Excel-Datei mithilfe der Aspose.Cells Cloud REST-API aktualisieren, mit cURL-Beispielen und SDK-Codeausschnitten für mehrere Programmiersprachen."
 weight: 10

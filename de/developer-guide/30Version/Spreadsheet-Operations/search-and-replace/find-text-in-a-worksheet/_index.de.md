@@ -3,8 +3,8 @@ title: "Text in einem Excel-Arbeitsblatt suchen"
 second_title: "Dokument"
 linktitle: "Im Arbeitsblatt suchen"
 type: docs
-url: /worksheets/find-text/
-aliases: [/find-text-in-a-worksheet/]
+url: /de/worksheets/find-text/
+aliases: [  /de/find-text-in-a-worksheet/ ]
 weight: 40
 keywords: "Excel, Aspose.Cells Cloud, REST-API, Text suchen, Arbeitsblatt, Tabellenkalkulation, Suche"
 description: "Verwenden Sie die Aspose.Cells Cloud REST-API, um Text in einem Excel-Arbeitsblatt zu suchen. Die API ist über mehrere SDKs und Programmiersprachen verfügbar."

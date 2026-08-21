@@ -3,8 +3,8 @@ title: "Remplacer du texte dans une feuille de calcul Excel – API Aspose.Cells
 second_title: "Document"
 linktitle: "Remplacer dans la feuille de calcul"
 type: docs
-url: /worksheets/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /fr/worksheets/replace-text/
+aliases: [  /fr/replace-text-in-a-workbook/ ]
 keywords: "Aspose.Cells, remplacement de texte, Excel, API REST, feuille de calcul, classeur"
 description: "Découvrez comment remplacer du texte dans une feuille de calcul Excel à l’aide de l’API Aspose.Cells Cloud (v3.0). Inclut les prérequis, l’authentification, la syntaxe des requêtes, un exemple cURL, des exemples de code SDK, les détails de la réponse et la gestion des erreurs."
 ArticleTitle: "Remplacer du texte dans une feuille de calcul Excel – API Aspose.Cells Cloud"

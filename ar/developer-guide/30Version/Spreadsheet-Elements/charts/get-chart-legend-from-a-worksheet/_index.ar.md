@@ -1,8 +1,8 @@
 ---
 title: "الحصول على أسطورة الرسم البياني من ورقة عمل"
 type: docs
-url: /charts/legend/get/
-aliases: [/get-chart-legend-from-a-worksheet/]
+url: /ar/charts/legend/get/
+aliases: [  /ar/get-chart-legend-from-a-worksheet/ ]
 weight: 80
 keywords: "Aspose.Cells, أسطورة الرسم البياني, واجهة برمجة التطبيقات REST, Excel, SDK السحابي, الحصول على أسطورة الرسم البياني, ورقة العمل, جدول بيانات"
 description: "استرجاع أسطورة الرسم البياني من ورقة عمل محددة في ملف Excel باستخدام واجهة برمجة التطبيقات السحابية Aspose.Cells REST API (الإصدار 3.0). تتضمن عنوان النهاية، المعلمات، مثال cURL، ومقتطفات SDK."

@@ -4,7 +4,7 @@ ArticleTitle: "Tabloyu Böl – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktitle: "Tabloyu Böl"
 type: docs
-url: /cells/split/table
+url: /tr/cells/split/table
 aliases: []
 keywords: "Aspose.Cells, Tabloyu Böl, API"
 description: "Elektronik tablo içindeki bir tabloyu sütun değerlerine göre bölmek için API."

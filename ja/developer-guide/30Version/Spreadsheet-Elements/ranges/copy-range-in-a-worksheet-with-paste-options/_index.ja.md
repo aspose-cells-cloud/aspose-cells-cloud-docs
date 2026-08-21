@@ -3,8 +3,8 @@ title: "ワークシート内の範囲を貼り付けオプション付きでコ
 second_title: "Document"
 linktitle: "Copy"
 type: docs
-url: /ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+url: /ja/ranges/copy/
+aliases: [  /ja/copy-range-in-a-worksheet-with-paste-options/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, 範囲のコピー, ワークシート, 貼り付けオプション"
 description: "Aspose.Cells Cloud REST API を使用して、Excel ワークシート内の範囲を完全な貼り付けオプション対応でコピーします。複数のプログラミング言語向けの SDK サンプルを含みます。"
 weight: 20

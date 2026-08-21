@@ -3,8 +3,8 @@ title: "Zellenstil für Pivot-Tabelle aktualisieren"
 second_title: "Dokument"
 linktitle: Formatierung
 type: docs
-url: /pivot-tables/format/
-aliases: [/update-cell-style-for-pivot-table/]
+url: /de/pivot-tables/format/
+aliases: [  /de/update-cell-style-for-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, Pivot-Tabellenstil, API zum Aktualisieren des Zellenstils, REST API, Excel API, Tabellenformatierung, Cloud SDK, Zellenstil, Pivot-Tabelle"
 description: "Erfahren Sie, wie Sie den Stil einer bestimmten Zelle in einer Aspose.Cells Cloud-Pivot-Tabelle über die REST API aktualisieren. Enthält Endpunkt, Parameter, Authentifizierung, cURL-Beispiel, Go SDK-Code-Snippet und SEO-optimierte Anleitung."
 weight: 90

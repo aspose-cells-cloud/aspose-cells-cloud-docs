@@ -4,7 +4,7 @@ linktitle: "Otras características"
 ArticleTitle: "Otras características: Verificación de estado, Obtener clave pública"
 second_title: "Documento"
 type: docs
-url: /other-features/
+url: /es/other-features/
 keywords: "Aspose.Cells, API en la nube, verificación de estado, clave pública, token de acceso, Excel, REST"
 description: "Explore otras características de Aspose.Cells Cloud: punto final de verificación de estado del servicio, recuperación de clave pública y generación de tokens para asegurar sus integraciones con la API de Excel."
 weight: 180

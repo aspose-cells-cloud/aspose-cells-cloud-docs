@@ -3,8 +3,8 @@ title: "واجهة برمجة تطبيقات Aspose.Cells Cloud – استرجا
 second_title: "الوثيقة"
 linktitle: "استرجاع"
 type: docs
-url: /pictures/get/
-aliases: [/convert-picture-to-image/]
+url: /ar/pictures/get/
+aliases: [  /ar/convert-picture-to-image/ ]
 keywords: "Aspose.Cells, استرجاع صورة, واجهة برمجة تطبيقات, Excel, سحابي, REST"
 description: "استرجاع صورة محددة من ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يشمل النقطة النهائية (endpoint)، المعاملات، خطوات المصادقة، رموز الاستجابة، وأمثلة على الأكواد."
 weight: 10

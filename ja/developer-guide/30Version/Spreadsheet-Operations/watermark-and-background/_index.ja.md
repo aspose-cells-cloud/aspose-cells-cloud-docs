@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "透かしと背景"
 type: docs
 url: /ja/watermark-and-background/
-aliases: [ "/export/excel-chart-to-different-formats/", "/workbook/background/" ]
+aliases: [  /ja/export/excel-chart-to-different-formats/ , /ja/workbook/background/ ]
 keywords: "Aspose.Cells Cloud, Excel, 透かし, 背景, REST API"
 description: "Aspose.Cells Cloud REST API を使用すると、開発者は Excel ワークブックの背景と透かしを追加・削除・管理できます。対応言語には Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby、Swift が含まれます。"
 weight: 20

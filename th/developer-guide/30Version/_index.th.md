@@ -3,8 +3,8 @@ title: "คู่มือนักพัฒนา Aspose.Cells Cloud 3.0"
 ArticleTitle: "คู่มือนักพัฒนา Aspose.Cells Cloud 3.0 REST API – การสร้างสมุดงาน Excel การแปลงรูปแบบ และการจัดรูปแบบ"
 second_title: "เอกสาร"
 type: docs
-url: /developer-guide-3.0/
-aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
+url: /th/developer-guide-3.0/
+aliases: [  /th/developer-guide/v3.0/ , /th/developer-guide-v3.0/ ]
 keywords: "Aspose.Cells Cloud, REST API สำหรับ Excel, การแปลงสมุดงาน, API สำหรับกราฟ, การนำเข้าข้อมูล, การส่งออก, PDF, CSV, JSON, คู่มือนักพัฒนา"
 description: "เรียนรู้วิธีใช้ REST API ของ Aspose.Cells Cloud 3.0 สำหรับการสร้าง แปลง จัดรูปแบบ กราฟ ตาราง และอื่นๆ สำหรับสมุดงาน Excel พร้อมตัวอย่างโค้ดและเคล็ดลับแนวทางปฏิบัติที่ดีที่สุด"
 weight: 150

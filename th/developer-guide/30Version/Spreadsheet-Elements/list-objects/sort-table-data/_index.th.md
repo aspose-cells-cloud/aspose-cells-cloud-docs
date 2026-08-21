@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktitle: "เรียงลำดับ"
 type: docs
 url: /th/list-objects/sort-data/
-aliases: [/th/get-a-list-object-or-table-inside-the-worksheet/, /th/tables/sort-data/]
+aliases: [  /th/get-a-list-object-or-table-inside-the-worksheet/ , /th/tables/sort-data/ ]
 keywords: "Aspose.Cells Cloud, Excel, ListObject, เรียงข้อมูล, REST API, แผ่นงาน"
 description: "เรียนรู้วิธีเรียงข้อมูล ListObject (ตาราง) ในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 3.0) ซึ่งประกอบด้วย endpoint, พารามิเตอร์, ตัวอย่างคำสั่ง cURL และตัวอย่าง SDK"
 weight: 40

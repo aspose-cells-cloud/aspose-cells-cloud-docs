@@ -1,7 +1,7 @@
 ---
 title: "Aspose.Cells Cloud API – Obtener el MaxDataColumn de una hoja de cálculo de Excel (v3.0)"
 type: docs
-url: /get-maxdatacolumn-from-excel-worksheet/
+url: /es/get-maxdatacolumn-from-excel-worksheet/
 weight: 70
 keywords: "Aspose.Cells Cloud, Obtener MaxDataColumn, hoja de cálculo de Excel, API REST, v3.0, SDK"
 description: "Recuperar el índice de columna más alto que contiene datos en una hoja de cálculo especificada mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye detalles de la solicitud, respuesta de ejemplo y ejemplos de SDK."

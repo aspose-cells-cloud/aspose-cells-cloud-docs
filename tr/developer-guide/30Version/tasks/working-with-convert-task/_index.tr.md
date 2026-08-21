@@ -2,8 +2,8 @@
 title: "Convert Görevi ile Çalışma"
 second_title: "Belge"
 type: docs
-url: /tasks/convert/
-aliases: [/working-with-convert-task/]
+url: /tr/tasks/convert/
+aliases: [  /tr/working-with-convert-task/ ]
 keywords: "Aspose.Cells Cloud, REST API, Convert Görevi, Excel, Elektronik Tablo, PDF, CSV, JSON, Markdown"
 description: "Excel için Cells Cloud API, Excel dosyalarını çeşitli formatlara dönüştürme görevlerini destekler."
 weight: 30

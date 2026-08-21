@@ -4,8 +4,8 @@ ArticleTitle: "การใช้งานเซลล์ใน Excel – เอ
 second_title: "เอกสาร"
 linktitle: "เซลล์"
 type: docs
-url: /working-with-cells/
-aliases: [/working-with-worksheets/]
+url: /th/working-with-cells/
+aliases: [  /th/working-with-worksheets/ ]
 keywords: "Excel, Aspose.Cells, การดำเนินการกับเซลล์, API สำหรับสเปรดชีต, REST API, การจัดรูปแบบเซลล์, การรวมเซลล์, การคำนวณสูตร"
 description: "สำรวจ Aspose.Cells Cloud API สำหรับการดำเนินการกับเซลล์ใน Excel รวมถึงการตั้งค่าค่าข้อมูล การใช้รูปแบบ การรวม/ยกเลิกการรวมเซลล์ และการคำนวณสูตร"
 weight: 100

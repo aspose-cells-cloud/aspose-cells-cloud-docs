@@ -2,7 +2,7 @@
 title: "从工作表中删除图表"
 type: docs
 url: /zh/charts/delete/
-aliases: [/delete-a-chart-from-a-worksheet/]
+aliases: [  /zh/delete-a-chart-from-a-worksheet/ ]
 weight: 40
 keywords:
   - "Aspose.Cells"

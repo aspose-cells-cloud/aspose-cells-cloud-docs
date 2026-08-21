@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "إنشاء مجلد – واجهة برمجة تطبيقات Aspose.Cells السحابية"
 linktitle: "إنشاء مجلد"
 type: docs
-url: /create-folder/
+url: /ar/create-folder/
 keywords: "Aspose.Cells، واجهة برمجة تطبيقات سحابية، إنشاء مجلد، إدارة التخزين، Excel"
 description: "قم بإنشاء مجلد جديد في مساحة التخزين السحابية الخاصة بـ Aspose.Cells باستخدام طلب PUT بسيط. راجع تنسيق الطلب، المعلمات، والاستجابة وطريقة التعامل مع الأخطاء."
 weight: 100

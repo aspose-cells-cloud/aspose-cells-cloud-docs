@@ -4,7 +4,7 @@ ArticleTitle: "Tabelle Umklappen – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "Unpivot Table"
 type: docs
-url: /cells/unpivot/table
+url: /de/cells/unpivot/table
 aliases: []
 keywords: "Aspose.Cells, Umklappen, Transformieren"
 description: "Zeilen und Spalten in der Tabelle vertauschen."

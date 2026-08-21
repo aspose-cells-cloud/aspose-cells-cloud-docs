@@ -1,8 +1,8 @@
 ---
 title: "添加格式条件"
 type: docs
-url: /conditional-formattings/add-format-condition/
-aliases: [/add-a-format-condition/]
+url: /zh/conditional-formattings/add-format-condition/
+aliases: [  /zh/add-a-format-condition/ ]
 keywords: "Aspose.Cells Cloud, 条件格式 API, 添加格式条件, Excel REST API, Cells API"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）向 Excel 工作表添加格式条件。包括请求语法、参数、安全的 cURL 示例和 SDK 代码片段。"
 ArticleTitle: "添加格式条件 – Aspose.Cells Cloud API 文档"

@@ -3,8 +3,8 @@ title: "Zeilenbeschreibung aus einem Excel-Arbeitsblatt abrufen"
 second_title: "Document"
 linktitle: "Row"
 type: docs
-url: /rows/get/row/
-aliases: [/get-row-from-a-worksheet/]
+url: /de/rows/get/row/
+aliases: [  /de/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel-Zeilen-API, Arbeitsblattzeile abrufen, REST-API, .NET SDK, Java SDK, Python SDK"
 description: "Abrufen detaillierter Informationen (Höhe, Stil, ausgeblendeter Status usw.) für eine bestimmte Zeile in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API. Enthält cURL-Beispiel, SDK-Snippets und Fehlerbehandlung."
 weight: 10

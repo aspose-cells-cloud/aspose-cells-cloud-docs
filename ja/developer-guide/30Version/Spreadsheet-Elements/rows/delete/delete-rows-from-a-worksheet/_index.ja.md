@@ -3,7 +3,7 @@ title: "Excelワークシートから複数の行を削除する"
 second_title: "ドキュメント"
 linktitle: "行"
 type: docs
-url: /rows/delete/rows/
+url: /ja/rows/delete/rows/
 keywords: "Aspose.Cells Cloud、行の削除、複数行の削除、Excelワークシート、REST API、SDK"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシートから1つまたは複数の行を削除する方法を学びます。エンドポイントの詳細、パラメータ、cURLの使用例、および複数の言語向けのSDKコードサンプルを含みます。"
 weight: 80

@@ -2,7 +2,7 @@
 title: "División por lotes"
 second_title: "Documento"
 type: docs
-url: /batch/split
+url: /es/batch/split
 keywords: "División por lotes, Aspose.Cells Cloud, API REST, Excel, PDF, CSV, JSON, hoja de cálculo, SDK en la nube"
 description: "Documentación de la API REST de división por lotes de Aspose.Cells Cloud, que divide archivos de hojas de cálculo en múltiples formatos como PDF, CSV o JSON. Incluye detalles de la solicitud, comandos cURL de ejemplo y uso del SDK en varios lenguajes de programación."
 weight: 100

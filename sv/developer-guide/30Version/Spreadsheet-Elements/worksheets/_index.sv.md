@@ -3,8 +3,8 @@ title: "Arbeta med Excel-ark."
 second_title: "Dokument"
 linktitle: "Ark"
 type: docs
-url: /worksheets/
-aliases: [/working-with-worksheets/]
+url: /sv/worksheets/
+aliases: [  /sv/working-with-worksheets/ ]
 keywords: "Excel-ark, Aspose.Cells Cloud, REST API, kalkylark, arbetsbok, datahantering, Excel-automatisering"
 description: "Aspose.Cells Cloud REST API möjliggör arbetet med ark i en Excel-arbetsbok. SDK:n stöder flera programmeringsspråk, inklusive Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby och Swift."
 weight: 100

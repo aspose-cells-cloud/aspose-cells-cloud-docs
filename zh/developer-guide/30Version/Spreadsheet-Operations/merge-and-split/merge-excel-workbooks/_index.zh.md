@@ -3,8 +3,8 @@ title: "将一个 Excel 工作簿合并到另一个工作簿中"
 second_title: "文档"
 linktitle: "将一个 Excel 工作簿合并到另一个工作簿中"
 type: docs
-url: /merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
+url: /zh/merge-an-excel-file-into-the-excel-file/
+aliases: [  /zh/merge-excel-workbooks/ , /zh/workbook/merge/ ]
 keywords: "Excel 合并, Aspose.Cells Cloud, 工作簿 API, REST API, 电子表格合并, 云 SDK, 身份验证, mergeWith, cURL 示例"
 description: "逐步指南，介绍如何使用 Aspose.Cells Cloud REST API（v3.0）将一个 Excel 工作簿合并到另一个工作簿中。包含身份验证、必需的 mergeWith 参数、cURL 示例以及 SDK 代码片段。"
 ArticleTitle: "使用 Aspose.Cells Cloud API 将一个 Excel 工作簿合并到另一个工作簿中"

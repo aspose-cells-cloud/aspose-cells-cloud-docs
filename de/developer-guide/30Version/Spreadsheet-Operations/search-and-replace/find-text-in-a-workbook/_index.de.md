@@ -3,8 +3,8 @@ title: "Text in einer Excel-Arbeitsmappe suchen"
 second_title: "Dokument"
 linktitle: "Suche in Arbeitsmappe"
 type: docs
-url: /workbook/find-text/
-aliases: [/find-text-in-a-workbook/]
+url: /de/workbook/find-text/
+aliases: [  /de/find-text-in-a-workbook/ ]
 weight: 30
 keywords: "Aspose.Cells, Text suchen, Excel-API, Arbeitsmappensuche"
 description: "Erfahren Sie, wie Sie die Aspose.Cells Cloud API verwenden, um **Text** in Excel-Arbeitsmappen (XLS‑X, ODS) zu finden. Enthält cURL-Beispiel, SDK-Snippets und Antwortschema. Jetzt loslegen."

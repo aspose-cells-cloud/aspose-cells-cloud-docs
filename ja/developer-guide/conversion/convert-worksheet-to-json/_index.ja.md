@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud API を使用してスプレッドシートのワークシートをJSONに変換する方法"
 linktitle: "ワークシートをJSONに変換"
 type: docs
-url: /convert-worksheet-to-json/
+url: /ja/convert-worksheet-to-json/
 keywords: "Aspose.Cells, ワークシートからJSONへ, Excel変換, クラウドAPI, API v4, データエクスポート"
 description: "Aspose.Cells Cloud API を使用してExcelワークシートをJSONに変換するステップバイステップガイド。リクエストパラメータ、レスポンス処理、エラーコード、SDKサンプルを含みます。"
 weight: 100

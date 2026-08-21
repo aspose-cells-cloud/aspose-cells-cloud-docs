@@ -3,8 +3,8 @@ title: "导出工作表区域为 PNG、PDF、CSV — Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "区域"
 type: docs
-url: /worksheets/area-to-different-formats/
-aliases: [/get-worksheet-for-area/]
+url: /zh/worksheets/area-to-different-formats/
+aliases: [  /zh/get-worksheet-for-area/ ]
 keywords: "Aspose.Cells, 导出工作表区域, PNG, PDF, CSV, Excel 转换, REST API, SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API 或 SDK（C#、Java、Python 等）将 Excel 工作表中的指定单元格区域导出为 PNG、PDF、CSV 及其他 20 多种格式。"
 weight: 230

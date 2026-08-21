@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "엑셀 분할 도구 – 로컬 스프레드시트를 30개 이상 형식의 파일로 분할"
 linktype: "분할 스프레드시트"
 type: docs
-url: /split-spreadsheet/
+url: /ko/split-spreadsheet/
 keywords: "분할, excel, aspose cells, spreadsheet API, pdf 내보내기, csv, json"
 description: "Aspose.Cells Cloud API를 사용하여 로컬 엑셀 워크북을 별도의 파일로 분할합니다. 클라우드에 업로드하지 않고 PDF, CSV, JSON, XLSX, HTML 등 30개 이상의 형식으로 내보낼 수 있습니다."
 weight: 100

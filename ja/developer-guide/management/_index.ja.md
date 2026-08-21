@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "高度なExcelワークブック操作：ワークシート管理と圧縮 – Aspose.Cells Cloud"
 linktype: "管理"
 type: docs
-url: /management/
+url: /ja/management/
 keywords: "Aspose.Cells, Cloud, Excel API, ワークシート管理, スプレッドシート圧縮, ワークブック作成"
 description: "Aspose.Cells Cloud APIを使用してワークシートの追加・削除・移動・名前変更、スプレッドシートの圧縮、テンプレートからのワークブック作成を実行。ローカルのExcelは不要です。"
 weight: 50

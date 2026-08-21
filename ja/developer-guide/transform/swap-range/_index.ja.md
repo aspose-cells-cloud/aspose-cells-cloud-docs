@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Excel の列、行、セル間でデータを交換／入れ替え"
 linktype: "範囲の入れ替え"
 type: docs
-url: /swap-range/
+url: /ja/swap-range/
 keywords: "Aspose Cells、Excel API、範囲の入れ替え、クラウドスプレッドシート"
 description: "Aspose.Cells Cloud API を使用して Excel ファイル内の列、行、または範囲を入れ替えます。1回のリクエストで書式、数式、セル参照を保持したまま実行可能です。"
 weight: 100

@@ -3,7 +3,7 @@ title: "문자열 배열을 엑셀 워크시트로 가져오기 – Aspose.Cells
 second_title: "문서"
 linktitle: "문자열 배열 가져오기"
 type: docs
-url: /import-string-array-into-excel-worksheet/
+url: /ko/import-string-array-into-excel-worksheet/
 aliases:
   - /import-string-array-into-worksheet/
   - /import-data/string-array/

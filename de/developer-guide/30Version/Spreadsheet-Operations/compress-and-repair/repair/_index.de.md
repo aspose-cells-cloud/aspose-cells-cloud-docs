@@ -3,7 +3,7 @@ title: "Excel-Dateien reparieren"
 second_title: "Dokument"
 type: docs
 linktitle: "Excel-Dateien reparieren"
-url: /repair-excel-files/
+url: /de/repair-excel-files/
 keywords: "Aspose Cells, Excel-Reparatur-API, beschädigte XLSX, Wiederherstellung von Tabellenkalkulationen, Cloud-API"
 description: "Verwenden Sie die Aspose.Cells Cloud REST-API, um beschädigte Excel-Dateien (XLS, XLSX, XLSM, XLSB, ODS) zu reparieren. Laden Sie eine oder mehrere Dateien hoch, wählen Sie das Ausgabeformat aus und erhalten Sie die reparierten Dateien als Base64-codierten String. Keine Installation erforderlich."
 weight: 39

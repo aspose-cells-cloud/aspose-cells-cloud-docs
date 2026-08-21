@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Row"
 type: docs
 url: /sv/rows/get/row/
-aliases: [/sv/get-row-from-a-worksheet/]
+aliases: [  /sv/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel-rad-API, Hämta arbetsbladsrad, REST-API, .NET SDK, Java SDK, Python SDK"
 description: "Hämta detaljerad information (höjd, stil, dolt tillstånd etc.) för en specifik rad i ett Excel-arbetsblad med Aspose.Cells Cloud REST API. Innehåller cURL-exempel, SDK-utdrag och felhantering."
 weight: 10

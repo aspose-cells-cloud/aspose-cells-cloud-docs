@@ -1,7 +1,7 @@
 ---
 title: "Excelワークシートのセルの内容と書式をクリアする"
 type: docs
-url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+url: /ja/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
 keywords:
   - Aspose.Cells

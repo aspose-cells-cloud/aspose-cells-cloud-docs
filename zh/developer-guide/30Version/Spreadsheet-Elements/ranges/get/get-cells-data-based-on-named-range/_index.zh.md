@@ -3,8 +3,8 @@ title: "基于命名范围获取单元格数据"
 second_title: "Document"
 linktitle: "Values（值）"
 type: docs
-url: /ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
+url: /zh/ranges/get/values/
+aliases: [  /zh/get-cells-data-based-on-named-range/ ]
 keywords: "Aspose.Cells, 云服务, REST API, Excel, 命名范围, 单元格值, 工作表"
 description: "通过 Aspose.Cells Cloud REST API 从 Excel 工作表的命名范围中检索单元格值。该服务可通过多种 SDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go）调用，并兼容广泛的开发平台。"
 weight: 20

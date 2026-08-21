@@ -3,7 +3,7 @@ title: "Снятие заморозки панелей в листе Excel"
 second_title: "Документ"
 linktitle: "Снять заморозку"
 type: docs
-url: /worksheets/panes/unfreeze/
+url: /ru/worksheets/panes/unfreeze/
 aliases:
   - /unfreeze-panes-in-excel-worksheet/
   - /worksheets/unfreeze-panes/

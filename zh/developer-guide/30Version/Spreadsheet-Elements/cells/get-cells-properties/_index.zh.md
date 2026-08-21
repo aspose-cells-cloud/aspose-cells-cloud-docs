@@ -1,7 +1,7 @@
 ---
 title: "获取单元格属性"
 type: docs
-url: /get-cells-properties/
+url: /zh/get-cells-properties/
 weight: 130
 keywords: "Aspose Cells Cloud, REST API, Excel, 工作表, 单元格属性, 获取单元格属性"
 description: "了解如何使用 Aspose.Cells Cloud REST API 获取 Excel 工作表中特定单元格的属性或预定义单元格方法。"

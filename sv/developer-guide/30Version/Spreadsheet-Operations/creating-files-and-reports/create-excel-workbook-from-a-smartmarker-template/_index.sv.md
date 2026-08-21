@@ -3,7 +3,7 @@ title: "Skapa Excel-rapporter med Smart Marker-mallar"
 second_title: "Dokument"
 linktitle: "SmartMarker"
 type: docs
-url: /build-report-with-smart-marker/
+url: /sv/build-report-with-smart-marker/
 aliases:
   - /create-excel-workbook-from-a-smartmarker-template/
   - /workbook/smartmarker/

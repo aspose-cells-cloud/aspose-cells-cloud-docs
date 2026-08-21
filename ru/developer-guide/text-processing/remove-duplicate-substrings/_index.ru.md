@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Удаление дублирующихся подстрок в Excel — очистка повторяющегося текста в ячейках"
 linktitle: "Удаление дублирующихся подстрок"
 type: docs
-url: /remove-duplicate-substrings/
+url: /ru/remove-duplicate-substrings/
 keywords: "Aspose.Cells, дублирующиеся подстроки, Excel API, очистка текста, облачные технологии"
 description: "Удаление дублирующихся подстрок из ячеек Excel с помощью Aspose.Cells Cloud API с сохранением форматирования и проверки данных."
 weight: 100

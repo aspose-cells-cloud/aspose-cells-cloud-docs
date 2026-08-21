@@ -4,7 +4,7 @@ second_title: "Documentos"
 ArticleTitle: "Cómo convertir datos de tabla de hoja de cálculo local a un archivo PDF: Guía paso a paso"
 linktitle: "Convertir tabla a PDF"
 type: docs
-url: /convert-table-to-pdf/
+url: /es/convert-table-to-pdf/
 keywords: "Aspose.Cells, Excel a PDF, conversión de tablas, API en la nube"
 description: "Convierta rápidamente una tabla local de Excel a un archivo PDF mediante la API REST de Aspose.Cells Cloud."
 weight: 100

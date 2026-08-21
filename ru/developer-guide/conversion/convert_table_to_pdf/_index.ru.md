@@ -3,7 +3,7 @@ title: "Преобразование таблицы в PDF"
 ArticleTitle: "Преобразование таблицы в PDF – Aspose.Cells Cloud API"
 second_title: "Документ"
 linktype: "docs"
-url: "/cells/convert/table/pdf"
+url: /ru/cells/convert/table/pdf
 aliases: []
 keywords: "Преобразование таблицы в PDF, Aspose.Cells, API"
 description: "Преобразует таблицу электронной таблицы, хранящейся на локальном диске, в PDF-файл с использованием Aspose.Cells Cloud."

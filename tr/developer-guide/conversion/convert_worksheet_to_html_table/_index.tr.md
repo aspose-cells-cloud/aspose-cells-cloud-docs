@@ -4,7 +4,7 @@ ArticleTitle: "Çalışma Sayfasını HTML Tablosuna Dönüştür – Aspose.Cel
 second_title: "Belge"
 linktitle: "ConvertWorksheetToHtmlTable"
 type: docs
-url: /cells/convert/worksheet/html-table
+url: /tr/cells/convert/worksheet/html-table
 aliases: []
 keywords: "Aspose.Cells, ConvertWorksheetToHtmlTable, HTML Tablosu, API"
 description: "Aspose.Cells Cloud kullanarak yerel bir sürücüdeki bir elektronik tablo dosyasının belirli bir çalışma sayfasını HTML tablosu dosyasına dönüştürür."

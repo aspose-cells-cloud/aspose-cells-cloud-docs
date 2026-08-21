@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Elektronik Tablo Metin İşleme: Metni Trimle, Böl, Dönüştür, Çıkar ve Kaldır"
 linktitle: "Metin İşleme"
 type: docs
-url: /text-processing/
+url: /tr/text-processing/
 description: "Aspose.Cells Cloud REST API'lerini kullanarak Excel dosyalarında metintrimleme, bölme, dönüştürme, çıkarma ve kaldırma işlemlerini öğrenin. Özet örnekler ve SDK kod parçacıkları içerir."
 keywords: "Aspose.Cells, Bulut API, Metin İşleme, Metni Trimle, Metni Böl, Metni Dönüştür, Metni Çıkar, Metni Kaldır, Excel API"
 weight: 30

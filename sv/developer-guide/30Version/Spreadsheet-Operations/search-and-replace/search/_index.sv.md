@@ -3,7 +3,7 @@ title: "Sök text i Excel-filer – Aspose.Cells Cloud API"
 description: "Sök efter specifik text i Excel-filer (XLS, XLSX, XLSM, XLSB) och ODS-filer med Aspose.Cells Cloud API. Inkluderar begärandedetaljer, cURL- och SDK-exempel samt felhantering."
 keywords: "Aspose.Cells, Excel, sök, API, REST"
 type: docs
-url: /cells/search/
+url: /sv/cells/search/
 aliases:
   - /search/
   - /search-without-using-storage/

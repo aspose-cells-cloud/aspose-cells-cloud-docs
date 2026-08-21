@@ -3,8 +3,8 @@ title: "Obtenir toutes les propriétés du document"
 second_title: "Document"
 linktitle: "Tout obtenir"
 type: docs
-url: /document-properties/get-all/
-aliases: [/get-all-document-properties/]
+url: /fr/document-properties/get-all/
+aliases: [  /fr/get-all-document-properties/ ]
 keywords: "Obtenir toutes les propriétés du document, Aspose.Cells Cloud, Propriétés des documents Excel, API REST, SDK, Métadonnées Excel"
 description: "Récupérer toutes les propriétés du document à partir d’un fichier Excel à l’aide de l’API REST Aspose.Cells Cloud. Le point de terminaison fonctionne avec tous les SDK et langages de programmation pris en charge."
 ArticleTitle: "Obtenir toutes les propriétés du document – Aspose.Cells Cloud API"

@@ -4,8 +4,8 @@ ArticleTitle: "Uzak Elektronik Tabloda Tüm Değişiklikleri Kabul Et – Aspose
 second_title: "Belge"
 linktitle: "Uzak Elektronik Tabloda Tüm Değişiklikleri Kabul Et"
 type: docs
-url: /cells/accept-all-revisions
-aliases: ["/cells/accept-all-revisions"]
+url: /tr/cells/accept-all-revisions
+aliases: [  /tr/cells/accept-all-revisions ]
 keywords: "Aspose.Cells, AcceptAllRevisions, Uzak Elektronik Tablo"
 description: "Uzak depolamada bulunan bir elektronik tablodaki tüm değişiklikleri (revizyonları) kabul eder ve güncellenmiş çalışma kitabını dosyası olarak döndürür."
 weight: 1000

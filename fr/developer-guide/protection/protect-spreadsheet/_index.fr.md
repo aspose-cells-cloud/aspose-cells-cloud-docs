@@ -3,7 +3,7 @@ title: "API Web Aspose.Cells Cloud pour la protection par mot de passe des fichi
 second_title: "Guide du développeur pour la protection Excel"
 ArticleTitle: "Outil de protection par mot de passe Excel – Définir les mots de passe d’ouverture et de modification – Sécurisez vos feuilles de calcul"
 linktype: "docs"
-url: /protect-spreadsheet/
+url: /fr/protect-spreadsheet/
 keywords: "Aspose.Cells, protection Excel par mot de passe, API, mot de passe d’ouverture, mot de passe de modification, stockage cloud, sécurité des feuilles de calcul"
 description: "Sécurisez vos fichiers Excel par programmation avec Aspose.Cells Cloud. Définissez à la fois les mots de passe d’ouverture et de modification via un seul appel API. Prend en charge les formats .xlsx, .xls et le stockage cloud. Essayez gratuitement."
 weight: 100

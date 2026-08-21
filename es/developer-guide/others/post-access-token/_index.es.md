@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Obtener token de acceso con ID de cliente y secreto"
 linktitle: "Post Access Token"
 type: docs
-url: /post-access-token/
+url: /es/post-access-token/
 keywords: "Aspose.Cells, Cloud, Token de acceso, OAuth2, API, Autenticación, REST, Excel, Office Cloud"
 description: "Obtenga un token de acceso OAuth2 para Aspose.Cells Cloud llamando al endpoint POST /cells/connect/token con su ID de cliente y secreto."
 weight: 100

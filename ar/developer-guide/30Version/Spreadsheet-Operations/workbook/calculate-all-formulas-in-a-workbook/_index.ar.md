@@ -3,7 +3,7 @@ title: "حساب جميع الصيغ في ملف Excel"
 second_title: "مستند"
 linktitle: "حساب"
 type: docs
-url: /calculate-all-formulas-on-an-excel-file/
+url: /ar/calculate-all-formulas-on-an-excel-file/
 aliases:
   [/calculate-all-formulas-in-a-workbook/, /workbook/calculate-all-formulas/]
 keywords: "Aspose.Cells, حساب الصيغ, واجهة برمجة تطبيقات Excel, SDK للحاسوب السحابي"

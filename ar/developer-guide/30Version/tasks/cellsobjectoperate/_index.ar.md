@@ -2,8 +2,8 @@
 title: "واجهة برمجة تطبيقات Aspose.Cells Cloud – العمل مع مهمة CellsObjectOperate (REST)"
 second_title: "مستند"
 type: docs
-url: /tasks/cells-object-operate/
-aliases: [/working-with-cellsobjectoperate-task/]
+url: /ar/tasks/cells-object-operate/
+aliases: [  /ar/working-with-cellsobjectoperate-task/ ]
 description: "تعرّف على كيفية استخدام مهمة CellsObjectOperate في واجهة برمجة تطبيقات Aspose.Cells Cloud عبر مرجع المعلمات وأمثلة الطلبات/الاستجابات ونصائح الممارسات المثلى للورقات والرسوم البيانية وجداول البيانات المقطعية."
 weight: 20
 ArticleTitle: "واجهة برمجة تطبيقات Aspose.Cells Cloud – العمل مع مهمة CellsObjectOperate (REST)"

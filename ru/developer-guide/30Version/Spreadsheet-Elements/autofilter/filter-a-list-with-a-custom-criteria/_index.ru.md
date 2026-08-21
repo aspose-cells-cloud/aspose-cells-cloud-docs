@@ -3,8 +3,8 @@ title: "Добавление пользовательского критерия
 second_title: "Document"
 linktitle: "Добавить пользовательский фильтр"
 type: docs
-url: /autofilter/add-custom-filter/
-aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/]
+url: /ru/autofilter/add-custom-filter/
+aliases: [  /ru/filter-a-list-with-a-custom-criteria/ , /ru/autofilter/add-a-custom-filter/ ]
 keywords: "Excel, пользовательский фильтр, Aspose.Cells Cloud, REST API, автофильтр, рабочий лист, пользовательский критерий"
 description: "Узнайте, как использовать Aspose.Cells Cloud REST API для добавления пользовательского фильтра в рабочий лист Excel. Включает подробности запроса, пример cURL и фрагменты кода SDK для различных языков программирования."
 weight: 65

@@ -3,8 +3,8 @@ title: "Excel ファイル内のテキスト コンテンツを検索して置�
 second_title: "ドキュメント"
 linktitle: "検索と置換"
 type: docs
-url: /search-and-replace/
-aliases: [/working-with-text/, /text/]
+url: /ja/search-and-replace/
+aliases: [  /ja/working-with-text/ , /ja/text/ ]
 description: "Aspose.Cells Cloud REST API を使用して、Excel ワークブックおよびワークシート内のテキストを検索・置換する方法を学びます。リクエスト形式、.NET、Java、Python 用のサンプルコード、およびエラー処理を含みます。"
 keywords: "Aspose.Cells Cloud, Excel, 検索と置換, REST API, .NET, Java, Python"
 weight: 20

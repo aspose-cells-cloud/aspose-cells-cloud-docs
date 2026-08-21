@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "Pivot Alanı Ekle"
 type: docs
 url: /tr/pivot-tables/add-pivot-field/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /tr/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, pivot tablo, pivot alanı ekle, REST API, SDK"
 description: "Aspose.Cells Cloud REST API kullanarak mevcut bir pivot tabloya bir pivot alanı ekleyin. İstek ayrıntılarını, cURL örneğini ve SDK kod parçacıklarını içerir."
 weight: 40

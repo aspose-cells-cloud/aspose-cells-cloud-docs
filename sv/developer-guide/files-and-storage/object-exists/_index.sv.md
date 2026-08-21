@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Object Exists API – Verifiera fil- eller mappnärvaro i Aspose.Cells Cloud"
 linktitle: "Object Exists"
 type: docs
-url: /object-exists/
+url: /sv/object-exists/
 keywords: "Aspose.Cells, molnlagring, objekt finns, filnärvaro, mappnärvaro, API"
 description: "Använd Object Exists API för snabbt att verifiera om en fil eller mapp finns i Aspose.Cells Cloud-lagring. Stöder valfritt lagringsnamn och versions-ID, samt fungerar med versionshanterade objekt."
 weight: 100

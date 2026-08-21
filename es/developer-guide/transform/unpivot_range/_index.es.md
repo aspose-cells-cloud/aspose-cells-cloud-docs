@@ -4,7 +4,7 @@ ArticleTitle: "UnpivotRange – Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "UnpivotRange"
 type: docs
-url: /cells/unpivot/range
+url: /es/cells/unpivot/range
 aliases: []
 keywords: "Aspose.Cells, UnpivotRange, API"
 description: "Intercambiar filas y columnas en la hoja de cálculo."

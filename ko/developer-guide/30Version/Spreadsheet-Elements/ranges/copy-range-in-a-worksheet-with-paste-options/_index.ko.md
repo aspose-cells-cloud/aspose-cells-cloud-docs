@@ -3,8 +3,8 @@ title: "워크시트에서 범위 복사 시 붙여넣기 옵션 사용하기"
 second_title: "Document"
 linktitle: "복사"
 type: docs
-url: /ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+url: /ko/ranges/copy/
+aliases: [  /ko/copy-range-in-a-worksheet-with-paste-options/ ]
 keywords: "Aspose.Cells Cloud, REST API, 엑셀, 범위 복사, 워크시트, 붙여넣기 옵션"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크시트 내 범위를 전체 붙여넣기 옵션 지원과 함께 복사합니다. 여러 프로그래밍 언어에 대한 SDK 예제가 포함됩니다."
 weight: 20

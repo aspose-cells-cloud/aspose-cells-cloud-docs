@@ -4,7 +4,7 @@ ArticleTitle: "すべての変更を承認する – Aspose.Cells Cloud"
 second_title: "ドキュメント"
 linktype: "すべての変更を承認する"
 type: docs
-url: /cells/spreadsheet/accept-all-revisions
+url: /ja/cells/spreadsheet/accept-all-revisions
 aliases: []
 keywords: "Aspose.Cells, AcceptAllRevisions, スプレッドシート, 変更履歴"
 description: "Aspose.Cells Cloud API を使用してスプレッドシートファイル内のすべての変更を承認します。"

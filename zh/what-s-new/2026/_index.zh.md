@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "2026 年新特性"
 type: docs
 weight: 9
-url: /new-features/2026/
+url: /zh/new-features/2026/
 keywords: "Aspose.Cells Cloud, 2026 年新特性, 电子表格 API, Excel, CSV, PDF, 云端电子表格"
 description: "了解 2026 年发布的 Aspose.Cells Cloud 最新特性，包括电子表格、Excel、CSV、PDF 等相关的新 API、改进及 Bug 修复。"
 ArticleTitle: "Aspose.Cells Cloud 2026 年新特性 – 最新功能与增强"

@@ -3,8 +3,8 @@ title: "รับรูปร่างตามดัชนีในแผ่น
 second_title: "เอกสาร"
 linktype: "รับ"
 type: docs
-url: /shapes/get/
-aliases: [/get-a-shape-by-index-inside-the-worksheet/]
+url: /th/shapes/get/
+aliases: [  /th/get-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API รูปร่าง Excel, รับรูปร่างตามดัชนี, รูปร่างในแผ่นงาน, REST API, การดึงข้อมูลรูปร่าง, Aspose.Cells SDK"
 description: "ดึงรูปร่างตามดัชนีจากแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API ซึ่งรวมถึงไวยากรณ์คำขอ พารามิเตอร์ รายละเอียดการตอบกลับ และตัวอย่าง SDK"
 weight: 20

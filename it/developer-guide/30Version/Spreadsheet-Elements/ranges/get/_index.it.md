@@ -3,7 +3,7 @@ title: "Come ottenere il contenuto di un intervallo da un foglio di calcolo Exce
 second_title: "Documento"
 linktitle: "Ottieni"
 type: docs
-url: /ranges/get/
+url: /it/ranges/get/
 keywords: "Aspose.Cells, Excel, API, ottieni, intervallo, foglio di calcolo, REST"
 description: "Scopri come recuperare il contenuto di un intervallo da un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud. Include la sintassi della richiesta e codice di esempio."
 weight: 20

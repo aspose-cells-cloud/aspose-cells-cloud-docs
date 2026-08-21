@@ -3,8 +3,8 @@ title: "Excel 条件付き書式の操作"
 second_title: "Document"
 linktitle: "条件付き書式"
 type: docs
-url: /conditional-formattings/
-aliases: [/working-with-conditional-formatting/]
+url: /ja/conditional-formattings/
+aliases: [  /ja/working-with-conditional-formatting/ ]
 keywords: "Excel, 条件付き書式, Aspose.Cells Cloud, API"
 description: "Aspose.Cells Cloud API for Excel は、条件付き書式ルールの取得・追加・変更・クリアを行うためのエンドポイントを提供し、ワークシートデータの動的視覚的分析を可能にします。"
 weight: 100

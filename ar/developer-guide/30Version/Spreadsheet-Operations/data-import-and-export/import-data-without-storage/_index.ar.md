@@ -3,8 +3,8 @@ title: "استيراد البيانات دون استخدام التخزين –
 second_title: "المستند"
 linktitle: "استيراد البيانات دون استخدام التخزين"
 type: docs
-url: /import/without-using-storage/
-aliases: [/import-data-in-excel-worksheet-without-using-storage/]
+url: /ar/import/without-using-storage/
+aliases: [  /ar/import-data-in-excel-worksheet-without-using-storage/ ]
 keywords: "Aspose.Cells، واجهة برمجة تطبيقات السحابة، استيراد البيانات دون استخدام التخزين، واجهة برمجة تطبيقات استيراد Excel، استيراد REST"
 description: "تعلم كيفية استيراد البيانات دون استخدام التخزين في ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. يتضمن تنسيق الطلب، المعلّمات، مثال cURL، كود SDK، ومعالجة الأخطاء."
 weight: 10

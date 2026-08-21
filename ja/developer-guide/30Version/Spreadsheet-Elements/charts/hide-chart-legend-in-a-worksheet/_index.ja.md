@@ -1,8 +1,8 @@
 ---
 title: "Excelワークシートのチャート凡例を非表示にする – Aspose.Cells Cloud API"
 type: docs
-url: /charts/legend/hide/
-aliases: [/hide-chart-legend-in-a-worksheet/]
+url: /ja/charts/legend/hide/
+aliases: [  /ja/hide-chart-legend-in-a-worksheet/ ]
 weight: 110
 keywords: "Aspose.Cells, Excel, チャート凡例の非表示, REST API, クラウドSDK, チャート凡例"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシートのチャート凡例を非表示にする方法を学びます。HTTPSエンドポイント、認証要件、リクエスト構文、レスポンス詳細、エラーハンドリング、およびSDKのコード例を含みます。"

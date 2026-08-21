@@ -4,7 +4,7 @@ ArticleTitle: "SearchAllTextItemsInRemoteSpreadsheet – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktitle: "SearchAllTextItemsInRemoteSpreadsheet"
 type: docs
-url: /cells/{name}/search/content/all-textitems
+url: /tr/cells/{name}/search/content/all-textitems
 aliases: []
 keywords: "arama, metin öğeleri, Aspose.Cells"
 description: "Aspose.Cells Cloud kullanarak uzak bir elektronik tabloda tüm metin öğelerini arayın."

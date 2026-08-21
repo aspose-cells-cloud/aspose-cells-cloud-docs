@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "كيفية تحويل ورقة عمل جدول بيانات إلى JSON باستخدام واجهة Aspose.Cells Cloud API"
 linktype: "تحويل ورقة عمل إلى JSON"
 type: docs
-url: /convert-worksheet-to-json/
+url: /ar/convert-worksheet-to-json/
 keywords: "Aspose.Cells, تحويل ورقة عمل إلى JSON, تحويل Excel, واجهة سحابية, API v4, تصدير البيانات"
 description: "دليل خطوة بخطوة لتحويل ورقة عمل Excel إلى JSON باستخدام واجهة Aspose.Cells Cloud API، بما في ذلك معلمات الطلب، ومعالجة الاستجابة، وأكواد الأخطاء، وأمثلة SDK."
 weight: 100

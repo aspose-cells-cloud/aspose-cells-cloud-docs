@@ -1,7 +1,7 @@
 ---
 title: "Zweite Wertachse eines Diagramms abrufen"
 type: docs
-url: /charts/second-value-axis/get/
+url: /de/charts/second-value-axis/get/
 weight: 60
 keywords: Aspose.Cells, zweite Wertachse eines Diagramms, Excel, REST-API, Cloud, API, Excel-Diagramm-Achse
 description: Ruft die zweite Wertachse eines angegebenen Diagramms in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST-API ab.

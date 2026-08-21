@@ -3,8 +3,8 @@ title: "OLE-Objekt aus Excel-Arbeitsblatt abrufen – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Abrufen"
 type: docs
-url: /oleobjects/get/
-aliases: [/get-oleobject-from-a-worksheet/]
+url: /de/oleobjects/get/
+aliases: [  /de/get-oleobject-from-a-worksheet/ ]
 keywords: "aspose, cells, ole-objekt, excel, arbeitsblatt, ole-objekt abrufen, rest-api"
 description: "Rufen Sie ein OLE-Objekt (Bild, Diagramm oder eingebettete Datei) aus einem Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API ab. Enthält HTTPS-Endpunkt, erforderliche Parameter, Beispiel-cURL und SDK-Code in mehreren Sprachen."
 ArticleTitle: "OLE-Objekt aus Excel-Arbeitsblatt abrufen – Aspose.Cells Cloud API"

@@ -1,8 +1,8 @@
 ---
 title: "Excel Çalışma Sayfasında Grafik Başlığını Güncelleme"
 type: docs
-url: /charts/title/update/
-aliases: [/update-chart-title-in-excel-worksheet/]
+url: /tr/charts/title/update/
+aliases: [  /tr/update-chart-title-in-excel-worksheet/ ]
 weight: 160
 keywords: Excel, Aspose.Cells, REST API, Grafik Başlığı, Güncelleme, Bulut SDK'sı
 description: Aspose.Cells Cloud REST API, cURL ve çeşitli SDK'lar kullanarak Excel çalışma sayfasında bir grafik başlığını nasıl güncelleyeceğinizi öğrenin.

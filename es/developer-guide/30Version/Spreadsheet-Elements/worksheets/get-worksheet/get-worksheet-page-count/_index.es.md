@@ -3,7 +3,7 @@ title: "Obtener el número de páginas de una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "PageCount"
 type: docs
-url: /worksheets/page-count/
+url: /es/worksheets/page-count/
 keywords: "Aspose.Cells, API de Excel, número de páginas de hoja de cálculo, REST, SDK en la nube, paginación de Excel"
 description: "Recuperar el número de páginas imprimibles en una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud (v3.0). Incluye el formato de solicitud HTTPS, pasos de autenticación, ejemplo de cURL, respuesta JSON completa, códigos de estado y ejemplos de código del SDK."
 weight: 10

@@ -4,8 +4,8 @@ ArticleTitle: "Eliminare tutte le forme in un foglio di lavoro Excel – Aspose.
 second_title: "Documento"
 linktitle: "Pulisci"
 type: docs
-url: /shapes/clear/
-aliases: [/delete-all-shapes-inside-the-worksheet/]
+url: /it/shapes/clear/
+aliases: [  /it/delete-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Elimina tutte le forme, foglio di lavoro Excel, API REST, SDK, cURL, .NET, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift"
 description: "Elimina tutte le forme da un foglio di lavoro Excel utilizzando l'API REST Aspose.Cells Cloud. L'operazione è disponibile tramite cURL e un'ampia gamma di SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift)."
 weight: 40

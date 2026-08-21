@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "كيفية ضغط ملفات إكسل – تقليل حجم جدول البيانات وتحسين الأداء"
 linktitle: "ضغط جدول البيانات"
 type: docs
-url: /compress-spreadsheet/
+url: /ar/compress-spreadsheet/
 keywords: "ضغط إكسل، Aspose.Cells Cloud، تقليل حجم جدول البيانات، واجهة برمجة تطبيقات (API)، تحسين المصنف"
 description: "تعرّف على كيفية ضغط مصنفات إكسل باستخدام واجهة برمجة تطبيقات (API) Aspose.Cells Cloud. احصل على أمثلة تفصيلية خطوة بخطوة، ومعاملات، ومصادقة، وأفضل الممارسات."
 weight: 100

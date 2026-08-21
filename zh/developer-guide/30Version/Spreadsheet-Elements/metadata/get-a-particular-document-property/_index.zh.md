@@ -3,8 +3,8 @@ title: "获取特定文档属性"
 second_title: "文档"
 linktitle: "获取"
 type: docs
-url: /document-properties/get/
-aliases: [/get-a-particular-document-property/]
+url: /zh/document-properties/get/
+aliases: [  /zh/get-a-particular-document-property/ ]
 keywords: "Aspose.Cells, 云 API, 获取文档属性, Excel 元数据, REST GET, SDK 示例"
 description: "使用 Aspose.Cells Cloud REST API 从 Excel 文件中检索命名文档属性（例如作者、标题）。包含 cURL 示例、SDK 代码片段及响应模式。"
 weight: 20

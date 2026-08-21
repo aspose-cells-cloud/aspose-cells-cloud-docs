@@ -3,7 +3,7 @@ title: "Lavorare con la convalida dei dati di Excel"
 second_title: "Documento"
 linktype: "Convalide"
 type: docs
-url: /validations/
+url: /it/validations/
 keywords: "convalida dei dati di Excel, Aspose.Cells Cloud, REST API, foglio di calcolo, Office Cloud"
 description: "Scopri come aggiungere, recuperare, aggiornare, eliminare e cancellare le regole di convalida dei dati di Excel in modo programmatico con l'API REST di Aspose.Cells Cloud. Include esempi per .NET, Java, Python e PHP."
 weight: 100

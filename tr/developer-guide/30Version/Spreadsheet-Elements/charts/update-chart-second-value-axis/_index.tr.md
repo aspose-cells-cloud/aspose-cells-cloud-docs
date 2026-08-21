@@ -2,7 +2,7 @@
 title: "Grafiğin İkinci Değer Ekseni Güncelleme"
 ArticleTitle: "Grafiğin İkinci Değer Ekseni Güncelleme – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/second-value-axis/update/
+url: /tr/charts/second-value-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Grafik API, İkinci Değer Ekseni, Excel, REST, Bulut SDK"
 description: "Aspose.Cells Cloud REST API kullanılarak bir Excel çalışma sayfasındaki grafiğin ikinci değer eksenini günceller. İstek örnekleri, yanıt kodları ve önkoşulları içerir."

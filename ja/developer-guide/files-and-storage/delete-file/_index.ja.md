@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud – ファイル削除 API"
 linktitle: "ファイル削除"
 type: docs
-url: /delete-file/
+url: /ja/delete-file/
 keywords: "Aspose Cells, ファイル削除 API, Excel クラウドストレージ, REST API, ファイル管理"
 description: "Aspose.Cells Cloud ストレージから Excel ファイルを RESTful ファイル削除 API を使用して削除します。エンドポイント、パラメータ、認証、サンプルコードを含みます。"
 weight: 100

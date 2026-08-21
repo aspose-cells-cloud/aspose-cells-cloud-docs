@@ -3,8 +3,8 @@ title: "Excel のコメントの操作"
 second_title: "Document"
 linktype: "コメント"
 type: docs
-url: /comments/
-aliases: [/working-with-comments/]
+url: /ja/comments/
+aliases: [  /ja/working-with-comments/ ]
 keywords: "Aspose.Cells Cloud, Excel コメント API, スプレッドシート コメント, REST API"
 description: "Aspose.Cells Cloud REST API v3.0 を使用して、Excel のコメントを追加、取得、更新、削除する方法を、コード例、前提条件、エラー処理を交えて学びます。"
 weight: 100

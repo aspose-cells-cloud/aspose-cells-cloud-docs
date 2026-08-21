@@ -3,8 +3,8 @@ title: "Çalışma Sayfasını Sil"
 second_title: "Belge"
 linktitle: "Tek bir çalışma sayfası"
 type: docs
-url: /worksheets/delete-worksheet/
-aliases: [/remove-worksheets-from-excel-workbooks/]
+url: /tr/worksheets/delete-worksheet/
+aliases: [  /tr/remove-worksheets-from-excel-workbooks/ ]
 keywords: "Aspose.Cells Cloud, Çalışma Sayfası Sil, Excel, Elektronik Tablo, REST API"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabından bir çalışma sayfasını silin. C#, Java, PHP, Ruby, Node.js, Python, Perl, Go ve cURL için SDK'ları destekler."
 weight: 20

@@ -3,8 +3,8 @@ title: "取消 Excel 工作表中行的组合"
 second_title: "Document"
 linktitle: "取消组合"
 type: docs
-url: /rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
+url: /zh/rows/ungroup/
+aliases: [  /zh/ungroup-rows-in-excel-worksheet/ ]
 keywords: "取消行组合, Excel, Aspose.Cells Cloud, REST API, SDK, 电子表格"
 description: "了解如何使用 Aspose.Cells Cloud REST API 及多种编程语言的 SDK 取消 Excel 工作表中行的组合。"
 weight: 70

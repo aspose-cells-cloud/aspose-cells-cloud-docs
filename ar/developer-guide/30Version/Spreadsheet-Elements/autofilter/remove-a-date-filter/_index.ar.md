@@ -3,7 +3,7 @@ title: "حذف مرشح تاريخ – Aspose.Cells Cloud"
 second_title: "مستند"
 linktitle: "حذف مرشح التاريخ"
 type: docs
-url: /autofilter/delete-date-filter/
+url: /ar/autofilter/delete-date-filter/
 aliases:
   - /remove-a-date-filter/
   - /autofilter/delete-a-date-filter/

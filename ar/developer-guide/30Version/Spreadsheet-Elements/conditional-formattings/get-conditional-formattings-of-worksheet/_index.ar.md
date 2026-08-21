@@ -1,8 +1,8 @@
 ---
 title: "الحصول على قواعد التنسيق الشرطي"
 type: docs
-url: /conditional-formattings/get-all/
-aliases: [/get-conditional-formattings-of-worksheet/]
+url: /ar/conditional-formattings/get-all/
+aliases: [  /ar/get-conditional-formattings-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud، واجهة برمجة التطبيقات REST، إكسل، التنسيق الشرطي، ورقة العمل، واجهة برمجة تطبيقات التنسيق الشرطي"
 description: "استرجاع جميع قواعد التنسيق الشرطي المطبقة على ورقة عمل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمن بناء جملة الطلب، خطوات المصادقة، المعلمات، أمثلة موجزة للاستجابة، والتعامل مع الأخطاء."
 weight: 20

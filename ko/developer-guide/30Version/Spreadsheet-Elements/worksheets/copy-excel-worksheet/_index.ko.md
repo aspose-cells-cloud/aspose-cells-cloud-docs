@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "복사"
 type: docs
 url: /ko/worksheets/copy/
-aliases: [/copy-excel-worksheet/]
+aliases: [  /ko/copy-excel-worksheet/ ]
 keywords: "Aspose Cells 워크시트 복사 API, Excel 시트 복사 REST, Aspose Cloud SDK 복사, 스프레드시트 워크시트 복사"
 description: "Aspose.Cells Cloud REST API를 사용하여 워크시트와 그 서식을 새 시트로 복사하는 방법을 알아보세요. C#, Java, Python 등 다양한 언어에 대한 엔드포인트, 매개변수, cURL 및 SDK 예제가 포함되어 있습니다."
 weight: 20

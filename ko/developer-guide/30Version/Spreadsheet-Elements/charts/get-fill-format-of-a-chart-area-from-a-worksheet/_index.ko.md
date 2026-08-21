@@ -1,8 +1,8 @@
 ---
 title: "차트 영역 채우기 서식 가져오기 – Aspose.Cells Cloud API(v3.0)"
 type: docs
-url: /charts/chart-area/fill-format/get/
-aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
+url: /ko/charts/chart-area/fill-format/get/
+aliases: [  /ko/get-fill-format-of-a-chart-area-from-a-worksheet/ ]
 weight: 70
 keywords:
   - "Aspose.Cells"

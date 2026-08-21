@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API — автоматическое удален
 second_title: "Документ"
 ArticleTitle: "Удаление всех пустых листов в Excel — руководство по удалению пустых листов"
 linktype: "docs"
-url: /delete-spreadsheet-blank-worksheets/
+url: /ru/delete-spreadsheet-blank-worksheets/
 keywords: "Aspose.Cells Cloud, удаление пустых листов, Excel API, очистка книги, оптимизация таблицы"
 description: "Используйте Aspose.Cells Cloud API для автоматического удаления пустых или незаполненных листов из книг Excel. Узнайте, как выявлять и удалять листы без данных, формул, диаграмм или объектов, улучшая производительность и организацию книги."
 weight: 100

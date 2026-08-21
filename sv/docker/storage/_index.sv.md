@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Konfiguration av Aspose.Cells Cloud Docker-containerlager"
 linktitle: "Containerlager"
 type: docs
-url: /docker/storage/
+url: /sv/docker/storage/
 description: "Konfigurera lagringsplatsen för Aspose.Cells Cloud Docker-containrar med JSON, PowerShell eller Bash."
 weight: 30
 keywords: "Aspose.Cells, Docker, containerlager, JSON-konfiguration, PowerShell, Bash"

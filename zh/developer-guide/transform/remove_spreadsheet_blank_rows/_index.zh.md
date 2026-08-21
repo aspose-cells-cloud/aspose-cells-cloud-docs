@@ -4,7 +4,7 @@ ArticleTitle: "删除电子表格中的空白行 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktype: "删除电子表格中的空白行"
 type: docs
-url: /cells/remove/blank-rows
+url: /zh/cells/remove/blank-rows
 aliases: []
 keywords: "Aspose.Cells, 删除空白行, 电子表格, API"
 description: "从电子表格文件中删除所有空白行。"

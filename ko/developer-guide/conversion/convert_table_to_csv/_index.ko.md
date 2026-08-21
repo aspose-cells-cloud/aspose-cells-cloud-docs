@@ -4,7 +4,7 @@ ArticleTitle: "테이블을 CSV로 변환 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktitle: "테이블을 CSV로 변환"
 type: docs
-url: /cells/convert/table/csv
+url: /ko/cells/convert/table/csv
 aliases: []
 keywords: "테이블 CSV 변환, Aspose.Cells, 클라우드 API"
 description: "로컬 드라이브에 있는 스프레드시트의 테이블을 CSV 파일로 변환합니다."

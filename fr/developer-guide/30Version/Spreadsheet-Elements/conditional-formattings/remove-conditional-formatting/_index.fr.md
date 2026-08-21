@@ -1,7 +1,7 @@
 ---
 title: "Supprimer le formatage conditionnel – Référence de l’API Aspose.Cells Cloud"
 type: docs
-url: /conditional-formattings/delete/
+url: /fr/conditional-formattings/delete/
 aliases:
   - /remove-conditional-formatting/
 keywords: "Aspose.Cells, Formatage conditionnel, Supprimer, API, Excel, Cloud"

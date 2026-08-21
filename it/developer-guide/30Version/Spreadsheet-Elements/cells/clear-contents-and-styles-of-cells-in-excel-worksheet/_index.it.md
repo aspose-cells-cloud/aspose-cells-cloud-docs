@@ -1,7 +1,7 @@
 ---
 title: "Cancellare Contenuti e Stili delle Celle in un Foglio di Lavoro Excel"
 type: docs
-url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+url: /it/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
 keywords:
   - Aspose.Cells

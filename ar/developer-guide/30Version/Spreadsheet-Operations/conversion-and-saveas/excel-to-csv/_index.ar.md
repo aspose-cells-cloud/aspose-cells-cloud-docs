@@ -3,7 +3,7 @@ title: "تحويل ملف Excel إلى CSV"
 second_title: "مستند"
 linktitle: "Excel إلى CSV"
 type: docs
-url: convert-excel-file-to-CSV-file/
+url: /arconvert-excel-file-to-CSV-file/
 aliases:
   - /convert-excel-file-to-CSV-in-cloud/
   - /convert/excel-to-csv/

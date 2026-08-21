@@ -4,7 +4,7 @@ ArticleTitle: "تحويل المخطط إلى PDF – Aspose.Cells Cloud API"
 second_title: "وثيقة"
 linktitle: "ConvertChartToPdf"
 type: docs
-url: /cells/convert/chart/pdf
+url: /ar/cells/convert/chart/pdf
 aliases: []
 keywords: "ConvertChartToPdf, Aspose.Cells, PDF, تحويل المخطط"
 description: "يحوّل مخططًا موجودًا في ملف جدول بيانات على محرك أقراص محلي إلى تنسيق PDF."

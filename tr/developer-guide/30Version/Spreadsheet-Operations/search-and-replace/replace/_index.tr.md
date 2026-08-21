@@ -3,7 +3,7 @@ title: "Excel dosyalarından metin değiştir"
 second_title: "Belge"
 linktitle: "Depolama kullanmadan değiştir"
 type: docs
-url: /replace/
+url: /tr/replace/
 keywords: "Excel metin değiştir, Aspose.Cells Cloud, REST API, elektronik tablo metin değiştirme, API, Excel dosyası metin değiştirme"
 description: "Aspose.Cells Cloud REST API ile Excel dosyalarındaki mevcut metni yeni değerlerle değiştirin. C#, Java, Python, Node.js, PHP, Ruby, Go ve Perl için SDK’ları destekler."
 weight: 80

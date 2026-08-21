@@ -3,8 +3,8 @@ title: "Autojustera kolumn i Excel med Aspose.Cells Cloud API – Snabbguide"
 second_title: "Dokument"
 linktitle: "Kolumn"
 type: docs
-url: /worksheets/autofit/column/
-aliases: [/autofit-single-column-of-worksheet/]
+url: /sv/worksheets/autofit/column/
+aliases: [  /sv/autofit-single-column-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, autojustera kolumn, Excel API, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Lär dig hur du automatiskt justerar bredden på en kolumn (eller ett kolumnintervall) i ett Excel-ark med Aspose.Cells Cloud REST API. Innehåller cURL- och SDK-exempel (C#, Java, Python m.fl.) samt detaljerad information om begäran och svar."
 weight: 10

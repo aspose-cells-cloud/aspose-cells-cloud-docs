@@ -4,8 +4,8 @@ ArticleTitle: "Установка фонового изображения на �
 second_title: "Документ"
 linktitle: "Добавить"
 type: docs
-url: /worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
+url: /ru/worksheets/background/add/
+aliases: [  /ru/set-background-or-watermark-for-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, лист, фон, REST API, SDK, добавить изображение"
 description: "Узнайте, как добавить фоновое изображение (PNG, JPEG, BMP) на лист Excel с помощью REST API Aspose.Cells Cloud. Включает endpoint, необходимые параметры, шаги аутентификации, пример cURL и примеры кода SDK."
 weight: 180

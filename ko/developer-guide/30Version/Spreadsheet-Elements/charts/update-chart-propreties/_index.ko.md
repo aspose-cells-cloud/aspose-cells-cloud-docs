@@ -1,8 +1,8 @@
 ---
 title: "차트 속성 업데이트"
 type: docs
-url: /charts/properties/update/
-aliases: [/update-chart-properties/]
+url: /ko/charts/properties/update/
+aliases: [  /ko/update-chart-properties/ ]
 weight: 160
 keywords: "Aspose.Cells, 차트, 업데이트, 엑셀, REST API, SDK"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 엑셀 워크북에서 차트 속성(종류, 제목, 범례 등)을 업데이트하는 방법을 배웁니다. 엔드포인트, 매개변수, cURL 예제, C#, Java, PHP, Ruby, Node.js, Perl, Go용 SDK 스니펫이 포함됩니다."

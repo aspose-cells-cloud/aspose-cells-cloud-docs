@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "원격 스프레드시트 워크시트를 다른 형식으로 내보내는 방법: 단계별 가이드"
 linktype: "Export Spreadsheet as Format"
 type: docs
-url: /export-spreadsheet-as-format/
+url: /ko/export-spreadsheet-as-format/
 keywords: "Aspose.Cells, 스프레드시트 변환, API, 내보내기, PDF, CSV, JSON, XLSX"
 description: "Aspose Cloud에 저장된 엑셀 워크북을 단일 REST 엔드포인트를 통해 PDF, XLSX, CSV, JSON 또는 HTML로 변환하세요. 요청 구문, 매개변수를 배우고 C#, Java, Python 등 여러 언어의 SDK 예제를 확인하세요."
 weight: 100

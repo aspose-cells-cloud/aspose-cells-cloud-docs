@@ -3,7 +3,7 @@ title: "Object Exists API – Проверка наличия файла/пап�
 second_title: "Документ"
 ArticleTitle: "Object Exists API – Проверка наличия файла или папки в Aspose.Cells Cloud"
 linktype: "docs"
-url: "/object-exists/"
+url: /ru/object-exists/
 keywords: "Aspose.Cells, облачное хранилище, наличие объекта, наличие файла, наличие папки, API"
 description: "С помощью Object Exists API можно быстро проверить, существует ли файл или папка в облачном хранилище Aspose.Cells Cloud. Поддерживает необязательное указание имени хранилища и версии объекта, работает с версионированными объектами."
 weight: 100

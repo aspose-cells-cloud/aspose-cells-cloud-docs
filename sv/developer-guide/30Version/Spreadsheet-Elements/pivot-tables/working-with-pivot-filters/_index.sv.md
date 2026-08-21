@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: Filter
 type: docs
 url: /sv/pivot-tables/add-filters/
-aliases: [/sv/working-with-pivot-filters/]
+aliases: [  /sv/working-with-pivot-filters/ ]
 keywords: "Aspose.Cells, Pivottabell, Filter, REST API, Molntjänst"
 description: "Lär dig hur du lägger till, hämtar och tar bort pivottabellfilter med Aspose.Cells Cloud REST API. Innehåller begärandesyntax, nödvändiga parametrar, cURL-exempel och SDK-utdrag för C# och Go."
 weight: 50

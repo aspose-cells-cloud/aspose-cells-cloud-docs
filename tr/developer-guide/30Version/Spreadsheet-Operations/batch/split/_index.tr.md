@@ -2,7 +2,7 @@
 title: "Toplu Bölme"
 second_title: "Belge"
 type: docs
-url: /batch/split
+url: /tr/batch/split
 keywords: "Toplu Bölme, Aspose.Cells Cloud, REST API, Excel, PDF, CSV, JSON, Elektronik Tablo, Bulut SDK'sı"
 description: "Elektronik tablo dosyalarını PDF, CSV veya JSON gibi birden fazla formata bölen Aspose.Cells Cloud Toplu Bölme API'sinin belgeleri. İstek detayları, örnek cURL komutları ve çeşitli programlama dilleri için SDK kullanımı içerir."
 weight: 100

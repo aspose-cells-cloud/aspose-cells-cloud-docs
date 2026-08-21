@@ -3,7 +3,7 @@ title: "Converti foglio di lavoro in PDF, PNG, CSV e altro – Aspose.Cells Clou
 second_title: "Documento"
 linktitle: "Converti foglio di lavoro"
 type: docs
-url: /worksheets/conversion/
+url: /it/worksheets/conversion/
 aliases:
   - /convert-worksheet-to-image/
   - /worksheets/to-image/

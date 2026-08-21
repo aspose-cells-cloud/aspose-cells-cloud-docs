@@ -1,8 +1,8 @@
 ---
 title: "Grafik Özniteliklerini Güncelle"
 type: docs
-url: /charts/properties/update/
-aliases: [/update-chart-properties/]
+url: /tr/charts/properties/update/
+aliases: [  /tr/update-chart-properties/ ]
 weight: 160
 keywords: "Aspose.Cells, grafik, güncelle, Excel, REST API, SDK"
 description: "Aspose.Cells Cloud REST API (v3.0) kullanarak bir Excel çalışma kitabında grafik özniteliklerini (türü, başlığı, efsane vb.) nasıl güncelleyeceğinizi öğrenin. Endpoint, parametreler, cURL örneği ve C#, Java, PHP, Ruby, Node.js, Perl ve Go için SDK kod parçacıklarını içerir."

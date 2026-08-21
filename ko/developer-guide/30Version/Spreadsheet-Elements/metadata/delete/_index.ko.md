@@ -3,7 +3,7 @@ title: "Excel 파일에서 메타데이터 삭제하기"
 second_title: "문서"
 linktitle: "스토리지 사용 없이 삭제"
 type: docs
-url: /metadata/delete/
+url: /ko/metadata/delete/
 keywords: "Aspose.Cells, 메타데이터 삭제, Excel API, 워크북 속성"
 description: "Aspose.Cells Cloud API를 통해 워크북 메타데이터(작성자, 제목, 사용자 정의 등)를 삭제합니다. 엔드포인트, 인증, 매개변수, cURL 및 SDK 샘플 포함."
 weight: 55

@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как переименовать листы в Excel — изменение названий листов"
 linktitle: "Переименование листа в электронной таблице"
 type: docs
-url: /rename-worksheet-in-spreadsheet/
+url: /ru/rename-worksheet-in-spreadsheet/
 keywords: "переименование листа, Aspose.Cells Cloud, Excel API, электронная таблица, SDK, REST API"
 description: "Легко переименовывайте листы Excel с помощью Aspose.Cells Cloud API. Узнайте необходимые параметры, посмотрите примеры cURL и получите код SDK для C#, Java, Python и других языков."
 weight: 100

@@ -3,7 +3,7 @@ title: "สร้างสมุดงาน Excel ที่ว่างเป�
 second_title: "เอกสาร"
 linktype: "สมุดงานที่ว่างเปล่า"
 type: docs
-url: /create-an-empty-excel-file/
+url: /th/create-an-empty-excel-file/
 aliases:
   [
     "/create-an-empty-excel-workbook/",

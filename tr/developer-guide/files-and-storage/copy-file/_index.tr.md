@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Bulut Tabanlı Excel Dosya Yönetimi Çözümü – Aspose.Cells Dosya Kopyalama API'sinin Toplu Kopyalama İşlevselliğinin Detaylı Açıklaması"
 linktitle: "Dosya Kopyala"
 type: docs
-url: /copy-file/
+url: /tr/copy-file/
 keywords: "Aspose.Cells, CopyFile API, Excel dosyası kopyalama, Bulut depolama, REST API"
 description: "Aspose.Cells Cloud CopyFile API’sini kullanarak Excel dosyalarını verimli bir şekilde çoğaltmayı ve depolama konumları arasında yönetmeyi öğrenin."
 weight: 100

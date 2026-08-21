@@ -3,8 +3,8 @@ title: "Obtenir les données des cellules à partir d’une plage nommée"
 second_title: "Document"
 linktitle: "Valeurs"
 type: docs
-url: /ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
+url: /fr/ranges/get/values/
+aliases: [  /fr/get-cells-data-based-on-named-range/ ]
 keywords: "Aspose.Cells, Cloud, API REST, Excel, plage nommée, valeurs de cellule, feuille de calcul"
 description: "Récupérez les valeurs de cellules à partir d’une plage nommée dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Ce service est accessible via plusieurs SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) et fonctionne sur une large gamme de plateformes de développement."
 weight: 20

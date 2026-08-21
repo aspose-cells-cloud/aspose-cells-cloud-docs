@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API - Yerel Excel Aralık Verisini JSON Dosyasın
 secondtitle: "Belge"
 ArticleTitle: "Yerel Elektronik Tablo Aralık Verisini JSON Dosyasına Nasıl Dönüştürülür: Adım Adım Kılavuz"
 linktype: "Dökümanlar"
-url: "/convert-range-to-json/"
+url: /tr/convert-range-to-json/
 keywords: "aralığı json'a dönüştür, Aspose.Cells Cloud, Excel'den JSON'a, elektronik tablo dönüştürme, API"
 description: "Aspose.Cells Cloud API kullanarak yerel bir Excel elektronik tablosundan belirli bir aralığı JSON'a dönüştürün."
 weight: 100

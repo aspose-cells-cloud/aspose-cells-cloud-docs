@@ -2,7 +2,7 @@
 title: "Обновление второго значения оси диаграммы"
 ArticleTitle: "Обновление второго значения оси диаграммы – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/second-value-axis/update/
+url: /ru/charts/second-value-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Chart API, Вторая ось значений, Excel, REST, облачный SDK"
 description: "Обновляет вторую ось значений диаграммы в листе Excel с использованием Aspose.Cells Cloud REST API. Включает примеры запросов, коды ответов и предварительные требования."

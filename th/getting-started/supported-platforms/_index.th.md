@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "แพลตฟอร์มที่ Aspose.Cells Cloud รองรับ: วินโดวส์ ลินุกซ์ และแมกโอเอสดีเอ็กซ์"
 LinkTitle: "แพลตฟอร์มที่รองรับ"
 type: docs
-url: /supported-platforms/
+url: /th/supported-platforms/
 description: "เรียนรู้เกี่ยวกับระบบปฏิบัติการ SDK และภาพ Docker ที่ REST API ของ Aspose.Cells Cloud รองรับบนวินโดวส์ ลินุกซ์ และแมกโอเอสดีเอ็กซ์"
 weight: 50
 keywords: "Aspose.Cells Cloud, REST API, Excel, Spreadsheet, SDK, Docker, Windows, Linux, macOS"

@@ -3,8 +3,8 @@ title: "استبدال نص في ملف مصنف إكسل"
 second_title: "مستند"
 linktitle: "استبدال في المصنف"
 type: docs
-url: /workbook/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /ar/workbook/replace-text/
+aliases: [  /ar/replace-text-in-a-workbook/ ]
 weight: 60
 keywords: "Aspose.Cells Cloud, استبدال النص, ملف مصنف إكسل, XLSX, ODS, واجهة برمجة التطبيقات REST, جدول بيانات, SDK"
 description: "استبدال النص في ملفات مصنف إكسل (XLS, XLSX, XLSM, XLSB) وجداول بيانات OpenDocument (ODS) باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. متاحة عبر cURL ومجموعة واسعة من SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, إلخ)."

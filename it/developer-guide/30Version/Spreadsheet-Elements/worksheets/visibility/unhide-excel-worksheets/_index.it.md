@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Rendi visibile"
 type: docs
 url: /it/worksheets/unhide/
-aliases: [/it/unhide-excel-worksheets/]
+aliases: [  /it/unhide-excel-worksheets/ ]
 keywords: "Aspose.Cells, rendi visibile foglio, Excel API, foglio di calcolo cloud, REST, visibilità foglio, cartella di lavoro Excel"
 description: "Scopri come utilizzare l'API REST di Aspose.Cells Cloud per rendere visibile un foglio in una cartella di lavoro Excel. Include dettagli della richiesta, esempi cURL e frammenti di codice SDK per diversi linguaggi di programmazione."
 weight: 60

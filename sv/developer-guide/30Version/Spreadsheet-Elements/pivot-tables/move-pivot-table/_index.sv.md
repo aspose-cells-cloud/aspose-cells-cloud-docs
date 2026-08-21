@@ -3,8 +3,8 @@ title: "Flytta en pivottabell i en Excel-fil"
 second_title: "Dokument"
 linktitle: Flytta
 type: docs
-url: /pivot-tables/move/
-aliases: [/move-pivot-table/]
+url: /sv/pivot-tables/move/
+aliases: [  /sv/move-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, flytta pivottabell, Excel, REST API, SDK, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
 description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att flytta en pivottabell inom en Excel-arbetsbok. SDK:er är tillgängliga för Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby och Swift."
 weight: 120

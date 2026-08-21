@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "العلامة المائية والخلفية"
 type: docs
 url: /ar/watermark-and-background/
-aliases: [ /export/excel-chart-to-different-formats/،/workbook/background/]
+aliases: [  /ar/export/excel-chart-to-different-formats/،/workbook/background/ ]
 keywords: "Aspose.Cells Cloud, Excel, علامة مائية, خلفية, REST API"
 description: "تتيح واجهة Aspose.Cells Cloud REST API للمطورين إضافة وحذف وإدارة الخلفيات والعلامات المائية في ملفات Excel. تشمل اللغات المدعومة Android وC# وGo وJava وNodeJS وPerl وPHP وPython وRuby وSwift."
 weight: 20

@@ -3,8 +3,8 @@ title: "Alle Formen auf einem Excel-Arbeitsblatt abrufen"
 second_title: "Dokument"
 linktitle: "Alle-abrufen"
 type: docs
-url: /shapes/get-all/
-aliases: [/get-all-shapes-inside-the-worksheet/]
+url: /de/shapes/get-all/
+aliases: [  /de/get-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, Cloud-API, Excel-Formen, Formen abrufen, REST, SDK"
 description: "Rufen Sie alle Formen (Diagramme, Bilder, Textfelder) von einem Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API ab. Enthält ein cURL-Beispiel, SDK-Snippets, Authentifizierungsschritte und Fehlerbehandlung."
 ArticleTitle: "Alle Formen auf einem Excel-Arbeitsblatt abrufen"

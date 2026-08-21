@@ -3,8 +3,8 @@ title: "Ottenere una Proprietà Specifica del Documento"
 second_title: "Documento"
 linktitle: "Ottieni"
 type: docs
-url: /document-properties/get/
-aliases: [/get-a-particular-document-property/]
+url: /it/document-properties/get/
+aliases: [  /it/get-a-particular-document-property/ ]
 keywords: "Aspose.Cells, API Cloud, Ottieni Proprietà Documento, Metadata Excel, REST GET, Esempi SDK"
 description: "Recupera una proprietà nominata del documento (ad esempio, Autore, Titolo) da un file Excel utilizzando l'API REST Cloud di Aspose.Cells. Include un esempio cURL, frammenti di codice SDK e schema di risposta."
 weight: 20

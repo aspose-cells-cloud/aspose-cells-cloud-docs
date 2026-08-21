@@ -3,8 +3,8 @@ title: "Buscar texto en una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Buscar en la hoja de cálculo"
 type: docs
-url: /worksheets/find-text/
-aliases: [/find-text-in-a-worksheet/]
+url: /es/worksheets/find-text/
+aliases: [  /es/find-text-in-a-worksheet/ ]
 weight: 40
 keywords: "Excel, Aspose.Cells Cloud, API REST, buscar texto, hoja de cálculo, hoja de cálculo, búsqueda"
 description: "Utilice la API REST de Aspose.Cells Cloud para buscar texto en una hoja de cálculo de Excel. La API está disponible en múltiples SDK y lenguajes de programación."

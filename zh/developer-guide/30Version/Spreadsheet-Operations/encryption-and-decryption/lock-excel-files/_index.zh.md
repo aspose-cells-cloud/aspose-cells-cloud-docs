@@ -3,8 +3,8 @@ title: "锁定 Excel 文件"
 second_title: "文档"
 linktitle: "锁定 Excel 文件"
 type: docs
-url: /lock-excel-files/
-aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+url: /zh/lock-excel-files/
+aliases: [  /zh/lock/without-storage/ , /zh/lock/ , /zh/lock/without-using-storage/ ]
 keywords: "锁定, Excel, API, Aspose.Cells, 云, REST, 工作簿, 电子表格, SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）锁定 Excel 工作簿。内容包括 HTTPS 端点、身份验证、cURL 请求、响应模式以及 C#、Java、Python 等语言的 SDK 代码示例。"
 ArticleTitle: "锁定 Excel 文件 – Aspose.Cells Cloud API 文档"

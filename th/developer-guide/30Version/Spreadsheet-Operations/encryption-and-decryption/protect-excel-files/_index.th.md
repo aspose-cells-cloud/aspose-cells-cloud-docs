@@ -3,7 +3,7 @@ title: "ป้องกันไฟล์ Excel"
 second_title: "เอกสาร"
 linktype: "เข้ารหัสไฟล์ Excel"
 type: docs
-url: /protect-excel-files/
+url: /th/protect-excel-files/
 aliases:
   [
     /protect/without-storage/,

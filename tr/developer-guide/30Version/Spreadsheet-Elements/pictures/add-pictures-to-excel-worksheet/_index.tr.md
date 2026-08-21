@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "Ekle"
 type: docs
 url: /tr/pictures/add/
-aliases: [/tr/add-pictures-to-excel-worksheet/]
+aliases: [  /tr/add-pictures-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, resim ekle, REST API"
 description: "Aspose.Cells Cloud REST API’sini kullanarak bir Excel çalışma sayfasına resim ekleyin. Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby ve Swift için SDK’lar, platformlar arası entegrasyonu kolaylaştırır."
 weight: 20

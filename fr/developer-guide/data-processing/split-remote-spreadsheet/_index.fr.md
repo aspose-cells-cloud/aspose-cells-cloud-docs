@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Fractionner un fichier Excel dans le cloud pour créer des fichiers distincts et exporter vers plus de 30 formats"
 linktitle: "Fractionner une feuille de calcul distante dans le cloud"
 type: docs
-url: /split-remote-spreadsheet/
+url: /fr/split-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, fractionner un classeur Excel, outil de fractionnement de feuille de calcul, API cloud, exporter vers PDF, exporter vers CSV, exporter vers JSON, export multiformat, traitement de feuilles de calcul dans le cloud"
 description: "Utilisez l’API Aspose.Cells Cloud pour fractionner un classeur Excel stocké dans le stockage cloud en feuilles de calcul individuelles, puis exporter chaque partie vers plus de 30 formats tels que PDF, CSV, JSON, XLSX, HTML, ODS et XPS."
 weight: 100

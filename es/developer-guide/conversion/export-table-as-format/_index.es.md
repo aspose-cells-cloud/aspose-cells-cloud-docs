@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cómo exportar una tabla de hoja de cálculo remota a otro formato: Guía paso a paso"
 linktitle: "Exportar Tabla al Formato Especificado"
 type: docs
-url: /export-table-as-format/
+url: /es/export-table-as-format/
 keywords: "Aspose.Cells, Exportar Tabla, Excel a PDF, API en la nube, REST"
 description: "Exporta una tabla de Excel almacenada en la nube a PDF, PNG, CSV, JSON u otros formatos mediante la API de Aspose.Cells Cloud. Punto final HTTPS seguro con autenticación JWT y ejemplos de SDK."
 weight: 100

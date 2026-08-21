@@ -3,8 +3,8 @@ title: "Excel Dosyasında Bir Pivot Tabloyu Taşı"
 second_title: "Belge"
 linktitle: Taşı
 type: docs
-url: /pivot-tables/move/
-aliases: [/move-pivot-table/]
+url: /tr/pivot-tables/move/
+aliases: [  /tr/move-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, pivot tabloyu taşı, Excel, REST API, SDK, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
 description: "Aspose.Cells Cloud REST API'sini kullanarak bir Excel çalışma kitabında pivot tabloyu nasıl taşıyacağını öğrenin. SDK'lar Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby ve Swift için mevcuttur."
 weight: 120

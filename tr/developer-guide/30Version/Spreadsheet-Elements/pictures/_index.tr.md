@@ -3,8 +3,8 @@ title: "Excel resimleriyle çalışma"
 second_title: "Belge"
 linktitle: "Resimler"
 type: docs
-url: /pictures/
-aliases: [/working-with-pictures/]
+url: /tr/pictures/
+aliases: [  /tr/working-with-pictures/ ]
 keywords: "Excel, resim, Aspose.Cells Cloud, REST API, resim işleme, Excel resimleri"
 description: "Aspose.Cells Cloud REST API kullanarak Excel çalışma sayfalarında resimleri nasıl alacağınızı, ekleyeceğinizi, güncelleyeceğinizi ve sileceğinizi öğrenin. C#, Java, Python ve daha fazlası için kod örneklerini içerir."
 weight: 100

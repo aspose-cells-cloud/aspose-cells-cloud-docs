@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud에서 로컬 파일 처리와 클라우드 파일 처리의 차이점은 무엇인가요?"
 linktitle: "로컬 파일 처리 vs. 클라우드 파일 처리"
 type: docs
-url: /learn/local-file-processing-vs-cloud-file-processing/
+url: /ko/learn/local-file-processing-vs-cloud-file-processing/
 description: "Aspose.Cells Cloud의 로컬 파일 및 클라우드 파일 처리 방식을 비교합니다: 저장소, 비용, 보안 및 일반적인 활용 사례를 살펴보고 어떤 접근 방식이 워크플로우에 적합한지 이해하세요."
 keywords: "Aspose.Cells Cloud, 로컬 파일 처리, 클라우드 파일 처리, 스프레드시트 변환, API"
 weight: 10

@@ -3,8 +3,8 @@ title: "Alle Bilder in einem Excel-Arbeitsblatt löschen"
 second_title: "Dokument"
 linktitle: "Löschen"
 type: docs
-url: /pictures/clear/
-aliases: [/delete-all-pictures-from-excel-worksheet/]
+url: /de/pictures/clear/
+aliases: [  /delete-all-pictures-from-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, alle Bilder löschen, Arbeitsblatt, REST API, Bilder löschen"
 description: "Erfahren Sie, wie Sie alle Bilder aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API mit cURL- und SDK-Beispielen löschen."
 weight: 60

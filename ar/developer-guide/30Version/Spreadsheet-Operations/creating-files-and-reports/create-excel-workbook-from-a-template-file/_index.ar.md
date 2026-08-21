@@ -3,7 +3,7 @@ title: "كيفية إنشاء ملف مصنف Excel باستخدام ملف قا
 second_title: "مستند"
 linktitle: "ملف القالب"
 type: docs
-url: /create-an-excel-file-with-template-file/
+url: /ar/create-an-excel-file-with-template-file/
 aliases:
   - /create-excel-workbook-from-a-template-file/
   - /workbook/new-from-a-template-file/

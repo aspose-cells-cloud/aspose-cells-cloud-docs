@@ -4,8 +4,8 @@ second_title: "Документ"
 linktype: "Руководство разработчика"
 ArticleTitle: "Преобразование, объединение, разделение, защита, поиск, замена и преобразование — всё в облаке Cells."
 type: docs
-url: /developer‑guide/
-aliases: [/developer‑guide‑v4.0/]
+url: /ru/developer‑guide/
+aliases: [  /ru/developer‑guide‑v4.0/ ]
 keywords: "Aspose.Cells Cloud, REST API для Excel, преобразование электронных таблиц, объединение, разделение, защита, поиск и замена, трансформация данных, примеры SDK, Java, .NET, Python, Node.js, PHP, Go, Ruby, Perl"
 description: "Полное руководство разработчика для REST API Aspose.Cells Cloud, охватывающее преобразование, объединение, разделение, защиту, поиск и замену, а также трансформацию данных, со ссылками на примеры SDK для Java, .NET, Python, Node.js, PHP, Go, Ruby и Perl."
 weight: 20

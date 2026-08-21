@@ -2,7 +2,7 @@
 title: "일괄 잠금 해제"
 second: "문서"
 type: docs
-url: /batch/unlock
+url: /ko/batch/unlock
 keywords: "일괄 잠금 해제, Aspose.Cells Cloud, Excel, REST API, 스프레드시트, 클라우드 SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 여러 Excel 파일을 일괄적으로 잠금 해제합니다. C#, Java, Python 및 기타 언어용 SDK를 지원합니다."
 weight: 100

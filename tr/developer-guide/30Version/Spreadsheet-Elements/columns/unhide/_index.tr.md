@@ -4,7 +4,7 @@ ArticleTitle: "Excel çalışma sayfasında sütunları göster - Aspose.Cells C
 second_title: "Belge"
 linktitle: "Göster"
 type: docs
-url: /columns/unhide/
+url: /tr/columns/unhide/
 aliases:
   [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
 keywords: "Aspose.Cells, Bulut API, sütunları göster, Excel, REST, SDK"

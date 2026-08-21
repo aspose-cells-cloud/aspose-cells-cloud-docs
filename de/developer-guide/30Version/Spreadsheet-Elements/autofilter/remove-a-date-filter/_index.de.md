@@ -3,7 +3,7 @@ title: "Datumsfilter löschen – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktitle: "Datumsfilter löschen"
 type: docs
-url: /autofilter/delete-date-filter/
+url: /de/autofilter/delete-date-filter/
 aliases:
   - /remove-a-date-filter/
   - /autofilter/delete-a-date-filter/

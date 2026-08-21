@@ -3,7 +3,7 @@ title: "البحث في جميع العناصر النصية داخل جدول �
 ArticleTitle: "البحث في جميع العناصر النصية داخل جدول البيانات – واجهة برمجة تطبيقات Aspose.Cells Cloud"
 second_title: "الوثيقة"
 linktype: "docs"
-url: /cells/search/content/all-textitems
+url: /ar/cells/search/content/all-textitems
 aliases: []
 keywords: "Aspose.Cells، البحث، العناصر النصية، واجهة برمجة التطبيقات"
 description: "البحث في جميع العناصر النصية داخل ملف جدول بيانات باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud."

@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Очистка"
 type: docs
 url: /ru/clear/
-aliases: [/ru/clearobjects/]
+aliases: [  /ru/clearobjects/ ]
 keywords: "Aspose.Cells, Excel, очистка объектов, REST API, облачный SDK, удаление комментариев, удаление диаграмм"
 description: "Используйте облачное REST API Aspose.Cells для удаления комментариев, диаграмм, фигур и других объектов из рабочей книги Excel. Поддерживает множество SDK и возвращает очищенный файл в формате Base64."
 weight: 39

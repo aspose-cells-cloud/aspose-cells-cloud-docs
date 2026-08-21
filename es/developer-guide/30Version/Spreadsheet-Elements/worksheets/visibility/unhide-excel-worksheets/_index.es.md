@@ -3,8 +3,8 @@ title: "Mostrar una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Mostrar"
 type: docs
-url: /worksheets/unhide/
-aliases: [/unhide-excel-worksheets/]
+url: /es/worksheets/unhide/
+aliases: [  /es/unhide-excel-worksheets/ ]
 keywords: "Aspose.Cells, mostrar hoja de cálculo, API de Excel, hoja de cálculo en la nube, REST, visibilidad de hoja de cálculo, libro de Excel"
 description: "Aprenda cómo utilizar la API REST de Aspose.Cells Cloud para mostrar una hoja de cálculo en un libro de Excel. Incluye detalles de la solicitud, ejemplos de cURL y fragmentos de código de SDK para múltiples lenguajes de programación."
 weight: 60

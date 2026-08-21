@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Buscar texto en hoja de cálculo Excel remota – Encontrar datos específicos"
 linktitle: "Buscar contenido en hoja de cálculo remota"
 type: docs
-url: /search-content-in-remote-worksheet/
+url: /es/search-content-in-remote-worksheet/
 keywords: "Aspose Cells, Excel API, búsqueda de texto, hoja de cálculo remota"
 description: "Busque texto, números o fórmulas en una hoja de cálculo Excel remota mediante la API de Aspose.Cells Cloud. Admite archivos que no distinguen mayúsculas de minúsculas y archivos protegidos con contraseña."
 weight: 100

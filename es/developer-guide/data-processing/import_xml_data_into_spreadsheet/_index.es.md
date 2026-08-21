@@ -3,7 +3,7 @@ title: "Importar datos XML a una hoja de cálculo"
 ArticleTitle: "Importar datos XML a una hoja de cálculo – Aspose.Cells Cloud API"
 second_title: "Document"
 linktype: "docs"
-url: /cells/import/data/xml
+url: /es/cells/import/data/xml
 aliases: []
 keywords: "Importar XML, Aspose.Cells, API"
 description: "Importar un archivo de datos XML a una hoja de cálculo local mediante Aspose.Cells Cloud."

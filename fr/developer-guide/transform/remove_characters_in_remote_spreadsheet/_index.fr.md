@@ -4,7 +4,7 @@ ArticleTitle: "Supprimer des caractères dans une feuille de calcul distante –
 second_title: "Document"
 linktitle: "Supprimer des caractères dans une feuille de calcul distante"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
+url: /fr/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
 aliases: []
 keywords: "Aspose.Cells, supprimer des caractères, traitement de texte"
 description: "Supprime des caractères définis par l'utilisateur, des ensembles de symboles prédéfinis ou toute sous-chaîne de chaque cellule de la plage sélectionnée, tout en conservant les formules, le formatage et la validation des données pour une feuille de calcul distante."

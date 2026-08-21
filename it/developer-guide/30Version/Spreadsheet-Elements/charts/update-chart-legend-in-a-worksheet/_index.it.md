@@ -1,8 +1,8 @@
 ---
 title: "Aggiornare la legenda di un grafico in un foglio di lavoro"
 type: docs
-url: /charts/legend/update/
-aliases: [/update-chart-legend-in-a-worksheet/]
+url: /it/charts/legend/update/
+aliases: [  /it/update-chart-legend-in-a-worksheet/ ]
 weight: 160
 keywords: "Aspose.Cells, Cloud, Excel, Grafico, Legenda, REST API, Aggiornamento, Foglio di lavoro, cURL, SDK"
 description: "Come aggiornare la legenda di un grafico in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud, con esempi di richiesta cURL e frammenti di codice SDK per diversi linguaggi di programmazione."

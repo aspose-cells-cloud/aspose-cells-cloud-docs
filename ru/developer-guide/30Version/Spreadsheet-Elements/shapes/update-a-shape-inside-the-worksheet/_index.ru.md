@@ -3,8 +3,8 @@ title: "Обновление фигуры на листе Excel"
 second_title: "Документ"
 linktype: "Обновление"
 type: docs
-url: /shapes/update/
-aliases: [/update-a-shape-inside-the-worksheet/]
+url: /ru/shapes/update/
+aliases: [  /ru/update-a-shape-inside-the-worksheet/ ]
 keywords: "обновление фигуры в Excel через API, Aspose.Cells Cloud, обновление фигуры Excel, REST API, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
 description: "Узнайте, как обновить фигуру на листе Excel с помощью REST API Aspose.Cells Cloud. Включает HTTPS-конечную точку, данные по аутентификации, схему DTO, пошаговое руководство, пример cURL и примеры кода SDK для различных языков."
 ArticleTitle: "Обновление фигуры на листе Excel — API Aspose.Cells Cloud"

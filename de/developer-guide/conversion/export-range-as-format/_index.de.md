@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So exportieren Sie einen entfernten Tabellenkalkulationsbereich in andere Formate: Schritt-für-Schritt-Anleitung"
 linktype: "Exportiere Bereich als Format"
 type: docs
-url: /export-range-as-format/
+url: /de/export-range-as-format/
 keywords: "Aspose Cells, Excel-Bereich exportieren, PDF, PNG, CSV, Cloud API, Tabellenkalkulationskonvertierung"
 description: "Erfahren Sie, wie Sie einen bestimmten Excel-Bereich, der in Aspose.Cells Cloud gespeichert ist, in PDF, PNG, CSV oder andere Formate konvertieren. Enthält Endpunkt-Details, Parameter, Beispielanfragen, Antwortverarbeitung und Fehlerinformationen."
 weight: 100

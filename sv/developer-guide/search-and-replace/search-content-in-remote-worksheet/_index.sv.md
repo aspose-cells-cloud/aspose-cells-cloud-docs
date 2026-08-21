@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Sök efter text i fjärrarbetsblad i Excel-kalkylark – Hitta specifik data"
 linktitle: "Sök i innehåll i fjärrarbetsblad"
 type: docs
-url: /search-content-in-remote-worksheet/
+url: /sv/search-content-in-remote-worksheet/
 keywords: "Aspose Cells, Excel API, textsökning, fjärrarbetsblad"
 description: "Sök efter text, siffror eller formler i ett fjärrkalkylblad med Aspose.Cells Cloud API. Stöder skiftlägesokänslig sökning och lösenordsskyddade filer."
 weight: 100

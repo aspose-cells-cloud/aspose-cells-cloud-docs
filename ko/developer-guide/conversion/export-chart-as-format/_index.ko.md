@@ -5,7 +5,7 @@ description: "클라우드에 저장된 엑셀 워크북의 차트를 단일 RES
 ArticleTitle: "로컬 스프레드시트 워크시트를 PDF 파일로 변환하는 방법: 단계별 가이드"
 linktitle: "워크시트를 PDF로 변환"
 type: docs
-url: /export-chart-as-format/
+url: /ko/export-chart-as-format/
 keywords: "Aspose.Cells Cloud, 차트 내보내기, API, PDF, PNG, SVG, 엑셀, REST, 클라우드 변환"
 weight: 100
 ---

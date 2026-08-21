@@ -3,7 +3,7 @@ title: "Aggiungi il filtro Top 10 a un foglio di lavoro Excel (Aspose.Cells Cl
 ArticleTitle: "Aggiungi il filtro Top 10 a un foglio di lavoro Excel – Aspose.Cells Cloud"
 second_title: "Documento"
 linktype: "docs"
-url: /autofilter/add-top-10-filter/
+url: /it/autofilter/add-top-10-filter/
 aliases:
   [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
 keywords: "Aspose.Cells, AutoFilter, Filtro Top 10, API Excel"

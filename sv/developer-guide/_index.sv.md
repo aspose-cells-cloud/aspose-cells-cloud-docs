@@ -4,8 +4,8 @@ second_title: "Dokument"
 linktitle: "Utvecklarguide"
 ArticleTitle: "Konvertera, sammanfoga, dela, skydda, sök, ersätt & transformera – allt i Cells Cloud."
 type: docs
-url: /developer‑guide/
-aliases: [/developer‑guide‑v4.0/]
+url: /sv/developer‑guide/
+aliases: [  /sv/developer‑guide‑v4.0/ ]
 keywords: "Aspose.Cells Cloud, Excel REST API, kalkylbladskonvertering, sammanfoga, dela, skydda, sök och ersätt, datatransformation, SDK-exempel, Java, .NET, Python, Node.js, PHP, Go, Ruby, Perl"
 description: "Omfattande utvecklarguide för Aspose.Cells Cloud REST API:er, som täcker kalkylbladskonvertering, sammanfogning, delning, skyddning, sök-och-ersätt samt datatransformation, med länkar till SDK-exempel för Java, .NET, Python, Node.js, PHP, Go, Ruby och Perl."
 weight: 20

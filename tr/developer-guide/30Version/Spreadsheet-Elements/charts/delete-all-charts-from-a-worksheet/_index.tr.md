@@ -1,8 +1,8 @@
 ---
 title: "Çalışma Sayfasından Tüm Grafikleri Sil"
 type: docs
-url: /charts/clear/tr/
-aliases: [/delete-all-charts-from-a-worksheet/tr/]
+url: /tr/charts/clear/tr/
+aliases: [  /tr/delete-all-charts-from-a-worksheet/tr/ ]
 weight: 30
 keywords: "Aspose.Cells, Bulut, sil, tüm grafikler, çalışma sayfası, REST API, DELETE, SDK"
 description: "Aspose.Cells Cloud REST API (v3.0) kullanarak bir çalışma sayfasındaki tüm grafikleri nasıl sileceğinizi öğrenin. Uç nokta, parametreler, cURL örneği, SDK kod parçacıkları, kimlik doğrulama adımları ve hata işleme içerir."

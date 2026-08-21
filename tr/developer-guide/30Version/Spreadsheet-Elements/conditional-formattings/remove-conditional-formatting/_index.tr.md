@@ -1,7 +1,7 @@
 ---
 title: "Koşullu Biçimlendirmeyi Sil – Aspose.Cells Cloud API Referansı"
 type: docs
-url: /conditional-formattings/delete/
+url: /tr/conditional-formattings/delete/
 aliases:
   - /remove-conditional-formatting/
 keywords: "Aspose.Cells, Koşullu Biçimlendirme, Sil, API, Excel, Bulut"

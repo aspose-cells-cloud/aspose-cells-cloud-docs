@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Massen-Textersatz in lokalen Excel-Dateien – Finden & Ersetzen API"
 linktitle: "Inhalt von Tabellenkalkulationen ersetzen"
 type: docs
-url: /replace-spreadsheet-content/
+url: /de/replace-spreadsheet-content/
 keywords: "Text in Excel ersetzen, Aspose.Cells Finden & Ersetzen, lokale Tabellenkalkulations-API, Excel-Datei ersetzen, API-Inhalt ersetzen"
 description: "Ersetzen Sie Text in lokalen Excel-Arbeitsmappen, ohne diese in die Cloud hochzuladen. Verwenden Sie die Aspose.Cells Cloud Finden & Ersetzen API, um spezifische Bereiche, Arbeitsblätter oder ganze Dateien mit einem einzigen Aufruf zu aktualisieren."
 weight: 100

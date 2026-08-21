@@ -1,7 +1,7 @@
 ---
 title: "Очистка форматирования ячеек в листе Excel"
 type: docs
-url: /clear-cells-formatting-in-excel-worksheet/
+url: /ru/clear-cells-formatting-in-excel-worksheet/
 weight: 100
 keywords: "Aspose.Cells Cloud, Excel, очистка форматирования ячеек, REST API, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Используйте Aspose.Cells Cloud REST API для очистки форматирования ячеек в листе Excel. Включает детали запроса, пример cURL и фрагменты кода SDK для различных языков."

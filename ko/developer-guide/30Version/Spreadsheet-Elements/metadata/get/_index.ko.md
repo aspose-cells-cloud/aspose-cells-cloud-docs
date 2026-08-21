@@ -3,7 +3,7 @@ title: "Excel 파일에서 메타데이터 가져오기"
 second_title: "문서"
 linktitle: "스토리지 사용 없이 가져오기"
 type: docs
-url: /metadata/get/
+url: /ko/metadata/get/
 keywords: "Aspose.Cells, Excel, 메타데이터, REST API, 클라우드 SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북에서 기본 제공 또는 사용자 정의 메타데이터를 검색합니다. 요청 형식, 매개변수, 샘플 SDK 코드 및 오류 처리가 포함됩니다."
 weight: 23

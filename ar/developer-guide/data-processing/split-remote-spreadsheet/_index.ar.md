@@ -3,7 +3,7 @@ title: "واجهة برمجة تطبيقات تقسيم جداول البيان�
 second title: "مستند"
 ArticleTitle: "تقسيم ملف Excel في السحابة إلى ملفات منفصلة وتصديرها إلى أكثر من 30 صيغة"
 linktype: "docs"
-url: "/split-remote-spreadsheet/"
+url: /ar/split-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud، تقسيم ملف Excel، أداة تقسيم جداول البيانات، واجهة برمجة تطبيقات سحابية، تصدير إلى PDF، تصدير إلى CSV، تصدير إلى JSON، تصدير بصيغ متعددة، معالجة جداول البيانات في السحابة"
 description: "استخدم واجهة برمجة تطبيقات Aspose.Cells Cloud لتقسيم ملف Excel المحفوظ في التخزين السحابي إلى أوراق عمل منفصلة وتصدير كل جزء إلى أكثر من 30 صيغة مثل PDF وCSV وJSON وXLSX وHTML وODS وXPS."
 weight: 100

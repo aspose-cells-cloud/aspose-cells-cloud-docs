@@ -4,7 +4,7 @@ ArticleTitle: "Convertir Tabla a CSV – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Convertir Tabla a CSV"
 type: docs
-url: /cells/convert/table/csv
+url: /es/cells/convert/table/csv
 aliases: []
 keywords: "Convertir Tabla CSV, Aspose.Cells, Cloud API"
 description: "Convierte una tabla de una hoja de cálculo en una unidad local a un archivo CSV."

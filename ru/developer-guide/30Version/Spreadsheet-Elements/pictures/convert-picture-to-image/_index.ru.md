@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud API – Получение изображения и�
 second_title: "Документ"
 linktype: "Документация"
 url: /ru/pictures/get/
-aliases: [/convert-picture-to-image/]
+aliases: [  /ru/convert-picture-to-image/ ]
 keywords: "Aspose.Cells, Получение изображения, API, Excel, Облако, REST"
 description: "Получите конкретное изображение из листа Excel с помощью REST API Aspose.Cells Cloud. Включает URL-адрес конечной точки, параметры, шаги аутентификации, коды ответов и примеры кода."
 weight: 10

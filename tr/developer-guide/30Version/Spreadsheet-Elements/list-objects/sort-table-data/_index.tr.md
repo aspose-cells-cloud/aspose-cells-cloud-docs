@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasındaki ListObject Verilerini Sırala"
 second_title: "Belge"
 linktitle: "Sırala"
 type: docs
-url: /list-objects/sort-data/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
+url: /tr/list-objects/sort-data/
+aliases: [  /tr/get-a-list-object-or-table-inside-the-worksheet/ , /tr/tables/sort-data/ ]
 keywords: "Aspose.Cells Cloud, Excel, ListObject, Veri Sıralama, REST API, Çalışma Sayfası"
 description: "Aspose.Cells Cloud REST API (v3.0) kullanarak Excel çalışma sayfasındaki ListObject (tablo) verilerini nasıl sıralayacağınızı öğrenin. Uç nokta, parametreler, örnek cURL isteği ve SDK örneklerini içerir."
 weight: 40

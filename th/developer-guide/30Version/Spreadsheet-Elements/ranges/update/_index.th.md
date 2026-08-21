@@ -3,7 +3,7 @@ title: "วิธีอัปเดตเนื้อหาช่วงข้อ
 second_title: "เอกสาร"
 linktype: "อัปเดต"
 type: docs
-url: /ranges/update/
+url: /th/ranges/update/
 keywords: "Excel, การอัปเดตช่วงข้อมูล, Aspose.Cells Cloud, REST API, สเปรดชีต, รูปแบบช่วงข้อมูล, ค่าช่วงข้อมูล, ความสูงแถว, ความกว้างคอลัมน์"
 description: "อัปเดตเนื้อหาช่วงข้อมูลในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API แก้ไขรูปแบบ ค่า ความสูงแถว และความกว้างคอลัมน์ผ่าน SDK ที่รองรับ"
 weight: 20

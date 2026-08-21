@@ -1,8 +1,8 @@
 ---
 title: "Trabajo con la tarea SmartMarker en la API de Aspose.Cells Cloud"
 type: docs
-url: /tasks/smartmarker/
-aliases: [/working-with-smartmarker-task/]
+url: /es/tasks/smartmarker/
+aliases: [  /es/working-with-smartmarker-task/ ]
 keywords: "tarea SmartMarker, Aspose.Cells Cloud, API REST, Excel, automatización de hojas de cálculo"
 description: "Aprenda a usar la tarea SmartMarker de la API de Aspose.Cells Cloud con ejemplos en cURL y SDK, incluyendo el esquema de solicitud y el manejo de errores."
 weight: 60

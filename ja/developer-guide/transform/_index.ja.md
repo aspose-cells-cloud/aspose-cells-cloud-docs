@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "スプレッドシートを変換：空の行、列、ワークシートを削除し、範囲を入れ替え"
 linktitle: "変換"
 type: docs
-url: /transform/
+url: /ja/transform/
 keywords: "Aspose, Cells, API, 空の行を削除, 空の列を削除, 空のワークシートを削除, 範囲の入れ替え, スプレッドシートのクリーンアップ"
 description: "Aspose.Cells Cloud API を使用して、Excel の空の行、列、ワークシートを削除し、範囲を入れ替えます。クラウドベースの高速データクリーンアップで、自動化を実現します。"
 weight: 40

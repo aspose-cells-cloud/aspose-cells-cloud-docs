@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "重命名"
 type: docs
 url: /zh/worksheets/rename/
-aliases: [/zh/rename-excel-worksheet/]
+aliases: [  /zh/rename-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel 工作表重命名, REST API, 电子表格 SDK, 重命名工作表, 云存储"
 description: "使用 Aspose.Cells Cloud REST API 重命名 Excel 工作簿中的工作表。提供 Android、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby 和 Swift 的 SDK。"
 weight: 20

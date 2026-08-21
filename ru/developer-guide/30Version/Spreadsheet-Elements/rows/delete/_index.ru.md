@@ -3,7 +3,7 @@ title: "Работа с удалением строк в листе Excel"
 second_title: "Документ"
 linktitle: "Удаление"
 type: docs
-url: /rows/delete/
+url: /ru/rows/delete/
 keywords: "Aspose.Cells, удаление строки, Excel API, REST, облачные технологии, электронная таблица, Excel, SDK"
 description: "Узнайте, как удалить одну или несколько строк в листе Excel с использованием Aspose.Cells Cloud REST API. Включает примеры кода для Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby и Swift."
 weight: 20

@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – التحقق من صحة الخدمة (واجهة
 second_title: "وثيقة"
 ArticleTitle: "فحص صحة خدمة Aspose.Cells Cloud"
 linktype: "docs"
-url: /check-cloud-service-health/
+url: /ar/check-cloud-service-health/
 keywords: "Aspose.Cells Cloud، فحص صحة واجهة برمجة التطبيقات، حالة REST، مراقبة الخدمة السحابية"
 description: "راقب صحة خدمة Aspose.Cells Cloud في الزمن الفعلي. تعرّف على نقطة النهاية GET /v4.0/cells/status/check، والمعاملات، وتنسيق الاستجابة، وأمثلة SDK."
 weight: 100

@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasından Metin Öğelerini Alın"
 second_title: "Belge"
 linktitle: "Çalışma Sayfasında Metin Öğelerini Alın"
 type: docs
-url: /worksheets/get-text-items/
-aliases: [/get-text-items-from-a-worksheet/]
+url: /tr/worksheets/get-text-items/
+aliases: [  /tr/get-text-items-from-a-worksheet/ ]
 weight: 20
 keywords: "Aspose.Cells, Bulut API, Excel, çalışma sayfası, metin öğeleri, REST"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel dosyasındaki belirli bir çalışma sayfasından tüm metin öğelerini alın. Örnek cURL, SDK kodu, kimlik doğrulama adımları ve yanıt şemasını içerir."

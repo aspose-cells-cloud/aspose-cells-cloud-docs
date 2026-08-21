@@ -3,8 +3,8 @@ title: "Bereichsformat festlegen – Aspose.Cells Cloud API"
 second_title: "Dokumentation"
 linktitle: "Bereichsformat festlegen"
 type: docs
-url: /ranges/update/style/
-aliases: [/set-the-style-of-the-range/]
+url: /de/ranges/update/style/
+aliases: [  /de/set-the-style-of-the-range/ ]
 keywords: "Aspose.Cells, Bereichsformat, API, Excel, Cloud"
 description: "Erfahren Sie, wie Sie das Format eines Zellbereichs in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API festlegen. Enthält Authentifizierungsschritte, Anforderungsformat, Antwortdetails und SDK-Beispiele für .NET, Java, Python, Go und weitere."
 weight: 70

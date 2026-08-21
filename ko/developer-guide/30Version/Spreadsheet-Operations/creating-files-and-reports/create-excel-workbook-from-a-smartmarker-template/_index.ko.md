@@ -3,7 +3,7 @@ title: "스마트 마커 템플릿을 사용하여 엑셀 리포트 구축하기
 second_title: "문서"
 linktitle: "스마트마커"
 type: docs
-url: /build-report-with-smart-marker/
+url: /ko/build-report-with-smart-marker/
 aliases:
   - /create-excel-workbook-from-a-smartmarker-template/
   - /workbook/smartmarker/

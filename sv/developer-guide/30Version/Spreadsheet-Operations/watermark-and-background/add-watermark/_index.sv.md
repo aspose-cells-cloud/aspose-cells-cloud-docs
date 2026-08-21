@@ -3,8 +3,8 @@ title: "Lägg till vattenmärke i Excel-filer"
 second_title: "Dokument"
 linktitle: "Lägg till vattenmärke i Excel-filer"
 type: docs
-url: /add-watermark-into-excel-files/
-aliases: [/watermark/]
+url: /sv/add-watermark-into-excel-files/
+aliases: [  /sv/watermark/ ]
 keywords: "lägg till vattenmärke i Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Lär dig hur du lägger till ett textvattenmärke i Excel-arbetsböcker med Aspose.Cells Cloud REST API (v3.0). Innehåller cURL-exempel, nödvändiga parametrar och svarsinformation."
 weight: 39

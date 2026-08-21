@@ -3,8 +3,8 @@ title: "在 Excel 文件中添加图片"
 second_title: "文档"
 linktype: "添加"
 type: docs
-url: /pictures/add/
-aliases: [/add-pictures-to-excel-worksheet/]
+url: /zh/pictures/add/
+aliases: [  /zh/add-pictures-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, 添加图片, REST API"
 description: "使用 Aspose.Cells Cloud REST API 将图像添加到 Excel 工作表。适用于 Android、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby 和 Swift 的 SDK 简化了跨平台集成。"
 weight: 20

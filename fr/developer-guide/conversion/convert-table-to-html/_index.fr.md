@@ -6,7 +6,7 @@ weight: 100
 date: 2026-07-30
 last_updated: 2026-07-30
 version: "v4.0"
-url: /convert-table-to-html/
+url: /fr/convert-table-to-html/
 type: docs
 ---
 

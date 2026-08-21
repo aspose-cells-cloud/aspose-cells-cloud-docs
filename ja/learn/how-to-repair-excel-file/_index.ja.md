@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud を使用して Excel ファイルを修復する方法"
 linktitle: "Excel ファイルを修復する方法"
 type: docs
-url: /how-to-repair-excel-file
+url: /ja/how-to-repair-excel-file
 description: "Aspose.Cells Cloud を使用して Excel またはその他のスプレッドシート ファイルを修復する方法。"
 weight: 10
 kwords: Excel, Office Cloud, REST API, スプレッドシート, PDF, CSV, JSON, Markdown, Aspose.Cells Cloud を通じて Excel またはその他のスプレッドシート ファイルを修復する方法

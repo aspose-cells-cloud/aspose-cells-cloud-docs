@@ -4,7 +4,7 @@ ArticleTitle: "Uppdatera ett listobjekt i ett Excel-ark – Aspose.Cells Cloud A
 second_title: "Dokument"
 linktitle: "Uppdatera"
 type: docs
-url: /list-objects/update/
+url: /sv/list-objects/update/
 aliases:
   - /update-a-list-object-or-table-inside-the-worksheet/
   - /tables/update/

@@ -3,8 +3,8 @@ title: "Получение вертикальных разрывов стран�
 second_title: "Документ"
 linktitle: "Получение вертикальных разрывов страницы"
 type: docs
-url: /page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
+url: /ru/page-breaks/get-vertical-page-breaks/
+aliases: [  /ru/get-vertical-page-breaks-inside-worksheet/ ]
 keywords: "Aspose.Cells, вертикальные разрывы страницы, Excel API, облачная электронная таблица, REST API"
 description: "Получение вертикальных разрывов страницы из рабочего листа Excel с использованием Aspose.Cells Cloud REST API (версия 3.0). Включает HTTPS-эндпоинт, необходимые параметры, пример cURL, детали ответа, обработку ошибок и примеры SDK."
 weight: 20

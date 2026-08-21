@@ -4,8 +4,8 @@ second_title: "Документ"
 ArticleTitle: "Как запустить контейнер Aspose.Cells Cloud Docker"
 LinkTitle: "Контейнер Docker"
 type: docs
-url: /getting-started/how-to-run-docker-container/
-aliases: [/how-to-run-docker-container/]
+url: /ru/getting-started/how-to-run-docker-container/
+aliases: [  /ru/how-to-run-docker-container/ ]
 description: "Узнайте, как извлечь, настроить и запустить контейнер Aspose.Cells Cloud Docker в Windows или Linux. Включает YAML-файл Docker‑Compose, настройку лицензии, сопоставление портов и советы по устранению неполадок."
 weight: 100
 keywords:

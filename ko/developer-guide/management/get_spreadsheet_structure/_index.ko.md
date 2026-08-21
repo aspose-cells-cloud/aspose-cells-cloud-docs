@@ -3,7 +3,7 @@ title: "GetSpreadsheetStructure"
 ArticleTitle: "GetSpreadsheetStructure – Aspose.Cells Cloud"
 second_title: "문서"
 linktype: "docs"
-url: /cells/spreadsheet/structure
+url: /ko/cells/spreadsheet/structure
 aliases: []
 keywords: "Aspose.Cells, 스프레드시트 구조, API"
 description: "Excel 워크북의 핵심 메타데이터, 워크시트, 테이블, 피벗 테이블, 차트, 도형 및 기타 정보를 JObject 유형의 JSON 객체로 구조적으로 변환합니다."

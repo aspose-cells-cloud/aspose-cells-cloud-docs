@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – แปลงสมุดงาน Excel เป็
 second_title: "เอกสาร"
 linktitle: "แปลง Excel"
 type: docs
-url: /get-different-formats-files/
+url: /th/get-different-formats-files/
 aliases:
   - /export-excel-workbook-to-different-file-formats/
   - /export-different-formats/

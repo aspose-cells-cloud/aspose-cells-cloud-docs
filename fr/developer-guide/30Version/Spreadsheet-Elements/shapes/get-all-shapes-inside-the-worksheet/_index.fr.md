@@ -3,8 +3,8 @@ title: "Récupérer toutes les formes d'une feuille Excel"
 second_title: "Document"
 linktitle: "get-all"
 type: docs
-url: /shapes/get-all/
-aliases: [/get-all-shapes-inside-the-worksheet/]
+url: /fr/shapes/get-all/
+aliases: [  /fr/get-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, API Cloud, formes Excel, récupérer les formes, REST, SDK"
 description: "Récupérer toutes les formes (graphiques, images, zones de texte) d'une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut un exemple cURL, des extraits de code SDK, des étapes d’authentification et la gestion des erreurs."
 ArticleTitle: "Récupérer toutes les formes d'une feuille Excel"

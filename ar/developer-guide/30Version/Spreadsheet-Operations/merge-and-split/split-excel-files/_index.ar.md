@@ -4,8 +4,8 @@ ArticleTitle: "كيفية تقسيم ملف Excel إلى ملفات متعددة
 second_title: "المستند"
 linktype: "تقسيم ملف Excel"
 type: docs
-url: /split-multi-excel-files/
-aliases: [/split/multi-files/]
+url: /ar/split-multi-excel-files/
+aliases: [  /ar/split/multi-files/ ]
 keywords: "Excel، Aspose.Cells Cloud، REST API، تقسيم المصنف، ملفات متعددة، JPEG، PNG، PDF، CSV، JSON"
 description: "تتيح واجهة Aspose.Cells Cloud REST API تقسيم ملف Excel (المصنف) إلى ملفات متعددة بصيغ مختلفة. توفر هذه الوثائق معلمات الطلب، ومثالًا باستخدام cURL، وأكواد أمثلة لعدة لغات برمجة مثل C#، Java، PHP، Ruby، Node.js، Python، Perl، و Go."
 weight: 130

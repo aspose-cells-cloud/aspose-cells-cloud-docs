@@ -3,7 +3,7 @@ title: Bedingung zur bedingten Formatierung hinzufügen
 description: Erfahren Sie, wie Sie einer Arbeitsblatt-bedingten Formatierung mithilfe der Aspose.Cells Cloud REST API (v3.0) eine Bedingung hinzufügen. Enthält Endpunkt, Parameter, Authentifizierung, cURL-Beispiel, SDK-Snippets und Fehlerbehandlung.
 keywords: "Aspose.Cells Cloud, Bedingte Formatierung, Bedingung hinzufügen, REST API, Excel, Arbeitsblatt"
 type: docs
-url: /conditional-formattings/add-a-condition/
+url: /de/conditional-formattings/add-a-condition/
 aliases:
   - /add-a-condition-for-format-condition/
 weight: 40

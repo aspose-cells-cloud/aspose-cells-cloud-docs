@@ -3,7 +3,7 @@ title: "Importer des données JSON dans un classeur"
 ArticleTitle: "Importer des données JSON dans un classeur – API Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /cells/import/data/json
+url: /fr/cells/import/data/json
 aliases: []
 keywords: "import JSON, Aspose.Cells, classeur, API"
 description: "Importe un fichier de données JSON dans un classeur local."

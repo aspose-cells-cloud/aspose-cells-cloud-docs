@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Блокировка файлов Excel"
 type: docs
 url: /ru/lock-excel-files/
-aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+aliases: [  /ru/lock/without-storage/ , /ru/lock/ , /ru/lock/without-using-storage/ ]
 keywords: "Блокировка, Excel, API, Aspose.Cells, Облако, REST, Рабочая тетрадь, Электронная таблица, SDK"
 description: "Узнайте, как блокировать рабочие тетради Excel с помощью REST API Aspose.Cells Cloud (версия 3.0). Включает HTTPS-эндпоинт, аутентификацию, cURL-запрос, схему ответа и примеры кода SDK для C#, Java, Python и других языков."
 ArticleTitle: "Блокировка файлов Excel – Документация API Aspose.Cells Cloud"

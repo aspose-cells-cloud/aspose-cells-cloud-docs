@@ -3,7 +3,7 @@ title: "Importa un array di stringhe bidimensionale in un foglio di lavoro Excel
 second_title: "Document"
 linktype: "Importa un array di stringhe bidimensionale"
 type: docs
-url: /import-a-2d-string-array-into-excel-worksheet/
+url: /it/import-a-2d-string-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-string-array-into-excel-worksheet/,

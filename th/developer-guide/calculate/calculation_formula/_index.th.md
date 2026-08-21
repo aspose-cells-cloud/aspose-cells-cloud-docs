@@ -4,7 +4,7 @@ ArticleTitle: "สูตรการคำนวณ – Aspose.Cells Cloud API"
 second_title: "เอกสาร"
 linktitle: "สูตรการคำนวณ"
 type: docs
-url: /cells/calculate/formula
+url: /th/cells/calculate/formula
 aliases: []
 keywords: "Aspose Cells, สูตรการคำนวณ, สเปรดชีต, API"
 description: "คำนวณสูตรในสเปรดชีตโดยใช้ Aspose.Cells Cloud API"

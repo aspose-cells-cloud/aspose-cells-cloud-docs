@@ -4,7 +4,7 @@ ArticleTitle: "테이블을 PDF로 변환 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktitle: "테이블을 PDF로 변환"
 type: docs
-url: /cells/convert/table/pdf
+url: /ko/cells/convert/table/pdf
 aliases: []
 keywords: "테이블 PDF 변환, Aspose.Cells, API"
 description: "로컬 드라이브의 스프레드시트 테이블을 Aspose.Cells Cloud를 사용해 PDF 파일로 변환합니다."

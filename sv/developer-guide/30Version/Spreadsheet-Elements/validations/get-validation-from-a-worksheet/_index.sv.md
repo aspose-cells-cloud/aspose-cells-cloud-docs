@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Hämta"
 type: docs
 url: /sv/validations/get/
-aliases: [/sv/get-validation-from-a-worksheet/]
+aliases: [  /sv/get-validation-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API för kalkylbladsvalidering, hämta validering med index, Excel REST API, Aspose.Cells SDK"
 description: "Hämta ett kalkylbladsvalidering med sitt nollbaserade index från en Excel-arbetsbok med Aspose.Cells Cloud API (v3.0). Inkluderar cURL-exempel, svarsschema, felkoder och SDK-utdrag för C#, Java, Python och mer."
 weight: 10

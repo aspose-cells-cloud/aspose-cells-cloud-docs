@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud Başlangıç Kılavuzu"
 linktitle: "Başlangıç"
 type: docs
-url: /getting-started/
+url: /tr/getting-started/
 description: "Aspose.Cells Cloud REST API kullanarak Excel dosyalarını nasıl yükleyeceğinizi, dönüştüreceğinizi ve indireceğinizi üç basit adımda öğrenin. cURL kod örneklerini içerir."
 weight: 10
 keywords: "Aspose.Cells Cloud, Excel API, elektronik tablo dönüştürme, Excel'den PDF'e, bulut elektronik tablo, Aspose.Cells Cloud API"

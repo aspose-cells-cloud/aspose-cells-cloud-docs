@@ -4,7 +4,7 @@ ArticleTitle: "Despivotar Tabla – Aspose.Cells Cloud API"
 second_title: "Documento"
 linktitle: "Despivotar Tabla"
 type: docs
-url: /cells/unpivot/table
+url: /es/cells/unpivot/table
 aliases: []
 keywords: "Aspose.Cells, Despivotar, Transformar"
 description: "Intercambiar filas y columnas en la hoja de cálculo."

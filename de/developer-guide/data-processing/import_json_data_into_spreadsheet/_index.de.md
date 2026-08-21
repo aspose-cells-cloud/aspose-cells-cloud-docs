@@ -4,7 +4,7 @@ ArticleTitle: "JSON-Daten in eine Tabellenkalkulation importieren – Aspose.Cel
 second_title: "Dokument"
 linktitle: "JSON-Daten in eine Tabellenkalkulation importieren"
 type: docs
-url: /cells/import/data/json
+url: /de/cells/import/data/json
 aliases: []
 keywords: "JSON importieren, Aspose.Cells, Tabellenkalkulation, API"
 description: "JSON-Datendatei in die lokale Tabellenkalkulation importieren."

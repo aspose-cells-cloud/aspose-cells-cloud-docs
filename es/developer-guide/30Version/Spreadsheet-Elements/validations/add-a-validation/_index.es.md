@@ -3,7 +3,7 @@ title: "Agregar una validación de hoja de cálculo a una hoja de cálculo de Ex
 second_title: "Documento"
 linktitle: "Agregar"
 type: docs
-url: /validations/add/
+url: /es/validations/add/
 keywords: "Agregar validación de hoja de cálculo, Excel, Aspose.Cells Cloud, API REST, hoja de cálculo, regla de validación"
 description: "Utilice la API REST de Aspose.Cells Cloud para agregar una validación de hoja de cálculo a un archivo de Excel. Los SDK están disponibles para C#, Java, PHP, Ruby, Node.js, Python, Perl, Go y Swift."
 weight: 10

@@ -4,7 +4,7 @@ ArticleTitle: "ワークシートをHTMLテーブルに変換する – Aspose.C
 second_title: "ドキュメント"
 linktitle: "ConvertWorksheetToHtmlTable"
 type: docs
-url: /cells/convert/worksheet/html-table
+url: /ja/cells/convert/worksheet/html-table
 aliases: []
 keywords: "Aspose.Cells, ConvertWorksheetToHtmlTable, HTMLテーブル, API"
 description: "ローカルドライブ上のスプレッドシートのワークシートをAspose.Cells Cloudを使用してHTMLテーブルファイルに変換します。"

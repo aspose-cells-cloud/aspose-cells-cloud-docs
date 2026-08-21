@@ -1,8 +1,8 @@
 ---
 title: "Uppdatera en kommentar i ett kalkylblads cell"
 type: docs
-url: /comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
+url: /sv/comments/update/
+aliases: [  /sv/update-a-comment-in-excel-workbook/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, kalkylblad, cellkommentar, uppdatera cellkommentar, kommentarobjekt"
 description: "Använd Aspose.Cells Cloud REST API för att uppdatera en cellkommentar i ett kalkylblad i en Excel-arbetsbok, inklusive begärandedetaljer, svarsstatuskoder och SDK-exempel."
 weight: 30

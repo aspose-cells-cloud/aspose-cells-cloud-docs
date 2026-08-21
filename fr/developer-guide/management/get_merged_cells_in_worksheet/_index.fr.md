@@ -4,7 +4,7 @@ ArticleTitle: "Obtenir les cellules fusionnées dans une feuille de calcul – A
 second_title: "Document"
 linktype: "GetMergedCellsInWorksheet"
 type: docs
-url: /cells/spreadsheet/mergedcells
+url: /fr/cells/spreadsheet/mergedcells
 aliases: []
 keywords: "Aspose Cells, cellules fusionnées, feuille de calcul, API"
 description: "Récupérer toutes les zones de cellules fusionnées d'une feuille de calcul locale."

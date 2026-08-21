@@ -3,7 +3,7 @@ title: "Excel ワークブックから名前を取得する"
 second_title: "Document"
 linktitle: "Names"
 type: docs
-url: /get-names-from-an-excel-file/
+url: /ja/get-names-from-an-excel-file/
 aliases:
   [
     /get-names-count-from-excel-workbooks/,

@@ -3,8 +3,8 @@ title: "Arbeta med Excel-kolumner"
 second_title: "Dokument"
 linktitle: "Kolumner"
 type: docs
-url: /columns/
-aliases: [/working-with-columns/]
+url: /sv/columns/
+aliases: [  /sv/working-with-columns/ ]
 keywords: "Excel, kolumner, Aspose.Cells Cloud, API, kalkylark, kalkylblad, REST API"
 description: "Detaljerad guide till Aspose.Cells Cloud API-operationer för Excel-kalkylbladskolumner, inklusive hämtning, tillägg, kopiering, döljning, visning, gruppering, avgruppering och borttagning."
 weight: 100

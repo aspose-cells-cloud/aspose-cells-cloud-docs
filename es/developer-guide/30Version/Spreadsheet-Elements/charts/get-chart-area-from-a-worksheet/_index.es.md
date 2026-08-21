@@ -1,8 +1,8 @@
 ---
 title: "Obtener el área del gráfico desde una hoja de cálculo"
 type: docs
-url: /charts/area/get/
-aliases: [/get-chart-area-from-a-worksheet/]
+url: /es/charts/area/get/
+aliases: [  /es/get-chart-area-from-a-worksheet/ ]
 weight: 60
 keywords:
   - "Aspose.Cells"

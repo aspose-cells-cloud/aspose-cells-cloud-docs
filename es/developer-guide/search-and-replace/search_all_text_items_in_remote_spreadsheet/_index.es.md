@@ -4,7 +4,7 @@ ArticleTitle: "SearchAllTextItemsInRemoteSpreadsheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "SearchAllTextItemsInRemoteSpreadsheet"
 type: docs
-url: /cells/{name}/search/content/all-textitems
+url: /es/cells/{name}/search/content/all-textitems
 aliases: []
 keywords: "búsqueda, elementos de texto, Aspose.Cells"
 description: "Buscar todos los elementos de texto en una hoja de cálculo remota mediante Aspose.Cells Cloud."

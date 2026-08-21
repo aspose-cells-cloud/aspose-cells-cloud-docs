@@ -3,8 +3,8 @@ title: "Chiffrer un classeur Excel à l’aide de l’API Aspose.Cells Cloud –
 second_title: "Document"
 linktitle: "Chiffrer un fichier Excel"
 type: docs
-url: /excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+url: /fr/excel-file-encrypt/
+aliases: [  /fr/encrypt-excel-workbooks/ , /fr/workbook/encrypt/ ]
 keywords: "Aspose Cells chiffrer classeur, API de chiffrement Excel, API REST, cURL, .NET, Java, Python, PHP, Ruby, Node.js, Go, Perl"
 description: "Découvrez comment chiffrer un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut la commande cURL, des exemples de code SDK (C#, Java, Python, …), les paramètres requis et la gestion des erreurs."
 weight: 20

@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: 숨기기
 type: docs
 url: /ko/pivot-tables/hide-pivot-field-item/
-aliases: [/ko/hide-pivot-field-item/]
+aliases: [  /ko/hide-pivot-field-item/ ]
 keywords: "Aspose.Cells, 피벗 필드 항목 숨기기, 피벗 테이블 API, REST API, 클라우드 SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 피벗 테이블에서 피벗 필드 항목을 숨기는 방법을 알아보세요. 요청 세부 정보, cURL 예제 및 여러 언어의 SDK 코드 스니펫을 포함합니다."
 weight: 110

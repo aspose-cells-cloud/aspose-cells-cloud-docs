@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "숨기기"
 type: docs
 url: /ko/worksheets/hide/
-aliases: [/hide-excel-worksheets/]
+aliases: [  /ko/hide-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Excel, 워크시트 숨기기, REST API, 스프레드시트"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북의 워크시트를 숨기는 단계별 가이드로, 요청 세부 정보, cURL 예제, 여러 언어의 SDK 코드 스니펫이 포함됩니다."
 weight: 50

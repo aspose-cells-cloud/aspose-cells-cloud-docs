@@ -1,8 +1,8 @@
 ---
 title: "Cancella formattazione condizionale"
 type: docs
-url: /conditional-formattings/clear/
-aliases: [/clear-all-condition-formattings/]
+url: /it/conditional-formattings/clear/
+aliases: [  /it/clear-all-condition-formattings/ ]
 keywords: "Aspose.Cells Cloud, REST API, cancella formattazione condizionale, Excel, fogli di lavoro, JWT, v3.2"
 description: "Elimina tutte le regole di formattazione condizionale da un foglio di lavoro mediante l'API Aspose.Cells Cloud (v3.2). Scopri la sintassi della richiesta, i parametri obbligatori, le fasi di autenticazione e consulta codici di esempio in vari SDK."
 weight: 80

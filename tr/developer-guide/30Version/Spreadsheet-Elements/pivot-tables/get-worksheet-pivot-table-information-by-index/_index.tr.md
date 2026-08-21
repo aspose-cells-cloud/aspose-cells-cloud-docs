@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasında Bir Pivot Tablo Alın"
 second_title: "Belge"
 linktitle: Al
 type: docs
-url: /pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
+url: /tr/pivot-tables/get/
+aliases: [  /tr/get-worksheet-pivot-table-information-by-index/ ]
 keywords: "Aspose.Cells, pivot tablo, Excel, REST API, çalışma sayfası pivot tablosu al"
 description: "Aspose.Cells Cloud REST API aracılığıyla bir Excel çalışma sayfasından bir pivot tablo alın. İstek söz dizimi, parametreler, kimlik doğrulama, yanıt şeması, hata işleme ve SDK örneklerini içerir."
 weight: 10

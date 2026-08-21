@@ -3,7 +3,7 @@ title: "Importer des données en lots dans une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Importer des données en lots"
 type: docs
-url: /import-batch-data-into-excel/
+url: /fr/import-batch-data-into-excel/
 aliases:
   - /import-batch-data-into-worksheet/
   - /import-data/batch-data/

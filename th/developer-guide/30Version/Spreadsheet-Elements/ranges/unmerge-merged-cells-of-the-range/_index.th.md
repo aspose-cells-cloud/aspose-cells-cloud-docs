@@ -3,8 +3,8 @@ title: "ยกเลิกการรวมเซลล์ในช่วงข
 second_title: "เอกสาร"  
 linktitle: "ยกเลิกการรวม"  
 type: docs  
-url: /ranges/unmerge/  
-aliases: [/unmerge-merged-cells-of-the-range/]  
+url: /th/ranges/unmerge/
+aliases: [  /th/unmerge-merged-cells-of-the-range/ ]
 keywords: "Aspose.Cells Cloud, ยกเลิกการรวมเซลล์, Excel API, ช่วงข้อมูลในแผ่นงาน, REST API"  
 description: "เรียนรู้วิธีใช้ Aspose.Cells Cloud API เพื่อยกเลิกการรวมเซลล์ที่ถูกรวมไว้ในช่วงข้อมูลเฉพาะของแผ่นงาน Excel ซึ่งรวมถึง endpoint, พารามิเตอร์, ตัวอย่าง cURL และโค้ดตัวอย่าง SDK สำหรับ C#, Java, Python และอื่นๆ อีกมากมาย"  
 weight: 20  

@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktype: "รับทั้งหมด"
 type: docs
 url: /th/pictures/get-all/
-aliases: [/th/get-picture-from-a-worksheet/]
+aliases: [  /th/get-picture-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, แผ่นงาน Excel, API รูปภาพ, รับรูปภาพทั้งหมด, REST API, SDK"
 description: "ดึงข้อมูลวัตถุรูปภาพทั้งหมดจากแผ่นงาน Excel ผ่าน Aspose.Cells Cloud REST API"
 ArticleTitle: "รับรูปภาพทั้งหมดจากแผ่นงาน Excel - Aspose.Cells Cloud API"

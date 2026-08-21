@@ -3,7 +3,7 @@ title: "Ajustar automáticamente columnas en un archivo de Excel"
 second_title: "Documento"
 linktitle: "Columnas"
 type: docs
-url: /autofit-columns-on-an-excel-file/
+url: /es/autofit-columns-on-an-excel-file/
 aliases:
   [
     /auto-fit-columns-in-excel-workbooks,

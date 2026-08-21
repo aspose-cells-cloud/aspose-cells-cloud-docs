@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment exporter un tableau de feuille de calcul distante vers un autre format : guide étape par étape"
 linktype: "Exporter le tableau au format spécifié"
 type: docs
-url: /export-table-as-format/
+url: /fr/export-table-as-format/
 keywords: "Aspose.Cells, exporter un tableau, Excel vers PDF, API cloud, REST"
 description: "Exportez un tableau Excel stocké dans le cloud au format PDF, PNG, CSV, JSON ou autre à l’aide de l’API Aspose.Cells Cloud. Endpoint HTTPS sécurisé avec authentification JWT et exemples de SDK."
 weight: 100

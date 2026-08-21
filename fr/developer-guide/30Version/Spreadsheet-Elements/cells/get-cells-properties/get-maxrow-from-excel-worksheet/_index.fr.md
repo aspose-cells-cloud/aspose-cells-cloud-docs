@@ -1,7 +1,7 @@
 ---
 title: "Obtenir MaxRow à partir d'une feuille de calcul Excel"
 type: docs
-url: /get-maxrow-from-excel-worksheet/
+url: /fr/get-maxrow-from-excel-worksheet/
 weight: 40
 ArticleTitle: "Récupérer le numéro de ligne maximal dans une feuille de calcul Excel – API Aspose.Cells Cloud"
 keywords: "Aspose.Cells, Excel, MaxRow, API REST, SDK cloud, classeur, feuille de calcul, GetMaxRow"

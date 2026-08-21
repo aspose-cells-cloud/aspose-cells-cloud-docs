@@ -3,8 +3,8 @@ title: "Arbeiten mit Excel-Dateien: Formelberechnung, automatische Anpassung, Ob
 second_title: "Dokument"
 linktitle: "Allgemeine Excel-Operationen"
 type: docs
-url: /workbook/
-aliases: [/working-with-workbook/]
+url: /de/workbook/
+aliases: [  /de/working-with-workbook/ ]
 keywords: "Aspose.Cells, Excel-API, Workbook-Operationen, Formeln berechnen, automatische Anpassung"
 description: "Erfahren Sie, wie Sie Excel-Arbeitsmappen mithilfe der Aspose.Cells Cloud REST-API bearbeiten können. Schritt-für-Schritt-Anleitungen behandeln unter anderem die Formelberechnung, das automatische Anpassen von Zeilen/Spalten, das Löschen von Objekten sowie das Abrufen von Metadaten der Arbeitsmappe. SDKs für Python, .NET, Java und weitere Sprachen."
 weight: 20

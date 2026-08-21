@@ -4,7 +4,7 @@ ArticleTitle: "Удалить дублирующиеся подстроки в �
 second_title: "Документ"
 linktype: "Удалить дублирующиеся подстроки в удалённой электронной таблице"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
+url: /ru/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
 aliases: []
 keywords: "Aspose.Cells, Удалить дублирующиеся подстроки, API"
 description: "API для поиска и удаления повторяющихся подстрок внутри ячеек заданного диапазона рабочей книги."

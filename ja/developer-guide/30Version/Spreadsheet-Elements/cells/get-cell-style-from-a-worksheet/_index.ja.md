@@ -1,7 +1,7 @@
 ---
 title: "ワークシートからセルのスタイルを取得する – Aspose.Cells Cloud API"
 type: docs
-url: /get-cell-style-from-a-worksheet/
+url: /ja/get-cell-style-from-a-worksheet/
 weight: 10
 keywords: "Aspose.Cells, Excel, REST API, セルのスタイル, スプレッドシート, クラウド SDK, API ドキュメント"
 description: "Aspose.Cells Cloud REST API v3 を使用して、Excel ワークシート内の特定のセルのスタイルを取得する方法を学びます。cURL の例、レスポンススキーマ、ステータスコード、SDK スニペットを含みます。"

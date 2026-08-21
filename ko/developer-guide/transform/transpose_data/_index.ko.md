@@ -3,8 +3,8 @@ title: "TransposeData"
 ArticleTitle: "TransposeData – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: /cells/transpose
-aliases: ["/cells/transpose"]
+url: /ko/cells/transpose
+aliases: [  /ko/cells/transpose ]
 keywords: "TransposeData, Aspose.Cells, 클라우드 API, 스프레드시트, 전치"
 description: "스프레드시트에서 행과 열을 전치합니다."
 weight: 1000

@@ -3,8 +3,8 @@ title: "在 Excel 工作表中添加自定义筛选条件"
 second_title: "文档"
 linktitle: "添加自定义筛选"
 type: docs
-url: /autofilter/add-custom-filter/
-aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/]
+url: /zh/autofilter/add-custom-filter/
+aliases: [  /zh/filter-a-list-with-a-custom-criteria/ , /zh/autofilter/add-a-custom-filter/ ]
 keywords: "Excel, 自定义筛选, Aspose.Cells Cloud, REST API, 自动筛选, 工作表, 自定义条件"
 description: "了解如何使用 Aspose.Cells Cloud REST API 为 Excel 工作表添加自定义筛选条件。内容包括请求详情、cURL 示例以及多种编程语言的 SDK 代码片段。"
 weight: 65

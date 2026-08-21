@@ -1,7 +1,7 @@
 ---
 title: "Tillämpa formatering med rik text på en cell"
 type: docs
-url: /apply-rich-text-formatting-to-a-cell/
+url: /sv/apply-rich-text-formatting-to-a-cell/
 weight: 40
 keywords: "Aspose.Cells, Excel, rik text, cellformatering, REST API, Aspose.Cells Cloud"
 description: "Lär dig hur du tillämpar formatering med rik text på en specifik Excel-cell med Aspose.Cells Cloud REST API. Innehåller begärsyntax, parameterinformation, cURL-exempel och SDK-utdrag."

@@ -1,7 +1,7 @@
 ---
 title: "รับลิงก์ทั้งหมด – Aspose.Cells Cloud REST API"
 type: docs
-url: /hyperlinks/get-all/
+url: /th/hyperlinks/get-all/
 aliases:
   [/get-hyperlink-from-excel-worksheet/, /get-hyperlinks-from-excel-worksheet/]
 keywords: "Aspose.Cells, รับลิงก์ทั้งหมด, Excel API, REST API, Cloud SDK, ตัวอย่าง cURL, ลิงก์ในสเปรดชีต"

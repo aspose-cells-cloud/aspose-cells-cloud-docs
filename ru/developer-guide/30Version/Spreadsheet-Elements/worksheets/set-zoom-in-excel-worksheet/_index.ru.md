@@ -3,8 +3,8 @@ title: "Установка масштаба для рабочего листа E
 second_title: "Документ"
 linktitle: "Масштаб"
 type: docs
-url: /worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
+url: /ru/worksheets/zoom/
+aliases: [  /ru/set-zoom-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, масштаб Excel, масштаб рабочего листа, REST API, облачный SDK, автоматизация Excel"
 description: "Узнайте, как установить масштаб рабочего листа (10–400 %) с помощью Aspose.Cells Cloud API v3.0. Примеры cURL и SDK, обработка ошибок."
 weight: 20

@@ -3,8 +3,8 @@ title: "複数の Excelワークシートを削除する"
 second_title: "Document"
 linktitle: "複数のワークシート"
 type: docs
-url: /worksheets/delete-multiple/
-aliases: [/delete-excel-worksheets/]
+url: /ja/worksheets/delete-multiple/
+aliases: [  /ja/delete-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, 複数のワークシートを削除, Excel API, REST API, v3.0, ワークシートの削除"
 description: "Aspose.Cells Cloud REST API（v3.0）を使用して、Excelワークブックから複数のワークシートを削除する方法を学びます。HTTPSエンドポイントのセキュリティ、必要なパラメータ、修正済みcURLの例、および複数のプログラミング言語向けのSDKスニペットを含みます。"
 weight: 20

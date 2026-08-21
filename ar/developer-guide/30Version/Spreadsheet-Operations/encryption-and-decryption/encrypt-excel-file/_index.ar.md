@@ -3,8 +3,8 @@ title: "تشفير مصنف Excel باستخدام واجهة Aspose.Cells Cloud
 second_title: "وثيقة"
 linktitle: "تشفير ملف Excel"
 type: docs
-url: /excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+url: /ar/excel-file-encrypt/
+aliases: [  /ar/encrypt-excel-workbooks/ , /ar/workbook/encrypt/ ]
 keywords: "تشفير مصنف Aspose Cells، واجهة تشفير Excel، واجهة REST API، cURL، .NET، Java، Python، PHP، Ruby، Node.js، Go، Perl"
 description: "تعلم كيفية تشفير مصنف Excel باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يشمل مثالًا لأمر cURL، وأكواد مرجعية لـ SDK (C#، Java، Python، إلخ)، والمعلمات المطلوبة، وإدارة الأخطاء."
 weight: 20

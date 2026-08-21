@@ -3,7 +3,7 @@ title: "Excel 워크북의 모든 수식 계산"
 second_title: "문서"
 linktitle: "계산"
 type: docs
-url: /calculate-all-formulas-on-an-excel-file/
+url: /ko/calculate-all-formulas-on-an-excel-file/
 aliases:
   [/calculate-all-formulas-in-a-workbook/, /workbook/calculate-all-formulas/]
 keywords: "Aspose.Cells, 수식 계산, Excel API, 클라우드 SDK"

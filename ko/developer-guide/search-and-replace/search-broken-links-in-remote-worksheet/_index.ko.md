@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "원격 Excel 워크시트에서 끊긴 링크 찾기 및 수정 – 클라우드 스프레드시트 링크 검사기"
 linktype: "search-broken-links-in-remote-worksheet/"
 type: docs
-url: /search-broken-links-in-remote-worksheet/
+url: /ko/search-broken-links-in-remote-worksheet/
 keywords: "Aspose Cells, 끊긴 링크, Excel API, 클라우드 스프레드시트, 링크 검증"
 description: "클라우드 스토리지에 저장된 Excel 워크시트 내 외부 링크의 끊김을 감지하고 수정합니다. Aspose.Cells Cloud API를 사용해 특정 범위를 스캔하고 링크 세부 정보를 반환하며 품질 검사 프로세스를 자동화합니다."
 weight: 100

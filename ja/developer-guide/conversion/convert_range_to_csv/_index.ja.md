@@ -3,7 +3,7 @@ title: "範囲を CSV に変換"
 ArticleTitle: "範囲を CSV に変換 – Aspose.Cells Cloud API"
 second_title: "ドキュメント"
 linktype: "docs"
-url: /cells/convert/range/csv
+url: /ja/cells/convert/range/csv
 aliases: []
 keywords: "変換, csv, 範囲, Aspose.Cells"
 description: "ローカルドライブ上のスプレッドシートの指定範囲を CSV ファイルに変換します。"

@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "รูปแบบไฟล์ที่ Aspose.Cells Cloud รองรับ: Excel, PDF, CSV, JSON, Markdown และอื่นๆ อีกมากมาย"
 linktitle: "รูปแบบไฟล์ที่รองรับ"
 type: docs
-url: /supported-file-formats/
+url: /th/supported-file-formats/
 description: "สำรวจรายชื่อรูปแบบไฟล์ทั้งหมดที่ Aspose.Cells Cloud รองรับ — นำเข้า ส่งออก และแปลง Excel, CSV, PDF, JSON, Markdown, ODS และอื่นๆ"
 weight: 40
 keywords: "Aspose.Cells Cloud, รูปแบบไฟล์ที่รองรับ, Excel, XLSX, CSV, PDF, JSON, Markdown, ODS, รูปแบบภาพ, รูปแบบสเปรดชีต, การแปลงเอกสาร"

@@ -3,7 +3,7 @@ title: "Обновление метаданных"
 second_title: "Документ"
 linktitle: "Обновление без использования хранилища"
 type: docs
-url: /metadata/update/
+url: /ru/metadata/update/
 keywords: "метаданные, Excel, Aspose.Cells Cloud, REST API, обновление, электронная таблица"
 description: "REST API Aspose.Cells Cloud позволяет обновлять метаданные в файлах Excel. Поддерживает множество SDK (C#, Java, Python, Ruby, Go и др.) для беспрепятственной интеграции в различные языки программирования."
 weight: 35

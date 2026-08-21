@@ -1,8 +1,8 @@
 ---
 title: "إضافة شرط التنسيق"
 type: docs
-url: /conditional-formattings/add-format-condition/
-aliases: [/add-a-format-condition/]
+url: /ar/conditional-formattings/add-format-condition/
+aliases: [  /ar/add-a-format-condition/ ]
 keywords: "Aspose.Cells Cloud, واجهة برمجة تطبيقات التنسيق الشرطي, إضافة شرط التنسيق, Excel REST API, Cells API"
 description: "تعلم كيفية إضافة شرط تنسيق إلى ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمن بنية الطلب، المعاملات، مثال cURL الآمن، وأجزاء كود SDK."
 ArticleTitle: "إضافة شرط التنسيق – مستندات واجهة برمجة تطبيقات Aspose.Cells Cloud"

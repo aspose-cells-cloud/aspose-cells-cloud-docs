@@ -4,7 +4,7 @@ ArticleTitle: "Convertir un objet liste en plage à l’aide de l’API Aspose.C
 second_title: "Document"
 linktype: "Conversion"
 type: docs
-url: /list-objects/to-range/
+url: /fr/list-objects/to-range/
 aliases:
   - /convert-list-object-or-table-to-range/
   - /tables/to-range/

@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 linktitle: "重複の削除"
 type: docs
 keywords: "重複の削除、ListObject、Aspose.Cells Cloud API、Excel、REST"
-url: /list-objects/remove-duplicates/
+url: /ja/list-objects/remove-duplicates/
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシート内のListObjectから重複行を削除する方法を学びます。エンドポイント、パラメータ、認証、およびサンプルのリクエストとレスポンスを含みます。"
 weight: 20
 ---

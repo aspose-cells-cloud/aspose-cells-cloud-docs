@@ -3,8 +3,8 @@ title: "Einfügen eines vertikalen Seitenumbruchs"
 second_title: "Dokument"
 linktitle: "Einfügen eines vertikalen Seitenumbruchs"
 type: docs
-url: /page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
+url: /de/page-breaks/add-vertical-page-break/
+aliases: [  /de/insert-vertical-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, vertikaler Seitenumbruch, REST-API, Excel, SDK, cURL"
 description: "Erfahren Sie, wie Sie mithilfe der Aspose.Cells Cloud REST-API (v3.0) einen vertikalen Seitenumbruch in ein Excel-Arbeitsblatt einfügen. Enthält die Anforderungssyntax, ein cURL-Beispiel, SDK-Beispiele, eine Anleitung zur Authentifizierung sowie Details zur Fehlerbehandlung."
 weight: 40

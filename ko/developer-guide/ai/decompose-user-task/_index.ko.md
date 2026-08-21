@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud AI 작업 분해 API를 사용해 사용자 목표를 순차적 행동 계획으로 변환하는 방법"
 linktitle: "사용자 작업 분해"
 type: docs
-url: /decompose-user-task/
+url: /ko/decompose-user-task/
 keywords: "Aspose.Cells AI, 작업 분해 API, SMART 작업 계획, Redmine 가져오기, 프로젝트 자동화"
 description: "Aspose.Cells Cloud AI를 사용해 자유 서술 형식의 목표를 SMART 기준에 부합하고 시간 추정이 적용된 작업 목록으로 변환하세요. 단일 PUT 요청으로 Redmine, Jira, Azure DevOps에 바로 사용할 수 있는 CSV/XLSX 형식의 출력물을 받아보세요."
 weight: 100

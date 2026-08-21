@@ -3,7 +3,7 @@ title: "计算 Excel 工作簿中的所有公式"
 second_title: "文档"
 linktitle: "计算"
 type: docs
-url: /calculate-all-formulas-on-an-excel-file/
+url: /zh/calculate-all-formulas-on-an-excel-file/
 aliases:
   [/calculate-all-formulas-in-a-workbook/, /workbook/calculate-all-formulas/]
 keywords: "Aspose.Cells, 计算公式, Excel API, 云 SDK"

@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Assistance technique Aspose.Cells Cloud"
 LinkTitle: "Assistance technique"
 type: docs
-url: /technical-support/
+url: /fr/technical-support/
 description: "Obtenez une assistance technique gratuite pour Aspose.Cells Cloud. Posez vos questions sur le forum Aspose Cloud, consultez la FAQ et découvrez comment contacter notre équipe de développement pour une assistance rapide."
 keywords: "support Aspose Cells Cloud, assistance technique, forum Aspose Cloud, assistance API, FAQ Aspose Cells Cloud"
 weight: 80

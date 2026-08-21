@@ -3,8 +3,8 @@ title: "Eliminare un'immagine da un foglio di lavoro Excel – Aspose.Cells Clou
 second_title: "Document"
 linktitle: "Elimina"
 type: docs
-url: /pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+url: /it/pictures/delete/
+aliases: [  /it/delete-a-specific-picture-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, Cloud API, elimina immagine, foglio di lavoro Excel, REST"
 description: "Elimina un'immagine da un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud. Scopri l'endpoint DELETE, i parametri richiesti, l'autenticazione, i codici di errore e il codice di esempio."
 weight: 50

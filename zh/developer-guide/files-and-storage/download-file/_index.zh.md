@@ -4,7 +4,7 @@ second_title: "文档"
 articleTitle: "Aspose.Cells Cloud 下载文件 API —— 云端快速下载文件的接口"
 linkTitle: "下载文件 API"
 type: docs
-url: /download-file/
+url: /zh/download-file/
 keywords: "Aspose.Cells, 下载文件 API, Excel 云存储, REST API, 文件下载, PDF, CSV, SDK"
 description: "使用下载文件 API（v4.0）从 Aspose.Cells Cloud 存储中下载 Excel、PDF、CSV 及其他格式的文件。内容包括端点、参数、认证详情及代码示例。"
 weight: 100

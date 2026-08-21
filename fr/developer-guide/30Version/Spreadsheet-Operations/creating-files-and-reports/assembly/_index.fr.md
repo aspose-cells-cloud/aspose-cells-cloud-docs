@@ -3,8 +3,8 @@ title: "Assemblage de données pour la création d’un rapport Excel"
 second_title: "Document"
 linktitle: "Assemblage des données"
 type: docs
-url: /assembly-data-for-the-creation-of-an-excel-report/
-aliases: [/assembly/]
+url: /fr/assembly-data-for-the-creation-of-an-excel-report/
+aliases: [  /fr/assembly/ ]
 keywords: "Aspose.Cells, rapport Excel, assemblage de données, API cloud, REST, SDK, cURL, PDF, ODS"
 description: "Découvrez comment utiliser l’API Aspose.Cells Cloud d’assemblage pour intégrer des données dans des rapports Excel (XLSX, PDF, ODS). Inclut l’URL du point d’accès, les paramètres, un exemple cURL, du code SDK, un guide d’authentification et la gestion des erreurs."
 weight: 40

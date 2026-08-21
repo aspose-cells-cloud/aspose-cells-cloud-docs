@@ -3,8 +3,8 @@ title: "الحصول على جميع الأشكال الموجودة في ورق
 second_title: "مستند"
 linktitle: "get-all"
 type: docs
-url: /shapes/get-all/
-aliases: [/get-all-shapes-inside-the-worksheet/]
+url: /ar/shapes/get-all/
+aliases: [  /ar/get-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells، واجهة برمجة التطبيقات السحابية، أشكال Excel، الحصول على الأشكال، REST، SDK"
 description: "استرجاع جميع الأشكال (المخططات والصور ومربعات النص) من ورقة عمل باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن مثالًا باستخدام cURL، وأجزاء كود من SDK، وخطوات المصادقة، ومعالجة الأخطاء."
 ArticleTitle: "الحصول على جميع الأشكال الموجودة في ورقة عمل Excel"

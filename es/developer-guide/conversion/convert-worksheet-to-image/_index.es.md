@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cómo convertir datos locales de una hoja de cálculo a un archivo de imagen: guía paso a paso"
 linktitle: "Convertir hoja de cálculo a imagen"
 type: docs
-url: /convert-worksheet-to-image/
+url: /es/convert-worksheet-to-image/
 keywords: "Aspose.Cells Cloud, hoja de cálculo a imagen, convertir hoja de cálculo a imagen, Excel a PNG, Excel a SVG, Excel a TIFF, Excel a JPEG, Excel a BMP, API de conversión de imágenes, API REST, exportación de imágenes de hojas de cálculo, ejemplos de SDK"
 description: "Guía paso a paso para convertir una hoja de cálculo de Excel a formatos de imagen (PNG, SVG, TIFF, JPEG, BMP, etc.) mediante la API de Aspose.Cells Cloud, incluyendo parámetros de solicitud, detalles de respuesta, códigos de error, escenarios de uso y ejemplos de código SDK."
 weight: 100

@@ -4,7 +4,7 @@ description: "Aspose Cloud ストレージに保存されたスプレッドシ�
 keywords: "Aspose.Cells, スプレッドシート統合, リモートフォルダー, API, PDF, CSV, JSON, XLSX, ODS, XPS"
 weight: 100
 type: docs
-url: /merge-spreadsheets-in-remote-folder/
+url: /ja/merge-spreadsheets-in-remote-folder/
 ---
 
 リモートの Aspose Cloud ストレージフォルダー内にある複数のスプレッドシートファイルを、1つの出力ファイルに統合します。この処理はクラウド上で完全に実行されるため、ソースファイルをローカルにダウンロードする必要がありません。出力形式は30種類以上をサポートしています（PDF、CSV、JSON、XLSX、ODS、XPS など）。

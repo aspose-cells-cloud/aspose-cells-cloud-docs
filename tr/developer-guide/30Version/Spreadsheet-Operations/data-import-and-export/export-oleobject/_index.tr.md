@@ -3,8 +3,8 @@ title: "OLE Nesnesini Dışa Aktar – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktitle: "OLE Nesnesi"
 type: docs
-url: /export-excel-ole-object/
-aliases: [/export/excel-ole-object/]
+url: /tr/export-excel-ole-object/
+aliases: [  /tr/export/excel-ole-object/ ]
 keywords: "Aspose.Cells, OLE nesnesi, dışa aktar, Excel, bulut API, PDF, PNG, DOCX, PPTX"
 description: "Aspose.Cells Cloud API kullanarak bir Excel çalışma kitabından OLE nesnelerini dışa aktarın. İstek formatını, parametreleri, örnek cURL isteğini ve hata işleme yöntemlerini öğrenin."
 weight: 20

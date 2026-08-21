@@ -3,7 +3,7 @@ title: "Excel ワークブックのパスワード保護を変更する"
 second_title: "Document"
 linktitle: "Excel ファイルのパスワードを変更する"
 type: docs
-url: /workbook/password/modify/
+url: /ja/workbook/password/modify/
 aliases:
   - /set-modify-password-of-excel-workbooks/
   - /workbook/modify-password/

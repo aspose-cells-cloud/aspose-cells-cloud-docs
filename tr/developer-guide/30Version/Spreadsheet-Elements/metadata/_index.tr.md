@@ -3,7 +3,7 @@ title: "Excel Meta Veri ve Özellikleri ile Çalışma"
 second_title: "Belge"
 linktype: "Meta Veri ve Özellikler"
 type: docs
-url: /metadata/
+url: /tr/metadata/
 aliases:
   - /belge-ozellikleri/
   - /belge-ozellikleri-ile-calisma/

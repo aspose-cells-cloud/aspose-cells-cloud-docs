@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "OleObjects"
 type: docs
 url: /ru/oleobjects/
-aliases: [/ru/working-with-oleobjects/]
+aliases: [  /ru/working-with-oleobjects/ ]
 keywords: "OLE, Excel, Aspose.Cells, API, Cloud"
 description: "Используйте Aspose.Cells Cloud REST API для извлечения, добавления, обновления, удаления и преобразования OLE-объектов в листах Excel. Доступны SDK для Java, .NET, Python, PHP, Ruby, Go, Node.js, Perl, Swift и Android."
 weight: 100

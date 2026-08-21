@@ -3,7 +3,7 @@ title: "خيارات الحفظ"
 second_title: "المستند"
 linktitle: "خيارات الحفظ"
 type: docs
-url: /save-options/
+url: /ar/save-options/
 keywords: "Aspose.Cells Cloud, SaveOptions, Excel, Workbook, REST API, File Formats, PDF, CSV, JSON, HTTP Compression, Chart Cache, Named Ranges, Directory Creation"
 description: "توضّح خصائص SaveOptions في واجهة Aspose.Cells Cloud REST API، مما يمكّن المطورين من تكوين سلوك حفظ كتب العمل عبر تنسيقات ملفات وخيارات متعددة، مثل ضغط HTTP وتحديث ذاكرة التخزين المؤقت للمخططات وإنشاء المجلدات تلقائيًا."
 weight: 79

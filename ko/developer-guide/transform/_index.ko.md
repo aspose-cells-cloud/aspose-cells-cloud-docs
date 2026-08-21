@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "스프레드시트 변환: 빈 행, 열, 워크시트 삭제 및 범위 교체"
 linktitle: "변환"
 type: docs
-url: /transform/
+url: /ko/transform/
 keywords: "Aspose, Cells, API, 빈 행 삭제, 빈 열 삭제, 빈 워크시트 삭제, 범위 교체, 스프레드시트 정리"
 description: "Aspose.Cells Cloud API를 사용해 Excel 파일에서 빈 행, 열, 워크시트를 삭제하고 범위 간 데이터를 교체하세요. 자동화를 위한 빠르고 클라우드 기반의 데이터 정리 기능을 제공합니다."
 weight: 40

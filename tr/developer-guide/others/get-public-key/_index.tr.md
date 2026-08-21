@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Genel Anahtarı Al"
 linktype: "Genel Anahtarı Al"
 type: docs
-url: /get-public-key/
+url: /tr/get-public-key/
 keywords: "Aspose.Cells, Genel Anahtar, RSA, API, Bulut"
 description: "Aspose.Cells Cloud ile veri şifrelemek için kullanılan RSA genel anahtarını alın. Uç nokta, parametreler, örnek istek/yanıt, durum kodları ve SDK kullanım örneklerini içerir."
 weight: 100

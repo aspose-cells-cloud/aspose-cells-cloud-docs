@@ -1,8 +1,8 @@
 ---
 title: "Aspose.Cells Cloud’u Öğrenin"
 type: docs
-url: /learn
-aliases: [/learn-aspose-cells-cloud]
+url: /tr/learn
+aliases: [  /tr/learn-aspose-cells-cloud ]
 linktitle: "Öğrenin"
 description: "Aspose.Cells Cloud’u öğrenmeye hoş geldiniz."
 weight: 15

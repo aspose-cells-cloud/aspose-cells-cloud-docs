@@ -3,7 +3,7 @@ title: "Generar informes de Excel con plantillas de marcadores inteligentes"
 second_title: "Documentos"
 linktype: "SmartMarker"
 type: docs
-url: /build-report-with-smart-marker/
+url: /es/build-report-with-smart-marker/
 aliases:
   - /create-excel-workbook-from-a-smartmarker-template/
   - /workbook/smartmarker/

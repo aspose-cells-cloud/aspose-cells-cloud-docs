@@ -2,7 +2,7 @@
 title: "Operazioni su Fogli di Calcolo"
 second_title: "Documento"
 type: docs
-url: /spreadsheet-operations/
+url: /it/spreadsheet-operations/
 keywords: "Aspose Cells Cloud, API Excel, operazioni su fogli di calcolo, adattamento automatico, elaborazione in batch, protezione file, conversione, importazione/esportazione, elaborazione testo"
 description: "Scopri come eseguire operazioni su fogli di calcolo come l'adattamento automatico, la conversione in batch, la protezione, la fusione e la sostituzione di testo utilizzando l'API REST di Aspose.Cells Cloud. Include note d'uso concise e suggerimenti con esempi di codice."
 weight: 100

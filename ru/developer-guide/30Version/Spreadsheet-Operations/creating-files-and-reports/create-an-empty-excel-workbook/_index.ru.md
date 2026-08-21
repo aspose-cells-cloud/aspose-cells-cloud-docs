@@ -3,7 +3,7 @@ title: "Создание пустой рабочей книги Excel"
 second_title: "Документ"
 linktitle: "Пустая рабочая книга"
 type: docs
-url: /create-an-empty-excel-file/
+url: /ru/create-an-empty-excel-file/
 aliases:
   [
     /create-an-empty-excel-workbook/,

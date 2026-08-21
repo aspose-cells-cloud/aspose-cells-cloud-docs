@@ -3,8 +3,8 @@ title: "Расшифровка рабочей книги Excel"
 second_title: "Документ"
 linktitle: "Расшифровка файла Excel"
 type: docs
-url: /excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+url: /ru/excel-file-decrypt/
+aliases: [  /ru/decrypt-excel-workbooks/ , /ru/workbook/decrypt/ ]
 keywords: "Aspose.Cells, расшифровка Excel, REST API, облачный SDK"
 description: "Узнайте, как расшифровать рабочую книгу Excel с помощью Aspose.Cells Cloud REST API. Включены необходимые параметры, пример cURL, примеры кода SDK и подробности об обработке ошибок."
 ArticleTitle: "Как расшифровать рабочую книгу Excel с помощью API Aspose.Cells Cloud"

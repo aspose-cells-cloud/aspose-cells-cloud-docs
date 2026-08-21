@@ -3,8 +3,8 @@ title: "حذف كائن OLE في ورقة عمل Excel"
 second_title: "المستند"
 linktitle: "حذف"
 type: docs
-url: /oleobjects/delete/
-aliases: [/delete-a-specific-oleobject-from-excel-worksheet/]
+url: /ar/oleobjects/delete/
+aliases: [  /ar/delete-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, Cloud, حذف, OLE, كائن, Excel, ورقة عمل, REST, API, SDK"
 description: "تعرّف على كيفية حذف كائن OLE من ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 4.0). يتضمن عنوان HTTPS، وخطوات المصادقة، ومثال باستخدام أداة cURL، وأكواد مقتطفات SDK، وإرشادات معالجة الأخطاء، وروابط خطوات ما بعد ذلك."
 weight: 50

@@ -3,8 +3,8 @@ title: "ピボットテーブルのセルスタイルの更新"
 second_title: "Document"
 linktype: "書式設定"
 type: docs
-url: "/pivot-tables/format/"
-aliases: [/update-cell-style-for-pivot-table/]
+url: /ja/pivot-tables/format/
+aliases: [  /ja/update-cell-style-for-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, ピボットテーブル スタイル, セルスタイル更新 API, REST API, Excel API, スプレッドシート書式設定, クラウド SDK, セルスタイル, ピボットテーブル"
 description: "Aspose.Cells Cloud の REST API を使って、ピボットテーブル内の特定のセルのスタイルを更新する方法を学習します。エンドポイント、パラメータ、認証、cURL の例、Go SDK のコードスニペット、SEO 最適化されたガイドを含みます。"
 weight: 90

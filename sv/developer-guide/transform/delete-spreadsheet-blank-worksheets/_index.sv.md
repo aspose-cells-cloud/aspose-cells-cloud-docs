@@ -4,7 +4,7 @@ secondtitle: "Dokument"
 articletitle: "Ta bort alla tomma kalkylblad i Excel – Handledning för borttagning av tomma ark"
 linktitle: "Ta bort tomma kalkylblad"
 type: docs
-url: /delete-spreadsheet-blank-worksheets/
+url: /sv/delete-spreadsheet-blank-worksheets/
 keywords: "Aspose.Cells Cloud, ta bort tomma kalkylblad, Excel-API, rensning av arbetsbok, optimering av kalkylark"
 description: "Använd Aspose.Cells Cloud API för att automatiskt ta bort tomma eller blanka kalkylblad från Excel-arbetsböcker. Lär dig hur du identifierar och tar bort ark utan data, formler, diagram eller objekt, vilket förbättrar arbetsbokens prestanda och struktur."
 weight: 100

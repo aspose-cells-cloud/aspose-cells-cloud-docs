@@ -3,7 +3,7 @@ title: "Excelワークシートから異なるコンテンツを取得する方�
 second_title: "ドキュメント"
 linktype: "取得"
 type: docs
-url: /worksheets/get/
+url: /ja/worksheets/get/
 keywords: "Excel、ワークシート、Aspose.Cells Cloud、REST API、コンテンツ抽出、フォーマット変換"
 description: "Aspose.Cells Cloud REST APIを使用してExcelワークシートからさまざまなタイプのコンテンツを取得する方法を学びます。このガイドでは、サポートされているフォーマットについて説明し、関連する操作へのリンクを提供します。"
 weight: 20

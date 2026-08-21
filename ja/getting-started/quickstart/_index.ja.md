@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud クイックスタート"
 linktitle: "クイックスタート"
 type: docs
-url: /quickstart/
+url: /ja/quickstart/
 description: "Aspose.Cells Cloud は、Excelファイルの作成、変換、結合、分割、保護、および内部オブジェクト操作など、多様な機能を提供します。"
 weight: 20
 keywords: "Aspose.Cells Cloud, Excel, スプレッドシート, API, Cloud SDK, REST API, PDF, CSV, JSON, クイックスタート"

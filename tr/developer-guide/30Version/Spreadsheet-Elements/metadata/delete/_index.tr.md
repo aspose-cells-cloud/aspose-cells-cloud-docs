@@ -3,7 +3,7 @@ title: "Excel dosyalarından meta verileri silme"
 second_title: "Belge"
 linktype: "Depolama kullanmadan silme"
 type: docs
-url: /metadata/delete/
+url: /tr/metadata/delete/
 keywords: "Aspose.Cells, meta veri silme, Excel API, çalışma kitabı özellikleri"
 description: "Aspose.Cells Cloud API ile çalışma kitabı meta verilerini (yazar, başlık, özel) silin. Uç nokta, kimlik doğrulama, parametreler, cURL ve SDK örneklerini içerir."
 weight: 55

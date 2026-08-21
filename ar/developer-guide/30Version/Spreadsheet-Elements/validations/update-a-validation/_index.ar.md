@@ -3,7 +3,7 @@ title: "تحديث تحقق من صحة ورقة عمل في ورقة عمل Exc
 second_title: "مستند"
 linktitle: "تحديث"
 type: docs
-url: /validations/update/
+url: /ar/validations/update/
 keywords: "Aspose.Cells Cloud, تحديث تحقق من صحة Excel, واجهة برمجة تطبيقات REST, تحقق من صحة ورقة العمل, واجهة برمجة تطبيقات Excel"
 description: "كيفية تحديث تحقق من صحة ورقة عمل في ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST، مع أمثلة cURL ومقاطع كود SDK لعدة لغات برمجة."
 weight: 10

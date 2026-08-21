@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Tutti"
 type: docs
 url: /it/worksheets/get-all/
-aliases: [/it/get-worksheet-count/]
+aliases: [  /it/get-worksheet-count/ ]
 keywords: "Aspose.Cells, API Cloud, Ottieni Fogli di Lavoro, Excel, REST, SDK"
 description: "Recupera l'elenco dei fogli di lavoro in un libro Excel tramite l'API REST di Aspose.Cells Cloud (v3.0). Include esempio cURL, frammenti SDK e formato della risposta."
 weight: 10

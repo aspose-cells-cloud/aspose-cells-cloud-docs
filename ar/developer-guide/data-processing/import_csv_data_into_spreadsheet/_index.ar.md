@@ -3,7 +3,7 @@ title: "استيراد بيانات CSV إلى جدول بيانات"
 ArticleTitle: "استيراد بيانات CSV إلى جدول بيانات – واجهة برمجة تطبيقات Aspose.Cells Cloud"
 second_title: "مستند"
 linktype: "docs"
-url: /cells/import/data/csv
+url: /ar/cells/import/data/csv
 aliases: []
 keywords: "Aspose.Cells, استيراد CSV, جدول بيانات, API"
 description: "استيراد ملف بيانات CSV إلى جدول البيانات المحلي باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud."

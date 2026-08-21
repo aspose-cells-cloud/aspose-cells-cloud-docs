@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Excel'de Çalışma Sayfalarını Yeniden Adlandırma – Sayfa Adlarını Değiştirme"
 linktitle: "Tablolama Dosyasında Çalışma Sayfasını Yeniden Adlandırın"
 type: docs
-url: /rename-worksheet-in-spreadsheet/
+url: /tr/rename-worksheet-in-spreadsheet/
 keywords: "çalışma sayfasını yeniden adlandır, Aspose.Cells Cloud, Excel API, tablolama dosyası, SDK, REST API"
 description: "Aspose.Cells Cloud API ile Excel çalışma sayfalarını kolayca yeniden adlandırın. Gerekli parametreleri öğrenin, cURL örneklerini görün ve C#, Java, Python ve daha fazlası için SDK kodlarını edinin."
 weight: 100

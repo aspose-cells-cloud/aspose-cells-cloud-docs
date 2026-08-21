@@ -4,7 +4,7 @@ ArticleTitle: "Convertire Foglio di Lavoro in Tabella HTML – Aspose.Cells Clou
 second_title: "Documenti"
 linktype: "ConvertWorksheetToHtmlTable"
 type: docs
-url: /cells/convert/worksheet/html-table
+url: /it/cells/convert/worksheet/html-table
 aliases: []
 keywords: "Aspose.Cells, ConvertWorksheetToHtmlTable, Tabella HTML, API"
 description: "Converte un foglio di lavoro di un file foglio elettronico presente nel filesystem locale in un file tabella HTML utilizzando Aspose.Cells Cloud."

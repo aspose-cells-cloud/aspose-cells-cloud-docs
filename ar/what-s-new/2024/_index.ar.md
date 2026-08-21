@@ -4,7 +4,7 @@ second title: "مستند"
 linktitle: "ما الجديد في عام 2024"
 type: docs
 weight: 20
-url: /new-features/2024/
+url: /ar/new-features/2024/
 keywords: "Aspose.Cells، Cloud، 2024، الميزات الجديدة، واجهة برمجة تطبيقات إزالة التكرارات، واجهة برمجة تطبيقات استخراج النصوص، تحويل البيانات، جدول البيانات، Excel، CSV، PDF، REST API"
 description: "نظرة عامة على الميزات والتحسينات الجديدة في Aspose.Cells Cloud لعام 2024، بما في ذلك واجهة برمجة تطبيقات إزالة التكرارات، واجهة برمجة تطبيقات استخراج النصوص، وتحسينات تحويل البيانات."
 ArticleTitle: "ميزات وتحسينات Aspose.Cells Cloud الجديدة لعام 2024"

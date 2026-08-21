@@ -4,7 +4,7 @@ secondtitle: "เอกสาร"
 ArticleTitle: "เครื่องมือแบ่งข้อความ Excel – แบ่งเนื้อหาเซลล์เป็นหลายคอลัมน์ | Aspose.Cells Cloud"
 linktitle: "แบ่งข้อความ"
 type: docs
-url: /split-text/
+url: /th/split-text/
 keywords: "Aspose, Cells, Split Text API, Excel, delimiter, text segmentation, cloud API"
 description: "แบ่งข้อความในเซลล์ Excel ออกเป็นคอลัมน์หรือแถวแยกกันได้อย่างง่ายดายด้วย Aspose.Cells Cloud รองรับ delimiter แบบกำหนดเอง, mask, line-breaks และตัวเลือกในการเก็บ delimiter ไว้ด้วย เริ่มต้นใช้งานด้วย curl หรือ SDK ได้ภายในไม่กี่นาที"
 weight: 100

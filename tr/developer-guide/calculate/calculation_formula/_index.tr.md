@@ -4,7 +4,7 @@ ArticleTitle: "Formül Hesapla – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktitle: "Formül Hesapla"
 type: docs
-url: /cells/calculate/formula
+url: /tr/cells/calculate/formula
 aliases: []
 keywords: "Aspose Cells, formül hesapla, elektronik tablo, API"
 description: "Aspose.Cells Cloud API kullanarak bir elektronik tabloda formülü hesaplayın."

@@ -3,7 +3,7 @@ title: "Excelワークシートにワークシート検証を追加する"
 second_title: "Document"
 linktitle: "Add"
 type: docs
-url: /validations/add/
+url: /ja/validations/add/
 keywords: "ワークシート検証の追加, Excel, Aspose.Cells Cloud, REST API, スプレッドシート, 検証ルール"
 description: "Aspose.Cells Cloud REST APIを使用してExcelファイルにワークシート検証を追加します。SDKはC#、Java、PHP、Ruby、Node.js、Python、Perl、Go、およびSwiftで利用可能です。"
 weight: 10

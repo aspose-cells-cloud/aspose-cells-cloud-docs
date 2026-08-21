@@ -1,8 +1,8 @@
 ---
 title: "Çalışma Sayfasından Grafik Al"
 type: docs
-url: /charts/get/
-aliases: [/get-chart-from-a-worksheet/]
+url: /tr/charts/get/
+aliases: [  /tr/get-chart-from-a-worksheet/ ]
 weight: 10
 keywords: "Aspose.Cells Cloud, Grafik Al, Çalışma Sayfası, REST API, Excel, Grafik API, grafik alma, Excel grafik"
 description: "Aspose.Cells Cloud REST API kullanarak bir çalışma sayfasından grafik bilgilerini, meta verileri ve dışa aktarma formatını alın."

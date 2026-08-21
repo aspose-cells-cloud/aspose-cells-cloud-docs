@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Avgruppera"
 type: docs
 url: /sv/rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
+aliases: [  /sv/ungroup-rows-in-excel-worksheet/ ]
 keywords: "Avgruppera rader, Excel, Aspose.Cells Cloud, REST API, SDK, kalkylark"
 description: "Lär dig hur du avgrupperar rader i ett Excel-ark med Aspose.Cells Cloud REST API och SDK:er för olika programmeringsspråk."
 weight: 70

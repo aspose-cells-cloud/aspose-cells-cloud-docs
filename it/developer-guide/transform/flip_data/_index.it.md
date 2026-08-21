@@ -3,7 +3,7 @@ title: "FlipData"
 ArticleTitle: "FlipData – Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /cells/flip
+url: /it/cells/flip
 aliases: []
 keywords: "FlipData, Trasformazione, Aspose.Cells"
 description: "Traspone un intervallo di dati specificato in un file di foglio elettronico."

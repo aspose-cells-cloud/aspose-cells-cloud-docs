@@ -1,7 +1,7 @@
 ---
 title: "Aggiorna Asse Secondario di Categoria del Grafico"
 type: docs
-url: /charts/second-category-axis/update/
+url: /it/charts/second-category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Grafico, Asse Secondario di Categoria, API REST, Aggiorna Grafico, Excel, API Cloud"
 description: "Scopri come aggiornare l'asse secondario di categoria di un grafico in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud."

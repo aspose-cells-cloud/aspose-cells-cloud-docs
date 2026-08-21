@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Döp om"
 type: docs
 url: /sv/worksheets/rename/
-aliases: [/rename-excel-worksheet/]
+aliases: [  /sv/rename-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, döp om Excel-arbetsblad, REST API, kalkylark-SDK, döp om arbetsblad, molnlagring"
 description: "Döp om ett arbetsblad i en Excel-arbetsbok med Aspose.Cells Cloud REST API. SDK:er finns tillgängliga för Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby och Swift."
 weight: 20

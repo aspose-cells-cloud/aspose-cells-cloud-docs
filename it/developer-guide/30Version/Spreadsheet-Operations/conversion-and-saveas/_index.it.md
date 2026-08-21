@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Conversione e Salva con nome"
 type: docs
 url: /it/conversion-and-save-as/
-aliases: [/it/convert-excel/, /it/convert/]
+aliases: [  /it/convert-excel/ , /it/convert/ ]
 keywords: "Aspose.Cells, API di conversione Excel, converti Excel in PDF, Excel in CSV, Excel in JSON, conversione cloud di fogli elettronici"
 description: "Scopri come convertire cartelle di lavoro Excel in PDF, CSV, JSON, HTML e oltre 15 altri formati utilizzando l'API REST Aspose.Cells Cloud. Include dettagli sugli endpoint, comandi cURL di esempio e frammenti di codice per SDK in Java, .NET, Python e altro ancora."
 weight: 30

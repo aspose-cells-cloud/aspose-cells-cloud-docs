@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – 用紙サイズ定数の完全リスト"
 second_title: "ドキュメント"
 linktitle: "用紙サイズ"
 type: docs
-url: /paper-size/
+url: /ja/paper-size/
 keywords: "用紙サイズ, Aspose.Cells Cloud, REST API, スプレッドシート, A4, レター, ISO, JIS, PRC"
 description: "Aspose.Cells Cloud REST API がサポートする用紙サイズ定数の完全リスト。各定数には寸法情報と、スプレッドシートでカスタムサイズを設定するための使用例が含まれています。"
 weight: 20

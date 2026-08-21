@@ -3,8 +3,8 @@ title: "Excel PivotTable'ler ile Çalışmak"
 second_title: "Belge"
 linktype: "PivotTable'ler"
 type: docs
-url: /pivottables/
-aliases: [/working-with-pivot-tables/]
+url: /tr/pivottables/
+aliases: [  /tr/working-with-pivot-tables/ ]
 keywords: "Excel, PivotTable, Aspose.Cells Cloud, API, Elektronik Tablo, Veri Analizi, REST API"
 description: "Excel çalışma sayfalarında PivotTable'leri oluşturmak, almak, güncellemek ve silmek için Aspose.Cells Cloud REST API'lerini kullanma rehberi. SDK referansları, örnek çağrılar ve sürüm notlarını içerir."
 weight: 100

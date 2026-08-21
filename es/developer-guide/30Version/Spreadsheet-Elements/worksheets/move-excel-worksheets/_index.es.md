@@ -3,8 +3,8 @@ title: "Mover una hoja de cálculo de Excel – API de Aspose.Cells Cloud (v3.0)
 second_title: "Documento"
 linktitle: "Mover"
 type: docs
-url: /worksheets/move/
-aliases: [/move-excel-worksheets/]
+url: /es/worksheets/move/
+aliases: [  /es/move-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Mover hoja de cálculo, Excel, API REST, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
 description: "Aprenda cómo mover una hoja de cálculo de Excel a una nueva posición utilizando la API de Aspose.Cells Cloud (v3.0). Incluye el punto de conexión, parámetros requeridos, ejemplo de cURL y código del SDK en C#, Java, Python y más."
 weight: 20

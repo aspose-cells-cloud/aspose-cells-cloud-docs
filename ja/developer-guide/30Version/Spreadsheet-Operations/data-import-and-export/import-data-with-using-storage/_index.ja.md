@@ -3,7 +3,7 @@ title: "ストレージを使用したデータのインポート"
 second_title: "ドキュメント"
 linktitle: "ストレージを使用したデータのインポート"
 type: docs
-url: /import-data-with-using-storage/
+url: /ja/import-data-with-using-storage/
 aliases:
   - /import-data-into-excel-worksheet/
   - /import-data-into-worksheet/

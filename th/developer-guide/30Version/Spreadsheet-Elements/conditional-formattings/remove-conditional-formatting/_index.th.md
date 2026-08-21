@@ -1,7 +1,7 @@
 ---
 title: "การลบรูปแบบที่มีเงื่อนไข – เอกสารอ้างอิง API ของ Aspose.Cells Cloud"
 type: docs
-url: /conditional-formattings/delete/
+url: /th/conditional-formattings/delete/
 aliases:
   - /remove-conditional-formatting/
 keywords: "Aspose.Cells, รูปแบบที่มีเงื่อนไข, การลบ, API, Excel, คลาวด์"

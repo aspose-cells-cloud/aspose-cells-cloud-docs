@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Funzionalità principali di Aspose.Cells Cloud Docker"
 linktype: "Features"
 type: docs
-url: /docker-container-features/
+url: /it/docker-container-features/
 description: "Esegui l'API Aspose.Cells Cloud in locale grazie al contenitore Docker di Aspose.Cells Cloud — un servizio basato su Docker e contenurizzato che fornisce l'elaborazione completa dei fogli di calcolo, privacy e funzionalità offline, senza utilizzare il cloud pubblico di Aspose."
 weight: 30
 keywords:

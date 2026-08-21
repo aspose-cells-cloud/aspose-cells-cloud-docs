@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Uppdatera automatiskt filter"
 type: docs
 url: /sv/autofilter/refresh/
-aliases: [/refresh-an-autofilter/]
+aliases: [  /sv/refresh-an-autofilter/ ]
 weight: 100
 keywords: "Aspose.Cells, AutoFilter, uppdatera, Excel, API, REST"
 description: "Uppdatera ett befintligt automatiskt filter i ett Excel-arbetsblad med Aspose.Cells Cloud REST API. Innehåller cURL- och SDK-exempel för C#, Java, Python och mer."

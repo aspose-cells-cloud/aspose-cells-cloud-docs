@@ -3,7 +3,7 @@ title: "Importer des données XML dans une feuille de calcul"
 ArticleTitle: "Importer des données XML dans une feuille de calcul – Aspose.Cells Cloud API"
 second_title: "Document"
 linktype: "docs"
-url: /cells/import/data/xml
+url: /fr/cells/import/data/xml
 aliases: []
 keywords: "Importer XML, Aspose.Cells, API"
 description: "Importer un fichier de données XML dans une feuille de calcul locale à l’aide d’Aspose.Cells Cloud."

@@ -3,7 +3,7 @@ title: "Удаление фонового изображения из книги
 second_title: "Документ"
 linktitle: "Удалить"
 type: docs
-url: /delete-background-in-excel-file/
+url: /ru/delete-background-in-excel-file/
 aliases:
   - /delete-background-in-workbook/
   - /workbook/delete-background/

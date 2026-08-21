@@ -3,8 +3,8 @@ title: "Ta bort en bild från ett Excel-ark – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Ta bort"
 type: docs
-url: /pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+url: /sv/pictures/delete/
+aliases: [  /sv/delete-a-specific-picture-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, moln-API, ta bort bild, Excel-ark, REST"
 description: "Ta bort en bild från ett Excel-ark med Aspose.Cells Cloud REST API. Lär dig DELETE-slutpunkten, nödvändiga parametrar, autentisering, felkoder och exempelkod."
 weight: 50

@@ -1,7 +1,7 @@
 ---
 title: "Excel 워크시트에서 셀 스타일 변경"
 type: docs
-url: /change-cell-style-in-excel-worksheet/
+url: /ko/change-cell-style-in-excel-worksheet/
 weight: 30
 keywords:
   - Aspose.Cells

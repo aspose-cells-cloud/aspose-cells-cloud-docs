@@ -3,8 +3,8 @@ title: "Establecer estilo de rango – API de Aspose.Cells Cloud"
 second_title: "Documentación"
 linktitle: "Establecer estilo de rango"
 type: docs
-url: /ranges/update/style/
-aliases: [/set-the-style-of-the-range/]
+url: /es/ranges/update/style/
+aliases: [  /es/set-the-style-of-the-range/ ]
 keywords: "Aspose.Cells, estilo de rango, API, Excel, nube"
 description: "Aprenda cómo establecer el estilo de un rango de celdas en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye pasos de autenticación, formato de solicitud, detalles de respuesta y ejemplos de SDK para .NET, Java, Python, Go y más."
 weight: 70

@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как сохранить электронную таблицу в другом формате на облачном хранилище: пошаговое руководство"
 linktitle: "Сохранить электронную таблицу в другом формате"
 type: docs
-url: /save-spreadsheet-as/
+url: /ru/save-spreadsheet-as/
 keywords: "Aspose Cells, конвертация электронных таблиц, сохранить как, API, XLSX в PDF, облачное хранилище, Excel в PDF, экспорт CSV, облачная конвертация"
 description: "Узнайте, как сохранить электронную таблицу, хранящуюся в Aspose Cloud, в другом формате (XLSX, PDF, CSV и др.) с помощью API Aspose.Cells Cloud Save Spreadsheet. Включает синтаксис запроса, параметры, пример curl и код SDK."
 weight: 100

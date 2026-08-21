@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "ما الفرق بين معالجة الملفات محليًا ومعالجتها في السحابة في Aspose.Cells Cloud؟"
 linktitle: "معالجة الملفات محليًا مقابل معالجتها في السحابة"
 type: docs
-url: /learn/local-file-processing-vs-cloud-file-processing/
+url: /ar/learn/local-file-processing-vs-cloud-file-processing/
 description: "مقارنة بين معالجة الملفات محليًا ومعالجتها في السحابة في Aspose.Cells Cloud: التخزين، التكلفة، الأمان، والسيناريوهات الشائعة. فهم النهج الأنسب لسير عملك."
 keywords: "Aspose.Cells Cloud، معالجة الملفات محليًا، معالجة الملفات في السحابة، تحويل جداول العمل، واجهة برمجة التطبيقات (API)"
 weight: 10

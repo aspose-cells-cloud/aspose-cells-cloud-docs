@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: Déplacer
 type: docs
 url: /fr/pivot-tables/move/
-aliases: [/fr/move-pivot-table/]
+aliases: [  /fr/move-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, déplacer un tableau croisé dynamique, Excel, API REST, SDK, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
 description: "Découvrez comment utiliser l'API REST Aspose.Cells Cloud pour déplacer un tableau croisé dynamique au sein d'un classeur Excel. Des SDK sont disponibles pour Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby et Swift."
 weight: 120

@@ -3,8 +3,8 @@ title: "Supprimer une image d'une feuille de calcul Excel – Aspose.Cells Cloud
 second_title: "Document"
 linktitle: "Supprimer"
 type: docs
-url: /pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+url: /fr/pictures/delete/
+aliases: [  /fr/delete-a-specific-picture-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, API cloud, supprimer une image, feuille de calcul Excel, REST"
 description: "Supprimer une image d'une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Découvrez le point de terminaison DELETE, les paramètres requis, l’authentification, les codes d’erreur et les exemples de code."
 weight: 50

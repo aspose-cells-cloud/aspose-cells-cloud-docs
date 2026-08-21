@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud Desteklenen Dosya Biçimleri: Excel, PDF, CSV, JSON, Markdown ve Daha Fazlası"
 linktitle: "Desteklenen Dosya Biçimleri"
 type: docs
-url: /supported-file-formats/
+url: /tr/supported-file-formats/
 description: "Aspose.Cells Cloud’un desteklediği tüm dosya biçimlerinin tam listesini keşfedin – Excel, CSV, PDF, JSON, Markdown, ODS ve daha fazlasını içe aktarın, dışa aktarın ve dönüştürün."
 weight: 40
 keywords: "Aspose.Cells Cloud, desteklenen dosya biçimleri, Excel, XLSX, CSV, PDF, JSON, Markdown, ODS, resim biçimleri, elektronik tablo biçimleri, belge dönüşümü"

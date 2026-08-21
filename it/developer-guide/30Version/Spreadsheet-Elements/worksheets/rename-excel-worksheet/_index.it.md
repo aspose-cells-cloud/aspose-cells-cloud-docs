@@ -4,7 +4,7 @@ second_title: "Documenti"
 linktype: "Rinomina"
 type: docs
 url: /it/worksheets/rename/
-aliases: [/it/rename-excel-worksheet/]
+aliases: [  /it/rename-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, rinomina foglio di calcolo Excel, API REST, SDK per fogli di calcolo, rinomina foglio, archiviazione cloud"
 description: "Rinomina un foglio di calcolo in un file Excel utilizzando l'API REST di Aspose.Cells Cloud. Gli SDK sono disponibili per Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby e Swift."
 weight: 20

@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man lägger till kalkylblad i Excel – Infoga nya kalkylblad på specifika platser"
 linktitle: "Lägg till kalkylblad i kalkylark"
 type: docs
-url: /add-worksheet-to-spreadsheet/
+url: /sv/add-worksheet-to-spreadsheet/
 keywords: "excel, lägg till kalkylblad, aspose cells api, kalkylark, moln-api, kalkylbladstyp, kalkylbladsposition"
 description: "Lär dig hur du programmatiskt lägger till ett nytt kalkylblad, diagramkalkylblad eller makrokalkylblad till en Excel-arbetsbok med Aspose.Cells Cloud API. Kontrollera kalkylbladstyp, namn och infogningsposition med ett enda REST-anrop."
 weight: 100

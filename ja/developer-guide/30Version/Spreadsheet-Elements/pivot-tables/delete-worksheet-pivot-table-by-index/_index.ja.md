@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "削除"
 type: docs
 url: "/ja/pivot-tables/delete/"
-aliases: [/delete-worksheet-pivot-table-by-index/]
+aliases: [  /ja/delete-worksheet-pivot-table-by-index/ ]
 keywords: "Aspose.Cells, ピボットテーブル, 削除, Excel, REST API"
 description: "Aspose.Cells Cloud REST API (v3.0) を使用して Excel ワークシートからピボットテーブルを削除します。リクエスト形式、cURL の例、エラーコード、および C#、Java、Python、Node.js 向けの SDK スニペットを含みます。"
 weight: 70

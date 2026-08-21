@@ -3,8 +3,8 @@ title: "删除 Excel 工作表背景"
 second_title: "文档"
 linktitle: "删除"
 type: docs
-url: /worksheets/background/delete/
-aliases: [/delete-background-or-watermark-of-excel-worksheet/]
+url: /zh/worksheets/background/delete/
+aliases: [  /zh/delete-background-or-watermark-of-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 删除工作表背景, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "使用 Aspose.Cells Cloud REST API 删除 Excel 工作表的背景图像。支持的 SDK 包括 C#、Java、PHP、Ruby、Node.js、Python、Perl 和 Go。"
 weight: 210

@@ -5,7 +5,7 @@ second_title: "Документ"
 linktitle: "Ячейки"
 type: docs
 url: /ru/working-with-cells/
-aliases: [/ru/working-with-worksheets/]
+aliases: [  /ru/working-with-worksheets/ ]
 keywords: "Excel, Aspose.Cells, операции с ячейками, API электронных таблиц, REST API, стилизация ячеек, объединение ячеек, вычисление формул"
 description: "Изучите Aspose.Cells Cloud API для выполнения операций с ячейками Excel, включая установку значений, применение стилей, объединение/разъединение ячеек и вычисление формул."
 weight: 100

@@ -1,8 +1,8 @@
 ---
 title: "تحديث عنوان المخطط في ورقة عمل إكسل"
 type: docs
-url: /charts/title/update/
-aliases: [/update-chart-title-in-excel-worksheet/]
+url: /ar/charts/title/update/
+aliases: [  /ar/update-chart-title-in-excel-worksheet/ ]
 weight: 160
 keywords: Excel, Aspose.Cells, REST API, عنوان المخطط, تحديث, Cloud SDK
 description: تعلّم كيفية تحديث عنوان مخطط في ورقة عمل إكسل باستخدام Aspose.Cells Cloud REST API وcURL ومتعدد من SDKs.

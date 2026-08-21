@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "الوظائف الأساسية لحاوية Aspose.Cells Cloud Docker"
 linktitle: "الميزات"
 type: docs
-url: /docker-container-features/
+url: /ar/docker-container-features/
 description: "تشغيل واجهة Aspose.Cells Cloud API محليًا باستخدام حاوية Aspose.Cells Cloud Docker — وهي خدمة مُحتَصرة مبنية على Docker وتوفّر معالجة كاملة للجداول الحسابية مع ضمان الخصوصية والقدرة على العمل دون اتصال بالإنترنت دون الاعتماد على السحابة العامة لـ Aspose."
 weight: 30
 keywords:

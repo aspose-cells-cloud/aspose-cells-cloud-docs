@@ -4,7 +4,7 @@ ArticleTitle: "使用 Aspose.Cells Cloud API 将列表对象转换为区域"
 second_title: "文档"
 linktitle: "转换"
 type: docs
-url: /list-objects/to-range/
+url: /zh/list-objects/to-range/
 aliases:
   - /convert-list-object-or-table-to-range/
   - /tables/to-range/

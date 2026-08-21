@@ -4,7 +4,7 @@ secondtitle: "Belge"
 articletitle: "Uzak Elektronik Tablo Çalışma Sayfasını Diğer Formatlara Dışa Aktarma: Adım Adım Rehber"
 linktitle: "Elektronik Tabloyu Format Olarak Dışa Aktar"
 type: docs
-url: /export-spreadsheet-as-format/
+url: /tr/export-spreadsheet-as-format/
 keywords: "Aspose.Cells, elektronik tablo dönüştürme, API, dışa aktar, PDF, CSV, JSON, XLSX"
 description: "Aspose Cloud’da depolanan Excel çalışma kitaplarını tek bir REST uç noktası aracılığıyla PDF, XLSX, CSV, JSON veya HTML formatına dönüştürün. İstek sözdizimini, parametreleri öğrenin ve C#, Java, Python ve daha fazlası dillerinde SDK örneklerini görün."
 weight: 100

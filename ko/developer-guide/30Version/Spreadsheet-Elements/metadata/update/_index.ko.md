@@ -3,7 +3,7 @@ title: "메타데이터 업데이트"
 second_title: "문서"
 linktitle: "스토리지 사용 없이 업데이트"
 type: docs
-url: /metadata/update/
+url: /ko/metadata/update/
 keywords: "메타데이터, Excel, Aspose.Cells Cloud, REST API, 업데이트, 스프레드시트"
 description: "Aspose.Cells Cloud REST API는 Excel 파일의 메타데이터를 업데이트할 수 있도록 지원합니다. 다양한 프로그래밍 언어(C#, Java, Python, Ruby, Go 등)를 위한 여러 SDK를 지원하여 원활한 통합이 가능합니다."
 weight: 35

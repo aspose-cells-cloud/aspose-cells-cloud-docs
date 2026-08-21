@@ -3,7 +3,7 @@ title: "CSV-Daten in eine Tabellenkalkulation importieren"
 ArticleTitle: "CSV-Daten in eine Tabellenkalkulation importieren – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "docs"
-url: /cells/import/data/csv
+url: /de/cells/import/data/csv
 aliases: []
 keywords: "Aspose.Cells, CSV-Import, Tabellenkalkulation, API"
 description: "CSV-Datendatei mithilfe der Aspose.Cells Cloud API in die lokale Tabellenkalkulation importieren."

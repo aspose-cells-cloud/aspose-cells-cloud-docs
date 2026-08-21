@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud SDK för C#: Konvertera, sammanfoga, dela upp, skydda
 second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud SDK för C#: Konvertera, sammanfoga, dela upp, skydda, söka, ersätta och mer."
 linktype: "docs"
-url: /available-sdks/aspose-cells-cloud-net/
+url: /sv/available-sdks/aspose-cells-cloud-net/
 description: "Aspose.Cells Cloud .NET SDK tillhandahåller en plattformsöverskridande API för att skapa, konvertera, sammanfoga, dela upp, skydda, söka och ersätta Excel-filer – ingen Office-installation krävs."
 keywords: "Aspose.Cells, moln-SDK, .NET, Excel, konvertera, sammanfoga, dela upp, skydda, söka, ersätta, API"
 weight: 30

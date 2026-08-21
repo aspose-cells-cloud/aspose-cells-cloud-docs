@@ -3,7 +3,7 @@ title: "Excel dosyasında sütunları otomatik boyutlandırma"
 second_title: "Belge"
 linktitle: "Sütunlar"
 type: docs
-url: /autofit-columns-on-an-excel-file/
+url: /tr/autofit-columns-on-an-excel-file/
 aliases:
   [
     /auto-fit-columns-in-excel-workbooks,

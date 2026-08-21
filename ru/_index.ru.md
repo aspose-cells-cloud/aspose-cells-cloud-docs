@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Aspose.Cells Cloud API – Конвертирование, объединение, разбиение и защита файлов Excel"
 linktitle: "Центр разработчика"
 type: docs
-url: /
+url: /ru/
 description: "Aspose.Cells Cloud REST API позволяет конвертировать, объединять, разбивать, защищать и выполнять комплексную обработку электронных таблиц Excel. Бесплатный тариф — до 150 вызовов API в месяц, SDK для 8 языков."
 weight: 10
 keywords: "Aspose.Cells Cloud, Excel API, конвертация электронных таблиц, объединение Excel, разбиение Excel, защита Excel, облачный SDK для электронных таблиц, REST API, обработка Excel"

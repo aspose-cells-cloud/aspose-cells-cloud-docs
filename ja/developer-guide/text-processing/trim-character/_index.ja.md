@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Excel データクリーナー - 文字、スペース、改行を自動でトリム – オンライン、ショートコード"
 linktitle: "文字のトリム"
 type: docs
-url: /trim-character/
+url: /ja/trim-character/
 keywords: "Excel、テキストトリム、スペース削除、改行削除、Aspose.Cells、データクリーニング、スプレッドシート、セル書式の正規化"
 description: "Aspose.Cells Cloud API を使用して Excel セルから余分なスペース、改行、不要な文字をトリムします。クリーンで一貫性のあるスプレッドシートデータを実現します。"
 weight: 100

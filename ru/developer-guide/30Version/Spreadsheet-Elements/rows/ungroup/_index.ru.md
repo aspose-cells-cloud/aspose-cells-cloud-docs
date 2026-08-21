@@ -3,8 +3,8 @@ title: "Отгруппировка строк на листе Excel"
 second_title: "Документ"
 linktitle: "Отгруппировка"
 type: docs
-url: /rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
+url: /ru/rows/ungroup/
+aliases: [  /ru/ungroup-rows-in-excel-worksheet/ ]
 keywords: "отгруппировка строк, Excel, Aspose.Cells Cloud, REST API, SDK, электронная таблица"
 description: "Узнайте, как отгруппировать строки на листе Excel с помощью REST API и SDK Aspose.Cells Cloud для различных языков программирования."
 weight: 70

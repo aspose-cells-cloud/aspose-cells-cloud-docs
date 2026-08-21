@@ -3,8 +3,8 @@ title: "Exportera OLE-objekt – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "OLE-objekt"
 type: docs
-url: /export-excel-ole-object/
-aliases: [/export/excel-ole-object/]
+url: /sv/export-excel-ole-object/
+aliases: [  /sv/export/excel-ole-object/ ]
 keywords: "Aspose.Cells, OLE-objekt, export, Excel, moln-API, PDF, PNG, DOCX, PPTX"
 description: "Exportera OLE-objekt från en Excel-arbetsbok med Aspose.Cells Cloud API. Lär dig begäranformat, parametrar, exempel på cURL och felhantering."
 weight: 20

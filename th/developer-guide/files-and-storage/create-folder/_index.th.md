@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "สร้างโฟลเดอร์ – Aspose.Cells Cloud API"
 linktype: "สร้างโฟลเดอร์"
 type: docs
-url: /create-folder/
+url: /th/create-folder/
 keywords: "Aspose.Cells, Cloud API, สร้างโฟลเดอร์, การจัดการที่จัดเก็บไฟล์, Excel"
 description: "สร้างโฟลเดอร์ใหม่ในที่จัดเก็บไฟล์บนคลาวด์ของ Aspose.Cells ผ่านคำขอ PUT แบบง่าย ดูรูปแบบคำขอ พารามิเตอร์ การตอบกลับ และการจัดการข้อผิดพลาด"
 weight: 100

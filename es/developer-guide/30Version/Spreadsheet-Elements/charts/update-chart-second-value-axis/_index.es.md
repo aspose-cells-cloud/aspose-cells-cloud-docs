@@ -2,7 +2,7 @@
 title: "Actualizar el segundo eje de valores de un gráfico"
 ArticleTitle: "Actualizar el segundo eje de valores de un gráfico – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/second-value-axis/update/
+url: /es/charts/second-value-axis/update/
 weight: 160
 keywords: "Aspose.Cells, API de gráficos, segundo eje de valores, Excel, REST, SDK en la nube"
 description: "Actualiza el segundo eje de valores de un gráfico en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye ejemplos de solicitudes, códigos de respuesta y requisitos previos."

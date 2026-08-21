@@ -3,8 +3,8 @@ title: "Trabajar con rangos de Excel"
 second_title: "Documentos"
 linktype: "Rango"
 type: docs
-url: /ranges/
-aliases: [/working-with-ranges/]
+url: /es/ranges/
+aliases: [  /es/working-with-ranges/ ]
 keywords: "Aspose.Cells, rango de Excel, API REST, SDK, .NET, Java, Python, fusionar celdas, copiar rango, establecer valor de rango"
 description: "Aprenda cómo recuperar, modificar, aplicar estilo, fusionar, mover y copiar rangos de Excel mediante la API REST de Aspose.Cells Cloud. Incluye ejemplos de código SDK para .NET, Java, Python y más."
 weight: 100

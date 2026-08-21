@@ -1,8 +1,8 @@
 ---
 title: "更新工作表中的图表图例"
 type: docs
-url: /charts/legend/update/
-aliases: [/update-chart-legend-in-a-worksheet/]
+url: /zh/charts/legend/update/
+aliases: [  /zh/update-chart-legend-in-a-worksheet/ ]
 weight: 160
 keywords: "Aspose.Cells, 云, Excel, 图表, 图例, REST API, 更新, 工作表, cURL, SDK"
 description: "如何使用 Aspose.Cells Cloud REST API 更新 Excel 工作表中的图表图例，包含 cURL 请求示例及多种编程语言的 SDK 代码片段。"

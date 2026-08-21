@@ -4,8 +4,8 @@ ArticleTitle: "Fügen Sie eine leere Zeile in ein Excel-Arbeitsblatt mithilfe de
 second_title: "Dokument"
 linktype: "Row"
 type: docs
-url: /rows/add/row/
-aliases: [/add-an-empty-row-in-a-worksheet/]
+url: /de/rows/add/row/
+aliases: [  /de/add-an-empty-row-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, leere Zeile hinzufügen, Arbeitsblatt, REST-API, Zeile einfügen, Cloud-Tabellenkalkulation"
 description: "Verwenden Sie die Aspose.Cells Cloud REST API, um eine leere Zeile in ein Excel-Arbeitsblatt einzufügen. Unterstützt mehrere SDKs (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) für schnelle Entwicklung."
 weight: 20

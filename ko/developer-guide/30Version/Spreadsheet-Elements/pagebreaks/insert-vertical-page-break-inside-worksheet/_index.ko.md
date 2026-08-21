@@ -3,8 +3,8 @@ title: "수직 페이지 나누기 추가"
 second_title: "문서"
 linktitle: "수직 페이지 나누기 추가"
 type: docs
-url: /page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
+url: /ko/page-breaks/add-vertical-page-break/
+aliases: [  /ko/insert-vertical-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 수직 페이지 나누기, REST API, Excel, SDK, cURL"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 Excel 워크시트에 수직 페이지 나누기를 삽입하는 방법을 배워보세요. 요청 구문, cURL 예제, SDK 샘플, 인증 가이드, 오류 처리 세부 정보가 포함됩니다."
 weight: 40

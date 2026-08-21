@@ -3,8 +3,8 @@ title: "Excelワークシート内のListObjectデータを並べ替える"
 second_title: "Document"
 linktitle: "Sort"
 type: docs
-url: /list-objects/sort-data/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
+url: /ja/list-objects/sort-data/
+aliases: [  /ja/get-a-list-object-or-table-inside-the-worksheet/ , /ja/tables/sort-data/ ]
 keywords: "Aspose.Cells Cloud, Excel, ListObject, データの並べ替え, REST API, ワークシート"
 description: "Aspose.Cells Cloud REST API（v3.0）を使用してExcelワークシート内のListObject（テーブル）データを並べ替える方法を学びます。エンドポイント、パラメーター、サンプルcURLリクエスト、SDKの使用例を含みます。"
 weight: 40

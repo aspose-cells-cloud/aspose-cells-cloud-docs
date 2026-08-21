@@ -3,8 +3,8 @@ title: "Text in einem Excel-Arbeitsblatt ersetzen – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Im Arbeitsblatt ersetzen"
 type: docs
-url: /worksheets/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /de/worksheets/replace-text/
+aliases: [  /de/replace-text-in-a-workbook/ ]
 keywords: "Aspose.Cells, Text ersetzen, Excel, REST-API, Tabellenkalkulation, Arbeitsblatt"
 description: "Erfahren Sie, wie Sie Text in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud API (v3.0) ersetzen. Enthält Voraussetzungen, Authentifizierung, Anforderungssyntax, cURL-Beispiel, SDK-Codebeispiele, Antwortdetails und Fehlerbehandlung."
 ArticleTitle: "Text in einem Excel-Arbeitsblatt ersetzen – Aspose.Cells Cloud API"

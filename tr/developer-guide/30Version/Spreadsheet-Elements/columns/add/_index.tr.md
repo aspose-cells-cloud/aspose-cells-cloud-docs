@@ -3,7 +3,7 @@ title: "Excel Çalışma Sayfasına Boş Bir Sütun Ekleyin - Aspose.Cells Cloud
 second_title: "Belge"
 linktitle: "Ekle"
 type: docs
-url: /columns/add/
+url: /tr/columns/add/
 aliases:
   - /add-an-empty-column-in-an-excel-worksheet/
   - /add-an-empty-column-in-a-worksheet/

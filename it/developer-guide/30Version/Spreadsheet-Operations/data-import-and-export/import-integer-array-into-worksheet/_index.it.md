@@ -2,7 +2,7 @@
 title: "Importa array di interi in un foglio di lavoro Excel"
 linktitle: "Importa array di interi"
 type: docs
-url: /import-integer-array-into-excel-worksheet/
+url: /it/import-integer-array-into-excel-worksheet/
 aliases:
   - /import-integer-array-into-excel-worksheet/
   - /import-integer-array-into-worksheet/

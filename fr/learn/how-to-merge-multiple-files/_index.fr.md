@@ -2,7 +2,7 @@
 title: "Comment fusionner plusieurs fichiers de feuilles de calcul avec Aspose.Cells Cloud"
 linktitle: "Comment fusionner plusieurs fichiers de feuilles de calcul"
 type: docs
-url: /how-to-merge-multiple-files
+url: /fr/how-to-merge-multiple-files
 description: "Comment fusionner plusieurs fichiers de feuilles de calcul avec Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, API REST, Feuille de calcul, PDF, CSV, JSON, Markdown, Comment fusionner plusieurs fichiers via Aspose.Cells Cloud

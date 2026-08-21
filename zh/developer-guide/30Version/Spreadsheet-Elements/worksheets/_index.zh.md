@@ -3,8 +3,8 @@ title: "处理 Excel 工作表"
 second_title: "文档"
 linktitle: "工作表"
 type: docs
-url: /worksheets/
-aliases: [/working-with-worksheets/]
+url: /zh/worksheets/
+aliases: [  /zh/working-with-worksheets/ ]
 keywords: "Excel 工作表, Aspose.Cells Cloud, REST API, 电子表格, 工作簿, 数据操作, Excel 自动化"
 description: "Aspose.Cells Cloud REST API 支持对 Excel 工作簿中的工作表进行操作。SDK 支持多种编程语言，包括 Android、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby 和 Swift。"
 weight: 100

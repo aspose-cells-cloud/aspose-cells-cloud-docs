@@ -3,7 +3,7 @@ title: "2 次元文字列配列を Excel ワークシートにインポートす
 second_title: "Document"
 linktitle: "2 次元文字列配列のインポート"
 type: docs
-url: /import-a-2d-string-array-into-excel-worksheet/
+url: /ja/import-a-2d-string-array-into-excel-worksheet/
 aliases:
   [
     "/import-2dimension-string-array-into-excel-worksheet/",

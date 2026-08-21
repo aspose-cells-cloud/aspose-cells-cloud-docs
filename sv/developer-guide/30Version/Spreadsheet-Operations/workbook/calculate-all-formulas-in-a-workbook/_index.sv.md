@@ -3,7 +3,7 @@ title: "Beräkna alla formler i en Excel-arbetsbok"
 second_title: "Dokument"
 linktitle: "Beräkna"
 type: docs
-url: /calculate-all-formulas-on-an-excel-file/
+url: /sv/calculate-all-formulas-on-an-excel-file/
 aliases:
   [/calculate-all-formulas-in-a-workbook/, /workbook/calculate-all-formulas/]
 keywords: "Aspose.Cells, beräkna formler, Excel API, moln-SDK"

@@ -4,8 +4,8 @@ ArticleTitle: "处理 Excel 行 — Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "行"
 type: docs
-url: /rows/
-aliases: [/working-with-rows/]
+url: /zh/rows/
+aliases: [  /zh/working-with-rows/ ]
 keywords: "Aspose.Cells, Excel 行, REST API, 电子表格操作"
 description: "使用 Aspose.Cells Cloud REST API 处理 Excel 文件中的行。支持 Android、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby 和 Swift。"
 weight: 100

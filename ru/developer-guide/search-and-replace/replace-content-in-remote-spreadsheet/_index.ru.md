@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Пакетная замена текста в облачных файлах Excel — API поиска и замены"
 linktitle: "Замена содержимого в удаленной электронной таблице"
 type: docs
-url: /replace-content-in-remote-spreadsheet/
+url: /ru/replace-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, замена содержимого, удаленная электронная таблица, API поиска и замены, облачный Excel, пакетная замена текста"
 description: "Используйте API поиска и замены Aspose.Cells Cloud для пакетного обновления текста в удаленных рабочих книгах Excel. Защищенный HTTPS-интерфейс, аутентификация OAuth2 и готовые примеры SDK для быстрой интеграции."
 weight: 100

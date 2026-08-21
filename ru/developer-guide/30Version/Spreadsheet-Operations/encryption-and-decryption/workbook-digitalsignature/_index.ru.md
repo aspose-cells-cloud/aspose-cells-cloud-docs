@@ -4,7 +4,7 @@ ArticleTitle: "Добавление цифровой подписи в рабо�
 second_title: "Документ"
 linktitle: "Цифровая подпись"
 type: docs
-url: /excel-digital-signature/
+url: /ru/excel-digital-signature/
 aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/

@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud 요금제"
 linktype: "요금제"
 type: docs
-url: /pricing-plan/
+url: /ko/pricing-plan/
 description: "Aspose.Cells Cloud 요금제 확인: 매월 150회 무료 API 호출 후, 사용량에 따라 과금되며 API 호출당 최저 $0.007로 과금됩니다. 숨겨진 업그레이드 없이 투명한 단계별 요금제만 제공됩니다."
 weight: 70
 keywords: "Aspose.Cells Cloud 요금제, API 호출 비용, 사용량 기반 과금 Excel API, 클라우드 스프레드시트 요금제"

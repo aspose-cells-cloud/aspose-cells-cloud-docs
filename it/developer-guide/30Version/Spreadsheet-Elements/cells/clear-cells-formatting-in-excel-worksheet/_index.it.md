@@ -1,7 +1,7 @@
 ---
 title: "Cancellare la formattazione delle celle in un foglio di lavoro Excel"
 type: docs
-url: /clear-cells-formatting-in-excel-worksheet/
+url: /it/clear-cells-formatting-in-excel-worksheet/
 weight: 100
 keywords: "Aspose.Cells Cloud, Excel, Cancellare la formattazione delle celle, REST API, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Utilizza l'API REST di Aspose.Cells Cloud per cancellare la formattazione delle celle in un foglio di lavoro Excel. Include i dettagli della richiesta, un esempio cURL e frammenti di codice SDK per diversi linguaggi."

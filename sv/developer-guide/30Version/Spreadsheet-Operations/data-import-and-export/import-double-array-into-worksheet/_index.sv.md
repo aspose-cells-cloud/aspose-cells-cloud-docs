@@ -3,7 +3,7 @@ title: "Importera dubbelarray till Excel-arket"
 second_title: "Dokument"
 linktitle: "Importera dubbelarray"
 type: docs
-url: /import-double-array-into-excel-worksheet/
+url: /sv/import-double-array-into-excel-worksheet/
 aliases:
   - /import-double-array-into-worksheet/
   - /import-data/double-array/

@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать рабочий лист электронной таблицы в CSV с помощью API Aspose.Cells Cloud"
 linktitle: "Преобразование рабочего листа в CSV"
 type: docs
-url: /convert-worksheet-to-csv/
+url: /ru/convert-worksheet-to-csv/
 keywords: "Aspose.Cells, преобразование в CSV, рабочий лист в CSV, REST API, облачная электронная таблица, Excel в CSV"
 description: "Узнайте, как преобразовать конкретный рабочий лист из файла Excel в CSV с помощью API Aspose.Cells Cloud (версия 4.0). Включает описание конечной точки, параметры, примеры команд cURL, код SDK и обработку ошибок."
 weight: 100

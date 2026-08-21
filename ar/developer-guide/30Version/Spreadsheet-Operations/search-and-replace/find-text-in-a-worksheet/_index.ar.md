@@ -3,8 +3,8 @@ title: "العثور على نص في ورقة عمل Excel"
 second_title: "مستند"
 linktitle: "العثور في ورقة العمل"
 type: docs
-url: /worksheets/find-text/
-aliases: [/find-text-in-a-worksheet/]
+url: /ar/worksheets/find-text/
+aliases: [  /ar/find-text-in-a-worksheet/ ]
 weight: 40
 keywords: "Excel، Aspose.Cells Cloud، REST API، البحث عن نص، ورقة العمل، جدول البيانات، البحث"
 description: "استخدم واجهة برمجة تطبيقات Aspose.Cells Cloud REST API للعثور على نص في ورقة عمل Excel. تتوفر الواجهة عبر مجموعة متنوعة من SDKs ولغات البرمجة."

@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud API – Konvertera, sammanfoga, dela upp & skydda Excel-filer"
 linktitle: "Utvecklarcenter"
 type: docs
-url: /
+url: /sv/
 description: "Aspose.Cells Cloud REST API möjliggör konvertering, sammanfogning, delning, skyddning och omfattande bearbetning av Excel-kalkylark. Gratis 150 anrop/månad, SDK:er för 8 språk."
 weight: 10
 keywords: "Aspose.Cells Cloud, Excel API, konvertering av kalkylark, sammanfoga Excel, dela upp Excel, skydda Excel, molnbaserat SDK för kalkylark, REST API, bearbetning av Excel"

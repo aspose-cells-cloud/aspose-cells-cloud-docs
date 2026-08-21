@@ -4,7 +4,7 @@ second_title: "Documento"
 linktype: "intervalli"
 type: docs
 url: /it/ranges/
-aliases: [/it/working-with-ranges/]
+aliases: [  /it/working-with-ranges/ ]
 keywords: "Aspose.Cells, intervallo Excel, REST API, SDK, .NET, Java, Python, unire celle, copiare intervalli, impostare valore intervallo"
 description: "Scopri come recuperare, modificare, formattare, unire, spostare e copiare intervalli di Excel utilizzando l'API REST di Aspose.Cells Cloud. Include esempi di codice SDK per .NET, Java, Python e altri linguaggi."
 weight: 100

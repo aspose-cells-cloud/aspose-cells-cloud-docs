@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: Gizle
 type: docs
 url: /tr/pivot-tables/hide-pivot-field-item/
-aliases: [/tr/hide-pivot-field-item/]
+aliases: [  /tr/hide-pivot-field-item/ ]
 keywords: "Aspose.Cells, pivot alanı öğesini gizle, PivotTable API, REST API, bulut SDK"
 description: "Aspose.Cells Cloud REST API kullanarak bir pivot tabloda pivot alanı öğesini nasıl gizleyeceğinizi öğrenin. İstek ayrıntılarını, cURL örneğini ve birden fazla dil için SDK kod parçacıklarını içerir."
 weight: 110

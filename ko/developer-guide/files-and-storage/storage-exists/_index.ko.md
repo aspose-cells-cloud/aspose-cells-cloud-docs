@@ -3,7 +3,7 @@ title: "스토리지가 존재하는지 확인하기 – Aspose.Cells Cloud API 
 second_title: "문서"
 ArticleTitle: "클라우드 기반 엑셀 파일 관리 – 스토리지 존재 여부 확인"
 linktype: "docs"
-url: "/storage-exists/"
+url: /ko/storage-exists/
 keywords: "Aspose.Cells, 스토리지 존재 여부, 클라우드 스토리지 API, REST, 엑셀"
 description: "Aspose.Cells Cloud에서 스토리지 컨테이너가 존재하는지 확인합니다. GET /v4.0/cells/storage/{storageName}/exist 엔드포인트, 필요한 파라미터, 응답 형식을 학습하고, C#, Java, Python 등 다양한 언어의 SDK 예제를 확인하세요."
 weight: 100

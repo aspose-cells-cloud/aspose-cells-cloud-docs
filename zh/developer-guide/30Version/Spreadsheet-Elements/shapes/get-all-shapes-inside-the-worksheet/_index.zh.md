@@ -3,8 +3,8 @@ title: "获取 Excel 工作表中的所有形状"
 second_title: "文档"
 linktitle: "获取全部"
 type: docs
-url: /shapes/get-all/
-aliases: [/get-all-shapes-inside-the-worksheet/]
+url: /zh/shapes/get-all/
+aliases: [  /zh/get-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, 云 API, Excel 形状, 获取形状, REST, SDK"
 description: "使用 Aspose.Cells Cloud REST API 从工作表中检索所有形状（图表、图片、文本框）。包含 cURL 示例、SDK 代码片段、身份验证步骤和错误处理。"
 ArticleTitle: "获取 Excel 工作表中的所有形状"

@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cómo convertir una hoja de cálculo local a JSON utilizando la API de Aspose.Cells Cloud"
 linktitle: "Convertir hoja de cálculo a JSON"
 type: docs
-url: /convert-spreadsheet-to-json/
+url: /es/convert-spreadsheet-to-json/
 keywords: "Aspose Cells Cloud, convertir hoja de cálculo a JSON, API Excel a JSON, API de Aspose.Cells Cloud, API REST, conversión de hojas de cálculo"
 description: "Aprenda a convertir archivos Excel locales a JSON mediante la API de Aspose.Cells Cloud. Incluye el punto de conexión, parámetros, código de ejemplo y manejo de errores para una integración fluida."
 weight: 100

@@ -3,8 +3,8 @@ title: "Excel 워크북에서 텍스트 바꾸기"
 second_title: "문서"
 linktitle: "워크북에서 바꾸기"
 type: docs
-url: /workbook/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /ko/workbook/replace-text/
+aliases: [  /ko/replace-text-in-a-workbook/ ]
 weight: 60
 keywords: "Aspose.Cells Cloud, 텍스트 바꾸기, Excel 워크북, XLSX, ODS, REST API, 스프레드시트, SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel(XLS, XLSX, XLSM, XLSB) 및 OpenDocument 스프레드시트(ODS) 워크북에서 텍스트를 바꿉니다. cURL 및 다양한 SDK(C#, Java, PHP, Ruby, Node.js, Python, Perl, Go 등)를 통해 사용할 수 있습니다."

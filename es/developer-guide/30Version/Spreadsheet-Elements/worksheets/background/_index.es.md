@@ -3,7 +3,7 @@ title: "Agregar o eliminar la imagen de fondo de hoja de cálculo – API de Asp
 second_title: "Documento"
 linktitle: "Fondo"
 type: docs
-url: /worksheets/background/
+url: /es/worksheets/background/
 keywords: "Aspose.Cells Cloud, fondo de hoja de cálculo, API de Excel, agregar imagen de fondo, eliminar fondo de hoja de cálculo, ejemplos de SDK"
 description: "Aprenda cómo agregar o eliminar una imagen de fondo en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye sintaxis de solicitud, ejemplos de SDK para Java, .NET, Python, PHP y manejo de errores."
 weight: 20

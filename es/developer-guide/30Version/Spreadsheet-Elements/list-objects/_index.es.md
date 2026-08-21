@@ -4,7 +4,7 @@ ArticleTitle: "Trabajar con ListObject de Excel"
 second_title: "Document"
 linktitle: "ListObjects"
 type: docs
-url: /list-objects/
+url: /es/list-objects/
 aliases:
   - /working-with-list-objects/
   - /working-with-list-object-or-table/

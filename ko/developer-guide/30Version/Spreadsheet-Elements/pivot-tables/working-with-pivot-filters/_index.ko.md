@@ -3,8 +3,8 @@ title: "피벗 필터 사용하기"
 second_title: "문서"
 linktitle: 필터
 type: docs
-url: /pivot-tables/add-filters/
-aliases: [/working-with-pivot-filters/]
+url: /ko/pivot-tables/add-filters/
+aliases: [  /ko/working-with-pivot-filters/ ]
 keywords: "Aspose.Cells, 피벗 테이블, 필터, REST API, 클라우드"
 description: "Aspose.Cells Cloud REST API를 사용하여 피벗 테이블 필터를 추가, 조회 및 삭제하는 방법을 배워보세요. 요청 구문, 필요한 매개변수, cURL 예제, C# 및 Go용 SDK 스니펫이 포함됩니다."
 weight: 50

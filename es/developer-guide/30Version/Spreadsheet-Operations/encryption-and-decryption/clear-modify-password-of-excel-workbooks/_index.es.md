@@ -3,7 +3,7 @@ title: "Quitar la protección de escritura (contraseña) de un libro de Excel"
 second_title: "Documento"
 linktitle: "Eliminar la contraseña de archivos de Excel"
 type: docs
-url: /clear-excel-files-password/
+url: /es/clear-excel-files-password/
 aliases:
   [
     /clear-modify-password-of-excel-workbooks/,

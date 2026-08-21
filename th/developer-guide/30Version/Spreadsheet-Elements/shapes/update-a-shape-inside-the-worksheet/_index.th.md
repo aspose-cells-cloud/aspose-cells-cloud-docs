@@ -3,8 +3,8 @@ title: "อัปเดตรูปร่างในแผ่นงาน Excel
 second_title: "เอกสาร"
 linktitle: "อัปเดต"
 type: docs
-url: /shapes/update/
-aliases: [/update-a-shape-inside-the-worksheet/]
+url: /th/shapes/update/
+aliases: [  /th/update-a-shape-inside-the-worksheet/ ]
 keywords: "อัปเดตรูปร่างผ่าน API ของ Excel, Aspose.Cells Cloud, การอัปเดตรูปร่างใน Excel, REST API, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
 description: "เรียนรู้วิธีอัปเดตรูปร่างในแผ่นงาน Excel โดยใช้ REST API ของ Aspose.Cells Cloud ซึ่งประกอบด้วยปลายทาง HTTPS, รายละเอียดการยืนยันตัวตน, โครงสร้าง DTO, ขั้นตอนการใช้งานแบบเป็นขั้นตอน, ตัวอย่าง cURL และตัวอย่างโค้ด SDK สำหรับภาษาโปรแกรมต่างๆ"
 ArticleTitle: "อัปเดตรูปร่างในแผ่นงาน Excel - Aspose.Cells Cloud API"

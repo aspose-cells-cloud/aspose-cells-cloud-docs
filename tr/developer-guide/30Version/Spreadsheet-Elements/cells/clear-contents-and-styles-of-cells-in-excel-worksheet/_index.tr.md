@@ -1,7 +1,7 @@
 ---
 title: "Bir Excel Çalışma Sayfasındaki Hücre İçeriğini ve Stillerini Temizleme"
 type: docs
-url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+url: /tr/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
 keywords:
   - Aspose.Cells

@@ -2,7 +2,7 @@
 title: "Comprimi e Ripara File Excel"
 second_title: "Documento"
 type: docs
-url: /compress-and-repair-excel-files/
+url: /it/compress-and-repair-excel-files/
 linktitle: "Comprimi e Ripara"
 keywords: "Aspose.Cells, compressione Excel, riparazione Excel, API cloud, ridurre dimensione file Excel, ripristinare cartella di lavoro danneggiata, comprimere file Excel, riparare cartella di lavoro Excel"
 description: "Scopri come comprimere grandi cartelle di lavoro Excel e riparare file danneggiati utilizzando l'API Aspose.Cells Cloud. Esempi passo-passo, linguaggi supportati e best practice."

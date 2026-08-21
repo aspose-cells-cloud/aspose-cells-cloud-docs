@@ -3,7 +3,7 @@ title: "Convertire Testo in Foglio di Lavoro Remoto"
 ArticleTitle: "Convertire Testo in Foglio di Lavoro Remoto – Aspose.Cells Cloud"
 second_title: "Documento"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
+url: /it/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
 aliases: []
 keywords: "Aspose.Cells, Conversione Testo, API"
 description: "Converte il testo in un intervallo specificato di un foglio di lavoro, inclusa la conversione numerica, la sostituzione di caratteri, la gestione dei ritorni a capo e la normalizzazione dei caratteri accentati."

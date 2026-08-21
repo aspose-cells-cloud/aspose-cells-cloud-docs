@@ -1,7 +1,7 @@
 ---
 title: "Получить ось категорий диаграммы"
 type: docs
-url: /charts/category-axis/get/
+url: /ru/charts/category-axis/get/
 weight: 60
 keywords: "Aspose.Cells, ось категорий диаграммы, Excel, REST API, облачное хранилище, OAuth2, документация API"
 description: "Получает ось категорий диаграммы в листе Excel с использованием REST API Aspose.Cells Cloud."

@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Excel에서 끊긴 링크 찾기 및 수정 – 클라우드 스프레드시트 링크 검사기"
 linktitle: "스프레드시트 끊긴 링크 검색"
 type: docs
-url: /search-spreadsheet-broken-links/
+url: /ko/search-spreadsheet-broken-links/
 keywords: "Aspose Cells, 끊긴 링크, 스프레드시트 감사, Excel API, 클라우드 스프레드시트, 링크 검사기"
 description: "Aspose.Cells Cloud API를 통해 Excel 워크북의 끊긴 링크를 탐지하고 수정합니다. 범위를 스캔하고 자세한 JSON 결과를 가져온 후, 모든 언어 SDK와 통합하세요."
 weight: 100

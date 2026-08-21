@@ -4,7 +4,7 @@ ArticleTitle: "テーブルを CSV に変換 – Aspose.Cells Cloud API"
 second_title: "ドキュメント"
 linktitle: "テーブルを CSV に変換"
 type: docs
-url: /cells/convert/table/csv
+url: /ja/cells/convert/table/csv
 aliases: []
 keywords: "テーブル CSV 変換, Aspose.Cells, クラウド API"
 description: "ローカルドライブ上のスプレッドシートのテーブルを CSV ファイルに変換します。"

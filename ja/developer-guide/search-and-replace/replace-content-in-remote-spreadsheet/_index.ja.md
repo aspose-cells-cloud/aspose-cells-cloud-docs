@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "クラウド Excel ファイルのテキストを一括置換 – Find & Replace API"
 linktitle: "リモートスプレッドシートのコンテンツを置換"
 type: docs
-url: /replace-content-in-remote-spreadsheet/
+url: /ja/replace-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, コンテンツ置換, リモートスプレッドシート, Find & Replace API, クラウド Excel, 一括テキスト置換"
 description: "Aspose.Cells Cloud Find & Replace API を使用して、クラウド上の Excel ワークブック内のテキストを一括で更新します。HTTPS エンドポイント、OAuth2 認証、およびすぐに利用できる SDK サンプルで、迅速な統合が可能です。"
 weight: 100

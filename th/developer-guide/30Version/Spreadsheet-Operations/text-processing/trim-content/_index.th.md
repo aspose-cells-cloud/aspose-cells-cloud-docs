@@ -3,7 +3,7 @@ title: "Aspose.Cells Trim Content API – ลบช่องว่างแล�
 second_title: "เอกสาร"
 linktype: "Trim Content"
 type: docs
-url: /spreadsheet-trim-content/
+url: /th/spreadsheet-trim-content/
 keywords: "Aspose.Cells, Trim Content API, ทำความสะอาดข้อมูล Excel, ลบช่องว่างใน Excel, การลบตัวขึ้นบรรทัดใหม่, การทำความสะอาดข้อมูลสเปรดชีต"
 description: "ใช้ API PostTrimContent ของ Aspose.Cells Cloud เพื่อลบช่องว่างส่วนเกิน ตัวขึ้นบรรทัดใหม่ และอักขระที่ไม่จำเป็นออกจากเซลล์ Excel อ่านข้อมูลเกี่ยวกับ endpoint รูปแบบคำขอ ตัวอย่างโค้ด และการจัดการข้อผิดพลาด"
 weight: 100

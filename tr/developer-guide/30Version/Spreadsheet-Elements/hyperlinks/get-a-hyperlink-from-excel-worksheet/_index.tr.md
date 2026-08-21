@@ -1,7 +1,7 @@
 ---
 title: "Çalışma Sayfası Bağlantısını Al"
 type: docs
-url: /hyperlinks/get/
+url: /tr/hyperlinks/get/
 keywords: "Aspose.Cells Cloud, Çalışma Sayfası Bağlantısını Al, Excel bağlantı API'si, REST, JWT kimlik doğrulama, Excel çalışma sayfası, API uç noktası"
 description: "Aspose.Cells Cloud API'sini (v3.0) kullanarak bir Excel çalışma sayfasından belirli bir bağlantıyı alın. Uç nokta, parametreler, cURL örneği, kimlik doğrulama ayrıntıları, hata işleme ve SDK kod parçacıklarını içerir."
 weight: 10

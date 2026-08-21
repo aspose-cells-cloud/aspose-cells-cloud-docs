@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud AI 翻訳 API を使用してスプレッドシート全体を翻訳する方法"
 linktype: "翻訳スプレッドシート"
 type: docs
-url: /translate-spreadsheet/
+url: /ja/translate-spreadsheet/
 keywords: "Aspose.Cells Cloud, スプレッドシート翻訳 API, AI 翻訳, スプレッドシート翻訳, targetLanguage, マルチシート翻訳, クラウドスプレッドシート処理, Aspose.Cells Cloud 翻訳"
 description: "Aspose.Cells Cloud AI を使用して Excel ブック全体を翻訳します。テキストをサポートされる任意の言語に変換しながら、数式、チャート、書式を保持します。エンドポイント、パラメータ、SDK の使用例、制限事項、エラー処理について学習します。"
 weight: 100

@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Transformar hoja de cálculo: eliminar filas, columnas y hojas en blanco, e intercambiar rangos"
 linktitle: "Transformar"
 type: docs
-url: /transform/
+url: /es/transform/
 keywords: "Aspose, Cells, API, eliminar filas en blanco, eliminar columnas en blanco, eliminar hojas en blanco, intercambiar rango, limpieza de hojas de cálculo"
 description: "Utilice las API de Aspose.Cells Cloud para eliminar filas, columnas y hojas en blanco, e intercambiar rangos en archivos de Excel. Limpieza de datos rápida y basada en la nube para automatización."
 weight: 40

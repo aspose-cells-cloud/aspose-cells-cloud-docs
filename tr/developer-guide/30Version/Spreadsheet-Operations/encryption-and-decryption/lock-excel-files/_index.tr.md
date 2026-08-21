@@ -3,8 +3,8 @@ title: "Excel Dosyalarını Kilitle"
 second_title: "Belge"
 linktitle: "Excel dosyalarını kilitle"
 type: docs
-url: /lock-excel-files/
-aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+url: /tr/lock-excel-files/
+aliases: [  /tr/lock/without-storage/ , /tr/lock/ , /tr/lock/without-using-storage/ ]
 keywords: "Kilitle, Excel, API, Aspose.Cells, Bulut, REST, Çalışma Kitabı, Elektronik Tablo, SDK"
 description: "Aspose.Cells Cloud REST API’sini (v3.0) kullanarak Excel çalışma kitaplarını nasıl kilitleyeceğinizi öğrenin. HTTPS uç noktası, kimlik doğrulama, cURL isteği, yanıt şeması ve C#, Java, Python ve diğerleri için SDK kod örnekleri içerir."
 ArticleTitle: "Excel Dosyalarını Kilitle – Aspose.Cells Cloud API Dokümantasyonu"

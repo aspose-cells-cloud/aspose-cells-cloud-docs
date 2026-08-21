@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie eine Tabellendatei in ein anderes Format: Schritt-für-Schritt-Anleitung"
 linktitle: "Tabellendatei konvertieren"
 type: docs
-url: /convert-spreadsheet/
+url: /de/convert-spreadsheet/
 keywords: "Aspose, Aspose.Cells, Tabellendateikonvertierung, Excel zu PDF, Excel-API, Cloud-Dateikonvertierung"
 description: "Konvertieren Sie eine Tabellendatei mit der Aspose.Cells Cloud API in ein anderes Format."
 weight: 100

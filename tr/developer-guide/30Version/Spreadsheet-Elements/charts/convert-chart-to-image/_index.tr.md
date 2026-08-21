@@ -1,8 +1,8 @@
 ---
 title: "Excel Grafğini Görüntüye Dönüştür – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/to-image/
-aliases: [/convert-charts-to-image/]
+url: /tr/charts/to-image/
+aliases: [  /tr/convert-charts-to-image/ ]
 weight: 50
 keywords: "Aspose.Cells Cloud, grafikten görüntüye, Excel grafik dönüştürme, REST API, görüntü formatı, PNG, JPEG, BMP, TIFF, GIF"
 description: "Aspose.Cells Cloud REST API kullanarak Excel grafik nesnelerini PNG, JPEG, BMP, TIFF veya GIF Görüntü formatlarına nasıl dönüştüreceğinizi öğrenin. Uç nokta detaylarını, parametreleri, cURL örneğini, SDK kod parçacıklarını, yanıt örneğini ve hata işleme bilgilerini içerir."

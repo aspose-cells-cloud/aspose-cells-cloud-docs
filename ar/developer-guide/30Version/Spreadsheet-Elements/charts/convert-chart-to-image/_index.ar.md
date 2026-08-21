@@ -1,8 +1,8 @@
 ---
 title: "تحويل مخطط Excel إلى صورة – واجهة Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/to-image/
-aliases: [/convert-charts-to-image/]
+url: /ar/charts/to-image/
+aliases: [  /ar/convert-charts-to-image/ ]
 weight: 50
 keywords: "Aspose.Cells Cloud، تحويل المخطط إلى صورة، تحويل مخططات Excel، واجهة REST API، تنسيق الصورة، PNG، JPEG، BMP، TIFF، GIF"
 description: "تعلم كيفية تحويل كائنات المخططات في Excel إلى صور بتنسيقات PNG أو JPEG أو BMP أو TIFF أو GIF باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن تفاصيل نقطة النهاية، المعلمات، مثال باستخدام cURL، مقاطع كود لواجهات برمجة التطبيقات (SDK)، مثال على الاستجابة، ومعالجة الأخطاء."

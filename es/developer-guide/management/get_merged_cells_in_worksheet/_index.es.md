@@ -4,7 +4,7 @@ ArticleTitle: "Obtener celdas fusionadas en hoja de cálculo – Aspose.Cells Cl
 second_title: "Document"
 linktitle: "GetMergedCellsInWorksheet"
 type: docs
-url: /cells/spreadsheet/mergedcells
+url: /es/cells/spreadsheet/mergedcells
 aliases: []
 keywords: "Aspose Cells, celdas fusionadas, hoja de cálculo, API"
 description: "Obtener todas las áreas de celdas fusionadas de una hoja de cálculo local."

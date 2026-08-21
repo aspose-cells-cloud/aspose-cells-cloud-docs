@@ -4,7 +4,7 @@ ArticleTitle: "Aspose.Cells Cloud API kullanarak Excel çalışma sayfasına bir
 second_title: "Belge"
 linktype: "Satırlar"
 type: docs
-url: /rows/add/rows/
+url: /tr/rows/add/rows/
 keywords: "Aspose.Cells Cloud, satır ekleme, Excel çalışma sayfası, REST API, SDK, birden fazla satır ekleme"
 description: "Aspose.Cells Cloud REST API'sini kullanarak bir Excel çalışma sayfasına birden fazla satır eklemenin nasıl yapıldığını öğrenin. Bu kılavuz, uç noktayı, istek parametrelerini, örnek cURL komutlarını ve SDK kullanım örneklerini kapsar."
 weight: 20

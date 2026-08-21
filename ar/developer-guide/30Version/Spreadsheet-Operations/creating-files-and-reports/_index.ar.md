@@ -2,8 +2,8 @@
 title: "إنشاء ملفات Excel وبناء تقارير Excel"
 second_title: "وثيقة"
 type: docs
-url: /creating-files-and-reports/
-aliases: [/workbook/create/]
+url: /ar/creating-files-and-reports/
+aliases: [  /ar/workbook/create/ ]
 linktitle: "إنشاء ملفات Excel وتقارير"
 keywords: "Aspose.Cells Cloud, API Excel, إنشاء ملف عمل, تقرير Excel, SmartMarker, قالب, إنشاء تقرير"
 description: "تعلم كيفية إنشاء ملفات عمل Excel فارغة، وتوليد ملفات من قوالب، وبناء تقارير مُوجّهة بواسطة SmartMarker باستخدام Aspose.Cells Cloud API مع أمثلة كود."

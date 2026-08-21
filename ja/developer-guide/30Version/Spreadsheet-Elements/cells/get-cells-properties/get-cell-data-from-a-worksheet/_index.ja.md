@@ -1,7 +1,7 @@
 ---
 title: "ワークシートからセルデータを取得する"
 type: docs
-url: /get-cell-data-from-a-worksheet/
+url: /ja/get-cell-data-from-a-worksheet/
 weight: 10
 keywords: "Aspose.Cells Cloud, セルデータの取得, Excel API, REST API, セル値, ワークシート API, Aspose API の例"
 description: "Aspose.Cells Cloud REST API（v3.0）を使用して Excel ワークシートから単一セルの値、型、スタイルを取得します。cURL および SDK の使用例、パラメータ、エラー処理を含みます。"

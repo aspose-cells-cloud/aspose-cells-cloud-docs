@@ -4,7 +4,7 @@ ArticleTitle: "将工作表转换为 HTML 表格 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "ConvertWorksheetToHtmlTable"
 type: docs
-url: /cells/convert/worksheet/html-table
+url: /zh/cells/convert/worksheet/html-table
 aliases: []
 keywords: "Aspose.Cells, ConvertWorksheetToHtmlTable, HTML 表格, API"
 description: "使用 Aspose.Cells Cloud 将本地驱动器上的电子表格工作表转换为 HTML 表格文件。"

@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "العثور على الروابط التالفة وإصلاحها في ملفات Excel عن بُعد – أداة التحقق من الروابط في جداول البيانات السحابية"
 linktitle: "البحث عن الروابط التالفة في جداول البيانات عن بُعد"
 type: docs
-url: /search-broken-links-in-remote-spreadsheet/
+url: /ar/search-broken-links-in-remote-spreadsheet/
 keywords: "Excel، الروابط التالفة، API، سحابة، جدول بيانات، التحقق، Aspose.Cells"
 description: "استخدم API Aspose.Cells Cloud لمسح ملفات Excel المخزنة عن بُعد بحثًا عن روابط خارجية تالفة، وصيغ غير صالحة، ومصادر بيانات مفقودة."
 weight: 100

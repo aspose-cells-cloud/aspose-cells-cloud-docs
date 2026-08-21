@@ -4,8 +4,8 @@ second_title: "Document"
 linktitle: "開発者ガイド"
 ArticleTitle: "変換、結合、分割、保護、検索、置換、変換 — すべて Cells Cloud で"
 type: docs
-url: /developer‑guide/
-aliases: [/developer‑guide‑v4.0/]
+url: /ja/developer‑guide/
+aliases: [  /ja/developer‑guide‑v4.0/ ]
 keywords: "Aspose.Cells Cloud, Excel REST API, スプレッドシート変換, 結合, 分割, 保護, 検索と置換, データ変換, SDK サンプル, Java, .NET, Python, Node.js, PHP, Go, Ruby, Perl"
 description: "Aspose.Cells Cloud REST API の包括的な開発者ガイド。スプレッドシートの変換、結合、分割、保護、検索と置換、データ変換をカバーし、Java、.NET、Python、Node.js、PHP、Go、Ruby、Perl の SDK サンプルへのリンクを提供します。"
 weight: 20

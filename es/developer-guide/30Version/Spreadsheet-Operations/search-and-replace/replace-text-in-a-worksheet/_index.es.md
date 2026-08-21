@@ -3,8 +3,8 @@ title: "Reemplazar texto en una hoja de cálculo de Excel – API de Aspose.Cell
 second_title: "Documento"
 linktitle: "Reemplazar en hoja de cálculo"
 type: docs
-url: /worksheets/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /es/worksheets/replace-text/
+aliases: [  /es/replace-text-in-a-workbook/ ]
 keywords: "Aspose.Cells, reemplazar texto, Excel, API REST, hoja de cálculo, hoja"
 description: "Aprenda a reemplazar texto en una hoja de cálculo de Excel utilizando la API de Aspose.Cells Cloud (v3.0). Incluye requisitos previos, autenticación, sintaxis de solicitud, ejemplo con cURL, ejemplos de código con SDK, detalles de respuesta y manejo de errores."
 ArticleTitle: "Reemplazar texto en una hoja de cálculo de Excel – API de Aspose.Cells Cloud"

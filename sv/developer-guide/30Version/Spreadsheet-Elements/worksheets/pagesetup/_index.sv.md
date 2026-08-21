@@ -3,7 +3,7 @@ title: "Arbetsblad – Sidinställning"
 second_title: "Dokument"
 linktitle: "Sidinställning"
 type: docs
-url: /page-setup/
+url: /sv/page-setup/
 keywords: "Aspose.Cells, pageSetup, arbetsblad, utskriftsinställningar, marginaler, orientering, pappersstorlek, sidhuvud, sidfot, skalning"
 description: "Lär dig hur du konfigurerar utskriftslayout för Excel-arbetsblad med Aspose.Cells Cloud:s PageSetup-objekt. Innehåller en lista över egenskaper, standardvärden, intervall och kodexempel i C#, Java och Python."
 weight: 20

@@ -3,7 +3,7 @@ title: "إضافة صورة خلفية أو حذفها في ورقة العمل 
 second_title: "وثيقة"
 linktitle: "الخلفية"
 type: docs
-url: /worksheets/background/
+url: /ar/worksheets/background/
 keywords: "Aspose.Cells Cloud، خلفية ورقة العمل، واجهة برمجة تطبيقات إكسل، إضافة صورة خلفية، حذف خلفية ورقة العمل، أمثلة لوحدات التطوير البرمجي SDK"
 description: "تعرّف على كيفية إضافة أو إزالة صورة خلفية في ورقة عمل إكسل باستخدام واجهة برمجة تطبيقات REST لـ Aspose.Cells Cloud. يشمل بناء جملة طلبات الإدخال وأمثلة لوحدات التطوير البرمجي SDK لغات جافا و.NET وبايثون وPHP، بالإضافة إلى معالجة الأخطاء."
 weight: 20

@@ -3,8 +3,8 @@ title: "Aggiungi una interruzione di pagina verticale"
 second_title: "Document"
 linktype: "Aggiungi una interruzione di pagina verticale"
 type: docs
-url: /page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
+url: /it/page-breaks/add-vertical-page-break/
+aliases: [  /it/insert-vertical-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, interruzione di pagina verticale, REST API, Excel, SDK, cURL"
 description: "Scopri come inserire un'interruzione di pagina verticale in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include la sintassi della richiesta, un esempio cURL, esempi di SDK, una guida all'autenticazione e dettagli sulla gestione degli errori."
 weight: 40

@@ -3,8 +3,8 @@ title: "إضافة معيار مخصص في ورقة عمل إكسل"
 second_title: "وثيقة"
 linktitle: "إضافة تصفية مخصصة"
 type: docs
-url: /autofilter/add-custom-filter/
-aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/]
+url: /ar/autofilter/add-custom-filter/
+aliases: [  /ar/filter-a-list-with-a-custom-criteria/ , /ar/autofilter/add-a-custom-filter/ ]
 keywords: "إكسل، تصفية مخصصة، Aspose.Cells Cloud، واجهة برمجة تطبيقات REST، تصفية تلقائية، ورقة عمل، معيار مخصص"
 description: "تعرّف على كيفية استخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST لإضافة تصفية مخصصة إلى ورقة عمل إكسل. يتضمّن تفاصيل الطلب، مثالًا باستخدام cURL، وأجزاء من كود SDK بلغات برمجة متعددة."
 weight: 65

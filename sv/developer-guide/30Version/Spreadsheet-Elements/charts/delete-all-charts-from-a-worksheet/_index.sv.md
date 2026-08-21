@@ -1,8 +1,8 @@
 ---
 title: "Ta bort alla diagram från ett kalkylblad"
 type: docs
-url: /charts/clear/
-aliases: [/delete-all-charts-from-a-worksheet/]
+url: /sv/charts/clear/
+aliases: [  /sv/delete-all-charts-from-a-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells, moln, ta bort, alla diagram, kalkylblad, REST API, DELETE, SDK"
 description: "Lär dig hur du tar bort alla diagram från ett kalkylblad med Aspose.Cells Cloud REST API (v3.0). Inkluderar slutpunkt, parametrar, cURL-exempel, SDK-kodavsnitt, autentiseringssteg och felhantering."

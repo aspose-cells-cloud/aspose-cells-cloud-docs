@@ -1,8 +1,8 @@
 ---
 title: "Supprimer un graphique d'une feuille de calcul"
 type: docs
-url: /charts/delete/
-aliases: [/delete-a-chart-from-a-worksheet/]
+url: /fr/charts/delete/
+aliases: [  /fr/delete-a-chart-from-a-worksheet/ ]
 weight: 40
 keywords:
   - "Aspose.Cells"

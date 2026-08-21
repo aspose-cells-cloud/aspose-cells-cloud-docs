@@ -3,7 +3,7 @@ title: "Importar matriz de cadenas en hoja de cálculo de Excel – Aspose.Cells
 second_title: "Documento"
 linktitle: "Importar matriz de cadenas"
 type: docs
-url: /import-string-array-into-excel-worksheet/
+url: /es/import-string-array-into-excel-worksheet/
 aliases:
   - /import-string-array-into-worksheet/
   - /import-data/string-array/

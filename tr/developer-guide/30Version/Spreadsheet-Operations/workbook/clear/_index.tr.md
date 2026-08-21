@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "Temizle"
 type: docs
 url: /tr/clear/
-aliases: [/tr/clearobjects/]
+aliases: [  /tr/clearobjects/ ]
 keywords: "Aspose.Cells, Excel, Nesneleri Temizle, REST API, Bulut SDK, Yorumları Sil, Grafikleri Sil"
 description: "Aspose.Cells Cloud REST API ile bir Excel çalışma kitabından yorumları, grafikleri, şekilleri ve diğer nesneleri silin. Birden fazla SDK'yı destekler ve temizlenmiş dosyayı Base64 olarak döndürür."
 weight: 39

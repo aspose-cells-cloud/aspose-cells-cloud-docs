@@ -3,8 +3,8 @@ title: "Ajouter un saut de page horizontal"
 second_title: "Document"
 linktitle: "Ajouter un saut de page horizontal"
 type: docs
-url: /page-breaks/add-horizontal-page-break/
-aliases: [/insert-horizontal-page-break-inside-worksheet/]
+url: /fr/page-breaks/add-horizontal-page-break/
+aliases: [  /fr/insert-horizontal-page-break-inside-worksheet/ ]
 keywords: "saut de page horizontal, Aspose.Cells Cloud, API Excel, REST, SDK, feuille de calcul, cURL"
 description: "Découvrez comment ajouter un saut de page horizontal à une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud. Inclut les détails de la requête, un exemple cURL et des extraits de code SDK pour plusieurs langages de programmation."
 weight: 30

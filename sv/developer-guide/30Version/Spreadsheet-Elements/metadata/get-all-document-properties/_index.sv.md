@@ -3,8 +3,8 @@ title: "Hämta alla dokumentegenskaper"
 second_title: "Dokument"
 linktitle: "Hämta alla"
 type: docs
-url: /document-properties/get-all/
-aliases: [/get-all-document-properties/]
+url: /sv/document-properties/get-all/
+aliases: [  /sv/get-all-document-properties/ ]
 keywords: "Hämta alla dokumentegenskaper, Aspose.Cells Cloud, Excel-dokumentegenskaper, REST API, SDK, Excel-metadata"
 description: "Hämta alla dokumentegenskaper från en Excel-fil med hjälp av Aspose.Cells Cloud REST API. Slutpunkten fungerar med alla stödda SDK:er och programmeringsspråk."
 ArticleTitle: "Hämta alla dokumentegenskaper – Aspose.Cells Cloud API"

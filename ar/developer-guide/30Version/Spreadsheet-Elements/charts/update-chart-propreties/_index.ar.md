@@ -1,8 +1,8 @@
 ---
 title: "تحديث خصائص الرسم البياني"
 type: docs
-url: /charts/properties/update/
-aliases: [/update-chart-properties/]
+url: /ar/charts/properties/update/
+aliases: [  /ar/update-chart-properties/ ]
 weight: 160
 keywords: "Aspose.Cells, رسم بياني, تحديث, Excel, REST API, SDK"
 description: "تعلم كيفية تحديث خصائص الرسم البياني (النوع، العنوان، الأسطورة، إلخ) في ملف Excel باستخدام Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمن_endpoint_، المعاملات، مثال cURL، وأجزاء أكواد SDK لـ C#، Java، PHP، Ruby، Node.js، Perl، و Go."

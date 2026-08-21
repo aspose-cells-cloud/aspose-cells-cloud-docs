@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud ファイルコピー API - クラウド上で Excel 
 second_title: "ドキュメント"
 ArticleTitle: "クラウドベースの Excel ファイル管理ソリューション – Aspose.Cells Copy File API の一括コピー機能の詳細解説"
 linktype: "docs"
-url: "/copy-file/"
+url: /ja/copy-file/
 keywords: "Aspose.Cells, CopyFile API, Excel ファイルのコピー, クラウドストレージ, REST API"
 description: "Aspose.Cells Cloud CopyFile API を使用して、Excel ファイルを効率的に複製し、複数のストレージ間で管理する方法を学びます。"
 weight: 100

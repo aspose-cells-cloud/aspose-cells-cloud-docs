@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何将本地电子表格表格数据转换为图像文件：分步指南"
 linktitle: "将表格转换为图像"
 type: docs
-url: /convert-table-to-image/
+url: /zh/convert-table-to-image/
 keywords: "Aspose.Cells, 云 API, 将表格转换为图像, Excel, PNG, JPEG, TIFF, BMP, SVG"
 description: "使用 Aspose.Cells Cloud API 快速将本地 Excel 电子表格表格转换为图像文件。支持 PNG、JPEG、TIFF、BMP、SVG 等多种格式。"
 weight: 100

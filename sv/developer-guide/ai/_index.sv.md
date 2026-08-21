@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Förbättra dina AI-färdigheter: Lär dig Excel-översättning, uppdelning av uppgifter och mer"
 linktitle: "AI"
 type: docs
-url: /ai/
+url: /sv/ai/
 keywords: "Aspose.Cells, Cloud AI, Excel-översättning, uppgiftsdelning, REST API"
 description: "Utforska Aspose.Cells Cloud AI för att dela upp uppgifter, översätta Excel-arbetsböcker och textfiler. Inkluderar REST-slutpunkter, exempelkod och bästa praxis."
 weight: 20

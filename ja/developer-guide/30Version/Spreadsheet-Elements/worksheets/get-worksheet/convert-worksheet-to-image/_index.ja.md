@@ -3,7 +3,7 @@ title: "ワークシートを PDF、PNG、CSV などに変換 – Aspose.Cells C
 second_title: "ドキュメント"
 linktitle: "ワークシートの変換"
 type: docs
-url: /worksheets/conversion/
+url: /ja/worksheets/conversion/
 aliases:
   - /convert-worksheet-to-image/
   - /worksheets/to-image/

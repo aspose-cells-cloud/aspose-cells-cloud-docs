@@ -1,8 +1,8 @@
 ---
 title: "셀 영역 삭제 – Aspose.Cells Cloud API 문서"
 type: docs
-url: /conditional-formattings/delete-cell-area/
-aliases: [/remove-cell-area-from-conditional-formatting/]
+url: /ko/conditional-formattings/delete-cell-area/
+aliases: [  /ko/remove-cell-area-from-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, 셀 영역 삭제, 조건부 서식 API, Excel REST API"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 조건부 서식에서 특정 셀 영역을 삭제합니다. ASP.NET, Java, Python 예제 포함."
 ArticleTitle: "셀 영역 삭제 – Aspose.Cells Cloud API 문서"

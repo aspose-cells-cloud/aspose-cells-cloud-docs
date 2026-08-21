@@ -3,7 +3,7 @@ title: "วิธีการจัดการการมองเห็นใ
 second_title: "เอกสาร"
 linktype: "การมองเห็น"
 type: docs
-url: /worksheets/panes/
+url: /th/worksheets/panes/
 keywords: "Aspose.Cells Cloud, API ซ่อนแผ่นงาน, API ยกเลิกการซ่อนแผ่นงาน, การมองเห็นแผ่นงาน Excel, REST API สำหรับ Excel, Aspose.Cells v3.0"
 description: "เรียนรู้วิธีซ่อนหรือยกเลิกการซ่อนแผ่นงาน Excel โดยใช้ REST API ของ Aspose.Cells Cloud อย่างเป็นโปรแกรม รวมตัวอย่าง URL คำขอ, cURL และ .NET SDK การจัดการข้อผิดพลาด และหมายเหตุเฉพาะรุ่น"
 weight: 20

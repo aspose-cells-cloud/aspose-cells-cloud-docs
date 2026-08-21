@@ -1,8 +1,8 @@
 ---
 title: "条件付き書式のクリア"
 type: docs
-url: /conditional-formattings/clear/
-aliases: [/clear-all-condition-formattings/]
+url: /ja/conditional-formattings/clear/
+aliases: [  /ja/clear-all-condition-formattings/ ]
 keywords: "Aspose.Cells Cloud, REST API, 条件付き書式のクリア, Excel, ワークシート, JWT, v3.2"
 description: "Aspose.Cells Cloud API（v3.2）を使用してワークシートからすべての条件付き書式ルールを削除します。リクエスト構文、必要なパラメータ、認証手順について学習し、複数のSDKでのサンプルコードを確認してください。"
 weight: 80

@@ -3,8 +3,8 @@ title: "Работа с файлами Excel: вычисление формул,
 second_title: "Документ"
 linktype: "Excel Common Operations"
 type: docs
-url: /workbook/
-aliases: [/working-with-workbook/]
+url: /ru/workbook/
+aliases: [  /ru/working-with-workbook/ ]
 keywords: "Aspose.Cells, API для Excel, операции с рабочими книгами, вычисление формул, автонастройка размера"
 description: "Узнайте, как работать с рабочими книгами Excel с помощью REST API Aspose.Cells Cloud. Пошаговые руководства охватывают вычисление формул, автонастройку строк/столбцов, очистку объектов и получение метаданных рабочей книги. SDK для Python, .NET, Java и других языков."
 weight: 20

@@ -2,7 +2,7 @@
 title: "حذف جميع تعليقات ورقة العمل"
 description: "احذف جميع التعليقات من ورقة عمل في ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. تعلّم عن نقطة النهاية DELETE، والمعطيات المطلوبة، والمصادقة، وطلب cURL النموذجي، وصيغة الاستجابة، وأكواد الأخطاء، وأمثلة SDK."
 keywords: "Aspose, Cells, حذف التعليقات, ورقة العمل, API, REST, Excel, cloud"
-url: /comments/clear/
+url: /ar/comments/clear/
 aliases:
   - /delete-all-comments-in-a-worksheet/
 weight: 50

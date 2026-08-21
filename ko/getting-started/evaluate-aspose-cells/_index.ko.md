@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud 평가"
 LinkTitle: "평가"
 type: docs
-url: /evaluate-aspose-cells/
+url: /ko/evaluate-aspose-cells/
 description: "Excel 파일 및 기타 스프레드시트 형식을 생성, 변환, 병합, 분할, 보호 및 조작하기 위한 REST API인 Aspose.Cells Cloud를 탐색하세요."
 weight: 60
 keywords:

@@ -3,7 +3,7 @@ title: "Импорт массива строк в рабочий лист Excel 
 second_title: "Документ"
 linktitle: "Импорт массива строк"
 type: docs
-url: /import-string-array-into-excel-worksheet/
+url: /ru/import-string-array-into-excel-worksheet/
 aliases:
   - /import-string-array-into-worksheet/
   - /import-data/string-array/

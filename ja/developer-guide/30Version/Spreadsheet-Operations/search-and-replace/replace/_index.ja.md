@@ -3,7 +3,7 @@ title: "Excel ファイル内のテキストを置換する"
 second_title: "ドキュメント"
 linktitle: "ストレージを使用せずに置換"
 type: docs
-url: /replace/
+url: /ja/replace/
 keywords: "Excel テキスト置換、Aspose.Cells Cloud、REST API、スプレッドシート置換、API、Excel ファイルテキスト置換"
 description: "Aspose.Cells Cloud REST API を使用して、Excel ファイル内の既存のテキストを新しい値に置換します。C#、Java、Python、Node.js、PHP、Ruby、Go、Perl の SDK をサポートしています。"
 weight: 80

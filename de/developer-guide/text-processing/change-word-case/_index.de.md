@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Wortgroße ändern (Groß, Klein, Titel- und Satz
 ArticleTitle: "Excel-Wortgroßenkonverter – Großschreibung, Kleinschreibung, Titelschreibung & Satzschreibung"
 linktype: "Wortgroße"
 type: docs
-url: /change-word-case/
+url: /de/change-word-case/
 keywords: "Wortgroße ändern API, Aspose.Cells, Excel-Wortgroßenkonvertierung, Großschreibung, Kleinschreibung, Titelschreibung, Satzschreibung, Textformatierung"
 description: "Konvertieren Sie die Wortgroße in Excel-Dateien mithilfe der Aspose.Cells Cloud API ganz einfach. Unterstützt Großschreibung, Kleinschreibung, Titelschreibung und Satzschreibung. Holen Sie sich Codebeispiele in C#, Java, Python u. a."
 weight: 100

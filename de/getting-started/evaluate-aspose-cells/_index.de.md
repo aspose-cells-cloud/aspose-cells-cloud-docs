@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud testen"
 LinkTitle: "Testen"
 type: docs
-url: /evaluate-aspose-cells/
+url: /de/evaluate-aspose-cells/
 description: "Erforschen Sie Aspose.Cells Cloud, die REST-API zum Erstellen, Konvertieren, Zusammenführen, Teilen, Schützen und Bearbeiten von Excel-Dateien und weiteren Tabellenkalkulationsformaten."
 weight: 60
 keywords:

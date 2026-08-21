@@ -4,7 +4,7 @@ ArticleTitle: "更新 Excel 工作表中的列表对象 – Aspose.Cells Cloud A
 second_title: "文档"
 linktitle: "更新"
 type: docs
-url: /list-objects/update/
+url: /zh/list-objects/update/
 aliases:
   - /update-a-list-object-or-table-inside-the-worksheet/
   - /tables/update/

@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "排序"
 type: docs
 url: /zh/list-objects/sort-data/
-aliases: [/zh/get-a-list-object-or-table-inside-the-worksheet/, /zh/tables/sort-data/]
+aliases: [  /zh/get-a-list-object-or-table-inside-the-worksheet/ , /zh/tables/sort-data/ ]
 keywords: "Aspose.Cells Cloud, Excel, ListObject, 排序数据, REST API, 工作表"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）对 Excel 工作表中的 ListObject（表格）数据进行排序。内容包括端点、参数、示例 cURL 请求和 SDK 示例。"
 weight: 40

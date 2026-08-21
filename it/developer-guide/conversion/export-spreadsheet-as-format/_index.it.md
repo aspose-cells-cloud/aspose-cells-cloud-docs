@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Come esportare un foglio di calcolo remoto in altri formati: Guida passo-passo"
 linktype: "Esporta foglio di calcolo come formato"
 type: docs
-url: /export-spreadsheet-as-format/
+url: /it/export-spreadsheet-as-format/
 keywords: "Aspose.Cells, conversione foglio di calcolo, API, esportazione, PDF, CSV, JSON, XLSX"
 description: "Converti cartelle di lavoro Excel memorizzate in Aspose Cloud in PDF, XLSX, CSV, JSON o HTML tramite un singolo endpoint REST. Scopri la sintassi della richiesta, i parametri e gli esempi di SDK in C#, Java, Python e altri linguaggi."
 weight: 100

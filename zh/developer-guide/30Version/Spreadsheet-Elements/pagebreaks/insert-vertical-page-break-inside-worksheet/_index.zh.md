@@ -3,8 +3,8 @@ title: "添加垂直分页符"
 second_title: "文档"
 linktitle: "添加垂直分页符"
 type: docs
-url: /page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
+url: /zh/page-breaks/add-vertical-page-break/
+aliases: [  /zh/insert-vertical-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud、垂直分页符、REST API、Excel、SDK、cURL"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）在 Excel 工作表中插入垂直分页符。包含请求语法、cURL 示例、SDK 示例、身份验证指南及错误处理详细信息。"
 weight: 40

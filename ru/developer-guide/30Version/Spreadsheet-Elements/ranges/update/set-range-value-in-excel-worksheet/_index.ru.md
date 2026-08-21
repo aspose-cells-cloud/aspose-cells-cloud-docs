@@ -3,8 +3,8 @@ title: "Установка значения диапазона в рабочем
 second_title: "Документ"
 linktype: "Установка значений"
 type: docs
-url: /ranges/update/values/
-aliases: [/set-range-value-in-excel-worksheet/]
+url: /ru/ranges/update/values/
+aliases: [  /ru/set-range-value-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel API, установка значения диапазона, REST API, облачное SDK, обновление рабочего листа"
 description: "Узнайте, как установить значение ячейки или диапазона в книге Excel с использованием Aspose.Cells Cloud REST API (версия 3.0). Включает конечную точку, параметры, пример cURL, примеры кода SDK и обработку ошибок."
 weight: 72

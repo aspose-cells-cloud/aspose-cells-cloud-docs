@@ -3,8 +3,8 @@ title: "รับการแบ่งหน้าแนวนอน"
 second_title: "เอกสาร"
 linktitle: "รับการแบ่งหน้าแนวนอน"
 type: docs
-url: /page-breaks/get-horizontal-page-breaks/
-aliases: [/get-horizontal-page-breaks-inside-worksheet/]
+url: /th/page-breaks/get-horizontal-page-breaks/
+aliases: [  /th/get-horizontal-page-breaks-inside-worksheet/ ]
 keywords: "การแบ่งหน้าแนวนอน, Aspose.Cells Cloud, REST API, สมุดงาน Excel, SDK"
 description: "ดึงการแบ่งหน้าแนวนอนจากสมุดงาน Excel ผ่าน Aspose.Cells Cloud API รวมถึง endpoint, พารามิเตอร์, ตัวอย่าง cURL, รูปแบบการตอบกลับ และตัวอย่างโค้ด SDK สำหรับ C#, Java, Python และอื่นๆ"
 ArticleTitle: "รับการแบ่งหน้าแนวนอน - เอกสารประกอบ API Aspose.Cells Cloud"

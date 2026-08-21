@@ -3,8 +3,8 @@ title: "Mettre à jour les propriétés d'une feuille de calcul – Référence 
 second_title: "Document"
 linktitle: "Mettre à jour"
 type: docs
-url: /worksheets/update-properties/
-aliases: [/update-excel-worksheet-properties/]
+url: /fr/worksheets/update-properties/
+aliases: [  /fr/update-excel-worksheet-properties/ ]
 weight: 20
 keywords:
   [

@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API を使用して Excel ワークブックを保護
 second_title: "ドキュメント"
 linktitle: "Excel ファイルを保護する"
 type: docs
-url: /protect-excel-file/
-aliases: [/protect-excel-workbooks/, /workbook/protect/]
+url: /ja/protect-excel-file/
+aliases: [  /ja/protect-excel-workbooks/ , /ja/workbook/protect/ ]
 keywords: "Aspose.Cells, Excel の保護, API, REST, SDK"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークブックを保護する方法を学びます。認証手順、クエリパラメータおよびボディパラメータ、cURL リクエスト、および C#、Java、PHP、Ruby、Node.js、Python、Perl、Go 向けの SDK コードサンプルを含みます。"
 weight: 30

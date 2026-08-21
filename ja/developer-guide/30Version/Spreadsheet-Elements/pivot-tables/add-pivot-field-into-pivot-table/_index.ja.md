@@ -3,8 +3,8 @@ title: "ピボットテーブルにピボットフィールドを追加する"
 second_title: "Document"
 linktitle: "ピボットフィールドの追加"
 type: docs
-url: /pivot-tables/add-pivot-field/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+url: /ja/pivot-tables/add-pivot-field/
+aliases: [  /ja/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, ピボットテーブル, ピボットフィールドの追加, REST API, SDK"
 description: "Aspose.Cells Cloud REST API を使用して、既存のピボットテーブルにピボットフィールドを追加します。リクエストの詳細、cURL の例、SDK スニペットを含みます。"
 weight: 40

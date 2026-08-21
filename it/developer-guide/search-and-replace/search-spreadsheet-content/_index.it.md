@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cerca testo nei fogli di calcolo Excel locali – Trova dati specifici"
 linktitle: "Cerca nel contenuto del foglio di calcolo"
 type: docs
-url: /search-spreadsheet-content/
+url: /it/search-spreadsheet-content/
 keywords: "Aspose.Cells, API di ricerca Excel, ricerca contenuto foglio di calcolo, API foglio di calcolo cloud, ricerca testo"
 description: "Utilizza l'API Aspose.Cells Cloud per cercare testo, numeri o formule nei file Excel locali. Supporta query non distingue tra maiuscole e minuscole, ambito a livello di foglio di calcolo e autenticazione sicura."
 weight: 100

@@ -3,8 +3,8 @@ title: "自动调整 Excel 工作簿中的行高"
 second_title: "文档"
 linktitle: "行"
 type: docs
-url: /autofit-rows-on-an-excel-file/
-aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
+url: /zh/autofit-rows-on-an-excel-file/
+aliases: [  /zh/auto-fit-rows-in-excel-workbooks/ , /zh/workbook/autofit/rows/ ]
 keywords: "自动调整行高, Excel 工作簿, Aspose.Cells Cloud, REST API, 自动调整选项"
 description: "了解如何使用 Aspose.Cells Cloud REST API 自动调整 Excel 工作簿中的行高。包含端点、参数、cURL 示例以及 C#、Java、Python 等多种语言的 SDK 代码片段。"
 weight: 90

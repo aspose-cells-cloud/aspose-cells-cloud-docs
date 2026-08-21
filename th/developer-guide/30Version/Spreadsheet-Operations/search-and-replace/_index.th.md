@@ -4,7 +4,7 @@ second_title: "เอกสารประกอบ"
 linktype: "ค้นหาและแทนที่"
 type: docs
 url: /th/search-and-replace/
-aliases: [/th/working-with-text/, /th/text/]
+aliases: [  /th/working-with-text/ , /th/text/ ]
 description: "เรียนรู้วิธีค้นหาและแทนที่ข้อความในสมุดงานและแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API รวมถึงรูปแบบคำขอ ตัวอย่างโค้ดสำหรับ .NET, Java, Python และการจัดการข้อผิดพลาด"
 keywords: "Aspose.Cells Cloud, Excel, ค้นหาและแทนที่, REST API, .NET, Java, Python"
 weight: 20

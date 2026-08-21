@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie ein lokales Tabellenkalkulationsblatt in eine PDF-Datei: Schritt-für-Schritt-Anleitung"
 linktype: "Konvertieren von Arbeitsblatt in PDF"
 type: docs
-url: /convert-worksheet-to-pdf/
+url: /de/convert-worksheet-to-pdf/
 keywords: "Aspose.Cells, Excel zu PDF, Arbeitsblatt-Konvertierung, REST API, Cloud-Konvertierung, Tabellenkalkulation PDF, API-Endpunkt, PDF-Erstellung"
 description: "Nutzen Sie die Aspose.Cells Cloud API, um ein Arbeitsblatt aus einer lokalen Excel-Datei schnell und sicher in ein PDF-Dokument zu konvertieren."
 weight: 100

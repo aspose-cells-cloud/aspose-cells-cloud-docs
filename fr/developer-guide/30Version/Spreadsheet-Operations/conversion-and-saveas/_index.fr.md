@@ -3,8 +3,8 @@ title: "Convertir un fichier Excel dans un autre format ou l’enregistrer diff�
 second_title: "Document"
 linktitle: "Conversion et Enregistrer sous"
 type: docs
-url: /conversion-and-save-as/
-aliases: [/convert-excel/, /convert/]
+url: /fr/conversion-and-save-as/
+aliases: [  /fr/convert-excel/ , /fr/convert/ ]
 keywords: "Aspose.Cells, API de conversion Excel, convertir Excel en PDF, Excel en CSV, Excel en JSON, conversion de feuilles de calcul dans le cloud"
 description: "Découvrez comment convertir des classeurs Excel en PDF, CSV, JSON, HTML et plus de 15 autres formats à l’aide de l’API REST Aspose.Cells Cloud. Inclut les détails des points de terminaison, des exemples de commandes cURL et des extraits de code SDK pour Java, .NET, Python, etc."
 weight: 30

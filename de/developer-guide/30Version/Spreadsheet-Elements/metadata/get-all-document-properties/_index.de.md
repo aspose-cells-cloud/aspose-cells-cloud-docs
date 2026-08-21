@@ -3,8 +3,8 @@ title: "Alle Dokumenteigenschaften abrufen"
 second_title: "Dokument"
 linktitle: "Alle abrufen"
 type: docs
-url: /document-properties/get-all/
-aliases: [/get-all-document-properties/]
+url: /de/document-properties/get-all/
+aliases: [  /de/get-all-document-properties/ ]
 keywords: "Alle Dokumenteigenschaften abrufen, Aspose.Cells Cloud, Excel-Dokumenteigenschaften, REST API, SDK, Excel-Metadaten"
 description: "Rufen Sie alle Dokumenteigenschaften aus einer Excel-Datei mithilfe der Aspose.Cells Cloud REST API ab. Der Endpunkt funktioniert mit allen unterstützten SDKs und Programmiersprachen."
 ArticleTitle: "Alle Dokumenteigenschaften abrufen – Aspose.Cells Cloud API"

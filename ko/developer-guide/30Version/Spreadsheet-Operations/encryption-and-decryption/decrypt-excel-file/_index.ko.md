@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "엑셀 파일 복호화"
 type: docs
 url: /ko/excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+aliases: [  /ko/decrypt-excel-workbooks/ , /ko/workbook/decrypt/ ]
 keywords: "Aspose.Cells, 엑셀 복호화, REST API, 클라우드 SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크북을 복호화하는 방법을 배워보세요. 필수 매개변수, cURL 예제, SDK 코드 예제, 오류 처리 세부 정보를 포함합니다."
 ArticleTitle: "Aspose.Cells Cloud API를 사용하여 엑셀 워크북을 복호화하는 방법"

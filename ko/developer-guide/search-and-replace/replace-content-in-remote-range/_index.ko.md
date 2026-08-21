@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "클라우드 Excel 파일의 범위 텍스트 일괄 교체 – 찾기 및 교체 API"
 linktitle: "원격 범위 콘텐츠 교체"
 type: docs
-url: /replace-content-in-remote-range/
+url: /ko/replace-content-in-remote-range/
 keywords: "원격 Excel 범위 텍스트 교체, Aspose.Cells Cloud API, Excel 찾기 및 교체, 클라우드 스프레드시트 편집, 원격 Excel 파일 업데이트"
 description: "Aspose.Cells Cloud를 사용하여 원격 Excel 파일의 특정 범위에서 텍스트를 찾고 교체합니다. 인증, 오류 처리 및 다중 언어 SDK를 지원합니다."
 weight: 100

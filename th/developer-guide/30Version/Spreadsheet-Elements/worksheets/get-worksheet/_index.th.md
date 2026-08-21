@@ -3,7 +3,7 @@ title: "วิธีดึงเนื้อหาที่แตกต่าง
 second_title: "เอกสาร"
 linktype: "ดึงข้อมูล"
 type: docs
-url: /worksheets/get/
+url: /th/worksheets/get/
 keywords: "Excel, แผ่นงาน, Aspose.Cells Cloud, REST API, การดึงข้อมูล, การแปลงรูปแบบ"
 description: "เรียนรู้วิธีดึงเนื้อหาประเภทต่างๆ จากแผ่นงาน Excel โดยใช้ REST API ของ Aspose.Cells Cloud คู่มือนี้ครอบคลุมถึงรูปแบบที่รองรับและให้ลิงก์ไปยังการดำเนินการที่เกี่ยวข้อง"
 weight: 20

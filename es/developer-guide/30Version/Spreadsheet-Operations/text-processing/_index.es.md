@@ -3,7 +3,7 @@ title: "Procesamiento de texto en Excel: agregar texto, eliminar caracteres, rec
 second_title: "Documento"
 linktype: "Procesamiento de texto"
 type: docs
-url: /text-processing/
+url: /es/text-processing/
 keywords: "procesamiento de texto en Excel, agregar texto, eliminar caracteres, recortar texto, actualizar mayúsculas, convertir texto, dividir texto, fusionar texto, reemplazar texto, buscar texto, contar texto, texto a PDF, texto a CSV, texto a JSON, texto a Markdown, Aspose.Cells Cloud"
 description: "Explore la API REST de Aspose.Cells Cloud para tareas integrales de procesamiento de texto en Excel, incluyendo agregar texto, eliminar caracteres, recortar espacios, cambiar mayúsculas y minúsculas, convertir formatos y más. Los SDK están disponibles para Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby y Swift."
 weight: 20

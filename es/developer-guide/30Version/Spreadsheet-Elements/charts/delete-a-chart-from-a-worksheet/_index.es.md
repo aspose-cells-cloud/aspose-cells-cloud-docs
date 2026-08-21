@@ -1,8 +1,8 @@
 ---
 title: "Eliminar un gráfico de una hoja de cálculo"
 type: docs
-url: /charts/delete/
-aliases: [/delete-a-chart-from-a-worksheet/]
+url: /es/charts/delete/
+aliases: [  /es/delete-a-chart-from-a-worksheet/ ]
 weight: 40
 keywords:
   - "Aspose.Cells"

@@ -3,7 +3,7 @@ title: "حذف الخلفية من ملف Excel"
 second_title: "مستند"
 linktitle: "حذف"
 type: docs
-url: /delete-background-in-excel-file/
+url: /ar/delete-background-in-excel-file/
 aliases:
   - /delete-background-in-workbook/
   - /workbook/delete-background/

@@ -4,7 +4,7 @@ second_title: "Dokümantasyon"
 linktitle: "Arama ve Değiştirme"
 type: docs
 url: /tr/search-and-replace/
-aliases: [/tr/working-with-text/, /tr/text/]
+aliases: [  /tr/working-with-text/ , /tr/text/ ]
 description: "Aspose.Cells Cloud REST API kullanarak Excel çalışma kitapları ve çalışma sayfalarında metin arama ve değiştirme işlemlerini öğrenin. İstek formatını, .NET, Java, Python için örnek kodları ve hata işleme yöntemlerini içerir."
 keywords: "Aspose.Cells Cloud, Excel, arama ve değiştirme, REST API, .NET, Java, Python"
 weight: 20

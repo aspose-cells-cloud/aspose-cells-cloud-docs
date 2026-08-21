@@ -3,7 +3,7 @@ title: "テンプレートファイルを使用して Excel ワークブック�
 second_title: "ドキュメント"
 linktitle: "テンプレートファイル"
 type: docs
-url: /create-an-excel-file-with-template-file/
+url: /ja/create-an-excel-file-with-template-file/
 aliases:
   - /create-excel-workbook-from-a-template-file/
   - /workbook/new-from-a-template-file/

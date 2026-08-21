@@ -2,7 +2,7 @@
 title: "Skyddera Excel-filer i batch"
 second_title: "Dokument"
 type: docs
-url: /batch/protect
+url: /sv/batch/protect
 keywords: "Skyddera Excel-filer i batch, Aspose Cells Cloud, REST API, Excel-skydd, batchskydd"
 description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att skydda flera Excel-filer i batch. Innehåller begärandedetaljer, cURL-exempel och SDK-kodexempel för olika språk."
 weight: 100

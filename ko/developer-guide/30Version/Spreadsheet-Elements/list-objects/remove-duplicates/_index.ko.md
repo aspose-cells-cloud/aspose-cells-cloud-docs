@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "중복 제거"
 type: docs
 keywords: "중복 제거, 목록 개체, Aspose.Cells Cloud API, Excel, REST"
-url: /list-objects/remove-duplicates/
+url: /ko/list-objects/remove-duplicates/
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 목록 개체에서 중복 행을 삭제하는 방법을 알아보세요. 엔드포인트, 매개변수, 인증, 샘플 요청 및 응답이 포함됩니다."
 weight: 20
 ---

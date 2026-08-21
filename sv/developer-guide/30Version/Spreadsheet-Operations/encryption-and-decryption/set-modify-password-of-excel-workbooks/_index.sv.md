@@ -3,7 +3,7 @@ title: "Ändra lösenordsskydd för en Excel-arbetsbok"
 second_title: "Dokument"
 linktitle: "Ändra lösenord för en Excel-fil"
 type: docs
-url: /workbook/password/modify/
+url: /sv/workbook/password/modify/
 aliases:
   - /set-modify-password-of-excel-workbooks/
   - /workbook/modify-password/

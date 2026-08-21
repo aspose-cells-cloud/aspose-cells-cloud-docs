@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Ändra ords skifteläge (versal, gemener, versal 
 ArticleTitle: "Excel skiftelägekonverterare – Versaler, gemener, versal i varje ord & versal i början av mening"
 linktitle: "Ords skifteläge"
 type: docs
-url: /change-word-case/
+url: /sv/change-word-case/
 keywords: "ändra ords skifteläge API, Aspose.Cells, Excel-skiftelägekonvertering, versaler, gemener, versal i varje ord, versal i början av mening, textformatering"
 description: "Konvertera enkelt textskifteläge i Excel-filer med Aspose.Cells Cloud API. Stöder versaler, gemener, versal i varje ord och versal i början av mening. Få kodexempel i C#, Java, Python och mer."
 weight: 100

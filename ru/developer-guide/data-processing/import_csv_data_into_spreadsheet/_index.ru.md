@@ -3,7 +3,7 @@ title: "Импорт данных CSV в электронную таблицу"
 ArticleTitle: "Импорт данных CSV в электронную таблицу – Aspose.Cells Cloud API"
 second_title: "Документ"
 linktype: "docs"
-url: /cells/import/data/csv
+url: /ru/cells/import/data/csv
 aliases: []
 keywords: "Aspose.Cells, импорт CSV, электронная таблица, API"
 description: "Импорт файла данных CSV в локальную электронную таблицу с использованием Aspose.Cells Cloud API."

@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Come convertire un grafico in un foglio di calcolo in immagine: Guida passo-passo"
 linktitle: "Converti grafico in immagine"
 type: docs
-url: /convert-chart-to-image/
+url: /it/convert-chart-to-image/
 keywords: "converti grafico in immagine, Aspose.Cells, esportazione grafico Excel, PNG, SVG, JPEG, BMP, TIFF"
 description: "Usa l’API Web Aspose.Cells Cloud per convertire un grafico Excel in immagini PNG, SVG, TIFF, JPEG o BMP direttamente da un file di foglio di calcolo."
 weight: 100

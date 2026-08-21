@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "リモートスプレッドシートの範囲を他の形式にエクスポートする方法：ステップ・バイ・ステップ・ガイド"
 linktitle: "範囲を形式としてエクスポート"
 type: docs
-url: /export-range-as-format/
+url: /ja/export-range-as-format/
 keywords: "Aspose Cells、Excel 範囲のエクスポート、PDF、PNG、CSV、Cloud API、スプレッドシート変換"
 description: "Aspose.Cells Cloud に保存された特定の Excel 範囲を PDF、PNG、CSV またはその他の形式に変換する方法を学びます。エンドポイントの詳細、パラメーター、リクエストのサンプル、レスポンス処理、エラー情報が含まれます。"
 weight: 100

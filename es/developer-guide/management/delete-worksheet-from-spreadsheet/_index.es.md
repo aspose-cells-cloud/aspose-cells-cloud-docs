@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cómo eliminar hojas de cálculo de Excel: eliminar hojas de libros de trabajo"
 linktitle: "Eliminar hoja de cálculo de hoja de cálculo"
 type: docs
-url: /delete-worksheet-from-spreadsheet/
+url: /es/delete-worksheet-from-spreadsheet/
 keywords: "Aspose Cells, API para eliminar hoja de cálculo, eliminación de hojas de Excel, hoja de cálculo en la nube, API REST"
 description: "Aprenda cómo eliminar una hoja de cálculo de un archivo de Excel utilizando la API de Aspose.Cells Cloud. Incluye el endpoint, los parámetros, ejemplos de cURL y SDK."
 weight: 100

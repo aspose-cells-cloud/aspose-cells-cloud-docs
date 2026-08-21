@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktitle: "อัปเดต"
 type: docs
 url: /th/oleobjects/update/
-aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
+aliases: [  /th/update-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "อัปเดตวัตถุ OLE, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "เรียนรู้วิธีอัปเดตวัตถุ OLE (รูปภาพ แผนภูมิ เป็นต้น) ในสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API ซึ่งรวมถึงตัวอย่าง cURL, SDK, ขั้นตอนการตรวจสอบสิทธิ์ และการจัดการข้อผิดพลาด"
 weight: 30

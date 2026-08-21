@@ -4,7 +4,7 @@ ArticleTitle: "ลบสตริงที่ซ้ำกันในสเป�
 second_title: "เอกสาร"
 linktype: "ลบสตริงที่ซ้ำกันในสเปรดชีตระยะไกล"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
+url: /th/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
 aliases: []
 keywords: "Aspose.Cells, ลบสตริงที่ซ้ำกัน, API"
 description: "API สำหรับค้นหาและลบสตริงที่ซ้ำกันภายในเซลล์ของช่วงที่ระบุในสมุดงาน"

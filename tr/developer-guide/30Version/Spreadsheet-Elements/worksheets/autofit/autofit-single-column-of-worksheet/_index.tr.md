@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API ile Excel'de Sütunu Otomatik Boyutlandırma – 
 second_title: "Belge"
 linktitle: "Sütun"
 type: docs
-url: /worksheets/autofit/column/
-aliases: [/autofit-single-column-of-worksheet/]
+url: /tr/worksheets/autofit/column/
+aliases: [  /tr/autofit-single-column-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, sütunu otomatik boyutlandırma, Excel API, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında bir sütunu (veya sütun aralığını) otomatik olarak yeniden boyutlandırmayı öğrenin. cURL ve SDK örneklerini (C#, Java, Python vb.) ve tüm istek/yanıt detaylarını içerir."
 weight: 10

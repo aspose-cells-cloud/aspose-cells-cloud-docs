@@ -2,7 +2,7 @@
 title: "删除工作表中的图表标题"
 type: docs
 url: /zh-cn/charts/delete-chart-title/
-aliases: [/delete-chart-title-in-a-worksheet/]
+aliases: [  /zh/delete-chart-title-in-a-worksheet/ ]
 weight: 150
 keywords: "Aspose.Cells, 云 API, 删除图表标题, Excel, REST, SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v4.0）删除 Excel 工作表中的图表标题。包含 cURL、SDK 示例及错误处理。"

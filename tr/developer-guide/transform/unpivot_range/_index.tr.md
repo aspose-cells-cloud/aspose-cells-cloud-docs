@@ -4,7 +4,7 @@ ArticleTitle: "UnpivotRange – Aspose.Cells Cloud"
 second_title: "Belge"
 linktype: "UnpivotRange"
 type: docs
-url: /cells/unpivot/range
+url: /tr/cells/unpivot/range
 aliases: []
 keywords: "Aspose.Cells, UnpivotRange, API"
 description: "Tablodaki satırları ve sütunları değiştirin."

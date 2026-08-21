@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีการแปลงกราฟในสมุดงานที่อยู่ในเครื่องเป็นไฟล์ PDF: คู่มือแบบทีละขั้นตอน"
 linktype: "แปลงกราฟเป็น PDF"
 type: docs
-url: /convert-chart-to-pdf/
+url: /th/convert-chart-to-pdf/
 keywords: "Aspose Cells, กราฟ, PDF, Excel, การแปลง, cloud API"
 description: "ส่งออกกราฟจากไฟล์ Excel ที่อยู่ในเครื่องไปยังรูปแบบ PDF โดยใช้ Aspose.Cells Cloud REST API รองรับไฟล์ XLSX และ XLS"
 weight: 100

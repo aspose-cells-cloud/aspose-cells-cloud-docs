@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Flera ark"
 type: docs
 url: /sv/worksheets/delete-multiple/
-aliases: [/sv/delete-excel-worksheets/]
+aliases: [  /sv/delete-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, ta bort flera Excel-ark, Excel-API, REST-API, v3.0, ta bort ark"
 description: "Lär dig hur du tar bort flera ark från en Excel-arbetsbok med Aspose.Cells Cloud REST API (v3.0). Innehåller en säker HTTPS-slutpunkt, nödvändiga parametrar, ett korrigert cURL-exempel och SDK-utdrag för flera programmeringsspråk."
 weight: 20

@@ -3,8 +3,8 @@ title: "فرز بيانات النطاق في ورقة عمل Excel"
 second_title: "Document"
 linktitle: "فرز"
 type: docs
-url: /worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
+url: /ar/worksheets/sort-data/
+aliases: [  /ar/sort-worksheet-data/ ]
 keywords: "Aspose.Cells Cloud, Excel sort API, worksheet range sorting, REST API, dataSorter"
 description: "فرز نطاق معيّن في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. يشمل ذلك عنوان النهاية، المَعلمات المطلوبة، خطوات المصادقة، معالجة الأخطاء، وأمثلة على SDKs."
 weight: 20

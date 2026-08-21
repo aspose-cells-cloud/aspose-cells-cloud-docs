@@ -3,8 +3,8 @@ title: "Получить все сводные таблицы в листе Exce
 second_title: "Документ"
 linktype: "Получить все"
 type: docs
-url: "/pivot-tables/get-all/"
-aliases: [/get-worksheet-pivot-tables-information/]
+url: /ru/pivot-tables/get-all/
+aliases: [  /ru/get-worksheet-pivot-tables-information/ ]
 keywords: "получить все сводные таблицы, Aspose.Cells Cloud API, Excel PivotTable, REST API"
 description: "Получить все сводные таблицы из листа Excel с помощью Aspose.Cells Cloud API. Включает конечную точку, параметры, шаги аутентификации, примеры cURL и SDK для API сводных таблиц."
 weight: 20

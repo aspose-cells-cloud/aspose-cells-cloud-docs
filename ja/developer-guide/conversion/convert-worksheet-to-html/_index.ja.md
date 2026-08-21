@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud API を使用してワークシートを HTML に変換する方法"
 linktype: "Convert Worksheet To Html"
 type: docs
-url: /convert-worksheet-to-html/
+url: /ja/convert-worksheet-to-html/
 description: "Aspose.Cells Cloud API を使用して Excel ワークシートを HTML に変換する方法を学習します。アップロード不要、カスタムフォント対応、地域設定対応、エラーハンドリング機能を備えています。"
 keywords: "Aspose.Cells, Excel to HTML, worksheet conversion, cloud API"
 weight: 100

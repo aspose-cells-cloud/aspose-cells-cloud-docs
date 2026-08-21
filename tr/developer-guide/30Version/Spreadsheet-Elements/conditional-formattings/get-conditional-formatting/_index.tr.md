@@ -2,7 +2,7 @@
 title: "Koşullu Biçimlendirmeyi Al"
 type: docs
 url: /tr/conditional-formattings/get/
-aliases: [/tr/get-conditional-formatting/]
+aliases: [  /tr/get-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, REST API, Koşullu Biçimlendirme, Excel, Elektronik Tablo"
 description: "Aspose.Cells Cloud REST API kullanarak bir çalışma sayfasından koşullu biçimlendirme kurallarını alın."
 weight: 10

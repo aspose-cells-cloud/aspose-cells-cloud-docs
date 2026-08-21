@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "ローカルのスプレッドシートテーブルデータを画像ファイルに変換する方法：ステップバイステップガイド"
 linktitle: "テーブルを画像に変換"
 type: docs
-url: /convert-table-to-image/
+url: /ja/convert-table-to-image/
 keywords: "Aspose.Cells, Cloud API, テーブルを画像に変換, Excel, PNG, JPEG, TIFF, BMP, SVG"
 description: "Aspose.Cells Cloud API を使用して、ローカルの Excel スプレッドシートテーブルを画像ファイルに迅速に変換します。PNG、JPEG、TIFF、BMP、SVG およびその他の形式をサポートします。"
 weight: 100

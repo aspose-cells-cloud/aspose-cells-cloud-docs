@@ -3,8 +3,8 @@ title: "Travailler avec les graphiques Excel"
 second_title: "Document"
 linktype: "Graphiques"
 type: docs
-url: /charts/
-aliases: [/working-with-charts/]
+url: /fr/charts/
+aliases: [  /fr/working-with-charts/ ]
 keywords: "Aspose, Cells, Excel, graphique, API, REST, Cloud, feuille de calcul"
 description: "Découvrez comment gérer les graphiques Excel à l’aide de l’API Aspose.Cells Cloud. Guides pas à pas, exemples de code et gestion des erreurs pour récupérer, ajouter, mettre à jour, supprimer et convertir des graphiques en images."
 weight: 100

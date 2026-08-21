@@ -3,7 +3,7 @@ title: "Hur man arbetar med synlighet i ett Excel-arbetsblad"
 second_title: "Dokument"
 linktitle: "Synlighet"
 type: docs
-url: /worksheets/panes/
+url: /sv/worksheets/panes/
 keywords: "Aspose.Cells Cloud, API för att dölja arbetsblad, API för att visa arbetsblad igen, synlighet för Excel-arbetsblad, REST API för Excel, Aspose.Cells v3.0"
 description: "Lär dig hur du döljer eller visar Excel-arbetsblad programmatiskt med Aspose.Cells Cloud REST API. Inkluderar begärande-URL:er, exempel med cURL och .NET SDK, felhantering och versionsspecifika noteringar."
 weight: 20

@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "Aspose.Cells Cloud Docker 容器存储配置"
 linktype: "Container Storage"
 type: docs
-url: /docker/storage/
+url: /zh/docker/storage/
 description: "使用 JSON、PowerShell 或 Bash 配置 Aspose.Cells Cloud Docker 容器的存储位置。"
 weight: 30
 keywords: "Aspose.Cells, Docker, 容器存储, JSON 配置, PowerShell, Bash"

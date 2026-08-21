@@ -3,7 +3,7 @@ title: "นำเข้าข้อมูล CSV ลงในสเปรดช�
 ArticleTitle: "นำเข้าข้อมูล CSV ลงในสเปรดชีต – Aspose.Cells Cloud API"
 second_title: "เอกสาร"
 linktype: "docs"
-url: /cells/import/data/csv
+url: /th/cells/import/data/csv
 aliases: []
 keywords: "Aspose.Cells, นำเข้า CSV, สเปรดชีต, API"
 description: "นำเข้าไฟล์ข้อมูล CSV ลงในสเปรดชีตในเครื่องโดยใช้ Aspose.Cells Cloud API"

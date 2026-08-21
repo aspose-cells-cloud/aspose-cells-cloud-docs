@@ -3,8 +3,8 @@ title: "Renombrar hoja de cálculo de Excel"
 second_title: "Document"
 linktype: "Rename"
 type: docs
-url: /worksheets/rename/
-aliases: [/rename-excel-worksheet/]
+url: /es/worksheets/rename/
+aliases: [  /es/rename-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, renombrar hoja de cálculo de Excel, API REST, SDK de hojas de cálculo, renombrar hoja de cálculo, almacenamiento en la nube"
 description: "Renombrar una hoja de cálculo en un libro de Excel utilizando la API REST de Aspose.Cells Cloud. Los SDK están disponibles para Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby y Swift."
 weight: 20

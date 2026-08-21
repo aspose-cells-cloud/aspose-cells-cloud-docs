@@ -5,7 +5,7 @@ ArticleTitle: "Облачное управление файлами для Excel
 linktitle: "Файлы и хранилище"
 type: docs
 url: /ru/files-and-storage/
-aliases: [/ru/working-with-files-and-storage-using-aspose-cells-cloud/]
+aliases: [  /ru/working-with-files-and-storage-using-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, API для хранения файлов, загрузка файла Excel, скачивание файла Excel, копирование файла, перемещение файла, удаление файла, управление папками, REST API, примеры cURL"
 description: "Полное руководство по управлению файлами Excel и папками в облачном хранилище Aspose.Cells Cloud. Включает операции загрузки, скачивания, копирования, перемещения, удаления и работы с папками с примерами cURL, необходимыми параметрами и примечаниями по аутентификации."
 weight: 100

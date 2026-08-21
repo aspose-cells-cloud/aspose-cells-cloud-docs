@@ -1,8 +1,8 @@
 ---
 title: "隐藏 Excel 工作表中的图表图例 — Aspose.Cells Cloud API"
 type: docs
-url: /charts/legend/hide/
-aliases: [/hide-chart-legend-in-a-worksheet/]
+url: /zh/charts/legend/hide/
+aliases: [  /zh/hide-chart-legend-in-a-worksheet/ ]
 weight: 110
 keywords: "Aspose.Cells, Excel, 隐藏图表图例, REST API, 云 SDK, 图表图例"
 description: "了解如何使用 Aspose.Cells Cloud REST API 隐藏 Excel 工作表中的图表图例。内容包括 HTTPS 端点、所需身份验证、请求语法、响应详情、错误处理以及 SDK 示例。"

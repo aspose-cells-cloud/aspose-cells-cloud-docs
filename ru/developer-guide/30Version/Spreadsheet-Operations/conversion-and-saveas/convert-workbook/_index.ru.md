@@ -3,7 +3,7 @@ title: "Преобразование файла Excel в различные фо
 second_title: "Документ"
 linktitle: "Преобразование электронной таблицы"
 type: docs
-url: /convert-a-spread-file-to-different-formats/
+url: /ru/convert-a-spread-file-to-different-formats/
 keywords: "преобразование Excel, преобразование электронных таблиц, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, преобразование форматов файлов"
 description: "Используйте Aspose.Cells Cloud REST API для преобразования рабочих книг Excel в различные форматы, такие как PDF, CSV, JSON и Markdown. API поддерживает множество SDK для языков программирования, включая C#, Java, Python и другие."
 weight: 10

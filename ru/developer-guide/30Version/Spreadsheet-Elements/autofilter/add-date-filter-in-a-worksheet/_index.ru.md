@@ -3,7 +3,7 @@ title: "Добавление фильтра по дате в лист Excel"
 second_title: "Документ"
 linktitle: "Добавление фильтра по дате"
 type: docs
-url: /autofilter/add-date-filter/
+url: /ru/autofilter/add-date-filter/
 aliases:
   - /add-date-filter-in-a-worksheet/
   - /autofilter/add-a-date-filter/

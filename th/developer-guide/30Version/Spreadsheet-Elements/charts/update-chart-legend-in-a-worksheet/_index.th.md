@@ -1,8 +1,8 @@
 ---
 title: "อัปเดตคำอธิบายแผนภูมิในแผ่นงาน"
 type: docs
-url: /charts/legend/update/
-aliases: [/update-chart-legend-in-a-worksheet/]
+url: /th/charts/legend/update/
+aliases: [  /th/update-chart-legend-in-a-worksheet/ ]
 weight: 160
 keywords: "Aspose.Cells, Cloud, Excel, Chart, Legend, REST API, Update, Worksheet, cURL, SDK"
 description: "วิธีการอัปเดตคำอธิบายแผนภูมิในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่างคำขอ cURL และโค้ดตัวอย่าง SDK สำหรับภาษาโปรแกรมต่างๆ"

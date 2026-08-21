@@ -4,7 +4,7 @@ second_title: "Documenti"
 ArticleTitle: "Pulitore di testo Excel – Elimina caratteri e sottostringhe da un intervallo selezionato"
 linktitle: "Rimuovi caratteri"
 type: docs
-url: /remove-characters/
+url: /it/remove-characters/
 keywords: "Aspose.Cells, rimuovi caratteri, Excel API, pulizia testo, foglio di calcolo"
 description: "Rimuovi caratteri personalizzati, set di caratteri e sottostringhe dalle celle Excel in un intervallo selezionato. Elimina il testo in posizioni specifiche usando l'API Aspose.Cells per una pulizia dati precisa."
 weight: 100

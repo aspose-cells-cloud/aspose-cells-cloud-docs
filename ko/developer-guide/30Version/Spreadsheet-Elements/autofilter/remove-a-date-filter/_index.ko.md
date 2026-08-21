@@ -3,7 +3,7 @@ title: "날짜 필터 삭제 – Aspose.Cells Cloud"
 secondtitle: "문서"
 linktitle: "날짜 필터 삭제"
 type: docs
-url: /autofilter/delete-date-filter/
+url: /ko/autofilter/delete-date-filter/
 aliases:
   - /remove-a-date-filter/
   - /autofilter/delete-a-date-filter/

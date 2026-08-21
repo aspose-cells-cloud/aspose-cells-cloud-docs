@@ -3,8 +3,8 @@ title: "Экспорт рабочего листа – Aspose.Cells Cloud"
 second_title: "Документ"
 linktitle: "Рабочий лист"
 type: docs
-url: /export-excel-worksheet-to-different-formats/
-aliases: [/export/excel-worksheet-to-different-formats/]
+url: /ru/export-excel-worksheet-to-different-formats/
+aliases: [  /ru/export/excel-worksheet-to-different-formats/ ]
 keywords: "Aspose.Cells, экспорт рабочего листа, Excel API, PDF, CSV, TIFF, ODS, форматы изображений"
 description: "Узнайте, как экспортировать рабочий лист Excel в форматы PDF, CSV, TIFF и другие с помощью REST API Aspose.Cells Cloud. Пример cURL, необходимая аутентификация, детали параметров и обработка ответов."
 weight: 20

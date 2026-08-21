@@ -4,7 +4,7 @@ second_title: "وثيقة"
 linktitle: "إزالة التكرارات"
 type: docs
 keywords: "إزالة التكرارات، listobject، واجهة Aspose.Cells Cloud API، إكسل، REST"
-url: /list-objects/remove-duplicates/
+url: /ar/list-objects/remove-duplicates/
 description: "تعرّف على كيفية حذف الصفوف المكررة من ListObject في ورقة عمل إكسل باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن النقطة النهائية (endpoint)، المعاملات، المصادقة، وطلبات واستجابات نموذجية."
 weight: 20
 ---

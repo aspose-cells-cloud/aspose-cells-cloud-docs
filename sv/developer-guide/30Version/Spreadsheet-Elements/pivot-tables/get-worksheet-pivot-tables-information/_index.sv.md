@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: Hämta alla
 type: docs
 url: /sv/pivot-tables/get-all/
-aliases: [/sv/get-worksheet-pivot-tables-information/]
+aliases: [  /sv/get-worksheet-pivot-tables-information/ ]
 keywords: "hämta alla pivottabeller, Aspose.Cells Cloud API, Excel PivotTable, REST API"
 description: "Hämta alla pivottabeller från ett Excel-ark via Aspose.Cells Cloud API. Inkluderar endpoint, parametrar, autentiseringsssteg, cURL- och SDK-exempel för PivotTables API:t."
 weight: 20

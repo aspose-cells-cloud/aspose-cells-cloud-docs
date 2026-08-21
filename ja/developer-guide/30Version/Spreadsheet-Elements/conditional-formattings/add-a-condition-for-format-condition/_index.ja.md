@@ -3,7 +3,7 @@ title: 条件付き書式に条件を追加する
 description: Aspose.Cells Cloud REST API（v3.0）を使用して、ワークシートの条件付き書式に条件を追加する方法を学びます。エンドポイント、パラメータ、認証、cURL の例、SDK スニペット、エラー処理を含みます。
 keywords: "Aspose.Cells Cloud, 条件付き書式, 条件の追加, REST API, Excel, ワークシート"
 type: docs
-url: /conditional-formattings/add-a-condition/
+url: /ja/conditional-formattings/add-a-condition/
 aliases:
   - /add-a-condition-for-format-condition/
 weight: 40

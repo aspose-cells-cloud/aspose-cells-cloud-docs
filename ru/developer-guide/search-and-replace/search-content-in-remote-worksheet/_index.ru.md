@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Excel Text Search Web API — Поиск текста
 second_title: "Документ"
 ArticleTitle: "Поиск текста в удалённой электронной таблице Excel — Найти конкретные данные"
 linktype: "docs"
-url: /search-content-in-remote-worksheet/
+url: /ru/search-content-in-remote-worksheet/
 keywords: "Aspose Cells, Excel API, поиск текста, удалённый лист"
 description: "Выполняйте поиск текста, чисел или формул в удалённом листе Excel с помощью Aspose.Cells Cloud API. Поддерживается регистронезависимый поиск и работа с файлами, защищёнными паролем."
 weight: 100

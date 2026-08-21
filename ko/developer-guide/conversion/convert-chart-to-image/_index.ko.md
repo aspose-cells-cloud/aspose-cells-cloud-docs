@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "스preadsheet 차트를 이미지로 변환하는 방법: 단계별 가이드"
 linktitle: "차트를 이미지로 변환"
 type: docs
-url: /convert-chart-to-image/
+url: /ko/convert-chart-to-image/
 keywords: "차트를 이미지로 변환, Aspose.Cells, Excel 차트 내보내기, PNG, SVG, JPEG, BMP, TIFF"
 description: "Aspose.Cells Cloud Web API를 사용하여 스프레드시트 파일에서 Excel 차트를 PNG, SVG, TIFF, JPEG 또는 BMP 이미지로 직접 변환합니다."
 weight: 100

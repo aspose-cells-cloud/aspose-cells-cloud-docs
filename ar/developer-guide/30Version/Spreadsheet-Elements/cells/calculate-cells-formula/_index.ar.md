@@ -1,7 +1,7 @@
 ---
 title: "حساب صيغة الخلية – واجهة برمجة تطبيقات Aspose.Cells Cloud"
 type: docs
-url: /calculate-cells-formula/
+url: /ar/calculate-cells-formula/
 weight: 90
 keywords: "Aspose.Cells Cloud، حساب صيغة الخلية، واجهة برمجة تطبيقات Excel، واجهة برمجة تطبيقات REST، مكتبة SDK"
 description: "احسب صيغة خلية في ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API (الإصدار 3.0). تتضمن النقطة النهائية (endpoint)، والمعطيات، ومثال على cURL، وأكواد مقتطفات SDK."

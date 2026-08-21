@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API - 스프레드시트 테이블 데이터를 C
 second_title: "문서"
 ArticleTitle: "스프레드시트 테이블 데이터를 CSV 파일로 변환하는 방법: 단계별 가이드"
 linktype: "docs"
-url: /convert-table-to-csv/
+url: /ko/convert-table-to-csv/
 keywords: "Aspose.Cells Cloud, 테이블을 CSV로, 스프레드시트 변환, Excel을 CSV로, API, REST, 데이터 내보내기"
 description: "Aspose.Cells Cloud API를 사용하여 Excel 스프레드시트의 테이블을 빠르게 CSV 파일로 변환합니다."
 weight: 100

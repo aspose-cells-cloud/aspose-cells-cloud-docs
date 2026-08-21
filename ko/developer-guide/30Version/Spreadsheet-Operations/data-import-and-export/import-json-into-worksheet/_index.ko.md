@@ -3,8 +3,8 @@ title: "JSON 데이터를 Excel로 가져오기"
 second_title: "문서"
 linktitle: "JSON 가져오기"
 type: docs
-url: /import-json-data-into-excel/
-aliases: [/import/json/]
+url: /ko/import-json-data-into-excel/
+aliases: [  /ko/import/json/ ]
 keywords: "Aspose.Cells Cloud, JSON 가져오기, Excel API, REST JSON 가져오기, SDK 예제"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에 JSON 데이터를 가져오는 방법을 알아보세요. 엔드포인트 세부 정보, 요청/응답 예제, .NET, Java, Python용 SDK 코드를 포함합니다."
 weight: 40

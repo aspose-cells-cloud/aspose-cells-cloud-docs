@@ -3,8 +3,8 @@ title: "Excel Şekilleri ile Çalışma"
 second_title: "Belge"
 linktype: "Şekiller"
 type: docs
-url: /shapes/
-aliases: ["/working-with-shapes/", "/working-with-images/"]
+url: /tr/shapes/
+aliases: [  /tr/working-with-shapes/ , /tr/working-with-images/ ]
 keywords: "Excel şekilleri, Aspose.Cells Cloud, API, çalışma sayfası, şekil işlemleri"
 description: "Aspose.Cells Cloud API aracılığıyla Excel şekillerini nasıl yöneteceğinizi öğrenin—SDK desteğiyle şekilleri alma, ekleme, silme ve dönüştürme."
 weight: 100

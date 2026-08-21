@@ -5,7 +5,7 @@ second_title: "文档"
 type: docs
 linktitle: "超链接"
 url: /zh/hyperlinks/
-aliases: [/zh/working-with-hyperlinks/, /zh/working-with-hyperlink/]
+aliases: [  /zh/working-with-hyperlinks/ , /zh/working-with-hyperlink/ ]
 keywords: "Excel, 超链接, Cells.Cloud, API, Aspose.Cells, 电子表格, 链接, 指南"
 description: "了解如何使用 Aspose Cells Cloud API 检索、添加、更新和删除 Excel 超链接。"
 weight: 100

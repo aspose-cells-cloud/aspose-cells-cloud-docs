@@ -3,8 +3,8 @@ title: "Excel の改ページの操作"
 second_title: "ドキュメント"
 linktype: "PageBreaks"
 type: docs
-url: /working-with-pagebreaks/
-aliases: [/working-with-pagebreaks/]
+url: /ja/working-with-pagebreaks/
+aliases: [  /ja/working-with-pagebreaks/ ]
 keywords: "Excel, 改ページ, Aspose.Cells Cloud, REST API, シート, 追加, 削除, 取得, 更新, 改ページ"
 description: "Aspose.Cells Cloud REST API を使用して Excel シートに改ページを追加・取得・削除する方法を学びます。垂直改ページと水平改ページの両方の例を含みます。"
 weight: 100

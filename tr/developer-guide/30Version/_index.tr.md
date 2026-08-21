@@ -4,7 +4,7 @@ ArticleTitle: "Aspose.Cells Cloud 3.0 REST API Geliştirici Kılavuzu – Excel 
 second_title: "Belge"
 type: docs
 url: /tr/developer-guide-3.0/
-aliases: [/tr/developer-guide/v3.0/,/tr/developer-guide-v3.0/]
+aliases: [  /tr/developer-guide/v3.0/ , /tr/developer-guide-v3.0/ ]
 keywords: "Aspose.Cells Cloud, Excel REST API, çalışma kitabını dönüştürme, grafik API'si, veri içe aktarma, dışa aktarma, PDF, CSV, JSON, geliştirici kılavuzu"
 description: "Aspose.Cells Cloud 3.0 REST API'lerini kullanarak Excel çalışma kitapları oluşturma, dönüştürme, stillendirme, grafikler, tablolar ve daha fazlası konularında bilgi edinin. Kod örnekleri ve en iyi uygulama önerileri içerir."
 weight: 150

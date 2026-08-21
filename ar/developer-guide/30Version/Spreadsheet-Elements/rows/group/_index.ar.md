@@ -3,8 +3,8 @@ title: "تجميع الصفوف في ورقة عمل Excel"
 second_title: "مستند"
 linktitle: "تجميع"
 type: docs
-url: /rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
+url: /ar/rows/group/
+aliases: [  /ar/group-rows-in-excel-worksheet/ ]
 keywords: "تجميع الصفوف، Excel، Aspose.Cells Cloud، REST API، SDK، ورقة عمل، Excel API"
 description: "تجميع الصفوف في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. تدعم العديد من SDKs (C#، Java، PHP، Ruby، Node.js، Python، Perl، Go) لسهولة التكامل."
 weight: 60

@@ -3,8 +3,8 @@ title: "Ta bort bakgrund på ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Ta bort"
 type: docs
-url: /worksheets/background/delete/
-aliases: [/delete-background-or-watermark-of-excel-worksheet/]
+url: /sv/worksheets/background/delete/
+aliases: [  /sv/delete-background-or-watermark-of-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Ta bort bakgrund på arket, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Använd Aspose.Cells Cloud REST API för att ta bort bakgrundsbilden från ett Excel-ark. SDK:er finns tillgängliga för C#, Java, PHP, Ruby, Node.js, Python, Perl och Go."
 weight: 210

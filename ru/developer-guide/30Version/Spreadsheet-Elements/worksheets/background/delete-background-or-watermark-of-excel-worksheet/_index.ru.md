@@ -3,8 +3,8 @@ title: "Удаление фонового изображения на листе
 second_title: "Документ"
 linktitle: "Удалить"
 type: docs
-url: /worksheets/background/delete/
-aliases: [/delete-background-or-watermark-of-excel-worksheet/]
+url: /ru/worksheets/background/delete/
+aliases: [  /ru/delete-background-or-watermark-of-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Удаление фонового изображения листа, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Используйте Aspose.Cells Cloud REST API для удаления фонового изображения листа Excel. SDK доступны для C#, Java, PHP, Ruby, Node.js, Python, Perl и Go."
 weight: 210

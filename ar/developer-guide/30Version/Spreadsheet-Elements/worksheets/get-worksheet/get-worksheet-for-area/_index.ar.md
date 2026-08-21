@@ -3,8 +3,8 @@ title: "تصدير منطقة ورقة عمل إلى PNG و PDF و CSV – وا�
 second_title: "مستند"
 linktitle: "المنطقة"
 type: docs
-url: /worksheets/area-to-different-formats/
-aliases: [/get-worksheet-for-area/]
+url: /ar/worksheets/area-to-different-formats/
+aliases: [  /ar/get-worksheet-for-area/ ]
 keywords: "Aspose.Cells, تصدير منطقة ورقة العمل, PNG, PDF, CSV, تحويل Excel, واجهة برمجة تطبيقات REST, مكتبات SDK"
 description: "تعرّف على كيفية تصدير نطاق خلايا محدّد من ورقة عمل Excel إلى تنسيقات PNG و PDF و CSV وأكثر من 20 تنسيقًا آخر باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST أو مكتبات SDK (C# و Java و Python…)."
 weight: 230

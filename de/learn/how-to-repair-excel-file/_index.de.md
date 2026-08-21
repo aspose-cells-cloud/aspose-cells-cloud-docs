@@ -2,7 +2,7 @@
 title: "So reparieren Sie eine Excel-Datei mit Aspose.Cells Cloud"
 linktitle: "So reparieren Sie eine Excel-Datei"
 type: docs
-url: /how-to-repair-excel-file
+url: /de/how-to-repair-excel-file
 description: "So reparieren Sie eine Excel- oder andere Tabellendatei mit Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Tabellendatei, PDF, CSV, JSON, Markdown, So reparieren Sie eine Excel- oder andere Tabellendatei über Aspose.Cells Cloud

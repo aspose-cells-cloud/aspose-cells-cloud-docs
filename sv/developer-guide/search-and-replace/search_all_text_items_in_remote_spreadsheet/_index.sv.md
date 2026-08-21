@@ -4,7 +4,7 @@ ArticleTitle: "SearchAllTextItemsInRemoteSpreadsheet – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "SearchAllTextItemsInRemoteSpreadsheet"
 type: docs
-url: /cells/{name}/search/content/all-textitems
+url: /sv/cells/{name}/search/content/all-textitems
 aliases: []
 keywords: "sök, textobjekt, Aspose.Cells"
 description: "Sök efter alla textobjekt i en extern kalkylarkfil med Aspose.Cells Cloud."

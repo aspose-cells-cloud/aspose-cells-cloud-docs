@@ -4,7 +4,7 @@ ArticleTitle: "Hämta sammanfogade celler i kalkylblad – Aspose.Cells Cloud AP
 second_title: "Dokument"
 linktitle: "GetMergedCellsInWorksheet"
 type: docs
-url: /cells/spreadsheet/mergedcells
+url: /sv/cells/spreadsheet/mergedcells
 aliases: []
 keywords: "Aspose Cells, sammanfogade celler, kalkylblad, API"
 description: "Hämta alla sammanfogade cellområden från ett lokalt kalkylarkskalkylblad."

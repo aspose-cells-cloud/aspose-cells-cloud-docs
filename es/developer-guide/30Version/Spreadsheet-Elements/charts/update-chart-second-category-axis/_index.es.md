@@ -1,7 +1,7 @@
 ---
 title: "Actualizar el eje secundario de categorías de un gráfico"
 type: docs
-url: /charts/second-category-axis/update/
+url: /es/charts/second-category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, gráfico, eje secundario de categorías, API REST, actualizar gráfico, Excel, API en la nube"
 description: "Aprenda cómo actualizar el eje secundario de categorías de un gráfico en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud."

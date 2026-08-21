@@ -4,7 +4,7 @@ secondtitle: "Belge"
 articletitle: "Elektronik Tabloyu Başka Bir Formata Nasıl Dönüştürürsünüz: Adım Adım Kılavuz"
 linktitle: "Elektronik Tabloyu Dönüştür"
 type: docs
-url: /convert-spreadsheet/
+url: /tr/convert-spreadsheet/
 keywords: "Aspose, Aspose.Cells, elektronik tablo dönüştürme, Excel'den PDF'e, Excel API'si, bulut dosya dönüştürme"
 description: "Aspose.Cells Cloud API'sini kullanarak bir elektronik tablo dosyasını başka bir formata dönüştürün."
 weight: 100

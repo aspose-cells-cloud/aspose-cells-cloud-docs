@@ -3,8 +3,8 @@ title: "Horizontale Umbrüche abrufen"
 second_title: "Dokument"
 linktitle: "Horizontale Umbrüche abrufen"
 type: docs
-url: /page-breaks/get-horizontal-page-breaks/
-aliases: [/get-horizontal-page-breaks-inside-worksheet/]
+url: /de/page-breaks/get-horizontal-page-breaks/
+aliases: [  /de/get-horizontal-page-breaks-inside-worksheet/ ]
 keywords: "horizontale Umbrüche, Aspose.Cells Cloud, REST-API, Excel-Arbeitsblatt, SDK"
 description: "Rufen Sie horizontale Umbrüche aus einem Excel-Arbeitsblatt über die Aspose.Cells Cloud API ab. Enthält Endpunkt, Parameter, cURL-Beispiel, Antwortformat und SDK-Snippets für C#, Java, Python und mehr."
 ArticleTitle: "Horizontale Umbrüche abrufen – Aspose.Cells Cloud API-Dokumentation"

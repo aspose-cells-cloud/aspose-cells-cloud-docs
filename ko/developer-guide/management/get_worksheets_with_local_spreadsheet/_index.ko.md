@@ -4,7 +4,7 @@ ArticleTitle: "로컬 스프레드시트로 워크시트 가져오기 – Aspose
 second_title: "문서"
 linktitle: "로컬 스프레드시트로 워크시트 가져오기"
 type: docs
-url: /cells/spreadsheet/worksheets
+url: /ko/cells/spreadsheet/worksheets
 aliases: []
 keywords: "Aspose.Cells, 워크시트, 로컬 스프레드시트, API"
 description: "현재 활성화된 로컬 스프레드시트에서 워크시트의 전체 목록을 가져옵니다."

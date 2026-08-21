@@ -3,8 +3,8 @@ title: "ExcelワークシートからOLEオブジェクトを取得する – As
 second_title: "ドキュメント"
 linktitle: "取得"
 type: docs
-url: /oleobjects/get/
-aliases: [/get-oleobject-from-a-worksheet/]
+url: /ja/oleobjects/get/
+aliases: [  /ja/get-oleobject-from-a-worksheet/ ]
 keywords: "aspose, cells, ole object, excel, worksheet, get ole object, rest api"
 description: "Aspose.Cells Cloud REST APIを使用して、ワークシートからOLEオブジェクト（画像、チャート、埋め込みファイル）を取得します。HTTPSエンドポイント、必要なパラメータ、cURLのサンプル、複数言語のSDKコードを含みます。"
 ArticleTitle: "ExcelワークシートからOLEオブジェクトを取得する – Aspose.Cells Cloud API"

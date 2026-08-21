@@ -4,7 +4,7 @@ linktitle: "Weitere Funktionen"
 ArticleTitle: "Weitere Funktionen: Gesundheitsprüfung, Öffentlichen Schlüssel abrufen"
 second_title: "Dokument"
 type: docs
-url: /other-features/
+url: /de/other-features/
 keywords: "Aspose.Cells, Cloud API, Gesundheitsprüfung, öffentlicher Schlüssel, Zugriffstoken, Excel, REST"
 description: "Entdecken Sie die weiteren Funktionen von Aspose.Cells Cloud: den Gesundheitsprüfungsendpunkt, die Abfrage des öffentlichen Schlüssels und die Erstellung von Zugriffstoken zur Sicherung Ihrer Excel-API-Integrationen."
 weight: 180

@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Individua e Risolvi Link Rotti in un Intervallo Excel Remoto – Controllore Link Foglio di Calcolo Cloud"
 linktype: "Search Broken Links in Remote Range"
 type: docs
-url: /search-broken-links-in-remote-range/
+url: /it/search-broken-links-in-remote-range/
 keywords: "Aspose, Cells, link rotti, API, intervallo Excel, convalida, cloud, foglio di calcolo, riferimento esterno, controllore"
 description: "Utilizza l'API Aspose.Cells Cloud per analizzare un intervallo specifico di Excel alla ricerca di link esterni rotti, formule non valide o origini dati mancanti. Sicuro, veloce e basato sul cloud."
 weight: 100

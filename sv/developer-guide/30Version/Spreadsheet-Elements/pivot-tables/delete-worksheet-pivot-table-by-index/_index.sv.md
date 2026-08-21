@@ -3,8 +3,8 @@ title: "Ta bort en pivotdatabas i ett Excel-ark"
 second_title: "Document"
 linktitle: Delete
 type: docs
-url: /pivot-tables/delete/
-aliases: [/delete-worksheet-pivot-table-by-index/]
+url: /sv/pivot-tables/delete/
+aliases: [  /sv/delete-worksheet-pivot-table-by-index/ ]
 keywords: "Aspose.Cells, pivotdatabas, ta bort, Excel, REST API"
 description: "Ta bort en pivotdatabas från ett Excel-ark med Aspose.Cells Cloud REST API (v3.0). Inkluderar begäranformat, cURL-exempel, felkoder och SDK-utdrag för C#, Java, Python och Node.js."
 weight: 70

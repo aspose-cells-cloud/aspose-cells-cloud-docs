@@ -4,7 +4,7 @@ second: "文档"
 linktitle: "解密 Excel 文件"
 type: docs
 url: /zh/excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+aliases: [  /zh/decrypt-excel-workbooks/ , /zh/workbook/decrypt/ ]
 keywords: "Aspose.Cells, Excel 解密, REST API, 云 SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API 解密 Excel 工作簿。包含必需参数、cURL 示例、SDK 代码示例以及错误处理详情。"
 ArticleTitle: "如何使用 Aspose.Cells Cloud API 解密 Excel 工作簿"

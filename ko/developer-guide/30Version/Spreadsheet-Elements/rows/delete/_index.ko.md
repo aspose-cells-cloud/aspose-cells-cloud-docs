@@ -3,7 +3,7 @@ title: "엑셀 워크시트에서 행 삭제 작업하기"
 second_title: "Document"
 linktitle: "삭제"
 type: docs
-url: /rows/delete/
+url: /ko/rows/delete/
 keywords: "Aspose.Cells, 행 삭제, Excel API, REST, 클라우드, 스프레드시트, 엑셀, SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크시트에서 단일 행 또는 여러 행을 삭제하는 방법을 배워보세요. Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift 등에 대한 코드 예제가 포함되어 있습니다."
 weight: 20

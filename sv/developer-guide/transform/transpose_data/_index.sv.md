@@ -4,8 +4,8 @@ ArticleTitle: "TransposeData – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "TransposeData"
 type: docs
-url: /cells/transpose
-aliases: ["/cells/transpose"]
+url: /sv/cells/transpose
+aliases: [  /sv/cells/transpose ]
 keywords: "TransposeData, Aspose.Cells, molnbaserat API, kalkylark, transponera"
 description: "Byt rader och kolumner i kalkylarket."
 weight: 1000

@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Excel'de Boş Sütunları Nasıl Silinir – Sütun Temizlemeyi Otomatikleştirin"
 linktitle: "Boş Sütunları Sil"
 type: docs
-url: /delete-spreadsheet-blank-columns/
+url: /tr/delete-spreadsheet-blank-columns/
 keywords: "boş sütunları sil Excel API'si, Aspose.Cells Cloud, REST API, Excel temizleme, elektronik tablo otomasyonu"
 description: "Aspose.Cells Cloud REST API ile Excel dosyalarından boş sütunları nasıl kaldıracağınızı öğrenin. Uç nokta, kimlik doğrulama, istek/yanıt örnekleri ve C#, Java, Python ve diğerleri için SDK kodlarını içerir."
 weight: 100

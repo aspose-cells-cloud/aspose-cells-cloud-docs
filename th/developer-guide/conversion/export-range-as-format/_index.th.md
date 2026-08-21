@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีการส่งออกช่วงสเปรดชีตระยะไกลไปยังรูปแบบอื่นๆ: คู่มือแบบทีละขั้นตอน"
 linktitle: "ส่งออกช่วงเป็นรูปแบบ"
 type: docs
-url: /export-range-as-format/
+url: /th/export-range-as-format/
 keywords: "Aspose Cells, ส่งออกช่วงข้อมูลใน Excel, PDF, PNG, CSV, API บนคลาวด์, การแปลงสเปรดชีต"
 description: "เรียนรู้วิธีการแปลงช่วงข้อมูลใน Excel ที่เก็บไว้ใน Aspose Cells Cloud ให้เป็นรูปแบบอื่นๆ เช่น PDF, PNG, CSV หรือรูปแบบอื่นๆ รวมถึงรายละเอียดของ endpoint, พารามิเตอร์, ตัวอย่างคำขอ, การจัดการคำตอบ และข้อมูลข้อผิดพลาด"
 weight: 100

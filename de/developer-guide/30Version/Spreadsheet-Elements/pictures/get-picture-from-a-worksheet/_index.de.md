@@ -3,8 +3,8 @@ title: "Alle Bilder in einem Excel-Arbeitsblatt abrufen"
 second_title: "Dokument"
 linktitle: "Alle abrufen"
 type: docs
-url: /pictures/get-all/
-aliases: [/get-picture-from-a-worksheet/]
+url: /de/pictures/get-all/
+aliases: [  /de/get-picture-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel-Arbeitsblatt, Bilder-API, alle Bilder abrufen, REST-API, SDK"
 description: "Rufen Sie alle Bildobjekte über die Aspose.Cells Cloud REST-API aus einem Excel-Arbeitsblatt ab."
 ArticleTitle: "Alle Bilder in einem Excel-Arbeitsblatt abrufen – Aspose.Cells Cloud API"

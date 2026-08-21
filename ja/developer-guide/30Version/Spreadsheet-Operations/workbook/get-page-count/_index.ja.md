@@ -3,8 +3,8 @@ title: "Excel ファイルからページ数を取得する"
 second_title: "Document"
 linktitle: "Pages"
 type: docs
-url: /get-page-count-from-an-excel-file/
-aliases: [/workbook/page-count/, /workbook/get/page-count/]
+url: /ja/get-page-count-from-an-excel-file/
+aliases: [  /ja/workbook/page-count/ , /ja/workbook/get/page-count/ ]
 keywords: "Aspose.Cells, Cloud API, Excel ページ数, ワークブックのページ分割"
 description: "Aspose.Cells Cloud REST API (v3.0) を使用して Excel ワークブックの印刷可能なページの総数を取得します。リクエスト形式、必要なパラメータ、cURL の例、レスポンススキーマ、エラーハンドリング、および複数言語向けの SDK スニペットを含みます。"
 weight: 10

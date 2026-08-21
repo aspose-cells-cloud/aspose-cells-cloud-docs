@@ -5,7 +5,7 @@ second_title: "Belge"
 linktitle: "Excel'i PDF'ye Dönüştür"
 type: docs
 url: /tr/convert-excel-file-to-pdf-file/
-aliases: [/convert-excel-file-to-pdf-in-cloud/, /convert/excel-to-pdf/]
+aliases: [  /tr/convert-excel-file-to-pdf-in-cloud/ , /tr/convert/excel-to-pdf/ ]
 keywords: "Aspose, Cells, Excel, PDF, dönüştürme, Bulut API"
 description: "Aspose.Cells Cloud REST API ile Excel çalışma kitaplarını PDF'ye nasıl dönüştüreceğinizi öğrenin. cURL, SDK örnekleri (C#, Java, Python) ve kimlik doğrulama kılavuzunu içerir."
 weight: 80

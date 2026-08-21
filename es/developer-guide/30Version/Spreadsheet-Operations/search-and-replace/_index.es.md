@@ -3,8 +3,8 @@ title: "Buscar y reemplazar contenido de texto en archivos de Excel"
 second_title: "Documentación"
 linktitle: "Buscar y reemplazar"
 type: docs
-url: /search-and-replace/
-aliases: [/working-with-text/, /text/]
+url: /es/search-and-replace/
+aliases: [  /es/working-with-text/ , /es/text/ ]
 description: "Aprenda cómo buscar y reemplazar texto en libros y hojas de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. Incluye el formato de solicitud, código de ejemplo para .NET, Java, Python y manejo de errores."
 keywords: "Aspose.Cells Cloud, Excel, buscar y reemplazar, API REST, .NET, Java, Python"
 weight: 20

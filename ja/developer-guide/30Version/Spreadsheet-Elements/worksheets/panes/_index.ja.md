@@ -3,7 +3,7 @@ title: "Excelワークシートでのペインの操作方法"
 second_title: "Document"
 linktitle: "ペイン"
 type: docs
-url: /worksheets/panes/
+url: /ja/worksheets/panes/
 keywords: "Excel、ペイン、ペインの固定、ペインの固定解除、Aspose.Cells Cloud、REST API"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートのペインを操作する方法（サポートされている SDK 言語でペインを固定および固定解除する手順を含む）を学びます。"
 weight: 20

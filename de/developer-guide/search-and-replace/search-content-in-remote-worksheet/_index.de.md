@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Text in entfernter Excel-Tabellendatei suchen – Spezifische Daten finden"
 linktitle: "Inhalte entfernter Arbeitsblätter durchsuchen"
 type: docs
-url: /search-content-in-remote-worksheet/
+url: /de/search-content-in-remote-worksheet/
 keywords: "Aspose Cells, Excel API, Textsuche, entferntes Arbeitsblatt"
 description: "Suchen Sie mit der Aspose.Cells Cloud API nach Text, Zahlen oder Formeln in einem entfernten Excel-Arbeitsblatt. Unterstützt groß-/kleinschreibungsunabhängige Suche und passwortgeschützte Dateien."
 weight: 100

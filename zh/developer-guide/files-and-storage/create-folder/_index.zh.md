@@ -3,7 +3,7 @@ title: "创建文件夹 – Aspose.Cells Cloud API | Excel 存储管理"
 second_title: "文档"
 ArticleTitle: "创建文件夹 – Aspose.Cells Cloud API"
 linktype: "docs"
-url: /create-folder/
+url: /zh/create-folder/
 keywords: "Aspose.Cells, Cloud API, 创建文件夹, 存储管理, Excel"
 description: "通过简单的 PUT 请求在 Aspose.Cells Cloud 存储中创建新文件夹。查看请求格式、参数、响应及错误处理方式。"
 weight: 100

@@ -3,7 +3,7 @@ title: "Ta bort tecken från Excel – Aspose.Cells Cloud API (POST /cells/remov
 second_title: "Dokument"
 linktitle: "Ta bort tecken"
 type: docs
-url: /excel-remove-characters/
+url: /sv/excel-remove-characters/
 keywords: "ta bort tecken, Aspose.Cells, Excel API, textbearbetning, moln"
 description: "Lär dig hur du tar bort tecken, teckenuppsättningar eller delsträngar från Excel-ark med Aspose.Cells Cloud API. Inkluderar begärandeschema, cURL-exempel, SDK-kod och felhantering."
 weight: 100

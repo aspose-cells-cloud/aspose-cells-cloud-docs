@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "ローカルのスプレッドシートテーブルデータをPDFファイルに変換する方法：ステップ・バイ・ステップガイド"
 linktitle: "テーブルをPDFに変換"
 type: docs
-url: /convert-table-to-pdf/
+url: /ja/convert-table-to-pdf/
 keywords: "Aspose.Cells, Excel to PDF, テーブル変換, Cloud API"
 description: "Aspose.Cells Cloud REST API を使って、ローカルのExcelテーブルを迅速にPDFファイルに変換します。"
 weight: 100

@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud Docker Temel İşlevselliği"
 linktype: "Özellikler"
 type: docs
-url: /docker-container-features/
+url: /tr/docker-container-features/
 description: "Aspose.Cells Cloud API'sini yerel olarak çalıştırın; Aspose.Cells Cloud Docker Container ile birlikte, tam elektronik tablo işleme, gizlilik ve çevrimdışı özellik sunan, Docker tabanlı, konteynerleştirilmiş bir hizmeti kullanın; Aspose'un herkese açık bulutunu kullanmadan."
 weight: 30
 keywords:

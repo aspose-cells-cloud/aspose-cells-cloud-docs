@@ -3,8 +3,8 @@ title: "Arbeiten mit Excel-Zellen"
 ArticleTitle: "Arbeiten mit Excel-Zellen – Aspose.Cells Cloud-Dokumentation"
 second_title: "Dokument"
 linktype: "docs"
-url: /working-with-cells/
-aliases: [/working-with-worksheets/]
+url: /de/working-with-cells/
+aliases: [  /de/working-with-worksheets/ ]
 keywords: "Excel, Aspose.Cells, Zelloperationen, Tabellenkalkulations-API, REST-API, Zellformatierung, Zellverbindung, Formelberechnung"
 description: "Erforschen Sie die Aspose.Cells Cloud-API für Excel-Zelloperationen, einschließlich Festlegen von Werten, Anwenden von Formatierungen, Verbinden/Trennen von Zellen und Berechnen von Formeln."
 weight: 100

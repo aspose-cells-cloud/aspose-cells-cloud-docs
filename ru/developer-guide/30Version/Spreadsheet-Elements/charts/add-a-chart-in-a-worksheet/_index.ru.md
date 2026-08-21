@@ -1,8 +1,8 @@
 ---
 title: "Добавление диаграммы в рабочий лист"
 type: docs
-url: /charts/add/
-aliases: [/add-a-chart-in-a-worksheet/]
+url: /ru/charts/add/
+aliases: [  /ru/add-a-chart-in-a-worksheet/ ]
 weight: 20
 description: "Узнайте, как добавить диаграмму в рабочий лист Excel с использованием Aspose.Cells Cloud API v3.0. Включает endpoint, параметры, пример cURL и фрагменты кода SDK."
 keywords:

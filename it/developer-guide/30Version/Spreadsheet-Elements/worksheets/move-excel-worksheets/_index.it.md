@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Sposta"
 type: docs
 url: /it/worksheets/move/
-aliases: [/move-excel-worksheets/]
+aliases: [  /it/move-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Sposta foglio, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
 description: "Scopri come spostare un foglio Excel in una nuova posizione utilizzando l'API Aspose.Cells Cloud (v3.0). Include l'endpoint, i parametri obbligatori, un esempio cURL e codici SDK in C#, Java, Python e altro."
 weight: 20

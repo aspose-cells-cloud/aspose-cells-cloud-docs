@@ -3,8 +3,8 @@ title: "Eliminar varias hojas de cálculo de Excel"
 second_title: "Document"
 linktype: "Varias hojas de cálculo"
 type: docs
-url: /worksheets/delete-multiple/
-aliases: [/delete-excel-worksheets/]
+url: /es/worksheets/delete-multiple/
+aliases: [  /es/delete-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, eliminar varias hojas de cálculo, API de Excel, API REST, v3.0, eliminar hojas de cálculo"
 description: "Aprenda cómo eliminar varias hojas de cálculo de un libro de Excel utilizando la API REST de Aspose.Cells Cloud (v3.0). Incluye un endpoint HTTPS seguro, los parámetros requeridos, un ejemplo corregido de cURL y fragmentos de SDK para múltiples lenguajes de programación."
 weight: 20

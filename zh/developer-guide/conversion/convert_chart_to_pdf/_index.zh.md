@@ -4,7 +4,7 @@ ArticleTitle: "将图表转换为 PDF – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "ConvertChartToPdf"
 type: docs
-url: /cells/convert/chart/pdf
+url: /zh/cells/convert/chart/pdf
 aliases: []
 keywords: "ConvertChartToPdf, Aspose.Cells, PDF, 图表转换"
 description: "将本地磁盘上电子表格中的图表转换为 PDF。"

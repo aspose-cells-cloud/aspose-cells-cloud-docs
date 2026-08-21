@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment convertir une feuille de calcul vers un autre format : Guide étape par étape"
 linktitle: "Convertir une feuille de calcul"
 type: docs
-url: /convert-spreadsheet/
+url: /fr/convert-spreadsheet/
 keywords: "Aspose, Aspose.Cells, conversion de feuille de calcul, Excel vers PDF, API Excel, conversion de fichiers cloud"
 description: "Convertir un fichier de feuille de calcul vers un autre format à l'aide de l'API Web Aspose.Cells Cloud."
 weight: 100

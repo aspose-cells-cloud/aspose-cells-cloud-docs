@@ -1,7 +1,7 @@
 ---
 title: "Как объединить ячейки в рабочем листе Excel — Aspose.Cells Cloud API (v3.0)"
 type: docs
-url: /merge-cells-in-excel-worksheet/
+url: /ru/merge-cells-in-excel-worksheet/
 weight: 110
 keywords: "объединение ячеек, Aspose.Cells, облачный API, Excel"
 description: "Руководство по объединению ячеек в рабочем листе Excel с использованием облачного REST API Aspose.Cells и примеров на cURL и SDK."

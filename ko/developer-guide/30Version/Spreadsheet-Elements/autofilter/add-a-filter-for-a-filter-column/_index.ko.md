@@ -3,8 +3,8 @@ title: "Excel 워크시트에 필터 추가"
 second_title: "문서"
 linktitle: "필터 추가"
 type: docs
-url: /autofilter/add-filter/
-aliases: [/add-a-filter-for-a-filter-column/]
+url: /ko/autofilter/add-filter/
+aliases: [  /ko/add-a-filter-for-a-filter-column/ ]
 keywords: "Aspose.Cells, 클라우드, Excel, 자동 필터, 필터 추가, REST API, SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 열에 자동 필터를 추가하는 방법을 알아보세요. cURL 및 SDK 샘플, 매개변수 가이드 포함."
 weight: 60

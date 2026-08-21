@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So erstellen Sie neue Excel-Arbeitsmappen – Leere oder auf Vorlagen basierende Dateien generieren"
 linktitle: "Spreadsheet erstellen"
 type: docs
-url: /create-spreadsheet/
+url: /de/create-spreadsheet/
 keywords: "Aspose.Cells, Spreadsheet API, Excel erstellen, Cloud, XLSX, ODS, CSV, Vorlage, SDK, Automatisierung"
 description: "Erfahren Sie, wie Sie mit der Aspose.Cells Cloud API (v5.0) leere oder auf Vorlagen basierende Excel-Arbeitsmappen erstellen. Enthält Endpunkt, Parameter, Fehlercodes, Authentifizierungsschritte und SDK-Beispiele."
 weight: 100

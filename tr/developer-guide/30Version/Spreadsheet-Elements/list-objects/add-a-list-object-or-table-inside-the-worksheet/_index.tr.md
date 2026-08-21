@@ -3,8 +3,8 @@ title: "Bir Excel Çalışma Sayfasına Bir Liste Objesi (Tablo) Ekleyin"
 second_title: "Belge"
 linktitle: "Ekle"
 type: docs
-url: /list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+url: /tr/list-objects/add/
+aliases: [  /tr/add-a-list-object-or-table-inside-the-worksheet/ , /tr/tables/add/ ]
 keywords: "Aspose.Cells Cloud, Excel API, liste objesi, tablo, REST API, çalışma sayfası"
 description: "Aspose.Cells Cloud REST API kullanarak bir çalışma sayfasına bir liste objesi (Excel tablosu) nasıl ekleyeceğinizi öğrenin. Uç nokta, parametreler, kimlik doğrulama adımları, cURL örneği ve SDK kod örneklerini içerir."
 weight: 10

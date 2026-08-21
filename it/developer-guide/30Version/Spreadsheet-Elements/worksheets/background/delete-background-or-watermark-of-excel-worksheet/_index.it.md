@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Elimina"
 type: docs
 url: /it/worksheets/background/delete/
-aliases: [/it/delete-background-or-watermark-of-excel-worksheet/]
+aliases: [  /it/delete-background-or-watermark-of-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Elimina sfondo del foglio di calcolo, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Utilizza l'API REST di Aspose.Cells Cloud per eliminare l'immagine di sfondo di un foglio di calcolo Excel. Gli SDK sono disponibili per C#, Java, PHP, Ruby, Node.js, Python, Perl e Go."
 weight: 210

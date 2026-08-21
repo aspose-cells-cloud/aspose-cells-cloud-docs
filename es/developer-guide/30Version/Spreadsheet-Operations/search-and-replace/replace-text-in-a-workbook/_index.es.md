@@ -3,8 +3,8 @@ title: "Reemplazar texto en un libro de Excel"
 second_title: "Documento"
 linktitle: "Reemplazar en el libro"
 type: docs
-url: /workbook/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /es/workbook/replace-text/
+aliases: [  /es/replace-text-in-a-workbook/ ]
 weight: 60
 keywords: "Aspose.Cells Cloud, Reemplazar texto, Libro de Excel, XLSX, ODS, API REST, Hoja de cálculo, SDK"
 description: "Reemplace texto en libros de Excel (XLS, XLSX, XLSM, XLSB) y libros de hojas de cálculo OpenDocument (ODS) utilizando la API REST de Aspose.Cells Cloud. Disponible mediante cURL y una amplia gama de SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, etc.)."

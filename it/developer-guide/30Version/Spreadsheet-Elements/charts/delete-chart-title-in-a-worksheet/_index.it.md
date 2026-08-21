@@ -1,8 +1,8 @@
 ---
 title: "Elimina il titolo di un grafico in un foglio di lavoro"
 type: docs
-url: /charts/delete-chart-title/
-aliases: [/delete-chart-title-in-a-worksheet/]
+url: /it/charts/delete-chart-title/
+aliases: [  /it/delete-chart-title-in-a-worksheet/ ]
 weight: 150
 keywords: "Aspose.Cells, API cloud, elimina titolo grafico, Excel, REST, SDK"
 description: "Scopri come rimuovere il titolo di un grafico da un foglio di lavoro Excel utilizzando l'API REST Aspose.Cells Cloud (v4.0). Include esempi in cURL, SDK e gestione degli errori."

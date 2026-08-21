@@ -3,7 +3,7 @@ title: "Добавление фонового изображения в рабо
 second_title: "Документ"
 linktitle: "Добавить"
 type: docs
-url: /add-background-in-excel-file/
+url: /ru/add-background-in-excel-file/
 aliases:
   - /add-background-in-workbook/
   - /workbook/add-background/

@@ -3,8 +3,8 @@ title: "Arbeitsblatt-Eigenschaften aktualisieren – Aspose.Cells Cloud API-Refe
 second_title: "Dokument"
 linktitle: "Aktualisieren"
 type: docs
-url: /worksheets/update-properties/
-aliases: [/update-excel-worksheet-properties/]
+url: /de/worksheets/update-properties/
+aliases: [  /de/update-excel-worksheet-properties/ ]
 weight: 20
 keywords:
   [

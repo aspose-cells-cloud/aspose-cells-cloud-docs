@@ -4,7 +4,7 @@ second_title: "مستند"
 linktitle: "ما الجديد في 2026"
 type: docs
 weight: 9
-url: /new-features/2026/
+url: /ar/new-features/2026/
 keywords: "Aspose.Cells Cloud، الميزات الجديدة لعام 2026، واجهة برمجة تطبيقات جداول البيانات، Excel، CSV، PDF، جدول بيانات سحابي"
 description: "اكتشف أحدث ميزات Aspose.Cells Cloud الصادرة في عام 2026، بما في ذلك واجهات برمجة تطبيقات جديدة وتحسينات وإصلاحات للأخطاء لجداول البيانات وExcel وCSV وPDF وغيرها."
 ArticleTitle: "ما الجديد في Aspose.Cells Cloud في عام 2026 – أحدث الميزات والتحسينات"

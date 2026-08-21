@@ -4,7 +4,7 @@ ArticleTitle: "Convertir gráfico a PDF – Aspose.Cells Cloud API"
 second_title: "Documento"
 linktitle: "ConvertChartToPdf"
 type: docs
-url: /cells/convert/chart/pdf
+url: /es/cells/convert/chart/pdf
 aliases: []
 keywords: "ConvertChartToPdf, Aspose.Cells, PDF, conversión de gráficos"
 description: "Convierte un gráfico de una hoja de cálculo en una unidad local a PDF."

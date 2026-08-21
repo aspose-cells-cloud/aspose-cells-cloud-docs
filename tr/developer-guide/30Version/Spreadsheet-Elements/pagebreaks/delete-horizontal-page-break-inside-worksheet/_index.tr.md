@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud – Yatay Sayfa Sonrası Silme (REST API)"
 second_title: "Belge"
 linktitle: "Yatay sayfa sonrası sil"
 type: docs
-url: /page-breaks/delete-horizontal-page-break/
-aliases: [/delete-horizontal-page-break-inside-worksheet/]
+url: /tr/page-breaks/delete-horizontal-page-break/
+aliases: [  /tr/delete-horizontal-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Yatay sayfa sonrası sil, Excel çalışma sayfası, REST API, SDK"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından yatay bir sayfa sonrasını silin. C#, Java, PHP, Ruby, Node.js, Python, Perl, Go için SDK'lar mevcuttur."
 weight: 50

@@ -3,8 +3,8 @@ title: "รับคุณสมบัติของเอกสารทั้
 second_title: "เอกสาร"
 linktitle: "รับทั้งหมด"
 type: docs
-url: /document-properties/get-all/
-aliases: [/get-all-document-properties/]
+url: /th/document-properties/get-all/
+aliases: [  /th/get-all-document-properties/ ]
 keywords: "รับคุณสมบัติของเอกสารทั้งหมด, Aspose.Cells Cloud, คุณสมบัติของเอกสาร Excel, REST API, SDK, เมตาดาต้าของ Excel"
 description: "ดึงข้อมูลคุณสมบัติของเอกสารทั้งหมดจากไฟล์ Excel โดยใช้ Aspose.Cells Cloud REST API จุดสิ้นสุดนี้ทำงานร่วมกับ SDK และภาษาโปรแกรมที่รองรับทั้งหมด"
 ArticleTitle: "รับคุณสมบัติของเอกสารทั้งหมด – Aspose.Cells Cloud API"

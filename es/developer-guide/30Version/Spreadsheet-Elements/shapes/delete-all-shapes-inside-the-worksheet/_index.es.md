@@ -4,8 +4,8 @@ ArticleTitle: "Eliminar todas las formas en una hoja de cálculo de Excel – As
 second_title: "Document"
 linktitle: "Borrar"
 type: docs
-url: /shapes/clear/
-aliases: [/delete-all-shapes-inside-the-worksheet/]
+url: /es/shapes/clear/
+aliases: [  /es/delete-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Eliminar todas las formas, hoja de cálculo de Excel, REST API, SDK, cURL, .NET, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift"
 description: "Eliminar todas las formas de una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. La operación está disponible mediante cURL y una amplia gama de SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift)."
 weight: 40

@@ -3,8 +3,8 @@ title: "使用粘贴选项在工作表中复制区域"
 second_title: "文档"
 linktitle: "复制"
 type: docs
-url: /ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+url: /zh/ranges/copy/
+aliases: [  /zh/copy-range-in-a-worksheet-with-paste-options/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, 复制区域, 工作表, 粘贴选项"
 description: "使用 Aspose.Cells Cloud REST API 在 Excel 工作表中复制区域，并全面支持粘贴选项。包含多种编程语言的 SDK 示例。"
 weight: 20

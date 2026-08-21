@@ -3,8 +3,8 @@ title: "엑셀 파일을 다른 형식으로 변환하거나 다른 방식으로
 second_title: "문서"
 linktitle: "변환 및 다른 이름으로 저장"
 type: docs
-url: /conversion-and-save-as/
-aliases: [/convert-excel/, /convert/]
+url: /ko/conversion-and-save-as/
+aliases: [  /ko/convert-excel/ , /ko/convert/ ]
 keywords: "Aspose.Cells, 엑셀 변환 API, 엑셀을 PDF로 변환, 엑셀을 CSV로 변환, 엑셀을 JSON으로 변환, 클라우드 스프레드시트 변환"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크북을 PDF, CSV, JSON, HTML 등 15개 이상의 다양한 형식으로 변환하는 방법을 알아보세요. 엔드포인트 세부 정보, 샘플 cURL 명령어, Java, .NET, Python 등 SDK 코드 스니펫이 포함되어 있습니다."
 weight: 30

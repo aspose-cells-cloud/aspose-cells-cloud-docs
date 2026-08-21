@@ -1,8 +1,8 @@
 ---
 title: "워크시트에서 차트 가져오기"
 type: docs
-url: /charts/get/
-aliases: [/get-chart-from-a-worksheet/]
+url: /ko/charts/get/
+aliases: [  /ko/get-chart-from-a-worksheet/ ]
 weight: 10
 keywords: "Aspose.Cells Cloud, 차트 가져오기, 워크시트, REST API, Excel, 차트 API, 차트 검색, Excel 차트"
 description: "Aspose.Cells Cloud REST API를 사용하여 워크시트에서 차트 정보(메타데이터 및 내보내기 형식 포함)를 검색합니다."

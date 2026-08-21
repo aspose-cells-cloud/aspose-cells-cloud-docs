@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Insertion groupée de texte dans Excel – Ajouter des préfixes, suffixes et texte personnalisé aux cellules – Guide étape par étape"
 linktype: "AddText"
 type: docs
-url: /add-text/
+url: /fr/add-text/
 keywords: "API Aspose Cells, ajouter du texte à Excel, insertion groupée de texte, préfixe suffixe Excel, remplacement de texte dans feuille de calcul, automatisation Excel, API feuille de calcul cloud"
 description: "Insérez des préfixes, suffixes ou libellés personnalisés dans de nombreuses cellules Excel en une seule opération avec Aspose.Cells Cloud. Choisissez l’insertion en début, fin, avant ou après un texte spécifique. Prend en charge les plages, les feuilles de calcul et le traitement des cellules vides."
 weight: 100

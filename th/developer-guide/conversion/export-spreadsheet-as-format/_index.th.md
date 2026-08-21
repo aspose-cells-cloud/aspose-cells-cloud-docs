@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีส่งออกแผ่นงานสเปรดชีตระยะไกลไปยังรูปแบบอื่นๆ: คู่มือแบบทีละขั้นตอน"
 linktitle: "ส่งออกสเปรดชีตเป็นรูปแบบ"
 type: docs
-url: /export-spreadsheet-as-format/
+url: /th/export-spreadsheet-as-format/
 keywords: "Aspose.Cells, การแปลงสเปรดชีต, API, ส่งออก, PDF, CSV, JSON, XLSX"
 description: "แปลงสมุดงาน Excel ที่จัดเก็บไว้ใน Aspose Cloud เป็นรูปแบบ PDF, XLSX, CSV, JSON หรือ HTML ผ่านจุดปลายทาง REST เดียว เรียนรู้ไวยากรณ์คำขอ พารามิเตอร์ และตัวอย่าง SDK ใน C#, Java, Python และอื่นๆ"
 weight: 100

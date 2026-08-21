@@ -3,7 +3,7 @@ title: "Excel-Dateien schützen"
 second_title: "Dokument"
 linktitle: "Excel-Dateien verschlüsseln"
 type: docs
-url: /protect-excel-files/
+url: /de/protect-excel-files/
 aliases:
   [
     /protect/without-storage/,

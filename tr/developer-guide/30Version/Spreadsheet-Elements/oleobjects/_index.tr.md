@@ -3,8 +3,8 @@ title: "Excel OLE Nesneleri ile Çalışma"
 second_title: "Belge"
 linktitle: "OleObjects"
 type: docs
-url: /oleobjects/
-aliases: [/working-with-oleobjects/]
+url: /tr/oleobjects/
+aliases: [  /tr/working-with-oleobjects/ ]
 keywords: "OLE, Excel, Aspose.Cells, API, Bulut"
 description: "Aspose.Cells Cloud REST API’sini kullanarak Excel çalışma sayfalarındaki OLE nesnelerini almak, eklemek, güncellemek, silmek ve dönüştürmek. SDK’lar Java, .NET, Python, PHP, Ruby, Go, Node.js, Perl, Swift ve Android için mevcuttur."
 weight: 100

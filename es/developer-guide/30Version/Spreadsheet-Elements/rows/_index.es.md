@@ -4,8 +4,8 @@ ArticleTitle: "Trabajar con filas de Excel – API en la nube de Aspose.Cells"
 second_title: "Documentación"
 linktitle: "Filas"
 type: docs
-url: /rows/
-aliases: [/working-with-rows/]
+url: /es/rows/
+aliases: [  /es/working-with-rows/ ]
 keywords: "Aspose.Cells, filas de Excel, API REST, manipulación de hojas de cálculo"
 description: "Manipule filas en archivos de Excel mediante la API REST de Aspose.Cells Cloud. Admite Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby y Swift."
 weight: 100

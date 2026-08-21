@@ -1,7 +1,7 @@
 ---
 title: "更改 Excel 工作表中的单元格样式"
 type: docs
-url: /change-cell-style-in-excel-worksheet/
+url: /zh/change-cell-style-in-excel-worksheet/
 weight: 30
 keywords:
   - Aspose.Cells

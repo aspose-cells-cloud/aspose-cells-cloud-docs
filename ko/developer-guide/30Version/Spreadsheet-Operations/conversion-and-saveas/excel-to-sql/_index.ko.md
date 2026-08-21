@@ -3,7 +3,7 @@ title: "Excel을 SQL로 변환"
 second_title: "문서"
 linktitle: "Excel을 SQL로 변환"
 type: docs
-url: /convert-excel-file-to-sql-file/
+url: /ko/convert-excel-file-to-sql-file/
 keywords: "Aspose.Cells, Excel을 SQL로 변환, 클라우드 API, 스프레드시트 변환, REST"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 스프레드시트를 SQL 파일로 변환합니다. 다양한 SDK 및 프로그래밍 언어를 지원하여 애플리케이션에 원활하게 통합할 수 있습니다."
 weight: 100

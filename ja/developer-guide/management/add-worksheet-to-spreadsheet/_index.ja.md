@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 articleTitle: "Excel にワークシートを追加する方法 – 特定の位置に新しいシートを挿入"
 linktype: "スプレッドシートにワークシートを追加"
 type: docs
-url: /add-worksheet-to-spreadsheet/
+url: /ja/add-worksheet-to-spreadsheet/
 keywords: "excel, ワークシート追加, aspose cells api, スプレッドシート, クラウド api, シート種別, シート位置"
 description: "Aspose.Cells Cloud API を使用して、Excel ワークブックに新しいワークシート、チャートシート、マクロシートをプログラムで追加する方法を学びます。1 つの REST 呼び出しでシートの種類、名前、挿入位置を制御できます。"
 weight: 100

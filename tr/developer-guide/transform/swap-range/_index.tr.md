@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Excel Dosyalarında Sütunlar, Satırlar ve Hücreler Arasında Veri Değiştirme"
 linktitle: "Aralık Değiştir"
 type: docs
-url: /swap-range/
+url: /tr/swap-range/
 keywords: "Aspose Cells, Excel API, Aralık Değiştir, Bulut Elektronik Tablo"
 description: "Aspose.Cells Cloud API ile Excel dosyalarındaki sütunları, satırları veya aralıkları değiştirin. Tek bir istekte formatları, formülleri ve hücre referanslarını koruyun."
 weight: 100

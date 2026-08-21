@@ -3,8 +3,8 @@ title: "Elimina Foglio di Lavoro"
 second_title: "Documenti"
 linktype: "Un foglio di lavoro"
 type: docs
-url: /worksheets/delete-worksheet/
-aliases: [/remove-worksheets-from-excel-workbooks/]
+url: /it/worksheets/delete-worksheet/
+aliases: [  /it/remove-worksheets-from-excel-workbooks/ ]
 keywords: "Aspose.Cells Cloud, Elimina Foglio di Lavoro, Excel, Foglio di Calcolo, REST API"
 description: "Elimina un foglio di lavoro da un file Excel utilizzando l'API REST di Aspose.Cells Cloud. Supporta SDK per C#, Java, PHP, Ruby, Node.js, Python, Perl, Go e cURL."
 weight: 20

@@ -4,7 +4,7 @@ ArticleTitle: "GetSpreadsheetStructure – Aspose.Cells Cloud"
 second_title: "ドキュメント"
 linktitle: "GetSpreadsheetStructure"
 type: docs
-url: /cells/spreadsheet/structure
+url: /ja/cells/spreadsheet/structure
 aliases: []
 keywords: "Aspose.Cells, スプレッドシート構造, API"
 description: "Excel ブックのコアメタデータ、ワークシート、テーブル、ピボットテーブル、チャート、図形などに関する情報を、JObject 型の JSON オブジェクトとして構造化変換します。"

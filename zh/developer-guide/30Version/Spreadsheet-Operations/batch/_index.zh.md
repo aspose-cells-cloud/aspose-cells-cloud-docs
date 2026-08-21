@@ -2,7 +2,7 @@
 title: "Excel 文件批量处理：转换、锁定、保护、拆分和解锁"
 second_title: "文档"
 linktype: "docs"
-url: /batch/
+url: /zh/batch/
 keywords: "批量处理, Excel, 转换, 锁定, 保护, 拆分, 解锁, Aspose.Cells Cloud API, API 参考, 批量操作"
 description: "Aspose.Cells Cloud API 支持对多个 Excel 文件进行批量处理，包括转换、锁定、保护、拆分和解锁操作。提供详细的 API 规范，并支持 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift 等多种 SDK。"
 weight: 35

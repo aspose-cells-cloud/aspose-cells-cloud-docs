@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie Tabellendaten aus lokalen Tabellenkalkulationen in eine PDF-Datei: Schritt-für-Schritt-Anleitung"
 linktitle: "Tabelle in PDF konvertieren"
 type: docs
-url: /convert-table-to-pdf/
+url: /de/convert-table-to-pdf/
 keywords: "Aspose.Cells, Excel zu PDF, Tabellenkonvertierung, Cloud-API"
 description: "Konvertieren Sie lokale Excel-Tabellen schnell mithilfe der Aspose.Cells Cloud REST-API in eine PDF-Datei."
 weight: 100

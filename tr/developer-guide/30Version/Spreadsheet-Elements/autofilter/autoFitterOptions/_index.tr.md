@@ -3,7 +3,7 @@ title: "AutoFitterOptions – Özellikler ve Kullanım Kılavuzu | Aspose.Cells 
 second_title: "Belge"
 linktitle: "AutoFitterOptions"
 type: docs
-url: /auto-fitter-options/
+url: /tr/auto-fitter-options/
 keywords: "AutoFitterOptions, Aspose.Cells, Excel otomatik sığdırma, satır yüksekliği, birleştirilmiş hücreler, API"
 description: "Aspose.Cells Cloud API'deki AutoFitterOptions nesnesi ile satır yüksekliği otomatik sığdırma, birleştirilmiş hücrelerin ele alınması, gizli satır/sütunların işlenmesi, dil ayarları ve oluşturma davranışını nasıl kontrol edebileceğinizi öğrenin."
 weight: 79

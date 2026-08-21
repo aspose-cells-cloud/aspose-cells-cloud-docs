@@ -3,7 +3,7 @@ title: "Importa un array bidimensionale di interi in un foglio di calcolo Excel"
 second_title: "Documento"
 linktitle: "Importa array bidimensionale di interi"
 type: docs
-url: /import-a-2D-integer-array-into-excel-worksheet/
+url: /it/import-a-2D-integer-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-integer-array-into-excel-worksheet/,

@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何将远程电子表格表格导出为其他格式：分步指南"
 linktype: "导出表格为指定格式"
 type: docs
-url: /export-table-as-format/
+url: /zh/export-table-as-format/
 keywords: "Aspose.Cells, 导出表格, Excel 转 PDF, 云 API, REST"
 description: "使用 Aspose.Cells Cloud API 将远程 Excel 表格导出为 PDF、PNG、CSV、JSON 或其他格式。通过安全的 HTTPS 端点及 JWT 身份验证，并提供 SDK 示例。"
 weight: 100

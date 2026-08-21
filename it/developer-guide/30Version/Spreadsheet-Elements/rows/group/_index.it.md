@@ -3,8 +3,8 @@ title: "Raggruppa righe in un foglio di lavoro Excel"
 second_title: "Document"
 linktype: "Raggruppa"
 type: docs
-url: /rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
+url: /it/rows/group/
+aliases: [  /it/group-rows-in-excel-worksheet/ ]
 keywords: "raggruppa righe, Excel, Aspose.Cells Cloud, REST API, SDK, foglio di lavoro, Excel API"
 description: "Raggruppa righe in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud. Supporta diversi SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) per un'integrazione semplice."
 weight: 60

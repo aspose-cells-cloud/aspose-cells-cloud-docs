@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Управление файлами Excel в облаке — быстрое перемещение папок в облаке"
 linktitle: "Перемещение папки"
 type: docs
-url: /move-folder/
+url: /ru/move-folder/
 keywords: "Aspose.Cells, перемещение папки, облачное хранилище, Excel API"
 description: "Узнайте, как перемещать папки в облачном хранилище Aspose.Cells Cloud с помощью RESTful API перемещения папок. Включает конечную точку, параметры, пример cURL, коды ошибок и примеры SDK для C#, Java, Python и других языков."
 weight: 100

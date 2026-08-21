@@ -3,7 +3,7 @@ title: "Importa immagine in un foglio di lavoro Excel"
 ArticleTitle: "Importa immagine in un foglio di lavoro Excel – Guida all'API Aspose.Cells Cloud"
 second_title: "Documento"
 linktype: "docs"
-url: /import-picture-into-excel-worksheet/
+url: /it/import-picture-into-excel-worksheet/
 aliases:
   - /import-picture-into-worksheet/
   - /import-data/picture/

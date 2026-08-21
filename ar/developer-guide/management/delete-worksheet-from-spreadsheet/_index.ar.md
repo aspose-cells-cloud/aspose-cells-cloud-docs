@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيف تحذف ورقات عمل من ملفات Excel - إزالة الأوراق من ملفات العمل"
 linktitle: "حذف ورقة عمل من جدول بيانات"
 type: docs
-url: /delete-worksheet-from-spreadsheet/
+url: /ar/delete-worksheet-from-spreadsheet/
 keywords: "Aspose Cells، واجهة برمجة تطبيقات حذف ورقة العمل، إزالة ورقة Excel، جدول بيانات سحابي، واجهة برمجة تطبيقات REST"
 description: "تعرّف على كيفية حذف ورقة عمل من ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. يتضمن نقطة النهاية (endpoint)، والمتغيرات المطلوبة، وأمثلة باستخدام cURL، وأمثلة باستخدام مكتبات SDK."
 weight: 100

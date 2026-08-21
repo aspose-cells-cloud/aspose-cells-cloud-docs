@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何将远程电子表格工作表导出为其他格式：分步指南"
 linktitle: "导出工作表"
 type: docs
-url: /export-worksheet-as-format/
+url: /zh/export-worksheet-as-format/
 keywords: "Aspose Cells, 导出工作表, 云 API, PDF, PNG, CSV, Excel 转换"
 description: "通过单次 GET 请求，将存储在 Aspose.Cells Cloud 中的工作表转换为 PDF、PNG、SVG、CSV 或其他格式。包含 C#、Java、Python 等语言的代码示例。"
 weight: 100

@@ -3,7 +3,7 @@ title: "Снять защиту с книги Excel — Aspose.Cells Cloud API"
 second_title: "Документ"
 linktitle: "Снять защиту с файла Excel"
 type: docs
-url: /excel-file-unprotect/
+url: /ru/excel-file-unprotect/
 aliases:
   - /unprotect-excel-workbooks/
   - /workbook/unprotect/

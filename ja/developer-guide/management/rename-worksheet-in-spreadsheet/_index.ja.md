@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Excel のワークシート名を変更する方法 – シート名の変更"
 linktype: "ワークシートの名前を変更する（スプレッドシート）"
 type: docs
-url: /rename-worksheet-in-spreadsheet/
+url: /ja/rename-worksheet-in-spreadsheet/
 keywords: "ワークシートの名前変更, Aspose.Cells Cloud, Excel API, スプレッドシート, SDK, REST API"
 description: "Aspose.Cells Cloud API を使って Excel のワークシート名を簡単に変更します。必要なパラメータの確認、cURL の例、C#、Java、Python などの SDK コードの取得方法をご紹介します。"
 weight: 100

@@ -3,7 +3,7 @@ title: "Hur man hämtar innehåll från ett intervall i ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Hämta"
 type: docs
-url: /ranges/get/
+url: /sv/ranges/get/
 keywords: "Aspose.Cells, Excel, API, hämta, intervall, kalkylark, REST"
 description: "Lär dig hur du hämtar innehåll från ett intervall i ett Excel-ark med Aspose.Cells Cloud REST API. Innehåller begärsyntax och exempelkod."
 weight: 20

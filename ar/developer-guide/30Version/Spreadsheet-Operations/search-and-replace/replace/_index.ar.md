@@ -3,7 +3,7 @@ title: "استبدال نصوص من ملفات Excel"
 second_title: "مستند"
 linktitle: "استبدال دون استخدام التخزين"
 type: docs
-url: /replace/
+url: /ar/replace/
 keywords: "استبدال النصوص في Excel، Aspose.Cells Cloud، REST API، استبدال في جدول البيانات، API، استبدال النصوص في ملف Excel"
 description: "استخدم Aspose.Cells Cloud REST API لاستبدال النصوص الموجودة بقيم جديدة في ملفات Excel. يدعم SDKs لكل من C#، Java، Python، Node.js، PHP، Ruby، Go، و Perl."
 weight: 80

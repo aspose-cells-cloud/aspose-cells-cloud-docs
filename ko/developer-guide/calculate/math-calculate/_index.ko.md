@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "스프레드시트/Excel에서 더하기, 빼기, 곱하기, 나누기 및 백분율 계산"
 linktitle: "수학 계산"
 type: docs
-url: /math-calculate/
+url: /ko/math-calculate/
 keywords: "수학 계산 API, Aspose.Cells Cloud, Excel 계산, 더하기, 빼기, 곱하기, 나누기, 백분율, 대량 Excel 처리, REST API"
 description: "Aspose.Cells Cloud 수학 계산 API를 사용하여 Excel 범위에 대해 더하기, 빼기, 곱하기, 나누기 또는 백분율 연산을 일괄 적용하는 방법을 알아보세요. 요청 형식, 샘플 코드 및 오류 처리 포함."
 weight: 100

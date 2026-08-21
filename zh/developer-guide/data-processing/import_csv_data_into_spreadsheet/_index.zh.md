@@ -3,7 +3,7 @@ title: "将 CSV 数据导入电子表格"
 ArticleTitle: "将 CSV 数据导入电子表格 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktype: "docs"
-url: /cells/import/data/csv
+url: /zh/cells/import/data/csv
 aliases: []
 keywords: "Aspose.Cells, CSV 导入, 电子表格, API"
 description: "使用 Aspose.Cells Cloud API 将 CSV 数据文件导入本地电子表格。"

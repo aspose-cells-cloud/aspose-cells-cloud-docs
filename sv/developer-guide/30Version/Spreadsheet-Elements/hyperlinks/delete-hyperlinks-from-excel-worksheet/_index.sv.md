@@ -1,8 +1,8 @@
 ---
 title: "Rensa hyperlänkar"
 type: docs
-url: /hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /sv/hyperlinks/clear/
+aliases: [  /sv/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, rensa hyperlänkar, ta bort hyperlänkar, REST API, kalkylblad, SDK"
 description: "Lär dig hur du tar bort alla hyperlänkar från ett Excel-kalkylblad med Aspose.Cells Cloud REST API eller någon av de SDK:er som stöds (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl etc.)."
 weight: 40

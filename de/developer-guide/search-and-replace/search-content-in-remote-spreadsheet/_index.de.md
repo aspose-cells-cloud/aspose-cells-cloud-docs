@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Text in Remote Excel-Tabellenkalkulationen suchen – Spezifische Daten finden"
 linktype: "Suchen von Remote-Tabelleninhalten"
 type: docs
-url: /search-content-in-remote-spreadsheet/
+url: /de/search-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells, Excel-Such-API, Cloud-Tabellenkalkulation, Textsuche, REST"
 description: "Suchen Sie nach Text, Zahlen oder Formeln in Excel-Dateien, die in der Cloud-Speicherung gespeichert sind, mithilfe von Aspose.Cells Cloud. Unterstützt Groß-/Kleinschreibung-unabhängige Abfragen, Ordnerauswahl und passwortgeschützte Arbeitsmappen."
 weight: 100

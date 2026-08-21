@@ -2,7 +2,7 @@
 title: "チャートの第2値軸を更新する"
 ArticleTitle: "チャートの第2値軸を更新する – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/second-value-axis/update/
+url: /ja/charts/second-value-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Chart API, 第2値軸, Excel, REST, Cloud SDK"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシート内のチャートの第2値軸を更新します。リクエストの例、レスポンスコード、および前提条件を含みます。"

@@ -2,7 +2,7 @@
 title: "Eliminar todos los comentarios de la hoja de cálculo"
 description: "Elimine todos los comentarios de una hoja de cálculo en un archivo de Excel utilizando la API de Aspose.Cells Cloud. Aprenda sobre el endpoint DELETE, los parámetros requeridos, la autenticación, la solicitud cURL de ejemplo, el formato de respuesta, los códigos de error y ejemplos de SDK."
 keywords: "Aspose, Cells, eliminar comentarios, hoja de cálculo, API, REST, Excel, cloud"
-url: /comments/clear/
+url: /es/comments/clear/
 aliases:
   - /delete-all-comments-in-a-worksheet/
 weight: 50

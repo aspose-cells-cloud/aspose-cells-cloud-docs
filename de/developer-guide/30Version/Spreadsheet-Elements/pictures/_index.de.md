@@ -3,8 +3,8 @@ title: "Arbeiten mit Excel-Bildern"
 second_title: "Dokument"
 linktitle: "Bilder"
 type: docs
-url: /pictures/
-aliases: [/working-with-pictures/]
+url: /de/pictures/
+aliases: [  /de/working-with-pictures/ ]
 keywords: "Excel, Bild, Aspose.Cells Cloud, REST API, Bildverarbeitung, Excel-Bilder"
 description: "Erfahren Sie, wie Sie Bilder in Excel-Arbeitsblättern mithilfe der Aspose.Cells Cloud REST API abrufen, hinzufügen, aktualisieren und löschen. Enthält Codebeispiele für C#, Java, Python und mehr."
 weight: 100

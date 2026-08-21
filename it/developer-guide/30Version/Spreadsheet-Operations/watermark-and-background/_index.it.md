@@ -4,7 +4,7 @@ second_title: "Documento"
 linktype: "Filigrana e sfondo"
 type: docs
 url: /it/watermark-and-background/
-aliases: [ "/export/excel-chart-to-different-formats/", "/workbook/background/" ]
+aliases: [  /it/export/excel-chart-to-different-formats/ , /it/workbook/background/ ]
 keywords: "Aspose.Cells Cloud, Excel, Filigrana, Sfondo, REST API"
 description: "L'API REST Aspose.Cells Cloud consente agli sviluppatori di aggiungere, rimuovere e gestire sfondi e filigrane nei file Excel. I linguaggi supportati includono Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift."
 weight: 20

@@ -3,8 +3,8 @@ title: "Переименование листа Excel"
 second_title: "Документ"
 linktitle: "Переименовать"
 type: docs
-url: /worksheets/rename/
-aliases: [/rename-excel-worksheet/]
+url: /ru/worksheets/rename/
+aliases: [  /ru/rename-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, переименование листа Excel, REST API, SDK для электронных таблиц, переименование листа, облачное хранилище"
 description: "Переименовать лист в книге Excel с использованием REST API Aspose.Cells Cloud. SDK доступны для Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby и Swift."
 weight: 20

@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "批量替换云 Excel 文件中的文本 — 查找与替换 API"
 linktitle: "替换远程电子表格内容"
 type: docs
-url: /replace-content-in-remote-spreadsheet/
+url: /zh/replace-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud、替换内容、远程电子表格、查找与替换 API、云 Excel、批量文本替换"
 description: "使用 Aspose.Cells Cloud 查找与替换 API 批量更新远程 Excel 工作簿中的文本。安全的 HTTPS 端点、OAuth2 身份验证，以及即用型 SDK 示例，便于快速集成。"
 weight: 100

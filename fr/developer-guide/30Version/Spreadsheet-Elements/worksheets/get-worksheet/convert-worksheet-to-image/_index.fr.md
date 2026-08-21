@@ -3,7 +3,7 @@ title: "Convertir une feuille de calcul en PDF, PNG, CSV et plus – Aspose.Cell
 second_title: "Document"
 linktitle: "Convertir une feuille de calcul"
 type: docs
-url: /worksheets/conversion/
+url: /fr/worksheets/conversion/
 aliases:
   - /convert-worksheet-to-image/
   - /worksheets/to-image/

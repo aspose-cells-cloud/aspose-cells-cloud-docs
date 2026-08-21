@@ -3,8 +3,8 @@ title: "Verrouiller des fichiers Excel"
 second_title: "Document"
 linktitle: "Verrouiller des fichiers Excel"
 type: docs
-url: /lock-excel-files/
-aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+url: /fr/lock-excel-files/
+aliases: [  /fr/lock/without-storage/ , /fr/lock/ , /fr/lock/without-using-storage/ ]
 keywords: "Verrouiller, Excel, API, Aspose.Cells, Cloud, REST, Classeur, Feuille de calcul, SDK"
 description: "Découvrez comment verrouiller des classeurs Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut le point de terminaison HTTPS, l’authentification, la requête cURL, le schéma de réponse et des exemples de code SDK pour C#, Java, Python et plus encore."
 ArticleTitle: "Verrouiller des fichiers Excel – Documentation de l’API Aspose.Cells Cloud"

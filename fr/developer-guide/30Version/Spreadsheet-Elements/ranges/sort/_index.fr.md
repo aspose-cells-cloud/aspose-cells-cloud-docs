@@ -4,7 +4,7 @@ second title: "Document"
 linktitle: "Tri"
 type: docs
 keywords: "Tri par plage, Aspose.Cells Cloud, API REST, Classeur, Excel, API"
-url: /ranges/sort/
+url: /fr/ranges/sort/
 description: Fournit une API permettant de trier une plage de cellules au sein d’un classeur à l’aide d’Aspose.Cells Cloud.
 weight: 20
 ---

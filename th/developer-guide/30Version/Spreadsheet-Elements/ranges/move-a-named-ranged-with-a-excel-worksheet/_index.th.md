@@ -3,8 +3,8 @@ title: "ย้ายช่วงที่ตั้งชื่อด้วยส
 second_title: "เอกสาร"
 linktitle: "ย้าย"
 type: docs
-url: /ranges/move/
-aliases: [/move-a-named-range-with-an-excel-worksheet/]
+url: /th/ranges/move/
+aliases: [  /th/move-a-named-range-with-an-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, ย้ายช่วงที่ตั้งชื่อ, สมุดงาน Excel, REST API, ย้ายช่วง, ตัวอย่าง SDK"
 description: "เรียนรู้วิธีย้ายช่วงที่ตั้งชื่อภายในสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API เวอร์ชัน 3.0 พร้อมรายละเอียดปลายทาง (endpoint), การยืนยันตัวตน, ตัวอย่าง และโค้ดตัวอย่าง SDK"
 weight: 20

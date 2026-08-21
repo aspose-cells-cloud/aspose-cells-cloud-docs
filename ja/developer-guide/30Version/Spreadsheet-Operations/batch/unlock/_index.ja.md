@@ -2,7 +2,7 @@
 title: "バッチアンロック"
 second: "ドキュメント"
 type: docs
-url: /batch/unlock
+url: /ja/batch/unlock
 keywords: "バッチアンロック、Aspose.Cells Cloud、Excel、REST API、スプレッドシート、クラウドSDK"
 description: "Aspose.Cells Cloud REST API を使用して複数の Excel ファイルをバッチでアンロックします。C#、Java、Python など複数の言語向けの SDK をサポートしています。"
 weight: 100

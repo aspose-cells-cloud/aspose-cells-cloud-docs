@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API ile Excel Çalışma Kitabını Koruma"
 second_title: "Belge"
 linktype: "İçerik"
 type: docs
-url: /protect-excel-file/
-aliases: [/protect-excel-workbooks/, /workbook/protect/]
+url: /tr/protect-excel-file/
+aliases: [  /tr/protect-excel-workbooks/ , /tr/workbook/protect/ ]
 keywords: "Aspose.Cells, Excel koruma, API, REST, SDK"
 description: "Aspose.Cells Cloud REST API ile bir Excel çalışma kitabını nasıl koruyacağınızı öğrenin. Kimlik doğrulama adımlarını, sorgu ve gövde parametrelerini, cURL isteğini ve C#, Java, PHP, Ruby, Node.js, Python, Perl ve Go için SDK kod örneklerini içerir."
 weight: 30

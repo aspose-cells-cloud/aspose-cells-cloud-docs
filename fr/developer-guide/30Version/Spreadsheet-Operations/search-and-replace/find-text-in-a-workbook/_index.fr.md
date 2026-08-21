@@ -3,8 +3,8 @@ title: "Rechercher du texte dans un classeur Excel"
 second_title: "Document"
 linktitle: "Recherche dans le classeur"
 type: docs
-url: /workbook/find-text/
-aliases: [/find-text-in-a-workbook/]
+url: /fr/workbook/find-text/
+aliases: [  /fr/find-text-in-a-workbook/ ]
 weight: 30
 keywords: "Aspose.Cells, recherche de texte, API Excel, recherche dans un classeur"
 description: "Découvrez comment utiliser l’API Aspose.Cells Cloud pour **rechercher du texte** dans des classeurs Excel (XLS‑X, ODS). Inclut un exemple cURL, des extraits de code SDK et le schéma de réponse. Commencez dès maintenant."

@@ -1,8 +1,8 @@
 ---
 title: "書式条件の追加"
 type: docs
-url: /conditional-formattings/add-format-condition/
-aliases: [/add-a-format-condition/]
+url: /ja/conditional-formattings/add-format-condition/
+aliases: [  /ja/add-a-format-condition/ ]
 keywords: "Aspose.Cells Cloud, 条件付き書式 API, 書式条件の追加, Excel REST API, Cells API"
 description: "Aspose.Cells Cloud REST API（v3.0）を使用して Excel ワークシートに書式条件を追加する方法を学習します。リクエスト構文、パラメータ、安全な cURL の例、SDK スニペットを含みます。"
 ArticleTitle: "書式条件の追加 – Aspose.Cells Cloud API ドキュメント"

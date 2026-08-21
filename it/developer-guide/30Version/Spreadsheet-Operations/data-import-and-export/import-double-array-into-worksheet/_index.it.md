@@ -3,7 +3,7 @@ title: "Importazione di un Array Double in un Foglio di Lavoro Excel"
 second_title: "Documento"
 linktitle: "Importazione di array double"
 type: docs
-url: /import-double-array-into-excel-worksheet/
+url: /it/import-double-array-into-excel-worksheet/
 aliases:
   - /import-double-array-into-worksheet/
   - /import-data/double-array/

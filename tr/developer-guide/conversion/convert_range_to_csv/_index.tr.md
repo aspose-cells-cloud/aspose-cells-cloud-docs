@@ -3,7 +3,7 @@ title: "Aralığı CSV'ye Dönüştür"
 ArticleTitle: "Aralığı CSV'ye Dönüştür – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktype: "docs"
-url: /cells/convert/range/csv
+url: /tr/cells/convert/range/csv
 aliases: []
 keywords: "dönüştür, csv, aralık, Aspose.Cells"
 description: "Yerel bir sürücüdeki bir elektronik tablo aralığını csv dosyasına dönüştürür."

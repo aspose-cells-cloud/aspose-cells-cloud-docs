@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "폴더 생성 – Aspose.Cells Cloud API"
 linktitle: "폴더 생성"
 type: docs
-url: /create-folder/
+url: /ko/create-folder/
 keywords: "Aspose.Cells, Cloud API, 폴더 생성, 저장소 관리, Excel"
 description: "간단한 PUT 요청을 통해 Aspose.Cells Cloud 저장소에 새 폴더를 생성합니다. 요청 형식, 매개변수, 응답 및 오류 처리 방법을 확인하세요."
 weight: 100

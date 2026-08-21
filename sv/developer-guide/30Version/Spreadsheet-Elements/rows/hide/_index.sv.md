@@ -3,8 +3,8 @@ title: "Dölj rader i ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Dölj"
 type: docs
-url: /rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
+url: /sv/rows/hide/
+aliases: [  /sv/hide-rows-in-excel-worksheet/ ]
 keywords: "dölj rader, Aspose.Cells Cloud, Excel API, REST, SDK"
 description: "Lär dig hur du döljer en eller flera rader i ett Excel-ark med Aspose.Cells Cloud REST API. Innehåller cURL-exempel, SDK-utdrag, parametrar, autentisering, svarsdetaljer och felhantering."
 weight: 40

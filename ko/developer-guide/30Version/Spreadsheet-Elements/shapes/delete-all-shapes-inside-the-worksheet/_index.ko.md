@@ -4,8 +4,8 @@ ArticleTitle: "Excel 워크시트에서 모든 도형 삭제하기 – Aspose.Ce
 second_title: "문서"
 linktitle: "지우기"
 type: docs
-url: /shapes/clear/
-aliases: [/delete-all-shapes-inside-the-worksheet/]
+url: /ko/shapes/clear/
+aliases: [  /ko/delete-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 모든 도형 삭제, Excel 워크시트, REST API, SDK, cURL, .NET, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 모든 도형을 삭제합니다. 이 작업은 cURL 및 다양한 SDK(C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift)를 통해 이용할 수 있습니다."
 weight: 40

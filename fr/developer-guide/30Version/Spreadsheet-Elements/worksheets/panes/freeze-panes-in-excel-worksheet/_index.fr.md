@@ -3,8 +3,8 @@ title: "Geler les panes dans une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Geler"
 type: docs
-url: /worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+url: /fr/worksheets/panes/freeze/
+aliases: [  /freeze-panes-in-excel-worksheet/ , /fr/worksheets/freeze-panes/ ]
 keywords: "Aspose.Cells Cloud, Geler les panes, Excel, API REST, Feuille de calcul"
 description: "Découvrez comment geler des lignes et des colonnes dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut la syntaxe des points de terminaison, les paramètres requis, un exemple cURL, des conseils d’authentification, les détails des réponses d’erreur et des exemples de code SDK pour plusieurs langages."
 weight: 190

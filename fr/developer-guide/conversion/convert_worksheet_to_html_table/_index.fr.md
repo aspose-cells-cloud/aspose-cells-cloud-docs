@@ -3,7 +3,7 @@ title: "Convertir une feuille de calcul en table HTML"
 ArticleTitle: "Convertir une feuille de calcul en table HTML – Aspose.Cells Cloud API"
 second_title: "Document"
 linktype: "docs"
-url: /cells/convert/worksheet/html-table
+url: /fr/cells/convert/worksheet/html-table
 aliases: []
 keywords: "Aspose.Cells, ConvertWorksheetToHtmlTable, Table HTML, API"
 description: "Convertit une feuille de calcul d’un fichier de calcul local en fichier de table HTML à l’aide d’Aspose.Cells Cloud."

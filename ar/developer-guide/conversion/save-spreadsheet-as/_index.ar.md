@@ -3,7 +3,7 @@ title: "حفظ جدول البيانات بصيغة أخرى – واجهة بر
 second_title: "وثيقة"
 ArticleTitle: "كيفية حفظ جدول بيانات بصيغة ملف أخرى في مساحة التخزين السحابية: دليل خطوة بخطوة"
 linktype: "docs"
-url: /save-spreadsheet-as/
+url: /ar/save-spreadsheet-as/
 keywords: "Aspose Cells، تحويل جداول البيانات، الحفظ بصيغة أخرى، واجهة برمجة التطبيقات، XLSX إلى PDF، التخزين السحابي، Excel إلى PDF، تصدير CSV، التحويل السحابي"
 description: "تعلم كيفية حفظ جدول بيانات مخزن في Aspose Cloud بصيغة أخرى (مثل XLSX وPDF وCSV وما إلى ذلك) باستخدام واجهة برمجة تطبيقات حفظ جدول البيانات في Aspose.Cells Cloud. يشمل بناء الجملة المطلوبة ومعلماتها ومثالًا باستخدام cURL وأكواد SDK."
 weight: 100

@@ -5,7 +5,7 @@ ArticleTitle: "إدارة الملفات في السحابة لـ Excel – حل
 linktitle: "الملفات والتخزين"
 type: docs
 url: /ar/files-and-storage/
-aliases: [/ar/working-with-files-and-storage-using-aspose-cells-cloud/]
+aliases: [  /ar/working-with-files-and-storage-using-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud، واجهة برمجة تطبيقات تخزين الملفات، رفع ملف Excel، تنزيل ملف Excel، نسخ ملف، نقل ملف، حذف ملف، إدارة المجلدات، واجهة برمجة تطبيقات REST، أمثلة cURL"
 description: "دليل شامل لإدارة ملفات Excel والمجلدات في مساحة التخزين الخاصة بـ Aspose.Cells Cloud. يشمل عمليات الرفع، التنزيل، النسخ، النقل، الحذف وإدارة المجلدات مع أمثلة cURL، المعاملات المطلوبة وملاحظات حول المصادقة."
 weight: 100

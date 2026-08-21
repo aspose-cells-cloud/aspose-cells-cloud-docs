@@ -4,7 +4,7 @@ ArticleTitle: "Преобразование диапазона в PDF – Aspose
 second_title: "Документ"
 linktype: "ConvertRangeToPdf"
 type: docs
-url: /cells/convert/range/pdf
+url: /ru/cells/convert/range/pdf
 aliases: []
 keywords: "Aspose.Cells, преобразование диапазона в PDF, API"
 description: "Преобразует заданный диапазон электронной таблицы в PDF с использованием Aspose.Cells Cloud."

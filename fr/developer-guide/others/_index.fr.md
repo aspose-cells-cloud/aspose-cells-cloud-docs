@@ -4,7 +4,7 @@ linktitle: "Autres fonctionnalités"
 ArticleTitle: "Autres fonctionnalités : Vérification de l'état de santé, Récupération de la clé publique"
 second_title: "Document"
 type: docs
-url: /other-features/
+url: /fr/other-features/
 keywords: "Aspose.Cells, API cloud, vérification de l'état de santé, clé publique, jeton d'accès, Excel, REST"
 description: "Découvrez les autres fonctionnalités d’Aspose.Cells Cloud : le point de terminaison de vérification de l’état de santé du service, la récupération de la clé publique et la génération de jetons afin de sécuriser vos intégrations avec l’API Excel."
 weight: 180

@@ -1,7 +1,7 @@
 ---
 title: "Aplicar formato de texto enriquecido a una celda"
 type: docs
-url: /apply-rich-text-formatting-to-a-cell/
+url: /es/apply-rich-text-formatting-to-a-cell/
 weight: 40
 keywords: "Aspose.Cells, Excel, texto enriquecido, formato de celda, API REST, Aspose.Cells Cloud"
 description: "Aprenda cómo aplicar formato de texto enriquecido a una celda específica de Excel mediante la API REST de Aspose.Cells Cloud. Incluye sintaxis de solicitud, detalles de parámetros, ejemplo con cURL y fragmentos de SDK."

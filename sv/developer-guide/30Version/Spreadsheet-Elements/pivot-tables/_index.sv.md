@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "PivotTabeller"
 type: docs
 url: /sv/pivottables/
-aliases: [/sv/working-with-pivot-tables/]
+aliases: [  /sv/working-with-pivot-tables/ ]
 keywords: "Excel, PivotTable, Aspose.Cells Cloud, API, Kalkylark, Dataanalys, REST API"
 description: "Omfattande guide för att använda Aspose.Cells Cloud REST API:er för att skapa, hämta, uppdatera och ta bort PivotTabeller i Excel-kalkylark. Innehåller SDK-referenser, exempelanrop och versionsnoteringar."
 weight: 100

@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – Unisci intervallo celle"
 second_title: "Documento"
 linktitle: "Unisci"
 type: docs
-url: /ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+url: /it/ranges/merge/
+aliases: [  /it/combines-a-range-of-cells-into-a-single-cell/ ]
 keywords: "Aspose.Cells, unisci celle, Excel API, REST, cloud SDK"
 description: "Unisci un intervallo di celle in una singola cella utilizzando Aspose.Cells Cloud REST API. Scopri il formato della richiesta, i parametri e gli esempi di SDK per C#, Java, Python e altri."
 weight: 20

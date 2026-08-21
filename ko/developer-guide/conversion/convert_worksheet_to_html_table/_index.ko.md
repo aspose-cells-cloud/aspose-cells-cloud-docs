@@ -3,7 +3,7 @@ title: "워크시트를 HTML 테이블로 변환"
 ArticleTitle: "워크시트를 HTML 테이블로 변환 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: /cells/convert/worksheet/html-table
+url: /ko/cells/convert/worksheet/html-table
 aliases: []
 keywords: "Aspose.Cells, ConvertWorksheetToHtmlTable, HTML 테이블, API"
 description: "로컬 드라이브의 스프레드시트 워크시트를 HTML 테이블 파일로 변환합니다(Aspose.Cells Cloud 사용)."

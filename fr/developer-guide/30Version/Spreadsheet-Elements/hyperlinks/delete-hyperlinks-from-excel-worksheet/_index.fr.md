@@ -1,8 +1,8 @@
 ---
 title: "Effacer les liens hypertexte"
 type: docs
-url: /hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /fr/hyperlinks/clear/
+aliases: [  /fr/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, effacer les liens hypertexte, supprimer les liens hypertexte, API REST, feuille de calcul, SDK"
 description: "Découvrez comment supprimer tous les liens hypertexte d'une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud ou de l'un des SDK pris en charge (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl, etc.)."
 weight: 40

@@ -3,8 +3,8 @@ title: "Ocultar filas en una hoja de cálculo de Excel"
 second_title: "Document"
 linktype: "Ocultar"
 type: docs
-url: /rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
+url: /es/rows/hide/
+aliases: [  /es/hide-rows-in-excel-worksheet/ ]
 keywords: "ocultar filas, Aspose.Cells Cloud, API de Excel, REST, SDK"
 description: "Aprenda a ocultar una o varias filas en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye ejemplo con cURL, fragmentos de código de SDK, parámetros, autenticación, detalles de respuesta y manejo de errores."
 weight: 40

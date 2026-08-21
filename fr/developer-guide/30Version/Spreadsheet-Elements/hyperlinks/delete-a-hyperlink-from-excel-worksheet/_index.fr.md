@@ -1,7 +1,7 @@
 ---
 title: "Supprimer un lien hypertexte de feuille de calcul"
 type: docs
-url: /hyperlinks/delete/
+url: /fr/hyperlinks/delete/
 description: "Supprimer un lien hypertexte de feuille de calcul par index à l’aide de l’API Aspose.Cells Cloud. Découvrez les paramètres requis, l’authentification et consultez des exemples de code en C#, Java, Python et plus encore."
 keywords: "Aspose.Cells, Cloud, supprimer lien hypertexte, API Excel, REST, lien hypertexte feuille de calcul"
 ArticleTitle: "Supprimer un lien hypertexte de feuille de calcul – Documentation de l’API Aspose.Cells Cloud"

@@ -3,8 +3,8 @@ title: "Déverrouiller des fichiers Excel"
 second_title: "Document"
 linktitle: "Déverrouiller des fichiers Excel"
 type: docs
-url: /unlock-excel-files/
-aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
+url: /fr/unlock-excel-files/
+aliases: [  /fr/unlock/without-storage/ , /fr/unlock/ , /fr/unlock/without-using-storage/ ]
 keywords: "Déverrouiller Excel, Aspose.Cells Cloud, API REST, Déverrouillage Excel, classeur protégé par mot de passe, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
 description: "L’API REST Aspose.Cells Cloud fournit un point de terminaison pour déverrouiller des fichiers Excel protégés par mot de passe. Des SDK sont disponibles pour de nombreux langages de programmation, notamment Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby et Swift."
 ArticleTitle: "Déverrouiller des fichiers Excel à l’aide de l’API REST Aspose.Cells Cloud"

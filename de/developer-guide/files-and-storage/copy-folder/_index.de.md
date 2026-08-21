@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Folder Copy API – Schnelles Kopieren von Ordnern in
 second_title: "Dokument"
 ArticleTitle: "Cloud-basierte Excel-Dateiverwaltungslösung – Detaillierte Erklärung der Stapelkopierfunktion der Aspose.Cells Copy Folder API"
 linktype: "docs"
-url: /copy-folder/
+url: /de/copy-folder/
 keywords: "Ordner kopieren, Aspose.Cells Cloud, REST API, Cloud-Speicher, Tabellenkalkulationsverwaltung"
 description: "Erfahren Sie, wie Sie Ordner im Aspose.Cells Cloud-Speicher mit einem einzigen REST-Aufruf kopieren. Enthält Endpunkt, Parameter, Beispielanfragen, Fehlercodes und SDK-Beispiele."
 weight: 100

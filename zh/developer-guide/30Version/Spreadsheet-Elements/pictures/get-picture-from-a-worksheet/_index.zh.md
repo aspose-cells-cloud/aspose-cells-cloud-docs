@@ -3,8 +3,8 @@ title: "获取 Excel 工作表中的所有图片"
 second_title: "文档"
 linktitle: "获取全部"
 type: docs
-url: /pictures/get-all/
-aliases: [/get-picture-from-a-worksheet/]
+url: /zh/pictures/get-all/
+aliases: [  /zh/get-picture-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel 工作表, 图片 API, 获取所有图片, REST API, SDK"
 description: "通过 Aspose.Cells Cloud REST API 从 Excel 工作表中检索所有图片对象。"
 ArticleTitle: "获取 Excel 工作表中的所有图片 - Aspose.Cells Cloud API"

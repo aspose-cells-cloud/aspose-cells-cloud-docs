@@ -3,7 +3,7 @@ title: "Ta bort skrivskydd (lösenord) från en Excel-arbetsbok"
 second_title: "Dokument"
 linktitle: "Rensa Excel-filers lösenord"
 type: docs
-url: /clear-excel-files-password/
+url: /sv/clear-excel-files-password/
 aliases:
   [
     /clear-modify-password-of-excel-workbooks/,

@@ -3,7 +3,7 @@ title: "Attività"
 second_title: "Documento"
 type: docs
 url: /it/tasks/
-aliases: [/it/working-with-tasks/]
+aliases: [  /it/working-with-tasks/ ]
 keywords: "Aspose Cells, API Cloud, attività Excel, attività di conversione, attività ImportData, SmartMarker, SaveResult, API REST, automazione fogli di calcolo"
 description: "Esplora l'intero set di API delle attività Aspose.Cells Cloud: Convert, ImportData, SaveResult, SmartMarker e altro ancora. Scopri come utilizzarle, i parametri e gli esempi di codice per l'automazione Excel."
 weight: 100

@@ -3,7 +3,7 @@ title: "Вычислить все формулы в рабочей книге Ex
 second_title: "Документ"
 linktitle: "Вычислить"
 type: docs
-url: /calculate-all-formulas-on-an-excel-file/
+url: /ru/calculate-all-formulas-on-an-excel-file/
 aliases:
   [/calculate-all-formulas-in-a-workbook/, /workbook/calculate-all-formulas/]
 keywords: "Aspose.Cells, вычисление формул, Excel API, облачный SDK"

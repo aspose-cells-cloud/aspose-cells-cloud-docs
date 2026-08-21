@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Sort"
 type: docs
 url: /es/list-objects/sort-data/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
+aliases: [  /es/get-a-list-object-or-table-inside-the-worksheet/ , /es/tables/sort-data/ ]
 keywords: "Aspose.Cells Cloud, Excel, ListObject, Ordenar datos, API REST, Hoja de cálculo"
 description: "Aprenda cómo ordenar los datos de un ListObject (tabla) en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye el endpoint, los parámetros, una solicitud de ejemplo con cURL y ejemplos de SDK."
 weight: 40

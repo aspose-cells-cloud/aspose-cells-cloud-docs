@@ -3,8 +3,8 @@ title: "Découper un classeur Excel en plusieurs fichiers"
 ArticleTitle: "Comment découper un classeur Excel en plusieurs fichiers à l'aide de l'API Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /split-multi-excel-files/
-aliases: [/split/multi-files/]
+url: /fr/split-multi-excel-files/
+aliases: [  /fr/split/multi-files/ ]
 keywords: "Excel, Aspose.Cells Cloud, API REST, découper un classeur, plusieurs fichiers, JPEG, PNG, PDF, CSV, JSON"
 description: "L'API REST Aspose.Cells Cloud permet de découper un classeur Excel en plusieurs fichiers dans divers formats. Cette documentation fournit les paramètres de requête, un exemple cURL et des exemples de code SDK pour les langages C#, Java, PHP, Ruby, Node.js, Python, Perl et Go."
 weight: 130

@@ -3,7 +3,7 @@ title: "테이블 언피벗"
 ArticleTitle: "테이블 언피벗 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: /cells/unpivot/table
+url: /ko/cells/unpivot/table
 aliases: []
 keywords: "Aspose.Cells, 언피벗, 변환"
 description: "스프레드시트에서 행과 열을 전환합니다."

@@ -4,7 +4,7 @@ ArticleTitle: "Hämta kalkylblad med lokal kalkylark – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktitle: "Hämta kalkylblad med lokal kalkylark"
 type: docs
-url: /cells/spreadsheet/worksheets
+url: /sv/cells/spreadsheet/worksheets
 aliases: []
 keywords: "Aspose.Cells, Kalkylblad, Lokalt kalkylark, API"
 description: "Hämtar en komplett lista över kalkylblad från det aktuella aktiva lokala kalkylarket."

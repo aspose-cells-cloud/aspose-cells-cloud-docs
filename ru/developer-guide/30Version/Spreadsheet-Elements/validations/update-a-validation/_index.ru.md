@@ -3,7 +3,7 @@ title: "Обновление проверки данных на листе Excel
 second_title: "Документ"
 linktitle: "Обновление"
 type: docs
-url: /validations/update/
+url: /ru/validations/update/
 keywords: "Aspose.Cells Cloud, обновление проверки данных Excel, REST API, проверка данных на листе, Excel API"
 description: "Как обновить проверку данных на листе Excel с помощью REST API Aspose.Cells Cloud, включая примеры cURL и фрагменты кода SDK для различных языков программирования."
 weight: 10

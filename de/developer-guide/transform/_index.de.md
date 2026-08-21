@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Tabellenkalkulation transformieren: Leere Zeilen, Spalten und Arbeitsblätter löschen sowie Bereiche tauschen"
 linktitle: "Transformieren"
 type: docs
-url: /transform/
+url: /de/transform/
 keywords: "Aspose, Cells, API, leere Zeilen löschen, leere Spalten löschen, leere Arbeitsblätter löschen, Bereich tauschen, Tabellenkalkulation bereinigen"
 description: "Verwenden Sie Aspose.Cells Cloud APIs, um leere Zeilen, Spalten und Arbeitsblätter zu löschen sowie Excel-Bereiche auszutauschen. Schnelle, cloudbasierte Datenbereinigung für Automatisierungszwecke."
 weight: 40

@@ -3,8 +3,8 @@ title: "Excel çalışma sayfalarıyla çalışma."
 second_title: "Döküman"
 linktitle: "Çalışma Sayfaları"
 type: docs
-url: /worksheets/
-aliases: [/working-with-worksheets/]
+url: /tr/worksheets/
+aliases: [  /tr/working-with-worksheets/ ]
 keywords: "Excel çalışma sayfası, Aspose.Cells Cloud, REST API, elektronik tablo, çalışma kitaplığı, veri manipülasyonu, Excel otomasyonu"
 description: "Aspose.Cells Cloud REST API, Excel çalışma kitaplığındaki çalışma sayfalarıyla çalışmanızı sağlar. SDK, Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby ve Swift dahil olmak üzere birden fazla programlama dilini destekler."
 weight: 100

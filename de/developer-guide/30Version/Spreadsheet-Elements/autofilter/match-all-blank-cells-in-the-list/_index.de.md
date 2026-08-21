@@ -3,8 +3,8 @@ title: "Alle leeren Zellen in einem Excel-Arbeitsblatt matchen"
 ArticleTitle: "Alle leeren Zellen in einem Excel-Arbeitsblatt matchen – Aspose.Cells Cloud API-Anleitung"
 second_title: "Dokument"
 linktype: "docs"
-url: /autofilter/match-all-blank/
-aliases: [/match-all-blank-cells-in-the-list/]
+url: /de/autofilter/match-all-blank/
+aliases: [  /de/match-all-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells, leere Zellen, AutoFilter, REST API, Excel"
 description: "Erfahren Sie, wie Sie die Aspose.Cells Cloud REST API verwenden, um alle leeren Zellen in einem Excel-Arbeitsblatt zu filtern und zu matchen. Enthält Endpunkt, Parameter, Authentifizierungsschritte, cURL-Beispiel und SDK-Snippets für C#, Java, Python und mehr."
 weight: 100

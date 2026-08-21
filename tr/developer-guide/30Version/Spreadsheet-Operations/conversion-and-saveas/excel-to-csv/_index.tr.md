@@ -3,7 +3,7 @@ title: "Excel'den CSV'ye"
 second_title: "Belge"
 linktitle: "Excel'den CSV'ye"
 type: docs
-url: convert-excel-file-to-CSV-file/
+url: /trconvert-excel-file-to-CSV-file/
 aliases:
   - /convert-excel-file-to-CSV-in-cloud/
   - /convert/excel-to-csv/

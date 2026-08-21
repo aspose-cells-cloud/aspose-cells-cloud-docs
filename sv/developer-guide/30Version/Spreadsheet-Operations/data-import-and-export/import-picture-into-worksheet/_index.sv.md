@@ -4,7 +4,7 @@ ArticleTitle: "Importera bild till Excel-ark – Aspose.Cells Cloud API-guide"
 second_title: "Dokument"
 linktitle: "Importera bild"
 type: docs
-url: /import-picture-into-excel-worksheet/
+url: /sv/import-picture-into-excel-worksheet/
 aliases:
   - /import-picture-into-worksheet/
   - /import-data/picture/

@@ -3,8 +3,8 @@ title: "Excelワークシートの行を非表示にする"
 second_title: "Document"
 linktitle: "Hide"
 type: docs
-url: /rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
+url: /ja/rows/hide/
+aliases: [  /ja/hide-rows-in-excel-worksheet/ ]
 keywords: "行を非表示にする, Aspose.Cells Cloud, Excel API, REST, SDK"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートの1行または複数行を非表示にする方法を学びます。cURL の例、SDK スニペット、パラメータ、認証、レスポンス詳細、エラーハンドリングを含みます。"
 weight: 40

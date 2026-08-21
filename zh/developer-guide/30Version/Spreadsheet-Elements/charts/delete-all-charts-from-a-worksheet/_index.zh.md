@@ -1,8 +1,8 @@
 ---
 title: "从工作表中删除所有图表"
 type: docs
-url: /charts/clear/
-aliases: [/delete-all-charts-from-a-worksheet/]
+url: /zh/charts/clear/
+aliases: [  /zh/delete-all-charts-from-a-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells, 云, 删除, 所有图表, 工作表, REST API, DELETE, SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）删除工作表中的所有图表。内容包括端点、参数、cURL 示例、SDK 代码片段、认证步骤和错误处理。"

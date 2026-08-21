@@ -4,7 +4,7 @@ second_title: "문서"
 linktype: Delete
 type: docs
 url: /ko/pivot-tables/delete/
-aliases: [/ko/delete-worksheet-pivot-table-by-index/]
+aliases: [  /ko/delete-worksheet-pivot-table-by-index/ ]
 keywords: "Aspose.Cells, 피벗 테이블, 삭제, Excel, REST API"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 Excel 워크시트에서 피벗 테이블을 삭제합니다. 요청 형식, cURL 예제, 오류 코드, C#, Java, Python, Node.js용 SDK 스니펫 포함."
 weight: 70

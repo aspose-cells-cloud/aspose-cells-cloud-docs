@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Riga"
 type: docs
 url: /it/worksheets/autofit/row/
-aliases: [/autofit-single-row-of-worksheet/]
+aliases: [  /it/autofit-single-row-of-worksheet/ ]
 description: "Scopri come utilizzare l'API REST di Aspose.Cells Cloud per eseguire l'adattamento automatico di una riga in un foglio di calcolo Excel. Include endpoint, parametri, autenticazione, gestione degli errori, richiesta cURL ed esempi di SDK."
 keywords: "adattamento automatico riga, Aspose.Cells Cloud, API Excel, REST, foglio di calcolo, SDK, foglio elettronico, API cloud"
 weight: 30

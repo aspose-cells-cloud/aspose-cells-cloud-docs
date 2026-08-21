@@ -1,7 +1,7 @@
 ---
 title: "차트 두 번째 값 축 가져오기"
 type: docs
-url: /charts/second-value-axis/get/
+url: /ko/charts/second-value-axis/get/
 weight: 60
 keywords: Aspose.Cells, 차트 두 번째 값 축, Excel, REST API, 클라우드, API, Excel 차트 축
 description: Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 특정 차트에서 두 번째 값 축을 검색합니다.

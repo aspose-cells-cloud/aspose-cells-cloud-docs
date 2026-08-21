@@ -3,8 +3,8 @@ title: "すべてのワークシートを取得する"
 second_title: "Document"
 linktitle: "すべて"
 type: docs
-url: /worksheets/get-all/
-aliases: [/get-worksheet-count/]
+url: /ja/worksheets/get-all/
+aliases: [  /ja/get-worksheet-count/ ]
 keywords: "Aspose.Cells, Cloud API, Get Worksheets, Excel, REST, SDK"
 description: "Aspose.Cells Cloud REST API（v3.0）を使用して、Excelワークブック内のワークシートのリストを取得します。cURLの例、SDKスニペット、およびレスポンス形式を含みます。"
 weight: 10

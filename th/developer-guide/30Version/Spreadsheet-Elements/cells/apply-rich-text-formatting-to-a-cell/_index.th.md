@@ -1,7 +1,7 @@
 ---
 title: "ใช้รูปแบบข้อความแบบมีคุณภาพสูงกับเซลล์"
 type: docs
-url: /apply-rich-text-formatting-to-a-cell/
+url: /th/apply-rich-text-formatting-to-a-cell/
 weight: 40
 keywords: "Aspose.Cells, Excel, rich text, cell formatting, REST API, Aspose.Cells Cloud"
 description: "เรียนรู้วิธีใช้ REST API ของ Aspose.Cells Cloud ในการใช้รูปแบบข้อความแบบมีคุณภาพสูงกับเซลล์ Excel ที่ระบุ ประกอบด้วยไวยากรณ์คำขอ รายละเอียดพารามิเตอร์ ตัวอย่าง cURL และตัวอย่างโค้ด SDK"

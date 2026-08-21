@@ -1,8 +1,8 @@
 ---
 title: "Преобразование диаграммы Excel в изображение – REST API Aspose.Cells Cloud"
 type: docs
-url: /charts/to-image/
-aliases: [/convert-charts-to-image/]
+url: /ru/charts/to-image/
+aliases: [  /ru/convert-charts-to-image/ ]
 weight: 50
 keywords: "Aspose.Cells Cloud, диаграмма в изображение, преобразование диаграммы Excel, REST API, формат изображения, PNG, JPEG, BMP, TIFF, GIF"
 description: "Узнайте, как преобразовать объекты диаграмм Excel в изображения форматов PNG, JPEG, BMP, TIFF или GIF с помощью REST API Aspose.Cells Cloud. Включает подробности эндпоинта, параметры, пример cURL, фрагменты SDK, пример ответа и обработку ошибок."

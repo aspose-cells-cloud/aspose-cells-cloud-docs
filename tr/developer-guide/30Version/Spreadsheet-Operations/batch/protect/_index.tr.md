@@ -2,7 +2,7 @@
 title: "Excel Dosyalarını Toplu Olarak Korumalı Hale Getir"
 second_title: "Belge"
 type: docs
-url: /batch/protect
+url: /tr/batch/protect
 keywords: "Excel Dosyalarını Toplu Olarak Korumalı Hale Getir, Aspose Cells Cloud, REST API, Excel koruması, toplu koruma"
 description: "Aspose.Cells Cloud REST API’sini kullanarak birden fazla Excel dosyasını toplu olarak nasıl koruyabileceğinizi öğrenin. İstek detaylarını, cURL örneğini ve çeşitli programlama dilleri için SDK kod örneklerini içerir."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "列"
 type: docs
 url: /zh/columns/
-aliases: [/zh/working-with-columns/]
+aliases: [  /zh/working-with-columns/ ]
 keywords: "Excel, 列, Aspose.Cells Cloud, API, 电子表格, 工作表, REST API"
 description: "Aspose.Cells Cloud API 对 Excel 工作表列进行操作的详细指南，涵盖获取、添加、复制、隐藏、取消隐藏、分组、取消分组和删除列等功能。"
 weight: 100

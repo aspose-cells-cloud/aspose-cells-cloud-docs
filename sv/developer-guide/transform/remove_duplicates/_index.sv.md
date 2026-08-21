@@ -4,7 +4,7 @@ ArticleTitle: "Ta bort dubbletter – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Ta bort dubbletter"
 type: docs
-url: /cells/remove/duplicates
+url: /sv/cells/remove/duplicates
 aliases: []
 keywords: "Aspose.Cells, Ta bort dubbletter, API"
 description: "Tar bort dubblettvärden i ett kalkylblad, ett område eller en tabell."

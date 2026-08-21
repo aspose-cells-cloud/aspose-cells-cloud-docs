@@ -4,8 +4,8 @@ ArticleTitle: "Exportar una página de hoja de cálculo – Referencia de la API
 second_title: "Documento"
 linktitle: "Página"
 type: docs
-url: /worksheets/page-to-different-formats/
-aliases: [/get-worksheet-for-page-index/]
+url: /es/worksheets/page-to-different-formats/
+aliases: [  /es/get-worksheet-for-page-index/ ]
 keywords: "Aspose.Cells Cloud, exportación de página de hoja de cálculo, PDF, PNG, CSV, API REST, autenticación JWT, formatos de archivo"
 description: "Aprenda cómo exportar una página específica de una hoja de cálculo a PDF, PNG, CSV y otros formatos mediante la API REST de Aspose.Cells Cloud. Incluye solicitud cURL, guía de parámetros y ejemplos de SDK para múltiples lenguajes."
 weight: 240

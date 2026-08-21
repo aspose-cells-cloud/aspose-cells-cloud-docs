@@ -1,8 +1,8 @@
 ---
 title: "Ajouter un lien hypertexte à une feuille de calcul"
 type: docs
-url: /hyperlinks/add/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /fr/hyperlinks/add/
+aliases: [  /fr/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, ajouter un lien hypertexte, API REST Excel, SDK cloud"
 description: "Découvrez comment ajouter un lien hypertexte à une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud v3.0. Inclut l’endpoint, un guide complet des paramètres, un exemple cURL et des extraits de code SDK pour C#, Java, Python, et plus encore."
 weight: 20

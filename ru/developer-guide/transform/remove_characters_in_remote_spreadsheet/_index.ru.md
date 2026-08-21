@@ -3,7 +3,7 @@ title: "Удаление символов из удалённой электро
 ArticleTitle: "Удаление символов из удалённой электронной таблицы – Aspose.Cells Cloud API"
 second_title: "Документ"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
+url: /ru/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
 aliases: []
 keywords: "Aspose.Cells, удаление символов, обработка текста"
 description: "Удаляет заданные пользователем символы, предопределённые наборы символов или любую подстроку из каждой ячейки выбранного диапазона, сохраняя при этом формулы, форматирование и проверку данных для удалённой электронной таблицы."

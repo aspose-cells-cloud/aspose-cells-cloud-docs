@@ -2,7 +2,7 @@
 title: "Cómo fusionar múltiples archivos de hojas de cálculo con Aspose.Cells Cloud"
 linktitle: "Cómo fusionar múltiples archivos de hojas de cálculo"
 type: docs
-url: /how-to-merge-multiple-files
+url: /es/how-to-merge-multiple-files
 description: "Cómo fusionar múltiples archivos de hojas de cálculo con Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, REST API, hoja de cálculo, PDF, CSV, JSON, Markdown, cómo fusionar múltiples archivos mediante Aspose.Cells Cloud

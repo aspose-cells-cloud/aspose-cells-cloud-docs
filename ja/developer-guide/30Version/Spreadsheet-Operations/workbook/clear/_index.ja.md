@@ -3,8 +3,8 @@ title: "Excel ファイル内のオブジェクトをクリアする"
 second_title: "Document"
 linktitle: "Clear"
 type: docs
-url: /clear/
-aliases: [/clearobjects/]
+url: /ja/clear/
+aliases: [  /ja/clearobjects/ ]
 keywords: "Aspose.Cells, Excel, Clear Objects, REST API, Cloud SDK, コメントの削除, 図表の削除"
 description: "Aspose.Cells Cloud REST API を使用して、Excel ワークブックからコメント、図表、図形などのオブジェクトを削除します。複数の SDK をサポートし、クリーン化されたファイルを Base64 形式で返します。"
 weight: 39

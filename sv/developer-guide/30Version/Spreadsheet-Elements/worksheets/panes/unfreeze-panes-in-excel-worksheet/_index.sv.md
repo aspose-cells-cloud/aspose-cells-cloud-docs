@@ -3,7 +3,7 @@ title: "Avfrys rutor i ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Avfrys"
 type: docs
-url: /worksheets/panes/unfreeze/
+url: /sv/worksheets/panes/unfreeze/
 aliases:
   - /unfreeze-panes-in-excel-worksheet/
   - /worksheets/unfreeze-panes/

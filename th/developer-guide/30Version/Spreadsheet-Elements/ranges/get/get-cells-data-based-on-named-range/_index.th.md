@@ -3,8 +3,8 @@ title: "ดึงข้อมูลเซลล์จากช่วงที่
 second_title: "เอกสาร"
 linktype: "ค่า"
 type: docs
-url: /ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
+url: /th/ranges/get/values/
+aliases: [  /th/get-cells-data-based-on-named-range/ ]
 keywords: "Aspose.Cells, คลาวด์, REST API, Excel, ช่วงที่ตั้งชื่อไว้, ค่าเซลล์, ชีตงาน"
 description: "ดึงค่าเซลล์จากช่วงที่ตั้งชื่อไว้ในชีตงาน Excel โดยใช้ Aspose.Cells Cloud REST API บริการนี้สามารถใช้งานได้ผ่าน SDK หลากหลายภาษา (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) และรองรับแพลตฟอร์มการพัฒนาที่หลากหลาย"
 weight: 20

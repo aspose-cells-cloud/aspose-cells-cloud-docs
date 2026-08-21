@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Villkorsstyrd formatering"
 type: docs
 url: /sv/conditional-formattings/
-aliases: [/sv/working-with-conditional-formatting/]
+aliases: [  /sv/working-with-conditional-formatting/ ]
 keywords: "Excel, villkorsstyrd formatering, Aspose.Cells Cloud, API"
 description: "Aspose.Cells Cloud API för Excel tillhandahåller slutpunkter för att hämta, lägga till, ändra och ta bort regler för villkorsstyrd formatering, vilket möjliggör dynamisk visuell analys av data i kalkylblad."
 weight: 100

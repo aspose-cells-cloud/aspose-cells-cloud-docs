@@ -1,7 +1,7 @@
 ---
 title: "Grafik Kategori Ekseni Al"
 type: docs
-url: /charts/category-axis/get/
+url: /tr/charts/category-axis/get/
 weight: 60
 keywords: "Aspose.Cells, Grafik Kategori Ekseni, Excel, REST API, Bulut Depolama, OAuth2, API Dokümantasyonu"
 description: "Aspose.Cells Cloud REST API kullanılarak bir Excel çalışma sayfasındaki bir grafikin kategori eksenini getirir."

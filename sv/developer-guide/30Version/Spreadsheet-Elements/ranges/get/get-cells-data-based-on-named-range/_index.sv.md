@@ -3,8 +3,8 @@ title: "Hämta celldata baserat på namngivet intervall"
 second_title: "Document"
 linktitle: "Värden"
 type: docs
-url: /ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
+url: /sv/ranges/get/values/
+aliases: [  /sv/get-cells-data-based-on-named-range/ ]
 keywords: "Aspose.Cells, moln, REST API, Excel, namngivet intervall, cellvärden, kalkylblad"
 description: "Hämta cellvärden från ett namngivet intervall i ett Excel-kalkylblad med Aspose.Cells Cloud REST API. Tjänsten är tillgänglig via flera SDK:er (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) och fungerar över ett brett spektrum av utvecklingsplattformar."
 weight: 20

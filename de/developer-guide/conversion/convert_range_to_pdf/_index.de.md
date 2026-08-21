@@ -3,7 +3,7 @@ title: "ConvertRangeToPdf"
 ArticleTitle: "Bereich in PDF konvertieren – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "docs"
-url: /cells/convert/range/pdf
+url: /de/cells/convert/range/pdf
 aliases: []
 keywords: "Aspose.Cells, Bereich in PDF konvertieren, API"
 description: "Konvertiert einen angegebenen Bereich einer Tabellendatei in PDF mithilfe von Aspose.Cells Cloud."

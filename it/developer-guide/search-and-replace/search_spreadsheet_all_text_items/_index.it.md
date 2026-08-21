@@ -4,7 +4,7 @@ ArticleTitle: "Cerca Tutti gli Elementi di Testo nel Foglio di Calcolo – Aspos
 second_title: "Documento"
 linktitle: "Cerca Tutti gli Elementi di Testo nel Foglio di Calcolo"
 type: docs
-url: /cells/search/content/all-textitems
+url: /it/cells/search/content/all-textitems
 aliases: []
 keywords: "Aspose.Cells, Cerca, Elementi di Testo, API"
 description: "Cerca tutti gli elementi di testo all'interno di un file di foglio di calcolo utilizzando l'API Aspose.Cells Cloud."

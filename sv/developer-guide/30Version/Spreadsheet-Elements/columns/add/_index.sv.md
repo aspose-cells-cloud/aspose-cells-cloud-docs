@@ -3,7 +3,7 @@ title: "Lägg till en tom kolumn i ett Excel-arbetsblad - Aspose.Cells Cloud API
 second_title: "Dokument"
 linktitle: "Lägg till"
 type: docs
-url: /columns/add/
+url: /sv/columns/add/
 aliases:
   - /add-an-empty-column-in-an-excel-worksheet/
   - /add-an-empty-column-in-a-worksheet/

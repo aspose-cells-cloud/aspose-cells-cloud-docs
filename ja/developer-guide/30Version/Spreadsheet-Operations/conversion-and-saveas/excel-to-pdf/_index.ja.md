@@ -3,8 +3,8 @@ title: "Excel を PDF に変換 – Aspose.Cells Cloud API"
 ArticleTitle: "Excel を PDF に変換 – Aspose.Cells Cloud API"
 second_title: "ドキュメント"
 linktype: "docs"
-url: /convert-excel-file-to-pdf-file/
-aliases: [/convert-excel-file-to-pdf-in-cloud/, /convert/excel-to-pdf/]
+url: /ja/convert-excel-file-to-pdf-file/
+aliases: [  /ja/convert-excel-file-to-pdf-in-cloud/ , /ja/convert/excel-to-pdf/ ]
 keywords: "Aspose, Cells, Excel, PDF, 変換, Cloud API"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークブックを PDF に変換する方法を学びます。cURL、SDK サンプル（C#、Java、Python）および認証ガイドを含みます。"
 weight: 80

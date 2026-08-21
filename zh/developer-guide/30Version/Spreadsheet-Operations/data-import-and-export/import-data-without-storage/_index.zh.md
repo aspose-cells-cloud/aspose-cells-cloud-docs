@@ -3,8 +3,8 @@ title: "无需使用存储导入数据 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "无需存储导入数据"
 type: docs
-url: /import/without-using-storage/
-aliases: [/import-data-in-excel-worksheet-without-using-storage/]
+url: /zh/import/without-using-storage/
+aliases: [  /zh/import-data-in-excel-worksheet-without-using-storage/ ]
 keywords: "Aspose.Cells, 云 API, 无需存储导入数据, Excel 导入 API, REST 导入"
 description: "了解如何使用 Aspose.Cells Cloud API 将数据导入 Excel 工作簿而无需使用存储。包含请求格式、参数、cURL 示例、SDK 代码及错误处理。"
 weight: 10

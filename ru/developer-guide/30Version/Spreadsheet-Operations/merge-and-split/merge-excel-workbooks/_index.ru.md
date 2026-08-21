@@ -3,8 +3,8 @@ title: "Объединение рабочей книги Excel в другую �
 second_title: "Документ"
 linktitle: "Объединение рабочей книги Excel в другую рабочую книгу"
 type: docs
-url: /merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
+url: /ru/merge-an-excel-file-into-the-excel-file/
+aliases: [  /ru/merge-excel-workbooks/ , /ru/workbook/merge/ ]
 keywords: "объединение Excel, Aspose.Cells Cloud, API рабочей книги, REST API, объединение электронных таблиц, облачный SDK, аутентификация, mergeWith, пример cURL"
 description: "Пошаговое руководство по объединению одной рабочей книги Excel в другую с использованием REST API Aspose.Cells Cloud (версия 3.0). Включает аутентификацию, обязательный параметр mergeWith, пример cURL и фрагменты кода SDK."
 ArticleTitle: "Объединение рабочей книги Excel в другую рабочую книгу с использованием API Aspose.Cells Cloud"

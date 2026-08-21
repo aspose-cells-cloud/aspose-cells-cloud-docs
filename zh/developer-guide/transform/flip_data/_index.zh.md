@@ -4,7 +4,7 @@ ArticleTitle: "FlipData – Aspose.Cells Cloud"
 second_title: "文档"
 linktitle: "FlipData"
 type: docs
-url: /cells/flip
+url: /zh/cells/flip
 aliases: []
 keywords: "FlipData, 转置, Aspose.Cells"
 description: "对电子表格文件中指定的数据范围进行转置操作。"

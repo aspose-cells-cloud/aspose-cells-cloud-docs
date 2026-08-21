@@ -1,8 +1,8 @@
 ---
 title: "Obtener el título de un gráfico desde una hoja de cálculo"
 type: docs
-url: /charts/title/get/
-aliases: [/get-chart-title-from-a-worksheet/]
+url: /es/charts/title/get/
+aliases: [  /es/get-chart-title-from-a-worksheet/ ]
 weight: 120
 keywords:
   - "Aspose.Cells Cloud"

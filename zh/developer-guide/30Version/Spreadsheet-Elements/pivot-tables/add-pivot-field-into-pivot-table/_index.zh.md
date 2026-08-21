@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "添加数据透视字段"
 type: docs
 url: /zh/pivot-tables/add-pivot-field/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /zh/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, 数据透视表, 添加数据透视字段, REST API, SDK"
 description: "使用 Aspose.Cells Cloud REST API 向现有数据透视表添加数据透视字段。包含请求详情、cURL 示例和 SDK 代码片段。"
 weight: 40

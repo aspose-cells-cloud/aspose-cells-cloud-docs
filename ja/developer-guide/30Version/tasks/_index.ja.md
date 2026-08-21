@@ -2,8 +2,8 @@
 title: "タスク"
 second_title: "ドキュメント"
 type: docs
-url: /tasks/ja/
-aliases: [/ja/working-with-tasks/]
+url: /ja/tasks/ja/
+aliases: [  /ja/working-with-tasks/ ]
 keywords: "Aspose Cells, クラウドAPI, Excel タスク, 変換タスク, ImportData タスク, SmartMarker, SaveResult, REST API, スプレッドシート自動化"
 description: "Aspose.Cells Cloud タスク API の全機能を探索：変換、ImportData、SaveResult、SmartMarker など。Excel 自動化のための使用方法、パラメータ、コード例を学びます。"
 weight: 100

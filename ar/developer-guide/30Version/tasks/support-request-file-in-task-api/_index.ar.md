@@ -3,7 +3,7 @@ title: "ملف طلب الدعم في واجهة برمجة تطبيقات ال�
 second_title: "وثيقة"
 type: docs
 url: /ar/tasks/support-request-file/
-aliases: [/ar/support-request-file-in-task-api/]
+aliases: [  /ar/support-request-file-in-task-api/ ]
 keywords: "Aspose.Cells, واجهة برمجة تطبيقات REST, Excel, السحابة"
 description: "تتيح واجهة برمجة تطبيقات Aspose.Cells Cloud معالجة ملفات الطلبات القائمة على المهام لملفات عمل Excel."
 weight: 10

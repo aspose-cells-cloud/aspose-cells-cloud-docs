@@ -3,8 +3,8 @@ title: "Listobjekt exportieren"
 second_title: "Dokument"
 linktitle: "Listobjekt"
 type: docs
-url: /export-excel-listobject-to-different-formats/
-aliases: [/export/excel-listobject-to-different-formats/]
+url: /de/export-excel-listobject-to-different-formats/
+aliases: [  /de/export/excel-listobject-to-different-formats/ ]
 keywords: "Listobjekt exportieren, Excel-Listobjekt, Aspose.Cells Cloud, REST-API, PDF, CSV, JSON, XLSX, ODS, PNG, TIFF, SDKs"
 description: "Die Aspose.Cells Cloud REST-API ermöglicht den Export von Excel-Listobjekten in eine Vielzahl von Dateiformaten. SDKs sind für viele Programmiersprachen verfügbar, darunter C#, Java, Python, Node.js, Go, PHP, Ruby, Perl und Swift."
 weight: 20

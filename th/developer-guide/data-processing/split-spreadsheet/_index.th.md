@@ -4,7 +4,7 @@ second title: "เอกสาร"
 ArticleTitle: "เครื่องมือแยกไฟล์ Excel – แบ่งสเปรดชีตโลคัลเป็นไฟล์หลายไฟล์ในรูปแบบกว่า 30 รูปแบบ"
 linktitle: "แยกสเปรดชีต"
 type: docs
-url: /split-spreadsheet/
+url: /th/split-spreadsheet/
 keywords: "แยก, excel, aspose cells, spreadsheet API, ส่งออก pdf, csv, json"
 description: "แยกสมุดงาน Excel แบบโลคัลเป็นไฟล์แยกต่างหากโดยใช้ Aspose.Cells Cloud API สามารถส่งออกเป็นรูปแบบกว่า 30 รูปแบบ (PDF, CSV, JSON, XLSX, HTML) โดยไม่ต้องอัปโหลดไปยังคลาวด์"
 weight: 100

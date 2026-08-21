@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Comentarios"
 type: docs
 url: /es/comments/
-aliases: [/es/working-with-comments/]
+aliases: [  /es/working-with-comments/ ]
 keywords: "Aspose.Cells Cloud, API de comentarios de Excel, comentarios de hojas de cálculo, API REST"
 description: "Aprenda cómo agregar, recuperar, actualizar y eliminar comentarios de Excel mediante la API REST de Aspose.Cells Cloud v3.0, con ejemplos de código, requisitos previos y manejo de errores."
 weight: 100

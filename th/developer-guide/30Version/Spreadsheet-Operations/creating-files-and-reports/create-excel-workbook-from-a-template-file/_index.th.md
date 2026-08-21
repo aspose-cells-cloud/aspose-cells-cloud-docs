@@ -3,7 +3,7 @@ title: "วิธีการสร้างสมุดงาน Excel ด้�
 second_title: "เอกสาร"
 linktitle: "ไฟล์เทมเพลต"
 type: docs
-url: /create-an-excel-file-with-template-file/
+url: /th/create-an-excel-file-with-template-file/
 aliases:
   - /create-excel-workbook-from-a-template-file/
   - /workbook/new-from-a-template-file/

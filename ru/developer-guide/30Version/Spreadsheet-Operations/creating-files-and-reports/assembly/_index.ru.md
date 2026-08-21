@@ -3,8 +3,8 @@ title: "Сбор данных для создания отчёта в Excel"
 second_title: "Документ"
 linktype: "Сбор данных"
 type: docs
-url: /assembly-data-for-the-creation-of-an-excel-report/
-aliases: [/assembly/]
+url: /ru/assembly-data-for-the-creation-of-an-excel-report/
+aliases: [  /ru/assembly/ ]
 keywords: "Aspose.Cells, отчёт Excel, сбор данных, облачный API, REST, SDK, cURL, PDF, ODS"
 description: "Узнайте, как использовать API сборки Aspose.Cells Cloud для объединения данных в отчётах в форматах Excel (XLSX, PDF, ODS). Включает описание конечной точки, параметры, пример cURL, код SDK, руководство по аутентификации и обработку ошибок."
 weight: 40

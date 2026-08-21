@@ -3,8 +3,8 @@ title: "ดึงรายการข้อความจากแผ่นง
 second_title: "เอกสาร"
 linktitle: "ดึงรายการข้อความในแผ่นงาน"
 type: docs
-url: /worksheets/get-text-items/
-aliases: [/get-text-items-from-a-worksheet/]
+url: /th/worksheets/get-text-items/
+aliases: [  /th/get-text-items-from-a-worksheet/ ]
 weight: 20
 keywords: "Aspose.Cells, Cloud API, Excel, worksheet, text items, REST"
 description: "ดึงรายการข้อความทั้งหมดจากแผ่นงานเฉพาะในไฟล์ Excel โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่างโค้ด cURL, SDK, ขั้นตอนการยืนยันตัวตน และโครงสร้างคำตอบ"

@@ -3,8 +3,8 @@ title: "使用 Aspose.Cells Cloud API 加密 Excel 工作簿——快速 cURL �
 second_title: "文档"
 linktitle: "加密 Excel 文件"
 type: docs
-url: /excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+url: /zh/excel-file-encrypt/
+aliases: [  /zh/encrypt-excel-workbooks/ , /zh/workbook/encrypt/ ]
 keywords: "Aspose Cells 加密工作簿、Excel 加密 API、REST API、cURL、.NET、Java、Python、PHP、Ruby、Node.js、Go、Perl"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）加密 Excel 工作簿。包含 cURL 命令、SDK 代码示例（C#、Java、Python 等）、所需参数及错误处理说明。"
 weight: 20

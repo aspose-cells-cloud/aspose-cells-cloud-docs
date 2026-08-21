@@ -3,8 +3,8 @@ title: "Ein automatischer Filter in einer Excel-Arbeitsmappe aktualisieren"
 second_title: "Dokument"
 linktitle: "Automatischen Filter aktualisieren"
 type: docs
-url: /autofilter/refresh/
-aliases: [/refresh-an-autofilter/]
+url: /de/autofilter/refresh/
+aliases: [  /de/refresh-an-autofilter/ ]
 weight: 100
 keywords: "Aspose.Cells, AutoFilter, aktualisieren, Excel, API, REST"
 description: "Aktualisieren eines vorhandenen automatischen Filters in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API. Enthält cURL- und SDK-Beispiele für C#, Java, Python und weitere."

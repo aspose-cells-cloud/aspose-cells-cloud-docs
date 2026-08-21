@@ -1,7 +1,7 @@
 ---
 title: "วิธีการรวมเซลล์ในสมุดงาน Excel – Aspose.Cells Cloud API (v3.0)"
 type: docs
-url: /merge-cells-in-excel-worksheet/
+url: /th/merge-cells-in-excel-worksheet/
 weight: 110
 keywords: "รวมเซลล์, Aspose.Cells, Cloud API, Excel"
 description: "คู่มือการรวมเซลล์ในสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่าง cURL และ SDK"

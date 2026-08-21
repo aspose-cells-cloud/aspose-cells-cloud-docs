@@ -1,8 +1,8 @@
 ---
 title: "Обновить заголовок диаграммы в рабочей тетради Excel"
 type: docs
-url: /charts/title/update/
-aliases: [/update-chart-title-in-excel-worksheet/]
+url: /ru/charts/title/update/
+aliases: [  /ru/update-chart-title-in-excel-worksheet/ ]
 weight: 160
 keywords: Excel, Aspose.Cells, REST API, заголовок диаграммы, обновление, облачный SDK
 description: Узнайте, как обновить заголовок диаграммы в рабочей тетради Excel с помощью Aspose.Cells Cloud REST API, cURL и различных SDK.

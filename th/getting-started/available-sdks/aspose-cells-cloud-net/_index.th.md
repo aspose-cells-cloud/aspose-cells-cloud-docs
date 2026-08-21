@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "Aspose.Cells Cloud SDK สำหรับ C#: แปลง ผนวกรวม แยก ป้องกัน ค้นหา แทนที่ และอื่นๆ"
 linktype: "Aspose.Cells Cloud SDK สำหรับ .NET"
 type: docs
-url: /available-sdks/aspose-cells-cloud-net/
+url: /th/available-sdks/aspose-cells-cloud-net/
 description: "Aspose.Cells Cloud .NET SDK ให้ API ข้ามแพลตฟอร์มสำหรับการสร้าง แปลง ผนวกรวม แยก ป้องกัน ค้นหา และแทนที่ไฟล์ Excel โดยไม่จำเป็นต้องติดตั้ง Microsoft Office"
 keywords: "Aspose.Cells, Cloud SDK, .NET, Excel, แปลง, ผนวกรวม, แยก, ป้องกัน, ค้นหา, แทนที่, API"
 weight: 30

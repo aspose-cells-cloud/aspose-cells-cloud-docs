@@ -3,8 +3,8 @@ title: "Autoajustar varias columnas en una hoja de cálculo de Excel"
 second_title: "Document"
 linktitle: "Columnas"
 type: docs
-url: /worksheets/autofit/columns/
-aliases: [/autofit-multiple-columns-of-worksheet/]
+url: /es/worksheets/autofit/columns/
+aliases: [  /es/autofit-multiple-columns-of-worksheet/ ]
 keywords: "Aspose.Cells, autoajustar columnas, API de Excel, hoja de cálculo en la nube, REST"
 description: "Aprenda cómo autoajustar varias columnas en una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud (v3.0). Incluye el punto final, los parámetros, un ejemplo con cURL, manejo de errores y fragmentos de código para SDK en C#, Java, Python y más."
 weight: 20

@@ -1,7 +1,7 @@
 ---
 title: "Obtener el eje de categoría secundaria de un gráfico"
 type: docs
-url: /charts/second-category-axis/get/
+url: /es/charts/second-category-axis/get/
 weight: 60
 keywords: "Obtener el eje de categoría secundaria de un gráfico, Aspose.Cells Cloud API, eje de gráfico de Excel, API REST, eje de categoría secundaria, Aspose.Cells"
 description: "Recuperar el eje de categoría secundaria de un gráfico en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye el formato de solicitud, parámetros, ejemplo con cURL, esquema de respuesta, códigos de estado y notas de uso."

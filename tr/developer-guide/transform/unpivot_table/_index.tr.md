@@ -4,7 +4,7 @@ ArticleTitle: "Tabloyu Unpivot Et – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktype: "Unpivot Table"
 type: docs
-url: /cells/unpivot/table
+url: /tr/cells/unpivot/table
 aliases: []
 keywords: "Aspose.Cells, Unpivot, Dönüştürme"
 description: "Elektronik tabloda satır ve sütunları değiştirin."

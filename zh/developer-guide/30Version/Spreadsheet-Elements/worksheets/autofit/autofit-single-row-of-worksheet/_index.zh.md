@@ -3,8 +3,8 @@ title: "在 Excel 工作表中自动调整行高"
 second_title: "文档"
 linktitle: "行"
 type: docs
-url: /worksheets/autofit/row/
-aliases: [/autofit-single-row-of-worksheet/]
+url: /zh/worksheets/autofit/row/
+aliases: [  /zh/autofit-single-row-of-worksheet/ ]
 description: "了解如何使用 Aspose.Cells Cloud REST API 对 Excel 工作表中的行进行自动调整。内容包括端点、参数、身份验证、错误处理、cURL 请求及 SDK 示例。"
 keywords: "自动调整行高, Aspose.Cells Cloud, Excel API, REST, 工作表, SDK, 电子表格, 云 API"
 weight: 30

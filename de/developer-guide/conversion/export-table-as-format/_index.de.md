@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So exportieren Sie eine entfernte Tabellendatenstruktur in ein anderes Format: Schritt-für-Schritt-Anleitung"
 linktype: "Tabelle exportieren in angegebenes Format"
 type: docs
-url: /export-table-as-format/
+url: /de/export-table-as-format/
 keywords: "Aspose.Cells, Tabelle exportieren, Excel zu PDF, Cloud API, REST"
 description: "Exportieren Sie eine entfernte Excel-Tabellendatenstruktur in PDF, PNG, CSV, JSON oder andere Formate mithilfe der Aspose.Cells Cloud API. Sichere HTTPS-Schnittstelle mit JWT-Authentifizierung und SDK-Beispielen."
 weight: 100

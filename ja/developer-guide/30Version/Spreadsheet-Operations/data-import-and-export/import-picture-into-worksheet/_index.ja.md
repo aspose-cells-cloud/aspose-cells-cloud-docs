@@ -4,7 +4,7 @@ ArticleTitle: "Excelワークシートへの画像のインポート – Aspose.
 second_title: "ドキュメント"
 linktitle: "画像のインポート"
 type: docs
-url: /import-picture-into-excel-worksheet/
+url: /ja/import-picture-into-excel-worksheet/
 aliases:
   - /import-picture-into-worksheet/
   - /import-data/picture/

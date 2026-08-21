@@ -3,8 +3,8 @@ title: "استرجاع كائن OLE من ورقة عمل Excel – واجهة ب
 second_title: "مستند"
 linktitle: "استرجاع"
 type: docs
-url: /oleobjects/get/
-aliases: [/get-oleobject-from-a-worksheet/]
+url: /ar/oleobjects/get/
+aliases: [  /ar/get-oleobject-from-a-worksheet/ ]
 keywords: "aspose, cells, كائن ole, excel, ورقة عمل, استرجاع كائن ole, rest api"
 description: "استرجاع كائن OLE (صورة أو مخطط أو ملف مُضمن) من ورقة عمل باستخدام واجهة Aspose.Cells Cloud REST API. تتضمن نقطة نهاية HTTPS والمعلمات المطلوبة وعينة من كود cURL ورموز SDK بلغات برمجة متعددة."
 ArticleTitle: "استرجاع كائن OLE من ورقة عمل Excel – واجهة برمجة تطبيقات Aspose.Cells Cloud"

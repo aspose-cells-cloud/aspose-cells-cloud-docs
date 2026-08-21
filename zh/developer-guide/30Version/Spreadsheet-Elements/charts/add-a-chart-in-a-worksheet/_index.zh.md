@@ -1,8 +1,8 @@
 ---
 title: "向工作表添加图表"
 type: docs
-url: /charts/add/
-aliases: [/add-a-chart-in-a-worksheet/]
+url: /zh/charts/add/
+aliases: [  /zh/add-a-chart-in-a-worksheet/ ]
 weight: 20
 description: "了解如何使用 Aspose.Cells Cloud API v3.0 向 Excel 工作表添加图表。内容包括端点、参数、cURL 示例和 SDK 代码片段。"
 keywords:

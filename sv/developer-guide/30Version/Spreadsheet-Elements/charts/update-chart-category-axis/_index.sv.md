@@ -1,7 +1,7 @@
 ---
 title: "Uppdatera diagrammets kategoriaxel"
 type: docs
-url: /charts/category-axis/update/
+url: /sv/charts/category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, diagram, kategoriaxel, REST API, Excel, molntjänst SDK"
 description: "Uppdaterar kategoriaxeln i ett diagram i ett Excel-ark med Aspose.Cells Cloud REST API."

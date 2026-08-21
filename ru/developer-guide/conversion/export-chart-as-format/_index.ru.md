@@ -5,7 +5,7 @@ description: "Преобразуйте диаграмму из рабочей к
 ArticleTitle: "Как преобразовать локальный лист электронной таблицы в PDF-файл: пошаговое руководство"
 linktitle: "Преобразование листа в PDF"
 type: docs
-url: /export-chart-as-format/
+url: /ru/export-chart-as-format/
 keywords: "Aspose.Cells Cloud, экспорт диаграммы, API, PDF, PNG, SVG, Excel, REST, облачное преобразование"
 weight: 100
 ---

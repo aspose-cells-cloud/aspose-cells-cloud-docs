@@ -2,7 +2,7 @@
 title: "Сжатие и восстановление файлов Excel"
 second_title: "Документ"
 type: docs
-url: /compress-and-repair-excel-files/
+url: /ru/compress-and-repair-excel-files/
 linktitle: "Сжатие и восстановление"
 keywords: "Aspose.Cells, сжатие Excel, восстановление Excel, облачный API, уменьшение размера файла Excel, восстановление повреждённой книги, сжатие файла Excel, восстановление книги Excel"
 description: "Узнайте, как сжимать большие книги Excel и восстанавливать повреждённые файлы с помощью облачного API Aspose.Cells. Пошаговые примеры, поддерживаемые языки и лучшие практики."

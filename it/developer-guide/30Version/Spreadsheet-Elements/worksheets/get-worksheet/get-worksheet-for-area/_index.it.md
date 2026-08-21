@@ -3,8 +3,8 @@ title: "Esporta un'area del foglio di calcolo in PNG, PDF, CSV – API Aspose.Ce
 second_title: "Documento"
 linktitle: "Area"
 type: docs
-url: /worksheets/area-to-different-formats/
-aliases: [/get-worksheet-for-area/]
+url: /it/worksheets/area-to-different-formats/
+aliases: [  /it/get-worksheet-for-area/ ]
 keywords: "Aspose.Cells, esporta area foglio di calcolo, PNG, PDF, CSV, conversione Excel, REST API, SDK"
 description: "Scopri come esportare un intervallo di celle specifico da un foglio di calcolo Excel in PNG, PDF, CSV e oltre 20 altri formati utilizzando l'API REST Aspose.Cells Cloud o gli SDK (C#, Java, Python, …)."
 weight: 230

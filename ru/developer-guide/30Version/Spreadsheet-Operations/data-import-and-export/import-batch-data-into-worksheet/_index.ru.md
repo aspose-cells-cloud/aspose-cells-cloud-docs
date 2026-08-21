@@ -3,7 +3,7 @@ title: "Импорт пакетных данных в лист Excel"
 second_title: "Документ"
 linktitle: "Импорт пакетных данных"
 type: docs
-url: /import-batch-data-into-excel/
+url: /ru/import-batch-data-into-excel/
 aliases:
   - /import-batch-data-into-worksheet/
   - /import-data/batch-data/

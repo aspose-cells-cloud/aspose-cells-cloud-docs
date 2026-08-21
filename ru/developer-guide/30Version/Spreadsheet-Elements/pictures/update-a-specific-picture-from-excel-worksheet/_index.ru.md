@@ -3,8 +3,8 @@ title: "Обновление изображения в файле Excel"
 second_title: "Документ"
 linktype: "Обновление"
 type: docs
-url: /pictures/update/
-aliases: [/update-a-specific-picture-from-excel-workshee/]
+url: /ru/pictures/update/
+aliases: [  /ru/update-a-specific-picture-from-excel-workshee/ ]
 keywords: "Aspose.Cells Cloud, Excel, Обновление изображения, REST API, SDK"
 description: "Узнайте, как обновить изображение в рабочем листе Excel с помощью REST API Aspose.Cells Cloud. Включает подробности запроса, пример cURL и фрагменты кода SDK для различных языков программирования."
 ArticleTitle: "Обновление изображения в файле Excel с помощью REST API Aspose.Cells Cloud"

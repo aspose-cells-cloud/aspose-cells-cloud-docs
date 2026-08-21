@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Создание папки – Aspose.Cells Cloud API"
 linktitle: "Создание папки"
 type: docs
-url: /create-folder/
+url: /ru/create-folder/
 keywords: "Aspose.Cells, облачный API, создание папки, управление хранилищем, Excel"
 description: "Создайте новую папку в облачном хранилище Aspose.Cells Cloud с помощью простого PUT-запроса. Ознакомьтесь с форматом запроса, параметрами, ответом и обработкой ошибок."
 weight: 100

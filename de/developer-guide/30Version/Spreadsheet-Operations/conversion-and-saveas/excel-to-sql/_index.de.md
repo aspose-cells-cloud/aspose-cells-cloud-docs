@@ -3,7 +3,7 @@ title: "Excel zu SQL"
 second_title: "Dokument"
 linktitle: "Excel zu SQL"
 type: docs
-url: /convert-excel-file-to-sql-file/
+url: /de/convert-excel-file-to-sql-file/
 keywords: "Aspose.Cells, Excel zu SQL, Cloud-API, Tabellenkalkulationsumwandlung, REST"
 description: "Verwenden Sie die Aspose.Cells Cloud REST-API, um Excel-Tabellenkalkulationsdateien in SQL-Dateien zu konvertieren. Unterstützt mehrere SDKs und Programmiersprachen für eine nahtlose Integration in Ihre Anwendungen."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "转换与另存为"
 type: docs
 url: /zh/conversion-and-save-as/
-aliases: [/zh/convert-excel/, /zh/convert/]
+aliases: [  /zh/convert-excel/ , /zh/convert/ ]
 keywords: "Aspose.Cells, Excel 转换 API, Excel 转 PDF, Excel 转 CSV, Excel 转 JSON, 云端电子表格转换"
 description: "了解如何使用 Aspose.Cells Cloud REST API 将 Excel 工作簿转换为 PDF、CSV、JSON、HTML 以及超过 15 种其他格式。包含端点详情、示例 cURL 命令以及 Java、.NET、Python 等语言的 SDK 代码片段。"
 weight: 30

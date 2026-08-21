@@ -3,8 +3,8 @@ title: "Hinzufügen eines Symbolfilters zu einem Excel-Arbeitsblatt"
 second_title: "Dokument"
 linktitle: "Symbolfilter hinzufügen"
 type: docs
-url: /autofilter/add-icon-filter/
-aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
+url: /de/autofilter/add-icon-filter/
+aliases: [  /de/add-an-icon-filter/ , /de/autofilter/add-an-icon-filter/ ]
 keywords: "Aspose.Cells Cloud, Excel, Symbolfilter, AutoFilter, REST-API"
 description: "Erfahren Sie, wie Sie mithilfe der Aspose.Cells Cloud REST-API einen Symbolfilter zu einem Excel-Arbeitsblatt hinzufügen – inklusive detaillierter Anforderungsinformationen, cURL-Beispiel, SDK-Codebeispielen und Fehlerbehandlung."
 weight: 65

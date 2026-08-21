@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasına Bir OLE Nesnesi Ekleyin"
 second_title: "Belge"
 linktitle: "OLE nesnesi ekle"
 type: docs
-url: /oleobjects/add/
-aliases: [/add-oleobject-to-excel-worksheet/]
+url: /tr/oleobjects/add/
+aliases: [  /tr/add-oleobject-to-excel-worksheet/ ]
 keywords: "OLE nesnesi ekle, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "Aspose.Cells Cloud REST API’sini kullanarak Excel çalışma sayfalarına OLE nesneleri ekleyin. API, doğrudan veya C#, Java, PHP, Ruby, Node.js, Python, Perl ve Go için SDK’lar aracılığıyla çağrılabilir."
 ArticleTitle: "Aspose.Cells Cloud API ile Excel Çalışma Sayfasına OLE Nesnesi Ekleme"

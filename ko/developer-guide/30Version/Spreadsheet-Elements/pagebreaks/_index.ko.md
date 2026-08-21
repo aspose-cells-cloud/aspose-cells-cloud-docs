@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "페이지나누기"
 type: docs
 url: /ko/working-with-pagebreaks/
-aliases: [/ko/working-with-pagebreaks/]
+aliases: [  /ko/working-with-pagebreaks/ ]
 keywords: "Excel, 페이지 나누기, Aspose.Cells Cloud, REST API, 워크시트, 추가, 삭제, 조회, 업데이트, 페이지 나누기"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 페이지 나누기를 추가, 조회 및 삭제하는 방법을 알아보세요. 수직 및 수평 나누기 예제가 포함되어 있습니다."
 weight: 100

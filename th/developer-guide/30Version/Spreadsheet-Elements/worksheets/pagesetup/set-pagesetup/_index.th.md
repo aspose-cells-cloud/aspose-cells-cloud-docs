@@ -3,7 +3,7 @@ title: "ตั้งค่าการตั้งค่าหน้าสำห
 second_title: "เอกสาร"
 linktype: "ตั้งค่าการตั้งค่าหน้า"
 type: docs
-url: /set-page-setup/
+url: /th/set-page-setup/
 keywords: "Aspose.Cells, Excel, การตั้งค่าหน้า, REST API, เวิร์กชีต, SDK บนคลาวด์"
 description: "เรียนรู้วิธีตั้งค่าการตั้งค่าหน้าสำหรับเวิร์กชีต Excel โดยใช้ Aspose.Cells Cloud REST API ซึ่งรวมถึงรายละเอียดคำขอ ตัวอย่าง cURL แบบ HTTPS ที่ปลอดภัย โค้ดสถานะการตอบกลับ และโค้ดตัวอย่าง SDK สำหรับภาษาโปรแกรมต่างๆ"
 weight: 20

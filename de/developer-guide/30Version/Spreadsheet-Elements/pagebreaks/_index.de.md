@@ -3,8 +3,8 @@ title: "Arbeiten mit Excel-Seitenumbrüchen"
 second_title: "Dokument"
 linktitle: "PageBreaks"
 type: docs
-url: /working-with-pagebreaks/
-aliases: [/working-with-pagebreaks/]
+url: /de/working-with-pagebreaks/
+aliases: [  /de/working-with-pagebreaks/ ]
 keywords: "Excel, Seitenumbruch, Aspose.Cells Cloud, REST API, Arbeitsblatt, hinzufügen, löschen, abrufen, aktualisieren, Seitenumbrüche"
 description: "Erfahren Sie, wie Sie vertikale und horizontale Seitenumbrüche in Excel-Arbeitsblättern mithilfe der Aspose.Cells Cloud REST API hinzufügen, abrufen und löschen. Enthält Beispiele für vertikale und horizontale Umbrüche."
 weight: 100

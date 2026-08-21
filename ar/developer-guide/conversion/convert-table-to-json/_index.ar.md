@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "كيفية تحويل بيانات جدول جدول البيانات المحلي إلى ملف JSON: دليل خطوة بخطوة"
 linktype: "تحويل الجدول إلى JSON"
 type: docs
-url: /convert-table-to-json/
+url: /ar/convert-table-to-json/
 keywords: "إكسل، واجهة برمجة تطبيقات، JSON، تحويل، سحابة، ملف، جدول بيانات"
 description: "استخدم واجهة برمجة تطبيقات Aspose.Cells Cloud لتحويل جدول إكسل محلي إلى ملف JSON في طلب PUT واحد. يشمل مثالًا باستخدام cURL، والمُعطَلات، ومقتطفات SDK للغات C#، Java، Python، والمزيد."
 weight: 100

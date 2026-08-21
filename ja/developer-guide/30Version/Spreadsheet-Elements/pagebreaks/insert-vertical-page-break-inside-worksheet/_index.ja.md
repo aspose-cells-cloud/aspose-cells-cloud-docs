@@ -3,8 +3,8 @@ title: "垂直ページ区切りの追加"
 second_title: "Document"
 linktitle: "垂直ページ区切りの追加"
 type: docs
-url: /page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
+url: /ja/page-breaks/add-vertical-page-break/
+aliases: [  /ja/insert-vertical-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 垂直ページ区切り, REST API, Excel, SDK, cURL"
 description: "Aspose.Cells Cloud REST API (v3.0) を使用して Excel ワークシートに垂直ページ区切りを挿入する方法を学習します。リクエスト構文、cURL の例、SDK サンプル、認証ガイド、エラー処理の詳細を含みます。"
 weight: 40

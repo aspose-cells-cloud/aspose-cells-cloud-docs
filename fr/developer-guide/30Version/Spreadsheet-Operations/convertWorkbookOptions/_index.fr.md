@@ -3,7 +3,7 @@ title: "Options de conversion de classeur"
 second_title: "Document"
 linktitle: "Options de conversion de classeur"
 type: docs
-url: /convert-workbook-options/
+url: /fr/convert-workbook-options/
 keywords: "Aspose.Cells, ConvertWorkbookOptions, conversion Excel, PDF, CSV, API"
 description: "Options de conversion de classeur – configurez la conversion de classeur Excel en PDF, CSV, HTML et plus encore avec l'API Aspose.Cells Cloud."
 weight: 79

@@ -3,7 +3,7 @@ title: "Импорт данных JSON в электронную таблицу"
 ArticleTitle: "Импорт данных JSON в электронную таблицу – Aspose.Cells Cloud API"
 second_title: "Документ"
 linktype: "docs"
-url: /cells/import/data/json
+url: /ru/cells/import/data/json
 aliases: []
 keywords: "Импорт JSON, Aspose.Cells, Электронная таблица, API"
 description: "Импорт файла данных JSON в локальную электронную таблицу."

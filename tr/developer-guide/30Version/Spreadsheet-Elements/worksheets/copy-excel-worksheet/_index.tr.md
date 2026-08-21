@@ -3,8 +3,8 @@ title: "Bir diğer çalışma sayfasından içeriği ve formatları kopyala."
 second_title: "Belge"
 linktitle: "Kopyala"
 type: docs
-url: /worksheets/copy/
-aliases: [/copy-excel-worksheet/]
+url: /tr/worksheets/copy/
+aliases: [  /tr/copy-excel-worksheet/ ]
 keywords: "Aspose Cells kopyalama çalışma sayfası API'si, Excel sayfa kopyalama REST API'si, Aspose Cloud SDK kopyalama, elektronik tablo kopyalama çalışma sayfası"
 description: "Aspose.Cells Cloud REST API kullanarak bir çalışma sayfasını ve formatlarını yeni bir sayfaya nasıl kopyalayacağınızı öğrenin. C#, Java, Python ve diğerleri için uç nokta, parametreler, cURL ve SDK örneklerini içerir."
 weight: 20

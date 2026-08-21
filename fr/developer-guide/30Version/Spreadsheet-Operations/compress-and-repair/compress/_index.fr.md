@@ -4,8 +4,8 @@ ArticleTitle: "Compresser les données dans un fichier Excel – Aspose.Cells Cl
 second_title: "Document"
 linktitle: "Compresser les fichiers Excel"
 type: docs
-url: /compress-excel-files/
-aliases: [/compress/]
+url: /fr/compress-excel-files/
+aliases: [  /fr/compress/ ]
 keywords: "compresser fichier Excel, Aspose Cells Cloud, compression Excel, compression feuille de calcul, API REST, compression de fichiers"
 description: "Compresser des fichiers Excel (XLS, XLSX, XLSM, XLSB, ODS) à l’aide de l’API REST Aspose.Cells Cloud. Définir le niveau de compression, gérer plusieurs fichiers et intégrer via les SDK."
 weight: 39

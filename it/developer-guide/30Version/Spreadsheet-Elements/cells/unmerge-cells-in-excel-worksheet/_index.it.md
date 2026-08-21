@@ -1,7 +1,7 @@
 ---
 title: "Separa le celle in un foglio di lavoro Excel"
 type: docs
-url: /unmerge-cells-in-excel-worksheet/
+url: /it/unmerge-cells-in-excel-worksheet/
 weight: 120
 keywords: "Aspose.Cells, Excel, separa celle, API REST, SDK cloud"
 description: "Scopri come utilizzare l'API REST di Aspose.Cells Cloud per separare le celle in un foglio di lavoro Excel, con esempi di richiesta, formato della risposta e campioni di codice SDK per diversi linguaggi di programmazione."

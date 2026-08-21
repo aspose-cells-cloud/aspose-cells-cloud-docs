@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Преобразование и Сохранить как"
 type: docs
 url: /ru/conversion-and-save-as/
-aliases: [/ru/convert-excel/, /ru/convert/]
+aliases: [  /ru/convert-excel/ , /ru/convert/ ]
 keywords: "Aspose.Cells, API для преобразования Excel, преобразование Excel в PDF, Excel в CSV, Excel в JSON, облачное преобразование электронных таблиц"
 description: "Узнайте, как с помощью Aspose.Cells Cloud REST API преобразовывать рабочие книги Excel в PDF, CSV, JSON, HTML и более 15 других форматов. Включает сведения об эндпоинтах, примеры команд cURL и фрагменты кода для Java, .NET, Python и других языков."
 weight: 30

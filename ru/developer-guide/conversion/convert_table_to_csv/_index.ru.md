@@ -3,7 +3,7 @@ title: "Преобразование таблицы в CSV"
 ArticleTitle: "Преобразование таблицы в CSV — Aspose.Cells Cloud API"
 second_title: "Документ"
 linktype: "docs"
-url: /cells/convert/table/csv
+url: /ru/cells/convert/table/csv
 aliases: []
 keywords: "Преобразование таблицы в CSV, Aspose.Cells, облачный API"
 description: "Преобразует таблицу электронной таблицы, хранящуюся на локальном диске, в CSV-файл."

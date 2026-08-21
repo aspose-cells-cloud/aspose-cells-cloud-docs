@@ -3,7 +3,7 @@ title: "استيراد مصفوفة صحيحة ثنائية الأبعاد إل�
 second_title: "مستند"
 linktype: "استيراد مصفوفة صحيحة ثنائية الأبعاد"
 type: docs
-url: /import-a-2D-integer-array-into-excel-worksheet/
+url: /ar/import-a-2D-integer-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-integer-array-into-excel-worksheet/,

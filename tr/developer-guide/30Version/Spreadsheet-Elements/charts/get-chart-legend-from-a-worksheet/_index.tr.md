@@ -1,8 +1,8 @@
 ---
 title: "Çalışma Kitabından Bir Çizelge İçin İlgili Açıklama Bilgisini Alın"
 type: docs
-url: /charts/legend/get/
-aliases: [/get-chart-legend-from-a-worksheet/]
+url: /tr/charts/legend/get/
+aliases: [  /tr/get-chart-legend-from-a-worksheet/ ]
 weight: 80
 keywords: "Aspose.Cells, çizelge açıklaması, REST API, Excel, bulut SDK, çizelge açıklaması alma, çalışma sayfası, elektronik tablo"
 description: "Aspose.Cells Cloud REST API (v3.0) kullanarak bir Excel çalışma kitabındaki belirli bir çalışma sayfasındaki çizelgenin açıklamasını alın. Uç nokta, parametreler, cURL örneği ve SDK kod parçacıklarını içerir."

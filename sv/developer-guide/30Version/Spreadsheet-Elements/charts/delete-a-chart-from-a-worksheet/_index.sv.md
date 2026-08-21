@@ -2,7 +2,7 @@
 title: "Ta bort ett diagram från ett kalkylblad"
 type: docs
 url: /sv/charts/delete/
-aliases: [/sv/delete-a-chart-from-a-worksheet/]
+aliases: [  /sv/delete-a-chart-from-a-worksheet/ ]
 weight: 40
 keywords:
   - "Aspose.Cells"

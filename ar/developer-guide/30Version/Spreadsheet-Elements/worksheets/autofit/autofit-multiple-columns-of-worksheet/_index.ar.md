@@ -3,8 +3,8 @@ title: "ضبط تلقائي لأعمدة متعددة في ورقة عمل Excel
 second_title: "مستند"
 linktitle: "أعمدة"
 type: docs
-url: /worksheets/autofit/columns/
-aliases: [/autofit-multiple-columns-of-worksheet/]
+url: /ar/worksheets/autofit/columns/
+aliases: [  /ar/autofit-multiple-columns-of-worksheet/ ]
 keywords: "Aspose.Cells, ضبط تلقائي للأعمدة, واجهة برمجة تطبيقات Excel, جدول بيانات سحابي, REST"
 description: "تعلم كيفية ضبط الأعمدة المتعددة تلقائيًا في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمن النقطة النهائية (Endpoint)، المعاملات، مثال cURL، معالجة الأخطاء، ومقتطفات رمزية لـ SDKs مثل C# وJava وPython وما إلى ذلك."
 weight: 20

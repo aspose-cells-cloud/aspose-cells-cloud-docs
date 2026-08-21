@@ -4,7 +4,7 @@ ArticleTitle: "Ta bort dubbletter av delsträngar i fjärrkalkylark – Aspose.C
 second_title: "Dokument"
 linktitle: "Ta bort dubbletter av delsträngar i fjärrkalkylark"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
+url: /sv/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
 aliases: []
 keywords: "Aspose.Cells, Ta bort dubbletter av delsträngar, API"
 description: "API för att hitta och ta bort upprepade delsträngar i celler inom ett angivet intervall i en arbetsbok."

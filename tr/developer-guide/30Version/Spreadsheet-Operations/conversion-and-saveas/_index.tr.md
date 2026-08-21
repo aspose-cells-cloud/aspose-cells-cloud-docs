@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "Dönüştürme ve Farklı Kaydet"
 type: docs
 url: /tr/conversion-and-save-as/
-aliases: [/tr/convert-excel/, /tr/convert/]
+aliases: [  /tr/convert-excel/ , /tr/convert/ ]
 keywords: "Aspose.Cells, Excel dönüştürme API'si, Excel’i PDF’e dönüştürme, Excel’i CSV’ye dönüştürme, Excel’i JSON’a dönüştürme, bulut tablolama dönüştürme"
 description: "Aspose.Cells Cloud REST API kullanarak Excel çalışma kitaplarını PDF, CSV, JSON, HTML ve 15’ten fazla diğer forma dönüştürmeyi öğrenin. Endpoint ayrıntılarını, örnek cURL komutlarını ve Java, .NET, Python ve diğerleri için SDK snippet’lerini içerir."
 weight: 30

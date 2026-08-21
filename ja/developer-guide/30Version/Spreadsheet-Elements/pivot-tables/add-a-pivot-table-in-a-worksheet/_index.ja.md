@@ -3,8 +3,8 @@ title: "Excelワークシートにピボットテーブルを追加する"
 second_title: "Document"
 linktitle: Add
 type: docs
-url: /pivot-tables/add/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+url: /ja/pivot-tables/add/
+aliases: [  /ja/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "ピボットテーブルの追加、Excelワークシート、Aspose.Cells Cloud、REST API、SDK、Excelピボットテーブル"
 description: "Aspose.Cells Cloud REST APIを使用してExcelワークシートにピボットテーブルを追加します。C#、Java、PHP、Python、Node.js、Android、Swift、Perl、Go用のSDKで利用可能です。"
 weight: 30

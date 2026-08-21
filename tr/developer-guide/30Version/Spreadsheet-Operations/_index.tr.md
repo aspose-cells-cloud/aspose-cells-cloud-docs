@@ -2,7 +2,7 @@
 title: "Hesap Tablosu İşlemleri"
 second_title: "Belge"
 type: docs
-url: /spreadsheet-operations/
+url: /tr/spreadsheet-operations/
 keywords: "Aspose Cells Cloud, Excel API, hesap tablosu işlemleri, otomatik sığdırma, toplu işleme, dosya koruma, dönüştürme, içe aktarma ve dışa aktarma, metin işleme"
 description: "Aspose.Cells Cloud REST API’sini kullanarak otomatik sığdırma, toplu dönüştürme, koruma, birleştirme ve bul-değiştir gibi hesap tablosu işlemlerini nasıl gerçekleştireceğinizi öğrenin. Kapsamlı kullanım notları ve kod örneği yönlendirmeleri içerir."
 weight: 100

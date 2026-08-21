@@ -3,8 +3,8 @@ title: "Добавление фигуры в рабочий лист Excel"
 second_title: "Документ"
 linktype: "Добавить"
 type: docs
-url: /shapes/add/
-aliases: [/add-a-shape-inside-the-worksheet/]
+url: /ru/shapes/add/
+aliases: [  /ru/add-a-shape-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, добавление фигуры, Excel, REST API, облачный SDK, shapeDTO, тип рисования"
 description: "Узнайте, как добавлять фигуры (дуги, линии, прямоугольники и т.д.) в рабочий лист Excel с помощью Aspose.Cells Cloud REST API версии 3.0. Приведён синтаксис запроса, обязательные параметры, шаги аутентификации и примеры кода SDK."
 weight: 30

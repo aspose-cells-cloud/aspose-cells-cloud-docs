@@ -4,8 +4,8 @@ ArticleTitle: "Excelの行を操作する – Aspose.Cells Cloud API"
 second_title: "ドキュメント"
 linktitle: "行"
 type: docs
-url: /rows/
-aliases: [/working-with-rows/]
+url: /ja/rows/
+aliases: [  /ja/working-with-rows/ ]
 keywords: "Aspose.Cells, Excelの行, REST API, スプレッドシート操作"
 description: "Aspose.Cells Cloud REST API を使用して Excel ファイル内の行を操作します。Android、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby、Swift をサポートしています。"
 weight: 100

@@ -1,7 +1,7 @@
 ---
 title: "Obtener MaxDataRow de una hoja de cálculo de Excel"
 type: docs
-url: /get-maxdatarow-from-excel-worksheet/
+url: /es/get-maxdatarow-from-excel-worksheet/
 weight: 50
 keywords: "Excel, Aspose.Cells Cloud, REST API, Get MaxDataRow, Worksheet"
 description: "Recupera el índice de la última fila que contiene datos en una hoja de cálculo especificada de un libro de Excel utilizando la API REST de Aspose.Cells Cloud."

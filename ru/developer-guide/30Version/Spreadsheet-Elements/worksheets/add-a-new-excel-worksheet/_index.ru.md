@@ -4,8 +4,8 @@ ArticleTitle: "Добавление рабочего листа Excel — Рук
 second_title: "Документ"
 linktitle: "Добавить"
 type: docs
-url: /worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
+url: /ru/worksheets/add/
+aliases: [  /ru/add-a-new-excel-worksheet/ ]
 keywords: "Добавление рабочего листа Excel, Aspose.Cells Cloud, REST API, PUT worksheet, рабочая тетрадь Excel, запрос API"
 description: "Пошаговое руководство по добавлению нового рабочего листа в рабочую тетрадь Excel с помощью REST API Aspose.Cells Cloud, включая детали запроса, пример cURL и фрагменты кода SDK для нескольких языков."
 weight: 20

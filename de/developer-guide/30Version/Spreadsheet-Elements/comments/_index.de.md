@@ -3,8 +3,8 @@ title: "Arbeiten mit Excel-Kommentaren"
 second_title: "Dokument"
 linktitle: "Kommentare"
 type: docs
-url: /comments/
-aliases: [/working-with-comments/]
+url: /de/comments/
+aliases: [  /de/working-with-comments/ ]
 keywords: "Aspose.Cells Cloud, Excel-Kommentar-API, Tabellenkalkulationskommentare, REST-API"
 description: "Erfahren Sie, wie Sie Excel-Kommentare mithilfe der Aspose.Cells Cloud REST API v3.0 hinzufügen, abrufen, aktualisieren und löschen – einschließlich Codebeispielen, Voraussetzungen und Fehlerbehandlung."
 weight: 100

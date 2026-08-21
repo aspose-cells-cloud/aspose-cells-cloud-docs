@@ -3,8 +3,8 @@ title: "Excelファイルの暗号化、復号化、およびデジタル署名"
 second_title: "ドキュメント"
 linktype: "protect-excel"
 type: docs
-url: /protect/
-aliases: [/workbook/password/]
+url: /ja/protect/
+aliases: [  /ja/workbook/password/ ]
 keywords: "Excel, 保護, 暗号化, 復号化, デジタル署名, Aspose.Cells Cloud, REST API, パスワード, セキュリティ"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークブックを保護・暗号化・復号化・デジタル署名する方法を学びましょう。Android、C#、Java、Python などのコード例を提供しています。"
 ArticleTitle: "Aspose.Cells Cloud API を使用して Excel ファイルを暗号化・復号化・デジタル署名・保護する"

@@ -3,8 +3,8 @@ title: "Hitta text i ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Sök i ark"
 type: docs
-url: /worksheets/find-text/
-aliases: [/find-text-in-a-worksheet/]
+url: /sv/worksheets/find-text/
+aliases: [  /sv/find-text-in-a-worksheet/ ]
 weight: 40
 keywords: "Excel, Aspose.Cells Cloud, REST API, hitta text, ark, kalkylark, sök"
 description: "Använd Aspose.Cells Cloud REST API för att hitta text i ett Excel-ark. API:t är tillgängligt via flera SDK:er och programmeringsspråk."

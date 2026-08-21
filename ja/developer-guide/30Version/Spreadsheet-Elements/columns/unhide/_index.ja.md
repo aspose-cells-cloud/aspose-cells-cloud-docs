@@ -4,7 +4,7 @@ ArticleTitle: "Excelワークシートの列を表示状態に戻す - Aspose.Ce
 second_title: "ドキュメント"
 linktitle: "表示状態に戻す"
 type: docs
-url: /columns/unhide/
+url: /ja/columns/unhide/
 aliases:
   [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
 keywords: "Aspose.Cells, Cloud API, 列の表示状態に戻す, Excel, REST, SDK"

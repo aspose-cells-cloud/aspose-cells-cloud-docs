@@ -3,8 +3,8 @@ title: "Imposta lo stile di un intervallo – Aspose.Cells Cloud API"
 second_title: "Documentazione"
 linktitle: "Imposta lo stile di un intervallo"
 type: docs
-url: /ranges/update/style/
-aliases: [/set-the-style-of-the-range/]
+url: /it/ranges/update/style/
+aliases: [  /it/set-the-style-of-the-range/ ]
 keywords: "Aspose.Cells, stile intervallo, API, Excel, cloud"
 description: "Scopri come impostare lo stile di un intervallo di celle in un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud. Include i passaggi per l'autenticazione, il formato della richiesta, i dettagli della risposta e esempi di SDK per .NET, Java, Python, Go e altro."
 weight: 70

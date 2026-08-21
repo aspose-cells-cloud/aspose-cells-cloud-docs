@@ -3,7 +3,7 @@ title: "Kopiera kolumner i ett Excel-arbetsark"
 second_title: "Dokument"
 linktitle: "Kopiera"
 type: docs
-url: /columns/copy/
+url: /sv/columns/copy/
 aliases:
   [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
 keywords: "Aspose.Cells, kopiera kolumner, Excel API, REST, molntjänst, cURL, C#, Java, Python, Ruby, Node.js, Go, Perl"

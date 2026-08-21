@@ -3,8 +3,8 @@ title: "Obtener una validación de hoja de cálculo por índice desde una hoja d
 second_title: "Document"
 linktype: "Get"
 type: docs
-url: /validations/get/
-aliases: [/get-validation-from-a-worksheet/]
+url: /es/validations/get/
+aliases: [  /es/get-validation-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API de validación de hoja de cálculo, obtener validación por índice, API REST de Excel, Aspose.Cells SDK"
 description: "Recuperar una validación de hoja de cálculo mediante su índice basado en cero desde un libro de Excel usando la API de Aspose.Cells Cloud (v3.0). Incluye ejemplo de cURL, esquema de respuesta, códigos de error y fragmentos de SDK para C#, Java, Python y más."
 weight: 10

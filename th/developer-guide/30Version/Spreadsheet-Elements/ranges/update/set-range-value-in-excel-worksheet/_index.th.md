@@ -3,8 +3,8 @@ title: "การตั้งค่าค่าในช่วงของแผ
 second_title: "เอกสาร"
 linktitle: "ตั้งค่าค่า"
 type: docs
-url: /ranges/update/values/
-aliases: [/set-range-value-in-excel-worksheet/]
+url: /th/ranges/update/values/
+aliases: [  /th/set-range-value-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, API สำหรับ Excel, ตั้งค่าค่าในช่วง, REST API, SDK บนคลาวด์, การอัปเดตแผ่นงาน"
 description: "เรียนรู้วิธีการตั้งค่าค่าในเซลล์หรือช่วงของสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API (v3.0) ซึ่งรวมถึง endpoint, พารามิเตอร์, ตัวอย่าง cURL, ตัวอย่างโค้ด SDK และการจัดการข้อผิดพลาด"
 weight: 72

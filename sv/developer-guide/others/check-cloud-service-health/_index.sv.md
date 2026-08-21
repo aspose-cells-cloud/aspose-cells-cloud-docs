@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud-hälsokontroll"
 linktype: "Kontrollera hälsostatus för molntjänsten"
 type: docs
-url: /check-cloud-service-health/
+url: /sv/check-cloud-service-health/
 keywords: "Aspose.Cells Cloud, API-hälsokontroll, REST-status, övervakning av molntjänst"
 description: "Övervaka Aspose.Cells Cloud-hälsotillstånd i realtid. Lär dig om GET /v4.0/cells/status/check-slutpunkten, parametrar, svarsformat och SDK-exempel."
 weight: 100

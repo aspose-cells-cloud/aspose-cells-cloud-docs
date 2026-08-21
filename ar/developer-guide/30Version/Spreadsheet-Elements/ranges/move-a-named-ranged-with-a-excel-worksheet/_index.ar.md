@@ -3,8 +3,8 @@ title: "نقل نطاق مسمّى باستخدام ورقة عمل Excel"
 second_title: "وثيقة"
 linktitle: "نقل"
 type: docs
-url: /ranges/move/
-aliases: [/move-a-named-range-with-an-excel-worksheet/]
+url: /ar/ranges/move/
+aliases: [  /ar/move-a-named-range-with-an-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, نقل نطاق مسمّى, ورقة عمل Excel, REST API, نقل النطاق, أمثلة SDK"
 description: "تعرّف على كيفية نقل نطاق مسمّى ضمن ورقة عمل Excel باستخدام Aspose.Cells Cloud REST API الإصدار 3.0، مع تفاصيل نقطة النهاية، المصادقة، أمثلة وأكواد SDK."
 weight: 20

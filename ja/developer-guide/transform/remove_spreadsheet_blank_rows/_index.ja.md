@@ -4,7 +4,7 @@ ArticleTitle: "スプレッドシートの空白行を削除する – Aspose.Ce
 second_title: "ドキュメント"
 linktitle: "スプレッドシートの空白行を削除する"
 type: docs
-url: /cells/remove/blank-rows
+url: /ja/cells/remove/blank-rows
 aliases: []
 keywords: "Aspose.Cells, 空白行の削除, スプレッドシート, API"
 description: "スプレッドシートファイルからすべての空白行を削除します。"

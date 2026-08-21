@@ -3,7 +3,7 @@ title: "งาน (Tasks)"
 second title: "เอกสาร"
 type: docs
 url: /th/tasks/
-aliases: [/th/working-with-tasks/]
+aliases: [  /th/working-with-tasks/ ]
 keywords: "Aspose Cells, Cloud API, งาน Excel, งานแปลง, งาน ImportData, SmartMarker, SaveResult, REST API, อัตโนมัติสเปรดชีต"
 description: "สำรวจชุดคุณสมบัติเต็มรูปแบบของ Aspose.Cells Cloud Tasks API: แปลง, ImportData, SaveResult, SmartMarker และอื่นๆ อีกมากมาย เรียนรู้วิธีการใช้งาน พารามิเตอร์ และตัวอย่างโค้ดสำหรับการอัตโนมัติ Excel"
 weight: 100

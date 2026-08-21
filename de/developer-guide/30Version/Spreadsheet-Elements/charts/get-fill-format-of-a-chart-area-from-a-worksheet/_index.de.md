@@ -1,8 +1,8 @@
 ---
 title: "Formatierung des Diagrammbereichs abrufen – Aspose.Cells Cloud API (v3.0)"
 type: docs
-url: /charts/chart-area/fill-format/get/
-aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
+url: /de/charts/chart-area/fill-format/get/
+aliases: [  /de/get-fill-format-of-a-chart-area-from-a-worksheet/ ]
 weight: 70
 keywords:
   - "Aspose.Cells"

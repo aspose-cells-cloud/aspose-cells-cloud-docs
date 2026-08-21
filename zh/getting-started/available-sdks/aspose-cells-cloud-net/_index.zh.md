@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "Aspose.Cells Cloud SDK for C#：转换、合并、拆分、保护、搜索、替换等"
 linktype: "Aspose.Cells Cloud SDK for .NET"
 type: docs
-url: /available-sdks/aspose-cells-cloud-net/
+url: /zh/available-sdks/aspose-cells-cloud-net/
 description: "Aspose.Cells Cloud .NET SDK 提供跨平台 API，用于创建、转换、合并、拆分、保护、搜索和替换 Excel 文件，无需安装 Office。"
 keywords: "Aspose.Cells, Cloud SDK, .NET, Excel, 转换, 合并, 拆分, 保护, 搜索, 替换, API"
 weight: 30

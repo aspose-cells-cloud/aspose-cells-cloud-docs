@@ -3,7 +3,7 @@ title: "Comment obtenir différents contenus à partir d'une feuille de calcul E
 second_title: "Document"
 linktitle: "Obtenir"
 type: docs
-url: /worksheets/get/
+url: /fr/worksheets/get/
 keywords: "Excel, feuille de calcul, Aspose.Cells Cloud, API REST, extraction de contenu, conversion de format"
 description: "Découvrez comment extraire divers types de contenus à partir d'une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud. Ce guide présente les formats pris en charge et fournit des liens vers les opérations associées."
 weight: 20

@@ -3,8 +3,8 @@ title: "Aggiungi interruzione di pagina orizzontale"
 second_title: "Documento"
 linktitle: "Aggiungi interruzione di pagina orizzontale"
 type: docs
-url: /page-breaks/add-horizontal-page-break/
-aliases: [/insert-horizontal-page-break-inside-worksheet/]
+url: /it/page-breaks/add-horizontal-page-break/
+aliases: [  /it/insert-horizontal-page-break-inside-worksheet/ ]
 keywords: "interruzione di pagina orizzontale, Aspose.Cells Cloud, Excel API, REST, SDK, foglio di calcolo, cURL"
 description: "Scopri come aggiungere un'interruzione di pagina orizzontale a un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud. Include i dettagli della richiesta, un esempio cURL e frammenti di codice SDK per diversi linguaggi di programmazione."
 weight: 30

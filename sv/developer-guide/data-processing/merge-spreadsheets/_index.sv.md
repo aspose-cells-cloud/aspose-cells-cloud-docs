@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Kombinera flera Excel-filer till en – Batch-sammanfoga kalkylark till 30+ format"
 linktitle: "Sammanfoga kalkylark"
 type: docs
-url: /merge-spreadsheets/
+url: /sv/merge-spreadsheets/
 keywords: "Aspose.Cells, sammanfoga kalkylark, Excel API, molnkalkylark, batch-sammanfogning, PDF-konvertering, CSV-sammanfogning, ODS-sammanfogning, API-referens, SDK"
 description: "Kombinera flera lokala Excel-, CSV- eller ODS-filer till en enda arbetsbok och konvertera resultatet till 30+ format (PDF, HTML, m.fl.) med Aspose.Cells Cloud. Innehåller endpoint, parametrar, autentiseringsguide och SDK-exempel."
 weight: 100

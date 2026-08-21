@@ -3,7 +3,7 @@ title: "Aspose.Cells Trim Content API – Excel からスペースと改行を�
 second_title: "ドキュメント"
 linktitle: "コンテンツのトリム"
 type: docs
-url: /spreadsheet-trim-content/
+url: /ja/spreadsheet-trim-content/
 keywords: "Aspose.Cells, Trim Content API, Excel データクリーニング, Excel でスペースを削除, 改行削除, スプレッドシートデータクリーニング"
 description: "Aspose.Cells Cloud の PostTrimContent API を使用して、Excel セル内の余分なスペース、改行、不要な文字を自動的にクリーニングします。エンドポイント、リクエスト形式、サンプルコード、エラー処理について学びます。"
 weight: 100

@@ -1,7 +1,7 @@
 ---
 title: "Ottieni il Secondo Asse dei Valori del Grafico"
 type: docs
-url: /charts/second-value-axis/get/
+url: /it/charts/second-value-axis/get/
 weight: 60
 keywords: Aspose.Cells, secondo asse dei valori del grafico, Excel, API REST, cloud, API, asse del grafico Excel
 description: Recupera il secondo asse dei valori di un grafico specificato in un foglio di calcolo Excel utilizzando l'API REST Aspose.Cells Cloud.

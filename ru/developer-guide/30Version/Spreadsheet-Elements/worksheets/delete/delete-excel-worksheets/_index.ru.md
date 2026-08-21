@@ -2,8 +2,8 @@
 title: "Удаление нескольких рабочих листов Excel"
 second_title: "Документ"
 linktype: "docs"
-url: /worksheets/delete-multiple/
-aliases: [/delete-excel-worksheets/]
+url: /ru/worksheets/delete-multiple/
+aliases: [  /ru/delete-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, удаление нескольких рабочих листов, Excel API, REST API, v3.0, удаление рабочих листов"
 description: "Узнайте, как удалить несколько рабочих листов из книги Excel с помощью REST API Aspose.Cells Cloud (v3.0). Включает безопасный HTTPS-endpoint, необходимые параметры, исправленный пример cURL и фрагменты SDK для нескольких языков программирования."
 weight: 20

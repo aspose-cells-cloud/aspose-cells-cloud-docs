@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "删除重复项"
 type: docs
 keywords: "删除重复项, listobject, Aspose.Cells Cloud API, Excel, REST"
-url: /list-objects/remove-duplicates/
+url: /zh/list-objects/remove-duplicates/
 description: "了解如何使用 Aspose.Cells Cloud REST API 删除 Excel 工作表中 ListObject 的重复行。包含端点、参数、身份验证以及示例请求和响应。"
 weight: 20
 ---

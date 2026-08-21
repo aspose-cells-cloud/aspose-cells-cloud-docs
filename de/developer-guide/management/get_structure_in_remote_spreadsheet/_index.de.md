@@ -4,7 +4,7 @@ ArticleTitle: "Struktur in Remote-Tabellendatei abrufen – Aspose.Cells Cloud A
 second_title: "Dokument"
 linktype: "GetStructureInRemoteSpreadsheet"
 type: docs
-url: /cells/{name}/structure
+url: /de/cells/{name}/structure
 aliases: []
 keywords: "Aspose.Cells, GetStructure, Tabellendatei, Struktur"
 description: "Rufen Sie die strukturellen Metadaten einer entfernten Excel-Arbeitsmappe ab, einschließlich Arbeitsblätter, Tabellen, Pivot-Tabellen, Diagramme, Formen und andere Kerninformationen."

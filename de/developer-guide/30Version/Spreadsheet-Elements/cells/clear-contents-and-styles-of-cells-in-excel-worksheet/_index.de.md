@@ -1,7 +1,7 @@
 ---
 title: "Inhalt und Formatierungen von Zellen in einem Excel-Arbeitsblatt löschen"
 type: docs
-url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+url: /de/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
 keywords:
   - Aspose.Cells

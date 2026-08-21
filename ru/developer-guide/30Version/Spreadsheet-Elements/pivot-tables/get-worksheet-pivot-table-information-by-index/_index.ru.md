@@ -3,8 +3,8 @@ title: "Получение сводной таблицы в листе Excel"
 second_title: "Документ"
 linktype: "Получить"
 type: docs
-url: /pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
+url: /ru/pivot-tables/get/
+aliases: [  /ru/get-worksheet-pivot-table-information-by-index/ ]
 keywords: "Aspose.Cells, сводная таблица, Excel, REST API, получение сводной таблицы листа"
 description: "Получение сводной таблицы из листа Excel через Aspose.Cells Cloud REST API. Включает синтаксис запроса, параметры, аутентификацию, схему ответа, обработку ошибок и примеры SDK."
 weight: 10

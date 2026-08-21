@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: Dölj
 type: docs
 url: /sv/pivot-tables/hide-pivot-field-item/
-aliases: [/hide-pivot-field-item/]
+aliases: [  /sv/hide-pivot-field-item/ ]
 keywords: "Aspose.Cells, dölj pivotfältelement, PivotTable API, REST API, moln SDK"
 description: "Lär dig hur du döljer ett pivotfältelement i en pivot tabell med Aspose.Cells Cloud REST API. Innehåller begärandedetaljer, cURL-exempel och SDK-kodsnuttar för flera språk."
 weight: 110

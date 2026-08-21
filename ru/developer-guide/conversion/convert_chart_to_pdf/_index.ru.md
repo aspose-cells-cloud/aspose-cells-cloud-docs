@@ -3,7 +3,7 @@ title: "Преобразование диаграммы в PDF"
 ArticleTitle: "Преобразование диаграммы в PDF – Aspose.Cells Cloud API"
 second_title: "Документ"
 linktype: "docs"
-url: /cells/convert/chart/pdf
+url: /ru/cells/convert/chart/pdf
 aliases: []
 keywords: "ConvertChartToPdf, Aspose.Cells, PDF, преобразование диаграммы"
 description: "Преобразует диаграмму электронной таблицы, расположенной на локальном диске, в формат PDF."

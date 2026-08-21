@@ -2,7 +2,7 @@
 title: "تحويل دفعات من ملفات إكسل"
 second_title: "مستند"
 type: docs
-url: /batch/convert
+url: /ar/batch/convert
 keywords: "التحويل الدفعي، إكسل، Aspose.Cells Cloud، واجهة REST API، PDF، CSV، JSON، Markdown، جدول بيانات"
 description: "تعرّف على كيفية استخدام واجهة Aspose.Cells Cloud API لتحويل دفعات متعددة من ملفات إكسل إلى تنسيقات مثل PDF وCSV وJSON أو Markdown. يتضمّن هذا الدليل تفاصيل نقطة نهاية REST ومعلمات الطلب ومثال باستخدام cURL وأكواد مقتطفات SDK بلغات برمجة مختلفة."
 weight: 100

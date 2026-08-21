@@ -3,8 +3,8 @@ title: "ซ่อนรายการฟิลด์พิวต์ในตา
 second_title: "Document"
 linktype: Hide
 type: docs
-url: /pivot-tables/hide-pivot-field-item/
-aliases: [/hide-pivot-field-item/]
+url: /th/pivot-tables/hide-pivot-field-item/
+aliases: [  /th/hide-pivot-field-item/ ]
 keywords: "Aspose.Cells, ซ่อนรายการฟิลด์พิวต์, PivotTable API, REST API, cloud SDK"
 description: "เรียนรู้วิธีซ่อนรายการฟิลด์พิวต์ในตารางพิวต์โดยใช้ Aspose.Cells Cloud REST API ซึ่งประกอบด้วยรายละเอียดคำขอ ตัวอย่าง cURL และตัวอย่างโค้ด SDK สำหรับหลายภาษา"
 weight: 110

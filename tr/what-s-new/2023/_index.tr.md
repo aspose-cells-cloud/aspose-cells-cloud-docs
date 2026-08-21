@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "2023'te Yeni Özellikler"
 type: docs
 weight: 30
-url: /new-features/2023/
+url: /tr/new-features/2023/
 keywords: "Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, JSON, Markdown, Aspose.Cells Cloud, 2023 güncellemeleri"
 description: "Bölgeye duyarlı dönüşüm API’leri, grafik eksen desteği, dijital imzalar ve diğer geliştirmeler gibi Aspose.Cells Cloud 2023 yeni özelliklerini keşfedin. Detaylı sürüm notları ve kod örnekleri."
 ArticleTitle: "Aspose.Cells Cloud 2023'te Yeni Özellikler – Özellik Güncellemeleri ve Sürüm Notları"

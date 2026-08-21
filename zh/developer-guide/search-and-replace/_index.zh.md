@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "电子表格中的搜索与替换——Aspose.Cells Cloud API"
 linktitle: "搜索与替换"
 type: docs
-url: /search-replace/
+url: /zh/search-replace/
 keywords: "Aspose.Cells、Cloud API、搜索与替换、Excel、REST、API、电子表格自动化、查找与替换、Excel 云"
 description: "了解如何使用 Aspose.Cells Cloud **搜索与替换** API，在云端存储的 Excel 工作簿中查找并替换文本、公式或链接。内容包括接口端点详情、请求参数、响应示例、状态码，以及 C#、Java 和 Python 的代码片段。"
 weight: 50

@@ -2,7 +2,7 @@
 title: "Aggiorna il titolo del grafico in un foglio di lavoro Excel"
 type: docs
 url: /it/charts/title/update/
-aliases: [/it/update-chart-title-in-excel-worksheet/]
+aliases: [  /it/update-chart-title-in-excel-worksheet/ ]
 weight: 160
 keywords: Excel, Aspose.Cells, REST API, Titolo grafico, Aggiornamento, Cloud SDK
 description: Scopri come aggiornare il titolo di un grafico in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud, cURL e vari SDK.

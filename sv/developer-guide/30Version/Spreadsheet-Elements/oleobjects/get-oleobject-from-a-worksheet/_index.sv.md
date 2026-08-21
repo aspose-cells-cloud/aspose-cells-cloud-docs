@@ -3,8 +3,8 @@ title: "Hämta OLE-objekt från Excel-arbetsblad – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Hämta"
 type: docs
-url: /oleobjects/get/
-aliases: [/get-oleobject-from-a-worksheet/]
+url: /sv/oleobjects/get/
+aliases: [  /sv/get-oleobject-from-a-worksheet/ ]
 keywords: "aspose, cells, ole-objekt, excel, arbetsblad, hämta ole-objekt, rest api"
 description: "Hämta ett OLE-objekt (bild, diagram eller inbäddad fil) från ett arbetsblad med Aspose.Cells Cloud REST API. Innehåller HTTPS-slutpunkt, nödvändiga parametrar, exempel på cURL och SDK-kod i flera språk."
 ArticleTitle: "Hämta OLE-objekt från Excel-arbetsblad – Aspose.Cells Cloud API"

@@ -3,7 +3,7 @@ title: "Eliminar metadatos de archivos de Excel"
 second_title: "Documento"
 linktitle: "Eliminar sin usar almacenamiento"
 type: docs
-url: /metadata/delete/
+url: /es/metadata/delete/
 keywords: "Aspose.Cells, eliminar metadatos, API de Excel, propiedades del libro"
 description: "Eliminar metadatos del libro (autor, título, personalizados) mediante la API en la nube Aspose.Cells. Incluye el punto de conexión, autenticación, parámetros y ejemplos con cURL y SDK."
 weight: 55

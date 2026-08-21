@@ -3,8 +3,8 @@ title: "Excel Çalışma Kitabından Adlandırılmış Aralıkları Alın"
 second_title: "Belge"
 linktype: "Ad"
 type: docs
-url: /ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
+url: /tr/ranges/get/name/
+aliases: [  /tr/get-named-ranges-inside-the-workbook/ ]
 keywords: "adlandırılmış aralıklar, Excel, Aspose.Cells, Bulut API, çalışma sayfaları"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabından adlandırılmış aralıkları alın. İsteği oluşturma detayları, örnek cURL komutları ve birden fazla programlama dilinde SDK örnekleri içerir."
 ArticleTitle: "Excel Çalışma Kitabından Adlandırılmış Aralıkları Alın – Aspose.Cells Cloud API"

@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: 移动
 type: docs
 url: /zh/pivot-tables/move/
-aliases: [/zh/move-pivot-table/]
+aliases: [  /zh/move-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, 移动数据透视表, Excel, REST API, SDK, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
 description: "了解如何使用 Aspose.Cells Cloud REST API 在 Excel 工作簿内移动数据透视表。SDK 支持 Android、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby 和 Swift。"
 weight: 120

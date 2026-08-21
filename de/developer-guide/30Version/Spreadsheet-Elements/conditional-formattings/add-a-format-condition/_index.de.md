@@ -1,8 +1,8 @@
 ---
 title: "Formatbedingung hinzufügen"
 type: docs
-url: /conditional-formattings/add-format-condition/
-aliases: [/add-a-format-condition/]
+url: /de/conditional-formattings/add-format-condition/
+aliases: [  /de/add-a-format-condition/ ]
 keywords: "Aspose.Cells Cloud, Conditional Formatting API, Formatbedingung hinzufügen, Excel REST API, Cells API"
 description: "Erfahren Sie, wie Sie mithilfe der Aspose.Cells Cloud REST API (v3.0) eine Formatbedingung zu einem Excel-Arbeitsblatt hinzufügen. Enthält die Anforderungssyntax, Parameter, ein sicheres cURL-Beispiel und SDK-Snippets."
 ArticleTitle: "Formatbedingung hinzufügen – Aspose.Cells Cloud API-Dokumentation"

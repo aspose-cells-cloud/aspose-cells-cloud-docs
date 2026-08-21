@@ -3,7 +3,7 @@ title: "Копирование столбцов в рабочем листе Exc
 second_title: "Документ"
 linktitle: "Копирование"
 type: docs
-url: /columns/copy/
+url: /ru/columns/copy/
 aliases:
   [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
 keywords: "Aspose.Cells, копирование столбцов, API Excel, REST, облачный SDK, cURL, C#, Java, Python, Ruby, Node.js, Go, Perl"

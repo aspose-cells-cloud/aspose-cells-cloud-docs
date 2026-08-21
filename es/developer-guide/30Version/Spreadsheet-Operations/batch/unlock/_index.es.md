@@ -2,7 +2,7 @@
 title: "Desbloqueo por lotes"
 second: "Documento"
 type: docs
-url: /batch/unlock
+url: /es/batch/unlock
 keywords: "desbloqueo por lotes, Aspose.Cells Cloud, Excel, API REST, hoja de cálculo, SDK en la nube"
 description: "Desbloquea múltiples archivos de Excel en lotes utilizando la API REST de Aspose.Cells Cloud. Admite SDK para C#, Java, Python y otros lenguajes."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Så här exporterar du en extern kalkylarkstabell till ett annat format: Steg-för-steg-guide"
 linktitle: "Exportera tabell till angivet format"
 type: docs
-url: /export-table-as-format/
+url: /sv/export-table-as-format/
 keywords: "Aspose.Cells, Exportera tabell, Excel till PDF, moln-API, REST"
 description: "Exportera en extern Excel-tabell till PDF, PNG, CSV, JSON eller andra format med Aspose.Cells Cloud API. Säker HTTPS-slutpunkt med JWT-autentisering och SDK-exempel."
 weight: 100

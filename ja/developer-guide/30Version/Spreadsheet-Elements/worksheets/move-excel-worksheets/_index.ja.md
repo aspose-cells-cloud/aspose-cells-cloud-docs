@@ -3,8 +3,8 @@ title: "Excelワークシートの移動 – Aspose.Cells Cloud API (v3.0)"
 second_title: "ドキュメント"
 linktitle: "移動"
 type: docs
-url: /worksheets/move/
-aliases: [/move-excel-worksheets/]
+url: /ja/worksheets/move/
+aliases: [  /ja/move-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, ワークシートの移動, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
 description: "Aspose.Cells Cloud API (v3.0) を使用して Excel ワークシートを新しい位置に移動する方法を学びます。エンドポイント、必要なパラメータ、cURL の例、および C#、Java、Python などの SDK コードを含みます。"
 weight: 20

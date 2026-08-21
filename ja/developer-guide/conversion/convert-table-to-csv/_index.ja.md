@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "スプレッドシートのテーブルデータをCSVファイルに変換する方法：ステップ・バイ・ステップ・ガイド"
 linktype: "Convert Table to CSV"
 type: docs
-url: /convert-table-to-csv/
+url: /ja/convert-table-to-csv/
 keywords: "Aspose.Cells Cloud, テーブルからCSVへ, スプレッドシート変換, ExcelからCSVへ, API, REST, データエクスポート"
 description: "Aspose.Cells Cloud APIを使用して、Excelスプレッドシートのテーブルを迅速にCSVファイルに変換します。"
 weight: 100

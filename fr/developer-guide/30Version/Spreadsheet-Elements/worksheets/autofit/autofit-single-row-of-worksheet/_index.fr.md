@@ -3,8 +3,8 @@ title: "Ajuster automatiquement une ligne dans une feuille Excel"
 second_title: "Document"
 linktitle: "Ligne"
 type: docs
-url: /worksheets/autofit/row/
-aliases: [/autofit-single-row-of-worksheet/]
+url: /fr/worksheets/autofit/row/
+aliases: [  /fr/autofit-single-row-of-worksheet/ ]
 description: "Découvrez comment utiliser l'API REST Aspose.Cells Cloud pour ajuster automatiquement une ligne dans une feuille Excel. Inclut l'endpoint, les paramètres, l'authentification, la gestion des erreurs, la requête cURL et des exemples d'SDK."
 keywords: "ajuster automatiquement une ligne, Aspose.Cells Cloud, API Excel, REST, feuille de calcul, SDK, feuille de calcul, API cloud"
 weight: 30

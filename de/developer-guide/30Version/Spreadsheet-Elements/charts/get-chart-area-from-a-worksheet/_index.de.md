@@ -1,8 +1,8 @@
 ---
 title: "Diagrammbereich aus einem Arbeitsblatt abrufen"
 type: docs
-url: /charts/area/get/
-aliases: [/get-chart-area-from-a-worksheet/]
+url: /de/charts/area/get/
+aliases: [  /de/get-chart-area-from-a-worksheet/ ]
 weight: 60
 keywords:
   - "Aspose.Cells"

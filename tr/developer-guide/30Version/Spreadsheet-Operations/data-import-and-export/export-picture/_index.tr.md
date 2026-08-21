@@ -3,8 +3,8 @@ title: "Resim Dışa Aktar"
 second_title: "Belge"
 linktitle: "Resim"
 type: docs
-url: /export-excel-picture-to-different-formats/
-aliases: [/export/excel-picture-to-different-formats/]
+url: /tr/export-excel-picture-to-different-formats/
+aliases: [  /tr/export/excel-picture-to-different-formats/ ]
 keywords: "Resim Dışa Aktar, Aspose.Cells Cloud, REST API, Excel, Görüntü Formatları, PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF"
 description: "Aspose.Cells Cloud REST API kullanarak Excel resimlerini çeşitli görüntü formatlarına dışa aktarın. Hizmet, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go ve Swift dahil olmak üzerebirden fazla programlama dili için SDK'ları destekler."
 weight: 20

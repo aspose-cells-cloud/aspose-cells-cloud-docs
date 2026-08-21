@@ -3,7 +3,7 @@ title: "Importar matriz doble en hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Importar matriz doble"
 type: docs
-url: /import-double-array-into-excel-worksheet/
+url: /es/import-double-array-into-excel-worksheet/
 aliases:
   - /import-double-array-into-worksheet/
   - /import-data/double-array/

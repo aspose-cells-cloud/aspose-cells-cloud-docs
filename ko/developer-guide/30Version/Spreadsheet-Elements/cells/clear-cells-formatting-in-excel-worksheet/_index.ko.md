@@ -1,7 +1,7 @@
 ---
 title: "Excel 워크시트에서 셀 서식 지우기"
 type: docs
-url: /clear-cells-formatting-in-excel-worksheet/
+url: /ko/clear-cells-formatting-in-excel-worksheet/
 weight: 100
 keywords: "Aspose.Cells Cloud, Excel, 셀 서식 지우기, REST API, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 셀 서식을 지웁니다. 요청 세부 정보, cURL 예제, 여러 언어의 SDK 코드 스니펫을 포함합니다."

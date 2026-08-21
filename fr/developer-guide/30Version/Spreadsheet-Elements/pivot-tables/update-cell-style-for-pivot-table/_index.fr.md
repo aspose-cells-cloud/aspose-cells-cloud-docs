@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Format"
 type: docs
 url: /fr/pivot-tables/format/
-aliases: [/fr/update-cell-style-for-pivot-table/]
+aliases: [  /fr/update-cell-style-for-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, style de tableau croisé dynamique, API de mise à jour du style de cellule, API REST, API Excel, formatage de feuille de calcul, SDK cloud, style de cellule, tableau croisé dynamique"
 description: "Découvrez comment mettre à jour le style d’une cellule spécifique dans un tableau croisé dynamique Aspose.Cells Cloud via l’API REST. Inclut le point de terminaison, les paramètres, l’authentification, un exemple cURL, un extrait de code Go SDK et des conseils optimisés pour le référencement."
 weight: 90

@@ -3,8 +3,8 @@ title: "名前付き範囲に基づいてセルのデータを取得する"
 second_title: "Document"
 linktitle: "値"
 type: docs
-url: /ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
+url: /ja/ranges/get/values/
+aliases: [  /ja/get-cells-data-based-on-named-range/ ]
 keywords: "Aspose.Cells, クラウド, REST API, Excel, 名前付き範囲, セル値, ワークシート"
 description: "Aspose.Cells Cloud REST API を使用して、Excel ワークシート内の名前付き範囲からセル値を取得します。このサービスは、複数の SDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go）を介して利用可能で、幅広い開発プラットフォームで動作します。"
 weight: 20

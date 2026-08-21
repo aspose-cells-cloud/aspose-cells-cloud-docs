@@ -3,8 +3,8 @@ title: "Actualizar el estilo de celda para una tabla dinámica"
 second_title: "Document"
 linktype: Format
 type: docs
-url: /pivot-tables/format/
-aliases: [/update-cell-style-for-pivot-table/]
+url: /es/pivot-tables/format/
+aliases: [  /es/update-cell-style-for-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, estilo de tabla dinámica, API de actualización de estilo de celda, API REST, API de Excel, formateo de hojas de cálculo, SDK en la nube, estilo de celda, tabla dinámica"
 description: "Aprenda cómo actualizar el estilo de una celda específica en una tabla dinámica de Aspose.Cells Cloud mediante la API REST. Incluye el punto de conexión, parámetros, autenticación, ejemplo con cURL y fragmento de código del SDK de Go, así como orientación optimizada para SEO."
 weight: 90

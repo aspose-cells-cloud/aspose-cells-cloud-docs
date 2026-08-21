@@ -2,7 +2,7 @@
 title: "バッチ分割"
 second: "ドキュメント"
 type: docs
-url: /batch/split
+url: /ja/batch/split
 keywords: "バッチ分割、Aspose.Cells Cloud、REST API、Excel、PDF、CSV、JSON、スプレッドシート、クラウドSDK"
 description: "スプレッドシートファイルをPDF、CSV、JSONなどの複数のフォーマットに分割するAspose.Cells Cloudのバッチ分割APIに関するドキュメント。リクエストの詳細、cURLコマンドの例、さまざまなプログラミング言語でのSDKの使用方法を含みます。"
 weight: 100

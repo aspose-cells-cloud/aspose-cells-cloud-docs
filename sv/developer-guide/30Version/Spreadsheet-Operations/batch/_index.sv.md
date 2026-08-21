@@ -3,7 +3,7 @@ title: "Batchbehandling av Excel-filer: Konvertera, Lås, Skydda, Dela upp och L
 second_title: "Dokument"
 linktitle: "Batch Excel-filer"
 type: docs
-url: /batch/
+url: /sv/batch/
 keywords: "Batchbehandling, Excel, konvertering, lås, skydda, dela upp, låsa upp, Aspose.Cells Cloud API, API-referens, batchåtgärder"
 description: "Aspose.Cells Cloud API möjliggör batchbehandling av flera Excel-filer för konvertering, låsning, skydd, delning och upplåsning. Innehåller detaljerade API-specifikationer och SDK-stöd för Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
 weight: 35

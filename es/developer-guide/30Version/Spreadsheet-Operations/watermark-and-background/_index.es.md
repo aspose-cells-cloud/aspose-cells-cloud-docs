@@ -3,8 +3,8 @@ title: "Insertar marcas de agua o establecer fondos en archivos de Excel."
 second_title: "Document"
 linktitle: "Marca de agua y fondo"
 type: docs
-url: /watermark-and-background/
-aliases: [ "/export/excel-chart-to-different-formats/", "/workbook/background/" ]
+url: /es/watermark-and-background/
+aliases: [  /es/export/excel-chart-to-different-formats/ , /es/workbook/background/ ]
 keywords: "Aspose.Cells Cloud, Excel, marca de agua, fondo, API REST"
 description: "La API REST de Aspose.Cells Cloud permite a los desarrolladores agregar, eliminar y gestionar fondos y marcas de agua en libros de Excel. Los lenguajes compatibles incluyen Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift."
 weight: 20

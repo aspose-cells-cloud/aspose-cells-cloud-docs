@@ -2,8 +2,8 @@
 title: "Trabajo con la tarea SaveResult"
 second_title: "Document"
 type: docs
-url: /tasks/save-result/
-aliases: [/working-with-saveresult-task/]
+url: /es/tasks/save-result/
+aliases: [  /es/working-with-saveresult-task/ ]
 keywords: "tarea SaveResult, API de Aspose.Cells Cloud, exportar resultado, descargar libro de cálculo, almacenamiento en la nube, API REST, hojas de cálculo, Excel"
 description: "Aprenda a utilizar la tarea SaveResult en la API de Aspose.Cells Cloud para exportar datos de libros de cálculo procesados al almacenamiento en la nube o descargarlos directamente. Incluye ejemplos en cURL, Java, .NET y una referencia completa de parámetros."
 weight: 50

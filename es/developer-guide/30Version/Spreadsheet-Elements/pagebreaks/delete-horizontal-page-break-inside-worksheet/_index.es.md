@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud – Eliminar salto de página horizontal (API 
 second_title: "Documento"
 linktype: "Eliminar salto de página horizontal"
 type: docs
-url: /page-breaks/delete-horizontal-page-break/
-aliases: [/delete-horizontal-page-break-inside-worksheet/]
+url: /es/page-breaks/delete-horizontal-page-break/
+aliases: [  /es/delete-horizontal-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Eliminar salto de página horizontal, Hoja de cálculo de Excel, API REST, SDK"
 description: "Elimine un salto de página horizontal de una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. SDK disponibles para C#, Java, PHP, Ruby, Node.js, Python, Perl y Go."
 weight: 50

@@ -2,8 +2,8 @@
 title: "จัดกลุ่มแถวในสมุดงาน Excel"
 second_title: "เอกสาร"
 linktype: "docs"
-url: "/rows/group/"
-aliases: [/group-rows-in-excel-worksheet/]
+url: /th/rows/group/
+aliases: [  /th/group-rows-in-excel-worksheet/ ]
 keywords: "จัดกลุ่มแถว, Excel, Aspose.Cells Cloud, REST API, SDK, แผ่นงาน, Excel API"
 description: "จัดกลุ่มแถวในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API รองรับ SDK หลายภาษา (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) เพื่อการผสานรวมที่ง่ายดาย"
 weight: 60

@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud Upload File API – Eine Schnittstelle zum schnellen Hochladen von Dateien in der Cloud"
 linktype: "Upload File"
 type: docs
-url: /upload-file/
+url: /de/upload-file/
 keywords: "Aspose.Cells, Datei-Upload, Excel-API, Cloud-Speicher, REST-API"
 description: "Anleitung zum Hochladen von Dateien mit der Aspose.Cells Cloud API, einschließlich Anforderungsparameter, HTTP-Statuscodes, Fehlerbehandlung und Codebeispielen."
 weight: 100

@@ -3,7 +3,7 @@ title: "Excel 워크시트에서 여러 행 삭제"
 second_title: "문서"
 linktitle: "행"
 type: docs
-url: /rows/delete/rows/
+url: /ko/rows/delete/rows/
 keywords: "Aspose.Cells Cloud, 행 삭제, 여러 행 삭제, Excel 워크시트, REST API, SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 하나 이상의 행을 삭제하는 방법을 알아보세요. 엔드포인트 세부 정보, 매개변수, cURL 예제 및 다양한 언어에 대한 SDK 코드 예제가 포함되어 있습니다."
 weight: 80

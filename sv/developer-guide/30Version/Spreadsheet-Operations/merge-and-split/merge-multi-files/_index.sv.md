@@ -3,8 +3,8 @@ title: "Sammanfoga flera Excel-filer till en enda arbetsbok"
 second_title: "Dokument"
 linktitle: "Sammanfoga flera Excel-filer"
 type: docs
-url: /merge-multi-files-into-excel/
-aliases: [/merge/multi-files/]
+url: /sv/merge-multi-files-into-excel/
+aliases: [  /sv/merge/multi-files/ ]
 keywords: "Aspose.Cells Cloud, sammanfoga flera Excel-filer, REST API, kalkylarkssammanfogning, molntjänst SDK"
 description: "Lär dig hur du sammanfogar flera Excel-arbetsböcker till en enda fil med Aspose.Cells Cloud REST API (v3.0). Innehåller HTTPS-slutpunkt, cURL-kommando, SDK-exempel, obligatoriska parametrar och detaljerad felhantering."
 weight: 32

@@ -3,7 +3,7 @@ title: "Importar datos CSV en hoja de cálculo"
 ArticleTitle: "Importar datos CSV en hoja de cálculo – Aspose.Cells Cloud API"
 second_title: "Documento"
 linktype: "docs"
-url: /cells/import/data/csv
+url: /es/cells/import/data/csv
 aliases: []
 keywords: "Aspose.Cells, importación CSV, hoja de cálculo, API"
 description: "Importar archivo de datos CSV en la hoja de cálculo local mediante la API de Aspose.Cells Cloud."

@@ -3,7 +3,7 @@ title: "Hämta metadata från Excel-filer"
 second_title: "Dokument"
 linktitle: "Hämta utan att använda lagring"
 type: docs
-url: /metadata/get/
+url: /sv/metadata/get/
 keywords: "Aspose.Cells, Excel, metadata, REST API, molntjänst"
 description: "Hämta inbyggda eller anpassade metadata från Excel-arbetsböcker med Aspose.Cells Cloud REST API. Inkluderar begäranformat, parametrar, exempel på SDK-kod och felhantering."
 weight: 23

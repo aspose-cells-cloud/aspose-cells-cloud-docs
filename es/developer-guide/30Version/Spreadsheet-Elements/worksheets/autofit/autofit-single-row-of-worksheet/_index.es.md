@@ -3,8 +3,8 @@ title: "Ajustar automáticamente una fila en una hoja de cálculo de Excel"
 second_title: "Document"
 linktype: "Row"
 type: docs
-url: /worksheets/autofit/row/
-aliases: [/autofit-single-row-of-worksheet/]
+url: /es/worksheets/autofit/row/
+aliases: [  /es/autofit-single-row-of-worksheet/ ]
 description: "Aprenda cómo utilizar la API REST de Aspose.Cells Cloud para ajustar automáticamente una fila en una hoja de cálculo de Excel. Incluye el punto final, los parámetros, la autenticación, el manejo de errores, la solicitud cURL y ejemplos de SDK."
 keywords: "ajustar automáticamente fila, Aspose.Cells Cloud, API de Excel, REST, hoja de cálculo, SDK, hoja de cálculo, API en la nube"
 weight: 30

@@ -3,7 +3,7 @@ title: "Excel ไป Docx"
 second_title: "เอกสาร"
 linktitle: "Excel ไป Docx"
 type: docs
-url: convert-excel-file-to-docx-file/
+url: /thconvert-excel-file-to-docx-file/
 keywords: "การแปลง Excel เป็น Docx, Aspose.Cells Cloud, REST API, การแปลงสเปรดชีต, การสร้างเอกสาร"
 description: "แปลงไฟล์สเปรดชีต Excel เป็นเอกสาร Docx โดยใช้ REST API ของ Aspose.Cells Cloud มี SDK และภาษาโปรแกรมต่างๆ รองรับมากมายเพื่อการผสานรวมที่ลื่นไหล"
 weight: 90

@@ -3,7 +3,7 @@ title: "Exportar una hoja de cálculo con la API de Aspose.Cells Cloud – Forma
 second_title: "Documento"
 linktitle: "Exportación de hoja de cálculo"
 type: docs
-url: /worksheets/get-worksheet/
+url: /es/worksheets/get-worksheet/
 keywords: "Aspose.Cells Cloud obtener hoja de cálculo, exportación de hoja de cálculo, API de Excel, REST, CSV, PDF, PNG, JPEG, GIF, BMP, TIFF, EMF, XPS, OTS, XLS, XLSX, XLSB, XLSM, ODS, FODS, Numbers, API en la nube"
 description: "Aprenda cómo exportar una sola hoja de cálculo desde un archivo de Excel utilizando la API REST de Aspose.Cells Cloud. Incluye el punto de conexión, parámetros, un ejemplo corregido de cURL, detalles de autenticación, manejo de errores y fragmentos de código de SDK para C#, Java, Python y más."
 weight: 10

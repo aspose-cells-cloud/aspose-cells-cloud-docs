@@ -3,8 +3,8 @@ title: "Arbeiten mit AutoAnpassung in einem Excel-Arbeitsblatt"
 second_title: "Dokument"
 linktitle: "AutoAnpassung"
 type: docs
-url: /worksheets/autofit/
-aliases: [/autofit-rows-and-columns-of-worksheet/]
+url: /de/worksheets/autofit/
+aliases: [  /de/autofit-rows-and-columns-of-worksheet/ ]
 keywords: "AutoAnpassung, Spalte, Zeile, Aspose.Cells, Cloud, Excel, API, Größe anpassen"
 description: "Erfahren Sie, wie Sie mithilfe der Aspose.Cells Cloud REST API Spalten und Zeilen in einem Excel-Arbeitsblatt automatisch anpassen. Enthält Beispiele für cURL, .NET, Java und Python."
 weight: 20

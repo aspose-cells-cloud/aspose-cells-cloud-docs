@@ -2,8 +2,8 @@
 title: "Créer des fichiers Excel et générer des rapports Excel"
 second_title: "Document"
 type: docs
-url: /creating-files-and-reports/
-aliases: [/workbook/create/]
+url: /fr/creating-files-and-reports/
+aliases: [  /fr/workbook/create/ ]
 linktitle: "Créer des fichiers Excel et des rapports"
 keywords: "Aspose.Cells Cloud, API Excel, créer un classeur, rapport Excel, SmartMarker, modèle, génération de rapports"
 description: "Découvrez comment créer des classeurs Excel vides, générer des fichiers à partir de modèles et concevoir des rapports pilotés par SmartMarker à l’aide de l’API Aspose.Cells Cloud, avec des exemples de code."

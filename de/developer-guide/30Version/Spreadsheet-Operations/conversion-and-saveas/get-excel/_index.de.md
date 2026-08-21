@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Konvertieren Sie Excel-Arbeitsmappen in PDF, CSV,
 second_title: "Dokumentation"
 linktitle: "Excel konvertieren"
 type: docs
-url: /get-different-formats-files/
+url: /de/get-different-formats-files/
 aliases:
   - /export-excel-workbook-to-different-file-formats/
   - /export-different-formats/

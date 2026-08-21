@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud 3.0 Utvecklarguide"
 ArticleTitle: "Aspose.Cells Cloud 3.0 REST API Utvecklarguide – Skapa, konvertera och formatera Excel-arbetsböcker"
 second_title: "Dokument"
 type: docs
-url: /developer-guide-3.0/
-aliases: [/developer-guide/v3.0/, /developer-guide-v3.0/]
+url: /sv/developer-guide-3.0/
+aliases: [  /sv/developer-guide/v3.0/ , /sv/developer-guide-v3.0/ ]
 keywords: "Aspose.Cells Cloud, Excel REST API, konvertering av arbetsbok, diagram-API, dataimport, export, PDF, CSV, JSON, utvecklarguide"
 description: "Lär dig hur du använder Aspose.Cells Cloud 3.0 REST API:er för att skapa, konvertera, formatera, arbeta med diagram, tabeller och mer i Excel. Innehåller kodexempel och bästa praxis-tips."
 weight: 150

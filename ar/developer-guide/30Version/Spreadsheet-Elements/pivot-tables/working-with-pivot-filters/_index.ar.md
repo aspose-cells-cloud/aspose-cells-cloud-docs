@@ -3,8 +3,8 @@ title: "العمل مع مرشحات الجداول المحورية"
 second_title: "المستند"
 linktitle: المرشحات
 type: docs
-url: /pivot-tables/add-filters/
-aliases: [/working-with-pivot-filters/]
+url: /ar/pivot-tables/add-filters/
+aliases: [  /ar/working-with-pivot-filters/ ]
 keywords: "Aspose.Cells، الجدول المحوري، المرشح، واجهة برمجة التطبيقات REST، السحابة"
 description: "تعرّف على كيفية إضافة وجلب وحذف مرشحات الجداول المحورية باستخدام واجهة برمجة التطبيقات REST لـ Aspose.Cells Cloud. يتضمن بنية الطلب، المعلمات المطلوبة، مثال على cURL، ومقتطفات كود للغتي C# وGo."
 weight: 50

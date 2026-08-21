@@ -3,7 +3,7 @@ title: "ワークブックに背景画像を追加する"
 second_title: "Document"
 linktitle: "追加"
 type: docs
-url: /add-background-in-excel-file/
+url: /ja/add-background-in-excel-file/
 aliases:
   - /add-background-in-workbook/
   - /workbook/add-background/

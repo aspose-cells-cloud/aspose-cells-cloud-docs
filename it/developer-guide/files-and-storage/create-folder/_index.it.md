@@ -3,7 +3,7 @@ title: "Crea cartella – Aspose.Cells Cloud API | Gestione archiviazione Excel"
 second_title: "Documento"
 ArticleTitle: "Crea cartella – Aspose.Cells Cloud API"
 linktype: "docs"
-url: /create-folder/
+url: /it/create-folder/
 keywords: "Aspose.Cells, API cloud, Crea cartella, Gestione archiviazione, Excel"
 description: "Crea una nuova cartella nell’archivio cloud di Aspose.Cells Cloud tramite una semplice richiesta PUT. Visualizza il formato della richiesta, i parametri, la risposta e la gestione degli errori."
 weight: 100

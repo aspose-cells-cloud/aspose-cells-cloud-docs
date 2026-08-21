@@ -4,7 +4,7 @@ ArticleTitle: "Rimuovi sottostringhe duplicate in foglio di calcolo remoto – A
 second_title: "Documenti"
 linktype: "Rimuovi sottostringhe duplicate in foglio di calcolo remoto"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
+url: /it/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
 aliases: []
 keywords: "Aspose.Cells, Rimuovi sottostringhe duplicate, API"
 description: "API per individuare e rimuovere sottostringhe ripetute all'interno delle celle di un intervallo specificato in un foglio di calcolo."

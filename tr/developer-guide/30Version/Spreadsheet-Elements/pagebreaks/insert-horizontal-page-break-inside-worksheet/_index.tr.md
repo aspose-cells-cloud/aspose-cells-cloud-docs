@@ -3,8 +3,8 @@ title: "Yatay Sayfa Sonu Ekle"
 second_title: "Belge"
 linktitle: "Yatay Sayfa Sonu Ekle"
 type: docs
-url: /page-breaks/add-horizontal-page-break/
-aliases: [/insert-horizontal-page-break-inside-worksheet/]
+url: /tr/page-breaks/add-horizontal-page-break/
+aliases: [  /tr/insert-horizontal-page-break-inside-worksheet/ ]
 keywords: "yatay sayfa sonu, Aspose.Cells Cloud, Excel API, REST, SDK, çalışma sayfası, cURL"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasına yatay sayfa sonu eklemeyi öğrenin. İstek ayrıntılarını, cURL örneğini ve birden fazla programlama dili için SDK kod parçacıklarını içerir."
 weight: 30

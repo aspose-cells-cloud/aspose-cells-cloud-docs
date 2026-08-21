@@ -3,8 +3,8 @@ title: "Показать лист Excel"
 second_title: "Документ"
 linktitle: "Показать"
 type: docs
-url: /worksheets/unhide/
-aliases: [/unhide-excel-worksheets/]
+url: /ru/worksheets/unhide/
+aliases: [  /ru/unhide-excel-worksheets/ ]
 keywords: "Aspose.Cells, показать лист, Excel API, облачная электронная таблица, REST, видимость листа, рабочая книга Excel"
 description: "Узнайте, как с помощью Aspose.Cells Cloud REST API показать скрытый лист в рабочей книге Excel. Включает детали запроса, примеры cURL и фрагменты кода SDK для множества языков программирования."
 weight: 60

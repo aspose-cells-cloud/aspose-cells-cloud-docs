@@ -1,7 +1,7 @@
 ---
 title: "Rensa innehåll och stilar i celler i ett Excel-ark"
 type: docs
-url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+url: /sv/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
 keywords:
   - Aspose.Cells

@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "Excel 数据清理工具 - 将文本转换为数字并移除不需要的字符"
 linktitle: "转换文本"
 type: docs
-url: /convert-text/
+url: /zh/convert-text/
 keywords: "Aspose.Cells 文本转换, Excel 文本转数字, 移除 Excel 特殊字符, 替换 Excel 换行符, 规范化带重音字符, Excel 数据清理 API"
 description: "使用 Aspose.Cells Cloud API 将文本格式的数字转换为数值，替换不需要的字符和换行符，并将带重音字符规范化为标准字母。"
 weight: 100

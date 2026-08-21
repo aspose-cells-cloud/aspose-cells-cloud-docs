@@ -3,8 +3,8 @@ title: "บีบอัดข้อมูลในไฟล์ Excel"
 ArticleTitle: "บีบอัดข้อมูลในไฟล์ Excel – Aspose.Cells Cloud API"
 second_title: "เอกสาร"
 linktype: "docs"
-url: /compress-excel-files/
-aliases: [/compress/]
+url: /th/compress-excel-files/
+aliases: [  /th/compress/ ]
 keywords: "บีบอัดไฟล์ excel, aspose cells cloud, การบีบอัด excel, การบีบอัดสเปรดชีต, rest api, การบีบอัดไฟล์"
 description: "บีบอัดไฟล์ Excel (XLS, XLSX, XLSM, XLSB, ODS) โดยใช้ REST API ของ Aspose.Cells Cloud ตั้งระดับการบีบอัด จัดการหลายไฟล์ และผสานรวมผ่าน SDK"
 weight: 39

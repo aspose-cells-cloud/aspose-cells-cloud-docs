@@ -4,7 +4,7 @@ ArticleTitle: "원격 스프레드시트에서 구조 가져오기 – Aspose.Ce
 second_title: "문서"
 linktype: "GetStructureInRemoteSpreadsheet"
 type: docs
-url: /cells/{name}/structure
+url: /ko/cells/{name}/structure
 aliases: []
 keywords: "Aspose.Cells, GetStructure, 스프레드시트, 구조"
 description: "원격 엑셀 워크북의 워크시트, 테이블, 피벗테이블, 차트, 도형 등 핵심 정보를 포함한 구조 메타데이터를 조회합니다."

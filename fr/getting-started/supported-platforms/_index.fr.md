@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud : plateformes prises en charge – Windows, Linux et macOS"
 LinkTitle: "Plateformes prises en charge"
 type: docs
-url: /supported-platforms/
+url: /fr/supported-platforms/
 description: "Découvrez les systèmes d’exploitation, les SDK et les images Docker pris en charge par l’API REST Aspose.Cells Cloud sur Windows, Linux et macOS."
 weight: 50
 keywords: "Aspose.Cells Cloud, API REST, Excel, Classeur, SDK, Docker, Windows, Linux, macOS"

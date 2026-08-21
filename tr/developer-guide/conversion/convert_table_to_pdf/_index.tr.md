@@ -3,7 +3,7 @@ title: "Tabloyu PDF'ye Dönüştür"
 ArticleTitle: "Tabloyu PDF'ye Dönüştür – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktype: "docs"
-url: /cells/convert/table/pdf
+url: /tr/cells/convert/table/pdf
 aliases: []
 keywords: "Tabloyu PDF'ye Dönüştür, Aspose.Cells, API"
 description: "Aspose.Cells Cloud kullanarak yerel bir sürücüdeki bir elektronik tablo tablosunu PDF dosyasına dönüştürür."

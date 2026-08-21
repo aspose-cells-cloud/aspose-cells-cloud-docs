@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud API – Excel ファイルの変換、結合、分割、保護"
 linktitle: "デベロッパー センター"
 type: docs
-url: /
+url: /ja/
 description: "Aspose.Cells Cloud REST API を使用すると、Excel スプレッドシートの変換、結合、分割、保護、および包括的な処理が可能です。月間 150 回まで無料で API を利用できます。8 言語向けの SDK も提供されています。"
 weight: 10
 keywords: "Aspose.Cells Cloud, Excel API, スプレッドシート変換, Excel 結合, Excel 分割, Excel 保護, クラウド スプレッドシート SDK, REST API, Excel 処理"

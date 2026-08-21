@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasından Bir Satır Silme"
 second_title: "Belge"
 linktitle: "Satır"
 type: docs
-url: /rows/delete/row/
-aliases: [/delete-row-from-a-worksheet/]
+url: /tr/rows/delete/row/
+aliases: [  /tr/delete-row-from-a-worksheet/ ]
 description: "Aspose.Cells Cloud REST API aracılığıyla bir Excel çalışma sayfasından belirli bir satırı silmek için DELETE /worksheets/{sheetName}/cells/rows/{rowIndex} uç noktasını kullanın. cURL komutunu, SDK örneklerini ve tüm parametre referansını içerir."
 keywords: "Aspose.Cells, satır sil, Excel, API, REST, Bulut, SDK"
 weight: 80

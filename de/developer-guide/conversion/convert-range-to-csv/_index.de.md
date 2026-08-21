@@ -4,7 +4,7 @@ second_title: "Dokumentation"
 ArticleTitle: "So konvertieren Sie einen lokalen Tabellenkalkulationsbereich in eine CSV-Datei: Schritt-für-Schritt-Anleitung"
 linktitle: "Bereich in CSV konvertieren"
 type: docs
-url: /convert-range-to-csv/
+url: /de/convert-range-to-csv/
 keywords: "Aspose Cells, Bereich in CSV konvertieren, Excel in CSV, Excel-API, Cloud-Tabellenkalkulation, konvertieren, Excel, CSV, Aspose.Cells, Cloud API"
 description: "Erfahren Sie, wie Sie einen bestimmten Bereich aus einer lokalen Excel-Arbeitsmappe (XLSX oder XLS) mithilfe der Aspose.Cells Cloud REST API in CSV konvertieren. Enthält Anforderungssyntax, Parameter, Fehlerbehandlung und SDK-Beispiele."
 ---

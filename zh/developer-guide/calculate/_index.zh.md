@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "提升您的数据技能：掌握关键 Excel 计算方法——加、减、乘、除及更多"
 linktitle: "计算"
 type: docs
-url: /calculate/
+url: /zh/calculate/
 keywords: "Aspose.Cells Cloud、Excel 计算 API、SUM、COUNT、AVERAGE、MIN、MAX、基础数学运算、REST API、电子表格计算"
 description: "了解如何使用 Aspose.Cells Cloud REST API 对 Excel 工作表执行 SUM、COUNT、AVERAGE、MIN、MAX 及基础算术运算。内容包括请求语法、示例代码、响应示例及错误处理。"
 weight: 20

@@ -3,8 +3,8 @@ title: "워크시트 내보내기"
 second_title: "문서"
 linktitle: "워크시트"
 type: docs
-url: /export-excel-to-different-formats/
-aliases: [/export/excel-to-different-formats/]
+url: /ko/export-excel-to-different-formats/
+aliases: [  /ko/export/excel-to-different-formats/ ]
 keywords: "Aspose.Cells Cloud, Excel 내보내기, 워크시트 변환, PDF, CSV, JSON, 이미지 형식, 스프레드시트 API, XLSX, ODS, PNG"
 description: "Aspose.Cells Cloud REST API 및 SDK를 사용하여 Excel 워크시트를 PDF, CSV, JSON 및 다양한 이미지 형식 등 여러 형식으로 내보내는 단계별 가이드입니다."
 weight: 20

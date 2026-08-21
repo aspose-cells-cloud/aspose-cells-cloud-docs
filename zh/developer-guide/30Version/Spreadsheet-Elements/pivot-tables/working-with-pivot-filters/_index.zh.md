@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: 筛选器
 type: docs
 url: /zh/pivot-tables/add-filters/
-aliases: [/zh/working-with-pivot-filters/]
+aliases: [  /zh/working-with-pivot-filters/ ]
 keywords: "Aspose.Cells, 数据透视表, 筛选器, REST API, 云服务"
 description: "了解如何使用 Aspose.Cells Cloud REST API 添加、获取和删除数据透视表筛选器。包含请求语法、必需参数、cURL 示例以及 C# 和 Go 的 SDK 代码片段。"
 weight: 50

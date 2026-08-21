@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud Teknik Desteği"
 LinkTitle: "Teknik Desteği"
 type: docs
-url: /technical-support/
+url: /tr/technical-support/
 description: "Aspose.Cells Cloud için ücretsiz teknik destek alın. Aspose Cloud Forum'u kullanarak sorularınızı paylaşın, SSS'leri inceleyin ve hızlı yardımcı olmak için geliştirme ekibimizle nasıl iletişim kurabileceğinizi öğrenin."
 keywords: "Aspose Cells Cloud desteği, teknik destek, Aspose Cloud Forum, API desteği, Aspose Cells Cloud SSS"
 weight: 80

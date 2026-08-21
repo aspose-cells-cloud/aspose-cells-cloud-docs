@@ -1,7 +1,7 @@
 ---
 title: "清除 Excel 工作表中单元格的内容和样式"
 type: docs
-url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+url: /zh/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
 keywords:
   - Aspose.Cells

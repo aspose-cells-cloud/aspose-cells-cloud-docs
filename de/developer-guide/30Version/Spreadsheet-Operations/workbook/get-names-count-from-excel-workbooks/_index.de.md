@@ -3,7 +3,7 @@ title: "Namen aus einer Excel-Arbeitsmappe abrufen"
 second_title: "Dokument"
 linktitle: "Namen"
 type: docs
-url: /get-names-from-an-excel-file/
+url: /de/get-names-from-an-excel-file/
 aliases:
   [
     /get-names-count-from-excel-workbooks/,

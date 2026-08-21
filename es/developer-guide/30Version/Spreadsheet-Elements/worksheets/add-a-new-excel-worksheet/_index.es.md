@@ -4,7 +4,7 @@ ArticleTitle: "Agregar una hoja de cálculo de Excel - Guía de la API en la nub
 second_title: "Documento"
 linktype: "docs"
 url: /es/worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
+aliases: [  /es/add-a-new-excel-worksheet/ ]
 keywords: "agregar hoja de cálculo de Excel, Aspose.Cells Cloud, API REST, PUT worksheet, libro de Excel, solicitud de API"
 description: "Guía paso a paso para agregar una nueva hoja de cálculo a un libro de Excel mediante la API REST de Aspose.Cells Cloud, incluyendo detalles de la solicitud, un ejemplo con cURL y fragmentos de código de SDK para múltiples lenguajes."
 weight: 20

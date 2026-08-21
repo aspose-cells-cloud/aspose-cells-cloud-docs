@@ -4,7 +4,7 @@ ArticleTitle: "รับการแก้ไขทั้งหมด – Aspose
 second_title: "เอกสาร"
 linktype: "รับการแก้ไขทั้งหมด"
 type: docs
-url: /cells/spreadsheet/accept-all-revisions
+url: /th/cells/spreadsheet/accept-all-revisions
 aliases: []
 keywords: "Aspose.Cells, AcceptAllRevisions, สเปรดชีต, การแก้ไข"
 description: "รับการแก้ไขทั้งหมดในไฟล์สเปรดชีตโดยใช้ API ของ Aspose.Cells Cloud"

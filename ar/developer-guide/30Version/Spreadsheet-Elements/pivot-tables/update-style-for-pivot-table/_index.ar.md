@@ -4,7 +4,7 @@ second_title: "مستند"
 linktype: "تنسيق الكل"
 type: docs
 url: /ar/pivot-tables/format-all/
-aliases: [/ar/update-style-for-pivot-table/]
+aliases: [  /ar/update-style-for-pivot-table/ ]
 keywords: "جدول محوري، تحديث النمط، Aspose.Cells Cloud، REST API، إكسل، جدول بيانات، واجهة برمجة التطبيقات، نمط الجدول المحوري، تنسيق الكل"
 description: "تعرّف على كيفية تحديث نمط جدول محوري بالكامل باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن تفاصيل الطلب، مثالًا باستخدام cURL، وأجزاء كود لعدة لغات برمجة."
 weight: 100

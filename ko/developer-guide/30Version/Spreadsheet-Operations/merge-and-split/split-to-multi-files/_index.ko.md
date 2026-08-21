@@ -3,8 +3,8 @@ title: "엑셀 파일을 여러 파일로 분할"
 second_title: "Document"
 linktype: "분할 다중 엑셀 파일"
 type: docs
-url: /split-an-excel-file-to-multi-files/
-aliases: [/split-excel-workbooks/,/workbook/split/]
+url: /ko/split-an-excel-file-to-multi-files/
+aliases: [  /ko/split-excel-workbooks/ , /ko/workbook/split/ ]
 keywords: "Aspose.Cells, 클라우드, 엑셀, 분할, API, PDF, CSV, JSON"
 description: "Aspose.Cells Cloud REST API를 사용하여 다중 시트 엑셀 워크북을 개별 파일로 분할합니다. PDF, CSV, JSON 등의 출력 형식을 지원하며, 안드로이드, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift용 SDK를 통해 제공됩니다."
 weight: 32

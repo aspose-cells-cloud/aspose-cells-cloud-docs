@@ -3,8 +3,8 @@ title: "Obtenir des plages nommées dans un classeur Excel"
 second_title: "Document"
 linktitle: "Nom"
 type: docs
-url: /ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
+url: /fr/ranges/get/name/
+aliases: [  /fr/get-named-ranges-inside-the-workbook/ ]
 keywords: "plages nommées, Excel, Aspose.Cells, API REST dans le cloud, feuilles de calcul"
 description: "Récupérer des plages nommées à partir d’un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut les détails de la requête, des exemples de commandes cURL et des exemples de SDK pour plusieurs langages de programmation."
 ArticleTitle: "Obtenir des plages nommées dans un classeur Excel – Aspose.Cells Cloud API"

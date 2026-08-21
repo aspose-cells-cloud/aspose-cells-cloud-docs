@@ -3,8 +3,8 @@ title: "Excel 워크시트에 색상 필터 추가"
 second_title: "문서"
 linktitle: "색상 필터 추가"
 type: docs
-url: /autofilter/add-color-filter/
-aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
+url: /ko/autofilter/add-color-filter/
+aliases: [  /ko/filter-a-list-using-a-color-filter/ , /ko/autofilter/add-a-color-filter/ ]
 keywords: "Excel, 색상 필터, Aspose.Cells Cloud, REST API, 자동 필터, JWT 인증"
 description: "Aspose.Cells Cloud API를 사용하여 Excel 워크시트에 색상 필터를 적용하는 방법을 알아보세요. 엔드포인트, 매개변수, cURL 예제, 오류 처리 및 SDK 샘플이 포함되어 있습니다."
 weight: 65

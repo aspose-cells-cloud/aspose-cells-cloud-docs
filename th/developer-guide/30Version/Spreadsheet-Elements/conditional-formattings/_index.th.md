@@ -3,8 +3,8 @@ title: "การทำงานกับการจัดรูปแบบต
 second_title: "เอกสาร"
 linktype: "การจัดรูปแบบตามเงื่อนไข"
 type: docs
-url: /conditional-formattings/
-aliases: [/working-with-conditional-formatting/]
+url: /th/conditional-formattings/
+aliases: [  /th/working-with-conditional-formatting/ ]
 keywords: "Excel, การจัดรูปแบบตามเงื่อนไข, Aspose.Cells Cloud, API"
 description: "API ของ Aspose.Cells Cloud สำหรับ Excel มีเอนด์พอยต์ให้ใช้งานเพื่อดึงข้อมูล เพิ่ม แก้ไข และล้างกฎการจัดรูปแบบตามเงื่อนไข ช่วยให้คุณสามารถวิเคราะห์ข้อมูลในชีตงานแบบไดนามิกผ่านการแสดงผลแบบภาพ"
 weight: 100

@@ -3,7 +3,7 @@ title: "Lavorare con l'attività Convert"
 second_title: "Documenti"
 type: docs
 url: /it/tasks/convert/
-aliases: [/it/working-with-convert-task/]
+aliases: [  /it/working-with-convert-task/ ]
 keywords: "Aspose.Cells Cloud, REST API, Attività Convert, Excel, Foglio di calcolo, PDF, CSV, JSON, Markdown"
 description: "L'API Cloud Cells per Excel fornisce il supporto per l'attività di conversione di file Excel in vari formati."
 weight: 30

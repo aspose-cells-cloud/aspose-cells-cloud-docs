@@ -3,7 +3,7 @@ title: "Excel เป็น JSON"
 second_title: "เอกสาร"
 linktitle: "Excel เป็น JSON"
 type: docs
-url: /convert-excel-file-to-json-file/
+url: /th/convert-excel-file-to-json-file/
 keywords: "Aspose.Cells, Excel เป็น JSON, Cloud API, การแปลงสเปรดชีต, REST API"
 description: "เรียนรู้วิธีการแปลงไฟล์สเปรดชีต Excel เป็นไฟล์ JSON ผ่าน Aspose.Cells Cloud REST API มีตัวอย่าง cURL, ชิ้นส่วนโค้ด SDK (C#, Java, Python), พารามิเตอร์ที่จำเป็น, การรับรองความถูกต้อง และรูปแบบการตอบกลับ"
 weight: 100

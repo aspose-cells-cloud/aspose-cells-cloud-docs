@@ -3,7 +3,7 @@ title: "Alle Arbeitsblattvalidierungen aus einem Excel-Arbeitsblatt abrufen"
 second_title: "Dokument"
 linktitle: "Alle abrufen"
 type: docs
-url: /validations/get-all/
+url: /de/validations/get-all/
 keywords: "Aspose.Cells Cloud, Excel, Arbeitsblattvalidierungen, REST-API, Alle Validierungen abrufen, SDKs"
 description: "Rufen Sie alle Arbeitsblattvalidierungen aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST-API ab. Unterstützt mehrere SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) für eine schnelle Integration."
 weight: 10

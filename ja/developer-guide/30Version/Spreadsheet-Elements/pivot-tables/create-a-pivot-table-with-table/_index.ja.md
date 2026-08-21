@@ -3,7 +3,7 @@ title: "テーブルをピ벗表に変換する"
 second_title: "Document"
 linktitle: 変換
 type: docs
-url: /pivot-tables/convert-table-to-pivottable/
+url: /ja/pivot-tables/convert-table-to-pivottable/
 aliases:
   [
     "/create-a-pivottable-with-table/",

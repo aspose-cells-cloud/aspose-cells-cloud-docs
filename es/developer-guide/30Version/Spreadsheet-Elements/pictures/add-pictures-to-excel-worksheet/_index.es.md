@@ -3,8 +3,8 @@ title: "Agregar una imagen a un archivo de Excel"
 second_title: "Documentos"
 linktitle: "Agregar"
 type: docs
-url: /pictures/add/
-aliases: [/add-pictures-to-excel-worksheet/]
+url: /es/pictures/add/
+aliases: [  /es/add-pictures-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, agregar imagen, API REST"
 description: "Utilice la API REST de Aspose.Cells Cloud para agregar una imagen a una hoja de cálculo de Excel. Los SDK para Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby y Swift simplifican la integración entre plataformas."
 weight: 20

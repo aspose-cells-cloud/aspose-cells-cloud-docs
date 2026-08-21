@@ -3,8 +3,8 @@ title: "Eine Form auf einem Excel-Arbeitsblatt aktualisieren"
 second_title: "Dokument"
 linktitle: "Aktualisieren"
 type: docs
-url: /shapes/update/
-aliases: [/update-a-shape-inside-the-worksheet/]
+url: /de/shapes/update/
+aliases: [  /de/update-a-shape-inside-the-worksheet/ ]
 keywords: "Form in Excel aktualisieren, Aspose.Cells Cloud, Excel-Form-Aktualisierung, REST-API, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
 description: "Erfahren Sie, wie Sie eine Form in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST-API aktualisieren. Enthält HTTPS-Endpunkt, Authentifizierungsdetails, DTO-Schema, Schritt-für-Schritt-Anleitung, cURL-Beispiel und SDK-Codebeispiele für mehrere Sprachen."
 ArticleTitle: "Eine Form auf einem Excel-Arbeitsblatt aktualisieren – Aspose.Cells Cloud API"

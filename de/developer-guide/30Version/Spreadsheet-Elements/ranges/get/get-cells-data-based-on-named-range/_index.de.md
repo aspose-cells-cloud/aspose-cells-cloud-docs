@@ -3,8 +3,8 @@ title: "Zellendaten basierend auf benanntem Bereich abrufen"
 second_title: "Dokument"
 linktitle: "Werte"
 type: docs
-url: /ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
+url: /de/ranges/get/values/
+aliases: [  /de/get-cells-data-based-on-named-range/ ]
 keywords: "Aspose.Cells, Cloud, REST-API, Excel, benannter Bereich, Zellwerte, Arbeitsblatt"
 description: "Rufen Sie Zellwerte aus einem benannten Bereich in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST-API ab. Der Dienst ist über mehrere SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) verfügbar und läuft auf einer breiten Palette von Entwicklungsplattformen."
 weight: 20

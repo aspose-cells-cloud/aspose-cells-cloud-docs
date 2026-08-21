@@ -3,7 +3,7 @@ title: "Excelワークブックでのワークシート削除の操作方法"
 second_title: "Document"
 linktitle: "Delete"
 type: docs
-url: /worksheets/delete/
+url: /ja/worksheets/delete/
 keywords: "Aspose.Cells, クラウド, REST API, ワークシート削除, Excel, C#, Java, Python"
 description: "Aspose.Cells Cloud REST API を使って Excel ワークブックから単一または複数のワークシートを削除する方法を学びます。C#、Java、Python のコード例、前提条件、エラー処理のヒント、関連操作を含みます。"
 weight: 20

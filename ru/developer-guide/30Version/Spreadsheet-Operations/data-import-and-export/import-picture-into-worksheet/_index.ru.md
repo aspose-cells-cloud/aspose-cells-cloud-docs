@@ -3,7 +3,7 @@ title: "Импорт изображения в рабочий лист Excel"
 ArticleTitle: "Импорт изображения в рабочий лист Excel — руководство по Aspose.Cells Cloud API"
 second_title: "Документ"
 linktype: "docs"
-url: /import-picture-into-excel-worksheet/
+url: /ru/import-picture-into-excel-worksheet/
 aliases:
   - /import-picture-into-worksheet/
   - /import-data/picture/

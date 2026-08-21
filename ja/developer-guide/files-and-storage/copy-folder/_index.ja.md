@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud フォルダコピー API – クラウド内での�
 second_title: "ドキュメント"
 ArticleTitle: "クラウドベースの Excel ファイル管理ソリューション – Aspose.Cells フォルダコピー API のバッチコピー機能の詳細解説"
 linktype: "docs"
-url: /copy-folder/
+url: /ja/copy-folder/
 keywords: "フォルダコピー、Aspose.Cells Cloud、REST API、クラウドストレージ、スプレッドシート管理"
 description: "Aspose.Cells Cloud ストレージ内のフォルダを単一の REST 呼び出しでコピーする方法を学びます。エンドポイント、パラメータ、サンプルリクエスト、エラーコード、SDK サンプルを含みます。"
 weight: 100

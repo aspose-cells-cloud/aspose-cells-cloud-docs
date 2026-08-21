@@ -3,8 +3,8 @@ title: "Excel 워크시트 줌 설정 – Aspose.Cells Cloud API v3.0"
 second_title: "문서"
 linktitle: "줌"
 type: docs
-url: /worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
+url: /ko/worksheets/zoom/
+aliases: [  /ko/set-zoom-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel 줌, 워크시트 줌, REST API, 클라우드 SDK, Excel 자동화"
 description: "Aspose.Cells Cloud API v3.0을 사용하여 워크시트 줌(10~400%)을 설정하는 방법을 배워보세요. cURL 및 SDK 예제, 오류 처리를 포함합니다."
 weight: 20

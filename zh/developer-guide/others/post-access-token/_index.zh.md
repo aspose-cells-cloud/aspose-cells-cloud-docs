@@ -4,7 +4,7 @@ second_title: "文档"
 articleTitle: "使用客户端 ID 和密钥获取访问令牌"
 linktitle: "Post Access Token"
 type: docs
-url: /post-access-token/
+url: /zh/post-access-token/
 keywords: "Aspose.Cells, 云, 访问令牌, OAuth2, API, 身份验证, REST, Excel, Office Cloud"
 description: "通过调用 POST /cells/connect/token 端点并提供您的客户端 ID 和密钥，为 Aspose.Cells Cloud 获取 OAuth2 访问令牌。"
 weight: 100

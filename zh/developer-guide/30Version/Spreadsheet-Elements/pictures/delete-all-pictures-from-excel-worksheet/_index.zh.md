@@ -3,8 +3,8 @@ title: "删除 Excel 工作表中的所有图片"
 second_title: "文档"
 linktitle: "清除"
 type: docs
-url: /pictures/clear/
-aliases: [/delete-all-pictures-from-excel-worksheet/]
+url: /zh/pictures/clear/
+aliases: [  /zh/delete-all-pictures-from-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, 删除所有图片, 工作表, REST API, 清除图片"
 description: "了解如何使用 Aspose.Cells Cloud REST API 通过 cURL 和 SDK 示例删除 Excel 工作表中的所有图片。"
 weight: 60

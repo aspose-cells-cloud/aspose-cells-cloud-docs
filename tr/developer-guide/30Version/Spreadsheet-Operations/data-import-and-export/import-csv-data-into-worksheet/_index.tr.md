@@ -3,7 +3,7 @@ title: "CSV Verisini Excel Çalışma Sayfasına İçe Aktar"
 second_title: "Belge"
 linktype: "İçe Aktar CSV verisi"
 type: docs
-url: /import-CSV-data-into-excel/
+url: /tr/import-CSV-data-into-excel/
 aliases:
   - /import-CSV-data-into-worksheet/
   - /import-data/csv-data/

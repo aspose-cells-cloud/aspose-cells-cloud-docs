@@ -3,8 +3,8 @@ title: "Работа с сводными таблицами в Excel"
 second_title: "Документ"
 linktype: "Сводные таблицы"
 type: docs
-url: /pivottables/
-aliases: [/working-with-pivot-tables/]
+url: /ru/pivottables/
+aliases: [  /ru/working-with-pivot-tables/ ]
 keywords: "Excel, сводная таблица, Aspose.Cells Cloud, API, электронная таблица, анализ данных, REST API"
 description: "Подробное руководство по использованию REST API Aspose.Cells Cloud для создания, получения, обновления и удаления сводных таблиц в листах Excel. Включает ссылки на SDK, примеры вызовов и примечания к версиям."
 weight: 100

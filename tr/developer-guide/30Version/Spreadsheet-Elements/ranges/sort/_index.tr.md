@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "Sırala"
 type: docs
 keywords: "Aralık Sıralama, Aspose.Cells Cloud, REST API, Elektronik Tablo, Excel, API"
-url: /ranges/sort/
+url: /tr/ranges/sort/
 description: Aspose.Cells Cloud kullanarak bir defter içindeki hücre aralığını sıralamak için bir API sağlar.
 weight: 20
 ---

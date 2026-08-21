@@ -4,7 +4,7 @@ second_title: "Documento"
 articleTitle: "Cómo convertir una hoja de cálculo de una hoja de Excel a CSV usando la API de Aspose.Cells Cloud"
 linktitle: "Convertir hoja de cálculo a CSV"
 type: docs
-url: /convert-worksheet-to-csv/
+url: /es/convert-worksheet-to-csv/
 keywords: "Aspose.Cells, conversión a CSV, hoja de cálculo a CSV, API REST, hoja de cálculo en la nube, Excel a CSV"
 description: "Aprenda cómo convertir una hoja de cálculo específica de un archivo de Excel a CSV usando la API de Aspose.Cells Cloud (v4.0). Incluye endpoint, parámetros, ejemplo con cURL, código del SDK y manejo de errores."
 weight: 100

@@ -3,7 +3,7 @@ title: "Importer une image dans une feuille de calcul Excel"
 ArticleTitle: "Importer une image dans une feuille de calcul Excel – Guide de l’API Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /import-picture-into-excel-worksheet/
+url: /fr/import-picture-into-excel-worksheet/
 aliases:
   - /import-picture-into-worksheet/
   - /import-data/picture/

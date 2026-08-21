@@ -3,7 +3,7 @@ title: "Spara Excel-arbetsbok – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Spara som"
 type: docs
-url: /save-an-excel-file-as-other-formats-files/
+url: /sv/save-an-excel-file-as-other-formats-files/
 aliases:
   - /convert-excel-workbook-to-different-file-formats/
   - /saveas-other-formats/

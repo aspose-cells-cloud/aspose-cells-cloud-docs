@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktitle: "OleObjects"
 type: docs
 url: /th/oleobjects/
-aliases: [/th/working-with-oleobjects/]
+aliases: [  /th/working-with-oleobjects/ ]
 keywords: "OLE, Excel, Aspose.Cells, API, Cloud"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อดึงข้อมูล เพิ่ม แก้ไข ลบ และแปลงวัตถุ OLE ในแผ่นงาน Excel ซึ่งมี SDK ให้ใช้งานในภาษา Java, .NET, Python, PHP, Ruby, Go, Node.js, Perl, Swift และ Android"
 weight: 100

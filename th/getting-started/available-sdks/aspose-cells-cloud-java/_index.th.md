@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "Aspose.Cells Cloud SDK สำหรับ Java: แปลง ผนวก แยก ป้องกัน ค้นหา แทนที่ และอื่นๆ"
 linktype: "Aspose.Cells Cloud SDK สำหรับ Java"
 type: docs
-url: /available-sdks/aspose-cells-cloud-java/
+url: /th/available-sdks/aspose-cells-cloud-java/
 description: "ใช้ Aspose.Cells Cloud Java SDK เพื่อสร้าง แปลง ผนวก แยก ป้องกัน ค้นหา และแทนที่ไฟล์ Excel โดยไม่ต้องติดตั้ง Microsoft Office"
 weight: 30
 keywords: "Aspose Cells Java SDK, การแปลง Excel ด้วย Java, API สเปรดชีตบนคลาวด์, ไลบรารี Excel สำหรับ Java, Aspose.Cells Cloud Java"

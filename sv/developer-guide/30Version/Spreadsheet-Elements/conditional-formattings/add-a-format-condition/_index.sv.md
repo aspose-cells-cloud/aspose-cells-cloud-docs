@@ -1,8 +1,8 @@
 ---
 title: "Lägg till formatvillkor"
 type: docs
-url: /conditional-formattings/add-format-condition/
-aliases: [/add-a-format-condition/]
+url: /sv/conditional-formattings/add-format-condition/
+aliases: [  /sv/add-a-format-condition/ ]
 keywords: "Aspose.Cells Cloud, API för villkorlig formatering, Lägg till formatvillkor, Excel REST API, Cells API"
 description: "Lär dig hur du lägger till ett formatvillkor i ett Excel-ark med Aspose.Cells Cloud REST API (v3.0). Innehåller begärsyntax, parametrar, säkert cURL-exempel och SDK-utdrag."
 ArticleTitle: "Lägg till formatvillkor – Aspose.Cells Cloud API-dokumentation"

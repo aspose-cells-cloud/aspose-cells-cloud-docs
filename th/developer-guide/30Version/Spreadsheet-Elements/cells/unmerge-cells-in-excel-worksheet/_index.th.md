@@ -1,7 +1,7 @@
 ---
 title: "ยกเลิกการผสานเซลล์ในสมุดงาน Excel"
 type: docs
-url: /unmerge-cells-in-excel-worksheet/
+url: /th/unmerge-cells-in-excel-worksheet/
 weight: 120
 keywords: "Aspose.Cells, Excel, Unmerge Cells, REST API, Cloud SDK"
 description: "เรียนรู้วิธีใช้ Aspose.Cells Cloud REST API เพื่อยกเลิกการผสานเซลล์ในสมุดงาน Excel พร้อมตัวอย่างคำขอ รูปแบบการตอบกลับ และตัวอย่างโค้ด SDK สำหรับภาษาโปรแกรมต่างๆ หลายภาษา"

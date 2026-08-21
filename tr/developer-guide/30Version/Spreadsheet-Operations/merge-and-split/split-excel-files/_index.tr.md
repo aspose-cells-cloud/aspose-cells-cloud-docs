@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud API ile Bir Excel Çalışma Kitabını Birden
 second_title: "Belge"
 linktitle: "Bir Excel dosyasını bölme"
 type: docs
-url: /split-multi-excel-files/
-aliases: [/split/multi-files/]
+url: /tr/split-multi-excel-files/
+aliases: [  /tr/split/multi-files/ ]
 keywords: "Excel, Aspose.Cells Cloud, REST API, çalışma kitabını bölme, birden fazla dosya, JPEG, PNG, PDF, CSV, JSON"
 description: "Aspose.Cells Cloud REST API, bir Excel çalışma kitabını farklı formatlarda birden fazla dosyaya bölmenizi sağlar. Bu belgeler, C#, Java, PHP, Ruby, Node.js, Python, Perl ve Go gibi diller için istek parametrelerini, bir cURL örneğini ve SDK kod örneklerini içerir."
 weight: 130

@@ -1,8 +1,8 @@
 ---
 title: "조건부 서식 가져오기"
 type: docs
-url: /conditional-formattings/get/
-aliases: [/get-conditional-formatting/]
+url: /ko/conditional-formattings/get/
+aliases: [  /ko/get-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, REST API, 조건부 서식, Excel, 스프레드시트"
 description: "Aspose.Cells Cloud REST API를 사용하여 워크시트에서 조건부 서식 규칙을 검색합니다."
 weight: 10

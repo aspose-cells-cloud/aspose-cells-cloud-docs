@@ -3,7 +3,7 @@ title: "Uppgifter"
 second_title: "Dokument"
 type: docs
 url: /sv/tasks/
-aliases: [/sv/working-with-tasks/]
+aliases: [  /sv/working-with-tasks/ ]
 keywords: "Aspose Cells, molntjänst-API, Excel-uppgifter, Konvertera uppgift, ImporteraData uppgift, SmartMarker, SparaResultat, REST-API, kalkylarksautomatisering"
 description: "Utforska hela setet av Aspose.Cells Cloud-uppgifts-API:er: Konvertera, ImporteraData, SparaResultat, SmartMarker och mer. Lär dig användning, parametrar och kodexempel för Excel-automatisering."
 weight: 100

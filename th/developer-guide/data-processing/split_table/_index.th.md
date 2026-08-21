@@ -4,7 +4,7 @@ ArticleTitle: "Split Table – Aspose.Cells Cloud API"
 second_title: "เอกสาร"
 linktype: "Split Table"
 type: docs
-url: /cells/split/table
+url: /th/cells/split/table
 aliases: []
 keywords: "Aspose.Cells, แยกตาราง, API"
 description: "API สำหรับแยกตารางในไฟล์สเปรดชีตตามค่าในคอลัมน์"

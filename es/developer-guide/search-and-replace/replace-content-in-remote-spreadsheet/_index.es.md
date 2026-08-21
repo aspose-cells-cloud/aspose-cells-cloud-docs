@@ -4,7 +4,7 @@ second_title: "Documentación"
 ArticleTitle: "Sustitución masiva de texto en archivos Excel en la nube – API de buscar y reemplazar"
 linktitle: "Reemplazar contenido en hoja de cálculo remota"
 type: docs
-url: /replace-content-in-remote-spreadsheet/
+url: /es/replace-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, reemplazar contenido, hoja de cálculo remota, API de buscar y reemplazar, Excel en la nube, sustitución masiva de texto"
 description: "Utilice la API de buscar y reemplazar de Aspose.Cells Cloud para actualizar masivamente el texto en libros de Excel alojados en la nube. Endpoint seguro mediante HTTPS, autenticación OAuth2 y ejemplos listos para usar de SDKs para una integración rápida."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "نظرة عامة على Aspose.Cells Cloud: خدمة API مبنية أولًا على REST ومحايدة من حيث لغة البرمجة، تحوّل عمليات إكسل إلى مكالمات HTTPS بسيطة — دون الحاجة لتثبيت مكتب محلي أو الاعتماد على منصة معيّنة."
 linktype: "نظرة عامة"
 type: docs
-url: /overview/
+url: /ar/overview/
 description: "استكشف Aspose.Cells Cloud — API مبنية أولًا على REST تتيح لك إنشاء الملفات وإدارتها وتحويلها وعرضها في السحابة، بما في ذلك تحويل ملفات إكسل (XLS/XLSX) إلى PDF وHTML وODS وXPS وCSV وغيرها من التنسيقات الشائعة. تتوفر نسخة تجريبية مجانية."
 keywords: "Aspose Cells، API سحابية، تحويل إكسل، PDF، HTML، ODS، XPS، CSV، SDK لجداول البيانات"
 weight: 10

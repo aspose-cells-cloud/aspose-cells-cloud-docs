@@ -3,7 +3,7 @@ title: "如何使用模板文件创建 Excel 工作簿"
 second_title: "文档"
 linktitle: "模板文件"
 type: docs
-url: /create-an-excel-file-with-template-file/
+url: /zh/create-an-excel-file-with-template-file/
 aliases:
   - /create-excel-workbook-from-a-template-file/
   - /workbook/new-from-a-template-file/

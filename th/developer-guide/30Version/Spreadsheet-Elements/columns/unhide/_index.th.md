@@ -4,7 +4,7 @@ ArticleTitle: "แสดงคอลัมน์ที่ถูกซ่อน�
 second_title: "เอกสาร"
 linktitle: "แสดงคอลัมน์"
 type: docs
-url: /columns/unhide/
+url: /th/columns/unhide/
 aliases:
   [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
 keywords: "Aspose.Cells, Cloud API, แสดงคอลัมน์, Excel, REST, SDK"

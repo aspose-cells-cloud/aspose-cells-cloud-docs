@@ -3,8 +3,8 @@ title: "Aralık İçindeki Hücreleri Birleştirmeyi Kaldır"
 second_title: "Belge"
 linktitle: "Birleştirmeyi Kaldır"
 type: docs
-url: /ranges/unmerge/
-aliases: [/unmerge-merged-cells-of-the-range/]
+url: /tr/ranges/unmerge/
+aliases: [  /tr/unmerge-merged-cells-of-the-range/ ]
 keywords: "Aspose.Cells Cloud, hücreleri birleştirmeyi kaldır, Excel API, çalışma sayfası aralığı, REST API"
 description: "Aspose.Cells Cloud API'sini kullanarak belirli bir çalışma sayfası aralığındaki birleştirilmiş hücreleri nasıl kaldıracağınızı öğrenin. C#, Java, Python ve daha fazlası için uç nokta, parametreler, örnek cURL ve SDK kodu parçacıklarını içerir."
 weight: 20

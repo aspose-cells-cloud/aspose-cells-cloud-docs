@@ -3,8 +3,8 @@ title: "Hämta alla kalkylblad"
 second_title: "Document"
 linktitle: "Alla"
 type: docs
-url: /worksheets/get-all/
-aliases: [/get-worksheet-count/]
+url: /sv/worksheets/get-all/
+aliases: [  /sv/get-worksheet-count/ ]
 keywords: "Aspose.Cells, molntjänst, hämta kalkylblad, Excel, REST, SDK"
 description: "Hämta listan över kalkylblad i en Excel-arbetsbok via Aspose.Cells Cloud REST API (v3.0). Inkluderar cURL-exempel, SDK-utdrag och svarsschema."
 weight: 10

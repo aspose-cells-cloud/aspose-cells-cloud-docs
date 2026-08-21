@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktype: "ดึง"
 type: docs
 url: /th/pictures/get/
-aliases: [/convert-picture-to-image/]
+aliases: [  /th/convert-picture-to-image/ ]
 keywords: "Aspose.Cells, ดึงภาพ, API, Excel, Cloud, REST"
 description: "ดึงภาพที่ระบุจากแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API ซึ่งรวมถึง endpoint, พารามิเตอร์, ขั้นตอนการยืนยันตัวตน, รหัสการตอบกลับ และตัวอย่างโค้ด"
 weight: 10

@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cómo convertir una hoja de cálculo a otro formato: Guía paso a paso"
 linktitle: "Convertir hoja de cálculo"
 type: docs
-url: /convert-spreadsheet/
+url: /es/convert-spreadsheet/
 keywords: "Aspose, Aspose.Cells, conversión de hojas de cálculo, Excel a PDF, API de Excel, conversión de archivos en la nube"
 description: "Convierta un archivo de hoja de cálculo a otro formato utilizando la API de Aspose.Cells Cloud."
 weight: 100

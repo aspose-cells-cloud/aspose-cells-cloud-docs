@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Uzak Bir Elektronik Tablo Çalışma Sayfasını Başka Bir Formata Dışa Aktarma: Adım Adım Kılavuz"
 linktitle: "Çalışma Sayfasını Dışa Aktar"
 type: docs
-url: /export-worksheet-as-format/
+url: /tr/export-worksheet-as-format/
 keywords: "Aspose Cells, çalışma sayfası dışa aktar, bulut API, PDF, PNG, CSV, Excel dönüştürme"
 description: "Aspose.Cells Bulut'ta depolanan bir çalışma sayfasını tek bir GET isteğiyle PDF, PNG, SVG, CSV veya diğer formatlara dönüştürün. C#, Java, Python ve daha fazlası için kod örneklerini içerir."
 weight: 100

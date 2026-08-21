@@ -3,8 +3,8 @@ title: "Перемещение сводной таблицы в файле Excel
 second_title: "Документ"
 linktype: "Move"
 type: docs
-url: "/pivot-tables/move/"
-aliases: [/move-pivot-table/]
+url: /ru/pivot-tables/move/
+aliases: [  /ru/move-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, перемещение сводной таблицы, Excel, REST API, SDK, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
 description: "Узнайте, как с помощью REST API Aspose.Cells Cloud переместить сводную таблицу внутри рабочей книги Excel. SDK доступны для Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby и Swift."
 weight: 120

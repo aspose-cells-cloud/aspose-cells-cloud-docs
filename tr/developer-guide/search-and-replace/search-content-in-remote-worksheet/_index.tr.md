@@ -4,7 +4,7 @@ second_title: "Doküman"
 ArticleTitle: "Uzak Excel Çalışma Kitabı Çalışma Sayfasında Metin Arama – Belirli Verileri Bulma"
 linktype: "İçerik Arama"
 type: docs
-url: /search-content-in-remote-worksheet/
+url: /tr/search-content-in-remote-worksheet/
 keywords: "Aspose Cells, Excel API, metin arama, uzak çalışma sayfası"
 description: "Aspose.Cells Cloud API kullanarak uzak bir Excel çalışma sayfasında metin, sayı veya formülleri arayın. Büyük/küçük harf duyarsız ve parolayla korumalı dosyaları destekler."
 weight: 100

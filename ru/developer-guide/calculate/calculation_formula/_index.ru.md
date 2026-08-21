@@ -4,7 +4,7 @@ ArticleTitle: "Вычисление формулы – Aspose.Cells Cloud API"
 second_title: "Документ"
 linktitle: "Вычисление формулы"
 type: docs
-url: /cells/calculate/formula
+url: /ru/cells/calculate/formula
 aliases: []
 keywords: "Aspose Cells, вычисление формулы, электронная таблица, API"
 description: "Вычислить формулу в электронной таблице с помощью Aspose.Cells Cloud API."

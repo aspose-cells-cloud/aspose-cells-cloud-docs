@@ -3,8 +3,8 @@ title: "ลบรูปร่างตามดัชนีในแผ่นง
 second_title: "เอกสาร"
 linktitle: "ลบ"
 type: docs
-url: /shapes/delete/
-aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
+url: /th/shapes/delete/
+aliases: [  /th/delete-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, ลบรูปร่าง, ดัชนีรูปร่าง, แผ่นงาน Excel, REST API, SDK"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อลบรูปร่างตามดัชนีในแผ่นงาน Excel API นี้สามารถเข้าถึงได้ผ่าน SDK หลายตัว (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) และรองรับตัวเลือกการจัดเก็บข้อมูลหลากหลาย"
 weight: 50

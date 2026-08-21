@@ -4,7 +4,7 @@ second_title: "Documentación"
 ArticleTitle: "Cómo convertir datos de rango de hoja de cálculo local a archivo JSON: Guía paso a paso"
 linktitle: "Convertir rango a JSON"
 type: docs
-url: /convert-range-to-json/
+url: /es/convert-range-to-json/
 keywords: "convertir rango a json, Aspose.Cells Cloud, Excel a JSON, conversión de hojas de cálculo, API"
 description: "Convierta un rango específico de una hoja de cálculo local de Excel a JSON utilizando la API de Aspose.Cells Cloud."
 weight: 100

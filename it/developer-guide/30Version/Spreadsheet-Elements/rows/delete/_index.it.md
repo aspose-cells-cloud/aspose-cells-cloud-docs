@@ -3,7 +3,7 @@ title: "Lavorare con l'eliminazione di righe in un foglio di calcolo Excel"
 second_title: "Document"
 linktitle: "Elimina"
 type: docs
-url: /rows/delete/
+url: /it/rows/delete/
 keywords: "Aspose.Cells, elimina riga, API Excel, REST, cloud, foglio di calcolo, Excel, SDK"
 description: "Scopri come eliminare una singola riga o più righe in un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud. Include esempi di codice per Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby e Swift."
 weight: 20

@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Get-all"
 type: docs
 url: /it/shapes/get-all/
-aliases: [/it/get-all-shapes-inside-the-worksheet/]
+aliases: [  /it/get-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, API cloud, forme Excel, ottenere forme, REST, SDK"
 description: "Recupera tutte le forme (grafici, immagini, caselle di testo) da un foglio di calcolo utilizzando l'API REST di Aspose.Cells Cloud. Include esempio cURL, frammenti SDK, passaggi di autenticazione e gestione degli errori."
 ArticleTitle: "Ottieni tutte le forme in un foglio di calcolo Excel"

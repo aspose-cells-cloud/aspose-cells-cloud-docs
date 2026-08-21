@@ -1,8 +1,8 @@
 ---
 title: "チャート領域の塗りつぶし形式を取得 – Aspose.Cells Cloud API (v3.0)"
 type: docs
-url: /charts/chart-area/fill-format/get/
-aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
+url: /ja/charts/chart-area/fill-format/get/
+aliases: [  /ja/get-fill-format-of-a-chart-area-from-a-worksheet/ ]
 weight: 70
 keywords:
   - "Aspose.Cells"

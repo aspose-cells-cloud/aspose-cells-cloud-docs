@@ -1,7 +1,7 @@
 ---
 title: "更新多个单元格样式 – Aspose.Cells Cloud API 参考（v3.0）"
 type: docs
-url: /update-multiple-cells-style/
+url: /zh/update-multiple-cells-style/
 weight: 20
 keywords: ["Aspose.Cells", "更新多个单元格样式", "Excel 单元格样式 API", "云 SDK", "REST API", "cURL 示例", "JSON 请求", "JWT 身份验证"]
 description: "了解如何使用 Aspose.Cells Cloud REST API v3.0 更新 Excel 工作簿中某范围单元格的样式。内容包括端点、HTTP 方法、参数、cURL 与 SDK 示例、身份验证、错误处理以及版本信息。"

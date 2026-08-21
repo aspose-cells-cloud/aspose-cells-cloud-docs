@@ -3,7 +3,7 @@ title: "Supprimer la protection en écriture (mot de passe) d’un classeur Exce
 second_title: "Document"
 linktitle: "Effacer le mot de passe des fichiers Excel"
 type: docs
-url: /clear-excel-files-password/
+url: /fr/clear-excel-files-password/
 aliases:
   [
     /clear-modify-password-of-excel-workbooks/,

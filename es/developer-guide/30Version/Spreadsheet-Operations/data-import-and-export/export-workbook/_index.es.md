@@ -3,8 +3,8 @@ title: "Exportar Libro de Trabajo"
 second_title: "Documento"
 linktitle: "Libro de Trabajo"
 type: docs
-url: /export-excel-to-different-formats/
-aliases: [/export/excel-to-different-formats/]
+url: /es/export-excel-to-different-formats/
+aliases: [  /es/export/excel-to-different-formats/ ]
 keywords: "Aspose.Cells Cloud, exportación de Excel, conversión de libro de trabajo, PDF, CSV, JSON, formatos de imagen, API de hojas de cálculo, XLSX, ODS, PNG"
 description: "Una guía paso a paso sobre cómo exportar libros de trabajo de Excel a múltiples formatos, incluyendo PDF, CSV, JSON y varios tipos de imagen, utilizando la API REST y los SDK de Aspose.Cells Cloud."
 weight: 20

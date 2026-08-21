@@ -3,7 +3,7 @@ title: "Arbeiten mit dem Löschen von Arbeitsblättern in einer Excel-Arbeitsmap
 second_title: "Dokument"
 linktitle: "Löschen"
 type: docs
-url: /worksheets/delete/
+url: /de/worksheets/delete/
 keywords: "Aspose.Cells, Cloud, REST API, Arbeitsblatt löschen, Excel, C#, Java, Python"
 description: "Erfahren Sie, wie Sie einzelne oder mehrere Arbeitsblätter aus einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API löschen. Enthält Beispiele für C#, Java und Python, Voraussetzungen, Tipps zur Fehlerbehandlung und verwandte Vorgänge."
 weight: 20

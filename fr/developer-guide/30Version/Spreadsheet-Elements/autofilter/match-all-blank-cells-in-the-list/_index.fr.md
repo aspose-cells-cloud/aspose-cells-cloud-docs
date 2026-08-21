@@ -3,8 +3,8 @@ title: "Correspondre à toutes les cellules vides dans une feuille de calcul Exc
 ArticleTitle: "Correspondre à toutes les cellules vides dans une feuille de calcul Excel – Guide de l’API Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /autofilter/match-all-blank/
-aliases: [/match-all-blank-cells-in-the-list/]
+url: /fr/autofilter/match-all-blank/
+aliases: [  /fr/match-all-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells, cellules vides, AutoFilter, API REST, Excel"
 description: "Découvrez comment utiliser l’API REST Aspose.Cells Cloud pour filtrer et correspondre à toutes les cellules vides dans une feuille de calcul Excel. Inclut le point de terminaison, les paramètres, les étapes d’authentification, un exemple cURL et des extraits de code SDK pour C#, Java, Python, et plus encore."
 weight: 100

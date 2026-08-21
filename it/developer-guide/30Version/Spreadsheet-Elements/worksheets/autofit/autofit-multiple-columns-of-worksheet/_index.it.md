@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Colonne"
 type: docs
 url: /it/worksheets/autofit/columns/
-aliases: [/it/autofit-multiple-columns-of-worksheet/]
+aliases: [  /it/autofit-multiple-columns-of-worksheet/ ]
 keywords: "Aspose.Cells, adattamento automatico colonne, Excel API, foglio di calcolo cloud, REST"
 description: "Scopri come eseguire l'adattamento automatico di più colonne in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include endpoint, parametri, esempio cURL, gestione errori e frammenti di codice SDK per C#, Java, Python e altro ancora."
 weight: 20

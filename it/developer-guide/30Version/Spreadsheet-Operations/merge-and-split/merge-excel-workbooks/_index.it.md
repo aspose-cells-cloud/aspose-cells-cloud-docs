@@ -3,8 +3,8 @@ title: "Unire un workbook Excel in un altro workbook"
 second_title: "Documento"
 linktitle: "Unire un workbook Excel in un altro workbook"
 type: docs
-url: /merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
+url: /it/merge-an-excel-file-into-the-excel-file/
+aliases: [  /it/merge-excel-workbooks/ , /it/workbook/merge/ ]
 keywords: "unione Excel, Aspose.Cells Cloud, API workbook, API REST, unione spreadsheet, SDK cloud, autenticazione, mergeWith, esempio cURL"
 description: "Guida passo-passo per unire un workbook Excel in un altro utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include autenticazione, parametro mergeWith obbligatorio, esempio cURL e frammenti di codice SDK."
 ArticleTitle: "Unire un workbook Excel in un altro workbook tramite l'API Aspose.Cells Cloud"

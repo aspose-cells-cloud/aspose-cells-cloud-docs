@@ -4,7 +4,7 @@ ArticleTitle: "Convertir hoja de cálculo a tabla HTML – Aspose.Cells Cloud AP
 second_title: "Documentos"
 linktype: "ConvertWorksheetToHtmlTable"
 type: docs
-url: /cells/convert/worksheet/html-table
+url: /es/cells/convert/worksheet/html-table
 aliases: []
 keywords: "Aspose.Cells, ConvertWorksheetToHtmlTable, tabla HTML, API"
 description: "Convierte una hoja de cálculo de un archivo en una unidad local en un archivo de tabla HTML utilizando Aspose.Cells Cloud."

@@ -3,7 +3,7 @@ title: "Aggiungi Immagine di Sfondo al Libro di Lavoro"
 second_title: "Documento"
 linktitle: "Aggiungi"
 type: docs
-url: /add-background-in-excel-file/
+url: /it/add-background-in-excel-file/
 aliases:
   - /add-background-in-workbook/
   - /workbook/add-background/

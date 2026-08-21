@@ -4,8 +4,8 @@ ArticleTitle: "Alle Änderungen in einer Remote-Tabelle akzeptieren – Aspose.C
 second_title: "Dokument"
 linktitle: "Alle Änderungen in einer Remote-Tabelle akzeptieren"
 type: docs
-url: /cells/accept-all-revisions
-aliases: ["/cells/accept-all-revisions"]
+url: /de/cells/accept-all-revisions
+aliases: [  /de/cells/accept-all-revisions ]
 keywords: "Aspose.Cells, AcceptAllRevisions, Remote-Tabelle"
 description: "Akzeptiert alle Änderungen (Überarbeitungen) in einer Remote-Tabelle und gibt die aktualisierte Arbeitsmappe als Datei zurück."
 weight: 1000

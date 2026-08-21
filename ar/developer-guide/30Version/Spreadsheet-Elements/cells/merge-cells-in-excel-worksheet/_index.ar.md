@@ -1,7 +1,7 @@
 ---
 title: "كيفية دمج الخلايا في ورقة عمل Excel – واجهة Aspose.Cells Cloud API (الإصدار 3.0)"
 type: docs
-url: /merge-cells-in-excel-worksheet/
+url: /ar/merge-cells-in-excel-worksheet/
 weight: 110
 keywords: "دمج الخلايا، Aspose.Cells، واجهة Cloud API، Excel"
 description: "دليل لدمج الخلايا في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API مع أمثلة لـ cURL وSDKs."

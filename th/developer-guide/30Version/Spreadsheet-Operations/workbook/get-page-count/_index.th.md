@@ -3,8 +3,8 @@ title: "รับจำนวนหน้าจากไฟล์ Excel"
 second_title: "เอกสาร"
 linktype: "หน้า"
 type: docs
-url: /get-page-count-from-an-excel-file/
-aliases: [/workbook/page-count/, /workbook/get/page-count/]
+url: /th/get-page-count-from-an-excel-file/
+aliases: [  /th/workbook/page-count/ , /th/workbook/get/page-count/ ]
 keywords: "Aspose.Cells, API บนคลาวด์, จำนวนหน้าของ Excel, การแบ่งหน้าในสมุดงาน"
 description: "ดึงจำนวนหน้าที่สามารถพิมพ์ได้ทั้งหมดในสมุดงาน Excel ผ่าน Aspose.Cells Cloud REST API (v3.0) ประกอบด้วยรูปแบบคำขอ พารามิเตอร์ที่จำเป็น ตัวอย่าง cURL โครงสร้างการตอบกลับ การจัดการข้อผิดพลาด และตัวอย่างโค้ด SDK สำหรับหลายภาษา"
 weight: 10

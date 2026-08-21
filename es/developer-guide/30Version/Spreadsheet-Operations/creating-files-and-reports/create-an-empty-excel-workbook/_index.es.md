@@ -3,7 +3,7 @@ title: "Crear un libro de Excel vacío"
 second_title: "Documentos"
 linktype: "Libro vacío"
 type: docs
-url: /create-an-empty-excel-file/
+url: /es/create-an-empty-excel-file/
 aliases:
   [
     /create-an-empty-excel-workbook/,

@@ -4,7 +4,7 @@ second_title: "الوثيقة"
 ArticleTitle: "البحث عن نص في ملفات إكسل بعيدة – العثور على بيانات محددة"
 linktitle: "البحث في محتوى الملف المتبعد"
 type: docs
-url: /search-content-in-remote-spreadsheet/
+url: /ar/search-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells, API بحث في إكسل, ملف إكسل سحابي, بحث عن نص, REST"
 description: "البحث عن نصوص أو أرقام أو صيغ في ملفات إكسل المخزَّنة في مساحة التخزين السحابية باستخدام Aspose.Cells Cloud. يدعم الاستعلامات غير الحساسة لحالة الأحرف، واختيار المجلد، والملفات المحمية بكلمة مرور."
 weight: 100

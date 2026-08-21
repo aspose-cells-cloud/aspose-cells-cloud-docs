@@ -3,8 +3,8 @@ title: "Автоподбор ширины столбца в Excel с помощ�
 second_title: "Документ"
 linktitle: "Столбец"
 type: docs
-url: /worksheets/autofit/column/
-aliases: [/autofit-single-column-of-worksheet/]
+url: /ru/worksheets/autofit/column/
+aliases: [  /ru/autofit-single-column-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, автоподбор столбца, Excel API, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Узнайте, как автоматически изменить ширину одного столбца (или диапазона столбцов) на листе Excel с помощью Aspose.Cells Cloud REST API. Включает примеры cURL и SDK (C#, Java, Python и др.), а также полные данные о запросе и ответе."
 weight: 10

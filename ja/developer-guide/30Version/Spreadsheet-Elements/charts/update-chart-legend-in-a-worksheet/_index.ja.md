@@ -1,8 +1,8 @@
 ---
 title: "ワークシート内のチャート凡例を更新する"
 type: docs
-url: /charts/legend/update/
-aliases: [/update-chart-legend-in-a-worksheet/]
+url: /ja/charts/legend/update/
+aliases: [  /ja/update-chart-legend-in-a-worksheet/ ]
 weight: 160
 keywords: "Aspose.Cells, クラウド, Excel, チャート, 凡例, REST API, 更新, ワークシート, cURL, SDK"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシート内のチャート凡例を更新する方法。cURL リクエストの例と複数のプログラミング言語向けの SDK コードスニペットを紹介します。"

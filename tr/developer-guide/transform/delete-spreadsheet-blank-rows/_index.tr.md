@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Excel’de Tüm Boş/Boş Satırları Nasıl Silinir – Tam Veri Temizleme Kılavuzu"
 linktitle: "Boş Satırları Sil"
 type: docs
-url: /delete-spreadsheet-blank-rows/
+url: /tr/delete-spreadsheet-blank-rows/
 keywords: "Aspose.Cells, Excel, boş satırlar, satır silme, çizelge temizleme, API"
 description: "Aspose.Cells Cloud API aracılığıyla Excel dosyalarından tüm boş satırları kaldırın. Hızlı, toplu işlemeye hazır ve tamamen programlanabilir – C#, Java, Python ve daha fazlasında kod örneklerini görün."
 weight: 100

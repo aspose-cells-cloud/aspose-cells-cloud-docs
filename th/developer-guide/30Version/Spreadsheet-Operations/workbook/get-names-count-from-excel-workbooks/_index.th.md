@@ -3,7 +3,7 @@ title: "ดึงชื่อจากสมุดงาน Excel"
 second_title: "เอกสาร"
 linktitle: "ชื่อ"
 type: docs
-url: /get-names-from-an-excel-file/
+url: /th/get-names-from-an-excel-file/
 aliases:
   [
     "/get-names-count-from-excel-workbooks/",

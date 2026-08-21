@@ -2,8 +2,8 @@
 title: "Excel-Dateien erstellen und Excel-Berichte erstellen"
 second_title: "Dokument"
 type: docs
-url: /creating-files-and-reports/
-aliases: [/workbook/create/]
+url: /de/creating-files-and-reports/
+aliases: [  /de/workbook/create/ ]
 linktitle: "Excel und Bericht erstellen"
 keywords: "Aspose.Cells Cloud, Excel-API, Arbeitsmappe erstellen, Excel-Bericht, SmartMarker, Vorlage, Berichtsgenerierung"
 description: "Erfahren Sie, wie Sie leere Excel-Arbeitsmappen erstellen, Dateien aus Vorlagen generieren und mit SmartMarker gesteuerte Berichte mithilfe der Aspose.Cells Cloud API erstellen – inklusive Codebeispielen."

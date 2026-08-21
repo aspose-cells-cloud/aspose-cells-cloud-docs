@@ -3,8 +3,8 @@ title: "Zeile in einem Excel-Arbeitsblatt automatisch anpassen"
 second_title: "Dokument"
 linktitle: "Zeile"
 type: docs
-url: /worksheets/autofit/row/
-aliases: [/autofit-single-row-of-worksheet/]
+url: /de/worksheets/autofit/row/
+aliases: [  /de/autofit-single-row-of-worksheet/ ]
 description: "Erfahren Sie, wie Sie die Aspose.Cells Cloud REST API verwenden, um eine Zeile in einem Excel-Arbeitsblatt automatisch anzupassen. Enthält Endpunkt, Parameter, Authentifizierung, Fehlerbehandlung, cURL-Anforderung und SDK-Beispiele."
 keywords: "Zeile automatisch anpassen, Aspose.Cells Cloud, Excel-API, REST, Arbeitsblatt, SDK, Tabellenkalkulation, Cloud-API"
 weight: 30

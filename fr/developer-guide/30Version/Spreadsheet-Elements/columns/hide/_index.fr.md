@@ -3,7 +3,7 @@ title: "Masquer des colonnes dans une feuille Excel"
 second_title: "Document"
 linktitle: "Masquer"
 type: docs
-url: /columns/hide/
+url: /fr/columns/hide/
 aliases:
   - /hide-columns-in-excel-worksheet/
   - /hide-columns-in-an-excel-worksheet/

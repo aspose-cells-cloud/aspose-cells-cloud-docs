@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "Aspose.Cells Cloud 定价方案"
 linktype: "定价方案"
 type: docs
-url: /pricing-plan/
+url: /zh/pricing-plan/
 description: "了解 Aspose.Cells Cloud 的定价方案：每月享有 150 次免费 API 调用，超出后按需付费，单次调用低至 0.007 美元。无隐藏升级项目，仅提供透明的分层定价。"
 weight: 70
 keywords: "Aspose.Cells Cloud 定价, API 调用费用, 按需付费的 Excel API, 云端电子表格定价"

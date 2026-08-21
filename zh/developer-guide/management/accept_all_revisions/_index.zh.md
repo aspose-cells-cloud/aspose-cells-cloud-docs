@@ -4,7 +4,7 @@ ArticleTitle: "接受所有修订 – Aspose.Cells Cloud"
 second_title: "文档"
 linktitle: "接受所有修订"
 type: docs
-url: /cells/spreadsheet/accept-all-revisions
+url: /zh/cells/spreadsheet/accept-all-revisions
 aliases: []
 keywords: "Aspose.Cells, AcceptAllRevisions, 电子表格, 修订"
 description: "使用 Aspose.Cells Cloud API 接受电子表格文件中的所有修订。"

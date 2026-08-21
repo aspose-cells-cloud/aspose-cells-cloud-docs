@@ -4,7 +4,7 @@ ArticleTitle: "범위를 CSV로 변환 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktitle: "범위를 CSV로 변환"
 type: docs
-url: /cells/convert/range/csv
+url: /ko/cells/convert/range/csv
 aliases: []
 keywords: "변환, csv, 범위, Aspose.Cells"
 description: "로컬 드라이브의 스프레드시트 범위를 CSV 파일로 변환합니다."

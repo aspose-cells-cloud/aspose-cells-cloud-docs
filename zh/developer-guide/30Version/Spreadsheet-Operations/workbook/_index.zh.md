@@ -3,8 +3,8 @@ title: "处理 Excel 文件：公式计算、自动调整列宽、清除对象�
 second_title: "文档"
 linktype: "Excel 常用操作"
 type: docs
-url: /workbook/
-aliases: [/working-with-workbook/]
+url: /zh/workbook/
+aliases: [  /zh/working-with-workbook/ ]
 keywords: "Aspose.Cells, Excel API, 工作簿操作, 计算公式, 自动调整列宽"
 description: "了解如何使用 Aspose.Cells Cloud REST API 处理 Excel 工作簿。分步指南涵盖公式计算、自动调整行/列宽、清除对象以及获取工作簿元数据等操作。提供 Python、.NET、Java 等多种 SDK。"
 weight: 20

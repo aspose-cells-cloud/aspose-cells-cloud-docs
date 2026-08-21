@@ -5,7 +5,7 @@ second_title: "문서"
 linktype: "Cells"
 type: docs
 url: /ko/working-with-cells/
-aliases: [/ko/working-with-worksheets/]
+aliases: [  /ko/working-with-worksheets/ ]
 keywords: "Excel, Aspose.Cells, 셀 작업, 스프레드시트 API, REST API, 셀 스타일링, 셀 병합, 수식 계산"
 description: "Aspose.Cells Cloud API를 통해 Excel 셀 작업을 탐색해 보세요. 여기에는 셀 값 설정, 스타일 적용, 셀 병합/해제, 수식 계산이 포함됩니다."
 weight: 100

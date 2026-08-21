@@ -4,7 +4,7 @@ ArticleTitle: "Konvertera intervall till CSV – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Konvertera intervall till CSV"
 type: docs
-url: /cells/convert/range/csv
+url: /sv/cells/convert/range/csv
 aliases: []
 keywords: "konvertera, csv, intervall, Aspose.Cells"
 description: "Konverterar ett intervall i ett kalkylark på en lokal enhet till CSV-fil."

@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API – Supprimer automatiquement les feuilles de
 second_title: "Document"
 ArticleTitle: "Supprimer toutes les feuilles vierges dans Excel – Guide pour supprimer les feuilles vides"
 linktype: "docs"
-url: /delete-spreadsheet-blank-worksheets/
+url: /fr/delete-spreadsheet-blank-worksheets/
 keywords: "Aspose.Cells Cloud, supprimer les feuilles vierges, Excel API, nettoyage du classeur, optimisation des feuilles de calcul"
 description: "Utilisez l’API Aspose.Cells Cloud pour supprimer automatiquement les feuilles de calcul vierges ou vides des classeurs Excel. Découvrez comment identifier et supprimer les feuilles ne contenant aucune donnée, formule, graphique ou objet, améliorant ainsi la performance et l’organisation des classeurs."
 weight: 100

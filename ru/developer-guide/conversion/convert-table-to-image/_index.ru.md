@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать табличные данные локальной электронной таблицы в файл изображения: пошаговое руководство"
 linktitle: "Преобразование таблицы в изображение"
 type: docs
-url: /convert-table-to-image/
+url: /ru/convert-table-to-image/
 keywords: "Aspose.Cells, Cloud API, преобразование таблицы в изображение, Excel, PNG, JPEG, TIFF, BMP, SVG"
 description: "Быстро преобразуйте табличные данные локальной книги Excel в файл изображения с помощью Aspose.Cells Cloud API. Поддерживаются форматы PNG, JPEG, TIFF, BMP, SVG и другие."
 weight: 100

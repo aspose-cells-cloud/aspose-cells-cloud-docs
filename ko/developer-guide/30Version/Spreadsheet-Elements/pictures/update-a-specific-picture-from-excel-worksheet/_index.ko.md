@@ -3,8 +3,8 @@ title: "Excel 파일에서 이미지 업데이트하기"
 second_title: "문서"
 linktype: "업데이트"
 type: docs
-url: /pictures/update/
-aliases: [/update-a-specific-picture-from-excel-workshee/]
+url: /ko/pictures/update/
+aliases: [  /ko/update-a-specific-picture-from-excel-workshee/ ]
 keywords: "Aspose.Cells Cloud, Excel, 이미지 업데이트, REST API, SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 이미지를 업데이트하는 방법을 알아보세요. 요청 세부 정보, cURL 예제, 여러 언어의 SDK 스니펫이 포함되어 있습니다."
 ArticleTitle: "Aspose.Cells Cloud REST API를 사용하여 Excel 파일의 이미지 업데이트하기"

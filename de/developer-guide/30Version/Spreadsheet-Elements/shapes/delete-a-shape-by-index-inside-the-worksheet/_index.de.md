@@ -3,8 +3,8 @@ title: "Löschen einer Formularformular nach Index auf einem Excel-Arbeitsblatt"
 second_title: "Dokument"
 linktitle: "Löschen"
 type: docs
-url: /shapes/delete/
-aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
+url: /de/shapes/delete/
+aliases: [  /delete-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Formular löschen, Formularindex, Excel-Arbeitsblatt, REST-API, SDK"
 description: "Verwenden Sie die Aspose.Cells Cloud REST-API, um eine Formularformular nach ihrem Index auf einem Excel-Arbeitsblatt zu löschen. Die API ist über mehrere SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) verfügbar und unterstützt verschiedene Speicheroptionen."
 weight: 50

@@ -3,7 +3,7 @@ title: "AutoFitterOptions – 属性与使用指南 | Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "AutoFitterOptions"
 type: docs
-url: /auto-fitter-options/
+url: /zh/auto-fitter-options/
 keywords: "AutoFitterOptions, Aspose.Cells, Excel 自动调整行高, 行高, 合并单元格, API"
 description: "了解如何使用 Aspose.Cells Cloud API 中的 AutoFitterOptions 对象控制行高自动调整、合并单元格处理、隐藏行/列、语言设置以及渲染相关选项。"
 weight: 79

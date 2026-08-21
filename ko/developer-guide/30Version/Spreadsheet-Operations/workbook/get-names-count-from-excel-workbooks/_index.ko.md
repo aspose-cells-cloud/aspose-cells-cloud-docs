@@ -3,7 +3,7 @@ title: "Excel 워크북에서 이름 가져오기"
 second_title: "문서"
 linktitle: "이름"
 type: docs
-url: /get-names-from-an-excel-file/
+url: /ko/get-names-from-an-excel-file/
 aliases:
   [
     /get-names-count-from-excel-workbooks/,

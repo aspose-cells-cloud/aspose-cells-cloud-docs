@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "مسح"
 type: docs
 url: /ar/clear/
-aliases: [/ar/clearobjects/]
+aliases: [  /ar/clearobjects/ ]
 keywords: "Aspose.Cells, Excel, مسح الكائنات, REST API, Cloud SDK, إزالة التعليقات, حذف المخططات"
 description: "استخدم Aspose.Cells Cloud REST API لحذف التعليقات والمخططات والأشكال والكائنات الأخرى من ملف Excel. يدعم مجموعة واسعة من SDKs ويعيد الملف النظيف بصيغة Base64."
 weight: 39

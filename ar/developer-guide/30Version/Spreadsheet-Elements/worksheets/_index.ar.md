@@ -3,8 +3,8 @@ title: "العمل مع أوراق عمل إكسل."
 second_title: "مستند"
 linktype: "ورقات العمل"
 type: docs
-url: /worksheets/
-aliases: [/working-with-worksheets/]
+url: /ar/worksheets/
+aliases: [  /ar/working-with-worksheets/ ]
 keywords: "ورقة عمل إكسل، Aspose.Cells Cloud، REST API، جدول بيانات، ملف عمل، معالجة البيانات، أتمتة إكسل"
 description: "تتيح واجهة Aspose.Cells Cloud REST العمل مع أوراق العمل في ملف عمل إكسل. يدعم SDK لغات برمجة متعددة، منها Android وC# وGo وJava وNode.js وPerl وPHP وPython وRuby وSwift."
 weight: 100

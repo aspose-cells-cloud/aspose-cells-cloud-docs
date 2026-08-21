@@ -4,7 +4,7 @@ ArticleTitle: "Agregar filtro superior 10 a una hoja de cálculo de Excel – As
 second_title: "Documento"
 linktitle: "Agregar filtro superior 10"
 type: docs
-url: /autofilter/add-top-10-filter/
+url: /es/autofilter/add-top-10-filter/
 aliases:
   [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
 keywords: "Aspose.Cells, AutoFilter, Filtro superior 10, API de Excel"

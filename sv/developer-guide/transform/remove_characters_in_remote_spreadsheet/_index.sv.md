@@ -4,7 +4,7 @@ ArticleTitle: "Ta bort tecken i fjärrkalkylark – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Ta bort tecken i fjärrkalkylark"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
+url: /sv/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
 aliases: []
 keywords: "Aspose.Cells, ta bort tecken, textbearbetning"
 description: "Tar bort användardefinierade tecken, fördefinierade symboluppsättningar eller valfri delsträng från varje cell i det valda intervallet, samtidigt som formler, formatering och datavalidering för ett fjärrkalkylark bevaras."

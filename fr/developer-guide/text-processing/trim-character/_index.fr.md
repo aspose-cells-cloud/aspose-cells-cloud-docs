@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Nettoyeur de données Excel – Supprimer automatiquement les caractères, les espaces et les sauts de ligne – En ligne, avec shortcode"
 linktitle: "Suppression de caractères"
 type: docs
-url: /trim-character/
+url: /fr/trim-character/
 keywords: "Excel, suppression de texte, suppression d’espaces, sauts de ligne, Aspose.Cells, nettoyage de données, feuille de calcul, normalisation du formatage des cellules"
 description: "Supprimez les espaces, sauts de ligne et caractères indésirables supplémentaires des cellules Excel à l’aide de l’API Aspose.Cells Cloud. Assurez-vous que vos données de feuille de calcul soient propres et cohérentes."
 weight: 100

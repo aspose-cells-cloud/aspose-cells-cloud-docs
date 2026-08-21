@@ -3,7 +3,7 @@ title: "Добавление правила валидации листа в р�
 second_title: "Документ"
 linktitle: "Добавление"
 type: docs
-url: /validations/add/ru/
+url: /ru/validations/add/ru/
 keywords: "Добавление правила валидации листа, Excel, Aspose.Cells Cloud, REST API, Таблица, Правило валидации"
 description: "Используйте REST API Aspose.Cells Cloud для добавления правила валидации листа в файл Excel. Доступны SDK для C#, Java, PHP, Ruby, Node.js, Python, Perl, Go и Swift."
 weight: 10

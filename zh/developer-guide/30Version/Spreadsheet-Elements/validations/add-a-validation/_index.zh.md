@@ -3,7 +3,7 @@ title: "向 Excel 工作表添加工作表验证"
 second_title: "文档"
 linktitle: "添加"
 type: docs
-url: /validations/add/
+url: /zh/validations/add/
 keywords: "添加工作表验证, Excel, Aspose.Cells Cloud, REST API, 电子表格, 验证规则"
 description: "使用 Aspose.Cells Cloud REST API 向 Excel 文件添加工作表验证。支持 C#、Java、PHP、Ruby、Node.js、Python、Perl、Go 和 Swift 的 SDK 均已提供。"
 weight: 10

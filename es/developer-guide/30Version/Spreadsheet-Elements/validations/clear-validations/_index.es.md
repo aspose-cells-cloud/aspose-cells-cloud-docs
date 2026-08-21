@@ -3,7 +3,7 @@ title: "Eliminar todas las validaciones de la hoja de cálculo – Aspose.Cells 
 second_title: "Documentación"
 linktitle: "Eliminar"
 type: docs
-url: /validations/clear/
+url: /es/validations/clear/
 keywords: "Aspose.Cells Cloud, Eliminar validaciones de hoja de cálculo, Excel, API REST, Validación de hojas de cálculo, API"
 description: "Elimine todas las reglas de validación de datos de una hoja de cálculo en un archivo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye pasos de autenticación, detalles de la solicitud, ejemplo de cURL, esquema de respuesta, manejo de errores y fragmentos de SDK."
 weight: 10

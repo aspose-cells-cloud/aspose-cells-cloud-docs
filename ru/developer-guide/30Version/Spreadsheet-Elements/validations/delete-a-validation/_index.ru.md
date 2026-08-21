@@ -3,7 +3,7 @@ title: "Удаление проверки листа — Aspose.Cells Cloud"
 second_title: "Документ"
 linktitle: "Удаление"
 type: docs
-url: /validations/delete/
+url: /ru/validations/delete/
 keywords: "Удаление, проверка листа, Aspose.Cells Cloud, Excel API"
 description: "Узнайте, как удалить проверку листа из файла Excel с помощью REST API Aspose.Cells Cloud. Включает endpoint, параметры, данные для аутентификации, пример cURL, обработку ошибок и фрагменты кода SDK."
 weight: 10

@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud SDK for Node.js: Dönüştür, birleştir, böl, koru, ara, değiştir ve daha fazlası."
 linktype: "Aspose.Cells Cloud SDK for Node.js"
 type: docs
-url: /available-sdks/aspose-cells-cloud-node/
+url: /tr/available-sdks/aspose-cells-cloud-node/
 description: "Aspose.Cells Cloud SDK for Node.js, gerçek platformlar arası gücünü sunar: tek bir içe aktarma, Windows, Linux ve macOS geliştiricilerine aynı akıcı API’yi sağlar; böylece her Excel nesnesini oluşturabilir, dönüştürebilir, birleştirebilir, bölebilir, koruyabilir ve işlem yapabilir—Office kurulumuna gerek yoktur ve platforma özel ayarlara da ihtiyaç duyulmaz."
 weight: 30
 kwords: Node.js, Node.js SDK, Node.js için Excel SDK’sı, Node.js için Bulut SDK’sı, REST, Grafik, Pivot Tablo, Tablo/Liste Nesnesi, Elektronik Tabloyu Dönüştür, PDF, CSV, JSON, Markdown, Birleştir, Böl, Koru, Ara, Değiştir

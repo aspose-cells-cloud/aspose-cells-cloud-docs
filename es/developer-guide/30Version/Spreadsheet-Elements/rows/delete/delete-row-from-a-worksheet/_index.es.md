@@ -3,8 +3,8 @@ title: "Eliminar una fila en una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Fila"
 type: docs
-url: /rows/delete/row/
-aliases: [/delete-row-from-a-worksheet/]
+url: /es/rows/delete/row/
+aliases: [  /es/delete-row-from-a-worksheet/ ]
 description: "Utilice el punto de conexión DELETE /worksheets/{sheetName}/cells/rows/{rowIndex} para eliminar una fila específica de una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye comando cURL, ejemplos de SDK y referencia completa de parámetros."
 keywords: "Aspose.Cells, eliminar fila, Excel, API, REST, Cloud, SDK"
 weight: 80

@@ -4,7 +4,7 @@ ArticleTitle: "リモートスプレッドシート内の重複する部分文�
 second_title: "ドキュメント"
 linktype: "Remove Duplicate Substrings In Remote Spreadsheet"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
+url: /ja/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
 aliases: []
 keywords: "Aspose.Cells, 重複する部分文字列の削除, API"
 description: "ワークブック内の指定された範囲のセル内にある繰り返し部分文字列を検出し、削除するためのAPIです。"

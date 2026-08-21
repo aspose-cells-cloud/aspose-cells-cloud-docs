@@ -4,7 +4,7 @@ ArticleTitle: "将表格转换为 PDF – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "将表格转换为 PDF"
 type: docs
-url: /cells/convert/table/pdf
+url: /zh/cells/convert/table/pdf
 aliases: []
 keywords: "将表格转换为 PDF, Aspose.Cells, API"
 description: "使用 Aspose.Cells Cloud 将本地磁盘上的电子表格中的表格转换为 PDF 文件。"

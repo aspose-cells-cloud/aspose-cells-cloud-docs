@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud 웹 API – 자동으로 빈/공행 행 삭제"
 second_title: "문서"
 ArticleTitle: "Excel에서 모든 빈/공행 행을 삭제하는 방법 – 완벽한 데이터 정리 가이드"
 linktype: "docs"
-url: /delete-spreadsheet-blank-rows/
+url: /ko/delete-spreadsheet-blank-rows/
 keywords: "Aspose.Cells, Excel, 빈 행, 행 삭제, 스프레드시트 정리, API"
 description: "Aspose.Cells Cloud API를 사용해 Excel 파일에서 모든 빈 행을 제거하세요. 빠르고 일괄 처리에 최적화되며 완전히 프로그래밍 가능합니다. C#, Java, Python 등 다양한 언어의 코드 예시를 확인하세요."
 weight: 100

@@ -2,7 +2,7 @@
 title: "كيفية دمج ملفات جداول البيانات المتعددة باستخدام Aspose.Cells Cloud"
 linktitle: "كيفية دمج ملفات جداول البيانات المتعددة"
 type: docs
-url: /how-to-merge-multiple-files
+url: /ar/how-to-merge-multiple-files
 description: "كيفية دمج ملفات جداول البيانات المتعددة باستخدام Aspose.Cells Cloud."
 weight: 10
 kwords: Excel، Office Cloud، REST API، جدول بيانات، PDF، CSV، JSON، Markdown، كيفية دمج ملفات متعددة باستخدام Aspose.Cells Cloud

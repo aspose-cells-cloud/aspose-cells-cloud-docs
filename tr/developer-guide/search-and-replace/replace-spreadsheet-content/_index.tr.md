@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Yerel Excel Dosyalarında Toplu Metin Değiştirme – Bul & Değiştir API"
 linktitle: "Elektronik Tablo İçeriğini Değiştir"
 type: docs
-url: /replace-spreadsheet-content/
+url: /tr/replace-spreadsheet-content/
 keywords: "Excel’de metin değiştirme, Aspose.Cells Bul ve Değiştir, yerel elektronik tablo API’si, Excel dosyası değiştirme, içerik değiştirme API’si"
 description: "Bulut’a yüklemeden yerel Excel çalışma kitaplarında metin değiştirin. Belirli aralıkları, çalışma sayfalarını veya tüm dosyaları tek bir çağrıda güncellemek için Aspose.Cells Cloud Bul & Değiştir API’sini kullanın."
 weight: 100

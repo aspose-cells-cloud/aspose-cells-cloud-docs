@@ -3,8 +3,8 @@ title: "ดึงข้อมูลตารางไข่ข้าวทั้
 second_title: "เอกสาร"
 linktitle: ดึงข้อมูลทั้งหมด
 type: docs
-url: /pivot-tables/get-all/
-aliases: [/get-worksheet-pivot-tables-information/]
+url: /th/pivot-tables/get-all/
+aliases: [  /th/get-worksheet-pivot-tables-information/ ]
 keywords: "ดึงข้อมูลตารางไข่ข้าวทั้งหมด, Aspose.Cells Cloud API, Excel PivotTable, REST API"
 description: "ดึงข้อมูลตารางไข่ข้าวทุกตารางจากแผ่นงาน Excel ผ่าน Aspose.Cells Cloud API รวมถึง endpoint, พารามิเตอร์, ขั้นตอนการยืนยันตัวตน, cURL และตัวอย่าง SDK สำหรับ API ตารางไข่ข้าว"
 weight: 20

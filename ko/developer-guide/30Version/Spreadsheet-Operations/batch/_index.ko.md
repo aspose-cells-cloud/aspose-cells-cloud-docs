@@ -3,7 +3,7 @@ title: "Excel 파일 일괄 처리: 변환, 잠금, 보호, 분할, 잠금 해�
 second_title: "문서"
 linktype: "Excel 파일 일괄 처리"
 type: docs
-url: /batch/
+url: /ko/batch/
 keywords: "일괄 처리, Excel, 변환, 잠금, 보호, 분할, 잠금 해제, Aspose.Cells Cloud API, API 참조, 일괄 작업"
 description: "Aspose.Cells Cloud API를 사용하면 여러 Excel 파일을 일괄적으로 변환, 잠금, 보호, 분할, 잠금 해제할 수 있습니다. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, Swift를 위한 자세한 API 사양 및 SDK 지원을 제공합니다."
 weight: 35

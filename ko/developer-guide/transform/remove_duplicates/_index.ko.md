@@ -3,7 +3,7 @@ title: "중복 제거"
 ArticleTitle: "중복 제거 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: /cells/remove/duplicates
+url: /ko/cells/remove/duplicates
 aliases: []
 keywords: "Aspose.Cells, 중복 제거, API"
 description: "워크시트, 범위 또는 테이블에서 중복 값을 제거합니다."

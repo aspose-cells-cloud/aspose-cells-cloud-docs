@@ -4,7 +4,7 @@ ArticleTitle: "Excel ListObject ile Çalışmak"
 second_title: "Belge"
 linktitle: "ListObject'ler"
 type: docs
-url: /list-objects/
+url: /tr/list-objects/
 aliases:
   - /working-with-list-objects/
   - /working-with-list-object-or-table/

@@ -4,7 +4,7 @@ ArticleTitle: "Importare dati CSV in un foglio di calcolo – Aspose.Cells Cloud
 second_title: "Documento"
 linktitle: "Importare dati CSV in un foglio di calcolo"
 type: docs
-url: /cells/import/data/csv
+url: /it/cells/import/data/csv
 aliases: []
 keywords: "Aspose.Cells, importazione CSV, foglio di calcolo, API"
 description: "Importa un file CSV in un foglio di calcolo locale utilizzando l’API Aspose.Cells Cloud."

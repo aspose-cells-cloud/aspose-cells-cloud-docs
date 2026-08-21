@@ -4,7 +4,7 @@ ArticleTitle: "Ajouter plusieurs lignes à une feuille de calcul Excel à l’ai
 second_title: "Document"
 linktype: "Lignes"
 type: docs
-url: /rows/add/rows/
+url: /fr/rows/add/rows/
 keywords: "Aspose.Cells Cloud, insérer des lignes, feuille de calcul Excel, API REST, SDK, ajouter plusieurs lignes"
 description: "Découvrez comment utiliser l’API REST Aspose.Cells Cloud pour insérer plusieurs lignes dans une feuille de calcul Excel. Ce guide couvre le point de terminaison, les paramètres de requête, les commandes cURL d’exemple et des exemples d’utilisation du SDK."
 weight: 20

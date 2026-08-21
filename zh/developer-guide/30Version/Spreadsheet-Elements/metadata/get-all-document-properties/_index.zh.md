@@ -3,8 +3,8 @@ title: "获取所有文档属性"
 second_title: "文档"
 linktitle: "获取全部"
 type: docs
-url: /document-properties/get-all/
-aliases: [/get-all-document-properties/]
+url: /zh/document-properties/get-all/
+aliases: [  /zh/get-all-document-properties/ ]
 keywords: "获取所有文档属性, Aspose.Cells Cloud, Excel 文档属性, REST API, SDK, Excel 元数据"
 description: "使用 Aspose.Cells Cloud REST API 从 Excel 文件中检索所有文档属性。该端点支持所有受支持的 SDK 和编程语言。"
 ArticleTitle: "获取所有文档属性 – Aspose.Cells Cloud API"

@@ -3,8 +3,8 @@ title: "Excel-Datei in mehrere Dateien aufteilen"
 second_title: "Dokument"
 linktitle: "Mehrseitige Excel-Dateien aufteilen"
 type: docs
-url: /split-an-excel-file-to-multi-files/
-aliases: [/split-excel-workbooks/,/workbook/split/]
+url: /de/split-an-excel-file-to-multi-files/
+aliases: [  /de/split-excel-workbooks/ , /de/workbook/split/ ]
 keywords: "Aspose.Cells, Cloud, Excel, Aufteilen, API, PDF, CSV, JSON"
 description: "Verwenden Sie die Aspose.Cells Cloud REST API, um mehrseitige Excel-Arbeitsmappen in separate Dateien aufzuteilen. Unterstützt Ausgabeformate wie PDF, CSV und JSON und ist über SDKs für Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby und Swift verfügbar."
 weight: 32

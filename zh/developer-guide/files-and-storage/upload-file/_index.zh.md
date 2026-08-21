@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "Aspose.Cells Cloud 文件上传 API —— 云中快速上传文件的接口"
 linktype: "上传文件"
 type: docs
-url: /upload-file/
+url: /zh/upload-file/
 keywords: "Aspose.Cells, 文件上传, Excel API, 云存储, REST API"
 description: "使用 Aspose.Cells Cloud API 上传文件的指南，涵盖请求参数、HTTP 状态码、错误处理及代码示例。"
 weight: 100

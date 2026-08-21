@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Excel 位置ベース文字削除ツール – 特定の位置のテキストを削除 – オンラインショートコード"
 linktitle: "位置指定で文字を削除"
 type: docs
-url: /remove-characters-by-position/
+url: /ja/remove-characters-by-position/
 keywords: "Aspose.Cells Cloud, 位置指定で文字を削除, Excel テキストクリーニング, 最初の N 文字を削除, 最後の N 文字を削除, マーカー前のテキストを削除, マーカー後のテキストを削除, 値間のテキスト削除"
 description: "Aspose.Cells Cloud Web API を使用して、Excel セル内の位置に基づいて文字を削除します。先頭／末尾の N 文字、または特定のマーカーの前／後のテキストを高精度で削除できます。"
 weight: 100

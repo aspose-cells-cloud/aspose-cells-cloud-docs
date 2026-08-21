@@ -3,7 +3,7 @@ title: "从 Excel 文件中删除元数据"
 second_title: "文档"
 linktitle: "无需使用存储空间删除"
 type: docs
-url: /metadata/delete/
+url: /zh/metadata/delete/
 keywords: "Aspose.Cells, 删除元数据, Excel API, 工作簿属性"
 description: "通过 Aspose.Cells Cloud API 删除工作簿元数据（作者、标题、自定义属性）。包含端点、身份验证、参数、cURL 和 SDK 示例。"
 weight: 55

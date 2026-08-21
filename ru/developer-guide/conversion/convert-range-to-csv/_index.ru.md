@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать локальный диапазон электронной таблицы в CSV-файл: пошаговое руководство"
 linktitle: "Преобразование диапазона в CSV"
 type: docs
-url: /convert-range-to-csv/
+url: /ru/convert-range-to-csv/
 keywords: "Aspose Cells, преобразование диапазона в CSV, Excel в CSV, API Excel, облачная электронная таблица, преобразование, Excel, CSV, Aspose.Cells, облачный API"
 description: "Узнайте, как преобразовать конкретный диапазон из локальной рабочей книги Excel (XLSX или XLS) в CSV с использованием облачного REST API Aspose.Cells Cloud. Включает синтаксис запроса, параметры, обработку ошибок и примеры SDK."
 ---

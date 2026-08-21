@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Поиск текста в удаленных табличных файлах Excel — поисковая функция для поиска конкретных данных"
 linktitle: "Поиск содержимого в удаленном табличном файле"
 type: docs
-url: /search-content-in-remote-spreadsheet/
+url: /ru/search-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells, API поиска в Excel, облачный табличный файл, поиск текста, REST"
 description: "Выполняйте поиск текста, чисел или формул в файлах Excel, хранящихся в облачном хранилище, с помощью Aspose.Cells Cloud. Поддерживает регистронезависимые запросы, выбор папки и работу с защищенными паролем книгами."
 weight: 100

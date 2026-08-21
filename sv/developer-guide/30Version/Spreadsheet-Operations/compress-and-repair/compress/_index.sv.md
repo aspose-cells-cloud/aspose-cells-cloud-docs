@@ -4,8 +4,8 @@ ArticleTitle: "Komprimera data i en Excel-fil – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Komprimera Excel-filer"
 type: docs
-url: /compress-excel-files/
-aliases: [/compress/]
+url: /sv/compress-excel-files/
+aliases: [  /sv/compress/ ]
 keywords: "komprimera excel-fil, aspose cells cloud, excel-komprimering, kalkylarkskomprimering, rest-api, filkomprimering"
 description: "Komprimera Excel-filer (XLS, XLSX, XLSM, XLSB, ODS) med Aspose.Cells Cloud REST API. Ställ in komprimeringsnivå, hantera flera filer och integrera via SDK:er."
 weight: 39

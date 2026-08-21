@@ -1,8 +1,8 @@
 ---
 title: "Hinzufügen eines Diagramms zu einem Arbeitsblatt"
 type: docs
-url: /charts/add/
-aliases: [/add-a-chart-in-a-worksheet/]
+url: /de/charts/add/
+aliases: [  /de/add-a-chart-in-a-worksheet/ ]
 weight: 20
 description: "Erfahren Sie, wie Sie mithilfe der Aspose.Cells Cloud API v3.0 ein Diagramm zu einem Excel-Arbeitsblatt hinzufügen. Enthält Endpunkt, Parameter, cURL-Beispiel und SDK-Snippets."
 keywords:

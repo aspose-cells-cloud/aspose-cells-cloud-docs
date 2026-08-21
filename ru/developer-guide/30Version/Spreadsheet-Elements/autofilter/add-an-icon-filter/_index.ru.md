@@ -3,8 +3,8 @@ title: "Добавление фильтра по значку в рабочий 
 second_title: "Документ"
 linktype: "Добавление фильтра по значку"
 type: docs
-url: /autofilter/add-icon-filter/
-aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
+url: /ru/autofilter/add-icon-filter/
+aliases: [  /ru/add-an-icon-filter/ , /ru/autofilter/add-an-icon-filter/ ]
 keywords: "Aspose.Cells Cloud, Excel, фильтр по значку, автофильтр, REST API"
 description: "Узнайте, как добавить фильтр по значку в рабочий лист Excel с помощью REST API Aspose.Cells Cloud, включая детали запроса, пример cURL, примеры кода SDK и обработку ошибок."
 weight: 65

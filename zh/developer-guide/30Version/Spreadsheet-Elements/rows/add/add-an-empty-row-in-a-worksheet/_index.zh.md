@@ -4,8 +4,8 @@ ArticleTitle: "使用 Aspose.Cells Cloud API 在 Excel 工作表中添加空行"
 second_title: "文档"
 linktitle: "行"
 type: docs
-url: /rows/add/row/
-aliases: [/add-an-empty-row-in-a-worksheet/]
+url: /zh/rows/add/row/
+aliases: [  /zh/add-an-empty-row-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, 添加空行, 工作表, REST API, 插入行, 云电子表格"
 description: "使用 Aspose.Cells Cloud REST API 向 Excel 工作表插入空行。支持多种 SDK（C#、Java、Python、Go、PHP、Ruby、Node.js、Perl、Android、Swift），便于快速开发。"
 weight: 20

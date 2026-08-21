@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud"
 ArticleTitle: "Fusionner des fichiers Excel dans le cloud – Combiner des classeurs en ligne avec l’API Aspose.Cells Cloud"
 linktitle: "Fusionner un classeur distant"
 type: docs
-url: /merge-remote-spreadsheet/
+url: /fr/merge-remote-spreadsheet/
 keywords: "Aspose.Cells, fusionner Excel, API cloud, combiner classeur"
 description: "Fusionner des classeurs Excel stockés dans le stockage cloud à l’aide de l’API Aspose.Cells Cloud. Spécifiez le format de sortie, le dossier cible et le mode de fusion en une seule requête HTTPS."
 weight: 100

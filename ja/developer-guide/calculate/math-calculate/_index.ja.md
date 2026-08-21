@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "スプレッドシート／Excel での加算、減算、乗算、除算、パーセンテージ計算"
 linktitle: "数学計算"
 type: docs
-url: /math-calculate/
+url: /ja/math-calculate/
 keywords: "数学計算 API, Aspose.Cells Cloud, Excel 計算, 加算, 減算, 乗算, 除算, パーセンテージ, Excel 一括処理, REST API"
 description: "Aspose.Cells Cloud 数学計算 API を使用して、Excel の範囲に対して加算、減算、乗算、除算、パーセンテージ操作を一括で適用する方法を学びます。リクエスト形式、サンプルコード、エラー処理を含みます。"
 weight: 100

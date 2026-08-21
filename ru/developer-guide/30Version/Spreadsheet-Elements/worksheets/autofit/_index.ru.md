@@ -3,8 +3,8 @@ title: "Работа с автоподбором размера в рабоче�
 second_title: "Документ"
 linktitle: "Автоподбор"
 type: docs
-url: /worksheets/autofit/
-aliases: [/autofit-rows-and-columns-of-worksheet/]
+url: /ru/worksheets/autofit/
+aliases: [  /ru/autofit-rows-and-columns-of-worksheet/ ]
 keywords: "автоподбор, столбец, строка, Aspose.Cells, облако, Excel, API, изменение размера"
 description: "Узнайте, как автоматически изменять размер строк и столбцов в рабочей таблице Excel с помощью REST API Aspose.Cells Cloud. Включает примеры на cURL, .NET, Java и Python."
 weight: 20

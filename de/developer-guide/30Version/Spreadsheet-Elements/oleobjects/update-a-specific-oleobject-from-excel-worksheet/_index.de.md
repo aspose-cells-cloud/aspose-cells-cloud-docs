@@ -3,8 +3,8 @@ title: "Ein OLE-Objekt in einer Excel-Arbeitsmappe aktualisieren"
 second_title: "Dokument"
 linktitle: "Aktualisieren"
 type: docs
-url: /oleobjects/update/
-aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
+url: /de/oleobjects/update/
+aliases: [  /de/update-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "OLE-Objekt aktualisieren, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "Erfahren Sie, wie Sie ein OLE-Objekt (Bild, Diagramm usw.) in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API aktualisieren. Enthält cURL- und SDK-Beispiele, Schritte zur Authentifizierung sowie Fehlerbehandlung."
 weight: 30

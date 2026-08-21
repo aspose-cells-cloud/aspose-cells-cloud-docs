@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как добавить листы в Excel — вставка новых листов в определенные позиции"
 linktype: "Добавить лист в электронную таблицу"
 type: docs
-url: /add-worksheet-to-spreadsheet/
+url: /ru/add-worksheet-to-spreadsheet/
 keywords: "excel, добавить лист, aspose cells api, электронная таблица, облачный api, тип листа, позиция листа"
 description: "Узнайте, как программно добавлять новый рабочий лист, лист диаграммы или макрос-лист в книгу Excel с помощью Aspose.Cells Cloud API. Управляйте типом листа, его именем и позицией вставки в одном REST-вызове."
 weight: 100

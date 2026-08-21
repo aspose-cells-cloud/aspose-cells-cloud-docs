@@ -1,7 +1,7 @@
 ---
 title: "รับช่วงเซลล์ที่ถูกผสานจากสมุดงาน Excel – Aspose.Cells Cloud API"
 type: docs
-url: /get-mergedcell-from-a-worksheet/
+url: /th/get-mergedcell-from-a-worksheet/
 weight: 60
 keywords: "Aspose.Cells Cloud, เซลล์ที่ผสาน, สมุดงาน Excel, REST API, Aspose.Cells SDK, เซลล์ที่ผสานใน Excel"
 description: "เรียนรู้วิธีดึงข้อมูลช่วงเซลล์ที่ผสานจากสมุดงาน Excel โดยใช้ Aspose.Cells Cloud API (เวอร์ชัน 3.0) ซึ่งรวมถึงขั้นตอนการตรวจสอบสิทธิ์ คำสั่ง cURL แบบเต็ม โครงสร้างการตอบกลับ การจัดการข้อผิดพลาด และตัวอย่าง SDK ในภาษา C#, Java, Python และอื่นๆ"

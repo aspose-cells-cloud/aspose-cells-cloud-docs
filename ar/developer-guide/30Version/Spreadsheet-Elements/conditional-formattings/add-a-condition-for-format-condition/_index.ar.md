@@ -3,7 +3,7 @@ title: إضافة شرط إلى التنسيق الشرطي
 description: تعلّم كيفية إضافة شرط إلى تنسيق شرطي في ورقة عمل باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمّن عنوان URL للنقطة الطرفية، المُعلمات، المصادقة، مثال cURL، مقاطع كود SDK، ومعالجة الأخطاء.
 keywords: "Aspose.Cells Cloud، التنسيق الشرطي، إضافة شرط، واجهة REST API، Excel، ورقة العمل"
 type: docs
-url: /conditional-formattings/add-a-condition/
+url: /ar/conditional-formattings/add-a-condition/
 aliases:
   - /add-a-condition-for-format-condition/
 weight: 40

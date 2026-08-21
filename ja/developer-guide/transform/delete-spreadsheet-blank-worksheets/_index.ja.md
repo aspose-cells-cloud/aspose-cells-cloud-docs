@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API - 空白または空のワークシートを�
 second_title: "ドキュメント"
 ArticleTitle: "Excel からすべての空白ワークシートを削除する – 空のシートを削除するガイド"
 linktype: "docs"
-url: /delete-spreadsheet-blank-worksheets/
+url: /ja/delete-spreadsheet-blank-worksheets/
 keywords: "Aspose.Cells Cloud, 空白ワークシートの削除, Excel API, ワークブックのクリーンアップ, スプレッドシートの最適化"
 description: "Aspose.Cells Cloud API を使用して Excel ワークブックから空白または空のワークシートを自動的に削除します。データ、数式、チャート、オブジェクトを含まないシートを識別し削除する方法を学び、ワークブックのパフォーマンスと整理性を向上させましょう。"
 weight: 100

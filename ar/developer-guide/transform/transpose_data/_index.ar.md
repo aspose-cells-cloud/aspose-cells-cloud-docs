@@ -3,8 +3,8 @@ title: "TransposeData"
 ArticleTitle: "TransposeData – واجهة برمجة تطبيقات Aspose.Cells السحابية"
 second_title: "وثيقة"
 linktype: "docs"
-url: /cells/transpose
-aliases: ["/cells/transpose"]
+url: /ar/cells/transpose
+aliases: [  /ar/cells/transpose ]
 keywords: "TransposeData، Aspose.Cells، واجهة برمجة تطبيقات سحابية، جدول بيانات، نقل بيانات"
 description: "تبديل الصفوف والأعمدة في جدول البيانات."
 weight: 1000

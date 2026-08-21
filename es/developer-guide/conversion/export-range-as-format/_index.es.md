@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cómo exportar un rango de hoja de cálculo remota a otros formatos: guía paso a paso"
 linktitle: "Exportar rango como formato"
 type: docs
-url: /export-range-as-format/
+url: /es/export-range-as-format/
 keywords: "Aspose Cells, exportar rango de Excel, PDF, PNG, CSV, API en la nube, conversión de hoja de cálculo"
 description: "Aprenda a convertir un rango específico de Excel almacenado en Aspose.Cells Cloud a PDF, PNG, CSV u otros formatos. Incluye detalles del punto de conexión, parámetros, solicitudes de ejemplo, manejo de respuestas e información sobre errores."
 weight: 100

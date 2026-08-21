@@ -4,7 +4,7 @@ ArticleTitle: "将 JSON 数据导入电子表格 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktype: "将 JSON 数据导入电子表格"
 type: docs
-url: /cells/import/data/json
+url: /zh/cells/import/data/json
 aliases: []
 keywords: "导入 JSON、Aspose.Cells、电子表格、API"
 description: "将 JSON 数据文件导入本地电子表格。"

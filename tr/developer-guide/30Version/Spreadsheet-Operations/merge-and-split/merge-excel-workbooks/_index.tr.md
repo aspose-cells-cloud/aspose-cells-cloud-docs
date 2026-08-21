@@ -3,8 +3,8 @@ title: "Bir Excel Çalışma Kitabını Başka Bir Çalışma Kitabına Birleşt
 second_title: "Belge"
 linktitle: "Bir Excel çalışma kitabını başka bir çalışma kitabına birleştirin"
 type: docs
-url: /merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
+url: /tr/merge-an-excel-file-into-the-excel-file/
+aliases: [  /tr/merge-excel-workbooks/ , /tr/workbook/merge/ ]
 keywords: "Excel birleştirme, Aspose.Cells Cloud, çalışma kitab API'si, REST API, elektronik tablo birleştirme, bulut SDK'sı, kimlik doğrulama, mergeWith, cURL örneği"
 description: "Aspose.Cells Cloud REST API (v3.0) kullanarak bir Excel çalışma kitabını başka birine adım adım nasıl birleştireceğinizi gösteren kılavuz. Kimlik doğrulama, gerekli mergeWith parametresi, cURL örneği ve SDK kod snippet'leri içerir."
 ArticleTitle: "Aspose.Cells Cloud API'si Kullanarak Bir Excel Çalışma Kitabını Başka Bir Çalışma Kitabına Birleştirin"

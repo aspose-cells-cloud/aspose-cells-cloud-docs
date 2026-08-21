@@ -3,8 +3,8 @@ title: "ซ่อนแผ่นงานใน Excel"
 second_title: "เอกสาร"
 linktype: "ซ่อน"
 type: docs
-url: /worksheets/hide/
-aliases: [/hide-excel-worksheets/]
+url: /th/worksheets/hide/
+aliases: [  /th/hide-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Excel, ซ่อนแผ่นงาน, REST API, สเปรดชีต"
 description: "คู่มือทีละขั้นตอนในการซ่อนแผ่นงานในสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API พร้อมรายละเอียดคำขอ ตัวอย่าง cURL และโค้ดตัวอย่าง SDK สำหรับภาษาต่างๆ"
 weight: 50

@@ -4,8 +4,8 @@ ArticleTitle: "Ottenere elementi di testo da un workbook Excel utilizzando l'API
 second_title: "Documento"
 linktype: "Get in workbook"
 type: docs
-url: /workbook/get-text-items/
-aliases: [/get-text-items-from-a-workbook/]
+url: /it/workbook/get-text-items/
+aliases: [  /it/get-text-items-from-a-workbook/ ]
 weight: 10
 keywords: "Excel, Aspose.Cells Cloud, REST API, Foglio di calcolo, Ottenere elementi di testo, Workbook"
 description: "Recupera gli elementi di testo da un workbook Excel utilizzando l'API REST Aspose.Cells Cloud. Disponibile tramite SDK per C#, Java, Python, PHP, Ruby, Go, Node.js, Perl e Swift."

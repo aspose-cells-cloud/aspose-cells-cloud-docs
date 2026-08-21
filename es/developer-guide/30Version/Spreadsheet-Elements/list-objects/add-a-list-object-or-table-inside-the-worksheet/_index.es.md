@@ -3,8 +3,8 @@ title: "Agregar un objeto de lista (tabla) a una hoja de cálculo de Excel"
 second_title: "Document"
 linktype: "add"
 type: docs
-url: /list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+url: /es/list-objects/add/
+aliases: [  /es/add-a-list-object-or-table-inside-the-worksheet/ , /es/tables/add/ ]
 keywords: "Aspose.Cells Cloud, API de Excel, objeto de lista, tabla, API REST, hoja de cálculo"
 description: "Aprenda cómo agregar un objeto de lista (tabla de Excel) a una hoja de cálculo mediante la API REST de Aspose.Cells Cloud. Incluye el punto de conexión, los parámetros, los pasos de autenticación, un ejemplo con cURL y ejemplos de código en SDK."
 weight: 10

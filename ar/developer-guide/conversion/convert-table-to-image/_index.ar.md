@@ -4,7 +4,7 @@ secondtitle: "وثيقة"
 articletitle: "كيفية تحويل بيانات جدول جداول البيانات المحلية إلى ملف صورة: دليل خطوة بخطوة"
 linktitle: "تحويل الجدول إلى صورة"
 type: docs
-url: /convert-table-to-image/
+url: /ar/convert-table-to-image/
 keywords: "Aspose.Cells, واجهة برمجة تطبيقات سحابية, تحويل الجدول إلى صورة, Excel, PNG, JPEG, TIFF, BMP, SVG"
 description: "حوّل بسرعة جدول جدول بيانات Excel المحلي إلى ملف صورة باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. يدعم تنسيقات PNG وJPEG وTIFF وBMP وSVG وغيرها."
 weight: 100

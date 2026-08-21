@@ -3,8 +3,8 @@ title: "Excel ブック内のテキストを置換する"
 second_title: "ドキュメント"
 linktitle: "ブック内を置換"
 type: docs
-url: /workbook/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /ja/workbook/replace-text/
+aliases: [  /ja/replace-text-in-a-workbook/ ]
 weight: 60
 keywords: "Aspose.Cells Cloud, テキスト置換, Excel ブック, XLSX, ODS, REST API, スプレッドシート, SDK"
 description: "Aspose.Cells Cloud REST API を使用して Excel (XLS, XLSX, XLSM, XLSB) および OpenDocument スプレッドシート (ODS) ブック内のテキストを置換します。cURL および幅広い SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go など) を通じて利用可能です。"

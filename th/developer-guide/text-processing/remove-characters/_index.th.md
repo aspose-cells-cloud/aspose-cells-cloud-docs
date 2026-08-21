@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "เครื่องมือล้างข้อความ Excel – ลบอักขระและสตริงย่อยจากช่วงที่เลือก"
 linktitle: "ลบอักขระ"
 type: docs
-url: /remove-characters/
+url: /th/remove-characters/
 keywords: "Aspose.Cells, ลบอักขระ, Excel API, การล้างข้อความ, สเปรดชีต"
 description: "ลบอักขระที่กำหนดเอง ชุดอักขระ และสตริงย่อยจากเซลล์ Excel ในช่วงที่เลือก ลบข้อความที่ตำแหน่งเฉพาะโดยใช้ Aspose.Cells API เพื่อการทำความสะอาดข้อมูลอย่างแม่นยำ"
 weight: 100

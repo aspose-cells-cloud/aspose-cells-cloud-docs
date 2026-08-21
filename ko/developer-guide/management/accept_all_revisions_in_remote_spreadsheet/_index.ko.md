@@ -4,8 +4,8 @@ ArticleTitle: "원격 스프레드시트에서 모든 수정사항 수락하기 
 second_title: "문서"
 linktitle: "원격 스프레드시트에서 모든 수정사항 수락하기"
 type: docs
-url: /cells/accept-all-revisions
-aliases: ["/cells/accept-all-revisions"]
+url: /ko/cells/accept-all-revisions
+aliases: [  /ko/cells/accept-all-revisions ]
 keywords: "Aspose.Cells, AcceptAllRevisions, 원격 스프레드시트"
 description: "원격 스프레드시트에서 모든 수정사항을 수락하고 업데이트된 워크북 파일을 반환합니다."
 weight: 1000

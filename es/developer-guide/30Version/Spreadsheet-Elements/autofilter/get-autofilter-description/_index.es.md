@@ -3,7 +3,7 @@ title: "Obtener AutoFilter"
 description: "Recuperar la descripción del AutoFilter de una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud."
 keywords: "AutoFilter, Excel, Aspose.Cells Cloud, API REST, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 type: docs
-url: /cells/autofilter/get/
+url: /es/cells/autofilter/get/
 aliases:
   - /get-autofilter-description/
 weight: 50

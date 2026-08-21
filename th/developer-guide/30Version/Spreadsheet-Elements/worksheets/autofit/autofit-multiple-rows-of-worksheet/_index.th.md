@@ -3,8 +3,8 @@ title: "ปรับขนาดอัตโนมัติสำหรับห
 second_title: "เอกสาร"
 linktype: "แถว"
 type: docs
-url: /worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
+url: /th/worksheets/autofit/rows/
+aliases: [  /th/autofit-multiple-rows-of-worksheet/ ]
 keywords: "ปรับขนาดอัตโนมัติแถว, Excel, Aspose.Cells Cloud, REST API, สมุดงาน, สเปรดชีต"
 description: "เรียนรู้วิธีใช้ Aspose.Cells Cloud REST API เพื่อปรับขนาดอัตโนมัติหลายแถวในสมุดงาน Excel ประกอบด้วยไวยากรณ์คำขอ พารามิเตอร์ ตัวอย่าง cURL โค้ดตัวอย่าง SDK และการจัดการข้อผิดพลาด"
 weight: 40

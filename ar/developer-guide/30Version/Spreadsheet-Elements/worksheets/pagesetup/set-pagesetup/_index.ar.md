@@ -3,7 +3,7 @@ title: "ضبط إعدادات الصفحة لورقة عمل"
 second_title: "مستند"
 linktype: "ضبط إعدادات الصفحة"
 type: docs
-url: /set-page-setup/
+url: /ar/set-page-setup/
 keywords: "Aspose.Cells, Excel, إعدادات الصفحة, REST API, ورقة عمل, SDK سحابي"
 description: "تعرّف على كيفية ضبط إعدادات الصفحة لورقة عمل Excel باستخدام Aspose.Cells Cloud REST API. يشمل تفاصيل الطلب، مثال آمن لاستخدام cURL عبر HTTPS، رموز حالات الاستجابة، ومقتطفات من كود SDK تدعم لغات برمجة متعددة."
 weight: 20

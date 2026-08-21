@@ -4,7 +4,7 @@ second_title: "مستند"
 linktitle: "تحديث"
 type: docs
 url: /ar/shapes/update/
-aliases: [/ar/update-a-shape-inside-the-worksheet/]
+aliases: [  /ar/update-a-shape-inside-the-worksheet/ ]
 keywords: "تحديث شكل باستخدام API Excel، Aspose.Cells Cloud، تحديث شكل Excel، REST API، SDK، C#، Java، Python، Node.js، Go، Ruby، PHP، Perl، Swift"
 description: "تعرّف على كيفية تحديث شكل في ورقة عمل Excel باستخدام REST API الخاص بـ Aspose.Cells Cloud. يشمل الـ HTTPS endpoint، تفاصيل المصادقة، مخطط نقل البيانات (DTO)، إرشادات الاستخدام خطوة بخطوة، مثال باستخدام cURL، وأكواد أمثلة SDK بلغات برمجة متعددة."
 ArticleTitle: "تحديث شكل في ورقة عمل Excel - Aspose.Cells Cloud API"

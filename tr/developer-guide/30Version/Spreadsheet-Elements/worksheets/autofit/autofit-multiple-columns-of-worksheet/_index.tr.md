@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasında Birden Fazla Sütunu Otomatik Uyarlama"
 second_title: "Belge"
 linktitle: "Sütunlar"
 type: docs
-url: /worksheets/autofit/columns/
-aliases: [/autofit-multiple-columns-of-worksheet/]
+url: /tr/worksheets/autofit/columns/
+aliases: [  /tr/autofit-multiple-columns-of-worksheet/ ]
 keywords: "Aspose.Cells, sütunları otomatik uyarlama, Excel API, bulut tablolu hesaplama, REST"
 description: "Aspose.Cells Cloud REST API'sini (v3.0) kullanarak bir Excel çalışma sayfasında birden fazla sütunu otomatik uyarlamanın nasıl yapıldığını öğrenin. Uç nokta, parametreler, cURL örneği, hata yönetimi ve C#, Java, Python ve daha fazlası için SDK kod parçacıklarını içerir."
 weight: 20

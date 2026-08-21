@@ -3,8 +3,8 @@ title: "Unire più file Excel in un unico libro di lavoro"
 second_title: "Documento"
 linktype: "Unire più file Excel"
 type: docs
-url: /merge-multi-files-into-excel/
-aliases: [/merge/multi-files/]
+url: /it/merge-multi-files-into-excel/
+aliases: [  /it/merge/multi-files/ ]
 keywords: "Aspose.Cells Cloud, unire più file Excel, API REST, unione fogli di calcolo, SDK cloud"
 description: "Scopri come unire più libri di lavoro Excel in un singolo file utilizzando l'API REST Aspose.Cells Cloud (v3.0). Include endpoint HTTPS, comando cURL, esempi di SDK, parametri obbligatori e dettagli sulla gestione degli errori."
 weight: 32

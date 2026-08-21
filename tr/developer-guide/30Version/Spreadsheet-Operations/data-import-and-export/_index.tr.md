@@ -3,7 +3,7 @@ title: "Veriyi Excel Dosyalarına İçe Aktarın ve Excel Dosyalarından Veri D�
 second_title: "Belge"
 linktitle: "Veri İçe ve Dışa Aktarma"
 type: docs
-url: /data-import-and-export/
+url: /tr/data-import-and-export/
 keywords: "Aspose.Cells Cloud, veri içe aktarma, Excel dışa aktarma, API, CSV, JSON, resim, dizi"
 description: "Aspose.Cells Cloud API (v3.0) kullanarak CSV, JSON, diziler ve resimlerden veriyi Excel dosyalarına nasıl içe aktarabileceğinizi ve çalışma kitaplarını, grafikleri ve şekilleri PDF, PNG ve diğer formatlara nasıl dışa aktarabileceğinizi öğrenin."
 weight: 25

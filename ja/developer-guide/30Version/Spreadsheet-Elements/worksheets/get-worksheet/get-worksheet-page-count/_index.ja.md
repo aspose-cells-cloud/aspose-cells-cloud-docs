@@ -3,7 +3,7 @@ title: "Excelワークシートのページ数を取得する"
 second_title: "Document"
 linktitle: "PageCount"
 type: docs
-url: /worksheets/page-count/
+url: /ja/worksheets/page-count/
 keywords: "Aspose.Cells, Excel API, ワークシートのページ数, REST, クラウドSDK, Excelのページ分割"
 description: "Aspose.Cells Cloud REST API（v3.0）を使用してExcelワークシートの印刷可能ページ数を取得します。HTTPSリクエスト形式、認証手順、cURLのサンプル、完全なJSONレスポンス、HTTPステータスコード、およびSDKコードサンプルを含みます。"
 weight: 10

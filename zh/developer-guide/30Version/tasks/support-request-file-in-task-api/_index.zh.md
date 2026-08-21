@@ -3,7 +3,7 @@ title: "Task API 中的支持请求文件"
 second_title: "Document"
 type: docs
 url: /zh/tasks/support-request-file/
-aliases: [/zh/support-request-file-in-task-api/]
+aliases: [  /zh/support-request-file-in-task-api/ ]
 keywords: "Aspose.Cells, REST API, Excel, 云服务"
 description: "Aspose.Cells Cloud API 支持以任务方式处理 Excel 工作簿的请求文件。"
 weight: 10

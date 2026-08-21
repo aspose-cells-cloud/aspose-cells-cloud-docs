@@ -3,8 +3,8 @@ title: "Ställ in zoom för ett Excel-ark – Aspose.Cells Cloud API v3.0"
 second_title: "Dokument"
 linktitle: "Zoom"
 type: docs
-url: /worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
+url: /sv/worksheets/zoom/
+aliases: [  /sv/set-zoom-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel-zoom, ark-zoom, REST API, molntjänst, Excel-automatisering"
 description: "Lär dig hur du ställer in arkzoom (10–400 %) med Aspose.Cells Cloud API v3.0. Inkluderar cURL- och SDK-exempel samt felhantering."
 weight: 20

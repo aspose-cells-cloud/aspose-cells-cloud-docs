@@ -2,7 +2,7 @@
 title: "Ottieni Formattazione Condizionale"
 type: docs
 url: /it/conditional-formattings/get/
-aliases: [/it/get-conditional-formatting/]
+aliases: [  /it/get-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, REST API, Formattazione Condizionale, Excel, Foglio di Lavoro"
 description: "Recupera le regole di formattazione condizionale da un foglio di lavoro utilizzando l'API REST di Aspose.Cells Cloud."
 weight: 10

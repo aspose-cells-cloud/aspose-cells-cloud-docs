@@ -3,7 +3,7 @@ title: "Avancerad konvertering av Excel-fil"
 second_title: "Dokument"
 linktype: "Avancerad konvertering"
 type: docs
-url: /advanced-convert-excel/
+url: /sv/advanced-convert-excel/
 keywords: "Aspose.Cells, Excel-konvertering, molntjänst-API, SDK"
 description: "Aspose.Cells Cloud REST API erbjuder kraftfulla funktioner för att konvertera Excel-arbetsböcker till ett brett utbud av format, samt konfigurera sidinställningar, sparaalternativ och utskriftsinställningar. SDK:er finns tillgängliga för Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby och Swift, vilket möjliggör sömlös integration på flera plattformar."
 weight: 50

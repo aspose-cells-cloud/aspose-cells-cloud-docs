@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Обмен столбцами, строками �
 second_title: "Документ"
 ArticleTitle: "Обмен данными между столбцами, строками и ячейками в Excel"
 linktype: "docs"
-url: /swap-range/
+url: /ru/swap-range/
 keywords: "Aspose Cells, Excel API, Обмен диапазонами, облачные таблицы"
 description: "Обмен столбцами, строками или диапазонами в файлах Excel с использованием API Aspose.Cells Cloud. Сохранение форматирования, формул и ссылок на ячейки в одном запросе."
 weight: 100

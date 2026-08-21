@@ -1,8 +1,8 @@
 ---
 title: "在工作表中显示图表图例"
 type: docs
-url: /charts/legend/show/
-aliases: [/show-chart-legend-in-a-worksheet/]
+url: /zh/charts/legend/show/
+aliases: [  /zh/show-chart-legend-in-a-worksheet/ ]
 weight: 100
 keywords: "Aspose.Cells Cloud、图表图例 API、Excel 图表图例、REST PUT 图表图例、Aspose API v3.0"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）在 Excel 工作表中显示图表图例。包含端点详情、参数、cURL 示例以及 SDK 代码片段。"

@@ -1,7 +1,7 @@
 ---
 title: "Hämta MinDataRow från Excel-arbetsblad"
 type: docs
-url: /get-mindatarow-from-excel-worksheet/
+url: /sv/get-mindatarow-from-excel-worksheet/
 weight: 90
 keywords: "Aspose Cells, MinDataRow, Excel API, molntjänst"
 description: "Hämta det minsta dataradindexet för ett arbetsblad med Aspose.Cells molntjänst v3.0. Inkluderar begäransmönster, parametrar, exempel på cURL, svarsexempel, HTTP-statuskoder och SDK-fragment."

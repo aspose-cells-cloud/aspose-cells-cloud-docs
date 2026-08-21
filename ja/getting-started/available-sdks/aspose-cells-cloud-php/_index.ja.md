@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud PHP SDK – Excel ファイルの変換、結合、分割、保護"  
 linktitle: "Aspose.Cells Cloud PHP SDK"  
 type: docs  
-url: /available-sdks/aspose-cells-cloud-php/  
+url: /ja/available-sdks/aspose-cells-cloud-php/
 description: "Aspose.Cells Cloud PHP SDK (v24.3) をダウンロード。Composer によるインストール方法、認証、XLSX を PDF/CSV に変換する方法、ワークブックの結合、シートの保護など、Office をインストールせずに実行する方法を学びましょう。"  
 keywords: "Aspose.Cells, Cloud, PHP, SDK, Excel, 変換, 結合, 分割, 保護"  
 weight: 30  

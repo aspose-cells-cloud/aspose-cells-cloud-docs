@@ -3,8 +3,8 @@ title: "Excelワークシート上のすべての図形を取得する"
 second_title: "Document"
 linktitle: "Get-all"
 type: docs
-url: /shapes/get-all/
-aliases: [/get-all-shapes-inside-the-worksheet/]
+url: /ja/shapes/get-all/
+aliases: [  /ja/get-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, Cloud API, Excel 図形, 図形の取得, REST, SDK"
 description: "Aspose.Cells Cloud REST API を使用してワークシート内のすべての図形（チャート、画像、テキストボックスなど）を取得します。cURL の例、SDK のスニペット、認証手順、エラー処理を含みます。"
 ArticleTitle: "Excelワークシート上のすべての図形を取得する"

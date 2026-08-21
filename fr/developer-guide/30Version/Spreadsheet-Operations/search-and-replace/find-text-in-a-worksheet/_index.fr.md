@@ -3,8 +3,8 @@ title: "Rechercher du texte dans une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Rechercher dans la feuille de calcul"
 type: docs
-url: /worksheets/find-text/
-aliases: [/find-text-in-a-worksheet/]
+url: /fr/worksheets/find-text/
+aliases: [  /fr/find-text-in-a-worksheet/ ]
 weight: 40
 keywords: "Excel, Aspose.Cells Cloud, API REST, recherche de texte, feuille de calcul, classeur, recherche"
 description: "Utilisez l’API REST Aspose.Cells Cloud pour rechercher du texte dans une feuille de calcul Excel. L’API est disponible via de multiples SDK et langages de programmation."

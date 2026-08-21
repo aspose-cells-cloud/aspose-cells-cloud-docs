@@ -3,8 +3,8 @@ title: "Bir Excel Çalışma Sayfasında Birden Fazla Satırı Otomatik Uygun Ha
 second_title: "Belge"
 linktitle: "Satırlar"
 type: docs
-url: /worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
+url: /tr/worksheets/autofit/rows/
+aliases: [  /tr/autofit-multiple-rows-of-worksheet/ ]
 keywords: "satırları otomatik uygun hale getirme, Excel, Aspose.Cells Cloud, REST API, çalışma sayfası, elektronik tablo"
 description: "Aspose.Cells Cloud REST API'sini kullanarak bir Excel çalışma sayfasında birden fazla satırı otomatik uygun hale getirmeyi öğrenin. İstek sözdizimi, parametreler, cURL örneği, SDK kod parçacıkları ve hata işleme içerir."
 weight: 40

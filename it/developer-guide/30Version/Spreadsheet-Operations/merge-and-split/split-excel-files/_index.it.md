@@ -4,8 +4,8 @@ ArticleTitle: "Come dividere un file Excel in più file utilizzando l'API Aspose
 second_title: "Documento"
 linktitle: "Dividere un file Excel"
 type: docs
-url: /split-multi-excel-files/
-aliases: [/split/multi-files/]
+url: /it/split-multi-excel-files/
+aliases: [  /it/split/multi-files/ ]
 keywords: "Excel, Aspose.Cells Cloud, API REST, dividere cartella di lavoro, file multipli, JPEG, PNG, PDF, CSV, JSON"
 description: "L'API REST Aspose.Cells Cloud consente di dividere una cartella di lavoro Excel in più file in vari formati. Questa documentazione fornisce i parametri di richiesta, un esempio cURL e campioni di codice SDK per linguaggi come C#, Java, PHP, Ruby, Node.js, Python, Perl e Go."
 weight: 130

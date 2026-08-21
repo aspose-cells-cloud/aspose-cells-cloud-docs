@@ -4,7 +4,7 @@ second_title: "Документ"
 linktype: Удалить
 type: docs
 url: /ru/pivot-tables/delete/
-aliases: [/ru/delete-worksheet-pivot-table-by-index/]
+aliases: [  /ru/delete-worksheet-pivot-table-by-index/ ]
 keywords: "Aspose.Cells, сводная таблица, удаление, Excel, REST API"
 description: "Удаление сводной таблицы из рабочего листа Excel с использованием Aspose.Cells Cloud REST API (v3.0). Включает формат запроса, пример cURL, коды ошибок и фрагменты кода SDK для C#, Java, Python, Node.js."
 weight: 70

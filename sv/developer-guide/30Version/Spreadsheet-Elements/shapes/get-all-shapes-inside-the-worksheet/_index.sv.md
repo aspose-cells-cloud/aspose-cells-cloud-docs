@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Get-all"
 type: docs
 url: /sv/shapes/get-all/
-aliases: [/sv/get-all-shapes-inside-the-worksheet/]
+aliases: [  /sv/get-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, Molntjänst-API, Excel-former, hämta former, REST, SDK"
 description: "Hämta alla former (diagram, bilder, textrutor) från ett arbetsblad med Aspose.Cells Cloud REST API. Innehåller cURL-exempel, SDK-utdrag, autentiseringssteg och felhantering."
 ArticleTitle: "Hämta alla former på ett Excel-arbetsblad"

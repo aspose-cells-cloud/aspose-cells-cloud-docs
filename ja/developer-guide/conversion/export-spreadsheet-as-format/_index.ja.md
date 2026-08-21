@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "リモートスプレッドシートのワークシートを他の形式へエクスポートする方法：ステップ・バイ・ステップガイド"
 linktype: "Export Spreadsheet as Format"
 type: docs
-url: /export-spreadsheet-as-format/
+url: /ja/export-spreadsheet-as-format/
 keywords: "Aspose.Cells, スプレッドシート変換, API, エクスポート, PDF, CSV, JSON, XLSX"
 description: "Aspose Cloud に保存された Excel ワークブックを、単一の REST エンドポイントで PDF、XLSX、CSV、JSON、または HTML に変換します。リクエスト構文やパラメータの説明、C#、Java、Python などの SDK サンプルを確認できます。"
 weight: 100

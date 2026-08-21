@@ -4,7 +4,7 @@ second_title: "Документ"
 linktype: "Диаграммы"
 type: docs
 url: /ru/charts/
-aliases: [/ru/working-with-charts/]
+aliases: [  /ru/working-with-charts/ ]
 keywords: "Aspose, Cells, Excel, диаграмма, API, REST, облачные технологии, электронная таблица"
 description: "Узнайте, как управлять диаграммами в Excel с помощью API Aspose.Cells Cloud. Пошаговые руководства, примеры кода и обработка ошибок при извлечении, добавлении, обновлении, удалении и преобразовании диаграмм в графические форматы."
 weight: 100

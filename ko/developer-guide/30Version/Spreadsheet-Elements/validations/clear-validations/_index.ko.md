@@ -3,7 +3,7 @@ title: "워크시트 유효성 검사 모두 삭제하기 – Aspose.Cells Cloud
 second_title: "문서"
 linktype: "삭제"
 type: docs
-url: /validations/clear/
+url: /ko/validations/clear/
 keywords: "Aspose.Cells Cloud, 워크시트 유효성 검사 삭제, Excel, REST API, 스프레드시트 유효성 검사, API"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 파일의 워크시트에서 모든 데이터 유효성 검사 규칙을 제거합니다. 인증 단계, 요청 세부 정보, cURL 예제, 응답 스키마, 오류 처리, SDK 스니펫이 포함됩니다."
 weight: 10

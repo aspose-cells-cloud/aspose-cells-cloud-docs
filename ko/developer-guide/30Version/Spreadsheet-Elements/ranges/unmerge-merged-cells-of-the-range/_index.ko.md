@@ -3,8 +3,8 @@ title: "범위에서 셀 병합 해제"
 second_title: "문서"
 linktitle: "병합 해제"
 type: docs
-url: /ranges/unmerge/
-aliases: [/unmerge-merged-cells-of-the-range/]
+url: /ko/ranges/unmerge/
+aliases: [  /ko/unmerge-merged-cells-of-the-range/ ]
 keywords: "Aspose.Cells Cloud, 셀 병합 해제, Excel API, 워크시트 범위, REST API"
 description: "Aspose.Cells Cloud API를 사용하여 특정 워크시트 범위 내 병합된 셀을 해제하는 방법을 알아보세요. 엔드포인트, 매개변수, 샘플 cURL 및 C#, Java, Python 등 다양한 언어의 SDK 코드 스니펫이 포함됩니다."
 weight: 20

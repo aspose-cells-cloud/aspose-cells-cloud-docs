@@ -4,8 +4,8 @@ ArticleTitle: "TransposeData – Aspose.Cells Cloud API"
 second_title: "Документ"
 linktitle: "TransposeData"
 type: docs
-url: /cells/transpose
-aliases: ["/cells/transpose"]
+url: /ru/cells/transpose
+aliases: [  /ru/cells/transpose ]
 keywords: "TransposeData, Aspose.Cells, облачный API, электронная таблица, транспонирование"
 description: "Поменять местами строки и столбцы в электронной таблице."
 weight: 1000

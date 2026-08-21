@@ -4,7 +4,7 @@ ArticleTitle: "นำเข้าข้อมูล JSON ลงในสเป�
 second_title: "เอกสาร"
 linktype: "นำเข้าข้อมูล JSON ลงในสเปรดชีต"
 type: docs
-url: /cells/import/data/json
+url: /th/cells/import/data/json
 aliases: []
 keywords: "นำเข้า JSON, Aspose.Cells, สเปรดชีต, API"
 description: "นำเข้าไฟล์ข้อมูล JSON ลงในสเปรดชีตในเครื่อง"

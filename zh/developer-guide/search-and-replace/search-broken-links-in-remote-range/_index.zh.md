@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "查找并修复远程 Excel 区域中的失效链接——云电子表格链接检查器"
 linktype: "搜索远程区域中的失效链接"
 type: docs
-url: /search-broken-links-in-remote-range/
+url: /zh/search-broken-links-in-remote-range/
 keywords: "Aspose, Cells, 失效链接, API, Excel 区域, 验证, 云, 电子表格, 外部引用, 检查器"
 description: "使用 Aspose.Cells Cloud API 扫描指定 Excel 区域，检测外部链接失效、公式无效或数据源缺失等问题。安全、快速、基于云端。"
 weight: 100

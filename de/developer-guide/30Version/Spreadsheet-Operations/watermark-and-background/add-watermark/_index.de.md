@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Wasserzeichen zu Excel-Dateien hinzufügen"
 type: docs
 url: /de/add-watermark-into-excel-files/
-aliases: [/de/watermark/]
+aliases: [  /de/watermark/ ]
 keywords: "Wasserzeichen zu Excel hinzufügen, Aspose.Cells Cloud, REST-API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Erfahren Sie, wie Sie einen Textwasserzeichen mit der Aspose.Cells Cloud REST-API (v3.0) zu Excel-Arbeitsmappen hinzufügen. Enthält ein cURL-Beispiel, erforderliche Parameter und Antwortdetails."
 weight: 39

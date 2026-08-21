@@ -3,8 +3,8 @@ title: "ปรับขนาดแถวให้พอดีในสมุด
 second_title: "เอกสาร"
 linktype: "แถว"
 type: docs
-url: /autofit-rows-on-an-excel-file/
-aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
+url: /th/autofit-rows-on-an-excel-file/
+aliases: [  /th/auto-fit-rows-in-excel-workbooks/ , /th/workbook/autofit/rows/ ]
 keywords: "ปรับขนาดแถวให้พอดี, สมุดงาน Excel, Aspose.Cells Cloud, REST API, ตัวเลือกการปรับขนาดอัตโนมัติ"
 description: "เรียนรู้วิธีการปรับความสูงของแถวให้อัตโนมัติในสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API ซึ่งประกอบด้วย endpoint, พารามิเตอร์, ตัวอย่าง cURL และโค้ดตัวอย่าง SDK สำหรับ C#, Java, Python และอื่นๆ อีกมากมาย"
 weight: 90

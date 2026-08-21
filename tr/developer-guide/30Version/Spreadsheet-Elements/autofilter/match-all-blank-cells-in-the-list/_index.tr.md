@@ -4,7 +4,7 @@ ArticleTitle: "Excel çalışma sayfasındaki tüm boş hücreleri eşleştirin 
 second_title: "Belge"
 linktype: "docs"
 url: /tr/autofilter/match-all-blank/
-aliases: [/match-all-blank-cells-in-the-list/]
+aliases: [  /tr/match-all-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells, boş hücreler, AutoFilter, REST API, Excel"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki tüm boş hücreleri filtrelemeyi ve eşleştirmeyi öğrenin. Endpoint, parametreler, kimlik doğrulama adımları, cURL örneği ve C#, Java, Python ve daha fazlası için SDK snippet’leri içerir."
 weight: 100

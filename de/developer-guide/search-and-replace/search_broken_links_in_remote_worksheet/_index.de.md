@@ -4,7 +4,7 @@ ArticleTitle: "Suchen nach defekten Links in externer Tabelle – Aspose.Cells C
 second_title: "Dokument"
 linktitle: "SuchennachdefektenLinksinexternerTabelle"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/search/broken-links
+url: /de/cells/{name}/worksheets/{worksheet}/search/broken-links
 aliases: []
 keywords: "Aspose.Cells, Suchen nach defekten Links, Externe Tabelle"
 description: "Sucht nach defekten Links in der Tabelle einer externen Tabellendatei."

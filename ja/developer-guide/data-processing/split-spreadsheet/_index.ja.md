@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Excel 分割ツール – ローカルのスプレッドシートを 30 以上の形式でファイルに分割"
 linktype: "スプレッドシートの分割"
 type: docs
-url: /split-spreadsheet/
+url: /ja/split-spreadsheet/
 keywords: "分割, Excel, Aspose.Cells, スプレッドシート API, PDF エクスポート, CSV, JSON"
 description: "Aspose.Cells Cloud API を使用して、Excel ワークブックをローカルで別々のファイルに分割します。クラウドへのアップロードは不要で、PDF、CSV、JSON、XLSX、HTML など 30 以上の形式にエクスポートできます。"
 weight: 100

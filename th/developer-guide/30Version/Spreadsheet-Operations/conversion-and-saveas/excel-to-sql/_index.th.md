@@ -3,7 +3,7 @@ title: "การแปลง Excel เป็น SQL"
 second_title: "เอกสาร"
 linktype: "Excel to SQL"
 type: docs
-url: /convert-excel-file-to-sql-file/
+url: /th/convert-excel-file-to-sql-file/
 keywords: "Aspose.Cells, Excel to SQL, API บนคลาวด์, การแปลงสเปรดชีต, REST"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อแปลงไฟล์สเปรดชีต Excel ให้อยู่ในรูปแบบไฟล์ SQL รองรับ SDK และภาษาโปรแกรมต่างๆ เพื่อการผสานรวมอย่างราบรื่นลงในแอปพลิเคชันของคุณ"
 weight: 100

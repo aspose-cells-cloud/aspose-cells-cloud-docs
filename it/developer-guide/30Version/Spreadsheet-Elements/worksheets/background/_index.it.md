@@ -3,7 +3,7 @@ title: "Aggiungi o Rimuovi Immagine di Sfondo del Foglio di Lavoro – Aspose.Ce
 second_title: "Documento"
 linktitle: "Sfondo"
 type: docs
-url: /worksheets/background/
+url: /it/worksheets/background/
 keywords: "Aspose.Cells Cloud, sfondo del foglio di lavoro, API Excel, aggiungi immagine di sfondo, rimuovi sfondo del foglio di lavoro, esempi SDK"
 description: "Scopri come aggiungere o rimuovere un'immagine di sfondo su un foglio di lavoro Excel utilizzando l'API REST Aspose.Cells Cloud. Include la sintassi della richiesta, esempi SDK per Java, .NET, Python, PHP e gestione degli errori."
 weight: 20

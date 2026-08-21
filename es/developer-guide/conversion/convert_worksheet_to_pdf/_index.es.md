@@ -4,7 +4,7 @@ ArticleTitle: "Convertir hoja de cálculo a PDF – API de Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "ConvertWorksheetToPdf"
 type: docs
-url: /cells/convert/worksheet/pdf
+url: /es/cells/convert/worksheet/pdf
 aliases: []
 keywords: "Aspose.Cells, Convertir hoja de cálculo a PDF, API"
 description: "Convierte una hoja de cálculo de un archivo de hoja de cálculo a PDF mediante Aspose.Cells Cloud."

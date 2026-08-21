@@ -3,7 +3,7 @@ title: "Excelワークシートのペインの固定を解除する"
 second_title: "Document"
 linktitle: "Unfreeze"
 type: docs
-url: /worksheets/panes/unfreeze/
+url: /ja/worksheets/panes/unfreeze/
 aliases:
   - /unfreeze-panes-in-excel-worksheet/
   - /worksheets/unfreeze-panes/

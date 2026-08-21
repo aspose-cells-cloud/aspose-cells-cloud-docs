@@ -3,7 +3,7 @@ title: "Aspose.Cells 콘텐츠 자르기 API – Excel에서 공백 및 줄 바�
 second_title: "문서"
 linktitle: "콘텐츠 자르기"
 type: docs
-url: /spreadsheet-trim-content/
+url: /ko/spreadsheet-trim-content/
 keywords: "Aspose.Cells, 콘텐츠 자르기 API, Excel 데이터 정리, Excel 공백 제거, 줄 바꿈 제거, 스프레드시트 데이터 정리"
 description: "Aspose.Cells Cloud PostTrimContent API를 사용하여 Excel 셀에서 여분의 공백, 줄 바꿈 및 불필요한 문자를 자동으로 정리합니다. 엔드포인트, 요청 형식, 샘플 코드 및 오류 처리 방법을 알아보세요."
 weight: 100

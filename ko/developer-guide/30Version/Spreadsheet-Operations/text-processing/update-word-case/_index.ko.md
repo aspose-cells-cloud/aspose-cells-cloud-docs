@@ -3,7 +3,7 @@ title: "Aspose.Cells – 단어 대문자 변환 API"
 second_title: "문서"
 linktitle: "단어 대문자"
 type: docs
-url: /post-update-word-case/
+url: /ko/post-update-word-case/
 keywords: "Aspose.Cells, 단어 대문자 변환 API, 텍스트 대문자 변환, Excel, CSV, Google 시트, REST API"
 description: "Aspose.Cells Cloud의 단어 대문자 변환 API를 사용해 Excel, CSV 또는 Google 시트 파일의 텍스트 대문자를 변환합니다. 대문자/소문자, 제목 대문자, 첫글자 대문자 변환을 지원합니다."
 weight: 100

@@ -3,8 +3,8 @@ title: "Belirli Bir Belge Özelliğini Alın"
 second_title: "Belge"
 linktitle: "Al"
 type: docs
-url: /document-properties/get/
-aliases: [/get-a-particular-document-property/]
+url: /tr/document-properties/get/
+aliases: [  /tr/get-a-particular-document-property/ ]
 keywords: "Aspose.Cells, Bulut API, Belge Özelliğini Al, Excel meta verisi, REST GET, SDK örnekleri"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel dosyasından adı verilen bir belge özelliğini (örneğin Yazar, Başlık) alın. cURL örneği, SDK snippet’leri ve yanıt şemasını içerir."
 weight: 20

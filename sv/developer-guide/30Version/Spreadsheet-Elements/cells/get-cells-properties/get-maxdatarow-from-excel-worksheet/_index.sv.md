@@ -1,7 +1,7 @@
 ---
 title: "Hämta MaxDataRow från Excel-arbetsblad"
 type: docs
-url: /get-maxdatarow-from-excel-worksheet/
+url: /sv/get-maxdatarow-from-excel-worksheet/
 weight: 50
 keywords: "Excel, Aspose.Cells Cloud, REST API, Get MaxDataRow, Worksheet"
 description: "Hämtar indexet för den sista raden som innehåller data i ett angivet arbetsblad i en Excel-arbetsbok med hjälp av Aspose.Cells Cloud REST API."

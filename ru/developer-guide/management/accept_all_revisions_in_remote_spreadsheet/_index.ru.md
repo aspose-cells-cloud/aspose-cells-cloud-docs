@@ -3,8 +3,8 @@ title: "Принять все изменения в удалённой табл�
 ArticleTitle: "Принять все изменения в удалённой таблице – Aspose.Cells Cloud"
 second_title: "Документ"
 linktype: "docs"
-url: /cells/accept-all-revisions
-aliases: ["/cells/accept-all-revisions"]
+url: /ru/cells/accept-all-revisions
+aliases: [  /ru/cells/accept-all-revisions ]
 keywords: "Aspose.Cells, AcceptAllRevisions, Удалённая таблица"
 description: "Принять все отслеживаемые изменения в удалённой таблице и вернуть обновлённый файл рабочей книги."
 weight: 1000

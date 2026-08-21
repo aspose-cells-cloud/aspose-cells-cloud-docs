@@ -3,7 +3,7 @@ title: "Hinzufügen einer Arbeitsblattvalidierung zu einem Excel-Arbeitsblatt"
 second_title: "Dokument"
 linktitle: "Hinzufügen"
 type: docs
-url: /validations/add/
+url: /de/validations/add/
 keywords: "Arbeitsblattvalidierung hinzufügen, Excel, Aspose.Cells Cloud, REST-API, Tabellenkalkulation, Validierungsregel"
 description: "Verwenden Sie die Aspose.Cells Cloud REST-API, um einer Excel-Datei eine Arbeitsblattvalidierung hinzuzufügen. SDKs sind für C#, Java, PHP, Ruby, Node.js, Python, Perl, Go und Swift verfügbar."
 weight: 10

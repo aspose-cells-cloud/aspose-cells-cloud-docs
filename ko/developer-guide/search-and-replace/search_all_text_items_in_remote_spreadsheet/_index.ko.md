@@ -3,7 +3,7 @@ title: "SearchAllTextItemsInRemoteSpreadsheet"
 ArticleTitle: "SearchAllTextItemsInRemoteSpreadsheet – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: /cells/{name}/search/content/all-textitems
+url: /ko/cells/{name}/search/content/all-textitems
 aliases: []
 keywords: "검색, 텍스트 항목, Aspose.Cells"
 description: "Aspose.Cells Cloud를 사용하여 원격 스프레드시트에서 모든 텍스트 항목을 검색합니다."

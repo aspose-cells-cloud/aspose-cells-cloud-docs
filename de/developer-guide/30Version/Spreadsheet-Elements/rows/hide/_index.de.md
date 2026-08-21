@@ -3,8 +3,8 @@ title: "Zeilen in einem Excel-Arbeitsblatt ausblenden"
 second_title: "Dokument"
 linktitle: "Ausblenden"
 type: docs
-url: /rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
+url: /de/rows/hide/
+aliases: [  /de/hide-rows-in-excel-worksheet/ ]
 keywords: "Zeilen ausblenden, Aspose.Cells Cloud, Excel-API, REST, SDK"
 description: "Erfahren Sie, wie Sie eine oder mehrere Zeilen in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST-API ausblenden. Enthält cURL-Beispiel, SDK-Snippets, Parameter, Authentifizierung, Antwortdetails und Fehlerbehandlung."
 weight: 40

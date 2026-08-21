@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "행"
 type: docs
 url: /ko/worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
+aliases: [  /ko/autofit-multiple-rows-of-worksheet/ ]
 keywords: "행 자동 맞춤, Excel, Aspose.Cells Cloud, REST API, 워크시트, 스프레드시트"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 여러 행을 자동 맞춤하는 방법을 배웁니다. 요청 구문, 매개변수, cURL 예제, SDK 스니펫, 오류 처리를 포함합니다."
 weight: 40

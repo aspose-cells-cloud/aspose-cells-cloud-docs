@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "업데이트"
 type: docs
 url: /ko/worksheets/update-properties/
-aliases: [/update-excel-worksheet-properties/]
+aliases: [  /ko/update-excel-worksheet-properties/ ]
 weight: 20
 keywords:
   [

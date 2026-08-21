@@ -3,8 +3,8 @@ title: "فتح ملفات إكسل"
 second_title: "مستند"
 linktitle: "فتح ملفات إكسل"
 type: docs
-url: /unlock-excel-files/
-aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
+url: /ar/unlock-excel-files/
+aliases: [  /ar/unlock/without-storage/ , /ar/unlock/ , /ar/unlock/without-using-storage/ ]
 keywords: "فتح إكسل، Aspose.Cells Cloud، REST API، فتح ملفات إكسل، مصنف محمي بكلمة مرور، SDK، C#، Java، Python، Node.js، Go، PHP، Ruby، Swift"
 description: "توفر واجهة Aspose.Cells Cloud REST نقطة نهاية لفتح ملفات إكسل المحمية بكلمة مرور. تتوفر وحدات التطوير البرمجي (SDKs) لعدة لغات برمجة، تشمل Android، C#، Go، Java، Node.js، Perl، PHP، Python، Ruby، و Swift."
 ArticleTitle: "فتح ملفات إكسل باستخدام واجهة Aspose.Cells Cloud REST API"

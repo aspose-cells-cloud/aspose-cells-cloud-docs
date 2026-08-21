@@ -3,7 +3,7 @@ title: "Erstellen einer leeren Excel-Arbeitsmappe"
 second_title: "Dokument"
 linktitle: "Leere Arbeitsmappe"
 type: docs
-url: /create-an-empty-excel-file/
+url: /de/create-an-empty-excel-file/
 aliases:
   [
     /create-an-empty-excel-workbook/,

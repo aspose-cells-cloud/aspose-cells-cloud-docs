@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "การประมวลผลข้อความในตารางคำนวณ: การตัดช่องว่าง การแบ่ง การแปลง การดึงข้อมูล และการลบข้อความ"
 linktitle: "การประมวลผลข้อความ"
 type: docs
-url: /text-processing/
+url: /th/text-processing/
 description: "เรียนรู้วิธีการตัดช่องว่าง การแบ่ง การแปลง การดึงข้อมูล และการลบข้อความในไฟล์ Excel โดยใช้ Aspose.Cells Cloud REST APIs รวมตัวอย่างที่กระชับและโค้ดตัวอย่าง SDK"
 keywords: "Aspose.Cells, Cloud API, การประมวลผลข้อความ, การตัดช่องว่างข้อความ, การแบ่งข้อความ, การแปลงข้อความ, การดึงข้อความ, การลบข้อความ, Excel API"
 weight: 30

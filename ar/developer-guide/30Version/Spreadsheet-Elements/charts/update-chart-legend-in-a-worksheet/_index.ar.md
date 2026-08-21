@@ -1,8 +1,8 @@
 ---
 title: "تحديث أسطورة المخطط في ورقة عمل"
 type: docs
-url: /charts/legend/update/
-aliases: [/update-chart-legend-in-a-worksheet/]
+url: /ar/charts/legend/update/
+aliases: [  /ar/update-chart-legend-in-a-worksheet/ ]
 weight: 160
 keywords: "Aspose.Cells، السحابة، Excel، مخطط، أسطورة، واجهة برمجة التطبيقات REST، تحديث، ورقة عمل، cURL، SDK"
 description: "كيفية تحديث أسطورة مخطط في ورقة عمل Excel باستخدام واجهة برمجة التطبيقات REST لـ Aspose.Cells Cloud، مع أمثلة لطلبات cURL وأكواد مقتطفات SDK بلغات برمجة متعددة."

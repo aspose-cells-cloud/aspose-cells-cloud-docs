@@ -3,8 +3,8 @@ title: "Bir Çalışma Sayfası Alanını PNG, PDF, CSV’ye Dışa Aktar – As
 second_title: "Belge"
 linktitle: "Alan"
 type: docs
-url: /worksheets/area-to-different-formats/
-aliases: [/get-worksheet-for-area/]
+url: /tr/worksheets/area-to-different-formats/
+aliases: [  /tr/get-worksheet-for-area/ ]
 keywords: "Aspose.Cells, çalışma sayfası alanı dışa aktar, PNG, PDF, CSV, Excel dönüştürme, REST API, SDK"
 description: "Aspose.Cells Cloud REST API veya SDK’ları (C#, Java, Python,…) kullanarak bir Excel çalışma sayfasından belirli bir hücre aralığını PNG, PDF, CSV ve 20'den fazla diğer formata nasıl dışa aktaracağınızı öğrenin."
 weight: 230

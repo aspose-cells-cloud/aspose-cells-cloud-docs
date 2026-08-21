@@ -3,7 +3,7 @@ title: "Exportera ett kalkylblad med Aspose.Cells Cloud API – format, cURL- oc
 second_title: "Dokument"
 linktitle: "Exportera kalkylblad"
 type: docs
-url: /worksheets/get-worksheet/
+url: /sv/worksheets/get-worksheet/
 keywords: "Aspose.Cells Cloud Get Worksheet, exportera kalkylblad, Excel API, REST, CSV, PDF, PNG, JPEG, GIF, BMP, TIFF, EMF, XPS, OTS, XLS, XLSX, XLSB, XLSM, ODS, FODS, Numbers, moln-API"
 description: "Lär dig hur du exporterar ett enskilt kalkylblad från en Excel-fil med Aspose.Cells Cloud REST API. Inkluderar endpoint, parametrar, ett korregerat cURL-exempel, autentiseringsinformation, felhantering och SDK-utdrag för C#, Java, Python och mer."
 weight: 10

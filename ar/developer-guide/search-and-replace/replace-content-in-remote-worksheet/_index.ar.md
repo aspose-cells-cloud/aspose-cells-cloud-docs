@@ -4,7 +4,7 @@ secondtitle: "مستند"
 articletitle: "إيجاد واستبدال النص في ورقة عمل بعيدة باستخدام واجهة برمجة تطبيقات (API) من Aspose.Cells Cloud"
 linktitle: "استبدال محتوى ورقة العمل البعيدة"
 type: docs
-url: /replace-content-in-remote-worksheet/
+url: /ar/replace-content-in-remote-worksheet/
 keywords: "Aspose.Cells، استبدال النص، ورقة عمل بعيدة، واجهة برمجة تطبيقات Excel، جدول بيانات سحابي، إيجاد واستبدال، واجهة برمجة تطبيقات REST"
 description: "استبدال النص في ورقة عمل محددة من ملف Excel مخزن في Aspose Cloud. يدعم المصنفات المحمية بكلمة مرور، والبحث الحساس للمنطقة، والتحديثات الجماعية."
 weight: 100

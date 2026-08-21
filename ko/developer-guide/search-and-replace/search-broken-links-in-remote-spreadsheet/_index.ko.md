@@ -4,7 +4,7 @@ second title: "문서"
 ArticleTitle: "원격 Excel 파일의 끊긴 링크 찾기 및 수정 – 클라우드 스프레드시트 링크 검사기"
 linktitle: "원격 스프레드시트 끊긴 링크 검색"
 type: docs
-url: /search-broken-links-in-remote-spreadsheet/
+url: /ko/search-broken-links-in-remote-spreadsheet/
 keywords: "Excel, 끊긴 링크, API, 클라우드, 스프레드시트, 유효성 검사, Aspose.Cells"
 description: "Aspose.Cells Cloud API를 사용하여 원격 Excel 워크북에서 끊긴 외부 링크, 잘못된 수식, 누락된 데이터 소스를 검사합니다."
 weight: 100

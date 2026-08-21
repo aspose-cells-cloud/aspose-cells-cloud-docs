@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Nesne Var mı API’si – Aspose.Cells Cloud’da Dosya veya Klasör Varlığını Doğrulayın"
 linktitle: "Nesne Var mı"
 type: docs
-url: /object-exists/
+url: /tr/object-exists/
 keywords: "Aspose.Cells, bulut depolama, nesne var mı, dosya varlığı, klasör varlığı, API"
 description: "Aspose.Cells Cloud depolama alanında bir dosya veya klasörün varlığını hızlı bir şekilde doğrulamak için Nesne Var mı API’sini kullanın. İsteğe bağlı depolama adı ve sürüm kimliğini destekler ve sürümü belirlenmiş nesnelerle çalışır."
 weight: 100

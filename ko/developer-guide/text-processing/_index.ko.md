@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud API – 텍스트 처리(공백 제거, 분할, 변�
 second_title: "문서"
 ArticleTitle: "스프레드시트 텍스트 처리: 공백 제거, 분할, 변환, 추출 및 제거"
 linktype: "docs"
-url: "/text-processing/"
+url: /ko/text-processing/
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 파일에서 텍스트를 공백 제거, 분할, 변환, 추출 및 제거하는 방법을 알아보세요. 간결한 예제와 SDK 코드 스니펫을 포함합니다."
 keywords: "Aspose.Cells, 클라우드 API, 텍스트 처리, 텍스트 공백 제거, 텍스트 분할, 텍스트 변환, 텍스트 추출, 텍스트 제거, Excel API"
 weight: 30

@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Più fogli di calcolo"
 type: docs
 url: /it/worksheets/delete-multiple/
-aliases: [/it/delete-excel-worksheets/]
+aliases: [  /it/delete-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, elimina più fogli di calcolo, API Excel, API REST, v3.0, elimina fogli di calcolo"
 description: "Scopri come eliminare diversi fogli di calcolo da un file Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include un endpoint HTTPS sicuro, i parametri obbligatori, un esempio corretto di cURL e frammenti di codice SDK per diversi linguaggi di programmazione."
 weight: 20

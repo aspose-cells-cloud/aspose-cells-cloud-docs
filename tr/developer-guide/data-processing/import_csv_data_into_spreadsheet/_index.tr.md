@@ -4,7 +4,7 @@ ArticleTitle: "CSV Verisini Elektronik Tabloya İçe Aktar – Aspose.Cells Clou
 second_title: "Belge"
 linktitle: "CSV Verisini Elektronik Tabloya İçe Aktar"
 type: docs
-url: /cells/import/data/csv
+url: /tr/cells/import/data/csv
 aliases: []
 keywords: "Aspose.Cells, CSV içe aktarma, elektronik tablo, API"
 description: "Aspose.Cells Cloud API kullanarak CSV veri dosyasını yerel elektronik tabloya içe aktarın."

@@ -3,8 +3,8 @@ title: "Ta bort kalkylblad"
 second_title: "Dokument"
 linktitle: "Ett kalkylblad"
 type: docs
-url: /worksheets/delete-worksheet/
-aliases: [/remove-worksheets-from-excel-workbooks/]
+url: /sv/worksheets/delete-worksheet/
+aliases: [  /sv/remove-worksheets-from-excel-workbooks/ ]
 keywords: "Aspose.Cells Cloud, Ta bort kalkylblad, Excel, Kalkylark, REST API"
 description: "Ta bort ett kalkylblad från en Excel-arbetsbok med Aspose.Cells Cloud REST API. Stöder SDK:er för C#, Java, PHP, Ruby, Node.js, Python, Perl, Go och cURL."
 weight: 20

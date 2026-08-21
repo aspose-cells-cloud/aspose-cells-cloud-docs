@@ -3,8 +3,8 @@ title: "จัดเรียงข้อมูลในช่วงของส
 second_title: "เอกสาร"
 linktitle: "จัดเรียง"
 type: docs
-url: /worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
+url: /th/worksheets/sort-data/
+aliases: [  /th/sort-worksheet-data/ ]
 keywords: "Aspose.Cells Cloud, API สำหรับการเรียงลำดับ Excel, การเรียงลำดับช่วงของworksheet, REST API, dataSorter"
 description: "จัดเรียงช่วงที่กำหนดในสมุดงาน Excel โดยใช้ REST API ของ Aspose.Cells Cloud ซึ่งรวมถึง endpoint, พารามิเตอร์ที่จำเป็น, ขั้นตอนการยืนยันตัวตน, การจัดการข้อผิดพลาด และตัวอย่าง SDK"
 weight: 20

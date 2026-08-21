@@ -3,8 +3,8 @@ title: "範囲内のセルの結合を解除する"
 second_title: "Document"  
 linktitle: "Unmerge"  
 type: docs  
-url: /ranges/unmerge/  
-aliases: [/unmerge-merged-cells-of-the-range/]  
+url: /ja/ranges/unmerge/
+aliases: [  /ja/unmerge-merged-cells-of-the-range/ ]
 keywords: "Aspose.Cells Cloud、セルの結合解除、Excel API、ワークシート範囲、REST API"  
 description: "Aspose.Cells Cloud API を使用して、特定のワークシート範囲内の結合済みセルを解除する方法を学びます。エンドポイント、パラメーター、サンプルの cURL、および C#、Java、Python などの SDK コードスニペットを含みます。"  
 weight: 20  

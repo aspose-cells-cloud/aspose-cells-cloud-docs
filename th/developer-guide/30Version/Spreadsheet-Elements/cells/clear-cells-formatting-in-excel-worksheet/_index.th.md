@@ -1,7 +1,7 @@
 ---
 title: "ล้างรูปแบบเซลล์ในสมุดงาน Excel"
 type: docs
-url: /clear-cells-formatting-in-excel-worksheet/
+url: /th/clear-cells-formatting-in-excel-worksheet/
 weight: 100
 keywords: "Aspose.Cells Cloud, Excel, ล้างรูปแบบเซลล์, REST API, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อล้างรูปแบบเซลล์ในสมุดงาน Excel ประกอบด้วยรายละเอียดคำขอ ตัวอย่าง cURL และตัวอย่างโค้ด SDK สำหรับหลายภาษา"

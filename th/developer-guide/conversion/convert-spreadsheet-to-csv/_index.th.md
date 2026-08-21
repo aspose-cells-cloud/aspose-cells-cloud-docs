@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีการแปลงไฟล์สเปรดชีตเป็น CSV โดยใช้ Aspose.Cells Cloud API"
 linktype: "แปลงไฟล์สเปรดชีตเป็น CSV"
 type: docs
-url: /convert-spreadsheet-to-csv/
+url: /th/convert-spreadsheet-to-csv/
 keywords: "Aspose Cells, การแปลง CSV, Excel API, การแปลงบนคลาวด์"
 description: "เรียนรู้วิธีการแปลงไฟล์ Excel (XLS, XLSX, XLSM, …) เป็น CSV โดยใช้ Aspose.Cells Cloud API รวมถึงขั้นตอนการตรวจสอบสิทธิ์ ตัวอย่าง cURL โค้ดตัวอย่าง SDK และการจัดการข้อผิดพลาด"
 weight: 100

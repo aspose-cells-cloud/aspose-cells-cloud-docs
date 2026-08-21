@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud Docker 操作マニュアル：Aspose.Cells Cloud ア
 second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud Docker 操作マニュアル"
 linktype: "docs"
-url: /docker-developer-guide/
-aliases: [/docker/, /docker/run/]
+url: /ja/docker-developer-guide/
+aliases: [  /ja/docker/ , /ja/docker/run/ ]
 description: "Aspose.Cells Cloud を Docker コンテナとしてプライベートまたはオンプレミスのインフラストラクチャ上にデプロイし、Aspose のパブリッククラウドを使用せずにスプレッドシート処理（Excel、PDF、CSV、JSON、Markdown）を実行可能にします。"
 keywords:
   [

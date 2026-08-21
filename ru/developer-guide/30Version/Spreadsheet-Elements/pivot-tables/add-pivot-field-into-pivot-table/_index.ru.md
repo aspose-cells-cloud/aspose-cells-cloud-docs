@@ -4,7 +4,7 @@ second_title: "Документ"
 linktype: "add-pivot-field"
 type: docs
 url: /ru/pivot-tables/add-pivot-field/
-aliases: [/ru/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /ru/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, сводная таблица, добавление поля сводной таблицы, REST API, SDK"
 description: "Добавление поля сводной таблицы в существующую сводную таблицу с помощью REST API Aspose.Cells Cloud. Включает сведения о запросе, пример cURL и фрагменты кода SDK."
 weight: 40

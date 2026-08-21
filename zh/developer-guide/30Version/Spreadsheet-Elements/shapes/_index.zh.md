@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "形状"
 type: docs
 url: /zh/shapes/
-aliases: ["/zh/working-with-shapes/", "/zh/working-with-images/"]
+aliases: [  /zh/working-with-shapes/ , /zh/working-with-images/ ]
 keywords: "Excel 形状、Aspose.Cells Cloud、API、工作表、形状操作"
 description: "了解如何通过 Aspose.Cells Cloud API 管理 Excel 形状——使用 SDK 支持检索、添加、删除和转换形状。"
 weight: 100

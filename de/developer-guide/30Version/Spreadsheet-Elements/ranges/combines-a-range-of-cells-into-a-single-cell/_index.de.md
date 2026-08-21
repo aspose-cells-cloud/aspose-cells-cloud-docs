@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – Zellbereich zusammenführen"
 second_title: "Dokument"
 linktitle: "Zusammenführen"
 type: docs
-url: /ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+url: /de/ranges/merge/
+aliases: [  /de/combines-a-range-of-cells-into-a-single-cell/ ]
 keywords: "Aspose.Cells, Zellen zusammenführen, Excel-API, REST, Cloud-SDK"
 description: "Führen Sie einen Zellbereich mithilfe der Aspose.Cells Cloud REST API in einer einzigen Zelle zusammen. Erfahren Sie mehr über das Anfrageformat, die Parameter und SDK-Beispiele für C#, Java, Python und mehr."
 weight: 20

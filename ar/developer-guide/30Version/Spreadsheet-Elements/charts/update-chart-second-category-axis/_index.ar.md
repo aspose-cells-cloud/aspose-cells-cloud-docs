@@ -1,7 +1,7 @@
 ---
 title: "تحديث المحور الفئات الثاني للرسم البياني"
 type: docs
-url: /charts/second-category-axis/update/
+url: /ar/charts/second-category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, الرسم البياني, المحور الفئات الثاني, واجهة REST API, تحديث الرسم البياني, Excel, واجهة سحابية"
 description: "تعلم كيفية تحديث المحور الفئات الثاني للرسم البياني في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API."

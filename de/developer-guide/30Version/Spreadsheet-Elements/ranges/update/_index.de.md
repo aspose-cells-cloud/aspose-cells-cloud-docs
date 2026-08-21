@@ -3,7 +3,7 @@ title: "So aktualisieren Sie Bereichsinhalte aus einer Excel-Arbeitsmappe"
 second_title: "Dokument"
 linktitle: "Aktualisieren"
 type: docs
-url: /ranges/update/
+url: /de/ranges/update/
 keywords: "Excel, Bereich aktualisieren, Aspose.Cells Cloud, REST API, Tabellenkalkulation, Bereichsformatierung, Bereichswerte, Zeilenhöhe, Spaltenbreite"
 description: "Aktualisieren Sie Bereichsinhalte in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API. Ändern Sie Formatierungen, Werte, Zeilenhöhen und Spaltenbreiten über unterstützte SDKs."
 weight: 20

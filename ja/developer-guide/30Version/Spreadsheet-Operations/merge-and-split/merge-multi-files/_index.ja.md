@@ -3,8 +3,8 @@ title: "複数のExcelファイルを1つのワークブックに統合する"
 second_title: "Document"
 linktitle: "複数のExcelファイルを統合"
 type: docs
-url: /merge-multi-files-into-excel/
-aliases: [/merge/multi-files/]
+url: /ja/merge-multi-files-into-excel/
+aliases: [  /ja/merge/multi-files/ ]
 keywords: "Aspose.Cells Cloud, 複数のExcelファイルを統合, REST API, スプレッドシートの統合, クラウドSDK"
 description: "Aspose.Cells Cloud REST API (v3.0) を使用して複数のExcelワークブックを1つのファイルに統合する方法を学びます。HTTPSエンドポイント、cURLコマンド、SDKサンプル、必要なパラメータ、エラーハンドリングの詳細を含みます。"
 weight: 32

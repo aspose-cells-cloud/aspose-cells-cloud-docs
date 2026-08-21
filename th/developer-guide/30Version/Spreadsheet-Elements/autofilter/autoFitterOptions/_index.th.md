@@ -3,7 +3,7 @@ title: "AutoFitterOptions – คุณสมบัติและคู่ม�
 second_title: "เอกสาร"
 linktype: "AutoFitterOptions"
 type: docs
-url: /auto-fitter-options/
+url: /th/auto-fitter-options/
 keywords: "AutoFitterOptions, Aspose.Cells, ปรับขนาดอัตโนมัติใน Excel, ความสูงของแถว, ช่องที่รวม, API"
 description: "เรียนรู้วิธีควบคุมการปรับความสูงของแถวอัตโนมัติ การจัดการช่องที่รวม การแสดง/ซ่อนแถว/คอลัมน์ การตั้งค่าภาษา และตัวเลือกการเรนเดอร์ด้วยวัตถุ AutoFitterOptions ใน Aspose.Cells Cloud API"
 weight: 79

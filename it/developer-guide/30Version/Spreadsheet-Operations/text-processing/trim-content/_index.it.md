@@ -3,7 +3,7 @@ title: "API Aspose.Cells Trim Content – Rimuovi spazi e interruzioni di riga d
 second_title: "Documento"
 linktype: "Trim Content"
 type: docs
-url: /spreadsheet-trim-content/
+url: /it/spreadsheet-trim-content/
 keywords: "Aspose.Cells, API Trim Content, pulizia dati Excel, rimozione spazi da Excel, rimozione interruzioni di riga, pulizia dati fogli di calcolo"
 description: "Utilizza l'API PostTrimContent di Aspose.Cells Cloud per rimuovere automaticamente spazi aggiuntivi, interruzioni di riga e caratteri indesiderati dalle celle di Excel. Scopri l'endpoint, il formato della richiesta, il codice di esempio e la gestione degli errori."
 weight: 100

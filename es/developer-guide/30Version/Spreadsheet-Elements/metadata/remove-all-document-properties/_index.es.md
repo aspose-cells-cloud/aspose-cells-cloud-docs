@@ -3,8 +3,8 @@ title: "Eliminar todas las propiedades del documento"
 second_title: "Documento"
 linktitle: "Borrar"
 type: docs
-url: /document-properties/clear/
-aliases: [/remove-all-document-properties/]
+url: /es/document-properties/clear/
+aliases: [  /es/remove-all-document-properties/ ]
 keywords: "Aspose.Cells, eliminar propiedades del documento, borrar propiedades de Excel, API REST, SDK en la nube, hoja de cálculo, referencia de API"
 description: "Guía paso a paso para eliminar todas las propiedades personalizadas y predeterminadas de un libro de Excel mediante la API REST de Aspose.Cells Cloud."
 weight: 58

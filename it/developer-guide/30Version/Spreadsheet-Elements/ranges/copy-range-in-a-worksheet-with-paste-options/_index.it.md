@@ -3,8 +3,8 @@ title: "Copia di un intervallo in un foglio di calcolo con opzioni di incolla"
 second_title: "Document"
 linktype: "Copy"
 type: docs
-url: /ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+url: /it/ranges/copy/
+aliases: [  /it/copy-range-in-a-worksheet-with-paste-options/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, copia intervallo, foglio di calcolo, opzioni di incolla"
 description: "Utilizza l'API REST di Aspose.Cells Cloud per copiare un intervallo all'interno di un foglio di calcolo Excel con il supporto completo delle opzioni di incolla. Include esempi di SDK per diversi linguaggi di programmazione."
 weight: 20

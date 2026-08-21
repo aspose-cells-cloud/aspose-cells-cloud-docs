@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Configuración del almacenamiento del contenedor Docker de Aspose.Cells Cloud"
 linktitle: "Almacenamiento del contenedor"
 type: docs
-url: /docker/storage/
+url: /es/docker/storage/
 description: "Configure la ubicación de almacenamiento para contenedores Docker de Aspose.Cells Cloud mediante archivos JSON, PowerShell o Bash."
 weight: 30
 keywords: "Aspose.Cells, Docker, almacenamiento de contenedor, configuración JSON, PowerShell, Bash"

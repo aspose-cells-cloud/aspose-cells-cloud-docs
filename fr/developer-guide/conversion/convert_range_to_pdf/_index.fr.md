@@ -3,7 +3,7 @@ title: "ConvertRangeToPdf"
 ArticleTitle: "Convertir une plage en PDF – API Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /cells/convert/range/pdf
+url: /fr/cells/convert/range/pdf
 aliases: []
 keywords: "Aspose.Cells, convertir une plage en PDF, API"
 description: "Convertit une plage spécifiée d’un classeur en PDF à l’aide d’Aspose.Cells Cloud."

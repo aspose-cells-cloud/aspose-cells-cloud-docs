@@ -3,8 +3,8 @@ title: "在 Excel 工作表中添加颜色筛选器"
 second_title: "文档"
 linktitle: "添加颜色筛选器"
 type: docs
-url: /autofilter/add-color-filter/
-aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
+url: /zh/autofilter/add-color-filter/
+aliases: [  /zh/filter-a-list-using-a-color-filter/ , /zh/autofilter/add-a-color-filter/ ]
 keywords: "Excel, 颜色筛选器, Aspose.Cells Cloud, REST API, 自动筛选, JWT 身份验证"
 description: "了解如何使用 Aspose.Cells Cloud API 为 Excel 工作表应用颜色筛选器。包含端点、参数、cURL 示例、错误处理和 SDK 示例。"
 weight: 65

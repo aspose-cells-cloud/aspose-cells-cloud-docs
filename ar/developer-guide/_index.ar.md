@@ -4,8 +4,8 @@ second_title: "الوثيقة"
 linktitle: "دليل المطور"
 ArticleTitle: "التحويل، الدمج، التقسيم، الحماية، البحث، الاستبدال & التحويل — كل ذلك في خدمة خلايا السحابية."
 type: docs
-url: /developer‑guide/
-aliases: [/developer‑guide‑v4.0/]
+url: /ar/developer‑guide/
+aliases: [  /ar/developer‑guide‑v4.0/ ]
 keywords: "Aspose.Cells Cloud، واجهة برمجة تطبيقات Excel REST، تحويل جداول البيانات، دمج، تقسيم، حماية، بحث واستبدال، تحويل البيانات، أمثلة SDK، Java، .NET، Python، Node.js، PHP، Go، Ruby، Perl"
 description: "دليل مطور شامل لواجهات برمجة تطبيقات Aspose.Cells Cloud REST، يغطي تحويل جداول البيانات، والدمج، والتقسيم، والحماية، والبحث والاستبدال، وتحويل البيانات، مع روابط لأمثلة SDK لـ Java، و.NET، وPython، وNode.js، وPHP، وGo، وRuby، وPerl."
 weight: 20

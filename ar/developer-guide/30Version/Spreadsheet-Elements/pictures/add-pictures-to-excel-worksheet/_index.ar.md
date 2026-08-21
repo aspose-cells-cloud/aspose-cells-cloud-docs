@@ -3,8 +3,8 @@ title: "إضافة صورة إلى ملف Excel"
 second_title: "الوثيقة"
 linktype: "add"
 type: docs
-url: /pictures/add/
-aliases: [/add-pictures-to-excel-worksheet/]
+url: /ar/pictures/add/
+aliases: [  /ar/add-pictures-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, إضافة صورة, REST API"
 description: "استخدم واجهة Aspose.Cells Cloud REST API لإضافة صورة إلى ورقة عمل Excel. تُبسّط SDKs الخاصة بـ Android وC# وGo وJava وNode.js وPerl وPHP وPython وRuby وSwift التكامل عبر منصات مختلفة."
 weight: 20

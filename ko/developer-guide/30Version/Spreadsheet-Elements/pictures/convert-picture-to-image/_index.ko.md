@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – 워크시트에서 그림 가져오기"
 second_title: "문서"
 linktitle: "가져오기"
 type: docs
-url: /pictures/get/
-aliases: [/convert-picture-to-image/]
+url: /ko/pictures/get/
+aliases: [  /ko/convert-picture-to-image/ ]
 keywords: "Aspose.Cells, 그림 가져오기, API, Excel, 클라우드, REST"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 특정 그림을 검색합니다. 엔드포인트, 매개변수, 인증 단계, 응답 코드 및 코드 예제를 포함합니다."
 weight: 10

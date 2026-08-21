@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيفية إضافة أوراق عمل إلى ملفات Excel – إدراج أوراق جديدة في مواقع محددة"
 linktitle: "إضافة ورقة عمل إلى جدول بيانات"
 type: docs
-url: /add-worksheet-to-spreadsheet/
+url: /ar/add-worksheet-to-spreadsheet/
 keywords: "excel، إضافة ورقة عمل، aspose cells api، جدول بيانات، واجهة برمجة تطبيقات سحابية، نوع الورقة، موقع الورقة"
 description: "تعرّف على كيفية إضافة ورقة عمل جديدة، أو ورقة مخطط، أو ورقة ماكرو برمجيًا إلى ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. تحكم في نوع الورقة واسمها وموقع الإدراج في طلب REST واحد."
 weight: 100

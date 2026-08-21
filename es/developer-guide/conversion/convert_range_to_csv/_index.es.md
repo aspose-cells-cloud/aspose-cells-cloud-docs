@@ -4,7 +4,7 @@ ArticleTitle: "Convertir Rango a CSV – Aspose.Cells Cloud API"
 second_title: "Documento"
 linktitle: "Convertir Rango a CSV"
 type: docs
-url: /cells/convert/range/csv
+url: /es/cells/convert/range/csv
 aliases: []
 keywords: "convertir, csv, rango, Aspose.Cells"
 description: "Convierte un rango de hoja de cálculo ubicado en un disco local a un archivo CSV."

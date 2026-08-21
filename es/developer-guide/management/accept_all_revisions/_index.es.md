@@ -4,7 +4,7 @@ ArticleTitle: "Aceptar todas las revisiones – Aspose.Cells Cloud"
 second_title: "Documento"
 linktitle: "Aceptar todas las revisiones"
 type: docs
-url: /cells/spreadsheet/accept-all-revisions
+url: /es/cells/spreadsheet/accept-all-revisions
 aliases: []
 keywords: "Aspose.Cells, AcceptAllRevisions, hoja de cálculo, revisiones"
 description: "Acepta todas las revisiones en un archivo de hoja de cálculo mediante la API de Aspose.Cells Cloud."

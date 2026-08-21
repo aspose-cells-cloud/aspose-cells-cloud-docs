@@ -3,8 +3,8 @@ title: "Excel ワークブック内のテキストを検索する"
 second_title: "Document"
 linktitle: "ワークブック内を検索"
 type: docs
-url: /workbook/find-text/
-aliases: [/find-text-in-a-workbook/]
+url: /ja/workbook/find-text/
+aliases: [  /ja/find-text-in-a-workbook/ ]
 weight: 30
 keywords: "Aspose.Cells, テキスト検索, Excel API, ワークブック検索"
 description: "Aspose.Cells Cloud API を使用して Excel ワークブック (XLSX、ODS) 内で**テキストを検索**する方法を学びます。cURL の例、SDK スニペット、レスポンススキーマを含みます。今すぐ始めましょう。"

@@ -4,7 +4,7 @@ second_title: "종합 개발자 가이드"
 ArticleTitle: "스프레드시트 보호 – 열기 비밀번호 및 수정 비밀번호 설정"
 linktitle: "보호"
 type: docs
-url: /protection/
+url: /ko/protection/
 keywords: "Aspose.Cells, 클라우드, API, 스프레드시트, 보호, 열기 비밀번호, 읽기-쓰기 비밀번호, Excel"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북을 열기 비밀번호 또는 읽기-쓰기 비밀번호로 보호하는 방법을 알아보세요. 요청 구문, 코드 예제, 오류 처리가 포함됩니다."
 weight: 60

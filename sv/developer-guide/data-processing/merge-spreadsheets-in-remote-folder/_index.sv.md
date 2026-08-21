@@ -4,7 +4,7 @@ description: "Kombinera kalkylark som lagras i Aspose Cloud-lagring till en enda
 keywords: "Aspose.Cells, sammanfoga kalkylblad, fjärrmapp, API, PDF, CSV, JSON, XLSX, ODS, XPS"
 weight: 100
 type: docs
-url: /merge-spreadsheets-in-remote-folder/
+url: /sv/merge-spreadsheets-in-remote-folder/
 ---
 
 Kombinera flera kalkylarksfiler som finns i en fjärrmapp i Aspose Cloud-lagring till en enda utdatafil. Åtgärden körs helt i molnet, vilket eliminierar behovet av att ladda ner källfilerna lokalt. Mer än 30 utgångsformat stöds (PDF, CSV, JSON, XLSX, ODS, XPS, …).

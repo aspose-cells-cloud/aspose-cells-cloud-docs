@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud API ile Excel Aralığını PDF'ye Dönüştürme"
 second_title: "Belge"
 ArticleTitle: "Yerel Elektronik Tablo Aralığı Verilerini PDF Dosyasına Dönüştürme: Adım Adım Rehber"
 linktype: "Döküman"
-url: /convert-range-to-pdf/
+url: /tr/convert-range-to-pdf/
 keywords: "Aspose.Cells Cloud, Excel Aralığını PDF'ye Dönüştürme, Excel'den PDF'ye, Bulut Dönüştürme"
 description: "Aspose.Cells Cloud REST API kullanarak yerel bir Excel elektronik tablosundan belirli bir aralığı PDF'ye dönüştürün."
 weight: 100

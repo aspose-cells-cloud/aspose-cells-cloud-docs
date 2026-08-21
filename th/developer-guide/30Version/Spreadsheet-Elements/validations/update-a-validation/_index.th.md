@@ -3,7 +3,7 @@ title: "อัปเดตการตรวจสอบความถูกต
 second_title: "เอกสาร"
 linktitle: "อัปเดต"
 type: docs
-url: /validations/update/
+url: /th/validations/update/
 keywords: "Aspose.Cells Cloud, การอัปเดตการตรวจสอบความถูกต้องของ Excel, REST API, การตรวจสอบความถูกต้องของชีตงาน, Excel API"
 description: "วิธีการอัปเดตการตรวจสอบความถูกต้องของชีตงานในไฟล์ Excel โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่าง cURL และโค้ด SDK สำหรับภาษาโปรแกรมต่างๆ"
 weight: 10

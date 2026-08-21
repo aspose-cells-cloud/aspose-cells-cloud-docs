@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktitle: "ลบ"
 type: docs
 url: /th/oleobjects/delete/
-aliases: [/delete-a-specific-oleobject-from-excel-worksheet/]
+aliases: [  /th/delete-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, Cloud, ลบ, OLE, วัตถุ, Excel, เวิร์กชีต, REST, API, SDK"
 description: "เรียนรู้วิธีการลบวัตถุ OLE จากเวิร์กชีต Excel โดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 4.0) ซึ่งรวมถึง HTTPS endpoint, ขั้นตอนการยืนยันตัวตน, ตัวอย่าง cURL, ตัวอย่างโค้ด SDK, คำแนะนำการจัดการข้อผิดพลาด และลิงก์สำหรับขั้นตอนต่อไป"
 weight: 50

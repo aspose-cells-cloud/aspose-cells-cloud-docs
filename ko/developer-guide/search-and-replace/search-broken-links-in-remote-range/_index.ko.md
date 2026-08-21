@@ -4,7 +4,7 @@ secondtitle: "문서"
 articletitle: "원격 Excel 범위 내 브레이크드 링크 찾기 및 수정 – 클라우드 스프레드시트 링크 체커"
 linktitle: "원격 범위 내 브레이크드 링크 검색"
 type: docs
-url: /search-broken-links-in-remote-range/
+url: /ko/search-broken-links-in-remote-range/
 keywords: "Aspose, Cells, 브레이크드 링크, API, Excel 범위, 유효성 검사, 클라우드, 스프레드시트, 외부 참조, 체커"
 description: "Aspose.Cells Cloud API를 사용해 특정 Excel 범위 내 외부 링크가 끊긴 항목, 잘못된 수식, 누락된 데이터 소스를 스캔하세요. 보안성과 속도를 갖춘 클라우드 기반 솔루션입니다."
 weight: 100

@@ -1,7 +1,7 @@
 ---
 title: "すべてのハイパーリンクを取得する – Aspose.Cells Cloud REST API"
 type: docs
-url: /hyperlinks/get-all/
+url: /ja/hyperlinks/get-all/
 aliases:
   [/get-hyperlink-from-excel-worksheet/, /get-hyperlinks-from-excel-worksheet/]
 keywords: "Aspose.Cells, すべてのハイパーリンクを取得する, Excel API, REST API, クラウド SDK, cURL の例, スプレッドシートのハイパーリンク"

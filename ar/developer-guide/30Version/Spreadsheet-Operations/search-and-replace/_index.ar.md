@@ -4,7 +4,7 @@ second_title: "التوثيق"
 linktitle: "البحث والاستبدال"
 type: docs
 url: /ar/search-and-replace/
-aliases: [/ar/working-with-text/, /ar/text/]
+aliases: [  /ar/working-with-text/ , /ar/text/ ]
 description: "تعرّف على كيفية البحث عن النص واستبداله في كتب عمل وورقات عمل إكسل باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن تنسيق الطلب وأمثلة رمزية لـ .NET وJava وPython، بالإضافة إلى معالجة الأخطاء."
 keywords: "Aspose.Cells Cloud, إكسل, البحث والاستبدال, واجهة REST API, .NET, Java, Python"
 weight: 20

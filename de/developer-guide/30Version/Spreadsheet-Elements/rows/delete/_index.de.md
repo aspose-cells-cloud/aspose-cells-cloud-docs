@@ -3,7 +3,7 @@ title: "Arbeiten mit dem Löschen von Zeilen in einem Excel-Arbeitsblatt"
 second_title: "Dokument"
 linktitle: "Löschen"
 type: docs
-url: /rows/delete/
+url: /de/rows/delete/
 keywords: "Aspose.Cells, Zeile löschen, Excel-API, REST, Cloud, Tabellendokument, Excel, SDK"
 description: "Erfahren Sie, wie Sie einzelne oder mehrere Zeilen in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API löschen. Enthält Codebeispiele für Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby und Swift."
 weight: 20

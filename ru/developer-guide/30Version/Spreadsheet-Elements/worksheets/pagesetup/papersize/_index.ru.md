@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Полный список констант раз
 second_title: "Документ"
 linktitle: "Размер бумаги"
 type: docs
-url: /paper-size/
+url: /ru/paper-size/
 keywords: "размер бумаги, Aspose.Cells Cloud, REST API, электронная таблица, A4, Letter, ISO, JIS, PRC"
 description: "Полный список констант размеров бумаги, поддерживаемых REST API Aspose.Cells Cloud, включая физические размеры и примеры использования для задания пользовательских размеров в электронных таблицах."
 weight: 20

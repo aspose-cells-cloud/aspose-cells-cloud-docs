@@ -3,7 +3,7 @@ title: "Excel Çalışma Sayfasında Bölmeleri Tekrar Dondurun"
 second_title: "Belge"
 linktitle: "Tekrar Dondurmayı Kaldır"
 type: docs
-url: /worksheets/panes/unfreeze/
+url: /tr/worksheets/panes/unfreeze/
 aliases:
   - /unfreeze-panes-in-excel-worksheet/
   - /worksheets/unfreeze-panes/

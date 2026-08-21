@@ -1,8 +1,8 @@
 ---
 title: "Legende eines Diagramms in einem Arbeitsblatt aktualisieren"
 type: docs
-url: /charts/legend/update/
-aliases: [/update-chart-legend-in-a-worksheet/]
+url: /de/charts/legend/update/
+aliases: [  /de/update-chart-legend-in-a-worksheet/ ]
 weight: 160
 keywords: "Aspose.Cells, Cloud, Excel, Diagramm, Legende, REST API, Aktualisieren, Arbeitsblatt, cURL, SDK"
 description: "So aktualisieren Sie die Legende eines Diagramms in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API – mit cURL-Anforderungsbeispielen und SDK-Code-Snippets für mehrere Programmiersprachen."

@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "在 Excel 中交换列、行和单元格之间的数据"
 linktype: "交换区域"
 type: docs
-url: /swap-range/
+url: /zh/swap-range/
 keywords: "Aspose Cells, Excel API, 交换区域, 云电子表格"
 description: "使用 Aspose.Cells Cloud API 在 Excel 文件中交换列、行或区域。在单次请求中保留格式、公式和单元格引用。"
 weight: 100

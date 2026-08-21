@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "ค้นหาและแทนที่ข้อความในเวิร์กชีตระยะไกลด้วย Aspose.Cells Cloud API"
 linktitle: "แทนที่เนื้อหาในเวิร์กชีตระยะไกล"
 type: docs
-url: /replace-content-in-remote-worksheet/
+url: /th/replace-content-in-remote-worksheet/
 keywords: "Aspose.Cells, แทนที่ข้อความ, เวิร์กชีตระยะไกล, Excel API, สเปรดชีตบนคลาวด์, ค้นหาและแทนที่, REST API"
 description: "แทนที่ข้อความในเวิร์กชีตที่ระบุของไฟล์ Excel ที่จัดเก็บใน Aspose Cloud รองรับสมุดงานที่มีการป้องกันด้วยรหัสผ่าน การค้นหาที่คำนึงถึงภูมิภาค และการอัปเดตแบบหลายรายการ"
 weight: 100

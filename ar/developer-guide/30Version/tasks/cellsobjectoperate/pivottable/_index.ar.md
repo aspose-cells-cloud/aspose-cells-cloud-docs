@@ -1,8 +1,8 @@
 ---
 title: "العمل مع جداول البيانات المحورية باستخدام مهمة CellsObjectOperate"
 type: docs
-url: /tasks/cells-object-operate/pivottable/
-aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
+url: /ar/tasks/cells-object-operate/pivottable/
+aliases: [  /ar/working-with-pivot-table-using-cellsobjectoperate-task/ ]
 keywords: "واجهة برمجة تطبيقات جداول البيانات المحورية لـ Aspose Cells، CellsObjectOperate، واجهة برمجة تطبيقات Excel عبر الويب"
 description: "تعلم كيفية إنشاء جدول بيانات محوري في Excel باستخدام مهمة CellsObjectOperate من Aspose.Cells Cloud. يتضمن مثالًا باستخدام cURL، ودليل المعاملات، وروابط لواجهات برمجة التطبيقات (SDKs)."
 weight: 10

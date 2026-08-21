@@ -3,7 +3,7 @@ title: "スプレッドシートを他の形式で保存 – Aspose.Cells Cloud 
 second_title: "ドキュメント"
 ArticleTitle: "リモートストレージ上のスプレッドシートを他の形式ファイルとして保存する方法：ステップ・バイ・ステップ・ガイド"
 linktype: "docs"
-url: /save-spreadsheet-as/
+url: /ja/save-spreadsheet-as/
 keywords: "Aspose Cells, スプレッドシート変換, 保存方法, API, XLSXからPDFへ, クラウドストレージ, ExcelからPDFへ, CSVエクスポート, クラウド変換"
 description: "Aspose.Cells Cloud のスプレッドシート保存 API を使用して、Aspose Cloud に保存されたスプレッドシートを別の形式（XLSX、PDF、CSV など）で保存する方法を学びます。リクエスト構文、パラメータ、curl の例、SDK コードを含みます。"
 weight: 100

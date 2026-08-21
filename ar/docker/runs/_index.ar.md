@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيفية تشغيل حاوية Docker الخاصة بـ Aspose.Cells Cloud"
 linktitle: "تشغيل الحاوية"
 type: docs
-url: /run-aspose-cells-cloud-docker-container/
+url: /ar/run-aspose-cells-cloud-docker-container/
 description: "تعرّف على كيفية تشغيل Aspose.Cells Cloud داخل حاوية Docker على Windows Server 2022. أوامر خطوة بخطوة لتوضيح طريقة التشغيل في وضع التجربة، أو وضع الفوترة المُقاسة، أو وضع الفوترة بالترخيص، وضبط وحدة التخزين، وفحص الحالة."
 weight: 30
 keywords: "Aspose.Cells, Docker, Windows Server 2022, وضع التجربة, الفوترة المُقاسة, الفوترة بالترخيص, إعداد التخزين"

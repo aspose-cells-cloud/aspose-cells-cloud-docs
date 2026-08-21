@@ -2,7 +2,7 @@
 title: "Ottieni il formato di riempimento dell’area del grafico – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /it/charts/chart-area/fill-format/get/
-aliases: [/it/get-fill-format-of-a-chart-area-from-a-worksheet/]
+aliases: [  /it/get-fill-format-of-a-chart-area-from-a-worksheet/ ]
 weight: 70
 keywords:
   - "Aspose.Cells"

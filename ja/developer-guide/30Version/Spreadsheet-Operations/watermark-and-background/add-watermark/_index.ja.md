@@ -3,8 +3,8 @@ title: "Excel ファイルに透かしを追加する"
 second_title: "ドキュメント"
 linktitle: "Excel ファイルに透かしを追加する"
 type: docs
-url: /add-watermark-into-excel-files/
-aliases: [/watermark/]
+url: /ja/add-watermark-into-excel-files/
+aliases: [  /ja/watermark/ ]
 keywords: "Excel に透かしを追加, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Aspose.Cells Cloud REST API (v3.0) を使用して Excel ワークブックにテキスト透かしを追加する方法を学習します。cURL の例、必要なパラメータ、およびレスポンスの詳細を含みます。"
 weight: 39

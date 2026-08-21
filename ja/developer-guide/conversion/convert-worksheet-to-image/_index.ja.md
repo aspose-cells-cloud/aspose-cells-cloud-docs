@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "ローカルのワークシートスプレッドシートデータを画像ファイルに変換する方法：ステップ・バイ・ステップ・ガイド"
 linktitle: "ワークシートを画像に変換"
 type: docs
-url: /convert-worksheet-to-image/
+url: /ja/convert-worksheet-to-image/
 keywords: "Aspose.Cells Cloud, ワークシートを画像に変換, Excel を PNG に変換, Excel を SVG に変換, Excel を TIFF に変換, Excel を JPEG に変換, Excel を BMP に変換, 画像変換 API, REST API, スプレッドシートの画像エクスポート, SDK サンプル"
 description: "Aspose.Cells Cloud API を使用して Excel ワークシートを画像形式 (PNG、SVG、TIFF、JPEG、BMP など) に変換するステップ・バイ・ステップ・ガイド。リクエストパラメータ、レスポンスの詳細、エラーコード、使用シナリオ、SDK コードサンプルを含みます。"
 weight: 100

@@ -3,8 +3,8 @@ title: "Excel Grafikleri ile Çalışma"
 second_title: "Belge"
 linktype: "Grafikler"
 type: docs
-url: /charts/
-aliases: [/working-with-charts/]
+url: /tr/charts/
+aliases: [  /tr/working-with-charts/ ]
 keywords: "Aspose, Cells, Excel, grafik, API, REST, Bulut, elektronik tablo"
 description: "Aspose.Cells Cloud API ile Excel grafiklerini nasıl yöneteceğinizi öğrenin. Grafikleri alma, ekleme, güncelleme, silme ve görüntü formatlarına dönüştürme için adım adım rehberler, kod örnekleri ve hata işleme."
 weight: 100

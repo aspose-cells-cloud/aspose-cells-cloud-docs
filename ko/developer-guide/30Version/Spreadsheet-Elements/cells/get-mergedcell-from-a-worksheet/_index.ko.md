@@ -1,7 +1,7 @@
 ---
 title: "Excel 워크시트에서 병합 셀 가져오기 – Aspose.Cells Cloud API"
 type: docs
-url: /get-mergedcell-from-a-worksheet/
+url: /ko/get-mergedcell-from-a-worksheet/
 weight: 60
 keywords: "Aspose.Cells Cloud, 병합 셀, Excel 워크시트, REST API, Aspose.Cells SDK, Excel 병합 셀"
 description: "Aspose.Cells Cloud API(v3.0)를 사용하여 Excel 워크시트에서 병합 셀 범위를 가져오는 방법을 알아보세요. 인증 절차, 전체 cURL 요청, 응답 스키마, 오류 처리, C#, Java, Python 등 다양한 언어의 SDK 예제를 포함합니다."

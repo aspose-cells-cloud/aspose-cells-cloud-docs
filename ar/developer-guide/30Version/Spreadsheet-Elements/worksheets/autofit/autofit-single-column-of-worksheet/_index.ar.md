@@ -3,8 +3,8 @@ title: "ضبط عمود تلقائيًا في Excel باستخدام واجهة 
 second_title: "مستند"
 linktitle: "عمود"
 type: docs
-url: /worksheets/autofit/column/
-aliases: [/autofit-single-column-of-worksheet/]
+url: /ar/worksheets/autofit/column/
+aliases: [  /ar/autofit-single-column-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud، ضبط عمود تلقائيًا، واجهة Excel API، واجهة REST API، حزمة تطوير البرمجيات (SDK)، C#، Java، PHP، Ruby، Node.js، Python، Perl، Go"
 description: "تعرّف على كيفية ضبط عرض عمود (أو نطاق من الأعمدة) تلقائيًا في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. يشمل أمثلة على cURL وحزم تطوير البرمجيات (SDK) (C#، Java، Python، إلخ) وتفاصيل كاملة للطلب والاستجابة."
 weight: 10

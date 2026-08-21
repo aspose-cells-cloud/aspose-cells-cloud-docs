@@ -3,7 +3,7 @@ title: "Comment créer un classeur Excel à l'aide d'un fichier modèle"
 second_title: "Document"
 linktitle: "Fichier modèle"
 type: docs
-url: /create-an-excel-file-with-template-file/
+url: /fr/create-an-excel-file-with-template-file/
 aliases:
   - /create-excel-workbook-from-a-template-file/
   - /workbook/new-from-a-template-file/

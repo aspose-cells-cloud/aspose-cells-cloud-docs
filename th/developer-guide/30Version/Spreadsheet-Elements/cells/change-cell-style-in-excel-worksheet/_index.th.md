@@ -1,7 +1,7 @@
 ---
 title: "เปลี่ยนรูปแบบเซลล์ในสมุดงาน Excel"
 type: docs
-url: /change-cell-style-in-excel-worksheet/
+url: /th/change-cell-style-in-excel-worksheet/
 weight: 30
 keywords:
   - Aspose.Cells

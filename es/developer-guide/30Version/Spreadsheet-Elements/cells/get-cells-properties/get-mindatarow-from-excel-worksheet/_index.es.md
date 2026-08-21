@@ -1,7 +1,7 @@
 ---
 title: "Obtener MinDataRow de una hoja de cálculo de Excel"
 type: docs
-url: /get-mindatarow-from-excel-worksheet/
+url: /es/get-mindatarow-from-excel-worksheet/
 weight: 90
 keywords: "Aspose Cells, MinDataRow, API de Excel, SDK en la nube"
 description: "Recuperar el índice de la fila de datos mínima de una hoja de cálculo utilizando la API de Aspose.Cells Cloud v3.0. Incluye el patrón de solicitud, parámetros, ejemplo de cURL, ejemplo de respuesta, códigos de estado y fragmentos de SDK."

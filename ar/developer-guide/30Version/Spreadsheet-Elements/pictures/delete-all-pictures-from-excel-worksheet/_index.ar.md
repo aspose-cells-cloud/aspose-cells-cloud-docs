@@ -3,8 +3,8 @@ title: "حذف جميع الصور في ورقة عمل Excel"
 second_title: "مستند"
 linktitle: "مسح"
 type: docs
-url: /pictures/clear/
-aliases: [/delete-all-pictures-from-excel-worksheet/]
+url: /ar/pictures/clear/
+aliases: [  /ar/delete-all-pictures-from-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud، Excel، حذف جميع الصور، ورقة عمل، REST API، مسح الصور"
 description: "تعرّف على كيفية حذف جميع الصور من ورقة عمل Excel باستخدام Aspose.Cells Cloud REST API مع أمثلة لـ cURL وSDKs."
 weight: 60

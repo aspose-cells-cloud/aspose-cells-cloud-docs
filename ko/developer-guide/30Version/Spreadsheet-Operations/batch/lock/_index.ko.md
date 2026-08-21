@@ -2,7 +2,7 @@
 title: "Excel 파일 일괄 잠금"
 second_title: "문서"
 type: docs
-url: /batch/lock
+url: /ko/batch/lock
 keywords: "일괄 잠금, Excel, Aspose.Cells, 클라우드 API, 스프레드시트, 파일 보호"
 description: "Aspose.Cells 클라우드 API는 여러 Excel 파일을 일괄적으로 잠그는 기능을 제공합니다. REST 엔드포인트 또는 지원되는 SDK(C#, Java, PHP, Ruby, Node.js, Python, Perl, Go 등)를 사용하여 파일을 대량으로 잠글 수 있습니다."
 weight: 100

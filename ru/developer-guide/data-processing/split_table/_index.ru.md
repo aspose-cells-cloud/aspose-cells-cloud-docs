@@ -4,7 +4,7 @@ ArticleTitle: "Разделение таблицы – Aspose.Cells Cloud API"
 second_title: "Документ"
 linktitle: "Разделение таблицы"
 type: docs
-url: /cells/split/table
+url: /ru/cells/split/table
 aliases: []
 keywords: "Aspose.Cells, разделение таблицы, API"
 description: "API для разделения таблицы в электронной таблице по значениям столбца."

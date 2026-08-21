@@ -1,7 +1,7 @@
 ---
 title: "Aspose.Cells Cloud API – Hämta MaxDataColumn från ett Excel-ark (v3.0)"
 type: docs
-url: /get-maxdatacolumn-from-excel-worksheet/
+url: /sv/get-maxdatacolumn-from-excel-worksheet/
 weight: 70
 keywords: "Aspose.Cells Cloud, hämta MaxDataColumn, Excel-ark, REST API, v3.0, SDK"
 description: "Hämta det högsta kolumnindexet som innehåller data i ett angivet ark med Aspose.Cells Cloud REST API (v3.0). Inkluderar begärandedetaljer, exempel på svar och SDK-exempel."

@@ -1,7 +1,7 @@
 ---
 title: "Zellendaten aus einem Arbeitsblatt abrufen"
 type: docs
-url: /get-cell-data-from-a-worksheet/
+url: /de/get-cell-data-from-a-worksheet/
 weight: 10
 keywords: "Aspose.Cells Cloud, Zellendaten abrufen, Excel-API, REST-API, Zellwert, Arbeitsblatt-API, Aspose-API-Beispiel"
 description: "Rufen Sie den Wert, den Typ und den Stil einer einzelnen Zelle aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API (v3.0) ab. Enthält cURL- und SDK-Beispiele, Parameter und Fehlerbehandlung."

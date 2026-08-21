@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "スプレッドシートを他の形式に変換する方法：ステップ・バイ・ステップ・ガイド"
 linktitle: "スプレッドシートの変換"
 type: docs
-url: /convert-spreadsheet/
+url: /ja/convert-spreadsheet/
 keywords: "Aspose, Aspose.Cells, スプレッドシート変換, ExcelからPDF, Excel API, クラウドファイル変換"
 description: "Aspose.Cells Cloud API を使用してスプレッドシートファイルを他の形式に変換します。"
 weight: 100

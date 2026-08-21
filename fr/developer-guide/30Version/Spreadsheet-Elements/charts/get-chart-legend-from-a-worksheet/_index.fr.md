@@ -1,8 +1,8 @@
 ---
 title: "Obtenir la légende d'un graphique à partir d'une feuille de calcul"
 type: docs
-url: /charts/legend/get/
-aliases: [/get-chart-legend-from-a-worksheet/]
+url: /fr/charts/legend/get/
+aliases: [  /fr/get-chart-legend-from-a-worksheet/ ]
 weight: 80
 keywords: "Aspose.Cells, légende de graphique, API REST, Excel, SDK cloud, obtenir la légende d'un graphique, feuille de calcul, classeur"
 description: "Récupérer la légende d'un graphique à partir d'une feuille de calcul spécifique dans un classeur Excel à l'aide de l'API REST Aspose.Cells Cloud (v3.0). Inclut l'endpoint, les paramètres, un exemple cURL et des extraits de code SDK."

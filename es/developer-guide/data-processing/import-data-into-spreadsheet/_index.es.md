@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Plataforma de integración de datos de múltiples fuentes para Excel – API de importación y transformación automática de datos de Aspose.Cells Cloud."
 linktitle: "Importar datos en hoja de cálculo"
 type: docs
-url: /import-data-into-spreadsheet/
+url: /es/import-data-into-spreadsheet/
 keywords: "Aspose Cells, API de importación de datos, CSV a Excel, JSON a Excel, XML a Excel, hoja de cálculo en la nube, API REST"
 description: "Importe datos CSV, JSON o XML en hojas de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Aprenda sobre el formato de solicitud, parámetros, código de ejemplo con SDK y manejo de errores."
 weight: 100

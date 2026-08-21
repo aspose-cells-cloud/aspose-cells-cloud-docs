@@ -1,8 +1,8 @@
 ---
 title: "Обучение Aspose.Cells Cloud"
 type: docs
-url: /learn
-aliases: [/learn-aspose-cells-cloud]
+url: /ru/learn
+aliases: [  /ru/learn-aspose-cells-cloud ]
 linktitle: "Обучение"
 description: "Добро пожаловать на страницу обучения Aspose.Cells Cloud."
 weight: 15

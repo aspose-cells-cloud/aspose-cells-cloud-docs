@@ -2,7 +2,7 @@
 title: "Aggiungi collegamento ipertestuale a un foglio di lavoro"
 type: docs
 url: /it/hyperlinks/add/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+aliases: [  /it/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, aggiungi collegamento ipertestuale, Excel REST API, cloud SDK"
 description: "Scopri come aggiungere un collegamento ipertestuale a un foglio di lavoro Excel utilizzando l'API REST Aspose.Cells Cloud v3.0. Include l'endpoint, una guida completa ai parametri, un esempio cURL e frammenti di codice SDK per C#, Java, Python e altri linguaggi."
 weight: 20

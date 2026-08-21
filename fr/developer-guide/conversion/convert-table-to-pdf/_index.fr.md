@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment convertir les données de tableur locales en fichier PDF : Guide pas à pas"
 linktitle: "Convertir un tableau en PDF"
 type: docs
-url: /convert-table-to-pdf/
+url: /fr/convert-table-to-pdf/
 keywords: "Aspose.Cells, Excel vers PDF, conversion de tableau, API cloud"
 description: "Convertissez rapidement un tableau Excel local en fichier PDF à l’aide de l’API REST Aspose.Cells Cloud."
 weight: 100

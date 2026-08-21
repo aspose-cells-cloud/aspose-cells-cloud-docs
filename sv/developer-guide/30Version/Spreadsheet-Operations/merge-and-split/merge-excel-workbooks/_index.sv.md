@@ -3,8 +3,8 @@ title: "Sammanfoga en Excel-arbetsbok i en annan arbetsbok"
 second_title: "Dokument"
 linktitle: "Sammanfoga en Excel-arbetsbok i en annan arbetsbok"
 type: docs
-url: /merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
+url: /sv/merge-an-excel-file-into-the-excel-file/
+aliases: [  /sv/merge-excel-workbooks/ , /sv/workbook/merge/ ]
 keywords: "Excel-sammanfogning, Aspose.Cells Cloud, arbetsboks-API, REST-API, kalkylbladssammanfogning, molntjänst, autentisering, mergeWith, cURL-exempel"
 description: "Steg-för-steg-guide för att sammanfoga en Excel-arbetsbok i en annan med Aspose.Cells Cloud REST API (v3.0). Inkluderar autentisering, nödvändig mergeWith-parameter, cURL-exempel och SDK-kodavsnitt."
 ArticleTitle: "Sammanfoga en Excel-arbetsbok i en annan arbetsbok med Aspose.Cells Cloud API"

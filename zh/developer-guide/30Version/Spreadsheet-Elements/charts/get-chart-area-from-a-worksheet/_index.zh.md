@@ -1,8 +1,8 @@
 ---
 title: "从工作表中获取图表区域"
 type: docs
-url: /charts/area/get/
-aliases: [/get-chart-area-from-a-worksheet/]
+url: /zh/charts/area/get/
+aliases: [  /zh/get-chart-area-from-a-worksheet/ ]
 weight: 60
 keywords:
   - "Aspose.Cells"

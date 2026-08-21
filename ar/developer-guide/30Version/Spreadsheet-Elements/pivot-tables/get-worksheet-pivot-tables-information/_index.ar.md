@@ -3,8 +3,8 @@ title: "الحصول على جميع جداول البيانات المحوري�
 second_title: "مستند"
 linktitle: "الحصول على الكل"
 type: docs
-url: "/pivot-tables/get-all/"
-aliases: [/get-worksheet-pivot-tables-information/]
+url: /ar/pivot-tables/get-all/
+aliases: [  /ar/get-worksheet-pivot-tables-information/ ]
 keywords: "الحصول على جميع جداول البيانات المحورية، واجهة برمجة تطبيقات Aspose.Cells Cloud، PivotTable في Excel، واجهة برمجة تطبيقات REST"
 description: "استرجاع جميع جداول البيانات المحورية من ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. يتضمن نقطة النهاية (endpoint)، والمعاملات (parameters)، وخطوات المصادقة، وأمثلة لـ cURL وSDK لواجهة برمجة تطبيقات جداول البيانات المحورية."
 weight: 20

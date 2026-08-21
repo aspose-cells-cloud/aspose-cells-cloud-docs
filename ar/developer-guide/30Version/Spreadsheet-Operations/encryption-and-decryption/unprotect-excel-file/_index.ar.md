@@ -3,7 +3,7 @@ title: "إلغاء حماية ملف Excel – واجهة برمجة تطبيق�
 second_title: "مستند"
 linktitle: "إلغاء حماية ملف Excel"
 type: docs
-url: /excel-file-unprotect/
+url: /ar/excel-file-unprotect/
 aliases:
   - /unprotect-excel-workbooks/
   - /workbook/unprotect/

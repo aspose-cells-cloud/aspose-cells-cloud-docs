@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "이름 변경"
 type: docs
 url: /ko/worksheets/rename/
-aliases: [/rename-excel-worksheet/]
+aliases: [  /ko/rename-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 엑셀 워크시트 이름 변경, REST API, 스프레드시트 SDK, 워크시트 이름 변경, 클라우드 저장소"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크북의 워크시트 이름을 변경합니다. Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift용 SDK가 제공됩니다."
 weight: 20

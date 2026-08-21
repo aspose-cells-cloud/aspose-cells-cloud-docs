@@ -1,8 +1,8 @@
 ---
 title: "Lägg till ett diagram i ett kalkylblad"
 type: docs
-url: /charts/add/
-aliases: [/add-a-chart-in-a-worksheet/]
+url: /sv/charts/add/
+aliases: [  /sv/add-a-chart-in-a-worksheet/ ]
 weight: 20
 description: "Lär dig hur du lägger till ett diagram i ett Excel-kalkylblad med Aspose.Cells Cloud API v3.0. Inkluderar slutpunkt, parametrar, cURL-exempel och SDK-utdrag."
 keywords:

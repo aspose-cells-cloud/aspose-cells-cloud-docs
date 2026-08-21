@@ -1,7 +1,7 @@
 ---
 title: "차트 값 축 가져오기"
 type: docs
-url: /charts/value-axis/get/
+url: /ko/charts/value-axis/get/
 weight: 60
 keywords: Aspose.Cells, 차트 값 축, REST API, Excel, 클라우드 SDK, 차트 값 축 가져오기
 description: "Aspose.Cells Cloud REST API - 클라우드에 저장된 Excel 워크시트에서 차트의 값 축을 검색합니다."

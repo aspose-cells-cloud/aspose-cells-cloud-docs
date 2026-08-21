@@ -3,8 +3,8 @@ title: "Depolama Kullanmadan Veri İçe Aktar – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktitle: "Depolama kullanmadan veri içe aktar"
 type: docs
-url: /import/without-using-storage/
-aliases: [/import-data-in-excel-worksheet-without-using-storage/]
+url: /tr/import/without-using-storage/
+aliases: [  /tr/import-data-in-excel-worksheet-without-using-storage/ ]
 keywords: "Aspose.Cells, Cloud API, depolama kullanmadan veri içe aktar, Excel içe aktarma API’si, REST ile içe aktarma"
 description: "Aspose.Cells Cloud API ile bir Excel çalışma kitabına depolama kullanmadan veri nasıl içe aktarılacağını öğrenin. İstek biçimi, parametreler, cURL örneği, SDK kodu ve hata yönetimi içerir."
 weight: 10

@@ -3,7 +3,7 @@ title: "Поиск содержимого электронной таблицы 
 second_title: "Документ"
 ArticleTitle: "Поиск текста в локальных электронных таблицах Excel — поиск конкретных данных"
 linktype: "docs"
-url: /search-spreadsheet-content/
+url: /ru/search-spreadsheet-content/
 keywords: "Aspose.Cells, API поиска в Excel, поиск по содержимому электронной таблицы, облачный API для электронных таблиц, поиск текста"
 description: "Используйте Aspose.Cells Cloud API для поиска текста, чисел или формул в локальных файлах Excel. Поддерживает регистронезависимый поиск, ограничение по рабочему листу и безопасную аутентификацию."
 weight: 100

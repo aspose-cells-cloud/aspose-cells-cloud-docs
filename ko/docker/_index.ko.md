@@ -4,8 +4,8 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud Docker 운영 매뉴얼"
 linktitle: "Docker"
 type: docs
-url: /docker-developer-guide/
-aliases: [/docker/, /docker/run/]
+url: /ko/docker-developer-guide/
+aliases: [  /ko/docker/ , /ko/docker/run/ ]
 description: "Aspose.Cells Cloud를 Docker 컨테이너로 사설 또는 온프레미스 인프라에 배포하여 Aspose의 퍼블릭 클라우드를 사용하지 않고도 스프레드시트 처리(Excel, PDF, CSV, JSON, Markdown)를 수행할 수 있습니다."
 keywords:
   [

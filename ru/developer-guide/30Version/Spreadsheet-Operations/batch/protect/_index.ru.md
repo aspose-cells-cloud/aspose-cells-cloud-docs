@@ -2,7 +2,7 @@
 title: "Пакетная защита файлов Excel"
 second_title: "Документ"
 type: docs
-url: /batch/protect
+url: /ru/batch/protect
 keywords: "Пакетная защита файлов Excel, Aspose Cells Cloud, REST API, защита Excel, пакетная защита"
 description: "Узнайте, как использовать REST API Aspose.Cells Cloud для пакетной защиты нескольких файлов Excel. Включает подробную информацию о запросе, пример cURL и примеры кода SDK для различных языков."
 weight: 100

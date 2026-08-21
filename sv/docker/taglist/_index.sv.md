@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud Docker-avbildsmärken"
 linktitle: "Avbildsmärken"
 type: docs
-url: /docker/tag-list/
+url: /sv/docker/tag-list/
 description: "Hitta de senaste Aspose.Cells Cloud Docker-avbildsmärkena för Windows Server (2016‑2022) och Linux. Få kommandon för att hämta avbild, arkitekturuppgifter och uppgraderingsinformation på en och samma plats."
 weight: 30
 keywords:

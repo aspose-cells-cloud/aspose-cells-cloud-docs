@@ -3,8 +3,8 @@ title: "Шифрование, расшифровка и цифровая под�
 second_title: "Документ"
 linktype: "Защита Excel"
 type: docs
-url: /protect/
-aliases: [/workbook/password/]
+url: /ru/protect/
+aliases: [  /ru/workbook/password/ ]
 keywords: "Excel, защита, шифрование, расшифровка, цифровая подпись, Aspose.Cells Cloud, REST API, пароль, безопасность"
 description: "Узнайте, как защищать, шифровать, расшифровывать и ставить цифровую подпись на рабочих книгах Excel с помощью Aspose.Cells Cloud REST API — примеры кода для Android, C#, Java, Python и других."
 ArticleTitle: "Шифрование, расшифровка, цифровая подпись и защита файлов Excel с помощью API Aspose.Cells Cloud"

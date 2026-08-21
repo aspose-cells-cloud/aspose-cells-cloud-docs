@@ -3,7 +3,7 @@ title: "Excel 워크시트에서 다양한 콘텐츠를 가져오는 방법"
 second_title: "문서"
 linktitle: "가져오기"
 type: docs
-url: /worksheets/get/
+url: /ko/worksheets/get/
 keywords: "Excel, 워크시트, Aspose.Cells Cloud, REST API, 콘텐츠 추출, 형식 변환"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 다양한 유형의 콘텐츠를 가져오는 방법을 알아보세요. 이 가이드는 지원되는 형식을 다루며 관련 작업에 대한 링크를 제공합니다."
 weight: 20

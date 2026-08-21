@@ -4,7 +4,7 @@ second_title: "Документ"
 linktype: "Группировка"
 type: docs
 url: /ru/rows/group/
-aliases: [/ru/group-rows-in-excel-worksheet/]
+aliases: [  /ru/group-rows-in-excel-worksheet/ ]
 keywords: "группировка строк, Excel, Aspose.Cells Cloud, REST API, SDK, рабочий лист, Excel API"
 description: "Группировка строк в рабочем листе Excel с использованием REST API Aspose.Cells Cloud. Поддерживает множество SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) для простой интеграции."
 weight: 60

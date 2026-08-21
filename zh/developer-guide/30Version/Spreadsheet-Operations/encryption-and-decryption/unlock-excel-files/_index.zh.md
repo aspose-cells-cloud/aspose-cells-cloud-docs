@@ -3,8 +3,8 @@ title: "解锁 Excel 文件"
 second: "文档"
 linktitle: "解锁 Excel 文件"
 type: docs
-url: /unlock-excel-files/
-aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
+url: /zh/unlock-excel-files/
+aliases: [  /zh/unlock/without-storage/ , /zh/unlock/ , /zh/unlock/without-using-storage/ ]
 keywords: "解锁 Excel, Aspose.Cells Cloud, REST API, Excel 解锁, 密码保护工作簿, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
 description: "Aspose.Cells Cloud REST API 提供了用于解锁密码保护 Excel 文件的接口。SDK 支持多种编程语言，包括 Android、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby 和 Swift。"
 ArticleTitle: "使用 Aspose.Cells Cloud REST API 解锁 Excel 文件"

@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: Verschieben
 type: docs
 url: /de/pivot-tables/move/
-aliases: [/de/move-pivot-table/]
+aliases: [  /de/move-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, Pivot-Tabelle verschieben, Excel, REST-API, SDK, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
 description: "Erfahren Sie, wie Sie die Aspose.Cells Cloud REST-API verwenden, um eine Pivot-Tabelle innerhalb einer Excel-Arbeitsmappe zu verschieben. SDKs sind für Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby und Swift verfügbar."
 weight: 120

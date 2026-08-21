@@ -1,7 +1,7 @@
 ---
 title: "Обновление оси категорий диаграммы"
 type: docs
-url: /charts/category-axis/update/
+url: /ru/charts/category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, диаграмма, ось категорий, REST API, Excel, облачный SDK"
 description: "Обновляет ось категорий диаграммы в листе Excel с использованием облачного REST API Aspose.Cells."

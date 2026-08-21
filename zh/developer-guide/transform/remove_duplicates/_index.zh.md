@@ -3,7 +3,7 @@ title: "移除重复项"
 ArticleTitle: "移除重复项 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktype: "docs"
-url: /cells/remove/duplicates
+url: /zh/cells/remove/duplicates
 aliases: []
 keywords: "Aspose.Cells, 移除重复项, API"
 description: "移除工作表、范围或表格中的重复值。"

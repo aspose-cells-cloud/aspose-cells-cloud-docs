@@ -4,7 +4,7 @@ second title: "文档"
 articleTitle: "如何将电子表格转换为其他格式：分步指南"
 linkTitle: "转换电子表格"
 type: docs
-url: /convert-spreadsheet/
+url: /zh/convert-spreadsheet/
 keywords: "Aspose, Aspose.Cells, 电子表格转换, Excel 转 PDF, Excel API, 云端文件转换"
 description: "使用 Aspose.Cells Cloud API 将电子表格文件转换为其他格式。"
 weight: 100

@@ -4,7 +4,7 @@ ArticleTitle: "ワークシートをPDFに変換する – Aspose.Cells Cloud AP
 second_title: "ドキュメント"
 linktitle: "ConvertWorksheetToPdf"
 type: docs
-url: /cells/convert/worksheet/pdf
+url: /ja/cells/convert/worksheet/pdf
 aliases: []
 keywords: "Aspose.Cells, ワークシートをPDFに変換, API"
 description: "Aspose.Cells Cloud を使用してスプレッドシートファイルのワークシートを PDF に変換します。"

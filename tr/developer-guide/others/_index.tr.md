@@ -4,7 +4,7 @@ linktitle: "Diğer Özellikler"
 ArticleTitle: "Diğer Özellikler: Sağlık Kontrolü, Genel Anahtarı Alın"
 second_title: "Belge"
 type: docs
-url: /other-features/
+url: /tr/other-features/
 keywords: "Aspose.Cells, Cloud API, sağlık kontrolü, genel anahtar, erişim jetonu, Excel, REST"
 description: "Aspose.Cells Cloud’un diğer özelliklerini keşfedin: sağlık kontrolü uç noktası, genel anahtar alma ve jeton oluşturma işlemleriyle Excel API entegrasyonlarınızı güvenli hale getirin."
 weight: 180

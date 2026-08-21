@@ -3,7 +3,7 @@ title: "อัปเดตข้อมูลเมตา"
 second_title: "เอกสาร"
 linktype: "อัปเดตโดยไม่ใช้ที่จัดเก็บข้อมูล"
 type: docs
-url: /metadata/update/
+url: /th/metadata/update/
 keywords: "metadata, Excel, Aspose.Cells Cloud, REST API, update, spreadsheet"
 description: "Aspose.Cells Cloud REST API ช่วยให้สามารถอัปเดตข้อมูลเมตาในไฟล์ Excel ได้ โดยรองรับ SDK หลายภาษา (เช่น C#, Java, Python, Ruby, Go เป็นต้น) เพื่อการรวมระบบอย่างราบรื่นบนภาษาโปรแกรมต่างๆ"
 weight: 35

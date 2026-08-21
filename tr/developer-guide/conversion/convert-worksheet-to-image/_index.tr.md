@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Yerel Çalışma Sayfası Elektronik Tablo Verilerini Görüntü Dosyasına Dönüştürme: Adım Adım Kılavuz"
 linktitle: "Çalışma Sayfasını Görüntüye Dönüştür"
 type: docs
-url: /convert-worksheet-to-image/
+url: /tr/convert-worksheet-to-image/
 keywords: "Aspose.Cells Cloud, çalışma sayfası görüntüye, çalışma sayfasını görüntüye dönüştür, Excel'den PNG'ye, Excel'den SVG'ye, Excel'den TIFF'e, Excel'den JPEG'e, Excel'den BMP'ye, görüntü dönüştürme API'si, REST API, elektronik tablo görüntü dışa aktarma, SDK örnekleri"
 description: "Aspose.Cells Cloud API kullanarak bir Excel çalışma sayfasını görüntü formatlarına (PNG, SVG, TIFF, JPEG, BMP vb.) dönüştürme adımlı kılavuzu; istek parametreleri, yanıt detayları, hata kodları, kullanım senaryoları ve SDK kod örnekleri içerir."
 weight: 100

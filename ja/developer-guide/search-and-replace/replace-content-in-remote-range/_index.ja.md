@@ -4,7 +4,7 @@ secondtitle: "ドキュメント"
 articletitle: "クラウド Excel ファイルでの範囲内テキストの一括置換 – 検索 & 置換 API"
 linktitle: "リモート範囲のコンテンツを置換"
 type: docs
-url: /replace-content-in-remote-range/
+url: /ja/replace-content-in-remote-range/
 keywords: "リモート Excel 範囲のテキスト置換, Aspose.Cells Cloud API, Excel の検索と置換, クラウドスプレッドシート編集, リモート Excel ファイルの更新"
 description: "Aspose.Cells Cloud を使用して、リモート Excel ファイルの特定範囲内にあるテキストを検索・置換します。認証、エラーハンドリング、多言語 SDK をサポートします。"
 weight: 100

@@ -3,8 +3,8 @@ title: "Excelの画像を操作する"
 second_title: "ドキュメント"
 linktitle: "画像"
 type: docs
-url: /pictures/
-aliases: [/working-with-pictures/]
+url: /ja/pictures/
+aliases: [  /ja/working-with-pictures/ ]
 keywords: "Excel, 画像, Aspose.Cells Cloud, REST API, 画像処理, Excel画像"
 description: "Aspose.Cells Cloud REST API を使用して Excelワークシート内の画像の取得、追加、更新、削除を行う方法を学びます。C#、Java、Python など向けのコードサンプルも含まれています。"
 weight: 100

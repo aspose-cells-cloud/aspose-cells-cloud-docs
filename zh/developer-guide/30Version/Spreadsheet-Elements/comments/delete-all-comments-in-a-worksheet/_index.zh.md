@@ -2,7 +2,7 @@
 title: "删除工作表中的所有批注"
 description: "使用 Aspose.Cells Cloud API 删除 Excel 文件中工作表的所有批注。了解 DELETE 接口、所需参数、身份验证、示例 cURL 请求、响应格式、错误代码及 SDK 示例。"
 keywords: "Aspose, Cells, 删除批注, 工作表, API, REST, Excel, 云"
-url: /comments/clear/
+url: /zh/comments/clear/
 aliases:
   - /delete-all-comments-in-a-worksheet/
 weight: 50

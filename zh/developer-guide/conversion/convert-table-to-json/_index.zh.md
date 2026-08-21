@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何将本地电子表格表格数据转换为 JSON 文件：分步指南"
 linktitle: "将表格转换为 JSON"
 type: docs
-url: /convert-table-to-json/
+url: /zh/convert-table-to-json/
 keywords: "Excel, API, JSON, 转换, 云, 文件, 电子表格"
 description: "使用 Aspose.Cells Cloud API，通过单次 PUT 请求将本地 Excel 表格转换为 JSON 文件。包含 cURL 示例、参数说明以及 C#、Java、Python 等语言的 SDK 代码片段。"
 weight: 100

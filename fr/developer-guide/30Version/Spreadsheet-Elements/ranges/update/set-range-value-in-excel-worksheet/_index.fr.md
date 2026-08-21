@@ -3,8 +3,8 @@ title: "Définir une valeur de plage dans une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Définir des valeurs"
 type: docs
-url: /ranges/update/values/
-aliases: [/set-range-value-in-excel-worksheet/]
+url: /fr/ranges/update/values/
+aliases: [  /fr/set-range-value-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, API Excel, définir la valeur d'une plage, API REST, SDK cloud, mise à jour de la feuille de calcul"
 description: "Découvrez comment définir la valeur d'une cellule ou d'une plage dans un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud (version 3.0). Inclut l’URL du point de terminaison, les paramètres, un exemple cURL, des exemples de code SDK et la gestion des erreurs."
 weight: 72

@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Massuppdatering av text i moln-Excel-filer – Find & Replace-API"
 linktitle: "Ersätt innehåll i fjärrdokument"
 type: docs
-url: /replace-content-in-remote-spreadsheet/
+url: /sv/replace-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, ersätt innehåll, fjärrdokument, find and replace API, moln-Excel, massuppdatering av text"
 description: "Använd Aspose.Cells Cloud Find & Replace API för att massuppdatera text i fjärr-Excel-arbetsböcker. Säkert HTTPS-slutpunkt, OAuth2-autentisering och redo-användbara SDK-exempel för snabb integration."
 weight: 100

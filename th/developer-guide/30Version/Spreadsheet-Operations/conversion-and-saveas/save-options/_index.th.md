@@ -3,7 +3,7 @@ title: "ตัวเลือกการบันทึก"
 second_title: "เอกสาร"
 linktitle: "ตัวเลือกการบันทึก"
 type: docs
-url: /save-options/
+url: /th/save-options/
 keywords: "Aspose.Cells Cloud, SaveOptions, Excel, Workbook, REST API, File Formats, PDF, CSV, JSON, HTTP Compression, Chart Cache, Named Ranges, Directory Creation"
 description: "อธิบายคุณสมบัติของ SaveOptions ใน Aspose.Cells Cloud REST API ซึ่งช่วยให้นักพัฒนาสามารถกำหนดค่าพฤติกรรมการบันทึกสมุดงานในรูปแบบไฟล์และตัวเลือกต่างๆ เช่น การบีบอัด HTTP, การรีเฟรชแคชของกราฟ และการสร้างไดเรกทอรีโดยอัตโนมัติ"
 weight: 79

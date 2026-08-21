@@ -4,7 +4,7 @@ second_title: "Documentos"
 ArticleTitle: "Cómo convertir un rango local de hoja de cálculo a un archivo CSV: guía paso a paso"
 linktitle: "Convertir rango a CSV"
 type: docs
-url: /convert-range-to-csv/
+url: /es/convert-range-to-csv/
 keywords: "Aspose Cells, convertir rango a CSV, Excel a CSV, API de Excel, hoja de cálculo en la nube, convertir, Excel, CSV, Aspose.Cells, API en la nube"
 description: "Aprenda a convertir un rango específico de un libro local de Excel (XLSX o XLS) a CSV mediante la API REST de Aspose.Cells Cloud. Incluye sintaxis de solicitud, parámetros, manejo de errores y ejemplos de SDK."
 ---

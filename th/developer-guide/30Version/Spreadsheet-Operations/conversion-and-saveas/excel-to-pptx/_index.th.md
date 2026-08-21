@@ -3,7 +3,7 @@ title: "การแปลงไฟล์ Excel เป็น PPTX ด้วย A
 second_title: "เอกสาร"
 linktitle: "Excel เป็น PPTX"
 type: docs
-url: /convert-excel-file-to-pptx/
+url: /th/convert-excel-file-to-pptx/
 keywords: "Aspose, Cells, Excel, PPTX, การแปลง, REST API, คลาวด์"
 description: "เรียนรู้วิธีการแปลงสมุดงาน Excel เป็นพรีเซนเทชัน PPTX ด้วย Aspose.Cells Cloud REST API เวอร์ชัน 3.0 ประกอบด้วยตัวอย่างคำขอ cURL โค้ดตัวอย่าง SDK การยืนยันตัวตน และการจัดการข้อผิดพลาด"
 weight: 90

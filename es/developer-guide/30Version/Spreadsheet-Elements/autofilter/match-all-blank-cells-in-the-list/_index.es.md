@@ -4,8 +4,8 @@ ArticleTitle: "Coincidir con todas las celdas en blanco en una hoja de cálculo 
 second_title: "Documento"
 linktitle: "Coincidir con todas las celdas en blanco"
 type: docs
-url: /autofilter/match-all-blank/
-aliases: [/match-all-blank-cells-in-the-list/]
+url: /es/autofilter/match-all-blank/
+aliases: [  /es/match-all-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells, celdas en blanco, AutoFilter, API REST, Excel"
 description: "Aprenda a utilizar la API REST de Aspose.Cells Cloud para filtrar y coincidir con todas las celdas en blanco en una hoja de cálculo de Excel. Incluye el punto final, los parámetros, los pasos de autenticación, un ejemplo con cURL y fragmentos de código para SDK en C#, Java, Python y más."
 weight: 100

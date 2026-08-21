@@ -3,7 +3,7 @@ title: "Importera strängarray till Excel-arbetsblad – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktitle: "Importera strängarray"
 type: docs
-url: /import-string-array-into-excel-worksheet/
+url: /sv/import-string-array-into-excel-worksheet/
 aliases:
   - /import-string-array-into-worksheet/
   - /import-data/string-array/

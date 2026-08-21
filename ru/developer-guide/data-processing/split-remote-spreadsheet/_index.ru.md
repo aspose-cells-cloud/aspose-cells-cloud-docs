@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Разделить файл Excel в облаке на отдельные файлы и экспортировать в 30+ форматов"
 linktitle: "Разделить удалённую электронную таблицу в облаке"
 type: docs
-url: /split-remote-spreadsheet/
+url: /ru/split-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, разделение рабочей книги Excel, средство разделения электронных таблиц, облачный API, экспорт в PDF, экспорт в CSV, экспорт в JSON, экспорт в несколько форматов, облачная обработка электронных таблиц"
 description: "Используйте Aspose.Cells Cloud API для разделения рабочей книги Excel, хранящейся в облачном хранилище, на отдельные листы и экспорта каждого фрагмента в более чем 30 форматов, таких как PDF, CSV, JSON, XLSX, HTML, ODS и XPS."
 weight: 100

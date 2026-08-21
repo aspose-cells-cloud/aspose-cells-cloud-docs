@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfası Adını Değiştir"
 second_title: "Belge"
 linktitle: "Adını Değiştir"
 type: docs
-url: /worksheets/rename/
-aliases: [/rename-excel-worksheet/]
+url: /tr/worksheets/rename/
+aliases: [  /tr/rename-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel çalışma sayfası adını değiştir, REST API, elektronik tablo SDK'sı, çalışma sayfası adını değiştir, bulut depolama"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel defterinde bir çalışma sayfasının adını değiştirin. SDK'lar Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby ve Swift için mevcuttur."
 weight: 20

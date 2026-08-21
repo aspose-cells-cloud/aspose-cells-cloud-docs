@@ -4,7 +4,7 @@ ArticleTitle: "计算公式 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "计算公式"
 type: docs
-url: /cells/calculate/formula
+url: /zh/cells/calculate/formula
 aliases: []
 keywords: "Aspose Cells, 计算公式, 电子表格, API"
 description: "使用 Aspose.Cells Cloud API 在电子表格中计算指定公式。"

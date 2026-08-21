@@ -3,8 +3,8 @@ title: "Excel 도형 작업"
 second_title: "문서"
 linktype: "도형"
 type: docs
-url: /shapes/
-aliases: ["/working-with-shapes/", "/working-with-images/"]
+url: /ko/shapes/
+aliases: [  /ko/working-with-shapes/ , /ko/working-with-images/ ]
 keywords: "Excel 도형, Aspose.Cells Cloud, API, 워크시트, 도형 작업"
 description: "Aspose.Cells Cloud API를 통해 Excel 도형을 관리하는 방법을 배워보세요—도형 검색, 추가, 삭제, 변환을 SDK 지원과 함께 수행합니다."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "وثيقة"
 linktype: "التحويل وحفظ باسم"
 type: docs
 url: /ar/conversion-and-save-as/
-aliases: [/ar/convert-excel/, /ar/convert/]
+aliases: [  /ar/convert-excel/ , /ar/convert/ ]
 keywords: "Aspose.Cells, واجهة برمجة تطبيقات تحويل إكسل, تحويل إكسل إلى PDF, إكسل إلى CSV, إكسل إلى JSON, تحويل جداول البيانات في السحابة"
 description: "تعلم كيفية تحويل كتب عمل إكسل إلى تنسيقات PDF وCSV وJSON وHTML وأكثر من 15 تنسيق آخر باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن تفاصيل النقاط النهائية (Endpoints)، وأوامر cURL النموذجية، وأكواد مقتطفات SDK لـ Java و.NET وPython وما إلى ذلك."
 weight: 30

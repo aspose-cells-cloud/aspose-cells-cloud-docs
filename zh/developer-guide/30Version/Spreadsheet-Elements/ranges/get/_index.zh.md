@@ -3,7 +3,7 @@ title: "如何从 Excel 工作表中获取区域内容"
 second_title: "Document"
 linktype: "Get"
 type: docs
-url: /ranges/get/
+url: /zh/ranges/get/
 keywords: "Aspose.Cells, Excel, API, 获取, 区域, 电子表格, REST"
 description: "了解如何使用 Aspose.Cells Cloud REST API 从 Excel 工作表中检索区域内容。包含请求语法和示例代码。"
 weight: 20

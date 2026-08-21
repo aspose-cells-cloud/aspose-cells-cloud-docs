@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud"
 ArticleTitle: "クラウドで Excel ファイルをマージ | Aspose.Cells Cloud API を使用してオンラインでスプレッドシートを結合"
 linktype: "Merge Remote Spreadsheet"
 type: docs
-url: /merge-remote-spreadsheet/
+url: /ja/merge-remote-spreadsheet/
 keywords: "Aspose.Cells, Excel マージ, クラウド API, スプレッドシート結合"
 description: "Aspose.Cells Cloud API を使用してクラウドストレージに保存されている Excel ワークブックをマージします。出力形式、出力フォルダ、マージモードを 1 回の HTTPS 呼び出しで指定できます。"
 weight: 100

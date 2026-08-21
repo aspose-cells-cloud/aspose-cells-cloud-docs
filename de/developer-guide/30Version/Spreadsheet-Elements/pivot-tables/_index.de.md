@@ -3,8 +3,8 @@ title: "Arbeiten mit Excel-PivotTabellen"
 second_title: "Dokument"
 linktitle: "PivotTabellen"
 type: docs
-url: /pivottables/
-aliases: [/working-with-pivot-tables/]
+url: /de/pivottables/
+aliases: [  /de/working-with-pivot-tables/ ]
 keywords: "Excel, PivotTabelle, Aspose.Cells Cloud, API, Tabellenkalkulation, Datenanalyse, REST API"
 description: "Umfassende Anleitung zur Verwendung der Aspose.Cells Cloud REST APIs zum Erstellen, Abrufen, Aktualisieren und Löschen von PivotTabellen in Excel-Arbeitsblättern. Enthält SDK-Referenzen, Beispielaufrufe und Versionshinweise."
 weight: 100

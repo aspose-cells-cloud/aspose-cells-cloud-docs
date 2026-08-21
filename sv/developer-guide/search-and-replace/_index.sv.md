@@ -4,7 +4,7 @@ secondtitle: "Dokument"
 articletitle: "Sök och ersätt i kalkylark – Aspose.Cells Cloud API"
 linktitle: "Sök och ersätt"
 type: docs
-url: /search-replace/
+url: /sv/search-replace/
 keywords: "Aspose.Cells, Cloud API, sök och ersätt, Excel, REST, API, kalkylarksautomatisering, sök och ersätt, Excel i molnet"
 description: "Lär dig hur du använder Aspose.Cells Cloud:s **Sök och ersätt**-API för att söka efter och ersätta text, formler eller länkar i Excel-arbetsböcker. Innehåller information om slutpunkter, begärandeparametrar, exempel på svar, statuskoder och kodstycken för C#, Java och Python."
 weight: 50

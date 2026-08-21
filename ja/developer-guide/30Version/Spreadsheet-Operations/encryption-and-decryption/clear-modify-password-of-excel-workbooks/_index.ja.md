@@ -3,7 +3,7 @@ title: "Excel ワークブックから書き込み保護（パスワード）を
 second_title: "Document"
 linktitle: "Excel ファイルのパスワードを解除する"
 type: docs
-url: /clear-excel-files-password/
+url: /ja/clear-excel-files-password/
 aliases:
   [
     /clear-modify-password-of-excel-workbooks/,

@@ -3,8 +3,8 @@ title: "Hämta textobjekt från ett Excel-arbetsblad"
 second_title: "Dokument"
 linktitle: "Hämta textobjekt i arbetsblad"
 type: docs
-url: /worksheets/get-text-items/
-aliases: [/get-text-items-from-a-worksheet/]
+url: /sv/worksheets/get-text-items/
+aliases: [  /sv/get-text-items-from-a-worksheet/ ]
 weight: 20
 keywords: "Aspose.Cells, molntjänst-API, Excel, arbetsblad, textobjekt, REST"
 description: "Hämta alla textobjekt från ett specifikt arbetsblad i en Excel-fil med Aspose.Cells Cloud REST API. Innehåller exempel med cURL, SDK-kod, autentiseringssteg och svarsschema."

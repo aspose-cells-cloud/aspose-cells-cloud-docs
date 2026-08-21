@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud Download File API – Gränssnitt för snabb filhämtning i molnet"
 linktitle: "Download File API"
 type: docs
-url: /download-file/
+url: /sv/download-file/
 keywords: "Aspose.Cells, Download File API, Excel-molnlagring, REST API, filhämtning, PDF, CSV, SDK"
 description: "Hämta Excel-filer, PDF-filer, CSV-filer och andra format från Aspose.Cells Cloud-lagring med Download File API (v4.0). Inkluderar slutpunkt, parametrar, autentiseringsinformation och kodexempel."
 weight: 100

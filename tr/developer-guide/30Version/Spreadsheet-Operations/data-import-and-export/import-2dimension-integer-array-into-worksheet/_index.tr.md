@@ -3,7 +3,7 @@ title: "2 Boyutlu Tamsayı Dizisini Excel Çalışma Sayfasına İçe Aktar"
 second_title: "Belge"
 linktitle: "2 boyutlu tamsayı dizisini içe aktar"
 type: docs
-url: /import-a-2d-integer-array-into-excel-worksheet/
+url: /tr/import-a-2d-integer-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-integer-array-into-excel-worksheet/,

@@ -3,7 +3,7 @@ title: "Hintergrundbild in Arbeitsmappe hinzufügen"
 second_title: "Dokument"
 linktitle: "Hinzufügen"
 type: docs
-url: /add-background-in-excel-file/
+url: /de/add-background-in-excel-file/
 aliases:
   - /add-background-in-workbook/
   - /workbook/add-background/

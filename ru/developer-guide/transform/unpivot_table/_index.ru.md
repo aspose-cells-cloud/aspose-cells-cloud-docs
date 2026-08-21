@@ -4,7 +4,7 @@ ArticleTitle: "Развернуть таблицу – Aspose.Cells Cloud API"
 second_title: "Документ"
 linktitle: "Развернуть таблицу"
 type: docs
-url: /cells/unpivot/table
+url: /ru/cells/unpivot/table
 aliases: []
 keywords: "Aspose.Cells, развернуть, трансформировать"
 description: "Поменять местами строки и столбцы в электронной таблице."

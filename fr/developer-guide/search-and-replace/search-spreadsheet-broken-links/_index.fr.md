@@ -4,7 +4,7 @@ second_title: "Document"
 articleTitle: "Trouver et corriger les liens rompus dans Excel – Vérificateur de liens de feuilles de calcul cloud"
 linktype: "Search Spreadsheet Broken Links"
 type: docs
-url: /search-spreadsheet-broken-links/
+url: /fr/search-spreadsheet-broken-links/
 keywords: "Aspose Cells, liens rompus, audit de feuille de calcul, API Excel, feuille de calcul cloud, vérificateur de liens"
 description: "Détectez et corrigez les liens rompus dans les classeurs Excel via l’API Aspose.Cells Cloud. Analysez des plages, obtenez des résultats détaillés au format JSON et intégrez avec n’importe quel SDK de langage."
 weight: 100

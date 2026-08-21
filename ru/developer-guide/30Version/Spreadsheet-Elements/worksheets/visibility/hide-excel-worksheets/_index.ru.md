@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Скрыть"
 type: docs
 url: /ru/worksheets/hide/
-aliases: [/hide-excel-worksheets/]
+aliases: [  /ru/hide-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Excel, скрытие листа, REST API, электронная таблица"
 description: "Пошаговое руководство по скрытию листа в книге Excel с использованием REST API Aspose.Cells Cloud, включая детали запроса, пример cURL и фрагменты кода SDK для множества языков."
 weight: 50

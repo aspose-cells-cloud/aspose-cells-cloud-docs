@@ -4,7 +4,7 @@ ArticleTitle: "FlipData – Aspose.Cells Cloud"
 second_title: "เอกสาร"
 linktype: "FlipData"
 type: docs
-url: /cells/flip
+url: /th/cells/flip
 aliases: []
 keywords: "FlipData, การเปลี่ยนรูปแบบข้อมูล, Aspose.Cells"
 description: "หมุนหรือพลิกทิศทางช่วงข้อมูลที่ระบุในไฟล์สมุดงาน"

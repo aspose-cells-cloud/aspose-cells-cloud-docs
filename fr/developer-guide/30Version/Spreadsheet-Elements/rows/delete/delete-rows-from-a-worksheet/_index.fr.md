@@ -3,7 +3,7 @@ title: "Supprimer plusieurs lignes à partir d’une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Lignes"
 type: docs
-url: /rows/delete/rows/
+url: /fr/rows/delete/rows/
 keywords: "Aspose.Cells Cloud, supprimer des lignes, supprimer plusieurs lignes, feuille de calcul Excel, API REST, SDK"
 description: "Découvrez comment supprimer une ou plusieurs lignes à partir d’une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut les détails des points de terminaison, des paramètres, un exemple cURL et des exemples de code SDK pour divers langages."
 weight: 80

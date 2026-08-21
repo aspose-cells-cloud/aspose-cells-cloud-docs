@@ -3,8 +3,8 @@ title: "隐藏 Excel 工作表"
 second_title: "文档"
 linktitle: "隐藏"
 type: docs
-url: /worksheets/hide/
-aliases: [/hide-excel-worksheets/]
+url: /zh/worksheets/hide/
+aliases: [  /zh/hide-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Excel, 隐藏工作表, REST API, 电子表格"
 description: "逐步指南，介绍如何使用 Aspose.Cells Cloud REST API 隐藏 Excel 工作簿中的工作表，包括请求详情、cURL 示例以及多种编程语言的 SDK 代码片段。"
 weight: 50

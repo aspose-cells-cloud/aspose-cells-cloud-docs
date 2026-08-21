@@ -3,8 +3,8 @@ title: "تصدير كائن القائمة"
 second_title: "مستند"
 linktitle: "كائن القائمة"
 type: docs
-url: /export-excel-listobject-to-different-formats/
-aliases: [/export/excel-listobject-to-different-formats/]
+url: /ar/export-excel-listobject-to-different-formats/
+aliases: [  /ar/export/excel-listobject-to-different-formats/ ]
 keywords: "تصدير ListObject، كائن القائمة في Excel، Aspose.Cells Cloud، واجهة برمجة تطبيقات REST، PDF، CSV، JSON، XLSX، ODS، PNG، TIFF، مكتبات SDK"
 description: "تتيح واجهة Aspose.Cells Cloud REST تصدير كائنات القائمة (ListObjects) في ملفات Excel إلى مجموعة واسعة من تنسيقات الملفات. تتوفر مكتبات SDK للعديد من لغات البرمجة، بما في ذلك C# وJava وPython وNode.js وGo وPHP وRuby وPerl وSwift."
 weight: 20

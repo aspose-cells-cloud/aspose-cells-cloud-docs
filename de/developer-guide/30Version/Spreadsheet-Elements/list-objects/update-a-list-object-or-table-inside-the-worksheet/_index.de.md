@@ -4,7 +4,7 @@ ArticleTitle: "Ein List-Objekt in einem Excel-Arbeitsblatt aktualisieren – Asp
 second_title: "Dokument"
 linktitle: "Aktualisieren"
 type: docs
-url: /list-objects/update/
+url: /de/list-objects/update/
 aliases:
   - /update-a-list-object-or-table-inside-the-worksheet/
   - /tables/update/

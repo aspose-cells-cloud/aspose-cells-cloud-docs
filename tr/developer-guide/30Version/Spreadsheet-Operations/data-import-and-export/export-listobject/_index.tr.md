@@ -3,8 +3,8 @@ title: "Liste Nesnesini Dışa Aktar"
 second_title: "Belge"
 linktitle: "Liste Nesnesi"
 type: docs
-url: /export-excel-listobject-to-different-formats/
-aliases: [/export/excel-listobject-to-different-formats/]
+url: /tr/export-excel-listobject-to-different-formats/
+aliases: [  /tr/export/excel-listobject-to-different-formats/ ]
 keywords: "ListeNesnesi Dışa Aktar, Excel ListeNesnesi, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, XLSX, ODS, PNG, TIFF, SDK'lar"
 description: "Aspose.Cells Cloud REST API, Excel ListeNesnelerini çeşitli dosya formatlarına dışa aktarmayı sağlar. C#, Java, Python, Node.js, Go, PHP, Ruby, Perl ve Swift dahil birçok programlama dili için SDK’lar mevcuttur."
 weight: 20

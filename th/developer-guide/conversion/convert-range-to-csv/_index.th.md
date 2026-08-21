@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีการแปลงช่วงข้อมูลในไฟล์สเปรดชีตในเครื่องเป็นไฟล์ CSV: คู่มือแบบทีละขั้นตอน"
 linktype: "แปลงช่วงเป็น CSV"
 type: docs
-url: /convert-range-to-csv/
+url: /th/convert-range-to-csv/
 keywords: "Aspose Cells, แปลงช่วงเป็น CSV, Excel เป็น CSV, Excel API, สเปรดชีตบนคลาวด์, แปลง, Excel, CSV, Aspose.Cells, Cloud API"
 description: "เรียนรู้วิธีแปลงช่วงข้อมูลที่ระบุจากสมุดงาน Excel ที่อยู่ในเครื่อง (XLSX หรือ XLS) เป็น CSV โดยใช้ Aspose.Cells Cloud REST API รวมถึงไวยากรณ์คำขอ พารามิเตอร์ การจัดการข้อผิดพลาด และตัวอย่าง SDK"
 ---

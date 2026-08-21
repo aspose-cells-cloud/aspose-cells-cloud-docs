@@ -3,8 +3,8 @@ title: "取消合并范围内的单元格"
 second_title: "文档"
 linktitle: "取消合并"
 type: docs
-url: /ranges/unmerge/
-aliases: [/unmerge-merged-cells-of-the-range/]
+url: /zh/ranges/unmerge/
+aliases: [  /zh/unmerge-merged-cells-of-the-range/ ]
 keywords: "Aspose.Cells Cloud，取消合并单元格，Excel API，工作表范围，REST API"
 description: "了解如何使用 Aspose.Cells Cloud API 取消工作表中特定范围内的合并单元格。包含端点、参数、示例 cURL 命令以及 C#、Java、Python 等语言的 SDK 代码片段。"
 weight: 20

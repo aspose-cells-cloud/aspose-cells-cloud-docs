@@ -3,8 +3,8 @@ title: "Bir Excel Çalışma Sayfasından Bir Filtre Silme – Aspose.Cells Clou
 second_title: "Belge"
 linktitle: "Filtreyi sil"
 type: docs
-url: /delete-filter/
-aliases: [/delete-a-filter-for-a-filter-column/, /delete-auto-filter/]
+url: /tr/delete-filter/
+aliases: [  /tr/delete-a-filter-for-a-filter-column/ , /tr/delete-auto-filter/ ]
 keywords: "Aspose.Cells Cloud filtre silme, Excel, REST API, SDK"
 description: "Aspose.Cells Cloud REST API, cURL ve SDK’lar (C#, Java, Python vb.) kullanarak bir Excel çalışma sayfasından Otomatik Filtre’yi nasıl sileceğinizi öğrenin.uç nokta, parametreler, kimlik doğrulama ve örnek kod içerir."
 weight: 100

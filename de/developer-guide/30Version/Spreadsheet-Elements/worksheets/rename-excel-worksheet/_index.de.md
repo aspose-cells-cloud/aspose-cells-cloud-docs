@@ -3,8 +3,8 @@ title: "Excel-Arbeitsblatt umbenennen"
 second_title: "Dokument"
 linktitle: "Umbenennen"
 type: docs
-url: /worksheets/rename/
-aliases: [/rename-excel-worksheet/]
+url: /de/worksheets/rename/
+aliases: [  /de/rename-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel-Arbeitsblatt umbenennen, REST API, Tabellenkalkulations-SDK, Arbeitsblatt umbenennen, Cloud-Speicher"
 description: "Benennen Sie ein Arbeitsblatt in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API um. SDKs sind für Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby und Swift verfügbar."
 weight: 20

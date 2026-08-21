@@ -3,8 +3,8 @@ title: "อัปเดตคุณสมบัติของแผ่นงา
 second_title: "เอกสาร"
 linktitle: "อัปเดต"
 type: docs
-url: /worksheets/update-properties/
-aliases: [/update-excel-worksheet-properties/]
+url: /th/worksheets/update-properties/
+aliases: [  /th/update-excel-worksheet-properties/ ]
 weight: 20
 keywords:
   [

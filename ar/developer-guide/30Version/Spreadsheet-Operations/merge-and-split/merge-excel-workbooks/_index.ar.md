@@ -3,8 +3,8 @@ title: "دمج مصنف Excel داخل مصنف آخر"
 second_title: "وثيقة"
 linktype: "دمج مصنف Excel داخل مصنف آخر"
 type: docs
-url: /merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
+url: /ar/merge-an-excel-file-into-the-excel-file/
+aliases: [  /ar/merge-excel-workbooks/ , /ar/workbook/merge/ ]
 keywords: "دمج Excel، Aspose.Cells Cloud، واجهة برمجة تطبيقات مصنفات، واجهة برمجة تطبيقات REST، دمج جداول البيانات، حزمة تطويرات السحابة، المصادقة، mergeWith، مثال cURL"
 description: "دليل خطوة بخطوة لدمج مصنف Excel داخل مصنف آخر باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يشمل المصادقة، المعامل المطلوب mergeWith، مثال cURL، ومقتطفات من كود SDK."
 ArticleTitle: "دمج مصنف Excel داخل مصنف آخر باستخدام واجهة Aspose.Cells Cloud API"

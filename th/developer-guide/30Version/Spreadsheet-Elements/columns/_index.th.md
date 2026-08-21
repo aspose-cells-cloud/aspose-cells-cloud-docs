@@ -3,8 +3,8 @@ title: "การดำเนินการกับคอลัมน์ใน
 second_title: "เอกสาร"
 linktype: "คอลัมน์"
 type: docs
-url: /columns/
-aliases: [/working-with-columns/]
+url: /th/columns/
+aliases: [  /th/working-with-columns/ ]
 keywords: "Excel, คอลัมน์, Aspose.Cells Cloud, API, สเปรดชีต, worksheet, REST API"
 description: "คู่มือโดยละเอียดเกี่ยวกับการดำเนินการของ API Aspose.Cells Cloud สำหรับคอลัมน์ใน worksheet ของ Excel ครอบคลุมการดึงข้อมูล การเพิ่ม การคัดลอก การซ่อน การยกเลิกการซ่อน การจัดกลุ่ม การยกเลิกการจัดกลุ่ม และการลบ"
 weight: 100

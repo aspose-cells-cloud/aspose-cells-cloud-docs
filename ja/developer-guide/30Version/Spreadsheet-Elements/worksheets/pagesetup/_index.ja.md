@@ -3,7 +3,7 @@ title: "ワークシートのページ設定"
 second_title: "Document"
 linktitle: "ページ設定"
 type: docs
-url: /page-setup/
+url: /ja/page-setup/
 keywords: "Aspose.Cells, pageSetup, ワークシート, 印刷設定, 余白, 向き, 用紙サイズ, ヘッダー, フッター, 拡大縮小"
 description: "Aspose.Cells CloudのPageSetupオブジェクトを使用してExcelワークシートの印刷レイアウトを設定する方法を学びます。プロパティ一覧、デフォルト値、範囲、およびC#、Java、Python用のコードサンプルを含みます。"
 weight: 20

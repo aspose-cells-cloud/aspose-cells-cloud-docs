@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud 移除重复子字符串 Web API —— 清除 Excel 
 second_title: "文档"
 ArticleTitle: "Excel 重复子字符串清除工具 —— 清理单元格中的重复文本"
 linktype: "docs"
-url: "/remove-duplicate-substrings/"
+url: /zh/remove-duplicate-substrings/
 keywords: "Aspose.Cells, 重复子字符串, Excel API, 文本清理, 云服务"
 description: "通过 Aspose.Cells Cloud API 移除 Excel 单元格中的重复子字符串，同时保留原有格式和数据验证规则。"
 weight: 100

@@ -3,7 +3,7 @@ title: "Konvertera en Excel-fil till olika format"
 second_title: "Dokument"
 linktitle: "Konvertera kalkylark"
 type: docs
-url: /convert-a-spread-file-to-different-formats/
+url: /sv/convert-a-spread-file-to-different-formats/
 keywords: "Excel-konvertering, kalkylarkskonvertering, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, filformatkonvertering"
 description: "Använd Aspose.Cells Cloud REST API för att konvertera Excel-arbetsböcker till olika format som PDF, CSV, JSON och Markdown. API:t stöder flera SDK:er för språk som C#, Java, Python och mer."
 weight: 10

@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Excel-Datenreiniger – Konvertierung von Text in Zahlen & Entfernung unerwünschter Zeichen"
 linktitle: "Text konvertieren"
 type: docs
-url: /convert-text/
+url: /de/convert-text/
 keywords: "Aspose.Cells Text konvertieren, Excel Text in Zahlen, spezielle Zeichen in Excel entfernen, Zeilenumbrüche in Excel ersetzen, akzentuierte Zeichen normalisieren, Excel-Datenreinigungs-API"
 description: "Konvertieren Sie numerische Werte, die als Text formatiert sind, in echte Zahlen, ersetzen Sie unerwünschte Zeichen und Zeilenumbrüche sowie normalisieren Sie akzentuierte Zeichen in Excel-Dateien mithilfe der Aspose.Cells Cloud API."
 weight: 100

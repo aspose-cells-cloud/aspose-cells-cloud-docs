@@ -3,8 +3,8 @@ title: "إظهار ورقة عمل في إكسل"
 second_title: "مستند"
 linktype: "إظهار"
 type: docs
-url: /worksheets/unhide/
-aliases: [/unhide-excel-worksheets/]
+url: /ar/worksheets/unhide/
+aliases: [  /ar/unhide-excel-worksheets/ ]
 keywords: "Aspose.Cells، إظهار ورقة عمل، واجهة برمجة تطبيقات إكسل، جدول بيانات سحابي، REST، رؤية ورقة العمل، ملف عمل إكسل"
 description: "تعرّف على كيفية استخدام واجهة Aspose.Cells Cloud REST API لإظهار ورقة عمل في ملف عمل إكسل. يتضمن تفاصيل الطلب، وأمثلة باستخدام cURL، وأكواد مقتطفات SDK بلغات برمجة متعددة."
 weight: 60

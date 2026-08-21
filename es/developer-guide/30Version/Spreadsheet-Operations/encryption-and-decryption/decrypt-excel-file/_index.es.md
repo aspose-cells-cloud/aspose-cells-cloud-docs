@@ -3,8 +3,8 @@ title: "Descifrar un libro de Excel"
 second: "Documento"
 linktitle: "Descifrar un archivo de Excel"
 type: docs
-url: /excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+url: /es/excel-file-decrypt/
+aliases: [  /es/decrypt-excel-workbooks/ , /es/workbook/decrypt/ ]
 keywords: "Aspose.Cells, descifrado de Excel, API REST, SDK en la nube"
 description: "Aprenda cómo descifrar un libro de Excel utilizando la API REST de Aspose.Cells Cloud. Incluye parámetros requeridos, ejemplo de cURL, ejemplos de código con SDK y detalles sobre manejo de errores."
 ArticleTitle: "Cómo descifrar un libro de Excel utilizando la API de Aspose.Cells Cloud"

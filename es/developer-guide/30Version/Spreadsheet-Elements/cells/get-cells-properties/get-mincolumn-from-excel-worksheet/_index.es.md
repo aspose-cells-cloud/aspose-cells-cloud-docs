@@ -1,7 +1,7 @@
 ---
 title: "Obtener MinColumn de una hoja de cálculo de Excel"
 type: docs
-url: /get-mincolumn-from-excel-worksheet/
+url: /es/get-mincolumn-from-excel-worksheet/
 weight: 100
 keywords: Excel, Aspose.Cells Cloud, REST API, Obtener MinColumn, Hoja de cálculo, SDK, API en la nube
 description: Recuperar el índice mínimo de columna que contiene datos en una hoja de cálculo de un archivo de Excel mediante la API REST de Aspose.Cells Cloud.

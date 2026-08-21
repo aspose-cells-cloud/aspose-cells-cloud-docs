@@ -2,7 +2,7 @@
 title: "워크시트의 모든 주석 삭제"
 description: "Aspose.Cells Cloud API를 사용하여 Excel 파일의 워크시트에서 모든 주석을 삭제합니다. DELETE 엔드포인트, 필수 매개변수, 인증 방법, 샘플 cURL 요청, 응답 형식, 오류 코드 및 SDK 예제를 알아봅니다."
 keywords: "Aspose, Cells, 주석 삭제, 워크시트, API, REST, Excel, 클라우드"
-url: /comments/clear/
+url: /ko/comments/clear/
 aliases:
   - /delete-all-comments-in-a-worksheet/
 weight: 50

@@ -3,7 +3,7 @@ title: "Comment obtenir le contenu d'une plage dans une feuille Excel"
 second_title: "Document"
 linktype: "Get"
 type: docs
-url: /ranges/get/
+url: /fr/ranges/get/
 keywords: "Aspose.Cells, Excel, API, obtenir, plage, feuille de calcul, REST"
 description: "Découvrez comment récupérer le contenu d'une plage dans une feuille Excel à l'aide de l'API REST Aspose.Cells Cloud. Inclut la syntaxe de la requête et du code d'exemple."
 weight: 20

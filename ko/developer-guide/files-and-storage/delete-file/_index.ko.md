@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud – 파일 삭제 API"
 linktype: "Delete File"
 type: docs
-url: /delete-file/
+url: /ko/delete-file/
 keywords: "Aspose Cells, 파일 삭제 API, Excel 클라우드 스토리지, REST API, 파일 관리"
 description: "RESTful 파일 삭제 API를 사용하여 Aspose.Cells Cloud 스토리지에서 Excel 파일을 삭제합니다. 엔드포인트, 매개변수, 인증 및 샘플 코드 포함."
 weight: 100

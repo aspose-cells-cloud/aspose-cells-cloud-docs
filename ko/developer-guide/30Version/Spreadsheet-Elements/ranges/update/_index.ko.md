@@ -3,7 +3,7 @@ title: "Excel 워크시트에서 범위 콘텐츠 업데이트하는 방법"
 second_title: "문서"
 linktitle: "업데이트"
 type: docs
-url: /ranges/update/
+url: /ko/ranges/update/
 keywords: "Excel, 범위 업데이트, Aspose.Cells Cloud, REST API, 스프레드시트, 범위 스타일, 범위 값, 행 높이, 열 너비"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 범위 콘텐츠를 업데이트합니다. 지원되는 SDK를 통해 스타일, 값, 행 높이, 열 너비를 수정합니다."
 weight: 20

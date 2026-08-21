@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "ชุดพัฒนาซอฟต์แวร์ (SDK) ที่พร้อมใช้งานของ Aspose.Cells Cloud: C#, Java, PHP, Python, Ruby, Node.js, Go, Perl"
 LinkTitle: "ชุด SDK ที่พร้อมใช้งาน"
 type: docs
-url: /available-sdks/
+url: /th/available-sdks/
 description: "ค้นพบชุดพัฒนาซอฟต์แวร์ (SDK) ของ Aspose.Cells Cloud สำหรับ C#, Java, PHP, Python, Ruby, Node.js, Go และ Perl สร้าง แปลง และวิเคราะห์ไฟล์ Excel ในคลาวด์ด้วย API ข้ามแพลตฟอร์มที่มีต้นทุนต่ำ"
 weight: 30
 keywords: "ชุดพัฒนาซอฟต์แวร์ (SDK) ของ Aspose.Cells Cloud, C#, Java, PHP, Python, Ruby, Node.js, Go, Perl, Excel, API บนคลาวด์"

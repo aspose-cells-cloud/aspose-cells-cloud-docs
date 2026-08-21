@@ -2,7 +2,7 @@
 title: "ضغط ملفات Excel وإصلاحها"
 second_title: "وثيقة"
 type: docs
-url: /compress-and-repair-excel-files/
+url: /ar/compress-and-repair-excel-files/
 linktitle: "ضغط وإصلاح"
 keywords: "Aspose.Cells، ضغط Excel، إصلاح Excel، واجهة برمجة تطبيقات سحابية، تقليل حجم ملف Excel، استعادة مصنف تالف، ضغط ملف Excel، إصلاح مصنف Excel"
 description: "تعلم كيفية ضغط مصنفات Excel الكبيرة وإصلاح الملفات التالفة باستخدام واجهة برمجة تطبيقات Aspose.Cells السحابية. أمثلة خطوة بخطوة، اللغات المدعومة، وأفضل الممارسات."

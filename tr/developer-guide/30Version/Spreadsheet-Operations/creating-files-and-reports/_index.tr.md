@@ -2,8 +2,8 @@
 title: "Excel Dosyaları Oluşturun ve Excel Raporları Oluşturun"
 second_title: "Belge"
 type: docs
-url: /creating-files-and-reports/
-aliases: [/workbook/create/]
+url: /tr/creating-files-and-reports/
+aliases: [  /tr/workbook/create/ ]
 linktitle: "Excel ve Rapor Oluşturun"
 keywords: "Aspose.Cells Cloud, Excel API, çalışma kitabı oluştur, Excel raporu, SmartMarker, şablon, rapor oluşturma"
 description: "Aspose.Cells Cloud API ile boş Excel çalışma kitapları nasıl oluşturulacağını, şablon dosyalarından dosyalar nasıl oluşturulacağını ve SmartMarker özellikli raporlar nasıl oluşturulacağını kod örnekleriyle öğrenin."

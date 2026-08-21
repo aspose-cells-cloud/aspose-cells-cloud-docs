@@ -2,7 +2,7 @@
 title: "Dölj diagramlegend i ett Excel-ark – Aspose.Cells Cloud API"
 type: docs
 url: /sv/charts/legend/hide/
-aliases: [/sv/hide-chart-legend-in-a-worksheet/]
+aliases: [  /sv/hide-chart-legend-in-a-worksheet/ ]
 weight: 110
 keywords: "Aspose.Cells, Excel, dölj diagramlegend, REST API, molntjänst, diagramlegend"
 description: "Lär dig hur du döljer en diagramlegend i ett Excel-ark med Aspose.Cells Cloud REST API. Innehåller HTTPS-slutpunkt, nödvändig autentisering, begäran syntax, svarsinformation, felhantering och SDK-exempel."

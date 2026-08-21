@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Çok Kaynaklı Veri Entegrasyonu Excel Platformu – Aspose.Cells Cloud Otomatik Veri İçe Aktarma ve Dönüşüm API'si."
 linktitle: "Elektronik Tabloya Veri İçe Aktar"
 type: docs
-url: /import-data-into-spreadsheet/
+url: /tr/import-data-into-spreadsheet/
 keywords: "Aspose Cells, veri içe aktarma API'si, CSV'den Excel'e, JSON'dan Excel'e, XML'den Excel'e, bulut tabanlı elektronik tablo, REST API"
 description: "Aspose.Cells Cloud REST API ile CSV, JSON veya XML verilerini Excel elektronik tablolara içe aktarın. İstek formatını, parametreleri, örnek SDK kodunu ve hata yönetimi hakkında bilgi edinin."
 weight: 100

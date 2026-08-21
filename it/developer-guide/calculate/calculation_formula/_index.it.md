@@ -4,7 +4,7 @@ ArticleTitle: "Calcola Formula – Aspose.Cells Cloud API"
 second_title: "Documento"
 linktitle: "Calcola Formula"
 type: docs
-url: /cells/calculate/formula
+url: /it/cells/calculate/formula
 aliases: []
 keywords: "Aspose Cells, calcola formula, foglio di calcolo, API"
 description: "Calcola una formula in un foglio di calcolo utilizzando l'API Aspose.Cells Cloud."

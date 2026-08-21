@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Operazioni avanzate su cartelle di lavoro Excel: Gestione dei fogli e compressione – Aspose.Cells Cloud"
 linktitle: "Gestione"
 type: docs
-url: /management/it/
+url: /it/management/it/
 keywords: "Aspose.Cells, Cloud, API Excel, gestione fogli di lavoro, compressione fogli elettronici, creazione cartelle di lavoro"
 description: "Usa l'API Aspose.Cells Cloud per aggiungere, eliminare, spostare, rinominare i fogli di lavoro, comprimere i fogli elettronici e creare cartelle di lavoro da modelli—nessuna installazione locale di Excel richiesta."
 weight: 50

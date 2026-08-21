@@ -3,8 +3,8 @@ title: "แทนที่ข้อความในสมุดงาน Excel
 second_title: "เอกสาร"
 linktitle: "แทนที่ในสมุดงาน"
 type: docs
-url: /workbook/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /th/workbook/replace-text/
+aliases: [  /th/replace-text-in-a-workbook/ ]
 weight: 60
 keywords: "Aspose.Cells Cloud, แทนที่ข้อความ, สมุดงาน Excel, XLSX, ODS, REST API, สเปรดชีต, SDK"
 description: "แทนที่ข้อความในสมุดงาน Excel (XLS, XLSX, XLSM, XLSB) และสมุดงานสเปรดชีตแบบเปิดเอกสาร (ODS) โดยใช้ Aspose.Cells Cloud REST API พร้อมให้บริการผ่าน cURL และ SDK หลากหลาย (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go ฯลฯ)"

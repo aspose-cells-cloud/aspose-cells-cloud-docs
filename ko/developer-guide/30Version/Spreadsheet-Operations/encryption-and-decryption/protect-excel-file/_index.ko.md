@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "Excel 파일 보호"
 type: docs
 url: /ko/protect-excel-file/
-aliases: [/protect-excel-workbooks/, /workbook/protect/]
+aliases: [  /ko/protect-excel-workbooks/ , /ko/workbook/protect/ ]
 keywords: "Aspose.Cells, Excel 보호, API, REST, SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북을 보호하는 방법을 알아보세요. 인증 단계, 쿼리 및 본문 매개변수, cURL 요청 및 C#, Java, PHP, Ruby, Node.js, Python, Perl, Go용 SDK 코드 예제가 포함되어 있습니다."
 weight: 30

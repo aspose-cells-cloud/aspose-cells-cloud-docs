@@ -1,7 +1,7 @@
 ---
 title: "Ottenere MaxColumn da un foglio di lavoro Excel"
 type: docs
-url: /get-maxcolumn-from-excel-worksheet/
+url: /it/get-maxcolumn-from-excel-worksheet/
 weight: 60
 keywords: "Aspose Cells API, maxcolumn, foglio di lavoro Excel, REST, SDK"
 description: "Recuperare l'indice della colonna massima di un foglio di lavoro utilizzando l'API Aspose.Cells Cloud. Include richiesta cURL con autenticazione, schema di risposta, parametri, codici di errore ed esempi di SDK (C#, Java, Python, ecc.)."

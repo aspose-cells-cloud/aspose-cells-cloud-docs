@@ -3,8 +3,8 @@ title: "Importer des données JSON dans Excel"
 second_title: "Document"
 linktitle: "Importer JSON"
 type: docs
-url: /import-json-data-into-excel/
-aliases: [/import/json/]
+url: /fr/import-json-data-into-excel/
+aliases: [  /fr/import/json/ ]
 keywords: "Aspose.Cells Cloud, import JSON, API Excel, import REST JSON, exemples SDK"
 description: "Découvrez comment importer des données JSON dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut les détails des points de terminaison, des exemples de requête/réponse et du code SDK pour .NET, Java et Python."
 weight: 40

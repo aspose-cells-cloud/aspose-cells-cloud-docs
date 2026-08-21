@@ -1,7 +1,7 @@
 ---
 title: "Modifica lo stile di una cella in un foglio di calcolo Excel"
 type: docs
-url: /change-cell-style-in-excel-worksheet/
+url: /it/change-cell-style-in-excel-worksheet/
 weight: 30
 keywords:
   - Aspose.Cells

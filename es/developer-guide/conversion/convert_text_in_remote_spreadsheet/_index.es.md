@@ -4,7 +4,7 @@ ArticleTitle: "Convertir Texto en una Hoja de Cálculo Remota – Aspose.Cells C
 second_title: "Documentos"
 linktype: "Convertir Texto en una Hoja de Cálculo Remota"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
+url: /es/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
 aliases: []
 keywords: "Aspose.Cells, Conversión de Texto, API"
 description: "Convierte texto en un rango especificado de una hoja de cálculo, incluyendo conversión numérica, sustitución de caracteres, manejo de saltos de línea y normalización de caracteres acentuados."

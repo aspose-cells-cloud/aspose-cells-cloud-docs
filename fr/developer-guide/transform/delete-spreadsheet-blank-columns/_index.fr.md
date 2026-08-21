@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment supprimer les colonnes vides dans Excel – Automatiser le nettoyage des colonnes"
 linktitle: "Supprimer les colonnes vides"
 type: docs
-url: /delete-spreadsheet-blank-columns/
+url: /fr/delete-spreadsheet-blank-columns/
 keywords: "supprimer les colonnes vides API Excel, Aspose.Cells Cloud, API REST, nettoyage Excel, automatisation des feuilles de calcul"
 description: "Découvrez comment supprimer les colonnes vides des fichiers Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’endpoint, l’authentification, des exemples de requête/réponse et du code SDK en C#, Java, Python, etc."
 weight: 100

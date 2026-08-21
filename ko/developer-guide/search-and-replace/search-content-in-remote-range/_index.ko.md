@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "원격 Excel 스프레드시트에서 텍스트 검색 – 특정 범위 내 데이터 찾기"
 linktitle: "원격 범위 콘텐츠 검색"
 type: docs
-url: /search-content-in-remote-range/
+url: /ko/search-content-in-remote-range/
 keywords: "Aspose.Cells, Excel API, 텍스트 검색, 원격 범위, 클라우드 스프레드시트, REST API, 데이터 탐색"
 description: "Aspose Cloud에 저장된 Excel 워크북의 특정 범위에서 텍스트, 숫자 또는 수식을 검색합니다."
 weight: 100

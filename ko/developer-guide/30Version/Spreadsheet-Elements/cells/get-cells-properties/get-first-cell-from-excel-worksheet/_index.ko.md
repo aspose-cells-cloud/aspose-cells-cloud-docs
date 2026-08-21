@@ -1,7 +1,7 @@
 ---
 title: "Excel 워크시트에서 첫 번째 셀(A1) 가져오기"
 type: docs
-url: /get-first-cell-from-excel-worksheet/
+url: /ko/get-first-cell-from-excel-worksheet/
 weight: 20
 keywords: "Aspose.Cells Cloud, Excel, REST API, 첫 번째 셀 가져오기, 워크시트, A1, API v3"
 description: "Aspose.Cells Cloud REST API v3.0을 사용하여 Excel 워크시트의 첫 번째 셀(A1)을 검색하는 방법을 알아보세요. cURL 요청, JSON 응답, 오류 예제, C#, Java, PHP, Python 등 다양한 언어의 SDK 예제가 포함됩니다."

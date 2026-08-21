@@ -1,8 +1,8 @@
 ---
 title: "Çalışma Sayfası Hücresi Yorumunu Güncelleme"
 type: docs
-url: /comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
+url: /tr/comments/update/
+aliases: [  /tr/update-a-comment-in-excel-workbook/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, çalışma sayfası, hücre yorumu, çalışma sayfası yorumunu güncelle, yorum nesnesi"
 description: "Aspose.Cells Cloud REST API'sini kullanarak bir Excel defterindeki bir hücredeki çalışma sayfası yorumunu güncelleyin; istek detaylarını, yanıt kodlarını ve SDK örneklerini içerir."
 weight: 30

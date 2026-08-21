@@ -3,7 +3,7 @@ title: "Uzak Çalışma Kitabındaki Bozuk Bağlantıları ara"
 ArticleTitle: "Uzak Çalışma Kitabındaki Bozuk Bağlantıları ara – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/search/broken-links
+url: /tr/cells/{name}/worksheets/{worksheet}/search/broken-links
 aliases: []
 keywords: "Aspose.Cells, Bozuk Bağlantıları ara, Uzak Çalışma Kitabı"
 description: "Uzak bir bulut deposunda depolanan bir çalışma kitabının çalışma sayfasındaki bozuk bağlantıları ara."

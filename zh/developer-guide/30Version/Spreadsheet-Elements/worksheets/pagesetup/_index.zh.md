@@ -3,7 +3,7 @@ title: "工作表页面设置"
 second_title: "文档"
 linktitle: "页面设置"
 type: docs
-url: /page-setup/
+url: /zh/page-setup/
 keywords: "Aspose.Cells, pageSetup, 工作表, 打印设置, 边距, 方向, 纸张大小, 页眉, 页脚, 缩放比例"
 description: "了解如何使用 Aspose.Cells Cloud 的 PageSetup 对象配置 Excel 工作表的打印布局。包含属性列表、默认值、取值范围以及 C#、Java 和 Python 的代码示例。"
 weight: 20

@@ -3,8 +3,8 @@ title: "Guide de développement Aspose.Cells Cloud 3.0"
 ArticleTitle: "Guide du développeur Aspose.Cells Cloud 3.0 REST API – Création, conversion et mise en forme des classeurs Excel"
 second_title: "Document"
 type: docs
-url: /developer-guide-3.0/
-aliases: [/developer-guide/v3.0/, /developer-guide-v3.0/]
+url: /fr/developer-guide-3.0/
+aliases: [  /fr/developer-guide/v3.0/ , /fr/developer-guide-v3.0/ ]
 keywords: "Aspose.Cells Cloud, API REST Excel, conversion de classeur, API graphique, importation de données, exportation, PDF, CSV, JSON, guide de développement"
 description: "Découvrez comment utiliser les API REST Aspose.Cells Cloud 3.0 pour la création, la conversion, la mise en forme, les graphiques, les tableaux et bien plus encore. Inclut des exemples de code et des conseils de bonnes pratiques."
 weight: 150

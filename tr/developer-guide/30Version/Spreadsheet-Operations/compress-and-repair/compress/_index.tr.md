@@ -4,8 +4,8 @@ ArticleTitle: "Excel Dosyasındaki Verileri Sıkıştırın – Aspose.Cells Clo
 second_title: "Belge"
 linktitle: "Excel Dosyalarını Sıkıştırın"
 type: docs
-url: /compress-excel-files/
-aliases: [/compress/]
+url: /tr/compress-excel-files/
+aliases: [  /tr/compress/ ]
 keywords: "excel dosyası sıkıştırma, aspose cells cloud, excel sıkıştırma, elektronik tablo sıkıştırma, rest api, dosya sıkıştırma"
 description: "Aspose.Cells Cloud REST API ile Excel dosyalarını (XLS, XLSX, XLSM, XLSB, ODS) sıkıştırın. Sıkıştırma düzeyini ayarlayın, birden fazla dosyayı işleyin ve SDK’lar aracılığıyla entegrasyon sağlayın."
 weight: 39

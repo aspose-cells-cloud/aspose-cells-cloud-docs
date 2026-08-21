@@ -4,7 +4,7 @@ ArticleTitle: "Diagramm in PDF konvertieren – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "ConvertChartToPdf"
 type: docs
-url: /cells/convert/chart/pdf
+url: /de/cells/convert/chart/pdf
 aliases: []
 keywords: "ConvertChartToPdf, Aspose.Cells, PDF, Diagramm-Konvertierung"
 description: "Konvertiert ein Diagramm einer Tabellendatei von einer lokalen Festplatte in PDF."

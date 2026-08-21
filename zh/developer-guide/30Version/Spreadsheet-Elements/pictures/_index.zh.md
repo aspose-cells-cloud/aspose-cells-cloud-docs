@@ -4,7 +4,7 @@ second_title: "文档"
 linktype: "图片"
 type: docs
 url: /zh/pictures/
-aliases: [/zh/working-with-pictures/]
+aliases: [  /zh/working-with-pictures/ ]
 keywords: "Excel, 图片, Aspose.Cells Cloud, REST API, 图像处理, Excel 图片"
 description: "了解如何使用 Aspose.Cells Cloud REST API 在 Excel 工作表中检索、添加、更新和删除图片。包含 C#、Java、Python 等语言的代码示例。"
 weight: 100

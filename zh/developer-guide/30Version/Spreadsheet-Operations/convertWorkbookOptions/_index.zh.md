@@ -3,7 +3,7 @@ title: "工作簿转换选项"
 second_title: "文档"
 linktitle: "工作簿转换选项"
 type: docs
-url: /convert-workbook-options/
+url: /zh/convert-workbook-options/
 keywords: "Aspose.Cells, ConvertWorkbookOptions, Excel 转换, PDF, CSV, API"
 description: "工作簿转换选项 – 使用 Aspose.Cells Cloud API 配置 Excel 工作簿转换为 PDF、CSV、HTML 等格式。"
 weight: 79

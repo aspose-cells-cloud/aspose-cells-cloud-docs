@@ -3,7 +3,7 @@ title: "テーブルのアンピボット"
 ArticleTitle: "テーブルのアンピボット – Aspose.Cells Cloud API"
 second_title: "ドキュメント"
 linktype: "docs"
-url: /cells/unpivot/table
+url: /ja/cells/unpivot/table
 aliases: []
 keywords: "Aspose.Cells, アンピボット, 変換"
 description: "スプレッドシート内の行と列を切り替えます。"

@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Wasserzeichen und Hintergrund"
 type: docs
 url: /de/watermark-and-background/
-aliases: [ /export/excel-chart-to-different-formats/，/workbook/background/]
+aliases: [  /de/export/excel-chart-to-different-formats/，/workbook/background/ ]
 keywords: "Aspose.Cells Cloud, Excel, Wasserzeichen, Hintergrund, REST API"
 description: "Die Aspose.Cells Cloud REST API ermöglicht Entwicklern das Hinzufügen, Löschen und Verwalten von Hintergründen und Wasserzeichen in Excel-Arbeitsmappen. Unterstützte Sprachen sind Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift."
 weight: 20

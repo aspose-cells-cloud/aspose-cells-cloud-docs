@@ -3,8 +3,8 @@ title: "ตั้งค่ารูปแบบช่วง – Aspose.Cells Clo
 second_title: "เอกสารประกอบ"
 linktitle: "ตั้งค่ารูปแบบช่วง"
 type: docs
-url: /ranges/update/style/
-aliases: [/set-the-style-of-the-range/]
+url: /th/ranges/update/style/
+aliases: [  /th/set-the-style-of-the-range/ ]
 keywords: "Aspose.Cells, รูปแบบช่วง, API, Excel, คลาวด์"
 description: "เรียนรู้วิธีการตั้งค่ารูปแบบของช่วงเซลล์ในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API รวมถึงขั้นตอนการยืนยันตัวตน รูปแบบคำขอ รายละเอียดการตอบกลับ และตัวอย่าง SDK สำหรับ .NET, Java, Python, Go และอื่นๆ"
 weight: 70

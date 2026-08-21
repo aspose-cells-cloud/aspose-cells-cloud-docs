@@ -3,8 +3,8 @@ title: "Excelワークシートにアイコンフィルターを追加する"
 second_title: "Document"
 linktype: "Add icon filter"
 type: docs
-url: /autofilter/add-icon-filter/
-aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
+url: /ja/autofilter/add-icon-filter/
+aliases: [  /ja/add-an-icon-filter/ , /ja/autofilter/add-an-icon-filter/ ]
 keywords: "Aspose.Cells Cloud, Excel, アイコンフィルター, 自動フィルター, REST API"
 description: "Aspose.Cells Cloud REST API を使用して Excelワークシートにアイコンフィルターを追加する方法を、リクエストの詳細、cURLの例、SDKコードサンプル、エラーハンドリングを交えて学びます。"
 weight: 65

@@ -3,7 +3,7 @@ title: "Cómo agregar filas a una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Agregar"
 type: docs
-url: /rows/add/
+url: /es/rows/add/
 keywords: "Aspose.Cells, agregar filas, API de Excel, REST, C#, Java, Python, Node.js"
 description: "Guía paso a paso para agregar una o varias filas a una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud, con ejemplos de código en C#, Java, Python y Node.js."
 weight: 20

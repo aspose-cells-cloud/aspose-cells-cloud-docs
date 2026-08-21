@@ -1,7 +1,7 @@
 ---
 title: "셀 속성 가져오기"
 type: docs
-url: /get-cells-properties/
+url: /ko/get-cells-properties/
 weight: 130
 keywords: "Aspose Cells Cloud, REST API, Excel, 워크시트, 셀 속성, 셀 속성 가져오기"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 특정 셀 또는 미리 정의된 셀 메서드의 속성을 가져오는 방법을 알아보세요."

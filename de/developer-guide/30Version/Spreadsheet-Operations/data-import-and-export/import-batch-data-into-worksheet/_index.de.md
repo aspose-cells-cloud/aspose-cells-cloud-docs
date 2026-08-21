@@ -3,7 +3,7 @@ title: "Stapelverarbeitungsdaten in Excel-Arbeitsblatt importieren"
 second_title: "Dokument"
 linktitle: "Stapelverarbeitungsdaten importieren"
 type: docs
-url: /import-batch-data-into-excel/
+url: /de/import-batch-data-into-excel/
 aliases:
   - /import-batch-data-into-worksheet/
   - /import-data/batch-data/

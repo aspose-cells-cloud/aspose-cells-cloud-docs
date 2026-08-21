@@ -1,7 +1,7 @@
 ---
 title: "Zweite Kategorienachse eines Diagramms aktualisieren"
 type: docs
-url: /charts/second-category-axis/update/
+url: /de/charts/second-category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Diagramm, Zweite Kategorienachse, REST API, Diagramm aktualisieren, Excel, Cloud API"
 description: "Erfahren Sie, wie Sie die zweite Kategorienachse eines Diagramms in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API aktualisieren."

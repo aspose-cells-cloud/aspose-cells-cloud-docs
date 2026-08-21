@@ -3,8 +3,8 @@ title: "JSON Verisini Excel'e İçe Aktar"
 second_title: "Belge"
 linktype: "İçerik"
 type: docs
-url: /import-json-data-into-excel/
-aliases: [/import/json/]
+url: /tr/import-json-data-into-excel/
+aliases: [  /tr/import/json/ ]
 keywords: "Aspose.Cells Cloud, JSON içe aktarma, Excel API, REST ile JSON içe aktarma, SDK örnekleri"
 description: "Aspose.Cells Cloud REST API kullanarak JSON verisini bir Excel çalışma sayfasına nasıl içe aktaracağınızı öğrenin. Uç nokta detaylarını, istek/yanıt örneklerini ve .NET, Java ve Python için SDK kodunu içerir."
 weight: 40

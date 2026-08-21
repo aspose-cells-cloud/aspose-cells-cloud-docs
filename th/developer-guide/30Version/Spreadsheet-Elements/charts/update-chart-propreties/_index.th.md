@@ -1,8 +1,8 @@
 ---
 title: "อัปเดตคุณสมบัติของแผนภูมิ"
 type: docs
-url: /charts/properties/update/
-aliases: [/update-chart-properties/]
+url: /th/charts/properties/update/
+aliases: [  /th/update-chart-properties/ ]
 weight: 160
 keywords: "Aspose.Cells, แผนภูมิ, อัปเดต, Excel, REST API, SDK"
 description: "เรียนรู้วิธีการอัปเดตคุณสมบัติของแผนภูมิ (ประเภท ชื่อ คำอธิบายประกอบ เป็นต้น) ในสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 3.0) รวมถึง endpoint, พารามิเตอร์, ตัวอย่าง cURL และตัวอย่างโค้ด SDK สำหรับ C#, Java, PHP, Ruby, Node.js, Perl และ Go"

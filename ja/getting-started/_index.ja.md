@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud 始めてのガイド"
 linktitle: "始めてのガイド"
 type: docs
-url: /getting-started/
+url: /ja/getting-started/
 description: "Aspose.Cells Cloud REST API を使用して、Excel ファイルをアップロード、変換、ダウンロードする方法を 3 つの簡単なステップで学びます。cURL のコードサンプルを含みます。"
 weight: 10
 keywords: "Aspose.Cells Cloud, Excel API, スプレッドシート変換, Excel から PDF へ, クラウドスプレッドシート, Aspose.Cells Cloud API"

@@ -2,7 +2,7 @@
 title: "حماية دفعات من ملفات Excel"
 second_title: "مستند"
 type: docs
-url: /batch/protect
+url: /ar/batch/protect
 keywords: "حماية دفعات من ملفات Excel، Aspose Cells Cloud، واجهة REST API، حماية ملفات Excel، الحماية الدفعية"
 description: "تعرّف على كيفية استخدام واجهة Aspose.Cells Cloud REST API لحماية دفعات من ملفات Excel متعددة. يشمل التفاصيل الخاصة بالطلب، مثالًا باستخدام cURL، وأكواد نموذجية لواجهات برمجة التطبيقات (SDKs) بلغات برمجة مختلفة."
 weight: 100

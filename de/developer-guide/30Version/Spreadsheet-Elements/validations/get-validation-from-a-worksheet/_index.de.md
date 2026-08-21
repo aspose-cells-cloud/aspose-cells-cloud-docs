@@ -3,8 +3,8 @@ title: "Abrufen einer Validierung aus einer Excel-Arbeitsmappe per Index"
 second_title: "Dokument"
 linktitle: "Abrufen"
 type: docs
-url: /validations/get/
-aliases: [/get-validation-from-a-worksheet/]
+url: /de/validations/get/
+aliases: [  /de/get-validation-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Worksheet-Validierungs-API, Validierung per Index abrufen, Excel REST API, Aspose.Cells SDK"
 description: "Rufen Sie eine Validierung aus einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud API (v3.0) über ihren nullbasierten Index ab. Enthält ein cURL-Beispiel, das Antwortschema, Fehlercodes sowie SDK-Snippets für C#, Java, Python und weitere Sprachen."
 weight: 10

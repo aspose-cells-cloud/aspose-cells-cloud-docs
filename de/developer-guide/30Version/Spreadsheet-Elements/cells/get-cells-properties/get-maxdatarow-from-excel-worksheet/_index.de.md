@@ -1,7 +1,7 @@
 ---
 title: "MaxDataRow aus Excel-Arbeitsblatt abrufen"
 type: docs
-url: /get-maxdatarow-from-excel-worksheet/
+url: /de/get-maxdatarow-from-excel-worksheet/
 weight: 50
 keywords: "Excel, Aspose.Cells Cloud, REST-API, MaxDataRow abrufen, Arbeitsblatt"
 description: "Ruft den Index der letzten Zeile ab, die Daten in einem angegebenen Arbeitsblatt einer Excel-Arbeitsmappe enthält, mithilfe der Aspose.Cells Cloud REST-API."

@@ -2,8 +2,8 @@
 title: "Agregar un filtro en una hoja de cálculo de Excel"
 second_title: "Documentos"
 linktype: "docs"
-url: /autofilter/add-filter/
-aliases: [/add-a-filter-for-a-filter-column/]
+url: /es/autofilter/add-filter/
+aliases: [  /es/add-a-filter-for-a-filter-column/ ]
 keywords: "Aspose.Cells, Cloud, Excel, AutoFiltro, Agregar filtro, API REST, SDK"
 description: "Aprenda cómo agregar un autofiltro a una columna en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye ejemplos en cURL, SDK y una guía de parámetros."
 weight: 60

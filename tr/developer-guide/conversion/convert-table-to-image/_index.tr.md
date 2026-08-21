@@ -4,7 +4,7 @@ secondtitle: "Belge"
 ArticleTitle: "Yerel Elektronik Tablo Tablo Verilerini Bir Görüntü Dosyasına Nasıl Dönüştürülür: Adım Adım Kılavuz"
 linktitle: "Tabloyu Görüntüye Dönüştür"
 type: docs
-url: /convert-table-to-image/
+url: /tr/convert-table-to-image/
 keywords: "Aspose.Cells, Bulut API, Tabloyu Görüntüye Dönüştür, Excel, PNG, JPEG, TIFF, BMP, SVG"
 description: "Aspose.Cells Cloud API kullanarak yerel bir Excel elektronik tablo tablosunu hızlıca bir görüntü dosyasına dönüştürün. PNG, JPEG, TIFF, BMP, SVG ve diğer formatları destekler."
 weight: 100

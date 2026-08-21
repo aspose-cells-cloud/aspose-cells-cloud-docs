@@ -3,8 +3,8 @@ title: "从 Excel 工作表中删除图片 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "删除"
 type: docs
-url: /pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+url: /zh/pictures/delete/
+aliases: [  /zh/delete-a-specific-picture-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, 云 API, 删除图片, Excel 工作表, REST"
 description: "使用 Aspose.Cells Cloud REST API 从 Excel 工作表中删除图片。了解 DELETE 端点、所需参数、身份验证、错误代码及示例代码。"
 weight: 50

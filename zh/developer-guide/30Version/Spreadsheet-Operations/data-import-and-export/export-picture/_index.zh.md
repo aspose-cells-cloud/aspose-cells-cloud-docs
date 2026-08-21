@@ -3,8 +3,8 @@ title: "导出图片"
 second_title: "文档"
 linktitle: "图片"
 type: docs
-url: /export-excel-picture-to-different-formats/
-aliases: [/export/excel-picture-to-different-formats/]
+url: /zh/export-excel-picture-to-different-formats/
+aliases: [  /zh/export/excel-picture-to-different-formats/ ]
 keywords: "导出图片, Aspose.Cells Cloud, REST API, Excel, 图像格式, PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF"
 description: "使用 Aspose.Cells Cloud REST API 将 Excel 图片导出为多种图像格式。该服务支持多种编程语言的 SDK，包括 C#、Java、PHP、Ruby、Node.js、Python、Perl、Go 和 Swift。"
 weight: 20

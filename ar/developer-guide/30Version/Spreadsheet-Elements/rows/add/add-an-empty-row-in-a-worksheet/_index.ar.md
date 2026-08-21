@@ -4,8 +4,8 @@ ArticleTitle: "إضافة صف فارغ إلى ورقة عمل Excel باستخ�
 second_title: "الوثيقة"
 linktype: "صف"
 type: docs
-url: /rows/add/row/
-aliases: [/add-an-empty-row-in-a-worksheet/]
+url: /ar/rows/add/row/
+aliases: [  /ar/add-an-empty-row-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, إضافة صف فارغ, ورقة عمل, REST API, إدراج صف, جدول بيانات سحابي"
 description: "استخدم واجهة برمجة تطبيقات Aspose.Cells Cloud REST لinsert صف فارغ في ورقة عمل Excel. يدعم العديد من SDKs (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) لتسريع عملية التطوير."
 weight: 20

@@ -3,7 +3,7 @@ title: "Hämta AutoFilter"
 description: "Hämta AutoFilter-beskrivningen från ett Excel-ark med Aspose.Cells Cloud REST API."
 keywords: "AutoFilter, Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 type: docs
-url: /cells/autofilter/get/
+url: /sv/cells/autofilter/get/
 aliases:
   - /get-autofilter-description/
 weight: 50

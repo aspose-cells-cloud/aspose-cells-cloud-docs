@@ -3,8 +3,8 @@ title: "ضبط حجم الصف تلقائيًا في ورقة عمل Excel"
 second_title: "مستند"
 linktitle: "صف"
 type: docs
-url: /worksheets/autofit/row/
-aliases: [/autofit-single-row-of-worksheet/]
+url: /ar/worksheets/autofit/row/
+aliases: [  /ar/autofit-single-row-of-worksheet/ ]
 description: "تعرّف على كيفية استخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST لضبط حجم الصف تلقائيًا في ورقة عمل Excel. تتضمن الواجهة نقطة نهاية (endpoint)، والمعاملات، والتوثيق، ومعالجة الأخطاء، وطلب cURL، وأمثلة للـ SDK."
 keywords: "ضبط حجم الصف تلقائيًا، Aspose.Cells Cloud، Excel API، REST، ورقة عمل، SDK، جدول بيانات، واجهة برمجة تطبيقات سحابية"
 weight: 30

@@ -1,7 +1,7 @@
 ---
 title: "Excel 워크시트에서 MaxColumn 가져오기"
 type: docs
-url: /get-maxcolumn-from-excel-worksheet/
+url: /ko/get-maxcolumn-from-excel-worksheet/
 weight: 60
 keywords: "Aspose Cells API, maxcolumn, Excel 워크시트, REST, SDK"
 description: "Aspose.Cells Cloud API를 사용하여 워크시트의 최대 열 인덱스를 검색합니다. 인증을 포함한 cURL 요청, 응답 스키마, 매개변수, 오류 코드 및 SDK 예제(C#, Java, Python 등)가 포함됩니다."

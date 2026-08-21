@@ -3,8 +3,8 @@ title: "Eliminar un objeto OLE en una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Eliminar"
 type: docs
-url: /oleobjects/delete/
-aliases: [/delete-a-specific-oleobject-from-excel-worksheet/]
+url: /es/oleobjects/delete/
+aliases: [  /es/delete-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, Cloud, Eliminar, OLE, Objeto, Excel, hoja de cálculo, REST, API, SDK"
 description: "Aprenda a eliminar un objeto OLE de una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud (v4.0). Incluye el punto de conexión HTTPS, los pasos de autenticación, un ejemplo con cURL, fragmentos de SDK, orientación sobre el manejo de errores y enlaces a pasos siguientes."
 weight: 50

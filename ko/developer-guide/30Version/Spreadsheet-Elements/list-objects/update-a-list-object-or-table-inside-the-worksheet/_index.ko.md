@@ -4,7 +4,7 @@ ArticleTitle: "엑셀 워크시트에서 목록 개체 업데이트하기 – As
 second_title: "문서"
 linktitle: "업데이트"
 type: docs
-url: /list-objects/update/
+url: /ko/list-objects/update/
 aliases:
   - /update-a-list-object-or-table-inside-the-worksheet/
   - /tables/update/

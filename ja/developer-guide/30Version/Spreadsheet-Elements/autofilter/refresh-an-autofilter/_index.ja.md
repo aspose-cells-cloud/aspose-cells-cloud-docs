@@ -3,8 +3,8 @@ title: "Excelワークシート内のオートフィルターを更新する"
 second_title: "Document"
 linktitle: "オートフィルターの更新"
 type: docs
-url: /autofilter/refresh/
-aliases: [/refresh-an-autofilter/]
+url: /ja/autofilter/refresh/
+aliases: [  /ja/refresh-an-autofilter/ ]
 weight: 100
 keywords: "Aspose.Cells, AutoFilter, refresh, Excel, API, REST"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシート上の既存のオートフィルターを更新します。C#、Java、Python など、 various SDK および cURL の使用例を含みます。"

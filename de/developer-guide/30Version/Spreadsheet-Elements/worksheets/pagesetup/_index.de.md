@@ -3,7 +3,7 @@ title: "Arbeitsblatt-Seiteinrichtung"
 second_title: "Dokument"
 linktype: "Seiteinrichtung"
 type: docs
-url: /page-setup/
+url: /de/page-setup/
 keywords: "Aspose.Cells, PageSetup, Arbeitsblatt, Druckeinstellungen, Ränder, Orientierung, Papierformat, Kopfzeile, Fußzeile, Skalierung"
 description: "Erfahren Sie, wie Sie das Drucklayout eines Excel-Arbeitsblatts mit dem PageSetup-Objekt von Aspose.Cells Cloud konfigurieren. Enthält eine Liste der Eigenschaften, Standardwerte, Bereichsangaben und Codebeispiele für C#, Java und Python."
 weight: 20

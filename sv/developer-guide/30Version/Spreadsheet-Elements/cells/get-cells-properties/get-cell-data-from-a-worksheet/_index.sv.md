@@ -1,7 +1,7 @@
 ---
 title: "Hämta celldata från ett kalkylblad"
 type: docs
-url: /get-cell-data-from-a-worksheet/
+url: /sv/get-cell-data-from-a-worksheet/
 weight: 10
 keywords: "Aspose.Cells Cloud, hämta celldata, Excel API, REST API, cellvärde, kalkylblads-API, Aspose API-exempel"
 description: "Hämta ett enskilt cells värde, typ och stil från ett Excel-kalkylblad med Aspose.Cells Cloud REST API (v3.0). Innehåller cURL- och SDK-exempel, parametrar samt felhantering."

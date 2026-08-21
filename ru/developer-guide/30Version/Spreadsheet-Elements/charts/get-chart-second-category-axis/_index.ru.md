@@ -1,7 +1,7 @@
 ---
 title: "Получить вторую ось категорий диаграммы"
 type: docs
-url: /charts/second-category-axis/get/
+url: /ru/charts/second-category-axis/get/
 weight: 60
 keywords: "Получить вторую ось категорий диаграммы, Aspose.Cells Cloud API, ось диаграммы Excel, REST API, вторая ось категорий, Aspose.Cells"
 description: "Получить вторую ось категорий диаграммы в рабочем листе Excel с использованием REST API Aspose.Cells Cloud. Включает формат запроса, параметры, пример cURL, схему ответа, коды состояния и примечания по использованию."

@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Multi-Source-Datenintegrations-Excel-Plattform – Aspose.Cells Cloud API für automatisierten Datenimport und -transformation."
 linktitle: "Daten in Arbeitsmappe importieren"
 type: docs
-url: /import-data-into-spreadsheet/
+url: /de/import-data-into-spreadsheet/
 keywords: "Aspose Cells, Datenimport-API, CSV nach Excel, JSON nach Excel, XML nach Excel, Cloud-Arbeitsmappe, REST-API"
 description: "Importieren Sie CSV-, JSON- oder XML-Daten in Excel-Arbeitsmappen mit der Aspose.Cells Cloud REST API. Erfahren Sie mehr über das Anfrageformat, Parameter, Beispiel-SDK-Code und Fehlerbehandlung."
 weight: 100

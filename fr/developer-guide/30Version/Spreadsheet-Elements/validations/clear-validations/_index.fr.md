@@ -3,7 +3,7 @@ title: "Supprimer toutes les validations de feuille de calcul – API Aspose.Cel
 second_title: "Documentation"
 linktitle: "Supprimer"
 type: docs
-url: /validations/clear/
+url: /fr/validations/clear/
 keywords: "Aspose.Cells Cloud, Supprimer les validations de feuille de calcul, Excel, API REST, Validation de feuille de calcul, API"
 description: "Supprimer toutes les règles de validation de données d'une feuille de calcul dans un fichier Excel à l'aide de l'API REST Aspose.Cells Cloud. Inclut les étapes d'authentification, les détails de la requête, un exemple cURL, le schéma de réponse, la gestion des erreurs et des extraits de code SDK."
 weight: 10

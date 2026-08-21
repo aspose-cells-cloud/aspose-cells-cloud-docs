@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีการแปลงกราฟในสเปรดชีตเป็นรูปภาพ: คู่มือแบบทีละขั้นตอน"
 linktitle: "แปลงกราฟเป็นรูปภาพ"
 type: docs
-url: /convert-chart-to-image/
+url: /th/convert-chart-to-image/
 keywords: "แปลงกราฟเป็นรูปภาพ, Aspose.Cells, การส่งออกกราฟ Excel, PNG, SVG, JPEG, BMP, TIFF"
 description: "ใช้ Aspose.Cells Cloud Web API ในการแปลงกราฟใน Excel เป็นรูปภาพ PNG, SVG, TIFF, JPEG หรือ BMP โดยตรงจากไฟล์สเปรดชีต"
 weight: 100

@@ -3,7 +3,7 @@ title: "将数据导入 Excel 文件并从 Excel 文件导出数据"
 second_title: "文档"
 linktitle: "导入和导出数据"
 type: docs
-url: /data-import-and-export/
+url: /zh/data-import-and-export/
 keywords: "Aspose.Cells Cloud, 导入数据, 导出 Excel, API, CSV, JSON, 图片, 数组"
 description: "了解如何使用 Aspose.Cells Cloud API（v3.0）将来自 CSV、JSON、数组和图片的数据导入 Excel 文件，以及如何将工作簿、图表和形状导出为 PDF、PNG 等格式。"
 weight: 25

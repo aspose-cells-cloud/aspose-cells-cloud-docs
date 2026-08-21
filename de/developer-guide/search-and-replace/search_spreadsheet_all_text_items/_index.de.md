@@ -4,7 +4,7 @@ ArticleTitle: "Suchen Sie alle Textelemente in der Tabellendatei – Aspose.Cell
 second_title: "Dokument"
 linktitle: "Suchen Sie alle Textelemente in der Tabellendatei"
 type: docs
-url: /cells/search/content/all-textitems
+url: /de/cells/search/content/all-textitems
 aliases: []
 keywords: "Aspose.Cells, Suche, Textelemente, API"
 description: "Suchen Sie alle Textelemente in einer Tabellendatei mit der Aspose.Cells Cloud API."

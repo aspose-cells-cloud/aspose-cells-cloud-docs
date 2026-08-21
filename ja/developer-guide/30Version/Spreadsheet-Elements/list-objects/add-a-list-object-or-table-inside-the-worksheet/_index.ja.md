@@ -3,8 +3,8 @@ title: "Excelワークシートにリストオブジェクト（表）を追加�
 second_title: "Document"
 linktitle: "Add"
 type: docs
-url: /list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+url: /ja/list-objects/add/
+aliases: [  /ja/add-a-list-object-or-table-inside-the-worksheet/ , /ja/tables/add/ ]
 keywords: "Aspose.Cells Cloud, Excel API, リストオブジェクト, テーブル, REST API, ワークシート"
 description: "Aspose.Cells Cloud REST API を使用して、ワークシートにリストオブジェクト（Excel表）を追加する方法を学びます。エンドポイント、パラメーター、認証手順、cURLの例、SDKコードサンプルを含みます。"
 weight: 10

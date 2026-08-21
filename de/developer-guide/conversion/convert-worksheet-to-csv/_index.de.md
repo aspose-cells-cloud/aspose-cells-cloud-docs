@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie ein Tabellenkalkulationsarbeitsblatt mit der Aspose.Cells Cloud API in CSV"
 linktitle: "Arbeitsblatt in CSV konvertieren"
 type: docs
-url: /convert-worksheet-to-csv/
+url: /de/convert-worksheet-to-csv/
 keywords: "Aspose.Cells, CSV-Konvertierung, Arbeitsblatt in CSV, REST-API, Cloud-Tabellenkalkulation, Excel in CSV"
 description: "Erfahren Sie, wie Sie ein bestimmtes Arbeitsblatt aus einer Excel-Datei mithilfe der Aspose.Cells Cloud API (v4.0) in CSV konvertieren. Enthält Endpunkt, Parameter, Beispiel-cURL, SDK-Code und Fehlerbehandlung."
 weight: 100

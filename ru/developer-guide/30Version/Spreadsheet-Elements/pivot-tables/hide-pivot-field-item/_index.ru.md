@@ -3,8 +3,8 @@ title: "Скрытие элемента поля сводной таблицы"
 second_title: "Document"
 linktype: Hide
 type: docs
-url: /pivot-tables/hide-pivot-field-item/
-aliases: [/hide-pivot-field-item/]
+url: /ru/pivot-tables/hide-pivot-field-item/
+aliases: [  /ru/hide-pivot-field-item/ ]
 keywords: "Aspose.Cells, скрыть элемент поля сводной таблицы, PivotTable API, REST API, облачный SDK"
 description: "Узнайте, как скрыть элемент поля сводной таблицы с помощью Aspose.Cells Cloud REST API. Включает подробности запроса, пример cURL и фрагменты кода SDK для множества языков."
 weight: 110

@@ -3,7 +3,7 @@ title: "Convertir un tableau en PDF"
 ArticleTitle: "Convertir un tableau en PDF – Aspose.Cells Cloud API"
 second_title: "Document"
 linktype: "docs"
-url: /cells/convert/table/pdf
+url: /fr/cells/convert/table/pdf
 aliases: []
 keywords: "convertir tableau PDF, Aspose.Cells, API"
 description: "Convertit un tableau d’un fichier de calcul stocké localement en fichier PDF à l’aide d’Aspose.Cells Cloud."

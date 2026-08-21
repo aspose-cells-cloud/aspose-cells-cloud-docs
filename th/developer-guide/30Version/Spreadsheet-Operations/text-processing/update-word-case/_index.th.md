@@ -3,7 +3,7 @@ title: "Aspose.Cells – API สำหรับอัปเดตรูปแบ
 second_title: "เอกสาร"
 linktype: "เอกสาร"
 type: docs
-url: /post-update-word-case/
+url: /th/post-update-word-case/
 keywords: "Aspose.Cells, API สำหรับอัปเดตรูปแบบตัวพิมพ์ใหญ่-เล็กของคำ, การแปลงรูปแบบตัวพิมพ์ใหญ่-เล็กของข้อความ, Excel, CSV, Google Sheets, REST API"
 description: "แปลงรูปแบบตัวพิมพ์ใหญ่-เล็กของข้อความในไฟล์ Excel, CSV หรือ Google Sheets โดยใช้ API สำหรับอัปเดตรูปแบบตัวพิมพ์ใหญ่-เล็กของคำจาก Aspose.Cells Cloud รองรับการเปลี่ยนเป็นตัวพิมพ์ใหญ่/ตัวพิมพ์เล็ก, ตัวพิมพ์ใหญ่ต้นคำ (Title Case) และการขึ้นต้นด้วยตัวพิมพ์ใหญ่สำหรับตัวอักษรตัวแรก"
 weight: 100

@@ -2,8 +2,8 @@
 title: "Trabajar con la tarea de conversión"
 second_title: "Documento"
 type: docs
-url: /tasks/convert/
-aliases: [/working-with-convert-task/]
+url: /es/tasks/convert/
+aliases: [  /es/working-with-convert-task/ ]
 keywords: "Aspose.Cells Cloud, REST API, Tarea de conversión, Excel, Hoja de cálculo, PDF, CSV, JSON, Markdown"
 description: "La API de Cells Cloud para Excel proporciona soporte de tareas para convertir archivos de Excel a diversos formatos."
 weight: 30

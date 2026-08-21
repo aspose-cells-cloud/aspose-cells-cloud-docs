@@ -4,7 +4,7 @@ ArticleTitle: "将范围转换为 CSV – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "将范围转换为 CSV"
 type: docs
-url: /cells/convert/range/csv
+url: /zh/cells/convert/range/csv
 aliases: []
 keywords: "转换, csv, 范围, Aspose.Cells"
 description: "将本地磁盘上工作表中的指定范围转换为 CSV 文件。"

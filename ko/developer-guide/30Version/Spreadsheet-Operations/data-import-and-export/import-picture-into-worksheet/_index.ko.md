@@ -3,7 +3,7 @@ title: "엑셀 워크시트에 그림 가져오기"
 ArticleTitle: "엑셀 워크시트에 그림 가져오기 – Aspose.Cells Cloud API 가이드"
 second_title: "문서"
 linktype: "docs"
-url: /import-picture-into-excel-worksheet/
+url: /ko/import-picture-into-excel-worksheet/
 aliases:
   - /import-picture-into-worksheet/
   - /import-data/picture/

@@ -3,7 +3,7 @@ title: "Lägg till datumfilter i ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Lägg till datumfilter"
 type: docs
-url: /autofilter/add-date-filter/
+url: /sv/autofilter/add-date-filter/
 aliases:
   - /add-date-filter-in-a-worksheet/
   - /autofilter/add-a-date-filter/

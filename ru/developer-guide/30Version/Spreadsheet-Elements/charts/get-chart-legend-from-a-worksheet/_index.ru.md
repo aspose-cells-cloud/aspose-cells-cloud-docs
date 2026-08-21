@@ -1,8 +1,8 @@
 ---
 title: "Получить легенду диаграммы из рабочего листа"
 type: docs
-url: /charts/legend/get/
-aliases: [/get-chart-legend-from-a-worksheet/]
+url: /ru/charts/legend/get/
+aliases: [  /ru/get-chart-legend-from-a-worksheet/ ]
 weight: 80
 keywords: "Aspose.Cells, легенда диаграммы, REST API, Excel, облачный SDK, получить легенду диаграммы, рабочий лист, электронная таблица"
 description: "Получить легенду диаграммы из конкретного рабочего листа в файле электронной таблицы Excel с использованием Aspose.Cells Cloud REST API (v3.0). Включает endpoint, параметры, пример cURL и фрагменты SDK."

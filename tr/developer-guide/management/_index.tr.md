@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Gelişmiş Excel Çalışma Kitabı İşlemleri: Sayfa Yönetimi ve Sıkıştırma – Aspose.Cells Cloud"
 linktitle: "Yönetim"
 type: docs
-url: /management/
+url: /tr/management/
 keywords: "Aspose.Cells, Bulut, Excel API, çalışma sayfası yönetimi, elektronik tablo sıkıştırma, çalışma kitabı oluşturma"
 description: "Aspose.Cells Cloud API’sini kullanarak çalışma sayfaları ekleyin, silin, taşıyın, yeniden adlandırın, elektronik tabloları sıkıştırın ve şablonlardan çalışma kitapları oluşturun—yerel Excel’e ihtiyaç duymadan."
 weight: 50

@@ -3,8 +3,8 @@ title: "Adattamento automatico delle righe in un workbook Excel"
 second_title: "Documento"
 linktitle: "Righe"
 type: docs
-url: /autofit-rows-on-an-excel-file/
-aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
+url: /it/autofit-rows-on-an-excel-file/
+aliases: [  /it/auto-fit-rows-in-excel-workbooks/ , /it/workbook/autofit/rows/ ]
 keywords: "adattamento automatico righe, workbook Excel, Aspose.Cells Cloud, REST API, opzioni di adattamento automatico"
 description: "Scopri come regolare automaticamente l’altezza delle righe in un workbook Excel utilizzando l’API REST di Aspose.Cells Cloud. Include endpoint, parametri, esempio cURL e frammenti di codice SDK per C#, Java, Python e altro."
 weight: 90

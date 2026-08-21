@@ -4,7 +4,7 @@ secondTitle: "مستند"
 ArticleTitle: "كيفية ترجمة جدول بيانات بالكامل باستخدام واجهة ترجمة الذكاء الاصطناعي Aspose.Cells Cloud"
 linktype: "ترجمة جدول البيانات"
 type: docs
-url: /translate-spreadsheet/
+url: /ar/translate-spreadsheet/
 keywords: "Aspose.Cells Cloud، واجهة ترجمة جدول البيانات، ترجمة الذكاء الاصطناعي، ترجمة جداول البيانات، targetLanguage، ترجمة متعددة الأوراق، معالجة جداول البيانات في السحابة، ترجمة Aspose.Cells Cloud"
 description: "قم بترجمة ملف Excel كامل باستخدام Aspose.Cells Cloud وتقنية الذكاء الاصطناعي. احتفظ بالمعادلات والرسوم البيانية والتنسيق أثناء تحويل النصوص إلى أي لغة مدعومة. تعرّف على نقطة النهاية (endpoint) والمعلمات ومثال SDK والقيود ومعالجة الأخطاء."
 weight: 100

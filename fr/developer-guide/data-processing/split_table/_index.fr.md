@@ -4,7 +4,7 @@ ArticleTitle: "Découper un tableau – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Découper un tableau"
 type: docs
-url: /cells/split/table
+url: /fr/cells/split/table
 aliases: []
 keywords: "Aspose.Cells, Découper un tableau, API"
 description: "API permettant de découper un tableau dans une feuille de calcul selon les valeurs d’une colonne."

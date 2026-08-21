@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktype: เพิ่ม
 type: docs
 url: /th/pivot-tables/add/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /th/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "เพิ่มตารางสรุป, แผ่นงาน Excel, Aspose.Cells Cloud, REST API, SDK, ตารางสรุป Excel"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อเพิ่มตารางสรุปในแผ่นงาน Excel โดยรองรับผ่าน SDK สำหรับ C#, Java, PHP, Python, Node.js, Android, Swift, Perl, Go"
 weight: 30

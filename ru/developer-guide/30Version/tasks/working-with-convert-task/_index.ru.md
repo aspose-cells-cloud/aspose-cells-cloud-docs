@@ -2,8 +2,8 @@
 title: "Работа с задачей Convert"
 second_title: "Документ"
 type: docs
-url: /tasks/convert/
-aliases: [/working-with-convert-task/]
+url: /ru/tasks/convert/
+aliases: [  /ru/working-with-convert-task/ ]
 keywords: "Aspose.Cells Cloud, REST API, задача Convert, Excel, электронная таблица, PDF, CSV, JSON, Markdown"
 description: "Облако API для Excel предоставляет поддержку задач по преобразованию файлов Excel в различные форматы."
 weight: 30

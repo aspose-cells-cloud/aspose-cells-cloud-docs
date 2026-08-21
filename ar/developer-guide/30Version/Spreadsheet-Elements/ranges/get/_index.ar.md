@@ -3,7 +3,7 @@ title: "كيفية استرجاع محتوى نطاق من ورقة عمل إك�
 second_title: "Document"
 linktitle: "Get"
 type: docs
-url: /ranges/get/
+url: /ar/ranges/get/
 keywords: "Aspose.Cells, Excel, API, get, range, spreadsheet, REST"
 description: "تعلم كيفية استرجاع محتوى نطاق من ورقة عمل إكسل باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن بناء الجملة المطلوبة وأكواداً توضيحية."
 weight: 20

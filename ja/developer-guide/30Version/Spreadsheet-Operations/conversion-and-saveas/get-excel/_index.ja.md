@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – ExcelワークブックをPDF、CSV、HTMLなど�
 second_title: "ドキュメント"
 linktitle: "Excelの変換"
 type: docs
-url: /get-different-formats-files/
+url: /ja/get-different-formats-files/
 aliases:
   - /export-excel-workbook-to-different-file-formats/
   - /export-different-formats/

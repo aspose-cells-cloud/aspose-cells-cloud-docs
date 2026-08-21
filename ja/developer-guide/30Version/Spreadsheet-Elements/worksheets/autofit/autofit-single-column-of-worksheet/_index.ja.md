@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API を使用して Excel の列を自動調整する
 second_title: "ドキュメント"
 linktitle: "列"
 type: docs
-url: /worksheets/autofit/column/
-aliases: [/autofit-single-column-of-worksheet/]
+url: /ja/worksheets/autofit/column/
+aliases: [  /ja/autofit-single-column-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 列の自動調整, Excel API, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Aspose.Cells Cloud REST API を使用して Excelワークシート内の列（または列の範囲）を自動的にリサイズする方法を学びます。cURLおよびSDK（C#、Java、Python など）の使用例と、リクエスト・レスポンスの詳細を含みます。"
 weight: 10

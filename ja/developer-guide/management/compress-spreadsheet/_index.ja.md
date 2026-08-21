@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Excelファイルを圧縮する方法 – スプレッドシートサイズを削減しパフォーマンスを最適化"
 linktitle: "スプレッドシートの圧縮"
 type: docs
-url: /compress-spreadsheet/
+url: /ja/compress-spreadsheet/
 keywords: "Excel圧縮, Aspose.Cells Cloud, スプレッドシートサイズ削減, API, ワークブック最適化"
 description: "Aspose.Cells Cloud API を使用して Excel ワークブックを圧縮する方法を学びます。ステップ・バイ・ステップの例、パラメータ、認証、およびベストプラクティスを取得します。"
 weight: 100

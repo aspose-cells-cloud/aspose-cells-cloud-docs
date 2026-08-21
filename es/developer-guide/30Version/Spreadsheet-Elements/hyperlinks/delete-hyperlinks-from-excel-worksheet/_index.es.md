@@ -1,8 +1,8 @@
 ---
 title: "Borrar Hipervínculos"
 type: docs
-url: /hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /es/hyperlinks/clear/
+aliases: [  /es/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, borrar hipervínculos, eliminar hipervínculos, REST API, hoja de cálculo, SDK"
 description: "Aprenda cómo eliminar todos los hipervínculos de una hoja de cálculo de Excel usando la API REST de Aspose.Cells Cloud o cualquier SDK compatible (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl, etc.)."
 weight: 40

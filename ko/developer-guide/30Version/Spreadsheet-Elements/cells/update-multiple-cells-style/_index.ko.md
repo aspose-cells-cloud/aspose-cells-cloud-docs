@@ -1,7 +1,7 @@
 ---
 title: "여러 셀 스타일 업데이트 – Aspose.Cells Cloud API 참조 (v3.0)"
 type: docs
-url: /update-multiple-cells-style/
+url: /ko/update-multiple-cells-style/
 weight: 20
 keywords: ["Aspose.Cells", "여러 셀 스타일 업데이트", "Excel 셀 스타일 API", "클라우드 SDK", "REST API", "cURL 예제", "JSON 요청", "JWT 인증"]
 description: "Aspose.Cells Cloud REST API v3.0을 사용하여 Excel 워크북의 셀 범위 스타일을 업데이트하는 방법을 알아보세요. 엔드포인트, HTTP 메서드, 매개변수, cURL 및 SDK 예제, 인증, 오류 처리, 버전 정보가 포함됩니다."

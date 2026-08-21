@@ -4,7 +4,7 @@ ArticleTitle: " Arbeitsblatt in PDF konvertieren – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "ConvertWorksheetToPdf"
 type: docs
-url: /cells/convert/worksheet/pdf
+url: /de/cells/convert/worksheet/pdf
 aliases: []
 keywords: "Aspose.Cells, Arbeitsblatt in PDF konvertieren, API"
 description: "Konvertiert ein Arbeitsblatt einer Spreadsheet-Datei mithilfe von Aspose.Cells Cloud in PDF."

@@ -1,8 +1,8 @@
 ---
 title: "الحصول على منطقة المخطط من ورقة عمل"
 type: docs
-url: /charts/area/get/
-aliases: [/get-chart-area-from-a-worksheet/]
+url: /ar/charts/area/get/
+aliases: [  /ar/get-chart-area-from-a-worksheet/ ]
 weight: 60
 keywords:
   - "Aspose.Cells"

@@ -1,8 +1,8 @@
 ---
 title: "Masquer la légende d’un graphique dans une feuille Excel – API Aspose.Cells Cloud"
 type: docs
-url: /charts/legend/hide/
-aliases: [/hide-chart-legend-in-a-worksheet/]
+url: /fr/charts/legend/hide/
+aliases: [  /fr/hide-chart-legend-in-a-worksheet/ ]
 weight: 110
 keywords: "Aspose.Cells, Excel, masquer la légende d’un graphique, API REST, SDK cloud, légende de graphique"
 description: "Découvrez comment masquer la légende d’un graphique dans une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’URL HTTPS de l’endpoint, l’authentification requise, la syntaxe de la requête, les détails de la réponse, la gestion des erreurs et des exemples de SDK."

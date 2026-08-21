@@ -3,7 +3,7 @@ title: "GetMergedCellsInRemotedWorksheet"
 ArticleTitle: "Obtenir les cellules fusionnées dans une feuille de calcul distante – API Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /cells/mergedcells/get
+url: /fr/cells/mergedcells/get
 aliases: []
 keywords: "Aspose Cells, obtenir les cellules fusionnées, feuille de calcul distante, API"
 description: "Récupère toutes les zones de cellules fusionnées d'une feuille de calcul distante dans un fichier de calcul."

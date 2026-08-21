@@ -1,7 +1,7 @@
 ---
 title: "Obtenir les données d'une cellule à partir d'une feuille de calcul"
 type: docs
-url: /get-cell-data-from-a-worksheet/
+url: /fr/get-cell-data-from-a-worksheet/
 weight: 10
 keywords: "Aspose.Cells Cloud, obtenir les données d'une cellule, API Excel, API REST, valeur de cellule, API feuille de calcul, exemple Aspose API"
 description: "Récupérer la valeur, le type et le style d'une cellule unique à partir d'une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut des exemples cURL et SDK, les paramètres et la gestion des erreurs."

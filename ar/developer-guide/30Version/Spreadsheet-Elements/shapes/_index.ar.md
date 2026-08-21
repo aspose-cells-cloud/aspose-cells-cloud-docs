@@ -3,8 +3,8 @@ title: "العمل مع أشكال Excel"
 second_title: "المستند"
 linktype: "الأشكال"
 type: docs
-url: /shapes/
-aliases: ["/working-with-shapes/", "/working-with-images/"]
+url: /ar/shapes/
+aliases: [  /ar/working-with-shapes/ , /ar/working-with-images/ ]
 keywords: "أشكال Excel، Aspose.Cells Cloud، API، ورقة عمل، عمليات الأشكال"
 description: "تعرّف على كيفية إدارة أشكال Excel عبر API الخاص بـ Aspose.Cells Cloud — استرجاع الأشكال وإضافتها وحذفها وتحويلها مع دعم SDK."
 weight: 100

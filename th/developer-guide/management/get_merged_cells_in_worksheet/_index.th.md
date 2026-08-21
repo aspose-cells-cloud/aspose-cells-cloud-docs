@@ -4,7 +4,7 @@ ArticleTitle: "การรับเซลล์ที่ถูกผสาน�
 second_title: "เอกสาร"
 linktype: "GetMergedCellsInWorksheet"
 type: docs
-url: /cells/spreadsheet/mergedcells
+url: /th/cells/spreadsheet/mergedcells
 aliases: []
 keywords: "Aspose Cells, เซลล์ที่ถูกผสาน, ชีตงาน, API"
 description: "รับพื้นที่เซลล์ที่ถูกผสานทั้งหมดจากชีตงานของไฟล์สเปรดชีตในเครื่อง"

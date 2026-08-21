@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Строка"
 type: docs
 url: /ru/rows/delete/row/
-aliases: [/ru/delete-row-from-a-worksheet/]
+aliases: [  /ru/delete-row-from-a-worksheet/ ]
 description: "Используйте конечную точку DELETE /worksheets/{sheetName}/cells/rows/{rowIndex} для удаления конкретной строки из рабочего листа Excel через REST API Aspose.Cells Cloud. Приведены команды cURL, примеры SDK и полная справка по параметрам."
 keywords: "Aspose.Cells, удаление строки, Excel, API, REST, облако, SDK"
 weight: 80

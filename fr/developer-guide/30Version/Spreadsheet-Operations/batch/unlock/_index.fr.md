@@ -2,7 +2,7 @@
 title: "Déverrouillage par lots"
 second: "Document"
 type: docs
-url: /batch/unlock
+url: /fr/batch/unlock
 keywords: "déverrouillage par lots, Aspose.Cells Cloud, Excel, API REST, feuille de calcul, SDK cloud"
 description: "Déverrouillez plusieurs fichiers Excel en lot à l’aide de l’API REST Aspose.Cells Cloud. Prend en charge les SDK pour C#, Java, Python et d’autres langages."
 weight: 100

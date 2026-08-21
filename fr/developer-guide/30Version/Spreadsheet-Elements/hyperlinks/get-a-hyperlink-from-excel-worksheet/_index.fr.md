@@ -1,7 +1,7 @@
 ---
 title: "Obtenir le lien hypertexte de la feuille de calcul"
 type: docs
-url: /hyperlinks/get/
+url: /fr/hyperlinks/get/
 keywords: "Aspose.Cells Cloud, Obtenir le lien hypertexte de la feuille de calcul, API Excel hyperlink, REST, authentification JWT, feuille de calcul Excel, point de terminaison API"
 description: "Récupérer un lien hypertexte spécifique à partir d'une feuille de calcul Excel à l'aide de l'API Aspose.Cells Cloud (v3.0). Inclut le point de terminaison, les paramètres, un exemple cURL, les détails d'authentification, la gestion des erreurs et des extraits de SDK."
 weight: 10

@@ -3,8 +3,8 @@ title: "دمج ملفات إكسل متعددة في ملف عمل واحد"
 second_title: "مستند"
 linktitle: "دمج ملفات إكسل متعددة"
 type: docs
-url: /merge-multi-files-into-excel/
-aliases: [/merge/multi-files/]
+url: /ar/merge-multi-files-into-excel/
+aliases: [  /ar/merge/multi-files/ ]
 keywords: "Aspose.Cells Cloud، دمج ملفات إكسل متعددة، واجهة برمجة تطبيقات REST، دمج جداول البيانات، حزمة تطويرات سحابية"
 description: "تعرّف على كيفية دمج ملفات عمل إكسل متعددة في ملف واحد باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST (الإصدار 3.0). يتضمن عنوان HTTPS، أمر cURL، أمثلة SDK، المعلمات المطلوبة، وتفاصيل معالجة الأخطاء."
 weight: 32

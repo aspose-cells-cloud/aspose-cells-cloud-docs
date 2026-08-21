@@ -3,7 +3,7 @@ title: "Добавление или удаление фонового изобр
 second_title: "Документ"
 linktitle: "Фон"
 type: docs
-url: /worksheets/background/
+url: /ru/worksheets/background/
 keywords: "Aspose.Cells Cloud, фон листа, Excel API, добавление фонового изображения, удаление фонового изображения листа, примеры SDK"
 description: "Узнайте, как добавить или удалить фоновое изображение на листе Excel с помощью REST API Aspose.Cells Cloud. Включает синтаксис запроса, примеры SDK для Java, .NET, Python, PHP и обработку ошибок."
 weight: 20

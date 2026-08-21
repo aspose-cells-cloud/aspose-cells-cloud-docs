@@ -3,8 +3,8 @@ title: "ยกเลิกการซ่อนแถวในแผ่นงา
 second_title: "เอกสาร"
 linktitle: "ยกเลิกการซ่อน"
 type: docs
-url: /rows/unhide/
-aliases: [/unhide-rows-in-excel-worksheet/]
+url: /th/rows/unhide/
+aliases: [  /th/unhide-rows-in-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, ยกเลิกการซ่อนแถว, REST API, สเปรดชีต, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อยกเลิกการซ่อนแถวในแผ่นงาน Excel API นี้มีให้ผ่าน SDK ต่างๆ เช่น .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl และ Swift"
 weight: 50

@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "ローカルのスプレッドシートを Aspose.Cells Cloud API を使用して JSON に変換する方法"
 linktitle: "スプレッドシートを JSON に変換"
 type: docs
-url: /convert-spreadsheet-to-json/
+url: /ja/convert-spreadsheet-to-json/
 keywords: "Aspose Cells Cloud, スプレッドシートを JSON に変換, Excel to JSON API, Aspose.Cells Cloud API, REST API, スプレッドシート変換"
 description: "Aspose.Cells Cloud API を使用してローカルの Excel ファイルを JSON に変換する方法を学びます。エンドポイント、パラメーター、サンプルコード、エラー処理を含み、シームレスな統合を実現します。"
 weight: 100

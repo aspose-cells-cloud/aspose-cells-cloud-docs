@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Excel에서 워크시트 이동하는 방법 – 시트 순서 및 위치 재배열"
 linktitle: "스프레드시트에서 워크시트 이동"
 type: docs
-url: /move-worksheet-in-spreadsheet/
+url: /ko/move-worksheet-in-spreadsheet/
 keywords: "워크시트 이동 API, 시트 재배열 API, 시트 순서 변경 API, Excel 탭 관리 API, Aspose Cells REST API, 시트 위치 자동화, 워크북 구성 API, 스프레드시트 구조 API, 클라우드 Excel 자동화, 대량 시트 재배열"
 description: "Excel 워크북 내에서 워크시트를 이동하여 시트 순서를 재조정하고 워크북 구조를 최적화하는 방법을 알아보세요. 워크시트 위치를 변경하고 탭을 재배열해 워크플로우를 개선하며 전문적인 스프레드시트 관리를 위해 시트 구성 작업을 자동화하세요."
 weight: 100

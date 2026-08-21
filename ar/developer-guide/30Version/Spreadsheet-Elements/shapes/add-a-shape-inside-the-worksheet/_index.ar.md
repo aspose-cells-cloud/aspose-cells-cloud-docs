@@ -4,7 +4,7 @@ second_title: "مستند"
 linktitle: "إضافة"
 type: docs
 url: /ar/shapes/add/
-aliases: [/add-a-shape-inside-the-worksheet/]
+aliases: [  /ar/add-a-shape-inside-the-worksheet/ ]
 keywords: "Aspose.Cells، إضافة شكل، Excel، واجهة برمجة تطبيقات REST، SDK سحابي، shapeDTO، نوع الرسم"
 description: "تعرّف على كيفية إضافة أشكال (قوس، خط، مستطيل، إلخ) إلى ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API الإصدار 3.0. يتضمن بناء الجملة المطلوب، المَعلمات المطلوبة، خطوات المصادقة، وأكواد أمثلة لـ SDK."
 weight: 30

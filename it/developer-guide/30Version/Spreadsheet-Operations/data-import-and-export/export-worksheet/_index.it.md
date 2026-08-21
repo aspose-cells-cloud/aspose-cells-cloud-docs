@@ -3,8 +3,8 @@ title: "Esporta Foglio di Lavoro – Aspose.Cells Cloud"
 second_title: "Documento"
 linktitle: "Foglio di Lavoro"
 type: docs
-url: /export-excel-worksheet-to-different-formats/
-aliases: [/export/excel-worksheet-to-different-formats/]
+url: /it/export-excel-worksheet-to-different-formats/
+aliases: [  /it/export/excel-worksheet-to-different-formats/ ]
 keywords: "Aspose.Cells, esporta foglio di lavoro, API Excel, PDF, CSV, TIFF, ODS, formati immagine"
 description: "Scopri come esportare un foglio di lavoro Excel in PDF, CSV, TIFF e altri formati utilizzando l'API REST di Aspose.Cells Cloud. Include un esempio cURL, autenticazione richiesta, dettagli dei parametri e gestione della risposta."
 weight: 20

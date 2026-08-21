@@ -3,7 +3,7 @@ title: "获取 Excel 工作表的页数"
 second_title: "文档"
 linktitle: "页数"
 type: docs
-url: /worksheets/page-count/
+url: /zh/worksheets/page-count/
 keywords: "Aspose.Cells, Excel API, 工作表页数, REST, 云 SDK, Excel 分页"
 description: "使用 Aspose.Cells Cloud REST API (v3.0) 获取 Excel 工作表中的可打印页数。包含 HTTPS 请求格式、认证步骤、示例 cURL 命令、完整的 JSON 响应、状态码以及 SDK 代码示例。"
 weight: 10

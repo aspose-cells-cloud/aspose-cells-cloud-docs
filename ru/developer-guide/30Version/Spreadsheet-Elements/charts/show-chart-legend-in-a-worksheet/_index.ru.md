@@ -1,8 +1,8 @@
 ---
 title: "Отображение легенды диаграммы в рабочем листе"
 type: docs
-url: /charts/legend/show/
-aliases: [/show-chart-legend-in-a-worksheet/]
+url: /ru/charts/legend/show/
+aliases: [  /ru/show-chart-legend-in-a-worksheet/ ]
 weight: 100
 keywords: "Aspose.Cells Cloud, API легенды диаграммы, легенда диаграммы Excel, REST PUT для легенды диаграммы, Aspose API v3.0"
 description: "Узнайте, как отобразить легенду диаграммы в рабочем листе Excel с помощью REST API Aspose.Cells Cloud (v3.0). Включает детали конечной точки, параметры, пример cURL и фрагменты кода SDK."

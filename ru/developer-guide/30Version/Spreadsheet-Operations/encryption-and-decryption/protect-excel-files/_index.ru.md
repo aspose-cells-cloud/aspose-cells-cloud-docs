@@ -3,7 +3,7 @@ title: "Защита файлов Excel"
 second_title: "Документ"
 linktype: "Шифрование файлов Excel"
 type: docs
-url: /protect-excel-files/
+url: /ru/protect-excel-files/
 aliases:
   [
     /protect/without-storage/,

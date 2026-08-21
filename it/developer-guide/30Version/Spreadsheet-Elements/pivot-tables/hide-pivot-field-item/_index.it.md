@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: Nascondi
 type: docs
 url: /it/pivot-tables/hide-pivot-field-item/
-aliases: [/it/hide-pivot-field-item/]
+aliases: [  /it/hide-pivot-field-item/ ]
 keywords: "Aspose.Cells, nascondi elemento del campo pivot, API PivotTable, API REST, SDK cloud"
 description: "Scopri come nascondere un elemento del campo pivot in una tabella pivot utilizzando l'API REST di Aspose.Cells Cloud. Include i dettagli della richiesta, un esempio cURL e frammenti di codice SDK per diversi linguaggi."
 weight: 110

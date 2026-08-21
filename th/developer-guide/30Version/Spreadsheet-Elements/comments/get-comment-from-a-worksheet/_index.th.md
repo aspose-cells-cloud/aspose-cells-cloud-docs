@@ -1,8 +1,8 @@
 ---
 title: "รับความคิดเห็นในแผ่นงาน – เอกสารประกอบ API ของ Aspose.Cells Cloud"
 type: docs
-url: /comments/get/
-aliases: [/get-comment-from-a-worksheet/]
+url: /th/comments/get/
+aliases: [  /th/get-comment-from-a-worksheet/ ]
 keywords: "Aspose.Cells, ความคิดเห็นในแผ่นงาน, API, GET, Excel"
 description: "เรียนรู้วิธีการดึงความคิดเห็นในแผ่นงานโดยใช้ชื่อเซลล์ผ่าน Aspose.Cells Cloud API (เวอร์ชัน 3.0) รวมถึง URL คำขอ พารามิเตอร์ ตัวอย่าง cURL รายละเอียดการตอบกลับ และโค้ดตัวอย่าง SDK"
 weight: 10

@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "Excel 파일 암호화"
 type: docs
 url: /ko/excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+aliases: [  /ko/encrypt-excel-workbooks/ , /ko/workbook/encrypt/ ]
 keywords: "Aspose Cells 워크북 암호화, Excel 암호화 API, REST API, cURL, .NET, Java, Python, PHP, Ruby, Node.js, Go, Perl"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 Excel 워크북을 암호화하는 방법을 알아보세요. cURL 명령어, SDK 코드 예제(C#, Java, Python 등), 필수 매개변수 및 오류 처리가 포함됩니다."
 weight: 20

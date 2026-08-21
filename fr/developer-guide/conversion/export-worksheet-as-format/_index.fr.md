@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment exporter une feuille de calcul de classeur distant vers un autre format : guide pas à pas"
 linktype: "Exporter une feuille de calcul"
 type: docs
-url: /export-worksheet-as-format/
+url: /fr/export-worksheet-as-format/
 keywords: "Aspose Cells, exporter une feuille de calcul, API cloud, PDF, PNG, CSV, conversion Excel"
 description: "Convertir une feuille de calcul stockée dans Aspose.Cells Cloud en PDF, PNG, SVG, CSV ou d'autres formats via une seule requête GET. Inclut des exemples de code en C#, Java, Python, et plus encore."
 weight: 100

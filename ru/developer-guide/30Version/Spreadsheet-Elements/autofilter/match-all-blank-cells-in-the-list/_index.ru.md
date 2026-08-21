@@ -3,8 +3,8 @@ title: "Сопоставление всех пустых ячеек в рабо�
 ArticleTitle: "Сопоставление всех пустых ячеек в рабочем листе Excel – Руководство по API Aspose.Cells Cloud"
 second_title: "Документ"
 linktype: docs
-url: /autofilter/match-all-blank/
-aliases: [/match-all-blank-cells-in-the-list/]
+url: /ru/autofilter/match-all-blank/
+aliases: [  /ru/match-all-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells, пустые ячейки, автофильтр, REST API, Excel"
 description: "Узнайте, как с помощью Aspose.Cells Cloud REST API фильтровать и сопоставлять все пустые ячейки в рабочем листе Excel. Включает endpoint, параметры, шаги аутентификации, пример cURL и фрагменты кода SDK для C#, Java, Python и других языков."
 weight: 100

@@ -4,7 +4,7 @@ ArticleTitle: "为 Excel 工作表添加前 10 项筛选器 – Aspose.Cells Clo
 second_title: "文档"
 linktitle: "添加前 10 项筛选器"
 type: docs
-url: /autofilter/add-top-10-filter/
+url: /zh/autofilter/add-top-10-filter/
 aliases:
   [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
 keywords: "Aspose.Cells, 自动筛选, 前 10 项筛选器, Excel API"

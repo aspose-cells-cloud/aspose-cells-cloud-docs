@@ -3,8 +3,8 @@ title: "Visa dolda rader i ett Excel-arbetsblad"
 second_title: "Document"
 linktitle: "Visa"
 type: docs
-url: /rows/unhide/
-aliases: [/unhide-rows-in-excel-worksheet/]
+url: /sv/rows/unhide/
+aliases: [  /sv/unhide-rows-in-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, visa rader, REST API, kalkylark, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
 description: "Använd Aspose.Cells Cloud REST API för att visa dolda rader i ett Excel-arbetsblad. API:t är tillgängligt via flera SDK:er såsom .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl och Swift."
 weight: 50

@@ -4,7 +4,7 @@ second_title: "Doküman"
 ArticleTitle: "İstemci Kimliği ve Gizli Anahtarı ile Erişim Belirteci Alın"
 linktitle: "Post Erişim Belirteci"
 type: docs
-url: /post-access-token/
+url: /tr/post-access-token/
 keywords: "Aspose.Cells, Bulut, Erişim Belirteci, OAuth2, API, Kimlik Doğrulama, REST, Excel, Office Bulut"
 description: "İstemci kimliğinizi ve gizli anahtarınızı kullanarak POST /cells/connect/token uç noktasını çağırarak Aspose.Cells Cloud için bir OAuth2 erişim belirteci alın."
 weight: 100

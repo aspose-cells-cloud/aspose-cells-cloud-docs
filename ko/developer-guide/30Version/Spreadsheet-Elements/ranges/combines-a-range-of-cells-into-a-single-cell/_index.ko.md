@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – 셀 범위 병합"
 second_title: "문서"
 linktitle: "병합"
 type: docs
-url: /ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+url: /ko/ranges/merge/
+aliases: [  /ko/combines-a-range-of-cells-into-a-single-cell/ ]
 keywords: "Aspose.Cells, 셀 병합, Excel API, REST, 클라우드 SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 셀 범위를 단일 셀로 병합합니다. C#, Java, Python 등 다양한 언어에 대한 요청 형식, 매개변수 및 SDK 예제를 확인하세요."
 weight: 20

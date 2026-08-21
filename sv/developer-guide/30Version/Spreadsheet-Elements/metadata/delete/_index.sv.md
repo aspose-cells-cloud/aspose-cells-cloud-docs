@@ -3,7 +3,7 @@ title: "Ta bort metadata från Excel-filer"
 second_title: "Dokument"
 linktitle: "Ta bort utan att använda lagring"
 type: docs
-url: /metadata/delete/
+url: /sv/metadata/delete/
 keywords: "Aspose.Cells, ta bort metadata, Excel-API, arbetsboksegenskaper"
 description: "Ta bort arbetsboksmetadata (författare, titel, anpassad) via Aspose.Cells Cloud API. Inkluderar slutpunkt, autentisering, parametrar, cURL- och SDK-exempel."
 weight: 55

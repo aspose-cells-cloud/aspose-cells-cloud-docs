@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Så här konverterar du lokalt kalkylbladstabelldata till en bildfil: Steg-för-steg-guide"
 linktitle: "Konvertera tabell till bild"
 type: docs
-url: /convert-table-to-image/
+url: /sv/convert-table-to-image/
 keywords: "Aspose.Cells, molntjänst-API, konvertera tabell till bild, Excel, PNG, JPEG, TIFF, BMP, SVG"
 description: "Konvertera lokalt Excel-kalkylbladstabell till en bildfil snabbt med Aspose.Cells Cloud API. Stöder PNG, JPEG, TIFF, BMP, SVG och andra format."
 weight: 100

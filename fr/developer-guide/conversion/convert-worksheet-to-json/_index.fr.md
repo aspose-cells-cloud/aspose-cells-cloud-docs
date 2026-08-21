@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment convertir une feuille de calcul de classeur en JSON à l'aide de l'API Aspose.Cells Cloud"
 linktitle: "Convertir une feuille de calcul en JSON"
 type: docs
-url: /convert-worksheet-to-json/
+url: /fr/convert-worksheet-to-json/
 keywords: "Aspose.Cells, feuille de calcul vers JSON, conversion Excel, API cloud, API v4, export de données"
 description: "Guide pas à pas pour convertir une feuille de calcul Excel en JSON à l'aide de l'API Aspose.Cells Cloud, incluant les paramètres de requête, la gestion des réponses, les codes d'erreur et des exemples de SDK."
 weight: 100

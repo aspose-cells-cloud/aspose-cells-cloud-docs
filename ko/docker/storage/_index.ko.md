@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud Docker 컨테이너 스토리지 설정"
 linktype: "컨테이너 스토리지"
 type: docs
-url: /docker/storage/
+url: /ko/docker/storage/
 description: "JSON, PowerShell 또는 Bash를 사용하여 Aspose.Cells Cloud Docker 컨테이너의 스토리지 위치를 설정하는 방법을 안내합니다."
 weight: 30
 keywords: "Aspose.Cells, Docker, 컨테이너 스토리지, JSON 설정, PowerShell, Bash"

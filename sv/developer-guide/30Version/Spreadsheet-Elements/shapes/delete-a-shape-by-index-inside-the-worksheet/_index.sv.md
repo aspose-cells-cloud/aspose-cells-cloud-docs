@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Ta bort"
 type: docs
 url: /sv/shapes/delete/
-aliases: [/sv/delete-a-shape-by-index-inside-the-worksheet/]
+aliases: [  /sv/delete-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Ta bort form, Formindex, Excel-ark, REST API, SDK"
 description: "Använd Aspose.Cells Cloud REST API för att ta bort en form efter dess index på ett Excel-ark. API:t är tillgängligt via flera SDK:er (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) och stöder olika lagringsalternativ."
 weight: 50

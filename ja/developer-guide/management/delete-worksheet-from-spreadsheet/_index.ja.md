@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Excel からワークシートを削除する方法 - ワークブックからシートを削除する"
 linktitle: "スプレッドシートからワークシートを削除"
 type: docs
-url: /delete-worksheet-from-spreadsheet/
+url: /ja/delete-worksheet-from-spreadsheet/
 keywords: "Aspose Cells, delete worksheet API, Excel シート削除, クラウドスプレッドシート, REST API"
 description: "Aspose.Cells Cloud API を使用して Excel ファイルからワークシートを削除する方法を学びます。エンドポイント、パラメーター、サンプル cURL、および SDK の例を含みます。"
 weight: 100

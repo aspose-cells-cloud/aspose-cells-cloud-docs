@@ -1,7 +1,7 @@
 ---
 title: "Обновление второго категориального оси диаграммы"
 type: docs
-url: /charts/second-category-axis/update/
+url: /ru/charts/second-category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, диаграмма, вторая категориальная ось, REST API, обновление диаграммы, Excel, облачный API"
 description: "Узнайте, как обновить вторую категориальную ось диаграммы в рабочем листе Excel с помощью облачного REST API Aspose.Cells."

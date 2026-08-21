@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Verarbeitung von Tabellendaten – Zusammenführen, Aufteilen & Importieren"
 linktitle: "Datenverarbeitung"
 type: docs
-url: /data-processing/
+url: /de/data-processing/
 keywords: "Aspose.Cells Cloud, Verarbeitung von Tabellendaten, Excel zusammenführen, Excel aufteilen, CSV-Import, JSON-Import, API"
 description: "Detaillierte Anleitung zum Importieren von CSV-/JSON-Daten, zum Zusammenführen entfernter Excel-Arbeitsmappen und zum Aufteilen großer Tabellendateien mithilfe der Aspose.Cells Cloud REST API, einschließlich Beispielanfragen und -antworten."
 weight: 30

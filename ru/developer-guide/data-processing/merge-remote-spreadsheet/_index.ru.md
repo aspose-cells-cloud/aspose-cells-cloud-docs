@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud"
 ArticleTitle: "Объединение Excel-файлов в облаке — объединение электронных таблиц онлайн с помощью Aspose.Cells Cloud API"
 linktitle: "Объединение удалённой электронной таблицы"
 type: docs
-url: /merge-remote-spreadsheet/
+url: /ru/merge-remote-spreadsheet/
 keywords: "Aspose.Cells, объединение Excel, облачный API, объединение электронных таблиц"
 description: "Объединяйте рабочие книги Excel, хранящиеся в облачном хранилище, с помощью Aspose.Cells Cloud API. Укажите формат выходного файла, целевую папку и режим объединения в одном HTTPS-вызове."
 weight: 100

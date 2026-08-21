@@ -2,7 +2,7 @@
 title: "Så här repareras en Excel-fil med Aspose.Cells Cloud"
 linktitle: "Så här repareras en Excel-fil"
 type: docs
-url: /how-to-repair-excel-file
+url: /sv/how-to-repair-excel-file
 description: "Så här repareras en Excel-fil eller en annan kalkylarkfil med Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Kalkylark, PDF, CSV, JSON, Markdown, Så här repareras en Excel-fil eller en annan kalkylarkfil via Aspose.Cells Cloud

@@ -3,8 +3,8 @@ title: "Работа с фильтрами сводных таблиц"
 second_title: "Документ"
 linktype: "Фильтры"
 type: docs
-url: /pivot-tables/add-filters/
-aliases: [/working-with-pivot-filters/]
+url: /ru/pivot-tables/add-filters/
+aliases: [  /ru/working-with-pivot-filters/ ]
 keywords: "Aspose.Cells, сводная таблица, фильтр, REST API, облако"
 description: "Узнайте, как добавлять, получать и удалять фильтры сводных таблиц с помощью REST API Aspose.Cells Cloud. Включает синтаксис запроса, обязательные параметры, пример cURL и фрагменты кода SDK для C# и Go."
 weight: 50

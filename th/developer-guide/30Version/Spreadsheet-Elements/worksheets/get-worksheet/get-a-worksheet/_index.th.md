@@ -3,7 +3,7 @@ title: "การส่งออกชีตงานด้วย Aspose.Cells C
 second_title: "เอกสาร"
 linktitle: "การส่งออกชีตงาน"
 type: docs
-url: /worksheets/get-worksheet/
+url: /th/worksheets/get-worksheet/
 keywords: "Aspose.Cells Cloud Get Worksheet, การส่งออกชีตงาน, Excel API, REST, CSV, PDF, PNG, JPEG, GIF, BMP, TIFF, EMF, XPS, OTS, XLS, XLSX, XLSB, XLSM, ODS, FODS, Numbers, cloud API"
 description: "เรียนรู้วิธีการส่งออกชีตงานเดียวจากไฟล์ Excel โดยใช้ Aspose.Cells Cloud REST API ประกอบด้วย endpoint, พารามิเตอร์, ตัวอย่าง cURL ที่ถูกต้อง, รายละเอียดการยืนยันตัวตน, การจัดการข้อผิดพลาด และตัวอย่างโค้ด SDK สำหรับ C#, Java, Python และอื่นๆ"
 weight: 10

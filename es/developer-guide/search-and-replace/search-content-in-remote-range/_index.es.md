@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Buscar texto en hojas de cálculo de Excel remotas: encontrar datos en rangos específicos"
 linktitle: "Buscar contenido en rango remoto"
 type: docs
-url: /search-content-in-remote-range/
+url: /es/search-content-in-remote-range/
 keywords: "Aspose.Cells, API de Excel, buscar texto, rango remoto, hoja de cálculo en la nube, API REST, descubrimiento de datos"
 description: "Busque texto, números o fórmulas en un rango específico de un libro de Excel almacenado en Aspose Cloud."
 weight: 100

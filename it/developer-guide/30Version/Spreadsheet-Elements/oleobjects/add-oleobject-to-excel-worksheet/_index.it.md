@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Aggiungi oggetto OLE"
 type: docs
 url: /it/oleobjects/add/
-aliases: [/add-oleobject-to-excel-worksheet/]
+aliases: [  /it/add-oleobject-to-excel-worksheet/ ]
 keywords: "Aggiungi oggetto OLE, Excel, Aspose.Cells Cloud, API REST, SDK"
 description: "Utilizza l'API REST di Aspose.Cells Cloud per aggiungere oggetti OLE ai fogli di calcolo Excel. L'API può essere chiamata direttamente o tramite SDK per C#, Java, PHP, Ruby, Node.js, Python, Perl e Go."
 ArticleTitle: "Aggiungi un oggetto OLE a un foglio di calcolo Excel con l'API Aspose.Cells Cloud"

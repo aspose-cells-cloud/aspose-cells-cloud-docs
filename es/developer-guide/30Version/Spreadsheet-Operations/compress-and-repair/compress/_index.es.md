@@ -4,8 +4,8 @@ ArticleTitle: "Comprimir datos en un archivo de Excel – Aspose.Cells Cloud API
 second_title: "Documentos"
 linktitle: "Comprimir archivos de Excel"
 type: docs
-url: /compress-excel-files/
-aliases: [/compress/]
+url: /es/compress-excel-files/
+aliases: [  /es/compress/ ]
 keywords: "comprimir archivo de Excel, Aspose.Cells Cloud, compresión de Excel, compresión de hojas de cálculo, API REST, compresión de archivos"
 description: "Comprima archivos de Excel (XLS, XLSX, XLSM, XLSB, ODS) utilizando la API REST de Aspose.Cells Cloud. Configure el nivel de compresión, maneje múltiples archivos e intégrelo mediante SDK."
 weight: 39

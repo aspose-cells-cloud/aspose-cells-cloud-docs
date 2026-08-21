@@ -4,7 +4,7 @@ ArticleTitle: "تحويل ورقة عمل إلى PDF – واجهة برمجة �
 second_title: "وثيقة"
 linktype: "ConvertWorksheetToPdf"
 type: docs
-url: /cells/convert/worksheet/pdf
+url: /ar/cells/convert/worksheet/pdf
 aliases: []
 keywords: "Aspose.Cells، تحويل ورقة عمل إلى PDF، واجهة برمجة تطبيقات"
 description: "يحول ورقة عمل من ملف جدول بيانات إلى ملف PDF باستخدام Aspose.Cells Cloud."

@@ -4,7 +4,7 @@ second title: "وثيقة"
 ArticleTitle: "كيفية تحويل جدول بيانات إلى تنسيق آخر: دليل خطوة بخطوة"
 linktype: "تحويل جدول البيانات"
 type: docs
-url: /convert-spreadsheet/
+url: /ar/convert-spreadsheet/
 keywords: "Aspose, Aspose.Cells, تحويل جدول البيانات, Excel إلى PDF, API لملفات Excel, تحويل الملفات عبر السحابة"
 description: "قم بتحويل ملف جدول بيانات إلى تنسيق آخر باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud."
 weight: 100

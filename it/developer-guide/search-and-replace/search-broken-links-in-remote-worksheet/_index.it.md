@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Individuazione e correzione dei link rotti in un foglio di calcolo Excel remoto – Controlla link foglio di calcolo cloud"
 linktitle: "Ricerca link rotti in fogli di calcolo remoti"
 type: docs
-url: /search-broken-links-in-remote-worksheet/
+url: /it/search-broken-links-in-remote-worksheet/
 keywords: "Aspose Cells, link rotti, API Excel, foglio di calcolo cloud, convalida link"
 description: "Rileva e correggi link esterni rotti in fogli di calcolo Excel archiviati nello storage cloud. Usa l’API Aspose.Cells Cloud per analizzare intervalli, restituire dettagli sui link e automatizzare controlli di qualità."
 weight: 100

@@ -2,7 +2,7 @@
 title: "批量转换 Excel 文件"
 second_title: "文档"
 type: docs
-url: /batch/convert
+url: /zh/batch/convert
 keywords: "批量转换, Excel, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, 电子表格"
 description: "了解如何使用 Aspose.Cells Cloud API 将多个 Excel 文件批量转换为 PDF、CSV、JSON 或 Markdown 等格式。本指南包含 REST 端点详情、请求参数、cURL 示例以及多种编程语言的 SDK 代码片段。"
 weight: 100

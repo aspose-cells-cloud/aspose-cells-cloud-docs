@@ -1,7 +1,7 @@
 ---
 title: "รับค่าแกนค่าของแผนภูมิ"
 type: docs
-url: /charts/value-axis/get/
+url: /th/charts/value-axis/get/
 weight: 60
 keywords: Aspose.Cells, แกนค่าของแผนภูมิ, REST API, Excel, Cloud SDK, รับค่าแกนค่าของแผนภูมิ
 description: "Aspose.Cells Cloud REST API – ดึงข้อมูลแกนค่าของแผนภูมิในสมุดงาน Excel"

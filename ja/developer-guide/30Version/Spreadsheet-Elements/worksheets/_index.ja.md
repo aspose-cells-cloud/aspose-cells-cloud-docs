@@ -3,8 +3,8 @@ title: "Excelワークシートの操作"
 second_title: "ドキュメント"
 linktitle: "ワークシート"
 type: docs
-url: /worksheets/
-aliases: [/working-with-worksheets/]
+url: /ja/worksheets/
+aliases: [  /ja/working-with-worksheets/ ]
 keywords: "Excel ワークシート, Aspose.Cells Cloud, REST API, スプレッドシート, ワークブック, データ操作, Excel 自動化"
 description: "Aspose.Cells Cloud REST API を使用すると、Excel ワークブック内のワークシートを操作できます。SDK は Android、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby、Swift を含む複数のプログラミング言語をサポートしています。"
 weight: 100

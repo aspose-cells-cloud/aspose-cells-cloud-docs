@@ -3,7 +3,7 @@ title: "Modificar la protección por contraseña de un libro de Excel"
 second_title: "Documento"
 linktitle: "Modificar la contraseña de un archivo de Excel"
 type: docs
-url: /workbook/password/modify/
+url: /es/workbook/password/modify/
 aliases:
   - /set-modify-password-of-excel-workbooks/
   - /workbook/modify-password/

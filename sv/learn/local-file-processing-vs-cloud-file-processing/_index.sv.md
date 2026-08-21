@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Vad är skillnaden mellan lokal filbearbetning och molnfilbearbetning i Aspose.Cells Cloud?"
 linktitle: "Lokal filbearbetning jämfört med molnfilbearbetning"
 type: docs
-url: /learn/local-file-processing-vs-cloud-file-processing/
+url: /sv/learn/local-file-processing-vs-cloud-file-processing/
 description: "Jämför lokal filbearbetning och molnfilbearbetning i Aspose.Cells Cloud: lagring, kostnad, säkerhet och typiska användningsfall. Förstå vilket tillvägagångssätt som passar bäst din arbetsflödesmodell."
 keywords: "Aspose.Cells Cloud, lokal filbearbetning, molnfilbearbetning, kalkylbladskonvertering, API"
 weight: 10

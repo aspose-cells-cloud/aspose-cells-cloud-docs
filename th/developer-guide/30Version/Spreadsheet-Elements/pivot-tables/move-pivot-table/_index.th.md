@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktitle: ย้าย
 type: docs
 url: /th/pivot-tables/move/
-aliases: [/th/move-pivot-table/]
+aliases: [  /th/move-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, ย้ายตารางพิวต์, Excel, REST API, SDK, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
 description: "เรียนรู้วิธีใช้ Aspose.Cells Cloud REST API ในการย้ายตารางพิวต์ภายในสมุดงาน Excel SDK มีให้ใช้งานสำหรับ Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby และ Swift"
 weight: 120

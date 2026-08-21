@@ -3,8 +3,8 @@ title: "刷新 Excel 工作表中的自动筛选器"
 second_title: "文档"
 linktype: "refresh-auto-filter"
 type: docs
-url: /autofilter/refresh/
-aliases: [/refresh-an-autofilter/]
+url: /zh/autofilter/refresh/
+aliases: [  /zh/refresh-an-autofilter/ ]
 weight: 100
 keywords: "Aspose.Cells, AutoFilter, 刷新, Excel, API, REST"
 description: "使用 Aspose.Cells Cloud REST API 刷新 Excel 工作表中现有的自动筛选器。包含 C#、Java、Python 等语言的 cURL 和 SDK 示例。"

@@ -3,8 +3,8 @@ title: "Mostrar filas en una hoja de cálculo de Excel"
 second_title: "Documentos"
 linktype: "Mostrar"
 type: docs
-url: /rows/unhide/
-aliases: [/unhide-rows-in-excel-worksheet/]
+url: /es/rows/unhide/
+aliases: [  /es/unhide-rows-in-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, mostrar filas, API REST, hoja de cálculo, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
 description: "Utilice la API REST de Aspose.Cells Cloud para mostrar filas en una hoja de cálculo de Excel. La API está disponible a través de múltiples SDK, como .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl y Swift."
 weight: 50

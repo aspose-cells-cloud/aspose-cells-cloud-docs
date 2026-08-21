@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud Genel Bakış: REST‑öncelikli, dil bağımsız bir API hizmeti olan Excel işlemlerini basit HTTPS çağrılarına dönüştürür—yerel Office kurulumu gerekmez, platform bağımlılığı yoktur."
 linktitle: "Genel Bakış"
 type: docs
-url: /overview/
+url: /tr/overview/
 description: "Aspose.Cells Cloud’u keşfedin – Excel dosyalarını (XLS/XLSX) PDF, HTML, ODS, XPS, CSV ve diğer formatlara dönüştürmek, oluşturmak, işlemek, birleştirmek, bölmek, korumak ve işlemek için REST‑öncelikli bir API. Ücretsiz deneme sürümü mevcuttur."
 keywords: "Aspose Cells, Bulut API, Excel dönüştürme, PDF, HTML, ODS, XPS, CSV, elektronik tablo SDK'sı"
 weight: 10

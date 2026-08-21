@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Démarrage avec Aspose.Cells Cloud"
 linktype: "Démarrage"
 type: docs
-url: /getting-started/
+url: /fr/getting-started/
 description: "Découvrez comment télécharger, convertir et télécharger des fichiers Excel à l'aide de l'API REST Aspose.Cells Cloud en trois étapes simples. Inclut des exemples de code cURL."
 weight: 10
 keywords: "Aspose.Cells Cloud, API Excel, conversion de feuilles de calcul, Excel vers PDF, feuille de calcul cloud, API Aspose.Cells Cloud"

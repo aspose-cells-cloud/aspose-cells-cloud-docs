@@ -3,8 +3,8 @@ title: "Ein benutzerdefiniertes Kriterium in einem Excel-Arbeitsblatt hinzufüge
 second_title: "Dokument"
 linktitle: "Benutzerdefinierten Filter hinzufügen"
 type: docs
-url: /autofilter/add-custom-filter/
-aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/]
+url: /de/autofilter/add-custom-filter/
+aliases: [  /de/filter-a-list-with-a-custom-criteria/ , /de/autofilter/add-a-custom-filter/ ]
 keywords: "Excel, benutzerdefinierter Filter, Aspose.Cells Cloud, REST-API, AutoFilter, Arbeitsblatt, benutzerdefiniertes Kriterium"
 description: "Erfahren Sie, wie Sie mit der Aspose.Cells Cloud REST-API einen benutzerdefinierten Filter in einem Excel-Arbeitsblatt anwenden. Enthält Anforderungsdetails, ein cURL-Beispiel und SDK-Codebeispiele für mehrere Programmiersprachen."
 weight: 65

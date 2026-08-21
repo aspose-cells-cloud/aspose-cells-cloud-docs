@@ -4,7 +4,7 @@ second title: "المستند"
 linktitle: "ما الجديد في عام 2025"
 type: docs
 weight: 9
-url: /new-features/2025/
+url: /ar/new-features/2025/
 keywords: "Aspose.Cells Cloud، الميزات الجديدة لعام 2025، واجهة برمجة تطبيقات جداول البيانات، Excel، CSV، PDF، جدول بيانات سحابي"
 description: "تُسرد هذه الصفحة أحدث ميزات وتحسينات Aspose.Cells Cloud الصادرة في عام 2025، بما في ذلك واجهات برمجة تطبيقات جديدة، وتحسينات وإصلاحات للأخطاء."
 ArticleTitle: "ما الجديد في Aspose.Cells Cloud في عام 2025 – أحدث الميزات والتحسينات"

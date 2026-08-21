@@ -1,7 +1,7 @@
 ---
 title: "Obtener MaxColumn de una hoja de cálculo de Excel"
 type: docs
-url: /get-maxcolumn-from-excel-worksheet/
+url: /es/get-maxcolumn-from-excel-worksheet/
 weight: 60
 keywords: "Aspose Cells API, maxcolumn, hoja de cálculo de Excel, REST, SDK"
 description: "Obtener el índice máximo de columna de una hoja de cálculo mediante la API en la nube Aspose.Cells. Incluye solicitud cURL con autenticación, esquema de respuesta, parámetros, códigos de error y ejemplos de SDK (C#, Java, Python, etc.)."

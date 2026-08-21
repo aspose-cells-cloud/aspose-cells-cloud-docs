@@ -2,8 +2,8 @@
 title: "Aspose.Cells Cloud API を使用して Excel ワークブックを暗号化 – クイック cURL および SDK サンプル"
 second_title: "ドキュメント"
 linktype: "docs"
-url: "/excel-file-encrypt/"
-aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+url: /ja/excel-file-encrypt/
+aliases: [  /ja/encrypt-excel-workbooks/ , /ja/workbook/encrypt/ ]
 keywords: "Aspose Cells ワークブック暗号化, Excel 暗号化 API, REST API, cURL, .NET, Java, Python, PHP, Ruby, Node.js, Go, Perl"
 description: "Aspose.Cells Cloud REST API (v3.0) を使用して Excel ワークブックを暗号化する方法を学びます。cURL コマンド、SDK コードサンプル（C#、Java、Python など）、必要なパラメーター、エラーハンドリングを含みます。"
 weight: 20

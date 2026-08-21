@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "클라우드에서 Excel 파일을 분할하여 별도의 파일로 분리하고 30개 이상의 형식으로 내보내기"
 linktitle: "클라우드에서 원격 스프레드시트 분할"
 type: docs
-url: /split-remote-spreadsheet/
+url: /ko/split-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, Excel 워크북 분할, 스프레드시트 분할기, 클라우드 API, PDF로 내보내기, CSV로 내보내기, JSON으로 내보내기, 다중 형식 내보내기, 클라우드 스프레드시트 처리"
 description: "클라우드 스토리지에 저장된 Excel 워크북을 Aspose.Cells Cloud API를 사용해 워크시트별로 분할하고, 각 파일을 PDF, CSV, JSON, XLSX, HTML, ODS, XPS 등 30개 이상의 형식으로 내보냅니다."
 weight: 100

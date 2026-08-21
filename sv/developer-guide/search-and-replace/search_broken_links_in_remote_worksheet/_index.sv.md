@@ -4,7 +4,7 @@ ArticleTitle: "Sök efter trasiga länkar i fjärrarbetsblad – Aspose.Cells Cl
 second_title: "Dokument"
 linktitle: "SökEfterTrasigaLänkarIJärrarbetsblad"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/search/broken-links
+url: /sv/cells/{name}/worksheets/{worksheet}/search/broken-links
 aliases: []
 keywords: "Aspose.Cells, sök trasiga länkar, fjärrarbetsblad"
 description: "Sök efter trasiga länkar i ett arbetsblad i en fjärrlagrad kalkylarksfil."

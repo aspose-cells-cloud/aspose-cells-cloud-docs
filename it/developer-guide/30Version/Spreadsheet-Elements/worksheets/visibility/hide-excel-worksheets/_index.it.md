@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Nascondi"
 type: docs
 url: /it/worksheets/hide/
-aliases: [/hide-excel-worksheets/]
+aliases: [  /it/hide-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Excel, nascondi foglio, REST API, foglio di calcolo"
 description: "Guida passo-passo per nascondere un foglio in un workbook Excel utilizzando l’API REST di Aspose.Cells Cloud, inclusi dettagli della richiesta, un esempio cURL e frammenti di codice SDK per diversi linguaggi."
 weight: 50

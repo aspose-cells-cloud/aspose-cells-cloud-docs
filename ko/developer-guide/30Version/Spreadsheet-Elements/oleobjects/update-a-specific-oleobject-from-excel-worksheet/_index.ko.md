@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "업데이트"
 type: docs
 url: /ko/oleobjects/update/
-aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
+aliases: [  /ko/update-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "OLE 개체 업데이트, 엑셀, Aspose.Cells Cloud, REST API, SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크시트 내 OLE 개체(이미지, 차트 등)를 업데이트하는 방법을 알아보세요. cURL 및 SDK 예제, 인증 절차, 오류 처리가 포함됩니다."
 weight: 30

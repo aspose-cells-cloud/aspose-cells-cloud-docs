@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Excel テキスト分割ツール – セルの内容を複数の列に分割する | Aspose.Cells Cloud"
 linktitle: "テキスト分割"
 type: docs
-url: /split-text/
+url: /ja/split-text/
 keywords: "Aspose, Cells, テキスト分割 API, Excel, 区切り文字, テキスト分割, クラウド API"
 description: "Aspose.Cells Cloud を使って Excel セルのテキストを簡単に別々の列または行に分割します。カスタム区切り文字、マスク、改行、およびオプションで区切り文字を保持することをサポートしています。curl または SDK を使って数分で使い始めましょう。"
 weight: 100

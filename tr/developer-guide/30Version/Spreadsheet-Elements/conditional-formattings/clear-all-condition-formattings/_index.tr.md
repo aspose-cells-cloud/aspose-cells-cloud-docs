@@ -1,8 +1,8 @@
 ---
 title: "Koşullu Biçimlendirmeyi Temizle"
 type: docs
-url: /conditional-formattings/clear/
-aliases: [/clear-all-condition-formattings/]
+url: /tr/conditional-formattings/clear/
+aliases: [  /tr/clear-all-condition-formattings/ ]
 keywords: "Aspose.Cells Cloud, REST API, koşullu biçimlendirmeyi temizle, Excel, çalışma sayfaları, JWT, v3.2"
 description: "Aspose.Cells Cloud API’si (v3.2) ile bir çalışma sayfasından tüm koşullu biçimlendirme kurallarını silin. İstek sözdizimi, gerekli parametreler, kimlik doğrulama adımları ve birden fazla SDK'da örnek kodu öğrenin."
 weight: 80

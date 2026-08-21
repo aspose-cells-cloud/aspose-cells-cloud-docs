@@ -3,7 +3,7 @@ title: "空の Excel ワークブックを作成する"
 second_title: "ドキュメント"
 linktitle: "空のワークブック"
 type: docs
-url: /create-an-empty-excel-file/
+url: /ja/create-an-empty-excel-file/
 aliases:
   [
     /create-an-empty-excel-workbook/,

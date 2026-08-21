@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "العثور على الروابط التالفة وإصلاحها في Excel – أداة فحص الروابط في جداول البيانات السحابية"
 linktype: "البحث عن الروابط التالفة في جداول البيانات"
 type: docs
-url: /search-spreadsheet-broken-links/
+url: /ar/search-spreadsheet-broken-links/
 keywords: "Aspose Cells, روابط تالفة, مراجعة جداول البيانات, واجهة برمجة تطبيقات Excel, جدول بيانات سحابي, أداة فحص الروابط"
 description: "اكتشاف الروابط التالفة وإصلاحها في ملفات Excel عبر واجهة برمجة تطبيقات Aspose.Cells Cloud. مسح النطاقات المحددة، والحصول على نتائج مفصّلة بصيغة JSON، والتكامل مع أي حزمة تطوير برمجيات (SDK) بلغة برمجة."
 weight: 100

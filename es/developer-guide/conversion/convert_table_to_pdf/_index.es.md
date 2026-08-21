@@ -4,7 +4,7 @@ ArticleTitle: "Convertir Tabla a PDF – Aspose.Cells Cloud API"
 second_title: "Documento"
 linktitle: "Convertir Tabla a PDF"
 type: docs
-url: /cells/convert/table/pdf
+url: /es/cells/convert/table/pdf
 aliases: []
 keywords: "Convertir Tabla a PDF, Aspose.Cells, API"
 description: "Convierte una tabla de una hoja de cálculo ubicada en un disco local en un archivo PDF utilizando Aspose.Cells Cloud."

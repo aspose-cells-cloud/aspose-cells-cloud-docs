@@ -3,8 +3,8 @@ title: "Excelワークシートの行を自動調整する"
 second_title: "Document"
 linktype: "Row"
 type: docs
-url: /worksheets/autofit/row/
-aliases: [/autofit-single-row-of-worksheet/]
+url: /ja/worksheets/autofit/row/
+aliases: [  /ja/autofit-single-row-of-worksheet/ ]
 description: "Aspose.Cells Cloud REST API を使って Excel ワークシートの行を自動調整する方法を学びます。エンドポイント、パラメータ、認証、エラーハンドリング、cURL リクエスト、および SDK の例を含みます。"
 keywords: "行の自動調整, Aspose.Cells Cloud, Excel API, REST, ワークシート, SDK, スプレッドシート, クラウド API"
 weight: 30

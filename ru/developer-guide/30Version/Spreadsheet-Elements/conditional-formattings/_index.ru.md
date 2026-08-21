@@ -3,8 +3,8 @@ title: "Работа с условным форматированием в Excel
 second_title: "Документ"
 linktype: "Условное форматирование"
 type: docs
-url: /conditional-formattings/
-aliases: [/working-with-conditional-formatting/]
+url: /ru/conditional-formattings/
+aliases: [  /ru/working-with-conditional-formatting/ ]
 keywords: "Excel, условное форматирование, Aspose.Cells Cloud, API"
 description: "API Aspose.Cells Cloud для Excel предоставляет конечные точки для извлечения, добавления, изменения и удаления правил условного форматирования, что позволяет динамически визуально анализировать данные рабочего листа."
 weight: 100

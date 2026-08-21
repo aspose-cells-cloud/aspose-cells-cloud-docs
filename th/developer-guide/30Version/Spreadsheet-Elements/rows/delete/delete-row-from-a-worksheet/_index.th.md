@@ -3,8 +3,8 @@ title: "การลบแถวในแผ่นงาน Excel"
 second_title: "เอกสาร"
 linktitle: "แถว"
 type: docs
-url: /rows/delete/row/
-aliases: [/delete-row-from-a-worksheet/]
+url: /th/rows/delete/row/
+aliases: [  /th/delete-row-from-a-worksheet/ ]
 description: "ใช้ปลายทาง DELETE /worksheets/{sheetName}/cells/rows/{rowIndex} เพื่อลบแถวที่ระบุออกจากแผ่นงาน Excel ผ่าน Aspose.Cells Cloud REST API ประกอบด้วยคำสั่ง cURL ตัวอย่าง SDK และการอ้างอิงพารามิเตอร์แบบเต็ม"
 keywords: "Aspose.Cells, ลบแถว, Excel, API, REST, คลาวด์, SDK"
 weight: 80

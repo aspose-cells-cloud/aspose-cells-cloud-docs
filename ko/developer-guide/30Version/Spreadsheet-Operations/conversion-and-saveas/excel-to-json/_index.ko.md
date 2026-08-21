@@ -3,7 +3,7 @@ title: "Excel을 JSON으로 변환"
 second_title: "문서"
 linktitle: "Excel을 JSON으로 변환"
 type: docs
-url: /convert-excel-file-to-json-file/
+url: /ko/convert-excel-file-to-json-file/
 keywords: "Aspose.Cells, Excel을 JSON으로 변환, 클라우드 API, 스프레드시트 변환, REST API"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 스프레드시트를 JSON 파일로 변환하는 방법을 알아보세요. cURL 예제, SDK 스니펫(C#, Java, Python), 필요한 매개변수, 인증, 응답 형식이 포함됩니다."
 weight: 100

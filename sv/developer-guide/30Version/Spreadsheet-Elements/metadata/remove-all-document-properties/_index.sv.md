@@ -3,8 +3,8 @@ title: "Ta bort alla dokumentegenskaper"
 second_title: "Dokument"
 linktitle: "Rensa"
 type: docs
-url: /document-properties/clear/
-aliases: [/remove-all-document-properties/]
+url: /sv/document-properties/clear/
+aliases: [  /sv/remove-all-document-properties/ ]
 keywords: "Aspose.Cells, ta bort dokumentegenskaper, rensa Excel-egenskaper, REST API, moln-SDK, kalkylark, API-referens"
 description: "Steg-för-steg-guide för att ta bort alla anpassade och inbyggda egenskaper från en Excel-arbetsbok med Aspose.Cells Cloud REST API."
 weight: 58

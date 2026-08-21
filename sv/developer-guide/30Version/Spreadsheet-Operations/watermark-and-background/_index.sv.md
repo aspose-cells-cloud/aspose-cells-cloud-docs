@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Vattenstämpel och bakgrund"
 type: docs
 url: /sv/watermark-and-background/
-aliases: [ "/export/excel-chart-to-different-formats/", "/workbook/background/" ]
+aliases: [  /sv/export/excel-chart-to-different-formats/ , /sv/workbook/background/ ]
 keywords: "Aspose.Cells Cloud, Excel, Vattenstämpel, Bakgrund, REST API"
 description: "Aspose.Cells Cloud REST API tillåter utvecklare att lägga till, ta bort och hantera bakgrunder och vattenstämplar i Excel-arbetsböcker. Stödda språk inkluderar Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby och Swift."
 weight: 20

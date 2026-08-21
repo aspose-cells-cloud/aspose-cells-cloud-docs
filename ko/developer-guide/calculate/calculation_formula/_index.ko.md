@@ -3,7 +3,7 @@ title: "수식 계산"
 ArticleTitle: "수식 계산 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: /cells/calculate/formula
+url: /ko/cells/calculate/formula
 aliases: []
 keywords: "Aspose Cells, 수식 계산, 스프레드시트, API"
 description: "Aspose.Cells Cloud API를 사용하여 스프레드시트에서 수식을 계산합니다."

@@ -3,8 +3,8 @@ title: "Travail avec des feuilles de calcul Excel"
 second_title: "Document"
 linktitle: "Feuilles de calcul"
 type: docs
-url: /worksheets/
-aliases: [/working-with-worksheets/]
+url: /fr/worksheets/
+aliases: [  /fr/working-with-worksheets/ ]
 keywords: "feuille de calcul Excel, Aspose.Cells Cloud, API REST, classeur, classeur Excel, manipulation de données, automatisation Excel"
 description: "L’API REST Aspose.Cells Cloud permet de travailler avec des feuilles de calcul dans un classeur Excel. Le SDK prend en charge plusieurs langages de programmation, notamment Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby et Swift."
 weight: 100

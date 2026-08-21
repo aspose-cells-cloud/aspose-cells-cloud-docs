@@ -3,7 +3,7 @@ title: "Arbeiten mit Excel-Datenvalidierung"
 second_title: "Dokument"
 linktype: "Validierungen"
 type: docs
-url: /validations/
+url: /de/validations/
 keywords: "Excel-Datenvalidierung, Aspose.Cells Cloud, REST API, Tabellenkalkulation, Office Cloud"
 description: "Erfahren Sie, wie Sie Excel-Datenvalidierungsregeln programmgesteuert mit der Aspose.Cells Cloud REST API hinzufügen, abrufen, aktualisieren, löschen und löschen können. Enthält Beispiele für .NET, Java, Python und PHP."
 weight: 100

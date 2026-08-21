@@ -3,8 +3,8 @@ title: "Yatay Sayfa Sonları Alın"
 second_title: "Belge"
 linktitle: "Yatay Sayfa Sonları Alın"
 type: docs
-url: /page-breaks/get-horizontal-page-breaks/
-aliases: [/get-horizontal-page-breaks-inside-worksheet/]
+url: /tr/page-breaks/get-horizontal-page-breaks/
+aliases: [  /tr/get-horizontal-page-breaks-inside-worksheet/ ]
 keywords: "yatay sayfa sonları, Aspose.Cells Cloud, REST API, Excel çalışma sayfası, SDK"
 description: "Aspose.Cells Cloud API aracılığıyla bir Excel çalışma sayfasından yatay sayfa sonlarını alın. Endpoint, parametreler, cURL örneği, yanıt formatı ve C#, Java, Python ve diğerleri için SDK snippet'lerini içerir."
 ArticleTitle: "Yatay Sayfa Sonları Alın - Aspose.Cells Cloud API Dökümantasyonu"

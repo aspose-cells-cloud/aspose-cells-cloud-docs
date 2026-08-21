@@ -2,7 +2,7 @@
 title: "Hämta diagramområde från ett kalkylblad"
 type: docs
 url: /sv/charts/area/get/
-aliases: [/sv/get-chart-area-from-a-worksheet/]
+aliases: [  /sv/get-chart-area-from-a-worksheet/ ]
 weight: 60
 keywords:
   - "Aspose.Cells"

@@ -3,8 +3,8 @@ title: "Supprimer une ligne dans une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Ligne"
 type: docs
-url: /rows/delete/row/
-aliases: [/delete-row-from-a-worksheet/]
+url: /fr/rows/delete/row/
+aliases: [  /fr/delete-row-from-a-worksheet/ ]
 description: "Utilisez le point de terminaison DELETE /worksheets/{sheetName}/cells/rows/{rowIndex} pour supprimer une ligne spécifique d'une feuille de calcul Excel via l'API REST Aspose.Cells Cloud. Inclut une commande cURL, des exemples de SDK et une référence complète des paramètres."
 keywords: "Aspose.Cells, supprimer une ligne, Excel, API, REST, Cloud, SDK"
 weight: 80

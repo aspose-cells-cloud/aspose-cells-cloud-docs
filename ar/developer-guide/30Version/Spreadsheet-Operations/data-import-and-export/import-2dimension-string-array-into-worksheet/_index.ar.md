@@ -3,7 +3,7 @@ title: "استيراد مصفوفة سلاسل ثنائية الأبعاد إل�
 second_title: "مستند"
 linktitle: "استيراد مصفوفة سلاسل ثنائية الأبعاد"
 type: docs
-url: /import-a-2d-string-array-into-excel-worksheet/
+url: /ar/import-a-2d-string-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-string-array-into-excel-worksheet/,

@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Отменить скрытие"
 type: docs
 url: /ru/rows/unhide/
-aliases: [/ru/unhide-rows-in-excel-worksheet/]
+aliases: [  /ru/unhide-rows-in-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, отменить скрытие строк, REST API, электронная таблица, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
 description: "Используйте Aspose.Cells Cloud REST API для отмены скрытия строк на листе Excel. API доступно через множество SDK, включая .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl и Swift."
 weight: 50

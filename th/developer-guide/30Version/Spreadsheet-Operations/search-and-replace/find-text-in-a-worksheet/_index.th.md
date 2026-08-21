@@ -3,8 +3,8 @@ title: "ค้นหาข้อความในแผ่นงาน Excel"
 second_title: "เอกสาร"
 linktitle: "ค้นหาในแผ่นงาน"
 type: docs
-url: /worksheets/find-text/
-aliases: [/find-text-in-a-worksheet/]
+url: /th/worksheets/find-text/
+aliases: [  /th/find-text-in-a-worksheet/ ]
 weight: 40
 keywords: "Excel, Aspose.Cells Cloud, REST API, ค้นหาข้อความ, แผ่นงาน, สเปรดชีต, ค้นหา"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อค้นหาข้อความในแผ่นงาน Excel API นี้พร้อมใช้งานผ่าน SDK หลายตัวและภาษาการเขียนโปรแกรม"

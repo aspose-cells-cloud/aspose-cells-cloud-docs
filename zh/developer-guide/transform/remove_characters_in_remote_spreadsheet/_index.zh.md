@@ -4,7 +4,7 @@ ArticleTitle: "远程电子表格中删除字符 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "远程电子表格中删除字符"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
+url: /zh/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
 aliases: []
 keywords: "Aspose.Cells, 删除字符, 文本处理"
 description: "在选定的单元格范围内，从每个单元格中删除用户自定义字符、预定义符号集或任意子字符串，同时保留公式、格式和数据验证，适用于远程电子表格。"

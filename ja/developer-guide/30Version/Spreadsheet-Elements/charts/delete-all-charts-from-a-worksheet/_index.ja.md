@@ -1,8 +1,8 @@
 ---
 title: "ワークシートからすべてのチャートを削除する"
 type: docs
-url: /charts/clear/
-aliases: [/delete-all-charts-from-a-worksheet/]
+url: /ja/charts/clear/
+aliases: [  /ja/delete-all-charts-from-a-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells, Cloud, 削除, 全チャート, ワークシート, REST API, DELETE, SDK"
 description: "Aspose.Cells Cloud REST API（v3.0）を使用してワークシート内のすべてのチャートを削除する方法を学びます。エンドポイント、パラメータ、cURLサンプル、SDKコードスニペット、認証手順、エラーハンドリングを含みます。"

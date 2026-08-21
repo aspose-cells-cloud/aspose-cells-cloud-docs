@@ -3,7 +3,7 @@ title: "Déproteger un classeur Excel – API Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "Déproteger un fichier Excel"
 type: docs
-url: /excel-file-unprotect/
+url: /fr/excel-file-unprotect/
 aliases:
   - /unprotect-excel-workbooks/
   - /workbook/unprotect/

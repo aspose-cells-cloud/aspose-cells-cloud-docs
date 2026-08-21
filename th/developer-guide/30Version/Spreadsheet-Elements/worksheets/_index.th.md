@@ -3,8 +3,8 @@ title: "การใช้งานเวิร์กชีต Excel"
 second_title: "เอกสาร"
 linktype: "เวิร์กชีต"
 type: docs
-url: /worksheets/
-aliases: [/working-with-worksheets/]
+url: /th/worksheets/
+aliases: [  /th/working-with-worksheets/ ]
 keywords: "เวิร์กชีต Excel, Aspose.Cells Cloud, REST API, สเปรดชีต, สมุดงาน, การจัดการข้อมูล, การทำงานอัตโนมัติ Excel"
 description: "Aspose.Cells Cloud REST API ช่วยให้คุณสามารถใช้งานเวิร์กชีตในสมุดงาน Excel ได้ SDK นี้รองรับภาษาการเขียนโปรแกรมหลายภาษา ได้แก่ Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby และ Swift"
 weight: 100

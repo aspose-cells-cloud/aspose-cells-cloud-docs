@@ -3,7 +3,7 @@ title: "So erhalten Sie verschiedene Inhalte aus einer Excel-Arbeitsmappe"
 second_title: "Dokument"
 linktype: "Holen"
 type: docs
-url: /worksheets/get/
+url: /de/worksheets/get/
 keywords: "Excel, Arbeitsmappe, Aspose.Cells Cloud, REST API, Inhaltsextraktion, Formatumwandlung"
 description: "Erfahren Sie, wie Sie verschiedene Arten von Inhalten aus einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API abrufen können. Die Anleitung deckt unterstützte Formate ab und enthält Links zu verwandten Vorgängen."
 weight: 20

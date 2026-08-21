@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Aspose.Cells Cloud PHP SDK — конвертация, объединение, разбиение, защита файлов Excel"  
 linktitle: "Aspose.Cells Cloud PHP SDK"  
 type: docs  
-url: /available-sdks/aspose-cells-cloud-php/  
+url: /ru/available-sdks/aspose-cells-cloud-php/
 description: "Скачайте Aspose.Cells Cloud PHP SDK (v24.3). Узнайте, как установить его с помощью Composer, аутентифицироваться, конвертировать XLSX в PDF/CSV, объединять рабочие книги, защищать листы и многое другое — всё это без установки Office."  
 keywords: "Aspose.Cells, Cloud, PHP, SDK, Excel, конвертация, объединение, разбиение, защита"  
 weight: 30  

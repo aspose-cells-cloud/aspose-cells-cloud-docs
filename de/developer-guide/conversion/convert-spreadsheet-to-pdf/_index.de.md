@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie eine lokale Tabellendatei mithilfe der Aspose.Cells Cloud API in PDF"
 linktitle: "Tabellendatei in PDF konvertieren"
 type: docs
-url: /convert-spreadsheet-to-pdf/
+url: /de/convert-spreadsheet-to-pdf/
 keywords: "Aspose.Cells Cloud, Tabellendatei zu PDF, Excel-Konvertierung, Cloud-API, PDF-Erstellung, REST-API, v4.0"
 description: "Schritt-für-Schritt-Anleitung zur Konvertierung einer lokalen Tabellendatei in PDF mithilfe der Aspose.Cells Cloud API. Enthält Anforderungssyntax, Parameter, Antwortdetails, Fehlerbehandlung und praktische Anwendungsfälle."
 weight: 100

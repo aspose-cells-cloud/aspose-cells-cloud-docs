@@ -1,8 +1,8 @@
 ---
 title: "Diagrammtitel in einem Arbeitsblatt löschen"
 type: docs
-url: /charts/delete-chart-title/
-aliases: [/delete-chart-title-in-a-worksheet/]
+url: /de/charts/delete-chart-title/
+aliases: [  /delete-chart-title-in-a-worksheet/ ]
 weight: 150
 keywords: "Aspose.Cells, Cloud API, Diagrammtitel löschen, Excel, REST, SDK"
 description: "Erfahren Sie, wie Sie einen Diagrammtitel aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API (v4.0) entfernen. Enthält cURL- und SDK-Beispiele sowie Fehlerbehandlung."

@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Excel : déplacement d’onglet via l’API Web – m
 second_title: "Document"
 ArticleTitle: "Comment déplacer des feuilles de calcul dans Excel – réorganiser l’ordre et la position des onglets"
 linktype: "docs"
-url: /move-worksheet-in-spreadsheet/
+url: /fr/move-worksheet-in-spreadsheet/
 keywords: "API de déplacement d’onglet, API de réorganisation des feuilles, API de modification de l’ordre des feuilles, API de gestion des onglets Excel, API REST Aspose Cells, automatisation de la position des feuilles, API d’organisation de classeurs, API de structure de feuille de calcul, automatisation Excel dans le cloud, réorganisation par lots des feuilles"
 description: "Découvrez comment déplacer des feuilles de calcul à l’intérieur des classeurs Excel afin de réorganiser l’ordre des feuilles et optimiser la structure du classeur. Modifiez les positions des feuilles, réorganisez les onglets pour améliorer votre flux de travail et automatisez l’organisation des feuilles pour une gestion professionnelle des feuilles de calcul."
 weight: 100

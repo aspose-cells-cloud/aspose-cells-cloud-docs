@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – API de cálculo matemático (Suma, Resta, Multipl
 second_title: "Documento"
 ArticleTitle: "Suma, Resta, Multiplicación, División y Porcentajes en hojas de cálculo/Excel"
 linktype: "docs"
-url: /math-calculate/
+url: /es/math-calculate/
 keywords: "API de cálculo matemático, Aspose.Cells Cloud, cálculos en Excel, suma, resta, multiplicación, división, porcentaje, procesamiento por lotes de Excel, API REST"
 description: "Aprenda a utilizar la API de cálculo matemático de Aspose.Cells Cloud para aplicar por lotes operaciones de suma, resta, multiplicación, división o porcentaje a rangos en Excel. Incluye el formato de solicitud, código de ejemplo y manejo de errores."
 weight: 100

@@ -3,8 +3,8 @@ title: "Obtener objeto OLE de una hoja de cálculo de Excel – Aspose.Cells Clo
 second_title: "Documento"
 linktitle: "Obtener"
 type: docs
-url: /oleobjects/get/
-aliases: [/get-oleobject-from-a-worksheet/]
+url: /es/oleobjects/get/
+aliases: [  /es/get-oleobject-from-a-worksheet/ ]
 keywords: "aspose, cells, objeto ole, excel, hoja de cálculo, obtener objeto ole, api rest"
 description: "Recuperar un objeto OLE (imagen, gráfico o archivo incrustado) de una hoja de cálculo utilizando la API REST de Aspose.Cells Cloud. Incluye el punto de conexión HTTPS, los parámetros requeridos, un ejemplo de cURL y código de SDK en múltiples lenguajes."
 ArticleTitle: "Obtener objeto OLE de una hoja de cálculo de Excel – Aspose.Cells Cloud API"

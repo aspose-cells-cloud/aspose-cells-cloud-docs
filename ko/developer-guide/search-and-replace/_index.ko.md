@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "스프레드시트에서 검색 및 바꾸기 – Aspose.Cells Cloud API"
 linktype: "검색 및 바꾸기"
 type: docs
-url: /search-replace/
+url: /ko/search-replace/
 keywords: "Aspose.Cells, Cloud API, 검색 및 바꾸기, Excel, REST, API, 스프레드시트 자동화, 찾기 및 바꾸기, Excel 클라우드"
 description: "Aspose.Cells Cloud **검색 및 바꾸기** API를 사용하여 클라우드에 저장된 엑셀 워크북에서 텍스트, 수식 또는 링크를 검색하고 바꾸는 방법을 알아보세요. 엔드포인트 세부 정보, 요청 매개변수, 응답 예시, 상태 코드, C#, Java, Python용 코드 스니펫이 포함됩니다."
 weight: 50

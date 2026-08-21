@@ -2,8 +2,8 @@
 title: "การใช้งานงาน SaveResult"
 second_title: "เอกสาร"
 type: docs
-url: /tasks/save-result/
-aliases: [/working-with-saveresult-task/]
+url: /th/tasks/save-result/
+aliases: [  /th/working-with-saveresult-task/ ]
 keywords: "งาน SaveResult, Aspose.Cells Cloud API, ส่งออกผลลัพธ์, ดาวน์โหลดสมุดคืนค่า, พื้นที่จัดเก็บบนคลาวด์, REST API, สเปรดชีต, Excel"
 description: "เรียนรู้วิธีการใช้งานงาน SaveResult ใน Aspose.Cells Cloud API เพื่อส่งออกข้อมูลสมุดคืนค่าที่ผ่านการประมวลผลไปยังพื้นที่จัดเก็บบนคลาวด์หรือดาวน์โหลดโดยตรง พร้อมตัวอย่าง cURL, Java, .NET และคู่มืออ้างอิงพารามิเตอร์แบบครบถ้วน"
 weight: 50

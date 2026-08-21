@@ -3,7 +3,7 @@ title: "Avskydda Excel-arbetsbok – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Avskydda Excel-fil"
 type: docs
-url: /excel-file-unprotect/
+url: /sv/excel-file-unprotect/
 aliases:
   - /unprotect-excel-workbooks/
   - /workbook/unprotect/

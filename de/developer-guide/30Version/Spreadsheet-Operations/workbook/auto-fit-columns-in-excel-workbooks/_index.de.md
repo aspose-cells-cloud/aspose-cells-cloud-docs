@@ -3,7 +3,7 @@ title: "Spalten in einer Excel-Datei automatisch anpassen"
 second_title: "Dokument"
 linktitle: "Spalten"
 type: docs
-url: /autofit-columns-on-an-excel-file/
+url: /de/autofit-columns-on-an-excel-file/
 aliases:
   [
     /auto-fit-columns-in-excel-workbooks,

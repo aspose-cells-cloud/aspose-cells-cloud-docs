@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – Sammanfoga cellintervall"
 secondtitle: "Dokument"
 linktitle: "Sammanfoga"
 type: docs
-url: /ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+url: /sv/ranges/merge/
+aliases: [  /sv/combines-a-range-of-cells-into-a-single-cell/ ]
 keywords: "Aspose.Cells, sammanfoga celler, Excel API, REST, molntjänst SDK"
 description: "Sammanfoga ett intervall av celler till en enda cell med Aspose.Cells Cloud REST API. Lär dig begäranformat, parametrar och SDK-exempel för C#, Java, Python med mera."
 weight: 20

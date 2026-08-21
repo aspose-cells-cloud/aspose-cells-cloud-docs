@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Excel-delningsverktyg – Dela lokal kalkylarkfil i filer i 30+ format"
 linktitle: "Dela kalkylark"
 type: docs
-url: /split-spreadsheet/
+url: /sv/split-spreadsheet/
 keywords: "dela, excel, aspose cells, kalkylarks-API, exportera till pdf, csv, json"
 description: "Dela ett lokalt Excel-arbetsboksfil i separata filer med Aspose.Cells Cloud API. Exportera till 30+ format (PDF, CSV, JSON, XLSX, HTML) utan att ladda upp till molnet."
 weight: 100

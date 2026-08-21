@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Uzaktan Excel Elektronik Tablolarda Metin Arama – Belirli Aralıklarda Veri Bulma"
 linktitle: "Uzak Aralık İçeriğini Arama"
 type: docs
-url: /search-content-in-remote-range/
+url: /tr/search-content-in-remote-range/
 keywords: "Aspose.Cells, Excel API, metin arama, uzak aralık, bulut elektronik tablo, REST API, veri keşfi"
 description: "Aspose Cloud’da depolanan bir Excel çalışma kitabının belirli bir aralığında metin, sayı veya formül arayın."
 weight: 100

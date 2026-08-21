@@ -4,7 +4,7 @@ second_title: "Dokumentation"
 linktitle: "Sök och ersätt"
 type: docs
 url: /sv/search-and-replace/
-aliases: [/sv/working-with-text/, /sv/text/]
+aliases: [  /sv/working-with-text/ , /sv/text/ ]
 description: "Lär dig hur du söker och ersätter text i Excel-arbetsböcker och -arbetsblad med Aspose.Cells Cloud REST API. Inkluderar begäranformat, exempelkod för .NET, Java, Python samt felhantering."
 keywords: "Aspose.Cells Cloud, Excel, sök och ersätt, REST API, .NET, Java, Python"
 weight: 20

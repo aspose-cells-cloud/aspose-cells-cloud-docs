@@ -2,7 +2,7 @@
 title: "Ottieni un grafico da un foglio di lavoro"
 type: docs
 url: /it/charts/get/
-aliases: [/it/get-chart-from-a-worksheet/]
+aliases: [  /it/get-chart-from-a-worksheet/ ]
 weight: 10
 keywords: "Aspose.Cells Cloud, Ottieni grafico, Foglio di lavoro, REST API, Excel, Chart API, recupero grafico, grafico Excel"
 description: "Recupera informazioni sul grafico, inclusi metadati e formato di esportazione, da un foglio di lavoro utilizzando l'API REST di Aspose.Cells Cloud."

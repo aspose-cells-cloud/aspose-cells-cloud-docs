@@ -3,7 +3,7 @@ title: "Comment gérer la visibilité d'une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Visibilité"
 type: docs
-url: /worksheets/panes/
+url: /fr/worksheets/panes/
 keywords: "Aspose.Cells Cloud, API de masquage de feuille de calcul, API d’affichage de feuille de calcul, visibilité d’une feuille de calcul Excel, API REST Excel, Aspose.Cells v3.0"
 description: "Découvrez comment masquer ou afficher des feuilles de calcul Excel de manière programmatique à l’aide de l’API REST Aspose.Cells Cloud. Inclut les URL de requête, des exemples cURL et .NET SDK, la gestion des erreurs et des notes spécifiques à chaque version."
 weight: 20

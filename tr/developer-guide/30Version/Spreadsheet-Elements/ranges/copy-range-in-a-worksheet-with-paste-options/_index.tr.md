@@ -3,8 +3,8 @@ title: "Çalışma Sayfasında Paste Seçenekleriyle Aralık Kopyalama"
 second_title: "Belge"
 linktitle: "Kopyala"
 type: docs
-url: /ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+url: /tr/ranges/copy/
+aliases: [  /tr/copy-range-in-a-worksheet-with-paste-options/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, aralık kopyalama, çalışma sayfası, paste seçenekleri"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında bir aralığı tam paste-seçeneği desteğiyle kopyalayın. Birden fazla programlama dili için SDK örneklerini içerir."
 weight: 20

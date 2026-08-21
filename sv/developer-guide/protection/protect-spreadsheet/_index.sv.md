@@ -4,7 +4,7 @@ secondtitle: "Utvecklarguide för Excel-skydd"
 articletitle: "Excel-lösenordskyddverktyg – Ställ in öppnings- och ändringslösenord – Säkra dina kalkylark"
 linktitle: "Säkra kalkylark"
 type: docs
-url: /protect-spreadsheet/
+url: /sv/protect-spreadsheet/
 keywords: "Aspose.Cells, Excel-lösenordskydd, API, öppningslösenord, ändringslösenord, molnlagring, kalkylarksäkerhet"
 description: "Säkra Excel-filer programmatiskt med Aspose.Cells Cloud. Ställ in både öppnings- och ändringslösenord via ett enda API-anrop. Stödjer .xlsx, .xls och molnlagring. Testa gratis."
 weight: 100

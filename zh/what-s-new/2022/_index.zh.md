@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "2022 年新功能"
 type: docs
 weight: 90
-url: /new-features/2023/
+url: /zh/new-features/2023/
 keywords: "Aspose.Cells Cloud 新功能。Microsoft Office Excel、OpenOffice 电子表格、CSV、PDF。"
 description: "本页介绍近期版本中引入的最引人注目的 Aspose.Cells Cloud 新功能。"
 kwords: Excel, Office Cloud, REST API, 电子表格, PDF, CSV, Json, Markdown, Aspose.Cells Cloud 新功能

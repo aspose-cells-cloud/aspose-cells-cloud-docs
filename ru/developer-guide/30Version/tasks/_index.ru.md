@@ -2,8 +2,8 @@
 title: "Задачи"
 second_title: "Документ"
 type: docs
-url: /tasks/ru/tasks/
-aliases: [/ru/working-with-tasks/]
+url: /ru/tasks/ru/tasks/
+aliases: [  /ru/working-with-tasks/ ]
 keywords: "Aspose Cells, облачный API, задачи Excel, задача Convert, задача ImportData, SmartMarker, SaveResult, REST API, автоматизация электронных таблиц"
 description: "Ознакомьтесь со всем набором задач API Aspose.Cells Cloud: Convert, ImportData, SaveResult, SmartMarker и другие. Узнайте об использовании, параметрах и примерах кода для автоматизации Excel."
 weight: 100

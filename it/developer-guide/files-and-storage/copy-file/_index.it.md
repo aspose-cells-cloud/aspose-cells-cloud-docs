@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Soluzione di gestione dei file Excel basata sul cloud – Spiegazione dettagliata della funzionalità di copia in batch dell'API Aspose.Cells Copy File"
 linktitle: "Copia file"
 type: docs
-url: /copy-file/
+url: /it/copy-file/
 keywords: "Aspose.Cells, CopyFile API, copia file Excel, archiviazione cloud, API REST"
 description: "Scopri come utilizzare l'API Aspose.Cells Cloud CopyFile per duplicare in modo efficiente i file Excel e gestirli tra diverse posizioni di archiviazione."
 weight: 100

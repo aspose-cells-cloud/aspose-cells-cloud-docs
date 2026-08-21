@@ -3,8 +3,8 @@ title: "Ottenere la descrizione di una riga da un foglio di calcolo Excel"
 second_title: "Document"
 linktype: "Row"
 type: docs
-url: /rows/get/row/
-aliases: [/get-row-from-a-worksheet/]
+url: /it/rows/get/row/
+aliases: [  /it/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API riga Excel, Ottieni riga foglio di calcolo, REST API, .NET SDK, Java SDK, Python SDK"
 description: "Recupera informazioni dettagliate (altezza, stile, stato di visibilità, ecc.) per una specifica riga in un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud. Include esempio cURL, frammenti SDK e gestione degli errori."
 weight: 10

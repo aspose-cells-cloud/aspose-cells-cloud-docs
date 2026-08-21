@@ -2,8 +2,8 @@
 title: "Aspose.Cells Cloud API – CellsObjectOperate 작업 사용하기 (REST)"
 second_title: "문서"
 type: docs
-url: /tasks/cells-object-operate/
-aliases: [/working-with-cellsobjectoperate-task/]
+url: /ko/tasks/cells-object-operate/
+aliases: [  /ko/working-with-cellsobjectoperate-task/ ]
 description: "Aspose.Cells Cloud API에서 CellsObjectOperate 작업을 사용하는 방법을 배워보세요. 매개변수 참조, 요청/응답 예제, 워크시트, 차트, 피벗 테이블 작업 시 적용할 수 있는 모범 사례 팁을 제공합니다."
 weight: 20
 ArticleTitle: "Aspose.Cells Cloud API – CellsObjectOperate 작업 사용하기 (REST)"

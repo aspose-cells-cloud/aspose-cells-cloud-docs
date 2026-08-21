@@ -4,7 +4,7 @@ ArticleTitle: "Eliminar Caracteres en una Hoja de Cálculo Remota – API de Asp
 second_title: "Documento"
 linktitle: "Eliminar Caracteres en una Hoja de Cálculo Remota"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
+url: /es/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
 aliases: []
 keywords: "Aspose.Cells, Eliminar Caracteres, Procesamiento de Texto"
 description: "Elimina caracteres definidos por el usuario, conjuntos predefinidos de símbolos o cualquier subcadena de cada celda en el rango seleccionado, preservando fórmulas, formato y validación de datos para una hoja de cálculo remota."

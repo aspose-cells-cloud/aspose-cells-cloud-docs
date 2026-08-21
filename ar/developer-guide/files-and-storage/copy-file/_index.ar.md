@@ -3,7 +3,7 @@ title: "واجهة برمجة تطبيقات نسخ الملفات في Aspose.C
 second_title: "مستند"
 ArticleTitle: "حل إدارة ملفات إكسل القائم على السحابة – شرح مفصّل لوظيفة النسخ الدفعّي في واجهة برمجة تطبيقات نسخ الملفات Aspose.Cells"
 linktype: "docs"
-url: /copy-file/
+url: /ar/copy-file/
 keywords: "Aspose.Cells، واجهة برمجة تطبيقات CopyFile، نسخ ملف إكسل، التخزين السحابي، واجهة برمجة تطبيقات REST"
 description: "تعرّف على كيفية استخدام واجهة برمجة تطبيقات Aspose.Cells Cloud CopyFile لنسخ ملفات إكسل بكفاءة وإدارتها عبر مواقع تخزين مختلفة."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "ค้นหาและแก้ไขลิงก์ที่เสียในช่วงข้อมูลของไฟล์ Excel บนคลาวด์ – เครื่องมือตรวจสอบลิงก์สเปรดชีตบนคลาวด์"
 linktitle: "ค้นหาลิงก์ที่เสียในช่วงข้อมูลระยะไกล"
 type: docs
-url: /search-broken-links-in-remote-range/
+url: /th/search-broken-links-in-remote-range/
 keywords: "Aspose, Cells, ลิงก์ที่เสีย, API, ช่วงข้อมูล Excel, การตรวจสอบ, คลาวด์, สเปรดชีต, อ้างอิงภายนอก, เครื่องมือตรวจสอบ"
 description: "ใช้ Aspose.Cells Cloud API เพื่อสแกนช่วงข้อมูลของไฟล์ Excel เพื่อหาลิงก์ภายนอกที่เสีย สูตรที่ไม่ถูกต้อง หรือแหล่งข้อมูลที่หายไป ปลอดภัย รวดเร็ว และทำงานบนคลาวด์"
 weight: 100

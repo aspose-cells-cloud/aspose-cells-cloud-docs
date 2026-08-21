@@ -3,7 +3,7 @@ title: "Bir Excel Çalışma Kitabının Şifre Korumasını Değiştirme"
 second_title: "Belge"
 linktitle: "Bir Excel dosyasının şifresini değiştirme"
 type: docs
-url: /workbook/password/modify/
+url: /tr/workbook/password/modify/
 aliases:
   - /set-modify-password-of-excel-workbooks/
   - /workbook/modify-password/

@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "การดำเนินการสมุดงาน Excel ขั้นสูง: การจัดการแผ่นงานและการบีบอัด – Aspose.Cells Cloud"
 linktitle: "การจัดการ"
 type: docs
-url: /management/
+url: /th/management/
 keywords: "Aspose.Cells, คลาวด์, Excel API, การจัดการแผ่นงาน, การบีบอัดสเปรดชีต, การสร้างสมุดงาน"
 description: "ใช้ Aspose.Cells Cloud API เพื่อเพิ่ม ลบ ย้าย เปลี่ยนชื่อแผ่นงาน บีบอัดสเปรดชีต และสร้างสมุดงานจากเทมเพลต — ไม่จำเป็นต้องติดตั้ง Excel บนเครื่อง"
 weight: 50

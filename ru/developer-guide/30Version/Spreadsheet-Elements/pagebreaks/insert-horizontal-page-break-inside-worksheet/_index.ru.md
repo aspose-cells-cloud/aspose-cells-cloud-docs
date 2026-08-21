@@ -3,8 +3,8 @@ title: "Добавление горизонтального разрыва ст�
 second_title: "Документ"
 linktype: "Добавление горизонтального разрыва страницы"
 type: docs
-url: /page-breaks/add-horizontal-page-break/
-aliases: [/insert-horizontal-page-break-inside-worksheet/]
+url: /ru/page-breaks/add-horizontal-page-break/
+aliases: [  /ru/insert-horizontal-page-break-inside-worksheet/ ]
 keywords: "горизонтальный разрыв страницы, Aspose.Cells Cloud, Excel API, REST, SDK, рабочий лист, cURL"
 description: "Узнайте, как добавить горизонтальный разрыв страницы в рабочий лист Excel с помощью REST API Aspose.Cells Cloud. Включает детали запроса, пример cURL и фрагменты кода SDK для нескольких языков программирования."
 weight: 30

@@ -3,8 +3,8 @@ title: "Sök text i en Excel-arbetsbok"
 second_title: "Dokument"
 linktitle: "Sök i arbetsbok"
 type: docs
-url: /workbook/find-text/
-aliases: [/find-text-in-a-workbook/]
+url: /sv/workbook/find-text/
+aliases: [  /sv/find-text-in-a-workbook/ ]
 weight: 30
 keywords: "Aspose.Cells, sök text, Excel-API, arbetsbokssökning"
 description: "Lär dig hur du använder Aspose.Cells Cloud API för att **söka efter text** i Excel-arbetsböcker (XLS‑X, ODS). Innehåller cURL-exempel, SDK-utdrag och respons-schema. Kom igång idag."

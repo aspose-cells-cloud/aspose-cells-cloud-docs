@@ -5,7 +5,7 @@ second_title: "Belge"
 type: docs
 linktitle: "Bağlantılar"
 url: /tr/hyperlinks/
-aliases: [/tr/working-with-hyperlinks/, /tr/working-with-hyperlink/]
+aliases: [  /tr/working-with-hyperlinks/ , /tr/working-with-hyperlink/ ]
 keywords: "Excel, bağlantılar, Cells.Cloud, API, Aspose.Cells, elektronik tablo, bağlantılar, kılavuz"
 description: "Aspose Cells Cloud API kullanarak Excel bağlantılarını nasıl alabileceğinizi, ekleyebileceğinizi, güncelleyebileceğinizi ve silebileceğinizi keşfedin."
 weight: 100

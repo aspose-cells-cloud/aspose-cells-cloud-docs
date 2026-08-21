@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать данные таблицы электронной таблицы в файл CSV: пошаговое руководство"
 linktitle: "Преобразование таблицы в CSV"
 type: docs
-url: /convert-table-to-csv/
+url: /ru/convert-table-to-csv/
 keywords: "Aspose.Cells Cloud, таблица в CSV, преобразование электронной таблицы, Excel в CSV, API, REST, экспорт данных"
 description: "Быстро преобразуйте таблицу из электронной таблицы Excel в файл CSV с помощью API Aspose.Cells Cloud."
 weight: 100

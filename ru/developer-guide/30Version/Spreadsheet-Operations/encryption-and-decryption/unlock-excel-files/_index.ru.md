@@ -3,8 +3,8 @@ title: "Разблокировка файлов Excel"
 second: "Документ"
 linktitle: "Разблокировка файлов Excel"
 type: docs
-url: /unlock-excel-files/
-aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
+url: /ru/unlock-excel-files/
+aliases: [  /ru/unlock/without-storage/ , /ru/unlock/ , /ru/unlock/without-using-storage/ ]
 keywords: "Разблокировка Excel, Aspose.Cells Cloud, REST API, разблокировка Excel, защищённая паролем книга, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
 description: "Aspose.Cells Cloud REST API предоставляет конечную точку для разблокировки файлов Excel, защищённых паролем. SDK доступны для множества языков программирования, включая Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby и Swift."
 ArticleTitle: "Разблокировка файлов Excel с использованием Aspose.Cells Cloud REST API"

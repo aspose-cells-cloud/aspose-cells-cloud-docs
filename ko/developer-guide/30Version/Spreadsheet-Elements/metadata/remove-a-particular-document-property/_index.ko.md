@@ -3,8 +3,8 @@ title: "특정 문서 속성 삭제"
 second_title: "문서"
 linktitle: "삭제"
 type: docs
-url: /document-properties/delete/
-aliases: [/remove-a-particular-document-property/]
+url: /ko/document-properties/delete/
+aliases: [  /ko/remove-a-particular-document-property/ ]
 keywords: "Aspose.Cells, 문서 속성 삭제, 엑셀 메타데이터 API, REST, 클라우드 SDK, cURL 예제"
 description: "Aspose.Cells Cloud REST API v3.0을 사용하여 엑셀 워크북에서 특정 문서 속성을 삭제합니다. C#, Java, Python 등 다양한 언어의 cURL 및 SDK 예제를 포함합니다."
 weight: 50

@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cómo crear nuevas hojas de cálculo de Excel: generar archivos vacíos o basados en plantillas"
 linktitle: "Crear hoja de cálculo"
 type: docs
-url: /create-spreadsheet/
+url: /es/create-spreadsheet/
 keywords: "Aspose.Cells, API de hoja de cálculo, crear Excel, nube, XLSX, ODS, CSV, plantilla, SDK, automatización"
 description: "Aprenda a crear libros de Excel en blanco o basados en plantillas mediante la API de Aspose.Cells Cloud (v5.0). Incluye endpoint, parámetros, códigos de error, pasos de autenticación y ejemplos de SDK."
 weight: 100

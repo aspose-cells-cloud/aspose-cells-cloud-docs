@@ -3,7 +3,7 @@ title: "Actualizar un objeto de lista en una hoja de cálculo de Excel"
 ArticleTitle: "Actualizar un objeto de lista o tabla dentro de la hoja de cálculo – Documentación de la API de Aspose.Cells Cloud"
 second_title: "Documento"
 linktype: "docs"
-url: /list-objects/update/
+url: /es/list-objects/update/
 aliases:
   - /update-a-list-object-or-table-inside-the-worksheet/
   - /tables/update/

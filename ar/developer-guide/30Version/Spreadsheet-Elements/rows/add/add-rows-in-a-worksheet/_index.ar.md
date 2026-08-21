@@ -4,7 +4,7 @@ ArticleTitle: "إضافة صفوف متعددة إلى ورقة عمل Excel ب�
 second_title: "مستند"
 linktype: "صفحات"
 type: docs
-url: /rows/add/rows/
+url: /ar/rows/add/rows/
 keywords: "Aspose.Cells Cloud، إدخال صفوف، ورقة عمل Excel، واجهة REST API، مكتبة SDK، إضافة صفوف متعددة"
 description: "تعرّف على كيفية استخدام واجهة Aspose.Cells Cloud REST API لإدخال صفوف متعددة في ورقة عمل Excel. يغطي هذا الدليل نقطة النهاية ومعلمات الطلب وأوامر cURL النموذجية وأمثلة استخدام مكتبات SDK."
 weight: 20

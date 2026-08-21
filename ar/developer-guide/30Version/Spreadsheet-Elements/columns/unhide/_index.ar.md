@@ -4,7 +4,7 @@ ArticleTitle: "إظهار أعمدة مخفية في ورقة عمل Excel - و�
 second_title: "مستند"
 linktype: "إظهار"
 type: docs
-url: /columns/unhide/
+url: /ar/columns/unhide/
 aliases:
   [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
 keywords: "Aspose.Cells، واجهة برمجة تطبيقات سحابية، إظهار الأعمدة، Excel، REST، SDK"

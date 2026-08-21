@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktitle: "จัดรูปแบบทั้งหมด"
 type: docs
 url: /th/pivot-tables/format-all/
-aliases: [/th/update-style-for-pivot-table/]
+aliases: [  /th/update-style-for-pivot-table/ ]
 keywords: "ตารางสรุป, อัปเดตสไตล์, Aspose.Cells Cloud, REST API, Excel, สเปรดชีต, API, สไตล์ตารางสรุป, จัดรูปแบบทั้งหมด"
 description: "เรียนรู้วิธีการอัปเดตสไตล์ของตารางสรุปทั้งหมดโดยใช้ REST API ของ Aspose.Cells Cloud รวมถึงรายละเอียดคำขอ ตัวอย่าง cURL และโค้ดตัวอย่าง SDK สำหรับภาษาโปรแกรมต่างๆ"
 weight: 100

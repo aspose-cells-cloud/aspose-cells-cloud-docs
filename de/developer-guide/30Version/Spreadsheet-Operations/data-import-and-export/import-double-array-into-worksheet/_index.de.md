@@ -3,7 +3,7 @@ title: "Doppelte Array in Excel-Arbeitsblatt importieren"
 second_title: "Dokument"
 linktitle: "Doppeltes Array importieren"
 type: docs
-url: /import-double-array-into-excel-worksheet/
+url: /de/import-double-array-into-excel-worksheet/
 aliases:
   - /import-double-array-into-worksheet/
   - /import-data/double-array/

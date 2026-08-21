@@ -3,8 +3,8 @@ title: "Annullare la fusione delle celle in un intervallo"
 second_title: "Documento"  
 linktitle: "Annulla fusione"  
 type: docs  
-url: /ranges/unmerge/  
-aliases: [/unmerge-merged-cells-of-the-range/]  
+url: /it/ranges/unmerge/
+aliases: [  /it/unmerge-merged-cells-of-the-range/ ]
 keywords: "Aspose.Cells Cloud, annullare la fusione delle celle, API Excel, intervallo foglio di calcolo, API REST"  
 description: "Scopri come utilizzare l'API Aspose.Cells Cloud per annullare la fusione delle celle unite in un intervallo specifico di un foglio di calcolo Excel. Include endpoint, parametri, esempi cURL e frammenti di codice SDK per C#, Java, Python e altro ancora."  
 weight: 20  

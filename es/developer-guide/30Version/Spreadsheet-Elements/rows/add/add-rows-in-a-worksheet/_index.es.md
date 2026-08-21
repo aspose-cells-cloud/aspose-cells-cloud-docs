@@ -4,7 +4,7 @@ ArticleTitle: "Agregar varias filas a una hoja de cálculo de Excel mediante la 
 second_title: "Documentos"
 linktitle: "Filas"
 type: docs
-url: /rows/add/rows/
+url: /es/rows/add/rows/
 keywords: "Aspose.Cells Cloud, insertar filas, hoja de cálculo de Excel, API REST, SDK, agregar varias filas"
 description: "Aprenda a utilizar la API REST de Aspose.Cells Cloud para insertar varias filas en una hoja de cálculo de Excel. Esta guía cubre el punto de conexión, los parámetros de solicitud, ejemplos de comandos cURL y ejemplos de uso del SDK."
 weight: 20

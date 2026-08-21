@@ -1,7 +1,7 @@
 ---
 title: "删除条件格式 – Aspose.Cells Cloud API 参考"
 type: docs
-url: /conditional-formattings/delete/
+url: /zh/conditional-formattings/delete/
 aliases:
   - /remove-conditional-formatting/
 keywords: "Aspose.Cells, 条件格式, 删除, API, Excel, 云"

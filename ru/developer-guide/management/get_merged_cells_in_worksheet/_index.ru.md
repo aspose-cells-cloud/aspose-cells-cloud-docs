@@ -4,7 +4,7 @@ ArticleTitle: "Получение объединённых ячеек в лис�
 second_title: "Документ"
 linktitle: "GetMergedCellsInWorksheet"
 type: docs
-url: /cells/spreadsheet/mergedcells
+url: /ru/cells/spreadsheet/mergedcells
 aliases: []
 keywords: "Aspose Cells, объединённые ячейки, лист, API"
 description: "Получить все объединённые области ячеек из локального файла электронной таблицы."

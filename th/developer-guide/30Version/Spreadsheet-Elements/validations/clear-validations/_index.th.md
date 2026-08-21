@@ -3,7 +3,7 @@ title: "ลบการตรวจสอบข้อมูลทั้งหม
 second_title: "เอกสารประกอบ"
 linktitle: "ลบ"
 type: docs
-url: /validations/clear/
+url: /th/validations/clear/
 keywords: "Aspose.Cells Cloud, ลบการตรวจสอบข้อมูลของแผ่นงาน, Excel, REST API, การตรวจสอบสเปรดชีต, API"
 description: "ลบกฎการตรวจสอบข้อมูลทั้งหมดออกจากแผ่นงานในไฟล์ Excel โดยใช้ Aspose.Cells Cloud REST API รวมถึงขั้นตอนการตรวจสอบสิทธิ์ รายละเอียดคำขอ ตัวอย่าง cURL โครงสร้างการตอบกลับ การจัดการข้อผิดพลาด และตัวอย่างโค้ด SDK"
 weight: 10

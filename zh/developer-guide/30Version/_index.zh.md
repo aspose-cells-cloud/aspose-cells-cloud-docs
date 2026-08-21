@@ -4,7 +4,7 @@ ArticleTitle: "Aspose.Cells Cloud 3.0 REST API 开发者指南 — Excel 工作�
 second_title: "文档"
 type: docs
 url: /zh/developer-guide-3.0/
-aliases: [/zh/developer-guide/v3.0/,/zh/developer-guide-v3.0/]
+aliases: [  /zh/developer-guide/v3.0/ , /zh/developer-guide-v3.0/ ]
 keywords: "Aspose.Cells Cloud, Excel REST API, 工作簿转换, 图表 API, 数据导入, 导出, PDF, CSV, JSON, 开发者指南"
 description: "学习如何使用 Aspose.Cells Cloud 3.0 REST API 实现 Excel 工作簿的创建、转换、样式设置、图表、表格等功能。包含代码示例及最佳实践提示。"
 weight: 150

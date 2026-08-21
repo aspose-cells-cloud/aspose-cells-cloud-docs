@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man konverterar ett lokalt kalkylbladsintervall till en CSV-fil: Steg-för-steg-guide"
 linktype: "Konvertera intervall till CSV"
 type: docs
-url: /convert-range-to-csv/
+url: /sv/convert-range-to-csv/
 keywords: "Aspose Cells, konvertera intervall till CSV, Excel till CSV, Excel API, molnkalkylblad, konvertera, Excel, CSV, Aspose.Cells, Cloud API"
 description: "Lär dig hur du konverterar ett specifikt intervall från en lokal Excel-arbetsbok (XLSX eller XLS) till CSV med Aspose.Cells Cloud REST API. Inkluderar begärsyntax, parametrar, felhantering och SDK-exempel."
 ---

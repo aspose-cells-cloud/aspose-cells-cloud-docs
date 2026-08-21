@@ -3,8 +3,8 @@ title: "Regrouper des lignes dans une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Regrouper"
 type: docs
-url: /rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
+url: /fr/rows/group/
+aliases: [  /fr/group-rows-in-excel-worksheet/ ]
 keywords: "regrouper des lignes, Excel, Aspose.Cells Cloud, API REST, SDK, feuille de calcul, API Excel"
 description: "Regrouper des lignes dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Prend en charge plusieurs SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) pour une intégration simplifiée."
 weight: 60

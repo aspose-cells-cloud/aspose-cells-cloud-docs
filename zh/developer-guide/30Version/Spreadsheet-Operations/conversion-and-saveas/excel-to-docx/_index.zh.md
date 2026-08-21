@@ -3,7 +3,7 @@ title: "Excel 转 Docx"
 second_title: "文档"
 linktitle: "Excel 转 Docx"
 type: docs
-url: convert-excel-file-to-docx-file/
+url: /zhconvert-excel-file-to-docx-file/
 keywords: "Excel 转 Docx 转换、Aspose.Cells Cloud、REST API、电子表格转换、文档生成"
 description: "使用 Aspose.Cells Cloud REST API 将 Excel 电子表格转换为 DOCX 文档。支持多种 SDK 和编程语言，实现无缝集成。"
 weight: 90

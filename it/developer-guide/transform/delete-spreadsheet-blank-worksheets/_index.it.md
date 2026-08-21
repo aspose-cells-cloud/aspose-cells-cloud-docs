@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Elimina tutti i fogli vuoti in Excel – Guida alla rimozione dei fogli vuoti"
 linktype: "Elimina fogli di calcolo vuoti"
 type: docs
-url: /delete-spreadsheet-blank-worksheets/
+url: /it/delete-spreadsheet-blank-worksheets/
 keywords: "Aspose.Cells Cloud, elimina fogli di calcolo vuoti, Excel API, pulizia del workbook, ottimizzazione del foglio di calcolo"
 description: "Utilizza l’API Aspose.Cells Cloud per eliminare automaticamente i fogli di calcolo vuoti o bianchi dai file Excel. Scopri come identificare e rimuovere i fogli privi di dati, formule, grafici o oggetti, migliorando le prestazioni e l’organizzazione del workbook."
 weight: 100

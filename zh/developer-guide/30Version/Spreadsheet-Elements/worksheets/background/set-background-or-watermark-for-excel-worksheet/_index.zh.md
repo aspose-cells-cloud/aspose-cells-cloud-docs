@@ -4,8 +4,8 @@ ArticleTitle: "为 Excel 工作表设置背景 – Aspose.Cells Cloud API 指南
 second_title: "文档"
 linktitle: "添加"
 type: docs
-url: /worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
+url: /zh/worksheets/background/add/
+aliases: [  /zh/set-background-or-watermark-for-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, 工作表, 背景, REST API, SDK, 添加图像"
 description: "了解如何使用 Aspose.Cells Cloud REST API 为 Excel 工作表添加背景图像（PNG、JPEG、BMP）。包括端点、必需参数、认证步骤、cURL 示例及 SDK 代码示例。"
 weight: 180

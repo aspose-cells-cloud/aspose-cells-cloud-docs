@@ -4,7 +4,7 @@ secondtitle: "文档"
 articletitle: "基于云端的 Excel 文件管理解决方案 — Aspose.Cells 复制文件 API 批量复制功能详解"
 linktitle: "复制文件"
 type: docs
-url: /copy-file/
+url: /zh/copy-file/
 keywords: "Aspose.Cells, CopyFile API, Excel 文件复制, 云存储, REST API"
 description: "了解如何使用 Aspose.Cells Cloud CopyFile API 高效地复制 Excel 文件，并在不同存储位置之间进行管理。"
 weight: 100

@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloudにおけるローカルファイル処理とクラウドファイル処理の違いとは？"
 linktitle: "ローカルファイル処理 vs. クラウドファイル処理"
 type: docs
-url: /learn/local-file-processing-vs-cloud-file-processing/
+url: /ja/learn/local-file-processing-vs-cloud-file-processing/
 description: "Aspose.Cells Cloudのローカルファイル処理とクラウドファイル処理を比較：ストレージ、コスト、セキュリティ、および一般的な利用シナリオ。ワークフローに適したアプローチを理解しましょう。"
 keywords: "Aspose.Cells Cloud、ローカルファイル処理、クラウドファイル処理、スプレッドシート変換、API"
 weight: 10

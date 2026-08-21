@@ -3,7 +3,7 @@ title: "Bir çalışma sayfası için sayfa ayarını ayarla"
 second_title: "Belge"
 linktitle: "Sayfa ayarını ayarla"
 type: docs
-url: /set-page-setup/
+url: /tr/set-page-setup/
 keywords: "Aspose.Cells, Excel, sayfa ayarı, REST API, çalışma sayfası, bulut SDK'sı"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfası için sayfa ayarını nasıl ayarlayacağınızı öğrenin. İstek detaylarını, güvenli HTTPS cURL örneğini, yanıt durum kodlarını ve birden fazla programlama dili için SDK kod parçacıklarını içerir."
 weight: 20

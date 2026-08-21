@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Rechercher du texte dans des classeurs Excel distants – Trouver des données spécifiques"
 linktitle: "Rechercher du contenu dans un classeur distant"
 type: docs
-url: /search-content-in-remote-spreadsheet/
+url: /fr/search-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells, API de recherche Excel, classeur cloud, recherche de texte, REST"
 description: "Recherchez du texte, des nombres ou des formules dans des fichiers Excel stockés dans un espace de stockage cloud à l’aide d’Aspose.Cells Cloud. Prend en charge les requêtes insensibles à la casse, la sélection de dossiers et les classeurs protégés par mot de passe."
 weight: 100

@@ -3,8 +3,8 @@ title: "การลบแผ่นงาน Excel หลายแผ่น"
 second_title: "เอกสาร"
 linktitle: "หลายแผ่นงาน"
 type: docs
-url: /worksheets/delete-multiple/
-aliases: [/delete-excel-worksheets/]
+url: /th/worksheets/delete-multiple/
+aliases: [  /th/delete-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, ลบแผ่นงานหลายแผ่น, Excel API, REST API, v3.0, ลบแผ่นงาน"
 description: "เรียนรู้วิธีการลบแผ่นงานหลายแผ่นจากสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API (v3.0) ซึ่งประกอบด้วย endpoint ที่ปลอดภัยผ่าน HTTPS, พารามิเตอร์ที่จำเป็น, ตัวอย่าง cURL ที่ถูกต้อง และตัวอย่าง SDK สำหรับภาษาโปรแกรมต่างๆ"
 weight: 20

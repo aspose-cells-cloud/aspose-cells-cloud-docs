@@ -3,7 +3,7 @@ title: "Excel 워크시트에 빈 열 추가하기 - Aspose.Cells Cloud API"
 second_title: "문서"
 linktitle: "열 추가"
 type: docs
-url: /columns/add/
+url: /ko/columns/add/
 aliases:
   - /add-an-empty-column-in-an-excel-worksheet/
   - /add-an-empty-column-in-a-worksheet/

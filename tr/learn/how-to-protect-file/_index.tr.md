@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud ile bir dosyayı nasıl koruyabilirsiniz?"
 linktype: "Aspose.Cells Cloud ile bir Excel dosyasını nasıl koruyabilirsiniz?"
 type: docs
-url: /how-to-protect-file
+url: /tr/how-to-protect-file
 description: "Aspose.Cells Cloud ile bir Excel dosyasını nasıl koruyabileceğiniz."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Tablo İşleme, PDF, CSV, Json, Markdown, Aspose.Cells Cloud ile dosya koruma

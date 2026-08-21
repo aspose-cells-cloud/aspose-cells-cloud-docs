@@ -3,7 +3,7 @@ title: "حذف جميع قواعد التحقق من البيانات في ور�
 second_title: "التوثيق"
 linktitle: "حذف"
 type: docs
-url: /validations/clear/
+url: /ar/validations/clear/
 keywords: "Aspose.Cells Cloud, حذف قواعد التحقق من البيانات في ورقة العمل, Excel, REST API, التحقق من صحة جدول البيانات, API"
 description: "إزالة جميع قواعد التحقق من البيانات من ورقة عمل في ملف Excel باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن خطوات المصادقة، تفاصيل الطلب، مثال باستخدام cURL، مخطط الاستجابة، معالجة الأخطاء، ومقتطفات SDK."
 weight: 10

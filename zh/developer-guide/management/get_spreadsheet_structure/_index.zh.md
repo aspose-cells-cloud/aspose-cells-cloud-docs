@@ -4,7 +4,7 @@ ArticleTitle: "GetSpreadsheetStructure – Aspose.Cells Cloud"
 second_title: "文档"
 linktitle: "GetSpreadsheetStructure"
 type: docs
-url: /cells/spreadsheet/structure
+url: /zh/cells/spreadsheet/structure
 aliases: []
 keywords: "Aspose.Cells, 电子表格结构, API"
 description: "将 Excel 工作簿的核心元数据、工作表、表格、数据透视表、图表、形状及其他信息结构化转换为 JObject 类型的 JSON 对象。"

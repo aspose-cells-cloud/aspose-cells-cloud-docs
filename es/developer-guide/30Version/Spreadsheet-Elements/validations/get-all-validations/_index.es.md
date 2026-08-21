@@ -3,7 +3,7 @@ title: "Obtener todas las validaciones de hoja de cálculo de una hoja de Excel"
 second_title: "Document"
 linktitle: "Obtener todas"
 type: docs
-url: /validations/get-all/
+url: /es/validations/get-all/
 keywords: "Aspose.Cells Cloud, Excel, validaciones de hoja de cálculo, API REST, obtener todas las validaciones, SDKs"
 description: "Recuperar todas las validaciones de hoja de cálculo de una hoja de Excel mediante la API REST de Aspose.Cells Cloud. Admite múltiples SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) para una integración rápida."
 weight: 10

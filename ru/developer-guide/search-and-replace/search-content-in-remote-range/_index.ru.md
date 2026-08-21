@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Поиск текста в удаленных файлах Excel — извлечение данных из конкретных диапазонов"
 linktype: "search-content-in-remote-range"
 type: docs
-url: /search-content-in-remote-range/
+url: /ru/search-content-in-remote-range/
 keywords: "Aspose.Cells, Excel API, поиск текста, удаленный диапазон, облачная электронная таблица, REST API, обнаружение данных"
 description: "Поиск текста, чисел или формул в заданном диапазоне книги Excel, хранящейся в Aspose Cloud."
 weight: 100

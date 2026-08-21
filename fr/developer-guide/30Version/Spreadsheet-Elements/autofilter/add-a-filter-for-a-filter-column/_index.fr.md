@@ -3,8 +3,8 @@ title: "Ajouter un filtre dans une feuille Excel"
 second_title: "Document"
 linktitle: "Ajouter un filtre"
 type: docs
-url: /autofilter/add-filter/
-aliases: [/add-a-filter-for-a-filter-column/]
+url: /fr/autofilter/add-filter/
+aliases: [  /fr/add-a-filter-for-a-filter-column/ ]
 keywords: "Aspose.Cells, Cloud, Excel, AutoFilter, Ajouter un filtre, REST API, SDK"
 description: "Découvrez comment ajouter un filtre automatique à une colonne d'une feuille Excel à l'aide de l'API REST Aspose.Cells Cloud. Inclut des exemples cURL, des exemples SDK et un guide des paramètres."
 weight: 60

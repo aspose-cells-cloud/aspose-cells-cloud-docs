@@ -3,8 +3,8 @@ title: "Hinzufügen einer Pivot-Tabelle in einem Excel-Arbeitsblatt"
 second_title: "Dokument"
 linktitle: Hinzufügen
 type: docs
-url: /pivot-tables/add/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+url: /de/pivot-tables/add/
+aliases: [  /de/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Pivot-Tabelle hinzufügen, Excel-Arbeitsblatt, Aspose.Cells Cloud, REST-API, SDK, Excel-Pivot-Tabelle"
 description: "Verwenden Sie die Aspose.Cells Cloud REST-API, um eine Pivot-Tabelle in ein Excel-Arbeitsblatt einzufügen. Verfügbar über SDKs für C#, Java, PHP, Python, Node.js, Android, Swift, Perl, Go."
 weight: 30

@@ -3,8 +3,8 @@ title: "在 Excel 文件中搜索和替换文本内容"
 second_title: "文档"
 linktype: "搜索与替换"
 type: docs
-url: /search-and-replace/
-aliases: [/working-with-text/, /text/]
+url: /zh/search-and-replace/
+aliases: [  /zh/working-with-text/ , /zh/text/ ]
 description: "了解如何使用 Aspose.Cells Cloud REST API 在 Excel 工作簿和工作表中搜索并替换文本。包含请求格式、.NET、Java、Python 的示例代码及错误处理。"
 keywords: "Aspose.Cells Cloud, Excel, 搜索与替换, REST API, .NET, Java, Python"
 weight: 20

@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "基于云的 Excel 管理 — 在 Aspose.Cells Cloud 中快速检索文件版本历史记录"
 linktitle: "获取文件版本"
 type: docs
-url: /get-file-versions/
+url: /zh/get-file-versions/
 keywords: "Aspose Cells API，文件版本，电子表格版本控制，云存储 API，REST，Excel 文件历史记录"
 description: "获取存储在 Aspose.Cells Cloud 中任意 Excel 文件的完整版本历史记录列表。支持存储位置选择、身份验证及详细错误代码说明。"
 weight: 100

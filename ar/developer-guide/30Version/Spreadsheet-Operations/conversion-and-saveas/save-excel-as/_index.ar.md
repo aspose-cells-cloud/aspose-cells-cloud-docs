@@ -3,7 +3,7 @@ title: "حفظ ملف مصنف Excel – واجهة برمجة تطبيقات As
 second_title: "مستند"
 linktitle: "حفظ كـ"
 type: docs
-url: /save-an-excel-file-as-other-formats-files/
+url: /ar/save-an-excel-file-as-other-formats-files/
 aliases:
   - /convert-excel-workbook-to-different-file-formats/
   - /saveas-other-formats/

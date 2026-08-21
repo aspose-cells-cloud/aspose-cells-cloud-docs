@@ -1,7 +1,7 @@
 ---
 title: "تحديث محور الفئة في المخطط"
 type: docs
-url: /charts/category-axis/update/
+url: /ar/charts/category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, مخطط, محور الفئة, REST API, Excel, Cloud SDK"
 description: "تحديث محور الفئة في مخطط داخل ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API."

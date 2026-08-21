@@ -3,8 +3,8 @@ title: "Excel AutoFilter ile Çalışma"
 second_title: "Belge"
 linktitle: "AutoFilter"
 type: docs
-url: /autofilter/
-aliases: [/working-with-autofilter/]
+url: /tr/autofilter/
+aliases: [  /tr/working-with-autofilter/ ]
 keywords: "AutoFilter, Aspose.Cells Cloud, Excel filtresi, renk filtresi, tarih filtresi, dinamik filtre, sayı filtresi, metin filtresi, boşluk filtresi, özel filtre"
 description: "Aspose.Cells Cloud API'lerini kullanarak Excel AutoFilter'ları (renk, tarih, dinamik, sayı, metin, boşluk) ekleme, düzenleme ve silme yöntemlerini öğrenin. Birden fazla programlama dilinde kod örnekleri."
 weight: 100

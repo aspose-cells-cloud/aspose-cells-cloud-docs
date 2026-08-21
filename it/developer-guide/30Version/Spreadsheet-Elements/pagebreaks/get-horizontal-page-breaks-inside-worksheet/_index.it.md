@@ -3,8 +3,8 @@ title: "Ottenere le interruzioni di pagina orizzontali"
 second_title: "Documento"
 linktitle: "Ottenere le interruzioni di pagina orizzontali"
 type: docs
-url: /page-breaks/get-horizontal-page-breaks/
-aliases: [/get-horizontal-page-breaks-inside-worksheet/]
+url: /it/page-breaks/get-horizontal-page-breaks/
+aliases: [  /it/get-horizontal-page-breaks-inside-worksheet/ ]
 keywords: "interruzioni di pagina orizzontali, Aspose.Cells Cloud, API REST, foglio di calcolo Excel, SDK"
 description: "Recupera le interruzioni di pagina orizzontali da un foglio di calcolo Excel tramite l'API Aspose.Cells Cloud. Include l'endpoint, i parametri, un esempio cURL, il formato della risposta e frammenti di codice SDK per C#, Java, Python e altri."
 ArticleTitle: "Ottenere le interruzioni di pagina orizzontali - Documentazione API Aspose.Cells Cloud"

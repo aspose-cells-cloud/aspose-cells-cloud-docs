@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud Dosya İndirme API'si – Bulutta Hızlı Dosya İndirme Arayüzü"
 linktitle: "Dosya İndirme API'si"
 type: docs
-url: /download-file/
+url: /tr/download-file/
 keywords: "Aspose.Cells, Dosya İndirme API'si, Excel bulut depolama, REST API, dosya indirme, PDF, CSV, SDK"
 description: "Aspose.Cells Cloud depolama alanından Excel, PDF, CSV ve diğer dosyaları Download File API'si (v4.0) ile indirin. Endpoint, parametreler, kimlik doğrulama detayları ve kod örnekleri içerir."
 weight: 100

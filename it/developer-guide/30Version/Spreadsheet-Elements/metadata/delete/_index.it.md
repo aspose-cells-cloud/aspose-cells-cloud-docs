@@ -3,7 +3,7 @@ title: "Elimina i metadati dai file Excel"
 second_title: "Documento"
 linktitle: "Elimina senza utilizzare l'archiviazione"
 type: docs
-url: /metadata/delete/
+url: /it/metadata/delete/
 keywords: "Aspose.Cells, eliminazione metadati, API Excel, proprietà del workbook"
 description: "Elimina i metadati del workbook (autore, titolo, personalizzati) tramite l'API Aspose.Cells Cloud. Include endpoint, autenticazione, parametri e esempi cURL e SDK."
 weight: 55

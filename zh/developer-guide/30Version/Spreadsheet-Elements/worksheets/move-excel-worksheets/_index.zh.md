@@ -3,8 +3,8 @@ title: "移动 Excel 工作表 – Aspose.Cells Cloud API (v3.0)"
 second_title: "文档"
 linktitle: "移动"
 type: docs
-url: /worksheets/move/
-aliases: [/move-excel-worksheets/]
+url: /zh/worksheets/move/
+aliases: [  /zh/move-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, 移动工作表, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
 description: "了解如何使用 Aspose.Cells Cloud API (v3.0) 将 Excel 工作表移动到新位置。包含端点、必需参数、cURL 示例以及 C#、Java、Python 等语言的 SDK 代码。"
 weight: 20

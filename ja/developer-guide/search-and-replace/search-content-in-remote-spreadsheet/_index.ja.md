@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "リモート Excel スプレッドシート内のテキストを検索 – 特定のデータを抽出"
 linktype: "リモートスプレッドシートの内容を検索"
 type: docs
-url: /search-content-in-remote-spreadsheet/
+url: /ja/search-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells, Excel 検索 API, クラウドスプレッドシート, テキスト検索, REST"
 description: "Aspose.Cells Cloud を使用してクラウドストレージに保存された Excel ファイル内にあるテキスト、数値、数式を検索します。大文字・小文字を区別しない検索、フォルダー選択、パスワード保護されたワークブックのサポートを提供します。"
 weight: 100

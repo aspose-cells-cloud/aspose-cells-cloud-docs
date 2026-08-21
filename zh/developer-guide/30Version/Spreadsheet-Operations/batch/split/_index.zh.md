@@ -2,7 +2,7 @@
 title: "批量拆分"
 second: "文档"
 type: docs
-url: /batch/split
+url: /zh/batch/split
 keywords: "批量拆分, Aspose.Cells Cloud, REST API, Excel, PDF, CSV, JSON, 电子表格, 云 SDK"
 description: "Aspose.Cells Cloud 批量拆分 API 的文档，支持将电子表格文件拆分为 PDF、CSV 或 JSON 等多种格式。包含请求详情、示例 cURL 命令以及各编程语言的 SDK 使用方法。"
 weight: 100

@@ -3,8 +3,8 @@ title: "Eliminar hoja de cálculo"
 second_title: "Documentos"
 linktype: "Una hoja de cálculo"
 type: docs
-url: /worksheets/delete-worksheet/
-aliases: [/remove-worksheets-from-excel-workbooks/]
+url: /es/worksheets/delete-worksheet/
+aliases: [  /es/remove-worksheets-from-excel-workbooks/ ]
 keywords: "Aspose.Cells Cloud, Eliminar hoja de cálculo, Excel, Hoja de cálculo, API REST"
 description: "Elimine una hoja de cálculo de un libro de Excel utilizando la API REST de Aspose.Cells Cloud. Compatible con SDK para C#, Java, PHP, Ruby, Node.js, Python, Perl, Go y cURL."
 weight: 20

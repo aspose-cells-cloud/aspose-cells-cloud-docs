@@ -4,7 +4,7 @@ ArticleTitle: "Converti Intervallo in CSV – Aspose.Cells Cloud API"
 second_title: "Documento"
 linktitle: "Converti Intervallo in CSV"
 type: docs
-url: /cells/convert/range/csv
+url: /it/cells/convert/range/csv
 aliases: []
 keywords: "convertire, csv, intervallo, Aspose.Cells"
 description: "Converte un intervallo di un foglio di calcolo presente su un disco locale in un file CSV."

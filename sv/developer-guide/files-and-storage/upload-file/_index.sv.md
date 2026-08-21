@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud-filuppladdnings-API – ett gränssnitt för snabb uppladdning av filer i molnet"
 linktype: "Upload File"
 type: docs
-url: /upload-file/
+url: /sv/upload-file/
 keywords: "Aspose.Cells, filuppladdning, Excel-API, molnlagring, REST-API"
 description: "Guide för filuppladdning med Aspose.Cells Cloud-API, inklusive begärparametrar, HTTP-statuskoder, felhantering och kodexempel."
 weight: 100

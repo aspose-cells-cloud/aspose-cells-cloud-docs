@@ -3,7 +3,7 @@ title: "从 Excel 文件获取元数据"
 second_title: "文档"
 linktitle: "无需使用存储服务获取"
 type: docs
-url: /metadata/get/
+url: /zh/metadata/get/
 keywords: "Aspose.Cells, Excel, 元数据, REST API, 云 SDK"
 description: "使用 Aspose.Cells Cloud REST API 从 Excel 工作簿中检索内置或自定义元数据。包含请求格式、参数、示例 SDK 代码及错误处理说明。"
 weight: 23

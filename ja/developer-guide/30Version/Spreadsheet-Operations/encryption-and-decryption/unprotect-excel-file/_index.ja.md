@@ -3,7 +3,7 @@ title: "Excel ワークブックの保護を解除 – Aspose.Cells Cloud API"
 second_title: "ドキュメント"
 linktitle: "Excel ファイルの保護を解除"
 type: docs
-url: /excel-file-unprotect/
+url: /ja/excel-file-unprotect/
 aliases:
   - /unprotect-excel-workbooks/
   - /workbook/unprotect/

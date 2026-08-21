@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud SDK for Node.js：変換、結合、分割、保護、検索、置換など"
 linktitle: "Aspose.Cells Cloud SDK for Node.js"
 type: docs
-url: /available-sdks/aspose-cells-cloud-node/
+url: /ja/available-sdks/aspose-cells-cloud-node/
 description: "Aspose.Cells Cloud SDK for Node.js は、真のクロスプラットフォーム対応を提供します。1つのインポートで、Windows、Linux、macOS の開発者が同じ使いやすい API にアクセスでき、すべての Excel オブジェクトを作成・変換・結合・分割・保護・操作できます。Office のインストールは不要で、プラットフォーム固有の調整も不要です。"
 weight: 30
 kwords: Node.js, Node.js SDK, Excel SDK for Node.js, Cloud SDK for Node.js, REST, チャート, ピボットテーブル, テーブル/リスト オブジェクト, スプレッドシート変換, PDF, CSV, JSON, Markdown, 結合, 分割, 保護, 検索, 置換

@@ -3,7 +3,7 @@ title: "ワークシート検証の削除 – Aspose.Cells Cloud"
 second_title: "ドキュメント"
 linktitle: "削除"
 type: docs
-url: /validations/delete/
+url: /ja/validations/delete/
 keywords: "削除, ワークシート検証, Aspose.Cells Cloud, Excel API"
 description: "Aspose.Cells Cloud REST API を使用して Excel ファイルからワークシート検証を削除する方法を学びます。エンドポイント、パラメータ、認証詳細、cURL の使用例、エラーハンドリング、および SDK のコードスニペットが含まれます。"
 weight: 10

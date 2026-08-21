@@ -4,7 +4,7 @@ ArticleTitle: "Obtener hojas de cálculo con hoja de cálculo local – Aspose.C
 second_title: "Documentos"
 linktype: "Obtener hojas de cálculo con hoja de cálculo local"
 type: docs
-url: /cells/spreadsheet/worksheets
+url: /es/cells/spreadsheet/worksheets
 aliases: []
 keywords: "Aspose.Cells, hojas de cálculo, hoja de cálculo local, API"
 description: "Obtiene una lista completa de las hojas de cálculo de la hoja de cálculo local activa actualmente."

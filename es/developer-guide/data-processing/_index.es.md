@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Procesamiento de datos de hojas de cálculo – Unir, dividir e importar"
 linktitle: "Procesamiento de datos"
 type: docs
-url: /data-processing/
+url: /es/data-processing/
 keywords: "Aspose.Cells Cloud, procesamiento de datos de hojas de cálculo, unir Excel, dividir Excel, importar CSV, importar JSON, API"
 description: "Guía detallada para importar datos CSV/JSON, unir libros de Excel remotos y dividir hojas de cálculo grandes utilizando la API REST de Aspose.Cells Cloud, incluyendo ejemplos de solicitudes y respuestas."
 weight: 30

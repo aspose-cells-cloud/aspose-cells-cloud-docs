@@ -4,8 +4,8 @@ ArticleTitle: "Изменение ширины столбцов внутри д�
 second_title: "Документ"
 linktitle: "Ширина столбца"
 type: docs
-url: /ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
+url: /ru/ranges/update/column-width/
+aliases: [  /ru/change-widths-of-columns-inside-the-range/ ]
 keywords: "Aspose.Cells, ширина столбца, REST API, Excel, SDK, диапазон, облако"
 description: "Узнайте, как изменить ширину столбцов внутри диапазона с помощью Aspose.Cells Cloud REST API или SDK (C#, Java, Python и др.). Включает cURL, подробную информацию о запросе и ответе, а также шаги аутентификации."
 weight: 74

@@ -3,7 +3,7 @@ title: "Task API'de Destek İsteği Dosyası"
 second_title: "Belge"
 type: docs
 url: /tr/tasks/support-request-file/
-aliases: [/tr/support-request-file-in-task-api/]
+aliases: [  /tr/support-request-file-in-task-api/ ]
 keywords: "Aspose.Cells, REST API, Excel, Bulut"
 description: "Aspose.Cells Cloud API, Excel çalışma kitapları için istek dosyalarının görev tabanlı işlenmesini sağlar."
 weight: 10

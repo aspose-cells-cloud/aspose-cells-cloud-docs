@@ -3,7 +3,7 @@ title: "รับการตรวจสอบความถูกต้อง
 second_title: "เอกสาร"
 linktitle: "รับทั้งหมด"
 type: docs
-url: /validations/get-all/
+url: /th/validations/get-all/
 keywords: "Aspose.Cells Cloud, Excel, worksheet validations, REST API, Get all validations, SDKs"
 description: "ดึงข้อมูลการตรวจสอบความถูกต้องของ worksheet ทั้งหมดจาก Excel worksheet โดยใช้ Aspose.Cells Cloud REST API รองรับ SDK หลายภาษา (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) เพื่อการผสานรวมอย่างรวดเร็ว"
 weight: 10

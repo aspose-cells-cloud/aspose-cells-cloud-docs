@@ -3,7 +3,7 @@ title: "คัดลอกคอลัมน์ในสมุดงาน Excel
 second_title: "เอกสาร"
 linktype: "คัดลอก"
 type: docs
-url: /columns/copy/
+url: /th/columns/copy/
 aliases:
   [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
 keywords: "Aspose.Cells, คัดลอกคอลัมน์, Excel API, REST, Cloud SDK, cURL, C#, Java, Python, Ruby, Node.js, Go, Perl"

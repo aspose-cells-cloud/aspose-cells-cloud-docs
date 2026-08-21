@@ -4,7 +4,7 @@ ArticleTitle: "นำรูปภาพเข้าสู่แผ่นงา�
 second_title: "เอกสาร"
 linktitle: "นำรูปภาพเข้า"
 type: docs
-url: /import-picture-into-excel-worksheet/
+url: /th/import-picture-into-excel-worksheet/
 aliases:
   - /import-picture-into-worksheet/
   - /import-data/picture/

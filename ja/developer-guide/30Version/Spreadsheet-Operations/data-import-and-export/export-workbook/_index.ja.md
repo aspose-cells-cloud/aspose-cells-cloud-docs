@@ -3,8 +3,8 @@ title: "ワークブックのエクスポート"
 second_title: "ドキュメント"
 linktitle: "ワークブック"
 type: docs
-url: /export-excel-to-different-formats/
-aliases: [/export/excel-to-different-formats/]
+url: /ja/export-excel-to-different-formats/
+aliases: [  /ja/export/excel-to-different-formats/ ]
 keywords: "Aspose.Cells Cloud, Excel エクスポート, ワークブック変換, PDF, CSV, JSON, 画像形式, スプレッドシート API, XLSX, ODS, PNG"
 description: "Aspose.Cells Cloud REST API および SDK を使用して、Excel ワークブックを PDF、CSV、JSON、およびさまざまな画像形式など、複数の形式にエクスポートする手順ごとのガイド。"
 weight: 20

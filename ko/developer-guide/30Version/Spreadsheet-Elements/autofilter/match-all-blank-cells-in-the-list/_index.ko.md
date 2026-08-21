@@ -3,8 +3,8 @@ title: "Excel 워크시트의 모든 빈 셀 일치시키기"
 ArticleTitle: "Excel 워크시트의 모든 빈 셀 일치시키기 – Aspose.Cells Cloud API 가이드"
 second_title: "문서"
 linktype: "docs"
-url: /autofilter/match-all-blank/
-aliases: [/match-all-blank-cells-in-the-list/]
+url: /ko/autofilter/match-all-blank/
+aliases: [  /ko/match-all-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells, 빈 셀, AutoFilter, REST API, Excel"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 빈 셀을 필터링하고 일치시키는 방법을 알아보세요. 엔드포인트, 매개변수, 인증 단계, cURL 예제, C#, Java, Python 등 다양한 언어의 SDK 스니펫을 포함합니다."
 weight: 100

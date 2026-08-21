@@ -4,7 +4,7 @@ description: "Объединение файлов электронных таб�
 keywords: "Aspose.Cells, объединение таблиц, удалённая папка, API, PDF, CSV, JSON, XLSX, ODS, XPS"
 weight: 100
 type: docs
-url: /merge-spreadsheets-in-remote-folder/
+url: /ru/merge-spreadsheets-in-remote-folder/
 ---
 
 Объединение нескольких файлов электронных таблиц, расположенных в удалённой папке облачного хранилища Aspose Cloud, в один выходной файл. Операция выполняется полностью в облаке, исключая необходимость загрузки исходных файлов локально. Поддерживается более 30 выходных форматов (PDF, CSV, JSON, XLSX, ODS, XPS и др.).

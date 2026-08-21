@@ -4,7 +4,7 @@ second title: "Dokument"
 linktitle: "Sortera"
 type: docs
 keywords: "Sortera intervall, Aspose.Cells Cloud, REST API, Kalkylark, Excel, API"
-url: /ranges/sort/
+url: /sv/ranges/sort/
 description: Tillhandahåller ett API för att sortera ett intervall av celler i en arbetsbok med Aspose.Cells Cloud.
 weight: 20
 ---

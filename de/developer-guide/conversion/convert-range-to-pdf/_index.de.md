@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie lokalen Tabellendatenbereich in eine PDF-Datei: Schritt-für-Schritt-Anleitung"
 linktitle: "Bereich in PDF konvertieren"
 type: docs
-url: /convert-range-to-pdf/
+url: /de/convert-range-to-pdf/
 keywords: "Aspose.Cells Cloud, Excel-Bereich in PDF konvertieren, Excel zu PDF, Cloud-Konvertierung"
 description: "Konvertieren Sie einen bestimmten Bereich aus einer lokalen Excel-Tabelle mit der REST-API von Aspose.Cells Cloud in PDF."
 weight: 100

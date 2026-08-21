@@ -3,7 +3,7 @@ title: "Excel Çalışma Sayfasında Sütunları Kopyalama"
 second_title: "Belge"
 linktitle: "Kopyala"
 type: docs
-url: /columns/copy/
+url: /tr/columns/copy/
 aliases:
   [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
 keywords: "Aspose.Cells, sütunları kopyalama, Excel API, REST, Bulut SDK’sı, cURL, C#, Java, Python, Ruby, Node.js, Go, Perl"

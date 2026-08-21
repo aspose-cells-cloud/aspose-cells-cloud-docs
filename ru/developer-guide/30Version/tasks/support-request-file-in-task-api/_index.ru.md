@@ -2,8 +2,8 @@
 title: "Файл запроса в Task API"
 second_title: "Документ"
 type: docs
-url: /tasks/support-request-file/
-aliases: [/support-request-file-in-task-api/]
+url: /ru/tasks/support-request-file/
+aliases: [  /ru/support-request-file-in-task-api/ ]
 keywords: "Aspose.Cells, REST API, Excel, облако"
 description: "Aspose.Cells Cloud API позволяет выполнять обработку файлов запросов на основе задач для рабочих книг Excel."
 weight: 10

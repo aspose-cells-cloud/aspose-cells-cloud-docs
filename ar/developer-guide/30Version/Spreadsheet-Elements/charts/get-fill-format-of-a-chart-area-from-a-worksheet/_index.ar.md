@@ -1,8 +1,8 @@
 ---
 title: "احصل على تنسيق ملء منطقة المخطط – واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0)"
 type: docs
-url: /charts/chart-area/fill-format/get/
-aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
+url: /ar/charts/chart-area/fill-format/get/
+aliases: [  /ar/get-fill-format-of-a-chart-area-from-a-worksheet/ ]
 weight: 70
 keywords:
   - "Aspose.Cells"

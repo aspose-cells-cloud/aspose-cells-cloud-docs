@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So fügen Sie Arbeitsblätter zu Excel hinzu – Einfügen neuer Blätter an spezifischen Positionen"
 linktitle: "Arbeitsblatt zu Tabellendokument hinzufügen"
 type: docs
-url: /add-worksheet-to-spreadsheet/
+url: /de/add-worksheet-to-spreadsheet/
 keywords: "Excel, Arbeitsblatt hinzufügen, Aspose Cells API, Tabellendokument, Cloud-API, Blatttyp, Blattposition"
 description: "Erfahren Sie, wie Sie programmgesteuert ein neues Arbeitsblatt, Diagrammblatt oder Makroblatt in eine Excel-Arbeitsmappe mit der Aspose.Cells Cloud API hinzufügen. Steuern Sie Blatttyp, Name und Einfügeposition mit einem einzigen REST-Aufruf."
 weight: 100

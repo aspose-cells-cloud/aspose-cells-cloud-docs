@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "Aspose.Cells Cloud SDK لـ PHP – تحويل ودمج وتقسيم وحماية ملفات إكسل"  
 linktitle: "Aspose.Cells Cloud SDK لـ PHP"  
 type: docs  
-url: /available-sdks/aspose-cells-cloud-php/  
+url: /ar/available-sdks/aspose-cells-cloud-php/
 description: "حمّل Aspose.Cells Cloud SDK لـ PHP (الإصدار 24.3). تعلّم كيفية التثبيت عبر Composer، والمصادقة، وتحويل ملفات XLSX إلى PDF/CSV، ودمج ملفات العمل، وحماية الأوراق، وأكثر من ذلك – كل ذلك دون الحاجة لتثبيت Office."  
 keywords: "Aspose.Cells، السحابة، PHP، SDK، إكسل، تحويل، دمج، تقسيم، حماية"  
 weight: 30  

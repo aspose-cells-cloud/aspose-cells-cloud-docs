@@ -3,8 +3,8 @@ title: "ضبط نمط النطاق – واجهة برمجة تطبيقات Aspo
 second_title: "التوثيق"
 linktitle: "ضبط نمط النطاق"
 type: docs
-url: /ranges/update/style/
-aliases: [/set-the-style-of-the-range/]
+url: /ar/ranges/update/style/
+aliases: [  /ar/set-the-style-of-the-range/ ]
 keywords: "Aspose.Cells، نمط النطاق، واجهة برمجة التطبيقات، إكسل، السحابة"
 description: "تعرّف على كيفية ضبط نمط نطاق خلايا في ورقة عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. يتضمن خطوات المصادقة، وتنسيق الطلب، وتفاصيل الاستجابة، وأمثلة لـ SDKs لغات البرمجة مثل .NET وJava وPython وGo وغيرها."
 weight: 70

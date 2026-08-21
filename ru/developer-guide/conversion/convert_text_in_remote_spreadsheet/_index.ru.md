@@ -4,7 +4,7 @@ ArticleTitle: "Преобразование текста в удалённой �
 second_title: "Документация"
 linktitle: "Преобразование текста в удалённой таблице"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
+url: /ru/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
 aliases: []
 keywords: "Aspose.Cells, преобразование текста, API"
 description: "Преобразует текст в указанном диапазоне листа, включая преобразование чисел, замену символов, обработку разрывов строк и нормализацию символов с диакритикой."

@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "2024 Yeni Özellikler"
 type: docs
 weight: 20
-url: /new-features/2024/
+url: /tr/new-features/2024/
 keywords: "Aspose.Cells, Bulut, 2024, yeni özellikler, Çiftleri Kaldırma API'si, Metin Çıkarma API'si, veri dönüştürme, elektronik tablo, Excel, CSV, PDF, REST API"
 description: "Aspose.Cells Cloud için 2024 yılında tanıtılan yeni özellikler ve geliştirmelerin genel bakışı; bu özellikler arasında Çiftleri Kaldırma API'si, Metin Çıkarma API'si ve veri dönüştürme iyileştirmeleri yer alır."
 ArticleTitle: "Aspose.Cells Cloud 2024 Yenilikleri ve Geliştirmeleri"

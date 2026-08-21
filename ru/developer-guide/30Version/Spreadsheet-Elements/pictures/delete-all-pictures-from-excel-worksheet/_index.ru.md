@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Очистка"
 type: docs
 url: /ru/pictures/clear/
-aliases: [/delete-all-pictures-from-excel-worksheet/]
+aliases: [  /ru/delete-all-pictures-from-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, удаление всех изображений, рабочий лист, REST API, очистка изображений"
 description: "Узнайте, как удалить все изображения из рабочего листа Excel с помощью Aspose.Cells Cloud REST API, используя примеры cURL и SDK."
 weight: 60

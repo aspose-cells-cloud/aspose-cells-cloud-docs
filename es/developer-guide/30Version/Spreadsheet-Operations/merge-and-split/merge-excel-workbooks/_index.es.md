@@ -3,8 +3,8 @@ title: "Fusionar un libro de Excel en otro libro"
 second_title: "Documento"
 linktitle: "Fusionar un libro de Excel en otro libro"
 type: docs
-url: /merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
+url: /es/merge-an-excel-file-into-the-excel-file/
+aliases: [  /es/merge-excel-workbooks/ , /es/workbook/merge/ ]
 keywords: "fusión de Excel, Aspose.Cells Cloud, API de libro de cálculo, API REST, fusión de hojas de cálculo, SDK en la nube, autenticación, mergeWith, ejemplo en cURL"
 description: "Guía paso a paso para fusionar un libro de Excel en otro utilizando la API REST de Aspose.Cells Cloud (v3.0). Incluye autenticación, el parámetro mergeWith requerido, un ejemplo en cURL y fragmentos de código del SDK."
 ArticleTitle: "Fusionar un libro de Excel en otro libro mediante la API de Aspose.Cells Cloud"

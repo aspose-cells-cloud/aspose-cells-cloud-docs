@@ -3,8 +3,8 @@ title: "ลบพื้นหลังของแผ่นงานใน Excel
 second_title: "เอกสาร"
 linktitle: "ลบ"
 type: docs
-url: /worksheets/background/delete/
-aliases: [/delete-background-or-watermark-of-excel-worksheet/]
+url: /th/worksheets/background/delete/
+aliases: [  /th/delete-background-or-watermark-of-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, ลบพื้นหลังของแผ่นงาน, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อลบภาพพื้นหลังของแผ่นงาน Excel SDK มีให้ใช้งานสำหรับ C#, Java, PHP, Ruby, Node.js, Python, Perl และ Go"
 weight: 210

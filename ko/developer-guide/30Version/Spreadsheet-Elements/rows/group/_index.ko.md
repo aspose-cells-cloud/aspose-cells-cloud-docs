@@ -3,8 +3,8 @@ title: "Excel 워크시트에서 행 그룹화"
 second_title: "문서"
 linktype: "그룹"
 type: docs
-url: /rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
+url: /ko/rows/group/
+aliases: [  /ko/group-rows-in-excel-worksheet/ ]
 keywords: "행 그룹화, Excel, Aspose.Cells Cloud, REST API, SDK, 워크시트, Excel API"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 행을 그룹화합니다. 다양한 SDK(C#, Java, PHP, Ruby, Node.js, Python, Perl, Go)를 지원하여 손쉽게 통합할 수 있습니다."
 weight: 60

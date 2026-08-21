@@ -3,7 +3,7 @@ title: "UnpivotRange"
 ArticleTitle: "UnpivotRange – Aspose.Cells Cloud"
 second_title: "ドキュメント"
 linktype: "docs"
-url: /cells/unpivot/range
+url: /ja/cells/unpivot/range
 aliases: []
 keywords: "Aspose.Cells, UnpivotRange, API"
 description: "スプレッドシート内で行と列を切り替えます。"

@@ -3,7 +3,7 @@ title: "FlipData"
 ArticleTitle: "FlipData – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktype: "docs"
-url: /cells/flip
+url: /sv/cells/flip
 aliases: []
 keywords: "FlipData, Transponera, Aspose.Cells"
 description: "Transponerar ett angivet dataområde i en kalkylarksfil."

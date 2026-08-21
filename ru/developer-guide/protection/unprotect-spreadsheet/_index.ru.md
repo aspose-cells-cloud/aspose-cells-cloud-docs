@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Удаление защиты паролем от Excel — разблокировка паролей на открытие и изменение мгновенно"
 linktitle: "Снять защиту с электронной таблицы"
 type: docs
-url: /unprotect-spreadsheet/
+url: /ru/unprotect-spreadsheet/
 keywords: "снять защиту, электронная таблица, Aspose.Cells, API, Excel, удаление пароля"
 description: "Программно удаляйте пароли на открытие и изменение из файлов Excel с помощью API Aspose.Cells Cloud Unprotect Spreadsheet. Поддерживает форматы .xlsx/.xls, аутентификацию OAuth2 и пакетную обработку."
 weight: 100

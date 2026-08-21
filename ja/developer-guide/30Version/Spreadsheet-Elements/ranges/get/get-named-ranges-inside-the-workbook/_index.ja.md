@@ -3,8 +3,8 @@ title: "Excel ワークブックの名前付き範囲を取得する"
 second_title: "Document"
 linktitle: "Name"
 type: docs
-url: /ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
+url: /ja/ranges/get/name/
+aliases: [  /ja/get-named-ranges-inside-the-workbook/ ]
 keywords: "名前付き範囲, Excel, Aspose.Cells, Cloud API, ワークシート"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークブック内の名前付き範囲を取得します。リクエストの詳細、cURL コマンドのサンプル、および複数のプログラミング言語向けの SDK サンプルを含みます。"
 ArticleTitle: "Excel ワークブックの名前付き範囲を取得する – Aspose.Cells Cloud API"

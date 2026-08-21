@@ -4,8 +4,8 @@ ArticleTitle: "Hämta textobjekt från en Excel-arbetsbok med Aspose.Cells Cloud
 second_title: "Dokument"
 linktitle: "Hämta i arbetsbok"
 type: docs
-url: /workbook/get-text-items/
-aliases: [/get-text-items-from-a-workbook/]
+url: /sv/workbook/get-text-items/
+aliases: [  /sv/get-text-items-from-a-workbook/ ]
 weight: 10
 keywords: "Excel, Aspose.Cells Cloud, REST API, kalkylark, hämta textobjekt, arbetsbok"
 description: "Hämta textobjekt från en Excel-arbetsbok med Aspose.Cells Cloud REST API. Tillgängligt via SDK:er för C#, Java, Python, PHP, Ruby, Go, Node.js, Perl och Swift."

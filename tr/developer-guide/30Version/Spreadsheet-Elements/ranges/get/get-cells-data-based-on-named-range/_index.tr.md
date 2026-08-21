@@ -3,8 +3,8 @@ title: "Adlandırılmış aralık temel alınarak hücre verilerini alın"
 second_title: "Belge"
 linktitle: "Değerler"
 type: docs
-url: /ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
+url: /tr/ranges/get/values/
+aliases: [  /tr/get-cells-data-based-on-named-range/ ]
 keywords: "Aspose.Cells, Bulut, REST API, Excel, adlandırılmış aralık, hücre değerleri, çalışma sayfası"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki adlandırılmış bir aralıktan hücre değerlerini alın. Hizmet, birden fazla SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) aracılığıyla mevcuttur ve geniş bir geliştirme platformu yelpazesinde çalışır."
 weight: 20

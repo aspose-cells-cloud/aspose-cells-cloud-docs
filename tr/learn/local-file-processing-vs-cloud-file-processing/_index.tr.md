@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud'da yerel dosya işlemesi ile bulut dosya işlemesi arasındaki fark nedir?"
 linktitle: "Yerel Dosya İşlemesi vs. Bulut Dosya İşlemesi"
 type: docs
-url: /learn/local-file-processing-vs-cloud-file-processing/
+url: /tr/learn/local-file-processing-vs-cloud-file-processing/
 description: "Aspose.Cells Cloud'da yerel dosya ve bulut dosya işlemlerini karşılaştırın: depolama, maliyet, güvenlik ve tipik senaryolar. İş akışınıza hangi yaklaşımın uygun olduğunu öğrenin."
 keywords: "Aspose.Cells Cloud, yerel dosya işlemesi, bulut dosya işlemesi, elektronik tablo dönüştürme, API"
 weight: 10

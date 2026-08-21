@@ -4,7 +4,7 @@ second_title: "문서"
 linktype: "주석"
 type: docs
 url: /ko/comments/
-aliases: [/ko/working-with-comments/]
+aliases: [  /ko/working-with-comments/ ]
 keywords: "Aspose.Cells Cloud, Excel 주석 API, 스프레드시트 주석, REST API"
 description: "Aspose.Cells Cloud REST API v3.0을 사용하여 Excel 주석을 추가, 조회, 업데이트 및 삭제하는 방법을 코드 예제, 필수 조건, 오류 처리와 함께 알아보세요."
 weight: 100

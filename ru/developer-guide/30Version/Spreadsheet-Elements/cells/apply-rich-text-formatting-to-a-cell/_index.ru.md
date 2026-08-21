@@ -1,7 +1,7 @@
 ---
 title: "Применение форматирования сRich Text к ячейке"
 type: docs
-url: /apply-rich-text-formatting-to-a-cell/
+url: /ru/apply-rich-text-formatting-to-a-cell/
 weight: 40
 keywords: "Aspose.Cells, Excel, rich text, форматирование ячейки, REST API, Aspose.Cells Cloud"
 description: "Узнайте, как применить форматирование сRich Text к конкретной ячейке Excel с использованием Aspose.Cells Cloud REST API. Включает синтаксис запроса, описание параметров, пример cURL и фрагменты SDK."

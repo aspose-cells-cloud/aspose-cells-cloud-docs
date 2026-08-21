@@ -1,7 +1,7 @@
 ---
 title: "Ermitteln verschachtelter Zellen aus einer Excel-Arbeitsmappe – Aspose.Cells Cloud API"
 type: docs
-url: /get-mergedcell-from-a-worksheet/
+url: /de/get-mergedcell-from-a-worksheet/
 weight: 60
 keywords: "Aspose.Cells Cloud, verschachtelte Zellen, Excel-Arbeitsmappe, REST API, Aspose.Cells SDK, verschachtelte Excel-Zellen"
 description: "Erfahren Sie, wie Sie Bereiche mit verschachtelten Zellen aus einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud API (v3.0) abrufen. Enthält Authentifizierungsschritte, vollständige cURL-Anfrage, Antwort-Schema, Fehlerbehandlung und SDK-Beispiele in C#, Java, Python und weiteren Sprachen."

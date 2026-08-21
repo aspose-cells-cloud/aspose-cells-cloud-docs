@@ -1,7 +1,7 @@
 ---
 title: "Borrar formato de celdas en una hoja de cálculo de Excel"
 type: docs
-url: /clear-cells-formatting-in-excel-worksheet/
+url: /es/clear-cells-formatting-in-excel-worksheet/
 weight: 100
 keywords: "Aspose.Cells Cloud, Excel, Borrar formato de celdas, API REST, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Utilice la API REST de Aspose.Cells Cloud para borrar el formato de celdas en una hoja de cálculo de Excel. Incluye detalles de la solicitud, un ejemplo con cURL y fragmentos de código de SDK para múltiples lenguajes."

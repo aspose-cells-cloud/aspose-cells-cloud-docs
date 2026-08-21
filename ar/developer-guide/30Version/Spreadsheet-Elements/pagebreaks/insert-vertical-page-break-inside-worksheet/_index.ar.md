@@ -3,8 +3,8 @@ title: "إضافة فاصل صفحات عمودي"
 second_title: "مستند"
 linktype: "إضافة فاصل صفحات عمودي"
 type: docs
-url: /page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
+url: /ar/page-breaks/add-vertical-page-break/
+aliases: [  /ar/insert-vertical-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud، فاصل صفحات عمودي، REST API، Excel، SDK، cURL"
 description: "تعرّف على كيفية إدراج فاصل صفحات عمودي في ورقة عمل Excel باستخدام Aspose.Cells Cloud REST API (الإصدار 3.0). يشمل بنية الطلب، مثال cURL، أمثلة SDK، دليل المصادقة، وتفاصيل معالجة الأخطاء."
 weight: 40

@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "スプレッドシートデータ処理 – 統合・分割・インポート"
 linktitle: "データ処理"
 type: docs
-url: /data-processing/
+url: /ja/data-processing/
 keywords: "Aspose.Cells Cloud, スプレッドシートデータ処理, Excel 統合, Excel 分割, CSV インポート, JSON インポート, API"
 description: "Aspose.Cells Cloud REST API を使用した CSV/JSON データのインポート、リモート Excel ワークブックの統合、大規模なスプレッドシートの分割に関する詳細ガイド。リクエスト／レスポンスの例も含みます。"
 weight: 30

@@ -3,8 +3,8 @@ title: "Excel Raporu Oluşturma İçin Veri Birleştirme"
 second_title: "Belge"
 linktype: "Veri Birleştirme"
 type: docs
-url: /assembly-data-for-the-creation-of-an-excel-report/
-aliases: [/assembly/]
+url: /tr/assembly-data-for-the-creation-of-an-excel-report/
+aliases: [  /tr/assembly/ ]
 keywords: "Aspose.Cells, Excel raporu, veri birleştirme, Bulut API, REST, SDK, cURL, PDF, ODS"
 description: "Aspose.Cells Cloud’un Assembly API’sini kullanarak Excel (XLSX, PDF, ODS) raporlarına veri nasıl birleştireceğinizi öğrenin. Endpoint, parametreler, cURL örneği, SDK kodu, kimlik doğrulama kılavuzu ve hata işleme içerir."
 weight: 40

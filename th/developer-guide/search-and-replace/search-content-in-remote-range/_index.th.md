@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "ค้นหาข้อความในสมุดงาน Excel ระยะไกล – ค้นหาข้อมูลในช่วงที่กำหนด"
 linktype: "ค้นหาเนื้อหาในช่วงระยะไกล"
 type: docs
-url: /search-content-in-remote-range/
+url: /th/search-content-in-remote-range/
 keywords: "Aspose.Cells, API Excel, ค้นหาข้อความ, ช่วงระยะไกล, สมุดงานบนคลาวด์, REST API, การค้นพบข้อมูล"
 description: "ค้นหาข้อความ ตัวเลข หรือสูตรในช่วงที่กำหนดของสมุดงาน Excel ที่จัดเก็บไว้ใน Aspose Cloud"
 weight: 100

@@ -3,8 +3,8 @@ title: "Получение именованных диапазонов в раб
 second_title: "Документ"
 linktype: "Name"
 type: docs
-url: /ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
+url: /ru/ranges/get/name/
+aliases: [  /ru/get-named-ranges-inside-the-workbook/ ]
 keywords: "именованные диапазоны, Excel, Aspose.Cells, облачный API, рабочие листы"
 description: "Получение именованных диапазонов из рабочей книги Excel с помощью облачного REST API Aspose.Cells. Включает детали запроса, примеры команд cURL и примеры SDK для множества языков программирования."
 ArticleTitle: "Получение именованных диапазонов в рабочей книге Excel – Aspose.Cells Cloud API"

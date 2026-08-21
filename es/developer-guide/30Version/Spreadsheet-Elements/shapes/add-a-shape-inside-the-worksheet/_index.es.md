@@ -3,8 +3,8 @@ title: "Agregar una forma a una hoja de cálculo de Excel"
 second_title: "Document"
 linktype: "Add"
 type: docs
-url: /shapes/add/
-aliases: [/add-a-shape-inside-the-worksheet/]
+url: /es/shapes/add/
+aliases: [  /es/add-a-shape-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, agregar forma, Excel, API REST, SDK en la nube, shapeDTO, tipo de dibujo"
 description: "Aprenda cómo agregar formas (arco, línea, rectángulo, etc.) a una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud v3.0. Incluye sintaxis de solicitud, parámetros obligatorios, pasos de autenticación y código de ejemplo del SDK."
 weight: 30

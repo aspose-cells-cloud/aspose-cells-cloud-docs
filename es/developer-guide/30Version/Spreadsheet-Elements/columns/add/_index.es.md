@@ -3,7 +3,7 @@ title: "Agregar una columna vacía a una hoja de cálculo de Excel - API de Aspo
 second_title: "Documento"
 linktitle: "Agregar"
 type: docs
-url: /columns/add/
+url: /es/columns/add/
 aliases:
   - /add-an-empty-column-in-an-excel-worksheet/
   - /add-an-empty-column-in-a-worksheet/

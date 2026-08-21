@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Удалить"
 type: docs
 url: /ru/shapes/delete/
-aliases: [/ru/delete-a-shape-by-index-inside-the-worksheet/]
+aliases: [  /ru/delete-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, удаление фигуры, индекс фигуры, лист Excel, REST API, SDK"
 description: "Используйте Aspose.Cells Cloud REST API для удаления фигуры по её индексу на листе Excel. API доступно через множество SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) и поддерживает различные варианты хранения."
 weight: 50

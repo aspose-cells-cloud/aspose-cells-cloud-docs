@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud AI 翻訳 API を使用してテキストファイルを翻訳する方法"
 linktitle: "テキストファイルの翻訳"
 type: docs
-url: /translate-text-file/
+url: /ja/translate-text-file/
 keywords: "Aspose.Cells, Cloud API, AI 翻訳, テキストファイルの翻訳, 多言語変換, REST PUT, 対象言語コード, ファイルアップロード翻訳, 生テキスト翻訳, スプレッドシート AI"
 description: "Aspose.Cells Cloud AI の TranslateTextFile エンドポイントを使用して、テキストファイルをサポートされている任意の言語に変換する方法を学びましょう。multipart ファイルアップロードと生テキストペイロードの両方をサポートし、書式を保持したまま翻訳済みファイルをダウンロード可能に返却します。"
 weight: 100

@@ -4,7 +4,7 @@ secondtitle: "文档"
 articletitle: "Excel 文本清理工具 — 从选定区域删除字符与子字符串"
 linktitle: "移除字符"
 type: docs
-url: /remove-characters/
+url: /zh/remove-characters/
 keywords: "Aspose.Cells, 移除字符, Excel API, 文本清理, 电子表格"
 description: "从选定范围内的 Excel 单元格中移除自定义字符、字符集及子字符串。借助 Aspose.Cells API 精准删除特定位置的文本，实现数据清洗。"
 weight: 100

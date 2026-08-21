@@ -3,7 +3,7 @@ title: "向 Excel 工作表添加空列 - Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "添加"
 type: docs
-url: /columns/add/
+url: /zh/columns/add/
 aliases:
   - /add-an-empty-column-in-an-excel-worksheet/
   - /add-an-empty-column-in-a-worksheet/

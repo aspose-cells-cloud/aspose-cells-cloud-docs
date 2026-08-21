@@ -2,8 +2,8 @@
 title: "SaveResult 작업 사용하기"
 second_title: "문서"
 type: docs
-url: /tasks/save-result/
-aliases: [/working-with-saveresult-task/]
+url: /ko/tasks/save-result/
+aliases: [  /ko/working-with-saveresult-task/ ]
 keywords: "SaveResult 작업, Aspose.Cells Cloud API, 결과 내보내기, 워크북 다운로드, 클라우드 스토리지, REST API, 스프레드시트, Excel"
 description: "Aspose.Cells Cloud API에서 SaveResult 작업을 사용하여 처리된 워크북 데이터를 클라우드 스토리지로 내보내거나 직접 다운로드하는 방법을 알아보세요. cURL, Java, .NET 예제 및 전체 매개변수 참조를 포함합니다."
 weight: 50

@@ -2,7 +2,7 @@
 title: "将整数数组导入 Excel 工作表"
 linktitle: "导入整数数组"
 type: docs
-url: /import-integer-array-into-excel-worksheet/
+url: /zh/import-integer-array-into-excel-worksheet/
 aliases:
   - /import-integer-array-into-excel-worksheet/
   - /import-integer-array-into-worksheet/

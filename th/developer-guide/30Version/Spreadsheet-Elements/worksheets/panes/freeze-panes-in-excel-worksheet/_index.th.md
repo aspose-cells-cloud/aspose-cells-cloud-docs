@@ -3,8 +3,8 @@ title: "การแช่ช่วงในแผ่นงาน Excel"
 second_title: "เอกสาร"
 linktype: "แช่ช่วง"
 type: docs
-url: /worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+url: /th/worksheets/panes/freeze/
+aliases: [  /th/freeze-panes-in-excel-worksheet/ , /th/worksheets/freeze-panes/ ]
 keywords: "Aspose.Cells Cloud, Freeze Panes, Excel, REST API, Worksheet"
 description: "เรียนรู้วิธีการแช่ช่วงแถวและคอลัมน์ในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API ซึ่งประกอบด้วยไวยากรณ์ของ endpoint, พารามิเตอร์ที่จำเป็น, ตัวอย่าง cURL, คำแนะนำการยืนยันตัวตน, รายละเอียดการตอบกลับข้อผิดพลาด และตัวอย่างโค้ด SDK สำหรับหลายภาษา"
 weight: 190

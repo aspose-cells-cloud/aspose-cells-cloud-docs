@@ -3,8 +3,8 @@ title: "Установка стиля диапазона – Aspose.Cells Cloud 
 second_title: "Документация"
 linktitle: "Установка стиля диапазона"
 type: docs
-url: /ranges/update/style/
-aliases: [/set-the-style-of-the-range/]
+url: /ru/ranges/update/style/
+aliases: [  /ru/set-the-style-of-the-range/ ]
 keywords: "Aspose.Cells, стиль диапазона, API, Excel, облако"
 description: "Узнайте, как установить стиль диапазона ячеек в листе Excel с помощью REST API Aspose.Cells Cloud. Включает шаги аутентификации, формат запроса, детали ответа и примеры SDK для .NET, Java, Python, Go и других языков."
 weight: 70

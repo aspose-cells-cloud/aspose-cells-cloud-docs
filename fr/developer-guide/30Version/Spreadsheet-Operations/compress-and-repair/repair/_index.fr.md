@@ -3,7 +3,7 @@ title: "Réparer des fichiers Excel"
 second_title: "Document"
 type: docs
 linktitle: "Réparer des fichiers Excel"
-url: /repair-excel-files/
+url: /fr/repair-excel-files/
 keywords: "Aspose Cells, API de réparation Excel, XLSX corrompu, récupération de feuille de calcul, API cloud"
 description: "Utilisez l’API REST Aspose.Cells Cloud pour réparer des fichiers Excel corrompus (XLS, XLSX, XLSM, XLSB, ODS). Téléchargez un ou plusieurs fichiers, choisissez le format de sortie, et recevez les fichiers réparés au format Base64. Aucune installation requise."
 weight: 39

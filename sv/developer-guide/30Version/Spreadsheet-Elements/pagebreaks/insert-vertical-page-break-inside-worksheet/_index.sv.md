@@ -3,8 +3,8 @@ title: "Lägg till en vertikal sidbrytning"
 second_title: "Document"
 linktitle: "Lägg till en vertikal sidbrytning"
 type: docs
-url: /page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
+url: /sv/page-breaks/add-vertical-page-break/
+aliases: [  /sv/insert-vertical-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, vertikal sidbrytning, REST API, Excel, SDK, cURL"
 description: "Lär dig hur du infogar en vertikal sidbrytning i ett Excel-ark med Aspose.Cells Cloud REST API (v3.0). Innehåller begärsyntax, cURL-exempel, SDK-exempel, autentiseringshandbok och detaljerad felhantering."
 weight: 40

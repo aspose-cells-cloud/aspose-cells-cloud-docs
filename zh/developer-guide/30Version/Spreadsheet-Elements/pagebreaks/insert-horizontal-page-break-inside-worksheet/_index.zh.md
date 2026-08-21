@@ -3,8 +3,8 @@ title: "添加水平分页符"
 second_title: "文档"
 linktitle: "添加水平分页符"
 type: docs
-url: /page-breaks/add-horizontal-page-break/
-aliases: [/insert-horizontal-page-break-inside-worksheet/]
+url: /zh/page-breaks/add-horizontal-page-break/
+aliases: [  /zh/insert-horizontal-page-break-inside-worksheet/ ]
 keywords: "水平分页符, Aspose.Cells Cloud, Excel API, REST, SDK, 工作表, cURL"
 description: "了解如何使用 Aspose.Cells Cloud REST API 为 Excel 工作表添加水平分页符。包含请求详情、cURL 示例以及多种编程语言的 SDK 代码片段。"
 weight: 30

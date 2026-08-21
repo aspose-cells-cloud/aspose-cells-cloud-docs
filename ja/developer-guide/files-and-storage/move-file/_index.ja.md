@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "クラウドベースの Excel ファイル効率管理ソリューション – クラウド内でのファイルを高速に移動するためのインターフェース"
 linktitle: "ファイルの移動"
 type: docs
-url: /move-file/
+url: /ja/move-file/
 keywords: "Aspose.Cells, ファイル移動 API, クラウドストレージ, Excel API, ファイル管理"
 description: "Aspose.Cells Cloud ストレージ内でフォルダ間でファイルを移動する方法 – v4.0 ファイル移動 API のエンドポイント、パラメータ、使用例、および SDK リンク。"
 weight: 100

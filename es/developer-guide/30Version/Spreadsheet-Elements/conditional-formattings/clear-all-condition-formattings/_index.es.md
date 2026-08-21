@@ -1,8 +1,8 @@
 ---
 title: "Borrar formato condicional"
 type: docs
-url: /conditional-formattings/clear/
-aliases: [/clear-all-condition-formattings/]
+url: /es/conditional-formattings/clear/
+aliases: [  /es/clear-all-condition-formattings/ ]
 keywords: "Aspose.Cells Cloud, REST API, borrar formato condicional, Excel, hojas de cálculo, JWT, v3.2"
 description: "Eliminar todas las reglas de formato condicional de una hoja de cálculo mediante la API de Aspose.Cells Cloud (v3.2). Aprenda la sintaxis de la solicitud, los parámetros requeridos, los pasos de autenticación y consulte el código de ejemplo en múltiples SDK."
 weight: 80

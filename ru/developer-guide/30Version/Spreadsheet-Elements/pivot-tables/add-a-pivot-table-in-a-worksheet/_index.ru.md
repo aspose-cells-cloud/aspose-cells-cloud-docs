@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: Добавление
 type: docs
 url: /ru/pivot-tables/add/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /ru/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Добавление сводной таблицы, рабочий лист Excel, Aspose.Cells Cloud, REST API, SDK, сводная таблица Excel"
 description: "Используйте Aspose.Cells Cloud REST API для добавления сводной таблицы в рабочий лист Excel. Доступно через SDK для C#, Java, PHP, Python, Node.js, Android, Swift, Perl, Go."
 weight: 30

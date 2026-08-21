@@ -3,8 +3,8 @@ title: "Hämta namngivna intervall i en Excel-arbetsbok"
 second_title: "Dokument"
 linktitle: "Namn"
 type: docs
-url: /ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
+url: /sv/ranges/get/name/
+aliases: [  /sv/get-named-ranges-inside-the-workbook/ ]
 keywords: "namngivna intervall, Excel, Aspose.Cells, moln-API, kalkylblad"
 description: "Hämta namngivna intervall från en Excel-arbetsbok med Aspose.Cells Cloud REST API. Innehåller begärandedetaljer, exempel på cURL-kommandon och SDK-exempel för flera programmeringsspråk."
 ArticleTitle: "Hämta namngivna intervall i en Excel-arbetsbok – Aspose.Cells Cloud API"

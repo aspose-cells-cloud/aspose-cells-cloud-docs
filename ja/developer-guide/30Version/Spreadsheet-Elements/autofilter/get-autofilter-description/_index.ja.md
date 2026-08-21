@@ -3,7 +3,7 @@ title: "AutoFilter の取得"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートから AutoFilter の説明を取得します。"
 keywords: "AutoFilter, Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 type: docs
-url: /cells/autofilter/get/
+url: /ja/cells/autofilter/get/
 aliases:
   - /get-autofilter-description/
 weight: 50

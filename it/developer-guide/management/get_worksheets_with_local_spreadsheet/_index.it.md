@@ -3,7 +3,7 @@ title: "Ottieni Fogli di Lavoro con Foglio di Calcolo Locale"
 ArticleTitle: "Ottieni Fogli di Lavoro con Foglio di Calcolo Locale – Aspose.Cells Cloud"
 second_title: "Documento"
 linktype: "docs"
-url: /cells/spreadsheet/worksheets
+url: /it/cells/spreadsheet/worksheets
 aliases: []
 keywords: "Aspose.Cells, Fogli di Lavoro, Foglio di Calcolo Locale, API"
 description: "Recupera un elenco completo dei fogli di lavoro dal foglio di calcolo locale attualmente attivo."

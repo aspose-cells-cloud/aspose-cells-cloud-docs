@@ -4,7 +4,7 @@ ArticleTitle: "Удаление пустых строк из электронн�
 second_title: "Документ"
 linktitle: "Удаление пустых строк из электронной таблицы"
 type: docs
-url: /cells/remove/blank-rows
+url: /ru/cells/remove/blank-rows
 aliases: []
 keywords: "Aspose.Cells, удаление пустых строк, электронная таблица, API"
 description: "Удаляет все пустые строки из файла электронной таблицы."

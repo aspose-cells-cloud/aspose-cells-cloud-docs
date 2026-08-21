@@ -3,8 +3,8 @@ title: "Hämta vertikala sidbrytningar"
 second_title: "Dokument"
 linktitle: "Hämta vertikala sidbrytningar"
 type: docs
-url: /page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
+url: /sv/page-breaks/get-vertical-page-breaks/
+aliases: [  /sv/get-vertical-page-breaks-inside-worksheet/ ]
 keywords: "Aspose.Cells, vertikala sidbrytningar, Excel-API, molnbevakat kalkylark, REST-API"
 description: "Hämta vertikala sidbrytningar från ett Excel-kalkylark med Aspose.Cells Cloud REST API (v3.0). Inkluderar HTTPS-slutpunkt, nödvändiga parametrar, cURL-exempel, svarsdetaljer, felhantering och SDK-exempel."
 weight: 20

@@ -3,8 +3,8 @@ title: "Excel 워크시트에 사용자 정의 기준 추가"
 second_title: "문서"
 linktitle: "사용자 정의 필터 추가"
 type: docs
-url: /autofilter/add-custom-filter/
-aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/]
+url: /ko/autofilter/add-custom-filter/
+aliases: [  /ko/filter-a-list-with-a-custom-criteria/ , /ko/autofilter/add-a-custom-filter/ ]
 keywords: "Excel, 사용자 정의 필터, Aspose.Cells Cloud, REST API, 자동 필터, 워크시트, 사용자 정의 기준"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에 사용자 정의 필터를 추가하는 방법을 알아보세요. 요청 세부 정보, cURL 예제, 여러 프로그래밍 언어의 SDK 코드 스니펫이 포함됩니다."
 weight: 65

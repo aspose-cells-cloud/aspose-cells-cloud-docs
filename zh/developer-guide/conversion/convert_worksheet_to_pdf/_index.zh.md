@@ -4,7 +4,7 @@ ArticleTitle: "将工作表转换为 PDF – Aspose.Cells Cloud API"
 second_title: "文档"
 linktype: "ConvertWorksheetToPdf"
 type: docs
-url: /cells/convert/worksheet/pdf
+url: /zh/cells/convert/worksheet/pdf
 aliases: []
 keywords: "Aspose.Cells, 将工作表转换为 PDF, API"
 description: "使用 Aspose.Cells Cloud 将电子表格文件中的工作表转换为 PDF。"

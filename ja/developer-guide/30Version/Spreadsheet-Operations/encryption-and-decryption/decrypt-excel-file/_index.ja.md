@@ -3,8 +3,8 @@ title: "Excel ワークブックの復号化"
 second_title: "ドキュメント"
 linktitle: "Excel ファイルの復号化"
 type: docs
-url: /excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+url: /ja/excel-file-decrypt/
+aliases: [  /ja/decrypt-excel-workbooks/ , /ja/workbook/decrypt/ ]
 keywords: "Aspose.Cells, Excel 復号化, REST API, クラウド SDK"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークブックを復号化する方法を学びます。必要なパラメータ、cURL の例、SDK のコードサンプル、エラー処理の詳細を含みます。"
 ArticleTitle: "Aspose.Cells Cloud API を使用して Excel ワークブックを復号化する方法"

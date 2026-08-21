@@ -4,7 +4,7 @@ ArticleTitle: "Mostrar columnas en una hoja de cálculo de Excel: API de Aspose.
 second_title: "Documentos"
 linktitle: "Mostrar"
 type: docs
-url: /columns/unhide/
+url: /es/columns/unhide/
 aliases:
   [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
 keywords: "Aspose.Cells, API en la nube, mostrar columnas, Excel, REST, SDK"

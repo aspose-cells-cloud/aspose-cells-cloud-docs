@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "基于云端的 Excel 文件管理 — 快速在云端移动文件夹"
 linktitle: "移动文件夹"
 type: docs
-url: /move-folder/
+url: /zh/move-folder/
 keywords: "Aspose.Cells, 移动文件夹, 云存储, Excel API"
 description: "了解如何通过 RESTful 移动文件夹 API，在 Aspose.Cells Cloud 存储中移动文件夹。内容包括端点、参数、示例 cURL 请求、错误代码以及 C#、Java、Python 等语言的 SDK 示例。"
 weight: 100

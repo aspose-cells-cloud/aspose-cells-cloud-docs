@@ -3,8 +3,8 @@ title: "Supprimer une feuille de calcul"
 second_title: "Document"
 linktype: "Une feuille de calcul"
 type: docs
-url: /worksheets/delete-worksheet/
-aliases: [/remove-worksheets-from-excel-workbooks/]
+url: /fr/worksheets/delete-worksheet/
+aliases: [  /fr/remove-worksheets-from-excel-workbooks/ ]
 keywords: "Aspose.Cells Cloud, Supprimer une feuille de calcul, Excel, Classeur, API REST"
 description: "Supprimer une feuille de calcul d’un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud. Prend en charge les SDK pour C#, Java, PHP, Ruby, Node.js, Python, Perl, Go et cURL."
 weight: 20

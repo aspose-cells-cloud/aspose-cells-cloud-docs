@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Aggiorna"
 type: docs
 url: /it/shapes/update/
-aliases: [/it/update-a-shape-inside-the-worksheet/]
+aliases: [  /it/update-a-shape-inside-the-worksheet/ ]
 keywords: "aggiornare forma Excel API, Aspose.Cells Cloud, aggiornamento forma Excel, REST API, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
 description: "Scopri come aggiornare una forma in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud. Include l'endpoint HTTPS, i dettagli di autenticazione, lo schema DTO, un'illustrazione passo-passo, un esempio cURL e codici di esempio per SDK in diversi linguaggi."
 ArticleTitle: "Aggiorna una forma in un foglio di lavoro Excel - API Aspose.Cells Cloud"

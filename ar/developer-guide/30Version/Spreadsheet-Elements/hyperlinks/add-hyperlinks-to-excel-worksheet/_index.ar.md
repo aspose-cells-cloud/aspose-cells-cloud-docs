@@ -2,7 +2,7 @@
 title: "إضافة رابط تشعبي إلى ورقة عمل"
 type: docs
 url: /ar/hyperlinks/add/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+aliases: [  /ar/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, إضافة رابط تشعبي, Excel REST API, SDK سحابي"
 description: "تعرّف على كيفية إضافة رابط تشعبي إلى ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API الإصدار 3.0. تتضمن الرابط، دليلاً كاملاً للمعاملات، مثالًا باستخدام cURL، وأكواد مقتطفة للغات C# وJava وPython وغير ذلك."
 weight: 20

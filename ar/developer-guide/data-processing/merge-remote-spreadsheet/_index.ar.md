@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud"
 ArticleTitle: "دمج ملفات Excel في السحابة | دمج جداول البيانات عبر الإنترنت باستخدام واجهة برمجة التطبيقات Aspose.Cells Cloud"
 linktitle: "دمج جدول بيانات بعيد"
 type: docs
-url: /merge-remote-spreadsheet/
+url: /ar/merge-remote-spreadsheet/
 keywords: "Aspose.Cells، دمج Excel، واجهة برمجة تطبيقات سحابية، دمج جداول البيانات"
 description: "دمج أوراق عمل Excel المخزنة في التخزين السحابي باستخدام واجهة برمجة التطبيقات Aspose.Cells Cloud. حدد تنسيق الإخراج ومجلد الوجهة ووضع الدمج في استدعاء HTTPS واحد."
 weight: 100

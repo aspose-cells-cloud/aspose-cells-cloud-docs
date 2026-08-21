@@ -3,8 +3,8 @@ title: "รับสมุดงานทั้งหมด"
 second_title: "เอกสาร"
 linktype: "ทั้งหมด"
 type: docs
-url: /worksheets/get-all/
-aliases: [/get-worksheet-count/]
+url: /th/worksheets/get-all/
+aliases: [  /th/get-worksheet-count/ ]
 keywords: "Aspose.Cells, Cloud API, รับสมุดงาน, Excel, REST, SDK"
 description: "ดึงรายการสมุดงานในไฟล์สมุดงาน Excel ผ่าน Aspose.Cells Cloud REST API (เวอร์ชัน 3.0) รวมตัวอย่าง cURL, โค้ดตัวอย่าง SDK และรูปแบบการตอบกลับ"
 weight: 10

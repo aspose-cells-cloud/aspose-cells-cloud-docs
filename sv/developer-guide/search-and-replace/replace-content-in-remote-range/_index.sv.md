@@ -4,7 +4,7 @@ secondtitle: "Dokument"
 ArtikelTitel: "Bulk-ersättning av text i omfattningar i moln-Excel-filer – Sök-och-ersätt-API"
 linktitle: "Ersätt innehåll i fjärr-omfattning"
 type: docs
-url: /replace-content-in-remote-range/
+url: /sv/replace-content-in-remote-range/
 keywords: "ersätt text i fjärr-Excel-omfattning, Aspose.Cells Cloud API, sök och ersätt Excel, redigera moln-kalkylark, uppdatera fjärr-Excel-filer"
 description: "Använd Aspose.Cells Cloud för att söka och ersätta text i en specifik omfattning i en fjärr-Excel-fil. Stödjer autentisering, felhantering och SDK:er för flera språk."
 weight: 100

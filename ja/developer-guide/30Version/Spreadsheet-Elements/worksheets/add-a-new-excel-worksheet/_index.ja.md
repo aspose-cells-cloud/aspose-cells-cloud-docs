@@ -4,8 +4,8 @@ ArticleTitle: "Excelワークシートの追加 - Aspose.Cells Cloud API ガイ�
 second_title: "ドキュメント"
 linktype: "追加"
 type: docs
-url: /worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
+url: /ja/worksheets/add/
+aliases: [  /ja/add-a-new-excel-worksheet/ ]
 keywords: "Excelワークシートの追加, Aspose.Cells Cloud, REST API, PUTワークシート, Excelワークブック, APIリクエスト"
 description: "Aspose.Cells Cloud REST API を使用してExcelワークブックに新しいワークシートを追加する手順ガイド。リクエストの詳細、cURLの例、および複数の言語向けのSDKコードスニペットを含みます。"
 weight: 20

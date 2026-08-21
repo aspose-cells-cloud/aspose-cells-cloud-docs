@@ -3,7 +3,7 @@ title: "在远程工作表中搜索断开的链接"
 ArticleTitle: "在远程工作表中搜索断开的链接 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/search/broken-links
+url: /zh/cells/{name}/worksheets/{worksheet}/search/broken-links
 aliases: []
 keywords: "Aspose.Cells, 搜索断开的链接, 远程工作表"
 description: "搜索远程电子表格中工作表内的断开链接。"

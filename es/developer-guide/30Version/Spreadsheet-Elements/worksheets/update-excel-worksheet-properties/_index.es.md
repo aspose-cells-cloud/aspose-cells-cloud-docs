@@ -3,8 +3,8 @@ title: "Actualizar propiedades de hoja de cálculo – Referencia de la API de A
 second_title: "Documento"
 linktitle: "Actualizar"
 type: docs
-url: /worksheets/update-properties/
-aliases: [/update-excel-worksheet-properties/]
+url: /es/worksheets/update-properties/
+aliases: [  /es/update-excel-worksheet-properties/ ]
 weight: 20
 keywords:
   [

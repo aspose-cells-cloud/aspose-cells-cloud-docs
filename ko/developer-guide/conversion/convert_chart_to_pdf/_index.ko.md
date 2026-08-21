@@ -3,7 +3,7 @@ title: "차트를 PDF로 변환"
 ArticleTitle: "Aspose.Cells Cloud API를 사용하여 차트를 PDF로 변환"
 second_title: "문서"
 linktype: "docs"
-url: /cells/convert/chart/pdf
+url: /ko/cells/convert/chart/pdf
 aliases: []
 keywords: "차트를 PDF로 변환, Aspose.Cells, PDF, 차트 변환"
 description: "로컬 드라이브에 있는 스프레드시트의 차트를 PDF로 변환합니다."

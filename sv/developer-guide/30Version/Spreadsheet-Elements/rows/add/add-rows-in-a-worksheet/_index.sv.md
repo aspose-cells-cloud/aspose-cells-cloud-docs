@@ -4,7 +4,7 @@ ArticleTitle: "Lägg till flera rader i ett Excel-ark med Aspose.Cells Cloud API
 second_title: "Dokument"
 linktitle: "Rader"
 type: docs
-url: /rows/add/rows/
+url: /sv/rows/add/rows/
 keywords: "Aspose.Cells Cloud, infoga rader, Excel-ark, REST API, SDK, lägg till flera rader"
 description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att infoga flera rader i ett Excel-ark. Den här guiden täcker slutpunkten, begärparametrar, exempel på cURL-kommandon och SDK-användningsexempel."
 weight: 20

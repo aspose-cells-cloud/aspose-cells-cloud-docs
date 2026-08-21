@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud Statusprüfung"
 linktitle: "Status des Cloud-Service prüfen"
 type: docs
-url: /check-cloud-service-health/
+url: /de/check-cloud-service-health/
 keywords: "Aspose.Cells Cloud, API-Statusprüfung, REST-Status, Cloud-Service-Monitoring"
 description: "Überwachen Sie den Status von Aspose.Cells Cloud in Echtzeit. Erfahren Sie mehr über den GET /v4.0/cells/status/check-Endpunkt, Parameter, Antwortformat und SDK-Beispiele."
 weight: 100

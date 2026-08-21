@@ -3,8 +3,8 @@ title: "Trabajar con hojas de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Hojas de cálculo"
 type: docs
-url: /worksheets/
-aliases: [/working-with-worksheets/]
+url: /es/worksheets/
+aliases: [  /es/working-with-worksheets/ ]
 keywords: "hoja de cálculo de Excel, Aspose.Cells Cloud, API REST, hoja de cálculo, libro de cálculo, manipulación de datos, automatización de Excel"
 description: "La API REST de Aspose.Cells Cloud permite trabajar con hojas de cálculo en un libro de cálculo de Excel. El SDK admite múltiples lenguajes de programación, incluidos Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby y Swift."
 weight: 100

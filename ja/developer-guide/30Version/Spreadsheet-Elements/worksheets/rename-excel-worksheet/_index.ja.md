@@ -3,8 +3,8 @@ title: "Excelワークシートの名前変更"
 second_title: "Document"
 linktitle: "名前変更"
 type: docs
-url: /worksheets/rename/
-aliases: [/rename-excel-worksheet/]
+url: /ja/worksheets/rename/
+aliases: [  /ja/rename-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excelワークシートの名前変更, REST API, スプレッドシートSDK, ワークシート名変更, クラウドストレージ"
 description: "Aspose.Cells Cloud REST APIを使用してExcelワークブック内のワークシートの名前を変更します。SDKはAndroid、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby、Swiftで利用可能です。"
 weight: 20

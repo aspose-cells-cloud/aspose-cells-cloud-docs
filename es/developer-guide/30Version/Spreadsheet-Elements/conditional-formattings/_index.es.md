@@ -3,8 +3,8 @@ title: "Trabajo con el formato condicional de Excel"
 second_title: "Document"
 linktitle: "Formato condicional"
 type: docs
-url: /conditional-formattings/
-aliases: [/working-with-conditional-formatting/]
+url: /es/conditional-formattings/
+aliases: [  /es/working-with-conditional-formatting/ ]
 keywords: "Excel, Formato condicional, Aspose.Cells Cloud, API"
 description: "La API de Aspose.Cells Cloud para Excel proporciona puntos finales para recuperar, agregar, modificar y borrar reglas de formato condicional, permitiendo un análisis visual dinámico de los datos de la hoja de cálculo."
 weight: 100

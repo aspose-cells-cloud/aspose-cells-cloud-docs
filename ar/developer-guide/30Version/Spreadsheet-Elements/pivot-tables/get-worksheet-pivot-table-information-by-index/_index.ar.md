@@ -3,8 +3,8 @@ title: "الحصول على جدول محوري في ورقة عمل إكسل"
 second_title: "مستند"
 linktitle: الحصول
 type: docs
-url: /pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
+url: /ar/pivot-tables/get/
+aliases: [  /ar/get-worksheet-pivot-table-information-by-index/ ]
 keywords: "Aspose.Cells، الجدول المحوري، إكسل، واجهة برمجة تطبيقات REST، الحصول على الجدول المحوري في ورقة العمل"
 description: "استرجاع جدول محوري من ورقة عمل إكسل عبر واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمن بناء الجملة المطلوبة، المعلمات، المصادقة، مخطط الاستجابة، معالجة الأخطاء، وأمثلة لحزم تطوير البرمجيات (SDK)."
 weight: 10

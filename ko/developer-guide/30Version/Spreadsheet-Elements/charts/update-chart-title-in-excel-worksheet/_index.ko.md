@@ -1,8 +1,8 @@
 ---
 title: "엑셀 워크시트에서 차트 제목 업데이트"
 type: docs
-url: /charts/title/update/
-aliases: [/update-chart-title-in-excel-worksheet/]
+url: /ko/charts/title/update/
+aliases: [  /ko/update-chart-title-in-excel-worksheet/ ]
 weight: 160
 keywords: Excel, Aspose.Cells, REST API, 차트 제목, 업데이트, 클라우드 SDK
 description: Aspose.Cells Cloud REST API, cURL 및 다양한 SDK를 사용하여 엑셀 워크시트에서 차트 제목을 업데이트하는 방법을 알아보세요.

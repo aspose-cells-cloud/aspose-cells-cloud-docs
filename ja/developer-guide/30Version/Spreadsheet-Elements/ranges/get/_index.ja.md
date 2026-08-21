@@ -3,7 +3,7 @@ title: "Excelワークシートから範囲の内容を取得する方法"
 second_title: "Document"
 linktitle: "取得"
 type: docs
-url: /ranges/get/
+url: /ja/ranges/get/
 keywords: "Aspose.Cells, Excel, API, get, range, spreadsheet, REST"
 description: "Aspose.Cells Cloud REST API を使用して Excelワークシートから範囲の内容を取得する方法を学びます。リクエスト構文とサンプルコードを含みます。"
 weight: 20

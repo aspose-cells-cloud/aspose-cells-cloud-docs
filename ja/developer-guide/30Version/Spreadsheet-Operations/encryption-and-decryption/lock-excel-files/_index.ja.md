@@ -3,8 +3,8 @@ title: "Excel ファイルをロックする"
 second_title: "ドキュメント"
 linktitle: "Excel ファイルをロック"
 type: docs
-url: /lock-excel-files/
-aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+url: /ja/lock-excel-files/
+aliases: [  /ja/lock/without-storage/ , /ja/lock/ , /ja/lock/without-using-storage/ ]
 keywords: "ロック, Excel, API, Aspose.Cells, クラウド, REST, ワークブック, スプレッドシート, SDK"
 description: "Aspose.Cells Cloud REST API (v3.0) を使用して Excel ワークブックをロックする方法を学びます。HTTPS エンドポイント、認証、cURL リクエスト、レスポンススキーマ、および C#、Java、Python などの SDK コードサンプルを含みます。"
 ArticleTitle: "Excel ファイルをロックする – Aspose.Cells Cloud API ドキュメント"

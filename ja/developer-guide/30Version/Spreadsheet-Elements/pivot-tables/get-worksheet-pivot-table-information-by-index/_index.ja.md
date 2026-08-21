@@ -3,8 +3,8 @@ title: "Excelワークシート内のピボットテーブルを取得する"
 second_title: "Document"
 linktitle: Get
 type: docs
-url: /pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
+url: /ja/pivot-tables/get/
+aliases: [  /ja/get-worksheet-pivot-table-information-by-index/ ]
 keywords: "Aspose.Cells, ピボットテーブル, Excel, REST API, ワークシートピボットテーブルの取得"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートからピボットテーブルを取得します。リクエスト構文、パラメーター、認証、レスポンススキーマ、エラーハンドリング、および SDK サンプルを含みます。"
 weight: 10

@@ -1,8 +1,8 @@
 ---
 title: "عرض أسطورة المخطط في ورقة عمل"
 type: docs
-url: /charts/legend/show/
-aliases: [/show-chart-legend-in-a-worksheet/]
+url: /ar/charts/legend/show/
+aliases: [  /ar/show-chart-legend-in-a-worksheet/ ]
 weight: 100
 keywords: "Aspose.Cells Cloud, API أسطورة المخطط, أسطورة مخطط Excel, REST PUT لأسطورة المخطط, Aspose API v3.0"
 description: "تعرّف على كيفية عرض أسطورة المخطط في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمن تفاصيل نقطة النهاية، والمعاملات، ومثال cURL، ومقتطفات SDK."

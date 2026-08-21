@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Excel 워크북을 PDF, CSV, HTML 등 다양한 �
 second_title: "문서"
 linktitle: "Excel 변환"
 type: docs
-url: /get-different-formats-files/
+url: /ko/get-different-formats-files/
 aliases:
   - /export-excel-workbook-to-different-file-formats/
   - /export-different-formats/

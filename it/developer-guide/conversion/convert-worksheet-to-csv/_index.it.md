@@ -4,7 +4,7 @@ second_title: "Documenti"
 ArticleTitle: "Come Convertire un Foglio di Calcolo in CSV Utilizzando l'API Aspose.Cells Cloud"
 linktitle: "Convertire Foglio di Lavoro in CSV"
 type: docs
-url: /convert-worksheet-to-csv/
+url: /it/convert-worksheet-to-csv/
 keywords: "Aspose.Cells, conversione CSV, foglio di lavoro in CSV, API REST, foglio di calcolo cloud, Excel in CSV"
 description: "Scopri come convertire un foglio di lavoro specifico da un file Excel in CSV utilizzando l'API Aspose.Cells Cloud (v4.0). Include endpoint, parametri, esempi cURL, codice SDK e gestione degli errori."
 weight: 100

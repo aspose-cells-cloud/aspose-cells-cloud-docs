@@ -3,8 +3,8 @@ title: "Supprimer l’arrière-plan d’une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Supprimer"
 type: docs
-url: /worksheets/background/delete/
-aliases: [/delete-background-or-watermark-of-excel-worksheet/]
+url: /fr/worksheets/background/delete/
+aliases: [  /fr/delete-background-or-watermark-of-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Supprimer l’arrière-plan d’une feuille de calcul, Excel, API REST, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Utilisez l’API REST Aspose.Cells Cloud pour supprimer l’image d’arrière-plan d’une feuille de calcul Excel. Des SDK sont disponibles pour C#, Java, PHP, Ruby, Node.js, Python, Perl et Go."
 weight: 210

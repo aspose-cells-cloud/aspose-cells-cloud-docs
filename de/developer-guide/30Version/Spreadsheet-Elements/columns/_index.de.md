@@ -3,8 +3,8 @@ title: "Arbeiten mit Excel-Spalten"
 second_title: "Dokument"
 linktitle: "Spalten"
 type: docs
-url: /columns/
-aliases: [/working-with-columns/]
+url: /de/columns/
+aliases: [  /de/working-with-columns/ ]
 keywords: "Excel, Spalten, Aspose.Cells Cloud, API, Tabellenkalkulation, Arbeitsblatt, REST-API"
 description: "Detaillierte Anleitung zu den API-Vorgängen von Aspose.Cells Cloud für Excel-Arbeitsblattspalten, einschließlich Abruf, Hinzufügen, Kopieren, Ausblenden, Einblenden, Gruppieren, Aufheben der Gruppierung und Löschen."
 weight: 100

@@ -4,7 +4,7 @@ ArticleTitle: "Aspose.Cells Cloud API を使用して Excel ワークシート�
 second_title: "ドキュメント"
 linktitle: "行"
 type: docs
-url: /rows/add/rows/
+url: /ja/rows/add/rows/
 keywords: "Aspose.Cells Cloud, 行の挿入, Excel ワークシート, REST API, SDK, 複数行の追加"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートに複数の行を挿入する方法を学びます。このガイドでは、エンドポイント、リクエストパラメータ、サンプルの cURL コマンド、および SDK の使用例をカバーしています。"
 weight: 20

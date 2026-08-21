@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Yerel Bir Elektronik Tablo Aralığını CSV Dosyasına Dönüştürme: Adım Adım Kılavuz"
 linktitle: "Aralığı CSV'ye Dönüştür"
 type: docs
-url: /convert-range-to-csv/
+url: /tr/convert-range-to-csv/
 keywords: "Aspose Cells, Aralığı CSV'ye Dönüştür, Excel'den CSV'ye, Excel API, Bulut Elektronik Tablo, Dönüştür, Excel, CSV, Aspose.Cells, Bulut API"
 description: "Aspose.Cells Cloud REST API kullanarak yerel bir Excel çalışma kitabından (XLSX veya XLS) belirli bir aralığı CSV'ye dönüştürmeyi öğrenin. İsteğin sözdizimi, parametreleri, hata yönetimi ve SDK örneklerini içerir."
 ---

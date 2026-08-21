@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Gestione cloud dei file per Excel – Una soluzione efficiente e sicura per l’archiviazione e l’organizzazione intelligente dei file Excel"
 linktype: "docs"
 url: /it/files-and-storage/
-aliases: [/it/working-with-files-and-storage-using-aspose-cells-cloud/]
+aliases: [  /it/working-with-files-and-storage-using-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, API per l’archiviazione file, caricamento file Excel, scaricamento file Excel, copia file, spostamento file, eliminazione file, gestione cartelle, API REST, esempi cURL"
 description: "Guida completa alla gestione di file Excel e cartelle nello storage di Aspose.Cells Cloud. Include operazioni di caricamento, scaricamento, copia, spostamento, eliminazione e gestione delle cartelle, con esempi in cURL, parametri obbligatori e note sull’autenticazione."
 weight: 100

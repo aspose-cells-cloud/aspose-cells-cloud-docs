@@ -3,7 +3,7 @@ title: "احصل على التصفية التلقائية"
 description: "استرجاع وصف التصفية التلقائية من ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API."
 keywords: "التصفية التلقائية، Excel، Aspose.Cells Cloud، REST API، SDK، C#، Java، PHP، Ruby، Node.js، Python، Perl، Go"
 type: docs
-url: /cells/autofilter/get/
+url: /ar/cells/autofilter/get/
 aliases:
   - /get-autofilter-description/
 weight: 50

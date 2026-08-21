@@ -3,7 +3,7 @@ title: "高级 Excel 文件转换"
 second_title: "文档"
 linktype: "高级转换"
 type: docs
-url: /advanced-convert-excel/
+url: /zh/advanced-convert-excel/
 keywords: "Aspose.Cells, Excel 转换, 云 API, SDK"
 description: "Aspose.Cells Cloud REST API 提供强大的功能，支持将 Excel 工作簿转换为多种格式，并可精细控制页面设置、保存选项和打印设置。SDK 支持 Android、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby 和 Swift，便于在多平台无缝集成。"
 weight: 50

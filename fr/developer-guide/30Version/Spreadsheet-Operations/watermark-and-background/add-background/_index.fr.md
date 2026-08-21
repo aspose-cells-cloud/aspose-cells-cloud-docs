@@ -3,7 +3,7 @@ title: "Ajouter une image d'arrière-plan à un classeur"
 second_title: "Document"
 linktitle: "Ajouter"
 type: docs
-url: /add-background-in-excel-file/
+url: /fr/add-background-in-excel-file/
 aliases:
   - /add-background-in-workbook/
   - /workbook/add-background/

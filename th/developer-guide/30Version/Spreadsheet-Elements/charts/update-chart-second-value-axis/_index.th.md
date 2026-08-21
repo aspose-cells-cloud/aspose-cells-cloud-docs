@@ -2,7 +2,7 @@
 title: "อัปเดตแกนค่าที่สองของแผนภูมิ"
 ArticleTitle: "อัปเดตแกนค่าที่สองของแผนภูมิ – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/second-value-axis/update/
+url: /th/charts/second-value-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Chart API, Second Value Axis, Excel, REST, Cloud SDK"
 description: "อัปเดตแกนค่าที่สองของแผนภูมิในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่างคำขอ โค้ดสถานะการตอบกลับ และข้อกำหนดเบื้องต้น"

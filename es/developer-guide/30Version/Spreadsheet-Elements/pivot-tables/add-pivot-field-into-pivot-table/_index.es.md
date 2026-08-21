@@ -3,8 +3,8 @@ title: "Agregar un campo de pivote a una tabla dinámica"
 second_title: "Document"
 linktype: "Add Pivot Field"
 type: docs
-url: /pivot-tables/add-pivot-field/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+url: /es/pivot-tables/add-pivot-field/
+aliases: [  /es/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, tabla dinámica, agregar campo de pivote, REST API, SDK"
 description: "Agregue un campo de pivote a una tabla dinámica existente mediante la API REST de Aspose.Cells Cloud. Incluye detalles de la solicitud, ejemplo de cURL y fragmentos de SDK."
 weight: 40

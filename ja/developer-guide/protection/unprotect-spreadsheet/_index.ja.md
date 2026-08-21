@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Excel パスワード保護を解除 – 開封用および変更用パスワードを即座に解除"
 linktitle: "スプレッドシートの保護を解除"
 type: docs
-url: /unprotect-spreadsheet/
+url: /ja/unprotect-spreadsheet/
 keywords: "保護解除, スプレッドシート, Aspose.Cells, API, Excel, パスワード削除"
 description: "Aspose.Cells Cloud スプレッドシート保護解除 API を使用して、Excel ファイルの開封用および変更用パスワードをプログラムで削除します。.xlsx/.xls 形式、OAuth2 認証、バッチ処理をサポートします。"
 weight: 100

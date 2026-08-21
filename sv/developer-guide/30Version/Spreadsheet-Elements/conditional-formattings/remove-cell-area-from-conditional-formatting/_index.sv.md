@@ -1,8 +1,8 @@
 ---
 title: "Ta bort cellområde – Aspose.Cells Cloud API-dokumentation"
 type: docs
-url: /conditional-formattings/delete-cell-area/
-aliases: [/remove-cell-area-from-conditional-formatting/]
+url: /sv/conditional-formattings/delete-cell-area/
+aliases: [  /sv/remove-cell-area-from-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, ta bort cellområde, API för villkorsformatering, Excel REST API"
 description: "Använd Aspose.Cells Cloud REST API för att ta bort ett specifikt cellområde från villkorsformatering i ett Excel-ark. Innehåller exempel i ASP.NET, Java och Python."
 ArticleTitle: "Ta bort cellområde – Aspose.Cells Cloud API-dokumentation"

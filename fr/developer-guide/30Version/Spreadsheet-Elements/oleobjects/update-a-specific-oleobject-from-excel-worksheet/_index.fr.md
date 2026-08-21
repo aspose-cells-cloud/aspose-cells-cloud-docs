@@ -3,8 +3,8 @@ title: "Mettre à jour un objet OLE dans une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Mettre à jour"
 type: docs
-url: /oleobjects/update/
-aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
+url: /fr/oleobjects/update/
+aliases: [  /fr/update-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "mettre à jour objet OLE, Excel, Aspose.Cells Cloud, API REST, SDK"
 description: "Découvrez comment mettre à jour un objet OLE (image, graphique, etc.) dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut des exemples cURL, SDK, étapes d’authentification et gestion des erreurs."
 weight: 30

@@ -3,7 +3,7 @@ title: "Çalışma Kitabına Arka Plan Resmi Ekle"
 second_title: "Belge"
 linktype: "Ekle"
 type: docs
-url: /add-background-in-excel-file/
+url: /tr/add-background-in-excel-file/
 aliases:
   - /add-background-in-workbook/
   - /workbook/add-background/

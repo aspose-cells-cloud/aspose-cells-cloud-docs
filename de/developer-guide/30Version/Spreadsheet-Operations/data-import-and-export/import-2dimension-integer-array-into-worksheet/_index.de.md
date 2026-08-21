@@ -3,7 +3,7 @@ title: "2D-Ganzzahl-Array in Excel-Arbeitsblatt importieren"
 second_title: "Dokument"
 linktitle: "2D-Ganzzahl-Array importieren"
 type: docs
-url: /import-a-2D-integer-array-into-excel-worksheet/
+url: /de/import-a-2D-integer-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-integer-array-into-excel-worksheet/,

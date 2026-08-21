@@ -1,8 +1,8 @@
 ---
 title: "Diagrammtitel in Excel-Arbeitsmappe aktualisieren"
 type: docs
-url: /charts/title/update/
-aliases: [/update-chart-title-in-excel-worksheet/]
+url: /de/charts/title/update/
+aliases: [  /de/update-chart-title-in-excel-worksheet/ ]
 weight: 160
 keywords: Excel, Aspose.Cells, REST API, Diagrammtitel, Aktualisieren, Cloud SDK
 description: Erfahren Sie, wie Sie den Diagrammtitel in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API, cURL und verschiedenen SDKs aktualisieren.

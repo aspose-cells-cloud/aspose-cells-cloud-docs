@@ -3,8 +3,8 @@ title: "为 Excel 文件添加水印"
 second_title: "文档"
 linktitle: "为 Excel 文件添加水印"
 type: docs
-url: /add-watermark-into-excel-files/
-aliases: [/watermark/]
+url: /zh/add-watermark-into-excel-files/
+aliases: [  /zh/watermark/ ]
 keywords: "为 Excel 添加水印, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）为 Excel 工作簿添加文本水印。包含 cURL 示例、必需参数及响应详情。"
 weight: 39

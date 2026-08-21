@@ -3,7 +3,7 @@ title: "Enregistrer un classeur Excel – API Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "Enregistrer sous"
 type: docs
-url: /save-an-excel-file-as-other-formats-files/
+url: /fr/save-an-excel-file-as-other-formats-files/
 aliases:
   - /convert-excel-workbook-to-different-file-formats/
   - /saveas-other-formats/

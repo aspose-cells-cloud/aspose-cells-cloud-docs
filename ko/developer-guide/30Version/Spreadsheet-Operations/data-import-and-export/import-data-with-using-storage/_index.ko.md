@@ -2,7 +2,7 @@
 title: "스토리지를 사용하여 데이터 가져오기"
 second_title: "문서"
 linktype: "docs"
-url: /import-data-with-using-storage/
+url: /ko/import-data-with-using-storage/
 aliases:
   - /import-data-into-excel-worksheet/
   - /import-data-into-worksheet/

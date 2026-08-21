@@ -3,8 +3,8 @@ title: "การเปลี่ยนชื่อแผ่นงาน Excel"
 second_title: "เอกสาร"
 linktype: "เปลี่ยนชื่อ"
 type: docs
-url: /worksheets/rename/
-aliases: [/rename-excel-worksheet/]
+url: /th/worksheets/rename/
+aliases: [  /th/rename-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, การเปลี่ยนชื่อแผ่นงาน Excel, REST API, ชุดพัฒนาซอฟต์แวร์สเปรดชีต, เปลี่ยนชื่อแผ่นงาน, พื้นที่จัดเก็บบนคลาวด์"
 description: "เปลี่ยนชื่อแผ่นงานในสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API มีชุดพัฒนาซอฟต์แวร์ (SDK) ให้ใช้งานสำหรับ Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby และ Swift"
 weight: 20

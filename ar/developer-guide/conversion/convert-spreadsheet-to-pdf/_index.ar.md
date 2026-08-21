@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيفية تحويل جدول بيانات محلي إلى PDF باستخدام واجهة Aspose.Cells Cloud API"
 linktype: "تحويل جدول البيانات إلى PDF"
 type: docs
-url: /convert-spreadsheet-to-pdf/
+url: /ar/convert-spreadsheet-to-pdf/
 keywords: "Aspose.Cells Cloud، تحويل جدول البيانات إلى PDF، تحويل Excel، واجهة سحابية، إنشاء PDF، واجهة REST، الإصدار 4.0"
 description: "دليل خطوة بخطوة لتحويل جدول بيانات محلي إلى PDF باستخدام واجهة Aspose.Cells Cloud API. يتضمن بنية الطلب، المعاملات، تفاصيل الاستجابة، معالجة الأخطاء، وحالات الاستخدام العملية."
 weight: 100

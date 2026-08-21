@@ -3,7 +3,7 @@ title: "إعداد صفحة ورقة العمل"
 second_title: "الوثيقة"
 linktitle: "إعداد الصفحة"
 type: docs
-url: /page-setup/
+url: /ar/page-setup/
 keywords: "Aspose.Cells, pageSetup, worksheet, print settings, margins, orientation, paper size, header, footer, scaling"
 description: "تعرّف على كيفية تهيئة تنسيق طباعة ورقة عمل Excel باستخدام كائن PageSetup في Aspose.Cells Cloud. يشمل قائمة الخصائص، والقيم الافتراضية، وال نطاقات، وأمثلة على الأكواد بلغات C# وJava وPython."
 weight: 20

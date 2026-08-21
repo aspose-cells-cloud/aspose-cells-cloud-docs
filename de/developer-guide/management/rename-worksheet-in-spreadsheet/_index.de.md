@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So benennen Sie Arbeitsblätter in Excel um – Ändern Sie Blattnamen"
 linktype: "Rename Worksheet in Spreadsheet"
 type: docs
-url: /rename-worksheet-in-spreadsheet/
+url: /de/rename-worksheet-in-spreadsheet/
 keywords: "Arbeitsblatt umbenennen, Aspose.Cells Cloud, Excel API, Tabellenkalkulation, SDK, REST API"
 description: "Benennen Sie Excel-Arbeitsblätter mithilfe der Aspose.Cells Cloud API einfach um. Erfahren Sie, welche Parameter erforderlich sind, sehen Sie cURL-Beispiele und erhalten Sie SDK-Code für C#, Java, Python und mehr."
 weight: 100

@@ -2,7 +2,7 @@
 title: "حذف مخطط من ورقة عمل"
 type: docs
 url: /ar/charts/delete/
-aliases: [/delete-a-chart-from-a-worksheet/]
+aliases: [  /ar/delete-a-chart-from-a-worksheet/ ]
 weight: 40
 keywords:
   - "Aspose.Cells"

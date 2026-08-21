@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – サービスのヘルスチェック（API）"
 second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud ヘルスチェック"
 linktype: "docs"
-url: /check-cloud-service-health/
+url: /ja/check-cloud-service-health/
 keywords: "Aspose.Cells Cloud、API ヘルスチェック、REST ステータス、クラウドサービスモニタリング"
 description: "Aspose.Cells Cloud のヘルス状態をリアルタイムで監視します。GET /v4.0/cells/status/check エンドポイント、パラメーター、レスポンス形式、SDK の例について学習します。"
 weight: 100

@@ -3,8 +3,8 @@ title: "Coincidir con todas las celdas no vacías en una hoja de cálculo de Exc
 second_title: "Documento"
 linktitle: "Coincidir con todas las celdas no vacías"
 type: docs
-url: /autofilter/match-all-non-blank/
-aliases: [/match-all-non-blank-cells-in-the-list/]
+url: /es/autofilter/match-all-non-blank/
+aliases: [  /es/match-all-non-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells Cloud, coincidir celdas no vacías, AutoFiltro, API de Excel"
 description: "Aprenda a usar la API REST de Aspose.Cells Cloud para coincidir con todas las celdas no vacías en una lista de AutoFiltro en una hoja de cálculo de Excel. Incluye endpoint, parámetros, autenticación, esquema de respuesta, códigos de error y ejemplos de SDK."
 ArticleTitle: "Coincidir con todas las celdas no vacías en una hoja de cálculo de Excel mediante la API de Aspose.Cells Cloud"

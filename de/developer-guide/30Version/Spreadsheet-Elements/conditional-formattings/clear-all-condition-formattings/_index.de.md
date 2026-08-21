@@ -1,8 +1,8 @@
 ---
 title: "Bedingte Formatierungen löschen"
 type: docs
-url: /conditional-formattings/clear/
-aliases: [/clear-all-condition-formattings/]
+url: /de/conditional-formattings/clear/
+aliases: [  /de/clear-all-condition-formattings/ ]
 keywords: "Aspose.Cells Cloud, REST API, bedingte Formatierung löschen, Excel, Arbeitsblätter, JWT, v3.2"
 description: "Löschen Sie alle bedingten Formatierungsregeln aus einem Arbeitsblatt mithilfe der Aspose.Cells Cloud API (v3.2). Erfahren Sie mehr zur Anforderungssyntax, den erforderlichen Parametern, den Authentifizierungsschritten und sehen Sie Beispielcodes in verschiedenen SDKs."
 weight: 80

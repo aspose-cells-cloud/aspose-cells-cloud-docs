@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Trova e sostituisci il testo in un foglio di calcolo remoto con l'API Aspose.Cells Cloud"
 linktitle: "Sostituisci il contenuto di un foglio di calcolo remoto"
 type: docs
-url: /replace-content-in-remote-worksheet/
+url: /it/replace-content-in-remote-worksheet/
 keywords: "Aspose.Cells, sostituisci testo, foglio di calcolo remoto, API Excel, foglio di calcolo cloud, trova e sostituisci, API REST"
 description: "Sostituisci il testo in un foglio di calcolo specifico di un file Excel archiviato su Aspose Cloud. Supporta cartelle di lavoro protette da password, ricerche sensibili alla regione e aggiornamenti in blocco."
 weight: 100

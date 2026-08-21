@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Så här konverterar du lokalt arbetsbladsspreadsheetdata till en bildfil: Steg-för-steg-guide"
 linktype: "Konvertera arbetsblad till bild"
 type: docs
-url: /convert-worksheet-to-image/
+url: /sv/convert-worksheet-to-image/
 keywords: "Aspose.Cells Cloud, arbetsblad till bild, konvertera arbetsblad till bild, Excel till PNG, Excel till SVG, Excel till TIFF, Excel till JPEG, Excel till BMP, API för bildkonvertering, REST API, export av spreadsheetbilder, SDK-exempel"
 description: "Steg-för-steg-guide för att konvertera ett Excel-arbetsblad till bildformat (PNG, SVG, TIFF, JPEG, BMP, etc.) med Aspose.Cells Cloud API, inklusive begärparametrar, svarsinformation, felkoder, användningsscenarier och SDK-kodexempel."
 weight: 100

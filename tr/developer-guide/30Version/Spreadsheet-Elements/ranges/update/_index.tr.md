@@ -3,7 +3,7 @@ title: "Excel çalışma sayfasından aralık içeriğini nasıl güncellersiniz
 second_title: "Belge"
 linktitle: "Güncelle"
 type: docs
-url: /ranges/update/
+url: /tr/ranges/update/
 keywords: "Excel, aralık güncelleme, Aspose.Cells Cloud, REST API, elektronik tablo, aralık stili, aralık değerleri, satır yüksekliği, sütun genişliği"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında aralık içeriğini güncelleştirin. Desteklenen SDK'lar aracılığıyla stilleri, değerleri, satır yüksekliklerini ve sütun genişliklerini değiştirin."
 weight: 20

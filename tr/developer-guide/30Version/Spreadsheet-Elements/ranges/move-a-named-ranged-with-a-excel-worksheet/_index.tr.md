@@ -3,8 +3,8 @@ title: "Excel çalışma sayfası ile adlandırılmış bir aralığı taşıma"
 second_title: "Belge"
 linktitle: "Taşı"
 type: docs
-url: /ranges/move/
-aliases: [/move-a-named-range-with-an-excel-worksheet/]
+url: /tr/ranges/move/
+aliases: [  /tr/move-a-named-range-with-an-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, adlandırılmış aralığı taşı, Excel çalışma sayfası, REST API, aralık taşıma, SDK örnekleri"
 description: "Aspose.Cells Cloud REST API v3.0 kullanarak bir Excel çalışma sayfasında adlandırılmış bir aralığı nasıl taşıyacağınızı öğrenin. Uç nokta ayrıntıları, kimlik doğrulama, örnekler ve SDK kod örnekleri içerir."
 weight: 20

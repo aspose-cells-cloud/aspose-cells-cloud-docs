@@ -3,7 +3,7 @@ title: "استرجاع البيانات الوصفية من ملفات Excel"
 second_title: "مستند"
 linktitle: "استرجاع دون استخدام التخزين"
 type: docs
-url: /metadata/get/
+url: /ar/metadata/get/
 keywords: "Aspose.Cells, Excel, البيانات الوصفية, REST API, SDK في السحابة"
 description: "استرجاع البيانات الوصفية المدمجة أو المخصصة من أوراق عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. يشمل تنسيق الطلب، المعلمات، كود مثال لـ SDK، ومعالجة الأخطاء."
 weight: 23

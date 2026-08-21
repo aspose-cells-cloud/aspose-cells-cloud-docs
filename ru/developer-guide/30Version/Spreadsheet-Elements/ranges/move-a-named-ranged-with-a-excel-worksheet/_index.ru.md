@@ -3,8 +3,8 @@ title: "Перемещение именованного диапазона в р
 second_title: "Документ"
 linktitle: "Переместить"
 type: docs
-url: /ranges/move/
-aliases: [/move-a-named-range-with-an-excel-worksheet/]
+url: /ru/ranges/move/
+aliases: [  /ru/move-a-named-range-with-an-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, перемещение именованного диапазона, рабочая книга Excel, REST API, перемещение диапазона, примеры SDK"
 description: "Узнайте, как переместить именованный диапазон в пределах рабочей книги Excel с помощью REST API Aspose.Cells Cloud v3.0. Приведены сведения об эндпоинте, аутентификации, примеры и код SDK."
 weight: 20

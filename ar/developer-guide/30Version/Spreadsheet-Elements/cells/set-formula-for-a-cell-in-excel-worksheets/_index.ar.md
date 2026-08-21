@@ -1,7 +1,7 @@
 ---
 title: "ضبط صيغة الخلية في أوراق عمل Excel"
 type: docs
-url: /set-formula-for-a-cell-in-excel-worksheets/
+url: /ar/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
 keywords: "Excel, Aspose.Cells, REST API, ضبط صيغة, ورقة عمل, خلية, Cloud SDK, cURL"
 description: "تعلم كيفية ضبط صيغة لخلية محددة في ورقة عمل Excel باستخدام Aspose.Cells Cloud REST API. يتضمن مثال cURL، وقائمة كاملة بالمعلمات، وتعامل الأخطاء، وأمثلة لكود SDK."

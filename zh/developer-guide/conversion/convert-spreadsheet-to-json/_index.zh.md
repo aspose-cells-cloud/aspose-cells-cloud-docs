@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何使用 Aspose.Cells Cloud API 将本地电子表格转换为 JSON"
 linktype: "convert-spreadsheet-to-json/"
 type: docs
-url: /convert-spreadsheet-to-json/
+url: /zh/convert-spreadsheet-to-json/
 keywords: "Aspose Cells Cloud, 将电子表格转换为 JSON, Excel 转 JSON API, Aspose.Cells Cloud API, REST API, 电子表格转换"
 description: "了解如何使用 Aspose.Cells Cloud API 将本地 Excel 文件转换为 JSON。包含端点、参数、示例代码及错误处理，便于无缝集成。"
 weight: 100

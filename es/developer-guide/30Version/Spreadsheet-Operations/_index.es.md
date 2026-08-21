@@ -2,7 +2,7 @@
 title: "Operaciones de hojas de cálculo"
 second_title: "Documento"
 type: docs
-url: /spreadsheet-operations/
+url: /es/spreadsheet-operations/
 keywords: "Aspose Cells Cloud, Excel API, operaciones de hojas de cálculo, ajuste automático, procesamiento por lotes, protección de archivos, conversión, importación y exportación, procesamiento de texto"
 description: "Aprenda a realizar operaciones en hojas de cálculo, como ajuste automático, conversión por lotes, protección, fusión y búsqueda-reemplazo, utilizando la API REST de Aspose.Cells Cloud. Incluye notas breves de uso y orientación con ejemplos de código."
 weight: 100

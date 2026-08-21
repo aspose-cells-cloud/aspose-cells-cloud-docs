@@ -3,7 +3,7 @@ title: "Otomatik Filtre Al"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından Otomatik Filtre açıklamasını alın."
 keywords: "Otomatik Filtre, Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 type: docs
-url: /cells/autofilter/get/
+url: /tr/cells/autofilter/get/
 aliases:
   - /get-autofilter-description/
 weight: 50

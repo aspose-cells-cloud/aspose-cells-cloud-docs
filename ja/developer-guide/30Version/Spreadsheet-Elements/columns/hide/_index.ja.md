@@ -3,7 +3,7 @@ title: "Excelワークシートで列を非表示にする"
 second_title: "Document"
 linktitle: "Hide"
 type: docs
-url: /columns/hide/
+url: /ja/columns/hide/
 aliases:
   - /hide-columns-in-excel-worksheet/
   - /hide-columns-in-an-excel-worksheet/

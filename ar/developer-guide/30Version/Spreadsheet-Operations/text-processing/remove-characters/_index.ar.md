@@ -3,7 +3,7 @@ title: "إزالة الأحرف من ملفات Excel – واجهة برمجة 
 second_title: "مستند"
 linktitle: "إزالة الأحرف"
 type: docs
-url: /excel-remove-characters/
+url: /ar/excel-remove-characters/
 keywords: "إزالة الأحرف، Aspose.Cells، واجهة برمجة تطبيقات Excel، معالجة النصوص، سحابة"
 description: "تعلم كيفية إزالة الأحرف أو مجموعات الأحرف أو السلاسل الفرعية من أوراق عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. يتضمن مخطط الطلب، مثال cURL، كود SDK، وتعامل مع الأخطاء."
 weight: 100

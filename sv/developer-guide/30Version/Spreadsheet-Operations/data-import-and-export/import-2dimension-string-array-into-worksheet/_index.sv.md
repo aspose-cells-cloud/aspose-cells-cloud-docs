@@ -3,7 +3,7 @@ title: "Importera 2D-strängmatris till Excel-arbetsblad"
 second_title: "Dokument"
 linktitle: "Importera 2D-strängmatris"
 type: docs
-url: /import-a-2d-string-array-into-excel-worksheet/
+url: /sv/import-a-2d-string-array-into-excel-worksheet/
 aliases:
   [
     "/import-2dimension-string-array-into-excel-worksheet/",

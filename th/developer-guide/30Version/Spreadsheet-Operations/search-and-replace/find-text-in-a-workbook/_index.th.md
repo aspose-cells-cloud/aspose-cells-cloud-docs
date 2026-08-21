@@ -3,8 +3,8 @@ title: "ค้นหาข้อความในสมุดงาน Excel"
 second_title: "เอกสาร"
 linktitle: "ค้นหาในสมุดงาน"
 type: docs
-url: /workbook/find-text/
-aliases: [/find-text-in-a-workbook/]
+url: /th/workbook/find-text/
+aliases: [  /th/find-text-in-a-workbook/ ]
 weight: 30
 keywords: "Aspose.Cells, ค้นหาข้อความ, Excel API, การค้นหาในสมุดงาน"
 description: "เรียนรู้วิธีใช้ Aspose.Cells Cloud API เพื่อ **ค้นหาข้อความ** ในสมุดงาน Excel (XLSX, ODS) พร้อมตัวอย่าง cURL, โค้ดตัวอย่าง SDK และโครงสร้างการตอบกลับ เริ่มต้นใช้งานได้เลย"

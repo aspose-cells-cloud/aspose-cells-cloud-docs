@@ -3,7 +3,7 @@ title: "นำเข้าอาเรย์แบบสองมิติแบ
 second_title: "เอกสาร"
 linktype: "นำเข้าอาเรย์แบบสองมิติแบบ double"
 type: docs
-url: /import-a-2d-double-array-into-excel-worksheet/
+url: /th/import-a-2d-double-array-into-excel-worksheet/
 aliases:
   [
     "/import-2dimension-double-array-into-excel-worksheet/",

@@ -3,7 +3,7 @@ title: "Excel çalışma sayfasında sütunları gizle"
 second_title: "Belge"
 linktitle: "Gizle"
 type: docs
-url: /columns/hide/
+url: /tr/columns/hide/
 aliases:
   - /hide-columns-in-excel-worksheet/
   - /hide-columns-in-an-excel-worksheet/

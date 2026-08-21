@@ -4,8 +4,8 @@ ArticleTitle: "Excelワークシート上のすべての図形を削除する �
 second_title: "ドキュメント"
 linktitle: "クリア"
 type: docs
-url: /shapes/clear/
-aliases: [/delete-all-shapes-inside-the-worksheet/]
+url: /ja/shapes/clear/
+aliases: [  /ja/delete-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, すべての図形を削除, Excelワークシート, REST API, SDK, cURL, .NET, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift"
 description: "Aspose.Cells Cloud REST APIを使用してExcelワークシート上のすべての図形を削除します。この操作はcURLおよび幅広いSDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go、Android、Swift）を介して利用可能です。"
 weight: 40

@@ -3,8 +3,8 @@ title: "حذف أوراق عمل متعددة في Excel"
 second_title: "Document"
 linktitle: "أوراق عمل متعددة"
 type: docs
-url: /worksheets/delete-multiple/
-aliases: [/delete-excel-worksheets/]
+url: /ar/worksheets/delete-multiple/
+aliases: [  /ar/delete-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, حذف أوراق عمل متعددة, Excel API, REST API, v3.0, حذف أوراق عمل"
 description: "تعلم كيفية حذف عدة أوراق عمل من ملف Excel باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمن نقطة نهاية آمنة عبر HTTPS، والمعاملات المطلوبة، ومثالًا مُصححًا لاستخدام cURL، ومقتطفات كود من SDKs للغات برمجة متعددة."
 weight: 20

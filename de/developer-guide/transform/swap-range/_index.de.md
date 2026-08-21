@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Daten zwischen Spalten, Zeilen und Zellen in Excel austauschen/täuschen"
 linktitle: "Bereich tauschen"
 type: docs
-url: /swap-range/
+url: /de/swap-range/
 keywords: "Aspose Cells, Excel API, Bereich tauschen, Cloud-Tabellenkalkulation"
 description: "Tauschen Sie Spalten, Zeilen oder Bereiche in Excel-Dateien mit der Aspose.Cells Cloud API aus. Behalten Sie Formatierung, Formeln und Zellbezüge in einem einzigen Aufruf bei."
 weight: 100

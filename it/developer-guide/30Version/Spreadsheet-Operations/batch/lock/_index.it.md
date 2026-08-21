@@ -2,7 +2,7 @@
 title: "Blocco in Batch di File Excel"
 second_title: "Documento"
 type: docs
-url: /batch/lock
+url: /it/batch/lock
 keywords: "blocco in batch, Excel, Aspose.Cells, API Cloud, foglio di calcolo, protezione file"
 description: "L'API Cloud Aspose.Cells consente il blocco in batch di più file Excel. Utilizza l'endpoint REST o uno dei SDK supportati (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, ecc.) per bloccare i file in blocco."
 weight: 100

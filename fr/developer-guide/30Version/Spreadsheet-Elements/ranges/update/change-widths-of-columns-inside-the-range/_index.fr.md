@@ -4,8 +4,8 @@ ArticleTitle: "Modifier les largeurs de colonnes dans une plage – Aspose.Cells
 second_title: "Document"
 linktitle: "Largeur de colonne"
 type: docs
-url: /ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
+url: /fr/ranges/update/column-width/
+aliases: [  /fr/change-widths-of-columns-inside-the-range/ ]
 keywords: "Aspose.Cells, largeur de colonne, API REST, Excel, SDK, plage, cloud"
 description: "Découvrez comment modifier les largeurs de colonnes dans une plage à l’aide de l’API REST Aspose.Cells Cloud ou des SDK (C#, Java, Python, etc.). Inclut cURL, détails sur la requête/réponse et étapes d’authentification."
 weight: 74

@@ -1,8 +1,8 @@
 ---
 title: "Получить условное форматирование"
 type: docs
-url: /conditional-formattings/get/
-aliases: [/get-conditional-formatting/]
+url: /ru/conditional-formattings/get/
+aliases: [  /ru/get-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, REST API, условное форматирование, Excel, электронная таблица"
 description: "Получение правил условного форматирования из рабочего листа с помощью REST API Aspose.Cells Cloud."
 weight: 10

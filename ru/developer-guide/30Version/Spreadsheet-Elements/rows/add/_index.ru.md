@@ -3,7 +3,7 @@ title: "Как добавить строки в рабочий лист Excel"
 second_title: "Документ"
 linktitle: "Добавление"
 type: docs
-url: /rows/add/
+url: /ru/rows/add/
 keywords: "Aspose.Cells, добавление строк, Excel API, REST, C#, Java, Python, Node.js"
 description: "Пошаговое руководство по добавлению одной или нескольких строк в рабочий лист Excel с использованием Aspose.Cells Cloud REST API, с примерами кода для C#, Java, Python и Node.js."
 weight: 20

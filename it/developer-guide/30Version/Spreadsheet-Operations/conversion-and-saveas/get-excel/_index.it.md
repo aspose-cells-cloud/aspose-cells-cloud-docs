@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Convertire il Workbook Excel in PDF, CSV, HTML e 
 second_title: "Documento"
 linktitle: "Converti Excel"
 type: docs
-url: /get-different-formats-files/
+url: /it/get-different-formats-files/
 aliases:
   - /export-excel-workbook-to-different-file-formats/
   - /export-different-formats/

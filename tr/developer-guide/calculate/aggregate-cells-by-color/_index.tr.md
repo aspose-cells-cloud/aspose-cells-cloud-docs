@@ -4,7 +4,7 @@ second_title: "Doküman"
 ArticleTitle: "Elektronik Tablo/Excel'de Renge Göre Topla, Say, Ortalama, En Yüksek ve En Düşük Değerleri Bul"
 LinkTitle: "Renklerine Göre Hücreleri Toplu İşlem Yap"
 type: docs
-url: /aggregate-cells-by-color/
+url: /tr/aggregate-cells-by-color/
 keywords: "Aspose, Cells, Excel, API, aggregate, color, sum, count, average, min, max"
 description: "Aspose.Cells Cloud API ile Excel hücrelerini dolgu veya yazı tipi rengine göre toplama, sayma, ortalama, en düşük ve en yüksek değerleri bulma gibi toplu işlemler yapın. Uç noktayı, parametreleri, kimlik doğrulamayı ve SDK örneklerini öğrenin."
 weight: 100

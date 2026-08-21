@@ -3,8 +3,8 @@ title: "Разъединение ячеек в диапазоне"
 second_title: "Документ"
 linktitle: "Разъединить"
 type: docs
-url: /ranges/unmerge/
-aliases: [/unmerge-merged-cells-of-the-range/]
+url: /ru/ranges/unmerge/
+aliases: [  /ru/unmerge-merged-cells-of-the-range/ ]
 keywords: "Aspose.Cells Cloud, разъединение ячеек, Excel API, диапазон рабочего листа, REST API"
 description: "Узнайте, как использовать API Aspose.Cells Cloud для разъединения объединённых ячеек в заданном диапазоне рабочего листа. Включает конечную точку, параметры, пример cURL и фрагменты кода SDK для C#, Java, Python и других языков."
 weight: 20

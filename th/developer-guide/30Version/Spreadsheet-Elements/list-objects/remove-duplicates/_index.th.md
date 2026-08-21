@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktype: "ลบรายการที่ซ้ำกัน"
 type: docs
 keywords: "ลบรายการที่ซ้ำกัน, listobject, API ของ Aspose.Cells Cloud, Excel, REST"
-url: /list-objects/remove-duplicates/th/
+url: /th/list-objects/remove-duplicates/th/
 description: "เรียนรู้วิธีการลบแถวที่ซ้ำกันออกจาก ListObject ในแผ่นงาน Excel โดยใช้ REST API ของ Aspose.Cells Cloud ซึ่งรวมถึง endpoint, พารามิเตอร์, การตรวจสอบสิทธิ์ และตัวอย่างคำขอและคำตอบ"
 weight: 20
 ---

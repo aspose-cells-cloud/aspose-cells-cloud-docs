@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Come salvare un foglio di calcolo in un altro formato su archiviazione remota: Guida passo dopo passo"
 linktitle: "Salva foglio di calcolo come"
 type: docs
-url: /save-spreadsheet-as/
+url: /it/save-spreadsheet-as/
 keywords: "Aspose Cells, conversione foglio di calcolo, salva come, API, XLSX in PDF, archiviazione cloud, Excel in PDF, esportazione CSV, conversione cloud"
 description: "Scopri come salvare un foglio di calcolo memorizzato in Aspose Cloud in un altro formato (XLSX, PDF, CSV, ecc.) utilizzando l'API Aspose.Cells Cloud per il salvataggio del foglio di calcolo. Include sintassi della richiesta, parametri, esempio curl e codice SDK."
 weight: 100

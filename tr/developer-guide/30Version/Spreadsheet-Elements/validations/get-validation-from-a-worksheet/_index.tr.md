@@ -3,8 +3,8 @@ title: "Excel çalışma sayfasından bir dizine göre çalışma sayfası doğr
 second_title: "Belge"
 linktitle: "Al"
 type: docs
-url: /validations/get/
-aliases: [/get-validation-from-a-worksheet/]
+url: /tr/validations/get/
+aliases: [  /tr/get-validation-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, çalışma sayfası doğrulama API'si, dizine göre doğrulama alma, Excel REST API, Aspose.Cells SDK"
 description: "Aspose.Cells Cloud API'sini (v3.0) kullanarak bir Excel defterinden sıfır tabanlı dizine göre bir çalışma sayfası doğrulaması alın. cURL örneği, yanıt şeması, hata kodları ve C#, Java, Python ve daha fazlası için SDK snippet'leri içerir."
 weight: 10

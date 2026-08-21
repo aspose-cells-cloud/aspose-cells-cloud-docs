@@ -2,7 +2,7 @@
 title: "การแบ่งไฟล์เป็นชุด"
 second_title: "เอกสาร"
 type: docs
-url: /batch/split
+url: /th/batch/split
 keywords: "การแบ่งไฟล์เป็นชุด, Aspose.Cells Cloud, REST API, Excel, PDF, CSV, JSON, สเปรดชีต, Cloud SDK"
 description: "เอกสารประกอบสำหรับ API การแบ่งไฟล์เป็นชุดของ Aspose.Cells Cloud ซึ่งช่วยแบ่งไฟล์สเปรดชีตออกเป็นหลายรูปแบบ เช่น PDF, CSV หรือ JSON ประกอบด้วยรายละเอียดคำขอ ตัวอย่างคำสั่ง cURL และวิธีการใช้งาน SDK บนภาษาโปรแกรมต่างๆ"
 weight: 100

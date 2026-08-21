@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud がサポートするファイル形式：Excel、PDF、CSV、JSON、Markdown など"
 linktitle: "サポートされるファイル形式"
 type: docs
-url: /supported-file-formats/
+url: /ja/supported-file-formats/
 description: "Aspose.Cells Cloud がサポートするファイル形式の全リストを確認してください。Excel、CSV、PDF、JSON、Markdown、ODS などをインポート、エクスポート、変換できます。"
 weight: 40
 keywords: "Aspose.Cells Cloud、サポートされるファイル形式、Excel、XLSX、CSV、PDF、JSON、Markdown、ODS、画像形式、スプレッドシート形式、ドキュメント変換"

@@ -4,7 +4,7 @@ secondtitle: "Dokument"
 ArticleTitle: "Massersättning av text i lokala Excel-filer – Sök- och ersätt-API"
 linktitle: "Ersätt kalkylbladsinnehåll"
 type: docs
-url: /replace-spreadsheet-content/
+url: /sv/replace-spreadsheet-content/
 keywords: "ersätt text i Excel, Aspose.Cells sök och ersätt, API för lokala kalkylark, ersätt Excel-fil, API för att ersätta innehåll"
 description: "Ersätt text i lokala Excel-arbetsböcker utan att ladda upp till molnet. Använd Aspose.Cells Clouds sök- och ersätt-API för att uppdatera specifika intervall, kalkylblad eller hela filer i ett enda anrop."
 weight: 100

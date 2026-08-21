@@ -3,8 +3,8 @@ title: "Desagrupar filas en una hoja de cálculo de Excel"
 second_title: "Document"
 linktitle: "Desagrupar"
 type: docs
-url: /rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
+url: /es/rows/ungroup/
+aliases: [  /es/ungroup-rows-in-excel-worksheet/ ]
 keywords: "desagrupar filas, Excel, Aspose.Cells Cloud, REST API, SDK, hoja de cálculo"
 description: "Aprenda cómo desagrupar filas en una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud y los SDK para diversos lenguajes de programación."
 weight: 70

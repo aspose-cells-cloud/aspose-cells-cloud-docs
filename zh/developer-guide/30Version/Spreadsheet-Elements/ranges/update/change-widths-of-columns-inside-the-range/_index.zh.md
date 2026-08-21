@@ -4,8 +4,8 @@ ArticleTitle: "修改范围内列的宽度 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktype: "文档"
 type: docs
-url: /ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
+url: /zh/ranges/update/column-width/
+aliases: [  /zh/change-widths-of-columns-inside-the-range/ ]
 keywords: "Aspose.Cells, 列宽, REST API, Excel, SDK, 范围, 云服务"
 description: "了解如何使用 Aspose.Cells Cloud REST API 或 SDK（C#、Java、Python 等）修改范围内列的宽度。包含 cURL 示例、请求/响应详情及认证步骤。"
 weight: 74

@@ -1,7 +1,7 @@
 ---
 title: "ワークシートのハイパーリンクを削除する"
 type: docs
-url: /hyperlinks/delete/
+url: /ja/hyperlinks/delete/
 description: "Aspose.Cells Cloud API を使用して、インデックスでワークシートのハイパーリンクを削除します。必要なパラメーター、認証方法、および C#、Java、Python などでのコード例を学習します。"
 keywords: "Aspose.Cells, Cloud, delete hyperlink, Excel API, REST, worksheet hyperlink"
 ArticleTitle: "ワークシートのハイパーリンクを削除する – Aspose.Cells Cloud API ドキュメント"

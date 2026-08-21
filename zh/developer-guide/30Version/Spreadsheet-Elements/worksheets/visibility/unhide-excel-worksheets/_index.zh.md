@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "取消隐藏"
 type: docs
 url: /zh/worksheets/unhide/
-aliases: [/unhide-excel-worksheets/]
+aliases: [  /zh/unhide-excel-worksheets/ ]
 keywords: "Aspose.Cells, 取消隐藏工作表, Excel API, 云电子表格, REST, 工作表可见性, Excel 工作簿"
 description: "了解如何使用 Aspose.Cells Cloud REST API 取消隐藏 Excel 工作簿中的工作表。包含请求详情、cURL 示例以及多种编程语言的 SDK 代码片段。"
 weight: 60

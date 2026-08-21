@@ -1,8 +1,8 @@
 ---
 title: "Effacer le formatage conditionnel"
 type: docs
-url: /conditional-formattings/clear/
-aliases: [/clear-all-condition-formattings/]
+url: /fr/conditional-formattings/clear/
+aliases: [  /fr/clear-all-condition-formattings/ ]
 keywords: "Aspose.Cells Cloud, API REST, effacer le formatage conditionnel, Excel, feuilles de calcul, JWT, v3.2"
 description: "Supprimer toutes les règles de formatage conditionnel d’une feuille de calcul à l’aide de l’API Aspose.Cells Cloud (v3.2). Découvrez la syntaxe de la requête, les paramètres requis, les étapes d’authentification et consultez des exemples de code dans plusieurs SDK."
 weight: 80

@@ -3,7 +3,7 @@ title: "Excel Çalışma Sayfasında Görünürlük ile Çalışma"
 second_title: "Belge"
 linktitle: "Görünürlük"
 type: docs
-url: /worksheets/panes/
+url: /tr/worksheets/panes/
 keywords: "Aspose.Cells Cloud, çalışma sayfası gizleme API'si, çalışma sayfası gösterme API'si, Excel çalışma sayfası görünürlüğü, REST API Excel, Aspose.Cells v3.0"
 description: "Aspose.Cells Cloud REST API kullanarak Excel çalışma sayfalarını programlı olarak gizleme veya gösterme konusunda bilgi edinin. İstek URL'leri, cURL ve .NET SDK örnekleri, hata işleme ve sürüm-özel notları içerir."
 weight: 20

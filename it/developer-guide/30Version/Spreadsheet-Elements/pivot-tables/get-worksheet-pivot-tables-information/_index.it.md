@@ -3,8 +3,8 @@ title: "Ottieni tutte le tabelle pivot in un foglio Excel"
 second_title: "Document"
 linktitle: Ottieni tutte
 type: docs
-url: /pivot-tables/get-all/
-aliases: [/get-worksheet-pivot-tables-information/]
+url: /it/pivot-tables/get-all/
+aliases: [  /it/get-worksheet-pivot-tables-information/ ]
 keywords: "ottieni tutte le tabelle pivot, Aspose.Cells Cloud API, Excel PivotTable, REST API"
 description: "Recupera tutte le tabelle pivot da un foglio Excel tramite l’API Aspose.Cells Cloud. Include endpoint, parametri, fasi di autenticazione, esempi cURL e SDK per l’API PivotTables."
 weight: 20

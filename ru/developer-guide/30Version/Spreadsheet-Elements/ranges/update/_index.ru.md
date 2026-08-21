@@ -3,7 +3,7 @@ title: "Как обновить содержимое диапазона в ли�
 second_title: "Документ"
 linktype: "Обновление"
 type: docs
-url: /ranges/update/
+url: /ru/ranges/update/
 keywords: "Excel, обновление диапазона, Aspose.Cells Cloud, REST API, электронная таблица, стиль диапазона, значения диапазона, высота строки, ширина столбца"
 description: "Обновление содержимого диапазона в листе Excel с помощью REST API Aspose.Cells Cloud. Изменение стилей, значений, высот строк и ширин столбцов с помощью поддерживаемых SDK."
 weight: 20

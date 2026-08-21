@@ -2,7 +2,7 @@
 title: "Chart Alanı Doldurma Biçimini Al – Aspose.Cells Cloud API (v3.0)"
 type: docs
 url: /tr/charts/chart-area/fill-format/get/
-aliases: [/tr/charts/chart-area/fill-format/get/]
+aliases: [  /tr/charts/chart-area/fill-format/get/ ]
 weight: 70
 keywords:
   - "Aspose.Cells"

@@ -3,7 +3,7 @@ title: "Excel 워크시트에서 유효성 검사 업데이트"
 second_title: "문서"
 linktitle: "업데이트"
 type: docs
-url: /validations/update/
+url: /ko/validations/update/
 keywords: "Aspose.Cells Cloud, Excel 유효성 검사 업데이트, REST API, 워크시트 유효성 검사, Excel API"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 파일의 워크시트 유효성 검사를 업데이트하는 방법으로, cURL 예제 및 여러 프로그래밍 언어의 SDK 코드 스니펫을 제공합니다."
 weight: 10

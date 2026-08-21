@@ -3,7 +3,7 @@ title: "ワークシートのページ設定を設定する"
 second_title: "Document"
 linktitle: "ページ設定を設定する"
 type: docs
-url: /set-page-setup/
+url: /ja/set-page-setup/
 keywords: "Aspose.Cells, Excel, ページ設定, REST API, ワークシート, クラウドSDK"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートのページ設定を設定する方法を学びます。リクエストの詳細、安全な HTTPS cURL の例、レスポンスのステータスコード、および複数のプログラミング言語の SDK コードスニペットが含まれます。"
 weight: 20

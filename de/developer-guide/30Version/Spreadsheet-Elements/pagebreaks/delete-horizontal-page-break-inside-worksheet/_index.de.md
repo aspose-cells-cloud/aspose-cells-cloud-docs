@@ -3,8 +3,8 @@ title: "Horizontale Seitenumbrüche löschen"
 ArticleTitle: "Aspose.Cells Cloud – Horizontale Seitenumbrüche löschen (REST API)"
 second_title: "Dokument"
 linktype: "docs"
-url: /page-breaks/delete-horizontal-page-break/
-aliases: [/delete-horizontal-page-break-inside-worksheet/]
+url: /de/page-breaks/delete-horizontal-page-break/
+aliases: [  /delete-horizontal-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Horizontale Seitenumbrüche löschen, Excel-Arbeitsblatt, REST API, SDK"
 description: "Löschen Sie einen horizontalen Seitenumbruch aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API. SDKs verfügbar für C#, Java, PHP, Ruby, Node.js, Python, Perl, Go."
 weight: 50

@@ -1,8 +1,8 @@
 ---
 title: "Обновление свойств диаграммы"
 type: docs
-url: /charts/properties/update/
-aliases: [/update-chart-properties/]
+url: /ru/charts/properties/update/
+aliases: [  /ru/update-chart-properties/ ]
 weight: 160
 keywords: "Aspose.Cells, диаграмма, обновление, Excel, REST API, SDK"
 description: "Узнайте, как обновлять свойства диаграммы (тип, заголовок, легенда и т.д.) в книге Excel с помощью Aspose.Cells Cloud REST API (v3.0). Включает endpoint, параметры, пример cURL и фрагменты кода SDK для C#, Java, PHP, Ruby, Node.js, Perl и Go."

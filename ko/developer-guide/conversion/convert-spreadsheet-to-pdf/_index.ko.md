@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud API를 사용하여 로컬 스프레드시트를 PDF로 변환하는 방법"
 linktitle: "스프레드시트를 PDF로 변환"
 type: docs
-url: /convert-spreadsheet-to-pdf/
+url: /ko/convert-spreadsheet-to-pdf/
 keywords: "Aspose.Cells Cloud, 스프레드시트를 PDF로, Excel 변환, 클라우드 API, PDF 생성, REST API, v4.0"
 description: "Aspose.Cells Cloud API를 사용하여 로컬 스프레드시트를 PDF로 변환하는 단계별 가이드입니다. 요청 구문, 매개변수, 응답 세부 정보, 오류 처리 및 실용적인 사용 사례를 포함합니다."
 weight: 100

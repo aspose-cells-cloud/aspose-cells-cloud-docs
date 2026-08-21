@@ -3,8 +3,8 @@ title: "Establecer el zoom en una hoja de cálculo de Excel – Aspose.Cells Clo
 second_title: "Documento"
 linktitle: "Zoom"
 type: docs
-url: /worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
+url: /es/worksheets/zoom/
+aliases: [  /es/set-zoom-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, zoom de Excel, zoom de hoja de cálculo, API REST, SDK en la nube, automatización de Excel"
 description: "Aprenda a establecer el zoom de la hoja de cálculo (10–400 %) mediante la API de Aspose.Cells Cloud v3.0. Incluye ejemplos en cURL, SDK y manejo de errores."
 weight: 20

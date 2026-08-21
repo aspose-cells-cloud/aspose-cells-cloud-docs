@@ -3,7 +3,7 @@ title: "البحث عن نص في ملفات Excel – واجهة برمجة ا�
 description: "ابحث عن نص محدد في ملفات Excel (XLS وXLSX وXLSM وXLSB) وملفات OpenDocument Spreadsheet (ODS) باستخدام واجهة برمجة التطبيقات السحابية Aspose.Cells. تتضمن تفاصيل الطلب وأمثلة باستخدام cURL وSDKs، بالإضافة إلى معالجة الأخطاء."
 keywords: "Aspose.Cells، Excel، بحث، API، REST"
 type: docs
-url: /cells/search/
+url: /ar/cells/search/
 aliases:
   - /search/
   - /search-without-using-storage/

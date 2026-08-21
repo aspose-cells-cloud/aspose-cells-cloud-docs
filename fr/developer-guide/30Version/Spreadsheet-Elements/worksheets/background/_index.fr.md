@@ -3,7 +3,7 @@ title: "Ajouter ou supprimer une image d’arrière-plan de feuille de calcul �
 second_title: "Document"
 linktitle: "Arrière-plan"
 type: docs
-url: /worksheets/background/
+url: /fr/worksheets/background/
 keywords: "Aspose.Cells Cloud, arrière-plan de feuille de calcul, API Excel, ajouter une image d’arrière-plan, supprimer l’arrière-plan de feuille de calcul, exemples de SDK"
 description: "Découvrez comment ajouter ou supprimer une image d’arrière-plan sur une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut la syntaxe des requêtes, des exemples de SDK pour Java, .NET, Python, PHP et la gestion des erreurs."
 weight: 20

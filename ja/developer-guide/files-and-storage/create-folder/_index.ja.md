@@ -3,7 +3,7 @@ title: "フォルダの作成 – Aspose.Cells Cloud API | Excel ストレージ
 second_title: "ドキュメント"
 ArticleTitle: "フォルダの作成 – Aspose.Cells Cloud API"
 linktype: "docs"
-url: /create-folder/
+url: /ja/create-folder/
 keywords: "Aspose.Cells, Cloud API, フォルダの作成, ストレージ管理, Excel"
 description: "Aspose.Cells Cloud ストレージに新しいフォルダを、シンプルな PUT リクエストで作成します。リクエスト形式、パラメータ、レスポンス、エラー処理を確認してください。"
 weight: 100

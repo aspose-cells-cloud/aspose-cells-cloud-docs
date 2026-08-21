@@ -1,8 +1,8 @@
 ---
 title: "워크시트에 하이퍼링크 추가"
 type: docs
-url: /hyperlinks/add/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /ko/hyperlinks/add/
+aliases: [  /ko/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, 하이퍼링크 추가, Excel REST API, 클라우드 SDK"
 description: "Aspose.Cells Cloud v3.0 REST API를 사용하여 Excel 워크시트에 하이퍼링크를 추가하는 방법을 배워보세요. 엔드포인트, 전체 매개변수 가이드, cURL 예제, C#, Java, Python 등 다양한 언어의 SDK 스니펫을 포함합니다."
 weight: 20

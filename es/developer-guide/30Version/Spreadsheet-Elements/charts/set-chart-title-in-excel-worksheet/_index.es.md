@@ -1,8 +1,8 @@
 ---
 title: "Aspose.Cells Cloud API: Establecer el título de un gráfico en una hoja de cálculo de Excel"
 type: docs
-url: /chart/title/add/
-aliases: [/set-chart-title-in-excel-worksheet/]
+url: /es/chart/title/add/
+aliases: [  /es/set-chart-title-in-excel-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells Cloud, API de título de gráfico, título de gráfico de Excel, API REST, ejemplos de SDK"
 description: "Aprenda a agregar o actualizar un título de gráfico en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye ejemplos de cURL y SDK, parámetros necesarios, pasos de autenticación y manejo de errores."

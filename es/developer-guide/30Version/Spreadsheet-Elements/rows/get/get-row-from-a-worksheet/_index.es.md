@@ -3,8 +3,8 @@ title: "Obtener la descripción de una fila en una hoja de cálculo de Excel"
 second_title: "Document"
 linktype: "Row"
 type: docs
-url: /rows/get/row/
-aliases: [/get-row-from-a-worksheet/]
+url: /es/rows/get/row/
+aliases: [  /es/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API de filas de Excel, Obtener fila de hoja de cálculo, API REST, SDK de .NET, SDK de Java, SDK de Python"
 description: "Recuperar información detallada (altura, estilo, estado oculto, etc.) para una fila específica en una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. Incluye ejemplo con cURL, fragmentos de SDK y manejo de errores."
 weight: 10

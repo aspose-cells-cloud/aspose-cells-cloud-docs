@@ -1,8 +1,8 @@
 ---
 title: "워크시트에서 차트 범례 가져오기"
 type: docs
-url: /charts/legend/get/
-aliases: [/get-chart-legend-from-a-worksheet/]
+url: /ko/charts/legend/get/
+aliases: [  /ko/get-chart-legend-from-a-worksheet/ ]
 weight: 80
 keywords: "Aspose.Cells, 차트 범례, REST API, Excel, 클라우드 SDK, 차트 범례 가져오기, 워크시트, 스프레드시트"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 Excel 워크북의 특정 워크시트에 있는 차트의 범례를 검색합니다. 엔드포인트, 매개변수, cURL 샘플 및 SDK 스니펫이 포함됩니다."

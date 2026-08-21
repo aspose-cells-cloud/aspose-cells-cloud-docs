@@ -3,8 +3,8 @@ title: "แสดงซ่อนแผ่นงาน Excel"
 second_title: "เอกสาร"
 linktype: "แสดงซ่อน"
 type: docs
-url: /worksheets/unhide/
-aliases: [/unhide-excel-worksheets/]
+url: /th/worksheets/unhide/
+aliases: [  /th/unhide-excel-worksheets/ ]
 keywords: "Aspose.Cells, แสดงซ่อนแผ่นงาน, Excel API, สเปรดชีตบนคลาวด์, REST, ความมองเห็นของแผ่นงาน, สมุดงาน Excel"
 description: "เรียนรู้วิธีใช้ Aspose.Cells Cloud REST API เพื่อแสดงซ่อนแผ่นงานในสมุดงาน Excel รวมถึงรายละเอียดคำขอตัวอย่าง cURL และโค้ดตัวอย่าง SDK สำหรับภาษาการเขียนโปรแกรมหลายภาษา"
 weight: 60

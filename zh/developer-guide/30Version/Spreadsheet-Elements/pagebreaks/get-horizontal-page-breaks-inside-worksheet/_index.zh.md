@@ -3,8 +3,8 @@ title: "获取水平分页符"
 second_title: "文档"
 linktitle: "获取水平分页符"
 type: docs
-url: /page-breaks/get-horizontal-page-breaks/
-aliases: [/get-horizontal-page-breaks-inside-worksheet/]
+url: /zh/page-breaks/get-horizontal-page-breaks/
+aliases: [  /zh/get-horizontal-page-breaks-inside-worksheet/ ]
 keywords: "水平分页符, Aspose.Cells Cloud, REST API, Excel 工作表, SDK"
 description: "通过 Aspose.Cells Cloud API 从 Excel 工作表中检索水平分页符。包含端点、参数、cURL 示例、响应格式以及 C#、Java、Python 等多种语言的 SDK 代码片段。"
 ArticleTitle: "获取水平分页符 - Aspose.Cells Cloud API 文档"

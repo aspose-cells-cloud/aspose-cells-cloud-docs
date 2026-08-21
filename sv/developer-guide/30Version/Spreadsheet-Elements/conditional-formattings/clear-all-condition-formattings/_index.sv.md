@@ -1,8 +1,8 @@
 ---
 title: "Rensa villkorsformatering"
 type: docs
-url: /conditional-formattings/clear/
-aliases: [/clear-all-condition-formattings/]
+url: /sv/conditional-formattings/clear/
+aliases: [  /sv/clear-all-condition-formattings/ ]
 keywords: "Aspose.Cells Cloud, REST API, rensa villkorsformatering, Excel, kalkylblad, JWT, v3.2"
 description: "Ta bort alla regler för villkorsformatering från ett kalkylblad med Aspose.Cells Cloud API (v3.2). Lär dig begärsyntaxen, nödvändiga parametrar, autentiseringssteg och se exempelkod i flera SDK:er."
 weight: 80

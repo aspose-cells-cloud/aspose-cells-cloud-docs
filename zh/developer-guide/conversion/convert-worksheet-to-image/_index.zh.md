@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何将本地工作表电子表格数据转换为图像文件：分步指南"
 linktype: "convert-worksheet-to-image"
 type: docs
-url: /convert-worksheet-to-image/
+url: /zh/convert-worksheet-to-image/
 keywords: "Aspose.Cells Cloud, 工作表转图像, 将工作表转换为图像, Excel 转 PNG, Excel 转 SVG, Excel 转 TIFF, Excel 转 JPEG, Excel 转 BMP, 图像转换 API, REST API, 电子表格图像导出, SDK 示例"
 description: "通过 Aspose.Cells Cloud API 将 Excel 工作表转换为图像格式（PNG、SVG、TIFF、JPEG、BMP 等）的分步指南，包括请求参数、响应详情、错误代码、使用场景及 SDK 代码示例。"
 weight: 100

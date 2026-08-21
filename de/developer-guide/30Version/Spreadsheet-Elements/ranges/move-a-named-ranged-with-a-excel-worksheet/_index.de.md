@@ -3,8 +3,8 @@ title: "Verschieben eines benannten Bereichs mit einer Excel-Arbeitsmappe"
 second_title: "Dokument"
 linktitle: "Verschieben"
 type: docs
-url: /ranges/move/
-aliases: [/move-a-named-range-with-an-excel-worksheet/]
+url: /de/ranges/move/
+aliases: [  /de/move-a-named-range-with-an-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, benannter Bereich verschieben, Excel-Arbeitsmappe, REST-API, Bereich verschieben, SDK-Beispiele"
 description: "Erfahren Sie, wie Sie einen benannten Bereich innerhalb einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API v3.0 verschieben – inklusive Endpunkt-Details, Authentifizierung, Beispielen und SDK-Codebeispielen."
 weight: 20

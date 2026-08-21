@@ -3,8 +3,8 @@ title: "Поиск текста в листе Excel"
 second_title: "Документ"
 linktitle: "Поиск в листе"
 type: docs
-url: /worksheets/find-text/
-aliases: [/find-text-in-a-worksheet/]
+url: /ru/worksheets/find-text/
+aliases: [  /ru/find-text-in-a-worksheet/ ]
 weight: 40
 keywords: "Excel, Aspose.Cells Cloud, REST API, поиск текста, лист, электронная таблица, поиск"
 description: "Используйте REST API Aspose.Cells Cloud для поиска текста в листе Excel. API доступно через множество SDK и языков программирования."

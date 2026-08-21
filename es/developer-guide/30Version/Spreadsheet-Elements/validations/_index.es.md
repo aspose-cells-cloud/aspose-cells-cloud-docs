@@ -3,7 +3,7 @@ title: "Trabajo con la validación de datos en Excel"
 second_title: "Documentos"
 linktype: "Validaciones"
 type: docs
-url: /validations/
+url: /es/validations/
 keywords: "validación de datos en Excel, Aspose.Cells Cloud, API REST, hoja de cálculo, nube ofimática"
 description: "Aprenda a agregar, recuperar, actualizar, eliminar y borrar reglas de validación de datos en Excel mediante la API REST de Aspose.Cells Cloud. Incluye ejemplos para .NET, Java, Python y PHP."
 weight: 100

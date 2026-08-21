@@ -1,8 +1,8 @@
 ---
 title: "Çalışma Sayfasında Grafik Başlığını Sil"
 type: docs
-url: /charts/delete-chart-title/
-aliases: [/delete-chart-title-in-a-worksheet/]
+url: /tr/charts/delete-chart-title/
+aliases: [  /tr/delete-chart-title-in-a-worksheet/ ]
 weight: 150
 keywords: "Aspose.Cells, Bulut API, grafik başlığını sil, Excel, REST, SDK"
 description: "Aspose.Cells Cloud REST API (v4.0) kullanarak bir Excel çalışma sayfasından grafik başlığını nasıl kaldıracağınızı öğrenin. cURL, SDK örnekleri ve hata işleme içerir."

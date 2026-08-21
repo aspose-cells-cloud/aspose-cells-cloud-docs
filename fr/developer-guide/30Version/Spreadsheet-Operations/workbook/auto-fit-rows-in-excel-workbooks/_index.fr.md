@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Lignes"
 type: docs
 url: /fr/autofit-rows-on-an-excel-file/
-aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
+aliases: [  /fr/auto-fit-rows-in-excel-workbooks/ , /fr/workbook/autofit/rows/ ]
 keywords: "ajuster automatiquement les lignes, classeur Excel, Aspose.Cells Cloud, API REST, options d’ajustement automatique"
 description: "Découvrez comment ajuster automatiquement la hauteur des lignes dans un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’URL du point de terminaison, les paramètres, un exemple cURL et des extraits de code pour les SDK C#, Java, Python, etc."
 weight: 90

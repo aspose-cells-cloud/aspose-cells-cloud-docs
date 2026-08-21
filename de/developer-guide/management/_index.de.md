@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Erweiterte Excel-Arbeitsmappenoperationen: Blattverwaltung und Komprimierung – Aspose.Cells Cloud"
 linktitle: "Verwaltung"
 type: docs
-url: /management/
+url: /de/management/
 keywords: "Aspose.Cells, Cloud, Excel API, Arbeitsblattverwaltung, Tabellengröße komprimieren, Arbeitsmappe erstellen"
 description: "Verwenden Sie die Aspose.Cells Cloud API, um Arbeitsblätter hinzuzufügen, zu löschen, zu verschieben, umzubenennen, Tabellen zu komprimieren und Arbeitsmappen aus Vorlagen zu erstellen – ohne lokale Excel-Installation erforderlich."
 weight: 50

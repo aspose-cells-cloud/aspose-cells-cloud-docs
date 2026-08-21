@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud 概要"
 second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud 概要：REST を第一に設計した言語中立の API サービスで、Excel 操作を単純な HTTPS コールに変換します。ローカルの Office インストールも、プラットフォーム依存も不要です。"
 linktype: "docs"
-url: /overview/
+url: /ja/overview/
 description: "Aspose.Cells Cloud を探索 – REST を第一に設計した API で、Excel ファイル (XLS/XLSX) を PDF、HTML、ODS、XPS、CSV など多様な形式に作成・操作・変換・マージ・分割・保護・レンダリングできます。無料トライアルもご用意しています。"
 keywords: "Aspose Cells、クラウド API、Excel 変換、PDF、HTML、ODS、XPS、CSV、スプレッドシート SDK"
 weight: 10

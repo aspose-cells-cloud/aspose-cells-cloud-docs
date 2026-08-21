@@ -3,8 +3,8 @@ title: "删除 Excel 工作表中的数据透视表"
 second_title: "文档"
 linktitle: 删除
 type: docs
-url: /pivot-tables/delete/
-aliases: [/delete-worksheet-pivot-table-by-index/]
+url: /zh/pivot-tables/delete/
+aliases: [  /zh/delete-worksheet-pivot-table-by-index/ ]
 keywords: "Aspose.Cells, 数据透视表, 删除, Excel, REST API"
 description: "使用 Aspose.Cells Cloud REST API（v3.0）从 Excel 工作表中删除数据透视表。包含请求格式、cURL 示例、错误代码以及 C#、Java、Python、Node.js 的 SDK 代码片段。"
 weight: 70

@@ -3,8 +3,8 @@ title: "Pivot tablosu için stil güncelleme"
 second_title: "Belge"
 linktype: "Biçimlendirme"
 type: docs
-url: /pivot-tables/format-all/
-aliases: [/update-style-for-pivot-table/]
+url: /tr/pivot-tables/format-all/
+aliases: [  /tr/update-style-for-pivot-table/ ]
 keywords: "pivot tablosu, stil güncelleme, Aspose.Cells Cloud, REST API, Excel, elektronik tablo, API, pivot tablo stili, tümünü biçimlendir"
 description: "Aspose.Cells Cloud REST API kullanarak bir pivot tablosunun tamamının stilini nasıl güncelleyeceğinizi öğrenin. İsteği detaylandıran bilgiler, cURL örneği ve birden fazla programlama dili için SDK kod parçacıkları içerir."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "مستند"
 linktitle: "إضافة مرشّح"
 type: docs
 url: /ar/autofilter/add-filter/
-aliases: [/add-a-filter-for-a-filter-column/]
+aliases: [  /ar/add-a-filter-for-a-filter-column/ ]
 keywords: "Aspose.Cells, سحابة, Excel, المرشّح التلقائي، إضافة مرشّح، واجهة برمجة تطبيقات REST، مكتبة تطوير برمجيات"
 description: "تعرّف على كيفية إضافة مرشّح تلقائي إلى عمود في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمّن أمثلة cURL ومكتبات تطوير برمجيات (SDK) ودليل المعاملات."
 weight: 60

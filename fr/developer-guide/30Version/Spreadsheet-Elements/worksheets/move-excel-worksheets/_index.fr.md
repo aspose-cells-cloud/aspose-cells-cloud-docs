@@ -3,8 +3,8 @@ title: "Déplacer une feuille Excel – API Aspose.Cells Cloud (v3.0)"
 second_title: "Document"
 linktitle: "Déplacer"
 type: docs
-url: /worksheets/move/
-aliases: [/move-excel-worksheets/]
+url: /fr/worksheets/move/
+aliases: [  /fr/move-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Déplacer une feuille, Excel, API REST, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
 description: "Découvrez comment déplacer une feuille Excel vers une nouvelle position à l’aide de l’API Aspose.Cells Cloud (v3.0). Inclut l’endpoint, les paramètres requis, un exemple cURL et du code SDK en C#, Java, Python, etc."
 weight: 20

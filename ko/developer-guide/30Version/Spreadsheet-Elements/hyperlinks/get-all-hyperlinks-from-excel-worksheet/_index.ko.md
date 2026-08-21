@@ -1,7 +1,7 @@
 ---
 title: "모든 하이퍼링크 가져오기 – Aspose.Cells Cloud REST API"
 type: docs
-url: /hyperlinks/get-all/
+url: /ko/hyperlinks/get-all/
 aliases:
   [/get-hyperlink-from-excel-worksheet/, /get-hyperlinks-from-excel-worksheet/]
 keywords: "Aspose.Cells, 모든 하이퍼링크 가져오기, Excel API, REST API, 클라우드 SDK, cURL 예제, 스프레드시트 하이퍼링크"

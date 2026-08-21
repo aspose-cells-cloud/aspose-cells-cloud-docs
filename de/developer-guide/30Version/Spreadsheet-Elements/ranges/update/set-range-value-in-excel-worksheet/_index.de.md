@@ -3,8 +3,8 @@ title: "Wertebereich in einem Excel-Arbeitsblatt festlegen"
 second_title: "Dokument"
 linktitle: "Werte festlegen"
 type: docs
-url: /ranges/update/values/
-aliases: [/set-range-value-in-excel-worksheet/]
+url: /de/ranges/update/values/
+aliases: [  /de/set-range-value-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel-API, Wertebereich festlegen, REST-API, Cloud-SDK, Arbeitsblatt aktualisieren"
 description: "Erfahren Sie, wie Sie einen Zell- oder Bereichswert in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API (v3.0) festlegen. Enthält Endpunkt, Parameter, cURL-Beispiel, SDK-Codebeispiele und Fehlerbehandlung."
 weight: 72

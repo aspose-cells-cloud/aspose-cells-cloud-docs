@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "AutoFilter"
 type: docs
 url: /sv/autofilter/
-aliases: [/working-with-autofilter/]
+aliases: [  /sv/working-with-autofilter/ ]
 keywords: "AutoFilter, Aspose.Cells Cloud, Excel-filter, färgfilter, datumfilter, dynamiskt filter, nummerfilter, textfilter, tomfilter, anpassat filter"
 description: "Lär dig lägga till, redigera och ta bort Excel AutoFilter (färg, datum, dynamiskt, nummer, text, tom) med Aspose.Cells Cloud API:er. Kodexempel i flera språk."
 weight: 100

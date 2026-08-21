@@ -3,7 +3,7 @@ title: "Attività ImportData – Riferimento API Aspose.Cells Cloud ed esempi cU
 second_title: "Documento"  
 type: docs  
 url: /it/tasks/importdata/  
-aliases: [/it/working-with-importdata-task/]  
+aliases: [  /it/working-with-importdata-task/ ]
 keywords: "Aspose.Cells, Attività ImportData, API Excel, REST, cURL, SDK"  
 description: "Scopri come importare dati in batch nei fogli di calcolo Excel utilizzando l'attività ImportData di Aspose.Cells Cloud. Include sintassi cURL, schema della richiesta, esempi di SDK (C#, PHP, Ruby, Node.js) e gestione degli errori."  
 weight: 40  

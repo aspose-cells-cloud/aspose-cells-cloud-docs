@@ -3,7 +3,7 @@ title: "تحويل الجدول إلى PDF"
 ArticleTitle: "تحويل الجدول إلى PDF – واجهة Aspose.Cells Cloud API"
 second_title: "مستند"
 linktype: "docs"
-url: /cells/convert/table/pdf
+url: /ar/cells/convert/table/pdf
 aliases: []
 keywords: "تحويل الجدول إلى PDF، Aspose.Cells، واجهة برمجة التطبيقات"
 description: "يحوّل جدولًا من ملف جدول بيانات مخزن محليًا إلى ملف PDF باستخدام Aspose.Cells Cloud."

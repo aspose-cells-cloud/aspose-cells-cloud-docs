@@ -3,8 +3,8 @@ title: "Copiar contenido y formatos desde otra hoja de cálculo."
 second_title: "Document"
 linktitle: "Copiar"
 type: docs
-url: /worksheets/copy/
-aliases: [/copy-excel-worksheet/]
+url: /es/worksheets/copy/
+aliases: [  /es/copy-excel-worksheet/ ]
 keywords: "API de copia de hoja de cálculo de Aspose Cells, REST para copiar hoja de Excel, copia mediante SDK de Aspose Cloud, copiar hoja de cálculo"
 description: "Aprenda cómo copiar una hoja de cálculo y sus formatos hacia una nueva hoja utilizando la API REST de Aspose.Cells Cloud. Incluye endpoint, parámetros y ejemplos de cURL y SDK para C#, Java, Python y más."
 weight: 20

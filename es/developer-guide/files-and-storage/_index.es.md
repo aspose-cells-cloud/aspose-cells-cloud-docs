@@ -5,7 +5,7 @@ ArticleTitle: "Gestión de archivos en la nube para Excel – Una solución efic
 linktitle: "Archivos y almacenamiento"
 type: docs
 url: /es/files-and-storage/
-aliases: [/es/working-with-files-and-storage-using-aspose-cells-cloud/]
+aliases: [  /es/working-with-files-and-storage-using-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, API de almacenamiento de archivos, cargar archivo de Excel, descargar archivo de Excel, copiar archivo, mover archivo, eliminar archivo, gestión de carpetas, API REST, ejemplos de cURL"
 description: "Guía completa sobre cómo gestionar archivos y carpetas en el almacenamiento de Aspose.Cells Cloud. Incluye operaciones de carga, descarga, copia, movimiento, eliminación y gestión de carpetas, con ejemplos en cURL, parámetros necesarios y notas sobre autenticación."
 weight: 100

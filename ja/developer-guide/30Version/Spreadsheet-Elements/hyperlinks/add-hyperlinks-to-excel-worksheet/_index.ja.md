@@ -1,8 +1,8 @@
 ---
 title: "ワークシートにハイパーリンクを追加する"
 type: docs
-url: /hyperlinks/add/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /ja/hyperlinks/add/
+aliases: [  /ja/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, ハイパーリンクの追加, Excel REST API, クラウド SDK"
 description: "Aspose.Cells Cloud v3.0 REST API を使用して Excel ワークシートにハイパーリンクを追加する方法を学びます。エンドポイント、パラメーターの完全ガイド、cURL の使用例、および C#、Java、Python などの SDK スニペットを含みます。"
 weight: 20

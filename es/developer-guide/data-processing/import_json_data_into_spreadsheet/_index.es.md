@@ -3,7 +3,7 @@ title: "Importar datos JSON en hoja de cálculo"
 ArticleTitle: "Importar datos JSON en hoja de cálculo – Aspose.Cells Cloud API"
 second_title: "Documento"
 linktype: "docs"
-url: /cells/import/data/json
+url: /es/cells/import/data/json
 aliases: []
 keywords: "Importar JSON, Aspose.Cells, Hoja de cálculo, API"
 description: "Importar archivo de datos JSON en la hoja de cálculo local."

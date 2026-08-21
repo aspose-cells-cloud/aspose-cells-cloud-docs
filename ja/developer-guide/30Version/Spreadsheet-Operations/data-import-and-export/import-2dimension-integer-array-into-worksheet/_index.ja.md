@@ -3,7 +3,7 @@ title: "2次元整数配列をExcelワークシートにインポートする"
 second_title: "Document"
 linktitle: "2次元整数配列のインポート"
 type: docs
-url: /import-a-2D-integer-array-into-excel-worksheet/
+url: /ja/import-a-2D-integer-array-into-excel-worksheet/
 aliases:
   [
     "/import-2dimension-integer-array-into-excel-worksheet/",

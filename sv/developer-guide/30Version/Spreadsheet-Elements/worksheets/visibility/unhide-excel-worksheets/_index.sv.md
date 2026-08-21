@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Visa"
 type: docs
 url: /sv/worksheets/unhide/
-aliases: [/sv/unhide-excel-worksheets/]
+aliases: [  /sv/unhide-excel-worksheets/ ]
 keywords: "Aspose.Cells, visa arbetsblad, Excel API, moln spreadsheet, REST, synlighet för arbetsblad, Excel-arbetsbok"
 description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att visa ett dolt arbetsblad i en Excel-arbetsbok. Innehåller begärandedetaljer, cURL-exempel och SDK-kodavsnitt för flera programmeringsspråk."
 weight: 60

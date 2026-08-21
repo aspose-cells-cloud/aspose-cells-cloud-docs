@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud Fiyatlandırma Planı"
 linktype: "Fiyatlandırma Planı"
 type: docs
-url: /fiyatlandirma-plani/
+url: /tr/fiyatlandirma-plani/
 description: "Aspose.Cells Cloud fiyatlandırmasını keşfedin: Her ay 150 ücretsiz API çağrısı, ardından minimum $0,007/sayımlık kullanımınıza göre ödeme modeli. Gizli yükseltmeler yok—sadece şeffaf, katmanlı bir fiyatlandırma."
 weight: 70
 keywords: "Aspose.Cells Cloud fiyatlandırması, API çağrısı maliyeti, kullanımına göre ödeme Excel API’si, bulut elektronik tablo fiyatlandırması"

@@ -3,8 +3,8 @@ title: "Работа с разрывами страниц в Excel"
 second_title: "Документ"
 linktype: "PageBreaks"
 type: docs
-url: /working-with-pagebreaks/
-aliases: [/working-with-pagebreaks/]
+url: /ru/working-with-pagebreaks/
+aliases: [  /ru/working-with-pagebreaks/ ]
 keywords: "Excel, разрыв страницы, Aspose.Cells Cloud, REST API, рабочий лист, добавить, удалить, получить, обновить, разрывы страниц"
 description: "Узнайте, как добавлять, извлекать и удалять разрывы страниц в рабочих листах Excel с помощью REST API Aspose.Cells Cloud. Содержит примеры вертикальных и горизонтальных разрывов."
 weight: 100

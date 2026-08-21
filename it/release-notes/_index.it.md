@@ -2,7 +2,7 @@
 title: "Note di Rilascio"
 second_title: "Documento"
 type: docs
-url: /release-notes/
+url: /it/release-notes/
 description: "Esplora le note di rilascio di Aspose.Cells Cloud dal 2016 al 2026, con dettagli su nuove funzionalità, miglioramenti, correzioni di bug e aggiornamenti API per ogni versione, aiutando gli sviluppatori a rimanere aggiornati sulla piattaforma cloud per fogli di calcolo."
 weight: 40
 ArticleTitle: "Aspose.Cells Cloud – Note di Rilascio (2016‑2026)"

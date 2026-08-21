@@ -3,8 +3,8 @@ title: "حماية ملف Excel باستخدام واجهة Aspose.Cells Cloud A
 second_title: "مستند"
 linktitle: "حماية ملف Excel"
 type: docs
-url: /protect-excel-file/
-aliases: [/protect-excel-workbooks/, /workbook/protect/]
+url: /ar/protect-excel-file/
+aliases: [  /ar/protect-excel-workbooks/ , /ar/workbook/protect/ ]
 keywords: "Aspose.Cells, حماية Excel, واجهة برمجة التطبيقات, REST, SDK"
 description: "تعرّف على كيفية حماية ملف Excel عبر واجهة Aspose.Cells Cloud REST API. يتضمّن خطوات المصادقة، ومعلّمات الاستعلام ومحتوى الطلب، وطلب cURL، وأكواد أمثلة لـ SDK بلغات C# وJava وPHP وRuby وNode.js وPython وPerl وGo."
 weight: 30

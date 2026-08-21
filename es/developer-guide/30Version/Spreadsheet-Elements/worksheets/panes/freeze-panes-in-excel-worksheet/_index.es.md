@@ -3,8 +3,8 @@ title: "Congelar paneles en una hoja de cálculo de Excel"
 second_title: "Document"
 linktype: "Freeze"
 type: docs
-url: /worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+url: /es/worksheets/panes/freeze/
+aliases: [  /es/freeze-panes-in-excel-worksheet/ , /es/worksheets/freeze-panes/ ]
 keywords: "Aspose.Cells Cloud, Congelar paneles, Excel, REST API, Hoja de cálculo"
 description: "Aprenda a congelar filas y columnas en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye sintaxis del punto final, parámetros requeridos, un ejemplo con cURL, orientación sobre autenticación, detalles sobre respuestas de error y ejemplos de código SDK para múltiples lenguajes."
 weight: 190

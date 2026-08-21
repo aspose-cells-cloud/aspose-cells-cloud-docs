@@ -1,7 +1,7 @@
 ---
 title: "Obtener el segundo eje de valores del gráfico"
 type: docs
-url: /charts/second-value-axis/get/
+url: /es/charts/second-value-axis/get/
 weight: 60
 keywords: Aspose.Cells, segundo eje de valores del gráfico, Excel, API REST, nube, API, eje de gráfico de Excel
 description: Recupera el segundo eje de valores de un gráfico especificado en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud.

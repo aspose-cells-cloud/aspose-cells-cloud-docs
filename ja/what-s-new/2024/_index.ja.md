@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 linktitle: "2024年の新機能"
 type: docs
 weight: 20
-url: /new-features/2024/
+url: /ja/new-features/2024/
 keywords: "Aspose.Cells, Cloud, 2024, 新機能, 重複削除 API, テキスト抽出 API, データ変換, スプレッドシート, Excel, CSV, PDF, REST API"
 description: "Aspose.Cells Cloud の2024年の新機能と改善点の概要。重複削除 API、テキスト抽出 API、およびデータ変換の改善を含みます。"
 ArticleTitle: "Aspose.Cells Cloud 2024 新機能と改善点"

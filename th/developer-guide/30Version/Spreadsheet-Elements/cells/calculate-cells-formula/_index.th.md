@@ -1,7 +1,7 @@
 ---
 title: "คำนวณสูตรของเซลล์ – API ของ Aspose.Cells Cloud"
 type: docs
-url: /calculate-cells-formula/
+url: /th/calculate-cells-formula/
 weight: 90
 keywords: "Aspose.Cells Cloud, คำนวณสูตรของเซลล์, Excel API, REST API, SDK"
 description: "คำนวณสูตรของเซลล์ในไฟล์ Excel ผ่าน REST API ของ Aspose.Cells Cloud (เวอร์ชัน 3.0) รวมถึง endpoint, พารามิเตอร์, ตัวอย่าง cURL และโค้ดตัวอย่าง SDK"

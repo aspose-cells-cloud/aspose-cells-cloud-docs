@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Bulut Depolamada Bir Elektronik Tabloyu Başka Bir Formatta Dosyaya Kaydetme: Adım Adım Kılavuz"
 linktitle: "Elektronik Tabloyu Başka Formatta Kaydet"
 type: docs
-url: /save-spreadsheet-as/
+url: /tr/save-spreadsheet-as/
 keywords: "Aspose Cells, elektronik tablo dönüştürme, farklı kaydet, API, XLSX'den PDF'e, bulut depolama, Excel'den PDF'e, CSV dışa aktarma, bulut dönüştürme"
 description: "Aspose Cloud'da depolanan bir elektronik tabloyu başka bir formata (XLSX, PDF, CSV vb.) kaydetme yöntemini öğrenin. Aspose.Cells Cloud Save Spreadsheet API kullanarak istek sözdizimi, parametreler, cURL örneği ve SDK kodlarını içerir."
 weight: 100

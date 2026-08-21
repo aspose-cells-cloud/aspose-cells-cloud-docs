@@ -3,7 +3,7 @@ title: "Importa dati utilizzando l'archivio"
 second_title: "Documenti"
 linktype: "Importa dati con archivio"
 type: docs
-url: /import-data-with-using-storage/
+url: /it/import-data-with-using-storage/
 aliases:
   - /import-data-into-excel-worksheet/
   - /import-data-into-worksheet/

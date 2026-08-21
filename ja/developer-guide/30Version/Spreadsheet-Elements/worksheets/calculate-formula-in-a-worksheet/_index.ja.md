@@ -3,8 +3,8 @@ title: "Excelワークシートで数式を計算する"
 second_title: "Document"
 linktitle: "Calculate"
 type: docs
-url: /worksheets/calculate-formula/
-aliases: [/calculate-formula-in-a-worksheet/]
+url: /ja/worksheets/calculate-formula/
+aliases: [  /ja/calculate-formula-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, 数式の計算, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシート内の数式を計算します。複数の SDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go、Swift）をサポートし、すぐに利用可能なサンプルを提供します。"
 weight: 20

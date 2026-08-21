@@ -3,7 +3,7 @@ title: "Ta bort kalkylbladsvalidering – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktitle: "Ta bort"
 type: docs
-url: /validations/delete/
+url: /sv/validations/delete/
 keywords: "Ta bort, kalkylbladsvalidering, Aspose.Cells Cloud, Excel-API"
 description: "Lär dig hur du tar bort en kalkylbladsvalidering från en Excel-fil med Aspose.Cells Cloud REST API. Inkluderar slutpunkt, parametrar, autentiseringsuppgifter, cURL-exempel, felhantering och SDK-kodavsnitt."
 weight: 10

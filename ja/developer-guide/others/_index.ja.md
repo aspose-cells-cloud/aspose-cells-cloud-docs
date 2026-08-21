@@ -4,7 +4,7 @@ linktitle: "その他の機能"
 ArticleTitle: "その他の機能：ヘルスチェック、公開鍵の取得"
 second_title: "ドキュメント"
 type: docs
-url: /other-features/
+url: /ja/other-features/
 keywords: "Aspose.Cells、Cloud API、ヘルスチェック、公開鍵、アクセス トークン、Excel、REST"
 description: "Aspose.Cells Cloud のその他の機能を確認してください：ヘルスチェック エンドポイント、公開鍵の取得、およびトークン生成機能で、Excel API 統合のセキュリティを強化します。"
 weight: 180

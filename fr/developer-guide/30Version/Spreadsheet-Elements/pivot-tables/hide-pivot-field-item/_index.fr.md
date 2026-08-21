@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: Hide
 type: docs
 url: /fr/pivot-tables/hide-pivot-field-item/
-aliases: [/fr/hide-pivot-field-item/]
+aliases: [  /fr/hide-pivot-field-item/ ]
 keywords: "Aspose.Cells, masquer un élément de champ croisé, API PivotTable, API REST, SDK cloud"
 description: "Découvrez comment masquer un élément de champ croisé dans un tableau croisé à l’aide de l’API REST Aspose.Cells Cloud. Inclut les détails de la requête, un exemple cURL et des extraits de code SDK pour plusieurs langages."
 weight: 110

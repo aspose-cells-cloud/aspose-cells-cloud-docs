@@ -4,7 +4,7 @@ second_title: "Dokumentation"
 ArticleTitle: "Defekte Links in Excel finden und beheben – Cloud-basierte Link-Prüfung für Tabellenkalkulationen"
 linktitle: "Suche nach defekten Links in Tabellenkalkulationen"
 type: docs
-url: /search-spreadsheet-broken-links/
+url: /de/search-spreadsheet-broken-links/
 keywords: "Aspose Cells, defekte Links, Audit von Tabellenkalkulationen, Excel API, Cloud-Tabellenkalkulation, Link-Checker"
 description: "Erkennen und Beheben defekter Links in Excel-Arbeitsmappen mithilfe der Aspose.Cells Cloud API. Scannen Sie Bereiche, erhalten Sie detaillierte JSON-Ergebnisse und integrieren Sie die API in jede Sprache per SDK."
 weight: 100

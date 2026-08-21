@@ -4,7 +4,7 @@ second title: "وثيقة"
 ArticleTitle: "البحث عن نصوص في جداول بيانات Excel البعيدة – اكتشف البيانات في نطاقات محددة"
 linktitle: "البحث في محتوى النطاق البعيد"
 type: docs
-url: /search-content-in-remote-range/
+url: /ar/search-content-in-remote-range/
 keywords: "Aspose.Cells, واجهة برمجة تطبيقات Excel, البحث عن نصوص, النطاق البعيد, جدول بيانات سحابي, واجهة برمجة تطبيقات REST, اكتشاف البيانات"
 description: "ابحث عن نصوص أو أرقام أو صيغ داخل نطاق محدد من ملفات جداول بيانات Excel المحفوظة في خدمة Aspose Cloud."
 weight: 100

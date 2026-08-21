@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "삭제"
 type: docs
 url: /ko/oleobjects/delete/
-aliases: [/delete-a-specific-oleobject-from-excel-worksheet/]
+aliases: [  /ko/delete-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, 클라우드, 삭제, OLE, 개체, Excel, 워크시트, REST, API, SDK"
 description: "Aspose.Cells Cloud REST API(v4.0)를 사용하여 Excel 워크시트에서 OLE 개체를 삭제하는 방법을 배웁니다. HTTPS 엔드포인트, 인증 절차, cURL 예제, SDK 코드 스니펫, 오류 처리 가이드, 다음 단계 링크가 포함됩니다."
 weight: 50

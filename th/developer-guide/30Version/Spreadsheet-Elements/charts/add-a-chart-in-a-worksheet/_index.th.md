@@ -1,8 +1,8 @@
 ---
 title: "การเพิ่มกราฟลงในแผ่นงาน"
 type: docs
-url: /charts/add/
-aliases: [/add-a-chart-in-a-worksheet/]
+url: /th/charts/add/
+aliases: [  /th/add-a-chart-in-a-worksheet/ ]
 weight: 20
 description: "เรียนรู้วิธีการเพิ่มกราฟลงในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud API เวอร์ชัน 3.0 ซึ่งรวมถึง endpoint, พารามิเตอร์, ตัวอย่าง cURL และตัวอย่าง SDK"
 keywords:

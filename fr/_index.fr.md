@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud API – Convertir, fusionner, diviser & protéger des fichiers Excel"
 linktype: "Developer Center"
 type: docs
-url: /
+url: /fr/
 description: "L’API REST Aspose.Cells Cloud permet de convertir, fusionner, diviser, protéger et traiter de manière complète les classeurs Excel. Offre gratuite : 150 appels par mois, SDK pour 8 langages."
 weight: 10
 keywords: "Aspose.Cells Cloud, API Excel, conversion de feuille de calcul, fusion Excel, division Excel, protection Excel, SDK de feuille de calcul cloud, API REST, traitement Excel"

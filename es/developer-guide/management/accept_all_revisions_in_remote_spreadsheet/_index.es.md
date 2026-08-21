@@ -4,8 +4,8 @@ ArticleTitle: "Aceptar Todas las Revisiones en una Hoja de Cálculo Remota – A
 second_title: "Documentos"
 linktype: "Aceptar Todas las Revisiones en una Hoja de Cálculo Remota"
 type: docs
-url: /cells/accept-all-revisions
-aliases: ["/cells/accept-all-revisions"]
+url: /es/cells/accept-all-revisions
+aliases: [  /es/cells/accept-all-revisions ]
 keywords: "Aspose.Cells, AcceptAllRevisions, Hoja de cálculo remota"
 description: "Acepta todas las revisiones en una hoja de cálculo remota y devuelve el archivo de libro actualizado."
 weight: 1000

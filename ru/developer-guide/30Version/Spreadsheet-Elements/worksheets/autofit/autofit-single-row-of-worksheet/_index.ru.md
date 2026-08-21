@@ -3,8 +3,8 @@ title: "Автоматическая подгонка строки в рабоч
 second_title: "Документ"
 linktitle: "Строка"
 type: docs
-url: /worksheets/autofit/row/
-aliases: [/autofit-single-row-of-worksheet/]
+url: /ru/worksheets/autofit/row/
+aliases: [  /ru/autofit-single-row-of-worksheet/ ]
 description: "Узнайте, как использовать Aspose.Cells Cloud REST API для автоматической подгонки строки в рабочей книге Excel. Включает endpoint, параметры, аутентификацию, обработку ошибок, cURL-запрос и примеры SDK."
 keywords: "автоматическая подгонка строки, Aspose.Cells Cloud, Excel API, REST, рабочий лист, SDK, электронная таблица, облачный API"
 weight: 30

@@ -1,8 +1,8 @@
 ---
 title: "Mostrar la leyenda del gráfico en una hoja de cálculo"
 type: docs
-url: /charts/legend/show/
-aliases: [/show-chart-legend-in-a-worksheet/]
+url: /es/charts/legend/show/
+aliases: [  /es/show-chart-legend-in-a-worksheet/ ]
 weight: 100
 keywords: "Aspose.Cells Cloud, API de leyenda de gráficos, leyenda de gráficos de Excel, REST PUT para leyenda de gráficos, Aspose API v3.0"
 description: "Aprenda a mostrar la leyenda de un gráfico en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye detalles del endpoint, parámetros, un ejemplo con cURL y fragmentos de código para SDK."

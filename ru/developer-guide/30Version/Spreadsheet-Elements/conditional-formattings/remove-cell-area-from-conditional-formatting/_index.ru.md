@@ -1,8 +1,8 @@
 ---
 title: "Удаление области ячеек — Документация API Aspose.Cells Cloud"
 type: docs
-url: /conditional-formattings/delete-cell-area/
-aliases: [/remove-cell-area-from-conditional-formatting/]
+url: /ru/conditional-formattings/delete-cell-area/
+aliases: [  /ru/remove-cell-area-from-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, Удаление области ячеек, API условного форматирования, Excel REST API"
 description: "Используйте REST API Aspose.Cells Cloud для удаления конкретной области ячеек из условного форматирования в листе Excel. Примеры на ASP.NET, Java и Python."
 ArticleTitle: "Удаление области ячеек — Документация API Aspose.Cells Cloud"

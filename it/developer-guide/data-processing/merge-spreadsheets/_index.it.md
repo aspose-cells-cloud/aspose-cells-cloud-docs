@@ -4,7 +4,7 @@ second_title: "Documenti"
 ArticleTitle: "Combina più file Excel in uno – Unisci in batch fogli di calcolo in oltre 30 formati"
 linktype: "Unisci fogli di calcolo"
 type: docs
-url: /merge-spreadsheets/
+url: /it/merge-spreadsheets/
 keywords: "Aspose.Cells, unisci fogli di calcolo, Excel API, foglio di calcolo cloud, unione in batch, conversione in PDF, unione CSV, unione ODS, riferimento API, SDK"
 description: "Unisci più file locali Excel, CSV o ODS in un unico workbook e converti il risultato in oltre 30 formati (PDF, HTML, ecc.) con Aspose.Cells Cloud. Include endpoint, parametri, guida all'autenticazione ed esempi di SDK."
 weight: 100

@@ -3,8 +3,8 @@ title: "تحديث صورة في ملف Excel"
 second_title: "مستند"
 linktitle: "تحديث"
 type: docs
-url: /pictures/update/
-aliases: [/update-a-specific-picture-from-excel-workshee/]
+url: /ar/pictures/update/
+aliases: [  /ar/update-a-specific-picture-from-excel-workshee/ ]
 keywords: "Aspose.Cells Cloud، Excel، تحديث الصورة، REST API، SDK"
 description: "تعرّف على كيفية تحديث صورة في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. يشمل التفاصيل المطلوبة لطلب الخدمة، ومثال باستخدام cURL، ومقتطفات كود لعدة لغات برمجة."
 ArticleTitle: "تحديث صورة في ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API"

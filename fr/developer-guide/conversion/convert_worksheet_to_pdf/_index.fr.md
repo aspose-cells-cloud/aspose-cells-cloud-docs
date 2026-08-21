@@ -4,7 +4,7 @@ ArticleTitle: "Convertir une feuille de calcul en PDF – API Aspose.Cells Cloud
 second_title: "Document"
 linktitle: "ConvertWorksheetToPdf"
 type: docs
-url: /cells/convert/worksheet/pdf
+url: /fr/cells/convert/worksheet/pdf
 aliases: []
 keywords: "Aspose.Cells, Convertir une feuille de calcul en PDF, API"
 description: "Convertit une feuille de calcul d’un fichier de feuille de calcul en PDF à l’aide d’Aspose.Cells Cloud."

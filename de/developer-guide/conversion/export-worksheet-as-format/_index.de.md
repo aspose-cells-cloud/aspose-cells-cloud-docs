@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So exportieren Sie ein entferntes Tabellendarstellungs-Blatt in ein anderes Format: Schritt-für-Schritt-Anleitung"
 linktitle: "Arbeitsblatt exportieren"
 type: docs
-url: /export-worksheet-as-format/
+url: /de/export-worksheet-as-format/
 keywords: "Aspose Cells, Arbeitsblatt exportieren, Cloud-API, PDF, PNG, CSV, Excel-Konvertierung"
 description: "Konvertieren Sie ein in Aspose.Cells Cloud gespeichertes Arbeitsblatt mithilfe eines einzigen GET-Aufrufs in PDF, PNG, SVG, CSV oder andere Formate. Enthält Codebeispiele für C#, Java, Python und mehr."
 weight: 100

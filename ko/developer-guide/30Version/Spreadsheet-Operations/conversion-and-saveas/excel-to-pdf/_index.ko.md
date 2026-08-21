@@ -4,8 +4,8 @@ ArticleTitle: "Excel을 PDF로 변환 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktitle: "Excel을 PDF로 변환"
 type: docs
-url: /convert-excel-file-to-pdf-file/
-aliases: [/convert-excel-file-to-pdf-in-cloud/, /convert/excel-to-pdf/]
+url: /ko/convert-excel-file-to-pdf-file/
+aliases: [  /ko/convert-excel-file-to-pdf-in-cloud/ , /ko/convert/excel-to-pdf/ ]
 keywords: "Aspose, Cells, Excel, PDF, 변환, 클라우드 API"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북을 PDF로 변환하는 방법을 알아보세요. cURL, SDK 샘플(C#, Java, Python) 및 인증 가이드가 포함됩니다."
 weight: 80

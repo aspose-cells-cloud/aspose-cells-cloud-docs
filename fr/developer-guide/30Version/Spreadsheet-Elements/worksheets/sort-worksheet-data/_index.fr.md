@@ -3,8 +3,8 @@ title: "Trier les données d'une plage dans une feuille Excel"
 second_title: "Document"
 linktitle: "Trier"
 type: docs
-url: /worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
+url: /fr/worksheets/sort-data/
+aliases: [  /fr/sort-worksheet-data/ ]
 keywords: "Aspose.Cells Cloud, API de tri Excel, tri de plage de feuille de calcul, API REST, dataSorter"
 description: "Trier une plage spécifique dans une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’endpoint, les paramètres requis, les étapes d’authentification, la gestion des erreurs et des exemples de SDK."
 weight: 20

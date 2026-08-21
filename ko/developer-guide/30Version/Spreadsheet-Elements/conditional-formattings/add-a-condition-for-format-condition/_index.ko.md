@@ -3,7 +3,7 @@ title: 조건부 서식에 조건 추가
 description: Aspose.Cells Cloud REST API(v3.0)를 사용하여 워크시트의 조건부 서식에 조건을 추가하는 방법을 알아보세요. 엔드포인트, 매개변수, 인증, cURL 예제, SDK 코드 조각, 오류 처리를 포함합니다.
 keywords: "Aspose.Cells Cloud, 조건부 서식, 조건 추가, REST API, Excel, 워크시트"
 type: docs
-url: /conditional-formattings/add-a-condition/
+url: /ko/conditional-formattings/add-a-condition/
 aliases:
   - /add-a-condition-for-format-condition/
 weight: 40

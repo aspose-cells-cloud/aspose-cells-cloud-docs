@@ -4,7 +4,7 @@ ArticleTitle: "Uzak Elektronik Tabloda Yineleyen Alt Dizgileri Kaldır – Aspos
 second_title: "Belge"
 linktitle: "Uzak Elektronik Tabloda Yineleyen Alt Dizgileri Kaldır"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
+url: /tr/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
 aliases: []
 keywords: "Aspose.Cells, Yineleyen Alt Dizgileri Kaldır, API"
 description: "Çalışma kitabında belirtilen bir aralık içindeki hücrelerde tekrarlayan alt dizgileri bulup kaldırmak için API."

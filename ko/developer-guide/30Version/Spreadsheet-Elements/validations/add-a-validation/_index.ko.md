@@ -3,7 +3,7 @@ title: "Excel 워크시트에 유효성 검사 규칙 추가"
 second_title: "문서"
 linktitle: "추가"
 type: docs
-url: /validations/add/
+url: /ko/validations/add/
 keywords: "워크시트 유효성 검사 추가, Excel, Aspose.Cells Cloud, REST API, 스프레드시트, 유효성 검사 규칙"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 파일에 워크시트 유효성 검사 규칙을 추가합니다. C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift용 SDK가 제공됩니다."
 weight: 10

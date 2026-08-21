@@ -3,7 +3,7 @@ title: "ค้นหาลิงก์ที่เสียในเวิร์
 ArticleTitle: "ค้นหาลิงก์ที่เสียในเวิร์กชีตระยะไกล – Aspose.Cells Cloud API"
 second_title: "เอกสาร"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/search/broken-links
+url: /th/cells/{name}/worksheets/{worksheet}/search/broken-links
 aliases: []
 keywords: "Aspose.Cells, ค้นหาลิงก์ที่เสีย, เวิร์กชีตระยะไกล"
 description: "ค้นหาลิงก์ที่เสียในเวิร์กชีตของไฟล์สเปรดชีตที่จัดเก็บในคลาวด์ระยะไกล"

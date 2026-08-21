@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "スプレッドシートのチャートを画像に変換する方法：ステップ・バイ・ステップガイド"
 linktitle: "チャートを画像に変換"
 type: docs
-url: /convert-chart-to-image/
+url: /ja/convert-chart-to-image/
 keywords: "チャートを画像に変換, Aspose.Cells, Excel チャートのエクスポート, PNG, SVG, JPEG, BMP, TIFF"
 description: "Aspose.Cells Cloud Web API を使用して、スプレッドシートファイルから Excel チャートを PNG、SVG、TIFF、JPEG、BMP 画像に直接変換します。"
 weight: 100

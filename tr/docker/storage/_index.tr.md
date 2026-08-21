@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Bulut Docker Konteyneri Depolama Yapılandırması"
 linktitle: "Konteyner Depolama"
 type: docs
-url: /docker/storage/
+url: /tr/docker/storage/
 description: "Aspose.Cells Bulut Docker konteynerleri için depolama konumunu JSON, PowerShell veya Bash kullanarak yapılandırın."
 weight: 30
 keywords: "Aspose.Cells, Docker, konteyner depolama, JSON yapılandırması, PowerShell, Bash"

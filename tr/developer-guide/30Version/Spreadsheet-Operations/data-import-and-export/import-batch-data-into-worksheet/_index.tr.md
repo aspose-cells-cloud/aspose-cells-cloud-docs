@@ -3,7 +3,7 @@ title: "Toplu Verileri Excel Çalışma Sayfasına İçe Aktar"
 second_title: "Belge"
 linktype: "toplu-verileri-ice-aktar"
 type: docs
-url: /import-batch-data-into-excel/
+url: /tr/import-batch-data-into-excel/
 aliases:
   - /import-batch-data-into-worksheet/
   - /import-data/batch-data/

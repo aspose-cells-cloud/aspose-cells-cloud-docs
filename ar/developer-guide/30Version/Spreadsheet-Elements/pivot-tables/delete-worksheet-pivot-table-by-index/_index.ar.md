@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: Delete
 type: docs
 url: /ar/pivot-tables/delete/
-aliases: [/ar/delete-worksheet-pivot-table-by-index/]
+aliases: [  /ar/delete-worksheet-pivot-table-by-index/ ]
 keywords: "Aspose.Cells, جدول محوري, حذف, Excel, REST API"
 description: "حذف جدول محوري من ورقة عمل Excel باستخدام Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمن تنسيق الطلب، مثال على cURL، رموز الأخطاء، وأجزاء كود SDK بلغات C#، Java، Python، وNode.js."
 weight: 70

@@ -3,7 +3,7 @@ title: "نسخ الأعمدة في ورقة عمل Excel"
 second_title: "مستند"
 linktitle: "نسخ"
 type: docs
-url: /columns/copy/
+url: /ar/columns/copy/
 aliases:
   [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
 keywords: "Aspose.Cells, نسخ الأعمدة, واجهة برمجة تطبيقات Excel, REST, واجهات برمجة التطبيقات السحابية, cURL, C#, Java, Python, Ruby, Node.js, Go, Perl"

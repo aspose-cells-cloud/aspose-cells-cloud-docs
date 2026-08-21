@@ -3,7 +3,7 @@ title: "如何在 Excel 工作簿中删除工作表"
 second_title: "Document"
 linktype: "删除"
 type: docs
-url: /worksheets/delete/
+url: /zh/worksheets/delete/
 keywords: "Aspose.Cells, Cloud, REST API, 删除工作表, Excel, C#, Java, Python"
 description: "了解如何使用 Aspose.Cells Cloud REST API 删除 Excel 工作簿中的单个工作表或多个工作表。包含 C#、Java 和 Python 示例、前置条件、错误处理提示及相关操作。"
 weight: 20

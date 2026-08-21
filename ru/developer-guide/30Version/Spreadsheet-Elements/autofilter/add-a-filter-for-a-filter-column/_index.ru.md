@@ -2,8 +2,8 @@
 title: "Добавление фильтра в лист Excel"
 second_title: "Документ"
 linktype: "docs"
-url: /autofilter/add-filter/
-aliases: [/add-a-filter-for-a-filter-column/]
+url: /ru/autofilter/add-filter/
+aliases: [  /ru/add-a-filter-for-a-filter-column/ ]
 keywords: "Aspose.Cells, Cloud, Excel, AutoFilter, добавление фильтра, REST API, SDK"
 description: "Узнайте, как добавить автофильтр в столбец листа Excel с помощью Aspose.Cells Cloud REST API. Включает примеры cURL, SDK и руководство по параметрам."
 weight: 60

@@ -3,8 +3,8 @@ title: "도형 내보내기"
 second_title: "문서"
 linktitle: "도형"
 type: docs
-url: /export-excel-shape-to-different-formats/
-aliases: [/export/excel-shape-to-different-formats/]
+url: /ko/export-excel-shape-to-different-formats/
+aliases: [  /ko/export/excel-shape-to-different-formats/ ]
 keywords: "도형 내보내기, Aspose.Cells Cloud, Excel 도형 내보내기, 이미지 형식, REST API, SDK"
 description: "Aspose.Cells Cloud REST API 및 SDK를 사용하여 Excel 도형을 다양한 이미지 형식(PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF)으로 내보내는 방법을 알아보세요."
 weight: 20

@@ -2,7 +2,7 @@
 title: "ワークシートのすべてのコメントを削除する"
 description: "Aspose.Cells Cloud API を使用して Excel ファイル内のワークシートからすべてのコメントを削除します。DELETE エンドポイント、必要なパラメータ、認証、cURL リクエストのサンプル、応答形式、エラーコード、SDK の使用例を学びます。"
 keywords: "Aspose, Cells, コメントの削除, ワークシート, API, REST, Excel, クラウド"
-url: /comments/clear/
+url: /ja/comments/clear/
 aliases:
   - /delete-all-comments-in-a-worksheet/
 weight: 50

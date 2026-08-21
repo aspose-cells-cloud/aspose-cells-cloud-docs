@@ -3,7 +3,7 @@ title: "向 Excel 添加文本：通过电子表格 Web API 高效插入数据"
 second_title: "文档"
 linktitle: "添加文本"
 type: docs
-url: /excel-add-text/
+url: /zh/excel-add-text/
 keywords: "Excel, Aspose.Cells, 添加文本, 电子表格 API, REST API, Office Cloud, 文本插入, Excel API"
 description: "通过 Aspose.Cells Cloud API 向 Excel 电子表格中的指定位置添加文本。"
 weight: 100

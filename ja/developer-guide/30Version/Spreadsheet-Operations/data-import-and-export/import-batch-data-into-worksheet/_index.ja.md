@@ -3,7 +3,7 @@ title: "Excelワークシートにバッチデータをインポート"
 second_title: "Document"
 linktitle: "バッチデータのインポート"
 type: docs
-url: /import-batch-data-into-excel/
+url: /ja/import-batch-data-into-excel/
 aliases:
   - /import-batch-data-into-worksheet/
   - /import-data/batch-data/

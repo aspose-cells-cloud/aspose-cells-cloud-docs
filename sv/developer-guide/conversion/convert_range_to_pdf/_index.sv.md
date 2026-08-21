@@ -4,7 +4,7 @@ ArticleTitle: "Konvertera intervall till PDF – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "ConvertRangeToPdf"
 type: docs
-url: /cells/convert/range/pdf
+url: /sv/cells/convert/range/pdf
 aliases: []
 keywords: "Aspose.Cells, Konvertera intervall till PDF, API"
 description: "Konverterar ett angivet intervall i ett kalkylark till PDF med Aspose.Cells Cloud."

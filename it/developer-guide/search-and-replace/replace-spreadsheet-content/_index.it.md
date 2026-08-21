@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Sostituzione massiva di testo in file Excel locali – API Trova e Sostituisci"
 linktitle: "Sostituisci contenuto del foglio di calcolo"
 type: docs
-url: /replace-spreadsheet-content/
+url: /it/replace-spreadsheet-content/
 keywords: "sostituisci testo in Excel, Aspose.Cells Trova e Sostituisci, API foglio di calcolo locale, sostituisci file Excel, API sostituisci contenuto"
 description: "Sostituisci il testo nei file Excel locali senza caricarli nel cloud. Usa l'API Trova e Sostituisci di Aspose.Cells Cloud per aggiornare intervalli specifici, fogli di lavoro o file completi in una singola chiamata."
 weight: 100

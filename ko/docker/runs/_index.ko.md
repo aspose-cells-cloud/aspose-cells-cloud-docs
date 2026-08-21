@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud Docker 컨테이너 실행 방법"
 linktitle: "컨테이너 실행"
 type: docs
-url: /run-aspose-cells-cloud-docker-container/
+url: /ko/run-aspose-cells-cloud-docker-container/
 description: "Windows Server 2022에서 Docker 컨테이너로 Aspose.Cells Cloud를 실행하는 방법을 배워보세요. 체험 모드, 사용량 기반 과금, 라이선스 과금, 스토리지 설정, 헬스 체크를 위한 단계별 명령어를 제공합니다."
 weight: 30
 keywords: "Aspose.Cells, Docker, Windows Server 2022, 체험 모드, 사용량 기반 과금, 라이선스 과금, 스토리지 설정"

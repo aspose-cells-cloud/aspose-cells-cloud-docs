@@ -3,7 +3,7 @@ title: "تحويل جدول إلى جدول محوري"
 second_title: "Document"
 linktitle: تحويل
 type: docs
-url: /pivot-tables/convert-table-to-pivottable/
+url: /ar/pivot-tables/convert-table-to-pivottable/
 aliases:
   [
     /create-a-pivottable-with-table/,

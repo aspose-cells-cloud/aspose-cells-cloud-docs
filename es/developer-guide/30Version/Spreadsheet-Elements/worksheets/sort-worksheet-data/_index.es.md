@@ -3,8 +3,8 @@ title: "Ordenar datos de un rango en una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Ordenar"
 type: docs
-url: /worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
+url: /es/worksheets/sort-data/
+aliases: [  /es/sort-worksheet-data/ ]
 keywords: "Aspose.Cells Cloud, API de ordenación de Excel, ordenación de rango en hoja de cálculo, API REST, dataSorter"
 description: "Ordenar un rango específico en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye el endpoint, los parámetros necesarios, los pasos de autenticación, el manejo de errores y ejemplos de SDK."
 weight: 20

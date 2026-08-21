@@ -3,7 +3,7 @@ title: "워크북 변환 옵션"
 second_title: "문서"
 linktitle: "워크북 변환 옵션"
 type: docs
-url: /convert-workbook-options/
+url: /ko/convert-workbook-options/
 keywords: "Aspose.Cells, ConvertWorkbookOptions, Excel 변환, PDF, CSV, API"
 description: "워크북 변환 옵션 – Aspose.Cells Cloud API를 사용하여 Excel 워크북을 PDF, CSV, HTML 등으로 변환할 때 설정을 구성합니다."
 weight: 79

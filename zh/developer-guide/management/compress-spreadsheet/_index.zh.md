@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何压缩 Excel 文件 —— 减小电子表格尺寸并优化性能"
 linktitle: "压缩电子表格"
 type: docs
-url: /compress-spreadsheet/
+url: /zh/compress-spreadsheet/
 keywords: "Excel 压缩, Aspose.Cells Cloud, 电子表格尺寸缩减, API, 工作簿优化"
 description: "了解如何使用 Aspose.Cells Cloud API 压缩 Excel 工作簿。获取分步示例、参数说明、身份验证方法及最佳实践。"
 weight: 100

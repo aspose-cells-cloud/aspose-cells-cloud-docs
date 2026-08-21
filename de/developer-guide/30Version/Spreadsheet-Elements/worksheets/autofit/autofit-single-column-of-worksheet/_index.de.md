@@ -3,8 +3,8 @@ title: "Spalte in Excel automatisch anpassen mit der Aspose.Cells Cloud API – 
 second_title: "Dokument"
 linktitle: "Spalte"
 type: docs
-url: /worksheets/autofit/column/
-aliases: [/autofit-single-column-of-worksheet/]
+url: /de/worksheets/autofit/column/
+aliases: [  /de/autofit-single-column-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Spalte automatisch anpassen, Excel API, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Erfahren Sie, wie Sie die Breite einer einzelnen Spalte (oder eines zusammenhängenden Spaltenbereichs) in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API automatisch anpassen können. Enthält cURL-Beispiele, SDK-Beispiele (C#, Java, Python usw.) sowie vollständige Anforderungs- und Antwortdetails."
 weight: 10

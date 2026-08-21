@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как удалить пустые столбцы в Excel — автоматизация очистки столбцов"
 linktitle: "Удаление пустых столбцов"
 type: docs
-url: /delete-spreadsheet-blank-columns/
+url: /ru/delete-spreadsheet-blank-columns/
 keywords: "удаление пустых столбцов Excel API, Aspose.Cells Cloud, REST API, очистка Excel, автоматизация электронных таблиц"
 description: "Узнайте, как удалять пустые столбцы из файлов Excel с помощью Aspose.Cells Cloud REST API. Включает endpoint, аутентификацию, примеры запросов и ответов, а также код SDK на C#, Java, Python и других языках."
 weight: 100

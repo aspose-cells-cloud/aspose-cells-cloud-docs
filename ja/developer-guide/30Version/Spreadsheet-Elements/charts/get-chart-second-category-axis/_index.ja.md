@@ -1,7 +1,7 @@
 ---
 title: "チャートの第2カテゴリ軸を取得する"
 type: docs
-url: /charts/second-category-axis/get/
+url: /ja/charts/second-category-axis/get/
 weight: 60
 keywords: "チャートの第2カテゴリ軸を取得する、Aspose.Cells Cloud API、Excelチャート軸、REST API、second-category axis、Aspose.Cells"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシート内のチャートの第2カテゴリ軸を取得します。リクエスト形式、パラメータ、cURLのサンプル、レスポンススキーマ、ステータスコード、使用上の注意を含みます。"

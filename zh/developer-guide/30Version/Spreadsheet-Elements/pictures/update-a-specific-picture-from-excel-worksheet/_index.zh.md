@@ -3,8 +3,8 @@ title: "更新 Excel 文件中的图片"
 second_title: "文档"
 linktitle: "更新"
 type: docs
-url: /pictures/update/
-aliases: [/update-a-specific-picture-from-excel-workshee/]
+url: /zh/pictures/update/
+aliases: [  /zh/update-a-specific-picture-from-excel-workshee/ ]
 keywords: "Aspose.Cells Cloud, Excel, 更新图片, REST API, SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API 更新 Excel 工作表中的图片。包含请求详情、cURL 示例以及多种编程语言的 SDK 代码片段。"
 ArticleTitle: "使用 Aspose.Cells Cloud REST API 更新 Excel 文件中的图片"

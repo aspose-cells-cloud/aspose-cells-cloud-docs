@@ -1,8 +1,8 @@
 ---
 title: "Удаление заголовка диаграммы в рабочем листе"
 type: docs
-url: /charts/delete-chart-title/
-aliases: [/delete-chart-title-in-a-worksheet/]
+url: /ru/charts/delete-chart-title/
+aliases: [  /ru/delete-chart-title-in-a-worksheet/ ]
 weight: 150
 keywords: "Aspose.Cells, облачный API, удаление заголовка диаграммы, Excel, REST, SDK"
 description: "Узнайте, как удалить заголовок диаграммы из рабочего листа Excel с помощью облачного REST API Aspose.Cells (v4.0). Примеры кода для cURL и SDK, обработка ошибок."

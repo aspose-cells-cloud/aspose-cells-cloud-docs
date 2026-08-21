@@ -1,7 +1,7 @@
 ---
 title: "차트 두 번째 범주 축 가져오기"
 type: docs
-url: /charts/second-category-axis/get/
+url: /ko/charts/second-category-axis/get/
 weight: 60
 keywords: "차트 두 번째 범주 축 가져오기, Aspose.Cells Cloud API, Excel 차트 축, REST API, 두 번째 범주 축, Aspose.Cells"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 차트에서 두 번째 범주 축을 검색합니다. 요청 형식, 매개변수, 샘플 cURL, 응답 스키마, 상태 코드 및 사용 참고 사항이 포함됩니다."

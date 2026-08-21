@@ -5,7 +5,7 @@ second_title: "Document"
 type: docs
 linktitle: "Liens hypertexte"
 url: /fr/hyperlinks/
-aliases: [/fr/working-with-hyperlinks/, /fr/working-with-hyperlink/]
+aliases: [  /fr/working-with-hyperlinks/ , /fr/working-with-hyperlink/ ]
 keywords: "Excel, liens hypertexte, Cells.Cloud, API, Aspose.Cells, feuille de calcul, liens, guide"
 description: "Découvrez comment récupérer, ajouter, mettre à jour et supprimer des liens hypertexte Excel à l’aide de l’API Aspose Cells Cloud."
 weight: 100

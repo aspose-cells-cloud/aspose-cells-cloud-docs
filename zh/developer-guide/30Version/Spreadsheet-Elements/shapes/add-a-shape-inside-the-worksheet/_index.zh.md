@@ -3,8 +3,8 @@ title: "向 Excel 工作表添加形状"
 second_title: "文档"
 linktitle: "添加"
 type: docs
-url: /shapes/add/
-aliases: [/add-a-shape-inside-the-worksheet/]
+url: /zh/shapes/add/
+aliases: [  /zh/add-a-shape-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, 添加形状, Excel, REST API, 云 SDK, shapeDTO, 绘图类型"
 description: "了解如何使用 Aspose.Cells Cloud REST API v3.0 向 Excel 工作表添加形状（如圆弧、线条、矩形等）。包含请求语法、必需参数、身份验证步骤及示例 SDK 代码。"
 weight: 30

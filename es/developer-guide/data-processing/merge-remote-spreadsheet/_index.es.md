@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud"
 ArticleTitle: "Fusionar archivos de Excel en la nube | Combinar hojas de cálculo en línea con la API de Aspose.Cells Cloud"
 linktitle: "Fusionar hoja de cálculo remota"
 type: docs
-url: /merge-remote-spreadsheet/
+url: /es/merge-remote-spreadsheet/
 keywords: "Aspose.Cells, fusionar Excel, API en la nube, combinar hoja de cálculo"
 description: "Fusionar libros de Excel almacenados en el almacenamiento en la nube utilizando la API de Aspose.Cells Cloud. Especifique el formato de salida, la carpeta de destino y el modo de fusión en una única llamada HTTPS."
 weight: 100

@@ -3,8 +3,8 @@ title: "حذف صف في ورقة عمل إكسل"
 second_title: "مستند"
 linktitle: "صف"
 type: docs
-url: /rows/delete/row/
-aliases: [/delete-row-from-a-worksheet/]
+url: /ar/rows/delete/row/
+aliases: [  /ar/delete-row-from-a-worksheet/ ]
 description: "استخدم نقطة النهاية DELETE /worksheets/{sheetName}/cells/rows/{rowIndex} لإزالة صف محدد من ورقة عمل إكسل عبر واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. يشمل أمر cURL وأمثلة SDK ومراجع كاملة للمعلمات."
 keywords: "Aspose.Cells, حذف صف, إكسل, API, REST, سحابة, SDK"
 weight: 80

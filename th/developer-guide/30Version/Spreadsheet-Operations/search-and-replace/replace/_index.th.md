@@ -3,7 +3,7 @@ title: "แทนที่ข้อความจากไฟล์ Excel"
 second_title: "เอกสาร"
 linktype: "แทนที่โดยไม่ใช้พื้นที่จัดเก็บ"
 type: docs
-url: /replace/
+url: /th/replace/
 keywords: "แทนที่ข้อความใน Excel, Aspose.Cells Cloud, REST API, แทนที่ในสเปรดชีต, API, การแทนที่ข้อความในไฟล์ Excel"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อแทนที่ข้อความที่มีอยู่ด้วยค่าใหม่ในไฟล์ Excel มี SDK รองรับสำหรับ C#, Java, Python, Node.js, PHP, Ruby, Go และ Perl"
 weight: 80

@@ -3,7 +3,7 @@ title: "Excelファイルの列を自動調整する"
 second_title: "Document"
 linktitle: "Columns"
 type: docs
-url: /autofit-columns-on-an-excel-file/
+url: /ja/autofit-columns-on-an-excel-file/
 aliases:
   [
     "/auto-fit-columns-in-excel-workbooks",

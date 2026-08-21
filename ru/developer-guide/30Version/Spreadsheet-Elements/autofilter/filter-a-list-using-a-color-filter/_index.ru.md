@@ -3,8 +3,8 @@ title: "Добавление фильтра по цвету в лист Excel"
 second_title: "Документ"
 linktitle: "Добавление фильтра по цвету"
 type: docs
-url: /autofilter/add-color-filter/
-aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
+url: /ru/autofilter/add-color-filter/
+aliases: [  /ru/filter-a-list-using-a-color-filter/ , /ru/autofilter/add-a-color-filter/ ]
 keywords: "Excel, фильтр по цвету, Aspose.Cells Cloud, REST API, автофильтр, JWT-аутентификация"
 description: "Узнайте, как применить фильтр по цвету к листу Excel с помощью API Aspose.Cells Cloud. Включает конечную точку, параметры, пример cURL, обработку ошибок и примеры SDK."
 weight: 65

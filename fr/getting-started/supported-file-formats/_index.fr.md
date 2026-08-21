@@ -4,7 +4,7 @@ second_title: "Document"
 articleTitle: "Formats de fichiers pris en charge par Aspose.Cells Cloud : Excel, PDF, CSV, JSON, Markdown, et plus encore"
 linktitle: "Formats de fichiers pris en charge"
 type: docs
-url: /supported-file-formats/
+url: /fr/supported-file-formats/
 description: "Découvrez la liste complète des formats de fichiers pris en charge par Aspose.Cells Cloud : importation, exportation et conversion d’Excel, CSV, PDF, JSON, Markdown, ODS, et plus encore."
 weight: 40
 keywords: "Aspose.Cells Cloud, formats de fichiers pris en charge, Excel, XLSX, CSV, PDF, JSON, Markdown, ODS, formats d’image, formats de feuilles de calcul, conversion de documents"

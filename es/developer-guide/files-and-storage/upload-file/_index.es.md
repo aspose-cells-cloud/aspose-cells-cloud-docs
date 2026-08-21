@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "API de carga de archivos de Aspose.Cells Cloud: Una interfaz para cargar archivos rápidamente en la nube"
 linktitle: "Cargar archivo"
 type: docs
-url: /upload-file/
+url: /es/upload-file/
 keywords: "Aspose.Cells, carga de archivos, API de Excel, almacenamiento en la nube, API REST"
 description: "Guía para cargar archivos con la API de Aspose.Cells Cloud, que cubre parámetros de solicitud, códigos de estado HTTP, manejo de errores y ejemplos de código."
 weight: 100

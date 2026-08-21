@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud – Удалить горизонтальны�
 second_title: "Документ"
 linktype: "Удалить горизонтальный разрыв страницы"
 type: docs
-url: /page-breaks/delete-horizontal-page-break/
-aliases: [/delete-horizontal-page-break-inside-worksheet/]
+url: /ru/page-breaks/delete-horizontal-page-break/
+aliases: [  /ru/delete-horizontal-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Удалить горизонтальный разрыв страницы, Электронная таблица Excel, REST API, SDK"
 description: "Удалить горизонтальный разрыв страницы из электронной таблицы Excel с помощью Aspose.Cells Cloud REST API. Доступны SDK для C#, Java, PHP, Ruby, Node.js, Python, Perl, Go."
 weight: 50

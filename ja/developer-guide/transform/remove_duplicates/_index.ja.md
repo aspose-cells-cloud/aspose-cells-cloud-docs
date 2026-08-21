@@ -4,7 +4,7 @@ ArticleTitle: "重複の削除 – Aspose.Cells Cloud API"
 second_title: "ドキュメント"
 linktitle: "重複の削除"
 type: docs
-url: /cells/remove/duplicates
+url: /ja/cells/remove/duplicates
 aliases: []
 keywords: "Aspose.Cells, 重複の削除, API"
 description: "ワークシート、範囲、またはテーブル内の重複値を削除します。"

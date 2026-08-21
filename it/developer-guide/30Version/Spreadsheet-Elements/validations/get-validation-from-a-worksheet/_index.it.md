@@ -3,8 +3,8 @@ title: "Ottenere una convalida del foglio di calcolo per indice da un foglio di 
 second_title: "Document"
 linktype: "Get"
 type: docs
-url: /validations/get/
-aliases: [/get-validation-from-a-worksheet/]
+url: /it/validations/get/
+aliases: [  /it/get-validation-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API per la convalida del foglio di calcolo, ottenere la convalida per indice, API REST di Excel, Aspose.Cells SDK"
 description: "Recuperare una convalida del foglio di calcolo tramite il relativo indice in base zero da un file di lavoro Excel utilizzando l'API Aspose.Cells Cloud (v3.0). Include esempio cURL, schema di risposta, codici di errore e frammenti di codice SDK per C#, Java, Python e altri."
 weight: 10

@@ -4,7 +4,7 @@ ArticleTitle: "Convertir une plage en CSV – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Convertir une plage en CSV"
 type: docs
-url: /cells/convert/range/csv
+url: /fr/cells/convert/range/csv
 aliases: []
 keywords: "convertir, csv, plage, Aspose.Cells"
 description: "Convertit une plage de feuille de calcul située sur un disque local en fichier CSV."

@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Format"
 type: docs
 url: /it/pivot-tables/format/
-aliases: [/it/update-cell-style-for-pivot-table/]
+aliases: [  /it/update-cell-style-for-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, stile tabella pivot, API per l’aggiornamento dello stile della cella, API REST, API Excel, formattazione foglio di calcolo, SDK cloud, stile cella, tabella pivot"
 description: "Scopri come aggiornare lo stile di una cella specifica in una tabella pivot di Aspose.Cells Cloud tramite l’API REST. Include endpoint, parametri, autenticazione, esempio cURL, frammento di codice Go SDK e indicazioni ottimizzate per il SEO."
 weight: 90

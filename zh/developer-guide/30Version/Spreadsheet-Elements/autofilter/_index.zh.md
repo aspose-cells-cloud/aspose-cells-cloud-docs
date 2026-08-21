@@ -3,8 +3,8 @@ title: "使用 Excel 自动筛选"
 second_title: "文档"
 linktitle: "自动筛选"
 type: docs
-url: /autofilter/
-aliases: [/working-with-autofilter/]
+url: /zh/autofilter/
+aliases: [  /zh/working-with-autofilter/ ]
 keywords: "自动筛选, Aspose.Cells Cloud, Excel 筛选, 颜色筛选, 日期筛选, 动态筛选, 数值筛选, 文本筛选, 空白筛选, 自定义筛选"
 description: "了解如何使用 Aspose.Cells Cloud API 添加、编辑和删除 Excel 自动筛选（颜色、日期、动态、数值、文本、空白）。提供多种语言的代码示例。"
 weight: 100

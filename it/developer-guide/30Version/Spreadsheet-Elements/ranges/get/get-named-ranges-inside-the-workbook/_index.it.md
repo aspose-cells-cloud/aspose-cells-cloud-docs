@@ -3,8 +3,8 @@ title: "Ottenere intervallo con nome in un foglio di calcolo Excel"
 second_title: "Documento"
 linktitle: "Nome"
 type: docs
-url: /ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
+url: /it/ranges/get/name/
+aliases: [  /it/get-named-ranges-inside-the-workbook/ ]
 keywords: "intervallo con nome, Excel, Aspose.Cells, API cloud, fogli di lavoro"
 description: "Recupera gli intervalli con nome da un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud. Include i dettagli della richiesta, comandi cURL di esempio ed esempi di SDK per diversi linguaggi di programmazione."
 ArticleTitle: "Ottenere intervalli con nome in un foglio di calcolo Excel – Aspose.Cells Cloud API"

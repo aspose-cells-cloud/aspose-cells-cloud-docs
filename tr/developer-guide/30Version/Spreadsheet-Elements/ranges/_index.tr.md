@@ -3,8 +3,8 @@ title: "Excel Aralıklarıyla Çalışma"
 second_title: "Belge"
 linktype: "aralık"
 type: docs
-url: /ranges/
-aliases: [/working-with-ranges/]
+url: /tr/ranges/
+aliases: [  /tr/working-with-ranges/ ]
 keywords: "Aspose.Cells, Excel aralığı, REST API, SDK, .NET, Java, Python, hücre birleştirme, aralık kopyalama, aralık değeri ayarlama"
 description: "Aspose.Cells Cloud REST API ile Excel aralıklarını nasıl alacağınızı, değiştireceğinizi, stillendireceğinizi, birleştireceğinizi, taşıyacağınızı ve kopyalayacağınızı öğrenin. .NET, Java, Python ve diğerleri için SDK kod örnekleri içerir."
 weight: 100

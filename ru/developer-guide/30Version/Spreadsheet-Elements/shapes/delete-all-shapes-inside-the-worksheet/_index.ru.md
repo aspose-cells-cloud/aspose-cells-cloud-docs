@@ -4,8 +4,8 @@ ArticleTitle: "Удаление всех фигур на листе Excel – As
 second_title: "Документ"
 linktype: "Clear"
 type: docs
-url: /shapes/clear/
-aliases: [/delete-all-shapes-inside-the-worksheet/]
+url: /ru/shapes/clear/
+aliases: [  /ru/delete-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, удаление всех фигур, лист Excel, REST API, SDK, cURL, .NET, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift"
 description: "Удаление всех фигур с листа Excel с использованием Aspose.Cells Cloud REST API. Операция доступна через cURL и широкий спектр SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift)."
 weight: 40

@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hitta och åtgärda trasiga länkar i Excel – Moln-baserat länkverktyg för kalkylark"
 linktype: "Search Spreadsheet Broken Links"
 type: docs
-url: /search-spreadsheet-broken-links/
+url: /sv/search-spreadsheet-broken-links/
 keywords: "Aspose Cells, trasiga länkar, granskning av kalkylark, Excel API, molnkalkylark, länkverifierare"
 description: "Upptäck och åtgärda trasiga länkar i Excel-arbetsböcker via Aspose.Cells Cloud API. Skanna intervall, få detaljerade JSON-resultat och integrera med SDK för valfritt programmeringsspråk."
 weight: 100

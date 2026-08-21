@@ -4,7 +4,7 @@ ArticleTitle: "إضافة توقيع رقمي إلى كتاب عمل Excel – �
 second_title: "مستند"
 linktype: "توقيع رقمي"
 type: docs
-url: /excel-digital-signature/
+url: /ar/excel-digital-signature/
 aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/

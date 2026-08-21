@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "2022'de Yeni Gelenler"
 type: docs
 weight: 90
-url: /new-features/2023/
+url: /tr/new-features/2023/
 keywords: "Aspose.Cells Cloud'da yeni gelenler. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF."
 description: "Bu sayfa, son sürümlerde sunulan en ilginç yeni Aspose.Cells Cloud özellikleri hakkında bilgi verir."
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, Aspose.Cells Cloud'da yeni gelenler

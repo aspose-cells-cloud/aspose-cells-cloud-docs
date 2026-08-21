@@ -3,8 +3,8 @@ title: "워크시트 삭제"
 second_title: "문서"
 linktype: "워크시트 하나"
 type: docs
-url: /worksheets/delete-worksheet/
-aliases: [/remove-worksheets-from-excel-workbooks/]
+url: /ko/worksheets/delete-worksheet/
+aliases: [  /ko/remove-worksheets-from-excel-workbooks/ ]
 keywords: "Aspose.Cells Cloud, 워크시트 삭제, Excel, 스프레드시트, REST API"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북에서 워크시트를 삭제합니다. C#, Java, PHP, Ruby, Node.js, Python, Perl, Go 및 cURL용 SDK를 지원합니다."
 weight: 20

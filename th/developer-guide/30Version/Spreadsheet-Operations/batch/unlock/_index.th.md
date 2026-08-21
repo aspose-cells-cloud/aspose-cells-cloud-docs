@@ -2,7 +2,7 @@
 title: "ปลดล็อกแบบแบทช์"
 second: "เอกสาร"
 type: docs
-url: /batch/unlock
+url: /th/batch/unlock
 keywords: "ปลดล็อกแบบแบทช์, Aspose.Cells Cloud, Excel, REST API, สเปรดชีต, cloud SDK"
 description: "ปลดล็อกไฟล์ Excel หลายไฟล์แบบแบทช์โดยใช้ Aspose.Cells Cloud REST API รองรับ SDK สำหรับ C#, Java, Python และภาษาอื่นๆ"
 weight: 100

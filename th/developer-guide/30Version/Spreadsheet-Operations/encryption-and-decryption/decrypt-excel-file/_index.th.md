@@ -3,8 +3,8 @@ title: "ถอดรหัสสมุดงาน Excel"
 second_title: "เอกสาร"
 linktype: "ถอดรหัสไฟล์ Excel"
 type: docs
-url: /excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+url: /th/excel-file-decrypt/
+aliases: [  /th/decrypt-excel-workbooks/ , /th/workbook/decrypt/ ]
 keywords: "Aspose.Cells, การถอดรหัส Excel, REST API, SDK บนคลาวด์"
 description: "เรียนรู้วิธีถอดรหัสสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API ซึ่งประกอบด้วยพารามิเตอร์ที่จำเป็น ตัวอย่าง cURL ตัวอย่างโค้ด SDK และรายละเอียดการจัดการข้อผิดพลาด"
 ArticleTitle: "วิธีถอดรหัสสมุดงาน Excel โดยใช้ Aspose.Cells Cloud API"

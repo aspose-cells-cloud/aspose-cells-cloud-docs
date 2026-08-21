@@ -3,7 +3,7 @@ title: "แปลงตารางเป็น CSV"
 ArticleTitle: "แปลงตารางเป็น CSV – Aspose.Cells Cloud API"
 second_title: "เอกสาร"
 linktype: "docs"
-url: "/cells/convert/table/csv"
+url: /th/cells/convert/table/csv
 aliases: []
 keywords: "แปลงตารางเป็น CSV, Aspose.Cells, Cloud API"
 description: "แปลงตารางของสมุดงานในระบบไฟล์ท้องถิ่นเป็นไฟล์ CSV"

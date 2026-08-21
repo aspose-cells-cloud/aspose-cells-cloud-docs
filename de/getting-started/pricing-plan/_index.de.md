@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud Preismodell"
 linktype: "Preismodell"
 type: docs
-url: /pricing-plan/
+url: /de/pricing-plan/
 description: "Erfahren Sie mehr über das Aspose.Cells Cloud Preismodell: 150 kostenlose API-Aufrufe pro Monat, danach nach Verbrauch abgerechnet mit Preisen ab 0,007 USD pro Aufruf. Keine versteckten Upgrades – nur transparente, gestufte Preise."
 weight: 70
 keywords: "Aspose.Cells Cloud Preismodell, Kosten pro API-Aufruf, Excel-API nach Verbrauch abgerechnet, Cloud-Tabellenkalkulationspreise"

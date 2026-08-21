@@ -4,7 +4,7 @@ ArticleTitle: "CSVデータをスプレッドシートにインポート – Asp
 second_title: "ドキュメント"
 linktitle: "CSVデータをスプレッドシートにインポート"
 type: docs
-url: /cells/import/data/csv
+url: /ja/cells/import/data/csv
 aliases: []
 keywords: "Aspose.Cells, CSVインポート, スプレッドシート, API"
 description: "Aspose.Cells Cloud API を使用して、CSVデータファイルをローカルのスプレッドシートにインポートします。"

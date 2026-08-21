@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Löschen"
 type: docs
 url: /de/oleobjects/delete/
-aliases: [/de/delete-a-specific-oleobject-from-excel-worksheet/]
+aliases: [  /de/delete-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, Cloud, Löschen, OLE, Objekt, Excel, Arbeitsblatt, REST, API, SDK"
 description: "Erfahren Sie, wie Sie ein OLE-Objekt aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API (v4.0) löschen. Enthält HTTPS-Endpunkt, Authentifizierungsschritte, cURL-Beispiel, SDK-Snippets, Fehlerbehandlungshinweise und Links zu nächsten Schritten."
 weight: 50

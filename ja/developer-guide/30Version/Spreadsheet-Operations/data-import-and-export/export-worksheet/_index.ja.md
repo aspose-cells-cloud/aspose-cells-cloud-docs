@@ -3,8 +3,8 @@ title: "ワークシートのエクスポート – Aspose.Cells Cloud"
 second_title: "ドキュメント"
 linktitle: "ワークシート"
 type: docs
-url: /export-excel-worksheet-to-different-formats/
-aliases: [/export/excel-worksheet-to-different-formats/]
+url: /ja/export-excel-worksheet-to-different-formats/
+aliases: [  /ja/export/excel-worksheet-to-different-formats/ ]
 keywords: "Aspose.Cells, ワークシートのエクスポート, Excel API, PDF, CSV, TIFF, ODS, 画像形式"
 description: "Aspose.Cells Cloud REST API を使用して、Excel ワークシートを PDF、CSV、TIFF などの形式にエクスポートする方法を学びます。cURL の使用例、必要な認証、パラメータの詳細、応答処理を含みます。"
 weight: 20

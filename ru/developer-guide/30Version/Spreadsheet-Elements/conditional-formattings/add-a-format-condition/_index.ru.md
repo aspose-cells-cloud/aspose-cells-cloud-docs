@@ -1,8 +1,8 @@
 ---
 title: "Добавление условия форматирования"
 type: docs
-url: /conditional-formattings/add-format-condition/
-aliases: [/add-a-format-condition/]
+url: /ru/conditional-formattings/add-format-condition/
+aliases: [  /ru/add-a-format-condition/ ]
 keywords: "Aspose.Cells Cloud, Conditional Formatting API, добавление условия форматирования, Excel REST API, Cells API"
 description: "Узнайте, как добавить условие форматирования в лист Excel с помощью REST API Aspose.Cells Cloud (версия 3.0). Включает синтаксис запроса, параметры, пример безопасного вызова через cURL и фрагменты кода SDK."
 ArticleTitle: "Добавление условия форматирования – документация API Aspose.Cells Cloud"

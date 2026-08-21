@@ -3,8 +3,8 @@ title: "Obtener rangos con nombre en un libro de Excel"
 second_title: "Documento"
 linktitle: "Nombre"
 type: docs
-url: /ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
+url: /es/ranges/get/name/
+aliases: [  /es/get-named-ranges-inside-the-workbook/ ]
 keywords: "rangos con nombre, Excel, Aspose.Cells, API en la nube, hojas de cálculo"
 description: "Recuperar rangos con nombre de un libro de Excel mediante la API REST de Aspose.Cells Cloud. Incluye detalles de la solicitud, comandos cURL de ejemplo y ejemplos de SDK para múltiples lenguajes de programación."
 ArticleTitle: "Obtener rangos con nombre en un libro de Excel – Aspose.Cells Cloud API"

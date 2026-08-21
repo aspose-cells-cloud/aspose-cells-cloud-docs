@@ -1,8 +1,8 @@
 ---
 title: "Obtenir les règles de mise en forme conditionnelle"
 type: docs
-url: /conditional-formattings/get-all/
-aliases: [/get-conditional-formattings-of-worksheet/]
+url: /fr/conditional-formattings/get-all/
+aliases: [  /fr/get-conditional-formattings-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API REST, Excel, Mise en forme conditionnelle, Feuille de calcul, API de mise en forme conditionnelle"
 description: "Récupérer toutes les règles de mise en forme conditionnelle appliquées à une feuille de calcul à l’aide de l’API REST Aspose.Cells Cloud. Inclut la syntaxe de la requête, les étapes d’authentification, les paramètres, des exemples concis de réponses et la gestion des erreurs."
 weight: 20

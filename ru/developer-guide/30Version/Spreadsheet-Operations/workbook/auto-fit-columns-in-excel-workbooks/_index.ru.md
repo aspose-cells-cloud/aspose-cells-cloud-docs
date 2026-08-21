@@ -3,7 +3,7 @@ title: "Автоматическая подгонка столбцов в фай
 second_title: "Документ"
 linktype: "Столбцы"
 type: docs
-url: /autofit-columns-on-an-excel-file/
+url: /ru/autofit-columns-on-an-excel-file/
 aliases:
   [
     /auto-fit-columns-in-excel-workbooks,

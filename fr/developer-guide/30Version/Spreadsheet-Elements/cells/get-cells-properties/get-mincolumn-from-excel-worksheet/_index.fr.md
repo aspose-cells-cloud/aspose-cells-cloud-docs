@@ -1,7 +1,7 @@
 ---
 title: "Obtenir MinColumn à partir d'une feuille Excel"
 type: docs
-url: /get-mincolumn-from-excel-worksheet/
+url: /fr/get-mincolumn-from-excel-worksheet/
 weight: 100
 keywords: Excel, Aspose.Cells Cloud, REST API, Get MinColumn, Worksheet, SDK, Cloud API
 description: Récupérer l'index minimal de colonne contenant des données dans une feuille d’un fichier Excel via l’API REST Aspose.Cells Cloud.

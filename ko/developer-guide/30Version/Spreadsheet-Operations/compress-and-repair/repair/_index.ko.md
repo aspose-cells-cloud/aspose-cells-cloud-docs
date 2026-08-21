@@ -3,7 +3,7 @@ title: "Excel 파일 복구"
 second_title: "문서"
 type: docs
 linktitle: "Excel 파일 복구"
-url: /repair-excel-files/
+url: /ko/repair-excel-files/
 keywords: "Aspose Cells, Excel 복구 API, 손상된 XLSX, 스프레드시트 복구, 클라우드 API"
 description: "Aspose.Cells Cloud REST API를 사용하여 손상된 Excel 파일(XLS, XLSX, XLSM, XLSB, ODS)을 복구합니다. 하나 이상의 파일을 업로드하고 출력 형식을 선택한 후 Base64 형식으로 복구된 파일을 받습니다. 별도의 설치가 필요 없습니다."
 weight: 39

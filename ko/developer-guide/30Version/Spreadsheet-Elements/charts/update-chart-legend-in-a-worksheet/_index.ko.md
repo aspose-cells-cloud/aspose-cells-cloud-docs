@@ -1,8 +1,8 @@
 ---
 title: "워크시트에서 차트 범례 업데이트하기"
 type: docs
-url: /charts/legend/update/
-aliases: [/update-chart-legend-in-a-worksheet/]
+url: /ko/charts/legend/update/
+aliases: [  /ko/update-chart-legend-in-a-worksheet/ ]
 weight: 160
 keywords: "Aspose.Cells, 클라우드, Excel, 차트, 범례, REST API, 업데이트, 워크시트, cURL, SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 차트 범례를 업데이트하는 방법. cURL 요청 예제 및 다양한 프로그래밍 언어의 SDK 코드 스니펫 제공."

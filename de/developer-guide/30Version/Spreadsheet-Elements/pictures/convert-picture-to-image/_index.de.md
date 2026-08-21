@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – Bild aus Arbeitsblatt abrufen"
 second_title: "Dokument"
 linktitle: "Abrufen"
 type: docs
-url: /pictures/get/
-aliases: [/convert-picture-to-image/]
+url: /de/pictures/get/
+aliases: [  /de/convert-picture-to-image/ ]
 keywords: "Aspose.Cells, Bild abrufen, API, Excel, Cloud, REST"
 description: "Rufen Sie ein bestimmtes Bild aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API ab. Enthält Endpunkt, Parameter, Authentifizierungsschritte, Antwortcodes und Codebeispiele."
 weight: 10

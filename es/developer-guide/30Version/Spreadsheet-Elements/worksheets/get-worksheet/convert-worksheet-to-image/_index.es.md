@@ -3,7 +3,7 @@ title: "Convertir hoja de cálculo a PDF, PNG, CSV y más: API en la nube Aspose
 second_title: "Documento"
 linktitle: "Convertir hoja de cálculo"
 type: docs
-url: /worksheets/conversion/
+url: /es/worksheets/conversion/
 aliases:
   - /convert-worksheet-to-image/
   - /worksheets/to-image/

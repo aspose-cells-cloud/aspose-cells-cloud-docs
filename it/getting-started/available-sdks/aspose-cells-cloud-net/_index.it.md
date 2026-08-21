@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Aspose.Cells Cloud SDK per C#: convertire, unire, dividere, proteggere, cercare, sostituire e altro ancora."
 linktitle: "Aspose.Cells Cloud SDK per .NET"
 type: docs
-url: /available-sdks/aspose-cells-cloud-net/
+url: /it/available-sdks/aspose-cells-cloud-net/
 description: "L'SDK .NET di Aspose.Cells Cloud fornisce un'API cross-platform per creare, convertire, unire, dividere, proteggere, cercare e sostituire file Excel—nessuna installazione di Office richiesta."
 keywords: "Aspose.Cells, Cloud SDK, .NET, Excel, convertire, unire, dividere, proteggere, cercare, sostituire, API"
 weight: 30

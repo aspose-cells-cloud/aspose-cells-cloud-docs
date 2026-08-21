@@ -3,7 +3,7 @@ title: "Excel в DOCX"
 second_title: "Документ"
 linktitle: "Excel в DOCX"
 type: docs
-url: convert-excel-file-to-docx-file/
+url: /ruconvert-excel-file-to-docx-file/
 keywords: "конвертация Excel в DOCX, Aspose.Cells Cloud, REST API, конвертация электронных таблиц, генерация документов"
 description: "Конвертируйте электронные таблицы Excel в документы DOCX с помощью REST API Aspose.Cells Cloud. Поддерживает множество SDK и языков программирования для бесшовной интеграции."
 weight: 90

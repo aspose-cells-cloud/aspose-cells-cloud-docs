@@ -2,7 +2,7 @@
 title: "So verschmelzen Sie mehrere Tabellendateien mit Aspose.Cells Cloud"
 linktitle: "So verschmelzen Sie mehrere Tabellendateien"
 type: docs
-url: /how-to-merge-multiple-files
+url: /de/how-to-merge-multiple-files
 description: "So verschmelzen Sie mehrere Tabellendateien mit Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Tabellendatei, PDF, CSV, JSON, Markdown, So verschmelzen Sie mehrere Dateien über Aspose.Cells Cloud

@@ -3,8 +3,8 @@ title: "导出工作表 – Aspose.Cells Cloud"
 second_title: "文档"
 linktitle: "工作表"
 type: docs
-url: /export-excel-worksheet-to-different-formats/
-aliases: [/export/excel-worksheet-to-different-formats/]
+url: /zh/export-excel-worksheet-to-different-formats/
+aliases: [  /zh/export/excel-worksheet-to-different-formats/ ]
 keywords: "Aspose.Cells, 导出工作表, Excel API, PDF, CSV, TIFF, ODS, 图像格式"
 description: "了解如何使用 Aspose.Cells Cloud REST API 将 Excel 工作表导出为 PDF、CSV、TIFF 及其他格式。包含 cURL 示例、所需身份验证、参数详情及响应处理说明。"
 weight: 20

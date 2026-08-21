@@ -3,8 +3,8 @@ title: "Seitenanzahl aus einer Excel-Datei abrufen"
 second_title: "Dokument"
 linktitle: "Seiten"
 type: docs
-url: /get-page-count-from-an-excel-file/
-aliases: [/workbook/page-count/, /workbook/get/page-count/]
+url: /de/get-page-count-from-an-excel-file/
+aliases: [  /de/workbook/page-count/ , /de/workbook/get/page-count/ ]
 keywords: "Aspose.Cells, Cloud API, Excel-Seitenanzahl, Workbook-Pagination"
 description: "Abrufen der Gesamtanzahl der druckbaren Seiten in einer Excel-Arbeitsmappe über die Aspose.Cells Cloud REST API (v3.0). Enthält Anforderungsformat, erforderliche Parameter, cURL-Beispiel, Antwortschema, Fehlerbehandlung und SDK-Snippets für mehrere Sprachen."
 weight: 10

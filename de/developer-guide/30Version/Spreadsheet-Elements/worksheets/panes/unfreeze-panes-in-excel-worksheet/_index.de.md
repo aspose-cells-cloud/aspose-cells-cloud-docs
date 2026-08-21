@@ -3,7 +3,7 @@ title: "Einfrieren von Bereichen in einem Excel-Arbeitsblatt aufheben"
 second_title: "Dokument"
 linktitle: "Einfrieren aufheben"
 type: docs
-url: /worksheets/panes/unfreeze/
+url: /de/worksheets/panes/unfreeze/
 aliases:
   - /unfreeze-panes-in-excel-worksheet/
   - /worksheets/unfreeze-panes/

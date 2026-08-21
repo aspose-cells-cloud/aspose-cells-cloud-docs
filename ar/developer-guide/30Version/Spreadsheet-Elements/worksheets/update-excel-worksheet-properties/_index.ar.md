@@ -3,8 +3,8 @@ title: "تحديث خصائص ورقة العمل – مرجع واجهة برم
 second_title: "مستند"
 linktitle: "تحديث"
 type: docs
-url: /worksheets/update-properties/
-aliases: [/update-excel-worksheet-properties/]
+url: /ar/worksheets/update-properties/
+aliases: [  /ar/update-excel-worksheet-properties/ ]
 weight: 20
 keywords:
   [

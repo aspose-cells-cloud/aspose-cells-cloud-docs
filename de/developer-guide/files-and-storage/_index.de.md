@@ -5,7 +5,7 @@ ArticleTitle: "Cloud-basierte Dateiverwaltung für Excel – Eine effiziente und
 linktitle: "Dateien und Speicherung"
 type: docs
 url: /de/files-and-storage/
-aliases: [/de/working-with-files-and-storage-using-aspose-cells-cloud/]
+aliases: [  /de/working-with-files-and-storage-using-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, Dateispeicher-API, Excel-Datei hochladen, Excel-Datei herunterladen, Datei kopieren, Datei verschieben, Datei löschen, Ordnerverwaltung, REST-API, cURL-Beispiele"
 description: "Umfassende Anleitung zur Verwaltung von Excel-Dateien und Ordnern im Aspose.Cells Cloud-Speicher. Enthält Hochladen, Herunterladen, Kopieren, Verschieben, Löschen und Ordneroperationen mit cURL-Beispielen, erforderlichen Parametern und Authentifizierungshinweisen."
 weight: 100

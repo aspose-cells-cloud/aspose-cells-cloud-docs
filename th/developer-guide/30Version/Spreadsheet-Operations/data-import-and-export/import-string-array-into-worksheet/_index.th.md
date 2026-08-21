@@ -3,7 +3,7 @@ title: "การนำเข้าอาร์เรย์สตริงลง
 second_title: "เอกสาร"
 linktitle: "นำเข้าอาร์เรย์สตริง"
 type: docs
-url: /import-string-array-into-excel-worksheet/
+url: /th/import-string-array-into-excel-worksheet/
 aliases:
   - /import-string-array-into-worksheet/
   - /import-data/string-array/

@@ -1,8 +1,8 @@
 ---
 title: "Bedingte Formatierung abrufen"
 type: docs
-url: /conditional-formattings/get/
-aliases: [/get-conditional-formatting/]
+url: /de/conditional-formattings/get/
+aliases: [  /de/get-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, REST API, Bedingte Formatierung, Excel, Tabellenkalkulation"
 description: "Rufen Sie bedingte Formatierungsregeln aus einem Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API ab."
 weight: 10

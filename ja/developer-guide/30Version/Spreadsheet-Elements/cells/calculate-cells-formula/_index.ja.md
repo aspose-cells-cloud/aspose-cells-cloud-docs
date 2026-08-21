@@ -1,7 +1,7 @@
 ---
 title: "セル数式の計算 – Aspose.Cells Cloud API"
 type: docs
-url: /calculate-cells-formula/
+url: /ja/calculate-cells-formula/
 weight: 90
 keywords: "Aspose.Cells Cloud, セル数式の計算, Excel API, REST API, SDK"
 description: "Aspose.Cells Cloud REST API (v3.0) を使用して Excel セルの数式を計算します。エンドポイント、パラメーター、cURL の例、および SDK スニペットを含みます。"

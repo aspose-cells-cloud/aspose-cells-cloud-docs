@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cómo eliminar columnas en blanco en Excel – Automatice la limpieza de columnas"
 linktitle: "Eliminar columnas en blanco"
 type: docs
-url: /delete-spreadsheet-blank-columns/
+url: /es/delete-spreadsheet-blank-columns/
 keywords: "eliminar columnas en blanco API de Excel, Aspose.Cells Cloud, API REST, limpieza de Excel, automatización de hojas de cálculo"
 description: "Aprenda a eliminar columnas vacías de archivos de Excel mediante la API REST de Aspose.Cells Cloud. Incluye el endpoint, autenticación, ejemplos de solicitud y respuesta, y código de SDK en C#, Java, Python y más."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Doppelte entfernen"
 type: docs
 keywords: "doppelte entfernen, listobject, aspose.cells cloud api, excel, rest"
-url: /list-objects/remove-duplicates/
+url: /de/list-objects/remove-duplicates/
 description: "Erfahren Sie, wie Sie doppelte Zeilen aus einem ListObject in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API entfernen. Enthält Endpunkt, Parameter, Authentifizierung sowie Beispielanfragen und -antworten."
 weight: 20
 ---

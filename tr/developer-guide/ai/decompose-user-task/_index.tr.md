@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud AI Görev Parçalama API’si ile Kullanıcı Hedeflerini Sıralı Eylem Planlarına Nasıl Dönüştürebilirsiniz?"
 linktype: "Decompose User Task"
 type: docs
-url: /decompose-user-task/
+url: /tr/decompose-user-task/
 keywords: "Aspose.Cells AI, görev parçalama API’si, SMART görev planlama, Redmine içe aktarma, proje otomasyonu"
 description: "Aspose.Cells Cloud AI ile serbest metin hedefleri, SMART kriterlerine uygun ve saat bazlı tahminler içeren görev listelerine dönüştürün. Redmine, Jira veya Azure DevOps için tek bir PUT isteğiyle CSV/XLSX çıktısı alın."
 weight: 100

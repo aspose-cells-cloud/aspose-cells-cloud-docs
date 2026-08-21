@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Массовая замена текста в локальных файлах Excel – API поиска и замены"
 linktitle: "Замена содержимого электронной таблицы"
 type: docs
-url: /replace-spreadsheet-content/
+url: /ru/replace-spreadsheet-content/
 keywords: "замена текста в Excel, Aspose.Cells поиск и замена, API для локальных таблиц, замена в файле Excel, API замены содержимого"
 description: "Замените текст в локальных файлах рабочих книг Excel без загрузки в облако. Используйте API поиска и замены Aspose.Cells Cloud для обновления конкретных диапазонов, листов или целых файлов за один вызов."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Nouveautés de 2024"
 type: docs
 weight: 20
-url: /new-features/2024/
+url: /fr/new-features/2024/
 keywords: "Aspose.Cells, Cloud, 2024, nouvelles fonctionnalités, API de suppression des doublons, API d’extraction de texte, transformation de données, feuille de calcul, Excel, CSV, PDF, API REST"
 description: "Aperçu des nouvelles fonctionnalités et améliorations apportées à Aspose.Cells Cloud en 2024, notamment l’API de suppression des doublons, l’API d’extraction de texte et les améliorations liées à la transformation de données."
 ArticleTitle: "Nouvelles fonctionnalités et améliorations d'Aspose.Cells Cloud en 2024"

@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Sblocca file Excel"
 type: docs
 url: /it/unlock-excel-files/
-aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
+aliases: [  /it/unlock/without-storage/ , /it/unlock/ , /it/unlock/without-using-storage/ ]
 keywords: "Sblocca Excel, Aspose.Cells Cloud, REST API, Sblocco Excel, cartella di lavoro protetta da password, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
 description: "L'API REST di Aspose.Cells Cloud fornisce un endpoint per sbloccare file Excel protetti da password. Gli SDK sono disponibili per numerosi linguaggi di programmazione, tra cui Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby e Swift."
 ArticleTitle: "Sblocca file Excel usando l'API REST di Aspose.Cells Cloud"

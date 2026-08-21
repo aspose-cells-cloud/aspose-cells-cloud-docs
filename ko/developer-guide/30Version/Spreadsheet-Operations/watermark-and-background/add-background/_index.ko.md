@@ -3,7 +3,7 @@ title: "워크시트에 배경 이미지 추가"
 second_title: "문서"
 linktitle: "추가"
 type: docs
-url: /add-background-in-excel-file/
+url: /ko/add-background-in-excel-file/
 aliases:
   - /add-background-in-workbook/
   - /workbook/add-background/

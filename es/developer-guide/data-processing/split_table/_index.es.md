@@ -4,7 +4,7 @@ ArticleTitle: "Dividir Tabla – Aspose.Cells Cloud API"
 second_title: "Documento"
 linktitle: "Dividir Tabla"
 type: docs
-url: /cells/split/table
+url: /es/cells/split/table
 aliases: []
 keywords: "Aspose.Cells, Dividir Tabla, API"
 description: "API para dividir una tabla en una hoja de cálculo según los valores de una columna."

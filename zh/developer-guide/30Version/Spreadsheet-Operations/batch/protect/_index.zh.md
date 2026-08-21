@@ -2,7 +2,7 @@
 title: "批量保护 Excel 文件"
 second_title: "文档"
 type: docs
-url: /batch/protect
+url: /zh/batch/protect
 keywords: "批量保护 Excel 文件, Aspose Cells Cloud, REST API, Excel 保护, 批量保护"
 description: "了解如何使用 Aspose.Cells Cloud REST API 批量保护多个 Excel 文件。包含请求详情、cURL 示例以及多种编程语言的 SDK 代码示例。"
 weight: 100

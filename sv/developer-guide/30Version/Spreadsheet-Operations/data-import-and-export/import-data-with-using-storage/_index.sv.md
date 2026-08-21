@@ -3,7 +3,7 @@ title: "Importera data med hjälp av lagring"
 second_title: "Dokument"
 linktype: "dokumentation"
 type: docs
-url: /import-data-with-using-storage/
+url: /sv/import-data-with-using-storage/
 aliases:
   - /import-data-into-excel-worksheet/
   - /import-data-into-worksheet/

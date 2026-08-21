@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud ile elektronik tablo dosyası biçimlerini nasıl dönüştüreceğiniz"
 linktitle: "Elektronik tablo dosya biçimlerini nasıl dönüştüreceğiniz"
 type: docs
-url: /how-to-convert-file-formats
+url: /tr/how-to-convert-file-formats
 description: "Aspose.Cells Cloud ile dosya biçimlerini nasıl dönüştüreceğiniz."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, JSON, Markdown, Aspose.Cells Cloud ile dosya biçimlerini nasıl dönüştüreceğiniz

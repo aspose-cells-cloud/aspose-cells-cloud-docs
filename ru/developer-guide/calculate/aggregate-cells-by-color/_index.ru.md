@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Сумма, подсчет, среднее, максимум и минимум значений по цвету в электронной таблице/Excel"
 LinkTitle: "Агрегирование ячеек по цвету"
 type: docs
-url: /aggregate-cells-by-color/
+url: /ru/aggregate-cells-by-color/
 keywords: "Aspose, Cells, Excel, API, агрегирование, цвет, сумма, подсчет, среднее, минимум, максимум"
 description: "Агрегация ячеек Excel по цвету фона или шрифта (сумма, подсчет, среднее, минимум, максимум) с помощью Aspose.Cells Cloud API. Изучите конечную точку, параметры, аутентификацию и примеры SDK."
 weight: 100

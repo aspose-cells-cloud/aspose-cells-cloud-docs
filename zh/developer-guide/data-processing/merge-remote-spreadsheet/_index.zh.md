@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud"
 ArticleTitle: "在云端合并 Excel 文件 – 使用 Aspose.Cells Cloud API 在线合并电子表格"
 linktitle: "合并远程电子表格"
 type: docs
-url: /merge-remote-spreadsheet/
+url: /zh/merge-remote-spreadsheet/
 keywords: "Aspose.Cells, 合并 Excel, 云端 API, 电子表格合并"
 description: "使用 Aspose.Cells Cloud API 合并存储在云端存储中的 Excel 工作簿。在单次 HTTPS 调用中指定输出格式、目标文件夹和合并模式。"
 weight: 100

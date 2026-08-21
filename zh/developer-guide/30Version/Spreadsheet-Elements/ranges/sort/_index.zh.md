@@ -4,7 +4,7 @@ second_title: "文档"
 linktype: "sort"
 type: docs
 keywords: "范围排序, Aspose.Cells Cloud, REST API, 电子表格, Excel, API"
-url: /ranges/sort/
+url: /zh/ranges/sort/
 description: 提供一种使用 Aspose.Cells Cloud 对工作簿内指定单元格范围进行排序的 API。
 weight: 20
 ---

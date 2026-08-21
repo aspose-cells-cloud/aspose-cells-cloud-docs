@@ -3,7 +3,7 @@ title: "CSV 데이터를 Excel 워크시트로 가져오기"
 second_title: "문서"
 linktitle: "CSV 데이터 가져오기"
 type: docs
-url: /import-CSV-data-into-excel/
+url: /ko/import-CSV-data-into-excel/
 aliases:
   - /import-CSV-data-into-worksheet/
   - /import-data/csv-data/

@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "Aspose.Cells Cloud Docker 镜像下载"
 linktitle: "镜像下载"
 type: docs
-url: /docker/downloads/
+url: /zh/docker/downloads/
 description: "获取适用于 Windows Server 2016/2019 和 Linux 的最新 Aspose.Cells Cloud Docker 镜像。按照分步说明、前置条件和安全建议，在本地运行容器。"
 weight: 30
 keywords: "Aspose.Cells, 云, Docker, 容器, 镜像, 下载, Windows Server, Linux, REST API"

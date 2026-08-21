@@ -3,8 +3,8 @@ title: "تقسيم ملف Excel إلى ملفات متعددة"
 second_title: "Document"
 linktitle: "تقسيم ملفات Excel متعددة"
 type: docs
-url: /split-an-excel-file-to-multi-files/
-aliases: [/split-excel-workbooks/,/workbook/split/]
+url: /ar/split-an-excel-file-to-multi-files/
+aliases: [  /ar/split-excel-workbooks/ , /ar/workbook/split/ ]
 keywords: "Aspose.Cells, Cloud, Excel, Split, API, PDF, CSV, JSON"
 description: "استخدم واجهة Aspose.Cells Cloud REST API لتقسيم ملفات عمل Excel ذات أوراق متعددة إلى ملفات منفصلة. تدعم تنسيقات الإخراج مثل PDF وCSV وJSON، وتتوافر عبر SDKs لـ Android وC# وGo وJava وNode.js وPerl وPHP وPython وRuby وSwift."
 weight: 32

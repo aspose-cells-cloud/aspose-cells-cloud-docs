@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud File Copy API – Eine Schnittstelle zum schnellen Ko
 second_title: "Dokument"
 ArticleTitle: "Cloud-basierte Excel-Dateiverwaltungslösung – Detaillierte Erklärung der Stapelkopierfunktion der Aspose.Cells Copy File API"
 linktype: "docs"
-url: /copy-file/
+url: /de/copy-file/
 keywords: "Aspose.Cells, CopyFile API, Excel-Dateikopie, Cloud-Speicher, REST API"
 description: "Erfahren Sie, wie Sie die Aspose.Cells Cloud CopyFile API verwenden, um Excel-Dateien effizient zu duplizieren und diese über verschiedene Speicherorte hinweg zu verwalten."
 weight: 100

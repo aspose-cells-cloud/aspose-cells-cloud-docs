@@ -3,8 +3,8 @@ title: "Renommer une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Renommer"
 type: docs
-url: /worksheets/rename/
-aliases: [/rename-excel-worksheet/]
+url: /fr/worksheets/rename/
+aliases: [  /fr/rename-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, renommer une feuille de calcul Excel, API REST, SDK de feuille de calcul, renommer une feuille de calcul, stockage cloud"
 description: "Renommer une feuille de calcul dans un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud. Des SDK sont disponibles pour Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby et Swift."
 weight: 20

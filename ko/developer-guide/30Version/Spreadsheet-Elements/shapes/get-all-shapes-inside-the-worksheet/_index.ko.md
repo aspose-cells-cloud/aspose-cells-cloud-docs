@@ -3,8 +3,8 @@ title: "Excel 워크시트의 모든 도형 가져오기"
 second_title: "문서"
 linktitle: "get-all"
 type: docs
-url: /shapes/get-all/
-aliases: [/get-all-shapes-inside-the-worksheet/]
+url: /ko/shapes/get-all/
+aliases: [  /ko/get-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, 클라우드 API, Excel 도형, 도형 가져오기, REST, SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 워크시트에서 모든 도형(차트, 이미지, 텍스트 상자 등)을 검색합니다. cURL 예제, SDK 코드 스니펫, 인증 단계 및 오류 처리 방법을 포함합니다."
 ArticleTitle: "Excel 워크시트의 모든 도형 가져오기"

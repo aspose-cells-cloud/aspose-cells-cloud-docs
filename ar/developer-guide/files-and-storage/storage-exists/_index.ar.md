@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "إدارة ملفات إكسل عبر السحابة – التحقق من وجود المخزن"
 linktype: "exists"
 type: docs
-url: /storage-exists/
+url: /ar/storage-exists/
 keywords: "Aspose.Cells, وجود المخزن, واجهة برمجة تطبيقات التخزين السحابي, REST, إكسل"
 description: "التحقق من وجود حاوية تخزين في Aspose.Cells Cloud. تعلّم نقطة النهاية GET /v4.0/cells/storage/{storageName}/exist، والمتغيّرات المطلوبة، وتنسيق الاستجابة، وشاهد أمثلة لاستخدام SDKs بلغات C#، Java، Python، والمزيد."
 weight: 100

@@ -1,8 +1,8 @@
 ---
 title: "Elimina area celle – Documentazione API di Aspose.Cells Cloud"
 type: docs
-url: /conditional-formattings/delete-cell-area/
-aliases: [/remove-cell-area-from-conditional-formatting/]
+url: /it/conditional-formattings/delete-cell-area/
+aliases: [  /it/remove-cell-area-from-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, Elimina area celle, API formattazione condizionale, API REST Excel"
 description: "Utilizza l'API REST di Aspose.Cells Cloud per eliminare un'area di celle specifica da una regola di formattazione condizionale in un foglio di calcolo Excel. Include esempi in ASP.NET, Java e Python."
 ArticleTitle: "Elimina area celle – Documentazione API di Aspose.Cells Cloud"

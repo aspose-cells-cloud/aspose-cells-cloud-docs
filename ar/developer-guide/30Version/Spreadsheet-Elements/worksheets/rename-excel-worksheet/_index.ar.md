@@ -3,8 +3,8 @@ title: "إعادة تسمية ورقة عمل إكسل"
 second_title: "مستند"
 linktitle: "إعادة التسمية"
 type: docs
-url: /worksheets/rename/
-aliases: [/rename-excel-worksheet/]
+url: /ar/worksheets/rename/
+aliases: [  /ar/rename-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud، إعادة تسمية ورقة عمل إكسل، واجهة برمجة تطبيقات REST، مكتبة أدوات جداول البيانات، إعادة تسمية ورقة العمل، التخزين السحابي"
 description: "إعادة تسمية ورقة عمل في ملف إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. تتوفر مكتبات أدوات (SDKs) لمنصات Android و C# و Go و Java و Node.js و Perl و PHP و Python و Ruby و Swift."
 weight: 20

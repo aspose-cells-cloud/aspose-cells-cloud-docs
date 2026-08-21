@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "การตรวจสอบสุขภาพของ Aspose.Cells Cloud"
 linktitle: "ตรวจสอบสุขภาพของบริการคลาวด์"
 type: docs
-url: /check-cloud-service-health/
+url: /th/check-cloud-service-health/
 keywords: "Aspose.Cells Cloud, การตรวจสอบสุขภาพ API, สถานะ REST, การตรวจสอบบริการคลาวด์"
 description: "ตรวจสอบสุขภาพของ Aspose.Cells Cloudแบบเรียลไทม์ เรียนรู้เกี่ยวกับจุดปลายทาง GET /v4.0/cells/status/check พารามิเตอร์ รูปแบบการตอบกลับ และตัวอย่าง SDK"
 weight: 100

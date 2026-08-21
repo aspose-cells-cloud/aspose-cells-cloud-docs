@@ -1,7 +1,7 @@
 ---
 title: "Obtenir l'axe des valeurs secondaire d'un graphique"
 type: docs
-url: /charts/second-value-axis/get/
+url: /fr/charts/second-value-axis/get/
 weight: 60
 keywords: Aspose.Cells, axe des valeurs secondaire d'un graphique, Excel, API REST, cloud, API, axe de graphique Excel
 description: Récupère l'axe des valeurs secondaire d'un graphique spécifié dans une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud.

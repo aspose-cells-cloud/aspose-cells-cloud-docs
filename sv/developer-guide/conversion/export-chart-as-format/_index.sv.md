@@ -5,7 +5,7 @@ description: "Konvertera ett diagram från en Excel-arbetsbok som finns lagrad i
 ArticleTitle: "Så här konverterar du ett lokalt kalkylblad till en PDF-fil: Steg-för-steg-guide"
 linktitle: "Konvertera kalkylblad till PDF"
 type: docs
-url: /export-chart-as-format/
+url: /sv/export-chart-as-format/
 keywords: "Aspose.Cells Cloud, exportera diagram, API, PDF, PNG, SVG, Excel, REST, molnkonvertering"
 weight: 100
 ---

@@ -4,7 +4,7 @@ second_title: "دليل المطور الشامل"
 ArticleTitle: "حماية جداول البيانات – تعيين كلمة مرور الفتح وكلمة مرور التعديل"
 linktitle: "الحماية"
 type: docs
-url: /protection/
+url: /ar/protection/
 keywords: "Aspose.Cells, Cloud, API, Spreadsheet, Protection, Open Password, Read‑Write Password, Excel"
 description: "تعرّف على كيفية حماية ملف Excel باستخدام كلمة مرور فتح أو كلمة مرور قراءة/كتابة باستخدام واجهة Aspose.Cells Cloud REST API. يشمل بناء الجملة للطلب، وأمثلة على الأكواد، وإدارة الأخطاء."
 weight: 60

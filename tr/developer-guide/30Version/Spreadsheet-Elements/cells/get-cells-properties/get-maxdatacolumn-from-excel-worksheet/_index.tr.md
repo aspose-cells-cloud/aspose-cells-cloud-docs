@@ -1,7 +1,7 @@
 ---
 title: "Aspose.Cells Cloud API – Bir Excel Çalışma Sayfasının MaxDataColumn Değerini Alın (v3.0)"
 type: docs
-url: /get-maxdatacolumn-from-excel-worksheet/
+url: /tr/get-maxdatacolumn-from-excel-worksheet/
 weight: 70
 keywords: "Aspose.Cells Cloud, MaxDataColumn Al, Excel çalışma sayfası, REST API, v3.0, SDK"
 description: "Belirtilen bir çalışma sayfasında veri içeren en yüksek sütun indeksini Aspose.Cells Cloud REST API’si (v3.0) kullanarak alın. İstek detaylarını, örnek yanıt ve SDK örneklerini içerir."

@@ -1,8 +1,8 @@
 ---
 title: "Hämta kalkylbladskommentar – Aspose.Cells Cloud API-dokumentation"
 type: docs
-url: /comments/get/
-aliases: [/get-comment-from-a-worksheet/]
+url: /sv/comments/get/
+aliases: [  /sv/get-comment-from-a-worksheet/ ]
 keywords: "Aspose.Cells, kalkylbladskommentar, API, GET, Excel"
 description: "Lär dig hur du hämtar en kalkylbladskommentar med cellnamn med Aspose.Cells Cloud API (v3.0). Inkluderar begärans-URL, parametrar, cURL-exempel, svarsinformation och SDK-kodstycken."
 weight: 10

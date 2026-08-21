@@ -3,7 +3,7 @@ title: "Tarih Filtresi Sil – Aspose.Cells Cloud"
 second_title: "Belge"
 linktitle: "Tarih filtresini sil"
 type: docs
-url: /autofilter/delete-date-filter/
+url: /tr/autofilter/delete-date-filter/
 aliases:
   - /remove-a-date-filter/
   - /autofilter/delete-a-date-filter/

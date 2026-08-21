@@ -3,8 +3,8 @@ title: "อัปเดตสไตล์ของเซลล์ในตาร
 second_title: "เอกสาร"
 linktype: รูปแบบ
 type: docs
-url: /pivot-tables/format/
-aliases: [/update-cell-style-for-pivot-table/]
+url: /th/pivot-tables/format/
+aliases: [  /th/update-cell-style-for-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, สไตล์ตารางสรุปข้อมูล, API อัปเดตสไตล์เซลล์, REST API, Excel API, การจัดรูปแบบสเปรดชีต, cloud SDK, สไตล์เซลล์, ตารางสรุปข้อมูล"
 description: "เรียนรู้วิธีอัปเดตสไตล์ของเซลล์ที่กำหนดในตารางสรุปข้อมูลของ Aspose.Cells Cloud ผ่าน REST API ซึ่งประกอบด้วย endpoint, พารามิเตอร์, การยืนยันตัวตน, ตัวอย่าง cURL และโค้ดตัวอย่าง SDK สำหรับ Go พร้อมคำแนะนำที่ปรับให้เหมาะสมกับ SEO"
 weight: 90

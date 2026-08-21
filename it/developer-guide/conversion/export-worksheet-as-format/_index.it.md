@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Come esportare un foglio di lavoro di un foglio di calcolo remoto in un altro formato: Guida passo-passo"
 linktitle: "Esporta foglio di lavoro"
 type: docs
-url: /export-worksheet-as-format/
+url: /it/export-worksheet-as-format/
 keywords: "Aspose Cells, esporta foglio di lavoro, API cloud, PDF, PNG, CSV, conversione Excel"
 description: "Converte un foglio di lavoro memorizzato in Aspose.Cells Cloud in PDF, PNG, SVG, CSV o altri formati tramite una singola richiesta GET. Include esempi di codice per C#, Java, Python e altro."
 weight: 100

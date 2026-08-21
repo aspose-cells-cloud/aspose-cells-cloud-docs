@@ -3,7 +3,7 @@ title: "Excel Dosyalarını Onar"
 second_title: "Belge"
 type: docs
 linktitle: "Excel Dosyalarını Onar"
-url: /repair-excel-files/
+url: /tr/repair-excel-files/
 keywords: "Aspose Cells, Excel onarım API'si, bozuk XLSX, elektronik tablo kurtarma, bulut API'si"
 description: "Aspose.Cells Cloud REST API'sini kullanarak bozuk Excel dosyalarını (XLS, XLSX, XLSM, XLSB, ODS) onarın. Bir veya daha fazla dosya yükleyin, çıktı formatını seçin ve onarılmış dosyaları Base64 olarak alın. Kurulum gerektirmez."
 weight: 39

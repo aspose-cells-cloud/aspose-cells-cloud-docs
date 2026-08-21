@@ -3,8 +3,8 @@ title: "Mettre à jour une forme sur une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Mettre à jour"
 type: docs
-url: /shapes/update/
-aliases: [/update-a-shape-inside-the-worksheet/]
+url: /fr/shapes/update/
+aliases: [  /fr/update-a-shape-inside-the-worksheet/ ]
 keywords: "mettre à jour une forme via l’API Excel, Aspose.Cells Cloud, mise à jour de forme Excel, API REST, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
 description: "Découvrez comment mettre à jour une forme sur une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’endpoint HTTPS, les détails d’authentification, le schéma DTO, un guide pas à pas, un exemple cURL et des extraits de code SDK pour plusieurs langages."
 ArticleTitle: "Mettre à jour une forme sur une feuille de calcul Excel – API Aspose.Cells Cloud"

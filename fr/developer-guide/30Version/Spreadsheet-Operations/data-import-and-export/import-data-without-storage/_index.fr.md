@@ -3,8 +3,8 @@ title: "Importer des données sans utiliser de stockage – API Aspose.Cells Clo
 second_title: "Document"
 linktitle: "Importer des données sans stockage"
 type: docs
-url: /import/without-using-storage/
-aliases: [/import-data-in-excel-worksheet-without-using-storage/]
+url: /fr/import/without-using-storage/
+aliases: [  /fr/import-data-in-excel-worksheet-without-using-storage/ ]
 keywords: "Aspose.Cells, API Cloud, importer des données sans stockage, API d'import Excel, import REST"
 description: "Découvrez comment importer des données sans stockage dans un classeur Excel à l’aide de l’API Aspose.Cells Cloud. Inclut le format de requête, les paramètres, un exemple cURL, du code SDK et la gestion des erreurs."
 weight: 10

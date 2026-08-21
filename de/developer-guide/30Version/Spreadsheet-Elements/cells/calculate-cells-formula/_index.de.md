@@ -1,7 +1,7 @@
 ---
 title: "Zellenformel berechnen – Aspose.Cells Cloud API"
 type: docs
-url: /calculate-cells-formula/
+url: /de/calculate-cells-formula/
 weight: 90
 keywords: "Aspose.Cells Cloud, Zellenformel berechnen, Excel-API, REST-API, SDK"
 description: "Berechnen Sie eine Excel-Zellenformel über die Aspose.Cells Cloud REST-API (v3.0). Enthält Endpunkt, Parameter, cURL-Beispiel und SDK-Snippets."

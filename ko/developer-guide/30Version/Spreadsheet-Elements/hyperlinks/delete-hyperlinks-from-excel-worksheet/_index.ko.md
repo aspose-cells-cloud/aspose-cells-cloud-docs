@@ -1,8 +1,8 @@
 ---
 title: "하이퍼링크 지우기"
 type: docs
-url: /hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /ko/hyperlinks/clear/
+aliases: [  /ko/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, 하이퍼링크 지우기, 하이퍼링크 삭제, REST API, 워크시트, SDK"
 description: "Aspose.Cells Cloud REST API 또는 지원되는 SDK(C#, Java, Python, Node.js, Go, PHP, Ruby, Perl 등)를 사용하여 Excel 워크시트에서 모든 하이퍼링크를 제거하는 방법을 알아보세요."
 weight: 40

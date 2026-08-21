@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Ottenere elementi di testo in un foglio di lavoro"
 type: docs
 url: /it/worksheets/get-text-items/
-aliases: [/it/get-text-items-from-a-worksheet/]
+aliases: [  /it/get-text-items-from-a-worksheet/ ]
 weight: 20
 keywords: "Aspose.Cells, API cloud, Excel, foglio di lavoro, elementi di testo, REST"
 description: "Recuperare tutti gli elementi di testo da un foglio di lavoro specifico in un file Excel utilizzando l'API REST di Aspose.Cells Cloud. Include codice cURL di esempio, codice SDK, passaggi per l'autenticazione e schema della risposta."

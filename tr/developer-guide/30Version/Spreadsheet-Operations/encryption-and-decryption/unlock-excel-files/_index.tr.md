@@ -3,8 +3,8 @@ title: "Excel Dosyalarını Kilidini Açın"
 second_title: "Belge"
 linktitle: "Excel Dosyalarını Kilidini Açın"
 type: docs
-url: /unlock-excel-files/
-aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
+url: /tr/unlock-excel-files/
+aliases: [  /tr/unlock/without-storage/ , /tr/unlock/ , /tr/unlock/without-using-storage/ ]
 keywords: "Excel Kilidini Aç, Aspose.Cells Cloud, REST API, Excel kilidini açma, şifreli çalışma kitaplığı, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
 description: "Aspose.Cells Cloud REST API, şifre korumalı Excel dosyalarının kilidini açmak için bir uç nokta sağlar. SDK’lar, Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby ve Swift dahil olmak üzere birden fazla programlama dili için mevcuttur."
 ArticleTitle: "Aspose.Cells Cloud REST API ile Excel Dosyalarını Kilidini Açın"

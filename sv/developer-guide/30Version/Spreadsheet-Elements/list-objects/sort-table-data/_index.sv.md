@@ -3,8 +3,8 @@ title: "Sortera ListObject-data i ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Sortera"
 type: docs
-url: /list-objects/sort-data/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
+url: /sv/list-objects/sort-data/
+aliases: [  /sv/get-a-list-object-or-table-inside-the-worksheet/ , /sv/tables/sort-data/ ]
 keywords: "Aspose.Cells Cloud, Excel, ListObject, Sortera data, REST API, Ark"
 description: "Lär dig hur du sorterar ListObject (tabell) data i ett Excel-ark med Aspose.Cells Cloud REST API (v3.0). Inkluderar endpoint, parametrar, exempel på cURL-förfrågan och SDK-exempel."
 weight: 40

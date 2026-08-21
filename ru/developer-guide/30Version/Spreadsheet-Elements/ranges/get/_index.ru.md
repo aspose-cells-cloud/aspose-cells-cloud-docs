@@ -3,7 +3,7 @@ title: "Как получить содержимое диапазона из р�
 second_title: "Документ"
 linktitle: "Получить"
 type: docs
-url: /ranges/get/
+url: /ru/ranges/get/
 keywords: "Aspose.Cells, Excel, API, получить, диапазон, электронная таблица, REST"
 description: "Узнайте, как получить содержимое диапазона из рабочего листа Excel с использованием Aspose.Cells Cloud REST API. Включает синтаксис запроса и примеры кода."
 weight: 20

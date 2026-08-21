@@ -3,7 +3,7 @@ title: "ImportData Görevi – Aspose.Cells Cloud API Referansı ve cURL Örnekl
 second_title: "Belge"  
 type: docs  
 url: /tr/tasks/importdata/  
-aliases: [/tr/working-with-importdata-task/]  
+aliases: [  /tr/working-with-importdata-task/ ]
 keywords: "Aspose.Cells, ImportData Görevi, Excel API, REST, cURL, SDK"  
 description: "Aspose.Cells Cloud ImportData Görevi ile Excel çalışma kitaplarına toplu veri içe aktarmayı öğrenin. cURL sözdizimi, istek şeması, SDK örnekleri (C#, PHP, Ruby, Node.js) ve hata işleme içerir."  
 weight: 40  

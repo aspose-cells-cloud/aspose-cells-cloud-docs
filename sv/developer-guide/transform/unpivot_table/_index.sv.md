@@ -4,7 +4,7 @@ ArticleTitle: "Unpivot Table – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "Unpivot Table"
 type: docs
-url: /cells/unpivot/table
+url: /sv/cells/unpivot/table
 aliases: []
 keywords: "Aspose.Cells, Unpivot, Transformera"
 description: "Byt rader och kolumner i kalkylbladet."

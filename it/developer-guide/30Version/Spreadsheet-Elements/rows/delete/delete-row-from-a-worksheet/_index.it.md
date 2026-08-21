@@ -3,8 +3,8 @@ title: "Eliminare una riga in un foglio di lavoro Excel"
 second_title: "Documento"
 linktitle: "Riga"
 type: docs
-url: /rows/delete/row/
-aliases: [/delete-row-from-a-worksheet/]
+url: /it/rows/delete/row/
+aliases: [  /it/delete-row-from-a-worksheet/ ]
 description: "Usa l'endpoint DELETE /worksheets/{sheetName}/cells/rows/{rowIndex} per rimuovere una riga specifica da un foglio di lavoro Excel tramite l'API REST Aspose.Cells Cloud. Include comandi cURL, esempi di SDK e riferimento completo ai parametri."
 keywords: "Aspose.Cells, elimina riga, Excel, API, REST, Cloud, SDK"
 weight: 80

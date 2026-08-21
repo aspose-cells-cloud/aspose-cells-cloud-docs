@@ -3,7 +3,7 @@ title: "استرجاع الأسماء من ملف Excel"
 second_title: "مستند"
 linktitle: "الأسماء"
 type: docs
-url: /get-names-from-an-excel-file/
+url: /ar/get-names-from-an-excel-file/
 aliases:
   [
     "/get-names-count-from-excel-workbooks/",

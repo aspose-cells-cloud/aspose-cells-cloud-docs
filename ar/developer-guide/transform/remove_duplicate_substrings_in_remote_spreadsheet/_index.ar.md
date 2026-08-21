@@ -4,7 +4,7 @@ ArticleTitle: "إزالة النصوص المتكررة في جدول بيانا
 second_title: "وثيقة"
 linktype: "إزالة النصوص المتكررة في جدول بيانات عن بعد"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
+url: /ar/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
 aliases: []
 keywords: "Aspose.Cells، إزالة النصوص المتكررة، واجهة برمجة التطبيقات"
 description: "واجهة برمجة تطبيقات لتحديد وحذف النصوص المتكررة داخل خلايا النطاق المُحدّد في ملف عمل."

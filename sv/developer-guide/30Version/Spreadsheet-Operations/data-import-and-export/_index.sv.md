@@ -3,7 +3,7 @@ title: "Importera data till Excel-filer och exportera data från Excel-filer"
 second_title: "Dokument"
 linktitle: "Importera och exportera data"
 type: docs
-url: /data-import-and-export/
+url: /sv/data-import-and-export/
 keywords: "Aspose.Cells Cloud, importera data, exportera Excel, API, CSV, JSON, bild, array"
 description: "Lär dig hur du importerar data från CSV, JSON, arrayer och bilder till Excel-filer samt hur du exporterar arbetsböcker, diagram och former till PDF, PNG och mer med Aspose.Cells Cloud API (v3.0)."
 weight: 25

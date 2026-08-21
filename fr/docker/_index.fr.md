@@ -3,8 +3,8 @@ title: "Manuel d’exploitation Aspose.Cells Cloud Docker : héberger l’applic
 second_title: "Document"
 ArticleTitle: "Manuel d’exploitation Aspose.Cells Cloud Docker"
 linktype: "docs"
-url: /docker-developer-guide/
-aliases: [/docker/, /docker/run/]
+url: /fr/docker-developer-guide/
+aliases: [  /fr/docker/ , /fr/docker/run/ ]
 description: "Déployer Aspose.Cells Cloud en tant que conteneur Docker sur une infrastructure privée ou locale, permettant le traitement de feuilles de calcul (Excel, PDF, CSV, JSON, Markdown) sans recourir au cloud public d’Aspose."
 keywords:
   [

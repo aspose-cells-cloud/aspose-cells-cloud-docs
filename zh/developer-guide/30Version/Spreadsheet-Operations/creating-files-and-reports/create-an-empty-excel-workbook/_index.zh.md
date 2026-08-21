@@ -3,7 +3,7 @@ title: "创建空 Excel 工作簿"
 second_title: "文档"
 linktitle: "空工作簿"
 type: docs
-url: /create-an-empty-excel-file/
+url: /zh/create-an-empty-excel-file/
 aliases:
   [
     /create-an-empty-excel-workbook/,

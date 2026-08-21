@@ -3,7 +3,7 @@ title: "Convertir tabla en tabla dinámica"
 second_title: "Documentos"
 linktype: Convertir
 type: docs
-url: /pivot-tables/convert-table-to-pivottable/
+url: /es/pivot-tables/convert-table-to-pivottable/
 aliases:
   [
     /create-a-pivottable-with-table/,

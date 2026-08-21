@@ -3,7 +3,7 @@ title: "ตัวเลือกการแปลงสมุดงาน"
 second_title: "เอกสาร"
 linktitle: "ตัวเลือกการแปลงสมุดงาน"
 type: docs
-url: /convert-workbook-options/
+url: /th/convert-workbook-options/
 keywords: "Aspose.Cells, ConvertWorkbookOptions, การแปลง Excel, PDF, CSV, API"
 description: "ตัวเลือกการแปลงสมุดงาน – ตั้งค่าการแปลงสมุดงาน Excel เป็น PDF, CSV, HTML และรูปแบบอื่นๆ ด้วย API ของ Aspose.Cells Cloud"
 weight: 79

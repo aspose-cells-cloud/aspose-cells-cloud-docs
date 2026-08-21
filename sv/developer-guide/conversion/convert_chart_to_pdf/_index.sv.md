@@ -3,7 +3,7 @@ title: "Konvertera diagram till PDF"
 ArticleTitle: "Konvertera diagram till PDF – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "docs"
-url: /cells/convert/chart/pdf
+url: /sv/cells/convert/chart/pdf
 aliases: []
 keywords: "Konvertera diagram till PDF, Aspose.Cells, PDF, diagramkonvertering"
 description: "Konverterar ett diagram i ett kalkylark på en lokal enhet till PDF."

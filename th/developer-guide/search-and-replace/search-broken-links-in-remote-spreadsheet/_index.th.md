@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "ค้นหาและแก้ไขลิงก์เสียใน Excel แบบรันผ่านคลาวด์ – เครื่องมือตรวจสอบลิงก์สมุดงานบนคลาวด์"
 linktitle: "ค้นหาลิงก์เสียในสมุดงานภายนอก"
 type: docs
-url: /search-broken-links-in-remote-spreadsheet/
+url: /th/search-broken-links-in-remote-spreadsheet/
 keywords: "Excel, ลิงก์เสีย, API, คลาวด์, สเปรดชีต, การตรวจสอบ, Aspose.Cells"
 description: "ใช้ Aspose.Cells Cloud API เพื่อสแกนสมุดงาน Excel ที่เก็บไว้ในพื้นที่จัดเก็บบนคลาวด์ เพื่อหาลิงก์ภายนอกที่เสีย สูตรที่ไม่ถูกต้อง และแหล่งข้อมูลที่ขาดหาย"
 weight: 100

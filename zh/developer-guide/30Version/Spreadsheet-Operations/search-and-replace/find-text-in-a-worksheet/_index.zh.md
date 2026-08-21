@@ -3,8 +3,8 @@ title: "在 Excel 工作表中查找文本"
 second_title: "文档"
 linktitle: "在工作表中查找"
 type: docs
-url: /worksheets/find-text/
-aliases: [/find-text-in-a-worksheet/]
+url: /zh/worksheets/find-text/
+aliases: [  /zh/find-text-in-a-worksheet/ ]
 weight: 40
 keywords: "Excel, Aspose.Cells Cloud, REST API, 查找文本, 工作表, 电子表格, 搜索"
 description: "使用 Aspose.Cells Cloud REST API 在 Excel 工作表中查找文本。该 API 支持多种 SDK 和编程语言。"

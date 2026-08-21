@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktype: "มีอะไรใหม่ในปี 2023"
 type: docs
 weight: 30
-url: /new-features/2023/
+url: /th/new-features/2023/
 keywords: "Excel, Office Cloud, REST API, สเปรดชีต, PDF, CSV, JSON, Markdown, Aspose.Cells Cloud, อัปเดตปี 2023"
 description: "ค้นพบฟีเจอร์ใหม่ของ Aspose.Cells Cloud ปี 2023 รวมถึง API สำหรับการแปลงที่รับรู้ภูมิภาค, การรองรับแกนของแผนภูมิ, ลายเซ็นดิจิทัล และการปรับปรุงอื่นๆ พร้อมบันทึกการเผยแพร่อย่างละเอียดและตัวอย่างโค้ด"
 ArticleTitle: "มีอะไรใหม่ใน Aspose.Cells Cloud ปี 2023 – อัปเดตฟีเจอร์และบันทึกการเผยแพร่"

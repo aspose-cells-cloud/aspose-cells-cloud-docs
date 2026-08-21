@@ -3,8 +3,8 @@ title: "ピボットテーブルのスタイルを更新する"
 second_title: "Document"
 linktitle: "すべてをフォーマット"
 type: docs
-url: /pivot-tables/format-all/
-aliases: [/update-style-for-pivot-table/]
+url: /ja/pivot-tables/format-all/
+aliases: [  /ja/update-style-for-pivot-table/ ]
 keywords: "ピボットテーブル、スタイルの更新、Aspose.Cells Cloud、REST API、Excel、スプレッドシート、API、ピボットテーブルのスタイル、すべてをフォーマット"
 description: "Aspose.Cells Cloud REST API を使用して、ピボットテーブル全体のスタイルを更新する方法を学びます。リクエストの詳細、cURL の例、複数のプログラミング言語向けの SDK スニペットを含みます。"
 weight: 100

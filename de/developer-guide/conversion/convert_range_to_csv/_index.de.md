@@ -4,7 +4,7 @@ ArticleTitle: "Bereich in CSV konvertieren – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Bereich in CSV konvertieren"
 type: docs
-url: /cells/convert/range/csv
+url: /de/cells/convert/range/csv
 aliases: []
 keywords: "konvertieren, csv, bereich, Aspose.Cells"
 description: "Konvertiert einen Bereich eines Tabellendokuments auf einer lokalen Festplatte in eine CSV-Datei."

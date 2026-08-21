@@ -4,8 +4,8 @@ articleTitle: "ワークシートページのエクスポート – Aspose.Cells
 secondTitle: "ドキュメント"
 linkTitle: "ページ"
 type: docs
-url: /worksheets/page-to-different-formats/
-aliases: [/get-worksheet-for-page-index/]
+url: /ja/worksheets/page-to-different-formats/
+aliases: [  /ja/get-worksheet-for-page-index/ ]
 keywords: "Aspose.Cells Cloud, ワークシートページのエクスポート, PDF, PNG, CSV, REST API, JWT 認証, ファイル形式"
 description: "Aspose.Cells Cloud REST API を使用して、特定のワークシートページを PDF、PNG、CSV などにエクスポートする方法を学習します。cURL リクエスト、パラメータガイド、および複数の言語向けの SDK サンプルを含みます。"
 weight: 240

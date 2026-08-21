@@ -3,8 +3,8 @@ title: "엑셀 보고서 생성을 위한 데이터 조합"
 second_title: "문서"
 linktype: "데이터 조합"
 type: docs
-url: /assembly-data-for-the-creation-of-an-excel-report/
-aliases: [/assembly/]
+url: /ko/assembly-data-for-the-creation-of-an-excel-report/
+aliases: [  /ko/assembly/ ]
 keywords: "Aspose.Cells, 엑셀 보고서, 데이터 조합, 클라우드 API, REST, SDK, cURL, PDF, ODS"
 description: "Aspose.Cells Cloud의 Assembly API를 사용하여 데이터를 엑셀(XLSX, PDF, ODS) 보고서에 병합하는 방법을 알아보세요. 엔드포인트, 매개변수, cURL 예제, SDK 코드, 인증 가이드 및 오류 처리를 포함합니다."
 weight: 40

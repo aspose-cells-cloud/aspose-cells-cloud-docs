@@ -3,8 +3,8 @@ title: "在 Excel 工作表中添加 OLE 对象"
 second_title: "文档"
 linktitle: "添加 OLE 对象"
 type: docs
-url: /oleobjects/add/
-aliases: [/add-oleobject-to-excel-worksheet/]
+url: /zh/oleobjects/add/
+aliases: [  /zh/add-oleobject-to-excel-worksheet/ ]
 keywords: "添加 OLE 对象, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "使用 Aspose.Cells Cloud REST API 将 OLE 对象添加到 Excel 工作表中。该 API 可直接调用，也可通过 C#、Java、PHP、Ruby、Node.js、Python、Perl 和 Go 的 SDK 调用。"
 ArticleTitle: "使用 Aspose.Cells Cloud API 将 OLE 对象添加到 Excel 工作表"

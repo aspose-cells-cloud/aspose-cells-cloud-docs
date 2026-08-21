@@ -1,7 +1,7 @@
 ---
 title: "ลบลิงก์ในแผ่นงาน"
 type: docs
-url: /hyperlinks/delete/
+url: /th/hyperlinks/delete/
 description: "ลบลิงก์ในแผ่นงานโดยใช้ดัชนีผ่าน Aspose.Cells Cloud API เรียนรู้พารามิเตอร์ที่จำเป็น การตรวจสอบสิทธิ์ และดูตัวอย่างโค้ดสำหรับ C#, Java, Python และอื่นๆ"
 keywords: "Aspose.Cells, Cloud, ลบลิงก์, Excel API, REST, ลิงก์ในแผ่นงาน"
 ArticleTitle: "ลบลิงก์ในแผ่นงาน – เอกสารประกอบ Aspose.Cells Cloud API"

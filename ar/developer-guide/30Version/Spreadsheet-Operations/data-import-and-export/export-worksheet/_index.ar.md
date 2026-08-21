@@ -3,8 +3,8 @@ title: "تصدير ورقة عمل – Aspose.Cells Cloud"
 second_title: "المستند"
 linktitle: "ورقة العمل"
 type: docs
-url: /export-excel-worksheet-to-different-formats/
-aliases: [/export/excel-worksheet-to-different-formats/]
+url: /ar/export-excel-worksheet-to-different-formats/
+aliases: [  /ar/export/excel-worksheet-to-different-formats/ ]
 keywords: "Aspose.Cells, تصدير ورقة عمل, API لملفات إكسل, PDF, CSV, TIFF, ODS, تنسيقات الصور"
 description: "تعرّف على كيفية تصدير ورقة عمل إكسل إلى تنسيقات مثل PDF وCSV وTIFF وغيرها باستخدام واجهة Aspose.Cells Cloud REST API. يشمل مثال cURL وتفاصيل المصادقة المطلوبة ومعلمات الاستدعاء ومعالجة الاستجابة."
 weight: 20

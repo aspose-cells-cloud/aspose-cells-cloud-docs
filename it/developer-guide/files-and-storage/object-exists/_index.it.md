@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "API Object Exists – Verifica la presenza di file o cartelle in Aspose.Cells Cloud"
 linktitle: "Object Exists"
 type: docs
-url: /object-exists/
+url: /it/object-exists/
 keywords: "Aspose.Cells, archiviazione cloud, oggetto esistente, esistenza file, esistenza cartella, API"
 description: "Utilizza l'API Object Exists per verificare rapidamente se un file o una cartella esiste nell'archiviazione cloud di Aspose.Cells. Supporta il nome opzionale dello storage e l'ID di versione, e funziona con oggetti versionati."
 weight: 100

@@ -3,8 +3,8 @@ title: "Автоматическая подстройка строк в рабо
 second_title: "Документ"
 linktitle: "Строки"
 type: docs
-url: /autofit-rows-on-an-excel-file/
-aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
+url: /ru/autofit-rows-on-an-excel-file/
+aliases: [  /ru/auto-fit-rows-in-excel-workbooks/ , /ru/workbook/autofit/rows/ ]
 keywords: "автоматическая подстройка строк, рабочая тетрадь Excel, Aspose.Cells Cloud, REST API, параметры автофиттера"
 description: "Узнайте, как автоматически изменять высоту строк в рабочей тетради Excel с помощью REST API Aspose.Cells Cloud. Включает endpoint, параметры, пример cURL и фрагменты кода SDK для C#, Java, Python и других языков."
 weight: 90

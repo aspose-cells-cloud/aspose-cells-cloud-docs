@@ -3,8 +3,8 @@ title: "Lägg till en form i ett Excel-arbetsblad"
 second_title: "Dokument"
 linktitle: "Lägg till"
 type: docs
-url: /shapes/add/
-aliases: [/add-a-shape-inside-the-worksheet/]
+url: /sv/shapes/add/
+aliases: [  /sv/add-a-shape-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, lägg till form, Excel, REST API, molntjänst, shapeDTO, ritningstyp"
 description: "Lär dig hur du lägger till former (båge, linje, rektangel m.fl.) i ett Excel-arbetsblad med Aspose.Cells Cloud REST API v3.0. Innehåller begäronsyntax, nödvändiga parametrar, autentiseringssteg och exempel på SDK-kod."
 weight: 30

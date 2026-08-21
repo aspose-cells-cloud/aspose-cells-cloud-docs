@@ -1,8 +1,8 @@
 ---
 title: "ワークシートからチャートエリアを取得する"
 type: docs
-url: /charts/area/get/
-aliases: [/get-chart-area-from-a-worksheet/]
+url: /ja/charts/area/get/
+aliases: [  /ja/get-chart-area-from-a-worksheet/ ]
 weight: 60
 keywords:
   - "Aspose.Cells"

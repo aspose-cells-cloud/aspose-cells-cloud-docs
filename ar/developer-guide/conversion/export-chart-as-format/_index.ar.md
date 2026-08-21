@@ -5,7 +5,7 @@ description: "تحويل مخطط من ملف Excel مخزن في السحابة
 ArticleTitle: "كيفية تحويل ورقة عمل جدول بيانات محلي إلى ملف PDF: دليل خطوة بخطوة"
 linktitle: "تحويل ورقة العمل إلى PDF"
 type: docs
-url: /export-chart-as-format/
+url: /ar/export-chart-as-format/
 keywords: "Aspose.Cells Cloud, تصدير المخطط, واجهة برمجة التطبيقات, PDF, PNG, SVG, Excel, REST, التحويل السحابي"
 weight: 100
 ---

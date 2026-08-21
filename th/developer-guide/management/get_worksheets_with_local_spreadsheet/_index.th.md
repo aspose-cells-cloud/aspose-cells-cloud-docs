@@ -4,7 +4,7 @@ ArticleTitle: "รับแผ่นงานจากไฟล์สเปร�
 second_title: "เอกสาร"
 linktitle: "รับแผ่นงานจากไฟล์สเปรดชีตในเครื่อง"
 type: docs
-url: /cells/spreadsheet/worksheets
+url: /th/cells/spreadsheet/worksheets
 aliases: []
 keywords: "Aspose.Cells, Worksheets, Local Spreadsheet, API"
 description: "ดึงรายการแผ่นงานทั้งหมดจากไฟล์สเปรดชีตในเครื่องที่กำลังใช้งานอยู่"

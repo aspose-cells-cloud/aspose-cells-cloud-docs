@@ -3,8 +3,8 @@ title: "Импорт данных без использования хранил
 second_title: "Документ"
 linktitle: "Импорт данных без хранилища"
 type: docs
-url: /import/without-using-storage/
-aliases: [/import-data-in-excel-worksheet-without-using-storage/]
+url: /ru/import/without-using-storage/
+aliases: [  /ru/import-data-in-excel-worksheet-without-using-storage/ ]
 keywords: "Aspose.Cells, Cloud API, импорт данных без хранилища, API импорта Excel, REST-импорт"
 description: "Узнайте, как импортировать данные в рабочую книгу Excel без использования хранилища с помощью Aspose.Cells Cloud API. Включает формат запроса, параметры, пример cURL, код SDK и обработку ошибок."
 weight: 10

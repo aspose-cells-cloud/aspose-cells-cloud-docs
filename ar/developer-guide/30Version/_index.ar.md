@@ -3,8 +3,8 @@ title: "دليل المطورين لـ Aspose.Cells Cloud الإصدار 3.0"
 ArticleTitle: "دليل المطورين لواجهة Aspose.Cells Cloud REST API الإصدار 3.0 – إنشاء ملفات جداول البيانات وإعدادها وتحويلها"
 second_title: "الوثيقة"
 type: docs
-url: /developer-guide-3.0/
-aliases: [/developer-guide/v3.0/, /developer-guide-v3.0/]
+url: /ar/developer-guide-3.0/
+aliases: [  /ar/developer-guide/v3.0/ , /ar/developer-guide-v3.0/ ]
 keywords: "Aspose.Cells Cloud, واجهة REST لجداول البيانات Excel, تحويل ملفات العمل, واجهة رسومات البيانات, استيراد البيانات, تصديرها, PDF, CSV, JSON, دليل المطورين"
 description: "تعلم كيفية استخدام واجهات Aspose.Cells Cloud REST API الإصدار 3.0 لإنشاء ملفات جداول البيانات Excel وتحويلها وتنسيقها وإضافة الرسوم البيانية والجداول وغيرها. يتضمن أمثلة على الأكواد ونصائح مُستوحاة من أفضل الممارسات."
 weight: 150

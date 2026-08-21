@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud 교체 Web API – 원격 워크시트에서 텍스�
 second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud API를 사용하여 원격 워크시트의 텍스트 찾기 및 바꾸기"
 linktype: "docs"
-url: "/replace-content-in-remote-worksheet/"
+url: /ko/replace-content-in-remote-worksheet/
 keywords: "Aspose.Cells, 텍스트 바꾸기, 원격 워크시트, Excel API, 클라우드 스프레드시트, 찾기 및 바꾸기, REST API"
 description: "Aspose Cloud에 저장된 Excel 파일의 특정 워크시트에서 텍스트를 바꿉니다. 비밀번호로 보호된 워크북도 지원하며, 지역 설정 인식 검색 및 대량 업데이트를 지원합니다."
 weight: 100

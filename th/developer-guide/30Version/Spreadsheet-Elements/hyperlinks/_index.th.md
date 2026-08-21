@@ -5,7 +5,7 @@ second_title: "เอกสาร"
 type: docs
 linktitle: "ลิงก์"
 url: /th/hyperlinks/
-aliases: [/working-with-hyperlinks/, /working-with-hyperlink/]
+aliases: [  /th/working-with-hyperlinks/ , /th/working-with-hyperlink/ ]
 keywords: "Excel, ลิงก์, Cells.Cloud, API, Aspose.Cells, สเปรดชีต, ลิงก์, คู่มือ"
 description: "เรียนรู้วิธีการดึงข้อมูล เพิ่ม แก้ไข และลบลิงก์ในไฟล์ Excel ผ่าน Aspose Cells Cloud API"
 weight: 100

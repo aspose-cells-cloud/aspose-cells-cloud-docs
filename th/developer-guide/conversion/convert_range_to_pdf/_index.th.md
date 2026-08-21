@@ -4,7 +4,7 @@ ArticleTitle: "การแปลงช่วงข้อมูลเป็น P
 second_title: "เอกสาร"
 linktitle: "ConvertRangeToPdf"
 type: docs
-url: /cells/convert/range/pdf
+url: /th/cells/convert/range/pdf
 aliases: []
 keywords: "Aspose.Cells, แปลงช่วงข้อมูลเป็น PDF, API"
 description: "แปลงช่วงข้อมูลที่ระบุของไฟล์สเปรดชีตเป็น PDF โดยใช้ Aspose.Cells Cloud"

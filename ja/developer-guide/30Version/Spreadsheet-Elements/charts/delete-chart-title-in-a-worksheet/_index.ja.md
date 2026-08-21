@@ -1,8 +1,8 @@
 ---
 title: "ワークシート内のチャート タイトルを削除する"
 type: docs
-url: /charts/delete-chart-title/
-aliases: [/delete-chart-title-in-a-worksheet/]
+url: /ja/charts/delete-chart-title/
+aliases: [  /ja/delete-chart-title-in-a-worksheet/ ]
 weight: 150
 keywords: "Aspose.Cells, クラウド API, チャート タイトルの削除, Excel, REST, SDK"
 description: "Aspose.Cells Cloud REST API (v4.0) を使用して Excel ワークシートからチャート タイトルを削除する方法を学びます。cURL、SDK の例、およびエラー処理を含みます。"

@@ -3,8 +3,8 @@ title: "Экспорт области рабочего листа в PNG, PDF, C
 second_title: "Документ"
 linktitle: "Область"
 type: docs
-url: /worksheets/area-to-different-formats/
-aliases: [/get-worksheet-for-area/]
+url: /ru/worksheets/area-to-different-formats/
+aliases: [  /ru/get-worksheet-for-area/ ]
 keywords: "Aspose.Cells, экспорт области рабочего листа, PNG, PDF, CSV, конвертация Excel, REST API, SDK"
 description: "Узнайте, как экспортировать определённый диапазон ячеек из рабочего листа Excel в форматы PNG, PDF, CSV и более чем в 20 других форматов с помощью Aspose.Cells Cloud REST API или SDK (C#, Java, Python и др.)."
 weight: 230

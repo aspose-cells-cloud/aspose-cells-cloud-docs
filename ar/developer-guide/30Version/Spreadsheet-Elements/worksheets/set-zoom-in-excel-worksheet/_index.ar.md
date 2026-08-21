@@ -3,8 +3,8 @@ title: "ضبط تكبير ورقة عمل Excel – واجهة Aspose.Cells Clou
 second_title: "مستند"
 linktype: "تقرير"
 type: docs
-url: /worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
+url: /ar/worksheets/zoom/
+aliases: [  /ar/set-zoom-in-excel-worksheet/ ]
 keywords: "Aspose.Cells، تكبير Excel، تكبير ورقة العمل، واجهة برمجة تطبيقات REST، حزمة تطوير برامج السحابة، أتمتة Excel"
 description: "تعرّف على كيفية ضبط تكبير ورقة العمل (من 10٪ إلى 400٪) باستخدام واجهة Aspose.Cells Cloud API الإصدار 3.0. يتضمن أمثلة لـ cURL وحزم تطوير البرامج، وإدارة الأخطاء."
 weight: 20

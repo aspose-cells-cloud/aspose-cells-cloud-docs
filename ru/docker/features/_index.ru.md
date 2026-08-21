@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Основные функции Aspose.Cells Cloud Docker"
 linktype: "Features"
 type: docs
-url: /docker-container-features/
+url: /ru/docker-container-features/
 description: "Запускайте API Aspose.Cells Cloud локально с помощью контейнера Aspose.Cells Cloud Docker — контейнеризованной службы на базе Docker, обеспечивающей полную обработку электронных таблиц, конфиденциальность и возможность работы в автономном режиме без использования публичного облака Aspose."
 weight: 30
 keywords:

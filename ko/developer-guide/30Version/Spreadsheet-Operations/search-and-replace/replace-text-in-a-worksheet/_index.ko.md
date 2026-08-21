@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "워크시트 내 텍스트 교체"
 type: docs
 url: /ko/worksheets/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+aliases: [  /ko/replace-text-in-a-workbook/ ]
 keywords: "Aspose.Cells, 텍스트 교체, Excel, REST API, 스프레드시트, 워크시트"
 description: "Aspose.Cells Cloud API(v3.0)를 사용하여 Excel 워크시트에서 텍스트를 교체하는 방법을 알아보세요. 필요한 사전 조건, 인증, 요청 구문, cURL 예제, SDK 코드 샘플, 응답 세부 정보 및 오류 처리를 포함합니다."
 ArticleTitle: "Excel 워크시트에서 텍스트 교체하기 – Aspose.Cells Cloud API"

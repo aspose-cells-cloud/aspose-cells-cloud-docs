@@ -3,8 +3,8 @@ title: "Eliminar el fondo en una hoja de cálculo de Excel"
 second_title: "Document"
 linktype: "Delete"
 type: docs
-url: /worksheets/background/delete/
-aliases: [/delete-background-or-watermark-of-excel-worksheet/]
+url: /es/worksheets/background/delete/
+aliases: [  /es/delete-background-or-watermark-of-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Eliminar fondo de hoja de cálculo, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Utilice la API REST de Aspose.Cells Cloud para eliminar la imagen de fondo de una hoja de cálculo de Excel. Los SDK están disponibles para C#, Java, PHP, Ruby, Node.js, Python, Perl y Go."
 weight: 210

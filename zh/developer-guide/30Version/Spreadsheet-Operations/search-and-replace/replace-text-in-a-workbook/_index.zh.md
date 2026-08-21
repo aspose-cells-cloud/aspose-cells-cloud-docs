@@ -3,8 +3,8 @@ title: "替换 Excel 工作簿中的文本"
 second_title: "文档"
 linktitle: "工作簿中替换"
 type: docs
-url: /workbook/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /zh/workbook/replace-text/
+aliases: [  /zh/replace-text-in-a-workbook/ ]
 weight: 60
 keywords: "Aspose.Cells Cloud、替换文本、Excel 工作簿、XLSX、ODS、REST API、电子表格、SDK"
 description: "使用 Aspose.Cells Cloud REST API 替换 Excel（XLS、XLSX、XLSM、XLSB）和 OpenDocument 电子表格（ODS）工作簿中的文本。可通过 cURL 以及多种 SDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go 等）调用。"

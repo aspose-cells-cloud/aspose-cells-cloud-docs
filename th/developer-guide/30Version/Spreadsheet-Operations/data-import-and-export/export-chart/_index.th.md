@@ -3,8 +3,8 @@ title: "ส่งออกกราฟใน Excel"
 second_title: "เอกสาร"
 linktype: "กราฟ"
 type: docs
-url: /export-excel-chart-to-different-formats/
-aliases: [/export/excel-chart-to-different-formats/]
+url: /th/export-excel-chart-to-different-formats/
+aliases: [  /th/export/excel-chart-to-different-formats/ ]
 description: "ส่งออกวัตถุกราฟใน Excel ไปยังรูปแบบยอดนิยมต่างๆ เช่น PNG, JPEG, PDF, SVG, TIFF, EMF, WMF และอื่นๆ โดยใช้ Aspose.Cells Cloud REST API หรือ SDK มีตัวอย่างการตรวจสอบสิทธิ์ ตัวอย่าง cURL และตัวอย่างโค้ดสำหรับหลายภาษา"
 keywords: "Aspose.Cells, ส่งออกกราฟ, การส่งออกกราฟใน Excel, REST API, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK, รูปแบบกราฟ, Aspose Cells Cloud"
 weight: 20

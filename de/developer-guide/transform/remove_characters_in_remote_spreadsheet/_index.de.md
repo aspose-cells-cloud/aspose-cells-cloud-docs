@@ -4,7 +4,7 @@ ArticleTitle: "Zeichen aus entfernter Tabellendatei entfernen – Aspose.Cells C
 second_title: "Dokument"
 linktype: "remove-characters-in-remote-spreadsheet"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
+url: /de/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
 aliases: []
 keywords: "Aspose.Cells, Zeichen entfernen, Textverarbeitung"
 description: "Löscht benutzerdefinierte Zeichen, vordefinierte Zeichensätze oder beliebige Teilzeichenfolgen aus jeder Zelle des ausgewählten Bereichs, während Formeln, Formatierungen und Datenvalidierungen in einer entfernten Tabellendatei beibehalten werden."

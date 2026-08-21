@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Kelime Büyük/Küçük Harf Değiştirme (Büyü
 ArticleTitle: "Excel Büyük/Küçük Harf Dönüştürücüsü – Büyük Harf, Küçük Harf, Baş Harf Büyük Harf ve Cümle Büyük Harf"
 linktitle: "Kelime Büyük/Küçük Harf"
 type: docs
-url: /change-word-case/
+url: /tr/change-word-case/
 keywords: "kelime büyük/küçük harf değiştirme API'si, Aspose.Cells, Excel büyük/küçük harf dönüştürme, büyük harf, küçük harf, baş harf büyük harf, cümle büyük harf, metin formatlama"
 description: "Aspose.Cells Cloud API'sini kullanarak Excel dosyalarındaki metin büyük/küçük harfini kolayca dönüştürün. Büyük Harf, Küçük Harf, Baş Harf Büyük Harf ve Cümle Büyük Harf formatlarını destekler. C#, Java, Python ve diğerleri için kod örneklerini edinin."
 weight: 100

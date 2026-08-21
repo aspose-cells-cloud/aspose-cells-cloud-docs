@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Divisor de texto de Excel – Segmentar contenido de celdas en múltiples columnas | Aspose.Cells Cloud"
 linktitle: "División de texto"
 type: docs
-url: /split-text/
+url: /es/split-text/
 keywords: "Aspose, Cells, API de división de texto, Excel, delimitador, segmentación de texto, API en la nube"
 description: "Divida fácilmente el texto de las celdas de Excel en columnas o filas independientes utilizando Aspose.Cells Cloud. Admite delimitadores personalizados, máscaras, saltos de línea y la opción de conservar o no los delimitadores. Comience en minutos con curl o SDK."
 weight: 100

@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Konvertera Excel-arbetsbok till PDF, CSV, HTML oc
 second_title: "Dokument"
 linktitle: "Konvertera Excel"
 type: docs
-url: /get-different-formats-files/
+url: /sv/get-different-formats-files/
 aliases:
   - /export-excel-workbook-to-different-file-formats/
   - /export-different-formats/

@@ -2,7 +2,7 @@
 title: "تصدير ورقة عمل باستخدام واجهة Aspose.Cells Cloud API – التنسيقات وأمثلة cURL وSDK"
 second_title: "مستند"
 linktype: "docs"
-url: "/worksheets/get-worksheet/"
+url: /ar/worksheets/get-worksheet/
 keywords: "Aspose.Cells Cloud Get Worksheet، تصدير ورقة عمل، Excel API، REST، CSV، PDF، PNG، JPEG، GIF، BMP، TIFF، EMF، XPS، OTS، XLS، XLSX، XLSB، XLSM، ODS، FODS، Numbers، cloud API"
 description: "تعلّم كيفية تصدير ورقة عمل واحدة من ملف Excel باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن_endpoint_ والمُعلمات ومثال cURL مُصحّح وتفاصيل المصادقة ومعالجة الأخطاء وأجزاء من كود SDK لـ C# وJava وPython وغيرهما."
 weight: 10

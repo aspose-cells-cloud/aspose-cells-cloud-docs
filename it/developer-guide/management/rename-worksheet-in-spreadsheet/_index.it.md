@@ -4,7 +4,7 @@ second_title: "Documento"
 articleTitle: "Come Rinominare i Fogli di Lavoro in Excel – Modificare i Nomi dei Fogli"
 linktype: "Rinomina Foglio di Lavoro in Foglio Elettronico"
 type: docs
-url: /rename-worksheet-in-spreadsheet/
+url: /it/rename-worksheet-in-spreadsheet/
 keywords: "rinomina foglio di lavoro, Aspose.Cells Cloud, Excel API, foglio elettronico, SDK, API REST"
 description: "Rinomina facilmente i fogli di lavoro di Excel tramite l'API Aspose.Cells Cloud. Scopri i parametri richiesti, consulta esempi cURL e ottieni il codice SDK per C#, Java, Python e altri linguaggi."
 weight: 100

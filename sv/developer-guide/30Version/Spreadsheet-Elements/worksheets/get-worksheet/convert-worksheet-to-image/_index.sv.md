@@ -3,7 +3,7 @@ title: "Konvertera kalkylblad till PDF, PNG, CSV och mer – Aspose.Cells Cloud 
 second_title: "Dokument"
 linktitle: "Konvertera kalkylblad"
 type: docs
-url: /worksheets/conversion/
+url: /sv/worksheets/conversion/
 aliases:
   - /convert-worksheet-to-image/
   - /worksheets/to-image/

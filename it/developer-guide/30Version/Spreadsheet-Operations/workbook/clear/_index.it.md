@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Rimuovi"
 type: docs
 url: /it/clear/
-aliases: [/it/clearobjects/]
+aliases: [  /it/clearobjects/ ]
 keywords: "Aspose.Cells, Excel, Rimuovi oggetti, API REST, Cloud SDK, Rimuovi commenti, Elimina grafici"
 description: "Usa l'API REST di Aspose.Cells Cloud per eliminare commenti, grafici, forme e altri oggetti da un libro Excel. Supporta diversi SDK e restituisce il file pulito in formato Base64."
 weight: 39

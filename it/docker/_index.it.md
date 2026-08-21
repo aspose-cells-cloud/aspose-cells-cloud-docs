@@ -4,8 +4,8 @@ second_title: "Documento"
 ArticleTitle: "Manuale operativo Aspose.Cells Cloud Docker"
 linktitle: "Docker"
 type: docs
-url: /docker-developer-guide/
-aliases: [/docker/, /docker/run/]
+url: /it/docker-developer-guide/
+aliases: [  /it/docker/ , /it/docker/run/ ]
 description: "Distribuisci Aspose.Cells Cloud come contenitore Docker su infrastrutture private o on-premises, abilitando l'elaborazione di fogli elettronici (Excel, PDF, CSV, JSON, Markdown) senza ricorrere al cloud pubblico di Aspose."
 keywords:
   [

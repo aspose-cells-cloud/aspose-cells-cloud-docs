@@ -1,7 +1,7 @@
 ---
 title: "Excel Çalışma Sayfasında Hücre Biçimlendirmesini Temizleme"
 type: docs
-url: /clear-cells-formatting-in-excel-worksheet/
+url: /tr/clear-cells-formatting-in-excel-worksheet/
 weight: 100
 keywords: "Aspose.Cells Cloud, Excel, Hücre Biçimlendirmesini Temizleme, REST API, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Aspose.Cells Cloud REST API'sini kullanarak Excel çalışma sayfasındaki hücre biçimlendirmesini temizleyin. İstek detaylarını, cURL örneğini ve birden fazla dil için SDK kod snippet'lerini içerir."

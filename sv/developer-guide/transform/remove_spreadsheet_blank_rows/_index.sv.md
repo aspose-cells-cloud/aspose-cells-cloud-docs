@@ -4,7 +4,7 @@ ArticleTitle: "Ta bort tomma rader i kalkylark – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Ta bort tomma rader i kalkylark"
 type: docs
-url: /cells/remove/blank-rows
+url: /sv/cells/remove/blank-rows
 aliases: []
 keywords: "Aspose.Cells, ta bort tomma rader, kalkylark, API"
 description: "Tar bort alla tomma rader från en kalkylarksfil."

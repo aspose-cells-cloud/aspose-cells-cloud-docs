@@ -3,7 +3,7 @@ title: "Lavorare con l'attività SaveResult"
 second_title: "Document"
 type: docs
 url: /it/tasks/save-result/
-aliases: [/it/working-with-saveresult-task/]
+aliases: [  /it/working-with-saveresult-task/ ]
 keywords: "attività SaveResult, Aspose.Cells Cloud API, esportazione risultato, download cartella di lavoro, archiviazione cloud, API REST, fogli di calcolo, Excel"
 description: "Scopri come utilizzare l'attività SaveResult nell'API Aspose.Cells Cloud per esportare i dati elaborati della cartella di lavoro verso l'archiviazione cloud o scaricarli direttamente. Include esempi cURL, Java, .NET e un riferimento completo ai parametri."
 weight: 50

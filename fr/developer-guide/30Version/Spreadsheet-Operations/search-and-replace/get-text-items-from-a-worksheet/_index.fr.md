@@ -3,8 +3,8 @@ title: "Récupérer des éléments textuels à partir d'une feuille de calcul Ex
 second_title: "Document"
 linktitle: "Obtenir les éléments textuels dans une feuille de calcul"
 type: docs
-url: /worksheets/get-text-items/
-aliases: [/get-text-items-from-a-worksheet/]
+url: /fr/worksheets/get-text-items/
+aliases: [  /fr/get-text-items-from-a-worksheet/ ]
 weight: 20
 keywords: "Aspose.Cells, API Cloud, Excel, feuille de calcul, éléments textuels, REST"
 description: "Récupérer tous les éléments textuels d'une feuille de calcul spécifique dans un fichier Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut des exemples cURL, du code SDK, des étapes d’authentification et le schéma de réponse."

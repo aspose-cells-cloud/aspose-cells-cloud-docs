@@ -3,7 +3,7 @@ title: "เพิ่มตัวกรองวันที่ลงในแผ
 second_title: "เอกสาร"
 linktype: "เพิ่มตัวกรองวันที่"
 type: docs
-url: /autofilter/add-date-filter/
+url: /th/autofilter/add-date-filter/
 aliases:
   - /add-date-filter-in-a-worksheet/
   - /autofilter/add-a-date-filter/

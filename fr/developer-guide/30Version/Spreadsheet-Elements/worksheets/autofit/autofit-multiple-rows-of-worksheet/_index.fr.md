@@ -3,8 +3,8 @@ title: "Ajuster automatiquement plusieurs lignes dans une feuille de calcul Exce
 second_title: "Document"
 linktitle: "Lignes"
 type: docs
-url: /worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
+url: /fr/worksheets/autofit/rows/
+aliases: [  /fr/autofit-multiple-rows-of-worksheet/ ]
 keywords: "ajuster automatiquement les lignes, Excel, Aspose.Cells Cloud, API REST, feuille de calcul, classeur"
 description: "Découvrez comment utiliser l'API REST Aspose.Cells Cloud pour ajuster automatiquement plusieurs lignes dans une feuille de calcul Excel. Inclut la syntaxe de la requête, les paramètres, un exemple cURL, des extraits de code SDK et la gestion des erreurs."
 weight: 40

@@ -3,7 +3,7 @@ title: "Akıllı İşaretleyici Şablonları ile Excel Raporları Oluşturun"
 second_title: "Belge"
 linktype: "Akıllıİşaretleyici"
 type: docs
-url: /build-report-with-smart-marker/
+url: /tr/build-report-with-smart-marker/
 aliases:
   - /create-excel-workbook-from-a-smartmarker-template/
   - /workbook/smartmarker/

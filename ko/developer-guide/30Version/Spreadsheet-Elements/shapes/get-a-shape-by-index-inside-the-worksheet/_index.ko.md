@@ -3,8 +3,8 @@ title: "Excel 워크시트에서 인덱스로 도형 가져오기"
 second_title: "문서"
 linktitle: "가져오기"
 type: docs
-url: /shapes/get/
-aliases: [/get-a-shape-by-index-inside-the-worksheet/]
+url: /ko/shapes/get/
+aliases: [  /ko/get-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel 도형 API, 인덱스로 도형 가져오기, 워크시트 도형, REST API, 도형 검색, Aspose.Cells SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 인덱스로 도형을 검색합니다. 요청 구문, 매개변수, 응답 세부정보 및 SDK 예제 포함."
 weight: 20

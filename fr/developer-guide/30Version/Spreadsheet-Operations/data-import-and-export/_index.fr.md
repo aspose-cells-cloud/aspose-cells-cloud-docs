@@ -3,7 +3,7 @@ title: "Importer des données dans des fichiers Excel et exporter des données d
 second_title: "Document"
 linktitle: "Importation et exportation de données"
 type: docs
-url: /data-import-and-export/
+url: /fr/data-import-and-export/
 keywords: "Aspose.Cells Cloud, importation de données, exportation Excel, API, CSV, JSON, image, tableau"
 description: "Découvrez comment importer des données à partir de fichiers CSV, JSON, de tableaux et d’images dans des fichiers Excel, ainsi que comment exporter des classeurs, des graphiques et des formes vers PDF, PNG et d’autres formats à l’aide de l’API Aspose.Cells Cloud (v3.0)."
 weight: 25

@@ -5,7 +5,7 @@ description: "แปลงกราฟจากสมุดงาน Excel ท�
 ArticleTitle: "วิธีการแปลงแผ่นงานในสเปรดชีตที่อยู่ในเครื่องให้เป็นไฟล์ PDF: คู่มือแบบทีละขั้นตอน"
 linktype: "แปลงแผ่นงานเป็น PDF"
 type: docs
-url: /export-chart-as-format/
+url: /th/export-chart-as-format/
 keywords: "Aspose.Cells Cloud, ส่งออกกราฟ, API, PDF, PNG, SVG, Excel, REST, การแปลงผ่านคลาวด์"
 weight: 100
 ---

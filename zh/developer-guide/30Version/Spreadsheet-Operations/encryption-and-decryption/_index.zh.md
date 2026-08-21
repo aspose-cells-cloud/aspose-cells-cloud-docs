@@ -4,7 +4,7 @@ second_title: "文档"
 linktype: "保护 Excel"
 type: docs
 url: /zh/protect/
-aliases: [/zh/workbook/password/]
+aliases: [  /zh/workbook/password/ ]
 keywords: "Excel, 保护, 加密, 解密, 数字签名, Aspose.Cells Cloud, REST API, 密码, 安全"
 description: "了解如何使用 Aspose.Cells Cloud REST API 保护、加密、解密并为 Excel 工作簿添加数字签名 —— 提供 Android、C#、Java、Python 等语言的代码示例。"
 ArticleTitle: "使用 Aspose.Cells Cloud API 加密、解密、数字签名及保护 Excel 文件"

@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "Web APIs สำหรับการแปลงออนไลน์ของ Excel"
 linktype: "การแปลง"
 type: docs
-url: /conversion/
+url: /th/conversion/
 keywords: "Aspose.Cells, Cloud API, การแปลงสเปรดชีต, Excel เป็น PDF, Excel เป็น CSV, Excel เป็น JSON, REST API, SDK"
 description: "เรียนรู้วิธีแปลงช่วงข้อมูล (range), แผนภูมิ, ตาราง, แผ่นงาน หรือสเปรดชีตทั้งหมดของ Excel เป็นรูปแบบต่างๆ เช่น PDF, รูปภาพ, HTML, CSV, JSON, Markdown และ XML ผ่าน Aspose.Cells Cloud REST API โซลูชันที่รวดเร็ว มีความปลอดภัย และไม่ต้องติดตั้ง anything พร้อม SDK สำหรับ .NET, Java, Python และอื่นๆ"
 weight: 20

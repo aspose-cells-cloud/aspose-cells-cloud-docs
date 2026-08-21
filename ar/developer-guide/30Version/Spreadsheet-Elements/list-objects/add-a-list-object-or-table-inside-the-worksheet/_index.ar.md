@@ -3,8 +3,8 @@ title: "إضافة كائن قائمة (جدول) إلى ورقة عمل Excel"
 second_title: "الوثيقة"
 linktitle: "إضافة"
 type: docs
-url: /list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+url: /ar/list-objects/add/
+aliases: [  /ar/add-a-list-object-or-table-inside-the-worksheet/ , /ar/tables/add/ ]
 keywords: "Aspose.Cells Cloud، واجهة برمجة تطبيقات Excel، كائن القائمة، جدول، واجهة برمجة تطبيقات REST، ورقة العمل"
 description: "تعرّف على كيفية إضافة كائن قائمة (جدول Excel) إلى ورقة عمل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يشمل الـ endpoint، المَعلمات، خطوات المصادقة، مثال cURL، وأمثلة على أكواد SDK."
 weight: 10

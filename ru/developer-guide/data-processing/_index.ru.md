@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Обработка табличных данных – Объединение, разделение и импорт"
 linktitle: "Обработка данных"
 type: docs
-url: /data-processing/
+url: /ru/data-processing/
 keywords: "Aspose.Cells Cloud, обработка табличных данных, объединение Excel, разделение Excel, импорт CSV, импорт JSON, API"
 description: "Подробное руководство по импорту данных в форматах CSV/JSON, объединению удалённых рабочих книг Excel и разделению больших табличных файлов с использованием REST API Aspose.Cells Cloud, включая примеры запросов и ответов."
 weight: 30

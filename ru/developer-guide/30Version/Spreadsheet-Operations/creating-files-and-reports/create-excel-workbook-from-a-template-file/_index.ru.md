@@ -3,7 +3,7 @@ title: "Как создать рабочую книгу Excel с использ�
 second_title: "Документ"
 linktitle: "Файл шаблона"
 type: docs
-url: /create-an-excel-file-with-template-file/
+url: /ru/create-an-excel-file-with-template-file/
 aliases:
   - /create-excel-workbook-from-a-template-file/
   - /workbook/new-from-a-template-file/

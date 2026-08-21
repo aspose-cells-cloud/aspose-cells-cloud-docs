@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Formatta tutto"
 type: docs
 url: /it/pivot-tables/format-all/
-aliases: [/it/update-style-for-pivot-table/]
+aliases: [  /it/update-style-for-pivot-table/ ]
 keywords: "tabella pivot, aggiornamento stile, Aspose.Cells Cloud, REST API, Excel, foglio di calcolo, API, stile tabella pivot, formatta tutto"
 description: "Scopri come aggiornare lo stile di un'intera tabella pivot utilizzando l'API REST di Aspose.Cells Cloud. Include i dettagli della richiesta, un esempio cURL e frammenti di codice SDK per diversi linguaggi di programmazione."
 weight: 100

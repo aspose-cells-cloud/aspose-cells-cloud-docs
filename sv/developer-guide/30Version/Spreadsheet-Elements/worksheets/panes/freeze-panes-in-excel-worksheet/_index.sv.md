@@ -3,8 +3,8 @@ title: "Frys rutor i ett Excel-ark"
 second_title: "Dokument"
 linktype: "Frys"
 type: docs
-url: /worksheets/panes/freeze/
-aliases: [/frys-rutor-i-excel-ark/, /worksheets/freeze-panes/]
+url: /sv/worksheets/panes/freeze/
+aliases: [  /sv/frys-rutor-i-excel-ark/ , /sv/worksheets/freeze-panes/ ]
 keywords: "Aspose.Cells Cloud, Frys rutor, Excel, REST API, Ark"
 description: "Lär dig hur du fryser rader och kolumner i ett Excel-ark med Aspose.Cells Cloud REST API. Inkluderar slutpunktsyntax, nödvändiga parametrar, ett cURL-exempel, autentisieringsvägledning, detaljerad felhantering samt SDK-kodexempel för flera programmeringsspråk."
 weight: 190

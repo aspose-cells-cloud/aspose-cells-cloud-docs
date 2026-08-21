@@ -4,7 +4,7 @@ ArticleTitle: "Importera CSV-data till kalkylark – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Importera CSV-data till kalkylark"
 type: docs
-url: /cells/import/data/csv
+url: /sv/cells/import/data/csv
 aliases: []
 keywords: "Aspose.Cells, CSV-import, kalkylark, API"
 description: "Importera CSV-datafil till lokalt kalkylark med Aspose.Cells Cloud API."

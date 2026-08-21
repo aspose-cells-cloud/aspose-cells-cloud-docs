@@ -3,7 +3,7 @@ title: "Metadaten aus Excel-Dateien entfernen"
 second_title: "Dokument"
 linktitle: "Entfernen ohne Speicherung"
 type: docs
-url: /metadata/delete/
+url: /de/metadata/delete/
 keywords: "Aspose.Cells, Metadaten entfernen, Excel-API, Arbeitsmappen-Eigenschaften"
 description: "Entfernen Sie Arbeitsmappen-Metadaten (Autor, Titel, benutzerdefiniert) über die Aspose.Cells Cloud API. Enthält Endpunkt, Authentifizierung, Parameter sowie cURL- und SDK-Beispiele."
 weight: 55

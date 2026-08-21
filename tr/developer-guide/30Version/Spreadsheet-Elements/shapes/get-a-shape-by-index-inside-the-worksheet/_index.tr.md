@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasında Dizine Göre Bir Şekil Alma"
 second_title: "Belge"
 linktype: "Get"
 type: docs
-url: /shapes/get/
-aliases: [/get-a-shape-by-index-inside-the-worksheet/]
+url: /tr/shapes/get/
+aliases: [  /tr/get-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel şekil API’si, dizine göre şekil alma, çalışma sayfası şekli, REST API, şekil alma, Aspose.Cells SDK"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından dizine göre bir şekil (resim verileri veya meta veriler dahil) alın. İstek sözdizimi, parametreler, yanıt ayrıntıları ve SDK örneklerini içerir."
 weight: 20

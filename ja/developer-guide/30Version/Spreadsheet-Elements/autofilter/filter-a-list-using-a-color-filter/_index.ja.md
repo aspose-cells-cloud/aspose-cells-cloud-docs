@@ -3,8 +3,8 @@ title: "Excelワークシートに色フィルターを追加する"
 second_title: "Document"
 linktype: "Add color filter"
 type: docs
-url: /autofilter/add-color-filter/
-aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
+url: /ja/autofilter/add-color-filter/
+aliases: [  /ja/filter-a-list-using-a-color-filter/ , /ja/autofilter/add-a-color-filter/ ]
 keywords: "Excel, 色フィルター, Aspose.Cells Cloud, REST API, 自動フィルター, JWT認証"
 description: "Aspose.Cells Cloud API を使用して Excel ワークシートに色フィルターを適用する方法を学びます。エンドポイント、パラメーター、cURL の例、エラー処理、SDK サンプルを含みます。"
 weight: 65

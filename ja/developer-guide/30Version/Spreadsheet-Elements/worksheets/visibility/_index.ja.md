@@ -3,7 +3,7 @@ title: "Excelワークシートの表示制御の使い方"
 second_title: "Document"
 linktitle: "表示制御"
 type: docs
-url: /worksheets/panes/
+url: /ja/worksheets/panes/
 keywords: "Aspose.Cells Cloud, ワークシート非表示 API, ワークシート表示復元 API, Excel ワークシートの表示設定, REST API Excel, Aspose.Cells v3.0"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートをプログラムで非表示または表示復元する方法を学びます。リクエスト URL、cURL および .NET SDK のサンプル、エラー処理、バージョン固有の注意事項を含みます。"
 weight: 20

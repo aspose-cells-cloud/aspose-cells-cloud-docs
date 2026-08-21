@@ -4,7 +4,7 @@ ArticleTitle: "Dépivoter un tableau – API Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "Dépivoter un tableau"
 type: docs
-url: /cells/unpivot/table
+url: /fr/cells/unpivot/table
 aliases: []
 keywords: "Aspose.Cells, dépivoter, transformer"
 description: "Permuter les lignes et les colonnes dans la feuille de calcul."

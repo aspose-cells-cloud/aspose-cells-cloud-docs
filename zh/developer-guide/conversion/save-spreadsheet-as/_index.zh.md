@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何在远程存储中将电子表格另存为其他格式文件：分步指南"
 linktitle: "将电子表格另存为"
 type: docs
-url: /save-spreadsheet-as/
+url: /zh/save-spreadsheet-as/
 keywords: "Aspose Cells, 电子表格转换, 另存为, API, XLSX 转 PDF, 云存储, Excel 转 PDF, CSV 导出, 云转换"
 description: "了解如何使用 Aspose.Cells Cloud 的“将电子表格另存为”API，将存储在 Aspose Cloud 中的电子表格转换为其他格式（XLSX、PDF、CSV 等）。包含请求语法、参数说明、curl 示例及 SDK 代码。"
 weight: 100

@@ -3,8 +3,8 @@ title: "TransposeData"
 ArticleTitle: "TransposeData – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktype: "docs"
-url: /cells/transpose
-aliases: ["/cells/transpose"]
+url: /tr/cells/transpose
+aliases: [  /tr/cells/transpose ]
 keywords: "TransposeData, Aspose.Cells, Bulut API, elektronik tablo, transpoze"
 description: "Elektronik tabloda satırları ve sütunları değiştirin."
 weight: 1000

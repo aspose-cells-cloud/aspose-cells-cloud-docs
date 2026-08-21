@@ -4,7 +4,7 @@ second_title: "文档"
 articleTitle: "如何将远程电子表格范围导出为其他格式：分步指南"
 linktitle: "将范围导出为指定格式"
 type: docs
-url: /export-range-as-format/
+url: /zh/export-range-as-format/
 keywords: "Aspose Cells、导出 Excel 范围、PDF、PNG、CSV、云 API、电子表格转换"
 description: "了解如何将存储在 Aspose.Cells Cloud 中的特定 Excel 范围转换为 PDF、PNG、CSV 或其他格式。内容包括端点详情、参数说明、示例请求、响应处理及错误信息。"
 weight: 100

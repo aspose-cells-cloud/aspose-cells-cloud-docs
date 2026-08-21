@@ -1,7 +1,7 @@
 ---
 title: "รับค่า MinRow จากเวิร์กชีต Excel – ข้อมูลอ้างอิง API ของ Aspose.Cells Cloud"
 type: docs
-url: /get-minrow-from-excel-worksheet/
+url: /th/get-minrow-from-excel-worksheet/
 weight: 80
 keywords: "Aspose.Cells, GetMinRow, เวิร์กชีต Excel, REST API, ดัชนีแถวที่น้อยที่สุด, SDK บนคลาวด์"
 description: "เรียนรู้วิธีดึงดัชนีแถวที่น้อยที่สุดของเวิร์กชีตโดยใช้ Aspose.Cells Cloud REST API (v3.0) รวมถึงคำขอ cURL แบบเต็มรูปแบบพร้อมการตรวจสอบสิทธิ์ เครื่องมือแสดงโครงสร้างการตอบกลับ และตัวอย่าง SDK สำหรับหลายภาษา"

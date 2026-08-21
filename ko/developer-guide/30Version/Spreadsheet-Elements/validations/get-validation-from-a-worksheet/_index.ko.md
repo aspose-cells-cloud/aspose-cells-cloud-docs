@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "가져오기"
 type: docs
 url: /ko/validations/get/
-aliases: [/ko/get-validation-from-a-worksheet/]
+aliases: [  /ko/get-validation-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 워크시트 유효성 검사 API, 인덱스로 유효성 검사 가져오기, Excel REST API, Aspose.Cells SDK"
 description: "Aspose.Cells Cloud API(v3.0)를 사용하여 엑셀 워크북에서 유효성 검사를 0부터 시작하는 인덱스로 검색합니다. cURL 예제, 응답 스키마, 오류 코드, C#, Java, Python 등 다양한 언어의 SDK 코드 스니펫이 포함됩니다."
 weight: 10

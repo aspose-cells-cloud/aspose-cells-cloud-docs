@@ -4,7 +4,7 @@ ArticleTitle: "Mettre Ã  jour un objet liste dans une feuille de calcul Excel â€
 second_title: "Document"
 linktype: "update"
 type: docs
-url: /list-objects/update/
+url: /fr/list-objects/update/
 aliases:
   - /update-a-list-object-or-table-inside-the-worksheet/
   - /tables/update/

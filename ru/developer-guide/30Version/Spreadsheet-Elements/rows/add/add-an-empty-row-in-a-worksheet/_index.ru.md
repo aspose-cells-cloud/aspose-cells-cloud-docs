@@ -4,8 +4,8 @@ ArticleTitle: "Добавление пустой строки в рабочий 
 second_title: "Документ"
 linktitle: "Строка"
 type: docs
-url: /rows/add/row/
-aliases: [/add-an-empty-row-in-a-worksheet/]
+url: /ru/rows/add/row/
+aliases: [  /ru/add-an-empty-row-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, добавление пустой строки, рабочий лист, REST API, вставка строки, облачная электронная таблица"
 description: "Используйте REST API Aspose.Cells Cloud для вставки пустой строки в рабочий лист Excel. Поддерживает множество SDK (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) для быстрой разработки."
 weight: 20

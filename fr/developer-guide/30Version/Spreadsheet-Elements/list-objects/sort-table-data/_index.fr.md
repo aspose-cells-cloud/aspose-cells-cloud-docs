@@ -3,8 +3,8 @@ title: "Trier les données d’un ListObject dans une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Trier"
 type: docs
-url: /list-objects/sort-data/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
+url: /fr/list-objects/sort-data/
+aliases: [  /fr/get-a-list-object-or-table-inside-the-worksheet/ , /fr/tables/sort-data/ ]
 keywords: "Aspose.Cells Cloud, Excel, ListObject, Trier les données, API REST, Feuille de calcul"
 description: "Découvrez comment trier les données d’un ListObject (tableau) dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut l’URL du point de terminaison, les paramètres, une requête cURL d’exemple et des exemples de SDK."
 weight: 40

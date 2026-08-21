@@ -3,8 +3,8 @@ title: "更新工作表属性 – Aspose.Cells Cloud API 参考 (v3.0)"
 second_title: "文档"
 linktitle: "更新"
 type: docs
-url: /worksheets/update-properties/
-aliases: [/update-excel-worksheet-properties/]
+url: /zh/worksheets/update-properties/
+aliases: [  /zh/update-excel-worksheet-properties/ ]
 weight: 20
 keywords:
   [

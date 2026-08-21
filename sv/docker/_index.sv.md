@@ -4,8 +4,8 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud Docker-användarhandbok"
 linktitle: "Docker"
 type: docs
-url: /docker-developer-guide/
-aliases: [/docker/, /docker/run/]
+url: /sv/docker-developer-guide/
+aliases: [  /sv/docker/ , /sv/docker/run/ ]
 description: "Distribuera Aspose.Cells Cloud som en Docker-container på privat eller lokal infrastruktur, vilket möjliggör kalkylbladsbehandling (Excel, PDF, CSV, JSON, Markdown) utan att använda Asposes offentliga moln."
 keywords:
   [

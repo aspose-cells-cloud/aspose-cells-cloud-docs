@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Метки образов Docker Aspose.Cells Cloud"
 linktitle: "Метки образов"
 type: docs
-url: /docker/tag-list/
+url: /ru/docker/tag-list/
 description: "Найдите актуальные метки образов Docker Aspose.Cells Cloud для Windows Server (2016–2022) и Linux. Получите команды загрузки, сведения об архитектуре и примечания по обновлению в одном месте."
 weight: 30
 keywords:

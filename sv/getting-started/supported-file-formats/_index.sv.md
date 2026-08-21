@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud – Stödda filformat: Excel, PDF, CSV, JSON, Markdown och mer"
 linktitle: "Stödda filformat"
 type: docs
-url: /supported-file-formats/
+url: /sv/supported-file-formats/
 description: "Utforska den fullständiga listan över filformat som stöds av Aspose.Cells Cloud – importera, exportera och konvertera Excel, CSV, PDF, JSON, Markdown, ODS och mer."
 weight: 40
 keywords: "Aspose.Cells Cloud, stödda filformat, Excel, XLSX, CSV, PDF, JSON, Markdown, ODS, bildformat, kalkylarkformat, dokumentkonvertering"

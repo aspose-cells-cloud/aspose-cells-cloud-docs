@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать диаграмму электронной таблицы в изображение: Пошаговое руководство"
 linktitle: "Преобразование диаграммы в изображение"
 type: docs
-url: /convert-chart-to-image/
+url: /ru/convert-chart-to-image/
 keywords: "преобразование диаграммы в изображение, Aspose.Cells, экспорт диаграммы Excel, PNG, SVG, JPEG, BMP, TIFF"
 description: "Используйте Aspose.Cells Cloud Web API для прямого преобразования диаграммы Excel из файла электронной таблицы в изображения PNG, SVG, TIFF, JPEG или BMP."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud SDK for Ruby：変換、結合、分割、保護、検索、置換など"
 linktype: "Aspose.Cells Cloud SDK for Ruby"
 type: docs
-url: /available-sdks/aspose-cells-cloud-ruby/
+url: /ja/available-sdks/aspose-cells-cloud-ruby/
 description: "Aspose.Cells Cloud SDK for Ruby は、Office のインストールを必要とせずに、Excel オブジェクトを作成・変換・結合・分割・保護・検索・置換するための、シームレスなクロスプラットフォーム API を提供します。"
 weight: 30
 keywords: "Ruby, Aspose.Cells Cloud, Excel SDK, REST API, 変換, 結合, 分割, 保護, 検索, 置換, チャート, ピボットテーブル, テーブル/リスト オブジェクト, PDF, CSV, JSON, Markdown"

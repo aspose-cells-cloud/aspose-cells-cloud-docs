@@ -3,7 +3,7 @@ title: "Excelワークシートに日付フィルターを追加する"
 second_title: "Document"
 linktitle: "日付フィルターの追加"
 type: docs
-url: /autofilter/add-date-filter/
+url: /ja/autofilter/add-date-filter/
 aliases:
   - /add-date-filter-in-a-worksheet/
   - /autofilter/add-a-date-filter/

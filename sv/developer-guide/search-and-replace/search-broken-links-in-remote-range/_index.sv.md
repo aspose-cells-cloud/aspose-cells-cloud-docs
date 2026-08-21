@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hitta och fixa trasiga länkar i fjärr-Excel-område – moln-baserad länkkontroll för kalkylark"
 linktype: "Sök trasiga länkar i fjärr-område"
 type: docs
-url: /search-broken-links-in-remote-range/
+url: /sv/search-broken-links-in-remote-range/
 keywords: "Aspose, Cells, trasiga länkar, API, Excel-område, validering, moln, kalkylark, extern referens, kontroll"
 description: "Använd Aspose.Cells Cloud API för att skanna ett specifikt Excel-område efter trasiga externa länkar, ogiltiga formler eller saknade datakällor. Säkert, snabbt och moln-baserat."
 weight: 100

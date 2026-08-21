@@ -4,8 +4,8 @@ ArticleTitle: "压缩 Excel 文件中的数据 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "压缩 Excel 文件"
 type: docs
-url: /compress-excel-files/
-aliases: [/compress/]
+url: /zh/compress-excel-files/
+aliases: [  /zh/compress/ ]
 keywords: "压缩 excel 文件, aspose cells cloud, excel 压缩, 电子表格压缩, rest api, 文件压缩"
 description: "使用 Aspose.Cells Cloud REST API 压缩 Excel 文件（XLS、XLSX、XLSM、XLSB、ODS）。设置压缩级别、处理多个文件，并通过 SDK 进行集成。"
 weight: 39

@@ -3,7 +3,7 @@ title: "Çalışma Sayfası Arka Plan Resmini Ekleme veya Silme – Aspose.Cells
 second_title: "Belge"
 linktitle: "Arka Plan"
 type: docs
-url: /worksheets/background/
+url: /tr/worksheets/background/
 keywords: "Aspose.Cells Cloud, çalışma sayfası arka planı, Excel API, arka plan resmi ekleme, çalışma sayfası arka planını silme, SDK örnekleri"
 description: "Aspose.Cells Cloud REST API ile bir Excel çalışma sayfasına arka plan resmi eklemeyi veya kaldırmayı öğrenin. İstek sözdizimi, Java, .NET, Python, PHP için SDK örnekleri ve hata yönetimi içerir."
 weight: 20

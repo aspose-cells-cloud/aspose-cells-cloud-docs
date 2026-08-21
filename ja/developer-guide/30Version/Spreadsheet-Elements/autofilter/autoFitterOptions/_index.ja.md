@@ -3,7 +3,7 @@ title: "AutoFitterOptions – プロパティと使用ガイド | Aspose.Cells C
 second_title: "ドキュメント"
 linktitle: "AutoFitterOptions"
 type: docs
-url: /auto-fitter-options/
+url: /ja/auto-fitter-options/
 keywords: "AutoFitterOptions, Aspose.Cells, Excel 自動調整, 行の高さ, 結合セル, API"
 description: "Aspose.Cells Cloud API の AutoFitterOptions オブジェクトを使用して、行の高さの自動調整、結合セルの処理、非表示行／列の制御、言語設定、レンダリング設定などを制御する方法を学びます。"
 weight: 79

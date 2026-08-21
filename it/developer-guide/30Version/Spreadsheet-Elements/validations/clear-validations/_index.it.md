@@ -3,7 +3,7 @@ title: "Elimina tutte le convalidhe dei fogli di lavoro – Aspose.Cells Cloud A
 second_title: "Documentazione"
 linktitle: "Elimina"
 type: docs
-url: /validations/clear/
+url: /it/validations/clear/
 keywords: "Aspose.Cells Cloud, elimina convalidhe dei fogli di lavoro, Excel, API REST, convalida spreadsheet, API"
 description: "Rimuovi tutte le regole di convalida dei dati da un foglio di lavoro in un file Excel utilizzando l'API REST di Aspose.Cells Cloud. Include fasi di autenticazione, dettagli della richiesta, esempio cURL, schema di risposta, gestione degli errori e frammenti SDK."
 weight: 10

@@ -3,8 +3,8 @@ title: "导出 Excel 图表"
 second_title: "文档"
 linktitle: "图表"
 type: docs
-url: /export-excel-chart-to-different-formats/
-aliases: [/export/excel-chart-to-different-formats/]
+url: /zh/export-excel-chart-to-different-formats/
+aliases: [  /zh/export/excel-chart-to-different-formats/ ]
 description: "使用 Aspose.Cells Cloud REST API 或 SDK 将 Excel 图表对象导出为 PNG、JPEG、PDF、SVG、TIFF、EMF、WMF 等常用格式。包含身份验证说明、cURL 示例以及多种编程语言的代码示例。"
 keywords: "Aspose.Cells, 导出图表, Excel 图表导出, REST API, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK, 图表格式, Aspose Cells Cloud"
 weight: 20

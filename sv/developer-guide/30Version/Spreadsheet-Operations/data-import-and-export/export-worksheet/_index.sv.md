@@ -3,8 +3,8 @@ title: "Exportera kalkylblad – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktitle: "Kalkylblad"
 type: docs
-url: /export-excel-worksheet-to-different-formats/
-aliases: [/export/excel-worksheet-to-different-formats/]
+url: /sv/export-excel-worksheet-to-different-formats/
+aliases: [  /sv/export/excel-worksheet-to-different-formats/ ]
 keywords: "Aspose.Cells, exportera kalkylblad, Excel--API, PDF, CSV, TIFF, ODS, bildformat"
 description: "Lär dig hur du exporterar ett Excel-kalkylblad till PDF, CSV, TIFF och andra format med Aspose.Cells Cloud REST API. Innehåller cURL-exempel, nödvändig autentisering, parameterbeskrivningar och svarshantering."
 weight: 20

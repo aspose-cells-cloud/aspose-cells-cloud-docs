@@ -3,8 +3,8 @@ title: "Arbeiten mit bedingter Formatierung in Excel"
 second_title: "Dokument"
 linktitle: "Bedingte Formatierung"
 type: docs
-url: /conditional-formattings/
-aliases: [/working-with-conditional-formatting/]
+url: /de/conditional-formattings/
+aliases: [  /de/working-with-conditional-formatting/ ]
 keywords: "Excel, Bedingte Formatierung, Aspose.Cells Cloud, API"
 description: "Die Aspose.Cells Cloud API für Excel bietet Endpunkte zum Abrufen, Hinzufügen, Ändern und Entfernen von bedingten Formatierungsregeln, sodass eine dynamische visuelle Analyse von Tabellendaten möglich ist."
 weight: 100

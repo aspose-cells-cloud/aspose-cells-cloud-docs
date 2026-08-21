@@ -3,7 +3,7 @@ title: "XML Verisini Elektronik Tabloya İçe Aktar"
 ArticleTitle: "XML Verisini Elektronik Tabloya İçe Aktar – Aspose.Cells Cloud API"
 second_title: "Doküman"
 linktype: "docs"
-url: /cells/import/data/xml
+url: /tr/cells/import/data/xml
 aliases: []
 keywords: "XML İçe Aktar, Aspose.Cells, API"
 description: "Aspose.Cells Cloud kullanarak XML veri dosyasını yerel elektronik tabloya içe aktarın."

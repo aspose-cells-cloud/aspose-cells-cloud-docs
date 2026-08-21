@@ -3,7 +3,7 @@ title: "Aspose.Cells İçeriği Kırpma API’si – Excel’de Boşlukları ve 
 secondtitle: "Belge"
 linktitle: "İçeriği Kırpma"
 type: docs
-url: /spreadsheet-trim-content/
+url: /tr/spreadsheet-trim-content/
 keywords: "Aspose.Cells, İçeriği Kırpma API’si, Excel temiz veri, Excel’de boşluk kaldırma, satır sonu kaldırma, elektronik tablo veri temizleme"
 description: "Aspose.Cells Cloud PostTrimContent API’sini kullanarak Excel hücrelerinden ekstra boşlukları, satır sonlarını ve istenmeyen karakterleri otomatik olarak temizleyin. Uç noktayı, istek formatını, örnek kodu ve hata işleme yöntemlerini öğrenin."
 weight: 100

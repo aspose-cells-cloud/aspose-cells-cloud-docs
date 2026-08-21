@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud SDK für Node.js: Konvertieren, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen und mehr."
 linktitle: "Aspose.Cells Cloud SDK für Node.js"
 type: docs
-url: /available-sdks/aspose-cells-cloud-node/
+url: /de/available-sdks/aspose-cells-cloud-node/
 description: "Das Aspose.Cells Cloud SDK für Node.js bietet echte plattformübergreifende Leistung: Ein einziger Import stellt Windows-, Linux- und macOS-Entwicklern dieselbe flüssige API zur Verfügung, um jedes Excel-Objekt zu erstellen, zu konvertieren, zusammenzuführen, zu teilen, zu schützen und zu bearbeiten – keine Office-Installation erforderlich und keine plattformspezifischen Anpassungen nötig."
 weight: 30
 kwords: Node.js, Node.js SDK, Excel SDK für Node.js, Cloud SDK für Node.js, REST, Diagramm, Pivot-Tabelle, Tabellen-/Listenobjekt, Tabellendokument konvertieren, PDF, CSV, JSON, Markdown, Zusammenführen, Teilen, Schützen, Suchen, Ersetzen

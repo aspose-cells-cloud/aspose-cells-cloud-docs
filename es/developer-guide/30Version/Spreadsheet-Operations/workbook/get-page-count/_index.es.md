@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Páginas"
 type: docs
 url: /es/get-page-count-from-an-excel-file/
-aliases: [/es/workbook/page-count/, /es/workbook/get/page-count/]
+aliases: [  /es/workbook/page-count/ , /es/workbook/get/page-count/ ]
 keywords: "Aspose.Cells, API en la nube, número de páginas de Excel, paginación de libros de trabajo"
 description: "Recuperar el número total de páginas imprimibles en un libro de trabajo de Excel mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye formato de solicitud, parámetros obligatorios, ejemplo con cURL, esquema de respuesta, manejo de errores y fragmentos de SDK para múltiples lenguajes."
 weight: 10

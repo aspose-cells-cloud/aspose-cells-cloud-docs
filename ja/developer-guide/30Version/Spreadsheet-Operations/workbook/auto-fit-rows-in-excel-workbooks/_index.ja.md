@@ -3,8 +3,8 @@ title: "Excel ワークブックの行を自動調整する"
 second_title: "Document"
 linktitle: "Rows"
 type: docs
-url: /autofit-rows-on-an-excel-file/
-aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
+url: /ja/autofit-rows-on-an-excel-file/
+aliases: [  /ja/auto-fit-rows-in-excel-workbooks/ , /ja/workbook/autofit/rows/ ]
 keywords: "行の自動調整, Excel ワークブック, Aspose.Cells Cloud, REST API, 自動調整オプション"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークブック内の行の高さを自動的に調整する方法を学びます。エンドポイント、パラメータ、cURL の例、および C#、Java、Python など複数の言語向けの SDK スニペットを含みます。"
 weight: 90

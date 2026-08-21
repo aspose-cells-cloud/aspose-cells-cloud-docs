@@ -2,8 +2,8 @@
 title: "Görevler"
 second_title: "Belge"
 type: docs
-url: /tasks/
-aliases: [/working-with-tasks/]
+url: /tr/tasks/
+aliases: [  /tr/working-with-tasks/ ]
 keywords: "Aspose Cells, Bulut API, Excel görevleri, Görev dönüştürme, ImportData görevi, SmartMarker, SaveResult, REST API, hesap tablosu otomasyonu"
 description: "Aspose.Cells Cloud Görevler API'sinin tam setini keşfedin: Dönüştürme, ImportData, SaveResult, SmartMarker ve daha fazlası. Excel otomasyonu için kullanım, parametreler ve kod örneklerini öğrenin."
 weight: 100

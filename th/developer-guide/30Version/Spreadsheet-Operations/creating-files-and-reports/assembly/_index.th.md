@@ -3,8 +3,8 @@ title: "การประกอบข้อมูลสำหรับการ
 second_title: "เอกสาร"
 linktype: "ข้อมูลประกอบ"
 type: docs
-url: /assembly-data-for-the-creation-of-an-excel-report/
-aliases: [/assembly/]
+url: /th/assembly-data-for-the-creation-of-an-excel-report/
+aliases: [  /th/assembly/ ]
 keywords: "Aspose.Cells, รายงาน Excel, การประกอบข้อมูล, Cloud API, REST, SDK, cURL, PDF, ODS"
 description: "เรียนรู้วิธีใช้ Assembly API ของ Aspose.Cells Cloud เพื่อผสานข้อมูลลงในรายงาน Excel (XLSX, PDF, ODS) รวมถึง endpoint, พารามิเตอร์, ตัวอย่าง cURL, โค้ด SDK, คู่มือการยืนยันตัวตน และการจัดการข้อผิดพลาด"
 weight: 40

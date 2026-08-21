@@ -3,7 +3,7 @@ title: "AutoFitterOptions – دليل الخصائص والاستخدام | و�
 second_title: "مستند"
 linktype: "AutoFitterOptions"
 type: docs
-url: /auto-fitter-options/
+url: /ar/auto-fitter-options/
 keywords: "AutoFitterOptions، Aspose.Cells، ضبط تلقائي في إكسل، ارتفاع الصفوف، الخلايا المدمجة، واجهة برمجة التطبيقات"
 description: "تعلم كيفية التحكم في ضبط ارتفاع الصفوف تلقائيًا، ومعالجة الخلايا المدمجة، والصفوف/الأعمدة المخفية، والإعدادات اللغوية، وخيارات العرض باستخدام كائن AutoFitterOptions في واجهة برمجة التطبيقات Aspose.Cells Cloud."
 weight: 79

@@ -3,8 +3,8 @@ title: "Bir Excel Dosyasından Sayfa Sayısını Alma"
 second_title: "Belge"
 linktitle: "Sayfalar"
 type: docs
-url: /get-page-count-from-an-excel-file/
-aliases: [/workbook/page-count/, /workbook/get/page-count/]
+url: /tr/get-page-count-from-an-excel-file/
+aliases: [  /tr/workbook/page-count/ , /tr/workbook/get/page-count/ ]
 keywords: "Aspose.Cells, Bulut API’si, Excel sayfa sayısı, defter sayfalandırma"
 description: "Aspose.Cells Cloud REST API’si (v3.0) aracılığıyla bir Excel defterindeki yazdırılabilir toplam sayfa sayısını alın. İstek formatını, gerekli parametreleri, cURL örneğini, yanıt şemasını, hata yönetimi ve birden fazla dil için SDK snippet’lerini içerir."
 weight: 10

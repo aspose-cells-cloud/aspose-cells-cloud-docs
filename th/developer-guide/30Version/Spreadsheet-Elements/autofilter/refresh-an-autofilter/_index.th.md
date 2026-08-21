@@ -3,8 +3,8 @@ title: "รีเฟรชตัวกรองอัตโนมัติใน
 second_title: "เอกสาร"
 linktitle: "รีเฟรชตัวกรองอัตโนมัติ"
 type: docs
-url: /autofilter/refresh/
-aliases: [/refresh-an-autofilter/]
+url: /th/autofilter/refresh/
+aliases: [  /th/refresh-an-autofilter/ ]
 weight: 100
 keywords: "Aspose.Cells, AutoFilter, รีเฟรช, Excel, API, REST"
 description: "รีเฟรชตัวกรองอัตโนมัติที่มีอยู่ในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่าง cURL และ SDK สำหรับ C#, Java, Python และอื่นๆ"

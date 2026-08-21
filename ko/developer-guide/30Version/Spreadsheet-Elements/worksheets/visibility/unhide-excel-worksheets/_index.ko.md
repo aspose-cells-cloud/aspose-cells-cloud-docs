@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "숨김 해제"
 type: docs
 url: /ko/worksheets/unhide/
-aliases: [/unhide-excel-worksheets/]
+aliases: [  /ko/unhide-excel-worksheets/ ]
 keywords: "Aspose.Cells, 워크시트 숨김 해제, Excel API, 클라우드 스프레드시트, REST, 워크시트 표시 여부, Excel 워크북"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북에서 워크시트의 숨김을 해제하는 방법을 배워보세요. 요청 세부 정보, cURL 예제, 여러 프로그래밍 언어의 SDK 코드 스니펫이 포함되어 있습니다."
 weight: 60

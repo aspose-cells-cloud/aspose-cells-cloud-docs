@@ -1,8 +1,8 @@
 ---
 title: "Afficher la légende d'un graphique dans une feuille de calcul"
 type: docs
-url: /charts/legend/show/
-aliases: [/show-chart-legend-in-a-worksheet/]
+url: /fr/charts/legend/show/
+aliases: [  /fr/show-chart-legend-in-a-worksheet/ ]
 weight: 100
 keywords: "Aspose.Cells Cloud, API de légende de graphique, légende de graphique Excel, REST PUT pour légende de graphique, Aspose API v3.0"
 description: "Découvrez comment afficher une légende de graphique dans une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud (v3.0). Inclut les détails des points de terminaison, des paramètres, un exemple cURL et des extraits de SDK."

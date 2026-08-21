@@ -4,7 +4,7 @@ ArticleTitle: "تحويل ورقة عمل إلى جدول HTML – واجهة ب
 second_title: "مستند"
 linktype: "تحويل_ورقة_عمل_إلى_جدول_HTML"
 type: docs
-url: /cells/convert/worksheet/html-table
+url: /ar/cells/convert/worksheet/html-table
 aliases: []
 keywords: "Aspose.Cells، ConvertWorksheetToHtmlTable، جدول HTML، واجهة برمجة تطبيقات"
 description: "يحول ورقة عمل من ملف جدول محسوب محلي إلى ملف جدول HTML باستخدام Aspose.Cells Cloud."

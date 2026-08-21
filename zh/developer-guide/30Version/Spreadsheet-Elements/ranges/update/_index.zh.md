@@ -3,7 +3,7 @@ title: "如何更新 Excel 工作表中的区域内容"
 second_title: "文档"
 linktitle: "更新"
 type: docs
-url: /ranges/update/
+url: /zh/ranges/update/
 keywords: "Excel, 区域更新, Aspose.Cells Cloud, REST API, 电子表格, 区域样式, 区域值, 行高, 列宽"
 description: "使用 Aspose.Cells Cloud REST API 更新 Excel 工作表中的区域内容。通过支持的 SDK 修改样式、值、行高和列宽。"
 weight: 20

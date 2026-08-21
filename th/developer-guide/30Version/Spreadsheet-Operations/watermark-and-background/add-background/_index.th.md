@@ -3,7 +3,7 @@ title: "เพิ่มรูปภาพพื้นหลังให้กั
 second_title: "เอกสาร"
 linktype: "เพิ่ม"
 type: docs
-url: /add-background-in-excel-file/
+url: /th/add-background-in-excel-file/
 aliases:
   - /add-background-in-workbook/
   - /workbook/add-background/

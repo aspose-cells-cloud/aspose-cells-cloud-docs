@@ -3,7 +3,7 @@ title: "Reemplazar texto en archivos de Excel"
 second_title: "Documento"
 linktitle: "Reemplazar sin usar almacenamiento"
 type: docs
-url: /replace/
+url: /es/replace/
 keywords: "reemplazar texto en Excel, Aspose.Cells Cloud, API REST, reemplazo en hojas de cálculo, API, reemplazo de texto en archivos de Excel"
 description: "Use la API REST de Aspose.Cells Cloud para reemplazar texto existente por nuevos valores en archivos de Excel. Admite SDK para C#, Java, Python, Node.js, PHP, Ruby, Go y Perl."
 weight: 80

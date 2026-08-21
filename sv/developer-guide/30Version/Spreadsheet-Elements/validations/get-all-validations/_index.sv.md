@@ -3,7 +3,7 @@ title: "Hämta alla valideringar från ett Excel-kalkylblad"
 second_title: "Document"
 linktitle: "Hämta alla"
 type: docs
-url: /validations/get-all/
+url: /sv/validations/get-all/
 keywords: "Aspose.Cells Cloud, Excel, kalkylbladsvalideringar, REST API, hämta alla valideringar, SDK:er"
 description: "Hämta alla kalkylbladsvalideringar från ett Excel-kalkylblad med Aspose.Cells Cloud REST API. Stöder flera SDK:er (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) för snabb integration."
 weight: 10

@@ -5,7 +5,7 @@ description: "Convierta un gráfico de un libro de Excel almacenado en la nube a
 ArticleTitle: "Cómo convertir una hoja de cálculo local en un archivo PDF: guía paso a paso"
 linktitle: "Convertir hoja en PDF"
 type: docs
-url: /export-chart-as-format/
+url: /es/export-chart-as-format/
 keywords: "Aspose.Cells Cloud, exportar gráfico, API, PDF, PNG, SVG, Excel, REST, conversión en la nube"
 weight: 100
 ---

@@ -3,7 +3,7 @@ title: "API Aspose.Cells Cloud CopyFolder – Copie rapide de dossiers dans le c
 second_title: "Document"
 ArticleTitle: "Solution de gestion de fichiers Excel en ligne – Explication détaillée de la fonction de copie en masse de l’API Aspose.Cells Copy Folder"
 linktype: "docs"
-url: /copy-folder/
+url: /fr/copy-folder/
 keywords: "Copier dossier, Aspose.Cells Cloud, API REST, Stockage cloud, Gestion de feuilles de calcul"
 description: "Découvrez comment copier des dossiers dans le stockage Aspose.Cells Cloud via un seul appel REST. Inclut l’endpoint, les paramètres, les exemples de requêtes, les codes d’erreur et les exemples de SDK."
 weight: 100

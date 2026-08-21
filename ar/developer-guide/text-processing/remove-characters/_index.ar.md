@@ -3,7 +3,7 @@ title: "واجهة برمجة تطبيقات (API) لحذف الأحرف عبر 
 second title: "مستند"
 ArticleTitle: "أداة تنظيف النصوص في Excel – حذف الأحرف وsubstring من النطاق المُحدّد"
 linktype: "docs"
-url: /remove-characters/
+url: /ar/remove-characters/
 keywords: "Aspose.Cells، حذف الأحرف، واجهة برمجة تطبيقات Excel، تنظيف النصوص، جداول البيانات"
 description: "احذف الأحرف المخصصة ومجموعات الأحرف وsubstring من خلايا Excel في النطاق المُحدّد. احذف النصوص في مواقع محددة باستخدام واجهة برمجة تطبيقات Aspose.Cells لتنظيف البيانات بدقة."
 weight: 100

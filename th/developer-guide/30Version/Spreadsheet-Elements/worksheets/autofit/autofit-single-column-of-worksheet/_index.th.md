@@ -3,8 +3,8 @@ title: "การปรับคอลัมน์ให้พอดีใน Ex
 second_title: "เอกสาร"
 linktitle: "คอลัมน์"
 type: docs
-url: /worksheets/autofit/column/
-aliases: [/autofit-single-column-of-worksheet/]
+url: /th/worksheets/autofit/column/
+aliases: [  /th/autofit-single-column-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, autofit column, Excel API, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "เรียนรู้วิธีปรับขนาดคอลัมน์ (หรือช่วงคอลัมน์) ในแผ่นงาน Excel โดยอัตโนมัติด้วย Aspose.Cells Cloud REST API พร้อมตัวอย่าง cURL และ SDK (C#, Java, Python เป็นต้น) รวมรายละเอียดคำขอ/คำตอบแบบเต็มรูปแบบ"
 weight: 10

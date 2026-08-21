@@ -4,7 +4,7 @@ ArticleTitle: "Hämta sammanfogade celler i fjärrarbetsblad – Aspose.Cells Cl
 second_title: "Dokument"
 linktype: "Hämta sammanfogade celler i fjärrarbetsblad"
 type: docs
-url: /cells/mergedcells/get
+url: /sv/cells/mergedcells/get
 aliases: []
 keywords: "Aspose Cells, hämta sammanfogade celler, fjärrarbetsblad, API"
 description: "Hämtar alla sammanfogade cellområden från ett fjärrarbetsblad i ett kalkylark."

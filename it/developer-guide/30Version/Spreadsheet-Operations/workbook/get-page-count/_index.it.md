@@ -3,8 +3,8 @@ title: "Ottenere il numero di pagine da un file Excel"
 second_title: "Documento"
 linktype: "Pagine"
 type: docs
-url: /get-page-count-from-an-excel-file/
-aliases: [/workbook/page-count/, /workbook/get/page-count/]
+url: /it/get-page-count-from-an-excel-file/
+aliases: [  /it/workbook/page-count/ , /it/workbook/get/page-count/ ]
 keywords: "Aspose.Cells, API cloud, numero di pagine Excel, paginazione cartella di lavoro"
 description: "Recupera il numero totale di pagine stampabili in una cartella di lavoro Excel tramite l'API REST di Aspose.Cells Cloud (v3.0). Include il formato della richiesta, i parametri obbligatori, un esempio cURL, lo schema di risposta, la gestione degli errori e frammenti SDK per diversi linguaggi."
 weight: 10

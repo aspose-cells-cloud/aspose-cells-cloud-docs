@@ -1,7 +1,7 @@
 ---
 title: "Kategorieachse eines Diagramms aktualisieren"
 type: docs
-url: /charts/category-axis/update/
+url: /de/charts/category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Diagramm, Kategorieachse, REST API, Excel, Cloud SDK"
 description: "Aktualisiert die Kategorieachse eines Diagramms in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API."

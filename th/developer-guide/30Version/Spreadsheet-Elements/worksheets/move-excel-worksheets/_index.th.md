@@ -3,8 +3,8 @@ title: "ย้ายแผ่นงาน Excel – Aspose.Cells Cloud API (v3.0
 second_title: "เอกสาร"
 linktitle: "ย้าย"
 type: docs
-url: /worksheets/move/
-aliases: [/move-excel-worksheets/]
+url: /th/worksheets/move/
+aliases: [  /th/move-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, ย้ายแผ่นงาน, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
 description: "เรียนรู้วิธีการย้ายแผ่นงาน Excel ไปยังตำแหน่งใหม่โดยใช้ Aspose.Cells Cloud API (v3.0) รวมถึง endpoint, พารามิเตอร์ที่จำเป็น, ตัวอย่าง cURL และโค้ด SDK สำหรับ C#, Java, Python และอื่นๆ"
 weight: 20

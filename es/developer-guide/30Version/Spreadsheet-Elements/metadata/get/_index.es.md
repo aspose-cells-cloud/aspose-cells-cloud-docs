@@ -3,7 +3,7 @@ title: "Obtener metadatos de archivos de Excel"
 second_title: "Documentos"
 linktype: "Obtener sin usar almacenamiento"
 type: docs
-url: /metadata/get/
+url: /es/metadata/get/
 keywords: "Aspose.Cells, Excel, metadatos, API REST, SDK en la nube"
 description: "Recuperar metadatos integrados o personalizados de libros de Excel usando la API REST de Aspose.Cells Cloud. Incluye formato de solicitud, parámetros, código de ejemplo del SDK y manejo de errores."
 weight: 23

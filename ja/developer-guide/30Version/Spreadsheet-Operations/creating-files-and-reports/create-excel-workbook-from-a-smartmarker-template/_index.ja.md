@@ -3,7 +3,7 @@ title: "Smart Marker テンプレートで Excel レポートを構築する"
 second_title: "Document"
 linktype: "SmartMarker"
 type: docs
-url: /build-report-with-smart-marker/
+url: /ja/build-report-with-smart-marker/
 aliases:
   - /create-excel-workbook-from-a-smartmarker-template/
   - /workbook/smartmarker/

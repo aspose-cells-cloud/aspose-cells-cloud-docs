@@ -2,7 +2,7 @@
 title: "Aktualisieren der zweiten Wertachse eines Diagramms"
 ArticleTitle: "Aktualisieren der zweiten Wertachse eines Diagramms – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/second-value-axis/update/
+url: /de/charts/second-value-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Chart API, Zweite Wertachse, Excel, REST, Cloud SDK"
 description: "Aktualisiert die zweite Wertachse eines Diagramms in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API. Enthält Beispielanforderungen, Antwortcodes und Voraussetzungen."

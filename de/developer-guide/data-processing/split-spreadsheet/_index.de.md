@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Excel-Aufteilungstool – Lokales Aufteilen einer Tabellendatei in Dateien in über 30 Formaten"
 linktitle: "Tabellendatei aufteilen"
 type: docs
-url: /split-spreadsheet/
+url: /de/split-spreadsheet/
 keywords: "aufteilen, excel, aspose cells, tabellen-API, exportieren pdf, csv, json"
 description: "Teilen Sie eine lokale Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud API in einzelne Dateien auf. Exportieren Sie in über 30 Formate (PDF, CSV, JSON, XLSX, HTML), ohne die Datei in die Cloud hochzuladen."
 weight: 100

@@ -3,8 +3,8 @@ title: "ตั้งค่าการซูมสำหรับเวิร์
 second_title: "เอกสาร"
 linktitle: "การซูม"
 type: docs
-url: /worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
+url: /th/worksheets/zoom/
+aliases: [  /th/set-zoom-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, การซูม Excel, การซูมเวิร์กชีต, REST API, SDK บนคลาวด์, การประมวลผลอัตโนมัติ Excel"
 description: "เรียนรู้วิธีตั้งค่าการซูมเวิร์กชีต (10–400%) โดยใช้ Aspose.Cells Cloud API v3.0 พร้อมตัวอย่าง cURL, SDK และการจัดการข้อผิดพลาด"
 weight: 20

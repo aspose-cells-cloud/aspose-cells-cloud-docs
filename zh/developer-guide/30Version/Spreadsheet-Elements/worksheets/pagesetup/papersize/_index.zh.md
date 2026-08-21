@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – 纸张尺寸常量完整列表"
 second_title: "文档"
 linktitle: "纸张尺寸"
 type: docs
-url: /paper-size/
+url: /zh/paper-size/
 keywords: "纸张尺寸, Aspose.Cells Cloud, REST API, 电子表格, A4, Letter, ISO, JIS, PRC"
 description: "Aspose.Cells Cloud REST API 支持的完整纸张尺寸常量列表，包含各尺寸的物理规格及在电子表格中设置自定义尺寸的使用示例。"
 weight: 20

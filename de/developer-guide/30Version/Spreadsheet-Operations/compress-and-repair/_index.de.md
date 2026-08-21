@@ -2,7 +2,7 @@
 title: "Excel-Dateien komprimieren und reparieren"
 second_title: "Dokument"
 type: docs
-url: /compress-and-repair-excel-files/
+url: /de/compress-and-repair-excel-files/
 linktitle: "Komprimieren und Reparieren"
 keywords: "Aspose.Cells, Excel-Komprimierung, Excel-Reparatur, Cloud-API, Excel-Dateigröße reduzieren, beschädigte Arbeitsmappe wiederherstellen, Excel-Datei komprimieren, Excel-Arbeitsmappe reparieren"
 description: "Erfahren Sie, wie Sie große Excel-Arbeitsmappen komprimieren und beschädigte Dateien mit der Aspose.Cells Cloud-API reparieren können. Schritt-für-Schritt-Beispiele, unterstützte Sprachen und Best Practices."

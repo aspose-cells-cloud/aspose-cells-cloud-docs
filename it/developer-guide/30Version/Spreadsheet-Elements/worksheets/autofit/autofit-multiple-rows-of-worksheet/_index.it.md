@@ -3,8 +3,8 @@ title: "Adattamento automatico di più righe in un foglio di lavoro Excel"
 second_title: "Documento"
 linktitle: "Righe"
 type: docs
-url: /worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
+url: /it/worksheets/autofit/rows/
+aliases: [  /it/autofit-multiple-rows-of-worksheet/ ]
 keywords: "adattamento automatico righe, Excel, Aspose.Cells Cloud, API REST, foglio di lavoro, foglio elettronico"
 description: "Scopri come utilizzare l'API REST di Aspose.Cells Cloud per eseguire l'adattamento automatico di più righe in un foglio di lavoro Excel. Include la sintassi della richiesta, i parametri, un esempio cURL, frammenti di codice per gli SDK e la gestione degli errori."
 weight: 40

@@ -3,8 +3,8 @@ title: "Получить описание строки из рабочего л�
 second_title: "Document"
 linktitle: "Row"
 type: docs
-url: /rows/get/row/
-aliases: [/get-row-from-a-worksheet/]
+url: /ru/rows/get/row/
+aliases: [  /ru/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API строк Excel, получить строку рабочего листа, REST API, .NET SDK, Java SDK, Python SDK"
 description: "Получить подробную информацию (высоту, стиль, состояние скрытия и т.д.) для конкретной строки в рабочем листе Excel с использованием Aspose.Cells Cloud REST API. Включает пример curl, фрагменты кода SDK и обработку ошибок."
 weight: 10

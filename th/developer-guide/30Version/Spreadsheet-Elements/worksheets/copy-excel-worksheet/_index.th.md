@@ -3,8 +3,8 @@ title: "คัดลอกเนื้อหาและรูปแบบจา
 second_title: "เอกสาร"
 linktype: "คัดลอก"
 type: docs
-url: /worksheets/copy/
-aliases: [/copy-excel-worksheet/]
+url: /th/worksheets/copy/
+aliases: [  /th/copy-excel-worksheet/ ]
 keywords: "API คัดลอกวาร์กชีตของ Aspose Cells, การคัดลอกชีต Excel ผ่าน REST, SDK ของ Aspose Cloud สำหรับการคัดลอก, การคัดลอกวาร์กชีตสเปรดชีต"
 description: "เรียนรู้วิธีการคัดลอกวาร์กชีตและรูปแบบของมันไปยังชีตใหม่โดยใช้ Aspose.Cells Cloud REST API ประกอบด้วย endpoint, พารามิเตอร์, ตัวอย่าง cURL และ SDK สำหรับ C#, Java, Python และอื่นๆ"
 weight: 20

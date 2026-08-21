@@ -3,8 +3,8 @@ title: "Trabajar con el Filtro Automático de Excel"
 second_title: "Documento"
 linktitle: "Filtro Automático"
 type: docs
-url: /autofilter/
-aliases: [/working-with-autofilter/]
+url: /es/autofilter/
+aliases: [  /es/working-with-autofilter/ ]
 keywords: "Filtro Automático, Aspose.Cells Cloud, filtro de Excel, filtro por color, filtro por fecha, filtro dinámico, filtro por número, filtro por texto, filtro por celdas en blanco, filtro personalizado"
 description: "Aprenda a agregar, editar y eliminar Filtros Automáticos de Excel (por color, fecha, dinámico, número, texto, celdas en blanco) utilizando las API de Aspose.Cells Cloud. Ejemplos de código en múltiples lenguajes."
 weight: 100

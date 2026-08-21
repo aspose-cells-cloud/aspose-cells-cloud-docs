@@ -3,8 +3,8 @@ title: "Bereich einer Arbeitsmappe in PNG, PDF, CSV exportieren – Aspose.Cells
 second_title: "Dokument"
 linktitle: "Bereich"
 type: docs
-url: /worksheets/area-to-different-formats/
-aliases: [/get-worksheet-for-area/]
+url: /de/worksheets/area-to-different-formats/
+aliases: [  /de/get-worksheet-for-area/ ]
 keywords: "Aspose.Cells, Bereich einer Arbeitsmappe exportieren, PNG, PDF, CSV, Excel-Konvertierung, REST API, SDK"
 description: "Erfahren Sie, wie Sie einen bestimmten Zellbereich aus einer Excel-Arbeitsmappe in PNG, PDF, CSV und über 20 weitere Formate mithilfe der Aspose.Cells Cloud REST API oder SDKs (C#, Java, Python, …) exportieren können."
 weight: 230

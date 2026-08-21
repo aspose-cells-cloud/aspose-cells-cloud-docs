@@ -3,8 +3,8 @@ title: "清除所有文档属性"
 second_title: "文档"
 linktitle: "清除"
 type: docs
-url: /document-properties/clear/
-aliases: [/remove-all-document-properties/]
+url: /zh/document-properties/clear/
+aliases: [  /zh/remove-all-document-properties/ ]
 keywords: "Aspose.Cells, 删除文档属性, 清除 Excel 属性, REST API, 云 SDK, 电子表格, API 参考"
 description: "逐步指南，介绍如何使用 Aspose.Cells Cloud REST API 从 Excel 工作簿中清除所有自定义属性和内置属性。"
 weight: 58

@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Yerel Elektronik Tablo Çalışma Sayfasını PDF Dosyasına Dönüştürme: Adım Adım Kılavuz"
 linktype: "Çalışma Sayfasını PDF'ye Dönüştür"
 type: docs
-url: /convert-worksheet-to-pdf/
+url: /tr/convert-worksheet-to-pdf/
 keywords: "Aspose.Cells, Excel'den PDF'ye, çalışma sayfası dönüştürme, REST API, bulut dönüşümü, elektronik tablo PDF, API uç noktası, PDF oluşturma"
 description: "Aspose.Cells Cloud API’sini kullanarak yerel bir Excel dosyasından bir çalışma sayfasını hızlı ve güvenli bir şekilde PDF belgesine dönüştürün."
 weight: 100

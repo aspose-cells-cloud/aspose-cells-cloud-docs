@@ -2,7 +2,7 @@
 title: "องค์ประกอบของสเปรดชีต"
 second_title: "เอกสาร"
 type: docs
-url: /spreadsheet-elements/
+url: /th/spreadsheet-elements/
 keywords: "Aspose.Cells, Cloud, Excel API, AutoFilter, Charts, PivotTables, Worksheets"
 description: "สำรวจคุณสมบัติของ Aspose.Cells Cloud REST API สำหรับ Excel ได้แก่ AutoFilter, cells, charts, columns, comments, conditional formatting, hyperlinks, list objects, metadata, OLE objects, page breaks, pictures, pivot tables, ranges, rows, shapes, validation และ worksheets"
 weight: 100

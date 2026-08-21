@@ -3,8 +3,8 @@ title: "إضافة مرشح أيقونات إلى ورقة عمل إكسل"
 second_title: "مستند"
 linktype: "إضافة مرشح أيقونات"
 type: docs
-url: /autofilter/add-icon-filter/
-aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
+url: /ar/autofilter/add-icon-filter/
+aliases: [  /ar/add-an-icon-filter/ , /ar/autofilter/add-an-icon-filter/ ]
 keywords: "Aspose.Cells Cloud, إكسل, مرشح الأيقونات, المرشح التلقائي, REST API"
 description: "تعرّف على كيفية إضافة مرشح أيقونات إلى ورقة عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API، مع تفاصيل الطلب، ومثال باستخدام cURL، وأكواد أمثلة للـ SDK، وإدارة الأخطاء."
 weight: 65

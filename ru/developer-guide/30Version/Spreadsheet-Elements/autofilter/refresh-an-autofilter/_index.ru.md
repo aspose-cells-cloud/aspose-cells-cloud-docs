@@ -3,8 +3,8 @@ title: "Обновление автозаполнения в листе Excel"
 second_title: "Документ"
 linktype: "Обновить автозаполнение"
 type: docs
-url: /autofilter/refresh/
-aliases: [/refresh-an-autofilter/]
+url: /ru/autofilter/refresh/
+aliases: [  /ru/refresh-an-autofilter/ ]
 weight: 100
 keywords: "Aspose.Cells, AutoFilter, обновление, Excel, API, REST"
 description: "Обновите существующее автозаполнение на листе Excel с помощью Aspose.Cells Cloud REST API. Включает примеры cURL и SDK для C#, Java, Python и других."

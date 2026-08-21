@@ -3,8 +3,8 @@ title: "从 Excel 工作表获取行信息"
 second_title: "文档"
 linktitle: "行"
 type: docs
-url: /rows/get/rows/
-aliases: [/get-row-from-a-worksheet/]
+url: /zh/rows/get/rows/
+aliases: [  /zh/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 获取行 API, Excel 工作表行, REST API, cURL 示例, SDK 示例, .NET, Java, Python"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）从 Excel 工作表中检索行信息。内容包括端点、参数、身份验证、cURL 代码示例以及 C#、Java、Python 等语言的 SDK 示例。"
 weight: 10

@@ -3,8 +3,8 @@ title: "TransposeData"
 ArticleTitle: "TransposeData – Aspose.Cells Cloud API"
 second_title: "เอกสาร"
 linktype: "docs"
-url: /cells/transpose
-aliases: ["/cells/transpose"]
+url: /th/cells/transpose
+aliases: [  /th/cells/transpose ]
 keywords: "TransposeData, Aspose.Cells, Cloud API, สเปรดชีต, transpose"
 description: "สลับแถวและคอลัมน์ในสเปรดชีต"
 weight: 1000

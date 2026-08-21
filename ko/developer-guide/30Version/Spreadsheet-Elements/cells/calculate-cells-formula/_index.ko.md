@@ -1,7 +1,7 @@
 ---
 title: "셀 수식 계산 – Aspose.Cells Cloud API"
 type: docs
-url: /calculate-cells-formula/
+url: /ko/calculate-cells-formula/
 weight: 90
 keywords: "Aspose.Cells Cloud, 셀 수식 계산, Excel API, REST API, SDK"
 description: "Aspose.Cells Cloud REST API(v3.0)를 통해 Excel 셀 수식을 계산합니다. 엔드포인트, 매개변수, cURL 예제, SDK 스니펫이 포함됩니다."

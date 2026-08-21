@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Descarga de imagen Docker de Aspose.Cells Cloud"  
 linktitle: "Descarga de imagen"  
 type: docs  
-url: /docker/downloads/  
+url: /es/docker/downloads/
 description: "Obtenga las últimas imágenes Docker de Aspose.Cells Cloud para Windows Server 2016/2019 y Linux. Siga las instrucciones paso a paso, los requisitos previos y las recomendaciones de seguridad para ejecutar el contenedor localmente."  
 weight: 30  
 keywords: "Aspose.Cells, Cloud, Docker, contenedor, imagen, descarga, Windows Server, Linux, REST API"  

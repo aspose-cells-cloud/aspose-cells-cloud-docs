@@ -4,8 +4,8 @@ second_title: "文档"
 linktitle: "开发者指南"
 ArticleTitle: "在 Cells Cloud 中实现转换、合并、拆分、保护、搜索、替换与数据转换"
 type: docs
-url: /developer‑guide/
-aliases: [/developer‑guide‑v4.0/]
+url: /zh/developer‑guide/
+aliases: [  /zh/developer‑guide‑v4.0/ ]
 keywords: "Aspose.Cells Cloud、Excel REST API、电子表格转换、合并、拆分、保护、搜索替换、数据转换、SDK 示例、Java、.NET、Python、Node.js、PHP、Go、Ruby、Perl"
 description: "Aspose.Cells Cloud REST API 的全面开发者指南，涵盖电子表格转换、合并、拆分、保护、搜索与替换以及数据转换，并提供 Java、.NET、Python、Node.js、PHP、Go、Ruby 和 Perl 的 SDK 示例链接。"
 weight: 20

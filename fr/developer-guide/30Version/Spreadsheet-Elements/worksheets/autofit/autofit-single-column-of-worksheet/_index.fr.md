@@ -3,8 +3,8 @@ title: "Ajuster automatiquement la largeur d'une colonne dans Excel à l’aide 
 second_title: "Document"
 linktitle: "Colonne"
 type: docs
-url: /worksheets/autofit/column/
-aliases: [/autofit-single-column-of-worksheet/]
+url: /fr/worksheets/autofit/column/
+aliases: [  /fr/autofit-single-column-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, ajustement automatique de colonne, API Excel, API REST, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Découvrez comment redimensionner automatiquement une colonne (ou une plage de colonnes) dans une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut des exemples cURL, des exemples de SDK (C#, Java, Python, etc.) et tous les détails complets de la requête/réponse."
 weight: 10

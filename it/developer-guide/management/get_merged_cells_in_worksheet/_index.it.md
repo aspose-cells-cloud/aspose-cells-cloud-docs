@@ -3,7 +3,7 @@ title: "GetMergedCellsInWorksheet"
 ArticleTitle: "Ottenere le celle unite in un foglio di calcolo – Aspose.Cells Cloud API"
 second_title: "Document"
 linktype: "docs"
-url: /cells/spreadsheet/mergedcells
+url: /it/cells/spreadsheet/mergedcells
 aliases: []
 keywords: "Aspose Cells, celle unite, foglio di calcolo, API"
 description: "Ottenere tutte le aree di celle unite da un foglio di calcolo locale."

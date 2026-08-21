@@ -4,7 +4,7 @@ second_title: "Документация"
 linktype: "Поиск и замена"
 type: docs
 url: /ru/search-and-replace/
-aliases: [/ru/working-with-text/, /ru/text/]
+aliases: [  /ru/working-with-text/ , /ru/text/ ]
 description: "Узнайте, как искать и заменять текст в файлах Excel и рабочих тетрадях с помощью REST API Aspose.Cells Cloud. Включает формат запроса, примеры кода для .NET, Java, Python и обработку ошибок."
 keywords: "Aspose.Cells Cloud, Excel, поиск и замена, REST API, .NET, Java, Python"
 weight: 20

@@ -3,8 +3,8 @@ title: "เพิ่มตัวกรองสีในแผ่นงาน Ex
 second_title: "เอกสาร"
 linktitle: "เพิ่มตัวกรองสี"
 type: docs
-url: /autofilter/add-color-filter/
-aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
+url: /th/autofilter/add-color-filter/
+aliases: [  /th/filter-a-list-using-a-color-filter/ , /th/autofilter/add-a-color-filter/ ]
 keywords: "Excel, ตัวกรองสี, Aspose.Cells Cloud, REST API, auto filter, การยืนยันตัวตนด้วย JWT"
 description: "เรียนรู้วิธีใช้ Aspose.Cells Cloud API เพื่อประยุกต์ใช้ตัวกรองสีในแผ่นงาน Excel รวมถึง endpoint, พารามิเตอร์, ตัวอย่าง cURL, การจัดการข้อผิดพลาด และตัวอย่าง SDK"
 weight: 65

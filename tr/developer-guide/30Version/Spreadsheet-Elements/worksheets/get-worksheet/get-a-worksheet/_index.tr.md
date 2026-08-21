@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud API ile Bir Çalışma Sayfası Dışa Aktarın – F
 secondtitle: "Belge"
 linktitle: "Çalışma Sayfası Dışa Aktarma"
 type: docs
-url: /worksheets/get-worksheet/
+url: /tr/worksheets/get-worksheet/
 keywords: "Aspose.Cells Cloud Çalışma Sayfası Al, çalışma sayfası dışa aktarma, Excel API, REST, CSV, PDF, PNG, JPEG, GIF, BMP, TIFF, EMF, XPS, OTS, XLS, XLSX, XLSB, XLSM, ODS, FODS, Numbers, bulut API"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel dosyasından tek bir çalışma sayfasını nasıl dışa aktaracağınızı öğrenin. Uç nokta, parametreler, düzeltildi cURL örneği, kimlik doğrulama ayrıntıları, hata yönetimi ve C#, Java, Python ve diğerleri için SDK kod parçacıkları içerir."
 weight: 10

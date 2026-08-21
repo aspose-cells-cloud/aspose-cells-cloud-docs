@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud SDK สำหรับ Python: แปลง ผนว
 second_title: "เอกสาร"
 ArticleTitle: "Aspose.Cells Cloud SDK สำหรับ Python: แปลง ผนวก แยก ป้องกัน ค้นหา แทนที่ และอื่นๆ อีกมากมาย"
 linktype: "docs"
-url: /available-sdks/aspose-cells-cloud-python/
+url: /th/available-sdks/aspose-cells-cloud-python/
 description: "Aspose.Cells Cloud SDK สำหรับ Python ให้ API ที่ข้าแพลตฟอร์มและใช้งานได้คล่องตัว เพื่อสร้าง แปลง ผนวก แยก ป้องกัน ค้นหา แทนที่ และจัดการไฟล์ Excel บนคลาวด์ โดยไม่จำเป็นต้องติดตั้ง Microsoft Office"
 weight: 30
 keywords: ["Aspose.Cells", "Python SDK", "Excel", "Cloud API", "แปลง Excel เป็น PDF", "ผนวก Excel", "แยกสมุดงาน", "ป้องกันแผ่นงาน", "ค้นหาและแทนที่", "REST API"]

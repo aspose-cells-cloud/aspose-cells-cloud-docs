@@ -1,7 +1,7 @@
 ---
 title: "تعيين قيمة الخلية – مرجع واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0)"  
 type: docs  
-url: /set-value-of-a-cell-in-a-worksheet/  
+url: /ar/set-value-of-a-cell-in-a-worksheet/
 weight: 70  
 keywords: "واجهة برمجة تطبيقات Aspose Cells تعيين قيمة الخلية، تحديث خلية إكسل عبر REST، مثال cURL لـ Aspose.Cells Cloud"  
 description: "تعرّف على كيفية تعيين قيمة خلية معيّنة في ورقة عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمن بنية الطلب، المعاملات، مثال cURL عبر HTTPS، وأمثلة لرموز SDK."  

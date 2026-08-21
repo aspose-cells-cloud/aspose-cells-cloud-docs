@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "여러 Excel 파일을 하나로 통합 – 30개 이상의 형식으로 스프레드시트 일괄 병합"
 linktype: "스프레드시트 병합"
 type: docs
-url: /merge-spreadsheets/
+url: /ko/merge-spreadsheets/
 keywords: "Aspose.Cells, 스프레드시트 병합, Excel API, 클라우드 스프레드시트, 일괄 병합, PDF 변환, CSV 병합, ODS 병합, API 참조, SDK"
 description: "여러 로컬 Excel, CSV 또는 ODS 파일을 하나의 워크북으로 통합한 후, 그 결과를 30개 이상의 형식(PDF, HTML 등)으로 변환합니다. 엔드포인트, 매개변수, 인증 가이드, SDK 예제 포함."
 weight: 100

@@ -3,8 +3,8 @@ title: "Rechercher et remplacer du contenu texte dans des fichiers Excel"
 second_title: "Documentation"
 linktype: "Rechercher et remplacer"
 type: docs
-url: /search-and-replace/
-aliases: [/working-with-text/, /text/]
+url: /fr/search-and-replace/
+aliases: [  /fr/working-with-text/ , /fr/text/ ]
 description: "Découvrez comment rechercher et remplacer du texte dans des classeurs et des feuilles de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut le format de requête, des exemples de code pour .NET, Java, Python et la gestion des erreurs."
 keywords: "Aspose.Cells Cloud, Excel, recherche et remplacement, API REST, .NET, Java, Python"
 weight: 20

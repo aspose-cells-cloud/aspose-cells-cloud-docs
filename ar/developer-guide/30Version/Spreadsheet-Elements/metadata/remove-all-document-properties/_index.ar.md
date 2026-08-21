@@ -3,8 +3,8 @@ title: "إزالة جميع خصائص المستند"
 second_title: "المستند"
 linktype: "مسح"
 type: docs
-url: /document-properties/clear/
-aliases: [/remove-all-document-properties/]
+url: /ar/document-properties/clear/
+aliases: [  /ar/remove-all-document-properties/ ]
 keywords: "Aspose.Cells, حذف خصائص المستند, مسح خصائص Excel, واجهة برمجة تطبيقات REST, حزمة تطوير برامج السحابة, جدول بيانات, مرجع واجهة برمجة التطبيقات"
 description: "دليل خطوة بخطوة لإزالة جميع الخصائص المخصصة والمدمجة من ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST."
 weight: 58

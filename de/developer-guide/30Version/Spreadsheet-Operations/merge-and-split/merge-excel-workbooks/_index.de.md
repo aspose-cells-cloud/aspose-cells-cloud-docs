@@ -3,8 +3,8 @@ title: "Eine Excel-Arbeitsmappe in eine andere Arbeitsmappe zusammenführen"
 second_title: "Dokument"
 linktitle: "Eine Excel-Arbeitsmappe in eine andere Arbeitsmappe zusammenführen"
 type: docs
-url: /merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
+url: /de/merge-an-excel-file-into-the-excel-file/
+aliases: [  /de/merge-excel-workbooks/ , /de/workbook/merge/ ]
 keywords: "Excel zusammenführen, Aspose.Cells Cloud, Arbeitsmappen-API, REST-API, Tabellenzusammenführung, Cloud-SDK, Authentifizierung, mergeWith, cURL-Beispiel"
 description: "Schritt-für-Schritt-Anleitung zum Zusammenführen einer Excel-Arbeitsmappe in eine andere mithilfe der Aspose.Cells Cloud REST API (v3.0). Enthält Authentifizierung, erforderlichen mergeWith-Parameter, cURL-Beispiel und SDK-Codeausschnitte."
 ArticleTitle: "Eine Excel-Arbeitsmappe in eine andere Arbeitsmappe mit Aspose.Cells Cloud API zusammenführen"

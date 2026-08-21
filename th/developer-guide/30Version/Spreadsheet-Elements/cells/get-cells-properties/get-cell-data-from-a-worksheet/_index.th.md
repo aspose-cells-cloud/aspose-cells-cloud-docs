@@ -1,7 +1,7 @@
 ---
 title: "ดึงข้อมูลเซลล์จากเวิร์กชีต"
 type: docs
-url: /get-cell-data-from-a-worksheet/
+url: /th/get-cell-data-from-a-worksheet/
 weight: 10
 keywords: "Aspose.Cells Cloud, ดึงข้อมูลเซลล์, Excel API, REST API, ค่าเซลล์, worksheet API, ตัวอย่าง Aspose API"
 description: "ดึงค่า ชนิด และรูปแบบของเซลล์เดียวจากเวิร์กชีต Excel โดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 3.0) ประกอบด้วยตัวอย่าง cURL, SDK, พารามิเตอร์ และการจัดการข้อผิดพลาด"

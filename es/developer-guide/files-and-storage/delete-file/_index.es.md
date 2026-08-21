@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Aspose.Cells Cloud – API para eliminar archivos"
 linktitle: "Eliminar archivo"
 type: docs
-url: /delete-file/
+url: /es/delete-file/
 keywords: "Aspose Cells, API para eliminar archivos, almacenamiento en la nube de Excel, API REST, gestión de archivos"
 description: "Elimine un archivo de Excel del almacenamiento en la nube de Aspose.Cells mediante la API REST para eliminar archivos. Incluye el punto de conexión, parámetros, autenticación y código de ejemplo."
 weight: 100

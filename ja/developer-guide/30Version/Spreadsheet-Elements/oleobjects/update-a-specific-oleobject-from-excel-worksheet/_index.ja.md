@@ -3,8 +3,8 @@ title: "Excelワークシート内のOLEオブジェクトを更新する"
 second_title: "Document"
 linktitle: "Update"
 type: docs
-url: /oleobjects/update/
-aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
+url: /ja/oleobjects/update/
+aliases: [  /ja/update-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "OLEオブジェクトの更新、Excel、Aspose.Cells Cloud、REST API、SDK"
 description: "Aspose.Cells Cloud REST API を使って Excel ワークシート内の OLE オブジェクト（画像、チャートなど）を更新する方法を学びます。cURL や SDK の例、認証手順、エラー処理も含まれます。"
 weight: 30

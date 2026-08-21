@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "المنصات المدعومة من Aspose.Cells Cloud: Windows و Linux و macOS"
 LinkTitle: "المنصات المدعومة"
 type: docs
-url: /supported-platforms/
+url: /ar/supported-platforms/
 description: "تعرف على أنظمة التشغيل وSDKs وصور Docker المدعومة من قبل REST API الخاص بـ Aspose.Cells Cloud على Windows و Linux و macOS."
 weight: 50
 keywords: "Aspose.Cells Cloud, REST API, Excel, Spreadsheet, SDK, Docker, Windows, Linux, macOS"

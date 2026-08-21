@@ -3,8 +3,8 @@ title: "すべてのドキュメント プロパティを削除する"
 second_title: "ドキュメント"
 linktitle: "クリア"
 type: docs
-url: /document-properties/clear/
-aliases: [/remove-all-document-properties/]
+url: /ja/document-properties/clear/
+aliases: [  /ja/remove-all-document-properties/ ]
 keywords: "Aspose.Cells, ドキュメント プロパティの削除, Excel プロパティのクリア, REST API, クラウド SDK, スプレッドシート, API リファレンス"
 description: "Aspose.Cells Cloud REST API を使用して、Excel ワークブックからすべてのカスタム プロパティと組み込みプロパティを削除するステップバイステップのガイド。"
 weight: 58

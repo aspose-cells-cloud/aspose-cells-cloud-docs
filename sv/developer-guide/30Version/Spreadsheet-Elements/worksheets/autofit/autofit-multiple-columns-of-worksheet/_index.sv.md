@@ -3,8 +3,8 @@ title: "Autojustera flera kolumner i ett Excel-arbetsark"
 second_title: "Document"
 linktitle: "Kolumner"
 type: docs
-url: /worksheets/autofit/columns/
-aliases: [/autofit-multiple-columns-of-worksheet/]
+url: /sv/worksheets/autofit/columns/
+aliases: [  /sv/autofit-multiple-columns-of-worksheet/ ]
 keywords: "Aspose.Cells, autojustera kolumner, Excel API, molnspreadsheat, REST"
 description: "Lär dig hur du autojusterar flera kolumner i ett Excel-arbetsark med Aspose.Cells Cloud REST API (v3.0). Innehåller endpoint, parametrar, cURL-exempel, felhantering och SDK-kodsnuttar för C#, Java, Python och mer."
 weight: 20

@@ -3,8 +3,8 @@ title: "Excel을 TIFF로 변환"
 second_title: "문서"
 linketitle: "Excel을 TIFF로 변환"
 type: docs
-url: /convert-excel-file-to-tiff-file/
-aliases: [/convert-excel-file-to-tiff-in-cloud/, /convert/excel-to-tiff/]
+url: /ko/convert-excel-file-to-tiff-file/
+aliases: [  /ko/convert-excel-file-to-tiff-in-cloud/ , /ko/convert/excel-to-tiff/ ]
 keywords: "Aspose.Cells Cloud, Excel을 TIFF로 변환, REST API, cURL, SDK, .NET, Java, Python, 이미지 내보내기"
 description: "Aspose.Cells Cloud API를 사용하여 Excel 워크북을 고품질 TIFF 이미지로 변환하는 방법을 알아보세요. 자세한 cURL 명령어, SDK 예제(C#, Java, Python 등), 인증 단계, 오류 처리를 포함합니다."
 weight: 90

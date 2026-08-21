@@ -3,8 +3,8 @@ title: "Bir Excel çalışma kitabında metin değiştir"
 second_title: "Belge"
 linktitle: "Çalışma kitabında değiştir"
 type: docs
-url: /workbook/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /tr/workbook/replace-text/
+aliases: [  /tr/replace-text-in-a-workbook/ ]
 weight: 60
 keywords: "Aspose.Cells Cloud, Metin Değiştir, Excel Çalışma Kitabı, XLSX, ODS, REST API, Elektronik Tablo, SDK"
 description: "Aspose.Cells Cloud REST API’si kullanarak Excel (XLS, XLSX, XLSM, XLSB) ve OpenDocument Elektronik Tablosu (ODS) çalışma kitaplarında metin değiştirin. cURL ve geniş bir SDK yelpazesi (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go vb.) aracılığıyla kullanılabilir."

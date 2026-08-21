@@ -3,8 +3,8 @@ title: "Travail avec les filtres de tableau croisé dynamique"
 second_title: "Document"
 linktitle: Filtres
 type: docs
-url: /pivot-tables/add-filters/
-aliases: [/working-with-pivot-filters/]
+url: /fr/pivot-tables/add-filters/
+aliases: [  /fr/working-with-pivot-filters/ ]
 keywords: "Aspose.Cells, Tableau croisé dynamique, Filtre, API REST, Cloud"
 description: "Découvrez comment ajouter, récupérer et supprimer des filtres de tableau croisé dynamique à l'aide de l'API REST Aspose.Cells Cloud. Inclut la syntaxe des requêtes, les paramètres requis, un exemple cURL et des extraits de code SDK pour C# et Go."
 weight: 50

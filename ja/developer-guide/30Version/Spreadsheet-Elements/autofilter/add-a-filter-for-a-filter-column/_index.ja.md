@@ -3,8 +3,8 @@ title: "Excelワークシートにフィルターを追加する"
 second_title: "Document"
 linktype: "フィルターの追加"
 type: docs
-url: /autofilter/add-filter/
-aliases: [/add-a-filter-for-a-filter-column/]
+url: /ja/autofilter/add-filter/
+aliases: [  /ja/add-a-filter-for-a-filter-column/ ]
 keywords: "Aspose.Cells, Cloud, Excel, AutoFilter, フィルターの追加, REST API, SDK"
 description: "Aspose.Cells Cloud REST APIを使用してExcelワークシートの列にオートフィルターを追加する方法を学びます。cURL、SDKサンプル、パラメータガイドを含みます。"
 weight: 60

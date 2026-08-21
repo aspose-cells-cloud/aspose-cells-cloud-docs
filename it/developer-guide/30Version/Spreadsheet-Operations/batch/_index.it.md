@@ -3,7 +3,7 @@ title: "Elaborazione in batch di file Excel: convertire, bloccare, proteggere, d
 second_title: "Documento"
 linktype: "Elaborazione in batch di file Excel"
 type: docs
-url: /batch/
+url: /it/batch/
 keywords: "Elaborazione in batch, Excel, conversione, blocco, protezione, divisione, sblocco, Aspose.Cells Cloud API, riferimento API, operazioni in batch"
 description: "L'API Aspose.Cells Cloud consente l'elaborazione in batch di più file Excel per la conversione, il blocco, la protezione, la divisione e lo sblocco. Include specifiche API dettagliate e supporto SDK per Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby e Swift."
 weight: 35

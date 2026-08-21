@@ -1,8 +1,8 @@
 ---
 title: "Получить комментарий листа – Документация API Aspose.Cells Cloud"
 type: docs
-url: /comments/get/
-aliases: [/get-comment-from-a-worksheet/]
+url: /ru/comments/get/
+aliases: [  /ru/get-comment-from-a-worksheet/ ]
 keywords: "Aspose.Cells, комментарий листа, API, GET, Excel"
 description: "Узнайте, как извлечь комментарий листа по имени ячейки с помощью API Aspose.Cells Cloud (v3.0). Включает URL-адрес запроса, параметры, пример cURL, данные ответа и фрагменты кода SDK."
 weight: 10

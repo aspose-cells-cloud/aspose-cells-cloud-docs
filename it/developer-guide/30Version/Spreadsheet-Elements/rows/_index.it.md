@@ -4,8 +4,8 @@ ArticleTitle: "Lavorare con le righe di Excel – API Cloud di Aspose.Cells"
 second_title: "Documento"
 linktitle: "Righe"
 type: docs
-url: /rows/
-aliases: [/working-with-rows/]
+url: /it/rows/
+aliases: [  /it/working-with-rows/ ]
 keywords: "Aspose.Cells, righe Excel, API REST, manipolazione di fogli elettronici"
 description: "Manipola le righe nei file Excel utilizzando l’API REST di Aspose.Cells Cloud. Supporta Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby e Swift."
 weight: 100

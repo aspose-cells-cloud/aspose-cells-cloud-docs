@@ -4,7 +4,7 @@ ArticleTitle: "Excel ワークブックにデジタル署名を追加する – 
 second_title: "ドキュメント"
 linktype: "デジタル署名"
 type: docs
-url: /excel-digital-signature/
+url: /ja/excel-digital-signature/
 aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/

@@ -2,8 +2,8 @@
 title: "Сопоставление всех непустых ячеек в рабочем листе Excel"
 second_title: "Документ"
 linktype: "docs"
-url: "/autofilter/match-all-non-blank/"
-aliases: [/match-all-non-blank-cells-in-the-list/]
+url: /ru/autofilter/match-all-non-blank/
+aliases: [  /ru/match-all-non-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells Cloud, сопоставление непустых ячеек, автофильтр, Excel API"
 description: "Узнайте, как использовать REST API Aspose.Cells Cloud для сопоставления всех непустых ячеек в списке автофильтра на рабочем листе Excel. Включает endpoint, параметры, аутентификацию, схему ответа, коды ошибок и примеры SDK."
 ArticleTitle: "Сопоставление всех непустых ячеек в рабочем листе Excel с помощью API Aspose.Cells Cloud"

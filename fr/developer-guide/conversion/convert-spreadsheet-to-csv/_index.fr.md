@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment convertir un classeur en CSV à l’aide de l’API Aspose.Cells Cloud"
 linktitle: "Convertir un classeur en CSV"
 type: docs
-url: /convert-spreadsheet-to-csv/
+url: /fr/convert-spreadsheet-to-csv/
 keywords: "Aspose Cells, conversion CSV, API Excel, conversion cloud"
 description: "Découvrez comment convertir des fichiers Excel (XLS, XLSX, XLSM, etc.) en CSV à l’aide de l’API Aspose.Cells Cloud. Inclut les étapes d’authentification, un exemple cURL, des extraits de code SDK et la gestion des erreurs."
 weight: 100

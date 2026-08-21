@@ -3,8 +3,8 @@ title: "Bir Excel çalışma sayfasındaki tüm resimleri silin"
 second_title: "Belge"
 linktitle: "Temizle"
 type: docs
-url: /pictures/clear/
-aliases: [/delete-all-pictures-from-excel-worksheet/]
+url: /tr/pictures/clear/
+aliases: [  /tr/delete-all-pictures-from-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, tüm resimleri sil, çalışma sayfası, REST API, resimleri temizle"
 description: "Aspose.Cells Cloud REST API ile bir Excel çalışma sayfasından tüm resimleri nasıl sileceğinizi cURL ve SDK örnekleriyle öğrenin."
 weight: 60

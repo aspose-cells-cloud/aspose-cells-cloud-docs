@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasından OLE Nesnesini Alın – Aspose.Cells Cloud
 secondtitle: "Belge"
 linktitle: "Al"
 type: docs
-url: /oleobjects/get/
-aliases: [/get-oleobject-from-a-worksheet/]
+url: /tr/oleobjects/get/
+aliases: [  /tr/get-oleobject-from-a-worksheet/ ]
 keywords: "aspose, cells, ole nesnesi, excel, çalışma sayfası, ole nesnesi al, rest api"
 description: "Aspose.Cells Cloud REST API kullanarak bir çalışma sayfasından bir OLE nesnesini (görüntü, grafik veya gömülü dosya) alın. HTTPS uç noktası, gerekli parametreler, örnek cURL ve birden fazla dilde SDK kodunu içerir."
 ArtikelBaşlığı: "Excel Çalışma Sayfasından OLE Nesnesini Alın – Aspose.Cells Cloud API"

@@ -2,7 +2,7 @@
 title: "فتح دفعّة"
 second_title: "مستند"
 type: docs
-url: /batch/unlock
+url: /ar/batch/unlock
 keywords: "فتح دفعّة، Aspose.Cells Cloud، Excel، REST API، جدول بيانات، SDK سحابي"
 description: "افتح ملفات Excel متعددة دفعة واحدة باستخدام REST API الخاص بـ Aspose.Cells Cloud. يدعم SDKs لغات C#، Java، Python، وأخرى."
 weight: 100

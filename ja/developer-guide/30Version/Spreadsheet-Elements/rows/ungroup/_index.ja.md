@@ -3,8 +3,8 @@ title: "Excelワークシートの行をグループ解除する"
 second_title: "Document"
 linktitle: "Ungroup"
 type: docs
-url: /rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
+url: /ja/rows/ungroup/
+aliases: [  /ja/ungroup-rows-in-excel-worksheet/ ]
 keywords: "行のグループ解除, Excel, Aspose.Cells Cloud, REST API, SDK, スプレッドシート"
 description: "Aspose.Cells Cloud REST API および various programming languages の SDK を使用して Excel ワークシートの行をグループ解除する方法を学びます。"
 weight: 70

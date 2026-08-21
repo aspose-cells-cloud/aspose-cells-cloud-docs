@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud 웹 API – 로컬 Excel 테이블 데이터를 JSON 
 second_title: "문서"
 ArticleTitle: "로컬 스프레드시트 테이블 데이터를 JSON 파일로 변환하는 방법: 단계별 가이드"
 linktype: "docs"
-url: /convert-table-to-json/
+url: /ko/convert-table-to-json/
 keywords: "Excel, API, JSON, 변환, 클라우드, 파일, 스프레드시트"
 description: "Aspose.Cells Cloud API를 사용하여 단일 PUT 요청으로 로컬 Excel 테이블을 JSON 파일로 변환합니다. cURL 예제, 매개변수, C#, Java, Python 등 다양한 SDK 스니펫이 포함되어 있습니다."
 weight: 100

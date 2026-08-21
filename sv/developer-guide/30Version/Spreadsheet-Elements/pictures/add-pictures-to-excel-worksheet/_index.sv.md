@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Lägg till"
 type: docs
 url: /sv/pictures/add/
-aliases: [/sv/add-pictures-to-excel-worksheet/]
+aliases: [  /sv/add-pictures-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, lägg till bild, REST API"
 description: "Använd Aspose.Cells Cloud REST API för att lägga till en bild i ett Excel-arbetsblad. SDK:er för Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby och Swift förenklar integration över plattformar."
 weight: 20

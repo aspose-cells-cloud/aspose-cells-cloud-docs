@@ -3,7 +3,7 @@ title: "Importazione di dati in batch in un foglio di Excel"
 second_title: "Document"
 linktype: "Importazione di dati in batch"
 type: docs
-url: /import-batch-data-into-excel/
+url: /it/import-batch-data-into-excel/
 aliases:
   - /import-batch-data-into-worksheet/
   - /import-data/batch-data/

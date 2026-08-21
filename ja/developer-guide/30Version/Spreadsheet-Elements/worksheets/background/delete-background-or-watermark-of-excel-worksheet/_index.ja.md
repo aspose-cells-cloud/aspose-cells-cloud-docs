@@ -3,8 +3,8 @@ title: "Excelワークシートの背景を削除する"
 second_title: "Document"
 linktitle: "削除"
 type: docs
-url: /worksheets/background/delete/
-aliases: [/delete-background-or-watermark-of-excel-worksheet/]
+url: /ja/worksheets/background/delete/
+aliases: [  /ja/delete-background-or-watermark-of-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, ワークシート背景の削除, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートの背景画像を削除します。SDK は C#、Java、PHP、Ruby、Node.js、Python、Perl、Go で利用可能です。"
 weight: 210

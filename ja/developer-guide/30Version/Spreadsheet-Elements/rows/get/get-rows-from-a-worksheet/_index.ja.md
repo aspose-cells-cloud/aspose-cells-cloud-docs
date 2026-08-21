@@ -3,8 +3,8 @@ title: "Excelワークシートから行情報の取得"
 second_title: "Document"
 linktype: "Rows"
 type: docs
-url: /rows/get/rows/
-aliases: [/get-row-from-a-worksheet/]
+url: /ja/rows/get/rows/
+aliases: [  /ja/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud、Get Rows API、Excelワークシートの行、REST API、cURLの例、SDKの例、.NET、Java、Python"
 description: "Aspose.Cells Cloud REST API（v3.0）を使用してExcelワークシートから行情報を取得する方法について学びます。エンドポイント、パラメータ、認証、cURLおよびSDKのコード例（C#、Java、Pythonなど）を含みます。"
 weight: 10

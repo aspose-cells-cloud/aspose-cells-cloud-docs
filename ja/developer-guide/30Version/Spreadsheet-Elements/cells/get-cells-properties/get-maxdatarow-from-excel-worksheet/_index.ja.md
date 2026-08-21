@@ -1,7 +1,7 @@
 ---
 title: "ExcelワークシートからMaxDataRowを取得する"
 type: docs
-url: /get-maxdatarow-from-excel-worksheet/
+url: /ja/get-maxdatarow-from-excel-worksheet/
 weight: 50
 keywords: "Excel, Aspose.Cells Cloud, REST API, Get MaxDataRow, ワークシート"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークブックの指定されたワークシート内にデータが含まれる最終行のインデックスを取得します。"

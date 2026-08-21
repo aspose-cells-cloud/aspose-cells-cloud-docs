@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud API – Excel Dosyalarını Dönüştür, Birleştir, Böl ve Korumalı Hale Getir"
 linktitle: "Geliştirici Merkezi"
 type: docs
-url: /
+url: /tr/
 description: "Aspose.Cells Cloud REST API, Excel elektronik tablolarının dönüştürülmesini, birleştirilmesini, bölünmesini, korunmasını ve kapsamlı işleme işlemlerini sağlar. Ayda ücretsiz 150 çağrı, 8 dil için SDK."
 weight: 10
 keywords: "Aspose.Cells Cloud, Excel API, elektronik tablo dönüştürme, Excel birleştirme, Excel bölme, Excel koruma, bulut elektronik tablo SDK, REST API, Excel işleme"

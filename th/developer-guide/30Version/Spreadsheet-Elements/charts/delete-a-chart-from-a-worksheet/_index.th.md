@@ -1,8 +1,8 @@
 ---
 title: "การลบแผนภูมิออกจากแผ่นงาน"
 type: docs
-url: /charts/delete/
-aliases: [/delete-a-chart-from-a-worksheet/]
+url: /th/charts/delete/
+aliases: [  /th/delete-a-chart-from-a-worksheet/ ]
 weight: 40
 keywords:
   - "Aspose.Cells"

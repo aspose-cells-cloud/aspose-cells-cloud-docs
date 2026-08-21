@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Defekte Verknüpfungen im entfernten Excel-Bereich finden und beheben – Cloud-basierte Prüfung von Tabellenverknüpfungen"
 linktype: "Suche defekter Verknüpfungen im entfernten Bereich"
 type: docs
-url: /search-broken-links-in-remote-range/
+url: /de/search-broken-links-in-remote-range/
 keywords: "Aspose, Cells, defekte Verknüpfungen, API, Excel-Bereich, Validierung, Cloud, Tabellenkalkulation, externer Verweis, Prüfprogramm"
 description: "Verwenden Sie die Aspose.Cells Cloud API, um einen bestimmten Excel-Bereich auf defekte externe Verknüpfungen, ungültige Formeln oder fehlende Datenquellen zu überprüfen. Sicher, schnell und cloudbasiert."
 weight: 100

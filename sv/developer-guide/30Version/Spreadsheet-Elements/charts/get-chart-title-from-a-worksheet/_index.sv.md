@@ -1,8 +1,8 @@
 ---
 title: "Hämta diagramrubrik från ett kalkylblad"
 type: docs
-url: /charts/title/get/
-aliases: [/get-chart-title-from-a-worksheet/]
+url: /sv/charts/title/get/
+aliases: [  /sv/get-chart-title-from-a-worksheet/ ]
 weight: 120
 keywords:
   - "Aspose.Cells Cloud"

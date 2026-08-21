@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Konvertering och Spara som"
 type: docs
 url: /sv/conversion-and-save-as/
-aliases: [/sv/convert-excel/, /sv/convert/]
+aliases: [  /sv/convert-excel/ , /sv/convert/ ]
 keywords: "Aspose.Cells, Excel-konverterings-API, konvertera Excel till PDF, Excel till CSV, Excel till JSON, molnspreadsheetskonvertering"
 description: "Lär dig hur du konverterar Excel-arbetsböcker till PDF, CSV, JSON, HTML och över 15 andra format med Aspose.Cells Cloud REST API. Innehåller detaljerad information om slutpunkter, exempel på cURL-kommandon och SDK-utdrag för Java, .NET, Python och mer."
 weight: 30

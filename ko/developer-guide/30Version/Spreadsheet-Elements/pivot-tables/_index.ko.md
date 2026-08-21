@@ -3,8 +3,8 @@ title: "Excel 피벗 테이블 작업하기"
 second_title: "문서"
 linktitle: "피벗 테이블"
 type: docs
-url: /pivottables/
-aliases: [/working-with-pivot-tables/]
+url: /ko/pivottables/
+aliases: [  /ko/working-with-pivot-tables/ ]
 keywords: "Excel, 피벗 테이블, Aspose.Cells Cloud, API, 스프레드시트, 데이터 분석, REST API"
 description: "Excel 워크시트에서 피벗 테이블을 생성, 조회, 업데이트 및 삭제하기 위한 Aspose.Cells Cloud REST API 사용 종합 가이드입니다. SDK 참조, 예제 호출, 버전 노트를 포함합니다."
 weight: 100

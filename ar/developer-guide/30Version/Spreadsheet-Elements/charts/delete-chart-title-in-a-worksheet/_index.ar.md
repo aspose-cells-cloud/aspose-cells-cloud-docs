@@ -1,8 +1,8 @@
 ---
 title: "حذف عنوان المخطط في ورقة عمل"
 type: docs
-url: /charts/delete-chart-title/
-aliases: [/delete-chart-title-in-a-worksheet/]
+url: /ar/charts/delete-chart-title/
+aliases: [  /ar/delete-chart-title-in-a-worksheet/ ]
 weight: 150
 keywords: "Aspose.Cells، واجهة برمجة التطبيقات السحابية، حذف عنوان المخطط، إكسل، REST، SDK"
 description: "تعرّف على كيفية إزالة عنوان مخطط من ورقة عمل إكسل باستخدام واجهة Aspose.Cells Cloud REST API (النسخة 4.0). يتضمن أمثلة لـ cURL وSDKs، وإدارة الأخطاء."

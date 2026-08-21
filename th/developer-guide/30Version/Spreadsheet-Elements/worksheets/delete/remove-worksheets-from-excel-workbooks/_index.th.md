@@ -3,8 +3,8 @@ title: "ลบวORKSHEET"
 second_title: "Document"
 linktype: "หนึ่งworksheet"
 type: docs
-url: /worksheets/delete-worksheet/
-aliases: [/remove-worksheets-from-excel-workbooks/]
+url: /th/worksheets/delete-worksheet/
+aliases: [  /th/remove-worksheets-from-excel-workbooks/ ]
 keywords: "Aspose.Cells Cloud, Delete Worksheet, Excel, Spreadsheet, REST API"
 description: "ลบworksheet จากสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API รองรับ SDK สำหรับ C#, Java, PHP, Ruby, Node.js, Python, Perl, Go และ cURL"
 weight: 20

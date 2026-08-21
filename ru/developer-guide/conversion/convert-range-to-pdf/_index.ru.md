@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать данные диапазона локальной электронной таблицы в PDF-файл: пошаговое руководство"
 linktype: "Преобразование диапазона в PDF"
 type: docs
-url: /convert-range-to-pdf/
+url: /ru/convert-range-to-pdf/
 keywords: "Aspose.Cells Cloud, преобразование диапазона Excel в PDF, Excel в PDF, облачное преобразование"
 description: "Преобразование конкретного диапазона из локальной электронной таблицы Excel в PDF с использованием REST API Aspose.Cells Cloud."
 weight: 100

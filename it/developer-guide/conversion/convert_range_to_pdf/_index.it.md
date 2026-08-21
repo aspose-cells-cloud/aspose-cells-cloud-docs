@@ -3,7 +3,7 @@ title: "ConvertRangeToPdf"
 ArticleTitle: "Converti intervallo in PDF – Aspose.Cells Cloud API"
 second_title: "Document"
 linktype: "docs"
-url: /cells/convert/range/pdf
+url: /it/cells/convert/range/pdf
 aliases: []
 keywords: "Aspose.Cells, Converti intervallo in PDF, API"
 description: "Converte un intervallo specificato di un foglio di calcolo in PDF utilizzando Aspose.Cells Cloud."

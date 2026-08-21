@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как сжать файлы Excel – Уменьшить размер электронной таблицы и оптимизировать производительность"
 linktitle: "Сжать электронную таблицу"
 type: docs
-url: /compress-spreadsheet/
+url: /ru/compress-spreadsheet/
 keywords: "сжатие Excel, Aspose.Cells Cloud, уменьшение размера электронной таблицы, API, оптимизация рабочей книги"
 description: "Узнайте, как сжимать рабочие книги Excel с помощью API Aspose.Cells Cloud. Получите пошаговые примеры, параметры, сведения об аутентификации и лучшие практики."
 weight: 100

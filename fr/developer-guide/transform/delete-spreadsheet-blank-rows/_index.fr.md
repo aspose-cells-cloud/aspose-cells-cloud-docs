@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment supprimer toutes les lignes vides dans Excel – Guide complet de nettoyage des données"
 linktitle: "Supprimer les lignes vides"
 type: docs
-url: /delete-spreadsheet-blank-rows/
+url: /fr/delete-spreadsheet-blank-rows/
 keywords: "Aspose.Cells, Excel, lignes vides, suppression de lignes, nettoyage de feuille de calcul, API"
 description: "Supprimez toutes les lignes vides des fichiers Excel via l’API Aspose.Cells Cloud. Rapide, prêt pour le traitement par lots et entièrement programmable – consultez les exemples de code en C#, Java, Python, etc."
 weight: 100

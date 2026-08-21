@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "ローカルスプレッドシートの範囲を CSV ファイルに変換する方法：ステップ・バイ・ステップ・ガイド"
 linktitle: "範囲を CSV に変換"
 type: docs
-url: /convert-range-to-csv/
+url: /ja/convert-range-to-csv/
 keywords: "Aspose Cells, 範囲を CSV に変換, Excel を CSV に変換, Excel API, クラウドスプレッドシート, 変換, Excel, CSV, Aspose.Cells, クラウド API"
 description: "Aspose.Cells Cloud REST API を使用して、ローカル Excel ワークブック (XLSX または XLS) の特定の範囲を CSV に変換する方法を学びます。リクエスト構文、パラメーター、エラー処理、SDK の例を含みます。"
 ---

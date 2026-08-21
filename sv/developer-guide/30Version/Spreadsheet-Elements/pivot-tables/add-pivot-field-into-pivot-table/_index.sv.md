@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Lägg till pivotfält"
 type: docs
 url: /sv/pivot-tables/add-pivot-field/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /sv/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, pivottabell, lägg till pivotfält, REST API, SDK"
 description: "Lägg till ett pivotfält i en befintlig pivottabell med Aspose.Cells Cloud REST API. Inkluderar begärandedetaljer, cURL-exempel och SDK-utdrag."
 weight: 40

@@ -1,8 +1,8 @@
 ---
 title: "ハイパーリンクのクリア"
 type: docs
-url: /hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /ja/hyperlinks/clear/
+aliases: [  /ja/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, ハイパーリンクのクリア, ハイパーリンクの削除, REST API, ワークシート, SDK"
 description: "Aspose.Cells Cloud REST API またはサポートされている SDK（C#、Java、Python、Node.js、Go、PHP、Ruby、Perl など）を使用して、Excel ワークシートからすべてのハイパーリンクを削除する方法を学習します。"
 weight: 40

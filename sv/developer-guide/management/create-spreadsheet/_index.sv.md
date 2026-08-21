@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man skapar nya Excel-kalkylark – Generera tomma eller mallbaserade filer"
 linktitle: "Skapa kalkylark"
 type: docs
-url: /create-spreadsheet/
+url: /sv/create-spreadsheet/
 keywords: "Aspose.Cells, spreadsheet API, skapa Excel, moln, XLSX, ODS, CSV, mall, SDK, automatisering"
 description: "Lär dig hur du skapar tomma eller mallbaserade Excel-arbetsböcker med Aspose.Cells Cloud API (v5.0). Inkluderar slutpunkt, parametrar, felkoder, autentiseringssteg och SDK-exempel."
 weight: 100

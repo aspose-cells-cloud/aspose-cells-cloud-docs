@@ -4,7 +4,7 @@ description: "รวมไฟล์สเปรดชีตที่จัดเ
 keywords: "Aspose.Cells, รวมสเปรดชีต, โฟลเดอร์ระยะไกล, API, PDF, CSV, JSON, XLSX, ODS, XPS"
 weight: 100
 type: docs
-url: /merge-spreadsheets-in-remote-folder/
+url: /th/merge-spreadsheets-in-remote-folder/
 ---
 
 รวมไฟล์สเปรดชีตหลายไฟล์ที่อยู่ในโฟลเดอร์พื้นที่จัดเก็บระยะไกลของ Aspose Cloud ให้กลายเป็นไฟล์เอาต์พุตเดียว การดำเนินการนี้ทำงานทั้งหมดบนคลาวด์ จึงไม่จำเป็นต้องดาวน์โหลดไฟล์ต้นฉบับมายังเครื่องของคุณ รองรับรูปแบบเอาต์พุตมากกว่า 30 รูปแบบ (PDF, CSV, JSON, XLSX, ODS, XPS, …)

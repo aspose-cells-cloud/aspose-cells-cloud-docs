@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hämta åtkomsttoken med klient-ID och hemlighet"
 linktitle: "Post Access Token"
 type: docs
-url: /post-access-token/
+url: /sv/post-access-token/
 keywords: "Aspose.Cells, moln, åtkomsttoken, OAuth2, API, autentisering, REST, Excel, Office Cloud"
 description: "Skaffa en OAuth2-åtkomsttoken för Aspose.Cells Cloud genom att anropa slutpunkten POST /cells/connect/token med ditt klient-ID och din hemlighet."
 weight: 100

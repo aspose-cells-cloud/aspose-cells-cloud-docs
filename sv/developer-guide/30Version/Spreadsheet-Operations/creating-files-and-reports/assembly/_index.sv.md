@@ -3,8 +3,8 @@ title: "Sammanställning av data för skapande av en Excel-rapport"
 second_title: "Dokument"
 linktitle: "Sammanställningsdata"
 type: docs
-url: /assembly-data-for-the-creation-of-an-excel-report/
-aliases: [/assembly/]
+url: /sv/assembly-data-for-the-creation-of-an-excel-report/
+aliases: [  /sv/assembly/ ]
 keywords: "Aspose.Cells, Excel-rapport, dataassemblage, molntjänst-API, REST, SDK, cURL, PDF, ODS"
 description: "Lär dig hur du använder Aspose.Cells Cloud:s Assembly API för att sammanfoga data till Excel-rapporter (XLSX, PDF, ODS). Innehåller slutpunkt, parametrar, cURL-exempel, SDK-kod, autentiseringsguide och felhantering."
 weight: 40

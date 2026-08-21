@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktype: "ล้าง"
 type: docs
 url: /th/clear/
-aliases: [/th/clearobjects/]
+aliases: [  /th/clearobjects/ ]
 keywords: "Aspose.Cells, Excel, ล้างวัตถุ, REST API, Cloud SDK, ลบความคิดเห็น, ลบกราฟ"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อลบความคิดเห็น กราฟ รูปร่าง และวัตถุอื่นๆ จากสมุดงาน Excel รองรับ SDK หลายตัว และส่งคืนไฟล์ที่ล้างแล้วในรูปแบบ Base64"
 weight: 39

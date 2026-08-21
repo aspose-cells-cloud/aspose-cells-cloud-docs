@@ -3,7 +3,7 @@ title: "Экспорт таблицы — Aspose.Cells Cloud API | Преобр�
 second_title: "Документ"
 ArticleTitle: "Как экспортировать удалённую таблицу электронной таблицы в другой формат: пошаговое руководство"
 linktype: "docs"
-url: /export-table-as-format/
+url: /ru/export-table-as-format/
 keywords: "Aspose.Cells, экспорт таблицы, Excel в PDF, облачный API, REST"
 description: "Экспортируйте удалённую таблицу Excel в PDF, PNG, CSV, JSON или другие форматы с помощью Aspose.Cells Cloud API. Защищённый HTTPS-endpoint с аутентификацией по JWT и примерами SDK."
 weight: 100

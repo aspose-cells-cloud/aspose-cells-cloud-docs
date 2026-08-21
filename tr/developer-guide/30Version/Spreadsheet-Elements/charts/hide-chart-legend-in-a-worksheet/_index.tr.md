@@ -1,8 +1,8 @@
 ---
 title: "Excel Çalışma Sayfasında Grafik Efsanesini Gizle – Aspose.Cells Cloud API"
 type: docs
-url: /charts/legend/hide/
-aliases: [/hide-chart-legend-in-a-worksheet/]
+url: /tr/charts/legend/hide/
+aliases: [  /tr/hide-chart-legend-in-a-worksheet/ ]
 weight: 110
 keywords: "Aspose.Cells, Excel, grafik efsanesini gizle, REST API, Bulut SDK'sı, grafik efsanesi"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında grafik efsanesini nasıl gizleyeceğinizi öğrenin. HTTPS uç noktası, gerekli kimlik doğrulama, istek sözdizimi, yanıt ayrıntıları, hata işleme ve SDK örnekleri içerir."

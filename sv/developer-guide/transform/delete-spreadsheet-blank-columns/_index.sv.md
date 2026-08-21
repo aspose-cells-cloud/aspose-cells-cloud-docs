@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man tar bort tomma kolumner i Excel – Automatisera kolumnrensning"
 linktitle: "Ta bort tomma kolumner"
 type: docs
-url: /delete-spreadsheet-blank-columns/
+url: /sv/delete-spreadsheet-blank-columns/
 keywords: "ta bort tomma kolumner Excel API, Aspose.Cells Cloud, REST API, Excel-rensning, kalkylbladsautomatisering"
 description: "Lär dig hur du tar bort tomma kolumner från Excel-filer med Aspose.Cells Cloud REST API. Innehåller slutpunkt, autentisering, exempel på förfrågan/svar samt SDK-kod i C#, Java, Python med mera."
 weight: 100

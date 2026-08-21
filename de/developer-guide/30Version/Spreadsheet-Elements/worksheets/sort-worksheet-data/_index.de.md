@@ -3,8 +3,8 @@ title: "Daten in einem Bereich auf einem Excel-Arbeitsblatt sortieren"
 second_title: "Document"
 linktitle: "Sortieren"
 type: docs
-url: /worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
+url: /de/worksheets/sort-data/
+aliases: [  /de/sort-worksheet-data/ ]
 keywords: "Aspose.Cells Cloud, Excel-Sortier-API, Sortierung von Bereichsdaten auf Arbeitsblättern, REST-API, dataSorter"
 description: "Sortieren Sie einen bestimmten Bereich in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST-API. Enthält Endpunkt, erforderliche Parameter, Authentifizierungsschritte, Fehlerbehandlung und SDK-Beispiele."
 weight: 20

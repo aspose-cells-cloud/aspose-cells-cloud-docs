@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "Otomatik filtreyi yenile"
 type: docs
 url: /tr/autofilter/refresh/
-aliases: [/tr/refresh-an-autofilter/]
+aliases: [  /tr/refresh-an-autofilter/ ]
 weight: 100
 keywords: "Aspose.Cells, AutoFilter, yenile, Excel, API, REST"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki mevcut Otomatik Filtreyi yenileyin. C#, Java, Python ve daha fazlası için cURL ve SDK örnekleri içerir."

@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud ile bir Excel dosyasını nasıl onarırız?"
 linktitle: "Aspose.Cells Cloud ile bir Excel dosyasını nasıl onarırız?"
 type: docs
-url: /how-to-repair-excel-file
+url: /tr/how-to-repair-excel-file
 description: "Aspose.Cells Cloud ile Excel veya diğer elektronik tablo dosyasını nasıl onaracağınız."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Aspose.Cells Cloud ile Excel veya diğer elektronik tablo dosyasını nasıl onaracağınız

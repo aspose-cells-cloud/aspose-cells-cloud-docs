@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment traduire des fichiers texte à l’aide de l’API de traduction IA d’Aspose.Cells Cloud"
 linktitle: "Traduire un fichier texte"
 type: docs
-url: /translate-text-file/
+url: /fr/translate-text-file/
 keywords: "Aspose.Cells, API Cloud, traduction IA, traduire un fichier texte, conversion multilingue, REST PUT, code de langue cible, traduction par téléchargement de fichier, traduction de texte brut, feuille de calcul IA"
 description: "Découvrez comment utiliser le point de terminaison Aspose.Cells Cloud AI TranslateTextFile pour convertir des fichiers texte dans n’importe quelle langue prise en charge. Prend en charge à la fois le téléchargement de fichier en multipart et le payload de texte brut, préserve le formatage, et renvoie un fichier traduisible en téléchargement."
 weight: 100

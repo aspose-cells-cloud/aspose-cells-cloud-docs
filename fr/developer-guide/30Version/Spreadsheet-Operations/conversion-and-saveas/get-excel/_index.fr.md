@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Convertir un classeur Excel en PDF, CSV, HTML et 
 second_title: "Document"
 linktitle: "Convertir Excel"
 type: docs
-url: /get-different-formats-files/
+url: /fr/get-different-formats-files/
 aliases:
   - /export-excel-workbook-to-different-file-formats/
   - /export-different-formats/

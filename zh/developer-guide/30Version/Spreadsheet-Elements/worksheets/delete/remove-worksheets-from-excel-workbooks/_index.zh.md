@@ -3,8 +3,8 @@ title: "删除工作表"
 second_title: "文档"
 linktype: "一个工作表"
 type: docs
-url: /worksheets/delete-worksheet/
-aliases: [/remove-worksheets-from-excel-workbooks/]
+url: /zh/worksheets/delete-worksheet/
+aliases: [  /zh/remove-worksheets-from-excel-workbooks/ ]
 keywords: "Aspose.Cells Cloud、删除工作表、Excel、电子表格、REST API"
 description: "使用 Aspose.Cells Cloud REST API 删除 Excel 工作簿中的工作表。支持 C#、Java、PHP、Ruby、Node.js、Python、Perl、Go 和 cURL 的 SDK。"
 weight: 20

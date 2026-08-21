@@ -3,8 +3,8 @@ title: "Ottieni i dati delle celle in base a un intervallo denominato"
 second_title: "Documenti"
 linktype: "Valori"
 type: docs
-url: /ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
+url: /it/ranges/get/values/
+aliases: [  /it/get-cells-data-based-on-named-range/ ]
 keywords: "Aspose.Cells, Cloud, API REST, Excel, intervallo denominato, valori delle celle, foglio di lavoro"
 description: "Recupera i valori delle celle da un intervallo denominato in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud. Il servizio è disponibile tramite numerosi SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) e funziona su una vasta gamma di piattaforme di sviluppo."
 weight: 20

@@ -4,8 +4,8 @@ second_title: "مستند"
 ArticleTitle: "كيفية تشغيل حاوية Docker الخاصة بـ Aspose.Cells Cloud"
 LinkTitle: "حاوية Docker"
 type: docs
-url: /getting-started/how-to-run-docker-container/
-aliases: [/how-to-run-docker-container/]
+url: /ar/getting-started/how-to-run-docker-container/
+aliases: [  /ar/how-to-run-docker-container/ ]
 description: "تعرّف على كيفية سحب حاوية Docker الخاصة بـ Aspose.Cells Cloud وتهيئتها وتشغيلها على نظامي التشغيل Windows أو Linux. يتضمن ملف YAML لـ Docker‑Compose، وإعداد الترخيص، وترقية المنافذ (Port mapping)، ونصائح لاستكشاف الأخطاء وإصلاحها."
 weight: 100
 keywords:

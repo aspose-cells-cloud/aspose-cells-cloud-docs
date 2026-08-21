@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktitle: "เพิ่มฟิลด์พิวต์"
 type: docs
 url: /th/pivot-tables/add-pivot-field/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /th/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, pivot table, add pivot field, REST API, SDK"
 description: "เพิ่มฟิลด์พิวต์ลงในตารางพิวต์ที่มีอยู่โดยใช้ Aspose.Cells Cloud REST API ประกอบด้วยรายละเอียดคำขอ ตัวอย่าง cURL และโค้ดตัวอย่าง SDK"
 weight: 40

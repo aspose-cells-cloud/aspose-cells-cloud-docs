@@ -1,8 +1,8 @@
 ---
 title: "Удаление диаграммы из рабочего листа"
 type: docs
-url: /charts/delete/
-aliases: [/delete-a-chart-from-a-worksheet/]
+url: /ru/charts/delete/
+aliases: [  /ru/delete-a-chart-from-a-worksheet/ ]
 weight: 40
 keywords:
   - "Aspose.Cells"

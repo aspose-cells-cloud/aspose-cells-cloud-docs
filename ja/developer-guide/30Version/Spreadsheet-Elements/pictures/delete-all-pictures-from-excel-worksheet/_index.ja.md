@@ -3,8 +3,8 @@ title: "Excelワークシート内のすべての画像を削除する"
 second_title: "Document"
 linktitle: "クリア"
 type: docs
-url: /pictures/clear/
-aliases: [/delete-all-pictures-from-excel-worksheet/]
+url: /ja/pictures/clear/
+aliases: [  /ja/delete-all-pictures-from-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, すべての画像を削除, ワークシート, REST API, 画像をクリア"
 description: "Aspose.Cells Cloud REST APIを使用してExcelワークシートからすべての画像を削除する方法をcURLおよびSDKの例で学びます。"
 weight: 60

@@ -3,7 +3,7 @@ title: "Tabloyu CSV'ye Dönüştür"
 ArticleTitle: "Tabloyu CSV'ye Dönüştür – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktype: "doc"
-url: /cells/convert/table/csv
+url: /tr/cells/convert/table/csv
 aliases: []
 keywords: "Tabloyu CSV'ye Dönüştür, Aspose.Cells, Bulut API"
 description: "Yerel bir sürücüdeki elektronik tablo tablosunu CSV dosyasına dönüştürür."

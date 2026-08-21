@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud API를 사용하여 Excel 워크시트에 빈 
 second_title: "문서"
 linktype: "Row"
 type: docs
-url: /rows/add/row/
-aliases: [/add-an-empty-row-in-a-worksheet/]
+url: /ko/rows/add/row/
+aliases: [  /ko/add-an-empty-row-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, 빈 행 추가, 워크시트, REST API, 행 삽입, 클라우드 스프레드시트"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에 빈 행을 삽입합니다. 다양한 SDK(C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift)를 지원하여 빠른 개발을 지원합니다."
 weight: 20

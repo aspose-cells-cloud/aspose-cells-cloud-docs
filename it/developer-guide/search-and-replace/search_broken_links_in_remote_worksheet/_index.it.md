@@ -3,7 +3,7 @@ title: "SearchBrokenLinksInRemoteWorksheet"
 ArticleTitle: "Cerca link rotti nel foglio di calcolo remoto – Aspose.Cells Cloud API"
 second_title: "Documenti"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/search/broken-links
+url: /it/cells/{name}/worksheets/{worksheet}/search/broken-links
 aliases: []
 keywords: "Aspose.Cells, Cerca link rotti, Foglio di calcolo remoto"
 description: "Cerca link rotti nel foglio di calcolo di un file spreadsheet memorizzato nel cloud remoto."

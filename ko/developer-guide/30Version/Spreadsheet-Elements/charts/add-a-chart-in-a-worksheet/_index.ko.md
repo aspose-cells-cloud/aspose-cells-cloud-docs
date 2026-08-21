@@ -1,8 +1,8 @@
 ---
 title: "워크시트에 차트 추가"
 type: docs
-url: /charts/add/
-aliases: [/add-a-chart-in-a-worksheet/]
+url: /ko/charts/add/
+aliases: [  /ko/add-a-chart-in-a-worksheet/ ]
 weight: 20
 description: "Aspose.Cells Cloud API v3.0을 사용하여 Excel 워크시트에 차트를 추가하는 방법을 학습합니다. 엔드포인트, 매개변수, cURL 예제, SDK 스니펫이 포함됩니다."
 keywords:

@@ -3,8 +3,8 @@ title: "对 Excel 工作表中的范围数据进行排序"
 second_title: "文档"
 linktitle: "排序"
 type: docs
-url: /worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
+url: /zh/worksheets/sort-data/
+aliases: [  /zh/sort-worksheet-data/ ]
 keywords: "Aspose.Cells Cloud, Excel 排序 API, 工作表范围排序, REST API, dataSorter"
 description: "使用 Aspose.Cells Cloud REST API 对 Excel 工作表中的特定范围进行排序。包含端点、必需参数、身份验证步骤、错误处理及 SDK 示例。"
 weight: 20

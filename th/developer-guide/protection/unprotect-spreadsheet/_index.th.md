@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "ยกเลิกการป้องกันรหัสผ่าน Excel – ปลดล็อกรหัสผ่านเปิดและแก้ไขได้ทันที"
 linktype: "unprotect-spreadsheet"
 type: docs
-url: /unprotect-spreadsheet/
+url: /th/unprotect-spreadsheet/
 keywords: "ยกเลิกการป้องกัน, สเปรดชีต, Aspose.Cells, API, Excel, การลบรหัสผ่าน"
 description: "ลบรหัสผ่านเปิดและรหัสผ่านการแก้ไขจากไฟล์ Excel โดยการเขียนโปรแกรมด้วย API การยกเลิกการป้องกันสเปรดชีตของ Aspose.Cells Cloud รองรับไฟล์ .xlsx/.xls, การตรวจสอบสิทธิ์แบบ OAuth2 และการประมวลผลแบบเป็นกลุ่ม"
 weight: 100

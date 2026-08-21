@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API – Excel ファイルのオープンパス�
 second_title: "包括的な開発者ガイド"
 ArticleTitle: "スプレッドシート保護 – オープンパスワードと編集パスワードの設定"
 linktype: "docs"
-url: "/protection/"
+url: /ja/protection/
 keywords: "Aspose.Cells, Cloud, API, スプレッドシート, 保護, オープンパスワード, 編集パスワード, Excel"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークブックにオープンパスワードまたは編集パスワードで保護する方法を学びます。リクエスト構文、コードサンプル、エラー処理を含みます。"
 weight: 60

@@ -3,8 +3,8 @@ title: "Mehrere Spalten in einem Excel-Arbeitsblatt automatisch anpassen"
 second_title: "Dokument"
 linktitle: "Spalten"
 type: docs
-url: /worksheets/autofit/columns/
-aliases: [/autofit-multiple-columns-of-worksheet/]
+url: /de/worksheets/autofit/columns/
+aliases: [  /de/autofit-multiple-columns-of-worksheet/ ]
 keywords: "Aspose.Cells, Spalten automatisch anpassen, Excel-API, Cloud-Tabellenkalkulation, REST"
 description: "Erfahren Sie, wie Sie mehrere Spalten in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API (v3.0) automatisch anpassen. Enthält Endpunkt, Parameter, cURL-Beispiel, Fehlerbehandlung und SDK-Code-Snippets für C#, Java, Python und weitere."
 weight: 20

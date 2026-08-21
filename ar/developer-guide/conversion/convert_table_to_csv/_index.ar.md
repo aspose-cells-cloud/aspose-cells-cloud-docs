@@ -4,7 +4,7 @@ ArticleTitle: "تحويل الجدول إلى CSV – واجهة برمجة تط
 second_title: "وثيقة"
 linktitle: "تحويل الجدول إلى CSV"
 type: docs
-url: /cells/convert/table/csv
+url: /ar/cells/convert/table/csv
 aliases: []
 keywords: "تحويل الجدول إلى CSV، Aspose.Cells، واجهة برمجة تطبيقات السحابة"
 description: "يحوّل جدولًا من ملف جدول بيانات موجود على القرص المحلي إلى ملف CSV."

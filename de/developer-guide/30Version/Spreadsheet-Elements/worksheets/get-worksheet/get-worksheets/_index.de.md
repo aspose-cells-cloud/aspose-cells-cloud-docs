@@ -3,8 +3,8 @@ title: "Alle Arbeitsblätter abrufen"
 second_title: "Dokument"
 linktitle: "Alle"
 type: docs
-url: /worksheets/get-all/
-aliases: [/get-worksheet-count/]
+url: /de/worksheets/get-all/
+aliases: [  /de/get-worksheet-count/ ]
 keywords: "Aspose.Cells, Cloud API, Arbeitsblätter abrufen, Excel, REST, SDK"
 description: "Rufen Sie die Liste der Arbeitsblätter in einer Excel-Arbeitsmappe über die Aspose.Cells Cloud REST API (v3.0) ab. Enthält cURL-Beispiel, SDK-Snippets und Antwortformat."
 weight: 10

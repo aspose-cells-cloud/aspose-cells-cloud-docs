@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Come aggiungere fogli di lavoro a Excel – Inserire nuovi fogli in posizioni specifiche"
 linktitle: "Aggiungi foglio di lavoro al foglio di calcolo"
 type: docs
-url: /add-worksheet-to-spreadsheet/
+url: /it/add-worksheet-to-spreadsheet/
 keywords: "excel, aggiungi foglio di lavoro, aspose cells api, foglio di calcolo, cloud api, tipo di foglio, posizione del foglio"
 description: "Scopri come aggiungere programmaticamente un nuovo foglio di lavoro, un foglio grafico o un foglio macro a un libro Excel utilizzando l'API Aspose.Cells Cloud. Controlla il tipo di foglio, il nome e la posizione di inserimento con una singola chiamata REST."
 weight: 100

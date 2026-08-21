@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Opérations avancées sur les classeurs Excel : gestion des feuilles et compression – Aspose.Cells Cloud"
 linktitle: "Gestion"
 type: docs
-url: /management/
+url: /fr/management/
 keywords: "Aspose.Cells, Cloud, API Excel, gestion des feuilles de calcul, compression de feuilles de calcul, création de classeurs"
 description: "Utilisez l'API Aspose.Cells Cloud pour ajouter, supprimer, déplacer, renommer des feuilles de calcul, compresser des feuilles de calcul et créer des classeurs à partir de modèles — aucune installation locale d'Excel n'est requise."
 weight: 50

@@ -3,8 +3,8 @@ title: "ส่งออกพื้นที่ของแผ่นงานเ
 secondtitle: "เอกสาร"
 linktitle: "พื้นที่"
 type: docs
-url: /worksheets/area-to-different-formats/
-aliases: [/get-worksheet-for-area/]
+url: /th/worksheets/area-to-different-formats/
+aliases: [  /th/get-worksheet-for-area/ ]
 keywords: "Aspose.Cells, ส่งออกพื้นที่แผ่นงาน, PNG, PDF, CSV, การแปลง Excel, REST API, SDK"
 description: "เรียนรู้วิธีส่งออกช่วงของเซลล์ที่ระบุจากแผ่นงาน Excel ไปยังรูปแบบ PNG, PDF, CSV และอื่นๆ อีกกว่า 20 รูปแบบ ผ่าน API แบบ REST หรือ SDK ของ Aspose.Cells Cloud (C#, Java, Python, …)"
 weight: 230

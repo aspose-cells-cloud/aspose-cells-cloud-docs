@@ -3,8 +3,8 @@ title: "목록 개체 내보내기"
 second_title: "문서"
 linktitle: "목록 개체"
 type: docs
-url: /export-excel-listobject-to-different-formats/
-aliases: [/export/excel-listobject-to-different-formats/]
+url: /ko/export-excel-listobject-to-different-formats/
+aliases: [  /ko/export/excel-listobject-to-different-formats/ ]
 keywords: "목록 개체 내보내기, Excel 목록 개체, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, XLSX, ODS, PNG, TIFF, SDKs"
 description: "Aspose.Cells Cloud REST API는 Excel 목록 개체를 다양한 파일 형식으로 내보낼 수 있도록 지원합니다. C#, Java, Python, Node.js, Go, PHP, Ruby, Perl, Swift 등 여러 프로그래밍 언어에서 사용 가능한 SDK가 제공됩니다."
 weight: 20

@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud SDK for Node.js: 변환, 병합, 분할, 보호, 검색, 바꾸기 등"
 linktype: "Aspose.Cells Cloud SDK for Node.js"
 type: docs
-url: /available-sdks/aspose-cells-cloud-node/
+url: /ko/available-sdks/aspose-cells-cloud-node/
 description: "Aspose.Cells Cloud SDK for Node.js는 진정한 크로스플랫폼 기능을 제공합니다. 단일 import로 윈도우, 리눅스, macOS 개발자들이 동일한 일관된 API를 통해 모든 엑셀 객체를 생성, 변환, 병합, 분할, 보호 및 조작할 수 있으며, Office 설치가 필요 없고 플랫폼별 맞춤 설정도 불필요합니다."
 weight: 30
 kwords: Node.js, Node.js SDK, Node.js용 엑셀 SDK, Node.js용 클라우드 SDK, REST, 차트, 피벗 테이블, 테이블/목록 개체, 스프레드시트 변환, PDF, CSV, Json, Markdown, 병합, 분할, 보호, 검색, 바꾸기

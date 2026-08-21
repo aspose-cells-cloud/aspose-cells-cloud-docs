@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيفية تحويل بيانات نطاق جدول محلي إلى ملف PDF: دليل خطوة بخطوة"
 linktype: "تحويل النطاق إلى PDF"
 type: docs
-url: /convert-range-to-pdf/
+url: /ar/convert-range-to-pdf/
 keywords: "Aspose.Cells Cloud, تحويل نطاق إكسل إلى PDF, تحويل إكسل إلى PDF, التحويل السحابي"
 description: "تحويل نطاق معيّن من جدول إكسل محلي إلى PDF باستخدام واجهة Aspose.Cells Cloud REST API."
 weight: 100

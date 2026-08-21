@@ -3,8 +3,8 @@ title: "Exportera arbetsbok"
 second_title: "Dokument"
 linktitle: "Arbetsbok"
 type: docs
-url: /export-excel-to-different-formats/
-aliases: [/export/excel-to-different-formats/]
+url: /sv/export-excel-to-different-formats/
+aliases: [  /sv/export/excel-to-different-formats/ ]
 keywords: "Aspose.Cells Cloud, Excel-export, konvertering av arbetsbok, PDF, CSV, JSON, bildformat, Spreadsheet API, XLSX, ODS, PNG"
 description: "Ett steg-för-steg-guide för hur man exporterar Excel-arbetsböcker till flera format — inklusive PDF, CSV, JSON och diverse bildtyper — med Aspose.Cells Cloud REST API och SDK:er."
 weight: 20

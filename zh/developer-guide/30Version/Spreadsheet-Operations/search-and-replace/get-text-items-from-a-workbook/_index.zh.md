@@ -4,8 +4,8 @@ ArticleTitle: "使用 Aspose.Cells Cloud API 从 Excel 工作簿中获取文本�
 second_title: "文档"
 linktype: "从工作簿中获取"
 type: docs
-url: /workbook/get-text-items/
-aliases: [/get-text-items-from-a-workbook/]
+url: /zh/workbook/get-text-items/
+aliases: [  /zh/get-text-items-from-a-workbook/ ]
 weight: 10
 keywords: "Excel, Aspose.Cells Cloud, REST API, 电子表格, 获取文本项, 工作簿"
 description: "使用 Aspose.Cells Cloud REST API 从 Excel 工作簿中检索文本项。支持通过 C#、Java、Python、PHP、Ruby、Go、Node.js、Perl 和 Swift 的 SDK 调用。"

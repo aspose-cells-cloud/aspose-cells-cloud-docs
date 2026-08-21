@@ -4,7 +4,7 @@ ArticleTitle: "Eliminar subcadenas duplicadas en una hoja de cálculo remota –
 second_title: "Documento"
 linktitle: "Eliminar subcadenas duplicadas en una hoja de cálculo remota"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
+url: /es/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
 aliases: []
 keywords: "Aspose.Cells, Eliminar subcadenas duplicadas, API"
 description: "API para encontrar y eliminar subcadenas repetidas dentro de celdas de un rango especificado en un libro de cálculo."

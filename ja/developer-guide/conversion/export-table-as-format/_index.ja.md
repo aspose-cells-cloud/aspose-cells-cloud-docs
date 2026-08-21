@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "リモートスプレッドシートの表を他の形式にエクスポートする方法：ステップ・バイ・ステップガイド"
 linktype: "表のエクスポート – 指定した形式"
 type: docs
-url: /export-table-as-format/
+url: /ja/export-table-as-format/
 keywords: "Aspose.Cells, 表のエクスポート, Excel から PDF への変換, クラウド API, REST"
 description: "Aspose.Cells Cloud API を使用して、クラウドに保存された Excel 表を PDF、PNG、CSV、JSON などの他の形式にエクスポートします。JWT 認証を備えた安全な HTTPS エンドポイントと SDK のコード例を提供します。"
 weight: 100

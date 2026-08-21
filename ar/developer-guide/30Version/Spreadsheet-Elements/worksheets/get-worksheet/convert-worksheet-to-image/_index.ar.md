@@ -3,7 +3,7 @@ title: "تحويل ورقة عمل إلى PDF و PNG و CSV وأكثر – وا�
 second_title: "وثيقة"
 linktitle: "تحويل ورقة العمل"
 type: docs
-url: /worksheets/conversion/
+url: /ar/worksheets/conversion/
 aliases:
   - /convert-worksheet-to-image/
   - /worksheets/to-image/

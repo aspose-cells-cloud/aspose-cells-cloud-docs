@@ -3,8 +3,8 @@ title: "Arbeiten mit Excel-AutoFilter"
 second_title: "Dokument"
 linktitle: "AutoFilter"
 type: docs
-url: /autofilter/
-aliases: [/working-with-autofilter/]
+url: /de/autofilter/
+aliases: [  /de/working-with-autofilter/ ]
 keywords: "AutoFilter, Aspose.Cells Cloud, Excel-Filter, Farbfilter, Datumsfilter, dynamischer Filter, Zahlenfilter, Textfilter, Leerzeichenfilter, benutzerdefinierter Filter"
 description: "Erfahren Sie, wie Sie Excel-AutoFilter (Farbe, Datum, dynamisch, Zahl, Text, Leerzeichen) mithilfe der Aspose.Cells Cloud APIs hinzufügen, bearbeiten und löschen. Codebeispiele in mehreren Sprachen."
 weight: 100

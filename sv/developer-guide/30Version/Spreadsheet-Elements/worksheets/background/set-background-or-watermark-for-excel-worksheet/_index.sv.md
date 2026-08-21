@@ -4,8 +4,8 @@ ArticleTitle: "Ställ in bakgrund på ett Excel-ark – Aspose.Cells Cloud API-g
 second_title: "Dokument"
 linktitle: "Lägg till"
 type: docs
-url: /worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
+url: /sv/worksheets/background/add/
+aliases: [  /sv/set-background-or-watermark-for-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, ark, bakgrund, REST API, SDK, lägg till bild"
 description: "Lär dig hur du lägger till en bakgrundsbild (PNG, JPEG, BMP) till ett Excel-ark med Aspose.Cells Cloud REST API. Inkluderar slutpunkt, nödvändiga parametrar, autentiseringssteg, cURL-exempel och SDK-kodexempel."
 weight: 180

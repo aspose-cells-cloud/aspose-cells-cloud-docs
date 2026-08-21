@@ -3,8 +3,8 @@ title: "가로 페이지 나누기 추가"
 second_title: "문서"
 linktitle: "가로 페이지 나누기 추가"
 type: docs
-url: /page-breaks/add-horizontal-page-break/
-aliases: [/insert-horizontal-page-break-inside-worksheet/]
+url: /ko/page-breaks/add-horizontal-page-break/
+aliases: [  /ko/insert-horizontal-page-break-inside-worksheet/ ]
 keywords: "가로 페이지 나누기, Aspose.Cells Cloud, Excel API, REST, SDK, 워크시트, cURL"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에 가로 페이지 나누기를 추가하는 방법을 배워보세요. 요청 세부 정보, cURL 예제, 여러 프로그래밍 언어의 SDK 코드 스니펫이 포함되어 있습니다."
 weight: 30

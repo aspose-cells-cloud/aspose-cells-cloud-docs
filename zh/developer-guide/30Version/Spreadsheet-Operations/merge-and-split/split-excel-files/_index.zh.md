@@ -4,8 +4,8 @@ ArticleTitle: "如何使用 Aspose.Cells Cloud API 将 Excel 工作簿拆分为�
 second_title: "文档"
 linktitle: "拆分 Excel 文件"
 type: docs
-url: /split-multi-excel-files/
-aliases: [/split/multi-files/]
+url: /zh/split-multi-excel-files/
+aliases: [  /zh/split/multi-files/ ]
 keywords: "Excel, Aspose.Cells Cloud, REST API, 拆分工作簿, 多个文件, JPEG, PNG, PDF, CSV, JSON"
 description: "Aspose.Cells Cloud REST API 支持将 Excel 工作簿拆分为多种格式的多个文件。本文档提供了请求参数说明、cURL 示例以及适用于 C#、Java、PHP、Ruby、Node.js、Python、Perl 和 Go 等语言的 SDK 代码示例。"
 weight: 130

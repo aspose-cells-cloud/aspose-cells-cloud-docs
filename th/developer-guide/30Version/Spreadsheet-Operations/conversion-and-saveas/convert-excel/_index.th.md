@@ -4,7 +4,7 @@ ArticleTitle: "การแปลงไฟล์ Excel ไปยังรูป�
 second_title: "เอกสาร"
 linktype: "แปลง Excel"
 type: docs
-url: /convert-an-excel-file-to-different-formats/
+url: /th/convert-an-excel-file-to-different-formats/
 aliases:
   [
     "/convert-excel-workbook-to-different-file-formats/",

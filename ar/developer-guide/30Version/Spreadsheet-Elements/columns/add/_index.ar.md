@@ -3,7 +3,7 @@ title: "إضافة عمود فارغ إلى ورقة عمل إكسل - واجه�
 second_title: "مستند"
 linktitle: "إضافة"
 type: docs
-url: /columns/add/
+url: /ar/columns/add/
 aliases:
   - /add-an-empty-column-in-an-excel-worksheet/
   - /add-an-empty-column-in-a-worksheet/

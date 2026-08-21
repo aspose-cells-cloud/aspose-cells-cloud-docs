@@ -3,7 +3,7 @@ title: "İkili Boyutlu Çift Diziyi Excel Çalışma Sayfasına İçe Aktar"
 second_title: "Belge"
 linktype: "İçerik"
 type: docs
-url: /import-a-2d-double-array-into-excel-worksheet/
+url: /tr/import-a-2d-double-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-double-array-into-excel-worksheet/,

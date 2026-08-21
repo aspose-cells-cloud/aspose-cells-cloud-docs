@@ -3,7 +3,7 @@ title: "Excel から Docx へ変換"
 second_title: "ドキュメント"
 linktitle: "Excel から Docx へ変換"
 type: docs
-url: convert-excel-file-to-docx-file/
+url: /jaconvert-excel-file-to-docx-file/
 keywords: "Excel から Docx への変換、Aspose.Cells Cloud、REST API、スプレッドシート変換、ドキュメント生成"
 description: "Aspose.Cells Cloud REST API を使用して Excel スプレッドシートを DOCX ドキュメントに変換します。複数の SDK とプログラミング言語をサポートし、シームレスな統合を実現します。"
 weight: 90

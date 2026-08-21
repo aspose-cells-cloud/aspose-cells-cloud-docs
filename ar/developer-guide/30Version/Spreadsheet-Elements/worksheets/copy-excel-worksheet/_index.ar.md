@@ -3,8 +3,8 @@ title: "نسخ المحتويات والتنسيقات من ورقة عمل أخ
 second_title: "Document"
 linktitle: "نسخ"
 type: docs
-url: /worksheets/copy/
-aliases: [/copy-excel-worksheet/]
+url: /ar/worksheets/copy/
+aliases: [  /ar/copy-excel-worksheet/ ]
 keywords: "واجهة برمجة تطبيقات Aspose Cells لنسخ ورقة العمل، REST API لنسخ ورقة Excel، SDK Aspose Cloud لنسخ، نسخ ورقة العمل في جداول البيانات"
 description: "تعرّف على كيفية نسخ ورقة عمل وتنسيقاتها إلى ورقة جديدة باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن نقطة النهاية، المُعاملات، أمثلة cURL وSDKs لـ C#، Java، Python، والمزيد."
 weight: 20

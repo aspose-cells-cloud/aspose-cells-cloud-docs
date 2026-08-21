@@ -1,7 +1,7 @@
 ---
 title: "Cómo fusionar celdas en una hoja de cálculo de Excel – API de Aspose.Cells Cloud (v3.0)"
 type: docs
-url: /merge-cells-in-excel-worksheet/
+url: /es/merge-cells-in-excel-worksheet/
 weight: 110
 keywords: "fusionar celdas, Aspose.Cells, API en la nube, Excel"
 description: "Guía para fusionar celdas en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud con ejemplos en cURL y SDK."

@@ -3,8 +3,8 @@ title: "Gruppera rader i ett Excel-arbetsblad"
 second_title: "Dokument"
 linktitle: "Gruppera"
 type: docs
-url: /rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
+url: /sv/rows/group/
+aliases: [  /sv/group-rows-in-excel-worksheet/ ]
 keywords: "gruppera rader, Excel, Aspose.Cells Cloud, REST API, SDK, arbetsblad, Excel API"
 description: "Gruppera rader i ett Excel-arbetsblad med Aspose.Cells Cloud REST API. Stöder flera SDK:er (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) för enkel integration."
 weight: 60

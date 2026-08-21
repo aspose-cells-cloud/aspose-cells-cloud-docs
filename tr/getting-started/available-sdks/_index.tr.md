@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Mevcut Aspose.Cells Cloud SDK'leri: C#, Java, PHP, Python, Ruby, Node.js, Go, Perl"
 LinkTitle: "Mevcut SDK'ler"
 type: docs
-url: /available-sdks/
+url: /tr/available-sdks/
 description: "C#, Java, PHP, Python, Ruby, Node.js, Go ve Perl için Aspose.Cells Cloud SDK'lerini keşfedin. Düşük maliyetli, çapraz platform API'lerle Excel dosyalarını bulutta oluşturun, dönüştürün ve analiz edin."
 weight: 30
 keywords: "Aspose.Cells Cloud SDK'leri, C#, Java, PHP, Python, Ruby, Node.js, Go, Perl, Excel, Bulut API"

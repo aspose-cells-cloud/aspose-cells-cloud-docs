@@ -1,7 +1,7 @@
 ---
 title: "차트 범주 축 가져오기"
 type: docs
-url: /charts/category-axis/get/
+url: /ko/charts/category-axis/get/
 weight: 60
 keywords: "Aspose.Cells, 차트 범주 축, Excel, REST API, 클라우드 스토리지, OAuth2, API 문서"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 차트 범주 축을 가져옵니다."

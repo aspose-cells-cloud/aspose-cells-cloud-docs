@@ -3,8 +3,8 @@ title: "그림 내보내기"
 second_title: "문서"
 linktitle: "그림"
 type: docs
-url: /export-excel-picture-to-different-formats/
-aliases: [/export/excel-picture-to-different-formats/]
+url: /ko/export-excel-picture-to-different-formats/
+aliases: [  /ko/export/excel-picture-to-different-formats/ ]
 keywords: "그림 내보내기, Aspose.Cells Cloud, REST API, Excel, 이미지 형식, PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 그림을 다양한 이미지 형식으로 내보냅니다. 이 서비스는 C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift 등 여러 언어의 SDK를 지원합니다."
 weight: 20

@@ -3,8 +3,8 @@ title: "Lås Excel-filer"
 second_title: "Dokument"
 linktitle: "Lås Excel-filer"
 type: docs
-url: /lock-excel-files/
-aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+url: /sv/lock-excel-files/
+aliases: [  /sv/lock/without-storage/ , /sv/lock/ , /sv/lock/without-using-storage/ ]
 keywords: "Lås, Excel, API, Aspose.Cells, Moln, REST, Arbetsbok, Kalkylark, SDK"
 description: "Lär dig hur du låser Excel-arbetsböcker med Aspose.Cells Cloud REST API (v3.0). Inkluderar HTTPS-slutpunkt, autentisering, cURL-förfrågan, svarschema och SDK-kodexempel för C#, Java, Python och mer."
 ArticleTitle: "Lås Excel-filer – Aspose.Cells Cloud API-dokumentation"

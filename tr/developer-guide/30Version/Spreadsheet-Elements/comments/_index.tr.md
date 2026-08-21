@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "Yorumlar"
 type: docs
 url: /tr/comments/
-aliases: [/working-with-comments/]
+aliases: [  /tr/working-with-comments/ ]
 keywords: "Aspose.Cells Cloud, Excel yorumları API'si, elektronik tablo yorumları, REST API"
 description: "Aspose.Cells Cloud REST API v3.0 ile Excel yorumlarını nasıl ekleyeceğinizi, alacağınızı, güncelleyeceğinizi ve sileceğinizi kod örnekleri, ön koşullar ve hata işleme ile öğrenin."
 weight: 100

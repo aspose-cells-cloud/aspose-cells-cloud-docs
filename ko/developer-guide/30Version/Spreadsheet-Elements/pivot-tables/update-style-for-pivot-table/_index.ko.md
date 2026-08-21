@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "모두 서식 지정"
 type: docs
 url: /ko/pivot-tables/format-all/
-aliases: [/ko/update-style-for-pivot-table/]
+aliases: [  /ko/update-style-for-pivot-table/ ]
 keywords: "피벗 테이블, 스타일 업데이트, Aspose.Cells Cloud, REST API, Excel, 스프레드시트, API, 피벗 테이블 스타일, 모두 서식 지정"
 description: "Aspose.Cells Cloud REST API를 사용하여 전체 피벗 테이블의 스타일을 업데이트하는 방법을 알아보세요. 요청 세부 정보, cURL 예제, 여러 프로그래밍 언어에 대한 SDK 스니펫을 포함합니다."
 weight: 100

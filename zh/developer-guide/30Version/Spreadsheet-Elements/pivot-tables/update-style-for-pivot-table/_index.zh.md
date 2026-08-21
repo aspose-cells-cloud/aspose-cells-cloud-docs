@@ -3,8 +3,8 @@ title: "更新数据透视表样式"
 second_title: "文档"
 linktitle: "全部格式化"
 type: docs
-url: /pivot-tables/format-all/
-aliases: [/update-style-for-pivot-table/]
+url: /zh/pivot-tables/format-all/
+aliases: [  /zh/update-style-for-pivot-table/ ]
 keywords: "数据透视表, 更新样式, Aspose.Cells Cloud, REST API, Excel, 电子表格, API, 数据透视表样式, 全部格式化"
 description: "了解如何使用 Aspose.Cells Cloud REST API 更新整个数据透视表的样式。包含请求详情、cURL 示例以及多种编程语言的 SDK 代码片段。"
 weight: 100

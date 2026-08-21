@@ -3,8 +3,8 @@ title: "Получение горизонтальных разрывов стр�
 second_title: "Документ"
 linktitle: "Получение горизонтальных разрывов страницы"
 type: docs
-url: /page-breaks/get-horizontal-page-breaks/
-aliases: [/get-horizontal-page-breaks-inside-worksheet/]
+url: /ru/page-breaks/get-horizontal-page-breaks/
+aliases: [  /ru/get-horizontal-page-breaks-inside-worksheet/ ]
 keywords: "горизонтальные разрывы страницы, Aspose.Cells Cloud, REST API, рабочая книга Excel, SDK"
 description: "Получение горизонтальных разрывов страницы из рабочей книги Excel с помощью API Aspose.Cells Cloud. Включает endpoint, параметры, пример cURL, формат ответа и фрагменты кода SDK для C#, Java, Python и других языков."
 ArticleTitle: "Получение горизонтальных разрывов страницы — Документация API Aspose.Cells Cloud"

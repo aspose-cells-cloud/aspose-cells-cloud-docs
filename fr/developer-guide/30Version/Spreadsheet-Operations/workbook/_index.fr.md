@@ -3,8 +3,8 @@ title: "Travail avec des fichiers Excel : calcul de formules, ajustement automat
 second_title: "Document"
 linktitle: "Opérations courantes sur Excel"
 type: docs
-url: /workbook/
-aliases: [/working-with-workbook/]
+url: /fr/workbook/
+aliases: [  /fr/working-with-workbook/ ]
 keywords: "Aspose.Cells, API Excel, opérations sur classeur, calculer les formules, ajustement automatique"
 description: "Découvrez comment travailler avec des classeurs Excel à l’aide de l’API REST Aspose.Cells Cloud. Des guides pas à pas couvrent le calcul de formules, l’ajustement automatique des lignes et colonnes, le nettoyage d’objets et la récupération des métadonnées du classeur. SDK disponibles pour Python, .NET, Java, et plus encore."
 weight: 20

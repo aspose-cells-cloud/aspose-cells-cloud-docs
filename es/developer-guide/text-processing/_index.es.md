@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Procesamiento de texto en hojas de cálculo: Recortar, Dividir, Convertir, Extraer y Eliminar texto"
 linktitle: "Procesamiento de texto"
 type: docs
-url: /text-processing/
+url: /es/text-processing/
 description: "Aprenda a recortar, dividir, convertir, extraer y eliminar texto en archivos Excel mediante las API REST de Aspose.Cells Cloud. Incluye ejemplos concisos y fragmentos de código de los SDK."
 keywords: "Aspose.Cells, API en la nube, Procesamiento de texto, Recortar texto, Dividir texto, Convertir texto, Extraer texto, Eliminar texto, API de Excel"
 weight: 30

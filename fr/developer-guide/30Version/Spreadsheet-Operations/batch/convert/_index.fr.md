@@ -2,7 +2,7 @@
 title: "Conversion en lot de fichiers Excel"
 second_title: "Document"
 type: docs
-url: /batch/convert
+url: /fr/batch/convert
 keywords: "conversion en lot, Excel, Aspose.Cells Cloud, API REST, PDF, CSV, JSON, Markdown, feuille de calcul"
 description: "Découvrez comment utiliser l'API Aspose.Cells Cloud pour convertir en lot plusieurs fichiers Excel dans des formats tels que PDF, CSV, JSON ou Markdown. Ce guide inclut les détails des points de terminaison REST, les paramètres de requête, un exemple cURL et des extraits de code SDK pour divers langages."
 weight: 100

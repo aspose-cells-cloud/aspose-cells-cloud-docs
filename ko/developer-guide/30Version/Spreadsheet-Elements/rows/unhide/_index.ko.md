@@ -3,8 +3,8 @@ title: "Excel 워크시트에서 행 숨김 해제하기"
 second_title: "문서"
 linktitle: "숨김 해제"
 type: docs
-url: /rows/unhide/
-aliases: [/unhide-rows-in-excel-worksheet/]
+url: /ko/rows/unhide/
+aliases: [  /ko/unhide-rows-in-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, 행 숨김 해제, REST API, 스프레드시트, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 행의 숨김을 해제합니다. 이 API는 .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift 등 다양한 SDK를 통해 제공됩니다."
 weight: 50

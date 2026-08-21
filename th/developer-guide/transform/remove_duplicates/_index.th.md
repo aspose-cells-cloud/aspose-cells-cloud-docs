@@ -4,7 +4,7 @@ ArticleTitle: "การลบค่าซ้ำกัน – Aspose.Cells Cloud
 second_title: "เอกสาร"
 linktitle: "การลบค่าซ้ำกัน"
 type: docs
-url: /cells/remove/duplicates
+url: /th/cells/remove/duplicates
 aliases: []
 keywords: "Aspose.Cells, ลบค่าซ้ำกัน, API"
 description: "ลบค่าที่ซ้ำกันในแผ่นงาน ช่วงข้อมูล หรือตาราง"

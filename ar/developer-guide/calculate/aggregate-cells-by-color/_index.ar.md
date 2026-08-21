@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "جمع وحساب القيم (المجموع، العدد، المتوسط، القيمة الصغرى، القيمة العظمى) حسب اللون في جدول بيانات/إكسل"
 LinkTitle: "جمع الخلايا حسب اللون"
 type: docs
-url: /aggregate-cells-by-color/
+url: /ar/aggregate-cells-by-color/
 keywords: "Aspose, Cells, Excel, API, aggregate, color, sum, count, average, min, max"
 description: "اجمع خلايا إكسل حسب لون الخلفية أو لون الخط (المجموع، العدد، المتوسط، القيمة الصغرى، القيمة العظمى) باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. تعلّم نقطة النهاية، والمتغيرات، والمصادقة، وأمثلة SDK."
 weight: 100

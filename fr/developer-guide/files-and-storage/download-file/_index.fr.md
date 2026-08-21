@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "API Aspose.Cells Cloud de téléchargement de fichier – Interface pour un téléchargement rapide de fichiers dans le cloud"
 linktype: "Téléchargement de fichier API"
 type: docs
-url: /download-file/
+url: /fr/download-file/
 keywords: "Aspose.Cells, API de téléchargement de fichier, stockage cloud Excel, API REST, téléchargement de fichier, PDF, CSV, SDK"
 description: "Téléchargez des fichiers Excel, PDF, CSV et autres à partir du stockage cloud Aspose.Cells à l’aide de l’API de téléchargement de fichier (v4.0). Inclut le point de terminaison, les paramètres, les détails d’authentification et des exemples de code."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "واجهة برمجة تطبيقات Aspose.Cells السحابية – تحويل ودمج وتقسيم وحماية ملفات Excel"
 linktitle: "مركز المطورين"
 type: docs
-url: /
+url: /ar/
 description: "تفتح واجهة برمجة تطبيقات Aspose.Cells Cloud REST إمكانات تحويل ودمج وتقسيم وحماية ملفات جداول البيانات Excel ومعالجتها بشكل شامل. تشمل الخطة المجانية 150 استدعاءً شهريًا، مع توفر حزم SDK لـ 8 لغات برمجية."
 weight: 10
 keywords: "Aspose.Cells Cloud، Excel API، تحويل جدول البيانات، دمج ملفات Excel، تقسيم ملفات Excel، حماية ملفات Excel، حزمة SDK لجداول البيانات السحابية، واجهة REST API، معالجة Excel"

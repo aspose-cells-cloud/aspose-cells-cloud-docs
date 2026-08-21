@@ -3,8 +3,8 @@ title: "Lavorare con gli oggetti OLE di Excel"
 second_title: "Documento"
 linktitle: "OleObjects"
 type: docs
-url: /oleobjects/
-aliases: [/working-with-oleobjects/]
+url: /it/oleobjects/
+aliases: [  /it/working-with-oleobjects/ ]
 keywords: "OLE, Excel, Aspose.Cells, API, Cloud"
 description: "Utilizza l'API REST Aspose.Cells Cloud per recuperare, aggiungere, aggiornare, eliminare e convertire gli oggetti OLE nei fogli di calcolo Excel. Sono disponibili SDK per Java, .NET, Python, PHP, Ruby, Go, Node.js, Perl, Swift e Android."
 weight: 100

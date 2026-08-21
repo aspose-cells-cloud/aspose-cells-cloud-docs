@@ -1,7 +1,7 @@
 ---
 title: "チャートの第2カテゴリ軸を更新する"
 type: docs
-url: /charts/second-category-axis/update/
+url: /ja/charts/second-category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, チャート, 第2カテゴリ軸, REST API, チャート更新, Excel, クラウドAPI"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシート内のチャートの第2カテゴリ軸を更新する方法を学びます。"

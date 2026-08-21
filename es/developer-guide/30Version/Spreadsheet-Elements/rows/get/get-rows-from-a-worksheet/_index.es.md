@@ -3,8 +3,8 @@ title: "Obtener información de filas de una hoja de cálculo de Excel"
 second_title: "Documentos"
 linktype: "filas"
 type: docs
-url: /rows/get/rows/
-aliases: [/get-row-from-a-worksheet/]
+url: /es/rows/get/rows/
+aliases: [  /es/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API para obtener filas, filas de hojas de cálculo de Excel, API REST, ejemplo en cURL, ejemplos de SDK, .NET, Java, Python"
 description: "Aprenda cómo recuperar la información de filas de una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud (v3.0). Incluye el punto de conexión, parámetros, autenticación, ejemplos en cURL y de SDK para C#, Java, Python y más."
 weight: 10

@@ -3,7 +3,7 @@ title: "Lägg till bakgrundsbild i arbetsbok"
 second_title: "Dokument"
 linktitle: "Lägg till"
 type: docs
-url: /add-background-in-excel-file/
+url: /sv/add-background-in-excel-file/
 aliases:
   - /add-background-in-workbook/
   - /workbook/add-background/

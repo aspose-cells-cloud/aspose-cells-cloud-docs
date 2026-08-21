@@ -3,7 +3,7 @@ title: "Ajouter une validation de feuille de calcul à une feuille de calcul Exc
 second_title: "Document"
 linktitle: "Ajouter"
 type: docs
-url: /validations/add/
+url: /fr/validations/add/
 keywords: "Ajouter une validation de feuille de calcul, Excel, Aspose.Cells Cloud, API REST, classeur, règle de validation"
 description: "Utilisez l’API REST Aspose.Cells Cloud pour ajouter une validation de feuille de calcul à un fichier Excel. Des SDK sont disponibles pour C#, Java, PHP, Ruby, Node.js, Python, Perl, Go et Swift."
 weight: 10

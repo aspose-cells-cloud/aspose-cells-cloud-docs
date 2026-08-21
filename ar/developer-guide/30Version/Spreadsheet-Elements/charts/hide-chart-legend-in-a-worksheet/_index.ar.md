@@ -1,8 +1,8 @@
 ---
 title: "إخفاء أسطورة المخطط في ورقة عمل Excel – واجهة برمجة تطبيقات Aspose.Cells Cloud"
 type: docs
-url: /charts/legend/hide/
-aliases: [/hide-chart-legend-in-a-worksheet/]
+url: /ar/charts/legend/hide/
+aliases: [  /ar/hide-chart-legend-in-a-worksheet/ ]
 weight: 110
 keywords: "Aspose.Cells, Excel, إخفاء أسطورة المخطط, واجهة برمجة تطبيقات REST, واجهة برمجة التطبيقات السحابية, أسطورة المخطط"
 description: "تعرّف على كيفية إخفاء أسطورة مخطط في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. تتضمن الرابط (Endpoint) باستخدام HTTPS، ومصادقة مطلوبة، وبنية الطلب، وتفاصيل الاستجابة، ومعالجة الأخطاء، وأمثلة لواجهات برمجة التطبيقات (SDKs)."

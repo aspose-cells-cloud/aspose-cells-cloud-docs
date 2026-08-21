@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيفية تصدير ورقة عمل جدول بيانات عن بُعد إلى تنسيق آخر: دليل خطوة بخطوة"
 linktype: "تصدير ورقة عمل"
 type: docs
-url: /export-worksheet-as-format/
+url: /ar/export-worksheet-as-format/
 keywords: "Aspose Cells, تصدير ورقة عمل, واجهة برمجة التطبيقات السحابية, PDF, PNG, CSV, تحويل Excel"
 description: "قم بتحويل ورقة عمل مخزّنة في Aspose.Cells Cloud إلى تنسيق PDF أو PNG أو SVG أو CSV أو تنسيقات أخرى عبر طلب GET واحد. يشمل أمثلة كود بلغات C# وJava وPython وغيرها."
 weight: 100

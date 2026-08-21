@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Masquer"
 type: docs
 url: /fr/worksheets/hide/
-aliases: [/hide-excel-worksheets/]
+aliases: [  /fr/hide-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Excel, masquer une feuille, API REST, classeur"
 description: "Guide étape par étape pour masquer une feuille dans un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud, incluant les détails de la requête, un exemple cURL et des extraits de code SDK pour plusieurs langages."
 weight: 50

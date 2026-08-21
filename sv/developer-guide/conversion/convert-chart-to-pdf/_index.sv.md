@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man konverterar ett lokalt kalkylarkdiagram till en PDF-fil: Steg-för-steg-guide"
 linktype: "Konvertera diagram till PDF"
 type: docs
-url: /convert-chart-to-pdf/
+url: /sv/convert-chart-to-pdf/
 keywords: "Aspose Cells, diagram, PDF, Excel, konvertering, moln-API"
 description: "Exportera diagram från lokala Excel-filer till PDF-format med Aspose.Cells Cloud REST API. Stöder XLSX- och XLS-filer."
 weight: 100

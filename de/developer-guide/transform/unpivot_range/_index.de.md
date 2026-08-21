@@ -3,7 +3,7 @@ title: "UnpivotRange"
 ArticleTitle: "UnpivotRange – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktype: "docs"
-url: /cells/unpivot/range
+url: /de/cells/unpivot/range
 aliases: []
 keywords: "Aspose.Cells, UnpivotRange, API"
 description: "Tauscht Zeilen und Spalten in der Tabellendatenbank aus."

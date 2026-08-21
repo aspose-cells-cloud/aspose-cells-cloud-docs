@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "电子表格文本处理：裁剪、拆分、转换、提取与删除文本"
 linktitle: "文本处理"
 type: docs
-url: /text-processing/
+url: /zh/text-processing/
 description: "了解如何使用 Aspose.Cells Cloud REST API 对 Excel 文件执行文本的裁剪、拆分、转换、提取和删除操作。包含简明示例和 SDK 代码片段。"
 keywords: "Aspose.Cells、Cloud API、文本处理、裁剪文本、拆分文本、转换文本、提取文本、删除文本、Excel API"
 weight: 30

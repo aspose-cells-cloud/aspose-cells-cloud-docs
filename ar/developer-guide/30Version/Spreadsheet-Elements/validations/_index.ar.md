@@ -3,7 +3,7 @@ title: "العمل مع التحقق من صحة البيانات في Excel"
 second_title: "مستند"
 linktype: "التحقق من الصحة"
 type: docs
-url: /validations/
+url: /ar/validations/
 keywords: "التحقق من صحة بيانات Excel، Aspose.Cells Cloud، REST API، جدول بيانات، Office Cloud"
 description: "تعرّف على كيفية إضافة قواعد التحقق من صحة بيانات Excel واسترجاعها وتحديثها وحذفها ومسحها برمجيًا باستخدام REST API الخاص بـ Aspose.Cells Cloud. يتضمن أمثلة لـ .NET وJava وPython وPHP."
 weight: 100

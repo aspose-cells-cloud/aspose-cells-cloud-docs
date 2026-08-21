@@ -4,7 +4,7 @@ ArticleTitle: "JSON Verisini Elektronik Tabloya İçe Aktar – Aspose.Cells Clo
 second_title: "Belge"
 linktitle: "JSON Verisini Elektronik Tabloya İçe Aktar"
 type: docs
-url: /cells/import/data/json
+url: /tr/cells/import/data/json
 aliases: []
 keywords: "JSON İçe Aktar, Aspose.Cells, Elektronik Tablo, API"
 description: "Yerel elektronik tabloya JSON veri dosyasını içe aktarın."

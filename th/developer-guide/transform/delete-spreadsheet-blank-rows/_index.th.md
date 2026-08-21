@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีลบแถวว่างทั้งหมดใน Excel – คู่มือการจัดการข้อมูลอย่างสมบูรณ์"
 linktype: "ลบแถวว่าง"
 type: docs
-url: /delete-spreadsheet-blank-rows/
+url: /th/delete-spreadsheet-blank-rows/
 keywords: "Aspose.Cells, Excel, แถวว่าง, ลบแถว, การทำความสะอาดสเปรดชีต, API"
 description: "ลบแถวที่ว่างทั้งหมดจากไฟล์ Excel ผ่าน Aspose.Cells Cloud API รวดเร็ว พร้อมสำหรับการประมวลผลเป็นชุด และสามารถเขียนโปรแกรมได้อย่างเต็มรูปแบบ – ดูตัวอย่างโค้ดใน C#, Java, Python และอื่นๆ"
 weight: 100

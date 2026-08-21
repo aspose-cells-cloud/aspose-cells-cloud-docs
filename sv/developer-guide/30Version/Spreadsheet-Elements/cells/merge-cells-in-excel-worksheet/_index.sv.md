@@ -1,7 +1,7 @@
 ---
 title: "Så här sammanfogar du celler i ett Excel-arbetsblad – Aspose.Cells Cloud API (v3.0)"
 type: docs
-url: /merge-cells-in-excel-worksheet/
+url: /sv/merge-cells-in-excel-worksheet/
 weight: 110
 keywords: "sammanfoga celler, Aspose.Cells, molntjänst-API, Excel"
 description: "Instruktion för hur du sammanfogar celler i ett Excel-arbetsblad med Aspose.Cells Cloud REST API, inklusive exempel med cURL och SDK:er."

@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud Docker 操作手册：在您自己的私有基础设�
 second_title: "文档"
 ArticleTitle: "Aspose.Cells Cloud Docker 操作手册"
 linktype: "docs"
-url: "/docker-developer-guide/"
-aliases: ["/docker/", "/docker/run/"]
+url: /zh/docker-developer-guide/
+aliases: [  /zh/docker/ , /zh/docker/run/ ]
 description: "将 Aspose.Cells Cloud 作为 Docker 容器部署在私有或本地基础设施上，实现电子表格处理（Excel、PDF、CSV、JSON、Markdown），而无需使用 Aspose 的公有云。"
 keywords:
   [

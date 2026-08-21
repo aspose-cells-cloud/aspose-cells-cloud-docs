@@ -3,8 +3,8 @@ title: "Копирование диапазона в листе с параме�
 second_title: "Документ"
 linktitle: "Копировать"
 type: docs
-url: /ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+url: /ru/ranges/copy/
+aliases: [  /ru/copy-range-in-a-worksheet-with-paste-options/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, копирование диапазона, лист, параметры вставки"
 description: "Используйте Aspose.Cells Cloud REST API для копирования диапазона в пределах листа Excel с полной поддержкой параметров вставки. Включает примеры SDK для нескольких языков программирования."
 weight: 20

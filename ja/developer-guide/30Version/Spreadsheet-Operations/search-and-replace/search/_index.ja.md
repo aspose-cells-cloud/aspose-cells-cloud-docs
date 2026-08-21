@@ -3,7 +3,7 @@ title: "Excel ファイル内のテキストを検索する – Aspose.Cells Clo
 description: "Aspose.Cells Cloud API を使用して、Excel (XLS、XLSX、XLSM、XLSB) ファイルおよび ODS ファイル内の特定のテキストを検索します。リクエストの詳細、cURL および SDK の例、エラー処理を含みます。"
 keywords: "Aspose.Cells, Excel, 検索, API, REST"
 type: docs
-url: /cells/search/
+url: /ja/cells/search/
 aliases:
   - /search/
   - /search-without-using-storage/

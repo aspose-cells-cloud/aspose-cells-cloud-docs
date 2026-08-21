@@ -3,8 +3,8 @@ title: "Excelワークシート内の複数行を自動調整する"
 second_title: "Document"
 linktitle: "Rows"
 type: docs
-url: /worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
+url: /ja/worksheets/autofit/rows/
+aliases: [  /ja/autofit-multiple-rows-of-worksheet/ ]
 keywords: "行の自動調整、Excel、Aspose.Cells Cloud、REST API、ワークシート、スプレッドシート"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシート内の複数行を自動調整する方法を学びます。リクエスト構文、パラメーター、cURL の例、SDK スニペット、エラー処理を含みます。"
 weight: 40

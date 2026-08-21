@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "2023년 신규 기능"
 type: docs
 weight: 30
-url: /new-features/2023/
+url: /ko/new-features/2023/
 keywords: "Excel, Office Cloud, REST API, 스프레드시트, PDF, CSV, JSON, Markdown, Aspose.Cells Cloud, 2023년 업데이트"
 description: "지역 기반 변환 API, 차트 축 지원, 디지털 서명 등 Aspose.Cells Cloud 2023 신규 기능과 기타 개선 사항을 살펴보세요. 자세한 릴리스 노트 및 코드 예시 제공."
 ArticleTitle: "Aspose.Cells Cloud 2023년 신규 기능 – 기능 업데이트 및 릴리스 노트"

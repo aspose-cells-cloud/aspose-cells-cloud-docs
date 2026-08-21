@@ -3,8 +3,8 @@ title: "Excelワークシートのズーム設定 – Aspose.Cells Cloud API v3.
 second_title: "ドキュメント"
 linktitle: "ズーム"
 type: docs
-url: /worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
+url: /ja/worksheets/zoom/
+aliases: [  /ja/set-zoom-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel ズーム, ワークシート ズーム, REST API, クラウド SDK, Excel 自動化"
 description: "Aspose.Cells Cloud API v3.0 を使用してワークシートのズーム率（10～400 %）を設定する方法を学びます。cURL、SDK の使用例、およびエラー処理を含みます。"
 weight: 20

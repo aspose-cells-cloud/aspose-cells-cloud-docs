@@ -1,8 +1,8 @@
 ---
 title: "Koşullu Biçimlendirme Kurallarını Al"
 type: docs
-url: /conditional-formattings/get-all/
-aliases: [/get-conditional-formattings-of-worksheet/]
+url: /tr/conditional-formattings/get-all/
+aliases: [  /tr/get-conditional-formattings-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, Koşullu Biçimlendirme, Çalışma Sayfası, Koşullu Biçimlendirme API'si"
 description: "Aspose.Cells Cloud REST API kullanarak bir çalışma sayfasına uygulanan tüm koşullu biçimlendirme kurallarını alın. İstek sözdizimi, kimlik doğrulama adımları, parametreler, özet yanıt örnekleri ve hata yönetimi içerir."
 weight: 20

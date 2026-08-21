@@ -1,7 +1,7 @@
 ---
 title: "Hämta hyperlänk i kalkylblad"
 type: docs
-url: /hyperlinks/get/
+url: /sv/hyperlinks/get/
 keywords: "Aspose.Cells Cloud, Hämta hyperlänk i kalkylblad, Excel-hyperlänk-API, REST, JWT-autentisering, Excel-kalkylblad, API-slutpunkt"
 description: "Hämta en specifik hyperlänk från ett Excel-kalkylblad med Aspose.Cells Cloud API (v3.0). Innehåller slutpunktsinformation, parametrar, cURL-exempel, autentiseringsuppgifter, felhantering och SDK-utdrag."
 weight: 10

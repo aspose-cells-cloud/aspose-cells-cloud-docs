@@ -3,7 +3,7 @@ title: "Importar una matriz entera bidimensional en una hoja de cálculo de Exce
 second_title: "Documento"
 linktitle: "Importar una matriz entera bidimensional"
 type: docs
-url: /import-a-2d-integer-array-into-excel-worksheet/
+url: /es/import-a-2d-integer-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-integer-array-into-excel-worksheet/,

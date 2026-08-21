@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何删除 Excel 中的空白列——自动化列清理"
 linktype: "删除空白列"
 type: docs
-url: /delete-spreadsheet-blank-columns/
+url: /zh/delete-spreadsheet-blank-columns/
 keywords: "删除 Excel 空白列 API、Aspose.Cells Cloud、REST API、Excel 清理、电子表格自动化"
 description: "了解如何使用 Aspose.Cells Cloud REST API 从 Excel 文件中移除空白列。包含端点、身份验证、请求/响应示例以及 C#、Java、Python 等多种语言的 SDK 代码。"
 weight: 100

@@ -4,7 +4,7 @@ second_title: "Документация"
 ArticleTitle: "Как перевести всю электронную таблицу с помощью API перевода Aspose.Cells Cloud на основе ИИ"
 linktitle: "Перевод электронной таблицы"
 type: docs
-url: /translate-spreadsheet/
+url: /ru/translate-spreadsheet/
 keywords: "Aspose.Cells Cloud, API перевода электронных таблиц, перевод на основе ИИ, перевод таблиц, targetLanguage, многолистовой перевод, облачная обработка таблиц, перевод Aspose.Cells Cloud"
 description: "Переведите всю рабочую книгу Excel с помощью Aspose.Cells Cloud на основе ИИ. Сохраняйте формулы, диаграммы и форматирование при преобразовании текста на любой поддерживаемый язык. Узнайте об endpoint’е, параметрах, примерах SDK, ограничениях и обработке ошибок."
 weight: 100

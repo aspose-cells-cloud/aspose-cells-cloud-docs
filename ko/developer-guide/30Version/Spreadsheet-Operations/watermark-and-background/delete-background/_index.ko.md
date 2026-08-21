@@ -3,7 +3,7 @@ title: "Excel 워크북에서 배경 제거하기"
 second_title: "문서"
 linktitle: "삭제"
 type: docs
-url: /delete-background-in-excel-file/
+url: /ko/delete-background-in-excel-file/
 aliases:
   - /delete-background-in-workbook/
   - /workbook/delete-background/

@@ -3,7 +3,7 @@ title: "Fusionar y dividir archivos de Excel"
 second_title: "Documentos"
 linktype: "Fusionar y dividir"
 type: docs
-url: /merge-and-split/
+url: /es/merge-and-split/
 keywords: "Aspose.Cells Cloud, fusionar archivos de Excel, dividir libro de Excel, API de Excel"
 description: "Aprenda a utilizar la API REST de Aspose.Cells Cloud para fusionar varios libros de Excel en un solo archivo y dividir un libro en archivos separados. Los SDK están disponibles para Android, .NET, Go, Java, Node.js, Perl, PHP, Python, Ruby y Swift."
 ArticleTitle: "Fusionar y dividir archivos de Excel – Documentación de Aspose.Cells Cloud"

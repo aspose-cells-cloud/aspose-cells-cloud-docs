@@ -1,8 +1,8 @@
 ---
 title: "ワークシートからチャートを削除する"
 type: docs
-url: /charts/delete/
-aliases: [/delete-a-chart-from-a-worksheet/]
+url: /ja/charts/delete/
+aliases: [  /ja/delete-a-chart-from-a-worksheet/ ]
 weight: 40
 keywords:
   - "Aspose.Cells"

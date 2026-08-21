@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Тарифный план Aspose.Cells Cloud"
 linktitle: "Тарифный план"
 type: docs
-url: /pricing-plan/
+url: /ru/pricing-plan/
 description: "Ознакомьтесь с тарифным планом Aspose.Cells Cloud: 150 бесплатных вызовов API каждый месяц, а далее — оплата по мере использования по ставке от 0,007 $ за вызов. Без скрытых доплат — только прозрачное многоуровневое ценообразование."
 weight: 70
 keywords: "тариф Aspose.Cells Cloud, стоимость вызова API, API Excel по модели «оплата по мере использования», тариф на облачные электронные таблицы"

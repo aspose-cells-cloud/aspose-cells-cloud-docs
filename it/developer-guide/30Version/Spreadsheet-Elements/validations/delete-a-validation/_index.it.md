@@ -3,7 +3,7 @@ title: "Elimina la convalida del foglio di calcolo – Aspose.Cells Cloud"
 second_title: "Documento"
 linktitle: "Elimina"
 type: docs
-url: /validations/delete/
+url: /it/validations/delete/
 keywords: "Elimina, convalida foglio di calcolo, Aspose.Cells Cloud, API Excel"
 description: "Scopri come eliminare una convalida di un foglio di calcolo da un file Excel utilizzando l'API REST di Aspose.Cells Cloud. Include endpoint, parametri, dettagli sull'autenticazione, esempio cURL, gestione degli errori e frammenti di codice SDK."
 weight: 10

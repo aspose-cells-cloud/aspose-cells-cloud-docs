@@ -3,8 +3,8 @@ title: "Ein OLE-Objekt in einem Excel-Arbeitsblatt hinzufügen"
 second_title: "Dokument"
 linktitle: "OLE-Objekt hinzufügen"
 type: docs
-url: /oleobjects/add/
-aliases: [/add-oleobject-to-excel-worksheet/]
+url: /de/oleobjects/add/
+aliases: [  /de/add-oleobject-to-excel-worksheet/ ]
 keywords: "OLE-Objekt hinzufügen, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "Verwenden Sie die Aspose.Cells Cloud REST API, um OLE-Objekte (z. B. Word-Dokumente, PDFs oder andere Binärdateien) direkt in Excel-Arbeitsblätter einzubetten. Die API kann direkt oder über SDKs für C#, Java, PHP, Ruby, Node.js, Python, Perl und Go aufgerufen werden."
 ArticleTitle: "OLE-Objekt mit Aspose.Cells Cloud API zu einem Excel-Arbeitsblatt hinzufügen"

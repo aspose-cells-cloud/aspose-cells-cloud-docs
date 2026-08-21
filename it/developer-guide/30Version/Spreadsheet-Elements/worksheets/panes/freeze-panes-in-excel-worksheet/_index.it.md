@@ -3,8 +3,8 @@ title: "Blocca i riquadri in un foglio di Excel"
 second_title: "Documento"
 linktype: "Blocca"
 type: docs
-url: /worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+url: /it/worksheets/panes/freeze/
+aliases: [  /it/freeze-panes-in-excel-worksheet/ , /it/worksheets/freeze-panes/ ]
 keywords: "Aspose.Cells Cloud, blocco riquadri, Excel, REST API, foglio di lavoro"
 description: "Scopri come bloccare righe e colonne in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud. Include la sintassi dell'endpoint, i parametri obbligatori, un esempio cURL, istruzioni per l'autenticazione, dettagli sulle risposte di errore e codici di esempio per SDK in diversi linguaggi."
 weight: 190

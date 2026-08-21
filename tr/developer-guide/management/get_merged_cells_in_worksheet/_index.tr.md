@@ -4,7 +4,7 @@ ArticleTitle: "Çalışma Sayfasında Birleştirilmiş Hücreleri Al – Aspose.
 second_title: "Belge"
 linktitle: "GetMergedCellsInWorksheet"
 type: docs
-url: /cells/spreadsheet/mergedcells
+url: /tr/cells/spreadsheet/mergedcells
 aliases: []
 keywords: "Aspose Cells, birleştirilmiş hücreler, çalışma sayfası, API"
 description: "Yerel bir elektronik tablo çalışma sayfasından tüm birleştirilmiş hücre alanlarını alın."

@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Ordinamento"
 type: docs
 keywords: "Ordinamento per intervallo, Aspose.Cells Cloud, REST API, Foglio di calcolo, Excel, API"
-url: /ranges/sort/it/
+url: /it/ranges/sort/it/
 description: Fornisce un'API per ordinare un intervallo di celle all'interno di un foglio di calcolo utilizzando Aspose.Cells Cloud.
 weight: 20
 ---

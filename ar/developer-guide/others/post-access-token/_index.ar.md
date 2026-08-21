@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "الحصول على رمز الوصول باستخدام مُعرّف العميل والسر"
 linktype: "نشر رمز الوصول"
 type: docs
-url: /post-access-token/
+url: /ar/post-access-token/
 keywords: "Aspose.Cells, السحابة, رمز الوصول, OAuth2, واجهة برمجة التطبيقات, المصادقة, REST, إكسل, السحابة المكتبية"
 description: "الحصول على رمز وصول OAuth2 لـ Aspose.Cells Cloud من خلال استدعاء نقطة نهاية POST /cells/connect/token باستخدام مُعرّف العميل والسر الخاص بك."
 weight: 100

@@ -3,7 +3,7 @@ title: "เพิ่มการตรวจสอบความถูกต้
 second_title: "เอกสาร"
 linktitle: "เพิ่ม"
 type: docs
-url: /validations/add/
+url: /th/validations/add/
 keywords: "เพิ่มการตรวจสอบความถูกต้องของแผ่นงาน, Excel, Aspose.Cells Cloud, REST API, สเปรดชีต, กฎการตรวจสอบ"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อเพิ่มการตรวจสอบความถูกต้องในไฟล์ Excel SDK มีให้ใช้งานใน C#, Java, PHP, Ruby, Node.js, Python, Perl, Go และ Swift"
 weight: 10

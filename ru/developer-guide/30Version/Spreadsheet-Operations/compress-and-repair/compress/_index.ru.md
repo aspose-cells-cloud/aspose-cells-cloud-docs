@@ -4,8 +4,8 @@ ArticleTitle: "Сжатие данных в файле Excel – Aspose.Cells Cl
 second_title: "Документ"
 linktitle: "Сжатие файлов Excel"
 type: docs
-url: /compress-excel-files/
-aliases: [/compress/]
+url: /ru/compress-excel-files/
+aliases: [  /ru/compress/ ]
 keywords: "сжатие файла Excel, Aspose Cells Cloud, сжатие Excel, сжатие электронных таблиц, REST API, сжатие файлов"
 description: "Сжимайте файлы Excel (XLS, XLSX, XLSM, XLSB, ODS) с помощью REST API Aspose.Cells Cloud. Настраивайте уровень сжатия, обрабатывайте несколько файлов и интегрируйтесь через SDK."
 weight: 39

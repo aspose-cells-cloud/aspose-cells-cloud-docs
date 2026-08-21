@@ -3,8 +3,8 @@ title: "Mettre à jour le style d'un tableau croisé dynamique"
 second_title: "Document"
 linktype: "Mettre en forme tout"
 type: docs
-url: /pivot-tables/format-all/
-aliases: [/update-style-for-pivot-table/]
+url: /fr/pivot-tables/format-all/
+aliases: [  /fr/update-style-for-pivot-table/ ]
 keywords: "tableau croisé dynamique, mise à jour du style, Aspose.Cells Cloud, API REST, Excel, feuille de calcul, API, style de tableau croisé dynamique, mettre en forme tout"
 description: "Découvrez comment mettre à jour le style d’un tableau croisé dynamique entier à l’aide de l’API REST Aspose.Cells Cloud. Inclut les détails de la requête, un exemple cURL et des extraits de code SDK pour plusieurs langages de programmation."
 weight: 100

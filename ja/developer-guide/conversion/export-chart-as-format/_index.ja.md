@@ -5,7 +5,7 @@ description: "クラウド上に保存されたExcelワークブック内のチ�
 ArticleTitle: "ローカルのスプレッドシートワークシートをPDFファイルに変換する方法：ステップ・バイ・ステップ・ガイド"
 linktype: "ワークシートをPDFに変換"
 type: docs
-url: /export-chart-as-format/ja/
+url: /ja/export-chart-as-format/ja/
 keywords: "Aspose.Cells Cloud, チャートエクスポート, API, PDF, PNG, SVG, Excel, REST, クラウド変換"
 weight: 100
 ---

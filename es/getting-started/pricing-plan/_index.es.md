@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Plan de Precios de Aspose.Cells Cloud"
 linktype: "Plan de Precios"
 type: docs
-url: /pricing-plan/
+url: /es/pricing-plan/
 description: "Explore el plan de precios de Aspose.Cells Cloud: 150 llamadas gratuitas a la API cada mes, luego pague según el uso con tarifas desde $0,007 por llamada. Sin actualizaciones ocultas: solo precios escalonados y transparentes."
 weight: 70
 keywords: "precios de Aspose.Cells Cloud, costo por llamada a la API, API de Excel con pago según uso, precios de hojas de cálculo en la nube"

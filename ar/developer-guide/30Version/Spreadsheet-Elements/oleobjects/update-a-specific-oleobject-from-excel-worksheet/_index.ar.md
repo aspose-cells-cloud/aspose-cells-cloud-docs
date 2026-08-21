@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "تحديث"
 type: docs
 url: /ar/oleobjects/update/
-aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
+aliases: [  /ar/update-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "تحديث كائن OLE، Excel، Aspose.Cells Cloud، REST API، SDK"
 description: "تعرّف على كيفية تحديث كائن OLE (صورة، مخطط، إلخ) في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يشمل أمثلة لـ cURL وSDK، وخطوات المصادقة، ومعالجة الأخطاء."
 weight: 30

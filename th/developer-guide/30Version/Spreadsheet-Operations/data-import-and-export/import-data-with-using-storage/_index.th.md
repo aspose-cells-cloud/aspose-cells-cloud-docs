@@ -2,7 +2,7 @@
 title: "การนำเข้าข้อมูลโดยใช้ที่จัดเก็บข้อมูล"
 second_title: "เอกสาร"
 linktype: "docs"
-url: /import-data-with-using-storage/
+url: /th/import-data-with-using-storage/
 aliases:
   - /import-data-into-excel-worksheet/
   - /import-data-into-worksheet/

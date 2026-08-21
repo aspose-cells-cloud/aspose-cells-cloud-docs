@@ -4,8 +4,8 @@ ArticleTitle: "Arbeta med Excel-cellerna – Aspose.Cells Cloud-dokumentation"
 second_title: "Dokument"
 linktitle: "Celler"
 type: docs
-url: /working-with-cells/
-aliases: [/working-with-worksheets/]
+url: /sv/working-with-cells/
+aliases: [  /sv/working-with-worksheets/ ]
 keywords: "Excel, Aspose.Cells, celloperationer, kalkylark-API, REST-API, cellformatering, cell Sammanfogning, formelberäkning"
 description: "Utforska Aspose.Cells Cloud-API:t för Excel-celloperationer, inklusive inställning av värden, tillämpning av stilar, sammanfogning/avsammanfogning av celler och beräkning av formler."
 weight: 100

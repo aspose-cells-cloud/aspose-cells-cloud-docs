@@ -4,8 +4,8 @@ second_title: "เอกสาร"
 ArticleTitle: "การจัดการไฟล์บนคลาวด์สำหรับ Excel – โซลูชันที่มีประสิทธิภาพและปลอดภัยสำหรับการจัดเก็บไฟล์ Excel และการจัดระเบียบอย่างชาญฉลาด"
 linktype: "files-and-storage"
 type: docs
-url: /files-and-storage/
-aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
+url: /th/files-and-storage/
+aliases: [  /th/working-with-files-and-storage-using-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, API สำหรับการจัดเก็บไฟล์, อัปโหลดไฟล์ Excel, ดาวน์โหลดไฟล์ Excel, คัดลอกไฟล์, ย้ายไฟล์, ลบไฟล์, การจัดการโฟลเดอร์, REST API, ตัวอย่าง cURL"
 description: "คู่มือแบบครอบคลุมเกี่ยวกับการจัดการไฟล์ Excel และโฟลเดอร์ในพื้นที่จัดเก็บของ Aspose.Cells Cloud ประกอบด้วยการดำเนินการอัปโหลด ดาวน์โหลด คัดลอก ย้าย ลบ และการจัดการโฟลเดอร์ พร้อมตัวอย่าง cURL พารามิเตอร์ที่จำเป็น และหมายเหตุเกี่ยวกับการยืนยันตัวตน"
 weight: 100

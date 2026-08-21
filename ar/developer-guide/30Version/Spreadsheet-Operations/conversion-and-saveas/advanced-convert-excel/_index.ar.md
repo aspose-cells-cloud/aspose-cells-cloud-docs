@@ -3,7 +3,7 @@ title: "تحويل ملف إكسل متقدم"
 second_title: "مستند"
 linktype: "تحويل متقدم"
 type: docs
-url: /advanced-convert-excel/
+url: /ar/advanced-convert-excel/
 keywords: "Aspose.Cells, تحويل إكسل, واجهة برمجة تطبيقات السحابة, حزمة تطوير البرمجيات"
 description: "تقدم واجهة Aspose.Cells Cloud REST API ميزات قوية لتحويل كتب عمل إكسل إلى مجموعة واسعة من التنسيقات، مع إمكانية ضبط إعدادات الصفحة، خيارات الحفظ، وإعدادات الطباعة. تتوفر حزم تطوير البرمجيات (SDKs) لأنظمة Android وC# وGo وJava وNode.js وPerl وPHP وPython وRuby وSwift، مما يمكّن من التكامل السلس عبر منصات متعددة."
 weight: 50

@@ -4,8 +4,8 @@ ArticleTitle: "Aralık İçinde Sütun Genişliklerini Değiştirme – Aspose.C
 second_title: "Belge"
 linktitle: "Sütun genişliği"
 type: docs
-url: /ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
+url: /tr/ranges/update/column-width/
+aliases: [  /tr/change-widths-of-columns-inside-the-range/ ]
 keywords: "Aspose.Cells, sütun genişliği, REST API, Excel, SDK, aralık, bulut"
 description: "Aspose.Cells Cloud REST API veya SDK’ları (C#, Java, Python vb.) kullanarak bir aralık içinde sütun genişliklerini nasıl değiştireceğinizi öğrenin. cURL, istek/yanıt ayrıntıları ve kimlik doğrulama adımları içerir."
 weight: 74

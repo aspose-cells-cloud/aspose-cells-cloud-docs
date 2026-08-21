@@ -2,7 +2,7 @@
 title: "Импорт данных с использованием хранилища"
 second_title: "Документ"
 linktype: docs
-url: /import-data-with-using-storage/
+url: /ru/import-data-with-using-storage/
 aliases:
   - /import-data-into-excel-worksheet/
   - /import-data-into-worksheet/

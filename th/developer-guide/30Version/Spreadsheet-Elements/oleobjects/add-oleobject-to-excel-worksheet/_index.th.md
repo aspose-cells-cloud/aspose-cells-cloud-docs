@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktitle: "เพิ่มวัตถุ OLE"
 type: docs
 url: /th/oleobjects/add/
-aliases: [/add-oleobject-to-excel-worksheet/]
+aliases: [  /th/add-oleobject-to-excel-worksheet/ ]
 keywords: "เพิ่มวัตถุ OLE, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อเพิ่มวัตถุ OLE ลงในสมุดงาน Excel API สามารถเรียกใช้โดยตรงหรือผ่าน SDK สำหรับ C#, Java, PHP, Ruby, Node.js, Python, Perl และ Go"
 ArticleTitle: "เพิ่มวัตถุ OLE ลงในสมุดงาน Excel ด้วย Aspose.Cells Cloud API"

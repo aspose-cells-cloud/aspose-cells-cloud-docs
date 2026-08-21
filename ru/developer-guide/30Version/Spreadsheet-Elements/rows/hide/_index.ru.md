@@ -4,7 +4,7 @@ second_title: "Документ"
 linktype: "Скрыть"
 type: docs
 url: /ru/rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
+aliases: [  /ru/hide-rows-in-excel-worksheet/ ]
 keywords: "скрыть строки, Aspose.Cells Cloud, Excel API, REST, SDK"
 description: "Узнайте, как скрыть одну или несколько строк в рабочей книге Excel с помощью REST API Aspose.Cells Cloud. Включает пример cURL, фрагменты SDK, параметры, аутентификацию, детали ответа и обработку ошибок."
 weight: 40

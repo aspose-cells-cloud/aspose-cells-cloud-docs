@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "删除筛选器"
 type: docs
 url: /zh/delete-filter/
-aliases: [/delete-a-filter-for-a-filter-column/, /delete-auto-filter/]
+aliases: [  /zh/delete-a-filter-for-a-filter-column/ , /zh/delete-auto-filter/ ]
 keywords: "Aspose.Cells Cloud 删除筛选器, Excel, REST API, SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API、cURL 以及 SDK（C#、Java、Python 等）删除 Excel 工作表中的自动筛选器。包含端点、参数、身份验证及示例代码。"
 weight: 100

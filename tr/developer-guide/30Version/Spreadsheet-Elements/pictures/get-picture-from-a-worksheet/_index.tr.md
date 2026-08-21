@@ -3,8 +3,8 @@ title: "Excel çalışma sayfasındaki tüm resimleri alın"
 second_title: "Belge"
 linktitle: "Tümünü al"
 type: docs
-url: /pictures/get-all/
-aliases: [/get-picture-from-a-worksheet/]
+url: /tr/pictures/get-all/
+aliases: [  /tr/get-picture-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel çalışma sayfası, resim API'si, tüm resimleri al, REST API, SDK"
 description: "Aspose.Cells Cloud REST API aracılığıyla bir Excel çalışma sayfasından tüm resim nesnelerini alın."
 ArticleTitle: "Excel çalışma sayfasındaki tüm resimleri alın - Aspose.Cells Cloud API"

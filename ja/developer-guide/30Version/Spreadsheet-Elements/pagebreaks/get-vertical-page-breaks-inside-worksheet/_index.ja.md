@@ -3,8 +3,8 @@ title: "垂直ページ区切りの取得"
 second_title: "Document"
 linktitle: "垂直ページ区切りの取得"
 type: docs
-url: /page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
+url: /ja/page-breaks/get-vertical-page-breaks/
+aliases: [  /ja/get-vertical-page-breaks-inside-worksheet/ ]
 keywords: "Aspose.Cells, 垂直ページ区切り, Excel API, クラウドスプレッドシート, REST API"
 description: "Aspose.Cells Cloud REST API（v3.0）を使用して Excelワークシートから垂直ページ区切りを取得します。HTTPSエンドポイント、必須パラメータ、cURLの使用例、レスポンスの詳細、エラーハンドリング、SDKサンプルを含みます。"
 weight: 20

@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API - Aspose.Cells Cloud 상태 확인"
 second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud 상태 확인"
 linktype: "docs"
-url: /get-aspose-cells-cloud-status/
+url: /ko/get-aspose-cells-cloud-status/
 keywords: "Aspose.Cells, 클라우드 API, 헬스 체크, Excel, REST"
 description: "Aspose.Cells Cloud 서비스의 헬스 상태를 실시간으로 모니터링합니다."
 weight: 100

@@ -4,7 +4,7 @@ ArticleTitle: "تحويل النص في جدول بيانات عن بُعد – 
 second_title: "وثيقة"
 linktype: "تحويل النص في جدول بيانات عن بُعد"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
+url: /ar/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
 aliases: []
 keywords: "Aspose.Cells, تحويل النص, API"
 description: "يُحوّل النص في النطاق المحدّد من ورقة العمل، بما في ذلك تحويل الأرقام، واستبدال الأحرف، ومعالجة فواصل الأسطر، وتوحيد الأحرف المُعلّمة."

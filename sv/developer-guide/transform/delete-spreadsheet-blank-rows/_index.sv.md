@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Så här tar du bort alla tomma/blanka rader i Excel – En komplett vägledning för datarensning"
 linktype: "Ta bort tomma rader"
 type: docs
-url: /delete-spreadsheet-blank-rows/
+url: /sv/delete-spreadsheet-blank-rows/
 keywords: "Aspose.Cells, Excel, tomma rader, ta bort rader, rensa kalkylark, API"
 description: "Ta bort alla tomma rader från Excel-filer via Aspose.Cells Cloud API. Snabbt, redo för batchbehandling och helt programmerbart – se kodexempel i C#, Java, Python och mer."
 weight: 100

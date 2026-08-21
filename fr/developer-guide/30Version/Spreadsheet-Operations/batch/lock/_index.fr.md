@@ -2,7 +2,7 @@
 title: "Verrouiller en masse des fichiers Excel"
 second_title: "Document"
 type: docs
-url: /batch/lock
+url: /fr/batch/lock
 keywords: "verrouillage en masse, Excel, Aspose.Cells, API Cloud, feuille de calcul, protection de fichiers"
 description: "L’API Aspose.Cells Cloud permet de verrouiller en masse plusieurs fichiers Excel. Utilisez le point de terminaison REST ou l’un des SDK pris en charge (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, etc.) pour verrouiller les fichiers en lot."
 weight: 100

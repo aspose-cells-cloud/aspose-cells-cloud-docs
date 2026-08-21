@@ -3,7 +3,7 @@ title: "Boş bir Excel Çalışma Kitabı Oluşturun"
 second_title: "Belge"
 linktitle: "Boş Çalışma Kitabı"
 type: docs
-url: /create-an-empty-excel-file/
+url: /tr/create-an-empty-excel-file/
 aliases:
   [
     /create-an-empty-excel-workbook/,

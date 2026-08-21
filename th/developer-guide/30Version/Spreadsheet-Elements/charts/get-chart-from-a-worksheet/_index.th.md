@@ -1,8 +1,8 @@
 ---
 title: "ดึงข้อมูลแผนภูมิจากแผ่นงาน"
 type: docs
-url: /charts/get/
-aliases: [/get-chart-from-a-worksheet/]
+url: /th/charts/get/
+aliases: [  /th/get-chart-from-a-worksheet/ ]
 weight: 10
 keywords: "Aspose.Cells Cloud, Get Chart, Worksheet, REST API, Excel, Chart API, chart retrieval, Excel chart"
 description: "ดึงข้อมูลแผนภูมิ รวมถึง metadata และรูปแบบการส่งออก จากแผ่นงานโดยใช้ Aspose.Cells Cloud REST API"

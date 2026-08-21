@@ -3,7 +3,7 @@ title: "Excelワークシートの検証ルールを更新する"
 second_title: "ドキュメント"
 linktitle: "更新"
 type: docs
-url: /validations/update/
+url: /ja/validations/update/
 keywords: "Aspose.Cells Cloud, Excel 検証ルールの更新, REST API, ワークシート検証ルール, Excel API"
 description: "Aspose.Cells Cloud REST API を使用して Excel ファイル内のワークシート検証ルールを更新する方法。cURL の例および複数のプログラミング言語向けの SDK コードスニペットを含みます。"
 weight: 10

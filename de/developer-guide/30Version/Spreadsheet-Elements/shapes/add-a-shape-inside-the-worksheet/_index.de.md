@@ -3,8 +3,8 @@ title: "Fügen Sie eine Form in ein Excel-Arbeitsblatt ein"
 second_title: "Dokument"
 linktitle: "Hinzufügen"
 type: docs
-url: /shapes/add/
-aliases: [/add-a-shape-inside-the-worksheet/]
+url: /de/shapes/add/
+aliases: [  /de/add-a-shape-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, Form hinzufügen, Excel, REST-API, Cloud-SDK, shapeDTO, Zeichnungstyp"
 description: "Erfahren Sie, wie Sie mithilfe der Aspose.Cells Cloud REST API v3.0 Formen (Bogen, Linie, Rechteck usw.) in ein Excel-Arbeitsblatt einfügen. Enthält die Anforderungssyntax, erforderliche Parameter, Authentifizierungsschritte und Beispiel-SDK-Code."
 weight: 30

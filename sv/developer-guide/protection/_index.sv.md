@@ -4,7 +4,7 @@ second_title: "Komplett utvecklarguide"
 ArticleTitle: "Kalkylbladsskydd – Ställ in öppnings- och ändringslösenord"
 linktitle: "Skydd"
 type: docs
-url: /protection/
+url: /sv/protection/
 keywords: "Aspose.Cells, moln, API, kalkylblad, skydd, öppningslösenord, läs-skriv-lösenord, Excel"
 description: "Lär dig hur du skyddar en Excel-arbetsbok med ett öppnings- eller läs-skriv-lösenord med Aspose.Cells Cloud REST API. Innehåller begärsyntax, kodexempel och felhantering."
 weight: 60

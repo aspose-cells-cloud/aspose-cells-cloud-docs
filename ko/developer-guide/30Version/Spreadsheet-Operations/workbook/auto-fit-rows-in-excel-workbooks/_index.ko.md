@@ -3,8 +3,8 @@ title: "Excel 워크북에서 행 자동 맞춤"
 second_title: "문서"
 linktitle: "행"
 type: docs
-url: /autofit-rows-on-an-excel-file/
-aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
+url: /ko/autofit-rows-on-an-excel-file/
+aliases: [  /ko/auto-fit-rows-in-excel-workbooks/ , /ko/workbook/autofit/rows/ ]
 keywords: "행 자동 맞춤, Excel 워크북, Aspose.Cells Cloud, REST API, 자동 맞춤 옵션"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북에서 행 높이를 자동으로 조정하는 방법을 알아보세요. 엔드포인트, 매개변수, cURL 예제, C#, Java, Python 등 다양한 언어의 SDK 스니펫이 포함되어 있습니다."
 weight: 90

@@ -1,8 +1,8 @@
 ---
 title: "Çalışma Kitabına Bağlantı Ekle"
 type: docs
-url: /hyperlinks/add/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /tr/hyperlinks/add/
+aliases: [  /tr/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, bağlantı ekle, Excel REST API, bulut SDK"
 description: "Aspose.Cells Cloud v3.0 REST API kullanarak bir Excel çalışma sayfasına bağlantı nasıl ekleneceğini öğrenin. Endpoint, tüm parametre kılavuzu, cURL örneği ve C#, Java, Python ve daha fazlası için SDK kod parçacıklarını içerir."
 weight: 20

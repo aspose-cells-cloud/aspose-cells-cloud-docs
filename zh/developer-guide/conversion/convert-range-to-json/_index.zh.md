@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API — 将本地 Excel 区域数据转换为 JSO
 second_title: "文档"
 ArticleTitle: "如何将本地电子表格区域数据转换为 JSON 文件：分步指南"
 linktype: "docs"
-url: /convert-range-to-json/
+url: /zh/convert-range-to-json/
 keywords: "区域转 JSON, Aspose.Cells Cloud, Excel 转 JSON, 电子表格转换, API"
 description: "使用 Aspose.Cells Cloud API 将本地 Excel 电子表格中的特定区域转换为 JSON。"
 weight: 100

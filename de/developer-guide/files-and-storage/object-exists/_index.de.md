@@ -3,7 +3,7 @@ title: "Object Exists API – Überprüfen der Datei-/Ordnerpräsenz in Aspose.C
 second_title: "Dokument"
 ArticleTitle: "Object Exists API – Überprüfen der Datei- oder Ordnerpräsenz in Aspose.Cells Cloud"
 linktype: "docs"
-url: "/object-exists/"
+url: /de/object-exists/
 keywords: "Aspose.Cells, Cloud-Speicher, Objekt vorhanden, Dateivorhandensein, Ordnervorhandensein, API"
 description: "Verwenden Sie die Object Exists API, um schnell zu überprüfen, ob eine Datei oder ein Ordner im Aspose.Cells Cloud-Speicher vorhanden ist. Unterstützt optional den Speichernamen und die Version-ID sowie versionierte Objekte."
 weight: 100

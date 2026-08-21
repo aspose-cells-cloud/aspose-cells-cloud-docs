@@ -3,8 +3,8 @@ title: "Ein Bild aus einer Excel-Arbeitsmappe löschen – Aspose.Cells Cloud AP
 second_title: "Dokument"
 linktitle: "Löschen"
 type: docs
-url: /pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+url: /de/pictures/delete/
+aliases: [  /delete-a-specific-picture-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, Cloud API, Bild löschen, Excel-Arbeitsmappe, REST"
 description: "Löschen Sie ein Bild aus einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API. Erfahren Sie mehr über den DELETE-Endpunkt, die erforderlichen Parameter, die Authentifizierung, Fehlercodes und Beispielcode."
 weight: 50

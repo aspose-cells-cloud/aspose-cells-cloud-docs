@@ -3,7 +3,7 @@ title: "检查存储是否存在 – Aspose.Cells Cloud API (v4.0)"
 second_title: "文档"
 ArticleTitle: "基于云的 Excel 文件管理 – 检查存储是否存在"
 linktype: "docs"
-url: /storage-exists/
+url: /zh/storage-exists/
 keywords: "Aspose.Cells, 存储是否存在, 云存储 API, REST, Excel"
 description: "验证 Aspose.Cells Cloud 中存储容器是否存在。了解 GET /v4.0/cells/storage/{storageName}/exist 接口、所需参数、响应格式，并查看 C#、Java、Python 等语言的 SDK 示例。"
 weight: 100

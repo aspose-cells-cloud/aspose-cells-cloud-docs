@@ -3,7 +3,7 @@ title: "ファイル情報"
 second_title: "ドキュメント"
 linktitle: "ファイル情報"
 type: docs
-url: /file-info/
+url: /ja/file-info/
 keywords: "ファイル, 情報, Excel, Aspose.Cells, クラウドAPI, メタデータ, Base64"
 description: "Aspose.Cells クラウド API を使用して Excel ファイルの名前、サイズ、Base64 形式のコンテンツを取得します。リクエスト構文、サンプルコード、エラー処理を含みます。"
 weight: 79

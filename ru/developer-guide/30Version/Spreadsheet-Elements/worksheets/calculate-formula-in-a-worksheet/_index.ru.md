@@ -3,8 +3,8 @@ title: "Вычисление формулы на листе Excel"
 second_title: "Документ"
 linktype: "Вычисление"
 type: docs
-url: /worksheets/calculate-formula/
-aliases: [/calculate-formula-in-a-worksheet/]
+url: /ru/worksheets/calculate-formula/
+aliases: [  /ru/calculate-formula-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, вычисление формулы, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
 description: "Вычисление формул на листе Excel с использованием REST API Aspose.Cells Cloud. Поддержка множества SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift) с готовыми примерами."
 weight: 20

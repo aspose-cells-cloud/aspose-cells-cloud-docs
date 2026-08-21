@@ -4,7 +4,7 @@ secondtitle: "เอกสาร"
 articletitle: "การแทนที่ข้อความในช่วงแบบแบตช์ในไฟล์ Excel บนคลาวด์ – API ค้นหาและแทนที่"
 linktitle: "แทนที่เนื้อหาในช่วงระยะไกล"
 type: docs
-url: /replace-content-in-remote-range/
+url: /th/replace-content-in-remote-range/
 keywords: "แทนที่ข้อความในช่วง Excel ระยะไกล, Aspose.Cells Cloud API, ค้นหาและแทนที่ใน Excel, แก้ไขสเปรดชีตบนคลาวด์, อัปเดตไฟล์ Excel ระยะไกล"
 description: "ใช้ Aspose.Cells Cloud เพื่อค้นหาและแทนที่ข้อความในช่วงที่ระบุของไฟล์ Excel ระยะไกล รองรับการตรวจสอบสิทธิ์ การจัดการข้อผิดพลาด และ SDK หลายภาษา"
 weight: 100

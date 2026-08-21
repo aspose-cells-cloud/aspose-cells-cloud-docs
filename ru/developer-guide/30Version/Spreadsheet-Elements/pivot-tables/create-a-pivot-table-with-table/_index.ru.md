@@ -3,7 +3,7 @@ title: "Преобразование таблицы в сводную табли
 second_title: "Документ"
 linktype: "Преобразование"
 type: docs
-url: /pivot-tables/convert-table-to-pivottable/
+url: /ru/pivot-tables/convert-table-to-pivottable/
 aliases:
   [
     "/create-a-pivottable-with-table/",

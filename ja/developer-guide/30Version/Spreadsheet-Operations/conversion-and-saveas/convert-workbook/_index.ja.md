@@ -3,7 +3,7 @@ title: "Excel ファイルをさまざまな形式に変換する"
 second_title: "ドキュメント"
 linktitle: "スプレッドシートの変換"
 type: docs
-url: /convert-a-spread-file-to-different-formats/
+url: /ja/convert-a-spread-file-to-different-formats/
 keywords: "Excel 変換、スプレッドシート変換、Aspose.Cells Cloud、REST API、PDF、CSV、JSON、Markdown、ファイル形式変換"
 description: "Aspose.Cells Cloud REST API を使用して、Excel ワークブックを PDF、CSV、JSON、Markdown などのさまざまな形式に変換します。この API は、C#、Java、Python などの言語用の複数の SDK をサポートしています。"
 weight: 10

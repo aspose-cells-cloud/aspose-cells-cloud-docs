@@ -4,8 +4,8 @@ ArticleTitle: "ลบรูปร่างทั้งหมดในแผ่�
 second_title: "เอกสาร"
 linktype: "ชัดเจน"
 type: docs
-url: /shapes/clear/
-aliases: [/delete-all-shapes-inside-the-worksheet/]
+url: /th/shapes/clear/
+aliases: [  /th/delete-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, ลบรูปร่างทั้งหมด, แผ่นงาน Excel, REST API, SDK, cURL, .NET, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift"
 description: "ลบรูปร่างทั้งหมดจากแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API การดำเนินการนี้สามารถเข้าถึงได้ผ่าน cURL และ SDK ที่ครอบคลุมหลากหลายภาษา (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift)"
 weight: 40

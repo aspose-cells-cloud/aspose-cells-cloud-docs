@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktype: "sidbrytningar"
 type: docs
 url: /sv/working-with-pagebreaks/
-aliases: [/sv/working-with-pagebreaks/]
+aliases: [  /sv/working-with-pagebreaks/ ]
 keywords: "Excel, sidbrytning, Aspose.Cells Cloud, REST API, kalkylblad, lägg till, ta bort, hämta, uppdatera, sidbrytningar"
 description: "Lär dig hur du lägger till, hämtar och tar bort sidbrytningar i Excel-kalkylblad med Aspose.Cells Cloud REST API. Innehåller exempel för vertikala och horisontella brytningar."
 weight: 100

@@ -3,8 +3,8 @@ title: "Excel 워크시트에서 행 숨기기"
 second_title: "문서"
 linktitle: "숨기기"
 type: docs
-url: /rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
+url: /ko/rows/hide/
+aliases: [  /ko/hide-rows-in-excel-worksheet/ ]
 keywords: "행 숨기기, Aspose.Cells Cloud, Excel API, REST, SDK"
 description: "Aspose.Cells Cloud REST API를 사용해 Excel 워크시트에서 하나 또는 여러 개의 행을 숨기는 방법을 알아보세요. cURL 예제, SDK 코드 스니펫, 매개변수, 인증, 응답 세부정보, 오류 처리를 포함합니다."
 weight: 40

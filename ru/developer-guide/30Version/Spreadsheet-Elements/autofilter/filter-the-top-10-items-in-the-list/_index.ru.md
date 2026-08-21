@@ -4,7 +4,7 @@ ArticleTitle: "Добавление фильтра ТОП 10 в рабочий
 second_title: "Документ"
 linktitle: "Добавление фильтра ТОП 10"
 type: docs
-url: /autofilter/add-top-10-filter/
+url: /ru/autofilter/add-top-10-filter/
 aliases:
   [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
 keywords: "Aspose.Cells, AutoFilter, фильтр ТОП 10, Excel API"

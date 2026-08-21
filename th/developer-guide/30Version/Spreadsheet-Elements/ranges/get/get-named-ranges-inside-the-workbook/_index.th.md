@@ -3,8 +3,8 @@ title: "รับช่วงที่ตั้งชื่อไว้ในส
 second_title: "เอกสาร"
 linktype: "ชื่อ"
 type: docs
-url: /ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
+url: /th/ranges/get/name/
+aliases: [  /th/get-named-ranges-inside-the-workbook/ ]
 keywords: "ช่วงที่ตั้งชื่อไว้, Excel, Aspose.Cells, API คลาวด์, แผ่นงาน"
 description: "ดึงข้อมูลช่วงที่ตั้งชื่อไว้จากสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API ซึ่งประกอบด้วยรายละเอียดคำขอ, ตัวอย่างคำสั่ง cURL และตัวอย่าง SDK สำหรับภาษาโปรแกรมต่างๆ หลายภาษา"
 ArticleTitle: "รับช่วงที่ตั้งชื่อไว้ในสมุดงาน Excel – Aspose.Cells Cloud API"

@@ -3,8 +3,8 @@ title: "Excel 워크시트에서 범위 값 설정"
 second_title: "문서"
 linktitle: "값 설정"
 type: docs
-url: /ranges/update/values/
-aliases: [/set-range-value-in-excel-worksheet/]
+url: /ko/ranges/update/values/
+aliases: [  /ko/set-range-value-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel API, 범위 값 설정, REST API, 클라우드 SDK, 워크시트 업데이트"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 Excel 워크북에서 셀 또는 범위의 값을 설정하는 방법을 알아보세요. 엔드포인트, 매개변수, cURL 예제, SDK 코드 예제 및 오류 처리가 포함됩니다."
 weight: 72

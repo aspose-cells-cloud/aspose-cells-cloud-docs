@@ -3,8 +3,8 @@ title: "Travail avec les sauts de page Excel"
 second_title: "Document"
 linktitle: "SautsDePage"
 type: docs
-url: /working-with-pagebreaks/
-aliases: [/working-with-pagebreaks/]
+url: /fr/working-with-pagebreaks/
+aliases: [  /fr/working-with-pagebreaks/ ]
 keywords: "Excel, saut de page, Aspose.Cells Cloud, API REST, feuille de calcul, ajouter, supprimer, obtenir, mettre à jour, sauts de page"
 description: "Découvrez comment ajouter, récupérer et supprimer des sauts de page dans des feuilles de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut des exemples pour les sauts verticaux et horizontaux."
 weight: 100

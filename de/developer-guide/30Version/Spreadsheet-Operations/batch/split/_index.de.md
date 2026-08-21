@@ -2,7 +2,7 @@
 title: "Batch Split"
 second_title: "Dokumentation"
 type: docs
-url: /batch/split
+url: /de/batch/split
 keywords: "Batch Split, Aspose.Cells Cloud, REST API, Excel, PDF, CSV, JSON, Tabellenkalkulation, Cloud SDK"
 description: "Dokumentation für die Aspose.Cells Cloud Batch Split API, die Tabellenkalkulationsdateien in verschiedene Formate wie PDF, CSV oder JSON aufteilt. Enthält Anforderungsdetails, Beispiel-cURL-Befehle und SDK-Nutzung in verschiedenen Programmiersprachen."
 weight: 100

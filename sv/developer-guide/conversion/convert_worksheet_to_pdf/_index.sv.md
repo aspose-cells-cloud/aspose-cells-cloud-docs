@@ -4,7 +4,7 @@ ArticleTitle: "Konvertera kalkylblad till PDF – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "ConvertWorksheetToPdf"
 type: docs
-url: /cells/convert/worksheet/pdf
+url: /sv/cells/convert/worksheet/pdf
 aliases: []
 keywords: "Aspose.Cells, Konvertera kalkylblad till PDF, API"
 description: "Konverterar ett kalkylblad i en kalkylarkfil till PDF med Aspose.Cells Cloud."

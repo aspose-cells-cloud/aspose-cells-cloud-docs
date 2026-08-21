@@ -2,7 +2,7 @@
 title: "Пакетное преобразование файлов Excel"
 second_title: "Документ"
 type: docs
-url: /batch/convert
+url: /ru/batch/convert
 keywords: "пакетное преобразование, Excel, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, электронная таблица"
 description: "Узнайте, как использовать API Aspose.Cells Cloud для пакетного преобразования нескольких файлов Excel в такие форматы, как PDF, CSV, JSON или Markdown. В руководстве представлены сведения об endpoint'ах REST API, параметрах запроса, примере cURL и фрагментах кода SDK для различных языков программирования."
 weight: 100

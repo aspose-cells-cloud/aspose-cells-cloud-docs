@@ -4,7 +4,7 @@ ArticleTitle: "استيراد بيانات JSON إلى جدول بيانات –
 second_title: "وثيقة"
 linktype: "استيراد بيانات JSON إلى جدول بيانات"
 type: docs
-url: /cells/import/data/json
+url: /ar/cells/import/data/json
 aliases: []
 keywords: "استيراد JSON, Aspose.Cells, جدول بيانات, واجهة برمجة تطبيقات"
 description: "استيراد ملف بيانات JSON إلى جدول البيانات المحلي."

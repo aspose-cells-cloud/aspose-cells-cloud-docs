@@ -4,7 +4,7 @@ ArticleTitle: "テーブルを PDF に変換 – Aspose.Cells Cloud API"
 second_title: "ドキュメント"
 linktitle: "テーブルを PDF に変換"
 type: docs
-url: /cells/convert/table/pdf
+url: /ja/cells/convert/table/pdf
 aliases: []
 keywords: "テーブル PDF 変換, Aspose.Cells, API"
 description: "ローカルドライブ上のスプレッドシートのテーブルを Aspose.Cells Cloud を使用して PDF ファイルに変換します。"

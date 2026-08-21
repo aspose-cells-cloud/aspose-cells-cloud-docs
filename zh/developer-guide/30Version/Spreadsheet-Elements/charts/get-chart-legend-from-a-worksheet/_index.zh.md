@@ -1,8 +1,8 @@
 ---
 title: "从工作表获取图表图例"
 type: docs
-url: /charts/legend/get/
-aliases: [/get-chart-legend-from-a-worksheet/]
+url: /zh/charts/legend/get/
+aliases: [  /zh/get-chart-legend-from-a-worksheet/ ]
 weight: 80
 keywords: "Aspose.Cells, 图表图例, REST API, Excel, 云 SDK, 获取图表图例, 工作表, 电子表格"
 description: "使用 Aspose.Cells Cloud REST API（v3.0）从 Excel 工作簿中特定工作表的图表中检索图例信息。包含端点、参数、cURL 示例及 SDK 代码片段。"

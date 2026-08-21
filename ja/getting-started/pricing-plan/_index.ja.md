@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloudの料金プラン"
 linktype: "料金プラン"
 type: docs
-url: /pricing-plan/
+url: /ja/pricing-plan/
 description: "Aspose.Cells Cloudの料金プランを確認：月に150回の無料API呼び出しがあり、超過分は1回あたり0.007ドルからという料金で利用可能。隠れたアップグレードはなく、透明性の高い段階的価格設定のみです。"
 weight: 70
 keywords: "Aspose.Cells Cloud 料金, API呼び出し料金, ポイント従量課金型Excel API, クラウド表計算料金"

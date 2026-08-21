@@ -3,8 +3,8 @@ title: "แทรกลายน้ำหรือตั้งค่าพื้
 second_title: "เอกสาร"
 linktype: "ลายน้ำและพื้นหลัง"
 type: docs
-url: /watermark-and-background/
-aliases: [ "/export/excel-chart-to-different-formats/", "/workbook/background/" ]
+url: /th/watermark-and-background/
+aliases: [  /th/export/excel-chart-to-different-formats/ , /th/workbook/background/ ]
 keywords: "Aspose.Cells Cloud, Excel, ลายน้ำ, พื้นหลัง, REST API"
 description: "Aspose.Cells Cloud REST API ช่วยให้นักพัฒนาสามารถเพิ่ม ลบ และจัดการพื้นหลังและลายน้ำในสมุดงาน Excel ได้ รองรับภาษาต่างๆ ได้แก่ Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby และ Swift"
 weight: 20

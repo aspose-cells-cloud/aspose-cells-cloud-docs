@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Klasör Oluştur – Aspose.Cells Cloud API"
 linktitle: "Klasör Oluştur"
 type: docs
-url: /create-folder/
+url: /tr/create-folder/
 keywords: "Aspose.Cells, Cloud API, Klasör Oluştur, Depolama Yönetimi, Excel"
 description: "Aspose.Cells Cloud deposunda basit bir PUT isteği ile yeni bir klasör oluşturun. İstek formatını, parametrelerini, yanıt ve hata işleme yöntemlerini görün."
 weight: 100

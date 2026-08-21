@@ -3,8 +3,8 @@ title: "Ajustar filas automáticamente en un libro de Excel"
 second_title: "Documento"
 linktitle: "Filas"
 type: docs
-url: /autofit-rows-on-an-excel-file/
-aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
+url: /es/autofit-rows-on-an-excel-file/
+aliases: [  /es/auto-fit-rows-in-excel-workbooks/ , /es/workbook/autofit/rows/ ]
 keywords: "ajustar filas automáticamente, libro de Excel, Aspose.Cells Cloud, API REST, opciones de ajuste automático"
 description: "Aprenda a ajustar automáticamente la altura de las filas en un libro de Excel utilizando la API REST de Aspose.Cells Cloud. Incluye el punto final, parámetros, ejemplo de cURL y fragmentos de SDK para C#, Java, Python y más."
 weight: 90

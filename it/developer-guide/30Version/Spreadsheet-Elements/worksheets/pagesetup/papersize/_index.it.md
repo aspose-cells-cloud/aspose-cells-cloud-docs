@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Elenco completo delle costanti per la dimensione 
 second_title: "Documento"
 linktitle: "Dimensione carta"
 type: docs
-url: /paper-size/
+url: /it/paper-size/
 keywords: "dimensione carta, Aspose.Cells Cloud, API REST, foglio elettronico, A4, Letter, ISO, JIS, PRC"
 description: "Elenco completo delle costanti per la dimensione della carta supportate dall'API REST di Aspose.Cells Cloud, incluse le dimensioni fisiche e esempi di utilizzo per l'impostazione di dimensioni personalizzate nei fogli elettronici."
 weight: 20

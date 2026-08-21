@@ -3,7 +3,7 @@ title: "AutoFitterOptions – Egenskaper och användningsguide | Aspose.Cells Cl
 second_title: "Dokument"
 linktitle: "AutoFitterOptions"
 type: docs
-url: /auto-fitter-options/
+url: /sv/auto-fitter-options/
 keywords: "AutoFitterOptions, Aspose.Cells, Excel autojustering, radhöjd, sammanslagna celler, API"
 description: "Lär dig hur du styr autojustering av radhöjd, hantering av sammanslagna celler, dolda rader/kolumner, språkinställningar och återgivningsalternativ med AutoFitterOptions-objektet i Aspose.Cells Cloud API."
 weight: 79

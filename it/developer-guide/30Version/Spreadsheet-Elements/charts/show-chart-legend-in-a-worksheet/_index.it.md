@@ -1,8 +1,8 @@
 ---
 title: "Mostra la legenda del grafico in un foglio di lavoro"
 type: docs
-url: /charts/legend/show/
-aliases: [/show-chart-legend-in-a-worksheet/]
+url: /it/charts/legend/show/
+aliases: [  /it/show-chart-legend-in-a-worksheet/ ]
 weight: 100
 keywords: "Aspose.Cells Cloud, API per la legenda del grafico, legenda grafico Excel, REST PUT per la legenda del grafico, Aspose API v3.0"
 description: "Scopri come visualizzare la legenda di un grafico in un foglio di lavoro di un file Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include dettagli sull'endpoint, i parametri, un esempio cURL e frammenti di codice per vari SDK."

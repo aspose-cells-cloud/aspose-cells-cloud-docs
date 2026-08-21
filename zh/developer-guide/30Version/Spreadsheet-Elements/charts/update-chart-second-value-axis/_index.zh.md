@@ -2,7 +2,7 @@
 title: "更新图表第二值轴"
 ArticleTitle: "更新图表第二值轴 – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/second-value-axis/update/
+url: /zh/charts/second-value-axis/update/
 weight: 160
 keywords: "Aspose.Cells, 图表 API, 第二值轴, Excel, REST, 云 SDK"
 description: "使用 Aspose.Cells Cloud REST API 更新 Excel 工作表中图表的第二值轴。包含请求示例、响应代码和前置条件。"

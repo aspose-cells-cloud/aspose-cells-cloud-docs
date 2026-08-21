@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Excel Çalışma Sayfalarını Nasıl Taşırız – Sayfa Düzenini ve Konumunu Yeniden Düzenleme"
 linktitle: "Hesap Tablosunda Çalışma Sayfasını Taşı"
 type: docs
-url: /move-worksheet-in-spreadsheet/
+url: /tr/move-worksheet-in-spreadsheet/
 keywords: "çalışma sayfasını taşı API’si, sayfaları yeniden düzenle API’si, sayfa sırasını değiştir API’si, Excel sekme yönetimi API’si, Aspose Cells REST API, sayfa konumunu otomatikleştirme, çalışma kitabını düzenleme API’si, hesap tablosu yapısı API’si, bulut Excel otomasyonu, toplu sayfa yeniden düzenleme"
 description: "Excel çalışma kitapları içindeki çalışma sayfalarını taşıyıp sayfa sırasını yeniden düzenleyerek ve çalışma kitabını yapılandırmak için nasıl hareket edeceğinizi öğrenin. Çalışma sayfası konumlarını değiştirin, daha iyi iş akışı için sekmeleri yeniden düzenleyin ve profesyonel hesap tablosu yönetimi için sayfa düzenlemeyi otomatikleştirin."
 weight: 100

@@ -3,7 +3,7 @@ title: "ConvertRangeToPdf"
 ArticleTitle: "Aralığı PDF'ye Dönüştür – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktype: "docs"
-url: /cells/convert/range/pdf
+url: /tr/cells/convert/range/pdf
 aliases: []
 keywords: "Aspose.Cells, Aralığı PDF'ye Dönüştür, API"
 description: "Aspose.Cells Cloud kullanarak bir elektronik tablo belirli bir aralığını PDF'ye dönüştürür."

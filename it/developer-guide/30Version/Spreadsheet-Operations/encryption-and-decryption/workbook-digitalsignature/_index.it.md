@@ -4,7 +4,7 @@ ArticleTitle: "Aggiungi una firma digitale a un libro Excel – Aspose.Cells Clo
 second_title: "Documento"
 linktype: "firma digitale"
 type: docs
-url: /excel-digital-signature/
+url: /it/excel-digital-signature/
 aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/

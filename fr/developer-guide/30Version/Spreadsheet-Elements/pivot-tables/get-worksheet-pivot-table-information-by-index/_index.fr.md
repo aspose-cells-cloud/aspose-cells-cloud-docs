@@ -3,8 +3,8 @@ title: "Obtenir un tableau croisé dynamique dans une feuille Excel"
 second_title: "Document"
 linktitle: Obtenir
 type: docs
-url: /pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
+url: /fr/pivot-tables/get/
+aliases: [  /fr/get-worksheet-pivot-table-information-by-index/ ]
 keywords: "Aspose.Cells, tableau croisé dynamique, Excel, API REST, obtenir le tableau croisé dynamique d'une feuille"
 description: "Récupérer un tableau croisé dynamique à partir d'une feuille Excel via l'API REST Aspose.Cells Cloud. Inclut la syntaxe de la requête, les paramètres, l'authentification, le schéma de réponse, la gestion des erreurs et des exemples de SDK."
 weight: 10

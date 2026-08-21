@@ -4,7 +4,7 @@ second_title: "文档"
 linktype: 格式化
 type: docs
 url: /zh/pivot-tables/format/
-aliases: [/zh/update-cell-style-for-pivot-table/]
+aliases: [  /zh/update-cell-style-for-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, 数据透视表样式, 更新单元格样式 API, REST API, Excel API, 电子表格格式化, 云 SDK, 单元格样式, 数据透视表"
 description: "了解如何通过 REST API 更新 Aspose.Cells Cloud 数据透视表中特定单元格的样式。内容包括端点、参数、身份验证、cURL 示例、Go SDK 代码片段以及 SEO 优化的使用指南。"
 weight: 90

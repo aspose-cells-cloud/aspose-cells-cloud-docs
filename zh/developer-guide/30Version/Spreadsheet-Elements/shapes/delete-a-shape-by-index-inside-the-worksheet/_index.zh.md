@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "删除"
 type: docs
 url: /zh/shapes/delete/
-aliases: [/zh/delete-a-shape-by-index-inside-the-worksheet/]
+aliases: [  /zh/delete-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 删除形状, 形状索引, Excel 工作表, REST API, SDK"
 description: "使用 Aspose.Cells Cloud REST API 删除 Excel 工作表中指定索引的形状。该 API 通过多种 SDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go）提供支持，并支持多种存储选项。"
 weight: 50

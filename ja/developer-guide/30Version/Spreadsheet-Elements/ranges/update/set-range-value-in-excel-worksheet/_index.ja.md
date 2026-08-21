@@ -3,8 +3,8 @@ title: "Excelワークシートで範囲の値を設定する"
 second_title: "Document"
 linktitle: "値を設定する"
 type: docs
-url: /ranges/update/values/
-aliases: [/set-range-value-in-excel-worksheet/]
+url: /ja/ranges/update/values/
+aliases: [  /ja/set-range-value-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel API, 範囲の値を設定する, REST API, クラウドSDK, ワークシートの更新"
 description: "Aspose.Cells Cloud REST API（v3.0）を使用してExcelワークブック内のセルまたは範囲の値を設定する方法を学びます。エンドポイント、パラメータ、cURLの例、SDKのコードサンプル、エラー処理を含みます。"
 weight: 72

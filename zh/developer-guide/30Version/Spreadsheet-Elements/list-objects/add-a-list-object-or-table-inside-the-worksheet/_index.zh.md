@@ -3,8 +3,8 @@ title: "向 Excel 工作表添加列表对象（表格）"
 second_title: "文档"
 linktitle: "添加"
 type: docs
-url: /list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+url: /zh/list-objects/add/
+aliases: [  /zh/add-a-list-object-or-table-inside-the-worksheet/ , /zh/tables/add/ ]
 keywords: "Aspose.Cells Cloud、Excel API、列表对象、表格、REST API、工作表"
 description: "了解如何使用 Aspose.Cells Cloud REST API 向工作表添加列表对象（Excel 表格）。包含端点、参数、身份验证步骤、cURL 示例和 SDK 代码示例。"
 weight: 10

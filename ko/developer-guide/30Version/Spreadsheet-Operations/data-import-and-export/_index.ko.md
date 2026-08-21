@@ -3,7 +3,7 @@ title: "Excel 파일에 데이터 가져오기 및 Excel 파일에서 데이터 
 second_title: "문서"
 linktitle: "데이터 가져오기 및 내보내기"
 type: docs
-url: /data-import-and-export/
+url: /ko/data-import-and-export/
 keywords: "Aspose.Cells Cloud, 데이터 가져오기, Excel 내보내기, API, CSV, JSON, 이미지, 배열"
 description: "Aspose.Cells Cloud API(v3.0)를 사용하여 CSV, JSON, 배열 및 이미지에서 Excel 파일로 데이터를 가져오고 워크북, 차트 및 도형을 PDF, PNG 등 다양한 형식으로 내보내는 방법을 알아보세요."
 weight: 25

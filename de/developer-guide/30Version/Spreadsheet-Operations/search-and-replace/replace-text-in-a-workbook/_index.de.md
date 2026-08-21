@@ -3,8 +3,8 @@ title: "Text in einer Excel-Arbeitsmapme ersetzen"
 second_title: "Dokument"
 linktitle: "In Arbeitsmappe ersetzen"
 type: docs
-url: /workbook/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /de/workbook/replace-text/
+aliases: [  /de/replace-text-in-a-workbook/ ]
 weight: 60
 keywords: "Aspose.Cells Cloud, Text ersetzen, Excel-Arbeitsmappe, XLSX, ODS, REST API, Tabellenkalkulation, SDK"
 description: "Ersetzen Sie Text in Excel-Dateien (XLS, XLSX, XLSM, XLSB) und OpenDocument-Tabellenkalkulationen (ODS) mithilfe der Aspose.Cells Cloud REST API. Verfügbar über cURL und eine breite Palette an SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go usw.)."

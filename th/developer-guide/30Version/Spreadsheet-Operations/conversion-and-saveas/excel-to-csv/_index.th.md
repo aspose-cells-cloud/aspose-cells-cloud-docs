@@ -3,7 +3,7 @@ title: "Excel ไป CSV"
 second: "เอกสาร"
 linktitle: "Excel ไป CSV"
 type: docs
-url: convert-excel-file-to-CSV-file/
+url: /thconvert-excel-file-to-CSV-file/
 aliases:
   - /convert-excel-file-to-CSV-in-cloud/
   - /convert/excel-to-csv/

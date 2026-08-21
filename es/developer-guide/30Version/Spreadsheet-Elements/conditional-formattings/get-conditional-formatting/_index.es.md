@@ -1,8 +1,8 @@
 ---
 title: "Obtener formato condicional"
 type: docs
-url: /conditional-formattings/get/
-aliases: [/get-conditional-formatting/]
+url: /es/conditional-formattings/get/
+aliases: [  /es/get-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, REST API, formato condicional, Excel, hoja de cálculo"
 description: "Recuperar reglas de formato condicional desde una hoja de cálculo utilizando la API REST de Aspose.Cells Cloud."
 weight: 10

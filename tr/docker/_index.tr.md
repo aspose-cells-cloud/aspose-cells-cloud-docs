@@ -5,7 +5,7 @@ ArticleTitle: "Aspose.Cells Cloud Docker İşletim Kılavuzu"
 linktitle: "Docker"
 type: docs
 url: /tr/docker-developer-guide/
-aliases: [/tr/docker/, /tr/docker/run/]
+aliases: [  /tr/docker/ , /tr/docker/run/ ]
 description: "Aspose.Cells Cloud’u özel veya kendi altyapınızda Docker konteyneri olarak dağıtın; böylece Aspose’un ortak bulutunu kullanmadan elektronik tablo işleme (Excel, PDF, CSV, JSON, Markdown) yapabilirsiniz."
 keywords:
   [

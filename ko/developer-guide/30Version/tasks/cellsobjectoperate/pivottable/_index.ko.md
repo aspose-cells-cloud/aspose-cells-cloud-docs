@@ -1,8 +1,8 @@
 ---
 title: "CellsObjectOperate 작업을 사용한 피벗 테이블 작업"
 type: docs
-url: /tasks/cells-object-operate/pivottable/
-aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
+url: /ko/tasks/cells-object-operate/pivottable/
+aliases: [  /ko/working-with-pivot-table-using-cellsobjectoperate-task/ ]
 keywords: "Aspose Cells 피벗 테이블 API, CellsObjectOperate, Excel REST API"
 description: "Aspose.Cells Cloud의 CellsObjectOperate 작업을 사용하여 Excel에서 피벗 테이블을 생성하는 방법을 알아보세요. cURL 예제, 매개변수 가이드, SDK 참조가 포함됩니다."
 weight: 10

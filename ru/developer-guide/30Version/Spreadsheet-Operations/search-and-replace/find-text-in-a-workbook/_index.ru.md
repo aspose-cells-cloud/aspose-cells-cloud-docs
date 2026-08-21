@@ -3,8 +3,8 @@ title: "Поиск текста в рабочей книге Excel"
 second_title: "Документ"
 linktitle: "Поиск в рабочей книге"
 type: docs
-url: /workbook/find-text/
-aliases: [/find-text-in-a-workbook/]
+url: /ru/workbook/find-text/
+aliases: [  /ru/find-text-in-a-workbook/ ]
 weight: 30
 keywords: "Aspose.Cells, поиск текста, Excel API, поиск в рабочей книге"
 description: "Узнайте, как использовать Aspose.Cells Cloud API для **поиска текста** в рабочих книгах Excel (XLS‑X, ODS). Приведены примеры cURL, фрагменты кода SDK и схема ответа. Начните работу уже сегодня."

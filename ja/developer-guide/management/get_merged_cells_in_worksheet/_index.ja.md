@@ -4,7 +4,7 @@ ArticleTitle: "ワークシート内の結合セルを取得する – Aspose.Ce
 second_title: "ドキュメント"
 linktype: "GetMergedCellsInWorksheet"
 type: docs
-url: /cells/spreadsheet/mergedcells
+url: /ja/cells/spreadsheet/mergedcells
 aliases: []
 keywords: "Aspose Cells, 結合セル, ワークシート, API"
 description: "ローカルのスプレッドシートワークシートからすべての結合セル領域を取得します。"

@@ -3,7 +3,7 @@ title: "Excel Çalışma Kitabından Arkaplanı Silme"
 second_title: "Belge"
 linktitle: "Sil"
 type: docs
-url: /delete-background-in-excel-file/
+url: /tr/delete-background-in-excel-file/
 aliases:
   - /delete-background-in-workbook/
   - /workbook/delete-background/

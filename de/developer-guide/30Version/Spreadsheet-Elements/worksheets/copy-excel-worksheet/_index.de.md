@@ -3,8 +3,8 @@ title: "Inhalt und Formate aus einer anderen Arbeitsmappe kopieren."
 second_title: "Dokument"
 linktitle: "Kopieren"
 type: docs
-url: /worksheets/copy/
-aliases: [/copy-excel-worksheet/]
+url: /de/worksheets/copy/
+aliases: [  /de/copy-excel-worksheet/ ]
 keywords: "Aspose Cells API zum Kopieren von Arbeitsblättern, Excel Arbeitsblatt kopieren per REST, Aspose Cloud SDK zum Kopieren, Tabellenkalkulation Arbeitsblatt kopieren"
 description: "Erfahren Sie, wie Sie ein Arbeitsblatt und dessen Formatierung in ein neues Blatt innerhalb derselben Arbeitsmappe kopieren können, mithilfe der Aspose.Cells Cloud REST API. Enthält Endpunkte, Parameter, cURL-Beispiele sowie SDK-Beispiele für C#, Java, Python und weitere."
 weight: 20

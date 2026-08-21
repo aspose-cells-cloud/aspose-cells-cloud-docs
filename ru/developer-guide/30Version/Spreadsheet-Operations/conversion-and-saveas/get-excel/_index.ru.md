@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Преобразование рабочей кн�
 second_title: "Документ"
 linktitle: "Преобразование Excel"
 type: docs
-url: /get-different-formats-files/
+url: /ru/get-different-formats-files/
 aliases:
   - /export-excel-workbook-to-different-file-formats/
   - /export-different-formats/

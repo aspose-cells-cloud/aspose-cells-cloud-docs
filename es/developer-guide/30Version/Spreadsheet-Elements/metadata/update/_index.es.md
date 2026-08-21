@@ -3,7 +3,7 @@ title: "Actualizar metadatos"
 second_title: "Documento"
 linktitle: "Actualizar sin usar almacenamiento"
 type: docs
-url: /metadata/update/
+url: /es/metadata/update/
 keywords: "metadatos, Excel, Aspose.Cells Cloud, API REST, actualizar, hoja de cálculo"
 description: "La API REST de Aspose.Cells Cloud permite actualizar los metadatos en archivos Excel. Admite múltiples SDK (C#, Java, Python, Ruby, Go, etc.) para una integración fluida en diversos lenguajes de programación."
 weight: 35

@@ -4,7 +4,7 @@ secondtitle: "Dokument"
 ArtikelTitel: "So übersetzen Sie Textdateien mit der Aspose.Cells Cloud KI-Übersetzungs-API"
 linktitle: "Textdatei übersetzen"
 type: docs
-url: /translate-text-file/
+url: /de/translate-text-file/
 keywords: "Aspose.Cells, Cloud API, KI-Übersetzung, Textdatei übersetzen, mehrsprachige Umwandlung, REST PUT, ZielSprachCode, Datei-Upload-Übersetzung, RohText-Übersetzung, Tabellenkalkulation KI"
 description: "Erfahren Sie, wie Sie den Aspose.Cells Cloud AI TranslateTextFile-Endpunkt verwenden, um Textdateien in jede unterstützte Sprache zu übersetzen. Unterstützt sowohl den Upload von Dateien über multipart/form-data als auch die Übergabe von RohText im Anforderungstext. Beibehaltung der Formatierung und Rückgabe einer herunterladbaren übersetzten Datei."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "並べ替え"
 type: docs
 keywords: "レンジの並べ替え, Aspose.Cells Cloud, REST API, スプレッドシート, Excel, API"
-url: /ranges/sort/
+url: /ja/ranges/sort/
 description: Aspose.Cells Cloud を使用して、ワークブック内のセル範囲を並べ替えるための API を提供します。
 weight: 20
 ---

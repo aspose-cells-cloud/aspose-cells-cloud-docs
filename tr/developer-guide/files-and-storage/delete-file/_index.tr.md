@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud – Dosya Silme API'si"
 linktitle: "Dosya Sil"
 type: docs
-url: /delete-file/
+url: /tr/delete-file/
 keywords: "Aspose Cells, Dosya Silme API'si, Excel Bulut Depolama, REST API, Dosya Yönetimi"
 description: "Aspose.Cells Cloud depolarından bir Excel dosyasını REST tabanlı Dosya Silme API'si ile silin. Uç nokta, parametreler, kimlik doğrulama ve örnek kod içerir."
 weight: 100

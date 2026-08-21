@@ -3,7 +3,7 @@ title: "엑셀 워크시트에서 고정 창 해제하기"
 second_title: "문서"
 linktitle: "고정 창 해제"
 type: docs
-url: /worksheets/panes/unfreeze/
+url: /ko/worksheets/panes/unfreeze/
 aliases:
   - /unfreeze-panes-in-excel-worksheet/
   - /worksheets/unfreeze-panes/

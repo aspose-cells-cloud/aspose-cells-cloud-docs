@@ -4,7 +4,7 @@ description: "Unisci file di fogli di calcolo memorizzati nell'archivio cloud di
 keywords: "Aspose.Cells, unisci fogli di calcolo, cartella remota, API, PDF, CSV, JSON, XLSX, ODS, XPS"
 weight: 100
 type: docs
-url: /merge-spreadsheets-in-remote-folder/
+url: /it/merge-spreadsheets-in-remote-folder/
 ---
 
 Unisci più file di fogli di calcolo memorizzati in una cartella remota dell'archivio cloud di Aspose Cloud in un unico file di output. L'operazione viene eseguita interamente nel cloud, eliminando la necessità di scaricare i file sorgente localmente. Sono supportati oltre 30 formati di output (PDF, CSV, JSON, XLSX, ODS, XPS, …).

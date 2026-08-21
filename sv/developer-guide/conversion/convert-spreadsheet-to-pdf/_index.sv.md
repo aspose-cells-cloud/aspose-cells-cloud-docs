@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man konverterar ett lokalt kalkylark till PDF med Aspose.Cells Cloud API"
 linktype: "Konvertera kalkylark till PDF"
 type: docs
-url: /convert-spreadsheet-to-pdf/
+url: /sv/convert-spreadsheet-to-pdf/
 keywords: "Aspose.Cells Cloud, kalkylark till PDF, Excel-konvertering, moln-API, PDF-generering, REST API, v4.0"
 description: "Steg-för-steg-guide för att konvertera ett lokalt kalkylark till PDF med Aspose.Cells Cloud API. Innehåller begärsyntax, parametrar, svarsdetaljer, felhantering och praktiska användningsfall."
 weight: 100

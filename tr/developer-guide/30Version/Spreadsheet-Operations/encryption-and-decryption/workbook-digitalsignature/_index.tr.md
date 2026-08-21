@@ -4,7 +4,7 @@ ArticleTitle: "Excel Çalışma Kitabına Dijital İmza Ekleyin – Aspose.Cells
 second_title: "Belge"
 linktype: "dijital imza"
 type: docs
-url: /excel-digital-signature/
+url: /tr/excel-digital-signature/
 aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/

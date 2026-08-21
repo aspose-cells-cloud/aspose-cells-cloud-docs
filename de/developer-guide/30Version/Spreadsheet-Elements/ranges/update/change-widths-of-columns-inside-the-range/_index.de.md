@@ -4,8 +4,8 @@ ArticleTitle: "Spaltenbreiten innerhalb eines Bereichs ändern – Aspose.Cells 
 second_title: "Dokument"
 linktitle: "Spaltenbreite"
 type: docs
-url: /ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
+url: /de/ranges/update/column-width/
+aliases: [  /de/change-widths-of-columns-inside-the-range/ ]
 keywords: "Aspose.Cells, Spaltenbreite, REST API, Excel, SDK, Bereich, Cloud"
 description: "Erfahren Sie, wie Sie Spaltenbreiten innerhalb eines Bereichs mithilfe der Aspose.Cells Cloud REST API oder SDKs (C#, Java, Python usw.) ändern. Enthält cURL-Beispiele, Anforderungs-/Antwortdetails und Authentifizierungsschritte."
 weight: 74

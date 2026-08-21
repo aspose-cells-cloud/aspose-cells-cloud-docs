@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: Formatera
 type: docs
 url: /sv/pivot-tables/format/
-aliases: [/sv/update-cell-style-for-pivot-table/]
+aliases: [  /sv/update-cell-style-for-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, pivottabellstil, API för att uppdatera cellstil, REST API, Excel API, kalkylbladsformatering, moln-SDK, cellstil, pivottabell"
 description: "Lär dig hur du uppdaterar stilen för en specifik cell i en pivottabell i Aspose.Cells Cloud via REST API. Inkluderar endpoint, parametrar, autentisering, cURL-exempel, Go SDK-kodavsnitt och SEO-optimerad vägledning."
 weight: 90

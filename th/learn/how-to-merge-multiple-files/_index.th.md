@@ -2,7 +2,7 @@
 title: "วิธีการรวมไฟล์สเปรดชีตหลายไฟล์ด้วย Aspose.Cells Cloud"
 linktype: "วิธีการรวมไฟล์สเปรดชีตหลายไฟล์"
 type: docs
-url: /how-to-merge-multiple-files
+url: /th/how-to-merge-multiple-files
 description: "วิธีการรวมไฟล์สเปรดชีตหลายไฟล์ด้วย Aspose.Cells Cloud"
 weight: 10
 kwords: Excel, Office Cloud, REST API, สเปรดชีต, PDF, CSV, JSON, Markdown, วิธีการรวมไฟล์หลายไฟล์ผ่าน Aspose.Cells Cloud

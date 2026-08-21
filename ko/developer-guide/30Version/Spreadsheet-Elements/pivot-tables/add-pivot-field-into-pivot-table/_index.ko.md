@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "피벗 필드 추가"
 type: docs
 url: /ko/pivot-tables/add-pivot-field/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /ko/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, 피벗 테이블, 피벗 필드 추가, REST API, SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 기존 피벗 테이블에 피벗 필드를 추가합니다. 요청 세부 정보, cURL 예제, SDK 스니펫 포함."
 weight: 40

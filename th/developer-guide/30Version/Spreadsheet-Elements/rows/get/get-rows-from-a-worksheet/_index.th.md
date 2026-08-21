@@ -3,8 +3,8 @@ title: "รับข้อมูลแถวจากแผ่นงาน Excel
 second: "เอกสาร"
 linktitle: "แถว"
 type: docs
-url: /rows/get/rows/
-aliases: [/get-row-from-a-worksheet/]
+url: /th/rows/get/rows/
+aliases: [  /th/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API รับแถว, แถวของแผ่นงาน Excel, REST API, ตัวอย่าง cURL, ตัวอย่าง SDK, .NET, Java, Python"
 description: "เรียนรู้วิธีดึงข้อมูลแถวจากแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 3.0) รวมถึง endpoint, พารามิเตอร์, การยืนยันตัวตน, ตัวอย่าง cURL และโค้ด SDK สำหรับ C#, Java, Python และอื่นๆ"
 weight: 10

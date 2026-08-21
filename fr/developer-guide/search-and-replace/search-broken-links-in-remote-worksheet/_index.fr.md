@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Trouver et corriger les liens brisés dans une feuille de calcul Excel distante – Vérificateur de liens de feuilles de calcul en ligne"
 linktype: "Search broken links in remote worksheet"
 type: docs
-url: /search-broken-links-in-remote-worksheet/
+url: /fr/search-broken-links-in-remote-worksheet/
 keywords: "Aspose Cells, liens brisés, API Excel, feuille de calcul cloud, validation des liens"
 description: "Détecter et corriger les liens externes brisés dans des feuilles de calcul Excel stockées dans un stockage cloud. Utilisez l'API Aspose.Cells Cloud pour analyser des plages, renvoyer les détails des liens et automatiser les contrôles qualité."
 weight: 100

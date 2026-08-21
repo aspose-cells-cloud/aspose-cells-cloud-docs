@@ -3,8 +3,8 @@ title: "Belirli Bir Belge Özelliğini Silme"
 second_title: "Belge"
 linktitle: "Sil"
 type: docs
-url: /document-properties/delete/
-aliases: [/remove-a-particular-document-property/]
+url: /tr/document-properties/delete/
+aliases: [  /tr/remove-a-particular-document-property/ ]
 keywords: "Aspose.Cells, belge özelliği silme, Excel meta verisi API'si, REST, bulut SDK'sı, cURL örneği"
 description: "Aspose.Cells Cloud REST API v3.0 ile bir Excel çalışma kitabından belirli bir belge özelliğini silin. C#, Java, Python ve diğerleri için hem cURL hem de SDK örneklerini içerir."
 weight: 50

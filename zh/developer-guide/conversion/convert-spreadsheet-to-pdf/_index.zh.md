@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何使用 Aspose.Cells Cloud API 将本地电子表格转换为 PDF"
 linktitle: "将电子表格转换为 PDF"
 type: docs
-url: /convert-spreadsheet-to-pdf/
+url: /zh/convert-spreadsheet-to-pdf/
 keywords: "Aspose.Cells Cloud、电子表格转 PDF、Excel 转换、云 API、PDF 生成、REST API、v4.0"
 description: "分步指南，介绍如何使用 Aspose.Cells Cloud API 将本地电子表格转换为 PDF。包含请求语法、参数说明、响应详情、错误处理及实际应用场景。"
 weight: 100

@@ -3,7 +3,7 @@ title: "تقسيم الجدول"
 ArticleTitle: "تقسيم الجدول – واجهة برمجة تطبيقات Aspose.Cells Cloud"
 second_title: "مستند"
 linktype: "docs"
-url: /cells/split/table
+url: /ar/cells/split/table
 aliases: []
 keywords: "Aspose.Cells، تقسيم الجدول، واجهة برمجة التطبيقات"
 description: "واجهة برمجة تطبيقات لتقسيم جدول في ملف جدول بيانات حسب قيم الأعمدة."

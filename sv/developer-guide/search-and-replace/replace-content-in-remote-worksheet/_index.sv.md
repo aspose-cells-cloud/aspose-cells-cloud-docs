@@ -4,7 +4,7 @@ secondtitle: "Dokument"
 ArticleTitle: "Sök och ersätt text i fjärrkalkylark med Aspose.Cells Cloud API"
 linktitle: "Ersätt innehåll i fjärrkalkylark"
 type: docs
-url: /replace-content-in-remote-worksheet/
+url: /sv/replace-content-in-remote-worksheet/
 keywords: "Aspose.Cells, ersätt text, fjärrkalkylark, Excel-API, molnarkalkylark, sök och ersätt, REST API"
 description: "Ersätt text i ett specifikt kalkylark i en Excel-fil som lagras i Aspose Cloud. Stöder lösenordsskyddade arbetsböcker, regionskänslig sökning och massuppdateringar."
 weight: 100

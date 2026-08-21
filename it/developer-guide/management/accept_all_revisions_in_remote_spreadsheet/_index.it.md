@@ -4,8 +4,8 @@ ArticleTitle: "Accetta Tutte le Revisioni in un Foglio di Calcolo Remoto – Asp
 second_title: "Documento"
 linktitle: "Accetta Tutte le Revisioni in un Foglio di Calcolo Remoto"
 type: docs
-url: /cells/accept-all-revisions
-aliases: ["/cells/accept-all-revisions"]
+url: /it/cells/accept-all-revisions
+aliases: [  /it/cells/accept-all-revisions ]
 keywords: "Aspose.Cells, AcceptAllRevisions, Foglio di calcolo remoto"
 description: "Accetta tutte le revisioni in un foglio di calcolo remoto e restituisce il file del workbook aggiornato."
 weight: 1000

@@ -3,8 +3,8 @@ title: "فك تشفير ملف Excel"
 second_title: "مستند"
 linktitle: "فك تشفير ملف Excel"
 type: docs
-url: /excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+url: /ar/excel-file-decrypt/
+aliases: [  /ar/decrypt-excel-workbooks/ , /ar/workbook/decrypt/ ]
 keywords: "Aspose.Cells, فك تشفير Excel, REST API, SDK للحوسبة السحابية"
 description: "تعرّف على كيفية فك تشفير ملف Excel باستخدام واجهة Aspose.Cells Cloud REST API. يشمل المعلمات المطلوبة، مثال cURL، أمثلة للكود باستخدام SDK، وتفاصيل التعامل مع الأخطاء."
 ArticleTitle: "كيفية فك تشفير ملف Excel باستخدام واجهة Aspose.Cells Cloud API"

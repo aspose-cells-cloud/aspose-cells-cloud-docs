@@ -4,7 +4,7 @@ ArticleTitle: "获取工作表中的合并单元格 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "GetMergedCellsInWorksheet"
 type: docs
-url: /cells/spreadsheet/mergedcells
+url: /zh/cells/spreadsheet/mergedcells
 aliases: []
 keywords: "Aspose Cells, 合并单元格, 工作表, API"
 description: "从本地电子表格工作表中获取所有合并单元格区域。"

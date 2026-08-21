@@ -1,7 +1,7 @@
 ---
 title: "Excelワークシートのセルに数式を設定する"
 type: docs
-url: /set-formula-for-a-cell-in-excel-worksheets/
+url: /ja/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
 keywords: "Excel, Aspose.Cells, REST API, 数式の設定, ワークシート, セル, クラウドSDK, cURL"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシート内の特定のセルに数式を設定する方法を学びます。cURLの例、完全なパラメータ一覧、エラー処理、SDKコードサンプルを含みます。"

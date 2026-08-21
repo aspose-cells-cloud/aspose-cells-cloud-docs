@@ -4,8 +4,8 @@ second_title: "文档"
 ArticleTitle: "Excel 云文件管理 —— 高效、安全的 Excel 文件存储与智能组织解决方案"
 linktitle: "文件与存储"
 type: docs
-url: /files-and-storage/
-aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
+url: /zh/files-and-storage/
+aliases: [  /zh/working-with-files-and-storage-using-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, 文件存储 API, 上传 Excel 文件, 下载 Excel 文件, 复制文件, 移动文件, 删除文件, 文件夹管理, REST API, cURL 示例"
 description: "全面介绍如何在 Aspose.Cells Cloud 存储中管理 Excel 文件与文件夹。包含上传、下载、复制、移动、删除以及文件夹操作，并提供 cURL 示例、所需参数和身份验证说明。"
 weight: 100

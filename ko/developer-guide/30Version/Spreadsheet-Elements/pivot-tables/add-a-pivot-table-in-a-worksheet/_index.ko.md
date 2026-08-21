@@ -4,7 +4,7 @@ second_title: "문서"
 linktype: Add
 type: docs
 url: "/ko/pivot-tables/add/"
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /ko/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "피벗 테이블 추가, Excel 워크시트, Aspose.Cells Cloud, REST API, SDK, Excel 피벗 테이블"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에 피벗 테이블을 추가합니다. C#, Java, PHP, Python, Node.js, Android, Swift, Perl, Go SDK를 통해 제공됩니다."
 weight: 30

@@ -3,8 +3,8 @@ title: "إخفاء صفوف في ورقة عمل Excel"
 second_title: "مستند"
 linktitle: "إخفاء"
 type: docs
-url: /rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
+url: /ar/rows/hide/
+aliases: [  /ar/hide-rows-in-excel-worksheet/ ]
 keywords: "إخفاء الصفوف، Aspose.Cells Cloud، Excel API، REST، SDK"
 description: "تعرّف على كيفية إخفاء صف واحد أو عدة صفوف في ورقة عمل Excel باستخدام Aspose.Cells Cloud REST API. يتضمن مثال cURL، مقاطع كود للـ SDK، المعاملات، المصادقة، تفاصيل الاستجابة، ومعالجة الأخطاء."
 weight: 40

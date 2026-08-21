@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "Yineleyenleri kaldır"
 type: docs
 keywords: "yineleyenleri kaldır, listobject, Aspose.Cells Cloud API, Excel, REST"
-url: /list-objects/remove-duplicates/
+url: /tr/list-objects/remove-duplicates/
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki bir ListObject'ten yineleyen satırları nasıl sileceğinizi öğrenin. Endpoint, parametreler, kimlik doğrulama ve örnek istekler ile yanıtları içerir."
 weight: 20
 ---

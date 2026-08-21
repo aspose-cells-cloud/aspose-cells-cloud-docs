@@ -3,8 +3,8 @@ title: "Excel ファイルのロックを解除する"
 second_title: "ドキュメント"
 linktitle: "Excel ファイルのロックを解除する"
 type: docs
-url: /unlock-excel-files/
-aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
+url: /ja/unlock-excel-files/
+aliases: [  /ja/unlock/without-storage/ , /ja/unlock/ , /ja/unlock/without-using-storage/ ]
 keywords: "Excel のロック解除, Aspose.Cells Cloud, REST API, Excel ロック解除, パスワード保護されたワークブック, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
 description: "Aspose.Cells Cloud REST API は、パスワードで保護された Excel ファイルのロックを解除するためのエンドポイントを提供します。SDK は Android、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby、Swift を含む複数のプログラミング言語で利用可能です。"
 ArticleTitle: "Aspose.Cells Cloud REST API を使用して Excel ファイルのロックを解除する"

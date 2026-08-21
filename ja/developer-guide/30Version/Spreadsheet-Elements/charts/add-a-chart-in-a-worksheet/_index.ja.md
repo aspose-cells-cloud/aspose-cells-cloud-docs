@@ -1,8 +1,8 @@
 ---
 title: "ワークシートにチャートを追加する"
 type: docs
-url: /charts/add/
-aliases: [/add-a-chart-in-a-worksheet/]
+url: /ja/charts/add/
+aliases: [  /ja/add-a-chart-in-a-worksheet/ ]
 weight: 20
 description: "Aspose.Cells Cloud API v3.0 を使用して Excel ワークシートにチャートを追加する方法を学びます。エンドポイント、パラメータ、cURL の例、SDK スニペットを含みます。"
 keywords:

@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Steigern Sie Ihre KI-Fähigkeiten: Lernen Sie Excel-Übersetzung, Aufgabenzerlegung und mehr kennen"
 linktitle: "KI"
 type: docs
-url: /ai/
+url: /de/ai/
 keywords: "Aspose.Cells, Cloud KI, Excel-Übersetzung, Aufgabenzerlegung, REST API"
 description: "Erforschen Sie Aspose.Cells Cloud KI zur Aufgabenzerlegung sowie zur Übersetzung von Excel-Arbeitsmappen und Textdateien. Enthält REST-Endpunkte, Beispielcode und Best Practices."
 weight: 20

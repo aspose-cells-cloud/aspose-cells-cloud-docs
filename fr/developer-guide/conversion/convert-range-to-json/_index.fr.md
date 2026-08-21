@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment convertir les données d'une plage de feuille de calcul locale en fichier JSON : guide étape par étape"
 linktitle: "Convertir une plage en JSON"
 type: docs
-url: /convert-range-to-json/
+url: /fr/convert-range-to-json/
 keywords: "convertir une plage en json, Aspose.Cells Cloud, Excel vers JSON, conversion de feuille de calcul, API"
 description: "Convertir une plage spécifique d'une feuille de calcul Excel locale en JSON à l'aide de l'API Aspose.Cells Cloud."
 weight: 100

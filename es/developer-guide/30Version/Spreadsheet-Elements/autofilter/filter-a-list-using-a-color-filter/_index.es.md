@@ -3,8 +3,8 @@ title: "Agregar un filtro de color en una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Agregar filtro de color"
 type: docs
-url: /autofilter/add-color-filter/
-aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
+url: /es/autofilter/add-color-filter/
+aliases: [  /es/filter-a-list-using-a-color-filter/ , /es/autofilter/add-a-color-filter/ ]
 keywords: "Excel, filtro de color, Aspose.Cells Cloud, API REST, filtro automático, autenticación JWT"
 description: "Aprenda cómo aplicar un filtro de color en una hoja de cálculo de Excel mediante la API de Aspose.Cells Cloud. Incluye el endpoint, parámetros, ejemplo de cURL, manejo de errores y ejemplos de SDK."
 weight: 65

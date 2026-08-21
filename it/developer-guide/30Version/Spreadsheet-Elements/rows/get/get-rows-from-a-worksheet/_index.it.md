@@ -4,7 +4,7 @@ second_title: "Documenti"
 linktype: "Righe"
 type: docs
 url: /it/rows/get/rows/
-aliases: [/it/get-row-from-a-worksheet/]
+aliases: [  /it/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API per l'ottenimento delle righe, righe del foglio di lavoro Excel, API REST, esempio cURL, esempi di SDK, .NET, Java, Python"
 description: "Scopri come recuperare informazioni sulle righe da un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include endpoint, parametri, autenticazione, codice cURL ed esempi di codice per SDK in C#, Java, Python e altro."
 weight: 10

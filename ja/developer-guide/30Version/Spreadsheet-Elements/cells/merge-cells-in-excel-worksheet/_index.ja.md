@@ -1,7 +1,7 @@
 ---
 title: "Excelワークシートでセルを結合する方法 – Aspose.Cells Cloud API (v3.0)"
 type: docs
-url: /merge-cells-in-excel-worksheet/
+url: /ja/merge-cells-in-excel-worksheet/
 weight: 110
 keywords: "セルの結合, Aspose.Cells, Cloud API, Excel"
 description: "Aspose.Cells Cloud REST API を使用して Excelワークシートでセルを結合するガイド。cURL および SDK の使用例を含みます。"

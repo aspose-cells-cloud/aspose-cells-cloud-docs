@@ -3,7 +3,7 @@ title: "Excel ワークブックのすべての数式を計算する"
 second_title: "Document"
 linktitle: "Calculate"
 type: docs
-url: /calculate-all-formulas-on-an-excel-file/
+url: /ja/calculate-all-formulas-on-an-excel-file/
 aliases:
   [/calculate-all-formulas-in-a-workbook/, /workbook/calculate-all-formulas/]
 keywords: "Aspose.Cells, 数式の計算, Excel API, クラウド SDK"

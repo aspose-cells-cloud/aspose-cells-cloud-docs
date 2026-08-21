@@ -3,8 +3,8 @@ title: "Alle Dokumenteigenschaften entfernen"
 second_title: "Dokument"
 linktitle: "Löschen"
 type: docs
-url: /document-properties/clear/
-aliases: [/remove-all-document-properties/]
+url: /de/document-properties/clear/
+aliases: [  /de/remove-all-document-properties/ ]
 keywords: "Aspose.Cells, Dokumenteigenschaften löschen, Excel-Eigenschaften löschen, REST API, Cloud-SDK, Tabellenkalkulation, API-Referenz"
 description: "Schritt-für-Schritt-Anleitung zum Entfernen aller benutzerdefinierten und Zurücksetzen aller integrierten Eigenschaften einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API."
 weight: 58

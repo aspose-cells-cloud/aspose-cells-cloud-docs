@@ -1,7 +1,7 @@
 ---
 title: "Ottieni collegamento ipertestuale del foglio di lavoro"
 type: docs
-url: /hyperlinks/get/
+url: /it/hyperlinks/get/
 keywords: "Aspose.Cells Cloud, ottieni collegamento ipertestuale del foglio di lavoro, API Excel per collegamenti ipertestuali, REST, autenticazione JWT, foglio di lavoro Excel, endpoint API"
 description: "Recupera un collegamento ipertestuale specifico da un foglio di lavoro Excel utilizzando l'API Aspose.Cells Cloud (versione 3.0). Include endpoint, parametri, esempio cURL, dettagli sull'autenticazione, gestione degli errori e frammenti di SDK."
 weight: 10

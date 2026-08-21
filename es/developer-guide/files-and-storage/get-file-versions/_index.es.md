@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Gestión de Excel en la nube: Recuperación rápida del historial de versiones de archivos en Aspose.Cells Cloud"
 linktitle: "Obtener versiones de archivos"
 type: docs
-url: /get-file-versions/
+url: /es/get-file-versions/
 keywords: "API de Aspose Cells, versiones de archivos, control de versiones de hojas de cálculo, API de almacenamiento en la nube, REST, historial de archivos de Excel"
 description: "Obtenga una lista completa del historial de versiones de cualquier archivo de Excel almacenado en Aspose.Cells Cloud. Admite selección de almacenamiento, autenticación y códigos de error detallados."
 weight: 100

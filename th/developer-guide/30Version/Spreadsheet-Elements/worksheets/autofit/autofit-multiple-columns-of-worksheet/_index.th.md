@@ -3,8 +3,8 @@ title: "ปรับขนาดคอลัมน์หลายคอลัม
 second_title: "เอกสาร"
 linktitle: "คอลัมน์"
 type: docs
-url: /worksheets/autofit/columns/
-aliases: [/autofit-multiple-columns-of-worksheet/]
+url: /th/worksheets/autofit/columns/
+aliases: [  /th/autofit-multiple-columns-of-worksheet/ ]
 keywords: "Aspose.Cells, ปรับขนาดคอลัมน์, Excel API, สเปรดชีตบนคลาวด์, REST"
 description: "เรียนรู้วิธีการปรับขนาดคอลัมน์หลายคอลัมน์ในสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 3.0) ซึ่งรวมถึง endpoint, พารามิเตอร์, ตัวอย่าง cURL, การจัดการข้อผิดพลาด และตัวอย่างโค้ด SDK สำหรับ C#, Java, Python และอื่นๆ"
 weight: 20

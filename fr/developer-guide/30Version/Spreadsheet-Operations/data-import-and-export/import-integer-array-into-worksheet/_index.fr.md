@@ -2,7 +2,7 @@
 title: "Importer un tableau d'entiers dans une feuille Excel"
 linktitle: "Importer un tableau d'entiers"
 type: docs
-url: /import-integer-array-into-excel-worksheet/
+url: /fr/import-integer-array-into-excel-worksheet/
 aliases:
   - /import-integer-array-into-excel-worksheet/
   - /import-integer-array-into-worksheet/

@@ -3,7 +3,7 @@ title: "تحويل ملف إكسل إلى SQL"
 second_title: "مستند"
 linktitle: "تحويل ملف إكسل إلى SQL"
 type: docs
-url: /convert-excel-file-to-sql-file/
+url: /ar/convert-excel-file-to-sql-file/
 keywords: "Aspose.Cells, تحويل إكسل إلى SQL, واجهة برمجة التطبيقات السحابية, تحويل جداول البيانات, REST"
 description: "استخدم واجهة برمجة التطبيقات السحابية REST الخاصة بـ Aspose.Cells لتحويل جداول بيانات إكسل إلى ملفات SQL. تدعم عدة SDKs ولغات برمجة لدمج سلس في تطبيقاتك."
 weight: 100

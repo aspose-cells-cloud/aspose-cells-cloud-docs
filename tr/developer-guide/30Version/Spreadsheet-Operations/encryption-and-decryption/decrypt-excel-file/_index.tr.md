@@ -3,8 +3,8 @@ title: "Bir Excel Çalışma Kitabını Şifresini Çözme"
 second_title: "Belge"
 linktitle: "Bir Excel dosyasının şifresini çözme"
 type: docs
-url: /excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+url: /tr/excel-file-decrypt/
+aliases: [  /tr/decrypt-excel-workbooks/ , /tr/workbook/decrypt/ ]
 keywords: "Aspose.Cells, Excel şifre çözme, REST API, bulut SDK"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabının şifresini nasıl çözeceğinizi öğrenin. Gerekli parametreleri, cURL örneğini, SDK kod örneklerini ve hata işleme ayrıntılarını içerir."
 ArticleTitle: "Aspose.Cells Cloud API Kullanarak Bir Excel Çalışma Kitabının Şifresini Nasıl Çözersiniz?"

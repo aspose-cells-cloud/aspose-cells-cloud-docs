@@ -3,7 +3,7 @@ title: "Excel Çalışma Kitabını Korumasını Kaldır – Aspose.Cells Cloud 
 second_title: "Belge"
 linktitle: "Excel Dosyasının Korumasını Kaldır"
 type: docs
-url: /excel-file-unprotect/
+url: /tr/excel-file-unprotect/
 aliases:
   - /unprotect-excel-workbooks/
   - /workbook/unprotect/

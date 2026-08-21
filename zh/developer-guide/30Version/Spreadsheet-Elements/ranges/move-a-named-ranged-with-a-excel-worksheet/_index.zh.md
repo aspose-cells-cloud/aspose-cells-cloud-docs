@@ -3,8 +3,8 @@ title: "使用 Excel 工作表移动命名区域"
 second_title: "文档"
 linktitle: "移动"
 type: docs
-url: /ranges/move/
-aliases: [/move-a-named-range-with-an-excel-worksheet/]
+url: /zh/ranges/move/
+aliases: [  /zh/move-a-named-range-with-an-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 移动命名区域, Excel 工作表, REST API, 区域移动, SDK 示例"
 description: "了解如何使用 Aspose.Cells Cloud REST API v3.0 在 Excel 工作表内移动命名区域，包括端点详情、身份验证、示例和 SDK 代码示例。"
 weight: 20

@@ -3,8 +3,8 @@ title: "对 Excel 工作表中的行进行分组"
 second_title: "文档"
 linktype: "分组"
 type: docs
-url: /rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
+url: /zh/rows/group/
+aliases: [  /zh/group-rows-in-excel-worksheet/ ]
 keywords: "分组行, Excel, Aspose.Cells Cloud, REST API, SDK, 工作表, Excel API"
 description: "使用 Aspose.Cells Cloud REST API 对 Excel 工作表中的行进行分组。支持多种 SDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go），便于集成。"
 weight: 60

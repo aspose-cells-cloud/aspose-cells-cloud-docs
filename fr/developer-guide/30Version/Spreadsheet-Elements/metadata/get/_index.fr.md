@@ -3,7 +3,7 @@ title: "Récupérer les métadonnées à partir de fichiers Excel"
 second_title: "Document"
 linktitle: "Récupération sans utiliser le stockage"
 type: docs
-url: /metadata/get/
+url: /fr/metadata/get/
 keywords: "Aspose.Cells, Excel, métadonnées, REST API, SDK cloud"
 description: "Récupérer les métadonnées intégrées ou personnalisées à partir de classeurs Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut le format de la requête, les paramètres, le code d’exemple des SDK et la gestion des erreurs."
 weight: 23

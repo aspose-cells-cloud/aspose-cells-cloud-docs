@@ -3,7 +3,7 @@ title: "حذف صفوف متعددة من ورقة عمل Excel"
 second_title: "وثيقة"
 linktitle: "الصفوف"
 type: docs
-url: /rows/delete/rows/
+url: /ar/rows/delete/rows/
 keywords: "Aspose.Cells Cloud, حذف الصفوف, حذف صفوف متعددة, ورقة عمل Excel, واجهة REST API, SDK"
 description: "تعرّف على كيفية حذف صف واحد أو أكثر من ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. يتضمّن تفاصيل نقطة النهاية، والمُعاملات، ومثالًا باستخدام cURL، وأمثلة للكود باستخدام SDKs بلغات برمجة متنوعة."
 weight: 80

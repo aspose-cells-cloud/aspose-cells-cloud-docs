@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasında Satırları Gizleme"
 second_title: "Belge"
 linktitle: "Gizle"
 type: docs
-url: /rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
+url: /tr/rows/hide/
+aliases: [  /tr/hide-rows-in-excel-worksheet/ ]
 keywords: "satırları gizle, Aspose.Cells Cloud, Excel API, REST, SDK"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında bir veya birden fazla satırı nasıl gizleyeceğinizi öğrenin. cURL örneği, SDK kod parçacıkları, parametreler, kimlik doğrulama, yanıt detayları ve hata yönetimi içerir."
 weight: 40

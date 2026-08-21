@@ -3,8 +3,8 @@ title: "Fusionar múltiples archivos de Excel en un solo libro"
 second_title: "Documentos"
 linktype: "Fusionar múltiples archivos de Excel"
 type: docs
-url: /merge-multi-files-into-excel/
-aliases: [/merge/multi-files/]
+url: /es/merge-multi-files-into-excel/
+aliases: [  /es/merge/multi-files/ ]
 keywords: "Aspose.Cells Cloud, fusionar múltiples archivos de Excel, API REST, fusión de hojas de cálculo, SDK en la nube"
 description: "Aprenda a fusionar varios libros de Excel en un solo archivo utilizando la API REST de Aspose.Cells Cloud (v3.0). Incluye el endpoint HTTPS, el comando cURL, ejemplos de SDK, parámetros requeridos y detalles sobre el manejo de errores."
 weight: 32

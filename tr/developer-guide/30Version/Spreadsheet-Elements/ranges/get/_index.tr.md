@@ -3,7 +3,7 @@ title: "Bir Excel Çalışma Sayfasından Aralık İçeriği Nasıl Alınır"
 second_title: "Belge"
 linktitle: "Al"
 type: docs
-url: /ranges/get/
+url: /tr/ranges/get/
 keywords: "Aspose.Cells, Excel, API, al, aralık, elektronik tablo, REST"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından aralık içeriğini nasıl alacağınızı öğrenin. İstek söz dizimini ve örnek kodu içerir."
 weight: 20

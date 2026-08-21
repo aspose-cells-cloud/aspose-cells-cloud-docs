@@ -3,7 +3,7 @@ title: "Comment mettre à jour le contenu d'une plage dans une feuille Excel"
 second_title: "Document"
 linktype: "Mise à jour"
 type: docs
-url: /ranges/update/
+url: /fr/ranges/update/
 keywords: "Excel, mise à jour de plage, Aspose.Cells Cloud, API REST, feuille de calcul, style de plage, valeurs de plage, hauteur de ligne, largeur de colonne"
 description: "Mettre à jour le contenu d'une plage dans une feuille Excel à l'aide de l'API REST Aspose.Cells Cloud. Modifier les styles, les valeurs, les hauteurs de ligne et les largeurs de colonne via les SDK pris en charge."
 weight: 20

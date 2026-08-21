@@ -4,7 +4,7 @@ ArticleTitle: "Grafiği PDF'ye Dönüştür – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktitle: "ConvertChartToPdf"
 type: docs
-url: /cells/convert/chart/pdf
+url: /tr/cells/convert/chart/pdf
 aliases: []
 keywords: "GrafiğiPDF'yeDönüştür, Aspose.Cells, PDF, grafik dönüştürme"
 description: "Yerel bir sürücüdeki bir elektronik tablo grafiğini PDF'ye dönüştürür."

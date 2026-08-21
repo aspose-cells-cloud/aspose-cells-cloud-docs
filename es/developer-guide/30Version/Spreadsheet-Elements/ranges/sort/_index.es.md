@@ -4,7 +4,7 @@ second_title: "Documentación"
 linktype: "Ordenar"
 type: docs
 keywords: "Ordenar rango, Aspose.Cells Cloud, API REST, Hoja de cálculo, Excel, API"
-url: /ranges/sort/es/
+url: /es/ranges/sort/es/
 description: Proporciona una API para ordenar un rango de celdas dentro de un libro de trabajo utilizando Aspose.Cells Cloud.
 weight: 20
 ---

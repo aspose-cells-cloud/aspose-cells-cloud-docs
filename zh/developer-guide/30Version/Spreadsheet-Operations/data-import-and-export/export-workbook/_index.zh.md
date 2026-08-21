@@ -3,8 +3,8 @@ title: "导出工作簿"
 second_title: "文档"
 linktitle: "工作簿"
 type: docs
-url: /export-excel-to-different-formats/
-aliases: [/export/excel-to-different-formats/]
+url: /zh/export-excel-to-different-formats/
+aliases: [  /zh/export/excel-to-different-formats/ ]
 keywords: "Aspose.Cells Cloud, Excel 导出, 工作簿转换, PDF, CSV, JSON, 图像格式, 电子表格 API, XLSX, ODS, PNG"
 description: "逐步指南：使用 Aspose.Cells Cloud REST API 和 SDK 将 Excel 工作簿导出为多种格式，包括 PDF、CSV、JSON 及各种图像类型。"
 weight: 20

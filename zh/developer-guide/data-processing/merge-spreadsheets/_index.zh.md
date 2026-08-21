@@ -4,7 +4,7 @@ secondtitle: "文档"
 articletitle: "将多个 Excel 文件合并为一个 — 批量合并电子表格为 30 多种格式"
 linktitle: "合并电子表格"
 type: docs
-url: /merge-spreadsheets/
+url: /zh/merge-spreadsheets/
 keywords: "Aspose.Cells, 合并电子表格, Excel API, 云电子表格, 批量合并, PDF 转换, CSV 合并, ODS 合并, API 参考, SDK"
 description: "使用 Aspose.Cells Cloud 将多个本地 Excel、CSV 或 ODS 文件合并为一个工作簿，并将结果转换为 30 多种格式（PDF、HTML 等）。包含端点说明、参数说明、认证指南及 SDK 示例。"
 weight: 100

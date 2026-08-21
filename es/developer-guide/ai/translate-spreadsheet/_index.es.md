@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cómo traducir una hoja de cálculo completa utilizando la API de traducción por IA de Aspose.Cells Cloud"
 linktitle: "Traducir hoja de cálculo"
 type: docs
-url: /translate-spreadsheet/
+url: /es/translate-spreadsheet/
 keywords: "Aspose.Cells Cloud, API de traducción de hojas de cálculo, traducción por IA, traducción de hojas de cálculo, targetLanguage, traducción multi-hoja, procesamiento en la nube de hojas de cálculo, traducción de Aspose.Cells Cloud"
 description: "Traduzca un libro de Excel completo con Aspose.Cells Cloud por IA. Preserva fórmulas, gráficos y formato al convertir el texto a cualquier idioma admitido. Aprenda sobre el punto final, los parámetros, ejemplos de SDK, límites y manejo de errores."
 weight: 100

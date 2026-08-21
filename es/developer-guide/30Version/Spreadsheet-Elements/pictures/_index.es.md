@@ -3,8 +3,8 @@ title: "Trabajar con imágenes de Excel"
 second_title: "Documentos"
 linktype: "Imágenes"
 type: docs
-url: /pictures/
-aliases: [/working-with-pictures/]
+url: /es/pictures/
+aliases: [  /es/working-with-pictures/ ]
 keywords: "Excel, imagen, Aspose.Cells Cloud, API REST, manejo de imágenes, imágenes de Excel"
 description: "Aprenda a recuperar, agregar, actualizar y eliminar imágenes en hojas de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. Incluye ejemplos de código en C#, Java, Python y más."
 weight: 100

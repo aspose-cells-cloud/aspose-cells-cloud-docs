@@ -3,7 +3,7 @@ title: "Dölj kolumner i ett Excel-arbetsark"
 second_title: "Dokument"
 linktitle: "Dölj"
 type: docs
-url: /columns/hide/
+url: /sv/columns/hide/
 aliases:
   - /hide-columns-in-excel-worksheet/
   - /hide-columns-in-an-excel-worksheet/

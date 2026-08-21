@@ -1,7 +1,7 @@
 ---
 title: "الحصول على محور القيمة الثاني للرسم البياني"
 type: docs
-url: /charts/second-value-axis/get/
+url: /ar/charts/second-value-axis/get/
 weight: 60
 keywords: Aspose.Cells, محور القيمة الثاني للرسم البياني, Excel, واجهة برمجة تطبيقات REST, سحابة, واجهة برمجة تطبيقات, محور الرسم البياني في Excel
 description: استرداد المحور الثاني للقيمة لرسم بياني محدّد في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST.

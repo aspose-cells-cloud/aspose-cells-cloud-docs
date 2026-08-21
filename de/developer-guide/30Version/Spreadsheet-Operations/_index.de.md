@@ -2,7 +2,7 @@
 title: "Tabellenkalkulationsoperationen"
 second_title: "Dokument"
 type: docs
-url: /spreadsheet-operations/
+url: /de/spreadsheet-operations/
 keywords: "Aspose Cells Cloud, Excel API, Tabellenkalkulationsoperationen, automatische Anpassung, Batch-Verarbeitung, Dateischutz, Konvertierung, Import/Export, Textverarbeitung"
 description: "Erfahren Sie, wie Sie Tabellenkalkulationsoperationen wie automatische Anpassung, Batch-Konvertierung, Schutz, Zusammenführung sowie Suchen und Ersetzen mithilfe der Aspose.Cells Cloud REST API durchführen können. Enthält knappe Nutzungshinweise und Codebeispiel-Anleitungen."
 weight: 100

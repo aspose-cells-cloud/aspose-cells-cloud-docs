@@ -3,8 +3,8 @@ title: "水平改ページの取得"
 second_title: "Document"
 linktitle: "水平改ページの取得"
 type: docs
-url: /page-breaks/get-horizontal-page-breaks/
-aliases: [/get-horizontal-page-breaks-inside-worksheet/]
+url: /ja/page-breaks/get-horizontal-page-breaks/
+aliases: [  /ja/get-horizontal-page-breaks-inside-worksheet/ ]
 keywords: "水平改ページ, Aspose.Cells Cloud, REST API, Excelワークシート, SDK"
 description: "Aspose.Cells Cloud API を使用して Excel ワークシートから水平改ページを取得します。エンドポイント、パラメーター、cURL の使用例、応答形式、および C#、Java、Python など various 言語向けの SDK スニペットを含みます。"
 ArticleTitle: "水平改ページの取得 - Aspose.Cells Cloud API ドキュメント"

@@ -3,8 +3,8 @@ title: "Mover una tabla dinámica en un archivo de Excel"
 second_title: "Document"
 linktype: Mover
 type: docs
-url: /pivot-tables/move/
-aliases: [/move-pivot-table/]
+url: /es/pivot-tables/move/
+aliases: [  /es/move-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, mover tabla dinámica, Excel, API REST, SDK, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
 description: "Aprenda a utilizar la API REST de Aspose.Cells Cloud para mover una tabla dinámica dentro de un libro de Excel. Los SDK están disponibles para Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby y Swift."
 weight: 120

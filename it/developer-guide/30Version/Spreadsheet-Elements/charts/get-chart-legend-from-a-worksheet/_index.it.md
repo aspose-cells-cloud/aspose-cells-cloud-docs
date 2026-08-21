@@ -2,7 +2,7 @@
 title: "Ottenere la legenda di un grafico da un foglio di lavoro"
 type: docs
 url: /it/charts/legend/get/
-aliases: [/it/get-chart-legend-from-a-worksheet/]
+aliases: [  /it/get-chart-legend-from-a-worksheet/ ]
 weight: 80
 keywords: "Aspose.Cells, legenda del grafico, REST API, Excel, SDK cloud, ottenere la legenda del grafico, foglio di lavoro, foglio elettronico"
 description: "Recupera la legenda di un grafico da un foglio di lavoro specifico in un file Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include endpoint, parametri, esempio cURL e frammenti di SDK."

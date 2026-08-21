@@ -1,7 +1,7 @@
 ---
 title: "MinDataRow aus Excel-Arbeitsblatt abrufen"
 type: docs
-url: /get-mindatarow-from-excel-worksheet/
+url: /de/get-mindatarow-from-excel-worksheet/
 weight: 90
 keywords: "Aspose Cells, MinDataRow, Excel-API, Cloud SDK"
 description: "Abrufen des Index der ersten Datenzeile eines Arbeitsblatts mithilfe der Aspose.Cells Cloud API v3.0. Enthält Anforderungsmuster, Parameter, Beispiel-cURL, Antwortbeispiel, HTTP-Statuscodes und SDK-Snippets."

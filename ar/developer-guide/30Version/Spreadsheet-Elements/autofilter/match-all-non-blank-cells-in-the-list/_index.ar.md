@@ -3,8 +3,8 @@ title: "مطابقة جميع الخلايا غير الفارغة في ورقة
 second_title: "مستند"
 linktype: "مطابقة جميع الخلايا غير الفارغة"
 type: docs
-url: /autofilter/match-all-non-blank/
-aliases: [/match-all-non-blank-cells-in-the-list/]
+url: /ar/autofilter/match-all-non-blank/
+aliases: [  /ar/match-all-non-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells Cloud، مطابقة الخلايا غير الفارغة، AutoFilter، واجهة برمجة تطبيقات Excel"
 description: "تعرّف على كيفية استخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API لمطابقة جميع الخلايا غير الفارغة في قائمة AutoFilter في ورقة عمل Excel. يشمل ذلك عنوان_endpoint_، المَعلمات، المصادقة، مخطط الاستجابة، رموز الأخطاء، وأمثلة SDK."
 ArticleTitle: "مطابقة جميع الخلايا غير الفارغة في ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud"

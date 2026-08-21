@@ -4,8 +4,8 @@ ArticleTitle: "处理 Excel 单元格 – Aspose.Cells Cloud 文档"
 second_title: "文档"
 linktitle: "单元格"
 type: docs
-url: /working-with-cells/
-aliases: [/working-with-worksheets/]
+url: /zh/working-with-cells/
+aliases: [  /zh/working-with-worksheets/ ]
 keywords: "Excel, Aspose.Cells, 单元格操作, 电子表格 API, REST API, 单元格样式设置, 单元格合并, 公式计算"
 description: "探索 Aspose.Cells Cloud API 中针对 Excel 单元格的操作功能，包括设置单元格值、应用样式、合并/取消合并单元格以及公式计算等。"
 weight: 100

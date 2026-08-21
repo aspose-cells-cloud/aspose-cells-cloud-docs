@@ -4,7 +4,7 @@ second_title: "Documentación"
 ArticleTitle: "Buscar texto en hojas de cálculo de Excel locales – Encontrar datos específicos"
 linktitle: "Buscar contenido de hoja de cálculo"
 type: docs
-url: /search-spreadsheet-content/
+url: /es/search-spreadsheet-content/
 keywords: "Aspose.Cells, API de búsqueda en Excel, búsqueda de contenido en hojas de cálculo, API de hojas de cálculo en la nube, búsqueda de texto"
 description: "Utilice la API de Aspose.Cells Cloud para buscar texto, números o fórmulas en archivos locales de Excel. Admite consultas que no distinguen mayúsculas de minúsculas, alcance a nivel de hoja de cálculo y autenticación segura."
 weight: 100

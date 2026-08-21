@@ -3,8 +3,8 @@ title: "Trabajo con filtros de tabla dinámica"
 second_title: "Documento"
 linktitle: Filtros
 type: docs
-url: /pivot-tables/add-filters/
-aliases: [/working-with-pivot-filters/]
+url: /es/pivot-tables/add-filters/
+aliases: [  /es/working-with-pivot-filters/ ]
 keywords: "Aspose.Cells, Tabla dinámica, Filtro, API REST, Nube"
 description: "Aprenda cómo agregar, recuperar y eliminar filtros de tabla dinámica mediante la API REST de Aspose.Cells Cloud. Incluye sintaxis de solicitud, parámetros necesarios, ejemplo de cURL y fragmentos de código para C# y Go."
 weight: 50

@@ -3,7 +3,7 @@ title: "Excel Çalışma Sayfasına Çift Diziyi İçe Aktar"
 second_title: "Belge"
 linktitle: "Çift diziyi içe aktar"
 type: docs
-url: /import-double-array-into-excel-worksheet/
+url: /tr/import-double-array-into-excel-worksheet/
 aliases:
   - /import-double-array-into-worksheet/
   - /import-data/double-array/

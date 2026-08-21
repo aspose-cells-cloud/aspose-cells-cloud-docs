@@ -3,8 +3,8 @@ title: "Révéler une feuille Excel"
 second_title: "Document"
 linktitle: "Révéler"
 type: docs
-url: /worksheets/unhide/
-aliases: [/unhide-excel-worksheets/]
+url: /fr/worksheets/unhide/
+aliases: [  /fr/unhide-excel-worksheets/ ]
 keywords: "Aspose.Cells, révéler une feuille, API Excel, classeur cloud, REST, visibilité de feuille, classeur Excel"
 description: "Découvrez comment utiliser l’API REST Aspose.Cells Cloud pour révéler une feuille dans un classeur Excel. Inclut les détails de la requête, des exemples cURL et des extraits de code SDK pour plusieurs langages de programmation."
 weight: 60

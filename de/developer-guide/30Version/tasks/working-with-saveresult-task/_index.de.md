@@ -2,8 +2,8 @@
 title: "Arbeiten mit der SaveResult-Aufgabe"
 second_title: "Dokument"
 type: docs
-url: /tasks/save-result/
-aliases: [/working-with-saveresult-task/]
+url: /de/tasks/save-result/
+aliases: [  /de/working-with-saveresult-task/ ]
 keywords: "SaveResult-Aufgabe, Aspose.Cells Cloud API, Ergebnis exportieren, Arbeitsmappe herunterladen, Cloud-Speicher, REST-API, Tabellenkalkulationen, Excel"
 description: "Erfahren Sie, wie Sie die SaveResult-Aufgabe in der Aspose.Cells Cloud API verwenden, um verarbeitete Arbeitsmappendaten in den Cloud-Speicher zu exportieren oder direkt herunterzuladen. Enthält cURL-, Java- und .NET-Beispiele sowie eine vollständige Parameterreferenz."
 weight: 50

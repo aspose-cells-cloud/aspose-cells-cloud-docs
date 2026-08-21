@@ -5,7 +5,7 @@ second_title: "ドキュメント"
 type: docs
 linktitle: "ハイパーリンク"
 url: /ja/hyperlinks/
-aliases: [/ja/working-with-hyperlinks/, /ja/working-with-hyperlink/]
+aliases: [  /ja/working-with-hyperlinks/ , /ja/working-with-hyperlink/ ]
 keywords: "Excel, ハイパーリンク, Cells.Cloud, API, Aspose.Cells, スプレッドシート, リンク, ガイド"
 description: "Aspose Cells Cloud API を使用して Excel ハイパーリンクを取得、追加、更新、削除する方法を確認します。"
 weight: 100

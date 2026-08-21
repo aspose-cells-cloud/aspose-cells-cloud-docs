@@ -1,7 +1,7 @@
 ---
 title: "セルにリッチテキストの書式を適用する"
 type: docs
-url: /apply-rich-text-formatting-to-a-cell/
+url: /ja/apply-rich-text-formatting-to-a-cell/
 weight: 40
 keywords: "Aspose.Cells, Excel, リッチテキスト, セル書式, REST API, Aspose.Cells Cloud"
 description: "Aspose.Cells Cloud REST API を使用して、特定の Excel セルにリッチテキストの書式を適用する方法を学びます。リクエスト構文、パラメーターの詳細、cURL の例、SDK スニペットを含みます。"

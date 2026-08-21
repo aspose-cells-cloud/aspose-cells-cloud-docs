@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Dela Excel-fil i molnet för att separera filer & exportera till 30+ format"
 linktitle: "Dela fjärrkalkylblad i molnet"
 type: docs
-url: /split-remote-spreadsheet/
+url: /sv/split-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, dela Excel-arbetsbok, kalkylbladssplittrare, moln-API, exportera till PDF, exportera till CSV, exportera till JSON, flera formatexport, kalkylbladsbehandling i molnet"
 description: "Använd Aspose.Cells Cloud API för att dela en Excel-arbetsbok som lagras i molnlagring i separata kalkylblad och exportera varje del till över 30 format såsom PDF, CSV, JSON, XLSX, HTML, ODS och XPS."
 weight: 100

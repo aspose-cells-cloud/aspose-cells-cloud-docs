@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment compresser des fichiers Excel – Réduire la taille des feuilles de calcul et optimiser les performances"
 linktype: "Compresser la feuille de calcul"
 type: docs
-url: /compress-spreadsheet/
+url: /fr/compress-spreadsheet/
 keywords: "compression Excel, Aspose.Cells Cloud, réduction de la taille des feuilles de calcul, API, optimisation du classeur"
 description: "Découvrez comment compresser des classeurs Excel à l’aide de l’API Aspose.Cells Cloud. Obtenez des exemples détaillés pas à pas, les paramètres, l’authentification et les meilleures pratiques."
 weight: 100

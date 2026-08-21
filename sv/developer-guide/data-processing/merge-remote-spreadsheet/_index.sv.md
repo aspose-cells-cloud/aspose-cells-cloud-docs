@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud"
 ArticleTitle: "Sammanfoga Excel-filer i molnet – Kombinera kalkylblad online med Aspose.Cells Cloud API"
 linktitle: "Sammanfoga fjärrkalkylblad"
 type: docs
-url: /merge-remote-spreadsheet/
+url: /sv/merge-remote-spreadsheet/
 keywords: "Aspose.Cells, sammanfoga Excel, moln-API, kombinera kalkylblad"
 description: "Sammanfoga Excel-arbetsböcker lagrade i molnlagring med Aspose.Cells Cloud API. Angiv utdataformat, målmapp och sammanfogningsläge i ett enda HTTPS-anrop."
 weight: 100

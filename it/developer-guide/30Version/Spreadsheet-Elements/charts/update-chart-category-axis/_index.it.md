@@ -1,7 +1,7 @@
 ---
 title: "Aggiorna l'asse delle categorie del grafico"
 type: docs
-url: /charts/category-axis/update/
+url: /it/charts/category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Grafico, Asse delle categorie, REST API, Excel, Cloud SDK"
 description: "Aggiorna l'asse delle categorie di un grafico in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud."

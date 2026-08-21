@@ -4,7 +4,7 @@ second_title: "文档"
 articleTitle: "多源数据集成 Excel 平台 —— Aspose.Cells Cloud 自动化数据导入与转换 API"
 linktype: "导入数据到工作表"
 type: docs
-url: /import-data-into-spreadsheet/
+url: /zh/import-data-into-spreadsheet/
 keywords: "Aspose Cells, 数据导入 API, CSV 转 Excel, JSON 转 Excel, XML 转 Excel, 云工作表, REST API"
 description: "使用 Aspose.Cells Cloud REST API 将 CSV、JSON 或 XML 数据导入 Excel 工作表。了解请求格式、参数、示例 SDK 代码和错误处理。"
 weight: 100

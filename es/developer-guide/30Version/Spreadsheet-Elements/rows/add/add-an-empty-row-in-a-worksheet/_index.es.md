@@ -4,8 +4,8 @@ ArticleTitle: "Agregar una fila vacía a una hoja de cálculo de Excel utilizand
 second_title: "Documentos"
 linktitle: "Fila"
 type: docs
-url: /rows/add/row/
-aliases: [/add-an-empty-row-in-a-worksheet/]
+url: /es/rows/add/row/
+aliases: [  /es/add-an-empty-row-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, agregar fila vacía, hoja de cálculo, API REST, insertar fila, hoja de cálculo en la nube"
 description: "Utilice la API REST de Aspose.Cells Cloud para insertar una fila vacía en una hoja de cálculo de Excel. Admite múltiples SDK (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) para un desarrollo rápido."
 weight: 20

@@ -3,7 +3,7 @@ title: "스프레드시트의 모든 텍스트 항목 검색"
 ArticleTitle: "스프레드시트의 모든 텍스트 항목 검색 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: /cells/search/content/all-textitems
+url: /ko/cells/search/content/all-textitems
 aliases: []
 keywords: "Aspose.Cells, 검색, 텍스트 항목, API"
 description: "Aspose.Cells Cloud API를 사용하여 스프레드시트 파일 내의 모든 텍스트 항목을 검색합니다."

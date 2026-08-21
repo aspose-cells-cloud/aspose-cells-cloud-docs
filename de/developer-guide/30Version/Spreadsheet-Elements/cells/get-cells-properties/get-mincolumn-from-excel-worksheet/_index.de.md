@@ -1,7 +1,7 @@
 ---
 title: "MinSpalte aus Excel-Arbeitsblatt abrufen"
 type: docs
-url: /get-mincolumn-from-excel-worksheet/
+url: /de/get-mincolumn-from-excel-worksheet/
 weight: 100
 keywords: Excel, Aspose.Cells Cloud, REST API, MinSpalte abrufen, Arbeitsblatt, SDK, Cloud API
 description: Abrufen des minimalen Spaltenindex mit Daten in einem Arbeitsblatt einer Excel-Datei über die Aspose.Cells Cloud REST API.

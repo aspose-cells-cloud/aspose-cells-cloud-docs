@@ -2,7 +2,7 @@
 title: "Excel Dosyalarını Toplu Kilitleyin"
 second_title: "Belge"
 type: docs
-url: /batch/lock
+url: /tr/batch/lock
 keywords: "toplu kilit, Excel, Aspose.Cells, Bulut API'si, elektronik tablo, dosya koruma"
 description: "Aspose.Cells Cloud API, birden fazla Excel dosyasını toplu olarak kilitlemenizi sağlar. Dosyaları toplu kilitlemek için REST uç noktası veya desteklenen SDK'ların herhangi birini (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go vb.) kullanın."
 weight: 100

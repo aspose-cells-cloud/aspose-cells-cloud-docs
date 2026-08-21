@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать табличные данные локальной электронной таблицы в файл JSON: пошаговое руководство"
 linktype: "Преобразование таблицы в JSON"
 type: docs
-url: /convert-table-to-json/
+url: /ru/convert-table-to-json/
 keywords: "Excel, API, JSON, преобразование, облако, файл, электронная таблица"
 description: "Используйте Aspose.Cells Cloud API для преобразования локальной таблицы Excel в файл JSON за один PUT-запрос. Включает пример cURL, параметры и фрагменты кода SDK для C#, Java, Python и других языков."
 weight: 100

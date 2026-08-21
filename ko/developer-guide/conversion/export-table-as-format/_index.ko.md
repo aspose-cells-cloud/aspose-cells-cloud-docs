@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "원격 스프레드시트 표를 다른 형식으로 내보내는 방법: 단계별 가이드"
 linktitle: "표를 지정된 형식으로 내보내기"
 type: docs
-url: /export-table-as-format/
+url: /ko/export-table-as-format/
 keywords: "Aspose.Cells, 표 내보내기, Excel을 PDF로, 클라우드 API, REST"
 description: "Aspose.Cells Cloud API를 사용하여 원격 Excel 표를 PDF, PNG, CSV, JSON 또는 기타 형식으로 내보냅니다. JWT 인증이 필요한 안전한 HTTPS 엔드포인트 및 SDK 예제 제공."
 weight: 100

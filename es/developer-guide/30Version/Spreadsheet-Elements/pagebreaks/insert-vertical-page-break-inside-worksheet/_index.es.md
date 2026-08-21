@@ -3,8 +3,8 @@ title: "Agregar un salto de página vertical"
 second_title: "Documento"
 linktitle: "Agregar un salto de página vertical"
 type: docs
-url: /page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
+url: /es/page-breaks/add-vertical-page-break/
+aliases: [  /es/insert-vertical-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, salto de página vertical, API REST, Excel, SDK, cURL"
 description: "Aprenda cómo insertar un salto de página vertical en una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud (v3.0). Incluye sintaxis de solicitud, ejemplo con cURL, ejemplos de SDK, guía de autenticación y detalles sobre manejo de errores."
 weight: 40

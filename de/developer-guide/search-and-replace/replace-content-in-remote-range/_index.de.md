@@ -4,7 +4,7 @@ second_title: "Dokumentation"
 ArticleTitle: "Massenhaftes Ersetzen von Text in Cloud-Excel-Dateien – Find & Replace API"
 linktitle: "Inhalt entfernter Bereiche ersetzen"
 type: docs
-url: /replace-content-in-remote-range/
+url: /de/replace-content-in-remote-range/
 keywords: "Text in entferntem Excel-Bereich ersetzen, Aspose.Cells Cloud API, Excel finden und ersetzen, Cloud-Tabelleneditor, entfernte Excel-Datei aktualisieren"
 description: "Verwenden Sie Aspose.Cells Cloud, um Text in einem bestimmten Bereich einer entfernten Excel-Datei zu suchen und zu ersetzen. Unterstützt Authentifizierung, Fehlerbehandlung und mehrsprachige SDKs."
 weight: 100

@@ -2,7 +2,7 @@
 title: "تحديث المحور القيمي الثاني للرسم البياني"
 ArticleTitle: "تحديث المحور القيمي الثاني للرسم البياني – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/second-value-axis/update/
+url: /ar/charts/second-value-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Chart API, Second Value Axis, Excel, REST, Cloud SDK"
 description: "تحديث المحور القيمي الثاني للرسم البياني في ورقة عمل Excel باستخدام Aspose.Cells Cloud REST API. يتضمن أمثلة على الطلبات وأكواد الاستجابة والمتطلبات الأساسية."

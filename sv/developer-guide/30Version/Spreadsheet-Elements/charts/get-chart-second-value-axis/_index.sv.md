@@ -1,7 +1,7 @@
 ---
 title: "Hämta andrahandsvärdeaxel för diagram"
 type: docs
-url: /charts/second-value-axis/get/
+url: /sv/charts/second-value-axis/get/
 weight: 60
 keywords: Aspose.Cells, diagram andrahandsvärdeaxel, Excel, REST API, moln, API, Excel-diagramaxel
 description: Hämtar andrahandsvärdeaxeln för ett angivet diagram i ett Excel-ark med hjälp av Aspose.Cells Cloud REST API.

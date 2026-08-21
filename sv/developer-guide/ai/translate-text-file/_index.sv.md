@@ -4,7 +4,7 @@ secondtitle: "Dokument"
 ArticleTitle: "Hur man översätter textfiler med Aspose.Cells Cloud AI-översättnings-API"
 linktitle: "Översätt textfil"
 type: docs
-url: /translate-text-file/
+url: /sv/translate-text-file/
 keywords: "Aspose.Cells, Cloud API, AI-översättning, översätt textfil, multilingual konvertering, REST PUT, målspråkskod, filuppladdningsöversättning, översättning av ren text, kalkylblad AI"
 description: "Lär dig hur du använder Aspose.Cells Cloud AI TranslateTextFile-slutpunkten för att konvertera textfiler till valfritt stödd språk. Stödjer både multipart-filuppladdning och ren text i förfrågansbrödtext, bevarar formatet och returnerar en nedladdningsbar översatt fil."
 weight: 100

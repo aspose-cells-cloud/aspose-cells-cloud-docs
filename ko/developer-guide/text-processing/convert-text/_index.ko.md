@@ -4,7 +4,7 @@ secondtitle: "문서"
 articletitle: "Excel 데이터 클리너 - 텍스트를 숫자로 변환 및 불필요한 문자 제거"
 linktitle: "텍스트 변환"
 type: docs
-url: /convert-text/
+url: /ko/convert-text/
 keywords: "Aspose.Cells 텍스트 변환, Excel 텍스트를 숫자로, Excel 특수 문자 제거, Excel 줄 바꿈 바꾸기, 악센트 문자 정규화, Excel 데이터 정리 API"
 description: "Aspose.Cells Cloud API를 사용하여 Excel 파일의 텍스트 형식 숫자를 숫자 값으로 변환하고, 불필요한 문자 및 줄 바꿈을 교체하며, 악센트 문자를 표준 문자로 정규화합니다."
 weight: 100

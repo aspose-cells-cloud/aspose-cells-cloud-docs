@@ -3,8 +3,8 @@ title: "Afficher des lignes masquées sur une feuille Excel"
 second_title: "Document"
 linktitle: "Afficher"
 type: docs
-url: /rows/unhide/
-aliases: [/unhide-rows-in-excel-worksheet/]
+url: /fr/rows/unhide/
+aliases: [  /fr/unhide-rows-in-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, afficher des lignes, API REST, classeur, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, API REST Aspose.Cells Cloud"
 description: "Utilisez l’API REST Aspose.Cells Cloud pour afficher des lignes masquées sur une feuille Excel. L’API est accessible via plusieurs SDK tels que .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl et Swift."
 weight: 50

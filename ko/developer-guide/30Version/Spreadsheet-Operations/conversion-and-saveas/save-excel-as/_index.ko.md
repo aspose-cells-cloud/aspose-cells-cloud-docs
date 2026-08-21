@@ -3,7 +3,7 @@ title: "Excel 워크북 저장 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktitle: "다른 형식으로 저장"
 type: docs
-url: /save-an-excel-file-as-other-formats-files/
+url: /ko/save-an-excel-file-as-other-formats-files/
 aliases:
   - /convert-excel-workbook-to-different-file-formats/
   - /saveas-other-formats/

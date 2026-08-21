@@ -3,8 +3,8 @@ title: "Uppdatera en form i ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Uppdatera"
 type: docs
-url: /shapes/update/
-aliases: [/update-a-shape-inside-the-worksheet/]
+url: /sv/shapes/update/
+aliases: [  /sv/update-a-shape-inside-the-worksheet/ ]
 keywords: "uppdatera form Excel API, Aspose.Cells Cloud, uppdatera Excel-form, REST API, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
 description: "Lär dig hur du uppdaterar en form i ett Excel-ark med Aspose.Cells Cloud REST API. Innehåller HTTPS-slutpunkt, autentiseringsuppgifter, DTO-schemat, steg-för-steg-användning, cURL-exempel och SDK-kodexempel för flera språk."
 ArticleTitle: "Uppdatera en form i ett Excel-ark – Aspose.Cells Cloud API"

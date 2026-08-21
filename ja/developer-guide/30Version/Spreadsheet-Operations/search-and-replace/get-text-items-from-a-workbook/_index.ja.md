@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud API を使用して Excel ワークブック�
 second_title: "ドキュメント"
 linktitle: "ワークブック内のテキスト項目を取得"
 type: docs
-url: /workbook/get-text-items/
-aliases: [/get-text-items-from-a-workbook/]
+url: /ja/workbook/get-text-items/
+aliases: [  /ja/get-text-items-from-a-workbook/ ]
 weight: 10
 keywords: "Excel, Aspose.Cells Cloud, REST API, スプレッドシート, テキスト項目の取得, ワークブック"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークブックからテキスト項目を取得します。C#、Java、Python、PHP、Ruby、Go、Node.js、Perl、Swift 向けの SDK で利用可能です。"

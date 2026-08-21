@@ -1,8 +1,8 @@
 ---
 title: "Diagrammeigenschaften aktualisieren"
 type: docs
-url: /charts/properties/update/
-aliases: [/update-chart-properties/]
+url: /de/charts/properties/update/
+aliases: [  /de/update-chart-properties/ ]
 weight: 160
 keywords: "Aspose.Cells, Diagramm, aktualisieren, Excel, REST API, SDK"
 description: "Erfahren Sie, wie Sie Diagrammeigenschaften (Typ, Titel, Legende usw.) in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API (v3.0) aktualisieren können. Enthält Endpunkt, Parameter, cURL-Beispiel und SDK-Snippets für C#, Java, PHP, Ruby, Node.js, Perl und Go."

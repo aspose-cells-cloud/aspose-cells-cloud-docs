@@ -2,7 +2,7 @@
 title: "배치 분할"
 second_title: "문서"
 type: docs
-url: /batch/split
+url: /ko/batch/split
 keywords: "배치 분할, Aspose.Cells Cloud, REST API, Excel, PDF, CSV, JSON, 스프레드시트, 클라우드 SDK"
 description: "Aspose.Cells Cloud 배치 분할 API에 대한 문서로, 스프레드시트 파일을 PDF, CSV 또는 JSON 등 여러 형식으로 분할합니다. 요청 세부 정보, 예제 cURL 명령어, 다양한 프로그래밍 언어에서의 SDK 사용법을 포함합니다."
 weight: 100

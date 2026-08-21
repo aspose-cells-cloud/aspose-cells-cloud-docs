@@ -2,7 +2,7 @@
 title: "Mettre à jour l’axe des valeurs secondaire d’un graphique"
 ArticleTitle: "Mettre à jour l’axe des valeurs secondaire d’un graphique – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/second-value-axis/update/
+url: /fr/charts/second-value-axis/update/
 weight: 160
 keywords: "Aspose.Cells, API graphique, Axe des valeurs secondaire, Excel, REST, SDK cloud"
 description: "Met à jour l’axe des valeurs secondaire d’un graphique dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut des exemples de requêtes, des codes de réponse et les conditions préalables."

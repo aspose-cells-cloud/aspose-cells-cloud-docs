@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud"
 ArticleTitle: "Excel-Dateien in der Cloud zusammenführen – Tabellen online mit Aspose.Cells Cloud API kombinieren"
 linktitle: "Fernes Tabellenblatt zusammenführen"
 type: docs
-url: /merge-remote-spreadsheet/
+url: /de/merge-remote-spreadsheet/
 keywords: "Aspose.Cells, Excel zusammenführen, Cloud-API, Tabellen kombinieren"
 description: "Excel-Arbeitsmappen, die in Cloud-Speicher gespeichert sind, mit der Aspose.Cells Cloud API zusammenführen. Geben Sie das Ausgabeformat, den Zielordner und den Zusammenführungsmodus in einem einzigen HTTPS-Aufruf an."
 weight: 100

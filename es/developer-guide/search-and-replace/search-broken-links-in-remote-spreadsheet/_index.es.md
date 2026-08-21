@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Buscar y corregir enlaces rotos en Excel remoto: verificador de enlaces en hojas de cálculo en la nube"
 linktype: "Buscar enlaces rotos en hojas de cálculo remotas"
 type: docs
-url: /search-broken-links-in-remote-spreadsheet/
+url: /es/search-broken-links-in-remote-spreadsheet/
 keywords: "Excel, enlaces rotos, API, nube, hoja de cálculo, validación, Aspose.Cells"
 description: "Utilice la API de Aspose.Cells Cloud para escanear libros de Excel remotos en busca de enlaces externos rotos, fórmulas inválidas y fuentes de datos ausentes."
 weight: 100

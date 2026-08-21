@@ -4,7 +4,7 @@ ArticleTitle: "الحصول على أوراق العمل باستخدام ملف
 second_title: "وثيقة"
 linktitle: "الحصول على أوراق العمل باستخدام ملف جدول بيانات محلي"
 type: docs
-url: /cells/spreadsheet/worksheets
+url: /ar/cells/spreadsheet/worksheets
 aliases: []
 keywords: "Aspose.Cells, أوراق العمل, ملف جدول بيانات محلي, API"
 description: "يُعيد قائمة كاملة بأوراق العمل من ملف جدول البيانات المحلي النشط حاليًا."

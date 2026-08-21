@@ -3,7 +3,7 @@ title: "ค้นหาข้อความทั้งหมดในสเป
 ArticleTitle: "ค้นหาข้อความทั้งหมดในสเปรดชีต – Aspose.Cells Cloud API"
 second_title: "เอกสาร"
 linktype: "docs"
-url: /cells/search/content/all-textitems
+url: /th/cells/search/content/all-textitems
 aliases: []
 keywords: "Aspose.Cells, ค้นหา, ข้อความ, API"
 description: "ค้นหาข้อความทั้งหมดภายในไฟล์สเปรดชีตโดยใช้ Aspose.Cells Cloud API"

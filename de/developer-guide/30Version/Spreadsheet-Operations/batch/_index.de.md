@@ -3,7 +3,7 @@ title: "Stapelverarbeitung von Excel-Dateien: Konvertieren, Sperren, Schützen, 
 second_title: "Dokument"
 linktitle: "Stapelverarbeitung von Excel-Dateien"
 type: docs
-url: /batch/
+url: /de/batch/
 keywords: "Stapelverarbeitung, Excel, Konvertierung, Sperren, Schützen, Aufteilen, Entsperren, Aspose.Cells Cloud API, API-Referenz, Stapeloperationen"
 description: "Die Aspose.Cells Cloud API ermöglicht die Stapelverarbeitung mehrerer Excel-Dateien für Konvertierung, Sperren, Schützen, Aufteilen und Entsperren. Enthält detaillierte API-Spezifikationen und SDK-Unterstützung für Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby und Swift."
 weight: 35

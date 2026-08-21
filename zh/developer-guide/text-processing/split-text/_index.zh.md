@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "Excel 文本分段器 – 将单元格内容分段为多列 | Aspose.Cells Cloud"
 linktitle: "拆分文本"
 type: docs
-url: /split-text/
+url: /zh/split-text/
 keywords: "Aspose, Cells, 拆分文本 API, Excel, 分隔符, 文本分段, 云 API"
 description: "使用 Aspose.Cells Cloud 轻松将 Excel 单元格文本拆分为独立的列或行。支持自定义分隔符、掩码、换行符以及可选的保留分隔符选项。几分钟内即可通过 curl 或 SDK 上手使用。"
 weight: 100

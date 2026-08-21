@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "แทนที่ข้อความจำนวนมากในไฟล์ Excel บนคลาวด์ – Find & Replace API"
 linktype: "แทนที่เนื้อหาในสมุดงาน Excel แบบเรียลไทม์"
 type: docs
-url: /replace-content-in-remote-spreadsheet/
+url: /th/replace-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, แทนที่เนื้อหา, สมุดงาน Excel แบบเรียลไทม์, Find & Replace API, Excel บนคลาวด์, การแทนที่ข้อความแบบแบทช์"
 description: "ใช้ Aspose.Cells Cloud Find & Replace API เพื่ออัปเดตข้อความจำนวนมากในสมุดงาน Excel บนคลาวด์ มี HTTPS endpoint ที่ปลอดภัย การยืนยันตัวตนด้วย OAuth2 และตัวอย่าง SDK พร้อมใช้งานสำหรับการผสานรวมอย่างรวดเร็ว"
 weight: 100

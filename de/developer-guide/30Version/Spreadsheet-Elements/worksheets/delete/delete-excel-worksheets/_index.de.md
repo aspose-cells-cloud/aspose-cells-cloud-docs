@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Mehrere Arbeitsblätter"
 type: docs
 url: /de/worksheets/delete-multiple/
-aliases: [/de/delete-excel-worksheets/]
+aliases: [  /de/delete-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, mehrere Arbeitsblätter löschen, Excel-API, REST-API, v3.0, Arbeitsblätter löschen"
 description: "Erfahren Sie, wie Sie mehrere Arbeitsblätter aus einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST-API (v3.0) löschen können. Enthält einen sicheren HTTPS-Endpunkt, erforderliche Parameter, ein korrigiertes cURL-Beispiel und SDK-Ausschnitte für mehrere Programmiersprachen."
 weight: 20

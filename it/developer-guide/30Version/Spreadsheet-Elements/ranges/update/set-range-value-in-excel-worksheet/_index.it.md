@@ -3,8 +3,8 @@ title: "Imposta il valore di un intervallo in un foglio di lavoro Excel"
 second_title: "Documento"
 linktitle: "Imposta valori"
 type: docs
-url: /ranges/update/values/
-aliases: [/set-range-value-in-excel-worksheet/]
+url: /it/ranges/update/values/
+aliases: [  /it/set-range-value-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, API Excel, imposta valore intervallo, API REST, SDK cloud, aggiornamento foglio di lavoro"
 description: "Scopri come impostare il valore di una cella o di un intervallo in un libro Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include endpoint, parametri, esempio cURL, codice di esempio con SDK e gestione degli errori."
 weight: 72

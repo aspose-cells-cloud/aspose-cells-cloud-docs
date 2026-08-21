@@ -3,7 +3,7 @@ title: "将双精度数组导入 Excel 工作表"
 second_title: "文档"
 linktitle: "导入双精度数组"
 type: docs
-url: /import-double-array-into-excel-worksheet/
+url: /zh/import-double-array-into-excel-worksheet/
 aliases:
   - /import-double-array-into-worksheet/
   - /import-data/double-array/

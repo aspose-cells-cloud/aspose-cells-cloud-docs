@@ -1,7 +1,7 @@
 ---
 title: "ExcelワークシートからMinColumnを取得する"
 type: docs
-url: /get-mincolumn-from-excel-worksheet/
+url: /ja/get-mincolumn-from-excel-worksheet/
 weight: 100
 keywords: Excel, Aspose.Cells Cloud, REST API, Get MinColumn, Worksheet, SDK, Cloud API
 description: Aspose.Cells Cloud REST API を使用して、Excelファイルのワークシート内にデータを含む最小列インデックスを取得します。

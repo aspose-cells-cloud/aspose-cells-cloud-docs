@@ -3,8 +3,8 @@ title: "Obtener datos de celdas según un rango con nombre"
 second_title: "Document"
 linktype: "Values"
 type: docs
-url: /ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
+url: /es/ranges/get/values/
+aliases: [  /es/get-cells-data-based-on-named-range/ ]
 keywords: "Aspose.Cells, Cloud, REST API, Excel, rango con nombre, valores de celda, hoja de cálculo"
 description: "Recuperar valores de celda desde un rango con nombre en una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. El servicio está disponible a través de múltiples SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) y funciona en una amplia gama de plataformas de desarrollo."
 weight: 20

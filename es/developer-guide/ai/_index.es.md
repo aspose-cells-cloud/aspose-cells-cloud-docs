@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Mejore sus habilidades en IA: Aprenda traducción de Excel, descomposición de tareas y más"
 linktitle: "IA"
 type: docs
-url: /ai/
+url: /es/ai/
 keywords: "Aspose.Cells, Cloud AI, traducción de Excel, descomposición de tareas, REST API"
 description: "Explore Aspose.Cells Cloud AI para descomponer tareas, traducir libros de Excel y archivos de texto. Incluye puntos finales REST, código de ejemplo y mejores prácticas."
 weight: 20

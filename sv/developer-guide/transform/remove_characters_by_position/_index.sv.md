@@ -4,7 +4,7 @@ ArticleTitle: "Ta bort tecken efter position – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Ta bort tecken efter position"
 type: docs
-url: /cells/content/remove/characters-by-position
+url: /sv/cells/content/remove/characters-by-position
 aliases: []
 keywords: "Aspose.Cells, Ta bort tecken, API"
 description: "Tar bort tecken från celler efter position i ett kalkylark."

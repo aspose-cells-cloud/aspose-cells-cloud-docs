@@ -3,8 +3,8 @@ title: "匹配 Excel 工作表中所有非空单元格"
 second_title: "文档"
 linktitle: "匹配所有非空单元格"
 type: docs
-url: /autofilter/match-all-non-blank/
-aliases: [/match-all-non-blank-cells-in-the-list/]
+url: /zh/autofilter/match-all-non-blank/
+aliases: [  /zh/match-all-non-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells Cloud, 匹配非空单元格, 自动筛选, Excel API"
 description: "了解如何使用 Aspose.Cells Cloud REST API 在 Excel 工作表的自动筛选列表中匹配所有非空单元格。内容包括端点、参数、身份验证、响应模式、错误代码以及 SDK 示例。"
 ArticleTitle: "使用 Aspose.Cells Cloud API 匹配 Excel 工作表中的所有非空单元格"

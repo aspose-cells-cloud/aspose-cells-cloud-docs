@@ -1,8 +1,8 @@
 ---
 title: "Fügen Sie einen Hyperlink zu einem Arbeitsblatt hinzu"
 type: docs
-url: /hyperlinks/add/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /de/hyperlinks/add/
+aliases: [  /de/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, Hyperlink hinzufügen, Excel REST API, Cloud SDK"
 description: "Erfahren Sie, wie Sie mit der Aspose.Cells Cloud v3.0 REST API einen Hyperlink zu einem Excel-Arbeitsblatt hinzufügen. Enthält Endpunkt, vollständige Parameteranleitung, cURL-Beispiel und SDK-Snippets für C#, Java, Python und mehr."
 weight: 20

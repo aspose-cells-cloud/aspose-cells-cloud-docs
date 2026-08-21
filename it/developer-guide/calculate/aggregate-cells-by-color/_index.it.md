@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Somma, Conteggio, Media, Valore Massimo e Minimo per Colore in Foglio Elettronico/Excel"
 LinkTitle: "Aggrega Celle per Colore"
 type: docs
-url: /aggregate-cells-by-color/
+url: /it/aggregate-cells-by-color/
 keywords: "Aspose, Cells, Excel, API, aggregate, color, sum, count, average, min, max"
 description: "Aggrega le celle di Excel in base al colore di sfondo o al colore del carattere (somma, conteggio, media, min, max) utilizzando l'API Aspose.Cells Cloud. Scopri l'endpoint, i parametri, l'autenticazione e gli esempi di SDK."
 weight: 100

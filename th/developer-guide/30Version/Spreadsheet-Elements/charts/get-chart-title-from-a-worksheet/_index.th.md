@@ -2,7 +2,7 @@
 title: "รับหัวเรื่องของแผนภูมิจากแผ่นงาน"
 type: docs
 url: /th/charts/title/get/
-aliases: [/get-chart-title-from-a-worksheet/]
+aliases: [  /th/get-chart-title-from-a-worksheet/ ]
 weight: 120
 keywords:
   - "Aspose.Cells Cloud"

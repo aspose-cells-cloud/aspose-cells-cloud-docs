@@ -2,7 +2,7 @@
 title: "清除超链接"
 type: docs
 url: /zh/hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+aliases: [  /zh/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, 清除超链接, 删除超链接, REST API, 工作表, SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API 或任意支持的 SDK（C#、Java、Python、Node.js、Go、PHP、Ruby、Perl 等）从 Excel 工作表中移除所有超链接。"
 weight: 40

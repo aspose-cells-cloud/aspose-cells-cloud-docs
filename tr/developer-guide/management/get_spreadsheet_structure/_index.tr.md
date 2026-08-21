@@ -4,7 +4,7 @@ ArticleTitle: "GetSpreadsheetStructure – Aspose.Cells Cloud"
 second_title: "Belge"
 linktitle: "GetSpreadsheetStructure"
 type: docs
-url: /cells/spreadsheet/structure
+url: /tr/cells/spreadsheet/structure
 aliases: []
 keywords: "Aspose.Cells, Elektronik Tablo Yapısı, API"
 description: "Bir Excel çalışma kitabının temel meta verilerini, çalışma sayfalarını, tablolarını, pivot tablolarını, grafiklerini, şekillerini ve diğer bilgilerini yapısal olarak bir JObject türünden JSON nesnesine dönüştürür."

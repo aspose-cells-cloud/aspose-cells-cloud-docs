@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud – 删除水平分页符（REST API）"
 second_title: "文档"
 linktitle: "删除水平分页符"
 type: docs
-url: /page-breaks/delete-horizontal-page-break/
-aliases: [/delete-horizontal-page-break-inside-worksheet/]
+url: /zh/page-breaks/delete-horizontal-page-break/
+aliases: [  /zh/delete-horizontal-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 删除水平分页符, Excel 工作表, REST API, SDK"
 description: "使用 Aspose.Cells Cloud REST API 从 Excel 工作表中删除水平分页符。提供 C#、Java、PHP、Ruby、Node.js、Python、Perl、Go 的 SDK。"
 weight: 50

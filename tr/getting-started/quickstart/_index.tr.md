@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud Hızlı Başlangıç"
 linktype: "Hızlı Başlangıç"
 type: docs
-url: /quickstart/
+url: /tr/quickstart/
 description: "Aspose.Cells Cloud, Excel dosyalarını oluşturma, dönüştürme, birleştirme, bölme, koruma ve çok sayıda diğer özellik içeren dahili nesne işlemlerini yapmanızı sağlar."
 weight: 20
 keywords: "Aspose.Cells Cloud, Excel, Elektronik Tablo, API, Bulut SDK, REST API, PDF, CSV, JSON, Hızlı Başlangıç"

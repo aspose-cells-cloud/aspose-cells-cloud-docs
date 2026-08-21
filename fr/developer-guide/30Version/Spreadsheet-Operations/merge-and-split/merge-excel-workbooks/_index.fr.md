@@ -3,8 +3,8 @@ title: "Fusionner un classeur Excel dans un autre classeur"
 second_title: "Document"
 linktitle: "Fusionner un classeur Excel dans un autre classeur"
 type: docs
-url: /merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
+url: /fr/merge-an-excel-file-into-the-excel-file/
+aliases: [  /fr/merge-excel-workbooks/ , /fr/workbook/merge/ ]
 keywords: "fusion Excel, Aspose.Cells Cloud, API classeur, API REST, fusion de feuilles de calcul, SDK cloud, authentification, mergeWith, exemple cURL"
 description: "Guide pas à pas pour fusionner un classeur Excel dans un autre à l'aide de l'API REST Aspose.Cells Cloud (v3.0). Inclut l'authentification, le paramètre mergeWith obligatoire, un exemple cURL et des extraits de code SDK."
 ArticleTitle: "Fusionner un classeur Excel dans un autre classeur à l'aide de l'API Aspose.Cells Cloud"

@@ -3,7 +3,7 @@ title: "Excelワークシートに空の列を追加する - Aspose.Cells Cloud 
 second_title: "ドキュメント"
 linktitle: "追加"
 type: docs
-url: /columns/add/
+url: /ja/columns/add/
 aliases:
   - /add-an-empty-column-in-an-excel-worksheet/
   - /add-an-empty-column-in-a-worksheet/

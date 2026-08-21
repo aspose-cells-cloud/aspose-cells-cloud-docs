@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktype: "diagram"
 type: docs
 url: /sv/charts/
-aliases: [/arbeta-med-diagram/]
+aliases: [  /sv/arbeta-med-diagram/ ]
 keywords: "Aspose, Cells, Excel, diagram, API, REST, moln, kalkylark"
 description: "Lär dig hur du hanterar Excel-diagram med Aspose.Cells Cloud API. Steg-för-steg-guide, kodexempel och felhantering för att hämta, lägga till, uppdatera, ta bort och konvertera diagram till bildformat."
 weight: 100

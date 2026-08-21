@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Ajouter un filtre d'icônes"
 type: docs
 url: /fr/autofilter/add-icon-filter/
-aliases: [/ajouter-un-filtre-d-icônes/,/fr/autofilter/add-icon-filter/]
+aliases: [  /fr/ajouter-un-filtre-d-icônes/ , /fr/autofilter/add-icon-filter/ ]
 keywords: "Aspose.Cells Cloud, Excel, Filtre d'icônes, Filtre automatique, API REST"
 description: "Découvrez comment ajouter un filtre d'icônes à une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud, avec les détails de la requête, un exemple cURL, des extraits de code SDK et la gestion des erreurs."
 weight: 65

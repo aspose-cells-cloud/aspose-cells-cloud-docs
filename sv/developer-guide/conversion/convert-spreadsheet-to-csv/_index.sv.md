@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man konverterar ett kalkylark till CSV med Aspose.Cells Cloud API"
 linktitle: "Konvertera kalkylark till CSV"
 type: docs
-url: /convert-spreadsheet-to-csv/
+url: /sv/convert-spreadsheet-to-csv/
 keywords: "Aspose Cells, CSV-konvertering, Excel API, molnkonvertering"
 description: "Lär dig hur du konverterar Excel-filer (XLS, XLSX, XLSM osv.) till CSV med Aspose.Cells Cloud API. Innehåller autentiseringssteg, cURL-exempel, SDK-kodavsnitt och felhantering."
 weight: 100

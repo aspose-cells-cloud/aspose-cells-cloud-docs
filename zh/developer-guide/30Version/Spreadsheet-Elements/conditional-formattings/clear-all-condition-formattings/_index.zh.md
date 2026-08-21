@@ -2,7 +2,7 @@
 title: "清除条件格式"
 type: docs
 url: /zh/conditional-formattings/clear/
-aliases: [/zh/clear-all-condition-formattings/]
+aliases: [  /zh/clear-all-condition-formattings/ ]
 keywords: "Aspose.Cells Cloud, REST API, 清除条件格式, Excel, 工作表, JWT, v3.2"
 description: "使用 Aspose.Cells Cloud API (v3.2) 从工作表中删除所有条件格式规则。了解请求语法、所需参数、认证步骤，并查看多种 SDK 的示例代码。"
 weight: 80

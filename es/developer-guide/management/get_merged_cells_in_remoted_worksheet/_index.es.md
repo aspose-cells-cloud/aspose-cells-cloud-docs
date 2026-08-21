@@ -4,7 +4,7 @@ ArticleTitle: "Obtener celdas fusionadas en hoja de cálculo remota – Aspose.C
 second_title: "Documentación"
 linktype: "Obtener celdas fusionadas en hoja de cálculo remota"
 type: docs
-url: /cells/mergedcells/get
+url: /es/cells/mergedcells/get
 aliases: []
 keywords: "Aspose Cells, Obtener celdas fusionadas, Hoja de cálculo remota, API"
 description: "Recupera todas las áreas de celdas fusionadas de una hoja de cálculo remota en un archivo de hoja de cálculo."

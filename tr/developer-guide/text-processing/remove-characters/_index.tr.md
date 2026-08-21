@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Excel Metin Temizleyici – Seçilen Aralık Üzerinden Karakterleri ve Alt Dizeleri Silme"
 linktitle: "Karakterleri Sil"
 type: docs
-url: /remove-characters/
+url: /tr/remove-characters/
 keywords: "Aspose.Cells, karakterleri sil, Excel API, metin temizleme, elektronik tablo"
 description: "Seçilen bir aralık içinde Excel hücrelerinden özel karakterleri, karakter kümelerini ve alt dizeleri silin. Aspose.Cells API’sini kullanarak belirli konumlardaki metni doğrulukla silin."
 weight: 100

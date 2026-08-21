@@ -4,8 +4,8 @@ ArticleTitle: "Excelのセルを操作する – Aspose.Cells Cloudドキュメ�
 second_title: "ドキュメント"
 linktitle: "セル"
 type: docs
-url: /working-with-cells/
-aliases: [/working-with-worksheets/]
+url: /ja/working-with-cells/
+aliases: [  /ja/working-with-worksheets/ ]
 keywords: "Excel, Aspose.Cells, セル操作, スプレッドシートAPI, REST API, セルの書式設定, セルの結合, 数式の計算"
 description: "Aspose.Cells Cloud API を使用して、Excel セル操作（値の設定、スタイルの適用、セルの結合／結合解除、数式の計算など）を実行します。"
 weight: 100

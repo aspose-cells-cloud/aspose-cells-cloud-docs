@@ -3,8 +3,8 @@ title: "Obtener una tabla dinámica en una hoja de cálculo de Excel"
 second_title: "Document"
 linktype: Get
 type: docs
-url: /pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
+url: /es/pivot-tables/get/
+aliases: [  /es/get-worksheet-pivot-table-information-by-index/ ]
 keywords: "Aspose.Cells, tabla dinámica, Excel, API REST, obtener tabla dinámica de hoja de cálculo"
 description: "Recuperar una tabla dinámica desde una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye sintaxis de solicitud, parámetros, autenticación, esquema de respuesta, manejo de errores y ejemplos de SDK."
 weight: 10

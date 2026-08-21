@@ -3,8 +3,8 @@ title: "الحصول على معلومات الصفوف من ورقة عمل Exc
 second_title: "Document"
 linktitle: "Rows"
 type: docs
-url: /rows/get/rows/
-aliases: [/get-row-from-a-worksheet/]
+url: /ar/rows/get/rows/
+aliases: [  /ar/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Get Rows API, Excel worksheet rows, REST API, مثال cURL, أمثلة SDK, .NET, Java, Python"
 description: "تعلم كيفية استرجاع معلومات الصفوف من ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API (النسخة 3.0). يتضمن الرابط_endpoint_، المعلمات، المصادقة، وأكواد الأمثلة باستخدام cURL وSDKات بلغات C# وJava وPython وغيرها."
 weight: 10

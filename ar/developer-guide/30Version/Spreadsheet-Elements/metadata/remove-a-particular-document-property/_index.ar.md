@@ -3,8 +3,8 @@ title: "حذف خاصية مستند محددة"
 second_title: "المستند"
 linktitle: "حذف"
 type: docs
-url: /document-properties/delete/
-aliases: [/remove-a-particular-document-property/]
+url: /ar/document-properties/delete/
+aliases: [  /ar/remove-a-particular-document-property/ ]
 keywords: "Aspose.Cells, حذف خاصية المستند, واجهة برمجة تطبيقات بيانات ميتا للإكسل, REST, وحدة تحكم سحابية, مثال cURL"
 description: "حذف خاصية مستند محددة من ملف عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API الإصدار 3.0. يتضمن أمثلة لـ cURL ووحدات التحكم (SDKs) لـ C# وJava وPython وغيرها."
 weight: 50

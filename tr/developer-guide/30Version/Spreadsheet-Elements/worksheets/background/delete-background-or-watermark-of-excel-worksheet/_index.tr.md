@@ -3,8 +3,8 @@ title: "Excel çalışma sayfasından arka planı silme"
 second_title: "Belge"
 linktitle: "Sil"
 type: docs
-url: /worksheets/background/delete/
-aliases: [/delete-background-or-watermark-of-excel-worksheet/]
+url: /tr/worksheets/background/delete/
+aliases: [  /tr/delete-background-or-watermark-of-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Çalışma sayfası arka planını sil, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasının arka plan resmini silin. SDK’lar C#, Java, PHP, Ruby, Node.js, Python, Perl ve Go dilleri için mevcuttur."
 weight: 210

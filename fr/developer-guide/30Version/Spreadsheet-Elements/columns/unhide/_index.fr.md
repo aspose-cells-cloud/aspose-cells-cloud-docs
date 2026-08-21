@@ -3,7 +3,7 @@ title: "Réafficher des colonnes dans une feuille de calcul Excel"
 ArticleTitle: "Réafficher des colonnes dans une feuille de calcul Excel – API Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /columns/unhide/
+url: /fr/columns/unhide/
 aliases:
   [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
 keywords: "Aspose.Cells, API Cloud, réafficher des colonnes, Excel, REST, SDK"

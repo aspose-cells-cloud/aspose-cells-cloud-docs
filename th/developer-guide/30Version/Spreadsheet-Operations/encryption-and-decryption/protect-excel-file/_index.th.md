@@ -3,8 +3,8 @@ title: "ป้องกันสมุดงาน Excel ด้วย Aspose.Cel
 secondtitle: "เอกสาร"
 linktitle: "ป้องกันไฟล์ Excel"
 type: docs
-url: /protect-excel-file/
-aliases: [/protect-excel-workbooks/, /workbook/protect/]
+url: /th/protect-excel-file/
+aliases: [  /th/protect-excel-workbooks/ , /th/workbook/protect/ ]
 keywords: "Aspose.Cells, การป้องกัน Excel, API, REST, SDK"
 description: "เรียนรู้วิธีการป้องกันสมุดงาน Excel ผ่าน Aspose.Cells Cloud REST API ซึ่งรวมถึงขั้นตอนการตรวจสอบสิทธิ์ พารามิเตอร์ในส่วนของ query และ body, คำขอ cURL และตัวอย่างโค้ด SDK สำหรับ C#, Java, PHP, Ruby, Node.js, Python, Perl และ Go"
 weight: 30

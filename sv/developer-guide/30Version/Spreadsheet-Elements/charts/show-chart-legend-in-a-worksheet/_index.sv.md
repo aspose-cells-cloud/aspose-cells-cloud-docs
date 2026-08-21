@@ -1,8 +1,8 @@
 ---
 title: "Visa diagrammetikett i ett kalkylblad"
 type: docs
-url: /charts/legend/show/
-aliases: [/show-chart-legend-in-a-worksheet/]
+url: /sv/charts/legend/show/
+aliases: [  /sv/show-chart-legend-in-a-worksheet/ ]
 weight: 100
 keywords: "Aspose.Cells Cloud, diagrammetikett-API, Excel-diagrammetikett, REST PUT för diagrammetikett, Aspose API v3.0"
 description: "Lär dig hur du visar en diagrammetikett i ett Excel-kalkylblad med Aspose.Cells Cloud REST API (v3.0). Innehåller detaljerad endpointinformation, parametrar, ett cURL-exempel och SDK-utdrag."

@@ -3,7 +3,7 @@ title: "Gelişmiş Excel Dosyası Dönüştürme"
 second_title: "Belge"
 linktype: "Gelişmiş Dönüştür"
 type: docs
-url: /advanced-convert-excel/
+url: /tr/advanced-convert-excel/
 keywords: "Aspose.Cells, Excel dönüştürme, Bulut API'si, SDK"
 description: "Aspose.Cells Cloud REST API, Excel çalışma kitaplarını PDF, HTML, CSV vb. bir dizi biçime dönüştürme, sayfa ayarlarını yapılandırma, kaydetme seçeneklerini ve yazdırma ayarlarını belirleme konusunda güçlü özellikler sunar. SDK'lar, Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby ve Swift için mevcuttur ve birden fazla platformda sorunsuz entegrasyon sağlar."
 weight: 50

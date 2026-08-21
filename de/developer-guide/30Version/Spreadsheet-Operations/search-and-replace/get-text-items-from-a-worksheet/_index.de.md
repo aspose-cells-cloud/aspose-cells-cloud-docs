@@ -3,8 +3,8 @@ title: "Textelemente aus einer Excel-Arbeitsmappe abrufen"
 second_title: "Dokument"
 linktitle: "Textelemente in Arbeitsmappe abrufen"
 type: docs
-url: /worksheets/get-text-items/
-aliases: [/get-text-items-from-a-worksheet/]
+url: /de/worksheets/get-text-items/
+aliases: [  /de/get-text-items-from-a-worksheet/ ]
 weight: 20
 keywords: "Aspose.Cells, Cloud API, Excel, Arbeitsmappe, Textelemente, REST"
 description: "Rufen Sie alle Textelemente aus einer bestimmten Arbeitsmappe in einer Excel-Datei mithilfe der Aspose.Cells Cloud REST API ab. Enthält Beispiel-cURL-, SDK-Code, Authentifizierungsschritte und Antwort-Schema."

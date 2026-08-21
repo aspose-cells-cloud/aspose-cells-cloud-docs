@@ -3,7 +3,7 @@ title: "엑셀 워크북 보호 해제 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktitle: "엑셀 파일 보호 해제"
 type: docs
-url: /excel-file-unprotect/
+url: /ko/excel-file-unprotect/
 aliases:
   - /unprotect-excel-workbooks/
   - /workbook/unprotect/

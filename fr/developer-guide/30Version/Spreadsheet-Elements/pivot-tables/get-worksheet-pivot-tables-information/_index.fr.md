@@ -3,8 +3,8 @@ title: "Obtenir toutes les tables croisées dynamiques dans une feuille Excel"
 second_title: "Document"
 linktitle: Obtenir toutes les tables croisées dynamiques
 type: docs
-url: /pivot-tables/get-all/
-aliases: [/get-worksheet-pivot-tables-information/]
+url: /fr/pivot-tables/get-all/
+aliases: [  /fr/get-worksheet-pivot-tables-information/ ]
 keywords: "obtenir toutes les tables croisées dynamiques, API Aspose.Cells Cloud, Excel PivotTable, API REST"
 description: "Récupérer toutes les tables croisées dynamiques d'une feuille Excel via l'API Aspose.Cells Cloud. Inclut l'endpoint, les paramètres, les étapes d'authentification, les exemples cURL et les SDK pour l'API PivotTables."
 weight: 20

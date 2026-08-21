@@ -3,8 +3,8 @@ title: "ワークシートのプロパティを更新する – Aspose.Cells Clo
 second_title: "ドキュメント"
 linktitle: "更新"
 type: docs
-url: /worksheets/update-properties/
-aliases: [/update-excel-worksheet-properties/]
+url: /ja/worksheets/update-properties/
+aliases: [  /ja/update-excel-worksheet-properties/ ]
 weight: 20
 keywords:
   [

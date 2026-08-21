@@ -4,7 +4,7 @@ ArticleTitle: "Bir Excel Dosyasını Farklı Formatlara Dönüştürme"
 second_title: "Belge"
 linktitle: "Excel'i Dönüştür"
 type: docs
-url: /convert-an-excel-file-to-different-formats/
+url: /tr/convert-an-excel-file-to-different-formats/
 aliases:
   [
     /convert-excel-workbook-to-different-file-formats/,

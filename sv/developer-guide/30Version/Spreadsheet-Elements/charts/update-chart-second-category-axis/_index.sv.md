@@ -1,7 +1,7 @@
 ---
 title: "Uppdatera diagrammets andra kategoriaxel"
 type: docs
-url: /charts/second-category-axis/update/
+url: /sv/charts/second-category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Diagram, Andra kategoriaxel, REST API, Uppdatera diagram, Excel, moln-API"
 description: "Lär dig hur du uppdaterar den andra kategoriaxeln i ett diagram i ett Excel-arbetsblad med Aspose.Cells Cloud REST API."

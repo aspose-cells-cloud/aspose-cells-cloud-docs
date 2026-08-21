@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Excel 파일 압축 방법 – 스프레드시트 크기 축소 및 성능 최적화"
 linktitle: "스프레드시트 압축"
 type: docs
-url: /compress-spreadsheet/
+url: /ko/compress-spreadsheet/
 keywords: "Excel 압축, Aspose.Cells Cloud, 스프레드시트 크기 축소, API, 워크북 최적화"
 description: "Aspose.Cells Cloud API로 Excel 워크북을 압축하는 방법을 알아보세요. 단계별 예제, 매개변수, 인증 및 모범 사례를 확인하세요."
 weight: 100

@@ -3,8 +3,8 @@ title: "حذف مرشح من ورقة عمل إكسل – واجهة Aspose.Cell
 second_title: "مستند"
 linktitle: "حذف المرشح"
 type: docs
-url: /delete-filter/
-aliases: [/delete-a-filter-for-a-filter-column/, /delete-auto-filter/]
+url: /ar/delete-filter/
+aliases: [  /ar/delete-a-filter-for-a-filter-column/ , /ar/delete-auto-filter/ ]
 keywords: "Aspose.Cells Cloud حذف المرشح، إكسل، واجهة REST API، حزم التطوير (SDK)"
 description: "تعرّف على كيفية حذف مرشح تلقائي من ورقة عمل إكسل باستخدام واجهة Aspose.Cells Cloud REST API وواجهة cURL وحزم التطوير (SDK) (C#، Java، Python، إلخ). تتضمن النقطة النهائية (endpoint)، المعلمات، المصادقة، ونماذج من الأكواد."
 weight: 100

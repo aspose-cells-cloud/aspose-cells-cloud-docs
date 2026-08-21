@@ -1,7 +1,7 @@
 ---
 title: "รับค่า MinColumn จากแผ่นงาน Excel"
 type: docs
-url: /get-mincolumn-from-excel-worksheet/
+url: /th/get-mincolumn-from-excel-worksheet/
 weight: 100
 keywords: Excel, Aspose.Cells Cloud, REST API, Get MinColumn, Worksheet, SDK, Cloud API
 description: ดึงดูดดัชนีคอลัมน์ที่น้อยที่สุดที่มีข้อมูลในแผ่นงานของไฟล์ Excel ผ่าน REST API ของ Aspose.Cells Cloud

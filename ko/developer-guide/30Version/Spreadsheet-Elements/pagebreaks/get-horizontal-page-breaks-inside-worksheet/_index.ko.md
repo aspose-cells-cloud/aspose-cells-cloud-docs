@@ -3,8 +3,8 @@ title: "가로 페이지 나누기 가져오기"
 second_title: "문서"
 linktitle: "가로 페이지 나누기 가져오기"
 type: docs
-url: /page-breaks/get-horizontal-page-breaks/
-aliases: [/get-horizontal-page-breaks-inside-worksheet/]
+url: /ko/page-breaks/get-horizontal-page-breaks/
+aliases: [  /ko/get-horizontal-page-breaks-inside-worksheet/ ]
 keywords: "가로 페이지 나누기, Aspose.Cells Cloud, REST API, Excel 워크시트, SDK"
 description: "Aspose.Cells Cloud API를 통해 Excel 워크시트에서 가로 페이지 나누기를 가져옵니다. 엔드포인트, 매개변수, cURL 예제, 응답 형식, C#, Java, Python 등 다양한 언어의 SDK 코드 스니펫이 포함됩니다."
 ArticleTitle: "가로 페이지 나누기 가져오기 - Aspose.Cells Cloud API 문서"

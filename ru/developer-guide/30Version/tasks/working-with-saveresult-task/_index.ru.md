@@ -2,8 +2,8 @@
 title: "Работа с задачей SaveResult"
 second_title: "Документ"
 type: docs
-url: /tasks/save-result/
-aliases: [/working-with-saveresult-task/]
+url: /ru/tasks/save-result/
+aliases: [  /ru/working-with-saveresult-task/ ]
 keywords: "задача SaveResult, API Aspose.Cells Cloud, экспорт результата, загрузка рабочей книги, облачное хранилище, REST API, электронные таблицы, Excel"
 description: "Узнайте, как использовать задачу SaveResult в API Aspose.Cells Cloud для экспорта обработанных данных рабочей книги в облачное хранилище или прямой загрузки. Содержит примеры cURL, Java, .NET и полный справочник по параметрам."
 weight: 50

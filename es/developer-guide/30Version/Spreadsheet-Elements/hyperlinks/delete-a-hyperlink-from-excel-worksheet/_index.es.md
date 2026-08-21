@@ -1,7 +1,7 @@
 ---
 title: "Eliminar hipervínculo de hoja de cálculo"
 type: docs
-url: /hyperlinks/delete/
+url: /es/hyperlinks/delete/
 description: "Elimine un hipervínculo de hoja de cálculo por índice mediante la API de Aspose.Cells Cloud. Aprenda los parámetros requeridos, la autenticación y vea ejemplos de código para C#, Java, Python y más."
 keywords: "Aspose.Cells, Cloud, eliminar hipervínculo, API de Excel, REST, hipervínculo de hoja de cálculo"
 ArticleTitle: "Eliminar hipervínculo de hoja de cálculo – Documentación de la API de Aspose.Cells Cloud"

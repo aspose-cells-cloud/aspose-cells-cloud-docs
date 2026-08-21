@@ -4,7 +4,7 @@ second_title: "مستند"
 linktitle: "OleObjects"
 type: docs
 url: /ar/oleobjects/
-aliases: [/ar/working-with-oleobjects/]
+aliases: [  /ar/working-with-oleobjects/ ]
 keywords: "OLE, Excel, Aspose.Cells, API, سحابة"
 description: "استخدم واجهة Aspose.Cells Cloud REST API لاسترجاع كائنات OLE وإضافتها وتحديثها وحذفها وتحويلها في أوراق عمل Excel. تتوفر حزم تطوير برمجيات (SDKs) للغات Java و .NET و Python و PHP و Ruby و Go و Node.js و Perl و Swift و Android."
 weight: 100

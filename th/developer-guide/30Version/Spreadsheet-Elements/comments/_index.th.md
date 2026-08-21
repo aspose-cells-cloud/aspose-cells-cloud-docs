@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktype: "ข้อคิดเห็น"
 type: docs
 url: /th/comments/
-aliases: [/working-with-comments/]
+aliases: [  /th/working-with-comments/ ]
 keywords: "Aspose.Cells Cloud, API ข้อคิดเห็น Excel, ข้อคิดเห็นในสเปรดชีต, REST API"
 description: "เรียนรู้วิธีการเพิ่ม ดึงข้อมูล ปรับปรุง และลบข้อคิดเห็นใน Excel โดยใช้ Aspose.Cells Cloud REST API เวอร์ชัน 3.0 พร้อมตัวอย่างโค้ด ข้อกำหนดเบื้องต้น และการจัดการข้อผิดพลาด"
 weight: 100

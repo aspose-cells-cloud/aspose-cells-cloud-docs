@@ -3,7 +3,7 @@ title: "Ta bort bakgrund i en Excel-arbetsbok"
 second_title: "Dokument"
 linktitle: "Ta bort"
 type: docs
-url: /delete-background-in-excel-file/
+url: /sv/delete-background-in-excel-file/
 aliases:
   - /delete-background-in-workbook/
   - /workbook/delete-background/

@@ -3,8 +3,8 @@ title: "Bild in einer Excel-Datei aktualisieren"
 second_title: "Dokument"
 linktitle: "Aktualisieren"
 type: docs
-url: /pictures/update/
-aliases: [/update-a-specific-picture-from-excel-workshee/]
+url: /de/pictures/update/
+aliases: [  /de/update-a-specific-picture-from-excel-workshee/ ]
 keywords: "Aspose.Cells Cloud, Excel, Bild aktualisieren, REST API, SDK"
 description: "Erfahren Sie, wie Sie ein Bild in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API aktualisieren können. Enthält Anforderungsdetails, ein cURL-Beispiel und SDK-Snippets für mehrere Sprachen."
 ArticleTitle: "Bild in einer Excel-Datei mithilfe der Aspose.Cells Cloud REST API aktualisieren"

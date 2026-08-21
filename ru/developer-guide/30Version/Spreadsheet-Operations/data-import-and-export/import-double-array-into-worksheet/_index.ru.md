@@ -3,7 +3,7 @@ title: "Импорт двумерного массива типа double в ра
 second_title: "Документ"
 linktitle: "Импорт двумерного массива типа double"
 type: docs
-url: /import-double-array-into-excel-worksheet/
+url: /ru/import-double-array-into-excel-worksheet/
 aliases:
   - /import-double-array-into-worksheet/
   - /import-data/double-array/

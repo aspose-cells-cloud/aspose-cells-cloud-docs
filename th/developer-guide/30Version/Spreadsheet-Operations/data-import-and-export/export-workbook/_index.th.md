@@ -3,8 +3,8 @@ title: "ส่งออกสมุดงาน"
 second_title: "เอกสาร"
 linktype: "สมุดงาน"
 type: docs
-url: /export-excel-to-different-formats/
-aliases: [/export/excel-to-different-formats/]
+url: /th/export-excel-to-different-formats/
+aliases: [  /th/export/excel-to-different-formats/ ]
 keywords: "Aspose.Cells Cloud, การส่งออก Excel, การแปลงสมุดงาน, PDF, CSV, JSON, รูปแบบภาพ, API สเปรดชีต, XLSX, ODS, PNG"
 description: "คู่มือแบบทีละขั้นตอนเกี่ยวกับการส่งออกสมุดงาน Excel ไปยังรูปแบบต่างๆ มากมาย รวมถึง PDF, CSV, JSON และประเภทภาพต่างๆ โดยใช้ Aspose.Cells Cloud REST API และ SDK"
 weight: 20

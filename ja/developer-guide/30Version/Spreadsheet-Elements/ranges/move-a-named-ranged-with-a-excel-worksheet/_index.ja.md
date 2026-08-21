@@ -3,8 +3,8 @@ title: "Excelワークシート内で名前付き範囲を移動する"
 second_title: "Document"
 linktitle: "移動"
 type: docs
-url: /ranges/move/
-aliases: [/move-a-named-range-with-an-excel-worksheet/]
+url: /ja/ranges/move/
+aliases: [  /ja/move-a-named-range-with-an-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 名前付き範囲の移動, Excelワークシート, REST API, 範囲の移動, SDK サンプル"
 description: "Aspose.Cells Cloud REST API v3.0 を使用して、Excelワークシート内で名前付き範囲を移動する方法を学びます。エンドポイントの詳細、認証、例、および SDK コードサンプルを含みます。"
 weight: 20

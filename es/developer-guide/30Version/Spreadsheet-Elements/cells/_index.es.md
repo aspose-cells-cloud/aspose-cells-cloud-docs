@@ -4,8 +4,8 @@ ArticleTitle: "Trabajar con celdas de Excel – Documentación de Aspose.Cells C
 second_title: "Documento"
 linktitle: "Celdas"
 type: docs
-url: /working-with-cells/
-aliases: [/working-with-worksheets/]
+url: /es/working-with-cells/
+aliases: [  /es/working-with-worksheets/ ]
 keywords: "Excel, Aspose.Cells, operaciones de celdas, API de hojas de cálculo, API REST, estilo de celdas, fusión de celdas, cálculo de fórmulas"
 description: "Explore la API de Aspose.Cells Cloud para operaciones con celdas de Excel, incluyendo establecer valores, aplicar estilos, fusionar/desfusionar celdas y calcular fórmulas."
 weight: 100

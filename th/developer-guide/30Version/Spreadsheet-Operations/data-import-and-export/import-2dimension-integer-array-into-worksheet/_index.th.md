@@ -3,7 +3,7 @@ title: "นำเข้าอาเรย์จำนวนเต็มสอง
 second_title: "เอกสาร"
 linktype: "นำเข้าอาเรย์จำนวนเต็มสองมิติ"
 type: docs
-url: /import-a-2D-integer-array-into-excel-worksheet/
+url: /th/import-a-2D-integer-array-into-excel-worksheet/
 aliases:
   [
     "/import-2dimension-integer-array-into-excel-worksheet/",

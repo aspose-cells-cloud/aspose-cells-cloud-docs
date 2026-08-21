@@ -1,7 +1,7 @@
 ---
 title: "Excel Çalışma Sayfasında Hücre Stilini Değiştirme"
 type: docs
-url: /change-cell-style-in-excel-worksheet/
+url: /tr/change-cell-style-in-excel-worksheet/
 weight: 30
 keywords:
   - Aspose.Cells

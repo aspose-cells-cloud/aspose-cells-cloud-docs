@@ -3,8 +3,8 @@ title: "将 Excel 文件拆分为多个文件"
 second_title: "文档"
 linktitle: "拆分多工作表 Excel 文件"
 type: docs
-url: /split-an-excel-file-to-multi-files/
-aliases: [/split-excel-workbooks/,/workbook/split/]
+url: /zh/split-an-excel-file-to-multi-files/
+aliases: [  /zh/split-excel-workbooks/ , /zh/workbook/split/ ]
 keywords: "Aspose.Cells, 云, Excel, 拆分, API, PDF, CSV, JSON"
 description: "使用 Aspose.Cells Cloud REST API 将多工作表 Excel 工作簿拆分为独立文件。支持输出为 PDF、CSV 和 JSON 等格式，并提供适用于 Android、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby 和 Swift 的 SDK。"
 weight: 32

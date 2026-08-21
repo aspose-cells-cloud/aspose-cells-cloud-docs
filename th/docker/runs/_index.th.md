@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีการรันคอนเทนเดอร์ Docker ของ Aspose.Cells Cloud"
 linktype: "รันคอนเทนเดอร์"
 type: docs
-url: /run-aspose-cells-cloud-docker-container/
+url: /th/run-aspose-cells-cloud-docker-container/
 description: "เรียนรู้วิธีการเปิดใช้งาน Aspose.Cells Cloud ในคอนเทนเดอร์ Docker บน Windows Server 2022 ด้วยคำสั่งแบบทีละขั้นตอนสำหรับโหมดทดลองใช้งาน การเรียกเก็บเงินแบบใช้งานจริง (metered billing) การเรียกเก็บเงินแบบใบอนุญาต (license billing) การตั้งค่าที่จัดเก็บข้อมูล และการตรวจสอบสุขภาพของระบบ"
 weight: 30
 keywords: "Aspose.Cells, Docker, Windows Server 2022, โหมดทดลองใช้งาน, การเรียกเก็บเงินแบบใช้งานจริง, การเรียกเก็บเงินแบบใบอนุญาต, การกำหนดค่าที่จัดเก็บข้อมูล"

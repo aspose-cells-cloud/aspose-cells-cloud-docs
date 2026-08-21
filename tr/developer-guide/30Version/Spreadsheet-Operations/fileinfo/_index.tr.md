@@ -3,7 +3,7 @@ title: "Dosya Bilgisi"
 second_title: "Belge"
 linktype: "Dosya Bilgisi"
 type: docs
-url: /file-info/
+url: /tr/file-info/
 keywords: "Dosya, Bilgi, Excel, Aspose.Cells, Bulut API, Meta Veri, Base64"
 description: "Aspose.Cells Bulut API kullanarak Excel dosyasının adını, boyutunu ve Base64 içeriğini alın. İstek sözdizimi, örnek kod ve hata işleme içerir."
 weight: 79

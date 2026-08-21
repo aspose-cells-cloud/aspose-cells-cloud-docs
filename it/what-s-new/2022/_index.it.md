@@ -4,7 +4,7 @@ second_title: "Documenti"
 linktype: "Novità nel 2022"
 type: docs
 weight: 90
-url: /new-features/2023/
+url: /it/new-features/2023/
 keywords: "Novità in Aspose.Cells Cloud. Microsoft Office Excel, foglio di calcolo Open Office, CSV, PDF."
 description: "Questa pagina descrive le funzionalità più interessanti introdotte di recente in Aspose.Cells Cloud."
 kwords: Excel, Office Cloud, REST API, foglio di calcolo, PDF, CSV, JSON, Markdown, Novità in Aspose.Cells Cloud

@@ -1,8 +1,8 @@
 ---
 title: "واجهة برمجة تطبيقات Aspose.Cells Cloud – إضافة عنوان مخطط في ورقة عمل إكسل"
 type: docs
-url: /chart/title/add/
-aliases: [/set-chart-title-in-excel-worksheet/]
+url: /ar/chart/title/add/
+aliases: [  /ar/set-chart-title-in-excel-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells Cloud، واجهة برمجة تطبيقات عنوان المخطط، عنوان مخطط إكسل، واجهة برمجة التطبيقات REST، أمثلة لواجهات برمجة التطبيقات (SDK)"
 description: "تعلّم كيفية إضافة عنوان مخطط أو جعل عنوان موجود مرئيًا في ورقة عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. تتضمن أمثلة لـ cURL وواجهات برمجة التطبيقات (SDK)، والمعلمات المطلوبة، وخطوات المصادقة، ومعالجة الأخطاء."

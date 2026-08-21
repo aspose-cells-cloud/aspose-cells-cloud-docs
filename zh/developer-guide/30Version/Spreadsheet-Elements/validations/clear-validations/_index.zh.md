@@ -3,7 +3,7 @@ title: "删除工作表中的所有数据验证规则 – Aspose.Cells Cloud API
 second_title: "文档"
 linktitle: "删除"
 type: docs
-url: /validations/clear/
+url: /zh/validations/clear/
 keywords: "Aspose.Cells Cloud, 删除工作表数据验证规则, Excel, REST API, 电子表格验证, API"
 description: "使用 Aspose.Cells Cloud REST API 删除 Excel 文件中工作表的全部数据验证规则。内容包括身份验证步骤、请求详情、cURL 示例、响应模式、错误处理以及 SDK 代码片段。"
 weight: 10

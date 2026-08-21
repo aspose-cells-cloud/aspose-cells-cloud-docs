@@ -1,7 +1,7 @@
 ---
 title: "워크시트 하이퍼링크 삭제"
 type: docs
-url: /hyperlinks/delete/
+url: /ko/hyperlinks/delete/
 description: "Aspose.Cells Cloud API를 사용하여 인덱스로 워크시트 하이퍼링크를 삭제합니다. 필요한 매개변수, 인증 방법 및 C#, Java, Python 등 다양한 언어의 코드 예제를 확인하세요."
 keywords: "Aspose.Cells, 클라우드, 하이퍼링크 삭제, Excel API, REST, 워크시트 하이퍼링크"
 ArticleTitle: "워크시트 하이퍼링크 삭제 – Aspose.Cells Cloud API 문서"

@@ -3,8 +3,8 @@ title: "รับการแบ่งหน้าแนวตั้ง"
 second_title: "เอกสาร"
 linktype: "รับการแบ่งหน้าแนวตั้ง"
 type: docs
-url: /page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
+url: /th/page-breaks/get-vertical-page-breaks/
+aliases: [  /th/get-vertical-page-breaks-inside-worksheet/ ]
 keywords: "Aspose.Cells, การแบ่งหน้าแนวตั้ง, Excel API, สเปรดชีตบนคลาวด์, REST API"
 description: "ดึงการแบ่งหน้าแนวตั้งจากWorksheets ใน Excel ผ่าน Aspose.Cells Cloud REST API (v3.0) ประกอบด้วย HTTPS endpoint, พารามิเตอร์ที่จำเป็น, ตัวอย่าง cURL, รายละเอียดการตอบกลับ, การจัดการข้อผิดพลาด และตัวอย่าง SDK"
 weight: 20

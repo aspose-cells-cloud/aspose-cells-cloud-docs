@@ -4,7 +4,7 @@ ArticleTitle: "Lägg till en digital signatur i en Excel-arbetsbok – Aspose.Ce
 second_title: "Dokument"
 linktitle: "Digital signatur"
 type: docs
-url: /excel-digital-signature/
+url: /sv/excel-digital-signature/
 aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/

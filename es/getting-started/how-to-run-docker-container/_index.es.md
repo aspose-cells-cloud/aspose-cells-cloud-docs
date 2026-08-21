@@ -4,8 +4,8 @@ second_title: "Documento"
 ArticleTitle: "Cómo ejecutar el contenedor Docker de Aspose.Cells Cloud"
 LinkTitle: "Contenedor Docker"
 type: docs
-url: /getting-started/how-to-run-docker-container/
-aliases: [/how-to-run-docker-container/]
+url: /es/getting-started/how-to-run-docker-container/
+aliases: [  /es/how-to-run-docker-container/ ]
 description: "Aprenda cómo extraer, configurar y ejecutar el contenedor Docker de Aspose.Cells Cloud en Windows o Linux. Incluye YAML de Docker Compose, configuración de licencia, asignación de puertos y consejos para solucionar problemas."
 weight: 100
 keywords:

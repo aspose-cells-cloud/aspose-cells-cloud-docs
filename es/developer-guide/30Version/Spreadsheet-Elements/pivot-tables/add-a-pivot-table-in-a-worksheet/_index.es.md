@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: Agregar
 type: docs
 url: /es/pivot-tables/add/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /es/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Agregar tabla dinámica, hoja de cálculo de Excel, Aspose.Cells Cloud, API REST, SDK, tabla dinámica de Excel"
 description: "Utilice la API REST de Aspose.Cells Cloud para agregar una tabla dinámica en una hoja de cálculo de Excel. Disponible mediante SDK para C#, Java, PHP, Python, Node.js, Android, Swift, Perl y Go."
 weight: 30

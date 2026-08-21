@@ -2,7 +2,7 @@
 title: "Добавление гиперссылки в рабочий лист"
 type: docs
 url: /ru/hyperlinks/add/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+aliases: [  /ru/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, добавить гиперссылку, Excel REST API, облачный SDK"
 description: "Узнайте, как добавить гиперссылку в рабочий лист Excel с помощью Aspose.Cells Cloud REST API v3.0. Включает адрес конечной точки, полное руководство по параметрам, пример cURL и фрагменты кода SDK для C#, Java, Python и других языков."
 weight: 20

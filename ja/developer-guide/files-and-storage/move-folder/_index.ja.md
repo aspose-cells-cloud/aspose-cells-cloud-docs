@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "クラウドベースの Excel ファイル管理 – クラウド内でフォルダを素早く移動"
 linktitle: "フォルダ移動"
 type: docs
-url: /move-folder/
+url: /ja/move-folder/
 keywords: "Aspose.Cells, フォルダ移動, クラウドストレージ, Excel API"
 description: "RESTful フォルダ移動 API を通じて Aspose.Cells Cloud ストレージ内のフォルダを移動する方法を学びます。エンドポイント、パラメータ、サンプル cURL、エラーコード、C#、Java、Python などの SDK 例を含みます。"
 weight: 100

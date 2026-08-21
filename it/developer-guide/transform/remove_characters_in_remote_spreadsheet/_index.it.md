@@ -4,7 +4,7 @@ ArticleTitle: "Rimuovi Caratteri in Foglio di Calcolo Remoto – Aspose.Cells Cl
 second_title: "Document"
 linktitle: "Rimuovi Caratteri in Foglio di Calcolo Remoto"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
+url: /it/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
 aliases: []
 keywords: "Aspose.Cells, Rimuovi Caratteri, Elaborazione Testo"
 description: "Elimina caratteri definiti dall’utente, insiemi di simboli predefiniti o qualsiasi sottostringa da ogni cella nell’intervallo selezionato, preservando formule, formattazione e convalida dati per un foglio di calcolo remoto."

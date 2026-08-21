@@ -3,7 +3,7 @@ title: "Excel을 PNG로 변환"
 second_title: "문서"
 linktitle: "Excel을 PNG로 변환"
 type: docs
-url: convert-excel-file-to-png-file/
+url: /koconvert-excel-file-to-png-file/
 keywords: "Excel을 PNG로 변환, Aspose.Cells Cloud, REST API, 스프레드시트 변환, PNG 형식"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 스프레드시트를 PNG 이미지로 변환합니다. 여러 SDK를 지원하며 다양한 프로그래밍 언어에 대한 자세한 예제를 제공합니다."
 weight: 90

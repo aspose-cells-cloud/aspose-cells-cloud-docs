@@ -3,7 +3,7 @@ title: "Mettre à jour les métadonnées"
 second_title: "Document"
 linktitle: "Mise à jour sans utiliser le stockage"
 type: docs
-url: /metadata/update/
+url: /fr/metadata/update/
 keywords: "métadonnées, Excel, Aspose.Cells Cloud, API REST, mise à jour, classeur"
 description: "L'API REST Aspose.Cells Cloud permet de mettre à jour les métadonnées dans des fichiers Excel. Elle prend en charge plusieurs SDK (C#, Java, Python, Ruby, Go, etc.) pour une intégration fluide dans divers langages de programmation."
 weight: 35

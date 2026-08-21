@@ -4,8 +4,8 @@ ArticleTitle: "Excel in PDF konvertieren – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Excel in PDF konvertieren"
 type: docs
-url: /convert-excel-file-to-pdf-file/
-aliases: [/convert-excel-file-to-pdf-in-cloud/, /convert/excel-to-pdf/]
+url: /de/convert-excel-file-to-pdf-file/
+aliases: [  /de/convert-excel-file-to-pdf-in-cloud/ , /de/convert/excel-to-pdf/ ]
 keywords: "Aspose, Cells, Excel, PDF, Konvertierung, Cloud API"
 description: "Erfahren Sie, wie Sie Excel-Arbeitsmappen mit der Aspose.Cells Cloud REST API in PDF konvertieren. Enthält cURL-Beispiele, SDK-Beispiele (C#, Java, Python) und eine Anleitung zur Authentifizierung."
 weight: 80

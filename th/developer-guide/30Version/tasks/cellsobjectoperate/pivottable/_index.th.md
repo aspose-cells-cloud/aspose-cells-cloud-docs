@@ -1,8 +1,8 @@
 ---
 title: "การใช้งานตารางไขว้ด้วยงาน CellsObjectOperate"
 type: docs
-url: /tasks/cells-object-operate/pivottable/
-aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
+url: /th/tasks/cells-object-operate/pivottable/
+aliases: [  /th/working-with-pivot-table-using-cellsobjectoperate-task/ ]
 keywords: "API ตารางไขว้ของ Aspose Cells, CellsObjectOperate, Excel REST API"
 description: "เรียนรู้วิธีการสร้างตารางไขว้ใน Excel โดยใช้งานงาน CellsObjectOperate จาก Aspose.Cells Cloud พร้อมตัวอย่าง cURL, คู่มือพารามิเตอร์ และการอ้างอิง SDK"
 weight: 10

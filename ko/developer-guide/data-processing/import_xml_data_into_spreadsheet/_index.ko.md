@@ -4,7 +4,7 @@ ArticleTitle: "XML 데이터를 스프레드시트로 가져오기 – Aspose.Ce
 second_title: "문서"
 linktitle: "XML 데이터를 스프레드시트로 가져오기"
 type: docs
-url: /cells/import/data/xml
+url: /ko/cells/import/data/xml
 aliases: []
 keywords: "XML 가져오기, Aspose.Cells, API"
 description: "Aspose.Cells Cloud을 사용하여 로컬 스프레드시트로 XML 데이터 파일을 가져옵니다."

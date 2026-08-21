@@ -3,8 +3,8 @@ title: "Refrescar un Filtro Automático en una Hoja de Cálculo de Excel"
 second_title: "Document"
 linktype: "Refresh auto filter"
 type: docs
-url: /autofilter/refresh/
-aliases: [/refresh-an-autofilter/]
+url: /es/autofilter/refresh/
+aliases: [  /es/refresh-an-autofilter/ ]
 weight: 100
 keywords: "Aspose.Cells, AutoFilter, refrescar, Excel, API, REST"
 description: "Refresque un filtro automático existente en una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. Incluye ejemplos en cURL y SDK para C#, Java, Python y más."

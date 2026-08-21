@@ -3,8 +3,8 @@ title: "Birden Fazla Excel Çalışma Sayfasını Silme"
 second_title: "Belge"
 linktitle: "Birden fazla çalışma sayfası"
 type: docs
-url: /worksheets/delete-multiple/
-aliases: [/delete-excel-worksheets/]
+url: /tr/worksheets/delete-multiple/
+aliases: [  /tr/delete-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, birden fazla çalışma sayfasını silme, Excel API, REST API, v3.0, çalışma sayfalarını silme"
 description: "Aspose.Cells Cloud REST API (v3.0) kullanarak bir Excel çalışma kitabından birden fazla çalışma sayfasını nasıl sileceğinizi öğrenin. Güvenli HTTPS uç noktası, gerekli parametreler, düzeltildi cURL örneği ve birden fazla programlama dili için SDK parçacıkları içerir."
 weight: 20

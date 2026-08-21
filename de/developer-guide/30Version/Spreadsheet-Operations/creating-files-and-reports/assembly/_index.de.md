@@ -3,8 +3,8 @@ title: "Datensammlung für die Erstellung eines Excel-Berichts"
 second_title: "Dokument"
 linktitle: "Datensammlung"
 type: docs
-url: /assembly-data-for-the-creation-of-an-excel-report/
-aliases: [/assembly/]
+url: /de/assembly-data-for-the-creation-of-an-excel-report/
+aliases: [  /de/assembly/ ]
 keywords: "Aspose.Cells, Excel-Bericht, Datensammlung, Cloud API, REST, SDK, cURL, PDF, ODS"
 description: "Erfahren Sie, wie Sie die Assembly-API von Aspose.Cells Cloud verwenden können, um Daten in Excel-Berichte (XLSX, PDF, ODS) einzufügen. Enthält Endpunkt, Parameter, cURL-Beispiel, SDK-Code, Authentifizierungsanleitung und Fehlerbehandlung."
 weight: 40

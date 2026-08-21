@@ -1,7 +1,7 @@
 ---
 title: "Установка значения ячейки – Справочник по API Aspose.Cells Cloud (v3.0)"  
 type: docs  
-url: /set-value-of-a-cell-in-a-worksheet/  
+url: /ru/set-value-of-a-cell-in-a-worksheet/
 weight: 70  
 keywords: "Aspose Cells API установка значения ячейки, обновление ячейки Excel через REST, пример cURL для Aspose.Cells Cloud"  
 description: "Узнайте, как установить значение конкретной ячейки в электронной таблице Excel с помощью REST API Aspose.Cells Cloud. Включает синтаксис запроса, параметры, пример HTTPS cURL и примеры кода SDK."  

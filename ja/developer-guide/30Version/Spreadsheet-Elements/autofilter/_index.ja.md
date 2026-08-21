@@ -3,8 +3,8 @@ title: "Excel のオートフィルターの操作"
 second_title: "ドキュメント"
 linktitle: "オートフィルター"
 type: docs
-url: /autofilter/
-aliases: [/working-with-autofilter/]
+url: /ja/autofilter/
+aliases: [  /ja/working-with-autofilter/ ]
 keywords: "オートフィルター, Aspose.Cells Cloud, Excel フィルター, 色フィルター, 日付フィルター, 動的フィルター, 数値フィルター, テキストフィルター, 空白フィルター, カスタムフィルター"
 description: "Aspose.Cells Cloud API を使用して、Excel のオートフィルター（色、日付、動的、数値、テキスト、空白）の追加・編集・削除を学びましょう。複数の言語によるコードサンプルを提供しています。"
 weight: 100

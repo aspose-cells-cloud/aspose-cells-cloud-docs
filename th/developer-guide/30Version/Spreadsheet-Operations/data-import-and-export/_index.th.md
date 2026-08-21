@@ -3,7 +3,7 @@ title: "นำเข้าข้อมูลลงในไฟล์ Excel แ�
 second_title: "เอกสาร"
 linktitle: "การนำเข้าและส่งออกข้อมูล"
 type: docs
-url: /data-import-and-export/
+url: /th/data-import-and-export/
 keywords: "Aspose.Cells Cloud, นำเข้าข้อมูล, ส่งออก Excel, API, CSV, JSON, รูปภาพ, อาเรย์"
 description: "เรียนรู้วิธีการนำเข้าข้อมูลจาก CSV, JSON, อาเรย์ และรูปภาพลงในไฟล์ Excel รวมทั้งส่งออกเวิร์กบุ๊ก แผนภูมิ และรูปร่างต่างๆ ไปยัง PDF, PNG และรูปแบบอื่นๆ โดยใช้ API ของ Aspose.Cells Cloud (เวอร์ชัน 3.0)"
 weight: 25

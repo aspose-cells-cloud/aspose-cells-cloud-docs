@@ -3,7 +3,7 @@ title: "ซ่อนคอลัมน์ในสมุดงาน Excel"
 second_title: "เอกสาร"
 linktitle: "ซ่อน"
 type: docs
-url: /columns/hide/
+url: /th/columns/hide/
 aliases:
   - /hide-columns-in-excel-worksheet/
   - /hide-columns-in-an-excel-worksheet/

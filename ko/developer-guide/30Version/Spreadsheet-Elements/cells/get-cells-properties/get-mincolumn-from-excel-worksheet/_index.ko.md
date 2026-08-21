@@ -1,7 +1,7 @@
 ---
 title: "Excel 워크시트에서 최소 열(MinColumn) 가져오기"
 type: docs
-url: /get-mincolumn-from-excel-worksheet/ko/
+url: /ko/get-mincolumn-from-excel-worksheet/ko/
 weight: 100
 keywords: Excel, Aspose.Cells Cloud, REST API, MinColumn 가져오기, 워크시트, SDK, 클라우드 API
 description: Aspose.Cells Cloud REST API를 통해 Excel 파일의 워크시트에서 데이터가 포함된 최소 열 인덱스를 검색합니다.

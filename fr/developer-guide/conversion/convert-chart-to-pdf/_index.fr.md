@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment convertir un graphique de classeur local en fichier PDF : guide pas à pas"
 linktype: "Convertir un graphique en PDF"
 type: docs
-url: /convert-chart-to-pdf/
+url: /fr/convert-chart-to-pdf/
 keywords: "Aspose Cells, graphique, PDF, Excel, conversion, API cloud"
 description: "Exporter des graphiques à partir de fichiers Excel locaux au format PDF à l’aide de l’API REST Aspose.Cells Cloud. Prend en charge les fichiers XLSX et XLS."
 weight: 100

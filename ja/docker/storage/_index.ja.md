@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud Docker コンテナストレージの設定"
 linktitle: "コンテナストレージ"
 type: docs
-url: /docker/storage/
+url: /ja/docker/storage/
 description: "JSON、PowerShell、または Bash を使用して Aspose.Cells Cloud Docker コンテナのストレージ位置を設定します。"
 weight: 30
 keywords: "Aspose.Cells, Docker, コンテナストレージ, JSON 設定, PowerShell, Bash"

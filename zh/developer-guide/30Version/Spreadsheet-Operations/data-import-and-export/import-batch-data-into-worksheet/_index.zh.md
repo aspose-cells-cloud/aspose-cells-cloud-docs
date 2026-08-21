@@ -3,7 +3,7 @@ title: "将批量数据导入 Excel 工作表"
 second_title: "文档"
 linktitle: "导入批量数据"
 type: docs
-url: /import-batch-data-into-excel/
+url: /zh/import-batch-data-into-excel/
 aliases:
   - /import-batch-data-into-worksheet/
   - /import-data/batch-data/

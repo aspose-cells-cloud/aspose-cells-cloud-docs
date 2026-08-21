@@ -4,7 +4,7 @@ ArticleTitle: "Eliminar filas en blanco de hojas de cálculo – Aspose.Cells Cl
 second_title: "Documentos"
 linktitle: "Eliminar filas en blanco de hojas de cálculo"
 type: docs
-url: /cells/remove/blank-rows
+url: /es/cells/remove/blank-rows
 aliases: []
 keywords: "Aspose.Cells, eliminar filas en blanco, hoja de cálculo, API"
 description: "Elimina todas las filas en blanco de un archivo de hoja de cálculo."

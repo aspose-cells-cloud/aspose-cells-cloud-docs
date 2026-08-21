@@ -3,7 +3,7 @@ title: "Fügen Sie eine leere Spalte zu einem Excel-Arbeitsblatt hinzu – Aspos
 second_title: "Dokument"
 linktitle: "Hinzufügen"
 type: docs
-url: /columns/add/
+url: /de/columns/add/
 aliases:
   - /add-an-empty-column-in-an-excel-worksheet/
   - /add-an-empty-column-in-a-worksheet/

@@ -3,7 +3,7 @@ title: "كيفية التعامل مع إمكانية الرؤية في ورقة
 second_title: "مستند"
 linktitle: "إمكانية الرؤية"
 type: docs
-url: /worksheets/panes/
+url: /ar/worksheets/panes/
 keywords: "Aspose.Cells Cloud، API إخفاء ورقة عمل، API إظهار ورقة عمل، إمكانية رؤية ورقة عمل إكسل، REST API لـ إكسل، Aspose.Cells v3.0"
 description: "تعرّف على كيفية إخفاء أو إظهار ورقات عمل إكسل برمجيًا باستخدام واجهة Aspose.Cells Cloud REST API. يشمل العناوين URL للطلبات، وأمثلة لـ cURL و .NET SDK، ومعالجة الأخطاء، وملاحظات محددة بالإصدار."
 weight: 20

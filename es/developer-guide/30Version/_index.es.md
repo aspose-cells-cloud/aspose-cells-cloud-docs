@@ -3,8 +3,8 @@ title: "Guía del desarrollador de Aspose.Cells Cloud 3.0"
 ArticleTitle: "Guía del desarrollador de la API REST de Aspose.Cells Cloud 3.0 – Creación, conversión y estilizado de libros de Excel"
 second_title: "Documentos"
 type: docs
-url: /developer-guide-3.0/
-aliases: [/developer-guide/v3.0/, /developer-guide-v3.0/]
+url: /es/developer-guide-3.0/
+aliases: [  /es/developer-guide/v3.0/ , /es/developer-guide-v3.0/ ]
 keywords: "Aspose.Cells Cloud, API REST de Excel, conversión de libros, API de gráficos, importación de datos, exportación, PDF, CSV, JSON, guía del desarrollador"
 description: "Aprenda a utilizar las API REST de Aspose.Cells Cloud 3.0 para la creación, conversión, estilizado, gráficos, tablas y mucho más de libros de Excel. Incluye ejemplos de código y consejos de buenas prácticas."
 weight: 150

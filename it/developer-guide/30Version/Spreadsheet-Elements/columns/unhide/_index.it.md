@@ -4,7 +4,7 @@ ArticleTitle: "Rivela colonne in un foglio di lavoro Excel - Aspose.Cells Cloud 
 second_title: "Documenti"
 linktitle: "Rivela"
 type: docs
-url: /columns/unhide/
+url: /it/columns/unhide/
 aliases:
   [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
 keywords: "Aspose.Cells, API cloud, rivela colonne, Excel, REST, SDK"

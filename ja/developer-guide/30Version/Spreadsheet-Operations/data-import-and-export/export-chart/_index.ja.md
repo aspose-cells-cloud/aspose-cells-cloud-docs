@@ -3,8 +3,8 @@ title: "Excel チャートのエクスポート"
 second_title: "ドキュメント"
 linktitle: "チャート"
 type: docs
-url: /export-excel-chart-to-different-formats/
-aliases: [/export/excel-chart-to-different-formats/]
+url: /ja/export-excel-chart-to-different-formats/
+aliases: [  /ja/export/excel-chart-to-different-formats/ ]
 description: "Aspose.Cells Cloud REST API または SDK を使用して、Excel チャート オブジェクトを PNG、JPEG、PDF、SVG、TIFF、EMF、WMF など、人気のある形式にエクスポートします。認証、cURL の例、および複数の言語向けのコードサンプルが含まれます。"
 keywords: "Aspose.Cells, チャートのエクスポート, Excel チャート エクスポート, REST API, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK, チャート形式, Aspose Cells Cloud"
 weight: 20

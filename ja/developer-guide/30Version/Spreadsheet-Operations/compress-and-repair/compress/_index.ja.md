@@ -4,8 +4,8 @@ ArticleTitle: "Excel ファイル内のデータを圧縮する – Aspose.Cells
 second_title: "ドキュメント"
 linktitle: "Excel ファイルを圧縮する"
 type: docs
-url: /compress-excel-files/
-aliases: [/compress/]
+url: /ja/compress-excel-files/
+aliases: [  /ja/compress/ ]
 keywords: "excel ファイルを圧縮, aspose cells cloud, excel 圧縮, スプレッドシート圧縮, rest api, ファイル圧縮"
 description: "Aspose.Cells Cloud REST API を使用して Excel ファイル (XLS、XLSX、XLSM、XLSB、ODS) を圧縮します。圧縮レベルの設定、複数ファイルの処理、SDK を介した統合が可能です。"
 weight: 39

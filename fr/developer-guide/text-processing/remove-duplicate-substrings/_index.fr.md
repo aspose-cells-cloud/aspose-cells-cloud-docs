@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Outil de suppression de sous-chaînes dupliquées dans Excel – Nettoyer le texte répété dans les cellules"
 linktitle: "Supprimer les sous-chaînes dupliquées"
 type: docs
-url: /remove-duplicate-substrings/
+url: /fr/remove-duplicate-substrings/
 keywords: "Aspose.Cells, sous-chaînes dupliquées, API Excel, nettoyage de texte, cloud"
 description: "Supprimez les sous-chaînes dupliquées dans les cellules Excel via l’API Aspose.Cells Cloud tout en conservant le formatage et les validations."
 weight: 100

@@ -3,8 +3,8 @@ title: "العمل مع ميزة التلاؤم التلقائي في ورقة �
 second_title: "مستند"
 linktitle: "التلاؤم التلقائي"
 type: docs
-url: /worksheets/autofit/
-aliases: [/autofit-rows-and-columns-of-worksheet/]
+url: /ar/worksheets/autofit/
+aliases: [  /ar/autofit-rows-and-columns-of-worksheet/ ]
 keywords: "التلاؤم التلقائي، عمود، صف، Aspose.Cells، السحابة، إكسل، API، إعادة الحجم"
 description: "تعرّف على كيفية إعادة حجم الصفوف والأعمدة تلقائيًا في ورقة عمل إكسل باستخدام Aspose.Cells Cloud REST API. يتضمن أمثلة بلغة cURL و .NET و Java و Python."
 weight: 20

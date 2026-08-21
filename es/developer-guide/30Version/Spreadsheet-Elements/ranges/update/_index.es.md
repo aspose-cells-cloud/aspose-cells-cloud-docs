@@ -3,7 +3,7 @@ title: "Cómo actualizar el contenido de un rango en una hoja de cálculo de Exc
 second_title: "Documento"
 linktitle: "Actualizar"
 type: docs
-url: /ranges/update/
+url: /es/ranges/update/
 keywords: "Excel, actualización de rango, Aspose.Cells Cloud, API REST, hoja de cálculo, estilo de rango, valores de rango, altura de fila, ancho de columna"
 description: "Actualice el contenido de un rango en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Modifique estilos, valores, alturas de fila y anchos de columna mediante los SDK admitidos."
 weight: 20

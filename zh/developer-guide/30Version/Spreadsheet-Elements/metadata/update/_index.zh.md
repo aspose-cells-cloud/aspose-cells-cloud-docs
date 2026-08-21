@@ -3,7 +3,7 @@ title: "更新元数据"
 second_title: "文档"
 linktitle: "无需使用存储更新"
 type: docs
-url: /metadata/update/
+url: /zh/metadata/update/
 keywords: "元数据, Excel, Aspose.Cells Cloud, REST API, 更新, 电子表格"
 description: "Aspose.Cells Cloud REST API 支持更新 Excel 文件中的元数据。它支持多种 SDK（C#、Java、Python、Ruby、Go 等），便于在各种编程语言中实现无缝集成。"
 weight: 35

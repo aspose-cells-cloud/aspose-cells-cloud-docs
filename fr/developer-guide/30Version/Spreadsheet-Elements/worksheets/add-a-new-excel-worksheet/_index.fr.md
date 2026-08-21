@@ -5,7 +5,7 @@ second_title: "Document"
 linktype: "Ajouter"
 type: docs
 url: /fr/worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
+aliases: [  /fr/add-a-new-excel-worksheet/ ]
 keywords: "ajouter une feuille Excel, Aspose.Cells Cloud, API REST, PUT worksheet, classeur Excel, requête API"
 description: "Guide étape par étape pour ajouter une nouvelle feuille à un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud, incluant les détails de la requête, un exemple cURL et des extraits de code SDK pour plusieurs langages."
 weight: 20

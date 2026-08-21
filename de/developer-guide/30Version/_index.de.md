@@ -4,7 +4,7 @@ ArticleTitle: "Aspose.Cells Cloud 3.0 REST API Entwicklerhandbuch – Erstellung
 second_title: "Dokument"
 type: docs
 url: /de/developer-guide-3.0/
-aliases: [/de/developer-guide/v3.0/,/de/developer-guide-v3.0/]
+aliases: [  /de/developer-guide/v3.0/ , /de/developer-guide-v3.0/ ]
 keywords: "Aspose.Cells Cloud, Excel REST API, Konvertierung von Arbeitsmappen, Chart API, Datenimport, Export, PDF, CSV, JSON, Entwicklerhandbuch"
 description: "Erfahren Sie, wie Sie die REST APIs von Aspose.Cells Cloud 3.0 für die Erstellung, Konvertierung, Gestaltung, Diagrammerstellung, Tabellenbearbeitung und mehr von Excel-Arbeitsmappen verwenden. Enthält Codebeispiele und Best-Practice-Tipps."
 weight: 150

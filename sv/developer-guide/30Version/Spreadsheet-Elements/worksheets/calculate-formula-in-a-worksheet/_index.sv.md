@@ -3,8 +3,8 @@ title: "Beräkna en formel i ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Beräkna"
 type: docs
-url: /worksheets/calculate-formula/
-aliases: [/calculate-formula-in-a-worksheet/]
+url: /sv/worksheets/calculate-formula/
+aliases: [  /sv/calculate-formula-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, formelberäkning, REST API, SDK:er, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
 description: "Beräkna formler i ett Excel-ark med Aspose.Cells Cloud REST API. Stöder flera SDK:er (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift) med klara, direktanvändbara exempel."
 weight: 20

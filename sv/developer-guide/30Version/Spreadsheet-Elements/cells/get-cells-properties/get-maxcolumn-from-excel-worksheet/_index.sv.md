@@ -1,7 +1,7 @@
 ---
 title: "Hämta MaxColumn från Excel-arbetsblad"
 type: docs
-url: /get-maxcolumn-from-excel-worksheet/
+url: /sv/get-maxcolumn-from-excel-worksheet/
 weight: 60
 keywords: "Aspose Cells API, maxcolumn, Excel-arbetsblad, REST, SDK"
 description: "Hämta det maximala kolumnindexet för ett arbetsblad med Aspose.Cells Cloud API. Inkluderar cURL-begäran med autentisering, responschema, parametrar, felkoder och SDK-exempel (C#, Java, Python etc.)."

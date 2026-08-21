@@ -3,8 +3,8 @@ title: "删除特定文档属性"
 second_title: "文档"
 linktitle: "删除"
 type: docs
-url: /document-properties/delete/
-aliases: [/remove-a-particular-document-property/]
+url: /zh/document-properties/delete/
+aliases: [  /zh/remove-a-particular-document-property/ ]
 keywords: "Aspose.Cells, 删除文档属性, Excel 元数据 API, REST, 云 SDK, cURL 示例"
 description: "使用 Aspose.Cells Cloud REST API v3.0 从 Excel 工作簿中删除特定文档属性。包含 C#、Java、Python 等语言的 cURL 和 SDK 示例。"
 weight: 50

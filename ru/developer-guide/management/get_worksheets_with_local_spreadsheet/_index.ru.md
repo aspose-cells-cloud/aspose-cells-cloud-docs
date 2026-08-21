@@ -3,7 +3,7 @@ title: "Получение листов с локальной электронн
 ArticleTitle: "Получение листов с локальной электронной таблицей – Aspose.Cells Cloud"
 second_title: "Документ"
 linktype: "docs"
-url: /cells/spreadsheet/worksheets
+url: /ru/cells/spreadsheet/worksheets
 aliases: []
 keywords: "Aspose.Cells, листы, локальная электронная таблица, API"
 description: "Получает полный список листов из текущей активной локальной электронной таблицы."

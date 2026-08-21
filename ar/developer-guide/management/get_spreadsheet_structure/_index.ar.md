@@ -4,7 +4,7 @@ ArticleTitle: "GetSpreadsheetStructure – Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "GetSpreadsheetStructure"
 type: docs
-url: /cells/spreadsheet/structure
+url: /ar/cells/spreadsheet/structure
 aliases: []
 keywords: "Aspose.Cells, هيكل جدول البيانات, API"
 description: "تحويل هيكل البيانات الأساسية، وورقات العمل، والجداول، وجداول البيانات المحورية، والمخططات، والأشكال، ومعلومات أخرى من ملف Excel إلى كائن JSON من نوع JObject."

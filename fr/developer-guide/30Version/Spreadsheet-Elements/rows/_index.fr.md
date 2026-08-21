@@ -3,8 +3,8 @@ title: "Travail avec les lignes Excel – API Cloud Aspose.Cells"
 ArticleTitle: "Travail avec les lignes Excel – API Cloud Aspose.Cells"
 second_title: "Document"
 linktype: "docs"
-url: /rows/
-aliases: [/working-with-rows/]
+url: /fr/rows/
+aliases: [  /fr/working-with-rows/ ]
 keywords: "Aspose.Cells, lignes Excel, API REST, manipulation de feuilles de calcul"
 description: "Manipulez des lignes dans des fichiers Excel à l’aide de l’API REST Aspose.Cells Cloud. Prend en charge Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby et Swift."
 weight: 100

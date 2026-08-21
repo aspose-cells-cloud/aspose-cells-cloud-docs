@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "여러 워크시트"
 type: docs
 url: /ko/worksheets/delete-multiple/
-aliases: [/delete-excel-worksheets/]
+aliases: [  /ko/delete-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, 여러 워크시트 삭제, Excel API, REST API, v3.0, 워크시트 삭제"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 Excel 워크북에서 여러 워크시트를 삭제하는 방법을 알아보세요. 안전한 HTTPS 엔드포인트, 필요한 매개변수, 수정된 cURL 예제, 다양한 프로그래밍 언어의 SDK 스니펫이 포함됩니다."
 weight: 20

@@ -3,8 +3,8 @@ title: "Excel Çalışma Kitabında Satırları Otomatik Uygun Hale Getirme"
 second_title: "Belge"
 linktitle: "Satırlar"
 type: docs
-url: /autofit-rows-on-an-excel-file/
-aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
+url: /tr/autofit-rows-on-an-excel-file/
+aliases: [  /tr/auto-fit-rows-in-excel-workbooks/ , /tr/workbook/autofit/rows/ ]
 keywords: "satırları otomatik uygun hale getirme, Excel çalışma kitabı, Aspose.Cells Cloud, REST API, otomatik uygunluk seçenekleri"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabında satır yüksekliklerini otomatik olarak ayarlamayı öğrenin. Endpoint, parametreler, cURL örneği ve C#, Java, Python ve diğerleri için SDK snippet'leri içerir."
 weight: 90

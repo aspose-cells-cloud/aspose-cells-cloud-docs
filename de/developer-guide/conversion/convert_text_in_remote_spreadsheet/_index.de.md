@@ -4,7 +4,7 @@ ArticleTitle: "Text in Remote Spreadsheet konvertieren – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktitle: "Text in Remote Spreadsheet konvertieren"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
+url: /de/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
 aliases: []
 keywords: "Aspose.Cells, Textkonvertierung, API"
 description: "Konvertiert Text in einem angegebenen Bereich eines Arbeitsblatts, einschließlich Zahlenkonvertierung, Zeichenersetzung, Zeilenumbruchbehandlung und Normalisierung von accented Zeichen."

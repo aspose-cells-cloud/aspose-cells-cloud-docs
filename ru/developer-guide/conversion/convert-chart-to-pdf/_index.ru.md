@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать диаграмму локальной электронной таблицы в PDF-файл: Пошаговое руководство"
 linktitle: "Преобразование диаграммы в PDF"
 type: docs
-url: /convert-chart-to-pdf/
+url: /ru/convert-chart-to-pdf/
 keywords: "Aspose Cells, диаграмма, PDF, Excel, преобразование, облачный API"
 description: "Экспортируйте диаграммы из локальных файлов Excel в формат PDF с использованием облачного REST API Aspose.Cells Cloud. Поддерживает файлы XLSX и XLS."
 weight: 100

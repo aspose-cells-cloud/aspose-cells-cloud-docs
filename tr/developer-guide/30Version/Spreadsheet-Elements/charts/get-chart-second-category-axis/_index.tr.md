@@ -1,7 +1,7 @@
 ---
 title: "Grafiğin İkinci Kategori Ekseni Alın"
 type: docs
-url: /charts/second-category-axis/get/
+url: /tr/charts/second-category-axis/get/
 weight: 60
 keywords: "Grafiğin İkinci Kategori Ekseni Alın, Aspose.Cells Cloud API, Excel grafik eksi, REST API, ikinci-kategori eksen, Aspose.Cells"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki bir grafiğin ikinci kategori eksenini alın. İstek formatını, parametreleri, örnek cURL’i, yanıt şemasını, durum kodlarını ve kullanım notlarını içerir."

@@ -3,7 +3,7 @@ title: "GetMergedCellsInRemotedWorksheet"
 ArticleTitle: "الحصول على الخلايا المدمجة في ورقة عمل عن بُعد – واجهة برمجة تطبيقات Aspose.Cells Cloud"
 second_title: "مستند"
 linktype: "docs"
-url: /cells/mergedcells/get
+url: /ar/cells/mergedcells/get
 aliases: []
 keywords: "Aspose Cells، الحصول على الخلايا المدمجة، ورقة عمل عن بُعد، واجهة برمجة التطبيقات"
 description: "يسترجع جميع مناطق الخلايا المدمجة من ورقة عمل عن بُعد في ملف جدول بيانات."

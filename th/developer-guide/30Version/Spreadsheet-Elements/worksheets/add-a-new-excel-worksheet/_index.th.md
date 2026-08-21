@@ -4,8 +4,8 @@ ArticleTitle: "เพิ่มแผ่นงาน Excel - คู่มือ A
 second_title: "เอกสาร"
 linktype: "เพิ่ม"
 type: docs
-url: /worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
+url: /th/worksheets/add/
+aliases: [  /th/add-a-new-excel-worksheet/ ]
 keywords: "เพิ่มแผ่นงาน Excel, Aspose.Cells Cloud, REST API, PUT worksheet, สมุดงาน Excel, API request"
 description: "คู่มือแบบทีละขั้นตอนในการเพิ่มแผ่นงานใหม่ลงในสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API ซึ่งประกอบด้วยรายละเอียดคำขอตัวอย่าง cURL และโค้ดตัวอย่าง SDK สำหรับหลายภาษา"
 weight: 20

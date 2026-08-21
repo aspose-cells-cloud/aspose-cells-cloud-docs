@@ -3,8 +3,8 @@ title: "إضافة علامة مائية إلى ملفات Excel"
 second_title: "مستند"
 linktype: "إضافة علامة مائية إلى ملفات Excel"
 type: docs
-url: /add-watermark-into-excel-files/
-aliases: [/watermark/]
+url: /ar/add-watermark-into-excel-files/
+aliases: [  /ar/watermark/ ]
 keywords: "إضافة علامة مائية إلى Excel، Aspose.Cells Cloud، REST API، SDK، C#، Java، PHP، Ruby، Node.js، Python، Perl، Go"
 description: "تعرّف على كيفية إضافة علامة مائية نصية إلى كتب عمل Excel باستخدام REST API الخاص بـ Aspose.Cells Cloud (الإصدار 3.0). يشمل مثال cURL، والمعاملات المطلوبة، وتفاصيل الاستجابة."
 weight: 39

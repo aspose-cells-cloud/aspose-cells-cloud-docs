@@ -1,7 +1,7 @@
 ---
 title: "MaxColumn aus Excel-Arbeitsblatt abrufen"
 type: docs
-url: /get-maxcolumn-from-excel-worksheet/
+url: /de/get-maxcolumn-from-excel-worksheet/
 weight: 60
 keywords: "Aspose Cells API, maxcolumn, Excel-Arbeitsblatt, REST, SDK"
 description: "Rufen Sie den maximalen Spaltenindex eines Arbeitsblatts mithilfe der Aspose.Cells Cloud API ab. Enthält cURL-Anfrage mit Authentifizierung, Antwortschema, Parametern, Fehlercodes und SDK-Beispiele (C#, Java, Python usw.)."

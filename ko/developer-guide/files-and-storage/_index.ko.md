@@ -4,8 +4,8 @@ second_title: "문서"
 ArticleTitle: "Excel용 클라우드 파일 관리 – 효율적이고 안전한 Excel 파일 저장 및 지능형 조직 솔루션"
 linktype: "files-and-storage"
 type: docs
-url: /files-and-storage/
-aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
+url: /ko/files-and-storage/
+aliases: [  /ko/working-with-files-and-storage-using-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, 파일 저장소 API, Excel 파일 업로드, Excel 파일 다운로드, 파일 복사, 파일 이동, 파일 삭제, 폴더 관리, REST API, cURL 예제"
 description: "Aspose.Cells Cloud 저장소에서 Excel 파일 및 폴더를 관리하는 종합 가이드입니다. cURL 예제, 필수 매개변수, 인증 참고 사항을 포함한 업로드, 다운로드, 복사, 이동, 삭제 및 폴더 작업을 제공합니다."
 weight: 100

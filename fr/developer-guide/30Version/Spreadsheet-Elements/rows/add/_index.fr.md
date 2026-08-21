@@ -3,7 +3,7 @@ title: "Comment ajouter des lignes à une feuille Excel"
 second_title: "Document"
 linktitle: "Ajouter"
 type: docs
-url: /rows/add/
+url: /fr/rows/add/
 keywords: "Aspose.Cells, ajouter des lignes, API Excel, REST, C#, Java, Python, Node.js"
 description: "Guide pas à pas pour ajouter une ou plusieurs lignes à une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud, avec des exemples de code en C#, Java, Python et Node.js."
 weight: 20

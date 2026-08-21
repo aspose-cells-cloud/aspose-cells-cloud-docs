@@ -4,7 +4,7 @@ ArticleTitle: "計算式の計算 – Aspose.Cells Cloud API"
 second_title: "ドキュメント"
 linktitle: "計算式の計算"
 type: docs
-url: /cells/calculate/formula
+url: /ja/cells/calculate/formula
 aliases: []
 keywords: "Aspose Cells, 計算式, スプレッドシート, API"
 description: "Aspose.Cells Cloud API を使用してスプレッドシート内の計算式を計算します。"

@@ -4,7 +4,7 @@ ArticleTitle: "UnpivotRange – Aspose.Cells Cloud"
 second_title: "문서"
 linktitle: "UnpivotRange"
 type: docs
-url: /cells/unpivot/range
+url: /ko/cells/unpivot/range
 aliases: []
 keywords: "Aspose.Cells, UnpivotRange, API"
 description: "스preadsheet에서 행과 열을 전환합니다."

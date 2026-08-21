@@ -3,7 +3,7 @@ title: Lägg till villkor i villkorsformatering
 description: Lär dig hur du lägger till ett villkor till en kalkylblads villkorsformatering med Aspose.Cells Cloud REST API (v3.0). Inkluderar slutpunkt, parametrar, autentisering, cURL-exempel, SDK-utdrag och felhantering.
 keywords: "Aspose.Cells Cloud, Villkorsformatering, Lägg till villkor, REST API, Excel, Kalkylblad"
 type: docs
-url: /conditional-formattings/add-a-condition/
+url: /sv/conditional-formattings/add-a-condition/
 aliases:
   - /add-a-condition-for-format-condition/
 weight: 40

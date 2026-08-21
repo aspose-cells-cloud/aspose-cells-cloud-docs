@@ -4,8 +4,8 @@ second_title: "Documento"
 linktitle: "Novedades"
 type: docs
 weight: 9
-url: /new-features/
-aliases: [/what-s-new-in-aspose-cells-cloud/]
+url: /es/new-features/
+aliases: [  /es/what-s-new-in-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, nuevas funcionalidades, Microsoft Office Excel, hojas de cálculo de OpenOffice, CSV, PDF, API REST, SDK, hoja de cálculo, nube"
 description: "Descubre las últimas funcionalidades, mejoras y correcciones de errores en Aspose.Cells Cloud, incluyendo actualizaciones para Excel, OpenOffice, CSV y el manejo de PDF."
 ArticleTitle: "Novedades en Aspose.Cells Cloud – Últimas funcionalidades y actualizaciones"

@@ -2,7 +2,7 @@
 title: "Eliminare un grafico da un foglio di lavoro"
 type: docs
 url: /it/charts/delete/
-aliases: [/it/delete-a-chart-from-a-worksheet/]
+aliases: [  /it/delete-a-chart-from-a-worksheet/ ]
 weight: 40
 keywords:
   - "Aspose.Cells"

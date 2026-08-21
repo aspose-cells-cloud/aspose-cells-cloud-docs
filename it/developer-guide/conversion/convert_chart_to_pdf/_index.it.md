@@ -3,7 +3,7 @@ title: "Convertire Grafico in PDF"
 ArticleTitle: "Convertire Grafico in PDF – Aspose.Cells Cloud API"
 second_title: "Document"
 linktype: "docs"
-url: /cells/convert/chart/pdf
+url: /it/cells/convert/chart/pdf
 aliases: []
 keywords: "ConvertChartToPdf, Aspose.Cells, PDF, conversione grafico"
 description: "Converte un grafico di un foglio di calcolo su un drive locale in PDF."

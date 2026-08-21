@@ -1,8 +1,8 @@
 ---
 title: "条件書式ルールの取得"
 type: docs
-url: /conditional-formattings/get-all/
-aliases: [/get-conditional-formattings-of-worksheet/]
+url: /ja/conditional-formattings/get-all/
+aliases: [  /ja/get-conditional-formattings-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, 条件書式, ワークシート, 条件書式 API"
 description: "Aspose.Cells Cloud REST API を使用してワークシートに適用されているすべての条件書式ルールを取得します。リクエスト構文、認証手順、パラメーター、簡潔なレスポンス例、エラー処理を含みます。"
 weight: 20

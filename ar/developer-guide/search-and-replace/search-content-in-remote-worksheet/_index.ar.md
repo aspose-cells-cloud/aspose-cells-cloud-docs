@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "البحث عن النصوص في ورقة عمل جدول بيانات إكسل عن بُعد – إيجاد بيانات محددة"
 linktype: "بحث عن محتوى ورقة عمل عن بُعد"
 type: docs
-url: /search-content-in-remote-worksheet/
+url: /ar/search-content-in-remote-worksheet/
 keywords: "Aspose Cells, Excel API, بحث نصوص, ورقة عمل عن بُعد"
 description: "البحث عن نصوص أو أرقام أو صيغ في ورقة عمل إكسل عن بُعد باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud API. تدعم البحث دون تمييز بين الحروف الكبيرة والصغيرة والملفات المحمية بكلمة مرور."
 weight: 100

@@ -3,7 +3,7 @@ title: "Excel Çalışma Kitabını Kaydet – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktitle: "Farklı Kaydet"
 type: docs
-url: /save-an-excel-file-as-other-formats-files/
+url: /tr/save-an-excel-file-as-other-formats-files/
 aliases:
   - /convert-excel-workbook-to-different-file-formats/
   - /saveas-other-formats/

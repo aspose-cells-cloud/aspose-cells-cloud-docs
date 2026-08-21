@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Så här konverterar du ett kalkylarkskalkylblad till CSV med Aspose.Cells Cloud API"
 linktitle: "Konvertera kalkylblad till CSV"
 type: docs
-url: /convert-worksheet-to-csv/
+url: /sv/convert-worksheet-to-csv/
 keywords: "Aspose.Cells, CSV-konvertering, kalkylblad till CSV, REST API, molnkalkylark, Excel till CSV"
 description: "Lär dig hur du konverterar ett specifikt kalkylblad från en Excel-fil till CSV med Aspose.Cells Cloud API (v4.0). Innehåller slutpunkt, parametrar, exempel på cURL, SDK-kod och felhantering."
 weight: 100

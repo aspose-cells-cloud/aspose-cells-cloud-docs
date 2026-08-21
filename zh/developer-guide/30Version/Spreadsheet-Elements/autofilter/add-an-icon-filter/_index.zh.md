@@ -3,8 +3,8 @@ title: "为 Excel 工作表添加图标筛选器"
 second_title: "文档"
 linktitle: "添加图标筛选器"
 type: docs
-url: /autofilter/add-icon-filter/
-aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
+url: /zh/autofilter/add-icon-filter/
+aliases: [  /zh/add-an-icon-filter/ , /zh/autofilter/add-an-icon-filter/ ]
 keywords: "Aspose.Cells Cloud、Excel、图标筛选器、自动筛选、REST API"
 description: "了解如何使用 Aspose.Cells Cloud REST API 为 Excel 工作表添加图标筛选器，包括请求详情、cURL 示例、SDK 代码示例以及错误处理。"
 weight: 65

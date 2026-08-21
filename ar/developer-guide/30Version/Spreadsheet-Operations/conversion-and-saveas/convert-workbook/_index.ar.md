@@ -3,7 +3,7 @@ title: "تحويل ملف إكسل إلى تنسيقات مختلفة"
 second_title: "Document"
 linktitle: "تحويل ملف جدول البيانات"
 type: docs
-url: /convert-a-spread-file-to-different-formats/
+url: /ar/convert-a-spread-file-to-different-formats/
 keywords: "تحويل إكسل، تحويل ملفات جداول البيانات، Aspose.Cells Cloud، واجهة برمجة التطبيقات REST، PDF، CSV، JSON، Markdown، تحويل تنسيقات الملفات"
 description: "استخدم واجهة برمجة التطبيقات REST الخاصة بـ Aspose.Cells Cloud لتحويل كتب عمل إكسل إلى تنسيقات مختلفة مثل PDF و CSV و JSON و Markdown. تدعم الواجهة عدة حزم تطوير برمجيات (SDKs) لغات برمجة مثل C# و Java و Python وغيرها."
 weight: 10

@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Novità nel 2025"
 type: docs
 weight: 9
-url: /new-features/2025/
+url: /it/new-features/2025/
 keywords: "Aspose.Cells Cloud, nuove funzionalità 2025, API per fogli di calcolo, Excel, CSV, PDF, foglio di calcolo cloud"
 description: "Questa pagina elenca le ultime funzionalità e miglioramenti rilasciati nel 2025 in Aspose.Cells Cloud, tra cui nuove API, miglioramenti e correzioni di bug."
 ArticleTitle: "Novità in Aspose.Cells Cloud nel 2025 – Ultime funzionalità e miglioramenti"

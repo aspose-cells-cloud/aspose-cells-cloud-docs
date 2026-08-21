@@ -3,7 +3,7 @@ title: "任务"
 second_title: "文档"
 type: docs
 url: /zh/tasks/
-aliases: [/zh/working-with-tasks/]
+aliases: [  /zh/working-with-tasks/ ]
 keywords: "Aspose Cells, 云 API, Excel 任务, 转换任务, 导入数据任务, SmartMarker, 保存结果, REST API, 电子表格自动化"
 description: "探索 Aspose.Cells Cloud 任务 API 的完整功能集：转换、导入数据、保存结果、SmartMarker 等。了解用法、参数及 Excel 自动化的代码示例。"
 weight: 100

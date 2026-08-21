@@ -3,8 +3,8 @@ title: "替换 Excel 工作表中的文本 — Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "在工作表中替换文本"
 type: docs
-url: /worksheets/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /zh/worksheets/replace-text/
+aliases: [  /zh/replace-text-in-a-workbook/ ]
 keywords: "Aspose.Cells, 替换文本, Excel, REST API, 电子表格, 工作表"
 description: "了解如何使用 Aspose.Cells Cloud API（v3.0）替换 Excel 工作表中的文本。内容包括前置条件、身份验证、请求语法、cURL 示例、SDK 代码示例、响应详情和错误处理。"
 ArticleTitle: "替换 Excel 工作表中的文本 — Aspose.Cells Cloud API"

@@ -3,7 +3,7 @@ title: "Salva il Workbook di Excel – Aspose.Cells Cloud API"
 secondo titolo: "Document"
 linktitle: "Salva come"
 type: docs
-url: /save-an-excel-file-as-other-formats-files/
+url: /it/save-an-excel-file-as-other-formats-files/
 alias:
   - /convert-excel-workbook-to-different-file-formats/
   - /saveas-other-formats/

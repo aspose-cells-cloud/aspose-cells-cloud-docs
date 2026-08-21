@@ -3,8 +3,8 @@ title: "Flytta ett namngivet intervall med ett Excel-arbetsblad"
 second_title: "Document"
 linktitle: "Flytta"
 type: docs
-url: /ranges/move/
-aliases: [/move-a-named-range-with-an-excel-worksheet/]
+url: /sv/ranges/move/
+aliases: [  /sv/move-a-named-range-with-an-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, flytta namngivet intervall, Excel-arbetsblad, REST API, intervallflyttning, SDK-exempel"
 description: "Lär dig hur du flyttar ett namngivet intervall inom ett Excel-arbetsblad med Aspose.Cells Cloud REST API v3.0, inklusive detaljerad endpoint-info, autentisering, exempel och SDK-kodexempel."
 weight: 20

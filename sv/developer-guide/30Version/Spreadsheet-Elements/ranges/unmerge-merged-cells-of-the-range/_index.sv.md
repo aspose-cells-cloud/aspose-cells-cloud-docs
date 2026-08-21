@@ -3,8 +3,8 @@ title: "Dela upp celler i ett intervall"
 second_title: "Dokument"
 linktitle: "Dela upp"
 type: docs
-url: /ranges/unmerge/
-aliases: [/unmerge-merged-cells-of-the-range/]
+url: /sv/ranges/unmerge/
+aliases: [  /sv/unmerge-merged-cells-of-the-range/ ]
 keywords: "Aspose.Cells Cloud, dela upp celler, Excel API, arbetsbladintervall, REST API"
 description: "Lär dig hur du använder Aspose.Cells Cloud API för att dela upp sammanfogade celler i ett specifikt arbetsbladsintervall. Innehåller endpoint, parametrar, exempel med cURL och SDK-kodsnuttar för C#, Java, Python m.fl."
 weight: 20

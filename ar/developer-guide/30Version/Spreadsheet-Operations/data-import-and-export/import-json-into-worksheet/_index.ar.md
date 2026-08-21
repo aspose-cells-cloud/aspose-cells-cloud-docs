@@ -4,7 +4,7 @@ second_title: "وثيقة"
 linktype: "استيراد JSON"
 type: docs
 url: /ar/import-json-data-into-excel/
-aliases: [/ar/import/json/]
+aliases: [  /ar/import/json/ ]
 keywords: "Aspose.Cells Cloud، استيراد JSON، API Excel، استيراد JSON عبر REST، أمثلة SDK"
 description: "تعلم كيفية استيراد بيانات JSON إلى ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يشمل تفاصيل نقطة النهاية، وأمثلة على الطلبات والاستجابات، وشيفرة برمجية لـ .NET وJava وPython."
 weight: 40

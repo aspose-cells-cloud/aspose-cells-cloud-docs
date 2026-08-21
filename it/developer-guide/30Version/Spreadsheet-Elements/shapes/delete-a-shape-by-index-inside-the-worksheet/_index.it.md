@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Elimina"
 type: docs
 url: /it/shapes/delete/
-aliases: [/it/delete-a-shape-by-index-inside-the-worksheet/]
+aliases: [  /it/delete-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Elimina forma, Indice forma, Foglio di calcolo Excel, API REST, SDK"
 description: "Utilizza l'API REST di Aspose.Cells Cloud per eliminare una forma per indice in un foglio di calcolo Excel. L'API è disponibile tramite diversi SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) e supporta varie opzioni di archiviazione."
 weight: 50

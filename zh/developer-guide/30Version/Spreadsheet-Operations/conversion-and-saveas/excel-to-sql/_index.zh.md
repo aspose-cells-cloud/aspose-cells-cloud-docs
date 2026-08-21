@@ -3,7 +3,7 @@ title: "Excel 转 SQL"
 second_title: "文档"
 linktitle: "Excel 转 SQL"
 type: docs
-url: /convert-excel-file-to-sql-file/
+url: /zh/convert-excel-file-to-sql-file/
 keywords: "Aspose.Cells, Excel 转 SQL, 云 API, 电子表格转换, REST"
 description: "使用 Aspose.Cells Cloud REST API 将 Excel 电子表格转换为 SQL 文件。支持多种 SDK 和编程语言，便于无缝集成到您的应用程序中。"
 weight: 100

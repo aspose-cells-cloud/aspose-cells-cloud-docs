@@ -1,8 +1,8 @@
 ---
 title: "Legende eines Diagramms in einem Excel-Arbeitsblatt ausblenden – Aspose.Cells Cloud API"
 type: docs
-url: /charts/legend/hide/
-aliases: [/hide-chart-legend-in-a-worksheet/]
+url: /de/charts/legend/hide/
+aliases: [  /de/hide-chart-legend-in-a-worksheet/ ]
 weight: 110
 keywords: "Aspose.Cells, Excel, Diagrammlegende ausblenden, REST-API, Cloud-SDK, Diagrammlegende"
 description: "Erfahren Sie, wie Sie die Legende eines Diagramms in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API ausblenden. Enthält HTTPS-Endpunkt, erforderliche Authentifizierung, Anforderungssyntax, Antwortdetails, Fehlerbehandlung und SDK-Beispiele."

@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Come convertire un intervallo locale di un foglio di calcolo in un file CSV: Guida passo-passo"
 linktype: "Converti intervallo in CSV"
 type: docs
-url: /convert-range-to-csv/
+url: /it/convert-range-to-csv/
 keywords: "Aspose Cells, Convertire intervallo in CSV, Excel in CSV, API Excel, Foglio di calcolo cloud, Convertire, Excel, CSV, Aspose.Cells, API cloud"
 description: "Scopri come convertire un intervallo specifico da un file Excel locale (XLSX o XLS) in CSV utilizzando l’API REST Aspose.Cells Cloud. Include sintassi delle richieste, parametri, gestione degli errori ed esempi di SDK."
 ---

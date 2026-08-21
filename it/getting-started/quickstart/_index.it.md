@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Aspose.Cells Cloud Quickstart"
 linktype: "Quickstart"
 type: docs
-url: /quickstart/
+url: /it/quickstart/
 description: "Aspose.Cells Cloud consente di creare, convertire, unire, dividere, proteggere file Excel e svolgere operazioni su oggetti interni, tra molte altre funzionalità."
 weight: 20
 keywords: "Aspose.Cells Cloud, Excel, Foglio di calcolo, API, SDK cloud, API REST, PDF, CSV, JSON, Quickstart"

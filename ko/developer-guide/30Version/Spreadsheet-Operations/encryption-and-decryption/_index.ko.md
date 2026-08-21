@@ -3,8 +3,8 @@ title: "Excel 파일 암호화, 복호화 및 디지털 서명"
 second_title: "문서"
 linktype: "보호 Excel"
 type: docs
-url: /protect/
-aliases: [/workbook/password/]
+url: /ko/protect/
+aliases: [  /ko/workbook/password/ ]
 keywords: "Excel, 보호, 암호화, 복호화, 디지털 서명, Aspose.Cells Cloud, REST API, 비밀번호, 보안"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북을 보호, 암호화, 복호화 및 디지털 서명하는 방법을 배워보세요 – Android, C#, Java, Python 등 다양한 언어의 코드 예제 포함."
 ArticleTitle: "Aspose.Cells Cloud API를 사용하여 Excel 파일 암호화, 복호화, 디지털 서명 및 보호"

@@ -4,8 +4,8 @@ ArticleTitle: "Matcha alla tomma celler i ett Excel-arbetsblad – Aspose.Cells 
 second_title: "Dokument"
 linktitle: "Matcha alla tomma celler"
 type: docs
-url: /autofilter/match-all-blank/
-aliases: [/match-all-blank-cells-in-the-list/]
+url: /sv/autofilter/match-all-blank/
+aliases: [  /sv/match-all-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells, tomma celler, AutoFilter, REST API, Excel"
 description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att filtrera och matcha alla tomma celler i ett Excel-arbetsblad. Innehåller slutpunkt, parametrar, autentiseringssteg, cURL-exempel och SDK-utdrag för C#, Java, Python och mer."
 weight: 100

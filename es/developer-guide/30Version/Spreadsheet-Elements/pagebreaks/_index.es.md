@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "SaltosDePágina"
 type: docs
 url: /es/working-with-pagebreaks/
-aliases: [/es/working-with-pagebreaks/]
+aliases: [  /es/working-with-pagebreaks/ ]
 keywords: "Excel, salto de página, Aspose.Cells Cloud, API REST, hoja de cálculo, agregar, eliminar, obtener, actualizar, saltos de página"
 description: "Aprenda cómo agregar, recuperar y eliminar saltos de página en hojas de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye ejemplos para saltos verticales y horizontales."
 weight: 100

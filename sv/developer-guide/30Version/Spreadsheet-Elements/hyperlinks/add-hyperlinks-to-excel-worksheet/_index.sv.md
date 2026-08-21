@@ -1,8 +1,8 @@
 ---
 title: "Lägg till hyperlänk till kalkylblad"
 type: docs
-url: /hyperlinks/add/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /sv/hyperlinks/add/
+aliases: [  /sv/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, lägg till hyperlänk, Excel REST API, moln-SDK"
 description: "Lär dig hur du lägger till en hyperlänk till ett Excel-kalkylblad med Aspose.Cells Cloud v3.0 REST API. Inkluderar slutpunkt, komplett parameterguide, cURL-exempel och SDK-fragment för C#, Java, Python och mer."
 weight: 20

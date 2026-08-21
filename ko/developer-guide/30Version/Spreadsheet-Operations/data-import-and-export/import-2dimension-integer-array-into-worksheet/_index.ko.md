@@ -3,7 +3,7 @@ title: "2차원 정수 배열을 Excel 워크시트로 가져오기"
 second_title: "문서"
 linktype: "Import 2차원 정수 배열"
 type: docs
-url: /import-a-2d-integer-array-into-excel-worksheet/
+url: /ko/import-a-2d-integer-array-into-excel-worksheet/
 aliases:
   [
     "/import-2dimension-integer-array-into-excel-worksheet/",

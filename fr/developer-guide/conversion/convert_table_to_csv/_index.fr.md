@@ -4,7 +4,7 @@ ArticleTitle: "Convertir un tableau en CSV – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Convertir un tableau en CSV"
 type: docs
-url: /cells/convert/table/csv
+url: /fr/cells/convert/table/csv
 aliases: []
 keywords: "Convertir un tableau en CSV, Aspose.Cells, API cloud"
 description: "Convertit un tableau d’une feuille de calcul située sur un disque local en fichier CSV."

@@ -3,8 +3,8 @@ title: "Remplacer du texte dans un classeur Excel"
 second_title: "Document"
 linktitle: "Remplacer dans le classeur"
 type: docs
-url: /workbook/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /fr/workbook/replace-text/
+aliases: [  /fr/replace-text-in-a-workbook/ ]
 weight: 60
 keywords: "Aspose.Cells Cloud, Remplacer du texte, Classeur Excel, XLSX, ODS, API REST, Feuille de calcul, SDK"
 description: "Remplacer du texte dans des classeurs Excel (XLS, XLSX, XLSM, XLSB) et des classeurs OpenDocument Spreadsheet (ODS) à l’aide de l’API REST Aspose.Cells Cloud. Disponible via cURL et une large gamme de SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, etc.)."

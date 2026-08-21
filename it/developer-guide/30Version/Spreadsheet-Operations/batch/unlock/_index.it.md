@@ -2,7 +2,7 @@
 title: "Sblocco in Batch"
 second: "Documento"
 type: docs
-url: /batch/unlock
+url: /it/batch/unlock
 keywords: "sblocco in batch, Aspose.Cells Cloud, Excel, API REST, foglio di calcolo, SDK cloud"
 description: "Sblocca più file Excel in batch utilizzando l'API REST di Aspose.Cells Cloud. Supporta SDK per C#, Java, Python e altri linguaggi."
 weight: 100

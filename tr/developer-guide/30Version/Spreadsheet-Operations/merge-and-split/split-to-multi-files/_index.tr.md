@@ -3,8 +3,8 @@ title: "Bir Excel dosyasını birden fazla dosyaya bölün"
 second_title: "Belge"
 linktype: "Bir Excel dosyasını birden fazla dosyaya bölün"
 type: docs
-url: /split-an-excel-file-to-multi-files/
-aliases: [/split-excel-workbooks/,/workbook/split/]
+url: /tr/split-an-excel-file-to-multi-files/
+aliases: [  /tr/split-excel-workbooks/ , /tr/workbook/split/ ]
 keywords: "Aspose.Cells, Bulut, Excel, Böl, API, PDF, CSV, JSON"
 description: "Aspose.Cells Cloud REST API'sini kullanarak çok sayfalı Excel çalışma kitaplarını ayrı dosyalara bölün. Çıktı formatları olarak PDF, CSV ve JSON'u destekler ve Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby ve Swift için SDK'lar aracılığıyla kullanılabilir."
 weight: 32

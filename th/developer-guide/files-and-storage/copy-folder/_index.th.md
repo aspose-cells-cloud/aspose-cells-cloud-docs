@@ -3,7 +3,7 @@ title: "API สำเนาโฟลเดอร์ของ Aspose.Cells Cloud 
 second_title: "เอกสาร"
 ArticleTitle: "โซลูชันการจัดการไฟล์ Excel บนคลาวด์ – คำอธิบายโดยละเอียดเกี่ยวกับฟังก์ชันการสำเนาแบบแบตช์ของ API Aspose.Cells Copy Folder"
 linktype: "docs"
-url: /copy-folder/
+url: /th/copy-folder/
 keywords: "สำเนาโฟลเดอร์, Aspose.Cells Cloud, REST API, การจัดเก็บข้อมูลบนคลาวด์, การจัดการสเปรดชีต"
 description: "เรียนรู้วิธีการสำเนาโฟลเดอร์ในพื้นที่จัดเก็บข้อมูลของ Aspose.Cells Cloud ด้วยคำขอ REST ครั้งเดียว รวมถึง endpoint, พารามิเตอร์, ตัวอย่างคำขอ, รหัสข้อผิดพลาด และตัวอย่าง SDK"
 weight: 100

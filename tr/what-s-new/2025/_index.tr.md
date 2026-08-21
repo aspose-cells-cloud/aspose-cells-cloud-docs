@@ -4,7 +4,7 @@ second title: "Belge"
 linktitle: "2025'teki Yenilikler"
 type: docs
 weight: 9
-url: /new-features/2025/
+url: /tr/new-features/2025/
 keywords: "Aspose.Cells Cloud, 2025 yeni özellikleri, elektronik tablo API'si, Excel, CSV, PDF, bulut elektronik tablosu"
 description: "Bu sayfa, 2025 yılında yayımlanan en son Aspose.Cells Cloud özellikleri, geliştirmeleri ve hata düzeltmelerini listeler."
 ArticleTitle: "Aspose.Cells Cloud'da 2025'teki Yenilikler – En Son Özellikler ve Geliştirmeler"

@@ -4,7 +4,7 @@ ArticleTitle: "Konvertera text i fjärrarket – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktype: "Konvertera text i fjärrarket"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
+url: /sv/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
 aliases: []
 keywords: "Aspose.Cells, Textkonvertering, API"
 description: "Konverterar text i ett angivet intervall i ett kalkylblad, inklusive omvandling av nummer, teckenersättning, radbrytningshantering och normalisering av accenterade tecken."

@@ -4,7 +4,7 @@ ArticleTitle: "UnpivotRange – Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "UnpivotRange"
 type: docs
-url: /cells/unpivot/range
+url: /fr/cells/unpivot/range
 aliases: []
 keywords: "Aspose.Cells, UnpivotRange, API"
 description: "Inverser les lignes et les colonnes dans la feuille de calcul."

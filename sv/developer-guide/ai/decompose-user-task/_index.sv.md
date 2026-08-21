@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man konverterar användarmål till sekventiella åtgärdsplaner med Aspose.Cells Cloud AI:s API för uppdelning av uppgifter"
 linktitle: "Uppdelning av användaruppgift"
 type: docs
-url: /decompose-user-task/
+url: /sv/decompose-user-task/
 keywords: "Aspose.Cells AI, API för uppdelning av uppgifter, SMART-uppgiftsplanering, Redmine-import, projektautomatisering"
 description: "Omvandla fritt formuleringa mål till SMART, tidsuppskattade uppgiftslistor med Aspose.Cells Cloud AI. Få CSV/XLSX-utdata för Redmine, Jira eller Azure DevOps med ett enda PUT-anrop."
 weight: 100

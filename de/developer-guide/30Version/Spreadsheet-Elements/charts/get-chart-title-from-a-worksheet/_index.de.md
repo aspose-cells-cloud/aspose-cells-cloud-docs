@@ -1,8 +1,8 @@
 ---
 title: "Diagrammtitel aus einem Arbeitsblatt abrufen"
 type: docs
-url: /charts/title/get/
-aliases: [/get-chart-title-from-a-worksheet/]
+url: /de/charts/title/get/
+aliases: [  /de/get-chart-title-from-a-worksheet/ ]
 weight: 120
 keywords:
   - "Aspose.Cells Cloud"

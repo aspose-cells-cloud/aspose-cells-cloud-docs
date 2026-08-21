@@ -4,8 +4,8 @@ ArticleTitle: "Hur man delar en Excel-arbetsbok i flera filer med Aspose.Cells C
 second_title: "Dokument"
 linktitle: "Dela en Excel-fil"
 type: docs
-url: /split-multi-excel-files/
-aliases: [/split/multi-files/]
+url: /sv/split-multi-excel-files/
+aliases: [  /sv/split/multi-files/ ]
 keywords: "Excel, Aspose.Cells Cloud, REST API, dela arbetsbok, flera filer, JPEG, PNG, PDF, CSV, JSON"
 description: "Aspose.Cells Cloud REST API möjliggör delning av en Excel-arbetsbok i flera filer i olika format. Denna dokumentation tillhandahåller begärparametrar, ett cURL-exempel och SDK-kodexempel för språk som C#, Java, PHP, Ruby, Node.js, Python, Perl och Go."
 weight: 130

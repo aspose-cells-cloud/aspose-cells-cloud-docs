@@ -3,7 +3,7 @@ title: "设置工作表的页面设置"
 second_title: "Document"
 linktitle: "设置页面设置"
 type: docs
-url: /set-page-setup/
+url: /zh/set-page-setup/
 keywords: "Aspose.Cells, Excel, 页面设置, REST API, 工作表, 云 SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API 设置 Excel 工作表的页面设置。包含请求详情、安全的 HTTPS cURL 示例、响应状态码以及多种编程语言的 SDK 代码片段。"
 weight: 20

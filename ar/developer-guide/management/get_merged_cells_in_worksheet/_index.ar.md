@@ -3,7 +3,7 @@ title: "GetMergedCellsInWorksheet"
 ArticleTitle: "الحصول على الخلايا المدمجة في ورقة العمل – واجهة برمجة تطبيقات Aspose.Cells Cloud"
 second_title: "وثيقة"
 linktype: "docs"
-url: /cells/spreadsheet/mergedcells
+url: /ar/cells/spreadsheet/mergedcells
 aliases: []
 keywords: "Aspose Cells، الخلايا المدمجة، ورقة العمل، واجهة برمجة التطبيقات"
 description: "الحصول على جميع مناطق الخلايا المدمجة من ورقة عمل جدول محلي."

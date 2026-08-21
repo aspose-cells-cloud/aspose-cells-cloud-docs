@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Sort"
 type: docs
 keywords: "ترتيب النطاق، Aspose.Cells Cloud، واجهة برمجة تطبيقات REST، ملف جدول بيانات، Excel، API"
-url: /ranges/sort/
+url: /ar/ranges/sort/
 description: توفر واجهة برمجة تطبيقات لترتيب نطاق من الخلايا داخل ملف عمل باستخدام Aspose.Cells Cloud.
 weight: 20
 ---

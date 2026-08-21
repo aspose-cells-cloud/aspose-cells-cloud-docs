@@ -1,7 +1,7 @@
 ---
 title: "الحصول على MinColumn من ورقة عمل Excel"
 type: docs
-url: /get-mincolumn-from-excel-worksheet/
+url: /ar/get-mincolumn-from-excel-worksheet/
 weight: 100
 keywords: Excel, Aspose.Cells Cloud, REST API, Get MinColumn, Worksheet, SDK, Cloud API
 description: استرجاع فهرس العمود الأدنى الذي يحتوي على بيانات في ورقة عمل لملف Excel باستخدام واجهة Aspose.Cells Cloud REST API.

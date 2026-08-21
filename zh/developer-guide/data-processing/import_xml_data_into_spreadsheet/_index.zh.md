@@ -4,7 +4,7 @@ ArticleTitle: "将 XML 数据导入电子表格 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "将 XML 数据导入电子表格"
 type: docs
-url: /cells/import/data/xml
+url: /zh/cells/import/data/xml
 aliases: []
 keywords: "导入 XML, Aspose.Cells, API"
 description: "使用 Aspose.Cells Cloud 将 XML 数据文件导入本地电子表格。"

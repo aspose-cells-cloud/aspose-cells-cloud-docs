@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud Docker-Image-Tags"
 linktitle: "Image-Tags"
 type: docs
-url: /docker/tag-list/
+url: /de/docker/tag-list/
 description: "Finden Sie die neuesten Aspose.Cells Cloud Docker-Image-Tags für Windows Server (2016–2022) und Linux. Holen Sie sich Pull-Befehle, Architekturdetails und Upgrade-Hinweise an einer Stelle."
 weight: 30
 keywords:

@@ -4,7 +4,7 @@ description: "Aspose Cloud deposunda bulunan elektronik tablo dosyalarını tek 
 keywords: "Aspose.Cells, elektronik tablo birleştirme, uzak dizin, API, PDF, CSV, JSON, XLSX, ODS, XPS"
 weight: 100
 type: docs
-url: /merge-spreadsheets-in-remote-folder/
+url: /tr/merge-spreadsheets-in-remote-folder/
 ---
 
 Uzak bir Aspose Cloud depo dizininde bulunan birden fazla elektronik tablo dosyasını tek bir çıktı dosyasında birleştirin. İşlem tamamen bulutta çalışır, bu da kaynak dosyaları yerel olarak indirmenize gerek kalmadan işlem yapılmasını sağlar. 30'dan fazla çıktı formatı desteklenir (PDF, CSV, JSON, XLSX, ODS, XPS, ...).

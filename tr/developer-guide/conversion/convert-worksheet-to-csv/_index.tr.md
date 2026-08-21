@@ -4,7 +4,7 @@ second_title: "Doküman"
 ArticleTitle: "Aspose.Cells Cloud API Kullanarak Bir Elektronik Tablo Çalışma Sayfasını CSV'ye Nasıl Dönüştürülür"
 linktype: "Çalışma Sayfasını CSV'ye Dönüştür"
 type: docs
-url: /convert-worksheet-to-csv/
+url: /tr/convert-worksheet-to-csv/
 keywords: "Aspose.Cells, CSV dönüşümü, çalışma sayfasından CSV'ye, REST API, bulut tablo, Excel'den CSV'ye"
 description: "Aspose.Cells Cloud API'sini (v4.0) kullanarak bir Excel dosyasından belirli bir çalışma sayfasını CSV'ye nasıl dönüştüreceğinizi öğrenin. Endpoint, parametreler, örnek cURL, SDK kodu ve hata işleme içerir."
 weight: 100

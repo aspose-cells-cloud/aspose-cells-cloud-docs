@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "스프레드시트를 다른 형식으로 변환하는 방법: 단계별 가이드"
 linktype: "스프레드시트 변환"
 type: docs
-url: /convert-spreadsheet/
+url: /ko/convert-spreadsheet/
 keywords: "Aspose, Aspose.Cells, 스프레드시트 변환, Excel을 PDF로, Excel API, 클라우드 파일 변환"
 description: "Aspose.Cells Cloud API를 사용해 스프레드시트 파일을 다른 형식으로 변환합니다."
 weight: 100

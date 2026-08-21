@@ -3,7 +3,7 @@ title: "取消 Excel 工作表中的窗格冻结"
 second_title: "文档"
 linktitle: "取消冻结"
 type: docs
-url: /worksheets/panes/unfreeze/
+url: /zh/worksheets/panes/unfreeze/
 aliases:
   - /unfreeze-panes-in-excel-worksheet/
   - /worksheets/unfreeze-panes/

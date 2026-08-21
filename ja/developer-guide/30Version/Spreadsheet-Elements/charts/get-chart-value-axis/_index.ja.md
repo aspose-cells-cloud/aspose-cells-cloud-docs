@@ -1,7 +1,7 @@
 ---
 title: "チャートの数値軸を取得する"
 type: docs
-url: /charts/value-axis/get/
+url: /ja/charts/value-axis/get/
 weight: 60
 keywords: Aspose.Cells、チャートの数値軸、REST API、Excel、クラウド SDK、チャートの数値軸を取得する
 description: "Aspose.Cells Cloud REST API - Excelワークシート内のチャートの数値軸を取得します。"

@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيفية تحويل بيانات جدول جداول البيانات المحلية إلى ملف PDF: دليل خطوة بخطوة"
 linktype: "تحويل الجدول إلى PDF"
 type: docs
-url: /convert-table-to-pdf/
+url: /ar/convert-table-to-pdf/
 keywords: "Aspose.Cells, تحويل إكسل إلى PDF, تحويل الجداول, واجهة برمجة تطبيقات السحابة"
 description: "قم بتحويل جدول إكسل محلي إلى ملف PDF بسرعة باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST."
 weight: 100

@@ -3,8 +3,8 @@ title: "เพิ่มเกณฑ์ที่กำหนดเองในแ
 second_title: "เอกสาร"
 linktype: "เพิ่มตัวกรองแบบกำหนดเอง"
 type: docs
-url: /autofilter/add-custom-filter/
-aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/]
+url: /th/autofilter/add-custom-filter/
+aliases: [  /th/filter-a-list-with-a-custom-criteria/ , /th/autofilter/add-a-custom-filter/ ]
 keywords: "Excel, ตัวกรองแบบกำหนดเอง, Aspose.Cells Cloud, REST API, ตัวกรองอัตโนมัติ, แผ่นงาน, เกณฑ์ที่กำหนดเอง"
 description: "เรียนรู้วิธีใช้ REST API ของ Aspose.Cells Cloud เพื่อเพิ่มตัวกรองแบบกำหนดเองในแผ่นงาน Excel พร้อมรายละเอียดคำขอ ตัวอย่าง cURL และโค้ดตัวอย่าง SDK สำหรับภาษาโปรแกรมต่างๆ"
 weight: 65

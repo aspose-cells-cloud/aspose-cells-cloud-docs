@@ -3,7 +3,7 @@ title: "Mehrere Zeilen aus einem Excel-Arbeitsblatt löschen"
 second_title: "Dokument"
 linktitle: "Zeilen"
 type: docs
-url: /rows/delete/rows/
+url: /de/rows/delete/rows/
 keywords: "Aspose.Cells Cloud, Zeilen löschen, mehrere Zeilen löschen, Excel-Arbeitsblatt, REST-API, SDK"
 description: "Erfahren Sie, wie Sie eine oder mehrere Zeilen aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST-API löschen. Enthält Endpunkt-Details, Parameter, ein cURL-Beispiel und SDK-Codebeispiele für verschiedene Sprachen."
 weight: 80

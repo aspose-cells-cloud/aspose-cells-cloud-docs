@@ -2,7 +2,7 @@
 title: "แปลงไฟล์ Excel แบบเป็นชุด"
 second_title: "เอกสาร"
 type: docs
-url: /batch/convert
+url: /th/batch/convert
 keywords: "การแปลงแบบเป็นชุด, Excel, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, สเปรดชีต"
 description: "เรียนรู้วิธีใช้ API Aspose.Cells Cloud เพื่อแปลงไฟล์ Excel หลายไฟล์เป็นรูปแบบต่างๆ เช่น PDF, CSV, JSON หรือ Markdown คู่มือนี้ประกอบด้วยรายละเอียดของ REST endpoint, พารามิเตอร์คำขอ, ตัวอย่าง cURL และตัวอย่างโค้ด SDK สำหรับภาษาต่างๆ"
 weight: 100

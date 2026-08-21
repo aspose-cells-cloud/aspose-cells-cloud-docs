@@ -3,7 +3,7 @@ title: "Aspose.Cells – واجهة برمجة التطبيقات لتحديث �
 second_title: "مستند"
 linktitle: "حالة الكلمة"
 type: docs
-url: /post-update-word-case/
+url: /ar/post-update-word-case/
 keywords: "Aspose.Cells، واجهة برمجة التطبيقات لتحديث حالة الكلمات، تحويل حالة النص، إكسل، CSV، جداول بيانات Google، واجهة برمجة التطبيقات REST"
 description: "حوّل حالة النص في ملفات إكسل أو CSV أو جداول بيانات Google باستخدام واجهة برمجة التطبيقات PostUpdateWordCase في Aspose.Cells Cloud. تدعم التحويل إلى أحرف كبيرة أو صغيرة أو حالة العنوان أو تكبير الحرف الأول فقط."
 weight: 100

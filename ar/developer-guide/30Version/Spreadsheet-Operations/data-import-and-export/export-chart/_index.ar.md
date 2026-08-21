@@ -3,8 +3,8 @@ title: "تصدير مخطط Excel"
 second_title: "مستند"
 linktype: "مخطط"
 type: docs
-url: /export-excel-chart-to-different-formats/
-aliases: [/export/excel-chart-to-different-formats/]
+url: /ar/export-excel-chart-to-different-formats/
+aliases: [  /ar/export/excel-chart-to-different-formats/ ]
 description: "تصدير كائنات المخططات من ملفات Excel إلى تنسيقات شائعة مثل PNG و JPEG و PDF و SVG و TIFF و EMF و WMF والمزيد باستخدام واجهة Aspose.Cells Cloud REST API أو SDKs. يشمل المصادقة ومثال cURL وأمثلة على الأكواد بلغات برمجة متعددة."
 keywords: "Aspose.Cells, تصدير مخطط, تصدير مخطط Excel, REST API, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK, تنسيقات المخططات, Aspose Cells Cloud"
 weight: 20

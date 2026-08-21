@@ -3,8 +3,8 @@ title: "Excel 워크시트에서 창 고정"
 second_title: "문서"
 linktitle: "고정"
 type: docs
-url: /worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+url: /ko/worksheets/panes/freeze/
+aliases: [  /ko/freeze-panes-in-excel-worksheet/ , /ko/worksheets/freeze-panes/ ]
 keywords: "Aspose.Cells Cloud, 창 고정, Excel, REST API, 워크시트"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 행 및 열을 고정하는 방법을 알아봅니다. 엔드포인트 구문, 필요한 매개변수, cURL 예제, 인증 가이드, 오류 응답 세부 정보, 여러 언어의 SDK 코드 예제가 포함됩니다."
 weight: 190

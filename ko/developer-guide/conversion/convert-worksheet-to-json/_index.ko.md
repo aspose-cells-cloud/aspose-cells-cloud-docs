@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud API를 사용하여 스프레드시트 워크시트를 JSON으로 변환하는 방법"
 linktitle: "워크시트를 JSON으로 변환"
 type: docs
-url: /convert-worksheet-to-json/
+url: /ko/convert-worksheet-to-json/
 keywords: "Aspose.Cells, 워크시트를 JSON으로, 엑셀 변환, 클라우드 API, API v4, 데이터 내보내기"
 description: "Aspose.Cells Cloud API를 사용하여 엑셀 워크시트를 JSON으로 변환하는 단계별 가이드, 요청 매개변수, 응답 처리, 오류 코드 및 SDK 예제 포함."
 weight: 100

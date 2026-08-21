@@ -4,8 +4,8 @@ ArticleTitle: "قبول جميع التحديثات في جدول بيانات �
 second_title: "وثيقة"
 linktype: "قبول جميع التحديثات في جدول بيانات بعيد"
 type: docs
-url: /cells/accept-all-revisions
-aliases: ["/cells/accept-all-revisions"]
+url: /ar/cells/accept-all-revisions
+aliases: [  /ar/cells/accept-all-revisions ]
 keywords: "Aspose.Cells، AcceptAllRevisions، جدول بيانات بعيد"
 description: "قبول جميع التحديثات (المراجعات) في جدول بيانات بعيد وإعادة ملف المصنف المُحدّث."
 weight: 1000

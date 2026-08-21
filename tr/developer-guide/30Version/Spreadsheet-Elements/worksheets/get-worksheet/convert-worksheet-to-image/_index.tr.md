@@ -3,7 +3,7 @@ title: "Çalışma Sayfasını PDF, PNG, CSV ve Daha Fazlasına Dönüştür –
 second_title: "Belge"
 linktitle: "Çalışma sayfasını dönüştür"
 type: docs
-url: /worksheets/conversion/
+url: /tr/worksheets/conversion/
 aliases:
   - /convert-worksheet-to-image/
   - /worksheets/to-image/

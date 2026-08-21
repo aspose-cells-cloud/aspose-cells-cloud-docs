@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Omvandla kalkylark: Ta bort tomma rader, kolumner, kalkylblad och byt ut områden"
 linktitle: "Omvandla"
 type: docs
-url: /transform/
+url: /sv/transform/
 keywords: "Aspose, Cells, API, ta bort tomma rader, ta bort tomma kolumner, ta bort tomma kalkylblad, byt ut områden, städning av kalkylark"
 description: "Använd Aspose.Cells Cloud API:er för att ta bort tomma rader, kolumner, kalkylblad och byta ut Excel-områden. Snabb, molnbaserad datastädning för automation."
 weight: 40

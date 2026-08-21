@@ -4,7 +4,7 @@ ArticleTitle: "UnpivotRange – Aspose.Cells Cloud"
 second_title: "เอกสาร"
 linktype: "UnpivotRange"
 type: docs
-url: /cells/unpivot/range
+url: /th/cells/unpivot/range
 aliases: []
 keywords: "Aspose.Cells, UnpivotRange, API"
 description: "สลับแถวและคอลัมน์ในสเปรดชีต"

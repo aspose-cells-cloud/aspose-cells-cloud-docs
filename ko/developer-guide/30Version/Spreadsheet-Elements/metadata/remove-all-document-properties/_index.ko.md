@@ -3,8 +3,8 @@ title: "모든 문서 속성 제거하기"
 second_title: "문서"
 linktitle: "지우기"
 type: docs
-url: /document-properties/clear/
-aliases: [/remove-all-document-properties/]
+url: /ko/document-properties/clear/
+aliases: [  /ko/remove-all-document-properties/ ]
 keywords: "Aspose.Cells, 문서 속성 삭제, Excel 속성 지우기, REST API, 클라우드 SDK, 스프레드시트, API 참조"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북에서 사용자 지정 및 내장 속성을 모두 제거하는 단계별 가이드."
 weight: 58

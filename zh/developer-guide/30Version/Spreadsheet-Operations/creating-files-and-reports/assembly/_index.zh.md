@@ -3,8 +3,8 @@ title: "组装数据以创建 Excel 报表"
 second_title: "文档"
 linktitle: "组装数据"
 type: docs
-url: /assembly-data-for-the-creation-of-an-excel-report/
-aliases: [/assembly/]
+url: /zh/assembly-data-for-the-creation-of-an-excel-report/
+aliases: [  /zh/assembly/ ]
 keywords: "Aspose.Cells, Excel 报表, 数据组装, 云 API, REST, SDK, cURL, PDF, ODS"
 description: "了解如何使用 Aspose.Cells Cloud 的 Assembly API 将数据合并到 Excel（XLSX、PDF、ODS）报表中。内容包括端点、参数、cURL 示例代码、SDK 代码、认证指南及错误处理。"
 weight: 40

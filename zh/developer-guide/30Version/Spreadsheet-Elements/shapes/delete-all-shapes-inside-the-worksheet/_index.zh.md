@@ -4,8 +4,8 @@ articleTitle: "删除 Excel 工作表中的所有形状 – Aspose.Cells Cloud A
 secondTitle: "文档"
 linkTitle: "清除"
 type: docs
-url: /shapes/clear/
-aliases: [/delete-all-shapes-inside-the-worksheet/]
+url: /zh/shapes/clear/
+aliases: [  /zh/delete-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 删除所有形状, Excel 工作表, REST API, SDK, cURL, .NET, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift"
 description: "使用 Aspose.Cells Cloud REST API 删除 Excel 工作表中的所有形状。该操作可通过 cURL 及多种 SDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go、Android、Swift）调用。"
 weight: 40

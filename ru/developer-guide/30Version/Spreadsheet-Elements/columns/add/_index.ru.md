@@ -3,7 +3,7 @@ title: "Добавление пустого столбца в рабочий л�
 second_title: "Документ"
 linktype: "Добавить"
 type: docs
-url: /columns/add/
+url: /ru/columns/add/
 aliases:
   - /add-an-empty-column-in-an-excel-worksheet/
   - /add-an-empty-column-in-a-worksheet/

@@ -5,7 +5,7 @@ second_title: "وثيقة"
 type: docs
 linktitle: "روابط الربط"
 url: /ar/hyperlinks/
-aliases: [/ar/working-with-hyperlinks/, /ar/working-with-hyperlink/]
+aliases: [  /ar/working-with-hyperlinks/ , /ar/working-with-hyperlink/ ]
 keywords: "Excel, روابط الربط, Cells.Cloud, API, Aspose.Cells, جدول بيانات, روابط, دليل"
 description: "استكشف كيفية استرجاع روابط الربط وإضافتها وتحديثها وحذفها في ملفات Excel باستخدام واجهة برمجة تطبيقات Aspose Cells Cloud."
 weight: 100

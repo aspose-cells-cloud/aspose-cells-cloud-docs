@@ -3,8 +3,8 @@ title: "Lägg till ett listobjekt (tabell) i ett Excel-arbetsblad"
 second_title: "Dokument"
 linktitle: "Lägg till"
 type: docs
-url: /list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+url: /sv/list-objects/add/
+aliases: [  /sv/add-a-list-object-or-table-inside-the-worksheet/ , /sv/tables/add/ ]
 keywords: "Aspose.Cells Cloud, Excel API, listobjekt, tabell, REST API, arbetsblad"
 description: "Lär dig hur du lägger till ett listobjekt (Excel-tabell) i ett arbetsblad med Aspose.Cells Cloud REST API. Inkluderar slutpunkt, parametrar, autentiseringsssteg, cURL-exempel och SDK-kodexempel."
 weight: 10

@@ -2,7 +2,7 @@
 title: "压缩和修复 Excel 文件"
 second_title: "文档"
 type: docs
-url: /compress-and-repair-excel-files/
+url: /zh/compress-and-repair-excel-files/
 linktitle: "压缩和修复"
 keywords: "Aspose.Cells, Excel 压缩, Excel 修复, 云 API, 减小 Excel 文件大小, 恢复损坏的工作簿, 压缩 Excel 文件, 修复 Excel 工作簿"
 description: "了解如何使用 Aspose.Cells Cloud API 压缩大型 Excel 工作簿以及修复损坏的文件。包含分步示例、支持的语言和最佳实践。"

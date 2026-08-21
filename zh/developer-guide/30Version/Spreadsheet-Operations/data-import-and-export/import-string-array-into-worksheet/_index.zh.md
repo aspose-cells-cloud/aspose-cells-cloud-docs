@@ -3,7 +3,7 @@ title: "将字符串数组导入 Excel 工作表 – Aspose.Cells Cloud"
 second_title: "文档"
 linktitle: "导入字符串数组"
 type: docs
-url: /import-string-array-into-excel-worksheet/
+url: /zh/import-string-array-into-excel-worksheet/
 aliases:
   - /import-string-array-into-worksheet/
   - /import-data/string-array/

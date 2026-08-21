@@ -3,8 +3,8 @@ title: "Добавление вертикального разрыва стра�
 second_title: "Документ"
 linktitle: "Добавление вертикального разрыва страницы"
 type: docs
-url: /page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
+url: /ru/page-breaks/add-vertical-page-break/
+aliases: [  /ru/insert-vertical-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, вертикальный разрыв страницы, REST API, Excel, SDK, cURL"
 description: "Узнайте, как вставить вертикальный разрыв страницы в рабочий лист Excel с помощью Aspose.Cells Cloud REST API (v3.0). Включает синтаксис запроса, пример cURL, примеры SDK, руководство по аутентификации и сведения об обработке ошибок."
 weight: 40

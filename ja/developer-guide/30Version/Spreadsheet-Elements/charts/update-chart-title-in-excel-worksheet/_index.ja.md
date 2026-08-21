@@ -1,8 +1,8 @@
 ---
 title: "Excelワークシート内のチャートタイトルを更新する"
 type: docs
-url: /charts/title/update/
-aliases: [/update-chart-title-in-excel-worksheet/]
+url: /ja/charts/title/update/
+aliases: [  /ja/update-chart-title-in-excel-worksheet/ ]
 weight: 160
 keywords: Excel, Aspose.Cells, REST API, チャートタイトル, 更新, クラウドSDK
 description: Aspose.Cells Cloud REST API、cURL、および various SDK を使用して、Excelワークシート内のチャートタイトルを更新する方法を学びます。

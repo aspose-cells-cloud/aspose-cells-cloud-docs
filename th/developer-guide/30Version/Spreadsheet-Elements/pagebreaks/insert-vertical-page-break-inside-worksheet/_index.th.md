@@ -3,8 +3,8 @@ title: "เพิ่มการแบ่งหน้าแนวตั้ง"
 second_title: "เอกสาร"
 linktitle: "เพิ่มการแบ่งหน้าแนวตั้ง"
 type: docs
-url: /page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
+url: /th/page-breaks/add-vertical-page-break/
+aliases: [  /th/insert-vertical-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, vertical page break, REST API, Excel, SDK, cURL"
 description: "เรียนรู้วิธีการแทรกการแบ่งหน้าแนวตั้งลงในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API (v3.0) รวมถึงไวยากรณ์คำขอ ตัวอย่าง cURL ตัวอย่าง SDK คู่มือการยืนยันตัวตน และรายละเอียดการจัดการข้อผิดพลาด"
 weight: 40

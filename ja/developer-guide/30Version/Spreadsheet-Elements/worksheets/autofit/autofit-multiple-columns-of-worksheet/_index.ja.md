@@ -3,8 +3,8 @@ title: "Excelワークシートの複数列を自動調整する"
 second_title: "Document"
 linktitle: "Columns"
 type: docs
-url: /worksheets/autofit/columns/
-aliases: [/autofit-multiple-columns-of-worksheet/]
+url: /ja/worksheets/autofit/columns/
+aliases: [  /ja/autofit-multiple-columns-of-worksheet/ ]
 keywords: "Aspose.Cells, カラムの自動調整, Excel API, クラウド表計算, REST"
 description: "Aspose.Cells Cloud REST API（v3.0）を使用してExcelワークシートの複数列を自動調整する方法を学びます。エンドポイント、パラメータ、cURLの使用例、エラーハンドリング、C#、Java、PythonなどのSDKコードスニペットを含みます。"
 weight: 20

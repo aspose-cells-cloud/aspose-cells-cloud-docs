@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Confronta tutte le celle non vuote"
 type: docs
 url: /it/autofilter/match-all-non-blank/
-aliases: [/it/match-all-non-blank-cells-in-the-list/]
+aliases: [  /it/match-all-non-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells Cloud, confronta celle non vuote, AutoFilter, API Excel"
 description: "Scopri come utilizzare l'API REST di Aspose.Cells Cloud per confrontare tutte le celle non vuote in un elenco AutoFilter su un foglio di lavoro Excel. Include endpoint, parametri, autenticazione, schema di risposta, codici di errore ed esempi di SDK."
 ArticleTitle: "Confronta tutte le celle non vuote in un foglio di lavoro Excel utilizzando l'API Aspose.Cells Cloud"

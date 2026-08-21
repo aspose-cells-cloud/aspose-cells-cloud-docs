@@ -3,8 +3,8 @@ title: "ผสานสมุดงาน Excel หนึ่งสมุดเ�
 second_title: "เอกสาร"
 linktitle: "ผสานสมุดงาน Excel เข้ากับสมุดงานอื่น"
 type: docs
-url: /merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
+url: /th/merge-an-excel-file-into-the-excel-file/
+aliases: [  /th/merge-excel-workbooks/ , /th/workbook/merge/ ]
 keywords: "การผสาน Excel, Aspose.Cells Cloud, API สมุดงาน, REST API, การผสานสเปรดชีต, SDK บนคลาวด์, การยืนยันตัวตน, mergeWith, ตัวอย่าง cURL"
 description: "คู่มือแบบทีละขั้นตอนสำหรับการผสานสมุดงาน Excel หนึ่งสมุดเข้ากับอีกสมุดหนึ่งโดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 3.0) ประกอบด้วยการยืนยันตัวตน พารามิเตอร์ mergeWith ที่จำเป็น ตัวอย่าง cURL และตัวอย่างโค้ด SDK"
 ArticleTitle: "ผสานสมุดงาน Excel เข้ากับสมุดงานอื่นโดยใช้ Aspose.Cells Cloud API"

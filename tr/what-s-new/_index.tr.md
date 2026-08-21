@@ -4,8 +4,8 @@ second_title: "Belge"
 linktitle: "Yenilikler"
 type: docs
 weight: 9
-url: /new-features/
-aliases: [/what-s-new-in-aspose-cells-cloud/]
+url: /tr/new-features/
+aliases: [  /tr/what-s-new-in-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, yeni özellikler, Microsoft Office Excel, OpenOffice Spreadsheet, CSV, PDF, REST API, SDK, elektronik tablo, bulut"
 description: "Aspose.Cells Cloud'da Excel, OpenOffice, CSV ve PDF işleme için yapılan güncellemeler dahil en son özellikler, iyileştirmeler ve hata düzeltmelerini keşfedin."
 ArticleTitle: "Aspose.Cells Cloud'da Yenilikler – En Son Özellikler ve Güncellemeler"

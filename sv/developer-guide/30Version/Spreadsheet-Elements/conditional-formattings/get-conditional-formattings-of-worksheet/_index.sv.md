@@ -1,8 +1,8 @@
 ---
 title: "Hämta villkorsformateringsregler"
 type: docs
-url: /conditional-formattings/get-all/
-aliases: [/get-conditional-formattings-of-worksheet/]
+url: /sv/conditional-formattings/get-all/
+aliases: [  /sv/get-conditional-formattings-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, Villkorsformatering, Arbetsblad, Villkorsformaterings-API"
 description: "Hämta alla villkorsformateringsregler som tillämpas på ett arbetsblad med Aspose.Cells Cloud REST API. Innehåller begärsyntax, autentiseringstred, parametrar, koncisa svarsexempel och felhantering."
 weight: 20

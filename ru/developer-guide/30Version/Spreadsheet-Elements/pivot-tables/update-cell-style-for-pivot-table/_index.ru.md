@@ -3,8 +3,8 @@ title: "Обновление стиля ячейки сводной таблиц
 second_title: "Документ"
 linktype: "Форматирование"
 type: docs
-url: /pivot-tables/format/
-aliases: [/update-cell-style-for-pivot-table/]
+url: /ru/pivot-tables/format/
+aliases: [  /ru/update-cell-style-for-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, стиль сводной таблицы, API обновления стиля ячейки, REST API, Excel API, форматирование электронных таблиц, облачный SDK, стиль ячейки, сводная таблица"
 description: "Узнайте, как обновить стиль конкретной ячейки сводной таблицы в Aspose.Cells Cloud через REST API. Включает адрес endpoints, параметры, аутентификацию, пример cURL, фрагмент кода Go SDK и SEO‑оптимизированное руководство."
 weight: 90

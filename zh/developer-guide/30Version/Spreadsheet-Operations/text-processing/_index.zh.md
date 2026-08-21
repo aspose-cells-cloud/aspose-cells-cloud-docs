@@ -3,7 +3,7 @@ title: "Excel 文本处理：添加文本、删除字符、修剪文本、更新
 second_title: "文档"
 linktype: "文本处理"
 type: docs
-url: /text-processing/zh/
+url: /zh/text-processing/zh/
 keywords: "Excel 文本处理、添加文本、删除字符、修剪文本、更新单词大小写、转换文本格式、拆分文本、合并文本、替换文本、查找文本、统计文本、文本转 PDF、文本转 CSV、文本转 JSON、文本转 Markdown、Aspose.Cells Cloud"
 description: "了解 Aspose.Cells Cloud REST API，它支持全面的 Excel 文本处理任务，包括添加文本、删除字符、修剪空格、更改单词大小写、转换格式等。SDK 支持 Android、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby 和 Swift。"
 weight: 20

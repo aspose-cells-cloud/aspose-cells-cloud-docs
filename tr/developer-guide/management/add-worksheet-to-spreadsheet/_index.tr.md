@@ -4,7 +4,7 @@ second_title: "Doküman"
 ArticleTitle: "Excel'e Çalışma Sayfası Nasıl Eklenir – Yeni Sayfaları Belirli Konumlara Ekleme"
 linktitle: "Elektronik Tabloya Çalışma Sayfası Ekle"
 type: docs
-url: /add-worksheet-to-spreadsheet/
+url: /tr/add-worksheet-to-spreadsheet/
 keywords: "excel, çalışma sayfası ekle, aspose cells api, elektronik tablo, bulut api, sayfa türü, sayfa konumu"
 description: "Aspose.Cells Cloud API kullanarak bir Excel çalışma kitabına programlı olarak yeni bir çalışma sayfası, grafik sayfası veya makro sayfası eklemeyi öğrenin. Tek bir REST çağrısıyla sayfa türünü, adını ve ekleme konumunu kontrol edin."
 weight: 100

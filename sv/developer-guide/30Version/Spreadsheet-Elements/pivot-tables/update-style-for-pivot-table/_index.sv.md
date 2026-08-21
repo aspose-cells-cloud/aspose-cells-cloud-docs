@@ -3,8 +3,8 @@ title: "Uppdatera stil för pivotdiagram"
 second_title: "Dokument"
 linktitle: "Formatera alla"
 type: docs
-url: /pivot-tables/format-all/
-aliases: [/update-style-for-pivot-table/]
+url: /sv/pivot-tables/format-all/
+aliases: [  /sv/update-style-for-pivot-table/ ]
 keywords: "pivotdiagram, uppdatera stil, Aspose.Cells Cloud, REST API, Excel, kalkylark, API, pivotdiagramstil, formatera alla"
 description: "Lär dig hur du uppdaterar stilen för hela ett pivotdiagram med Aspose.Cells Cloud REST API. Inkluderar begärandedetaljer, ett cURL-exempel och SDK-utdrag för flera programmeringsspråk."
 weight: 100

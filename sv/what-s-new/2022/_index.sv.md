@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Vad är nytt 2022"
 type: docs
 weight: 90
-url: /new-features/2023/
+url: /sv/new-features/2023/
 keywords: "Vad är nytt i Aspose.Cells Cloud. Microsoft Office Excel, Open Office-kalkylark, CSV, PDF."
 description: "Denna sida beskriver de mest intressanta nya funktionerna i Aspose.Cells Cloud som introducerats i de senaste utgåvorna."
 kwords: Excel, Office Cloud, REST API, Kalkylark, PDF, CSV, Json, Markdown, Vad är nytt i Aspose.Cells Cloud

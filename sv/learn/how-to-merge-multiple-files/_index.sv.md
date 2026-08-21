@@ -2,7 +2,7 @@
 title: "Så här sammanfogar du flera kalkylark med Aspose.Cells Cloud"
 linktype: "Så här sammanfogar du flera kalkylark"
 type: docs
-url: /how-to-merge-multiple-files
+url: /sv/how-to-merge-multiple-files
 description: "Så här sammanfogar du flera kalkylark med Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Kalkylark, PDF, CSV, JSON, Markdown, Så här sammanfogar du flera filer via Aspose.Cells Cloud

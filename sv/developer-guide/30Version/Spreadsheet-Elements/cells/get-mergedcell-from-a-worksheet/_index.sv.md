@@ -1,7 +1,7 @@
 ---
 title: "Hämta sammanfogade celler från ett Excel-arbetsblad – Aspose.Cells Cloud API"
 type: docs
-url: /get-mergedcell-from-a-worksheet/
+url: /sv/get-mergedcell-from-a-worksheet/
 weight: 60
 keywords: "Aspose.Cells Cloud, sammanfogade celler, Excel-arbetsblad, REST API, Aspose.Cells SDK, Excel-sammanfogade celler"
 description: "Lär dig hur du hämtar intervall med sammanfogade celler från ett Excel-arbetsblad med Aspose.Cells Cloud API (v3.0). Inkluderar autentiseringssteg, fullständig cURL-förfrågan, svarschema, felhantering och SDK-exempel i C#, Java, Python och mer."

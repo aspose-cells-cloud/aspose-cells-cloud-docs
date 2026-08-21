@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud SDK for Java: 변환, 병합, 분할, 보호, 검색, 바꾸기 등"
 linktype: "Aspose.Cells Cloud SDK for Java"
 type: docs
-url: /available-sdks/aspose-cells-cloud-java/
+url: /ko/available-sdks/aspose-cells-cloud-java/
 description: "Office를 설치하지 않고도 Aspose.Cells Cloud Java SDK를 사용해 Excel 파일을 생성, 변환, 병합, 분할, 보호, 검색 및 바꾸기하세요."
 weight: 30
 keywords: "Aspose Cells Java SDK, Excel 변환 Java, 클라우드 스프레드시트 API, Java Excel 라이브러리, Aspose.Cells Cloud Java"

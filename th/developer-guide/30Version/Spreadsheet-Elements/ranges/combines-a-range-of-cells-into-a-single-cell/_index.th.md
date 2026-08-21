@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – ผสานช่วงเซลล์"
 second title: "เอกสาร"
 linktitle: "ผสาน"
 type: docs
-url: /ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+url: /th/ranges/merge/
+aliases: [  /th/combines-a-range-of-cells-into-a-single-cell/ ]
 keywords: "Aspose.Cells, ผสานเซลล์, Excel API, REST, SDK บนคลาวด์"
 description: "ผสานช่วงเซลล์หลายเซลล์ให้เป็นเซลล์เดียวโดยใช้ Aspose.Cells Cloud REST API เรียนรู้เกี่ยวกับรูปแบบคำขอ พารามิเตอร์ และตัวอย่าง SDK สำหรับ C#, Java, Python และอื่นๆ"
 weight: 20

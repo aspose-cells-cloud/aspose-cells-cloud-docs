@@ -1,8 +1,8 @@
 ---
 title: "获取条件格式规则"
 type: docs
-url: /conditional-formattings/get-all/
-aliases: [/get-conditional-formattings-of-worksheet/]
+url: /zh/conditional-formattings/get-all/
+aliases: [  /zh/get-conditional-formattings-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, 条件格式, 工作表, 条件格式 API"
 description: "使用 Aspose.Cells Cloud REST API 获取应用于工作表的所有条件格式规则。包含请求语法、身份验证步骤、参数、简洁的响应示例以及错误处理。"
 weight: 20

@@ -3,8 +3,8 @@ title: "Excelワークシートでのペインの固定"
 second_title: "Document"
 linktitle: "固定"
 type: docs
-url: /worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+url: /ja/worksheets/panes/freeze/
+aliases: [  /ja/freeze-panes-in-excel-worksheet/ , /ja/worksheets/freeze-panes/ ]
 keywords: "Aspose.Cells Cloud, ペインの固定, Excel, REST API, ワークシート"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートで行と列を固定する方法を学びます。エンドポイント構文、必要なパラメータ、cURL の使用例、認証ガイド、エラー応答の詳細、および複数言語向けの SDK コードサンプルを含みます。"
 weight: 190

@@ -1,7 +1,7 @@
 ---
 title: "Effacer le formatage des cellules dans une feuille Excel"
 type: docs
-url: /clear-cells-formatting-in-excel-worksheet/
+url: /fr/clear-cells-formatting-in-excel-worksheet/
 weight: 100
 keywords: "Aspose.Cells Cloud, Excel, Effacer le formatage des cellules, API REST, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Utilisez l’API REST Aspose.Cells Cloud pour effacer le formatage des cellules dans une feuille Excel. Inclut les détails de la requête, un exemple cURL et des extraits de code SDK pour plusieurs langages."

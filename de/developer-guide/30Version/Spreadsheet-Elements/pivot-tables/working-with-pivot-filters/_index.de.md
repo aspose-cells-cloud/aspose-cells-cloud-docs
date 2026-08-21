@@ -3,8 +3,8 @@ title: "Arbeiten mit Pivotfiltern"
 second_title: "Dokument"
 linktitle: Filter
 type: docs
-url: /pivot-tables/add-filters/
-aliases: [/working-with-pivot-filters/]
+url: /de/pivot-tables/add-filters/
+aliases: [  /de/working-with-pivot-filters/ ]
 keywords: "Aspose.Cells, Pivot-Tabelle, Filter, REST API, Cloud"
 description: "Erfahren Sie, wie Sie Pivot-Tabellenfilter mithilfe der Aspose.Cells Cloud REST API hinzufügen, abrufen und löschen. Enthält die Anforderungssyntax, erforderliche Parameter, ein cURL-Beispiel und SDK-Snippets für C# und Go."
 weight: 50

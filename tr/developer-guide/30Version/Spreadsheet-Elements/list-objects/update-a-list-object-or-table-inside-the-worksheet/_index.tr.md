@@ -4,7 +4,7 @@ ArticleTitle: "Excel Çalışma Sayfasında Bir Liste Objesini Güncelleme – A
 second_title: "Belge"
 linktitle: "Güncelle"
 type: docs
-url: /list-objects/update/
+url: /tr/list-objects/update/
 aliases:
   - /update-a-list-object-or-table-inside-the-worksheet/
   - /tables/update/

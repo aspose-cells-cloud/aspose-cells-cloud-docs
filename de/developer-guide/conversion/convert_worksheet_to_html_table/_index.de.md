@@ -3,7 +3,7 @@ title: "Arbeitsblatt in HTML-Tabelle konvertieren"
 ArticleTitle: "Arbeitsblatt in HTML-Tabelle konvertieren – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "docs"
-url: /cells/convert/worksheet/html-table
+url: /de/cells/convert/worksheet/html-table
 aliases: []
 keywords: "Aspose.Cells, ConvertWorksheetToHtmlTable, HTML-Tabelle, API"
 description: "Konvertiert ein Arbeitsblatt einer lokalen Tabellendatei mithilfe von Aspose.Cells Cloud in eine HTML-Tabelle."

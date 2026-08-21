@@ -1,7 +1,7 @@
 ---
 title: "Arbeitsblatt-Hyperlink abrufen"
 type: docs
-url: /hyperlinks/get/
+url: /de/hyperlinks/get/
 keywords: "Aspose.Cells Cloud, Arbeitsblatt-Hyperlink abrufen, Excel-Hyperlink-API, REST, JWT-Authentifizierung, Excel-Arbeitsblatt, API-Endpunkt"
 description: "Rufen Sie einen spezifischen Hyperlink aus einer Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud API (v3.0) ab. Enthält Endpunkt, Parameter, cURL-Beispiel, Authentifizierungsdetails, Fehlerbehandlung und SDK-Ausschnitte."
 weight: 10

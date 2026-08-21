@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "スプレッドシートの検索と置換 – Aspose.Cells Cloud API"
 linktype: "検索と置換"
 type: docs
-url: /search-replace/
+url: /ja/search-replace/
 keywords: "Aspose.Cells, Cloud API, 検索と置換, Excel, REST, API, スプレッドシート自動化, 検索・置換, Excel クラウド"
 description: "Aspose.Cells Cloud の **検索と置換** API を使用して、クラウドに保存された Excel ワークブック内のテキスト、数式、またはリンクを検索・置換する方法を学びます。エンドポイントの詳細、リクエストパラメータ、レスポンス例、ステータスコード、C#、Java、Python のコードスニペットを含みます。"
 weight: 50

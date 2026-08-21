@@ -3,8 +3,8 @@ title: "حذف ورقة عمل"
 second_title: "مستند"
 linktype: "ورقة عمل واحدة"
 type: docs
-url: /worksheets/delete-worksheet/
-aliases: [/remove-worksheets-from-excel-workbooks/]
+url: /ar/worksheets/delete-worksheet/
+aliases: [  /ar/remove-worksheets-from-excel-workbooks/ ]
 keywords: "Aspose.Cells Cloud، حذف ورقة عمل، Excel، Spreadsheet، REST API"
 description: "احذف ورقة عمل من ملف عمل Excel باستخدام REST API الخاص بـ Aspose.Cells Cloud. يدعم SDKs لـ C#، Java، PHP، Ruby، Node.js، Python، Perl، Go وcURL."
 weight: 20

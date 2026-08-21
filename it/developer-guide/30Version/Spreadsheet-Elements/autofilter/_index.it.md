@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Filtro automatico"
 type: docs
 url: /it/autofilter/
-aliases: [/it/working-with-autofilter/]
+aliases: [  /it/working-with-autofilter/ ]
 keywords: "Filtro automatico, Aspose.Cells Cloud, Filtro Excel, Filtro per colore, Filtro per data, Filtro dinamico, Filtro numerico, Filtro per testo, Filtro per celle vuote, Filtro personalizzato"
 description: "Scopri come aggiungere, modificare ed eliminare i filtri automatici di Excel (per colore, data, dinamico, numerico, testo, celle vuote) utilizzando le API di Aspose.Cells Cloud. Esempi di codice in più linguaggi."
 weight: 100

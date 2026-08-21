@@ -1,7 +1,7 @@
 ---
 title: "Excelワークシートから結合セルを取得する – Aspose.Cells Cloud API"
 type: docs
-url: /get-mergedcell-from-a-worksheet/
+url: /ja/get-mergedcell-from-a-worksheet/
 weight: 60
 keywords: "Aspose.Cells Cloud, 結合セル, Excelワークシート, REST API, Aspose.Cells SDK, Excel 結合セル"
 description: "Aspose.Cells Cloud API（v3.0）を使用して、Excelワークシートから結合セル範囲を取得する方法を学びます。認証手順、完全なcURLリクエスト、レスポンススキーマ、エラーハンドリング、およびC#、Java、PythonなどのSDKサンプルを含みます。"

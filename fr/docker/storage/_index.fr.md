@@ -3,7 +3,7 @@ title: "Comment définir la position de stockage pour le conteneur Docker Aspose
 second_title: "Document"
 ArticleTitle: "Configuration du stockage Docker Aspose.Cells Cloud"
 linktype: "docs"
-url: /docker/storage/
+url: /fr/docker/storage/
 description: "Configurez l’emplacement de stockage des conteneurs Docker Aspose.Cells Cloud à l’aide de fichiers JSON, PowerShell ou Bash."
 weight: 30
 keywords: "Aspose.Cells, Docker, stockage de conteneur, configuration JSON, PowerShell, Bash"

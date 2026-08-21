@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "정렬"
 type: docs
 keywords: "범위 정렬, Aspose.Cells Cloud, REST API, 스프레드시트, Excel, API"
-url: /ranges/sort/
+url: /ko/ranges/sort/
 description: Aspose.Cells Cloud를 사용하여 워크북 내의 셀 범위를 정렬하는 API를 제공합니다.
 weight: 20
 ---

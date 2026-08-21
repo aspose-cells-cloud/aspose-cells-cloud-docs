@@ -3,8 +3,8 @@ title: "รับรูปทรงทั้งหมดบนแผ่นงา
 second_title: "เอกสาร"
 linktitle: "get-all"
 type: docs
-url: /shapes/get-all/
-aliases: [/get-all-shapes-inside-the-worksheet/]
+url: /th/shapes/get-all/
+aliases: [  /th/get-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, Cloud API, รูปทรง Excel, รับรูปทรง, REST, SDK"
 description: "ดึงข้อมูลรูปทรงทั้งหมด (กราฟ รูปภาพ กล่องข้อความ) จากแผ่นงานโดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่าง cURL โค้ดตัวอย่าง SDK ขั้นตอนการตรวจสอบสิทธิ์ และการจัดการข้อผิดพลาด"
 ArticleTitle: "รับรูปทรงทั้งหมดบนแผ่นงาน Excel"

@@ -4,8 +4,8 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีการเรียกใช้คอนเทนเดอร์ Docker ของ Aspose.Cells Cloud"
 LinkTitle: "คอนเทนเดอร์ Docker"
 type: docs
-url: /getting-started/how-to-run-docker-container/
-aliases: [/how-to-run-docker-container/]
+url: /th/getting-started/how-to-run-docker-container/
+aliases: [  /th/how-to-run-docker-container/ ]
 description: "เรียนรู้วิธีดึง กำหนดค่า และเรียกใช้คอนเทนเดอร์ Docker ของ Aspose.Cells Cloud บน Windows หรือ Linux รวมถึงไฟล์ YAML สำหรับ Docker Compose การตั้งค่าใบอนุญาต การแมปพอร์ต และเคล็ดลับในการแก้ไขปัญหา"
 weight: 100
 keywords:

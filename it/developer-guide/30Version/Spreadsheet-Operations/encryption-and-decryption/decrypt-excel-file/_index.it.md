@@ -3,8 +3,8 @@ title: "Decrittografa un Workbook di Excel"
 second_title: "Documento"
 linktitle: "Decrittografa un file Excel"
 type: docs
-url: /excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+url: /it/excel-file-decrypt/
+aliases: [  /it/decrypt-excel-workbooks/ , /it/workbook/decrypt/ ]
 keywords: "Aspose.Cells, decrittografia Excel, REST API, SDK cloud"
 description: "Scopri come decrittografare un workbook di Excel utilizzando l'API REST di Aspose.Cells Cloud. Include i parametri obbligatori, un esempio cURL, esempi di codice SDK e dettagli sulla gestione degli errori."
 ArticleTitle: "Come decrittografare un workbook di Excel usando l'API di Aspose.Cells Cloud"

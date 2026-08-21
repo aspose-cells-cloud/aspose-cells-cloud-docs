@@ -1,8 +1,8 @@
 ---
 title: "الحصول على تعليق ورقة العمل – وثائق واجهة برمجة تطبيقات Aspose.Cells Cloud"
 type: docs
-url: /comments/get/
-aliases: [/get-comment-from-a-worksheet/]
+url: /ar/comments/get/
+aliases: [  /ar/get-comment-from-a-worksheet/ ]
 keywords: "Aspose.Cells، تعليق ورقة العمل، واجهة برمجة التطبيقات، GET، Excel"
 description: "تعرّف على كيفية استرجاع تعليق ورقة عمل باستخدام اسم الخلية عبر واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0). يتضمن عنوان URL للطلب، المعلمات، مثال باستخدام cURL، تفاصيل الاستجابة، وأكواد مقتطفة من SDK."
 weight: 10

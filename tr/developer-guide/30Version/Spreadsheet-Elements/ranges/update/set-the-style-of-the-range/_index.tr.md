@@ -3,8 +3,8 @@ title: "Aralık Stilini Ayarla – Aspose.Cells Cloud API"
 second_title: "Dokümantasyon"
 linktitle: "Aralık Stilini Ayarla"
 type: docs
-url: /ranges/update/style/
-aliases: [/set-the-style-of-the-range/]
+url: /tr/ranges/update/style/
+aliases: [  /tr/set-the-style-of-the-range/ ]
 keywords: "Aspose.Cells, aralık stili, API, Excel, bulut"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki bir hücre aralığının stilini nasıl ayarlayacağınızı öğrenin. Kimlik doğrulama adımlarını, istek biçimini, yanıt detaylarını ve .NET, Java, Python, Go ve diğerleri için SDK örneklerini içerir."
 weight: 70

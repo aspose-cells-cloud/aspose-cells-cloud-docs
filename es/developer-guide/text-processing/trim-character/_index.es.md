@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Limpiador de datos de Excel: Recortar caracteres, espacios y saltos de línea automáticamente – En línea, con shortcode"
 linktitle: "Recortar caracteres"
 type: docs
-url: /trim-character/
+url: /es/trim-character/
 keywords: "Excel, recorte de texto, eliminar espacios, saltos de línea, Aspose.Cells, limpieza de datos, hoja de cálculo, normalizar formato de celda"
 description: "Recorte espacios extra, saltos de línea y caracteres no deseados en celdas de Excel mediante la API en la nube de Aspose.Cells. Asegure datos de hojas de cálculo limpios y consistentes."
 weight: 100

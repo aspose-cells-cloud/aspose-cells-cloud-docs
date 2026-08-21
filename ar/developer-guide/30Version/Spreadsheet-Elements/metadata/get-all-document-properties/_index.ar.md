@@ -3,8 +3,8 @@ title: "الحصول على جميع خصائص المستند"
 second_title: "المستند"
 linktitle: "الحصول على الكل"
 type: docs
-url: /document-properties/get-all/
-aliases: [/get-all-document-properties/]
+url: /ar/document-properties/get-all/
+aliases: [  /ar/get-all-document-properties/ ]
 keywords: "الحصول على جميع خصائص المستند، Aspose.Cells Cloud، خصائص مستندات Excel، واجهة برمجة التطبيقات REST، مكتبة أدوات SDK، بيانات التعريف الخاصة بـ Excel"
 description: "استرجاع جميع خصائص المستند من ملف Excel باستخدام واجهة برمجة التطبيقات REST الخاصة بـ Aspose.Cells Cloud. تعمل نقطة النهاية هذه مع جميع مكتبات الأدوات SDK المدعومة ولغات البرمجة."
 ArticleTitle: "الحصول على جميع خصائص المستند – واجهة برمجة تطبيقات Aspose.Cells Cloud"

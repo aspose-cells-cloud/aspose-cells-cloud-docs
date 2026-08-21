@@ -3,7 +3,7 @@ title: "Excel dosyalarından meta veri alın"
 second_title: "Belge"
 linktitle: "Depolama kullanmadan alın"
 type: docs
-url: /metadata/get/
+url: /tr/metadata/get/
 keywords: "Aspose.Cells, Excel, meta veri, REST API, bulut SDK"
 description: "Aspose.Cells Cloud REST API ile Excel çalışma kitaplarından yerleşik veya özel meta verileri alın. İstek formatını, parametreleri, örnek SDK kodunu ve hata işleme içerir."
 weight: 23

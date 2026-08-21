@@ -4,7 +4,7 @@ second_title: "Documentos"
 ArticleTitle: "Cómo convertir datos de rango de una hoja de cálculo local a un archivo PDF: Guía paso a paso"
 linktitle: "Convertir rango a PDF"
 type: docs
-url: /convert-range-to-pdf/
+url: /es/convert-range-to-pdf/
 keywords: "Aspose.Cells Cloud, convertir rango de Excel a PDF, Excel a PDF, conversión en la nube"
 description: "Convierte un rango específico de una hoja de cálculo local de Excel a PDF mediante la API REST de Aspose.Cells Cloud."
 weight: 100

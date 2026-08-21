@@ -4,7 +4,7 @@ second_title: "Doküman"
 ArticleTitle: "Yerel Bir Elektronik Tablo Grafiğini PDF Dosyasına Dönüştürme: Adım Adım Kılavuz"
 linktitle: "Grafiği PDF'ye Dönüştür"
 type: docs
-url: /convert-chart-to-pdf/
+url: /tr/convert-chart-to-pdf/
 keywords: "Aspose Cells, grafik, PDF, Excel, dönüştürme, bulut API"
 description: "Aspose.Cells Cloud REST API kullanarak yerel Excel dosyalarındaki grafikleri PDF formatına dışa aktarın. XLSX ve XLS dosyalarını destekler."
 weight: 100

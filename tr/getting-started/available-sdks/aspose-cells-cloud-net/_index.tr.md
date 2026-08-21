@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud SDK for C#: Dönüştürme, birleştirme, bölme, koruma, arama, değiştirme ve daha fazlası."
 linktype: "Aspose.Cells Cloud SDK for .NET"
 type: docs
-url: /available-sdks/aspose-cells-cloud-net/
+url: /tr/available-sdks/aspose-cells-cloud-net/
 description: "Aspose.Cells Cloud .NET SDK, Office kurulumuna gerek kalmadan Excel dosyalarını oluşturma, dönüştürme, birleştirme, bölme, koruma, arama ve değiştirme için çok platformlu bir API sağlar."
 keywords: "Aspose.Cells, Bulut SDK, .NET, Excel, dönüştürme, birleştirme, bölme, koruma, arama, değiştirme, API"
 weight: 30

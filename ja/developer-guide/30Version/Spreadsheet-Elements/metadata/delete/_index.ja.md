@@ -3,7 +3,7 @@ title: "Excel ファイルからメタデータを削除する"
 second_title: "ドキュメント"
 linktitle: "ストレージを使用せずに削除"
 type: docs
-url: /metadata/delete/
+url: /ja/metadata/delete/
 keywords: "Aspose.Cells, メタデータ削除, Excel API, ワークブックプロパティ"
 description: "Aspose.Cells Cloud API を使用してワークブックのメタデータ（著者、タイトル、カスタムデータ）を削除します。エンドポイント、認証、パラメータ、cURL および SDK のサンプルを含みます。"
 weight: 55

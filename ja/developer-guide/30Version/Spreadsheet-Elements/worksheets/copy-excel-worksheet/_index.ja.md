@@ -3,8 +3,8 @@ title: "他のワークシートからコンテンツと書式をコピーする
 second_title: "Document"
 linktype: "コピー"
 type: docs
-url: /worksheets/copy/
-aliases: [/copy-excel-worksheet/]
+url: /ja/worksheets/copy/
+aliases: [  /ja/copy-excel-worksheet/ ]
 keywords: "Aspose Cells copy worksheet API, Excel copy sheet REST, Aspose Cloud SDK copy, spreadsheet copy worksheet"
 description: "Aspose.Cells Cloud REST API を使用して、ワークシートとその書式を新しいシートにコピーする方法を学びます。C#、Java、Python など向けのエンドポイント、パラメーター、cURL、および SDK の例を含みます。"
 weight: 20

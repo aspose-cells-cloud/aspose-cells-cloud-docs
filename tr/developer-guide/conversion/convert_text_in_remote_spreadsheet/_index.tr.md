@@ -4,7 +4,7 @@ ArticleTitle: "Uzak Elektronik Tabloda Metni Dönüştür – Aspose.Cells Cloud
 second_title: "Belge"
 linktitle: "Uzak Elektronik Tabloda Metni Dönüştür"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
+url: /tr/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
 aliases: []
 keywords: "Aspose.Cells, Metin Dönüştürme, API"
 description: "Bir çalışma sayfasının belirli bir aralığında bulunan metni dönüştürür; sayma dönüşümü, karakter değiştirme, satır sonu işleme ve aksanlı karakterlerin normalleştirilmesini içerir."

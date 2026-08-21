@@ -3,7 +3,7 @@ title: "Excelワークシートへの二重配列のインポート"
 second_title: "ドキュメント"
 linktitle: "二重配列のインポート"
 type: docs
-url: /import-double-array-into-excel-worksheet/
+url: /ja/import-double-array-into-excel-worksheet/
 aliases:
   - /import-double-array-into-worksheet/
   - /import-data/double-array/

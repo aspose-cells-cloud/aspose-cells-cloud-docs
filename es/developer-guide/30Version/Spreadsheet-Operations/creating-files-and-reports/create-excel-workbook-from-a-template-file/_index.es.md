@@ -3,7 +3,7 @@ title: "Cómo crear un libro de Excel con un archivo de plantilla"
 second_title: "Document"
 linktitle: "Archivo de plantilla"
 type: docs
-url: /create-an-excel-file-with-template-file/
+url: /es/create-an-excel-file-with-template-file/
 aliases:
   - /create-excel-workbook-from-a-template-file/
   - /workbook/new-from-a-template-file/

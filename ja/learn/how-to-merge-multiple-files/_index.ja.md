@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud を使用して複数のスプレッドシートファイルをマージする方法"
 linktitle: "複数のスプレッドシートファイルをマージする方法"
 type: docs
-url: /how-to-merge-multiple-files
+url: /ja/how-to-merge-multiple-files
 description: "Aspose.Cells Cloud を使用して複数のスプレッドシートファイルをマージする方法。"
 weight: 10
 kwords: Excel, Office Cloud, REST API, スプレッドシート, PDF, CSV, JSON, Markdown, Aspose.Cells Cloud を使用した複数ファイルのマージ方法

@@ -1,7 +1,7 @@
 ---
 title: "Applicare la formattazione del testo ricco a una cella"
 type: docs
-url: /apply-rich-text-formatting-to-a-cell/
+url: /it/apply-rich-text-formatting-to-a-cell/
 weight: 40
 keywords: "Aspose.Cells, Excel, testo ricco, formattazione celle, REST API, Aspose.Cells Cloud"
 description: "Scopri come applicare la formattazione del testo ricco a una specifica cella Excel utilizzando l'API REST di Aspose.Cells Cloud. Include la sintassi della richiesta, i dettagli dei parametri, un esempio cURL e frammenti di codice SDK."

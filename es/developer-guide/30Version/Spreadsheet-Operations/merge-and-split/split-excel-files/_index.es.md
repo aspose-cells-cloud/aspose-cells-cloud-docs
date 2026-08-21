@@ -4,8 +4,8 @@ ArticleTitle: "Cómo dividir un libro de Excel en varios archivos mediante la AP
 second_title: "Documentos"
 linktype: "Dividir un archivo de Excel"
 type: docs
-url: /split-multi-excel-files/
-aliases: [/split/multi-files/]
+url: /es/split-multi-excel-files/
+aliases: [  /es/split/multi-files/ ]
 keywords: "Excel, Aspose.Cells Cloud, API REST, dividir libro, varios archivos, JPEG, PNG, PDF, CSV, JSON"
 description: "La API REST de Aspose.Cells Cloud permite dividir un libro de Excel en varios archivos en distintos formatos. Esta documentación proporciona los parámetros de solicitud, un ejemplo con cURL y ejemplos de código en SDK para lenguajes como C#, Java, PHP, Ruby, Node.js, Python, Perl y Go."
 weight: 130

@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud – Ta bort horisontell sidbrytning (REST API)
 second_title: "Dokument"
 linktitle: "Ta bort horisontell sidbrytning"
 type: docs
-url: /page-breaks/delete-horizontal-page-break/
-aliases: [/delete-horizontal-page-break-inside-worksheet/]
+url: /sv/page-breaks/delete-horizontal-page-break/
+aliases: [  /sv/delete-horizontal-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Ta bort horisontell sidbrytning, Excel-ark, REST API, SDK"
 description: "Ta bort en horisontell sidbrytning från ett Excel-ark med Aspose.Cells Cloud REST API. SDK:er finns för C#, Java, PHP, Ruby, Node.js, Python, Perl och Go."
 weight: 50

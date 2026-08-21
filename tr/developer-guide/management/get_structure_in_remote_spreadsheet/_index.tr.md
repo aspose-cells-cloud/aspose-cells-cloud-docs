@@ -4,7 +4,7 @@ ArticleTitle: "Uzak Elektronik Tabloda Yapı Al – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktitle: "GetStructureInRemoteSpreadsheet"
 type: docs
-url: /cells/{name}/structure
+url: /tr/cells/{name}/structure
 aliases: []
 keywords: "Aspose.Cells, GetStructure, elektronik tablo, yapı"
 description: "Çalışma kitabının, çalışma sayfaları, tablolar, pivot tablolar, grafikler, şekiller ve diğer temel bilgiler dahil olmak üzere uzak bir Excel çalışma kitabının yapısal meta verilerini alın."

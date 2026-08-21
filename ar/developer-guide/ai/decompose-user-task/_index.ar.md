@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيفية تحويل أهداف المستخدم إلى خطط إجرائية متسلسلة باستخدام واجهة برمجة تطبيقات تحليل المهمة في Aspose.Cells Cloud AI"
 linktitle: "تحليل المهمة المستخدم"
 type: docs
-url: /decompose-user-task/
+url: /ar/decompose-user-task/
 keywords: "Aspose.Cells AI، واجهة برمجة تطبيقات تحليل المهمة، تخطيط المهمة وفق منهجية SMART، استيراد Redmine، أتمتة المشاريع"
 description: "حوّل الأهداف الحرة الصياغة إلى قوائم مهام مُفصّلة ومُقدّرة زمنيًا وفق معايير SMART باستخدام Aspose.Cells Cloud AI. احصل على مخرجات CSV/XLSX جاهزة للاستيراد في Redmine أو Jira أو Azure DevOps بطلب واحد فقط عبر PUT."
 weight: 100

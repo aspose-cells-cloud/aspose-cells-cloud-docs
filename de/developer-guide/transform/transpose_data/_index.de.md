@@ -4,8 +4,8 @@ ArticleTitle: "TransposeData – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "TransposeData"
 type: docs
-url: /cells/transpose
-aliases: ["/cells/transpose"]
+url: /de/cells/transpose
+aliases: [  /de/cells/transpose ]
 keywords: "TransposeData, Aspose.Cells, Cloud API, Tabellenkalkulation, transponieren"
 description: "Tauscht Zeilen und Spalten in der Tabellenkalkulation aus."
 weight: 1000

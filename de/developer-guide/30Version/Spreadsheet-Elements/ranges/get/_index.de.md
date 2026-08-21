@@ -3,7 +3,7 @@ title: "So rufen Sie Bereichsinhalte aus einem Excel-Arbeitsblatt ab"
 second_title: "Dokument"
 linktitle: "Abrufen"
 type: docs
-url: /ranges/get/
+url: /de/ranges/get/
 keywords: "Aspose.Cells, Excel, API, abrufen, Bereich, Tabellendokument, REST"
 description: "Erfahren Sie, wie Sie Bereichsinhalte aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API abrufen. Enthält die Anforderungssyntax und Beispielcodes."
 weight: 20

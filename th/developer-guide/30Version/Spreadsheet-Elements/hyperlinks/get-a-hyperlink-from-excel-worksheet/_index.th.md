@@ -1,7 +1,7 @@
 ---
 title: "รับลิงก์ไฮเปอร์เท็กซ์ของเวิร์กชีต"
 type: docs
-url: /hyperlinks/get/
+url: /th/hyperlinks/get/
 keywords: "Aspose.Cells Cloud, Get Worksheet Hyperlink, Excel hyperlink API, REST, JWT authentication, Excel worksheet, API endpoint"
 description: "ดึงลิงก์ไฮเปอร์เท็กซ์ที่ระบุจากเวิร์กชีต Excel โดยใช้ Aspose.Cells Cloud API (v3.0) ประกอบด้วย endpoint, พารามิเตอร์, ตัวอย่าง cURL, รายละเอียดการยืนยันตัวตน, การจัดการข้อผิดพลาด และตัวอย่างโค้ด SDK"
 weight: 10

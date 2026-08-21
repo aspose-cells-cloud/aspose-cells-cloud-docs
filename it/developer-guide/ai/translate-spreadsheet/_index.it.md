@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Come tradurre un intero foglio di calcolo utilizzando l'API di traduzione AI di Aspose.Cells Cloud"
 linktype: "Traduci foglio di calcolo"
 type: docs
-url: /translate-spreadsheet/
+url: /it/translate-spreadsheet/
 keywords: "Aspose.Cells Cloud, API di traduzione foglio di calcolo, traduzione AI, traduzione foglio di calcolo, targetLanguage, traduzione multi-foglio, elaborazione foglio di calcolo cloud, traduzione Aspose.Cells Cloud"
 description: "Traduci un intero libro Excel con Aspose.Cells Cloud AI. Mantieni formule, grafici e formattazione durante la conversione del testo in qualsiasi lingua supportata. Scopri endpoint, parametri, esempi SDK, limiti e gestione degli errori."
 weight: 100

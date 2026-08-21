@@ -3,7 +3,7 @@ title: "Configuration de la page de feuille de calcul"
 second_title: "Document"
 linktitle: "Configuration de la page"
 type: docs
-url: /page-setup/
+url: /fr/page-setup/
 keywords: "Aspose.Cells, pageSetup, feuille de calcul, paramètres d’impression, marges, orientation, format du papier, en-tête, pied de page, mise à l’échelle"
 description: "Découvrez comment configurer la mise en page d’impression d’une feuille de calcul Excel à l’aide de l’objet PageSetup d’Aspose.Cells Cloud. Inclut la liste des propriétés, leurs valeurs par défaut, les plages et des exemples de code pour C#, Java et Python."
 weight: 20

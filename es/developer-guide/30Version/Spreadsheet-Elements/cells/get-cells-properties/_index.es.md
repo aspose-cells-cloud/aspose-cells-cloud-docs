@@ -1,7 +1,7 @@
 ---
 title: "Obtener propiedades de celdas"
 type: docs
-url: /get-cells-properties/
+url: /es/get-cells-properties/
 weight: 130
 keywords: "Aspose Cells Cloud, REST API, Excel, hoja de cálculo, propiedades de celdas, obtener propiedades de celdas"
 description: "Aprenda a usar la API REST de Aspose.Cells Cloud para recuperar las propiedades de una celda específica o de métodos predefinidos de celdas en una hoja de cálculo de Excel."

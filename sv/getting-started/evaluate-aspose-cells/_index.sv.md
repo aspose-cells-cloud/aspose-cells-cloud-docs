@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Utvärdera Aspose.Cells Cloud"
 LinkTitle: "Utvärdera"
 type: docs
-url: /evaluate-aspose-cells/
+url: /sv/evaluate-aspose-cells/
 description: "Utforska Aspose.Cells Cloud, REST API:et för att skapa, konvertera, sammanfoga, dela, skydda och manipulera Excel-filer och andra kalkylbladsformat."
 weight: 60
 keywords:

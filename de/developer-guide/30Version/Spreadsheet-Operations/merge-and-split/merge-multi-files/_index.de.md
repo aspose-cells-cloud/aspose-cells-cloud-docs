@@ -3,8 +3,8 @@ title: "Mehrere Excel-Dateien in einer einzigen Arbeitsmappe zusammenführen"
 second_title: "Dokument"
 linktitle: "Mehrere Excel-Dateien zusammenführen"
 type: docs
-url: /merge-multi-files-into-excel/
-aliases: [/merge/multi-files/]
+url: /de/merge-multi-files-into-excel/
+aliases: [  /de/merge/multi-files/ ]
 keywords: "Aspose.Cells Cloud, mehrere Excel-Dateien zusammenführen, REST-API, Tabellenkalkulation zusammenführen, Cloud SDK"
 description: "Erfahren Sie, wie Sie mehrere Excel-Arbeitsmappen mit der Aspose.Cells Cloud REST API (v3.0) in einer einzigen Datei zusammenführen. Enthält HTTPS-Endpunkt, cURL-Befehl, SDK-Beispiele, erforderliche Parameter und Details zur Fehlerbehandlung."
 weight: 32

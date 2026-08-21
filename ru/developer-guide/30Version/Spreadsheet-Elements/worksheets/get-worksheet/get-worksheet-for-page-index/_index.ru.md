@@ -4,8 +4,8 @@ articleTitle: "Экспорт страницы рабочего листа – �
 secondTitle: "Документ"
 linkTitle: "Страница"
 type: docs
-url: /worksheets/page-to-different-formats/
-aliases: [/get-worksheet-for-page-index/]
+url: /ru/worksheets/page-to-different-formats/
+aliases: [  /ru/get-worksheet-for-page-index/ ]
 keywords: "Aspose.Cells Cloud, экспорт страницы рабочего листа, PDF, PNG, CSV, REST API, аутентификация JWT, форматы файлов"
 description: "Узнайте, как экспортировать конкретную страницу рабочего листа в форматы PDF, PNG, CSV и другие с помощью REST API Aspose.Cells Cloud. Включает примеры cURL-запросов, руководство по параметрам и примеры SDK для различных языков программирования."
 weight: 240

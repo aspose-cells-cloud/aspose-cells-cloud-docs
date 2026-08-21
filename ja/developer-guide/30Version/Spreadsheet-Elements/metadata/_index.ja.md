@@ -3,7 +3,7 @@ title: "Excel のメタデータおよびプロパティの操作"
 second_title: "Document"
 linktype: "ja"
 type: docs
-url: /metadata/
+url: /ja/metadata/
 aliases:
   - /document-properties/
   - /working-with-document-properties/

@@ -3,8 +3,8 @@ title: "Obtener todas las hojas de cálculo"
 second_title: "Documento"
 linktitle: "Todas"
 type: docs
-url: /worksheets/get-all/
-aliases: [/get-worksheet-count/]
+url: /es/worksheets/get-all/
+aliases: [  /es/get-worksheet-count/ ]
 keywords: "Aspose.Cells, API en la nube, Obtener hojas de cálculo, Excel, REST, SDK"
 description: "Recuperar la lista de hojas de cálculo en un libro de Excel mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye ejemplo de cURL, fragmentos de SDK y formato de respuesta."
 weight: 10

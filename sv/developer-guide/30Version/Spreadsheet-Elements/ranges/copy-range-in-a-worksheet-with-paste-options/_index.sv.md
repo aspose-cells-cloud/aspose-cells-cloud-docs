@@ -3,8 +3,8 @@ title: "Kopiera intervall i ett kalkylblad med kopiéralternativ"
 second_title: "Dokument"
 linktitle: "Kopiera"
 type: docs
-url: /ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+url: /sv/ranges/copy/
+aliases: [  /sv/copy-range-in-a-worksheet-with-paste-options/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, kopiera intervall, kalkylblad, kopiéralternativ"
 description: "Använd Aspose.Cells Cloud REST API för att kopiera ett intervall inom ett Excel-kalkylblad med fullständigt stöd för kopiéralternativ. Inkluderar SDK-exempel för flera programmeringsspråk."
 weight: 20

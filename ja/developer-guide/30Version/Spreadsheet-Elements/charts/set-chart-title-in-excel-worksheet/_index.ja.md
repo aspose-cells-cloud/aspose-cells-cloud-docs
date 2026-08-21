@@ -1,8 +1,8 @@
 ---
 title: "Aspose.Cells Cloud API – Excelワークシート内のチャートタイトルの設定"
 type: docs
-url: /chart/title/add/
-aliases: [/set-chart-title-in-excel-worksheet/]
+url: /ja/chart/title/add/
+aliases: [  /ja/set-chart-title-in-excel-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells Cloud, チャートタイトル API, Excel チャートタイトル, REST API, SDK サンプル"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシート内のチャートタイトルを追加または更新する方法を学びます。cURL、SDK サンプル、必要なパラメータ、認証手順、エラー処理を含みます。"

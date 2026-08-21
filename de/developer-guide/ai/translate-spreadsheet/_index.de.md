@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So übersetzen Sie eine gesamte Tabellendatei mithilfe der Aspose.Cells Cloud KI-Übersetzung-API"
 linktitle: "Tabellendatei übersetzen"
 type: docs
-url: /translate-spreadsheet/
+url: /de/translate-spreadsheet/
 keywords: "Aspose.Cells Cloud, Übersetzungs-API für Tabellendateien, KI-Übersetzung, Übersetzung von Tabellendateien, targetLanguage, Übersetzung mehrerer Arbeitsblätter, Cloud-basierte Verarbeitung von Tabellendateien, Aspose.Cells Cloud-Übersetzung"
 description: "Übersetzen Sie eine gesamte Excel-Arbeitsmappe mit Aspose.Cells Cloud KI. Beibehaltung von Formeln, Diagrammen und Formatierungen bei der Umwandlung von Text in jede unterstützte Sprache. Erfahren Sie mehr über Endpunkt, Parameter, SDK-Beispiele, Einschränkungen und Fehlerbehandlung."
 weight: 100

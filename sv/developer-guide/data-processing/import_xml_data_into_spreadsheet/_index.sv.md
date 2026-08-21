@@ -4,7 +4,7 @@ ArticleTitle: "Importera XML-data till kalkylark – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "Importera XML-data till kalkylark"
 type: docs
-url: /cells/import/data/xml
+url: /sv/cells/import/data/xml
 aliases: []
 keywords: "Importera XML, Aspose.Cells, API"
 description: "Importera XML-datafil till lokalt kalkylark med Aspose.Cells Cloud."

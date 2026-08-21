@@ -3,7 +3,7 @@ title: "Duplikate entfernen"
 ArticleTitle: "Duplikate entfernen – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "docs"
-url: /cells/remove/duplicates
+url: /de/cells/remove/duplicates
 aliases: []
 keywords: "Aspose.Cells, Duplikate entfernen, API"
 description: "Entfernt doppelte Werte in einem Arbeitsblatt, einem Bereich oder einer Tabelle."

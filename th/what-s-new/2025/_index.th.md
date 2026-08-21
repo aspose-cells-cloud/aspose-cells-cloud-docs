@@ -4,7 +4,7 @@ secondtitle: "เอกสาร"
 linktitle: "มีอะไรใหม่ในปี 2025"
 type: docs
 weight: 9
-url: /new-features/2025/
+url: /th/new-features/2025/
 keywords: "Aspose.Cells Cloud, ฟีเจอร์ใหม่ 2025, API สำหรับสเปรดชีต, Excel, CSV, PDF, สเปรดชีตบนคลาวด์"
 description: "หน้านี้แสดงรายการฟีเจอร์และปรับปรุงล่าสุดของ Aspose.Cells Cloud ที่เผยแพร่ในปี 2025 รวมถึง API ใหม่ การปรับปรุง และการแก้ไขบั๊ก"
 ArticleTitle: "มีอะไรใหม่ใน Aspose.Cells Cloud ปี 2025 – ฟีเจอร์และปรับปรุงล่าสุด"

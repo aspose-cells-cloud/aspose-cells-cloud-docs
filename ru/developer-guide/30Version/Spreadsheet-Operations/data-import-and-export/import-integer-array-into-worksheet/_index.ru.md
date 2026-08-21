@@ -2,7 +2,7 @@
 title: "Импорт целочисленного массива в рабочую тетрадь Excel"
 linktype: "import-integer-array"
 type: docs
-url: /import-integer-array-into-excel-worksheet/
+url: /ru/import-integer-array-into-excel-worksheet/
 aliases:
   - /import-integer-array-into-excel-worksheet/
   - /import-integer-array-into-worksheet/

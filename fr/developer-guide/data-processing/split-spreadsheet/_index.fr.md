@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Outil de découpage Excel – Diviser une feuille de calcul locale en plusieurs fichiers dans plus de 30 formats"
 linktype: "Split Spreadsheet"
 type: docs
-url: /split-spreadsheet/
+url: /fr/split-spreadsheet/
 keywords: "découper, excel, aspose cells, API de feuille de calcul, exporter en pdf, csv, json"
 description: "Découper un classeur Excel localement en fichiers séparés à l’aide de l’API Aspose.Cells Cloud. Exportez vers plus de 30 formats (PDF, CSV, JSON, XLSX, HTML) sans avoir à téléverser vers le cloud."
 weight: 100

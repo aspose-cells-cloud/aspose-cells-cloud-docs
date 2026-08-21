@@ -3,8 +3,8 @@ title: "Trova testo in un foglio di lavoro Excel"
 second_title: "Documento"
 linktitle: "Trova nel foglio di lavoro"
 type: docs
-url: /worksheets/find-text/
-aliases: [/find-text-in-a-worksheet/]
+url: /it/worksheets/find-text/
+aliases: [  /it/find-text-in-a-worksheet/ ]
 weight: 40
 keywords: "Excel, Aspose.Cells Cloud, REST API, trova testo, foglio di lavoro, foglio elettronico, ricerca"
 description: "Utilizza l'API REST di Aspose.Cells Cloud per trovare testo in un foglio di lavoro Excel. L'API è disponibile tramite numerosi SDK e linguaggi di programmazione."

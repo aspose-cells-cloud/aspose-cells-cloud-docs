@@ -4,8 +4,8 @@ ArticleTitle: "워크시트 페이지 내보내기 – Aspose.Cells Cloud API �
 second_title: "문서"
 linktype: "page"
 type: docs
-url: /worksheets/page-to-different-formats/
-aliases: [/get-worksheet-for-page-index/]
+url: /ko/worksheets/page-to-different-formats/
+aliases: [  /ko/get-worksheet-for-page-index/ ]
 keywords: "Aspose.Cells Cloud, 워크시트 페이지 내보내기, PDF, PNG, CSV, REST API, JWT 인증, 파일 형식"
 description: "Aspose.Cells Cloud REST API를 사용해 특정 워크시트 페이지를 PDF, PNG, CSV 등 다양한 형식으로 내보내는 방법을 알아보세요. cURL 요청, 매개변수 가이드, 다양한 언어의 SDK 샘플을 포함합니다."
 weight: 240

@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API — Автоматическое удален
 second_title: "Документ"
 ArticleTitle: "Как удалить все пустые строки в Excel — Полное руководство по очистке данных"
 linktype: "docs"
-url: /delete-spreadsheet-blank-rows/
+url: /ru/delete-spreadsheet-blank-rows/
 keywords: "Aspose.Cells, Excel, пустые строки, удаление строк, очистка электронных таблиц, API"
 description: "Удаление всех пустых строк из файлов Excel с помощью Aspose.Cells Cloud API. Быстро, поддерживает пакетную обработку и полностью программируемо — смотрите примеры кода на C#, Java, Python и других языках."
 weight: 100

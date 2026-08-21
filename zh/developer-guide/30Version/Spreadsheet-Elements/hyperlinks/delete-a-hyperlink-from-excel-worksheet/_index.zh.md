@@ -1,7 +1,7 @@
 ---
 title: "删除工作表超链接"
 type: docs
-url: /hyperlinks/delete/
+url: /zh/hyperlinks/delete/
 description: "使用 Aspose.Cells Cloud API 按索引删除工作表超链接。了解所需参数、身份验证方法，并查看 C#、Java、Python 等语言的代码示例。"
 keywords: "Aspose.Cells, 云, 删除超链接, Excel API, REST, 工作表超链接"
 ArticleTitle: "删除工作表超链接 – Aspose.Cells Cloud API 文档"

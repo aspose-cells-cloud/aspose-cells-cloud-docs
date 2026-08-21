@@ -4,8 +4,8 @@ second title: "เอกสาร"
 linktitle: "มีอะไรใหม่"
 type: docs
 weight: 9
-url: /new-features/
-aliases: [/what-s-new-in-aspose-cells-cloud/]
+url: /th/new-features/
+aliases: [  /th/what-s-new-in-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, ฟีเจอร์ใหม่, Microsoft Office Excel, OpenOffice Spreadsheet, CSV, PDF, REST API, SDK, สเปรดชีต, คลาวด์"
 description: "สำรวจฟีเจอร์ ความปรับปรุง และการแก้ไขบั๊กล่าสุดใน Aspose.Cells Cloud รวมถึงการอัปเดตสำหรับการจัดการ Excel, OpenOffice, CSV และ PDF"
 ArticleTitle: "มีอะไรใหม่ใน Aspose.Cells Cloud – ฟีเจอร์และอัปเดตล่าสุด"

@@ -2,7 +2,7 @@
 title: "Arbeta med pivot-tabeller med hjälp av CellsObjectOperate-uppgiften"
 type: docs
 url: /sv/tasks/cells-object-operate/pivottable/
-aliases: [/sv/working-with-pivot-table-using-cellsobjectoperate-task/]
+aliases: [  /sv/working-with-pivot-table-using-cellsobjectoperate-task/ ]
 keywords: "Aspose Cells pivot-tabell-API, CellsObjectOperate, Excel REST API"
 description: "Lär dig hur du skapar en pivot-tabell i Excel med Aspose.Cells Clouds CellsObjectOperate-uppgift. Innehåller cURL-exempel, parameterguide och SDK-referenser."
 weight: 10

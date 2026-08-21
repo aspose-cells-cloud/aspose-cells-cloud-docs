@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "获取"
 type: docs
 url: /zh/oleobjects/get/
-aliases: [/zh/get-oleobject-from-a-worksheet/]
+aliases: [  /zh/get-oleobject-from-a-worksheet/ ]
 keywords: "aspose, cells, ole object, excel, worksheet, get ole object, rest api"
 description: "使用 Aspose.Cells Cloud REST API 从工作表中检索 OLE 对象（图像、图表或嵌入文件）。包含 HTTPS 端点、必需参数、示例 cURL 以及多种语言的 SDK 代码。"
 ArticleTitle: "从 Excel 工作表获取 OLE 对象 – Aspose.Cells Cloud API"

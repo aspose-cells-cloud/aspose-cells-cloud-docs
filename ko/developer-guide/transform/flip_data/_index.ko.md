@@ -4,7 +4,7 @@ ArticleTitle: "FlipData – Aspose.Cells Cloud"
 second_title: "문서"
 linktitle: "FlipData"
 type: docs
-url: /cells/flip
+url: /ko/cells/flip
 aliases: []
 keywords: "FlipData, 변환, Aspose.Cells"
 description: "스프레드시트 파일 내 지정된 데이터 범위를 전치합니다."

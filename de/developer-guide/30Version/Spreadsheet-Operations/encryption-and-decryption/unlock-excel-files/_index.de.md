@@ -3,8 +3,8 @@ title: "Excel-Dateien entsperren"
 second_title: "Dokument"
 linktitle: "Excel-Dateien entsperren"
 type: docs
-url: /unlock-excel-files/
-aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
+url: /de/unlock-excel-files/
+aliases: [  /de/unlock/without-storage/ , /de/unlock/ , /de/unlock/without-using-storage/ ]
 keywords: "Excel entsperren, Aspose.Cells Cloud, REST API, Excel entsperren, passwortgeschützte Arbeitsmappe, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
 description: "Die Aspose.Cells Cloud REST API stellt einen Endpunkt zum Entsperrten passwortgeschützter Excel-Dateien bereit. SDKs sind für zahlreiche Programmiersprachen verfügbar, darunter Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby und Swift."
 ArticleTitle: "Excel-Dateien mit der Aspose.Cells Cloud REST API entsperren"

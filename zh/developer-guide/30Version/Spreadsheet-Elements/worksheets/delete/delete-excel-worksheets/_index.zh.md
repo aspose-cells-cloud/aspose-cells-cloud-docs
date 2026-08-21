@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "多个工作表"
 type: docs
 url: /zh/worksheets/delete-multiple/
-aliases: [/delete-excel-worksheets/]
+aliases: [  /zh/delete-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, 删除多个工作表, Excel API, REST API, v3.0, 删除工作表"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）从 Excel 工作簿中删除多个工作表。包括安全的 HTTPS 端点、必需参数、修正后的 cURL 示例以及多种编程语言的 SDK 代码片段。"
 weight: 20

@@ -3,8 +3,8 @@ title: "Работа с рабочими листами Excel"
 second_title: "Документ"
 linktype: "Рабочие листы"
 type: docs
-url: /worksheets/
-aliases: [/working-with-worksheets/]
+url: /ru/worksheets/
+aliases: [  /ru/working-with-worksheets/ ]
 keywords: "Рабочий лист Excel, Aspose.Cells Cloud, REST API, электронная таблица, рабочая книга, обработка данных, автоматизация Excel"
 description: "REST API Aspose.Cells Cloud позволяет работать с рабочими листами в рабочей книге Excel. SDK поддерживает множество языков программирования, включая Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby и Swift."
 weight: 100

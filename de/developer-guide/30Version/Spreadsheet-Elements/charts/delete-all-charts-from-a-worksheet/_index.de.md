@@ -1,8 +1,8 @@
 ---
 title: "Alle Diagramme aus einem Arbeitsblatt löschen"
 type: docs
-url: /charts/clear/
-aliases: [/delete-all-charts-from-a-worksheet/]
+url: /de/charts/clear/
+aliases: [  /delete-all-charts-from-a-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells, Cloud, löschen, alle Diagramme, Arbeitsblatt, REST API, DELETE, SDK"
 description: "Erfahren Sie, wie Sie alle Diagramme in einem Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API (v3.0) löschen. Enthält Endpunkt, Parameter, cURL-Beispiel, SDK-Code-Snippets, Authentifizierungsschritte und Fehlerbehandlung."

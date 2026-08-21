@@ -4,7 +4,7 @@ ArticleTitle: "Yerel Elektronik Tablo ile Çalışma Sayfalarını Alın – Asp
 second_title: "Belge"
 linktype: "Yerel Elektronik Tablo ile Çalışma Sayfalarını Alın"
 type: docs
-url: /cells/spreadsheet/worksheets
+url: /tr/cells/spreadsheet/worksheets
 aliases: []
 keywords: "Aspose.Cells, Çalışma Sayfaları, Yerel Elektronik Tablo, API"
 description: "Şu anda etkin olan yerel elektronik tablodan tüm çalışma sayfalarının tam listesini getirir."

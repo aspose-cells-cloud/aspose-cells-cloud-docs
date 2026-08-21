@@ -3,7 +3,7 @@ title: "حذف التحقق من صحة ورقة العمل – Aspose.Cells Clo
 second_title: "مستند"
 linktitle: "حذف"
 type: docs
-url: /validations/delete/
+url: /ar/validations/delete/
 keywords: "حذف، التحقق من صحة ورقة العمل، Aspose.Cells Cloud، واجهة برمجة تطبيقات Excel"
 description: "تعرّف على كيفية حذف التحقق من صحة ورقة عمل من ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. يشمل ذلك نقطة النهاية، المُعلَمات، تفاصيل المصادقة، مثال باستخدام cURL، معالجة الأخطاء، ومقتطفات كود SDK."
 weight: 10

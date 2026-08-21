@@ -3,7 +3,7 @@ title: "ConvertRangeToPdf"
 ArticleTitle: "範囲をPDFに変換 – Aspose.Cells Cloud API"
 second_title: "Document"
 linktype: "docs"
-url: /cells/convert/range/pdf
+url: /ja/cells/convert/range/pdf
 aliases: []
 keywords: "Aspose.Cells, 範囲をPDFに変換, API"
 description: "Aspose.Cells Cloud を使ってスプレッドシートの指定された範囲を PDF に変換します。"

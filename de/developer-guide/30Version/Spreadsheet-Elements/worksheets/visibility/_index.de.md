@@ -3,7 +3,7 @@ title: "Arbeiten mit Sichtbarkeit in einem Excel-Arbeitsblatt"
 second_title: "Dokument"
 linktitle: "Sichtbarkeit"
 type: docs
-url: /worksheets/panes/
+url: /de/worksheets/panes/
 keywords: "Aspose.Cells Cloud, API zum Ausblenden von Arbeitsblättern, API zum Einblenden von Arbeitsblättern, Excel-Arbeitsblattsichtbarkeit, REST-API für Excel, Aspose.Cells v3.0"
 description: "Erfahren Sie, wie Sie Excel-Arbeitsblatter programmgesteuert mit der Aspose.Cells Cloud REST-API aus- oder einblenden. Enthält Anforderungs-URLs, cURL- und .NET-SDK-Beispiele, Fehlerbehandlung und versionspezifische Hinweise."
 weight: 20

@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Решение для управления Excel-файлами в облаке — подробное объяснение пакетной функции копирования Aspose.Cells Copy File API"
 linktitle: "Копирование файла"
 type: docs
-url: /copy-file/
+url: /ru/copy-file/
 keywords: "Aspose.Cells, CopyFile API, копирование Excel-файла, облачное хранилище, REST API"
 description: "Узнайте, как использовать Aspose.Cells Cloud CopyFile API для эффективного дублирования Excel-файлов и управления ими в различных местах хранения."
 weight: 100

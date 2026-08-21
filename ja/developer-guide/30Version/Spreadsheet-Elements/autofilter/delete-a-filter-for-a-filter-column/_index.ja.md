@@ -3,8 +3,8 @@ title: "Excelワークシートからフィルターを削除する – Aspose.C
 second_title: "ドキュメント"
 linktitle: "フィルターの削除"
 type: docs
-url: /delete-filter/
-aliases: [/delete-a-filter-for-a-filter-column/, /delete-auto-filter/]
+url: /ja/delete-filter/
+aliases: [  /ja/delete-a-filter-for-a-filter-column/ , /ja/delete-auto-filter/ ]
 keywords: "Aspose.Cells Cloud フィルター削除, Excel, REST API, SDK"
 description: "Aspose.Cells Cloud REST API、cURL、およびSDK（C#、Java、Pythonなど）を使用して、Excelワークシートのオートフィルターを削除する方法を学びます。エンドポイント、パラメーター、認証、およびサンプルコードを含みます。"
 weight: 100

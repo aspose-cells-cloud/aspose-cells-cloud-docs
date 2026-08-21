@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "クライアント ID とシークレットでアクセス トークンを取得する"
 linktitle: "Post Access Token"
 type: docs
-url: /post-access-token/
+url: /ja/post-access-token/
 keywords: "Aspose.Cells, Cloud, アクセス トークン, OAuth2, API, 認証, REST, Excel, Office Cloud"
 description: "クライアント ID とシークレットを使用して POST /cells/connect/token エンドポイントを呼び出すことで、Aspose.Cells Cloud の OAuth2 アクセス トークンを取得します。"
 weight: 100

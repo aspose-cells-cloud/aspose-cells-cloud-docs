@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cerca testo in fogli di calcolo Excel remoti – Trova dati in intervalli specifici"
 linktitle: "Cerca contenuto in intervallo remoto"
 type: docs
-url: /search-content-in-remote-range/
+url: /it/search-content-in-remote-range/
 keywords: "Aspose.Cells, API Excel, ricerca testo, intervallo remoto, foglio di calcolo cloud, API REST, individuazione dati"
 description: "Cerca testo, numeri o formule in un intervallo specifico di un file Excel archiviato su Aspose Cloud."
 weight: 100

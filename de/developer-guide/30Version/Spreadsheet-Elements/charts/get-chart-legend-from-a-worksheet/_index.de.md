@@ -1,8 +1,8 @@
 ---
 title: "Legende eines Diagramms aus einem Arbeitsblatt abrufen"
 type: docs
-url: /charts/legend/get/
-aliases: [/get-chart-legend-from-a-worksheet/]
+url: /de/charts/legend/get/
+aliases: [  /de/get-chart-legend-from-a-worksheet/ ]
 weight: 80
 keywords: "Aspose.Cells, Diagrammlegende, REST-API, Excel, Cloud-SDK, Diagrammlegende abrufen, Arbeitsblatt, Tabellendokument"
 description: "Rufen Sie die Legende eines Diagramms aus einem bestimmten Arbeitsblatt in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST-API (v3.0) ab. Enthält Endpunkt, Parameter, cURL-Beispiel und SDK-Snippets."

@@ -3,7 +3,7 @@ title: "BuscarEnlacesRotosEnHojasDeCálculoRemotas"
 ArticleTitle: "Buscar enlaces rotos en hojas de cálculo remotas – API de Aspose.Cells Cloud"
 second_title: "Documentos"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/search/broken-links
+url: /es/cells/{name}/worksheets/{worksheet}/search/broken-links
 aliases: []
 keywords: "Aspose.Cells, buscar enlaces rotos, hoja de cálculo remota"
 description: "Busca enlaces rotos en la hoja de cálculo de una hoja de cálculo almacenada en la nube remota."

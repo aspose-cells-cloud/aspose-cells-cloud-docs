@@ -3,7 +3,7 @@ title: "Elimina lo sfondo di un workbook Excel"
 second_title: "Documento"
 linktitle: "Elimina"
 type: docs
-url: /delete-background-in-excel-file/
+url: /it/delete-background-in-excel-file/
 aliases:
   - /delete-background-in-workbook/
   - /workbook/delete-background/

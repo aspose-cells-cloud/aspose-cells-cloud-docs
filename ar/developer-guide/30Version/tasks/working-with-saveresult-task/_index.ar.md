@@ -2,8 +2,8 @@
 title: "العمل مع مهمة SaveResult"
 second_title: "مستند"
 type: docs
-url: /tasks/save-result/
-aliases: [/working-with-saveresult-task/]
+url: /ar/tasks/save-result/
+aliases: [  /ar/working-with-saveresult-task/ ]
 keywords: "مهمة SaveResult، واجهة برمجة تطبيقات Aspose.Cells Cloud، تصدير النتيجة، تنزيل ملف الحساب، التخزين السحابي، واجهة REST API، الجداول الحسابية، إكسل"
 description: "تعرّف على كيفية استخدام مهمة SaveResult في واجهة برمجة تطبيقات Aspose.Cells Cloud لتصدير بيانات ملف الحساب المعالَجة إلى التخزين السحابي أو تنزيلها مباشرةً. يشمل أمثلة cURL وJava و.NET، ومرجعًا كاملاً للمعاملات."
 weight: 50

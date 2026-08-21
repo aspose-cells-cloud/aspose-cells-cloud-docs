@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Excel Common Operations"
 type: docs
 url: /it/workbook/
-aliases: [/it/working-with-workbook/]
+aliases: [  /it/working-with-workbook/ ]
 keywords: "Aspose.Cells, API Excel, operazioni su cartelle di lavoro, calcolo formule, adattamento automatico"
 description: "Scopri come lavorare con cartelle di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud. Guide passo-passo che coprono il calcolo delle formule, l'adattamento automatico di righe e colonne, la pulizia degli oggetti e il recupero dei metadati della cartella di lavoro. SDK disponibili per Python, .NET, Java e altri linguaggi."
 weight: 20

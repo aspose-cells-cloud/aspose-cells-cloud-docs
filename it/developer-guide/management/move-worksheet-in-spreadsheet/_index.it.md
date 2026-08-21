@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Come spostare i fogli di lavoro in Excel – Riordinare l’ordine e la posizione dei fogli"
 linktitle: "Sposta foglio di lavoro nel foglio elettronico"
 type: docs
-url: /move-worksheet-in-spreadsheet/
+url: /it/move-worksheet-in-spreadsheet/
 keywords: "API per spostare fogli di lavoro, API per riordinare fogli, API per cambiare l’ordine dei fogli, API per la gestione delle schede Excel, Aspose Cells REST API, automatizzare la posizionamento dei fogli, API per l’organizzazione dei file di lavoro, API per la struttura dei fogli elettronici, automazione Excel nel cloud, riordino batch dei fogli"
 description: "Scopri come spostare i fogli di lavoro all’interno dei file di lavoro Excel per riorganizzare l’ordine dei fogli e ottimizzare la struttura del file. Modifica la posizione dei fogli di lavoro, riordina le schede per migliorare il flusso di lavoro e automatizza l’organizzazione dei fogli per una gestione professionale dei fogli elettronici."
 weight: 100

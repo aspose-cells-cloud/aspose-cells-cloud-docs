@@ -3,7 +3,7 @@ title: "Excel 워크시트에 행 추가하는 방법"
 second_title: "Document"
 linktitle: "Add"
 type: docs
-url: /rows/add/
+url: /ko/rows/add/
 keywords: "Aspose.Cells, 행 추가, Excel API, REST, C#, Java, Python, Node.js"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에 단일 또는 여러 행을 추가하는 단계별 가이드. C#, Java, Python 및 Node.js 코드 예제 제공."
 weight: 20

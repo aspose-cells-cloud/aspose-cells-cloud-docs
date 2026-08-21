@@ -3,7 +3,7 @@ title: "สร้างรายงาน Excel ด้วยเทมเพล�
 second_title: "เอกสาร"
 linktype: "SmartMarker"
 type: docs
-url: /build-report-with-smart-marker/
+url: /th/build-report-with-smart-marker/
 aliases:
   - /create-excel-workbook-from-a-smartmarker-template/
   - /workbook/smartmarker/

@@ -1,7 +1,7 @@
 ---
 title: "Obtenir l’axe de deuxième catégorie d’un graphique"
 type: docs
-url: /charts/second-category-axis/get/
+url: /fr/charts/second-category-axis/get/
 weight: 60
 keywords: "Obtenir l’axe de deuxième catégorie d’un graphique, API Aspose.Cells Cloud, axe de graphique Excel, API REST, axe de deuxième catégorie, Aspose.Cells"
 description: "Récupérer l’axe de deuxième catégorie d’un graphique dans une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut le format de la requête, les paramètres, un exemple cURL, le schéma de réponse, les codes de statut et des notes d’utilisation."

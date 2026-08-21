@@ -3,8 +3,8 @@ title: "تصدير الأشكال"
 second_title: "المستند"
 linktitle: "الشكل"
 type: docs
-url: /export-excel-shape-to-different-formats/
-aliases: [/export/excel-shape-to-different-formats/]
+url: /ar/export-excel-shape-to-different-formats/
+aliases: [  /ar/export/excel-shape-to-different-formats/ ]
 keywords: "تصدير الأشكال، Aspose.Cells Cloud، تصدير شكل Excel، تنسيقات الصور، REST API، SDK"
 description: "تعرّف على كيفية تصدير أشكال Excel إلى تنسيقات صور متعددة (PNG وGIF وJPEG وBMP وSVG وTIFF وEMF وWMF) باستخدام واجهة Aspose.Cells Cloud REST API وSDKs."
 weight: 20

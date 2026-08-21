@@ -1,8 +1,8 @@
 ---
 title: "Diagramm aus einem Arbeitsblatt abrufen"
 type: docs
-url: /charts/get/
-aliases: [/get-chart-from-a-worksheet/]
+url: /de/charts/get/
+aliases: [  /de/get-chart-from-a-worksheet/ ]
 weight: 10
 keywords: "Aspose.Cells Cloud, Diagramm abrufen, Arbeitsblatt, REST API, Excel, Diagramm-API, Diagrammabruf, Excel-Diagramm"
 description: "Abrufen von Diagramminformationen, einschließlich Metadaten und Exportformat, aus einem Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API."

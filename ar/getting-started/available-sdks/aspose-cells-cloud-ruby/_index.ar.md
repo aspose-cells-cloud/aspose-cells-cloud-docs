@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "حزمة تطوير برامج Aspose.Cells Cloud لغة Ruby: التحويل، الدمج، التقسيم، الحماية، البحث، الاستبدال، وأكثر"
 linktitle: "حزمة تطوير برامج Aspose.Cells Cloud لغة Ruby"
 type: docs
-url: /available-sdks/aspose-cells-cloud-ruby/
+url: /ar/available-sdks/aspose-cells-cloud-ruby/
 description: "تقدم حزمة تطوير برامج Aspose.Cells Cloud لغة Ruby واجهة برمجة تطبيقات سلسة ومتعددة المنصات لإنشاء وتحويل ودمج وتقسيم وحماية وبحث واستبدال كائنات Excel دون الحاجة إلى تثبيت برامج Microsoft Office."
 weight: 30
 keywords: "Ruby، Aspose.Cells Cloud، Excel SDK، REST API، تحويل، دمج، تقسيم، حماية، بحث، استبدال، مخطط، جدول محوري، كائن جدول/قائمة، PDF، CSV، JSON، Markdown"

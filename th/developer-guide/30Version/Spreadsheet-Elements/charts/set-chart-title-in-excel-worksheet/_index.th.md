@@ -1,8 +1,8 @@
 ---
 title: "Aspose.Cells Cloud API – ตั้งค่าหัวเรื่องกราฟในแผ่นงาน Excel"
 type: docs
-url: /chart/title/add/
-aliases: [/set-chart-title-in-excel-worksheet/]
+url: /th/chart/title/add/
+aliases: [  /th/set-chart-title-in-excel-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells Cloud, API หัวเรื่องกราฟ, หัวเรื่องกราฟ Excel, REST API, ตัวอย่าง SDK"
 description: "เรียนรู้วิธีการเพิ่มหรืออัปเดตหัวเรื่องกราฟในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API รวมถึงตัวอย่าง cURL, SDK, พารามิเตอร์ที่จำเป็น, ขั้นตอนการยืนยันตัวตน และการจัดการข้อผิดพลาด"

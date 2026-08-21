@@ -3,8 +3,8 @@ title: "Uppdatera kalkylbladsegenskaper – Aspose.Cells Cloud API-referens (v3.
 second_title: "Dokument"
 linktitle: "Uppdatera"
 type: docs
-url: /worksheets/update-properties/
-aliases: [/update-excel-worksheet-properties/]
+url: /sv/worksheets/update-properties/
+aliases: [  /sv/update-excel-worksheet-properties/ ]
 weight: 20
 keywords:
   [

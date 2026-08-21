@@ -3,7 +3,7 @@ title: "ConvertRangeToPdf"
 ArticleTitle: "범위를 PDF로 변환 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: /cells/convert/range/pdf
+url: /ko/cells/convert/range/pdf
 aliases: []
 keywords: "Aspose.Cells, 범위를 PDF로 변환, API"
 description: "Aspose.Cells Cloud를 사용하여 스프레드시트의 지정된 범위를 PDF로 변환합니다."

@@ -3,8 +3,8 @@ title: "ซ่อนแถวในสมุดงาน Excel"
 second_title: "เอกสาร"
 linktitle: "ซ่อน"
 type: docs
-url: /rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
+url: /th/rows/hide/
+aliases: [  /th/hide-rows-in-excel-worksheet/ ]
 keywords: "ซ่อนแถว, Aspose.Cells Cloud, Excel API, REST, SDK"
 description: "เรียนรู้วิธีการซ่อนแถวเดียวหรือหลายแถวในสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่าง cURL, โค้ดตัวอย่าง SDK, พารามิเตอร์, การยืนยันตัวตน, รายละเอียดการตอบกลับ และการจัดการข้อผิดพลาด"
 weight: 40

@@ -2,8 +2,8 @@
 title: "Convert 작업 사용하기"
 second_title: "문서"
 type: docs
-url: /tasks/convert/
-aliases: [/working-with-convert-task/]
+url: /ko/tasks/convert/
+aliases: [  /ko/working-with-convert-task/ ]
 keywords: "Aspose.Cells Cloud, REST API, Convert Task, Excel,Spreadsheet, PDF, CSV, JSON, Markdown"
 description: "Cells Cloud API는 Excel 파일을 다양한 형식으로 변환하는 작업 지원을 제공합니다."
 weight: 30

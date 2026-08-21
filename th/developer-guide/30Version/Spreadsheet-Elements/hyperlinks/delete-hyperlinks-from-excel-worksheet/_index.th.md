@@ -1,8 +1,8 @@
 ---
 title: "ล้างลิงก์ไฮเปอร์"
 type: docs
-url: /hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /th/hyperlinks/clear/
+aliases: [  /th/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, ล้างลิงก์ไฮเปอร์, ลบลิงก์ไฮเปอร์, REST API, แผ่นงาน, SDK"
 description: "เรียนรู้วิธีการลบลิงก์ไฮเปอร์ทั้งหมดออกจากแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API หรือ SDK ใดก็ได้ที่รองรับ (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl เป็นต้น)"
 weight: 40

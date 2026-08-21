@@ -4,7 +4,7 @@ ArticleTitle: "Konvertera kalkylblad till HTML-tabell – Aspose.Cells Cloud API
 second_title: "Dokument"
 linktitle: "KonverteraKalkylbladTillHtmlTabell"
 type: docs
-url: /cells/convert/worksheet/html-table
+url: /sv/cells/convert/worksheet/html-table
 aliases: []
 keywords: "Aspose.Cells, KonverteraKalkylbladTillHtmlTabell, HTML-tabell, API"
 description: "Konverterar ett kalkylblad i en kalkylfil på en lokal enhet till en HTML-tabellfil med hjälp av Aspose.Cells Cloud."

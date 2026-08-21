@@ -4,8 +4,8 @@ second_title: "Belge"
 linktitle: "Geliştirici Kılavuzu"
 ArticleTitle: "Dönüştür, Birleştir, Böl, Korumalı Yap, Ara, Değiştir ve Dönüştür — Tüm bunlar Hücreler Bulut’da."
 type: docs
-url: /developer‑guide/
-aliases: [/developer‑guide‑v4.0/]
+url: /tr/developer‑guide/
+aliases: [  /tr/developer‑guide‑v4.0/ ]
 keywords: "Aspose.Cells Cloud, Excel REST API, elektronik tablo dönüşümü, birleştirme, bölme, koruma, arama-değiştirme, veri dönüştürme, SDK örnekleri, Java, .NET, Python, Node.js, PHP, Go, Ruby, Perl"
 description: "Aspose.Cells Cloud REST API’leri için kapsamlı geliştirici kılavuzu. Elektronik tablo dönüşümü, birleştirme, bölme, koruma, arama-ve-değiştirme ve veri dönüştürme konularını kapsar. Ayrıca Java, .NET, Python, Node.js, PHP, Go, Ruby ve Perl için SDK örneklerine bağlantılar içerir."
 weight: 20

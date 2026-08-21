@@ -4,7 +4,7 @@ linktitle: "ميزات أخرى"
 ArticleTitle: "ميزات أخرى: فحص الحالة، الحصول على المفتاح العام"
 second_title: "مستند"
 type: docs
-url: /other-features/
+url: /ar/other-features/
 keywords: "Aspose.Cells، واجهة ويب سحابية، فحص الحالة، المفتاح العام، رمز الوصول، إكسل، REST"
 description: "استكشف ميزات Aspose.Cells Cloud الإضافية: نقطة نهاية فحص الحالة، استرجاع المفاتيح التشفيرية، وإنشاء رموز الوصول لتأمين تكاملاتك مع واجهة إكسل عبر API."
 weight: 180

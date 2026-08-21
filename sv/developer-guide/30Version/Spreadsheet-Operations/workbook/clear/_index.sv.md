@@ -3,8 +3,8 @@ title: "Rensa objekt i en Excel-fil"
 second_title: "Dokument"
 linktitle: "Rensa"
 type: docs
-url: /clear/
-aliases: [/clearobjects/]
+url: /sv/clear/
+aliases: [  /sv/clearobjects/ ]
 keywords: "Aspose.Cells, Excel, Rensa objekt, REST API, Molntjänst-SDK, Ta bort kommentarer, Ta bort diagram"
 description: "Använd Aspose.Cells Cloud REST API för att ta bort kommentarer, diagram, former och andra objekt från en Excel-arbetsbok. Stöder flera SDK:er och returnerar den renade filen som Base64-kodad sträng."
 weight: 39

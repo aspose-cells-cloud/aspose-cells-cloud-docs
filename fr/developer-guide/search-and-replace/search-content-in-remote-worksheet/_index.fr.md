@@ -4,7 +4,7 @@ second_title: "Document"
 articleTitle: "Rechercher du texte dans une feuille de calcul Excel distante – Trouver des données spécifiques"
 linktitle: "Rechercher du contenu dans une feuille de calcul distante"
 type: docs
-url: /search-content-in-remote-worksheet/
+url: /fr/search-content-in-remote-worksheet/
 keywords: "Aspose Cells, API Excel, recherche de texte, feuille de calcul distante"
 description: "Recherchez du texte, des nombres ou des formules dans une feuille de calcul Excel distante à l’aide de l’API Aspose.Cells Cloud. Prend en charge la recherche insensible à la casse et les fichiers protégés par mot de passe."
 weight: 100

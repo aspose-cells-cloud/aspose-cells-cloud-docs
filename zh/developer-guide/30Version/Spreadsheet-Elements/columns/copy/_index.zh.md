@@ -3,7 +3,7 @@ title: "在 Excel 工作表中复制列"
 second_title: "文档"
 linktype: "复制"
 type: docs
-url: /columns/copy/
+url: /zh/columns/copy/
 aliases:
   [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
 keywords: "Aspose.Cells, 复制列, Excel API, REST, 云 SDK, cURL, C#, Java, Python, Ruby, Node.js, Go, Perl"

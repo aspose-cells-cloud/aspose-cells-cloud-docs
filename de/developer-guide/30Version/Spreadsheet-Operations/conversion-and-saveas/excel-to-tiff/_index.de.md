@@ -3,8 +3,8 @@ title: "Excel zu TIFF"
 second_title: "Dokument"
 linketitle: "Excel zu TIFF"
 type: docs
-url: /convert-excel-file-to-tiff-file/
-aliases: [/convert-excel-file-to-tiff-in-cloud/, /convert/excel-to-tiff/]
+url: /de/convert-excel-file-to-tiff-file/
+aliases: [  /de/convert-excel-file-to-tiff-in-cloud/ , /de/convert/excel-to-tiff/ ]
 keywords: "Aspose.Cells Cloud, Excel-zu-TIFF-Konvertierung, REST API, cURL, SDK, .NET, Java, Python, Bildexport"
 description: "Erfahren Sie, wie Sie Excel-Arbeitsmappen mithilfe der Aspose.Cells Cloud API in hochwertige TIFF-Bilder konvertieren können. Detaillierte cURL-Befehle, SDK-Beispiele (C#, Java, Python, …), Authentifizierungsschritte und Fehlerbehandlung."
 weight: 90

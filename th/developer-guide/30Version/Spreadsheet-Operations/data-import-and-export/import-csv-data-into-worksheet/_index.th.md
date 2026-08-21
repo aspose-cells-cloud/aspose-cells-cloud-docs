@@ -3,7 +3,7 @@ title: "นำเข้าข้อมูล CSV ลงในแผ่นงา�
 second_title: "เอกสาร"
 linktype: "นำเข้าข้อมูล CSV"
 type: docs
-url: /import-CSV-data-into-excel/
+url: /th/import-CSV-data-into-excel/
 aliases:
   - /import-CSV-data-into-worksheet/
   - /import-data/csv-data/

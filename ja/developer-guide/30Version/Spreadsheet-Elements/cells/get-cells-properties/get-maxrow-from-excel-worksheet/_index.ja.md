@@ -1,7 +1,7 @@
 ---
 title: "Excelワークシートから最大行番号を取得する"
 type: docs
-url: /get-maxrow-from-excel-worksheet/
+url: /ja/get-maxrow-from-excel-worksheet/
 weight: 40
 ArticleTitle: "Excelワークシートの最大行番号を取得する – Aspose.Cells Cloud API"
 keywords: "Aspose.Cells, Excel, MaxRow, REST API, Cloud SDK, スプレッドシート, ワークシート, GetMaxRow"

@@ -3,7 +3,7 @@ title: "ยกเลิกการป้องกันสมุดงาน Ex
 second_title: "เอกสาร"
 linktitle: "ยกเลิกการป้องกันไฟล์ Excel"
 type: docs
-url: /excel-file-unprotect/
+url: /th/excel-file-unprotect/
 aliases:
   - /unprotect-excel-workbooks/
   - /workbook/unprotect/

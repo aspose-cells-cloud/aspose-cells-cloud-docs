@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Uzak Bir Elektronik Tablo Tablosunu Başka Bir Formata Dışa Aktarma: Adım Adım Kılavuz"
 linktype: "Tabloyu Belirli Bir Formata Dışa Aktar"
 type: docs
-url: /export-table-as-format/
+url: /tr/export-table-as-format/
 keywords: "Aspose.Cells, Tabloyu Dışa Aktar, Excel’den PDF’ye, Bulut API’si, REST"
 description: "Aspose.Cells Cloud API kullanarak uzak bir Excel tablosunu PDF, PNG, CSV, JSON veya diğer formatlara dışa aktarın. JWT kimlik doğrulamalı güvenli HTTPS uç noktası ve SDK örnekleri."
 weight: 100

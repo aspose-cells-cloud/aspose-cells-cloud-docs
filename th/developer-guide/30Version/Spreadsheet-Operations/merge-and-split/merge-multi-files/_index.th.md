@@ -3,8 +3,8 @@ title: "ผสานไฟล์ Excel หลายไฟล์ลงในส�
 second_title: "เอกสาร"
 linktype: "ผสานไฟล์ Excel หลายไฟล์"
 type: docs
-url: /merge-multi-files-into-excel/
-aliases: [/merge/multi-files/]
+url: /th/merge-multi-files-into-excel/
+aliases: [  /th/merge/multi-files/ ]
 keywords: "Aspose.Cells Cloud, ผสานไฟล์ Excel หลายไฟล์, REST API, การผสานสเปรดชีต, SDK บนคลาวด์"
 description: "เรียนรู้วิธีการผสานสมุดงาน Excel หลายไฟล์ลงในไฟล์เดียวโดยใช้ REST API ของ Aspose.Cells Cloud (เวอร์ชัน 3.0) ประกอบด้วย HTTPS endpoint, คำสั่ง cURL, ตัวอย่าง SDK, พารามิเตอร์ที่จำเป็น และรายละเอียดการจัดการข้อผิดพลาด"
 weight: 32

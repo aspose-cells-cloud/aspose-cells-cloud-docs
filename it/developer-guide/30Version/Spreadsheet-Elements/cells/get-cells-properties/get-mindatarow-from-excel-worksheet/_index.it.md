@@ -1,7 +1,7 @@
 ---
 title: "Ottenere MinDataRow da un foglio di lavoro Excel"
 type: docs
-url: /get-mindatarow-from-excel-worksheet/
+url: /it/get-mindatarow-from-excel-worksheet/
 weight: 90
 keywords: "Aspose Cells, MinDataRow, Excel API, Cloud SDK"
 description: "Recuperare l'indice della riga con dati minima di un foglio di lavoro utilizzando l'API Aspose.Cells Cloud v3.0. Include schema della richiesta, parametri, esempio cURL, esempio di risposta, codici di stato e frammenti SDK."

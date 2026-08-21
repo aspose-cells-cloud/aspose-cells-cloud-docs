@@ -3,8 +3,8 @@ title: "Удаление листа"
 second_title: "Документ"
 linktype: "Один лист"
 type: docs
-url: /worksheets/delete-worksheet/
-aliases: [/remove-worksheets-from-excel-workbooks/]
+url: /ru/worksheets/delete-worksheet/
+aliases: [  /ru/remove-worksheets-from-excel-workbooks/ ]
 keywords: "Aspose.Cells Cloud, удаление листа, Excel, электронная таблица, REST API"
 description: "Удаление листа из рабочей книги Excel с помощью REST API Aspose.Cells Cloud. Поддерживаются SDK для C#, Java, PHP, Ruby, Node.js, Python, Perl, Go и cURL."
 weight: 20

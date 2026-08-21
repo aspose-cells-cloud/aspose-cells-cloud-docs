@@ -2,7 +2,7 @@
 title: "การป้องกันไฟล์ Excel แบบเป็นกลุ่ม"
 second_title: "เอกสาร"
 type: docs
-url: /batch/protect
+url: /th/batch/protect
 keywords: "การป้องกันไฟล์ Excel แบบเป็นกลุ่ม, Aspose Cells Cloud, REST API, การป้องกัน Excel, การป้องกันแบบเป็นกลุ่ม"
 description: "เรียนรู้วิธีใช้ Aspose.Cells Cloud REST API ในการป้องกันไฟล์ Excel หลายไฟล์พร้อมกันแบบเป็นกลุ่ม รวมถึงรายละเอียดคำขอ ตัวอย่าง cURL และตัวอย่างโค้ด SDK สำหรับภาษาต่างๆ"
 weight: 100

@@ -4,8 +4,8 @@ ArticleTitle: "Fügen Sie ein Excel-Arbeitsblatt hinzu – Aspose.Cells Cloud AP
 second_title: "Dokument"
 linktitle: "Hinzufügen"
 type: docs
-url: /worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
+url: /de/worksheets/add/
+aliases: [  /de/add-a-new-excel-worksheet/ ]
 keywords: "Excel-Arbeitsblatt hinzufügen, Aspose.Cells Cloud, REST-API, PUT worksheet, Excel-Arbeitsmappe, API-Anfrage"
 description: "Schritt-für-Schritt-Anleitung zum Hinzufügen eines neuen Arbeitsblatts zu einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API, einschließlich Anforderungsdetails, einem cURL-Beispiel und SDK-Code-Snippets für mehrere Sprachen."
 weight: 20

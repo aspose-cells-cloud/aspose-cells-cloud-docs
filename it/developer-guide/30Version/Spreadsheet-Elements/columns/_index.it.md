@@ -3,8 +3,8 @@ title: "Lavorare con le colonne di Excel"
 second_title: "Documento"
 linktitle: "Colonne"
 type: docs
-url: /columns/
-aliases: [/working-with-columns/]
+url: /it/columns/
+aliases: [  /it/working-with-columns/ ]
 keywords: "Excel, colonne, Aspose.Cells Cloud, API, foglio di calcolo, foglio di lavoro, API REST"
 description: "Guida dettagliata alle operazioni dell'API Aspose.Cells Cloud per le colonne dei fogli di calcolo Excel, che coprono recupero, aggiunta, copia, nascondimento, visualizzazione, raggruppamento, scorporamento ed eliminazione."
 weight: 100

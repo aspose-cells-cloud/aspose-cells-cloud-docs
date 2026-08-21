@@ -3,8 +3,8 @@ title: "الحصول على فواصل الصفوف الأفقية"
 second_title: "الوثيقة"
 linktitle: "الحصول على فواصل الصفوف الأفقية"
 type: docs
-url: /page-breaks/get-horizontal-page-breaks/
-aliases: [/get-horizontal-page-breaks-inside-worksheet/]
+url: /ar/page-breaks/get-horizontal-page-breaks/
+aliases: [  /ar/get-horizontal-page-breaks-inside-worksheet/ ]
 keywords: "فواصل الصفوف الأفقية، Aspose.Cells Cloud، واجهة برمجة التطبيقات REST، ورقة عمل إكسل، واجهة برمجة تطبيقات (SDK)"
 description: "استرجاع فواصل الصفوف الأفقية من ورقة عمل إكسل عبر واجهة برمجة التطبيقات Aspose.Cells Cloud. يشمل النهاية (Endpoint)، المعاملات، مثال cURL، تنسيق الاستجابة، وأجزاء من كود واجهات برمجة التطبيقات (SDK) بلغات C#، Java، Python، والمزيد."
 ArticleTitle: "الحصول على فواصل الصفوف الأفقية - وثائق واجهة برمجة التطبيقات Aspose.Cells Cloud"

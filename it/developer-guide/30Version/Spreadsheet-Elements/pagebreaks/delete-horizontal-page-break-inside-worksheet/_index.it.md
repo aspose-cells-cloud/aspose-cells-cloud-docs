@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud – Elimina interruzione di pagina orizzontale
 second_title: "Documento"
 linktitle: "Elimina interruzione di pagina orizzontale"
 type: docs
-url: /page-breaks/delete-horizontal-page-break/
-aliases: [/delete-horizontal-page-break-inside-worksheet/]
+url: /it/page-breaks/delete-horizontal-page-break/
+aliases: [  /it/delete-horizontal-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Elimina interruzione di pagina orizzontale, foglio Excel, REST API, SDK"
 description: "Elimina un’interruzione di pagina orizzontale da un foglio Excel utilizzando l’API REST di Aspose.Cells Cloud. SDK disponibili per C#, Java, PHP, Ruby, Node.js, Python, Perl, Go."
 weight: 50

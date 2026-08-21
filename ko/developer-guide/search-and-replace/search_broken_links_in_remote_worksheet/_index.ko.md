@@ -3,7 +3,7 @@ title: "원격 워크시트에서 깨진 링크 검색"
 ArticleTitle: "원격 워크시트에서 깨진 링크 검색 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/search/broken-links
+url: /ko/cells/{name}/worksheets/{worksheet}/search/broken-links
 aliases: []
 keywords: "Aspose.Cells, 깨진 링크 검색, 원격 워크시트"
 description: "원격 클라우드 스토리지에 저장된 스프레드시트의 워크시트에서 깨진 링크를 검색합니다."

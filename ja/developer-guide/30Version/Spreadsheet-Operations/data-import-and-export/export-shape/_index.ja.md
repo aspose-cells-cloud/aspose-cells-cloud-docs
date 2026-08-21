@@ -3,8 +3,8 @@ title: "図形のエクスポート"
 second_title: "Document"
 linktitle: "Shape"
 type: docs
-url: /export-excel-shape-to-different-formats/
-aliases: [/export/excel-shape-to-different-formats/]
+url: /ja/export-excel-shape-to-different-formats/
+aliases: [  /ja/export/excel-shape-to-different-formats/ ]
 keywords: "図形のエクスポート, Aspose.Cells Cloud, Excel 図形エクスポート, 画像形式, REST API, SDK"
 description: "Aspose.Cells Cloud REST API および SDK を使用して Excel 図形をさまざまな画像形式（PNG、GIF、JPEG、BMP、SVG、TIFF、EMF、WMF）にエクスポートする方法を学びます。"
 weight: 20

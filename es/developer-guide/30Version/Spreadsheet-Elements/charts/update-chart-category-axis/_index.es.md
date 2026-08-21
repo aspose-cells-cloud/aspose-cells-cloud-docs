@@ -1,7 +1,7 @@
 ---
 title: "Actualizar el eje de categorías de un gráfico"
 type: docs
-url: /charts/category-axis/update/
+url: /es/charts/category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, gráfico, eje de categorías, API REST, Excel, SDK en la nube"
 description: "Actualiza el eje de categorías de un gráfico en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud."

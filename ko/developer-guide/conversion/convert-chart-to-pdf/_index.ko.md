@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "로컬 스프레드시트 차트를 PDF 파일로 변환하는 방법: 단계별 가이드"
 linktitle: "차트를 PDF로 변환"
 type: docs
-url: /convert-chart-to-pdf/
+url: /ko/convert-chart-to-pdf/
 keywords: "Aspose Cells, 차트, PDF, Excel, 변환, 클라우드 API"
 description: "Aspose.Cells Cloud REST API를 사용하여 로컬 Excel 파일의 차트를 PDF 형식으로 내보냅니다. XLSX 및 XLS 파일을 지원합니다."
 weight: 100

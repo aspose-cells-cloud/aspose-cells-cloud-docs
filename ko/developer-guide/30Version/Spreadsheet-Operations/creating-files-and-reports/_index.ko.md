@@ -2,8 +2,8 @@
 title: "Excel 파일 생성 및 보고서 구축"
 second_title: "문서"
 type: docs
-url: /creating-files-and-reports/
-aliases: [/workbook/create/]
+url: /ko/creating-files-and-reports/
+aliases: [  /ko/workbook/create/ ]
 linktitle: "Excel 및 보고서 생성"
 keywords: "Aspose.Cells Cloud, Excel API, 워크북 생성, Excel 보고서, SmartMarker, 템플릿, 보고서 생성"
 description: "Aspose.Cells Cloud API를 사용하여 빈 Excel 워크북을 생성하고, 템플릿 파일에서 파일을 생성하며, SmartMarker 기반 보고서를 구축하는 방법을 코드 예제를 통해 배워보세요."

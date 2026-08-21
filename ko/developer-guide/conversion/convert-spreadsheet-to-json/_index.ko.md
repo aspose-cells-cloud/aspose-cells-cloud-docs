@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "로컬 스프레드시트를 Aspose.Cells Cloud API를 사용하여 JSON으로 변환하는 방법"
 linktitle: "스프레드시트를 JSON으로 변환"
 type: docs
-url: /convert-spreadsheet-to-json/
+url: /ko/convert-spreadsheet-to-json/
 keywords: "Aspose Cells Cloud, 스프레드시트를 JSON으로 변환, Excel을 JSON API로 변환, Aspose.Cells Cloud API, REST API, 스프레드시트 변환"
 description: "Aspose.Cells Cloud API를 사용하여 로컬 Excel 파일을 JSON으로 변환하는 방법을 알아보세요. 엔드포인트, 매개변수, 샘플 코드, 오류 처리를 포함하여 원활한 통합을 지원합니다."
 weight: 100

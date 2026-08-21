@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So verschieben Sie Arbeitsblätter in Excel – Blattreihenfolge und Position neu anordnen"
 linktitle: "Arbeitsblatt in Tabellenkalkulation verschieben"
 type: docs
-url: /move-worksheet-in-spreadsheet/
+url: /de/move-worksheet-in-spreadsheet/
 keywords: "Arbeitsblatt verschieben API, Blätter neu anordnen API, Blattreihenfolge ändern API, Excel-Tab-Verwaltungs-API, Aspose Cells REST API, Blattpositionierung automatisieren, Arbeitsmappen-Organisations-API, Tabellenkalkulationsstruktur-API, Cloud-basierte Excel-Automatisierung, Stapelverarbeitung zum Neuordnen von Blättern"
 description: "Erfahren Sie, wie Sie Arbeitsblätter innerhalb von Excel-Arbeitsmappen verschieben können, um die Blattreihenfolge neu zu ordnen und die Struktur der Arbeitsmappe zu optimieren. Ändern Sie die Positionen der Arbeitsblätter, ordnen Sie Tabs neu für einen besseren Arbeitsablauf und automatisieren Sie die Blattorganisation für professionelles Tabellenkalkulations-Management."
 weight: 100

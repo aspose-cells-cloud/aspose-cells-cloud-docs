@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "Excel 在线转换 Web API"
 linktype: "转换"
 type: docs
-url: /conversion/
+url: /zh/conversion/
 keywords: "Aspose.Cells, Cloud API, 电子表格转换, Excel 转 PDF, Excel 转 CSV, Excel 转 JSON, REST API, SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API 将 Excel 范围、图表、表格、工作表或整个电子表格转换为 PDF、图片、HTML、CSV、JSON、Markdown 和 XML。快速、安全、无需安装，并提供适用于 .NET、Java、Python 等语言的 SDK。"
 weight: 20

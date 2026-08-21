@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Excel データクリーナー - テキストを数値に変換し、不要な文字を削除"
 linktype: "テキストの変換"
 type: docs
-url: /convert-text/
+url: /ja/convert-text/
 keywords: "Aspose.Cells テキスト変換、Excel のテキストを数値に変換、Excel の特殊文字削除、Excel の改行置換、アクセント文字の正規化、Excel データクリーニング API"
 description: "Aspose.Cells Cloud API を使用して、Excel ファイル内のテキスト形式の数値を数値に変換し、不要な文字や改行を置換し、アクセント付き文字を標準的な文字に正規化します。"
 weight: 100

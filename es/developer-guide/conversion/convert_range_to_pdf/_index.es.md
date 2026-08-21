@@ -4,7 +4,7 @@ ArticleTitle: "Convertir rango a PDF – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "ConvertRangeToPdf"
 type: docs
-url: /cells/convert/range/pdf
+url: /es/cells/convert/range/pdf
 aliases: []
 keywords: "Aspose.Cells, convertir rango a PDF, API"
 description: "Convierte un rango especificado de una hoja de cálculo a PDF mediante Aspose.Cells Cloud."

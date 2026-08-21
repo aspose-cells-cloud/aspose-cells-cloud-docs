@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Remplacement en masse de texte dans des fichiers Excel locaux – API Rechercher & Remplacer"
 linktitle: "Remplacer le contenu d'une feuille de calcul"
 type: docs
-url: /replace-spreadsheet-content/
+url: /fr/replace-spreadsheet-content/
 keywords: "remplacer du texte dans Excel, Aspose.Cells Rechercher et Remplacer, API de feuille de calcul locale, remplacement de fichier Excel, API de remplacement de contenu"
 description: "Remplacer du texte dans des classeurs Excel locaux sans les téléverser vers le cloud. Utilisez l’API Rechercher & Remplacer d’Aspose.Cells Cloud pour mettre à jour des plages spécifiques, des feuilles de calcul ou des fichiers entiers en une seule appel."
 weight: 100

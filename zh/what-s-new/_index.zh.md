@@ -4,8 +4,8 @@ second_title: "文档"
 linktitle: "新功能"
 type: docs
 weight: 9
-url: /new-features/
-aliases: [/what-s-new-in-aspose-cells-cloud/]
+url: /zh/new-features/
+aliases: [  /zh/what-s-new-in-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, 新功能, Microsoft Office Excel, OpenOffice 计算表格, CSV, PDF, REST API, SDK, 计算表格, 云"
 description: "探索 Aspose.Cells Cloud 中最新的功能、改进和错误修复，包括对 Excel、OpenOffice、CSV 和 PDF 处理的更新。"
 ArticleTitle: "Aspose.Cells Cloud 新功能 – 最新功能与更新"

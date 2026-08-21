@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Excel에서 워크시트 이름 바꾸는 방법 – 시트 이름 변경"
 linktitle: "스프레드시트에서 워크시트 이름 바꾸기"
 type: docs
-url: /rename-worksheet-in-spreadsheet/
+url: /ko/rename-worksheet-in-spreadsheet/
 keywords: "워크시트 이름 변경, Aspose.Cells Cloud, Excel API, 스프레드시트, SDK, REST API"
 description: "Aspose.Cells Cloud API를 사용해 Excel 워크시트 이름을 손쉽게 변경하세요. 필요한 매개변수를 확인하고, cURL 예제를 살펴보며 C#, Java, Python 등 다양한 언어의 SDK 코드를 얻으세요."
 weight: 100

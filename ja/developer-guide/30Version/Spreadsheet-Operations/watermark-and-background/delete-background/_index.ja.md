@@ -3,7 +3,7 @@ title: "Excel ワークブックの背景を削除する"
 second_title: "ドキュメント"
 linktitle: "削除"
 type: docs
-url: /delete-background-in-excel-file/
+url: /ja/delete-background-in-excel-file/
 aliases:
   - /delete-background-in-workbook/
   - /workbook/delete-background/

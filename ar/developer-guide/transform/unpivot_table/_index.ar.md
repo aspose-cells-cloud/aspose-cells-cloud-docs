@@ -4,7 +4,7 @@ ArticleTitle: "إلغاء تدوير الجدول – واجهة برمجة تط
 second_title: "مستند"
 linktype: "إلغاء تدوير الجدول"
 type: docs
-url: /cells/unpivot/table
+url: /ar/cells/unpivot/table
 aliases: []
 keywords: "Aspose.Cells، إلغاء تدوير، تحويل"
 description: "تبديل الصفوف والأعمدة في المصنف."

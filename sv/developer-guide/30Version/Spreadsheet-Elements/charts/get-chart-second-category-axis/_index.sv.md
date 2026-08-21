@@ -1,7 +1,7 @@
 ---
 title: "Hämta diagrammets andra kategoriaxel"
 type: docs
-url: /charts/second-category-axis/get/
+url: /sv/charts/second-category-axis/get/
 weight: 60
 keywords: "Hämta diagrammets andra kategoriaxel, Aspose.Cells Cloud API, Excel-diagramaxel, REST API, andra kategoriaxel, Aspose.Cells"
 description: "Hämta den andra kategoriaxeln för ett diagram i ett Excel-ark med Aspose.Cells Cloud REST API. Inkluderar begäranformat, parametrar, exempel på cURL, svarschema, statuskoder och användningsnoteringar."

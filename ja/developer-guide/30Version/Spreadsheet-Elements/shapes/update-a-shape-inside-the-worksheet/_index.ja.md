@@ -3,8 +3,8 @@ title: "Excelワークシート上の図形を更新する"
 second_title: "ドキュメント"
 linktitle: "更新"
 type: docs
-url: /shapes/update/
-aliases: [/update-a-shape-inside-the-worksheet/]
+url: /ja/shapes/update/
+aliases: [  /ja/update-a-shape-inside-the-worksheet/ ]
 keywords: "Excel API での図形の更新、Aspose.Cells Cloud、Excel 図形の更新、REST API、SDK、C#、Java、Python、Node.js、Go、Ruby、PHP、Perl、Swift"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシート内の図形を更新する方法を学びます。HTTPS エンドポイント、認証詳細、DTO スキーマ、使用手順、cURL の例、および複数言語向けの SDK コードサンプルを含みます。"
 ArticleTitle: "Excelワークシート上の図形を更新する - Aspose.Cells Cloud API"

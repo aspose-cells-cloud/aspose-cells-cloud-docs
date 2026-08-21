@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "OleObjects"
 type: docs
 url: /zh/oleobjects/
-aliases: [/zh/working-with-oleobjects/]
+aliases: [  /zh/working-with-oleobjects/ ]
 keywords: "OLE, Excel, Aspose.Cells, API, 云"
 description: "使用 Aspose.Cells Cloud REST API 在 Excel 工作表中检索、添加、更新、删除和转换 OLE 对象。提供适用于 Java、.NET、Python、PHP、Ruby、Go、Node.js、Perl、Swift 和 Android 的 SDK。"
 weight: 100

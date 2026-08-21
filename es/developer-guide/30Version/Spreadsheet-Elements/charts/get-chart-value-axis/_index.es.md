@@ -1,7 +1,7 @@
 ---
 title: "Obtener el eje de valores de un gráfico"
 type: docs
-url: /charts/value-axis/get/
+url: /es/charts/value-axis/get/
 weight: 60
 keywords: Aspose.Cells, Eje de valores de gráfico, API REST, Excel, SDK en la nube, Obtener el eje de valores de un gráfico
 description: "API REST de Aspose.Cells Cloud: Recuperar el eje de valores de un gráfico en una hoja de cálculo de Excel."

@@ -4,7 +4,7 @@ second_title: "文档"
 articleTitle: "如何重命名 Excel 工作表 – 修改工作表名称"
 linktitle: "重命名电子表格中的工作表"
 type: docs
-url: /rename-worksheet-in-spreadsheet/
+url: /zh/rename-worksheet-in-spreadsheet/
 keywords: "重命名工作表, Aspose.Cells Cloud, Excel API, 电子表格, SDK, REST API"
 description: "通过 Aspose.Cells Cloud API 轻松重命名 Excel 工作表。了解所需参数、查看 cURL 示例，并获取 C#、Java、Python 等语言的 SDK 代码。"
 weight: 100

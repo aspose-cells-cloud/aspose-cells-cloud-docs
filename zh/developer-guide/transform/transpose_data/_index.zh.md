@@ -4,8 +4,8 @@ ArticleTitle: "TransposeData – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "TransposeData"
 type: docs
-url: /cells/transpose
-aliases: ["/cells/transpose"]
+url: /zh/cells/transpose
+aliases: [  /zh/cells/transpose ]
 keywords: "TransposeData, Aspose.Cells, 云 API, 电子表格, 转置"
 description: "在电子表格中交换行和列。"
 weight: 1000

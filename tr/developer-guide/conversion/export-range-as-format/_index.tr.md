@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Uzak Bir Elektronik Tablo Aralığını Diğer Formatlara Dışa Aktarma: Adım Adım Kılavuz"
 linktitle: "Aralığı Format Olarak Dışa Aktar"
 type: docs
-url: /export-range-as-format/
+url: /tr/export-range-as-format/
 keywords: "Aspose Cells, Excel Aralığını Dışa Aktar, PDF, PNG, CSV, Bulut API, Elektronik Tablo Dönüştürme"
 description: "Aspose Cells Cloud'da saklanan belirli bir Excel aralığını PDF, PNG, CSV veya diğer formatlara nasıl dönüştüreceğinizi öğrenin. Uç nokta ayrıntıları, parametreler, örnek istekler, yanıt işleme ve hata bilgilerini içerir."
 weight: 100

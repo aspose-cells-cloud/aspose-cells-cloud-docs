@@ -3,7 +3,7 @@ title: "Сохранение рабочей книги Excel – Aspose.Cells Cl
 second_title: "Документ"
 linktitle: "Сохранить как"
 type: docs
-url: /save-an-excel-file-as-other-formats-files/
+url: /ru/save-an-excel-file-as-other-formats-files/
 aliases:
   - /convert-excel-workbook-to-different-file-formats/
   - /saveas-other-formats/

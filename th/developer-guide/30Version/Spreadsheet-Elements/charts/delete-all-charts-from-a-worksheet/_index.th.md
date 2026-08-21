@@ -1,8 +1,8 @@
 ---
 title: "ลบแผนภูมิทั้งหมดออกจากเวิร์กชีต"
 type: docs
-url: /charts/clear/
-aliases: [/delete-all-charts-from-a-worksheet/]
+url: /th/charts/clear/
+aliases: [  /th/delete-all-charts-from-a-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells, Cloud, delete, all charts, worksheet, REST API, DELETE, SDK"
 description: "เรียนรู้วิธีการลบแผนภูมิทั้งหมดในเวิร์กชีตโดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 3.0) ซึ่งประกอบด้วย endpoint, พารามิเตอร์, ตัวอย่าง cURL, โค้ดตัวอย่าง SDK, ขั้นตอนการตรวจสอบสิทธิ์ และการจัดการข้อผิดพลาด"

@@ -4,7 +4,7 @@ ArticleTitle: "Gefilterte Zellen in einer Remote-Arbeitsmappe abrufen – Aspose
 second_title: "Dokument"
 linktype: "Get Merged Cells In Remote Worksheet"
 type: docs
-url: /cells/mergedcells/get
+url: /de/cells/mergedcells/get
 aliases: []
 keywords: "Aspose Cells, Gefilterte Zellen abrufen, Remote-Arbeitsmappe, API"
 description: "Ruft alle zusammengeführten Zellbereiche aus einer Remote-Arbeitsmappe ab."

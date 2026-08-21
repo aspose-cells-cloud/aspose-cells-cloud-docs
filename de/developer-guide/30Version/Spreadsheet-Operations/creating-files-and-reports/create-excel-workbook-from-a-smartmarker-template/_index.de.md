@@ -3,7 +3,7 @@ title: "Excel-Berichte mit Smart-Marker-Vorlagen erstellen"
 second_title: "Dokument"
 linktype: "SmartMarker"
 type: docs
-url: /build-report-with-smart-marker/
+url: /de/build-report-with-smart-marker/
 aliases:
   - /create-excel-workbook-from-a-smartmarker-template/
   - /workbook/smartmarker/

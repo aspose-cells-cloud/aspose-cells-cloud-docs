@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيفية تحويل جدول بيانات محلي إلى JSON باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud"
 linktype: "تحويل جدول البيانات إلى JSON"
 type: docs
-url: /convert-spreadsheet-to-json/
+url: /ar/convert-spreadsheet-to-json/
 keywords: "Aspose Cells Cloud، تحويل جدول البيانات إلى JSON، API تحويل Excel إلى JSON، واجهة برمجة تطبيقات Aspose.Cells Cloud، REST API، تحويل جداول البيانات"
 description: "تعرّف على كيفية تحويل ملفات Excel المحلية إلى تنسيق JSON باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. يتضمن الـ Endpoint، والمعاملات، وعينات من الكود، وإدارة الأخطاء لدمج سلس."
 weight: 100

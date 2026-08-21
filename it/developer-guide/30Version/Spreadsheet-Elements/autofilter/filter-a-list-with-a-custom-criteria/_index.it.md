@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Aggiungi filtro personalizzato"
 type: docs
 url: /it/autofilter/add-custom-filter/
-aliases: [/it/filter-a-list-with-a-custom-criteria/,/it/autofilter/add-a-custom-filter/]
+aliases: [  /it/filter-a-list-with-a-custom-criteria/ , /it/autofilter/add-a-custom-filter/ ]
 keywords: "Excel, filtro personalizzato, Aspose.Cells Cloud, API REST, autofiltro, foglio di calcolo, criteri personalizzati"
 description: "Scopri come utilizzare l'API REST di Aspose.Cells Cloud per aggiungere un filtro personalizzato a un foglio di calcolo Excel. Include i dettagli della richiesta, un esempio cURL e frammenti di codice SDK per diversi linguaggi di programmazione."
 weight: 65

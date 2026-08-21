@@ -3,8 +3,8 @@ title: "Abrufen einer Pivot-Tabelle in einem Excel-Arbeitsblatt"
 second_title: "Dokument"
 linktitle: Abrufen
 type: docs
-url: /pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
+url: /de/pivot-tables/get/
+aliases: [  /de/get-worksheet-pivot-table-information-by-index/ ]
 keywords: "Aspose.Cells, Pivot-Tabelle, Excel, REST-API, Arbeitsblatt-Pivot-Tabelle abrufen"
 description: "Abrufen einer Pivot-Tabelle aus einem Excel-Arbeitsblatt über die Aspose.Cells Cloud REST-API. Enthält Anforderungssyntax, Parameter, Authentifizierung, Antwortschema, Fehlerbehandlung und SDK-Beispiele."
 weight: 10

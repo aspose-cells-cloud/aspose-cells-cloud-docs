@@ -3,8 +3,8 @@ title: "엑셀 파일의 데이터 압축"
 ArticleTitle: "엑셀 파일의 데이터 압축 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: /compress-excel-files/
-aliases: [/compress/]
+url: /ko/compress-excel-files/
+aliases: [  /ko/compress/ ]
 keywords: "엑셀 파일 압축, aspose cells 클라우드, 엑셀 압축, 스프레드시트 압축, rest api, 파일 압축"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 파일(XLS, XLSX, XLSM, XLSB, ODS)을 압축합니다. 압축 수준을 설정하고, 여러 파일을 처리하며, SDK를 통해 통합할 수 있습니다."
 weight: 39

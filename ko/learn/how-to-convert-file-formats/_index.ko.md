@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud을(를) 사용하여 스프레드시트 파일 형식 변환하는 방법"
 linktitle: "스프레드시트 파일 형식 변환하는 방법"
 type: docs
-url: /how-to-convert-file-formats-ko
+url: /ko/how-to-convert-file-formats-ko
 description: "Aspose.Cells Cloud을(를) 사용하여 파일 형식을 변환하는 방법."
 weight: 10
 kwords: Excel, Office Cloud, REST API, 스프레드시트, PDF, CSV, Json, Markdown, Aspose.Cells Cloud을(를) 통한 파일 형식 변환 방법

@@ -3,8 +3,8 @@ title: "Dölja ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Dölj"
 type: docs
-url: /worksheets/hide/
-aliases: [/hide-excel-worksheets/]
+url: /sv/worksheets/hide/
+aliases: [  /sv/hide-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Excel, dölj ark, REST API, kalkylark"
 description: "Steg-för-steg-guide för att dölja ett ark i en Excel-arbetsbok med Aspose.Cells Cloud REST API, inklusive begärandeinformation, ett cURL-exempel och SDK-kodfragment för flera språk."
 weight: 50

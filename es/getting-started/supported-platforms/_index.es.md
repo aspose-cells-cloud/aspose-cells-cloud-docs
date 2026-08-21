@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Plataformas compatibles con Aspose.Cells Cloud: Windows, Linux y macOS"
 LinkTitle: "Plataformas compatibles"
 type: docs
-url: /supported-platforms/
+url: /es/supported-platforms/
 description: "Conozca los sistemas operativos, SDK e imágenes de Docker compatibles con la API REST de Aspose.Cells Cloud en Windows, Linux y macOS."
 weight: 50
 keywords: "Aspose.Cells Cloud, API REST, Excel, hoja de cálculo, SDK, Docker, Windows, Linux, macOS"

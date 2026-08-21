@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Konfiguration des Aspose.Cells Cloud Docker-Container-Speichers"
 linktitle: "Container-Speicher"
 type: docs
-url: /docker/storage/de/
+url: /de/docker/storage/de/
 description: "Konfigurieren Sie den Speicherort für Aspose.Cells Cloud Docker-Container mithilfe von JSON, PowerShell oder Bash."
 weight: 30
 keywords: "Aspose.Cells, Docker, Container-Speicher, JSON-Konfiguration, PowerShell, Bash"

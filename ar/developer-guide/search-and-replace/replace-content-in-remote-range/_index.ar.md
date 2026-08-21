@@ -4,7 +4,7 @@ second title: "مستند"
 ArticleTitle: "استبدال النص في النطاقات دفعة واحدة في ملفات إكسل السحابية – واجهة برمجة تطبيقات البحث والاستبدال"
 linktitle: "استبدال محتوى النطاق عن بُعد"
 type: docs
-url: /replace-content-in-remote-range/
+url: /ar/replace-content-in-remote-range/
 keywords: "استبدال نص في نطاق إكسل عن بُعد، واجهة برمجة تطبيقات Aspose.Cells Cloud، البحث والاستبدال في إكسل، تعديل جدول بيانات سحابي، تحديث ملف إكسل عن بُعد"
 description: "استخدم Aspose.Cells Cloud للبحث عن النص واستبداله في نطاق مُحدّد من ملف إكسل مخزّن عن بُعد. يدعم المصادقة، ومعالجة الأخطاء، ومكتبات SDK متعددة اللغات."
 weight: 100

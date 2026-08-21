@@ -4,7 +4,7 @@ second_title: "Document"
 articleTitle: "Rechercher du texte dans des classeurs Excel distants – Trouver des données dans des plages spécifiques"
 linkTitle: "Rechercher le contenu dans une plage distante"
 type: docs
-url: /search-content-in-remote-range/
+url: /fr/search-content-in-remote-range/
 keywords: "Aspose.Cells, API Excel, recherche de texte, plage distante, classeur cloud, API REST, découverte de données"
 description: "Recherchez du texte, des nombres ou des formules dans une plage spécifique d’un classeur Excel stocké dans Aspose Cloud."
 weight: 100

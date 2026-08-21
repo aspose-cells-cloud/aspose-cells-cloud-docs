@@ -3,7 +3,7 @@ title: "如何向 Excel 工作表添加行"
 second_title: "文档"
 linktitle: "添加"
 type: docs
-url: /rows/add/
+url: /zh/rows/add/
 keywords: "Aspose.Cells, 添加行, Excel API, REST, C#, Java, Python, Node.js"
 description: "分步指南，介绍如何使用 Aspose.Cells Cloud REST API 向 Excel 工作表添加单行或多行，并提供 C#、Java、Python 和 Node.js 的代码示例。"
 weight: 20

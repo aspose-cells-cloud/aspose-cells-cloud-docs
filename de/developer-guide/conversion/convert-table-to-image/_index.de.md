@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie Tabellendaten lokaler Tabellendateien in eine Bilddatei: Schritt-für-Schritt-Anleitung"
 linktitle: "Tabelle in Bild konvertieren"
 type: docs
-url: /convert-table-to-image/
+url: /de/convert-table-to-image/
 keywords: "Aspose.Cells, Cloud API, Tabelle in Bild konvertieren, Excel, PNG, JPEG, TIFF, BMP, SVG"
 description: "Konvertieren Sie lokal gespeicherte Excel-Tabellendaten mithilfe der Aspose.Cells Cloud API schnell in eine Bilddatei. Unterstützt PNG, JPEG, TIFF, BMP, SVG und weitere Formate."
 weight: 100

@@ -3,7 +3,7 @@ title: "使用本地电子表格获取工作表"
 ArticleTitle: "使用本地电子表格获取工作表 – Aspose.Cells Cloud"
 second_title: "文档"
 linktype: "docs"
-url: /cells/spreadsheet/worksheets
+url: /zh/cells/spreadsheet/worksheets
 aliases: []
 keywords: "Aspose.Cells, 工作表, 本地电子表格, API"
 description: "获取当前活动本地电子表格中所有工作表的完整列表。"

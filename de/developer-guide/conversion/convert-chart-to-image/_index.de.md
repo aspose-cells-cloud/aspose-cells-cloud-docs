@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie Diagramme aus Tabellenkalkulationen in Bilder: Schritt-für-Schritt-Anleitung"
 linktitle: "Diagramm in Bild konvertieren"
 type: docs
-url: /convert-chart-to-image/
+url: /de/convert-chart-to-image/
 keywords: "Diagramm in Bild konvertieren, Aspose.Cells, Excel-Diagramm exportieren, PNG, SVG, JPEG, BMP, TIFF"
 description: "Verwenden Sie die Aspose.Cells Cloud Web API, um ein Excel-Diagramm direkt aus einer Tabellenkalkulationsdatei in PNG-, SVG-, TIFF-, JPEG- oder BMP-Bilder zu konvertieren."
 weight: 100

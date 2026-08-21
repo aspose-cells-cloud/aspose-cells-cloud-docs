@@ -3,7 +3,7 @@ title: "2‑dimensionales Double‑Array in Excel‑Arbeitsblatt importieren"
 second_title: "Dokument"
 linktitle: "2‑dimensionales Double‑Array importieren"
 type: docs
-url: /import-a-2d-double-array-into-excel-worksheet/
+url: /de/import-a-2d-double-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-double-array-into-excel-worksheet/,

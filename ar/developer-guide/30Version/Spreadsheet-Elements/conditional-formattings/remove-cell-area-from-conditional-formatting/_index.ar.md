@@ -1,8 +1,8 @@
 ---
 title: "حذف منطقة خلايا – وثائق واجهة برمجة تطبيقات Aspose.Cells Cloud"
 type: docs
-url: /conditional-formattings/delete-cell-area/
-aliases: [/remove-cell-area-from-conditional-formatting/]
+url: /ar/conditional-formattings/delete-cell-area/
+aliases: [  /ar/remove-cell-area-from-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, حذف منطقة خلايا, واجهة برمجة تطبيقات التنسيق الشرطي, واجهة برمجة تطبيقات Excel عبر REST"
 description: "استخدم واجهة برمجة تطبيقات Aspose.Cells Cloud REST لحذف منطقة خلايا محددة من التنسيق الشرطي في ورقة عمل Excel. يتضمن أمثلة لـ ASP.NET وJava وPython."
 ArticleTitle: "حذف منطقة خلايا – وثائق واجهة برمجة تطبيقات Aspose.Cells Cloud"

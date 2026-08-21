@@ -3,8 +3,8 @@ title: "العمل مع مخططات إكسل"
 second_title: "الوثيقة"
 linktype: "المخططات"
 type: docs
-url: /charts/
-aliases: [/working-with-charts/]
+url: /ar/charts/
+aliases: [  /ar/working-with-charts/ ]
 keywords: "Aspose, Cells, Excel, مخطط, API, REST, سحابة, جدول بيانات"
 description: "تعرّف على كيفية إدارة مخططات إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells السحابية. دلائل خطوة بخطوة وأمثلة على الأكواد ومعالجة الأخطاء لاسترجاع المخططات وإضافتها وتحديثها وحذفها وتحويلها إلى صور."
 weight: 100

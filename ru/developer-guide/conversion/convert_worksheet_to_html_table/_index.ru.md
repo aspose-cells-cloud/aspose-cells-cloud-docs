@@ -4,7 +4,7 @@ ArticleTitle: "Преобразование рабочего листа в HTML-
 second_title: "Документ"
 linktitle: "ConvertWorksheetToHtmlTable"
 type: docs
-url: /cells/convert/worksheet/html-table
+url: /ru/cells/convert/worksheet/html-table
 aliases: []
 keywords: "Aspose.Cells, ConvertWorksheetToHtmlTable, HTML-таблица, API"
 description: "Преобразует рабочий лист электронной таблицы, расположенной на локальном диске, в файл HTML-таблицы с помощью Aspose.Cells Cloud."

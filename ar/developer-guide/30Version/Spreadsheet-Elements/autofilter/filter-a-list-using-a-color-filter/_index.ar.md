@@ -3,8 +3,8 @@ title: "إضافة مرشح لون في ورقة عمل Excel"
 second_title: "Document"
 linktitle: "إضافة مرشح لون"
 type: docs
-url: /autofilter/add-color-filter/
-aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
+url: /ar/autofilter/add-color-filter/
+aliases: [  /ar/filter-a-list-using-a-color-filter/ , /ar/autofilter/add-a-color-filter/ ]
 keywords: "Excel, مرشح لون, Aspose.Cells Cloud, REST API, مرشح تلقائي, مصادقة JWT"
 description: "تعلم كيفية تطبيق مرشح لون على ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud API. يتضمن الرابط_endpoint_، المعاملات، مثال cURL، معالجة الأخطاء، وأمثلة SDKs."
 weight: 65

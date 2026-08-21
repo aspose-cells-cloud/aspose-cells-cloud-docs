@@ -4,7 +4,7 @@ ArticleTitle: "Ottenere le celle unite in un foglio di lavoro remoto – Aspose.
 second_title: "Documento"
 linktitle: "Ottenere le celle unite in un foglio di lavoro remoto"
 type: docs
-url: /cells/mergedcells/get
+url: /it/cells/mergedcells/get
 aliases: []
 keywords: "Aspose Cells, ottenere celle unite, foglio di lavoro remoto, API"
 description: "Recupera tutte le aree di celle unite da un foglio di lavoro remoto in un foglio di calcolo."

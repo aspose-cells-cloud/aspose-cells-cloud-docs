@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – 単語のケース変換（大文字、小文字�
 ArticleTitle: "Excel ケースコンバーター – 大文字、小文字、固有名詞ケース、文頭大文字"
 linktype: "Word Case"
 type: docs
-url: /change-word-case/
+url: /ja/change-word-case/
 keywords: "単語ケース変換 API、Aspose.Cells、Excel ケース変換、大文字、小文字、固有名詞ケース、文頭大文字、テキスト書式設定"
 description: "Aspose.Cells Cloud API を使用して Excel ファイル内のテキストケースを簡単に変換します。大文字、小文字、固有名詞ケース、文頭大文字をサポート。C#、Java、Python などのコードサンプルを入手できます。"
 weight: 100

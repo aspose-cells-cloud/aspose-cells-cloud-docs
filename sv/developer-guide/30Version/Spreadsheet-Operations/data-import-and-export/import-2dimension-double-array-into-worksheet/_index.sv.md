@@ -3,7 +3,7 @@ title: "Importera 2‑dimensionellt dubbelarray till Excel-arbetsblad"
 second_title: "Dokument"
 linktitle: "Importera 2‑dimensionellt dubbelarray"
 type: docs
-url: /import-a-2D-double-array-into-excel-worksheet/
+url: /sv/import-a-2D-double-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-double-array-into-excel-worksheet/,

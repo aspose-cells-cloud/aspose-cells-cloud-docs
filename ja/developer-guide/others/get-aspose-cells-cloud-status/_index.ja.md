@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud のステータスを取得する"
 linktype: "Aspose.Cells Cloud のステータスを取得する"
 type: docs
-url: /get-aspose-cells-cloud-status/
+url: /ja/get-aspose-cells-cloud-status/
 keywords: "Aspose.Cells, Cloud API, ヘルスチェック, Excel, REST"
 description: "Aspose.Cells Cloud サービスのヘルスステータスをリアルタイムで監視します。"
 weight: 100

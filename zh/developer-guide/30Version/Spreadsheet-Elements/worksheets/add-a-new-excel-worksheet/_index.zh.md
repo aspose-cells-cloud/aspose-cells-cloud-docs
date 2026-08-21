@@ -4,8 +4,8 @@ ArticleTitle: "添加 Excel 工作表 - Aspose.Cells Cloud API 指南"
 second_title: "文档"
 linktitle: "添加"
 type: docs
-url: /worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
+url: /zh/worksheets/add/
+aliases: [  /zh/add-a-new-excel-worksheet/ ]
 keywords: "添加 Excel 工作表, Aspose.Cells Cloud, REST API, PUT 工作表, Excel 工作簿, API 请求"
 description: "分步指南，介绍如何使用 Aspose.Cells Cloud REST API 向 Excel 工作簿添加新工作表，包括请求详情、cURL 示例以及多种编程语言的 SDK 代码片段。"
 weight: 20

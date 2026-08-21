@@ -1,7 +1,7 @@
 ---
 title: "엑셀 워크시트에서 최대 행 번호(MaxRow) 가져오기"
 type: docs
-url: /get-maxrow-from-excel-worksheet/
+url: /ko/get-maxrow-from-excel-worksheet/
 weight: 40
 ArticleTitle: "엑셀 워크시트에서 최대 행 번호 검색 – Aspose.Cells Cloud API"
 keywords: "Aspose.Cells, 엑셀, MaxRow, REST API, 클라우드 SDK, 스프레드시트, 워크시트, GetMaxRow"

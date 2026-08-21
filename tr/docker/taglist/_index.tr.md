@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud Docker Görüntü Etiketleri"
 linktype: "Etiketler"
 type: docs
-url: /docker/tag-list/
+url: /tr/docker/tag-list/
 description: "Windows Sunucusu (2016‑2022) ve Linux için en son Aspose.Cells Cloud Docker görüntü etiketlerini bulun. Çekme komutlarını, mimari ayrıntılarını ve yükseltme notlarını tek bir yerde alın."
 weight: 30
 keywords:

@@ -4,7 +4,7 @@ linktitle: "คุณสมบัติอื่นๆ"
 ArticleTitle: "คุณสมบัติอื่นๆ: การตรวจสอบสุขภาพของระบบ, การรับคีย์สาธารณะ"
 second_title: "เอกสาร"
 type: docs
-url: /other-features/
+url: /th/other-features/
 keywords: "Aspose.Cells, Cloud API, การตรวจสอบสุขภาพของระบบ, คีย์สาธารณะ, access token, Excel, REST"
 description: "สำรวจคุณสมบัติอื่นๆ ของ Aspose.Cells Cloud: endpoint สำหรับการตรวจสอบสุขภาพของระบบ, การรับคีย์สาธารณะ และการสร้าง access token เพื่อความปลอดภัยในการผสานรวม API Excel ของคุณ"
 weight: 180

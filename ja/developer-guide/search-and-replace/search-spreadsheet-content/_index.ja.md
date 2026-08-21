@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 article_title: "ローカルExcelスプレッドシート内でのテキスト検索 – 特定のデータを検索"
 linktitle: "スプレッドシートの内容を検索"
 type: docs
-url: /search-spreadsheet-content/
+url: /ja/search-spreadsheet-content/
 keywords: "Aspose.Cells, Excel検索API, スプレッドシート内容検索, クラウドスプレッドシートAPI, テキスト検索"
 description: "Aspose.Cells Cloud APIを使用して、ローカルExcelファイル内のテキスト、数値、数式を検索します。大文字・小文字を区別しないクエリ、ワークシート単位の検索範囲、安全な認証をサポートします。"
 weight: 100

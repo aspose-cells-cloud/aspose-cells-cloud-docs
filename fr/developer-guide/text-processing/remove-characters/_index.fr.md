@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Remove Characters Web API – Supprimer des caractèr
 second_title: "Document"
 ArticleTitle: "Nettoyeur de texte Excel – Supprimer des caractères et des sous‑chaînes dans une plage sélectionnée"
 linktype: "docs"
-url: /remove-characters/
+url: /fr/remove-characters/
 keywords: "Aspose.Cells, supprimer des caractères, API Excel, nettoyage de texte, feuille de calcul"
 description: "Supprimer des caractères personnalisés, des jeux de caractères et des sous‑chaînes des cellules Excel d’une plage sélectionnée. Supprimer du texte à des positions spécifiques à l’aide de l’API Aspose.Cells pour un nettoyage de données précis."
 weight: 100

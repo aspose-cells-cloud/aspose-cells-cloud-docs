@@ -3,7 +3,7 @@ title: "Excel 워크시트에 날짜 필터 추가"
 second_title: "문서"
 linktitle: "날짜 필터 추가"
 type: docs
-url: /autofilter/add-date-filter/
+url: /ko/autofilter/add-date-filter/
 aliases:
   - /add-date-filter-in-a-worksheet/
   - /autofilter/add-a-date-filter/

@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man konverterar lokalt kalkylarkstabelldata till PDF-fil: Steg-för-steg-guide"
 linktitle: "Konvertera tabell till PDF"
 type: docs
-url: /convert-table-to-pdf/
+url: /sv/convert-table-to-pdf/
 keywords: "Aspose.Cells, Excel till PDF, Tabellkonvertering, moln-API"
 description: "Konvertera en lokal Excel-tabell till en PDF-fil snabbt med Aspose.Cells Cloud REST API."
 weight: 100

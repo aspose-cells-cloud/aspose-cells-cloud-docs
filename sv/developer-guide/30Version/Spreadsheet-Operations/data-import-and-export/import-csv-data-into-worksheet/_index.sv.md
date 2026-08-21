@@ -3,7 +3,7 @@ title: "Importera CSV-data till Excel-arbetsblad"
 second_title: "Dokument"
 linktitle: "Importera CSV-data"
 type: docs
-url: /import-CSV-data-into-excel/
+url: /sv/import-CSV-data-into-excel/
 aliases:
   - /import-CSV-data-into-worksheet/
   - /import-data/csv-data/

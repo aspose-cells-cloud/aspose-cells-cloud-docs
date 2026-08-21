@@ -3,8 +3,8 @@ title: "Obtener elementos de texto de una hoja de cálculo de Excel"
 second_title: "Document"
 linktitle: "Obtener elementos de texto en la hoja de cálculo"
 type: docs
-url: /worksheets/get-text-items/
-aliases: [/get-text-items-from-a-worksheet/]
+url: /es/worksheets/get-text-items/
+aliases: [  /es/get-text-items-from-a-worksheet/ ]
 weight: 20
 keywords: "Aspose.Cells, API en la nube, Excel, hoja de cálculo, elementos de texto, REST"
 description: "Recuperar todos los elementos de texto de una hoja de cálculo específica en un archivo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye códigos de ejemplo para cURL y SDK, pasos de autenticación y esquema de respuesta."

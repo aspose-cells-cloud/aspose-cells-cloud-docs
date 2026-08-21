@@ -3,7 +3,7 @@ title: "Tabelle in Pivot-Tabelle umwandeln"
 second_title: "Dokument"
 linktitle: Umwandeln
 type: docs
-url: /pivot-tables/convert-table-to-pivottable/
+url: /de/pivot-tables/convert-table-to-pivottable/
 aliases:
   [
     /create-a-pivottable-with-table/,

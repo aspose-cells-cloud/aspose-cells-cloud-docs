@@ -3,7 +3,7 @@ title: "在 Excel 工作表中删除行"
 second_title: "文档"
 linktitle: "删除"
 type: docs
-url: /rows/delete/
+url: /zh/rows/delete/
 keywords: "Aspose.Cells, 删除行, Excel API, REST, 云端, 电子表格, Excel, SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API 在 Excel 工作表中删除单行或多行。包含适用于 Android、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby 和 Swift 的代码示例。"
 weight: 20

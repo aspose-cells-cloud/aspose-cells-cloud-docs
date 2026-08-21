@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Eliminador de caracteres basado en posición en Excel – Eliminar texto en ubicaciones específicas – Shortcode en línea"
 linktitle: "Eliminar caracteres por posición"
 type: docs
-url: /remove-characters-by-position/
+url: /es/remove-characters-by-position/
 keywords: "Aspose.Cells Cloud, eliminar caracteres por posición, limpieza de texto en Excel, eliminar primeros N caracteres, eliminar últimos N caracteres, eliminar texto antes de un marcador, eliminar texto después de un marcador, eliminación entre valores"
 description: "Utilice la API web de Aspose.Cells Cloud para eliminar caracteres de celdas de Excel según su posición: elimine los primeros/últimos N caracteres o el texto antes/después de marcadores específicos con alta precisión."
 weight: 100

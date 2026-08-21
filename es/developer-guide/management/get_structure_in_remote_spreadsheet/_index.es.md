@@ -4,7 +4,7 @@ ArticleTitle: "Get Structure In Remote Spreadsheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "GetStructureInRemoteSpreadsheet"
 type: docs
-url: /cells/{name}/structure
+url: /es/cells/{name}/structure
 aliases: []
 keywords: "Aspose.Cells, GetStructure, spreadsheet, structure"
 description: "Recuperar los metadatos estructurales de un libro de Excel remoto, incluyendo hojas de cálculo, tablas, tablas dinámicas, gráficos, formas y otra información fundamental."

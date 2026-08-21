@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Masquer"
 type: docs
 url: /fr/rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
+aliases: [  /fr/hide-rows-in-excel-worksheet/ ]
 keywords: "masquer des lignes, Aspose.Cells Cloud, API Excel, REST, SDK"
 description: "Découvrez comment masquer une ou plusieurs lignes dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut un exemple cURL, des extraits de code SDK, les paramètres, l’authentification, les détails de la réponse et la gestion des erreurs."
 weight: 40

@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как конвертировать локальную электронную таблицу в PDF с использованием Aspose.Cells Cloud API"
 linktitle: "Конвертация электронной таблицы в PDF"
 type: docs
-url: /convert-spreadsheet-to-pdf/
+url: /ru/convert-spreadsheet-to-pdf/
 keywords: "Aspose.Cells Cloud, конвертация электронной таблицы в PDF, преобразование Excel, облачный API, генерация PDF, REST API, v4.0"
 description: "Пошаговое руководство по конвертации локальной электронной таблицы в PDF с использованием Aspose.Cells Cloud API. Включает синтаксис запроса, параметры, подробную информацию об ответе, обработку ошибок и практические примеры использования."
 weight: 100

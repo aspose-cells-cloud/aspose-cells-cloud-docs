@@ -4,7 +4,7 @@ ArticleTitle: "إزالة الأحرف حسب الموقع – واجهة برم
 second_title: "مستند"
 linktype: "remove/characters-by-position"
 type: docs
-url: /cells/content/remove/characters-by-position
+url: /ar/cells/content/remove/characters-by-position
 aliases: []
 keywords: "Aspose.Cells، إزالة الأحرف، واجهة برمجة التطبيقات"
 description: "حذف الأحرف من الخلايا حسب الموقع في جدول بيانات."

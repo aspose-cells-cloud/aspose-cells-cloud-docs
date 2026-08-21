@@ -3,7 +3,7 @@ title: "Aspose.Cells Trim Content API: Eliminar espacios y saltos de línea de E
 second_title: "Documento"
 linktype: "Trim Content"
 type: docs
-url: /spreadsheet-trim-content/
+url: /es/spreadsheet-trim-content/
 keywords: "Aspose.Cells, API Trim Content, limpieza de datos en Excel, eliminar espacios en Excel, eliminación de saltos de línea, limpieza de datos en hojas de cálculo"
 description: "Utilice la API PostTrimContent de Aspose.Cells Cloud para limpiar automáticamente espacios adicionales, saltos de línea y caracteres no deseados de celdas de Excel. Aprenda sobre el punto de conexión, el formato de la solicitud, el código de ejemplo y el manejo de errores."
 weight: 100

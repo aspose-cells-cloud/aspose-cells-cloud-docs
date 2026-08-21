@@ -3,8 +3,8 @@ title: "범위 내 열 너비 변경"
 ArticleTitle: "범위 내 열 너비 변경 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "문서"
-url: /ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
+url: /ko/ranges/update/column-width/
+aliases: [  /ko/change-widths-of-columns-inside-the-range/ ]
 keywords: "Aspose.Cells, 열 너비, REST API, Excel, SDK, 범위, 클라우드"
 description: "Aspose.Cells Cloud REST API 또는 SDK(C#, Java, Python 등)를 사용하여 범위 내 열 너비를 변경하는 방법을 알아보세요. cURL, 요청/응답 세부 정보, 인증 단계 포함."
 weight: 74

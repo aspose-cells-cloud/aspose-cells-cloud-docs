@@ -1,8 +1,8 @@
 ---
 title: "워크시트에서 차트 제목 삭제하기"
 type: docs
-url: /charts/delete-chart-title/
-aliases: [/delete-chart-title-in-a-worksheet/]
+url: /ko/charts/delete-chart-title/
+aliases: [  /ko/delete-chart-title-in-a-worksheet/ ]
 weight: 150
 keywords: "Aspose.Cells, 클라우드 API, 차트 제목 삭제, Excel, REST, SDK"
 description: "Aspose.Cells Cloud REST API(v4.0)를 사용하여 Excel 워크시트에서 차트 제목을 제거하는 방법을 알아보세요. cURL 및 SDK 예제와 오류 처리 방법을 포함합니다."

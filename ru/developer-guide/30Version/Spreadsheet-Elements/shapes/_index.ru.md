@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Фигуры"
 type: docs
 url: /ru/shapes/
-aliases: ["/ru/working-with-shapes/", "/ru/working-with-images/"]
+aliases: [  /ru/working-with-shapes/ , /ru/working-with-images/ ]
 keywords: "фигуры в Excel, Aspose.Cells Cloud, API, рабочий лист, операции с фигурами"
 description: "Узнайте, как управлять фигурами в Excel с помощью API Aspose.Cells Cloud — извлекайте, добавляйте, удаляйте и преобразуйте фигуры с поддержкой SDK."
 weight: 100

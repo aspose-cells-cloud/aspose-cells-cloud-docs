@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как экспортировать удалённый рабочий лист электронной таблицы в другой формат: пошаговое руководство"
 linktitle: "Экспорт рабочего листа"
 type: docs
-url: /export-worksheet-as-format/
+url: /ru/export-worksheet-as-format/
 keywords: "Aspose Cells, экспорт рабочего листа, облачный API, PDF, PNG, CSV, конвертация Excel"
 description: "Преобразуйте рабочий лист, хранящийся в Aspose.Cells Cloud, в форматы PDF, PNG, SVG, CSV и другие с помощью одного GET-запроса. Включает примеры кода для C#, Java, Python и других языков."
 weight: 100

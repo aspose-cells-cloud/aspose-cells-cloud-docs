@@ -3,8 +3,8 @@ title: "Eliminar una imagen de una hoja de cálculo de Excel – Aspose.Cells Cl
 second_title: "Documento"
 linktitle: "Eliminar"
 type: docs
-url: /pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+url: /es/pictures/delete/
+aliases: [  /es/delete-a-specific-picture-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, API en la nube, eliminar imagen, hoja de cálculo de Excel, REST"
 description: "Elimine una imagen de una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. Aprenda sobre el punto final DELETE, los parámetros requeridos, la autenticación, los códigos de error y el código de ejemplo."
 weight: 50

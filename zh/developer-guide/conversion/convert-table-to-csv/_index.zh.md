@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何将工作表表格数据转换为 CSV 文件：分步指南"
 linktype: "convert-table-to-csv"
 type: docs
-url: /convert-table-to-csv/
+url: /zh/convert-table-to-csv/
 keywords: "Aspose.Cells Cloud、表格转 CSV、电子表格转换、Excel 转 CSV、API、REST、数据导出"
 description: "借助 Aspose.Cells Cloud API 快速将 Excel 电子表格中的表格转换为 CSV 文件。"
 weight: 100

@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Rechercher et corriger les liens brisés dans une plage Excel distante – Vérificateur de liens de classeur cloud"
 linktype: "Search Remote Range Broken Links"
 type: docs
-url: /search-broken-links-in-remote-range/
+url: /fr/search-broken-links-in-remote-range/
 keywords: "Aspose, Cells, liens brisés, API, plage Excel, validation, cloud, classeur, référence externe, vérificateur"
 description: "Utilisez l’API Aspose.Cells Cloud pour analyser une plage Excel spécifique à la recherche de liens externes brisés, de formules invalides ou de sources de données manquantes. Sécurisé, rapide et basé sur le cloud."
 weight: 100

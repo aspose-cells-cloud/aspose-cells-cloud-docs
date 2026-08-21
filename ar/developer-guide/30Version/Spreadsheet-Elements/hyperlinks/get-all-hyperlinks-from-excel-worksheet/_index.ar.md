@@ -1,7 +1,7 @@
 ---
 title: "الحصول على جميع الروابط التشعبية – واجهة Aspose.Cells Cloud REST API"
 type: docs
-url: /hyperlinks/get-all/
+url: /ar/hyperlinks/get-all/
 aliases:
   [/get-hyperlink-from-excel-worksheet/, /get-hyperlinks-from-excel-worksheet/]
 keywords: "Aspose.Cells، الحصول على جميع الروابط التشعبية، API للجداول المحسوبة، واجهة REST API، حزمة SDK للحوسبة السحابية، مثال باستخدام cURL، روابط تشعبية في الجداول المحسوبة"

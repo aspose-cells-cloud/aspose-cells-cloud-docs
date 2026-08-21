@@ -3,8 +3,8 @@ title: "Ottenere le interruzioni di pagina verticali"
 second_title: "Documento"
 linktitle: "Ottenere le interruzioni di pagina verticali"
 type: docs
-url: /page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
+url: /it/page-breaks/get-vertical-page-breaks/
+aliases: [  /it/get-vertical-page-breaks-inside-worksheet/ ]
 keywords: "Aspose.Cells, interruzioni di pagina verticali, API Excel, foglio di calcolo cloud, API REST"
 description: "Recupera le interruzioni di pagina verticali da un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include l'endpoint HTTPS, i parametri obbligatori, un esempio con cURL, i dettagli della risposta, la gestione degli errori e esempi di SDK."
 weight: 20

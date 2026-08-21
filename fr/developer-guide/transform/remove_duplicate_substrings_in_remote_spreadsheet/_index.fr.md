@@ -3,7 +3,7 @@ title: "Supprimer les sous-chaînes dupliquées dans une feuille de calcul dista
 ArticleTitle: "Supprimer les sous-chaînes dupliquées dans une feuille de calcul distante – API Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
+url: /fr/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
 aliases: []
 keywords: "Aspose.Cells, supprimer les sous-chaînes dupliquées, API"
 description: "API permettant de rechercher et supprimer les sous-chaînes répétées dans les cellules d’une plage spécifiée d’un classeur."

@@ -4,7 +4,7 @@ ArticleTitle: "Удаление дубликатов – Aspose.Cells Cloud API"
 second_title: "Документ"
 linktype: "Удаление дубликатов"
 type: docs
-url: /cells/remove/duplicates
+url: /ru/cells/remove/duplicates
 aliases: []
 keywords: "Aspose.Cells, Удаление дубликатов, API"
 description: "Удаляет повторяющиеся значения в листе, диапазоне или таблице."

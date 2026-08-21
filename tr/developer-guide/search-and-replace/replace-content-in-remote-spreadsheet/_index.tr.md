@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Bulut Excel Dosyalarında Toplu Metin Değiştirme – Bul ve Değiştir API’si"
 linktitle: "Uzak Elektronik Tablo İçeriğini Değiştir"
 type: docs
-url: /replace-content-in-remote-spreadsheet/
+url: /tr/replace-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, içerik değiştirme, uzak elektronik tablo, bul ve değiştir API’si, bulut Excel, toplu metin değiştirme"
 description: "Aspose.Cells Cloud Bul ve Değiştir API’si ile uzaktaki Excel çalışma kitaplarındaki metinleri toplu olarak güncelleştirin. Güvenli HTTPS uç noktası, OAuth2 kimlik doğrulama ve hızlı entegrasyon için hazır SDK örnekleri."
 weight: 100

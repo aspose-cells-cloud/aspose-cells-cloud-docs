@@ -1,7 +1,7 @@
 ---
 title: "チャートのカテゴリ軸を更新する"
 type: docs
-url: "/charts/category-axis/update/"
+url: /ja/charts/category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, チャート, カテゴリ軸, REST API, Excel, クラウドSDK"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシート内のチャートのカテゴリ軸を更新します。"

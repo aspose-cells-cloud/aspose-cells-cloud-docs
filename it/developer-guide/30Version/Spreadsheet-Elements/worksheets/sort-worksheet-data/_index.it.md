@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Sort"
 type: docs
 url: /it/worksheets/sort-data/
-aliases: [/it/sort-worksheet-data/]
+aliases: [  /it/sort-worksheet-data/ ]
 keywords: "Aspose.Cells Cloud, API di ordinamento Excel, ordinamento intervallo foglio di lavoro, REST API, dataSorter"
 description: "Ordina un intervallo specifico in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud. Include endpoint, parametri richiesti, passaggi di autenticazione, gestione degli errori ed esempi di SDK."
 weight: 20

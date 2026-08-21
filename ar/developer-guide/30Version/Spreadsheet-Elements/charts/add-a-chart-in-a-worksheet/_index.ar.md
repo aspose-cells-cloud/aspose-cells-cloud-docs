@@ -1,8 +1,8 @@
 ---
 title: "إضافة مخطط إلى ورقة عمل"
 type: docs
-url: /charts/add/
-aliases: [/add-a-chart-in-a-worksheet/]
+url: /ar/charts/add/
+aliases: [  /ar/add-a-chart-in-a-worksheet/ ]
 weight: 20
 description: "تعرّف على كيفية إضافة مخطط إلى ورقة عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud الإصدار 3.0. تتضمن الواجهة، المَعلمات، مثالًا باستخدام cURL، ومقتطفات من كود SDKs."
 keywords:

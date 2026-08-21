@@ -1,8 +1,8 @@
 ---
 title: "مسح التنسيق الشرطي"
 type: docs
-url: /conditional-formattings/clear/
-aliases: [/clear-all-condition-formattings/]
+url: /ar/conditional-formattings/clear/
+aliases: [  /ar/clear-all-condition-formattings/ ]
 keywords: "Aspose.Cells Cloud, REST API, مسح التنسيق الشرطي, Excel, أوراق العمل, JWT, الإصدار 3.2"
 description: "حذف جميع قواعد التنسيق الشرطي من ورقة عمل باستخدام واجهة Aspose.Cells Cloud API (الإصدار 3.2). تعلّم بناء جملة الطلب، والمعلمات المطلوبة، وخطوات المصادقة، وشاهد أمثلة على الشيفرة البرمجية في مكتبات SDK متعددة."
 weight: 80

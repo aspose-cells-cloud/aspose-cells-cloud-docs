@@ -2,7 +2,7 @@
 title: "วิธีซ่อมแซมไฟล์ Excel ด้วย Aspose.Cells Cloud"
 linktype: "วิธีซ่อมแซมไฟล์ Excel"
 type: docs
-url: /how-to-repair-excel-file
+url: /th/how-to-repair-excel-file
 description: "วิธีซ่อมแซมไฟล์ Excel หรือไฟล์สเปรดชีตอื่นๆ ด้วย Aspose.Cells Cloud"
 weight: 10
 kwords: Excel, Office Cloud, REST API, สเปรดชีต, PDF, CSV, JSON, Markdown, วิธีซ่อมแซมไฟล์ Excel หรือไฟล์สเปรดชีตอื่นๆ ผ่าน Aspose.Cells Cloud

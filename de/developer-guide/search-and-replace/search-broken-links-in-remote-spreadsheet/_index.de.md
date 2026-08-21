@@ -4,7 +4,7 @@ second_title: "Dokumentation"
 ArticleTitle: "Defekte Verknüpfungen in entfernten Excel-Dateien finden und beheben – Cloud-basierte Verknüpfungsprüfung für Tabellenkalkulationen"
 linktitle: "Suche nach defekten Verknüpfungen in entfernten Tabellenkalkulationen"
 type: docs
-url: /search-broken-links-in-remote-spreadsheet/
+url: /de/search-broken-links-in-remote-spreadsheet/
 keywords: "Excel, defekte Verknüpfungen, API, Cloud, Tabellenkalkulation, Validierung, Aspose.Cells"
 description: "Nutzen Sie die Aspose.Cells Cloud API, um entfernte Excel-Arbeitsmappen auf defekte externe Verknüpfungen, ungültige Formeln und fehlende Datenquellen zu überprüfen."
 weight: 100

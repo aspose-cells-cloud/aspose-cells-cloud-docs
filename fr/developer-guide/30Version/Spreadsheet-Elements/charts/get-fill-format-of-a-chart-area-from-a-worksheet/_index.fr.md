@@ -1,8 +1,8 @@
 ---
 title: "Obtenir le format de remplissage de la zone de graphique – API Aspose.Cells Cloud (v3.0)"
 type: docs
-url: /charts/chart-area/fill-format/get/
-aliases: [/get-fill-format-of-a-chart-area-from-a-worksheet/]
+url: /fr/charts/chart-area/fill-format/get/
+aliases: [  /fr/get-fill-format-of-a-chart-area-from-a-worksheet/ ]
 weight: 70
 keywords:
   - "Aspose.Cells"

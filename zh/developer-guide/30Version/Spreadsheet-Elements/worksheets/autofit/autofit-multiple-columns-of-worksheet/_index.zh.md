@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "列"
 type: docs
 url: /zh/worksheets/autofit/columns/
-aliases: [/autofit-multiple-columns-of-worksheet/]
+aliases: [  /zh/autofit-multiple-columns-of-worksheet/ ]
 keywords: "Aspose.Cells, 自动调整列宽, Excel API, 云电子表格, REST"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）在 Excel 工作表中自动调整多列列宽。内容包括端点、参数、cURL 示例、错误处理以及 C#、Java、Python 等语言的 SDK 代码片段。"
 weight: 20

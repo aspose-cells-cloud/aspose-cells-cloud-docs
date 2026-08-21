@@ -3,7 +3,7 @@ title: "Importar datos CSV en una hoja de cálculo de Excel"
 second_title: "Document"
 linktype: "Importar datos CSV"
 type: docs
-url: /import-CSV-data-into-excel/
+url: /es/import-CSV-data-into-excel/
 aliases:
   - /import-CSV-data-into-worksheet/
   - /import-data/csv-data/

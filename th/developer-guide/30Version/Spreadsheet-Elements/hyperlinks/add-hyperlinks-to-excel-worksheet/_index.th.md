@@ -1,8 +1,8 @@
 ---
 title: "เพิ่มไฮเปอร์ลิงก์ในแผ่นงาน"
 type: docs
-url: /hyperlinks/add/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /th/hyperlinks/add/
+aliases: [  /th/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, เพิ่มไฮเปอร์ลิงก์, Excel REST API, cloud SDK"
 description: "เรียนรู้วิธีการเพิ่มไฮเปอร์ลิงก์ในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud v3.0 REST API ประกอบด้วย endpoint, คู่มือพารามิเตอร์แบบเต็ม, ตัวอย่าง cURL และตัวอย่างโค้ด SDK สำหรับ C#, Java, Python และอื่นๆ"
 weight: 20

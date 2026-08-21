@@ -3,8 +3,8 @@ title: "แปลงไฟล์ Excel เป็นรูปแบบอื่�
 second_title: "เอกสาร"
 linktitle: "การแปลงและการบันทึกเป็น"
 type: docs
-url: /conversion-and-save-as/
-aliases: [/convert-excel/, /convert/]
+url: /th/conversion-and-save-as/
+aliases: [  /th/convert-excel/ , /th/convert/ ]
 keywords: "Aspose.Cells, API สำหรับการแปลง Excel, แปลง Excel เป็น PDF, Excel เป็น CSV, Excel เป็น JSON, การแปลงสเปรดชีตบนคลาวด์"
 description: "เรียนรู้วิธีการแปลงสมุดงาน Excel เป็น PDF, CSV, JSON, HTML และรูปแบบอื่นๆ อีกมากกว่า 15 รูปแบบ โดยใช้ Aspose.Cells Cloud REST API พร้อมรายละเอียดของ endpoint ตัวอย่างคำสั่ง cURL และโค้ดตัวอย่าง SDK สำหรับ Java, .NET, Python และอื่นๆ"
 weight: 30

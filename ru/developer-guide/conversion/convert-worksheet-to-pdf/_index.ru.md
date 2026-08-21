@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать лист локальной электронной таблицы в файл PDF: Пошаговое руководство"
 linktitle: "Преобразовать лист в PDF"
 type: docs
-url: /convert-worksheet-to-pdf/
+url: /ru/convert-worksheet-to-pdf/
 keywords: "Aspose.Cells, Excel в PDF, преобразование листа, REST API, облачное преобразование, PDF для электронной таблицы, конечная точка API, генерация PDF"
 description: "Используйте Aspose.Cells Cloud API для быстрого и безопасного преобразования листа из локального файла Excel в документ PDF."
 weight: 100

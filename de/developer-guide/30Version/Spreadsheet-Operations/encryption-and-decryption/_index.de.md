@@ -3,8 +3,8 @@ title: "Verschlüsseln, Entschlüsseln und digital Signieren von Excel-Dateien"
 second_title: "Dokument"
 linktitle: "Excel schützen"
 type: docs
-url: /protect/
-aliases: [/workbook/password/]
+url: /de/protect/
+aliases: [  /de/workbook/password/ ]
 keywords: "Excel, schützen, verschlüsseln, entschlüsseln, digitale Signatur, Aspose.Cells Cloud, REST API, Passwort, Sicherheit"
 description: "Erfahren Sie, wie Sie Excel-Arbeitsmappen mit der Aspose.Cells Cloud REST API schützen, verschlüsseln, entschlüsseln und digital signieren – Codebeispiele für Android, C#, Java, Python und mehr."
 ArticleTitle: "Excel-Dateien mit der Aspose.Cells Cloud API verschlüsseln, entschlüsseln, digital signieren und schützen"

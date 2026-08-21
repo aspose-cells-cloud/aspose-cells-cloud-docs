@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Elektronik Tablo Verisi İşleme – Birleştir, Böl ve İçe Aktar"
 linktitle: "Veri İşleme"
 type: docs
-url: /data-processing/
+url: /tr/data-processing/
 keywords: "Aspose.Cells Cloud, elektronik tablo verisi işleme, Excel birleştirme, Excel bölme, CSV içe aktarma, JSON içe aktarma, API"
 description: "Aspose.Cells Cloud REST API kullanarak CSV/JSON verilerini içe aktarma, uzaktaki Excel çalışma kitaplarını birleştirme ve büyük elektronik tabloları bölme konusunda detaylı kılavuz; istek/yanıt örnekleri de dahil."
 weight: 30

@@ -1,7 +1,7 @@
 ---
 title: "Stil für mehrere Zellen aktualisieren – Aspose.Cells Cloud API Referenz (v3.0)"
 type: docs
-url: /update-multiple-cells-style/
+url: /de/update-multiple-cells-style/
 weight: 20
 keywords: ["Aspose.Cells", "Stil für mehrere Zellen aktualisieren", "Excel-Zellstil-API", "Cloud SDK", "REST API", "cURL-Beispiel", "JSON-Anfrage", "JWT-Authentifizierung"]
 description: "Erfahren Sie, wie Sie den Stil eines Zellbereichs in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API v3.0 aktualisieren können. Enthält Endpunkt, HTTP-Methode, Parameter, cURL- und SDK-Beispiele, Authentifizierung, Fehlerbehandlung und Versionsinformationen."

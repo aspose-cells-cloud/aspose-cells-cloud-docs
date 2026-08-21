@@ -3,7 +3,7 @@ title: "在 Excel 文件中自动调整列宽"
 second_title: "文档"
 linktype: "列"
 type: docs
-url: /autofit-columns-on-an-excel-file/
+url: /zh/autofit-columns-on-an-excel-file/
 aliases:
   [
     /auto-fit-columns-in-excel-workbooks,

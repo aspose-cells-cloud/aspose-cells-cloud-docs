@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So exportieren Sie das entfernte Tabellenkalkulationsarbeitsblatt in andere Formate: Schritt-für-Schritt-Anleitung"
 linktype: "Exportieren Sie Tabellenkalkulation als Format"
 type: docs
-url: /export-spreadsheet-as-format/
+url: /de/export-spreadsheet-as-format/
 keywords: "Aspose.Cells, Tabellenkalkulationskonvertierung, API, Export, PDF, CSV, JSON, XLSX"
 description: "Konvertieren Sie Excel-Arbeitsmappen, die in Aspose Cloud gespeichert sind, über einen einzigen REST-Endpunkt in PDF, XLSX, CSV, JSON oder HTML. Erfahren Sie die Anfrage-Syntax, Parameter und sehen Sie SDK-Beispiele in C#, Java, Python und mehr."
 weight: 100

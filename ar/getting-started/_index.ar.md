@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "البدء مع Aspose.Cells Cloud"
 linktitle: "البدء"
 type: docs
-url: /getting-started/
+url: /ar/getting-started/
 description: "تعرّف على كيفية رفع وتحويل وتنزيل ملفات إكسل باستخدام واجهة Aspose.Cells Cloud REST API في ثلاث خطوات بسيطة. يتضمن أمثلة لرموز cURL."
 weight: 10
 keywords: "Aspose.Cells Cloud, Excel API, spreadsheet conversion, Excel to PDF, cloud spreadsheet, Aspose.Cells Cloud API"

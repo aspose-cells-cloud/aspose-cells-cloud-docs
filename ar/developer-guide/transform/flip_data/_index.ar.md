@@ -4,7 +4,7 @@ ArticleTitle: "FlipData – Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "FlipData"
 type: docs
-url: /cells/flip
+url: /ar/cells/flip
 aliases: []
 keywords: "FlipData, تحويل، Aspose.Cells"
 description: "يُقلب اتجاه نطاق بيانات مُحدّد في ملف جدول بيانات."

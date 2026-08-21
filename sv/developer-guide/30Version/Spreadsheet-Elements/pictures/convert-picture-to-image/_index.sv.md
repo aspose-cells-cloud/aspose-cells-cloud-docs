@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – Hämta bild från kalkylblad"
 second_title: "Dokument"
 linktitle: "Hämta"
 type: docs
-url: /pictures/get/
-aliases: [/convert-picture-to-image/]
+url: /sv/pictures/get/
+aliases: [  /sv/convert-picture-to-image/ ]
 keywords: "Aspose.Cells, Hämta bild, API, Excel, Moln, REST"
 description: "Hämta en specifik bild från ett Excel-kalkylblad med Aspose.Cells Cloud REST API. Inkluderar slutpunkt, parametrar, autentiseringssteg, svarsstatuskoder och kodexempel."
 weight: 10

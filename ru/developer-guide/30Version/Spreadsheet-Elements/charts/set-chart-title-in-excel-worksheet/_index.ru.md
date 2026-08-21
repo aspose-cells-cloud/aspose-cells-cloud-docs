@@ -1,8 +1,8 @@
 ---
 title: "Aspose.Cells Cloud API – Добавление заголовка диаграммы в лист Excel"
 type: docs
-url: /chart/title/add/
-aliases: [/set-chart-title-in-excel-worksheet/]
+url: /ru/chart/title/add/
+aliases: [  /ru/set-chart-title-in-excel-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells Cloud, API заголовка диаграммы, заголовок диаграммы Excel, REST API, примеры SDK"
 description: "Узнайте, как добавить или обновить заголовок диаграммы в листе Excel с помощью REST API Aspose.Cells Cloud. Включены примеры cURL, SDK, требуемые параметры, шаги аутентификации и обработка ошибок."

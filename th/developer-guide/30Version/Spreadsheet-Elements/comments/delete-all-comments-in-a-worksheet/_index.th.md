@@ -2,7 +2,7 @@
 title: "ลบความคิดเห็นทั้งหมดในแผ่นงาน"
 description: "ลบความคิดเห็นทั้งหมดออกจากแผ่นงานในไฟล์ Excel โดยใช้ API ของ Aspose.Cells Cloud ศึกษาเกี่ยวกับ endpoint การ DELETE พารามิเตอร์ที่จำเป็น การพิสูจน์ตัวตน ตัวอย่างคำสั่ง cURL รูปแบบการตอบกลับ รหัสข้อผิดพลาด และตัวอย่าง SDK"
 keywords: "Aspose, Cells, ลบความคิดเห็น, แผ่นงาน, API, REST, Excel, คลาวด์"
-url: /comments/clear/
+url: /th/comments/clear/
 aliases:
   - /delete-all-comments-in-a-worksheet/
 weight: 50

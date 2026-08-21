@@ -2,7 +2,7 @@
 title: "정수 배열을 Excel 워크시트로 가져오기"
 linktitle: "정수 배열 가져오기"
 type: docs
-url: /import-integer-array-into-excel-worksheet/
+url: /ko/import-integer-array-into-excel-worksheet/
 aliases:
   - /import-integer-array-into-excel-worksheet/
   - /import-integer-array-into-worksheet/

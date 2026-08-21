@@ -3,8 +3,8 @@ title: "Çalışma Sayfasını Dışa Aktar – Aspose.Cells Cloud"
 second_title: "Belge"
 linktitle: "Çalışma Sayfası"
 type: docs
-url: /export-excel-worksheet-to-different-formats/
-aliases: [/export/excel-worksheet-to-different-formats/]
+url: /tr/export-excel-worksheet-to-different-formats/
+aliases: [  /tr/export/excel-worksheet-to-different-formats/ ]
 keywords: "Aspose.Cells, çalışma sayfasını dışa aktar, Excel API’si, PDF, CSV, TIFF, ODS, resim formatları"
 description: "Aspose.Cells Cloud REST API’sini kullanarak bir Excel çalışma sayfasını PDF, CSV, TIFF ve diğer formatlara nasıl dışa aktaracağınızı öğrenin. cURL örneği, gerekli kimlik doğrulama, parametre detayları ve yanıt işleme içerir."
 weight: 20

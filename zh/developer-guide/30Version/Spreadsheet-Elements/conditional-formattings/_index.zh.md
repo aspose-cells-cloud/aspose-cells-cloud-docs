@@ -3,8 +3,8 @@ title: "使用 Excel 条件格式"
 second_title: "Document"
 linktype: "Conditional Formatting"
 type: docs
-url: /conditional-formattings/
-aliases: [/working-with-conditional-formatting/]
+url: /zh/conditional-formattings/
+aliases: [  /zh/working-with-conditional-formatting/ ]
 keywords: "Excel, 条件格式, Aspose.Cells Cloud, API"
 description: "Aspose.Cells Cloud API 提供了用于检索、添加、修改和清除 Excel 条件格式规则的端点，从而实现对工作表数据的动态可视化分析。"
 weight: 100

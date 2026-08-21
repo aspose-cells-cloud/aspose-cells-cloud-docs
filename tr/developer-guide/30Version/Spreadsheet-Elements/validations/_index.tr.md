@@ -3,7 +3,7 @@ title: "Excel Veri Doğrulama ile Çalışmak"
 second_title: "Belge"
 linktype: "Doğrulamalar"
 type: docs
-url: /validations/
+url: /tr/validations/
 keywords: "Excel veri doğrulama, Aspose.Cells Cloud, REST API, elektronik tablo, Office Cloud"
 description: "Aspose.Cells Cloud REST API ile Excel veri doğrulama kurallarını programlı olarak nasıl ekleyeceğinizi, alacağınızı, güncelleyeceğinizi, sileceğinizi ve temizleyeceğinizi öğrenin. .NET, Java, Python ve PHP için örnekler içerir."
 weight: 100

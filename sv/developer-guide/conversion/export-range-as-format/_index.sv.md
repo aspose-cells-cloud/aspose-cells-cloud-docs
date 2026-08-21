@@ -4,7 +4,7 @@ secondtitle: "Dokument"
 articletitle: "Hur man exporterar ett fjärrstyrningskalkylbladsområde till andra format: Steg-för-steg-guide"
 linktitle: "Exportera område som format"
 type: docs
-url: /export-range-as-format/
+url: /sv/export-range-as-format/
 keywords: "Aspose Cells, exportera Excel-område, PDF, PNG, CSV, moln-API, konvertering av kalkylark"
 description: "Lär dig hur du konverterar ett specifikt Excel-område som lagras i Aspose Cells Cloud till PDF, PNG, CSV eller andra format. Inkluderar detaljerad endpoint-info, parametrar, exempel på förfrågningar, svarshantering och felinformation."
 weight: 100

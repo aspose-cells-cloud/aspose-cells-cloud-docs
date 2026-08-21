@@ -3,7 +3,7 @@ title: "Exportieren eines Arbeitsblatts mit der Aspose.Cells Cloud API – Forma
 second_title: "Dokument"
 linktitle: "Arbeitsblatt-Export"
 type: docs
-url: /worksheets/get-worksheet/
+url: /de/worksheets/get-worksheet/
 keywords: "Aspose.Cells Cloud Get Worksheet, Arbeitsblatt exportieren, Excel-API, REST, CSV, PDF, PNG, JPEG, GIF, BMP, TIFF, EMF, XPS, OTS, XLS, XLSX, XLSB, XLSM, ODS, FODS, Numbers, Cloud-API"
 description: "Erfahren Sie, wie Sie ein einzelnes Arbeitsblatt aus einer Excel-Datei mithilfe der Aspose.Cells Cloud REST-API exportieren. Enthält Endpunkt, Parameter, ein korrigiertes cURL-Beispiel, Authentifizierungsdetails, Fehlerbehandlung und SDK-Snippets für C#, Java, Python und mehr."
 weight: 10

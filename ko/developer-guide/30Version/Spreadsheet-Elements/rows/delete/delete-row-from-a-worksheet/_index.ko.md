@@ -3,8 +3,8 @@ title: "Excel 워크시트에서 행 삭제하기"
 second_title: "문서"
 linktitle: "행"
 type: docs
-url: /rows/delete/row/
-aliases: [/delete-row-from-a-worksheet/]
+url: /ko/rows/delete/row/
+aliases: [  /ko/delete-row-from-a-worksheet/ ]
 description: "Aspose.Cells Cloud REST API를 통해 Excel 워크시트에서 특정 행을 제거하려면 DELETE /worksheets/{sheetName}/cells/rows/{rowIndex} 엔드포인트를 사용하세요. cURL 명령어, SDK 샘플 및 전체 매개변수 참조가 포함됩니다."
 keywords: "Aspose.Cells, 행 삭제, Excel, API, REST, 클라우드, SDK"
 weight: 80

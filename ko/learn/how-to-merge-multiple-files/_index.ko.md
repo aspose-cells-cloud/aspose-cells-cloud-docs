@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud을 사용하여 여러 스프레드시트 파일 병합하는 방법"
 linktitle: "여러 스프레드시트 파일 병합하는 방법"
 type: docs
-url: /how-to-merge-multiple-files
+url: /ko/how-to-merge-multiple-files
 description: "Aspose.Cells Cloud을 사용하여 여러 스프레드시트 파일을 병합하는 방법."
 weight: 10
 kwords: Excel, Office Cloud, REST API, 스프레드시트, PDF, CSV, Json, Markdown, Aspose.Cells Cloud을 통해 여러 파일 병합하는 방법

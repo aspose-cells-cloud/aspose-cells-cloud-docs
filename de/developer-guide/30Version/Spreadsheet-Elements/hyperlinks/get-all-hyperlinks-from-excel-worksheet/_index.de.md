@@ -1,7 +1,7 @@
 ---
 title: "Alle Hyperlinks abrufen – Aspose.Cells Cloud REST API"
 type: docs
-url: /hyperlinks/get-all/
+url: /de/hyperlinks/get-all/
 aliases:
   [/get-hyperlink-from-excel-worksheet/, /get-hyperlinks-from-excel-worksheet/]
 keywords: "Aspose.Cells, Alle Hyperlinks abrufen, Excel-API, REST-API, Cloud-SDK, cURL-Beispiel, Hyperlinks in Tabellenkalkulationen"

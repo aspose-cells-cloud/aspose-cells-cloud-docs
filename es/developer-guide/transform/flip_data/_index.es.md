@@ -3,7 +3,7 @@ title: "FlipData"
 ArticleTitle: "FlipData – Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /cells/flip
+url: /es/cells/flip
 aliases: []
 keywords: "FlipData, Transformar, Aspose.Cells"
 description: "Transpone un rango de datos especificado en un archivo de hoja de cálculo."

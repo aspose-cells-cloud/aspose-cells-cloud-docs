@@ -1,7 +1,7 @@
 ---
 title: "Borrar Contenidos y Estilos de Celdas en una Hoja de Cálculo de Excel"
 type: docs
-url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+url: /es/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
 keywords:
   - Aspose.Cells

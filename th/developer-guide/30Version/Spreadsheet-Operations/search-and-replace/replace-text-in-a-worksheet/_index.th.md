@@ -3,8 +3,8 @@ title: "แทนที่ข้อความในสมุดงาน Excel
 second_title: "เอกสาร"
 linktitle: "แทนที่ในชีตงาน"
 type: docs
-url: /worksheets/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /th/worksheets/replace-text/
+aliases: [  /th/replace-text-in-a-workbook/ ]
 keywords: "Aspose.Cells, แทนที่ข้อความ, Excel, REST API, สเปรดชีต, ชีตงาน"
 description: "เรียนรู้วิธีแทนที่ข้อความในชีตงาน Excel โดยใช้ API ของ Aspose.Cells Cloud (เวอร์ชัน 3.0) รวมถึงข้อกำหนดเบื้องต้น การตรวจสอบสิทธิ์ ไวยากรณ์คำร้องขอ ตัวอย่าง cURL ตัวอย่างโค้ด SDK รายละเอียดการตอบกลับ และการจัดการข้อผิดพลาด"
 ArticleTitle: "แทนที่ข้อความในชีตงาน Excel – API ของ Aspose.Cells Cloud"

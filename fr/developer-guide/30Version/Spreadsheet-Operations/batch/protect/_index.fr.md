@@ -2,7 +2,7 @@
 title: "Protéger par lots des fichiers Excel"
 second_title: "Document"
 type: docs
-url: /batch/protect
+url: /fr/batch/protect
 keywords: "Protéger par lots des fichiers Excel, Aspose Cells Cloud, API REST, protection Excel, protection par lots"
 description: "Découvrez comment utiliser l’API REST Aspose.Cells Cloud pour protéger par lots plusieurs fichiers Excel. Inclut les détails de la requête, un exemple cURL et des exemples de code SDK pour divers langages."
 weight: 100

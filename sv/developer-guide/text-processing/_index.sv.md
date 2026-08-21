@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Textbehandling i kalkylark: Beskära, dela, konvertera, extrahera och ta bort text"
 linktitle: "Textbehandling"
 type: docs
-url: /text-processing/
+url: /sv/text-processing/
 description: "Lär dig hur du beskär, delar, konverterar, extraherar och tar bort text i Excel-filer med Aspose.Cells Cloud REST API:er. Inkluderar kortfattade exempel och SDK-utdrag."
 keywords: "Aspose.Cells, moln-API, textbehandling, beskära text, dela text, konvertera text, extrahera text, ta bort text, Excel-API"
 weight: 30

@@ -3,7 +3,7 @@ title: "วิธีการลบแผ่นงานในสมุดงา
 second_title: "Document"
 linktype: "ลบ"
 type: docs
-url: /worksheets/delete/
+url: /th/worksheets/delete/
 keywords: "Aspose.Cells, Cloud, REST API, Delete Worksheet, Excel, C#, Java, Python"
 description: "เรียนรู้วิธีการลบแผ่นงานเดียวหรือหลายแผ่นจากสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่างโค้ด C#, Java และ Python รวมถึงข้อกำหนดเบื้องต้น เคล็ดลับการจัดการข้อผิดพลาด และการดำเนินการที่เกี่ยวข้องอื่นๆ"
 weight: 20

@@ -3,7 +3,7 @@ title: "使用转换任务"
 second_title: "文档"
 type: docs
 url: /zh/tasks/convert/
-aliases: [/zh/working-with-convert-task/]
+aliases: [  /zh/working-with-convert-task/ ]
 keywords: "Aspose.Cells Cloud, REST API, 转换任务, Excel, 电子表格, PDF, CSV, JSON, Markdown"
 description: "Aspose.Cells Cloud 为 Excel 提供任务支持，可将 Excel 文件转换为多种格式。"
 weight: 30

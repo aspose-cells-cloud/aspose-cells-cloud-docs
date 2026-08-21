@@ -1,8 +1,8 @@
 ---
 title: "รับข้อมูลพื้นที่กราฟจากแผ่นงาน"
 type: docs
-url: /charts/area/get/
-aliases: [/get-chart-area-from-a-worksheet/]
+url: /th/charts/area/get/
+aliases: [  /th/get-chart-area-from-a-worksheet/ ]
 weight: 60
 keywords:
   - "Aspose.Cells"

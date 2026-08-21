@@ -3,7 +3,7 @@ title: "Excel dosyalarının toplu işlenmesi: Dönüştür, Kilitle, Korumalı 
 second_title: "Belge"
 linktitle: "Toplu Excel dosyaları"
 type: docs
-url: /batch/
+url: /tr/batch/
 keywords: "Toplu işleme, Excel, dönüştürme, kilitleme, koruma, bölme, kilidini kaldırma, Aspose.Cells Cloud API, API referansı, toplu işlemler"
 description: "Aspose.Cells Cloud API, birden fazla Excel dosyasının dönüştürme, kilitleme, koruma, bölme ve kilidini kaldırma gibi işlemler için toplu olarak işlenmesini sağlar. Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby ve Swift için SDK desteği ile ayrıntılı API spesifikasyonlarını içerir."
 weight: 35

@@ -1,8 +1,8 @@
 ---
 title: "Aspose.Cells Cloud API – Ställ in diagramrubrik i ett Excel-ark"
 type: docs
-url: /chart/title/add/
-aliases: [/set-chart-title-in-excel-worksheet/]
+url: /sv/chart/title/add/
+aliases: [  /sv/set-chart-title-in-excel-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells Cloud, API för diagramrubrik, Excel-diagramrubrik, REST API, SDK-exempel"
 description: "Lär dig hur du lägger till eller uppdaterar en diagramrubrik i ett Excel-ark med Aspose.Cells Cloud REST API. Innehåller cURL-kod, SDK-exempel, nödvändiga parametrar, autentiseringssteg och felhantering."

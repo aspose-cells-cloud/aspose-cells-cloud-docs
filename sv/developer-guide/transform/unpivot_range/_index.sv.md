@@ -4,7 +4,7 @@ ArticleTitle: "UnpivotRange – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktitle: "UnpivotRange"
 type: docs
-url: /cells/unpivot/range
+url: /sv/cells/unpivot/range
 aliases: []
 keywords: "Aspose.Cells, UnpivotRange, API"
 description: "Växla rader och kolumner i kalkylbladet."

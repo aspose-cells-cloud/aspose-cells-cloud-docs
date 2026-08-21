@@ -3,7 +3,7 @@ title: "Zeichen aus Excel entfernen – Aspose.Cells Cloud API (POST /cells/remo
 second_title: "Dokument"
 linktitle: "Zeichen entfernen"
 type: docs
-url: /excel-remove-characters/
+url: /de/excel-remove-characters/
 keywords: "Zeichen entfernen, Aspose.Cells, Excel API, Textverarbeitung, Cloud"
 description: "Erfahren Sie, wie Sie Zeichen, Zeichensätze oder Teilzeichenfolgen mit der Aspose.Cells Cloud API aus Excel-Arbeitsblättern entfernen. Enthält Anforderungsschema, cURL-Beispiel, SDK-Code und Fehlerbehandlung."
 weight: 100

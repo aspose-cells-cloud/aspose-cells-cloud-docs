@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment convertir une feuille de calcul de classeur local en fichier PDF : guide pas à pas"
 linktitle: "Convertir une feuille de calcul en PDF"
 type: docs
-url: /convert-worksheet-to-pdf/
+url: /fr/convert-worksheet-to-pdf/
 keywords: "Aspose.Cells, Excel vers PDF, conversion de feuille de calcul, API REST, conversion cloud, PDF de feuille de calcul, point de terminaison API, génération de PDF"
 description: "Utilisez l’API Aspose.Cells Cloud pour convertir rapidement et en toute sécurité une feuille de calcul d’un fichier Excel local en document PDF."
 weight: 100

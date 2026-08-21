@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Qual è la differenza tra l'elaborazione dei file locali e l'elaborazione dei file nel cloud in Aspose.Cells Cloud?"
 linktitle: "Elaborazione dei file locali vs. elaborazione dei file nel cloud"
 type: docs
-url: /learn/local-file-processing-vs-cloud-file-processing/
+url: /it/learn/local-file-processing-vs-cloud-file-processing/
 description: "Confronta l’elaborazione dei file locali e dei file nel cloud di Aspose.Cells Cloud: archiviazione, costi, sicurezza e scenari tipici. Scopri quale approccio si adatta meglio al tuo flusso di lavoro."
 keywords: "Aspose.Cells Cloud, elaborazione dei file locali, elaborazione dei file nel cloud, conversione di fogli di calcolo, API"
 weight: 10

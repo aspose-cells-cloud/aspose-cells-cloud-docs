@@ -3,8 +3,8 @@ title: "在 Excel 工作表中自动调整多行行高"
 second_title: "文档"
 linktitle: "行"
 type: docs
-url: /worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
+url: /zh/worksheets/autofit/rows/
+aliases: [  /zh/autofit-multiple-rows-of-worksheet/ ]
 keywords: "自动调整行高, Excel, Aspose.Cells Cloud, REST API, 工作表, 电子表格"
 description: "了解如何使用 Aspose.Cells Cloud REST API 自动调整 Excel 工作表中的多行行高。内容包括请求语法、参数说明、cURL 示例、SDK 代码片段及错误处理。"
 weight: 40

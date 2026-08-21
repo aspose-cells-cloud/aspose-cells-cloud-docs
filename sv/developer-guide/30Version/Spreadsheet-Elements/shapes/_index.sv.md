@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Former"
 type: docs
 url: /sv/shapes/
-aliases: ["/sv/working-with-shapes/", "/sv/working-with-images/"]
+aliases: [  /sv/working-with-shapes/ , /sv/working-with-images/ ]
 keywords: "Excel-former, Aspose.Cells Cloud, API, kalkylblad, former för operationer"
 description: "Lär dig hur du hanterar Excel-former via Aspose.Cells Cloud API – hämta, lägg till, ta bort och konvertera former med stöd för SDK."
 weight: 100

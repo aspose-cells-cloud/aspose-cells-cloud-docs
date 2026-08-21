@@ -4,8 +4,8 @@ ArticleTitle: "Как разделить рабочую книгу Excel на н
 second_title: "Документ"
 linktitle: "Разделение файла Excel"
 type: docs
-url: /split-multi-excel-files/
-aliases: [/split/multi-files/]
+url: /ru/split-multi-excel-files/
+aliases: [  /ru/split/multi-files/ ]
 keywords: "Excel, Aspose.Cells Cloud, REST API, разделение рабочей книги, несколько файлов, JPEG, PNG, PDF, CSV, JSON"
 description: "REST API Aspose.Cells Cloud позволяет разделить рабочую книгу Excel на несколько файлов в различных форматах. В данном документе приведены параметры запроса, пример cURL и примеры кода SDK для языков C#, Java, PHP, Ruby, Node.js, Python, Perl и Go."
 weight: 130

@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Inserción masiva de texto para Excel: Agregar prefijos, sufijos y texto personalizado a celdas – Guía paso a paso"
 linktitle: "AddText"
 type: docs
-url: /add-text/
+url: /es/add-text/
 keywords: "API de Aspose Cells, agregar texto a Excel, inserción masiva de texto, prefijo y sufijo en Excel, reemplazo de texto en hojas de cálculo, automatización de Excel, API de hojas de cálculo en la nube"
 description: "Inserte prefijos, sufijos o etiquetas personalizadas en muchas celdas de Excel con una sola llamada mediante Aspose.Cells Cloud. Elija insertar al inicio, al final, antes o después de cualquier texto. Admite rangos, hojas de cálculo y manejo de celdas vacías."
 weight: 100

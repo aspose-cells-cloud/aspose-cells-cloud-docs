@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud SDK for Perl – 변환, 병합, 분할, 보호 등"
 linktitle: "Aspose.Cells Cloud SDK for Perl"
 type: docs
-url: /available-sdks/aspose-cells-cloud-perl/
+url: /ko/available-sdks/aspose-cells-cloud-perl/
 description: "Aspose.Cells Cloud Perl SDK 살펴보기 – Office가 설치되지 않은 상태에서 Excel 파일을 생성, 변환, 병합, 분할, 보호, 검색 및 바꾸기할 수 있는 크로스플랫폼 라이브러리. 설치 가이드, 코드 예제, API 참조 포함."
 weight: 30
 keywords: "Perl, Aspose.Cells Cloud, Excel SDK, 변환, PDF, API, Excel 조작, Perl SDK, 클라우드 Excel 처리"

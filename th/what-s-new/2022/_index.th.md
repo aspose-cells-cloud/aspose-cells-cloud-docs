@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktitle: "มีอะไรใหม่ในปี 2022"
 type: docs
 weight: 90
-url: /new-features/2023/
+url: /th/new-features/2023/
 keywords: "มีอะไรใหม่ใน Aspose.Cells Cloud Microsoft Office Excel Open Office Spreadsheet CSV PDF"
 description: "หน้านี้อธิบายคุณสมบัติใหม่ที่น่าสนใจที่สุดของ Aspose.Cells Cloud ที่เพิ่มเข้ามาในเวอร์ชันที่เผยแพร่เมื่อเร็วๆ นี้"
 kwords: Excel Office Cloud REST API Spreadsheet PDF CSV Json Markdown มีอะไรใหม่ใน Aspose.Cells Cloud

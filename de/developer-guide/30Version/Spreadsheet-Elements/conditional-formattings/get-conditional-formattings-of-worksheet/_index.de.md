@@ -1,8 +1,8 @@
 ---
 title: "Abrufen bedingter Formatierungsregeln"
 type: docs
-url: /conditional-formattings/get-all/
-aliases: [/get-conditional-formattings-of-worksheet/]
+url: /de/conditional-formattings/get-all/
+aliases: [  /de/get-conditional-formattings-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, Bedingte Formatierung, Arbeitsblatt, Conditional Formatting API"
 description: "Rufen Sie alle bedingten Formatierungsregeln ab, die auf ein Arbeitsblatt angewendet werden, mithilfe der Aspose.Cells Cloud REST API. Enthält Syntaxanforderung, Authentifizierungsschritte, Parameter, prägnante Antwortbeispiele und Fehlerbehandlung."
 weight: 20

@@ -3,7 +3,7 @@ title: "拆分表格"
 ArticleTitle: "拆分表格 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktype: "docs"
-url: "/cells/split/table"
+url: /zh/cells/split/table
 aliases: []
 keywords: "Aspose.Cells, 拆分表格, API"
 description: "通过列值拆分电子表格中表格的 API。"

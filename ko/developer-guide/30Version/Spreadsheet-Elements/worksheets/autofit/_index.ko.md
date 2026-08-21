@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "자동 크기 조정"
 type: docs
 url: /ko/worksheets/autofit/
-aliases: [/autofit-rows-and-columns-of-worksheet/]
+aliases: [  /ko/autofit-rows-and-columns-of-worksheet/ ]
 keywords: "자동 크기 조정, 열, 행, Aspose.Cells, 클라우드, Excel, API, 크기 조정"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 행과 열을 자동으로 크기 조정하는 방법을 알아보세요. cURL, .NET, Java, Python 예제 포함."
 weight: 20

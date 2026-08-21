@@ -3,8 +3,8 @@ title: "Establecer valor de rango en una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Establecer valores"
 type: docs
-url: /ranges/update/values/
-aliases: [/set-range-value-in-excel-worksheet/]
+url: /es/ranges/update/values/
+aliases: [  /es/set-range-value-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, API de Excel, establecer valor de rango, API REST, SDK en la nube, actualización de hoja de cálculo"
 description: "Aprenda cómo establecer el valor de una celda o rango en un libro de Excel utilizando la API REST de Aspose.Cells Cloud (v3.0). Incluye el punto de conexión, los parámetros, un ejemplo con cURL, ejemplos de código con SDK y manejo de errores."
 weight: 72

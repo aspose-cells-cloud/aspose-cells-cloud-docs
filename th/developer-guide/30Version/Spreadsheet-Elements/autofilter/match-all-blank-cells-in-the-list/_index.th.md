@@ -3,8 +3,8 @@ title: "จับคู่เซลล์ว่างทั้งหมดใน
 ArticleTitle: "จับคู่เซลล์ว่างทั้งหมดในแผ่นงาน Excel – คู่มือ API Aspose.Cells Cloud"
 second_title: "เอกสาร"
 linktype: "docs"
-url: /autofilter/match-all-blank/
-aliases: [/match-all-blank-cells-in-the-list/]
+url: /th/autofilter/match-all-blank/
+aliases: [  /th/match-all-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells, เซลล์ว่าง, AutoFilter, REST API, Excel"
 description: "เรียนรู้วิธีใช้ Aspose.Cells Cloud REST API เพื่อกรองและจับคู่เซลล์ว่างทั้งหมดในแผ่นงาน Excel รวมถึง endpoint, พารามิเตอร์, ขั้นตอนการยืนยันตัวตน, ตัวอย่าง cURL และตัวอย่าง SDK สำหรับ C#, Java, Python และอื่นๆ"
 weight: 100

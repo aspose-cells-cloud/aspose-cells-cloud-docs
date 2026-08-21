@@ -3,7 +3,7 @@ title: "Excel Dosyalarında Metin Bul – Aspose.Cells Cloud API"
 description: "Aspose.Cells Cloud API kullanarak Excel (XLS, XLSX, XLSM, XLSB) ve ODS dosyalarında belirli bir metni arayın. İstek detaylarını, cURL ve SDK örneklerini ve hata işleme içerir."
 keywords: "Aspose.Cells, Excel, arama, API, REST"
 type: docs
-url: /cells/search/
+url: /tr/cells/search/
 aliases:
   - /search/
   - /search-without-using-storage/

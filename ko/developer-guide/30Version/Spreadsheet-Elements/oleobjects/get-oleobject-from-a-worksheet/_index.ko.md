@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "가져오기"
 type: docs
 url: /ko/oleobjects/get/
-aliases: [/get-oleobject-from-a-worksheet/]
+aliases: [  /ko/get-oleobject-from-a-worksheet/ ]
 keywords: "aspose, cells, ole 개체, excel, 워크시트, ole 개체 가져오기, rest api"
 description: "Aspose.Cells Cloud REST API를 사용하여 워크시트에서 OLE 개체(이미지, 차트 또는 포함된 파일)를 검색합니다. HTTPS 엔드포인트, 필수 매개변수, 샘플 cURL 및 여러 언어의 SDK 코드 포함."
 ArticleTitle: "Excel 워크시트에서 OLE 개체 가져오기 – Aspose.Cells Cloud API"

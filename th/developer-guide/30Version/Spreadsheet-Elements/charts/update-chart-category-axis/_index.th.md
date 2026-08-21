@@ -1,7 +1,7 @@
 ---
 title: "อัปเดตแกนหมวดหมู่ของแผนภูมิ"
 type: docs
-url: /charts/category-axis/update/
+url: /th/charts/category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, แผนภูมิ, แกนหมวดหมู่, REST API, Excel, Cloud SDK"
 description: "อัปเดตแกนหมวดหมู่ของแผนภูมิในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API"

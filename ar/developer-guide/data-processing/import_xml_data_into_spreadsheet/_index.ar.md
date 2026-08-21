@@ -4,7 +4,7 @@ ArticleTitle: "استيراد بيانات XML إلى جدول بيانات – 
 second_title: "وثيقة"
 linktype: "استيراد بيانات XML إلى جدول بيانات"
 type: docs
-url: /cells/import/data/xml
+url: /ar/cells/import/data/xml
 aliases: []
 keywords: "استيراد XML، Aspose.Cells، واجهة برمجة التطبيقات"
 description: "استيراد ملف بيانات XML إلى جدول البيانات المحلي باستخدام Aspose.Cells Cloud."

@@ -3,8 +3,8 @@ title: "إيجاد نص في ملف عمل Excel"
 second_title: "وثيقة"
 linktype: "إيجاد في ملف العمل"
 type: docs
-url: /workbook/find-text/
-aliases: [/find-text-in-a-workbook/]
+url: /ar/workbook/find-text/
+aliases: [  /ar/find-text-in-a-workbook/ ]
 weight: 30
 keywords: "Aspose.Cells، إيجاد نص، واجهة برمجة تطبيقات Excel، بحث في ملف العمل"
 description: "تعرّف على كيفية استخدام واجهة برمجة تطبيقات Aspose.Cells Cloud لـ **إيجاد النص** في ملفات عمل Excel (XLSX، ODS). يشمل مثالًا لـ cURL، وأجزاء من كود SDK، ومخطط الاستجابة. ابدأ الآن."

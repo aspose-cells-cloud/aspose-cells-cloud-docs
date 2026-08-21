@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Trouver et corriger les liens rompus dans Excel distant – Vérificateur de liens de classeur cloud"
 linktitle: "Rechercher les liens rompus dans les classeurs distants"
 type: docs
-url: /search-broken-links-in-remote-spreadsheet/
+url: /fr/search-broken-links-in-remote-spreadsheet/
 keywords: "Excel, liens rompus, API, cloud, classeur, validation, Aspose.Cells"
 description: "Utilisez l’API Aspose.Cells Cloud pour analyser les classeurs Excel distants à la recherche de liens externes rompus, de formules invalides et de sources de données manquantes."
 weight: 100

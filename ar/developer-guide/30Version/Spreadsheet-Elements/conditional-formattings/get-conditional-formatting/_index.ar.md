@@ -1,8 +1,8 @@
 ---
 title: "الحصول على التنسيق الشرطي"
 type: docs
-url: /conditional-formattings/get/
-aliases: [/get-conditional-formatting/]
+url: /ar/conditional-formattings/get/
+aliases: [  /ar/get-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, REST API, التنسيق الشرطي, Excel, جداول البيانات"
 description: "استرجاع قواعد التنسيق الشرطي من ورقة عمل باستخدام واجهة Aspose.Cells Cloud REST API."
 weight: 10

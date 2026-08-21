@@ -3,7 +3,7 @@ title: "Excel 워크시트에 여러 행 추가"
 ArticleTitle: "Aspose.Cells Cloud API를 사용하여 Excel 워크시트에 여러 행 추가"
 second_title: "문서"
 linktype: "docs"
-url: /rows/add/rows/
+url: /ko/rows/add/rows/
 keywords: "Aspose.Cells Cloud, 행 삽입, Excel 워크시트, REST API, SDK, 여러 행 추가"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에 여러 행을 삽입하는 방법을 배워보세요. 이 가이드는 엔드포인트, 요청 매개변수, 샘플 cURL 명령 및 SDK 사용 예제를 다룹니다."
 weight: 20

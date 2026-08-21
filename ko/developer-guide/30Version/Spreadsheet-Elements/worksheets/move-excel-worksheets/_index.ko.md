@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "이동"
 type: docs
 url: /ko/worksheets/move/
-aliases: [/ko/move-excel-worksheets/]
+aliases: [  /ko/move-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, 워크시트 이동, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
 description: "Aspose.Cells Cloud API(v3.0)를 사용하여 Excel 워크시트를 새 위치로 이동하는 방법을 배워보세요. 엔드포인트, 필요한 매개변수, cURL 예제 및 C#, Java, Python 등 다양한 언어의 SDK 코드를 포함합니다."
 weight: 20

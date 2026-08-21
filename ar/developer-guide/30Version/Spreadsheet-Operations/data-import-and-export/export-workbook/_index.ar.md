@@ -3,8 +3,8 @@ title: "تصدير كُتيّب عمل"
 second_title: "مستند"
 linktitle: "كُتيّب عمل"
 type: docs
-url: /export-excel-to-different-formats/
-aliases: [/export/excel-to-different-formats/]
+url: /ar/export-excel-to-different-formats/
+aliases: [  /ar/export/excel-to-different-formats/ ]
 keywords: "Aspose.Cells Cloud, تصدير Excel, تحويل كُتيّب العمل, PDF, CSV, JSON, تنسيقات الصور, واجهة برمجة تطبيقات جداول الحسابات, XLSX, ODS, PNG"
 description: "دليل خطوة بخطوة لتصدير كُتيّبات عمل Excel إلى صيغ متعددة، بما في ذلك PDF وCSV وJSON وأنواع الصور المختلفة، باستخدام واجهة Aspose.Cells Cloud REST API ومكتبات SDK."
 weight: 20

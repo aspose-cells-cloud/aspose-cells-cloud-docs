@@ -3,8 +3,8 @@ title: "الحصول على تحقق من صحة ورقة عمل باستخدا�
 second_title: "Document"
 linktitle: "الحصول على"
 type: docs
-url: /validations/get/
-aliases: [/get-validation-from-a-worksheet/]
+url: /ar/validations/get/
+aliases: [  /ar/get-validation-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, واجهة برمجة تطبيقات التحقق من صحة ورقة العمل, الحصول على التحقق باستخدام الفهرس, واجهة برمجة تطبيقات إكسل عبر REST, Aspose.Cells SDK"
 description: "استرجاع التحقق من صحة ورقة عمل باستخدام فهرسه الصفري (zero‑based) من ملف إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0). يتضمن مثالًا باستخدام cURL، ومخطط الاستجابة، وأكواد الأخطاء، وأجزاء أكواد SDK بلغات C# وJava وPython وغيرهم."
 weight: 10

@@ -3,7 +3,7 @@ title: "Excel 워크북에 디지털 서명 추가"
 ArticleTitle: "Excel 워크북에 디지털 서명 추가 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: /excel-digital-signature/
+url: /ko/excel-digital-signature/
 aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/

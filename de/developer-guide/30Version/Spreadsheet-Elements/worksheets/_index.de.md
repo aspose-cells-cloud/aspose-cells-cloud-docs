@@ -3,8 +3,8 @@ title: "Arbeiten mit Excel-Arbeitsblättern."
 second_title: "Dokument"
 linktitle: "Arbeitsblätter"
 type: docs
-url: /worksheets/
-aliases: [/working-with-worksheets/]
+url: /de/worksheets/
+aliases: [  /de/working-with-worksheets/ ]
 keywords: "Excel-Arbeitsblatt, Aspose.Cells Cloud, REST-API, Tabellenkalkulation, Arbeitsmappe, Datenmanipulation, Excel-Automatisierung"
 description: "Die Aspose.Cells Cloud REST API ermöglicht das Arbeiten mit Arbeitsblättern in einer Excel-Arbeitsmappe. Das SDK unterstützt mehrere Programmiersprachen, darunter Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby und Swift."
 weight: 100

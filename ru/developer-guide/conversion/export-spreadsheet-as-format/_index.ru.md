@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как экспортировать удалённый лист электронной таблицы в другие форматы: пошаговое руководство"
 linktitle: "Экспорт электронной таблицы в формат"
 type: docs
-url: /export-spreadsheet-as-format/
+url: /ru/export-spreadsheet-as-format/
 keywords: "Aspose.Cells, преобразование электронных таблиц, API, экспорт, PDF, CSV, JSON, XLSX"
 description: "Преобразуйте книги Excel, хранящиеся в Aspose Cloud, в форматы PDF, XLSX, CSV, JSON или HTML через один REST-эндпоинт. Узнайте синтаксис запросов, параметры и примеры SDK на C#, Java, Python и других языках."
 weight: 100

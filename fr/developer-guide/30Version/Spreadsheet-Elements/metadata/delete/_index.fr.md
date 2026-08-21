@@ -3,7 +3,7 @@ title: "Supprimer les métadonnées des fichiers Excel"
 second_title: "Document"
 linktitle: "Suppression sans utiliser le stockage"
 type: docs
-url: /metadata/delete/
+url: /fr/metadata/delete/
 keywords: "Aspose.Cells, suppression des métadonnées, API Excel, propriétés du classeur"
 description: "Supprimer les métadonnées du classeur (auteur, titre, données personnalisées) via l'API Aspose.Cells Cloud. Inclut l'endpoint, l'authentification, les paramètres, ainsi que des exemples cURL et SDK."
 weight: 55

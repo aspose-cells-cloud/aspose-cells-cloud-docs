@@ -3,8 +3,8 @@ title: "ضبط ارتفاع صفوف متعددة في ورقة عمل Excel"
 second_title: "Document"
 linktitle: "Rows"
 type: docs
-url: /worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
+url: /ar/worksheets/autofit/rows/
+aliases: [  /ar/autofit-multiple-rows-of-worksheet/ ]
 keywords: "ضبط ارتفاع الصفوف، Excel، Aspose.Cells Cloud، REST API، ورقة عمل، جدول بيانات"
 description: "تعلم كيفية استخدام Aspose.Cells Cloud REST API لضبط ارتفاع صفوف متعددة في ورقة عمل Excel. يشمل بناء جملة الطلب، المعلمات، مثال cURL، مقاطع كود SDK، ومعالجة الأخطاء."
 weight: 40

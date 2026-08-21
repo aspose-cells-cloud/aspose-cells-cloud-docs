@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何将本地电子表格的指定区域转换为 CSV 文件：分步指南"
 linktitle: "将区域转换为 CSV"
 type: docs
-url: /convert-range-to-csv/
+url: /zh/convert-range-to-csv/
 keywords: "Aspose Cells, 将区域转换为 CSV, Excel 转 CSV, Excel API, 云电子表格, 转换, Excel, CSV, Aspose.Cells, 云 API"
 description: "了解如何使用 Aspose.Cells Cloud REST API 将本地 Excel 工作簿（XLSX 或 XLS）中的指定区域转换为 CSV。包含请求语法、参数、错误处理及 SDK 示例。"
 ---

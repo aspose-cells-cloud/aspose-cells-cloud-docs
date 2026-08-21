@@ -1,7 +1,7 @@
 ---
 title: "Получение гиперссылки листа"
 type: docs
-url: /hyperlinks/get/
+url: /ru/hyperlinks/get/
 keywords: "Aspose.Cells Cloud, получение гиперссылки листа, API Excel для гиперссылок, REST, аутентификация JWT, лист Excel, конечная точка API"
 description: "Получение конкретной гиперссылки из листа Excel с использованием API Aspose.Cells Cloud (v3.0). Включает конечную точку, параметры, пример cURL, данные об аутентификации, обработку ошибок и фрагменты SDK."
 weight: 10

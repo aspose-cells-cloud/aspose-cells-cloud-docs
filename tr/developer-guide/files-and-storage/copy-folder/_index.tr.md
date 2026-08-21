@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Bulut Tabanlı Excel Dosyası Yönetimi Çözümü – Aspose.Cells Klasör Kopyalama API'sinin Toplu Kopyalama Özelliklerinin Detaylı Açıklaması"
 linktitle: "Klasör Kopyala"
 type: docs
-url: /copy-folder/
+url: /tr/copy-folder/
 keywords: "Klasör Kopyala, Aspose.Cells Cloud, REST API, Bulut Depolama, Elektronik Tablo Yönetimi"
 description: "Aspose.Cells Cloud deposunda tek bir REST çağrısıyla klasörlerin nasıl kopyalanacağını öğrenin.uç nokta, parametreler, örnek istekler, hata kodları ve SDK örneklerini içerir."
 weight: 100

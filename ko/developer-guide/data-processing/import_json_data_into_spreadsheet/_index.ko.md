@@ -3,7 +3,7 @@ title: "JSON 데이터를 스프레드시트로 가져오기"
 ArticleTitle: "JSON 데이터를 스프레드시트로 가져오기 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: "/cells/import/data/json"
+url: /ko/cells/import/data/json
 aliases: []
 keywords: "JSON 가져오기, Aspose.Cells, 스프레드시트, API"
 description: "로컬 스프레드시트에 JSON 데이터 파일을 가져옵니다."

@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "AI 역량 강화하기: 엑셀 번역, 작업 분해 등 배우기"
 linktype: "AI"
 type: docs
-url: /ai/
+url: /ko/ai/
 keywords: "Aspose.Cells, Cloud AI, 엑셀 번역, 작업 분해, REST API"
 description: "Aspose.Cells Cloud AI를 활용해 작업을 분해하고 엑셀 워크북 및 텍스트 파일을 번역해 보세요. REST 엔드포인트, 샘플 코드, 모범 사례를 포함합니다."
 weight: 20

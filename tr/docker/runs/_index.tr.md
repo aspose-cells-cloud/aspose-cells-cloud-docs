@@ -4,7 +4,7 @@ secondtitle: "Belge"
 ArticleTitle: "Aspose.Cells Cloud Docker Konteynerini Nasıl Çalıştırılır?"
 linktitle: "Konteyner Çalıştırma"
 type: docs
-url: /run-aspose-cells-cloud-docker-container/
+url: /tr/run-aspose-cells-cloud-docker-container/
 description: "Aspose.Cells Cloud’u Windows Server 2022’de Docker konteyneri olarak nasıl başlatacağınızı öğrenin. Deneme, ölçülü faturalandırma, lisans faturalandırma, depolama yapılandırması ve sağlık kontrolü için adım adım komutlar."
 weight: 30
 keywords: "Aspose.Cells, Docker, Windows Server 2022, deneme modu, ölçülü faturalandırma, lisans faturalandırma, depolama yapılandırması"

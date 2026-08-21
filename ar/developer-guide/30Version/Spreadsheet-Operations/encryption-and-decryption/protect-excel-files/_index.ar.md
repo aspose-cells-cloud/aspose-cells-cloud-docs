@@ -3,7 +3,7 @@ title: "حماية ملفات Excel"
 second_title: "الوثيقة"
 linktype: "تشفير ملفات Excel"
 type: docs
-url: /protect-excel-files/
+url: /ar/protect-excel-files/
 aliases:
   [
     "/protect/without-storage/",

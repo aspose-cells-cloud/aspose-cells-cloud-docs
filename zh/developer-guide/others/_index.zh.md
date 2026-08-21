@@ -4,7 +4,7 @@ linktitle: "其他功能"
 ArticleTitle: "其他功能：健康检查、获取公钥"
 second_title: "文档"
 type: docs
-url: /other-features/
+url: /zh/other-features/
 keywords: "Aspose.Cells, 云 API, 健康检查, 公钥, 访问令牌, Excel, REST"
 description: "了解 Aspose.Cells Cloud 的其他功能：健康检查端点、公钥获取以及令牌生成，以保障您的 Excel API 集成安全。"
 weight: 180

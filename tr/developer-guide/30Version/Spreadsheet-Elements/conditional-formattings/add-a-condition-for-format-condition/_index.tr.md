@@ -3,7 +3,7 @@ title: Koşullu Biçimlendirmeye Koşul Ekleme
 description: Aspose.Cells Cloud REST API (v3.0) kullanarak bir çalışma sayfasının koşullu biçimlendirmesine bir koşul eklemenin nasıl yapılacağını öğrenin. Uç nokta, parametreler, kimlik doğrulama, cURL örneği, SDK kod parçacıkları ve hata işleme içerir.
 keywords: "Aspose.Cells Cloud, Koşullu Biçimlendirme, Koşul Ekle, REST API, Excel, Çalışma Sayfası"
 type: docs
-url: /conditional-formattings/add-a-condition/
+url: /tr/conditional-formattings/add-a-condition/
 aliases:
   - /add-a-condition-for-format-condition/
 weight: 40

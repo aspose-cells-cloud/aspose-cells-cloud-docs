@@ -4,7 +4,7 @@ second_title: "Document"
 articleTitle: "Comment convertir les données de tableau d’une feuille de calcul locale en fichier JSON : guide étape par étape"
 linktype: "Convertir un tableau en JSON"
 type: docs
-url: /convert-table-to-json/
+url: /fr/convert-table-to-json/
 keywords: "Excel, API, JSON, conversion, cloud, fichier, feuille de calcul"
 description: "Utilisez l’API Aspose.Cells Cloud pour transformer un tableau Excel local en fichier JSON via une seule requête PUT. Inclut un exemple cURL, les paramètres et des extraits de code SDK pour C#, Java, Python, etc."
 weight: 100

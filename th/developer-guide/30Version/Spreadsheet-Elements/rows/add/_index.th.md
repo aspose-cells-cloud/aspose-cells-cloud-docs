@@ -3,7 +3,7 @@ title: "วิธีการเพิ่มแถวลงในแผ่นง
 second_title: "เอกสาร"
 linktitle: "เพิ่ม"
 type: docs
-url: /rows/add/
+url: /th/rows/add/
 keywords: "Aspose.Cells, เพิ่มแถว, Excel API, REST, C#, Java, Python, Node.js"
 description: "คู่มือทีละขั้นตอนในการเพิ่มแถวเดียวหรือหลายแถวลงในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่างโค้ดสำหรับ C#, Java, Python และ Node.js"
 weight: 20

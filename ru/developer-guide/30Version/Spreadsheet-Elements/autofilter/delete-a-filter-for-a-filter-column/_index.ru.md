@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Удалить фильтр"
 type: docs
 url: /ru/delete-filter/
-aliases: [/ru/delete-a-filter-for-a-filter-column/, /ru/delete-auto-filter/]
+aliases: [  /ru/delete-a-filter-for-a-filter-column/ , /ru/delete-auto-filter/ ]
 keywords: "Aspose.Cells Cloud удаление фильтра, Excel, REST API, SDK"
 description: "Узнайте, как удалить Автофильтр из рабочего листа Excel с помощью Aspose.Cells Cloud REST API, cURL и SDK (C#, Java, Python и др.). Включает адрес конечной точки, параметры, аутентификацию и примеры кода."
 weight: 100

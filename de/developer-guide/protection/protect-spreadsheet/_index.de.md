@@ -4,7 +4,7 @@ second_title: "Entwicklerhandbuch für Excel-Schutz"
 ArticleTitle: "Excel-Passwortschutz-Tool – Öffnen- und Bearbeitungspasswörter festlegen – Sichern Sie Ihre Tabellenkalkulationen"
 linktitle: "Tabellenkalkulation schützen"
 type: docs
-url: /protect-spreadsheet/
+url: /de/protect-spreadsheet/
 keywords: "Aspose.Cells, Excel-Passwortschutz, API, Öffnungspasswort, Bearbeitungspasswort, Cloud-Speicherung, Tabellenkalkulationssicherheit"
 description: "Schützen Sie Excel-Dateien programmgesteuert mit Aspose.Cells Cloud. Legen Sie sowohl Öffnungs- als auch Bearbeitungspasswörter mit einem einzigen API-Aufruf fest. Unterstützt .xlsx, .xls und Cloud-Speicherung. Kostenlos testen."
 weight: 100

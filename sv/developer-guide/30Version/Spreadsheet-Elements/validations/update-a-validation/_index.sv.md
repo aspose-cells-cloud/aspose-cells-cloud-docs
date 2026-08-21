@@ -3,7 +3,7 @@ title: "Uppdatera en validering på ett Excel-arbetsblad"
 second_title: "Dokument"
 linktitle: "Uppdatera"
 type: docs
-url: /validations/update/
+url: /sv/validations/update/
 keywords: "Aspose.Cells Cloud, uppdatering av Excel-validering, REST API, validering av arbetsblad, Excel API"
 description: "Hur man uppdaterar en validering på ett Excel-arbetsblad med Aspose.Cells Cloud REST API, med cURL-exempel och SDK-kodsnuttar för flera programmeringsspråk."
 weight: 10

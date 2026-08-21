@@ -3,8 +3,8 @@ title: "Сортировка данных диапазона на листе Exc
 second_title: "Документ"
 linktitle: "Сортировка"
 type: docs
-url: /worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
+url: /ru/worksheets/sort-data/
+aliases: [  /ru/sort-worksheet-data/ ]
 keywords: "Aspose.Cells Cloud, API сортировки Excel, сортировка диапазона на листе, REST API, dataSorter"
 description: "Сортировка конкретного диапазона на листе Excel с помощью REST API Aspose.Cells Cloud. Включает эндпоинт, необходимые параметры, шаги аутентификации, обработку ошибок и примеры SDK."
 weight: 20

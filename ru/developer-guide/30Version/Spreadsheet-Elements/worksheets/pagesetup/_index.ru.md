@@ -3,7 +3,7 @@ title: "Настройка страницы рабочего листа"
 second_title: "Документ"
 linktitle: "Настройка страницы"
 type: docs
-url: /page-setup/
+url: /ru/page-setup/
 keywords: "Aspose.Cells, pageSetup, рабочий лист, параметры печати, поля, ориентация, размер бумаги, заголовок, подвал, масштабирование"
 description: "Узнайте, как настроить макет печати рабочего листа Excel с помощью объекта PageSetup облачного решения Aspose.Cells Cloud. Включает список свойств, значения по умолчанию, диапазоны и примеры кода на C#, Java и Python."
 weight: 20

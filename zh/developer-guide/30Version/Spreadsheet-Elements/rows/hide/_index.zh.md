@@ -3,8 +3,8 @@ title: "隐藏 Excel 工作表中的行"
 second_title: "文档"
 linktitle: "隐藏"
 type: docs
-url: /rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
+url: /zh/rows/hide/
+aliases: [  /zh/hide-rows-in-excel-worksheet/ ]
 keywords: "隐藏行, Aspose.Cells Cloud, Excel API, REST, SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API 隐藏 Excel 工作表中的一行或多行。包含 cURL 示例、SDK 代码片段、参数说明、身份验证方式、响应详情及错误处理。"
 weight: 40

@@ -1,8 +1,8 @@
 ---
 title: "Uppdatera diagramegenskaper"
 type: docs
-url: /charts/properties/update/
-aliases: [/update-chart-properties/]
+url: /sv/charts/properties/update/
+aliases: [  /sv/update-chart-properties/ ]
 weight: 160
 keywords: "Aspose.Cells, diagram, uppdatera, Excel, REST API, SDK"
 description: "Lär dig hur du uppdaterar diagramegenskaper (typ, titel, legend etc.) i en Excel-arbetsbok med Aspose.Cells Cloud REST API (v3.0). Inkluderar slutpunkt, parametrar, cURL-exempel och SDK-utdrag för C#, Java, PHP, Ruby, Node.js, Perl och Go."

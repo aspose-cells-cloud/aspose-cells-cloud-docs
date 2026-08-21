@@ -3,7 +3,7 @@ title: "File di richiesta supporto nell'API di Task"
 second_title: "Documenti"
 type: docs
 url: /it/tasks/support-request-file/
-aliases: [/it/support-request-file-in-task-api/]
+aliases: [  /it/support-request-file-in-task-api/ ]
 keywords: "Aspose.Cells, API REST, Excel, Cloud"
 description: "L'API Cloud Aspose.Cells consente l'elaborazione basata su task dei file di richiesta per cartelle di lavoro Excel."
 weight: 10

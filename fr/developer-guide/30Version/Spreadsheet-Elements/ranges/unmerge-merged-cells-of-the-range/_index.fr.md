@@ -3,8 +3,8 @@ title: "Dissocier les cellules dans une plage"
 second_title: "Document"
 linktype: "Dissocier"
 type: docs
-url: /ranges/unmerge/
-aliases: [/unmerge-merged-cells-of-the-range/]
+url: /fr/ranges/unmerge/
+aliases: [  /fr/unmerge-merged-cells-of-the-range/ ]
 keywords: "Aspose.Cells Cloud, dissocier les cellules, API Excel, plage de feuille de calcul, API REST"
 description: "Découvrez comment utiliser l’API Aspose.Cells Cloud pour dissocier les cellules fusionnées dans une plage spécifique d’une feuille de calcul Excel. Inclut l’endpoint, les paramètres, des exemples cURL et des extraits de code SDK pour C#, Java, Python, et plus encore."
 weight: 20

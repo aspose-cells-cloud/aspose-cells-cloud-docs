@@ -3,8 +3,8 @@ title: "คำนวณสูตรในแผ่นงาน Excel"
 second_title: "เอกสาร"
 linktype: "คำนวณ"
 type: docs
-url: /worksheets/calculate-formula/
-aliases: [/calculate-formula-in-a-worksheet/]
+url: /th/worksheets/calculate-formula/
+aliases: [  /th/calculate-formula-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, การคำนวณสูตร, REST API, SDKs, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
 description: "คำนวณสูตรในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API รองรับ SDK หลายภาษา (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift) พร้อมตัวอย่างที่ใช้งานได้ทันที"
 weight: 20

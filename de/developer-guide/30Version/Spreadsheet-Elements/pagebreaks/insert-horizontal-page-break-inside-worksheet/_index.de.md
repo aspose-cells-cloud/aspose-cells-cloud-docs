@@ -3,8 +3,8 @@ title: "Horizontale Seitenumbruch hinzufügen"
 second_title: "Dokument"
 linktitle: "Horizontale Seitenumbruch hinzufügen"
 type: docs
-url: /page-breaks/add-horizontal-page-break/
-aliases: [/insert-horizontal-page-break-inside-worksheet/]
+url: /de/page-breaks/add-horizontal-page-break/
+aliases: [  /de/insert-horizontal-page-break-inside-worksheet/ ]
 keywords: "horizontale Seitenumbruch, Aspose.Cells Cloud, Excel API, REST, SDK, Arbeitsblatt, cURL"
 description: "Erfahren Sie, wie Sie mithilfe der Aspose.Cells Cloud REST API einen horizontale Seitenumbruch in ein Excel-Arbeitsblatt einfügen. Enthält Anforderungsdetails, ein cURL-Beispiel und SDK-Code-Snippets für mehrere Programmiersprachen."
 weight: 30

@@ -3,7 +3,7 @@ title: "ลบพื้นหลังออกจากสมุดงาน Ex
 second_title: "เอกสาร"
 linktitle: "ลบ"
 type: docs
-url: /delete-background-in-excel-file/
+url: /th/delete-background-in-excel-file/
 aliases:
   - /delete-background-in-workbook/
   - /workbook/delete-background/

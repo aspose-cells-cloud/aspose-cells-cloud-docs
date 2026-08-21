@@ -3,8 +3,8 @@ title: "Supprimer toutes les propriétés du document"
 second_title: "Document"
 linktitle: "Effacer"
 type: docs
-url: /document-properties/clear/
-aliases: [/remove-all-document-properties/]
+url: /fr/document-properties/clear/
+aliases: [  /fr/remove-all-document-properties/ ]
 keywords: "Aspose.Cells, suppression des propriétés de document, effacement des propriétés Excel, API REST, SDK cloud, feuille de calcul, référence d’API"
 description: "Guide étape par étape pour supprimer toutes les propriétés personnalisées et effacer les propriétés intégrées d’un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud."
 weight: 58

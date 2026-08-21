@@ -2,7 +2,7 @@
 title: "Excel-Dateien im Batch schützen"
 second_title: "Dokument"
 type: docs
-url: /batch/protect
+url: /de/batch/protect
 keywords: "Excel-Dateien im Batch schützen, Aspose Cells Cloud, REST-API, Excel-Schutz, Batch-Schutz"
 description: "Erfahren Sie, wie Sie die Aspose.Cells Cloud REST-API verwenden, um mehrere Excel-Dateien im Batch zu schützen. Enthält Anforderungsdetails, cURL-Beispiel und SDK-Codebeispiele für verschiedene Sprachen."
 weight: 100

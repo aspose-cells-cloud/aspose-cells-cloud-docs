@@ -2,8 +2,8 @@
 title: "SaveResult Görevi ile Çalışmak"
 second_title: "Belge"
 type: docs
-url: /tasks/save-result/
-aliases: [/working-with-saveresult-task/]
+url: /tr/tasks/save-result/
+aliases: [  /tr/working-with-saveresult-task/ ]
 keywords: "SaveResult görevi, Aspose.Cells Cloud API, sonuç dışa aktarımı, çalışma kitabını indirme, bulut depolama, REST API, elektronik tablolar, Excel"
 description: "Aspose.Cells Cloud API’de SaveResult görevini kullanarak işlenmiş çalışma kitabı verilerini bulut depolama alanına dışa aktarmanın veya doğrudan indirmenin yöntemlerini öğrenin. cURL, Java, .NET örnekleri ve tüm parametre referansını içerir."
 weight: 50

@@ -3,8 +3,8 @@ title: "Excelワークシートで行を表示状態に戻す"
 second_title: "Document"
 linktitle: "Unhide"
 type: docs
-url: /rows/unhide/
-aliases: [/unhide-rows-in-excel-worksheet/]
+url: /ja/rows/unhide/
+aliases: [  /ja/unhide-rows-in-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, 行を表示状態に戻す, REST API, スプレッドシート, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートの行を表示状態に戻します。この API は、.NET、Java、Python、Node.js、Ruby、Go、PHP、Perl、Swift などの複数の SDK を通じて利用できます。"
 weight: 50

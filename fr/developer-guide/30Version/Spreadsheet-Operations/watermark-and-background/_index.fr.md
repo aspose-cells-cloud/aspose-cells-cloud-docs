@@ -3,8 +3,8 @@ title: "Insérer des filigranes ou définir des arrière-plans dans des fichiers
 second_title: "Document"
 linktitle: "Filigrane et arrière-plan"
 type: docs
-url: /watermark-and-background/
-aliases: [ /export/excel-chart-to-different-formats/，/workbook/background/]
+url: /fr/watermark-and-background/
+aliases: [  /fr/export/excel-chart-to-different-formats/，/workbook/background/ ]
 keywords: "Aspose.Cells Cloud, Excel, Filigrane, Arrière-plan, API REST"
 description: "L’API REST Aspose.Cells Cloud permet aux développeurs d’ajouter, supprimer et gérer les arrière-plans et les filigranes dans des classeurs Excel. Les langages pris en charge incluent Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby et Swift."
 weight: 20

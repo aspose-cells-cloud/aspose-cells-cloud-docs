@@ -4,7 +4,7 @@ ArticleTitle: "อัปเดตวัตถุรายการในสม�
 second_title: "เอกสาร"
 linktype: "อัปเดต"
 type: docs
-url: /list-objects/update/
+url: /th/list-objects/update/
 aliases:
   - /update-a-list-object-or-table-inside-the-worksheet/
   - /tables/update/

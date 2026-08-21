@@ -2,7 +2,7 @@
 title: "Daten mit Speicher importieren"
 second_title: "Dokument"
 linktype: docs
-url: /import-data-with-using-storage/
+url: /de/import-data-with-using-storage/
 aliases:
   - /import-data-into-excel-worksheet/
   - /import-data-into-worksheet/

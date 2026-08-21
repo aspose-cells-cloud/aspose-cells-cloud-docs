@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Plateforme d’intégration multi-source de données Excel – API Aspose.Cells Cloud d’importation et de transformation automatisée des données."
 linktitle: "Importer des données dans un classeur"
 type: docs
-url: /import-data-into-spreadsheet/
+url: /fr/import-data-into-spreadsheet/
 keywords: "Aspose Cells, API d’importation de données, CSV vers Excel, JSON vers Excel, XML vers Excel, classeur cloud, API REST"
 description: "Importez des données CSV, JSON ou XML dans des classeurs Excel à l’aide de l’API REST Aspose.Cells Cloud. Découvrez le format des requêtes, les paramètres, des exemples de code avec les SDK et la gestion des erreurs."
 weight: 100

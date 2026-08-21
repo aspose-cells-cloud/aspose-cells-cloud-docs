@@ -1,7 +1,7 @@
 ---
 title: "الحصول على رابط تشعبي في ورقة العمل"
 type: docs
-url: /hyperlinks/get/
+url: /ar/hyperlinks/get/
 keywords: "Aspose.Cells Cloud, الحصول على رابط تشعبي في ورقة العمل, API للروابط التشعبية في Excel, REST, المصادقة بـ JWT, ورقة عمل Excel, نقطة نهاية API"
 description: "استرجاع رابط تشعبي محدد من ورقة عمل Excel باستخدام Aspose.Cells Cloud API (الإصدار 3.0). يتضمن نقطة النهاية، المعلمات، مثال باستخدام cURL، تفاصيل المصادقة، التعامل مع الأخطاء، وأكواد مقتطفات من SDKs."
 weight: 10

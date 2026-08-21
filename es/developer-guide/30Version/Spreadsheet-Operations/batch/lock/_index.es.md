@@ -2,7 +2,7 @@
 title: "Bloqueo por lotes de archivos Excel"
 second_title: "Documento"
 type: docs
-url: /batch/lock
+url: /es/batch/lock
 keywords: "bloqueo por lotes, Excel, Aspose.Cells, API en la nube, hoja de cálculo, protección de archivos"
 description: "La API de Aspose.Cells en la nube permite el bloqueo por lotes de múltiples archivos Excel. Utilice el punto de conexión REST o cualquiera de los SDK admitidos (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, etc.) para bloquear archivos en masa."
 weight: 100

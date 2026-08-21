@@ -1,7 +1,7 @@
 ---
 title: "Rensa cellformatering i ett Excel-ark"
 type: docs
-url: /clear-cells-formatting-in-excel-worksheet/
+url: /sv/clear-cells-formatting-in-excel-worksheet/
 weight: 100
 keywords: "Aspose.Cells Cloud, Excel, Rensa cellformatering, REST API, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Använd Aspose.Cells Cloud REST API för att rensa cellformatering i ett Excel-ark. Innehåller begärandedetaljer, ett cURL-exempel och SDK-kodavsnitt för flera språk."

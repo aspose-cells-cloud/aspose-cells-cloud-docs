@@ -1,7 +1,7 @@
 ---
 title: "チャートのカテゴリ軸を取得する"
 type: docs
-url: /charts/category-axis/get/
+url: /ja/charts/category-axis/get/
 weight: 60
 keywords: "Aspose.Cells, チャートのカテゴリ軸, Excel, REST API, クラウドストレージ, OAuth2, APIドキュメント"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシート内のチャートのカテゴリ軸を取得します。"

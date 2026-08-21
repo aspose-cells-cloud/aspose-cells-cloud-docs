@@ -3,8 +3,8 @@ title: "删除 Excel 工作表中的一行"
 second_title: "文档"
 linktitle: "行"
 type: docs
-url: /rows/delete/row/
-aliases: [/delete-row-from-a-worksheet/]
+url: /zh/rows/delete/row/
+aliases: [  /zh/delete-row-from-a-worksheet/ ]
 description: "使用 DELETE /worksheets/{sheetName}/cells/rows/{rowIndex} 端点，通过 Aspose.Cells Cloud REST API 从 Excel 工作表中删除指定行。包含 cURL 命令、SDK 示例及完整的参数参考。"
 keywords: "Aspose.Cells, 删除行, Excel, API, REST, 云, SDK"
 weight: 80

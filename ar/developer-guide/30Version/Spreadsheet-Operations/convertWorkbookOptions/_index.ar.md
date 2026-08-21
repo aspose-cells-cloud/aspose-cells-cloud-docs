@@ -3,7 +3,7 @@ title: "خيارات تحويل مصنف"
 second_title: "المستند"
 linktitle: "خيارات تحويل مصنف"
 type: docs
-url: /convert-workbook-options/
+url: /ar/convert-workbook-options/
 keywords: "Aspose.Cells, ConvertWorkbookOptions, تحويل Excel, PDF, CSV, API"
 description: "خيارات تحويل مصنف – قم بتهيئة تحويل مصنفات Excel إلى تنسيقات مثل PDF وCSV وHTML وغيرها باستخدام واجهة برمجة التطبيقات (API) الخاصة بـ Aspose.Cells Cloud."
 weight: 79

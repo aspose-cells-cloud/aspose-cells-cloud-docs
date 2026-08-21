@@ -3,8 +3,8 @@ title: "Получение конкретного свойства докуме�
 second_title: "Документ"
 linktitle: "Получить"
 type: docs
-url: /document-properties/get/
-aliases: [/get-a-particular-document-property/]
+url: /ru/document-properties/get/
+aliases: [  /ru/get-a-particular-document-property/ ]
 keywords: "Aspose.Cells, облачный API, получение свойства документа, метаданные Excel, REST GET, примеры SDK"
 description: "Получение именованного свойства документа (например, Автор, Заголовок) из файла Excel с использованием облачного REST API Aspose.Cells. Включает пример cURL, фрагменты кода SDK и схему ответа."
 weight: 20

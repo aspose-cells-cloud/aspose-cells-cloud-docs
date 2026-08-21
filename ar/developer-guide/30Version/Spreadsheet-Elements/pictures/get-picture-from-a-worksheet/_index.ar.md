@@ -3,8 +3,8 @@ title: "الحصول على جميع الصور في ورقة عمل Excel"
 second_title: "مستند"
 linktitle: "الحصول على الكل"
 type: docs
-url: /pictures/get-all/
-aliases: [/get-picture-from-a-worksheet/]
+url: /ar/pictures/get-all/
+aliases: [  /ar/get-picture-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud، ورقة عمل Excel، واجهة برمجة تطبيقات الصور، الحصول على جميع الصور، واجهة برمجة التطبيقات عبر الويب، وحدات التطوير البرمجي"
 description: "استرجاع جميع كائنات الصور من ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud عبر الويب."
 ArticleTitle: "الحصول على جميع الصور في ورقة عمل Excel - واجهة برمجة تطبيقات Aspose.Cells Cloud"

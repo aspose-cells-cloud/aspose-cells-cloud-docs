@@ -3,7 +3,7 @@ title: "Beräkna formel"
 ArticleTitle: "Beräkna formel – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "docs"
-url: /cells/calculate/formula
+url: /sv/cells/calculate/formula
 aliases: []
 keywords: "Aspose Cells, beräkna formel, kalkylark, API"
 description: "Beräkna formel i ett kalkylark med Aspose.Cells Cloud API."

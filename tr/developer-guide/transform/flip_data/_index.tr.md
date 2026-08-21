@@ -3,7 +3,7 @@ title: "FlipData"
 ArticleTitle: "FlipData – Aspose.Cells Cloud"
 second_title: "Belge"
 linktype: "docs"
-url: /cells/flip
+url: /tr/cells/flip
 aliases: []
 keywords: "FlipData, Dönüştürme, Aspose.Cells"
 description: "Bir hesaplama tablosu dosyasında belirtilen veri aralığını transpoze eder."

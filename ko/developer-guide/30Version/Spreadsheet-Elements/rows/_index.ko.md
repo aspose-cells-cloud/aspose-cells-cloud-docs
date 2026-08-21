@@ -4,8 +4,8 @@ ArticleTitle: "Excel 행 작업 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktitle: "행"
 type: docs
-url: /rows/
-aliases: [/working-with-rows/]
+url: /ko/rows/
+aliases: [  /ko/working-with-rows/ ]
 keywords: "Aspose.Cells, Excel 행, REST API, 스프레드시트 조작"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 파일의 행을 조작합니다. Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift를 지원합니다."
 weight: 100

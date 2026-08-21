@@ -3,8 +3,8 @@ title: "在 Excel 工作簿中查找文本"
 second_title: "文档"
 linktitle: "在工作簿中查找"
 type: docs
-url: /workbook/find-text/
-aliases: [/find-text-in-a-workbook/]
+url: /zh/workbook/find-text/
+aliases: [  /zh/find-text-in-a-workbook/ ]
 weight: 30
 keywords: "Aspose.Cells, 查找文本, Excel API, 工作簿搜索"
 description: "了解如何使用 Aspose.Cells Cloud API 在 Excel 工作簿（XLS‑X、ODS）中**查找文本**。包含 cURL 示例、SDK 代码片段及响应模式。立即开始使用。"

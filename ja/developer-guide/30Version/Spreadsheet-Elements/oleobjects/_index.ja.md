@@ -3,8 +3,8 @@ title: "Excel OLE オブジェクトの操作"
 second_title: "ドキュメント"
 linktitle: "OleObjects"
 type: docs
-url: /oleobjects/
-aliases: [/working-with-oleobjects/]
+url: /ja/oleobjects/
+aliases: [  /ja/working-with-oleobjects/ ]
 keywords: "OLE, Excel, Aspose.Cells, API, クラウド"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシート内の OLE オブジェクトを取得、追加、更新、削除、および変換します。SDK は Java、.NET、Python、PHP、Ruby、Go、Node.js、Perl、Swift、および Android 用に提供されています。"
 weight: 100

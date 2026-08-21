@@ -3,7 +3,7 @@ title: "Aspose.Cells – API de actualización de mayúsculas y minúsculas de p
 second_title: "Documentación"
 linktype: "en"
 type: docs
-url: /post-update-word-case/
+url: /es/post-update-word-case/
 keywords: "Aspose.Cells, API de actualización de mayúsculas y minúsculas de palabras, conversión de mayúsculas y minúsculas de texto, Excel, CSV, Google Sheets, API REST"
 description: "Convierta el formato de mayúsculas y minúsculas del texto en archivos de Excel, CSV o Google Sheets con la API de actualización de mayúsculas y minúsculas de palabras de Aspose.Cells Cloud. Admite conversión a mayúsculas/minúsculas, formato de título y capitalización de la primera letra."
 weight: 100

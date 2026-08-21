@@ -3,8 +3,8 @@ title: "Hochformatige Seitenumbrüche abrufen"
 second_title: "Dokument"
 linktitle: "Hochformatige Seitenumbrüche abrufen"
 type: docs
-url: /page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
+url: /de/page-breaks/get-vertical-page-breaks/
+aliases: [  /de/get-vertical-page-breaks-inside-worksheet/ ]
 keywords: "Aspose.Cells, vertikale Seitenumbrüche, Excel-API, Cloud-Tabellenkalkulation, REST-API"
 description: "Abrufen vertikaler Seitenumbrüche aus einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API (v3.0). Enthält HTTPS-Endpunkt, erforderliche Parameter, cURL-Beispiel, Antwortdetails, Fehlerbehandlung und SDK-Beispiele."
 weight: 20

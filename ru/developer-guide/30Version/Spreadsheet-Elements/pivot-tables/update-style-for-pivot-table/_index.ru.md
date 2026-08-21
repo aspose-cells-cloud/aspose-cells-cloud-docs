@@ -4,7 +4,7 @@ second_title: "Документ"
 linktype: "Форматировать все"
 type: docs
 url: /ru/pivot-tables/format-all/
-aliases: [/ru/update-style-for-pivot-table/]
+aliases: [  /ru/update-style-for-pivot-table/ ]
 keywords: "сводная таблица, обновление стиля, Aspose.Cells Cloud, REST API, Excel, электронная таблица, API, стиль сводной таблицы, форматировать все"
 description: "Узнайте, как обновить стиль всей сводной таблицы с помощью REST API Aspose.Cells Cloud. Включает подробности запроса, пример cURL и фрагменты кода SDK для множества языков программирования."
 weight: 100

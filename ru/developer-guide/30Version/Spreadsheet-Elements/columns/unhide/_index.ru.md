@@ -3,7 +3,7 @@ title: "Отмена скрытия столбцов на листе Excel"
 ArticleTitle: "Отмена скрытия столбцов на листе Excel — Aspose.Cells Cloud API"
 second_title: "Документ"
 linktype: "docs"
-url: /columns/unhide/
+url: /ru/columns/unhide/
 aliases:
   [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
 keywords: "Aspose.Cells, облачный API, отмена скрытия столбцов, Excel, REST, SDK"

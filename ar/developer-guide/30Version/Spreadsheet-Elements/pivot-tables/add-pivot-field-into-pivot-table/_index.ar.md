@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "إضافة حقل محوري"
 type: docs
 url: /ar/pivot-tables/add-pivot-field/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /ar/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, جدول محوري, إضافة حقل محوري, REST API, SDK"
 description: "إضافة حقل محوري إلى جدول محوري موجود باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن تفاصيل الطلب، مثالًا باستخدام cURL، وأكواد SDK."
 weight: 40

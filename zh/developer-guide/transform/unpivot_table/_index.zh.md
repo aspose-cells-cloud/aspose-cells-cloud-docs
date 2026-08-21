@@ -4,7 +4,7 @@ ArticleTitle: "取消透视表 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktype: "取消透视表"
 type: docs
-url: /cells/unpivot/table
+url: /zh/cells/unpivot/table
 aliases: []
 keywords: "Aspose.Cells, 取消透视, 转换"
 description: "交换电子表格中的行和列。"

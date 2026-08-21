@@ -3,8 +3,8 @@ title: "Mover un rango con nombre en una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Mover"
 type: docs
-url: /ranges/move/
-aliases: [/move-a-named-range-with-an-excel-worksheet/]
+url: /es/ranges/move/
+aliases: [  /es/move-a-named-range-with-an-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, mover rango con nombre, hoja de cálculo de Excel, API REST, mover rango, ejemplos de SDK"
 description: "Aprenda a mover un rango con nombre dentro de una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud v3.0, incluyendo detalles del endpoint, autenticación, ejemplos y códigos de muestra en SDK."
 weight: 20

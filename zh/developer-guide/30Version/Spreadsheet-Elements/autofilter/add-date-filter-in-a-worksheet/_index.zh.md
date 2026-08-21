@@ -3,7 +3,7 @@ title: "向 Excel 工作表添加日期筛选器"
 second_title: "文档"
 linktitle: "添加日期筛选器"
 type: docs
-url: /autofilter/add-date-filter/
+url: /zh/autofilter/add-date-filter/
 aliases:
   - /add-date-filter-in-a-worksheet/
   - /autofilter/add-a-date-filter/

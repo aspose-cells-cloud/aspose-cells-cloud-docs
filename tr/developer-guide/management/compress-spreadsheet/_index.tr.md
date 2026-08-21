@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Excel Dosyalarını Nasıl Sıkıştırılır – Elektronik Tablo Boyutunu Azaltın ve Performansı Eniyileyin"
 linktitle: "Elektronik Tabloyu Sıkıştır"
 type: docs
-url: /compress-spreadsheet/
+url: /tr/compress-spreadsheet/
 keywords: "Excel sıkıştırma, Aspose.Cells Cloud, elektronik tablo boyutu azaltma, API, çalışma kitabını optimize etme"
 description: "Aspose.Cells Cloud API ile Excel çalışma kitaplarını nasıl sıkıştıracağınızı öğrenin. Adım adım örnekler, parametreler, kimlik doğrulama ve en iyi uygulamaları edinin."
 weight: 100

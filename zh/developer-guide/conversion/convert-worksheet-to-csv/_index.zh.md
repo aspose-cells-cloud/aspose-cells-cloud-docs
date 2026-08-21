@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何使用 Aspose.Cells Cloud API 将电子表格工作表转换为 CSV"
 linktype: "将工作表转换为 CSV"
 type: docs
-url: /convert-worksheet-to-csv/
+url: /zh/convert-worksheet-to-csv/
 keywords: "Aspose.Cells, CSV 转换, 工作表转 CSV, REST API, 云电子表格, Excel 转 CSV"
 description: "了解如何使用 Aspose.Cells Cloud API（v4.0）将 Excel 文件中的特定工作表转换为 CSV。内容包括端点、参数、示例 cURL、SDK 代码及错误处理。"
 weight: 100

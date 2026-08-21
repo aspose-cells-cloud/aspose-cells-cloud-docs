@@ -3,8 +3,8 @@ title: "Gruppierung von Zeilen in einem Excel-Arbeitsblatt aufheben"
 second_title: "Dokument"
 linktitle: "Gruppierung aufheben"
 type: docs
-url: /rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
+url: /de/rows/ungroup/
+aliases: [  /de/ungroup-rows-in-excel-worksheet/ ]
 keywords: "Zeilengruppierung aufheben, Excel, Aspose.Cells Cloud, REST API, SDK, Tabellenkalkulation"
 description: "Erfahren Sie, wie Sie die Gruppierung von Zeilen in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API und SDKs für verschiedene Programmiersprachen aufheben."
 weight: 70

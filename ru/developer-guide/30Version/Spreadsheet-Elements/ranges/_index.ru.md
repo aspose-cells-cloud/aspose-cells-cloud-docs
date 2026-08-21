@@ -3,8 +3,8 @@ title: "Работа с диапазонами в Excel"
 second_title: "Документ"
 linktype: "Диапазон"
 type: docs
-url: /ranges/
-aliases: [/working-with-ranges/]
+url: /ru/ranges/
+aliases: [  /ru/working-with-ranges/ ]
 keywords: "Aspose.Cells, диапазон Excel, REST API, SDK, .NET, Java, Python, объединение ячеек, копирование диапазона, установка значения диапазона"
 description: "Узнайте, как извлекать, изменять, стилизовать, объединять, перемещать и копировать диапазоны в Excel с помощью Aspose.Cells Cloud REST API. Включает примеры кода SDK для .NET, Java, Python и других платформ."
 weight: 100

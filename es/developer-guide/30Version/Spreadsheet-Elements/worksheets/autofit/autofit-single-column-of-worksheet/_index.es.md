@@ -3,8 +3,8 @@ title: "Ajustar automáticamente una columna en Excel con la API de Aspose.Cells
 second_title: "Documento"
 linktitle: "Columna"
 type: docs
-url: /worksheets/autofit/column/
-aliases: [/autofit-single-column-of-worksheet/]
+url: /es/worksheets/autofit/column/
+aliases: [  /es/autofit-single-column-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, ajustar automáticamente columna, API de Excel, API REST, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Aprenda a redimensionar automáticamente una columna (o rango de columnas) en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye ejemplos con cURL y SDK (C#, Java, Python, etc.) y detalles completos sobre la solicitud y respuesta."
 weight: 10

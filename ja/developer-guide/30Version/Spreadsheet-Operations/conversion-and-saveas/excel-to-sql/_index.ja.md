@@ -3,7 +3,7 @@ title: "ExcelからSQLへ"
 second_title: "ドキュメント"
 linktitle: "ExcelからSQLへ"
 type: docs
-url: /convert-excel-file-to-sql-file/
+url: /ja/convert-excel-file-to-sql-file/
 keywords: "Aspose.Cells, Excel to SQL, クラウドAPI, スプレッドシート変換, REST"
 description: "Aspose.Cells Cloud REST APIを使用して、ExcelスプレッドシートをSQLファイルに変換します。複数のSDKおよびプログラミング言語をサポートし、アプリケーションへのシームレスな統合を実現します。"
 weight: 100

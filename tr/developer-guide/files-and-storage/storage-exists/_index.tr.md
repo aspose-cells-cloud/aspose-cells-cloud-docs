@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Bulut Tabanlı Excel Dosyası Yönetimi – Depolama Varlığını Kontrol Etme"
 linktitle: "Depolama Var"
 type: docs
-url: /storage-exists/
+url: /tr/storage-exists/
 keywords: "Aspose.Cells, depolama var, bulut depolama API'si, REST, Excel"
 description: "Aspose.Cells Cloud'da bir depolama kapsayıcısının varlığını doğrulayın. GET /v4.0/cells/storage/{storageName}/exist uç noktasını, gerekli parametreleri, yanıt formatını öğrenin ve C#, Java, Python ve diğerleri için SDK örneklerini görün."
 weight: 100

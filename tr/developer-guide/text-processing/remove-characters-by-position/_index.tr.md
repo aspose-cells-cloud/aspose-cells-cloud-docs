@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Excel Pozisyon Tabanlı Karakter Silici – Belirli Konumlardan Metin Silme – Çevrimiçi Kısa Kod"
 linktitle: "Pozisyona Göre Karakterleri Sil"
 type: docs
-url: /remove-characters-by-position/
+url: /tr/remove-characters-by-position/
 keywords: "Aspose.Cells Cloud, pozisyona göre karakter silme, Excel metin temizleme, ilk N karakteri silme, son N karakteri silme, belirleyici metinden önceki metni silme, belirleyici metinden sonraki metni silme, aradaki değerlerin silinmesi"
 description: "Aspose.Cells Cloud Web API’sini kullanarak Excel hücrelerinden pozisyona göre karakterler silin—ilk/son N karakteri veya belirli belirleyicilerden önceki/sonraki metni yüksek doğrulukla silin."
 weight: 100

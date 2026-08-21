@@ -1,8 +1,8 @@
 ---
 title: "แสดงคำอธิบายกราฟในเวิร์กชีต"
 type: docs
-url: /charts/legend/show/
-aliases: [/show-chart-legend-in-a-worksheet/]
+url: /th/charts/legend/show/
+aliases: [  /th/show-chart-legend-in-a-worksheet/ ]
 weight: 100
 keywords: "Aspose.Cells Cloud, API คำอธิบายกราฟ, คำอธิบายกราฟ Excel, REST PUT คำอธิบายกราฟ, Aspose API v3.0"
 description: "เรียนรู้วิธีแสดงคำอธิบายกราฟในเวิร์กชีต Excel โดยใช้ Aspose.Cells Cloud REST API (v3.0) ซึ่งประกอบด้วยรายละเอียดของ endpoint, พารามิเตอร์, ตัวอย่าง cURL และตัวอย่างโค้ด SDK"

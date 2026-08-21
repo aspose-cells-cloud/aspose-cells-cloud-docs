@@ -3,8 +3,8 @@ title: "Çalışma Kitabını Dışa Aktar"
 second_title: "Belge"
 linktitle: "Çalışma Kitabı"
 type: docs
-url: /export-excel-to-different-formats/
-aliases: [/export/excel-to-different-formats/]
+url: /tr/export-excel-to-different-formats/
+aliases: [  /tr/export/excel-to-different-formats/ ]
 keywords: "Aspose.Cells Cloud, Excel dışa aktarma, çalışma kitaplığı dönüştürme, PDF, CSV, JSON, görüntü formatları, elektronik tablo API'si, XLSX, ODS, PNG"
 description: "Aspose.Cells Cloud REST API ve SDK'larını kullanarak Excel çalışma kitaplarını PDF, CSV, JSON ve çeşitli görüntü türleri dahil olmak üzere birden fazla forma dışa aktarma adım adım kılavuzu."
 weight: 20

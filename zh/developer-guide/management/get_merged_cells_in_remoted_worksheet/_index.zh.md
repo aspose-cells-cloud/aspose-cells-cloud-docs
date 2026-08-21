@@ -4,7 +4,7 @@ ArticleTitle: "获取远程工作表中的合并单元格 – Aspose.Cells Cloud
 second_title: "文档"
 linktitle: "获取远程工作表中的合并单元格"
 type: docs
-url: /cells/mergedcells/get
+url: /zh/cells/mergedcells/get
 aliases: []
 keywords: "Aspose Cells, 获取合并单元格, 远程工作表, API"
 description: "从电子表格中的远程工作表获取所有合并单元格区域。"

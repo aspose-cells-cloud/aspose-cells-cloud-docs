@@ -3,7 +3,7 @@ title: "Экспорт листа с помощью Aspose.Cells Cloud API — �
 second_title: "Документ"
 linktitle: "Экспорт листа"
 type: docs
-url: /worksheets/get-worksheet/
+url: /ru/worksheets/get-worksheet/
 keywords: "Aspose.Cells Cloud Get Worksheet, экспорт листа, Excel API, REST, CSV, PDF, PNG, JPEG, GIF, BMP, TIFF, EMF, XPS, OTS, XLS, XLSX, XLSB, XLSM, ODS, FODS, Numbers, cloud API"
 description: "Узнайте, как экспортировать один лист из файла Excel с помощью Aspose.Cells Cloud REST API. Включает endpoint, параметры, исправленный пример cURL, данные об аутентификации, обработку ошибок и фрагменты кода SDK для C#, Java, Python и других языков."
 weight: 10

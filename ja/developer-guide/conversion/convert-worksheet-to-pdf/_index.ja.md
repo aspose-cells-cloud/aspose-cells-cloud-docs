@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "ローカルのスプレッドシートワークシートをPDFファイルに変換する方法：ステップ・バイ・ステップ・ガイド"
 linktitle: "ワークシートをPDFに変換"
 type: docs
-url: /convert-worksheet-to-pdf/
+url: /ja/convert-worksheet-to-pdf/
 keywords: "Aspose.Cells, Excel to PDF, worksheet conversion, REST API, cloud conversion, spreadsheet PDF, API endpoint, PDF generation"
 description: "Aspose.Cells Cloud APIを使用して、ローカルのExcelファイルのワークシートを迅速かつ安全にPDFドキュメントに変換します。"
 weight: 100

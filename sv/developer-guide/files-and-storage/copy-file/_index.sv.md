@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Excel-filhantering i molnet – Detaljerad förklaring av Aspose.Cells Copy File API:s batchkopieringsfunktion"
 linktitle: "Kopiera fil"
 type: docs
-url: /copy-file/
+url: /sv/copy-file/
 keywords: "Aspose.Cells, CopyFile API, kopiera Excel-fil, molnlagring, REST API"
 description: "Lär dig hur du använder Aspose.Cells Cloud CopyFile API för att effektivt duplicera Excel-filer och hantera dem mellan olika lagringsplatser."
 weight: 100

@@ -4,7 +4,7 @@ ArticleTitle: "Поиск недействующих ссылок в удалё�
 second_title: "Документ"
 linktitle: "Поиск недействующих ссылок в удалённом листе"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/search/broken-links
+url: /ru/cells/{name}/worksheets/{worksheet}/search/broken-links
 aliases: []
 keywords: "Aspose.Cells, поиск недействующих ссылок, удалённый лист"
 description: "Поиск недействующих ссылок в листе внешней электронной таблицы."

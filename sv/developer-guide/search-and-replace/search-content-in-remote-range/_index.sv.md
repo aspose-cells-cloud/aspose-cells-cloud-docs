@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Sök text i fjärranslutna Excel-kalkylark – Hitta data i specifika intervall"
 linktitle: "Sök i fjärrintegritetsinnehåll"
 type: docs
-url: /search-content-in-remote-range/
+url: /sv/search-content-in-remote-range/
 keywords: "Aspose.Cells, Excel-API, sök text, fjärrintervall, molnkalkylark, REST-API, datadisposition"
 description: "Sök efter text, siffror eller formler i ett specifikt intervall av en Excel-arbetsbok som lagras i Aspose Cloud."
 weight: 100

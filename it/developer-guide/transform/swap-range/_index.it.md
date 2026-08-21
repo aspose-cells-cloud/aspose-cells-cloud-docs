@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Scambia/Interscambia dati tra colonne, righe e celle in Excel"
 linktitle: "Scambia intervallo"
 type: docs
-url: /swap-range/
+url: /it/swap-range/
 keywords: "Aspose Cells, API Excel, Scambia intervallo, foglio di calcolo cloud"
 description: "Scambia colonne, righe o intervalli in file Excel tramite l'API Aspose.Cells Cloud. Preserva formattazione, formule e riferimenti alle celle in una singola richiesta."
 weight: 100

@@ -3,8 +3,8 @@ title: "Excel チャートの操作"
 second_title: "ドキュメント"
 linktitle: "チャート"
 type: docs
-url: /charts/
-aliases: [/working-with-charts/]
+url: /ja/charts/
+aliases: [  /ja/working-with-charts/ ]
 keywords: "Aspose, Cells, Excel, チャート, API, REST, クラウド, スプレッドシート"
 description: "Aspose.Cells Cloud API を使用して Excel チャートを管理する方法を学びます。チャートの取得、追加、更新、削除、および画像への変換のためのステップ・バイ・ステップ・ガイド、コード・サンプル、エラー処理について解説します。"
 weight: 100

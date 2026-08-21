@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Säkerställ Excel"
 type: docs
 url: /sv/protect/
-aliases: [/sv/workbook/password/]
+aliases: [  /sv/workbook/password/ ]
 keywords: "Excel, säkerställ, kryptera, dekryptera, digital signatur, Aspose.Cells Cloud, REST API, lösenord, säkerhet"
 description: "Lär dig hur du säkerställer, krypterar, dekrypterar och digitalt signerar Excel-arbetsböcker med Aspose.Cells Cloud REST API – kodexempel för Android, C#, Java, Python och mer."
 ArticleTitle: "Kryptera, dekryptera, digitalt signera och säkerställ Excel-filer med Aspose.Cells Cloud API"

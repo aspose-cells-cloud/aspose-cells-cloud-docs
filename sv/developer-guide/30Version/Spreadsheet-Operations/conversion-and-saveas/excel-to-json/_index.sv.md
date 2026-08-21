@@ -3,7 +3,7 @@ title: "Excel till JSON"
 second_title: "Dokument"
 linktitle: "Excel till JSON"
 type: docs
-url: /convert-excel-file-to-json-file/
+url: /sv/convert-excel-file-to-json-file/
 keywords: "Aspose.Cells, Excel till JSON, molntjänst, kalkylbladskonvertering, REST API"
 description: "Lär dig hur du konverterar Excel-kalkylblad till JSON-filer med Aspose.Cells Cloud REST API. Innehåller cURL-exempel, SDK-snuttar (C#, Java, Python), nödvändiga parametrar, autentisering och svarsformat."
 weight: 100

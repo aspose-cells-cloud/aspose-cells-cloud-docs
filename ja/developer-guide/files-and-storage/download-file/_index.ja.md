@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud ファイルダウンロード API – クラウド上で高速にファイルをダウンロードするためのインターフェース"
 linktitle: "ファイルダウンロード API"
 type: docs
-url: /download-file/
+url: /ja/download-file/
 keywords: "Aspose.Cells, ファイルダウンロード API, Excel クラウドストレージ, REST API, ファイルダウンロード, PDF, CSV, SDK"
 description: "Aspose.Cells Cloud ストレージから Excel、PDF、CSV およびその他のファイルを Download File API（v4.0）でダウンロードします。エンドポイント、パラメーター、認証詳細、コードサンプルを含みます。"
 weight: 100

@@ -3,8 +3,8 @@ title: "Hämta alla bilder i ett Excel-ark"
 second_title: "Dokument"
 linktype: "get-all"
 type: docs
-url: /pictures/get-all/
-aliases: [/get-picture-from-a-worksheet/]
+url: /sv/pictures/get-all/
+aliases: [  /sv/get-picture-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel-ark, bild-API, hämta alla bilder, REST API, SDK"
 description: "Hämta alla bildobjekt från ett Excel-ark via Aspose.Cells Cloud REST API."
 ArticleTitle: "Hämta alla bilder i ett Excel-ark - Aspose.Cells Cloud API"

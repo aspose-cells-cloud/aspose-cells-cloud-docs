@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Come convertire i dati locali di una tabella in foglio elettronico in un file JSON: Guida passo-passo"
 linktype: "Converti tabella in JSON"
 type: docs
-url: /convert-table-to-json/
+url: /it/convert-table-to-json/
 keywords: "Excel, API, JSON, conversione, cloud, file, foglio elettronico"
 description: "Utilizza l'API Aspose.Cells Cloud per trasformare una tabella Excel locale in un file JSON in una singola richiesta PUT. Include un esempio cURL, i parametri e frammenti di codice SDK per C#, Java, Python e altri linguaggi."
 weight: 100

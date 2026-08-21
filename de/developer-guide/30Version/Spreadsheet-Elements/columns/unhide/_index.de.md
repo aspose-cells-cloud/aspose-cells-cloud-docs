@@ -3,7 +3,7 @@ title: "Spalten in einem Excel-Arbeitsblatt einblenden"
 ArticleTitle: "Spalten in einem Excel-Arbeitsblatt einblenden – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "docs"
-url: /columns/unhide/
+url: /de/columns/unhide/
 aliases:
   [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
 keywords: "Aspose.Cells, Cloud API, Spalten einblenden, Excel, REST, SDK"

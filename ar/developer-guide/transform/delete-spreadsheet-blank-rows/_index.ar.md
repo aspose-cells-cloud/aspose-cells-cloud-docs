@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "كيف تحذف جميع الصفوف الفارغة في إكسل – دليل شامل لإزالة البيانات غير المرغوب فيها"
 linktype: "حذف الصفوف الفارغة"
 type: docs
-url: /delete-spreadsheet-blank-rows/
+url: /ar/delete-spreadsheet-blank-rows/
 keywords: "Aspose.Cells, Excel, صفوف فارغة, حذف الصفوف, تنظيف جداول البيانات, API"
 description: "أزل جميع الصفوف الفارغة من ملفات إكسل باستخدام واجهة Aspose.Cells Cloud API. سريع، جاهز للمعالجة الدُفعية، وقابل للبرمجة بالكامل – شاهد أمثلة كود بلغات C# وJava وPython وغيرها."
 weight: 100

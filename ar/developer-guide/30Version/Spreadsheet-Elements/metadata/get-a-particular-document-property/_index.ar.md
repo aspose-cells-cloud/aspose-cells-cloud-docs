@@ -3,8 +3,8 @@ title: "الحصول على خاصية مستند محددة"
 second_title: "المستند"
 linktitle: "الحصول على"
 type: docs
-url: /document-properties/get/
-aliases: [/get-a-particular-document-property/]
+url: /ar/document-properties/get/
+aliases: [  /ar/get-a-particular-document-property/ ]
 keywords: "Aspose.Cells, واجهة برمجة التطبيقات السحابية، الحصول على خاصية المستند، بيانات التعريف الخاصة بملف إكسل، REST GET، أمثلة ل_sdk"
 description: "استرجاع خاصية مستند مسمّاة (مثل المؤلف أو العنوان) من ملف إكسل باستخدام واجهة Aspose.Cells Cloud REST API. يشمل مثالًا باستخدام أداة cURL، وأجزاء من كود SDK، ومخطط الاستجابة."
 weight: 20

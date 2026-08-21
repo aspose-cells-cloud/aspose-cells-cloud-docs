@@ -2,8 +2,8 @@
 title: "Arbeta med SaveResult-uppgift"
 second_title: "Dokument"
 type: docs
-url: /tasks/save-result/
-aliases: [/working-with-saveresult-task/]
+url: /sv/tasks/save-result/
+aliases: [  /sv/working-with-saveresult-task/ ]
 keywords: "SaveResult-uppgift, Aspose.Cells Cloud API, exportera resultat, ladda ner kalkylark, molnlagring, REST API, kalkylark, Excel"
 description: "Lär dig hur du använder SaveResult-uppgiften i Aspose.Cells Cloud API för att exportera bearbetade kalkylarksdata till molnlagring eller ladda ner den direkt. Innehåller exempel med cURL, Java och .NET samt en komplett parameterreferens."
 weight: 50

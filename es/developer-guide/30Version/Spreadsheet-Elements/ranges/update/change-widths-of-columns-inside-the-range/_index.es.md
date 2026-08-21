@@ -4,8 +4,8 @@ ArticleTitle: "Cambiar el ancho de columnas dentro de un rango – Aspose.Cells 
 second_title: "Document"
 linktitle: "Ancho de columna"
 type: docs
-url: /ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
+url: /es/ranges/update/column-width/
+aliases: [  /es/change-widths-of-columns-inside-the-range/ ]
 keywords: "Aspose.Cells, ancho de columna, REST API, Excel, SDK, rango, nube"
 description: "Aprenda cómo cambiar el ancho de columnas dentro de un rango utilizando la API REST de Aspose.Cells Cloud o los SDK (C#, Java, Python, etc.). Incluye cURL, detalles de solicitud/respuesta y pasos de autenticación."
 weight: 74

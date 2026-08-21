@@ -3,8 +3,8 @@ title: "การทำงานกับตัวกรองพิวต์"
 second_title: "เอกสาร"
 linktitle: "ตัวกรอง"
 type: docs
-url: "/pivot-tables/add-filters/"
-aliases: [/working-with-pivot-filters/]
+url: /th/pivot-tables/add-filters/
+aliases: [  /th/working-with-pivot-filters/ ]
 keywords: "Aspose.Cells, พิวต์แท็บล์, ตัวกรอง, REST API, คลาวด์"
 description: "เรียนรู้วิธีเพิ่ม ดึงข้อมูล และลบตัวกรองพิวต์แท็บล์โดยใช้ Aspose.Cells Cloud REST API รวมถึงไวยากรณ์คำขอ พารามิเตอร์ที่จำเป็น ตัวอย่าง cURL และตัวอย่างโค้ด SDK สำหรับ C# และ Go"
 weight: 50

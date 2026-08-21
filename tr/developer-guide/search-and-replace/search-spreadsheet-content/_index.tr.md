@@ -3,7 +3,7 @@ title: "Excel Çalışma Kitapları İçeriğini Arama – Aspose.Cells Cloud AP
 second_title: "Belge"
 ArticleTitle: "Yerel Excel Çalışma Kitaplarında Metin Arama – Belirli Verileri Bul"
 linktype: "docs"
-url: "/search-spreadsheet-content/"
+url: /tr/search-spreadsheet-content/
 keywords: "Aspose.Cells, Excel arama API'si, çalışma sayfası içeriği arama, bulut çalışma sayfası API'si, metin arama"
 description: "Aspose.Cells Cloud API ile yerel Excel dosyalarında metin, sayı veya formül arayın. Büyük/küçük harf duyarsız sorguları, çalışma sayfası düzeyinde kapsamı ve güvenli kimlik doğrulamayı destekler."
 weight: 100

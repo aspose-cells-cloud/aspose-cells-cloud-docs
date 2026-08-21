@@ -3,8 +3,8 @@ title: "Mehrere Zeilen in einem Excel-Arbeitsblatt automatisch anpassen"
 second_title: "Dokument"
 linktitle: "Zeilen"
 type: docs
-url: /worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
+url: /de/worksheets/autofit/rows/
+aliases: [  /de/autofit-multiple-rows-of-worksheet/ ]
 keywords: "Zeilen automatisch anpassen, Excel, Aspose.Cells Cloud, REST API, Arbeitsblatt, Tabellenkalkulation"
 description: "Erfahren Sie, wie Sie mit der Aspose.Cells Cloud REST API mehrere Zeilen in einem Excel-Arbeitsblatt automatisch anpassen können. Enthält Anforderungssyntax, Parameter, cURL-Beispiel, SDK-Snippets und Fehlerbehandlung."
 weight: 40

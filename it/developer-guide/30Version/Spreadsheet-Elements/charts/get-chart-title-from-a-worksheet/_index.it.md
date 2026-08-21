@@ -1,8 +1,8 @@
 ---
 title: "Ottenere il Titolo di un Grafico da un Foglio di Lavoro"
 type: docs
-url: /charts/title/get/
-aliases: [/get-chart-title-from-a-worksheet/]
+url: /it/charts/title/get/
+aliases: [  /it/get-chart-title-from-a-worksheet/ ]
 weight: 120
 keywords:
   - "Aspose.Cells Cloud"

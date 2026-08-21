@@ -4,7 +4,7 @@ secondtitle: "وثيقة"
 articletitle: "العثور على الروابط التالفة وإصلاحها في نطاق Excel عن بُعد – مدقق روابط جداول البيانات السحابية"
 linktitle: "البحث عن الروابط التالفة في النطاق عن بُعد"
 type: docs
-url: /search-broken-links-in-remote-range/
+url: /ar/search-broken-links-in-remote-range/
 keywords: "Aspose, Cells, روابط تالفة, واجهة برمجة تطبيقات, نطاق Excel, التحقق, سحابة, جدول بيانات, مرجع خارجي, مدقق"
 description: "استخدم واجهة برمجة تطبيقات Aspose.Cells Cloud لمسح نطاق Excel محدد بحثًا عن روابط خارجية تالفة أو صيغ غير صالحة أو مصادر بيانات مفقودة. خدمة آمنة وسريعة وتعمل عبر السحابة."
 weight: 100

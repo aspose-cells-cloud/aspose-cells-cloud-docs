@@ -3,7 +3,7 @@ title: "ปรับขนาดคอลัมน์ให้พอดีใน
 second_title: "เอกสาร"
 linktype: "คอลัมน์"
 type: docs
-url: /autofit-columns-on-an-excel-file/
+url: /th/autofit-columns-on-an-excel-file/
 aliases:
   [
     "/auto-fit-columns-in-excel-workbooks",

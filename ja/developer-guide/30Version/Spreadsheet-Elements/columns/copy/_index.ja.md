@@ -3,7 +3,7 @@ title: "Excelワークシート内の列をコピーする"
 second_title: "Document"
 linktitle: "コピー"
 type: docs
-url: /columns/copy/
+url: /ja/columns/copy/
 aliases:
   [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
 keywords: "Aspose.Cells, 列のコピー, Excel API, REST, クラウドSDK, cURL, C#, Java, Python, Ruby, Node.js, Go, Perl"

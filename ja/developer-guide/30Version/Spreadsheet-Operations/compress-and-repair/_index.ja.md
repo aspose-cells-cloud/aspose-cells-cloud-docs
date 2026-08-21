@@ -2,7 +2,7 @@
 title: "Excel ファイルの圧縮と修復"
 second_title: "Document"
 type: docs
-url: /compress-and-repair-excel-files/
+url: /ja/compress-and-repair-excel-files/
 linktitle: "圧縮と修復"
 keywords: "Aspose.Cells, Excel 圧縮, Excel 修復, クラウド API, Excel ファイルサイズの削減, 損傷したワークブックの復元, Excel ファイルの圧縮, Excel ワークブックの修復"
 description: "Aspose.Cells Cloud API を使って大規模な Excel ワークブックを圧縮し、損傷したファイルを修復する方法を学びます。ステップ・バイ・ステップの例、サポート言語、ベストプラクティスを紹介します。"

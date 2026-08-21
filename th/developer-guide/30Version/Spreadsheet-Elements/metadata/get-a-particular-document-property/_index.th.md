@@ -3,8 +3,8 @@ title: "รับคุณสมบัติของเอกสารเฉพ
 second_title: "เอกสาร"
 linktitle: "รับ"
 type: docs
-url: /document-properties/get/
-aliases: [/get-a-particular-document-property/]
+url: /th/document-properties/get/
+aliases: [  /th/get-a-particular-document-property/ ]
 keywords: "Aspose.Cells, Cloud API, รับคุณสมบัติของเอกสาร, metadata ของ Excel, REST GET, ตัวอย่าง SDK"
 description: "ดึงคุณสมบัติของเอกสารที่มีชื่อ (เช่น Author, Title) จากไฟล์ Excel โดยใช้ Aspose.Cells Cloud REST API รวมถึงตัวอย่าง cURL, ตัวอย่างโค้ด SDK และโครงสร้างการตอบกลับ"
 weight: 20

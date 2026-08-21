@@ -3,7 +3,7 @@ title: "从 Excel 中移除字符 — Aspose.Cells Cloud API（POST /cells/remov
 second_title: "文档"
 linktitle: "移除字符"
 type: docs
-url: /excel-remove-characters/
+url: /zh/excel-remove-characters/
 keywords: "移除字符, Aspose.Cells, Excel API, 文本处理, 云服务"
 description: "了解如何使用 Aspose.Cells Cloud API 从 Excel 工作表中移除字符、字符集或子字符串。包含请求结构、cURL 示例、SDK 代码及错误处理说明。"
 weight: 100

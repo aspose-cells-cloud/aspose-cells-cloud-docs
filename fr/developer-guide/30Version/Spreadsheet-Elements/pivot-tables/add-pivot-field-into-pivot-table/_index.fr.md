@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Ajouter un champ croisé"
 type: docs
 url: /fr/pivot-tables/add-pivot-field/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /fr/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, tableau croisé dynamique, ajouter un champ croisé, API REST, SDK"
 description: "Ajouter un champ croisé à un tableau croisé dynamique existant à l’aide de l’API REST Aspose.Cells Cloud. Inclut les détails de la requête, un exemple cURL et des extraits de code SDK."
 weight: 40

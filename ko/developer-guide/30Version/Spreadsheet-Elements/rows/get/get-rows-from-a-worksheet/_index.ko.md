@@ -3,8 +3,8 @@ title: "Excel 워크시트에서 행 정보 가져오기"
 second_title: "문서"
 linktitle: "행"
 type: docs
-url: /rows/get/rows/
-aliases: [/get-row-from-a-worksheet/]
+url: /ko/rows/get/rows/
+aliases: [  /ko/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 행 가져오기 API, Excel 워크시트 행, REST API, cURL 예제, SDK 예제, .NET, Java, Python"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 Excel 워크시트에서 행 정보를 검색하는 방법을 알아보세요. C#, Java, Python 등 다양한 언어에 대한 엔드포인트, 매개변수, 인증, cURL 및 SDK 코드 예제가 포함되어 있습니다."
 weight: 10

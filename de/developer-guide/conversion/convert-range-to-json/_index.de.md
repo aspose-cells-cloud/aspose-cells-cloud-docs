@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie Bereichsdaten lokaler Tabellendateien in eine JSON-Datei: Schritt-für-Schritt-Anleitung"
 linktitle: "Bereich in JSON konvertieren"
 type: docs
-url: /convert-range-to-json/
+url: /de/convert-range-to-json/
 keywords: "Bereich in JSON konvertieren, Aspose.Cells Cloud, Excel zu JSON, Tabellenkonvertierung, API"
 description: "Konvertieren Sie einen bestimmten Bereich aus einer lokalen Excel-Tabellendatei in JSON mithilfe der Aspose.Cells Cloud API."
 weight: 100

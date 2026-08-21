@@ -4,7 +4,7 @@ ArticleTitle: "Convertire un file Excel in diversi formati"
 second_title: "Documento"
 linktype: "Converti Excel"
 type: docs
-url: /convertire-un-file-excel-in-diversi-formati/
+url: /it/convertire-un-file-excel-in-diversi-formati/
 aliases:
   [
     /convertire-un-libro-di-lavoro-excel-in-diversi-formati-file/,

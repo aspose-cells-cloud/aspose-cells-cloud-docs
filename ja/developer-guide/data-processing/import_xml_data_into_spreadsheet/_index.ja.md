@@ -3,7 +3,7 @@ title: "XML データをスプレッドシートにインポート"
 ArticleTitle: "XML データをスプレッドシートにインポート – Aspose.Cells Cloud API"
 second_title: "ドキュメント"
 linktype: "docs"
-url: /cells/import/data/xml
+url: /ja/cells/import/data/xml
 aliases: []
 keywords: "XML インポート、Aspose.Cells、API"
 description: "Aspose.Cells Cloud を使用して、ローカルのスプレッドシートに XML データファイルをインポートします。"

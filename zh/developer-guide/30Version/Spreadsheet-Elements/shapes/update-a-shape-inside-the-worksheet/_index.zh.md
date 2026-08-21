@@ -3,8 +3,8 @@ title: "更新 Excel 工作表中的图形"
 second_title: "文档"
 linktitle: "更新"
 type: docs
-url: /shapes/update/
-aliases: [/update-a-shape-inside-the-worksheet/]
+url: /zh/shapes/update/
+aliases: [  /zh/update-a-shape-inside-the-worksheet/ ]
 keywords: "更新 Excel 图形 API、Aspose.Cells Cloud、Excel 图形更新、REST API、SDK、C#、Java、Python、Node.js、Go、Ruby、PHP、Perl、Swift"
 description: "了解如何使用 Aspose.Cells Cloud REST API 更新 Excel 工作表中的图形。内容包括 HTTPS 端点、身份验证详情、数据传输对象（DTO）架构、分步使用说明、cURL 示例及多种编程语言的 SDK 代码示例。"
 ArticleTitle: "更新 Excel 工作表中的图形 - Aspose.Cells Cloud API"

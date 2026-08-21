@@ -3,8 +3,8 @@ title: "모든 문서 속성 가져오기"
 second_title: "문서"
 linktitle: "모두 가져오기"
 type: docs
-url: /document-properties/get-all/
-aliases: [/get-all-document-properties/]
+url: /ko/document-properties/get-all/
+aliases: [  /ko/get-all-document-properties/ ]
 keywords: "모든 문서 속성 가져오기, Aspose.Cells Cloud, Excel 문서 속성, REST API, SDK, Excel 메타데이터"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 파일에서 모든 문서 속성을 검색합니다. 이 엔드포인트는 지원되는 모든 SDK 및 프로그래밍 언어와 함께 작동합니다."
 ArticleTitle: "모든 문서 속성 가져오기 – Aspose.Cells Cloud API"

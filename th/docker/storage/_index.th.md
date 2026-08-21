@@ -3,7 +3,7 @@ title: "วิธีตั้งค่าตำแหน่งที่จัด
 second_title: "เอกสาร"
 ArticleTitle: "การกำหนดค่าที่จัดเก็บข้อมูลคอนเทนเนอร์ Docker ของ Aspose.Cells Cloud"
 linktype: "docs"
-url: /docker/storage/
+url: /th/docker/storage/
 description: "กำหนดค่าตำแหน่งที่จัดเก็บข้อมูลสำหรับคอนเทนเนอร์ Docker ของ Aspose.Cells Cloud โดยใช้ไฟล์การกำหนดค่า JSON, PowerShell หรือ Bash"
 weight: 30
 keywords: "Aspose.Cells, Docker, container storage, การกำหนดค่า JSON, PowerShell, Bash"

@@ -3,8 +3,8 @@ title: "เข้ารหัสสมุดงาน Excel ด้วย Aspose.
 second_title: "เอกสาร"
 linktitle: "เข้ารหัสไฟล์ Excel"
 type: docs
-url: /excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+url: /th/excel-file-encrypt/
+aliases: [  /th/encrypt-excel-workbooks/ , /th/workbook/encrypt/ ]
 keywords: "Aspose Cells เข้ารหัสสมุดงาน, API เข้ารหัส Excel, REST API, cURL, .NET, Java, Python, PHP, Ruby, Node.js, Go, Perl"
 description: "เรียนรู้วิธีการเข้ารหัสสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 3.0) มีตัวอย่างคำสั่ง cURL โค้ดตัวอย่าง SDK (C#, Java, Python, …), พารามิเตอร์ที่จำเป็น และการจัดการข้อผิดพลาด"
 weight: 20

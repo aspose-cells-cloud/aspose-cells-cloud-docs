@@ -3,7 +3,7 @@ title: "테이블 분할"
 ArticleTitle: "테이블 분할 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: /cells/split/table
+url: /ko/cells/split/table
 aliases: []
 keywords: "Aspose.Cells, 테이블 분할, API"
 description: "스preadsheet에서 테이블을 열 값별로 분할하는 API입니다."

@@ -3,7 +3,7 @@ title: "SearchAllTextItemsInRemoteSpreadsheet"
 ArticleTitle: "SearchAllTextItemsInRemoteSpreadsheet – Aspose.Cells Cloud API"
 second_title: "文档"
 linktype: "docs"
-url: /cells/{name}/search/content/all-textitems
+url: /zh/cells/{name}/search/content/all-textitems
 aliases: []
 keywords: "搜索, 文本项, Aspose.Cells"
 description: "使用 Aspose.Cells Cloud 在远程电子表格中搜索所有文本项。"

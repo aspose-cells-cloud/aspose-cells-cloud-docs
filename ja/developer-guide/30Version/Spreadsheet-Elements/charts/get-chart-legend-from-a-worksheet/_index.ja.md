@@ -1,8 +1,8 @@
 ---
 title: "ワークシートからチャートの凡例を取得する"
 type: docs
-url: /charts/legend/get/
-aliases: [/get-chart-legend-from-a-worksheet/]
+url: /ja/charts/legend/get/
+aliases: [  /ja/get-chart-legend-from-a-worksheet/ ]
 weight: 80
 keywords: "Aspose.Cells, チャートの凡例, REST API, Excel, クラウドSDK, チャート凡例の取得, ワークシート, スプレッドシート"
 description: "Aspose.Cells Cloud REST API (v3.0) を使用して、Excel ブック内の特定のワークシートにあるチャートの凡例を取得します。エンドポイント、パラメータ、cURL サンプル、SDK スニペットを含みます。"

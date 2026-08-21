@@ -3,7 +3,7 @@ title: "Импорт данных CSV в рабочий лист Excel"
 second_title: "Документ"
 linktitle: "Импорт данных CSV"
 type: docs
-url: /import-CSV-data-into-excel/
+url: /ru/import-CSV-data-into-excel/
 aliases:
   - /import-CSV-data-into-worksheet/
   - /import-data/csv-data/

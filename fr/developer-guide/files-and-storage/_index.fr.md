@@ -4,8 +4,8 @@ second_title: "Document"
 ArticleTitle: "Gestion cloud des fichiers pour Excel – Une solution efficace et sécurisée pour le stockage et l’organisation intelligente des fichiers Excel"
 linktitle: "Fichiers et stockage"
 type: docs
-url: /files-and-storage/
-aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
+url: /fr/files-and-storage/
+aliases: [  /fr/working-with-files-and-storage-using-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, API de stockage de fichiers, téléverser un fichier Excel, télécharger un fichier Excel, copier un fichier, déplacer un fichier, supprimer un fichier, gestion des dossiers, API REST, exemples cURL"
 description: "Guide complet pour gérer les fichiers Excel et les dossiers dans le stockage Aspose.Cells Cloud. Inclut les opérations de téléversement, téléchargement, copie, déplacement, suppression et gestion des dossiers, avec exemples cURL, paramètres requis et notes d’authentification."
 weight: 100

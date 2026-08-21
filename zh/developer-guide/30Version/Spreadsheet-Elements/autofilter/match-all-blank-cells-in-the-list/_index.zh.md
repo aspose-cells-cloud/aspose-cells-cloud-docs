@@ -4,8 +4,8 @@ ArticleTitle: "匹配 Excel 工作表中的所有空白单元格 – Aspose.Cell
 second_title: "文档"
 linktitle: "匹配所有空白单元格"
 type: docs
-url: /autofilter/match-all-blank/
-aliases: [/match-all-blank-cells-in-the-list/]
+url: /zh/autofilter/match-all-blank/
+aliases: [  /zh/match-all-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells, 空白单元格, 自动筛选, REST API, Excel"
 description: "了解如何使用 Aspose.Cells Cloud REST API 过滤并匹配 Excel 工作表中的所有空白单元格。内容包括端点、参数、认证步骤、cURL 示例以及 C#、Java、Python 等多种语言的 SDK 代码片段。"
 weight: 100

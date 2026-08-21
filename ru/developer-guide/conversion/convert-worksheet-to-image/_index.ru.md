@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать данные локальной электронной таблицы рабочего листа в файл изображения: пошаговое руководство"
 linktype: "Преобразование рабочего листа в изображение"
 type: docs
-url: /convert-worksheet-to-image/
+url: /ru/convert-worksheet-to-image/
 keywords: "Aspose.Cells Cloud, преобразование рабочего листа в изображение, конвертация рабочего листа в изображение, Excel в PNG, Excel в SVG, Excel в TIFF, Excel в JPEG, Excel в BMP, API для преобразования изображений, REST API, экспорт изображений из электронных таблиц, примеры SDK"
 description: "Пошаговое руководство по преобразованию электронной таблицы Excel в форматы изображений (PNG, SVG, TIFF, JPEG, BMP и др.) с использованием API Aspose.Cells Cloud, включая параметры запроса, данные ответа, коды ошибок, сценарии использования и примеры кода SDK."
 weight: 100

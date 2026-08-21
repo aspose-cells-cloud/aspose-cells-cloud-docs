@@ -4,7 +4,7 @@ ArticleTitle: "Rimuovi righe vuote dai fogli di calcolo – Aspose.Cells Cloud A
 second_title: "Documento"
 linktitle: "Rimuovi righe vuote dai fogli di calcolo"
 type: docs
-url: /cells/remove/blank-rows
+url: /it/cells/remove/blank-rows
 aliases: []
 keywords: "Aspose.Cells, rimuovi righe vuote, foglio di calcolo, API"
 description: "Elimina tutte le righe vuote da un file di foglio di calcolo."

@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud 웹 API - 자동으로 빈/빈 워크시트 삭제"
 second_title: "문서"
 ArticleTitle: "Excel에서 모든 빈 워크시트 삭제 – 빈 시트 제거 가이드"
 linktype: "docs"
-url: /delete-spreadsheet-blank-worksheets/
+url: /ko/delete-spreadsheet-blank-worksheets/
 keywords: "Aspose.Cells Cloud, 빈 워크시트 삭제, Excel API, 워크북 정리, 스프레드시트 최적화"
 description: "Aspose.Cells Cloud API를 사용하여 Excel 워크북에서 빈 워크시트 또는 빈 시트를 자동으로 삭제합니다. 데이터, 수식, 차트, 개체가 없는 시트를 식별하고 제거하는 방법을 알아보세요. 이를 통해 워크북의 성능과 조직성을 향상시킬 수 있습니다."
 weight: 100

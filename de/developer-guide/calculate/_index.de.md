@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Steigern Sie Ihre Datenkompetenz: Lernen Sie wichtige Excel-Berechnungen kennen – Addieren, Subtrahieren, Multiplizieren, Dividieren und mehr"
 linktitle: "Berechnen"
 type: docs
-url: /calculate/
+url: /de/calculate/
 keywords: "Aspose.Cells Cloud, Excel-Berechnungs-API, SUMME, ANZAHL, MITTELWERT, MIN, MAX, grundlegende mathematische Operationen, REST-API, Tabellenkalkulationsberechnungen"
 description: "Erfahren Sie, wie Sie mit der Aspose.Cells Cloud REST-API SUMME, ANZAHL, MITTELWERT, MIN und MAX sowie grundlegende arithmetische Operationen in Excel-Arbeitsblättern berechnen. Enthält die Anforderungssyntax, Beispielcode, Antworten und Fehlerbehandlung."
 weight: 20

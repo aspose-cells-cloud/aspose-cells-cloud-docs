@@ -1,7 +1,7 @@
 ---
 title: "Obtenir la première cellule (A1) à partir d'une feuille Excel"
 type: docs
-url: /get-first-cell-from-excel-worksheet/
+url: /fr/get-first-cell-from-excel-worksheet/
 weight: 20
 keywords: "Aspose.Cells Cloud, Excel, API REST, obtenir la première cellule, feuille de calcul, A1, API v3"
 description: "Découvrez comment récupérer la première cellule (A1) d'une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud v3.0. Inclut une requête cURL, une réponse JSON, des exemples d'erreurs et des exemples de SDK pour C#, Java, PHP, Python et plus encore."

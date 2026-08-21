@@ -1,8 +1,8 @@
 ---
 title: "Получение области диаграммы из рабочего листа"
 type: docs
-url: /charts/area/get/
-aliases: [/get-chart-area-from-a-worksheet/]
+url: /ru/charts/area/get/
+aliases: [  /ru/get-chart-area-from-a-worksheet/ ]
 weight: 60
 keywords:
   - "Aspose.Cells"

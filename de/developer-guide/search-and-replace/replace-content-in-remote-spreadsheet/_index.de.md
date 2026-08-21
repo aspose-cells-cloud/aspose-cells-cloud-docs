@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Massen-Textersatz in Cloud-Excel-Dateien – Find & Replace API"
 linktitle: "Inhalt in Remote-Tabellenkalkulation ersetzen"
 type: docs
-url: /replace-content-in-remote-spreadsheet/
+url: /de/replace-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, Inhalt ersetzen, Remote-Tabellenkalkulation, Find & Replace API, Cloud Excel, Massen-Textersatz"
 description: "Nutzen Sie die Aspose.Cells Cloud Find & Replace API, um Text in Remote-Excel-Arbeitsmappen zu massenhaft aktualisieren. Sichere HTTPS-Endpunkt, OAuth2-Authentifizierung und sofort nutzbare SDK-Beispiele für schnelle Integration."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "원격 스프레드시트 범위를 다른 형식으로 내보내는 방법: 단계별 가이드"
 linktype: "Export Range as Format"
 type: docs
-url: /export-range-as-format/
+url: /ko/export-range-as-format/
 keywords: "Aspose Cells, Excel 범위 내보내기, PDF, PNG, CSV, 클라우드 API, 스프레드시트 변환"
 description: "Aspose.Cells Cloud에 저장된 특정 Excel 범위를 PDF, PNG, CSV 또는 다른 형식으로 변환하는 방법을 알아보세요. 엔드포인트 세부 정보, 매개변수, 샘플 요청, 응답 처리 및 오류 정보가 포함됩니다."
 weight: 100

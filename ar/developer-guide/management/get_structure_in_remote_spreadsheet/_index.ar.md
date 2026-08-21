@@ -4,7 +4,7 @@ ArticleTitle: "استرجاع الهيكل في جدول بيانات بعيد �
 second_title: "وثيقة"
 linktype: "GetStructureInRemoteSpreadsheet"
 type: docs
-url: /cells/{name}/structure
+url: /ar/cells/{name}/structure
 aliases: []
 keywords: "Aspose.Cells, GetStructure, جدول بيانات, هيكل"
 description: "استرجاع البيانات الوصفية البنيوية لملف Excel البعيد، بما في ذلك الأوراق، الجداول، جداول Pivot، الرسوم البيانية، الأشكال، وغير ذلك من المعلومات الأساسية."

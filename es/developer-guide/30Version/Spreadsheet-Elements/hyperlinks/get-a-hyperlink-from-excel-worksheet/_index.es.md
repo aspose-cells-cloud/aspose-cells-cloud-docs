@@ -1,7 +1,7 @@
 ---
 title: "Obtener hipervínculo de hoja de cálculo"
 type: docs
-url: /hyperlinks/get/
+url: /es/hyperlinks/get/
 keywords: "Aspose.Cells Cloud, Obtener hipervínculo de hoja de cálculo, API de hipervínculos de Excel, REST, Autenticación JWT, Hoja de cálculo de Excel, Punto final de la API"
 description: "Recuperar un hipervínculo específico de una hoja de cálculo de Excel utilizando la API de Aspose.Cells Cloud (v3.0). Incluye punto final, parámetros, ejemplo de cURL, detalles de autenticación, manejo de errores y fragmentos de SDK."
 weight: 10

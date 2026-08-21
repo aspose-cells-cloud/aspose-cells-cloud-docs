@@ -4,7 +4,7 @@ ArticleTitle: "リモートワークシート内の結合セルを取得 – Asp
 second_title: "ドキュメント"
 linktitle: "リモートワークシート内の結合セルを取得"
 type: docs
-url: /cells/mergedcells/get
+url: /ja/cells/mergedcells/get
 aliases: []
 keywords: "Aspose Cells, 結合セルの取得, リモートワークシート, API"
 description: "スプレッドシート内のリモートワークシートからすべての結合セル領域を取得します。"

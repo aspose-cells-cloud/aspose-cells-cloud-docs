@@ -1,7 +1,7 @@
 ---
 title: "Ottenere l'Asse Secondario di Categoria di un Grafico"
 type: docs
-url: /charts/second-category-axis/get/
+url: /it/charts/second-category-axis/get/
 weight: 60
 keywords: "Ottenere l'Asse Secondario di Categoria di un Grafico, API Cloud Aspose.Cells, Asse grafico Excel, API REST, asse secondario di categoria, Aspose.Cells"
 description: "Recupera l'asse secondario di categoria di un grafico in un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud. Include il formato della richiesta, i parametri, un esempio cURL, lo schema di risposta, i codici di stato e note sull'uso."

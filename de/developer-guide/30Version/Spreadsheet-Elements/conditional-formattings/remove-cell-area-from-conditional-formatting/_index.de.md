@@ -1,8 +1,8 @@
 ---
 title: "Zellbereich löschen – Aspose.Cells Cloud API-Dokumentation"
 type: docs
-url: /conditional-formattings/delete-cell-area/
-aliases: [/remove-cell-area-from-conditional-formatting/]
+url: /de/conditional-formattings/delete-cell-area/
+aliases: [  /de/remove-cell-area-from-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, Zellbereich löschen, Conditional Formatting API, Excel REST API"
 description: "Verwenden Sie die Aspose.Cells Cloud REST API, um einen bestimmten Zellbereich aus einer bedingten Formatierung in einem Excel-Arbeitsblatt zu entfernen. Enthält Beispiele für ASP.NET, Java und Python."
 ArticleTitle: "Zellbereich löschen – Aspose.Cells Cloud API-Dokumentation"

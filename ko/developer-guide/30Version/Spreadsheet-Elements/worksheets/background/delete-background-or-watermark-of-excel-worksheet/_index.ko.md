@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "삭제"
 type: docs
 url: /ko/worksheets/background/delete/
-aliases: [/delete-background-or-watermark-of-excel-worksheet/]
+aliases: [  /ko/delete-background-or-watermark-of-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 워크시트 배경 삭제, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 배경 이미지를 삭제합니다. C#, Java, PHP, Ruby, Node.js, Python, Perl, Go용 SDK가 제공됩니다."
 weight: 210

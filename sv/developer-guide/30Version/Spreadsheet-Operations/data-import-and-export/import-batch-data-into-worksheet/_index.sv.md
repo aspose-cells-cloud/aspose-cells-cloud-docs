@@ -3,7 +3,7 @@ title: "Importera batchdata till Excel-arbetsblad"
 second_title: "Dokument"
 linktitle: "Importera batchdata"
 type: docs
-url: /import-batch-data-into-excel/
+url: /sv/import-batch-data-into-excel/
 aliases:
   - /import-batch-data-into-worksheet/
   - /import-data/batch-data/

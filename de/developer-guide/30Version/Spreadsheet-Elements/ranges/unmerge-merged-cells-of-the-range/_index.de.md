@@ -3,8 +3,8 @@ title: "Zellen in einem Bereich aufteilen"
 second_title: "Dokument"
 linktitle: "Aufteilen"
 type: docs
-url: /ranges/unmerge/
-aliases: [/unmerge-merged-cells-of-the-range/]
+url: /de/ranges/unmerge/
+aliases: [  /de/unmerge-merged-cells-of-the-range/ ]
 keywords: "Aspose.Cells Cloud, Zellen aufteilen, Excel-API, Arbeitsblattbereich, REST-API"
 description: "Erfahren Sie, wie Sie mit der Aspose.Cells Cloud API gemerkte Zellen in einem bestimmten Arbeitsblattbereich aufteilen. Enthält Endpunkt, Parameter, Beispiel-cURL und SDK-Code-Snippets für C#, Java, Python und mehr."
 weight: 20

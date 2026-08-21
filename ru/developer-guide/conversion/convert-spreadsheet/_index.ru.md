@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как конвертировать электронную таблицу в другой формат: Пошаговое руководство"
 linktitle: "Конвертация электронной таблицы"
 type: docs
-url: /convert-spreadsheet/
+url: /ru/convert-spreadsheet/
 keywords: "Aspose, Aspose.Cells, конвертация электронных таблиц, Excel в PDF, Excel API, облачная конвертация файлов"
 description: "Конвертируйте файл электронной таблицы в другой формат с помощью Aspose.Cells Cloud API."
 weight: 100

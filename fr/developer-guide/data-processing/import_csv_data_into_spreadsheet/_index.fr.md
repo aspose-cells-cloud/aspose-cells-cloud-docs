@@ -4,7 +4,7 @@ ArticleTitle: "Importer des données CSV dans un fichier de calcul – API Aspos
 second_title: "Document"
 linktype: "Importer des données CSV dans un fichier de calcul"
 type: docs
-url: /cells/import/data/csv
+url: /fr/cells/import/data/csv
 aliases: []
 keywords: "Aspose.Cells, import CSV, fichier de calcul, API"
 description: "Importer un fichier de données CSV dans un fichier de calcul local à l’aide de l’API Aspose.Cells Cloud."

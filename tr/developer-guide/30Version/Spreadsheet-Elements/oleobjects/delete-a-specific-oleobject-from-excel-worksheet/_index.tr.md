@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "Sil"
 type: docs
 url: /tr/oleobjects/delete/
-aliases: [/tr/delete-a-specific-oleobject-from-excel-worksheet/]
+aliases: [  /tr/delete-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, Bulut, Sil, OLE, Nesne, Excel, çalışma sayfası, REST, API, SDK"
 description: "Aspose.Cells Cloud REST API'sini (v4.0) kullanarak bir Excel çalışma sayfasından bir OLE nesnesini nasıl sileceğinizi öğrenin. HTTPS uç noktası, kimlik doğrulama adımları, cURL örneği, SDK kod parçacıkları, hata işleme yönergeleri ve sonraki adımlar için bağlantıları içerir."
 weight: 50

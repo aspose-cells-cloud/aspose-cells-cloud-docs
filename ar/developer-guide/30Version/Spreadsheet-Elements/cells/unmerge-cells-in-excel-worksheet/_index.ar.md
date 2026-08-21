@@ -1,7 +1,7 @@
 ---
 title: "إلغاء دمج الخلايا في ورقة عمل Excel"
 type: docs
-url: /unmerge-cells-in-excel-worksheet/
+url: /ar/unmerge-cells-in-excel-worksheet/
 weight: 120
 keywords: "Aspose.Cells, Excel, إلغاء دمج الخلايا, REST API, Cloud SDK"
 description: "تعرّف على كيفية استخدام Aspose.Cells Cloud REST API لإلغاء دمج الخلايا في ورقة عمل Excel، مع أمثلة على الطلبات، تنسيق الاستجابة، وأكواد عينات SDK لعدة لغات برمجة."

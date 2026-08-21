@@ -3,8 +3,8 @@ title: "เพิ่มตัวแบ่งหน้าแนวนอน"
 second_title: "เอกสาร"
 linktype: "เพิ่มตัวแบ่งหน้าแนวนอน"
 type: docs
-url: /page-breaks/add-horizontal-page-break/
-aliases: [/insert-horizontal-page-break-inside-worksheet/]
+url: /th/page-breaks/add-horizontal-page-break/
+aliases: [  /th/insert-horizontal-page-break-inside-worksheet/ ]
 keywords: "ตัวแบ่งหน้าแนวนอน, Aspose.Cells Cloud, Excel API, REST, SDK, แผ่นงาน, cURL"
 description: "เรียนรู้วิธีเพิ่มตัวแบ่งหน้าแนวนอนลงในแผ่นงาน Excel โดยใช้ REST API ของ Aspose.Cells Cloud รวมถึงรายละเอียดคำขอ ตัวอย่าง cURL และโค้ดตัวอย่าง SDK สำหรับภาษาการเขียนโปรแกรมหลายภาษา"
 weight: 30

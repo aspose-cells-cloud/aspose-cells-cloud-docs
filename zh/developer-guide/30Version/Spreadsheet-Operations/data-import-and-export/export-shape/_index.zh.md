@@ -3,8 +3,8 @@ title: "导出形状"
 second_title: "文档"
 linktitle: "形状"
 type: docs
-url: /export-excel-shape-to-different-formats/
-aliases: [/export/excel-shape-to-different-formats/]
+url: /zh/export-excel-shape-to-different-formats/
+aliases: [  /zh/export/excel-shape-to-different-formats/ ]
 keywords: "导出形状, Aspose.Cells Cloud, Excel 形状导出, 图像格式, REST API, SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API 和 SDK 将 Excel 形状导出为多种图像格式（PNG、GIF、JPEG、BMP、SVG、TIFF、EMF、WMF）。"
 weight: 20

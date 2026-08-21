@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Aspose.Cells Cloud API загрузки файлов — интерфейс для быстрой загрузки файлов в облаке"
 linktitle: "API загрузки файлов"
 type: docs
-url: /download-file/
+url: /ru/download-file/
 keywords: "Aspose.Cells, API загрузки файлов, облачное хранилище Excel, REST API, загрузка файлов, PDF, CSV, SDK"
 description: "Загружайте файлы Excel, PDF, CSV и другие форматы из облачного хранилища Aspose.Cells Cloud с помощью API загрузки файлов (v4.0). Включает endpoint, параметры, данные об аутентификации и примеры кода."
 weight: 100

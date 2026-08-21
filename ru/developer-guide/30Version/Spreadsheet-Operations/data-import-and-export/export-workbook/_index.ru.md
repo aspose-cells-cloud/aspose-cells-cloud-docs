@@ -3,8 +3,8 @@ title: "Экспорт рабочей книги"
 second_title: "Документ"
 linktitle: "Рабочая книга"
 type: docs
-url: /export-excel-to-different-formats/
-aliases: [/export/excel-to-different-formats/]
+url: /ru/export-excel-to-different-formats/
+aliases: [  /ru/export/excel-to-different-formats/ ]
 keywords: "Aspose.Cells Cloud, экспорт Excel, конвертация рабочей книги, PDF, CSV, JSON, форматы изображений, API электронных таблиц, XLSX, ODS, PNG"
 description: "Пошаговое руководство по экспорту рабочих книг Excel в различные форматы — включая PDF, CSV, JSON и различные типы изображений — с использованием REST API и SDK Aspose.Cells Cloud."
 weight: 20

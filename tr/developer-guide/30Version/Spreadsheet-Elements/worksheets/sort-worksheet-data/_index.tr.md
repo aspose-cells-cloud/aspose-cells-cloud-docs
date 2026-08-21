@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasında Bir Aralık Verisini Sırala"
 second_title: "Belge"
 linktitle: "Sırala"
 type: docs
-url: /worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
+url: /tr/worksheets/sort-data/
+aliases: [  /tr/sort-worksheet-data/ ]
 keywords: "Aspose.Cells Cloud, Excel sıralama API'si, çalışma sayfası aralığı sıralama, REST API, dataSorter"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında belirli bir aralığı sıralayın. Uç nokta, gerekli parametreler, kimlik doğrulama adımları, hata işleme ve SDK örnekleri içerir."
 weight: 20

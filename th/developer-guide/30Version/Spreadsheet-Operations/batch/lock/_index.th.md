@@ -2,7 +2,7 @@
 title: "ล็อกไฟล์ Excel แบบเป็นชุด"
 second_title: "เอกสาร"
 type: docs
-url: /batch/lock
+url: /th/batch/lock
 keywords: "ล็อกแบบเป็นชุด, Excel, Aspose.Cells, Cloud API, สเปรดชีต, การป้องกันไฟล์"
 description: "Aspose.Cells Cloud API ช่วยให้สามารถล็อกไฟล์ Excel หลายไฟล์ในเวลาเดียวกันได้ โดยใช้ REST endpoint หรือ SDK ที่รองรับ (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go เป็นต้น) เพื่อล็อกไฟล์แบบเป็นชุด"
 weight: 100

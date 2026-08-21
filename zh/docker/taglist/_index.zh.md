@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "Aspose.Cells Cloud Docker 镜像标签"
 linktype: "镜像标签"
 type: docs
-url: /docker/tag-list/
+url: /zh/docker/tag-list/
 description: "查找适用于 Windows Server（2016–2022）和 Linux 的最新 Aspose.Cells Cloud Docker 镜像标签。一站式获取拉取命令、架构详情及升级说明。"
 weight: 30
 keywords:

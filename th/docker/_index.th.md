@@ -3,8 +3,8 @@ title: "คู่มือการใช้งาน Aspose.Cells Cloud บน 
 second_title: "เอกสาร"
 ArticleTitle: "คู่มือการใช้งาน Aspose.Cells Cloud บน Docker"
 linktype: "docs"
-url: /docker-developer-guide/
-aliases: [/docker/, /docker/run/]
+url: /th/docker-developer-guide/
+aliases: [  /th/docker/ , /th/docker/run/ ]
 description: "ปรับใช้ Aspose.Cells Cloud ในรูปแบบคอนเทนเนอร์ Docker บนโครงสร้างพื้นฐานแบบส่วนตัวหรือแบบติดตั้งภายในองค์กร ช่วยให้สามารถประมวลผลไฟล์สเปรดชีต (Excel, PDF, CSV, JSON, Markdown) โดยไม่ต้องใช้คลาวด์สาธารณะของ Aspose"
 keywords:
   [

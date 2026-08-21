@@ -3,8 +3,8 @@ title: "Excel AutoFilter 사용하기"
 second_title: "문서"
 linktitle: "AutoFilter"
 type: docs
-url: /autofilter/
-aliases: [/working-with-autofilter/]
+url: /ko/autofilter/
+aliases: [  /ko/working-with-autofilter/ ]
 keywords: "AutoFilter, Aspose.Cells Cloud, Excel 필터, 색상 필터, 날짜 필터, 동적 필터, 숫자 필터, 텍스트 필터, 빈 셀 필터, 사용자 정의 필터"
 description: "Aspose.Cells Cloud API를 사용하여 Excel AutoFilter(색상, 날짜, 동적, 숫자, 텍스트, 빈 셀)를 추가, 편집 및 삭제하는 방법을 알아보세요. 여러 언어로 제공되는 코드 예제."
 weight: 100

@@ -3,8 +3,8 @@ title: "Copier une plage dans une feuille de calcul avec des options de collage"
 second_title: "Document"
 linktype: "copier"
 type: docs
-url: /ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+url: /fr/ranges/copy/
+aliases: [  /fr/copy-range-in-a-worksheet-with-paste-options/ ]
 keywords: "Aspose.Cells Cloud, API REST, Excel, copier une plage, feuille de calcul, options de collage"
 description: "Utilisez l’API REST Aspose.Cells Cloud pour copier une plage au sein d’une feuille de calcul Excel avec prise en charge complète des options de collage. Inclut des exemples de SDK pour plusieurs langages de programmation."
 weight: 20

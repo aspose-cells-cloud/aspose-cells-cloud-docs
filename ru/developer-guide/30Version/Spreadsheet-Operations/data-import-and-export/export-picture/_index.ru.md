@@ -3,8 +3,8 @@ title: "Экспорт изображения"
 second_title: "Документ"
 linktitle: "Изображение"
 type: docs
-url: /export-excel-picture-to-different-formats/
-aliases: [/export/excel-picture-to-different-formats/]
+url: /ru/export-excel-picture-to-different-formats/
+aliases: [  /ru/export/excel-picture-to-different-formats/ ]
 keywords: "Экспорт изображения, Aspose.Cells Cloud, REST API, Excel, Форматы изображений, PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF"
 description: "Экспортируйте изображения из Excel в различные форматы изображений с помощью REST API Aspose.Cells Cloud. Сервис поддерживает SDK для множества языков программирования, включая C#, Java, PHP, Ruby, Node.js, Python, Perl, Go и Swift."
 weight: 20

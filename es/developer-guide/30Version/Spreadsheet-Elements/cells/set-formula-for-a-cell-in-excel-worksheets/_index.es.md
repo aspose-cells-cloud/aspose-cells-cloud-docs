@@ -1,7 +1,7 @@
 ---
 title: "Establecer fórmula en celdas de hojas de cálculo de Excel"
 type: docs
-url: /set-formula-for-a-cell-in-excel-worksheets/
+url: /es/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
 keywords: "Excel, Aspose.Cells, REST API, Establecer fórmula, Hoja de cálculo, Celda, SDK en la nube, cURL"
 description: "Aprenda cómo establecer una fórmula para una celda específica en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye ejemplo con cURL, lista completa de parámetros, manejo de errores y ejemplos de código con SDK."

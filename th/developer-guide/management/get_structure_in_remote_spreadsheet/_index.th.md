@@ -4,7 +4,7 @@ ArticleTitle: "Get Structure In Remote Spreadsheet – Aspose.Cells Cloud API"
 second_title: "เอกสาร"
 linktitle: "GetStructureInRemoteSpreadsheet"
 type: docs
-url: /cells/{name}/structure
+url: /th/cells/{name}/structure
 aliases: []
 keywords: "Aspose.Cells, GetStructure, สเปรดชีต, โครงสร้าง"
 description: "ดึงข้อมูลเมตาของสมุดงาน Excel ระยะไกล ซึ่งรวมถึงเวิร์กชีต ตาราง ตารางพิวอัต พิวอัตชีต แผนภูมิ รูปร่าง และข้อมูลหลักอื่นๆ"

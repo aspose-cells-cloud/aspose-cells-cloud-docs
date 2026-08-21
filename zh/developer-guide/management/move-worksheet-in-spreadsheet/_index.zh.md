@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何在 Excel 中移动工作表 —— 重新排列工作表顺序与位置"
 linktitle: "在电子表格中移动工作表"
 type: docs
-url: /move-worksheet-in-spreadsheet/
+url: /zh/move-worksheet-in-spreadsheet/
 keywords: "移动工作表 API，重新排列工作表 API，更改工作表顺序 API，Excel 标签管理 API，Aspose Cells REST API，自动化工作表定位，工作簿组织 API，电子表格结构 API，云端 Excel 自动化，批量工作表重排"
 description: "了解如何在 Excel 工作簿内移动工作表，以重新组织工作表顺序并优化工作簿结构。更改工作表位置、重新排列标签以提升工作流程，并自动化工作表组织，实现专业级电子表格管理。"
 weight: 100

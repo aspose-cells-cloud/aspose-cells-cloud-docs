@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Uzak Excel Çalışma Kitaplarında Metin Arama – Belirli Verileri Bulma"
 linktype: "Search Remote Spreadsheet Content"
 type: docs
-url: /search-content-in-remote-spreadsheet/
+url: /tr/search-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells, Excel arama API'si, bulut çalışma kitapları, metin arama, REST"
 description: "Aspose.Cells Cloud kullanarak bulut depolama alanında saklanan Excel dosyalarında metin, sayı veya formül arayın. Büyük/küçük harf duyarsız sorguları, klasör seçimi ve şifreli çalışma kitaplarını destekler."
 weight: 100

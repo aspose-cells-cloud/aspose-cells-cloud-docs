@@ -3,8 +3,8 @@ title: "Excel 파일에 워터마크 삽입 또는 배경 설정하기"
 second_title: "문서"
 linktype: "워터마크 및 배경"
 type: docs
-url: /watermark-and-background/
-aliases: [ "/export/excel-chart-to-different-formats/", "/workbook/background/" ]
+url: /ko/watermark-and-background/
+aliases: [  /ko/export/excel-chart-to-different-formats/ , /ko/workbook/background/ ]
 keywords: "Aspose.Cells Cloud, Excel, 워터마크, 배경, REST API"
 description: "Aspose.Cells Cloud REST API는 개발자가 Excel 워크북에서 배경과 워터마크를 추가, 삭제 및 관리할 수 있도록 지원합니다. 지원되는 언어는 Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby, Swift입니다."
 weight: 20

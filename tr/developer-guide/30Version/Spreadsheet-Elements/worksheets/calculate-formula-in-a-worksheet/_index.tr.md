@@ -3,8 +3,8 @@ title: "Excel çalışma sayfasında bir formül hesaplayın"
 second_title: "Belge"
 linktitle: "Hesapla"
 type: docs
-url: /worksheets/calculate-formula/
-aliases: [/calculate-formula-in-a-worksheet/]
+url: /tr/worksheets/calculate-formula/
+aliases: [  /tr/calculate-formula-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, formül hesaplama, REST API, SDK'lar, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında formülleri hesaplayın. Birden fazla SDK'yı (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift) destekler ve kullanıma hazır örnekler sunar."
 weight: 20

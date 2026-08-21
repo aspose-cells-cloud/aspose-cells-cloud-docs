@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API — 导出远程 Excel 工作表为其他格�
 second_title: "文档"
 ArticleTitle: "如何将远程电子表格工作表导出为其他格式：分步指南"
 linktype: "文档"
-url: /export-spreadsheet-as-format/
+url: /zh/export-spreadsheet-as-format/
 keywords: "Aspose.Cells, 电子表格转换, API, 导出, PDF, CSV, JSON, XLSX"
 description: "通过单个 REST 端点，将存储在 Aspose Cloud 中的 Excel 工作簿转换为 PDF、XLSX、CSV、JSON 或 HTML 格式。了解请求语法、参数，并查看 C#、Java、Python 等语言的 SDK 示例。"
 weight: 100

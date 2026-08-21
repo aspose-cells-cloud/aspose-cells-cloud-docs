@@ -3,7 +3,7 @@ title: "이중 배열을 Excel 워크시트로 가져오기"
 second_title: "문서"
 linktitle: "이중 배열 가져오기"
 type: docs
-url: /import-double-array-into-excel-worksheet/
+url: /ko/import-double-array-into-excel-worksheet/
 aliases:
   - /import-double-array-into-worksheet/
   - /import-data/double-array/

@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Excel 用の一括テキスト挿入 – セルに接頭辞、接尾辞、カスタムテキストを追加 – ステップ・バイ・ステップガイド"
 linktype: "AddText"
 type: docs
-url: /add-text/
+url: /ja/add-text/
 keywords: "Aspose Cells API, Excel にテキスト追加, 一括テキスト挿入, Excel の接頭辞・接尾辞, スプレッドシートのテキスト置換, Excel 自動化, クラウドスプレッドシート API"
 description: "Aspose.Cells Cloud を使用して、一度の呼び出しで多数の Excel セルに接頭辞、接尾辞、またはカスタムラベルを挿入します。テキストの任意の位置（先頭、末尾、特定テキストの前または後）に挿入可能です。範囲、ワークシート、空セルの処理もサポートしています。"
 weight: 100

@@ -3,7 +3,7 @@ title: "Ajouter une colonne vide à une feuille de calcul Excel - API Aspose.Cel
 second_title: "Document"
 linktitle: "Ajouter"
 type: docs
-url: /columns/add/
+url: /fr/columns/add/
 aliases:
   - /add-an-empty-column-in-an-excel-worksheet/
   - /add-an-empty-column-in-a-worksheet/

@@ -3,8 +3,8 @@ title: "การทำงานกับรูปภาพใน Excel"
 second_title: "เอกสาร"
 linktype: "รูปภาพ"
 type: docs
-url: /pictures/
-aliases: [/working-with-pictures/]
+url: /th/pictures/
+aliases: [  /th/working-with-pictures/ ]
 keywords: "Excel, รูปภาพ, Aspose.Cells Cloud, REST API, การจัดการภาพ, รูปภาพใน Excel"
 description: "เรียนรู้วิธีการดึงข้อมูล เพิ่ม แก้ไข และลบภาพในแผ่นงาน Excel ผ่าน REST API ของ Aspose.Cells Cloud มีตัวอย่างโค้ดสำหรับ C#, Java, Python และภาษาอื่นๆ"
 weight: 100

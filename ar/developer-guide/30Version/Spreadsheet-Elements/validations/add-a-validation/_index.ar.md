@@ -3,7 +3,7 @@ title: "إضافة تحقق من صحة ورقة عمل إلى ورقة عمل E
 second_title: "Document"
 linktitle: "Add"
 type: docs
-url: /validations/add/
+url: /ar/validations/add/
 keywords: "إضافة تحقق من صحة ورقة عمل، Excel، Aspose.Cells Cloud، REST API، Spreadsheet، Validation rule"
 description: "استخدم واجهة Aspose.Cells Cloud REST API لإضافة تحقق من صحة ورقة عمل إلى ملف Excel. توفر SDKs لغات البرمجة التالية: C#، Java، PHP، Ruby، Node.js، Python، Perl، Go، وSwift."
 weight: 10

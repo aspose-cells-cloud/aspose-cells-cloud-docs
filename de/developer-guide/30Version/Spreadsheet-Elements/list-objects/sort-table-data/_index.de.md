@@ -3,8 +3,8 @@ title: "ListObject-Daten in einem Excel-Arbeitsblatt sortieren"
 second_title: "Dokument"
 linktitle: "Sortieren"
 type: docs
-url: /list-objects/sort-data/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
+url: /de/list-objects/sort-data/
+aliases: [  /de/get-a-list-object-or-table-inside-the-worksheet/ , /de/tables/sort-data/ ]
 keywords: "Aspose.Cells Cloud, Excel, ListObject, Daten sortieren, REST API, Arbeitsblatt"
 description: "Erfahren Sie, wie Sie ListObject-Daten (Tabelle) in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API (v3.0) sortieren. Enthält Endpunkt, Parameter, Beispiel-cURL-Anfrage und SDK-Beispiele."
 weight: 40

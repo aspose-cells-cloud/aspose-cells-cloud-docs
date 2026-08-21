@@ -4,7 +4,7 @@ ArticleTitle: "원격 스프레드시트에서 중복 부분 문자열 제거 �
 second_title: "문서"
 linktitle: "원격 스프레드시트에서 중복 부분 문자열 제거"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
+url: /ko/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
 aliases: []
 keywords: "Aspose.Cells, 중복 부분 문자열 제거, API"
 description: "워크북 내 지정된 범위의 셀에 포함된 반복되는 부분 문자열을 찾아 제거하는 API입니다."

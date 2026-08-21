@@ -4,7 +4,7 @@ second_title: "Documentos"
 ArticleTitle: "Cómo exportar la hoja de cálculo en la nube a otros formatos: Guía paso a paso"
 linktitle: "Exportar hoja de cálculo como formato"
 type: docs
-url: /export-spreadsheet-as-format/
+url: /es/export-spreadsheet-as-format/
 keywords: "Aspose.Cells, conversión de hojas de cálculo, API, exportar, PDF, CSV, JSON, XLSX"
 description: "Convierta libros de Excel almacenados en Aspose Cloud a PDF, XLSX, CSV, JSON o HTML mediante un único punto final REST. Aprenda la sintaxis de la solicitud, los parámetros y vea ejemplos de SDK en C#, Java, Python y más."
 weight: 100

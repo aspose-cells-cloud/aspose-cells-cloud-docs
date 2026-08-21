@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API – 空白行・空行を自動削除"
 second_title: "ドキュメント"
 ArticleTitle: "Excelで空白行・空行をすべて削除する方法 – 完全なデータクリーンアップガイド"
 linktype: "docs"
-url: /delete-spreadsheet-blank-rows/
+url: /ja/delete-spreadsheet-blank-rows/
 keywords: "Aspose.Cells, Excel, 空白行, 行の削除, スプレッドシートのクリーンアップ, API"
 description: "Aspose.Cells Cloud API を使用して Excel ファイルからすべての空行を削除します。高速でバッチ処理対応、完全にプログラム可能。C#、Java、Python などのコード例も掲載。"
 weight: 100

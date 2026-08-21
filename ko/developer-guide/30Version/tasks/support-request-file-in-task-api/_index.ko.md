@@ -2,8 +2,8 @@
 title: "Task API에서 요청 파일 지원"
 second_title: "문서"
 type: docs
-url: /tasks/support-request-file/
-aliases: [/support-request-file-in-task-api/]
+url: /ko/tasks/support-request-file/
+aliases: [  /ko/support-request-file-in-task-api/ ]
 keywords: "Aspose.Cells, REST API, Excel, 클라우드"
 description: "Aspose.Cells Cloud API는 Excel 워크북에 대한 요청 파일의 작업 기반 처리를 가능하게 합니다."
 weight: 10

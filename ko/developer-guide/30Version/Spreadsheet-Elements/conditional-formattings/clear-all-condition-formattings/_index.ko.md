@@ -1,8 +1,8 @@
 ---
 title: "조건부 서식 지우기"
 type: docs
-url: /conditional-formattings/clear/
-aliases: [/clear-all-condition-formattings/]
+url: /ko/conditional-formattings/clear/
+aliases: [  /ko/clear-all-condition-formattings/ ]
 keywords: "Aspose.Cells Cloud, REST API, 조건부 서식 지우기, Excel, 워크시트, JWT, v3.2"
 description: "Aspose.Cells Cloud API(v3.2)를 사용하여 워크시트에서 모든 조건부 서식 규칙을 삭제합니다. 요청 구문, 필수 매개변수, 인증 단계 및 여러 SDK에서의 샘플 코드를 확인하세요."
 weight: 80

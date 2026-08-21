@@ -2,7 +2,7 @@
 title: "قفل دفعات من ملفات إكسل"
 second_title: "مستند"
 type: docs
-url: /batch/lock
+url: /ar/batch/lock
 keywords: "قفل دفعات، إكسل، Aspose.Cells، واجهة برمجة التطبيقات السحابية، جدول بيانات، حماية الملف"
 description: "تتيح واجهة برمجة التطبيقات السحابية Aspose.Cells إمكانية قفل دفعات من ملفات إكسل متعددة. استخدم نقطة نهاية REST أو أيًا من حزم تطوير البرامج (SDKs) المدعومة (C#، Java، PHP، Ruby، Node.js، Python، Perl، Go، إلخ) لقفل الملفات دفعةً واحدةً."
 weight: 100

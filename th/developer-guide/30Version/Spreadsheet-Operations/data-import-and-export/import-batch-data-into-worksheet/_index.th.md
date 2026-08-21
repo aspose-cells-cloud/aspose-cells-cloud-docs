@@ -3,7 +3,7 @@ title: "นำข้อมูลจำนวนมากเข้าสู่แ
 second_title: "เอกสาร"
 linktype: "นำข้อมูลจำนวนมาก"
 type: docs
-url: /import-batch-data-into-excel/
+url: /th/import-batch-data-into-excel/
 aliases:
   - /import-batch-data-into-worksheet/
   - /import-data/batch-data/

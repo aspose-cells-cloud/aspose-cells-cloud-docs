@@ -1,7 +1,7 @@
 ---
 title: "Diagrammkategorieachse abrufen"
 type: docs
-url: /charts/category-axis/get/
+url: /de/charts/category-axis/get/
 weight: 60
 keywords: "Aspose.Cells, Diagrammkategorieachse, Excel, REST-API, Cloud-Speicher, OAuth2, API-Dokumentation"
 description: "Ruft die Kategorieachse eines Diagramms in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API ab."

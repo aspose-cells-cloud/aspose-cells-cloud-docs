@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Sustitución masiva de texto en rangos en archivos de Excel en la nube – API de buscar y reemplazar"
 linktitle: "Sustituir contenido en rango remoto"
 type: docs
-url: /replace-content-in-remote-range/
+url: /es/replace-content-in-remote-range/
 keywords: "sustituir texto en rango remoto de Excel, API de Aspose.Cells Cloud, buscar y reemplazar Excel, editar hoja de cálculo en la nube, actualizar archivo de Excel remoto"
 description: "Utilice Aspose.Cells Cloud para buscar y sustituir texto en un rango específico de un archivo de Excel remoto. Admite autenticación, manejo de errores y SDK en múltiples lenguajes."
 weight: 100

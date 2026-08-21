@@ -4,7 +4,7 @@ second_title: "Documentation"
 linktype: "Récupérer"
 type: docs
 url: /fr/oleobjects/get/
-aliases: [/get-oleobject-from-a-worksheet/]
+aliases: [  /fr/get-oleobject-from-a-worksheet/ ]
 keywords: "aspose, cells, objet OLE, excel, feuille de calcul, récupérer un objet OLE, API REST"
 description: "Récupérez un objet OLE (image, graphique ou fichier intégré) à partir d’une feuille de calcul à l’aide de l’API REST Aspose.Cells Cloud. Inclut le point de terminaison HTTPS, les paramètres requis, un exemple cURL et du code SDK dans plusieurs langues."
 ArticleTitle: "Récupérer un objet OLE à partir d'une feuille Excel – Aspose.Cells Cloud API"

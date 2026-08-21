@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man byter namn på kalkylblad i Excel – ändra kalkylbladsnamn"
 linktitle: "Byt namn på kalkylblad i kalkylark"
 type: docs
-url: /rename-worksheet-in-spreadsheet/
+url: /sv/rename-worksheet-in-spreadsheet/
 keywords: "byt namn på kalkylblad, Aspose.Cells Cloud, Excel API, kalkylark, SDK, REST API"
 description: "Byt namn på Excel-kalkylblad enkelt via Aspose.Cells Cloud API. Lär dig nödvändiga parametrar, se cURL-exempel och få SDK-kod för C#, Java, Python och mer."
 weight: 100

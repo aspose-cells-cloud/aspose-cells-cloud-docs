@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud 3.0 개발자 가이드"
 ArticleTitle: "Aspose.Cells Cloud 3.0 REST API 개발자 가이드 – 엑셀 워크북 생성, 변환 및 서식 지정"
 second_title: "문서"
 type: docs
-url: /developer-guide-3.0/
-aliases: [/developer-guide/v3.0/,/developer-guide-v3.0/]
+url: /ko/developer-guide-3.0/
+aliases: [  /ko/developer-guide/v3.0/ , /ko/developer-guide-v3.0/ ]
 keywords: "Aspose.Cells Cloud, 엑셀 REST API, 워크북 변환, 차트 API, 데이터 가져오기, 내보내기, PDF, CSV, JSON, 개발자 가이드"
 description: "Aspose.Cells Cloud 3.0 REST API를 사용하여 엑셀 워크북 생성, 변환, 서식 지정, 차트, 테이블 등을 다루는 방법을 알아보세요. 코드 예제와 모범 사례 팁이 포함되어 있습니다."
 weight: 150

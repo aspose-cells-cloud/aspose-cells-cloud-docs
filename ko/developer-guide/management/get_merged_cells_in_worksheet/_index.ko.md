@@ -4,7 +4,7 @@ ArticleTitle: "워크시트에서 병합된 셀 가져오기 – Aspose.Cells Cl
 second_title: "문서"
 linktitle: "GetMergedCellsInWorksheet"
 type: docs
-url: /cells/spreadsheet/mergedcells
+url: /ko/cells/spreadsheet/mergedcells
 aliases: []
 keywords: "Aspose Cells, 병합된 셀, 워크시트, API"
 description: "로컬 스프레드시트 워크시트에서 모든 병합된 셀 영역을 가져옵니다."

@@ -4,7 +4,7 @@ second_title: "مستند"
 linktitle: "حذف"
 type: docs
 url: /ar/shapes/delete/
-aliases: [/ar/delete-a-shape-by-index-inside-the-worksheet/]
+aliases: [  /ar/delete-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud، حذف شكل، فهرس الشكل، ورقة عمل إكسل، REST API، SDK"
 description: "استخدم واجهة Aspose.Cells Cloud REST API لحذف شكل حسب فهرسه على ورقة عمل إكسل. تتوفر الواجهة عبر عدة SDKs (C#، Java، PHP، Ruby، Node.js، Python، Perl، Go)، وتدعم خيارات تخزين متعددة."
 weight: 50

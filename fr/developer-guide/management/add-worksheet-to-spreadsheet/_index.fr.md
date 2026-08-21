@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment ajouter des feuilles de calcul à Excel – Insérer de nouvelles feuilles à des emplacements spécifiques"
 linktitle: "Ajouter une feuille de calcul à un classeur"
 type: docs
-url: /add-worksheet-to-spreadsheet/
+url: /fr/add-worksheet-to-spreadsheet/
 keywords: "excel, ajouter une feuille de calcul, aspose cells api, classeur, api cloud, type de feuille, position de la feuille"
 description: "Découvrez comment ajouter programmatically une nouvelle feuille de calcul, une feuille graphique ou une feuille de macro à un classeur Excel à l’aide de l’API Aspose.Cells Cloud. Contrôlez le type, le nom et la position d’insertion de la feuille en une seule requête REST."
 weight: 100

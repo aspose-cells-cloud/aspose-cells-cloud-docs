@@ -1,8 +1,8 @@
 ---
 title: "워크시트 코멘트 가져오기 – Aspose.Cells Cloud API 문서"
 type: docs
-url: /comments/get/
-aliases: [/get-comment-from-a-worksheet/]
+url: /ko/comments/get/
+aliases: [  /ko/get-comment-from-a-worksheet/ ]
 keywords: "Aspose.Cells, 워크시트 코멘트, API, GET, Excel"
 description: "Aspose.Cells Cloud API(v3.0)를 사용하여 셀 이름으로 워크시트 코멘트를 검색하는 방법을 알아보세요. 요청 URL, 파라미터, cURL 예제, 응답 세부 정보, SDK 코드 스니펫 포함."
 weight: 10

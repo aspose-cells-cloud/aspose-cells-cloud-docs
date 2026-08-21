@@ -2,7 +2,7 @@
 title: "Lås Excel-filer i batch"
 second_title: "Dokument"
 type: docs
-url: /batch/lock
+url: /sv/batch/lock
 keywords: "batchlåsning, Excel, Aspose.Cells, molntjänst, kalkylark, filskydd"
 description: "Aspose.Cells molntjänst möjliggör batchlåsning av flera Excel-filer. Använd REST-slutpunkten eller någon av de stödda SDK:erna (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go etc.) för att låsa filer i batch."
 weight: 100

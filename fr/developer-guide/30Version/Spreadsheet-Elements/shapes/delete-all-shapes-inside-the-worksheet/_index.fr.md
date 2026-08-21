@@ -4,8 +4,8 @@ ArticleTitle: "Supprimer toutes les formes d'une feuille Excel – Aspose.Cells 
 second_title: "Document"
 linktitle: "Effacer"
 type: docs
-url: /shapes/clear/
-aliases: [/delete-all-shapes-inside-the-worksheet/]
+url: /fr/shapes/clear/
+aliases: [  /fr/delete-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Supprimer toutes les formes, Feuille Excel, API REST, SDK, cURL, .NET, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift"
 description: "Supprimer toutes les formes d'une feuille Excel à l'aide de l'API REST Aspose.Cells Cloud. L'opération est accessible via cURL et un large éventail de SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift)."
 weight: 40

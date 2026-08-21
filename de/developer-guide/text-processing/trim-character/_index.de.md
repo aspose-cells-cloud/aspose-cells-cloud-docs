@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Excel-Datenreiniger – Zeichen, Leerzeichen und Zeilenumbrüche automatisch trimmen – Online, Shortcode"
 linktype: "Trim-Zeichen"
 type: docs
-url: /trim-character/
+url: /de/trim-character/
 keywords: "Excel, Texttrimming, Leerzeichen entfernen, Zeilenumbrüche, Aspose.Cells, Datenbereinigung, Tabellenkalkulation, Zellformatierung normalisieren"
 description: "Entfernen Sie zusätzliche Leerzeichen, Zeilenumbrüche und unerwünschte Zeichen aus Excel-Zellen mit der Aspose.Cells Cloud-API. Stellen Sie saubere und konsistente Tabellendaten sicher."
 weight: 100

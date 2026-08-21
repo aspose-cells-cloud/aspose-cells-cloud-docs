@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "ค้นหาและแก้ไขลิงก์ที่เสียใน Excel – เครื่องมือตรวจสอบลิงก์สเปรดชีตบนคลาวด์"
 linktype: "ค้นหาลิงก์ที่เสียในสเปรดชีต"
 type: docs
-url: /search-spreadsheet-broken-links/
+url: /th/search-spreadsheet-broken-links/
 keywords: "Aspose Cells, ลิงก์ที่เสีย, การตรวจสอบสเปรดชีต, Excel API, สเปรดชีตบนคลาวด์, เครื่องมือตรวจสอบลิงก์"
 description: "ตรวจจับและแก้ไขลิงก์ที่เสียในสมุดงาน Excel ผ่าน API ของ Aspose.Cells Cloud ค้นหาช่วงข้อมูล รับผลลัพธ์ในรูปแบบ JSON อย่างละเอียด และผสานรวมกับ SDK ของภาษาใดก็ได้"
 weight: 100

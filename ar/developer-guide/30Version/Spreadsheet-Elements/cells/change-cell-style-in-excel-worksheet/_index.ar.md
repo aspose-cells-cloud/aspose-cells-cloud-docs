@@ -1,7 +1,7 @@
 ---
 title: "تغيير نمط الخلية في ورقة عمل إكسل"
 type: docs
-url: /change-cell-style-in-excel-worksheet/
+url: /ar/change-cell-style-in-excel-worksheet/
 weight: 30
 keywords:
   - Aspose.Cells

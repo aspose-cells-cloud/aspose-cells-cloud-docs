@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Elektronik Tablo Grafiğini Görüntüye Nasıl Dönüştürürsünüz: Adım Adım Kılavuz"
 linktitle: "Grafiği Görüntüye Dönüştür"
 type: docs
-url: /convert-chart-to-image/
+url: /tr/convert-chart-to-image/
 keywords: "grafiği görüntüye dönüştür, Aspose.Cells, Excel grafik dışa aktarımı, PNG, SVG, JPEG, BMP, TIFF"
 description: "Aspose.Cells Cloud Web API’yi kullanarak bir Excel grafiğini doğrudan bir elektronik tablo dosyasından PNG, SVG, TIFF, JPEG veya BMP görüntülerine dönüştürün."
 weight: 100

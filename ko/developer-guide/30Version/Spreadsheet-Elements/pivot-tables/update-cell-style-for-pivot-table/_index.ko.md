@@ -4,7 +4,7 @@ second_title: "문서"
 linktype: "형식"
 type: docs
 url: /ko/pivot-tables/format/
-aliases: [/ko/update-cell-style-for-pivot-table/]
+aliases: [  /ko/update-cell-style-for-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, 피벗 테이블 스타일, 셀 스타일 업데이트 API, REST API, Excel API, 스프레드시트 서식, 클라우드 SDK, 셀 스타일, 피벗 테이블"
 description: "Aspose.Cells Cloud REST API를 사용하여 피벗 테이블의 특정 셀 스타일을 업데이트하는 방법을 알아보세요. 엔드포인트, 매개변수, 인증, cURL 예제, Go SDK 코드 스니펫, SEO 최적화 가이드 포함."
 weight: 90

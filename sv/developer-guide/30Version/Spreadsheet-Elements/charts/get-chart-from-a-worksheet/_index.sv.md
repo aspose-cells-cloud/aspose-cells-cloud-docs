@@ -2,7 +2,7 @@
 title: "Hämta diagram från ett kalkylblad"
 type: docs
 url: /sv/charts/get/
-aliases: [/sv/get-chart-from-a-worksheet/]
+aliases: [  /sv/get-chart-from-a-worksheet/ ]
 weight: 10
 keywords: "Aspose.Cells Cloud, hämta diagram, kalkylblad, REST API, Excel, diagram-API, diagramhämtning, Excel-diagram"
 description: "Hämta diagraminformation, inklusive metadata och exportformat, från ett kalkylblad med Aspose.Cells Cloud REST API."

@@ -1,8 +1,8 @@
 ---
 title: "Agregar hipervínculo a una hoja de cálculo"
 type: docs
-url: /hyperlinks/add/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /es/hyperlinks/add/
+aliases: [  /es/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, agregar hipervínculo, API REST de Excel, SDK en la nube"
 description: "Aprenda cómo agregar un hipervínculo a una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud v3.0. Incluye el endpoint, una guía completa de parámetros, un ejemplo con cURL y fragmentos de código para SDK en C#, Java, Python y más."
 weight: 20

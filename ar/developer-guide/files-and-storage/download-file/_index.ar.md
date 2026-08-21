@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "واجهة برمجة تطبيقات تنزيل الملف في Aspose.Cells Cloud – واجهة لتنزيل الملفات بسرعة في السحابة"
 linktitle: "واجهة برمجة تطبيقات تنزيل الملف"
 type: docs
-url: /download-file/
+url: /ar/download-file/
 keywords: "Aspose.Cells، واجهة برمجة تطبيقات تنزيل الملف، تخزين Excel السحابي، واجهة برمجة تطبيقات REST، تنزيل الملف، PDF، CSV، SDK"
 description: "قم بتنزيل ملفات Excel وPDF وCSV وملفات أخرى من تخزين Aspose.Cells Cloud باستخدام واجهة برمجة تطبيقات تنزيل الملف (الإصدار 4.0). تتضمن النقطة النهائية (endpoint)، والمعلمات، وتفاصيل المصادقة، وأمثلة على الأكواد."
 weight: 100

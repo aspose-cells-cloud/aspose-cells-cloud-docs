@@ -4,7 +4,7 @@ second_title: "Document"
 articleTitle: "Remplacement en masse du texte dans une plage – API Trouver & Remplacer pour fichiers Excel dans le cloud"
 linktype: "Remplacer le contenu d’une plage distante"
 type: docs
-url: /replace-content-in-remote-range/
+url: /fr/replace-content-in-remote-range/
 keywords: "remplacer du texte dans une plage Excel distante, API Aspose.Cells Cloud, trouver et remplacer dans Excel, modifier une feuille de calcul dans le cloud, mettre à jour un fichier Excel distant"
 description: "Utilisez Aspose.Cells Cloud pour rechercher et remplacer du texte dans une plage spécifique d’un fichier Excel distant. Prend en charge l’authentification, la gestion des erreurs et les SDK multilingues."
 weight: 100

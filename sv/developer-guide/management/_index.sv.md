@@ -4,7 +4,7 @@ secondtitle: "Dokument"
 ArticleTitle: "Avancerade Excel-arbetsboksfunktioner: Kalkylbladshantering och komprimering – Aspose.Cells Cloud"
 linktitle: "Hantering"
 type: docs
-url: /management/
+url: /sv/management/
 keywords: "Aspose.Cells, moln, Excel API, kalkylbladshantering, kalkylarkskomprimering, skapande av arbetsböcker"
 description: "Använd Aspose.Cells Cloud API för att lägga till, ta bort, flytta och byta namn på kalkylblad, komprimera kalkylark samt skapa arbetsböcker från mallar – utan att kräva lokal installation av Excel."
 weight: 50

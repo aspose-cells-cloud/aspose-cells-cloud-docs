@@ -3,8 +3,8 @@ title: "Excel çalışma sayfasında metin bulun"
 second_title: "Belge"
 linktitle: "Çalışma sayfasında bul"
 type: docs
-url: /worksheets/find-text/
-aliases: [/find-text-in-a-worksheet/]
+url: /tr/worksheets/find-text/
+aliases: [  /tr/find-text-in-a-worksheet/ ]
 weight: 40
 keywords: "Excel, Aspose.Cells Cloud, REST API, metin bul, çalışma sayfası, elektronik tablo, ara"
 description: "Aspose.Cells Cloud REST API'sini kullanarak bir Excel çalışma sayfasında metin bulun. API, birden fazla SDK ve programlama diliyle kullanılabilir."

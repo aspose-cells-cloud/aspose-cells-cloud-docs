@@ -3,8 +3,8 @@ title: "从 Excel 工作表中获取文本项"
 second_title: "文档"
 linktitle: "在工作表中获取文本项"
 type: docs
-url: /worksheets/get-text-items/
-aliases: [/get-text-items-from-a-worksheet/]
+url: /zh/worksheets/get-text-items/
+aliases: [  /zh/get-text-items-from-a-worksheet/ ]
 weight: 20
 keywords: "Aspose.Cells, 云 API, Excel, 工作表, 文本项, REST"
 description: "使用 Aspose.Cells Cloud REST API 从 Excel 文件的特定工作表中检索所有文本项。包含 cURL 示例、SDK 代码、身份验证步骤及响应模式。"

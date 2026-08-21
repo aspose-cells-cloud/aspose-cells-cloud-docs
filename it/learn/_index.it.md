@@ -2,7 +2,7 @@
 title: "Impara Aspose.Cells Cloud"
 type: docs
 url:  /it/learn
-aliases: [/it/learn-aspose-cells-cloud]
+aliases: [  /it/learn-aspose-cells-cloud ]
 linktitle: "Impara"
 description: "Benvenuti alla sezione di apprendimento di Aspose.Cells Cloud."
 weight: 15

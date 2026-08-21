@@ -3,8 +3,8 @@ title: "Kopiera innehåll och format från ett annat kalkylblad."
 second_title: "Document"
 linktitle: "Kopiera"
 type: docs
-url: /worksheets/copy/
-aliases: [/copy-excel-worksheet/]
+url: /sv/worksheets/copy/
+aliases: [  /sv/copy-excel-worksheet/ ]
 keywords: "Aspose Cells kopierings-API för kalkylblad, kopiera kalkylblad via REST API, Aspose Cloud SDK kopiera, kopiera kalkylark"
 description: "Lär dig hur du kopierar ett kalkylblad och dess format till ett nytt kalkylblad med Aspose.Cells Cloud REST API. Innehåller endpoint, parametrar, cURL-exempel och SDK-exempel för C#, Java, Python och mer."
 weight: 20

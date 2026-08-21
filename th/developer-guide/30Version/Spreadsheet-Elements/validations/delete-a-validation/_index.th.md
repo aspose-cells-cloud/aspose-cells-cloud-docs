@@ -3,7 +3,7 @@ title: "การลบการตรวจสอบค่าในWorksheets �
 second title: "เอกสาร"
 link title: "ลบ"
 type: docs
-url: /validations/delete/
+url: /th/validations/delete/
 keywords: "ลบ, การตรวจสอบค่าใน worksheet, Aspose.Cells Cloud, Excel API"
 description: "เรียนรู้วิธีการลบการตรวจสอบค่าใน worksheet จากไฟล์ Excel โดยใช้ Aspose.Cells Cloud REST API ซึ่งประกอบด้วย endpoint, พารามิเตอร์, รายละเอียดการยืนยันตัวตน, ตัวอย่าง cURL, การจัดการข้อผิดพลาด และตัวอย่างโค้ด SDK"
 weight: 10

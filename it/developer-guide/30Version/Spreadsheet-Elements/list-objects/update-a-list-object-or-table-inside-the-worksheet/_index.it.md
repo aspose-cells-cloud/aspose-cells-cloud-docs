@@ -4,7 +4,7 @@ ArticleTitle: "Aggiorna un oggetto elenco in un foglio di calcolo Excel – Docu
 second_title: "Documento"
 linktitle: "Aggiorna"
 type: docs
-url: /list-objects/update/
+url: /it/list-objects/update/
 aliases:
   - /update-a-list-object-or-table-inside-the-worksheet/
   - /tables/update/

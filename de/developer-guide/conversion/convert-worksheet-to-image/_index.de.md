@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie lokales Arbeitsblatt-Daten aus Tabellenkalkulationen in eine Bilddatei: Schritt-für-Schritt-Anleitung"
 linktitle: "Arbeitsblatt in Bild konvertieren"
 type: docs
-url: /convert-worksheet-to-image/
+url: /de/convert-worksheet-to-image/
 keywords: "Aspose.Cells Cloud, Arbeitsblatt in Bild konvertieren, Excel zu PNG, Excel zu SVG, Excel zu TIFF, Excel zu JPEG, Excel zu BMP, Bildkonvertierungs-API, REST-API, Tabellenkalkulations-Bildexport, SDK-Beispiele"
 description: "Schritt-für-Schritt-Anleitung zur Konvertierung eines Excel-Arbeitsblatts in Bildformate (PNG, SVG, TIFF, JPEG, BMP usw.) mithilfe der Aspose.Cells Cloud API, einschließlich Anforderungsparameter, Antwortdetails, Fehlercodes, Anwendungsszenarien und SDK-Codebeispielen."
 weight: 100

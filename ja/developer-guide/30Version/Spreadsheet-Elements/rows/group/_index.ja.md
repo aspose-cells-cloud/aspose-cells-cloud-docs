@@ -3,8 +3,8 @@ title: "Excelワークシート上の行をグループ化する"
 second_title: "Document"
 linktitle: "Group"
 type: docs
-url: /rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
+url: /ja/rows/group/
+aliases: [  /ja/group-rows-in-excel-worksheet/ ]
 keywords: "行のグループ化, Excel, Aspose.Cells Cloud, REST API, SDK, ワークシート, Excel API"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシート上の行をグループ化します。複数の SDK（C#, Java, PHP, Ruby, Node.js, Python, Perl, Go）をサポートし、簡単な統合を実現します。"
 weight: 60

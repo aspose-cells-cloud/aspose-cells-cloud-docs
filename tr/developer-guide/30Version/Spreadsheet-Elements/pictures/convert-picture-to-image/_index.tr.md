@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – Çalışma Sayfasından Resim Alma"
 second_title: "Belge"
 linktitle: "Al"
 type: docs
-url: /pictures/get/
-aliases: [/convert-picture-to-image/]
+url: /tr/pictures/get/
+aliases: [  /tr/convert-picture-to-image/ ]
 keywords: "Aspose.Cells, Resim Al, API, Excel, Bulut, REST"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından belirli bir resmi alın. Uç nokta, parametreler, kimlik doğrulama adımları, yanıt kodları ve kod örneklerini içerir."
 weight: 10

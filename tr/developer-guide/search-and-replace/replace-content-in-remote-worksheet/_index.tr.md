@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud API ile Uzak Çalışma Kitabında Metni Bul ve Değiştir"
 linktitle: "Uzak Çalışma Kitabı İçeriğini Değiştir"
 type: docs
-url: /replace-content-in-remote-worksheet/
+url: /tr/replace-content-in-remote-worksheet/
 keywords: "Aspose.Cells, metin değiştir, uzak çalışma kitab, Excel API, bulut tablolu hesaplama, bul ve değiştir, REST API"
 description: "Aspose Cloud'da depolanan bir Excel dosyasının belirli bir çalışma kitabındaki metni değiştirin. Şifreli çalışma kitaplarını destekler, bölgeye duyarlı arama ve toplu güncellemeleri sağlar."
 weight: 100

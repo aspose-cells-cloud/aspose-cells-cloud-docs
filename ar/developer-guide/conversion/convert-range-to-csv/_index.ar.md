@@ -4,7 +4,7 @@ second title: "وثيقة"
 ArticleTitle: "كيفية تحويل نطاق جدول بيانات محلي إلى ملف CSV: دليل خطوة بخطوة"
 linktype: "تحويل النطاق إلى CSV"
 type: docs
-url: /convert-range-to-csv/
+url: /ar/convert-range-to-csv/
 keywords: "Aspose Cells، تحويل النطاق إلى CSV، إكسل إلى CSV، واجهة برمجة تطبيقات إكسل، جدول بيانات سحابي، تحويل، إكسل، CSV، Aspose.Cells، واجهة برمجة تطبيقات سحابية"
 description: "تعرّف على كيفية تحويل نطاق معيّن من ملف إكسل محلي (XLSX أو XLS) إلى CSV باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمّن بناء الجملة الخاصة بالطلب، والمتغيّرات، ومعالجة الأخطاء، وأمثلة SDK."
 ---

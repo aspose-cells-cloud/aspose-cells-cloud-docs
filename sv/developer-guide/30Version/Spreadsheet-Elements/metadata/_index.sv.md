@@ -3,7 +3,7 @@ title: "Arbeta med Excel-metadata och dokumentegenskaper"
 second_title: "Dokument"
 linktitle: "Metadata och egenskaper"
 type: docs
-url: /metadata/
+url: /sv/metadata/
 aliases:
   - /document-properties/
   - /working-with-document-properties/

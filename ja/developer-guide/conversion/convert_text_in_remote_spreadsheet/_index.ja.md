@@ -3,7 +3,7 @@ title: "リモートスプレッドシート内のテキストを変換"
 ArticleTitle: "リモートスプレッドシート内のテキストを変換 – Aspose.Cells Cloud"
 second_title: "ドキュメント"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
+url: /ja/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
 aliases: []
 keywords: "Aspose.Cells, テキスト変換, API"
 description: "ワークシートの指定された範囲内のテキストを変換します。数値変換、文字置換、改行処理、アクセント付き文字の正規化を含みます。"

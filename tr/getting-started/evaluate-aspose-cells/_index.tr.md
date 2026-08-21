@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud'ı Değerlendirin"
 LinkTitle: "Değerlendir"
 type: docs
-url: /evaluate-aspose-cells/
+url: /tr/evaluate-aspose-cells/
 description: "Excel dosyalarını ve diğer elektronik tablo formatlarını oluşturma, dönüştürme, birleştirme, bölme, koruma ve manipüle etme için REST API olan Aspose.Cells Cloud’u keşfedin."
 weight: 60
 keywords:

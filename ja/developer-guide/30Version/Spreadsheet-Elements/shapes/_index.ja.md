@@ -3,8 +3,8 @@ title: "Excel の図形の操作"
 second_title: "ドキュメント"
 linktitle: "図形"
 type: docs
-url: /shapes/
-aliases: ["/working-with-shapes/", "/working-with-images/"]
+url: /ja/shapes/
+aliases: [  /ja/working-with-shapes/ , /ja/working-with-images/ ]
 keywords: "Excel 図形、Aspose.Cells Cloud、API、ワークシート、図形操作"
 description: "Aspose.Cells Cloud API を使って Excel 図形を管理する方法—SDK サポートを活用して図形の取得、追加、削除、変換を行います。"
 weight: 100

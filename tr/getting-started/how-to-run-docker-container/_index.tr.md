@@ -4,8 +4,8 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud Docker Konteyneri Nasıl Çalıştırılır?"
 LinkTitle: "Docker Konteyneri"
 type: docs
-url: /getting-started/how-to-run-docker-container/
-aliases: [/how-to-run-docker-container/]
+url: /tr/getting-started/how-to-run-docker-container/
+aliases: [  /tr/how-to-run-docker-container/ ]
 description: "Aspose.Cells Cloud Docker konteynerini Windows veya Linux’ta nasıl çekeceğinizi, yapılandıracağınızı ve başlatacağınızı öğrenin. Docker‑Compose YAML, lisans ayarı, bağlantı noktası eşlemesi ve sorun giderme ipuçlarını içerir."
 weight: 100
 keywords:

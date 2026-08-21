@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Excel'den Çalışma Sayfalarını Nasıl Silersiniz - Çalışma Kitaplarından Sayfaları Kaldırma"
 linktitle: "Web Tablosundan Çalışma Sayfası Silme"
 type: docs
-url: /delete-worksheet-from-spreadsheet/
+url: /tr/delete-worksheet-from-spreadsheet/
 keywords: "Aspose Cells, çalışma sayfası silme API'si, Excel sayfası kaldırma, bulut web tablosu, REST API"
 description: "Aspose.Cells Cloud API kullanarak bir Excel dosyasından çalışma sayfası nasıl silineceğini öğrenin. Uç nokta, parametreler, örnek cURL ve SDK örneklerini içerir."
 weight: 100

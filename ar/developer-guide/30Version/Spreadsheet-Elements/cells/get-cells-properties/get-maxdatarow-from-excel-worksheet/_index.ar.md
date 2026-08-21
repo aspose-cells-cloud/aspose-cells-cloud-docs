@@ -1,7 +1,7 @@
 ---
 title: "الحصول على MaxDataRow من ورقة عمل Excel"
 type: docs
-url: /get-maxdatarow-from-excel-worksheet/
+url: /ar/get-maxdatarow-from-excel-worksheet/
 weight: 50
 keywords: "Excel، Aspose.Cells Cloud، REST API، الحصول على MaxDataRow، ورقة العمل"
 description: "يسترجع فهرس آخر صف يحتوي على بيانات في ورقة عمل محددة من ملف Excel باستخدام واجهة Aspose.Cells Cloud REST API."

@@ -1,7 +1,7 @@
 ---
 title: "Получить ось значений диаграммы"
 type: docs
-url: /charts/value-axis/get/
+url: /ru/charts/value-axis/get/
 weight: 60
 keywords: Aspose.Cells, Ось значений диаграммы, REST API, Excel, Cloud SDK, Получить ось значений диаграммы
 description: "Aspose.Cells Cloud REST API — получить ось значений диаграммы в рабочей книге Excel."

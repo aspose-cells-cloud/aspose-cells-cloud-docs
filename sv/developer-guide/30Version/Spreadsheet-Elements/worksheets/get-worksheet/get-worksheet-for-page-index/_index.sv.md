@@ -4,8 +4,8 @@ articleTitle: "Exportera en arbetsbladssida – Aspose.Cells Cloud API-referens"
 secondTitle: "Dokument"
 linkTitle: "Sida"
 type: docs
-url: /worksheets/page-to-different-formats/
-aliases: [/get-worksheet-for-page-index/]
+url: /sv/worksheets/page-to-different-formats/
+aliases: [  /sv/get-worksheet-for-page-index/ ]
 keywords: "Aspose.Cells Cloud, export av arbetsbladssida, PDF, PNG, CSV, REST API, JWT-autentisering, filformat"
 description: "Lär dig hur du exporterar en specifik arbetsbladssida till PDF, PNG, CSV och mer med Aspose.Cells Cloud REST API. Innehåller cURL-förfrågan, parameterguide och SDK-exempel för flera språk."
 weight: 240

@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "로컬 스프레드시트 워크시트를 PDF 파일로 변환하는 방법: 단계별 가이드"
 linktitle: "워크시트를 PDF로 변환"
 type: docs
-url: /convert-worksheet-to-pdf/
+url: /ko/convert-worksheet-to-pdf/
 keywords: "Aspose.Cells, Excel to PDF, 워크시트 변환, REST API, 클라우드 변환, 스프레드시트 PDF, API 엔드포인트, PDF 생성"
 description: "Aspose.Cells Cloud API를 사용하여 로컬 Excel 파일의 워크시트를 빠르고 안전하게 PDF 문서로 변환합니다."
 weight: 100

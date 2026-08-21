@@ -1,8 +1,8 @@
 ---
 title: "ซ่อนคำอธิบายกราฟในแผ่นงาน Excel – API ของ Aspose.Cells Cloud"
 type: docs
-url: /charts/legend/hide/
-aliases: [/hide-chart-legend-in-a-worksheet/]
+url: /th/charts/legend/hide/
+aliases: [  /th/hide-chart-legend-in-a-worksheet/ ]
 weight: 110
 keywords: "Aspose.Cells, Excel, ซ่อนคำอธิบายกราฟ, REST API, Cloud SDK, คำอธิบายกราฟ"
 description: "เรียนรู้วิธีซ่อนคำอธิบายกราฟในแผ่นงาน Excel โดยใช้ REST API ของ Aspose.Cells Cloud ซึ่งรวมถึง HTTPS endpoint, การรับรองความถูกต้องที่จำเป็น, ไวยากรณ์คำขอ, รายละเอียดการตอบกลับ, การจัดการข้อผิดพลาด และตัวอย่าง SDK"

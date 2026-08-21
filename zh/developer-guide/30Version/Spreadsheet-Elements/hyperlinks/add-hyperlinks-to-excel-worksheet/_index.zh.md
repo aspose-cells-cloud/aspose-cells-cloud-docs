@@ -2,7 +2,7 @@
 title: "向工作表添加超链接"
 type: docs
 url: /zh/hyperlinks/add/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+aliases: [  /zh/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, 添加超链接, Excel REST API, 云 SDK"
 description: "了解如何使用 Aspose.Cells Cloud v3.0 REST API 向 Excel 工作表添加超链接。包含端点、完整参数说明、cURL 示例以及 C#、Java、Python 等语言的 SDK 代码片段。"
 weight: 20

@@ -4,8 +4,8 @@ second_title: "Document"
 linktitle: "Guide du développeur"
 ArticleTitle: "Convertir, fusionner, diviser, protéger, rechercher, remplacer et transformer — le tout dans Cells Cloud."
 type: docs
-url: /developer‑guide/
-aliases: [/developer‑guide‑v4.0/]
+url: /fr/developer‑guide/
+aliases: [  /fr/developer‑guide‑v4.0/ ]
 keywords: "Aspose.Cells Cloud, API REST Excel, conversion de feuilles de calcul, fusion, division, protection, recherche et remplacement, transformation de données, exemples d’SDK, Java, .NET, Python, Node.js, PHP, Go, Ruby, Perl"
 description: "Guide complet du développeur pour les API REST d’Aspose.Cells Cloud, couvrant la conversion de feuilles de calcul, la fusion, la division, la protection, la recherche et le remplacement, ainsi que la transformation de données, avec des liens vers des exemples d’SDK pour Java, .NET, Python, Node.js, PHP, Go, Ruby et Perl."
 weight: 20

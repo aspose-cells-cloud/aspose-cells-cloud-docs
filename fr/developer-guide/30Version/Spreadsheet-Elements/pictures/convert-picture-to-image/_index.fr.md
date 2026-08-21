@@ -3,8 +3,8 @@ title: "API Cloud Aspose.Cells – Récupérer une image à partir d’une feuil
 second_title: "Document"
 linktitle: "Récupérer"
 type: docs
-url: /pictures/get/
-aliases: [/convert-picture-to-image/]
+url: /fr/pictures/get/
+aliases: [  /fr/convert-picture-to-image/ ]
 keywords: "Aspose.Cells, Récupérer une image, API, Excel, Cloud, REST"
 description: "Récupérer une image spécifique à partir d’une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’URL du point de terminaison, les paramètres, les étapes d’authentification, les codes de réponse et des exemples de code."
 weight: 10

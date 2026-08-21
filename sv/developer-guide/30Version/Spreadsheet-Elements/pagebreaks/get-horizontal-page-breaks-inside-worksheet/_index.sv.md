@@ -3,8 +3,8 @@ title: "Hämta horisontella sidbrytningar"
 second_title: "Dokument"
 linktitle: "Hämta horisontella sidbrytningar"
 type: docs
-url: /page-breaks/get-horizontal-page-breaks/
-aliases: [/get-horizontal-page-breaks-inside-worksheet/]
+url: /sv/page-breaks/get-horizontal-page-breaks/
+aliases: [  /sv/get-horizontal-page-breaks-inside-worksheet/ ]
 keywords: "horisontella sidbrytningar, Aspose.Cells Cloud, REST API, Excel-ark, SDK"
 description: "Hämta horisontella sidbrytningar från ett Excel-ark via Aspose.Cells Cloud API. Inkluderar slutpunkt, parametrar, cURL-exempel, svarsformat och SDK-fragment för C#, Java, Python och mer."
 ArticleTitle: "Hämta horisontella sidbrytningar – Aspose.Cells Cloud API-dokumentation"

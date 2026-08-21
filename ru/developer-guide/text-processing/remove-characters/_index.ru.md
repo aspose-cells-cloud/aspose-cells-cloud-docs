@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Очиститель текста Excel – удаление символов и подстрок из выбранного диапазона"
 linktitle: "Удаление символов"
 type: docs
-url: /remove-characters/
+url: /ru/remove-characters/
 keywords: "Aspose.Cells, удаление символов, Excel API, очистка текста, электронная таблица"
 description: "Удаляйте пользовательские символы, наборы символов и подстроки из ячеек Excel в выбранном диапазоне. Удаляйте текст в определённых позициях с помощью Aspose.Cells API для точной очистки данных."
 weight: 100

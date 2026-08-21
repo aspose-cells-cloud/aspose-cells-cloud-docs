@@ -4,7 +4,7 @@ second_title: "مستند"
 linktype: التنسيق
 type: docs
 url: /ar/pivot-tables/format/
-aliases: [/ar/update-cell-style-for-pivot-table/]
+aliases: [  /ar/update-cell-style-for-pivot-table/ ]
 keywords: "Aspose.Cells Cloud، نمط جدول محوري، واجهة برمجة تطبيقات تحديث نمط الخلية، واجهة برمجة تطبيقات REST، واجهة برمجة تطبيقات Excel، تنسيق جداول البيانات، SDK السحابي، نمط الخلية، جدول محوري"
 description: "تعرف على كيفية تحديث نمط خلية محددة في جدول محوري باستخدام Aspose.Cells Cloud عبر واجهة برمجة تطبيقات REST. يشمل ذلك نقطة النهاية، المعاملات، المصادقة، مثال cURL، وقطعة كود SDK لـ Go، وإرشادات مُحسّنة لمحركات البحث (SEO)."
 weight: 90

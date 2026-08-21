@@ -3,7 +3,7 @@ title: "ค้นหาเนื้อหาในสเปรดชีต – A
 second_title: "เอกสาร"
 ArticleTitle: "ค้นหาข้อความในสเปรดชีต Excel บนเครื่อง – ค้นหาข้อมูลที่เฉพาะเจาะจง"
 linktype: "docs"
-url: /search-spreadsheet-content/
+url: /th/search-spreadsheet-content/
 keywords: "Aspose.Cells, API ค้นหา Excel, การค้นหาเนื้อหาในสเปรดชีต, API สเปรดชีตบนคลาวด์, การค้นหาข้อความ"
 description: "ใช้ Aspose.Cells Cloud API เพื่อค้นหาข้อความ ตัวเลข หรือสูตรในไฟล์ Excel บนเครื่องของคุณ รองรับการค้นหาแบบไม่คำนึงถึงตัวพิมพ์เล็ก-ใหญ่ การจำกัดขอบเขตตามแผ่นงาน และการยืนยันตัวตนแบบปลอดภัย"
 weight: 100

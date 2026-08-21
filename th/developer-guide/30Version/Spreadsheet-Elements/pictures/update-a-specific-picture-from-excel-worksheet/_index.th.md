@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktype: "อัปเดต"
 type: docs
 url: /th/pictures/update/
-aliases: [/update-a-specific-picture-from-excel-workshee/]
+aliases: [  /th/update-a-specific-picture-from-excel-workshee/ ]
 keywords: "Aspose.Cells Cloud, Excel, อัปเดตรูปภาพ, REST API, SDK"
 description: "เรียนรู้วิธีการอัปเดตรูปภาพในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API ซึ่งประกอบด้วยรายละเอียดคำขอ ตัวอย่าง cURL และตัวอย่างโค้ด SDK สำหรับหลายภาษา"
 ArticleTitle: "อัปเดตรูปภาพในไฟล์ Excel โดยใช้ Aspose.Cells Cloud REST API"

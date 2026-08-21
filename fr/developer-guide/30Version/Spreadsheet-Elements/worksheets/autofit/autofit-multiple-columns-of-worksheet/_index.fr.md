@@ -3,8 +3,8 @@ title: "Ajuster automatiquement plusieurs colonnes sur une feuille Excel"
 second_title: "Document"
 linktitle: "Colonnes"
 type: docs
-url: /worksheets/autofit/columns/
-aliases: [/autofit-multiple-columns-of-worksheet/]
+url: /fr/worksheets/autofit/columns/
+aliases: [  /fr/autofit-multiple-columns-of-worksheet/ ]
 keywords: "Aspose.Cells, ajuster automatiquement les colonnes, API Excel, feuille de calcul cloud, REST"
 description: "Découvrez comment ajuster automatiquement plusieurs colonnes sur une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut l’endpoint, les paramètres, un exemple cURL, la gestion des erreurs et des extraits de code SDK pour C#, Java, Python, et plus encore."
 weight: 20

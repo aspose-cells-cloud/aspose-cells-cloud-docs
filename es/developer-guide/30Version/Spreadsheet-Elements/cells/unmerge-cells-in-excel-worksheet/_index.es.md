@@ -1,7 +1,7 @@
 ---
 title: "Desagrupar celdas en una hoja de cálculo de Excel"
 type: docs
-url: /unmerge-cells-in-excel-worksheet/
+url: /es/unmerge-cells-in-excel-worksheet/
 weight: 120
 keywords: "Aspose.Cells, Excel, desagrupar celdas, API REST, SDK en la nube"
 description: "Aprenda a utilizar la API REST de Aspose.Cells Cloud para desagrupar celdas en una hoja de cálculo de Excel, con ejemplos de solicitud, formato de respuesta y ejemplos de código del SDK para múltiples lenguajes de programación."

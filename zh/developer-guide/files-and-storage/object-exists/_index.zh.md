@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "Object Exists API — 验证 Aspose.Cells Cloud 中文件或文件夹是否存在"
 linktitle: "Object Exists"
 type: docs
-url: /object-exists/
+url: /zh/object-exists/
 keywords: "Aspose.Cells, 云存储, 对象是否存在, 文件存在性, 文件夹存在性, API"
 description: "使用 Object Exists API 快速验证 Aspose.Cells Cloud 存储中是否存在特定文件或文件夹。支持可选的存储名称和版本 ID，且适用于启用了版本控制的对象。"
 weight: 100

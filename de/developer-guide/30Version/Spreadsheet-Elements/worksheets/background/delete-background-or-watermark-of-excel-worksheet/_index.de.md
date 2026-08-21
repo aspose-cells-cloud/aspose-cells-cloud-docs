@@ -3,8 +3,8 @@ title: "Hintergrund in einem Excel-Arbeitsblatt entfernen"
 second_title: "Dokument"
 linktitle: "Entfernen"
 type: docs
-url: /worksheets/background/delete/
-aliases: [/delete-background-or-watermark-of-excel-worksheet/]
+url: /de/worksheets/background/delete/
+aliases: [  /delete-background-or-watermark-of-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Hintergrund eines Arbeitsblatts entfernen, Excel, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Verwenden Sie die Aspose.Cells Cloud REST API, um das Hintergrundbild eines Excel-Arbeitsblatts zu entfernen. SDKs sind für C#, Java, PHP, Ruby, Node.js, Python, Perl und Go verfügbar."
 weight: 210

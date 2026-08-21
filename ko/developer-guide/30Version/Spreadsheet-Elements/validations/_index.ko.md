@@ -3,7 +3,7 @@ title: "Excel 데이터 유효성 검사 사용하기"
 second_title: "문서"
 linktitle: "유효성 검사"
 type: docs
-url: /validations/ko/
+url: /ko/validations/ko/
 keywords: "Excel 데이터 유효성 검사, Aspose.Cells Cloud, REST API, 스프레드시트, Office Cloud"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 데이터 유효성 검사 규칙을 프로그래밍 방식으로 추가, 조회, 업데이트, 삭제 및 지우는 방법을 배워보세요. .NET, Java, Python, PHP 예제를 포함합니다."
 weight: 100

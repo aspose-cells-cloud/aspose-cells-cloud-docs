@@ -3,7 +3,7 @@ title: "การจัดการการลบแถวในแผ่นง
 second_title: "Document"
 linktype: "ลบ"
 type: docs
-url: /rows/delete/
+url: /th/rows/delete/
 keywords: "Aspose.Cells, delete row, Excel API, REST, cloud, spreadsheet, Excel, SDK"
 description: "เรียนรู้วิธีการลบแถวเดียวหรือหลายแถวในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่างโค้ดสำหรับ Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby และ Swift"
 weight: 20

@@ -3,7 +3,7 @@ title: "SearchAllTextItemsInRemoteSpreadsheet"
 ArticleTitle: "SearchAllTextItemsInRemoteSpreadsheet – Aspose.Cells Cloud API"
 second_title: "Document"
 linktype: "docs"
-url: /cells/{name}/search/content/all-textitems
+url: /it/cells/{name}/search/content/all-textitems
 aliases: []
 keywords: "ricerca, elementi di testo, Aspose.Cells"
 description: "Cerca tutti gli elementi di testo in un foglio di calcolo remoto utilizzando Aspose.Cells Cloud."

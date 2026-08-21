@@ -1,8 +1,8 @@
 ---
 title: "ワークシート内のチャート凡例を表示する"
 type: docs
-url: /charts/legend/show/
-aliases: [/show-chart-legend-in-a-worksheet/]
+url: /ja/charts/legend/show/
+aliases: [  /ja/show-chart-legend-in-a-worksheet/ ]
 weight: 100
 keywords: "Aspose.Cells Cloud, チャート凡例 API, Excel チャート凡例, REST PUT チャート凡例, Aspose API v3.0"
 description: "Aspose.Cells Cloud REST API（v3.0）を使用して、Excelワークシート内のチャートに凡例を表示する方法を学びます。エンドポイントの詳細、パラメータ、cURLの例、SDKスニペットを含みます。"

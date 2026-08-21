@@ -1,7 +1,7 @@
 ---
 title: "تطبيق تنسيق نص غني على خلية"
 type: docs
-url: /apply-rich-text-formatting-to-a-cell/
+url: /ar/apply-rich-text-formatting-to-a-cell/
 weight: 40
 keywords: "Aspose.Cells, Excel, نص غني, تنسيق الخلايا, واجهة برمجة تطبيقات REST, Aspose.Cells Cloud"
 description: "تعلم كيفية تطبيق تنسيق نص غني على خلية محددة في ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمن بناء جملة الطلب، تفاصيل المُعَامِلات، مثال cURL، وأجزاء من كود SDK."

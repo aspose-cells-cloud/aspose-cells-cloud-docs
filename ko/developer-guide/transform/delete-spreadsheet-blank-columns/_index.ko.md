@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Excel에서 빈 열을 삭제하는 방법 – 열 정리 자동화"
 linktype: "빈 열 삭제"
 type: docs
-url: /delete-spreadsheet-blank-columns/
+url: /ko/delete-spreadsheet-blank-columns/
 keywords: "빈 열 삭제 Excel API, Aspose.Cells Cloud, REST API, Excel 정리, 스프레드시트 자동화"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 파일에서 빈 열을 제거하는 방법을 알아보세요. 엔드포인트, 인증, 요청/응답 샘플, C#, Java, Python 등 다양한 언어의 SDK 코드가 포함됩니다."
 weight: 100

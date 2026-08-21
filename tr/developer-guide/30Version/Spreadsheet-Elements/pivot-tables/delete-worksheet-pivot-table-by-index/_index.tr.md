@@ -4,7 +4,7 @@ second_title: "Belge"
 linktype: "Delete"
 type: docs
 url: "/tr/pivot-tables/delete/"
-aliases: ["/delete-worksheet-pivot-table-by-index/"]
+aliases: [  /tr/delete-worksheet-pivot-table-by-index/ ]
 keywords: "Aspose.Cells, pivot tablo, sil, Excel, REST API"
 description: "Aspose.Cells Cloud REST API (v3.0) ile bir Excel çalışma sayfasından bir pivot tabloyu silin. İstek formatını, cURL örneğini, hata kodlarını ve C#, Java, Python, Node.js için SDK snippet’lerini içerir."
 weight: 70

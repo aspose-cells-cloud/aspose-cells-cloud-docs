@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "كيفية تحويل بيانات جدول الجداول إلى ملف CSV: دليل خطوة بخطوة"
 linktype: "تحويل الجدول إلى CSV"
 type: docs
-url: /convert-table-to-csv/
+url: /ar/convert-table-to-csv/
 keywords: "Aspose.Cells Cloud, تحويل جدول إلى CSV, تحويل جداول بيانات, Excel إلى CSV, واجهة برمجة تطبيقات, REST, تصدير البيانات"
 description: "قم بتحويل جدول من ملف جدول بيانات Excel إلى ملف CSV بسرعة باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud."
 weight: 100

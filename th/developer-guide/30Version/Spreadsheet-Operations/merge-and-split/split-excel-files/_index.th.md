@@ -4,8 +4,8 @@ ArticleTitle: "วิธีการแยกสมุดงาน Excel ออ�
 second_title: "เอกสาร"
 linktype: "แยกไฟล์ Excel"
 type: docs
-url: /split-multi-excel-files/
-aliases: [/split/multi-files/]
+url: /th/split-multi-excel-files/
+aliases: [  /th/split/multi-files/ ]
 keywords: "Excel, Aspose.Cells Cloud, REST API, แยกสมุดงาน, หลายไฟล์, JPEG, PNG, PDF, CSV, JSON"
 description: "Aspose.Cells Cloud REST API ช่วยให้สามารถแยกสมุดงาน Excel ออกเป็นหลายไฟล์ในรูปแบบต่างๆ ได้ เอกสารนี้ให้รายละเอียดพารามิเตอร์คำขอ ตัวอย่าง cURL และตัวอย่างโค้ด SDK สำหรับภาษาต่างๆ เช่น C#, Java, PHP, Ruby, Node.js, Python, Perl และ Go"
 weight: 130

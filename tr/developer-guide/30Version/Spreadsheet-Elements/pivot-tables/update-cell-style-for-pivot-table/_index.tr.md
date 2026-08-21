@@ -3,8 +3,8 @@ title: "Pivot Tablosu İçin Hücre Stilini Güncelle"
 second_title: "Belge"
 linktype: Biçimlendirme
 type: docs
-url: /pivot-tables/format/
-aliases: [/update-cell-style-for-pivot-table/]
+url: /tr/pivot-tables/format/
+aliases: [  /tr/update-cell-style-for-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, pivot tablo stili, hücre stili güncelleme API'si, REST API, Excel API'si, elektronik tablo biçimlendirme, bulut SDK'sı, hücre stili, pivot tablo"
 description: "Aspose.Cells Cloud pivot tablosunda bir hücrenin stilini REST API aracılığıyla nasıl güncelleyeceğinizi öğrenin. Uç nokta, parametreler, kimlik doğrulama, cURL örneği, Go SDK kod parçacığı ve SEO optimizeilmiş rehberlik içerir."
 weight: 90

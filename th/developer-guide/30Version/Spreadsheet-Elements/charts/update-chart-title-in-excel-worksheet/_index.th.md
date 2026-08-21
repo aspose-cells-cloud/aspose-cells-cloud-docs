@@ -1,8 +1,8 @@
 ---
 title: "อัปเดตชื่อกราฟในแผ่นงาน Excel"
 type: docs
-url: /charts/title/update/
-aliases: [/update-chart-title-in-excel-worksheet/]
+url: /th/charts/title/update/
+aliases: [  /th/update-chart-title-in-excel-worksheet/ ]
 weight: 160
 keywords: Excel, Aspose.Cells, REST API, ชื่อกราฟ, อัปเดต, Cloud SDK
 description: เรียนรู้วิธีการอัปเดตชื่อกราฟในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API, cURL และ SDK ต่างๆ

@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "필터 삭제"
 type: docs
 url: /ko/delete-filter/
-aliases: [/delete-a-filter-for-a-filter-column/, /delete-auto-filter/]
+aliases: [  /ko/delete-a-filter-for-a-filter-column/ , /ko/delete-auto-filter/ ]
 keywords: "Aspose.Cells Cloud 필터 삭제, 엑셀, REST API, SDK"
 description: "Aspose.Cells Cloud REST API, cURL, SDK(C#, Java, Python 등)를 사용하여 엑셀 워크시트에서 자동필터를 삭제하는 방법을 알아보세요. 엔드포인트, 매개변수, 인증 및 샘플 코드 포함."
 weight: 100

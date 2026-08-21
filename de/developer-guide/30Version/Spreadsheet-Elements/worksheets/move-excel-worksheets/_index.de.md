@@ -3,8 +3,8 @@ title: "Verschieben eines Excel-Arbeitsblatts – Aspose.Cells Cloud API (v3.0)"
 second_title: "Dokument"
 linktitle: "Verschieben"
 type: docs
-url: /worksheets/move/
-aliases: [/move-excel-worksheets/]
+url: /de/worksheets/move/
+aliases: [  /de/move-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Arbeitsblatt verschieben, Excel, REST-API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
 description: "Erfahren Sie, wie Sie ein Excel-Arbeitsblatt an eine neue Position verschieben können, mithilfe der Aspose.Cells Cloud API (v3.0). Enthält Endpunkt, erforderliche Parameter, cURL-Beispiel und SDK-Code in C#, Java, Python und mehr."
 weight: 20

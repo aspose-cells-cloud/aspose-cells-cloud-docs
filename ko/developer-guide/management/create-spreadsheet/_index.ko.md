@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "새 Excel 스프레드시트 생성 방법 – 빈 파일 또는 템플릿 기반 파일 생성"
 linktype: "스프레드시트 생성"
 type: docs
-url: /create-spreadsheet/
+url: /ko/create-spreadsheet/
 keywords: "Aspose.Cells, 스프레드시트 API, Excel 생성, 클라우드, XLSX, ODS, CSV, 템플릿, SDK, 자동화"
 description: "Aspose.Cells Cloud API(v5.0)를 사용해 빈 Excel 워크북 또는 템플릿 기반 파일을 생성하는 방법을 알아보세요. 엔드포인트, 매개변수, 오류 코드, 인증 단계, SDK 예제를 포함합니다."
 weight: 100

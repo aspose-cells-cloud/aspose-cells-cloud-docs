@@ -1,8 +1,8 @@
 ---
 title: "Çalışma Sayfasında Grafik Efsanesini Güncelleme"
 type: docs
-url: /charts/legend/update/
-aliases: [/update-chart-legend-in-a-worksheet/]
+url: /tr/charts/legend/update/
+aliases: [  /tr/update-chart-legend-in-a-worksheet/ ]
 weight: 160
 keywords: "Aspose.Cells, Bulut, Excel, Grafik, Efsane, REST API, Güncelleme, Çalışma Sayfası, cURL, SDK"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında grafik efsanesini nasıl güncelleyeceğiniz, cURL istek örnekleri ve birden fazla programlama dili için SDK kod parçacıklarıyla ilgili bilgi."

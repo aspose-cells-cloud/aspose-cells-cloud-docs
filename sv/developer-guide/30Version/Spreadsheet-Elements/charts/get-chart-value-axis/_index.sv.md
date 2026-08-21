@@ -1,7 +1,7 @@
 ---
 title: "Hämta värdeaxel för diagram"
 type: docs
-url: /charts/value-axis/get/
+url: /sv/charts/value-axis/get/
 weight: 60
 keywords: Aspose.Cells, Diagramvärdeaxel, REST API, Excel, molntjänst, hämta diagramvärdeaxel
 description: "Aspose.Cells Cloud REST API – Hämta värdeaxeln för ett diagram i ett Excel-ark."

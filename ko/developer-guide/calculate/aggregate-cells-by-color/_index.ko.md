@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "스프레드시트/Excel에서 색상별로 합계, 개수, 평균, 최대, 최소 값 계산"
 LinkTitle: "색상별 셀 집계"
 type: docs
-url: /aggregate-cells-by-color/
+url: /ko/aggregate-cells-by-color/
 keywords: "Aspose, Cells, Excel, API, aggregate, color, sum, count, average, min, max"
 description: "Aspose.Cells Cloud API를 사용하여 Excel 셀을 배경색 또는 글꼴 색상별로 집계(합계, 개수, 평균, 최소, 최대)합니다. 엔드포인트, 매개변수, 인증 및 SDK 예제를 알아보세요."
 weight: 100

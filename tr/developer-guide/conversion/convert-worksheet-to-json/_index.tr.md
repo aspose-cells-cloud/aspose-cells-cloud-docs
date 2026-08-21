@@ -4,7 +4,7 @@ second_title: "Doküman"
 ArticleTitle: "Aspose.Cells Cloud API ile Bir Hesaplama Tablosu Çalışma Sayfasını JSON'a Nasıl Dönüştürülür"
 linktitle: "Çalışma Sayfasını JSON'a Dönüştür"
 type: docs
-url: /convert-worksheet-to-json/
+url: /tr/convert-worksheet-to-json/
 keywords: "Aspose.Cells, çalışma sayfası JSON'a, Excel dönüştürme, bulut API, API v4, veri dışa aktarma"
 description: "Aspose.Cells Cloud API ile bir Excel çalışma sayfasını JSON'a dönüştürme adımlı kılavuzu; istek parametreleri, yanıt işleme, hata kodları ve SDK örnekleri içerir."
 weight: 100

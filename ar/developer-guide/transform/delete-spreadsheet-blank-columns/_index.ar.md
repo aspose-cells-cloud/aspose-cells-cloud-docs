@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "كيف تحذف الأعمدة الفارغة من ملفات إكسل – أتمتة تنظيف الأعمدة"
 linktype: "حذف الأعمدة الفارغة"
 type: docs
-url: /delete-spreadsheet-blank-columns/
+url: /ar/delete-spreadsheet-blank-columns/
 keywords: "واجهة حذف الأعمدة الفارغة في إكسل، Aspose.Cells Cloud، واجهة REST، تنظيف ملفات إكسل، أتمتة الجداول المحسوبة"
 description: "تعلم كيفية إزالة الأعمدة الفارغة من ملفات إكسل باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن نقطة نهاية API، وتفاصيل المصادقة، وأمثلة على الطلبات والاستجابات، وأكواد SDK بلغات C#، Java، Python، والمزيد."
 weight: 100

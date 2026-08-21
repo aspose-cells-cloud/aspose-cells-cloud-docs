@@ -3,8 +3,8 @@ title: "ลบคุณสมบัติของเอกสารทั้ง
 second_title: "เอกสาร"
 linktype: "ล้าง"
 type: docs
-url: /document-properties/clear/
-aliases: [/remove-all-document-properties/]
+url: /th/document-properties/clear/
+aliases: [  /th/remove-all-document-properties/ ]
 keywords: "Aspose.Cells, ลบคุณสมบัติของเอกสาร, ล้างคุณสมบัติ Excel, REST API, cloud SDK, สเปรดชีต, API reference"
 description: "คู่มือแบบทีละขั้นตอนในการลบคุณสมบัติที่กำหนดเองและคุณสมบัติปรับแต่งทั้งหมดออกจากสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API"
 weight: 58

@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "แผนราคา Aspose.Cells Cloud"
 linktitle: "แผนราคา"
 type: docs
-url: /pricing-plan/
+url: /th/pricing-plan/
 description: "สำรวจแผนราคาของ Aspose.Cells Cloud: ใช้งาน API ได้ฟรี 150 ครั้งต่อเดือน จากนั้นจ่ายตามการใช้งานจริงในอัตราเพียง $0.007 ต่อครั้ง ไม่มีการอัปเกรดซ่อนเร้น—มีเพียงโครงสร้างราคาแบบชัดเจนและแบ่งตามระดับเท่านั้น"
 weight: 70
 keywords: "แผนราคา Aspose.Cells Cloud, ค่าใช้จ่าย API ต่อครั้ง, API Excel แบบจ่ายตามการใช้งานจริง, ค่าบริการสเปรดชีตบนคลาวด์"

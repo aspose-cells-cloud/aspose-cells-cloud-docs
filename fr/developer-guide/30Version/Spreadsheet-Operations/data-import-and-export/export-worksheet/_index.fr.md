@@ -3,8 +3,8 @@ title: "Exporter une feuille de calcul – Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "Feuille de calcul"
 type: docs
-url: /export-excel-worksheet-to-different-formats/
-aliases: [/export/excel-worksheet-to-different-formats/]
+url: /fr/export-excel-worksheet-to-different-formats/
+aliases: [  /fr/export/excel-worksheet-to-different-formats/ ]
 keywords: "Aspose.Cells, exporter une feuille de calcul, API Excel, PDF, CSV, TIFF, ODS, formats d’image"
 description: "Découvrez comment exporter une feuille de calcul Excel vers les formats PDF, CSV, TIFF et d’autres à l’aide de l’API REST Aspose.Cells Cloud. Inclut un exemple cURL, les exigences d’authentification, les détails des paramètres et la gestion des réponses."
 weight: 20

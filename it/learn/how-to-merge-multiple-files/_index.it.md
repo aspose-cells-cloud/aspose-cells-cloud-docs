@@ -2,7 +2,7 @@
 title: "Come unire più file di fogli di calcolo con Aspose.Cells Cloud"
 linktype: "Come unire più file di fogli di calcolo"
 type: docs
-url: /how-to-merge-multiple-files
+url: /it/how-to-merge-multiple-files
 description: "Come unire più file di fogli di calcolo con Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Foglio di calcolo, PDF, CSV, JSON, Markdown, Come unire più file tramite Aspose.Cells Cloud

@@ -3,8 +3,8 @@ title: "Шифрование рабочей тетради Excel с помощь
 second_title: "Документ"
 linktype: "Шифрование файла Excel"
 type: docs
-url: /excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+url: /ru/excel-file-encrypt/
+aliases: [  /ru/encrypt-excel-workbooks/ , /ru/workbook/encrypt/ ]
 keywords: "шифрование рабочей тетради Aspose Cells, API шифрования Excel, REST API, cURL, .NET, Java, Python, PHP, Ruby, Node.js, Go, Perl"
 description: "Узнайте, как зашифровать рабочую тетрадь Excel с помощью REST API Aspose.Cells Cloud (версия 3.0). Включает команду cURL, примеры кода SDK (C#, Java, Python и др.), необходимые параметры и обработку ошибок."
 weight: 20

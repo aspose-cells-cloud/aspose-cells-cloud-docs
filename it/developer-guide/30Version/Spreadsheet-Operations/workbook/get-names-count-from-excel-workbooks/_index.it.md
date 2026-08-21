@@ -3,7 +3,7 @@ title: "Ottenere i nomi da un workbook Excel"
 second_title: "Documento"
 linktitle: "Nomi"
 type: docs
-url: /get-names-from-an-excel-file/
+url: /it/get-names-from-an-excel-file/
 aliases:
   [
     /get-names-count-from-excel-workbooks/,

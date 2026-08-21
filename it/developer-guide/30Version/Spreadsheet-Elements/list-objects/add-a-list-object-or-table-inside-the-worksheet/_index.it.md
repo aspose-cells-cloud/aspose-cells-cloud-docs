@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Aggiungi"
 type: docs
 url: /it/list-objects/add/
-aliases: [/it/add-a-list-object-or-table-inside-the-worksheet/, /it/tables/add/]
+aliases: [  /it/add-a-list-object-or-table-inside-the-worksheet/ , /it/tables/add/ ]
 keywords: "Aspose.Cells Cloud, Excel API, oggetto elenco, tabella, REST API, foglio di lavoro"
 description: "Scopri come aggiungere un oggetto elenco (tabella Excel) a un foglio di lavoro utilizzando l'API REST di Aspose.Cells Cloud. Include endpoint, parametri, passaggi di autenticazione, esempio cURL e codice di esempio per SDK."
 weight: 10

@@ -3,8 +3,8 @@ title: "الحصول على النطاقات المسماة في مصنف إكس
 second_title: "وثيقة"
 linktype: "اسم"
 type: docs
-url: /ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
+url: /ar/ranges/get/name/
+aliases: [  /ar/get-named-ranges-inside-the-workbook/ ]
 keywords: "النطاقات المسماة، إكسل، Aspose.Cells، واجهة برمجة التطبيقات السحابية، أوراق العمل"
 description: "استرجاع النطاقات المسماة من مصنف إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمن تفاصيل الطلب وأوامر cURL النموذجية وأمثلة لعدة لغات برمجة."
 ArticleTitle: "الحصول على النطاقات المسماة في مصنف إكسل – واجهة برمجة التطبيقات السحابية Aspose.Cells"

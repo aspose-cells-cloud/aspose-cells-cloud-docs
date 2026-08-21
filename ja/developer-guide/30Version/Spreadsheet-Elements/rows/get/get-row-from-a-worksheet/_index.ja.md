@@ -3,8 +3,8 @@ title: "Excelワークシートから行の情報を取得する"
 second_title: "Document"
 linktitle: "Row"
 type: docs
-url: /rows/get/row/
-aliases: [/get-row-from-a-worksheet/]
+url: /ja/rows/get/row/
+aliases: [  /ja/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel 行 API, ワークシートの行を取得, REST API, .NET SDK, Java SDK, Python SDK"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシート内の特定の行（高さ、スタイル、非表示状態など）の詳細情報を取得します。cURLの例、SDKのコードスニペット、エラーハンドリングを含みます。"
 weight: 10

@@ -5,7 +5,7 @@ second_title: "وثيقة"
 linktitle: "مسح"
 type: docs
 url: /ar/shapes/clear/
-aliases: [/ar/delete-all-shapes-inside-the-worksheet/]
+aliases: [  /ar/delete-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud، حذف جميع الأشكال، ورقة عمل Excel، واجهة REST API، حزمة تطوير البرامج (SDK)، cURL، .NET، Java، PHP، Ruby، Node.js، Python، Perl، Go، Android، Swift"
 description: "احذف جميع الأشكال من ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. تتوفر هذه العملية عبر cURL ومجموعة واسعة من حزم تطوير البرامج (SDKs) (C#، Java، PHP، Ruby، Node.js، Python، Perl، Go، Android، Swift)."
 weight: 40

@@ -3,8 +3,8 @@ title: "Bir Excel çalışma sayfasını yeniden görünür hale getirme"
 second_title: "Belge"
 linktitle: "Görünür hale getir"
 type: docs
-url: /worksheets/unhide/
-aliases: [/unhide-excel-worksheets/]
+url: /tr/worksheets/unhide/
+aliases: [  /tr/unhide-excel-worksheets/ ]
 keywords: "Aspose.Cells, çalışma sayfasını görünür hale getir, Excel API, bulut elektronik tablo, REST, çalışma sayfası görünürlüğü, Excel çalışma kitabı"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabında bir çalışma sayfasını yeniden görünür hale getirmeyi öğrenin. İstek detaylarını, cURL örneklerini ve birden fazla programlama dili için SDK kod parçacıklarını içerir."
 weight: 60

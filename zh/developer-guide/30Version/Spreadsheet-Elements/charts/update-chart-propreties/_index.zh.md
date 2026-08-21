@@ -1,8 +1,8 @@
 ---
 title: "更新图表属性"
 type: docs
-url: /charts/properties/update/
-aliases: [/update-chart-properties/]
+url: /zh/charts/properties/update/
+aliases: [  /zh/update-chart-properties/ ]
 weight: 160
 keywords: "Aspose.Cells, 图表, 更新, Excel, REST API, SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）更新 Excel 工作簿中的图表属性（类型、标题、图例等）。内容包括端点、参数、cURL 示例以及 C#、Java、PHP、Ruby、Node.js、Perl 和 Go 的 SDK 代码片段。"

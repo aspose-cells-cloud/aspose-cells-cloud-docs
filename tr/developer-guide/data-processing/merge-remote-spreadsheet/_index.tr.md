@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud"
 ArticleTitle: "Excel Dosyalarını Bulut’ta Birleştirin – Aspose.Cells Cloud API ile Çizelgeleri Çevrimiçi Birleştirin"
 linktitle: "Uzak Çizelgeyi Birleştir"
 type: docs
-url: /merge-remote-spreadsheet/
+url: /tr/merge-remote-spreadsheet/
 keywords: "Aspose.Cells, Excel birleştir, bulut API, çizelge birleştir"
 description: "Aspose.Cells Cloud API ile bulut depolamada saklanan Excel çalışma kitaplarını birleştirin. Tek bir HTTPS çağrısıyla çıktı formatını, hedef klasörü ve birleştirme modunu belirtin."
 weight: 100

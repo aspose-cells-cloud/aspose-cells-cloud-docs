@@ -3,8 +3,8 @@ title: "Flytta ett Excel-ark – Aspose.Cells Cloud API (v3.0)"
 second_title: "Dokument"
 linktitle: "Flytta"
 type: docs
-url: /worksheets/move/
-aliases: [/move-excel-worksheets/]
+url: /sv/worksheets/move/
+aliases: [  /sv/move-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Flytta ark, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
 description: "Lär dig hur du flyttar ett Excel-ark till en ny position med Aspose.Cells Cloud API (v3.0). Inkluderar slutpunkt, nödvändiga parametrar, cURL-exempel och SDK-kod i C#, Java, Python m.m."
 weight: 20

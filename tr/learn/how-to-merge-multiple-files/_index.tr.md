@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud ile Birden Fazla Elektronik Tablo Dosyasını Nasıl Birleştirirsiniz"
 linktitle: "Birden F fazla Elektronik Tablo Dosyasını Nasıl Birleştirirsiniz"
 type: docs
-url: /how-to-merge-multiple-files
+url: /tr/how-to-merge-multiple-files
 description: "Aspose.Cells Cloud ile birden fazla elektronik tablo dosyasını nasıl birleştireceğiniz."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Elektronik Tablo, PDF, CSV, Json, Markdown, Aspose.Cells Cloud ile birden fazla dosyayı nasıl birleştirirsiniz

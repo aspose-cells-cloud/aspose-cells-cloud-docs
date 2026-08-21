@@ -3,7 +3,7 @@ title: "Excel 转 CSV"
 second: "文档"
 linktitle: "Excel 转 CSV"
 type: docs
-url: convert-excel-file-to-CSV-file/
+url: /zhconvert-excel-file-to-CSV-file/
 aliases:
   - /convert-excel-file-to-CSV-in-cloud/
   - /convert/excel-to-csv/

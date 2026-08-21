@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud"
 ArticleTitle: "클라우드에서 엑셀 파일 병합 – Aspose.Cells Cloud API를 사용해 온라인으로 스프레드시트 통합"
 linktitle: "원격 스프레드시트 병합"
 type: docs
-url: /merge-remote-spreadsheet/
+url: /ko/merge-remote-spreadsheet/
 keywords: "Aspose.Cells, 엑셀 병합, 클라우드 API, 스프레드시트 통합"
 description: "Aspose.Cells Cloud API를 사용해 클라우드 스토리지에 저장된 엑셀 워크북을 병합합니다. 단일 HTTPS 호출에서 출력 형식, 대상 폴더 및 병합 모드를 지정할 수 있습니다."
 weight: 100

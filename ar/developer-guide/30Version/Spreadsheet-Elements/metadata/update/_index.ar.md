@@ -3,7 +3,7 @@ title: "تحديث البيانات الوصفية"
 second_title: "مستند"
 linktitle: "تحديث بدون استخدام التخزين"
 type: docs
-url: /metadata/update/
+url: /ar/metadata/update/
 keywords: "البيانات الوصفية، إكسل، Aspose.Cells Cloud، REST API، تحديث، جدول بيانات"
 description: "تتيح واجهة Aspose.Cells Cloud REST تحديث البيانات الوصفية في ملفات إكسل. وتدعم مجموعة واسعة من SDKs (C#، Java، Python، Ruby، Go، إلخ) لدمجٍ سلس عبر لغات البرمجة المختلفة."
 weight: 35

@@ -2,8 +2,8 @@
 title: "مهمة ImportData – مرجع واجهة برمجة تطبيقات Aspose.Cells Cloud وأمثلة cURL"  
 second_title: "مستند"  
 type: docs  
-url: /tasks/importdata/  
-aliases: [/working-with-importdata-task/]  
+url: /ar/tasks/importdata/
+aliases: [  /ar/working-with-importdata-task/ ]
 keywords: "Aspose.Cells، مهمة ImportData، واجهة برمجة تطبيقات Excel، REST، cURL، SDK"  
 description: "تعرّف على كيفية استيراد كميات كبيرة من البيانات إلى أوراق عمل Excel باستخدام مهمة ImportData في Aspose.Cells Cloud. يشمل بناء جملة cURL ومخطط الطلب وأمثلة SDK (C# و PHP و Ruby و Node.js) وتعامل مع الأخطاء."  
 weight: 40  

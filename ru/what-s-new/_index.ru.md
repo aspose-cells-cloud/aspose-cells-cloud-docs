@@ -4,8 +4,8 @@ second_title: "Документ"
 linktitle: "Что нового"
 type: docs
 weight: 9
-url: /new-features/
-aliases: [/what-s-new-in-aspose-cells-cloud/]
+url: /ru/new-features/
+aliases: [  /ru/what-s-new-in-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, новые функции, Microsoft Office Excel, OpenOffice Spreadsheet, CSV, PDF, REST API, SDK, электронная таблица, облако"
 description: "Ознакомьтесь с последними функциями, улучшениями и исправлениями ошибок в Aspose.Cells Cloud, включая обновления для обработки Excel, OpenOffice, CSV и PDF."
 ArticleTitle: "Что нового в Aspose.Cells Cloud – Последние функции и обновления"

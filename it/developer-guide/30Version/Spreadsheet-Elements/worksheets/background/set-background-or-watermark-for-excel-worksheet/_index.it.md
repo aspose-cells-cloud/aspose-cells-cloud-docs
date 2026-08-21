@@ -5,7 +5,7 @@ second_title: "Documenti"
 linktitle: "Aggiungi"
 type: docs
 url: /it/worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
+aliases: [  /it/set-background-or-watermark-for-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, foglio di lavoro, sfondo, API REST, SDK, aggiungi immagine"
 description: "Scopri come aggiungere un'immagine di sfondo (PNG, JPEG, BMP) a un foglio di lavoro Excel utilizzando l’API REST di Aspose.Cells Cloud. Include l’endpoint, i parametri obbligatori, i passaggi di autenticazione, un esempio cURL e codice di esempio per gli SDK."
 weight: 180

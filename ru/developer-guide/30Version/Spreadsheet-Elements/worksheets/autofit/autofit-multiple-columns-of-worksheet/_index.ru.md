@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Столбцы"
 type: docs
 url: /ru/worksheets/autofit/columns/
-aliases: [/autofit-multiple-columns-of-worksheet/]
+aliases: [  /ru/autofit-multiple-columns-of-worksheet/ ]
 keywords: "Aspose.Cells, автоподбор столбцов, Excel API, облачная таблица, REST"
 description: "Узнайте, как выполнить автоподбор нескольких столбцов на листе Excel с помощью Aspose.Cells Cloud REST API (версия 3.0). Включает endpoint, параметры, пример cURL, обработку ошибок и фрагменты кода SDK для C#, Java, Python и других языков."
 weight: 20

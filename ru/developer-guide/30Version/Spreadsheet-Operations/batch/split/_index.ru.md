@@ -2,7 +2,7 @@
 title: "Пакетное разделение"
 second: "Документ"
 type: docs
-url: /batch/split
+url: /ru/batch/split
 keywords: "Пакетное разделение, Aspose.Cells Cloud, REST API, Excel, PDF, CSV, JSON, Электронная таблица, облачный SDK"
 description: "Документация по API Aspose.Cells Cloud для пакетного разделения, который разделяет файлы электронных таблиц на несколько форматов, таких как PDF, CSV или JSON. Включает детали запроса, примеры команд cURL и использование SDK для различных языков программирования."
 weight: 100

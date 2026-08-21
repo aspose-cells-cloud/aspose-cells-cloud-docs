@@ -4,7 +4,7 @@ second_title: "Excel Koruması İçin Geliştirici Kılavuzu"
 ArticleTitle: "Excel Şifre Koruması Aracı – Açma ve Değiştirme Şifrelerini Ayarlayın – Elektronik Tablo Dosyalarınızı Güven Altına Alın"
 linktitle: "Elektronik Tabloyu Korumak"
 type: docs
-url: /protect-spreadsheet/
+url: /tr/protect-spreadsheet/
 keywords: "Aspose.Cells, Excel şifre koruması, API, açma şifresi, değiştirme şifresi, bulut depolama, elektronik tablo güvenliği"
 description: "Aspose.Cells Cloud ile Excel dosyalarınızı programatik olarak güven altına alın. Tek bir API çağrısıyla hem açma hem de değiştirme şifrelerini ayarlayın. .xlsx, .xls ve bulut depolamayı destekler. Ücretsiz olarak deneyin."
 weight: 100

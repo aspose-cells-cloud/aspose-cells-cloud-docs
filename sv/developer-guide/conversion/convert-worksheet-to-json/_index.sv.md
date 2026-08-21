@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Så här konverterar du ett kalkylarksblad till JSON med Aspose.Cells Cloud API"
 linktitle: "Konvertera kalkylblad till JSON"
 type: docs
-url: /convert-worksheet-to-json/
+url: /sv/convert-worksheet-to-json/
 keywords: "Aspose.Cells, kalkylblad till JSON, Excel-konvertering, moln-API, API v4, dataexport"
 description: "Steg-för-steg-guide för att konvertera ett Excel-kalkylblad till JSON med Aspose.Cells Cloud API, inklusive begärparametrar, svarshantering, felkoder och SDK-exempel."
 weight: 100

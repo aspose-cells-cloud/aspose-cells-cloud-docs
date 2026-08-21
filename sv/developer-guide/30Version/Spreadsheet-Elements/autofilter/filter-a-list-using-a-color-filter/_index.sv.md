@@ -3,8 +3,8 @@ title: "Lägg till en färgfilter i ett Excel-arbetsblad"
 second_title: "Dokument"
 linktitle: "Lägg till färgfilter"
 type: docs
-url: /autofilter/add-color-filter/
-aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
+url: /sv/autofilter/add-color-filter/
+aliases: [  /sv/filter-a-list-using-a-color-filter/ , /sv/autofilter/add-a-color-filter/ ]
 keywords: "Excel, färgfilter, Aspose.Cells Cloud, REST API, autofilter, JWT-autentisering"
 description: "Lär dig hur du tillämpar ett färgfilter på ett Excel-arbetsblad med Aspose.Cells Cloud API. Innehåller endpoint, parametrar, cURL-exempel, felhantering och SDK-exempel."
 weight: 65

@@ -3,8 +3,8 @@ title: "Hintergrund in einem Excel-Arbeitsblatt festlegen"
 ArticleTitle: "Hintergrund in einem Excel-Arbeitsblatt festlegen – Aspose.Cells Cloud API-Anleitung"
 second_title: "Dokument"
 linktype: "docs"
-url: /worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
+url: /de/worksheets/background/add/
+aliases: [  /de/set-background-or-watermark-for-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, Arbeitsblatt, Hintergrund, REST API, SDK, Bild hinzufügen"
 description: "Erfahren Sie, wie Sie ein Hintergrundbild (PNG, JPEG, BMP) mit der Aspose.Cells Cloud REST API zu einem Excel-Arbeitsblatt hinzufügen. Enthält Endpunkt, erforderliche Parameter, Authentifizierungsschritte, cURL-Beispiel und SDK-Codebeispiele."
 weight: 180

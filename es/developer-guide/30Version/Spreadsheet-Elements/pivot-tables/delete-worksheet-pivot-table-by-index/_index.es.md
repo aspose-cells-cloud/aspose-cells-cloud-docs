@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: Eliminar
 type: docs
 url: /es/pivot-tables/delete/
-aliases: [/delete-worksheet-pivot-table-by-index/]
+aliases: [  /es/delete-worksheet-pivot-table-by-index/ ]
 keywords: "Aspose.Cells, tabla dinámica, eliminar, Excel, API REST"
 description: "Eliminar una tabla dinámica de una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye el formato de solicitud, un ejemplo con cURL, códigos de error y fragmentos de SDK para C#, Java, Python y Node.js."
 weight: 70

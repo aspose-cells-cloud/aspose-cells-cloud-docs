@@ -3,8 +3,8 @@ title: "Автоподбор высоты нескольких строк в р�
 second_title: "Документ"
 linktitle: "Строки"
 type: docs
-url: /worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
+url: /ru/worksheets/autofit/rows/
+aliases: [  /ru/autofit-multiple-rows-of-worksheet/ ]
 keywords: "автоподбор строк, Excel, Aspose.Cells Cloud, REST API, рабочая тетрадь, электронная таблица"
 description: "Узнайте, как использовать REST API Aspose.Cells Cloud для автоподбора высоты нескольких строк в рабочей книге Excel. Включает синтаксис запроса, параметры, пример cURL, фрагменты кода SDK и обработку ошибок."
 weight: 40

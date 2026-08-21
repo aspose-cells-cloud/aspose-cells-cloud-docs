@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud SDK för Java: Konvertera, sammanfoga, dela, skydda, söka, ersätta och mer"
 linktitle: "Aspose.Cells Cloud SDK för Java"
 type: docs
-url: /available-sdks/aspose-cells-cloud-java/
+url: /sv/available-sdks/aspose-cells-cloud-java/
 description: "Använd Aspose.Cells Cloud Java SDK för att skapa, konvertera, sammanfoga, dela, skydda, söka och ersätta Excel-filer utan att Office behöver vara installerat."
 weight: 30
 keywords: "Aspose Cells Java SDK, Excel-konvertering Java, molnspreadsheets API, Java Excel-bibliotek, Aspose.Cells Cloud Java"

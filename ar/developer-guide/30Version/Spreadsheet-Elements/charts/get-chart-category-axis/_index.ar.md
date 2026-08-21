@@ -1,7 +1,7 @@
 ---
 title: "احصل على محور الفئات للرسم البياني"
 type: docs
-url: /charts/category-axis/get/
+url: /ar/charts/category-axis/get/
 weight: 60
 keywords: "Aspose.Cells, محور الفئات للرسم البياني, Excel, REST API, Cloud Storage, OAuth2, وثائق API"
 description: "يُعيد محور الفئات لرسم بياني موجود في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API."

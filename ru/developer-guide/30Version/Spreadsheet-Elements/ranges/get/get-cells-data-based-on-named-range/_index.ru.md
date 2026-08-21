@@ -3,8 +3,8 @@ title: "Получение данных ячеек по именованному
 second_title: "Документ"
 linktitle: "Значения"
 type: docs
-url: /ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
+url: /ru/ranges/get/values/
+aliases: [  /ru/get-cells-data-based-on-named-range/ ]
 keywords: "Aspose.Cells, облако, REST API, Excel, именованный диапазон, значения ячеек, рабочий лист"
 description: "Получение значений ячеек из именованного диапазона в рабочем листе Excel с использованием REST API Aspose.Cells Cloud. Сервис доступен через множество SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) и работает на широком спектре платформ разработки."
 weight: 20

@@ -1,7 +1,7 @@
 ---
 title: "الحصول على MaxColumn من ورقة عمل Excel"
 type: docs
-url: /get-maxcolumn-from-excel-worksheet/
+url: /ar/get-maxcolumn-from-excel-worksheet/
 weight: 60
 keywords: "Aspose Cells API, maxcolumn, ورقة عمل Excel, REST, SDK"
 description: "استرجاع مؤشر العمود الأقصى في ورقة عمل باستخدام واجهة Aspose.Cells Cloud API. يتضمن طلب cURL مع المصادقة، ومخطط الاستجابة، والمعلمات، وأكواد الأخطاء، وأمثلة SDK (C#، Java، Python، إلخ)."

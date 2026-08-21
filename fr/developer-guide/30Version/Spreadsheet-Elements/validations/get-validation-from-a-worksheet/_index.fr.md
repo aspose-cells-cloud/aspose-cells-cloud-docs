@@ -3,8 +3,8 @@ title: "Obtenir une validation de feuille de calcul par index à partir d'une fe
 second_title: "Document"
 linktitle: "Obtenir"
 type: docs
-url: /validations/get/
-aliases: [/get-validation-from-a-worksheet/]
+url: /fr/validations/get/
+aliases: [  /fr/get-validation-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API de validation de feuille de calcul, obtenir la validation par index, API REST Excel, SDK Aspose.Cells"
 description: "Récupérer une validation de feuille de calcul à partir de son index à base zéro dans un classeur Excel à l'aide de l'API Aspose.Cells Cloud (v3.0). Inclut un exemple cURL, le schéma de réponse, les codes d'erreur et des extraits de code pour SDK en C#, Java, Python, etc."
 weight: 10

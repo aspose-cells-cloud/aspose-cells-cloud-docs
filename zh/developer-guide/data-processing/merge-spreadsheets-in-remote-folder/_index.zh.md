@@ -4,7 +4,7 @@ description: "将存储在 Aspose Cloud 存储中的电子表格文件合并为�
 keywords: "Aspose.Cells, 合并电子表格, 远程文件夹, API, PDF, CSV, JSON, XLSX, ODS, XPS"
 weight: 100
 type: docs
-url: /merge-spreadsheets-in-remote-folder/
+url: /zh/merge-spreadsheets-in-remote-folder/
 ---
 
 将位于远程 Aspose Cloud 存储文件夹中的多个电子表格文件合并为单个输出文件。该操作完全在云端执行，无需将源文件下载到本地。支持超过 30 种输出格式（PDF、CSV、JSON、XLSX、ODS、XPS 等）。

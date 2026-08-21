@@ -1,7 +1,7 @@
 ---
 title: "Получить второй осевой масштаб диаграммы"
 type: docs
-url: /charts/second-value-axis/get/
+url: /ru/charts/second-value-axis/get/
 weight: 60
 keywords: Aspose.Cells, второй осевой масштаб диаграммы, Excel, REST API, облачные технологии, API, оси диаграмм Excel
 description: Получает второй осевой масштаб указанной диаграммы на рабочем листе Excel с использованием облачного REST API Aspose.Cells.

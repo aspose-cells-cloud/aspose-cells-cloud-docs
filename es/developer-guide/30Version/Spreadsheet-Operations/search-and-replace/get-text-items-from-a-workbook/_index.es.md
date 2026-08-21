@@ -4,8 +4,8 @@ ArticleTitle: "Obtener elementos de texto de un libro de Excel mediante la API d
 second_title: "Documento"
 linktitle: "Obtener elementos de texto en el libro"
 type: docs
-url: /workbook/get-text-items/
-aliases: [/get-text-items-from-a-workbook/]
+url: /es/workbook/get-text-items/
+aliases: [  /es/get-text-items-from-a-workbook/ ]
 weight: 10
 keywords: "Excel, Aspose.Cells Cloud, REST API, hoja de cálculo, obtener elementos de texto, libro"
 description: "Recuperar elementos de texto de un libro de Excel mediante la API REST de Aspose.Cells Cloud. Disponible a través de SDK para C#, Java, Python, PHP, Ruby, Go, Node.js, Perl y Swift."

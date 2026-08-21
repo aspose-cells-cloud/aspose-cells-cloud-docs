@@ -3,7 +3,7 @@ title: "Ta bort alla kalkylbladsvalideringar – Aspose.Cells Cloud API"
 second_title: "Dokumentation"
 linktitle: "Ta bort"
 type: docs
-url: /validations/clear/
+url: /sv/validations/clear/
 keywords: "Aspose.Cells Cloud, Ta bort kalkylbladsvalideringar, Excel, REST API, Validering av kalkylark, API"
 description: "Ta bort alla regler för datavalidering från ett kalkylblad i en Excel-fil med Aspose.Cells Cloud REST API. Inkluderar autentiseringsssteg, begärandebeskrivning, cURL-exempel, svarschema, felhantering och SDK-utdrag."
 weight: 10

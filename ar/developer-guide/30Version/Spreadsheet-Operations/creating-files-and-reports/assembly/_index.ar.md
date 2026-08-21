@@ -3,8 +3,8 @@ title: "تجميع البيانات لإنشاء تقرير Excel"
 second_title: "مستند"
 linktitle: "تجميع البيانات"
 type: docs
-url: /assembly-data-for-the-creation-of-an-excel-report/
-aliases: [/assembly/]
+url: /ar/assembly-data-for-the-creation-of-an-excel-report/
+aliases: [  /ar/assembly/ ]
 keywords: "Aspose.Cells، تقرير Excel، تجميع البيانات، واجهة Cloud API، REST، SDK، cURL، PDF، ODS"
 description: "تعلم كيفية استخدام واجهة التجميع (Assembly API) في Aspose.Cells Cloud لدمج البيانات في تقارير Excel (XLSX، PDF، ODS). يتضمن النهاية (endpoint)، المعاملات، مثال cURL، كود SDK، دليل المصادقة، ومعالجة الأخطاء."
 weight: 40

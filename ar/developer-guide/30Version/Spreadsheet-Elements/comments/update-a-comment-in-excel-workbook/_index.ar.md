@@ -1,8 +1,8 @@
 ---
 title: "تحديث تعليق خلية في ورقة عمل"
 type: docs
-url: /comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
+url: /ar/comments/update/
+aliases: [  /ar/update-a-comment-in-excel-workbook/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, ورقة عمل, تعليق خلية, تحديث تعليق ورقة العمل, كائن التعليق"
 description: "استخدم واجهة Aspose.Cells Cloud REST API لتحديث تعليق خلية في ورقة عمل ضمن ملف Excel، بما في ذلك تفاصيل الطلب، رموز الاستجابة، وأمثلة لSDKs."
 weight: 30

@@ -3,7 +3,7 @@ title: "Cómo obtener diferente contenido de una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Obtener"
 type: docs
-url: /worksheets/get/
+url: /es/worksheets/get/
 keywords: "Excel, hoja de cálculo, Aspose.Cells Cloud, API REST, extracción de contenido, conversión de formato"
 description: "Aprenda cómo recuperar distintos tipos de contenido de una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. La guía cubre los formatos compatibles y proporciona enlaces a operaciones relacionadas."
 weight: 20

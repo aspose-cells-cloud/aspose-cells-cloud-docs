@@ -2,7 +2,7 @@
 title: "Ta bort alla bladkommentarer"
 description: "Ta bort alla kommentarer från ett kalkylblad i en Excel-fil med Aspose.Cells Cloud API:et. Lär dig DELETE-slutpunkten, nödvändiga parametrar, autentisering, exempel på cURL-begäran, svarsformat, felkoder och SDK-exempel."
 keywords: "Aspose, Cells, ta bort kommentarer, kalkylblad, API, REST, Excel, moln"
-url: /comments/clear/
+url: /sv/comments/clear/
 aliases:
   - /delete-all-comments-in-a-worksheet/
 weight: 50

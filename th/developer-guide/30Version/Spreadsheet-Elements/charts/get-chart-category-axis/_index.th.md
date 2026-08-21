@@ -1,7 +1,7 @@
 ---
 title: "รับแกนหมวดหมู่ของแผนภูมิ"
 type: docs
-url: /charts/category-axis/get/
+url: /th/charts/category-axis/get/
 weight: 60
 keywords: "Aspose.Cells, แกนหมวดหมู่ของแผนภูมิ, Excel, REST API, Cloud Storage, OAuth2, เอกสาร API"
 description: "ดึงข้อมูลแกนหมวดหมู่ของแผนภูมิในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API"

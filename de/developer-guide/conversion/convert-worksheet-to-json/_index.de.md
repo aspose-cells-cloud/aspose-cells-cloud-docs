@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie ein Tabellenkalkulationsarbeitsblatt mithilfe der Aspose.Cells Cloud API in JSON"
 linktitle: "Arbeitsblatt in JSON konvertieren"
 type: docs
-url: /convert-worksheet-to-json/
+url: /de/convert-worksheet-to-json/
 keywords: "Aspose.Cells, Arbeitsblatt in JSON, Excel-Konvertierung, Cloud-API, API v4, Datenexport"
 description: "Schritt-für-Schritt-Anleitung zur Konvertierung eines Excel-Arbeitsblatts in JSON mithilfe der Aspose.Cells Cloud API, einschließlich Anforderungsparameter, Antwortbehandlung, Fehlercodes und SDK-Beispielen."
 weight: 100

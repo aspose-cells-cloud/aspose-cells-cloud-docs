@@ -3,8 +3,8 @@ title: "ExcelワークシートにOLEオブジェクトを追加する"
 second_title: "Document"
 linktitle: "OLEオブジェクトの追加"
 type: docs
-url: /oleobjects/add/
-aliases: [/add-oleobject-to-excel-worksheet/]
+url: /ja/oleobjects/add/
+aliases: [  /ja/add-oleobject-to-excel-worksheet/ ]
 keywords: "OLEオブジェクトの追加, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "Aspose.Cells Cloud REST APIを使用してExcelワークシートにOLEオブジェクトを追加します。このAPIは、C#、Java、PHP、Ruby、Node.js、Python、Perl、GoのSDKを介して、または直接呼び出すことができます。"
 ArticleTitle: "Aspose.Cells Cloud APIを使用してExcelワークシートにOLEオブジェクトを追加する"

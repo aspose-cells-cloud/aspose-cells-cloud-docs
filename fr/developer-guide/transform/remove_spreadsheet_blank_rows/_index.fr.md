@@ -4,7 +4,7 @@ ArticleTitle: "Supprimer les lignes vides d'une feuille de calcul – Aspose.Cel
 second_title: "Document"
 linktype: "Supprimer les lignes vides d'une feuille de calcul"
 type: docs
-url: /cells/remove/blank-rows
+url: /fr/cells/remove/blank-rows
 aliases: []
 keywords: "Aspose.Cells, supprimer les lignes vides, feuille de calcul, API"
 description: "Supprime toutes les lignes vides d’un fichier de feuille de calcul."

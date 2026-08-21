@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "按颜色汇总电子表格/Excel 中的单元格：求和、计数、平均值、最大值、最小值"
 LinkTitle: "按颜色汇总单元格"
 type: docs
-url: /aggregate-cells-by-color/
+url: /zh/aggregate-cells-by-color/
 keywords: "Aspose, Cells, Excel, API, 汇总, 颜色, 求和, 计数, 平均值, 最小值, 最大值"
 description: "使用 Aspose.Cells Cloud API 按单元格背景色或字体颜色（求和、计数、平均值、最小值、最大值）汇总 Excel 单元格。了解接口端点、参数、身份验证及 SDK 示例。"
 weight: 100

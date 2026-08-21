@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Получить"
 type: docs
 url: /ru/oleobjects/get/
-aliases: [/ru/get-oleobject-from-a-worksheet/]
+aliases: [  /ru/get-oleobject-from-a-worksheet/ ]
 keywords: "aspose, cells, ole object, excel, worksheet, get ole object, rest api"
 description: "Извлечение OLE-объекта (изображения, диаграммы или встроенного файла) из рабочего листа с использованием Aspose.Cells Cloud REST API. Включает HTTPS-адрес, необходимые параметры, пример cURL и код SDK на нескольких языках."
 ArticleTitle: "Получение OLE-объекта из рабочего листа Excel – Aspose.Cells Cloud API"

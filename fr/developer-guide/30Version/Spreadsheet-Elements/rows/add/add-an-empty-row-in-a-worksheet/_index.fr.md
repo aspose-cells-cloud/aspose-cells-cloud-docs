@@ -4,8 +4,8 @@ ArticleTitle: "Ajouter une ligne vide à une feuille de calcul Excel à l’aide
 second_title: "Document"
 linktype: "Ligne"
 type: docs
-url: /rows/add/row/
-aliases: [/add-an-empty-row-in-a-worksheet/]
+url: /fr/rows/add/row/
+aliases: [  /fr/add-an-empty-row-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, ajouter une ligne vide, feuille de calcul, API REST, insérer une ligne, feuille de calcul cloud"
 description: "Utilisez l’API REST Aspose.Cells Cloud pour insérer une ligne vide dans une feuille de calcul Excel. Prend en charge de nombreux SDK (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) pour un développement rapide."
 weight: 20

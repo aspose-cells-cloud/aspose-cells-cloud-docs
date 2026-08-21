@@ -3,7 +3,7 @@ title: "스프레드시트 콘텐츠 검색 – Aspose.Cells Cloud API(Excel에�
 second_title: "문서"
 ArticleTitle: "로컬 Excel 스프레드시트에서 텍스트 검색 – 특정 데이터 찾기"
 linktype: "docs"
-url: /search-spreadsheet-content/
+url: /ko/search-spreadsheet-content/
 keywords: "Aspose.Cells, Excel 검색 API, 스프레드시트 콘텐츠 검색, 클라우드 스프레드시트 API, 텍스트 조회"
 description: "Aspose.Cells Cloud API를 사용하여 로컬 Excel 파일에서 텍스트, 숫자 또는 수식을 검색합니다. 대소문자 구분 없는 쿼리, 워크시트 단위 범위, 보안 인증을 지원합니다."
 weight: 100

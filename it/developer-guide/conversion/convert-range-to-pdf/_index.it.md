@@ -4,7 +4,7 @@ second_title: "Documenti"
 ArticleTitle: "Come convertire dati di intervallo da un foglio di calcolo locale in un file PDF: Guida passo-passo"
 linktitle: "Converti intervallo in PDF"
 type: docs
-url: /convert-range-to-pdf/
+url: /it/convert-range-to-pdf/
 keywords: "Aspose.Cells Cloud, converti intervallo Excel in PDF, Excel in PDF, conversione cloud"
 description: "Converti un intervallo specifico da un foglio di calcolo Excel locale in PDF utilizzando l'API REST di Aspose.Cells Cloud."
 weight: 100

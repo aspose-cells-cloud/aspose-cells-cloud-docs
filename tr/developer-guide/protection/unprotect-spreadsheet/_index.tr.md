@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Excel Şifre Korumasını Kaldırın – Open ve Modify Şifrelerini Anında Kaldırın"
 linktitle: "Tabloyu Korumasını Kaldır"
 type: docs
-url: /unprotect-spreadsheet/
+url: /tr/unprotect-spreadsheet/
 keywords: "korumasız bırak, tablo, Aspose.Cells, API, Excel, şifre kaldırma"
 description: "Aspose.Cells Cloud Tablo Korumasını Kaldırma API’si ile Excel dosyalarının açılış ve değiştirme şifrelerini programlı olarak kaldırın. .xlsx/.xls formatlarını, OAuth2 kimlik doğrulamayı ve toplu işlem desteğini destekler."
 weight: 100

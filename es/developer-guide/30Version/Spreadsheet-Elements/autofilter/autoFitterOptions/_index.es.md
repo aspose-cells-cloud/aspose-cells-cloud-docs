@@ -3,7 +3,7 @@ title: "AutoFitterOptions – Guía de propiedades y uso | Aspose.Cells Cloud AP
 second_title: "Documento"
 linktitle: "AutoFitterOptions"
 type: docs
-url: /auto-fitter-options/
+url: /es/auto-fitter-options/
 keywords: "AutoFitterOptions, Aspose.Cells, ajuste automático de Excel, altura de fila, celdas fusionadas, API"
 description: "Aprenda cómo controlar el ajuste automático de la altura de fila, el manejo de celdas fusionadas, filas/columnas ocultas, configuraciones de idioma y opciones de renderizado mediante el objeto AutoFitterOptions en la API de Aspose.Cells Cloud."
 weight: 79

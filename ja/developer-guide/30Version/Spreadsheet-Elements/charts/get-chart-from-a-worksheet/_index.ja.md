@@ -1,8 +1,8 @@
 ---
 title: "ワークシートからチャートを取得する"
 type: docs
-url: /charts/get/
-aliases: [/get-chart-from-a-worksheet/]
+url: /ja/charts/get/
+aliases: [  /ja/get-chart-from-a-worksheet/ ]
 weight: 10
 keywords: "Aspose.Cells Cloud, Get Chart, Worksheet, REST API, Excel, Chart API, chart retrieval, Excel chart"
 description: "Aspose.Cells Cloud REST API を使用して、ワークシートからチャートのメタデータおよびエクスポート形式を含むチャート情報を取得します。"

@@ -3,7 +3,7 @@ title: "Преобразование листа в PDF, PNG, CSV и другие
 second_title: "Документ"
 linktitle: "Преобразование листа"
 type: docs
-url: /worksheets/conversion/
+url: /ru/worksheets/conversion/
 aliases:
   - /convert-worksheet-to-image/
   - /worksheets/to-image/

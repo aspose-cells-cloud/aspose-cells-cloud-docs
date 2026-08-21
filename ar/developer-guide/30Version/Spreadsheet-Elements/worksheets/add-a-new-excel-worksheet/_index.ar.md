@@ -4,8 +4,8 @@ ArticleTitle: "إضافة ورقة عمل Excel - دليل واجهة برمجة
 second_title: "وثيقة"
 linktype: "إضافة"
 type: docs
-url: /worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
+url: /ar/worksheets/add/
+aliases: [  /ar/add-a-new-excel-worksheet/ ]
 keywords: "إضافة ورقة عمل Excel، Aspose.Cells Cloud، واجهة برمجة تطبيقات REST، إضافة ورقة عمل عبر PUT، ملف Excel، طلب واجهة برمجة التطبيقات"
 description: "دليل خطوة بخطوة لإضافة ورقة عمل جديدة إلى ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST، ويتضمن تفاصيل الطلب، ومثال باستخدام cURL، وأجزاء من كود SDK لعدة لغات برمجة."
 weight: 20

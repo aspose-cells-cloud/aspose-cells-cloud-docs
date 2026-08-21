@@ -4,7 +4,7 @@ ArticleTitle: "รับเซลล์ที่ถูกรวมในวอ�
 second_title: "เอกสาร"
 linktype: "รับเซลล์ที่ถูกรวมในวอร์กชีตระยะไกล"
 type: docs
-url: /cells/mergedcells/get
+url: /th/cells/mergedcells/get
 aliases: []
 keywords: "Aspose Cells, รับเซลล์ที่ถูกรวม, วอร์กชีตระยะไกล, API"
 description: "ดึงพื้นที่เซลล์ที่ถูกรวมทั้งหมดจากวอร์กชีตในไฟล์สเปรดชีตที่อยู่บนคลาวด์"

@@ -3,8 +3,8 @@ title: "Elimina tutte le immagini in un foglio di lavoro di Excel"
 second_title: "Documento"
 linktitle: "Cancella"
 type: docs
-url: /pictures/clear/
-aliases: [/delete-all-pictures-from-excel-worksheet/]
+url: /it/pictures/clear/
+aliases: [  /it/delete-all-pictures-from-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, elimina tutte le immagini, foglio di lavoro, REST API, cancella immagini"
 description: "Scopri come eliminare tutte le immagini da un foglio di lavoro di Excel utilizzando l'API REST di Aspose.Cells Cloud con esempi in cURL e SDK."
 weight: 60

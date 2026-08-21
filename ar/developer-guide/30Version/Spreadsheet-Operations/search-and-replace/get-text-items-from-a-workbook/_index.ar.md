@@ -3,8 +3,8 @@ title: "استرجاع عناصر نصية من ملف عمل Excel"
 ArticleTitle: "استرجاع عناصر نصية من ملف عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud"
 second_title: "مستند"
 linktype: "docs"
-url: /workbook/get-text-items/
-aliases: [/get-text-items-from-a-workbook/]
+url: /ar/workbook/get-text-items/
+aliases: [  /ar/get-text-items-from-a-workbook/ ]
 weight: 10
 keywords: "Excel، Aspose.Cells Cloud، واجهة برمجة تطبيقات REST، جدول بيانات، استرجاع عناصر نصية، ملف عمل"
 description: "استرجاع عناصر نصية من ملف عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. متاح عبر حزم تطوير برمجيات (SDKs) لـ C#، Java، Python، PHP، Ruby، Go، Node.js، Perl، و Swift."

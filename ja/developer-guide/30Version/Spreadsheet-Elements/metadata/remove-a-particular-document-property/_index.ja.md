@@ -3,8 +3,8 @@ title: "特定のドキュメント プロパティを削除する"
 second_title: "ドキュメント"
 linktitle: "削除"
 type: docs
-url: /document-properties/delete/
-aliases: [/remove-a-particular-document-property/]
+url: /ja/document-properties/delete/
+aliases: [  /ja/remove-a-particular-document-property/ ]
 keywords: "Aspose.Cells, ドキュメント プロパティの削除, Excel メタデータ API, REST, クラウド SDK, cURL の例"
 description: "Aspose.Cells Cloud REST API v3.0 を使用して Excel ワークブックから特定のドキュメント プロパティを削除します。C#、Java、Python など、さまざまな SDK の cURL および SDK の使用例を含みます。"
 weight: 50

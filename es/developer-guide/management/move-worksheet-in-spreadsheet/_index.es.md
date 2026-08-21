@@ -4,7 +4,7 @@ second_title: "Documentación"
 ArticleTitle: "Cómo mover hojas de cálculo en Excel – Reorganizar orden y posición de hojas"
 linktitle: "Mover hoja en hoja de cálculo"
 type: docs
-url: /move-worksheet-in-spreadsheet/
+url: /es/move-worksheet-in-spreadsheet/
 keywords: "API de movimiento de hoja, API de reordenamiento de hojas, API de cambio de orden de hojas, API de gestión de pestañas de Excel, API REST de Aspose Cells, automatización de posicionamiento de hojas, API de organización de libros de trabajo, API de estructura de hoja de cálculo, automatización en la nube de Excel, reordenamiento por lotes de hojas"
 description: "Aprenda a mover hojas de cálculo dentro de libros de Excel para reorganizar el orden de las hojas y optimizar la estructura del libro de trabajo. Cambie las posiciones de las hojas, reordene las pestañas para mejorar su flujo de trabajo y automatice la organización de hojas para una gestión profesional de hojas de cálculo."
 weight: 100

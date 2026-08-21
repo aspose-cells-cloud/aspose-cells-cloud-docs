@@ -3,8 +3,8 @@ title: "Actualizar una forma en una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Actualizar"
 type: docs
-url: /shapes/update/
-aliases: [/update-a-shape-inside-the-worksheet/]
+url: /es/shapes/update/
+aliases: [  /es/update-a-shape-inside-the-worksheet/ ]
 keywords: "actualizar forma API de Excel, Aspose.Cells Cloud, actualización de forma de Excel, API REST, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
 description: "Aprenda cómo actualizar una forma en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye el punto de conexión HTTPS, detalles de autenticación, esquema DTO, uso paso a paso, ejemplo de cURL y ejemplos de código SDK para múltiples lenguajes."
 ArticleTitle: "Actualizar una forma en una hoja de cálculo de Excel - API de Aspose.Cells Cloud"

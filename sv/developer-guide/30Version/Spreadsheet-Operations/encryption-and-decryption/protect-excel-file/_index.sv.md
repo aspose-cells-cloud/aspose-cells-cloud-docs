@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Säkerhetskopiera en Excel-fil"
 type: docs
 url: /sv/protect-excel-file/
-aliases: [/sv/protect-excel-workbooks/, /sv/workbook/protect/]
+aliases: [  /sv/protect-excel-workbooks/ , /sv/workbook/protect/ ]
 keywords: "Aspose.Cells, Excel-säkerhet, API, REST, SDK"
 description: "Lär dig hur du säkerhetskopierar en Excel-arbetsbok via Aspose.Cells Cloud REST API. Innehåller autentiseringssteg, fråge- och brödparametrar, cURL-förfrågan och SDK-kodexempel för C#, Java, PHP, Ruby, Node.js, Python, Perl och Go."
 weight: 30

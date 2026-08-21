@@ -4,7 +4,7 @@ second_title: "Документация"
 ArticleTitle: "Найти и исправить неработающие ссылки в Excel – облачный проверщик ссылок электронных таблиц"
 linktype: "Search Spreadsheet Broken Links"
 type: docs
-url: /search-spreadsheet-broken-links/
+url: /ru/search-spreadsheet-broken-links/
 keywords: "Aspose Cells, неработающие ссылки, аудит электронной таблицы, Excel API, облачная электронная таблица, проверщик ссылок"
 description: "Обнаружение и исправление неработающих ссылок в книгах Excel с помощью Aspose.Cells Cloud API. Сканирование диапазонов, получение подробных результатов в формате JSON, интеграция с SDK на любом языке."
 weight: 100

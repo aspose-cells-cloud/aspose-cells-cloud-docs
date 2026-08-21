@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud 文件夹复制 API —— 快速在云端复制文�
 second_title: "文档"
 ArticleTitle: "基于云端的 Excel 文件管理解决方案 —— Aspose.Cells 复制文件夹 API 批量复制功能详解"
 linktype: "docs"
-url: /copy-folder/
+url: /zh/copy-folder/
 keywords: "复制文件夹, Aspose.Cells Cloud, REST API, 云存储, 电子表格管理"
 description: "了解如何通过一次 REST 调用在 Aspose.Cells Cloud 存储中复制文件夹。内容包含接口端点、参数说明、示例请求、错误码及 SDK 示例代码。"
 weight: 100

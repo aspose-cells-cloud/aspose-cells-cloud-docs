@@ -3,8 +3,8 @@ title: "특정 문서 속성 가져오기"
 second_title: "문서"
 linktitle: "가져오기"
 type: docs
-url: /document-properties/get/
-aliases: [/get-a-particular-document-property/]
+url: /ko/document-properties/get/
+aliases: [  /ko/get-a-particular-document-property/ ]
 keywords: "Aspose.Cells, 클라우드 API, 문서 속성 가져오기, Excel 메타데이터, REST GET, SDK 예제"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 파일에서 특정 이름의 문서 속성(예: 작성자, 제목)을 검색합니다. cURL 예제, SDK 스니펫 및 응답 스키마가 포함됩니다."
 weight: 20

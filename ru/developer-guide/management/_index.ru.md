@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Расширенные операции с Excel-файлами: управление листами и сжатие — Aspose.Cells Cloud"
 linktitle: "Управление"
 type: docs
-url: /management/ru/
+url: /ru/management/ru/
 keywords: "Aspose.Cells, облако, Excel API, управление листами, сжатие электронных таблиц, создание рабочих книг"
 description: "Используйте Aspose.Cells Cloud API для добавления, удаления, перемещения, переименования листов, сжатия электронных таблиц и создания рабочих книг на основе шаблонов — без необходимости установки Excel локально."
 weight: 50

@@ -3,8 +3,8 @@ title: "Excel 차트 작업하기"
 second_title: "문서"
 linktitle: "차트"
 type: docs
-url: /charts/
-aliases: [/working-with-charts/]
+url: /ko/charts/
+aliases: [  /ko/working-with-charts/ ]
 keywords: "Aspose, Cells, Excel, chart, API, REST, Cloud, spreadsheet"
 description: "Aspose.Cells Cloud API를 사용하여 Excel 차트를 관리하는 방법을 배워보세요. 차트 검색, 추가, 수정, 삭제 및 이미지 형식으로 변환을 위한 단계별 가이드, 코드 예제 및 오류 처리 방법을 제공합니다."
 weight: 100

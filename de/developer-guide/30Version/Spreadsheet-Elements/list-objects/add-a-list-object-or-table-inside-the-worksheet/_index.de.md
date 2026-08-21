@@ -3,8 +3,8 @@ title: "Ein Listenobjekt (Tabelle) zu einem Excel-Arbeitsblatt hinzufügen"
 second_title: "Dokument"
 linktitle: "Hinzufügen"
 type: docs
-url: /list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+url: /de/list-objects/add/
+aliases: [  /de/add-a-list-object-or-table-inside-the-worksheet/ , /de/tables/add/ ]
 keywords: "Aspose.Cells Cloud, Excel-API, Listenobjekt, Tabelle, REST-API, Arbeitsblatt"
 description: "Erfahren Sie, wie Sie mit der Aspose.Cells Cloud REST-API ein Listenobjekt (Excel-Tabelle) zu einem Arbeitsblatt hinzufügen. Enthält Endpunkt, Parameter, Authentifizierungsschritte, cURL-Beispiel und SDK-Codebeispiele."
 weight: 10

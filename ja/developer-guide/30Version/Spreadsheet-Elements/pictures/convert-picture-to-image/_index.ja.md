@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – ワークシートから画像を取得"
 second_title: "ドキュメント"
 linktitle: "取得"
 type: docs
-url: /pictures/get/
-aliases: [/convert-picture-to-image/]
+url: /ja/pictures/get/
+aliases: [  /ja/convert-picture-to-image/ ]
 keywords: "Aspose.Cells, 画像の取得, API, Excel, クラウド, REST"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシートから特定の画像を取得します。エンドポイント、パラメーター、認証手順、レスポンスコード、およびコード例を含みます。"
 weight: 10

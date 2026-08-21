@@ -1,8 +1,8 @@
 ---
 title: "Çalışma Sayfası Yorumunu Al – Aspose.Cells Cloud API Dokümantasyonu"
 type: docs
-url: /comments/get/
-aliases: [/get-comment-from-a-worksheet/]
+url: /tr/comments/get/
+aliases: [  /tr/get-comment-from-a-worksheet/ ]
 keywords: "Aspose.Cells, çalışma sayfası yorumu, API, GET, Excel"
 description: "Aspose.Cells Cloud API’si (v3.0) kullanarak bir hücre adına göre çalışma sayfası yorumunu nasıl alacağınızı öğrenin. İstek URL’si, parametreler, cURL örneği, yanıt detayları ve SDK kod parçacıklarını içerir."
 weight: 10

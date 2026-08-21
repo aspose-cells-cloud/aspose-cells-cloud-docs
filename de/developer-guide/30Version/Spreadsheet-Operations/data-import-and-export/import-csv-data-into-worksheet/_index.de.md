@@ -3,7 +3,7 @@ title: "CSV-Daten in Excel-Arbeitsblatt importieren"
 second_title: "Dokument"
 linktitle: "CSV-Daten importieren"
 type: docs
-url: /import-CSV-data-into-excel/
+url: /de/import-CSV-data-into-excel/
 aliases:
   - /import-CSV-data-into-worksheet/
   - /import-data/csv-data/

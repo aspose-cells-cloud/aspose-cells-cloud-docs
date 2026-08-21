@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web-API – Konvertieren Sie Tabellendaten einer Tabe
 second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie Tabellendaten einer Tabellenkalkulation in eine CSV-Datei: Schritt-für-Schritt-Anleitung"
 linktype: "docs"
-url: /convert-table-to-csv/
+url: /de/convert-table-to-csv/
 keywords: "Aspose.Cells Cloud, Tabelle zu CSV, Tabellenkalkulationskonvertierung, Excel zu CSV, API, REST, Datenexport"
 description: "Konvertieren Sie eine Tabelle aus einer Excel-Tabellenkalkulation schnell in eine CSV-Datei mithilfe der Aspose.Cells Cloud API."
 weight: 100

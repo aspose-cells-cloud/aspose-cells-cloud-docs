@@ -4,7 +4,7 @@ ArticleTitle: "Arbeitsblätter mit lokaler Tabellendatei abrufen – Aspose.Cell
 second_title: "Dokument"
 linktitle: "Arbeitsblätter mit lokaler Tabellendatei abrufen"
 type: docs
-url: /cells/spreadsheet/worksheets
+url: /de/cells/spreadsheet/worksheets
 aliases: []
 keywords: "Aspose.Cells, Arbeitsblätter, Lokale Tabellendatei, API"
 description: "Ruft eine vollständige Liste der Arbeitsblätter aus der aktuell aktiven lokalen Tabellendatei ab."

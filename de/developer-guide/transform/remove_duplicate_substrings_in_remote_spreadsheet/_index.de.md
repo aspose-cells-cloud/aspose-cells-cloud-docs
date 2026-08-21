@@ -4,7 +4,7 @@ ArticleTitle: "Doppelte Teilzeichenfolgen in entfernter Tabellendatei entfernen 
 second_title: "Dokument"
 linktitle: "Doppelte Teilzeichenfolgen in entfernter Tabellendatei entfernen"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
+url: /de/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
 aliases: []
 keywords: "Aspose.Cells, Doppelte Teilzeichenfolgen entfernen, API"
 description: "API zum Finden und Entfernen wiederholter Teilzeichenfolgen innerhalb von Zellen eines angegebenen Bereichs in einer Arbeitsmappe."

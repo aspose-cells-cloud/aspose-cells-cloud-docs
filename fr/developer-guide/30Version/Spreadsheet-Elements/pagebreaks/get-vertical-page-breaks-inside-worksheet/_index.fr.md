@@ -3,8 +3,8 @@ title: "Obtenir les sauts de page verticaux"
 second_title: "Document"
 linktitle: "Obtenir les sauts de page verticaux"
 type: docs
-url: /page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
+url: /fr/page-breaks/get-vertical-page-breaks/
+aliases: [  /fr/get-vertical-page-breaks-inside-worksheet/ ]
 keywords: "Aspose.Cells, sauts de page verticaux, API Excel, feuille de calcul cloud, API REST"
 description: "Récupérer les sauts de page verticaux à partir d’une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut l’endpoint HTTPS, les paramètres requis, un exemple cURL, les détails de la réponse, la gestion des erreurs et des exemples d’SDK."
 weight: 20

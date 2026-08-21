@@ -3,8 +3,8 @@ title: "Pivot-Feldelement in einer Pivot-Tabelle ausblenden"
 second_title: "Dokument"
 linktitle: Ausblenden
 type: docs
-url: /pivot-tables/hide-pivot-field-item/
-aliases: [/hide-pivot-field-item/]
+url: /de/pivot-tables/hide-pivot-field-item/
+aliases: [  /de/hide-pivot-field-item/ ]
 keywords: "Aspose.Cells, Pivot-Feldelement ausblenden, PivotTable API, REST API, Cloud-SDK"
 description: "Erfahren Sie, wie Sie ein Pivot-Feldelement in einer Pivot-Tabelle mit der Aspose.Cells Cloud REST API ausblenden. Enthält Anforderungsdetails, cURL-Beispiel und SDK-Code-Snippets für mehrere Sprachen."
 weight: 110

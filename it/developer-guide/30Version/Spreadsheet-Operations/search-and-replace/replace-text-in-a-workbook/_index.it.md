@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Sostituisci nel foglio di calcolo"
 type: docs
 url: /it/workbook/replace-text/
-aliases: [/it/replace-text-in-a-workbook/]
+aliases: [  /it/replace-text-in-a-workbook/ ]
 weight: 60
 keywords: "Aspose.Cells Cloud, Sostituisci testo, Foglio di calcolo Excel, XLSX, ODS, REST API, Foglio di calcolo, SDK"
 description: "Sostituisci testo in fogli di calcolo Excel (XLS, XLSX, XLSM, XLSB) e OpenDocument Spreadsheet (ODS) utilizzando l'API REST di Aspose.Cells Cloud. Disponibile tramite cURL e un’ampia gamma di SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, ecc.)."

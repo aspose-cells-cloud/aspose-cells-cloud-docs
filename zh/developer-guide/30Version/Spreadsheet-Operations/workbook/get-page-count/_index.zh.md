@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "页数"
 type: docs
 url: /zh/get-page-count-from-an-excel-file/
-aliases: [/workbook/page-count/, /workbook/get/page-count/]
+aliases: [  /zh/workbook/page-count/ , /zh/workbook/get/page-count/ ]
 keywords: "Aspose.Cells, 云 API, Excel 页数, 工作簿分页"
 description: "通过 Aspose.Cells Cloud REST API（v3.0）检索 Excel 工作簿中的可打印页总数。包含请求格式、必需参数、cURL 示例、响应模式、错误处理以及多种编程语言的 SDK 代码片段。"
 weight: 10

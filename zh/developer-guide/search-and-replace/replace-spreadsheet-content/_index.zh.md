@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "批量替换本地 Excel 文件中的文本 – 查找与替换 API"
 linktitle: "替换电子表格内容"
 type: docs
-url: /replace-spreadsheet-content/
+url: /zh/replace-spreadsheet-content/
 keywords: "替换 Excel 中的文本, Aspose.Cells 查找与替换, 本地电子表格 API, Excel 文件替换, API 替换内容"
 description: "无需上传至云端即可替换本地 Excel 工作簿中的文本。使用 Aspose.Cells Cloud 查找与替换 API，单次调用即可更新指定范围、工作表或整个文件。"
 weight: 100

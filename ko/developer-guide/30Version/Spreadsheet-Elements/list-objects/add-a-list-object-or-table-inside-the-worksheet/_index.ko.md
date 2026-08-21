@@ -3,8 +3,8 @@ title: "Excel 워크시트에 목록 개체(테이블) 추가"
 second_title: "문서"
 linktitle: "추가"
 type: docs
-url: /list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+url: /ko/list-objects/add/
+aliases: [  /ko/add-a-list-object-or-table-inside-the-worksheet/ , /ko/tables/add/ ]
 keywords: "Aspose.Cells Cloud, Excel API, 목록 개체, 테이블, REST API, 워크시트"
 description: "Aspose.Cells Cloud REST API를 사용하여 워크시트에 목록 개체(Excel 테이블)를 추가하는 방법을 알아보세요. 엔드포인트, 매개변수, 인증 단계, cURL 예제 및 SDK 코드 샘플 포함."
 weight: 10

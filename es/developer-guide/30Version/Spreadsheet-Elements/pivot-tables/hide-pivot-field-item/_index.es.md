@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: Ocultar
 type: docs
 url: /es/pivot-tables/hide-pivot-field-item/
-aliases: [/es/hide-pivot-field-item/]
+aliases: [  /es/hide-pivot-field-item/ ]
 keywords: "Aspose.Cells, ocultar elemento de campo de pivote, API de tabla dinámica, API REST, SDK en la nube"
 description: "Aprenda a ocultar un elemento de campo de pivote en una tabla dinámica utilizando la API REST de Aspose.Cells Cloud. Incluye detalles de la solicitud, ejemplo de cURL y fragmentos de código del SDK para múltiples lenguajes."
 weight: 110

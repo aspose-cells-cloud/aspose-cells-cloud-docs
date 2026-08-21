@@ -3,7 +3,7 @@ title: "ضبط تلقائي لأعمدة في ملف إكسل"
 second_title: "مستند"
 linktype: "أعمدة"
 type: docs
-url: /autofit-columns-on-an-excel-file/
+url: /ar/autofit-columns-on-an-excel-file/
 aliases:
   [
     /auto-fit-columns-in-excel-workbooks,

@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "高级 Excel 工作簿操作：工作表管理与压缩 – Aspose.Cells Cloud"
 linktype: "管理"
 type: docs
-url: /management/zh/
+url: /zh/management/zh/
 keywords: "Aspose.Cells, 云, Excel API, 工作表管理, 电子表格压缩, 工作簿创建"
 description: "使用 Aspose.Cells Cloud API 添加、删除、移动、重命名工作表，压缩电子表格大小，并从模板创建工作簿 —— 无需本地安装 Excel。"
 weight: 50

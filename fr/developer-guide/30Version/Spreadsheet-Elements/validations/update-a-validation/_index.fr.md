@@ -3,7 +3,7 @@ title: "Mettre à jour une validation de feuille de calcul dans une feuille de c
 second_title: "Document"
 linktitle: "Mettre à jour"
 type: docs
-url: /validations/update/
+url: /fr/validations/update/
 keywords: "Aspose.Cells Cloud, mise à jour de la validation Excel, API REST, validation de feuille de calcul, API Excel"
 description: "Comment mettre à jour une validation de feuille de calcul dans un fichier Excel à l’aide de l’API REST Aspose.Cells Cloud, avec des exemples cURL et des extraits de code SDK pour plusieurs langages de programmation."
 weight: 10

@@ -4,8 +4,8 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud Docker 컨테이너 실행 방법"
 LinkTitle: "Docker 컨테이너"
 type: docs
-url: /getting-started/how-to-run-docker-container/
-aliases: [/how-to-run-docker-container/]
+url: /ko/getting-started/how-to-run-docker-container/
+aliases: [  /ko/how-to-run-docker-container/ ]
 description: "Windows 또는 Linux에서 Aspose.Cells Cloud Docker 컨테이너를 풀링하고, 설정하며 실행하는 방법을 알아보세요. Docker‑Compose YAML, 라이선스 설정, 포트 매핑, 문제 해결 팁이 포함됩니다."
 weight: 100
 keywords:

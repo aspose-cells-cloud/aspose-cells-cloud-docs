@@ -4,8 +4,8 @@ ArticleTitle: "Lägg till en tom rad i ett Excel-ark med Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Rad"
 type: docs
-url: /rows/add/row/
-aliases: [/add-an-empty-row-in-a-worksheet/]
+url: /sv/rows/add/row/
+aliases: [  /sv/add-an-empty-row-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, lägg till tom rad, kalkylark, REST API, infoga rad, molnspreadsheets"
 description: "Använd Aspose.Cells Cloud REST API för att infoga en tom rad i ett Excel-ark. Stöder flera SDK:er (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) för snabb utveckling."
 weight: 20

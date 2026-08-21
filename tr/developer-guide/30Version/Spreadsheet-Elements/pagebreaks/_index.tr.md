@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "PageBreaks"
 type: docs
 url: /tr/working-with-pagebreaks/
-aliases: [/tr/working-with-pagebreaks/]
+aliases: [  /tr/working-with-pagebreaks/ ]
 keywords: "Excel, sayfa kopması, Aspose.Cells Cloud, REST API, çalışma sayfası, ekle, sil, al, güncelle, sayfa kopmaları"
 description: "Aspose.Cells Cloud REST API kullanarak Excel çalışma sayfalarında sayfa kopmaları nasıl eklenir, alınır ve silinir öğrenin. Dikey ve yatay kopmalar için örnekler içerir."
 weight: 100

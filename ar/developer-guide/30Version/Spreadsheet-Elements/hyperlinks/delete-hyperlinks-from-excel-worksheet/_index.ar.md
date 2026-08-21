@@ -1,8 +1,8 @@
 ---
 title: "مسح الروابط التشعبية"
 type: docs
-url: /hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+url: /ar/hyperlinks/clear/
+aliases: [  /ar/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, مسح الروابط التشعبية, حذف الروابط التشعبية, REST API, ورقة عمل, SDK"
 description: "تعرّف على كيفية إزالة جميع الروابط التشعبية من ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API أو أي SDK مدعوم (C#، Java، Python، Node.js، Go، PHP، Ruby، Perl، إلخ)."
 weight: 40

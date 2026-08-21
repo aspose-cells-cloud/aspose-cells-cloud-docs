@@ -3,8 +3,8 @@ title: "Excel 워크시트에서 이미지 삭제 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktitle: "삭제"
 type: docs
-url: /pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+url: /ko/pictures/delete/
+aliases: [  /ko/delete-a-specific-picture-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, 클라우드 API, 이미지 삭제, Excel 워크시트, REST"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 이미지를 삭제합니다. DELETE 엔드포인트, 필요한 매개변수, 인증, 오류 코드 및 예제 코드를 알아보세요."
 weight: 50

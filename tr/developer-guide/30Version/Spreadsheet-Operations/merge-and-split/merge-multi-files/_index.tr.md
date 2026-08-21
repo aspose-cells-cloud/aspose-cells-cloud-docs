@@ -3,8 +3,8 @@ title: "Birden Fazla Excel Dosyasını Tek Bir Çalışma Kitabına Birleştir"
 second_title: "Belge"
 linktitle: "Birden Fazla Excel Dosyasını Birleştir"
 type: docs
-url: /merge-multi-files-into-excel/
-aliases: [/merge/multi-files/]
+url: /tr/merge-multi-files-into-excel/
+aliases: [  /tr/merge/multi-files/ ]
 keywords: "Aspose.Cells Cloud, birden fazla Excel dosyasını birleştir, REST API, elektronik tablo birleştirme, bulut SDK'sı"
 description: "Aspose.Cells Cloud REST API’sini (v3.0) kullanarak birden fazla Excel çalışma kitabını tek bir dosyada birleştirmeyi öğrenin. HTTPS uç noktası, cURL komutu, SDK örnekleri, gerekli parametreler ve hata işleme ayrıntılarını içerir."
 weight: 32

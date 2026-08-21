@@ -4,7 +4,7 @@ ArticleTitle: "CSV 데이터를 스프레드시트로 가져오기 – Aspose.Ce
 second_title: "문서"
 linktitle: "CSV 데이터를 스프레드시트로 가져오기"
 type: docs
-url: /cells/import/data/csv
+url: /ko/cells/import/data/csv
 aliases: []
 keywords: "Aspose.Cells, CSV 가져오기, 스프레드시트, API"
 description: "Aspose.Cells Cloud API를 사용하여 로컬 스프레드시트에 CSV 데이터 파일을 가져옵니다."

@@ -3,8 +3,8 @@ title: "수직 페이지 나누기 가져오기"
 second_title: "문서"
 linktitle: "수직 페이지 나누기 가져오기"
 type: docs
-url: /page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
+url: /ko/page-breaks/get-vertical-page-breaks/
+aliases: [  /ko/get-vertical-page-breaks-inside-worksheet/ ]
 keywords: "Aspose.Cells, 수직 페이지 나누기, Excel API, 클라우드 스프레드시트, REST API"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 Excel 워크시트에서 수직 페이지 나누기를 검색합니다. HTTPS 엔드포인트, 필수 매개변수, cURL 예제, 응답 세부정보, 오류 처리 및 SDK 샘플 포함."
 weight: 20

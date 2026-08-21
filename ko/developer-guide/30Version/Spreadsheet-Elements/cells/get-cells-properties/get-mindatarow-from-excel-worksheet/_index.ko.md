@@ -1,7 +1,7 @@
 ---
 title: "Excel 워크시트에서 MinDataRow 가져오기"
 type: docs
-url: /get-mindatarow-from-excel-worksheet/
+url: /ko/get-mindatarow-from-excel-worksheet/
 weight: 90
 keywords: "Aspose Cells, MinDataRow, Excel API, 클라우드 SDK"
 description: "Aspose.Cells 클라우드 API v3.0을 사용하여 워크시트의 최소 데이터 행 인덱스를 검색합니다. 요청 패턴, 매개변수, 샘플 cURL, 응답 예시, 상태 코드 및 SDK 스니펫이 포함됩니다."

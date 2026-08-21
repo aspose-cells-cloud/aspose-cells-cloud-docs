@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud API を使用してワークシートをエクスポ�
 second_title: "ドキュメント"
 linktitle: "ワークシートのエクスポート"
 type: docs
-url: /worksheets/get-worksheet/
+url: /ja/worksheets/get-worksheet/
 keywords: "Aspose.Cells Cloud Get Worksheet, ワークシートのエクスポート, Excel API, REST, CSV, PDF, PNG, JPEG, GIF, BMP, TIFF, EMF, XPS, OTS, XLS, XLSX, XLSB, XLSM, ODS, FODS, Numbers, クラウド API"
 description: "Aspose.Cells Cloud REST API を使用して Excel ファイルから単一のワークシートをエクスポートする方法を学習します。エンドポイント、パラメーター、修正済み cURL の例、認証詳細、エラーハンドリング、および C#、Java、Python などの SDK スニペットを含みます。"
 weight: 10

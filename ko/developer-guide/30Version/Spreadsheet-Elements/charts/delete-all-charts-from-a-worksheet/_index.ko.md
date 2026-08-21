@@ -1,8 +1,8 @@
 ---
 title: "워크시트에서 모든 차트 삭제하기"
 type: docs
-url: /charts/clear/
-aliases: [/delete-all-charts-from-a-worksheet/]
+url: /ko/charts/clear/
+aliases: [  /ko/delete-all-charts-from-a-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells, 클라우드, 삭제, 모든 차트, 워크시트, REST API, DELETE, SDK"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 워크시트의 모든 차트를 삭제하는 방법을 배웁니다. 엔드포인트, 매개변수, cURL 샘플, SDK 코드 스니펫, 인증 단계, 오류 처리가 포함됩니다."

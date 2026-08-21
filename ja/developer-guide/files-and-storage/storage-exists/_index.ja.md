@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "クラウドベースのExcelファイル管理 – ストレージの存在を確認する"
 linktype: "ストレージの存在"
 type: docs
-url: /storage-exists/
+url: /ja/storage-exists/
 keywords: "Aspose.Cells、ストレージの存在、クラウドストレージAPI、REST、Excel"
 description: "Aspose.Cells Cloudでストレージコンテナが存在するかを確認します。GET /v4.0/cells/storage/{storageName}/exist エンドポイント、必要なパラメータ、レスポンス形式について学び、C#、Java、Python などでのSDKサンプルを参照してください。"
 weight: 100

@@ -3,8 +3,8 @@ title: "การลบรูปภาพออกจากแผ่นงาน
 second_title: "เอกสาร"
 linktitle: "ลบ"
 type: docs
-url: /pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+url: /th/pictures/delete/
+aliases: [  /th/delete-a-specific-picture-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, Cloud API, ลบรูปภาพ, แผ่นงาน Excel, REST"
 description: "ลบรูปภาพออกจากแผ่นงาน Excel โดยใช้ REST API ของ Aspose.Cells Cloud ศึกษาเกี่ยวกับ endpoint แบบ DELETE พารามิเตอร์ที่จำเป็น การตรวจสอบสิทธิ์ รหัสข้อผิดพลาด และโค้ดตัวอย่าง"
 weight: 50

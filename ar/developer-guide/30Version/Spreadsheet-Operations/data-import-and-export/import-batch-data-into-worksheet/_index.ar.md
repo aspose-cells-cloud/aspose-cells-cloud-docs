@@ -3,7 +3,7 @@ title: "استيراد بيانات دُفعات إلى ورقة عمل Excel"
 second_title: "مستند"
 linktype: "استيراد بيانات دُفعات"
 type: docs
-url: /import-batch-data-into-excel/
+url: /ar/import-batch-data-into-excel/
 aliases:
   - /import-batch-data-into-worksheet/
   - /import-data/batch-data/

@@ -4,7 +4,7 @@ second_title: "مستند"
 linktype: "التنسيق الشرطي"
 type: docs
 url: /ar/conditional-formattings/
-aliases: [/ar/working-with-conditional-formatting/]
+aliases: [  /ar/working-with-conditional-formatting/ ]
 keywords: "Excel, التنسيق الشرطي, Aspose.Cells Cloud, API"
 description: "توفر واجهة برمجة تطبيقات Aspose.Cells Cloud لـ Excel نقاط نهاية لاسترداد قواعد التنسيق الشرطي وإضافتها وتعديلها ومسحها، مما يمكّن من التحليل البصري الديناميكي لبيانات ورقة العمل."
 weight: 100

@@ -3,7 +3,7 @@ title: "วิธีการดึงเนื้อหาช่วงข้อ
 second_title: "เอกสาร"
 linktype: "ดู"
 type: docs
-url: "/ranges/get/"
+url: /th/ranges/get/
 keywords: "Aspose.Cells, Excel, API, ดึง, range, สเปรดชีต, REST"
 description: "เรียนรู้วิธีดึงเนื้อหาช่วงข้อมูลจากแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่างไคลเอนต์ซอร์สโค้ดและไวยากรณ์คำขอ"
 weight: 20

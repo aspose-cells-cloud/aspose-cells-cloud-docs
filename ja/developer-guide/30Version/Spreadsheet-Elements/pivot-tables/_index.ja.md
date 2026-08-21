@@ -3,8 +3,8 @@ title: "Excel ピボットテーブルの操作"
 second_title: "Document"
 linktitle: "ピボットテーブル"
 type: docs
-url: /pivottables/
-aliases: [/working-with-pivot-tables/]
+url: /ja/pivottables/
+aliases: [  /ja/working-with-pivot-tables/ ]
 keywords: "Excel, ピボットテーブル, Aspose.Cells Cloud, API, スプレッドシート, データ分析, REST API"
 description: "Aspose.Cells Cloud REST API を使用して Excel シート内のピボットテーブルを作成、取得、更新、削除するための包括的なガイド。SDK 参照、サンプル呼び出し、バージョンに関する注意事項を含みます。"
 weight: 100

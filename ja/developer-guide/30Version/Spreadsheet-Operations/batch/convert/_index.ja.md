@@ -2,7 +2,7 @@
 title: "Excel ファイルの一括変換"
 second_title: "ドキュメント"
 type: docs
-url: /batch/convert
+url: /ja/batch/convert
 keywords: "一括変換, Excel, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, スプレッドシート"
 description: "Aspose.Cells Cloud API を使用して、複数の Excel ファイルを PDF、CSV、JSON、Markdown などの形式に一括で変換する方法を学びます。このガイドには、REST エンドポイントの詳細、リクエストパラメータ、cURL の例、および various 言語向けの SDK コードスニペットが含まれています。"
 weight: 100

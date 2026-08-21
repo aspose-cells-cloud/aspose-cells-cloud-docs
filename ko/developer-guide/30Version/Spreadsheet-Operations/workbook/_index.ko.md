@@ -2,8 +2,8 @@
 title: "엑셀 파일 작업: 수식 계산, 자동 크기 조정, 개체 지우기 등"
 second_title: "문서"
 linktype: "docs"
-url: /workbook/
-aliases: [/working-with-workbook/]
+url: /ko/workbook/
+aliases: [  /ko/working-with-workbook/ ]
 keywords: "Aspose.Cells, 엑셀 API, 워크북 작업, 수식 계산, 자동 크기 조정"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크북을 다루는 방법을 배워보세요. 단계별 가이드는 수식 계산, 행/열 자동 크기 조정, 개체 지우기, 워크북 메타데이터 가져오기 등을 다룹니다. Python, .NET, Java 등 다양한 SDK 제공."
 weight: 20

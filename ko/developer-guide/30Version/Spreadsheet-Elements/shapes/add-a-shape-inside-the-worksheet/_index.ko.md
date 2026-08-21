@@ -3,8 +3,8 @@ title: "Excel 워크시트에 도형 추가"
 second_title: "문서"
 linktype: "추가"
 type: docs
-url: /shapes/add/
-aliases: [/add-a-shape-inside-the-worksheet/]
+url: /ko/shapes/add/
+aliases: [  /ko/add-a-shape-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, 도형 추가, Excel, REST API, 클라우드 SDK, shapeDTO, 드로잉 유형"
 description: "Aspose.Cells Cloud REST API v3.0을 사용하여 Excel 워크시트에 도형(호선, 선, 사각형 등)을 추가하는 방법을 배웁니다. 요청 구문, 필요한 매개변수, 인증 단계 및 샘플 SDK 코드가 포함됩니다."
 weight: 30

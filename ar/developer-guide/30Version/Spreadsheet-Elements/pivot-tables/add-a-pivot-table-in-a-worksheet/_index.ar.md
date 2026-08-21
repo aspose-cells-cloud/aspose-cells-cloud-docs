@@ -4,7 +4,7 @@ second_title: "مستند"
 linktype: إضافة
 type: docs
 url: /ar/pivot-tables/add/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /ar/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "إضافة جدول محوري، ورقة عمل Excel، Aspose.Cells Cloud، REST API، SDK، جدول محوري Excel"
 description: "استخدم REST API الخاص بـ Aspose.Cells Cloud لإضافة جدول محوري في ورقة عمل Excel. متاح عبر SDKs لكل من C#، Java، PHP، Python، Node.js، Android، Swift، Perl، Go."
 weight: 30

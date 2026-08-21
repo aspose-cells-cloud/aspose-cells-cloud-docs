@@ -4,7 +4,7 @@ ArticleTitle: "为 Excel 工作簿添加数字签名 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "数字签名"
 type: docs
-url: /excel-digital-signature/
+url: /zh/excel-digital-signature/
 aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/

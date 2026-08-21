@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Eliminador de subcadenas duplicadas en Excel: limpiar texto repetido en celdas"
 linktitle: "Eliminar subcadenas duplicadas"
 type: docs
-url: /remove-duplicate-substrings/
+url: /es/remove-duplicate-substrings/
 keywords: "Aspose.Cells, subcadenas duplicadas, API de Excel, limpieza de texto, nube"
 description: "Elimine subcadenas duplicadas de celdas de Excel mediante la API de Aspose.Cells Cloud, preservando el formato y la validación."
 weight: 100

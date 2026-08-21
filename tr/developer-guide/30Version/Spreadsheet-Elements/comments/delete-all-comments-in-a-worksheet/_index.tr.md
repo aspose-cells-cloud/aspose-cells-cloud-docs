@@ -2,7 +2,7 @@
 title: "Tüm Çalışma Sayfası Yorumlarını Sil"
 description: "Aspose.Cells Cloud API kullanarak bir Excel dosyasındaki bir çalışma sayfasından tüm yorumları silin. DELETE uç noktasını, gerekli parametreleri, kimlik doğrulamayı, örnek cURL isteğini, yanıt formatını, hata kodlarını ve SDK örneklerini öğrenin."
 keywords: "Aspose, Cells, yorumları sil, çalışma sayfası, API, REST, Excel, bulut"
-url: /comments/clear/
+url: /tr/comments/clear/
 aliases:
   - /delete-all-comments-in-a-worksheet/
 weight: 50

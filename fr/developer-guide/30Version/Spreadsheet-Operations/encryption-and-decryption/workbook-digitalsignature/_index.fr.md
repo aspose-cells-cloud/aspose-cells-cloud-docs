@@ -4,7 +4,7 @@ ArticleTitle: "Ajouter une signature numérique à un classeur Excel – API Asp
 second_title: "Document"
 linktype: "Signature numérique"
 type: docs
-url: /excel-digital-signature/
+url: /fr/excel-digital-signature/
 aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/

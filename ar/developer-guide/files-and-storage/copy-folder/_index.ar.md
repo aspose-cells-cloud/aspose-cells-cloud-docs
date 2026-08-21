@@ -3,7 +3,7 @@ title: "واجهة برمجة تطبيقات نسخ المجلد في Aspose.Cel
 second_title: "مستند"
 ArticleTitle: "حل إدارة ملفات إكسل عبر السحابة – شرح مفصّل لوظيفة النسخ الدفعي في واجهة برمجة تطبيقات نسخ المجلد في Aspose.Cells Cloud"
 linktype: "docs"
-url: "/copy-folder/"
+url: /ar/copy-folder/
 keywords: "نسخ المجلد، Aspose.Cells Cloud، واجهة برمجة تطبيقات REST، تخزين سحابي، إدارة جداول البيانات"
 description: "تعرّف على كيفية نسخ مجلدات داخل تخزين Aspose.Cells Cloud باستخدام استدعاء REST واحد فقط. يشمل الرابط endpoint، المعلَمات، طلبات مثال، رموز الأخطاء، وأمثلة لواجهات برمجة تطبيقات (SDKs)."
 weight: 100

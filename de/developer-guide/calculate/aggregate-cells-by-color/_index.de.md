@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Summe, Anzahl, Durchschnitt, Max, Min-Werte nach Farbe in Tabellenkalkulation/Excel"
 LinkTitle: "Zellen nach Farbe aggregieren"
 type: docs
-url: /aggregate-cells-by-color/
+url: /de/aggregate-cells-by-color/
 keywords: "Aspose, Cells, Excel, API, aggregieren, Farbe, Summe, Anzahl, Durchschnitt, Min, Max"
 description: "Aggregieren Sie Excel-Zellen nach Hintergrund- oder Schriftfarbe (Summe, Anzahl, Durchschnitt, Min, Max) mit der Aspose.Cells Cloud API. Erfahren Sie mehr über den Endpunkt, die Parameter, die Authentifizierung und SDK-Beispiele."
 weight: 100

@@ -4,8 +4,8 @@ second_title: "ドキュメント"
 linktitle: "新機能"
 type: docs
 weight: 9
-url: /new-features/
-aliases: [/what-s-new-in-aspose-cells-cloud/]
+url: /ja/new-features/
+aliases: [  /ja/what-s-new-in-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud、新機能、Microsoft Office Excel、OpenOffice Spreadsheet、CSV、PDF、REST API、SDK、スプレッドシート、クラウド"
 description: "Aspose.Cells Cloud の最新機能、改善、バグ修正を確認してください。Excel、OpenOffice、CSV、PDF 処理のアップデートを含みます。"
 ArticleTitle: "Aspose.Cells Cloud の新機能 – 最新機能とアップデート"

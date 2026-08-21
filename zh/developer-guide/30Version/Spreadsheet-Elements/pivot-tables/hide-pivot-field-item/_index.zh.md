@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: Hide
 type: docs
 url: /zh/pivot-tables/hide-pivot-field-item/
-aliases: [/zh/hide-pivot-field-item/]
+aliases: [  /zh/hide-pivot-field-item/ ]
 keywords: "Aspose.Cells, 隐藏数据透视字段项, PivotTable API, REST API, 云 SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API 隐藏数据透视表中的数据透视字段项。包含请求详情、cURL 示例以及多种编程语言的 SDK 代码片段。"
 weight: 110

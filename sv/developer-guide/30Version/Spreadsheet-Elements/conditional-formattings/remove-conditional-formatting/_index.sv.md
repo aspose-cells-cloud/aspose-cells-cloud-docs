@@ -1,7 +1,7 @@
 ---
 title: "Ta bort villkorsformatering – Aspose.Cells Cloud API-referens"
 type: docs
-url: /conditional-formattings/delete/
+url: /sv/conditional-formattings/delete/
 aliases:
   - /remove-conditional-formatting/
 keywords: "Aspose.Cells, Villkorsformatering, Ta bort, API, Excel, Moln"

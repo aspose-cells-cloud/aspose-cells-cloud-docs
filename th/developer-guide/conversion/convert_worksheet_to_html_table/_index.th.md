@@ -4,7 +4,7 @@ ArticleTitle: "การแปลงแผ่นงานเป็นตาร�
 second_title: "เอกสาร"
 linktype: "ConvertWorksheetToHtmlTable"
 type: docs
-url: /cells/convert/worksheet/html-table
+url: /th/cells/convert/worksheet/html-table
 aliases: []
 keywords: "Aspose.Cells, ConvertWorksheetToHtmlTable, ตาราง HTML, API"
 description: "แปลงแผ่นงานของไฟล์สเปรดชีตในไดรฟ์ภายในเครื่องเป็นไฟล์ตาราง HTML โดยใช้ Aspose.Cells Cloud"

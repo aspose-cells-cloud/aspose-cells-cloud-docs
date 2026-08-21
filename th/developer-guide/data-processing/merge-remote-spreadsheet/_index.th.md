@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud"
 ArticleTitle: "ผสานไฟล์ Excel ในคลาวด์ – รวมสเปรดชีตออนไลน์ด้วย Aspose.Cells Cloud API"
 linktitle: "ผสานสเปรดชีตแบบรีโมต"
 type: docs
-url: /merge-remote-spreadsheet/
+url: /th/merge-remote-spreadsheet/
 keywords: "Aspose.Cells, ผสาน Excel, API คลาวด์, รวมสเปรดชีต"
 description: "ผสานสมุดงาน Excel ที่เก็บไว้ในพื้นที่จัดเก็บคลาวด์ด้วย Aspose.Cells Cloud API ระบุรูปแบบไฟล์ผลลัพธ์ โฟลเดอร์เป้าหมาย และโหมดการผสานในการเรียก HTTPS ครั้งเดียว"
 weight: 100

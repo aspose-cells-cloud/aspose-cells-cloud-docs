@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "โซลูชันจัดการไฟล์ Excel บนคลาวด์ – อินเทอร์เฟซสำหรับดึงข้อมูลการใช้พื้นที่จัดเก็บบนคลาวด์อย่างรวดเร็ว"
 linktype: "รับข้อมูลการใช้พื้นที่จัดเก็บ"
 type: docs
-url: /get-disk-usage/
+url: /th/get-disk-usage/
 keywords: "Aspose Cells, Cloud API, การใช้พื้นที่จัดเก็บ, ข้อมูลเชิงวัดผลการจัดเก็บ, Excel, REST"
 description: "รับข้อมูลการใช้พื้นที่จัดเก็บแบบเรียลไทม์สำหรับ Aspose.Cells Cloud เรียนรู้เกี่ยวกับ endpoint GET /v4.0/cells/storage/disk การยืนยันตัวตนที่จำเป็น และตัวอย่างการตอบกลับ"
 weight: 100

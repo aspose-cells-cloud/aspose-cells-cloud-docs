@@ -3,8 +3,8 @@ title: "Tüm Belge Özelliklerini Al"
 second_title: "Belge"
 linktitle: "Tümünü al"
 type: docs
-url: /document-properties/get-all/
-aliases: [/get-all-document-properties/]
+url: /tr/document-properties/get-all/
+aliases: [  /tr/get-all-document-properties/ ]
 keywords: "Tüm Belge Özelliklerini Al, Aspose.Cells Cloud, Excel belge özellikleri, REST API, SDK, Excel meta verisi"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel dosyasından tüm belge özelliklerini alın. Uç nokta, desteklenen tüm SDK'lar ve programlama dilleri ile çalışır."
 ArticleTitle: "Tüm Belge Özelliklerini Al – Aspose.Cells Cloud API"

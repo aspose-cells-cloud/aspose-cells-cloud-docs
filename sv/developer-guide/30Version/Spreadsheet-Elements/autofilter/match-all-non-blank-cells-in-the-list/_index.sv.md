@@ -3,8 +3,8 @@ title: "Matcha alla icke‑tomma celler i ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Matcha alla icke‑tomma celler"
 type: docs
-url: /autofilter/match-all-non-blank/
-aliases: [/match-all-non-blank-cells-in-the-list/]
+url: /sv/autofilter/match-all-non-blank/
+aliases: [  /sv/match-all-non-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells Cloud, matcha icke‑tomma celler, AutoFilter, Excel API"
 description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att matcha alla icke‑tomma celler i en AutoFilter-lista på ett Excel-ark. Innehåller endpoint, parametrar, autentisering, svarsschema, felkoder och SDK-exempel."
 ArticleTitle: "Matcha alla icke‑tomma celler i ett Excel-ark med Aspose.Cells Cloud API"

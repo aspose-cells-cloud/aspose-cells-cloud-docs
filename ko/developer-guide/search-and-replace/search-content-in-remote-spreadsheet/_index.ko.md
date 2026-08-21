@@ -4,7 +4,7 @@ secondtitle: "문서"
 articletitle: "원격 엑셀 스프레드시트에서 텍스트 검색 – 특정 데이터 찾기"
 linktitle: "원격 스프레드시트 콘텐츠 검색"
 type: docs
-url: /search-content-in-remote-spreadsheet/
+url: /ko/search-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells, 엑셀 검색 API, 클라우드 스프레드시트, 텍스트 검색, REST"
 description: "클라우드 스토리지에 저장된 엑셀 파일에서 텍스트, 숫자 또는 수식을 검색합니다. Aspose.Cells Cloud를 사용하면 대소문자 구분 없이 쿼리를 실행하고, 폴더를 지정하며, 암호로 보호된 워크북도 검색할 수 있습니다."
 weight: 100

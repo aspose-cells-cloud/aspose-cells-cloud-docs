@@ -3,7 +3,7 @@ title: "Metadaten aus Excel-Dateien abrufen"
 second_title: "Dokument"
 linktitle: "Ohne Speicherung abrufen"
 type: docs
-url: /metadata/get/
+url: /de/metadata/get/
 keywords: "Aspose.Cells, Excel, Metadaten, REST-API, Cloud-SDK"
 description: "Rufen Sie integrierte oder benutzerdefinierte Metadaten aus Excel-Arbeitsmappen mit der Aspose.Cells Cloud REST API ab. Enthält Anforderungsformat, Parameter, Beispiel-SDK-Code und Fehlerbehandlung."
 weight: 23

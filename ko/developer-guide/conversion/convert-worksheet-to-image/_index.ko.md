@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "로컬 워크시트 스프레드시트 데이터를 이미지 파일로 변환하는 방법: 단계별 가이드"
 linktype: "워크시트를 이미지로 변환"
 type: docs
-url: /convert-worksheet-to-image/
+url: /ko/convert-worksheet-to-image/
 keywords: "Aspose.Cells Cloud, 워크시트를 이미지로 변환, 워크시트를 이미지 파일로 변환, Excel을 PNG로, Excel을 SVG로, Excel을 TIFF로, Excel을 JPEG로, Excel을 BMP로, 이미지 변환 API, REST API, 스프레드시트 이미지 내보내기, SDK 예제"
 description: "Aspose.Cells Cloud API를 사용해 Excel 워크시트를 이미지 형식(PNG, SVG, TIFF, JPEG, BMP 등)으로 변환하는 단계별 가이드. 요청 매개변수, 응답 세부정보, 오류 코드, 사용 시나리오 및 SDK 코드 예제 포함."
 weight: 100

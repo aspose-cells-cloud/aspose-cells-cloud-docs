@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Potencia tus habilidades con datos: aprende cálculos esenciales en Excel: suma, resta, multiplicación, división y más"
 linktitle: "Calcular"
 type: docs
-url: /calculate/
+url: /es/calculate/
 keywords: "Aspose.Cells Cloud, API de cálculo de Excel, SUMA, CONTAR, PROMEDIO, MÍN, MÁX, operaciones matemáticas básicas, API REST, cálculos en hojas de cálculo"
 description: "Aprende a utilizar la API REST de Aspose.Cells Cloud para calcular SUMA, CONTAR, PROMEDIO, MÍN, MÁX y operaciones aritméticas básicas en hojas de cálculo de Excel. Incluye sintaxis de solicitud, código de ejemplo, respuestas y manejo de errores."
 weight: 20

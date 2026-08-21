@@ -3,7 +3,7 @@ title: "แปลงตารางเป็นตารางพีวีที
 second_title: "เอกสาร"
 linktype: แปลง
 type: docs
-url: /pivot-tables/convert-table-to-pivottable/
+url: /th/pivot-tables/convert-table-to-pivottable/
 aliases:
   [
     "/create-a-pivottable-with-table/",

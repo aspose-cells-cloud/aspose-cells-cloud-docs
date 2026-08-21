@@ -3,7 +3,7 @@ title: "การแปลงไฟล์ Excel ขั้นสูง"
 second_title: "เอกสาร"
 linktype: "Advanced Convert"
 type: docs
-url: /advanced-convert-excel/
+url: /th/advanced-convert-excel/
 keywords: "Aspose.Cells, การแปลง Excel, Cloud API, SDK"
 description: "Aspose.Cells Cloud REST API มีฟีเจอร์ที่ทรงพลังสำหรับการแปลงสมุดงาน Excel ไปยังรูปแบบต่างๆ อย่างกว้างขวาง รวมถึงการกำหนดค่าการตั้งค่าหน้ากระดาษ ตัวเลือกการบันทึก และการตั้งค่าการพิมพ์ SDK มีให้ใช้งานสำหรับ Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby และ Swift ช่วยให้การผสานรวมเป็นไปอย่างราบรื่นบนแพลตฟอร์มต่างๆ"
 weight: 50

@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Aspose.Cells Cloud SDK para Perl – Convertir, Fusionar, Dividir, Proteger y más"
 linktitle: "Aspose.Cells Cloud SDK para Perl"
 type: docs
-url: /available-sdks/aspose-cells-cloud-perl/
+url: /es/available-sdks/aspose-cells-cloud-perl/
 description: "Explore el SDK de Aspose.Cells Cloud para Perl: una biblioteca multiplataforma para crear, convertir, fusionar, dividir, proteger, buscar y reemplazar archivos de Excel sin necesidad de tener Office instalado. Incluye guía de instalación, ejemplos de código y referencia de API."
 weight: 30
 keywords: "Perl, Aspose.Cells Cloud, Excel SDK, conversión, PDF, API, manipulación de Excel, SDK de Perl, procesamiento en la nube de Excel"

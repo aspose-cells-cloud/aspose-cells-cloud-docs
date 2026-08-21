@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasında Metin Değiştirme – Aspose.Cells Cloud A
 second_title: "Belge"
 linktitle: "Çalışma sayfasında değiştir"
 type: docs
-url: /worksheets/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /tr/worksheets/replace-text/
+aliases: [  /tr/replace-text-in-a-workbook/ ]
 keywords: "Aspose.Cells, metin değiştir, Excel, REST API, elektronik tablo, çalışma sayfası"
 description: "Aspose.Cells Cloud API’sini (v3.0) kullanarak Excel çalışma sayfasında metin nasıl değiştireceğinizi öğrenin. Gereksinimler, kimlik doğrulama, istek sözdizimi, cURL örneği, SDK kod örnekleri, yanıt detayları ve hata işleme içerir."
 ArticleTitle: "Excel Çalışma Sayfasında Metin Değiştirme – Aspose.Cells Cloud API"

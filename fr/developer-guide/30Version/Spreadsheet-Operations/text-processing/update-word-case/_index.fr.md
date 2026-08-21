@@ -3,7 +3,7 @@ title: "Aspose.Cells – API de mise à jour de la casse des mots"
 second_title: "Document"
 linktitle: "Casse des mots"
 type: docs
-url: /post-update-word-case/
+url: /fr/post-update-word-case/
 keywords: "Aspose.Cells, API de mise à jour de la casse des mots, conversion de la casse du texte, Excel, CSV, Google Sheets, API REST"
 description: "Convertissez la casse du texte dans des fichiers Excel, CSV ou Google Sheets à l’aide de l’API de mise à jour de la casse des mots d’Aspose.Cells Cloud. Prend en charge les cas majuscule/minuscule, la casse de titre et la majuscule initiale."
 weight: 100

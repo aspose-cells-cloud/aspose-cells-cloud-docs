@@ -3,8 +3,8 @@ title: "Zeileninformationen aus einer Excel-Arbeitsmappe abrufen"
 second_title: "Dokument"
 linktitle: "Zeilen"
 type: docs
-url: /rows/get/rows/
-aliases: [/get-row-from-a-worksheet/]
+url: /de/rows/get/rows/
+aliases: [  /de/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Get Rows API, Excel-Arbeitsblattzeilen, REST-API, cURL-Beispiel, SDK-Beispiele, .NET, Java, Python"
 description: "Erfahren Sie, wie Sie Zeileninformationen aus einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API (v3.0) abrufen. Enthält Endpunkt, Parameter, Authentifizierung, cURL- und SDK-Codebeispiele für C#, Java, Python und mehr."
 weight: 10

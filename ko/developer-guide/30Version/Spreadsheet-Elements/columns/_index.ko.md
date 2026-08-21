@@ -3,8 +3,8 @@ title: "Excel 열 작업"
 second_title: "문서"
 linktype: "열"
 type: docs
-url: /columns/
-aliases: [/working-with-columns/]
+url: /ko/columns/
+aliases: [  /ko/working-with-columns/ ]
 keywords: "Excel, 열, Aspose.Cells Cloud, API, 스프레드시트, 워크시트, REST API"
 description: "Excel 워크시트 열에 대한 Aspose.Cells Cloud API 작업의 자세한 가이드로, 열 조회, 추가, 복사, 숨기기, 숨기기 해제, 그룹화, 그룹 해제 및 삭제를 다룹니다."
 weight: 100

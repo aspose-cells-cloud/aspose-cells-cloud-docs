@@ -4,7 +4,7 @@ secondtitle: "문서"
 articletitle: "클라우드 기반 엑셀 파일 관리 솔루션 – Aspose.Cells 폴더 복사 API의 일괄 복사 기능 상세 설명"
 linktitle: "폴더 복사"
 type: docs
-url: /copy-folder/
+url: /ko/copy-folder/
 keywords: "폴더 복사, Aspose.Cells Cloud, REST API, 클라우드 스토리지, 스프레드시트 관리"
 description: "단일 REST 호출로 Aspose.Cells Cloud 스토리지 내 폴더를 복사하는 방법을 알아보세요. 엔드포인트, 매개변수, 샘플 요청, 오류 코드, SDK 예제가 포함됩니다."
 weight: 100

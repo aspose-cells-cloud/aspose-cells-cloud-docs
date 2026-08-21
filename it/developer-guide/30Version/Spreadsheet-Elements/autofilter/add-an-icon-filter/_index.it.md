@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Aggiungi filtro a icone"
 type: docs
 url: /it/autofilter/add-icon-filter/
-aliases: [/it/add-an-icon-filter/,/it/autofilter/add-an-icon-filter/]
+aliases: [  /it/add-an-icon-filter/ , /it/autofilter/add-an-icon-filter/ ]
 keywords: "Aspose.Cells Cloud, Excel, Filtro a icone, Filtro automatico, API REST"
 description: "Scopri come aggiungere un filtro a icone a un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud, con i dettagli della richiesta, un esempio cURL, campioni di codice SDK e gestione degli errori."
 weight: 65

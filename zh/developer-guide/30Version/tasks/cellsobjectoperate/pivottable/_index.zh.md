@@ -2,7 +2,7 @@
 title: "使用 CellsObjectOperate 任务处理数据透视表"
 type: docs
 url: /zh/tasks/cells-object-operate/pivottable/
-aliases: [/zh/working-with-pivot-table-using-cellsobjectoperate-task/]
+aliases: [  /zh/working-with-pivot-table-using-cellsobjectoperate-task/ ]
 keywords: "Aspose Cells 数据透视表 API，CellsObjectOperate，Excel REST API"
 description: "了解如何使用 Aspose.Cells Cloud 的 CellsObjectOperate 任务在 Excel 中生成数据透视表。包含 cURL 示例、参数说明及 SDK 参考。"
 weight: 10

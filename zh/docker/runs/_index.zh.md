@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何运行 Aspose.Cells Cloud Docker 容器"
 linktitle: "容器运行"
 type: docs
-url: /run-aspose-cells-cloud-docker-container/
+url: /zh/run-aspose-cells-cloud-docker-container/
 description: "了解如何在 Windows Server 2022 上启动 Aspose.Cells Cloud Docker 容器。提供试用模式、按量计费模式、许可证计费模式、存储配置及健康检查的分步命令。"
 weight: 30
 keywords: "Aspose.Cells, Docker, Windows Server 2022, 试用模式, 按量计费, 许可证计费, 存储配置"

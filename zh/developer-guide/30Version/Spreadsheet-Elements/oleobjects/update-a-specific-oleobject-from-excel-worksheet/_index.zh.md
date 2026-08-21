@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "更新"
 type: docs
 url: /zh/oleobjects/update/
-aliases: [/update-a-specific-oleobject-from-excel-worksheet/]
+aliases: [  /zh/update-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "更新 OLE 对象, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API 更新 Excel 工作表中的 OLE 对象（如图像、图表等）。包含 cURL、SDK 示例、认证步骤及错误处理说明。"
 weight: 30

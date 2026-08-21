@@ -3,7 +3,7 @@ title: "Восстановление файлов Excel"
 second_title: "Документ"
 type: docs
 linktitle: "Восстановление файлов Excel"
-url: /repair-excel-files/
+url: /ru/repair-excel-files/
 keywords: "Aspose Cells, API для восстановления Excel, поврежденный XLSX, восстановление электронных таблиц, облачный API"
 description: "Используйте облачный REST API Aspose.Cells для восстановления поврежденных файлов Excel (XLS, XLSX, XLSM, XLSB, ODS). Загрузите один или несколько файлов, выберите формат выходного файла и получите восстановленные файлы в формате Base64. Установка не требуется."
 weight: 39

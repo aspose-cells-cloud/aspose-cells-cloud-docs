@@ -3,7 +3,7 @@ title: "将 Excel 文件转换为不同格式"
 second_title: "文档"
 linktitle: "转换电子表格"
 type: docs
-url: /convert-a-spread-file-to-different-formats/
+url: /zh/convert-a-spread-file-to-different-formats/
 keywords: "Excel 转换, 电子表格转换, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, 文件格式转换"
 description: "使用 Aspose.Cells Cloud REST API 将 Excel 工作簿转换为多种格式，例如 PDF、CSV、JSON 和 Markdown。该 API 支持 C#、Java、Python 等多种编程语言的 SDK。"
 weight: 10

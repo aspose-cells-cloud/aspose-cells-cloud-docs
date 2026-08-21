@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "إعدادات تخزين حاوية Aspose.Cells Cloud Docker"
 linktitle: "تخزين الحاوية"
 type: docs
-url: /docker/storage/
+url: /ar/docker/storage/
 description: "اضبط موقع التخزين لحاويات Aspose.Cells Cloud Docker باستخدام ملفات تكوين JSON أو PowerShell أو Bash."
 weight: 30
 keywords: "Aspose.Cells, Docker, تخزين الحاوية, تكوين JSON, PowerShell, Bash"

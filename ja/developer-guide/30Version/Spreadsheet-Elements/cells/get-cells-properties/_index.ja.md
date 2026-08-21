@@ -1,7 +1,7 @@
 ---
 title: "セルのプロパティを取得する"
 type: docs
-url: /get-cells-properties/
+url: /ja/get-cells-properties/
 weight: 130
 keywords: "Aspose Cells Cloud、REST API、Excel、ワークシート、セルのプロパティ、セルのプロパティを取得"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシート内の特定のセルまたは定義済みセルメソッドのプロパティを取得する方法を学びます。"

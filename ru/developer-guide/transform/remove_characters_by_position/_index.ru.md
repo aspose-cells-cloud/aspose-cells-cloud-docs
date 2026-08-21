@@ -4,7 +4,7 @@ ArticleTitle: "Удаление символов по позиции – Aspose.
 second_title: "Документ"
 linktitle: "Удаление символов по позиции"
 type: docs
-url: /cells/content/remove/characters-by-position
+url: /ru/cells/content/remove/characters-by-position
 aliases: []
 keywords: "Aspose.Cells, удаление символов, API"
 description: "Удаляет символы из ячеек по позиции в электронной таблице."

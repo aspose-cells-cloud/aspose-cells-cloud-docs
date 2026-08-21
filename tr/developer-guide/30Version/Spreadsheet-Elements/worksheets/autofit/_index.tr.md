@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasında Otomatik Uygunluk (Autofit) ile Çalışmak
 second_title: "Belge"
 linktitle: "Otomatik Uygunluk"
 type: docs
-url: /worksheets/autofit/
-aliases: [/autofit-rows-and-columns-of-worksheet/]
+url: /tr/worksheets/autofit/
+aliases: [  /tr/autofit-rows-and-columns-of-worksheet/ ]
 keywords: "otomatik uygunluk, sütun, satır, Aspose.Cells, Bulut, Excel, API, yeniden boyutlandırma"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki satır ve sütunları otomatik olarak yeniden boyutlandırmayı öğrenin. cURL, .NET, Java ve Python örneklerini içerir."
 weight: 20

@@ -3,7 +3,7 @@ title: "Excel'e Metin Ekle: Hızlı ve Verimli Şekilde Veri Ekleme için Elektr
 second_title: "Belge"
 linktype: "Metin Ekle"
 type: docs
-url: /excel-add-text/
+url: /tr/excel-add-text/
 keywords: "Excel, Aspose.Cells, Metin Ekle, Elektronik Tablo API'si, REST API, Ofis Bulutu, Metin Ekleme, Excel API"
 description: "Aspose.Cells Cloud API aracılığıyla bir Excel elektronik tablosunda belirli bir konuma metin ekler."
 weight: 100

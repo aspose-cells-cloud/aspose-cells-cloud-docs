@@ -3,7 +3,7 @@ title: "Arbeitsblatt-Validierung löschen – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktitle: "Löschen"
 type: docs
-url: /validations/delete/
+url: /de/validations/delete/
 keywords: "Löschen, Arbeitsblatt-Validierung, Aspose.Cells Cloud, Excel-API"
 description: "Erfahren Sie, wie Sie eine Arbeitsblatt-Validierung aus einer Excel-Datei mithilfe der Aspose.Cells Cloud REST-API löschen. Enthält Endpunkt, Parameter, Authentifizierungsdetails, cURL-Beispiel, Fehlerbehandlung und SDK-Code-Snippets."
 weight: 10

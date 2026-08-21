@@ -4,7 +4,7 @@ ArticleTitle: "แปลงช่วงข้อมูลเป็น CSV – As
 second_title: "เอกสาร"
 linktype: "แปลงช่วงข้อมูลเป็น CSV"
 type: docs
-url: /cells/convert/range/csv
+url: /th/cells/convert/range/csv
 aliases: []
 keywords: "แปลง, csv, ช่วงข้อมูล, Aspose.Cells"
 description: "แปลงช่วงข้อมูลในสมุดงานที่อยู่บนไดรฟ์ภายในเครื่องเป็นไฟล์ csv"

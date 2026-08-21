@@ -1,7 +1,7 @@
 ---
 title: "مسح تنسيق الخلايا في ورقة عمل Excel"
 type: docs
-url: /clear-cells-formatting-in-excel-worksheet/
+url: /ar/clear-cells-formatting-in-excel-worksheet/
 weight: 100
 keywords: "Aspose.Cells Cloud، Excel، مسح تنسيق الخلايا، REST API، C#، Java، PHP، Ruby، Node.js، Python، Perl، Go"
 description: "استخدم واجهة Aspose.Cells Cloud REST API لمسح تنسيق الخلايا في ورقة عمل Excel. يتضمن تفاصيل الطلب، مثالًا باستخدام cURL، ومقتطفات من كود SDK بلغات برمجة متعددة."

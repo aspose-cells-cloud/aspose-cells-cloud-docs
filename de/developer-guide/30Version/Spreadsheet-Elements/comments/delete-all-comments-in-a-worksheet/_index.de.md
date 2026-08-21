@@ -2,7 +2,7 @@
 title: "Alle Arbeitsblatt-Kommentare löschen"
 description: "Löschen Sie alle Kommentare aus einem Arbeitsblatt in einer Excel-Datei mithilfe der Aspose.Cells Cloud API. Erfahren Sie mehr über den DELETE-Endpunkt, erforderliche Parameter, Authentifizierung, Beispiel-cURL-Anforderung, Antwortformat, Fehlercodes und SDK-Beispiele."
 keywords: "Aspose, Cells, Kommentare löschen, Arbeitsblatt, API, REST, Excel, Cloud"
-url: /comments/clear/
+url: /de/comments/clear/
 aliases:
   - /delete-all-comments-in-a-worksheet/
 weight: 50

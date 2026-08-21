@@ -3,7 +3,7 @@ title: "Eliminar caracteres de Excel – API de Aspose.Cells Cloud (POST /cells/
 second_title: "Documento"
 linktitle: "Eliminar caracteres"
 type: docs
-url: /excel-remove-characters/
+url: /es/excel-remove-characters/
 keywords: "eliminar caracteres, Aspose.Cells, API de Excel, procesamiento de texto, nube"
 description: "Aprenda a eliminar caracteres, conjuntos de caracteres o subcadenas de hojas de cálculo de Excel mediante la API de Aspose.Cells Cloud. Incluye esquema de solicitud, ejemplo de cURL, código de SDK y manejo de errores."
 weight: 100

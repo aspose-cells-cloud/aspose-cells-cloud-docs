@@ -3,7 +3,7 @@ title: "Импорт двумерного целочисленного масс�
 second_title: "Документ"
 linktitle: "Импорт двумерного целочисленного массива"
 type: docs
-url: /import-a-2D-integer-array-into-excel-worksheet/
+url: /ru/import-a-2D-integer-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-integer-array-into-excel-worksheet/,

@@ -3,8 +3,8 @@ title: "Nascondere righe in un foglio di Excel"
 second_title: "Documento"
 linktitle: "Nascondi"
 type: docs
-url: /rows/hide/
-aliases: [/hide-rows-in-excel-worksheet/]
+url: /it/rows/hide/
+aliases: [  /it/hide-rows-in-excel-worksheet/ ]
 keywords: "nascondere righe, Aspose.Cells Cloud, API Excel, REST, SDK"
 description: "Scopri come nascondere una o più righe in un foglio di Excel utilizzando l'API REST di Aspose.Cells Cloud. Include esempio cURL, frammenti di codice SDK, parametri, autenticazione, dettagli della risposta e gestione degli errori."
 weight: 40

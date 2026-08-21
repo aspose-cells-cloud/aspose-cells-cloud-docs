@@ -2,7 +2,7 @@
 title: "电子表格元素"
 second_title: "文档"
 type: docs
-url: /spreadsheet-elements/
+url: /zh/spreadsheet-elements/
 keywords: "Aspose.Cells, 云, Excel API, 自动筛选, 图表, 数据透视表, 工作表"
 description: "探索 Aspose.Cells Cloud REST API 中用于 Excel 的功能，包括自动筛选、单元格、图表、列、批注、条件格式、超链接、列表对象、元数据、OLE 对象、分页符、图片、数据透视表、区域、行、形状、数据验证和工作表。"
 weight: 100

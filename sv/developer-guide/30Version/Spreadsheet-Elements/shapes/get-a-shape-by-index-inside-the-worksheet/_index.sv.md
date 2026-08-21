@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Hämta"
 type: docs
 url: /sv/shapes/get/
-aliases: [/sv/get-a-shape-by-index-inside-the-worksheet/]
+aliases: [  /sv/get-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel-form-API, hämta form efter index, arbetsarkform, REST-API, formhämtning, Aspose.Cells SDK"
 description: "Hämta en form efter dess index från ett Excel-arbetsark med Aspose.Cells Cloud REST API. Innehåller begäranSyntax, parametrar, svarsinformation och SDK-exempel."
 weight: 20

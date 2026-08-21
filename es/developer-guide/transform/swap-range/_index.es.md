@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Intercambiar/exchange datos entre columnas, filas y celdas en Excel"
 linktype: "Intercambiar rango"
 type: docs
-url: /swap-range/
+url: /es/swap-range/
 keywords: "Aspose Cells, API de Excel, intercambiar rango, hoja de cálculo en la nube"
 description: "Intercambia columnas, filas o rangos en archivos de Excel con la API de Aspose.Cells Cloud. Preserva el formato, las fórmulas y las referencias a celdas en una única solicitud."
 weight: 100

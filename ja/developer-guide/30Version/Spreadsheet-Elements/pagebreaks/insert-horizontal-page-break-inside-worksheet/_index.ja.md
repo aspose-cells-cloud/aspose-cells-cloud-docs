@@ -3,8 +3,8 @@ title: "水平ページ区切りを追加する"
 second_title: "Document"
 linktitle: "水平ページ区切りを追加する"
 type: docs
-url: /page-breaks/add-horizontal-page-break/
-aliases: [/insert-horizontal-page-break-inside-worksheet/]
+url: /ja/page-breaks/add-horizontal-page-break/
+aliases: [  /ja/insert-horizontal-page-break-inside-worksheet/ ]
 keywords: "水平ページ区切り, Aspose.Cells Cloud, Excel API, REST, SDK, ワークシート, cURL"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートに水平ページ区切りを追加する方法を学びます。リクエストの詳細、cURL の例、複数のプログラミング言語用の SDK コードスニペットを含みます。"
 weight: 30

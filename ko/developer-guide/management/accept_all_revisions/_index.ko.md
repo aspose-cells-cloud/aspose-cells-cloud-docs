@@ -3,7 +3,7 @@ title: "모든 수정 사항 수락"
 ArticleTitle: "모든 수정 사항 수락 – Aspose.Cells Cloud"
 second_title: "문서"
 linktype: "docs"
-url: /cells/spreadsheet/accept-all-revisions
+url: /ko/cells/spreadsheet/accept-all-revisions
 aliases: []
 keywords: "Aspose.Cells, AcceptAllRevisions, 스프레드시트, 수정 사항"
 description: "Aspose.Cells Cloud API를 사용하여 스프레드시트 파일에서 모든 수정 사항을 수락합니다."

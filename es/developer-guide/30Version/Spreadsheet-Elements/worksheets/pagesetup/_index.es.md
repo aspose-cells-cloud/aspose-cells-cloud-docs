@@ -3,7 +3,7 @@ title: "Configuración de página de hoja de cálculo"
 second_title: "Document"
 linktitle: "Configuración de página"
 type: docs
-url: /page-setup/
+url: /es/page-setup/
 keywords: "Aspose.Cells, pageSetup, worksheet, configuración de impresión, márgenes, orientación, tamaño de papel, encabezado, pie de página, escalado"
 description: "Aprenda a configurar el diseño de impresión de una hoja de cálculo de Excel con el objeto PageSetup de Aspose.Cells Cloud. Incluye lista de propiedades, valores predeterminados, intervalos y ejemplos de código para C#, Java y Python."
 weight: 20

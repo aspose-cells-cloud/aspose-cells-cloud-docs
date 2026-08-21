@@ -3,8 +3,8 @@ title: "Cifrar, descifrar y firmar digitalmente archivos de Excel"
 second_title: "Documento"
 linktype: "Proteger Excel"
 type: docs
-url: /protect/
-aliases: [/workbook/password/]
+url: /es/protect/
+aliases: [  /es/workbook/password/ ]
 keywords: "Excel, proteger, cifrar, descifrar, firma digital, Aspose.Cells Cloud, API REST, contraseña, seguridad"
 description: "Aprenda a proteger, cifrar, descifrar y firmar digitalmente libros de Excel con la API REST de Aspose.Cells Cloud – ejemplos de código para Android, C#, Java, Python y más."
 ArticleTitle: "Cifrar, descifrar, firmar digitalmente y proteger archivos de Excel mediante la API de Aspose.Cells Cloud"

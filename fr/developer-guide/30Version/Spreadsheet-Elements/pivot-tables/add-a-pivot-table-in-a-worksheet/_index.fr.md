@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: Ajouter
 type: docs
 url: /fr/pivot-tables/add/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /fr/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "ajouter un tableau croisé dynamique, feuille de calcul Excel, Aspose.Cells Cloud, API REST, SDK, tableau croisé dynamique Excel"
 description: "Utilisez l’API REST Aspose.Cells Cloud pour ajouter un tableau croisé dynamique dans une feuille de calcul Excel. Disponible via les SDK pour C#, Java, PHP, Python, Node.js, Android, Swift, Perl, Go."
 weight: 30

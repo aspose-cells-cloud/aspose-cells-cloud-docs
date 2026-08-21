@@ -3,7 +3,7 @@ title: "استيراد مصفوفة ثنائية الأبعاد من نوع doub
 second_title: "مستند"
 linktype: "استيراد مصفوفة ثنائية الأبعاد من نوع double"
 type: docs
-url: /import-a-2d-double-array-into-excel-worksheet/
+url: /ar/import-a-2d-double-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-double-array-into-excel-worksheet/,

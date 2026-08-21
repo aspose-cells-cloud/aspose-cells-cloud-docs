@@ -3,8 +3,8 @@ title: "Excel Çalışma Kitabında Metin Bulma"
 second_title: "Belge"
 linktitle: "Çalışma kitabında bul"
 type: docs
-url: /workbook/find-text/
-aliases: [/find-text-in-a-workbook/]
+url: /tr/workbook/find-text/
+aliases: [  /tr/find-text-in-a-workbook/ ]
 weight: 30
 keywords: "Aspose.Cells, metin bul, Excel API, çalışma kitabında ara"
 description: "Aspose.Cells Cloud API kullanarak Excel çalışma kitaplarında (XLS‑X, ODS) **metin bulmayı** öğrenin. cURL örneği, SDK kod parçaları ve yanıt şeması içerir. Hemen başlayın."

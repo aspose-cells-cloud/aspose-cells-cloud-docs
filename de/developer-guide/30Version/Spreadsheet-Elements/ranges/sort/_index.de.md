@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Sortieren"
 type: docs
 keywords: "Bereichssortierung, Aspose.Cells Cloud, REST API, Tabellenkalkulation, Excel, API"
-url: /ranges/sort/de/
+url: /de/ranges/sort/de/
 description: Stellt eine API bereit, um einen Zellbereich in einer Arbeitsmappe mithilfe von Aspose.Cells Cloud zu sortieren.
 weight: 20
 ---

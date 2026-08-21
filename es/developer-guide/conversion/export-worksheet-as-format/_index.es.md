@@ -3,7 +3,7 @@ title: "Exportar hoja de cálculo – API de Aspose.Cells Cloud v4 (PDF, PNG, SV
 second_title: "Document"
 ArticleTitle: "Cómo exportar una hoja de cálculo remota a otro formato: guía paso a paso"
 linktype: "docs"
-url: /export-worksheet-as-format/
+url: /es/export-worksheet-as-format/
 keywords: "Aspose Cells, exportar hoja de cálculo, API en la nube, PDF, PNG, CSV, conversión de Excel"
 description: "Convierta una hoja de cálculo almacenada en Aspose.Cells Cloud a PDF, PNG, SVG, CSV u otros formatos mediante una única solicitud GET. Incluye ejemplos de código para C#, Java, Python y más."
 weight: 100

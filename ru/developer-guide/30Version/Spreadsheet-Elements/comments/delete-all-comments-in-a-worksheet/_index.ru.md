@@ -2,7 +2,7 @@
 title: "Удаление всех комментариев в листе"
 description: "Удалите все комментарии из листа в файле Excel с помощью API Aspose.Cells Cloud. Изучите конечную точку DELETE, необходимые параметры, аутентификацию, пример запроса cURL, формат ответа, коды ошибок и примеры SDK."
 keywords: "Aspose, Cells, удаление комментариев, лист, API, REST, Excel, облачные технологии"
-url: /comments/clear/
+url: /ru/comments/clear/
 aliases:
   - /delete-all-comments-in-a-worksheet/
 weight: 50

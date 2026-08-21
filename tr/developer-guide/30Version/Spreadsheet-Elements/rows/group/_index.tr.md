@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasında Satırları Gruplama"
 second_title: "Belge"
 linktitle: "Grupla"
 type: docs
-url: /rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
+url: /tr/rows/group/
+aliases: [  /tr/group-rows-in-excel-worksheet/ ]
 keywords: "satırları gruplama, Excel, Aspose.Cells Cloud, REST API, SDK, çalışma sayfası, Excel API"
 description: "Aspose.Cells Cloud REST API ile bir Excel çalışma sayfasında satırları gruplayın. Kolay entegrasyon için birden fazla SDK’yı (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) destekler."
 weight: 60

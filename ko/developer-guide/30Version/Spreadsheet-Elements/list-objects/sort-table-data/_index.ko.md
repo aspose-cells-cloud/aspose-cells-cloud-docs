@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Sort"
 type: docs
 url: /ko/list-objects/sort-data/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
+aliases: [  /ko/get-a-list-object-or-table-inside-the-worksheet/ , /ko/tables/sort-data/ ]
 keywords: "Aspose.Cells Cloud, Excel, ListObject, 데이터 정렬, REST API, 워크시트"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 엑셀 워크시트 내 ListObject(테이블) 데이터를 정렬하는 방법을 배웁니다. 엔드포인트, 매개변수, 샘플 cURL 요청 및 SDK 예제가 포함되어 있습니다."
 weight: 40

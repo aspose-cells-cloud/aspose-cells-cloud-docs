@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "استبدال النصوص دفعةً في ملفات إكسل السحابية – واجهة برمجة التطبيقات للبحث والاستبدال"
 linktitle: "استبدال محتوى جدول بيانات بعيد"
 type: docs
-url: /replace-content-in-remote-spreadsheet/
+url: /ar/replace-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, استبدال المحتوى, جدول بيانات بعيد, واجهة برمجة التطبيقات للبحث والاستبدال, إكسل سحابي, استبدال النصوص دفعةً"
 description: "استخدم واجهة برمجة التطبيقات للبحث والاستبدال في Aspose.Cells Cloud لتحديث النصوص دفعةً في كتب عمل إكسل البعيدة. نقطة نهاية آمنة باستخدام بروتوكول HTTPS، ومصادقة OAuth2، وأمثلة جاهزة لاستخدام مكتبات SDK لدمج سريع."
 weight: 100

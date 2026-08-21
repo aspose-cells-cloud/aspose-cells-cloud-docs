@@ -4,7 +4,7 @@ description: "Combina archivos de hojas de cálculo almacenados en el almacenami
 keywords: "Aspose.Cells, fusionar hojas de cálculo, carpeta remota, API, PDF, CSV, JSON, XLSX, ODS, XPS"
 weight: 100
 type: docs
-url: /merge-spreadsheets-in-remote-folder/
+url: /es/merge-spreadsheets-in-remote-folder/
 ---
 
 Combina múltiples archivos de hojas de cálculo que residen en una carpeta remota del almacenamiento en la nube de Aspose Cloud en un único archivo de salida. La operación se ejecuta completamente en la nube, eliminando la necesidad de descargar los archivos fuente localmente. Se admiten más de 30 formatos de salida (PDF, CSV, JSON, XLSX, ODS, XPS, …).

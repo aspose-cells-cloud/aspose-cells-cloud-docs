@@ -3,7 +3,7 @@ title: "Récupérer toutes les validations de feuille de calcul à partir d'une 
 second_title: "Document"
 linktitle: "Tout récupérer"
 type: docs
-url: /validations/get-all/
+url: /fr/validations/get-all/
 keywords: "Aspose.Cells Cloud, Excel, validations de feuille de calcul, API REST, Récupérer toutes les validations, SDK"
 description: "Récupérez toutes les validations de feuille de calcul à partir d'une feuille Excel à l'aide de l'API REST Aspose.Cells Cloud. Prend en charge plusieurs SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) pour une intégration rapide."
 weight: 10

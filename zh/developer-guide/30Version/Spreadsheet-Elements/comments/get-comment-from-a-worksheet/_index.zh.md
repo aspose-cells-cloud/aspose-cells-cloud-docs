@@ -1,8 +1,8 @@
 ---
 title: "获取工作表注释 – Aspose.Cells Cloud API 文档"
 type: docs
-url: /comments/get/
-aliases: [/get-comment-from-a-worksheet/]
+url: /zh/comments/get/
+aliases: [  /zh/get-comment-from-a-worksheet/ ]
 keywords: "Aspose.Cells, 工作表注释, API, GET, Excel"
 description: "了解如何使用 Aspose.Cells Cloud API（v3.0）通过单元格名称获取工作表注释。包含请求 URL、参数、cURL 示例、响应详情及 SDK 代码片段。"
 weight: 10

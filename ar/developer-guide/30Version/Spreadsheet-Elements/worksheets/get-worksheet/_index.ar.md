@@ -3,7 +3,7 @@ title: "كيفية استخراج محتوى مختلف من ورقة عمل Exc
 second_title: "وثيقة"
 linktype: "استخراج"
 type: docs
-url: /worksheets/get/
+url: /ar/worksheets/get/
 keywords: "Excel، ورقة عمل، Aspose.Cells Cloud، واجهة REST API، استخراج المحتوى، تحويل التنسيق"
 description: "تعرّف على كيفية استرجاع أنواع مختلفة من المحتوى من ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. يغطي الدليل التنسيقات المدعومة ويقدّم روابط للعمليات ذات الصلة."
 weight: 20

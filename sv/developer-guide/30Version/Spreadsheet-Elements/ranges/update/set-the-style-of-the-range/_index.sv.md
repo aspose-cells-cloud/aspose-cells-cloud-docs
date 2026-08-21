@@ -3,8 +3,8 @@ title: "Ställ in intervallstil – Aspose.Cells Cloud API"
 second_title: "Dokumentation"
 linktitle: "Ställ in intervallstil"
 type: docs
-url: /ranges/update/style/
-aliases: [/set-the-style-of-the-range/]
+url: /sv/ranges/update/style/
+aliases: [  /sv/set-the-style-of-the-range/ ]
 keywords: "Aspose.Cells, intervallstil, API, Excel, moln"
 description: "Lär dig hur du ställer in stilen för ett cellintervall i ett Excel-ark med Aspose.Cells Cloud REST API. Inkluderar autentiseringssteg, begäranformat, svarsdetaljer och SDK-exempel för .NET, Java, Python, Go och mer."
 weight: 70

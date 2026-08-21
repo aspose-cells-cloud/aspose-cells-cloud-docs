@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Så här kör du Aspose.Cells Cloud Docker-container"
 linktitle: "Kör container"
 type: docs
-url: /run-aspose-cells-cloud-docker-container/
+url: /sv/run-aspose-cells-cloud-docker-container/
 description: "Lär dig hur du startar Aspose.Cells Cloud i en Docker-container på Windows Server 2022. Steg-för-steg-kommandon för utvärderingsläge, förbrukningsbaserad fakturering, licensbaserad fakturering, lagringskonfiguration och hälsokontroll."
 weight: 30
 keywords: "Aspose.Cells, Docker, Windows Server 2022, utvärderingsläge, förbrukningsbaserad fakturering, licensbaserad fakturering, lagringskonfiguration"

@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "2025 年新功能"
 type: docs
 weight: 9
-url: /new-features/2025/
+url: /zh/new-features/2025/
 keywords: "Aspose.Cells Cloud, 2025 年新功能, 电子表格 API, Excel, CSV, PDF, 云电子表格"
 description: "本页面列出了 2025 年发布的 Aspose.Cells Cloud 最新功能与增强功能，包括新 API、改进及 Bug 修复。"
 ArticleTitle: "Aspose.Cells Cloud 2025 年新功能 – 最新功能与增强"

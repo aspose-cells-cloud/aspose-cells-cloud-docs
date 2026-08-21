@@ -4,7 +4,7 @@ ArticleTitle: "使用 Aspose.Cells Cloud API 向 Excel 工作表添加多行"
 second_title: "文档"
 linktype: "Rows"
 type: docs
-url: /rows/add/rows/
+url: /zh/rows/add/rows/
 keywords: "Aspose.Cells Cloud、插入行、Excel 工作表、REST API、SDK、添加多行"
 description: "了解如何使用 Aspose.Cells Cloud REST API 向 Excel 工作表插入多行。本指南涵盖端点、请求参数、示例 cURL 命令以及 SDK 使用示例。"
 weight: 20

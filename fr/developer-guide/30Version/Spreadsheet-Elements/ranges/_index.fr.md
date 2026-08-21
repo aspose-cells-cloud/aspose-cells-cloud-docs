@@ -3,8 +3,8 @@ title: "Travail avec les plages Excel"
 second_title: "Document"
 linktitle: "Plage"
 type: docs
-url: /ranges/
-aliases: [/working-with-ranges/]
+url: /fr/ranges/
+aliases: [  /fr/working-with-ranges/ ]
 keywords: "Aspose.Cells, plage Excel, API REST, SDK, .NET, Java, Python, fusionner des cellules, copier une plage, définir la valeur d'une plage"
 description: "Découvrez comment récupérer, modifier, styliser, fusionner, déplacer et copier des plages Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut des exemples de code SDK pour .NET, Java, Python et plus encore."
 weight: 100

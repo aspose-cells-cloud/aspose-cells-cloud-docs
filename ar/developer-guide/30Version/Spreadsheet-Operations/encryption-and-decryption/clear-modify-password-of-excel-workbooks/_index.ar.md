@@ -3,7 +3,7 @@ title: "إزالة حماية الكتابة (كلمة المرور) من ملف
 second_title: "مستند"
 linktitle: "مسح كلمة مرور ملفات إكسل"
 type: docs
-url: /clear-excel-files-password/
+url: /ar/clear-excel-files-password/
 aliases:
   [
     /clear-modify-password-of-excel-workbooks/,

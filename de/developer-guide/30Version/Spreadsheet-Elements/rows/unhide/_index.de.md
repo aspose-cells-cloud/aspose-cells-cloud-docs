@@ -3,8 +3,8 @@ title: "Zeilen in einem Excel-Arbeitsblatt einblenden"
 second_title: "Dokument"
 linktitle: "Einblenden"
 type: docs
-url: /rows/unhide/
-aliases: [/unhide-rows-in-excel-worksheet/]
+url: /de/rows/unhide/
+aliases: [  /de/unhide-rows-in-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, Zeilen einblenden, REST API, Tabellenkalkulation, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
 description: "Verwenden Sie die Aspose.Cells Cloud REST API, um Zeilen in einem Excel-Arbeitsblatt einzublenden. Die API steht über verschiedene SDKs wie .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl und Swift zur Verfügung."
 weight: 50

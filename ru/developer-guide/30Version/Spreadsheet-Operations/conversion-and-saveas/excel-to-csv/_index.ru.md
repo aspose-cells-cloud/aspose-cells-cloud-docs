@@ -3,7 +3,7 @@ title: "Excel в CSV"
 second_title: "Документ"
 linktitle: "Excel в CSV"
 type: docs
-url: convert-excel-file-to-CSV-file/
+url: /ruconvert-excel-file-to-CSV-file/
 aliases:
   - /convert-excel-file-to-CSV-in-cloud/
   - /convert/excel-to-csv/

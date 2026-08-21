@@ -1,7 +1,7 @@
 ---
 title: "Ottieni MinDataColumn – Riferimento API Aspose.Cells Cloud (v3.0)"
 type: docs
-url: /get-mindatacolumn-from-excel-worksheet/
+url: /it/get-mindatacolumn-from-excel-worksheet/
 weight: 110
 keywords: "Aspose.Cells Cloud, MinDataColumn, foglio Excel, API REST, riferimento API, v3.0, colonna dati, API cloud"
 description: "Recupera la colonna più a sinistra contenente dati in un foglio Excel tramite l'API REST Aspose.Cells Cloud (v3.0). Include dettagli sull'autenticazione, sintassi della richiesta, esempio di risposta JSON, codici di errore e frammenti SDK."

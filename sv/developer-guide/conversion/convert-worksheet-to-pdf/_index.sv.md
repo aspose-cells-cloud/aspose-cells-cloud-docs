@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man konverterar ett lokalt kalkylblad till en PDF-fil: Steg-för-steg-guide"
 linktitle: "Konvertera kalkylblad till PDF"
 type: docs
-url: /convert-worksheet-to-pdf/
+url: /sv/convert-worksheet-to-pdf/
 keywords: "Aspose.Cells, Excel till PDF, kalkylbladkonvertering, REST API, molnkonvertering, kalkylark PDF, API-slutpunkt, PDF-generering"
 description: "Använd Aspose.Cells Cloud API för att snabbt och säkert konvertera ett kalkylblad från en lokal Excel-fil till ett PDF-dokument."
 weight: 100

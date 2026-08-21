@@ -4,7 +4,7 @@ description: "Aspose Cloud 저장소에 저장된 스프레드시트 파일을 �
 keywords: "Aspose.Cells, 스프레드시트 병합, 원격 폴더, API, PDF, CSV, JSON, XLSX, ODS, XPS"
 weight: 100
 type: docs
-url: /merge-spreadsheets-in-remote-folder/
+url: /ko/merge-spreadsheets-in-remote-folder/
 ---
 
 원격 Aspose Cloud 저장소 폴더에 있는 여러 스프레드시트 파일을 단일 출력 파일로 결합합니다. 이 작업은 클라우드에서 완전히 실행되므로 소스 파일을 로컬로 다운로드할 필요가 없습니다. 30개 이상의 출력 형식(PDF, CSV, JSON, XLSX, ODS, XPS 등)을 지원합니다.

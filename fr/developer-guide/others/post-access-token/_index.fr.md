@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Obtenir un jeton d'accès avec l'ID client et le secret"
 linktitle: "Post Access Token"
 type: docs
-url: /post-access-token/
+url: /fr/post-access-token/
 keywords: "Aspose.Cells, Cloud, Jeton d'accès, OAuth2, API, Authentification, REST, Excel, Office Cloud"
 description: "Obtenir un jeton d'accès OAuth2 pour Aspose.Cells Cloud en appelant le point de terminaison POST /cells/connect/token avec votre ID client et votre secret."
 weight: 100

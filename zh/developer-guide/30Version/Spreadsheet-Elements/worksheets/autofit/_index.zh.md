@@ -3,8 +3,8 @@ title: "在 Excel 工作表中使用自动调整功能"
 second_title: "文档"
 linktitle: "自动调整"
 type: docs
-url: /worksheets/autofit/
-aliases: [/autofit-rows-and-columns-of-worksheet/]
+url: /zh/worksheets/autofit/
+aliases: [  /zh/autofit-rows-and-columns-of-worksheet/ ]
 keywords: "自动调整, 列, 行, Aspose.Cells, 云, Excel, API, 调整大小"
 description: "了解如何使用 Aspose.Cells Cloud REST API 自动调整 Excel 工作表中的行和列大小。包含 cURL、.NET、Java 和 Python 示例。"
 weight: 20

@@ -3,8 +3,8 @@ title: "ストレージを使用せずにデータをインポート – Aspose.
 second_title: "ドキュメント"
 linktitle: "ストレージを使用せずにデータをインポート"
 type: docs
-url: /import/without-using-storage/
-aliases: [/import-data-in-excel-worksheet-without-using-storage/]
+url: /ja/import/without-using-storage/
+aliases: [  /ja/import-data-in-excel-worksheet-without-using-storage/ ]
 keywords: "Aspose.Cells, Cloud API, ストレージを使用せずにデータをインポート, Excel インポート API, REST インポート"
 description: "Aspose.Cells Cloud API を使用して Excel ワークブックにストレージを使用せずにデータをインポートする方法を学びます。リクエスト形式、パラメーター、cURL の例、SDK コード、エラー処理を含みます。"
 weight: 10

@@ -3,7 +3,7 @@ title: "Importera tvådimensionellt heltalsfält till Excel-ark"
 second_title: "Dokument"
 linktype: "Importera tvådimensionellt heltalsfält"
 type: docs
-url: /import-a-2d-integer-array-into-excel-worksheet/
+url: /sv/import-a-2d-integer-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-integer-array-into-excel-worksheet/,

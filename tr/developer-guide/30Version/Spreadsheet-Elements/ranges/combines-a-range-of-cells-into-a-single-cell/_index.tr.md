@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – Hücre Aralığını Birleştir"
 secondtitle: "Belge"
 linktitle: "Birleştir"
 type: docs
-url: /ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+url: /tr/ranges/merge/
+aliases: [  /tr/combines-a-range-of-cells-into-a-single-cell/ ]
 keywords: "Aspose.Cells, hücre birleştir, Excel API, REST, bulut SDK"
 description: "Aspose.Cells Cloud REST API ile bir hücre aralığını tek bir hücrede birleştirin. C#, Java, Python ve diğerleri için istek formatı, parametreler ve SDK örnekleri öğrenin."
 weight: 20

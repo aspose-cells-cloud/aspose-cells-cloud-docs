@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man konverterar lokalt kalkylbladsområde till en PDF-fil: Steg-för-steg-guide"
 linktype: "Konvertera område till PDF"
 type: docs
-url: /convert-range-to-pdf/
+url: /sv/convert-range-to-pdf/
 keywords: "Aspose.Cells Cloud, konvertera Excel-område till PDF, Excel till PDF, molnkonvertering"
 description: "Konvertera ett specifikt område från en lokal Excel-fil till PDF med Aspose.Cells Clouds REST API."
 weight: 100

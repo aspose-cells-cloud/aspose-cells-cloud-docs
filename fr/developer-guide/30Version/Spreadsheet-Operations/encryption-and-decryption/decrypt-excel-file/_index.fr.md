@@ -3,8 +3,8 @@ title: "Décrypter un classeur Excel"
 second_title: "Document"
 linktitle: "Décrypter un fichier Excel"
 type: docs
-url: /excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+url: /fr/excel-file-decrypt/
+aliases: [  /fr/decrypt-excel-workbooks/ , /fr/workbook/decrypt/ ]
 keywords: "Aspose.Cells, décryptage Excel, API REST, SDK cloud"
 description: "Découvrez comment décrypter un classeur Excel à l'aide de l'API REST Aspose.Cells Cloud. Inclut les paramètres requis, un exemple cURL, des exemples de code SDK et des détails sur la gestion des erreurs."
 ArticleTitle: "Comment décrypter un classeur Excel à l'aide de l'API Aspose.Cells Cloud"

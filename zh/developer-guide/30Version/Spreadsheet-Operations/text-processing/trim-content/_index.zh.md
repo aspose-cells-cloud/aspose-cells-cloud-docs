@@ -3,7 +3,7 @@ title: "Aspose.Cells Trim Content API — 移除 Excel 中的空格与换行符"
 second_title: "文档"
 linktype: "Trim Content"
 type: docs
-url: /spreadsheet-trim-content/
+url: /zh/spreadsheet-trim-content/
 keywords: "Aspose.Cells, Trim Content API, Excel 数据清理, 移除 Excel 空格, 换行符移除, 电子表格数据清洗"
 description: "使用 Aspose.Cells Cloud 的 PostTrimContent API 自动清理 Excel 单元格中的多余空格、换行符及其他不需要的字符。了解接口地址、请求格式、示例代码及错误处理方式。"
 weight: 100

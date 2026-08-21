@@ -3,7 +3,7 @@ title: "Informations sur le fichier"
 second_title: "Document"
 linktitle: "Informations sur le fichier"
 type: docs
-url: /file-info/
+url: /fr/file-info/
 keywords: "Fichier, Informations, Excel, Aspose.Cells, API Cloud, Métadonnées, Base64"
 description: "Récupérer le nom, la taille et le contenu Base64 d’un fichier Excel à l’aide de l’API Aspose.Cells Cloud. Inclut la syntaxe des requêtes, du code d’exemple et la gestion des erreurs."
 weight: 79

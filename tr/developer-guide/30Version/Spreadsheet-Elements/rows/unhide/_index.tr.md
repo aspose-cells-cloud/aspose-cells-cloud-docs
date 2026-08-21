@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasında Satırları Tekrar Görünür Hale Getirme"
 second_title: "Belge"
 linktitle: "Tekrar Görünür Hale Getir"
 type: docs
-url: /rows/unhide/
-aliases: [/unhide-rows-in-excel-worksheet/]
+url: /tr/rows/unhide/
+aliases: [  /tr/unhide-rows-in-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, satırları tekrar görünür hale getir, REST API, elektronik tablo, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
 description: "Aspose.Cells Cloud REST API'sini kullanarak bir Excel çalışma sayfasında satırları tekrar görünür hale getirin. API, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl ve Swift gibi çeşitli SDK'lar aracılığıyla kullanılabilir."
 weight: 50

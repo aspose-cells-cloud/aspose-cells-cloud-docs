@@ -2,7 +2,7 @@
 title: "Excel ファイルをバッチ処理でロックする"
 second_title: "ドキュメント"
 type: docs
-url: /batch/lock
+url: /ja/batch/lock
 keywords: "バッチロック, Excel, Aspose.Cells, Cloud API, スプレッドシート, ファイル保護"
 description: "Aspose.Cells Cloud API により、複数の Excel ファイルを一括でロックできます。REST エンドポイントまたはサポートされている SDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go など）のいずれかを使用して、ファイルを一括でロックします。"
 weight: 100

@@ -3,7 +3,7 @@ title: "스프레드시트 빈 행 제거"
 ArticleTitle: "스프레드시트 빈 행 제거 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: "/cells/remove/blank-rows"
+url: /ko/cells/remove/blank-rows
 aliases: []
 keywords: "Aspose.Cells, 빈 행 제거, 스프레드시트, API"
 description: "스프레드시트 파일에서 모든 빈 행을 삭제합니다."

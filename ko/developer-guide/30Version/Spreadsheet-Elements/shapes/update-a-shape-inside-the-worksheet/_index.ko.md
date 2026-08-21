@@ -3,8 +3,8 @@ title: "Excel 워크시트에서 도형 업데이트하기"
 second_title: "문서"
 linktitle: "업데이트"
 type: docs
-url: /shapes/update/
-aliases: [/update-a-shape-inside-the-worksheet/]
+url: /ko/shapes/update/
+aliases: [  /ko/update-a-shape-inside-the-worksheet/ ]
 keywords: "Excel 도형 업데이트 API, Aspose.Cells Cloud, Excel 도형 업데이트, REST API, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 도형을 업데이트하는 방법을 알아보세요. HTTPS 엔드포인트, 인증 세부 정보, DTO 스키마, 단계별 사용법, cURL 예제, 여러 언어의 SDK 코드 샘플이 포함됩니다."
 ArticleTitle: "Excel 워크시트에서 도형 업데이트하기 - Aspose.Cells Cloud API"

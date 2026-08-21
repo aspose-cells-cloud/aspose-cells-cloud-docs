@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – 단어 대문자/소문자 변경 (대문자, 소
 ArticleTitle: "엑셀 대문자 변환기 – 대문자, 소문자, 첫글자 대문자, 문장 첫글자 대문자"
 linktype: "단어 대문자 변경"
 type: docs
-url: /change-word-case/
+url: /ko/change-word-case/
 keywords: "단어 대문자 변경 API, Aspose.Cells, 엑셀 대문자 변환, 대문자, 소문자, 첫글자 대문자, 문장 첫글자 대문자, 텍스트 서식"
 description: "Aspose.Cells Cloud API를 사용해 엑셀 파일 내 텍스트의 대문자/소문자를 손쉽게 변환합니다. 대문자(UpperCase), 소문자(LowerCase), 첫글자 대문자(ProperCase), 문장 첫글자 대문자(SentenceCase)를 지원합니다. C#, Java, Python 등 다양한 언어의 코드 예제 제공."
 weight: 100

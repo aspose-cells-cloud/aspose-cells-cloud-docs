@@ -1,8 +1,8 @@
 ---
 title: "Çalışma Kitabından Grafik Alanını Alın"
 type: docs
-url: /charts/area/get/
-aliases: [/get-chart-area-from-a-worksheet/]
+url: /tr/charts/area/get/
+aliases: [  /tr/get-chart-area-from-a-worksheet/ ]
 weight: 60
 keywords:
   - "Aspose.Cells"

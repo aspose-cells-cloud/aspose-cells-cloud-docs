@@ -3,7 +3,7 @@ title: "Så här får du olika innehåll från ett Excel-ark"
 second_title: "Dokument"
 linktype: "Hämta"
 type: docs
-url: /worksheets/get/
+url: /sv/worksheets/get/
 keywords: "Excel, kalkylark, Aspose.Cells Cloud, REST API, extrahering av innehåll, formatkonvertering"
 description: "Lär dig hur du hämtar olika typer av innehåll från ett Excel-ark med Aspose.Cells Clouds REST API. Guiden täcker stödda format och innehåller länkar till relaterade åtgärder."
 weight: 20

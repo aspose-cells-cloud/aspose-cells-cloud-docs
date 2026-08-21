@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Somme, nombre, moyenne, valeur maximale et minimale par couleur dans une feuille de calcul/Excel"
 LinkTitle: "Agrégation des cellules par couleur"
 type: docs
-url: /aggregate-cells-by-color/
+url: /fr/aggregate-cells-by-color/
 keywords: "Aspose, Cells, Excel, API, agrégation, couleur, somme, nombre, moyenne, min, max"
 description: "Agrègez les cellules Excel par couleur de fond ou de police (somme, nombre, moyenne, min, max) à l'aide de l'API Aspose.Cells Cloud. Découvrez le point de terminaison, les paramètres, l'authentification et les exemples de SDK."
 weight: 100

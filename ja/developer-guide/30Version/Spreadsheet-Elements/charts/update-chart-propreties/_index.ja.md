@@ -1,8 +1,8 @@
 ---
 title: "チャートのプロパティを更新する"
 type: docs
-url: /charts/properties/update/
-aliases: [/update-chart-properties/]
+url: /ja/charts/properties/update/
+aliases: [  /ja/update-chart-properties/ ]
 weight: 160
 keywords: "Aspose.Cells, チャート, 更新, Excel, REST API, SDK"
 description: "Aspose.Cells Cloud REST API（v3.0）を使用して、Excelワークブック内のチャートのプロパティ（タイプ、タイトル、凡例など）を更新する方法を学びます。エンドポイント、パラメータ、cURLの使用例、およびC#、Java、PHP、Ruby、Node.js、Perl、Go用のSDKスニペットを含みます。"

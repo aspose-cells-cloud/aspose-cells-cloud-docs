@@ -3,7 +3,7 @@ title: "การแก้ไขการป้องกันด้วยรห
 second_title: "เอกสาร"
 linktype: "แก้ไขรหัสผ่านของไฟล์ Excel"
 type: docs
-url: /workbook/password/modify/
+url: /th/workbook/password/modify/
 aliases:
   - /set-modify-password-of-excel-workbooks/
   - /workbook/modify-password/

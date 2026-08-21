@@ -1,7 +1,7 @@
 ---
 title: "Rich-Text-Formatierung für eine Zelle anwenden"
 type: docs
-url: /apply-rich-text-formatting-to-a-cell/
+url: /de/apply-rich-text-formatting-to-a-cell/
 weight: 40
 keywords: "Aspose.Cells, Excel, Rich-Text, Zellformatierung, REST-API, Aspose.Cells Cloud"
 description: "Erfahren Sie, wie Sie mithilfe der Aspose.Cells Cloud REST-API eine Rich-Text-Formatierung für eine bestimmte Excel-Zelle anwenden. Enthält die Anforderungssyntax, Parameterdetails, ein cURL-Beispiel und SDK-Snippets."

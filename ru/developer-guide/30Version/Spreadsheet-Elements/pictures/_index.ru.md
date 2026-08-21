@@ -3,8 +3,8 @@ title: "Работа с изображениями в Excel"
 second_title: "Документ"
 linktype: "Изображения"
 type: docs
-url: /pictures/
-aliases: [/working-with-pictures/]
+url: /ru/pictures/
+aliases: [  /ru/working-with-pictures/ ]
 keywords: "Excel, изображение, Aspose.Cells Cloud, REST API, обработка изображений, изображения Excel"
 description: "Узнайте, как извлекать, добавлять, обновлять и удалять изображения в рабочих листах Excel с помощью REST API Aspose.Cells Cloud. Включены примеры кода на C#, Java, Python и других языках."
 weight: 100

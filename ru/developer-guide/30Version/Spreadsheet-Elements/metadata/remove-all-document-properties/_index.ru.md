@@ -3,8 +3,8 @@ title: "Удаление всех свойств документа"
 second_title: "Документ"
 linktype: "Очистка"
 type: docs
-url: /document-properties/clear/
-aliases: [/remove-all-document-properties/]
+url: /ru/document-properties/clear/
+aliases: [  /ru/remove-all-document-properties/ ]
 keywords: "Aspose.Cells, удаление свойств документа, очистка свойств Excel, REST API, облачный SDK, электронная таблица, справка по API"
 description: "Пошаговое руководство по удалению всех пользовательских и встроенных свойств из рабочей книги Excel с использованием облачного REST API Aspose.Cells."
 weight: 58

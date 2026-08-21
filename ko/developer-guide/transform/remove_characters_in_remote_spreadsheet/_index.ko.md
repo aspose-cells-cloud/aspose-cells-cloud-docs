@@ -3,7 +3,7 @@ title: "원격 스프레드시트에서 문자 제거"
 ArticleTitle: "원격 스프레드시트에서 문자 제거 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
+url: /ko/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
 aliases: []
 keywords: "Aspose.Cells, 문자 제거, 텍스트 처리"
 description: "원격 스프레드시트의 선택한 범위 내 모든 셀에서 사용자 정의 문자, 미리 정의된 기호 집합 또는 임의의 부분 문자열을 제거하면서 수식, 서식 및 데이터 유효성 검사를 보존합니다."

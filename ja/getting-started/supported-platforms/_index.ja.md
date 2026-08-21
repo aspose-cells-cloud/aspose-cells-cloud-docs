@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud 対応プラットフォーム：Windows、Linux、macOS"
 LinkTitle: "対応プラットフォーム"
 type: docs
-url: /supported-platforms/
+url: /ja/supported-platforms/
 description: "Aspose.Cells Cloud REST API が Windows、Linux、macOS 上でサポートするオペレーティングシステム、SDK、Docker イメージについて確認してください。"
 weight: 50
 keywords: "Aspose.Cells Cloud、REST API、Excel、スプレッドシート、SDK、Docker、Windows、Linux、macOS"

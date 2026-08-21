@@ -3,7 +3,7 @@ title: "إضافة صورة خلفية إلى دفتر عمل"
 second_title: "مستند"
 linktitle: "إضافة"
 type: docs
-url: /add-background-in-excel-file/
+url: /ar/add-background-in-excel-file/
 aliases:
   - /add-background-in-workbook/
   - /workbook/add-background/

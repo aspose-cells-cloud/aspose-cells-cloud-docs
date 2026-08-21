@@ -3,8 +3,8 @@ title: "Excelワークシートからテキスト項目を取得する"
 second_title: "Document"
 linktitle: "ワークシート内のテキスト項目を取得する"
 type: docs
-url: /worksheets/get-text-items/
-aliases: [/get-text-items-from-a-worksheet/]
+url: /ja/worksheets/get-text-items/
+aliases: [  /ja/get-text-items-from-a-worksheet/ ]
 weight: 20
 keywords: "Aspose.Cells, Cloud API, Excel, ワークシート, テキスト項目, REST"
 description: "Aspose.Cells Cloud REST API を使用して、Excelファイル内の特定のワークシートからすべてのテキスト項目を取得します。cURL、SDKコード、認証手順、レスポンススキーマのサンプルを含みます。"

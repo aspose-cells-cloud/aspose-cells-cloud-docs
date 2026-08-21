@@ -3,8 +3,8 @@ title: "명명된 범위를 기반으로 셀 데이터 가져오기"
 second_title: "Document"
 linktitle: "Values"
 type: docs
-url: /ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
+url: /ko/ranges/get/values/
+aliases: [  /ko/get-cells-data-based-on-named-range/ ]
 keywords: "Aspose.Cells, 클라우드, REST API, 엑셀, 명명된 범위, 셀 값, 워크시트"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크시트의 명명된 범위에서 셀 값을 검색합니다. 이 서비스는 다양한 SDK(C#, Java, PHP, Ruby, Node.js, Python, Perl, Go)를 통해 제공되며, 다양한 개발 플랫폼에서 사용할 수 있습니다."
 weight: 20

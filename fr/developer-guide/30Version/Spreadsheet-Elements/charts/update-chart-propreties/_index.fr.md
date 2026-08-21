@@ -1,8 +1,8 @@
 ---
 title: "Mettre à jour les propriétés d’un graphique"
 type: docs
-url: /charts/properties/update/
-aliases: [/update-chart-properties/]
+url: /fr/charts/properties/update/
+aliases: [  /fr/update-chart-properties/ ]
 weight: 160
 keywords: "Aspose.Cells, graphique, mise à jour, Excel, API REST, SDK"
 description: "Découvrez comment mettre à jour les propriétés d’un graphique (type, titre, légende, etc.) dans un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut l’endpoint, les paramètres, un exemple cURL et des extraits de code SDK pour C#, Java, PHP, Ruby, Node.js, Perl et Go."

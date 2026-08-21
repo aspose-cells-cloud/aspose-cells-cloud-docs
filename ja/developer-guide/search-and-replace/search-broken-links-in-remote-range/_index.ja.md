@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "リモート Excel 範囲内の壊れたリンクを検索・修正する – クラウドスプレッドシートリンクチェッカー"
 linktitle: "リモート範囲の壊れたリンクを検索"
 type: docs
-url: /search-broken-links-in-remote-range/
+url: /ja/search-broken-links-in-remote-range/
 keywords: "Aspose, Cells, 壊れたリンク, API, Excel 範囲, 検証, クラウド, スプレッドシート, 外部参照, チェッカー"
 description: "Aspose.Cells Cloud API を使用して、Excel 範囲内の壊れた外部リンク、無効な数式、欠落しているデータソースをスキャンします。安全で高速なクラウドベースの機能です。"
 weight: 100

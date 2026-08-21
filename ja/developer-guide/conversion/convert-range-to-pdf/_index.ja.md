@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 articleTitle: "ローカルスプレッドシートの範囲データを PDF ファイルに変換する方法：ステップ・バイ・ステップ・ガイド"
 linktitle: "範囲を PDF に変換"
 type: docs
-url: /convert-range-to-pdf/
+url: /ja/convert-range-to-pdf/
 keywords: "Aspose.Cells Cloud、Excel の範囲を PDF に変換、Excel to PDF、クラウド変換"
 description: "Aspose.Cells Cloud の REST API を使用して、ローカル Excel スプレッドシートの特定の範囲を PDF に変換します。"
 weight: 100

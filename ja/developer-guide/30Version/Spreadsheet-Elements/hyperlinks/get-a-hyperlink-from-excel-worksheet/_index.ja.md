@@ -1,7 +1,7 @@
 ---
 title: "ワークシートのハイパーリンクを取得する"
 type: docs
-url: /hyperlinks/get/
+url: /ja/hyperlinks/get/
 keywords: "Aspose.Cells Cloud, ワークシートのハイパーリンクを取得する, ExcelハイパーリンクAPI, REST, JWT認証, Excelワークシート, APIエンドポイント"
 description: "Aspose.Cells Cloud API (v3.0) を使用して Excel ワークシートから特定のハイパーリンクを取得します。エンドポイント、パラメータ、cURL の例、認証の詳細、エラーハンドリング、および SDK スニペットを含みます。"
 weight: 10

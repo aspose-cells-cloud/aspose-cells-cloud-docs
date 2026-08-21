@@ -3,7 +3,7 @@ title: "Importer un tableau à deux dimensions de doubles dans une feuille Excel
 second_title: "Document"
 linktitle: "Importer un tableau à deux dimensions de doubles"
 type: docs
-url: /import-a-2D-double-array-into-excel-worksheet/
+url: /fr/import-a-2D-double-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-double-array-into-excel-worksheet/,

@@ -1,7 +1,7 @@
 ---
 title: "Получение MaxDataRow из рабочего листа Excel"
 type: docs
-url: /get-maxdatarow-from-excel-worksheet/
+url: /ru/get-maxdatarow-from-excel-worksheet/
 weight: 50
 keywords: "Excel, Aspose.Cells Cloud, REST API, получение MaxDataRow, рабочий лист"
 description: "Получает индекс последней строки, содержащей данные, в указанном рабочем листе рабочей книги Excel с использованием REST API Aspose.Cells Cloud."

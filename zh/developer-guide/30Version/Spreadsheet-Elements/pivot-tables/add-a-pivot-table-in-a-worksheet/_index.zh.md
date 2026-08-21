@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: 添加
 type: docs
 url: /zh/pivot-tables/add/
-aliases: [/zh/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /zh/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "添加数据透视表, Excel 工作表, Aspose.Cells Cloud, REST API, SDK, Excel 数据透视表"
 description: "使用 Aspose.Cells Cloud REST API 向 Excel 工作表添加数据透视表。支持通过 C#、Java、PHP、Python、Node.js、Android、Swift、Perl、Go 的 SDK 调用。"
 weight: 30

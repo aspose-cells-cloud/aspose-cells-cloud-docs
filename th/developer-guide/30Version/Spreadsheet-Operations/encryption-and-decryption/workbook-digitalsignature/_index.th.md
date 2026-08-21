@@ -4,7 +4,7 @@ ArticleTitle: "เพิ่มลายเซ็นดิจิทัลลง�
 second_title: "เอกสาร"
 linktitle: "ลายเซ็นดิจิทัล"
 type: docs
-url: /excel-digital-signature/
+url: /th/excel-digital-signature/
 aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/

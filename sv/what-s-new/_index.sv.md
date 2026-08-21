@@ -4,8 +4,8 @@ second_title: "Dokument"
 linktitle: "Vad är nytt"
 type: docs
 weight: 9
-url: /new-features/
-aliases: [/what-s-new-in-aspose-cells-cloud/]
+url: /sv/new-features/
+aliases: [  /sv/what-s-new-in-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, nya funktioner, Microsoft Office Excel, OpenOffice Kalkylblad, CSV, PDF, REST API, SDK, kalkylblad, moln"
 description: "Utforska de senaste funktionerna, förbättringarna och buggfixarna i Aspose.Cells Cloud, inklusive uppdateringar för Excel, OpenOffice, CSV och PDF-hantering."
 ArticleTitle: "Vad är nytt i Aspose.Cells Cloud – Senaste funktioner och uppdateringar"

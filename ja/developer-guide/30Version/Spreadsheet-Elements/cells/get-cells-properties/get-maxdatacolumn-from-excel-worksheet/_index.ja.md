@@ -1,7 +1,7 @@
 ---
 title: "Aspose.Cells Cloud API – ExcelワークシートのMaxDataColumnを取得する（v3.0）"
 type: docs
-url: /get-maxdatacolumn-from-excel-worksheet/ja/
+url: /ja/get-maxdatacolumn-from-excel-worksheet/ja/
 weight: 70
 keywords: "Aspose.Cells Cloud, MaxDataColumnの取得, Excelワークシート, REST API, v3.0, SDK"
 description: "Aspose.Cells Cloud REST API（v3.0）を使用して、指定されたワークシート内にデータが存在する最大列インデックスを取得します。リクエストの詳細、サンプル応答、SDKの使用例を含みます。"

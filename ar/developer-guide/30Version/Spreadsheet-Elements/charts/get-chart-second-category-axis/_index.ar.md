@@ -1,7 +1,7 @@
 ---
 title: "الحصول على محور الفئة الثانية في المخطط"
 type: docs
-url: /charts/second-category-axis/get/
+url: /ar/charts/second-category-axis/get/
 weight: 60
 keywords: "الحصول على محور الفئة الثانية في المخطط، واجهة Aspose.Cells Cloud API، محور مخطط Excel، واجهة REST API، محور الفئة الثانية، Aspose.Cells"
 description: "استرجاع محور الفئة الثانية في مخطط موجود في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن تنسيق الطلب، المعلمات، مثال باستخدام cURL، مخطط الاستجابة، رموز الحالة، وملاحظات الاستخدام."

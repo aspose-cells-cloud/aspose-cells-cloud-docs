@@ -1,7 +1,7 @@
 ---
 title: "Effacer le contenu et les styles des cellules d'une feuille Excel"
 type: docs
-url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+url: /fr/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
 keywords:
   - Aspose.Cells

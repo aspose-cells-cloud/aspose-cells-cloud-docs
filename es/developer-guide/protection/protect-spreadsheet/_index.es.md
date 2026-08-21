@@ -4,7 +4,7 @@ second_title: "Guía para Desarrolladores sobre la Protección de Excel"
 ArticleTitle: "Herramienta de Protección de Contraseña de Excel – Configure Contraseñas de Apertura y Modificación – Proteja Sus Hojas de Cálculo"
 linktype: "Proteger Hoja de Cálculo"
 type: docs
-url: /protect-spreadsheet/
+url: /es/protect-spreadsheet/
 keywords: "Aspose.Cells, protección de contraseña de Excel, API, contraseña de apertura, contraseña de modificación, almacenamiento en la nube, seguridad de hojas de cálculo"
 description: "Proteja programáticamente archivos de Excel con Aspose.Cells Cloud. Establezca tanto contraseñas de apertura como de modificación mediante una única llamada a la API. Compatible con .xlsx, .xls y almacenamiento en la nube. Pruébelo gratis."
 weight: 100

@@ -3,8 +3,8 @@ title: "รับค่าการตรวจสอบความถูกต
 second_title: "เอกสาร"
 linktype: "รับ"
 type: docs
-url: /validations/get/
-aliases: [/get-validation-from-a-worksheet/]
+url: /th/validations/get/
+aliases: [  /th/get-validation-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API การตรวจสอบความถูกต้องของแผ่นงาน, รับการตรวจสอบความถูกต้องโดยใช้ดัชนี, Excel REST API, Aspose.Cells SDK"
 description: "ดึงข้อมูลการตรวจสอบความถูกต้องของแผ่นงานโดยใช้ดัชนีแบบ zero‑based จากสมุดงาน Excel โดยใช้ Aspose.Cells Cloud API (เวอร์ชัน 3.0) มีตัวอย่าง cURL แผนผังการตอบกลับ รหัสข้อผิดพลาด และตัวอย่าง SDK สำหรับ C#, Java, Python และอื่นๆ"
 weight: 10

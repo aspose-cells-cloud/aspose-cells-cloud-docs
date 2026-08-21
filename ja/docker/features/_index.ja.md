@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 articleTitle: "Aspose.Cells Cloud Docker のコア機能"
 linktitle: "機能"
 type: docs
-url: /docker-container-features/
+url: /ja/docker-container-features/
 description: "Aspose.Cells Cloud Docker コンテナを使用して、Aspose.Cells Cloud API をローカル環境で実行します。Docker ベースのコンテナ化サービスであり、Aspose のパブリッククラウドを使用せずに、完全なスプレッドシート処理、プライバシー保護、オフライン対応を実現します。"
 weight: 30
 keywords:

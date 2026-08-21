@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Vad är nytt i 2023"
 type: docs
 weight: 30
-url: /new-features/2023/
+url: /sv/new-features/2023/
 keywords: "Excel, Office Cloud, REST API, kalkylark, PDF, CSV, JSON, Markdown, Aspose.Cells Cloud, uppdateringar 2023"
 description: "Upptäck Aspose.Cells Clouds nya funktioner 2023, inklusive regionberoende konverterings-API:er, stöd för diagramaxlar, digitala signaturer och andra förbättringar. Detaljerade utgivningsnoteringar och kodexempel."
 ArticleTitle: "Vad är nytt i Aspose.Cells Cloud 2023 – Funktionstillägg och utgivningsnoteringar"

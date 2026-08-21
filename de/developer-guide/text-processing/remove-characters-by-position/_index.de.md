@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Excel – Positionsbasiertes Zeichenentfernungstool – Text an spezifischen Positionen löschen – Online-Shortcode"
 linktitle: "Zeichen nach Position entfernen"
 type: docs
-url: /remove-characters-by-position/
+url: /de/remove-characters-by-position/
 keywords: "Aspose.Cells Cloud, Zeichen nach Position entfernen, Excel-Textbereinigung, erste N Zeichen entfernen, letzte N Zeichen entfernen, Text vor Marker entfernen, Text nach Marker entfernen, Entfernen zwischen Werten"
 description: "Verwenden Sie die Aspose.Cells Cloud Web-API, um Zeichen aus Excel-Zellen basierend auf ihrer Position zu löschen – entfernen Sie die ersten/letzten N Zeichen oder Text vor/nach bestimmten Markern mit hoher Präzision."
 weight: 100

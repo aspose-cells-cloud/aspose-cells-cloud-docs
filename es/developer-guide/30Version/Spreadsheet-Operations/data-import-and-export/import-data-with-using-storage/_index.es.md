@@ -3,7 +3,7 @@ title: "Importar datos mediante almacenamiento"
 second_title: "Documentos"
 linktype: "import-data-with-using-storage"
 type: docs
-url: /import-data-with-using-storage/
+url: /es/import-data-with-using-storage/
 aliases:
   - /import-data-into-excel-worksheet/
   - /import-data-into-worksheet/

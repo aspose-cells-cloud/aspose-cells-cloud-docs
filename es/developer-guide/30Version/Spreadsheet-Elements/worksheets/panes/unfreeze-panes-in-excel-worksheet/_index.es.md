@@ -3,7 +3,7 @@ title: "Descongelar paneles en una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Descongelar"
 type: docs
-url: /worksheets/panes/unfreeze/
+url: /es/worksheets/panes/unfreeze/
 aliases:
   - /unfreeze-panes-in-excel-worksheet/
   - /worksheets/unfreeze-panes/

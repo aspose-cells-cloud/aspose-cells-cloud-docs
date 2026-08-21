@@ -3,8 +3,8 @@ title: "Bir Excel Çalışma Sayfasındaki Tüm Şekilleri Al"
 second_title: "Belge"
 linktitle: "Tümünü-al"
 type: docs
-url: /shapes/get-all/
-aliases: [/get-all-shapes-inside-the-worksheet/]
+url: /tr/shapes/get-all/
+aliases: [  /tr/get-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, Bulut API, Excel şekilleri, şekilleri al, REST, SDK"
 description: "Aspose.Cells Cloud REST API kullanarak bir çalışma sayfasından tüm şekilleri (grafikler, resimler, metin kutuları) alma. cURL örneği, SDK kod parçacıkları, kimlik doğrulama adımları ve hata yönetimi içerir."
 ArticleTitle: "Bir Excel Çalışma Sayfasındaki Tüm Şekilleri Al"

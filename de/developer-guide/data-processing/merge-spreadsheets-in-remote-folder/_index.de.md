@@ -4,7 +4,7 @@ description: "Kombinieren Sie Tabellenkalkulationsdateien, die im Aspose Cloud-S
 keywords: "Aspose.Cells, Tabellenkalkulationen zusammenführen, Remotepfad, API, PDF, CSV, JSON, XLSX, ODS, XPS"
 weight: 100
 type: docs
-url: /merge-spreadsheets-in-remote-folder/
+url: /de/merge-spreadsheets-in-remote-folder/
 ---
 
 Kombinieren Sie mehrere Tabellenkalkulationsdateien, die sich in einem Remotepfad des Aspose Cloud-Speichers befinden, in einer einzigen Ausgabedatei. Der Vorgang erfolgt vollständig in der Cloud, sodass das Herunterladen der Quelldateien lokal entfällt. Über 30 Ausgabeformate werden unterstützt (PDF, CSV, JSON, XLSX, ODS, XPS, …).

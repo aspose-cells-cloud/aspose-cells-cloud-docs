@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Excel-Duplikat-Substring-Entferner – Redundanten Text in Zellen bereinigen"
 linktitle: "Redundante Substrings entfernen"
 type: docs
-url: /remove-duplicate-substrings/
+url: /de/remove-duplicate-substrings/
 keywords: "Aspose.Cells, redundante Substrings, Excel-API, Textbereinigung, Cloud"
 description: "Entfernen Sie redundante Substrings aus Excel-Zellen über die Aspose.Cells Cloud-API, während Formatierung und Validierung erhalten bleiben."
 weight: 100

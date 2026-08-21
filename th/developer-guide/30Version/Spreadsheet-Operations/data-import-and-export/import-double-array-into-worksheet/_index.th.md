@@ -3,7 +3,7 @@ title: "นำเข้าอาร์เรย์แบบ double ลงใน�
 second_title: "เอกสาร"
 linktitle: "นำเข้าอาร์เรย์แบบ double"
 type: docs
-url: /import-double-array-into-excel-worksheet/
+url: /th/import-double-array-into-excel-worksheet/
 aliases:
   - /import-double-array-into-worksheet/
   - /import-data/double-array/

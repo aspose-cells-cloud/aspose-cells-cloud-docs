@@ -3,7 +3,7 @@ title: "Importa un array bidimensionale di doppi in un foglio di lavoro Excel"
 second_title: "Documento"
 linktype: "Importa un array bidimensionale di doppi"
 type: docs
-url: /import-a-2D-double-array-into-excel-worksheet/
+url: /it/import-a-2D-double-array-into-excel-worksheet/
 aliases:
   [
     "/import-2dimension-double-array-into-excel-worksheet/",

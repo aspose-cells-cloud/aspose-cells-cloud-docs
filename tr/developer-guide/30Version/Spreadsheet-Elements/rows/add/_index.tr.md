@@ -3,7 +3,7 @@ title: "Excel Çalışma Sayfasına Satır Ekleme"
 second_title: "Belge"
 linktitle: "Ekle"
 type: docs
-url: /rows/add/
+url: /tr/rows/add/
 keywords: "Aspose.Cells, satır ekleme, Excel API'si, REST, C#, Java, Python, Node.js"
 description: "Aspose.Cells Cloud REST API kullanarak tek veya birden fazla satırı bir Excel çalışma sayfasına ekleme adımlı kılavuz ve C#, Java, Python ve Node.js için kod örnekleri."
 weight: 20

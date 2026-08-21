@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "스프레드시트 데이터 처리 – 병합, 분할 및 가져오기"
 linktype: "데이터 처리"
 type: docs
-url: /data-processing/
+url: /ko/data-processing/
 keywords: "Aspose.Cells Cloud, 스프레드시트 데이터 처리, Excel 병합, Excel 분할, CSV 가져오기, JSON 가져오기, API"
 description: "Aspose.Cells Cloud REST API를 사용해 CSV/JSON 데이터를 가져오고, 원격 Excel 워크북을 병합하며, 대규모 스프레드시트를 분할하는 자세한 가이드. 요청/응답 예제 포함."
 weight: 30

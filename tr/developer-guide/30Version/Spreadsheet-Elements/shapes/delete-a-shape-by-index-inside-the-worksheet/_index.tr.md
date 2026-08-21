@@ -3,8 +3,8 @@ title: "Excel çalışma sayfasındaki bir şekli indeksine göre silme"
 second_title: "Belge"
 linktitle: "Sil"
 type: docs
-url: /shapes/delete/
-aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
+url: /tr/shapes/delete/
+aliases: [  /tr/delete-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Şekil silme, Şekil indeksi, Excel çalışma sayfası, REST API, SDK"
 description: "Aspose.Cells Cloud REST API'sini kullanarak bir Excel çalışma sayfasındaki bir şekli indeksine göre silin. API, birden fazla SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) aracılığıyla kullanılabilir ve çeşitli depolama seçeneklerini destekler."
 weight: 50

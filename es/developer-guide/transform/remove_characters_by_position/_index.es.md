@@ -4,7 +4,7 @@ ArticleTitle: "Eliminar Caracteres por Posición – Aspose.Cells Cloud API"
 second_title: "Documento"
 linktitle: "Eliminar Caracteres por Posición"
 type: docs
-url: /cells/content/remove/characters-by-position
+url: /es/cells/content/remove/characters-by-position
 aliases: []
 keywords: "Aspose.Cells, Eliminar Caracteres, API"
 description: "Elimina caracteres de celdas por posición en una hoja de cálculo."

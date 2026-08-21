@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Sök text i lokala Excel-kalkylblad – Hitta specifik data"
 linktitle: "Sök i kalkylbladsinnehåll"
 type: docs
-url: /search-spreadsheet-content/
+url: /sv/search-spreadsheet-content/
 keywords: "Aspose.Cells, Excel-söknings-API, sökning i kalkylbladsinnehåll, moln-baserat kalkylblads-API, textuppslag"
 description: "Använd Aspose.Cells Cloud API för att söka efter text, nummer eller formler i lokala Excel-filer. Stöder skiftlägesokänsliga frågor, arbetsbladsnivåns sökomfattning och säker autentisering."
 weight: 100

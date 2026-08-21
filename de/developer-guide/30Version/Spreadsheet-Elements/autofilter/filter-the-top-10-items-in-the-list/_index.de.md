@@ -3,7 +3,7 @@ title: "Top 10-Filter in einem Excel-Arbeitsblatt anwenden (Aspose.Cells Cloud
 ArticleTitle: "Top 10-Filter in einem Excel-Arbeitsblatt anwenden – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktype: "docs"
-url: /autofilter/add-top-10-filter/
+url: /de/autofilter/add-top-10-filter/
 aliases:
   [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
 keywords: "Aspose.Cells, AutoFilter, Top 10-Filter, Excel-API"

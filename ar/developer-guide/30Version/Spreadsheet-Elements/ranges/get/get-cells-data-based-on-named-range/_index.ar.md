@@ -3,8 +3,8 @@ title: "الحصول على بيانات الخلايا بناءً على الن
 second_title: "Document"
 linktitle: "Values"
 type: docs
-url: /ranges/get/values/
-aliases: [/get-cells-data-based-on-named-range/]
+url: /ar/ranges/get/values/
+aliases: [  /ar/get-cells-data-based-on-named-range/ ]
 keywords: "Aspose.Cells, Cloud, REST API, Excel, named range, cell values, worksheet"
 description: "استرجاع قيم الخلايا من نطاق مسمّى في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. تتوافر هذه الخدمة عبر عدة SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go)، وتعمل على نطاق واسع من منصات التطوير."
 weight: 20

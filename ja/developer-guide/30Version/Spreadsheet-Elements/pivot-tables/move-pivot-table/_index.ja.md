@@ -3,8 +3,8 @@ title: "Excel ファイル内のピボットテーブルを移動する"
 second_title: "Document"
 linktitle: 移動
 type: docs
-url: /pivot-tables/move/
-aliases: [/move-pivot-table/]
+url: /ja/pivot-tables/move/
+aliases: [  /ja/move-pivot-table/ ]
 keywords: "Aspose.Cells Cloud, ピボットテーブルの移動, Excel, REST API, SDK, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift"
 description: "Aspose.Cells Cloud REST API を使用して、Excel ブック内でピボットテーブルを移動する方法を学びます。Android、C#、Go、Java、Node.js、Perl、PHP、Python、Ruby、Swift 向けの SDK が利用可能です。"
 weight: 120

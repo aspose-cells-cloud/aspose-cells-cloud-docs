@@ -4,7 +4,7 @@ description: "Combiner des fichiers de feuilles de calcul stockés dans le stock
 keywords: "Aspose.Cells, fusionner des feuilles de calcul, dossier distant, API, PDF, CSV, JSON, XLSX, ODS, XPS"
 weight: 100
 type: docs
-url: /merge-spreadsheets-in-remote-folder/
+url: /fr/merge-spreadsheets-in-remote-folder/
 ---
 
 Fusionner plusieurs fichiers de feuilles de calcul situés dans un dossier distant du stockage Aspose Cloud en un seul fichier de sortie. L’opération s’exécute entièrement dans le cloud, éliminant ainsi le besoin de télécharger localement les fichiers sources. Plus de 30 formats de sortie sont pris en charge (PDF, CSV, JSON, XLSX, ODS, XPS, …).

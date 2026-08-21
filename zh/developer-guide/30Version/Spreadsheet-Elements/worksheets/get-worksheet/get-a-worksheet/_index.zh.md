@@ -2,7 +2,7 @@
 title: "使用 Aspose.Cells Cloud API 导出工作表——支持格式、cURL 和 SDK 示例"
 second_title: "文档"
 linktype: "docs"
-url: /worksheets/get-worksheet/
+url: /zh/worksheets/get-worksheet/
 keywords: "Aspose.Cells Cloud 获取工作表、工作表导出、Excel API、REST、CSV、PDF、PNG、JPEG、GIF、BMP、TIFF、EMF、XPS、OTS、XLS、XLSX、XLSB、XLSM、ODS、FODS、Numbers、云 API"
 description: "了解如何使用 Aspose.Cells Cloud REST API 从 Excel 文件中导出单个工作表。内容包括端点、参数、修正后的 cURL 示例、身份验证详情、错误处理，以及 C#、Java、Python 等多种语言的 SDK 代码片段。"
 weight: 10

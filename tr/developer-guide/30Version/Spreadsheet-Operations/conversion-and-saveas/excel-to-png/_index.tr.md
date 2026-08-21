@@ -3,7 +3,7 @@ title: "Excel'den PNG'ye"
 second_title: "Belge"
 linktitle: "Excel'den PNG'ye"
 type: docs
-url: convert-excel-file-to-png-file/
+url: /trconvert-excel-file-to-png-file/
 keywords: "Excel'den PNG'ye, Aspose.Cells Cloud, REST API, elektronik tablo dönüşümü, PNG formatı"
 description: "Aspose.Cells Cloud REST API ile Excel elektronik tablolarını PNG görüntülerine dönüştürün. Birden fazla SDK'yı destekler ve çeşitli programlama dilleri için detaylı örnekler sunar."
 weight: 90

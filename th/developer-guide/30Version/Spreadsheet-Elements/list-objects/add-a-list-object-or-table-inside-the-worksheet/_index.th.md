@@ -3,8 +3,8 @@ title: "เพิ่มวัตถุรายการ (ตาราง) ล�
 second_title: "เอกสาร"
 linktitle: "เพิ่ม"
 type: docs
-url: /list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+url: /th/list-objects/add/
+aliases: [  /th/add-a-list-object-or-table-inside-the-worksheet/ , /th/tables/add/ ]
 keywords: "Aspose.Cells Cloud, Excel API, วัตถุรายการ, ตาราง, REST API, แผ่นงาน"
 description: "เรียนรู้วิธีการเพิ่มวัตถุรายการ (ตาราง Excel) ลงในแผ่นงานโดยใช้ Aspose.Cells Cloud REST API ซึ่งรวมถึง endpoint, พารามิเตอร์, ขั้นตอนการยืนยันตัวตน, ตัวอย่าง cURL และตัวอย่างโค้ด SDK"
 weight: 10

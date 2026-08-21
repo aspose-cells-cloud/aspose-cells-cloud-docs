@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – Объединение диапазона я�
 second title: "Документ"
 linktitle: "Объединение"
 type: docs
-url: /ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+url: /ru/ranges/merge/
+aliases: [  /ru/combines-a-range-of-cells-into-a-single-cell/ ]
 keywords: "Aspose.Cells, объединение ячеек, Excel API, REST, облачный SDK"
 description: "Объединить диапазон ячеек в одну ячейку с помощью Aspose.Cells Cloud REST API. Описан формат запроса, параметры и примеры SDK для C#, Java, Python и других языков."
 weight: 20

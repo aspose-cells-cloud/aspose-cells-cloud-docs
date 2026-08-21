@@ -2,7 +2,7 @@
 title: "Massupplåsning"
 second_title: "Dokument"
 type: docs
-url: /batch/unlock
+url: /sv/batch/unlock
 keywords: "massupplåsning, Aspose.Cells Cloud, Excel, REST API, kalkylark, molntjänst"
 description: "Lås upp flera Excel-filer i batch med Aspose.Cells Cloud REST API. Stöder SDK:er för C#, Java, Python och andra språk."
 weight: 100

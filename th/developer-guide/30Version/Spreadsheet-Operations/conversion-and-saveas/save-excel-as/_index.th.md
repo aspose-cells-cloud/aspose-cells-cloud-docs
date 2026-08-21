@@ -3,7 +3,7 @@ title: "บันทึกสมุดงาน Excel – API ของ Aspose.C
 second_title: "เอกสาร"
 linktitle: "บันทึกเป็น"
 type: docs
-url: /save-an-excel-file-as-other-formats-files/
+url: /th/save-an-excel-file-as-other-formats-files/
 aliases:
   - /convert-excel-workbook-to-different-file-formats/
   - /saveas-other-formats/

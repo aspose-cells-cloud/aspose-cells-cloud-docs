@@ -3,8 +3,8 @@ title: "Excel 워크북에서 텍스트 찾기"
 second_title: "문서"
 linktitle: "워크북에서 찾기"
 type: docs
-url: /workbook/find-text/
-aliases: [/find-text-in-a-workbook/]
+url: /ko/workbook/find-text/
+aliases: [  /ko/find-text-in-a-workbook/ ]
 weight: 30
 keywords: "Aspose.Cells, 텍스트 찾기, Excel API, 워크북 검색"
 description: "Aspose.Cells Cloud API를 사용하여 Excel 워크북(XLS‑X, ODS)에서 **텍스트를 검색**하는 방법을 알아보세요. cURL 예제, SDK 스니펫, 응답 스키마가 포함되어 있습니다. 지금 시작하세요."

@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Excel 위치 기반 문자 제거기 – 특정 위치의 텍스트 삭제 – 온라인 단축코드"
 linktitle: "위치 기반 문자 제거"
 type: docs
-url: /remove-characters-by-position/
+url: /ko/remove-characters-by-position/
 keywords: "Aspose.Cells Cloud, 위치 기반 문자 제거, Excel 텍스트 정리, 앞에서부터 N개 문자 삭제, 뒤에서부터 N개 문자 삭제, 특정 마커 앞 텍스트 제거, 특정 마커 뒤 텍스트 제거, 두 값 사이 텍스트 제거"
 description: "Aspose.Cells Cloud 웹 API를 사용하여 Excel 셀에서 위치 기반으로 문자를 삭제하세요. 상위/하위 N개의 문자 또는 특정 마커 앞/뒤의 텍스트를 정확하게 삭제하세요."
 weight: 100

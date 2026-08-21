@@ -2,8 +2,8 @@
 title: "المهام"
 second_title: "مستند"
 type: docs
-url: /tasks/
-aliases: [/working-with-tasks/]
+url: /ar/tasks/
+aliases: [  /ar/working-with-tasks/ ]
 keywords: "Aspose Cells، واجهة برمجة تطبيقات السحابة، مهام Excel، مهمة التحويل، مهمة ImportData، SmartMarker، SaveResult، واجهة برمجة تطبيقات REST، أتمتة جداول الحساب"
 description: "استكشف مجموعة المهام الكاملة لواجهة برمجة تطبيقات Aspose.Cells Cloud: التحويل، ImportData، SaveResult، SmartMarker، وأكثر من ذلك. تعلّم كيفية الاستخدام، والمعامِلات، وأمثلة الكود لأتمتة Excel."
 weight: 100

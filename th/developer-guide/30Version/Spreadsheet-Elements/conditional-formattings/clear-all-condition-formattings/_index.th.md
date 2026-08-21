@@ -1,8 +1,8 @@
 ---
 title: "ล้างรูปแบบที่มีเงื่อนไข"
 type: docs
-url: /conditional-formattings/clear/
-aliases: [/clear-all-condition-formattings/]
+url: /th/conditional-formattings/clear/
+aliases: [  /th/clear-all-condition-formattings/ ]
 keywords: "Aspose.Cells Cloud, REST API, ล้างรูปแบบที่มีเงื่อนไข, Excel, ชีตงาน, JWT, v3.2"
 description: "ลบกฎรูปแบบที่มีเงื่อนไขทั้งหมดออกจากชีตงานโดยใช้ Aspose.Cells Cloud API (v3.2) เรียนรู้ไวยากรณ์คำขอ พารามิเตอร์ที่จำเป็น ขั้นตอนการยืนยันตัวตน และดูตัวอย่างโค้ดใน SDK หลายภาษา"
 weight: 80

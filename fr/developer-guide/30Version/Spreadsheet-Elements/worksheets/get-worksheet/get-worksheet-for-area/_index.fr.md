@@ -3,8 +3,8 @@ title: "Exporter une zone de feuille de calcul en PNG, PDF, CSV – Aspose.Cells
 second_title: "Document"
 linktitle: "Zone"
 type: docs
-url: /worksheets/area-to-different-formats/
-aliases: [/get-worksheet-for-area/]
+url: /fr/worksheets/area-to-different-formats/
+aliases: [  /fr/get-worksheet-for-area/ ]
 keywords: "Aspose.Cells, exporter une zone de feuille de calcul, PNG, PDF, CSV, conversion Excel, API REST, SDK"
 description: "Découvrez comment exporter une plage de cellules spécifique d'une feuille de calcul Excel vers PNG, PDF, CSV et plus de 20 autres formats à l'aide de l'API REST Aspose.Cells Cloud ou des SDK (C#, Java, Python, …)."
 weight: 230

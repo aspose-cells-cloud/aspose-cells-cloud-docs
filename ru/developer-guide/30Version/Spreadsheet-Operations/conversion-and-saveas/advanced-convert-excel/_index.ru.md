@@ -3,7 +3,7 @@ title: "Расширенное преобразование файла Excel"
 second_title: "Документ"
 linktype: "Расширенное преобразование"
 type: docs
-url: /advanced-convert-excel/
+url: /ru/advanced-convert-excel/
 keywords: "Aspose.Cells, преобразование Excel, облачный API, SDK"
 description: "Облачный REST API Aspose.Cells предоставляет мощные функции для преобразования рабочих книг Excel в широкий спектр форматов, настройки параметров страницы, параметров сохранения и параметров печати. SDK доступны для Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby и Swift, обеспечивая бесшовную интеграцию на различных платформах."
 weight: 50

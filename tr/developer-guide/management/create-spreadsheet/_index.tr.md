@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Yeni Excel Elektronik Tabloları Nasıl Oluşturulur – Boş veya Şablon‑Tabanlı Dosyalar Oluşturun"
 linktitle: "Elektronik Tablo Oluşturun"
 type: docs
-url: /create-spreadsheet/
+url: /tr/create-spreadsheet/
 keywords: "Aspose.Cells, elektronik tablo API’si, Excel oluştur, bulut, XLSX, ODS, CSV, şablon, SDK, otomasyon"
 description: "Aspose.Cells Cloud API’sini (v5.0) kullanarak boş veya şablon‑tabanlı Excel çalışma kitapları nasıl oluşturacağınızı öğrenin. Uç nokta, parametreler, hata kodları, kimlik doğrulama adımları ve SDK örneklerini içerir."
 weight: 100

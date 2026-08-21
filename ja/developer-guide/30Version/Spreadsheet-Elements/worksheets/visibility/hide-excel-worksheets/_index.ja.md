@@ -3,8 +3,8 @@ title: "Excelワークシートを非表示にする"
 second_title: "ドキュメント"
 linktitle: "非表示"
 type: docs
-url: /worksheets/hide/
-aliases: [/hide-excel-worksheets/]
+url: /ja/worksheets/hide/
+aliases: [  /ja/hide-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Excel, ワークシートを非表示にする, REST API, スプレッドシート"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークブック内のワークシートを非表示にする手順ガイド。リクエスト詳細、cURL の使用例、複数の言語向け SDK のコードスニペットを含みます。"
 weight: 50

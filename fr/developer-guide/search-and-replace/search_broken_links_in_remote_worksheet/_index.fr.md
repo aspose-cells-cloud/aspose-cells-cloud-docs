@@ -3,7 +3,7 @@ title: "Rechercher les liens rompus dans une feuille de calcul distante"
 ArticleTitle: "Rechercher les liens rompus dans une feuille de calcul distante – API Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/search/broken-links
+url: /fr/cells/{name}/worksheets/{worksheet}/search/broken-links
 aliases: []
 keywords: "Aspose.Cells, Rechercher les liens rompus, Feuille de calcul distante"
 description: "Recherche les liens rompus dans la feuille de calcul d’un classeur distant."

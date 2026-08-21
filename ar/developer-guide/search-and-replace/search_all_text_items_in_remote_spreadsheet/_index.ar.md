@@ -4,7 +4,7 @@ ArticleTitle: "SearchAllTextItemsInRemoteSpreadsheet – واجهة برمجة �
 second_title: "وثيقة"
 linktype: "SearchAllTextItemsInRemoteSpreadsheet"
 type: docs
-url: /cells/{name}/search/content/all-textitems
+url: /ar/cells/{name}/search/content/all-textitems
 aliases: []
 keywords: "بحث، عناصر نصية، Aspose.Cells"
 description: "البحث عن جميع العناصر النصية في جدول بيانات بعيد باستخدام Aspose.Cells Cloud."

@@ -4,7 +4,7 @@ ArticleTitle: "Tüm Metin Öğelerini Elektronik Tabloda ara – Aspose.Cells Cl
 second_title: "Belge"
 linktitle: "Tüm Metin Öğelerini Elektronik Tabloda ara"
 type: docs
-url: /cells/search/content/all-textitems
+url: /tr/cells/search/content/all-textitems
 aliases: []
 keywords: "Aspose.Cells, Arama, Metin Öğeleri, API"
 description: "Aspose.Cells Cloud API kullanarak elektronik tablo dosyası içindeki tüm metin öğelerini arayın."

@@ -3,8 +3,8 @@ title: "ล็อกไฟล์ Excel"
 second_title: "เอกสาร"
 linktype: "ล็อกไฟล์ Excel"
 type: docs
-url: /lock-excel-files/
-aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+url: /th/lock-excel-files/
+aliases: [  /th/lock/without-storage/ , /th/lock/ , /th/lock/without-using-storage/ ]
 keywords: "ล็อก, Excel, API, Aspose.Cells, Cloud, REST, Workbook, Spreadsheet, SDK"
 description: "เรียนรู้วิธีการล็อกสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 3.0) ซึ่งประกอบด้วย HTTPS endpoint, การยืนยันตัวตน, คำสั่ง cURL, โครงร่างการตอบกลับ และตัวอย่างโค้ด SDK สำหรับ C#, Java, Python และอื่นๆ อีกมากมาย"
 ArticleTitle: "ล็อกไฟล์ Excel – เอกสารประกอบ API ของ Aspose.Cells Cloud"

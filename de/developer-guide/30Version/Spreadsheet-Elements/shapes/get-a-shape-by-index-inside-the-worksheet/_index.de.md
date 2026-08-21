@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktype: "Abrufen"
 type: docs
 url: /de/shapes/get/
-aliases: [/de/get-a-shape-by-index-inside-the-worksheet/]
+aliases: [  /de/get-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel-Form-API, Form nach Index abrufen, Arbeitsblattform, REST-API, Formabruf, Aspose.Cells SDK"
 description: "Rufen Sie eine Form nach ihrem Index aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST-API ab. Enthält Anforderungssyntax, Parameter, Antwortdetails und SDK-Beispiele."
 weight: 20

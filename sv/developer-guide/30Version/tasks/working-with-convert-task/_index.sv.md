@@ -3,7 +3,7 @@ title: "Arbeta med konverteringsuppgift"
 second_title: "Dokument"
 type: docs
 url: /sv/tasks/convert/
-aliases: [/sv/working-with-convert-task/]
+aliases: [  /sv/working-with-convert-task/ ]
 keywords: "Aspose.Cells Cloud, REST API, Konverteringsuppgift, Excel, Kalkylark, PDF, CSV, JSON, Markdown"
 description: "Cells Cloud API för Excel tillhandahåller uppgiftsstöd för att konvertera Excel-filer till olika format."
 weight: 30

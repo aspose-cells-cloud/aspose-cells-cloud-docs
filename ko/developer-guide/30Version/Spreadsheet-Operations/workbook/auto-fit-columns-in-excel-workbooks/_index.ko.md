@@ -3,7 +3,7 @@ title: "Excel 파일의 열 자동 맞춤"
 second_title: "문서"
 linktitle: "열"
 type: docs
-url: /autofit-columns-on-an-excel-file/
+url: /ko/autofit-columns-on-an-excel-file/
 aliases:
   [
     /auto-fit-columns-in-excel-workbooks,

@@ -3,8 +3,8 @@ title: "حذف صورة من ورقة عمل Excel – واجهة Aspose.Cells C
 second_title: "مستند"
 linktitle: "حذف"
 type: docs
-url: /pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+url: /ar/pictures/delete/
+aliases: [  /ar/delete-a-specific-picture-from-excel-worksheet/ ]
 keywords: "Aspose.Cells، واجهة Cloud API، حذف صورة، ورقة عمل Excel، REST"
 description: "احذف صورة من ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. تعرّف على نقطة نهاية DELETE، والمعلمات المطلوبة، والمصادقة، وأكواد الأخطاء، ونماذج الكود."
 weight: 50

@@ -5,7 +5,7 @@ ArticleTitle: "Molnfilhantering för Excel – En effektiv och säker lösning f
 linktitle: "Filer och lagring"
 type: docs
 url: /sv/files-and-storage/
-aliases: [/sv/working-with-files-and-storage-using-aspose-cells-cloud/]
+aliases: [  /sv/working-with-files-and-storage-using-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, fillagrings-API, ladda upp Excel-fil, ladda ned Excel-fil, kopiera fil, flytta fil, ta bort fil, mapphantering, REST API, cURL-exempel"
 description: "Omfattande guide för hantering av Excel-filer och mappar i Aspose.Cells Cloud-lagring. Innehåller uppladdning, nedladdning, kopiering, flyttning, borttagning och mappåtgärder med cURL-exempel, nödvändiga parametrar och autentiseringsnoteringar."
 weight: 100

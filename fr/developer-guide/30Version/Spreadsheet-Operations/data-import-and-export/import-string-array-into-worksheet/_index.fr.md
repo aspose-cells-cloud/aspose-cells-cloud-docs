@@ -3,7 +3,7 @@ title: "Importer un tableau de chaînes dans une feuille de calcul Excel – Asp
 second_title: "Document"
 linktitle: "Importer un tableau de chaînes"
 type: docs
-url: /import-string-array-into-excel-worksheet/
+url: /fr/import-string-array-into-excel-worksheet/
 aliases:
   - /import-string-array-into-worksheet/
   - /import-data/string-array/

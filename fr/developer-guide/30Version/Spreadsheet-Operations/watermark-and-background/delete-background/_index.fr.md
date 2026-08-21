@@ -3,7 +3,7 @@ title: "Supprimer l'arrière-plan d'un classeur Excel"
 second_title: "Document"
 linktitle: "Supprimer"
 type: docs
-url: /delete-background-in-excel-file/
+url: /fr/delete-background-in-excel-file/
 aliases:
   - /delete-background-in-workbook/
   - /workbook/delete-background/

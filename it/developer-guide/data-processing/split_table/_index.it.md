@@ -3,7 +3,7 @@ title: "Split Table"
 ArticleTitle: "Split Table – Aspose.Cells Cloud API"
 second_title: "Documento"
 linktype: "docs"
-url: /cells/split/table
+url: /it/cells/split/table
 aliases: []
 keywords: "Aspose.Cells, Split Table, API"
 description: "API per suddividere una tabella in un foglio di calcolo in base ai valori di una colonna."

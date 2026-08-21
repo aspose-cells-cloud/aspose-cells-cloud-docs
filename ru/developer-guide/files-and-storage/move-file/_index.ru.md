@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Эффективное облачное решение для управления файлами Excel – Интерфейс для быстрого перемещения файлов в облаке"
 linktitle: "Переместить файл"
 type: docs
-url: /move-file/
+url: /ru/move-file/
 keywords: "Aspose.Cells, Move File API, облачное хранилище, Excel API, управление файлами"
 description: "Как перемещать файлы между папками в облачном хранилище Aspose.Cells Cloud с помощью API Move File версии 4.0 — эндпоинт, параметры, примеры и ссылки на SDK."
 weight: 100

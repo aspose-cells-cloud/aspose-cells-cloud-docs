@@ -4,7 +4,7 @@ ArticleTitle: "Excel ListObject 작업하기"
 second_title: "문서"
 linktitle: "ListObjects"
 type: docs
-url: /list-objects/
+url: /ko/list-objects/
 aliases:
   - /working-with-list-objects/
   - /working-with-list-object-or-table/

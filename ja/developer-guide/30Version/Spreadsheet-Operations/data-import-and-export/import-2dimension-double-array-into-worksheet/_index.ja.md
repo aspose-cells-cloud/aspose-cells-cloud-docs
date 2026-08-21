@@ -3,7 +3,7 @@ title: "2次元double配列をExcelワークシートにインポートする"
 second_title: "Document"
 linktitle: "2次元double配列のインポート"
 type: docs
-url: /import-a-2D-double-array-into-excel-worksheet/
+url: /ja/import-a-2D-double-array-into-excel-worksheet/
 aliases:
   [
     "/import-2dimension-double-array-into-excel-worksheet/",

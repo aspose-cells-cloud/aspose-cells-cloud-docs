@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Så här översätter du hela ett kalkylark med Aspose.Cells Cloud AI-översättnings-API"
 linktitle: "Översätt kalkylark"
 type: docs
-url: /translate-spreadsheet/
+url: /sv/translate-spreadsheet/
 keywords: "Aspose.Cells Cloud, API för översättning av kalkylark, AI-översättning, översättning av kalkylark, targetLanguage, översättning över flera kalkylblad, molnbaserad bearbetning av kalkylark, översättning i Aspose.Cells Cloud"
 description: "Översätt hela en Excel-arbetsbok med Aspose.Cells Cloud AI. Bevara formler, diagram och formatering medan texten översätts till valfritt stödjt språk. Lär dig om slutpunkten, parametrar, SDK-exempel, begränsningar och felhantering."
 weight: 100

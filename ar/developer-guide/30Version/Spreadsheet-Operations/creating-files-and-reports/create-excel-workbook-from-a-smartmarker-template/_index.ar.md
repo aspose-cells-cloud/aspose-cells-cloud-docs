@@ -3,7 +3,7 @@ title: "بناء تقارير إكسل باستخدام قوالب العلام�
 second_title: "وثيقة"
 linktype: "العلامات الذكية"
 type: docs
-url: /build-report-with-smart-marker/
+url: /ar/build-report-with-smart-marker/
 aliases:
   - /create-excel-workbook-from-a-smartmarker-template/
   - /workbook/smartmarker/

@@ -3,7 +3,7 @@ title: "Bir Excel Çalışma Sayfasında Satırları Silme İşlemleri"
 second_title: "Belge"
 linktitle: "Sil"
 type: docs
-url: /rows/delete/
+url: /tr/rows/delete/
 keywords: "Aspose.Cells, satır sil, Excel API, REST, bulut, elektronik tablo, Excel, SDK"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında tek veya birden fazla satırı nasıl sileceğinizi öğrenin. Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby ve Swift için kod örnekleri içerir."
 weight: 20

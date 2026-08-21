@@ -3,8 +3,8 @@ title: "تصدير الصورة"
 second_title: "مستند"
 linktitle: "صورة"
 type: docs
-url: /export-excel-picture-to-different-formats/
-aliases: [/export/excel-picture-to-different-formats/]
+url: /ar/export-excel-picture-to-different-formats/
+aliases: [  /ar/export/excel-picture-to-different-formats/ ]
 keywords: "تصدير الصورة، Aspose.Cells Cloud، REST API، Excel، تنسيقات الصور، PNG، GIF، JPEG، BMP، SVG، TIFF، EMF، WMF"
 description: "تصدير صور Excel إلى تنسيقات صور مختلفة باستخدام Aspose.Cells Cloud REST API. تدعم الخدمة مكتبات SDK بلغات برمجة متعددة، بما في ذلك C#، Java، PHP، Ruby، Node.js، Python، Perl، Go، و Swift."
 weight: 20

@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "รวมไฟล์ Excel หลายไฟล์เข้าเป็นไฟล์เดียว – รวมสมุดงานเป็นกลุ่มไปยังรูปแบบมากกว่า 30 รูปแบบ"
 linktype: "รวมสมุดงาน"
 type: docs
-url: /merge-spreadsheets/
+url: /th/merge-spreadsheets/
 keywords: "Aspose.Cells, รวมสมุดงาน, Excel API, สมุดงานบนคลาวด์, รวมเป็นกลุ่ม, การแปลง PDF, รวม CSV, รวม ODS, การอ้างอิง API, SDK"
 description: "รวมไฟล์ Excel, CSV หรือ ODS หลายไฟล์ที่อยู่ในเครื่องเข้าเป็นสมุดงานเดียว และแปลงผลลัพธ์ไปยังรูปแบบมากกว่า 30 รูปแบบ (เช่น PDF, HTML) โดยใช้ Aspose.Cells Cloud API พร้อมข้อมูลจุดปลาย (endpoint), พารามิเตอร์, คู่มือการยืนยันตัวตน และตัวอย่าง SDK"
 weight: 100

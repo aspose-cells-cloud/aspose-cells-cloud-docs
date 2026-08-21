@@ -3,8 +3,8 @@ title: "Excelワークシートにカスタム基準を追加する"
 second_title: "Document"
 linktitle: "カスタムフィルターを追加"
 type: docs
-url: /autofilter/add-custom-filter/
-aliases: [/filter-a-list-with-a-custom-criteria/,/autofilter/add-a-custom-filter/]
+url: /ja/autofilter/add-custom-filter/
+aliases: [  /ja/filter-a-list-with-a-custom-criteria/ , /ja/autofilter/add-a-custom-filter/ ]
 keywords: "Excel, カスタムフィルター, Aspose.Cells Cloud, REST API, 自動フィルター, ワークシート, カスタム基準"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートにカスタムフィルターを追加する方法を学びます。リクエストの詳細、cURL の例、および複数のプログラミング言語向けの SDK コードスニペットを含みます。"
 weight: 65

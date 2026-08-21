@@ -3,7 +3,7 @@ title: "Importa array di stringhe in un foglio di lavoro Excel – Aspose.Cells 
 second_title: "Document"
 linktype: "Importa array di stringhe"
 type: docs
-url: /import-string-array-into-excel-worksheet/
+url: /it/import-string-array-into-excel-worksheet/
 aliases:
   - /import-string-array-into-worksheet/
   - /import-data/string-array/

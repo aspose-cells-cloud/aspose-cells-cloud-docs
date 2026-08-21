@@ -3,7 +3,7 @@ title: "API de Descarga de Archivos de Aspose.Cells Cloud – Interfaz para Desc
 second_title: "Documentación"
 linktitle: "API de Descarga de Archivos"
 type: docs
-url: /download-file/
+url: /es/download-file/
 keywords: "Aspose.Cells, API de Descarga de Archivos, almacenamiento en la nube de Excel, API REST, descarga de archivos, PDF, CSV, SDK"
 description: "Descargue archivos de Excel, PDF, CSV y otros formatos desde el almacenamiento en la nube de Aspose.Cells Cloud mediante la API de Descarga de Archivos (v4.0). Incluye punto de conexión, parámetros, detalles de autenticación y ejemplos de código."
 weight: 100

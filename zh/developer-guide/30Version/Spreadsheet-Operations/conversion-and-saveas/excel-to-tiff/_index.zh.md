@@ -4,7 +4,7 @@ second_title: "文档"
 linketitle: "Excel 转 TIFF"
 type: docs
 url: /zh/convert-excel-file-to-tiff-file/
-aliases: [/zh/convert-excel-file-to-tiff-in-cloud/, /zh/convert/excel-to-tiff/]
+aliases: [  /zh/convert-excel-file-to-tiff-in-cloud/ , /zh/convert/excel-to-tiff/ ]
 keywords: "Aspose.Cells Cloud、Excel 转 TIFF 转换、REST API、cURL、SDK、.NET、Java、Python、图像导出"
 description: "了解如何使用 Aspose.Cells Cloud API 将 Excel 工作簿转换为高质量 TIFF 图像。包含详细的 cURL 命令、SDK 示例（C#、Java、Python 等）、身份验证步骤及错误处理说明。"
 weight: 90

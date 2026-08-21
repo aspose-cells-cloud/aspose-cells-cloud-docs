@@ -3,8 +3,8 @@ title: "Excel 워크시트 작업"
 second_title: "문서"
 linktype: "워크시트"
 type: docs
-url: /worksheets/
-aliases: [/working-with-worksheets/]
+url: /ko/worksheets/
+aliases: [  /ko/working-with-worksheets/ ]
 keywords: "Excel 워크시트, Aspose.Cells Cloud, REST API, 스프레드시트, 워크북, 데이터 조작, Excel 자동화"
 description: "Aspose.Cells Cloud REST API를 사용하면 Excel 워크북의 워크시트를 작업할 수 있습니다. SDK는 Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift를 포함한 여러 프로그래밍 언어를 지원합니다."
 weight: 100

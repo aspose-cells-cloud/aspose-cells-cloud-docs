@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีการแปลงแผ่นงานเป็น HTML โดยใช้ Aspose.Cells Cloud API"
 linktype: "แปลงแผ่นงานเป็น HTML"
 type: docs
-url: /convert-worksheet-to-html/
+url: /th/convert-worksheet-to-html/
 description: "เรียนรู้วิธีแปลงแผ่นงาน Excel เป็น HTML โดยใช้ Aspose.Cells Cloud API – ไม่ต้องอัปโหลดล่วงหน้า รองรับฟอนต์ที่กำหนดเอง รองรับภูมิภาค และการจัดการข้อผิดพลาด"
 keywords: "Aspose.Cells, Excel ไปยัง HTML, การแปลงแผ่นงาน, API บนคลาวด์"
 weight: 100

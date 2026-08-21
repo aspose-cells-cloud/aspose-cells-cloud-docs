@@ -3,8 +3,8 @@ title: "Arbeta med Excel-områden"
 second_title: "Document"
 linktitle: "Range"
 type: docs
-url: /ranges/
-aliases: [/working-with-ranges/]
+url: /sv/ranges/
+aliases: [  /sv/working-with-ranges/ ]
 keywords: "Aspose.Cells, Excel-område, REST API, SDK, .NET, Java, Python, sammanfoga celler, kopiera område, ange områdets värde"
 description: "Lär dig hur du hämtar, ändrar, formaterar, sammanfogar, flyttar och kopierar Excel-områden med Aspose.Cells Cloud REST API. Inkluderar SDK-kodexempel för .NET, Java, Python och mer."
 weight: 100

@@ -4,7 +4,7 @@ ArticleTitle: "Bild in Excel-Arbeitsblatt importieren – Aspose.Cells Cloud API
 second_title: "Dokument"
 linktitle: "Bild importieren"
 type: docs
-url: /import-picture-into-excel-worksheet/
+url: /de/import-picture-into-excel-worksheet/
 aliases:
   - /import-picture-into-worksheet/
   - /import-data/picture/

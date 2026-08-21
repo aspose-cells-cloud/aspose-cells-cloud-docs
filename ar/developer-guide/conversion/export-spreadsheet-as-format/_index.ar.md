@@ -4,7 +4,7 @@ second_title: "الوثيقة"
 ArticleTitle: "كيف تُصَدِّر ورقة عمل جدول بيانات عن بُعد إلى تنسيقات أخرى: دليل خطوة بخطوة"
 linktype: "تصدير جدول البيانات كتنسيق"
 type: docs
-url: /export-spreadsheet-as-format/
+url: /ar/export-spreadsheet-as-format/
 keywords: "Aspose.Cells، تحويل جداول البيانات، واجهة برمجة التطبيقات، تصدير، PDF، CSV، JSON، XLSX"
 description: "حوّل كتب عمل إكسل المخزَّنة في خدمة Aspose Cloud إلى تنسيقات PDF أو XLSX أو CSV أو JSON أو HTML عبر نقطة نهاية REST واحدة. تعلّم بنية الطلب، المعاملات، وراجع أمثلة SDK بلغات C# وJava وPython وما إلى ذلك."
 weight: 100

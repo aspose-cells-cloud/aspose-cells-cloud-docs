@@ -4,7 +4,7 @@ second_title: "문서"
 linktype: "계산"
 type: docs
 url: /ko/worksheets/calculate-formula/
-aliases: [/ko/calculate-formula-in-a-worksheet/]
+aliases: [  /ko/calculate-formula-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, 수식 계산, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크시트에서 수식을 계산합니다. 다양한 SDK(C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift)를 지원하며, 즉시 활용 가능한 예제를 제공합니다."
 weight: 20

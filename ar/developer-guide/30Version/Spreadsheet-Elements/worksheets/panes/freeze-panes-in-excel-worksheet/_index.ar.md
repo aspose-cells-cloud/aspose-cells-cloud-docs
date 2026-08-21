@@ -3,8 +3,8 @@ title: "تجميد الأقسام في ورقة عمل Excel"
 second_title: "مستند"
 linktitle: "تجميد"
 type: docs
-url: /worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+url: /ar/worksheets/panes/freeze/
+aliases: [  /ar/freeze-panes-in-excel-worksheet/ , /ar/worksheets/freeze-panes/ ]
 keywords: "Aspose.Cells Cloud, تجميد الأقسام, Excel, REST API, ورقة العمل"
 description: "تعرّف على كيفية تجميد الصفوف والأعمدة في ورقة عمل Excel باستخدام REST API الخاص بـ Aspose.Cells Cloud. يتضمّن بنية نقطة نهاية التوصيل، والمعلمات المطلوبة، ومثال على استخدام cURL، وإرشادات المصادقة، وتفاصيل استجابة الأخطاء، وأكواد أمثلة باستخدام SDKs بلغات برمجة متعددة."
 weight: 190

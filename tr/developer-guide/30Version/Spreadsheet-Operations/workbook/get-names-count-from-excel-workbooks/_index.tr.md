@@ -3,7 +3,7 @@ title: "Bir Excel Çalışma Kitabından İsimleri Alın"
 second_title: "Belge"
 linktitle: "İsimler"
 type: docs
-url: /get-names-from-an-excel-file/
+url: /tr/get-names-from-an-excel-file/
 aliases:
   [
     /get-names-count-from-excel-workbooks/,

@@ -1,8 +1,8 @@
 ---
 title: "Mettre à jour la légende d’un graphique dans une feuille de calcul"
 type: docs
-url: /charts/legend/update/
-aliases: [/update-chart-legend-in-a-worksheet/]
+url: /fr/charts/legend/update/
+aliases: [  /fr/update-chart-legend-in-a-worksheet/ ]
 weight: 160
 keywords: "Aspose.Cells, Cloud, Excel, Graphique, Légende, API REST, Mise à jour, Feuille de calcul, cURL, SDK"
 description: "Comment mettre à jour la légende d’un graphique dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud, avec des exemples de requêtes cURL et des extraits de code SDK pour plusieurs langages de programmation."

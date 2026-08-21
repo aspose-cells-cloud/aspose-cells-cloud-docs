@@ -1,8 +1,8 @@
 ---
 title: "Hämta villkorsformatering"
 type: docs
-url: /conditional-formattings/get/
-aliases: [/get-conditional-formatting/]
+url: /sv/conditional-formattings/get/
+aliases: [  /sv/get-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, REST API, Villkorsformatering, Excel, Kalkylark"
 description: "Hämta villkorsformateringsregler från ett kalkylblad med Aspose.Cells Cloud REST API."
 weight: 10

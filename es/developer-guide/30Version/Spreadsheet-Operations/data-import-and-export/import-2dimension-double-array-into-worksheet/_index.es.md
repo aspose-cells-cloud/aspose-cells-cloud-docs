@@ -3,7 +3,7 @@ title: "Importar una matriz doble bidimensional en una hoja de cálculo de Excel
 second_title: "Documento"
 linktitle: "Importar una matriz doble bidimensional"
 type: docs
-url: /import-a-2d-double-array-into-excel-worksheet/
+url: /es/import-a-2d-double-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-double-array-into-excel-worksheet/,

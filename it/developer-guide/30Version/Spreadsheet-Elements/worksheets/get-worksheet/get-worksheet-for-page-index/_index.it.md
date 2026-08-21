@@ -4,8 +4,8 @@ ArticleTitle: "Esporta una pagina di foglio di lavoro – Riferimento API di Asp
 second_title: "Documento"
 linktitle: "Pagina"
 type: docs
-url: /worksheets/page-to-different-formats/
-aliases: [/get-worksheet-for-page-index/]
+url: /it/worksheets/page-to-different-formats/
+aliases: [  /it/get-worksheet-for-page-index/ ]
 keywords: "Aspose.Cells Cloud, esportazione pagina foglio di lavoro, PDF, PNG, CSV, API REST, autenticazione JWT, formati file"
 description: "Scopri come esportare una pagina specifica di un foglio di lavoro in PDF, PNG, CSV e altri formati utilizzando l'API REST di Aspose.Cells Cloud. Include richiesta cURL, guida ai parametri e esempi di SDK per diversi linguaggi."
 weight: 240

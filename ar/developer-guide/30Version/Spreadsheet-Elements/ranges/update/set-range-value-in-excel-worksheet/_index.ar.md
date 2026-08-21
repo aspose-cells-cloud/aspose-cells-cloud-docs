@@ -3,8 +3,8 @@ title: "تحديد قيمة النطاق في ورقة عمل Excel"
 second_title: "وثيقة"
 linktype: "تحديد القيم"
 type: docs
-url: /ranges/update/values/
-aliases: [/set-range-value-in-excel-worksheet/]
+url: /ar/ranges/update/values/
+aliases: [  /ar/set-range-value-in-excel-worksheet/ ]
 keywords: "Aspose.Cells، واجهة برمجة تطبيقات Excel، تحديد قيمة النطاق، واجهة برمجة التطبيقات عبر الويب، حزمة تطوير البرامج السحابية، تحديث ورقة العمل"
 description: "تعرّف على كيفية تحديد قيمة خلية أو نطاق في ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API (النسخة 3.0). يشمل ذلك عنوان الواجهة، المُعلمات، مثال باستخدام cURL، أمثلة لرموز حزم التطوير، وإدارة الأخطاء."
 weight: 72

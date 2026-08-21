@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "2026 Yılında Yenilikler"
 type: docs
 weight: 9
-url: /new-features/2026/
+url: /tr/new-features/2026/
 keywords: "Aspose.Cells Cloud, 2026 yeni özellikleri, elektronik tablo API'si, Excel, CSV, PDF, bulut elektronik tablo"
 description: "2026 yılında yayınlanan Aspose.Cells Cloud yeni özelliklerini, elektronik tablolar, Excel, CSV, PDF ve daha fazlası için eklenen yeni API'leri, geliştirilmeleri ve hata düzeltmelerini keşfedin."
 ArticleTitle: "Aspose.Cells Cloud'de 2026 Yılında Yenilikler – En Son Özellikler ve Geliştirmeler"

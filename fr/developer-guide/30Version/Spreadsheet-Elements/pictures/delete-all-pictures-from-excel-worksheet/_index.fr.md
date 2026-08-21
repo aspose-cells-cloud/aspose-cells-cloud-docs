@@ -3,8 +3,8 @@ title: "Supprimer toutes les images d'une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Effacer"
 type: docs
-url: /pictures/clear/
-aliases: [/delete-all-pictures-from-excel-worksheet/]
+url: /fr/pictures/clear/
+aliases: [  /fr/delete-all-pictures-from-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, supprimer toutes les images, feuille de calcul, API REST, effacer les images"
 description: "Découvrez comment supprimer toutes les images d'une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud, avec des exemples utilisant cURL et les SDK."
 weight: 60

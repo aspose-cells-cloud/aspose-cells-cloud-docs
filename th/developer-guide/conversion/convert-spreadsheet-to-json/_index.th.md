@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีการแปลงไฟล์สเปรดชีตในเครื่องเป็น JSON โดยใช้ Aspose.Cells Cloud API"
 linktype: "แปลงสเปรดชีตเป็น JSON"
 type: docs
-url: /convert-spreadsheet-to-json/
+url: /th/convert-spreadsheet-to-json/
 keywords: "Aspose Cells Cloud, แปลงสเปรดชีตเป็น JSON, Excel to JSON API, Aspose.Cells Cloud API, REST API, การแปลงสเปรดชีต"
 description: "เรียนรู้วิธีการแปลงไฟล์ Excel ในเครื่องเป็น JSON โดยใช้ Aspose.Cells Cloud API รวมถึง endpoint, พารามิเตอร์, ตัวอย่างโค้ด และการจัดการข้อผิดพลาด เพื่อการบูรณาการที่ราบรื่น"
 weight: 100

@@ -3,8 +3,8 @@ title: "Agregar marca de agua a archivos de Excel"
 second_title: "Documento"
 linktitle: "Agregar marca de agua a archivos de Excel"
 type: docs
-url: /add-watermark-into-excel-files/
-aliases: [/watermark/]
+url: /es/add-watermark-into-excel-files/
+aliases: [  /es/watermark/ ]
 keywords: "agregar marca de agua a Excel, Aspose.Cells Cloud, API REST, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Aprenda cómo agregar una marca de agua de texto a libros de Excel utilizando la API REST de Aspose.Cells Cloud (v3.0). Incluye un ejemplo con cURL, parámetros requeridos y detalles de respuesta."
 weight: 39

@@ -1,7 +1,7 @@
 ---
 title: "获取图表第二值轴"
 type: docs
-url: /charts/second-value-axis/get/
+url: /zh/charts/second-value-axis/get/
 weight: 60
 keywords: Aspose.Cells, 图表第二值轴, Excel, REST API, 云服务, API, Excel 图表轴
 description: 使用 Aspose.Cells Cloud REST API 获取 Excel 工作表中指定图表的第二值轴。

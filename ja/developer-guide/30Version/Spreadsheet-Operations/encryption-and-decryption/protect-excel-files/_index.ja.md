@@ -3,7 +3,7 @@ title: "Excel ファイルの保護"
 second_title: "Document"
 linktitle: "Excel ファイルの暗号化"
 type: docs
-url: /protect-excel-files/
+url: /ja/protect-excel-files/
 aliases:
   [
     "/protect/without-storage/",

@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีการส่งออกชีตงานสเปรดชีตแบบรีโมทไปยังรูปแบบอื่น: คู่มือแบบทีละขั้นตอน"
 linktype: "ส่งออกชีตงาน"
 type: docs
-url: /export-worksheet-as-format/
+url: /th/export-worksheet-as-format/
 keywords: "Aspose Cells, ส่งออกชีตงาน, API คลาวด์, PDF, PNG, CSV, การแปลง Excel"
 description: "แปลงชีตงานที่จัดเก็บไว้ใน Aspose.Cells Cloud เป็นรูปแบบ PDF, PNG, SVG, CSV หรือรูปแบบอื่นๆ ผ่านคำขอ GET แบบเดียว พร้อมตัวอย่างโค้ดสำหรับ C#, Java, Python และอื่นๆ"
 weight: 100

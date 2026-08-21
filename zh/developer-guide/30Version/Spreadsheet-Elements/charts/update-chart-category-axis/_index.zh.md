@@ -1,7 +1,7 @@
 ---
 title: "更新图表分类轴"
 type: docs
-url: /charts/category-axis/update/
+url: /zh/charts/category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, 图表, 分类轴, REST API, Excel, 云 SDK"
 description: "使用 Aspose.Cells Cloud REST API 更新 Excel 工作表中图表的分类轴。"

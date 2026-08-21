@@ -1,8 +1,8 @@
 ---
 title: "Çalışma Kitabında Grafik Açıklamasını Göster"
 type: docs
-url: /charts/legend/show/
-aliases: [/show-chart-legend-in-a-worksheet/]
+url: /tr/charts/legend/show/
+aliases: [  /tr/show-chart-legend-in-a-worksheet/ ]
 weight: 100
 keywords: "Aspose.Cells Cloud, grafik açıklama API'si, Excel grafik açıklaması, REST PUT grafik açıklaması, Aspose API v3.0"
 description: "Aspose.Cells Cloud REST API'si (v3.0) kullanarak bir Excel çalışma kitabında bir çalışma sayfasındaki bir grafikte açıklama kutusunu nasıl göstereceğinizi öğrenin. Uç nokta detayları, parametreler, bir cURL örneği ve SDK kod parçacıkları içerir."

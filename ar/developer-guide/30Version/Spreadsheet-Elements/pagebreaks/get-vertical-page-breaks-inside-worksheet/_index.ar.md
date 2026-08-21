@@ -3,8 +3,8 @@ title: "الحصول على فواصل الصفحات العمودية"
 second_title: "مستند"
 linktitle: "الحصول على فواصل الصفحات العمودية"
 type: docs
-url: /page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
+url: /ar/page-breaks/get-vertical-page-breaks/
+aliases: [  /ar/get-vertical-page-breaks-inside-worksheet/ ]
 keywords: "Aspose.Cells، فواصل الصفحات العمودية، واجهة برمجة تطبيقات إكسل، جدول بيانات سحابي، واجهة برمجة تطبيقات REST"
 description: "استرجاع فواصل الصفحات العمودية من ورقة عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمن عنوان HTTPS، المعاملات المطلوبة، مثال cURL، تفاصيل الاستجابة، معالجة الأخطاء، وأمثلة لحزم تطوير البرمجيات (SDK)."
 weight: 20

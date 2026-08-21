@@ -4,7 +4,7 @@ second_title: "Документация"
 ArticleTitle: "Платформа интеграции многоканальных данных Excel – Aspose.Cells Cloud API автоматического импорта и преобразования данных."
 linktitle: "Импорт данных в электронную таблицу"
 type: docs
-url: /import-data-into-spreadsheet/
+url: /ru/import-data-into-spreadsheet/
 keywords: "Aspose Cells, API импорта данных, CSV в Excel, JSON в Excel, XML в Excel, облачная электронная таблица, REST API"
 description: "Импортируйте данные CSV, JSON или XML в электронные таблицы Excel с помощью Aspose.Cells Cloud REST API. Изучите формат запроса, параметры, примеры кода SDK и обработку ошибок."
 weight: 100

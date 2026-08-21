@@ -3,7 +3,7 @@ title: "Actualizar una validación de hoja de cálculo en una hoja de cálculo d
 second_title: "Documento"
 linktitle: "Actualizar"
 type: docs
-url: /validations/update/
+url: /es/validations/update/
 keywords: "Aspose.Cells Cloud, actualización de validación de Excel, API REST, validación de hoja de cálculo, API de Excel"
 description: "Cómo actualizar una validación de hoja de cálculo en un archivo de Excel utilizando la API REST de Aspose.Cells Cloud, con ejemplos de cURL y fragmentos de código SDK para múltiples lenguajes de programación."
 weight: 10

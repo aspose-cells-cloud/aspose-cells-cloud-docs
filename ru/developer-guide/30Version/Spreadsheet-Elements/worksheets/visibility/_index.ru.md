@@ -3,7 +3,7 @@ title: "Как работать с видимостью на листе Excel"
 second_title: "Документ"
 linktitle: "Видимость"
 type: docs
-url: /worksheets/panes/
+url: /ru/worksheets/panes/
 keywords: "Aspose.Cells Cloud, API скрытия листа, API отображения скрытого листа, видимость листа Excel, REST API для Excel, Aspose.Cells v3.0"
 description: "Узнайте, как программно скрывать или отображать листы Excel с помощью REST API Aspose.Cells Cloud. Включает URL-адреса запросов, примеры на cURL и .NET SDK, обработку ошибок и примечания, специфичные для версии."
 weight: 20

@@ -3,7 +3,7 @@ title: "واجهة Aspose.Cells Cloud Web API – استخراج النص"
 second_title: "Aspose.Cells Cloud –Short‑Code عبر الإنترنت"
 linktitle: "استخراج النص"
 type: docs
-url: /extract-text/
+url: /ar/extract-text/
 keywords: "Aspose.Cells Cloud, استخراج النص, Excel API, استخراج نص الخلايا, REST API"
 description: "استخراج سلاسل فرعية أو أرقام أو أحرف من خلايا ملفات إكسل باستخدام واجهة Aspose.Cells Cloud API. يدعم الاستخراج بناءً على النص السابق/اللاحق، أو بناءً على الموقع، أو كتابة الناتج مباشرةً في نطاق جديد."
 weight: 100

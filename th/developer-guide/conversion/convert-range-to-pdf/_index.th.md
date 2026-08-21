@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีการแปลงข้อมูลช่วงในสมุดงานในเครื่องเป็นไฟล์ PDF: คู่มือแบบทีละขั้นตอน"
 linktype: "แปลงช่วงเป็น PDF"
 type: docs
-url: /convert-range-to-pdf/
+url: /th/convert-range-to-pdf/
 keywords: "Aspose.Cells Cloud, แปลงช่วงข้อมูลใน Excel เป็น PDF, Excel เป็น PDF, การแปลงผ่านคลาวด์"
 description: "แปลงช่วงข้อมูลเฉพาะจากสมุดงาน Excel ในเครื่องเป็น PDF โดยใช้ REST API ของ Aspose.Cells Cloud"
 weight: 100

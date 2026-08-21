@@ -3,8 +3,8 @@ title: "Excel ファイルの操作：数式の計算、自動調整、オブジ
 second_title: "Document"
 linktitle: "Excel の共通操作"
 type: docs
-url: /workbook/
-aliases: [/working-with-workbook/]
+url: /ja/workbook/
+aliases: [  /ja/working-with-workbook/ ]
 keywords: "Aspose.Cells, Excel API, ワークブック操作, 数式の計算, 自動調整"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークブックを操作する方法を学びましょう。段階的なガイドでは、数式の計算、行・列の自動調整、オブジェクトのクリア、ワークブックのメタデータの取得などをカバーしています。Python、.NET、Java などの SDK が利用可能です。"
 weight: 20

@@ -3,7 +3,7 @@ title: "Hur man arbetar med att ta bort kalkylblad i en Excel-arbetsbok"
 second_title: "Document"
 linktype: "Ta bort"
 typedoc: docs
-url: /worksheets/delete/
+url: /sv/worksheets/delete/
 keywords: "Aspose.Cells, moln, REST API, ta bort kalkylblad, Excel, C#, Java, Python"
 description: "Lär dig hur du tar bort ett eller flera kalkylblad från en Excel-arbetsbok med Aspose.Cells Cloud REST API. Inkluderar exempel i C#, Java och Python, förutsättningar, tips på felhantering och relaterade åtgärder."
 weight: 20

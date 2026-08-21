@@ -3,8 +3,8 @@ title: "Bir Excel çalışma sayfasını gizle"
 second_title: "Belge"
 linktitle: "Gizle"
 type: docs
-url: /worksheets/hide/
-aliases: [/hide-excel-worksheets/]
+url: /tr/worksheets/hide/
+aliases: [  /tr/hide-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Excel, çalışma sayfası gizle, REST API, elektronik tablo"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabında bir çalışma sayfasını gizlemek için adım adım kılavuz, istek detayları, bir cURL örneği ve birden fazla dil için SDK kod parçacıkları içerir."
 weight: 50

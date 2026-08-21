@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man konverterar diagram i kalkylark till bild: Steg-för-steg-guide"
 linktitle: "Konvertera diagram till bild"
 type: docs
-url: /convert-chart-to-image/
+url: /sv/convert-chart-to-image/
 keywords: "konvertera diagram till bild, Aspose.Cells, exportera Excel-diagram, PNG, SVG, JPEG, BMP, TIFF"
 description: "Använd Aspose.Cells Cloud Web API för att konvertera ett Excel-diagram direkt till PNG-, SVG-, TIFF-, JPEG- eller BMP-bilder från en kalkylarksfil."
 weight: 100

@@ -3,7 +3,7 @@ title: "การลบตัวกรองวันที่ – Aspose.Cells 
 second_title: "เอกสาร"
 linktitle: "ลบตัวกรองวันที่"
 type: docs
-url: /autofilter/delete-date-filter/
+url: /th/autofilter/delete-date-filter/
 aliases:
   - /remove-a-date-filter/
   - /autofilter/delete-a-date-filter/

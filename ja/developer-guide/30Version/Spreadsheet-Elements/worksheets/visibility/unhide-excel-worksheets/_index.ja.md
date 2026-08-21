@@ -3,8 +3,8 @@ title: "Excelワークシートを表示状態に戻す"
 second_title: "ドキュメント"
 linktitle: "表示状態に戻す"
 type: docs
-url: /worksheets/unhide/
-aliases: [/unhide-excel-worksheets/]
+url: /ja/worksheets/unhide/
+aliases: [  /ja/unhide-excel-worksheets/ ]
 keywords: "Aspose.Cells, ワークシートの表示状態に戻す, Excel API, クラウドスプレッドシート, REST, ワークシートの表示設定, Excelワークブック"
 description: "Aspose.Cells Cloud REST API を使って Excel ワークブック内のワークシートを表示状態に戻す方法を学びます。リクエストの詳細、cURL の例、複数のプログラミング言語向けの SDK コードスニペットを含みます。"
 weight: 60

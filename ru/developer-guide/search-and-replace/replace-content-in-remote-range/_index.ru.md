@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Массовая замена текста в диапазоне облачных файлов Excel — API поиска и замены"
 linktitle: "Замена содержимого удаленного диапазона"
 type: docs
-url: /replace-content-in-remote-range/
+url: /ru/replace-content-in-remote-range/
 keywords: "замена текста в удаленном диапазоне Excel, Aspose.Cells Cloud API, поиск и замена в Excel, редактирование облачной электронной таблицы, обновление удаленного файла Excel"
 description: "Используйте Aspose.Cells Cloud для поиска и замены текста в заданном диапазоне удаленного файла Excel. Поддерживает аутентификацию, обработку ошибок и SDK для множества языков."
 weight: 100

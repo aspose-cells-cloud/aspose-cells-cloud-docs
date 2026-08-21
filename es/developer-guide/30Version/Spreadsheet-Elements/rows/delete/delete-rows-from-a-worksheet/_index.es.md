@@ -3,7 +3,7 @@ title: "Eliminar varias filas de una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Filas"
 type: docs
-url: /rows/delete/rows/
+url: /es/rows/delete/rows/
 keywords: "Aspose.Cells Cloud, eliminar filas, eliminar varias filas, hoja de cálculo de Excel, API REST, SDK"
 description: "Aprenda cómo eliminar una o más filas de una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. Incluye detalles del endpoint, parámetros, un ejemplo con cURL y ejemplos de código SDK para varios lenguajes."
 weight: 80

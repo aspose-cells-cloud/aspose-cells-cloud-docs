@@ -3,7 +3,7 @@ title: "Tüm Çalışma Sayfası Doğrulamalarını Sil – Aspose.Cells Cloud A
 second_title: "Dokümantasyon"
 linktitle: "Sil"
 type: docs
-url: /validations/clear/
+url: /tr/validations/clear/
 keywords: "Aspose.Cells Cloud, Çalışma sayfası doğrulamalarını sil, Excel, REST API, Elektronik tablo doğrulaması, API"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel dosyasındaki bir çalışma sayfasından tüm veri doğrulama kurallarını kaldırın. Kimlik doğrulama adımlarını, istek detaylarını, cURL örneğini, yanıt şemasını, hata işleme ve SDK snippet'lerini içerir."
 weight: 10

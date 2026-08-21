@@ -2,7 +2,7 @@
 title: "บีบอัดและซ่อมแซมไฟล์ Excel"
 second_title: "เอกสาร"
 type: docs
-url: /compress-and-repair-excel-files/
+url: /th/compress-and-repair-excel-files/
 linktitle: "บีบอัดและซ่อมแซม"
 keywords: "Aspose.Cells, การบีบอัด Excel, การซ่อมแซม Excel, API บนคลาวด์, ลดขนาดไฟล์ Excel, กู้คืนสมุดงานที่เสียหาย, บีบอัดไฟล์ Excel, ซ่อมแซมสมุดงาน Excel"
 description: "เรียนรู้วิธีการบีบอัดสมุดงาน Excel ขนาดใหญ่และซ่อมแซมไฟล์ที่เสียหายโดยใช้ Aspose.Cells Cloud API พร้อมตัวอย่างแบบทีละขั้นตอน ภาษาที่รองรับ และแนวทางปฏิบัติที่ดีที่สุด"

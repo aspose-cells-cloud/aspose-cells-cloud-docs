@@ -3,8 +3,8 @@ title: "Bir Excel Çalışma Sayfasını Taşı – Aspose.Cells Cloud API (v3.0
 second_title: "Belge"
 linktitle: "Taşı"
 type: docs
-url: /worksheets/move/
-aliases: [/move-excel-worksheets/]
+url: /tr/worksheets/move/
+aliases: [  /tr/move-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Çalışma Sayfası Taşı, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
 description: "Aspose.Cells Cloud API’si (v3.0) ile bir Excel çalışma sayfasını yeni bir konuma taşımayı öğrenin. Uç nokta, gerekli parametreler, cURL örneği ve C#, Java, Python ve diğerleri için SDK kodlarını içerir."
 weight: 20

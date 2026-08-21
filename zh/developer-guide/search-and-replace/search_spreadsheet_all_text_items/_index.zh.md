@@ -4,7 +4,7 @@ ArticleTitle: "搜索电子表格中所有文本项 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktype: "搜索电子表格中所有文本项"
 type: docs
-url: /cells/search/content/all-textitems
+url: /zh/cells/search/content/all-textitems
 aliases: []
 keywords: "Aspose.Cells, 搜索, 文本项, API"
 description: "使用 Aspose.Cells Cloud API 搜索电子表格文件中的所有文本项。"

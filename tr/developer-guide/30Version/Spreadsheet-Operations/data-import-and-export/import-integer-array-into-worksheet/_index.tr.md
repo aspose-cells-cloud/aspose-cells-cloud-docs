@@ -2,7 +2,7 @@
 title: "Tamsayı Dizisini Excel Çalışma Sayfasına İçe Aktar"
 linktitle: "Tamsayı dizisini içe aktar"
 type: docs
-url: /import-integer-array-into-excel-worksheet/
+url: /tr/import-integer-array-into-excel-worksheet/
 aliases:
   - /import-integer-array-into-excel-worksheet/
   - /import-integer-array-into-worksheet/

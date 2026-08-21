@@ -1,7 +1,7 @@
 ---
 title: "Grafiğin İkinci Kategori Ekseni Güncelleme"
 type: docs
-url: /charts/second-category-axis/update/
+url: /tr/charts/second-category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Chart, Second Category Axis, REST API, Update Chart, Excel, Cloud API"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki bir grafiğin ikinci kategori eksenini nasıl güncelleyeceğinizi öğrenin."

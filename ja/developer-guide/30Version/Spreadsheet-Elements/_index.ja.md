@@ -2,7 +2,7 @@
 title: "スプレッドシート要素"
 second_title: "Document"
 type: docs
-url: /spreadsheet-elements/
+url: /ja/spreadsheet-elements/
 keywords: "Aspose.Cells, Cloud, Excel API, AutoFilter, Charts, PivotTables, Worksheets"
 description: "Aspose.Cells Cloud REST API の Excel 機能を探索しましょう。AutoFilter、セル、チャート、列、コメント、条件付き書式、ハイパーリンク、リストオブジェクト、メタデータ、OLE オブジェクト、改ページ、画像、ピボットテーブル、範囲、行、図形、検証、ワークシートなどを含みます。"
 weight: 100

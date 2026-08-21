@@ -4,8 +4,8 @@ ArticleTitle: "เพิ่มแถวว่างลงในแผ่นง�
 second_title: "เอกสาร"
 linktitle: "แถว"
 type: docs
-url: /rows/add/row/
-aliases: [/add-an-empty-row-in-a-worksheet/]
+url: /th/rows/add/row/
+aliases: [  /th/add-an-empty-row-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, เพิ่มแถวว่าง, แผ่นงาน, REST API, แทรกแถว, สเปรดชีตบนคลาวด์"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อแทรกแถวว่างลงในแผ่นงาน Excel รองรับ SDK หลายภาษา (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) สำหรับการพัฒนาอย่างรวดเร็ว"
 weight: 20

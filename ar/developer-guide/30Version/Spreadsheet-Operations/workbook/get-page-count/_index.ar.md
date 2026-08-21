@@ -3,8 +3,8 @@ title: "الحصول على عدد الصفحات من ملف إكسل"
 second_title: "مستند"
 linktype: "الصفحات"
 type: docs
-url: /get-page-count-from-an-excel-file/
-aliases: [/workbook/page-count/, /workbook/get/page-count/]
+url: /ar/get-page-count-from-an-excel-file/
+aliases: [  /ar/workbook/page-count/ , /ar/workbook/get/page-count/ ]
 keywords: "Aspose.Cells, واجهة برمجة التطبيقات السحابية، عدد صفحات إكسل، تقسيم الصفحات في المصنف"
 description: "استرجاع العدد الإجمالي للصفحات القابلة للطباعة في مصنف إكسل باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يتضمن تنسيق الطلب، المعلمات المطلوبة، مثال باستخدام cURL، مخطط الاستجابة، معالجة الأخطاء، وأجزاء من أكواد SDK لعدة لغات برمجة."
 weight: 10

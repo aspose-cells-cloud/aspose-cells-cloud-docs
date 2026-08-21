@@ -2,8 +2,8 @@
 title: "Aspose.Cells Cloud API – CellsObjectOperate Görevi ile Çalışma (REST)"
 second_title: "Belge"
 type: docs
-url: /tasks/cells-object-operate/
-aliases: [/working-with-cellsobjectoperate-task/]
+url: /tr/tasks/cells-object-operate/
+aliases: [  /tr/working-with-cellsobjectoperate-task/ ]
 description: "Aspose.Cells Cloud API’de CellsObjectOperate görevini nasıl kullanacağınızı öğrenin; parametre referansları, istek/yanıt örnekleri ve çalışma kitapları, grafikler ve dönüştürme tabloları için en iyi uygulama ipuçları."
 weight: 20
 ArticleTitle: "Aspose.Cells Cloud API – CellsObjectOperate Görevi ile Çalışma (REST)"

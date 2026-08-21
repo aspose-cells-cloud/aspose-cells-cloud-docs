@@ -1,8 +1,8 @@
 ---
 title: "在 Aspose.Cells Cloud API 中使用 SmartMarker 任务"
 type: docs
-url: /tasks/smartmarker/
-aliases: [/working-with-smartmarker-task/]
+url: /zh/tasks/smartmarker/
+aliases: [  /zh/working-with-smartmarker-task/ ]
 keywords: "SmartMarker 任务, Aspose.Cells Cloud, REST API, Excel, 电子表格自动化"
 description: "了解如何使用 Aspose.Cells Cloud API 的 SmartMarker 任务，并提供 cURL 和 SDK 示例，包括请求结构和错误处理。"
 weight: 60

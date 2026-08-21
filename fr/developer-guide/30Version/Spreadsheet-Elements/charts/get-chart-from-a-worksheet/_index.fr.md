@@ -1,8 +1,8 @@
 ---
 title: "Obtenir un graphique à partir d'une feuille de calcul"
 type: docs
-url: /charts/get/
-aliases: [/get-chart-from-a-worksheet/]
+url: /fr/charts/get/
+aliases: [  /fr/get-chart-from-a-worksheet/ ]
 weight: 10
 keywords: "Aspose.Cells Cloud, obtenir un graphique, feuille de calcul, API REST, Excel, API graphique, récupération de graphique, graphique Excel"
 description: "Récupérer les informations d’un graphique, y compris ses métadonnées et le format d’export, à partir d’une feuille de calcul à l’aide de l’API REST Aspose.Cells Cloud."

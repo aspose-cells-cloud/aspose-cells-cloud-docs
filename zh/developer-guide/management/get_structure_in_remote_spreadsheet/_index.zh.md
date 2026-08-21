@@ -3,7 +3,7 @@ title: "GetStructureInRemoteSpreadsheet"
 ArticleTitle: "远程电子表格结构获取 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktype: "docs"
-url: /cells/{name}/structure
+url: /zh/cells/{name}/structure
 aliases: []
 keywords: "Aspose.Cells, 结构获取, 电子表格, 结构"
 description: "检索远程 Excel 工作簿的结构元数据，包括工作表、表格、数据透视表、图表、形状及其他核心信息。"

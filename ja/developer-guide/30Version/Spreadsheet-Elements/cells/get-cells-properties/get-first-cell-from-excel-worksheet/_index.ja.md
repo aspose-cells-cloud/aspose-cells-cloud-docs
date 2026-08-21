@@ -1,7 +1,7 @@
 ---
 title: "Excelワークシートから最初のセル (A1) を取得する"
 type: docs
-url: /get-first-cell-from-excel-worksheet/
+url: /ja/get-first-cell-from-excel-worksheet/
 weight: 20
 keywords: "Aspose.Cells Cloud, Excel, REST API, 最初のセルの取得, ワークシート, A1, API v3"
 description: "Aspose.Cells Cloud REST API v3.0 を使って Excel ワークシートの最初のセル (A1) を取得する方法を学びましょう。cURL リクエスト、JSON 応答、エラー例、C#、Java、PHP、Python などの SDK サンプルを含みます。"

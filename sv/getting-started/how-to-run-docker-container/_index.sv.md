@@ -5,7 +5,7 @@ ArticleTitle: "Hur man kör Aspose.Cells Cloud Docker-container"
 LinkTitle: "Docker-container"
 type: docs
 url: /sv/getting-started/how-to-run-docker-container/
-aliases: [/sv/how-to-run-docker-container/]
+aliases: [  /sv/how-to-run-docker-container/ ]
 description: "Lär dig hur du hämtar, konfigurerar och kör Aspose.Cells Cloud Docker-container på Windows eller Linux. Innehåller Docker‑Compose YAML, licensinställning, portmappning och felsöknings tips."
 weight: 100
 keywords:

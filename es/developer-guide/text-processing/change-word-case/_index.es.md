@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Cambiar la capitalización de palabras (Mayúscul
 ArticleTitle: "Convertidor de mayúsculas y minúsculas para Excel – Mayúsculas, minúsculas, Inicial Mayúscula y Oración"
 linktitle: "Capitalización de palabras"
 type: docs
-url: /change-word-case/
+url: /es/change-word-case/
 keywords: "API para cambiar la capitalización de palabras, Aspose.Cells, conversión de mayúsculas y minúsculas en Excel, mayúsculas, minúsculas, inicial mayúscula, oración, formato de texto"
 description: "Convierta fácilmente la capitalización del texto en archivos de Excel utilizando la API de Aspose.Cells Cloud. Admite Mayúsculas, Minúsculas, Inicial Mayúscula y Oración. Incluye ejemplos de código en C#, Java, Python y más."
 weight: 100

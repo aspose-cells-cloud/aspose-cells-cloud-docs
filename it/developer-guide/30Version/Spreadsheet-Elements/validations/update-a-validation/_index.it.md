@@ -3,7 +3,7 @@ title: "Aggiornare una convalida di un foglio di calcolo Excel"
 second_title: "Documento"
 linktitle: "Aggiornamento"
 type: docs
-url: /validations/update/
+url: /it/validations/update/
 keywords: "Aspose.Cells Cloud, aggiornamento convalida Excel, API REST, convalida foglio di calcolo, API Excel"
 description: "Come aggiornare una convalida di un foglio di calcolo in un file Excel utilizzando l'API REST di Aspose.Cells Cloud, con esempi in cURL e frammenti di codice SDK per diversi linguaggi di programmazione."
 weight: 10

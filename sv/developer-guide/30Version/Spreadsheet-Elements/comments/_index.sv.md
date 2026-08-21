@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Kommentarer"
 type: docs
 url: /sv/comments/
-aliases: [/sv/working-with-comments/]
+aliases: [  /sv/working-with-comments/ ]
 keywords: "Aspose.Cells Cloud, Excel-kommentar-API, kalkylarkskommentarer, REST-API"
 description: "Lär dig hur du lägger till, hämtar, uppdaterar och tar bort Excel-kommentarer med Aspose.Cells Cloud REST API v3.0, inklusive kodexempel, förutsättningar och felhantering."
 weight: 100

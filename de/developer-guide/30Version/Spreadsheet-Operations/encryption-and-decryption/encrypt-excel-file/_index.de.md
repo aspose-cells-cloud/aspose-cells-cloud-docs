@@ -3,8 +3,8 @@ title: "Verschlüsseln einer Excel-Arbeitsmappe mit der Aspose.Cells Cloud API �
 second_title: "Dokument"
 linktitle: "Excel-Datei verschlüsseln"
 type: docs
-url: /excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+url: /de/excel-file-encrypt/
+aliases: [  /de/encrypt-excel-workbooks/ , /de/workbook/encrypt/ ]
 keywords: "Aspose Cells Arbeitsmappe verschlüsseln, Excel-Verschlüsselungs-API, REST API, cURL, .NET, Java, Python, PHP, Ruby, Node.js, Go, Perl"
 description: "Erfahren Sie, wie Sie eine Excel-Arbeitsmappe mit der Aspose.Cells Cloud REST API (v3.0) verschlüsseln. Enthält cURL-Befehl, SDK-Codebeispiele (C#, Java, Python, …), erforderliche Parameter und Fehlerbehandlung."
 weight: 20

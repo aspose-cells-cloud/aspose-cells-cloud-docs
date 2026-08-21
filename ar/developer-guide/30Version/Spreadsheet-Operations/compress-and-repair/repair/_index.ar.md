@@ -3,7 +3,7 @@ title: "إصلاح ملفات إكسل"
 second_title: "مستند"
 type: docs
 linktitle: "إصلاح ملفات إكسل"
-url: /repair-excel-files/
+url: /ar/repair-excel-files/
 keywords: "Aspose Cells, API إصلاح إكسل, ملفات XLSX تالفة, استرداد جداول البيانات, API سحابية"
 description: "استخدم واجهة Aspose.Cells Cloud REST API لإصلاح ملفات إكسل التالفة (XLS، XLSX، XLSM، XLSB، ODS). ارفع ملفًا واحدًا أو عدة ملفات، واختر تنسيق الإخراج، واحصل على الملفات المُصلحة بصيغة Base64. لا حاجة لتثبيت أي شيء."
 weight: 39

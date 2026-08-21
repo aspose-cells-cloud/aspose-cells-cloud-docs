@@ -4,8 +4,8 @@ ArticleTitle: "Acceptera alla ändringar i externt kalkylark – Aspose.Cells Cl
 second_title: "Dokument"
 linktitle: "Acceptera alla ändringar i externt kalkylark"
 type: docs
-url: /cells/accept-all-revisions
-aliases: ["/cells/accept-all-revisions"]
+url: /sv/cells/accept-all-revisions
+aliases: [  /sv/cells/accept-all-revisions ]
 keywords: "Aspose.Cells, AcceptAllRevisions, externt kalkylark"
 description: "Acceptera alla spårade ändringar (revideringar) i ett externt kalkylark och returnera den uppdaterade arbetsboken som fil."
 weight: 1000

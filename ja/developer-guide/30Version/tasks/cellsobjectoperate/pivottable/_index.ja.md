@@ -1,8 +1,8 @@
 ---
 title: "CellsObjectOperate タスクを使用したピボットテーブルの操作"
 type: docs
-url: /tasks/cells-object-operate/pivottable/
-aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
+url: /ja/tasks/cells-object-operate/pivottable/
+aliases: [  /ja/working-with-pivot-table-using-cellsobjectoperate-task/ ]
 keywords: "Aspose Cells ピボットテーブル API、CellsObjectOperate、Excel REST API"
 description: "Aspose.Cells Cloud の CellsObjectOperate タスクを使って Excel でピボットテーブルを生成する方法を学びます。cURL のサンプル、パラメータガイド、SDK 参照を含みます。"
 weight: 10

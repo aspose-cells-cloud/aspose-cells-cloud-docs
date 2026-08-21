@@ -1,7 +1,7 @@
 ---
 title: "รับค่า MaxRow จากเวิร์กชีต Excel"
 type: docs
-url: /get-maxrow-from-excel-worksheet/
+url: /th/get-maxrow-from-excel-worksheet/
 weight: 40
 ArticleTitle: "ดึงหมายเลขแถวสูงสุดในเวิร์กชีต Excel – API ของ Aspose.Cells Cloud"
 keywords: "Aspose.Cells, Excel, MaxRow, REST API, Cloud SDK, สเปรดชีต, เวิร์กชีต, GetMaxRow"

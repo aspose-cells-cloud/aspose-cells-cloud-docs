@@ -3,7 +3,7 @@ title: "Was ist der Unterschied zwischen lokaler Dateiverarbeitung und Cloud-Dat
 second_title: "Dokument"
 ArticleTitle: "Was ist der Unterschied zwischen lokaler Dateiverarbeitung und Cloud-Dateiverarbeitung in Aspose.Cells Cloud?"
 linktype: "docs"
-url: /learn/local-file-processing-vs-cloud-file-processing/
+url: /de/learn/local-file-processing-vs-cloud-file-processing/
 description: "Vergleichen Sie die lokale und Cloud-basierte Dateiverarbeitung in Aspose.Cells Cloud hinsichtlich Speicher, Kosten, Sicherheit und typischer Anwendungsfälle. Ermitteln Sie, welche Herangehensweise am besten zu Ihrem Arbeitsablauf passt."
 keywords: "Aspose.Cells Cloud, lokale Dateiverarbeitung, Cloud-Dateiverarbeitung, Tabellenkalkulationskonvertierung, API"
 weight: 10

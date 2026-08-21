@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Text in lokalen Excel-Tabellenkalkulationen suchen – Spezifische Daten finden"
 linktitle: "Tabellenkalkulationsinhalt durchsuchen"
 type: docs
-url: /search-spreadsheet-content/
+url: /de/search-spreadsheet-content/
 keywords: "Aspose.Cells, Excel-Such-API, Tabellenkalkulationsinhalt durchsuchen, Cloud-Tabellenkalkulations-API, Textsuche"
 description: "Verwenden Sie die Aspose.Cells Cloud API, um Text, Zahlen oder Formeln in lokalen Excel-Dateien zu durchsuchen. Unterstützt groß-/kleinschreibungunabhängige Abfragen, worksheetbezogenen Suchbereich und sichere Authentifizierung."
 weight: 100

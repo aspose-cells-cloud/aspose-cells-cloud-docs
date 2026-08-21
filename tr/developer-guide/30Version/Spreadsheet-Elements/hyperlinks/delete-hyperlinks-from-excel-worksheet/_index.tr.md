@@ -2,7 +2,7 @@
 title: "Bağlantıları Temizle"
 type: docs
 url: /tr/hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+aliases: [  /tr/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, bağlantıları temizle, bağlantıları sil, REST API, çalışma sayfası, SDK"
 description: "Aspose.Cells Cloud REST API’si veya desteklenen SDK’lardan herhangi birini (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl vb.) kullanarak bir Excel çalışma sayfasından tüm bağlantıları nasıl kaldıracağınızı öğrenin."
 weight: 40

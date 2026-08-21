@@ -4,7 +4,7 @@ ArticleTitle: "将范围转换为 PDF – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "ConvertRangeToPdf"
 type: docs
-url: /cells/convert/range/pdf
+url: /zh/cells/convert/range/pdf
 aliases: []
 keywords: "Aspose.Cells, 将范围转换为 PDF, API"
 description: "使用 Aspose.Cells Cloud 将电子表格的指定范围转换为 PDF。"

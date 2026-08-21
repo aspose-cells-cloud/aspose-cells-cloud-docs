@@ -3,7 +3,7 @@ title: "استيراد بيانات CSV إلى ورقة عمل Excel"
 second_title: "Document"
 linktitle: "استيراد بيانات CSV"
 type: docs
-url: /import-CSV-data-into-excel/
+url: /ar/import-CSV-data-into-excel/
 aliases:
   - /import-CSV-data-into-worksheet/
   - /import-data/csv-data/

@@ -3,8 +3,8 @@ title: "Alle nicht leeren Zellen in einem Excel-Arbeitsblatt abgleichen"
 second_title: "Dokument"
 linktitle: "Alle nicht leeren Zellen abgleichen"
 type: docs
-url: /autofilter/match-all-non-blank/
-aliases: [/match-all-non-blank-cells-in-the-list/]
+url: /de/autofilter/match-all-non-blank/
+aliases: [  /de/match-all-non-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells Cloud, nicht leere Zellen abgleichen, AutoFilter, Excel-API"
 description: "Erfahren Sie, wie Sie die Aspose.Cells Cloud REST-API nutzen, um alle nicht leeren Zellen in einer AutoFilter-Liste eines Excel-Arbeitsblatts abzugleichen. Enthält Endpunkt, Parameter, Authentifizierung, Antwort-Schema, Fehlercodes und SDK-Beispiele."
 ArticleTitle: "Alle nicht leeren Zellen in einem Excel-Arbeitsblatt mit der Aspose.Cells Cloud API abgleichen"

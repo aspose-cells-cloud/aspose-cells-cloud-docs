@@ -3,8 +3,8 @@ title: "Lägg till ett filter i ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Lägg till filter"
 type: docs
-url: /autofilter/add-filter/
-aliases: [/add-a-filter-for-a-filter-column/]
+url: /sv/autofilter/add-filter/
+aliases: [  /sv/add-a-filter-for-a-filter-column/ ]
 keywords: "Aspose.Cells, moln, Excel, AutoFilter, lägg till filter, REST API, SDK"
 description: "Lär dig hur du lägger till ett autofilter i en kolumn i ett Excel-ark med Aspose.Cells Cloud REST API. Innehåller cURL-exempel, SDK-exempel och parameterguide."
 weight: 60

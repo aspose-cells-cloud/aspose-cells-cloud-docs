@@ -3,8 +3,8 @@ title: "处理 Excel 区域"
 second_title: "文档"
 linktitle: "区域"
 type: docs
-url: /ranges/
-aliases: [/working-with-ranges/]
+url: /zh/ranges/
+aliases: [  /zh/working-with-ranges/ ]
 keywords: "Aspose.Cells, Excel 区域, REST API, SDK, .NET, Java, Python, 合并单元格, 复制区域, 设置区域值"
 description: "了解如何使用 Aspose.Cells Cloud REST API 获取、修改、设置样式、合并、移动和复制 Excel 区域。包含 .NET、Java、Python 等语言的 SDK 代码示例。"
 weight: 100

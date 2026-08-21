@@ -4,8 +4,8 @@ ArticleTitle: "Establecer fondo en una hoja de cálculo de Excel – Guía de la
 second_title: "Documentos"
 linktitle: "Agregar"
 type: docs
-url: /worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
+url: /es/worksheets/background/add/
+aliases: [  /es/set-background-or-watermark-for-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, hoja de cálculo, fondo, API REST, SDK, agregar imagen"
 description: "Aprenda cómo agregar una imagen de fondo (PNG, JPEG, BMP) a una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye el punto de conexión, los parámetros obligatorios, los pasos de autenticación, un ejemplo con cURL y ejemplos de código del SDK."
 weight: 180

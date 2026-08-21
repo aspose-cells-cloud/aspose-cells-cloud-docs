@@ -3,8 +3,8 @@ title: "Copier le contenu et les formats d'une autre feuille de calcul."
 second_title: "Document"
 linktype: "Copier"
 type: docs
-url: /worksheets/copy/
-aliases: [/copy-excel-worksheet/]
+url: /fr/worksheets/copy/
+aliases: [  /fr/copy-excel-worksheet/ ]
 keywords: "API Aspose Cells pour copier une feuille de calcul, REST API Excel pour copier une feuille, SDK Aspose Cloud pour copier, copie de feuille de calcul dans un classeur"
 description: "Découvrez comment copier une feuille de calcul et ses formats vers une nouvelle feuille à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’URL du point de terminaison, les paramètres, des exemples cURL et des exemples de SDK pour C#, Java, Python, etc."
 weight: 20

@@ -4,7 +4,7 @@ second_title: "文档"
 articleTitle: "查找并修复 Excel 中的断开链接 – 云电子表格链接检查器"
 linktype: "搜索电子表格中的断开链接"
 type: docs
-url: /search-spreadsheet-broken-links/
+url: /zh/search-spreadsheet-broken-links/
 keywords: "Aspose Cells, 断开链接, 电子表格审计, Excel API, 云电子表格, 链接检查器"
 description: "通过 Aspose.Cells Cloud API 检测并修复 Excel 工作簿中的断开链接。扫描指定区域，获取详细的 JSON 结果，并可与任意语言的 SDK 集成。"
 weight: 100

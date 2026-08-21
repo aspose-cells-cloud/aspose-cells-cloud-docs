@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasında Bir Şekli Güncelleme"
 second_title: "Belge"
 linktitle: "Güncelle"
 type: docs
-url: /shapes/update/
-aliases: [/update-a-shape-inside-the-worksheet/]
+url: /tr/shapes/update/
+aliases: [  /tr/update-a-shape-inside-the-worksheet/ ]
 keywords: "Excel API’de şekil güncelleme, Aspose.Cells Cloud, Excel şekil güncelleme, REST API, SDK, C#, Java, Python, Node.js, Go, Ruby, PHP, Perl, Swift"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında bir şekli nasıl güncelleyeceğinizi öğrenin. HTTPS uç noktası, kimlik doğrulama ayrıntıları, DTO şeması, adım adım kullanım, cURL örneği ve birden fazla dil için SDK kod örneklerini içerir."
 ArticleTitle: "Excel Çalışma Sayfasında Bir Şekli Güncelleme - Aspose.Cells Cloud API"

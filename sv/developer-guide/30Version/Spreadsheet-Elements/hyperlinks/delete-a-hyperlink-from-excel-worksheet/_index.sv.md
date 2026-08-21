@@ -1,7 +1,7 @@
 ---
 title: "Ta bort hyperlänk i kalkylblad"
 type: docs
-url: /hyperlinks/delete/
+url: /sv/hyperlinks/delete/
 description: "Ta bort en hyperlänk i kalkylblad med hjälp av index via Aspose.Cells Cloud API. Lär dig vilka parametrar som krävs, hur autentisering fungerar, och se kodexempel för C#, Java, Python och mer."
 keywords: "Aspose.Cells, moln, ta bort hyperlänk, Excel API, REST, hyperlänk i kalkylblad"
 ArticleTitle: "Ta bort hyperlänk i kalkylblad – Aspose.Cells Cloud API-dokumentation"

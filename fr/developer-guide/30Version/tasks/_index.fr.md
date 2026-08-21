@@ -3,7 +3,7 @@ title: "Tâches"
 second_title: "Document"
 type: docs
 url: /fr/tasks/
-aliases: [/fr/working-with-tasks/]
+aliases: [  /fr/working-with-tasks/ ]
 keywords: "Aspose Cells, API Cloud, tâches Excel, tâche de conversion, tâche ImportData, SmartMarker, SaveResult, API REST, automatisation de feuilles de calcul"
 description: "Découvrez l’ensemble complet de l’API Cloud Aspose.Cells Tasks : conversion, ImportData, SaveResult, SmartMarker, et plus encore. Apprenez à utiliser l’API, ses paramètres et ses exemples de code pour l’automatisation Excel."
 weight: 100

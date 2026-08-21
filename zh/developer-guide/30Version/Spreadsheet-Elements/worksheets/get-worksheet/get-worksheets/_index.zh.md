@@ -3,8 +3,8 @@ title: "获取所有工作表"
 second_title: "文档"
 linktitle: "全部"
 type: docs
-url: /worksheets/get-all/
-aliases: [/get-worksheet-count/]
+url: /zh/worksheets/get-all/
+aliases: [  /zh/get-worksheet-count/ ]
 keywords: "Aspose.Cells, 云 API, 获取工作表, Excel, REST, SDK"
 description: "通过 Aspose.Cells Cloud REST API（v3.0）检索 Excel 工作簿中的工作表列表。包含 cURL 示例、SDK 代码片段及响应格式说明。"
 weight: 10

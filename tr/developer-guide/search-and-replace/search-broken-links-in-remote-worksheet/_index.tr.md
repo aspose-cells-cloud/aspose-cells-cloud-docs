@@ -4,7 +4,7 @@ secondtitle: "Belge"
 ArticleTitle: "Uzaktan Excel Çalışma Sayfasında Bozuk Bağlantıları Bulun ve Düzeltin – Bulut Tablo Bağlantı Denetleyicisi"
 linktitle: "Uzaktan Çalışma Sayfasındaki Bozuk Bağlantıları Arayın"
 type: docs
-url: /search-broken-links-in-remote-worksheet/
+url: /tr/search-broken-links-in-remote-worksheet/
 keywords: "Aspose Cells, bozuk bağlantılar, Excel API, bulut tablo, bağlantı doğrulama"
 description: "Bulut depolama alanında depolanan Excel çalışma sayfalarındaki harici bozuk bağlantıları algılayın ve düzeltin. Aspose.Cells Cloud API’sini kullanarak aralıkları tarayın, bağlantı ayrıntılarını alın ve kalite kontrolünü otomatikleştirin."
 weight: 100

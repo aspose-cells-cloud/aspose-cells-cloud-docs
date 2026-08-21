@@ -1,8 +1,8 @@
 ---
 title: "서식 조건 추가"
 type: docs
-url: /conditional-formattings/add-format-condition/
-aliases: [/add-a-format-condition/]
+url: /ko/conditional-formattings/add-format-condition/
+aliases: [  /ko/add-a-format-condition/ ]
 keywords: "Aspose.Cells Cloud, 조건부 서식 API, 서식 조건 추가, Excel REST API, Cells API"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 Excel 워크시트에 서식 조건을 추가하는 방법을 알아보세요. 요청 구문, 매개변수, 안전한 cURL 예제, SDK 스니펫이 포함됩니다."
 ArticleTitle: "서식 조건 추가 – Aspose.Cells Cloud API 문서"

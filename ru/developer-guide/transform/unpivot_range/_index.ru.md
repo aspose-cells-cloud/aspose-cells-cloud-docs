@@ -4,7 +4,7 @@ ArticleTitle: "UnpivotRange – Aspose.Cells Cloud"
 second_title: "Документ"
 linktitle: "UnpivotRange"
 type: docs
-url: /cells/unpivot/range
+url: /ru/cells/unpivot/range
 aliases: []
 keywords: "Aspose.Cells, UnpivotRange, API"
 description: "Меняет местами строки и столбцы в электронной таблице."

@@ -5,7 +5,7 @@ description: "Converti un grafico da un foglio di calcolo Excel archiviato nel c
 ArticleTitle: "Come convertire un foglio di lavoro di un foglio di calcolo locale in un file PDF: Guida passo-passo"
 linktitle: "Converti foglio di lavoro in PDF"
 type: docs
-url: /export-chart-as-format/
+url: /it/export-chart-as-format/
 keywords: "Aspose.Cells Cloud, esporta grafico, API, PDF, PNG, SVG, Excel, REST, conversione cloud"
 weight: 100
 ---

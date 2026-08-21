@@ -3,8 +3,8 @@ title: "العمل مع التصفية التلقائية في إكسل"
 second_title: "وثيقة"
 linktitle: "التصفية التلقائية"
 type: docs
-url: /autofilter/
-aliases: [/working-with-autofilter/]
+url: /ar/autofilter/
+aliases: [  /ar/working-with-autofilter/ ]
 keywords: "التصفية التلقائية، Aspose.Cells Cloud، تصفية إكسل، تصفية باللون، تصفية بالتاريخ، تصفية ديناميكية، تصفية بالأرقام، تصفية بالنص، تصفية بالخلايا الفارغة، تصفية مخصصة"
 description: "تعرّف على كيفية إضافة وتعديل وحذف التصفيات التلقائية في إكسل (باللون، بالتاريخ، الديناميكية، بالأرقام، بالنص، بالخلايا الفارغة) باستخدام واجهات برمجة تطبيقات Aspose.Cells Cloud. أمثلة على أكواد بلغات برمجة متعددة."
 weight: 100

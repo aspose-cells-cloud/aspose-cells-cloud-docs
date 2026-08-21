@@ -3,8 +3,8 @@ title: "엑셀 워크북을 다른 워크북에 병합하기"
 second_title: "문서"
 linktitle: "엑셀 워크북을 다른 워크북에 병합하기"
 type: docs
-url: /merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
+url: /ko/merge-an-excel-file-into-the-excel-file/
+aliases: [  /ko/merge-excel-workbooks/ , /ko/workbook/merge/ ]
 keywords: "엑셀 병합, Aspose.Cells Cloud, 워크북 API, REST API, 스프레드시트 병합, 클라우드 SDK, 인증, mergeWith, cURL 예제"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용해 하나의 엑셀 워크북을 다른 워크북에 병합하는 단계별 가이드. 인증, 필요한 mergeWith 파라미터, cURL 예제 및 SDK 코드 스니펫 포함."
 ArticleTitle: "Aspose.Cells Cloud API를 사용해 엑셀 워크북을 다른 워크북에 병합하기"

@@ -1,8 +1,8 @@
 ---
 title: "Uppdatera diagramlegend i ett kalkylblad"
 type: docs
-url: /charts/legend/update/
-aliases: [/update-chart-legend-in-a-worksheet/]
+url: /sv/charts/legend/update/
+aliases: [  /sv/update-chart-legend-in-a-worksheet/ ]
 weight: 160
 keywords: "Aspose.Cells, moln, Excel, diagram, legend, REST API, uppdatera, kalkylblad, cURL, SDK"
 description: "Hur man uppdaterar en diagramlegend i ett Excel-kalkylblad med Aspose.Cells Cloud REST API, inklusive exempel på cURL-förfrågningar och SDK-kodfragment för flera programmeringsspråk."

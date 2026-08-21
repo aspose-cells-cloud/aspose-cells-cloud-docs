@@ -3,8 +3,8 @@ title: "Excelの列を操作する"
 second_title: "ドキュメント"
 linktitle: "列"
 type: docs
-url: /columns/
-aliases: [/working-with-columns/]
+url: /ja/columns/
+aliases: [  /ja/working-with-columns/ ]
 keywords: "Excel, 列, Aspose.Cells Cloud, API, スプレッドシート, シート, REST API"
 description: "Excelワークシートの列に関するAspose.Cells Cloud API操作の詳細ガイド。取得、追加、コピー、非表示、表示、グループ化、解除、削除をカバーします。"
 weight: 100

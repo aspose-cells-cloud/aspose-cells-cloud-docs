@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Formatos de archivo admitidos por Aspose.Cells Cloud: Excel, PDF, CSV, JSON, Markdown y más"
 linktitle: "Formatos de archivo admitidos"
 type: docs
-url: /supported-file-formats/
+url: /es/supported-file-formats/
 description: "Explore la lista completa de formatos de archivo admitidos por Aspose.Cells Cloud: importe, exporte y convierta Excel, CSV, PDF, JSON, Markdown, ODS y más."
 weight: 40
 keywords: "Aspose.Cells Cloud, formatos de archivo admitidos, Excel, XLSX, CSV, PDF, JSON, Markdown, ODS, formatos de imagen, formatos de hojas de cálculo, conversión de documentos"

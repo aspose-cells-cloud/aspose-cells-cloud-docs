@@ -3,7 +3,7 @@ title: "Excel Çalışma Sayfasında Bir Doğrulamayı Güncelle"
 second_title: "Belge"
 linktitle: "Güncelle"
 type: docs
-url: /validations/update/
+url: /tr/validations/update/
 keywords: "Aspose.Cells Cloud, Excel doğrulama güncelleme, REST API, çalışma sayfası doğrulaması, Excel API"
 description: "Aspose.Cells Cloud REST API kullanılarak bir Excel dosyasındaki çalışma sayfası doğrulamasının nasıl güncelleneceği, cURL örnekleri ve birden fazla programlama dili için SDK kod parçacıklarıyla açıklanmıştır."
 weight: 10

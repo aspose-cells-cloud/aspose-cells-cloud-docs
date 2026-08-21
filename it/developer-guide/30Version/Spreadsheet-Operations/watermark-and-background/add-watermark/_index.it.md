@@ -3,8 +3,8 @@ title: "Aggiungi una filigrana ai file Excel"
 second_title: "Documento"
 linktitle: "Aggiungi una filigrana ai file Excel"
 type: docs
-url: /add-watermark-into-excel-files/
-aliases: [/watermark/]
+url: /it/add-watermark-into-excel-files/
+aliases: [  /it/watermark/ ]
 keywords: "aggiungi filigrana a Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Scopri come aggiungere una filigrana di testo ai fogli di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include un esempio cURL, i parametri obbligatori e i dettagli della risposta."
 weight: 39

@@ -2,7 +2,7 @@
 title: "更新 Excel 工作表中的图表标题"
 type: docs
 url: /zh/charts/title/update/
-aliases: [/zh/update-chart-title-in-excel-worksheet/]
+aliases: [  /zh/update-chart-title-in-excel-worksheet/ ]
 weight: 160
 keywords: Excel, Aspose.Cells, REST API, 图表标题, 更新, 云 SDK
 description: 了解如何使用 Aspose.Cells Cloud REST API、cURL 和 various SDK 更新 Excel 工作表中的图表标题。

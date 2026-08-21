@@ -4,8 +4,8 @@ ArticleTitle: "Excel çalışma sayfasına arka plan ekleme – Aspose.Cells Clo
 second_title: "Belge"
 linktype: "Add"
 type: docs
-url: /worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
+url: /tr/worksheets/background/add/
+aliases: [  /tr/set-background-or-watermark-for-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, çalışma sayfası, arka plan, REST API, SDK, resim ekleme"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasına arka plan resmi (PNG, JPEG, BMP) nasıl ekleyeceğinizi öğrenin.uç nokta, gerekli parametreler, kimlik doğrulama adımları, cURL örneği ve SDK kod örneklerini içerir."
 weight: 180

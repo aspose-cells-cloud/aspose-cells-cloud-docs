@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API로 Excel에서 열 자동 맞춤 – 빠른 가�
 second_title: "문서"
 linktitle: "열"
 type: docs
-url: /worksheets/autofit/column/
-aliases: [/autofit-single-column-of-worksheet/]
+url: /ko/worksheets/autofit/column/
+aliases: [  /ko/autofit-single-column-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 열 자동 맞춤, Excel API, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 열(또는 열 범위)을 자동으로 크기 조정하는 방법을 알아보세요. cURL 및 SDK 예제(C#, Java, Python 등)와 전체 요청/응답 세부 정보 포함."
 weight: 10

@@ -4,7 +4,7 @@ ArticleTitle: "Hämta struktur i fjärrkalkylark – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "GetStructureInRemoteSpreadsheet"
 type: docs
-url: /cells/{name}/structure
+url: /sv/cells/{name}/structure
 aliases: []
 keywords: "Aspose.Cells, GetStructure, kalkylark, struktur"
 description: "Hämta den strukturella metadata för en fjärr-Excel-arbetsbok, inklusive kalkylblad, tabeller, pivottabeller, diagram, former och annan central information."

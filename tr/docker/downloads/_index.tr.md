@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud Docker Görüntüsü İndirme"  
 linktitle: "Görüntü İndirme"  
 type: docs  
-url: /docker/downloads/  
+url: /tr/docker/downloads/
 description: "Windows Server 2016/2019 ve Linux için en son Aspose.Cells Cloud Docker görüntülerini edinin. Konteyneri yerel olarak çalıştırmak için adım adım talimatları, ön koşulları ve güvenlik ipuçlarını izleyin."  
 weight: 30  
 keywords: "Aspose.Cells, Bulut, Docker, konteyner, görüntü, indirme, Windows Server, Linux, REST API"  

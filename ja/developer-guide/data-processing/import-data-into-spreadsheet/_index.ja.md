@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "マルチソースデータ統合 Excel プラットフォーム – Aspose.Cells Cloud 自動化データインポート・変換 API"
 linktitle: "スプレッドシートへのデータインポート"
 type: docs
-url: /import-data-into-spreadsheet/
+url: /ja/import-data-into-spreadsheet/
 keywords: "Aspose Cells, データインポート API, CSV to Excel, JSON to Excel, XML to Excel, クラウドスプレッドシート, REST API"
 description: "Aspose.Cells Cloud REST API を使用して、CSV、JSON、または XML データを Excel スプレッドシートにインポートします。リクエスト形式、パラメータ、サンプル SDK コード、エラー処理について学習します。"
 weight: 100

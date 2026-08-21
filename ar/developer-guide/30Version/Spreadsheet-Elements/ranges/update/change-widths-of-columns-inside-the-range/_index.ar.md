@@ -3,8 +3,8 @@ title: "تغيير عرض الأعمدة داخل نطاق"
 ArticleTitle: "تغيير عرض الأعمدة داخل النطاق – واجهة Aspose.Cells Cloud API"
 second_title: "مستند"
 linktype: "docs"
-url: /ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
+url: /ar/ranges/update/column-width/
+aliases: [  /ar/change-widths-of-columns-inside-the-range/ ]
 keywords: "Aspose.Cells، عرض العمود، واجهة REST API، Excel، SDK، نطاق، سحابة"
 description: "تعلم كيفية تغيير عرض الأعمدة داخل النطاق باستخدام واجهة Aspose.Cells Cloud REST API أو SDKs (C#، Java، Python، إلخ). يتضمن تفاصيل cURL، والاستجابة، وخطوات المصادقة."
 weight: 74

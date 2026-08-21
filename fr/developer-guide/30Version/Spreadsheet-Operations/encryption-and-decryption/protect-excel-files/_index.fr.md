@@ -3,7 +3,7 @@ title: "Protéger des fichiers Excel"
 second_title: "Document"
 linktitle: "Chiffrer des classeurs Excel"
 type: docs
-url: /protect-excel-files/
+url: /fr/protect-excel-files/
 aliases:
   [
     /protect/without-storage/,

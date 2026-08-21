@@ -3,8 +3,8 @@ title: "在 Excel 文件中插入水印或设置背景"
 second_title: "文档"
 linktitle: "水印与背景"
 type: docs
-url: /watermark-and-background/
-aliases: [ "/export/excel-chart-to-different-formats/", "/workbook/background/" ]
+url: /zh/watermark-and-background/
+aliases: [  /zh/export/excel-chart-to-different-formats/ , /zh/workbook/background/ ]
 keywords: "Aspose.Cells Cloud、Excel、水印、背景、REST API"
 description: "Aspose.Cells Cloud REST API 允许开发人员为 Excel 工作簿添加、删除和管理背景及水印。支持的语言包括 Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby 和 Swift。"
 weight: 20

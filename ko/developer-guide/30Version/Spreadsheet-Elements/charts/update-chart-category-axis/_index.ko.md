@@ -1,7 +1,7 @@
 ---
 title: "차트 범주 축 업데이트"
 type: docs
-url: /charts/category-axis/update/
+url: /ko/charts/category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, 차트, 범주 축, REST API, Excel, 클라우드 SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 차트 범주 축을 업데이트합니다."

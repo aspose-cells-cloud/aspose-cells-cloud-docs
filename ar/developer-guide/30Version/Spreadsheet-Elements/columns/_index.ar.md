@@ -3,8 +3,8 @@ title: "العمل مع أعمدة ملفات إكسل"
 second_title: "مستند"
 linktype: "أعمدة"
 type: docs
-url: /columns/
-aliases: [/working-with-columns/]
+url: /ar/columns/
+aliases: [  /ar/working-with-columns/ ]
 keywords: "إكسل، أعمدة، Aspose.Cells Cloud، API، جدول بيانات، ورقة عمل، REST API"
 description: "دليل مفصّل لعمليات API في Aspose.Cells Cloud المتعلقة بأعمدة ورقة عمل إكسل، ويغطي استرجاع الأعمدة وإضافتها ونسخها وإخفاءها وإظهارها وتجميعها وفك التجميع منها وحذفها."
 weight: 100

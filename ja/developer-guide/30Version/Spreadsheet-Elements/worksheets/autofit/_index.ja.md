@@ -3,8 +3,8 @@ title: "Excelワークシートでのオートフィットの使用"
 second_title: "Document"
 linktitle: "オートフィット"
 type: docs
-url: /worksheets/autofit/
-aliases: [/autofit-rows-and-columns-of-worksheet/]
+url: /ja/worksheets/autofit/
+aliases: [  /ja/autofit-rows-and-columns-of-worksheet/ ]
 keywords: "オートフィット, 列, 行, Aspose.Cells, Cloud, Excel, API, リサイズ"
 description: "Aspose.Cells Cloud REST API を使って Excel ワークシートの行と列を自動的にリサイズする方法を学びます。cURL、.NET、Java、Python のサンプルを含みます。"
 weight: 20

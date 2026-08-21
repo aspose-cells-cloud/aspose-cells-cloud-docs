@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasındaki Tüm Çapraz Tabloları Alın"
 second_title: "Belge"
 linktitle: Tümünü al
 type: docs
-url: /pivot-tables/get-all/
-aliases: [/get-worksheet-pivot-tables-information/]
+url: /tr/pivot-tables/get-all/
+aliases: [  /tr/get-worksheet-pivot-tables-information/ ]
 keywords: "tüm çapraz tabloları al, Aspose.Cells Cloud API, Excel PivotTable, REST API"
 description: "Aspose.Cells Cloud API aracılığıyla bir Excel çalışma sayfasındaki tüm PivotTable’ları alın. PivotTables API için uç nokta, parametreler, kimlik doğrulama adımları, cURL ve SDK örneklerini içerir."
 weight: 20

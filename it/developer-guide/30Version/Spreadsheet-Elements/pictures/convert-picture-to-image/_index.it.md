@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – Ottieni immagine da foglio di calcolo"
 second_title: "Documento"
 linktitle: "Ottieni"
 type: docs
-url: /pictures/get/
-aliases: [/convert-picture-to-image/]
+url: /it/pictures/get/
+aliases: [  /it/convert-picture-to-image/ ]
 keywords: "Aspose.Cells, Ottieni immagine, API, Excel, Cloud, REST"
 description: "Recupera una specifica immagine da un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud. Include endpoint, parametri, fasi di autenticazione, codici di risposta ed esempi di codice."
 weight: 10

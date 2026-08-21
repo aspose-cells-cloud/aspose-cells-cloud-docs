@@ -3,8 +3,8 @@ title: "Ajustar automáticamente varias filas en una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Filas"
 type: docs
-url: /worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
+url: /es/worksheets/autofit/rows/
+aliases: [  /es/autofit-multiple-rows-of-worksheet/ ]
 keywords: "ajustar automáticamente filas, Excel, Aspose.Cells Cloud, API REST, hoja de cálculo, hoja de cálculo"
 description: "Aprenda cómo utilizar la API REST de Aspose.Cells Cloud para ajustar automáticamente varias filas en una hoja de cálculo de Excel. Incluye sintaxis de solicitud, parámetros, ejemplo de cURL, fragmentos de SDK y manejo de errores."
 weight: 40

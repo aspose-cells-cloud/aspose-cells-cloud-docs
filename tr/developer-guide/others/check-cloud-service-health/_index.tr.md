@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud Sağlıktan Kontrolü"
 linktitle: "Bulut Hizmet Sağlığını Kontrol Et"
 type: docs
-url: /check-cloud-service-health/
+url: /tr/check-cloud-service-health/
 keywords: "Aspose.Cells Cloud, API sağlık kontrolü, REST durumu, bulut hizmeti izleme"
 description: "Aspose.Cells Cloud sağlığını gerçek zamanlı olarak izleyin. GET /v4.0/cells/status/check uç noktasını, parametrelerini, yanıt formatını ve SDK örneklerini öğrenin."
 weight: 100

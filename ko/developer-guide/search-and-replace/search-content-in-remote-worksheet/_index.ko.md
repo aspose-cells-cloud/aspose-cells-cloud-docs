@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "원격 Excel 스프레드시트 워크시트에서 텍스트 검색 – 특정 데이터 찾기"
 linktype: "search-content-in-remote-worksheet"
 type: docs
-url: /search-content-in-remote-worksheet/
+url: /ko/search-content-in-remote-worksheet/
 keywords: "Aspose Cells, Excel API, 텍스트 검색, 원격 워크시트"
 description: "Aspose.Cells Cloud API를 사용하여 원격 Excel 워크시트에서 텍스트, 숫자 또는 수식을 검색합니다. 대소문자 구분 없이 검색하고, 암호로 보호된 파일도 지원합니다."
 weight: 100

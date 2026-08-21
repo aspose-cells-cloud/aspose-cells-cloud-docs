@@ -3,8 +3,8 @@ title: "Spezifische Dokumenteigenschaft abrufen"
 second_title: "Dokument"
 linktitle: "Abrufen"
 type: docs
-url: /document-properties/get/
-aliases: [/get-a-particular-document-property/]
+url: /de/document-properties/get/
+aliases: [  /de/get-a-particular-document-property/ ]
 keywords: "Aspose.Cells, Cloud API, Dokumenteigenschaft abrufen, Excel-Metadaten, REST GET, SDK-Beispiele"
 description: "Rufen Sie eine benannte Dokumenteigenschaft (z. B. Autor, Titel) aus einer Excel-Datei mithilfe der Aspose.Cells Cloud REST API ab. Enthält cURL-Beispiel, SDK-Snippets und Antwort-Schema."
 weight: 20

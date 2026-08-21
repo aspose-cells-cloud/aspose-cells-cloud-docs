@@ -3,8 +3,8 @@ title: "ワークシートの範囲を PNG、PDF、CSV にエクスポート –
 second_title: "ドキュメント"
 linktitle: "範囲"
 type: docs
-url: /worksheets/area-to-different-formats/
-aliases: [/get-worksheet-for-area/]
+url: /ja/worksheets/area-to-different-formats/
+aliases: [  /ja/get-worksheet-for-area/ ]
 keywords: "Aspose.Cells、ワークシート範囲のエクスポート、PNG、PDF、CSV、Excel 変換、REST API、SDK"
 description: "Aspose.Cells Cloud REST API または SDK（C#、Java、Python など）を使用して、Excel ワークシートの特定のセル範囲を PNG、PDF、CSV、および 20 以上のその他の形式にエクスポートする方法を学びます。"
 weight: 230

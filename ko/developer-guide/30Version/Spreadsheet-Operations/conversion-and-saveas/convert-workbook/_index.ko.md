@@ -3,7 +3,7 @@ title: "엑셀 파일을 다양한 형식으로 변환하기"
 second_title: "문서"
 linktitle: "스프레드시트 변환"
 type: docs
-url: /convert-a-spread-file-to-different-formats/
+url: /ko/convert-a-spread-file-to-different-formats/
 keywords: "Excel 변환, 스프레드시트 변환, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, 파일 형식 변환"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북을 PDF, CSV, JSON, Markdown 등 다양한 형식으로 변환합니다. 이 API는 C#, Java, Python 등 여러 프로그래밍 언어에 대한 여러 SDK를 지원합니다."
 weight: 10

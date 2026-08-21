@@ -3,8 +3,8 @@ title: "Obtenir la description d'une ligne à partir d'une feuille de calcul Exc
 second_title: "Document"
 linktitle: "Ligne"
 type: docs
-url: /rows/get/row/
-aliases: [/get-row-from-a-worksheet/]
+url: /fr/rows/get/row/
+aliases: [  /fr/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API ligne Excel, Obtenir la ligne de la feuille de calcul, API REST, SDK .NET, SDK Java, SDK Python"
 description: "Récupérer des informations détaillées (hauteur, style, état masqué, etc.) pour une ligne spécifique dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut un exemple cURL, des extraits de code SDK et la gestion des erreurs."
 weight: 10

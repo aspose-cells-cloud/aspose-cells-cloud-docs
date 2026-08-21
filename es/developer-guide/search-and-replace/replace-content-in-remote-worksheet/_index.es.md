@@ -4,7 +4,7 @@ second_title: "Documentación"
 ArticleTitle: "Buscar y reemplazar texto en hoja de cálculo remota con Aspose.Cells Cloud API"
 linktitle: "Reemplazar contenido en hoja de cálculo remota"
 type: docs
-url: /replace-content-in-remote-worksheet/
+url: /es/replace-content-in-remote-worksheet/
 keywords: "Aspose.Cells, reemplazar texto, hoja de cálculo remota, API de Excel, hoja de cálculo en la nube, buscar y reemplazar, API REST"
 description: "Reemplazar texto en una hoja de cálculo específica de un archivo de Excel almacenado en Aspose Cloud. Admite libros protegidos con contraseña, búsqueda sensible a la región y actualizaciones masivas."
 weight: 100

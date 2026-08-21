@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Excel の空白列を削除する方法 – 列のクリーンアップを自動化"
 linktitle: "空白列の削除"
 type: docs
-url: /delete-spreadsheet-blank-columns/
+url: /ja/delete-spreadsheet-blank-columns/
 keywords: "空白列削除 Excel API, Aspose.Cells Cloud, REST API, Excel クリーンアップ, スプレッドシート自動化"
 description: "Aspose.Cells Cloud REST API を使用して Excel ファイルから空白列を削除する方法を学びます。エンドポイント、認証、リクエスト/レスポンスのサンプル、および C#、Java、Python などでの SDK コードを含みます。"
 weight: 100

@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Come eliminare tutte le righe vuote in Excel – Guida completa alla pulizia dei dati"
 linktitle: "Elimina righe vuote"
 type: docs
-url: /delete-spreadsheet-blank-rows/
+url: /it/delete-spreadsheet-blank-rows/
 keywords: "Aspose.Cells, Excel, righe vuote, eliminare righe, pulizia foglio elettronico, API"
 description: "Rimuovi tutte le righe vuote dai file Excel tramite l'API Aspose.Cells Cloud. Veloce, pronta per l'elaborazione in batch e completamente programmabile – consulta gli esempi di codice in C#, Java, Python e altro ancora."
 weight: 100

@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – 将 Excel 工作簿转换为 PDF、CSV、HTML 等
 second_title: "文档"
 linktitle: "转换 Excel"
 type: docs
-url: /get-different-formats-files/
+url: /zh/get-different-formats-files/
 aliases:
   - /export-excel-workbook-to-different-file-formats/
   - /export-different-formats/

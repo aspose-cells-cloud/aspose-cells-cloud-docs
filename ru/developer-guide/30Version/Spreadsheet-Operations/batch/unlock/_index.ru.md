@@ -2,7 +2,7 @@
 title: "Пакетная разблокировка"
 second_title: "Документ"
 type: docs
-url: /batch/unlock
+url: /ru/batch/unlock
 keywords: "пакетная разблокировка, Aspose.Cells Cloud, Excel, REST API, электронная таблица, облачный SDK"
 description: "Разблокируйте несколько файлов Excel пакетно с использованием REST API Aspose.Cells Cloud. Поддерживаются SDK для C#, Java, Python и других языков."
 weight: 100

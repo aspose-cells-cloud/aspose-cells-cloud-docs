@@ -3,8 +3,8 @@ title: "すべてのドキュメント プロパティを取得する"
 second_title: "Document"
 linktitle: "すべて取得"
 type: docs
-url: /document-properties/get-all/
-aliases: [/get-all-document-properties/]
+url: /ja/document-properties/get-all/
+aliases: [  /ja/get-all-document-properties/ ]
 keywords: "すべてのドキュメント プロパティを取得する、Aspose.Cells Cloud、Excel ドキュメント プロパティ、REST API、SDK、Excel メタデータ"
 description: "Aspose.Cells Cloud REST API を使用して Excel ファイルからすべてのドキュメント プロパティを取得します。このエンドポイントは、すべての対応する SDK およびプログラミング言語で動作します。"
 ArticleTitle: "すべてのドキュメント プロパティを取得する – Aspose.Cells Cloud API"

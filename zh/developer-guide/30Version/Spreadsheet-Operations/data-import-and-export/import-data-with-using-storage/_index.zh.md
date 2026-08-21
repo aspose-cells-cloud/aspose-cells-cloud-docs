@@ -3,7 +3,7 @@ title: "使用存储导入数据"
 second_title: "文档"
 linktype: "使用存储导入数据"
 type: docs
-url: /import-data-with-using-storage/
+url: /zh/import-data-with-using-storage/
 aliases:
   - /import-data-into-excel-worksheet/
   - /import-data-into-worksheet/

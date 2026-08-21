@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيفية تحويل ورقة عمل في ملف جدول بيانات إلى CSV باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud"
 linktype: "تحويل ورقة عمل إلى CSV"
 type: docs
-url: /convert-worksheet-to-csv/
+url: /ar/convert-worksheet-to-csv/
 keywords: "Aspose.Cells، تحويل CSV، تحويل ورقة عمل إلى CSV، واجهة برمجة تطبيقات REST، جدول بيانات في السحابة، Excel إلى CSV"
 description: "تعرّف على كيفية تحويل ورقة عمل معيّنة من ملف Excel إلى CSV باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 4.0). يتضمن الرابط_endpoint_، المُعاملات، مثال cURL، كود SDK، ومعالجة الأخطاء."
 weight: 100

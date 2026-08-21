@@ -3,7 +3,7 @@ title: "แปลงสมุดงานเป็น PDF, PNG, CSV และอ
 second_title: "เอกสาร"
 linktype: "แปลงสมุดงาน"
 type: docs
-url: /worksheets/conversion/
+url: /th/worksheets/conversion/
 aliases:
   - /convert-worksheet-to-image/
   - /worksheets/to-image/

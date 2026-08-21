@@ -3,8 +3,8 @@ title: "حذف الخلفية من ورقة عمل Excel"
 second_title: "مستند"
 linktitle: "حذف"
 type: docs
-url: /worksheets/background/delete/
-aliases: [/delete-background-or-watermark-of-excel-worksheet/]
+url: /ar/worksheets/background/delete/
+aliases: [  /ar/delete-background-or-watermark-of-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud، حذف خلفية ورقة العمل، Excel، REST API، SDK، C#، Java، PHP، Ruby، Node.js، Python، Perl، Go"
 description: "استخدم Aspose.Cells Cloud REST API لحذف صورة الخلفية من ورقة عمل Excel. تتوفر SDKs لـ C#، Java، PHP، Ruby، Node.js، Python، Perl، و Go."
 weight: 210

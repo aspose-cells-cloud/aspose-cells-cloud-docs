@@ -4,8 +4,8 @@ ArticleTitle: "ضغط البيانات في ملف إكسل – واجهة Aspos
 second_title: "مستند"
 linktitle: "ضغط ملفات إكسل"
 type: docs
-url: /compress-excel-files/
-aliases: [/compress/]
+url: /ar/compress-excel-files/
+aliases: [  /ar/compress/ ]
 keywords: "ضغط ملف إكسل، aspose cells cloud، ضغط إكسل، ضغط جداول البيانات، واجهة rest api، ضغط الملفات"
 description: "اضغط ملفات إكسل (XLS و XLSX و XLSM و XLSB و ODS) باستخدام واجهة Aspose.Cells Cloud REST API. اضبط مستوى الضغط، وتعامل مع ملفات متعددة، وادمج عبر SDKs."
 weight: 39

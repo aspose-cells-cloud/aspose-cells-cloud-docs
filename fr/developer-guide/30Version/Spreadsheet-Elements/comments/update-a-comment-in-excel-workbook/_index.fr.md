@@ -1,8 +1,8 @@
 ---
 title: "Mettre à jour le commentaire d'une cellule d'une feuille de calcul"
 type: docs
-url: /comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
+url: /fr/comments/update/
+aliases: [  /fr/update-a-comment-in-excel-workbook/ ]
 keywords: "Aspose.Cells Cloud, API REST, Excel, feuille de calcul, commentaire de cellule, mise à jour du commentaire de feuille de calcul, objet commentaire"
 description: "Utilisez l’API REST Aspose.Cells Cloud pour mettre à jour le commentaire d’une cellule dans une feuille de calcul d’un classeur Excel, y compris les détails de la requête, les codes de réponse et les exemples de SDK."
 weight: 30

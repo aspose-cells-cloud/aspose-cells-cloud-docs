@@ -3,8 +3,8 @@ title: "接受远程电子表格中的所有修订"
 ArticleTitle: "接受远程电子表格中的所有修订 – Aspose.Cells Cloud"
 second_title: "文档"
 linktype: "docs"
-url: /cells/accept-all-revisions
-aliases: ["/cells/accept-all-revisions"]
+url: /zh/cells/accept-all-revisions
+aliases: [  /zh/cells/accept-all-revisions ]
 keywords: "Aspose.Cells, AcceptAllRevisions, 远程电子表格"
 description: "接受远程电子表格中的所有修订，并返回更新后的工作簿文件。"
 weight: 1000

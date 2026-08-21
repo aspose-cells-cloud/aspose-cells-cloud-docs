@@ -4,7 +4,7 @@ second_title: "وثيقة"
 linktitle: "تحديث الفلتر التلقائي"
 type: docs
 url: /ar/autofilter/refresh/
-aliases: [/ar/refresh-an-autofilter/]
+aliases: [  /ar/refresh-an-autofilter/ ]
 weight: 100
 keywords: "Aspose.Cells, AutoFilter, تحديث, إكسل, API, REST"
 description: "تحديث فلتر تلقائي موجود في ورقة عمل إكسل باستخدام واجهة Aspose.Cells Cloud REST API. يشمل أمثلة لـ cURL و SDKات متعددة مثل C#، Java، Python، والمزيد."

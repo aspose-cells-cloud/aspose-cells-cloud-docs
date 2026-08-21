@@ -3,8 +3,8 @@ title: "Autojustera flera rader i ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Rader"
 type: docs
-url: /worksheets/autofit/rows/
-aliases: [/autofit-multiple-rows-of-worksheet/]
+url: /sv/worksheets/autofit/rows/
+aliases: [  /sv/autofit-multiple-rows-of-worksheet/ ]
 keywords: "autojustera rader, Excel, Aspose.Cells Cloud, REST API, kalkylark, kalkylark"
 description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att autojustera flera rader i ett Excel-ark. Inkluderar begärandsyntax, parametrar, cURL-exempel, SDK-utdrag och felhantering."
 weight: 40

@@ -4,7 +4,7 @@ ArticleTitle: "Excelワークシートに上位10件フィルターを追加す�
 second_title: "ドキュメント"
 linktitle: "上位10件フィルターの追加"
 type: docs
-url: /autofilter/add-top-10-filter/
+url: /ja/autofilter/add-top-10-filter/
 aliases:
   [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
 keywords: "Aspose.Cells, AutoFilter, 上位10件フィルター, Excel API"

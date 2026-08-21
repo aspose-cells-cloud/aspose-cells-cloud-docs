@@ -3,7 +3,7 @@ title: "Converter une plage Excel en CSV – Aspose.Cells Cloud API"
 second_title: "Document"
 articleTitle: "Comment convertir une plage locale de classeur en fichier CSV : Guide pas à pas"
 linktype: "docs"
-url: "/convert-range-to-csv/"
+url: /fr/convert-range-to-csv/
 keywords: "Aspose Cells, convertir une plage en CSV, Excel en CSV, API Excel, classeur cloud, conversion, Excel, CSV, Aspose.Cells, API cloud"
 description: "Découvrez comment convertir une plage spécifique d’un classeur Excel local (XLSX ou XLS) en CSV à l’aide de l’API REST Aspose.Cells Cloud. Inclut la syntaxe des requêtes, les paramètres, la gestion des erreurs et des exemples SDK."
 ---

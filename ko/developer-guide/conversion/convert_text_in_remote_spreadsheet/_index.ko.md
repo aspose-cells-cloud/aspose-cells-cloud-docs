@@ -4,7 +4,7 @@ ArticleTitle: "원격 스프레드시트 내 텍스트 변환 – Aspose.Cells C
 second_title: "문서"
 linktitle: "원격 스프레드시트 내 텍스트 변환"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
+url: /ko/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
 aliases: []
 keywords: "Aspose.Cells, 텍스트 변환, API"
 description: "지정된 범위의 워크시트 내 텍스트를 변환합니다. 여기에는 숫자 변환, 문자 치환, 줄바꿈 처리, 악센트 문자 정규화가 포함됩니다."

@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "スプレッドシート／Excel で色ごとの合計、カウント、平均、最大値、最小値"
 LinkTitle: "色ごとにセルを集計"
 type: docs
-url: /aggregate-cells-by-color/
+url: /ja/aggregate-cells-by-color/
 keywords: "Aspose, Cells, Excel, API, aggregate, color, sum, count, average, min, max"
 description: "Aspose.Cells Cloud API を使用して、Excel のセルを背景色またはフォント色で集計（合計、カウント、平均、最小値、最大値）。エンドポイント、パラメータ、認証、SDK の例を学習します。"
 weight: 100

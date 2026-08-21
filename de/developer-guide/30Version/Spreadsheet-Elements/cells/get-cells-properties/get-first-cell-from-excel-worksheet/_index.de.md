@@ -1,7 +1,7 @@
 ---
 title: "Erste Zelle (A1) aus einem Excel-Arbeitsblatt abrufen"
 type: docs
-url: /get-first-cell-from-excel-worksheet/
+url: /de/get-first-cell-from-excel-worksheet/
 weight: 20
 keywords: "Aspose.Cells Cloud, Excel, REST API, Erste Zelle abrufen, Arbeitsblatt, A1, API v3"
 description: "Erfahren Sie, wie Sie die erste Zelle (A1) eines Excel-Arbeitsblatts mithilfe der Aspose.Cells Cloud REST API v3.0 abrufen. Enthält cURL-Anforderung, JSON-Antwort, Fehlerbeispiele und SDK-Beispiele für C#, Java, PHP, Python und weitere Sprachen."

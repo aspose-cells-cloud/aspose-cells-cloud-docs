@@ -3,7 +3,7 @@ title: "FlipData"
 ArticleTitle: "FlipData – Aspose.Cells Cloud"
 second_title: "ドキュメント"
 linktype: "docs"
-url: /cells/flip
+url: /ja/cells/flip
 aliases: []
 keywords: "FlipData, 並べ替え, Aspose.Cells"
 description: "スプレッドシートファイル内の指定されたデータ範囲を転置します。"

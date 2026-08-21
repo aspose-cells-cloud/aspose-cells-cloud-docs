@@ -1,8 +1,8 @@
 ---
 title: "الحصول على عنوان المخطط من ورقة عمل"
 type: docs
-url: /charts/title/get/
-aliases: [/get-chart-title-from-a-worksheet/]
+url: /ar/charts/title/get/
+aliases: [  /ar/get-chart-title-from-a-worksheet/ ]
 weight: 120
 keywords:
   - "Aspose.Cells Cloud"

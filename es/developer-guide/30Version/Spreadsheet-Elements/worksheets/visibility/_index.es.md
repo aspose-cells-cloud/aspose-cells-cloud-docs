@@ -3,7 +3,7 @@ title: "Cómo trabajar con la visibilidad en una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Visibilidad"
 type: docs
-url: /worksheets/panes/
+url: /es/worksheets/panes/
 keywords: "Aspose.Cells Cloud, API para ocultar hoja de cálculo, API para mostrar hoja de cálculo, visibilidad de hojas de cálculo de Excel, API REST de Excel, Aspose.Cells v3.0"
 description: "Aprenda a ocultar o mostrar programáticamente hojas de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye URLs de solicitud, ejemplos de cURL y .NET SDK, manejo de errores y notas específicas por versión."
 weight: 20

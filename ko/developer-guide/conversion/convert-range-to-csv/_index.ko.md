@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "로컬 스프레드시트 범위를 CSV 파일로 변환하는 방법: 단계별 가이드"
 linktitle: "범위를 CSV로 변환"
 type: docs
-url: /convert-range-to-csv/
+url: /ko/convert-range-to-csv/
 keywords: "Aspose Cells, 범위를 CSV로 변환, Excel을 CSV로, Excel API, 클라우드 스프레드시트, 변환, Excel, CSV, Aspose.Cells, 클라우드 API"
 description: "로컬 Excel 워크북(XLSX 또는 XLS)에서 특정 범위를 Aspose.Cells Cloud REST API를 사용해 CSV로 변환하는 방법을 알아보세요. 요청 구문, 매개변수, 오류 처리 및 SDK 예제 포함."
 ---

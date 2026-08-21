@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasına Bir Şekil Ekleyin"
 second_title: "Belge"
 linktitle: "Ekle"
 type: docs
-url: /shapes/add/
-aliases: [/add-a-shape-inside-the-worksheet/]
+url: /tr/shapes/add/
+aliases: [  /tr/add-a-shape-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, şekil ekle, Excel, REST API, bulut SDK, shapeDTO, çizim türü"
 description: "Aspose.Cells Cloud REST API v3.0 kullanarak Excel çalışma sayfasına şekil (yay, çizgi, dikdörtgen vb.) nasıl ekleneceğini öğrenin. İstek sözdizimi, gerekli parametreler, kimlik doğrulama adımları ve örnek SDK kodunu içerir."
 weight: 30

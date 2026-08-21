@@ -3,8 +3,8 @@ title: "Tüm Çalışma Sayfalarını Al"
 second_title: "Belge"
 linktitle: "Tümü"
 type: docs
-url: /worksheets/get-all/
-aliases: [/get-worksheet-count/]
+url: /tr/worksheets/get-all/
+aliases: [  /tr/get-worksheet-count/ ]
 keywords: "Aspose.Cells, Bulut API, Çalışma Sayfalarını Al, Excel, REST, SDK"
 description: "Aspose.Cells Cloud REST API (v3.0) aracılığıyla bir Excel çalışma kitabındaki çalışma sayfalarının listesini alın. cURL örneği, SDK kod parçacıkları ve yanıt formatını içerir."
 weight: 10

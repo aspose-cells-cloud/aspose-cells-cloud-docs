@@ -1,8 +1,8 @@
 ---
 title: "워크시트에서 차트 제목 가져오기"
 type: docs
-url: /charts/title/get/
-aliases: [/get-chart-title-from-a-worksheet/]
+url: /ko/charts/title/get/
+aliases: [  /ko/get-chart-title-from-a-worksheet/ ]
 weight: 120
 keywords:
   - "Aspose.Cells Cloud"

@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Sumar, Contar, Promediar, Encontrar Valor Máximo y Mínimo por Color en Hoja de Cálculo/Excel"
 LinkTitle: "Agrupar Celdas por Color"
 type: docs
-url: /aggregate-cells-by-color/
+url: /es/aggregate-cells-by-color/
 keywords: "Aspose, Cells, Excel, API, agrupar, color, sumar, contar, promediar, mínimo, máximo"
 description: "Agrupe celdas de Excel por color de fondo o de fuente (sumar, contar, promediar, mínimo, máximo) utilizando la API en la nube de Aspose.Cells. Aprenda sobre el punto de conexión, los parámetros, la autenticación y ejemplos de SDK."
 weight: 100

@@ -4,7 +4,7 @@ secondtitle: "เอกสาร"
 articletitle: "ค้นหาข้อความในเวิร์กชีตสเปรดชีต Excel ระยะไกล – ค้นหาข้อมูลที่ระบุ"
 linktitle: "ค้นหาเนื้อหาในเวิร์กชีตระยะไกล"
 type: docs
-url: /search-content-in-remote-worksheet/
+url: /th/search-content-in-remote-worksheet/
 keywords: "Aspose Cells, Excel API, ค้นหาข้อความ, เวิร์กชีตระยะไกล"
 description: "ค้นหาข้อความ ตัวเลข หรือสูตรในเวิร์กชีต Excel ระยะไกลโดยใช้ Aspose.Cells Cloud API รองรับการค้นหาแบบไม่คำนึงถึงตัวพิมพ์เล็ก-ใหญ่และไฟล์ที่มีการป้องกันด้วยรหัสผ่าน"
 weight: 100

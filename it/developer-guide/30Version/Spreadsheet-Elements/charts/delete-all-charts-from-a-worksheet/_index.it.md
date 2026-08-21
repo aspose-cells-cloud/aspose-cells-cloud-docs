@@ -2,7 +2,7 @@
 title: "Elimina tutti i grafici da un foglio di lavoro"
 type: docs
 url: /it/charts/clear/
-aliases: [/it/delete-all-charts-from-a-worksheet/]
+aliases: [  /it/delete-all-charts-from-a-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells, Cloud, eliminare, tutti i grafici, foglio di lavoro, REST API, DELETE, SDK"
 description: "Scopri come eliminare ogni grafico in un foglio di lavoro utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include endpoint, parametri, esempio cURL, frammenti di codice SDK, passaggi di autenticazione e gestione degli errori."

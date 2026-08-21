@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: Delete
 type: docs
 url: /th/pivot-tables/delete/
-aliases: [/th/delete-worksheet-pivot-table-by-index/]
+aliases: [  /th/delete-worksheet-pivot-table-by-index/ ]
 keywords: "Aspose.Cells, พิวต์ตาราง, ลบ, Excel, REST API"
 description: "การลบพิวต์ตารางจากแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API (v3.0) รวมถึงรูปแบบคำขอตัวอย่าง cURL รหัสข้อผิดพลาด และตัวอย่าง SDK สำหรับ C#, Java, Python และ Node.js"
 weight: 70

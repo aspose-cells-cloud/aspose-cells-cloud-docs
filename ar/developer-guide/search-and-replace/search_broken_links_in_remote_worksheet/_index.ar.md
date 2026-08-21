@@ -4,7 +4,7 @@ ArticleTitle: "البحث عن الروابط التالفة في ورقة عم�
 second_title: "وثيقة"
 linktype: "SearchBrokenLinksInRemoteWorksheet"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/search/broken-links
+url: /ar/cells/{name}/worksheets/{worksheet}/search/broken-links
 aliases: []
 keywords: "Aspose.Cells، البحث عن الروابط التالفة، ورقة عمل عن بُعد"
 description: "البحث عن الروابط التالفة في ورقة عمل لملف جدول بيانات مخزن في تخزين سحابي عن بُعد."

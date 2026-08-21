@@ -3,7 +3,7 @@ title: "إلغاء تجميد المقاطع في ورقة عمل Excel"
 second_title: "مستند"
 linktitle: "إلغاء التجميد"
 type: docs
-url: /worksheets/panes/unfreeze/
+url: /ar/worksheets/panes/unfreeze/
 aliases:
   - /unfreeze-panes-in-excel-worksheet/
   - /worksheets/unfreeze-panes/

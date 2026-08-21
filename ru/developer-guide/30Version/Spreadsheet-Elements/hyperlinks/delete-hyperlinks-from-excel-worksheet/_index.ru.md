@@ -2,7 +2,7 @@
 title: "Очистка гиперссылок"
 type: docs
 url: /ru/hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+aliases: [  /ru/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, удаление гиперссылок, очистка гиперссылок, REST API, рабочий лист, SDK"
 description: "Узнайте, как удалить все гиперссылки из рабочего листа Excel с помощью Aspose.Cells Cloud REST API или любого поддерживаемого SDK (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl и др.)."
 weight: 40

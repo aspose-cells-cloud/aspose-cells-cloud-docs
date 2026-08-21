@@ -3,7 +3,7 @@ title: "ExcelファイルへのデータのインポートとExcelファイル�
 second_title: "Document"
 linktitle: "データのインポートとエクスポート"
 type: docs
-url: /data-import-and-export/
+url: /ja/data-import-and-export/
 keywords: "Aspose.Cells Cloud, データのインポート, Excelのエクスポート, API, CSV, JSON, 画像, 配列"
 description: "CSV、JSON、配列、画像からExcelファイルへデータをインポートし、ワークブック、チャート、図形をPDF、PNGなどにエクスポートする方法をAspose.Cells Cloud API（v3.0）を使って学びます。"
 weight: 25

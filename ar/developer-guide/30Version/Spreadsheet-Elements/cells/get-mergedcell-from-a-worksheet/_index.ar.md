@@ -1,7 +1,7 @@
 ---
 title: "الحصول على الخلايا المدمجة من ورقة عمل Excel – واجهة برمجة تطبيقات Aspose.Cells Cloud"
 type: docs
-url: /get-mergedcell-from-a-worksheet/
+url: /ar/get-mergedcell-from-a-worksheet/
 weight: 60
 keywords: "Aspose.Cells Cloud، الخلايا المدمجة، ورقة عمل Excel، واجهة برمجة تطبيقات REST، Aspose.Cells SDK، الخلايا المدمجة في Excel"
 description: "تعرّف على كيفية استرداد نطاقات الخلايا المدمجة من ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0). يشمل خطوات المصادقة، طلب cURL الكامل، مخطط الاستجابة، معالجة الأخطاء، وأمثلة SDK بلغات C# وJava وPython وغيرها."

@@ -3,8 +3,8 @@ title: "Excel 워크시트에서 행 자동 맞춤"
 second_title: "문서"
 linktitle: "행"
 type: docs
-url: /worksheets/autofit/row/
-aliases: [/autofit-single-row-of-worksheet/]
+url: /ko/worksheets/autofit/row/
+aliases: [  /ko/autofit-single-row-of-worksheet/ ]
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 행을 자동 맞추는 방법을 배워보세요. 엔드포인트, 매개변수, 인증, 오류 처리, cURL 요청 및 SDK 예제가 포함됩니다."
 keywords: "행 자동 맞춤, Aspose.Cells Cloud, Excel API, REST, 워크시트, SDK, 스프레드시트, 클라우드 API"
 weight: 30

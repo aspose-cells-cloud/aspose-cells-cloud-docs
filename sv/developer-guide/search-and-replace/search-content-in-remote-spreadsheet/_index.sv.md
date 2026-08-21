@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Sök text i fjärranslutna Excel-arbetsböcker – Hitta specifik data"
 linktitle: "Sök i innehåll i fjärranslutna kalkylark"
 type: docs
-url: /search-content-in-remote-spreadsheet/
+url: /sv/search-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells, Excel-söknings-API, molnkalkylark, textsökning, REST"
 description: "Sök efter text, nummer eller formler i Excel-filer lagrade i molnlagring med Aspose.Cells Cloud. Stöder skiftlägesokänsliga frågor, val av mapp och lösenordsskyddade arbetsböcker."
 weight: 100

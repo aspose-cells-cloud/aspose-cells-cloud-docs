@@ -3,7 +3,7 @@ title: "حذف البيانات الوصفية من ملفات Excel"
 second_title: "مستند"
 linktitle: "حذف دون استخدام التخزين"
 type: docs
-url: /metadata/delete/
+url: /ar/metadata/delete/
 keywords: "Aspose.Cells, حذف البيانات الوصفية, واجهة برمجة تطبيقات Excel, خصائص المصنف"
 description: "احذف البيانات الوصفية للمصنف (المؤلف، العنوان، البيانات المخصصة) عبر واجهة برمجة تطبيقات Aspose.Cells Cloud. يتضمن نقطة النهاية، المصادقة، المُعلمات، وأمثلة لـ cURL وSDK."
 weight: 55

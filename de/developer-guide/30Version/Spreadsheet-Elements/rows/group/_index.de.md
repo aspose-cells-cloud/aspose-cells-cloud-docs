@@ -3,8 +3,8 @@ title: "Gruppieren von Zeilen in einem Excel-Arbeitsblatt"
 second_title: "Dokument"
 linktitle: "Gruppieren"
 type: docs
-url: /rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
+url: /de/rows/group/
+aliases: [  /de/group-rows-in-excel-worksheet/ ]
 keywords: "Zeilen gruppieren, Excel, Aspose.Cells Cloud, REST API, SDK, Arbeitsblatt, Excel-API"
 description: "Gruppieren Sie Zeilen in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API. Unterstützt mehrere SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) für einfache Integration."
 weight: 60

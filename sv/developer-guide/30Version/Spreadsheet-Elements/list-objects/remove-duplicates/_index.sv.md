@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Ta bort dubbletter"
 type: docs
 keywords: "ta bort dubbletter, listobject, Aspose.Cells Cloud API, Excel, REST"
-url: /list-objects/remove-duplicates/
+url: /sv/list-objects/remove-duplicates/
 description: "Lär dig hur du tar bort dubbletter från en ListObject i ett Excel-ark med Aspose.Cells Cloud REST API. Inkluderar endpoint, parametrar, autentisering samt exempel på begäranden och svar."
 weight: 20
 ---

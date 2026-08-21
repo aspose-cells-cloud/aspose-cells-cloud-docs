@@ -3,8 +3,8 @@ title: "Получение фигуры по индексу на листе Exce
 second_title: "Документ"
 linktype: "Получить"
 type: docs
-url: /shapes/get/
-aliases: [/get-a-shape-by-index-inside-the-worksheet/]
+url: /ru/shapes/get/
+aliases: [  /ru/get-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API фигур Excel, получение фигуры по индексу, фигура листа, REST API, извлечение фигур, Aspose.Cells SDK"
 description: "Извлечение фигуры по её индексу с листа Excel с помощью REST API Aspose.Cells Cloud. Включает синтаксис запроса, параметры, данные ответа и примеры SDK."
 weight: 20

@@ -3,8 +3,8 @@ title: "엑셀 워크북에서 이름이 지정된 범위 가져오기"
 second_title: "문서"
 linktitle: "이름"
 type: docs
-url: /ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
+url: /ko/ranges/get/name/
+aliases: [  /ko/get-named-ranges-inside-the-workbook/ ]
 keywords: "이름이 지정된 범위, 엑셀, Aspose.Cells, 클라우드 API, 워크시트"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크북에서 이름이 지정된 범위를 검색합니다. 요청 세부 정보, 샘플 cURL 명령어, 다양한 프로그래밍 언어의 SDK 예제를 포함합니다."
 ArticleTitle: "엑셀 워크북에서 이름이 지정된 범위 가져오기 – Aspose.Cells Cloud API"

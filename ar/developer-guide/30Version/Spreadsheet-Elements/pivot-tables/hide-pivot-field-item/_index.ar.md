@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: إخفاء
 type: docs
 url: /ar/pivot-tables/hide-pivot-field-item/
-aliases: [/ar/hide-pivot-field-item/]
+aliases: [  /ar/hide-pivot-field-item/ ]
 keywords: "Aspose.Cells, إخفاء عنصر حقل محوري, واجهة برمجة تطبيقات الجداول المحورية, واجهة برمجة تطبيقات REST, حزمة تطوير البرمجيات السحابية"
 description: "تعرّف على كيفية إخفاء عنصر حقل محوري في جدول محوري باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمّن تفاصيل الطلب، مثالًا باستخدام cURL، وأجزاء كود حزمة تطوير البرمجيات (SDK) بلغات برمجة متعددة."
 weight: 110

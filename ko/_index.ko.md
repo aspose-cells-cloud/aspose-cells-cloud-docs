@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud API – Excel 파일 변환, 병합, 분할 및 보호"
 linktitle: "개발자 센터"
 type: docs
-url: /
+url: /ko/
 description: "Aspose.Cells Cloud REST API를 사용하면 Excel 스프레드시트를 변환, 병합, 분할, 보호 및 종합적으로 처리할 수 있습니다. 월 150회 무료 호출, 8개 언어용 SDK 제공."
 weight: 10
 keywords: "Aspose.Cells Cloud, Excel API, 스프레드시트 변환, Excel 병합, Excel 분할, Excel 보호, 클라우드 스프레드시트 SDK, REST API, Excel 처리"

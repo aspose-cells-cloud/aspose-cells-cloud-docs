@@ -3,8 +3,8 @@ title: "Effacer des objets dans un fichier Excel"
 second_title: "Document"
 linktitle: "Effacer"
 type: docs
-url: /clear/
-aliases: [/clearobjects/]
+url: /fr/clear/
+aliases: [  /fr/clearobjects/ ]
 keywords: "Aspose.Cells, Excel, Effacer des objets, API REST, SDK cloud, Supprimer les commentaires, Supprimer les graphiques"
 description: "Utilisez l’API REST Aspose.Cells Cloud pour supprimer les commentaires, les graphiques, les formes et autres objets d’un classeur Excel. Prend en charge plusieurs SDK et renvoie le fichier nettoyé en Base64."
 weight: 39

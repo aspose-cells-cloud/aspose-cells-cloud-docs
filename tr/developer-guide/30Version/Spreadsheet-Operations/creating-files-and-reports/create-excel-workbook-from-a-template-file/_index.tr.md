@@ -3,7 +3,7 @@ title: "Şablon Dosyası ile Bir Excel Çalışma Kitabı Nasıl Oluşturulur"
 second_title: "Belge"
 linktitle: "Şablon Dosyası"
 type: docs
-url: /create-an-excel-file-with-template-file/
+url: /tr/create-an-excel-file-with-template-file/
 aliases:
   - /create-excel-workbook-from-a-template-file/
   - /workbook/new-from-a-template-file/

@@ -3,8 +3,8 @@ title: "Berechnen einer Formel in einem Excel-Arbeitsblatt"
 second_title: "Dokument"
 linktitle: "Berechnen"
 type: docs
-url: /worksheets/calculate-formula/
-aliases: [/calculate-formula-in-a-worksheet/]
+url: /de/worksheets/calculate-formula/
+aliases: [  /de/calculate-formula-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, Formelberechnung, REST API, SDKs, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
 description: "Berechnen von Formeln in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API. Unterstützt mehrere SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift) mit sofort verwendbaren Beispielen."
 weight: 20

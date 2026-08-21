@@ -3,7 +3,7 @@ title: "Ermitteln der Seitenanzahl für ein Excel-Arbeitsblatt"
 second_title: "Dokument"
 linktitle: "Seitenanzahl"
 type: docs
-url: /worksheets/page-count/
+url: /de/worksheets/page-count/
 keywords: "Aspose.Cells, Excel-API, Seitenanzahl des Arbeitsblatts, REST, Cloud-SDK, Excel-Seitenumbrüche"
 description: "Abrufen der Anzahl der druckbaren Seiten in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API (v3.0). Enthält HTTPS-Anforderungsformat, Authentifizierungsschritte, Beispiel-cURL, vollständige JSON-Antwort, HTTP-Statuscodes und SDK-Codebeispiele."
 weight: 10

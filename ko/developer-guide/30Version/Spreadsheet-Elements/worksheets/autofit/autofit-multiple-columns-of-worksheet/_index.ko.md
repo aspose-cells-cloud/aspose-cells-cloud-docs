@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "열"
 type: docs
 url: /ko/worksheets/autofit/columns/
-aliases: [/autofit-multiple-columns-of-worksheet/]
+aliases: [  /ko/autofit-multiple-columns-of-worksheet/ ]
 keywords: "Aspose.Cells, 열 자동 맞춤, Excel API, 클라우드 스프레드시트, REST"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 엑셀 워크시트에서 여러 열을 자동 맞춤하는 방법을 알아보세요. 엔드포인트, 매개변수, cURL 예제, 오류 처리, C#, Java, Python 등 다양한 언어의 SDK 코드 스니펫이 포함됩니다."
 weight: 20

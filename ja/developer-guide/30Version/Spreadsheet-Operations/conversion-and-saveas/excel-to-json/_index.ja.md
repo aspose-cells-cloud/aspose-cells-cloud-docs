@@ -3,7 +3,7 @@ title: "Excel を JSON に変換"
 second_title: "ドキュメント"
 linktitle: "Excel を JSON に変換"
 type: docs
-url: /convert-excel-file-to-json-file/
+url: /ja/convert-excel-file-to-json-file/
 keywords: "Aspose.Cells, Excel to JSON, Cloud API, spreadsheet conversion, REST API"
 description: "Aspose.Cells Cloud REST API を使用して Excel スプレッドシートを JSON ファイルに変換する方法を学びます。cURL の例、SDK スニペット (C#、Java、Python)、必要なパラメータ、認証、レスポンス形式を含みます。"
 weight: 100

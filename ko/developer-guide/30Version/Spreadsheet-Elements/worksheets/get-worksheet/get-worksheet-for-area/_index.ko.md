@@ -3,8 +3,8 @@ title: "워크시트 영역을 PNG, PDF, CSV로 내보내기 – Aspose.Cells Cl
 second_title: "문서"
 linktitle: "영역"
 type: docs
-url: /worksheets/area-to-different-formats/
-aliases: [/get-worksheet-for-area/]
+url: /ko/worksheets/area-to-different-formats/
+aliases: [  /ko/get-worksheet-for-area/ ]
 keywords: "Aspose.Cells, 워크시트 영역 내보내기, PNG, PDF, CSV, 엑셀 변환, REST API, SDK"
 description: "Aspose.Cells Cloud REST API 또는 SDK(C#, Java, Python 등)를 사용해 엑셀 워크시트의 특정 셀 범위를 PNG, PDF, CSV 및 20개 이상의 다른 형식으로 내보내는 방법을 알아보세요."
 weight: 230

@@ -3,8 +3,8 @@ title: "Hinzufügen eines Farbfilters in einer Excel-Arbeitsmappe"
 second_title: "Dokument"
 linktitle: "Farbfilter hinzufügen"
 type: docs
-url: /autofilter/add-color-filter/
-aliases: [/filter-a-list-using-a-color-filter/,/autofilter/add-a-color-filter/]
+url: /de/autofilter/add-color-filter/
+aliases: [  /de/filter-a-list-using-a-color-filter/ , /de/autofilter/add-a-color-filter/ ]
 keywords: "Excel, Farbfilter, Aspose.Cells Cloud, REST-API, AutoFilter, JWT-Authentifizierung"
 description: "Erfahren Sie, wie Sie mithilfe der Aspose.Cells Cloud-API einen Farbfilter in einer Excel-Arbeitsmappe anwenden. Enthält Endpunkt, Parameter, cURL-Beispiel, Fehlerbehandlung und SDK-Beispiele."
 weight: 65

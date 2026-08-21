@@ -3,7 +3,7 @@ title: "Sammanfoga och dela Excel-filer"
 second_title: "Dokument"
 linktitle: "Sammanfoga och dela"
 type: docs
-url: /merge-and-split/
+url: /sv/merge-and-split/
 keywords: "Aspose.Cells Cloud, sammanfoga Excel-filer, dela Excel-arbetsbok, Excel API"
 description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att sammanfoga flera Excel-arbetsböcker till en enda fil och dela en arbetsbok i separata filer. SDK:er finns tillgängliga för Android, .NET, Go, Java, Node.js, Perl, PHP, Python, Ruby och Swift."
 ArticleTitle: "Sammanfoga och dela Excel-filer – Aspose.Cells Cloud-dokumentation"

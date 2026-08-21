@@ -3,7 +3,7 @@ title: "Excel'den SQL'e"
 second_title: "Belge"
 linktitle: "Excel'den SQL'e"
 type: docs
-url: /convert-excel-file-to-sql-file/
+url: /tr/convert-excel-file-to-sql-file/
 keywords: "Aspose.Cells, Excel'den SQL'e, bulut API'si, elektronik tablo dönüştürme, REST"
 description: "Aspose.Cells Cloud REST API'sini kullanarak Excel elektronik tablo dosyalarını SQL dosyalarına dönüştürün. Uygulamalarınıza sorunsuz entegrasyon için birden fazla SDK ve programlama dilini destekler."
 weight: 100

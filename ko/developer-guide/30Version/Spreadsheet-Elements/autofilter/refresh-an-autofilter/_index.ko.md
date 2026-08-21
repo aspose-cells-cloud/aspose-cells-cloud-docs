@@ -3,8 +3,8 @@ title: "엑셀 워크시트에서 자동 필터 새로 고침"
 second_title: "문서"
 linktitle: "자동 필터 새로 고침"
 type: docs
-url: /autofilter/refresh/
-aliases: [/refresh-an-autofilter/]
+url: /ko/autofilter/refresh/
+aliases: [  /ko/refresh-an-autofilter/ ]
 weight: 100
 keywords: "Aspose.Cells, AutoFilter, 새로 고침, 엑셀, API, REST"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크시트에 있는 기존 자동 필터를 새로 고침합니다. C#, Java, Python 등 다양한 언어에 대한 cURL 및 SDK 예제가 포함되어 있습니다."

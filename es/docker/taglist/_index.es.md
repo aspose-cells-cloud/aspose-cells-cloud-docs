@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Etiquetas de imágenes Docker de Aspose.Cells Cloud"
 linktype: "Etiquetas de imagen"
 type: docs
-url: /docker/tag-list/
+url: /es/docker/tag-list/
 description: "Encuentre las etiquetas más recientes de imágenes Docker de Aspose.Cells Cloud para Windows Server (2016-2022) y Linux. Obtenga los comandos de extracción, detalles de arquitectura y notas de actualización en un solo lugar."
 weight: 30
 keywords:

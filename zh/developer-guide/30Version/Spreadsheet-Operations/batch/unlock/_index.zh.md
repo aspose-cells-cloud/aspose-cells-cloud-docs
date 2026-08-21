@@ -2,7 +2,7 @@
 title: "批量解锁"
 second: "文档"
 type: docs
-url: /batch/unlock
+url: /zh/batch/unlock
 keywords: "批量解锁, Aspose.Cells Cloud, Excel, REST API, 电子表格, 云 SDK"
 description: "使用 Aspose.Cells Cloud REST API 批量解锁符合条件的 Excel 文件。支持 C#、Java、Python 等多种语言的 SDK。"
 weight: 100

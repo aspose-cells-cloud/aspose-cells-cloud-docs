@@ -3,8 +3,8 @@ title: "Перемещение листа Excel — Aspose.Cells Cloud API (v3.0
 second_title: "Документ"
 linktitle: "Переместить"
 type: docs
-url: /worksheets/move/
-aliases: [/move-excel-worksheets/]
+url: /ru/worksheets/move/
+aliases: [  /ru/move-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, перемещение листа, Excel, REST API, SDK, C#, Java, Python, Node.js, PHP, Ruby, Go, Android, Swift, Perl, v3.0"
 description: "Узнайте, как переместить лист Excel в новую позицию с помощью Aspose.Cells Cloud API (v3.0). Приведены endpoint, необходимые параметры, пример cURL и код SDK на C#, Java, Python и других языках."
 weight: 20

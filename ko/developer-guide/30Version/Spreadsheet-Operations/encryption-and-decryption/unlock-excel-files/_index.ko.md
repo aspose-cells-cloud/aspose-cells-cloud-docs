@@ -3,8 +3,8 @@ title: "엑셀 파일 잠금 해제"
 second_title: "문서"
 linktitle: "엑셀 파일 잠금 해제"
 type: docs
-url: /unlock-excel-files/
-aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
+url: /ko/unlock-excel-files/
+aliases: [  /ko/unlock/without-storage/ , /ko/unlock/ , /ko/unlock/without-using-storage/ ]
 keywords: "엑셀 잠금 해제, Aspose.Cells Cloud, REST API, 엑셀 잠금 해제, 비밀번호 보호 워크북, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
 description: "Aspose.Cells Cloud REST API는 비밀번호로 보호된 엑셀 파일의 잠금을 해제할 수 있는 엔드포인트를 제공합니다. Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift 등 다양한 프로그래밍 언어용 SDK를 제공합니다."
 ArticleTitle: "Aspose.Cells Cloud REST API를 사용하여 엑셀 파일 잠금 해제"

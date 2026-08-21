@@ -3,7 +3,7 @@ title: "Excel 메타데이터 및 속성 다루기"
 second_title: "문서"
 linktype: "메타데이터 및 속성"
 type: docs
-url: /metadata/
+url: /ko/metadata/
 aliases:
   - /document-properties/
   - /working-with-document-properties/

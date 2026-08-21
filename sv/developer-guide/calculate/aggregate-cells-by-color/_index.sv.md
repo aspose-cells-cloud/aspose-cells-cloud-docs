@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Summa, räkna, medelvärde, max, min värden efter färg i kalkylblad/Excel"
 LinkTitle: "Aggregera celler efter färg"
 type: docs
-url: /aggregate-cells-by-color/
+url: /sv/aggregate-cells-by-color/
 keywords: "Aspose, Cells, Excel, API, aggregera, färg, summa, räkna, medelvärde, min, max"
 description: "Aggregera Excel-cellerna efter bakgrundsfärg eller teckensnittsfärg (summa, räkna, medelvärde, min, max) med Aspose.Cells Cloud API. Lär dig endpoint, parametrar, autentisering och SDK-exempel."
 weight: 100

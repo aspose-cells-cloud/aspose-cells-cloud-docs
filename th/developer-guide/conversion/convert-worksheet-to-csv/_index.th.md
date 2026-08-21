@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีการแปลงเวิร์กชีตในไฟล์สเปรดชีตเป็น CSV โดยใช้ Aspose.Cells Cloud API"
 linktype: "แปลงเวิร์กชีตเป็น CSV"
 type: docs
-url: /convert-worksheet-to-csv/
+url: /th/convert-worksheet-to-csv/
 keywords: "Aspose.Cells, การแปลง CSV, การแปลงเวิร์กชีตเป็น CSV, REST API, สเปรดชีตบนคลาวด์, Excel เป็น CSV"
 description: "เรียนรู้วิธีการแปลงเวิร์กชีตที่ระบุจากไฟล์ Excel เป็น CSV โดยใช้ Aspose.Cells Cloud API (v4.0) ได้แก่ endpoint, พารามิเตอร์, ตัวอย่าง cURL, โค้ด SDK และการจัดการข้อผิดพลาด"
 weight: 100

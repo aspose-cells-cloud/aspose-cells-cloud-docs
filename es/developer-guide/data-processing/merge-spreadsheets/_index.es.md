@@ -4,7 +4,7 @@ second_title: "Documentación"
 ArticleTitle: "Combinar varios archivos de Excel en uno solo – Fusionar por lotes hojas de cálculo en más de 30 formatos"
 linktype: "Fusionar hojas de cálculo"
 type: docs
-url: /merge-spreadsheets/
+url: /es/merge-spreadsheets/
 keywords: "Aspose.Cells, fusionar hojas de cálculo, API de Excel, hoja de cálculo en la nube, fusión por lotes, conversión a PDF, fusión CSV, fusión ODS, referencia de API, SDK"
 description: "Combine varios archivos locales de Excel, CSV u ODS en un único libro y convierta el resultado en más de 30 formatos (PDF, HTML, etc.) mediante Aspose.Cells Cloud. Incluye el punto de conexión, parámetros, guía de autenticación y ejemplos de SDK."
 weight: 100

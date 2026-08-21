@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie eine lokale Tabellenkalkulation mithilfe der Aspose.Cells Cloud API in JSON"
 linktype: "Konvertieren Sie Tabellenkalkulation in JSON"
 type: docs
-url: /convert-spreadsheet-to-json/
+url: /de/convert-spreadsheet-to-json/
 keywords: "Aspose Cells Cloud, Konvertieren Sie Tabellenkalkulation in JSON, Excel zu JSON API, Aspose.Cells Cloud API, REST API, Tabellenkalkulationskonvertierung"
 description: "Erfahren Sie, wie Sie lokale Excel-Dateien mit der Aspose.Cells Cloud API in JSON konvertieren. Enthält Endpunkt, Parameter, Beispielcode und Fehlerbehandlung für nahtlose Integration."
 weight: 100

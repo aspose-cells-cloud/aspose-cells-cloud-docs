@@ -3,7 +3,7 @@ title: "واجهة برمجة تطبيقات Aspose.Cells Cloud – تحويل �
 second_title: "مستند"
 ArticleTitle: "كيفية تحويل جدول البيانات إلى CSV باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud"
 linktype: "docs"
-url: /convert-spreadsheet-to-csv/
+url: /ar/convert-spreadsheet-to-csv/
 keywords: "Aspose Cells، تحويل CSV، واجهة برمجة تطبيقات Excel، تحويل سحابي"
 description: "تعرّف على كيفية تحويل ملفات Excel (XLS وXLSX وXLSM...) إلى CSV باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. يتضمن خطوات المصادقة، ومثال cURL، وأجزاء من كود SDK، وإدارة الأخطاء."
 weight: 100

@@ -3,7 +3,7 @@ title: "API Aspose.Cells Trim Content – Supprimer les espaces et les sauts de 
 second_title: "Document"
 linktitle: "Trim Content"
 type: docs
-url: /spreadsheet-trim-content/
+url: /fr/spreadsheet-trim-content/
 keywords: "Aspose.Cells, API Trim Content, nettoyage de données Excel, suppression des espaces dans Excel, suppression des sauts de ligne, nettoyage des données de feuille de calcul"
 description: "Utilisez l’API Aspose.Cells Cloud PostTrimContent pour supprimer automatiquement les espaces supplémentaires, les sauts de ligne et les caractères indésirables des cellules Excel. Découvrez le point de terminaison, le format de la requête, le code d’exemple et la gestion des erreurs."
 weight: 100

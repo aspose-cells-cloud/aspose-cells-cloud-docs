@@ -4,7 +4,7 @@ ArticleTitle: "원격 워크시트의 병합 셀 가져오기 – Aspose.Cells C
 second_title: "문서"
 linktitle: "원격 워크시트의 병합 셀 가져오기"
 type: docs
-url: /cells/mergedcells/get
+url: /ko/cells/mergedcells/get
 aliases: []
 keywords: "Aspose Cells, 병합 셀 가져오기, 원격 워크시트, API"
 description: "스프레드시트의 원격 워크시트에서 모든 병합 셀 영역을 검색합니다."

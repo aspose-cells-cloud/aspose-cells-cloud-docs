@@ -3,8 +3,8 @@ title: "Dikey Sayfa Sonu Ayırıcıları Al"
 second_title: "Belge"
 linktitle: "Dikey Sayfa Sonu Ayırıcıları Al"
 type: docs
-url: /page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
+url: /tr/page-breaks/get-vertical-page-breaks/
+aliases: [  /tr/get-vertical-page-breaks-inside-worksheet/ ]
 keywords: "Aspose.Cells, dikey sayfa sonu ayırıcıları, Excel API, bulut hesap tablosu, REST API"
 description: "Aspose.Cells Cloud REST API'sini (v3.0) kullanarak bir Excel çalışma sayfasından dikey sayfa sonu ayırıcılarını alın. HTTPS uç noktasını, gerekli parametreleri, cURL örneğini, yanıt ayrıntılarını, hata işleme ve SDK örneklerini içerir."
 weight: 20

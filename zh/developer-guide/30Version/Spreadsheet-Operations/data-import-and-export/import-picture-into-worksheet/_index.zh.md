@@ -4,7 +4,7 @@ ArticleTitle: "将图片导入 Excel 工作表 – Aspose.Cells Cloud API 指南
 second_title: "文档"
 linktitle: "导入图片"
 type: docs
-url: /import-picture-into-excel-worksheet/
+url: /zh/import-picture-into-excel-worksheet/
 aliases:
   - /import-picture-into-worksheet/
   - /import-data/picture/

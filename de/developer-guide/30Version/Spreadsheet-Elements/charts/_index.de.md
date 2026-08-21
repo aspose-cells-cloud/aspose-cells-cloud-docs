@@ -3,8 +3,8 @@ title: "Arbeiten mit Excel-Diagrammen"
 second_title: "Dokument"
 linktitle: "Diagramme"
 type: docs
-url: /charts/
-aliases: [/working-with-charts/]
+url: /de/charts/
+aliases: [  /de/working-with-charts/ ]
 keywords: "Aspose, Cells, Excel, Diagramm, API, REST, Cloud, Tabellenkalkulation"
 description: "Erfahren Sie, wie Sie Excel-Diagramme mit der Aspose.Cells Cloud API verwalten können. Schritt-für-Schritt-Anleitungen, Codebeispiele und Fehlerbehandlung zum Abrufen, Hinzufügen, Aktualisieren, Löschen und Konvertieren von Diagrammen in Bildformate."
 weight: 100

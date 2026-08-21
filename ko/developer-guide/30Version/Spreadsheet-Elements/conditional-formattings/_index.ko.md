@@ -3,8 +3,8 @@ title: "Excel 조건부 서식 작업"
 second_title: "문서"
 linktitle: "조건부 서식"
 type: docs
-url: /conditional-formattings/
-aliases: [/working-with-conditional-formatting/]
+url: /ko/conditional-formattings/
+aliases: [  /ko/working-with-conditional-formatting/ ]
 keywords: "Excel, 조건부 서식, Aspose.Cells Cloud, API"
 description: "Aspose.Cells Cloud API는 엑셀에서 조건부 서식 규칙을 검색, 추가, 수정 및 삭제할 수 있는 엔드포인트를 제공하여 워크시트 데이터의 동적 시각적 분석을 가능하게 합니다."
 weight: 100

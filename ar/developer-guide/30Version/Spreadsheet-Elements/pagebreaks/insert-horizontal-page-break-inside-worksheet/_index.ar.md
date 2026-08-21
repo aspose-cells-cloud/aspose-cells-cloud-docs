@@ -3,8 +3,8 @@ title: "إضافة فاصل صفحات أفقي"
 second_title: "مستند"
 linktype: "إضافة فاصل صفحات أفقي"
 type: docs
-url: /page-breaks/add-horizontal-page-break/
-aliases: [/insert-horizontal-page-break-inside-worksheet/]
+url: /ar/page-breaks/add-horizontal-page-break/
+aliases: [  /ar/insert-horizontal-page-break-inside-worksheet/ ]
 keywords: "فاصل صفحات أفقي، Aspose.Cells Cloud، Excel API، REST، SDK، ورقة عمل، cURL"
 description: "تعلم كيفية إضافة فاصل صفحات أفقي إلى ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. يتضمن تفاصيل الطلب، مثالًا بـ cURL، وأجزاء من أكواد SDK لعدة لغات برمجة."
 weight: 30

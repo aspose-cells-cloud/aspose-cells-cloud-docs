@@ -1,8 +1,8 @@
 ---
 title: "รับข้อมูลคำอธิบายแผนภูมิจากแผ่นงาน"
 type: docs
-url: /charts/legend/get/
-aliases: [/get-chart-legend-from-a-worksheet/]
+url: /th/charts/legend/get/
+aliases: [  /th/get-chart-legend-from-a-worksheet/ ]
 weight: 80
 keywords: "Aspose.Cells, คำอธิบายแผนภูมิ, REST API, Excel, SDK บนคลาวด์, รับข้อมูลคำอธิบายแผนภูมิ, แผ่นงาน, สเปรดชีต"
 description: "ดึงข้อมูลคำอธิบายของแผนภูมิที่อยู่ในแผ่นงานของไฟล์สมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 3.0) ประกอบด้วย endpoint, พารามิเตอร์, ตัวอย่าง cURL และโค้ดตัวอย่าง SDK"

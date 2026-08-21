@@ -3,7 +3,7 @@ title: "استيراد مصفوفة أعداد عشرية (Double Array) إلى 
 second_title: "مستند"
 linktitle: "استيراد مصفوفة أعداد عشرية"
 type: docs
-url: /import-double-array-into-excel-worksheet/
+url: /ar/import-double-array-into-excel-worksheet/
 aliases:
   - /import-double-array-into-worksheet/
   - /import-data/double-array/

@@ -1,7 +1,7 @@
 ---
 title: "รับแกนหมวดหมู่ที่สองของแผนภูมิ"
 type: docs
-url: /charts/second-category-axis/get/
+url: /th/charts/second-category-axis/get/
 weight: 60
 keywords: "รับแกนหมวดหมู่ที่สองของแผนภูมิ, Aspose.Cells Cloud API, แกนแผนภูมิ Excel, REST API, แกนหมวดหมู่ที่สอง, Aspose.Cells"
 description: "ดึงข้อมูลแกนหมวดหมู่ที่สองของแผนภูมิในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API ประกอบด้วยรูปแบบคำขอ พารามิเตอร์ ตัวอย่าง cURL โครงสร้างการตอบกลับ โค้ดสถานะ HTTP และหมายเหตุการใช้งาน"

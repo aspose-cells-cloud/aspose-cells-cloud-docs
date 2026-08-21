@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man tar bort arbetsark från Excel – Ta bort ark från arbetsböcker"
 linktitle: "Ta bort arbetsark från kalkylark"
 type: docs
-url: /delete-worksheet-from-spreadsheet/
+url: /sv/delete-worksheet-from-spreadsheet/
 keywords: "Aspose Cells, API för borttagning av arbetsark, borttagning av Excel-ark, molnbaserat kalkylark, REST API"
 description: "Lär dig hur du tar bort ett arbetsark från en Excel-fil med Aspose.Cells Cloud API. Innehåller endpoint, parametrar, exempel på cURL och SDK-exempel."
 weight: 100

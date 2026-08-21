@@ -1,7 +1,7 @@
 ---
 title: "Zweite Kategorienachse eines Diagramms abrufen"
 type: docs
-url: /charts/second-category-axis/get/
+url: /de/charts/second-category-axis/get/
 weight: 60
 keywords: "Zweite Kategorienachse eines Diagramms abrufen, Aspose.Cells Cloud API, Excel-Diagrammachse, REST API, zweite Kategorienachse, Aspose.Cells"
 description: "Rufen Sie die zweite Kategorienachse eines Diagramms in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API ab. Enthält Anforderungsformat, Parameter, Beispiel-cURL, Antwortschema, HTTP-Statuscodes und Nutzungshinweise."

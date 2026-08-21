@@ -3,8 +3,8 @@ title: "قفل ملفات Excel"
 second_title: "مستند"
 linktitle: "قفل ملفات Excel"
 type: docs
-url: /lock-excel-files/
-aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+url: /ar/lock-excel-files/
+aliases: [  /ar/lock/without-storage/ , /ar/lock/ , /ar/lock/without-using-storage/ ]
 keywords: "قفل, Excel, API, Aspose.Cells, Cloud, REST, Workbook, Spreadsheet, SDK"
 description: "تعرّف على كيفية قفل كتب عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API (الإصدار 3.0). يشمل النهاية (Endpoint) عبر HTTPS، المصادقة، طلب cURL، مخطط الاستجابة، وأمثلة لرموز SDK بلغات C#، Java، Python، وغيرهما."
 ArticleTitle: "قفل ملفات Excel – مستندات واجهة Aspose.Cells Cloud API"

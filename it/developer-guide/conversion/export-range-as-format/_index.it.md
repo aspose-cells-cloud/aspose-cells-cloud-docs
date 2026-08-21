@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Come esportare un intervallo di foglio di calcolo remoto in altri formati: guida passo-passo"
 linktitle: "Esporta intervallo come formato"
 type: docs
-url: /export-range-as-format/
+url: /it/export-range-as-format/
 keywords: "Aspose Cells, esporta intervallo Excel, PDF, PNG, CSV, API cloud, conversione foglio di calcolo"
 description: "Scopri come convertire un intervallo Excel specifico memorizzato in Aspose Cells Cloud in PDF, PNG, CSV o altri formati. Include dettagli sull’endpoint, parametri, richieste di esempio, gestione della risposta e informazioni sugli errori."
 weight: 100

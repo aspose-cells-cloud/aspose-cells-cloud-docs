@@ -3,7 +3,7 @@ title: "修改 Excel 工作簿的密码保护"
 second_title: "文档"
 linktitle: "修改 Excel 文件密码"
 type: docs
-url: /workbook/password/modify/
+url: /zh/workbook/password/modify/
 aliases:
   - /set-modify-password-of-excel-workbooks/
   - /workbook/modify-password/

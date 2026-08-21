@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud API kullanarak Excel çalışma sayfasına bo�
 second_title: "Belge"
 linktitle: "Satır"
 type: docs
-url: /rows/add/row/
-aliases: [/add-an-empty-row-in-a-worksheet/]
+url: /tr/rows/add/row/
+aliases: [  /tr/add-an-empty-row-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, boş satır ekleme, çalışma sayfası, REST API, satır ekleme, bulut tablolama"
 description: "Aspose.Cells Cloud REST API'yi kullanarak Excel çalışma sayfasına boş bir satır ekleyin. Hızlı geliştirme için birden fazla SDK'yi (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) destekler."
 weight: 20

@@ -4,7 +4,7 @@ ArticleTitle: "Konvertera tabell till CSV – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Konvertera tabell till CSV"
 type: docs
-url: /cells/convert/table/csv
+url: /sv/cells/convert/table/csv
 aliases: []
 keywords: "Konvertera tabell till CSV, Aspose.Cells, molntjänst"
 description: "Konverterar en tabell i ett kalkylark på en lokal enhet till en CSV-fil."

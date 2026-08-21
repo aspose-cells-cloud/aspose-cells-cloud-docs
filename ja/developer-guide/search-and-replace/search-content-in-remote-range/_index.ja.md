@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "リモートExcelスプレッドシートのテキストを検索 – 特定の範囲でデータを検出"
 linktype: "検索範囲内のリモートコンテンツ"
 type: docs
-url: /search-content-in-remote-range/
+url: /ja/search-content-in-remote-range/
 keywords: "Aspose.Cells, Excel API, テキスト検索, リモート範囲, クラウドスプレッドシート, REST API, データ検出"
 description: "Aspose Cloudに保存されたExcelワークブックの特定範囲内で、テキスト、数値、または数式を検索します。"
 weight: 100

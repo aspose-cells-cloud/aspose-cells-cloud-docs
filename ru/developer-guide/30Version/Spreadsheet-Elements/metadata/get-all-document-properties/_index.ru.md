@@ -3,8 +3,8 @@ title: "Получить все свойства документа"
 second_title: "Документ"
 linktitle: "Получить все"
 type: docs
-url: /document-properties/get-all/
-aliases: [/get-all-document-properties/]
+url: /ru/document-properties/get-all/
+aliases: [  /ru/get-all-document-properties/ ]
 keywords: "Получить все свойства документа, Aspose.Cells Cloud, свойства документов Excel, REST API, SDK, метаданные Excel"
 description: "Получение всех свойств документа из файла Excel с использованием REST API Aspose.Cells Cloud. Конечная точка работает со всеми поддерживаемыми SDK и языками программирования."
 ArticleTitle: "Получить все свойства документа – API Aspose.Cells Cloud"

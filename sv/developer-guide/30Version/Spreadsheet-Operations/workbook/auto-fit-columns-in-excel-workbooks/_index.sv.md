@@ -3,7 +3,7 @@ title: "Automatisk anpassning av kolumner i en Excel-fil"
 second_title: "Dokument"
 linktitle: "Kolumner"
 type: docs
-url: /autofit-columns-on-an-excel-file/
+url: /sv/autofit-columns-on-an-excel-file/
 aliases:
   [
     /auto-fit-columns-in-excel-workbooks,

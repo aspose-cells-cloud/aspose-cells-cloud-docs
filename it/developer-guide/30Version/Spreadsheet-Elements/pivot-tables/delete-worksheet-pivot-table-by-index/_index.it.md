@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: Elimina
 type: docs
 url: /it/pivot-tables/delete/
-aliases: [/it/delete-worksheet-pivot-table-by-index/]
+aliases: [  /it/delete-worksheet-pivot-table-by-index/ ]
 keywords: "Aspose.Cells, tabella pivot, eliminare, Excel, REST API"
 description: "Eliminare una tabella pivot da un foglio Excel utilizzando l'API REST di Aspose.Cells Cloud (v3.0). Include il formato della richiesta, un esempio cURL, codici di errore e frammenti di SDK per C#, Java, Python, Node.js."
 weight: 70

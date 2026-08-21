@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Добавление"
 type: docs
 url: /ru/list-objects/add/
-aliases: [/add-a-list-object-or-table-inside-the-worksheet/, /tables/add/]
+aliases: [  /ru/add-a-list-object-or-table-inside-the-worksheet/ , /ru/tables/add/ ]
 keywords: "Aspose.Cells Cloud, Excel API, объект списка, таблица, REST API, рабочий лист"
 description: "Узнайте, как добавить объект списка (таблицу Excel) в рабочий лист с помощью REST API Aspose.Cells Cloud. Включает endpoint, параметры, шаги аутентификации, пример cURL и примеры кода SDK."
 weight: 10

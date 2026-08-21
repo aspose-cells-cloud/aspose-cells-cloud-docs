@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud API を使用してローカルのスプレッドシートを PDF に変換する方法"
 linktitle: "スプレッドシートを PDF に変換"
 type: docs
-url: /convert-spreadsheet-to-pdf/
+url: /ja/convert-spreadsheet-to-pdf/
 keywords: "Aspose.Cells Cloud, スプレッドシートから PDF への変換, Excel 変換, クラウド API, PDF 生成, REST API, v4.0"
 description: "ローカルのスプレッドシートを Aspose.Cells Cloud API を使用して PDF に変換するステップ・バイ・ステップ・ガイド。リクエスト構文、パラメータ、レスポンスの詳細、エラー処理、実用的なユースケースを含みます。"
 weight: 100

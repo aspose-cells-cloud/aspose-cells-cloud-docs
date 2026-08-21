@@ -1,8 +1,8 @@
 ---
 title: "Trabajo con tablas dinámicas mediante la tarea CellsObjectOperate"
 type: docs
-url: /tasks/cells-object-operate/pivottable/
-aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
+url: /es/tasks/cells-object-operate/pivottable/
+aliases: [  /es/working-with-pivot-table-using-cellsobjectoperate-task/ ]
 keywords: "API de tabla dinámica de Aspose Cells, CellsObjectOperate, API REST de Excel"
 description: "Aprenda a generar una tabla dinámica en Excel utilizando la tarea CellsObjectOperate de Aspose.Cells Cloud. Incluye un ejemplo en cURL, guía de parámetros y referencias a SDK."
 weight: 10

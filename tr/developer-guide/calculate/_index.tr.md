@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Veri Becerilerinizi Geliştirin: Temel Excel Hesaplamalarını Öğrenin – Topla, Çıkar, Çarp, Böl ve Daha Fazlası"
 linktitle: "Hesapla"
 type: docs
-url: /calculate/
+url: /tr/calculate/
 keywords: "Aspose.Cells Cloud, Excel hesaplama API'si, SUM, COUNT, AVERAGE, MIN, MAX, temel matematik işlemleri, REST API, elektronik tablo hesaplamaları"
 description: "Aspose.Cells Cloud REST API'sini kullanarak Excel çalışma sayfalarında SUM, COUNT, AVERAGE, MIN, MAX ve temel aritmetik işlemleri nasıl hesaplayacağınızı öğrenin. İstek sözdizimi, örnek kod, yanıtlar ve hata işleme içerir."
 weight: 20

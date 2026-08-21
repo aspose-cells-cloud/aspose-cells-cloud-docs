@@ -3,7 +3,7 @@ title: "استيراد البيانات إلى ملفات Excel وتصدير ا�
 second_title: "Document"
 linktitle: "استيراد وتصدير البيانات"
 type: docs
-url: /data-import-and-export/
+url: /ar/data-import-and-export/
 keywords: "Aspose.Cells Cloud, استيراد البيانات, تصدير Excel, API, CSV, JSON, صورة, مصفوفة"
 description: "تعرّف على كيفية استيراد البيانات من ملفات CSV وJSON والمصفوفات والصور إلى ملفات Excel، وتصدير كتب العمل والرسوم البيانية والأشكال إلى PDF وPNG وغير ذلك باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud (النسخة 3.0)."
 weight: 25

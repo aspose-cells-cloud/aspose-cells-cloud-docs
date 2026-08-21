@@ -2,8 +2,8 @@
 title: "Создание файлов Excel и построение отчетов"
 second_title: "Документ"
 type: docs
-url: /creating-files-and-reports/
-aliases: [/workbook/create/]
+url: /ru/creating-files-and-reports/
+aliases: [  /ru/workbook/create/ ]
 linktitle: "Создание Excel-файлов и отчетов"
 keywords: "Aspose.Cells Cloud, Excel API, создание рабочей книги, отчет Excel, SmartMarker, шаблон, генерация отчетов"
 description: "Узнайте, как создавать пустые рабочие книги Excel, генерировать файлы на основе шаблонов и создавать отчеты с использованием функции SmartMarker через Aspose.Cells Cloud API, включая примеры кода."

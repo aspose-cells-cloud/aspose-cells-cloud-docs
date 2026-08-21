@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "แพลตฟอร์มการรวมข้อมูลจากหลายแหล่งสำหรับ Excel – API นำเข้าและแปลงข้อมูลอัตโนมัติ Aspose.Cells Cloud"
 linktitle: "นำเข้าข้อมูลลงในสมุดงาน"
 type: docs
-url: /import-data-into-spreadsheet/
+url: /th/import-data-into-spreadsheet/
 keywords: "Aspose Cells, API นำเข้าข้อมูล, CSV ไปยัง Excel, JSON ไปยัง Excel, XML ไปยัง Excel, สมุดงานบนคลาวด์, REST API"
 description: "นำเข้าข้อมูล CSV, JSON หรือ XML ลงในสมุดงาน Excel ด้วย REST API ของ Aspose.Cells Cloud ศึกษาเกี่ยวกับรูปแบบคำขอ พารามิเตอร์ ตัวอย่างโค้ด SDK และการจัดการข้อผิดพลาด"
 weight: 100

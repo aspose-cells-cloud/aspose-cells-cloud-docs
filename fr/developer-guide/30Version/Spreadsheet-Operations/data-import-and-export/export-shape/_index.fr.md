@@ -3,8 +3,8 @@ title: "Exporter des formes"
 second_title: "Document"
 linktitle: "Forme"
 type: docs
-url: /export-excel-shape-to-different-formats/
-aliases: [/export/excel-shape-to-different-formats/]
+url: /fr/export-excel-shape-to-different-formats/
+aliases: [  /fr/export/excel-shape-to-different-formats/ ]
 keywords: "Exporter des formes, Aspose.Cells Cloud, Exportation de formes Excel, Formats d’image, API REST, SDK"
 description: "Découvrez comment exporter des formes Excel vers divers formats d’image (PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF) à l’aide de l’API REST Aspose.Cells Cloud et des SDK."
 weight: 20

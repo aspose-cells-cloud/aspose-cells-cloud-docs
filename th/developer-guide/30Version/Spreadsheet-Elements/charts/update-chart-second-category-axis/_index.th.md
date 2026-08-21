@@ -1,7 +1,7 @@
 ---
 title: "อัปเดตแกนหมวดหมู่ที่สองของแผนภูมิ"
 type: docs
-url: /charts/second-category-axis/update/
+url: /th/charts/second-category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Chart, Second Category Axis, REST API, Update Chart, Excel, Cloud API"
 description: "เรียนรู้วิธีอัปเดตแกนหมวดหมู่ที่สองของแผนภูมิในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API"

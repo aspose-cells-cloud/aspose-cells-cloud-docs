@@ -3,8 +3,8 @@ title: "Ersätt text i ett Excel-arbetsark – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Ersätt i arbetsark"
 type: docs
-url: /worksheets/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /sv/worksheets/replace-text/
+aliases: [  /sv/replace-text-in-a-workbook/ ]
 keywords: "Aspose.Cells, ersätt text, Excel, REST API, kalkylark, arbetsark"
 description: "Lär dig hur du ersätter text i ett Excel-arbetsark med Aspose.Cells Cloud API (v3.0). Inkluderar förutsättningar, autentisering, begärsyntax, cURL-exempel, SDK-kodexempel, svarsdetaljer och felhantering."
 ArticleTitle: "Ersätt text i ett Excel-arbetsark – Aspose.Cells Cloud API"

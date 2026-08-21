@@ -1,7 +1,7 @@
 ---
 title: "获取图表第二分类轴"
 type: docs
-url: /charts/second-category-axis/get/
+url: /zh/charts/second-category-axis/get/
 weight: 60
 keywords: "获取图表第二分类轴, Aspose.Cells Cloud API, Excel 图表坐标轴, REST API, 第二分类轴, Aspose.Cells"
 description: "通过 Aspose.Cells Cloud REST API 获取 Excel 工作表中图表的第二分类轴。包含请求格式、参数、示例 cURL 命令、响应模式、状态码及使用说明。"

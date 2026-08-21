@@ -5,7 +5,7 @@ description: "Convertir un graphique à partir d’un classeur Excel stocké dan
 ArticleTitle: "Comment convertir une feuille de calcul locale en fichier PDF : guide étape par étape"
 linktitle: "Convertir une feuille en PDF"
 type: docs
-url: /export-chart-as-format/
+url: /fr/export-chart-as-format/
 keywords: "Aspose.Cells Cloud, exporter un graphique, API, PDF, PNG, SVG, Excel, REST, conversion cloud"
 weight: 100
 ---

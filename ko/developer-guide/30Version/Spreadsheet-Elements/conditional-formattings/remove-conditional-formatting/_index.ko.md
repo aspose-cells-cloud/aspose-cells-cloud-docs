@@ -1,7 +1,7 @@
 ---
 title: "조건부 서식 삭제 – Aspose.Cells Cloud API 참조"
 type: docs
-url: /conditional-formattings/delete/
+url: /ko/conditional-formattings/delete/
 aliases:
   - /remove-conditional-formatting/
 keywords: "Aspose.Cells, 조건부 서식, 삭제, API, Excel, 클라우드"

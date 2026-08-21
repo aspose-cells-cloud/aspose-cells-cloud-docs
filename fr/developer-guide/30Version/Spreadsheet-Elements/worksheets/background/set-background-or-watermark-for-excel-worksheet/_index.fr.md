@@ -3,8 +3,8 @@ title: "Définir une image d’arrière-plan sur une feuille de calcul Excel"
 ArticleTitle: "Définir une image d’arrière-plan sur une feuille de calcul Excel – Guide de l’API Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
+url: /fr/worksheets/background/add/
+aliases: [  /fr/set-background-or-watermark-for-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, feuille de calcul, arrière-plan, API REST, SDK, ajouter image"
 description: "Découvrez comment ajouter une image d’arrière-plan (PNG, JPEG, BMP) à une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut l’endpoint, les paramètres requis, les étapes d’authentification, un exemple cURL et des exemples de code SDK."
 weight: 180

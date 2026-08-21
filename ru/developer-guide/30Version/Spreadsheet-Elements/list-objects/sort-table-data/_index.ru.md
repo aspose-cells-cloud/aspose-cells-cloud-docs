@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Сортировка"
 type: docs
 url: /ru/list-objects/sort-data/
-aliases: [/get-a-list-object-or-table-inside-the-worksheet/, /tables/sort-data/]
+aliases: [  /ru/get-a-list-object-or-table-inside-the-worksheet/ , /ru/tables/sort-data/ ]
 keywords: "Aspose.Cells Cloud, Excel, ListObject, Сортировка данных, REST API, Рабочий лист"
 description: "Узнайте, как сортировать данные ListObject (таблицы) в рабочем листе Excel с помощью REST API Aspose.Cells Cloud (версия 3.0). Приведены конечная точка, параметры, пример запроса cURL и примеры SDK."
 weight: 40

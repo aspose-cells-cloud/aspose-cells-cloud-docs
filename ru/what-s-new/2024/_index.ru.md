@@ -4,7 +4,7 @@ second_title: "Документ"
 linktype: "Что нового в 2024 году"
 type: docs
 weight: 20
-url: /new-features/2024/
+url: /ru/new-features/2024/
 keywords: "Aspose.Cells, Cloud, 2024, новые функции, API удаления дубликатов, API извлечения текста, преобразование данных, электронная таблица, Excel, CSV, PDF, REST API"
 description: "Обзор новых функций и улучшений в Aspose.Cells Cloud за 2024 год, включая API удаления дубликатов, API извлечения текста и улучшения в области преобразования данных."
 ArticleTitle: "Новые функции и улучшения Aspose.Cells Cloud в 2024 году"

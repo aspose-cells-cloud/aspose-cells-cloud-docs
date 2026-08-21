@@ -4,8 +4,8 @@ ArticleTitle: "Lägg till ett Excel-ark - Aspose.Cells Cloud API-guide"
 second_title: "Dokument"
 linktitle: "Lägg till"
 type: docs
-url: /worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
+url: /sv/worksheets/add/
+aliases: [  /sv/add-a-new-excel-worksheet/ ]
 keywords: "Lägg till Excel-ark, Aspose.Cells Cloud, REST API, PUT-ark, Excel-arbetsbok, API-förfrågan"
 description: "Steg-för-steg-guide för att lägga till ett nytt ark i en Excel-arbetsbok med Aspose.Cells Cloud REST API, inklusive förfrågningsdetaljer, ett cURL-exempel och SDK-kodfragment för flera språk."
 weight: 20

@@ -4,8 +4,8 @@ ArticleTitle: "Rileva tutte le celle vuote in un foglio di lavoro Excel – Guid
 second_title: "Documento"
 linktitle: "Rileva tutte le celle vuote"
 type: docs
-url: /autofilter/match-all-blank/
-aliases: [/match-all-blank-cells-in-the-list/]
+url: /it/autofilter/match-all-blank/
+aliases: [  /it/match-all-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells, celle vuote, AutoFilter, API REST, Excel"
 description: "Scopri come utilizzare l'API REST Aspose.Cells Cloud per filtrare e rilevare tutte le celle vuote in un foglio di lavoro Excel. Include endpoint, parametri, fasi di autenticazione, esempio cURL e frammenti di codice SDK per C#, Java, Python e altro."
 weight: 100

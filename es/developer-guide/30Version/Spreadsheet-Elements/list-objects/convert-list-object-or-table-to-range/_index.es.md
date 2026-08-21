@@ -4,7 +4,7 @@ ArticleTitle: "Convertir objeto de lista a rango usando la API de Aspose.Cells C
 second_title: "Documento"
 linktype: "Conversión"
 type: docs
-url: /list-objects/to-range/
+url: /es/list-objects/to-range/
 aliases:
   - /convert-list-object-or-table-to-range/
   - /tables/to-range/

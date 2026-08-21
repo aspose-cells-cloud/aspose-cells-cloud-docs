@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "البدء السريع مع Aspose.Cells Cloud"
 linktype: "البدء السريع"
 type: docs
-url: /quickstart/
+url: /ar/quickstart/
 description: "يتيح لك Aspose.Cells Cloud إنشاء ملفات Excel وتحويلها ودمجها وتقسيمها وحمايتها، وإجراء عمليات داخلية على الكائنات، من بين ميزات عديدة أخرى."
 weight: 20
 keywords: "Aspose.Cells Cloud، Excel، جدول بيانات، API، Cloud SDK، REST API، PDF، CSV، JSON، البدء السريع"

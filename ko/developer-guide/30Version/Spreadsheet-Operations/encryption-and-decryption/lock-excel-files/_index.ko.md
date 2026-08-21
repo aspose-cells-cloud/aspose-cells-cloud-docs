@@ -3,8 +3,8 @@ title: "엑셀 파일 잠금"
 second_title: "문서"
 linktitle: "엑셀 파일 잠금"
 type: docs
-url: /lock-excel-files/
-aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+url: /ko/lock-excel-files/
+aliases: [  /ko/lock/without-storage/ , /ko/lock/ , /ko/lock/without-using-storage/ ]
 keywords: "잠금, 엑셀, API, Aspose.Cells, 클라우드, REST, 워크북, 스프레드시트, SDK"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 엑셀 워크북을 잠그는 방법을 알아보세요. HTTPS 엔드포인트, 인증, cURL 요청, 응답 스키마, C#, Java, Python 등 다양한 언어의 SDK 코드 예제가 포함됩니다."
 ArticleTitle: "엑셀 파일 잠금 – Aspose.Cells Cloud API 문서"

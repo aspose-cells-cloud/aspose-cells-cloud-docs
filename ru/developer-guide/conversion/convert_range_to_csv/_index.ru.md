@@ -4,7 +4,7 @@ ArticleTitle: "Преобразование диапазона в CSV — Aspose
 second_title: "Документ"
 linktitle: "Преобразование диапазона в CSV"
 type: docs
-url: /cells/convert/range/csv
+url: /ru/cells/convert/range/csv
 aliases: []
 keywords: "преобразование, csv, диапазон, Aspose.Cells"
 description: "Преобразует диапазон электронной таблицы, расположенный на локальном диске, в файл CSV."

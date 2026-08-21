@@ -4,7 +4,7 @@ second_title: "文档"
 linktype: "图表"
 type: docs
 url: /zh/charts/
-aliases: [/working-with-charts/]
+aliases: [  /zh/working-with-charts/ ]
 keywords: "Aspose, Cells, Excel, 图表, API, REST, 云, 电子表格"
 description: "了解如何使用 Aspose.Cells Cloud API 管理 Excel 图表。提供分步指南、代码示例以及错误处理，涵盖检索、添加、更新、删除图表，以及将图表转换为图像。"
 weight: 100

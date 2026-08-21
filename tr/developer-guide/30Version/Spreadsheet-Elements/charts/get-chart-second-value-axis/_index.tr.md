@@ -1,7 +1,7 @@
 ---
 title: "Grafik İkinci Değer Ekseni Alma"
 type: docs
-url: /charts/second-value-axis/get/
+url: /tr/charts/second-value-axis/get/
 weight: 60
 keywords: Aspose.Cells, grafik ikinci değer ekseni, Excel, REST API, bulut, API, Excel grafik ekseni
 description: Aspose.Cells Cloud REST API kullanılarak bir Excel çalışma sayfasındaki belirli bir grafiğin ikinci değer ekseni alınır.

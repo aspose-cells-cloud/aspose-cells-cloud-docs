@@ -3,7 +3,7 @@ title: "Importer un tableau de doubles dans une feuille Excel"
 second_title: "Document"
 linktitle: "Importer un tableau de doubles"
 type: docs
-url: /import-double-array-into-excel-worksheet/
+url: /fr/import-double-array-into-excel-worksheet/
 aliases:
   - /import-double-array-into-worksheet/
   - /import-data/double-array/

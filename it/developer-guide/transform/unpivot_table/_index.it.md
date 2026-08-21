@@ -4,7 +4,7 @@ ArticleTitle: "Unpivot Table – Aspose.Cells Cloud API"
 second_title: "Documento"
 linktitle: "Unpivot Table"
 type: docs
-url: /cells/unpivot/table
+url: /it/cells/unpivot/table
 aliases: []
 keywords: "Aspose.Cells, Unpivot, Trasformazione"
 description: "Inverti righe e colonne nel foglio elettronico."

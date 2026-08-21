@@ -3,7 +3,7 @@ title: "แปลงข้อความในสเปรดชีตระย
 ArticleTitle: "แปลงข้อความในสเปรดชีตระยะไกล – Aspose.Cells Cloud"
 second_title: "เอกสาร"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
+url: /th/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
 aliases: []
 keywords: "Aspose.Cells, การแปลงข้อความ, API"
 description: "แปลงข้อความในช่วงที่ระบุของแผ่นงาน รวมถึงการแปลงตัวเลข การแทนที่อักขระ การจัดการการขึ้นบรรทัดใหม่ และการปรับให้ตัวอักษรที่มีเครื่องหมายเน้นเป็นรูปแบบไม่มีเครื่องหมายเน้น"

@@ -4,8 +4,8 @@ ArticleTitle: "ดึงรายการข้อความจากสม�
 second_title: "เอกสาร"
 linktype: "ได้ในสมุดงาน"
 type: docs
-url: /workbook/get-text-items/
-aliases: [/get-text-items-from-a-workbook/]
+url: /th/workbook/get-text-items/
+aliases: [  /th/get-text-items-from-a-workbook/ ]
 weight: 10
 keywords: "Excel, Aspose.Cells Cloud, REST API, สเปรดชีต, ดึงรายการข้อความ, สมุดงาน"
 description: "ดึงรายการข้อความจากสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API ซึ่งรองรับผ่าน SDK สำหรับ C#, Java, Python, PHP, Ruby, Go, Node.js, Perl และ Swift"

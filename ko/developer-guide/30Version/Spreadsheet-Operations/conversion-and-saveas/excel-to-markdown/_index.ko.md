@@ -3,7 +3,7 @@ title: "엑셀을 마크다운으로 변환"
 second_title: "문서"
 linktitle: "엑셀 → 마크다운"
 type: docs
-url: /convert-excel-file-to-markdown-file/
+url: /ko/convert-excel-file-to-markdown-file/
 keywords: "엑셀, 마크다운, 변환, Aspose.Cells Cloud, REST API, 엑셀을 마크다운으로 변환, aspose cells markdown api, 엑셀 마크다운 내보내기"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크시트를 마크다운으로 변환 – cURL 예제, SDK 스니펫, 필요 파라미터 및 인증 세부 정보 포함."
 weight: 100

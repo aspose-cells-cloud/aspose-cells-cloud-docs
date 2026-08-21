@@ -1,8 +1,8 @@
 ---
 title: "Supprimer une zone de cellules – Documentation de l’API Aspose.Cells Cloud"
 type: docs
-url: /conditional-formattings/delete-cell-area/
-aliases: [/remove-cell-area-from-conditional-formatting/]
+url: /fr/conditional-formattings/delete-cell-area/
+aliases: [  /fr/remove-cell-area-from-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, Supprimer une zone de cellules, API de mise en forme conditionnelle, API REST Excel"
 description: "Utilisez l’API REST Aspose.Cells Cloud pour supprimer une zone de cellules spécifique d’une règle de mise en forme conditionnelle dans une feuille Excel. Inclut des exemples ASP.NET, Java et Python."
 ArticleTitle: "Supprimer une zone de cellules – Documentation de l’API Aspose.Cells Cloud"

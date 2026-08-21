@@ -1,7 +1,7 @@
 ---
 title: "الحصول على الخلية الأولى (A1) من ورقة عمل Excel"
 type: docs
-url: /get-first-cell-from-excel-worksheet/
+url: /ar/get-first-cell-from-excel-worksheet/
 weight: 20
 keywords: "Aspose.Cells Cloud, Excel, REST API, Get First Cell, Worksheet, A1, API v3"
 description: "تعرّف على كيفية استرجاع الخلية الأولى (A1) في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API الإصدار 3.0. يتضمّن طلب cURL، واستجابة JSON، وأمثلة على الأخطاء، ونماذج SDK لـ C# وJava وPHP وPython وغيرها."

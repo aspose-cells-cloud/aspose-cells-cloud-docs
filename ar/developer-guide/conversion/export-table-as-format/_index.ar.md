@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيفية تصدير جدول جدول بيانات عن بُعد إلى تنسيق آخر: دليل خطوة بخطوة"
 linktype: "تصدير الجدول إلى تنسيق محدد"
 type: docs
-url: /export-table-as-format/
+url: /ar/export-table-as-format/
 keywords: "Aspose.Cells, تصدير الجدول, Excel إلى PDF, واجهة برمجة تطبيقات السحابة, REST"
 description: "تصدير جدول Excel المخزن عن بُعد إلى تنسيقات PDF و PNG و CSV و JSON أو تنسيقات أخرى باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. نقطة نهاية آمنة باستخدام HTTPS ومصادقة JWT مع أمثلة ل_sdk_."
 weight: 100

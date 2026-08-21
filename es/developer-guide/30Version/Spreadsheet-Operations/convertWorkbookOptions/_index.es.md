@@ -3,7 +3,7 @@ title: "Opciones de conversión de libro"
 second_title: "Documentos"
 linktitle: "Opciones de conversión de libro"
 type: docs
-url: /convert-workbook-options/
+url: /es/convert-workbook-options/
 keywords: "Aspose.Cells, ConvertWorkbookOptions, conversión de Excel, PDF, CSV, API"
 description: "Opciones de conversión de libro: configure la conversión de libros de Excel a PDF, CSV, HTML y otros formatos mediante la API de Aspose.Cells Cloud."
 weight: 79

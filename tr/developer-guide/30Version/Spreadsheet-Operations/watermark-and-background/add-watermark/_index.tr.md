@@ -3,8 +3,8 @@ title: "Excel dosyalarına filigran ekleme"
 second_title: "Belge"
 linktitle: "Excel Dosyalarına Filigran Ekleme"
 type: docs
-url: /add-watermark-into-excel-files/
-aliases: [/watermark/]
+url: /tr/add-watermark-into-excel-files/
+aliases: [  /tr/watermark/ ]
 keywords: "Excel dosyasına filigran ekleme, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Aspose.Cells Cloud REST API (v3.0) kullanarak Excel çalışma kitaplarına metin filigranı nasıl ekleyeceğinizi öğrenin. cURL örneği, gerekli parametreler ve yanıt ayrıntılarını içerir."
 weight: 39

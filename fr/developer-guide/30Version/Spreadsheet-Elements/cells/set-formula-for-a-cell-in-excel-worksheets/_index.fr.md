@@ -1,7 +1,7 @@
 ---
 title: "Définir une formule de cellule dans des feuilles de calcul Excel"
 type: docs
-url: /set-formula-for-a-cell-in-excel-worksheets/
+url: /fr/set-formula-for-a-cell-in-excel-worksheets/
 weight: 80
 keywords: "Excel, Aspose.Cells, API REST, Définir une formule, Feuille de calcul, Cellule, SDK Cloud, cURL"
 description: "Découvrez comment définir une formule pour une cellule spécifique dans une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud. Inclut un exemple cURL, une liste complète des paramètres, la gestion des erreurs et des exemples de code SDK."

@@ -1,8 +1,8 @@
 ---
 title: "Получение заголовка диаграммы из рабочего листа"
 type: docs
-url: /charts/title/get/
-aliases: [/get-chart-title-from-a-worksheet/]
+url: /ru/charts/title/get/
+aliases: [  /ru/get-chart-title-from-a-worksheet/ ]
 weight: 120
 keywords:
   - "Aspose.Cells Cloud"

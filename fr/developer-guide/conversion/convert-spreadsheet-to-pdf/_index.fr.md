@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment convertir une feuille de calcul locale en PDF à l’aide de l’API Aspose.Cells Cloud"
 linktitle: "Convertir une feuille de calcul en PDF"
 type: docs
-url: /convert-spreadsheet-to-pdf/
+url: /fr/convert-spreadsheet-to-pdf/
 keywords: "Aspose.Cells Cloud, feuille de calcul en PDF, conversion Excel, API cloud, génération PDF, API REST, v4.0"
 description: "Guide étape par étape pour convertir une feuille de calcul locale en PDF à l’aide de l’API Aspose.Cells Cloud. Inclut la syntaxe de la requête, les paramètres, les détails de la réponse, la gestion des erreurs et des cas d’utilisation pratiques."
 weight: 100

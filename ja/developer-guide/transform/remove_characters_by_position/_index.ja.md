@@ -4,7 +4,7 @@ ArticleTitle: "位置に基づいて文字を削除する – Aspose.Cells Cloud
 second_title: "ドキュメント"
 linktitle: "位置に基づいて文字を削除する"
 type: docs
-url: /cells/content/remove/characters-by-position
+url: /ja/cells/content/remove/characters-by-position
 aliases: []
 keywords: "Aspose.Cells, 文字削除, API"
 description: "スプレッドシート内でセルから位置に基づいて文字を削除します。"

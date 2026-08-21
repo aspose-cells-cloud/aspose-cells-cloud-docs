@@ -4,7 +4,7 @@ ArticleTitle: "إزالة الأحرف من جدول بيانات عن بُعد 
 second_title: "مستند"
 linktype: "remove-characters-in-remote-spreadsheet"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
+url: /ar/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/characters
 aliases: []
 keywords: "Aspose.Cells, إزالة الأحرف, معالجة النصوص"
 description: "يحذف الأحرف المُعرَّفة من قِبل المستخدم، أو مجموعات الرموز المُحدَّدة مسبقًا، أو أي سلسلة فرعية من كل خلية في النطاق المختار، مع الحفاظ على الصيغ والتنسيق وتحقق البيانات لجدول البيانات عن بُعد."

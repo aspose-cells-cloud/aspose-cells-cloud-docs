@@ -3,7 +3,7 @@ title: "การแปลงตารางเป็น PDF"
 ArticleTitle: "การแปลงตารางเป็น PDF – Aspose.Cells Cloud API"
 second_title: "เอกสาร"
 linktype: "docs"
-url: "/cells/convert/table/pdf"
+url: /th/cells/convert/table/pdf
 aliases: []
 keywords: "แปลงตารางเป็น PDF, Aspose.Cells, API"
 description: "แปลงตารางของสมุดงานที่อยู่ในไดรฟ์ท้องถิ่นเป็นไฟล์ PDF โดยใช้ Aspose.Cells Cloud"

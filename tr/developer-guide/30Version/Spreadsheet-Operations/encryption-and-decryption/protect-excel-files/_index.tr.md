@@ -3,7 +3,7 @@ title: "Excel Dosyalarını Korumak"
 second_title: "Belge"
 linktitle: "Excel dosyalarını şifrelemek"
 type: docs
-url: /protect-excel-files/
+url: /tr/protect-excel-files/
 aliases:
   [
     "/protect/without-storage/",

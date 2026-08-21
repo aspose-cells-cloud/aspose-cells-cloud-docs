@@ -4,7 +4,7 @@ ArticleTitle: "Преобразование листа в PDF – Aspose.Cells C
 second_title: "Документ"
 linktitle: "ConvertWorksheetToPdf"
 type: docs
-url: /cells/convert/worksheet/pdf
+url: /ru/cells/convert/worksheet/pdf
 aliases: []
 keywords: "Aspose.Cells, преобразование листа в PDF, API"
 description: "Преобразует лист файла электронной таблицы в PDF с использованием Aspose.Cells Cloud."

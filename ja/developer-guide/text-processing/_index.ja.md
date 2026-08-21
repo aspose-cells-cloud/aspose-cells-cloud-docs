@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "スプレッドシートのテキスト処理：テキストのトリム、分割、変換、抽出、削除"
 linktitle: "テキスト処理"
 type: docs
-url: /text-processing/
+url: /ja/text-processing/
 description: "Aspose.Cells Cloud REST API を使って Excel ファイル内のテキストをトリム、分割、変換、抽出、削除する方法を学びます。簡潔な例と SDK スニペットを含みます。"
 keywords: "Aspose.Cells、Cloud API、テキスト処理、テキストトリム、テキスト分割、テキスト変換、テキスト抽出、テキスト削除、Excel API"
 weight: 30

@@ -5,7 +5,7 @@ second_title: "문서"
 type: docs
 linktitle: "하이퍼링크"
 url: /ko/hyperlinks/
-aliases: [/ko/working-with-hyperlinks/, /ko/working-with-hyperlink/]
+aliases: [  /ko/working-with-hyperlinks/ , /ko/working-with-hyperlink/ ]
 keywords: "엑셀, 하이퍼링크, Cells.Cloud, API, Aspose.Cells, 스프레드시트, 링크, 가이드"
 description: "Aspose Cells Cloud API를 사용하여 엑셀 하이퍼링크를 가져오고, 추가하고, 업데이트하고, 삭제하는 방법을 살펴보세요."
 weight: 100

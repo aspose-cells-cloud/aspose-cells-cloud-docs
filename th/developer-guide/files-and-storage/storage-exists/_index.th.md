@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "การจัดการไฟล์ Excel ผ่านระบบคลาวด์ – ตรวจสอบความมีอยู่ของพื้นที่จัดเก็บข้อมูล"
 linktitle: "มีพื้นที่จัดเก็บข้อมูลหรือไม่"
 type: docs
-url: /storage-exists/
+url: /th/storage-exists/
 keywords: "Aspose.Cells, storage exists, cloud storage API, REST, Excel"
 description: "ยืนยันความมีอยู่ของคอนเทนเนอร์พื้นที่จัดเก็บข้อมูลใน Aspose.Cells Cloud เรียนรู้เกี่ยวกับ endpoint GET /v4.0/cells/storage/{storageName}/exist พารามิเตอร์ที่จำเป็น รูปแบบการตอบกลับ และตัวอย่าง SDK ในภาษา C#, Java, Python และอื่นๆ"
 weight: 100

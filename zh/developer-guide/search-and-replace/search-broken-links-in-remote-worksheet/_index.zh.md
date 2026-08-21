@@ -4,7 +4,7 @@ second_title: "文档"
 articleTitle: "查找并修复远程 Excel 工作表中的断链 – 云电子表格链接检查器"
 linktitle: "搜索远程工作表中的断链"
 type: docs
-url: /search-broken-links-in-remote-worksheet/
+url: /zh/search-broken-links-in-remote-worksheet/
 keywords: "Aspose Cells, 断链, Excel API, 云电子表格, 链接验证"
 description: "检测并修复存储在云存储中的 Excel 工作表中的外部断链。使用 Aspose.Cells Cloud API 扫描指定区域，返回链接详情，并实现自动化质量检查。"
 weight: 100

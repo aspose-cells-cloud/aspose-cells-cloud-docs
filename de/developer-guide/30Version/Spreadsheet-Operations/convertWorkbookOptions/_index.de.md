@@ -3,7 +3,7 @@ title: "Arbeitsmappenkonvertierungsoptionen"
 second_title: "Dokument"
 linktitle: "Arbeitsmappenkonvertierungsoptionen"
 type: docs
-url: /convert-workbook-options/
+url: /de/convert-workbook-options/
 keywords: "Aspose.Cells, ConvertWorkbookOptions, Excel-Konvertierung, PDF, CSV, API"
 description: "Arbeitsmappenkonvertierungsoptionen – Konfigurieren Sie die Excel-Arbeitsmappenkonvertierung in PDF, CSV, HTML und weitere Formate mit der Aspose.Cells Cloud API."
 weight: 79

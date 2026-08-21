@@ -3,8 +3,8 @@ title: "الحصول على شكل باستخدام الفهرس في ورقة �
 second_title: "المستند"
 linktype: "الحصول"
 type: docs
-url: /shapes/get/
-aliases: [/get-a-shape-by-index-inside-the-worksheet/]
+url: /ar/shapes/get/
+aliases: [  /ar/get-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud، واجهة برمجة تطبيقات شكل إكسل، الحصول على شكل باستخدام الفهرس، شكل ورقة العمل، واجهة برمجة التطبيقات REST، استرجاع الأشكال، Aspose.Cells SDK"
 description: "استرجاع شكل باستخدام فهرسه من ورقة عمل إكسل باستخدام واجهة برمجة التطبيقات REST لـ Aspose.Cells Cloud. تتضمن بنية الطلب، المُعطَلات، تفاصيل الاستجابة وأمثلة لـ SDKs."
 weight: 20

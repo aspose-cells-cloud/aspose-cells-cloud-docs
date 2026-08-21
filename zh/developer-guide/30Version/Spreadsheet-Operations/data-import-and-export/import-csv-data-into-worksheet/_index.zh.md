@@ -3,7 +3,7 @@ title: "将 CSV 数据导入 Excel 工作表"
 second_title: "文档"
 linktitle: "导入 CSV 数据"
 type: docs
-url: /import-CSV-data-into-excel/
+url: /zh/import-CSV-data-into-excel/
 aliases:
   - /import-CSV-data-into-worksheet/
   - /import-data/csv-data/

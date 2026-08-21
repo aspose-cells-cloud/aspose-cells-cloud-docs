@@ -4,7 +4,7 @@ ArticleTitle: "تحويل ملف إكسل إلى تنسيقات مختلفة"
 second_title: "مستند"
 linktype: "تحويل إكسل"
 type: docs
-url: /convert-an-excel-file-to-different-formats/
+url: /ar/convert-an-excel-file-to-different-formats/
 aliases:
   [
     /convert-excel-workbook-to-different-file-formats/,

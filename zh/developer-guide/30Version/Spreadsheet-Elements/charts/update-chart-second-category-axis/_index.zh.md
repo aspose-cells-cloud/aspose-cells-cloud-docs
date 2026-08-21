@@ -1,7 +1,7 @@
 ---
 title: "更新图表次坐标轴"
 type: docs
-url: /charts/second-category-axis/update/
+url: /zh/charts/second-category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, 图表, 次坐标轴, REST API, 更新图表, Excel, 云 API"
 description: "了解如何使用 Aspose.Cells Cloud REST API 更新 Excel 工作表中图表的次坐标轴。"

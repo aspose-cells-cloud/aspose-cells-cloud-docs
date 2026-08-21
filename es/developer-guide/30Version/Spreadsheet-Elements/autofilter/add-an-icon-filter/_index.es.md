@@ -3,8 +3,8 @@ title: "Agregar un filtro de icono a una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Agregar filtro de icono"
 type: docs
-url: /autofilter/add-icon-filter/
-aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
+url: /es/autofilter/add-icon-filter/
+aliases: [  /es/add-an-icon-filter/ , /es/autofilter/add-an-icon-filter/ ]
 keywords: "Aspose.Cells Cloud, Excel, Filtro de icono, Filtro automático, API REST"
 description: "Aprenda cómo agregar un filtro de icono a una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud, incluyendo detalles de la solicitud, ejemplo con cURL, fragmentos de código con SDK y manejo de errores."
 weight: 65

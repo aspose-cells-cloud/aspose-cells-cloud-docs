@@ -4,7 +4,7 @@ ArticleTitle: "Aspose.Cells Cloud API を使用してリスト オブジェク�
 second_title: "ドキュメント"
 linktitle: "変換"
 type: docs
-url: /list-objects/to-range/
+url: /ja/list-objects/to-range/
 aliases:
   - /convert-list-object-or-table-to-range/
   - /tables/to-range/

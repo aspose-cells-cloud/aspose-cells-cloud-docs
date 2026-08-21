@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud – översikt: en REST-först, språknutral API-tjänst som gör Excel-åtgärder till enkla HTTPS-anrop – ingen lokal Office-installation krävs, ingen plattformsberoende."
 linktitle: "Översikt"
 type: docs
-url: /overview/
+url: /sv/overview/
 description: "Utforska Aspose.Cells Cloud – en REST-först API som låter dig skapa, manipulera, konvertera, dela upp, skydda och rendera Excel-filer (XLS/XLSX) till PDF, HTML, ODS, XPS, CSV och mer.Gratis provperiod finns tillgänglig."
 keywords: "Aspose Cells, moln-API, Excel-konvertering, PDF, HTML, ODS, XPS, CSV, kalkylark-SDK"
 weight: 10

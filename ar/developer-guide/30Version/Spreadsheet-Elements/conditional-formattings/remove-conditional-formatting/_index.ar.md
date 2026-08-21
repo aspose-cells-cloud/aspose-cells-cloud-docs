@@ -1,7 +1,7 @@
 ---
 title: "حذف التنسيق الشرطي – مرجع واجهة برمجة تطبيقات Aspose.Cells Cloud"
 type: docs
-url: /conditional-formattings/delete/
+url: /ar/conditional-formattings/delete/
 aliases:
   - /remove-conditional-formatting/
 keywords: "Aspose.Cells، التنسيق الشرطي، حذف، واجهة برمجة تطبيقات، Excel، سحابة"

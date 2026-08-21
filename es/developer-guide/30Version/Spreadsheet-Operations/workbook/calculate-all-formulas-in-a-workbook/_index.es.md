@@ -3,7 +3,7 @@ title: "Calcular todas las fórmulas en un libro de Excel"
 second_title: "Documento"
 linktitle: "Calcular"
 type: docs
-url: /calculate-all-formulas-on-an-excel-file/
+url: /es/calculate-all-formulas-on-an-excel-file/
 aliases:
   [/calculate-all-formulas-in-a-workbook/, /workbook/calculate-all-formulas/]
 keywords: "Aspose.Cells, calcular fórmulas, API de Excel, SDK en la nube"

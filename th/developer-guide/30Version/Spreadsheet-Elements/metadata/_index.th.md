@@ -3,7 +3,7 @@ title: "การทำงานกับข้อมูลเมตาและ
 second_title: "เอกสาร"
 linktitle: "ข้อมูลเมตาและคุณสมบัติ"
 type: docs
-url: /metadata/
+url: /th/metadata/
 aliases:
   - /document-properties/
   - /working-with-document-properties/

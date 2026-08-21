@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "أداة حذف الأحرف حسب الموقع في إكسل – حذف النص من مواقع محددة – كود مختصر عبر الإنترنت"
 linktitle: "حذف الأحرف حسب الموقع"
 type: docs
-url: /remove-characters-by-position/
+url: /ar/remove-characters-by-position/
 keywords: "Aspose.Cells Cloud، حذف الأحرف حسب الموقع، تنظيف نص إكسل، حذف أول N أحرف، حذف آخر N أحرف، إزالة النص قبل العلامة، إزالة النص بعد العلامة، إزالة النص بين قيمتين"
 description: "استخدم واجهة برمجة تطبيقات (Web API) لـ Aspose.Cells Cloud لحذف الأحرف من خلايا إكسل حسب الموقع – احذف أول/آخر N أحرف أو النص قبل/بعد علامات محددة بدقة عالية."
 weight: 100

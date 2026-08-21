@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Formen"
 type: docs
 url: /de/shapes/
-aliases: ["/de/working-with-shapes/", "/de/working-with-images/"]
+aliases: [  /de/working-with-shapes/ , /de/working-with-images/ ]
 keywords: "Excel-Formen, Aspose.Cells Cloud, API, Arbeitsblatt, Formularoperationen"
 description: "Erfahren Sie, wie Sie Excel-Formen über die Aspose.Cells Cloud API verwalten – Formen abrufen, hinzufügen, löschen und konvertieren, unterstützt durch SDKs."
 weight: 100

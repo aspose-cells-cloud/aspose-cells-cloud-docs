@@ -3,8 +3,8 @@ title: "Déplacer une plage nommée dans une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Déplacer"
 type: docs
-url: /ranges/move/
-aliases: [/move-a-named-range-with-an-excel-worksheet/]
+url: /fr/ranges/move/
+aliases: [  /fr/move-a-named-range-with-an-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, déplacer une plage nommée, feuille de calcul Excel, API REST, déplacement de plage, exemples SDK"
 description: "Découvrez comment déplacer une plage nommée au sein d’une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud v3.0, avec les détails des points de terminaison, l’authentification, des exemples et des extraits de code SDK."
 weight: 20

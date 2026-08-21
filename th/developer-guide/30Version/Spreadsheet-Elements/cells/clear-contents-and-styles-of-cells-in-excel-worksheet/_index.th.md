@@ -1,7 +1,7 @@
 ---
 title: "ล้างเนื้อหาและรูปแบบของเซลล์ในแผ่นงาน Excel"
 type: docs
-url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+url: /th/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
 keywords:
   - Aspose.Cells

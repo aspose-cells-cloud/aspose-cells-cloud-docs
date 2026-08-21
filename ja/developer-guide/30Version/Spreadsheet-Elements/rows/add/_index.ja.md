@@ -3,7 +3,7 @@ title: "Excelワークシートに行を追加する方法"
 second_title: "Document"
 linktitle: "Add"
 type: docs
-url: /rows/add/
+url: /ja/rows/add/
 keywords: "Aspose.Cells, 行の追加, Excel API, REST, C#, Java, Python, Node.js"
 description: "Aspose.Cells Cloud REST API を使用して、Excelワークシートに単一または複数の行を追加する手順ガイド。C#、Java、Python、Node.jsのコードサンプル付き。"
 weight: 20

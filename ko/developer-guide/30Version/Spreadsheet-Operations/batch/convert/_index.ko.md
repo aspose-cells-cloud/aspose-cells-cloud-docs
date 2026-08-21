@@ -2,7 +2,7 @@
 title: "엑셀 파일 일괄 변환"
 second_title: "문서"
 type: docs
-url: /batch/convert
+url: /ko/batch/convert
 keywords: "일괄 변환, 엑셀, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, 스프레드시트"
 description: "Aspose.Cells Cloud API를 사용하여 여러 엑셀 파일을 PDF, CSV, JSON, Markdown 등 다양한 형식으로 일괄 변환하는 방법을 알아보세요. 이 가이드에는 REST 엔드포인트 세부 정보, 요청 매개변수, cURL 예제 및 다양한 언어의 SDK 코드 스니펫이 포함되어 있습니다."
 weight: 100

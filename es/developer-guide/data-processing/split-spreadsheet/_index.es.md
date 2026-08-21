@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Herramienta de división de Excel: Dividir hoja de cálculo local en archivos en más de 30 formatos"
 linktitle: "Dividir hoja de cálculo"
 type: docs
-url: /split-spreadsheet/
+url: /es/split-spreadsheet/
 keywords: "dividir, excel, aspose cells, API de hoja de cálculo, exportar PDF, CSV, JSON"
 description: "Divida un libro de Excel localmente en archivos separados utilizando la API de Aspose.Cells Cloud. Exporte a más de 30 formatos (PDF, CSV, JSON, XLSX, HTML) sin necesidad de cargarlos en la nube."
 weight: 100

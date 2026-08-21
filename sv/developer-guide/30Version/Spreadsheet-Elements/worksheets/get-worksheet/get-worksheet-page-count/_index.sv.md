@@ -3,7 +3,7 @@ title: "Hämta sidantal för ett Excel-kalkylblad"
 second_title: "Dokument"
 linktitle: "PageCount"
 type: docs
-url: /worksheets/page-count/
+url: /sv/worksheets/page-count/
 keywords: "Aspose.Cells, Excel API, kalkylbladets sidantal, REST, molntjänst, Excel-paginering"
 description: "Hämta antalet utskriftbara sidor i ett Excel-kalkylblad med Aspose.Cells Cloud REST API (v3.0). Inkluderar HTTPS-begäranformat, autentiseringssteg, exempel på cURL, fullständig JSON-svar, statuskoder och SDK-kodexempel."
 weight: 10

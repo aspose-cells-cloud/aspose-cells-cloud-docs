@@ -3,7 +3,7 @@ title: "Удаление метаданных из файлов Excel"
 second_title: "Документ"
 linktitle: "Удаление без использования хранилища"
 type: docs
-url: /metadata/delete/
+url: /ru/metadata/delete/
 keywords: "Aspose.Cells, удаление метаданных, Excel API, свойства рабочей книги"
 description: "Удаление метаданных рабочей книги (автор, заголовок, пользовательские данные) с помощью API Aspose.Cells Cloud. Включает конечную точку, аутентификацию, параметры, примеры cURL и SDK."
 weight: 55

@@ -3,7 +3,7 @@ title: "Skapa en tom Excel-arbetsbok"
 second_title: "Dokument"
 linktitle: "Tom arbetsbok"
 type: docs
-url: /create-an-empty-excel-file/
+url: /sv/create-an-empty-excel-file/
 aliases:
   [
     /create-an-empty-excel-workbook/,

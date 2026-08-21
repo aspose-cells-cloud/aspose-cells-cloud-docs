@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud 시작하기"
 linktype: "시작하기"
 type: docs
-url: /getting-started/
+url: /ko/getting-started/
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 파일을 3단계로 업로드, 변환 및 다운로드하는 방법을 알아보세요. cURL 코드 샘플 포함."
 weight: 10
 keywords: "Aspose.Cells Cloud, 엑셀 API, 스프레드시트 변환, 엑셀을 PDF로, 클라우드 스프레드시트, Aspose.Cells Cloud API"

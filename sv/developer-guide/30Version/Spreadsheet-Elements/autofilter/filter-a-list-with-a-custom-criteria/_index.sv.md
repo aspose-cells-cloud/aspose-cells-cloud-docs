@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Lägg till anpassat filter"
 type: docs
 url: /sv/autofilter/add-custom-filter/
-aliases: [/sv/filtera-en-lista-med-ett-anpassat-kriterium/,/sv/autofilter/lagg-till-ett-anpassat-filter/]
+aliases: [  /sv/filtera-en-lista-med-ett-anpassat-kriterium/ , /sv/autofilter/lagg-till-ett-anpassat-filter/ ]
 keywords: "Excel, anpassat filter, Aspose.Cells Cloud, REST API, autofilter, arbetsark, anpassat kriterium"
 description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att lägga till ett anpassat filter i ett Excel-arbetsark. Innehåller begärandetext, ett cURL-exempel och SDK-kodfragment för flera programmeringsspråk."
 weight: 65

@@ -1,8 +1,8 @@
 ---
 title: "워크시트에서 차트 범례 표시"
 type: docs
-url: /charts/legend/show/
-aliases: [/show-chart-legend-in-a-worksheet/]
+url: /ko/charts/legend/show/
+aliases: [  /ko/show-chart-legend-in-a-worksheet/ ]
 weight: 100
 keywords: "Aspose.Cells Cloud, 차트 범례 API, Excel 차트 범례, REST PUT 차트 범례, Aspose API v3.0"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 Excel 워크시트에 차트 범례를 표시하는 방법을 알아보세요. 엔드포인트 세부 정보, 매개변수, cURL 예제, SDK 스니펫 포함."

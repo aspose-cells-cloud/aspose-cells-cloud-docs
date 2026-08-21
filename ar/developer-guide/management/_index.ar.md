@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "عمليات متقدمة على ملفات عمل Excel: إدارة الأوراق والضغط – Aspose.Cells Cloud"
 linktitle: "الإدارة"
 type: docs
-url: /management/
+url: /ar/management/
 keywords: "Aspose.Cells، السحابة، واجهة برمجة تطبيقات Excel، إدارة الأوراق، ضغط جداول البيانات، إنشاء ملفات العمل"
 description: "استخدم واجهة برمجة تطبيقات Aspose.Cells Cloud لإضافة أوراق عمل وحذفها ونقلها وإعادة تسميتها، وضغط حجم جداول البيانات وإنشاء ملفات عمل من قوالب — دون الحاجة إلى وجود Excel محلي."
 weight: 50

@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "在远程 Excel 电子表格中搜索文本——查找特定数据"
 linktitle: "搜索远程电子表格内容"
 type: docs
-url: /search-content-in-remote-spreadsheet/
+url: /zh/search-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells, Excel 搜索 API, 云电子表格, 文本搜索, REST"
 description: "使用 Aspose.Cells Cloud 在云存储中的 Excel 文件里搜索文本、数字或公式。支持不区分大小写的查询、文件夹选择以及密码保护的工作簿。"
 weight: 100

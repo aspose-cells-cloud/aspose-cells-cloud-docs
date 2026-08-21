@@ -3,8 +3,8 @@ title: "حساب صيغة في ورقة عمل إكسل"
 second_title: "المستند"
 linktype: "حساب"
 type: docs
-url: /worksheets/calculate-formula/
-aliases: [/calculate-formula-in-a-worksheet/]
+url: /ar/worksheets/calculate-formula/
+aliases: [  /ar/calculate-formula-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, حساب الصيغ, REST API, مكتبات البرمجة (SDKs), C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
 description: "حساب الصيغ في ورقة عمل إكسل باستخدام REST API الخاص بـ Aspose.Cells Cloud. يدعم مكتبات برمجية متعددة (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift) مع أمثلة جاهزة للاستخدام."
 weight: 20

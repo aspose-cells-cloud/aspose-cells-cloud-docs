@@ -3,8 +3,8 @@ title: "将多个 Excel 文件合并到单个工作簿中"
 second_title: "文档"
 linktitle: "合并多个 Excel 文件"
 type: docs
-url: /merge-multi-files-into-excel/
-aliases: [/merge/multi-files/]
+url: /zh/merge-multi-files-into-excel/
+aliases: [  /zh/merge/multi-files/ ]
 keywords: "Aspose.Cells Cloud, 合并多个 Excel 文件, REST API, 电子表格合并, 云 SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API（v3.0）将多个 Excel 工作簿合并为一个文件。内容包括 HTTPS 端点、cURL 命令、SDK 示例、所需参数及错误处理详情。"
 weight: 32

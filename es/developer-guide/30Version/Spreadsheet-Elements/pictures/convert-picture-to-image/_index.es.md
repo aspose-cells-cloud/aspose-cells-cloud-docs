@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – Obtener imagen de hoja de cálculo"
 second_title: "Documento"
 linktitle: "Obtener"
 type: docs
-url: /pictures/get/
-aliases: [/convert-picture-to-image/]
+url: /es/pictures/get/
+aliases: [  /es/convert-picture-to-image/ ]
 keywords: "Aspose.Cells, Obtener imagen, API, Excel, Nube, REST"
 description: "Recuperar una imagen específica de una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. Incluye punto de conexión, parámetros, pasos de autenticación, códigos de respuesta y ejemplos de código."
 weight: 10

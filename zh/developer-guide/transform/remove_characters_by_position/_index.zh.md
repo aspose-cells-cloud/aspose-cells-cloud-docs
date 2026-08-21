@@ -4,7 +4,7 @@ ArticleTitle: "按位置删除字符 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "按位置删除字符"
 type: docs
-url: /cells/content/remove/characters-by-position
+url: /zh/cells/content/remove/characters-by-position
 aliases: []
 keywords: "Aspose.Cells, 删除字符, API"
 description: "在电子表格中按位置从单元格中删除字符。"

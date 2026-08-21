@@ -4,7 +4,7 @@ second title: "เอกสาร"
 ArticleTitle: "ค้นหาและแก้ไขลิงก์เสียในแผ่นงาน Excel ระยะไกล – เครื่องมือตรวจสอบลิงก์สเปรดชีตแบบคลาวด์"
 linktype: "ค้นหาลิงก์เสียในแผ่นงานระยะไกล"
 type: docs
-url: /search-broken-links-in-remote-worksheet/
+url: /th/search-broken-links-in-remote-worksheet/
 keywords: "Aspose Cells, ลิงก์เสีย, API Excel, สเปรดชีตแบบคลาวด์, การตรวจสอบลิงก์"
 description: "ตรวจจับและแก้ไขลิงก์ภายนอกที่เสียในแผ่นงาน Excel ที่จัดเก็บในพื้นที่เก็บข้อมูลคลาวด์ ใช้ Aspose.Cells Cloud API เพื่อสแกนช่วงข้อมูล คืนค่ารายละเอียดลิงก์ และดำเนินการตรวจสอบคุณภาพอัตโนมัติ"
 weight: 100

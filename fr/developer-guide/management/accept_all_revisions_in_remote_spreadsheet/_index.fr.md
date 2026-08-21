@@ -4,8 +4,8 @@ ArticleTitle: "Accepter toutes les révisions dans une feuille de calcul distant
 second_title: "Document"
 linktitle: "Accepter toutes les révisions dans une feuille de calcul distante"
 type: docs
-url: /cells/accept-all-revisions
-aliases: ["/cells/accept-all-revisions"]
+url: /fr/cells/accept-all-revisions
+aliases: [  /fr/cells/accept-all-revisions ]
 keywords: "Aspose.Cells, AcceptAllRevisions, feuille de calcul distante"
 description: "Accepter toutes les révisions dans une feuille de calcul distante et renvoyer le classeur mis à jour."
 weight: 1000

@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Limpieza de datos de Excel - Convertir texto en números y eliminar caracteres no deseados"
 linktitle: "Convertir texto"
 type: docs
-url: /convert-text/
+url: /es/convert-text/
 keywords: "Aspose.Cells convertir texto, texto de Excel a números, eliminar caracteres especiales en Excel, reemplazar saltos de línea en Excel, normalizar caracteres acentuados, API de limpieza de datos de Excel"
 description: "Convierta números con formato de texto en valores numéricos, reemplace caracteres y saltos de línea no deseados, y normalice caracteres acentuados en archivos de Excel mediante la API de Aspose.Cells Cloud."
 weight: 100

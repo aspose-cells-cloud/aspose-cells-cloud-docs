@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "Aspose.Cells Cloud SDK for Python：转换、合并、拆分、保护、搜索、替换等"
 linktitle: "Aspose.Cells Cloud SDK for Python"
 type: docs
-url: /available-sdks/aspose-cells-cloud-python/
+url: /zh/available-sdks/aspose-cells-cloud-python/
 description: "Aspose.Cells Cloud SDK for Python 提供了一个跨平台、流畅的 API，用于在云中创建、转换、合并、拆分、保护、搜索、替换和操作 Excel 文件，无需安装 Office。"
 weight: 30
 keywords: ["Aspose.Cells", "Python SDK", "Excel", "云 API", "将 Excel 转换为 PDF", "合并 Excel", "拆分工作簿", "保护工作表", "搜索与替换", "REST API"]

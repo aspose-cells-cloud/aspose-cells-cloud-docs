@@ -1,7 +1,7 @@
 ---
 title: "Excel 워크시트에서 셀의 콘텐츠 및 스타일 지우기"
 type: docs
-url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+url: /ko/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
 keywords:
   - Aspose.Cells

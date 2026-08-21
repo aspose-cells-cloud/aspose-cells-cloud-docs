@@ -3,7 +3,7 @@ title: "Удаление защиты от записи (пароля) из ра
 second_title: "Документ"
 linktitle: "Очистка пароля файлов Excel"
 type: docs
-url: /clear-excel-files-password/
+url: /ru/clear-excel-files-password/
 aliases:
   [
     /clear-modify-password-of-excel-workbooks/,

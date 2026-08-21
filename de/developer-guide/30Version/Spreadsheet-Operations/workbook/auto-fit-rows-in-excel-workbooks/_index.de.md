@@ -3,8 +3,8 @@ title: "Zeilen in einer Excel-Arbeitsmappe automatisch anpassen"
 second_title: "Dokument"
 linktitle: "Zeilen"
 type: docs
-url: /autofit-rows-on-an-excel-file/
-aliases: [/auto-fit-rows-in-excel-workbooks/, /workbook/autofit/rows/]
+url: /de/autofit-rows-on-an-excel-file/
+aliases: [  /de/auto-fit-rows-in-excel-workbooks/ , /de/workbook/autofit/rows/ ]
 keywords: "Zeilen automatisch anpassen, Excel-Arbeitsmappe, Aspose.Cells Cloud, REST-API, Auto-Fitter-Optionen"
 description: "Erfahren Sie, wie Sie die Zeilenhöhe in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST-API automatisch anpassen können. Enthält Endpunkt, Parameter, cURL-Beispiel und SDK-Snippets für C#, Java, Python und mehr."
 weight: 90

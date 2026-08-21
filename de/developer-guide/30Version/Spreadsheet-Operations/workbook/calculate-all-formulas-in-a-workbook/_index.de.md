@@ -3,7 +3,7 @@ title: "Alle Formeln in einer Excel-Arbeitsmappe berechnen"
 second_title: "Dokument"
 linktitle: "Berechnen"
 type: docs
-url: /calculate-all-formulas-on-an-excel-file/
+url: /de/calculate-all-formulas-on-an-excel-file/
 aliases:
   [/calculate-all-formulas-in-a-workbook/, /workbook/calculate-all-formulas/]
 keywords: "Aspose.Cells, Formeln berechnen, Excel-API, Cloud-SDK"

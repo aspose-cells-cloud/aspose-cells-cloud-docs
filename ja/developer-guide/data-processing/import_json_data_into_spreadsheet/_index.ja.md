@@ -4,7 +4,7 @@ ArticleTitle: "JSON データをスプレッドシートにインポートする
 second_title: "ドキュメント"
 linktitle: "JSON データをスプレッドシートにインポートする"
 type: docs
-url: /cells/import/data/json
+url: /ja/cells/import/data/json
 aliases: []
 keywords: "JSON のインポート, Aspose.Cells, スプレッドシート, API"
 description: "ローカルのスプレッドシートに JSON データファイルをインポートします。"

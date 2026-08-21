@@ -2,7 +2,7 @@
 title: "如何使用 Aspose.Cells Cloud 修复 Excel 文件"
 linktype: "如何修复 Excel 文件"
 type: docs
-url: /how-to-repair-excel-file
+url: /zh/how-to-repair-excel-file
 description: "如何使用 Aspose.Cells Cloud 修复 Excel 或其他电子表格文件。"
 weight: 10
 kwords: Excel, Office Cloud, REST API, 电子表格, PDF, CSV, Json, Markdown, 如何通过 Aspose.Cells Cloud 修复 Excel 或其他电子表格文件

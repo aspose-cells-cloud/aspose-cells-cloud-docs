@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как удалить листы из Excel — удаление листов из рабочих книг"
 linktitle: "Удалить лист из электронной таблицы"
 type: docs
-url: /delete-worksheet-from-spreadsheet/
+url: /ru/delete-worksheet-from-spreadsheet/
 keywords: "Aspose Cells, API удаления листа, удаление листа Excel, облачная электронная таблица, REST API"
 description: "Узнайте, как удалить лист из файла Excel с помощью API Aspose.Cells Cloud. Включает URL-адрес конечной точки, параметры, пример cURL и примеры SDK."
 weight: 100

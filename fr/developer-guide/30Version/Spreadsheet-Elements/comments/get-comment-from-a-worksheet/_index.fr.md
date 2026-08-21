@@ -1,8 +1,8 @@
 ---
 title: "Obtenir un commentaire de feuille de calcul – Documentation de l’API Aspose.Cells Cloud"
 type: docs
-url: /comments/get/
-aliases: [/get-comment-from-a-worksheet/]
+url: /fr/comments/get/
+aliases: [  /fr/get-comment-from-a-worksheet/ ]
 keywords: "Aspose.Cells, commentaire de feuille de calcul, API, GET, Excel"
 description: "Découvrez comment récupérer un commentaire de feuille de calcul par nom de cellule à l’aide de l’API Aspose.Cells Cloud (v3.0). Inclut l’URL de la requête, les paramètres, un exemple cURL, les détails de la réponse et des extraits de code SDK."
 weight: 10

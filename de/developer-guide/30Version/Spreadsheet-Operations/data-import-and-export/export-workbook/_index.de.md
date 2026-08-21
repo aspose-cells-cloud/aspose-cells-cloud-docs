@@ -3,8 +3,8 @@ title: "Arbeitsmappe exportieren"
 second_title: "Dokument"
 linktitle: "Arbeitsmappe"
 type: docs
-url: /export-excel-to-different-formats/
-aliases: [/export/excel-to-different-formats/]
+url: /de/export-excel-to-different-formats/
+aliases: [  /de/export/excel-to-different-formats/ ]
 keywords: "Aspose.Cells Cloud, Excel-Export, Arbeitsmappenkonvertierung, PDF, CSV, JSON, Bildformate, Tabellenkalkulations-API, XLSX, ODS, PNG"
 description: "Eine Schritt-für-Schritt-Anleitung zum Exportieren von Excel-Arbeitsmappen in verschiedene Formate – einschließlich PDF, CSV, JSON und verschiedenen Bildtypen – mithilfe der Aspose.Cells Cloud REST-API und SDKs."
 weight: 20

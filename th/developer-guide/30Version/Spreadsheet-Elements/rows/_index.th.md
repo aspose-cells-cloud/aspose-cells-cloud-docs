@@ -3,8 +3,8 @@ title: "การจัดการแถวใน Excel – API คลาวด
 ArticleTitle: "การจัดการแถวใน Excel – API คลาวด์ของ Aspose.Cells"
 second_title: "เอกสาร"
 linktype: "docs"
-url: /rows/
-aliases: [/working-with-rows/]
+url: /th/rows/
+aliases: [  /th/working-with-rows/ ]
 keywords: "Aspose.Cells, แถว Excel, REST API, การจัดการสเปรดชีต"
 description: "จัดการแถวในไฟล์ Excel โดยใช้ API คลาวด์ของ Aspose.Cells ผ่าน REST API รองรับ Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby และ Swift"
 weight: 100

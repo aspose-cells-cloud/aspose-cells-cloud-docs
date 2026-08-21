@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Copia"
 type: docs
 url: /it/worksheets/copy/
-aliases: [/it/copy-excel-worksheet/]
+aliases: [  /it/copy-excel-worksheet/ ]
 keywords: "Aspose Cells API per copiare fogli di lavoro, REST API per copiare fogli Excel, Aspose Cloud SDK per copiare, copiare fogli di calcolo"
 description: "Scopri come copiare un foglio di lavoro e i relativi formati in un nuovo foglio utilizzando l'API REST di Aspose.Cells Cloud. Include endpoint, parametri, esempi cURL e SDK per C#, Java, Python e altri linguaggi."
 weight: 20

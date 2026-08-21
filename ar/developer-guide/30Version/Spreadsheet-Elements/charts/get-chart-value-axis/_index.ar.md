@@ -1,7 +1,7 @@
 ---
 title: "الحصول على محور القيمة في المخطط"
 type: docs
-url: /charts/value-axis/get/
+url: /ar/charts/value-axis/get/
 weight: 60
 keywords: Aspose.Cells, محور القيمة في المخطط, REST API, Excel, Cloud SDK, الحصول على محور القيمة في المخطط
 description: "واجهة برمجة تطبيقات Aspose.Cells Cloud REST API - استرجاع محور القيمة في مخطط ضمن ورقة عمل Excel."

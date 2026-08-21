@@ -4,7 +4,7 @@ ArticleTitle: "إزالة الصفوف الفارغة من جدول البيان
 second_title: "وثيقة"
 linktitle: "إزالة الصفوف الفارغة من جدول البيانات"
 type: docs
-url: /cells/remove/blank-rows
+url: /ar/cells/remove/blank-rows
 aliases: []
 keywords: "Aspose.Cells، إزالة الصفوف الفارغة، جدول البيانات، واجهة برمجة التطبيقات"
 description: "حذف جميع الصفوف الفارغة من ملف جدول البيانات."

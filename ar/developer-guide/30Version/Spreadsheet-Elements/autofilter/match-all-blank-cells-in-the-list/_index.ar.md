@@ -3,8 +3,8 @@ title: "تطابق جميع الخلايا الفارغة في ورقة عمل E
 ArticleTitle: "تطابق جميع الخلايا الفارغة في ورقة عمل Excel – دليل واجهة برمجة تطبيقات Aspose.Cells Cloud"
 second_title: "مستند"
 linktype: "docs"
-url: /autofilter/match-all-blank/
-aliases: [/match-all-blank-cells-in-the-list/]
+url: /ar/autofilter/match-all-blank/
+aliases: [  /ar/match-all-blank-cells-in-the-list/ ]
 keywords: "Aspose.Cells، الخلايا الفارغة، AutoFilter، واجهة برمجة التطبيقات REST، Excel"
 description: "تعرّف على كيفية استخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST لفلترة وتطابق جميع الخلايا الفارغة في ورقة عمل Excel. يتضمن عنوان النهاية (endpoint)، المعاملات، خطوات المصادقة، مثال cURL، ومقتطفات كود SDK لغات C# وJava وPython وغيرها."
 weight: 100

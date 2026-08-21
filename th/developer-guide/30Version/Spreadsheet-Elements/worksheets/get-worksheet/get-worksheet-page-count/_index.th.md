@@ -3,7 +3,7 @@ title: "รับจำนวนหน้าสำหรับแผ่นงา
 second_title: "เอกสาร"
 linktitle: "PageCount"
 type: docs
-url: /worksheets/page-count/
+url: /th/worksheets/page-count/
 keywords: "Aspose.Cells, API สำหรับ Excel, จำนวนหน้าของแผ่นงาน, REST, SDK บนคลาวด์, การแบ่งหน้าใน Excel"
 description: "ดึงจำนวนหน้าที่สามารถพิมพ์ได้ในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 3.0) รวมถึงรูปแบบคำขอ HTTPS, ขั้นตอนการตรวจสอบสิทธิ์, ตัวอย่าง cURL, การตอบกลับ JSON แบบเต็ม, รหัสสถานะ และตัวอย่างโค้ด SDK"
 weight: 10

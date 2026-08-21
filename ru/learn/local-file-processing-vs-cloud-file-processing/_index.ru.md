@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "В чём разница между локальной и облачной обработкой файлов в Aspose.Cells Cloud?"
 linktitle: "Локальная обработка файлов против облачной обработки файлов"
 type: docs
-url: /learn/local-file-processing-vs-cloud-file-processing/
+url: /ru/learn/local-file-processing-vs-cloud-file-processing/
 description: "Сравнение локальной и облачной обработки файлов в Aspose.Cells Cloud: хранение, стоимость, безопасность и типичные сценарии применения. Поймите, какой подход подходит для вашего рабочего процесса."
 keywords: "Aspose.Cells Cloud, локальная обработка файлов, облачная обработка файлов, конвертация электронных таблиц, API"
 weight: 10

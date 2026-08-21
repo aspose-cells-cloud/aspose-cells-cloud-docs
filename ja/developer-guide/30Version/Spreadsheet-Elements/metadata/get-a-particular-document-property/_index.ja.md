@@ -3,8 +3,8 @@ title: "特定のドキュメント プロパティを取得する"
 second_title: "ドキュメント"
 linktitle: "取得"
 type: docs
-url: /document-properties/get/
-aliases: [/get-a-particular-document-property/]
+url: /ja/document-properties/get/
+aliases: [  /ja/get-a-particular-document-property/ ]
 keywords: "Aspose.Cells, Cloud API, Get Document Property, Excel metadata, REST GET, SDK examples"
 description: "Aspose.Cells Cloud REST API を使用して Excel ファイルから名前付きドキュメント プロパティ（例：Author、Title）を取得します。cURL の例、SDK スニペット、レスポンス スキーマを含みます。"
 weight: 20

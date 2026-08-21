@@ -4,7 +4,7 @@ ArticleTitle: "Ajouter un filtre Top 10 à une feuille de calcul Excel – Asp
 second_title: "Document"
 linktitle: "Ajouter un filtre Top 10"
 type: docs
-url: /autofilter/add-top-10-filter/
+url: /fr/autofilter/add-top-10-filter/
 aliases:
   [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
 keywords: "Aspose.Cells, AutoFilter, filtre Top 10, API Excel"

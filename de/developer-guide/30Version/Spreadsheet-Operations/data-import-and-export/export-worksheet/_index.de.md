@@ -3,8 +3,8 @@ title: "Arbeitsblatt exportieren – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktitle: "Arbeitsblatt"
 type: docs
-url: /export-excel-worksheet-to-different-formats/
-aliases: [/export/excel-worksheet-to-different-formats/]
+url: /de/export-excel-worksheet-to-different-formats/
+aliases: [  /de/export/excel-worksheet-to-different-formats/ ]
 keywords: "Aspose.Cells, Arbeitsblatt exportieren, Excel-API, PDF, CSV, TIFF, ODS, Bildformate"
 description: "Erfahren Sie, wie Sie ein Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST-API in PDF, CSV, TIFF und andere Formate exportieren können. Enthält cURL-Beispiel, erforderliche Authentifizierung, Parameterdetails und Antwortbehandlung."
 weight: 20

@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So speichern Sie ein Tabellendokument in einer anderen Formatdatei in der Cloud-Speicherung: Schritt-für-Schritt-Anleitung"
 linktitle: "Tabellendokument speichern als"
 type: docs
-url: /save-spreadsheet-as/
+url: /de/save-spreadsheet-as/
 keywords: "Aspose Cells, Tabellenkonvertierung, speichern als, API, XLSX zu PDF, Cloud-Speicherung, Excel zu PDF, CSV-Export, Cloud-Konvertierung"
 description: "Erfahren Sie, wie Sie ein in Aspose Cloud gespeichertes Tabellendokument in ein anderes Format (XLSX, PDF, CSV usw.) mit der Aspose.Cells Cloud Save Spreadsheet API speichern. Enthält Anforderungssyntax, Parameter, curl-Beispiel und SDK-Code."
 weight: 100

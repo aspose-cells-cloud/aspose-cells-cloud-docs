@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "InterruzioniDiPagina"
 type: docs
 url: /it/working-with-pagebreaks/
-aliases: [/it/working-with-pagebreaks/]
+aliases: [  /it/working-with-pagebreaks/ ]
 keywords: "Excel, interruzione di pagina, Aspose.Cells Cloud, REST API, foglio di calcolo, aggiungi, elimina, ottieni, aggiorna, interruzioni di pagina"
 description: "Scopri come aggiungere, recuperare ed eliminare le interruzioni di pagina nei fogli di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud. Include esempi per interruzioni verticali e orizzontali."
 weight: 100

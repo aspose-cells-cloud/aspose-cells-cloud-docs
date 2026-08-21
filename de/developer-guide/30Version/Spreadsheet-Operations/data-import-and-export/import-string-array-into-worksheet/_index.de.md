@@ -3,7 +3,7 @@ title: "Zeichenfolgenarray in Excel-Arbeitsblatt importieren – Aspose.Cells Cl
 second_title: "Dokument"
 linktitle: "Zeichenfolgenarray importieren"
 type: docs
-url: /import-string-array-into-excel-worksheet/
+url: /de/import-string-array-into-excel-worksheet/
 aliases:
   - /import-string-array-into-worksheet/
   - /import-data/string-array/

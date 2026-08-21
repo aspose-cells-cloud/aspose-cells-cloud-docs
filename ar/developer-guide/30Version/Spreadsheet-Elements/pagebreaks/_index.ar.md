@@ -3,8 +3,8 @@ title: "العمل مع فواصل الصفحات في إكسل"
 second_title: "مستند"
 linktype: "pagebreaks"
 type: docs
-url: /working-with-pagebreaks/
-aliases: [/working-with-pagebreaks/]
+url: /ar/working-with-pagebreaks/
+aliases: [  /ar/working-with-pagebreaks/ ]
 keywords: "إكسل، فاصل صفحة، Aspose.Cells Cloud، REST API، ورقة عمل، إضافة، حذف، استرجاع، تحديث، فواصل الصفحات"
 description: "تعرّف على كيفية إضافة فواصل الصفحات واسترجاعها وحذفها في أوراق عمل إكسل باستخدام واجهة برمجة التطبيقات (REST API) الخاصة بـ Aspose.Cells Cloud. يشمل أمثلة للفواصل العمودية والأفقية."
 weight: 100

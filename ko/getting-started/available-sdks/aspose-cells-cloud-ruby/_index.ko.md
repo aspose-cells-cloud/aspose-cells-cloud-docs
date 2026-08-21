@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud SDK for Ruby: 변환, 병합, 분할, 보호, 검색, 바꾸기 등"
 linktitle: "Aspose.Cells Cloud SDK for Ruby"
 type: docs
-url: /available-sdks/aspose-cells-cloud-ruby/
+url: /ko/available-sdks/aspose-cells-cloud-ruby/
 description: "Aspose.Cells Cloud SDK for Ruby는 Office 설치 없이 Excel 개체를 생성, 변환, 병합, 분할, 보호, 검색 및 바꾸기 위한 유연하고 크로스 플랫폼 API를 제공합니다."
 weight: 30
 keywords: "Ruby, Aspose.Cells Cloud, Excel SDK, REST API, 변환, 병합, 분할, 보호, 검색, 바꾸기, 차트, 피벗 테이블, 테이블/목록 개체, PDF, CSV, JSON, Markdown"

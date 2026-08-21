@@ -1,8 +1,8 @@
 ---
 title: "Obtenir le formatage conditionnel"
 type: docs
-url: /conditional-formattings/get/
-aliases: [/get-conditional-formatting/]
+url: /fr/conditional-formattings/get/
+aliases: [  /fr/get-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, API REST, Formatage conditionnel, Excel, Tableur"
 description: "Récupérer les règles de formatage conditionnel à partir d'une feuille de calcul à l'aide de l'API REST Aspose.Cells Cloud."
 weight: 10

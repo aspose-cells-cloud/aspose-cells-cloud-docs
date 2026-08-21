@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "삭제"
 type: docs
 url: /ko/shapes/delete/
-aliases: [/ko/delete-a-shape-by-index-inside-the-worksheet/]
+aliases: [  /ko/delete-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 도형 삭제, 도형 인덱스, 엑셀 워크시트, REST API, SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크시트에서 인덱스로 도형을 삭제합니다. 이 API는 여러 SDK(C#, Java, PHP, Ruby, Node.js, Python, Perl, Go)를 통해 제공되며 다양한 저장소 옵션을 지원합니다."
 weight: 50

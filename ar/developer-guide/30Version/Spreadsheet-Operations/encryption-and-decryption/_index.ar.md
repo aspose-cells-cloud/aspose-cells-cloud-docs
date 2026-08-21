@@ -3,8 +3,8 @@ title: "تشفير وفك تشفير وتوقيع ملفات Excel رقميًا"
 second_title: "المستند"
 linktype: "حماية ملف Excel"
 type: docs
-url: /protect/
-aliases: [/workbook/password/]
+url: /ar/protect/
+aliases: [  /ar/workbook/password/ ]
 keywords: "Excel, حماية, تشفير, فك التشفير, التوقيع الرقمي, Aspose.Cells Cloud, REST API, كلمة مرور, أمان"
 description: "تعرّف على كيفية حماية وتشفير وفك تشفير والتوقيع الرقمي لملفات Excel باستخدام واجهة Aspose.Cells Cloud REST API – أمثلة على الكود بلغات Android وC# وJava وPython وغيرها."
 ArticleTitle: "تشفير وفك تشفير والتوقيع الرقمي وحماية ملفات Excel باستخدام واجهة Aspose.Cells Cloud API"

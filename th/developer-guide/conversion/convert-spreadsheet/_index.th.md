@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีการแปลงไฟล์สเปรดชีตเป็นรูปแบบอื่น: คู่มือทีละขั้นตอน"
 linktitle: "แปลงสเปรดชีต"
 type: docs
-url: /convert-spreadsheet/
+url: /th/convert-spreadsheet/
 keywords: "Aspose, Aspose.Cells, การแปลงสเปรดชีต, Excel เป็น PDF, Excel API, การแปลงไฟล์บนคลาวด์"
 description: "แปลงไฟล์สเปรดชีตเป็นรูปแบบอื่นโดยใช้ Aspose.Cells Cloud API"
 weight: 100

@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasında Satırı Otomatik Uydur"
 second_title: "Belge"
 linktitle: "Satır"
 type: docs
-url: /worksheets/autofit/row/
-aliases: [/autofit-single-row-of-worksheet/]
+url: /tr/worksheets/autofit/row/
+aliases: [  /tr/autofit-single-row-of-worksheet/ ]
 description: "Aspose.Cells Cloud REST API ile bir Excel çalışma sayfasında satırı otomatik uydurmanın nasıl kullanılacağını öğrenin. Uç nokta, parametreler, kimlik doğrulama, hata yönetimi, cURL isteği ve SDK örneklerini içerir."
 keywords: "satırı otomatik uydur, Aspose.Cells Cloud, Excel API, REST, çalışma sayfası, SDK, elektronik tablo, bulut API"
 weight: 30

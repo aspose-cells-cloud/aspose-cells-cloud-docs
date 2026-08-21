@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Excel에 워크시트 추가 방법 - 특정 위치에 새 시트 삽입"
 linktitle: "스프레드시트에 워크시트 추가"
 type: docs
-url: /add-worksheet-to-spreadsheet/
+url: /ko/add-worksheet-to-spreadsheet/
 keywords: "excel, 워크시트 추가, aspose cells api, 스프레드시트, 클라우드 api, 시트 유형, 시트 위치"
 description: "Aspose.Cells Cloud API를 사용하여 Excel 워크북에 새 워크시트, 차트 시트, 매크로 시트를 프로그래밍 방식으로 추가하는 방법을 알아보세요. 단일 REST 호출로 시트 유형, 이름 및 삽입 위치를 제어합니다."
 weight: 100

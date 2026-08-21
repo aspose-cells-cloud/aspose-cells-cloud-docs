@@ -1,8 +1,8 @@
 ---
 title: "Aktualisieren eines Zellenkommentars in einem Arbeitsblatt"
 type: docs
-url: /comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
+url: /de/comments/update/
+aliases: [  /de/update-a-comment-in-excel-workbook/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, Arbeitsblatt, Zellenkommentar, Aktualisieren eines Arbeitsblatt-Kommentars, Kommentarobjekt"
 description: "Verwenden Sie die Aspose.Cells Cloud REST API, um einen Zellenkommentar in einem Excel-Arbeitsblatt zu aktualisieren, einschließlich Anforderungsdetails, Antwortcodes und SDK-Beispielen."
 weight: 30

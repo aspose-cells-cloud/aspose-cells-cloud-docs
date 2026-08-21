@@ -3,7 +3,7 @@ title: "Så här skapar du en Excel-arbetsbok med en mallfil"
 second_title: "Dokument"
 linktitle: "Mallfil"
 type: docs
-url: /create-an-excel-file-with-template-file/
+url: /sv/create-an-excel-file-with-template-file/
 aliases:
   - /create-excel-workbook-from-a-template-file/
   - /workbook/new-from-a-template-file/

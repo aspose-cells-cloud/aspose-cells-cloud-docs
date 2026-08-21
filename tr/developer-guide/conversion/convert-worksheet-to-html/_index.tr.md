@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud API ile Çalışma Sayfasını HTML’ye Dönüştürme"
 linktitle: "Çalışma Sayfasını HTML’ye Dönüştür"
 type: docs
-url: /convert-worksheet-to-html/
+url: /tr/convert-worksheet-to-html/
 description: "Aspose.Cells Cloud API kullanarak bir Excel çalışma sayfasını HTML’ye nasıl dönüştüreceğinizi öğrenin – yükleme gerektirmez, özel yazı tipleri, bölge desteği ve hata yönetimi."
 keywords: "Aspose.Cells, Excel'den HTML’ye, çalışma sayfası dönüştürme, bulut API"
 weight: 100

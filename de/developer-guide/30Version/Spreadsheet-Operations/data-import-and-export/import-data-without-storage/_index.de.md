@@ -3,8 +3,8 @@ title: "Datenimport ohne Speicherung – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Datenimport ohne Speicherung"
 type: docs
-url: /import/without-using-storage/
-aliases: [/import-data-in-excel-worksheet-without-using-storage/]
+url: /de/import/without-using-storage/
+aliases: [  /de/import-data-in-excel-worksheet-without-using-storage/ ]
 keywords: "Aspose.Cells, Cloud API, Datenimport ohne Speicherung, Excel-Import-API, REST-Import"
 description: "Erfahren Sie, wie Sie Daten mithilfe der Aspose.Cells Cloud API in eine Excel-Arbeitsmappe importieren, ohne Speicherung zu verwenden. Enthält Anforderungsformat, Parameter, cURL-Beispiel, SDK-Code und Fehlerbehandlung."
 weight: 10

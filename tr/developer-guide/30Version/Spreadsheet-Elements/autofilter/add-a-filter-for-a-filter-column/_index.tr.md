@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "Filtre ekle"
 type: docs
 url: /tr/autofilter/add-filter/
-aliases: [/tr/add-a-filter-for-a-filter-column/]
+aliases: [  /tr/add-a-filter-for-a-filter-column/ ]
 keywords: "Aspose.Cells, Bulut, Excel, Otomatik Filtre, Filtre Ekle, REST API, SDK"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasındaki bir sütuna otomatik filtre nasıl ekleneceğini öğrenin. cURL, SDK örnekleri ve parametre kılavuzu içerir."
 weight: 60

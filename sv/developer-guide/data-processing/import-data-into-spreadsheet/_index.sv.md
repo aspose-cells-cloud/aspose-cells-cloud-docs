@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Excel-plattform för dataintegriering från flera källor – Aspose.Cells Clouds API för automatisk dataimport och -transformation."
 linktitle: "Importera data till kalkylblad"
 type: docs
-url: /import-data-into-spreadsheet/
+url: /sv/import-data-into-spreadsheet/
 keywords: "Aspose Cells, dataimport-API, CSV till Excel, JSON till Excel, XML till Excel, molnbaserat kalkylblad, REST-API"
 description: "Importera CSV-, JSON- eller XML-data till Excel-arbetsblad med Aspose.Cells Clouds REST-API. Lär dig om begärandeformat, parametrar, exempel på SDK-kod och felhantering."
 weight: 100

@@ -3,7 +3,7 @@ title: "Rimuovi protezione dal workbook Excel – Aspose.Cells Cloud API"
 second_title: "Documento"
 linktitle: "Rimuovi protezione dal file Excel"
 type: docs
-url: /excel-file-unprotect/
+url: /it/excel-file-unprotect/
 aliases:
   - /unprotect-excel-workbooks/
   - /workbook/unprotect/

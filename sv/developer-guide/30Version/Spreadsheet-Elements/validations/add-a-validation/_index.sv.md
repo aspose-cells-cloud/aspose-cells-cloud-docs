@@ -3,7 +3,7 @@ title: "Lägg till ett kalkylbladsvalidering till ett Excel-kalkylblad"
 second_title: "Dokument"
 linktitle: "Lägg till"
 type: docs
-url: /validations/add/
+url: /sv/validations/add/
 keywords: "Lägg till kalkylbladsvalidering, Excel, Aspose.Cells Cloud, REST API, Kalkylark, Valideringsregel"
 description: "Använd Aspose.Cells Cloud REST API för att lägga till en kalkylbladsvalidering till en Excel-fil. SDK:er finns tillgängliga för C#, Java, PHP, Ruby, Node.js, Python, Perl, Go och Swift."
 weight: 10

@@ -2,7 +2,7 @@
 title: "Пакетная блокировка файлов Excel"
 second_title: "Документ"
 type: docs
-url: /batch/lock
+url: /ru/batch/lock
 keywords: "пакетная блокировка, Excel, Aspose.Cells, облачный API, электронная таблица, защита файла"
 description: "Aspose.Cells Cloud API позволяет выполнять пакетную блокировку нескольких файлов Excel. Используйте REST-конечную точку или любой из поддерживаемых SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go и др.) для массовой блокировки файлов."
 weight: 100

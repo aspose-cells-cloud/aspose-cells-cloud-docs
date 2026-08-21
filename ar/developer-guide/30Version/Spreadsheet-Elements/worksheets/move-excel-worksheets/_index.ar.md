@@ -3,8 +3,8 @@ title: "نقل ورقة عمل Excel – واجهة برمجة تطبيقات As
 second_title: "مستند"
 linktype: "move"
 type: docs
-url: /worksheets/move/
-aliases: [/move-excel-worksheets/]
+url: /ar/worksheets/move/
+aliases: [  /ar/move-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud، نقل ورقة عمل، Excel، واجهة برمجة تطبيقات REST، SDK، C#، Java، Python، Node.js، PHP، Ruby، Go، Android، Swift، Perl، الإصدار 3.0"
 description: "تعرّف على كيفية نقل ورقة عمل Excel إلى موقع جديد باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0). يتضمن عنوان النهاية (Endpoint)، المُعطَلات المطلوبة، مثال cURL، ورموز SDK بلغات C# وJava وPython وغيرها."
 weight: 20

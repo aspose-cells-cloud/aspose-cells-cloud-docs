@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "منصة دمج البيانات من مصادر متعددة – واجهة برمجة تطبيقات Aspose.Cells Cloud للاستيراد والتحويل التلقائي للبيانات."
 linktitle: "استيراد البيانات إلى ورقة العمل"
 type: docs
-url: /import-data-into-spreadsheet/
+url: /ar/import-data-into-spreadsheet/
 keywords: "Aspose Cells، واجهة برمجة تطبيقات استيراد البيانات، CSV إلى Excel، JSON إلى Excel، XML إلى Excel، ورقة عمل سحابية، واجهة برمجة تطبيقات REST"
 description: "استورد بيانات CSV أو JSON أو XML إلى أوراق عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. اكتشف تنسيق الطلب، والمتغيرات، وأكواد عينات SDK، وإدارة الأخطاء."
 weight: 100

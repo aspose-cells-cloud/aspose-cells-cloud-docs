@@ -3,8 +3,8 @@ title: "Объединение нескольких файлов Excel в одн
 second_title: "Документ"
 linktitle: "Объединение нескольких файлов Excel"
 type: docs
-url: /merge-multi-files-into-excel/
-aliases: [/merge/multi-files/]
+url: /ru/merge-multi-files-into-excel/
+aliases: [  /ru/merge/multi-files/ ]
 keywords: "Aspose.Cells Cloud, объединение нескольких файлов Excel, REST API, объединение электронных таблиц, облачный SDK"
 description: "Узнайте, как объединить несколько рабочих книг Excel в один файл с помощью REST API Aspose.Cells Cloud (версия 3.0). Включает HTTPS-адрес, команду cURL, примеры SDK, необходимые параметры и детали обработки ошибок."
 weight: 32

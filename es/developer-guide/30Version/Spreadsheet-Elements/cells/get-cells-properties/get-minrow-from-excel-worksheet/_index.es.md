@@ -1,7 +1,7 @@
 ---
 title: "Obtener MinRow de una hoja de cálculo de Excel – Referencia de la API de Aspose.Cells Cloud"
 type: docs
-url: /get-minrow-from-excel-worksheet/
+url: /es/get-minrow-from-excel-worksheet/
 weight: 80
 keywords: "Aspose.Cells, GetMinRow, hoja de cálculo de Excel, API REST, índice de fila mínima, SDK en la nube"
 description: "Aprenda cómo recuperar el índice de fila mínima de una hoja de cálculo mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye la solicitud completa con cURL con autenticación, esquema de respuesta y ejemplos de SDK para múltiples lenguajes."

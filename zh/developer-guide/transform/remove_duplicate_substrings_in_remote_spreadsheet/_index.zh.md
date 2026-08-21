@@ -4,7 +4,7 @@ ArticleTitle: "移除远程电子表格中的重复子字符串 – Aspose.Cells
 second_title: "文档"
 linktitle: "移除远程电子表格中的重复子字符串"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
+url: /zh/cells/{name}/worksheets/{worksheet}/range/{range}/content/remove/duplicate-substrings
 aliases: []
 keywords: "Aspose.Cells, 移除重复子字符串, API"
 description: "用于在工作簿指定范围内的单元格中查找并移除重复子字符串的 API。"

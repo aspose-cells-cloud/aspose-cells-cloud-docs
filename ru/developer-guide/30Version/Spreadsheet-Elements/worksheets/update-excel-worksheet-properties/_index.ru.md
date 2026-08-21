@@ -3,8 +3,8 @@ title: "Обновление свойств рабочего листа – Сп
 second_title: "Документ"
 linktitle: "Обновление"
 type: docs
-url: /worksheets/update-properties/
-aliases: [/update-excel-worksheet-properties/]
+url: /ru/worksheets/update-properties/
+aliases: [  /ru/update-excel-worksheet-properties/ ]
 weight: 20
 keywords:
   [

@@ -1,7 +1,7 @@
 ---
 title: "ExcelワークシートからMinRowを取得する – Aspose.Cells Cloud APIリファレンス"
 type: docs
-url: /get-minrow-from-excel-worksheet/
+url: /ja/get-minrow-from-excel-worksheet/
 weight: 80
 keywords: "Aspose.Cells, GetMinRow, Excelワークシート, REST API, 最小行インデックス, クラウドSDK"
 description: "Aspose.Cells Cloud REST API (v3.0) を使用してワークシートの最小行インデックスを取得する方法を学びます。認証を含む完全なcURLリクエスト、レスポンススキーマ、および複数の言語向けSDKのサンプルを含みます。"

@@ -4,7 +4,7 @@ secondtitle: "Dokument"
 ArticleTitle: "Molnbaserad Excel-filhantering – Snabbt flytta mappar i molnet"
 linktitle: "Flyttmapp"
 type: docs
-url: /move-folder/
+url: /sv/move-folder/
 keywords: "Aspose.Cells, Flyttmapp, Molnlagring, Excel-API"
 description: "Lär dig hur du flyttar mappar i Aspose.Cells Cloud-lagring via REST-baserade Flyttmapp-API:et. Inkluderar slutpunkt, parametrar, exempel på cURL, felkoder och SDK-exempel för C#, Java, Python med mera."
 weight: 100

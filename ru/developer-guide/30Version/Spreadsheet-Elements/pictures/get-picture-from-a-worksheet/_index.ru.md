@@ -3,8 +3,8 @@ title: "Получить все изображения на листе Excel"
 second_title: "Документ"
 linktype: "get-all"
 type: docs
-url: /pictures/get-all/
-aliases: [/get-picture-from-a-worksheet/]
+url: /ru/pictures/get-all/
+aliases: [  /ru/get-picture-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, лист Excel, API изображений, получить все изображения, REST API, SDK"
 description: "Получить все объекты изображений с листа Excel через REST API Aspose.Cells Cloud."
 ArticleTitle: "Получить все изображения на листе Excel — API Aspose.Cells Cloud"

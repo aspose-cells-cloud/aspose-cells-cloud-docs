@@ -1,7 +1,7 @@
 ---
 title: "Obtener MaxRow de una hoja de cálculo de Excel"
 type: docs
-url: /get-maxrow-from-excel-worksheet/
+url: /es/get-maxrow-from-excel-worksheet/
 weight: 40
 ArticleTitle: "Recuperar el número máximo de fila en una hoja de cálculo de Excel – API de Aspose.Cells Cloud"
 keywords: "Aspose.Cells, Excel, MaxRow, API REST, SDK en la nube, hoja de cálculo, hoja de trabajo, GetMaxRow"

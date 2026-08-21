@@ -3,8 +3,8 @@ title: "Exporter un classeur"
 second_title: "Document"
 linktitle: "Classeur"
 type: docs
-url: /export-excel-to-different-formats/
-aliases: [/export/excel-to-different-formats/]
+url: /fr/export-excel-to-different-formats/
+aliases: [  /fr/export/excel-to-different-formats/ ]
 keywords: "Aspose.Cells Cloud, export Excel, conversion de classeur, PDF, CSV, JSON, formats d’image, API de feuille de calcul, XLSX, ODS, PNG"
 description: "Guide pas à pas sur l’exportation de classeurs Excel vers plusieurs formats, notamment PDF, CSV, JSON et divers types d’images, à l’aide de l’API REST Aspose.Cells Cloud et des SDK."
 weight: 20

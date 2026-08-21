@@ -3,8 +3,8 @@ title: "엑셀 워크시트에서 피벗 테이블 가져오기"
 second_title: "문서"
 linktitle: 가져오기
 type: docs
-url: /pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
+url: /ko/pivot-tables/get/
+aliases: [  /ko/get-worksheet-pivot-table-information-by-index/ ]
 keywords: "Aspose.Cells, 피벗 테이블, 엑셀, REST API, 워크시트 피벗 테이블 가져오기"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크시트에서 피벗 테이블을 검색합니다. 요청 구문, 매개변수, 인증, 응답 스키마, 오류 처리 및 SDK 예제를 포함합니다."
 weight: 10

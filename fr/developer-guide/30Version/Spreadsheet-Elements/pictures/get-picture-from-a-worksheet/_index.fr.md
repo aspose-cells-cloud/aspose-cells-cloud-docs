@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "get-all"
 type: docs
 url: /fr/pictures/get-all/
-aliases: [/get-picture-from-a-worksheet/]
+aliases: [  /fr/get-picture-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, feuille de calcul Excel, API d'images, obtenir toutes les images, API REST, SDK"
 description: "Récupérer tous les objets image d'une feuille de calcul Excel via l'API REST Aspose.Cells Cloud."
 ArticleTitle: "Obtenir toutes les images d'une feuille de calcul Excel - Aspose.Cells Cloud API"

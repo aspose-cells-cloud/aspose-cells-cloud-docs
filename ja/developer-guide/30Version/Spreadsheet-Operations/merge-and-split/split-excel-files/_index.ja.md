@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud API を使用して Excel ワークブック�
 second_title: "ドキュメント"
 linktitle: "Excelファイルを分割する"
 type: docs
-url: /split-multi-excel-files/
-aliases: [/split/multi-files/]
+url: /ja/split-multi-excel-files/
+aliases: [  /ja/split/multi-files/ ]
 keywords: "Excel, Aspose.Cells Cloud, REST API, ワークブックの分割, 複数ファイル, JPEG, PNG, PDF, CSV, JSON"
 description: "Aspose.Cells Cloud REST API を使用すると、Excelワークブックを複数のファイルにさまざまな形式で分割できます。このドキュメントでは、リクエストパラメーター、cURL の使用例、および C#、Java、PHP、Ruby、Node.js、Python、Perl、Go などの言語向けの SDK コードサンプルを提供しています。"
 weight: 130

@@ -4,7 +4,7 @@ linktitle: "기타 기능"
 ArticleTitle: "기타 기능: 건강 상태 확인, 공개 키 조회"
 second_title: "문서"
 type: docs
-url: /other-features/
+url: /ko/other-features/
 keywords: "Aspose.Cells, 클라우드 API, 건강 상태 확인, 공개 키, 액세스 토큰, Excel, REST"
 description: "Aspose.Cells Cloud의 기타 기능 살펴보기: 건강 상태 확인 엔드포인트, 공개 키 조회, 토큰 생성을 통해 Excel API 통합을 보안하세요."
 weight: 180

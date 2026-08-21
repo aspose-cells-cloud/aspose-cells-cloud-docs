@@ -3,8 +3,8 @@ title: "Arbeta med autofit på ett Excel-ark"
 second_title: "Document"
 linktype: "Autofit"
 type: docs
-url: /worksheets/autofit/
-aliases: [/autofit-rows-and-columns-of-worksheet/]
+url: /sv/worksheets/autofit/
+aliases: [  /sv/autofit-rows-and-columns-of-worksheet/ ]
 keywords: "autofit, kolumn, rad, Aspose.Cells, moln, Excel, API, storlek"
 description: "Lär dig hur du automatiskt anpassar rad- och kolumnstorlek i ett Excel-ark med Aspose.Cells Cloud REST API. Innehåller exempel i cURL, .NET, Java och Python."
 weight: 20

@@ -3,8 +3,8 @@ title: "범위 스타일 설정 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktitle: "범위 스타일 설정"
 type: docs
-url: /ranges/update/style/
-aliases: [/set-the-style-of-the-range/]
+url: /ko/ranges/update/style/
+aliases: [  /ko/set-the-style-of-the-range/ ]
 keywords: "Aspose.Cells, 범위 스타일, API, Excel, 클라우드"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 셀 범위 스타일을 설정하는 방법을 알아보세요. 인증 단계, 요청 형식, 응답 세부 정보, .NET, Java, Python, Go 등 여러 언어에 대한 SDK 예제가 포함됩니다."
 weight: 70

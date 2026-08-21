@@ -3,7 +3,7 @@ title: "Aspose.Cells – 単語の大文字・小文字を更新する API"
 second_title: "ドキュメント"
 linktitle: "単語の大文字・小文字"
 type: docs
-url: /post-update-word-case/
+url: /ja/post-update-word-case/
 keywords: "Aspose.Cells, 単語の大文字・小文字を更新する API, テキストの大文字小文字変換, Excel, CSV, Google スプレッドシート, REST API"
 description: "Aspose.Cells Cloud の単語の大文字・小文字を更新する API を使用して、Excel、CSV、または Google スプレッドシートファイル内のテキストの大文字・小文字を変換します。大文字・小文字の変換、タイトルケース、および先頭文字の大文字化をサポートします。"
 weight: 100

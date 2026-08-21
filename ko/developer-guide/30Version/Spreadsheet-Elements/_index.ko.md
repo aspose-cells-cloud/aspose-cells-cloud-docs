@@ -2,7 +2,7 @@
 title: "스프레드시트 요소"
 second_title: "문서"
 type: docs
-url: /spreadsheet-elements/
+url: /ko/spreadsheet-elements/
 keywords: "Aspose.Cells, 클라우드, Excel API, 자동 필터, 차트, 피벗 테이블, 워크시트"
 description: "Excel을 위한 Aspose.Cells Cloud REST API 기능을 탐색하세요. 여기에는 자동 필터, 셀, 차트, 열, 주석, 조건부 서식, 하이퍼링크, 목록 개체, 메타데이터, OLE 개체, 페이지 나누기, 그림, 피벗 테이블, 범위, 행, 도형, 유효성 검사, 워크시트 등이 포함됩니다."
 weight: 100

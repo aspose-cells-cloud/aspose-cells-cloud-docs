@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Object Exists API – Aspose.Cells Cloud でのファイルまたはフォルダーの存在を検証"
 linktitle: "Object Exists"
 type: docs
-url: /object-exists/
+url: /ja/object-exists/
 keywords: "Aspose.Cells, クラウドストレージ, object exists, ファイル存在確認, フォルダー存在確認, API"
 description: "Object Exists API を使用して、Aspose.Cells Cloud ストレージ内にファイルまたはフォルダーが存在するかどうかを迅速に確認します。ストレージ名とバージョン ID のオプション指定をサポートし、バージョン管理対応オブジェクトで動作します。"
 weight: 100

@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать лист электронной таблицы в формат JSON с помощью Aspose.Cells Cloud API"
 linktitle: "Преобразование листа в JSON"
 type: docs
-url: /convert-worksheet-to-json/
+url: /ru/convert-worksheet-to-json/
 keywords: "Aspose.Cells, лист в JSON, конвертация Excel, облачный API, API v4, экспорт данных"
 description: "Пошаговое руководство по преобразованию листа Excel в формат JSON с помощью Aspose.Cells Cloud API, включая параметры запроса, обработку ответа, коды ошибок и примеры SDK."
 weight: 100

@@ -4,7 +4,7 @@ ArticleTitle: "チャートをPDFに変換 – Aspose.Cells Cloud API"
 second_title: "ドキュメント"
 linktitle: "ConvertChartToPdf"
 type: docs
-url: /cells/convert/chart/pdf
+url: /ja/cells/convert/chart/pdf
 aliases: []
 keywords: "ConvertChartToPdf, Aspose.Cells, PDF, チャート変換"
 description: "ローカルドライブ上のスプレッドシートのチャートをPDFに変換します。"

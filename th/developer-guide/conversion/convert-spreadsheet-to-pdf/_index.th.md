@@ -4,7 +4,7 @@ second title: "เอกสาร"
 ArticleTitle: "วิธีการแปลงสเปรดชีตในเครื่องเป็น PDF โดยใช้ Aspose.Cells Cloud API"
 linktitle: "แปลงสเปรดชีตเป็น PDF"
 type: docs
-url: /convert-spreadsheet-to-pdf/
+url: /th/convert-spreadsheet-to-pdf/
 keywords: "Aspose.Cells Cloud, แปลงสเปรดชีตเป็น PDF, การแปลง Excel, cloud API, การสร้าง PDF, REST API, v4.0"
 description: "คู่มือทีละขั้นตอนในการแปลงสเปรดชีตในเครื่องเป็น PDF โดยใช้ Aspose.Cells Cloud API ประกอบด้วยไวยากรณ์ของคำขอ พารามิเตอร์ รายละเอียดของคำตอบ การจัดการข้อผิดพลาด และตัวอย่างการใช้งานจริง"
 weight: 100

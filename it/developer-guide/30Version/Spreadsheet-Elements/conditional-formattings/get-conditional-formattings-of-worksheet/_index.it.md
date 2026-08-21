@@ -1,8 +1,8 @@
 ---
 title: "Ottenere le regole di formattazione condizionale"
 type: docs
-url: /conditional-formattings/get-all/
-aliases: [/get-conditional-formattings-of-worksheet/]
+url: /it/conditional-formattings/get-all/
+aliases: [  /it/get-conditional-formattings-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, Formattazione condizionale, Foglio di lavoro, API di formattazione condizionale"
 description: "Recupera tutte le regole di formattazione condizionale applicate a un foglio di lavoro utilizzando l'API REST di Aspose.Cells Cloud. Include la sintassi della richiesta, i passaggi di autenticazione, i parametri, esempi concisi di risposta e la gestione degli errori."
 weight: 20

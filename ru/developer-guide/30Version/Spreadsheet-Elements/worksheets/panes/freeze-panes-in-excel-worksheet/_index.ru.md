@@ -3,8 +3,8 @@ title: "Заморозка панелей на листе Excel"
 second_title: "Документ"
 linktitle: "Заморозка"
 type: docs
-url: /worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+url: /ru/worksheets/panes/freeze/
+aliases: [  /ru/freeze-panes-in-excel-worksheet/ , /ru/worksheets/freeze-panes/ ]
 keywords: "Aspose.Cells Cloud, Заморозка панелей, Excel, REST API, Лист"
 description: "Узнайте, как заморозить строки и столбцы на листе Excel с помощью REST API Aspose.Cells Cloud. Включает синтаксис конечной точки, обязательные параметры, пример cURL, рекомендации по аутентификации, подробности об ошибках и примеры кода SDK для нескольких языков."
 weight: 190

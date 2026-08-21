@@ -4,8 +4,8 @@ ArticleTitle: "تصدير صفحة ورقة عمل – مرجع واجهة بر�
 second_title: "مستند"
 linktitle: "صفحة"
 type: docs
-url: /worksheets/page-to-different-formats/
-aliases: [/get-worksheet-for-page-index/]
+url: /ar/worksheets/page-to-different-formats/
+aliases: [  /ar/get-worksheet-for-page-index/ ]
 keywords: "Aspose.Cells Cloud، تصدير صفحة ورقة العمل، PDF، PNG، CSV، واجهة برمجة تطبيقات REST، مصادقة JWT، تنسيقات الملفات"
 description: "تعرَّف على كيفية تصدير صفحة ورقة عمل محددة إلى تنسيقات مثل PDF وPNG وCSV وما إلى ذلك باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يشمل ذلك طلب cURL، ودليل المعاملات، وأمثلة لواجهات برمجة التطبيقات (SDKs) بلغات برمجة متعددة."
 weight: 240

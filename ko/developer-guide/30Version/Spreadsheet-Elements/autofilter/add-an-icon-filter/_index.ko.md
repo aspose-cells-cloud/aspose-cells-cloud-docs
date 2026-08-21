@@ -3,8 +3,8 @@ title: "엑셀 워크시트에 아이콘 필터 추가"
 second_title: "문서"
 linktitle: "아이콘 필터 추가"
 type: docs
-url: /autofilter/add-icon-filter/
-aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
+url: /ko/autofilter/add-icon-filter/
+aliases: [  /ko/add-an-icon-filter/ , /ko/autofilter/add-an-icon-filter/ ]
 keywords: "Aspose.Cells Cloud, Excel, 아이콘 필터, 자동 필터, REST API"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크시트에 아이콘 필터를 추가하는 방법을 알아보세요. 요청 세부 정보, cURL 예제, SDK 코드 예제, 오류 처리 방법을 제공합니다."
 weight: 65

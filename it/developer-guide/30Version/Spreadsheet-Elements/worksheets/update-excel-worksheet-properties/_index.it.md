@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Aggiorna"
 type: docs
 url: /it/worksheets/update-properties/
-aliases: [/update-excel-worksheet-properties/]
+aliases: [  /it/update-excel-worksheet-properties/ ]
 weight: 20
 keywords:
   [

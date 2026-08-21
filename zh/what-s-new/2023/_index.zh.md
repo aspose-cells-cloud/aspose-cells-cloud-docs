@@ -4,7 +4,7 @@ second_title: "文档"
 linktype: "Aspose.Cells Cloud 2023 年新功能"
 type: docs
 weight: 30
-url: /new-features/2023/
+url: /zh/new-features/2023/
 keywords: "Excel, Office Cloud, REST API, 电子表格, PDF, CSV, JSON, Markdown, Aspose.Cells Cloud, 2023 年更新"
 description: "了解 Aspose.Cells Cloud 2023 年的新功能，包括区域感知转换 API、图表轴支持、数字签名及其他增强功能。详细的发行说明及代码示例。"
 ArticleTitle: "Aspose.Cells Cloud 2023 年新功能 — 功能更新与发行说明"

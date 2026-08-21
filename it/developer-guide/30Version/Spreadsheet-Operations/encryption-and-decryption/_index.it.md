@@ -4,7 +4,7 @@ second_title: "Documento"
 linktype: "Proteggi Excel"
 type: docs
 url: /it/protect/
-aliases: [/it/workbook/password/]
+aliases: [  /it/workbook/password/ ]
 keywords: "Excel, proteggi, crittografa, decrittografa, firma digitale, Aspose.Cells Cloud, API REST, password, sicurezza"
 description: "Scopri come proteggere, crittografare, decrittografare e firmare digitalmente cartelle di lavoro Excel con l'API REST di Aspose.Cells Cloud – esempi di codice per Android, C#, Java, Python e altro."
 ArticleTitle: "Crittografa, decrittografa, firma digitalmente e proteggi file Excel utilizzando l'API Aspose.Cells Cloud"

@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "클라우드 Excel 파일 일괄 텍스트 교체 – 찾기 및 교체 API"
 linktitle: "원격 스프레드시트 콘텐츠 교체"
 type: docs
-url: /replace-content-in-remote-spreadsheet/
+url: /ko/replace-content-in-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, 콘텐츠 교체, 원격 스프레드시트, 찾기 및 교체 API, 클라우드 Excel, 일괄 텍스트 교체"
 description: "Aspose.Cells Cloud 찾기 및 교체 API을 사용하여 원격 Excel 워크북의 텍스트를 일괄적으로 업데이트하세요. HTTPS 엔드포인트 보안, OAuth2 인증, 빠른 통합을 위한 준비된 SDK 예제 제공."
 weight: 100

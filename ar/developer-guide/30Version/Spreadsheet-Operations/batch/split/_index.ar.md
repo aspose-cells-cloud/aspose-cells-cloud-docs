@@ -2,7 +2,7 @@
 title: "التفريق بالدفعة"
 second_title: "مستند"
 type: docs
-url: /batch/split
+url: /ar/batch/split
 keywords: "التفريق بالدفعة، Aspose.Cells Cloud، REST API، Excel، PDF، CSV، JSON، Spreadsheet، Cloud SDK"
 description: "توثيق لواجهة برمجة تطبيقات التفريق بالدفعة في Aspose.Cells Cloud، والتي تقوم بتفريق ملفات الجداول الإلكترونية إلى تنسيقات متعددة مثل PDF وCSV أو JSON. ويشمل تفاصيل الطلب وأوامر cURL المثالية واستخدام SDK عبر لغات برمجة متنوعة."
 weight: 100

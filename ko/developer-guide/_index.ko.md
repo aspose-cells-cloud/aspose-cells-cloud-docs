@@ -4,8 +4,8 @@ second_title: "문서"
 linktitle: "개발자 가이드"
 ArticleTitle: "변환, 병합, 분할, 보호, 검색, 바꾸기 및 변환 — 모두 셀스 클라우드에서"
 type: docs
-url: /developer‑guide/
-aliases: [/developer‑guide‑v4.0/]
+url: /ko/developer‑guide/
+aliases: [  /ko/developer‑guide‑v4.0/ ]
 keywords: "Aspose.Cells Cloud, Excel REST API, 스프레드시트 변환, 병합, 분할, 보호, 검색 및 바꾸기, 데이터 변환, SDK 예제, Java, .NET, Python, Node.js, PHP, Go, Ruby, Perl"
 description: "Aspose.Cells Cloud REST API를 위한 종합적인 개발자 가이드로, 스프레드시트 변환, 병합, 분할, 보호, 검색 및 바꾸기, 데이터 변환을 다루며, Java, .NET, Python, Node.js, PHP, Go, Ruby, Perl용 SDK 예제로 연결됩니다."
 weight: 20

@@ -1,7 +1,7 @@
 ---
 title: "Come unire le celle in un foglio di lavoro Excel – Aspose.Cells Cloud API (v3.0)"
 type: docs
-url: /merge-cells-in-excel-worksheet/
+url: /it/merge-cells-in-excel-worksheet/
 weight: 110
 keywords: "unire celle, Aspose.Cells, API cloud, Excel"
 description: "Guida all’unione delle celle in un foglio di lavoro Excel utilizzando l’API REST di Aspose.Cells Cloud con esempi in cURL e SDK."

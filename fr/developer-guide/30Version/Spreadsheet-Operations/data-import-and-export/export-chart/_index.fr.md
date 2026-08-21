@@ -3,8 +3,8 @@ title: "Exporter un graphique Excel"
 second_title: "Document"
 linktitle: "Graphique"
 type: docs
-url: /export-excel-chart-to-different-formats/
-aliases: [/export/excel-chart-to-different-formats/]
+url: /fr/export-excel-chart-to-different-formats/
+aliases: [  /fr/export/excel-chart-to-different-formats/ ]
 description: "Exportez des objets graphique Excel vers des formats populaires tels que PNG, JPEG, PDF, SVG, TIFF, EMF, WMF, et plus encore à l'aide de l'API REST Aspose.Cells Cloud ou des SDK. Inclut l'authentification, un exemple cURL et des exemples de code pour plusieurs langages."
 keywords: "Aspose.Cells, export de graphique, export graphique Excel, API REST, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK, formats de graphique, Aspose Cells Cloud"
 weight: 20

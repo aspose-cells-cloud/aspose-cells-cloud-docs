@@ -2,7 +2,7 @@
 title: "Toplu Kilidi Açma"
 second_title: "Belge"
 type: docs
-url: /batch/unlock
+url: /tr/batch/unlock
 keywords: "toplu kilidi açma, Aspose.Cells Cloud, Excel, REST API, elektronik tablo, bulut SDK"
 description: "Aspose.Cells Cloud REST API ile birden fazla Excel dosyasını toplu olarak kilidini açın. C#, Java, Python ve diğer diller için SDK'ları destekler."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "ローカルスプレッドシートのチャートをPDFファイルに変換する方法：ステップ・バイ・ステップガイド"
 linktitle: "チャートをPDFに変換"
 type: docs
-url: /convert-chart-to-pdf/
+url: /ja/convert-chart-to-pdf/
 keywords: "Aspose Cells, チャート, PDF, Excel, 変換, クラウドAPI"
 description: "Aspose.Cells Cloud REST API を使用して、ローカルExcelファイルのチャートをPDF形式にエクスポートします。XLSXおよびXLSファイルをサポートします。"
 weight: 100

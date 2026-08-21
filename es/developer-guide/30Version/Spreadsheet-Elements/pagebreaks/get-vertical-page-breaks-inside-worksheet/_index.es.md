@@ -3,8 +3,8 @@ title: "Obtener saltos de página verticales"
 second_title: "Documento"
 linktitle: "Obtener saltos de página verticales"
 type: docs
-url: /page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
+url: /es/page-breaks/get-vertical-page-breaks/
+aliases: [  /es/get-vertical-page-breaks-inside-worksheet/ ]
 keywords: "Aspose.Cells, saltos de página verticales, API de Excel, hoja de cálculo en la nube, API REST"
 description: "Recuperar saltos de página verticales desde una hoja de cálculo de Excel usando la API REST de Aspose.Cells Cloud (v3.0). Incluye el endpoint HTTPS, parámetros necesarios, ejemplo con cURL, detalles de la respuesta, manejo de errores y ejemplos de SDK."
 weight: 20

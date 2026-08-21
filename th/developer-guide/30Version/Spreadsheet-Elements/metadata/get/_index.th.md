@@ -3,7 +3,7 @@ title: "รับข้อมูลเมตาดาต้าจากไฟล
 second_title: "เอกสาร"
 linktitle: "รับข้อมูลโดยไม่ต้องใช้พื้นที่จัดเก็บข้อมูล"
 type: docs
-url: /metadata/get/
+url: /th/metadata/get/
 keywords: "Aspose.Cells, Excel, metadata, REST API, cloud SDK"
 description: "ดึงข้อมูลเมตาดาต้าแบบติดตั้งมาหรือแบบกำหนดเองจากสมุดงาน Excel โดยใช้ REST API ของ Aspose.Cells Cloud ประกอบด้วยรูปแบบคำร้องขอ พารามิเตอร์ ตัวอย่างโค้ด SDK และการจัดการข้อผิดพลาด"
 weight: 23

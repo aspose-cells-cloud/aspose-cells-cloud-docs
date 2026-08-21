@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cómo comprimir archivos de Excel: reducir tamaño de hoja de cálculo y optimizar rendimiento"
 linktitle: "Comprimir hoja de cálculo"
 type: docs
-url: /compress-spreadsheet/
+url: /es/compress-spreadsheet/
 keywords: "compresión de Excel, Aspose.Cells Cloud, reducción de tamaño de hoja de cálculo, API, optimización de libro de trabajo"
 description: "Aprenda a comprimir libros de Excel con la API de Aspose.Cells Cloud. Obtenga ejemplos paso a paso, parámetros, autenticación y mejores prácticas."
 weight: 100

@@ -4,7 +4,7 @@ second title: "Документ"
 linktitle: "Сортировка"
 type: docs
 keywords: "Сортировка диапазона, Aspose.Cells Cloud, REST API, Электронная таблица, Excel, API"
-url: /ranges/sort/
+url: /ru/ranges/sort/
 description: Предоставляет API для сортировки диапазона ячеек в пределах рабочей книги с помощью Aspose.Cells Cloud.
 weight: 20
 ---

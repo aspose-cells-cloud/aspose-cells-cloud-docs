@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать данные диапазона локальной электронной таблицы в JSON-файл: Пошаговое руководство"
 linktitle: "Преобразование диапазона в JSON"
 type: docs
-url: /convert-range-to-json/
+url: /ru/convert-range-to-json/
 keywords: "преобразование диапазона в json, Aspose.Cells Cloud, Excel в JSON, преобразование электронных таблиц, API"
 description: "Преобразуйте конкретный диапазон из локальной электронной таблицы Excel в JSON с использованием API Aspose.Cells Cloud."
 weight: 100

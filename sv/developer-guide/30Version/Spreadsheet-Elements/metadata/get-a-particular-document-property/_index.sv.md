@@ -3,8 +3,8 @@ title: "Hämta en specifik dokumentegenskap"
 second_title: "Dokument"
 linktitle: "Hämta"
 type: docs
-url: /document-properties/get/
-aliases: [/get-a-particular-document-property/]
+url: /sv/document-properties/get/
+aliases: [  /sv/get-a-particular-document-property/ ]
 keywords: "Aspose.Cells, molntjänst, hämta dokumentegenskap, Excel-metadata, REST GET, SDK-exempel"
 description: "Hämta en namngiven dokumentegenskap (t.ex. författare, titel) från en Excel-fil med Aspose.Cells Cloud REST API. Innehåller cURL-exempel, SDK-utdrag och svarsschema."
 weight: 20

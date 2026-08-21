@@ -3,8 +3,8 @@ title: "ลบคุณสมบัติของเอกสารเฉพา
 second_title: "เอกสาร"
 linktitle: "ลบ"
 type: docs
-url: /document-properties/delete/
-aliases: [/remove-a-particular-document-property/]
+url: /th/document-properties/delete/
+aliases: [  /th/remove-a-particular-document-property/ ]
 keywords: "Aspose.Cells, ลบคุณสมบัติของเอกสาร, API ข้อมูลเมตา Excel, REST, SDK บนคลาวด์, ตัวอย่าง cURL"
 description: "ลบคุณสมบัติของเอกสารเฉพาะออกจากสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API เวอร์ชัน 3.0 พร้อมตัวอย่าง cURL และ SDK สำหรับ C#, Java, Python และอื่นๆ"
 weight: 50

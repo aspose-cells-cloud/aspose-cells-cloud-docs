@@ -3,7 +3,7 @@ title: "Eliminare più righe da un foglio di lavoro Excel"
 second_title: "Documento"
 linktitle: "Righe"
 type: docs
-url: /rows/delete/rows/
+url: /it/rows/delete/rows/
 keywords: "Aspose.Cells Cloud, eliminare righe, eliminare più righe, foglio di lavoro Excel, API REST, SDK"
 description: "Scopri come eliminare una o più righe da un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud. Include dettagli sull'endpoint, parametri, un esempio cURL e campioni di codice SDK per vari linguaggi."
 weight: 80

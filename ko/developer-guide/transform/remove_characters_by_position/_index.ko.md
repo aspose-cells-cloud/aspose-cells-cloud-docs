@@ -4,7 +4,7 @@ ArticleTitle: "위치 기준 문자 제거 – Aspose.Cells Cloud API"
 second_title: "문서"
 linktitle: "위치 기준 문자 제거"
 type: docs
-url: /cells/content/remove/characters-by-position
+url: /ko/cells/content/remove/characters-by-position
 aliases: []
 keywords: "Aspose.Cells, 문자 제거, API"
 description: "스preadsheet에서 셀의 위치 기준으로 문자를 삭제합니다."

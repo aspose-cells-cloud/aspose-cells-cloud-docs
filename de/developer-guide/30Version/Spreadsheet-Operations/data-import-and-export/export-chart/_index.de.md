@@ -3,8 +3,8 @@ title: "Excel-Diagramm exportieren"
 second_title: "Dokument"
 linktitle: "Diagramm"
 type: docs
-url: /export-excel-chart-to-different-formats/
-aliases: [/export/excel-chart-to-different-formats/]
+url: /de/export-excel-chart-to-different-formats/
+aliases: [  /de/export/excel-chart-to-different-formats/ ]
 description: "Exportieren Sie Excel-Diagrammobjekte in gängige Formate wie PNG, JPEG, PDF, SVG, TIFF, EMF, WMF und weitere mithilfe der Aspose.Cells Cloud REST API oder SDKs. Enthält Authentifizierung, ein cURL-Beispiel und Codebeispiele für mehrere Sprachen."
 keywords: "Aspose.Cells, Diagramm exportieren, Excel-Diagramm exportieren, REST API, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK, Diagrammformate, Aspose Cells Cloud"
 weight: 20

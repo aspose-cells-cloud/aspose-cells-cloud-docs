@@ -2,7 +2,7 @@
 title: "Massenfreigabe"
 second_title: "Dokument"
 type: docs
-url: /batch/unlock
+url: /de/batch/unlock
 keywords: "Massenfreigabe, Aspose.Cells Cloud, Excel, REST-API, Tabellendokument, Cloud-SDK"
 description: "Freigeben mehrerer Excel-Dateien in einem Rutsch mithilfe der Aspose.Cells Cloud REST-API. Unterstützt SDKs für C#, Java, Python und weitere Sprachen."
 weight: 100

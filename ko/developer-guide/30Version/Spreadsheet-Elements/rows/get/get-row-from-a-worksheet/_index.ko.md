@@ -3,8 +3,8 @@ title: "엑셀 워크시트에서 행 설명 가져오기"
 second_title: "문서"
 linktitle: "행"
 type: docs
-url: /rows/get/row/
-aliases: [/get-row-from-a-worksheet/]
+url: /ko/rows/get/row/
+aliases: [  /ko/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 엑셀 행 API, 워크시트 행 가져오기, REST API, .NET SDK, Java SDK, Python SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크시트의 특정 행에 대한 자세한 정보(높이, 스타일, 숨김 상태 등)를 검색합니다. curl 예제, SDK 스니펫 및 오류 처리 포함."
 weight: 10

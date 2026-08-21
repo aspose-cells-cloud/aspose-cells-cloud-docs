@@ -2,8 +2,8 @@
 title: "ImportData 작업 – Aspose.Cells Cloud API 참조 및 cURL 예제"  
 second_title: "문서"  
 type: docs  
-url: /tasks/importdata/  
-aliases: [/working-with-importdata-task/]  
+url: /ko/tasks/importdata/
+aliases: [  /ko/working-with-importdata-task/ ]
 keywords: "Aspose.Cells, ImportData 작업, Excel API, REST, cURL, SDK"  
 description: "Aspose.Cells Cloud ImportData 작업을 사용하여 Excel 워크북에 일괄 데이터를 가져오는 방법을 알아보세요. cURL 구문, 요청 스키마, SDK 샘플(C#, PHP, Ruby, Node.js) 및 오류 처리를 포함합니다."  
 weight: 40  

@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Excel-deduplicerare för dubblettsträngar – Rensa upprepad text i celler"
 linktitle: "Ta bort dubblettsträngar"
 type: docs
-url: /remove-duplicate-substrings/
+url: /sv/remove-duplicate-substrings/
 keywords: "Aspose.Cells, dubblettsträngar, Excel-API, textrenslighet, moln"
 description: "Ta bort dubblettsträngar från Excel-cellerna via Aspose.Cells Cloud-API:et med bevarande av formatering och validering."
 weight: 100

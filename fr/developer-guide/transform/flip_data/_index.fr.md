@@ -4,7 +4,7 @@ ArticleTitle: "FlipData – Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "FlipData"
 type: docs
-url: /cells/flip
+url: /fr/cells/flip
 aliases: []
 keywords: "FlipData, Transposition, Aspose.Cells"
 description: "Transpose une plage de données spécifiée dans un fichier de feuille de calcul."

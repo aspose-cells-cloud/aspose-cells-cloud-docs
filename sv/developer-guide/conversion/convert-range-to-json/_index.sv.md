@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Så här konverterar du lokalt kalkylbladsområdesdata till en JSON-fil: Steg-för-steg-guide"
 linktitle: "Konvertera område till JSON"
 type: docs
-url: /convert-range-to-json/
+url: /sv/convert-range-to-json/
 keywords: "konvertera område till json, Aspose.Cells Cloud, Excel till JSON, kalkylbladskonvertering, API"
 description: "Konvertera ett specifikt område från en lokal Excel-kalkylark till JSON med Aspose.Cells Cloud API."
 weight: 100

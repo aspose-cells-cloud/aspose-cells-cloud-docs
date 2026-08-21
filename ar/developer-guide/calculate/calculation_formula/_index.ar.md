@@ -4,7 +4,7 @@ ArticleTitle: "حساب الصيغة – واجهة برمجة تطبيقات As
 second_title: "مستند"
 linktype: "حساب الصيغة"
 type: docs
-url: /cells/calculate/formula
+url: /ar/cells/calculate/formula
 aliases: []
 keywords: "Aspose Cells، حساب الصيغة، جدول البيانات، واجهة برمجة تطبيقات"
 description: "احسب الصيغة في جدول بيانات باستخدام واجهة برمجة تطبيقات Aspose.Cells السحابية."

@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "クラウドベースの Excel ファイル管理ソリューション – クラウド上でディスク使用量をすばやく取得するためのインターフェース"
 linktype: "Get Disk Usage"
 type: docs
-url: /get-disk-usage/
+url: /ja/get-disk-usage/
 keywords: "Aspose Cells, Cloud API, ディスク使用量, ストレージメトリック, Excel, REST"
 description: "Aspose.Cells Cloud のリアルタイムディスク使用量を取得します。GET /v4.0/cells/storage/disk エンドポイント、必要な認証、およびサンプル応答について学びます。"
 weight: 100

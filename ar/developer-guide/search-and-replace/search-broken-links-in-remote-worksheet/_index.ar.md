@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "إيجاد وإصلاح الروابط التالفة في جدول عمل Excel عن بُعد – أداة فحص روابط جداول العمل السحابية"
 linktitle: "البحث عن الروابط التالفة في جدول العمل عن بُعد"
 type: docs
-url: /search-broken-links-in-remote-worksheet/
+url: /ar/search-broken-links-in-remote-worksheet/
 keywords: "Aspose Cells، الروابط التالفة، API Excel، جدول عمل سحابي، التحقق من الروابط"
 description: "اكتشاف وإصلاح الروابط الخارجية التالفة في جداول عمل Excel المخزنة في التخزين السحابي. استخدم واجهة برمجة تطبيقات Aspose.Cells Cloud لمسح النطاقات وعرض تفاصيل الروابط وتشغيل فحوصات الجودة تلقائيًا."
 weight: 100

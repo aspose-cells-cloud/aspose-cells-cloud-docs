@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "Aspose.Cells Cloud SDK for Python: تحويل، دمج، تقسيم، حماية، بحث، استبدال، والمزيد."
 linktype: "Aspose.Cells Cloud SDK for Python"
 type: docs
-url: /available-sdks/aspose-cells-cloud-python/
+url: /ar/available-sdks/aspose-cells-cloud-python/
 description: "يوفر Aspose.Cells Cloud SDK for Python واجهة برمجة تطبيقات متعددة المنصات وسلسة لإنشاء وتحويل ودمج وتقسيم وحماية وبحث واستبدال وتعديل ملفات إكسل في السحابة دون الحاجة إلى تثبيت برامج مايكروسوفت أوفيس."
 weight: 30
 keywords: ["Aspose.Cells", "Python SDK", "Excel", "Cloud API", "Convert Excel to PDF", "Merge Excel", "Split Workbook", "Protect Worksheet", "Search and Replace", "REST API"]

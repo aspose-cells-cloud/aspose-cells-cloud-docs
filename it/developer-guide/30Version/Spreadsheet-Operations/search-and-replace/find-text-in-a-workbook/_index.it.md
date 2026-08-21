@@ -3,8 +3,8 @@ title: "Cercare testo in un workbook Excel"
 second_title: "Documento"
 linktitle: "Cerca nel workbook"
 type: docs
-url: /workbook/find-text/
-aliases: [/find-text-in-a-workbook/]
+url: /it/workbook/find-text/
+aliases: [  /it/find-text-in-a-workbook/ ]
 weight: 30
 keywords: "Aspose.Cells, cercare testo, API Excel, ricerca nel workbook"
 description: "Scopri come utilizzare l'API Aspose.Cells Cloud per **cercare testo** nei workbook Excel (XLS‑X, ODS). Include un esempio cURL, frammenti SDK e schema di risposta. Inizia subito."

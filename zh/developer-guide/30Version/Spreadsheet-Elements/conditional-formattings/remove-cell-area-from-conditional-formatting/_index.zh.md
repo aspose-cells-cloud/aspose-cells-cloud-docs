@@ -1,8 +1,8 @@
 ---
 title: "删除单元格区域 – Aspose.Cells Cloud API 文档"
 type: docs
-url: /conditional-formattings/delete-cell-area/
-aliases: [/remove-cell-area-from-conditional-formatting/]
+url: /zh/conditional-formattings/delete-cell-area/
+aliases: [  /zh/remove-cell-area-from-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, 删除单元格区域, 条件格式 API, Excel REST API"
 description: "使用 Aspose.Cells Cloud REST API 从 Excel 工作表的条件格式中删除指定的单元格区域。包含 ASP.NET、Java 和 Python 示例。"
 ArticleTitle: "删除单元格区域 – Aspose.Cells Cloud API 文档"

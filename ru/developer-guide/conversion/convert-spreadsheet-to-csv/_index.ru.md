@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать электронную таблицу в CSV с помощью Aspose.Cells Cloud API"
 linktitle: "Преобразование электронной таблицы в CSV"
 type: docs
-url: /convert-spreadsheet-to-csv/
+url: /ru/convert-spreadsheet-to-csv/
 keywords: "Aspose Cells, преобразование CSV, Excel API, облачное преобразование"
 description: "Узнайте, как преобразовывать файлы Excel (XLS, XLSX, XLSM и др.) в CSV с помощью Aspose.Cells Cloud API. Включает шаги аутентификации, пример cURL, фрагменты кода SDK и обработку ошибок."
 weight: 100

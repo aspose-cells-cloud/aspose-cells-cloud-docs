@@ -1,8 +1,8 @@
 ---
 title: "อัปเดตความคิดเห็นในเซลล์ของเวิร์กชีต"
 type: docs
-url: /comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
+url: /th/comments/update/
+aliases: [  /th/update-a-comment-in-excel-workbook/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, เวิร์กชีต, ความคิดเห็นในเซลล์, อัปเดตความคิดเห็นในเวิร์กชีต, ออบเจกต์ความคิดเห็น"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่ออัปเดตความคิดเห็นในเซลล์ของเวิร์กชีตในสมุดงาน Excel รวมถึงรายละเอียดคำขอ โค้ดการตอบกลับ และตัวอย่าง SDK"
 weight: 30

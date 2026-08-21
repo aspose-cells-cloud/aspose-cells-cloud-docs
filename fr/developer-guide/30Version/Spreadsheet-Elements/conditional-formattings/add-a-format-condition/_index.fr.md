@@ -1,8 +1,8 @@
 ---
 title: "Ajouter une condition de mise en forme"
 type: docs
-url: /conditional-formattings/add-format-condition/
-aliases: [/add-a-format-condition/]
+url: /fr/conditional-formattings/add-format-condition/
+aliases: [  /fr/add-a-format-condition/ ]
 keywords: "Aspose.Cells Cloud, API de mise en forme conditionnelle, Ajouter une condition de mise en forme, API REST Excel, API Cells"
 description: "Découvrez comment ajouter une condition de mise en forme à une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud (v3.0). Inclut la syntaxe de requête, les paramètres, un exemple cURL sécurisé et des extraits de code SDK."
 ArticleTitle: "Ajouter une condition de mise en forme – Documentation de l'API Aspose.Cells Cloud"

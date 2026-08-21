@@ -1,7 +1,7 @@
 ---
 title: "チャートの第2値軸を取得する"
 type: docs
-url: /charts/second-value-axis/get/
+url: /ja/charts/second-value-axis/get/
 weight: 60
 keywords: Aspose.Cells, チャートの第2値軸, Excel, REST API, クラウド, API, Excelチャート軸
 description: Aspose.Cells Cloud REST API を使用して、Excelワークシート内の指定されたチャートの第2値軸を取得します。

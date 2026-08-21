@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "AIスキルを向上させよう：Excel翻訳、タスク分解など学ぼう"
 linktitle: "AI"
 type: docs
-url: /ai/
+url: /ja/ai/
 keywords: "Aspose.Cells, Cloud AI, Excel翻訳, タスク分解, REST API"
 description: "Aspose.Cells Cloud AI を活用して、タスクの分解、Excelワークブックおよびテキストファイルの翻訳を実行します。RESTエンドポイント、サンプルコード、ベストプラクティスを含みます。"
 weight: 20

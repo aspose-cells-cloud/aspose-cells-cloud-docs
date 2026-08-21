@@ -3,8 +3,8 @@ title: "Экспорт фигур"
 second_title: "Документ"
 linktitle: "Фигура"
 type: docs
-url: /export-excel-shape-to-different-formats/
-aliases: [/export/excel-shape-to-different-formats/]
+url: /ru/export-excel-shape-to-different-formats/
+aliases: [  /ru/export/excel-shape-to-different-formats/ ]
 keywords: "Экспорт фигур, Aspose.Cells Cloud, экспорт фигур Excel, форматы изображений, REST API, SDK"
 description: "Узнайте, как экспортировать фигуры Excel в различные форматы изображений (PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF) с использованием Aspose.Cells Cloud REST API и SDK."
 weight: 20

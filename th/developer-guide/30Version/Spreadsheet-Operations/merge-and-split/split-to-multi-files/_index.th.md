@@ -3,8 +3,8 @@ title: "แยกไฟล์ Excel เป็นหลายไฟล์"
 second_title: "เอกสาร"
 linktype: "แยกไฟล์ Excel หลายไฟล์"
 type: docs
-url: /split-an-excel-file-to-multi-files/
-aliases: [/split-excel-workbooks/,/workbook/split/]
+url: /th/split-an-excel-file-to-multi-files/
+aliases: [  /th/split-excel-workbooks/ , /th/workbook/split/ ]
 keywords: "Aspose.Cells, คลาวด์, Excel, แยก, API, PDF, CSV, JSON"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อแยกสมุดงาน Excel หลายแผ่นงานเป็นไฟล์แยกต่างหาก โดยรองรับรูปแบบเอาต์พุต เช่น PDF, CSV และ JSON พร้อมให้บริการผ่าน SDK สำหรับ Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby และ Swift"
 weight: 32

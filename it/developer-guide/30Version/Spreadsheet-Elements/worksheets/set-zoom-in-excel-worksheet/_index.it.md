@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Zoom"
 type: docs
 url: /it/worksheets/zoom/
-aliases: [/it/set-zoom-in-excel-worksheet/]
+aliases: [  /it/set-zoom-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, zoom Excel, zoom foglio di lavoro, API REST, SDK cloud, automazione Excel"
 description: "Scopri come impostare lo zoom del foglio di lavoro (10–400 %) utilizzando Aspose.Cells Cloud API v3.0. Include esempi cURL, SDK e gestione degli errori."
 weight: 20

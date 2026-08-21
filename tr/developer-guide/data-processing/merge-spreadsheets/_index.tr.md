@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Birden Fazla Excel Dosyasını Tek Dosyada Birleştirin – Elektronik Tabloları Toplu Olarak 30+ Formata Birleştirin"
 linktitle: "Elektronik Tabloları Birleştirin"
 type: docs
-url: /merge-spreadsheets/
+url: /tr/merge-spreadsheets/
 keywords: "Aspose.Cells, elektronik tablo birleştirme, Excel API, bulut elektronik tablo, toplu birleştirme, PDF dönüştürme, CSV birleştirme, ODS birleştirme, API referansı, SDK"
 description: "Aspose.Cells Cloud ile yerel Excel, CSV veya ODS dosyalarını tek bir çalışma kitabında birleştirin ve sonucu 30+ formata (PDF, HTML vb.) dönüştürün. uç nokta, parametreler, kimlik doğrulama kılavuzu ve SDK örneklerini içerir."
 weight: 100

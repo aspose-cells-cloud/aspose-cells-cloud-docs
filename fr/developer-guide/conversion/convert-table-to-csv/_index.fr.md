@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment convertir les données d'un tableau de feuille de calcul en fichier CSV : guide pas à pas"
 linktitle: "Convertir un tableau en CSV"
 type: docs
-url: /convert-table-to-csv/
+url: /fr/convert-table-to-csv/
 keywords: "Aspose.Cells Cloud, tableau vers CSV, conversion de feuille de calcul, Excel vers CSV, API, REST, exportation de données"
 description: "Convertissez rapidement un tableau d'une feuille de calcul Excel en fichier CSV à l'aide de l'API Aspose.Cells Cloud."
 weight: 100

@@ -3,8 +3,8 @@ title: "Sostituisci testo in un foglio di lavoro Excel – API Aspose.Cells Clou
 second_title: "Documento"
 linktitle: "Sostituisci nel foglio di lavoro"
 type: docs
-url: /worksheets/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /it/worksheets/replace-text/
+aliases: [  /it/replace-text-in-a-workbook/ ]
 keywords: "Aspose.Cells, sostituisci testo, Excel, API REST, foglio di calcolo, foglio di lavoro"
 description: "Scopri come sostituire il testo in un foglio di lavoro Excel utilizzando l'API Aspose.Cells Cloud (versione 3.0). Include prerequisiti, autenticazione, sintassi della richiesta, esempio cURL, campioni di codice SDK, dettagli della risposta e gestione degli errori."
 ArticleTitle: "Sostituisci testo in un foglio di lavoro Excel – API Aspose.Cells Cloud"

@@ -4,7 +4,7 @@ ArticleTitle: "取消隐藏 Excel 工作表中的列 - Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "取消隐藏"
 type: docs
-url: /columns/unhide/
+url: /zh/columns/unhide/
 aliases:
   [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
 keywords: "Aspose.Cells, 云 API, 取消隐藏列, Excel, REST, SDK"

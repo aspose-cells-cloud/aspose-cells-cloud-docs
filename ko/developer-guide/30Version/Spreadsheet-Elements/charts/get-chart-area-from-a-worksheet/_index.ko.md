@@ -1,8 +1,8 @@
 ---
 title: "워크시트에서 차트 영역 가져오기"
 type: docs
-url: /charts/area/get/
-aliases: [/get-chart-area-from-a-worksheet/]
+url: /ko/charts/area/get/
+aliases: [  /ko/get-chart-area-from-a-worksheet/ ]
 weight: 60
 keywords:
   - "Aspose.Cells"

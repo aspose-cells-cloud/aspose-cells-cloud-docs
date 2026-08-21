@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So führen Sie den Aspose.Cells Cloud Docker-Container aus"
 linktitle: "Container ausführen"
 type: docs
-url: /run-aspose-cells-cloud-docker-container/
+url: /de/run-aspose-cells-cloud-docker-container/
 description: "Erfahren Sie, wie Sie Aspose.Cells Cloud in einem Docker-Container unter Windows Server 2022 starten. Schritt-für-Schritt-Befehle für Testmodus, verbrauchsbasierte Abrechnung, lizenzbasierte Abrechnung, Speicherkonfiguration und Gesundheitschecks."
 weight: 30
 keywords: "Aspose.Cells, Docker, Windows Server 2022, Testmodus, verbrauchsbasierte Abrechnung, lizenzbasierte Abrechnung, Speicherkonfiguration"

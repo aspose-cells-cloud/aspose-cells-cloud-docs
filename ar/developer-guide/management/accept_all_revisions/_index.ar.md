@@ -4,7 +4,7 @@ ArticleTitle: "قبول جميع المراجعات – Aspose.Cells Cloud"
 second_title: "مستند"
 linktitle: "قبول جميع المراجعات"
 type: docs
-url: /cells/spreadsheet/accept-all-revisions
+url: /ar/cells/spreadsheet/accept-all-revisions
 aliases: []
 keywords: "Aspose.Cells, AcceptAllRevisions, جدول بيانات, مراجعات"
 description: "قبول جميع المراجعات في ملف جدول بيانات باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud."

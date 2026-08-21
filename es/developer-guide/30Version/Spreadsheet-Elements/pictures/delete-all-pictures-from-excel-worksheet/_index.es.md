@@ -3,8 +3,8 @@ title: "Eliminar todas las imágenes de una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Borrar"
 type: docs
-url: /pictures/clear/
-aliases: [/delete-all-pictures-from-excel-worksheet/]
+url: /es/pictures/clear/
+aliases: [  /es/delete-all-pictures-from-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, eliminar todas las imágenes, hoja de cálculo, API REST, borrar imágenes"
 description: "Aprenda a eliminar todas las imágenes de una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud con ejemplos de cURL y SDK."
 weight: 60

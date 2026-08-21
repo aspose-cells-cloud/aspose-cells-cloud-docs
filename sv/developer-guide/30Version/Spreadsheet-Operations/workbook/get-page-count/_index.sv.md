@@ -3,8 +3,8 @@ title: "Hämta sidantal från en Excel-fil"
 second_title: "Dokument"
 linktitle: "Sidor"
 type: docs
-url: /get-page-count-from-an-excel-file/
-aliases: [/workbook/page-count/, /workbook/get/page-count/]
+url: /sv/get-page-count-from-an-excel-file/
+aliases: [  /sv/workbook/page-count/ , /sv/workbook/get/page-count/ ]
 keywords: "Aspose.Cells, moln-API, Excel-sidantal, arbetshandsboksformatering"
 description: "Hämta det totala antalet utskrivbara sidor i en Excel-arbetshandsbok via Aspose.Cells Cloud REST API (v3.0). Innehåller begäranformat, nödvändiga parametrar, cURL-exempel, svarschema, felhantering och SDK-utdrag för flera språk."
 weight: 10

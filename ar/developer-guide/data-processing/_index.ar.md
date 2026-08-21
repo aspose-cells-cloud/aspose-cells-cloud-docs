@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "معالجة بيانات جداول البيانات – الدمج والتقسيم والاستيراد"
 linktype: "معالجة البيانات"
 type: docs
-url: /data-processing/
+url: /ar/data-processing/
 keywords: "Aspose.Cells Cloud، معالجة بيانات جداول البيانات، دمج Excel، تقسيم Excel، استيراد CSV، استيراد JSON، واجهة برمجة تطبيقات"
 description: "دليل تفصيلي لاستيراد بيانات CSV/JSON، ودمج كتب عمل Excel عن بُعد، وتقسيم جداول البيانات الكبيرة باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST، بما في ذلك أمثلة على الطلبات والاستجابات."
 weight: 30

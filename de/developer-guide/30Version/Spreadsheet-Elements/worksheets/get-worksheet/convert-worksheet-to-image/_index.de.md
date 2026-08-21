@@ -3,7 +3,7 @@ title: "Arbeitsblatt in PDF, PNG, CSV und mehr konvertieren – Aspose.Cells Clo
 second_title: "Dokument"
 linktitle: "Arbeitsblatt konvertieren"
 type: docs
-url: /worksheets/conversion/
+url: /de/worksheets/conversion/
 aliases:
   - /convert-worksheet-to-image/
   - /worksheets/to-image/

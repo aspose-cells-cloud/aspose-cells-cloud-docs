@@ -3,8 +3,8 @@ title: "Chiffrer, déchiffrer et signer numériquement des fichiers Excel"
 second_title: "Document"
 linktype: "Protéger Excel"
 type: docs
-url: /protect/
-aliases: [/workbook/password/]
+url: /fr/protect/
+aliases: [  /fr/workbook/password/ ]
 keywords: "Excel, protéger, chiffrer, déchiffrer, signature numérique, Aspose.Cells Cloud, API REST, mot de passe, sécurité"
 description: "Découvrez comment protéger, chiffrer, déchiffrer et signer numériquement des classeurs Excel à l'aide de l'API REST Aspose.Cells Cloud – exemples de code pour Android, C#, Java, Python et plus encore."
 ArticleTitle: "Chiffrer, déchiffrer, signer numériquement et protéger des fichiers Excel à l'aide de l'API Aspose.Cells Cloud"

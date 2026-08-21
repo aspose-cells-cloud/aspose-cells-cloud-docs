@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Aspose.Cells Cloud SDK для Ruby: преобразование, объединение, разделение, защита, поиск, замена и многое другое"
 linktitle: "Aspose.Cells Cloud SDK для Ruby"
 type: docs
-url: /available-sdks/aspose-cells-cloud-ruby/
+url: /ru/available-sdks/aspose-cells-cloud-ruby/
 description: "Aspose.Cells Cloud SDK для Ruby предоставляет гибкий кроссплатформенный API для создания, преобразования, объединения, разделения, защиты, поиска и замены объектов Excel без необходимости установки Microsoft Office."
 weight: 30
 keywords: "Ruby, Aspose.Cells Cloud, Excel SDK, REST API, преобразование, объединение, разделение, защита, поиск, замена, диаграмма, сводная таблица, объект таблицы/списка, PDF, CSV, JSON, Markdown"

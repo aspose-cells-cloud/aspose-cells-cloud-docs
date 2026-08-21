@@ -3,7 +3,7 @@ title: "UnpivotRange"
 ArticleTitle: "UnpivotRange – Aspose.Cells Cloud"
 second_title: "مستند"
 linktype: "docs"
-url: /cells/unpivot/range
+url: /ar/cells/unpivot/range
 aliases: []
 keywords: "Aspose.Cells, UnpivotRange, API"
 description: "تبديل الصفوف والأعمدة في جدول البيانات."

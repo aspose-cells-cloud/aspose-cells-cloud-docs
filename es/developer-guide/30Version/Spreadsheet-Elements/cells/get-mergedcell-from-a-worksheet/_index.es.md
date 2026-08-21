@@ -1,7 +1,7 @@
 ---
 title: "Obtener celdas fusionadas de una hoja de cálculo de Excel – Aspose.Cells Cloud API"
 type: docs
-url: /get-mergedcell-from-a-worksheet/
+url: /es/get-mergedcell-from-a-worksheet/
 weight: 60
 keywords: "Aspose.Cells Cloud, celdas fusionadas, hoja de cálculo de Excel, API REST, Aspose.Cells SDK, celdas fusionadas en Excel"
 description: "Aprenda cómo recuperar rangos de celdas fusionadas de una hoja de cálculo de Excel utilizando la API de Aspose.Cells Cloud (v3.0). Incluye pasos de autenticación, solicitud completa con cURL, esquema de respuesta, manejo de errores y ejemplos de SDK en C#, Java, Python y más."

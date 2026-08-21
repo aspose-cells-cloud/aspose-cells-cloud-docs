@@ -3,7 +3,7 @@ title: "Datumsfilter zu einem Excel-Arbeitsblatt hinzufügen"
 second_title: "Dokument"
 linktitle: "Datumsfilter hinzufügen"
 type: docs
-url: /autofilter/add-date-filter/
+url: /de/autofilter/add-date-filter/
 aliases:
   - /add-date-filter-in-a-worksheet/
   - /autofilter/add-a-date-filter/

@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie lokale Tabellendaten in einer Tabellenkalkulation in eine JSON-Datei: Schritt-für-Schritt-Anleitung"
 linktype: "Convert Table to JSON"
 type: docs
-url: /convert-table-to-json/
+url: /de/convert-table-to-json/
 keywords: "Excel, API, JSON, Konvertierung, Cloud, Datei, Tabellenkalkulation"
 description: "Verwenden Sie die Aspose.Cells Cloud API, um eine lokale Excel-Tabelle in einer einzigen PUT-Anforderung in eine JSON-Datei umzuwandeln. Enthält cURL-Beispiel, Parameter und SDK-Snippets für C#, Java, Python und mehr."
 weight: 100

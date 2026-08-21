@@ -5,7 +5,7 @@ second_title: "문서"
 linktitle: "추가"
 type: docs
 url: /ko/worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
+aliases: [  /ko/add-a-new-excel-worksheet/ ]
 keywords: "Excel 워크시트 추가, Aspose.Cells Cloud, REST API, 워크시트 PUT, Excel 워크북, API 요청"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북에 새 워크시트를 추가하는 단계별 가이드. 요청 세부 정보, cURL 예제, 여러 프로그래밍 언어의 SDK 코드 스니펫 포함."
 weight: 20

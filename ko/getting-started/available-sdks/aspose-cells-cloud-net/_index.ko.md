@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud SDK for C#: 변환, 병합, 분할, 보호, 검색, 바꾸기 등"
 linktype: "Aspose.Cells Cloud SDK for .NET"
 type: docs
-url: /available-sdks/aspose-cells-cloud-net/
+url: /ko/available-sdks/aspose-cells-cloud-net/
 description: "Aspose.Cells Cloud .NET SDK는 Office 설치 없이 Excel 파일을 생성, 변환, 병합, 분할, 보호, 검색 및 바꾸기 위한 크로스플랫폼 API를 제공합니다."
 keywords: "Aspose.Cells, 클라우드 SDK, .NET, Excel, 변환, 병합, 분할, 보호, 검색, 바꾸기, API"
 weight: 30

@@ -2,7 +2,7 @@
 title: "Excel Dosyalarını Toplu Dönüştürme"
 second_title: "Belge"
 type: docs
-url: /batch/convert
+url: /tr/batch/convert
 keywords: "toplu dönüştürme, Excel, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, elektronik tablo"
 description: "Aspose.Cells Cloud API'sini kullanarak birden fazla Excel dosyasını PDF, CSV, JSON veya Markdown gibi formatlara toplu olarak nasıl dönüştüreceğinizi öğrenin. Bu kılavuz, REST uç noktası ayrıntılarını, istek parametrelerini, cURL örneğini ve çeşitli programlama dilleri için SDK kod parçacıklarını içerir."
 weight: 100

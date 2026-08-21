@@ -3,7 +3,7 @@ title: "ลบหลายแถวจากแผ่นงาน Excel"
 second_title: "เอกสาร"
 linktitle: "แถว"
 type: docs
-url: /rows/delete/rows/
+url: /th/rows/delete/rows/
 keywords: "Aspose.Cells Cloud, ลบแถว, ลบหลายแถว, แผ่นงาน Excel, REST API, SDK"
 description: "เรียนรู้วิธีการลบแถวหนึ่งแถวหรือหลายแถวจากแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API ซึ่งรวมถึงรายละเอียดของปลายทาง (endpoint), พารามิเตอร์, ตัวอย่าง cURL และตัวอย่างโค้ด SDK สำหรับภาษาต่างๆ"
 weight: 80

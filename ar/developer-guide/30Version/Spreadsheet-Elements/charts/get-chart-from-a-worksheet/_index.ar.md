@@ -1,8 +1,8 @@
 ---
 title: "استرجاع مخطط من ورقة عمل"
 type: docs
-url: /charts/get/
-aliases: [/get-chart-from-a-worksheet/]
+url: /ar/charts/get/
+aliases: [  /ar/get-chart-from-a-worksheet/ ]
 weight: 10
 keywords: "Aspose.Cells Cloud, استرجاع المخطط, ورقة العمل, واجهة REST API, Excel, واجهة مخطط, استرجاع المخطط, مخطط Excel"
 description: "استرجاع معلومات المخطط، بما في ذلك البيانات الوصفية وتنسيق التصدير، من ورقة عمل باستخدام واجهة Aspose.Cells Cloud REST API."

@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "عزز مهاراتك في معالجة البيانات: تعلّم العمليات الحسابية الأساسية في إكسل – الجمع والطرح والضرب والقسمة والمزيد"
 linktype: "calculate"
 type: docs
-url: /calculate/
+url: /ar/calculate/
 keywords: "Aspose.Cells Cloud، واجهة برمجة تطبيقات حساب إكسل، SUM، COUNT، AVERAGE، MIN، MAX، العمليات الحسابية الأساسية، REST API، حسابات جداول البيانات"
 description: "تعرّف على كيفية استخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST لحساب المجموع (SUM) وعدد القيم (COUNT) والمتوسط (AVERAGE) وأصغر قيمة (MIN) وأكبر قيمة (MAX) والعمليات الحسابية الأساسية في أوراق عمل إكسل. يتضمّن الطلب البنية المطلوبة، وأكواد أمثلة، والاستجابات، وإدارة الأخطاء."
 weight: 20

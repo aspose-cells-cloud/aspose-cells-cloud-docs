@@ -3,8 +3,8 @@ title: "Excel çalışma sayfasına bir pivot tablo ekleyin"
 second_title: "Belge"
 linktype: Ekle
 type: docs
-url: /pivot-tables/add/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+url: /tr/pivot-tables/add/
+aliases: [  /tr/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "pivot tablo ekle, Excel çalışma sayfası, Aspose.Cells Cloud, REST API, SDK, Excel pivot tablosu"
 description: "Aspose.Cells Cloud REST API’sini kullanarak bir Excel çalışma sayfasına pivot tablo ekleyin. C#, Java, PHP, Python, Node.js, Android, Swift, Perl, Go SDK’ları aracılığıyla erişilebilir."
 weight: 30

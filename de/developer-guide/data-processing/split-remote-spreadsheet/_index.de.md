@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Excel-Datei in der Cloud in einzelne Dateien aufteilen & in über 30 Formaten exportieren"
 linktitle: "Remotetabellenkalkulation in der Cloud aufteilen"
 type: docs
-url: /split-remote-spreadsheet/
+url: /de/split-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, Excel-Arbeitsmappe aufteilen, Tabellenkalkulations-Splitter, Cloud-API, Export nach PDF, Export nach CSV, Export nach JSON, Export in mehrere Formate, Cloud-Verarbeitung von Tabellenkalkulationen"
 description: "Verwenden Sie die Aspose.Cells Cloud API, um eine in der Cloud gespeicherte Excel-Arbeitsmappe in einzelne Arbeitsblätter zu splitten und jedes Teil in über 30 Formaten wie PDF, CSV, JSON, XLSX, HTML, ODS und XPS zu exportieren."
 weight: 100

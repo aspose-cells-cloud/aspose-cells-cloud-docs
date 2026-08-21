@@ -4,7 +4,7 @@ ArticleTitle: "Acceptera alla ändringsförslag – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktitle: "Acceptera alla ändringsförslag"
 type: docs
-url: /cells/spreadsheet/accept-all-revisions
+url: /sv/cells/spreadsheet/accept-all-revisions
 aliases: []
 keywords: "Aspose.Cells, AcceptAllRevisions, kalkylark, ändringsförslag"
 description: "Acceptera alla ändringsförslag i ett kalkylarksdokument med Aspose.Cells Cloud API."

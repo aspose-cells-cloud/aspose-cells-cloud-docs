@@ -3,7 +3,7 @@ title: "XML-Daten in eine Tabellenkalkulation importieren"
 ArticleTitle: "XML-Daten in eine Tabellenkalkulation importieren – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "docs"
-url: /cells/import/data/xml
+url: /de/cells/import/data/xml
 aliases: []
 keywords: "XML importieren, Aspose.Cells, API"
 description: "XML-Datendatei mit Aspose.Cells Cloud in die lokale Tabellenkalkulation importieren."

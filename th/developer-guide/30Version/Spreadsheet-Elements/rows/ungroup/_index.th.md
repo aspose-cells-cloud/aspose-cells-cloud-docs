@@ -3,8 +3,8 @@ title: "ยกเลิกการจัดกลุ่มแถวในสม
 second_title: "เอกสาร"
 linktitle: "ยกเลิกการจัดกลุ่ม"
 type: docs
-url: /rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
+url: /th/rows/ungroup/
+aliases: [  /th/ungroup-rows-in-excel-worksheet/ ]
 keywords: "ยกเลิกการจัดกลุ่มแถว, Excel, Aspose.Cells Cloud, REST API, SDK, สเปรดชีต"
 description: "เรียนรู้วิธีการยกเลิกการจัดกลุ่มแถวในสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API และ SDK สำหรับภาษาโปรแกรมต่างๆ"
 weight: 70

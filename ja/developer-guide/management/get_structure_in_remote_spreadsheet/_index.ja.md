@@ -3,7 +3,7 @@ title: "GetStructureInRemoteSpreadsheet"
 ArticleTitle: "リモートスプレッドシートの構造を取得する – Aspose.Cells Cloud API"
 second_title: "ドキュメント"
 linktype: "docs"
-url: /cells/{name}/structure
+url: /ja/cells/{name}/structure
 aliases: []
 keywords: "Aspose.Cells, GetStructure, スプレッドシート, 構造"
 description: "リモートのExcelワークブックの構造メタデータ（ワークシート、テーブル、ピボットテーブル、チャート、図形、その他の主要情報）を取得します。"

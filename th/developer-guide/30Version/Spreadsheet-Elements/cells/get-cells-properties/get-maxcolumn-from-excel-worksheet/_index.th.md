@@ -1,7 +1,7 @@
 ---
 title: "รับค่า MaxColumn จากสมุดงาน Excel"
 type: docs
-url: /get-maxcolumn-from-excel-worksheet/
+url: /th/get-maxcolumn-from-excel-worksheet/
 weight: 60
 keywords: "Aspose Cells API, maxcolumn, สมุดงาน Excel, REST, SDK"
 description: "ดึงดัชนีคอลัมน์สูงสุดของแผ่นงานโดยใช้ Aspose.Cells Cloud API รวมถึงคำขอ cURL พร้อมการตรวจสอบสิทธิ์ เครื่องหมายรูปแบบการตอบกลับ พารามิเตอร์ รหัสข้อผิดพลาด และตัวอย่าง SDK (C#, Java, Python เป็นต้น)"

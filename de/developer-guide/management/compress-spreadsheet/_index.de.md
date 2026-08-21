@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So komprimieren Sie Excel-Dateien – Reduzieren Sie die Größe von Tabellenkalkulationen und optimieren Sie die Leistung"
 linktitle: "Tabellenkalkulation komprimieren"
 type: docs
-url: /compress-spreadsheet/
+url: /de/compress-spreadsheet/
 keywords: "Excel-Komprimierung, Aspose.Cells Cloud, Reduzierung der Tabellengröße, API, Optimierung der Arbeitsmappe"
 description: "Erfahren Sie, wie Sie Excel-Arbeitsmappen mit der Aspose.Cells Cloud-API komprimieren können. Holen Sie sich schrittweise Beispiele, Parameter, Authentifizierung und bewährte Verfahren."
 weight: 100

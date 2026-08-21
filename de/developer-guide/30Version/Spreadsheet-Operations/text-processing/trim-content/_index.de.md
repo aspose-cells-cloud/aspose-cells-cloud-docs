@@ -3,7 +3,7 @@ title: "Aspose.Cells Trim Content API – Leerzeichen und Zeilenumbrüche aus Ex
 second_title: "Dokument"
 linktitle: "Inhalt kürzen"
 type: docs
-url: /spreadsheet-trim-content/
+url: /de/spreadsheet-trim-content/
 keywords: "Aspose.Cells, Trim Content API, Excel-Daten bereinigen, Leerzeichen in Excel entfernen, Zeilenumbrüche entfernen, Datenbereinigung für Tabellenkalkulationen"
 description: "Verwenden Sie die Aspose.Cells Cloud PostTrimContent API, um automatisch zusätzliche Leerzeichen, Zeilenumbrüche und unerwünschte Zeichen aus Excel-Zellen zu entfernen. Erfahren Sie mehr über den Endpunkt, das Anforderungsformat, Beispielcode und Fehlerbehandlung."
 weight: 100

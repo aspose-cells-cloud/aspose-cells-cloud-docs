@@ -3,8 +3,8 @@ title: "Ersätt text i en Excel-arbetsbok"
 second_title: "Dokument"
 linktitle: "Ersätt i arbetsbok"
 type: docs
-url: /workbook/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /sv/workbook/replace-text/
+aliases: [  /sv/replace-text-in-a-workbook/ ]
 weight: 60
 keywords: "Aspose.Cells Cloud, Ersätt text, Excel-arbetsbok, XLSX, ODS, REST API, Kalkylark, SDK"
 description: "Ersätt text i Excel-filer (XLS, XLSX, XLSM, XLSB) och OpenDocument-kalkylark (ODS) med Aspose.Cells Cloud REST API. Tillgängligt via cURL och ett stort urval SDK:er (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, m.fl.)."

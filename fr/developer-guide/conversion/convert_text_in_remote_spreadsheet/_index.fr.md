@@ -3,7 +3,7 @@ title: "Convertir le texte dans une feuille de calcul distante"
 ArticleTitle: "Convertir le texte dans une feuille de calcul distante – Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
+url: /fr/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
 aliases: []
 keywords: "Aspose.Cells, Conversion de texte, API"
 description: "Convertit le texte dans une plage spécifiée d'une feuille de calcul, incluant la conversion de nombres, le remplacement de caractères, la gestion des sauts de ligne et la normalisation des caractères accentués."

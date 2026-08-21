@@ -3,8 +3,8 @@ title: "เข้ารหัส, ถอดรหัส และลงลาย
 second_title: "เอกสาร"
 linktype: "ป้องกัน Excel"
 type: docs
-url: /protect/
-aliases: [/workbook/password/]
+url: /th/protect/
+aliases: [  /th/workbook/password/ ]
 keywords: "Excel, ป้องกัน, เข้ารหัส, ถอดรหัส, ลายมือชื่อดิจิทัล, Aspose.Cells Cloud, REST API, รหัสผ่าน, ความปลอดภัย"
 description: "เรียนรู้วิธีการป้องกัน เข้ารหัส ถอดรหัส และลงลายมือชื่อดิจิทัลให้กับสมุดงาน Excel ด้วย Aspose.Cells Cloud REST API – ตัวอย่างโค้ดสำหรับ Android, C#, Java, Python และอื่นๆ"
 ArticleTitle: "เข้ารหัส ถอดรหัส ลงลายมือชื่อดิจิทัล และป้องกันไฟล์ Excel โดยใช้ Aspose.Cells Cloud API"

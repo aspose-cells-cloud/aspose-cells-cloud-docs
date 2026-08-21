@@ -3,8 +3,8 @@ title: "Excelワークシート内のすべての画像を取得する"
 second_title: "Document"
 linktype: "Get all"
 type: docs
-url: /pictures/get-all/
-aliases: [/get-picture-from-a-worksheet/]
+url: /ja/pictures/get-all/
+aliases: [  /ja/get-picture-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excelワークシート, 画像API, すべての画像を取得, REST API, SDK"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートからすべての画像オブジェクトを取得します。"
 ArticleTitle: "Excelワークシート内のすべての画像を取得する - Aspose.Cells Cloud API"

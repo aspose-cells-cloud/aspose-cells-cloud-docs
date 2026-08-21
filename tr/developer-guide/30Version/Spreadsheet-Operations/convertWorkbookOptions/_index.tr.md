@@ -3,7 +3,7 @@ title: "Çalışma Kitabı Seçeneklerini Dönüştür"
 second_title: "Belge"
 linktitle: "Çalışma Kitabı Seçeneklerini Dönüştür"
 type: docs
-url: /convert-workbook-options/
+url: /tr/convert-workbook-options/
 keywords: "Aspose.Cells, ConvertWorkbookOptions, Excel dönüştürme, PDF, CSV, API"
 description: "Çalışma Kitabı Seçeneklerini Dönüştür – Aspose.Cells Cloud API ile Excel çalışma kitabını PDF, CSV, HTML ve daha fazla forma dönüştürme ayarlarını yapın."
 weight: 79

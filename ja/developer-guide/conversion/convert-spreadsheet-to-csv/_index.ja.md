@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud API を使用してスプレッドシートを CSV に変換する方法"
 linktitle: "スプレッドシートを CSV に変換"
 type: docs
-url: /convert-spreadsheet-to-csv/
+url: /ja/convert-spreadsheet-to-csv/
 keywords: "Aspose Cells, CSV変換, Excel API, クラウド変換"
 description: "Aspose.Cells Cloud API を使用して Excel ファイル（XLS、XLSX、XLSM など）を CSV に変換する方法を学びます。認証手順、cURL サンプル、SDK コードスニペット、エラー処理が含まれます。"
 weight: 100

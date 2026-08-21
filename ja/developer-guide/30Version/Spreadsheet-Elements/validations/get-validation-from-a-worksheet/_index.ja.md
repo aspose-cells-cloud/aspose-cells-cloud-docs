@@ -3,8 +3,8 @@ title: "Excelワークシートからインデックスで検証ルールを取�
 second_title: "Document"
 linktitle: "Get"
 type: docs
-url: /validations/get/
-aliases: [/get-validation-from-a-worksheet/]
+url: /ja/validations/get/
+aliases: [  /ja/get-validation-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, ワークシート検証API, インデックスで検証ルールを取得, Excel REST API, Aspose.Cells SDK"
 description: "Aspose.Cells Cloud API（v3.0）を使用して、Excelワークブック内のワークシートからゼロベースのインデックスで検証ルールを取得します。cURLの例、レスポンススキーマ、エラーコード、C#、Java、Pythonなど複数の言語向けSDKスニペットを含みます。"
 weight: 10

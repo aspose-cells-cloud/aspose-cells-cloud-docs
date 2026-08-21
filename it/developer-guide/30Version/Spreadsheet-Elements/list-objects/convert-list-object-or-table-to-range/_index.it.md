@@ -4,7 +4,7 @@ ArticleTitle: "Converti oggetto elenco in intervallo usando Aspose.Cells Cloud A
 second_title: "Documento"
 linktype: "Conversione"
 type: docs
-url: /list-objects/to-range/
+url: /it/list-objects/to-range/
 aliases:
   - /convert-list-object-or-table-to-range/
   - /tables/to-range/

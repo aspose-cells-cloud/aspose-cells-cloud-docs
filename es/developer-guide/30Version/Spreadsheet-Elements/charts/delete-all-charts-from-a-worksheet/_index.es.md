@@ -2,7 +2,7 @@
 title: "Eliminar todos los gráficos de una hoja de cálculo"
 type: docs
 url: /es/charts/clear/
-aliases: [/delete-all-charts-from-a-worksheet/]
+aliases: [  /es/delete-all-charts-from-a-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells, Cloud, eliminar, todos los gráficos, hoja de cálculo, REST API, DELETE, SDK"
 description: "Aprenda cómo eliminar todos los gráficos de una hoja de cálculo utilizando la API REST de Aspose.Cells Cloud (v3.0). Incluye el endpoint, parámetros, ejemplo con cURL, fragmentos de código SDK, pasos de autenticación y manejo de errores."

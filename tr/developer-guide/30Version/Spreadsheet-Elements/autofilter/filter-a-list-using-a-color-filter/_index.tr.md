@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "Renk filtresi ekle"
 type: docs
 url: /tr/autofilter/add-color-filter/
-aliases: [/tr/filter-a-list-using-a-color-filter/,/tr/autofilter/add-a-color-filter/]
+aliases: [  /tr/filter-a-list-using-a-color-filter/ , /tr/autofilter/add-a-color-filter/ ]
 keywords: "Excel, renk filtresi, Aspose.Cells Cloud, REST API, otomatik filtre, JWT kimlik doğrulama"
 description: "Aspose.Cells Cloud API ile bir Excel çalışma sayfasına renk filtresi nasıl uygulanacağını öğrenin. Uç nokta, parametreler, cURL örneği, hata yönetimi ve SDK örneklerini içerir."
 weight: 65

@@ -4,8 +4,8 @@ second_title: "Belge"
 ArticleTitle: "Excel İçin Bulut Dosya Yönetimi – Excel Dosyası Depolama ve Akıllı Düzenleme İçin Verimli ve Güvenli Bir Çözüm"
 linktitle: "Dosyalar ve Depolama"
 type: docs
-url: /files-and-storage/
-aliases: [/working-with-files-and-storage-using-aspose-cells-cloud/]
+url: /tr/files-and-storage/
+aliases: [  /tr/working-with-files-and-storage-using-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, dosya depolama API'si, Excel dosyası yükleme, Excel dosyası indirme, dosya kopyalama, dosya taşıma, dosya silme, klasör yönetimi, REST API, cURL örnekleri"
 description: "Aspose.Cells Cloud deposunda Excel dosyalarını ve klasörlerini yönetmeye yönelik kapsamlı kılavuz. cURL örnekleri, gerekli parametreler ve kimlik doğrulama notları ile birlikte yükleme, indirme, kopyalama, taşıma, silme ve klasör işlemleri içerir."
 weight: 100

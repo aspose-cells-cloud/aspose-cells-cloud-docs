@@ -1,8 +1,8 @@
 ---
 title: "حذف جميع المخططات من ورقة عمل"
 type: docs
-url: /charts/clear/
-aliases: [/delete-all-charts-from-a-worksheet/]
+url: /ar/charts/clear/
+aliases: [  /ar/delete-all-charts-from-a-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells، السحابة، حذف، جميع المخططات، ورقة العمل، واجهة برمجة تطبيقات REST، DELETE، SDK"
 description: "تعرّف على كيفية حذف جميع المخططات الموجودة في ورقة عمل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API (الإصدار 3.0). تتضمن النهاية النهائية (endpoint)، المُعاملات، مثال cURL، مقاطع كود SDK، خطوات المصادقة، ومعالجة الأخطاء."

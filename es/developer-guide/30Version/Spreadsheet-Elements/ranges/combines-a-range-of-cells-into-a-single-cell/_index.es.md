@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API: Fusionar rango de celdas"
 second_title: "Documento"
 linktitle: "Fusionar"
 type: docs
-url: /ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+url: /es/ranges/merge/
+aliases: [  /es/combines-a-range-of-cells-into-a-single-cell/ ]
 keywords: "Aspose.Cells, fusionar celdas, API de Excel, REST, SDK en la nube"
 description: "Fusiona un rango de celdas en una sola celda utilizando la API REST de Aspose.Cells Cloud. Aprenda sobre el formato de la solicitud, los parámetros y ejemplos de SDK para C#, Java, Python y más."
 weight: 20

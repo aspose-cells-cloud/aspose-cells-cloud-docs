@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Rad"
 type: docs
 url: /sv/rows/delete/row/
-aliases: [/sv/delete-row-from-a-worksheet/]
+aliases: [  /sv/delete-row-from-a-worksheet/ ]
 description: "Använd slutpunkten DELETE /worksheets/{sheetName}/cells/rows/{rowIndex} för att ta bort en specifik rad från ett Excel-arbetsblad via Aspose.Cells Cloud REST API. Innehåller cURL-kommando, SDK-exempel och fullständig parameterreferens."
 keywords: "Aspose.Cells, ta bort rad, Excel, API, REST, moln, SDK"
 weight: 80

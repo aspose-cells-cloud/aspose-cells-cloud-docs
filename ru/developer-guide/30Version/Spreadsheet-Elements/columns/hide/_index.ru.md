@@ -3,7 +3,7 @@ title: "Скрытие столбцов в рабочей таблице Excel"
 second_title: "Документ"
 linktitle: "Скрыть"
 type: docs
-url: /columns/hide/
+url: /ru/columns/hide/
 aliases:
   - /hide-columns-in-excel-worksheet/
   - /hide-columns-in-an-excel-worksheet/

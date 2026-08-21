@@ -4,7 +4,7 @@ second_title: "Doküman"
 ArticleTitle: "Excel'deki Tüm Boş Sayfaları Sil – Boş Sayfaları Kaldırma Kılavuzu"
 linktitle: "Boş Sayfaları Sil"
 type: docs
-url: /delete-spreadsheet-blank-worksheets/
+url: /tr/delete-spreadsheet-blank-worksheets/
 keywords: "Aspose.Cells Cloud, boş sayfaları sil, Excel API, çalışma kitabını temizle, elektronik tablo optimizasyonu"
 description: "Aspose.Cells Cloud API’sini kullanarak Excel çalışma kitaplarından otomatik olarak boş veya boş sayfaları silin. Veri, formül, grafik veya nesne içermeyen sayfaları nasıl belirleyip sileceğinizi öğrenin; bu, çalışma kitabının performansını ve organizasyonunu artırır."
 weight: 100

@@ -3,8 +3,8 @@ title: "Получение проверки листа по индексу из 
 second_title: "Документ"
 linktitle: "Получить"
 type: docs
-url: /validations/get/
-aliases: [/get-validation-from-a-worksheet/]
+url: /ru/validations/get/
+aliases: [  /ru/get-validation-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API проверки листов, получить проверку по индексу, Excel REST API, Aspose.Cells SDK"
 description: "Получение проверки листа по её нулевому индексу из рабочей книги Excel с использованием API Aspose.Cells Cloud (v3.0). Включает пример cURL, схему ответа, коды ошибок и фрагменты кода SDK для C#, Java, Python и других языков."
 weight: 10

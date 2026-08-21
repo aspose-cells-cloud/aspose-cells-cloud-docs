@@ -3,8 +3,8 @@ title: "ピボットテーブル内のピボットフィールド項目を非表
 second_title: "Document"
 linktitle: Hide
 type: docs
-url: /pivot-tables/hide-pivot-field-item/
-aliases: [/hide-pivot-field-item/]
+url: /ja/pivot-tables/hide-pivot-field-item/
+aliases: [  /ja/hide-pivot-field-item/ ]
 keywords: "Aspose.Cells, ピボットフィールド項目の非表示, PivotTable API, REST API, クラウドSDK"
 description: "Aspose.Cells Cloud REST API を使用してピボットテーブル内のピボットフィールド項目を非表示にする方法を学びます。リクエストの詳細、cURL の使用例、および複数言語向けの SDK コードスニペットを含みます。"
 weight: 110

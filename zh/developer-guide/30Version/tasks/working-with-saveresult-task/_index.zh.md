@@ -2,8 +2,8 @@
 title: "使用 SaveResult 任务"
 second_title: "文档"
 type: docs
-url: /tasks/save-result/
-aliases: [/working-with-saveresult-task/]
+url: /zh/tasks/save-result/
+aliases: [  /zh/working-with-saveresult-task/ ]
 keywords: "SaveResult 任务、Aspose.Cells Cloud API、导出结果、下载工作簿、云存储、REST API、电子表格、Excel"
 description: "了解如何在 Aspose.Cells Cloud API 中使用 SaveResult 任务，将处理后的工作簿数据导出到云存储或直接下载。包含 cURL、Java、.NET 示例及完整的参数参考。"
 weight: 50

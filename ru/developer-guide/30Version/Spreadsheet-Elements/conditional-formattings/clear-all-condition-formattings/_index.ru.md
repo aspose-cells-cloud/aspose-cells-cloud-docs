@@ -1,8 +1,8 @@
 ---
 title: "Очистка условного форматирования"
 type: docs
-url: /conditional-formattings/clear/
-aliases: [/clear-all-condition-formattings/]
+url: /ru/conditional-formattings/clear/
+aliases: [  /ru/clear-all-condition-formattings/ ]
 keywords: "Aspose.Cells Cloud, REST API, очистка условного форматирования, Excel, рабочие листы, JWT, v3.2"
 description: "Удаление всех правил условного форматирования с рабочего листа с помощью API Aspose.Cells Cloud (v3.2). Ознакомьтесь с синтаксисом запроса, необходимыми параметрами, шагами аутентификации и образцами кода на различных SDK."
 weight: 80

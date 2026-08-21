@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Excel 文本搜索 Web API — 在远程工作表中�
 second_title: "文档"
 ArticleTitle: "在远程 Excel 电子表格工作表中搜索文本 — 查找特定数据"
 linktype: "docs"
-url: /search-content-in-remote-worksheet/
+url: /zh/search-content-in-remote-worksheet/
 keywords: "Aspose Cells, Excel API, 文本搜索, 远程工作表"
 description: "使用 Aspose.Cells Cloud API 在远程 Excel 工作表中搜索文本、数字或公式。支持不区分大小写及密码保护的文件。"
 weight: 100

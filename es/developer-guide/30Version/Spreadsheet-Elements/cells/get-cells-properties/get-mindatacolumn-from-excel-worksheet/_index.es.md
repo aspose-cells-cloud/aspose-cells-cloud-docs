@@ -1,7 +1,7 @@
 ---
 title: "Obtener MinDataColumn – Referencia de la API de Aspose.Cells Cloud (v3.0)"
 type: docs
-url: /get-mindatacolumn-from-excel-worksheet/
+url: /es/get-mindatacolumn-from-excel-worksheet/
 weight: 110
 keywords: "Aspose.Cells Cloud, MinDataColumn, hoja de cálculo de Excel, API REST, referencia de API, v3.0, columna de datos, API en la nube"
 description: "Obtenga el índice de la columna más a la izquierda que contiene datos en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye detalles de autenticación, sintaxis de solicitud, ejemplo de respuesta JSON, códigos de error y fragmentos de SDK."

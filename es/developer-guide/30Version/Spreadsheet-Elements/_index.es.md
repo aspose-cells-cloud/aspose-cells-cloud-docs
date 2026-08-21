@@ -2,7 +2,7 @@
 title: "Elementos de hojas de cálculo"
 second_title: "Documento"
 type: docs
-url: /spreadsheet-elements/
+url: /es/spreadsheet-elements/
 keywords: "Aspose.Cells, Cloud, API de Excel, Filtros automáticos, Gráficos, Tablas dinámicas, Hojas de cálculo"
 description: "Explore las características de la API REST de Aspose.Cells Cloud para Excel, incluidos filtros automáticos, celdas, gráficos, columnas, comentarios, formato condicional, hipervínculos, objetos de lista, metadatos, objetos OLE, saltos de página, imágenes, tablas dinámicas, rangos, filas, formas, validación y hojas de cálculo."
 weight: 100

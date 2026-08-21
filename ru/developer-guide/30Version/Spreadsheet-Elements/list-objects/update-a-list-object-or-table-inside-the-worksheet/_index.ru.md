@@ -4,7 +4,7 @@ ArticleTitle: "Обновление объекта списка в рабоче�
 second_title: "Документ"
 linktitle: "Обновление"
 type: docs
-url: /list-objects/update/
+url: /ru/list-objects/update/
 aliases:
   - /update-a-list-object-or-table-inside-the-worksheet/
   - /tables/update/

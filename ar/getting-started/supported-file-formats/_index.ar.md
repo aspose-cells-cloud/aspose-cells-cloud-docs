@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "تنسيقات الملفات المدعومة في Aspose.Cells Cloud: إكسل، PDF، CSV، JSON، Markdown، والمزيد"
 linktitle: "تنسيقات الملفات المدعومة"
 type: docs
-url: /supported-file-formats/
+url: /ar/supported-file-formats/
 description: "استكشف القائمة الكاملة لتنسيقات الملفات التي تدعمها خدمة Aspose.Cells Cloud — الاستيراد والتصدير والتحويل لملفات إكسل، CSV، PDF، JSON، Markdown، ODS، والمزيد."
 weight: 40
 keywords: "Aspose.Cells Cloud، تنسيقات الملفات المدعومة، إكسل، XLSX، CSV، PDF، JSON، Markdown، ODS، تنسيقات الصور، تنسيقات جداول البيانات، تحويل المستندات"

@@ -3,8 +3,8 @@ title: "การดำเนินการกับรูปร่างใน
 second_title: "เอกสาร"
 linktype: "รูปร่าง"
 type: docs
-url: /shapes/
-aliases: ["/working-with-shapes/", "/working-with-images/"]
+url: /th/shapes/
+aliases: [  /th/working-with-shapes/ , /th/working-with-images/ ]
 keywords: "รูปร่างใน Excel, Aspose.Cells Cloud, API, ชีตงาน, การดำเนินการกับรูปร่าง"
 description: "เรียนรู้วิธีจัดการรูปร่างใน Excel ผ่าน API ของ Aspose.Cells Cloud—ดึงข้อมูล เพิ่ม ลบ และแปลงรูปร่างได้ พร้อมรองรับ SDK"
 weight: 100

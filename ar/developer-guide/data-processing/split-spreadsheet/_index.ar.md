@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "أداة تقسيم ملفات Excel – تقسيم جدول البيانات المحلي إلى ملفات بصيغ أكثر من 30"
 linktype: "تقسيم جدول البيانات"
 type: docs
-url: /split-spreadsheet/
+url: /ar/split-spreadsheet/
 keywords: "تقسيم، إكسل، Aspose.Cells، واجهة برمجة تطبيقات جداول البيانات، تصدير PDF، CSV، JSON"
 description: "قسّم ملف عمل إكسل محليًا إلى ملفات منفصلة باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud. اصدِّر إلى أكثر من 30 صيغة (PDF، CSV، JSON، XLSX، HTML) دون رفع الملف إلى السحابة."
 weight: 100

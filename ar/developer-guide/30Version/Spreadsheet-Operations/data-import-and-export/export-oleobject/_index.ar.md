@@ -3,8 +3,8 @@ title: "تصدير كائن OLE – واجهة برمجة تطبيقات Aspose.
 second_title: "الوثيقة"
 linktitle: "كائن OLE"
 type: docs
-url: /export-excel-ole-object/
-aliases: [/export/excel-ole-object/]
+url: /ar/export-excel-ole-object/
+aliases: [  /ar/export/excel-ole-object/ ]
 keywords: "Aspose.Cells, كائن OLE, تصدير, Excel, واجهة برمجة تطبيقات سحابية, PDF, PNG, DOCX, PPTX"
 description: "تصدير كائنات OLE من ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells السحابية. تعلّم تنسيق الطلب والمعلمات وعينة cURL ومعالجة الأخطاء."
 weight: 20

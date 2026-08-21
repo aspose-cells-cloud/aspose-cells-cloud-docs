@@ -4,7 +4,7 @@ ArticleTitle: "Excel 워크시트에 배경 설정 – Aspose.Cells Cloud API �
 second_title: "문서"
 linktype: "docs"
 url: /ko/worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
+aliases: [  /ko/set-background-or-watermark-for-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, 워크시트, 배경, REST API, SDK, 이미지 추가"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에 배경 이미지(PNG, JPEG, BMP)를 추가하는 방법을 알아보세요. 엔드포인트, 필요한 매개변수, 인증 단계, cURL 예제 및 SDK 코드 샘플을 포함합니다."
 weight: 180

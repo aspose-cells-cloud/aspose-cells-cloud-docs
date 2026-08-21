@@ -2,7 +2,7 @@
 title: "Uppdatera diagrammets andra värdeaxel"
 ArticleTitle: "Uppdatera diagrammets andra värdeaxel – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/second-value-axis/update/
+url: /sv/charts/second-value-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Chart API, Second Value Axis, Excel, REST, Cloud SDK"
 description: "Uppdaterar den andra värdeaxeln i ett diagram i ett Excel-ark med Aspose.Cells Cloud REST API. Innehåller exempel på förfrågningar, svarskoder och förutsättningar."

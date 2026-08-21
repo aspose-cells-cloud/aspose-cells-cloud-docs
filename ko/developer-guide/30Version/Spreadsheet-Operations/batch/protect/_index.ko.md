@@ -2,7 +2,7 @@
 title: "Excel 파일 일괄 보호"
 second_title: "문서"
 type: docs
-url: /batch/protect
+url: /ko/batch/protect
 keywords: "Excel 파일 일괄 보호, Aspose Cells Cloud, REST API, Excel 보호, 일괄 보호"
 description: "Aspose.Cells Cloud REST API를 사용하여 여러 Excel 파일을 일괄적으로 보호하는 방법을 알아보세요. 요청 세부 정보, cURL 예제, 다양한 언어에 대한 SDK 코드 샘플이 포함되어 있습니다."
 weight: 100

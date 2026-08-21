@@ -1,8 +1,8 @@
 ---
 title: "รับกฎการจัดรูปแบบตามเงื่อนไข"
 type: docs
-url: /conditional-formattings/get-all/
-aliases: [/get-conditional-formattings-of-worksheet/]
+url: /th/conditional-formattings/get-all/
+aliases: [  /th/get-conditional-formattings-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, การจัดรูปแบบตามเงื่อนไข, แผ่นงาน, API การจัดรูปแบบตามเงื่อนไข"
 description: "ดึงกฎการจัดรูปแบบตามเงื่อนไขทั้งหมดที่ใช้กับแผ่นงานโดยใช้ Aspose.Cells Cloud REST API รวมถึงไคลเอนต์ไคลเอ็นซิสของคำสั่ง, ขั้นตอนการยืนยันตัวตน, พารามิเตอร์, ตัวอย่างการตอบกลับที่กระชับ และการจัดการข้อผิดพลาด"
 weight: 20

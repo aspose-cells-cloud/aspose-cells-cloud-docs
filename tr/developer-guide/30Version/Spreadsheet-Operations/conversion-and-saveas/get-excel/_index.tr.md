@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Excel Çalışma Kitabını PDF, CSV, HTML ve Dah
 second_title: "Belge"
 linktitle: "Excel Dönüştür"
 type: docs
-url: /get-different-formats-files/
+url: /tr/get-different-formats-files/
 aliases:
   - /export-excel-workbook-to-different-file-formats/
   - /export-different-formats/

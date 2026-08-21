@@ -4,7 +4,7 @@ ArticleTitle: "Çalışma Sayfasını PDF'ye Dönüştür – Aspose.Cells Cloud
 second_title: "Belge"
 linktype: "ConvertWorksheetToPdf"
 type: docs
-url: /cells/convert/worksheet/pdf
+url: /tr/cells/convert/worksheet/pdf
 aliases: []
 keywords: "Aspose.Cells, Çalışma Sayfasını PDF'ye Dönüştür, API"
 description: "Aspose.Cells Cloud kullanarak bir elektronik tablo dosyasının çalışma sayfasını PDF dosyasına dönüştürür."

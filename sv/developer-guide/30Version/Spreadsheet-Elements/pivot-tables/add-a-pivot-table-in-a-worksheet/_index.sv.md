@@ -3,8 +3,8 @@ title: "Lägg till en pivot-tabell i ett Excel-ark"
 second_title: "Dokument"
 linktitle: Lägg till
 type: docs
-url: /pivot-tables/add/
-aliases: [/add-a-pivot-table-in-a-worksheet/]
+url: /sv/pivot-tables/add/
+aliases: [  /sv/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Lägg till pivot-tabell, Excel-ark, Aspose.Cells Cloud, REST API, SDK, Excel-pivot-tabell"
 description: "Använd Aspose.Cells Cloud REST API för att lägga till en pivot-tabell i ett Excel-ark. Tillgängligt via SDK:er för C#, Java, PHP, Python, Node.js, Android, Swift, Perl och Go."
 weight: 30

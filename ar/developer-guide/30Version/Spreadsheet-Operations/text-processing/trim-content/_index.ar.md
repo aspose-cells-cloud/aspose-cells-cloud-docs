@@ -3,7 +3,7 @@ title: "واجهة برمجة تطبيقات Aspose.Cells لقص المحتوى 
 second_title: "مستند"
 linktype: "قص المحتوى"
 type: docs
-url: /spreadsheet-trim-content/
+url: /ar/spreadsheet-trim-content/
 keywords: "Aspose.Cells، واجهة برمجة تطبيقات قص المحتوى، تنظيف بيانات Excel، إزالة المسافات من Excel، إزالة فواصل الأسطر، تنظيف بيانات الجداول"
 description: "استخدم واجهة برمجة تطبيقات PostTrimContent في Aspose.Cells Cloud لتنظيف المسافات الإضافية وفواصل الأسطر والأحرف غير المرغوب فيها من خلايا Excel تلقائيًا. اعرف عن النهاية (Endpoint)، وتنسيق الطلب، وعينات الكود، ومعالجة الأخطاء."
 weight: 100

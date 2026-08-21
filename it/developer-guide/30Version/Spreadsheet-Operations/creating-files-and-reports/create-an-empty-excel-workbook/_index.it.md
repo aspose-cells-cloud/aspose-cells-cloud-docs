@@ -3,7 +3,7 @@ title: "Crea un Workbook Excel Vuoto"
 second_title: "Documento"
 linktype: "Vuoto Workbook"
 type: docs
-url: /create-an-empty-excel-file/
+url: /it/create-an-empty-excel-file/
 aliases:
   [
     "/create-an-empty-excel-workbook/",

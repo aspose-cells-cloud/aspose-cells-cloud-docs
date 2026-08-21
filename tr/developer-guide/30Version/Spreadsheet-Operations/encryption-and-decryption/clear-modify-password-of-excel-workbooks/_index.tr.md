@@ -3,7 +3,7 @@ title: "Bir Excel Çalışma Kitabından Yazma Korumasını (Parola) Kaldırın"
 second_title: "Belge"
 linktype: "Excel Dosyalarının Parolasını Temizle"
 type: docs
-url: /clear-excel-files-password/
+url: /tr/clear-excel-files-password/
 aliases:
   [
     /clear-modify-password-of-excel-workbooks/,

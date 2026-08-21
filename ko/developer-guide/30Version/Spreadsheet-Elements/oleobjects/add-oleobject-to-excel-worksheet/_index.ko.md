@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "OLE 개체 추가"
 type: docs
 url: /ko/oleobjects/add/
-aliases: [/add-oleobject-to-excel-worksheet/]
+aliases: [  /ko/add-oleobject-to-excel-worksheet/ ]
 keywords: "OLE 개체 추가, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에 OLE 개체를 추가합니다. 이 API는 C#, Java, PHP, Ruby, Node.js, Python, Perl, Go SDK를 통해 직접 또는 SDK를 통해 호출할 수 있습니다."
 ArticleTitle: "Aspose.Cells Cloud API를 사용하여 Excel 워크시트에 OLE 개체 추가"

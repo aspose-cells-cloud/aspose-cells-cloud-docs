@@ -2,7 +2,7 @@
 title: "استيراد البيانات باستخدام التخزين"
 second_title: "مستند"
 linktype: docs
-url: /import-data-with-using-storage/
+url: /ar/import-data-with-using-storage/
 aliases:
   - /import-data-into-excel-worksheet/
   - /import-data-into-worksheet/

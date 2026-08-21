@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: Get
 type: docs
 url: /it/pivot-tables/get/
-aliases: [/it/get-worksheet-pivot-table-information-by-index/]
+aliases: [  /it/get-worksheet-pivot-table-information-by-index/ ]
 keywords: "Aspose.Cells, tabella pivot, Excel, REST API, ottenere tabella pivot del foglio"
 description: "Recuperare una tabella pivot da un foglio Excel tramite l'API REST di Aspose.Cells Cloud. Include sintassi della richiesta, parametri, autenticazione, schema della risposta, gestione degli errori ed esempi di SDK."
 weight: 10

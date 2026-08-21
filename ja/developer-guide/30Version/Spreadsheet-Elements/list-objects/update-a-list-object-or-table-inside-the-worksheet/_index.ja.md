@@ -3,7 +3,7 @@ title: "Excelワークシート内のリストオブジェクトを更新する"
 ArticleTitle: "Excelワークシート内のリストオブジェクトを更新する – Aspose.Cells Cloud API ドキュメント"
 second_title: "ドキュメント"
 linktype: "docs"
-url: "/list-objects/update/"
+url: /ja/list-objects/update/
 aliases:
   - /update-a-list-object-or-table-inside-the-worksheet/
   - /tables/update/

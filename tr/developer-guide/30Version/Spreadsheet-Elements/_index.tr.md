@@ -2,7 +2,7 @@
 title: "Hesap Tablosu Öğeleri"
 second_title: "Belge"
 type: docs
-url: /spreadsheet-elements/
+url: /tr/spreadsheet-elements/
 keywords: "Aspose.Cells, Bulut, Excel API, Otomatik Filtre, Grafikler, Pivot Tablolar, Çalışma Sayfaları"
 description: "Excel için Aspose.Cells Cloud REST API özelliklerini keşfedin; bunlar arasında Otomatik Filtre, hücreler, grafikler, sütunlar, yorumlar, koşullu biçimlendirme, köprüler, liste nesneleri, meta veriler, OLE nesneleri, sayfa kırılmaları, resimler, pivot tablolar, aralıklar, satırlar, şekiller, doğrulama ve çalışma sayfaları yer alır."
 weight: 100

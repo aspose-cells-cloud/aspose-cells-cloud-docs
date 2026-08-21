@@ -3,7 +3,7 @@ title: "การแปลง Excel เป็น Markdown"
 second_title: "เอกสาร"
 linktype: "Excel เป็น Markdown"
 type: docs
-url: /convert-excel-file-to-markdown-file/
+url: /th/convert-excel-file-to-markdown-file/
 keywords: "Excel, Markdown, การแปลง, Aspose.Cells Cloud, REST API, การแปลง Excel เป็น Markdown, Aspose Cells Markdown API, การส่งออก Excel เป็น Markdown"
 description: "แปลงเวิร์กชีต Excel เป็น Markdown โดยใช้ Aspose.Cells Cloud REST API – ประกอบด้วยตัวอย่าง cURL, โค้ดตัวอย่าง SDK, พารามิเตอร์ที่จำเป็น และรายละเอียดการตรวจสอบสิทธิ์"
 weight: 100

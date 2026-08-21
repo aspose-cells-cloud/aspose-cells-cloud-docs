@@ -1,7 +1,7 @@
 ---
 title: "Obtener el eje de categorías de un gráfico"
 type: docs
-url: /charts/category-axis/get/
+url: /es/charts/category-axis/get/
 weight: 60
 keywords: "Aspose.Cells, eje de categorías de gráfico, Excel, API REST, almacenamiento en la nube, OAuth2, documentación de API"
 description: "Recupera el eje de categorías de un gráfico en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud."

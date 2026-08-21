@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "新しい Excel スプレッドシートの作成方法 – 空白またはテンプレートベースのファイルを生成する"
 linktype: "スプレッドシートの作成"
 type: docs
-url: /create-spreadsheet/
+url: /ja/create-spreadsheet/
 keywords: "Aspose.Cells, スプレッドシート API, Excel 作成, クラウド, XLSX, ODS, CSV, テンプレート, SDK, 自動化"
 description: "Aspose.Cells Cloud API (v5.0) を使用して、空白またはテンプレートベースの Excel ワークブックを作成する方法を学びます。エンドポイント、パラメータ、エラーコード、認証手順、SDK の使用例を含みます。"
 weight: 100

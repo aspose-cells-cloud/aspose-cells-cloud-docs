@@ -2,7 +2,7 @@
 title: "นำชุดค่าจำนวนเต็มเข้าสู่แผ่นงาน Excel"
 linktitle: "นำชุดค่าจำนวนเต็มเข้าสู่แผ่นงาน"
 type: docs
-url: /import-integer-array-into-excel-worksheet/
+url: /th/import-integer-array-into-excel-worksheet/
 aliases:
   - /import-integer-array-into-excel-worksheet/
   - /import-integer-array-into-worksheet/

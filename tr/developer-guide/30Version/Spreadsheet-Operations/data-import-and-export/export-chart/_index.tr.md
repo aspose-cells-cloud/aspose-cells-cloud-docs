@@ -3,8 +3,8 @@ title: "Excel Grafiğini Dışa Aktar"
 second_title: "Belge"
 linktype: "Grafik"
 type: docs
-url: /export-excel-chart-to-different-formats/
-aliases: [/export/excel-chart-to-different-formats/]
+url: /tr/export-excel-chart-to-different-formats/
+aliases: [  /tr/export/excel-chart-to-different-formats/ ]
 description: "Aspose.Cells Cloud REST API'sini veya SDK'larını kullanarak Excel grafik nesnelerini PNG, JPEG, PDF, SVG, TIFF, EMF, WMF ve daha fazlası gibi popüler formatlara dışa aktarın. Kimlik doğrulama, cURL örneği ve birden fazla dil için kod örneklerini içerir."
 keywords: "Aspose.Cells, grafik dışa aktar, Excel grafik dışa aktarımı, REST API, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK, grafik formatları, Aspose Cells Cloud"
 weight: 20

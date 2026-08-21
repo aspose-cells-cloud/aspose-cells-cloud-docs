@@ -3,7 +3,7 @@ title: "Excel 워크시트에 대량 데이터 가져오기"
 second_title: "문서"
 linktitle: "대량 데이터 가져오기"
 type: docs
-url: /import-batch-data-into-excel/
+url: /ko/import-batch-data-into-excel/
 aliases:
   - /import-batch-data-into-worksheet/
   - /import-data/batch-data/

@@ -3,7 +3,7 @@ title: "修复 Excel 文件"
 second_title: "文档"
 type: docs
 linktitle: "修复 Excel 文件"
-url: /repair-excel-files/
+url: /zh/repair-excel-files/
 keywords: "Aspose Cells, Excel 修复 API, 修复损坏的 XLSX, 电子表格恢复, 云 API"
 description: "使用 Aspose.Cells Cloud REST API 修复损坏的 Excel 文件（XLS、XLSX、XLSM、XLSB、ODS）。上传一个或多个文件，选择输出格式，并以 Base64 编码形式接收修复后的文件。无需安装。"
 weight: 39

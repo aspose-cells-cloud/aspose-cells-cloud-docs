@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API - ローカル Excel の範囲データを JS
 second_title: "ドキュメント"
 ArticleTitle: "ローカルスプレッドシートの範囲データを JSON ファイルに変換する方法：ステップ・バイ・ステップガイド"
 linktype: "docs"
-url: "/convert-range-to-json/"
+url: /ja/convert-range-to-json/
 keywords: "範囲を json に変換, Aspose.Cells Cloud, Excel を json に変換, スプレッドシート変換, API"
 description: "Aspose.Cells Cloud API を使用して、ローカル Excel スプレッドシートの特定の範囲を JSON に変換します。"
 weight: 100

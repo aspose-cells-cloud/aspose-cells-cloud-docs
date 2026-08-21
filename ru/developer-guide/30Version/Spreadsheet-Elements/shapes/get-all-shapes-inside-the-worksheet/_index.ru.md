@@ -3,8 +3,8 @@ title: "Получить все фигуры на листе Excel"
 second_title: "Документ"
 linktitle: "Получить-все"
 type: docs
-url: /shapes/get-all/
-aliases: [/get-all-shapes-inside-the-worksheet/]
+url: /ru/shapes/get-all/
+aliases: [  /ru/get-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, облачный API, фигуры Excel, получить фигуры, REST, SDK"
 description: "Получить все фигуры (диаграммы, изображения, текстовые поля) с листа Excel с использованием облачного REST API Aspose.Cells. Включает пример cURL, фрагменты кода SDK, шаги аутентификации и обработку ошибок."
 ArticleTitle: "Получить все фигуры на листе Excel"

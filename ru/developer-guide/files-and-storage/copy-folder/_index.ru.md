@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Folder Copy API — Быстрое копирован
 second_title: "Документ"
 ArticleTitle: "Решение для управления Excel-файлами в облаке — Подробное описание пакетной функции копирования папок API Aspose.Cells Copy Folder"
 linktype: "docs"
-url: /copy-folder/
+url: /ru/copy-folder/
 keywords: "Копирование папки, Aspose.Cells Cloud, REST API, облачное хранилище, управление электронными таблицами"
 description: "Узнайте, как копировать папки в облачном хранилище Aspose.Cells Cloud с помощью одного REST-вызова. Включает endpoint, параметры, примеры запросов, коды ошибок и примеры SDK."
 weight: 100

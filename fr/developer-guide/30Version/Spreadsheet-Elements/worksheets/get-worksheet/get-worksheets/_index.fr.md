@@ -3,8 +3,8 @@ title: "Obtenir toutes les feuilles de calcul"
 second_title: "Document"
 linktitle: "Toutes"
 type: docs
-url: /worksheets/get-all/
-aliases: [/get-worksheet-count/]
+url: /fr/worksheets/get-all/
+aliases: [  /fr/get-worksheet-count/ ]
 keywords: "Aspose.Cells, API Cloud, Obtenir les feuilles de calcul, Excel, REST, SDK"
 description: "Récupérer la liste des feuilles de calcul dans un classeur Excel via l’API REST Aspose.Cells Cloud (v3.0). Inclut un exemple cURL, des extraits de code SDK et le format de réponse."
 weight: 10

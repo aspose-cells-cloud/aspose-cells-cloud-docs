@@ -3,7 +3,7 @@ title: "Guardar libro de Excel: API de Aspose.Cells Cloud"
 second_title: "Documentos"
 linktitle: "Guardar como"
 type: docs
-url: /guardar-un-libro-de-excel-en-otros-formatos-de-archivo/
+url: /es/guardar-un-libro-de-excel-en-otros-formatos-de-archivo/
 aliases:
   - /convertir-libro-de-excel-a-diferentes-formatos-de-archivo/
   - /guardar-como-otros-formatos/

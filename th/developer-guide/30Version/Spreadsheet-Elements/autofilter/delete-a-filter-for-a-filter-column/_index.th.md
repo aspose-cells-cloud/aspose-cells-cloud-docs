@@ -3,8 +3,8 @@ title: "การลบฟิลเตอร์ออกจากแผ่นง
 second_title: "เอกสาร"
 linktitle: "ลบฟิลเตอร์"
 type: docs
-url: /delete-filter/
-aliases: [/delete-a-filter-for-a-filter-column/, /delete-auto-filter/]
+url: /th/delete-filter/
+aliases: [  /th/delete-a-filter-for-a-filter-column/ , /th/delete-auto-filter/ ]
 keywords: "Aspose.Cells Cloud ลบฟิลเตอร์, Excel, REST API, SDK"
 description: "เรียนรู้วิธีการลบ AutoFilter ออกจากแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API, cURL และ SDK (C#, Java, Python เป็นต้น) รวมถึง endpoint, พารามิเตอร์, การยืนยันตัวตน และตัวอย่างโค้ด"
 weight: 100

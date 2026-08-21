@@ -3,7 +3,7 @@ title: "Sök alla textobjekt i kalkylark"
 ArticleTitle: "Sök alla textobjekt i kalkylark – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "docs"
-url: /cells/search/content/all-textitems
+url: /sv/cells/search/content/all-textitems
 aliases: []
 keywords: "Aspose.Cells, sökning, textobjekt, API"
 description: "Sök efter alla textobjekt i ett kalkylark med Aspose.Cells Cloud API."

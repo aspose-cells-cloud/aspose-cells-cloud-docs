@@ -1,7 +1,7 @@
 ---
 title: "Ottieni l'asse delle categorie del grafico"
 type: docs
-url: /charts/category-axis/get/
+url: /it/charts/category-axis/get/
 weight: 60
 keywords: "Aspose.Cells, Asse delle categorie del grafico, Excel, REST API, Archiviazione cloud, OAuth2, Documentazione API"
 description: "Recupera l'asse delle categorie di un grafico in un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud."

@@ -3,8 +3,8 @@ title: "Définir le style d'une plage – API Aspose.Cells Cloud"
 second_title: "Documentation"
 linktitle: "Définir le style d'une plage"
 type: docs
-url: /ranges/update/style/
-aliases: [/set-the-style-of-the-range/]
+url: /fr/ranges/update/style/
+aliases: [  /fr/set-the-style-of-the-range/ ]
 keywords: "Aspose.Cells, style de plage, API, Excel, cloud"
 description: "Découvrez comment définir le style d'une plage de cellules dans une feuille de calcul Excel à l'aide de l'API REST Aspose.Cells Cloud. Inclut les étapes d'authentification, le format de la requête, les détails de la réponse et des exemples d'SDK pour .NET, Java, Python, Go, etc."
 weight: 70

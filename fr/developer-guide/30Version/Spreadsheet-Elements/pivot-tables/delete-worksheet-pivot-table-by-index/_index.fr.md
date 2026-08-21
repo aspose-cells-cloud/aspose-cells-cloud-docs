@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Supprimer"
 type: docs
 url: /fr/pivot-tables/delete/
-aliases: [/delete-worksheet-pivot-table-by-index/]
+aliases: [  /fr/delete-worksheet-pivot-table-by-index/ ]
 keywords: "Aspose.Cells, tableau croisé dynamique, suppression, Excel, API REST"
 description: "Supprimer un tableau croisé dynamique d'une feuille Excel à l'aide de l'API REST Aspose.Cells Cloud (v3.0). Inclut le format de requête, un exemple cURL, les codes d’erreur et des extraits de code SDK pour C#, Java, Python et Node.js."
 weight: 70

@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud AI 번역 API를 사용하여 텍스트 파일 번역하는 방법"
 linktitle: "텍스트 파일 번역"
 type: docs
-url: /translate-text-file/
+url: /ko/translate-text-file/
 keywords: "Aspose.Cells, 클라우드 API, AI 번역, 텍스트 파일 번역, 다국어 변환, REST PUT, 대상 언어 코드, 파일 업로드 번역, 원시 텍스트 번역, 스프레드시트 AI"
 description: "Aspose.Cells Cloud AI TranslateTextFile 엔드포인트를 사용하여 텍스트 파일을 지원되는 언어로 변환하는 방법을 알아보세요. 멀티파트 파일 업로드 및 원시 텍스트 페이로드를 모두 지원하며, 포맷을 유지하고 다운로드 가능한 번역된 파일을 반환합니다."
 weight: 100

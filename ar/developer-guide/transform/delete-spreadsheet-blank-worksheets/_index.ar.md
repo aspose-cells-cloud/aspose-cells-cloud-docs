@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "حذف جميع أوراق العمل الفارغة في Excel – دليل إزالة الأوراق الفارغة"
 linktitle: "حذف أوراق العمل الفارغة"
 type: docs
-url: /delete-spreadsheet-blank-worksheets/
+url: /ar/delete-spreadsheet-blank-worksheets/
 keywords: "Aspose.Cells Cloud, حذف أوراق العمل الفارغة, Excel API, تنظيف ملفات العمل, تحسين جداول البيانات"
 description: "استخدم واجهة Aspose.Cells Cloud API لحذف أوراق العمل الفارغة أو الفارغة تلقائيًا من ملفات عمل Excel. تعلّم كيفية تحديد الأوراق التي لا تحتوي على بيانات أو صيغ أو مخططات أو كائنات، وحذفها لتحسين أداء وتنظيم ملفات العمل."
 weight: 100

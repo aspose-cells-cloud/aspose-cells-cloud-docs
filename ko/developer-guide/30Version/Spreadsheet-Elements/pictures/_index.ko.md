@@ -3,8 +3,8 @@ title: "Excel 그림 작업"
 second_title: "문서"
 linktype: "그림"
 type: docs
-url: /pictures/
-aliases: [/working-with-pictures/]
+url: /ko/pictures/
+aliases: [  /ko/working-with-pictures/ ]
 keywords: "Excel, 그림, Aspose.Cells Cloud, REST API, 이미지 처리, Excel 그림"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 그림을 검색, 추가, 업데이트 및 삭제하는 방법을 알아보세요. C#, Java, Python 등 다양한 언어의 코드 예제가 포함되어 있습니다."
 weight: 100

@@ -3,8 +3,8 @@ title: "Autojustera en rad i ett Excel-arbetsblad"
 second_title: "Dokument"
 linktitle: "Rad"
 type: docs
-url: /worksheets/autofit/row/
-aliases: [/autofit-single-row-of-worksheet/]
+url: /sv/worksheets/autofit/row/
+aliases: [  /sv/autofit-single-row-of-worksheet/ ]
 description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att autojustera en rad i ett Excel-arbetsblad. Inkluderar slutpunkt, parametrar, autentisering, felhantering, cURL-förfrågan och SDK-exempel."
 keywords: "autojustera rad, Aspose.Cells Cloud, Excel API, REST, arbetsblad, SDK, kalkylark, moln-API"
 weight: 30

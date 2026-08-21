@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Ocultar"
 type: docs
 url: /es/worksheets/hide/
-aliases: [/hide-excel-worksheets/]
+aliases: [  /es/hide-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Excel, ocultar hoja de cálculo, API REST, hoja de cálculo"
 description: "Guía paso a paso para ocultar una hoja de cálculo en un libro de Excel utilizando la API REST de Aspose.Cells Cloud, incluyendo detalles de la solicitud, un ejemplo con cURL y fragmentos de código SDK para múltiples lenguajes."
 weight: 50

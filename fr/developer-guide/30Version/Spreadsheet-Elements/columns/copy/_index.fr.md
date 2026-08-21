@@ -3,7 +3,7 @@ title: "Copier des colonnes dans une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Copier"
 type: docs
-url: /columns/copy/
+url: /fr/columns/copy/
 aliases:
   [/copy-columns-in-excel-worksheet/, /copy-columns-in-an-excel-worksheet/]
 keywords: "Aspose.Cells, copier des colonnes, API Excel, REST, SDK cloud, cURL, C#, Java, Python, Ruby, Node.js, Go, Perl"

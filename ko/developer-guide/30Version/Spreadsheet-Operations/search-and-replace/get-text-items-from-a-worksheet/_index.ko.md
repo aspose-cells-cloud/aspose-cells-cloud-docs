@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "워크시트에서 텍스트 항목 가져오기"
 type: docs
 url: /ko/worksheets/get-text-items/
-aliases: [/get-text-items-from-a-worksheet/]
+aliases: [  /ko/get-text-items-from-a-worksheet/ ]
 weight: 20
 keywords: "Aspose.Cells, 클라우드 API, 엑셀, 워크시트, 텍스트 항목, REST"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 파일의 특정 워크시트에서 모든 텍스트 항목을 검색합니다. 샘플 cURL, SDK 코드, 인증 단계 및 응답 스키마가 포함됩니다."

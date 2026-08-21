@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – 合并单元格区域"
 second_title: "文档"
 linktitle: "合并"
 type: docs
-url: /ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+url: /zh/ranges/merge/
+aliases: [  /zh/combines-a-range-of-cells-into-a-single-cell/ ]
 keywords: "Aspose.Cells, 合并单元格, Excel API, REST, 云 SDK"
 description: "使用 Aspose.Cells Cloud REST API 将单元格区域合并为单个单元格。了解请求格式、参数以及 C#、Java、Python 等语言的 SDK 示例。"
 weight: 20

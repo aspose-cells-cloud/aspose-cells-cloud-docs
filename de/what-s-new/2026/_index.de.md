@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Was ist neu in 2026"
 type: docs
 weight: 9
-url: /new-features/2026/
+url: /de/new-features/2026/
 keywords: "Aspose.Cells Cloud, neue Features 2026, Tabellen-API, Excel, CSV, PDF, Cloud-Tabellenkalkulation"
 description: "Entdecken Sie die neuesten Aspose.Cells Cloud-Funktionen, die im Jahr 2026 veröffentlicht wurden, einschließlich neuer APIs, Verbesserungen und Fehlerbehebungen für Tabellenkalkulationen, Excel, CSV, PDF und mehr."
 ArticleTitle: "Was ist neu in Aspose.Cells Cloud im Jahr 2026 – Neueste Features und Verbesserungen"

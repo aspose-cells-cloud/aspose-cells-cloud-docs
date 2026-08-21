@@ -1,8 +1,8 @@
 ---
 title: "Ajouter un graphique à une feuille de calcul"
 type: docs
-url: /charts/add/
-aliases: [/add-a-chart-in-a-worksheet/]
+url: /fr/charts/add/
+aliases: [  /fr/add-a-chart-in-a-worksheet/ ]
 weight: 20
 description: "Découvrez comment ajouter un graphique à une feuille de calcul Excel à l’aide de l’API Aspose.Cells Cloud v3.0. Inclut l’endpoint, les paramètres, un exemple cURL et des extraits de code SDK."
 keywords:

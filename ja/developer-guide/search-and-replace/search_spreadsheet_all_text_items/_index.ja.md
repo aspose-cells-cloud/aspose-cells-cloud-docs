@@ -4,7 +4,7 @@ ArticleTitle: "スプレッドシート内のすべてのテキスト項目を�
 second_title: "ドキュメント"
 linktitle: "スプレッドシート内のすべてのテキスト項目を検索"
 type: docs
-url: /cells/search/content/all-textitems
+url: /ja/cells/search/content/all-textitems
 aliases: []
 keywords: "Aspose.Cells, 検索, テキスト項目, API"
 description: "Aspose.Cells Cloud API を使用してスプレッドシートファイル内のすべてのテキスト項目を検索します。"

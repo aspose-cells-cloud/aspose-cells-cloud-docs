@@ -2,7 +2,7 @@
 title: "Tabellenelemente"
 second_title: "Dokument"
 type: docs
-url: /spreadsheet-elements/
+url: /de/spreadsheet-elements/
 keywords: "Aspose.Cells, Cloud, Excel-API, AutoFilter, Diagramme, PivotTabellen, Arbeitsblätter"
 description: "Entdecken Sie die Funktionen der Aspose.Cells Cloud REST API für Excel, einschließlich AutoFilter, Zellen, Diagramme, Spalten, Kommentare, bedingte Formatierung, Hyperlinks, Listenobjekte, Metadaten, OLE-Objekte, Seitenumbrüche, Bilder, Pivot-Tabellen, Bereiche, Zeilen, Formen, Validierung und Arbeitsblätter."
 weight: 100

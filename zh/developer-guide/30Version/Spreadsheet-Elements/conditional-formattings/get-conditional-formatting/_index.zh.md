@@ -2,7 +2,7 @@
 title: "获取条件格式"
 type: docs
 url: /zh/conditional-formattings/get/
-aliases: [/zh/get-conditional-formatting/]
+aliases: [  /zh/get-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, REST API, 条件格式, Excel, 电子表格"
 description: "使用 Aspose.Cells Cloud REST API 从工作表中检索条件格式规则。"
 weight: 10

@@ -4,8 +4,8 @@ ArticleTitle: "ضبط الخلفية في ورقة عمل Excel – دليل و�
 second_title: "مستند"
 linktitle: "إضافة"
 type: docs
-url: /worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
+url: /ar/worksheets/background/add/
+aliases: [  /ar/set-background-or-watermark-for-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, ورقة عمل, خلفية, واجهة برمجة تطبيقات REST, SDK, إضافة صورة"
 description: "تعرّف على كيفية إضافة صورة خلفية (PNG أو JPEG أو BMP) إلى ورقة عمل Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمّن العنوان، المُعطيات المطلوبة، خطوات المصادقة، مثال باستخدام cURL، وأمثلة للكود باستخدام SDKs."
 weight: 180

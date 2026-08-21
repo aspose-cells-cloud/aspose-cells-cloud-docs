@@ -4,8 +4,8 @@ ArticleTitle: "Bir Excel Çalışma Sayfası Ekleyin - Aspose.Cells Cloud API K�
 second_title: "Belge"
 linktitle: "Ekle"
 type: docs
-url: /worksheets/add/
-aliases: [/add-a-new-excel-worksheet/]
+url: /tr/worksheets/add/
+aliases: [  /tr/add-a-new-excel-worksheet/ ]
 keywords: "Excel çalışma sayfası ekle, Aspose.Cells Cloud, REST API, çalışma sayfası ekle, Excel çalışma kitabı, API isteği"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabına yeni bir çalışma sayfası eklemenin adım adım kılavuzu; istek detaylarını, bir cURL örneğini ve birden fazla dil için SDK kod parçacıklarını içerir."
 weight: 20

@@ -3,8 +3,8 @@ title: "Добавление водяного знака в файлы Excel"
 second_title: "Документ"
 linktype: "Add Watermark to Excel Files"
 type: docs
-url: /add-watermark-into-excel-files/
-aliases: [/watermark/]
+url: /ru/add-watermark-into-excel-files/
+aliases: [  /ru/watermark/ ]
 keywords: "добавление водяного знака в Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Узнайте, как добавить текстовый водяной знак в книги Excel с помощью Aspose.Cells Cloud REST API (v3.0). Приведён пример cURL, перечислены обязательные параметры и детали ответа."
 weight: 39

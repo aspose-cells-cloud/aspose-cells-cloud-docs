@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "엑셀 온라인 변환 웹 API"
 linktitle: "변환"
 type: docs
-url: /conversion/
+url: /ko/conversion/
 keywords: "Aspose.Cells, 클라우드 API, 스프레드시트 변환, Excel to PDF, Excel to CSV, Excel to JSON, REST API, SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 범위, 차트, 테이블, 워크시트 또는 전체 스프레드시트를 PDF, 이미지, HTML, CSV, JSON, Markdown, XML로 변환하는 방법을 알아보세요. SDK(.NET, Java, Python 등)를 통해 빠르고 안전하며 설치 없이 사용 가능한 솔루션을 제공합니다."
 weight: 20

@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment créer de nouvelles feuilles de calcul Excel – Générer des fichiers vierges ou basés sur des modèles"
 linktype: "Create Spreadsheet"
 type: docs
-url: /create-spreadsheet/
+url: /fr/create-spreadsheet/
 keywords: "Aspose.Cells, API de feuille de calcul, créer Excel, cloud, XLSX, ODS, CSV, modèle, SDK, automatisation"
 description: "Découvrez comment créer des classeurs Excel vierges ou basés sur des modèles à l’aide de l’API Aspose.Cells Cloud (v5.0). Inclut l’endpoint, les paramètres, les codes d’erreur, les étapes d’authentification et des exemples de SDK."
 weight: 100

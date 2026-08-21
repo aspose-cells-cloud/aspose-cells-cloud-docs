@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hämta Aspose.Cells Cloud Docker-avbildning"  
 linktitle: "Hämta avbildning"  
 type: docs  
-url: /docker/downloads/  
+url: /sv/docker/downloads/
 description: "Hämta de senaste Aspose.Cells Cloud Docker-avbildningarna för Windows Server 2016/2019 och Linux. Följ steg-för-steg-instruktioner, förutsättningar och säkerhetstips för att köra containern lokalt."  
 weight: 30  
 keywords: "Aspose.Cells, moln, Docker, container, avbildning, hämta, Windows Server, Linux, REST API"  

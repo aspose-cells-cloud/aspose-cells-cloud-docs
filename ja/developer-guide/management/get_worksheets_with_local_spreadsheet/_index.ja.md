@@ -4,7 +4,7 @@ ArticleTitle: "ローカルスプレッドシートからワークシートを�
 second_title: "ドキュメント"
 linktitle: "ローカルスプレッドシートからワークシートを取得する"
 type: docs
-url: /cells/spreadsheet/worksheets
+url: /ja/cells/spreadsheet/worksheets
 aliases: []
 keywords: "Aspose.Cells, ワークシート, ローカルスプレッドシート, API"
 description: "現在アクティブなローカルスプレッドシートからワークシートの完全な一覧を取得します。"

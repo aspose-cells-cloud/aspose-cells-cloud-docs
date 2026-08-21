@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasında Aralık Değeri Ayarlama"
 second_title: "Belge"
 linktype: "Değerleri ayarla"
 type: docs
-url: /ranges/update/values/
-aliases: [/set-range-value-in-excel-worksheet/]
+url: /tr/ranges/update/values/
+aliases: [  /tr/set-range-value-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel API, aralık değeri ayarlama, REST API, bulut SDK, çalışma sayfası güncelleme"
 description: "Aspose.Cells Cloud REST API (v3.0) kullanarak bir Excel defterinde bir hücre veya aralığın değerini nasıl ayarlayacağınızı öğrenin. Uç nokta, parametreler, cURL örneği, SDK kod örnekleri ve hata işleme içerir."
 weight: 72

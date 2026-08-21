@@ -3,8 +3,8 @@ title: "Arbeta med Excel-filer: Formelberäkning, automatisk justering, rensa ob
 second_title: "Dokument"
 linktitle: "Excel – vanliga operationer"
 type: docs
-url: /workbook/
-aliases: [/working-with-workbook/]
+url: /sv/workbook/
+aliases: [  /sv/working-with-workbook/ ]
 keywords: "Aspose.Cells, Excel API, arbetsboksoperationer, beräkna formler, automatisk justering"
 description: "Lär dig hur du arbetar med Excel-arbetsböcker med Aspose.Cells Cloud REST API. Steg-för-steg-guide omfattar formelberäkning, automatisk justering av rader/kolumner, rensning av objekt och hämtning av metadata för arbetsbok. SDK:er för Python, .NET, Java och mer."
 weight: 20

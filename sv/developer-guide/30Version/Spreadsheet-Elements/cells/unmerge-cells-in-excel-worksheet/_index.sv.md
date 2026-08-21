@@ -1,7 +1,7 @@
 ---
 title: "Sammanfoga celler i ett Excel-arbetsblad"
 type: docs
-url: /unmerge-cells-in-excel-worksheet/
+url: /sv/unmerge-cells-in-excel-worksheet/
 weight: 120
 keywords: "Aspose.Cells, Excel, Sammanfoga celler, REST API, molntjänst SDK"
 description: "Lär dig hur du använder Aspose.Cells Cloud REST API för att sammanfoga celler i ett Excel-arbetsblad, med exempel på begäranden, svarsformat och SDK-kodexempel för flera programmeringsspråk."

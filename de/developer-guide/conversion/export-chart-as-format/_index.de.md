@@ -5,7 +5,7 @@ description: "Konvertieren Sie ein Diagramm aus einer in der Cloud gespeicherten
 ArticleTitle: "So konvertieren Sie ein lokales Arbeitsblatt einer Tabellenkalkulation in eine PDF-Datei: Schritt-für-Schritt-Anleitung"
 linktype: "Dokumentation"
 type: docs
-url: /export-chart-as-format/
+url: /de/export-chart-as-format/
 keywords: "Aspose.Cells Cloud, Diagramm exportieren, API, PDF, PNG, SVG, Excel, REST, Cloud-Konvertierung"
 weight: 100
 ---

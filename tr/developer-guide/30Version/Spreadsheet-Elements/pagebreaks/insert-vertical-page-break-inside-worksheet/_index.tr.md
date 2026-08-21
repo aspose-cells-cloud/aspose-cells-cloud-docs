@@ -3,8 +3,8 @@ title: "Dikey Sayfa Sonrası Ekle"
 second_title: "Belge"
 linktype: "Dikey Sayfa Sonrası Ekle"
 type: docs
-url: /page-breaks/add-vertical-page-break/
-aliases: [/insert-vertical-page-break-inside-worksheet/]
+url: /tr/page-breaks/add-vertical-page-break/
+aliases: [  /tr/insert-vertical-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, dikey sayfa sonrası, REST API, Excel, SDK, cURL"
 description: "Aspose.Cells Cloud REST API (v3.0) kullanarak bir Excel çalışma sayfasına dikey sayfa sonrası nasıl ekleneceğini öğrenin. İstek söz dizimi, cURL örneği, SDK örnekleri, kimlik doğrulama kılavuzu ve hata işleme ayrıntılarını içerir."
 weight: 40

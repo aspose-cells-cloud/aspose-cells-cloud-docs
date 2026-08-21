@@ -3,8 +3,8 @@ title: "Obtener saltos de página horizontales"
 second_title: "Documentos"
 linktitle: "Obtener saltos de página horizontales"
 type: docs
-url: /page-breaks/get-horizontal-page-breaks/
-aliases: [/get-horizontal-page-breaks-inside-worksheet/]
+url: /es/page-breaks/get-horizontal-page-breaks/
+aliases: [  /es/get-horizontal-page-breaks-inside-worksheet/ ]
 keywords: "saltos de página horizontales, Aspose.Cells Cloud, API REST, hoja de cálculo de Excel, SDK"
 description: "Recuperar saltos de página horizontales desde una hoja de cálculo de Excel mediante la API de Aspose.Cells Cloud. Incluye el punto de conexión, parámetros, ejemplo de cURL, formato de respuesta y fragmentos de SDK para C#, Java, Python y más."
 ArticleTitle: "Obtener saltos de página horizontales - Documentación de la API de Aspose.Cells Cloud"

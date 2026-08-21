@@ -4,7 +4,7 @@ ArticleTitle: "Importar imagen en hoja de cálculo de Excel – Guía de la API 
 second_title: "Documentos"
 linktitle: "Importar imagen"
 type: docs
-url: /import-picture-into-excel-worksheet/
+url: /es/import-picture-into-excel-worksheet/
 aliases:
   - /import-picture-into-worksheet/
   - /import-data/picture/

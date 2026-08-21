@@ -3,7 +3,7 @@ title: "使用 Smart Marker 模板构建 Excel 报表"
 second_title: "文档"
 linktype: "SmartMarker"
 type: docs
-url: /build-report-with-smart-marker/
+url: /zh/build-report-with-smart-marker/
 aliases:
   - /create-excel-workbook-from-a-smartmarker-template/
   - /workbook/smartmarker/

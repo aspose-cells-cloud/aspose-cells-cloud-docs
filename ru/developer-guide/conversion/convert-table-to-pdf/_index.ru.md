@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать табличные данные из локальной электронной таблицы в PDF-файл: пошаговое руководство"
 linktitle: "Преобразовать таблицу в PDF"
 type: docs
-url: /convert-table-to-pdf/
+url: /ru/convert-table-to-pdf/
 keywords: "Aspose.Cells, Excel в PDF, преобразование таблицы, облачный API"
 description: "Быстро преобразуйте локальную таблицу Excel в PDF-файл с помощью облачного REST API Aspose.Cells."
 weight: 100

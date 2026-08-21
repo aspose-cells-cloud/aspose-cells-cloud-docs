@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Solution efficace de gestion des fichiers Excel basée sur le cloud – Interface pour le déplacement rapide de fichiers dans le cloud"
 linktitle: "Déplacer un fichier"
 type: docs
-url: /move-file/
+url: /fr/move-file/
 keywords: "Aspose.Cells, API Move File, Stockage cloud, API Excel, Gestion de fichiers"
 description: "Comment déplacer des fichiers entre dossiers dans le stockage Aspose.Cells Cloud à l’aide de l’API Move File v4.0 – point de terminaison, paramètres, exemples et liens vers les SDK."
 weight: 100

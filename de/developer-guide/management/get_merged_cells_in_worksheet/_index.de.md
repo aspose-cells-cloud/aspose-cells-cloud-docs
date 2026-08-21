@@ -3,7 +3,7 @@ title: "GetMergedCellsInWorksheet"
 ArticleTitle: "Zusammengefügte Zellen in Arbeitsblatt abrufen – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "docs"
-url: /cells/spreadsheet/mergedcells
+url: /de/cells/spreadsheet/mergedcells
 aliases: []
 keywords: "Aspose Cells, zusammengefügte Zellen, Arbeitsblatt, API"
 description: "Ruft alle zusammengefügten Zellbereiche aus einem lokalen Tabellendokument ab."

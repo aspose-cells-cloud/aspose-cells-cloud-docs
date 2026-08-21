@@ -3,8 +3,8 @@ title: "Tüm Belge Özelliklerini Kaldır"
 second_title: "Belge"
 linktitle: "Temizle"
 type: docs
-url: /document-properties/clear/
-aliases: [/remove-all-document-properties/]
+url: /tr/document-properties/clear/
+aliases: [  /tr/remove-all-document-properties/ ]
 keywords: "Aspose.Cells, belge özelliklerini sil, Excel özelliklerini temizle, REST API, bulut SDK'sı, elektronik tablo, API referansı"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabından tüm özel ve yerleşik özellikleri kaldırma adım adım kılavuz."
 weight: 58

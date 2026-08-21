@@ -3,8 +3,8 @@ title: "استرجاع عناصر النص من ورقة عمل Excel"
 second_title: "مستند"
 linktitle: "استرجاع عناصر النص في ورقة العمل"
 type: docs
-url: /worksheets/get-text-items/
-aliases: [/get-text-items-from-a-worksheet/]
+url: /ar/worksheets/get-text-items/
+aliases: [  /ar/get-text-items-from-a-worksheet/ ]
 weight: 20
 keywords: "Aspose.Cells، واجهة برمجة تطبيقات السحابة، Excel، ورقة عمل، عناصر نصية، REST"
 description: "استرجاع جميع عناصر النص من ورقة عمل محددة في ملف Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. يتضمن أمثلة لـ cURL ورموز SDK، وخطوات المصادقة، ومخطط الاستجابة."

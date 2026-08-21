@@ -4,7 +4,7 @@ second title: "문서"
 ArticleTitle: "Aspose.Cells Cloud AI 번역 API를 사용하여 전체 스프레드시트를 번역하는 방법"
 linktitle: "스프레드시트 번역"
 type: docs
-url: /translate-spreadsheet/
+url: /ko/translate-spreadsheet/
 keywords: "Aspose.Cells Cloud, 스프레드시트 번역 API, AI 번역, 스프레드시트 번역, targetLanguage, 다중 시트 번역, 클라우드 스프레드시트 처리, Aspose.Cells Cloud 번역"
 description: "Aspose.Cells Cloud AI를 사용하여 전체 Excel 워크북을 번역하세요. 공식, 차트, 서식을 그대로 유지한 채 텍스트를 지원되는 모든 언어로 변환합니다. 엔드포인트, 매개변수, SDK 예제, 제한사항 및 오류 처리 방법을 알아보세요."
 weight: 100

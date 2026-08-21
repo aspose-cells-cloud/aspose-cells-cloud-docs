@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API ile Excel Çalışma Kitabını Şifreleyin – H
 second_title: "Belge"
 linktype: "İçerik"
 type: docs
-url: /excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+url: /tr/excel-file-encrypt/
+aliases: [  /tr/encrypt-excel-workbooks/ , /tr/workbook/encrypt/ ]
 keywords: "Aspose Cells çalışma kitabını şifreleme, Excel şifreleme API'si, REST API, cURL, .NET, Java, Python, PHP, Ruby, Node.js, Go, Perl"
 description: "Aspose.Cells Cloud REST API'sini (v3.0) kullanarak bir Excel çalışma kitabını nasıl şifreleyeceğinizi öğrenin. cURL komutu, SDK kod örnekleri (C#, Java, Python, vb.), gerekli parametreler ve hata işleme içerir."
 weight: 20

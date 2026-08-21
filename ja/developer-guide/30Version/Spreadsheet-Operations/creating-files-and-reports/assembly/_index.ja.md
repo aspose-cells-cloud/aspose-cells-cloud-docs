@@ -3,8 +3,8 @@ title: "Excelレポート作成のためのデータ統合"
 second_title: "ドキュメント"
 linktitle: "データ統合"
 type: docs
-url: /assembly-data-for-the-creation-of-an-excel-report/
-aliases: [/assembly/]
+url: /ja/assembly-data-for-the-creation-of-an-excel-report/
+aliases: [  /ja/assembly/ ]
 keywords: "Aspose.Cells, Excelレポート, データ統合, クラウドAPI, REST, SDK, cURL, PDF, ODS"
 description: "Aspose.Cells CloudのAssembly APIを使用して、Excel（XLSX、PDF、ODS）レポートにデータを統合する方法を学びます。エンドポイント、パラメータ、cURLのサンプル、SDKコード、認証ガイド、エラー処理を含みます。"
 weight: 40

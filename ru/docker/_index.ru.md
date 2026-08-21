@@ -4,8 +4,8 @@ second_title: "Документ"
 ArticleTitle: "Руководство по эксплуатации Aspose.Cells Cloud Docker"
 linktitle: "Docker"
 type: docs
-url: /docker-developer-guide/
-aliases: [/docker/, /docker/run/]
+url: /ru/docker-developer-guide/
+aliases: [  /ru/docker/ , /ru/docker/run/ ]
 description: "Развертывание Aspose.Cells Cloud в виде Docker-контейнера в частной или локальной инфраструктуре, позволяющее обрабатывать электронные таблицы (Excel, PDF, CSV, JSON, Markdown) без использования общественного облака Aspose."
 keywords:
   [

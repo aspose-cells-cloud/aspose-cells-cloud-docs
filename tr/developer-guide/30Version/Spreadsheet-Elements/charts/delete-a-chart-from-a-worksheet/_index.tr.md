@@ -1,8 +1,8 @@
 ---
 title: "Bir Çalışma Sayfasından Bir Grafik Silme"
 type: docs
-url: /charts/delete/
-aliases: [/delete-a-chart-from-a-worksheet/]
+url: /tr/charts/delete/
+aliases: [  /tr/delete-a-chart-from-a-worksheet/ ]
 weight: 40
 keywords:
   - "Aspose.Cells"

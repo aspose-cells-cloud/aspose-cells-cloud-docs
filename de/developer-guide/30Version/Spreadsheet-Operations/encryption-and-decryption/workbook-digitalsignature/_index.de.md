@@ -3,7 +3,7 @@ title: "Hinzufügen einer digitalen Signatur zu einer Excel-Arbeitsmappe"
 ArticleTitle: "Hinzufügen einer digitalen Signatur zu einer Excel-Arbeitsmappe – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "docs"
-url: /excel-digital-signature/
+url: /de/excel-digital-signature/
 aliases:
   - /protect/digital-signature/
   - /workbook/digital-signature/

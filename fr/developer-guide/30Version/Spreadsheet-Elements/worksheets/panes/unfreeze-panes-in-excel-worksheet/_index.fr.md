@@ -3,7 +3,7 @@ title: "Dégeler les volets d'une feuille Excel"
 second_title: "Document"
 linktitle: "Dégeler"
 type: docs
-url: /worksheets/panes/unfreeze/
+url: /fr/worksheets/panes/unfreeze/
 aliases:
   - /unfreeze-panes-in-excel-worksheet/
   - /worksheets/unfreeze-panes/

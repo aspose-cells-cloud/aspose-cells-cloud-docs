@@ -4,8 +4,8 @@ ArticleTitle: "Excel çalışma sayfasındaki tüm şekilleri sil – Aspose.Cel
 second_title: "Belge"
 linktype: "Temizle"
 type: docs
-url: /shapes/clear/
-aliases: [/delete-all-shapes-inside-the-worksheet/]
+url: /tr/shapes/clear/
+aliases: [  /tr/delete-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Tüm şekilleri sil, Excel çalışma sayfası, REST API, SDK, cURL, .NET, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından tüm şekilleri silin. İşlem, cURL ve geniş bir SDK yelpazesi (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift) aracılığıyla kullanılabilir."
 weight: 40

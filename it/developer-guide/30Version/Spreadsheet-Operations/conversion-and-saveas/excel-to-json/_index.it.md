@@ -3,7 +3,7 @@ title: "Excel in JSON"
 second_title: "Documenti"
 linktype: "Excel in JSON"
 type: docs
-url: /convert-excel-file-to-json-file/
+url: /it/convert-excel-file-to-json-file/
 keywords: "Aspose.Cells, Excel in JSON, API cloud, conversione foglio di calcolo, API REST"
 description: "Scopri come convertire fogli di calcolo Excel in file JSON tramite l'API REST di Aspose.Cells Cloud. Include esempio cURL, frammenti SDK (C#, Java, Python), parametri richiesti, autenticazione e formato della risposta."
 weight: 100

@@ -3,7 +3,7 @@ title: "Excel 转 JSON"
 second_title: "文档"
 linktitle: "Excel 转 JSON"
 type: docs
-url: /convert-excel-file-to-json-file/
+url: /zh/convert-excel-file-to-json-file/
 keywords: "Aspose.Cells, Excel 转 JSON, 云 API, 电子表格转换, REST API"
 description: "了解如何使用 Aspose.Cells Cloud REST API 将 Excel 电子表格转换为 JSON 文件。包含 cURL 示例、SDK 代码片段（C#、Java、Python）、所需参数、身份验证和响应格式。"
 weight: 100

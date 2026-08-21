@@ -1,8 +1,8 @@
 ---
 title: "Обновление легенды диаграммы в рабочем листе"
 type: docs
-url: /charts/legend/update/
-aliases: [/update-chart-legend-in-a-worksheet/]
+url: /ru/charts/legend/update/
+aliases: [  /ru/update-chart-legend-in-a-worksheet/ ]
 weight: 160
 keywords: "Aspose.Cells, облако, Excel, диаграмма, легенда, REST API, обновление, рабочий лист, cURL, SDK"
 description: "Как обновить легенду диаграммы в рабочем листе Excel с помощью Aspose.Cells Cloud REST API, включая примеры запросов cURL и фрагменты кода SDK для различных языков программирования."

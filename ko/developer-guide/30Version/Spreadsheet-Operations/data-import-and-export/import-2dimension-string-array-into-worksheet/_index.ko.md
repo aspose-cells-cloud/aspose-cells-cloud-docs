@@ -3,7 +3,7 @@ title: "2차원 문자열 배열을 Excel 워크시트로 가져오기"
 second_title: "문서"
 linktitle: "2차원 문자열 배열 가져오기"
 type: docs
-url: /import-a-2D-string-array-into-excel-worksheet/
+url: /ko/import-a-2D-string-array-into-excel-worksheet/
 aliases:
   [
     "/import-2dimension-string-array-into-excel-worksheet/",

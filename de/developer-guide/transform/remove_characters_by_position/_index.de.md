@@ -4,7 +4,7 @@ ArticleTitle: "Zeichen nach Position entfernen – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Zeichen nach Position entfernen"
 type: docs
-url: /cells/content/remove/characters-by-position
+url: /de/cells/content/remove/characters-by-position
 aliases: []
 keywords: "Aspose.Cells, Zeichen entfernen, API"
 description: "Löscht Zeichen aus Zellen nach Position in einer Tabellenkalkulation."

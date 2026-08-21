@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "获取"
 type: docs
 url: /zh/shapes/get/
-aliases: [/zh/get-a-shape-by-index-inside-the-worksheet/]
+aliases: [  /zh/get-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel 形状 API, 按索引获取形状, 工作表形状, REST API, 形状检索, Aspose.Cells SDK"
 description: "使用 Aspose.Cells Cloud REST API 从 Excel 工作表中按索引检索形状（包括其图像数据或元数据）。包含请求语法、参数、响应详情及 SDK 示例。"
 weight: 20

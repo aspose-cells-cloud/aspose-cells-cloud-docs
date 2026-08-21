@@ -3,7 +3,7 @@ title: "创建 Excel 文件并生成 Excel 报表"
 second_title: "文档"
 type: docs
 url: /zh/creating-files-and-reports/
-aliases: [/cells/zh/workbook/create/]
+aliases: [  /zh/cells/zh/workbook/create/ ]
 linktitle: "创建 Excel 文件与报表"
 keywords: "Aspose.Cells Cloud, Excel API, 创建工作簿, Excel 报表, SmartMarker, 模板, 报表生成"
 description: "了解如何使用 Aspose.Cells Cloud API 创建空 Excel 工作簿、从模板生成文件，以及构建基于 SmartMarker 的报表，并附带代码示例。"

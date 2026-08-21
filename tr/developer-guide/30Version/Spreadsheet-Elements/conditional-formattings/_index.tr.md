@@ -3,8 +3,8 @@ title: "Excel Koşullu Biçimlendirme ile Çalışma"
 second_title: "Belge"
 linktitle: "Koşullu Biçimlendirme"
 type: docs
-url: /conditional-formattings/
-aliases: [/working-with-conditional-formatting/]
+url: /tr/conditional-formattings/
+aliases: [  /tr/working-with-conditional-formatting/ ]
 keywords: "Excel, Koşullu Biçimlendirme, Aspose.Cells Cloud, API"
 description: "Aspose.Cells Cloud API’si, Excel için koşullu biçimlendirme kurallarını almak, eklemek, değiştirmek ve temizlemek için uç noktalar sağlar; bu sayede çalışma sayfası verilerinin dinamik görsel analizini mümkün kılar."
 weight: 100

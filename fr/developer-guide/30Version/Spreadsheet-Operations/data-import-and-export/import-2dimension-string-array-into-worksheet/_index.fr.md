@@ -3,7 +3,7 @@ title: "Importer un tableau de chaînes à deux dimensions dans une feuille Exce
 second_title: "Document"
 linktitle: "Importer un tableau de chaînes à deux dimensions"
 type: docs
-url: /import-a-2D-string-array-into-excel-worksheet/
+url: /fr/import-a-2D-string-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-string-array-into-excel-worksheet/,

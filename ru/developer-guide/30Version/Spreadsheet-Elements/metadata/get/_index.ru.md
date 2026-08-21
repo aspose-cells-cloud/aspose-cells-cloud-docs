@@ -3,7 +3,7 @@ title: "Получение метаданных из файлов Excel"
 second_title: "Документ"
 linktitle: "Получение без использования хранилища"
 type: docs
-url: /metadata/get/
+url: /ru/metadata/get/
 keywords: "Aspose.Cells, Excel, метаданные, REST API, облачное SDK"
 description: "Получение встроенных или пользовательских метаданных из книг Excel с использованием Aspose.Cells Cloud REST API. Включает формат запроса, параметры, примеры кода SDK и обработку ошибок."
 weight: 23

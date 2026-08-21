@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Поиск и замена текста в удалённом рабочем листе с помощью API Aspose.Cells Cloud"
 linktitle: "Замена содержимого удалённого рабочего листа"
 type: docs
-url: /replace-content-in-remote-worksheet/
+url: /ru/replace-content-in-remote-worksheet/
 keywords: "Aspose.Cells, замена текста, удалённый рабочий лист, Excel API, облачная таблица, поиск и замена, REST API"
 description: "Замените текст в конкретном рабочем листе файла Excel, хранящегося в Aspose Cloud. Поддерживает защищённые паролем книги, поиск с учётом региона и пакетное обновление."
 weight: 100

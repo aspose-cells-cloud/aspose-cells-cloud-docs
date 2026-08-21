@@ -3,7 +3,7 @@ title: "So fügen Sie Zeilen zu einem Excel-Arbeitsblatt hinzu"
 second_title: "Dokument"
 linktitle: "Hinzufügen"
 type: docs
-url: /rows/add/
+url: /de/rows/add/
 keywords: "Aspose.Cells, Zeilen hinzufügen, Excel-API, REST, C#, Java, Python, Node.js"
 description: "Schritt-für-Schritt-Anleitung zum Hinzufügen einer einzelnen oder mehrerer Zeilen zu einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API, einschließlich Codebeispielen für C#, Java, Python und Node.js."
 weight: 20

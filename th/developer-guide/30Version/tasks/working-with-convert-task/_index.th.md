@@ -2,8 +2,8 @@
 title: "การทำงานกับงาน Convert"
 second_title: "เอกสาร"
 type: docs
-url: /tasks/convert/
-aliases: [/working-with-convert-task/]
+url: /th/tasks/convert/
+aliases: [  /th/working-with-convert-task/ ]
 keywords: "Aspose.Cells Cloud, REST API, งาน Convert, Excel, สเปรดชีต, PDF, CSV, JSON, Markdown"
 description: "API ของ Cells Cloud สำหรับ Excel มีการรองรับงานสำหรับการแปลงไฟล์ Excel เป็นรูปแบบต่างๆ"
 weight: 30

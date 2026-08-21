@@ -3,7 +3,7 @@ title: "Excelデータ検証の操作"
 second_title: "Document"
 linktype: "Validations"
 type: docs
-url: /validations/
+url: /ja/validations/
 keywords: "Excelデータ検証、Aspose.Cells Cloud、REST API、スプレッドシート、Office Cloud"
 description: "Aspose.Cells Cloud REST API を使用して、Excelデータ検証ルールをプログラムで追加、取得、更新、削除、クリアする方法を学びます。.NET、Java、Python、PHP の各言語での例を含みます。"
 weight: 100

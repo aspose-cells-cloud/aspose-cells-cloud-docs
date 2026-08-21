@@ -3,7 +3,7 @@ title: "Aspose.Cells Trim Content API — удаление пробелов и �
 second_title: "Документ"
 linktype: "Trim Content"
 type: docs
-url: /spreadsheet-trim-content/
+url: /ru/spreadsheet-trim-content/
 keywords: "Aspose.Cells, Trim Content API, очистка данных Excel, удаление пробелов в Excel, удаление разрывов строк, очистка данных в электронных таблицах"
 description: "Используйте API PostTrimContent Aspose.Cells Cloud для автоматической очистки лишних пробелов, разрывов строк и нежелательных символов из ячеек Excel. Изучите конечную точку, формат запроса, примеры кода и обработку ошибок."
 weight: 100

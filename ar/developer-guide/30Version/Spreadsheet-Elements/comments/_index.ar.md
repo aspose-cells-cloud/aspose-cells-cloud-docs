@@ -4,7 +4,7 @@ second_title: "مستند"
 linktitle: "التعليقات"
 type: docs
 url: /ar/comments/
-aliases: [/ar/working-with-comments/]
+aliases: [  /ar/working-with-comments/ ]
 keywords: "Aspose.Cells Cloud, API تعليقات إكسل, تعليقات جداول البيانات, REST API"
 description: "تعرّف على كيفية إضافة وجلب وتحديث وحذف تعليقات إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API الإصدار 3.0، مع أمثلة على الكود ومتطلبات ما قبل التشغيل وإجراءات معالجة الأخطاء."
 weight: 100

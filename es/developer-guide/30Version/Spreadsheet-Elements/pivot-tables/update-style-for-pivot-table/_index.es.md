@@ -3,8 +3,8 @@ title: "Actualizar estilo para tabla dinámica"
 second_title: "Documento"
 linktitle: "Dar formato a todo"
 type: docs
-url: /pivot-tables/format-all/
-aliases: [/update-style-for-pivot-table/]
+url: /es/pivot-tables/format-all/
+aliases: [  /es/update-style-for-pivot-table/ ]
 keywords: "tabla dinámica, actualizar estilo, Aspose.Cells Cloud, API REST, Excel, hoja de cálculo, API, estilo de tabla dinámica, dar formato a todo"
 description: "Aprenda cómo actualizar el estilo de una tabla dinámica completa mediante la API REST de Aspose.Cells Cloud. Incluye detalles de la solicitud, un ejemplo con cURL y fragmentos de código SDK para múltiples lenguajes de programación."
 weight: 100

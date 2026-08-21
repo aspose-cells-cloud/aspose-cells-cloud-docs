@@ -3,7 +3,7 @@ title: "Obtenir les feuilles de calcul avec un classeur local"
 ArticleTitle: "Obtenir les feuilles de calcul avec un classeur local – Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /cells/spreadsheet/worksheets
+url: /fr/cells/spreadsheet/worksheets
 aliases: []
 keywords: "Aspose.Cells, feuilles de calcul, classeur local, API"
 description: "Récupère la liste complète des feuilles de calcul à partir du classeur local actuellement actif."

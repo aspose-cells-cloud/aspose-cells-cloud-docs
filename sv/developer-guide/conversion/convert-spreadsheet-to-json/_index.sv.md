@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Så här konverterar du ett lokalt kalkylark till JSON med Aspose.Cells Cloud API"
 linktitle: "Konvertera kalkylark till JSON"
 type: docs
-url: /convert-spreadsheet-to-json/
+url: /sv/convert-spreadsheet-to-json/
 keywords: "Aspose Cells Cloud, konvertera kalkylark till JSON, Excel till JSON API, Aspose.Cells Cloud API, REST API, konvertering av kalkylark"
 description: "Lär dig hur du konverterar lokala Excel-filer till JSON med Aspose.Cells Cloud API. Inkluderar endpoint, parametrar, exempelkod och felhantering för sömlös integration."
 weight: 100

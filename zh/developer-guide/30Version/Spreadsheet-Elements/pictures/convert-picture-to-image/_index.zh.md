@@ -2,8 +2,8 @@
 title: "Aspose.Cells Cloud API – 从工作表获取图片"
 second_title: "文档"
 linktype: "文档"
-url: /pictures/get/
-aliases: [/convert-picture-to-image/]
+url: /zh/pictures/get/
+aliases: [  /zh/convert-picture-to-image/ ]
 keywords: "Aspose.Cells, 获取图片, API, Excel, 云, REST"
 description: "通过 Aspose.Cells Cloud REST API 从 Excel 工作表中检索特定图片。包含端点、参数、身份验证步骤、响应码及代码示例。"
 weight: 10

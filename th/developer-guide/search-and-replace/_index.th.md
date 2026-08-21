@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "การค้นหาและแทนที่ในสเปรดชีต – Aspose.Cells Cloud API"
 linktitle: "การค้นหาและแทนที่"
 type: docs
-url: /search-replace/
+url: /th/search-replace/
 keywords: "Aspose.Cells, Cloud API, การค้นหาและแทนที่, Excel, REST, API, การปรับอัตโนมัติสเปรดชีต, การค้นหาและแทนที่, Excel cloud"
 description: "เรียนรู้วิธีใช้ API **การค้นหาและแทนที่** ของ Aspose.Cells Cloud เพื่อค้นหาและแทนที่ข้อความ สูตร หรือลิงก์ในสมุดงาน Excel ที่เก็บไว้ในคลาวด์ รวมถึงรายละเอียดของจุดปลาย (endpoint) พารามิเตอร์คำขอ ตัวอย่างการตอบกลับ โค้ดสถานะ และตัวอย่างโค้ดสำหรับ C#, Java และ Python"
 weight: 50

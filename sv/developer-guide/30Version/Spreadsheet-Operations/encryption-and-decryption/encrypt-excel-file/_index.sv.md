@@ -3,8 +3,8 @@ title: "Kryptera en Excel-arbetsbok med Aspose.Cells Cloud API – Snabba cURL- 
 secondtitle: "Dokument"
 linktitle: "Kryptera en Excel-fil"
 type: docs
-url: /excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+url: /sv/excel-file-encrypt/
+aliases: [  /sv/encrypt-excel-workbooks/ , /sv/workbook/encrypt/ ]
 keywords: "Aspose Cells kryptera arbetsbok, Excel-krypterings-API, REST API, cURL, .NET, Java, Python, PHP, Ruby, Node.js, Go, Perl"
 description: "Lär dig hur du krypterar en Excel-arbetsbok med Aspose.Cells Cloud REST API (v3.0). Innehåller cURL-kommando, SDK-kodexempel (C#, Java, Python, …), nödvändiga parametrar och felhantering."
 weight: 20

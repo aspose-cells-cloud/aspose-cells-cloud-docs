@@ -1,7 +1,7 @@
 ---
 title: "엑셀 워크시트에서 셀 병합하는 방법 – Aspose.Cells Cloud API (v3.0)"
 type: docs
-url: /merge-cells-in-excel-worksheet/
+url: /ko/merge-cells-in-excel-worksheet/
 weight: 110
 keywords: "셀 병합, Aspose.Cells, 클라우드 API, 엑셀"
 description: "Aspose.Cells Cloud REST API를 사용해 엑셀 워크시트에서 셀을 병합하는 가이드로, cURL 및 SDK 예제를 포함합니다."

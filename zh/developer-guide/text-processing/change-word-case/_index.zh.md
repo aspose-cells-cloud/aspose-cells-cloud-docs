@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – 修改单词大小写（全大写、全小写、�
 ArticleTitle: "Excel 大小写转换器 – 全大写、全小写、首字母大写与句首大写"
 linktype: "Word Case"
 type: docs
-url: /change-word-case/
+url: /zh/change-word-case/
 keywords: "修改单词大小写 API、Aspose.Cells、Excel 大小写转换、全大写、全小写、首字母大写、句首大写、文本格式化"
 description: "使用 Aspose.Cells Cloud API 轻松转换 Excel 文件中的文本大小写。支持全大写、全小写、首字母大写和句首大写。提供 C#、Java、Python 等多种语言的代码示例。"
 weight: 100

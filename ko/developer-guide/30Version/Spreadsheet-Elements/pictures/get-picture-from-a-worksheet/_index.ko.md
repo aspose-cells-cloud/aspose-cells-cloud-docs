@@ -3,8 +3,8 @@ title: "Excel 워크시트에서 모든 그림 가져오기"
 second_title: "문서"
 linktitle: "모두 가져오기"
 type: docs
-url: /pictures/get-all/
-aliases: [/get-picture-from-a-worksheet/]
+url: /ko/pictures/get-all/
+aliases: [  /ko/get-picture-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel 워크시트, 그림 API, 모든 그림 가져오기, REST API, SDK"
 description: "Aspose.Cells Cloud REST API를 통해 Excel 워크시트에서 모든 그림 객체를 검색합니다."
 ArticleTitle: "Excel 워크시트에서 모든 그림 가져오기 - Aspose.Cells Cloud API"

@@ -1,8 +1,8 @@
 ---
 title: "Скрытие легенды диаграммы в рабочей книге Excel – Aspose.Cells Cloud API"
 type: docs
-url: /charts/legend/hide/
-aliases: [/hide-chart-legend-in-a-worksheet/]
+url: /ru/charts/legend/hide/
+aliases: [  /ru/hide-chart-legend-in-a-worksheet/ ]
 weight: 110
 keywords: "Aspose.Cells, Excel, скрытие легенды диаграммы, REST API, облачное SDK, легенда диаграммы"
 description: "Узнайте, как скрыть легенду диаграммы в рабочей книге Excel с помощью Aspose.Cells Cloud REST API. Включает HTTPS-эндпоинт, необходимую аутентификацию, синтаксис запроса, детали ответа, обработку ошибок и примеры SDK."

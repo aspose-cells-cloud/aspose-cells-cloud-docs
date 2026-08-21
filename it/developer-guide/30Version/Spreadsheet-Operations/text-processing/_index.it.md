@@ -3,7 +3,7 @@ title: "Elaborazione di testo in Excel: aggiungi testo, rimuovi caratteri, riduc
 second_title: "Document"
 linktype: "Elaborazione testo"
 type: docs
-url: /text-processing/
+url: /it/text-processing/
 keywords: "elaborazione testo Excel, aggiungi testo, rimuovi caratteri, riduci testo, aggiorna capitalizzazione parole, converti testo, dividi testo, unisci testo, sostituisci testo, cerca testo, conta testo, testo in PDF, testo in CSV, testo in JSON, testo in Markdown, Aspose.Cells Cloud"
 description: "Esplora l'API REST Aspose.Cells Cloud per compiti completi di elaborazione del testo in Excel—including l'aggiunta di testo, la rimozione di caratteri, la riduzione degli spazi, la modifica della capitalizzazione delle parole, la conversione tra formati e altro ancora. Sono disponibili SDK per Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby e Swift."
 weight: 20

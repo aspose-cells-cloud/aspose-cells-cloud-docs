@@ -2,7 +2,7 @@
 title: "استيراد مصفوفة أعداد صحيحة إلى ورقة عمل إكسل"
 linktype: "استيراد مصفوفة أعداد صحيحة"
 type: docs
-url: /import-integer-array-into-excel-worksheet/
+url: /ar/import-integer-array-into-excel-worksheet/
 aliases:
   - /import-integer-array-into-excel-worksheet/
   - /import-integer-array-into-worksheet/

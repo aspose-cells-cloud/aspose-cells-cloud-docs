@@ -4,8 +4,8 @@ ArticleTitle: "ส่งออกหน้าสมุดงาน – ข้อ
 second_title: "เอกสาร"
 linktitle: "หน้า"
 type: docs
-url: /worksheets/page-to-different-formats/
-aliases: [/get-worksheet-for-page-index/]
+url: /th/worksheets/page-to-different-formats/
+aliases: [  /th/get-worksheet-for-page-index/ ]
 keywords: "Aspose.Cells Cloud, การส่งออกหน้าสมุดงาน, PDF, PNG, CSV, REST API, การยืนยันตัวตนด้วย JWT, รูปแบบไฟล์"
 description: "เรียนรู้วิธีการส่งออกหน้าสมุดงานที่ระบุไปยังรูปแบบต่างๆ เช่น PDF, PNG, CSV และอื่นๆ โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่างคำสั่ง cURL, คู่มือพารามิเตอร์ และโค้ดตัวอย่าง SDK สำหรับหลายภาษา"
 weight: 240

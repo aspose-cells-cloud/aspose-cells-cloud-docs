@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีการแปลงแผ่นงานสมุดรายวันแบบโลคัลเป็นไฟล์ PDF: คู่มือแบบทีละขั้นตอน"
 linktype: "แปลงแผ่นงานเป็น PDF"
 type: docs
-url: /convert-worksheet-to-pdf/
+url: /th/convert-worksheet-to-pdf/
 keywords: "Aspose.Cells, Excel เป็น PDF, การแปลงแผ่นงาน, REST API, การแปลงบนคลาวด์, PDF สมุดรายวัน, endpoint ของ API, การสร้าง PDF"
 description: "ใช้ Aspose.Cells Cloud API แปลงแผ่นงานจากไฟล์ Excel แบบโลคัลเป็นเอกสาร PDF ได้อย่างรวดเร็วและปลอดภัย"
 weight: 100

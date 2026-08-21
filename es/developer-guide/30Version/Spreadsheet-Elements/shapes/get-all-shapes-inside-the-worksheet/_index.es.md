@@ -3,8 +3,8 @@ title: "Obtener todas las formas en una hoja de cálculo de Excel"
 second_title: "Document"
 linktype: "get-all"
 type: docs
-url: /shapes/get-all/
-aliases: [/get-all-shapes-inside-the-worksheet/]
+url: /es/shapes/get-all/
+aliases: [  /es/get-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, API en la nube, formas de Excel, obtener formas, REST, SDK"
 description: "Recuperar todas las formas (gráficos, imágenes, cuadros de texto) de una hoja de cálculo mediante la API REST de Aspose.Cells Cloud. Incluye ejemplo de cURL, fragmentos de SDK, pasos de autenticación y manejo de errores."
 ArticleTitle: "Obtener todas las formas en una hoja de cálculo de Excel"

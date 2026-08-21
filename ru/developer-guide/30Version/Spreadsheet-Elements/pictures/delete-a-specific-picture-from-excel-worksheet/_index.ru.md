@@ -3,8 +3,8 @@ title: "Удаление изображения из рабочего листа
 second_title: "Документ"
 linktitle: "Удаление"
 type: docs
-url: /pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+url: /ru/pictures/delete/
+aliases: [  /ru/delete-a-specific-picture-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, облачный API, удаление изображения, рабочий лист Excel, REST"
 description: "Удаление изображения из рабочего листа Excel с помощью облачного REST API Aspose.Cells. Изучите DELETE-эндпоинт, необходимые параметры, аутентификацию, коды ошибок и примеры кода."
 weight: 50

@@ -3,8 +3,8 @@ title: "Alle Pivot-Tabellen in einem Excel-Arbeitsblatt abrufen"
 second_title: "Dokument"
 linktitle: Alle abrufen
 type: docs
-url: /pivot-tables/get-all/
-aliases: [/get-worksheet-pivot-tables-information/]
+url: /de/pivot-tables/get-all/
+aliases: [  /de/get-worksheet-pivot-tables-information/ ]
 keywords: "alle Pivot-Tabellen abrufen, Aspose.Cells Cloud API, Excel PivotTable, REST API"
 description: "Rufen Sie alle Pivot-Tabellen aus einem Excel-Arbeitsblatt über die Aspose.Cells Cloud API ab. Enthält Endpunkt, Parameter, Authentifizierungsschritte, cURL- und SDK-Beispiele für die PivotTables API."
 weight: 20

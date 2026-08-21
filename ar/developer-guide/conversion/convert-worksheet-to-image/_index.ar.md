@@ -4,7 +4,7 @@ second title: "مستند"
 articleTitle: "كيفية تحويل بيانات جدول بيانات ورقة عمل محلية إلى ملف صورة: دليل خطوة بخطوة"
 linkTitle: "تحويل ورقة العمل إلى صورة"
 type: docs
-url: /convert-worksheet-to-image/
+url: /ar/convert-worksheet-to-image/
 keywords: "Aspose.Cells Cloud، تحويل ورقة عمل إلى صورة، تحويل ورقة عمل إلى صورة، Excel إلى PNG، Excel إلى SVG، Excel إلى TIFF، Excel إلى JPEG، Excel إلى BMP، واجهة برمجة تطبيقات تحويل الصور، واجهة برمجة تطبيقات REST، تصدير صور جداول البيانات، أمثلة SDK"
 description: "دليل خطوة بخطوة لتحويل ورقة عمل Excel إلى تنسيقات الصور (PNG، SVG، TIFF، JPEG، BMP، وما إلى ذلك) باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud، بما في ذلك معلمات الطلب، تفاصيل الاستجابة، رموز الأخطاء، سيناريوهات الاستخدام، وأكواد الأمثلة لـ SDK."
 weight: 100

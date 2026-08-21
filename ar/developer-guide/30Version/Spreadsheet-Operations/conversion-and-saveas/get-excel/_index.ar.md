@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – تحويل ملف Excel إلى PDF وCSV وHTML �
 second_title: "وثيقة"
 linktitle: "تحويل ملف Excel"
 type: docs
-url: /get-different-formats-files/
+url: /ar/get-different-formats-files/
 aliases:
   - /export-excel-workbook-to-different-file-formats/
   - /export-different-formats/

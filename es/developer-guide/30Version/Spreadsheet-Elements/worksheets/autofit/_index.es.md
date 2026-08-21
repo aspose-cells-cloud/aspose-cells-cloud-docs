@@ -3,8 +3,8 @@ title: "Trabajar con Autoajuste en una Hoja de Cálculo de Excel"
 second_title: "Documento"
 linktitle: "Autoajuste"
 type: docs
-url: /worksheets/autofit/
-aliases: [/autofit-rows-and-columns-of-worksheet/]
+url: /es/worksheets/autofit/
+aliases: [  /es/autofit-rows-and-columns-of-worksheet/ ]
 keywords: "autoajuste, columna, fila, Aspose.Cells, Cloud, Excel, API, redimensionar"
 description: "Aprenda cómo redimensionar automáticamente filas y columnas en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye ejemplos en cURL, .NET, Java y Python."
 weight: 20

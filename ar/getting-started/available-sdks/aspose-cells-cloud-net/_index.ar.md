@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "حزمة Aspose.Cells Cloud SDK لـ C#: تحويل، دمج، تقسيم، حماية، بحث، استبدال، والمزيد."
 linktitle: "حزمة Aspose.Cells Cloud SDK لـ .NET"
 type: docs
-url: /available-sdks/aspose-cells-cloud-net/
+url: /ar/available-sdks/aspose-cells-cloud-net/
 description: "تقدم حزمة Aspose.Cells Cloud SDK لـ .NET واجهة برمجة تطبيقات متعددة المنصات لإنشاء وتحويل ودمج وتقسيم وحماية وبحث واستبدال ملفات Excel — دون الحاجة لتثبيت Microsoft Office."
 keywords: "Aspose.Cells، حزمة SDK للسحابة، .NET، Excel، تحويل، دمج، تقسيم، حماية، بحث، استبدال، واجهة برمجة تطبيقات"
 weight: 30

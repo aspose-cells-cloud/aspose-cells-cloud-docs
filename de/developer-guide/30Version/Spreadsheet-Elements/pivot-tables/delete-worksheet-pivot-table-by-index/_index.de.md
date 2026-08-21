@@ -3,8 +3,8 @@ title: "Löschen einer Pivot-Tabelle in einem Excel-Arbeitsblatt"
 second_title: "Document"
 linktype: Delete
 type: docs
-url: /pivot-tables/delete/
-aliases: [/delete-worksheet-pivot-table-by-index/]
+url: /de/pivot-tables/delete/
+aliases: [  /delete-worksheet-pivot-table-by-index/ ]
 keywords: "Aspose.Cells, Pivot-Tabelle, löschen, Excel, REST API"
 description: "Löschen einer Pivot-Tabelle aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API (v3.0). Enthält Anforderungsformat, cURL-Beispiel, Fehlercodes und SDK-Snippets für C#, Java, Python und Node.js."
 weight: 70

@@ -3,8 +3,8 @@ title: "Cifrar un libro de Excel con la API de Aspose.Cells Cloud – Ejemplos r
 second_title: "Documento"
 linktype: "Cifrar un archivo de Excel"
 type: docs
-url: /excel-file-encrypt/
-aliases: [/encrypt-excel-workbooks/, /workbook/encrypt/]
+url: /es/excel-file-encrypt/
+aliases: [  /es/encrypt-excel-workbooks/ , /es/workbook/encrypt/ ]
 keywords: "Cifrar libro con Aspose Cells, API de cifrado de Excel, API REST, cURL, .NET, Java, Python, PHP, Ruby, Node.js, Go, Perl"
 description: "Aprenda a cifrar un libro de Excel mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye comandos cURL, ejemplos de código para SDK (C#, Java, Python, etc.), parámetros requeridos y manejo de errores."
 weight: 20

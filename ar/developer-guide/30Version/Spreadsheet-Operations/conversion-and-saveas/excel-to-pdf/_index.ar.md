@@ -4,8 +4,8 @@ ArticleTitle: "تحويل ملف Excel إلى PDF – واجهة برمجة تط
 second_title: "المستند"
 linktitle: "تحويل ملف Excel إلى PDF"
 type: docs
-url: /convert-excel-file-to-pdf-file/
-aliases: [/convert-excel-file-to-pdf-in-cloud/, /convert/excel-to-pdf/]
+url: /ar/convert-excel-file-to-pdf-file/
+aliases: [  /ar/convert-excel-file-to-pdf-in-cloud/ , /ar/convert/excel-to-pdf/ ]
 keywords: "Aspose, Cells, Excel, PDF, تحويل, واجهة برمجة تطبيقات السحابة"
 description: "تعرّف على كيفية تحويل كتب عمل Excel إلى تنسيق PDF باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. يشمل أمثلة cURL وحزم تطوير برمجيات (SDK) (C#, Java, Python) ودليل المصادقة."
 weight: 80

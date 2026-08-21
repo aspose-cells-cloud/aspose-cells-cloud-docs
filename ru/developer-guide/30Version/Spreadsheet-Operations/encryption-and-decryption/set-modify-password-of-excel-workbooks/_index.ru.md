@@ -3,7 +3,7 @@ title: "Изменение пароля защиты рабочей книги E
 second_title: "Документ"
 linktitle: "Изменение пароля файла Excel"
 type: docs
-url: /workbook/password/modify/
+url: /ru/workbook/password/modify/
 aliases:
   - /set-modify-password-of-excel-workbooks/
   - /workbook/modify-password/

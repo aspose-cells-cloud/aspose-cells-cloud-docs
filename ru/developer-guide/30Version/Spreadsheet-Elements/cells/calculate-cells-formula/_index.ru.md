@@ -1,7 +1,7 @@
 ---
 title: "Вычисление формулы ячейки – Aspose.Cells Cloud API"
 type: docs
-url: /calculate-cells-formula/
+url: /ru/calculate-cells-formula/
 weight: 90
 keywords: "Aspose.Cells Cloud, вычисление формулы ячейки, Excel API, REST API, SDK"
 description: "Вычислите формулу ячейки Excel через REST API Aspose.Cells Cloud (v3.0). Включает endpoint, параметры, пример cURL и фрагменты SDK."

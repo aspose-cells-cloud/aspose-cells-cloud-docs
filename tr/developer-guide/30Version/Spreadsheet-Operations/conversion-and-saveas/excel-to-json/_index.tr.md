@@ -3,7 +3,7 @@ title: "Excel'den JSON'a"
 second_title: "Belge"
 linktitle: "Excel'den JSON'a"
 type: docs
-url: /convert-excel-file-to-json-file/
+url: /tr/convert-excel-file-to-json-file/
 keywords: "Aspose.Cells, Excel'den JSON'a, Bulut API'si, elektronik tablo dönüştürme, REST API"
 description: "Aspose.Cells Cloud REST API ile Excel elektronik tablolarını JSON dosyalarına nasıl dönüştüreceğinizi öğrenin. cURL örneği, SDK kod parçacıkları (C#, Java, Python), gerekli parametreler, kimlik doğrulama ve yanıt formatı içerir."
 weight: 100

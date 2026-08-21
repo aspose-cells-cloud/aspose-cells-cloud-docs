@@ -1,8 +1,8 @@
 ---
 title: "Obtener la leyenda de un gráfico desde una hoja de cálculo"
 type: docs
-url: /charts/legend/get/
-aliases: [/get-chart-legend-from-a-worksheet/]
+url: /es/charts/legend/get/
+aliases: [  /es/get-chart-legend-from-a-worksheet/ ]
 weight: 80
 keywords: "Aspose.Cells, leyenda de gráfico, API REST, Excel, SDK en la nube, obtener leyenda de gráfico, hoja de cálculo, hoja de trabajo"
 description: "Recuperar la leyenda de un gráfico desde una hoja de cálculo específica en un libro de Excel usando la API REST de Aspose.Cells Cloud (v3.0). Incluye el endpoint, parámetros, ejemplo de cURL y fragmentos de SDK."

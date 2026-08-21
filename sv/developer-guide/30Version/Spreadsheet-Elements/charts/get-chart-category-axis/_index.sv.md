@@ -1,7 +1,7 @@
 ---
 title: "Hämta diagrammets kategoriaxel"
 type: docs
-url: /charts/category-axis/get/
+url: /sv/charts/category-axis/get/
 weight: 60
 keywords: "Aspose.Cells, diagramkategoriaxel, Excel, REST API, molnlagring, OAuth2, API-dokumentation"
 description: "Hämtar kategoriaxeln för ett diagram i ett Excel-ark med Aspose.Cells Cloud REST API."

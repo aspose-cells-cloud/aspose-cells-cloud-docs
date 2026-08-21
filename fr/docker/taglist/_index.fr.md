@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Balises d’image Docker d’Aspose.Cells Cloud"
 linktitle: "Balises d’image"
 type: docs
-url: /docker/tag-list/
+url: /fr/docker/tag-list/
 description: "Trouvez les dernières balises d’image Docker d’Aspose.Cells Cloud pour Windows Server (2016‑2022) et Linux. Obtenez les commandes de pull, les détails d’architecture et les notes de mise à niveau en un seul endroit."
 weight: 30
 keywords:

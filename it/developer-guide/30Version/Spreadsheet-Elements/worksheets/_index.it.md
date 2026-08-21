@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Fogli di lavoro"
 type: docs
 url: /it/worksheets/
-aliases: [/it/working-with-worksheets/]
+aliases: [  /it/working-with-worksheets/ ]
 keywords: "foglio di lavoro Excel, Aspose.Cells Cloud, API REST, foglio elettronico, cartella di lavoro, manipolazione dei dati, automazione Excel"
 description: "L'API REST di Aspose.Cells Cloud consente di lavorare con i fogli di lavoro in una cartella di lavoro Excel. L'SDK supporta numerosi linguaggi di programmazione, tra cui Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby e Swift."
 weight: 100

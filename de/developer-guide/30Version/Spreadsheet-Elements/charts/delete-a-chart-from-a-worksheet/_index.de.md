@@ -1,8 +1,8 @@
 ---
 title: "Löschen eines Diagramms aus einem Arbeitsblatt"
 type: docs
-url: /charts/delete/
-aliases: [/delete-a-chart-from-a-worksheet/]
+url: /de/charts/delete/
+aliases: [  /delete-a-chart-from-a-worksheet/ ]
 weight: 40
 keywords:
   - "Aspose.Cells"

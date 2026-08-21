@@ -1,7 +1,7 @@
 ---
 title: "Recuperare il numero massimo di riga in un foglio di calcolo Excel – Aspose.Cells Cloud API"
 type: docs
-url: /get-maxrow-from-excel-worksheet/
+url: /it/get-maxrow-from-excel-worksheet/
 weight: 40
 ArticleTitle: "Recuperare il numero massimo di riga in un foglio di calcolo Excel – Aspose.Cells Cloud API"
 keywords: "Aspose.Cells, Excel, MaxRow, REST API, Cloud SDK, Foglio di calcolo, Foglio, GetMaxRow"

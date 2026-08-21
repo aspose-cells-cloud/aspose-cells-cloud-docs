@@ -3,8 +3,8 @@ title: "Excel ファイル内の画像を更新する"
 second_title: "Document"
 linktitle: "Update"
 type: docs
-url: /pictures/update/
-aliases: [/update-a-specific-picture-from-excel-workshee/]
+url: /ja/pictures/update/
+aliases: [  /ja/update-a-specific-picture-from-excel-workshee/ ]
 keywords: "Aspose.Cells Cloud, Excel, 画像の更新, REST API, SDK"
 description: "Aspose.Cells Cloud REST API を使用して Excel シート内の画像を更新する方法を学びます。リクエストの詳細、cURL の例、および複数言語向けの SDK スニペットを含みます。"
 ArticleTitle: "Aspose.Cells Cloud REST API を使用して Excel ファイル内の画像を更新する"

@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Solución de Gestión de Archivos de Excel Basada en la Nube – Explicación Detallada de la Funcionalidad de Copia por Lotes de la API Copiar Carpeta de Aspose.Cells Cloud"
 linktitle: "Copiar Carpeta"
 type: docs
-url: /copy-folder/
+url: /es/copy-folder/
 keywords: "Copiar Carpeta, Aspose.Cells Cloud, API REST, Almacenamiento en la Nube, Gestión de Hojas de Cálculo"
 description: "Aprenda cómo copiar carpetas en el almacenamiento de Aspose.Cells Cloud mediante una única llamada REST. Incluye el endpoint, parámetros, solicitudes de ejemplo, códigos de error y ejemplos de SDK."
 weight: 100

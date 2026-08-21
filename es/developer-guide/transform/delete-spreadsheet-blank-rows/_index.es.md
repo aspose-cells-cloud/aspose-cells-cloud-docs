@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cómo eliminar todas las filas en blanco/vacías en Excel: Guía completa para limpieza de datos"
 linktitle: "Eliminar filas en blanco"
 type: docs
-url: /delete-spreadsheet-blank-rows/
+url: /es/delete-spreadsheet-blank-rows/
 keywords: "Aspose.Cells, Excel, filas en blanco, eliminar filas, limpieza de hojas de cálculo, API"
 description: "Elimine todas las filas vacías de archivos de Excel mediante la API de Aspose.Cells Cloud. Rápida, lista para procesamiento por lotes y totalmente programable: vea ejemplos de código en C#, Java, Python y más."
 weight: 100

@@ -3,7 +3,7 @@ title: "使用 Aspose.Cells Cloud API 添加或删除工作表背景图片"
 second_title: "文档"
 linktitle: "背景"
 type: docs
-url: /worksheets/background/
+url: /zh/worksheets/background/
 keywords: "Aspose.Cells Cloud, 工作表背景, Excel API, 添加背景图片, 删除工作表背景, SDK 示例"
 description: "了解如何使用 Aspose.Cells Cloud REST API 为 Excel 工作表添加或移除背景图片。包含请求语法、Java、.NET、Python、PHP 的 SDK 示例以及错误处理方法。"
 weight: 20

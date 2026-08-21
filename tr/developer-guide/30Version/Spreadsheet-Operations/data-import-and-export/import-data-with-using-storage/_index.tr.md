@@ -3,7 +3,7 @@ title: "Depolama Kullanarak Veri İçe Aktar"
 second_title: "Doküman"
 linktype: "import-data-with-using-storage"
 type: docs
-url: /import-data-with-using-storage/
+url: /tr/import-data-with-using-storage/
 aliases:
   - /import-data-into-excel-worksheet/
   - /import-data-into-worksheet/

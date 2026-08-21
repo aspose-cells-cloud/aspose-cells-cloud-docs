@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "OleObjects"
 type: docs
 url: /ko/oleobjects/
-aliases: [/working-with-oleobjects/]
+aliases: [  /ko/working-with-oleobjects/ ]
 keywords: "OLE, 엑셀, Aspose.Cells, API, 클라우드"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크시트의 OLE 객체를 조회, 추가, 업데이트, 삭제 및 변환합니다. Java, .NET, Python, PHP, Ruby, Go, Node.js, Perl, Swift, Android용 SDK가 제공됩니다."
 weight: 100

@@ -3,8 +3,8 @@ title: "Ajouter une forme à une feuille Excel"
 second_title: "Document"
 linktitle: "Ajouter"
 type: docs
-url: /shapes/add/
-aliases: [/add-a-shape-inside-the-worksheet/]
+url: /fr/shapes/add/
+aliases: [  /fr/add-a-shape-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, ajouter une forme, Excel, API REST, SDK cloud, shapeDTO, type de dessin"
 description: "Découvrez comment ajouter des formes (arc, ligne, rectangle, etc.) à une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud v3.0. Inclut la syntaxe de requête, les paramètres requis, les étapes d’authentification et des exemples de code SDK."
 weight: 30

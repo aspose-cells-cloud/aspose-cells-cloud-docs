@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何使用 Aspose.Cells Cloud AI 翻译 API 翻译整个电子表格"
 linktitle: "翻译电子表格"
 type: docs
-url: /translate-spreadsheet/
+url: /zh/translate-spreadsheet/
 keywords: "Aspose.Cells Cloud、翻译电子表格 API、AI 翻译、电子表格翻译、targetLanguage、多工作表翻译、云电子表格处理、Aspose.Cells Cloud 翻译"
 description: "使用 Aspose.Cells Cloud AI 翻译整个 Excel 工作簿。在将文本转换为任何支持的语言时，保留公式、图表和格式。了解端点、参数、SDK 示例、限制和错误处理。"
 weight: 100

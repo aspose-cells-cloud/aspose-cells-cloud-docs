@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud – حذف فاصل صفحات أفقي (وا�
 second_title: "مستند"
 linktitle: "حذف فاصل صفحات أفقي"
 type: docs
-url: /page-breaks/delete-horizontal-page-break/
-aliases: [/delete-horizontal-page-break-inside-worksheet/]
+url: /ar/page-breaks/delete-horizontal-page-break/
+aliases: [  /ar/delete-horizontal-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud، حذف فاصل صفحات أفقي، ورقة عمل Excel، واجهة برمجة تطبيقات REST، مكتبة SDK"
 description: "احذف فاصل صفحات أفقي من ورقة عمل Excel باستخدام واجهة برمجة تطبيقات REST الخاصة بـ Aspose.Cells Cloud. تتوفر مكتبات SDK لكل من C#، Java، PHP، Ruby، Node.js، Python، Perl، Go."
 weight: 50

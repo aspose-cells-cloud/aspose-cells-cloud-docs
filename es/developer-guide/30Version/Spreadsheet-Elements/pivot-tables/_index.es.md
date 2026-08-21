@@ -3,8 +3,8 @@ title: "Trabajar con tablas dinámicas de Excel"
 second_title: "Documento"
 linktitle: "Tablas dinámicas"
 type: docs
-url: /pivottables/
-aliases: [/working-with-pivot-tables/]
+url: /es/pivottables/
+aliases: [  /es/working-with-pivot-tables/ ]
 keywords: "Excel, tabla dinámica, Aspose.Cells Cloud, API, hoja de cálculo, análisis de datos, API REST"
 description: "Guía completa sobre el uso de las API REST de Aspose.Cells Cloud para crear, recuperar, actualizar y eliminar tablas dinámicas en hojas de cálculo de Excel. Incluye referencias a SDK, llamadas de ejemplo y notas sobre versiones."
 weight: 100

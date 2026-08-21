@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cerca testo in un foglio di calcolo Excel remoto – Trova dati specifici"
 linktitle: "Cerca contenuto nel foglio di calcolo remoto"
 type: docs
-url: /search-content-in-remote-worksheet/
+url: /it/search-content-in-remote-worksheet/
 keywords: "Aspose Cells, Excel API, ricerca testo, foglio di calcolo remoto"
 description: "Cerca testo, numeri o formule in un foglio di calcolo Excel remoto utilizzando l'API Aspose.Cells Cloud. Supporta ricerche che non distinguono tra maiuscole e minuscole e file protetti da password."
 weight: 100

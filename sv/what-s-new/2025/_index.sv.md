@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Vad är nytt 2025"
 type: docs
 weight: 9
-url: /new-features/2025/
+url: /sv/new-features/2025/
 keywords: "Aspose.Cells Cloud, nya funktioner 2025, kalkylblads-API, Excel, CSV, PDF, molnkalkylblad"
 description: "Den här sidan listar de senaste Aspose.Cells Cloud-funktionerna och förbättringarna som släppts 2025, inklusive nya API:er, förbättringar och buggfixar."
 ArticleTitle: "Vad är nytt i Aspose.Cells Cloud 2025 – Senaste funktioner och förbättringar"

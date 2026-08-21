@@ -2,7 +2,7 @@
 title: "Ottieni l'area del grafico da un foglio di lavoro"
 type: docs
 url: /it/charts/area/get/
-aliases: [/it/get-chart-area-from-a-worksheet/]
+aliases: [  /it/get-chart-area-from-a-worksheet/ ]
 weight: 60
 keywords:
   - "Aspose.Cells"

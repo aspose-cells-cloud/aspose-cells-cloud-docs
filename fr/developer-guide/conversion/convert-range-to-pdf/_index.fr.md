@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment convertir des données locales de plage de feuille de calcul en fichier PDF : guide étape par étape"
 linktype: "Convert Range to PDF"
 type: docs
-url: /convert-range-to-pdf/
+url: /fr/convert-range-to-pdf/
 keywords: "Aspose.Cells Cloud, convertir une plage Excel en PDF, Excel en PDF, conversion cloud"
 description: "Convertir une plage spécifique d’un fichier Excel local en PDF à l’aide de l’API REST d’Aspose.Cells Cloud."
 weight: 100

@@ -3,7 +3,7 @@ title: "ลบ metadata จากไฟล์ Excel"
 second_title: "เอกสาร"
 linktype: "ลบโดยไม่ใช้พื้นที่จัดเก็บ"
 type: docs
-url: "/metadata/delete/"
+url: /th/metadata/delete/
 keywords: "Aspose.Cells, ลบ metadata, Excel API, คุณสมบัติเวิร์กบุ๊ก"
 description: "ลบ metadata ของเวิร์กบุ๊ก (ผู้แต่ง, ชื่อ, ข้อมูลที่ปรับแต่งเอง) ผ่าน Aspose.Cells Cloud API รวมถึง endpoint, การตรวจสอบสิทธิ์, พารามิเตอร์, ตัวอย่าง cURL และ SDK"
 weight: 55

@@ -4,7 +4,7 @@ second_title: "Aspose.Cells Cloud"
 ArticleTitle: "Unisci file Excel nel cloud – Combina fogli di calcolo online con l'API Aspose.Cells Cloud"
 linktitle: "Unisci foglio di calcolo remoto"
 type: docs
-url: /merge-remote-spreadsheet/
+url: /it/merge-remote-spreadsheet/
 keywords: "Aspose.Cells, unisci Excel, API cloud, combinazione foglio di calcolo"
 description: "Unisci cartelle di lavoro Excel archiviate nello storage cloud tramite l'API Aspose.Cells Cloud. Specifica il formato di output, la cartella di destinazione e la modalità di unione in una singola chiamata HTTPS."
 weight: 100

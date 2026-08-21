@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Så här sparar du ett kalkylark i ett annat filformat i molnlagring: Steg-för-steg-guide"
 linktype: "Spara kalkylark som"
 type: docs
-url: /save-spreadsheet-as/
+url: /sv/save-spreadsheet-as/
 keywords: "Aspose Cells, konvertering av kalkylark, spara som, API, XLSX till PDF, molnlagring, Excel till PDF, CSV-export, molnkonvertering"
 description: "Lär dig hur du sparar ett kalkylark som lagras i Aspose Cloud i ett annat format (t.ex. XLSX, PDF, CSV etc.) med Aspose.Cells Cloud Save Spreadsheet API. Inkluderar begärsyntax, parametrar, cURL-exempel och SDK-kod."
 weight: 100

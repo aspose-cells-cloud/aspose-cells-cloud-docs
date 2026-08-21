@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud 개요"
 second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud 개요: REST 우선, 언어 중립적 API 서비스로, 로컬 Office 설치 없이도 플랫폼 의존성 없이 엑셀 작업을 간단한 HTTPS 호출로 변환합니다."
 linktype: "docs"
-url: /overview/
+url: /ko/overview/
 description: "Aspose.Cells Cloud를 탐색하세요. REST 우선 API로, 엑셀 파일(XLS/XLSX)을 생성, 조작, 변환, 렌더링하고 PDF, HTML, ODS, XPS, CSV 등 다양한 형식으로 변환할 수 있습니다. 무료 체험 제공."
 keywords: "Aspose Cells, 클라우드 API, 엑셀 변환, PDF, HTML, ODS, XPS, CSV, 스프레드시트 SDK"
 weight: 10

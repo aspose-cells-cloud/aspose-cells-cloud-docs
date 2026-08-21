@@ -3,7 +3,7 @@ title: "Importar una matriz de cadenas de 2 dimensiones en una hoja de cálculo 
 second_title: "Documento"
 linktitle: "Importar una matriz de cadenas de 2 dimensiones"
 type: docs
-url: /import-a-2d-string-array-into-excel-worksheet/
+url: /es/import-a-2d-string-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-string-array-into-excel-worksheet/,

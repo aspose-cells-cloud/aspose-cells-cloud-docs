@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: Aggiungi
 type: docs
 url: /it/pivot-tables/add/
-aliases: [/it/add-a-pivot-table-in-a-worksheet/]
+aliases: [  /it/add-a-pivot-table-in-a-worksheet/ ]
 keywords: "Aggiungi tabella pivot, foglio di lavoro Excel, Aspose.Cells Cloud, REST API, SDK, tabella pivot Excel"
 description: "Utilizza l'API REST di Aspose.Cells Cloud per aggiungere una tabella pivot a un foglio di lavoro Excel. Disponibile tramite SDK per C#, Java, PHP, Python, Node.js, Android, Swift, Perl, Go."
 weight: 30

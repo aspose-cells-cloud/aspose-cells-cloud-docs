@@ -3,7 +3,7 @@ title: "CSVデータをExcelワークシートにインポートする"
 second_title: "Document"
 linktitle: "CSVデータのインポート"
 type: docs
-url: /import-CSV-data-into-excel/
+url: /ja/import-CSV-data-into-excel/
 aliases:
   - /import-CSV-data-into-worksheet/
   - /import-data/csv-data/

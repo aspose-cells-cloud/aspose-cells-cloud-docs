@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud – 가로 페이지 나누기 삭제 (REST AP
 second_title: "문서"
 linktitle: "가로 페이지 나누기 삭제"
 type: docs
-url: /page-breaks/delete-horizontal-page-break/
-aliases: [/delete-horizontal-page-break-inside-worksheet/]
+url: /ko/page-breaks/delete-horizontal-page-break/
+aliases: [  /ko/delete-horizontal-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 가로 페이지 나누기 삭제, Excel 워크시트, REST API, SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에서 가로 페이지 나누기를 삭제합니다. C#, Java, PHP, Ruby, Node.js, Python, Perl, Go용 SDK를 제공합니다."
 weight: 50

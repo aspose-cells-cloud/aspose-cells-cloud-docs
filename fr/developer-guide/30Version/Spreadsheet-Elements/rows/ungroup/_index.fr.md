@@ -3,8 +3,8 @@ title: "Dissocier des lignes dans une feuille de calcul Excel"
 second_title: "Document"
 linktitle: "Dissocier"
 type: docs
-url: /rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
+url: /fr/rows/ungroup/
+aliases: [  /fr/ungroup-rows-in-excel-worksheet/ ]
 keywords: "dissocier des lignes, Excel, Aspose.Cells Cloud, API REST, SDK, feuille de calcul"
 description: "Apprenez comment dissocier des lignes dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud et des SDK pour divers langages de programmation."
 weight: 70

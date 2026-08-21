@@ -3,8 +3,8 @@ title: "Obtenir des informations sur les lignes à partir d’une feuille Excel"
 second_title: "Document"
 linktitle: "Lignes"
 type: docs
-url: /rows/get/rows/
-aliases: [/get-row-from-a-worksheet/]
+url: /fr/rows/get/rows/
+aliases: [  /fr/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API de récupération des lignes, lignes de feuille Excel, API REST, exemple cURL, exemples de SDK, .NET, Java, Python"
 description: "Découvrez comment récupérer les informations sur les lignes à partir d’une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut l’URL du point de terminaison, les paramètres, l’authentification, les exemples cURL et de code pour les SDK C#, Java, Python, et plus encore."
 weight: 10

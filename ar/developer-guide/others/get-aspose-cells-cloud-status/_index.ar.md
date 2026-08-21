@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "الحصول على حالة خدمة Aspose.Cells Cloud"
 linktitle: "الحصول على حالة خدمة Aspose.Cells Cloud"
 type: docs
-url: /get-aspose-cells-cloud-status/
+url: /ar/get-aspose-cells-cloud-status/
 keywords: "Aspose.Cells، واجهة برمجة تطبيقات السحابة، فحص الصحة، Excel، REST"
 description: "مراقبة حالة صحة خدمة Aspose.Cells Cloud في الوقت الفعلي."
 weight: 100

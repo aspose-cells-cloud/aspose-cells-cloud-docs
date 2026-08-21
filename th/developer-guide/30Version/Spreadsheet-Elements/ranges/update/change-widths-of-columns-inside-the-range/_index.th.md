@@ -4,8 +4,8 @@ ArticleTitle: "เปลี่ยนความกว้างคอลัม�
 second_title: "เอกสาร"
 linktitle: "ความกว้างคอลัมน์"
 type: docs
-url: /ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
+url: /th/ranges/update/column-width/
+aliases: [  /th/change-widths-of-columns-inside-the-range/ ]
 keywords: "Aspose.Cells, ความกว้างคอลัมน์, REST API, Excel, SDK, ช่วงข้อมูล, คลาวด์"
 description: "เรียนรู้วิธีการเปลี่ยนความกว้างคอลัมน์ภายในช่วงข้อมูลโดยใช้ Aspose.Cells Cloud REST API หรือ SDK (C#, Java, Python เป็นต้น) รวมถึงรายละเอียด cURL, โครงสร้างคำขอ/การตอบกลับ และขั้นตอนการตรวจสอบสิทธิ์"
 weight: 74

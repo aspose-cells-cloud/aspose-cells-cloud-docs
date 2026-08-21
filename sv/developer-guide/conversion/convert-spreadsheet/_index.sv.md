@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man konverterar ett kalkylark till ett annat format: Steg-för-steg-guide"
 linktitle: "Konvertera kalkylark"
 type: docs
-url: /convert-spreadsheet/
+url: /sv/convert-spreadsheet/
 keywords: "Aspose, Aspose.Cells, konvertering av kalkylark, Excel till PDF, Excel API, molnbaserad filkonvertering"
 description: "Konvertera ett kalkylarksfil till ett annat format med Aspose.Cells Cloud API."
 weight: 100

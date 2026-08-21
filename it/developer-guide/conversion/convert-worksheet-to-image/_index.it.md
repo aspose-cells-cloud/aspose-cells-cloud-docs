@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Come convertire i dati di un foglio di calcolo locale in un file immagine: Guida passo-passo"
 linktitle: "Converti foglio di lavoro in immagine"
 type: docs
-url: /convert-worksheet-to-image/
+url: /it/convert-worksheet-to-image/
 keywords: "Aspose.Cells Cloud, conversione foglio di lavoro in immagine, converti foglio di lavoro in immagine, Excel in PNG, Excel in SVG, Excel in TIFF, Excel in JPEG, Excel in BMP, API per la conversione immagine, API REST, esportazione immagine foglio di calcolo, esempi SDK"
 description: "Guida passo-passo per convertire un foglio di calcolo Excel in formati immagine (PNG, SVG, TIFF, JPEG, BMP, ecc.) utilizzando l'API Aspose.Cells Cloud, inclusi parametri di richiesta, dettagli della risposta, codici di errore, scenari di utilizzo ed esempi di codice SDK."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Excel オンライン変換 Web API"
 linktitle: "変換"
 type: docs
-url: /conversion/
+url: /ja/conversion/
 keywords: "Aspose.Cells, Cloud API, スプレッドシート変換, Excel to PDF, Excel to CSV, Excel to JSON, REST API, SDK"
 description: "Aspose.Cells Cloud REST API を使用して、Excel の範囲、チャート、テーブル、ワークシート、またはスプレッドシート全体を PDF、画像、HTML、CSV、JSON、Markdown、XML に変換する方法を学びましょう。高速で安全、インストール不要のソリューションで、.NET、Java、Python などの SDK をサポートしています。"
 weight: 20

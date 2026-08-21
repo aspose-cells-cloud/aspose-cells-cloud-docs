@@ -1,8 +1,8 @@
 ---
 title: "从工作表中获取图表"
 type: docs
-url: /charts/get/
-aliases: [/get-chart-from-a-worksheet/]
+url: /zh/charts/get/
+aliases: [  /zh/get-chart-from-a-worksheet/ ]
 weight: 10
 keywords: "Aspose.Cells Cloud, 获取图表, 工作表, REST API, Excel, 图表 API, 图表检索, Excel 图表"
 description: "使用 Aspose.Cells Cloud REST API 从工作表中检索图表信息，包括元数据和导出格式。"

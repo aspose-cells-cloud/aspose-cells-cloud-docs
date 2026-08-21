@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Trova e Ripara Link Rotti in Excel – Verificatore di Link per Fogli di Calcolo Cloud"
 linktype: "Cerca Link Rotti nel Foglio di Calcolo"
 type: docs
-url: /search-spreadsheet-broken-links/
+url: /it/search-spreadsheet-broken-links/
 keywords: "Aspose Cells, link rotti, audit del foglio di calcolo, API Excel, foglio di calcolo cloud, verificatore di link"
 description: "Rileva e risolvi link rotti nei file Excel tramite l'API Aspose.Cells Cloud. Analizza intervalli, ottieni risultati dettagliati in formato JSON e integra con qualsiasi SDK linguistico."
 weight: 100

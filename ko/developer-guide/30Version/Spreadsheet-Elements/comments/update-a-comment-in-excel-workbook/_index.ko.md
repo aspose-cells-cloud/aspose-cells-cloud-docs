@@ -1,8 +1,8 @@
 ---
 title: "워크시트 셀 주석 업데이트"
 type: docs
-url: /comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
+url: /ko/comments/update/
+aliases: [  /ko/update-a-comment-in-excel-workbook/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, 워크시트, 셀 주석, 워크시트 주석 업데이트, comment object"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북의 셀에 대한 워크시트 주석을 업데이트합니다. 요청 세부 정보, 응답 코드, SDK 예제를 포함합니다."
 weight: 30

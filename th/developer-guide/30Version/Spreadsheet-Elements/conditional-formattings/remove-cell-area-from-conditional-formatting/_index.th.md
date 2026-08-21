@@ -1,8 +1,8 @@
 ---
 title: "ลบพื้นที่เซลล์ – เอกสารประกอบ API ของ Aspose.Cells Cloud"
 type: docs
-url: /conditional-formattings/delete-cell-area/
-aliases: [/remove-cell-area-from-conditional-formatting/]
+url: /th/conditional-formattings/delete-cell-area/
+aliases: [  /th/remove-cell-area-from-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, ลบพื้นที่เซลล์, API การจัดรูปแบบตามเงื่อนไข, Excel REST API"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อลบพื้นที่เซลล์ที่ระบุออกจากกฎการจัดรูปแบบตามเงื่อนไขในแผ่นงาน Excel ประกอบด้วยตัวอย่าง ASP.NET, Java และ Python"
 ArticleTitle: "ลบพื้นที่เซลล์ – เอกสารประกอบ API ของ Aspose.Cells Cloud"

@@ -3,8 +3,8 @@ title: "الحصول على جميع أوراق العمل"
 second_title: "Document"
 linktitle: "الكل"
 type: docs
-url: /worksheets/get-all/
-aliases: [/get-worksheet-count/]
+url: /ar/worksheets/get-all/
+aliases: [  /ar/get-worksheet-count/ ]
 keywords: "Aspose.Cells، واجهة Cloud API، الحصول على أوراق العمل، Excel، REST، SDK"
 description: "استرجاع قائمة أوراق العمل الموجودة في ملف Excel عبر واجهة Aspose.Cells Cloud REST API (النسخة 3.0). يشمل مثالًا باستخدام cURL، وأجزاء من الشيفرة البرمجية باستخدام SDKs، وتنسيق الاستجابة."
 weight: 10

@@ -4,7 +4,7 @@ ArticleTitle: "เพิ่มหลายแถวลงในเวิร์�
 second_title: "เอกสาร"
 linktype: "Rows"
 type: docs
-url: /rows/add/rows/
+url: /th/rows/add/rows/
 keywords: "Aspose.Cells Cloud, แทรกแถว, เวิร์กชีต Excel, REST API, SDK, เพิ่มหลายแถว"
 description: "เรียนรู้วิธีใช้ Aspose.Cells Cloud REST API ในการแทรกหลายแถวลงในเวิร์กชีต Excel คู่มือนี้ครอบคลุม endpoint, พารามิเตอร์คำขอ, ตัวอย่างคำสั่ง cURL และตัวอย่างการใช้งาน SDK"
 weight: 20

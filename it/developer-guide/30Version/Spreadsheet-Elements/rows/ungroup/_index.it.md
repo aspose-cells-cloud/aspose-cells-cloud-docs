@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Rimuovi raggruppamento"
 type: docs
 url: /it/rows/ungroup/
-aliases: [/it/ungroup-rows-in-excel-worksheet/]
+aliases: [  /it/ungroup-rows-in-excel-worksheet/ ]
 keywords: "Rimuovi raggruppamento righe, Excel, Aspose.Cells Cloud, REST API, SDK, foglio di calcolo"
 description: "Scopri come rimuovere il raggruppamento delle righe in un foglio di lavoro Excel utilizzando l'API REST di Aspose.Cells Cloud e gli SDK per vari linguaggi di programmazione."
 weight: 70

@@ -2,8 +2,8 @@
 title: "ส่งออกภาพ"
 second_title: "เอกสาร"
 linktype: docs
-url: /export-excel-picture-to-different-formats/
-aliases: [/export/excel-picture-to-different-formats/]
+url: /th/export-excel-picture-to-different-formats/
+aliases: [  /th/export/excel-picture-to-different-formats/ ]
 keywords: "ส่งออกภาพ, Aspose.Cells Cloud, REST API, Excel, รูปแบบภาพ, PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF"
 description: "ส่งออกภาพจาก Excel ไปยังรูปแบบภาพต่างๆ โดยใช้ Aspose.Cells Cloud REST API บริการนี้รองรับ SDK สำหรับภาษาโปรแกรมต่างๆ ได้แก่ C#, Java, PHP, Ruby, Node.js, Python, Perl, Go และ Swift"
 weight: 20

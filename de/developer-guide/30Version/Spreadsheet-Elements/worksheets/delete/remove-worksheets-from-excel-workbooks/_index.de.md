@@ -3,8 +3,8 @@ title: "Arbeitsblatt löschen"
 second_title: "Dokument"
 linktitle: "Ein Arbeitsblatt"
 type: docs
-url: /worksheets/delete-worksheet/
-aliases: [/remove-worksheets-from-excel-workbooks/]
+url: /de/worksheets/delete-worksheet/
+aliases: [  /de/remove-worksheets-from-excel-workbooks/ ]
 keywords: "Aspose.Cells Cloud, Arbeitsblatt löschen, Excel, Tabellendokument, REST-API"
 description: "Löschen Sie ein Arbeitsblatt aus einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST-API. Unterstützt SDKs für C#, Java, PHP, Ruby, Node.js, Python, Perl, Go und cURL."
 weight: 20

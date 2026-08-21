@@ -4,7 +4,7 @@ ArticleTitle: "Supprimer les doublons – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "Supprimer les doublons"
 type: docs
-url: /cells/remove/duplicates
+url: /fr/cells/remove/duplicates
 aliases: []
 keywords: "Aspose.Cells, Supprimer les doublons, API"
 description: "Supprime les valeurs en double dans une feuille de calcul, une plage ou un tableau."

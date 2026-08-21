@@ -3,7 +3,7 @@ title: "Så här uppdaterar du innehåll i ett interval från ett Excel-ark"
 second_title: "Dokument"
 linktype: "Uppdatera"
 type: docs
-url: /ranges/update/
+url: /sv/ranges/update/
 keywords: "Excel, intervaluppdatering, Aspose.Cells Cloud, REST API, kalkylark, intervallstil, intervallvärden, radhöjd, kolumnbredd"
 description: "Uppdatera intervalldata i ett Excel-ark med Aspose.Cells Cloud REST API. Ändra stilar, värden, radhöjder och kolumnbredder via stödda SDK:er."
 weight: 20

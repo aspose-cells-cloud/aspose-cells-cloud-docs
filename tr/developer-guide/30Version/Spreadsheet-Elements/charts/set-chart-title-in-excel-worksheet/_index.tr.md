@@ -1,8 +1,8 @@
 ---
 title: "Aspose.Cells Cloud API – Excel Çalışma Sayfasında Grafik Başlığı Ayarlama"
 type: docs
-url: /chart/title/add/
-aliases: [/set-chart-title-in-excel-worksheet/]
+url: /tr/chart/title/add/
+aliases: [  /tr/set-chart-title-in-excel-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells Cloud, grafik başlığı API'si, Excel grafik başlığı, REST API, SDK örnekleri"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasında grafik başlığı nasıl eklenir veya güncellenir öğrenin. cURL, SDK örnekleri, gerekli parametreler, kimlik doğrulama adımları ve hata işleme içerir."

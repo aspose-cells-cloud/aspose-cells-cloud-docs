@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何向 Excel 添加工作表 — 在指定位置插入新工作表"
 linktitle: "向电子表格添加工作表"
 type: docs
-url: /add-worksheet-to-spreadsheet/
+url: /zh/add-worksheet-to-spreadsheet/
 keywords: "excel, 添加工作表, aspose cells api, 电子表格, 云 api, 工作表类型, 工作表位置"
 description: "了解如何使用 Aspose.Cells Cloud API 以编程方式向 Excel 工作簿添加新的工作表、图表工作表或宏工作表。通过单个 REST 调用控制工作表类型、名称及插入位置。"
 weight: 100

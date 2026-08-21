@@ -3,8 +3,8 @@ title: "在 Excel 工作表中添加筛选器"
 second_title: "文档"
 linktitle: "添加筛选器"
 type: docs
-url: /autofilter/add-filter/
-aliases: [/add-a-filter-for-a-filter-column/]
+url: /zh/autofilter/add-filter/
+aliases: [  /zh/add-a-filter-for-a-filter-column/ ]
 keywords: "Aspose.Cells, 云, Excel, 自动筛选, 添加筛选器, REST API, SDK"
 description: "了解如何使用 Aspose.Cells Cloud REST API 在 Excel 工作表的列中添加自动筛选器。包含 cURL、SDK 示例和参数指南。"
 weight: 60

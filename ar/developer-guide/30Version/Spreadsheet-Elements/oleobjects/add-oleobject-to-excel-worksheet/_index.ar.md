@@ -3,8 +3,8 @@ title: "إضافة كائن OLE في ورقة عمل Excel"
 second_title: "الوثيقة"
 linktitle: "إضافة كائن OLE"
 type: docs
-url: /oleobjects/add/
-aliases: [/add-oleobject-to-excel-worksheet/]
+url: /ar/oleobjects/add/
+aliases: [  /ar/add-oleobject-to-excel-worksheet/ ]
 keywords: "إضافة كائن OLE، Excel، Aspose.Cells Cloud، REST API، SDK"
 description: "استخدم واجهة Aspose.Cells Cloud REST API لإضافة كائنات OLE إلى أوراق عمل Excel. يمكن استدعاء الواجهة مباشرةً أو عبر SDKs المُتاحة بلغات C#، Java، PHP، Ruby، Node.js، Python، Perl، و Go."
 ArticleTitle: "إضافة كائن OLE إلى ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud API"

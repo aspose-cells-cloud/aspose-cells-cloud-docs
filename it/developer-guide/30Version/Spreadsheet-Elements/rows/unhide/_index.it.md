@@ -4,7 +4,7 @@ second_title: "Documento"
 linktype: "Rivela"
 type: docs
 url: /it/rows/unhide/
-aliases: [/it/unhide-rows-in-excel-worksheet/]
+aliases: [  /it/unhide-rows-in-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, rivela righe, REST API, foglio di calcolo, .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl, Swift, Aspose.Cells Cloud REST API"
 description: "Utilizza l'API REST di Aspose.Cells Cloud per rivelare le righe in un foglio di lavoro Excel. L'API è disponibile tramite diversi SDK, tra cui .NET, Java, Python, Node.js, Ruby, Go, PHP, Perl e Swift."
 weight: 50

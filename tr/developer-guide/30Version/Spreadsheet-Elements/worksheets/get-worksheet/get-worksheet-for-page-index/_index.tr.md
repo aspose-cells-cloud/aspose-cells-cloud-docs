@@ -4,8 +4,8 @@ ArticleTitle: "Bir Çalışma Sayfası Sayfasını Dışa Aktar – Aspose.Cells
 second_title: "Belge"
 linktitle: "Sayfa"
 type: docs
-url: /worksheets/page-to-different-formats/
-aliases: [/get-worksheet-for-page-index/]
+url: /tr/worksheets/page-to-different-formats/
+aliases: [  /tr/get-worksheet-for-page-index/ ]
 keywords: "Aspose.Cells Cloud, çalışma sayfası sayfası dışa aktarma, PDF, PNG, CSV, REST API, JWT kimlik doğrulama, dosya formatları"
 description: "Aspose.Cells Cloud REST API kullanarak belirli bir çalışma sayfası sayfasını PDF, PNG, CSV ve diğer formatlara nasıl dışa aktaracağınızı öğrenin. cURL isteği, parametre kılavuzu ve birden fazla dil için SDK örneklerini içerir."
 weight: 240

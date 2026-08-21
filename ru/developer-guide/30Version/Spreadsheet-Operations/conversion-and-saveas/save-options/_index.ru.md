@@ -3,7 +3,7 @@ title: "Параметры сохранения"
 second_title: "Документ"
 linktitle: "Параметры сохранения"
 type: docs
-url: /save-options/
+url: /ru/save-options/
 keywords: "Aspose.Cells Cloud, SaveOptions, Excel, Workbook, REST API, Форматы файлов, PDF, CSV, JSON, HTTP-сжатие, Кэш диаграмм, Именованные диапазоны, Создание каталогов"
 description: "Описывает свойства SaveOptions REST API Aspose.Cells Cloud, позволяющие разработчикам настраивать поведение сохранения рабочей книги в различных форматах файлов и параметрах, таких как HTTP-сжатие, обновление кэша диаграмм и автоматическое создание каталогов."
 weight: 79

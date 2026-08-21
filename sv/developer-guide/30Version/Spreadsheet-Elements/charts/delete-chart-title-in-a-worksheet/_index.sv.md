@@ -1,8 +1,8 @@
 ---
 title: "Ta bort diagramtitel i ett kalkylblad"
 type: docs
-url: /charts/delete-chart-title/
-aliases: [/delete-chart-title-in-a-worksheet/]
+url: /sv/charts/delete-chart-title/
+aliases: [  /sv/delete-chart-title-in-a-worksheet/ ]
 weight: 150
 keywords: "Aspose.Cells, molntjänst, ta bort diagramtitel, Excel, REST, SDK"
 description: "Lär dig hur du tar bort en diagramtitel från ett Excel-kalkylblad med Aspose.Cells Cloud REST API (v4.0). Inkluderar cURL- och SDK-exempel samt felhantering."

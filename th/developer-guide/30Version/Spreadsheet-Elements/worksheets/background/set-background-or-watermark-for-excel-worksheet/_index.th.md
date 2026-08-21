@@ -4,8 +4,8 @@ ArticleTitle: "ตั้งค่าพื้นหลังในแผ่น�
 second_title: "เอกสาร"
 linktype: "เพิ่ม"
 type: docs
-url: /worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
+url: /th/worksheets/background/add/
+aliases: [  /th/set-background-or-watermark-for-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, แผ่นงาน, พื้นหลัง, REST API, SDK, เพิ่มรูปภาพ"
 description: "เรียนรู้วิธีเพิ่มรูปภาพพื้นหลัง (PNG, JPEG, BMP) ลงในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API ซึ่งรวมถึง endpoint, พารามิเตอร์ที่จำเป็น, ขั้นตอนการยืนยันตัวตน, ตัวอย่าง cURL และตัวอย่างโค้ด SDK"
 weight: 180

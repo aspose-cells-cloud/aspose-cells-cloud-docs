@@ -1,8 +1,8 @@
 ---
 title: "Hämta diagramlegend från ett kalkylblad"
 type: docs
-url: /charts/legend/get/
-aliases: [/get-chart-legend-from-a-worksheet/]
+url: /sv/charts/legend/get/
+aliases: [  /sv/get-chart-legend-from-a-worksheet/ ]
 weight: 80
 keywords: "Aspose.Cells, diagramlegend, REST API, Excel, molntjänst, hämta diagramlegend, kalkylblad, kalkylark"
 description: "Hämta legenden för ett diagram från ett specifikt kalkylblad i en Excel-arbetsbok med Aspose.Cells Cloud REST API (v3.0). Innehåller endpoint, parametrar, cURL-exempel och SDK-utdrag."

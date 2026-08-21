@@ -1,8 +1,8 @@
 ---
 title: "Legende eines Diagramms in einem Arbeitsblatt anzeigen"
 type: docs
-url: /charts/legend/show/
-aliases: [/show-chart-legend-in-a-worksheet/]
+url: /de/charts/legend/show/
+aliases: [  /de/show-chart-legend-in-a-worksheet/ ]
 weight: 100
 keywords: "Aspose.Cells Cloud, Chart-Legende-API, Excel-Diagramm-Legende, REST PUT Chart-Legende, Aspose API v3.0"
 description: "Erfahren Sie, wie Sie die Legende eines Diagramms in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API (v3.0) anzeigen. Enthält Endpunkt-Details, Parameter, ein cURL-Beispiel und SDK-Snippets."

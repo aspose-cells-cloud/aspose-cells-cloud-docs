@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Hur man exporterar ett fjärrstyrkt kalkylblad till andra format: Steg-för-steg-guide"
 linktitle: "Exportera kalkylark till format"
 type: docs
-url: /export-spreadsheet-as-format/
+url: /sv/export-spreadsheet-as-format/
 keywords: "Aspose.Cells, konvertering av kalkylark, API, export, PDF, CSV, JSON, XLSX"
 description: "Konvertera Excel-arbetsböcker lagrade i Aspose Cloud till PDF, XLSX, CSV, JSON eller HTML via en enda REST-slutpunkt. Lär dig begärsyntax, parametrar och se SDK-exempel i C#, Java, Python och mer."
 weight: 100

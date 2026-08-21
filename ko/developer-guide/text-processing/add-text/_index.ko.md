@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Excel 대량 텍스트 삽입 – 셀에 접두사, 접미사 및 사용자 정의 텍스트 추가 – 단계별 가이드"
 linktype: "AddText"
 type: docs
-url: /add-text/
+url: /ko/add-text/
 keywords: "Aspose Cells API, Excel 텍스트 추가, 대량 텍스트 삽입, Excel 접두사 접미사, 스프레드시트 텍스트 교체, Excel 자동화, 클라우드 스프레드시트 API"
 description: "Aspose.Cells Cloud를 사용해 한 번의 호출로 여러 Excel 셀에 접두사, 접미사 또는 사용자 정의 라벨을 삽입합니다. 텍스트 시작, 끝, 특정 텍스트 앞/뒤 등 원하는 위치에 삽입 가능. 범위, 워크시트 및 빈 셀 처리를 지원합니다."
 weight: 100

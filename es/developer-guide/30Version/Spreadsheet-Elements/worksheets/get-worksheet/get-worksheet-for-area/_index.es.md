@@ -3,8 +3,8 @@ title: "Exportar un área de hoja de cálculo a PNG, PDF, CSV – Aspose.Cells C
 second_title: "Documento"
 linktitle: "Área"
 type: docs
-url: /worksheets/area-to-different-formats/
-aliases: [/get-worksheet-for-area/]
+url: /es/worksheets/area-to-different-formats/
+aliases: [  /es/get-worksheet-for-area/ ]
 keywords: "Aspose.Cells, exportar área de hoja de cálculo, PNG, PDF, CSV, conversión de Excel, API REST, SDK"
 description: "Aprenda cómo exportar un rango específico de celdas de una hoja de cálculo de Excel a PNG, PDF, CSV y más de 20 formatos adicionales utilizando la API REST de Aspose.Cells Cloud o sus SDK (C#, Java, Python, …)."
 weight: 230

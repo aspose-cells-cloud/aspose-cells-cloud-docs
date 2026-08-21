@@ -3,7 +3,7 @@ title: "تحويل ملف إكسل إلى تنسيق ماركداون"
 second_title: "مستند"
 linktype: "conversion"
 type: docs
-url: /convert-excel-file-to-markdown-file/
+url: /ar/convert-excel-file-to-markdown-file/
 keywords: "Excel, Markdown, conversion, Aspose.Cells Cloud, REST API, excel to markdown conversion, aspose cells markdown api, excel markdown export"
 description: "تحويل أوراق عمل إكسل إلى تنسيق ماركداون باستخدام واجهة Aspose.Cells Cloud REST API – يتضمن مثالًا باستخدام cURL، وأمثلة لأكواد SDK، والمعلمات المطلوبة وتفاصيل المصادقة."
 weight: 100

@@ -3,7 +3,7 @@ title: "Konvertera Excel till Markdown"
 second_title: "Dokument"
 linktitle: "Excel till Markdown"
 type: docs
-url: /convert-excel-file-to-markdown-file/
+url: /sv/convert-excel-file-to-markdown-file/
 keywords: "Excel, Markdown, konvertering, Aspose.Cells Cloud, REST API, konvertering av Excel till Markdown, Aspose Cells Markdown API, export av Excel till Markdown"
 description: "Konvertera Excel-ark till Markdown med Aspose.Cells Cloud REST API – inkluderar cURL-exempel, SDK-utdrag, obligatoriska parametrar och autentiseringsinformation."
 weight: 100

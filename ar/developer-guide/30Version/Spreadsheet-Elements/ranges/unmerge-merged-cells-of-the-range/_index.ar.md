@@ -3,8 +3,8 @@ title: "إلغاء دمج الخلايا في نطاق"
 second_title: "مستند"
 linktitle: "إلغاء الدمج"
 type: docs
-url: /ranges/unmerge/
-aliases: [/unmerge-merged-cells-of-the-range/]
+url: /ar/ranges/unmerge/
+aliases: [  /ar/unmerge-merged-cells-of-the-range/ ]
 keywords: "Aspose.Cells Cloud، إلغاء دمج الخلايا، واجهة برمجة تطبيقات إكسل، نطاق ورقة العمل، واجهة برمجة تطبيقات REST"
 description: "تعلم كيفية استخدام واجهة برمجة تطبيقات Aspose.Cells Cloud لإلغاء دمج الخلايا المدمجة داخل نطاق محدد في ورقة عمل إكسل. يتضمن عنوان النهاية (Endpoint)، المعاملات، مثال على cURL وأجزاء من كود SDK لـ C#، Java، Python، والمزيد."
 weight: 20

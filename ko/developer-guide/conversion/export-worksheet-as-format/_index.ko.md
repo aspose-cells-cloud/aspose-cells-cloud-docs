@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "원격 스프레드시트 워크시트를 다른 형식으로 내보내는 방법: 단계별 가이드"
 linktype: "워크시트 내보내기"
 type: docs
-url: /export-worksheet-as-format/
+url: /ko/export-worksheet-as-format/
 keywords: "Aspose Cells, 워크시트 내보내기, 클라우드 API, PDF, PNG, CSV, 엑셀 변환"
 description: "Aspose.Cells Cloud에 저장된 워크시트를 단일 GET 요청을 통해 PDF, PNG, SVG, CSV 또는 기타 형식으로 변환합니다. C#, Java, Python 등 다양한 언어의 코드 예제를 포함합니다."
 weight: 100

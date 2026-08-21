@@ -3,8 +3,8 @@ title: "Sortera data i ett intervall på ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Sortera"
 type: docs
-url: /worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
+url: /sv/worksheets/sort-data/
+aliases: [  /sv/sort-worksheet-data/ ]
 keywords: "Aspose.Cells Cloud, Excel-sorterings-API, sortering av arkintervall, REST-API, dataSorter"
 description: "Sortera ett specifikt intervall i ett Excel-ark med Aspose.Cells Cloud REST API. Inkluderar slutpunkt, nödvändiga parametrar, autentiseringssteg, felhantering och SDK-exempel."
 weight: 20

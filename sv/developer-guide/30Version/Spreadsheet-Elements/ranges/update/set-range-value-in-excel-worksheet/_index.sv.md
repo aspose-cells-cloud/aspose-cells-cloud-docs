@@ -3,8 +3,8 @@ title: "Ställ in intervallvärde i ett Excel-arbetsblad"
 second_title: "Dokument"
 linktitle: "Ställ in värden"
 type: docs
-url: /ranges/update/values/
-aliases: [/set-range-value-in-excel-worksheet/]
+url: /sv/ranges/update/values/
+aliases: [  /sv/set-range-value-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel-API, ställ in intervallvärde, REST-API, moln-SDK, uppdatera arbetsblad"
 description: "Lär dig hur du ställer in cell- eller intervallvärde i en Excel-arbetsbok med Aspose.Cells Cloud REST API (v3.0). Inkluderar slutpunkt, parametrar, cURL-exempel, SDK-kodexempel och felhantering."
 weight: 72

@@ -4,7 +4,7 @@ ArticleTitle: "تحويل النطاق إلى PDF – واجهة برمجة تط
 second_title: "مستند"
 linktype: "ConvertRangeToPdf"
 type: docs
-url: /cells/convert/range/pdf
+url: /ar/cells/convert/range/pdf
 aliases: []
 keywords: "Aspose.Cells، تحويل النطاق إلى PDF، واجهة برمجة تطبيقات"
 description: "يُحوّل نطاقًا مُحدّدًا من جدول بيانات إلى PDF باستخدام Aspose.Cells Cloud."

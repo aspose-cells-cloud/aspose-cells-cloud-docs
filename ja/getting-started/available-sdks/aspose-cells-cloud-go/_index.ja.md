@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Aspose.Cells Cloud SDK for Go：変換、結合、分割、保護、検索、置換など"
 linktype: "Aspose.Cells Cloud SDK for Go"
 type: docs
-url: /available-sdks/aspose-cells-cloud-go/
+url: /ja/available-sdks/aspose-cells-cloud-go/
 description: "Aspose.Cells Cloud SDK for Go のインストール、インポート、使用方法を学びます。コードサンプル、認証、ベストプラクティスを含むステップ・バイ・ステップガイド。"
 weight: 30
 keywords: "Aspose.Cells Cloud Go SDK、Go Excel API、Aspose Cells Go サンプル"

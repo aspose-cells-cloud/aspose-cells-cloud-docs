@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Supprimer la protection par mot de passe Excel – Déverrouiller instantanément les mots de passe d’ouverture et de modification"
 linktitle: "Déproteger la feuille de calcul"
 type: docs
-url: /unprotect-spreadsheet/
+url: /fr/unprotect-spreadsheet/
 keywords: "déprotection, feuille de calcul, Aspose.Cells, API, Excel, suppression de mot de passe"
 description: "Supprimez les mots de passe d’ouverture et de modification des fichiers Excel de façon programmatique à l’aide de l’API Aspose.Cells Cloud de déprotection des feuilles de calcul. Prend en charge les formats .xlsx/.xls, l’authentification OAuth2 et le traitement par lots."
 weight: 100

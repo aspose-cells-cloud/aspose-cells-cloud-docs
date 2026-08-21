@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web API: Extraer texto"
 second_title: "Aspose.Cells Cloud – Código abreviado en línea"
 linktitle: "Extraer texto"
 type: docs
-url: /extract-text/
+url: /es/extract-text/
 keywords: "Aspose.Cells Cloud, extraer texto, API de Excel, extracción de texto de celdas, API REST"
 description: "Extrae subcadenas, números o caracteres de celdas de Excel mediante la API de Aspose.Cells Cloud. Admite extracción basada en texto anterior/posterior, extracción basada en posición y salida directa en un nuevo rango."
 weight: 100

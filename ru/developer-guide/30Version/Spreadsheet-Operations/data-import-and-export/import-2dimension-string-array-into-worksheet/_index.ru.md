@@ -3,7 +3,7 @@ title: "Импорт двумерного строкового массива в
 second_title: "Документ"
 linktitle: "Импорт двумерного строкового массива"
 type: docs
-url: /import-a-2d-string-array-into-excel-worksheet/
+url: /ru/import-a-2d-string-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-string-array-into-excel-worksheet/,

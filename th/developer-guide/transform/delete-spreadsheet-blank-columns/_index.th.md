@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "วิธีลบคอลัมน์ว่างใน Excel – ทำให้กระบวนการล้างคอลัมน์เป็นอัตโนมัติ"
 linktype: "ลบคอลัมน์ว่าง"
 type: docs
-url: /delete-spreadsheet-blank-columns/
+url: /th/delete-spreadsheet-blank-columns/
 keywords: "API ลบคอลัมน์ว่างใน Excel, Aspose.Cells Cloud, REST API, การล้างไฟล์ Excel, การทำให้ตารางงานเป็นอัตโนมัติ"
 description: "เรียนรู้วิธีลบคอลัมน์ว่างออกจากไฟล์ Excel โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่าง endpoint, การยืนยันตัวตน, ตัวอย่างคำขอ/การตอบกลับ และโค้ด SDK ใน C#, Java, Python และอื่นๆ"
 weight: 100

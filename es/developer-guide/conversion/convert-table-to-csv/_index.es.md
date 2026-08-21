@@ -4,7 +4,7 @@ second_title: "Documentación"
 ArticleTitle: "Cómo convertir datos de una tabla de hoja de cálculo a un archivo CSV: Guía paso a paso"
 linktitle: "Convertir tabla a CSV"
 type: docs
-url: /convert-table-to-csv/
+url: /es/convert-table-to-csv/
 keywords: "Aspose.Cells Cloud, tabla a CSV, conversión de hojas de cálculo, Excel a CSV, API, REST, exportación de datos"
 description: "Convierta rápidamente una tabla de una hoja de cálculo de Excel a un archivo CSV utilizando la API de Aspose.Cells Cloud."
 weight: 100

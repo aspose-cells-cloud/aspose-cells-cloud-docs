@@ -3,8 +3,8 @@ title: "Замена текста в книге Excel"
 second_title: "Документ"
 linktitle: "Замена в книге"
 type: docs
-url: /workbook/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /ru/workbook/replace-text/
+aliases: [  /ru/replace-text-in-a-workbook/ ]
 weight: 60
 keywords: "Aspose.Cells Cloud, замена текста, книга Excel, XLSX, ODS, REST API, электронная таблица, SDK"
 description: "Замена текста в книгах Excel (XLS, XLSX, XLSM, XLSB) и электронных таблицах OpenDocument (ODS) с использованием REST API Aspose.Cells Cloud. Доступно через cURL и широкий спектр SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go и др.)."

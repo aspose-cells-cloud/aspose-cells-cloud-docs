@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Инструмент разделения Excel — Разделение локальной электронной таблицы на файлы в 30+ форматах"
 linktype: "Разделить электронную таблицу"
 type: docs
-url: /split-spreadsheet/
+url: /ru/split-spreadsheet/
 keywords: "разделение, excel, aspose cells, API электронных таблиц, экспорт pdf, csv, json"
 description: "Разделите рабочую книгу Excel локально на отдельные файлы с помощью API Aspose.Cells Cloud. Экспортируйте в 30+ форматов (PDF, CSV, JSON, XLSX, HTML) без загрузки в облако."
 weight: 100

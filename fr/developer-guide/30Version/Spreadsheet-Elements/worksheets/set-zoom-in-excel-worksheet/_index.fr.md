@@ -3,8 +3,8 @@ title: "Définir le zoom d'une feuille Excel – Aspose.Cells Cloud API v3.0"
 second_title: "Document"
 linktitle: "Zoom"
 type: docs
-url: /worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
+url: /fr/worksheets/zoom/
+aliases: [  /fr/set-zoom-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, zoom Excel, zoom de feuille de calcul, API REST, SDK cloud, automatisation Excel"
 description: "Découvrez comment définir le zoom d'une feuille de calcul (de 10 à 400 %) à l’aide de l’API Aspose.Cells Cloud v3.0. Inclut des exemples cURL, des exemples de SDK et la gestion des erreurs."
 weight: 20

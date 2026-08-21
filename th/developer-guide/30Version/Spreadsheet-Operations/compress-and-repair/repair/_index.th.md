@@ -3,7 +3,7 @@ title: "ซ่อมแซมไฟล์ Excel"
 second_title: "เอกสาร"
 type: docs
 linktitle: "ซ่อมแซมไฟล์ Excel"
-url: /repair-excel-files/
+url: /th/repair-excel-files/
 keywords: "Aspose Cells, API ซ่อมแซม Excel, XLSX ที่เสียหาย, การกู้คืนสเปรดชีต, API บนคลาวด์"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อซ่อมแซมไฟล์ Excel ที่เสียหาย (XLS, XLSX, XLSM, XLSB, ODS) อัปโหลดไฟล์หนึ่งไฟล์หรือหลายไฟล์ เลือกรูปแบบไฟล์ผลลัพธ์ และรับไฟล์ที่ซ่อมแซมแล้วในรูปแบบ Base64 ไม่จำเป็นต้องติดตั้งโปรแกรมใดๆ"
 weight: 39

@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "รับสถานะของ Aspose.Cells Cloud"
 linktitle: "รับสถานะของ Aspose.Cells Cloud"
 type: docs
-url: /get-aspose-cells-cloud-status/
+url: /th/get-aspose-cells-cloud-status/
 keywords: "Aspose.Cells, Cloud API, การตรวจสอบสุขภาพ, Excel, REST"
 description: "ตรวจสอบสถานะสุขภาพของบริการ Aspose.Cells Cloud แบบเรียลไทม์"
 weight: 100

@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Защита файла Excel"
 type: docs
 url: /ru/protect-excel-file/
-aliases: [/ru/protect-excel-workbooks/, /ru/workbook/protect/]
+aliases: [  /ru/protect-excel-workbooks/ , /ru/workbook/protect/ ]
 keywords: "Aspose.Cells, защита Excel, API, REST, SDK"
 description: "Узнайте, как защитить рабочую книгу Excel с помощью REST API Aspose.Cells Cloud. Включает шаги аутентификации, параметры запроса и тела запроса, cURL-запрос и примеры кода SDK для C#, Java, PHP, Ruby, Node.js, Python, Perl и Go."
 weight: 30

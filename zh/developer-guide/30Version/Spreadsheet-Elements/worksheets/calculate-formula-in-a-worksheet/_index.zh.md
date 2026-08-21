@@ -3,8 +3,8 @@ title: "在 Excel 工作表中计算公式"
 second_title: "文档"
 linktitle: "计算"
 type: docs
-url: /worksheets/calculate-formula/
-aliases: [/calculate-formula-in-a-worksheet/]
+url: /zh/worksheets/calculate-formula/
+aliases: [  /zh/calculate-formula-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, 公式计算, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Swift"
 description: "使用 Aspose.Cells Cloud REST API 在 Excel 工作表中计算公式。支持多种 SDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go、Swift），并提供即用型示例。"
 weight: 20

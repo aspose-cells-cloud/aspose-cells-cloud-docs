@@ -4,8 +4,8 @@ ArticleTitle: "Aggiungi una riga vuota a un foglio di lavoro Excel utilizzando l
 second_title: "Documenti"
 linktitle: "Riga"
 type: docs
-url: /rows/add/row/
-aliases: [/add-an-empty-row-in-a-worksheet/]
+url: /it/rows/add/row/
+aliases: [  /it/add-an-empty-row-in-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, aggiungi riga vuota, foglio di lavoro, REST API, inserisci riga, foglio di calcolo cloud"
 description: "Utilizza l'API REST Aspose.Cells Cloud per inserire una riga vuota in un foglio di lavoro Excel. Supporta numerosi SDK (C#, Java, Python, Go, PHP, Ruby, Node.js, Perl, Android, Swift) per uno sviluppo rapido."
 weight: 20

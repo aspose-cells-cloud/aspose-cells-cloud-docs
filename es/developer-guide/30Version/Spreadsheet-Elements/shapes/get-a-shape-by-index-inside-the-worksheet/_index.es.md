@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Get"
 type: docs
 url: /es/shapes/get/
-aliases: [/es/get-a-shape-by-index-inside-the-worksheet/]
+aliases: [  /es/get-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API de formas de Excel, obtener forma por índice, forma de hoja de cálculo, API REST, recuperación de formas, Aspose.Cells SDK"
 description: "Recuperar una forma por su índice en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye sintaxis de solicitud, parámetros, detalles de respuesta y ejemplos de SDK."
 weight: 20

@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Proteggi un File Excel"
 type: docs
 url: /it/protect-excel-file/
-aliases: [/it/protect-excel-workbooks/, /it/workbook/protect/]
+aliases: [  /it/protect-excel-workbooks/ , /it/workbook/protect/ ]
 keywords: "Aspose.Cells, protezione Excel, API, REST, SDK"
 description: "Scopri come proteggere un workbook Excel tramite l'API REST Aspose.Cells Cloud. Include i passaggi per l'autenticazione, i parametri di query e del corpo della richiesta, la richiesta cURL e campioni di codice SDK per C#, Java, PHP, Ruby, Node.js, Python, Perl e Go."
 weight: 30

@@ -3,7 +3,7 @@ title: "Excelワークシートからすべての検証ルールを取得する"
 second_title: "Document"
 linktitle: "すべて取得"
 type: docs
-url: /validations/get-all/
+url: /ja/validations/get-all/
 keywords: "Aspose.Cells Cloud, Excel, ワークシート検証, REST API, すべての検証を取得, SDK"
 description: "Aspose.Cells Cloud REST APIを使用してExcelワークシートからすべてのワークシート検証を取得します。複数のSDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go）をサポートし、迅速な統合を実現します。"
 weight: 10

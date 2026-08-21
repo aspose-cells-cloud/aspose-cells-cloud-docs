@@ -3,8 +3,8 @@ title: "Excel çalışma sayfasından satır bilgilerini alın"
 second_title: "Belge"
 linktitle: "Satırlar"
 type: docs
-url: /rows/get/rows/
-aliases: [/get-row-from-a-worksheet/]
+url: /tr/rows/get/rows/
+aliases: [  /tr/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Satırları Al API, Excel çalışma sayfası satırları, REST API, cURL örneği, SDK örnekleri, .NET, Java, Python"
 description: "Aspose.Cells Cloud REST API (v3.0) ile bir Excel çalışma sayfasından satır bilgilerini nasıl alacağınızı öğrenin. C#, Java, Python ve daha fazlası için uç nokta, parametreler, kimlik doğrulama, cURL ve SDK kod örneklerini içerir."
 weight: 10

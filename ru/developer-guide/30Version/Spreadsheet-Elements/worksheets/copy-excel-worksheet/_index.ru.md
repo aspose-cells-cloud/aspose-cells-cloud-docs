@@ -4,7 +4,7 @@ second_title: "Документ"
 linktype: "Copy"
 type: docs
 url: /ru/worksheets/copy/
-aliases: [/copy-excel-worksheet/]
+aliases: [  /ru/copy-excel-worksheet/ ]
 keywords: "API Aspose Cells для копирования рабочего листа, REST API копирования листа Excel, копирование с помощью Aspose Cloud SDK, копирование рабочего листа в электронной таблице"
 description: "Узнайте, как скопировать рабочий лист и его форматы в новый лист с помощью REST API Aspose.Cells Cloud. Приведены примеры эндпоинта, параметров, cURL и SDK для C#, Java, Python и других языков."
 weight: 20

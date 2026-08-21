@@ -3,8 +3,8 @@ title: "Ta bort ett OLE-objekt i ett Excel-arbetsark"
 second_title: "Dokument"
 linktitle: "Ta bort"
 type: docs
-url: /oleobjects/delete/
-aliases: [/delete-a-specific-oleobject-from-excel-worksheet/]
+url: /sv/oleobjects/delete/
+aliases: [  /sv/delete-a-specific-oleobject-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, Moln, Ta bort, OLE, Objekt, Excel, arbetsark, REST, API, SDK"
 description: "Lär dig hur du tar bort ett OLE-objekt från ett Excel-arbetsark med Aspose.Cells Cloud REST API (v4.0). Inkluderar HTTPS-slutpunkt, autentiseringssteg, cURL-exempel, SDK-utdrag, felhanteringsanvisningar och länkar till nästa steg."
 weight: 50

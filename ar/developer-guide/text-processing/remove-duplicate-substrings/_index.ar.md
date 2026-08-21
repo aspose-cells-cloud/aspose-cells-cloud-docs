@@ -3,7 +3,7 @@ title: "واجهة برمجة تطبيقات Aspose.Cells Cloud لإزالة ا�
 second_title: "مستند"
 ArticleTitle: "أداة إزالة substrings المتكررة في Excel – تنظيف النصوص المتكررة في الخلايا"
 linktype: "docs"
-url: /remove-duplicate-substrings/
+url: /ar/remove-duplicate-substrings/
 keywords: "Aspose.Cells, substrings متكررة, واجهة برمجة تطبيقات Excel, تنظيف النصوص, سحابة"
 description: "قم بإزالة substrings المتكررة من خلايا Excel باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud مع الحفاظ على التنسيق والتحقق من الصحة."
 weight: 100

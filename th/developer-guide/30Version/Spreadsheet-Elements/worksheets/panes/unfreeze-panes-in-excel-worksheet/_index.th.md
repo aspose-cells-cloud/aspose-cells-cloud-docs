@@ -3,7 +3,7 @@ title: "ยกเลิกการจับช่วงข้อมูลใน
 second_title: "เอกสาร"
 linktitle: "ยกเลิกการจับช่วงข้อมูล"
 type: docs
-url: /worksheets/panes/unfreeze/
+url: /th/worksheets/panes/unfreeze/
 aliases:
   - /unfreeze-panes-in-excel-worksheet/
   - /worksheets/unfreeze-panes/

@@ -3,8 +3,8 @@ title: "Excel-Arbeitsblatt ausblenden"
 second_title: "Dokument"
 linktitle: "Ausblenden"
 type: docs
-url: /worksheets/hide/
-aliases: [/hide-excel-worksheets/]
+url: /de/worksheets/hide/
+aliases: [  /de/hide-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, Excel, Arbeitsblatt ausblenden, REST API, Tabellenkalkulation"
 description: "Schritt-für-Schritt-Anleitung zum Ausblenden eines Arbeitsblatts in einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API, einschließlich Anforderungsdetails, einem cURL-Beispiel und SDK-Code-Snippets für mehrere Sprachen."
 weight: 50

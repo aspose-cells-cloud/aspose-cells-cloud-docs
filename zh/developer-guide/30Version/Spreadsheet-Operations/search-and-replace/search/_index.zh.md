@@ -3,7 +3,7 @@ title: "在 Excel 文件中查找文本 – Aspose.Cells Cloud API"
 description: "使用 Aspose.Cells Cloud API 在 Excel 文件（XLS、XLSX、XLSM、XLSB）和 ODS 文件中搜索特定文本。包含请求详情、cURL 与 SDK 示例及错误处理。"
 keywords: "Aspose.Cells, Excel, 搜索, API, REST"
 type: docs
-url: /cells/search/
+url: /zh/cells/search/
 aliases:
   - /search/
   - /search-without-using-storage/

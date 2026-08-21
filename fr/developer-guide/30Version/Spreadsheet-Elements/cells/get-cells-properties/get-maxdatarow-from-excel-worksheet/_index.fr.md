@@ -1,7 +1,7 @@
 ---
 title: "Obtenir MaxDataRow à partir d'une feuille Excel"
 type: docs
-url: /get-maxdatarow-from-excel-worksheet/
+url: /fr/get-maxdatarow-from-excel-worksheet/
 weight: 50
 keywords: "Excel, Aspose.Cells Cloud, API REST, Get MaxDataRow, Worksheet"
 description: "Récupère l'index de la dernière ligne contenant des données dans une feuille spécifiée d’un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud."

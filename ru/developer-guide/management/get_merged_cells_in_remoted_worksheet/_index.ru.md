@@ -3,7 +3,7 @@ title: "GetMergedCellsInRemotedWorksheet"
 ArticleTitle: "Получение объединённых ячеек в удалённом листе – Aspose.Cells Cloud API"
 second_title: "Документ"
 linktype: "docs"
-url: /cells/mergedcells/get
+url: /ru/cells/mergedcells/get
 aliases: []
 keywords: "Aspose Cells, получение объединённых ячеек, удалённый лист, API"
 description: "Получает все области объединённых ячеек из удалённого листа электронной таблицы."

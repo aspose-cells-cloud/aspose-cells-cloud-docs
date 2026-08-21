@@ -1,7 +1,7 @@
 ---
 title: "获取工作表超链接"
 type: docs
-url: /hyperlinks/get/
+url: /zh/hyperlinks/get/
 keywords: "Aspose.Cells Cloud, 获取工作表超链接, Excel 超链接 API, REST, JWT 身份验证, Excel 工作表, API 端点"
 description: "使用 Aspose.Cells Cloud API (v3.0) 从 Excel 工作表中检索特定超链接。包含端点、参数、cURL 示例、身份验证详情、错误处理及 SDK 代码片段。"
 weight: 10

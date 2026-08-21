@@ -3,7 +3,7 @@ title: "Convertir un fichier Excel en différents formats"
 second_title: "Document"
 linktitle: "Convertir un classeur"
 type: docs
-url: /convert-a-spread-file-to-different-formats/
+url: /fr/convert-a-spread-file-to-different-formats/
 keywords: "conversion Excel, conversion de classeur, Aspose.Cells Cloud, API REST, PDF, CSV, JSON, Markdown, conversion de format de fichier"
 description: "Utilisez l’API REST Aspose.Cells Cloud pour convertir des classeurs Excel en divers formats tels que PDF, CSV, JSON et Markdown. L’API prend en charge plusieurs SDK pour des langages tels que C#, Java, Python, et plus encore."
 weight: 10

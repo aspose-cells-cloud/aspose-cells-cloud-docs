@@ -3,8 +3,8 @@ title: "Excel-Arbeitsblatt anzeigen"
 second_title: "Dokument"
 linktitle: "Anzeigen"
 type: docs
-url: /worksheets/unhide/
-aliases: [/unhide-excel-worksheets/]
+url: /de/worksheets/unhide/
+aliases: [  /de/unhide-excel-worksheets/ ]
 keywords: "Aspose.Cells, Arbeitsblatt anzeigen, Excel-API, Cloud-Tabellenkalkulation, REST, Sichtbarkeit des Arbeitsblatts, Excel-Arbeitsmappe"
 description: "Erfahren Sie, wie Sie die Aspose.Cells Cloud REST API verwenden, um ein Arbeitsblatt in einer Excel-Arbeitsmappe wieder anzuzeigen. Enthält Anforderungsdetails, cURL-Beispiele und SDK-Codeausschnitte für mehrere Programmiersprachen."
 weight: 60

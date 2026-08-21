@@ -3,8 +3,8 @@ title: "Замена текста в рабочем листе Excel — Aspose.
 second_title: "Документ"
 linktitle: "Замена в рабочем листе"
 type: docs
-url: /worksheets/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /ru/worksheets/replace-text/
+aliases: [  /ru/replace-text-in-a-workbook/ ]
 keywords: "Aspose.Cells, замена текста, Excel, REST API, электронная таблица, рабочий лист"
 description: "Узнайте, как заменить текст в рабочем листе Excel с помощью Aspose.Cells Cloud API (v3.0). Включает предварительные требования, аутентификацию, синтаксис запроса, пример cURL, примеры кода SDK, детали ответа и обработку ошибок."
 ArticleTitle: "Замена текста в рабочем листе Excel — Aspose.Cells Cloud API"

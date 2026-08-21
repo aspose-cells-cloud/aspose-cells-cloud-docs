@@ -3,7 +3,7 @@ title: "ワークシートの背景画像の追加または削除 – Aspose.Cel
 second_title: "ドキュメント"
 linktitle: "背景"
 type: docs
-url: /worksheets/background/
+url: /ja/worksheets/background/
 keywords: "Aspose.Cells Cloud, ワークシート背景, Excel API, 背景画像の追加, ワークシート背景の削除, SDK サンプル"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートに背景画像を追加または削除する方法を学びます。リクエスト構文、Java、.NET、Python、PHP の SDK サンプル、およびエラー処理を含みます。"
 weight: 20

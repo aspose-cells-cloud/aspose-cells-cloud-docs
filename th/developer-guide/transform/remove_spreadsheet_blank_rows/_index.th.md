@@ -4,7 +4,7 @@ ArticleTitle: "ลบแถวว่างในสเปรดชีต – Asp
 second_title: "เอกสาร"
 linktype: "ลบแถวว่างในสเปรดชีต"
 type: docs
-url: /cells/remove/blank-rows
+url: /th/cells/remove/blank-rows
 aliases: []
 keywords: "Aspose.Cells, ลบแถวว่าง, สเปรดชีต, API"
 description: "ลบแถวว่างทั้งหมดออกจากไฟล์สเปรดชีต"

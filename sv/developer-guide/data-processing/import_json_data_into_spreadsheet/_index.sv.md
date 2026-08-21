@@ -4,7 +4,7 @@ ArticleTitle: "Importera JSON-data till kalkylark – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktype: "Importera JSON-data till kalkylark"
 type: docs
-url: /cells/import/data/json
+url: /sv/cells/import/data/json
 aliases: []
 keywords: "Importera JSON, Aspose.Cells, Kalkylark, API"
 description: "Importera JSON-datafil till det lokala kalkylarket."

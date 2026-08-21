@@ -1,8 +1,8 @@
 ---
 title: "워크시트에서 차트 삭제하기"
 type: docs
-url: /charts/delete/
-aliases: [/delete-a-chart-from-a-worksheet/]
+url: /ko/charts/delete/
+aliases: [  /ko/delete-a-chart-from-a-worksheet/ ]
 weight: 40
 keywords:
   - "Aspose.Cells"

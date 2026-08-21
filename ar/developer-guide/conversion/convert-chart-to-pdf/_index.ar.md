@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيفية تحويل مخطط جدول بيانات محلي إلى ملف PDF: دليل خطوة بخطوة"
 linktitle: "تحويل المخطط إلى PDF"
 type: docs
-url: /convert-chart-to-pdf/
+url: /ar/convert-chart-to-pdf/
 keywords: "Aspose Cells, مخطط, PDF, Excel, تحويل, واجهة برمجة تطبيقات سحابية"
 description: "تصدير المخططات من ملفات Excel المحلية إلى تنسيق PDF باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST API. يدعم ملفات XLSX وXLS."
 weight: 100

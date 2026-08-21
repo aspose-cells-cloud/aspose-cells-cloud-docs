@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Traitement des données de feuille de calcul – Fusionner, découper & importer"
 linktitle: "Traitement des données"
 type: docs
-url: /data-processing/
+url: /fr/data-processing/
 keywords: "Aspose.Cells Cloud, traitement des données de feuille de calcul, fusion Excel, découpage Excel, import CSV, import JSON, API"
 description: "Guide détaillé pour l’importation de données CSV/JSON, la fusion de classeurs Excel distants et le découpage de grandes feuilles de calcul à l’aide de l’API REST Aspose.Cells Cloud, incluant des exemples de requêtes/réponses."
 weight: 30

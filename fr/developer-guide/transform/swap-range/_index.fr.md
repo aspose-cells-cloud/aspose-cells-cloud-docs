@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Échanger des colonnes, lignes et plages (v4.0)"
 second_title: "Document"
 ArticleTitle: "Échanger des données entre colonnes, lignes et cellules dans Excel"
 linktype: "docs"
-url: /swap-range/
+url: /fr/swap-range/
 keywords: "Aspose Cells, API Excel, Échanger une plage, classeur cloud"
 description: "Échangez des colonnes, des lignes ou des plages dans des fichiers Excel à l’aide de l’API Aspose.Cells Cloud. Préservez le formatage, les formules et les références de cellules en une seule requête."
 weight: 100

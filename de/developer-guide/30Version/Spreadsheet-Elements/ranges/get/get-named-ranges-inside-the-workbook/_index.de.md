@@ -3,8 +3,8 @@ title: "Benannte Bereiche in einer Excel-Arbeitsmappe abrufen"
 second_title: "Dokument"
 linktitle: "Name"
 type: docs
-url: /ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
+url: /de/ranges/get/name/
+aliases: [  /de/get-named-ranges-inside-the-workbook/ ]
 keywords: "benannte Bereiche, Excel, Aspose.Cells, Cloud-API, Arbeitsblätter"
 description: "Rufen Sie benannte Bereiche aus einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST-API ab. Enthält Anforderungsdetails, Beispiel-cURL-Befehle und SDK-Beispiele für mehrere Programmiersprachen."
 ArticleTitle: "Benannte Bereiche in einer Excel-Arbeitsmappe abrufen – Aspose.Cells Cloud API"

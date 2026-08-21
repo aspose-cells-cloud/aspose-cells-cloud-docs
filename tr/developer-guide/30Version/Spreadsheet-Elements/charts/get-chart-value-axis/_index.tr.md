@@ -1,7 +1,7 @@
 ---
 title: "Grafik Değer Ekseni'ni Al"
 type: docs
-url: /charts/value-axis/get/
+url: /tr/charts/value-axis/get/
 weight: 60
 keywords: Aspose.Cells, Grafik Değer Ekseni, REST API, Excel, Bulut SDK, Grafik Değer Ekseni'ni Al
 description: "Aspose.Cells Cloud REST API - Excel çalışma sayfasındaki bir grafiğin değer eksenini alma."

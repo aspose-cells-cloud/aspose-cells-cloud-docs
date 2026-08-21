@@ -3,8 +3,8 @@ title: "ส่งออกเวิร์กชีต – Aspose.Cells Cloud"
 second_title: "เอกสาร"
 linktitle: "เวิร์กชีต"
 type: docs
-url: /export-excel-worksheet-to-different-formats/
-aliases: [/export/excel-worksheet-to-different-formats/]
+url: /th/export-excel-worksheet-to-different-formats/
+aliases: [  /th/export/excel-worksheet-to-different-formats/ ]
 keywords: "Aspose.Cells, ส่งออกเวิร์กชีต, Excel API, PDF, CSV, TIFF, ODS, รูปแบบภาพ"
 description: "เรียนรู้วิธีการส่งออกเวิร์กชีต Excel ไปยังรูปแบบต่างๆ เช่น PDF, CSV, TIFF และอื่นๆ โดยใช้ Aspose.Cells Cloud REST API พร้อมตัวอย่าง cURL, ขั้นตอนการยืนยันตัวตนที่จำเป็น, รายละเอียดพารามิเตอร์ และการจัดการผลลัพธ์"
 weight: 20

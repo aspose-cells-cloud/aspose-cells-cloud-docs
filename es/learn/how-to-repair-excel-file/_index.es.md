@@ -2,7 +2,7 @@
 title: "Cómo reparar un archivo de Excel con Aspose.Cells Cloud"
 linktitle: "Cómo reparar un archivo de Excel"
 type: docs
-url: /how-to-repair-excel-file
+url: /es/how-to-repair-excel-file
 description: "Cómo reparar un archivo de Excel u otro archivo de hoja de cálculo con Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Hoja de cálculo, PDF, CSV, JSON, Markdown, cómo reparar un archivo de Excel u otro archivo de hoja de cálculo mediante Aspose.Cells Cloud

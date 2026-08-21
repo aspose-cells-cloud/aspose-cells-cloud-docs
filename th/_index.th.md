@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "Aspose.Cells Cloud API – แปลง ผสาน แยก และป้องกันไฟล์ Excel"
 linktitle: "ศูนย์สำหรับนักพัฒนา"
 type: docs
-url: /
+url: /th/
 description: "Aspose.Cells Cloud REST API ช่วยให้คุณสามารถแปลง ผสาน แยก ป้องกัน และประมวลผลสเปรดชีต Excel ได้อย่างครบถ้วน ใช้งานฟรี 150 ครั้งต่อเดือน มี SDK รองรับ 8 ภาษา"
 weight: 10
 keywords: "Aspose.Cells Cloud, Excel API, การแปลงสเปรดชีต, ผสาน Excel, แยก Excel, ป้องกัน Excel, SDK สเปรดชีตบนคลาวด์, REST API, การประมวลผล Excel"

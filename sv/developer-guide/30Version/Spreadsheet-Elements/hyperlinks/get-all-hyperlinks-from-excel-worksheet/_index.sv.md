@@ -1,7 +1,7 @@
 ---
 title: "Hämta alla hyperlänkar – Aspose.Cells Cloud REST API"
 type: docs
-url: /hyperlinks/get-all/
+url: /sv/hyperlinks/get-all/
 aliases:
   [/get-hyperlink-from-excel-worksheet/, /get-hyperlinks-from-excel-worksheet/]
 keywords: "Aspose.Cells, Hämta alla hyperlänkar, Excel API, REST API, Molntjänst SDK, cURL-exempel, hyperlänkar i kalkylark"

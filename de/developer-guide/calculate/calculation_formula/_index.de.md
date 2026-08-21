@@ -4,7 +4,7 @@ ArticleTitle: "Formel berechnen – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Formel berechnen"
 type: docs
-url: /cells/calculate/formula
+url: /de/cells/calculate/formula
 aliases: []
 keywords: "Aspose Cells, Formel berechnen, Tabellenkalkulation, API"
 description: "Berechnen Sie eine Formel in einer Tabellenkalkulation mithilfe der Aspose.Cells Cloud API."

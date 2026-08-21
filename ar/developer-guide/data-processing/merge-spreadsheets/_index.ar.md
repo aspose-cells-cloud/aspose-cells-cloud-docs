@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "دمج ملفات إكسل متعددة في ملف واحد – دمج دفعة لجداول البيانات إلى أكثر من 30 صيغة"
 linktype: "دمج جداول البيانات"
 type: docs
-url: /merge-spreadsheets/
+url: /ar/merge-spreadsheets/
 keywords: "Aspose.Cells، دمج جداول البيانات، واجهة برمجة تطبيقات إكسل، جدول بيانات سحابي، دمج دفعة، تحويل إلى PDF، دمج CSV، دمج ODS، مرجع واجهة برمجة التطبيقات، حزمة تطوير برمجيات (SDK)"
 description: "دمج ملفات إكسل أو CSV أو ODS المحلية المتعددة في ملف عمل واحد وتحويل الناتج إلى أكثر من 30 صيغة (PDF، HTML، إلخ) باستخدام Aspose.Cells Cloud. يشمل نقطة النهاية (endpoint)، المعاملات، دليل المصادقة، وأمثلة SDK."
 weight: 100

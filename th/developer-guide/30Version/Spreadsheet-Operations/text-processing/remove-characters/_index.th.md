@@ -3,7 +3,7 @@ title: "การลบอักขระจาก Excel – API ของ Aspos
 second_title: "เอกสาร"
 linktitle: "การลบอักขระ"
 type: docs
-url: /excel-remove-characters/
+url: /th/excel-remove-characters/
 keywords: "ลบอักขระ, Aspose.Cells, API Excel, การประมวลผลข้อความ, คลาวด์"
 description: "เรียนรู้วิธีการลบอักขระ ชุดอักขระ หรือสตริงย่อยจากแผ่นงาน Excel โดยใช้ API ของ Aspose.Cells Cloud รวมถึงโครงสร้างคำขอตัวอย่าง cURL โค้ด SDK และการจัดการข้อผิดพลาด"
 weight: 100

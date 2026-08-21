@@ -3,7 +3,7 @@ title: "Excel'den Docx'e"
 second_title: "Belge"
 linktitle: "Excel'den Docx'e"
 type: docs
-url: convert-excel-file-to-docx-file/
+url: /trconvert-excel-file-to-docx-file/
 keywords: "Excel'den Docx'e dönüştürme, Aspose.Cells Cloud, REST API, elektronik tablo dönüştürme, belge oluşturma"
 description: "Aspose.Cells Cloud REST API ile Excel elektronik tablolarını DOCX belgelerine dönüştürün. Kolay entegrasyon için birden fazla SDK ve programlama dilini destekler."
 weight: 90

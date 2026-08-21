@@ -4,7 +4,7 @@ ArticleTitle: "GetSpreadsheetStructure – Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "GetSpreadsheetStructure"
 type: docs
-url: /cells/spreadsheet/structure
+url: /it/cells/spreadsheet/structure
 aliases: []
 keywords: "Aspose.Cells, Struttura foglio di calcolo, API"
 description: "Converte strutturalmente i metadati principali, i fogli di lavoro, le tabelle, le tabelle pivot, i grafici, le forme e altre informazioni di un libro Excel in un oggetto JSON di tipo JObject."

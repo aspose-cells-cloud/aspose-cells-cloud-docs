@@ -4,7 +4,7 @@ second_title: "الوثيقة"
 ArticleTitle: "كيفية إعادة تسمية أوراق العمل في إكسل – تغيير أسماء الأوراق"
 linktype: "إعادة تسمية ورقة عمل في جدول البيانات"
 type: docs
-url: /rename-worksheet-in-spreadsheet/
+url: /ar/rename-worksheet-in-spreadsheet/
 keywords: "إعادة تسمية ورقة عمل، Aspose.Cells Cloud، واجهة برمجة تطبيقات إكسل، جدول بيانات، SDK، واجهة برمجة تطبيقات REST"
 description: "إعادة تسمية أوراق عمل إكسل بسهولة عبر واجهة برمجة تطبيقات Aspose.Cells Cloud. اعرف المعلمات المطلوبة، وشاهد أمثلة لـ cURL، واحصل على كود SDK بلغات C#، Java، Python، وغيرها."
 weight: 100

@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "وسوم صور Docker الخاصة بـ Aspose.Cells Cloud"
 linktitle: "وسوم الصور"
 type: docs
-url: /docker/tag-list/
+url: /ar/docker/tag-list/
 description: "اعثر على أحدث وسوم صور Docker الخاصة بـ Aspose.Cells Cloud لخوادم Windows Server (2016-2022) وLinux. احصل على أوامر sPull وتفاصيل البنية المعمارية وملاحظات الترقية في مكان واحد."
 weight: 30
 keywords:

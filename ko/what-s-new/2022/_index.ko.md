@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "2022년 신규 기능"
 type: docs
 weight: 90
-url: /new-features/2023/
+url: /ko/new-features/2023/
 keywords: "Aspose.Cells Cloud의 신규 기능. Microsoft Office Excel, Open Office Spreadsheet, CSV, PDF."
 description: "이 페이지에서는 최근 릴리스에서 도입된 Aspose.Cells Cloud의 가장 흥미로운 신규 기능을 설명합니다."
 kwords: Excel, Office Cloud, REST API, 스프레드시트, PDF, CSV, Json, Markdown, Aspose.Cells Cloud의 신규 기능

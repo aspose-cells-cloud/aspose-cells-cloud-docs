@@ -4,7 +4,7 @@ second title: "ドキュメント"
 article title: "クラウド上の Excel ワークシート内のリンク切れを検索・修正 – クラウド スプレッドシート リンク チェッカー"
 link title: "クラウド上のワークシートのリンク切れを検索"
 type: docs
-url: /search-broken-links-in-remote-worksheet/
+url: /ja/search-broken-links-in-remote-worksheet/
 keywords: "Aspose Cells, リンク切れ, Excel API, クラウド スプレッドシート, リンク検証"
 description: "クラウド ストレージに保存された Excel ワークシート内の外部リンクのリンク切れを検出し、修正します。Aspose.Cells Cloud API を使用して範囲をスキャンし、リンクの詳細を取得して品質チェックを自動化します。"
 weight: 100

@@ -3,8 +3,8 @@ title: "엑셀 차트 내보내기"
 second_title: "문서"
 linktype: "차트"
 type: docs
-url: /export-excel-chart-to-different-formats/
-aliases: [/export/excel-chart-to-different-formats/]
+url: /ko/export-excel-chart-to-different-formats/
+aliases: [  /ko/export/excel-chart-to-different-formats/ ]
 description: "Aspose.Cells Cloud REST API 또는 SDK를 사용하여 엑셀 차트 객체를 PNG, JPEG, PDF, SVG, TIFF, EMF, WMF 등 일반적인 형식으로 내보냅니다. 인증, cURL 예제 및 여러 언어의 코드 예제가 포함됩니다."
 keywords: "Aspose.Cells, 차트 내보내기, 엑셀 차트 내보내기, REST API, cURL, PDF, PNG, JPEG, SVG, TIFF, EMF, WMF, SDK, 차트 형식, Aspose Cells Cloud"
 weight: 20

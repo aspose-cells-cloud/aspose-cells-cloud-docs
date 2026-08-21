@@ -3,8 +3,8 @@ title: "取消隐藏 Excel 工作表中的行"
 second_title: "文档"
 linktitle: "取消隐藏"
 type: docs
-url: /rows/unhide/
-aliases: [/unhide-rows-in-excel-worksheet/]
+url: /zh/rows/unhide/
+aliases: [  /zh/unhide-rows-in-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud、Excel、取消隐藏行、REST API、电子表格、.NET、Java、Python、Node.js、Ruby、Go、PHP、Perl、Swift、Aspose.Cells Cloud REST API"
 description: "使用 Aspose.Cells Cloud REST API 取消隐藏 Excel 工作表中的行。该 API 可通过多种 SDK 访问，包括 .NET、Java、Python、Node.js、Ruby、Go、PHP、Perl 和 Swift。"
 weight: 50

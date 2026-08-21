@@ -4,7 +4,7 @@ ArticleTitle: "Split Table – Aspose.Cells Cloud API"
 second_title: "ドキュメント"
 linktitle: "テーブルの分割"
 type: docs
-url: /cells/split/table
+url: /ja/cells/split/table
 aliases: []
 keywords: "Aspose.Cells, テーブルの分割, API"
 description: "スプレッドシート内のテーブルを列の値に基づいて分割するためのAPI。"

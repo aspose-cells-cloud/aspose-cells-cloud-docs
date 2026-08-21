@@ -3,8 +3,8 @@ title: "إخفاء ورقة عمل في إكسل"
 second_title: "مستند"
 linktitle: "إخفاء"
 type: docs
-url: /worksheets/hide/
-aliases: [/hide-excel-worksheets/]
+url: /ar/worksheets/hide/
+aliases: [  /ar/hide-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud، إكسل، إخفاء ورقة عمل، واجهة برمجة تطبيقات REST، جدول بيانات"
 description: "دليل خطوة بخطوة لإخفاء ورقة عمل في ملف جدول عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST، بما في ذلك تفاصيل الطلب، مثال باستخدام cURL، وأكواد مقتطفات لعدة لغات برمجة."
 weight: 50

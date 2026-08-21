@@ -3,8 +3,8 @@ title: "Excelワークシート上の図形をインデックスで削除する"
 second_title: "Document"
 linktitle: "削除"
 type: docs
-url: /shapes/delete/
-aliases: [/delete-a-shape-by-index-inside-the-worksheet/]
+url: /ja/shapes/delete/
+aliases: [  /ja/delete-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 図形の削除, 図形インデックス, Excelワークシート, REST API, SDK"
 description: "Aspose.Cells Cloud REST APIを使用して、Excelワークシート上の図形をそのインデックスで削除します。このAPIは、複数のSDK（C#、Java、PHP、Ruby、Node.js、Python、Perl、Go）で利用可能で、さまざまなストレージオプションをサポートしています。"
 weight: 50

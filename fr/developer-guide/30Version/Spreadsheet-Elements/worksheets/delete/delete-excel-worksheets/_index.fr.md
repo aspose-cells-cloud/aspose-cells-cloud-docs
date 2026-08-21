@@ -3,8 +3,8 @@ title: "Supprimer plusieurs feuilles de calcul Excel"
 second_title: "Document"
 linktitle: "Plusieurs feuilles de calcul"
 type: docs
-url: /worksheets/delete-multiple/
-aliases: [/delete-excel-worksheets/]
+url: /fr/worksheets/delete-multiple/
+aliases: [  /fr/delete-excel-worksheets/ ]
 keywords: "Aspose.Cells Cloud, supprimer plusieurs feuilles de calcul, API Excel, API REST, v3.0, supprimer des feuilles de calcul"
 description: "Découvrez comment supprimer plusieurs feuilles de calcul à partir d’un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut un endpoint HTTPS sécurisé, les paramètres requis, un exemple cURL corrigé et des extraits de code SDK pour plusieurs langages de programmation."
 weight: 20

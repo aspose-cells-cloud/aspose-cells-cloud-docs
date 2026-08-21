@@ -1,7 +1,7 @@
 ---
 title: "مسح محتويات وتنسيقات الخلايا في ورقة عمل Excel"
 type: docs
-url: /clear-contents-and-styles-of-cells-in-excel-worksheet/
+url: /ar/clear-contents-and-styles-of-cells-in-excel-worksheet/
 weight: 50
 keywords:
   - Aspose.Cells

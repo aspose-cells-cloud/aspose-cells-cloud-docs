@@ -3,8 +3,8 @@ title: "Obtener todas las tablas dinámicas en una hoja de cálculo de Excel"
 second_title: "Document"
 linktitle: Obtener todas
 type: docs
-url: /pivot-tables/get-all/
-aliases: [/get-worksheet-pivot-tables-information/]
+url: /es/pivot-tables/get-all/
+aliases: [  /es/get-worksheet-pivot-tables-information/ ]
 keywords: "obtener todas las tablas dinámicas, API de Aspose.Cells Cloud, Excel PivotTable, API REST"
 description: "Recuperar todas las tablas dinámicas de una hoja de cálculo de Excel mediante la API de Aspose.Cells Cloud. Incluye el punto final, los parámetros, los pasos de autenticación, ejemplos con cURL y con SDK para la API de tablas dinámicas."
 weight: 20

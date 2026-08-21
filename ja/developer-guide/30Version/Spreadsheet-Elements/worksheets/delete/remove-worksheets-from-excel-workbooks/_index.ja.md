@@ -3,8 +3,8 @@ title: "ワークシートの削除"
 second_title: "Document"
 linktype: "One worksheet"
 type: docs
-url: /worksheets/delete-worksheet/
-aliases: [/remove-worksheets-from-excel-workbooks/]
+url: /ja/worksheets/delete-worksheet/
+aliases: [  /ja/remove-worksheets-from-excel-workbooks/ ]
 keywords: "Aspose.Cells Cloud, ワークシートの削除, Excel, スプレッドシート, REST API"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークブックからワークシートを削除します。C#、Java、PHP、Ruby、Node.js、Python、Perl、Go、cURL の SDK をサポートしています。"
 weight: 20

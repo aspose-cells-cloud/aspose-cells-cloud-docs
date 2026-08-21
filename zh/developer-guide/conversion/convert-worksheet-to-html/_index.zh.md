@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何使用 Aspose.Cells Cloud API 将工作表转换为 HTML"
 linktitle: "将工作表转换为 HTML"
 type: docs
-url: /convert-worksheet-to-html/
+url: /zh/convert-worksheet-to-html/
 description: "了解如何使用 Aspose.Cells Cloud API 将 Excel 工作表转换为 HTML —— 零上传、自定义字体、区域支持及错误处理。"
 keywords: "Aspose.Cells, Excel 转 HTML, 工作表转换, 云 API"
 weight: 100

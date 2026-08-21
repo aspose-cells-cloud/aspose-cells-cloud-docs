@@ -3,8 +3,8 @@ title: "Lägg till en ikonfilter i ett Excel-ark"
 second_title: "Dokument"
 linktitle: "Lägg till ikonfilter"
 type: docs
-url: /autofilter/add-icon-filter/
-aliases: [/add-an-icon-filter/,/autofilter/add-an-icon-filter/]
+url: /sv/autofilter/add-icon-filter/
+aliases: [  /sv/add-an-icon-filter/ , /sv/autofilter/add-an-icon-filter/ ]
 keywords: "Aspose.Cells Cloud, Excel, Ikonfilter, AutoFilter, REST API"
 description: "Lär dig hur du lägger till ett ikonfilter i ett Excel-ark med hjälp av Aspose.Cells Cloud REST API, inklusive begärandedetaljer, cURL-exempel, SDK-kodexempel och felhantering."
 weight: 65

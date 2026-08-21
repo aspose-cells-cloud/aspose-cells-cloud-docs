@@ -2,7 +2,7 @@
 title: "كيفية تحويل تنسيقات ملفات جداول البيانات باستخدام Aspose.Cells Cloud"
 linktitle: "كيفية تحويل تنسيقات ملفات جداول البيانات"
 type: docs
-url: /how-to-convert-file-formats
+url: /ar/how-to-convert-file-formats
 description: "كيفية تحويل تنسيقات الملفات باستخدام Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, كيفية تحويل تنسيقات الملفات عبر Aspose.Cells Cloud

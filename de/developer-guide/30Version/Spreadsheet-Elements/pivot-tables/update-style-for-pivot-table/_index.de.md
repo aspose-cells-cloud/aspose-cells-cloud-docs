@@ -3,8 +3,8 @@ title: "Stil für Pivot-Tabelle aktualisieren"
 second_title: "Dokument"
 linktitle: "Alle formatieren"
 type: docs
-url: /pivot-tables/format-all/
-aliases: [/update-style-for-pivot-table/]
+url: /de/pivot-tables/format-all/
+aliases: [  /de/update-style-for-pivot-table/ ]
 keywords: "Pivot-Tabelle, Stil aktualisieren, Aspose.Cells Cloud, REST-API, Excel, Tabellendokument, API, Pivot-Tabellenstil, alle formatieren"
 description: "Erfahren Sie, wie Sie den Stil einer gesamten Pivot-Tabelle mithilfe der Aspose.Cells Cloud REST-API aktualisieren können. Enthält Anforderungsdetails, ein cURL-Beispiel und SDK-Snippets für mehrere Programmiersprachen."
 weight: 100

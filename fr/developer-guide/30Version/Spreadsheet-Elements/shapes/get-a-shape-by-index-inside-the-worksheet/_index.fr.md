@@ -3,8 +3,8 @@ title: "Obtenir une forme par son index dans une feuille Excel"
 second_title: "Document"
 linktitle: "Obtenir"
 type: docs
-url: /shapes/get/
-aliases: [/get-a-shape-by-index-inside-the-worksheet/]
+url: /fr/shapes/get/
+aliases: [  /fr/get-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API de forme Excel, obtenir une forme par index, forme de feuille de calcul, API REST, récupération de forme, Aspose.Cells SDK"
 description: "Récupérer une forme par son index dans une feuille Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut la syntaxe de requête, les paramètres, les détails de la réponse et des exemples de SDK."
 weight: 20

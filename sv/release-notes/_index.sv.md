@@ -2,7 +2,7 @@
 title: "Utgivningsanteckningar"
 second_title: "Dokument"
 type: docs
-url: /release-notes/
+url: /sv/release-notes/
 description: "Utforska Aspose.Cells Clouds utgivningsanteckningar från 2016 till 2026, med detaljerad information om nya funktioner, förbättringar, buggfixar och API-ändringar för varje version, vilket hjälper utvecklare att hålla sig uppdaterade med plattformen för molnbaserade kalkylark."
 weight: 40
 ArticleTitle: "Aspose.Cells Cloud – Utgivningsanteckningar (2016‑2026)"

@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "다중 소스 데이터 통합 Excel 플랫폼 – Aspose.Cells Cloud 자동 데이터 가져오기 및 변환 API"
 linktype: "스프레드시트에 데이터 가져오기"
 type: docs
-url: /import-data-into-spreadsheet/
+url: /ko/import-data-into-spreadsheet/
 keywords: "Aspose Cells, 데이터 가져오기 API, CSV를 Excel로, JSON을 Excel로, XML을 Excel로, 클라우드 스프레드시트, REST API"
 description: "Aspose.Cells Cloud REST API를 사용해 CSV, JSON 또는 XML 데이터를 Excel 스프레드시트에 가져오세요. 요청 형식, 매개변수, 샘플 SDK 코드, 오류 처리 방법을 알아보세요."
 weight: 100

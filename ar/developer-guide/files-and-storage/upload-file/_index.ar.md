@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "واجهة برمجة تطبيقات رفع الملفات في Aspose.Cells Cloud – واجهة لرفع الملفات بسرعة في السحابة"
 linktype: "رفع ملف"
 type: docs
-url: /upload-file/
+url: /ar/upload-file/
 keywords: "Aspose.Cells، رفع ملف، واجهة برمجة تطبيقات Excel، التخزين السحابي، واجهة برمجة تطبيقات REST"
 description: "دليل لرفع الملفات باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud، يغطي معلمات الطلب، كود حالات HTTP، معالجة الأخطاء، وأمثلة على الكود."
 weight: 100

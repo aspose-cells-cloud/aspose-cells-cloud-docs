@@ -1,8 +1,8 @@
 ---
 title: "Uppdatera diagramrubrik i Excel-ark"
 type: docs
-url: /charts/title/update/
-aliases: [/update-chart-title-in-excel-worksheet/]
+url: /sv/charts/title/update/
+aliases: [  /sv/update-chart-title-in-excel-worksheet/ ]
 weight: 160
 keywords: Excel, Aspose.Cells, REST API, Diagramrubrik, Uppdatera, Molntjänst SDK
 description: Lär dig hur du uppdaterar en diagramrubrik i ett Excel-ark med Aspose.Cells Cloud REST API, cURL och diverse SDK:er.

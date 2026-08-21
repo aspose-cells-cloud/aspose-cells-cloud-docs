@@ -1,7 +1,7 @@
 ---
 title: "Aspose.Cells Cloud API – รับค่า MaxDataColumn ของแผ่นงาน Excel (v3.0)"
 type: docs
-url: /get-maxdatacolumn-from-excel-worksheet/
+url: /th/get-maxdatacolumn-from-excel-worksheet/
 weight: 70
 keywords: "Aspose.Cells Cloud, รับค่า MaxDataColumn, แผ่นงาน Excel, REST API, v3.0, SDK"
 description: "ดึงดัชนีคอลัมน์สูงสุดที่มีข้อมูลในแผ่นงานที่ระบุโดยใช้ Aspose.Cells Cloud REST API (v3.0) รวมรายละเอียดคำขอ ตัวอย่างการตอบกลับ และตัวอย่าง SDK"

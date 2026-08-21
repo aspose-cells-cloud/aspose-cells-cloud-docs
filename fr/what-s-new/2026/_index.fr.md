@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "Nouveautés de 2026"
 type: docs
 weight: 9
-url: /new-features/2026/
+url: /fr/new-features/2026/
 keywords: "Aspose.Cells Cloud, nouvelles fonctionnalités 2026, API de feuille de calcul, Excel, CSV, PDF, feuille de calcul cloud"
 description: "Découvrez les dernières fonctionnalités d'Aspose.Cells Cloud publiées en 2026, notamment de nouvelles API, des améliorations et des correctifs de bugs pour les feuilles de calcul, Excel, CSV, PDF, etc."
 ArticleTitle: "Nouveautés d'Aspose.Cells Cloud en 2026 – Dernières fonctionnalités et améliorations"

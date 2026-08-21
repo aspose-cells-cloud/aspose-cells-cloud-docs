@@ -3,8 +3,8 @@ title: "获取 Excel 工作表中的数据透视表"
 second_title: "Document"
 linktitle: 获取
 type: docs
-url: /pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
+url: /zh/pivot-tables/get/
+aliases: [  /zh/get-worksheet-pivot-table-information-by-index/ ]
 keywords: "Aspose.Cells, 数据透视表, Excel, REST API, 获取工作表数据透视表"
 description: "通过 Aspose.Cells Cloud REST API 从 Excel 工作表中检索数据透视表。包含请求语法、参数、身份验证、响应模式、错误处理和 SDK 示例。"
 weight: 10

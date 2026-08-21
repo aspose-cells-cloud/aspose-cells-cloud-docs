@@ -3,8 +3,8 @@ title: "รับคำอธิบายแถวจากแผ่นงาน
 second_title: "Document"
 linktitle: "แถว"
 type: docs
-url: /rows/get/row/
-aliases: [/get-row-from-a-worksheet/]
+url: /th/rows/get/row/
+aliases: [  /th/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel row API, Get Worksheet Row, REST API, .NET SDK, Java SDK, Python SDK"
 description: "ดึงข้อมูลโดยละเอียด (ความสูง รูปแบบ สถานะการซ่อน เป็นต้น) สำหรับแถวที่ระบุในแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API รวมตัวอย่าง curl ตัวอย่างโค้ด SDK และการจัดการข้อผิดพลาด"
 weight: 10

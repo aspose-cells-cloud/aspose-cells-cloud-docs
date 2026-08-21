@@ -3,8 +3,8 @@ title: "Protéger un classeur Excel avec l'API Aspose.Cells Cloud"
 second_title: "Document"
 linktitle: "Protéger un fichier Excel"
 type: docs
-url: /protect-excel-file/
-aliases: [/protect-excel-workbooks/, /workbook/protect/]
+url: /fr/protect-excel-file/
+aliases: [  /fr/protect-excel-workbooks/ , /fr/workbook/protect/ ]
 keywords: "Aspose.Cells, protection Excel, API, REST, SDK"
 description: "Découvrez comment protéger un classeur Excel via l’API REST Aspose.Cells Cloud. Inclut les étapes d’authentification, les paramètres de requête et de corps, la requête cURL ainsi que des exemples de code pour les SDK C#, Java, PHP, Ruby, Node.js, Python, Perl et Go."
 weight: 30

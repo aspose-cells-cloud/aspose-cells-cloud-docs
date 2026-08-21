@@ -4,8 +4,8 @@ second_title: "وثيقة"
 ArticleTitle: "دليل تشغيل Aspose.Cells Cloud عبر Docker"
 linktitle: "Docker"
 type: docs
-url: /docker-developer-guide/
-aliases: [/docker/, /docker/run/]
+url: /ar/docker-developer-guide/
+aliases: [  /ar/docker/ , /ar/docker/run/ ]
 description: "نشر Aspose.Cells Cloud كحاوية Docker على بنية تحتية خاصة أو داخلية، مما يمكّن من معالجة جداول البيانات (Excel وPDF وCSV وJSON وMarkdown) دون استخدام السحابة العامة الخاصة بـ Aspose."
 keywords:
   [

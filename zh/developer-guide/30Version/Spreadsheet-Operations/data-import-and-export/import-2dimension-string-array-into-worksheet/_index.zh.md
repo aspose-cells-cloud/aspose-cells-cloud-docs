@@ -3,7 +3,7 @@ title: "将二维字符串数组导入 Excel 工作表"
 second_title: "文档"
 linktitle: "导入二维字符串数组"
 type: docs
-url: /import-a-2d-string-array-into-excel-worksheet/
+url: /zh/import-a-2d-string-array-into-excel-worksheet/
 aliases:
   [
     /import-2dimension-string-array-into-excel-worksheet/,

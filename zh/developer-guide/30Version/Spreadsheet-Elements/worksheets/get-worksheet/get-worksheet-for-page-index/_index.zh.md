@@ -4,8 +4,8 @@ articleTitle: "导出工作表页面 – Aspose.Cells Cloud API 参考"
 secondTitle: "文档"
 linkTitle: "页面"
 type: docs
-url: /worksheets/page-to-different-formats/
-aliases: [/get-worksheet-for-page-index/]
+url: /zh/worksheets/page-to-different-formats/
+aliases: [  /zh/get-worksheet-for-page-index/ ]
 keywords: "Aspose.Cells Cloud, 工作表页面导出, PDF, PNG, CSV, REST API, JWT 身份验证, 文件格式"
 description: "了解如何使用 Aspose.Cells Cloud REST API 将特定工作表页面导出为 PDF、PNG、CSV 等格式。包含 cURL 请求示例、参数说明以及多种语言的 SDK 示例。"
 weight: 240

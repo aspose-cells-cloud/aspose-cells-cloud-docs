@@ -3,8 +3,8 @@ title: "Excel から TIFF への変換"
 second_title: "ドキュメント"
 linketitle: "Excel から TIFF への変換"
 type: docs
-url: /convert-excel-file-to-tiff-file/
-aliases: [/convert-excel-file-to-tiff-in-cloud/, /convert/excel-to-tiff/]
+url: /ja/convert-excel-file-to-tiff-file/
+aliases: [  /ja/convert-excel-file-to-tiff-in-cloud/ , /ja/convert/excel-to-tiff/ ]
 keywords: "Aspose.Cells Cloud, Excel から TIFF への変換, REST API, cURL, SDK, .NET, Java, Python, 画像エクスポート"
 description: "Aspose.Cells Cloud API を使用して Excel ワークブックを高品質な TIFF 画像に変換する方法を学びます。詳細な cURL コマンド、SDK のサンプル (C#, Java, Python など)、認証手順、エラー処理を解説します。"
 weight: 90

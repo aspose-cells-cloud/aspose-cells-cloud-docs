@@ -3,8 +3,8 @@ title: "使用 Aspose.Cells Cloud API 在 Excel 中自动调整列宽 — 快速
 second_title: "文档"
 linktitle: "列"
 type: docs
-url: /worksheets/autofit/column/
-aliases: [/autofit-single-column-of-worksheet/]
+url: /zh/worksheets/autofit/column/
+aliases: [  /zh/autofit-single-column-of-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 自动调整列宽, Excel API, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "了解如何使用 Aspose.Cells Cloud REST API 自动调整 Excel 工作表中单列或列范围的宽度。包含 cURL、SDK 示例（C#、Java、Python 等）以及完整的请求/响应详情。"
 weight: 10

@@ -1,7 +1,7 @@
 ---
 title: "Diagrammwertachse abrufen"
 type: docs
-url: /charts/value-axis/get/
+url: /de/charts/value-axis/get/
 weight: 60
 keywords: Aspose.Cells, Diagrammwertachse, REST API, Excel, Cloud SDK, Diagrammwertachse abrufen
 description: "Aspose.Cells Cloud REST API – Abrufen der Wertachse eines Diagramms in einem Excel-Arbeitsblatt."

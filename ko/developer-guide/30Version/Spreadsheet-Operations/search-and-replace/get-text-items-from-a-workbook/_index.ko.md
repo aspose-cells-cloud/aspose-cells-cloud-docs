@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud API를 사용하여 Excel 워크북에서 텍�
 second_title: "문서"
 linktitle: "워크북에서 가져오기"
 type: docs
-url: /workbook/get-text-items/
-aliases: [/get-text-items-from-a-workbook/]
+url: /ko/workbook/get-text-items/
+aliases: [  /ko/get-text-items-from-a-workbook/ ]
 weight: 10
 keywords: "Excel, Aspose.Cells Cloud, REST API, 스프레드시트, 텍스트 항목 가져오기, 워크북"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크북에서 텍스트 항목을 검색합니다. C#, Java, Python, PHP, Ruby, Go, Node.js, Perl, Swift SDK를 통해 사용 가능합니다."

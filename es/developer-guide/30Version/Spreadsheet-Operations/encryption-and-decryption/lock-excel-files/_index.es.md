@@ -3,8 +3,8 @@ title: "Bloquear archivos de Excel"
 second_title: "Documento"
 linktitle: "Bloquear archivos de Excel"
 type: docs
-url: /lock-excel-files/
-aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+url: /es/lock-excel-files/
+aliases: [  /es/lock/without-storage/ , /es/lock/ , /es/lock/without-using-storage/ ]
 keywords: "Bloquear, Excel, API, Aspose.Cells, Cloud, REST, Libro de trabajo, Hoja de cálculo, SDK"
 description: "Aprenda cómo bloquear libros de Excel mediante la API REST de Aspose.Cells Cloud (v3.0). Incluye el endpoint HTTPS, autenticación, solicitud cURL, esquema de respuesta y ejemplos de código SDK para C#, Java, Python y más."
 ArticleTitle: "Bloquear archivos de Excel – Documentación de la API de Aspose.Cells Cloud"

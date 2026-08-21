@@ -3,8 +3,8 @@ title: "设置 Excel 工作表缩放比例 – Aspose.Cells Cloud API v3.0"
 second_title: "文档"
 linktitle: "缩放"
 type: docs
-url: /worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
+url: /zh/worksheets/zoom/
+aliases: [  /zh/set-zoom-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel 缩放, 工作表缩放, REST API, 云 SDK, Excel 自动化"
 description: "了解如何使用 Aspose.Cells Cloud API v3.0 设置工作表缩放比例（10%–400%）。包含 cURL 和 SDK 示例及错误处理方法。"
 weight: 20

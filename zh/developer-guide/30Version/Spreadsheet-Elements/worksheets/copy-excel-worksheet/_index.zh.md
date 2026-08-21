@@ -3,8 +3,8 @@ title: "从另一张工作表复制内容和格式"
 second_title: "文档"
 linktitle: "复制"
 type: docs
-url: /worksheets/copy/
-aliases: [/copy-excel-worksheet/]
+url: /zh/worksheets/copy/
+aliases: [  /zh/copy-excel-worksheet/ ]
 keywords: "Aspose Cells 复制工作表 API、Excel 复制工作表 REST、Aspose Cloud SDK 复制、电子表格复制工作表"
 description: "了解如何使用 Aspose.Cells Cloud REST API 将工作表及其格式复制到新工作表中。包含端点、参数、cURL 和适用于 C#、Java、Python 等语言的 SDK 示例。"
 weight: 20

@@ -4,7 +4,7 @@ ArticleTitle: "Поиск всех текстовых элементов в эл
 second_title: "Документ"
 linktitle: "Поиск всех текстовых элементов в электронной таблице"
 type: docs
-url: /cells/search/content/all-textitems
+url: /ru/cells/search/content/all-textitems
 aliases: []
 keywords: "Aspose.Cells, поиск, текстовые элементы, API"
 description: "Выполните поиск всех текстовых элементов в файле электронной таблицы с использованием Aspose.Cells Cloud API."

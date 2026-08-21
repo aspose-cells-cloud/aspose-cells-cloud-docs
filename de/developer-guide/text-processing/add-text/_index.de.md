@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Massenhafte Texteinbindung für Excel – Fügt Präfixe, Suffixe und benutzerdefinierten Text zu Zellen hinzu – Schritt-für-Schritt-Anleitung"
 linktitle: "AddText"
 type: docs
-url: /add-text/
+url: /de/add-text/
 keywords: "Aspose Cells API, Text zu Excel hinzufügen, Massen-Texteinbindung, Präfix-Suffix-Excel, Textersetzung in Tabellenkalkulationen, Excel-Automatisierung, Cloud-Tabellenkalkulations-API"
 description: "Fügen Sie mit Aspose.Cells Cloud Präfixe, Suffixe oder benutzerdefinierte Bezeichnungen in viele Excel-Zellen mit einem einzigen Aufruf hinzu. Wählen Sie zwischen Einfügen am Anfang, am Ende, vor oder nach einem bestimmten Text. Unterstützt Bereichs-, Arbeitsblatt- und Leerzellenbehandlung."
 weight: 100

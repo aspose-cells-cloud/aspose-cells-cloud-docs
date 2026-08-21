@@ -4,8 +4,8 @@ second_title: "文档"
 ArticleTitle: "如何运行 Aspose.Cells Cloud Docker 容器"
 LinkTitle: "Docker 容器"
 type: docs
-url: /getting-started/how-to-run-docker-container/
-aliases: [/how-to-run-docker-container/]
+url: /zh/getting-started/how-to-run-docker-container/
+aliases: [  /zh/how-to-run-docker-container/ ]
 description: "了解如何在 Windows 或 Linux 上拉取、配置并运行 Aspose.Cells Cloud Docker 容器。包含 Docker‑Compose YAML 配置、许可证设置、端口映射及故障排除建议。"
 weight: 100
 keywords:

@@ -1,8 +1,8 @@
 ---
 title: "Hücre Alanını Sil – Aspose.Cells Cloud API Dokümantasyonu"
 type: docs
-url: /conditional-formattings/delete-cell-area/
-aliases: [/remove-cell-area-from-conditional-formatting/]
+url: /tr/conditional-formattings/delete-cell-area/
+aliases: [  /tr/remove-cell-area-from-conditional-formatting/ ]
 keywords: "Aspose.Cells Cloud, Hücre Alanını Sil, Koşullu Biçimlendirme API'si, Excel REST API"
 description: "Aspose.Cells Cloud REST API'sini kullanarak bir Excel çalışma sayfasındaki koşullu biçimlendirmeden belirli bir hücre alanını silin. ASP.NET, Java ve Python örneklerini içerir."
 ArticleTitle: "Hücre Alanını Sil – Aspose.Cells Cloud API Dokümantasyonu"

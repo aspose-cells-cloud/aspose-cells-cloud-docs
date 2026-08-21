@@ -3,8 +3,8 @@ title: "คัดลอกช่วงข้อมูลในแผ่นงา
 second_title: "เอกสาร"
 linktitle: "คัดลอก"
 type: docs
-url: /ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+url: /th/ranges/copy/
+aliases: [  /th/copy-range-in-a-worksheet-with-paste-options/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, คัดลอกช่วงข้อมูล, แผ่นงาน, ตัวเลือกการวาง"
 description: "ใช้ Aspose.Cells Cloud REST API เพื่อคัดลอกช่วงข้อมูลภายในแผ่นงานของสมุด Excel โดยรองรับตัวเลือกการวางแบบเต็มรูปแบบ รวมตัวอย่าง SDK สำหรับภาษาโปรแกรมต่างๆ หลายภาษา"
 weight: 20

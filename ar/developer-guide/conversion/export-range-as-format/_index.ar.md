@@ -4,7 +4,7 @@ second title: "وثيقة"
 ArticleTitle: "كيفية تصدير نطاق جدول بيانات موجود في السحابة إلى تنسيقات أخرى: دليل خطوة بخطوة"
 linktitle: "تصدير النطاق كتنسيق"
 type: docs
-url: /export-range-as-format/
+url: /ar/export-range-as-format/
 keywords: "Aspose Cells، تصدير نطاق Excel، PDF، PNG، CSV، واجهة برمجة تطبيقات السحابة، تحويل جداول البيانات"
 description: "تعرّف على كيفية تحويل نطاق Excel محدّد موجود في Aspose Cells Cloud إلى تنسيقات مثل PDF أو PNG أو CSV أو تنسيقات أخرى. يشمل التفاصيل الخاصة بنقطة النهاية (endpoint)، والمُعاملات (parameters)، وطلبات مثال، ومعالجة الاستجابات، ومعلومات الأخطاء."
 weight: 100

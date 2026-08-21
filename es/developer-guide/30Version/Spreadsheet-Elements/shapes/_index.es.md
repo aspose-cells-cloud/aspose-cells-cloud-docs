@@ -3,8 +3,8 @@ title: "Trabajar con formas de Excel"
 second_title: "Documento"
 linktitle: "Formas"
 type: docs
-url: /shapes/
-aliases: ["/working-with-shapes/", "/working-with-images/"]
+url: /es/shapes/
+aliases: [  /es/working-with-shapes/ , /es/working-with-images/ ]
 keywords: "formas de Excel, Aspose.Cells Cloud, API, hoja de cálculo, operaciones con formas"
 description: "Aprenda a gestionar formas de Excel mediante la API de Aspose.Cells Cloud: recupere, agregue, elimine y convierta formas con soporte de SDK."
 weight: 100

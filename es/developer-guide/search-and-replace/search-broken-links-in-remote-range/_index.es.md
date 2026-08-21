@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Buscar y solucionar enlaces rotos en un rango remoto de Excel – Comprobador de enlaces de hojas de cálculo en la nube"
 linktitle: "Buscar enlaces rotos en un rango remoto"
 type: docs
-url: /search-broken-links-in-remote-range/
+url: /es/search-broken-links-in-remote-range/
 keywords: "Aspose, Cells, enlaces rotos, API, rango de Excel, validación, nube, hoja de cálculo, referencia externa, comprobador"
 description: "Utilice la API de Aspose.Cells Cloud para escanear un rango específico de Excel en busca de enlaces externos rotos, fórmulas no válidas o fuentes de datos ausentes. Segura, rápida y basada en la nube."
 weight: 100

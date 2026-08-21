@@ -3,8 +3,8 @@ title: "ส่งออกวัตถุ OLE – API คลาวด์ขอ�
 second_title: "เอกสาร"
 linktitle: "วัตถุ OLE"
 type: docs
-url: /export-excel-ole-object/
-aliases: [/export/excel-ole-object/]
+url: /th/export-excel-ole-object/
+aliases: [  /th/export/excel-ole-object/ ]
 keywords: "Aspose.Cells, วัตถุ OLE, การส่งออก, Excel, API คลาวด์, PDF, PNG, DOCX, PPTX"
 description: "ส่งออกวัตถุ OLE จากสมุดงาน Excel โดยใช้ API คลาวด์ของ Aspose.Cells ศึกษารูปแบบคำขอ พารามิเตอร์ ตัวอย่าง cURL และการจัดการข้อผิดพลาด"
 weight: 20

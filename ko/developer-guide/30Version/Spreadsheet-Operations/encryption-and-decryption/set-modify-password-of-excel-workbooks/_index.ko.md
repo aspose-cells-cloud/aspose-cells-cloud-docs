@@ -3,7 +3,7 @@ title: "Excel 워크시트의 암호 보호 설정 수정하기"
 second_title: "문서"
 linktitle: "Excel 파일 암호 수정하기"
 type: docs
-url: /workbook/password/modify/
+url: /ko/workbook/password/modify/
 aliases:
   - /set-modify-password-of-excel-workbooks/
   - /workbook/modify-password/

@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud AI — API декомпозиции пользова�
 second_title: "Документ"
 ArticleTitle: "Как преобразовать пользовательские цели в последовательные планы действий с помощью API декомпозиции задач Aspose.Cells Cloud AI"
 linktype: "docs"
-url: /decompose-user-task/
+url: /ru/decompose-user-task/
 keywords: "Aspose.Cells AI, API декомпозиции задач, планирование задач по методу SMART, импорт в Redmine, автоматизация проектов"
 description: "Преобразуйте свободно сформулированные цели в последовательные списки задач, соответствующие критериям SMART, с оценкой времени в часах, используя Aspose.Cells Cloud AI. Получите CSV/XLSX-файлы для импорта в Redmine, Jira или Azure DevOps одним PUT-запросом."
 weight: 100

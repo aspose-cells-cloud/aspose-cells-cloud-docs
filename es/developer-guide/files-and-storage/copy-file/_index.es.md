@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Solución de gestión de archivos de Excel basada en la nube – Explicación detallada de la funcionalidad de copia por lotes de la API Copy File de Aspose.Cells"
 linktitle: "Copiar archivo"
 type: docs
-url: /copy-file/
+url: /es/copy-file/
 keywords: "Aspose.Cells, API CopyFile, copia de archivo de Excel, almacenamiento en la nube, API REST"
 description: "Aprenda a utilizar la API CopyFile de Aspose.Cells Cloud para duplicar archivos de Excel de forma eficiente y gestionarlos entre distintas ubicaciones de almacenamiento."
 weight: 100

@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Modifier la casse des mots (Majuscule, minuscule,
 ArticleTitle: "Convertisseur de casse Excel – Majuscule, minuscule, césure et casse phrase"
 linktype: "Casse des mots"
 type: docs
-url: /change-word-case/
+url: /fr/change-word-case/
 keywords: "API de modification de la casse des mots, Aspose.Cells, conversion de casse Excel, majuscule, minuscule, césure, casse phrase, mise en forme du texte"
 description: "Convertissez facilement la casse des mots dans des fichiers Excel à l'aide de l'API Aspose.Cells Cloud. Prend en charge Majuscule, Minuscule, Césure et Casse phrase. Obtenez des exemples de code en C#, Java, Python et plus encore."
 weight: 100

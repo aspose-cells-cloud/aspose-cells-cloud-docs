@@ -3,8 +3,8 @@ title: "إلغاء تجميع الصفوف في ورقة عمل Excel"
 second_title: "مستند"
 linktitle: "إلغاء التجميع"
 type: docs
-url: /rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
+url: /ar/rows/ungroup/
+aliases: [  /ar/ungroup-rows-in-excel-worksheet/ ]
 keywords: "إلغاء تجميع الصفوف، Excel، Aspose.Cells Cloud، REST API، SDK، جدول بيانات"
 description: "تعلم كيفية إلغاء تجميع الصفوف في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API وSDKs للغات البرمجة المختلفة."
 weight: 70

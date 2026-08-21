@@ -3,7 +3,7 @@ title: "Excelファイルのバッチ処理：変換、ロック、保護、分�
 second_title: "Document"
 linktitle: "Excelファイルのバッチ処理"
 type: docs
-url: /batch/
+url: /ja/batch/
 keywords: "バッチ処理、Excel、変換、ロック、保護、分割、アンロック、Aspose.Cells Cloud API、APIリファレンス、バッチ操作"
 description: "Aspose.Cells Cloud APIでは、複数のExcelファイルを一度のリクエストで変換、ロック、保護、分割、アンロックするバッチ処理が可能です。詳細なAPI仕様と、Android、C#、Go、Java、NodeJS、Perl、PHP、Python、Ruby、Swift向けのSDKサポートを提供します。"
 weight: 35

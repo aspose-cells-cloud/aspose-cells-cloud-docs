@@ -3,7 +3,7 @@ title: "إنشاء مصنف Excel فارغ"
 second_title: "مستند"
 linktitle: "مصنف فارغ"
 type: docs
-url: /create-an-empty-excel-file/
+url: /ar/create-an-empty-excel-file/
 aliases:
   [
     /create-an-empty-excel-workbook/,

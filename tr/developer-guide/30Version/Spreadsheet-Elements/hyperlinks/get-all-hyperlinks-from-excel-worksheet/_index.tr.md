@@ -1,7 +1,7 @@
 ---
 title: "Tüm Bağlantıları Al – Aspose.Cells Cloud REST API"
 type: docs
-url: /hyperlinks/get-all/
+url: /tr/hyperlinks/get-all/
 aliases:
   [/get-hyperlink-from-excel-worksheet/, /get-hyperlinks-from-excel-worksheet/]
 keywords: "Aspose.Cells, Tüm Bağlantıları Al, Excel API, REST API, Bulut SDK, cURL Örneği, Elektronik Tablo Bağlantıları"

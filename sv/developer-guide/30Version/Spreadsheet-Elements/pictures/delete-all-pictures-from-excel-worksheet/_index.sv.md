@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Clear"
 type: docs
 url: /sv/pictures/clear/
-aliases: [/sv/delete-all-pictures-from-excel-worksheet/]
+aliases: [  /sv/delete-all-pictures-from-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, ta bort alla bilder, arbetsblad, REST API, rensa bilder"
 description: "Lär dig hur du tar bort alla bilder från ett Excel-arbetsblad med Aspose.Cells Cloud REST API, inklusive exempel med cURL och SDK:er."
 weight: 60

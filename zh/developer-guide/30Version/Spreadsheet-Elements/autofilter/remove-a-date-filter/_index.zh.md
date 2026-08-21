@@ -3,7 +3,7 @@ title: "删除日期筛选器 – Aspose.Cells Cloud"
 second_title: "文档"
 linktitle: "删除日期筛选器"
 type: docs
-url: /autofilter/delete-date-filter/
+url: /zh/autofilter/delete-date-filter/
 aliases:
   - /remove-a-date-filter/
   - /autofilter/delete-a-date-filter/

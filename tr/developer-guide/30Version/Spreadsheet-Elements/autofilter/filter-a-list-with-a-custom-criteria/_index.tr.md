@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "Özel filtre ekle"
 type: docs
 url: /tr/autofilter/add-custom-filter/
-aliases: [/tr/filter-a-list-with-a-custom-criteria/,/tr/autofilter/add-a-custom-filter/]
+aliases: [  /tr/filter-a-list-with-a-custom-criteria/ , /tr/autofilter/add-a-custom-filter/ ]
 keywords: "Excel, özel filtre, Aspose.Cells Cloud, REST API, otomatik filtre, çalışma sayfası, özel kriter"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasına özel bir filtre nasıl ekleyeceğinizi öğrenin. İstek detaylarını, cURL örneğini ve birden fazla programlama dilinde SDK kodu snippet’lerini içerir."
 weight: 65

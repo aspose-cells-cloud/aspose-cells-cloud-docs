@@ -4,7 +4,7 @@ secondtitle: "Belge"
 ArticleTitle: "Excel için Toplu Metin Ekleme – Önek, Sonek ve Özel Metinleri Hücrelere Ekleme – Adım Adım Rehber"
 linktype: "AddText"
 type: docs
-url: /add-text/
+url: /tr/add-text/
 keywords: "Aspose Cells API, Excel metin ekleme, toplu metin ekleme, Excel önek sonek, spreadsheet metin değiştirme, Excel otomasyonu, bulut spreadsheet API"
 description: "Aspose.Cells Cloud ile önekler, sonekler veya özel etiketleri tek bir çağrıda birçok Excel hücresine ekleyin. Başlangıç, bitiş veya herhangi bir metinden önce/sonra seçeneğini kullanın. Aralık, çalışma sayfası ve boş hücre işleme desteğini sağlar."
 weight: 100

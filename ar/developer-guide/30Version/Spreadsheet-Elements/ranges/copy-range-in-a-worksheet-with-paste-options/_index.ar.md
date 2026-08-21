@@ -3,8 +3,8 @@ title: "نسخ نطاق في ورقة عمل مع خيارات اللصق"
 second_title: "مستند"
 linktitle: "نسخ"
 type: docs
-url: /ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+url: /ar/ranges/copy/
+aliases: [  /ar/copy-range-in-a-worksheet-with-paste-options/ ]
 keywords: "Aspose.Cells Cloud، واجهة برمجة تطبيقات REST، Excel، نسخ نطاق، ورقة عمل، خيارات اللصق"
 description: "استخدم واجهة برمجة تطبيقات Aspose.Cells Cloud REST لنسخ نطاق داخل ورقة عمل Excel مع دعم كامل لخيارات اللصق. يشمل أمثلة SDK لعدة لغات برمجة."
 weight: 20

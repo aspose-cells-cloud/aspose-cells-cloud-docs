@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Come convertire un foglio di calcolo locale in un file PDF: Guida passo-passo"
 linktitle: "Converti foglio in PDF"
 type: docs
-url: /convert-worksheet-to-pdf/
+url: /it/convert-worksheet-to-pdf/
 keywords: "Aspose.Cells, Excel in PDF, conversione foglio, API REST, conversione cloud, PDF foglio di calcolo, endpoint API, generazione PDF"
 description: "Usa l'API Aspose.Cells Cloud per convertire rapidamente e in modo sicuro un foglio da un file Excel locale in un documento PDF."
 weight: 100

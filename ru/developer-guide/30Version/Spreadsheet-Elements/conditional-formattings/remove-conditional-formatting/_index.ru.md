@@ -1,7 +1,7 @@
 ---
 title: "Удаление условного форматирования – Справочник по API Aspose.Cells Cloud"
 type: docs
-url: /conditional-formattings/delete/
+url: /ru/conditional-formattings/delete/
 aliases:
   - /remove-conditional-formatting/
 keywords: "Aspose.Cells, условное форматирование, удаление, API, Excel, облачные сервисы"

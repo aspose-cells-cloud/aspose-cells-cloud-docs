@@ -4,7 +4,7 @@ ArticleTitle: "Mehrere Zeilen zu einem Excel-Arbeitsblatt mit der Aspose.Cells C
 second_title: "Dokument"
 linktype: "Rows"
 type: docs
-url: /rows/add/rows/
+url: /de/rows/add/rows/
 keywords: "Aspose.Cells Cloud, Zeilen einfügen, Excel-Arbeitsblatt, REST API, SDK, mehrere Zeilen hinzufügen"
 description: "Erfahren Sie, wie Sie die Aspose.Cells Cloud REST API verwenden, um mehrere Zeilen in ein Excel-Arbeitsblatt einzufügen. Dieser Leitfaden behandelt den Endpunkt, die Anforderungsparameter, Beispiels cURL-Befehle und SDK-Nutzungsbeispiele."
 weight: 20

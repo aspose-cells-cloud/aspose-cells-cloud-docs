@@ -3,8 +3,8 @@ title: "Excelワークシートに図形を追加する"
 second_title: "Document"
 linktitle: "Add"
 type: docs
-url: /shapes/add/
-aliases: [/add-a-shape-inside-the-worksheet/]
+url: /ja/shapes/add/
+aliases: [  /ja/add-a-shape-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, 図形の追加, Excel, REST API, クラウドSDK, shapeDTO, 描画タイプ"
 description: "Aspose.Cells Cloud REST API v3.0 を使用して、Excelワークシートに図形（弧、線、矩形など）を追加する方法を学びます。リクエスト構文、必須パラメータ、認証手順、およびサンプルSDKコードを含みます。"
 weight: 30

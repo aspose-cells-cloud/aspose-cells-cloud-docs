@@ -3,7 +3,7 @@ title: "Comment gérer la suppression de feuilles de calcul dans un classeur Exc
 second_title: "Document"
 linktype: "Supprimer"
 type: docs
-url: /worksheets/delete/
+url: /fr/worksheets/delete/
 keywords: "Aspose.Cells, Cloud, API REST, Supprimer une feuille de calcul, Excel, C#, Java, Python"
 description: "Découvrez comment supprimer une ou plusieurs feuilles de calcul à partir d’un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud. Inclut des exemples en C#, Java et Python, les conditions préalables, des conseils sur la gestion des erreurs et les opérations associées."
 weight: 20

@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "クラウドで Excel ファイルを分割して個別のファイルに分離し、30 以上の形式にエクスポート"
 linktype: "クラウド上のスプレッドシートを分割"
 type: docs
-url: /split-remote-spreadsheet/
+url: /ja/split-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud、Excel ワークブックの分割、スプレッドシート分割ツール、クラウド API、PDF へのエクスポート、CSV へのエクスポート、JSON へのエクスポート、複数形式エクスポート、クラウドスプレッドシート処理"
 description: "Aspose.Cells Cloud API を使用して、クラウドストレージに保存された Excel ワークブックを個々のワークシートに分割し、各パートを PDF、CSV、JSON、XLSX、HTML、ODS、XPS など 30 以上の形式でエクスポートします。"
 weight: 100

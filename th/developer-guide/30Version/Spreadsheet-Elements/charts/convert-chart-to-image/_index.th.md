@@ -1,8 +1,8 @@
 ---
 title: "การแปลงแผนภูมิ Excel เป็นภาพ – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/to-image/
-aliases: [/convert-charts-to-image/]
+url: /th/charts/to-image/
+aliases: [  /th/convert-charts-to-image/ ]
 weight: 50
 keywords: "Aspose.Cells Cloud, แปลงแผนภูมิเป็นภาพ, การแปลงแผนภูมิ Excel, REST API, รูปแบบไฟล์ภาพ, PNG, JPEG, BMP, TIFF, GIF"
 description: "เรียนรู้วิธีการแปลงวัตถุแผนภูมิใน Excel ให้เป็นภาพในรูปแบบ PNG, JPEG, BMP, TIFF หรือ GIF โดยใช้ Aspose.Cells Cloud REST API ซึ่งรวมถึงรายละเอียดของ endpoint, พารามิเตอร์, ตัวอย่าง cURL, ตัวอย่างโค้ด SDK, ตัวอย่างการตอบกลับ และการจัดการข้อผิดพลาด"

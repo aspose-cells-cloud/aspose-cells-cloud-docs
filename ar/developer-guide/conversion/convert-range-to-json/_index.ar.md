@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيف تحول بيانات النطاق في ملف جدول بيانات محلي إلى ملف JSON: دليل خطوة بخطوة"
 linktype: "تحويل النطاق إلى JSON"
 type: docs
-url: /convert-range-to-json/
+url: /ar/convert-range-to-json/
 keywords: "تحويل النطاق إلى JSON، Aspose.Cells Cloud، Excel إلى JSON، تحويل جداول البيانات، API"
 description: "حوّل نطاقًا مُحدّدًا من ملف Excel المحلي إلى JSON باستخدام واجهة Aspose.Cells Cloud API."
 weight: 100

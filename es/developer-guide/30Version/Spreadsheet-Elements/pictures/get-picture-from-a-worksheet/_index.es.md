@@ -3,8 +3,8 @@ title: "Obtener todas las imágenes en una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Obtener todas"
 type: docs
-url: /pictures/get-all/
-aliases: [/get-picture-from-a-worksheet/]
+url: /es/pictures/get-all/
+aliases: [  /es/get-picture-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, hoja de cálculo de Excel, API de imágenes, obtener todas las imágenes, API REST, SDK"
 description: "Recuperar todos los objetos de imagen de una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud."
 ArticleTitle: "Obtener todas las imágenes en una hoja de cálculo de Excel - API de Aspose.Cells Cloud"

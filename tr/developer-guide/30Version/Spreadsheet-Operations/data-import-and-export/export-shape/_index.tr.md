@@ -3,8 +3,8 @@ title: "Şekilleri Dışa Aktar"
 second_title: "Belge"
 linktitle: "Şekil"
 type: docs
-url: /export-excel-shape-to-different-formats/
-aliases: [/export/excel-shape-to-different-formats/]
+url: /tr/export-excel-shape-to-different-formats/
+aliases: [  /tr/export/excel-shape-to-different-formats/ ]
 keywords: "Şekilleri Dışa Aktar, Aspose.Cells Cloud, Excel şekil dışa aktarma, Görüntü formatları, REST API, SDK"
 description: "Aspose.Cells Cloud REST API'sini ve SDK'larını kullanarak Excel şekillerini çeşitli görüntü formatlarına (PNG, GIF, JPEG, BMP, SVG, TIFF, EMF, WMF) nasıl dışa aktaracağınızı öğrenin."
 weight: 20

@@ -3,7 +3,7 @@ title: "كيفية تحديث محتوى النطاق من ورقة عمل Excel
 second_title: "مستند"
 linktype: "تحديث"
 type: docs
-url: /ranges/update/
+url: /ar/ranges/update/
 keywords: "Excel، تحديث النطاق، Aspose.Cells Cloud، واجهة REST API، جدول بيانات، نمط النطاق، قيم النطاق، ارتفاع الصف، عرض العمود"
 description: "تحديث محتوى النطاق في ورقة عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. تعديل الأنماط والقيم وارتفاعات الصفوف وعرض الأعمدة عبر SDKs المدعومة."
 weight: 20

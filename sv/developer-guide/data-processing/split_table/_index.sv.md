@@ -4,7 +4,7 @@ ArticleTitle: "Dela tabell – Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Dela tabell"
 type: docs
-url: /cells/split/table
+url: /sv/cells/split/table
 aliases: []
 keywords: "Aspose.Cells, Dela tabell, API"
 description: "API för att dela en tabell i en kalkylarkfil baserat på kolumnvärden."

@@ -1,7 +1,7 @@
 ---
 title: "Mettre à jour l'axe de catégorie secondaire d'un graphique"
 type: docs
-url: /charts/second-category-axis/update/
+url: /fr/charts/second-category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, graphique, axe de catégorie secondaire, API REST, mettre à jour un graphique, Excel, API cloud"
 description: "Découvrez comment mettre à jour l'axe de catégorie secondaire d’un graphique dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud."

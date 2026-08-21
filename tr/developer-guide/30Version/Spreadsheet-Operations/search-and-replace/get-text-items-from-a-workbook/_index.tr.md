@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud API kullanarak bir Excel Çalışma Kitabında
 second_title: "Belge"
 linktitle: "Çalışma kitabından metin öğelerini al"
 type: docs
-url: /workbook/get-text-items/
-aliases: [/get-text-items-from-a-workbook/]
+url: /tr/workbook/get-text-items/
+aliases: [  /tr/get-text-items-from-a-workbook/ ]
 weight: 10
 keywords: "Excel, Aspose.Cells Cloud, REST API, Elektronik Tablo, Metin Öğelerini Al, Çalışma Kitabı"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma kitabından metin öğelerini alın. C#, Java, Python, PHP, Ruby, Go, Node.js, Perl ve Swift için SDK’lar aracılığıyla kullanılabilir."

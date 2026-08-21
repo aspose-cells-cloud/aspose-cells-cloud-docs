@@ -3,8 +3,8 @@ title: "Récupérer les éléments texte d’un classeur Excel"
 ArticleTitle: "Récupérer les éléments texte d’un classeur Excel à l’aide de l’API Aspose.Cells Cloud"
 second_title: "Document"
 linktype: "docs"
-url: /workbook/get-text-items/
-aliases: [/get-text-items-from-a-workbook/]
+url: /fr/workbook/get-text-items/
+aliases: [  /fr/get-text-items-from-a-workbook/ ]
 weight: 10
 keywords: "Excel, Aspose.Cells Cloud, API REST, Classeur, Récupérer les éléments texte"
 description: "Récupérez les éléments texte d’un classeur Excel à l’aide de l’API REST Aspose.Cells Cloud. Disponible via les SDK pour C#, Java, Python, PHP, Ruby, Go, Node.js, Perl et Swift."

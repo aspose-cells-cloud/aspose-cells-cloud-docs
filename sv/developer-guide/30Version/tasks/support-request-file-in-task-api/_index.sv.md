@@ -3,7 +3,7 @@ title: "Stöd förfrågningsfil i Task API"
 second_title: "Document"
 type: docs
 url: /sv/tasks/support-request-file/
-aliases: [/sv/support-request-file-in-task-api/]
+aliases: [  /sv/support-request-file-in-task-api/ ]
 keywords: "Aspose.Cells, REST API, Excel, moln"
 description: "Aspose.Cells Cloud API möjliggör uppgiftsbaserad bearbetning av förfrågningsfiler för Excel-arbetsböcker."
 weight: 10

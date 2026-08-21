@@ -3,8 +3,8 @@ title: "获取 Excel 工作簿中的命名区域"
 second_title: "文档"
 linktitle: "命名"
 type: docs
-url: /ranges/get/name/
-aliases: [/get-named-ranges-inside-the-workbook/]
+url: /zh/ranges/get/name/
+aliases: [  /zh/get-named-ranges-inside-the-workbook/ ]
 keywords: "命名区域, Excel, Aspose.Cells, 云 API, 工作表"
 description: "使用 Aspose.Cells Cloud REST API 从 Excel 工作簿中检索命名区域。包含请求详情、示例 cURL 命令以及多种编程语言的 SDK 示例。"
 ArticleTitle: "获取 Excel 工作簿中的命名区域 – Aspose.Cells Cloud API"

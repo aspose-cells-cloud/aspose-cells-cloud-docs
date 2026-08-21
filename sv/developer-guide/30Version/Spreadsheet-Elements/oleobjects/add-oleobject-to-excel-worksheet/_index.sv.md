@@ -3,8 +3,8 @@ title: "Lägg till ett OLE-objekt i ett Excel-arbetsblad"
 second_title: "Dokument"
 linktitle: "Lägg till OLE-objekt"
 type: docs
-url: /oleobjects/add/
-aliases: [/add-oleobject-to-excel-worksheet/]
+url: /sv/oleobjects/add/
+aliases: [  /sv/add-oleobject-to-excel-worksheet/ ]
 keywords: "Lägg till OLE-objekt, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "Använd Aspose.Cells Cloud REST API för att lägga till OLE-objekt i Excel-arbetsblad. API:t kan anropas direkt eller via SDK:er för C#, Java, PHP, Ruby, Node.js, Python, Perl och Go."
 ArticleTitle: "Lägg till OLE-objekt i Excel-arbetsblad med Aspose.Cells Cloud API"

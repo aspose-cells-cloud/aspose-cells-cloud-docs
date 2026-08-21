@@ -4,7 +4,7 @@ ArticleTitle: "Hesap Tablosu Boş Satırlarını Kaldırma – Aspose.Cells Clou
 second_title: "Belge"
 linktype: "Hesap Tablosu Boş Satırlarını Kaldırma"
 type: docs
-url: /cells/remove/blank-rows
+url: /tr/cells/remove/blank-rows
 aliases: []
 keywords: "Aspose.Cells, boş satırları kaldırma, hesap tablosu, API"
 description: "Bir hesap tablosu dosyasından tüm boş satırları siler."

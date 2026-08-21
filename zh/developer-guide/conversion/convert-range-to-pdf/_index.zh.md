@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何将本地电子表格区域数据转换为 PDF 文件：分步指南"
 linktype: "convert-range-to-pdf"
 type: docs
-url: /convert-range-to-pdf/
+url: /zh/convert-range-to-pdf/
 keywords: "Aspose.Cells Cloud、将 Excel 区域转换为 PDF、Excel 转 PDF、云端转换"
 description: "使用 Aspose.Cells Cloud 的 REST API 将本地 Excel 电子表格中的指定区域转换为 PDF。"
 weight: 100

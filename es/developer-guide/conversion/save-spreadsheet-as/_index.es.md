@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cómo guardar una hoja de cálculo en otro formato en almacenamiento remoto: guía paso a paso"
 linktitle: "Guardar hoja de cálculo como"
 type: docs
-url: /save-spreadsheet-as/
+url: /es/save-spreadsheet-as/
 keywords: "Aspose Cells, conversión de hojas de cálculo, guardar como, API, XLSX a PDF, almacenamiento en la nube, Excel a PDF, exportación CSV, conversión en la nube"
 description: "Aprenda a guardar una hoja de cálculo almacenada en Aspose Cloud en otro formato (XLSX, PDF, CSV, etc.) mediante la API de Aspose.Cells Cloud para guardar hojas de cálculo. Incluye sintaxis de solicitud, parámetros, ejemplo de curl y código del SDK."
 weight: 100

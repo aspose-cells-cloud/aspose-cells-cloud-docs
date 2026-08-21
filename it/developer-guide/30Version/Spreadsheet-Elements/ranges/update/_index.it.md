@@ -3,7 +3,7 @@ title: "Come aggiornare il contenuto di un intervallo in un foglio di calcolo Ex
 second_title: "Document"
 linktype: "Aggiornamento"
 type: docs
-url: /ranges/update/
+url: /it/ranges/update/
 keywords: "Excel, aggiornamento intervallo, Aspose.Cells Cloud, REST API, foglio di calcolo, stile intervallo, valori intervallo, altezza riga, larghezza colonna"
 description: "Aggiorna il contenuto di un intervallo in un foglio di calcolo Excel utilizzando l'API REST di Aspose.Cells Cloud. Modifica stili, valori, altezze riga e larghezze colonna tramite gli SDK supportati."
 weight: 20

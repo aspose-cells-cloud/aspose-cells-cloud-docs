@@ -3,7 +3,7 @@ title: "Excel 워크시트에서 열 숨기기"
 second_title: "문서"
 linktitle: "숨기기"
 type: docs
-url: /columns/hide/
+url: /ko/columns/hide/
 aliases:
   - /hide-columns-in-excel-worksheet/
   - /hide-columns-in-an-excel-worksheet/

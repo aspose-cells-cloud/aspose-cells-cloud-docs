@@ -1,7 +1,7 @@
 ---
 title: "获取图表值轴"
 type: docs
-url: /charts/value-axis/get/
+url: /zh/charts/value-axis/get/
 weight: 60
 keywords: Aspose.Cells, 图表值轴, REST API, Excel, 云 SDK, 获取图表值轴
 description: "Aspose.Cells Cloud REST API - 从 Excel 工作表中检索图表的值轴。"

@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Elaborazione del testo nei fogli di calcolo: Riduci, Dividi, Converti, Estrai e Rimuovi testo"
 linktype: "Elaborazione del testo"
 type: docs
-url: /text-processing/
+url: /it/text-processing/
 description: "Scopri come ridurre, dividere, convertire, estrarre e rimuovere il testo nei file Excel utilizzando le API REST di Aspose.Cells Cloud. Include esempi concisi e frammenti di codice SDK."
 keywords: "Aspose.Cells, API Cloud, Elaborazione del testo, Riduci testo, Dividi testo, Converti testo, Estrai testo, Rimuovi testo, API Excel"
 weight: 30

@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "สลับ/แลกเปลี่ยนข้อมูลระหว่างคอลัมน์ แถว และเซลล์ใน Excel"
 linktitle: "สลับช่วงข้อมูล"
 type: docs
-url: /swap-range/
+url: /th/swap-range/
 keywords: "Aspose Cells, Excel API, สลับช่วงข้อมูล, สเปรดชีตบนคลาวด์"
 description: "สลับคอลัมน์ แถว หรือช่วงข้อมูลในไฟล์ Excel โดยใช้ Aspose.Cells Cloud API รักษาการจัดรูปแบบ สูตร และการอ้างอิงเซลล์ไว้ในการเรียกใช้งานเพียงครั้งเดียว"
 weight: 100

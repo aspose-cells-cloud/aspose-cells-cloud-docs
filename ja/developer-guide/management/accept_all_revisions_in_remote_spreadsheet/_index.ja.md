@@ -3,8 +3,8 @@ title: "リモートスプレッドシートですべての変更を受け入れ
 ArticleTitle: "リモートスプレッドシートですべての変更を受け入れる – Aspose.Cells Cloud"
 second_title: "ドキュメント"
 linktype: "docs"
-url: /cells/accept-all-revisions
-aliases: ["/cells/accept-all-revisions"]
+url: /ja/cells/accept-all-revisions
+aliases: [  /ja/cells/accept-all-revisions ]
 keywords: "Aspose.Cells, AcceptAllRevisions, リモートスプレッドシート"
 description: "リモートスプレッドシートですべての変更履歴（リビジョン）を受け入れ、更新されたワークブックファイルを返します。"
 weight: 1000

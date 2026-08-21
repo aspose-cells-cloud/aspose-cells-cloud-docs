@@ -3,7 +3,7 @@ title: "Cómo obtener el contenido de un rango en una hoja de cálculo de Excel"
 second_title: "Document"
 linktype: "Get"
 type: docs
-url: /ranges/get/
+url: /es/ranges/get/
 keywords: "Aspose.Cells, Excel, API, obtener, rango, hoja de cálculo, REST"
 description: "Aprenda a recuperar el contenido de un rango en una hoja de cálculo de Excel mediante la API REST de Aspose.Cells Cloud. Incluye sintaxis de solicitud y código de ejemplo."
 weight: 20

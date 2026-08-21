@@ -1,7 +1,7 @@
 ---
 title: "Grafiğin Kategori Ekseni Güncelleme"
 type: docs
-url: /charts/category-axis/update/
+url: /tr/charts/category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, Chart, Category Axis, REST API, Excel, Cloud SDK"
 description: "Aspose.Cells Cloud REST API kullanılarak bir Excel çalışma sayfasındaki bir grafiğin kategori eksenini günceller."

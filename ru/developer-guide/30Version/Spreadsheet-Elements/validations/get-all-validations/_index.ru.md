@@ -3,7 +3,7 @@ title: "Получить все проверки рабочего листа и�
 second_title: "Документ"
 linktitle: "Получить все"
 type: docs
-url: /validations/get-all/
+url: /ru/validations/get-all/
 keywords: "Aspose.Cells Cloud, Excel, проверки рабочего листа, REST API, получить все проверки, SDK"
 description: "Получить все проверки рабочего листа из Excel-файла с использованием REST API Aspose.Cells Cloud. Поддерживает множество SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) для быстрой интеграции."
 weight: 10

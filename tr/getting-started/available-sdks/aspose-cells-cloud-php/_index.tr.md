@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud PHP SDK – Excel Dosyalarını Dönüştürün, Birleştirin, Bölün, Koruyun"  
 linktitle: "Aspose.Cells Cloud PHP SDK"  
 type: docs  
-url: /available-sdks/aspose-cells-cloud-php/  
+url: /tr/available-sdks/aspose-cells-cloud-php/
 description: "Aspose.Cells Cloud PHP SDK’sini (v24.3) indirin. Composer üzerinden nasıl kurulacağını, kimlik doğrulaması nasıl yapılacağını, XLSX’i PDF/CSV’ye dönüştürmeyi, çalışma kitaplarını birleştirmeyi, sayfaları korumayı ve daha fazlasını öğrenin – Office kurmadan bunların hepsini yapın."  
 keywords: "Aspose.Cells, Bulut, PHP, SDK, Excel, Dönüştür, Birleştir, Böl, Koru"  
 weight: 30  

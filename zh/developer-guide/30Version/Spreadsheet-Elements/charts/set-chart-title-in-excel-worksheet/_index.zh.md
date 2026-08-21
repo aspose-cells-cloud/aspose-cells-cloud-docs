@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud API – 在 Excel 工作表中设置图表标题"
 type: docs
 url: /zh/chart/title/add/
-aliases: [/zh/set-chart-title-in-excel-worksheet/]
+aliases: [  /zh/set-chart-title-in-excel-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells Cloud, 图表标题 API, Excel 图表标题, REST API, SDK 示例"
 description: "了解如何使用 Aspose.Cells Cloud REST API 在 Excel 工作表中添加或更新图表标题。包含 cURL、SDK 示例、所需参数、身份验证步骤和错误处理。"

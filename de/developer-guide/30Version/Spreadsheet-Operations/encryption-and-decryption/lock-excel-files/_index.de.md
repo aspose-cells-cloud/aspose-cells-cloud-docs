@@ -3,8 +3,8 @@ title: "Excel-Dateien sperren"
 second_title: "Dokument"
 linktitle: "Excel-Dateien sperren"
 type: docs
-url: /lock-excel-files/
-aliases: [/lock/without-storage/, /lock/, /lock/without-using-storage/]
+url: /de/lock-excel-files/
+aliases: [  /de/lock/without-storage/ , /de/lock/ , /de/lock/without-using-storage/ ]
 keywords: "Sperren, Excel, API, Aspose.Cells, Cloud, REST, Arbeitsmappe, Tabellenkalkulation, SDK"
 description: "Erfahren Sie, wie Sie Excel-Arbeitsmappen mithilfe der Aspose.Cells Cloud REST API (v3.0) sperren können. Enthält HTTPS-Endpunkt, Authentifizierung, cURL-Anforderung, Antwort-Schema und SDK-Codebeispiele für C#, Java, Python und mehr."
 ArticleTitle: "Excel-Dateien sperren – Aspose.Cells Cloud API-Dokumentation"

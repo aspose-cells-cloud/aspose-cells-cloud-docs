@@ -3,8 +3,8 @@ title: "Excelワークシート上のインデックスで図形を取得する"
 second_title: "Document"
 linktitle: "Get"
 type: docs
-url: /shapes/get/
-aliases: [/get-a-shape-by-index-inside-the-worksheet/]
+url: /ja/shapes/get/
+aliases: [  /ja/get-a-shape-by-index-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel shape API, get shape by index, worksheet shape, REST API, shape retrieval, Aspose.Cells SDK"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートからインデックスで図形（shape）を取得します。リクエスト構文、パラメータ、レスポンス詳細、および SDK の使用例を含みます。"
 weight: 20

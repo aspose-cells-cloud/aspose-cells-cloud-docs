@@ -4,7 +4,7 @@ second_title: "مستند"
 linktitle: "فرز"
 type: docs
 url: /ar/list-objects/sort-data/
-aliases: [/ar/get-a-list-object-or-table-inside-the-worksheet/, /ar/tables/sort-data/]
+aliases: [  /ar/get-a-list-object-or-table-inside-the-worksheet/ , /ar/tables/sort-data/ ]
 keywords: "Aspose.Cells Cloud، Excel، ListObject، فرز البيانات، واجهة برمجة التطبيقات REST، ورقة العمل"
 description: "تعلم كيفية فرز بيانات كائن القائمة (الجدول) في ورقة عمل Excel باستخدام واجهة برمجة التطبيقات REST لـ Aspose.Cells Cloud (النسخة 3.0). يتضمن العنوان، المعلمات، مثال لطلب cURL، وأمثلة لواجهات برمجة التطبيقات (SDK)."
 weight: 40

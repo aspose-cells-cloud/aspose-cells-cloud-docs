@@ -3,7 +3,7 @@ title: "Récupérer les noms d'un classeur Excel"
 second_title: "Document"
 linktitle: "Noms"
 type: docs
-url: /get-names-from-an-excel-file/
+url: /fr/get-names-from-an-excel-file/
 aliases:
   [
     "/get-names-count-from-excel-workbooks/",

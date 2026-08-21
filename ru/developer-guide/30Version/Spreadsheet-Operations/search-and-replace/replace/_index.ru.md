@@ -3,7 +3,7 @@ title: "Замена текста в файлах Excel"
 second_title: "Документ"
 linktitle: "Замена без использования хранилища"
 type: docs
-url: /replace/
+url: /ru/replace/
 keywords: "замена текста в Excel, Aspose.Cells Cloud, REST API, замена в электронных таблицах, API, замена текста в файле Excel"
 description: "Используйте REST API Aspose.Cells Cloud для замены существующего текста новыми значениями в файлах Excel. Поддерживает SDK для C#, Java, Python, Node.js, PHP, Ruby, Go и Perl."
 weight: 80

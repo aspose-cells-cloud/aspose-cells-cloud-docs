@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "基于云端的 Excel 文件高效管理解决方案 —— 云端文件快速移动接口"
 linktype: "move-file"
 type: docs
-url: /move-file/
+url: /zh/move-file/
 keywords: "Aspose.Cells, 移动文件 API, 云存储, Excel API, 文件管理"
 description: "如何使用 Aspose.Cells Cloud v4.0 移动文件 API 在云存储中移动文件 —— 接口端点、参数说明、示例及 SDK 链接。"
 weight: 100

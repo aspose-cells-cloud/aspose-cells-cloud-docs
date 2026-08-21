@@ -4,7 +4,7 @@ ArticleTitle: "إزالة التكرارات – واجهة برمجة تطبي�
 second_title: "وثيقة"
 linktitle: "إزالة التكرارات"
 type: docs
-url: /cells/remove/duplicates
+url: /ar/cells/remove/duplicates
 aliases: []
 keywords: "Aspose.Cells، إزالة التكرارات، واجهة برمجة تطبيقات"
 description: "يزيل القيم المكرَّرة في ورقة العمل أو النطاق أو الجدول."

@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud 건강 상태 점검"
 linktype: "서비스 건강 상태 확인"
 type: docs
-url: /check-cloud-service-health/
+url: /ko/check-cloud-service-health/
 keywords: "Aspose.Cells Cloud, API 건강 상태 점검, REST 상태, 클라우드 서비스 모니터링"
 description: "Aspose.Cells Cloud 서비스 건강 상태를 실시간으로 모니터링하세요. GET /v4.0/cells/status/check 엔드포인트, 매개변수, 응답 형식 및 SDK 예제를 알아보세요."
 weight: 100

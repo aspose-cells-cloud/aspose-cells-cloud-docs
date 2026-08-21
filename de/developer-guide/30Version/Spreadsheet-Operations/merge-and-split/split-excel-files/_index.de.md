@@ -4,8 +4,8 @@ ArticleTitle: "Wie man ein Excel-Arbeitsbuch mit der Aspose.Cells Cloud API in m
 second_title: "Dokument"
 linktitle: "Eine Excel-Datei aufteilen"
 type: docs
-url: /split-multi-excel-files/
-aliases: [/split/multi-files/]
+url: /de/split-multi-excel-files/
+aliases: [  /de/split/multi-files/ ]
 keywords: "Excel, Aspose.Cells Cloud, REST API, Arbeitsbuch aufteilen, mehrere Dateien, JPEG, PNG, PDF, CSV, JSON"
 description: "Die Aspose.Cells Cloud REST API ermöglicht das Aufteilen eines Excel-Arbeitsbuchs in mehrere Dateien in verschiedenen Formaten. Diese Dokumentation enthält Anforderungsparameter, ein cURL-Beispiel und SDK-Codebeispiele für die Sprachen C#, Java, PHP, Ruby, Node.js, Python, Perl und Go."
 weight: 130

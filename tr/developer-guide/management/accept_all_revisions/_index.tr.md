@@ -4,7 +4,7 @@ ArticleTitle: "Tüm Değişiklikleri Kabul Et – Aspose.Cells Cloud"
 second_title: "Belge"
 linktitle: "Tüm Değişiklikleri Kabul Et"
 type: docs
-url: /cells/spreadsheet/accept-all-revisions
+url: /tr/cells/spreadsheet/accept-all-revisions
 aliases: []
 keywords: "Aspose.Cells, AcceptAllRevisions, elektronik tablo, değişiklikler"
 description: "Aspose.Cells Cloud API kullanarak bir elektronik tablo dosyasındaki tüm değişiklikleri kabul et."

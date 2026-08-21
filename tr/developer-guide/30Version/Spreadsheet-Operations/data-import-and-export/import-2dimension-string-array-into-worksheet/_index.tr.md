@@ -2,7 +2,7 @@
 title: "İkili Boyutlu Diziyi Excel Çalışma Sayfasına İçe Aktar"
 second_title: "Belge"
 linktype: "İçerik"
-url: /import-a-2d-string-array-into-excel-worksheet/
+url: /tr/import-a-2d-string-array-into-excel-worksheet/
 aliases:
   [
     "/import-2dimension-string-array-into-excel-worksheet/",

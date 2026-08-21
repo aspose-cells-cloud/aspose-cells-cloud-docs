@@ -4,7 +4,7 @@ second title: "เอกสาร"
 linktitle: "เรียงลำดับ"
 type: docs
 keywords: "การเรียงลำดับช่วงข้อมูล, Aspose.Cells Cloud, REST API, สเปรดชีต, Excel, API"
-url: /ranges/sort/
+url: /th/ranges/sort/
 description: จัดเตรียม API สำหรับเรียงลำดับช่วงของเซลล์ภายในสมุดงานโดยใช้ Aspose.Cells Cloud
 weight: 20
 ---

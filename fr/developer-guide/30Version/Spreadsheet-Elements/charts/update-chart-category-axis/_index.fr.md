@@ -1,7 +1,7 @@
 ---
 title: "Mettre à jour l’axe des catégories d’un graphique"
 type: docs
-url: /charts/category-axis/update/
+url: /fr/charts/category-axis/update/
 weight: 160
 keywords: "Aspose.Cells, graphique, axe des catégories, API REST, Excel, SDK cloud"
 description: "Met à jour l’axe des catégories d’un graphique dans une feuille de calcul Excel à l’aide de l’API REST Aspose.Cells Cloud."

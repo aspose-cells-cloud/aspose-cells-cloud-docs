@@ -3,8 +3,8 @@ title: "Excel 파일에 그림 추가"
 second_title: "문서"
 linktype: "추가"
 type: docs
-url: /pictures/add/
-aliases: [/add-pictures-to-excel-worksheet/]
+url: /ko/pictures/add/
+aliases: [  /ko/add-pictures-to-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, 그림 추가, REST API"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트에 이미지를 추가합니다. Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby, Swift용 SDK가 플랫폼 간 통합을 간소화합니다."
 weight: 20

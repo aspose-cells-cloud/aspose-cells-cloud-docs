@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie ein Arbeitsblatt mit der Aspose.Cells Cloud API in HTML"
 linktype: "Convert Worksheet To Html"
 type: docs
-url: /convert-worksheet-to-html/
+url: /de/convert-worksheet-to-html/
 description: "Erfahren Sie, wie Sie ein Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud API in HTML konvertieren – ohne Upload, mit benutzerdefinierten Schriftarten, Regionsunterstützung und Fehlerbehandlung."
 keywords: "Aspose.Cells, Excel zu HTML, Arbeitsblattkonvertierung, Cloud-API"
 weight: 100

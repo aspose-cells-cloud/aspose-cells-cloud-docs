@@ -3,7 +3,7 @@ title: "Excelワークシートの範囲コンテンツを更新する方法"
 second_title: "ドキュメント"
 linktitle: "更新"
 type: docs
-url: /ranges/update/
+url: /ja/ranges/update/
 keywords: "Excel, 範囲の更新, Aspose.Cells Cloud, REST API, スプレッドシート, 範囲のスタイル, 範囲の値, 行の高さ, 列の幅"
 description: "Aspose.Cells Cloud REST APIを使用してExcelワークシートの範囲コンテンツを更新します。対応するSDKを通じて、スタイル、値、行の高さ、列の幅を変更します。"
 weight: 20

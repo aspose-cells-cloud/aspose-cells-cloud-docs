@@ -3,8 +3,8 @@ title: "清除 Excel 文件中的对象"
 second_title: "文档"
 linktitle: "清除"
 type: docs
-url: /clear/
-aliases: [/clearobjects/]
+url: /zh/clear/
+aliases: [  /zh/clearobjects/ ]
 keywords: "Aspose.Cells, Excel, 清除对象, REST API, 云 SDK, 删除注释, 删除图表"
 description: "使用 Aspose.Cells Cloud REST API 从 Excel 工作簿中删除注释、图表、形状及其他对象。支持多种 SDK，并以 Base64 格式返回已清理的文件。"
 weight: 39

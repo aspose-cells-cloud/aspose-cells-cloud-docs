@@ -1,8 +1,8 @@
 ---
 title: "Обновить комментарий ячейки рабочего листа"
 type: docs
-url: /comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
+url: /ru/comments/update/
+aliases: [  /ru/update-a-comment-in-excel-workbook/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, рабочий лист, комментарий ячейки, обновить комментарий рабочего листа, объект комментария"
 description: "Используйте REST API Aspose.Cells Cloud для обновления комментария ячейки в рабочем листе книги Excel, включая сведения о запросе, коды ответов и примеры SDK."
 weight: 30

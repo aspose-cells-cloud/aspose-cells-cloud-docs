@@ -2,7 +2,7 @@
 title: "Stapelverarbeitung von Excel-Dateien"
 second: "Dokument"
 type: docs
-url: /batch/convert
+url: /de/batch/convert
 keywords: "Stapelverarbeitung, Excel, Aspose.Cells Cloud, REST API, PDF, CSV, JSON, Markdown, Tabellenkalkulation"
 description: "Erfahren Sie, wie Sie die Aspose.Cells Cloud API nutzen können, um mehrere Excel-Dateien gleichzeitig in Formate wie PDF, CSV, JSON oder Markdown zu konvertieren. Dieser Leitfaden enthält Details zur REST-API, Anforderungsparameter, ein cURL-Beispiel und SDK-Codebeispiele für verschiedene Sprachen."
 weight: 100

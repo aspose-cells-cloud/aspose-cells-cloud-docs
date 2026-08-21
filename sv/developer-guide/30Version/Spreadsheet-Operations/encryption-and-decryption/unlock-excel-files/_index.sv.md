@@ -3,8 +3,8 @@ title: "Lås upp Excel-filer"
 second_title: "Dokument"
 linktitle: "Lås upp Excel-filer"
 type: docs
-url: /unlock-excel-files/
-aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
+url: /sv/unlock-excel-files/
+aliases: [  /sv/unlock/without-storage/ , /sv/unlock/ , /sv/unlock/without-using-storage/ ]
 keywords: "Lås upp Excel, Aspose.Cells Cloud, REST API, Upplåsning av Excel-filer, lösenordsskyddad arbetsbok, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
 description: "Aspose.Cells Cloud REST API tillhandahåller ett slutpunkt för att låsa upp lösenordsskyddade Excel-filer. SDK:er är tillgängliga för flera programmeringsspråk, inklusive Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby och Swift."
 ArticleTitle: "Lås upp Excel-filer med Aspose.Cells Cloud REST API"

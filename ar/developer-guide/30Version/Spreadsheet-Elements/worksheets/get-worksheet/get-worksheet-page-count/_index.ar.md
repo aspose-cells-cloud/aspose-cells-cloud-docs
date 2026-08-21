@@ -3,7 +3,7 @@ title: "الحصول على عدد الصفحات لورقة عمل Excel"
 second_title: "مستند"
 linktitle: "عددالصفحات"
 type: docs
-url: /worksheets/page-count/
+url: /ar/worksheets/page-count/
 keywords: "Aspose.Cells, API Excel, عدد صفحات ورقة العمل, REST, SDK السحابي, ترقيم الصفحات في Excel"
 description: "استرجاع عدد الصفحات القابلة للطباعة في ورقة عمل Excel باستخدام REST API الخاص بـ Aspose.Cells Cloud (الإصدار 3.0). يشمل تنسيق طلب HTTPS، خطوات المصادقة، مثال باستخدام cURL، استجابة JSON كاملة، رموز الحالة، وأكواد الأمثلة الخاصة بـ SDK."
 weight: 10

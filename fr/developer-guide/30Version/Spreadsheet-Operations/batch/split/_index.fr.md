@@ -2,7 +2,7 @@
 title: "Fractionnement par lots"
 second_title: "Document"
 type: docs
-url: /batch/split
+url: /fr/batch/split
 keywords: "Fractionnement par lots, Aspose.Cells Cloud, API REST, Excel, PDF, CSV, JSON, Classeur, SDK cloud"
 description: "Documentation de l'API de fractionnement par lots Aspose.Cells Cloud, qui permet de diviser des fichiers de classeurs en plusieurs formats tels que PDF, CSV ou JSON. Inclut les détails de la requête, des exemples de commandes cURL et l'utilisation du SDK dans divers langages de programmation."
 weight: 100

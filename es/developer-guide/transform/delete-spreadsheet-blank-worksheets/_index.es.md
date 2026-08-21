@@ -4,7 +4,7 @@ second_title: "Documentación"
 ArticleTitle: "Eliminar todas las hojas en blanco en Excel – Guía para quitar hojas vacías"
 linktitle: "Eliminar hojas en blanco"
 type: docs
-url: /delete-spreadsheet-blank-worksheets/
+url: /es/delete-spreadsheet-blank-worksheets/
 keywords: "Aspose.Cells Cloud, eliminar hojas en blanco, API de Excel, limpieza de libros de trabajo, optimización de hojas de cálculo"
 description: "Utilice la API de Aspose.Cells Cloud para eliminar automáticamente hojas en blanco o vacías de libros de Excel. Aprenda a identificar y eliminar hojas que no contengan datos, fórmulas, gráficos u objetos, mejorando así el rendimiento y la organización del libro."
 weight: 100

@@ -3,8 +3,8 @@ title: "Работа с столбцами в Excel"
 second_title: "Документ"
 linktype: "columns"
 type: docs
-url: /columns/
-aliases: [/working-with-columns/]
+url: /ru/columns/
+aliases: [  /ru/working-with-columns/ ]
 keywords: "Excel, столбцы, Aspose.Cells Cloud, API, электронная таблица, рабочий лист, REST API"
 description: "Подробное руководство по операциям API Aspose.Cells Cloud для работы со столбцами рабочего листа Excel, включая получение, добавление, копирование, скрытие, отображение, группировку, разгруппировку и удаление."
 weight: 100

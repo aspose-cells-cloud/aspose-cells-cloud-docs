@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "API อัปโหลดไฟล์ของ Aspose.Cells Cloud – อินเทอร์เฟซสำหรับการอัปโหลดไฟล์อย่างรวดเร็วลงในคลาวด์"
 linktitle: "อัปโหลดไฟล์"
 type: docs
-url: /upload-file/
+url: /th/upload-file/
 keywords: "Aspose.Cells, การอัปโหลดไฟล์, Excel API, พื้นที่จัดเก็บข้อมูลบนคลาวด์, REST API"
 description: "คู่มือการอัปโหลดไฟล์ด้วย Aspose.Cells Cloud API ครอบคลุมพารามิเตอร์คำขอ, โค้ดสถานะ HTTP, การจัดการข้อผิดพลาด และตัวอย่างโค้ด"
 weight: 100

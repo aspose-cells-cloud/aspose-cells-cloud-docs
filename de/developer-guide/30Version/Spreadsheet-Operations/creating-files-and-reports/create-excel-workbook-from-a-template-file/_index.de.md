@@ -3,7 +3,7 @@ title: "So erstellen Sie eine Excel-Arbeitsmappe mit einer Vorlagendatei"
 second_title: "Dokument"
 linktitle: "Vorlagendatei"
 type: docs
-url: /create-an-excel-file-with-template-file/
+url: /de/create-an-excel-file-with-template-file/
 aliases:
   - /create-excel-workbook-from-a-template-file/
   - /workbook/new-from-a-template-file/

@@ -3,7 +3,7 @@ title: "Bir Excel Çalışma Sayfasından Birden Fazla Satır Silme"
 second_title: "Belge"
 linktitle: "Satırlar"
 type: docs
-url: /rows/delete/rows/
+url: /tr/rows/delete/rows/
 keywords: "Aspose.Cells Cloud, satırları sil, birden fazla satır sil, Excel çalışma sayfası, REST API, SDK"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından bir veya daha fazla satırı nasıl sileceğinizi öğrenin. Uç nokta ayrıntılarını, parametreleri, cURL örneğini ve çeşitli programlama dilleri için SDK kod örneklerini içerir."
 weight: 80

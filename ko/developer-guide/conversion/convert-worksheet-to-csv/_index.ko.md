@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud API를 사용하여 스프레드시트 워크시트를 CSV로 변환하는 방법"
 linktitle: "워크시트를 CSV로 변환"
 type: docs
-url: /convert-worksheet-to-csv/
+url: /ko/convert-worksheet-to-csv/
 keywords: "Aspose.Cells, CSV 변환, 워크시트를 CSV로, REST API, 클라우드 스프레드시트, 엑셀을 CSV로"
 description: "Aspose.Cells Cloud API(v4.0)를 사용하여 엑셀 파일에서 특정 워크시트를 CSV로 변환하는 방법을 알아보세요. 엔드포인트, 매개변수, 샘플 cURL, SDK 코드 및 오류 처리가 포함됩니다."
 weight: 100

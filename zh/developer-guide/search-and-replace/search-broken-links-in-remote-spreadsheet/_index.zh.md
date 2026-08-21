@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "查找并修复远程 Excel 中的断链 – 云端电子表格链接检查器"
 linktype: "Search Remote Spreadsheets Broken Links"
 type: docs
-url: /search-broken-links-in-remote-spreadsheet/
+url: /zh/search-broken-links-in-remote-spreadsheet/
 keywords: "Excel, 断链, API, 云端, 电子表格, 验证, Aspose.Cells"
 description: "使用 Aspose.Cells Cloud API 扫描远程 Excel 工作簿中的断开外部链接、无效公式以及缺失数据源。"
 weight: 100

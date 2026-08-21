@@ -3,8 +3,8 @@ title: "Excel sütunlarıyla çalışma"
 second_title: "Belge"
 linktitle: "Sütunlar"
 type: docs
-url: /columns/
-aliases: [/working-with-columns/]
+url: /tr/columns/
+aliases: [  /tr/working-with-columns/ ]
 keywords: "Excel, sütunlar, Aspose.Cells Cloud, API, elektronik tablo, çalışma sayfası, REST API"
 description: "Excel çalışma sayfası sütunları ile ilgili Aspose.Cells Cloud API işlemleri için detaylı kılavuz; sütunların alınması, eklenmesi, kopyalanması, gizlenmesi, gösterilmesi, gruplanması, grup çıkartılması ve silinmesi işlemleri kapsanır."
 weight: 100

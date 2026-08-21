@@ -2,7 +2,7 @@
 title: "Aspose.Cells Cloud로 Excel 파일을 복구하는 방법"
 linktitle: "Excel 파일 복구 방법"
 type: docs
-url: /how-to-repair-excel-file
+url: /ko/how-to-repair-excel-file
 description: "Aspose.Cells Cloud를 사용하여 Excel 또는 기타 스프레드시트 파일을 복구하는 방법."
 weight: 10
 kwords: Excel, Office Cloud, REST API, 스프레드시트, PDF, CSV, Json, Markdown, Aspose.Cells Cloud로 Excel 또는 기타 스프레드시트 파일 복구 방법

@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud SDK for Python: 변환, 병합, 분할, 보호, 검색, 바꾸기 등"
 linktitle: "Aspose.Cells Cloud SDK for Python"
 type: docs
-url: /available-sdks/aspose-cells-cloud-python/
+url: /ko/available-sdks/aspose-cells-cloud-python/
 description: "Aspose.Cells Cloud SDK for Python은 Office 설치 없이 클라우드에서 Excel 파일을 생성, 변환, 병합, 분할, 보호, 검색, 바꾸기 및 조작할 수 있도록 해주는 크로스플랫폼 유창한 API를 제공합니다."
 weight: 30
 keywords: ["Aspose.Cells", "Python SDK", "Excel", "클라우드 API", "Excel을 PDF로 변환", "Excel 병합", "워크북 분할", "워크시트 보호", "검색 및 바꾸기", "REST API"]

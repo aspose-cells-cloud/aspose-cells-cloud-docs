@@ -1,7 +1,7 @@
 ---
 title: "Hücre Formülünü Hesapla – Aspose.Cells Cloud API"
 type: docs
-url: /calculate-cells-formula/
+url: /tr/calculate-cells-formula/
 weight: 90
 keywords: "Aspose.Cells Cloud, hücre formülünü hesapla, Excel API, REST API, SDK"
 description: "Aspose.Cells Cloud REST API’si (v3.0) ile bir Excel hücre formülünü hesaplayın. Uç nokta, parametreler, cURL örneği ve SDK kod snippet’lerini içerir."

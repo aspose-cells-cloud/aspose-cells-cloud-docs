@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktype: "เพิ่มลายน้ำลงในไฟล์ Excel"
 type: docs
 url: /th/add-watermark-into-excel-files/
-aliases: [/th/watermark/]
+aliases: [  /th/watermark/ ]
 keywords: "เพิ่มลายน้ำลงใน Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "เรียนรู้วิธีการเพิ่มลายน้ำข้อความลงในสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API (เวอร์ชัน 3.0) รวมถึงตัวอย่าง cURL พารามิเตอร์ที่จำเป็น และรายละเอียดการตอบกลับ"
 weight: 39

@@ -3,7 +3,7 @@ title: "Импорт данных XML в электронную таблицу"
 ArticleTitle: "Импорт данных XML в электронную таблицу – Aspose.Cells Cloud API"
 second_title: "Документ"
 linktype: "docs"
-url: /cells/import/data/xml
+url: /ru/cells/import/data/xml
 aliases: []
 keywords: "Импорт XML, Aspose.Cells, API"
 description: "Импортируйте файл данных XML в локальную электронную таблицу с помощью Aspose.Cells Cloud."

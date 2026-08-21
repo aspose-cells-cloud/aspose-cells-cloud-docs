@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何使用 Aspose.Cells Cloud API 将电子表格工作表转换为 JSON"
 linktype: "将工作表转换为 JSON"
 type: docs
-url: /convert-worksheet-to-json/
+url: /zh/convert-worksheet-to-json/
 keywords: "Aspose.Cells, 工作表转 JSON, Excel 转换, 云 API, API v4, 数据导出"
 description: "逐步指南，介绍如何使用 Aspose.Cells Cloud API 将 Excel 工作表转换为 JSON，包括请求参数、响应处理、错误代码和 SDK 示例。"
 weight: 100

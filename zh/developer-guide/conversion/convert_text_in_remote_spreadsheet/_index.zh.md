@@ -4,7 +4,7 @@ ArticleTitle: "远程电子表格中的文本转换 – Aspose.Cells Cloud"
 second_title: "文档"
 linktitle: "远程电子表格中的文本转换"
 type: docs
-url: /cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
+url: /zh/cells/{name}/worksheets/{worksheet}/range/{range}/content/convert/text
 aliases: []
 keywords: "Aspose.Cells, 文本转换, API"
 description: "转换工作表指定区域内的文本，包括数字转换、字符替换、换行符处理以及带重音字符的标准化。"

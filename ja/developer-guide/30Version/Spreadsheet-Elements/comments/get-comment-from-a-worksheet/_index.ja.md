@@ -1,8 +1,8 @@
 ---
 title: "ワークシートのコメントを取得 – Aspose.Cells Cloud API ドキュメント"
 type: docs
-url: /comments/get/
-aliases: [/get-comment-from-a-worksheet/]
+url: /ja/comments/get/
+aliases: [  /ja/get-comment-from-a-worksheet/ ]
 keywords: "Aspose.Cells, ワークシート コメント, API, GET, Excel"
 description: "Aspose.Cells Cloud API (v3.0) を使用して、セル名でワークシートのコメントを取得する方法を学習します。リクエスト URL、パラメータ、cURL の例、応答詳細、SDK のコードスニペットを含みます。"
 weight: 10

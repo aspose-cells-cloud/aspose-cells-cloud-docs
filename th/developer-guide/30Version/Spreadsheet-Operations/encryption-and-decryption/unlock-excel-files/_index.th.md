@@ -3,8 +3,8 @@ title: "ปลดล็อกไฟล์ Excel"
 second_title: "เอกสาร"
 linktype: "ปลดล็อกไฟล์ Excel"
 type: docs
-url: /unlock-excel-files/
-aliases: [/unlock/without-storage/, /unlock/, /unlock/without-using-storage/]
+url: /th/unlock-excel-files/
+aliases: [  /th/unlock/without-storage/ , /th/unlock/ , /th/unlock/without-using-storage/ ]
 keywords: "ปลดล็อก Excel, Aspose.Cells Cloud, REST API, การปลดล็อก Excel, สมุดงานที่ป้องกันด้วยรหัสผ่าน, SDK, C#, Java, Python, Node.js, Go, PHP, Ruby, Swift"
 description: "Aspose.Cells Cloud REST API มี endpoint สำหรับปลดล็อกไฟล์ Excel ที่ป้องกันด้วยรหัสผ่าน มี SDK สำหรับภาษาโปรแกรมต่าง ๆ หลายภาษา ได้แก่ Android, C#, Go, Java, Node.js, Perl, PHP, Python, Ruby และ Swift"
 ArticleTitle: "ปลดล็อกไฟล์ Excel โดยใช้ Aspose.Cells Cloud REST API"

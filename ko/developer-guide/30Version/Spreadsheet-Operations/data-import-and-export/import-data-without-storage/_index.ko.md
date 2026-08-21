@@ -3,8 +3,8 @@ title: "스토리지 사용 없이 데이터 가져오기 – Aspose.Cells Cloud
 second_title: "문서"
 linktitle: "스토리지 없이 데이터 가져오기"
 type: docs
-url: /import/without-using-storage/
-aliases: [/import-data-in-excel-worksheet-without-using-storage/]
+url: /ko/import/without-using-storage/
+aliases: [  /ko/import-data-in-excel-worksheet-without-using-storage/ ]
 keywords: "Aspose.Cells, 클라우드 API, 스토리지 없이 데이터 가져오기, Excel 가져오기 API, REST 가져오기"
 description: "Aspose.Cells Cloud API를 사용하여 Excel 워크북에 스토리지 없이 데이터를 가져오는 방법을 알아보세요. 요청 형식, 매개변수, cURL 예제, SDK 코드 및 오류 처리를 포함합니다."
 weight: 10

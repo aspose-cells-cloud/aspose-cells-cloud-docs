@@ -4,8 +4,8 @@ ArticleTitle: "Excelワークシートに背景を設定する – Aspose.Cells 
 second_title: "ドキュメント"
 linktitle: "追加"
 type: docs
-url: /worksheets/background/add/
-aliases: [/set-background-or-watermark-for-excel-worksheet/]
+url: /ja/worksheets/background/add/
+aliases: [  /ja/set-background-or-watermark-for-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel, ワークシート, 背景, REST API, SDK, 画像の追加"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシートに背景画像（PNG、JPEG、BMP）を追加する方法を学びます。エンドポイント、必要なパラメータ、認証手順、cURL の使用例、および SDK のコードサンプルを含みます。"
 weight: 180

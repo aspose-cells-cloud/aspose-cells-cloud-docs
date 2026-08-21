@@ -1,7 +1,7 @@
 ---
 title: "Изменение стиля ячейки в рабочем листе Excel"
 type: docs
-url: /change-cell-style-in-excel-worksheet/
+url: /ru/change-cell-style-in-excel-worksheet/
 weight: 30
 keywords:
   - Aspose.Cells

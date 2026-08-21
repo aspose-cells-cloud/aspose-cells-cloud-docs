@@ -3,7 +3,7 @@ title: "แก้ไขการ.pivot ของตาราง"
 ArticleTitle: "แก้ไขการ.pivot ของตาราง – Aspose.Cells Cloud API"
 second_title: "เอกสาร"
 linktype: "docs"
-url: /cells/unpivot/table
+url: /th/cells/unpivot/table
 aliases: []
 keywords: "Aspose.Cells, Unpivot, Transform"
 description: "สลับแถวและคอลัมน์ในสเปรดชีต"

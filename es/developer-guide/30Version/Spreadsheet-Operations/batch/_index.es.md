@@ -3,7 +3,7 @@ title: "Procesamiento por lotes de archivos Excel: Convertir, Bloquear, Proteger
 second_title: "Documentos"
 linktype: "documentación"
 type: docs
-url: /batch/
+url: /es/batch/
 keywords: "Procesamiento por lotes, Excel, conversión, bloqueo, protección, división, desbloqueo, Aspose.Cells Cloud API, referencia de API, operaciones por lotes"
 description: "La API de Aspose.Cells Cloud permite el procesamiento por lotes de múltiples archivos Excel para conversión, bloqueo, protección, división y desbloqueo. Incluye especificaciones detalladas de la API y soporte para SDK en Android, C#, Go, Java, NodeJS, Perl, PHP, Python, Ruby y Swift."
 weight: 35

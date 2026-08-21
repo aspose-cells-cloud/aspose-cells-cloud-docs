@@ -2,7 +2,7 @@
 title: "Rimuovi collegamenti ipertestuali"
 type: docs
 url: /it/hyperlinks/clear/
-aliases: [/add-hyperlinks-to-excel-worksheet/]
+aliases: [  /it/add-hyperlinks-to-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, rimuovi collegamenti ipertestuali, elimina collegamenti ipertestuali, REST API, foglio di lavoro, SDK"
 description: "Scopri come rimuovere tutti i collegamenti ipertestuali da un foglio di lavoro Excel utilizzando l'API REST Aspose.Cells Cloud o uno qualsiasi degli SDK supportati (C#, Java, Python, Node.js, Go, PHP, Ruby, Perl, ecc.)."
 weight: 40

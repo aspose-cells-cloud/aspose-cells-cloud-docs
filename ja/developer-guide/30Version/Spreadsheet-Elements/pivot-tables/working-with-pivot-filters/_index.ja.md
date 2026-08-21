@@ -3,8 +3,8 @@ title: "ピボットフィルターの使用"
 second_title: "Document"
 linktitle: フィルター
 type: docs
-url: /pivot-tables/add-filters/
-aliases: [/working-with-pivot-filters/]
+url: /ja/pivot-tables/add-filters/
+aliases: [  /ja/working-with-pivot-filters/ ]
 keywords: "Aspose.Cells, ピボットテーブル, フィルター, REST API, クラウド"
 description: "Aspose.Cells Cloud REST API を使用してピボットテーブルフィルターの追加、取得、削除を行う方法を学びます。リクエスト構文、必要なパラメータ、cURL の使用例、C# および Go の SDK スニペットが含まれます。"
 weight: 50

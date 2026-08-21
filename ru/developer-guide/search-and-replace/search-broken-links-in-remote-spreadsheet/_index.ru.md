@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Поиск и исправление битых ссылок в удалённых файлах Excel – облачный проверщик ссылок"
 linktype: "Search Remote Spreadsheets Broken Links"
 type: docs
-url: /search-broken-links-in-remote-spreadsheet/
+url: /ru/search-broken-links-in-remote-spreadsheet/
 keywords: "Excel, битые ссылки, API, облачные технологии, электронная таблица, валидация, Aspose.Cells"
 description: "Используйте API Aspose.Cells Cloud для сканирования удалённых книг Excel на наличие битых внешних ссылок, некорректных формул и отсутствующих источников данных."
 weight: 100

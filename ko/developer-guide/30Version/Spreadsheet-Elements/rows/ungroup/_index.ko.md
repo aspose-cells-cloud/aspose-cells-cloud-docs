@@ -3,8 +3,8 @@ title: "엑셀 워크시트에서 행 그룹 해제하기"
 second_title: "문서"
 linktitle: "그룹 해제"
 type: docs
-url: /rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
+url: /ko/rows/ungroup/
+aliases: [  /ko/ungroup-rows-in-excel-worksheet/ ]
 keywords: "행 그룹 해제, 엑셀, Aspose.Cells Cloud, REST API, SDK, 스프레드시트"
 description: "Aspose.Cells Cloud REST API 및 다양한 프로그래밍 언어용 SDK를 사용하여 엑셀 워크시트에서 행의 그룹을 해제하는 방법을 알아보세요."
 weight: 70

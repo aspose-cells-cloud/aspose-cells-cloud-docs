@@ -3,8 +3,8 @@ title: "Excel 워크시트에서 이름이 지정된 범위 이동하기"
 second_title: "문서"
 linktitle: "이동"
 type: docs
-url: /ranges/move/
-aliases: [/move-a-named-range-with-an-excel-worksheet/]
+url: /ko/ranges/move/
+aliases: [  /ko/move-a-named-range-with-an-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, 이름이 지정된 범위 이동, Excel 워크시트, REST API, 범위 이동, SDK 예제"
 description: "Aspose.Cells Cloud REST API v3.0을 사용하여 Excel 워크시트 내에서 이름이 지정된 범위를 이동하는 방법을 배워보세요. 엔드포인트 세부 정보, 인증, 예제 및 SDK 코드 예제가 포함되어 있습니다."
 weight: 20

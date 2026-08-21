@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Text in Remote-Excel-Tabellenblättern suchen – Daten in spezifischen Bereichen finden"
 linktitle: "Inhalte in Remote-Bereichen durchsuchen"
 type: docs
-url: /search-content-in-remote-range/
+url: /de/search-content-in-remote-range/
 keywords: "Aspose.Cells, Excel-API, Textsuche, Remote-Bereich, Cloud-Tabellenblatt, REST-API, Datenerschließung"
 description: "Suchen Sie nach Text, Zahlen oder Formeln in einem bestimmten Bereich einer Excel-Arbeitsmappe, die in Aspose Cloud gespeichert ist."
 weight: 100

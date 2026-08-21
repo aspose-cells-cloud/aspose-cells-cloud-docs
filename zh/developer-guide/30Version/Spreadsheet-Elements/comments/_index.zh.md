@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "评论"
 type: docs
 url: /zh/comments/
-aliases: [/zh/working-with-comments/]
+aliases: [  /zh/working-with-comments/ ]
 keywords: "Aspose.Cells Cloud, Excel 评论 API, 电子表格评论, REST API"
 description: "学习如何使用 Aspose.Cells Cloud REST API v3.0 添加、获取、更新和删除 Excel 评论，包含代码示例、前置条件及错误处理。"
 weight: 100

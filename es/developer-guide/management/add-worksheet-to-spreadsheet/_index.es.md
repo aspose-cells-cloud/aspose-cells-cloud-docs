@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Cómo agregar hojas de cálculo a Excel: Insertar nuevas hojas en ubicaciones específicas"
 linktitle: "Agregar hoja de cálculo a hoja de cálculo"
 type: docs
-url: /add-worksheet-to-spreadsheet/
+url: /es/add-worksheet-to-spreadsheet/
 keywords: "excel, agregar hoja de cálculo, aspose cells api, hoja de cálculo, api en la nube, tipo de hoja, posición de hoja"
 description: "Aprenda cómo agregar programáticamente una nueva hoja de cálculo, hoja de gráficos o hoja de macros a un libro de Excel usando la API de Aspose.Cells Cloud. Controla el tipo de hoja, nombre y posición de inserción en una única llamada REST."
 weight: 100

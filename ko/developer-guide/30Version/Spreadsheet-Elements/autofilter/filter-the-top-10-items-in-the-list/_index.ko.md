@@ -4,7 +4,7 @@ ArticleTitle: "Excel 워크시트에 상위 10개 필터 추가 – Aspose.Cells
 second_title: "문서"
 linktitle: "상위 10개 필터 추가"
 type: docs
-url: /autofilter/add-top-10-filter/
+url: /ko/autofilter/add-top-10-filter/
 aliases:
   [/filter-the-top-10-items-in-the-list/, /autofilter/add-a-top-10-filter/]
 keywords: "Aspose.Cells, AutoFilter, Top 10 필터, Excel API"

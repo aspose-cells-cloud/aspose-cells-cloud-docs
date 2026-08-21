@@ -3,8 +3,8 @@ title: "Aspose.Cells Cloud API – セル範囲の結合"
 second_title: "ドキュメント"
 linktitle: "結合"
 type: docs
-url: /ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+url: /ja/ranges/merge/
+aliases: [  /ja/combines-a-range-of-cells-into-a-single-cell/ ]
 keywords: "Aspose.Cells, セル結合, Excel API, REST, クラウドSDK"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシート上のセル範囲を 1 つのセルに結合します。C#、Java、Python などのリクエスト形式、パラメータ、SDK サンプルについて学びます。"
 weight: 20

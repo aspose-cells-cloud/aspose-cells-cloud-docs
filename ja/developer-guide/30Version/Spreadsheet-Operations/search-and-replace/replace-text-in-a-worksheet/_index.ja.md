@@ -3,8 +3,8 @@ title: "Excelワークシート内のテキストを置換する – Aspose.Cell
 second_title: "ドキュメント"
 linktitle: "ワークシート内のテキストを置換"
 type: docs
-url: /worksheets/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /ja/worksheets/replace-text/
+aliases: [  /ja/replace-text-in-a-workbook/ ]
 keywords: "Aspose.Cells, テキスト置換, Excel, REST API, スプレッドシート, ワークシート"
 description: "Aspose.Cells Cloud API (v3.0) を使用して Excel ワークシート内のテキストを置換する方法を学びます。前提条件、認証、リクエスト構文、cURL の例、SDK のコードサンプル、レスポンスの詳細、エラーハンドリングを含みます。"
 ArticleTitle: "Excelワークシート内のテキストを置換する – Aspose.Cells Cloud API"

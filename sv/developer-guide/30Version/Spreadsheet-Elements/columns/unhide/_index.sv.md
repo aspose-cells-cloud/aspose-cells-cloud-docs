@@ -4,7 +4,7 @@ ArticleTitle: "Visa dolda kolumner i ett Excel-ark - Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Visa"
 type: docs
-url: /columns/unhide/
+url: /sv/columns/unhide/
 aliases:
   [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
 keywords: "Aspose.Cells, molntjänst, visa kolumner, Excel, REST, SDK"

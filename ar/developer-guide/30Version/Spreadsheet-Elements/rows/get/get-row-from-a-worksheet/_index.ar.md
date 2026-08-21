@@ -3,8 +3,8 @@ title: "الحصول على وصف الصف من ورقة عمل Excel"
 second_title: "مستند"
 linktitle: "صف"
 type: docs
-url: /rows/get/row/
-aliases: [/get-row-from-a-worksheet/]
+url: /ar/rows/get/row/
+aliases: [  /ar/get-row-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud, API صف Excel, الحصول على صف ورقة العمل, REST API, .NET SDK, Java SDK, Python SDK"
 description: "استرجاع معلومات مفصّلة (مثل الارتفاع، النمط، الحالة المخفية، إلخ) لصف معيّن في ورقة عمل Excel باستخدام Aspose.Cells Cloud REST API. يشمل مثالًا لـ curl، وأجزاء من أكواد SDK، ومعالجة الأخطاء."
 weight: 10

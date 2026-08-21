@@ -4,7 +4,7 @@ second_title: "Документ"
 linktitle: "Добавление OLE-объекта"
 type: docs
 url: /ru/oleobjects/add/
-aliases: [/add-oleobject-to-excel-worksheet/]
+aliases: [  /ru/add-oleobject-to-excel-worksheet/ ]
 keywords: "Добавление OLE-объекта, Excel, Aspose.Cells Cloud, REST API, SDK"
 description: "Используйте Aspose.Cells Cloud REST API для добавления OLE-объектов в рабочие листы Excel. API можно вызывать напрямую или через SDK для C#, Java, PHP, Ruby, Node.js, Python, Perl и Go."
 ArticleTitle: "Добавление OLE-объекта в рабочий лист Excel с помощью Aspose.Cells Cloud API"

@@ -4,7 +4,7 @@ second title: "مستند"
 ArticleTitle: "إدارة إكسل عبر السحابة – استرجاع سريع لتاريخ إصدارات الملف في Aspose.Cells Cloud"
 linktitle: "الحصول على إصدارات الملف"
 type: docs
-url: /get-file-versions/
+url: /ar/get-file-versions/
 keywords: "واجهة برمجة تطبيقات Aspose Cells، إصدارات الملفات، إصدار جداول البيانات، واجهة برمجة تطبيقات التخزين السحابي، REST، تاريخ ملف إكسل"
 description: "احصل على قائمة كاملة بتاريخ الإصدارات لأي ملف إكسل مخزن في Aspose.Cells Cloud. تدعم تحديد مساحة التخزين، المصادقة، وأكواد الأخطاء التفصيلية."
 weight: 100

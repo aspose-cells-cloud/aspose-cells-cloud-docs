@@ -3,8 +3,8 @@ title: "Excelワークシートの範囲データを並び替える"
 second_title: "Document"
 linktitle: "Sort"
 type: docs
-url: /worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
+url: /ja/worksheets/sort-data/
+aliases: [  /ja/sort-worksheet-data/ ]
 keywords: "Aspose.Cells Cloud, Excel sort API, worksheet range sorting, REST API, dataSorter"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシート内の特定の範囲を並び替えます。エンドポイント、必要なパラメータ、認証手順、エラー処理、SDK の使用例を含みます。"
 weight: 20

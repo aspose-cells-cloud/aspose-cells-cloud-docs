@@ -3,7 +3,7 @@ title: "นำเข้าอาเรย์สตริง 2 มิติลง
 second_title: "เอกสาร"
 linktitle: "นำเข้าอาเรย์สตริง 2 มิติ"
 type: docs
-url: /import-a-2d-string-array-into-excel-worksheet/
+url: /th/import-a-2d-string-array-into-excel-worksheet/
 aliases:
   [
     "/import-2dimension-string-array-into-excel-worksheet/",

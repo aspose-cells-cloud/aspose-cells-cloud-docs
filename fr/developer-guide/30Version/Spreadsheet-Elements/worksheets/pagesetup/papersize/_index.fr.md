@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Liste complète des constantes de format de papie
 second_title: "Document"
 linktitle: "Format de papier"
 type: docs
-url: /paper-size/
+url: /fr/paper-size/
 keywords: "format de papier, Aspose.Cells Cloud, API REST, feuille de calcul, A4, Letter, ISO, JIS, PRC"
 description: "Liste complète des constantes de format de papier prises en charge par l’API REST Aspose.Cells Cloud, incluant les dimensions et des exemples d’utilisation pour définir des formats personnalisés dans les feuilles de calcul."
 weight: 20

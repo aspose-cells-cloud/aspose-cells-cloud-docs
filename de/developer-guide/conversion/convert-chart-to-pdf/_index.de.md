@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie ein lokales Tabellenkalkulationsdiagramm in eine PDF-Datei: Schritt-für-Schritt-Anleitung"
 linktitle: "Diagramm in PDF konvertieren"
 type: docs
-url: /convert-chart-to-pdf/
+url: /de/convert-chart-to-pdf/
 keywords: "Aspose Cells, Diagramm, PDF, Excel, Konvertierung, Cloud API"
 description: "Exportieren Sie Diagramme aus lokalen Excel-Dateien in das PDF-Format mithilfe der Aspose.Cells Cloud REST API. Unterstützt XLSX- und XLS-Dateien."
 weight: 100

@@ -3,8 +3,8 @@ title: "Bereich in einem Arbeitsblatt mit Einfügeoptionen kopieren"
 second_title: "Dokument"
 linktitle: "Kopieren"
 type: docs
-url: /ranges/copy/
-aliases: [/copy-range-in-a-worksheet-with-paste-options/]
+url: /de/ranges/copy/
+aliases: [  /de/copy-range-in-a-worksheet-with-paste-options/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, Bereich kopieren, Arbeitsblatt, Einfügeoptionen"
 description: "Verwenden Sie die Aspose.Cells Cloud REST API, um einen Bereich innerhalb eines Excel-Arbeitsblatts mit vollständiger Unterstützung für Einfügeoptionen zu kopieren. Enthält SDK-Beispiele für mehrere Programmiersprachen."
 weight: 20

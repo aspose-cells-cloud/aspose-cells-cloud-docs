@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Excel에서 워크시트를 삭제하는 방법 - 워크북에서 시트 제거하기"
 linktype: "워크시트 삭제"
 type: docs
-url: /delete-worksheet-from-spreadsheet/
+url: /ko/delete-worksheet-from-spreadsheet/
 keywords: "Aspose Cells, 워크시트 삭제 API, Excel 시트 제거, 클라우드 스프레드시트, REST API"
 description: "Aspose.Cells Cloud API를 사용하여 Excel 파일에서 워크시트를 삭제하는 방법을 알아보세요. 엔드포인트, 매개변수, 샘플 cURL 및 SDK 예제가 포함됩니다."
 weight: 100

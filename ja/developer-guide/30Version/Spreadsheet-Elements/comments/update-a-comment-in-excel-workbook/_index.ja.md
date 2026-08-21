@@ -1,8 +1,8 @@
 ---
 title: "ワークシートのセルコメントを更新する"
 type: docs
-url: /comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
+url: /ja/comments/update/
+aliases: [  /ja/update-a-comment-in-excel-workbook/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, ワークシート, セルコメント, ワークシートコメントの更新, コメントオブジェクト"
 description: "Aspose.Cells Cloud REST API を使用して Excel ブック内のワークシートのセルに含まれるコメントを更新します。リクエストの詳細、レスポンスコード、SDK の使用例を含みます。"
 weight: 30

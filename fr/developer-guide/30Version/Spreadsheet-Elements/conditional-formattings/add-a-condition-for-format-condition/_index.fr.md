@@ -3,7 +3,7 @@ title: Ajouter une condition au formatage conditionnel
 description: Découvrez comment ajouter une condition à un formatage conditionnel d'une feuille de calcul à l'aide de l'API REST Aspose.Cells Cloud (v3.0). Inclut l'URL du point de terminaison, les paramètres, l'authentification, un exemple cURL, des extraits de code SDK et la gestion des erreurs.
 keywords: "Aspose.Cells Cloud, Formatage conditionnel, Ajouter une condition, API REST, Excel, Feuille de calcul"
 type: docs
-url: /conditional-formattings/add-a-condition/
+url: /fr/conditional-formattings/add-a-condition/
 aliases:
   - /add-a-condition-for-format-condition/
 weight: 40

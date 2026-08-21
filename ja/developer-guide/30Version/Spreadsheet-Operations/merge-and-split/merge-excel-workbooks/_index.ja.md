@@ -3,8 +3,8 @@ title: "Excel ワークブックを別のワークブックにマージする"
 second_title: "Document"
 linktitle: "Excel ワークブックを別のワークブックにマージする"
 type: docs
-url: /merge-an-excel-file-into-the-excel-file/
-aliases: [/merge-excel-workbooks/, /workbook/merge/]
+url: /ja/merge-an-excel-file-into-the-excel-file/
+aliases: [  /ja/merge-excel-workbooks/ , /ja/workbook/merge/ ]
 keywords: "Excel マージ, Aspose.Cells Cloud, ワークブック API, REST API, スpreadsheet マージ, クラウド SDK, 認証, mergeWith, cURL サンプル"
 description: "Aspose.Cells Cloud REST API (v3.0) を使って、1 つの Excel ワークブックを別のワークブックにマージするためのステップ・バイ・ステップ・ガイド。認証方法、必要な mergeWith パラメータ、cURL サンプル、および SDK のコードスニペットを含みます。"
 ArticleTitle: "Aspose.Cells Cloud API を使って Excel ワークブックを別のワークブックにマージする"

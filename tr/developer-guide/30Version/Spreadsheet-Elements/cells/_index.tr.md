@@ -4,8 +4,8 @@ ArticleTitle: "Excel Hücreleriyle Çalışma – Aspose.Cells Cloud Dokümantas
 second_title: "Belge"
 linktitle: "Hücreler"
 type: docs
-url: /working-with-cells/
-aliases: [/working-with-worksheets/]
+url: /tr/working-with-cells/
+aliases: [  /tr/working-with-worksheets/ ]
 keywords: "Excel, Aspose.Cells, hücre işlemleri, elektronik tablo API'si, REST API, hücre stillendirme, hücre birleştirme, formül hesaplama"
 description: "Excel hücre işlemleri için Aspose.Cells Cloud API'sini keşfedin. Hücre değerleri ayarlama, stiller uygulama, hücreleri birleştirme/birleştirmeyi kaldırma ve formül hesaplama gibi işlemler dahil olmak üzere kapsamlı işlevsellik."
 weight: 100

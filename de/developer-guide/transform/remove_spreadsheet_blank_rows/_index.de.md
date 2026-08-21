@@ -4,7 +4,7 @@ ArticleTitle: "Leere Zeilen in Tabellenkalkulation entfernen – Aspose.Cells Cl
 second_title: "Dokument"
 linktitle: "Leere Zeilen in Tabellenkalkulation entfernen"
 type: docs
-url: /cells/remove/blank-rows
+url: /de/cells/remove/blank-rows
 aliases: []
 keywords: "Aspose.Cells, leere Zeilen entfernen, Tabellenkalkulation, API"
 description: "Löscht alle leeren Zeilen aus einer Tabellenkalkulationsdatei."

@@ -4,7 +4,7 @@ second_title: "文档"
 ArticleTitle: "如何将本地电子表格中的图表转换为 PDF 文件：分步指南"
 linktype: "Convert Chart to PDF"
 type: docs
-url: /convert-chart-to-pdf/
+url: /zh/convert-chart-to-pdf/
 keywords: "Aspose Cells, 图表, PDF, Excel, 转换, 云 API"
 description: "使用 Aspose.Cells Cloud REST API 将本地 Excel 文件中的图表导出为 PDF 格式。支持 XLSX 和 XLS 文件。"
 weight: 100

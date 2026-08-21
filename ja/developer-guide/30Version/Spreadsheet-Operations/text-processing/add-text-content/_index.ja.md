@@ -3,7 +3,7 @@ title: "Excel にテキストを追加: スプレッドシート Web API を使�
 second_title: "ドキュメント"
 linktitle: "テキストの追加"
 type: docs
-url: /excel-add-text/
+url: /ja/excel-add-text/
 keywords: "Excel, Aspose.Cells, テキスト追加, スプレッドシート API, REST API, Office Cloud, テキスト挿入, Excel API"
 description: "Aspose.Cells Cloud API を使用して Excel スプレッドシート内の指定された場所にテキストを追加します。"
 weight: 100

@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud prisplan"
 linktitle: "Prisplan"
 type: docs
-url: /pricing-plan/
+url: /sv/pricing-plan/
 description: "Utforska Aspose.Cells Cloud-priser: 150 kostnadsfria API-anrop varje månad, därefter betala enligt förbrukning med priser från och med 0,007 $ per anrop. Inga dolda uppgraderingar – endast transparent,梯gradvis prissetting."
 weight: 70
 keywords: "Aspose.Cells Cloud-pris, kostnad per API-anrop, Excel-API enligt förbrukning, pris för molnbaserade kalkylblad"

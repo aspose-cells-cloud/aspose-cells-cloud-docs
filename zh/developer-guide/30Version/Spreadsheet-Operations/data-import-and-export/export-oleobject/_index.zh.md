@@ -3,8 +3,8 @@ title: "导出 OLE 对象 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "OLE 对象"
 type: docs
-url: /export-excel-ole-object/
-aliases: [/export/excel-ole-object/]
+url: /zh/export-excel-ole-object/
+aliases: [  /zh/export/excel-ole-object/ ]
 keywords: "Aspose.Cells, OLE 对象, 导出, Excel, 云 API, PDF, PNG, DOCX, PPTX"
 description: "使用 Aspose.Cells Cloud API 导出 Excel 工作簿中的 OLE 对象。了解请求格式、参数、示例 cURL 以及错误处理。"
 weight: 20

@@ -3,8 +3,8 @@ title: "Esporta cartella di lavoro"
 second_title: "Documento"
 linktitle: "Cartella di lavoro"
 type: docs
-url: /export-excel-to-different-formats/
-aliases: [/export/excel-to-different-formats/]
+url: /it/export-excel-to-different-formats/
+aliases: [  /it/export/excel-to-different-formats/ ]
 keywords: "Aspose.Cells Cloud, esportazione Excel, conversione cartella di lavoro, PDF, CSV, JSON, formati immagine, API foglio di calcolo, XLSX, ODS, PNG"
 description: "Una guida passo-passo per esportare cartelle di lavoro Excel in diversi formati—tra cui PDF, CSV, JSON e vari tipi di immagine—utilizzando l’API REST Aspose.Cells Cloud e i relativi SDK."
 weight: 20

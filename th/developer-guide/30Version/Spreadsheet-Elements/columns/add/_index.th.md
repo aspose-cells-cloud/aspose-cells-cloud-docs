@@ -3,7 +3,7 @@ title: "เพิ่มคอลัมน์ว่างลงในแผ่น
 second_title: "เอกสาร"
 linktitle: "เพิ่ม"
 type: docs
-url: /columns/add/
+url: /th/columns/add/
 aliases:
   - /add-an-empty-column-in-an-excel-worksheet/
   - /add-an-empty-column-in-a-worksheet/

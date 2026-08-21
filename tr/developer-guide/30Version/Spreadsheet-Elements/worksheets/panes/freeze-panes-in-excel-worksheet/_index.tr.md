@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasında Bölmeleri Dondurma"
 second_title: "Belge"
 linktitle: "Dondur"
 type: docs
-url: /worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+url: /tr/worksheets/panes/freeze/
+aliases: [  /tr/freeze-panes-in-excel-worksheet/ , /tr/worksheets/freeze-panes/ ]
 keywords: "Aspose.Cells Cloud, Bölmeleri Dondurma, Excel, REST API, Çalışma Sayfası"
 description: "Aspose.Cells Cloud REST API ile bir Excel çalışma sayfasında satır ve sütunları nasıl donduracağını öğrenin. Uç nokta sözdizimi, gerekli parametreler, cURL örneği, kimlik doğrulama yönlendirmesi, hata yanıt ayrıntıları ve birden fazla dil için SDK kod örneklerini içerir."
 weight: 190

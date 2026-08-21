@@ -1,8 +1,8 @@
 ---
 title: "엑셀 워크시트에서 차트 범례 숨기기 – Aspose.Cells Cloud API"
 type: docs
-url: /charts/legend/hide/
-aliases: [/hide-chart-legend-in-a-worksheet/]
+url: /ko/charts/legend/hide/
+aliases: [  /ko/hide-chart-legend-in-a-worksheet/ ]
 weight: 110
 keywords: "Aspose.Cells, 엑셀, 차트 범례 숨기기, REST API, 클라우드 SDK, 차트 범례"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크시트에서 차트 범례를 숨기는 방법을 배웁니다. HTTPS 엔드포인트, 필요한 인증, 요청 구문, 응답 세부 정보, 오류 처리 및 SDK 예제를 포함합니다."

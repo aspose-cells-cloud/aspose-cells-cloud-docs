@@ -1,8 +1,8 @@
 ---
 title: "Convertire un grafico Excel in immagine – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/to-image/
-aliases: [/convert-charts-to-image/]
+url: /it/charts/to-image/
+aliases: [  /it/convert-charts-to-image/ ]
 weight: 50
 keywords: "Aspose.Cells Cloud, grafico in immagine, conversione grafico Excel, REST API, formato immagine, PNG, JPEG, BMP, TIFF, GIF"
 description: "Scopri come convertire oggetti grafico Excel in immagini PNG, JPEG, BMP, TIFF o GIF utilizzando Aspose.Cells Cloud REST API. Include dettagli sull'endpoint, parametri, esempio cURL, frammenti SDK, esempio di risposta e gestione degli errori."

@@ -2,8 +2,8 @@
 title: "العمل مع مهمة التحويل"
 second_title: "مستند"
 type: docs
-url: /tasks/convert/
-aliases: [/working-with-convert-task/]
+url: /ar/tasks/convert/
+aliases: [  /ar/working-with-convert-task/ ]
 keywords: "Aspose.Cells Cloud، واجهة برمجة تطبيقات REST، مهمة التحويل، إكسل، جدول بيانات، PDF، CSV، JSON، Markdown"
 description: "تقدم واجهة برمجة تطبيقات Cells Cloud لـ إكسل دعمًا للمهام لتحويل ملفات إكسل إلى تنسيقات متنوعة."
 weight: 30

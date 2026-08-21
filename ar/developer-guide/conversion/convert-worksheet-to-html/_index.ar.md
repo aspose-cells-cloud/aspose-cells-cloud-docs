@@ -4,7 +4,7 @@ second_title: "مستند"
 ArticleTitle: "كيفية تحويل ورقة عمل إلى HTML باستخدام واجهة Aspose.Cells Cloud API"
 linktitle: "تحويل ورقة العمل إلى HTML"
 type: docs
-url: /convert-worksheet-to-html/
+url: /ar/convert-worksheet-to-html/
 description: "تعرّف على كيفية تحويل ورقة عمل Excel إلى HTML باستخدام واجهة Aspose.Cells Cloud API – بدون رفع ملفات، مع دعم الخطوط المخصّصة، والمناطق، ومعالجة الأخطاء."
 keywords: "Aspose.Cells، تحويل Excel إلى HTML، تحويل ورقة العمل، واجهة سحابية"
 weight: 100

@@ -3,8 +3,8 @@ title: "Buscar texto en un libro de Excel"
 second_title: "Documento"
 linktitle: "Buscar en el libro"
 type: docs
-url: /workbook/find-text/
-aliases: [/find-text-in-a-workbook/]
+url: /es/workbook/find-text/
+aliases: [  /es/find-text-in-a-workbook/ ]
 weight: 30
 keywords: "Aspose.Cells, buscar texto, API de Excel, búsqueda en libro"
 description: "Aprenda a utilizar la API en la nube de Aspose.Cells para **buscar texto** en libros de Excel (XLS‑X, ODS). Incluye ejemplo de cURL, fragmentos de SDK y esquema de respuesta. Comience ahora."

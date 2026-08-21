@@ -1,8 +1,8 @@
 ---
 title: "从工作表中获取图表标题"
 type: docs
-url: /charts/title/get/
-aliases: [/get-chart-title-from-a-worksheet/]
+url: /zh/charts/title/get/
+aliases: [  /zh/get-chart-title-from-a-worksheet/ ]
 weight: 120
 keywords:
   - "Aspose.Cells Cloud"

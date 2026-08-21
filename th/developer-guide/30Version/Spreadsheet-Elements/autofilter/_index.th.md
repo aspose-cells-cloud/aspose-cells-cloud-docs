@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 linktype: "AutoFilter"
 type: docs
 url: /th/autofilter/
-aliases: [/working-with-autofilter/]
+aliases: [  /th/working-with-autofilter/ ]
 keywords: "AutoFilter, Aspose.Cells Cloud, ตัวกรอง Excel, ตัวกรองสี, ตัวกรองวันที่, ตัวกรองแบบไดนามิก, ตัวกรองตัวเลข, ตัวกรองข้อความ, ตัวกรองช่องว่าง, ตัวกรองแบบกำหนดเอง"
 description: "เรียนรู้วิธีเพิ่ม แก้ไข และลบตัวกรองอัตโนมัติของ Excel (สี วันที่ ไดนามิก ตัวเลข ข้อความ ช่องว่าง) โดยใช้ API ของ Aspose.Cells Cloud พร้อมตัวอย่างโค้ดในหลายภาษา"
 weight: 100

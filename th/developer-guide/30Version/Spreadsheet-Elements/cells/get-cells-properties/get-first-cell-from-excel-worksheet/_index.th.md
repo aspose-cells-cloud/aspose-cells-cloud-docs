@@ -1,7 +1,7 @@
 ---
 title: "รับเซลล์แรก (A1) จากแผ่นงาน Excel"
 type: docs
-url: /get-first-cell-from-excel-worksheet/
+url: /th/get-first-cell-from-excel-worksheet/
 weight: 20
 keywords: "Aspose.Cells Cloud, Excel, REST API, รับเซลล์แรก, แผ่นงาน, A1, API v3"
 description: "เรียนรู้วิธีดึงค่าเซลล์แรก (A1) ของแผ่นงาน Excel โดยใช้ Aspose.Cells Cloud REST API เวอร์ชัน 3.0 รวมถึงตัวอย่างคำสั่ง cURL, โครงสร้าง JSON ของการตอบกลับ, ตัวอย่างข้อผิดพลาด และตัวอย่าง SDK สำหรับ C#, Java, PHP, Python และอื่นๆ"

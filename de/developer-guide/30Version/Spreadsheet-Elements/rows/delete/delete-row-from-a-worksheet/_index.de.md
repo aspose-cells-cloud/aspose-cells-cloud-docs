@@ -3,8 +3,8 @@ title: "Eine Zeile in einem Excel-Arbeitsblatt löschen"
 second_title: "Dokument"
 linktitle: "Zeile"
 type: docs
-url: /rows/delete/row/
-aliases: [/delete-row-from-a-worksheet/]
+url: /de/rows/delete/row/
+aliases: [  /delete-row-from-a-worksheet/ ]
 description: "Verwenden Sie den DELETE /worksheets/{sheetName}/cells/rows/{rowIndex}-Endpunkt, um eine bestimmte Zeile aus einem Excel-Arbeitsblatt über die Aspose.Cells Cloud REST API zu entfernen. Enthält cURL-Befehl, SDK-Beispiele und vollständige Parameterreferenz."
 keywords: "Aspose.Cells, Zeile löschen, Excel, API, REST, Cloud, SDK"
 weight: 80

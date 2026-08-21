@@ -1,7 +1,7 @@
 ---
 title: "워크시트 하이퍼링크 가져오기"
 type: docs
-url: /hyperlinks/get/
+url: /ko/hyperlinks/get/
 keywords: "Aspose.Cells Cloud, 워크시트 하이퍼링크 가져오기, Excel 하이퍼링크 API, REST, JWT 인증, Excel 워크시트, API 엔드포인트"
 description: "Aspose.Cells Cloud API(v3.0)를 사용하여 Excel 워크시트에서 특정 하이퍼링크를 검색합니다. 엔드포인트, 매개변수, cURL 예제, 인증 세부 정보, 오류 처리, SDK 스니펫을 포함합니다."
 weight: 10

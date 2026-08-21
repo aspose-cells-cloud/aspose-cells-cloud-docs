@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud SDK for Ruby: Dönüştür, birleştir, böl, koru, ara, değiştir ve daha fazlası"
 linktype: "Aspose.Cells Cloud SDK for Ruby"
 type: docs
-url: /available-sdks/aspose-cells-cloud-ruby/
+url: /tr/available-sdks/aspose-cells-cloud-ruby/
 description: "Aspose.Cells Cloud SDK for Ruby, Office kurulumlarına ihtiyaç duymadan Excel nesneleri oluşturmak, dönüştürmek, birleştirmek, bölmek, korumak, aramak ve değiştirmek için akıcı, platformlar arası bir API sağlar."
 weight: 30
 keywords: "Ruby, Aspose.Cells Cloud, Excel SDK, REST API, Dönüştür, Birleştir, Böl, Koru, Ara, Değiştir, Grafik, Pivot Tablo, Tablo/Liste Nesnesi, PDF, CSV, JSON, Markdown"

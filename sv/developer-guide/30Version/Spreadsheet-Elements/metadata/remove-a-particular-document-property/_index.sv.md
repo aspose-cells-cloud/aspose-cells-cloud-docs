@@ -3,8 +3,8 @@ title: "Ta bort en specifik dokumentegenskap"
 second_title: "Dokument"
 linktitle: "Ta bort"
 type: docs
-url: /document-properties/delete/
-aliases: [/remove-a-particular-document-property/]
+url: /sv/document-properties/delete/
+aliases: [  /sv/remove-a-particular-document-property/ ]
 keywords: "Aspose.Cells, ta bort dokumentegenskap, Excel-metadata-API, REST, moln-SDK, cURL-exempel"
 description: "Ta bort en specifik dokumentegenskap från en Excel-arbetsbok med Aspose.Cells Cloud REST API v3.0. Innehåller cURL- och SDK-exempel för C#, Java, Python och mer."
 weight: 50

@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "Aspose.Cells Cloud 업로드 파일 API – 클라우드에서 파일을 빠르게 업로드하기 위한 인터페이스"
 linktitle: "파일 업로드"
 type: docs
-url: /upload-file/
+url: /ko/upload-file/
 keywords: "Aspose.Cells, 파일 업로드, Excel API, 클라우드 저장소, REST API"
 description: "Aspose.Cells Cloud API를 사용해 파일을 업로드하는 가이드로, 요청 매개변수, HTTP 상태 코드, 오류 처리 및 코드 예제를 포함합니다."
 weight: 100

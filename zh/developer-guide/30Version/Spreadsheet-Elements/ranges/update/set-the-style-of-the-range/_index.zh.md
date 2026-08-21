@@ -3,8 +3,8 @@ title: "设置范围样式 – Aspose.Cells Cloud API"
 second_title: "文档"
 linktitle: "设置范围样式"
 type: docs
-url: /ranges/update/style/
-aliases: [/set-the-style-of-the-range/]
+url: /zh/ranges/update/style/
+aliases: [  /zh/set-the-style-of-the-range/ ]
 keywords: "Aspose.Cells, 范围样式, API, Excel, 云"
 description: "了解如何使用 Aspose.Cells Cloud REST API 为 Excel 工作表中的单元格范围设置样式。内容包括身份验证步骤、请求格式、响应详情，以及适用于 .NET、Java、Python、Go 等语言的 SDK 示例。"
 weight: 70

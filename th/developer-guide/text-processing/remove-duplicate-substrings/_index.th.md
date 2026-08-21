@@ -4,7 +4,7 @@ second_title: "เอกสาร"
 ArticleTitle: "ตัวลบซับสตริงซ้ำใน Excel – ลบข้อความที่ซ้ำกันในเซลล์"
 linktitle: "ลบซับสตริงที่ซ้ำกัน"
 type: docs
-url: /remove-duplicate-substrings/
+url: /th/remove-duplicate-substrings/
 keywords: "Aspose.Cells, ซับสตริงซ้ำ, Excel API, การทำความสะอาดข้อความ, คลาวด์"
 description: "ลบซับสตริงที่ซ้ำกันออกจากเซลล์ Excel ผ่าน Aspose.Cells Cloud API โดยรักษาการจัดรูปแบบและการตรวจสอบข้อมูลไว้"
 weight: 100

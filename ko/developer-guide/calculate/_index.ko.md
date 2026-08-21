@@ -4,7 +4,7 @@ second_title: "문서"
 ArticleTitle: "데이터 역량 강화: 핵심 엑셀 계산법 배우기 – 더하기, 빼기, 곱하기, 나누기 및 더 많은 기능"
 linktitle: "계산"
 type: docs
-url: /calculate/ko/
+url: /ko/calculate/ko/
 keywords: "Aspose.Cells Cloud, 엑셀 계산 API, SUM, COUNT, AVERAGE, MIN, MAX, 기본 산술 연산, REST API, 스프레드시트 계산"
 description: "Aspose.Cells Cloud REST API를 사용하여 엑셀 워크시트에서 SUM, COUNT, AVERAGE, MIN, MAX 및 기본 산술 연산을 계산하는 방법을 알아보세요. 요청 구문, 샘플 코드, 응답 및 오류 처리를 포함합니다."
 weight: 20

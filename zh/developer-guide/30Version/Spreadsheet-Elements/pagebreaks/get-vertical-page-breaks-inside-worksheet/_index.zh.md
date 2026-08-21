@@ -3,8 +3,8 @@ title: "获取垂直分页符"
 second_title: "文档"
 linktitle: "获取垂直分页符"
 type: docs
-url: /page-breaks/get-vertical-page-breaks/
-aliases: [/get-vertical-page-breaks-inside-worksheet/]
+url: /zh/page-breaks/get-vertical-page-breaks/
+aliases: [  /zh/get-vertical-page-breaks-inside-worksheet/ ]
 keywords: "Aspose.Cells, 垂直分页符, Excel API, 云电子表格, REST API"
 description: "使用 Aspose.Cells Cloud REST API（v3.0）从 Excel 工作表中检索垂直分页符。包含 HTTPS 端点、必需参数、cURL 示例、响应详情、错误处理及 SDK 示例。"
 weight: 20

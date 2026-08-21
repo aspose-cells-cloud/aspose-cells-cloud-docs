@@ -3,8 +3,8 @@ title: "将 JSON 数据导入 Excel"
 second_title: "文档"
 linktitle: "导入 JSON"
 type: docs
-url: /import-json-data-into-excel/
-aliases: [/import/json/]
+url: /zh/import-json-data-into-excel/
+aliases: [  /zh/import/json/ ]
 keywords: "Aspose.Cells Cloud, JSON 导入, Excel API, REST 导入 JSON, SDK 示例"
 description: "了解如何使用 Aspose.Cells Cloud REST API 将 JSON 数据导入 Excel 工作表。包含端点详情、请求/响应示例以及适用于 .NET、Java 和 Python 的 SDK 代码。"
 weight: 40

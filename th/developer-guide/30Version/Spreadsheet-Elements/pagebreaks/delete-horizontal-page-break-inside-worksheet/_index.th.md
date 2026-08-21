@@ -4,8 +4,8 @@ ArticleTitle: "Aspose.Cells Cloud – ลบตัวแบ่งหน้าแ
 second_title: "เอกสาร"
 linktitle: "ลบตัวแบ่งหน้าแนวนอน"
 type: docs
-url: /page-breaks/delete-horizontal-page-break/
-aliases: [/delete-horizontal-page-break-inside-worksheet/]
+url: /th/page-breaks/delete-horizontal-page-break/
+aliases: [  /th/delete-horizontal-page-break-inside-worksheet/ ]
 keywords: "Aspose.Cells Cloud, ลบตัวแบ่งหน้าแนวนอน, สมุดงาน Excel, REST API, SDK"
 description: "ลบตัวแบ่งหน้าแนวนอนออกจากสมุดงาน Excel โดยใช้ REST API ของ Aspose.Cells Cloud มี SDK ให้ใช้งานสำหรับ C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 weight: 50

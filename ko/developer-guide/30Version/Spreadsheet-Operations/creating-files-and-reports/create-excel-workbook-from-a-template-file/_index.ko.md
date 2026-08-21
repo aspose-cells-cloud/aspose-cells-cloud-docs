@@ -3,7 +3,7 @@ title: "템플릿 파일을 사용하여 Excel 워크북 만들기"
 second_title: "문서"
 linktitle: "템플릿 파일"
 type: docs
-url: /create-an-excel-file-with-template-file/
+url: /ko/create-an-excel-file-with-template-file/
 aliases:
   - /create-excel-workbook-from-a-template-file/
   - /workbook/new-from-a-template-file/

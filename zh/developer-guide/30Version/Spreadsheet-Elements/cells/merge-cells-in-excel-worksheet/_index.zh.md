@@ -1,7 +1,7 @@
 ---
 title: "如何合并 Excel 工作表中的单元格——Aspose.Cells Cloud API（v3.0）"
 type: docs
-url: /merge-cells-in-excel-worksheet/zh/
+url: /zh/merge-cells-in-excel-worksheet/zh/
 weight: 110
 keywords: "合并单元格, Aspose.Cells, 云 API, Excel"
 description: "使用 Aspose.Cells Cloud REST API 合并 Excel 工作表中单元格的指南，并提供 cURL 和 SDK 示例。"

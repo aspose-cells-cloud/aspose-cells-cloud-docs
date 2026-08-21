@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Gestión de archivos de Excel basada en la nube – Verificar existencia de almacenamiento"
 linktitle: "¿Existe el almacenamiento?"
 type: docs
-url: /storage-exists/
+url: /es/storage-exists/
 keywords: "Aspose.Cells, existe almacenamiento, API de almacenamiento en la nube, REST, Excel"
 description: "Verifique la existencia de un contenedor de almacenamiento en Aspose.Cells Cloud. Aprenda sobre el punto de conexión GET /v4.0/cells/storage/{storageName}/exist, los parámetros requeridos, el formato de respuesta y vea ejemplos de SDK en C#, Java, Python y más."
 weight: 100

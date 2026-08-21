@@ -3,7 +3,7 @@ title: "Enregistrer une feuille de calcul dans un autre format – API Aspose.Ce
 second_title: "Document"
 ArticleTitle: "Comment enregistrer une feuille de calcul dans un autre format sur un stockage distant : guide étape par étape"
 linktype: "docs"
-url: /save-spreadsheet-as/
+url: /fr/save-spreadsheet-as/
 keywords: "Aspose Cells, conversion de feuille de calcul, enregistrer sous, API, XLSX vers PDF, stockage cloud, Excel vers PDF, export CSV, conversion cloud"
 description: "Découvrez comment enregistrer une feuille de calcul stockée dans Aspose Cloud dans un autre format (XLSX, PDF, CSV, etc.) à l’aide de l’API Aspose.Cells Cloud « Save Spreadsheet ». Inclut la syntaxe de requête, les paramètres, un exemple cURL et du code SDK."
 weight: 100

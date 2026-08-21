@@ -3,8 +3,8 @@ title: "استبدال النص في ورقة عمل إكسل – واجهة ب�
 second_title: "المستند"
 linktitle: "استبدال في ورقة العمل"
 type: docs
-url: /worksheets/replace-text/
-aliases: [/replace-text-in-a-workbook/]
+url: /ar/worksheets/replace-text/
+aliases: [  /ar/replace-text-in-a-workbook/ ]
 keywords: "Aspose.Cells، استبدال النص، إكسل، واجهة برمجة تطبيقات REST، جدول بيانات، ورقة عمل"
 description: "تعرّف على كيفية استبدال النص في ورقة عمل إكسل باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud (الإصدار 3.0). يشمل المتطلبات الأساسية، والمصادقة، وبنية الطلب، ومثال باستخدام cURL، وأكواد مثال SDK، وتفاصيل الاستجابة، ومعالجة الأخطاء."
 ArticleTitle: "استبدال النص في ورقة عمل إكسل – واجهة برمجة تطبيقات Aspose.Cells Cloud"

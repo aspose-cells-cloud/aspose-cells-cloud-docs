@@ -4,7 +4,7 @@ ArticleTitle: "Aspose.Cells Cloud API를 사용하여 목록 개체 또는 테�
 second_title: "문서"
 linktype: "변환"
 type: docs
-url: /list-objects/to-range/
+url: /ko/list-objects/to-range/
 aliases:
   - /convert-list-object-or-table-to-range/
   - /tables/to-range/

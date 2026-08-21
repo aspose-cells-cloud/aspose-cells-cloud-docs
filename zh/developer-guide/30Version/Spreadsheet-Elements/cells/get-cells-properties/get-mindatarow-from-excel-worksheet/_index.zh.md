@@ -1,7 +1,7 @@
 ---
 title: "从 Excel 工作表中获取 MinDataRow"
 type: docs
-url: /get-mindatarow-from-excel-worksheet/
+url: /zh/get-mindatarow-from-excel-worksheet/
 weight: 90
 keywords: "Aspose Cells, MinDataRow, Excel API, 云 SDK"
 description: "使用 Aspose.Cells Cloud API v3.0 获取工作表中包含数据的最小行索引。包含请求格式、参数说明、示例 cURL 命令、响应示例、HTTP 状态码及 SDK 代码片段。"

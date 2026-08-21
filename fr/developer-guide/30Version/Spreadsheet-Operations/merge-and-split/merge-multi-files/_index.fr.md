@@ -3,8 +3,8 @@ title: "Fusionner plusieurs fichiers Excel dans un classeur unique"
 second_title: "Document"
 linktype: "fusionner-plusieurs-fichiers-excel"
 type: docs
-url: /merge-multi-files-into-excel/
-aliases: [/merge/multi-files/]
+url: /fr/merge-multi-files-into-excel/
+aliases: [  /fr/merge/multi-files/ ]
 keywords: "Aspose.Cells Cloud, fusionner plusieurs fichiers Excel, API REST, fusion de feuilles de calcul, SDK cloud"
 description: "Découvrez comment fusionner plusieurs classeurs Excel en un seul fichier à l’aide de l’API REST Aspose.Cells Cloud (v3.0). Inclut l’endpoint HTTPS, la commande cURL, des exemples de SDK, les paramètres requis et les détails de gestion des erreurs."
 weight: 32

@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Comment supprimer des feuilles de calcul Excel - Supprimer des feuilles de classeurs"
 linktype: "Supprimer une feuille de calcul à partir d’un classeur"
 type: docs
-url: /delete-worksheet-from-spreadsheet/
+url: /fr/delete-worksheet-from-spreadsheet/
 keywords: "Aspose Cells, API de suppression de feuille de calcul, suppression de feuille Excel, classeur dans le cloud, API REST"
 description: "Découvrez comment supprimer une feuille de calcul à partir d’un fichier Excel à l’aide de l’API Aspose.Cells Cloud. Inclut le point de terminaison, les paramètres, des exemples cURL et des exemples SDK."
 weight: 100

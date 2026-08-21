@@ -3,7 +3,7 @@ title: "文字列配列をExcelワークシートにインポート – Aspose.C
 second_title: "ドキュメント"
 linktitle: "文字列配列のインポート"
 type: docs
-url: /import-string-array-into-excel-worksheet/
+url: /ja/import-string-array-into-excel-worksheet/
 aliases:
   - /import-string-array-into-worksheet/
   - /import-data/string-array/

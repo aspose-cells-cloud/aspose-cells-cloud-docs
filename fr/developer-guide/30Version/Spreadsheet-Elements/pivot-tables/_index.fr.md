@@ -3,8 +3,8 @@ title: "Travail avec les tableaux croisés dynamiques Excel"
 second_title: "Document"
 linktitle: "Tableaux croisés dynamiques"
 type: docs
-url: /pivottables/
-aliases: [/working-with-pivot-tables/]
+url: /fr/pivottables/
+aliases: [  /fr/working-with-pivot-tables/ ]
 keywords: "Excel, tableau croisé dynamique, Aspose.Cells Cloud, API, feuille de calcul, analyse de données, API REST"
 description: "Guide complet pour utiliser les API REST d’Aspose.Cells Cloud afin de créer, récupérer, mettre à jour et supprimer des tableaux croisés dynamiques dans des feuilles de calcul Excel. Inclut des références aux SDK, des exemples d’appels et des notes de version."
 weight: 100

@@ -3,7 +3,7 @@ title: "Hämta namn från en Excel-arbetsbok"
 second_title: "Dokument"
 linktitle: "Namn"
 type: docs
-url: /get-names-from-an-excel-file/
+url: /sv/get-names-from-an-excel-file/
 aliases:
   [
     /get-names-count-from-excel-workbooks/,

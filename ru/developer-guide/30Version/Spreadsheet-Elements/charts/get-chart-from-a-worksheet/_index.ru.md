@@ -1,8 +1,8 @@
 ---
 title: "Получение диаграммы из рабочего листа"
 type: docs
-url: /charts/get/
-aliases: [/get-chart-from-a-worksheet/]
+url: /ru/charts/get/
+aliases: [  /ru/get-chart-from-a-worksheet/ ]
 weight: 10
 keywords: "Aspose.Cells Cloud, получение диаграммы, рабочий лист, REST API, Excel, API диаграмм, извлечение диаграммы, диаграмма Excel"
 description: "Получение информации о диаграмме, включая метаданные и формат экспорта, из рабочего листа с использованием REST API Aspose.Cells Cloud."

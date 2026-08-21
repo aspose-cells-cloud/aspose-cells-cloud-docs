@@ -4,7 +4,7 @@ ArticleTitle: "Yinelenenleri Kaldır – Aspose.Cells Cloud API"
 second_title: "Belge"
 linktitle: "Yinelenenleri Kaldır"
 type: docs
-url: /cells/remove/duplicates
+url: /tr/cells/remove/duplicates
 aliases: []
 keywords: "Aspose.Cells, Yinelenenleri Kaldır, API"
 description: "Çalışma sayfasında, aralıkta veya tabloda yinelenen değerleri kaldırır."

@@ -3,7 +3,7 @@ title: "Buscar todos los elementos de texto en una hoja de cálculo"
 ArticleTitle: "Buscar todos los elementos de texto en una hoja de cálculo – Aspose.Cells Cloud API"
 second_title: "Documentos"
 linktype: "docs"
-url: /cells/search/content/all-textitems
+url: /es/cells/search/content/all-textitems
 aliases: []
 keywords: "Aspose.Cells, Búsqueda, Elementos de texto, API"
 description: "Buscar todos los elementos de texto dentro de un archivo de hoja de cálculo utilizando la API de Aspose.Cells Cloud."

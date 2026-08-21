@@ -3,8 +3,8 @@ title: "Excel 파일에 워터마크 추가"
 second_title: "문서"
 linktitle: "Excel 파일에 워터마크 추가"
 type: docs
-url: /add-watermark-into-excel-files/
-aliases: [/watermark/]
+url: /ko/add-watermark-into-excel-files/
+aliases: [  /ko/watermark/ ]
 keywords: "Excel에 워터마크 추가, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 Excel 워크북에 텍스트 워터마크를 추가하는 방법을 알아보세요. cURL 예제, 필요한 매개변수 및 응답 세부정보 포함."
 weight: 39

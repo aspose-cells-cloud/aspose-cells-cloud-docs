@@ -2,7 +2,7 @@
 title: "Importera heltalsarray till Excel-arbetsblad"
 linktitle: "Importera heltalsarray"
 type: docs
-url: /import-integer-array-into-excel-worksheet/
+url: /sv/import-integer-array-into-excel-worksheet/
 aliases:
   - /import-integer-array-into-excel-worksheet/
   - /import-integer-array-into-worksheet/

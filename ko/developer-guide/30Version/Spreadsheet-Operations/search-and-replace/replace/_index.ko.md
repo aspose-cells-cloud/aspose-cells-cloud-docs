@@ -3,7 +3,7 @@ title: "Excel 파일에서 텍스트 교체"
 second_title: "문서"
 linktitle: "스토리지 사용 없이 교체"
 type: docs
-url: /replace/ko/
+url: /ko/replace/ko/
 keywords: "Excel 텍스트 교체, Aspose.Cells Cloud, REST API, 스프레드시트 교체, API, Excel 파일 텍스트 교체"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 파일의 기존 텍스트를 새로운 값으로 교체합니다. C#, Java, Python, Node.js, PHP, Ruby, Go, Perl용 SDK를 지원합니다."
 weight: 80

@@ -4,7 +4,7 @@ ArticleTitle: "Uzak Çalışma Sayfasındaki Birleştirilmiş Hücreleri Al – 
 second_title: "Belge"
 linktype: "Get Merged Cells In Remote Worksheet"
 type: docs
-url: /cells/mergedcells/get
+url: /tr/cells/mergedcells/get
 aliases: []
 keywords: "Aspose Cells, Birleştirilmiş Hücreleri Al, Uzak Çalışma Sayfası, API"
 description: "Çalışma sayfasında birleştirilmiş tüm hücre alanlarını uzaktan alır."

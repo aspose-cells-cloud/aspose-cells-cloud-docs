@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Cómo convertir datos locales de tabla de hoja de cálculo a un archivo de imagen: Guía paso a paso"
 linktitle: "Convertir tabla a imagen"
 type: docs
-url: /convert-table-to-image/
+url: /es/convert-table-to-image/
 keywords: "Aspose.Cells, API en la nube, convertir tabla a imagen, Excel, PNG, JPEG, TIFF, BMP, SVG"
 description: "Convierta rápidamente una tabla de hoja de cálculo local de Excel a un archivo de imagen utilizando la API de Aspose.Cells Cloud. Admite PNG, JPEG, TIFF, BMP, SVG y otros formatos."
 weight: 100

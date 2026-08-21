@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "Aspose.Cells Cloud API を使用してリモートワークシートのテキストを検索して置換"
 linktitle: "リモートワークシートの内容を置換"
 type: docs
-url: /replace-content-in-remote-worksheet/
+url: /ja/replace-content-in-remote-worksheet/
 keywords: "Aspose.Cells, テキスト置換, リモートワークシート, Excel API, クラウド表計算, 検索と置換, REST API"
 description: "Aspose Cloud に保存された Excel ファイルの特定ワークシート内のテキストを置換します。パスワードで保護されたワークブック、地域設定に配慮した検索、一括更新をサポートします。"
 weight: 100

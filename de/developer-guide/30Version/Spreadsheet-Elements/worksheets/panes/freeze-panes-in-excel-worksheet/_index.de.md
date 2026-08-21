@@ -3,8 +3,8 @@ title: "Einfrieren von Bereichen in einem Excel-Arbeitsblatt"
 second_title: "Dokument"
 linktitle: "Einfrieren"
 type: docs
-url: /worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+url: /de/worksheets/panes/freeze/
+aliases: [  /de/freeze-panes-in-excel-worksheet/ , /de/worksheets/freeze-panes/ ]
 keywords: "Aspose.Cells Cloud, Einfrieren von Bereichen, Excel, REST API, Arbeitsblatt"
 description: "Erfahren Sie, wie Sie Zeilen und Spalten in einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API einfrieren. Enthält die Endpunktsyntax, erforderliche Parameter, ein cURL-Beispiel, Anleitung zur Authentifizierung, Details zu Fehlerantworten und SDK-Codebeispiele für mehrere Sprachen."
 weight: 190

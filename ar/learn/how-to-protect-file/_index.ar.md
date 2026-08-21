@@ -2,7 +2,7 @@
 title: "كيفية حماية ملف باستخدام Aspose.Cells Cloud"
 linktitle: "كيفية حماية ملف Excel"
 type: docs
-url: /how-to-protect-file
+url: /ar/how-to-protect-file
 description: "كيفية حماية ملف Excel باستخدام Aspose.Cells Cloud."
 weight: 10
 kwords: Excel, Office Cloud, REST API, Spreadsheet, PDF, CSV, Json, Markdown, كيفية حماية الملف عبر Aspose.Cells Cloud

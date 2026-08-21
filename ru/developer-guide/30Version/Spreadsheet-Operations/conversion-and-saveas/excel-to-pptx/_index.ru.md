@@ -3,7 +3,7 @@ title: "Преобразование Excel в PPTX с помощью Aspose.Cell
 second_title: "Документ"
 linktitle: "Excel в PPTX"
 type: docs
-url: /convert-excel-file-to-pptx-file/
+url: /ru/convert-excel-file-to-pptx-file/
 keywords: "Aspose, Cells, Excel, PPTX, преобразование, REST API, облачные технологии"
 description: "Узнайте, как преобразовывать рабочие книги Excel в презентации PPTX с помощью Aspose.Cells Cloud REST API v3.0. Включает примеры запросов cURL, кода SDK, аутентификацию и обработку ошибок."
 weight: 90

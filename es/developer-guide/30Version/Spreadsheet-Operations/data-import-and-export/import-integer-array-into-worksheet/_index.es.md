@@ -2,7 +2,7 @@
 title: "Importar matriz de enteros en una hoja de cálculo de Excel"
 linktitle: "Importar matriz de enteros"
 type: docs
-url: /import-integer-array-into-excel-worksheet/
+url: /es/import-integer-array-into-excel-worksheet/
 aliases:
   - /import-integer-array-into-excel-worksheet/
   - /import-integer-array-into-worksheet/

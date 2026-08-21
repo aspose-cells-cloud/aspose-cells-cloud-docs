@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud SDK for Java: Dönüştür, birleştir, böl, koru, ara, değiştir ve daha fazlası"
 linktype: "Aspose.Cells Cloud SDK for Java"
 type: docs
-url: /available-sdks/aspose-cells-cloud-java/
+url: /tr/available-sdks/aspose-cells-cloud-java/
 description: "Office yüklü olmadan Aspose.Cells Cloud Java SDK’sını kullanarak Excel dosyaları oluşturun, dönüştürün, birleştirin, bölün, koruyun, ara ve değiştirin."
 weight: 30
 keywords: "Aspose Cells Java SDK, Excel dönüştürme Java, Bulut elektronik tablo API’si, Java Excel kütüphanesi, Aspose.Cells Cloud Java"

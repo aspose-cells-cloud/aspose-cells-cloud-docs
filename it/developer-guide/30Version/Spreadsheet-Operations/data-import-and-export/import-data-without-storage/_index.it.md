@@ -3,8 +3,8 @@ title: "Importare dati senza utilizzare l'archiviazione – Aspose.Cells Cloud A
 second_title: "Documento"
 linktitle: "Importazione dati senza archiviazione"
 type: docs
-url: /import/without-using-storage/
-aliases: [/import-data-in-excel-worksheet-without-using-storage/]
+url: /it/import/without-using-storage/
+aliases: [  /it/import-data-in-excel-worksheet-without-using-storage/ ]
 keywords: "Aspose.Cells, Cloud API, importazione dati senza archiviazione, API per importazione Excel, REST import"
 description: "Scopri come importare dati senza archiviazione in un file Excel utilizzando l'API Aspose.Cells Cloud. Include il formato della richiesta, i parametri, un esempio cURL, il codice SDK e la gestione degli errori."
 weight: 10

@@ -4,8 +4,8 @@ ArticleTitle: "TransposeData – Aspose.Cells Cloud API"
 second_title: "Document"
 linktitle: "TransposeData"
 type: docs
-url: /cells/transpose
-aliases: ["/cells/transpose"]
+url: /es/cells/transpose
+aliases: [  /es/cells/transpose ]
 keywords: "TransposeData, Aspose.Cells, API en la nube, hoja de cálculo, transponer"
 description: "Intercambia filas y columnas en la hoja de cálculo."
 weight: 1000

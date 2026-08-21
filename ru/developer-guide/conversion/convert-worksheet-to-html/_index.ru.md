@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать рабочий лист в HTML с помощью Aspose.Cells Cloud API"
 linktype: "Преобразование рабочего листа в HTML"
 type: docs
-url: /convert-worksheet-to-html/
+url: /ru/convert-worksheet-to-html/
 description: "Узнайте, как преобразовать рабочую тетрадь Excel в HTML с помощью Aspose.Cells Cloud API — без загрузки файлов, с поддержкой пользовательских шрифтов, региональных настроек и обработки ошибок."
 keywords: "Aspose.Cells, Excel в HTML, преобразование рабочего листа, облачный API"
 weight: 100

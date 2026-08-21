@@ -3,7 +3,7 @@ title: "如何从 Excel 工作表中获取不同内容"
 second_title: "文档"
 linktitle: "获取"
 type: docs
-url: /worksheets/get/
+url: /zh/worksheets/get/
 keywords: "Excel, 工作表, Aspose.Cells Cloud, REST API, 内容提取, 格式转换"
 description: "了解如何使用 Aspose.Cells Cloud REST API 从 Excel 工作表中检索各种类型的内容。本指南涵盖支持的格式，并提供相关操作的链接。"
 weight: 20

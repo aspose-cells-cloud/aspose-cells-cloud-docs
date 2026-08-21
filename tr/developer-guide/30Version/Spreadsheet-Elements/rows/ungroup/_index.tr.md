@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfasında Satırların Gruplamasını Kaldırma"
 second_title: "Belge"
 linktitle: "Gruplama Kaldır"
 type: docs
-url: /rows/ungroup/
-aliases: [/ungroup-rows-in-excel-worksheet/]
+url: /tr/rows/ungroup/
+aliases: [  /tr/ungroup-rows-in-excel-worksheet/ ]
 keywords: "satırların gruplamasını kaldırma, Excel, Aspose.Cells Cloud, REST API, SDK, elektronik tablo"
 description: "Aspose.Cells Cloud REST API ve çeşitli programlama dilleri için SDK'larını kullanarak Excel çalışma sayfasında satırların gruplamasını nasıl kaldıracağını öğrenin."
 weight: 70

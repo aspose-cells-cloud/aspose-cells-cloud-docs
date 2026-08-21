@@ -4,7 +4,7 @@ second title: "Documento"
 ArticleTitle: "Reemplazo masivo de texto en archivos locales de Excel – API de buscar y reemplazar"
 linktitle: "Reemplazar contenido de hoja de cálculo"
 type: docs
-url: /replace-spreadsheet-content/
+url: /es/replace-spreadsheet-content/
 keywords: "reemplazar texto en Excel, Aspose.Cells buscar y reemplazar, API de hoja de cálculo local, reemplazar archivo Excel, API reemplazar contenido"
 description: "Reemplace texto en libros locales de Excel sin cargarlos en la nube. Utilice la API de buscar y reemplazar de Aspose.Cells Cloud para actualizar rangos, hojas de cálculo específicas o archivos completos en una única llamada."
 weight: 100

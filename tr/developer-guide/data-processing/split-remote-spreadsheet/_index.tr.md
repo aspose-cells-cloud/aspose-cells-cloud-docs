@@ -4,7 +4,7 @@ second_title: "Doküman"
 ArticleTitle: "Excel Dosyasını Bulutta Birden Fazla Dosyaya Ayırın ve 30'dan Fazla Formata Dışa Aktarın"
 linktitle: "Buluttaki Uzak Elektronik Tabloyu Bölün"
 type: docs
-url: /split-remote-spreadsheet/
+url: /tr/split-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, Excel çalışma kitabını bölme, elektronik tablo bölücü, bulut API'si, PDF'e dışa aktar, CSV'ye dışa aktar, JSON'a dışa aktar, çoklu format dışa aktarımı, bulut elektronik tablo işleme"
 description: "Aspose.Cells Cloud API'sini kullanarak bulut depolama alanında saklanan bir Excel çalışma kitabını ayrı çalışma sayfalarına bölün ve her birini PDF, CSV, JSON, XLSX, HTML, ODS ve XPS gibi 30'dan fazla forma dışa aktarın."
 weight: 100

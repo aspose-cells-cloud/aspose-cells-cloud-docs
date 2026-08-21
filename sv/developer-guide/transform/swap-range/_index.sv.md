@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Byt/utväxla data mellan kolumner, rader och celler i Excel"
 linktype: "Swap Range"
 type: docs
-url: /swap-range/
+url: /sv/swap-range/
 keywords: "Aspose Cells, Excel API, Byt intervall, moln kalkylark"
 description: "Byt kolumner, rader eller intervall i Excel-filer med Aspose.Cells Cloud API. Bevara formatering, formler och cellreferenser i en enda begäran."
 weight: 100

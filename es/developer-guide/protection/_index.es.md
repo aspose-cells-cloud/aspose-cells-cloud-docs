@@ -4,7 +4,7 @@ second_title: "Guía Completa para Desarrolladores"
 ArticleTitle: "Protección de Hojas de Cálculo – Establecer Contraseña de Apertura y Contraseña de Modificación"
 linktitle: "Protección"
 type: docs
-url: /protection/
+url: /es/protection/
 keywords: "Aspose.Cells, Cloud, API, Hoja de Cálculo, Protección, Contraseña de Apertura, Contraseña de Lectura-Escritura, Excel"
 description: "Aprenda cómo proteger un libro de Excel con una contraseña de apertura o de lectura-escritura utilizando la API REST de Aspose.Cells Cloud. Incluye sintaxis de solicitud, ejemplos de código y manejo de errores."
 weight: 60

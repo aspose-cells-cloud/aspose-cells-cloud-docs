@@ -4,7 +4,7 @@ ArticleTitle: "Принять все изменения – Aspose.Cells Cloud"
 second_title: "Документ"
 linktype: "Принять все изменения"
 type: docs
-url: /cells/spreadsheet/accept-all-revisions
+url: /ru/cells/spreadsheet/accept-all-revisions
 aliases: []
 keywords: "Aspose.Cells, AcceptAllRevisions, электронная таблица, изменения"
 description: "Принять все изменения в файле электронной таблицы с использованием API Aspose.Cells Cloud."

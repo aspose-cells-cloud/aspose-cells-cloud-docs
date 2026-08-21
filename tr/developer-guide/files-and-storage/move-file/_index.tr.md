@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Bulut Tabanlı Excel Dosyası Verimli Yönetim Çözümü – Bulut Ortamında Dosyaların Hızlı Taşınması İçin Arayüz"
 linktitle: "Dosya Taşı"
 type: docs
-url: /move-file/
+url: /tr/move-file/
 keywords: "Aspose.Cells, Dosya Taşı API, Bulut Depolama, Excel API, Dosya Yönetimi"
 description: "Aspose.Cells Cloud deposunda v4.0 Dosya Taşı API’si kullanarak klasörler arasında dosya taşıma yöntemi – uç nokta, parametreler, örnekler ve SDK bağlantıları."
 weight: 100

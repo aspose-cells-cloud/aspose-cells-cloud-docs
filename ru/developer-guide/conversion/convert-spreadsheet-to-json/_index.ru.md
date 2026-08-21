@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Как преобразовать локальную электронную таблицу в JSON с помощью Aspose.Cells Cloud API"
 linktitle: "Преобразование электронной таблицы в JSON"
 type: docs
-url: /convert-spreadsheet-to-json/
+url: /ru/convert-spreadsheet-to-json/
 keywords: "Aspose Cells Cloud, преобразование электронной таблицы в JSON, Excel в JSON API, Aspose.Cells Cloud API, REST API, преобразование электронных таблиц"
 description: "Узнайте, как преобразовать локальные файлы Excel в JSON с помощью Aspose.Cells Cloud API. Включает конечную точку, параметры, примеры кода и обработку ошибок для беспрепятственной интеграции."
 weight: 100

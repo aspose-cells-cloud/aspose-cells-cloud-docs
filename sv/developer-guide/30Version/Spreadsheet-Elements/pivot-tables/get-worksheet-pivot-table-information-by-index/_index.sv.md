@@ -3,8 +3,8 @@ title: "Hämta en pivottabell i ett Excel-ark"
 second_title: "Dokument"
 linktitle: Hämta
 type: docs
-url: /pivot-tables/get/
-aliases: [/get-worksheet-pivot-table-information-by-index/]
+url: /sv/pivot-tables/get/
+aliases: [  /sv/get-worksheet-pivot-table-information-by-index/ ]
 keywords: "Aspose.Cells, pivottabell, Excel, REST API, hämta pivottabell från kalkylark"
 description: "Hämta en pivottabell från ett Excel-ark via Aspose.Cells Cloud REST API. Innehåller begärandesyntax, parametrar, autentisering, svarsschema, felhantering och SDK-exempel."
 weight: 10

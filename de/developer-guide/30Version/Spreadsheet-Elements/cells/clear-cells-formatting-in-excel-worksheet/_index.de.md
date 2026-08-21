@@ -1,7 +1,7 @@
 ---
 title: "Zellformatierung in einem Excel-Arbeitsblatt löschen"
 type: docs
-url: /clear-cells-formatting-in-excel-worksheet/
+url: /de/clear-cells-formatting-in-excel-worksheet/
 weight: 100
 keywords: "Aspose.Cells Cloud, Excel, Zellformatierung löschen, REST-API, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 description: "Verwenden Sie die Aspose.Cells Cloud REST-API, um die Zellformatierung in einem Excel-Arbeitsblatt zu löschen. Enthält Anforderungsdetails, ein cURL-Beispiel und SDK-Codebeispiele für mehrere Sprachen."

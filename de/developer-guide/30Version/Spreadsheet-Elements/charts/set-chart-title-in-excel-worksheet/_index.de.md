@@ -1,8 +1,8 @@
 ---
 title: "Aspose.Cells Cloud API – Diagrammtitel in einer Excel-Arbeitsmappe festlegen"
 type: docs
-url: /chart/title/add/
-aliases: [/set-chart-title-in-excel-worksheet/]
+url: /de/chart/title/add/
+aliases: [  /de/set-chart-title-in-excel-worksheet/ ]
 weight: 30
 keywords: "Aspose.Cells Cloud, API für Diagrammtitel, Excel-Diagrammtitel, REST API, SDK-Beispiele"
 description: "Erfahren Sie, wie Sie mithilfe der Aspose.Cells Cloud REST API einen Diagrammtitel in einer Excel-Arbeitsmappe hinzufügen oder aktualisieren. Enthält cURL-Beispiele, SDK-Beispiele, erforderliche Parameter, Authentifizierungsschritte und Fehlerbehandlung."

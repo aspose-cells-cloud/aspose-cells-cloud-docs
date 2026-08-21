@@ -2,7 +2,7 @@
 title: "Excel-Dateien im Stapel verriegeln"
 second_title: "Dokument"
 type: docs
-url: /batch/lock
+url: /de/batch/lock
 keywords: "Stapelverriegelung, Excel, Aspose.Cells, Cloud API, Tabellenkalkulation, Dateischutz"
 description: "Die Aspose.Cells Cloud API ermöglicht das Stapelverriegeln mehrerer Excel-Dateien. Nutzen Sie den REST-Endpunkt oder eines der unterstützten SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go usw.), um Dateien in großen Mengen zu verriegeln."
 weight: 100

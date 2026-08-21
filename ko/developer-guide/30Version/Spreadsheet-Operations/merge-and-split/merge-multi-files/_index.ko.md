@@ -3,8 +3,8 @@ title: "여러 Excel 파일을 단일 워크북으로 병합"
 second_title: "문서"
 linktitle: "여러 Excel 파일 병합"
 type: docs
-url: /merge-multi-files-into-excel/
-aliases: [/merge/multi-files/]
+url: /ko/merge-multi-files-into-excel/
+aliases: [  /ko/merge/multi-files/ ]
 keywords: "Aspose.Cells Cloud, 여러 Excel 파일 병합, REST API, 스프레드시트 병합, 클라우드 SDK"
 description: "Aspose.Cells Cloud REST API(v3.0)를 사용하여 여러 Excel 워크북을 하나의 파일로 병합하는 방법을 알아보세요. HTTPS 엔드포인트, cURL 명령어, SDK 샘플, 필수 파라미터 및 오류 처리 세부 정보가 포함됩니다."
 weight: 32

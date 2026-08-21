@@ -4,7 +4,7 @@ second_title: "Belge"
 linktitle: "İkon filtresi ekle"
 type: docs
 url: /tr/autofilter/add-icon-filter/
-aliases: [/tr/add-an-icon-filter/,/tr/autofilter/add-an-icon-filter/]
+aliases: [  /tr/add-an-icon-filter/ , /tr/autofilter/add-an-icon-filter/ ]
 keywords: "Aspose.Cells Cloud, Excel, İkon Filtresi, Otomatik Filtre, REST API"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasına nasıl ikon filtresi eklendiğini, istek detayları, cURL örneği, SDK kod örnekleri ve hata yönetimi ile öğrenin."
 weight: 65

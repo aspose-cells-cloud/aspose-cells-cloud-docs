@@ -4,8 +4,8 @@ ArticleTitle: "Modifica della larghezza delle colonne all'interno di un interval
 second_title: "Documento"
 linktitle: "Larghezza colonna"
 type: docs
-url: /ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
+url: /it/ranges/update/column-width/
+aliases: [  /it/change-widths-of-columns-inside-the-range/ ]
 keywords: "Aspose.Cells, larghezza colonna, REST API, Excel, SDK, intervallo, cloud"
 description: "Scopri come modificare la larghezza delle colonne all'interno di un intervallo utilizzando l'API REST Aspose.Cells Cloud o gli SDK (C#, Java, Python, ecc.). Include cURL, dettagli di richiesta/risposta e passaggi di autenticazione."
 weight: 74

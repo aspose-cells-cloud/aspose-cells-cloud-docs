@@ -3,8 +3,8 @@ title: "Excel Çalışma Sayfası İçin Yakınlaştırma Ayarla – Aspose.Cell
 second_title: "Belge"
 linktitle: "Yakınlaştırma"
 type: docs
-url: /worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
+url: /tr/worksheets/zoom/
+aliases: [  /tr/set-zoom-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel yakınlaştırma, çalışma sayfası yakınlaştırma, REST API, bulut SDK, Excel otomasyonu"
 description: "Aspose.Cells Cloud API v3.0 ile çalışma sayfası yakınlaştırmasını (10‑400 %) nasıl ayarlayacağınızı öğrenin. cURL, SDK örnekleri ve hata yönetimi içerir."
 weight: 20

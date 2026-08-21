@@ -4,7 +4,7 @@ second_title: "文档"
 linktitle: "获取"
 type: docs
 url: /zh/validations/get/
-aliases: [/zh/get-validation-from-a-worksheet/]
+aliases: [  /zh/get-validation-from-a-worksheet/ ]
 keywords: "Aspose.Cells Cloud、工作表验证 API、按索引获取验证、Excel REST API、Aspose.Cells SDK"
 description: "使用 Aspose.Cells Cloud API（v3.0）从 Excel 工作簿中按零基索引检索工作表验证规则。包含 cURL 示例、响应模式、错误码及 C#、Java、Python 等语言的 SDK 代码片段。"
 weight: 10

@@ -1,8 +1,8 @@
 ---
 title: "Работа с сводными таблицами с помощью задачи CellsObjectOperate"
 type: docs
-url: /tasks/cells-object-operate/pivottable/
-aliases: [/working-with-pivot-table-using-cellsobjectoperate-task/]
+url: /ru/tasks/cells-object-operate/pivottable/
+aliases: [  /ru/working-with-pivot-table-using-cellsobjectoperate-task/ ]
 keywords: "Aspose Cells API для сводных таблиц, CellsObjectOperate, REST API для Excel"
 description: "Узнайте, как создавать сводные таблицы в Excel с помощью задачи CellsObjectOperate в Aspose.Cells Cloud. Приведён пример cURL, описание параметров и ссылки на SDK."
 weight: 10

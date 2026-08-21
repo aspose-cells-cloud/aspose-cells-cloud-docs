@@ -3,8 +3,8 @@ title: "Descombinar celdas en un rango"
 second_title: "Documentación"  
 linktitle: "Descombinar"  
 type: docs  
-url: /ranges/unmerge/  
-aliases: [/unmerge-merged-cells-of-the-range/]  
+url: /es/ranges/unmerge/
+aliases: [  /es/unmerge-merged-cells-of-the-range/ ]
 keywords: "Aspose.Cells Cloud, descombinar celdas, API de Excel, rango de hoja de cálculo, API REST"  
 description: "Aprenda a utilizar la API de Aspose.Cells Cloud para descombinar celdas combinadas en un rango específico de una hoja de cálculo de Excel. Incluye el punto de conexión, parámetros, ejemplo de cURL y fragmentos de código SDK para C#, Java, Python y más."  
 weight: 20  

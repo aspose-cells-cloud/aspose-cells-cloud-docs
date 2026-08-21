@@ -3,7 +3,7 @@ title: "AutoFilter abrufen"
 description: "Rufen Sie die AutoFilter-Beschreibung aus einer Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST API ab."
 keywords: "AutoFilter, Excel, Aspose.Cells Cloud, REST API, SDK, C#, Java, PHP, Ruby, Node.js, Python, Perl, Go"
 type: docs
-url: /cells/autofilter/get/
+url: /de/cells/autofilter/get/
 aliases:
   - /get-autofilter-description/
 weight: 50

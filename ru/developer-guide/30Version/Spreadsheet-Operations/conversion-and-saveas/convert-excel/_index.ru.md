@@ -4,7 +4,7 @@ ArticleTitle: "Преобразование файла Excel в различны
 second_title: "Документ"
 linktype: "Преобразование Excel"
 type: docs
-url: /convert-an-excel-file-to-different-formats/
+url: /ru/convert-an-excel-file-to-different-formats/
 aliases:
   [
     /convert-excel-workbook-to-different-file-formats/,

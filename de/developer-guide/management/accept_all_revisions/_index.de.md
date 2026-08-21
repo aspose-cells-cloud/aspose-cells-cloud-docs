@@ -3,7 +3,7 @@ title: "Alle Überarbeitungen akzeptieren"
 ArticleTitle: "Alle Überarbeitungen akzeptieren – Aspose.Cells Cloud"
 second_title: "Dokument"
 linktype: "docs"
-url: /cells/spreadsheet/accept-all-revisions
+url: /de/cells/spreadsheet/accept-all-revisions
 aliases: []
 keywords: "Aspose.Cells, AcceptAllRevisions, Tabellenkalkulation, Überarbeitungen"
 description: "Alle Überarbeitungen in einer Tabellenkalkulationsdatei mit der Aspose.Cells Cloud API akzeptieren."

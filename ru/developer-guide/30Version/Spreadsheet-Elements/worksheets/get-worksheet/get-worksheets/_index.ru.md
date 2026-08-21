@@ -3,8 +3,8 @@ title: "Получить все листы"
 second_title: "Документ"
 linktitle: "Все"
 type: docs
-url: /worksheets/get-all/
-aliases: [/get-worksheet-count/]
+url: /ru/worksheets/get-all/
+aliases: [  /ru/get-worksheet-count/ ]
 keywords: "Aspose.Cells, облачный API, получить листы, Excel, REST, SDK"
 description: "Получить список листов в книге Excel через облачный REST API Aspose.Cells (версия 3.0). Содержит пример cURL, фрагменты кода SDK и формат ответа."
 weight: 10

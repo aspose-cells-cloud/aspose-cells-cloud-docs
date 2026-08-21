@@ -3,8 +3,8 @@ title: "Excelワークシート内のテキストを検索する"
 second_title: "Document"
 linktitle: "ワークシート内を検索"
 type: docs
-url: /worksheets/find-text/
-aliases: [/find-text-in-a-worksheet/]
+url: /ja/worksheets/find-text/
+aliases: [  /ja/find-text-in-a-worksheet/ ]
 weight: 40
 keywords: "Excel, Aspose.Cells Cloud, REST API, テキスト検索, ワークシート, スプレッドシート, 検索"
 description: "Aspose.Cells Cloud REST API を使用して Excel ワークシート内のテキストを検索します。この API は複数の SDK とプログラミング言語で利用可能です。"

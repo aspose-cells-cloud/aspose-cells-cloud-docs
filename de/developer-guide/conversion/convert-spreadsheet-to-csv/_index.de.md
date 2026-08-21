@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud Web-API – Konvertieren Sie Tabellenkalkulation in C
 second_title: "Dokument"
 ArticleTitle: "So konvertieren Sie eine Tabellenkalkulation mithilfe der Aspose.Cells Cloud API in CSV"
 linktype: "docs"
-url: /convert-spreadsheet-to-csv/
+url: /de/convert-spreadsheet-to-csv/
 keywords: "Aspose Cells, CSV-Konvertierung, Excel-API, Cloud-Konvertierung"
 description: "Erfahren Sie, wie Sie Excel-Dateien (XLS, XLSX, XLSM usw.) mithilfe der Aspose.Cells Cloud API in CSV konvertieren. Enthält Authentifizierungsschritte, cURL-Beispiel, SDK-Code-Snippets und Fehlerbehandlung."
 weight: 100

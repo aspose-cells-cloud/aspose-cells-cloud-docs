@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Améliorez vos compétences en données : découvrez les calculs Excel essentiels – Additionner, soustraire, multiplier, diviser et plus encore"
 linktitle: "Calculer"
 type: docs
-url: /calculate/
+url: /fr/calculate/
 keywords: "Aspose.Cells Cloud, API de calcul Excel, SOMME, NOMBRES, MOYENNE, MIN, MAX, opérations mathématiques de base, API REST, calculs de feuille de calcul"
 description: "Découvrez comment utiliser l’API REST Aspose.Cells Cloud pour calculer la SOMME, le NOMBRES, la MOYENNE, le MIN et le MAX, ainsi que des opérations arithmétiques de base sur des feuilles de calcul Excel. Inclut la syntaxe des requêtes, du code d’exemple, des réponses et la gestion des erreurs."
 weight: 20

@@ -3,8 +3,8 @@ title: "Travail avec le filtre automatique Excel"
 second_title: "Document"
 linktitle: "Filtre automatique"
 type: docs
-url: /autofilter/
-aliases: [/working-with-autofilter/]
+url: /fr/autofilter/
+aliases: [  /fr/working-with-autofilter/ ]
 keywords: "Filtre automatique, Aspose.Cells Cloud, Filtre Excel, filtre couleur, filtre date, filtre dynamique, filtre nombre, filtre texte, filtre blanc, filtre personnalisé"
 description: "Découvrez comment ajouter, modifier et supprimer des filtres automatiques Excel (couleur, date, dynamique, nombre, texte, blanc) à l'aide des API Aspose.Cells Cloud. Exemples de code dans plusieurs langages."
 weight: 100

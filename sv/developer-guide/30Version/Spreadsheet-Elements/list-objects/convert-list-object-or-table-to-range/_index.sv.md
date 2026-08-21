@@ -4,7 +4,7 @@ ArticleTitle: "Konvertera listobjekt till intervall med Aspose.Cells Cloud API"
 second_title: "Dokument"
 linktitle: "Konvertering"
 type: docs
-url: /list-objects/to-range/
+url: /sv/list-objects/to-range/
 aliases:
   - /convert-list-object-or-table-to-range/
   - /tables/to-range/

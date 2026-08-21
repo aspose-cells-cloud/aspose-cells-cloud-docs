@@ -5,7 +5,7 @@ description: "Bulutta depolanan bir Excel çalışma kitabından bir grafiği te
 ArticleTitle: "Yerel Bir Elektronik Tablo Çalışma Sayfasını PDF Dosyasına Dönüştürme: Adım Adım Kılavuz"
 linktitle: "Çalışma Sayfasını PDF'ye Dönüştür"
 type: docs
-url: /export-chart-as-format/
+url: /tr/export-chart-as-format/
 keywords: "Aspose.Cells Cloud, Grafik Dışa Aktar, API, PDF, PNG, SVG, Excel, REST, Bulut Dönüştürme"
 weight: 100
 ---

@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: 모두 가져오기
 type: docs
 url: /ko/pivot-tables/get-all/
-aliases: [/ko/get-worksheet-pivot-tables-information/]
+aliases: [  /ko/get-worksheet-pivot-tables-information/ ]
 keywords: "모든 피벗 테이블 가져오기, Aspose.Cells Cloud API, 엑셀 피벗테이블, REST API"
 description: "Aspose.Cells Cloud API를 통해 엑셀 워크시트에서 모든 피벗 테이블을 검색합니다. 피벗테이블 API에 대한 엔드포인트, 매개변수, 인증 단계, cURL 및 SDK 샘플을 포함합니다."
 weight: 20

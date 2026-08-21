@@ -3,8 +3,8 @@ title: "Excel 워크시트에서 모든 그림 삭제하기"
 second_title: "문서"
 linktype: "지우기"
 type: docs
-url: /pictures/clear/
-aliases: [/delete-all-pictures-from-excel-worksheet/]
+url: /ko/pictures/clear/
+aliases: [  /ko/delete-all-pictures-from-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Excel, 모든 그림 삭제, 워크시트, REST API, 그림 지우기"
 description: "Aspose.Cells Cloud REST API를 사용하여 cURL 및 SDK 예제로 Excel 워크시트에서 모든 그림을 삭제하는 방법을 알아보세요."
 weight: 60

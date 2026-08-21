@@ -4,7 +4,7 @@ second_title: "وثيقة"
 ArticleTitle: "كيفية تحويل مخطط جدول البيانات إلى صورة: دليل خطوة بخطوة"
 linktitle: "تحويل المخطط إلى صورة"
 type: docs
-url: /convert-chart-to-image/
+url: /ar/convert-chart-to-image/
 keywords: "تحويل المخطط إلى صورة، Aspose.Cells، تصدير مخطط Excel، PNG، SVG، JPEG، BMP، TIFF"
 description: "استخدم واجهة Aspose.Cells Cloud Web API لتحويل مخطط Excel إلى صور PNG أو SVG أو TIFF أو JPEG أو BMP مباشرةً من ملف جدول البيانات."
 weight: 100

@@ -3,7 +3,7 @@ title: "API de Existencia de Objeto – Verificar la Presencia de Archivo/Carpet
 second_title: "Document"
 ArticleTitle: "API de Existencia de Objeto – Verificar la Presencia de Archivo o Carpeta en Aspose.Cells Cloud"
 linktype: "docs"
-url: /object-exists/
+url: /es/object-exists/
 keywords: "Aspose.Cells, almacenamiento en la nube, existencia de objeto, existencia de archivo, existencia de carpeta, API"
 description: "Utilice la API de Existencia de Objeto para verificar rápidamente si un archivo o carpeta existe en el almacenamiento en la nube de Aspose.Cells. Admite el nombre opcional del almacenamiento y el ID de versión, y funciona con objetos con versiones."
 weight: 100

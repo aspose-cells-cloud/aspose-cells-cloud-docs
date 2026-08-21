@@ -3,7 +3,7 @@ title: "Aspose.Cells Trim Content API – Ta bort blanksteg och radbrytningar fr
 second_title: "Dokument"
 linktitle: "Trim Content"
 type: docs
-url: /spreadsheet-trim-content/
+url: /sv/spreadsheet-trim-content/
 keywords: "Aspose.Cells, Trim Content API, rensa Excel-data, ta bort blanksteg i Excel, ta bort radbrytningar, rensa kalkylbladsdata"
 description: "Använd Aspose.Cells Cloud PostTrimContent API för att automatiskt rensa extra blanksteg, radbrytningar och oönskade tecken från Excel-celler. Lär dig om slutpunkten, begäranformat, exempelkod och felhantering."
 weight: 100

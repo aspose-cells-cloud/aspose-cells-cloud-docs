@@ -3,8 +3,8 @@ title: "العمل مع النطاقات في Excel"
 second_title: "المستند"
 linktype: "النطاق"
 type: docs
-url: /ranges/
-aliases: [/working-with-ranges/]
+url: /ar/ranges/
+aliases: [  /ar/working-with-ranges/ ]
 keywords: "Aspose.Cells, النطاق في Excel, واجهة REST API, SDK, .NET, Java, Python, دمج الخلايا, نسخ نطاق, تعيين قيمة النطاق"
 description: "تعرّف على كيفية استرجاع النطاقات وتعديلها وتنسيقها ودمجها ونقلها ونسخها باستخدام واجهة Aspose.Cells Cloud REST API. يتضمّن أمثلة لرموز SDK مكتوبة بلغات .NET وJava وPython وغيرها."
 weight: 100

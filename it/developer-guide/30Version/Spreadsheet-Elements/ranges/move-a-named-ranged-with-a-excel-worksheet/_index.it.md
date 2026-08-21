@@ -4,7 +4,7 @@ second_title: "Documento"
 linktitle: "Sposta"
 type: docs
 url: /it/ranges/move/
-aliases: [/it/move-a-named-range-with-an-excel-worksheet/]
+aliases: [  /it/move-a-named-range-with-an-excel-worksheet/ ]
 keywords: "Aspose.Cells Cloud, sposta intervallo denominato, foglio di lavoro Excel, API REST, spostamento intervallo, esempi SDK"
 description: "Scopri come spostare un intervallo denominato all'interno di un foglio di lavoro Excel utilizzando l'API REST Aspose.Cells Cloud v3.0, con dettagli sull'endpoint, autenticazione, esempi e frammenti di codice SDK."
 weight: 20

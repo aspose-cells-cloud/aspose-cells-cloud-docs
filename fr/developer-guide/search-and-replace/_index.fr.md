@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Recherche et remplacement dans un classeur – API Cloud Aspose.Cells"
 linktype: "Recherche et remplacement"
 type: docs
-url: /search-replace/
+url: /fr/search-replace/
 keywords: "Aspose.Cells, API Cloud, Recherche et remplacement, Excel, REST, API, automatisation de feuilles de calcul, recherche et remplacement, Excel cloud"
 description: "Découvrez comment utiliser l’API **Recherche et remplacement** d’Aspose.Cells Cloud pour localiser et remplacer du texte, des formules ou des liens hypertexte dans des classeurs Excel stockés dans le cloud. Inclut les détails des points de terminaison, les paramètres de requête, des exemples de réponses, les codes de statut, ainsi que des extraits de code en C#, Java et Python."
 weight: 50

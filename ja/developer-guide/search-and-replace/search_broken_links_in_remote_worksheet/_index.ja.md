@@ -3,7 +3,7 @@ title: "SearchBrokenLinksInRemoteWorksheet"
 ArticleTitle: "リモートワークシート内のBroken Linksを検索 – Aspose.Cells Cloud API"
 second_title: "Document"
 linktype: "docs"
-url: /cells/{name}/worksheets/{worksheet}/search/broken-links
+url: /ja/cells/{name}/worksheets/{worksheet}/search/broken-links
 aliases: []
 keywords: "Aspose.Cells, Broken Linksの検索, リモートワークシート"
 description: "リモートスプレッドシートのワークシート内に存在するBroken Linksを検索します。"

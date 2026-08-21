@@ -3,7 +3,7 @@ title: "Excel-Dateien zusammenführen und teilen"
 second_title: "Dokumente"
 linktype: "Zusammenführen und Teilen"
 type: docs
-url: /merge-and-split/
+url: /de/merge-and-split/
 keywords: "Aspose.Cells Cloud, Excel-Dateien zusammenführen, Excel-Arbeitsmappe teilen, Excel-API"
 description: "Erfahren Sie, wie Sie die Aspose.Cells Cloud REST-API verwenden, um mehrere Excel-Arbeitsmappen in einer einzigen Datei zusammenzuführen oder eine Arbeitsmappe in mehrere einzelne Dateien zu teilen. SDKs sind für Android, .NET, Go, Java, Node.js, Perl, PHP, Python, Ruby und Swift verfügbar."
 ArticleTitle: "Excel-Dateien zusammenführen und teilen – Aspose.Cells Cloud-Dokumentation"

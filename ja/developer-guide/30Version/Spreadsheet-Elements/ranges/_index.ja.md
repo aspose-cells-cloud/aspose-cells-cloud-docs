@@ -3,8 +3,8 @@ title: "Excel の範囲の操作"
 second_title: "Document"
 linktitle: "範囲"
 type: docs
-url: /ranges/
-aliases: [/working-with-ranges/]
+url: /ja/ranges/
+aliases: [  /ja/working-with-ranges/ ]
 keywords: "Aspose.Cells, Excel 範囲, REST API, SDK, .NET, Java, Python, セルの結合, 範囲のコピー, 範囲への値設定"
 description: "Aspose.Cells Cloud REST API を使用して Excel の範囲を取得、変更、スタイル設定、結合、移動、コピーする方法を学びます。.NET、Java、Python などの SDK コードサンプルも含まれています。"
 weight: 100

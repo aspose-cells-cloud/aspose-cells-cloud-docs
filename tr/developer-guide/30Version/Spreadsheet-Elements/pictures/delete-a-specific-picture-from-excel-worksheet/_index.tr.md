@@ -3,8 +3,8 @@ title: "Bir Excel Çalışma Sayfasından Görsel Sil – Aspose.Cells Cloud API
 second_title: "Belge"
 linktitle: "Sil"
 type: docs
-url: /pictures/delete/
-aliases: [/delete-a-specific-picture-from-excel-worksheet/]
+url: /tr/pictures/delete/
+aliases: [  /tr/delete-a-specific-picture-from-excel-worksheet/ ]
 keywords: "Aspose.Cells, Bulut API, görsel sil, Excel çalışma sayfası, REST"
 description: "Aspose.Cells Cloud REST API kullanarak bir Excel çalışma sayfasından bir görseli silin. DELETE uç noktasını, gerekli parametreleri, kimlik doğrulamayı, hata kodlarını ve örnek kodu öğrenin."
 weight: 50

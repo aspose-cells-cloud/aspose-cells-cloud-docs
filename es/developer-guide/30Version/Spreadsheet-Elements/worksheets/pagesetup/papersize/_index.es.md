@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – Lista completa de constantes de tamaño de papel"
 second title: "Documento"
 linktitle: "Tamaño de papel"
 type: docs
-url: /paper-size/
+url: /es/paper-size/
 keywords: "tamaño de papel, Aspose.Cells Cloud, API REST, hoja de cálculo, A4, Letter, ISO, JIS, PRC"
 description: "Lista completa de constantes de tamaño de papel admitidas por la API REST de Aspose.Cells Cloud, incluyendo dimensiones y ejemplos de uso para establecer tamaños personalizados en hojas de cálculo."
 weight: 20

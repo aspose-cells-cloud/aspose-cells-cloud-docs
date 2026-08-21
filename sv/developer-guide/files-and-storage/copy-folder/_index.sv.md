@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Molnbaserad Excel-filhanteringslösning – Detaljerad förklaring av Aspose.Cells Copy Folder API:s batchkopieringsfunktion"
 linktitle: "Kopiera mapp"
 type: docs
-url: /copy-folder/
+url: /sv/copy-folder/
 keywords: "Kopiera mapp, Aspose.Cells Cloud, REST API, Molnlagring, Kalkylarkshantering"
 description: "Lär dig hur du kopierar mappar i Aspose.Cells Cloud-lagring med ett enda REST-anrop. Inkluderar slutpunkt, parametrar, exempel på förfrågningar, felkoder och SDK-exempel."
 weight: 100

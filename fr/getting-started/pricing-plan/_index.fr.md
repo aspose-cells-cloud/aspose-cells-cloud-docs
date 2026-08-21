@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Plan tarifaire Aspose.Cells Cloud"
 linktype: "Plan tarifaire"
 type: docs
-url: /pricing-plan/
+url: /fr/pricing-plan/
 description: "Découvrez le plan tarifaire Aspose.Cells Cloud : 150 appels API gratuits chaque mois, puis paiement à l'utilisation avec des tarifs dès 0,007 $ par appel. Aucune mise à niveau cachée — uniquement un tarif échelonné et transparent."
 weight: 70
 keywords: "tarif Aspose.Cells Cloud, coût par appel API, API Excel à l'utilisation, tarification pour feuilles de calcul dans le cloud"

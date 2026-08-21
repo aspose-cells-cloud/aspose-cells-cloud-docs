@@ -4,7 +4,7 @@ second_title: "Document"
 linktitle: "정렬"
 type: docs
 url: /ko/worksheets/sort-data/
-aliases: [/sort-worksheet-data/]
+aliases: [  /ko/sort-worksheet-data/ ]
 keywords: "Aspose.Cells Cloud, Excel 정렬 API, 워크시트 범위 정렬, REST API, dataSorter"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 특정 범위를 정렬합니다. 엔드포인트, 필수 매개변수, 인증 단계, 오류 처리 및 SDK 예제 포함."
 weight: 20

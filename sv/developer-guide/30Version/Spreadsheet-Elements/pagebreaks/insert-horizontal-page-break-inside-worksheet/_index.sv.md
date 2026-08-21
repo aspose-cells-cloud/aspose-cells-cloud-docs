@@ -3,8 +3,8 @@ title: "Lägg till horisontell sidbrytning"
 second_title: "Dokument"
 linktitle: "Lägg till horisontell sidbrytning"
 type: docs
-url: /page-breaks/add-horizontal-page-break/
-aliases: [/insert-horizontal-page-break-inside-worksheet/]
+url: /sv/page-breaks/add-horizontal-page-break/
+aliases: [  /sv/insert-horizontal-page-break-inside-worksheet/ ]
 keywords: "horisontell sidbrytning, Aspose.Cells Cloud, Excel API, REST, SDK, kalkylblad, cURL"
 description: "Lär dig hur du lägger till en horisontell sidbrytning i ett Excel-kalkylblad med Aspose.Cells Cloud REST API. Inkluderar begärandetext detaljer, ett cURL-exempel och SDK-kodfragment för flera programmeringsspråk."
 weight: 30

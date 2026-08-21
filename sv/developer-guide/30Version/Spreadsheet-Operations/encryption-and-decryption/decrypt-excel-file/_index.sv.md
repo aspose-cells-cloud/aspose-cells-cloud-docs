@@ -3,8 +3,8 @@ title: "Dekryptera en Excel-arbetsbok"
 second_title: "Dokument"
 linktitle: "Dekryptera en Excel-fil"
 type: docs
-url: /excel-file-decrypt/
-aliases: [/decrypt-excel-workbooks/, /workbook/decrypt/]
+url: /sv/excel-file-decrypt/
+aliases: [  /sv/decrypt-excel-workbooks/ , /sv/workbook/decrypt/ ]
 keywords: "Aspose.Cells, Excel-dekryptering, REST API, moln-SDK"
 description: "Lär dig hur du dekrypterar en Excel-arbetsbok med Aspose.Cells Cloud REST API. Innehåller nödvändiga parametrar, cURL-exempel, SDK-kodexempel och detaljerad felhantering."
 ArticleTitle: "Så här dekrypterar du en Excel-arbetsbok med Aspose.Cells Cloud API"

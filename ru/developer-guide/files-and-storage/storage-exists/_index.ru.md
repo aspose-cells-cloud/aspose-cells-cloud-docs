@@ -4,7 +4,7 @@ second_title: "Документ"
 ArticleTitle: "Управление файлами Excel в облаке — Проверка существования хранилища"
 linktitle: "Существует ли хранилище"
 type: docs
-url: /storage-exists/
+url: /ru/storage-exists/
 keywords: "Aspose.Cells, существует ли хранилище, API облачного хранилища, REST, Excel"
 description: "Проверьте наличие контейнера хранилища в Aspose.Cells Cloud. Изучите конечную точку GET /v4.0/cells/storage/{storageName}/exist, необходимые параметры, формат ответа и примеры SDK на C#, Java, Python и других языках."
 weight: 100

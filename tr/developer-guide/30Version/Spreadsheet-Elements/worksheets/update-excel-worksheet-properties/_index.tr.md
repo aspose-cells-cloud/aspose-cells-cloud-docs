@@ -3,8 +3,8 @@ title: "Çalışma Sayfası Özelliklerini Güncelle – Aspose.Cells Cloud API 
 second_title: "Belge"
 linktitle: "Güncelle"
 type: docs
-url: /worksheets/update-properties/
-aliases: [/update-excel-worksheet-properties/]
+url: /tr/worksheets/update-properties/
+aliases: [  /tr/update-excel-worksheet-properties/ ]
 weight: 20
 keywords:
   [

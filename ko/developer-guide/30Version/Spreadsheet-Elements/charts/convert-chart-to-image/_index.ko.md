@@ -1,8 +1,8 @@
 ---
 title: "Excel 차트를 이미지로 변환 – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/to-image/
-aliases: [/convert-charts-to-image/]
+url: /ko/charts/to-image/
+aliases: [  /ko/convert-charts-to-image/ ]
 weight: 50
 keywords: "Aspose.Cells Cloud, 차트를 이미지로, Excel 차트 변환, REST API, 이미지 형식, PNG, JPEG, BMP, TIFF, GIF"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 차트 객체를 PNG, JPEG, BMP, TIFF 또는 GIF 이미지로 변환하는 방법을 알아보세요. 엔드포인트 세부 정보, 매개변수, cURL 예제, SDK 스니펫, 응답 예제 및 오류 처리가 포함됩니다."

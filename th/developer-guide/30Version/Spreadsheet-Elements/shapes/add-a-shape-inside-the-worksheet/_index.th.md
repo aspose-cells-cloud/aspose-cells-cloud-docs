@@ -3,8 +3,8 @@ title: "เพิ่มรูปร่างลงในสมุดงาน Ex
 second_title: "เอกสาร"
 linktitle: "เพิ่ม"
 type: docs
-url: /shapes/add/
-aliases: [/add-a-shape-inside-the-worksheet/]
+url: /th/shapes/add/
+aliases: [  /th/add-a-shape-inside-the-worksheet/ ]
 keywords: "Aspose.Cells, เพิ่มรูปร่าง, Excel, REST API, คลาวด์ SDK, shapeDTO, ประเภทการวาดภาพ"
 description: "เรียนรู้วิธีการเพิ่มรูปร่าง (เช่น โค้ง สาย รูปสี่เหลี่ยม เป็นต้น) ลงในสมุดงาน Excel โดยใช้ Aspose.Cells Cloud REST API เวอร์ชัน 3.0 ประกอบด้วยไวยากรณ์คำขอ พารามิเตอร์ที่จำเป็น ขั้นตอนการตรวจสอบสิทธิ์ และตัวอย่างโค้ด SDK"
 weight: 30

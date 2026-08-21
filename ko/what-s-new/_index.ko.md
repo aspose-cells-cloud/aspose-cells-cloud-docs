@@ -4,8 +4,8 @@ secondtitle: "문서"
 linktitle: "새로운 기능"
 type: docs
 weight: 9
-url: /new-features/
-aliases: [/what-s-new-in-aspose-cells-cloud/]
+url: /ko/new-features/
+aliases: [  /ko/what-s-new-in-aspose-cells-cloud/ ]
 keywords: "Aspose.Cells Cloud, 새로운 기능, Microsoft Office Excel, OpenOffice Spreadsheet, CSV, PDF, REST API, SDK, 스프레드시트, 클라우드"
 description: "Aspose.Cells Cloud의 최신 기능, 개선 사항 및 버그 수정 사항을 살펴보세요. 여기에는 Excel, OpenOffice, CSV 및 PDF 처리 관련 업데이트가 포함됩니다."
 ArticleTitle: "Aspose.Cells Cloud의 새로운 기능 – 최신 기능 및 업데이트"

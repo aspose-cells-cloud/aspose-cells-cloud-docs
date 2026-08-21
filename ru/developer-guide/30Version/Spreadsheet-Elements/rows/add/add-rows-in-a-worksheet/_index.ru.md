@@ -4,7 +4,7 @@ ArticleTitle: "Добавление нескольких строк в рабо�
 second_title: "Документ"
 linktitle: "Строки"
 type: docs
-url: /rows/add/rows/
+url: /ru/rows/add/rows/
 keywords: "Aspose.Cells Cloud, вставка строк, рабочий лист Excel, REST API, SDK, добавление нескольких строк"
 description: "Узнайте, как использовать REST API Aspose.Cells Cloud для вставки нескольких строк в рабочий лист Excel. В этом руководстве описаны конечная точка API, параметры запроса, примеры команд cURL и примеры использования SDK."
 weight: 20

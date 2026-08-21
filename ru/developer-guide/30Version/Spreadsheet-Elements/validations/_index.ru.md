@@ -3,7 +3,7 @@ title: "Работа с проверкой данных в Excel"
 second_title: "Документ"
 linktitle: "Проверки"
 type: docs
-url: /validations/ru/
+url: /ru/validations/ru/
 keywords: "проверка данных в Excel, Aspose.Cells Cloud, REST API, электронная таблица, облачные сервисы Office"
 description: "Узнайте, как программно добавлять, извлекать, обновлять, удалять и очищать правила проверки данных в Excel с помощью REST API Aspose.Cells Cloud. Примеры кода для .NET, Java, Python и PHP."
 weight: 100

@@ -3,7 +3,7 @@ title: "Aspose.Cells Cloud – รายการค่าขนาดกระ�
 second_title: "เอกสาร"
 linktitle: "ขนาดกระดาษ"
 type: docs
-url: /paper-size/
+url: /th/paper-size/
 keywords: "ขนาดกระดาษ, Aspose.Cells Cloud, REST API, สเปรดชีต, A4, Letter, ISO, JIS, PRC"
 description: "รายการค่าคงที่ขนาดกระดาษทั้งหมดที่รองรับโดย Aspose.Cells Cloud REST API พร้อมมิติและตัวอย่างการใช้งานสำหรับการตั้งค่าขนาดกระดาษแบบกำหนดเองในสเปรดชีต"
 weight: 20

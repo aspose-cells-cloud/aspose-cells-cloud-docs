@@ -4,7 +4,7 @@ ArticleTitle: "Excel ファイルを異なる形式に変換する"
 second_title: "Document"
 linktype: "Convert Excel"
 type: docs
-url: /convert-an-excel-file-to-different-formats/
+url: /ja/convert-an-excel-file-to-different-formats/
 aliases:
   [
     /convert-excel-workbook-to-different-file-formats/,

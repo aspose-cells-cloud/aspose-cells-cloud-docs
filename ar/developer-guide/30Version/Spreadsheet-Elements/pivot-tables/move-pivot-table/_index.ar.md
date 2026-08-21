@@ -4,7 +4,7 @@ second_title: "مستند"
 linktype: نقل
 type: docs
 url: /ar/pivot-tables/move/
-aliases: [/ar/move-pivot-table/]
+aliases: [  /ar/move-pivot-table/ ]
 keywords: "Aspose.Cells Cloud، نقل جدول محوري، Excel، REST API، SDK، C#، Go، Java، Node.js، Perl، PHP، Python، Ruby، Swift"
 description: "تعرّف على كيفية استخدام واجهة Aspose.Cells Cloud REST API لنقل جدول محوري داخل ملف Excel. توفر SDKs لـ Android وC# وGo وJava وNode.js وPerl وPHP وPython وRuby وSwift."
 weight: 120

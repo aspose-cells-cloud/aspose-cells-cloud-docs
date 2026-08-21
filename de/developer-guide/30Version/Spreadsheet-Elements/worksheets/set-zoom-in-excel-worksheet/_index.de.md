@@ -3,8 +3,8 @@ title: "Zoom für ein Excel-Arbeitsblatt festlegen – Aspose.Cells Cloud API v3
 second_title: "Dokument"
 linktitle: "Zoom"
 type: docs
-url: /worksheets/zoom/
-aliases: [/set-zoom-in-excel-worksheet/]
+url: /de/worksheets/zoom/
+aliases: [  /de/set-zoom-in-excel-worksheet/ ]
 keywords: "Aspose.Cells, Excel-Zoom, Arbeitsblatt-Zoom, REST-API, Cloud-SDK, Excel-Automatisierung"
 description: "Erfahren Sie, wie Sie den Zoom eines Arbeitsblatts (10–400 %) mit der Aspose.Cells Cloud API v3.0 festlegen. Enthält cURL- und SDK-Beispiele sowie Fehlerbehandlung."
 weight: 20

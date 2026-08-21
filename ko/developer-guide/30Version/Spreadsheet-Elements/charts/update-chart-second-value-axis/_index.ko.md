@@ -2,7 +2,7 @@
 title: "차트 두 번째 값 축 업데이트"
 ArticleTitle: "차트 두 번째 값 축 업데이트 – Aspose.Cells Cloud REST API"
 type: docs
-url: /charts/second-value-axis/update/
+url: /ko/charts/second-value-axis/update/
 weight: 160
 keywords: "Aspose.Cells, 차트 API, 두 번째 값 축, Excel, REST, 클라우드 SDK"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 워크시트의 차트 두 번째 값 축을 업데이트합니다. 요청 예시, 응답 코드 및 사전 조건이 포함됩니다."

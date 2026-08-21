@@ -4,8 +4,8 @@ ArticleTitle: "TransposeData – Aspose.Cells Cloud API"
 second_title: "ドキュメント"
 linktitle: "TransposeData"
 type: docs
-url: /cells/transpose
-aliases: ["/cells/transpose"]
+url: /ja/cells/transpose
+aliases: [  /ja/cells/transpose ]
 keywords: "TransposeData, Aspose.Cells, Cloud API, スプレッドシート, 行列転置"
 description: "スプレッドシート内の行と列を入れ替えます。"
 weight: 1000

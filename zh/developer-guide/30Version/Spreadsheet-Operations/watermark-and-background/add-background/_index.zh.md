@@ -3,7 +3,7 @@ title: "为工作簿添加背景图片"
 second_title: "文档"
 linktitle: "添加"
 type: docs
-url: /add-background-in-excel-file/
+url: /zh/add-background-in-excel-file/
 aliases:
   - /add-background-in-workbook/
   - /workbook/add-background/

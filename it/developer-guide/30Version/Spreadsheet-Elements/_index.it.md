@@ -2,7 +2,7 @@
 title: "Elementi del foglio di calcolo"
 second_title: "Documenti"
 type: docs
-url: /spreadsheet-elements/
+url: /it/spreadsheet-elements/
 keywords: "Aspose.Cells, Cloud, Excel API, AutoFiltro, Grafici, Tabelle Pivot, Fogli di lavoro"
 description: "Esplora le funzionalità dell'API REST Aspose.Cells Cloud per Excel, tra cui AutoFiltro, celle, grafici, colonne, commenti, formattazione condizionale, collegamenti ipertestuali, oggetti elenco, metadati, oggetti OLE, interruzioni di pagina, immagini, tabelle pivot, intervalli, righe, forme, convalida e fogli di lavoro."
 weight: 100

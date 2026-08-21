@@ -4,7 +4,7 @@ second_title: "ドキュメント"
 ArticleTitle: "ローカル Excel ファイルの一括テキスト置換 – 検索と置換 API"
 linktitle: "スプレッドシートのコンテンツを置換"
 type: docs
-url: /replace-spreadsheet-content/
+url: /ja/replace-spreadsheet-content/
 keywords: "Excel のテキストを置換, Aspose.Cells の検索と置換, ローカルスプレッドシート API, Excel ファイルを置換, API でコンテンツを置換"
 description: "クラウドへのアップロードなしでローカルの Excel ワークブック内のテキストを置換します。Aspose.Cells Cloud の検索と置換 API を使用して、特定の範囲、ワークシート、またはファイル全体を 1 回の呼び出しで更新します。"
 weight: 100

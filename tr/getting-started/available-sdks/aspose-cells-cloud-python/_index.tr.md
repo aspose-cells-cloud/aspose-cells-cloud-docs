@@ -4,7 +4,7 @@ second_title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud SDK for Python: Dönüştürme, birleştirme, bölme, koruma, arama, değiştirme ve daha fazlası."
 linktitle: "Aspose.Cells Cloud SDK for Python"
 type: docs
-url: /available-sdks/aspose-cells-cloud-python/
+url: /tr/available-sdks/aspose-cells-cloud-python/
 description: "Aspose.Cells Cloud SDK for Python, ofis kurulumlarına gerek kalmadan, bulutta Excel dosyalarını oluşturmak, dönüştürmek, birleştirmek, bölmek, korumak, aramak, değiştirmek ve işlemek için platformlar arası, akıcı bir API sağlar."
 weight: 30
 keywords: ["Aspose.Cells", "Python SDK", "Excel", "Bulut API", "Excel’i PDF’e dönüştür", "Excel birleştir", "Çalışma Kitabını Böl", "Çalışma Sayfasını Koru", "Arama ve Değiştirme", "REST API"]

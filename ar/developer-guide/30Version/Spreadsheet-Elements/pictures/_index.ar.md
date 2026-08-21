@@ -4,7 +4,7 @@ second_title: "مستند"
 linktype: "صور"
 type: docs
 url: /ar/pictures/
-aliases: [/ar/working-with-pictures/]
+aliases: [  /ar/working-with-pictures/ ]
 keywords: "Excel، صورة، Aspose.Cells Cloud، REST API، معالجة الصور، صور Excel"
 description: "تعلم كيفية استرجاع وإضافة وتحديث وحذف الصور في أوراق عمل Excel باستخدام واجهة Aspose.Cells Cloud REST API. يشمل أمثلة كود لغات C#، Java، Python، وأخرى."
 weight: 100

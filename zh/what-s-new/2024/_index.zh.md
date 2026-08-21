@@ -4,7 +4,7 @@ second_title: "文档"
 linktype: "新功能"
 type: docs
 weight: 20
-url: /new-features/2024/
+url: /zh/new-features/2024/
 keywords: "Aspose.Cells, 云服务, 2024, 新功能, 去重 API, 提取文本 API, 数据转换, 电子表格, Excel, CSV, PDF, REST API"
 description: "概述 Aspose.Cells Cloud 2024 年的新功能与增强内容，包括去重 API、提取文本 API 以及数据转换方面的改进。"
 ArticleTitle: "Aspose.Cells Cloud 2024 年新功能与增强"

@@ -2,8 +2,8 @@
 title: "Excel ファイルの作成とレポートの構築"
 second_title: "Document"
 type: docs
-url: /creating-files-and-reports/
-aliases: [/workbook/create/]
+url: /ja/creating-files-and-reports/
+aliases: [  /ja/workbook/create/ ]
 linktitle: "Excel とレポートの作成"
 keywords: "Aspose.Cells Cloud, Excel API, ワークブックの作成, Excel レポート, SmartMarker, テンプレート, レポート生成"
 description: "Aspose.Cells Cloud API を使用して空の Excel ワークブックを作成したり、テンプレートからファイルを生成したり、SmartMarker を活用したレポートを構築する方法を、コード例を交えて学びます。"

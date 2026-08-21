@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Aspose.Cells Cloud API – Excel-Dateien konvertieren, zusammenführen, teilen und schützen"
 linktitle: "Entwickler-Center"
 type: docs
-url: /
+url: /de/
 description: "Die Aspose.Cells Cloud REST API ermöglicht die Konvertierung, das Zusammenführen, Teilen, Schützen und umfassende Verarbeitung von Excel-Arbeitsblättern. Kostenloser Plan mit bis zu 150 API-Aufrufen pro Monat sowie SDKs für 8 Programmiersprachen."
 weight: 10
 keywords: "Aspose.Cells Cloud, Excel-API, Arbeitsblatt-Konvertierung, Excel zusammenführen, Excel teilen, Excel schützen, Cloud-Arbeitsblatt-SDK, REST API, Excel-Verarbeitung"

@@ -3,7 +3,7 @@ title: "Excel 워크시트에서 열 숨김 해제하기"
 ArticleTitle: "Excel 워크시트에서 열 숨김 해제하기 - Aspose.Cells Cloud API"
 second_title: "문서"
 linktype: "docs"
-url: /columns/unhide/
+url: /ko/columns/unhide/
 aliases:
   [/unhide-columns-in-an-excel-worksheet/, /unhide-columns-in-excel-worksheet/]
 keywords: "Aspose.Cells, 클라우드 API, 열 숨김 해제, Excel, REST, SDK"

@@ -4,7 +4,7 @@ second_title: "Document"
 linktype: "Conversion and Save As"
 type: docs
 url: /ja/conversion-and-save-as/
-aliases: [/ja/convert-excel/, /ja/convert/]
+aliases: [  /ja/convert-excel/ , /ja/convert/ ]
 keywords: "Aspose.Cells, Excel 変換 API, Excel を PDF に変換, Excel を CSV に変換, Excel を JSON に変換, クラウド表計算変換"
 description: "Aspose.Cells Cloud REST API を使用して、Excel ワークブックを PDF、CSV、JSON、HTML、およびその他の 15 種類以上の形式に変換する方法を学びます。エンドポイントの詳細、cURL コマンドのサンプル、Java、.NET、Python などの SDK スニペットが含まれています。"
 weight: 30

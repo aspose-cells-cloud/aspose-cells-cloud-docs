@@ -4,7 +4,7 @@ second_title: "Documento"
 ArticleTitle: "Dividir Archivo de Excel en la Nube para Separar Archivos y Exportar a +30 Formatos"
 linktype: "Dividir Hoja de Cálculo Remota en la Nube"
 type: docs
-url: /split-remote-spreadsheet/
+url: /es/split-remote-spreadsheet/
 keywords: "Aspose.Cells Cloud, dividir libro de Excel, divisor de hojas de cálculo, API en la nube, exportar a PDF, exportar a CSV, exportar a JSON, exportación en múltiples formatos, procesamiento de hojas de cálculo en la nube"
 description: "Utilice la API de Aspose.Cells Cloud para dividir un libro de Excel almacenado en el almacenamiento en la nube en hojas de cálculo separadas y exportar cada parte a más de 30 formatos, como PDF, CSV, JSON, XLSX, HTML, ODS y XPS."
 weight: 100

@@ -3,8 +3,8 @@ title: "冻结 Excel 工作表中的窗格"
 second_title: "文档"
 linktitle: "冻结"
 type: docs
-url: /worksheets/panes/freeze/
-aliases: [/freeze-panes-in-excel-worksheet/, /worksheets/freeze-panes/]
+url: /zh/worksheets/panes/freeze/
+aliases: [  /zh/freeze-panes-in-excel-worksheet/ , /zh/worksheets/freeze-panes/ ]
 keywords: "Aspose.Cells Cloud, 冻结窗格, Excel, REST API, 工作表"
 description: "了解如何使用 Aspose.Cells Cloud REST API 在 Excel 工作表中冻结行和列。内容包括端点语法、必需参数、cURL 示例、身份验证指南、错误响应详情，以及多种编程语言的 SDK 代码示例。"
 weight: 190

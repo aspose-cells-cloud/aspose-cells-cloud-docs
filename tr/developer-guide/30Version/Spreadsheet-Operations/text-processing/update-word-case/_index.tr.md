@@ -2,7 +2,7 @@
 title: "Aspose.Cells – Kelime Büyük/Küçük Harf Güncelleme API'si"
 second_title: "Belge"
 linktype: "docs"
-url: /post-update-word-case/
+url: /tr/post-update-word-case/
 keywords: "Aspose.Cells, Kelime Büyük/Küçük Harf Güncelleme API'si, metin büyük/küçük harf dönüştürme, Excel, CSV, Google Sheets, REST API"
 description: "Aspose.Cells Cloud’un Kelime Büyük/Küçük Harf Güncelleme API’si ile Excel, CSV veya Google Sheets dosyalarındaki metin büyük/küçük harflerini dönüştürün. Büyük/küçük harf, başlık büyük harf ve ilk harf büyük harf formatlarını destekler."
 weight: 100

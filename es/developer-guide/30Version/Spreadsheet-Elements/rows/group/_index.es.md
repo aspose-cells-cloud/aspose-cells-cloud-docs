@@ -3,8 +3,8 @@ title: "Agrupar filas en una hoja de cálculo de Excel"
 second_title: "Documento"
 linktitle: "Agrupar"
 type: docs
-url: /rows/group/
-aliases: [/group-rows-in-excel-worksheet/]
+url: /es/rows/group/
+aliases: [  /es/group-rows-in-excel-worksheet/ ]
 keywords: "agrupar filas, Excel, Aspose.Cells Cloud, API REST, SDK, hoja de cálculo, API de Excel"
 description: "Agrupar filas en una hoja de cálculo de Excel utilizando la API REST de Aspose.Cells Cloud. Compatible con múltiples SDK (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go) para una integración sencilla."
 weight: 60

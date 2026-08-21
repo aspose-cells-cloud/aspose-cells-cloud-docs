@@ -5,7 +5,7 @@ second_title: "Документ"
 type: docs
 linktitle: "Гиперссылки"
 url: /ru/hyperlinks/
-aliases: [/ru/working-with-hyperlinks/, /ru/working-with-hyperlink/]
+aliases: [  /ru/working-with-hyperlinks/ , /ru/working-with-hyperlink/ ]
 keywords: "Excel, гиперссылки, Cells.Cloud, API, Aspose.Cells, электронная таблица, ссылки, руководство"
 description: "Изучите, как получать, добавлять, обновлять и удалять гиперссылки в Excel с помощью API Aspose Cells Cloud."
 weight: 100

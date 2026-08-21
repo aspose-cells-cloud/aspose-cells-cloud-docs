@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "Traitement de texte dans les feuilles de calcul : Découpage, Découpage, Conversion, Extraction et Suppression de texte"
 linktype: "Traitement de texte"
 type: docs
-url: /text-processing/
+url: /fr/text-processing/
 description: "Découvrez comment découper, découper, convertir, extraire et supprimer du texte dans des fichiers Excel à l’aide des API REST Aspose.Cells Cloud. Inclut des exemples concis et des extraits de code SDK."
 keywords: "Aspose.Cells, API Cloud, Traitement de texte, Découpage de texte, Découpage de texte, Conversion de texte, Extraction de texte, Suppression de texte, API Excel"
 weight: 30

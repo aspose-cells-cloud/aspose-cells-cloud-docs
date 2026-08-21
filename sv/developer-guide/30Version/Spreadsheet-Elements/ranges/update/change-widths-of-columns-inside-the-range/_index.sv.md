@@ -4,8 +4,8 @@ ArticleTitle: "Ändra kolumnbredder inom ett intervall – Aspose.Cells Cloud AP
 second_title: "Dokument"
 linktitle: "Kolumnbredd"
 type: docs
-url: /ranges/update/column-width/
-aliases: [/change-widths-of-columns-inside-the-range/]
+url: /sv/ranges/update/column-width/
+aliases: [  /sv/change-widths-of-columns-inside-the-range/ ]
 keywords: "Aspose.Cells, kolumnbredd, REST API, Excel, SDK, intervall, moln"
 description: "Lär dig hur du ändrar kolumnbredder inom ett intervall med Aspose.Cells Cloud REST API eller SDK:er (C#, Java, Python etc.). Innehåller cURL, begäran/svarsdetaljer och autentiseringssteg."
 weight: 74

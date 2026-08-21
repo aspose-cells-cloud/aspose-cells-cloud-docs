@@ -4,7 +4,7 @@ second_title: "Document"
 ArticleTitle: "ローカルのスプレッドシートテーブルデータを JSON ファイルに変換する方法：ステップ・バイ・ステップガイド"
 linktype: "Convert Table to JSON"
 type: docs
-url: /convert-table-to-json/
+url: /ja/convert-table-to-json/
 keywords: "Excel, API, JSON, 変換, クラウド, ファイル, スプレッドシート"
 description: "Aspose.Cells Cloud API を使用して、1 つの PUT リクエストでローカルの Excel テーブルを JSON ファイルに変換します。cURL の例、パラメータ、および C#、Java、Python などの SDK スニペットを含みます。"
 weight: 100

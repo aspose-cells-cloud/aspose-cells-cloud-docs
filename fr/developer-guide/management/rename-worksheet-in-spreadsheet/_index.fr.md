@@ -4,7 +4,7 @@ second_title: "Document"
 articleTitle: "Comment renommer des feuilles de calcul dans Excel – Modifier les noms des onglets"
 linktype: "Renommer une feuille de calcul dans un classeur"
 type: docs
-url: /rename-worksheet-in-spreadsheet/
+url: /fr/rename-worksheet-in-spreadsheet/
 keywords: "renommer une feuille de calcul, Aspose.Cells Cloud, API Excel, classeur, SDK, API REST"
 description: "Renommez facilement des feuilles de calcul Excel via l’API Aspose.Cells Cloud. Découvrez les paramètres requis, voyez des exemples cURL et obtenez du code SDK pour C#, Java, Python et plus encore."
 weight: 100

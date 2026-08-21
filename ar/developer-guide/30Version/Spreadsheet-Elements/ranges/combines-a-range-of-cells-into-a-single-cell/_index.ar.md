@@ -3,8 +3,8 @@ title: "واجهة برمجة تطبيقات Aspose.Cells Cloud – دمج نط�
 second_title: "مستند"
 linktitle: "دمج"
 type: docs
-url: /ranges/merge/
-aliases: [/combines-a-range-of-cells-into-a-single-cell/]
+url: /ar/ranges/merge/
+aliases: [  /ar/combines-a-range-of-cells-into-a-single-cell/ ]
 keywords: "Aspose.Cells، دمج الخلايا، واجهة برمجة تطبيقات إكسل، REST، حزمة تطوير البرامج السحابية"
 description: "دمج نطاق من الخلايا في خلية واحدة باستخدام واجهة برمجة تطبيقات Aspose.Cells Cloud REST. تعلّم تنسيق الطلب، المعلمات، وأمثلة حزم تطوير البرامج (SDK) بلغات C#، Java، Python، وغير ذلك."
 weight: 20

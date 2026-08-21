@@ -2,7 +2,7 @@
 title: "Compresser et réparer des fichiers Excel"
 second_title: "Document"
 type: docs
-url: /compress-and-repair-excel-files/
+url: /fr/compress-and-repair-excel-files/
 linktitle: "Compresser et réparer"
 keywords: "Aspose.Cells, compression Excel, réparation Excel, API cloud, réduire la taille des fichiers Excel, restaurer un classeur corrompu, compresser un fichier Excel, réparer un classeur Excel"
 description: "Découvrez comment compresser des classeurs Excel volumineux et réparer des fichiers corrompus à l’aide de l’API Aspose.Cells Cloud. Exemples détaillés étape par étape, langages pris en charge et bonnes pratiques."

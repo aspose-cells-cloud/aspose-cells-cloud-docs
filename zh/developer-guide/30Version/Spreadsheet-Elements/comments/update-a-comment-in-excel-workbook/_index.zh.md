@@ -1,8 +1,8 @@
 ---
 title: "更新工作表单元格批注"
 type: docs
-url: /comments/update/
-aliases: [/update-a-comment-in-excel-workbook/]
+url: /zh/comments/update/
+aliases: [  /zh/update-a-comment-in-excel-workbook/ ]
 keywords: "Aspose.Cells Cloud, REST API, Excel, 工作表, 单元格批注, 更新工作表批注, 批注对象"
 description: "使用 Aspose.Cells Cloud REST API 更新 Excel 工作簿中单元格的工作表批注，包括请求详情、响应码和 SDK 示例。"
 weight: 30

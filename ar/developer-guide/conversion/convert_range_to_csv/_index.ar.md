@@ -4,7 +4,7 @@ ArticleTitle: "تحويل النطاق إلى CSV – واجهة برمجة تط
 second_title: "مستند"
 linktype: "تحويل النطاق إلى CSV"
 type: docs
-url: /cells/convert/range/csv
+url: /ar/cells/convert/range/csv
 aliases: []
 keywords: "تحويل، CSV، نطاق، Aspose.Cells"
 description: "يحوّل نطاقاً من جدول بيانات مخزّن محلياً إلى ملف CSV."

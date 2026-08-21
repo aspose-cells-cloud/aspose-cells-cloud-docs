@@ -4,7 +4,7 @@ second_title: "문서"
 linktitle: "2026년 신기능"
 type: docs
 weight: 9
-url: /new-features/2026/
+url: /ko/new-features/2026/
 keywords: "Aspose.Cells Cloud, 2026년 신기능, 스프레드시트 API, Excel, CSV, PDF, 클라우드 스프레드시트"
 description: "2026년에 출시된 Aspose.Cells Cloud의 최신 기능, 즉 스프레드시트, Excel, CSV, PDF 등에 대한 새로운 API, 개선 사항 및 버그 수정 내용을 확인하세요."
 ArticleTitle: "Aspose.Cells Cloud의 2026년 신기능 – 최신 기능 및 개선 사항"
