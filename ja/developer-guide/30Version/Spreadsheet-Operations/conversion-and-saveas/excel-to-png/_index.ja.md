@@ -3,7 +3,7 @@ title: "Excel から PNG へ"
 second_title: "Document"
 linktitle: "Excel から PNG へ"
 type: docs
-url: /jaconvert-excel-file-to-png-file/
+url: /ja/jaconvert-excel-file-to-png-file/
 keywords: "Excel から PNG へ, Aspose.Cells Cloud, REST API, スプレッドシート変換, PNG 形式"
 description: "Aspose.Cells Cloud REST API を使用して Excel スプレッドシートを PNG 画像に変換します。複数の SDK をサポートし、さまざまなプログラミング言語向けの詳細な例を提供します。"
 weight: 90

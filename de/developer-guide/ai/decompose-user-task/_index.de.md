@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "Wie Sie Benutzerziele mit der Aspose.Cells Cloud AI-Aufgabenzerlegungs-API in sequenzielle Aktionspläne umwandeln"
 linktitle: "Benutzeraufgabe zerlegen"
 type: docs
-url: /decompose-user-task/
+url: /de/decompose-user-task/
 keywords: "Aspose.Cells AI, API zur Aufgabenzerlegung, SMART-Aufgabenplanung, Redmine-Import, Projektautomatisierung"
 description: "Wandeln Sie freiformulierte Ziele mit Aspose.Cells Cloud AI in SMART-Aufgabenlisten mit Zeitschätzungen um. Erhalten Sie CSV/XLSX-Ausgaben für Redmine, Jira oder Azure DevOps mit einem einzigen PUT-Aufruf."
 weight: 100

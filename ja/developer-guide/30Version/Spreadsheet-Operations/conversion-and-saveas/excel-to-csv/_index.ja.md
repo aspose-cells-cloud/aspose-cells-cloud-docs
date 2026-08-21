@@ -3,7 +3,7 @@ title: "Excel を CSV に変換"
 second_title: "ドキュメント"
 linktitle: "Excel を CSV に変換"
 type: docs
-url: /jaconvert-excel-file-to-CSV-file/
+url: /ja/jaconvert-excel-file-to-CSV-file/
 aliases:
   - /convert-excel-file-to-CSV-in-cloud/
   - /convert/excel-to-csv/

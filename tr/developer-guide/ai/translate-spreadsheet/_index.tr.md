@@ -4,7 +4,7 @@ second title: "Belge"
 ArticleTitle: "Aspose.Cells Cloud AI Çeviri API’si ile Tam Bir Elektronik Tabloyu Nasıl Çevirebilirsiniz"
 linktitle: "Elektronik Tabloyu Çevir"
 type: docs
-url: /translate-spreadsheet/
+url: /tr/translate-spreadsheet/
 keywords: "Aspose.Cells Cloud, Elektronik Tabloyu Çevir API’si, AI çevirisi, elektronik tablo çevirisi, targetLanguage, çok sayfalı çevirme, bulut elektronik tablo işleme, Aspose.Cells Cloud çevirisi"
 description: "Aspose.Cells Cloud AI ile tüm bir Excel defterini çevirin. Formülleri, grafikleri ve formatlamayı korurken metni desteklenen herhangi bir dile dönüştürün. Uç nokta, parametreler, SDK örnekleri, sınırlar ve hata işleme hakkında bilgi edinin."
 weight: 100

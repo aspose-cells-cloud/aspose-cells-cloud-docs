@@ -4,7 +4,7 @@ second_title: "Dokument"
 ArticleTitle: "So löschen Sie leere Spalten in Excel – Automatisieren der Spaltenbereinigung"
 linktitle: "Leere Spalten löschen"
 type: docs
-url: /delete-spreadsheet-blank-columns/
+url: /de/delete-spreadsheet-blank-columns/
 keywords: "leere Spalten in Excel löschen API, Aspose.Cells Cloud, REST API, Excel-Bereinigung, Tabellenkalkulationsautomatisierung"
 description: "Erfahren Sie, wie Sie leere Spalten aus Excel-Dateien mit der Aspose.Cells Cloud REST API entfernen können. Enthält Endpunkt, Authentifizierung, Beispielanfragen/-antworten sowie SDK-Code in C#, Java, Python und mehr."
 weight: 100

@@ -3,7 +3,7 @@ title: "تحويل ملف Excel إلى DOCX"
 second_title: "وثيقة"
 linktype: "convert-excel-file-to-docx-file/"
 type: docs
-url: /arconvert-excel-file-to-docx-file/
+url: /ar/arconvert-excel-file-to-docx-file/
 keywords: "تحويل Excel إلى DOCX، Aspose.Cells Cloud، REST API، تحويل جداول البيانات، إنشاء المستندات"
 description: "حوّل جداول بيانات Excel إلى مستندات DOCX باستخدام REST API الخاص بـ Aspose.Cells Cloud. يدعم عدة SDKs ولغات برمجة لتكامل سلس."
 weight: 90

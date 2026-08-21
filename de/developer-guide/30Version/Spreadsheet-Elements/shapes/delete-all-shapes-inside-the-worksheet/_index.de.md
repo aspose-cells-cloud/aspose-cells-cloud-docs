@@ -5,7 +5,7 @@ second_title: "Dokument"
 linktitle: "Löschen"
 type: docs
 url: /de/shapes/clear/
-aliases: [  /delete-all-shapes-inside-the-worksheet/ ]
+aliases: [  /de/delete-all-shapes-inside-the-worksheet/ ]
 keywords: "Aspose.Cells Cloud, Alle Formen löschen, Excel-Arbeitsblatt, REST API, SDK, cURL, .NET, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift"
 description: "Löschen Sie alle Formen aus einem Excel-Arbeitsblatt mithilfe der Aspose.Cells Cloud REST API. Der Vorgang ist über cURL und eine breite Palette an SDKs (C#, Java, PHP, Ruby, Node.js, Python, Perl, Go, Android, Swift) verfügbar."
 weight: 40

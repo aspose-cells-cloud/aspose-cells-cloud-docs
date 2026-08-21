@@ -3,7 +3,7 @@ title: "แปลง Excel เป็น PNG"
 second_title: "เอกสาร"
 linktitle: "Excel to PNG"
 type: docs
-url: /thconvert-excel-file-to-png-file/
+url: /th/thconvert-excel-file-to-png-file/
 keywords: "Excel to PNG, Aspose.Cells Cloud, REST API, การแปลงสเปรดชีต, รูปแบบ PNG"
 description: "แปลงไฟล์สเปรดชีต Excel เป็นภาพ PNG โดยใช้ REST API ของ Aspose.Cells Cloud มีการรองรับ SDK หลายตัวและมีตัวอย่างรายละเอียดสำหรับภาษาโปรแกรมต่างๆ"
 weight: 90

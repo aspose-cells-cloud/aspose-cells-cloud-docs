@@ -3,7 +3,7 @@ title: "Excel zu CSV"
 second: "Dokument"
 linktitle: "Excel zu CSV"
 type: docs
-url: /deconvert-excel-file-to-CSV-file/
+url: /de/deconvert-excel-file-to-CSV-file/
 aliases:
   - /convert-excel-file-to-CSV-in-cloud/
   - /convert/excel-to-csv/

@@ -3,7 +3,7 @@ title: "Excel vers PNG"
 second_title: "Document"
 linktitle: "Excel vers PNG"
 type: docs
-url: /frconvert-excel-file-to-png-file/
+url: /fr/frconvert-excel-file-to-png-file/
 keywords: "Excel vers PNG, Aspose.Cells Cloud, API REST, conversion de feuilles de calcul, format PNG"
 description: "Convertissez des feuilles de calcul Excel en images PNG à l’aide de l’API REST Aspose.Cells Cloud. Prend en charge plusieurs SDK et fournit des exemples détaillés pour divers langages de programmation."
 weight: 90

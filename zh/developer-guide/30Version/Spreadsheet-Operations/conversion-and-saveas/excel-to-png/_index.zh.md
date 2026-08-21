@@ -3,7 +3,7 @@ title: "Excel 转 PNG"
 second_title: "文档"
 linktitle: "Excel 转 PNG"
 type: docs
-url: /zhconvert-excel-file-to-png-file/
+url: /zh/zhconvert-excel-file-to-png-file/
 keywords: "Excel 转 PNG, Aspose.Cells Cloud, REST API, 电子表格转换, PNG 格式"
 description: "使用 Aspose.Cells Cloud REST API 将 Excel 电子表格转换为 PNG 图像。支持多种 SDK，并提供多种编程语言的详细示例。"
 weight: 90

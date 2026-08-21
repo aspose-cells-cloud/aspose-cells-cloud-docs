@@ -4,8 +4,8 @@ second_title: "Dokument"
 linktitle: "Entwicklerhandbuch"
 ArticleTitle: "Konvertieren, Zusammenführen, Aufteilen, Schützen, Suchen, Ersetzen & Transformieren – alles in Cells Cloud."
 type: docs
-url: /developer‑guide/
-aliases: [  /developer‑guide‑v4.0/ ]
+url: /de/developer‑guide/
+aliases: [  /de/developer‑guide‑v4.0/ ]
 keywords: "Aspose.Cells Cloud, Excel REST API, Tabellenkalkulationskonvertierung, Zusammenführen, Aufteilen, Schützen, Suchen und Ersetzen, Datentransformation, SDK-Beispiele, Java, .NET, Python, Node.js, PHP, Go, Ruby, Perl"
 description: "Umfassendes Entwicklerhandbuch für die REST-APIs von Aspose.Cells Cloud, deckt Tabellenkalkulationskonvertierung, Zusammenführen, Aufteilen, Schutz, Suchen und Ersetzen sowie Datentransformation ab, mit Links zu SDK-Beispielen für Java, .NET, Python, Node.js, PHP, Go, Ruby und Perl."
 weight: 20

@@ -3,7 +3,7 @@ title: "Excel إلى PNG"
 second_title: "مستند"
 linktitle: "Excel إلى PNG"
 type: docs
-url: /arconvert-excel-file-to-png-file/
+url: /ar/arconvert-excel-file-to-png-file/
 keywords: "Excel إلى PNG، Aspose.Cells Cloud، REST API، تحويل جداول البيانات، تنسيق PNG"
 description: "حوّل جداول بيانات Excel إلى صور PNG باستخدام واجهة Aspose.Cells Cloud REST API. تدعم واجهة برمجة التطبيقات هذه العديد من حزم تطوير البرمجيات (SDKs)، وتوفّر أمثلة مفصّلة بلغات برمجة مختلفة."
 weight: 90

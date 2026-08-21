@@ -4,7 +4,7 @@ secondtitle: "Belge"
 articletitle: "Excel Veri Temizleyici - Karakterleri, Boşlukları ve Satır Sonlarını Otomatik Kırpın – Çevrimiçi, Kısa Kod"
 linktitle: "Karakter Kırp"
 type: docs
-url: /trim-character/
+url: /tr/trim-character/
 keywords: "Excel, metin kırpma, boşlukları kaldır, satır sonları, Aspose.Cells, veri temizleme, elektronik tablo, hücre formatını normalize et"
 description: "Aspose.Cells Cloud API ile Excel hücrelerinden ekstra boşlukları, satır sonlarını ve gereksiz karakterleri kırpin. Temiz ve tutarlı elektronik tablo verileri sağlayın."
 weight: 100

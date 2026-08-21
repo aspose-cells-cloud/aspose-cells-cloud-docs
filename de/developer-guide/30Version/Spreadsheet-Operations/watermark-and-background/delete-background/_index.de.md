@@ -3,7 +3,7 @@ title: "Hintergrund in einer Excel-Arbeitsmappe entfernen"
 second_title: "Dokument"
 linktitle: "Entfernen"
 type: docs
-url: /delete-background-in-excel-file/
+url: /de/delete-background-in-excel-file/
 aliases:
   - /delete-background-in-workbook/
   - /workbook/delete-background/

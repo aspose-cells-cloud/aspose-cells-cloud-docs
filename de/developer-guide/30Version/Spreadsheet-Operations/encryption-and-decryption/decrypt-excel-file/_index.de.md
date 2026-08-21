@@ -4,7 +4,7 @@ second_title: "Dokument"
 linktitle: "Entschlüsseln einer Excel-Datei"
 type: docs
 url: /de/excel-file-decrypt/
-aliases: [  /decrypt-excel-workbooks/ , /de/workbook/decrypt/ ]
+aliases: [  /de/decrypt-excel-workbooks/ , /de/workbook/decrypt/ ]
 keywords: "Aspose.Cells, Excel-Entschlüsselung, REST-API, Cloud-SDK"
 description: "Erfahren Sie, wie Sie eine Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud REST-API entschlüsseln können. Enthält erforderliche Parameter, ein cURL-Beispiel, SDK-Codebeispiele und Details zur Fehlerbehandlung."
 ArticleTitle: "So entschlüsseln Sie eine Excel-Arbeitsmappe mithilfe der Aspose.Cells Cloud-API"

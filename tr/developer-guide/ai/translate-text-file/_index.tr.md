@@ -4,7 +4,7 @@ second title: "Belge"
 articleTitle: "Aspose.Cells Cloud AI Çeviri API'si ile Metin Dosyalarını Nasıl Çevirebilirsiniz?"
 linkTitle: "Metin Dosyası Çevirisi"
 type: docs
-url: /translate-text-file/
+url: /tr/translate-text-file/
 keywords: "Aspose.Cells, Bulut API, Yapay zekâ ile çeviri, metin dosyası çevirisi, çok dilli dönüşüm, REST PUT, hedef dil kodu, dosya yükleme ile çeviri, ham metin çevirisi, elektronik tablo yapay zekâ"
 description: "Aspose.Cells Cloud AI TranslateTextFile uç noktasını kullanarak metin dosyalarını desteklenen herhangi bir dile nasıl çevireceğinizi öğrenin. Hem multipart dosya yükleme hem de ham metin yüklemesini destekler, formatlamayı korur ve indirilebilir çevrilmiş dosya döndürür."
 weight: 100

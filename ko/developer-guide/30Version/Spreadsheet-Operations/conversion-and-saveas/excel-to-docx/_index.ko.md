@@ -3,7 +3,7 @@ title: "Excel을 Docx로 변환"
 second_title: "문서"
 linktitle: "Excel을 Docx로 변환"
 type: docs
-url: /koconvert-excel-file-to-docx-file/
+url: /ko/koconvert-excel-file-to-docx-file/
 keywords: "Excel을 Docx로 변환, Aspose.Cells Cloud, REST API, 스프레드시트 변환, 문서 생성"
 description: "Aspose.Cells Cloud REST API를 사용하여 Excel 스프레드시트를 DOCX 문서로 변환합니다. 다양한 SDK 및 프로그래밍 언어를 지원하여 원활한 통합이 가능합니다."
 weight: 90

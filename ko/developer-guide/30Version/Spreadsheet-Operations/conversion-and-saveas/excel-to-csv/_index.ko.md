@@ -3,7 +3,7 @@ title: "Excel을 CSV로 변환"
 second_title: "문서"
 linktitle: "Excel을 CSV로 변환"
 type: docs
-url: /koconvert-excel-file-to-CSV-file/
+url: /ko/koconvert-excel-file-to-CSV-file/
 aliases:
   - /convert-excel-file-to-CSV-in-cloud/
   - /convert/excel-to-csv/

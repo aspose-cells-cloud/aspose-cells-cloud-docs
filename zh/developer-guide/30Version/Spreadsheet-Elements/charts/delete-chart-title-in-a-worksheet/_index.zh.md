@@ -1,7 +1,7 @@
 ---
 title: "删除工作表中的图表标题"
 type: docs
-url: /zh-cn/charts/delete-chart-title/
+url: /zh/zh-cn/charts/delete-chart-title/
 aliases: [  /zh/delete-chart-title-in-a-worksheet/ ]
 weight: 150
 keywords: "Aspose.Cells, 云 API, 删除图表标题, Excel, REST, SDK"
